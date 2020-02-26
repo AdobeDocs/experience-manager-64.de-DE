@@ -1,0 +1,70 @@
+---
+title: Einchecken und Auschecken Ihrer digitalen Assets zur Bearbeitung
+description: Erfahren Sie, wie Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken können.
+contentOwner: AG
+translation-type: tm+mt
+source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+
+---
+
+
+# Checkin- und Checkout-Dateien in Assets {#check-in-and-check-out-files-in-assets}
+
+Mit Adobe Experience Manager (AEM)-Assets können Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken. Nachdem Sie ein Asset ausgecheckt haben, können Sie es nur bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+
+Damit Sie Assets auschecken oder einchecken können, benötigen Sie Schreibzugriff auf diese Assets.
+
+Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Autor vorgenommenen Änderungen überschreiben, wenn mehrere Benutzer teamübergreifend im Rahmen von Bearbeitungsworkflows zusammenarbeiten.
+
+## Checkout-Assets {#checking-out-assets}
+
+1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus, das Sie auschecken möchten. Sie können auch mehrere Assets zum Auschecken auswählen.
+
+   ![chlimage_1-468](assets/chlimage_1-468.png)
+
+1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Auschecken]**.
+
+   ![chlimage_1-469](assets/chlimage_1-469.png)
+
+   Das Symbol **[!UICONTROL Auschecken]** verändert sich zum Symbol **[!UICONTROL Einchecken]** mit geöffnetem Schloss.
+
+   ![chlimage_1-470](assets/chlimage_1-470.png)
+
+   Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Ein Schlosssymbol wird auf der Miniatur des Assets angezeigt, das Sie ausgecheckt haben.
+
+   ![chlimage_1-471](assets/chlimage_1-471.png)
+
+   Wählen Sie das Asset aus. In der Symbolleiste werden keine Optionen zum Bearbeiten, Kommentieren, Veröffentlichen oder Löschen des Assets angezeigt.
+
+   ![chlimage_1-472](assets/chlimage_1-472.png)
+
+   Sie können jedoch auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** klicken/tippen, um die Metadaten für das gesperrte Asset zu bearbeiten.
+
+1. Klicken/tippen Sie auf das Symbol „Bearbeiten“, um das Asset im Bearbeitungsmodus zu öffnen.
+
+   ![chlimage_1-473](assets/chlimage_1-473.png)
+
+1. Bearbeiten Sie das Asset und speichern Sie die Änderungen. Schneiden Sie beispielsweise das Bild zu und speichern Sie es.
+
+   ![chlimage_1-474](assets/chlimage_1-474.png)
+
+   Sie können das Asset auch mit Anmerkungen versehen oder es veröffentlichen.
+
+1. Wählen Sie das bearbeitete Asset in der Benutzeroberfläche „Assets“ aus und klicken Sie auf das Symbol **[!UICONTROL Checkin]** in der Symbolleiste.
+
+   ![chlimage_1-475](assets/chlimage_1-475.png)
+
+   Das geänderte Asset wird in AEM Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+
+## Erzwungener Check-in {#forced-check-in}
+
+Administratoren können Assets einchecken, die von anderen Benutzern ausgecheckt wurden.
+
+1. Melden Sie sich bei AEM Assets als Administrator an.
+1. Wählen Sie in der Assets-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
+
+   ![chlimage_1-476](assets/chlimage_1-476.png)
+
+1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Sperre lösen]**. Das Asset wird wieder eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+
+   ![chlimage_1-477](assets/chlimage_1-477.png)
