@@ -1,0 +1,316 @@
+---
+title: Übersicht über die neuen Funktionen | AEM 6.4 Forms
+seo-title: Übersicht über die neuen Funktionen | AEM 6.4 Forms
+description: Übersicht über die neuen Funktionen und Verbesserungen in AEM 6.4 Forms.
+seo-description: Übersicht über die neuen Funktionen und Verbesserungen in AEM 6.4 Forms.
+uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
+contentOwner: vishgupt
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+topic-tags: introduction
+discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
+translation-type: tm+mt
+source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+
+---
+
+
+# Übersicht über die neuen Funktionen | AEM 6.4 Forms {#new-features-summary-aem-forms}
+
+Übersicht über die neuen Funktionen und Verbesserungen in AEM 6.4 Forms.
+
+AEM Forms beinhaltet verschiedene neue Funktionen und Verbesserungen, die die Erstellung, Verwaltung und die Benutzererfahrung von adaptiven Formularen und interaktiver Kommunikation weiter optimieren.
+
+In diesem Abschnitt erhalten Sie eine kurze Einführung in die neuen Funktionen und Verbesserungen. Rufen Sie Dokumentation mit Ressourcen für Detailinformationen auf. Siehe auch die [Versionshinweise](/help/release-notes/forms.md) zu AEM 6.4 Forms. For complete AEM 6.4 Forms documentation, visit [AEM 6.4 Forms User Guide](/help/forms/home.md).
+
+## Interaktive Kommunikation {#interactive-communications}
+
+![Korrespondenzmanagement](assets/correspondence-management.png)
+
+Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke wie Geschäftskorrespondenz, Briefe, Dokumente, Aussagen, Benefiz, Vermögensverwaltungsprospekt, Marketing-Mails, Rechnungen und Begrüßungs-Kits.
+
+Interaktive Kommunikation verwendet dieselbe zugrunde liegende Technologie, Prozesse und Komponenten wie die von adaptiven Formularen, um Responsive-Mehrkanalkommunikationen ähnlich wie der adaptiver Responsive-Formulare zu erstellen.
+
+Interaktive Kommunikation bietet wesentliche Vorteile:
+
+* Bietet OOTB-Integration mit dem Formulardatenmodell, um einen einfachen und rationalisierten Zugriff auf Backend-Datenbanken und andere CRM-Systeme wie MS Dynamics zu ermöglichen
+* Bietet eine integrierte Benutzeroberfläche zum Erstellen von Druck- und Webkanälen
+* Bietet eine Drag-and-Drop-basierte Benutzeroberfläche, ähnlich dem Erstellen von adaptiven Formularen für Druck- und Webkanäle.
+
+Interaktive Kommunikation ist der Standard und empfohlene Ansatz, um Kundenkommunikation zu erstellen. Um die Briefe in AEM 6.3 Forms und AEM 6.2 Forms weiterhin zu verwenden, müssen Sie ein Kompatibilitätspaket installieren.
+
+### Interaktive Mehrkanal-Kommunikations-Erstellung {#multi-channel-interactive-communication-authoring}
+
+Mithilfe der interaktiven Kommunikation können Sie Druck- und Webdokumente in einem einzigen Dokumenteditor erstellen und bearbeiten. Indem Sie dieselben Dokumentfragmente verwenden, um Darstellungen beider Kanäle zu erstellen, können Sie doppelten Aufwand vermeiden.
+![printweb_2](assets/printweb_2.png)
+
+For more information, see [Interactive Communications Overview](/help/forms/using/interactive-communications-overview.md).
+
+### WYSIWYG Dokumenteditor {#wysiwyg-document-editor}
+
+Der WYSIWYG Drag-and-Drop-Dokumenteneditor ist geschäftsfreundlich. Die intuitive Benutzeroberfläche, Drag-&amp;-Drop-Funktionen, Standardkomponenten, Datenmodelle sowie ein integriertes Repository für Assets erleichtern das schnelle und einfache Erstellen von interaktiver Kommunikation.
+
+Um eine interaktive Kommunikation zu erstellen oder eine vorhandene zu bearbeiten, können Geschäftsbenutzer die folgenden Bausteine verwenden: Kanäle, Inhalt, Eigenschaften, Elemente, Komponenten und Datenquellen.
+
+![drag-n-drop-lf](assets/drag-n-drop-lf.png)
+
+For more information, see [Introduction to authoring Interactive Communication](/help/forms/using/introduction-interactive-communication-authoring.md).
+
+### Automatische Generierung der Webversion aus Druckinhalten in der interaktiven Kommunikation {#auto-generate-web-version-from-print-content-in-interactive-communication}
+
+Autoren können Webdokumentinhalte automatisch aus Druckdokumenten erstellen, in denen sie sowohl Druck- als auch Webdokumente erstellen, in der Vorschau anzeigen und bearbeiten können. Autoren interaktiver Kommunikation können ein Mal erstellen und in allen Kanälen veröffentlichen. Autoren interaktiver Kommunikation können dieselben Dokumentfragmente im Druck- und Webkanal verwenden, um Doppelarbeit zu vermeiden.
+
+For more information, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
+
+### Verwenden Sie Designs, um den Webkanal der interaktiven Kommunikation zu gestalten {#use-themes-to-style-web-channel-of-interactive-communication}
+
+Interaktive Kommunikation unterstützt Designs. Mit AEM Forms können Sie Designs erstellen und sie dann auf Ihre interaktive Kommunikation anwenden. Zu einem Design gehört die Formatierung von Details für Komponenten und Bereiche. Sie können ein Design in verschiedenen interaktiven Kommunikationen wiederverwenden, um ihnen ein einheitliches und konsistentes Erscheinungsbild und Branding zu geben.
+
+AEM Forms enthält ein vordefiniertes Design für interaktive Kommunikation. Mithilfe eines Designs können Sie außerdem anpassen, wie eine interaktive Kommunikation auf einem Gerät aussieht.
+
+Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
+
+### Erweiterte Benutzeroberfläche des Agenten {#enhanced-agent-interface}
+
+Die Benutzeroberfläche des Agenten unterstützt nun die Druck- und Webvorschau der interaktiven Kommunikation. Über die Benutzeroberfläche des Agenten können Sie den Druckkanal bearbeiten und eine Vorschau des Webkanals Ihrer interaktiven Multichannel-Kommunikation anzeigen. Felder, Variablen, FDM-Elemente und Dokumentfragmente im Druckkanal können so konfiguriert werden, dass sie vom Agenten in der Benutzeroberfläche des Agenten geändert werden. Die Unterstützung von Formulardatenmodellen ermöglicht die Erstellung von Vorschaubildern mit vorgefüllten Beispieldaten.
+
+For more information, see [Prepare and send Interactive Communication using the Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
+
+### Präsentieren von Informationen in Diagrammen {#present-information-in-charts}
+
+Interaktive Kommunikation unterstützt Diagramme in Web- und Druckkanälen für eine bessere Kommunikation. Mithilfe von Diagrammen wie Torten-, Kreis-, Balken- und Spaltendiagrammen können Sie große Mengen an Informationen für eine einfache Interpretation und Analyse zusammenfassen und visuell präsentieren.
+
+![chart-2](assets/chart-2.png) ![chart](assets/chart.png)
+
+For more information, see [Using charts in Interactive Communications](/help/forms/using/chart-component-interactive-communications.md).
+
+### Vorkonfigurierte Datenkonnektoren zum Vorbefüllen von Dokumenten {#out-of-the-box-data-connectors-to-prefill-documents}
+
+Interaktive Kommunikation bietet Datenintegration mit Business-Tools, um eine Verbindung mit mehreren Geschäftssystemen, einschließlich CRM-Systemen, herzustellen und Daten in Dokumenten zu personalisieren.
+
+![fdm_ad](assets/fdm_ad.png)
+
+Weitere Informationen finden Sie unter [Verwenden eines Formulardatenmodells](/help/forms/using/using-form-data-model.md).
+
+### Verbesserter Dokumentfragmenteditor {#enhanced-document-fragment-editor}
+
+Sie können FDM-Elemente und Regeln innerhalb der Dokumentfragmente der Vorlage für die interaktive Kommunikation nutzen.
+
+* Unterstützung für Formulardatenmodellelemente
+* Asset-/Textfragment mithilfe von Regeln ein- oder ausblenden
+* Wert eines Elements/einer Variablen validieren
+* Funktionen zur Berechnung des Werts eines mathematischen Ausdrucks ausführen
+
+Weitere Informationen finden Sie unter:
+
+* [Texte in interaktiver Kommunikation](/help/forms/using/texts-interactive-communications.md)
+* [Bedingungen in interaktiver Kommunikation](/help/forms/using/conditions-interactive-communications.md)
+
+### Kompatibilitätspaket für vorhandene Assets {#compatibility-package-for-existing-assets}
+
+Standardmäßig werden Brief-Assets aus früheren Versionen von AEM Forms in dieser Version nicht unterstützt. Um die Briefe in AEM 6.3 Forms und AEM 6.2 Forms weiterhin zu verwenden, müssen Sie ein Kompatibilitätspaket installieren.
+
+## Datenintegration {#data-integration}
+
+![](do-not-localize/data-integeration-1.png)
+
+Mit der [AEM Forms-Datenintegration](/help/forms/using/data-integration.md) können Sie verschiedene Datenquellen konfigurieren, z. B. Datenbanken, RESTful- oder SOAP-basierte Web-Dienste und OData-Dienste, um ein Formulardatenmodell zu erstellen, mit denen Sie Daten in adaptiven Formularen und Dokumenten binden, vorbefüllen und aufrufen können.
+
+In dieser Version gibt es einige neue Funktionen und Verbesserungen bei der Datenintegration.
+
+### Erstellen von Formulardatenmodellen ohne Datenquelle {#create-form-data-model-without-data-source}
+
+Geschäftsbenutzer und Formularautoren können jetzt ein Formulardatenmodell einschließlich ihrer Entitäten und Eigenschaften erstellen, ohne eine Datenquelle konfigurieren zu müssen, und sie können zum Erstellen von adaptiven Formularen und Dokumenten verwendet werden. Sie können das Formulardatenmodell später an Datenquellen binden. Dadurch werden Abhängigkeiten von Datenquellen zum Erstellen von Formularen und Dokumenten mithilfe des Formulardatenmodells beseitigt.
+
+Ebenso können Sie Entitäten sowie die untergeordneten Eigenschaften in einem vorhandenen Formulardatenmodell erstellen und sie an entsprechende Entitäten und Eigenschaften in einer späteren Datenquelle binden.
+
+For more information, see [Create form data model](/help/forms/using/create-form-data-models.md).
+
+### Berechnete Eigenschaften erstellen {#create-computed-properties}
+
+Formularautoren und -entwickler können berechnete Eigenschaften im Formulardatenmodell erstellen. Sie ermöglichen es Ihnen, einen Wert für die Eigenschaft zu berechnen, indem Sie Regeln oder Logik für Daten erstellen, die in konfigurierten Datenquellen verfügbar sind. Eine Regel ist ein Ausdruck, der ausgewertet wird, wenn die Daten im Formulardatenmodell geladen werden oder sich die Werte der Eigenschaften in der Ausdrucksänderung ändern. Eine berechnete Eigenschaft namens „Raten“ berechnet beispielsweise den monatlich zu zahlenden Betrag für ein Darlehen basierend auf dem in der Datenquelle angegebenen Zinssatz und dem vom Benutzer im Formular angegebenen Betrag und der Höhe des Darlehens.
+
+Eine berechnete Eigenschaft befindet sich lokal in einem Formulardatenmodell und ist nicht in einer Datenquelle vorhanden. Sie können berechnete Eigenschaften in adaptiven Formularen und interaktiver Kommunikationen verwenden.
+
+For more information, see [Work with form data model](/help/forms/using/work-with-form-data-model.md).
+
+### Vorschau von Formularen und Dokumenten mit Beispieldaten {#preview-forms-and-documents-with-sample-data}
+
+Mit dem Formulardatenmodell können Sie Beispieldaten für Eigenschaften aller Entitäten in einem Formulardatenmodell generieren. Die generierten Daten entsprechen den für die Eigenschaften konfigurierten Datentypen. Wenn Sie eine Vorschau eines adaptiven Formulars oder Dokuments anzeigen, das dem Formulardatenmodell zugeordnet ist, wird es mit vorbefüllten Beispieldaten gerendert.
+
+Bei den Beispieldaten handelt es sich um zufällige Werte, die sich bei jeder Generierung ändern. Sie können jedoch die Beispieldaten bearbeiten und speichern, die auch dann bestehen bleiben, wenn Sie sie neu generieren. Wenn Sie beispielsweise die Beispieldaten für die Eigenschaften „Vorname“ und „Nachname“ bearbeiten und speichern und später eine weitere Eigenschaft oder Entität im Formulardatenmodell hinzufügen und die Beispieldaten neu generieren, zeigen die Eigenschaften „Vorname“ und „Nachname“ die gespeicherten Werte an, während Werte für andere Eigenschaften neu generiert werden.
+
+For details, see [Use form data model](/help/forms/using/using-form-data-model.md).
+
+### Datenquellendefinitionen aktualisieren {#refresh-data-source-definitions}
+
+Aktualisierungen in Datenquellenentitäten oder Eigenschaften spiegeln sich nicht automatisch in zugeordneten Formulardatenmodellen wider. Form data model editor now features ![refresh_forms_di](assets/refresh_forms_di.png) (Refresh Data Source Definitions) that invalidates the server cache and fetches updated schema from the data source to immediately reflect in the form data model.
+
+### Konfigurieren von Datenquellen mit der Touch-Benutzeroberfläche {#configure-data-sources-using-touch-user-interface}
+
+In dieser Version ist die Konfiguration der Cloud-Dienste für Datenquellen in der Touch-Benutzeroberfläche verfügbar. Also, the location to configure cloud services has changed to **[!UICONTROL Tools > Cloud Services > Data Sources]**. See [Configure data sources](/help/forms/using/configure-data-sources.md).
+
+## Adaptive Formulare {#adaptive-forms}
+
+![simpli-of-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
+
+### Leistung adaptiver Formulare mit verbesserter Lazy Loading-Funktion verbessern {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading}
+
+Die Lazy Loading-Funktionalität in adaptiven Formularen verschiebt die Initialisierung von Formularfragmenten, bis sie benötigt werden. Es verbessert die Leistung von großen Formularen, indem die zum Rendern eines Formulars erforderliche Zeit minimiert wird, was zu einer besseren Benutzererfahrung führt.
+
+Es gibt verschiedene Verbesserungen für die Lazy Loading-Funktion in dieser Version:
+
+* Komponenten für Dateianhänge und Nutzungsbedingungen werden in Formularfragmenten mit aktiviertem Lazy Loading unterstützt.
+* Adaptive Formularfragmente mit aktiviertem Lazy Loading werden in wiederholbaren Bereichen unterstützt.
+* Adaptive Formulare mit Lazy Loading-aktivierten Fragmenten werden in der AEM Forms-App unterstützt.
+
+## Formularzentrierte AEM-Workflows {#forms-centric-aem-workflows}
+
+![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
+
+Mit formularzentrierten AEM-Workflows können Sie Workflows für verschiedene Aufgaben auf dem OSGi-Stapel schnell erstellen und bereitstellen. Sie müssen die auf dem JEE-Stapel verfügbaren Prozessverwaltungsfunktionen nicht mehr installieren, wodurch die Bereitstellung vereinfacht und die Kosten für den Anwendungsserver und die Infrastruktur eingespart werden. Weitere Informationen finden Sie unter [Formularzentrierte Workflows unter OSGi](/help/forms/using/aem-forms-workflow.md).
+
+Im Folgenden werden die Verbesserungen in AEM-Arbeitsabläufen mit Forms-Centric beschrieben: ・
+
+* Der Workflow Modell-Editor ist in der Touch-Benutzeroberfläche verfügbar. Dadurch können Sie den Zeitaufwand für das Erstellen von formularzentrierten AEM-Workflows reduzieren.
+* Workflow-Schritt zum Senden von E-Mails. Beispielsweise können Sie den Schritt „E-Mail“ verwenden, um nach Abschluss eines Workflows ein Datensatzdokument zu senden.
+* Workflow-Schritt, um Formulardatenmodelldienste in einem Workflow-Modell zu verwenden. In diesem Schritt können Sie Datenintegrationsdienste aufrufen, ohne benutzerdefinierten Code zu schreiben. Sie können beispielsweise einen GET-Dienst aufrufen, um Mitarbeiterdetails aus einem Datenbankarchiv zu erhalten, ohne benutzerdefinierten Code zu schreiben.
+
+## AEM Forms-App {#aem-forms-app}
+
+![aem-forms-app](assets/aem-forms-app.png)
+
+Die AEM Forms-App ermöglicht es Außendienstmitarbeitern, ihre Mobilgeräte mit einem AEM Forms-Server zu synchronisieren und Formulare zu bearbeiten. Die Anwendung funktioniert nahtlos, wenn das Gerät offline ist, indem Daten lokal auf dem Gerät gespeichert und mit dem Server synchronisiert werden, wenn das Gerät wieder online ist. For more information, see [AEM Forms app](/help/forms/using/aem-forms-app.md).
+
+Die folgenden Verbesserungen wurden in der AEM Forms-App vorgenommen:
+
+* Adaptive Formulare mit Lazy Loading-aktivierten Fragmenten werden in der AEM Forms-App unterstützt.
+* Adaptive Formulare mit Formulardatenmodell werden in der AEM Forms-App unterstützt.
+
+## Document Security {#document-security}
+
+![aem-forms-document-security-](assets/aem-forms-document-security-.png)
+
+Mithilfe von Document Security können Sie Informationen sicher verteilen, die Sie in einem unterstützten Format gespeichert haben. Document Security stellt sicher, dass Ihre Dokumente nur von autorisierten Benutzern genutzt werden können. Die folgenden wichtigen Änderungen betreffen Document Security:
+
+* Document Security stellt eine [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) bereit, um ein Dokument lokal zu schützen, ohne das Dokument an den AEM Forms-Server zu senden. Nur die Sicherheitsberechtigungen und Details der Datenschutzrichtlinie werden über das Netzwerk an den AEM Forms-Server gesendet. AEM 6.4 Forms hat die Portable Protection Library (PPL) im OSGi-Bundle-Format eingeführt. Jetzt können Sie die PPL-Bibliothek direkt auf einem AEM Forms-Server installieren und die Funktionen von AEM und PPL gemeinsam nutzen.
+* Document Security C++ SDK und C++ PPL-Bibliothek können mit Microsoft Visual Studio 2013 erstellt werden. Die zuvor unterstützte Version war Microsoft Visual Studio 2010.
+
+## Unterstützte Plattformen {#supported-platforms}
+
+AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssystemen, Anwendungsservern, Datenbanken, Datenbanktreibern, JDK-, LDAP-Servern und E-Mail-Servern eingerichtet werden. Im Folgenden sind die wichtigsten Änderungen auf den unterstützten Plattformen aufgeführt:
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td>Komponente</td> 
+   <td>Unterstützung hinzugefügt</td> 
+   <td>Unterstützung entfernt</td> 
+  </tr> 
+  <tr> 
+   <td>Betriebssysteme</td> 
+   <td> 
+    <ul> 
+     <li>Microsoft Windows Server 2016</li> 
+     <li>Oracle Linux 7 Update 3</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>IBM AIX 7.2 <sup>[1]</sup><br /> </li> 
+     <li>Solaris 11 <sup>[1]</sup></li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>Anwendungsserver<br /> </td> 
+   <td> 
+    <ul> 
+     <li>Red Hat JBoss EAP 7</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>IBM Weblogic 12.1.3</li> 
+     <li>IBM WebSphere 8.5.5</li> 
+     <li>Red Hat JBoss EAP 6</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>Datenbanken</td> 
+   <td> 
+    <ul> 
+     <li>Microsoft SQL Server 2016</li> 
+     <li>MySQL 5.7.19 und höher</li> 
+     <li>IBM DB2 11.1</li> 
+     <li>Oracle Multitenant-Architektur</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>Microsoft SQL Server 2012<br /> </li> 
+     <li>Microsoft SQL Server 2014</li> 
+     <li>MySQL 5.5</li> 
+     <li>IBM DB2 10.5<br /> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>LDAP-Server</td> 
+   <td> 
+    <ul> 
+     <li>Microsoft Active Directory 2016</li> 
+     <li>IBM Tivoli Directory Server 6.4</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>Microsoft Active Directory 2008</li> 
+     <li>IBM Tivoli Directory Server 6.3</li> 
+     <li>Oracle Directory Server Enterprise Edition 7.0</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>E-Mail-Server</td> 
+   <td> 
+    <ul> 
+     <li>Microsoft Office 365</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>Novell Groupwise 7</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>Connectoren</td> 
+   <td> 
+    <ul> 
+     <li>Connector für Microsoft Sharepoint 2016</li> 
+     <li>Connector für EMC Documentum 7.3</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>Connector für Microsoft Sharepoint 2007</li> 
+     <li>Connector für Microsoft Sharepoint 2010</li> 
+     <li>Connector für IBM Filenet 5.0</li> 
+     <li>Connector für EMC Documentum 6.7</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>Browser</td> 
+   <td> 
+    <ul> 
+     <li>Apple Safari 11.x auf macOS</li> 
+     <li>Apple Safari 11.x unter iOS</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>Blackberry-Browser nur auf Blackberry Z30- und Q10-Geräten</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>AEM Forms-App<br /> </td> 
+   <td> 
+    <ul> 
+     <li>Android 4.4 oder höher</li> 
+     <li>Apple iOS 10 oder höher</li> 
+    </ul> </td> 
+   <td> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+1. AIX- und Solaris-Betriebssysteme sind nur für Upgrade-Kunden verfügbar.
