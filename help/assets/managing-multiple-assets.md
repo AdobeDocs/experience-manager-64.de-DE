@@ -3,12 +3,12 @@ title: Massenbearbeitungsmetadaten mehrerer Assets und Sammlungen
 description: Hier erfahren Sie, wie Sie die Metadaten vieler Assets und Sammlungen gleichzeitig bearbeiten, um häufig vorkommende Metadatenänderungen schnell zu übertragen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 ---
 
 
-# Verwalten mehrerer Assets und Sammlungen {#managing-multiple-assets-and-collections}
+# Manage multiple assets and collections {#managing-multiple-assets-and-collections}
 
 Erfahren Sie, wie Sie die Metadaten mehrerer Assets und Sammlungen simultan bearbeiten können, um schnell häufige Metadaten-Änderungen zu übertragen.
 
@@ -25,7 +25,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 >
 >Die Massenbearbeitung kann auf Assets angewendet werden, die in einem Ordner oder einer Sammlung enthalten sind. Bei Assets, die über mehrere Ordner hinweg verfügbar sind oder die einem allgemeinen Kriterium entsprechen, ist es möglich, die Metadaten stapelweise aus den Asset-Suchergebnissen zu aktualisieren.
 
-## Bearbeiten von Metadateneigenschaften für mehrere Assets {#editing-metadata-properties-of-multiple-assets}
+## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 
 1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
@@ -50,27 +50,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 
    >[!CAUTION]
    >
-   >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
-
-## Bearbeiten von Metadateneigenschaften von mehreren Sammlungen {#editing-metadata-properties-of-multiple-collections}
-
-1. Wählen Sie in der Konsole „Sammlungen“ die Sammlungen aus, die Sie bearbeiten möchten.
-1. From the toolbar, tap/click the **[!UICONTROL Properties]** icon to open the properties page for the selected collections.
-1. Ändern Sie die Metadateneigenschaften für ausgewählte Sammlungen auf den verschiedenen Registerkarten.
-
-   >[!NOTE]
-   >
-   >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen, außer für Tags. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
-
-1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
-
-   >[!NOTE]
-   >
-   >* Auf der Sammlungseigenschaftenseite können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl aufheben. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Die Metadaten für Sammlungen, die Sie entfernen, werden nicht aktualisiert.
-   >* At the top of the list, select the check box near **Title** to toggle between selecting the collections and clearing the list.
-
-
-1. Speichern Sie die Änderungen.
+   >Bei Feldern mit nur einem einzigen Wert werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Beifügemodus]** auswählen.
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configure-limit-for-bulk-metadata-update}
 
@@ -79,3 +59,7 @@ Um DOS-ähnliche Situationen zu vermeiden, beschränkt AEM die Anzahl der Parame
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+
+>[!MORELIKETHIS]
+>
+>* [Metadaten mehrerer Sammlungen stapelweise bearbeiten](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
