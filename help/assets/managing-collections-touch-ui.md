@@ -4,7 +4,7 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0ffda4a6919f2a7ba9f49321fbb59f076bf5c406
+source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 ---
 
@@ -19,9 +19,8 @@ Sie können mehrere Sammlungen für einen Benutzer freigeben. Jede Sammlung enth
 
 Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets sortieren:
 
-* Eine Sammlung mit einer statischen Referenzliste von Assets, Ordnern und anderen Sammlungen
-
-* Eine intelligente Sammlung, die Elemente basierend auf Suchkriterien dynamisch enthält
+* Eine Sammlung, die eine statische Referenzliste mit Assets, Ordnern und anderen Sammlungen enthält.
+* Eine intelligente Sammlung, die basierend auf Suchkriterien dynamisch Elemente enthält.
 
 ## Zugriff auf die Sammlungskonsole {#navigating-the-collections-console}
 
@@ -162,19 +161,33 @@ Sammlungsmetadaten umfassen die Daten zur Sammlung, einschließlich aller hinzug
 1. Zeigen Sie auf der Seite **[!UICONTROL Sammlungsmetadaten]** die Sammlungsmetadaten der Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** an.
 1. Modify the metadata, as necessary, and then tap/click **[!UICONTROL Save &amp; Close]** from the toolbar to save the changes.
 
-### Edit collection metadata in bulk {#editing-collection-metadata-in-bulk}
+### Metadaten mehrerer Sammlungen stapelweise bearbeiten {#editing-collection-metadata-in-bulk}
 
 Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit dieser Funktion können Sie schnell allgemeine Metadaten in mehreren Sammlungen replizieren.
 
 1. Wählen Sie in der Konsole „Sammlungen“ zwei oder mehr Sammlungen aus, für die Sie Metadaten bearbeiten möchten.
-1. From the toolbar, tap/click the **[!UICONTROL Properties]** icon.
+1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Bearbeiten Sie auf der Seite **[!UICONTROL Sammlungsmetadaten]** die Metadaten nach Bedarf auf den Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]**.
+1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
+
+   >[!NOTE]
+   >
+   >* Auf der Sammlungseigenschaftenseite können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl aufheben. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Die Metadaten für Sammlungen, die Sie entfernen, werden nicht aktualisiert.
+   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
+
+
 1. Tap/click **[!UICONTROL Save &amp; Close]** from the toolbar, and then close the confirmation dialog to complete the process.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen/Klicken Sie auf **[!UICONTROL Senden]**.
 
    >[!NOTE]
    >
-   >Der Beifügemodus funktioniert nur bei Feldern, die mehrere Werte enthalten können. Bei Feldern, die nur einen einzigen Wert enthalten können, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Beifügemodus]** auswählen.
+   >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen. Verwenden Sie den Modus [!UICONTROL Anhängen] , um den vorhandenen Metadaten in den Feldern, die mehrere Werte enthalten können, neue Werte hinzuzufügen. Felder mit einem Wert werden immer überschrieben. Any tags you add in the [!UICONTROL Tags] field, are appended to the existing list of tags in the metadata.
+
+To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
+
+>[!TIP]
+>
+>Die Massenbearbeitungsmethode funktioniert bei Assets, die in einer Sammlung verfügbar sind. Bei Assets, die über mehrere Ordner hinweg verfügbar sind oder einem allgemeinen Kriterium entsprechen, können die Metadaten nach dem Durchsuchen dieser Assets per Massen-Update aktualisiert werden.
 
 ## Sammlungen durchsuchen {#searching-collections}
 
@@ -288,6 +301,5 @@ Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn di
 >[!MORELIKETHIS]
 >
 >* [E-Mail-Benachrichtigungen zu Experience Manager Assets konfigurieren](/help/sites-administering/notification.md#assetsconfig)
->* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](managing-multiple-assets.md)
 >* [Erstellen einer Prüfungsaufgabe für Sammlungen](bulk-approval.md)
 
