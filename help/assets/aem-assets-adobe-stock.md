@@ -3,7 +3,7 @@ title: Adobe Stock-Assets in AEM Assets verwenden
 description: Sie können Adobe Stock-Assets in AEM suchen, abrufen und verwalten. Behandeln Sie die lizenzierten Assets wie jedes andere AEM-Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
 
 ---
 
@@ -16,7 +16,7 @@ Der Adobe Stock-Service bietet Designern und Unternehmen Zugang zu Millionen vo
 
 ## Voraussetzungen {#prerequisites}
 
-Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) sowie AEM 6.4 mit Service Pack 2 oder höher. Informationen zum AEM 6.4 Service Pack finden Sie in den [Versionshinweisen](/help/release-notes/sp-release-notes.md).
+Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://stockenterprise.adobe.com/) sowie AEM 6.4 mit Service Pack 2 oder höher. Informationen zum AEM 6.4 Service Pack finden Sie in den [Versionshinweisen](/help/release-notes/sp-release-notes.md).
 
 ## Integrieren von AEM und Adobe Stock {#integrate-aem-and-adobe-stock}
 
