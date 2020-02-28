@@ -1071,7 +1071,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die title-Komponente einbinden, di
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Note]
+>[!NHinweis]
 >You can set a different Title and the Type/Size in **[!UICONTROL Edit]** mode.
 
 ### Einbinden von parsys-Komponenten {#including-the-paragraph-system-component}
