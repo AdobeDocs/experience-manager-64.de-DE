@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 translation-type: tm+mt
-source-git-commit: ce13dc33a55a2be6220c10b69e89a19bd4efb916
+source-git-commit: 4ca6d4e59843656d289c0d650a68d8c9cf2ff0a0
 
 ---
 
@@ -354,7 +354,7 @@ Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) ab
 
 ## Wartung des Cold-Standby-Repositorys {#cold-standby-repository-maintenance}
 
-### Revisionsbereinigung
+### Revisionsbereinigung {#revision-clean}
 
 >[!CAUTION]
 >
