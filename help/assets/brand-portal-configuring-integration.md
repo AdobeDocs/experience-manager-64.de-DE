@@ -14,7 +14,7 @@ Erfahren Sie, wie AEM Assets mit Brand Portal integriert wird, um Assets und Sam
 
 Wenn Sie Adobe Experience Manager (AEM) Asset Brand Portal-Kunde sind, können Sie AEM Assets in das Markenportal integrieren, um die Veröffentlichung von Assets im Markenportal zu aktivieren. Sie können diese Integration über die Adobe.io-Benutzeroberfläche einrichten.
 
-> [!Note]
+> [!NHinweis]
 >
 >Adobe empfiehlt ein Upgrade auf AEM 6.4.1.0 oder höher, um sicherzustellen, dass AEM Assets Brand Portal mit AEM Assets integriert ist. Aufgrund einer Beschränkung in AEM 6.4 wird beim Konfigurieren der Integration mit Brand Portal ein Fehler ausgegeben und die Replikation scheitert.
 
