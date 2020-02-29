@@ -3,7 +3,7 @@ title: Kaskadierende Metadaten
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    ![Kaskadierende Metadaten für Video-Assets](assets/video_asset.png)
 
-   **** Abbildung: Metadaten für Video-Assets *überspringen*
+   *Abbildung: Kaskadieren von Metadaten für Video-Assets*
 
    ![Kaskadierende Metadaten für Dokumenten-Assets](assets/doc_type_fields.png)
 
-   **** Abbildung: Metadaten für *Dokumentenasset werden überschrieben*
-
+   *Abbildung: Metadaten für Dokument-Assets werden übergeben*
