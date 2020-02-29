@@ -3,7 +3,7 @@ title: Adobe Stock-Assets in AEM Assets verwenden
 description: Sie können Adobe Stock-Assets in AEM suchen, abrufen und verwalten. Behandeln Sie die lizenzierten Assets wie jedes andere AEM-Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -52,7 +52,9 @@ Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit Adobe 
 
 Sobald ein Adobe Stock-Asset in AEM lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. In AEM können die Benutzer die Assets suchen und in der Vorschau anzeigen. die Assets kopieren und veröffentlichen; Assets im Markenportal freigeben; Zugriff und Verwendung der Assets über die AEM-Desktop-App; und so weiter.
 
-![Suchen Sie nach Adobe Stock Assets und filtern Sie die Ergebnisse aus Ihrem AEM Workspace](assets/adobe-stock-search-results-workspace.png)*. Abbildung: Suchen Sie nach Adobe Stock Assets und filtern Sie die Ergebnisse aus Ihrem AEM Workspace*
+![Adobe Stock-Assets im AEM-Workspace durchsuchen und Ergebnisse filtern](assets/adobe-stock-search-results-workspace.png)
+
+*Abbildung: Suchen Sie nach Adobe Stock Assets und filtern Sie die Ergebnisse aus Ihrem AEM Workspace*
 
 **A.** Suchen Sie Assets, die den Assets ähneln, deren Adobe Stock ID bereitgestellt wird. **B.** Suchen Sie Assets, die Ihrer Form oder Ausrichtung entsprechen. **C.** Suchen Sie nach einem der unterstützten Asset-Typen. **D.** Öffnen oder minimieren Sie den Filterbereich. **E.** Lizenzieren und speichern Sie das ausgewählte Asset in AEM. **F.** Speichern Sie das Asset in AEM mit Wasserzeichen. **G.** Entdecken Sie Assets auf der Adobe Stock-Website, die dem ausgewählten Asset ähneln. **H.** Zeigen Sie die ausgewählten Assets auf der Adobe Stock-Website an. **I.** Anzahl der ausgewählten Assets aus den Suchergebnissen. **J.** Wechseln Sie zwischen Karten- und Listenansicht.
 
@@ -70,7 +72,9 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 >
 >Von Adobe Stock durchsuchte Assets werden nur in AEM angezeigt. Adobe Stock-Assets werden erst abgerufen und im AEM-Repository gespeichert, nachdem Benutzer ein [Asset speichern](aem-assets-adobe-stock.md#saveassets) oder ein [lizenzieren](aem-assets-adobe-stock.md#licenseassets). Assets, die bereits in AEM gespeichert sind, werden angezeigt und hervorgehoben, um einfachen Zugriff und schnelle Referenzierung zu ermöglichen. Außerdem werden solche Assets mit einigen zusätzlichen Metadaten gespeichert, um die Quelle als Adobe Stock anzugeben.
 
-![Suchfilter in AEM und hervorgehobene Adobe Stock Assets in Suchergebnissen](assets/aem-search-filters2.jpg)*Abbildung: Suchfilter in AEM und hervorgehobene Adobe Stock-Assets in Suchergebnissen*
+![Suchfilter in AEM und in Suchergebnissen hervorgehobene Adobe Stock-Assets](assets/aem-search-filters2.jpg)
+
+*Abbildung: Suchfilter in AEM und hervorgehobene Adobe Stock-Assets in Suchergebnissen*
 
 ### Speichern und Anzeigen erforderlicher Assets {#saveassets}
 
@@ -86,7 +90,9 @@ Wenn Sie erneut nach Assets suchen, werden die gespeicherten Assets durch ein Sy
 
 Benutzer können Adobe Stock-Assets lizenzieren, indem sie das Kontingent ihres Adobe Stock-Unternehmensabos nutzen. Wenn Sie ein Asset lizenzieren, wird es ohne Wasserzeichen gespeichert und ist in der Suche sowie für die Verwendung in AEM Assets verfügbar.
 
-![Dialogfeld zum Lizenzieren und Speichern von Adobe Stock-Assets in AEM Assets](assets/aem-stock_licenseandsave.jpg)*Abbildung: Dialogfeld zum Lizenzieren und Speichern von Adobe Stock-Assets in AEM Assets*
+![Dialogfeld zum Lizenzieren und Speichern von Adobe Stock-Assets in AEM Assets](assets/aem-stock_licenseandsave.jpg)
+
+*Abbildung: Dialogfeld zum Lizenzieren und Speichern von Adobe Stock-Assets in AEM Assets*
 
 ### Anzeigen von Metadaten und Asset-Eigenschaften {#access-metadata-and-asset-properties}
 
@@ -96,7 +102,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 ![Metadaten und Lizenzreferenzen gespeicherter Assets anzeigen](assets/metadata_properties.jpg)
 
-**** Abbildung: Anzeigen und *Zugreifen auf Metadaten und Lizenzverweise gespeicherter Assets*
+*Abbildung: Anzeigen und Zugreifen auf Metadaten und Lizenzverweise gespeicherter Assets*
 
 ## Bekannte Einschränkungen {#known-limitations}
 
