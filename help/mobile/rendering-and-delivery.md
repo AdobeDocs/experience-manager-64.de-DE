@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -36,21 +36,21 @@ Das folgende Diagramm zeigt die Wiedergabe von Inhaltsdiensten.
 
 Verwenden Sie **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** zum Anfordern von JSON.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>RESSOURCE</td> 
-   <td>eine Entitätsressource unter /content/entity<br /> oder <br /> eine Inhaltsressource unter /content</td> 
-  </tr> 
-  <tr> 
-   <td>EXPORT-CONFIG</td> 
-   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration gefunden unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> Wenn die standardmäßige Exportkonfiguration <br /> weggelassen wird, wird angewendet </p> </td> 
-  </tr> 
-  <tr> 
-   <td>DEPTH-INT</td> 
-   <td><strong>OPTIONALE</strong><br /> <br /> Tiefenrekursion für das Rendering von Kindern, wie beim Sling-Rendering verwendet</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>RESSOURCE</td>
+   <td>eine Entitätsressource unter /content/entity<br /> oder <br /> eine Inhaltsressource unter /content</td>
+  </tr>
+  <tr>
+   <td>EXPORT-CONFIG</td>
+   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration gefunden unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> Wenn die standardmäßige Exportkonfiguration <br /> weggelassen wird, wird angewendet </p> </td>
+  </tr>
+  <tr>
+   <td>DEPTH-INT</td>
+   <td><strong>OPTIONALE</strong><br /> <br /> Tiefenrekursion für das Rendering von Kindern, wie beim Sling-Rendering verwendet</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Erstellen von Exportkonfigurationen {#creating-export-configs}
@@ -65,72 +65,72 @@ Sie können einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfig
 
 Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td><strong>Typ</strong></td> 
-   <td><strong>Standard (falls nicht festgelegt)</strong></td> 
-   <td><strong>Wert</strong></td> 
-   <td><strong>Beschreibung</strong></td> 
-  </tr> 
-  <tr> 
-   <td>includeComponents</td> 
-   <td>Zeichenfolge[]</td> 
-   <td>alles einschließen</td> 
-   <td>sling:resourceType</td> 
-   <td>Ausschließen von Details für Knoten mit angegebenem sling:resourceType vom JSON-Export</td> 
-  </tr> 
-  <tr> 
-   <td>excludeComponents</td> 
-   <td>Zeichenfolge[]</td> 
-   <td>nichts ausschließen</td> 
-   <td>sling:resourceType</td> 
-   <td>umfassen nur Details für Knoten mit angegebenem sling:resourceType vom JSON-Export</td> 
-  </tr> 
-  <tr> 
-   <td>excludePropertyPrefixes</td> 
-   <td>Zeichenfolge[]</td> 
-   <td>nichts ausschließen</td> 
-   <td>Präfixe für Eigenschaften</td> 
-   <td>Ausschließen von Eigenschaften, die mit bestimmten Präfixen beginnen, aus dem JSON-Export</td> 
-  </tr> 
-  <tr> 
-   <td>excludeProperties</td> 
-   <td>Zeichenfolge[]</td> 
-   <td>nichts ausschließen</td> 
-   <td>Eigenschaftsnamen</td> 
-   <td>Ausschließen spezifizierter Eigenschaften aus dem JSON-Export</td> 
-  </tr> 
-  <tr> 
-   <td>includeProperties</td> 
-   <td>Zeichenfolge[]</td> 
-   <td>alles einschließen</td> 
-   <td>Eigenschaftsnamen</td> 
-   <td><p>Wenn excludePropertyPrefixes festgelegt<br /> sind, enthält dies die angegebenen Eigenschaften, obwohl das Präfix ausgeschlossen wurde,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen Sie nur diese Eigenschaften ein</p> </td> 
-  </tr> 
-  <tr> 
-   <td>includeChildren</td> 
-   <td>Zeichenfolge[]</td> 
-   <td>alles einschließen</td> 
-   <td>untergeordnete Namen</td> 
-   <td>Ausschließen spezifizierter untergeordneter Elemente aus dem JSON-Export</td> 
-  </tr> 
-  <tr> 
-   <td>excludeChildren</td> 
-   <td>Zeichenfolge[]<br /> <br /> </td> 
-   <td>nichts ausschließen</td> 
-   <td>untergeordnete Namen</td> 
-   <td>nur angegebene untergeordnete Elemente aus dem JSON-Export einschließen, andere ausschließen</td> 
-  </tr> 
-  <tr> 
-   <td>renameProperties</td> 
-   <td>Zeichenfolge[]<br /> <br /> </td> 
-   <td>nichts umbenennen</td> 
-   <td>&lt;IST_property_name&gt;,&lt;ERROPTEINSTELLUNGSINSTANZ&gt;</td> 
-   <td>Eigenschaften mit Ersetzungen umbenennen</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Name</strong></td>
+   <td><strong>Typ</strong></td>
+   <td><strong>Standard (falls nicht festgelegt)</strong></td>
+   <td><strong>Wert</strong></td>
+   <td><strong>Beschreibung</strong></td>
+  </tr>
+  <tr>
+   <td>includeComponents</td>
+   <td>Zeichenfolge[]</td>
+   <td>alles einschließen</td>
+   <td>sling:resourceType</td>
+   <td>Ausschließen von Details für Knoten mit angegebenem sling:resourceType vom JSON-Export</td>
+  </tr>
+  <tr>
+   <td>excludeComponents</td>
+   <td>Zeichenfolge[]</td>
+   <td>nichts ausschließen</td>
+   <td>sling:resourceType</td>
+   <td>umfassen nur Details für Knoten mit angegebenem sling:resourceType vom JSON-Export</td>
+  </tr>
+  <tr>
+   <td>excludePropertyPrefixes</td>
+   <td>Zeichenfolge[]</td>
+   <td>nichts ausschließen</td>
+   <td>Präfixe für Eigenschaften</td>
+   <td>Ausschließen von Eigenschaften, die mit bestimmten Präfixen beginnen, aus dem JSON-Export</td>
+  </tr>
+  <tr>
+   <td>excludeProperties</td>
+   <td>Zeichenfolge[]</td>
+   <td>nichts ausschließen</td>
+   <td>Eigenschaftsnamen</td>
+   <td>Ausschließen spezifizierter Eigenschaften aus dem JSON-Export</td>
+  </tr>
+  <tr>
+   <td>includeProperties</td>
+   <td>Zeichenfolge[]</td>
+   <td>alles einschließen</td>
+   <td>Eigenschaftsnamen</td>
+   <td><p>Wenn excludePropertyPrefixes festgelegt<br /> sind, enthält dies die angegebenen Eigenschaften, obwohl das Präfix ausgeschlossen wurde,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen Sie nur diese Eigenschaften ein</p> </td>
+  </tr>
+  <tr>
+   <td>includeChildren</td>
+   <td>Zeichenfolge[]</td>
+   <td>alles einschließen</td>
+   <td>untergeordnete Namen</td>
+   <td>Ausschließen spezifizierter untergeordneter Elemente aus dem JSON-Export</td>
+  </tr>
+  <tr>
+   <td>excludeChildren</td>
+   <td>Zeichenfolge[]<br /> <br /> </td>
+   <td>nichts ausschließen</td>
+   <td>untergeordnete Namen</td>
+   <td>nur angegebene untergeordnete Elemente aus dem JSON-Export einschließen, andere ausschließen</td>
+  </tr>
+  <tr>
+   <td>renameProperties</td>
+   <td>Zeichenfolge[]<br /> <br /> </td>
+   <td>nichts umbenennen</td>
+   <td>&lt;IST_property_name&gt;,&lt;ERROPTEINSTELLUNGSINSTANZ&gt;</td>
+   <td>Eigenschaften mit Ersetzungen umbenennen</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Außerkraftsetzungen beim Exportieren von Ressourcentypen {#resource-type-export-overrides}
@@ -143,23 +143,23 @@ Erstellen Sie einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConf
 
 Die folgende Tabelle zeigt die Eigenschaften:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td><strong>Typ</strong></td> 
-   <td><strong>Standard (falls nicht festgelegt)</strong></td> 
-   <td><strong>Wert</strong></td> 
-   <td><strong>Beschreibung</strong></td> 
-  </tr> 
-  <tr> 
-   <td>&lt;SELECTOR_TO_INC&gt;</td> 
-   <td>Zeichenfolge[] </td> 
-   <td>-</td> 
-   <td>sling:resourceType</td> 
-   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /><br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Name</strong></td>
+   <td><strong>Typ</strong></td>
+   <td><strong>Standard (falls nicht festgelegt)</strong></td>
+   <td><strong>Wert</strong></td>
+   <td><strong>Beschreibung</strong></td>
+  </tr>
+  <tr>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>Zeichenfolge[] </td>
+   <td>-</td>
+   <td>sling:resourceType</td>
+   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Vorhandene Content Services-Exportkonfigurationen {#existing-content-services-export-configs}
@@ -175,45 +175,45 @@ Die standardmäßige Exportkonfiguration für Content Services wird angewendet, 
 
 &lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td><strong>Wert</strong></td> 
-  </tr> 
-  <tr> 
-   <td>excludeProperties</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>excludePropertyPrefixes</td> 
-   <td>jcr:,sling:,cq:,oak:,pge-</td> 
-  </tr> 
-  <tr> 
-   <td>includeProperties</td> 
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td> 
-  </tr> 
-  <tr> 
-   <td>includeComponents</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>excludeComponents</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>includeChildren</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>excludeChildren</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Sling JSON Overrides</td> 
-   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReferenz<br /> zu mobileapps/caas/components/data/assetlist</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Name</strong></td>
+   <td><strong>Wert</strong></td>
+  </tr>
+  <tr>
+   <td>excludeProperties</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>excludePropertyPrefixes</td>
+   <td>jcr:,sling:,cq:,oak:,pge-</td>
+  </tr>
+  <tr>
+   <td>includeProperties</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+  </tr>
+  <tr>
+   <td>includeComponents</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>excludeComponents</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>includeChildren</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>excludeChildren</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Sling JSON Overrides</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReferenz<br /> zu mobileapps/caas/components/data/assetlist</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Seitenexport-Konfiguration {#page-export-configuration}
@@ -226,7 +226,7 @@ Diese Konfiguration erweitert den Standard um die Einbeziehung von untergeordnet
 
 Weitere Informationen zu zusätzlichen Themen in Content Services finden Sie in den nachfolgend aufgeführten Ressourcen:
 
-* [Entwicklung von Modellen](/help/mobile/models-in-repository.md)
+* [Entwicklung von Modellen](/help/mobile/administer-mobile-apps.md)
 * [Authoring von Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Verwalten von Content Services](/help/mobile/developing-content-services.md)
 
