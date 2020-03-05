@@ -1,15 +1,15 @@
 ---
 title: PhoneGap
 seo-title: Authoring von Inhalten für Adobe PhoneGap Enterprise
-description: 'Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer den Inhalt bearbeiten kann. '
-seo-description: 'Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer den Inhalt bearbeiten kann. '
+description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer den Inhalt bearbeiten kann.
+seo-description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer den Inhalt bearbeiten kann.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: 6b1052ff03f336fa102b8863fe138e91c6e9f2f7
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -35,7 +35,7 @@ Die folgenden Ressourcen helfen Ihnen beim Einstieg in AEM Mobile mit Adobe Phon
 * [AEM Mobile Content Services: Eine Übersicht](/help/mobile/develop-content-as-a-service.md)
 
    * Informationen zur Aktivierung von Content Services und Datenmodellen finden Sie unter Content Services [verwalten](/help/mobile/developing-content-services.md)
-   * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwickeln von Modellen](/help/mobile/models-in-repository.md)
+   * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwickeln von Modellen](/help/mobile/administer-mobile-apps.md)
    * Weitere Informationen zu Wiedergabe und Bereitstellung finden Sie unter [Wiedergabe und Bereitstellung von Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
