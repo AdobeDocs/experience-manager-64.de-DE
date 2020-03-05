@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -106,16 +106,12 @@ Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
    <td>This console allows you to create, manage, and process your <a href="/help/forms/using/introduction-aem-forms.md">forms and documents</a>&gt;.</td> 
   </tr>
   <tr>
-   <td>Personalisierung   </td> 
+   <td>Personalisierung    </td> 
    <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td> 
   </tr>
   <tr>
    <td>Projekte</td> 
    <td>Über die <a href="/help/sites-authoring/touch-ui-managing-projects.md">Konsole „Projekte“ können Sie direkt auf Ihre Projekte zugreifen</a>. Projekte sind virtuelle Dashboards. Sie können sie verwenden, um ein Team zusammenzustellen, diesem Team Zugriff auf Ressourcen, Workflows und Aufgaben zu erteilen und Personen so die Möglichkeit zu geben, gemeinsam an einem Ziel zu arbeiten. <br /> </td> 
-  </tr>
-  <tr>
-   <td>Screens</td> 
-   <td>Mit <a href="/help/screens/authoring-screens.md">Screens </a>können Sie alle an Kunden gerichteten Bildschirme aller Größenordnungen und an jedem Ort verwalten.</td> 
   </tr>
   <tr>
    <td>Sites</td> 
@@ -320,13 +316,13 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td> 
    <td>
     <ul> 
-     <li><br /> Desktop: Bewegen Sie den Mauszeiger über und verwenden Sie dann die Schnellaktion mit dem Häkchen</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> Desktop:Klicken Sie auf die Karte</li> 
-     <li><br /> Mobilgerät:Tippen Sie auf die Karte</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>
