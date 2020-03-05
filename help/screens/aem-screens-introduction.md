@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -43,11 +43,7 @@ In [Schnellstart für AEM Screens](kickstart-for-aem-screens.md) finden Sie eine
 
 ## Beginnen eines neuen AEM Screens-Projekts {#starting-a-new-aem-screens-project}
 
-Für den Start eines neuen Erlebnisses für digitale Beschilderungen müssen mehrere Personen mit unterschiedlichen Rollen zusammenarbeiten. Die folgenden Rollen bieten einen Ausgangspunkt für die Erstellung eines neuen Screens-Projekts:
-
-* [Autor](authoring-screens.md)
-* [Entwickler](developing-screens.md)
-* [Systemadministrator/Techniker](administering-screens.md) 
+Für den Start eines neuen Erlebnisses für digitale Beschilderungen müssen mehrere Personen mit unterschiedlichen Rollen zusammenarbeiten.
 
 In der folgenden Abbildung werden die beteiligten Personen und ihre Rollen für AEM Screens definiert. 
 
@@ -55,7 +51,7 @@ In der folgenden Abbildung werden die beteiligten Personen und ihre Rollen für 
 
 >[!NOTE]
 >
->*Wenn Sie darüber hinaus verschiedene Aufgabenbereiche der jeweiligen Rollen anzeigen möchten, klicken Sie auf die oben genannten Personen.* 
+>*Wenn Sie darüber hinaus verschiedene Aufgabenbereiche der jeweiligen Rollen anzeigen möchten, klicken Sie auf die oben genannten Personen.*
 
 ## Erforderliche Kenntnisse {#prerequisite-knowledge}
 
