@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 * Wenn Sie eine [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)bereitstellen, [müssen Sie den primären Herausgeber](#primary-publisher)
 
-* [Tunneldienst aktivieren](#tunnel-service-on-author)
+* [Aktivieren des Tunneldienstes](#tunnel-service-on-author)
 * [Aktivieren der Social-Anmeldung](social-login.md#adobe-granite-oauth-authentication-handler)
 * [Konfigurieren Sie Analytics](analytics.md)
 * Einrichten eines [Standard-E-Mail-Dienstes](email.md)
@@ -103,10 +103,10 @@ Wie bei AEM 6.4 und höher sind AEM Communities-Funktionen und Hotfixes Teil der
 
 Zwei Communities-Funktionen verwenden eine MySQL-Datenbank:
 
-* Für [Aktivierung](enablement.md): Aufzeichnung von SCORM-Aktivitäten und Lernenden
-* Für [DSRP](dsrp.md): Speichern benutzergenerierter Inhalte
+* Für [Aktivierung](enablement.md): Aufzeichnung von SCORM-Aktivitäten und -Lernenden
+* Für [DSRP](dsrp.md): Speichern benutzergenerierter Inhalte (UGC)
 
-Der MySQL Connector muss separat bezogen und installiert werden.
+Der MySQL-Connector muss separat bezogen und installiert werden.
 
 Die erforderlichen Schritte sind:
 
@@ -132,7 +132,7 @@ Die erforderlichen Schritte sind:
 
 1. Wiederholen Sie die Schritte 3 und 4 für alle Autoren- und Veröffentlichungsinstanzen.
 
-Weitere Informationen zur Installation von Bundles finden Sie auf der Seite [Web-Konsole](../../help/sites-deploying/configuring-web-console.md#bundles) .
+Weitere Informationen zum Installieren von Bundles finden Sie auf der Seite [Web-Konsole](/help/sites-deploying/web-console.md#bundles) .
 
 #### Beispiel: Installiertes MySQL Connector-Bundle {#example-installed-mysql-connector-bundle}
 
@@ -168,7 +168,7 @@ Bestehende SCORM-Installationen können auf [**cq-social-scorm-package, Version 
 
 ### So aktualisieren Sie die Version der SCORM-Engine
 
-1. Sichern Sie das ScormEngineDB-Schema.
+1. Erstellen Sie eine Sicherungskopie des ScormEngineDB-Schemas.
 1. Installieren Sie das **[cq-social-scorm-package, Version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
 1. Laden Sie das Paket herunter `/libs/social/config/scorm/ScormEngine.zip` und extrahieren Sie es.
 1. Wechseln Sie zum Ordner **Installer** des extrahierten Ordners.
@@ -177,7 +177,7 @@ Bestehende SCORM-Installationen können auf [**cq-social-scorm-package, Version 
 
    `java -Dlogback.configurationFile=logback.xml -cp "lib/*" RusticiSoftware.ScormContentPlayer.Logic.Upgrade.ConsoleApp EngineInstall.xml`
 1. Überwachen Sie die `engine_upgrade.log` Datei auf alle Fehler- und Schemaaktualisierungsstatus.
-1. Fügen Sie `/content/communities/scorm/RecordResults` die Eigenschaft **[!UICONTROL Ausgeschlossene Pfade]** im CSRF-Filter von Herausgebern `https://<hostname>:<port>/system/console/configMgr` hinzu.
+1. Fügen Sie `/content/communities/scorm/RecordResults` die Eigenschaft &quot; **[!UICONTROL Ausgeschlossene Pfade]** &quot;im CSRF-Filter von Herausgebern `https://<hostname>:<port>/system/console/configMgr` hinzu.
 
 ### SCORM-Protokollierung {#scorm-logging}
 
@@ -189,7 +189,7 @@ Informationen zum Arbeiten mit Protokollen finden Sie unter [Arbeiten mit Audit-
 
 ### AEM Advanced MLS {#aem-advanced-mls}
 
-Damit die SRP-Sammlung (MSRP oder DSRP) die erweiterte mehrsprachige Suche (MLS) unterstützen kann, sind zusätzlich zu einer benutzerdefinierten Schema- und Solr-Konfiguration neue Solr-Plug-ins erforderlich. Alle erforderlichen Elemente werden in einer herunterladbaren ZIP-Datei zusammengefasst.
+Damit die SRP-Sammlung (MSRP oder DSRP) die erweiterte mehrsprachige Suche (MLS) unterstützen kann, sind zusätzlich zu einer benutzerdefinierten Schema- und Solr-Konfiguration neue Solr-Plug-Ins erforderlich. Alle erforderlichen Elemente werden in einer herunterladbaren ZIP-Datei zusammengefasst.
 
 Der erweiterte MLS-Download (auch &quot;phasetwo&quot;genannt) ist im Adobe-Repository verfügbar:
 
@@ -225,7 +225,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit Paketen](../../help/sites-a
 
 In AEM Communities wird ein gemeinsamer Speicher zum Speichern benutzergenerierter Inhalte (UGC) verwendet und häufig als [Speicherressourcenanbieter (SRP)](working-with-srp.md)bezeichnet. Die empfohlene Bereitstellung konzentriert sich auf die Auswahl einer SRP-Option für den gemeinsamen Speicher.
 
-Der gemeinsame Speicher unterstützt die Moderation und Analyse von UGC in der Veröffentlichungsumgebung, während gleichzeitig die [Replikation](sync.md) von UGC entfällt.
+Der gemeinsame Speicher unterstützt die Moderation und Analyse von UGC in der Veröffentlichungsumgebung, während gleichzeitig keine [Replikation](sync.md) von UGC erforderlich ist.
 
 * [Community Content Store](working-with-srp.md): beschreibt die SRP-Speicheroptionen für AEM Communities
 
@@ -251,7 +251,7 @@ Daher müssen Sie die Konfiguration für alle sekundären Veröffentlichungsinst
 
 Für alle anderen (sekundären) Instanzen im Veröffentlichungsmodus:
 
-* Anmelden mit Administratorrechten
+* Anmelden mit Administratorberechtigungen
 * Access the [web console](../../help/sites-deploying/configuring-osgi.md)
 
    * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
@@ -267,7 +267,7 @@ Die Replikation wird für Site-Inhalte verwendet, die in der Veröffentlichungsu
 
 Stellen Sie für den primären Herausgeber sicher, dass die [Replication Agent-Konfiguration](../../help/sites-deploying/replication.md) den Veröffentlichungsserver und den autorisierten Benutzer richtig identifiziert. Der standardmäßig autorisierte Benutzer hat `admin,` bereits die entsprechenden Berechtigungen (ist Mitglied von `Communities Administrators`).
 
-Damit andere Benutzer über die entsprechenden Berechtigungen verfügen, müssen sie als Mitglied der `administrators` Benutzergruppe (auch Mitglied von `Communities Administrators`) hinzugefügt werden.
+Damit andere Benutzer über die entsprechenden Berechtigungen verfügen können, müssen sie als Mitglied der `administrators` Benutzergruppe (auch Mitglied von `Communities Administrators`) hinzugefügt werden.
 
 Es gibt zwei Replizierungsagenten in der Autorenumgebung, für die die Transportkonfiguration richtig konfiguriert werden muss.
 
@@ -283,7 +283,7 @@ Es gibt zwei Replizierungsagenten in der Autorenumgebung, für die die Transport
       1. Agent auswählen
       1. Select **[!UICONTROL edit]**
       1. Select the **[!UICONTROL Transport]** tab
-      1. Wenn kein Anschluss vorhanden `4503`ist, bearbeiten Sie den **[!UICONTROL URI]** , um den richtigen Anschluss anzugeben
+      1. Wenn kein Anschluss vorhanden `4503`ist, bearbeiten Sie den **[!UICONTROL URI]** , um den richtigen Anschluss anzugeben.
       1. Falls kein Benutzer `admin`, bearbeiten Sie **[!UICONTROL Benutzer]** und **[!UICONTROL Kennwort]** , um ein Mitglied der `administrators` Benutzergruppe anzugeben.
 
 Die folgenden Abbildungen zeigen die Ergebnisse einer Änderung des Anschlusses von 4503 auf 6103 durch:
@@ -342,7 +342,7 @@ Um das Schlüsselmaterial vom Autor in alle anderen Instanzen zu kopieren, müss
       Beispiel:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Kopieren Sie die MAC- und Masterdateien
+   * Kopieren Sie die hmac- und master-Dateien
 
 
 
@@ -386,11 +386,11 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 #### Granite Crypto-Bundle aktualisieren {#refresh-the-granite-crypto-bundle}
 
-* Rufen Sie auf jeder Instanz im Veröffentlichungsmodus die [Webkonsole auf](../../help/sites-deploying/configuring-osgi.md)
+* Greifen Sie auf jeder Instanz im Veröffentlichungsmodus auf die [Web-Konsole zu](../../help/sites-deploying/configuring-osgi.md)
 
    * Beispiel: [https://&lt;server>:&lt;port>/system/console/bundles](http://localhost:4503/system/console/bundles)
 
-* Suchen Sie `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto).
+* Suchen Sie nach `Adobe Granite Crypto Support` Bundle (com.adobe.granite.crypto)
 * Wählen Sie **[!UICONTROL Aktualisieren]**
 
 ![chlimage_1-416](assets/chlimage_1-416.png)
