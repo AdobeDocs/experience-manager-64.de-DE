@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -119,7 +119,8 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Verwalten von Smart-Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Konfigurieren der Integration von AEM Assets mit Brand Portal](brand-portal-configuring-integration.md)
+   + [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von Assets in Brand Portal](brand-portal-publish-assets.md)
    + [Veröffentlichen von Sammlungen in Brand Portal](brand-portal-publish-collection.md)
    + [Veröffentlichen von Ordnern in Brand Portal](brand-portal-publish-folder.md)
 + Inhaltsfragmente {#fragments}
