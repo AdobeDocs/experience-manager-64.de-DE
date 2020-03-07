@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.4 Forms User Guide
 translation-type: tm+mt
-source-git-commit: 6546a047d3013740be93b739ccd880c685250200
+source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Einführung in die interaktive Kommunikation](using/interactive-communications-overview.md)
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
    + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
-      + [Übung: Erstes adaptives Formular erstellen](using/create-your-first-adaptive-form.md)
+      + [Übung: Erstellen des ersten adaptiven Formulars](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
       + [Schulung: Formulardatenmodell erstellen](using/create-form-data-model.md)
       + [Übung: Regeln auf Felder in adaptiven Formularen anwenden](using/apply-rules-to-adaptive-form-fields.md)
@@ -562,7 +562,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Einführung in die Prozessberichterstellung](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Erste Schritte mit der Prozessberichterstellung](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funktionsweise der Prozessberichterstellung](/help/forms/using/process-reporting/process-reporting-architecture.md)
-   + [Vordefinierte Berichte in Process Reporting](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
+   + [Vordefinierte Berichte in der Prozessberichterstellung](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
    + [Benutzerspezifische Berichte in der Prozessberichterstellung](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
    + [Ad-hoc-Abfragen in der Prozessberichterstellung](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Fehlerbehebung bei der Prozessberichterstellung](/help/forms/using/process-reporting/troubleshooting-process-management.md)
@@ -612,6 +612,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + Aufrufen von AEM Forms on JEE mithilfe von APIs {#invoking-aem-forms-jee-apis}
          + [Aufrufen von AEM Forms mithilfe von REST-Anforderungen](developing/invoking-aem-forms-using-rest.md)
          + [Aufrufen von AEM Forms mithilfe von Remoting](developing/invoking-aem-forms-using-remoting.md)
+         + [AEM Forms mit Web Services aufrufen](developing/invoking-aem-forms-using-web.md)
          + [AEM Forms mit Web Services aufrufen](developing/invoking-human-centric-long-lived.md)
          + [AEM Forms mit der JavaAPI aufrufen](developing/invoking-aem-forms-using-java.md)
          + [Erstellen von Flash Builder-Anwendungen, die eine SSO-Authentifizierung mit HTTP-Token durchführen](developing/creating-flash-builder-applications-perform.md)
@@ -635,7 +636,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
          + [Aufteilen eines PDF-Dokuments mit der Webdienst-API](developing/disassemble-pdf-document-using-web.md)
          + [Bestimmen, ob Dokumente PDF/A-konform sind](developing/determining-whether-documents-pdf-a.md)
          + [Dynamisches Erstellen von DDX-Dokumenten](developing/dynamically-creating-ddx-documents.md)
-         + [Bearbeiten gesendeter Formulare](developing/handling-submitted-forms.md)
+         + [Verarbeiten gesendeter Formulare](developing/handling-submitted-forms.md)
          + [Optimieren der Leistung des Forms-Dienstes](developing/optimizing-performance-forms-service.md)
          + [Übergeben von Dokumenten an den FormsService](developing/passing-documents-forms-service.md)
          + [Vorausfüllen von Formularen mit flexiblen Layouts](developing/prepopulating-forms-flowable-layouts.md)
