@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
 
 ---
 
@@ -44,7 +44,7 @@ Wenn keine Client-Bibliothek für das angeforderte Gebietsschema vorhanden ist, 
 
 ## Lokalisierungsunterstützung für nicht unterstützte Gebietsschemata hinzufügen {#add-localization-support-for-non-supported-locales}
 
-AEM Forms unterstützt derzeit die Lokalisierung von Inhalten adaptiver Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-br), Chinesisch (zh-tn), Chinesisch-Taiwan (zh-tw) und Koreanisch (ko-kr).
+AEM Forms unterstützt derzeit die Lokalisierung von Inhalten adaptiver Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR, Chinesisch- (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
 
 So fügen Sie Unterstützung für ein neues Gebietsschema während der Laufzeit adaptiver Formulare hinzu:
 
@@ -84,7 +84,7 @@ Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderH
 
 Fügen Sie der Clientbibliothek folgende Dateien hinzu:
 
-* **i18n.js** definieren `guidelib.i18n`, mit Mustern von &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols` , `typefaces`für die `<locale>` [](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)gemäß den XFA-Spezifikationen, die unterLocale Set Specification beschrieben werden. You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.js** definieren `guidelib.i18n`, mit Mustern von &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` für die `<locale>` [](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)gemäß den XFA-Spezifikationen, die unterLocale Set Specification beschrieben werden. You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 
 * **LogMessages.js** definieren `guidelib.i18n.strings` und `guidelib.i18n.LogMessages` für die `<locale>` , wie in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 
@@ -97,12 +97,12 @@ LogMessages.js
 
 ### Gebietsschema-Unterstützung für das Wörterbuch hinzufügen {#add-locale-support-for-the-dictionary-br}
 
-Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`.
+Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Fügen Sie dem Knoten eine Zeichenfolgeneigenschaft mit mehreren Eigenschaften, `languages`, hinzu, falls nicht bereits vorhanden.
-1. Fügen Sie die `<locale>` Standardgebietsschemawerte `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`, falls nicht bereits vorhanden, hinzu.
+1. Fügen Sie die `<locale>` Standardgebietsschemawerte `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, falls nicht bereits vorhanden, hinzu.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
