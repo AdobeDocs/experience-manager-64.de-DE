@@ -1,17 +1,9 @@
 ---
 title: Konfigurieren der Rich-Text-Editor-Plug-ins
-seo-title: Konfigurieren der Rich-Text-Editor-Plug-ins
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
-seo-description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -151,7 +143,7 @@ Die Konfiguration ermöglicht die drei folgenden Anwendungsfälle:
 
 The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so that you can explicitly define which styles are allowed when pasting in AEM from another program, such as Microsoft Word.
 
-Wenn beispielsweise beim Einfügen in AEM nur fett formatierte Formate und Listen zulässig sind, können Sie die anderen Formate herausfiltern. Dies wird als konfigurierbare Paste-Filterung bezeichnet, die für beide Aufgaben durchgeführt werden kann:
+Wenn beispielsweise beim Einfügen in AEM nur fett formatierte Formate und Listen zulässig sein sollten, können Sie die anderen Formate herausfiltern. Dies wird als konfigurierbare Paste-Filterung bezeichnet, die für beide Aufgaben durchgeführt werden kann:
 
 * [Text](#pastemodes)
 * [Links](#linkstyles)
@@ -222,8 +214,8 @@ So konfigurieren Sie, welche Formate beim Einfügen von Text in AEM von einem an
    <td>nt:unstructured</td> 
    <td><p>Definiert das Verhalten beim Einfügen von Listen.<br /> </p> <p>Muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Listen zulässig ist.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p> 
     <ul> 
-     <li><code>remove</code>: Entfernt Listeninhalte.</li> 
-     <li><code>paragraph</code>: Verwandelt Listenelemente in Absätze.</li> 
+     <li><code>remove</code>: Entfernt den Inhalt der Liste.</li> 
+     <li><code>paragraph</code>: Wandelt Listen in Absätze um.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -327,7 +319,7 @@ Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte
 
    * **Name** `cssName`
    * **Typ** `String`
-   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; zum Beispiel `cssClass` anstelle von `.cssClass`)
+   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; z. B. `cssClass` anstelle von `.cssClass`)
 
 1. Fügen Sie demselben Knoten die Eigenschaft `text` hinzu. Dadurch wird der im Auswahlfeld angezeigte Text definiert:
 
@@ -351,7 +343,7 @@ Wenn ein Block-Tag, beispielsweise ein &lt;hr>-Tag, keinem Absatz zugewiesen wer
 
 Wenn das paraformat-Plug-in zum ersten Mal aktiviert wird, sind keine Standabsatzformate verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um Absatzformate für Autoren bereitzustellen:
 
-* Aktivieren Sie die Dropdownliste Format.
+* Aktivieren Sie die Dropdown-Auswahl-Liste Format.
 * Legen Sie die Block-Tags fest, die als Absatzformate in der Dropdown-Liste ausgewählt werden können.
 
 Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Formate hinzuzufügen, folgen Sie nur dem entsprechenden Teil der Anweisungen.
@@ -559,14 +551,14 @@ Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
 Manchmal kann es sein, dass Sie Datentabellen ohne visuellen Text in einer Spaltenkopfzeile erstellen, da Sie voraussetzen, dass sich der Zweck der Kopfzeile durch die visuelle Beziehung der Spalte mit anderen Spalten ergibt. In diesem Fall ist es erforderlich, dass Sie ausgeblendeten inneren Text innerhalb der Zelle in der Kopfzeilenzelle bereitstellen, damit Bildschirmlesehilfen und andere unterstützende Technologien Benutzern mit unterschiedlichen Bedürfnissen helfen können, den Zweck der Spalte zu verstehen.
 
-Um die Zugänglichkeit in solchen Fällen zu verbessern, unterstützt der RTE ausgeblendete Kopfzeilenzellen. Darüber hinaus stellt er Konfigurationseinstellungen bezüglich der ausgeblendeten Kopfzeilen in Tabellen bereit. Mit diesen Einstellungen können Sie CSS-Stile auf ausgeblendete Kopfzeilen im Bearbeitungs- und Vorschaumodus anwenden. Damit Autoren ausgeblendete Kopfzeilen im Bearbeitungsmodus besser identifizieren können, fügen Sie die folgenden Parameter in Ihren Code ein:
+Um die Zugänglichkeit in solchen Fällen zu verbessern, unterstützt der RTE ausgeblendete Kopfzeilenzellen. Darüber hinaus stellt er Konfigurationseinstellungen bezüglich der ausgeblendeten Kopfzeilen in Tabellen bereit. Mit diesen Einstellungen können Sie CSS-Stile auf ausgeblendete Kopfzeilen im Bearbeitungs- und Vorschau-Modus anwenden. Damit Autoren ausgeblendete Kopfzeilen im Bearbeitungsmodus besser identifizieren können, fügen Sie die folgenden Parameter in Ihren Code ein:
 
 * `hiddenHeaderEditingCSS`: Gibt den Namen der CSS-Klasse an, die bei der Bearbeitung von RTE auf die Zelle der ausgeblendeten Kopfzeile angewendet wird.
 * `hiddenHeaderEditingStyle`: Gibt eine Stilzeichenfolge an, die bei der Bearbeitung der RTE auf die Zelle der ausgeblendeten Kopfzeile angewendet wird.
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-Damit Autoren CSS auf ausgeblendete Header im Vorschaumodus anwenden können, können Sie die folgenden Parameter in Ihren Code einschließen:
+Um Autoren bei der Anwendung von CSS auf ausgeblendete Header im Vorschau-Modus zu unterstützen, können Sie die folgenden Parameter in Ihren Code einschließen:
 
 * `hiddenHeaderClassName`: Gibt den Namen der CSS-Klasse an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird.
 * `hiddenHeaderStyle`: Gibt eine Stilzeichenfolge an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird
@@ -602,7 +594,7 @@ Gehen Sie wie folgt vor, um ggf. weitere Wörterbücher hinzuzufügen.
 >[!NOTE]
 Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
 Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf die Schaltfläche „Rechtschreibprüfung“ tippen/klicken. Der RTE überprüft die Rechtschreibprüfung der Wörter und markiert falsch geschriebene Wörter.
-Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Um die Rechtschreibprüfung auszuführen, klicken Sie erneut auf die Rechtschreibprüfung.
+Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Um die Rechtschreibprüfung auszuführen, tippen/klicken Sie erneut auf die Rechtschreibprüfung.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
 
@@ -699,12 +691,12 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
       * **Name** `cssInternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; zum Beispiel `cssClass` anstelle von `.cssClass`)
+      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; z. B. `cssClass` anstelle von `.cssClass`)
    * CSS-Stil für externe Links
 
       * **Name** `cssExternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; zum Beispiel `cssClass` anstelle von `.cssClass`)
+      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; z. B. `cssClass` anstelle von `.cssClass`)
    * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
 
       * **Name** `protocols`
@@ -727,7 +719,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
          * **Typ** `String`)
          * **Wert(e)**:
 
-            * `auto`: bedeutet, dass ein automatisches Ziel gewählt wird
+            * `auto`: bedeutet, dass eine automatische Zielgruppe gewählt wird
 
                (durch die `targetExternal` Eigenschaft für externe Links oder `targetInternal` für interne Links angegeben).
 
@@ -737,7 +729,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
          * **Name** `targetInternal`
          * **Typ** `String`
-         * **Wert** des Ziels für interne Links (nur bei Verwendung des Modus `auto`)
+         * **Zielgruppe für interne Links bewerten** (nur verwenden, wenn der Modus `auto`)
       * Das Ziel für externe Links:
 
          * **Name** `targetExternal`
