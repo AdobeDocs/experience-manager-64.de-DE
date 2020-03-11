@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
 
 ---
 
@@ -39,7 +39,9 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. [Laden Sie die Masterbilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
 
-   Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat. AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
+   Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat, um optimale Zoomdetails zu erzielen. Mit dynamischen Medien können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixeln gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixeln oder eine beliebige andere Größenkombination mit bis zu 25 Megapixeln verwenden.
+
+   AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
 1. [Erstellen Sie Bildsets.](#creating-image-sets)
 
@@ -49,7 +51,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    Sie können Bildsets auch automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
 
-   **Wichtig** —Stapelsätze werden im Rahmen der Asset-Erfassung vom IPS (Image Production System) erstellt und sind nur im Modus &quot;Dynamische Medien - Scene7&quot;verfügbar.
+   **Wichtig** — Stapelsätze werden im Rahmen der Asset-Erfassung vom IPS (Image Production System) erstellt und stehen nur im Modus &quot;Dynamische Medien - Scene7&quot;zur Verfügung.
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
@@ -64,7 +66,7 @@ So schaffen Sie einen schnellen Einstieg:
 1. (Optional) [Viewing Image Sets](image-sets.md#viewing-image-sets) that were created using batch set presets.
 1. [Zeigen Sie Bildsets in einer Vorschau an.](previewing-assets.md)
 
-   Wählen Sie das Bildset aus, um dessen Vorschau anzuzeigen. Tippen Sie auf die Miniaturansichten, um den Bildsatz im ausgewählten Viewer zu überprüfen. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
+   Wählen Sie das Bildset aus, um dessen Vorschau anzuzeigen. Tippen Sie auf die Miniaturansicht-Symbole, um den Bildsatz im ausgewählten Viewer zu überprüfen. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
 1. [Veröffentlichen Sie Bildsets.](publishing-dynamicmedia-assets.md)
 
@@ -78,7 +80,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    Siehe [Verknüpfen eines Bildsets mit einer Webseite](linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](embed-code.md).
 
-To edit Image Sets, see [editing Image Sets.](#editing-image-sets) Darüber hinaus können Sie [Bildsatzeigenschaften](managing-assets-touch-ui.md#editing-properties)anzeigen und bearbeiten.
+To edit Image Sets, see [editing Image Sets.](#editing-image-sets) Darüber hinaus können Sie [Bildsatzeigenschaften](managing-assets-touch-ui.md#editing-properties)Ansicht und bearbeiten.
 
 Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie den Abschnitt zu Bildern und Sets unter [Problembehandlung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md#images-and-sets).
 
@@ -169,7 +171,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 Sie können Bildsätze entweder in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
 
-**Wichtig** —Stapelsätze werden vom IPS- [Bildproduktionssystem] als Teil der Asset-Erfassung erstellt und sind nur im Modus &quot;Dynamische Medien - Scene7&quot;verfügbar.)
+**Wichtig** — Stapelsätze werden vom IPS- [Bildproduktionssystem] als Teil der Asset-Erfassung erstellt und stehen nur im Modus &quot;Dynamische Medien - Scene7&quot;zur Verfügung.)
 
 However, sets created using batch set presets, do *not* appear in the user interface. Sie können diese Sets auf drei verschiedene Arten anzeigen. (Diese Methoden sind auch verfügbar, wenn Sie die Bildsets in der Benutzeroberfläche erstellt haben.)
 
