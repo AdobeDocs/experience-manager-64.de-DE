@@ -3,7 +3,7 @@ title: Unterstützung von Camera Raw
 description: Erfahren Sie, wie Sie die Camera Raw-Unterstützung in Adobe Experience Manager Assets aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um die Camera Raw-Unterstützung in Adobe Experience Ma
    * **[!UICONTROL MIME-Typen überspringen]**: `skip:image/dng, skip:image/x-raw-(.*)`
    ![CHlimage](assets/chlimage_1-334.png)
 
-1. Geben Sie auf der Registerkarte &quot; **[!UICONTROL Web-aktiviertes Bild]** &quot;im Feld Liste **[!UICONTROL überspringen]** `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`an.
+1. Geben Sie auf der Registerkarte &quot; **[!UICONTROL Web-aktiviertes Bild]** &quot;im Feld &quot;Liste **** überspringen&quot; `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![CHlimage](assets/chlimage_1-335.png)
 
@@ -57,11 +57,11 @@ Nun können Sie Camera Raw-Dateien in AEM Assets importieren. After you instal
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*Abbildung: Optionen im Seitenbereich.*
+*Abbildung: Optionen im Seitenbereich*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*Abbildung: Verwenden Sie diese Option, um Ihre Bilder leichter zu bearbeiten.*
+*Abbildung: Verwenden Sie diese Option, um Ihre Bilder leichter zu bearbeiten*
 
 Nach Speichern der Änderungen in einem Camera Raw-Bild wird die neue Darstellung `AdjustedPreview.jpg` für das Bild erstellt. Für andere Bildtypen als Camera Raw werden die Änderungen in allen Darstellungen übernommen.
 
