@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Erfahren Sie, wie Sie den Assetablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -12,11 +12,13 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Da Adobe Experience Manager (AEM) Assets vollständig in die AEM-Plattform integriert sind, können Sie Asset-Ablaufinformationen und Asset-Status effizient verwalten. Sie können Lizenzinformationen mit Assets verknüpfen.
 
+<!-- TBD see if adding more UICONTROL tags is needed -->
+
 ## Asset-Ablauf {#asset-expiration}
 
 Der Asset-Ablauf ist eine effektive Möglichkeit zum Durchsetzen von Lizenzanforderungen für Assets. Wenn ein veröffentlichtes Asset abläuft, wird seine Veröffentlichung aufgehoben und damit die Möglichkeit einer Lizenzverletzung unterbunden. Ein Benutzer ohne Administratorrechte kann ein abgelaufenes Asset weder bearbeiten, kopieren, verschieben, veröffentlichen noch herunterladen.
 
-Sie können den Ablaufstatus für ein Asset in der Assets-Konsole sowohl in der Karten- als auch in der Listenansicht anzeigen.
+Sie können den Ablaufstatus für ein Asset in der Asset-Konsole sowohl in den Ansichten &quot;Karte&quot;als auch &quot;Liste&quot;Ansicht haben.
 
 **Kartenansicht**
 
@@ -28,7 +30,7 @@ Ein abgelaufenes Asset ist entsprechend auf der Karte gekennzeichnet.
 
 For expired assets, the **[!UICONTROL Status]** column displays the **[!UICONTROL Expired]** banner.
 
-![expired_flag_list](assets/expired_flag_list.png)
+![expired_Flag_Liste](assets/expired_flag_list.png)
 
 Sie können den Ablaufstatus eines Assets in der Timeline einsehen. Wählen Sie das Asset und danach im GlobalNav-Menü die Option „Timeline“ aus.
 
