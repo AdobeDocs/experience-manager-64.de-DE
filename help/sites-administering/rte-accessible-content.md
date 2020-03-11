@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ AEM unterstützt beides:
 
 >[!NOTE]
 >
->Siehe auch:
->
->* den [Quick Guide zu WCAG 2.0](/help/managing/qg-wcag.md), um weitere Details zu erhalten.
+>* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Erstellen barrierefreier Inhalte (gemäß WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 Inhaltsautoren können Funktionen von RTE verwenden, um beim Hinzufügen von Inhalten zu einer Seite Informationen zur Barrierefreiheit bereitzustellen. Dies kann das Hinzufügen struktureller Informationen durch Überschriften und Absatzelemente umfassen.
@@ -53,7 +49,7 @@ The **Text** component in AEM is available for both the touch-enabled and the cl
 >Es gibt Unterschiede zwischen den RTE-Funktionen der klassischen Benutzeroberfläche und der touchfähigen Benutzeroberfläche. Weitere Informationen finden Sie unter
 >
 >* [Plug-ins und ihre Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins)
->* [Plugins und zugehörige Funktionen - Touch-fähige Benutzeroberfläche](/help/sites-administering/rich-text-editor.md#aboutplugins)
+>* [Plug-Ins und zugehörige Funktionen - Touch-fähige Benutzeroberfläche](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >
 
 
@@ -196,7 +192,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
    }
    ```
 
-1. Speichern Sie Ihre Änderungen mithilfe von **Alle speichern …**
+1. Speichern Sie Ihre Änderungen mithilfe von **Alle speichern**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 >
 >* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
 >* Das Attribut explizit für das DOM-Element festgelegt und/oder entfernt wird (`Table`).
-
 
