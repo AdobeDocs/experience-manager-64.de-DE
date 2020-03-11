@@ -3,7 +3,7 @@ title: Kaskadierende Metadaten
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -67,7 +67,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. (Optional) Fügen Sie die anderen erforderlichen Felder hinzu, wie z. B. Format, Codec und Dauer für Assets vom Typ „Video“.
 
-   Fügen Sie ebenso abhängige Felder für andere Asset-Typen hinzu. Fügen Sie z. B. die Anzahl der Felder und den Autor für Dokumentelemente wie PDF- und Word-Dateien hinzu.
+   Fügen Sie ebenso abhängige Felder für andere Asset-Typen hinzu. Fügen Sie z. B. die Anzahl der Feldseiten und den Autor für Dokument-Assets wie PDF- und Word-Dateien hinzu.
 
    ![video_dependence_fields](assets/video_dependent_fields.png)
 
@@ -110,4 +110,4 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    ![Kaskadierende Metadaten für Dokumenten-Assets](assets/doc_type_fields.png)
 
-   *Abbildung: Metadaten für Dokument-Assets werden übergeben*
+   *Abbildung: Metadaten für Dokument-Assets überspringen*
