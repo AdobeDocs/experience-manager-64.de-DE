@@ -3,7 +3,7 @@ title: Suche nach Assets in AEM
 description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -27,6 +27,8 @@ Sie können eine Suche basierend auf folgenden Optionen (Prädikaten) durchführ
 * Stil
 * Einblicke
 
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
+
 You can customize the Filters panel and add/remove search predicates using [search facets](search-facets.md). Führen Sie folgende Schritte aus, um das Bedienfeld „Filter“ anzuzeigen:
 
 1. In the Assets user interface, tap/click ![search_icon](assets/search_icon.png) from the toolbar to display the Omnisearch box.
@@ -34,7 +36,7 @@ You can customize the Filters panel and add/remove search predicates using [sear
 
 1. Tippen/klicken Sie auf das GlobalNav-Symbol. Das Bedienfeld „Filter“ wird angezeigt.
 
-   ![filters_panel-1](assets/filters_panel-1.png)
+   ![Filters_panel-1](assets/filters_panel-1.png)
 
    Abhängig von der Art der Elemente, nach denen Sie suchen, wird die Anzahl der Übereinstimmungen oben in den Suchergebnissen angezeigt.
 
