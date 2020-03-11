@@ -3,7 +3,7 @@ title: Überprüfen von Ordner-Assets und Sammlungen
 description: Richten Sie Prüfungsworkflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -41,7 +41,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 
 1. Geben Sie eine Beschreibung, die Aufgabenpriorität und das Fälligkeitsdatum für die Prüfungsaufgabe ein.
 
-   ![task_details](assets/task_details.png)
+   ![Aufgabe_details](assets/task_details.png)
 
 1. Geben Sie auf der Registerkarte „Erweitert“ eine Beschriftung ein, die zum Erstellen der URL verwendet werden soll.
 
@@ -55,7 +55,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Prüfen]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** Assets aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Genehmigen/Ablehnen]**, um sie zu genehmigen oder abzulehnen.
 
-   ![review_task](assets/review_task.png)
+   ![review_Aufgabe](assets/review_task.png)
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Fertig stellen]**. In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
 1. Gehen Sie zur Assets-UI und öffnen Sie den Ordner. Die Symbole für den Genehmigungsstatus der Assets werden in der Karten- sowie in der Listenansicht angezeigt.
@@ -89,14 +89,14 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 
 1. Geben Sie eine Beschreibung, die Aufgabenpriorität und das Fälligkeitsdatum für die Prüfungsaufgabe ein.
 
-   ![task_details-collection](assets/task_details-collection.png)
+   ![Aufgabe_details-collection](assets/task_details-collection.png)
 
 1. Tippen/Klicken Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Fertig]**, um die Bestätigungsmeldung zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an den Genehmiger gesendet.
 1. Melden Sie sich bei AEM Assets als Genehmiger an und gehen Sie zur Konsole „Assets“. To approve assets, tap/click the **[!UICONTROL Notifications]** icon and then select the review task from the list.
 1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Prüfen]**.
 1. Alle Assets in der Sammlung sind auf der Prüfungsseite sichtbar. Select the assets and tap/click the **[!UICONTROL Approve/Reject]** icon to approve or reject assets, as appropriate.
 
-   ![review_task_collection](assets/review_task_collection.png)
+   ![review_Aufgabe_collection](assets/review_task_collection.png)
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Fertig stellen]**. In the dialog, enter a comment and tap/click **[!UICONTROL Complete]** to confirm.
 1. Gehen Sie zur Konsole „Sammlungen“ und öffnen Sie die Sammlung. Die Symbole für den Genehmigungsstatus der Assets werden in der Karten- sowie in der Listenansicht angezeigt.
@@ -108,4 +108,3 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
    **Listenansicht**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
-
