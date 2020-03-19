@@ -3,7 +3,7 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal für das Veröffentlichen von Assets und Sammlungen im Markenportal konfigurieren. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -195,7 +195,6 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 >
 >Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
 
-<br/> <br/>
 
 ### Configure cloud service {#configure-the-cloud-service}
 
