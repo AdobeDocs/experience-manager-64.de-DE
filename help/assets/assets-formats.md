@@ -1,9 +1,9 @@
 ---
 title: In AEM Assets unterstützte Dateiformate
-description: Liste der Dateiformate und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
+description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71ae585919f3745d36bcbce4eebe49f4477e840
+source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
 
 ---
 
@@ -37,10 +37,12 @@ Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 
@@ -55,12 +57,12 @@ Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
- &amp;ast; Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+**¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
@@ -94,9 +96,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbildern. See [Camera Raw Support](camera-raw.md).
 
-## Dokumentformate {#supported-document-formats}
+## Dokument-Formate {#supported-document-formats}
 
-Folgende Dokumentformate werden für Asset-Verwaltungsfunktionen unterstützt:
+Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
 
 | Format | Speicher | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | Subasset<br> extraction | Metadata<br> writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -119,7 +121,7 @@ Folgende Dokumentformate werden für Asset-Verwaltungsfunktionen unterstützt:
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Die folgenden Dokumentformate werden für dynamische Medienfunktionen unterstützt:
+Folgende Formate werden für dynamische Medienfunktionen unterstützt:
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -204,9 +206,9 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP* | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**** &amp;ast; Die ZIP-Archive, die mit `Deflate64` Algorithmus erstellt wurden, werden in AEM nur eingeschränkt unterstützt. Archivierungs- und Archivierungsvorgänge werden nicht unterstützt. Jedoch werden Operationen wie das Laden, Navigieren und Herunterladen unterstützt.
+**²** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht. Die ZIP-Archive, die unter Verwendung des `Deflate64`-Algorithmus erstellt werden, werden in AEM nur begrenzt unterstützt. Archivierungs- und Archivierungsvorgänge werden nicht unterstützt. Jedoch werden Operationen wie das Laden, Navigieren und Herunterladen unterstützt.
 
 ## Weitere unterstützte Formate {#other-supported-formats}
 
@@ -214,20 +216,20 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 | Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Die anderen Formate werden in DAM für Speicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
+**³** Die anderen Formate werden in DAM für Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
 Standardmäßig erkennt AEM den Dateityp mit der Dateierweiterung. AEM kann es anhand des Inhalts der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
-Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 Siehe [Konfigurieren von Unterstützung für MIME-Typ-basierte Upload-Auftragsparameter](config-dynamic.md).
 
