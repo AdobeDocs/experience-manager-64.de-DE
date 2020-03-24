@@ -3,7 +3,7 @@ title: XMP-Writeback in Ausgabeformate
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
 
 ---
 
@@ -16,7 +16,7 @@ Wenn Sie die Metadaten für ein Asset aus AEM Assets ändern oder das Asset hoch
 
 Die XMP-Funktion &quot;Schriftarterfassung&quot;propagiert die Änderungen der Metadaten an alle oder bestimmte Darstellungen des Assets.
 
-Stellen Sie sich vor, Sie ändern die Eigenschaft „Titel“ des Assets „**Leder klassisch**“ zu „**Nylon**“.
+Consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
 ![metadata](assets/metadata.png)
 
@@ -32,7 +32,7 @@ Mit der XMP-Funktion &quot;Schriftarterfassung&quot;können Sie die Metadatenän
 
 Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propagieren, bearbeiten Sie die Konfiguration **Adobe CQ DAM Rendition Maker** in Configuration Manager.
 
-1. Öffnen Sie Configuration Manager von `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie Configuration Manager von `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
 1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
@@ -44,21 +44,18 @@ Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabeformate 
 
 Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten in die Ausgabeformat-Miniaturansichten „140.100.png“ und „319.319.png“ übertragen.
 
-1. Tippen/Klicken Sie auf das AEM-Logo und navigieren Sie dann zu **[!UICONTROL Werkzeuge > Workflow > Modelle]**.
-1. From the Models page, open the **DAM Metadata Writeback** workflow model.
+1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools > Workflow > Modelle]**.
+1. From the [!UICONTROL Models] page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. Öffnen Sie auf der Eigenschaftsseite **[!UICONTROL DAM Metadata Writeback]** den Schritt **[!UICONTROL XMP Writeback Process]**.
-1. Tippen/Klicken Sie im Dialogfeld Schritt-Eigenschaften auf die Registerkarte **[!UICONTROL Prozess]**.
-1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, andd then tap/click **[!UICONTROL OK]**.
+1. Tippen/Klicken Sie im Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** auf die Registerkarte **[!UICONTROL Prozess]**.
+1. Fügen Sie im Feld **[!UICONTROL Arguments]** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tippen/klicken Sie auf **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. Speichern Sie die Änderungen.
-1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-PTIFF-Ausgabedarstellung werden nur lokal in einer Dynamic Media Hybrid-Implementierung erstellt und gespeichert.
+1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
+PTIFF-Darstellungen werden nur lokal im dynamischen Media Hybrid-Modus erstellt und gespeichert. Speichern Sie den Workflow.
 
-1. Speichern Sie den Workflow.
-
-Die Änderungen an den Metadaten werden an die Darstellungen thumbnail.140.100.png und thumbnail.319.319.png des Assets weitergeleitet, nicht an die anderen.
+The metadata changes are propagated to the renditions `thumbnail.140.100.png` and `thumbnail.319.319.png` of the asset, and not the others.
 
 >[!NOTE]
 >
@@ -78,17 +75,14 @@ Dieses Problem lässt sich mit dem Whitelist-Filter für XMP-Metadaten lösen, m
 >
 >Die Filterung funktioniert nur für aus XMP-Quellen in Asset-Binärdateien abgeleitete Eigenschaften. Bei Eigenschaften, die aus XMP-fremden Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. AEM meldet diesen Wert im Metadatenfeld `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
 
-1. Öffnen Sie Configuration Manager von `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie Configuration Manager von `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
 1. Um die Whitelist-Filterung anzuwenden, wählen Sie **[!UICONTROL Whitelist auf XMP-Eigenschaften anwenden]** und geben Sie die zu importierenden Eigenschaften in das Feld **[!UICONTROL XML Namen auf der Whitelist für XMP-Filter]** ein.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. Um die XMP-Eigenschaften auf der Blacklist nach dem Anwenden der Whitelist-Filterung herauszufiltern, geben Sie sie im Feld **[!UICONTROL XML Namen auf der Blacklist für XMP-Filter]** an.
+1. Um die XMP-Eigenschaften auf der Blacklist nach dem Anwenden der Whitelist-Filterung herauszufiltern, geben Sie sie im Feld **[!UICONTROL XML Namen auf der Blacklist für XMP-Filter]** an. Speichern Sie die Änderungen.
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL Blacklist auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Das heißt, das Filtern nach der Blacklist ist standardmäßig aktiviert. To disable blacklist filtering, unselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
-
-1. Speichern Sie die Änderungen.
-
+   >Die Option **[!UICONTROL Blacklist auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Das heißt, das Filtern nach der Blacklist ist standardmäßig aktiviert. To disable blacklist filtering, deselect **[!UICONTROL Apply Blacklist to XMP Properties]**.
