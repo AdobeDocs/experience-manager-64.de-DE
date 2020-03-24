@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 649b53d9ab4165f4731889495f1a63de9eb07bc1
+source-git-commit: 31efe07cd66963559ff207bcd5492bf97076f875
 
 ---
 
@@ -46,7 +46,7 @@ Verbesserungen der neuesten Version von Smart Imaging:
 * Smart Imaging kann mit dem URL-Parameter &quot;bfc&quot;deaktiviert werden.
 * TTL (Time To Live) unabhängig. Bisher war eine TTL von mindestens 12 Stunden erforderlich, damit Smart Imaging arbeiten konnte.
 * Zuvor wurden sowohl die Original- als auch die abgeleiteten Bilder zwischengespeichert, und es war ein zweistufiger Prozess, den Cache zu ungültigen. Bei der neuesten Smart Imaging-Version werden nur die Derivate zwischengespeichert, sodass ein Prozess zur Ungültigmachung des Cache-Speichers in einem Schritt möglich ist.
-* Kunden, die benutzerdefinierte Header in ihrem Regelsatz verwenden (z. B. &quot;Timing Allow Herkunft&quot;, &quot;X-Robot&quot;, wie in [Hinzufügen eines benutzerdefinierten Header-Werts zu Bildantworten vorgeschlagen|Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)), profitieren von der neuesten Smart Imaging-Version, da diese Header im Gegensatz zur vorherigen Version von Smart Imaging nicht blockiert werden.
+* Kunden, die benutzerdefinierte Header in ihrem Regelsatz verwenden (z. B. &quot;Timing Allow Herkunft&quot;, &quot;X-Robot&quot;, wie in [Hinzufügen eines benutzerdefinierten Header-Werts zu Bildantworten vorgeschlagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)), profitieren von der neuesten Smart Imaging-Version, da diese Header im Gegensatz zur vorherigen Version von Smart Imaging nicht blockiert werden.
 
 ## Ist intelligente Bildbearbeitung mit irgendwelchen Lizenzierungskosten verbunden? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
