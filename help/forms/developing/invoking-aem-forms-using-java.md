@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: c74b951194fd2fd723056679784ac2186f37a3e2
 
 ---
 
@@ -63,6 +63,9 @@ Um einen AEM Forms-Dienst mithilfe der Java-API programmgesteuert aufzurufen, f�
 
 * Der aufzurufende AEM Forms-Dienst. Eine Client-Anwendung kann einen oder mehrere Dienste aufrufen.
 * Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten. Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellung von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
+
+>[!NOTE] (Nur Turnkey) Beginn des AEM Forms-Servers mit dem Befehl `standalone.bat -b <Server IP> -c lc_turnkey.xml` zum Angeben einer Server-IP für EJB
+
 * Der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt wird.
 
 ### Servicespezifische JAR-Dateien {#service-specific-jar-files}
