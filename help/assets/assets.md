@@ -3,7 +3,7 @@ title: Info zu AEM Assets
 description: Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das AEM Asset-Angebot von Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -64,21 +64,21 @@ Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Me
 
 Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Terminologie vertraut sein:
 
-* **** Sammlung: Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
+* **Sammlung:** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
 
-* **** Metadaten: Assets enthalten Metadaten; zum Beispiel Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden. AEM Assets unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
+* **Metadaten:** Assets enthalten Metadaten; zum Beispiel Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden. AEM Assets unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
 
-   * **Dublin Core**: einschließlich Autor, Beschreibung, Datum, Thema usw.
-   * **IPTC**: einschließlich Ereignis, Modell, Ort usw.
-   * **WCM**: einschließlich Seiteneigenschaften, Zeit und Zeit usw.
+   * **Dublin Core**: einschließlich Autor, Beschreibung, Datum, Betreff usw.
+   * **IPTC**: einschließlich Ereignis, Modell, Standort usw.
+   * **WCM**: einschließlich der Seiteneigenschaften, pünktlich und pünktlich usw.
 
-* **** Tagging: Assets können mit Tags versehen und klassifiziert werden. Weitere Informationen finden Sie in den Abschnitten über das Verwenden von Tags und das Bereitstellen von Tags.
+* **Tagging:** Assets können mit Tags versehen und klassifiziert werden. Weitere Informationen finden Sie in den Abschnitten über das Verwenden von Tags und das Bereitstellen von Tags.
 
-* **** Darstellungen:Eine Darstellung ist die binäre Darstellung eines Assets. Assets verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
+* **Darstellungen:** Eine Darstellung ist die binäre Darstellung eines Assets. Assets verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
 
-* **** Versionen:Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. Siehe Versionierung in AEM Assets.
+* **Versionen:** Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **** Teilassets: Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Fotoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
+* **Teilassets:** Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Fotoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
 
 ### Arbeiten mit Assets {#how-to-work-with-assets}
 
