@@ -205,16 +205,14 @@ Der Design-Editor ist in zwei Bereiche unterteilt:
    * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente an und die Eigenschaften, die Sie gestalten können. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, übernehmen alle Textfelder im Formular oder der interaktiven Kommunikation diesen Stil. Mit Selektoren können Sie eine allgemeine Komponente oder eine spezielle Komponente für die Formatierung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente und ein Textfeld ist eine spezielle Komponente.
 
       **Generische Stilkomponente:**
-
       
-Ein Feld kann ein numerisches Feld (z. B. Alter) oder ein Textfeld (z. B. Adresse) sein.
+      Ein Feld kann ein numerisches Feld (z. B. Alter) oder ein Textfeld (z. B. Adresse) sein.
 
       Wenn Sie ein Feld formatieren, werden alle Felder wie Alter, Name, Adresse formatiert.
 
       **Stilspezifische Komponente**:
 
-      
-Eine bestimmte Komponente wirkt sich auf Objekte der jeweiligen Kategorie aus. Wenn Sie die Komponente „Numerisches Feld“ im Design gestalten, wird nur für das Objekt für numerische Felder der Stil übernommen.
+      Eine bestimmte Komponente wirkt sich auf Objekte der jeweiligen Kategorie aus. Wenn Sie die Komponente „Numerisches Feld“ im Design gestalten, wird nur für das Objekt für numerische Felder der Stil übernommen.
 
       Beispiel: Ein Textfeld wie Adresse ist länger und ein numerisches Feld wie Alter ist kürzer. Sie können ein numerisches Feld auswählen, seine Länge verkürzen und es auf das Formular anwenden. Die Breite aller numerischen Felder wird in Ihrem Formular verringert.
 
