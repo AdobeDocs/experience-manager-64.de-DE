@@ -428,14 +428,12 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
       sowie [privilegierte Mitgliedergruppen](users.md#privilegedmembersgroups)
 
    * **`trashcan icon`**
-
       
-Funktionen aus der Site-Struktur entfernen (löschen)
+      Funktionen aus der Site-Struktur entfernen (löschen)
 
    * **`grid icon`**
 
-      
-die Reihenfolge der Funktionen ändern, die in der Navigationsleiste auf der obersten Navigationsebene der Site angezeigt werden
+      die Reihenfolge der Funktionen ändern, die in der Navigationsleiste auf der obersten Navigationsebene der Site angezeigt werden
 
 >[!NOTE]
 Sie können die Reihenfolge aller Funktionen in der Site-Struktur mit Ausnahme der Funktion oben ändern. Daher kann die Homepage der Communities-Site nicht geändert werden.
