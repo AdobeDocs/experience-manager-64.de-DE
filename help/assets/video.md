@@ -944,9 +944,8 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem
       Wenn die Komponente beispielsweise `videoPlayer`lautet, fügen Sie
 
       `trackingManager.attach(videoPlayer);`
-
-      
-, um die Komponente an den trackingManager anzuhängen. Um mehrere Viewer auf einer Seite zu verfolgen, verwenden Sie mehrere Tracking-Manager-Komponenten.
+   
+      , um die Komponente an den trackingManager anzuhängen. Um mehrere Viewer auf einer Seite zu verfolgen, verwenden Sie mehrere Tracking-Manager-Komponenten.
 
    * Erstellen Sie das Objekt „AppMeasurementBridge“, indem Sie Folgendes hinzufügen:
 
@@ -960,6 +959,7 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+   
    Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
