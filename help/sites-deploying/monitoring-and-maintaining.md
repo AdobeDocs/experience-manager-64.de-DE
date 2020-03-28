@@ -191,8 +191,7 @@ Diverse Protokolldateien werden auf dem Dateiserver gespeichert, auf dem Sie AEM
 
    * `audit.log`
 
-      
-Moderationsaktionen werden hier registriert.
+      Moderationsaktionen werden hier registriert.
 
    * `error.log`
 
@@ -212,7 +211,7 @@ Moderationsaktionen werden hier registriert.
 
    * `stderr.log`
 
-       Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. By default the log level is set to `Warning` ( `WARN`)
+      Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. By default the log level is set to `Warning` ( `WARN`)
 
    * `stdout.log`
 
@@ -226,8 +225,7 @@ Moderationsaktionen werden hier registriert.
 
    * `revision.log`
 
-      
-Überarbeitung der Journalinformationen.
+      Überarbeitung der Journalinformationen.
 
 >[!NOTE]
 >
