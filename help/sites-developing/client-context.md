@@ -194,8 +194,7 @@ AEM bietet die erweiterbaren Kontextspeicherkomponenten genericstore und generic
 
    * `@param {String} store`
 
-      
-Der zu rendernde Store
+      Der zu rendernde Store
 
    * `@param {String} divId`
 
@@ -625,15 +624,13 @@ Zum Erstellen eines zweiten ClientContext müssen Sie die Verzweigung dupliziere
 
    `/content`
 
-   
-enthält den Inhalt des benutzerdefinierten Clientkontexts.
+   enthält den Inhalt des benutzerdefinierten Clientkontexts.
 
 * Der -Ordner:
 
    `/contextstores`
 
-   
-ermöglicht Ihnen, verschiedene Konfigurationen für die Kontextspeicher zu definieren.
+   ermöglicht Ihnen, verschiedene Konfigurationen für die Kontextspeicher zu definieren.
 
 Bearbeiten Sie die Eigenschaft, um Ihren benutzerdefinierten Clientkontext zu verwenden\
 `path`\
