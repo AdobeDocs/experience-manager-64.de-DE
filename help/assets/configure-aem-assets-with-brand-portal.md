@@ -3,7 +3,7 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal für das Veröffentlichen von Assets und Sammlungen im Markenportal konfigurieren. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
+source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
 
 ---
 
@@ -17,12 +17,14 @@ Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konf
 >Die Konfiguration von AEM Assets mit Brand Portal über Adobe I/O wird auf AEM 6.4.8.0 und höher unterstützt.
 >
 >Zuvor wurde Brand Portal über das Legacy-OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
+
+
+>[!TIP]
 >
->Wenn Sie ein bestehender Brand Portal-Benutzer mit einer Konfiguration auf dem Legacy-OAuth-Gateway sind, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf Adobe I/O erstellen.
+>***Nur für bestehende Kunden***
 >
->Wenn Sie ein bestehender Brand Portal-Benutzer mit einer Konfiguration auf dem Legacy-OAuth-Gateway sind, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf Adobe I/O erstellen.
->
->Die vorhandenen Konfigurationen funktionieren jedoch auch weiterhin, sofern Sie sie nicht ändern.
+>Es wird empfohlen, weiterhin die vorhandene alte OAuth Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe I/O.
+
 
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
 * [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit dem Markenportal konfigurieren möchten, können Sie eine neue Konfiguration auf der Adobe-E/A erstellen.
