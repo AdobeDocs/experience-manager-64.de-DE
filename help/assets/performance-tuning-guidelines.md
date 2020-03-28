@@ -3,7 +3,7 @@ title: Handbuch zur Leistungsoptimierung von Assets
 description: Wichtige Bereiche der AEM-Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Performance von AEM Assets zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -16,7 +16,7 @@ Wenn Sie sich darüber hinaus an bestimmte Richtlinien zur Optimierung der Hardw
 
 Eine schwache Leistung von AEM Assets kann sich auf die Benutzerfreundlichkeit auswirken und die interaktive Leistung, Asset-Verarbeitung und Download-Geschwindigkeit und andere Bereiche beeinträchtigen.
 
-Die Leistungsoptimierung ist eine grundlegende Aufgabe, die Sie ausführen, bevor Sie Zielmetriken für ein Projekt festlegen.
+Die Leistungsoptimierung ist eine grundlegende Aufgabe, die Sie durchführen, bevor Sie für ein Projekt Zielgruppen-Metriken einrichten.
 
 In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass Leistungsprobleme erkannt und behoben werden, bevor sie sich auf die Benutzererfahrung auswirken.
 
@@ -67,7 +67,7 @@ Allen Benutzern von AEM Assets wird angeraten, Datenspeicher und Segmentspeiche
 
 ### Konfigurieren der Maximalgröße des gepufferten Bildercaches {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Wenn Sie große Mengen von Assets in Adobe Experience Manager hochladen, verringern Sie die konfigurierte maximale Größe des gepufferten Bild-Cache, um unerwartete Spitzen im Arbeitsspeicherverbrauch zu ermöglichen und JVM-Fehler mit OutOfMemory-Fehlern zu verhindern. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
+Wenn Sie große Mengen von Assets in Adobe Experience Manager hochladen, verringern Sie die konfigurierte maximale Größe des gepufferten Bild-Cache, um unerwartete Spitzen im Arbeitsspeicherverbrauch zu ermöglichen und um zu verhindern, dass JVM mit OutOfMemoryErrors fehlschlägt. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
 Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Webkonsole. Legen Sie `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -156,7 +156,7 @@ Diese Einstellung des Werts auf die Hälfte der verfügbaren Prozesse ist für d
 
 ### Abladung {#offloading}
 
-Bei umfangreichen Arbeitsabläufen oder Workflows, die ressourcenintensiv sind, wie z. B. Videotranskodierung, können Sie DAM Update Asset-Arbeitsabläufe in eine zweite Autoreninstanz hochladen. Das Problem mit der Abladung liegt häufig darin, dass die Auslastung, die durch Abladung der Workflow-Verarbeitung eingespart wird, durch die Kosten aufgewogen wird, die bei der Replikation von Inhalten zwischen den Instanzen anfallen.
+Bei großen Mengen an Workflows oder Workflows, die ressourcenintensiv sind, wie z. B. Videotranskodierung, können Sie DAM Update Asset Workflows eine zweite Autoreninstanz laden. Das Problem mit der Abladung liegt häufig darin, dass die Auslastung, die durch Abladung der Workflow-Verarbeitung eingespart wird, durch die Kosten aufgewogen wird, die bei der Replikation von Inhalten zwischen den Instanzen anfallen.
 
 Ab der Version AEM 6.2 und dem Feature Pack für AEM 6.1 können Sie Abladung mit Binaryless-Replikation durchführen. In diesem Modell verwenden die Autor-Instanzen einen gemeinsamen Datenspeicher und senden nur die Metadaten durch Vorwärtsreplikation hin und her. Diese Vorgehensweise funktioniert hervorragend mit einem gemeinsamen Dateispeicher. Mit S3-Datenspeichern können jedoch Probleme auftreten. Da im Hintergrund laufende Schreib-Threads zu Latenz führen können, kann es Assets geben, die vor Start des Abladungsauftrags nicht in den Datenspeicher geladen wurden.
 
@@ -242,11 +242,14 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-Während des Asset-Uploads erstellt der AEM-Workflow ein separates Asset für die einzelnen Seiten in den PDF- und Office-Dokumenten. Jede dieser Seiten ist selbst ein Asset, das zusätzlichen Speicherplatz belegt sowie Versionierung und zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Generierung von untergeordneten Assets sowie die Seitenextrahierung.
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-Um die Generierung von untergeordneten Assets zu deaktivieren, gehen Sie wie folgt vor:
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
+
+To disable Sub Asset generation, do the following:
 
 1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
@@ -254,19 +257,18 @@ Um die Generierung von untergeordneten Assets zu deaktivieren, gehen Sie wie fol
 1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
 1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Click on **[!UICONTROL Save]**
 
-So deaktivieren Sie die Seitenextrahierung:
+To disable Page Extraction:
 
 1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]**.
-1. Wählen Sie **[!UICONTROL Deaktivieren]**.
-1. Klicken Sie auf **[!UICONTROL OK]**.
-1. Wiederholen Sie die Schritte 3-6 für andere Starter-Elemente, die **DAM Parse Word Documents **Workflow-Modell verwenden
-
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
+1. Click **[!UICONTROL Edit]**
+1. Select **[!UICONTROL Disable]**
+1. Click **[!UICONTROL OK]**
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP-Writeback {#xmp-writeback}
@@ -345,12 +347,11 @@ Indexkonfigurationen aktualisieren, um die Zeit für Neuindizierungen zu verbess
 
    type=&quot;String&quot;
 
-1. On the /oak:index/ntBaseLucene node, set the property *reindex=true*
+1. On the /oak:index/ntBaseLucene node, set the property `reindex=true`
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Überwachen Sie die Datei &quot;error.log&quot;, um zu sehen, wenn die Indexierung abgeschlossen ist:
 
-   
-Für Indizes wurde die Neudezierung abgeschlossen: [/oak:index/ntBaseLucene]
+   Für Indizes wurde die Neudezierung abgeschlossen: [/oak:index/ntBaseLucene]
 
 1. Den Abschluss der Indizierung können Sie auch nachverfolgen, indem Sie „/oak:index/ntBaseLucene“ in CRXDe aktualisieren. Die Eigenschaft für die Neuindizierung würde auf „false“ zurückgesetzt werden.
 1. Once indexing is completed then go back to CRXDe and set the **[!UICONTROL type]** property to disabled on these two indexes
@@ -404,17 +405,17 @@ Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung be
 
 ## AEM Assets-Leistungscheckliste  {#aem-assets-performance-checklist}
 
-* Aktivieren Sie „HTTPS“, um alle vom Unternehmen installierten Sniffer für HTTP-Verkehr zu umgehen.
-* Verwenden Sie eine Kabelverbindung, um umfangreiche Assets hochzuladen
-* Implementieren Sie die Bereitstellung unter Java 8.
-* Stellen Sie optimale JVM-Parameter ein.
-* Konfigurieren Sie einen Dateisystem-DataStore oder einen S3-DataStore.
-* Aktivieren Sie Verlaufs-Workflows.
-* Stimmen Sie die Granit-Workflow-Warteschlangen ab, um gleichzeitige Aufträge einzuschränken.
-* Konfigurieren Sie ImageMagick, um den Ressourcenverbrauch einzuschränken.
-* Entfernen Sie unnötige Schritte aus dem DAM-Update-Asset-Workflow.
-* Konfigurieren Sie Workflow- und Versionsbereinigung.
-* Optimieren Sie die Lucene-Indexkonfiguration in Versionen vor 6.2.
+* Aktivieren Sie HTTPS, um alle Unternehmens-HTTP-Traffic-Sniffer zu umgehen.
+* Verwenden Sie eine Kabelverbindung, um umfangreiche Assets hochzuladen.
+* Legen Sie optimale JVM-Parameter fest.
+* Konfigurieren Sie einen Filesystem DataStore oder einen S3 DataStore.
+* Deaktivieren Sie die Erzeugung von Teilassets. Ist sie aktiviert, erstellt der AEM-Arbeitsablauf für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist ein einzelnes Asset, das zusätzlichen Speicherplatz auf der Festplatte benötigt, eine Versionsverwaltung und eine zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Aktivitäten für die Generierung und Extraktion von Teilassets.
+* Aktivieren Sie transiente Workflows.
+* Passen Sie die Granite-Workflow-Warteschlangen an, um gleichzeitige Aufträge zu begrenzen.
+* Konfigurieren Sie ImageMagick, um den Ressourcenverbrauch zu begrenzen.
+* Entfernen Sie unnötige Schritte aus dem Arbeitsablauf zur DAM-Aktualisierung von Assets.
+* Konfigurieren des Arbeitsablaufs und der Versionsbereinigung.
+* Optimieren Sie die Lucene-Indexkonfiguration.
 * Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Fragen Sie den Adobe-Support nach verfügbaren zusätzlichen Indexoptimierungen.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
