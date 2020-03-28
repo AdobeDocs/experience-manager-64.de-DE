@@ -577,8 +577,7 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung**
 
-      
-Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
+      Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
 
    * **Typ/Größe**
 
