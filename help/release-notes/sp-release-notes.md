@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
+source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
 
 ---
 
@@ -46,6 +46,8 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Die Integration von Formulardatenmodellen mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
 * AEM Assets wird jetzt über die Adobe-E/A mit dem Markenportal konfiguriert.
+
+* Die in ContextHub enthaltene jQuery-Version wurde auf 3.4.1 aktualisiert.
 
 ## Liste der Änderungen   {#list-of-changes}
 
@@ -90,7 +92,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das Bild wird auf der Zeitleiste nicht angezeigt, nachdem Anmerkungen hinzugefügt wurden, und zwar auf Experience Manager, der im Dynamischen Media Scene7-Ausführungsmodus ausgeführt wird (NPR-31754).
 
-* ZIP-Datei, die von DAM heruntergeladen wurde, kann nicht mit WinZip (NPR-31745) geöffnet werden.
+* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-31745) geöffnet werden.
 
 ### Integrationen {#integrations-6480}
 
@@ -382,7 +384,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 * `pageinfo.json` -Anforderungen sind extrem langsam und das Laden dauert zu lange. NPR-29709: Hotfix für CQ-4269560
 * `onTime` oder `offTime` auf Assets gespeicherte Metadateneigenschaften werden nicht zurückgerufen, wenn der AEM-Server neu gestartet wird. NPR-30413: Hotfix für CQ-4272784
 * Aufgrund des fehlerhaften Verhaltens der ConfigPostProcessor-Klasse wird durch das Aussetzen der übergeordneten Seite cq entfernt: LiveRelationship-Mischungstyp von der untergeordneten Seite. NPR-30536, NPR-30510: Hotfix für CQ-4254113
-* Site-übergreifende Skripterstellung (XSS) im Arbeitsablaufdialogfeld am Beginn auf der Bearbeitungsseite für Campaigne. NPR-29747: Hotfix für CQ-4271067
+* Site-übergreifende Skripterstellung (XSS) im Arbeitsablaufdialogfeld am Beginn auf der Bearbeitungsseite für Kampagnen. NPR-29747: Hotfix für CQ-4271067
 * (Klassische Benutzeroberfläche) Die Workflow-Sperrstufe deaktiviert die Registerkarte &quot;Workflow&quot;, bis die Sperre losgelassen wird. NPR-30356: Hotfix für CQ-4237557
 * (IE11) Beim Einfügen von HTML-Inhalten in eine Rich Text Editor-Komponente mit defaultPasteMode = reintext wird der HTML-Code mit der Formatierung eingefügt. Daher hat defaultPasteMode keine Auswirkungen. NPR-30045: Hotfix für GRANITE-26094
 * (Klassische Benutzeroberfläche) Wenn die Site-Admin-Seite neu geladen wird, sind alle Dropdown-Elemente im Menü &quot;Neu&quot;deaktiviert. NPR-29980: Hotfix für CQ-4272044
@@ -563,7 +565,7 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 * Das Pfadfeld im Rich-Text-Editor wird unabhängig vom Pfad, der für die Suche angegeben ist, am Stammpfad geöffnet. NPR-29483: Hotfix für CQ-4268997
 * (IE11) Kopieren Sie HTML-Inhalt in eine RTE-Komponente mit defaultPasteMode = reintext fügt den Inhalt nicht als Nur-Text ein. NPR-29432, NPR-29171: Hotfix für GRANITE-24941
 * Rechtschreibprüfung für Rich Text Editor funktioniert nicht mehr in anderen Sprachen. NPR-29506: Hotfix für CQ-4264990
-* Site-übergreifende Skripterstellung (XSS) auf der Campaign-Seite. NPR-29614: Hotfix für CQ-4269322
+* Site-übergreifende Skripterstellung (XSS) auf der Seite &quot;Kampagne&quot;. NPR-29614: Hotfix für CQ-4269322
 * Die Minimierung des Rich-Text-Editors im Vollbildmodus im Quellbearbeitungsmodus führt zum Verlust von Inhalten. NPR-29574: Hotfix für CQ-4260584
 * (Klassische Benutzeroberfläche) Die Navigation zur letzten Registerkarte ist nicht immer möglich, wenn eine große Anzahl von Tags vorhanden ist. NPR-29544: Hotfix für CQ-4264548
 * (Klassische Benutzeroberfläche) Das Navigationsmenü der Admin-Konsole wird ausgeblendet und die Seite wird nicht vollständig geladen. NPR-29571: Hotfix für CQ-4264585
@@ -2237,7 +2239,7 @@ Diese Fehler erfordern keine Aktion, da sie keine Auswirkungen auf Ihre AEM-Inst
 
 ### Behobene Probleme {#resolved-issues}
 
-**AEM 6.4.4.0**
+**AEM 6.4.4.0**
 
 * Beim Importieren/Exportieren von Metadaten wird kein Ressourcenfehler festgestellt. CQ-4253263
 * Bildkomponenten und Seiteneigenschaften können nach Anwendung von 6.4.3.0 über 6.4.2.0 nicht bearbeitet werden. CQ-4260316 &amp; CQ-4260441Problemumgehung:
