@@ -3,7 +3,7 @@ title: In AEM Assets unterstützte Dateiformate
 description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
+source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
 
 ---
 
@@ -20,7 +20,7 @@ Die Legende gibt den Grad der Unterstützung an.
 |:---:|---|
 | ✓ | Unterstützt |
 | * | Mit Funktionen von Zusatzmodulen unterstützt |
-| - | Nicht zutreffend |
+| − | Nicht zutreffend |
 
 ## Rasterbildformate {#supported-raster-image-formats}
 
@@ -37,12 +37,12 @@ Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+**‡** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 
@@ -57,12 +57,12 @@ Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+**‡** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
@@ -156,16 +156,16 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 | Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFMPEG-Transkodierung |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -206,9 +206,9 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**²** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht. Die ZIP-Archive, die unter Verwendung des `Deflate64`-Algorithmus erstellt werden, werden in AEM nur begrenzt unterstützt. Archivierungs- und Archivierungsvorgänge werden nicht unterstützt. Jedoch werden Operationen wie das Laden, Navigieren und Herunterladen unterstützt.
+**†** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht. Die ZIP-Archive, die unter Verwendung des `Deflate64`-Algorithmus erstellt werden, werden in AEM nur begrenzt unterstützt. Archivierungs- und Archivierungsvorgänge werden nicht unterstützt. Jedoch werden Operationen wie das Laden, Navigieren und Herunterladen unterstützt.
 
 ## Weitere unterstützte Formate {#other-supported-formats}
 
@@ -216,14 +216,14 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 | Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) |  |  |  |  |  | ✓ |
 
-**³** Die anderen Formate werden in DAM für Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
+**#** Die anderen Formate werden in DAM für Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
