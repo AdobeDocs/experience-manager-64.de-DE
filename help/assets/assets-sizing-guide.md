@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 8e9f7aa39832351084bc335580b2d40ed432cd84
+source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
 
 ---
 
@@ -96,7 +96,7 @@ Es ist schwierig, genaue Dimensionierungszahlen für einen Knotenspeicher oder D
 
 Binärdateien in einem Datenspeicher aufzubewahren bedeutet, dass entsprechender Speicherplatz belegt wird. Die meisten Repositorys sind zwar kleiner als 100 GB, aber es sind auch größere Repositorys mit bis zu 1 TB möglich. Zusätzlich zur Offlinekomprimierung muss genügend freier Speicher auf dem Volume vorhanden sein, damit das komprimierte Repository neben der vorab komprimierten Version neu geschrieben werden kann. Eine geeignete Faustregel: Dimensionieren Sie die Festplatte so, dass sie 1,5-mal so groß ist wie die erwartete Repositorygröße.
 
-Setzen Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level von mehr als 3 Kilobyte ein. Damit im Zuge der IOPS keine Leistungsengpässe entstehen, überwachen Sie die CPU-I/O-Wartelevel auf frühe Problemanzeichen.
+Verwenden Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level über 3000. Damit im Zuge der IOPS keine Leistungsengpässe entstehen, überwachen Sie die CPU-I/O-Wartelevel auf frühe Problemanzeichen.
 
 [Datei laden](assets/aem_environment_sizingtool.xlsx)
 
