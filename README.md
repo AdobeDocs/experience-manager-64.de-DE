@@ -1,9 +1,9 @@
 ---
-source-git-commit: 56f859e9e6a31d81364b327e744749f8d5ff4da6
+source-git-commit: 56d3b9ccfa274ffb6305317bfe262060555b46a0
 translation-type: tm+mt
 
 ---
-# Dokumentation zu AEM 6.4
+# Dokumentation zu Adobe Experience Manager 6.4
 
 Dies ist das Repository für die Dokumentation zu Adobe Experience Manager 6.4. Diese Dokumentation umfasst die Installation, Verwaltung, Authoring und Anpassung von AEM.
 
