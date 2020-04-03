@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
@@ -104,7 +104,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
   </tr>
   <tr>
    <td>Portlet-Komponente</td> 
-   <td><p>Portlet Components unter /foundation/components/portlet ermöglicht das Hosting von JSR Portlets in AEM als Komponenten.</p> <p>Adobe plant keine weiteren Verbesserungen der Funktion "Portlet-Komponenten". In AEM 6.4 ist die Portlet-Komponente enthalten, und Kunden, die ein Upgrade von früheren Versionen durchführen, können diese weiterhin verwenden. Beachten Sie, dass die Portlet-Komponente weiterhin vollständig unterstützt wird, während sie nicht mehr unterstützt wird.</p> </td> 
+   <td><p>Portlet Components unter /foundation/components/portlet ermöglicht das Hosting von JSR Portlets in AEM als Komponenten.</p> <p>Adobe plant keine weiteren Verbesserungen an der Funktion "Portlet-Komponenten". In AEM 6.4 ist die Portlet-Komponente enthalten, und Kunden, die ein Upgrade von früheren Versionen durchführen, können diese weiterhin verwenden. Beachten Sie, dass die Portlet-Komponente weiterhin vollständig unterstützt wird, während sie nicht mehr unterstützt wird.</p> </td> 
    <td>Beim Schreiben ist es nicht geplant, einen Ersatz zu liefern.</td> 
   </tr>
   <tr>
@@ -114,7 +114,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
   </tr>
   <tr>
    <td>Assets</td> 
-   <td><p>Das Assets-Abladen wurde ab AEM 6.4 nicht mehr unterstützt</p> </td> 
+   <td><p>Das Assets-Abladen wurde ab AEM 6.4 nicht mehr unterstützt.</p> </td> 
    <td> </td> 
   </tr>
  </tbody>
@@ -122,7 +122,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
 
 ## Entfernte Funktionen {#removed-features}
 
-In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM 6.4 entfernt wurden und in früheren Versionen als veraltet gekennzeichnet waren.
+In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Frühere Versionen hatten diese Funktionen als veraltet markiert.
 
 <table> 
  <tbody>
@@ -132,8 +132,8 @@ In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM�
    <td><strong>Ersatz</strong></td> 
   </tr>
   <tr>
-   <td>Analytics Activity Map</td> 
-   <td>Die Version der Activity Map, die in AEM enthalten ist.</td> 
+   <td>Analytics-Aktivität-Map</td> 
+   <td>Die Version der Aktivität Map, die in AEM enthalten ist.</td> 
    <td>Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.<br><br>Das <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Activity Map-Plugin, das von Adobe Analytics</a> bereitgestellt wird, sollte jetzt verwendet werden.</td> 
   </tr>
   <tr>
@@ -185,6 +185,41 @@ In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM�
    <td>Forms</td> 
    <td>Unterstützung für Bilder in Dokumentfragmenten wurde eingestellt. </td> 
    <td>Interaktive Kommunikation ermöglicht es, Bilder direkt in Print- und Web-Kanälen zu verwenden.<br /> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td> Nicht ersetzende Aktualisierung </td> 
+   <td>Unterstützung für eine nicht ersetzende Aktualisierung ist nicht verfügbar <br/> </td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Sidegrade für TarMK zu DocumentMK-Migrationen </td> 
+   <td> Sie können die Daten aus einem älteren System exportieren und dann in ein frisch eingerichtetes System importieren. Detaillierte Anweisungen finden Sie in den Dokumentation zur Aktualisierung von AEM Forms on JEE <br/> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+ <td>Das 32-Bit-Installationsprogramm für AEM Forms on JEE ist nicht verfügbar.</td> 
+   <td>Adobe hat den Versand des 32-Bit-Installationsprogramms für AEM Forms on JEE eingestellt. Sie können AEM Forms on JEE weiterhin mit dem 64-Bit-Installationsprogramm installieren. </td>  
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Die Unterstützung für die Verwendung von DAM-Bildern in der Dokument Fragment-Komponente wurde entfernt.</td> 
+    <td> Sie können die Bild- und Diagrammkomponente im Kanal "Drucken"der interaktiven Kommunikation verwenden. Wenn Sie die Dokument-Fragmentkomponente des adaptiven Dokuments in adaptiven Formularen verwenden, funktioniert sie nach der Aktualisierung auf AEM 6.4 Forms nicht mehr. </td>  
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Die Funktion Adaptive Dokumente wurde entfernt</td> 
+   <td> Mit der Funktion für interaktive Kommunikation können Sie gedruckte und webbasierte Kommunikation erstellen. <br/> </td> 
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>AEM Forms on JEE-spezifische Landingpage entfernt.</td> 
+    <td>AEM Forms on JEE-Landingpage wird durch AEM Landingpage ersetzt (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Die Unterstützung für Captcha-Standarddateien wurde entfernt</td> 
+   <td>Verwenden Sie den reCAPTCHA-Dienst von Google.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
