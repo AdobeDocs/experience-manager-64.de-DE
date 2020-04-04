@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -1694,6 +1694,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * ARIA-Unterstützung für Print und PrintDialog hinzugefügt.
 * ARIA-Unterstützung zur E-Mail-Validierung hinzugefügt.
 * Proaktive Backport für Fehlerbehebungen &quot;platform.clientlibs&quot;.
+* Vermeidung der automatischen Ausführung von Skripten, wenn keine Eingabe für den expliziten dataType erfolgt.
 
 **Assets**
 
