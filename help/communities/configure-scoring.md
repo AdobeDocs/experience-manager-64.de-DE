@@ -1,6 +1,6 @@
 ---
-title: Grundlagen zu Bewertung und Abzeichen
-seo-title: Grundlagen zu Bewertung und Abzeichen
+title: Grundlagen zu Scoring und Abzeichen
+seo-title: Grundlagen zu Scoring und Abzeichen
 description: Übersicht über die Funktionen "Bewertung und Abzeichen"
 seo-description: Übersicht über die Funktionen "Bewertung und Abzeichen"
 uuid: 858ca54f-b416-445d-a449-cef7eed33926
@@ -10,12 +10,12 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
 
-# Grundlagen zu Bewertung und Abzeichen {#scoring-and-badges-essentials}
+# Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
 
 Die Funktion für die Bewertung und Abzeichen von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -73,7 +73,7 @@ Wenn &quot;false&quot;festgelegt ist, zeigt Zugewiesen an, dass das Abzeichen f�
 
 ## Debug-Protokoll für Bewertung und Abzeichen {#debug-log-for-scoring-and-badging}
 
-Um das Debugging von Bewertung und Markierung zu unterstützen, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Kundensupport zur Verfügung gestellt werden, wenn Probleme mit der Funktion auftreten.
+Um das Debugging von Scoring und Abzeichen zu unterstützen, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Kundensupport zur Verfügung gestellt werden, wenn Probleme mit der Funktion auftreten.
 
 Ausführliche Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten Protokolldatei](../../help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
@@ -83,13 +83,13 @@ So richten Sie eine Slinglog-Datei schnell ein:
 
    * http://localhost:4502/system/console/slinglog
 
-1. Neue Protokollfunktion **[!UICONTROL hinzufügen]**
+1. Neue **[!UICONTROL Hinzufügen auswählen]**
 
    1. Wählen Sie `DEBUG` für **[!UICONTROL Protokollebene]**
-   1. Geben Sie beispielsweise einen Namen für die **[!UICONTROL Protokolldatei]** ein
+   1. Geben Sie beispielsweise einen Namen für die **[!UICONTROL Protokolldatei]** ein.
 
       * logs/scoring-debug.log
-   1. Geben Sie zwei **[!UICONTROL Protokolleinträge]** (Klasseneinträge) ein (über `+` das Symbol)
+   1. Geben Sie zwei **[!UICONTROL Protokolleinträge]** (Klasseneinträge) ein (mit `+` dem Symbol)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -103,7 +103,7 @@ So zeigen Sie Protokolleinträge an:
 
 * Über die Web-Konsole
 
-   * Im Menü **[!UICONTROL Status]**
+   * Im Menü &quot; **[!UICONTROL Status]** &quot;
    * Protokolldateien auswählen ****
    * Suchen Sie nach dem Namen Ihrer Protokolldatei, z. B. `scoring-debug`
 
@@ -116,13 +116,13 @@ So zeigen Sie Protokolleinträge an:
 
 ## UGC für Scoring und Bading {#ugc-for-scoring-and-badging}
 
-Es ist möglich, die UGC im Zusammenhang mit Scoring und Abzeichen anzuzeigen, wenn die ausgewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter Übersicht über den [Community-Content-Speicher](working-with-srp.md) und den [Speicher-Ressourcenanbieter](srp.md).)
+Es ist möglich, die UGC in Bezug auf die Bewertung und Abzeichen zu Ansichten, wenn die gewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community Content Datenspeicherung](working-with-srp.md) und Übersicht über [Datenspeicherung Resource Provider](srp.md).)
 
 Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da die UGC mit [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)leicht zugänglich ist.
 
-**JSRP für Autor**: Das Experimentieren in der Autorenumgebung führt zu einer UGC, die nur in der Autorenumgebung sichtbar ist.
+**JSRP für Autor**: Das Experimentieren in der Autorendatei führt zu einer UGC, die nur in der Autorenversion der Umgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](../../help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss CRXDE Lite [aktiviert werden](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei Veröffentlichung**: Ähnlich ist es bei Tests auf der Veröffentlichungsinstanz erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](../../help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss CRXDE Lite [aktiviert werden](../../help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
@@ -147,16 +147,18 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    * Suchen Sie den Knoten der Forumseite
 
       * `/content/sites/engage/en/forum/jcr:content`
-   * Hinzufügen von Eigenschaften für die Bewertung und Kennzeichnung
+   * Hinzufügen und Abzeichen
 
-      * scoringRules = [/etc/community/scoring/rules/comments-scoring,/etc/community/scoring/rules/forums-scoring]
-      * badgingRules =[/etc/community/badging/rules/comments-scoring,/etc/community/badging/rules/forums-scoring]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * Suchen Sie den Knoten der Forumkomponente
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Eigenschaft zum Anzeigen von Abzeichen hinzufügen
+   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
       * `allowBadges = true`
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
@@ -171,7 +173,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    * Suchen Sie den Knoten der Forumseite
 
       * `/content/community-components/en/forum/jcr:content`
-   * Hinzufügen von Eigenschaften für die Bewertung und Kennzeichnung
+   * Hinzufügen und Abzeichen
 
       * 
          ```
@@ -189,7 +191,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Eigenschaft zum Anzeigen von Abzeichen hinzufügen
+   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
       * `allowBadges = true`
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
@@ -204,7 +206,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" http://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
 ```
 
-Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen erhalten hat, wird der Benutzer mit seinem Forumsbeitrag so angezeigt:
+Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen erhalten hat, wird der Benutzer mit seinem Foreneintrag wie folgt angezeigt:
 
 ![chlimage_1-250](assets/chlimage_1-250.png)
 
@@ -253,15 +255,15 @@ Zu Ermittlungszwecken wird beispielsweise mithilfe von JSRP der Basisordner mit 
 
 * /content/usergenerated/asi/jcr
 
-Nach dem Pfad zum Benutzerprofil, der in einem Ablagenordner endet, z. B.
+Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.
 
-* /home/users/community/w271OOup2Z4DjnOQrviv/profile/badges
+* /home/users/community/w271OOup2Z4DjnOQrviv/Profil/badges
 
 #### Ausgezeichnetes Zeichen {#awarded-badge}
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
-#### zugewiesene Markierung {#assigned-badge}
+#### zugewiesene Abzeichen {#assigned-badge}
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
