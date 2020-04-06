@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 ---
 
@@ -28,19 +28,19 @@ Hier befinden sich herunterladbare Designelemente
 * `/content/an-scf-sandbox`
 Hier befinden sich die herunterladbaren Webseiten
 
-Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners für Anwendung, Entwurf und Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` den von Ihnen gewählten Namen.
+Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners für die Anwendung, den Entwurf und den Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` den von Ihnen gewählten Namen.
 
 >[!NOTE]
 >
 >Info zu Namen:
 >
->* Die in CRXDE angezeigten Namen sind Knotennamen, die den Pfad zu adressierbarem Inhalt bilden
+>* Die in CRXDE angezeigten Namen sind Knotennamen, die den Pfad zu adressierbaren Inhalten bilden
 >* Knotennamen können Leerzeichen enthalten, bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &#39;%20&#39; oder als &#39;+&#39; kodiert werden
 >* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie als Paketname in einer Java-Datei referenziert werden. Sowohl Bindestriche als auch Unterstriche werden mit einem Unterstrich gefolgt von ihrem Unicode-Wert versehen:
    >
-   >  
-* Bindestrich wird &#39;_002d&#39;
->  * Unterstrich wird &#39;_005f&#39;
+   >   
+   * Bindestrich wird &#39;_002d&#39;
+   >   * Unterstrich wird &#39;_005f&#39;
 
 
 ## Anwendungsverzeichnis einrichten (/apps) {#setup-the-application-directory-apps}
@@ -54,24 +54,24 @@ Der Ordner &quot;/apps&quot;ist geschützt und nicht öffentlich zugänglich, eb
    Verwenden von **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
 
    1. Wählen Sie den `/apps` Ordner
-   1. **[!UICONTROL Klicken Sie mit der rechten Maustaste auf]** Erstellen **[!UICONTROL ... oder ziehen Sie die]** Create... Menü
-   1. **[!UICONTROL Wählen Sie Ordner]** erstellen... .
-   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen&quot;]**`an-scf-sandbox`
-   1. Klicken Sie auf **[!UICONTROL OK]**.
+   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Create...]** Menü
+   1. Wählen Sie Ordner **[!UICONTROL erstellen...]** .
+   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot;Folgendes ein: `an-scf-sandbox`
+   1. Klicken Sie auf **[!UICONTROL OK]**
 
 1. Erstellen Sie den Unterordner **[!UICONTROL Komponenten]** .
 
    1. Wählen Sie den `/apps/an-scf-sandbox` Ordner
    1. Click **[!UICONTROL Create > Create Folder]**
    1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot; **[!UICONTROL Komponenten ein]**
-   1. Klicken Sie auf **[!UICONTROL OK]**.
+   1. Klicken Sie auf **[!UICONTROL OK]**
 
 1. Erstellen Sie **[!UICONTROL den Unterordner &quot;templates]** &quot;.
 
    1. Wählen Sie den `/apps/an-scf-sandbox` Ordner
    1. Click **[!UICONTROL Create > Create Folder]**
-   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot; **[!UICONTROL Vorlagen ein]**
-   1. Klicken Sie auf **[!UICONTROL OK]**.
+   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot; **[!UICONTROL Vorlagen ein.]**
+   1. Klicken Sie auf **[!UICONTROL OK]**
    1. Neu auswählen `/apps/an-scf-sandbox`
    1. Select **[!UICONTROL Save All]**
    Speichern Sie wie bei jedem Bearbeitungsprozess häufig. Wenn bei der Dateneingabe Probleme auftreten, kann dies entweder daran liegen, dass Ihr Anmeldevorgang abgelaufen ist oder Sie vorherige Änderungen speichern müssen.
@@ -86,7 +86,7 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
 1. Um das Designer-Tool in der klassischen Benutzeroberfläche zu verwenden, navigieren Sie zu [https://&lt;server>:/miscadmin](http://localhost:4502/miscadmin).
 
-   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten des Typs zu erstellen, `cq:Page`werden Zugriffssteuerung und Replikation nicht auf Standardeinstellungen für eine Seite eingestellt.
+   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten des Typs zu erstellen, `cq:Page`werden Zugriffskontrolle und Replikation nicht auf Standardeinstellungen für eine Seite eingestellt.
 
 1. In the explorer pane, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New > New Page]**.
 
@@ -103,7 +103,7 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
 1. Kehren Sie zu CRXDE Lite zurück (http:// localhost:4502/crx/de) und erweitern Sie /etc/designs, um den Knoten &quot;an-scf-sandbox&quot;anzuzeigen.
 
-   Im rechten unteren Bereich von CRXDE können Sie die Registerkarten Eigenschaften, Zugriffssteuerung und Replizierung anzeigen, um zu sehen, was mit der Designseitenvorlage definiert wurde.
+   Im rechten unteren Bereich von CRXDE können Sie die Registerkarte Eigenschaften, die Registerkarte Zugriffskontrolle und die Registerkarte Replikation Ansicht haben, um zu sehen, was mit der Designseitenvorlage definiert wurde.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -111,4 +111,4 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
 Der Ordner &quot;/content&quot;im entsprechenden Ordner befindet sich dort, wo sich der Inhalt der Website befindet. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
 
-*Nachdem* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden... . [****](initial-app.md)
+*Nachdem* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden.... [****](initial-app.md)
