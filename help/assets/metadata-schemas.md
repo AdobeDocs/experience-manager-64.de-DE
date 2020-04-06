@@ -3,16 +3,16 @@ title: Metadatenschemata
 description: 'Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
 ---
 
 
 # Metadatenschemata {#metadata-schemas}
 
-In Adobe Experience Manager (AEM)-Assets definiert ein Metadatenschema das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften, die das jeweilige Schema verwenden. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw.
+In Adobe Experience Manager (AEM) Assets definiert ein Metadaten-Schema das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften, die das jeweilige Schema verwenden. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw.
 
-Sie können den Metadaten-Schema-Forms-Editor verwenden, um vorhandene Schemata zu ändern oder benutzerdefinierte Metadaten-Schemata hinzuzufügen.
+Sie können den Metadaten-Schema Forms-Editor verwenden, um vorhandene Schema zu ändern oder benutzerdefinierte Metadaten-Schema hinzuzufügen.
 
 1. To view the properties page for an asset, click or tap the **[!UICONTROL View Properties]** from **[!UICONTROL Quick Actions]** on the asset tile in Card view.
 
@@ -30,31 +30,24 @@ Sie können den Metadaten-Schema-Forms-Editor verwenden, um vorhandene Schemata 
 
 1. Um eine Liste von Formularen/Vorlagen anzuzeigen, klicken Sie auf das AEM-Logo und navigieren Sie dann zu **[!UICONTROL Werkzeuge > Assets > Metadaten-Schemata]**.
 
-   ![chlimage_1-173](assets/chlimage_1-173.png)
+   ![chlimage_1-37](assets/chlimage_1-173.png)
 
    Die folgenden Vorlagen sind standardmäßig in AEM verfügbar:
-
    * **default**: Dies ist das Basisformular für Assets.
-   Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des Standardformulars:
 
-   i. **image**: Schema form for assets with the MIME type `image`, for example, `image/jpeg`, `image/png`, and so on.
+      Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des Standardformulars:
 
-   Das Formular „image“ weist die folgenden untergeordneten Formularvorlagen auf:
+      1. **image**: Schema-Formular für Assets mit dem MIME-Typ &quot;image&quot;, z. B. `image/jpeg`, `image/png`usw.
 
-   a. **jpeg**: Schema form for assets with sub type jpeg.
-
-   b. **tiff**: Schema form for the assets with sub type TIFF.
-
-   ii. **Anwendung**: Schemaformular für Assets mit MIME-Typanwendung, z. B. `application/pdf`, `application/zip`usw.
-
-   a. **pdf**: Schema form for assets with sub type PDF.
-
-   iii. **video**: Schemaformular für Assets mit Video vom Typ MIME, z. B. `video/avi``video/mp4` usw.
-
-   * **Sammlung**: Schemaformular für Sammlungen
-   * **** contentfragment: Schemaformular für Inhaltsfragmente
-   * **Formulare**: Dieses Schemaformular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/home.md)
-
+         Das Formular „image“ weist die folgenden untergeordneten Formularvorlagen auf:
+         * **jpeg**: Schema-Formular für Assets mit Untertyp `jpeg`.
+         * **tiff**: Schema-Formular für die Assets mit Untertyp `tiff`.
+      1. **Anwendung**: Schema-Formular für Assets mit MIME-Typ `application`, z. B. `application/pdf`, `application/zip`usw.
+         * **pdf**: Schema-Formular für Assets mit Untertyp `pdf`.
+      1. **video**: Schema-Formular für Assets mit MIME-Typ `video`, z. B. `video/avi`, `video/mp4`usw.
+   * **Sammlung**: Schema-Formular für Sammlungen.
+   * **contentfragment:** Schema-Formular für Inhaltsfragmente.
+   * **Formulare**: Dieses Schema-Formular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -66,7 +59,7 @@ Sie können den Metadaten-Schema-Forms-Editor verwenden, um vorhandene Schemata 
 
    >[!NOTE]
    >
-   >Für nicht bearbeitete Vorlagen wird ein Schloss-Symbol angezeigt.  Wenn Sie eine der Vorlagen anpassen, wird das Sperrsymbol angezeigt, bevor die Vorlage ausgeblendet wird.
+   >Für nicht bearbeitete Vorlagen wird ein Schloss-Symbol angezeigt. Wenn Sie eine der Vorlagen anpassen, wird das Sperrsymbol angezeigt, bevor die Vorlage ausgeblendet wird.
 
 1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
@@ -138,7 +131,7 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 
 **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
 
-**Reihenfolge** der Liste anzeigen: Verwenden Sie diese Eigenschaft, um eine geordnete Liste der Auswahlmöglichkeiten anzuzeigen
+**Reihenfolge** der Liste anzeigen: Verwenden Sie diese Eigenschaft, um eine geordnete Liste von Auswahlmöglichkeiten anzuzeigen
 
 **Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
 
@@ -146,7 +139,7 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 
 **Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
 
-**Symbol** löschen Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schemaformular zu löschen.
+**Löschen-Symbol** Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schema-Formular zu löschen.
 
 >[!NOTE]
 >
@@ -156,7 +149,7 @@ Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach A
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-Wenn Sie die Komponente &quot;Kontextuelle Metadaten&quot;zu einer beliebigen Registerkarte eines Schemaformulars hinzufügen, wird die Komponente als Liste auf der Seite &quot;Eigenschaften&quot;der Assets angezeigt, auf die das jeweilige Schema angewendet wird. Die Liste enthält alle weiteren Registerkarten mit Ausnahme der Registerkarte, auf die Sie die Komponente &quot;Kontextuelle Metadaten&quot;angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
+Wenn Sie die Komponente &quot;Kontextuelle Metadaten&quot;zu einer Registerkarte eines beliebigen Schema-Formulars hinzufügen, wird die Komponente als Liste auf der Seite &quot;Eigenschaften&quot;von Assets angezeigt, auf die das jeweilige Schema angewendet wird. Die Liste enthält alle anderen Registerkarten mit Ausnahme der Registerkarte, auf die Sie die Komponente &quot;Kontextuelle Metadaten&quot;angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -229,7 +222,7 @@ AEM Assets ordnet die folgenden MIME-Typen und Schemaformulare zu:
 
 ## Zugriff auf Metadatenschemata gewähren {#granting-access-to-metadata-schemas}
 
-Die Metadatenschema-Funktion steht nur Administratoren zur Verfügung. Administratoren können jedoch Benutzern ohne Administratorrechte Zugriff gewähren, indem sie **[!UICONTROL Berechtigungen zum Erstellen]**, **[!UICONTROL Ändern]** und **[!UICONTROL Löschen]** für den `/conf` Ordner bereitstellen.
+Die Metadaten-Schema-Funktion steht nur Administratoren zur Verfügung. Administratoren können jedoch Benutzern ohne Administratorrechte Zugriff gewähren, indem sie **[!UICONTROL Berechtigungen zum Erstellen]**, **[!UICONTROL Ändern]** und **[!UICONTROL Löschen]** für den `/conf` Ordner bereitstellen.
 
 ## Anwenden von ordnerspezifischen Metadaten {#applying-folder-specific-metadata}
 
