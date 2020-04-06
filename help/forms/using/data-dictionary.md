@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
 
 ---
 
@@ -36,7 +36,7 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 
 ## Voraussetzung {#prerequisite}
 
-Install the [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
+Install the [Compatibility Package](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
 
 ## Datenwörterbuch erstellen {#createdatadictionary}
 
@@ -50,12 +50,12 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 1. Tap **Create Data Dictionary**.
 1. Fügen Sie im Bildschirm „Eigenschaften“ Folgendes hinzu:
 
-   * **** Titel: (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden durch ihren Titel (falls verfügbar) referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Auf Datenwörterbücher wird nicht über ihre Titel, sondern über ihre Namen verwiesen.
+   * **Titel:** (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden durch ihren Titel (falls verfügbar) referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Auf Datenwörterbücher wird nicht über ihre Titel, sondern über ihre Namen verwiesen.
    * **Name**: Der eindeutige Name des Datenwörterbuchs. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt, wobei Sonderzeichen, Leerzeichen, Zahlen und nichtenglische Zeichen aus dem Feld „Titel“ durch Bindestriche ersetzt werden. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
 
    * **Beschreibung**: (Optional) Beschreibung des Datenwörterbuchs.
-   * **** Tags: (Optional) Um ein benutzerdefiniertes Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
-   * **Erweiterte Eigenschaften**: (Optional) Tippen Sie auf Feld **hinzufügen** , um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
+   * **Tags:** (Optional) Um ein benutzerdefiniertes Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
+   * **Erweiterte Eigenschaften**: (Optional) Tippen Sie auf **Hinzufügen Feld** , um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
    ![Eigenschaften des Datenwörterbuchs auf Deutsch](do-not-localize/1_ddproperties.png)
 
 1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen des Elements im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
@@ -194,7 +194,7 @@ Beim Bearbeiten oder Anzeigen des Datenwörterbuchs sehen Sie, welche Elemente d
 
    Sie können diese Testdaten mit DD hinzufügen (Wählen Sie DD und tippen Sie auf Testdaten hochladen und laden Sie diese XML-Datei hoch)
 
-   Wenn Sie danach den Brief normal in der Vorschau anzeigen (nicht benutzerdefiniert), werden diese XML-Daten im Brief verwendet. Sie können auch auf „Benutzerdefiniert“ tippen und diese XML hochladen.
+   Wenn Sie danach den Brief normal (nicht benutzerdefiniert) Vorschau haben, werden diese XML-Daten im Brief verwendet. Sie können auch auf „Benutzerdefiniert“ tippen und diese XML hochladen.
 
 ## Stichproben {#samples}
 
@@ -281,7 +281,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
    <td>Ein optionaler benutzerfreundlicher Name des DDEs.</td> 
   </tr> 
   <tr> 
-   <td>description</td> 
+   <td>Beschreibung</td> 
    <td>Zeichenfolge</td> 
    <td>Beschreibung des DDE.</td> 
   </tr> 
@@ -303,7 +303,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
   <tr> 
    <td>Berechnet</td> 
    <td>Boolesch </td> 
-   <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. Standardmäßig werden JSP-Ausdrücke unterstützt.</td> 
+   <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. Standardmäßig werden JSP-Ausdruck unterstützt.</td> 
   </tr> 
   <tr> 
    <td>Ausdruck</td> 
@@ -424,19 +424,15 @@ Wenn Sie denselben Brief in unterschiedlichen Sprachen senden möchten, können 
 1. Tap **OK** in the alert. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
 1. Die ZIP-Datei enthält eine Datei des Typs „.properties“. Diese Datei definiert das heruntergeladene Datenwörterbuch. Der Inhalt dieser Datei ist ähnliche wie folgender Inhalt:
 
-   # Med May 20 16:06:23 BST 2015
-
+   ```
+   #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
-
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
-
    DataDictionaryElement.name.description=
-
    DataDictionaryElement.name.displayName=name
-
    DataDictionaryElement.person.description=
-
    DataDictionaryElement.person.displayName=person
+   ```
 
    In der Struktur der Eigenschaftendatei definiert jeweils eine Zeile die Beschreibung und den Anzeigenamen des Datenwörterbuchs sowie jedes Datenwörterbuchelement im Datenwörterbuch. Darüber wird in der Eigenschaftendatei in jeweils einer Zeile ein Enum-Wertesatz für jedes Datenwörterbuchelement definiert. Wie ein Datenwörterbuch kann auch die entsprechende Eigenschaftendatei über mehrere Datenwörterbuch-Elementdefinitionen verfügen. Darüber hinaus kann die Datei die Definitionen für einen oder mehrere Enum-Wertesätze enthalten.
 
