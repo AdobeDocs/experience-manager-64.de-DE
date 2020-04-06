@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
+source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ---
 
@@ -73,7 +73,7 @@ Im Folgenden finden Sie eine Beschreibung der Schritte, die zum Aktivieren der B
 
 1. Stellen Sie sicher, dass der neueste Code installiert wurde:
 
-* [AEM-Plattformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities-Updates](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
@@ -514,7 +514,7 @@ Wenn Folgendes im Protokoll steht:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Then verify that the section [2. Autorisierter Benutzer]erstellen (/content/docs/en/aem/6-1/administer/security/security/sync.md#2). autorisierten Benutzer erstellen) ordnungsgemäß befolgt wurde.
+Then verify that the section [2. Create Authorized User](#createauthuser) was properly followed.
 
 Dieser Abschnitt beschreibt, wie ein autorisierter Benutzer erstellt wird, wer in allen Veröffentlichungsinstanzen existiert und wie diese Benutzer in der OSGi-Konfiguration „Secret Provider“ der Autoreninstanz identifiziert werden. By default, the user is `admin`.
 
