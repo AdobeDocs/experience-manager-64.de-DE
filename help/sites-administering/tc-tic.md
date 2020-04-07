@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 70039d5f7d6f773e64402c3a3e88198bb52fb11f
+source-git-commit: 64d4362c933ed30c2b9474cafbcd9c318d9c52bd
 
 ---
 
@@ -77,7 +77,7 @@ After you configure a translation integration framework, you can [associate it w
 **Hinweis:** Einen Überblick über die AEM-Funktionen zur Inhaltsübersetzung finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
 
 Eine einzelne Framework-Konfiguration steuert, wie Seiten- und Community-Inhalte und Assets übersetzt werden.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-64.jpg)
 
 ### Website-Konfigurationseigenschaften {#sites-configuration-properties}
 
@@ -134,7 +134,7 @@ Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerier
 |---|---|
 | Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung auszuführen. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
 | Inhaltskategorie | Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
-| Auswählen eines Gebietsschemas, das als globaler Share Store verwendet werden soll | (Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) der Website. Wenn Sie &quot;Kein gemeinsamer Store&quot;wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
+| Auswählen eines Gebietsschemas, das als globaler Share Store verwendet werden soll | (Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) der Website aus. Wenn Sie &quot;Kein gemeinsamer Store&quot;wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
