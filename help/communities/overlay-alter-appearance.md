@@ -31,13 +31,19 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 1. Öffnen Sie die Überlagerung `comment.hbs`
    * Doppelklicken Sie auf Knoten `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Suchen Sie die folgenden Zeilen und löschen oder kommentieren Sie sie aus:
-   `xml <aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 Löschen Sie die Zeilen oder umschließen Sie sie mit &#39;&lt;!—&#39; und &#39;—>&#39;, um sie zu kommentieren. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
-`xml <!-- do not display avatar with comment
-<aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<!-- do not display avatar with comment
+    <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 ## Overlay replizieren {#replicate-the-overlay}
 
