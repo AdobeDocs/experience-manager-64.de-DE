@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
 | Datum | 05. März 2020 |
-| Download-URL | AEM 6.4.8.0 auf [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Softwareverteilung(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| Download-URL | AEM 6.4.8.0 auf [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), [Softwareverteilung(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
 
@@ -92,13 +92,13 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das Bild wird auf der Zeitleiste nicht angezeigt, nachdem Anmerkungen hinzugefügt wurden, und zwar auf Experience Manager, der im Dynamischen Media Scene7-Ausführungsmodus ausgeführt wird (NPR-31754).
 
-* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-31745) geöffnet werden.
+* ZIP-Datei, die von DAM heruntergeladen wurde, kann nicht mit WinZip (NPR-31745) geöffnet werden.
 
 ### Integrationen {#integrations-6480}
 
 * Die Dropdownmenüs **Firma** und **Berichte** Suite werden ausgeblendet, sobald beim Konfigurieren von Adobe Analytics in Experience Manager Cloud Services (NPR-31729) die Option **Berichte-Quelle** ausgewählt wurde.
 
-* Adobe Campaign-Eigenschaften werden nicht bereinigt, wenn eine Sprachkopie eines mit einer Adobe-Kampagne verknüpften Newsletters erstellt wird, während eine Bereinigung erfolgt, wenn ein mit einer Adobe-Kampagne verknüpfter Newsletter kopiert oder eingefügt wird (NPR-32540).
+* Adobe Campaign-Eigenschaften werden nicht bereinigt, wenn eine Sprachkopie eines mit einem Adobe Campaign verknüpften Newsletters erstellt wird, während eine Bereinigung erfolgt, wenn ein mit einem Adobe Campaign verknüpfter Newsletter kopiert oder eingefügt wird (NPR-32540).
 
 ### Sling {#sling-6480}
 
@@ -1332,7 +1332,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 * Die EIN-/AUS-Zeit wird in crx/de gespeichert, ruft jedoch nicht dasselbe in der UI-Konsole der Seiteneigenschaften ab. NPR-25154: Hotfix für CQ-4243431
 * Stile Systemumbrüche die anfänglichen Eigenschaftenwerte des Dialogfelds. NPR-25648: Hotfix für CQ-4250073
 * Beim Definieren einer Eigenschaft cq:tagName in einem Knoten cq:htmlTag wird der Tag-Name nicht berücksichtigt, wenn die Komponente über JSP eingeschlossen wird. NPR-24154: Hotfix für CQ-4244120
-* Bei verschachtelten parsys-Komponenten wird immer der erste (mit dem am wenigsten verschachtelten Pfad) passende Entwurf aus mehreren verfügbaren Komponenten angewendet. Weitere Informationen finden Sie unter [Entwurfspfadauflösung](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/page-templates-static.html). NPR-24973: Hotfix für CQ-4246276
+* Bei verschachtelten parsys-Komponenten wird immer der erste (mit dem am wenigsten verschachtelten Pfad) passende Entwurf aus mehreren verfügbaren Komponenten angewendet. Weitere Informationen finden Sie unter [Entwurfspfadauflösung](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/page-templates-static.html). NPR-24973: Hotfix für CQ-4246276
 * Beim Einfügen von Text in eine RTE-Komponente wird ein Popup-Dialogfeld angezeigt, das jedoch nicht ordnungsgemäß wiedergegeben wird. NPR-24895: Hotfix für CQ-4245901
 * (RTE) Leistungsprobleme mit obligatorischer Feldanzeige. NPR-24894: Hotfix für CQ-4241895
 * (Seitenkomponente) Wenn Sie eine Komponente zu Parsys hinzufügen, wird sie von rechts abgeschnitten und die Rahmenbreite des Geräts wird gelöscht. NPR-25536: Hotfix für CQ-4238224
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * ARIA-Unterstützung für Print und PrintDialog hinzugefügt.
 * ARIA-Unterstützung zur E-Mail-Validierung hinzugefügt.
 * Proaktive Backport für Fehlerbehebungen &quot;platform.clientlibs&quot;.
-* Vermeidung der automatischen Ausführung von Skripten, wenn keine Eingabe für den expliziten dataType erfolgt.
+* Vermeidung der automatischen Ausführung von Skripten, wenn keine Eingabe für den expliziten dataType erfolgt (löst CVE-2015-9251 auf).
 
 **Assets**
 
@@ -1710,7 +1710,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 **Sites**
 
 * Wenn wir die Seite umbenennen, während wir sie verschieben, ist die Bewegung der Seite erfolgreich, aber die Funktion zum Umbenennen funktioniert nicht. NPR-22923: Hotfix für CQ-4235907
-* Fehler beim Veröffentlichen einer Live Copy-Seite, die auf eine Importer-Seite in Adobe-Kampagnen verweist. NPR-23053: Hotfix für CQ-4237164
+* Fehler beim Veröffentlichen einer Live Copy-Seite, die auf eine Importer-Seite in Adobe Campaignen verweist. NPR-23053: Hotfix für CQ-4237164
 * &quot;Verschieben/Umbenennen&quot;in der klassischen Benutzeroberfläche schlägt fehl und die Fehlermeldung &quot;Fehler beim Verschieben der Seite&quot;wird nicht umbenannt. NPR-23051: Hotfix für CQ-4235907
 * Beim Wechsel von der Ansicht &quot;Spalteninhalt&quot;zur Ansicht &quot;Liste&quot;wird eine leere Seite gerendert und eine Null-Zeiger-Ausnahme für Seiten mit OffTime- und OnTime-Einstellung als leer ausgelöst. NPR-22968, NPR-23052: Hotfix für CQ-4238940
 
@@ -2128,7 +2128,7 @@ Es gibt zwei Möglichkeiten, AEM 6.4.8.0 automatisch in einer laufenden Instanz
 
 A. Platzieren Sie das Paket in ..Ordner */crx-quickstart/install*, während der Server läuft. Das Paket wird automatisch installiert.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure you use `cmd=install&recursive=true` - so the nested package are installed.
+B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/de/experience-manager/aem-previous-versions.html) - make sure you use `cmd=install&recursive=true` - so the nested package are installed.
 
 >[!NOTE]
 >
@@ -2175,7 +2175,7 @@ To determine the certified platform for running with this release of AEM Sites a
 >
 >Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in AEM Forms JEE werden über ein separates Installationsprogramm bereitgestellt.
 
-Informationen zum Installieren des kumulativen Installationsprogramms für AEM Forms JEE und zur Konfiguration nach der Bereitstellung finden Sie unter [AEM Forms JEE-Patch-Installationsprogramm 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+Informationen zum Installieren des kumulativen Installationsprogramms für AEM Forms JEE und zur Konfiguration nach der Bereitstellung finden Sie unter [AEM Forms JEE-Patch-Installationsprogramm 0015](https://helpx.adobe.com/de/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### Für NPR-21268 erforderliche Konfigurationseinstellungen {#configuration-settings-required-for-npr}
 
@@ -2264,7 +2264,7 @@ Liste der in AEM 6.4.8.0 enthaltenen Inhaltspakete
 
 * [Versionshinweise zu AEM 6.4](../release-notes/release-notes.md)
 * [AEM-Produktseite](https://www.adobe.com/solutions/web-experience-management.html)
-* [Dokumentation zu AEM 6.4](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [Dokumentation zu AEM 6.4](https://helpx.adobe.com/de/support/experience-manager/6-4.html)
 * Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### Eingeschränkte Sites {#restricted-sites-new}
