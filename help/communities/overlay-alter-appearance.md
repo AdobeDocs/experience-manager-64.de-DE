@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
 
 ---
 
@@ -29,13 +29,13 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
    1. Wählen Sie nun eine der folgenden Optionen aus `/apps/social/commons/components/hbs/comments/comment`
    1. Einfügen **[!UICONTROL auswählen]**
 1. Öffnen Sie die Überlagerung `comment.hbs`
-   * Doppelklicken Sie auf Knoten `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Dublette-Click auf Knoten `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Suchen Sie die folgenden Zeilen und löschen oder kommentieren Sie sie aus:
 
-```xml
-<aside class="scf-comment-author">
-        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-```
+   ```xml
+   <aside class="scf-comment-author">
+           <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+   ```
 
 Löschen Sie die Zeilen oder umschließen Sie sie mit &#39;&lt;!—&#39; und &#39;—>&#39;, um sie zu kommentieren. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
 
@@ -47,7 +47,7 @@ Löschen Sie die Zeilen oder umschließen Sie sie mit &#39;&lt;!—&#39; und &#3
 
 ## Overlay replizieren {#replicate-the-overlay}
 
-Schieben Sie die überlagerte Kommentarkomponente mithilfe des Replikationswerkzeugs an die Veröffentlichungsinstanz.
+Schieben Sie die überlagerte Kommentarkomponente mithilfe des Replizierungswerkzeugs an die Veröffentlichungsinstanz.
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ Schieben Sie die überlagerte Kommentarkomponente mithilfe des Replikationswerkz
 
 Wählen Sie in der globalen Navigation &quot; **[!UICONTROL Werkzeuge&quot;> &quot;Bereitstellung&quot;> &quot;Replikation]** &quot;und **[!UICONTROL aktivieren Sie anschließend die Struktur]**.
 
-Geben Sie als Startpfad ein `/apps/social/commons` und wählen Sie **[!UICONTROL Aktivieren]**.
+Geben Sie für den Beginn Pfad ein `/apps/social/commons` und wählen Sie **[!UICONTROL Aktivieren]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## Ergebnisse anzeigen {#view-results}
+## Ansichten {#view-results}
 
 Wenn Sie sich als Administrator bei der Veröffentlichungsinstanz anmelden, z. B. http://localhost:4503/crx/de als Administrator/Administrator, können Sie überprüfen, ob die überlagerten Komponenten vorhanden sind.
 
