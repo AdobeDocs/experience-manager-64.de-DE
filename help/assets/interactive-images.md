@@ -10,14 +10,14 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 43a28b0d9552cfde74850dfd1a1d63d04f7e4540
 
 ---
 
 
 # Interaktive Bilder {#interactive-images}
 
-Sie können statische Bilder ganz einfach ansprechende Erlebnisse für Kunden machen, indem Sie Hotspots auf ein Bild ziehen und dort ablegen. Shoppable-Hotspots kombinieren zusätzliche Informationen über ein Produkt oder einen Service mit einer Direktverkaufsfunktion &quot;Zum Einkaufswagen hinzufügen&quot;oder &quot;Kaufen&quot;. Kunden können auf diese Hotspots tippen und direkt mit dem Produkt oder Service verknüpft werden, sie einem Warenkorb hinzufügen oder mit einer Webseite verknüpft werden.  Direkte Erlebnisse wie diese erhöhen das Kundenengagement und die Umrechnung auf Ihrer Website.
+Sie können statische Bilder ganz einfach ansprechende Erlebnisse für Kunden machen, indem Sie Hotspots auf ein Bild ziehen und dort ablegen. Shoppable-Hotspots kombinieren zusätzliche Informationen über ein Produkt oder eine Dienstleistung mit einer Direktverbindung, einem Point-of-Sale &quot;Hinzufügen in den Einkaufswagen&quot; oder der Funktion &quot;Kaufen&quot;. Kunden können auf diese Hotspots tippen und direkt mit dem Produkt oder Service verknüpft werden, sie einem Warenkorb hinzufügen oder mit einer Webseite verknüpft werden. Direkte Erlebnisse wie diese erhöhen das Kundenengagement und die Umrechnung auf Ihrer Website.
 
 Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnellansichts-Popup. Benutzer können die Schnellansicht aktivieren, indem sie auf den Kreis oder „Hotspot“ des Modells tippen.
 
@@ -25,11 +25,11 @@ Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnella
 
 Zeigen Sie die interaktiven Bilder in Aktion auf der oben gezeigten Webseite an, indem Sie Folgendes aufrufen:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## Schauen Sie sich an, wie interaktive Bildbanner erstellt werden {#watch-how-interactive-image-banners-are-created}
 
-Hier erhalten Sie eine Einführung (10 Min., 33 Sek.) in die [Erstellung interaktiver Bildbanner](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). Außerdem erfahren Sie, wie Sie interaktive Bildbanner in der Vorschau betrachten, bearbeiten und bereitstellen können.
+Hier erhalten Sie eine Einführung (10 Min., 33 Sek.) in die [Erstellung interaktiver Bildbanner](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). Außerdem erfahren Sie, wie Sie interaktive Bildbanner in der Vorschau betrachten, bearbeiten und bereitstellen können.
 
 ## Schnellstart: Interaktive Bilder {#quick-start-interactive-images}
 
@@ -37,7 +37,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
 Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden Beispielwebseite basiert, der noch keine interaktiven Bilder hinzugefügt wurden:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html)
 
 Das Tutorial veranschaulicht die Schritte zur Integration von interaktiven Bildern auf Ihrer eigenen Website.
 
@@ -57,7 +57,7 @@ Das Tutorial veranschaulicht die Schritte zur Integration von interaktiven Bilde
 
    Siehe [Hochladen eines Bildbanners](#uploading-an-image-banner).
 
-1. **Hinzufügen von Hotspots zu einem Bild-Banner** - Fügen Sie einem Bild-Banner einen oder mehrere Hotspots hinzu und verknüpfen Sie jedes mit einer Aktion wie einem Hyperlink, einer QuickView oder einem Erlebnisfragment. Nachdem Sie Hotspots hinzugefügt haben, schließen Sie diese Aufgabe ab, indem Sie das interaktive Bild veröffentlichen.
+1. **Hinzufügen von Hotspots zu einem Bild-Banner** - Hinzufügen einem oder mehreren Hotspots zu einem Bild-Banner und Verknüpfen jedes dieser Hotspots mit einer Aktion wie einem Hyperlink, einer QuickView oder einem Erlebnisfragment. Nachdem Sie Hotspots hinzugefügt haben, schließen Sie diese Aufgabe ab, indem Sie das interaktive Bild veröffentlichen.
 
    * Siehe [Hinzufügen von Hotspots zu einem Bildbanner](#adding-hotspots-to-an-image-banner).
    *  Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-previewing-interactive-images). Bei Bedarf können Sie eine Darstellung des Banners mit Shopping-Funktion anzeigen und dessen Interaktivität testen.
@@ -65,7 +65,7 @@ Das Tutorial veranschaulicht die Schritte zur Integration von interaktiven Bilde
 
 1. **Hinzufügen eines interaktiven Bildes zu Ihrer Website oder zu Ihrer Website in AEM**
 
-   * Wenn Sie AEM-Sites, AEM eCommerce oder beides verwenden, können Sie das interaktive Bild direkt zu einer Webseite in AEM hinzufügen, indem Sie die Komponente Interaktive Medien auf die Seite ziehen. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+   * Wenn Sie AEM-Sites, AEM eCommerce oder beides verwenden, können Sie das interaktive Bild direkt zu einer Webseite in AEM hinzufügen, indem Sie die Komponente Interaktive Medien auf die Seite ziehen. Siehe [Hinzufügen von Assets mit dynamischen Medien zu Seiten](adding-dynamic-media-assets-to-pages.md). 
    * Wenn Sie lediglich AEM Assets und Dynamic Media verwenden, müssen Sie den Einbettungscode auf Ihrer Website kopieren und in Ihre vorhandene Schnellansicht integrieren. Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
    * Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie das neue interaktive Video in die vorhandene Schnellansichtsimplementierung integrieren, die auf Ihrer Website verwendet wird. Siehe [Integrieren eines interaktiven Bildes in einer Schnellansicht](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -83,7 +83,7 @@ Wenn Ihre AEM-Implementierung eCommerce verwendet, können Sie diese Aufgabe üb
 
 Ermitteln Sie zunächst die dynamischen Variablen, die von Ihrer vorhandenen Schnellansichtsimplementierung verwendet werden, damit Sie Hotspot-Daten eingeben können, um das interaktive Bild zu erstellen.
 
-Wenn Sie Hotspots zu einem Bannerbild in AEM Assets hinzufügen, müssen Sie eine SKU (Stock Keeping Unit; Lagereinheit; eine eindeutige Kennung für jedes einzelne Produkt oder jede Dienstleistung, die Sie anbieten) und optional zusätzliche Variablen für jeden Hotspot. Anhand dieser Hotspot-Variablen werden Hotspots später mit Schnellansichtsinhalten abgeglichen.
+Wenn Sie Hotspots zu einem Bannerbild in AEM Assets hinzufügen, müssen Sie eine SKU (Stock Keeping Unit; Lagereinheit; einen eindeutigen Bezeichner für jedes einzelne Produkt oder jeden Dienst, das bzw. den Sie als Angebot verwenden, und optional zusätzliche Variablen für jeden Hotspot. Anhand dieser Hotspot-Variablen werden Hotspots später mit Schnellansichtsinhalten abgeglichen.
 
 Sie müssen die Anzahl und den Typ der Variablen für die Verknüpfung mit Hotspot-Daten korrekt identifizieren. Jeder dem Bannerbild hinzugefügte Hotspot muss ausreichend Informationen enthalten, um das Produkt im vorhandenen Back-End-System eindeutig zu identifizieren.
 
@@ -150,13 +150,13 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
          <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li> 
-        </ul> <p>In diesem Fall liegen zwei abweichende Teile in der URL vor. Die SKU wird im <code>prodId</code> Parameter und in der Kategorie-ID gespeichert</p><p><code>categoryId</code></p><ul><li><p><code>305466</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>310181</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>308706</code><code>categoryId</code><code>1740148</code></p></li></ul><p></p></td></tr></tbody></table></td></tr><tr></tr></table>
+        </ul> <p>In diesem Fall liegen zwei abweichende Teile in der URL vor. Die SKU wird im <code>prodId</code> Parameter und in der Kategorien-ID gespeichert</p><p><code>categoryId</code></p><ul><li><p><code>305466</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>310181</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>308706</code><code>categoryId</code><code>1740148</code></p></li></ul><p></p></td></tr></tbody></table></td></tr><tr></tr></table>
 
 **Beispiel**
 
 Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die Demo-Webseite anwenden:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html)
 
 The demo web page has several product thumbnails, each having a Quickview button labeled **[!UICONTROL See More]**. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Back-End gesendeten Schnellansichtsanforderungen:
 
@@ -231,7 +231,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
 >[!NOTE]
 >
->Beachten Sie, dass die Werkzeuge zum Freigeben von sozialen Medien in interaktiven Bildern nicht unterstützt werden, wenn Sie den Viewer in ein Erlebnisfragment einbetten. Um dies zu umgehen, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Social Media Sharing-Werkzeuge haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Erlebnisfragmente einbetten.
+>Beachten Sie, dass die Werkzeuge zum Freigeben von sozialen Medien in interaktiven Bildern nicht unterstützt werden, wenn Sie den Viewer in ein Erlebnisfragment einbetten. Um dies zu umgehen, können Sie Viewer-Vorgaben verwenden oder erstellen, für die keine Social Media-Sharing-Werkzeuge zur Verfügung stehen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Erlebnisfragmente einbetten.
 
 **[!UICONTROL Die Optionen &quot;Rückgängig]** &quot;und &quot; **[!UICONTROL Wiederholen]** &quot;in der oberen rechten Ecke der Seite werden während der aktuellen Erstellungssitzung/Bearbeitungssitzung unterstützt.
 
@@ -263,8 +263,9 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Tippen Sie in der Nähe der rechten oberen Ecke der Seite auf **[!UICONTROL Hotspot]**.
 1. a. Near the upper-left corner of the **Hotspot Management** page, tap **[!UICONTROL Hotspot]**.
-b.Tippen Sie im Bild auf eine Stelle, an der der Hotspot angezeigt werden soll. Ziehen Sie bei Bedarf den Hotspot, um seine Position anzupassen.
-c.Fügen Sie nach Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b wiederholen.d.(Optional) Um einen Hotspot zu löschen, wählen Sie ihn im Bild aus und tippen Sie dann unter der Überschrift &quot; **[!UICONTROL Hotspots]** &quot;auf &quot; **[!UICONTROL Löschen]** &quot;(das Symbol &quot;Müll kann&quot;).
+b. Tippen Sie im Bild auf eine Stelle, an der der Hotspot angezeigt werden soll. Ziehen Sie bei Bedarf den Hotspot, um seine Position anzupassen.
+c. Hinzufügen Sie nach Bedarf weitere Hotspots, indem Sie die Schritte a und b wiederholen.
+d. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn im Bild aus und tippen Sie dann unter der Überschrift &quot; **[!UICONTROL Hotspots]** &quot;auf &quot; **[!UICONTROL Löschen]** &quot;(das Symbol &quot;Müll kann&quot;).
 
 1. In the **[!UICONTROL Name]** text field, type the name of the hotspot. This name also appears in the **[!UICONTROL Selected Hotspot]** drop-down list.
 1. Führen Sie einen der folgenden Schritte aus:
@@ -275,8 +276,8 @@ c.Fügen Sie nach Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b 
       * If you are *not* an AEM Sites or eCommerce customer
 
          * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you will need to define these variables.
-         * Geben Sie dann manuell den SKU-Wert ein. In the **[!UICONTROL SKU Value]** text field, type the product&#39;s SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. Der eingegebene SKU-Wert füllt automatisch den variablen Teil der Quickview-Vorlage, damit das System den getippten Hotspot mit der QuickView einer bestimmten SKU verknüpfen kann.
-         * (Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**.  Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Mens` eine hinzugefügte Variable.
+         * Geben Sie dann manuell den SKU-Wert ein. In the **[!UICONTROL SKU Value]** text field, type the product&#39;s SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. Der eingegebene SKU-Wert füllt automatisch den variablen Teil der QuickView-Vorlage, damit das System den getippten Hotspot mit der QuickView einer bestimmten SKU verknüpfen kann.
+         * (Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Mens` eine hinzugefügte Variable.
    * Tippen Sie auf **Hyperlink**.
 
       * If you are an AEM Sites customer, tap the **[!UICONTROL Site Selector]** icon (folder) to navigate to a URL. Beachten Sie, dass die URL-basierte Verlinkungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
@@ -291,7 +292,7 @@ c.Fügen Sie nach Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b 
 
          Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-authoring/experience-fragments.md).
          >[!NOTE]
-         >Beachten Sie, dass die Werkzeuge zum Freigeben von sozialen Medien in interaktiven Bildern nicht unterstützt werden, wenn Sie den Viewer in ein Erlebnisfragment einbetten. Um dies zu umgehen, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Social Media Sharing-Werkzeuge haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Erlebnisfragmente einbetten.
+         >Beachten Sie, dass die Werkzeuge zum Freigeben von sozialen Medien in interaktiven Bildern nicht unterstützt werden, wenn Sie den Viewer in ein Erlebnisfragment einbetten. Um dies zu umgehen, können Sie Viewer-Vorgaben verwenden oder erstellen, für die keine Social Media-Sharing-Werkzeuge zur Verfügung stehen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Erlebnisfragmente einbetten.
 
       * Legen Sie die Breite und Höhe des Experience Fragments fest, so wie es im Banner angezeigt werden soll.
 
@@ -312,7 +313,7 @@ c.Fügen Sie nach Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b 
 
 ### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
 
-Sie können &quot;Vorschau&quot;verwenden, um eine Darstellung des Erscheinungsbilds Ihres interaktiven Bilds für Kunden anzuzeigen und die Hotspots des Bildes zu testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
+Sie können Vorschau verwenden, um eine Darstellung des Erscheinungsbilds Ihres interaktiven Bilds anzuzeigen und die Hotspots des Bildes zu testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
 
 Wenn das interaktive Bild Ihren Vorstellungen entspricht, können Sie es veröffentlichen.\
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Webseite](embed-code.md).\
@@ -350,7 +351,7 @@ Wenn Sie ein nur AEM Assets verwenden, können Sie das interaktive Bild Ihrer We
 
 Verwenden der Demowebsite als ein Beispiel:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html)
 
 Beachten Sie, dass es sich beim Bild der drei Männer um ein statisches `IMG`-Tag handelt:
 
@@ -360,7 +361,7 @@ Beachten Sie, dass es sich beim Bild der drei Männer um ein statisches `IMG`-Ta
 
 Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsprechende Ersetzung durch den kopierten Integrationscode aus AEM Assets. Sie können das Ergebnis in der folgenden URL anzeigen, die ein interaktives Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
+[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -368,9 +369,9 @@ Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsp
 
 To apply a crop to a shoppable interactive image for a responsive environment, you can include the Interactive Image configuration attribute `ZoomView.iscommand` to the path—where `ZoomView` is the component to call and `iscommand` is the crop image serving command that you apply.
 
-Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html).
+Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html).
 
-Informationen finden Sie unter [Image-Serving-Befehl](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_crop.html).
+Informationen finden Sie unter [Image-Serving-Befehl](https://marketing.adobe.com/resources/help/de_DE/s7/is_ir_api/is_api/http_ref/r_crop.html).
 
 Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
@@ -509,7 +510,7 @@ Im Folgenden finden Sie den vollständigen Quellcode:
 
 Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Bild hat folgendes Aussehen:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
+[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-3.html)
 
 ## Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups {#using-quickviews-to-create-custom-pop-ups}
 
