@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
   </tr>
   <tr>
    <td>Portal-Direktor</td> 
-   <td><p>Der Portal-Direktor ist eine Reihe von Funktionen, die das Hosting von AEM-Inhalten über das Portlet in Drittanbieter-Servern ermöglichen.</p> <p>Adobe plant keine weiteren Verbesserungen am Portal-Dirtector unter dem unten aufgeführten Speicherort. In AEM 6.4 ist der Portal-Director enthalten, und Kunden, die ein Upgrade von früheren Versionen durchführen, können das Programm weiterhin wie bisher verwenden. Beachten Sie, dass Portal Direct weiterhin vollständig unterstützt wird, während es nicht mehr unterstützt wird.</p> 
+   <td><p>Der Portal-Direktor ist eine Reihe von Funktionen, die das Hosting von AEM-Inhalten über das Portlet in Drittanbieter-Servern ermöglichen.</p> <p>Adobe plant keine weiteren Verbesserungen an der Funktion "Portal-Direktor"unter dem unten aufgeführten Speicherort. In AEM 6.4 ist der Portal-Director enthalten, und Kunden, die ein Upgrade von früheren Versionen durchführen, können das Programm weiterhin wie bisher verwenden. Beachten Sie, dass Portal Direct weiterhin vollständig unterstützt wird, während es nicht mehr unterstützt wird.</p> 
     <ul> 
      <li>/libs/portal/direktor</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
   <tr>
    <td>Forms</td> 
    <td><p>Die Unterstützung für den Adobe Central Migration Bridge-Service wird eingestellt, da Adobe Central nicht länger unterstützt wird.</p> </td> 
-   <td> </td> 
+   <td>Kein Ersatz vorhanden. </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td><p>Veraltete Verwendung von JSONObject in Abfrage und OperationOptions. Die folgenden APIs werden nicht mehr unterstützt:
+   <ul><li>setArguments(JSONObject-Argumente)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, JSONObject-Argumente</li><li>JSONObject getArguments()</li><li>void setArguments(JSONObject-Argumente)</li></ul>
+   </p> </td> 
+   <td>IValueMap-API verwenden </td> 
   </tr>
   <tr>
    <td>Assets</td> 
@@ -209,12 +216,17 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
   <tr>
    <td>Forms</td> 
    <td> Die Funktion Adaptive Dokumente wurde entfernt</td> 
-   <td> Mit der Funktion für interaktive Kommunikation können Sie gedruckte und webbasierte Kommunikation erstellen. <br/> </td> 
+   <td> Mit der Funktion für interaktive Kommunikation können Sie gedruckte und webbasierte Kommunikation erstellen. Wenn Sie adaptive Dokumente verwenden, installieren Sie das Kompatibilitätspaket, um weiterhin vorhandene adaptive Dokumente zu verwenden<br/> </td> 
   </tr>
     <tr>
     <td>Forms</td> 
     <td>AEM Forms on JEE-spezifische Landingpage entfernt.</td> 
     <td>AEM Forms on JEE-Landingpage wird durch AEM Landingpage ersetzt (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Die Unterstützung für Captcha-Standarddateien wurde entfernt</td> 
+   <td>Verwenden Sie den reCAPTCHA-Dienst von Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
