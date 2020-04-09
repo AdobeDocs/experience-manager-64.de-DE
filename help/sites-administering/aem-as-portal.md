@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f25d901a-c62c-46b4-aab7-3ca3da1cea5b
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -44,7 +44,7 @@ Informationen zum Konfigurieren von AEM-Inhalten, sodass diese in einem Portal a
 
 >[!CAUTION]
 >
->Der AEM Portal Director ist seit der Version AEM 6.4 veraltet. Weitere Informationen dazu finden Sie in [Veraltete und entfernte Funktionen](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>Der AEM Portal Director ist seit der Version AEM 6.4 veraltet. Weitere Informationen dazu finden Sie in [Veraltete und entfernte Funktionen](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Verwalten des AEM-Inhalts-Portlets {#administering-the-aem-content-portlet}
 
@@ -103,37 +103,37 @@ Die Portlet-Voreinstellungen können während der Bereitstellung im Portal-Serve
 
 Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>startPath</td> 
-   <td><p>Dies ist der Startpfad des Portlets. Er definiert den Inhalt, der anfänglich angezeigt wird.</p> <p><strong>Wichtig</strong>: Wenn das Portlet für die Verbindung mit AEM-Autoreninstanzen und Veröffentlichungsinstanzen konfiguriert ist, die auf einem anderen Kontextpfad als<strong> /</strong>ausgeführt werden, müssen Sie die erzwungene <strong>CQUrlInfo</strong> in der Html Library Manager-Konfiguration dieser AEM-Instanzen aktivieren (z. B. über Felix Webconsole), oder die Bearbeitung funktioniert nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>htmlSelector</td> 
-   <td>Der Selektor, der an jede URL angehängt wird. By default this is <strong>portlet</strong>, so all requests to html pages use urls ending in <strong>.portlet.html.</strong> So können Sie benutzerdefinierte Skripte innerhalb von AEM für das Portlet-Rendering verwenden.</td> 
-  </tr> 
-  <tr> 
-   <td>addCssToPortalHeader</td> 
-   <td><p>Standardmäßig sind CSS-Dateien, die von AEM in die HTML-Seite eingeschlossen werden, im Portlet enthalten. Durch Deaktivieren dieser Option werden die CSS-Standarddateien ausgeschlossen.</p> <p>Ist diese Option aktiviert, werden die CSS-Dateien entweder im Kopfbereich der HTML-Seite eingefügt oder in die HTML-Seite eingebettet. Dies hängt vom Verhalten des Portals ab.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>includeToolbar</td> 
-   <td>Standardmäßig wird eine Symbolleiste innerhalb des Inhalts-Portlets gerendert, um Verwaltungsfunktionen bereitzustellen. Wenn Sie diese Option deaktivieren, wird keine Symbolleiste gerendert.</td> 
-  </tr> 
-  <tr> 
-   <td>urlParameterNames</td> 
-   <td><p>Liste der alternativen URL-Parameternamen, die möglicherweise die neue Inhalts-URL zur Anzeige für das Portlet enthält. Die Liste wird von oben nach unten abgearbeitet. Der erste Parameter mit einem Wert wird verwendet. Wird keine URL gefunden, wird der URL-Standardparameter verwendet. Die bereitgestellte URL wird so, wie sie ist, verwendet. Sie wird nicht verändert.</p> <p>Diese Einstellung gilt pro bereitgestelltem Portlet. Sie dient auch dazu, einige URL-Parameter in der OSGi-Konfiguration für die „Day Portal Director Portlet Bridge“ global zu konfigurieren.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>preferenceDialog</td> 
-   <td>Pfad zum Dialogfeld „Voreinstellungen“ in AEM. Wird kein Pfad angegeben, wird das integrierte Dialogfeld „Voreinstellungen“ verwendet. Dieses befindet sich standardmäßig unter /libs/portal/content/prefs.html.</td> 
-  </tr> 
-  <tr> 
-   <td>initialRedirect</td> 
-   <td>Standardmäßig führt das Portlet beim ersten Aufruf eine JavaScript-Umleitung der kompletten Portalseite aus. Dies dient dazu, das Drag-and-Drop-Szenario von modernen Portal-Servern zu unterstützen. In einer Produktionsumgebung ist diese Umleitung selten erforderlich und sie kann daher deaktiviert werden, indem diese Voreinstellung auf <em>false</em> gesetzt wird.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>startPath</td>
+   <td><p>Dies ist der Startpfad des Portlets. Er definiert den Inhalt, der anfänglich angezeigt wird.</p> <p><strong>Wichtig</strong>: Wenn das Portlet für die Verbindung mit AEM-Autoreninstanzen und Veröffentlichungsinstanzen konfiguriert ist, die auf einem anderen Kontextpfad als<strong> /</strong>ausgeführt werden, müssen Sie die erzwungene <strong>CQUrlInfo</strong> in der Html Library Manager-Konfiguration dieser AEM-Instanzen aktivieren (z. B. über Felix Webconsole), oder die Bearbeitung funktioniert nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
+  </tr>
+  <tr>
+   <td>htmlSelector</td>
+   <td>Der Selektor, der an jede URL angehängt wird. By default this is <strong>portlet</strong>, so all requests to html pages use urls ending in <strong>.portlet.html.</strong> So können Sie benutzerdefinierte Skripte innerhalb von AEM für das Portlet-Rendering verwenden.</td>
+  </tr>
+  <tr>
+   <td>addCssToPortalHeader</td>
+   <td><p>Standardmäßig sind CSS-Dateien, die von AEM in die HTML-Seite eingeschlossen werden, im Portlet enthalten. Durch Deaktivieren dieser Option werden die CSS-Standarddateien ausgeschlossen.</p> <p>Ist diese Option aktiviert, werden die CSS-Dateien entweder im Kopfbereich der HTML-Seite eingefügt oder in die HTML-Seite eingebettet. Dies hängt vom Verhalten des Portals ab.</p> </td>
+  </tr>
+  <tr>
+   <td>includeToolbar</td>
+   <td>Standardmäßig wird eine Symbolleiste innerhalb des Inhalts-Portlets gerendert, um Verwaltungsfunktionen bereitzustellen. Wenn Sie diese Option deaktivieren, wird keine Symbolleiste gerendert.</td>
+  </tr>
+  <tr>
+   <td>urlParameterNames</td>
+   <td><p>Liste der alternativen URL-Parameternamen, die möglicherweise die neue Inhalts-URL zur Anzeige für das Portlet enthält. Die Liste wird von oben nach unten abgearbeitet. Der erste Parameter mit einem Wert wird verwendet. Wird keine URL gefunden, wird der URL-Standardparameter verwendet. Die bereitgestellte URL wird so, wie sie ist, verwendet. Sie wird nicht verändert.</p> <p>Diese Einstellung gilt pro bereitgestelltem Portlet. Sie dient auch dazu, einige URL-Parameter in der OSGi-Konfiguration für die „Day Portal Director Portlet Bridge“ global zu konfigurieren.</p> </td>
+  </tr>
+  <tr>
+   <td>preferenceDialog</td>
+   <td>Pfad zum Dialogfeld „Voreinstellungen“ in AEM. Wird kein Pfad angegeben, wird das integrierte Dialogfeld „Voreinstellungen“ verwendet. Dieses befindet sich standardmäßig unter /libs/portal/content/prefs.html.</td>
+  </tr>
+  <tr>
+   <td>initialRedirect</td>
+   <td>Standardmäßig führt das Portlet beim ersten Aufruf eine JavaScript-Umleitung der kompletten Portalseite aus. Dies dient dazu, das Drag-and-Drop-Szenario von modernen Portal-Servern zu unterstützen. In einer Produktionsumgebung ist diese Umleitung selten erforderlich und sie kann daher deaktiviert werden, indem diese Voreinstellung auf <em>false</em> gesetzt wird.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### OSGi-Web-Konsole {#osgi-web-console}
@@ -183,7 +183,7 @@ So konfigurieren Sie einen Replikationsagenten für das Portal:
 
 1. Melden Sie sich bei der Autoreninstanz an.
 1. In the Websites tab, click the *Tools* tab.
-1. **** Klicken Sie auf **Neue Seite... in den Replizierungsagenten** Neu... angezeigt.
+1. Click **New Page...** in the replication agents **New...** menu.
 
    ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
@@ -505,7 +505,7 @@ In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendering vom 
 |---|---|
 | {name} | Name der Schaltfläche, z. B.* Autor, Zurück, Aktualisieren** usw. |
 | {id} | CSS-ID der Schaltfläche. |
-| {url} | URL für das Ziel der Schaltfläche. |
+| {url} | URL für die Zielgruppe der Schaltfläche. |
 | {text} | Beschriftung der Schaltfläche. |
 | {onclick} | Javascript- **onclick** -Funktion (enthält {url}). |
 
@@ -516,7 +516,7 @@ Beispiel einer Datei button.html:
 
  <a href="#" onclick="{onclick}">
 
- <img src="/wps/PA_CQ5_Portlet/cqbridge/static/{id}.gif" alt="{text}" 
+ <img src="/wps/PA_CQ5_Portlet/cqbridge/static/{id}.gif" alt="{text}"
 title="{text}"/>
 
  </a>
@@ -556,53 +556,53 @@ Falls die Regeln hinsichtlich der Handhabung von Gebietsschema-Informationen inn
 
 Optionale OSGi-Dienste können zur Anpassung verschiedener Bereiche des Portlets implementiert werden. Jeder Dienst entspricht einer Java-Schnittstelle. Diese Schnittstelle kann über ein Bundle im Portlet implementiert und bereitgestellt werden.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>RequestTracker</td> 
-   <td>Der Abfrage-Tracker wird benachrichtigt, sobald Inhalte vom Portlet angezeigt werden. So können Sie die Aufrufe des Portlets nachverfolgen.</td> 
-  </tr> 
-  <tr> 
-   <td>InvocationContextListener</td> 
-   <td>Ein Listener, der am Anfang und am Ende jeder Anfrage an das Portlet aufgerufen wird. Mithilfe des Listeners können Informationen für die aktuelle Anfrage geändert oder hinzugefügt werden.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>ErrorHandler</td> 
-   <td>Benutzerdefinierter Fehler-Handler für Fehler, die während der Rendering-Phase auftreten</td> 
-  </tr> 
-  <tr> 
-   <td>HttpProcessor</td> 
-   <td>Mithilfe dieses Dienstes können Informationen zu jedem HTTP-Aufruf in AEM hinzugefügt werden.</td> 
-  </tr> 
-  <tr> 
-   <td>PortletAction</td> 
-   <td>Fügen Sie eine eigene Aktion zum Portlet hinzu. Diese Aktion kann über einen Aktions-Link des Portlets aufgerufen werden.</td> 
-  </tr> 
-  <tr> 
-   <td>PortletDecoratorService</td> 
-   <td>Mithilfe dieses Dienstes können die Inhalte des Portlets gestaltet werden.</td> 
-  </tr> 
-  <tr> 
-   <td>ResourceProvider</td> 
-   <td>Fügen Sie Ihren eigenen Ressourcen-Anbieter hinzu, um dem Client einige Ressourcen über einen Ressourcen-Link des Portlets bereitzustellen.</td> 
-  </tr> 
-  <tr> 
-   <td>TextMapper</td> 
-   <td>Der Mapper gestattet es Ihnen, HTML-, CSS- und JavaScript-Dateien nachzubearbeiten.</td> 
-  </tr> 
-  <tr> 
-   <td>ToolbarButton</td> 
-   <td>Fügen Sie Ihre eigene Schaltfläche zur Symbolleiste hinzu.</td> 
-  </tr> 
-  <tr> 
-   <td>UrlMapper</td> 
-   <td>Fügen Sie einen Dienst hinzu, um eine benutzerdefinierte URL-Zuordnung oder -Neuschreibung durchzuführen.</td> 
-  </tr> 
-  <tr> 
-   <td>UserInfoProvider</td> 
-   <td>Fügen Sie eigene Informationen zum Benutzer hinzu. Mithilfe dieses Dienstes können Sie Informationen vom Portal an das Portlet übermitteln.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>RequestTracker</td>
+   <td>Der Abfrage-Tracker wird benachrichtigt, sobald Inhalte vom Portlet angezeigt werden. So können Sie die Aufrufe des Portlets nachverfolgen.</td>
+  </tr>
+  <tr>
+   <td>InvocationContextListener</td>
+   <td>Ein Listener, der am Anfang und am Ende jeder Anfrage an das Portlet aufgerufen wird. Mithilfe des Listeners können Informationen für die aktuelle Anfrage geändert oder hinzugefügt werden.<br /> </td>
+  </tr>
+  <tr>
+   <td>ErrorHandler</td>
+   <td>Benutzerdefinierter Fehler-Handler für Fehler, die während der Rendering-Phase auftreten</td>
+  </tr>
+  <tr>
+   <td>HttpProcessor</td>
+   <td>Mithilfe dieses Dienstes können Informationen zu jedem HTTP-Aufruf in AEM hinzugefügt werden.</td>
+  </tr>
+  <tr>
+   <td>PortletAction</td>
+   <td>Fügen Sie eine eigene Aktion zum Portlet hinzu. Diese Aktion kann über einen Aktions-Link des Portlets aufgerufen werden.</td>
+  </tr>
+  <tr>
+   <td>PortletDecoratorService</td>
+   <td>Mithilfe dieses Dienstes können die Inhalte des Portlets gestaltet werden.</td>
+  </tr>
+  <tr>
+   <td>ResourceProvider</td>
+   <td>Fügen Sie Ihren eigenen Ressourcen-Anbieter hinzu, um dem Client einige Ressourcen über einen Ressourcen-Link des Portlets bereitzustellen.</td>
+  </tr>
+  <tr>
+   <td>TextMapper</td>
+   <td>Der Mapper gestattet es Ihnen, HTML-, CSS- und JavaScript-Dateien nachzubearbeiten.</td>
+  </tr>
+  <tr>
+   <td>ToolbarButton</td>
+   <td>Fügen Sie Ihre eigene Schaltfläche zur Symbolleiste hinzu.</td>
+  </tr>
+  <tr>
+   <td>UrlMapper</td>
+   <td>Fügen Sie einen Dienst hinzu, um eine benutzerdefinierte URL-Zuordnung oder -Neuschreibung durchzuführen.</td>
+  </tr>
+  <tr>
+   <td>UserInfoProvider</td>
+   <td>Fügen Sie eigene Informationen zum Benutzer hinzu. Mithilfe dieses Dienstes können Sie Informationen vom Portal an das Portlet übermitteln.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Ersetzen von Standarddiensten {#replacing-default-services}
@@ -642,7 +642,7 @@ Führen Sie die folgenden Schritte aus, um AEM als Portal zu verwenden:
 
 >[!NOTE]
 >
->Sie können die Portlet-Komponente nur verwenden, wenn Sie AEM als Web-Anwendung bereitgestellt haben. ([Siehe Installieren von AEM mit einem Anwendungsserver](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server).)
+>Sie können die Portlet-Komponente nur verwenden, wenn Sie AEM als Web-Anwendung bereitgestellt haben. (Weitere Informationen finden Sie in [Installieren von AEM mit einem Anwendungsserver](/help/sites-deploying/application-server-install.md).)
 
 ### Installieren der Portlet-Komponente {#installing-the-portlet-component}
 
@@ -679,10 +679,10 @@ Stellen Sie die Portlets im Webcontainer des Anwendungsservers bereits, sodass s
 
 1. Extrahieren Sie den Inhalt der WAR-Datei der Portlet-Anwendung.
 
-   **** Tipp: Der Befehl jar xf *nameApp*.war extrahiert die Dateien.
+   **Tipp:** Der Befehl jar xf *nameApp*.war extrahiert die Dateien.
 
 1. Öffnen Sie die Datei web.xml in einem Texteditor.
-1. Fügen Sie die folgende Servlet-Konfiguration innerhalb des Web-App-Elements hinzu:
+1. Hinzufügen die folgende Servlet-Konfiguration innerhalb des Web-App-Elements:
 
    ```xml
    <servlet>
@@ -698,7 +698,7 @@ Stellen Sie die Portlets im Webcontainer des Anwendungsservers bereits, sodass s
 
 1. Speichern Sie die Datei web.xml und packen Sie die WAR-Datei neu.
 
-   **** Tipp: Der `jar cvf nameofapp.war *` Befehl fügt der Datei &quot;app.war&quot;den Inhalt des aktuellen Ordners hinzu.
+   **Tipp:** Der `jar cvf nameofapp.war *` Befehl fügt der Datei &quot;app.war&quot;den Inhalt des aktuellen Ordners hinzu.
 
 1. Stellen Sie die Portlet-Anwendung auf dem Anwendungsserver bereit. Weitere Informationen finden Sie in der Dokumentation für Ihren Anwendungsserver.
 
