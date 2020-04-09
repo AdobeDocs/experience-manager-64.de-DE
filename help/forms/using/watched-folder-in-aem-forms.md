@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -90,11 +90,11 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Zeitüberschreitungsfunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Die Funktion ist für gedrosselte überwachte Ordner relevanter, da eine geringe Anzahl von noch unformatiert gebliebenen Dateien (aufgrund der zeitweisen Fehlfunktion des Auftrags/Arbeitsablaufs) das Potenzial hat, die Verarbeitung des gesamten Stapels zu unterbinden, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als „true“ beibehalten wird (Standardeinstellung), tritt für überwachte Ordner, die nicht gedrosselt werden, keine Zeitüberschreitung ein. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
 
 * **pollInterval (Lang)**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße. Der Wert für „pollInterval“ muss größer als oder gleich eins sein.
-* **** excludeFilePattern (String)**: Semikolon**; eine Liste getrennter Muster, die von einem überwachten Ordner verwendet werden, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
+* **excludeFilePattern (String)**: Semikolon **;** Eine durch Trennzeichen getrennte Liste von Mustern, die von einem überwachten Ordner verwendet werden, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
 
    Sie können Dateimuster verwenden, um Folgendes auszuschließen:[](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;. &amp;ast;
+   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * Dateien mit bestimmten Namen; zum Beispiel data&amp;ast; schließen Dateien und Ordner mit den Namen data1, data2 usw. aus.
    * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
@@ -104,10 +104,10 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **** includeFilePattern (String)**: Semikolon**; eine Liste getrennter Muster, die vom überwachten Ordner verwendet wird, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das IncludeFilePattern &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit input&amp;ast; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
+* **includeFilePattern (String)**: Semikolon **;** Eine durch Trennzeichen getrennte Liste von Mustern, die vom überwachten Ordner verwendet werden, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das IncludeFilePattern &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit input&amp;ast; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;. &amp;ast;
-   * Dateien mit bestimmten Namen, z. B. data. &amp;ast; enthält Dateien und Ordner mit den Namen data1, data2 usw.
+   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
+   * Dateien mit bestimmten Namen, z. B. data.&amp;ast; enthält Dateien und Ordner mit den Namen data1, data2 usw.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
@@ -178,7 +178,7 @@ Sie können außer den oben aufgeführten Konfigurationseigenschaften für über
 1. Melden Sie sich bei CRXDE-Lite an und navigieren Sie zum Konfigurationsknoten für den überwachten Ordner.
 1. Fügen Sie eine Eigenschaft „param.&lt;property_name>“ zum Konfigurationsknoten für den überwachten Ordner hinzu. Es können nur Eigenschaften der Typen Boolescher Wert, Datum, Dezimalzahl, Double, Lang und Zeichenfolge verwendet werden. Sie können Eigenschaften mit einem einzelnen oder mit mehreren Werten angeben.
 
-**** Hinweis: *Wenn der Datentyp der Eigenschaft Double lautet, geben Sie im Wert dieser Eigenschaften einen Dezimalpunkt an. Für alle Eigenschaften, deren Datentyp Double lautet und bei deren Wert kein Dezimalpunkt angegeben ist, wird der Typ in Long umgewandelt. *
+**Hinweis:** *Wenn der Datentyp der Eigenschaft Dublette ist, geben Sie im Wert dieser Eigenschaften einen Dezimalpunkt an. Für alle Eigenschaften, deren Datentyp Double lautet und bei deren Wert kein Dezimalpunkt angegeben ist, wird der Typ in Long umgewandelt. *
 
 Diese Eigenschaften werden als unveränderliche Zuordnung des Typs „Map&lt;String, Object>“ an den Verarbeitungscode übergeben. Dieser Code kann ein ECMAScript, ein Workflow oder ein Dienst sein. Die für die Eigenschaften angegebenen Werte stehen als Schlüssel-Wert-Paare in der Zuordnung zur Verfügung. Der Schlüssel ist der Name der Eigenschaft, der Wert ihr Wert. Weitere Informationen zu benutzerdefinierten Konfigurationsparametern finden Sie in der folgenden Abbildung:
 
@@ -216,8 +216,7 @@ Ein Dienst ist eine benutzerdefinierte Implementierung der `com.adobe.aemfd.watc
 
 #### Benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle {#custom-implementation-of-the-contentprocessor-interface}
 
-Die benutzerdefinierte Implementierung akzeptiert einen Verarbeitungskontext (ein Objekt vom Typ com.adobe.aemfd.watchfolder.service.api.ProcessorContext), liest Eingabedokumente und Konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgabe zurück zum\
-Kontext. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
+Die benutzerdefinierte Implementierung übernimmt einen Verarbeitungskontext (ein Objekt des Typs „com.adobe.aemfd.watchfolder.service.api.ProcessorContext“), liest die Eingabedokumente und -konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgaben wieder in den Kontext ein. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
 
 * **getWatchFolderId**: Gibt die ID des überwachten Ordners zurück.
 * **getInputMap**: Gibt eine Zuordnung des Typs „Map“ zurück. Die Schlüssel der Zuordnung sind der Dateiname der Eingabedatei und ein Dokumentobjekt mit dem Inhalt der Datei. Verwenden Sie zum Lesen der Eingabedateien das getinputMap-API.
@@ -273,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -336,7 +335,7 @@ Darüber hinaus stehen die folgenden ProcessorContext-APIs zur Verfügung:
 * getConfigParameters: Gibt eine unveränderliche Zuordnung des Typs „Map&lt;String, Objekt>“ zurück. Die Zuordnung enthält die Konfigurationsparameter eines überwachten Ordners.
 * setResult: Die ContentProcessor-Implementierung verwendet diese API zum Schreiben des Ausgabedokuments in den Ergebnisordner. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
 
-Berücksichtigen Sie bei Verwendung in Workflows die setResult-API:
+Überlegungen zur setResult-API bei Verwendung in Workflows:
 
 * Um ein neues Ausgabedokument als weiteren Beitrag zum Gesamtergebnis des Workflows hinzuzufügen, rufen Sie die setResult-API mit einem Dateinamen auf, der von keinem der vorhergehende Schritte als Name der Ausgabedatei verwendet wurde.
 * Um die von einem vorhergegangenen Schritt generierte Ausgabe zu aktualisieren, rufen Sie die setResult-API mit einem Dateinamen auf, der bereits von einem vorhergehenden Schritt verwendet wurde.
@@ -346,7 +345,7 @@ Berücksichtigen Sie bei Verwendung in Workflows die setResult-API:
 >
 >Ein Aufruf der setResult-API mit einem Null-Inhalt würde in jedem anderen Szenario zu einem Fehler führen.
 
-Das folgende Beispiel zeigt eine Implementierung als Workflow-Schritt. In diesem Beispiel verwendet das ECMAScript die Variable stepCount, um zu verfolgen, wie oft ein Schritt in der aktuellen Instanz des Workflows aufgerufen wird.\
+Das folgende Beispiel zeigt eine Implementierung als Workflow-Schritt. In diesem Beispiel verwendet das ECMAScript die Variable stepCount, um zu verfolgen, wie oft ein Schritt in der aktuellen Instanz des Workflows aufgerufen wird.
 Der Name des Ausgabeordners ist eine Kombination aus der Nummer des aktuellen Schritts, dem Originaldateinamen und dem im Parameter „outPrefix“ angegebenen Präfix.
 
 Das ECMAScript ruft einen Verweis des Workflow-Kontext-Dienstes ab und erstellt eine Implementierung der WorkflowContextProcessor-Schnittstelle. Die WorkflowContextProcessor-Implementierung übernimmt Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokument zurück, das die kopierte Datei repräsentiert. Basierend auf dem Wert der Booleschen Variablen „purgePrevious“ wird beim aktuellen Schritt die Ausgabe aus dessen zuletzt vorhergegangener Ausführung innerhalb der aktuellen Instanz des Workflows gelöscht. Zuletzt wird die Methode „wfSvc.execute“ aufgerufen, um die Implementierung von „WorkflowContextProcessor“ auszuführen. Der Inhalt des Ausgabedokuments wird im Ergebnisordner unter dem physischen Pfad gespeichert, der im Konfigurationsknoten für den überwachten Ordner angegeben wurde.
@@ -365,8 +364,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -377,7 +376,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -554,8 +553,8 @@ Die Ausgabe der ersten Konvertierung wird an „\Pfad\result“ übergeben. Als 
 
 Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;. &amp;ast;
-* Dateien mit bestimmten Namen, z. B. data. &amp;ast;
+* Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
+* Dateien mit bestimmten Namen, z. B. data.&amp;ast;
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA][tT]
@@ -597,7 +596,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL lautet `https://[server]:[port]/crx/de`.
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. The URL is `https://[server]:[port]/crx/de`.
 
 1. Navigieren Sie zu „/etc/workflow/scripts“ und erstellen Sie einen Ordner namens „PDFG“. 
 
@@ -642,7 +641,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Löschen Sie den standardmäßigen Workflow-Schritt. Ziehen Sie den Prozessschritt aus dem Sidekick in den Workflow und legen Sie ihn dort ab.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Klicken Sie mit der rechten Maustaste auf den Prozessschritt und wählen Sie **Bearbeiten**. Das Fenster „Schritt-Eigenschaften“ wird angezeigt.
 
@@ -683,7 +682,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL lautet `https://[server]:[port]/crx/de`.
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. The URL is `https://[server]:[port]/crx/de`.
 
 1. Navigieren Sie zu „/etc/workflow/scripts“ und erstellen Sie einen Ordner namens **CMB**.
 
