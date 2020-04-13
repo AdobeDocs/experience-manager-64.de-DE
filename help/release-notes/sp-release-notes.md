@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Die Dropdownmenüs **Firma** und **Berichte** Suite werden ausgeblendet, sobald beim Konfigurieren von Adobe Analytics in Experience Manager Cloud Services (NPR-31729) die Option **Berichte-Quelle** ausgewählt wurde.
 
 * Adobe Campaign-Eigenschaften werden nicht bereinigt, wenn eine Sprachkopie eines mit einem Adobe Campaign verknüpften Newsletters erstellt wird, während eine Bereinigung erfolgt, wenn ein mit einem Adobe Campaign verknüpfter Newsletter kopiert oder eingefügt wird (NPR-32540).
+
+* ReportSuitesServlet ist anfällig für SSRF (NPR-32161).
 
 ### Sling {#sling-6480}
 
@@ -2192,7 +2194,7 @@ Die Anzahl freigegebener Warteschlangen wird für andere Benutzer nicht standard
 1. Gehen Sie zu Admin-Benutzeroberfläche -> Dienste -> Arbeitsbereich -> Globale Verwaltung.
 1. Globale Einstellungen exportieren.
 1. Fügen Sie in der heruntergeladenen XML-Datei den Tag &lt;client_tasksPollingInterval>10&lt;/client_tasksPollingInterval> hier ist 10 der Beispielwert in Sekunden. Sie können sie entsprechend ändern.
-1. Speichern Sie die Datei.
+1. Speichern Sie die Datei .
 1. Gehen Sie zurück zur Admin-Benutzeroberfläche -> Dienste -> Arbeitsbereich -> Globale Verwaltung.
 1. Importieren Sie die XML-Datei im Abschnitt &quot;Globale Einstellungen importieren&quot;.
 1. Sie können sich jetzt vom System abmelden und sich erneut anmelden.
@@ -2221,7 +2223,7 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
 
 | Bereich | Funktion | Ersatz | Version |
 |---|---|---|---|
-| Assets | Tag-Aktion für Teilassets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
+| Assets  | Tag-Aktion für Teilassets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
 | Assets und Adobe Creative Cloud-Integration | [Die gemeinsame Nutzung](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) von AEM in Creative Cloud-Ordnern wurde in AEM 6.2 eingeführt, um kreativen Benutzern Zugriff auf Assets aus AEM zu geben. Eine neue Funktion der Creative Cloud-Anwendung, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe wird die Ordnerfreigabe nicht weiter verbessern. Während die Funktion in AEM enthalten ist, empfehlen Kunden dringend, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-App. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Bekannte Probleme {#known-issues}
