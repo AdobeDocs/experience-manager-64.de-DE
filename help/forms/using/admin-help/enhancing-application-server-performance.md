@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
 
 ---
 
@@ -105,11 +105,11 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 
    >[!NOTE]
    >
-   >Der Wert der Eigenschaft &quot;Max. Inline-Größe des Dokuments&quot;muss für die AEM Forms on JEE-Umgebung identisch sein, und AEM Forms on OSGi Bundle enthält AEM Forms on JEE-Umgebung. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
+   >Der Wert der Eigenschaft &quot;Max. Inline-Größe&quot;des Dokuments muss für AEM Forms on JEE-Umgebung identisch sein, und AEM Forms on OSGi Bundle enthält AEM Forms on JEE-Umgebung. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
 
 1. Starten Sie den Anwendungsserver mit folgenden Systemeigenschaft neu:
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*value specified in Step 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Wenn Sie Configuration Manager ausführen oder versuchen, Enterprise JavaBeans-(
    * (Linux und UNIX) `ejbdeploy.sh`
 
 1. Find the `-Xmx256M` parameter and change it to a higher value, such as `-Xmx1024M`.
-1. Speichern Sie die Datei.
+1. Speichern Sie die Datei .
 1. Führen Sie den Befehl `ejbdeploy` aus oder führen Sie mit dem Configuration Manager eine erneute Bereitstellung aus.
 
 ## Windows Server 2003-Leistung mit LDAP verbessern {#improving-windows-server-2003-performance-with-ldap}
