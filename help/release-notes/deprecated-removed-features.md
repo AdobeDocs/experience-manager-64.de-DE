@@ -10,14 +10,14 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
 
 # Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
-Adobe bewertet die Produktfunktionen ständig, um ältere Funktionen mit der Zeit neu zu erfinden oder durch modernere Alternativen zu ersetzen, um den Gesamtwert der Kunden zu verbessern, wobei stets die Abwärtskompatibilität zu berücksichtigen ist.
+Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von AEM-Funktionen gelten die folgenden Regeln:
 
@@ -120,7 +120,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
    <td>IValueMap-API verwenden </td> 
   </tr>
   <tr>
-   <td>Assets</td> 
+   <td>Assets </td> 
    <td><p>Das Assets-Abladen wurde ab AEM 6.4 nicht mehr unterstützt.</p> </td> 
    <td> </td> 
   </tr>
@@ -144,7 +144,7 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
    <td>Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.<br><br>Das <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Activity Map-Plugin, das von Adobe Analytics</a> bereitgestellt wird, sollte jetzt verwendet werden.</td> 
   </tr>
   <tr>
-   <td>Komponenten</td> 
+   <td>components-forms</td> 
    <td>Captcha-Formularkomponente<br /> (foundation/components/form/captcha)</td> 
    <td>Verwenden Sie stattdessen reCAPTCHA von Google.</td> 
   </tr>
@@ -185,11 +185,6 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
   </tr>
   <tr>
    <td>Forms</td> 
-   <td>Die Unterstützung für den standardmäßigen AEM Captcha-Dienst in adaptiven Formularen wurde entfernt. </td> 
-   <td>Verwenden Sie stattdessen reCAPTCHA von Google.</td> 
-  </tr>
-  <tr>
-   <td>Forms</td> 
    <td>Unterstützung für Bilder in Dokumentfragmenten wurde eingestellt. </td> 
    <td>Interaktive Kommunikation ermöglicht es, Bilder direkt in Print- und Web-Kanälen zu verwenden.<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
     <td>Forms</td> 
     <td>AEM Forms on JEE-spezifische Landingpage entfernt.</td> 
     <td>AEM Forms on JEE-Landingpage wird durch AEM Landingpage ersetzt (/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>Forms</td> 
-   <td>Die Unterstützung für Captcha-Standarddateien wurde entfernt</td> 
-   <td>Verwenden Sie den reCAPTCHA-Dienst von Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
