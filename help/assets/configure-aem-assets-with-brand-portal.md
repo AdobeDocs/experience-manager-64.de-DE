@@ -3,7 +3,7 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal für das Veröffentlichen von Assets und Sammlungen im Markenportal konfigurieren. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
+source-git-commit: a2bd2734b1ec923c87f707c5183b3813e4511f10
 
 ---
 
@@ -16,14 +16,14 @@ Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konf
 >
 >Die Konfiguration von AEM Assets mit Brand Portal über Adobe I/O wird auf AEM 6.4.8.0 und höher unterstützt.
 >
->Zuvor wurde Brand Portal über das Legacy-OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
+>Zuvor wurde Brand Portal über das alte OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
 
 
 >[!TIP]
 >
->***Nur für bestehende Kunden***
+>***Nur für Bestandskunden***
 >
->Es wird empfohlen, weiterhin die vorhandene alte OAuth Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe I/O.
+>Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe I/O.
 
 
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
@@ -193,9 +193,10 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 >[!CAUTION]
 >
->Erstellen Sie nur eine gültige IMS-Konfiguration.
+>Sie müssen nur eine IMS-Konfiguration haben. Erstellen Sie nicht mehrere IMS-Konfigurationen.
 >
->Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
+>Vergewissern Sie sich, dass die IMS-Konfiguration die Statusprüfung besteht. Wenn die Konfiguration die Statusprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
+
 
 
 ### Configure cloud service {#configure-the-cloud-service}
