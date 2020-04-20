@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ Die Funktion hat einige Einschränkungen:
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 
-Siehe auch [Vorschau von Assets mit Dynamic Media](previewing-assets.md).
-
 **So zeigen Sie die Asset-Vorschau an**:
 
 1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;zum Speicherort des Assets, das Sie Vorschau haben möchten.
@@ -331,6 +329,12 @@ Siehe auch [Vorschau von Assets mit Dynamic Media](previewing-assets.md).
    Tippen Sie auf die Schaltfläche **[!UICONTROL Zurücksetzen]**, um die Originalgröße der Ansicht wiederherzustellen.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [Vorschau dynamischer Medienelemente](/help/assets/previewing-assets.md).
+>* [Anzeigen von Unter-Assets](managing-linked-subassets.md#viewing-subassets).
+
 
 ## Eigenschaften bearbeiten {#editing-properties}
 
