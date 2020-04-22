@@ -3,7 +3,7 @@ title: Konfigurieren des Rich-Text-Editors
 description: Erfahren Sie, wie Sie den AEM Rich-Text-Editor konfigurieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 Der Rich-Text-Editor (RTE) bietet Autoren eine große Bandbreite an Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt.
 
-Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-authoring/rich-text-editor.md).
-
-Der folgende Workflow veranschaulicht die empfohlene Reihenfolge für die RTE-Konfigurationsaufgaben.
+Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-authoring/rich-text-editor.md). Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Der folgende Arbeitsablauf zeigt die empfohlene Reihenfolge zum Abschluss der RTE-Konfigurationsschritte in Experience Manager.
 
 ![Typischer Workflow zur Konfiguration des Rich-Text-Editors](assets/rte_workflow_v1.png)
 
@@ -44,45 +42,12 @@ Die Touch-optimierte Benutzeroberfläche ist die standardmäßige Benutzeroberfl
 
 Autoren können Textinhalte in AEM mithilfe der verschiedenen Komponentenmodi erstellen und bearbeiten. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Bearbeitungsmodus</th> 
-   <th>Bearbeitungsbereich</th> 
-   <th>Für die Aktivierung empfohlene Funktionen<br /> </th> 
-   <th>Touch-optimierte Benutzeroberfläche</th> 
-   <th>Klassische Benutzeroberfläche</th> 
-  </tr> 
-  <tr> 
-   <td>Inline</td> 
-   <td>Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds</td> 
-   <td>Minimale RTE-Funktionen</td> 
-   <td>J</td> 
-   <td>J</td> 
-  </tr> 
-  <tr> 
-   <td>RTE-Vollbildschirm</td> 
-   <td>Füllt die gesamte Seite aus<br /> </td> 
-   <td>Alle erforderlichen RTE-Funktionen<br /> </td> 
-   <td>J</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Dialogfeld</td> 
-   <td>Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt</td> 
-   <td>Alle erforderlichen RTE-Funktionen in der klassischen Benutzeroberfläche; Funktionen sollten in der Touch-optimierten Benutzeroberfläche umsichtig aktiviert werden<br /> </td> 
-   <td>J</td> 
-   <td>J</td> 
-  </tr> 
-  <tr> 
-   <td>Dialogfeld-Vollbildmodus<br /> </td> 
-   <td>Wie im Vollbildmodus; enthält neben dem RTE Felder des Dialogfelds<br /> </td> 
-   <td>Alle erforderlichen RTE-Funktionen</td> 
-   <td>J</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen | Touch-optimierte Benutzeroberfläche | Klassische Benutzeroberfläche |
+|--- |--- |--- |--- |--- |
+| Inline | Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds | Minimale RTE-Funktionen | J | J |
+| RTE-Vollbildschirm | Füllt die gesamte Seite aus | Alle erforderlichen RTE-Funktionen | J | N |
+| Dialogfeld | Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt | Alle erforderlichen RTE-Funktionen in der klassischen Benutzeroberfläche; Funktionen sollten in der Touch-optimierten Benutzeroberfläche umsichtig aktiviert werden | J | J |
+| Dialogfeld-Vollbildmodus | Wie im Vollbildmodus; enthält neben dem RTE Felder des Dialogfelds | Alle erforderlichen RTE-Funktionen | J | N |
 
 >[!NOTE]
 >
@@ -139,90 +104,23 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 * Zulässige Werte für die Eigenschaft `features`.
 * Eine Beschreibung der vom Plug-in bereitgestellten Funktion.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>Plug-in-ID<br /> <br /> </p> </td> 
-   <td><p>Funktionen<br /> <br /> </p> </td> 
-   <td><p>Beschreibung<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>edit</p> </td> 
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Ausschneiden, Kopieren und drei Einfügemodi</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
-   <td><p>find<br /> replace</p> </td> 
-   <td><p>Suchen und Ersetzen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
-   <td><p>fette<br /> kursive<br /> Unterstreichung</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Grundlegende Textformatierung</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td> 
-   <td><p>image</p> </td> 
-   <td><p>Legen Sie einige Bildeigenschaften wie Ausrichtung und ALT-Text fest. Der einfache Support, um Bilder aus dem Content Finder zu ziehen und abzulegen, funktioniert ohne dieses Plug-in.</p> <p><em>Anmerkung</em>: Das Authoring-Verhalten kann je nach Browser variieren. Mozilla Firefox bietet beispielsweise Funktionen zur Neuformatierung, Google Chrome jedoch nicht.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Informationen zum Definieren dieses Werts finden Sie unter <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">Registerkarten-Größe</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
-   <td><p>justifyleft<br /> justifycenter<br /> justifyright</p> </td> 
-   <td><p>Absatzausrichtung</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">links</a></p> </td> 
-   <td><p>modifylink<br /> unlink<br /> anchor</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">Hyperlinks und Anker</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lists</a></p> </td> 
-   <td><p>ordered<br /> unordered<br /> indent<br /> outdent</p> </td> 
-   <td><p>This plug-in controls both <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">indentation and lists</a>; including nested lists.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
-   <td><p>specialchars<br /> sourceedit</p> </td> 
-   <td>Miscellaneous tools allow authors to enter <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">special characters</a> or edit the HTML source. Also, you can add a whole <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">range of special characters</a> if you want to define your own list.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>paraformat</p> </td> 
-   <td>Folgende Standard-Absatzformate sind verfügbar: „Absatz“, „Überschrift 1“, „Überschrift 2“ und „Überschrift 3“ („&lt;p&gt;“, „&lt;h1&gt;“, „&lt;h2&gt;“ und „&lt;h3&gt;“). Sie können <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">weitere Absatzformate</a> hinzufügen oder die Liste erweitern.</td> 
-  </tr> 
-  <tr> 
-   <td><p>spellcheck</p> </td> 
-   <td><p>checktext</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">Rechtschreibprüfung mit Spracherkennung</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>styles</p> </td> 
-   <td><p>styles</p> </td> 
-   <td>Unterstützung für die Formatierung mit einer CSS-Klasse. <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">Hinzufügen Sie neue Textstile</a> , wenn Sie Ihren eigenen Stilbereich für die Verwendung mit Text hinzufügen (oder erweitern) möchten.</td> 
-  </tr> 
-  <tr> 
-   <td><p>subsuperscript</p> </td> 
-   <td><p>subscript<br /> superscript</p> </td> 
-   <td><p>Erweiterungen zu den grundlegenden Formaten, indem Sie Unter- und Super-Skript hinzufügen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>table</p> </td> 
-   <td><p>table<br /> removetable<br /> insertrow<br /> removerow<br /> insertcolumn<br /> removecolumn<br /> cellprops<br /> mergecells<br /> splitcell<br /> selectrow<br /> selectcolumns</p> </td> 
-   <td>See <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank">configure table styles</a>, if you want to add your own styles for either entire tables or individual cells.</td> 
-  </tr> 
-  <tr> 
-   <td><p>undo</p> </td> 
-   <td><p>undo<br /> redo</p> </td> 
-   <td>History size of <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">undo and redo</a> operations.</td> 
-  </tr> 
- </tbody> 
-</table>
+| Plug-in-ID | features | Beschreibung |
+|--- |--- |--- |
+| edit | cut copy paste-default paste-plaintext paste-wordhtml | [Ausschneiden, Kopieren und drei Einfügemodi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | find replace | Suchen und Ersetzen. |
+| [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | fette kursive Unterstreichung | [Grundlegende Textformatierung](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) |
+| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Grundlegende Bildunterstützung (Ziehen aus der Inhaltssuche oder Inhaltssuche). Nutzungsverhalten für Autoren kann je nach verwendetem Browser variieren |
+| [keys](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Informationen zum Definieren dieses Werts finden Sie unter [Registerkarten-Größe](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter justifyright | Absatzausrichtung |
+| [links](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink anchor | [Hyperlinks und Anker](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles) |
+| [lists](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | ordered unordered indent outdent | This plug-in controls both [indentation and lists](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
+| Paraformat | paraformat | The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). Sie können [weitere Absatzformate](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) hinzufügen oder die Liste erweitern. |
+| spellcheck | checktext | [Rechtschreibprüfung mit Spracherkennung](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
+| styles | styles | Unterstützung für die Formatierung mit einer CSS-Klasse. [Hinzufügen Sie neue Textstile](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) , wenn Sie Ihren eigenen Stilbereich für die Verwendung mit Text hinzufügen (oder erweitern) möchten. |
+| subsuperscript | subscript superscript | Erweiterungen zu den grundlegenden Formaten, indem Sie Unter- und Super-Skript hinzufügen. |
+| table | table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | See [configure table styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells. |
+| undo | undo redo | History size of [undo and redo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) operations. |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >Do not name the node under `cq:inplaceEditing` as `config`. On `cq:inplaceEditing` node, define the following properties:
 >
 >* **Name**: `configPath`
-   >
-   >
-* **Typ**: `String`
-   >
-   >
-* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
+>* **Typ**: `String`
+>* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
 >
 >
 Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -273,7 +167,6 @@ Wenn der RTE im Touch-optimierten Dialogfeld verwendet wird, muss die Eigenschaf
 RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „features“ bereitgestellt. Sie können die Funktionseigenschaft konfigurieren, um die verschiedenen Funktionen jedes Plug-ins zu (de-)aktivieren.
 
 Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und Konfigurieren von RTE-Plug-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
-
 
 Laden Sie diese Beispielkonfiguration herunter, um zu erfahren, wie der RTE konfiguriert wird. In diesem Paket sind alle Funktionen aktiviert.
 
@@ -355,7 +248,7 @@ Ab AEM 6.4 Service Pack 3 werden die verfügbaren Optionen im RTE von der Benutz
 * Wenn die Benutzeroberflächenkonfiguration des RTE entfernt wurde oder ein Element nicht aktiviert wird, kann die Inhaltsrichtlinie es nicht konfigurieren.
 * Ein Autor hat nur auf die Funktionen Zugriff, die durch die Benutzeroberflächen-Konfigurationen und Content-Richtlinien zur Verfügung gestellt werden.
 
-Beispielsweise können Sie die [Text-Core Component-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
+Beispielsweise können Sie die [Text-Core Component-Dokumentation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
 
 ## Anpassen der Zuordnung zwischen Symbolleistenelementen und Befehlen {#iconstoolbar}
 
@@ -416,15 +309,15 @@ Auf einer Seite können Sie entweder CoralUI 2 RTE clientlib oder CoralUI 3 RTE 
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zum Konfigurieren des RTE finden Sie im [AEM Widget API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)-Referenzhandbuch.
+Weitere Informationen zum Konfigurieren des RTE finden Sie im [AEM Widget API](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)-Referenzhandbuch.
 
 Wenn Sie vor allem die verfügbaren Plug-ins und zugehörigen Optionen sehen wollen:
 
 * Die [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText)-Komponente stellt ein Formularfeld zum Bearbeiten von formatierten Textinformationen zur Verfügung (Rich Text). Informationen zu allen verfügbaren Parametern für das Rich-Text-Formular finden Sie in den Konfigurationsoptionen.
 * Die RichText-Komponente bietet zahlreiche Funktionen mithilfe der Plug-ins, die unter [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) aufgeführt sind. Für jedes Plug-in gilt dabei Folgendes:
 
-   * Weitere Informationen zu den Funktionen, die aktiviert (oder deaktiviert) werden können, finden Sie unter „Funktionen“.
-   * Informationen zu all den Parametern, die für eine detaillierte Konfiguration des entsprechenden Plug-ins verfügbar sind, finden Sie in den Konfigurationsoptionen.
+   * Weitere Informationen zu Funktionen, die aktiviert (oder deaktiviert) werden können, finden Sie unter Funktionen.
+   * Unter Konfigurationsoptionen finden Sie alle verfügbaren Parameter für eine detaillierte Konfiguration des entsprechenden Plug-Ins.
 
 * Weitere Informationen zu den HTML-Regeln für Links sind ebenfalls verfügbar.
 
@@ -434,9 +327,9 @@ Sie können die oben aufgeführten Optionen verwenden, um Ihren eigenen RTE zu e
 
 Für die AEM RTE-Funktion gelten folgende Einschränkungen:
 
-* RTE-Funktionen werden nur in Dialogfeldern zu AEM-Komponenten unterstützt. RTE wird nicht in Assistenten und nicht in Foundation-Formularen wie [Seiteneigenschaften](../sites-developing/page-properties-views.md) und [Strukturvorlage](../sites-authoring/scaffolding.md) in der Touch-optimierten Benutzeroberfläche unterstützt.
+* RTE-Funktionen werden nur in Dialogfeldern zu AEM-Komponenten unterstützt. RTE wird nicht in Assistenten und nicht in Foundation-Formularen wie [Seiteneigenschaften](/help/sites-developing/page-properties-views.md) und [Strukturvorlage](/help/sites-authoring/scaffolding.md) in der Touch-optimierten Benutzeroberfläche unterstützt.
 
-* AEM funktioniert nicht auf [Hybrid-Geräten](../release-notes/known-issues.md).
+* AEM funktioniert nicht auf [Hybrid-Geräten](/help/release-notes/known-issues.md).
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
