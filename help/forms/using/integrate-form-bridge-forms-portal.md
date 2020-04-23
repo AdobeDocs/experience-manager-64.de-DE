@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -88,7 +88,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    For example, if you want to set the **EmployeeName** using the values in the Fields **First Name** and **Last Name**, call the **window.formBridge.setFieldValue** function.
 
-   Ebenso können Sie den Wert lesen, indem Sie die **window.formBridge.getFieldValue **API aufrufen.
+   Gleichermaßen können Sie den Wert lesen, indem Sie die **window.formBridge.getFieldValue **API aufrufen.
 
    ```
    $(function() {
@@ -101,4 +101,3 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
            });
    ```
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
