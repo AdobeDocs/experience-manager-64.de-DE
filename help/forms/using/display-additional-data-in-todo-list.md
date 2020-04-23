@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -141,12 +141,10 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
    * from: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
-1. Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/task.html`hinzu.
+1. Hinzufügen die neuen Informationen an `/apps/ws/js/runtime/templates/task.html`.
 
    Fügen Sie beispielsweise Folgendes hinzu `div class="taskProperties"`:
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
