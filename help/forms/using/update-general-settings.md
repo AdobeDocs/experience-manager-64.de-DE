@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -66,5 +66,3 @@ Sie können folgende Änderungen an den Einstellungen der App vornehmen.
 >Das Löschen des Zwischenspeichers führt dazu, dass Sie sofort von der App abgemeldet werden.
 >
 >Sie erhalten jedoch eine Aufforderung zum Bestätigen des Cache-Löschvorgangs.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
