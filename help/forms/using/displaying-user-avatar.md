@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -83,5 +83,3 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
 
 1. Stellen Sie das DSC über Workbench bereit. Starten Sie den `ProcessManagementClientSessionService` Dienst neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
