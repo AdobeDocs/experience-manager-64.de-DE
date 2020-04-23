@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -62,7 +62,7 @@ Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formu
 
 ![Geolocation](assets/geolocation.png)
 
-******** A. Pinsel **B. Radiergummi** C.**Geolocation** D. Geografische Informationen
+**A.** Pinsel **B.** Radiergummi **C.** Geolocation **D.** Geografische Informationen
 
 ### Geotagging {#geo-tagging}
 
@@ -100,5 +100,3 @@ Löschen der Unterschriften aus dem Formular
 
 * (Auf mobilen Geräten) Drücken Sie lang auf das Unterschriftsfeld und tippen Sie im Bestätigungsdialogfeld auf **Ja**.
 * (Desktop) Bewegen Sie die Maus über das Unterschriftsfeld, klicken Sie auf das Symbol **Abbrechen** und klicken Sie im Bestätigungsdialogfeld auf **Ja**.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
