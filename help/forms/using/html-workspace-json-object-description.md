@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>name</td> 
@@ -391,7 +391,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>isDefault <br type="_moz" /> </td> 
@@ -440,7 +440,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td> 
+   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Beginn des Zeitplans und endDate das Enddatum des Zeitplans. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -494,7 +494,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td> 
@@ -556,7 +556,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>processMajorVersion<br type="_moz" /> </td> 
@@ -595,7 +595,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>assignmentCreateTime<br type="_moz" /> </td> 
@@ -639,7 +639,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>canAddAttachments<br type="_moz" /> </td> 
@@ -683,7 +683,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>creationDate<br type="_moz" /> </td> 
@@ -741,7 +741,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
    <td>ID der Aufgabe, der die Anlage hinzugefügt wird.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>Typ<br type="_moz" /> </td> 
+   <td>type<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Type is attachment for files and Type is note for notes.<br type="_moz" /> </td> 
   </tr>
@@ -772,7 +772,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>Adresse<br type="_moz" /> </td> 
@@ -851,5 +851,3 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   </tr>
  </tbody>
 </table>
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
