@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -68,7 +68,7 @@ Mit der Option **Notizen** können Sie dem Formular Freihand-Scribbles oder Text
 1. Dadurch wird die Benutzeroberfläche „Notizen“ gestartet, auf der Sie ein Freihand-Scribble erfassen können.
 
    ![Scribble-Benutzeroberfläche](assets/scribble-ui.png)
-   **** Abbildung: *Scribble*
+   **Abbildung:** *Scribble*
 
    Sie können die folgenden Optionen in der Scribble-Benutzeroberfläche verwenden:
 
@@ -85,5 +85,3 @@ Anlagen für Mobile Forms, die mit AEM Forms OSGi-Servern synchronisiert werden,
 Anlagen auf Formularebene werden für adaptive Formulare, die in der AEM Forms-App von einem AEM Forms OSGi-Server geladen werden, nicht unterstützt. Um Bilder oder Textanmerkungen hinzuzufügen, aktivieren Sie Anlagen auf Feldebene im Formular, wenn Sie es erstellen. Ziehen Sie die Dateianlagenkomponente aus dem Komponenten-Browser in das Feld.
 
 Bei adaptiven Formularen können Sie die angehängten Dateien im Datensatzdokument (DoR) anzeigen. Siehe [Generierung eines Datensatzdokuments für adaptive Nicht-XFA-Formulare](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
