@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -28,7 +28,7 @@ AEM LiveCycle Connector ist Teil des [AEM Forms-Add-On-Pakets](/help/forms/using
 
 Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigsten erläutert:
 
-* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, starten Sie AEM mit der folgenden JVM
+* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, Beginn AEM mit der folgenden JVM
 
    ```
    argument 
@@ -478,5 +478,3 @@ Folgende Dienste sind verfügbar:
   <version>11.0.0</version>
 </dependency>
 ```
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
