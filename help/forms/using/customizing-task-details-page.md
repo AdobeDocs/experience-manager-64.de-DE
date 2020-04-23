@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -53,9 +53,9 @@ So passen Sie die Aufgabendetailseite an:
    >
    >Fügen Sie entsprechende Schlüssel-Wert-Paare für alle unterstützten Sprachen hinzu.
 
-1. Kopieren `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Kopieren Sie `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/taskdetails.html`hinzu. Beispiel:
+   Hinzufügen die neuen Informationen an `/apps/ws/js/runtime/templates/taskdetails.html`. Beispiel:
 
    ```css
    <div class="detailsContainer">
@@ -85,5 +85,3 @@ So passen Sie die Aufgabendetailseite an:
 >To customize the task details page with tasks created in the **Start Process **tab of AEM Forms workspace, add the new information to `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >To add new styles for the information added in the details page, modify the CSS file by using the *User interface changes* section in [Workspace Customization](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
