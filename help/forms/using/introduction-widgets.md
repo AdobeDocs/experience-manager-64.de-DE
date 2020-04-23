@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -132,7 +132,7 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
   </tr>
   <tr>
    <td>click : function()</td> 
-   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EVENT wird aufgerufen.</td> 
+   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EREIGNIS wird aufgerufen.</td> 
   </tr>
   <tr>
    <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
@@ -154,7 +154,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 <table> 
  <tbody>
   <tr>
-   <th>Wahl</th> 
+   <th>Option</th> 
    <th>Beschreibung</th> 
   </tr>
   <tr>
@@ -177,7 +177,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 <table> 
  <tbody>
   <tr>
-   <th>Wahl</th> 
+   <th>Option</th> 
    <th>Beschreibung</th> 
   </tr>
   <tr>
@@ -261,11 +261,10 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 
 ### DateTimeEdit: (DateField) {#datetimeedit-datefield}
 
-| Wahl | Beschreibung |
+| Option | Beschreibung |
 |---|---|
 | Tage | Lokalisierte Tagesnamen für dieses Feld. |
 | months | Lokalisierte Monatsnamen für dieses Feld. |
 | zero | Der lokalisierte Text für die Zahl 0. |
 | clearText | Der lokalisierte Text für die Schaltfläche „Löschen“.  |
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
