@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -89,5 +89,3 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
        margin: 0 auto;
    }
    ```
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
