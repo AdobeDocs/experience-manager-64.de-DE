@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -77,17 +77,16 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
    1. Erstellen Sie einen Ordner mit dem Namen `js`at `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
    1. Erstellen Sie einen Ordner mit dem Namen `libs`at `/apps/ws/js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
    1. Erstellen Sie einen Ordner mit dem Namen `jqueryui`at `/apps/ws/js/libs`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-   1. Kopieren `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` nach `/apps/ws/js/libs/jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Kopieren Sie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` nach `/apps/ws/js/libs/jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Führen Sie die folgenden Schritte für HTML-Anpassungen aus:
 
    1. Erstellen Sie `/apps/ws/js`unter einen Ordner mit dem Namen `runtime`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
    1. Erstellen Sie `/apps/ws/js/runtime`unter einen Ordner mit dem Namen `templates`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-   1. Kopieren `/libs/ws/js/main.js` nach `/apps/ws/js/main.js`.
+   1. Kopieren Sie `/libs/ws/js/main.js` nach `/apps/ws/js/main.js`.
    1. Copy /libs/ws/js/registry.js to `/apps/ws/js/registry.js`.
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**, löschen Sie den Cache und aktualisieren Sie AEM Forms Workspace.
 
    Access the URL `https://[server]:[port]/lc/ws` and log in with administrator/password credentials. Der Browser leitet Sie zu `https://[server]:[port]/lc/apps/ws/index.html`.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
