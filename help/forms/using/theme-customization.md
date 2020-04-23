@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -83,4 +83,3 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
    Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.
 
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
