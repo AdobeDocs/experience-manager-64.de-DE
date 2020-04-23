@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Sie können mit Mobile Forms benutzerdefinierte Widgets einsetzen. Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.
 
-![](assets/custom-widgets.jpg) Beispiel für ein Standard- und benutzerdefiniertes Widget **** Abbildung: Beispiel *für ein Standard- und benutzerdefiniertes Widget*
+![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)**Abbildung:** Beispiel *für ein Standard- und benutzerdefiniertes Widget*
 
 ## Integrieren benutzerdefinierter Widgets mit HTML5-Formularen {#integrating-custom-widgets-with-html-forms}
 
@@ -43,7 +43,7 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, das erweitert
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> {<br /> Weichzeichnen: XFA_EXIT_EVENT,<br /> }<br /> Dieses Beispiel zeigt, dass der Weichzeichner ein HTML-Ereignis und XFA_EXIT_EVENT ein entsprechendes XFA-Ereignis ist. </td> 
+   <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> {<br /> Weichzeichnen: XFA_EXIT_EREIGNIS,<br /> }<br /> Dieses Beispiel zeigt, dass der Weichzeichner ein HTML-Ereignis und XFA_EXIT_EREIGNIS ein entsprechendes XFA-Ereignis ist. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -98,7 +98,5 @@ wobei &quot;identifier&quot;ein jQuery CSS-Selektor ist, der ein bestimmtes Feld
 | Typ des Bezeichners | ID | Beschreibung |
 |---|---|---|
 | Bestimmtes Feld mit Name „fieldname“ | Bezeichner:&quot;div.fieldname&quot; | Alle Felder mit dem Namen „fieldname“ werden mithilfe des Widgets gerendert. |
-| Alle Felder des Typs &quot;type&quot;(wobei Typ NumericField, DateField usw. ist): | Bezeichner: &quot;div.type&quot; | Bei Zeitfeld und DateTimeField ist der Typ textfield, da diese Felder nicht unterstützt werden. |
+| Alle Felder des Typs &quot;type&quot;(wobei Typ NumericField, DateField usw. ist): | Bezeichner: &quot;div.type&quot; | Bei &quot;Timefield&quot;und &quot;DateTimeField&quot;ist der Typ &quot;textfield&quot;, da diese Felder nicht unterstützt werden. |
 | Alle Felder | Bezeichner: &quot;div.field&quot; |  |
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
