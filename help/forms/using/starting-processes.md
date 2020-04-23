@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -128,4 +128,3 @@ Sie können Prozesse zu Ihrer Kategorie „Favoriten“ hinzufügen. Durch das F
 
 Um einen Prozess als Favoriten zu markieren, wählen Sie die Aufgabe in der Kategorie aus und klicken Sie auf den ungefüllten Stern. Der Stern wird golden. Um die Markierung eines Prozesses als Favorit zu entfernen, klicken Sie erneut auf den goldenen Stern.
 
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
