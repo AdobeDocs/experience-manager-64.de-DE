@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,7 +46,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
 1. Erstellen Sie ein Tasklisten-Aktionspopup (siehe [Erstellen von AEM Forms Workspace-Code](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3). Dazu muss ein Dev-Paket verwendet werden.)
 
-1. Kopieren `/libs/ws/js/runtime/templates/task.html` nach `/apps/ws/js/runtime/templates/task.html`.
+1. Kopieren Sie `/libs/ws/js/runtime/templates/task.html` nach `/apps/ws/js/runtime/templates/task.html`.
 
 1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/task.html`:
 
@@ -116,7 +116,7 @@ To
 
 ## Popup bei Aufgabendetails-Aufgabenaktion {#task-details-task-action-popup}
 
-1. Kopieren `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Kopieren Sie `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
 
 1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
@@ -172,4 +172,3 @@ To
 1. Ersetzen Sie den Text durch Folgendes:\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
