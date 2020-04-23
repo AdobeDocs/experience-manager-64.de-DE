@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -248,5 +248,3 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 `Styling Fields with Validation Errors`
 
 Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. This style change is done by applying a CSS class **widgetError** on the widget component. To modify the default styling, override the **widgetError** class.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
