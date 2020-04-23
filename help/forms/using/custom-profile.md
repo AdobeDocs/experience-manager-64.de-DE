@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Erstellen eines benutzerdefinierten Profils für HTML5-Formulare {#creating-a-custom-profile-for-html-forms}
 
-A profile is a resource node in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Mit dem HTML5-Formularwiedergabedienst können Sie Erscheinungsbild, Verhalten und Interaktionen der HTML5-Formulare anpassen. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
+A profile is a resource node in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Sie können den HTML5-Formularwiedergabedienst verwenden, um Erscheinungsbild, Verhalten und Interaktionen der HTML5-Formulare anzupassen. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
 
 Der Profilknoten hat die **sling:resourceSuperType**-Eigenschaft und der Standardwert ist **xfaforms/profile**. Das Render-Skript für den Knoten ist unter /libs/xfaforms/profile verfügbar.
 
 Die Sling-Skripte sind JSP-Skripte. Diese JSP-Skripte dienen als Container für den HTML-Code für das angeforderte Formular und die erforderlichen JS-/CSS-Artefakte. Die Sling-Skripte werden auch als **Profil-Renderer-Skripte bezeichnet.** Der Profil-Renderer ruft den Forms OSGi-Dienst auf, um das angeforderte Formular wiederzugeben.
 
-Das Profilskript befindet sich in html.jsp und html.POST.jsp für GET- und POST-Anforderungen. Sie können eine oder mehrere Dateien kopieren und verändern, um Ihre Anpassungen zu überschreiben. Nehmen Sie keine ersetzenden Änderungen vor, die Patch-Aktualisierung überschreibt diese Änderungen.
+Das Profil-Skript befindet sich in html.jsp und html.POST.jsp für GET- und POST-Anforderungen. Sie können eine oder mehrere Dateien kopieren und verändern, um Ihre Anpassungen zu überschreiben. Nehmen Sie keine ersetzenden Änderungen vor, da diese Änderungen durch das Patch-Update überschrieben werden.
 
 Ein Profil enthält verschiedenen Module. Die Module sind formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp und footer.jsp.
 
@@ -81,5 +81,3 @@ Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Inf
 1. To verify that th profile is created, open URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
 Um Ihre Formulare zu überprüfen,[ Importieren Sie Ihre Formulare ](/help/forms/using/get-xdp-pdf-documents-aem.md)aus Ihrem lokalen Dateisystem in AEM Forms und[ zeigen Sie eine Vorschau des Formulars](/help/forms/using/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
