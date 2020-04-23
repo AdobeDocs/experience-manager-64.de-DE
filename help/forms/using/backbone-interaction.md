@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,7 +22,7 @@ Einige Hauptkonzepte sind die folgenden:
 
 **Backbone-Modell** Enthält Daten und den Großteil der Logik, die sich auf diese Daten bezieht.
 
-**Backbone-Ansicht** , die zur Darstellung des Status des entsprechenden Modells verwendet wird. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
+**Backbone-Ansicht** , die zur Darstellung des Zustands des entsprechenden Modells verwendet wird. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
 
 **HTML-Vorlage** Eine Wrapper-Vorlage mit vom Modell ausgefüllten Platzhaltern.
 
@@ -50,11 +50,10 @@ Ein Beispiel:
 
 1. Benutzer klickt in der Aufgabenliste auf eine Aufgabenvorlage.
 1. Aufgabenansicht erfasst den Klick und ruft Renderfunktion im Aufgabenmodell auf.
-1. Das Aufgabenmodell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die gesamte Kommunikation mit dem AEM Forms-Server ist.
+1. Das Aufgabe-Modell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die gesamte Kommunikation mit dem AEM Forms-Server ist.
 1. Dienstklasse ruft AEM Forms REST-Endpunkt für die Rendermethode über AJAX auf.
 1. Der Erfolgsrückruf für diesen Ajax-Aufruf wird im Aufgabenmodell definiert.
 1. Aufgabenmodell erstellt ein Backbone-Ereignis als Benachrichtigung, dass der Renderaufruf abgeschlossen ist.
 1. Eine andere Ansicht, die Aufgabendetailansicht, überwacht dieses Ereignis des Aufgabenmodells.
 1. Aufgabendetailansicht ändert dann die Aufgabendetailvorlage, um die gerenderte Aufgabe (Formular, Details, Anlagen, Hinweise usw.) für den Benutzer anzuzeigen.
 
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
