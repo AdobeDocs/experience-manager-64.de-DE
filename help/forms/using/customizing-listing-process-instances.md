@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -24,7 +24,7 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
  <tbody> 
   <tr> 
    <td><strong>Eigenschaft</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr> 
   <tr> 
    <td>description</td> 
@@ -73,7 +73,7 @@ To display the `description` property of the process instance in the process ins
 1. Gehen Sie folgendermaßen vor:
 
    1. Kopieren Sie /libs/ws/js/runtime/templates/processinstance.html nach /apps/ws/js/runtime/templates/, wenn es nicht existiert. Klicken Sie auf **Alle speichern**.
-   1. Fügen Sie Prozessbeschreibung div mit class = &#39;processDescription&#39; inprocessinstance.html hinzu.
+   1. Hinzufügen Prozessbeschreibung div mit class = &#39;processDescription&#39; inprocessinstance.html.
 
    ```
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -94,5 +94,3 @@ To display the `description` property of the process instance in the process ins
        padding : 2px;
    }
    ```
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
