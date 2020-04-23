@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -42,7 +42,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
    <td>Unterstützt</td> 
   </tr>
   <tr>
-   <td>Bilder </td> 
+   <td>Bilder</td> 
    <td>Das Daten-URI-Schema wird für die Darstellung von Bildern verwendet. Alle modernen Browser unterstützen dieses Schema, es gibt jedoch Unterschiede bei den Bildformaten, die die einzelnen Browser unterstützen.<br /> </td> 
    <td>Die Formate .gif, .png, .jpeg, .bmp und .tiff werden unterstützt.</td> 
   </tr>
@@ -81,4 +81,3 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
 
 Befolgen Sie die Best Practices, um eine Formularvorlage für HTML5-Darstellungen zu aktivieren und sicherzustellen, dass das Verhalten und Erscheinungsbild von HTML5-Formularen und XFA-basierten PDF-Dateien einheitlich ist. Eine detaillierte Liste bewährter Verfahren finden Sie unter [Empfohlene Vorgehensweisen für den Entwurf eines HTML5-Formulars](/help/forms/using/best-practices-for-html5-forms.md).
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
