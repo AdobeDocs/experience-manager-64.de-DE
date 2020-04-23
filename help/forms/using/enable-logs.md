@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -206,4 +206,3 @@ Speicherort und Namen der Protokolldatei ändern:
 
 1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
