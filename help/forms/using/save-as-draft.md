@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,4 +44,3 @@ Führen Sie die folgenden Schritte aus, um einen Entwurf zu löschen:
 1. A form with the edit icon ![edit-draft-app](assets/edit-draft-app.png) denotes a draft. Tippen Sie auf das horizontale Auslassungszeichen neben dem Entwurf.
 1. Wählen Sie in den Optionen, die angezeigt werden, wenn Sie auf das horizontale Auslassungszeichen tippen, **Entwurf löschen**.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
