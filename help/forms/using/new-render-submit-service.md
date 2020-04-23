@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -115,7 +115,7 @@ Browser nehmen allmählich die Unterstützung für NPAPI-basierte Plug-ins zurü
 1. Öffnen Sie den Prozess, für den Sie die Wiedergabe ändern möchten.
 1. Öffnen Sie den/die zielgerichtete/n Startpunkt/Aufgabe, navigieren Sie zum Abschnitt für Präsentation und Daten und klicken Sie auf **Aktionsprofile verwalten**.
 
-   Das Dialogfeld &quot;Aktionsprofile verwalten&quot;wird angezeigt.
+   Das Dialogfeld &quot;Profil verwalten&quot;wird angezeigt.
 1. Change Default render profile configurations from PDF to HTML and click **OK**.
 1. Checken Sie den Prozess ein.
 1. Wiederholen Sie diese Schritte, um die Wiedergabe für andere Prozesse zu ändern.
@@ -138,7 +138,7 @@ Einige häufig gestellte Fragen zu Aktionsprofilen lauten wie folgt:
 
 Sowie entsprechende Sendeprozesse.
 
-![gen_Frage_b_20](assets/gen_question_b_20.png) **Welche Aktionsprofile sind standardmäßig verfügbar?**
+![gen_Frage_b_20](assets/gen_question_b_20.png) **Welche Aktionssymbole stehen standardmäßig zur Verfügung?**
 
 Für XDP-Formulare:
 
@@ -152,7 +152,7 @@ Nichts. Das Standardaktionsprofil wird automatisch ausgewählt und der Rendering
 
 Der Benutzer muss das HTML-Optionsfeld für das Standardprofil auswählen.
 
-![gen_Question_b_20](assets/gen_question_b_20.png) **Wird sich eine Aktualisierung auf die Änderung des Verhaltens des Standard-Aktionsprofils auswirken?**
+![gen_Question_b_20](assets/gen_question_b_20.png) **Wird sich eine Aktualisierung auf die Änderung des Verhaltens des Profils der Standardaktion auswirken?**
 
 Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sendedienste unterschiedlich waren, werden sie als Anpassung der vorhandenen Formulare behandelt. On clicking **[!UICONTROL Restore Defaults]**, the default render and submit services are set instead.
 
@@ -160,5 +160,3 @@ Wenn Sie die vorhandenen Wiedergabe- oder Sendedienste für PDF-Formulare geänd
 
 Was muss der Prozessentwickler tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?\
 Was muss der Prozessentwickler tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
