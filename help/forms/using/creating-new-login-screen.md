@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,7 +43,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 1. Delete all the folders inside `i18n` except one, say `en`.
 1. Mit dem Ordner `en` führen Sie diese Schritte durch:
 
-   1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel, `ar`.
+   1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel: `ar`.
    1. Change the property `jcr:language` value to `ar`(for the `ar` folder).
    >[!NOTE]
    >
@@ -222,7 +222,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 1. Ändern Sie die Stile in der CSS-Datei.
 1. Neue Stile hinzufügen:
 
-   1. Neue Stile hinzufügen zu `/apps/livecycle/core/content/login/login.css`
+   1. Neue Stile Hinzufügen `/apps/livecycle/core/content/login/login.css`
    1. Kopieren `login.jsp`
 
       * from `/libs/livecycle/core/components/login`
@@ -257,14 +257,14 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 ## Fügen Sie neue Bilder hinzu {#add-new-images}
 
-1. Führen Sie die Schritte zum Hinzufügen eines neuen Stils oder zum Ändern eines vorhandenen Stils aus (siehe oben).
+1. Führen Sie die Schritte zum Hinzufügen eines neuen Stils oder zum Ändern des vorhandenen Stils aus (siehe oben).
 1. Add new images in `/apps/livecycle/core/content/login`. Bild hinzufügen:
 
    1. Installieren Sie den WebDAV-Client.
    1. Navigate to `/apps/livecycle/core/content/login` folder, using webDAV client. For more information, see: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
    1. Fügen Sie neue Bilder hinzu.
 
-1. Fügen Sie neue Stile in `/apps/livecycle/core/content/login/login.css,` Übereinstimmung mit neuen Bildern in `/apps/livecycle/core/content/login`.
+1. Hinzufügen neue Stile in `/apps/livecycle/core/content/login/login.css,` Übereinstimmung mit neuen Bildern hinzugefügt in `/apps/livecycle/core/content/login`.
 1. Use the new styles in `login.jsp` at `/apps/livecycle/core/components`.
 1. Beispiel:
 
@@ -288,5 +288,3 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    
    <div class="newLginContainerBkg">
    ```
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
