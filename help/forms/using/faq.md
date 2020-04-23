@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -87,11 +87,11 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Warum wird Text in HTML5 abgeschnitten oder falsch angezeigt?
 
-   Antwort: Wenn nicht genügend Platz zum Anzeigen des Inhalts eines Zeichnungs- oder Beschriftungs-Textelements vorhanden ist, werden manche Texte im Rendering von Mobile Forms abgeschnitten angezeigt. Diese Kürzung ist auch in der Designansicht von AEM Forms Designer sichtbar. Zwar kann eine solche Kürzung im PDF-Format bearbeitet werden, in HTML5-Formularen ist dies jedoch nicht möglich. Wenn Sie dieses Problem vermeiden möchten, stellen Sie genügend Platz zum Zeichnen oder für Beschriftungen zur Verfügung, damit der Text im Designmodus von AEM Forms Designer nicht abgeschnitten wird.
+   Antwort: Wenn nicht genügend Platz zum Anzeigen des Inhalts eines Zeichnungs- oder Beschriftungs-Textelements vorhanden ist, werden manche Texte im Rendering von Mobile Forms abgeschnitten angezeigt. Diese Kürzung ist auch in der Design-Ansicht von AEM Forms Designer sichtbar. Zwar kann eine solche Kürzung im PDF-Format bearbeitet werden, in HTML5-Formularen ist dies jedoch nicht möglich. Wenn Sie dieses Problem vermeiden möchten, stellen Sie genügend Platz zum Zeichnen oder für Beschriftungen zur Verfügung, damit der Text im Designmodus von AEM Forms Designer nicht abgeschnitten wird.
 
 1. Ich habe beim Layout Probleme mit fehlenden oder überlagerten Inhalten. Was ist der Grund dafür?
 
-   Antwort: Wenn ein Element &quot;Text zeichnen&quot;oder &quot;Bild zeichnen&quot;zusammen mit einem anderen überlappenden Element an derselben Position vorhanden ist (z. B. ein Rechteck), ist der Inhalt &quot;Text zeichnen&quot;nicht sichtbar, wenn er später in der Dokumentreihenfolge (in der AEM Forms Designer-Hierarchieansicht) erscheint. PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
+   Antwort: Wenn sich an der gleichen Position ein Element zum Zeichnen von Text oder ein Bild mit einem anderen überlappenden Element befindet (z. B. ein Rechteck), ist der Inhalt zum Zeichnen von Text nicht sichtbar, wenn er später in der Reihenfolge des Dokuments (in der Ansicht zur Hierarchie von AEM Forms Designer) erscheint. PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
 
 1. Warum werden einige Schriften im HTML-Formular in anderer Form angezeigt als beim Entwerfen des Formulars?
 
@@ -196,7 +196,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Führt HTML5-Formulare das Initialisierungsskript und das Ereignis „Form Ready“ mehrmals aus?
 
-   Ja, die Initialisierungsskripts und formularbereiten Ereignisse werden mehrmals ausgeführt, mindestens einmal auf dem Server und einmal auf der Clientseite. Es wird empfohlen, Skripten wie initialize oder form:ready-Ereignisse zu schreiben, die auf einer bestimmten Geschäftslogik (Formular- oder Felddaten) basieren, sodass die Aktion auf der Grundlage des Datenstatus und der Idempotent (wenn die Daten identisch sind) durchgeführt wird.
+   Ja, die Initialisierungsskripts und formularbereiten Ereignisse werden mehrmals ausgeführt, mindestens einmal auf dem Server und einmal auf der Clientseite. Es wird empfohlen, Skripten wie initialize oder form:ready-Ereignis zu schreiben, die auf einer Geschäftslogik (Formular- oder Felddaten) basieren, sodass die Aktion auf der Grundlage des Datenstatus und der Idempotent (wenn die Daten identisch sind) durchgeführt wird.
 
 ## XDP entwerfen {#designing-xdp}
 
@@ -204,4 +204,3 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Antwort: Alle HTML5-Formular-APIs sind reservierte Schlüsselwörter. Bei benutzerdefinierten APIs/Funktionen müssen Sie einen Namen verwenden, der nicht mit den [HTML5 Forms APIs](/help/forms/using/scripting-support.md) identisch ist. Wenn Sie, abgesehen von reservierten Schlüsselwörtern, Objektnamen verwenden, die mit einem Unterstrich (_) beginnen, wird empfohlen, nach dem Unterstrich ein Präfix einzufügen. Das Einfügen eines Präfix verhindert mögliche Konflikte mit HTML5-Formular-internen APIs. Beispiel: `_fpField1`
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
