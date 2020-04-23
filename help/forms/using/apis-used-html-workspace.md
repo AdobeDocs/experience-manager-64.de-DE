@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -24,7 +24,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
    <td><strong>JavaScript-Methode</strong></td> 
    <td><strong>Dienstname</strong></td> 
    <td><strong>API-Name</strong></td> 
-   <td><strong>Comments</strong></td> 
+   <td><strong>Kommentare</strong></td> 
   </tr>
   <tr>
    <td>getGroups</td> 
@@ -105,9 +105,9 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
    <td>Sendet die mit der Aufgabe verknüpften Formulardaten (übergeben als String) mithilfe der Senden-API des TaskManagers. Wird für Flex-Formulare verwendet, die nicht die Senden-API von TaskManager aufrufen.</td> 
   </tr>
   <tr>
-   <td>save</td> 
+   <td>Speichern</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>save</td> 
+   <td>Speichern</td> 
    <td>Speichert eine Aufgabe auf dem Server.</td> 
   </tr>
   <tr>
@@ -353,7 +353,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>removeProperty</td> 
    <td>WorkspacePropertyService</td> 
-   <td>Löschen Sie</td> 
+   <td>delete</td> 
    <td>Löscht eine Workspace-Eigenschaft für einen Benutzer.</td> 
   </tr>
   <tr>
@@ -401,5 +401,5 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
  </tbody>
 </table>
 
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
+
 
