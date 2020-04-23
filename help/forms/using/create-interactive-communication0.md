@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -37,17 +37,17 @@ In diesem Tutorial werden Sie durch die Schritte zum Erstellen interaktiver Komm
 
 Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutorial erstellt wurden und beim Erstellen der interaktiven Kommunikation für den Druckkanal benötigt werden:
 
-**** Druckvorlage: [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
+**Druckvorlage:** [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
 
-**** Formulardatenmodell: [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Formulardatenmodell:** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Dokumentfragmente: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](/help/forms/using/create-document-fragments.md)
+**Dokument-Fragmente:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](/help/forms/using/create-document-fragments.md)
 
 **Layout-Fragmente:** [table_lf](/help/forms/using/create-templates-print-web.md)
 
 **Bilder:** PayNow und ValueAddedServices
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
@@ -99,15 +99,15 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
 Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutorial erstellt wurden und beim Erstellen der interaktiven Kommunikation für den Webkanal benötigt werden:
 
-**** Webvorlage: [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
+**Webvorlage:** [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
 
-**** Formulardatenmodell: [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Formulardatenmodell:** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Dokumentfragmente: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](/help/forms/using/create-document-fragments.md)
+**Dokument-Fragmente:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](/help/forms/using/create-document-fragments.md)
 
-**** Bilder: PayNowWeb und ValueAddedServicesWeb
+**Bilder:** PayNowWeb und ValueAddedServicesWeb
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
@@ -186,7 +186,7 @@ Sie können auch eine interaktive Kommunikation erstellen, indem Sie die automat
 
 Führen Sie die folgenden Schritte aus, um den Webkanal-Inhalt mithilfe des Druckkanals abzuleiten:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
@@ -206,7 +206,7 @@ Führen Sie die folgenden Schritte aus, um den Webkanal-Inhalt mithilfe des Druc
 
    Hover over the relevant target area in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**.
 
-   ![cancel_inerbance_web_channel](assets/cancel_inheritance_web_channel.png)
+   ![cancel_inerbance_web_Kanal](assets/cancel_inheritance_web_channel.png)
 
    Wenn Sie die Vererbung einer Komponente abgebrochen haben, können Sie sie erneut aktivieren. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png).
 
