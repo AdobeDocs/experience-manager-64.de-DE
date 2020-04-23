@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -76,10 +76,8 @@ HTML5-Formulare unterstützen drei Methoden zum Übergeben der Render-Parameter.
 
 * **setAttribute-Anforderungsparameter**: Sie können die Render-Parameter als Schlüssel/Wert-Paar angeben. In den setAttribute-Anforderungsparametern sind die Parameter für den Endbenutzer nicht sichtbar. Sie können eine Anforderung von einem beliebigen anderen JSP an den JSP des Profil-Renderers für HTML5-Formulare weiterleiten und als Anforderungsobjekt *setAttribute* verwenden, um alle Render-Parameter zu übergeben. Diese Methode hat die höchste Priorität.
 
-* **** Profilknoten-Anforderungsparameter: Sie können die Render-Parameter als Knoteneigenschaften eines Profilknotens angeben. In den Profilknoten-Anforderungsparametern sind die Parameter für den Endbenutzer nicht sichtbar. Profilknoten ist der Knoten, an den die Anforderung gesendet wird. Um Parameter als Knoteneigenschaften festzulegen, verwenden Sie CRXDE lite.
+* **Anforderungsparameter für Profil-Node:** Sie können die Render-Parameter als Knoteneigenschaften eines Profil-Knotens angeben. In den Profilknoten-Anforderungsparametern sind die Parameter für den Endbenutzer nicht sichtbar. Profilknoten ist der Knoten, an den die Anforderung gesendet wird. Um Parameter als Knoteneigenschaften festzulegen, verwenden Sie CRXDE lite.
 
 ### Sende-Parameter {#submit-parameters}
 
 HTML5-Formulare senden Daten und führen serverseitige Skripte und Webdienste auf AEM-Servern aus. Detaillierte Informationen zu Parametern für die Ausführung serverseitiger Skripte und Webdienste auf AEM-Servern finden Sie unter [HTML5 forms Service Proxy](/help/forms/using/service-proxy.md).
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
