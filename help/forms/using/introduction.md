@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,5 +44,3 @@ AEM bietet außerdem eine einheitliche Ansicht für die Auflistung und Verwaltun
 ### Anpassung von Formularen {#forms-customization}
 
 „HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. For more information about creating custom widgets and customizing existing widgets, see [Plug in custom widgets with HTML5 forms](/help/forms/using/custom-widgets.md).
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
