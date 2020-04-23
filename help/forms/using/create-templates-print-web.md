@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -46,9 +46,9 @@ Erstellen und verwalten Sie eine Vorlage für den Druckkanal von interaktiver Ko
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
 
 * Rechnungsdetails: Enthält ein Dokumentfragment
-* Kundendetails: Umfasst ein Dokumentfragment
-* Bill Summary: Umfasst ein Dokumentfragment
-* Zusammenfassung: Umfasst ein Dokumentfragment (Teilformular &quot;Gebühren&quot;) und ein Diagramm (Teilformular &quot;Diagramme&quot;)
+* Kundendetails: Umfasst ein Dokument-Fragment
+* Bill Summary: Umfasst ein Dokument-Fragment
+* Zusammenfassung: Umfasst ein Dokument-Fragment (Teilformular &quot;Gebühren&quot;) und ein Diagramm (Teilformular &quot;Diagramme&quot;)
 * Angepasste Aufrufe: Umfasst eine Tabelle (Layout-Fragment)
 * Jetzt bezahlen: Umfasst ein Bild
 * Value Added Services: Umfasst ein Bild
@@ -109,7 +109,7 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
 
 Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server hochladen, damit die Vorlage beim Erstellen der interaktiven Kommunikation verwendet werden kann.
 
-1. Wählen Sie **Formulare** > **Formulare &amp; Dokumente**.
+1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
 1. Tippen Sie auf **Erstellen** > **Datei hochladen**.
 
    Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open** to import the XDP template to the AEM Forms server.
@@ -183,9 +183,9 @@ Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren V
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
 
 * Rechnungsdetails: Enthält ein Dokumentfragment
-* Kundendetails: Umfasst ein Dokumentfragment
-* Bill Summary: Umfasst ein Dokumentfragment
-* Zusammenfassung der Gebühren: Umfasst ein Dokumentfragment und ein Diagramm (zweispaltiges Layout)
+* Kundendetails: Umfasst ein Dokument-Fragment
+* Bill Summary: Umfasst ein Dokument-Fragment
+* Zusammenfassung der Gebühren: Umfasst ein Dokument- und ein Diagramm (zweispaltiges Layout)
 * Angepasste Aufrufe: Umfasst eine Tabelle
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
