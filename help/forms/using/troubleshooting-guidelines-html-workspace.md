@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
 
 ---
 
@@ -30,7 +30,7 @@ While installling the package, if you encounter an error `javax.jcr.nodetype.Con
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Navigieren Sie zu Package Manager. The default URL is `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
 1. Search and install the `adobe-lc-workspace-pkg-[version].zip` package.
 1. Starten Sie den Anwendungsserver neu.
 
@@ -192,5 +192,3 @@ Skripten und Stile können in verschiedenen Browsern debuggt werden.
 1. Bei HTML-Formularen, die Prozesseigenschaften im Design verwenden, wird bei der Wiedergabe in AEM Forms Workspace die Schaltfläche &quot;Senden“ innerhalb des Formulars angezeigt.
 
    Wenn Sie ein Formular mit Prozesseigenschaften entwerfen, wird die Schaltfläche „Senden“ innerhalb des Formulars eingefügt. Bei der Wiedergabe als PDF in AEM Forms Workspace ist die Schaltfläche „Senden“ für den Endbenutzer nicht sichtbar. Wird in AEM Forms Workspace jedoch als HTML-Formular wiedergegeben, ist die Schaltfläche „Senden“ für den Endbenutzer sichtbar. Durch Klicken auf die Schaltfläche „Senden“ im Formular wird keine Aktion ausgelöst. Durch Klicken auf die Schaltfläche „Senden“ unten im AEM Forms Workspace, außerhalb des Formulars, wird die Aufgabe abgeschlossen.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
