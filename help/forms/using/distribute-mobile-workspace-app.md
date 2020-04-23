@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -35,7 +35,7 @@ Der MDM-Administrator kann IPA- und APK-Dateien auf den MDM-Server hochladen und
 
 ## Profileinstellungen mit Auswirkung auf die AEM Forms-App {#profile-settings-affecting-the-aem-forms-app-br}
 
-Die folgenden Profileinstellungen auf Ihrem Gerät wirken sich auf die Funktion der AEM Forms-App auf Ihrem Gerät aus:
+Die folgenden Profil-Einstellungen auf Ihrem Gerät wirken sich auf die Funktion der AEM Forms-App auf Ihrem Gerät aus:
 
 * **Allow use of camera** im Abschnitt **Device functionality**
 
@@ -44,5 +44,3 @@ Wenn Sie die Option **Allow use of camera** deaktivieren, funktioniert die Kamer
 * **Require passcode on device** im Abschnitt „Passcode policies“
 
 Um die **Verschlüsselung von Anwendungsdaten** zu aktivieren, sollten Sie die **Code-Sperre** auf dem Gerät aktivieren. Wenn auf dem Gerät keine Code-Sperre festgelegt ist, werden auf dem Gerät gespeicherte Anwendungsdaten nicht verschlüsselt.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
