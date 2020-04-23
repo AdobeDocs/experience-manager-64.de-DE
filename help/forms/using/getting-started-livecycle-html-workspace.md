@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -25,7 +25,7 @@ Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
 ## Navigieren in AEM Forms Workspace {#navigating-html-workspace}
 
-Je nach dem Prozess und der Aufgabe, an der Sie arbeiten, werden verschiedene Elemente in der Benutzeroberfläche von AEM Forms Workspace angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
+In der Benutzeroberfläche von AEM Forms Workspace werden je nach Prozess und Aufgabe, an der Sie arbeiten, verschiedene Elemente angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
 
 Sie können mithilfe einer der folgenden Methoden durch die Hauptbenutzeroberfläche von AEM Forms Workspace navigieren:
 
@@ -79,4 +79,3 @@ Legen Sie die Benutzeroberflächenvoreinstellungen auf der Registerkarte „UI-E
 * **Formulare in E-Mail anfügen:** Gibt an, ob eine Kopie des Formulars in E-Mail-Benachrichtigungen angefügt wird. Anlagen werden nur für PDF- und XDP-Formulare unterstützt.
 * **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Um Ihre Entwürfe in regelmäßigen Abständen zu speichern, aktivieren Sie diese Option und legen Sie die Dauer der automatischen Speicherung von 1 bis 30 Minuten fest. Wenn die automatische Speicherung aktiviert ist und ein Benutzer an einem Entwurf arbeitet, wird der Entwurf regelmäßig nach einer bestimmten Anzahl von Minuten gespeichert. Der Entwurf wird nur automatisch gespeichert, wenn er seit der letzten Speicherung oder automatischen Speicher geändert wurde. Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
