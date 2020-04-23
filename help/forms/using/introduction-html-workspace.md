@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,4 +30,3 @@ AEM Forms Workspace ist mit mehr Geräten und Formfaktoren kompatibel. Dies erm�
 * Erweitern Sie Geschäftsprozesse auf mobile Arbeiter, sowohl online als auch offline, mit der AEM Forms Workspace-App.
 * Zeigen Sie Berichte an, um Arbeitsrückstände, Warteschlangen und wichtige Leistungsindikatoren (KPIs) zu überwachen. Sie können APIs verwenden, um Daten für die weitergehende Analyse in Berichterstellungstools von Drittanbietern zu extrahieren.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
