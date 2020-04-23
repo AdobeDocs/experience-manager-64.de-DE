@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # In Flex Workspace nicht verfügbare Funktionen von AEM Forms {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
-AEM Forms Workspace ist eine Innovation, die über den Flex-basierten Arbeitsbereich hinausgeht und Funktionen und Funktionen bietet, die die Integration von Unternehmen und die Benutzerproduktivität verbessern.
+AEM Forms Workspace ist eine Innovation, die über Flex-basierte Arbeitsflächen, Angebot-Funktionen und Funktionen hinausgeht, die die Integration von Unternehmen und die Benutzerproduktivität verbessern.
 
 Im Folgenden sehen Sie einen kurzen Überblick über diese Funktionen. Weitere Informationen finden Sie in den jeweiligen Artikeln, die am Ende dieses Artikels aufgeführt sind.
 
@@ -41,4 +41,3 @@ Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM For
 
 AEM Forms Workspace unterstützt die HTML-Darstellung von XDP-Formularen. In einem Wiedergabevorgang, der basierend auf dem Gerät oder dem Benutzer-Agenten auf verschiedene Darstellungen von XDP weiterleitet, ermöglicht diese Unterstützung es dem Benutzer, ein XDP-Formular auf den mobilen Geräten als HTML und auf einem Desktop als PDF-Datei anzuzeigen. Dies ermöglicht nahtloses Process Management für Benutzer, die in verschiedenen Umgebungen auf unterschiedlichen Geräten arbeiten.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
