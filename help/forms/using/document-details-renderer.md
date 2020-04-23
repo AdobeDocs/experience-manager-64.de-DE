@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,7 +22,7 @@ In AEM Forms Workspace werden mehrere Formulartypen nahtlos unterstützt. Dazu g
 
 * PDF-Formulare (XDP/Acroform/Flache PDF-Dateien)
 * Neue HTML-Formulare
-* Bilder 
+* Bilder
 * Drittanbieteranwendungen (zum Beispiel Correspondence Management)
 
 In diesem Dokument wird die Verwendung dieser Renderer aus der Perspektive der semantischen Anpassung bzw. der Komponentenwiederverwendung erläutert, sodass Kundenanforderungen erfüllt werden, ohne eine Darstellung zu beeinträchtigen. Während AEM Forms Workspace beliebige Änderungen der Benutzeroberfläche/Semantik zulässt, wird empfohlen, die Renderlogik verschiedener Formulartypen nicht zu ändern, da andernfalls die Ergebnisse unvorhersehbar sein können. Dieses Dokument dient zur Anleitung und zum Verständnis für das Rendering desselben Formulars mit den gleichen Workspace-Komponenten auf verschiedenen Portalen, nicht zum Ändern der Renderlogik selbst.
@@ -61,7 +61,7 @@ Dieses Javascript unterscheidet sich von dem, auf das oben unter „PDF-Formular
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, den Inhalt der Ansicht NewHTMLTaskForm zu ändern.
+>Es wird nicht empfohlen, den Inhalt der NewHTMLTaskForm-Ansicht zu ändern.
 
 ## Flex-Formulare und Guides {#flex-forms-and-guides}
 
@@ -85,7 +85,7 @@ Drittanbieteranwendungen werden mithilfe der ExtAppTaskForm-Ansicht gerendert.
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`Die Meldung`ErrorMessage` kann eine Zeichenfolge sein, die als||| `actionEnabledMessage`im `runtimeMap`. Anwendungen von Drittanbietern müssen diese Schnittstelle verwenden, um AEM Forms Workspace nach Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da AEM Forms Workspace wissen muss, dass die Aufgabe gesendet wird, damit das Aufgabenfenster bereinigt werden kann.
+[Die Meldung] kann eine Zeichenfolge sein, die als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`im `runtimeMap`. Anwendungen von Drittanbietern müssen diese Schnittstelle verwenden, um AEM Forms Workspace nach Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da AEM Forms Workspace wissen muss, dass die Aufgabe gesendet wird, damit das Fenster &quot;Aufgabe&quot;bereinigt werden kann.
 
 **Kommunikation zwischen AEM Forms Workspace und Anwendungen von Drittanbietern**
 
@@ -95,5 +95,3 @@ For example, a Flex application can define `ExternalInterface.addCallback('getMe
 
 Weitere Informationen zur Integration von Drittanbieteranwendungen in Bezug auf Correspondence Management finden Sie unter [Integrieren von Correspondence Management in AEM Forms Workspace](/help/forms/using/integrating-correspondence-management-html-workspace.md).
 
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
