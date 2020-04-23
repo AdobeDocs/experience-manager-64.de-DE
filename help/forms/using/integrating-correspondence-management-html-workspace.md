@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Erstellen Sie zunächst eine Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
+Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
 
 Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
@@ -57,7 +57,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
 
 1. Klicken Sie auf „Aktionsprofile verwalten“. Das Dialogfeld „Aktionsprofile verwalten“ wird angezeigt. Stellen Sie sicher, dass „Prozess rendern“ und „Prozess übermitteln“ entsprechend ausgewählt werden.
 1. Um den Brief mit einer XML-Datendatei zu öffnen, suchen Sie die entsprechende Datendatei und wählen Sie diese unter „Datenprozess vorbereiten“ aus.
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 1. Definieren Sie die Variablen für Startpunkt-Ausgabe und Aufgabenanlagen. Die definierten Variablen enthalten Daten zur Startpunktausgabe und zu Aufgabenanlagen.
 1. (Optional) Um einen weiteren Benutzer im Arbeitsablauf hinzuzufügen, ziehen Sie eine Aktivitätenauswahl, konfigurieren Sie sie ihn und weisen sie ihn Benutzern zu. Schreiben Sie einen benutzerdefinierten Wrapper (im Beispiel unten angezeigt) oder laden Sie das DSC herunter und installieren Sie es (unten angezeigt), um Briefvorlagen, Startpunktausgabe und Aufgabenanlagen zu extrahieren.
 
@@ -114,4 +114,3 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
    >
    >Die Sendeschaltfläche wird erst aktiviert, nachdem alle erforderlichen Variablen im Brief ausgefüllt sind.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
