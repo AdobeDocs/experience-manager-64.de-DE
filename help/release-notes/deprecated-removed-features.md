@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbei
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von AEM-Funktionen gelten die folgenden Regeln:
 
-1. Zunächst wird angekündigt, dass die betreffende Funktion veraltet ist. Die Funktion bleibt aber trotzdem weiterhin verfügbar, wird jedoch nicht weiter verbessert.
+1. Zunächst wird angekündigt, dass die betreffende Funktion veraltet ist. Die Funktionen sind zwar nicht mehr unterstützt, aber sie werden nicht weiter verbessert.
 1. Das Entfernen veralteter Funktionen erfolgt frühestens mit Einführung der nächsten Hauptversion. Das geplante Datum für die Entfernung wird bekannt gegeben.
 
 Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um ihre Implementierung an eine neue Version oder die Nachfolgeversion einer veralteten Funktion anzupassen, bevor die Funktion tatsächlich entfernt wird.
 
 ## Veraltete Funktionen {#deprecated-features}
 
-In diesem Abschnitt werden die Funktionen aufgelistet, die in AEM 6.4 als veraltet gekennzeichnet wurden. Im Allgemeinen werden Funktionen, deren Entfernung in einer zukünftigen Version geplant ist, zunächst als veraltet gekennzeichnet und es wird eine Alternative bereitgestellt.
+Die folgende Tabelle zeigt Funktionen und Funktionen, die mit AEM 6.4 als nicht mehr unterstützt gekennzeichnet wurden. Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine Alternative bereitgestellt wird.
 
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderungen ihrer Implementierung zu erstellen, um die bereitgestellte Alternative nutzen zu können.
 
@@ -120,6 +120,11 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
    <td>IValueMap-API verwenden </td> 
   </tr>
   <tr>
+   <td>Forms</td> 
+   <td><p>Veralteter Central Migration Bridge-Dienst</p> </td> 
+   <td> Kein Ersatz vorhanden. </td> 
+  </tr>
+  <tr>
    <td>Assets </td> 
    <td><p>Das Assets-Abladen wurde ab AEM 6.4 nicht mehr unterstützt.</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
 
 ## Entfernte Funktionen {#removed-features}
 
-In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Frühere Versionen hatten diese Funktionen als veraltet markiert.
+In der folgenden Tabelle werden Funktionen und Funktionen Liste, die aus AEM 6.4 entfernt wurden. Frühere Versionen hatten diese Funktionen als veraltet markiert.
 
 <table> 
  <tbody>
@@ -141,7 +146,7 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
   <tr>
    <td>Analytics-Aktivität-Map</td> 
    <td>Die Version der Aktivität Map, die in AEM enthalten ist.</td> 
-   <td>Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.<br><br>Das <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Activity Map-Plugin, das von Adobe Analytics</a> bereitgestellt wird, sollte jetzt verwendet werden.</td> 
+   <td>Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.<br><br>Das von Adobe Analytics bereitgestellte <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap-Plug-in sollte jetzt verwendet werden</a> .</td> 
   </tr>
   <tr>
    <td>components-forms</td> 
@@ -224,6 +229,11 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
    <td>Verwenden Sie den reCAPTCHA-Dienst von Google.</td> 
   </tr>
   <tr>
+   <td>Forms</td> 
+   <td>Die Unterstützung für Flash-Felder in AEM Designer wurde entfernt. AEM Designer lässt die Bearbeitung von Flash-Feldern in einem Formular nicht zu.</td> 
+   <td>Sie können AEM Designer, das für eine frühere Version veröffentlicht wurde, verwenden, um solche Formulare zu bearbeiten.</td> 
+  </tr>
+  <tr>
    <td>Communities</td> 
    <td>Die Unterstützung für die Captcha-Überprüfung wurde entfernt.</td> 
    <td>Verwenden Sie zur Verifizierung benutzerdefinierte Captcha-Integration (z. B. reCAPTCHA von Google).</td> 
@@ -233,14 +243,15 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.4 entfernt wurden. Fr
 
 ## Vorankündigung für die nächste Version {#pre-announcement-for-next-release}
 
-Dieser Abschnitt wird verwendet, um Änderungen in der zukünftigen Version vorab bekannt zu geben, bei denen es sich nicht um veraltete Funktionen handelt, die aber Auswirkungen für Kunden haben. Diese werden für Planungszwecke bereitgestellt.
+
+Die nachstehende Tabelle enthält eine Liste der Änderungen für zukünftige Versionen, die nicht mehr unterstützt werden, sich aber auf Kunden auswirken können. Diese werden für Planungszwecke bereitgestellt.
 
 <table> 
  <tbody>
   <tr>
    <td>Bereich<br /> </td> 
    <td>Funktion<br /> </td> 
-   <td>Ankündigung</td> 
+   <td>Mitteilung</td> 
   </tr>
   <tr>
    <td>Browserunterstützung</td> 
