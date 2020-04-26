@@ -1,20 +1,20 @@
 ---
-title: Verwalten von Metadaten Ihrer digitalen Assets
-description: Erfahren Sie mehr über die Metadatentypen und wie Sie mit Adobe Experience Manager Assets Metadaten für Assets verwalten können, um die Kategorisierung und Organisation von Assets zu vereinfachen. Mit Adobe Experience Manager Assets können Sie beliebige Metadaten mit Ihren Assets behalten und verwalten und Assets automatisch basierend auf ihren Metadaten organisieren und verarbeiten.
+title: Verwalten Sie Metadaten Ihrer digitalen Assets in [!DNL Adobe Experience Manager].
+description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] beim Verwalten von Metadaten für Assets hilft, um die Kategorisierung und Organisation von Assets zu erleichtern. [!DNL Experience Manager] ermöglicht die automatische Organisation und Verarbeitung von Assets anhand ihrer Metadaten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 
 ---
 
 
-# Verwalten von Metadaten Ihrer digitalen Assets {#managing-metadata-for-digital-assets}
+# Verwalten von Metadaten für digitale Assets {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager Assets speichert Metadaten für jedes Asset. Dies erleichtert die Kategorisierung und Organisation von Assets und hilft Menschen, die nach einem bestimmten Asset suchen. Mit der Möglichkeit, Metadaten aus Dateien zu extrahieren, die in Experience Manager Assets hochgeladen wurden, kann das Metadaten-Management in den kreativen Workflow integriert werden. Mit Experience Manager können Sie Metadaten mit Ihren Assets verwalten und verwalten. So können Sie Assets automatisch basierend auf den Metadaten organisieren und verarbeiten.
+[!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Dies erleichtert die Kategorisierung und Organisation von Assets und hilft Menschen, die nach einem bestimmten Asset suchen. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, [!DNL Experience Manager Assets] makes it possible to automatically organize and process assets based on their metadata.
 
-* [XMP-Metadaten](xmp.md)
-* [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md)
-* [Metadaten-Schemareferenz](meta-ref.md)
+* [XMP-Metadaten](xmp.md).
+* [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md).
+* [Metadaten-Schemata-Referenz](meta-ref.md).
 
 ## Die Bedeutung von Metadaten {#why-we-need-metadata}
 
@@ -28,7 +28,7 @@ Metadaten sind alle für ein Asset verfügbaren Daten, die jedoch nicht unbeding
 * Name des Ordners, in dem er enthalten ist.
 * Zugehörige Assets oder angewendete Tags.
 
-Dies sind die grundlegenden Metadateneigenschaften, die Experience Manager für Assets verwalten kann. Dadurch können Benutzer alle Assets anzeigen, die beispielsweise nach ihrem letzten Änderungsdatum geordnet sind. Dies ist nützlich, wenn Sie herausfinden möchten, welche Assets dem Repository kürzlich hinzugefügt wurden.
+These are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets, for example, ordered by their last modification date - useful when trying to discover what assets have recently been added to the repository.
 
 Sie können digitalen Assets auch Daten auf höherer Ebene hinzufügen – darunter:
 
@@ -40,45 +40,45 @@ Sie können digitalen Assets auch Daten auf höherer Ebene hinzufügen – daru
 
 Mit mehr Metadaten können Sie Assets genauer einteilen. Außerdem erweisen sie sich als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, einige hundert Dateien zu verwalten, die nur auf den Dateinamen basieren. Dieser Ansatz ist jedoch nicht skalierbar und fällt schnell unter, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt.
 
-Wenn Metadaten Assets hinzugefügt werden, steigt auch der Wert der Assets, da diese dadurch,
+Durch Hinzufügen von Metadaten wächst der Wert eines digitalen Assets, da das Asset
 
-* einfacher zugänglich wird: Es kann viel leichter gefunden werden.
-* einfacher zu verwalten wird: Sie können Assets mit denselben Eigenschaften einfacher finden und ändern.
-* komplexer wird: Je mehr Metadaten Sie einem Asset hinzugefügt haben, desto wichtiger wird die Verwaltung der Metadaten.
+* Mehr Zugänglichkeit - Systeme und Benutzer können es leicht finden.
+* Einfachere Verwaltung - Sie können Assets mit demselben Satz Eigenschaften einfacher finden und Änderungen darauf anwenden.
+* Vollständiger: Je mehr Metadaten Sie zu einem Asset hinzugefügt haben, desto mehr Informationen und Kontext werden mit dem Asset geliefert.
 
-Aus diesen Gründen bietet Experience Manager Assets die richtigen Möglichkeiten zum Erstellen, Verwalten und Austauschen von Metadaten für Ihre digitalen Assets.
+For these reasons, [!DNL Assets] provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
 
 ## Metadatentypen {#types-of-metadata}
 
 Die beiden grundlegenden Metadatentypen sind technische Metadaten und beschreibende Metadaten.
 
-Technische Metadaten eignen sich für Softwareanwendungen, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollten. Experience Manager Assets und andere Software bestimmen automatisch technische Metadaten und die Metadaten können sich ändern, wenn das Asset geändert wird. Welche technischen Metadaten für ein Asset verfügbar sind, hängt größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
+Technische Metadaten eignen sich für Software-Anwendungen, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. [!DNL Experience Manager Assets] und andere Software bestimmen automatisch technische Metadaten und die Metadaten können sich ändern, wenn das Asset geändert wird. Welche technischen Metadaten für ein Asset verfügbar sind, hängt größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
 
-* Dateigröße
-* Abmessungen (Höhe und Breite) eines Bildes
-* Bitrate einer Audio- oder Videodatei
-* Auflösung (Detailstufe) eines Bildes
+* Größe einer Datei.
+* Abmessungen (Höhe und Breite) eines Bildes.
+* Bitrate einer Audio- oder Videodatei.
+* Auflösung (Detailstufe) eines Bildes.
 
 Beschreibende Metadaten sind solche, die sich auf die Anwendungsdomäne beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Es wird manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Breiten- und Längengrad verfolgen und Geotag für das Bild hinzufügen.
 
 Da der manuelle Aufwand für die Erstellung beschreibender Metadaten sehr kostspielig ist, wurden Standards aufgestellt, um den Austausch von Metadaten über Softwaresysteme und Organisationen hinweg zu erleichtern.
 
-Experience Manager Assets unterstützt alle relevanten Standards für das Metadatenmanagement.
+[!DNL Experience Manager Assets] unterstützt alle relevanten Standards für das Metadatenmanagement.
 
 Aufgrund der Wichtigkeit von Metadaten und des hohen manuellen Arbeitsaufwands für ihre Erstellung wurden Standards aufgestellt, die den Austausch erleichtern.
 
-## Encoding standards {#encoding-standards}
+## Kodierungsstandards {#encoding-standards}
 
 Es gibt verschiedene Möglichkeiten, Metadaten in Dateien einzubetten. Dazu werden die folgenden Kodierungsstandards unterstützt:
 
-* XMP: verwendet von Experience Manager Assets, um die extrahierten Metadaten im Repository zu speichern.
+* XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3: für Audio- und Videodateien
 * Exif: für Bilddateien.
 * Andere/Legacy: aus Microsoft Word, PowerPoint, Excel usw.
 
 ### XMP {#xmp}
 
-Die Extensible Metadata Platform (XMP) ist ein offener Standard, der von Experience Manager Assets für das gesamte Metadatenmanagement verwendet wird. Die standardmäßige Angebot-Metadaten-Kodierung, die in alle Dateiformate eingebettet werden kann. Adobe und andere Firmen unterstützen den XMP-Standard, da er ein Rich-Content-Modell bietet. Benutzer des XMP-Standards und von Experience Manager Assets verfügen über eine leistungsstarke Plattform, auf der sie aufbauen können. Weitere Informationen finden Sie unter [XMP](https://www.adobe.com/products/xmp.html).
+Die Extensible Metadata Platform (XMP) ist ein offener Standard, der [!DNL Experience Manager Assets] für alle Metadatenverwaltungen verwendet wird. Die standardmäßige Angebot-Metadaten-Kodierung, die in alle Dateiformate eingebettet werden kann. Adobe und andere Firmen unterstützen den XMP-Standard, da er ein Rich-Content-Modell bietet. Benutzer des XMP-Standards und von [!DNL Experience Manager Assets] haben eine leistungsstarke Plattform, auf der sie aufbauen können. Weitere Informationen finden Sie unter [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -94,21 +94,21 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 
 ### Exif {#exif}
 
-Das austauschbare Bilddateiformat (Exif) ist das beliebteste Metadatenformat für die Digitalfotografie. Es bietet eine Möglichkeit zum Einbetten eines festen Wortschatzes mit Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV. Exif speichert Metadaten als Paare eines Metadatennamens und eines Metadatenwerts. Diese Metadaten-Name-Wert-Paare werden auch als Tags bezeichnet, nicht zu verwechseln mit dem Tagging in Experience Manager. Da Exif automatisch von modernen Digitalkameras erstellt und durch moderne Grafiksoftware unterstützt wird, kann es als kleinster gemeinsamer Nenner für das Metadaten-Management angesehen werden.
+Das austauschbare Bilddateiformat (Exif) ist das beliebteste Metadatenformat für die Digitalfotografie. Es bietet eine Möglichkeit zum Einbetten eines festen Wortschatzes mit Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Da Exif automatisch von modernen Digitalkameras erstellt und durch moderne Grafiksoftware unterstützt wird, kann es als kleinster gemeinsamer Nenner für das Metadaten-Management angesehen werden.
 
 Eine wichtige Einschränkung von Exif besteht darin, dass einige gängige Bilddateiformate wie BMP, GIF oder PNG diese nicht unterstützen.
 
-Metadatenfelder, die normalerweise von Exif definiert werden, sind technischer Natur und werden nur in begrenztem Umfang für die Verwaltung beschreibender Metadaten verwendet. Aus diesem Grund werden in Experience Manager Assets Angebot-Zuordnungen von Exif-Eigenschaften zu [allgemeinen Metadatenschemata](metadata-schemas.md) und zu [XMP](xmp-writeback.md)erstellt.
+Metadatenfelder, die normalerweise von Exif definiert werden, sind technischer Natur und werden nur in begrenztem Umfang für die Verwaltung beschreibender Metadaten verwendet. Aus diesem Grund werden [!DNL Experience Manager Assets] Angebote von Exif-Eigenschaften in [gängige Metadaten-Schemata](metadata-schemas.md) und in [XMP](xmp-writeback.md)zugeordnet.
 
 ### Other metadata {#other-metadata}
 
-Andere Metadaten, die aus Dateien eingebettet werden können, sind Microsoft Word, PowerPoint, Excel usw.
+Andere Metadaten können aus Dateien von Microsoft Word, PowerPoint, Excel usw. eingebettet werden.
 
 ## Metadata schemata {#metadata-schemata}
 
-Metadaten-Schema sind vordefinierte Sätze von Metadateneigenschaftsdefinitionen, die in verschiedenen Anwendungen verwendet werden können. Eigenschaften sind stets mit einem Asset verknüpft. Das heißt, die Eigenschaften beziehen sich auf die Ressource.
+Metadaten-Schema sind vordefinierte Sätze von Metadateneigenschaftsdefinitionen, die in verschiedenen Anwendungen verwendet werden können. Eigenschaften sind immer mit einem Asset verknüpft, d. h. die Eigenschaften beziehen sich auf die Ressource.
 
-Sie können auch eigene Metadaten-Schemata entwerfen, wenn keine vorhanden ist, die Ihren Anforderungen entsprechen. Vorhandene Informationen nicht Duplikat. Das Trennen von Schemata innerhalb eines Unternehmens erleichtert die Freigabe von Metadaten. Experience Manager bietet Ihnen eine standardmäßige Liste der beliebtesten Metadaten-Schemata. Die Liste hilft Ihnen, Ihre Metadatenstrategie zu starten und schnell die benötigten Metadateneigenschaften auszuwählen.
+Sie können auch eigene Metadaten-Schemata entwerfen, wenn keine vorhanden ist, die Ihren Anforderungen entsprechen. Vorhandene Informationen nicht Duplikat. Das Trennen von Schemata innerhalb eines Unternehmens erleichtert die Freigabe von Metadaten. [!DNL Experience Manager] stellt eine standardmäßige Liste der beliebtesten Metadaten-Schemata bereit. Die Liste hilft Ihnen, Ihre Metadatenstrategie zu starten und schnell die benötigten Metadateneigenschaften auszuwählen.
 
 Die unterstützten Metadaten-Schemata sind unten aufgeführt.
 
@@ -123,26 +123,26 @@ Die unterstützten Metadaten-Schemata sind unten aufgeführt.
 
 ### Application-specific metadata {#application-specific-metadata}
 
-Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Anwendungen verwendet werden. Wenn Sie z. B. ein Asset mit Adobe Fotoshop-Metadaten haben und eine andere Anwendung zum Rendern von Bildern versucht, auf die Metadaten zuzugreifen, ist es möglicherweise nicht möglich, auf die Metadaten zuzugreifen. Wenn Sie feststellen, dass Ihre Assets viele anwendungsspezifische Metadaten enthalten, können Sie einen Workflow-Schritt erstellen, der eine anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
+Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Anwendungen verwendet werden. For example, if you have an asset with [!DNL Adobe Photoshop] metadata and another image-rendering application tries to access the metadata, it may not be able to access the metadata. Wenn Sie feststellen, dass Ihre Assets viele anwendungsspezifische Metadaten enthalten, können Sie einen Workflow-Schritt erstellen, der eine anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
 
-* acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/).
+* acdsee: vom ACDSee-Programm verwaltete Metadaten [www.acdsee.com/](https://www.acdsee.com/).
 * album: Adobe Photoshop-Album.
-* cq - wird von Experience Manager Assets verwendet.
-* dam - wird von Experience Manager Assets verwendet.
+* cq - used by [!DNL Experience Manager Assets].
+* dam - used by [!DNL Experience Manager Assets].
 * dex: Optima SC Description Explorer.
 * crs: Adobe Photoshop Camera Raw.
 * lr: Adobe Lightroom.
 * mediapro: IView MediaPro.
 * MicrosoftPhoto und MP: Microsoft Photo.
-* pdf und pdfx
-* photoshop und psAux: Adobe Photoshop
+* pdf und pdfx.
+* photoshop und psAux: Adobe Photoshop.
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * cc: Creative Commons
 * xmpRights
-* plus - Picture Licensing Universal System - https://www.useplus.com/
-* Prism - https://www.idealliance.org/prism-metadata für Veröffentlichungsanforderungen für Standard-Metadaten
+* plus: Picture Licensing Universal System – https://www.useplus.com/
+* prism: Publishing Requirements for Industry Standard Metadata – https://www.idealliance.org/prism-metadata 
 * prl: Prism Rights Language
 * pur: Prism Usage Rights
 * xmpPlus: Integration von PLUS in XMP
@@ -156,17 +156,17 @@ Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Meta
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf und pdfx - Adobe PDF- und Drittanbieteranwendungen
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata
+* pdf und pdfx: Adobe PDF und Drittanbieteranwendungen
+* prism: [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata
 * XMP
 * xmpPG: XMP für paginierten Text
 
-### Multimedia-specific metadata {#multimedia-specific-metadata}
+### Multimedia-spezifische Metadaten {#multimedia-specific-metadata}
 
 * xmpDM: Dynamic Media
 * xmpMM: Medien-Management
 
-## Metadata-driven workflows {#metadata-driven-workflows}
+## Metadatengesteuerte Workflows {#metadata-driven-workflows}
 
 Das Erstellen von durch Metadaten angetriebenen Workflows hilft Ihnen, einige Prozesse zu automatisieren, was die Effizienz verbessert. In einem metadatengesteuerten Workflow liest das Workflow-Managementsystem den Workflow und führt anschließend einige vordefinierte Aktionen aus. Im Folgenden finden Sie einige Beispiele für den Einsatz metadatengesteuerter Workflows:
 
