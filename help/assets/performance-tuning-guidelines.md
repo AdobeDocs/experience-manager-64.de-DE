@@ -3,28 +3,28 @@ title: Handbuch zur Leistungsoptimierung von Assets
 description: Wichtige Bereiche der AEM-Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Performance von AEM Assets zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
 
 # Assets performance tuning guide {#assets-performance-tuning-guide}
 
-Ein Adobe Experience Manager (AEM) Assets-Setup enthält eine Reihe von Hardware-, Software- und Netzwerkkomponenten. Je nach Ihrem Bereitstellungsszenario benötigen Sie möglicherweise bestimmte Konfigurationsänderungen an den Hardware-, Software- und Netzwerkkomponenten, um Leistungsengpässe zu vermeiden.
+Das Setup von Adobe Experience Manager (AEM) Assets umfasst eine Reihe von Hardware-, Software- und Netzwerkkomponenten. Je nach Ihrem Bereitstellungsszenario benötigen Sie möglicherweise bestimmte Konfigurationsänderungen an den Hardware-, Software- und Netzwerkkomponenten, um Leistungsengpässe zu vermeiden.
 
 Wenn Sie sich darüber hinaus an bestimmte Richtlinien zur Optimierung der Hardware und Software halten, schaffen Sie eine solide Grundlage für Ihre AEM Assets-Bereitstellung, mit der Sie alle Anforderungen an Leistung, Skalierbarkeit und Zuverlässigkeit erfüllen.
 
 Eine schwache Leistung von AEM Assets kann sich auf die Benutzerfreundlichkeit auswirken und die interaktive Leistung, Asset-Verarbeitung und Download-Geschwindigkeit und andere Bereiche beeinträchtigen.
 
-Die Leistungsoptimierung ist eine grundlegende Aufgabe, die Sie durchführen, bevor Sie für ein Projekt Zielgruppen-Metriken einrichten.
+Daher gehört die Leistungsoptimierung zu den grundlegenden Aufgaben, bevor Sie Zielmetriken für Ihre Projekte erstellen.
 
-In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass Leistungsprobleme erkannt und behoben werden, bevor sie sich auf die Benutzererfahrung auswirken.
+In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass Leistungsprobleme erkannt und behoben werden, bevor sie sich auf das Benutzererlebnis auswirken.
 
 ## Plattform {#platform}
 
-Obwohl AEM auf einer Reihe von Plattformen unterstützt wird, hat Adobe die größte Unterstützung für native Werkzeuge unter Linux und Windows gefunden, was zu einer optimalen Leistung und einfachen Implementierung beiträgt. Ein 64-Bit-Betriebssystem ist ideal für die hohen Speicheranforderungen einer AEM Asset-Bereitstellung. Wie bei jeder AEM-Bereitstellung sollten Sie nach Möglichkeit TarMK implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. Sie können TarMK-Offload-Instanzen hinzufügen, um die Leistung der Workflow-Verarbeitung Ihrer AEM Assets-Bereitstellung zu erhöhen.
+AEM wird auf einer Reihe von Plattformen unterstützt. Adobe zufolge werden die nativen Tools jedoch unter Linux und Windows besonders gut unterstützt und können dort zur optimalen Leistung und Vereinfachung der Implementierung beitragen. Ein 64-Bit-Betriebssystem ist ideal für die hohen Speicheranforderungen einer AEM Asset-Bereitstellung. Wie bei jeder AEM-Bereitstellung sollten Sie nach Möglichkeit TarMK implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. Sie können TarMK-Offload-Instanzen hinzufügen, um die Leistung der Workflow-Verarbeitung Ihrer AEM Assets-Bereitstellung zu erhöhen.
 
-### Temporärer Ordner {#temp-folder}
+### Temporärer Ordner   {#temp-folder}
 
 Nutzen Sie einen Hochleistungsspeicher für das temporäre Java-Verzeichnis, um das Hochladen der Assets zu beschleunigen. Unter Linux und Windows können Sie beispielsweise ein RAM- oder SSD-Laufwerk verwenden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
 
@@ -39,7 +39,7 @@ mkfs -q /dev/ram1 800000
 
 Unter Windows müssen Sie den Treiber eines Drittanbieters nutzen, um ein RAM-Laufwerk zu erstellen, oder einen Hochleistungsspeicher wie SSD verwenden.
 
-Sobald das temporäre Hochleistungs-Volume bereit ist, stellen Sie den JVM-Parameter Djava.io.tmpdir ein. Sie können beispielsweise den JVM-Parameter unter der Variablen CQ_JVM_OPTS im Skript bin/start von AEM einfügen:
+Sobald das temporäre Hochleistungs-Volume bereit ist, stellen Sie den JVM-Parameter Djava.io.tmpdir ein. Sie können beispielsweise den JVM-Parameter unter der Variablen „CQ_JVM_OPTS“ im Skript „bin/start“ von AEM einfügen:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -47,9 +47,9 @@ Sobald das temporäre Hochleistungs-Volume bereit ist, stellen Sie den JVM-Param
 
 ### Java-Version {#java-version}
 
-Da Oracle ab April 2015 die Veröffentlichung von Updates für Java 7 eingestellt hat, empfiehlt Adobe die Bereitstellung von AEM Assets unter Java 8. Damit wurde in einigen Fällen eine bessere Leistung erzielt.
+Da Oracle seit April 2015 keine Updates für Java 7 mehr herausgibt, empfiehlt Adobe die Bereitstellung von AEM Assets auf Java 8. Damit wurde in einigen Fällen eine bessere Leistung erzielt.
 
-### JVM-Parameter {#jvm-parameters}
+### JVM-Parameter   {#jvm-parameters}
 
 Legen Sie die folgenden JVM-Parameter fest:
 
@@ -63,23 +63,23 @@ Legen Sie die folgenden JVM-Parameter fest:
 
 ### Dateidatenspeicherkonfiguration {#file-data-store-configuration}
 
-Allen Benutzern von AEM Assets wird angeraten, Datenspeicher und Segmentspeicher zu trennen. Außerdem kann die Leistung durch die Konfiguration der Parameter `maxCachedBinarySize` und `cacheSizeInMB` maximiert werden. Set `maxCachedBinarySize` to the smallest file size that can be held in the cache. Specify the size of the in-memory cache to use for the datastore within `cacheSizeInMB`. Adobe empfiehlt, diesen Wert auf 2–10 Prozent der gesamten Heap-Größe einzustellen. Mithilfe von Last-/Leistungstests lässt sich die ideale Einstellung herausfinden.
+Allen Benutzern von AEM Assets wird angeraten, Datenspeicher und Segmentspeicher zu trennen. Außerdem kann die Leistung durch die Konfiguration der Parameter `maxCachedBinarySize` und `cacheSizeInMB` maximiert werden. Stellen Sie `maxCachedBinarySize` auf die kleinste im Cache unterstützte Dateigröße ein. Geben Sie die Größe des Arbeitsspeicher-Cache für den Datenspeicher in `cacheSizeInMB` ein. Adobe empfiehlt, diesen Wert auf 2–10 Prozent der gesamten Heap-Größe einzustellen. Mithilfe von Last-/Leistungstests lässt sich die ideale Einstellung herausfinden.
 
-### Konfigurieren der Maximalgröße des gepufferten Bildercaches {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches   {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Wenn Sie große Mengen von Assets in Adobe Experience Manager hochladen, verringern Sie die konfigurierte maximale Größe des gepufferten Bild-Cache, um unerwartete Spitzen im Arbeitsspeicherverbrauch zu ermöglichen und um zu verhindern, dass JVM mit OutOfMemoryErrors fehlschlägt. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
+Verringern Sie beim Hochladen großer Mengen an Assets in Adobe Experience Manager zur Berücksichtigung unerwarteter Spitzen bei der Speichernutzung und zur Verhinderung von JVM-Fehlern mit OutOfMemoryErrors die konfigurierte Maximalgröße des gepufferten Bilder-Caches. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
-Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Webkonsole. Legen Sie `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
+Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Webkonsole. Legen Sie bei `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Wenn Sie über AEM 6.1 SP1 einen `sling:osgiConfig`-Knoten zur Konfiguration dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie diesen Datentyp auf „Long“ einstellen. Weitere Details finden Sie unter [CQBufferedImageCache belegt beim Asset-Upload den Heap](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+Wenn Sie über AEM 6.1 SP1 einen `sling:osgiConfig`-Knoten zur Konfiguration dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie diesen Datentyp auf „Long“ einstellen. Weitere Details finden Sie unter [CQBufferedImageCache belegt beim Asset-Upload den Heap](https://helpx.adobe.com/de/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Gemeinsame Datenspeicher {#shared-data-stores}
+### Gemeinsame Datenspeicher   {#shared-data-stores}
 
-Mit der Implementierung eines S3 oder Shared File Datastore sparen Sie Speicherplatz auf der Festplatte und erhöhen den Netzwerkdurchsatz in großen Implementierungen. For more information on the pros and cons of using a shared datastore, see [Assets Sizing Guide](assets-sizing-guide.md).
+Mit der Implementierung eines S3-Datenspeichers oder Shared File Datastore sparen Sie Speicherplatz auf der Festplatte und erhöhen den Netzwerkdurchsatz in großen Implementierungen. For more information on the pros and cons of using a shared datastore, see [Assets Sizing Guide](assets-sizing-guide.md).
 
 ### S3-Datenspeicher {#s-data-store}
 
-Mit der folgenden Konfiguration des S-Datenspeichers (`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`3) konnte Adobe binäre große Objekte (BLOBs) mit einer Größe von 12,8 TB von einem vorhandenen Dateidatenspeicher in einen S3-Datenspeicher am Standort eines Kunden extrahieren:
+Mit der folgenden Konfiguration des S3-Datenspeichers (`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) konnte Adobe binäre große Objekte (BLOBs) mit einer Größe von 12,8 TB von einem vorhandenen Dateidatenspeicher in einen S3-Datenspeicher am Standort eines Kunden extrahieren:
 
 ```
 accessKey=<snip>
@@ -104,7 +104,7 @@ accessKey=<snip>
 
 ## Netzwerkoptimierung {#network-optimization}
 
-Adobe empfiehlt die Aktivierung von HTTPS, da viele Unternehmen über Firewalls verfügen, die den HTTP-Verkehr überprüfen und sich dadurch negativ auf Uploads auswirken und Dateien beschädigen. Stellen Sie bei großen Datei-Uploads sicher, dass Benutzer über eine Kabelverbindung zum Netzwerk verfügen, da ein WiFi-Netzwerk schnell gesättigt wird. For guidelines on identifying network bottlenecks, see [Assets Sizing Guide](assets-sizing-guide.md). To assess network performance by analyzing network topology, see [Assets Network Considerations](assets-network-considerations.md).
+Adobe empfiehlt die Aktivierung von HTTPS, da viele Unternehmen über Firewalls verfügen, die den HTTP-Verkehr überprüfen und sich dadurch negativ auf Uploads auswirken und Dateien beschädigen. Stellen Sie bei großen Datei-Uploads sicher, dass Benutzer über Kabelverbindungen zum Netzwerk verfügen, da ein WLAN-Netzwerk schnell überfordert ist. For guidelines on identifying network bottlenecks, see [Assets Sizing Guide](assets-sizing-guide.md). Informationen zur Beurteilung der Netzwerkleistung mit einer Analyse der Netzwerktopologie finden Sie unter [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md).
 
 Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie von der verfügbaren Bandbreite und der Last auf Ihrer AEM-Instanz ab. Allgemeine Konfigurationsoptionen, einschließlich Firewalls oder Proxys, können zur Verbesserung der Netzwerkleistung beitragen. Die folgenden Aspekte sollten berücksichtigt werden:
 
@@ -142,9 +142,9 @@ Stellen Sie den Workflow „DAM-Update-Asset“ nach Möglichkeit auf „Überga
 
    Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie sicherstellen, dass die Bereinigungsaufträge abgeschlossen sind. So vermeiden Sie, dass Bereinigungs-Workflows aufgrund der hohen Zahl an Workflows nicht abgeschlossen werden können.
 
-   For example, after running numerous non-transient workflows (that creates workflow instance nodes), you can run [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite Workflow Purge Scheduler warten müssen.
+   Wenn Sie zahlreiche Nicht-Verlaufs-Workflows ausgeführt haben, die Workflow-Instanzknoten erstellen, können Sie das Tool [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) auf Ad-hoc-Basis ausführen. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
 
-### Maximal parallel ausführbare Aufträge {#maximum-parallel-jobs}
+### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
 
 Standardmäßig kann AEM maximal so viele Aufträge parallel ausführen wie Prozessoren auf dem Server vorhanden sind. In Zeiten hoher Auslastung ist diese Einstellung jedoch problematisch, da alle Prozessoren von den DAM-Update-Asset-Workflows beansprucht werden und dadurch die Reaktionsfähigkeit der Benutzeroberfläche verlangsamt wird und AEM andere Prozesse zum Schutz von Serverleistung und -stabilität nicht ausführen kann. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
@@ -209,11 +209,9 @@ Stellen Sie darüber hinaus in der Datei *configure.xml* (alternativ in der Umge
 
 >[!NOTE]
 >
->Die Dateien ImageMagick policy.xml und configure.xml befinden sich unter /usr/lib64/ImageMagick-&amp;ast;/config/ anstelle von /etc/ImageMagick/. Weitere Informationen zu den Speicherorten der Konfigurationsdatei finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php).
+>The ImageMagick `policy.xml` and `configure.xml` files may be found under `/usr/lib64/ImageMagick-*/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
 
->[!NOTE]
->
->Wenn Sie AEM in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten.
+Wenn Sie AEM unter Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe-Kundendienst, wenn Sie planen, viele große PSD- oder PSB-Dateien zu verarbeiten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
 
 <!-- 
 
@@ -279,7 +277,7 @@ XMP-Writeback aktualisiert das Original-Asset, sobald Metadaten in AEM geändert
 * Eine Version des Assets wird erstellt.
 * DAM-Update-Asset wird für das Asset ausgeführt.
 
-Die aufgeführten Ergebnisse beanspruchen umfangreiche Ressourcen. Daher empfiehlt Adobe, [XMP-Writeback zu deaktivieren](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), wenn es nicht benötigt wird.
+Die aufgeführten Ergebnisse beanspruchen umfangreiche Ressourcen. Daher empfiehlt Adobe, [XMP-Writeback zu deaktivieren](https://helpx.adobe.com/de/experience-manager/kb/disable-xmp-writeback.html), wenn es nicht benötigt wird.
 
 Wenn Sie eine große Menge an Metadaten importieren, kann es zu ressourcenintensiven XMP-Writeback-Aktivitäten kommen, falls das Flag für laufende Workflows gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Servernutzung, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
 
@@ -287,9 +285,9 @@ Wenn Sie eine große Menge an Metadaten importieren, kann es zu ressourcenintens
 
 Wenn Sie Assets in einer große Menge an veröffentlichten Instanzen replizieren (beispielsweise in einer Sites-Implementierung), empfiehlt Adobe die Kettenreplikation. In diesem Fall wird die Autorinstanz in eine einzelne Veröffentlichungsinstanz repliziert, die wiederum in die anderen Veröffentlichungsinstanzen repliziert wird und so die Autorinstanz freihält.
 
-### Konfiguration der Kettenreplikation {#configure-chain-replication}
+### Konfiguration der Kettenreplikation   {#configure-chain-replication}
 
-1. Wählen Sie aus, welche Instanz im Veröffentlichungsmodus Sie zum Verketten der zu
+1. Wählen Sie die Veröffentlichungsinstanz, mit der Sie die Replikationen verketten möchten.
 1. Fügen Sie dieser Veröffentlichungsinstanz Agenten hinzu, die auf die anderen Veröffentlichungsinstanzen verweisen.
 1. On each of those replication agents, enable **[!UICONTROL On Receive]** on the **[!UICONTROL Triggers]** tab
 
@@ -297,9 +295,9 @@ Wenn Sie Assets in einer große Menge an veröffentlichten Instanzen replizieren
 >
 >Adobe rät von der automatischen Aktivierung von Assets ab. Falls jedoch notwendig, sollte dies der letzte Schritt in einem Workflow, normalerweise „DAM-Update-Asset“, sein.
 
-## Durchsuchen von Indizes {#search-indexes}
+## Durchsuchen von Indizes   {#search-indexes}
 
-Vergewissern Sie sich, dass Sie die neuesten Service Packs und leistungsabhängigen Hotfixes implementiert haben, da sie häufig Aktualisierungen der Systemindizes enthalten. See [Performance tuning tips | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations that can be applied, depending on your version of AEM.
+Vergewissern Sie sich, dass Sie die neuesten Service Packs und leistungsrelevanten Hotfixes implementiert haben, da sie häufig Aktualisierungen der Systemindizes enthalten. Informationen zu je nach der AEM-Version anwendbaren Indexoptimierungen finden Sie unter [Tipps zur Leistungsoptimierung | 6.x](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 Erstellen Sie eigene Indizes für Abfragen, die Sie häufig ausführen. Weitere Informationen finden Sie unter [Methoden zur Analyse von langsamen Abfragen](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) und [Erstellen benutzerdefinierter Indizes](/help/sites-deploying/queries-and-indexing.md). Weitere Einblicke in Best Practices bezüglich Abfragen und Indizes finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -317,13 +315,13 @@ Indexkonfigurationen aktualisieren, um die Zeit für Neuindizierungen zu verbess
 1. Öffnen Sie CRXDe /crx/de/index.jsp und melden Sie sich als Benutzer mit Administratorrechten an.
 1. Navigieren Sie zu /oak:index/lucene
 1. Add a String[] property named **[!UICONTROL excludedPaths]** with values &quot;/var&quot;, &quot;/etc/workflow/instances&quot;, and &quot;/etc/replication&quot;
-1. Navigieren Sie zu /oak:index/damAssetLucene.
+1. Navigieren Sie zu „/oak:index/damAssetLucene“.
 1. Add a String[] property named **[!UICONTROL includedPaths]** with one value &quot;/content/dam&quot;
 1. Speichern
 
-(Nur AEM 6.1 und 6.2) Aktualisieren Sie den Index ntBaseLucene, um die Leistung des Assets beim Löschen und Verschieben zu verbessern:
+(Nur AEM 6.1 und 6.2) Aktualisieren Sie den Index „ntBaseLucene“, um die Leistung des Assets beim Löschen und Verschieben zu verbessern:
 
-1. Browse to */oak:index/ntBaseLucene/indexRules/nt:base/properties*
+1. Navigieren Sie zu */oak:index/ntBaseLucene/indexRules/nt:base/properties*.
 1. Add two nt:unstructured nodes **[!UICONTROL slingResource]** and **[!UICONTROL damResolvedPath]** under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
 1. Legen Sie die folgenden Eigenschaften auf den Knoten fest (wobei die Eigenschaften &quot;ordered&quot;und &quot;propertyIndex&quot;vom Typ &quot; *Boolean*&quot;sind):
 
@@ -347,7 +345,7 @@ Indexkonfigurationen aktualisieren, um die Zeit für Neuindizierungen zu verbess
 
    type=&quot;String&quot;
 
-1. On the /oak:index/ntBaseLucene node, set the property `reindex=true`
+1. Legen Sie für den Knoten „/oak:index/ntBaseLucene“ die Eigenschaft `reindex=true` fest.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Überwachen Sie die Datei &quot;error.log&quot;, um zu sehen, wenn die Indexierung abgeschlossen ist:
 
@@ -378,7 +376,7 @@ Verwenden Sie beim Erstellen von Abfragen mit großen Ergebnismengen den Paramet
 
 ### Große Dateien {#large-files}
 
-Es gibt zwei wichtige bekannte Probleme im Zusammenhang mit großen Dateien in AEM. Bei Dateien, die größer als 2 GB sind, kann eine kalte Standby-Synchronisierung zu einem Speicherengpass führen. In einigen Fällen wird die Ausführung der Standby-Synchronisierung verhindert. In anderen Fällen stürzt die primäre Instanz ab. Dieses Szenario gilt für alle Dateien in AEM, die größer als 2 GB sind, darunter auch Inhaltspakete.
+Zwei bekannte Probleme beziehen sich auf große Dateien in AEM. Bei Dateien, die größer als 2 GB sind, kann eine kalte Standby-Synchronisierung zu einem Speicherengpass führen. In einigen Fällen wird die Ausführung der Standby-Synchronisierung verhindert. In anderen Fällen stürzt die primäre Instanz ab. Dieses Szenario gilt für alle Dateien in AEM, die größer als 2 GB sind, darunter auch Inhaltspakete.
 
 Entsprechend kann es bei Dateien, die in einem gemeinsamen S3-Datenspeicher eine Größe von 2 GB erreichen, einige Zeit dauern, bis die Datei vollständig aus dem Cache in das Dateisystem gespeichert werden kann. Wenn Sie die Binaryless-Replikation verwenden, kann es passieren, dass die binären Daten vor dem Abschluss der Replikation nicht dauerhaft gespeichert werden. Diese Situation kann besonders dann zu Problemen führen, wenn die Verfügbarkeit der Daten wichtig ist, etwa in Abladungsszenarios.
 
@@ -386,7 +384,7 @@ Entsprechend kann es bei Dateien, die in einem gemeinsamen S3-Datenspeicher eine
 
 Erstellen Sie für jede AEM-Bereitstellung ein Regime für Leistungstests, die Engpässe schnell identifizieren und beseitigen können. Konzentrieren Sie sich dabei auf die folgenden Schlüsselaspekte.
 
-### Netzwerktests {#network-testing}
+### Netzwerktests   {#network-testing}
 
 Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung betreffen, die folgenden Aufgaben aus:
 
@@ -396,14 +394,14 @@ Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung be
 * Testen Sie unter Verwendung eines Benchmark-Tools für Netzwerke.
 * Testen Sie mit dem Dispatcher.
 
-### AEM-Instanztests {#aem-instance-testing}
+### AEM-Instanztests   {#aem-instance-testing}
 
 Überwachen Sie die Leistung Ihrer AEM-Instanz regelmäßig, um die Latenz zu reduzieren und mithilfe von effizienter CPU-Auslastung und Loadsharing einen hohen Durchsatz zu erzielen. Führen Sie insbesondere die folgenden Aufgaben aus:
 
 * Führen Sie Lasttests für die AEM-Instanz aus.
 * Überwachen Sie die Upload-Leistung und die Reaktionsfähigkeit der Benutzeroberfläche.
 
-## AEM Assets-Leistungscheckliste  {#aem-assets-performance-checklist}
+## AEM Assets-Leistungs-Checkliste     {#aem-assets-performance-checklist}
 
 * Aktivieren Sie HTTPS, um alle Unternehmens-HTTP-Traffic-Sniffer zu umgehen.
 * Verwenden Sie eine Kabelverbindung, um umfangreiche Assets hochzuladen.
