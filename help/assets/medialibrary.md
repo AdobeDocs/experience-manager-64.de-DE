@@ -3,7 +3,7 @@ title: Vergleichen Sie die in AEM Assets und AEM Media Library verfügbaren Funk
 description: Häufig gestellte Fragen zu AEM Assets und AEM Media Library, einschließlich der Unterschiede.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 
@@ -51,7 +51,7 @@ Die Bildkomponente ist Teil von AEM WCM. Die Grafikbibliothek, die von der Bildk
 
 ### Wie kann ich verhindern, dass meine Benutzer AEM Assets nutzen, wenn ich über keine AEM Assets-Lizenz verfüge? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Sie können alle AEM Assets-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den AEM Assets-Admin aus AEM entfernen. Hierdurch verhindern Sie, dass Benutzer nicht von Ihnen lizenzierte AEM Assets-Funktionen versehentlich nutzen.
+Sie können alle AEM Assets-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den AEM Assets-Admin aus AEM entfernen. Dadurch wird verhindert, dass Ihre Benutzer versehentlich AEM Assets-Funktionen verwenden, für die Sie keine Lizenz erteilt haben.
 
 ### Ich möchte einer Seite Bilder hinzufügen und diese Bilder zuschneiden sowie deren Größe ändern. Benötige ich AEM Assets?  {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
