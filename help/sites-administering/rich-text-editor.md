@@ -3,7 +3,7 @@ title: Konfigurieren des Rich-Text-Editors
 description: Erfahren Sie, wie Sie den AEM Rich-Text-Editor konfigurieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ---
 
@@ -161,6 +161,15 @@ Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeld-Bearbeitung
 * `rte-start`: Lösen Sie dieses Ereignis bei `contenteditable-div` des RTE aus, wenn die RTE-Bearbeitung gestartet werden soll. Dies funktioniert nur, wenn `customStart` auf „true“ gesetzt ist.
 
 Wenn der RTE im Touch-optimierten Dialogfeld verwendet wird, muss die Eigenschaft `useFixedInlineToolbar` auf „true“ gesetzt werden, um Probleme zu vermeiden.
+
+## Anpassen der ersetzenden Bearbeitung {#customizing-in-place-editing}
+
+Sie können festlegen, für welchen HTML-Selektor die Beginn des Texteditors definiert werden, indem Sie die folgenden Eigenschaften konfigurieren:
+
+* **`editElementQuery`** - Definiert auf `cq:InplaceEditingConfig`, wird diese Eigenschaft verwendet, um einen Selektor des HTML-Elements anzugeben, auf dem die Inline-Bearbeitung für die Textkomponente gestartet wird. Wenn nicht angegeben, wird die Inline-Bearbeitung direkt im HTML der Textkomponente gestartet.
+* **`textPropertyName`** - Definiert auf `cq:InplaceEditingConfig`, wird diese Eigenschaft verwendet, um den Namen der Eigenschaft anzugeben, die auf dem Knoten &quot;content&quot;gespeichert wird, auf dem der HTML-Wert der Textkomponente nach der Inline-Bearbeitung beibehalten wird.
+
+Die entsprechende Eigenschaft für den Dialogmodus ist `name`.
 
 ## Aktivieren von RTE-Funktionen durch Aktivieren von Plug-ins {#enable-rte-functionalities-by-activating-plug-ins}
 
