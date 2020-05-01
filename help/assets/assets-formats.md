@@ -3,7 +3,7 @@ title: In AEM Assets unterstützte Dateiformate
 description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
 
 ---
 
@@ -73,6 +73,17 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 * Um mithilfe von Dynamic Media dynamische Ausgaben für EPS-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
+
+## Nicht unterstützte Rasterbildformate in dynamischen Medien (#unsupported-image-formats-dynamic-media)
+
+In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
+
+* PNG-Dateien mit einer IDAT-Größe größer als 100 MB.
+* PSB-Dateien.
+* PSD-Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt. DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt.
+* PSD-Dateien mit einer Bittiefe größer als 16.
+* TIFF-Dateien mit Gleitkommadaten.
+* TIFF-Dateien mit Lab-Farbraum.
 
 ## PDF Rasterizer library {#supported-pdf-rasterizer-library}
 
