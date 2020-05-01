@@ -3,7 +3,7 @@ title: Best Practices für Dateiformate in Assets
 description: Best Practices für die Dateiunterstützung in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
@@ -43,7 +43,7 @@ Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausg
 
 Dynamic Media generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. Weitere Informationen zur Aktivierung von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](config-dynamic.md).
 
-Derzeit unterstützt Dynamic Media Videos mit bis zu 20 GB Inhalt pro Datei.
+Derzeit unterstützt Dynamic Media Videos mit bis zu 15 GB Inhalt pro Datei.
 
 ## ImageMagick-Bibliothek {#imagemagick-library}
 
