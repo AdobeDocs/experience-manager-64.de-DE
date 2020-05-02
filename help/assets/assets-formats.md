@@ -3,7 +3,7 @@ title: In AEM Assets unterstützte Dateiformate
 description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
+source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
 
 ---
 
@@ -74,7 +74,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
-## Nicht unterstützte Rasterbildformate in dynamischen Medien (#unsupported-image-formats-dynamic-media)
+## Nicht unterstützte Rasterbildformate in dynamischen Medien {#unsupported-image-formats-dynamic-media}
 
 In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
 
