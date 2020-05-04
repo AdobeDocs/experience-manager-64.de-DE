@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -44,7 +44,7 @@ Die exemplarische Vorgehensweise basiert auf der standardmäßigen AEM-Funktiona
 >
 >Dieses Dokument verwendet die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
 >
->Alle SPA-Projekte auf AEM sollten auf dem [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype)basieren.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ### Was ist ein BSG? {#what-is-a-spa}
 
