@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 ---
 
@@ -35,15 +35,8 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* Der Modus ist nur in der Touch-optimierten Oberfläche (beim Bearbeiten von Seiten) verfügbar.
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
-   >
-   >  
-* Dies gilt bei einer Breite von weniger als 1024 Pixel.
-   >
-   >
-* Für den Modus sind die entsprechenden Berechtigungen erforderlich:
-   >
-   >  
-* Access to Developer Mode is given to users who have write access on `/apps`.
+   >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+>* Steht nur Benutzern zur Verfügung, die Mitglieder der `administrators` Gruppe sind.
 
 
 >[!CAUTION]
