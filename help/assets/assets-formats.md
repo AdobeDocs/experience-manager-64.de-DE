@@ -3,7 +3,10 @@ title: In AEM Assets unterstützte Dateiformate
 description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
+source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 69%
 
 ---
 
@@ -26,7 +29,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Interaktive Bearbeitung | Metadaten-Writeback | Einblicke |
+| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Interaktive Bearbeitung | Metadaten-Writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -78,6 +81,8 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
 
+Siehe auch [Erkennung nicht unterstützter Dateiformate für dynamische Medien](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+
 * PNG-Dateien mit einer IDAT-Größe größer als 100 MB.
 * PSB-Dateien.
 * PSD-Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt. DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt.
@@ -109,7 +114,7 @@ Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbi
 
 ## Dokumentenformate {#supported-document-formats}
 
-Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
+Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
 | Format | Speicher | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | Subasset<br> extraction | Metadata<br> writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
