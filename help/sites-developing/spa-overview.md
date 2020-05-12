@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '1698'
+ht-degree: 55%
 
 ---
 
@@ -199,6 +202,10 @@ Frühere Versionen dieser Frameworks funktionieren möglicherweise mit dem AEM S
 ### Zusätzliche Frameworks {#additional-frameworks}
 
 Zusätzliche SPA-Frameworks können implementiert werden, um mit dem AEM SPA Editor SDK zu arbeiten. Im Dokument [SPA Blueprint](/help/sites-developing/spa-blueprint.md) finden Sie die Anforderungen, die ein Framework erfüllen muss, um eine Framework-spezifische Ebene zu erstellen, die aus Modulen, Komponenten und Diensten besteht, die mit dem AEM SPA Editor verwendet werden können.
+
+### Mehrere Selektoren verwenden {#multiple-selectors}
+
+Zusätzliche benutzerdefinierte Selektoren können als Teil einer SPA definiert und verwendet werden, die für das AEM SPA SDK entwickelt wurde. Diese Unterstützung erfordert jedoch, dass der `model` Selektor der erste Selektor ist und die Erweiterung `.json` den [Anforderungen des JSON-Exporteurs entspricht.](json-exporter-components.md#multiple-selectors)
 
 ### Texteditoranforderungen {#text-editor-requirements}
 
