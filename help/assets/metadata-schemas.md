@@ -3,9 +3,9 @@ title: Metadatenschemata
 description: 'Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
+source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2528'
 ht-degree: 79%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 79%
 
 # Metadatenschemata   {#metadata-schemas}
 
-In [!DNL Experience Manager Assets], a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw.
+In [!DNL Experience Manager Assets], a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw. Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ändern oder benutzerdefinierte Metadatenschemata hinzufügen.
 
-Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ändern oder benutzerdefinierte Metadatenschemata hinzufügen. Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
+Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
 
 1. Klicken Sie auf oder tippen Sie auf die **[!UICONTROL Ansichten-Eigenschaften]** aus Schnellaktionen auf der Asset-Kachel in der Ansicht Karte.
 
@@ -25,7 +25,7 @@ Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ä
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Sie können die Eigenschaften der bearbeitbaren Metadaten unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
+1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
