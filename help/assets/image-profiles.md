@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media-Bildprofile
-seo-title: Dynamic Media-Bildprofile
+title: Profile für dynamische Medienbilder
+seo-title: Profile für dynamische Medienbilder
 description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 seo-description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -10,27 +10,34 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 37fb5430c64e0d5b6b82ec57c47e3c004b6e7f4f
+source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+workflow-type: tm+mt
+source-wordcount: '2626'
+ht-degree: 93%
 
 ---
 
 
 # Dynamic Media image profiles {#image-profiles}
 
-Beim Hochladen von Bildern können Sie das Bild beim Hochladen automatisch beschneiden, indem Sie ein Bildprofil auf den Ordner anwenden.
+Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch zuschneiden, indem Sie ein neues Bildprofil auf den Ordner anwenden.
 
 >[!NOTE]
 >
 >Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
-## Crop options {#crop-options}
+## Optionen für das Zuschneiden {#crop-options}
 
 Für das Zuschneiden von Bildern stehen Ihnen zwei Optionen und für die Automatisierung der Erstellung von Farb- und Bildmustern eine Option zur Verfügung.
+
+>[!IMPORTANT]
+>
+>Achten Sie darauf, dass jede von Ihnen erstellte intelligente Zuschneidegeneration zusätzliche Verarbeitungsschritte erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für intelligente Zuschneiden kann beispielsweise zu einer langsamen Erfassungsrate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie Smart-Zuschnitte auf Ordnerebene anwenden können, empfiehlt Adobe, diese auf Ordner *nur* dort zu verwenden, wo sie benötigt werden.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Wahl</strong></td> 
+   <td><strong>Option</strong></td> 
    <td><strong>Wann ist sie einzusetzen?</strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
@@ -54,7 +61,7 @@ Für das Zuschneiden von Bildern stehen Ihnen zwei Optionen und für die Automat
   <tr> 
    <td>Farb- und Bildmuster</td> 
    <td>Massenweise Erstellung von Bildmustern für die einzelnen Bilder.</td> 
-   <td><p><strong>Hinweis:</strong> Smarte Muster werden in Dynamic Media Classic nicht unterstützt.</p> <p>Erkennen und generieren Sie automatisch hochwertige Bildmuster aus Produktbildern, die Farbe oder Material zeigen.</p> <p>Um Farb- und Bildmuster zu verwenden, wählen Sie aus der Dropdownliste „Zuschnittsoptionen“ <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie die Funktion „Farb- und Bildmuster“. Geben Sie in den Feldern „Breite“ und „Höhe“ einen Pixelwert an.</p> <p>Zwar sind alle Bildzuschnitte über die Leiste „Ausgabeformate“ verfügbar, jedoch können Farb- und Bildmuster nur über die Funktion „URL kopieren“ verwendet werden. Beachten Sie, dass Sie eine eigene Anzeigekomponente verwenden müssen, um das Farbfeld auf Ihrer Site anzuzeigen. (Hiervon ausgenommen sind Karussellbanner. Dynamic Media bietet die Anzeigekomponente für in entsprechenden Bannern verwendete Farb-/Bildmuster.)</p> <p><strong>Verwendung von Bildmustern</strong></p> <p>Die URL für Bildmuster ist einfach. Sie lautet:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> is appended to the asset request.</p> <p><strong>Verwendung von Farbmustern</strong></p> <p>Um Farbmuster zu verwenden, stellen Sie wie folgt eine <code>req=userdata</code>-Anfrage:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Folgendes ist beispielsweise ein Farbmuster-Asset in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>and here is the swatch asset's corresponding <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>The <code>req=userdata</code> response is as follows:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Hinweis:</strong> Smarte Muster werden in Dynamic Media Classic nicht unterstützt.</p> <p>Erkennen und generieren Sie automatisch hochwertige Bildmuster aus Produktbildern, die Farbe oder Material zeigen.</p> <p>Um Farb- und Bildmuster zu verwenden, wählen Sie aus der Dropdownliste „Zuschnittsoptionen“ <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie die Funktion „Farb- und Bildmuster“. Geben Sie in den Feldern „Breite“ und „Höhe“ einen Pixelwert an.</p> <p>Zwar sind alle Bildzuschnitte über die Leiste „Ausgabeformate“ verfügbar, jedoch können Farb- und Bildmuster nur über die Funktion „URL kopieren“ verwendet werden. Beachten Sie, dass Sie eine eigene Anzeigekomponente verwenden müssen, um das Farbfeld auf Ihrer Site anzuzeigen. (Hiervon ausgenommen sind Karussellbanner. Dynamic Media bietet die Anzeigekomponente für in entsprechenden Bannern verwendete Farb-/Bildmuster.)</p> <p><strong>Verwendung von Bildmustern</strong></p> <p>Die URL für Bildmuster ist einfach. Sie lautet:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>wobei <code>:Swatch</code> an die Asset-Anfrage angehängt wird.</p> <p><strong>Verwendung von Farbmustern</strong></p> <p>Um Farbmuster zu verwenden, stellen Sie wie folgt eine <code>req=userdata</code>-Anfrage:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Folgendes ist beispielsweise ein Farbmuster-Asset in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>Die entsprechende <code>req=userdata</code>-URL für das Farbmuster-Asset lautet:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>Die <code>req=userdata</code>-Antwort sieht wie folgt aus:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -67,14 +74,14 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
 
 >[!NOTE]
 >
->Die Unschärfemaske wird nur auf herunterskalierte Ausgabeformate im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Demgegenüber werden kleinere Ausgabeformate wie Miniaturen geändert (und hierbei wird die Unschärfemaske angezeigt).
+>Die Unschärfemaske wird nur auf herunterskalierte Ausgabeformate im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Demgegenüber werden kleinere Ausgabeformate wie Miniaturansichten geändert (dabei wird die Unschärfemaske angezeigt).
 
 In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Wahl</strong></td> 
+   <td><strong>Option</strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
@@ -83,7 +90,7 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
   </tr> 
   <tr> 
    <td>Radius</td> 
-   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.  Bereich: 0-250.</td> 
+   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.    Bereich: 0-250.</td> 
   </tr> 
   <tr> 
    <td>Schwelle</td> 
@@ -98,30 +105,30 @@ Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/s
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-**So erstellen Sie dynamische Medienbildprofile**:
+**So erstellen Sie Dynamische Medien-Image-Profil**:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Tap **[!UICONTROL Create]** to add a new image profile.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Bildprofil hinzuzufügen.
 1. Geben Sie einen Profilnamen und Werte für Unschärfemasken, Zuschneiden oder Farb-/Bildmuster (oder beides) an.
 
    Es empfiehlt sich, einen Profilnamen auszuwählen, der den Zweck des Profils beschreibt. Wenn Sie beispielsweise ein Profil erstellen, das nur Farb-/Bildmuster generiert – wo also smartes Zuschneiden deaktiviert und „Farb- und Bildmuster“ aktiviert ist –, können Sie das Profil „Smarte Farb-/Bildmuster“ nennen.
 
    Siehe auch Optionen für [Smart-Zuschneiden und Smart-Musterabschnitt](#crop-options) sowie [Unscharf maskieren](#unsharp-mask).
 
-   ![Kultur](assets/crop.png)
+   ![Zuschneiden](assets/crop.png)
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Profil wird in der Liste der verfügbaren Profile angezeigt.
 
-## Bearbeiten oder Löschen von Bildprofilen für dynamische Medien {#editing-or-deleting-image-profiles}
+## Editing or deleting Dynamic Media image profiles {#editing-or-deleting-image-profiles}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten]** aus, um es zu bearbeiten. Wählen Sie **[!UICONTROL Bilderarbeitungsprofil löschen]** aus, um es zu entfernen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. Wenn Sie das Profil bearbeitet haben, speichern Sie die Änderungen. Wenn Sie das Profil löschen, bestätigen Sie, dass Sie es entfernen möchten.
 
-## Anwenden eines dynamischen Medienbildprofils auf Ordner {#applying-an-image-profile-to-folders}
+## Anwenden eines Bildprofils für Dynamic Media auf Ordner {#applying-an-image-profile-to-folders}
 
 Wenn Sie ein Bildprofil einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Bildprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
@@ -133,34 +140,34 @@ Wenn Sie das smarte Zuschneiden einem vorhandenen Bildprofil hinzufügen, müsse
 
 Sie können Bildprofile auf bestimmte Ordner oder global auf alle Assets anwenden.
 
-### Anwenden von Bildprofilen für dynamische Medien auf bestimmte Ordner {#applying-image-profiles-to-specific-folders}
+### Anwenden von Bildprofilen für Dynamic Media auf bestimmte Ordner {#applying-image-profiles-to-specific-folders}
 
-Sie können ein Bildprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Bildprofile auf beide Arten auf Ordner anwenden.
+Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** ein Bildprofil auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Bildprofile auf beide Arten auf Ordner anwenden.
 
-Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
 
-#### Applying Dynamic Media image profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Anwenden von Bildprofilen für Dynamic Media auf Ordner über die Benutzeroberfläche „Profile“{#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Wählen Sie ein Bildprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Tippen Sie auf **[!UICONTROL Verarbeitungsprofil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen oder klicken Sie anschließend auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
 
-#### Applying Dynamic Media image profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
+#### Anwenden von Bildprofilen für Dynamic Media auf Ordner über „Eigenschaften“{#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply an image profile to.
-1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Bildprofile]**. Wählen Sie aus der Dropdownliste **[!UICONTROL Profilname]** das Profil aus und tippen Sie dann auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Bildprofil anwenden möchten.
+1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
+1. Tippen Sie auf die Registerkarte **[!UICONTROL Bildprofile]**. Wählen Sie in der Dropdown-Liste **[!UICONTROL Profilname]** das gewünschte Profil aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Globales Anwenden eines dynamischen Medienbildprofils {#applying-an-image-profile-globally}
+### Globales Anwenden eines Bildprofils für Dynamic Media {#applying-an-image-profile-globally}
 
 Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in AEM-Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet.
 
-**So wenden Sie ein dynamisches Medienbildprofil global** an
+**So wenden Sie ein Bildprofil für Dynamic Media global an**:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -168,9 +175,9 @@ Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet we
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
-   * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`.
+   * Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`.
 
-      Fügen Sie die Eigenschaft hinzu `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` und tippen Sie auf Alle **[!UICONTROL speichern]**.
+      Fügen Sie die Eigenschaft `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` hinzu und tippen Sie auf **[!UICONTROL Alle speichern]**.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -188,47 +195,47 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
 Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern mehrerer Bilder](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**So bearbeiten Sie die intelligente Beschneidung oder das intelligente Farbfeld eines einzelnen Bildes**:
+**So bearbeiten Sie smarte Zuschnitte oder smarte Farb-/Bildmuster eines einzelnen Bildes**:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch image profile applied to it.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den das Bildprofil „Smartes Zuschneiden“ oder „Smartes Farb-/Bildmuster“ angewendet wurde.
 
-1. Tippen Sie auf den Ordner, um dessen Inhalt zu öffnen.
-1. Tippen Sie auf das Bild, dessen intelligentes Beschneiden oder intelligentes Farbfeld Sie anpassen möchten.
-1. On the toolbar, tap **[!UICONTROL Smart Crop]**.
+1. Tippen Sie auf den Ordner, um seine Inhalte anzuzeigen.
+1. Tippen Sie auf das Bild, dessen smarten Zuschnitt oder smartes Farb-/Bildmuster Sie anpassen möchten.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Smartes Zuschneiden]**.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Ziehen Sie den Schieberegler in der oberen rechten Ecke der Seite nach links oder rechts, um die Bildanzeige zu erweitern oder zu reduzieren.
    * Ziehen Sie im Bild eine Ecke, um die Größe des sichtbaren Bereichs des Zuschnitts oder Farb-/Bildmusters anzupassen.
    * Ziehen Sie das Feld bzw. Farb-/Bildmuster im Bild an eine neue Position. Sie können nur Bildmuster bearbeiten. Farbmuster sind statisch.
-   * Above the image, tap  **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
+   * Tippen Sie über dem Bild auf **[!UICONTROL Wiederherstellen]**, um all Ihre Änderungen rückgängig zu machen und den ursprünglichen Zuschnitt bzw. das Farb-/Bildmuster wiederherzustellen.
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL Close]** to return to the folder of assets.
+1. Tippen Sie in der oberen rechten Ecke der Seite auf **[!UICONTROL Speichern]** und anschließend auf **[!UICONTROL Schließen]**, um zum Asset-Ordner zurückzukehren.
 
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern mehrerer Bilder {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Nachdem Sie ein Bildprofil - das Smart-Beschneiden enthält - auf einen Ordner angewendet haben, wird für alle Bilder in diesem Ordner eine Beschneidung angewendet. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
+Nachdem Sie ein Bildprofil mit einem smarten Zuschnitt auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
 
 Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zuschnitte ggf. erneut zu generieren.
 
-**So bearbeiten Sie das intelligente Beschneiden- oder Smart-Farbfeld mehrerer Bilder**:
+**So bearbeiten Sie smarte Zuschnitte oder smarte Farb-/Bildmuster mehrerer Bilder**:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch image profile applied to it.
-1. On the folder, tap the **[!UICONTROL More Actions]** (...) icon, then tap **[!UICONTROL Smart Crop]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu einem Ordner, auf den das Bildprofil „Smartes Zuschneiden“ oder „Smartes Farb-/Bildmuster“ angewendet wurde.
+1. Tippen Sie beim entsprechenden Ordner auf das Symbol **[!UICONTROL Mehr Aktionen]** (...) und anschließend auf **[!UICONTROL Smartes Zuschneiden]**.
 
-1. On the **[!UICONTROL Edit Smart Crops]** page, do any of the following:
+1. Führen Sie auf der Seite **[!UICONTROL Smartes Zuschneiden bearbeiten]** eine der folgenden Aktionen durch:
 
-   * Passen Sie die Anzeigegröße der Bilder auf der Seite an.
+   * Passen Sie die Anzeigegröße von Bildern auf der Seite an.
 
-      Ziehen Sie den Schieberegler rechts neben der Dropdownliste mit Breakpoint-Namen nach links oder rechts, um den sichtbaren Bildbereich anzupassen.
+      Ziehen Sie den Schieberegler rechts neben der Dropdown-Liste mit Breakpoint-Namen nach links oder rechts, um den sichtbaren Bildbereich anzupassen.
 
       ![edit_smart_products-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtern Sie die Liste sichtbarer Bilder basierend auf Breakpoint-Namen. Im unten stehenden Beispiel werden die Bilder nach dem Breakpoint-Namen „Mittel“ gefiltert.
 
-      Wählen Sie aus der Dropdownliste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
+      Wählen Sie aus der Dropdown-Liste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
 
       ![edit_smart_products-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
@@ -246,33 +253,33 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
    * Machen Sie all Ihre Änderungen rückgängig und stellen Sie den ursprünglichen smarten Zuschnitt bzw. das smarte Farb-/Bildmuster wieder her (gilt nur für die aktuelle Bearbeitungssitzung).
 
-      Tippen Sie auf **[!UICONTROL Zurück]** über dem Bild.
+      Tippen Sie über dem Bild auf **[!UICONTROL Wiederherstellen]**.
 
       ![edit_smart_cards-revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. Tippen Sie in der Nähe der oberen rechten Ecke auf **[!UICONTROL Speichern]**. then tap **[!UICONTROL Close]** to return to the folder of assets.
+1. Tippen Sie in der Nähe der oberen rechten Ecke auf **[!UICONTROL Speichern]**. Tippen Sie anschließend auf **[!UICONTROL Schließen]**, um zum Asset-Ordner zurückzukehren.
 
 ## Entfernen eines Bildprofils aus Ordnern {#removing-an-image-profile-from-folders}
 
 Wenn Sie ein Bildprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
 
-Sie können ein Bildprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** aus einem Ordner entfernen. In diesem Abschnitt wird beschrieben, wie Sie Bildprofile auf beide Arten aus Ordnern entfernen.
+Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** ein Bildprofil aus einem Ordner entfernen. In diesem Abschnitt werden die beiden Möglichkeiten beschrieben, wie Sie Bildprofile aus Ordnern entfernen können.
 
-### Entfernen von Bildprofilen für dynamische Medien aus Ordnern über die Benutzeroberfläche &quot;Profile&quot; {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Entfernen von Bildprofilen für Dynamic Media aus Ordnern über die Benutzeroberfläche „Profile“ {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Wählen Sie ein Bildprofil aus, das Sie aus einem Ordner oder mehreren Ordnern entfernen möchten.
-1. Tippen Sie auf **[!UICONTROL Verarbeitungsprofil aus Ordner entfernen]** und wählen Sie den Ordner bzw. mehrere Ordner aus, aus dem/denen Sie das Profil entfernen möchten, und klicken Sie auf **[!UICONTROL Entfernen]**.
+1. Tippen Sie auf **[!UICONTROL Verarbeitungsprofil aus Ordner(n) entfernen]** und wählen Sie einen oder mehrere Ordner aus, aus denen das Profil entfernt werden soll. Tippen Sie dann auf **[!UICONTROL Entfernen]**.
 
-   Sie können überprüfen, dass das Bildprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
+   Sie können überprüfen, ob das Bildprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
-### Entfernen von Bildprofilen für dynamische Medien aus Ordnern mithilfe von Eigenschaften {#removing-image-profiles-from-folders-via-properties}
+### Entfernen von Bildprofilen für Dynamic Media aus Ordnern über „Eigenschaften“ {#removing-image-profiles-from-folders-via-properties}
 
-1. Tap the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an image profile from.
-1. On the folder, tap the check mark to select it, then tap **[!UICONTROL Properties]**.
-1. Select the **[!UICONTROL Image Profiles]** tab.
-1. Wählen Sie im Dropdownmenü **[!UICONTROL Profilname]** die Option **[!UICONTROL Ohne]** und tippen Sie dann auf **[!UICONTROL Speichern und schließen]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Bildprofil entfernen möchten.
+1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Bildprofile]**.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Profilname]** die Option **[!UICONTROL Kein]** und klicken Sie dann auf **[!UICONTROL Speichern und schließen]**.
 
-   Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+   Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
