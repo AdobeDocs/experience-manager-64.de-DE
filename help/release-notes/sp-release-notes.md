@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b46378657b8a173986a669beaa56468886b23266
+source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+workflow-type: tm+mt
+source-wordcount: '21556'
+ht-degree: 25%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: b46378657b8a173986a669beaa56468886b23266
 |---|---|
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
-| Datum | 05. März 2020 |
+| Datum     | 05. März 2020 |
 | Download-URL | AEM 6.4.8.0 auf [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), [Softwareverteilung(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
@@ -49,7 +52,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die in ContextHub enthaltene jQuery-Version wurde auf 3.4.1 aktualisiert.
 
-## Liste der Änderungen   {#list-of-changes}
+## Liste der Änderungen      {#list-of-changes}
 
 ### Sites {#sites}
 
@@ -140,7 +143,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Ungültige Zeichen werden in der URL angezeigt, die einer Schaltflächenkomponente hinzugefügt wird (NPR-32684).
 
-### Formulare {#forms}
+### Forms {#forms}
 
 >[!NOTE]
 >
@@ -186,6 +189,10 @@ Einige der wichtigsten Highlights von AEM 6.4.7.0 sind:
 * Die Exportversion des API-Pakets, die vom `package com.day.cq.dam.handler.standard.msoffice` Bundle `dam-handler` unterstützt wird, wird auf 6.0.0 aktualisiert (CQ-4279059).
 Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerdefinierten Implementierung verwenden, wird empfohlen, das `dam-handler` Bundle mit der neuesten uber jar zu kompilieren.
 
+* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM Liste Ansicht und in den Asset-Suchergebnissen in der Liste Ansicht (NPR-31311) hinzugefügt.
+
+* Die Sortierung nach der Spalte &quot;Name&quot;ist in der Ansicht &quot;Liste&quot;zulässig (NPR-31299).
+
 **Fehlerkorrekturen**
 
 * Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31575) nicht aktualisiert und im PDF-Format gespeichert.
@@ -230,7 +237,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Der Arbeitsablauf für die Neuverarbeitung in Scene7 wird angehalten, wenn einem Asset der Metadaten-Knoten fehlt (CQ-4281170).
 
-* Der Schritt BatchUpload im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit Video-Asset (CQ-4280630).
+* Der Schritt &quot;BatchUpload&quot;im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit dem Video-Asset (CQ-4280630).
 
 * Für an DM gesendete PDF-Optionen ist &quot;extractKeywords&quot;standardmäßig auf &quot;true&quot;gesetzt (CQ-4280101).
 
@@ -262,7 +269,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Wenn ein Benutzer ein Inhaltsfragment bearbeitet, wird die bereits gelöschte Variante des Inhaltsfragments wiederhergestellt (NPR-31178).
 
-* Die Abfrage der Inhaltsfragmentmodelle ist ineffizient. Es ist sehr langsam, wenn die Instanz viele Seiten hat und einen Fehler auslöst (NPR-30666).
+* Die Abfrage der Inhaltsfragmentmodelle ist ineffizient. Es ist sehr langsam, wenn die Instanz viele Seiten hat und ein Fehler auftritt (NPR-30666).
 
 * Beim Speichern des Inhaltsfragmentmodells wird die Uhrzeit im Datums- und Uhrzeitfeld auf 00:00 (NPR-30540) eingestellt.
 
@@ -310,7 +317,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 * Der Administrator einer eingeschränkten Gruppe ist nicht in der Lage, die Gruppenkarte Ansicht, kann keine Schnelllink-Vorgänge (Gruppen bearbeiten/Veröffentlichen/Löschen) in der AEM-Autoreninstanz (NPR-30810) durchführen.
 * Bei der Erstellung einer neuen Site in der AEM-Autoreninstanz (NPR-28840) sind keine Informationen zu Mitgliedergruppen/Gruppen sichtbar.
 
-##### Formulare {#forms-6470}
+##### Forms {#forms-6470}
 
 >[!NOTE]
 >
@@ -1370,7 +1377,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 
 **Plattform**
 
-* Wiederverwendungs-Schleife| NPE während der Durchführung der BinaryTextExtract-Aktualisierung von 6.3 auf 6.4. Hotfix für Granit - 21677
+* Wiederverwendungs-Schleife | NPE während der Durchführung der BinaryTextExtract-Aktualisierung von 6.3 auf 6.4. Hotfix für Granit - 21677
 * Grenzüberschreitende Außerkraftsetzung des internen markierten Pfads /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Problem beim Ausführen des Musterdetektors. NPR-25036: Hotfix für CQ-4248597
 * Protokolleinträge, die aufgrund von NPE in LogEntryImpl nicht geschrieben wurden. NPR-25627: Hotfix für Granite-22383
 * Die Replizierung des Löschvorgangs-Ereignisses überprüft keine Rechte. NPR-25679: Hotfix für CQ-4241234
@@ -2223,7 +2230,7 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
 
 | Bereich | Funktion | Ersatz | Version |
 |---|---|---|---|
-| Assets  | Tag-Aktion für Teilassets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
+| Assets | Tag-Aktion für Teilassets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
 | Assets und Adobe Creative Cloud-Integration | [Die gemeinsame Nutzung](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) von AEM in Creative Cloud-Ordnern wurde in AEM 6.2 eingeführt, um kreativen Benutzern Zugriff auf Assets aus AEM zu geben. Eine neue Funktion der Creative Cloud-Anwendung, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe wird die Ordnerfreigabe nicht weiter verbessern. Während die Funktion in AEM enthalten ist, empfehlen Kunden dringend, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-App. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Bekannte Probleme {#known-issues}
