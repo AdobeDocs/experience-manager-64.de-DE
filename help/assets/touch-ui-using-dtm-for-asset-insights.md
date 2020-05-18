@@ -3,7 +3,10 @@ title: Aktivieren von Asset Insights über DTM
 description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 57%
 
 ---
 
@@ -25,7 +28,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
 1. Erstellen/Öffnen einer vorhandenen Webeigenschaft
 
    * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
-   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]** (see [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html)).
+   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]** (see [documentation](https://helpx.adobe.com/de/experience-manager/using/dtm.html)).
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
@@ -48,7 +51,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
 
 
 
-1. Öffnen Sie [https://dtm.adobe.com](https://dtm.adobe.com). Klicken Sie in der Web-Eigenschaft auf Übersicht und dann auf Tool hinzufügen oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. Beim Erstellen des Tools können Sie die Konfigurationsmethode auf Automatisch einstellen.
+1. Öffnen Sie [https://dtm.adobe.com](https://dtm.adobe.com). Klicken Sie in der Web-Eigenschaft auf Übersicht und dann auf Tool hinzufügen oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. Beim Erstellen des Tools können Sie die Konfigurationsmethode auf &quot;Automatisch&quot;setzen.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -64,7 +67,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
 
 1. Fügen Sie den folgenden Code in das Fenster ein:
 
-   ```
+   ```java
    var sObj;
    
    if (arguments.length > 0) {
