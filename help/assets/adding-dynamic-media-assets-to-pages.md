@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
+source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 52%
 
 ---
 
@@ -25,24 +28,52 @@ Sie können dynamische Medienelemente direkt zur Seite hinzufügen, wenn Sie AEM
 >
 >Sie müssen Assets veröffentlichen, um sie Seiten in AEM hinzufügen zu können. Siehe [Veröffentlichen von Dynamic Media-Assets ](publishing-dynamicmedia-assets.md).
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite   {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite     {#adding-a-dynamic-media-component-to-a-page}
 
-Das Hinzufügen einer Komponente vom Typ „Dynamische Medien“ oder „Interaktive Medien“ entspricht dem Hinzufügen einer Komponente zu einer Seite. Die Komponenten vom Typ „Dynamische Medien“ oder „Interaktive Medien“ werden in den folgenden Abschnitten ausführlicher beschrieben.
+Das Hinzufügen einer Komponente für dynamische Medien zu einer Seite entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Komponenten für dynamische Medien werden in den folgenden Abschnitten ausführlich beschrieben.
 
 >[!NOTE]
 >
->Wenn es eine Komponente für dynamische Medien, eine Komponente für interaktive Medien oder beides auf einer Webseite gibt, auf die ein Benutzer mit schreibgeschützten Berechtigungen zugreift, werden die Seitenumbrüche und die Komponenten nicht korrekt dargestellt. Der Grund dafür ist, dass die Seite rekonstruiert wurde, um sicherzustellen, dass die Eigenschaften der Komponenten gut sind und alle referenzierten Assets und Konfigurationen verfügbar sind. Die Seite wird dann erneut gerendert und die Komponenten werden umgebrochen. Der entsprechende Komponentencode auf der Seite kann aufgrund des schreibgeschützten Zugriffs des Benutzers nicht erneut gerendert werden.
+>Wenn eine Komponente für dynamische Medien auf einer Webseite vorhanden ist, auf die ein Benutzer mit schreibgeschützten Berechtigungen zugreift, werden die Seitenumbrüche und die Komponenten nicht korrekt dargestellt. Der Grund dafür ist, dass die Seite rekonstruiert wurde, um sicherzustellen, dass die Eigenschaften der Komponenten gut sind und alle referenzierten Assets und Konfigurationen verfügbar sind. Die Seite wird dann erneut gerendert und die Komponenten werden umgebrochen. Der entsprechende Komponentencode auf der Seite kann aufgrund des schreibgeschützten Zugriffs des Benutzers nicht erneut gerendert werden.
 >  
 >Um dieses Problem zu vermeiden, müssen Sie sicherstellen, dass AEM-Sites-Benutzer über die erforderlichen Berechtigungen zum Zugriff auf die Assets verfügen.
 
-1. Öffnen Sie in AEM die Seite, der eine Komponente vom Typ „Dynamische Medien“ oder „Interaktive Medien“ hinzugefügt werden soll.
-1. In the left pane, click the **[!UICONTROL Components]** icon and filter for **[!UICONTROL Dynamic Media]**. Wenn keine Komponente vom Typ „Dynamische Medien“ verfügbar ist, müssen Sie die Komponenten vom Typ „Dynamische Medien“ aktivieren. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information.
+1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
+1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (möglicherweise müssen Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol &quot; **[!UICONTROL Komponenten]** &quot;.
+1. Wählen Sie unter der Überschrift &quot; **[!UICONTROL Komponenten]** &quot;in der Dropdown-Liste die Option &quot; **[!UICONTROL Dynamische Medien]**&quot;aus. Wenn keine Liste von Komponenten für dynamische Medien verfügbar ist, müssen Sie die Komponenten für dynamische Medien aktivieren, die Sie verwenden möchten. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
-1. Drag the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component onto the page in the desired location.
+1. Ziehen Sie eine Komponente für dynamische Medien, die Sie verwenden möchten, auf die Seite an der gewünschten Position.
 1. Click the blue box around the component, then tap the **[!UICONTROL Configuration]** (wrench) icon.
 1. [Bearbeiten Sie die Komponenten](#dynamic-media-components) nach Bedarf und klicken Sie auf das Häkchen, um die Änderungen zu speichern.
+
+### Enabling Dynamic Media components {#enabling-dynamic-media-components}
+
+Wenn keine Komponenten für dynamische Medien verfügbar sind, die einer Seite hinzugefügt werden können, müssen Sie die Komponenten wahrscheinlich aktivieren.
+
+1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
+1. Tippen Sie auf der linken Seite der Symbolleiste am oberen Rand der Seite auf das Symbol &quot;Seiteninformationen&quot;und dann in der Dropdown-Liste auf Vorlage **[!UICONTROL bearbeiten]** .
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. Tippen Sie auf der rechten Seite der Symbolleiste am oberen Seitenrand aus der Dropdown-Liste auf **[!UICONTROL Struktur]**.
+
+![Richtlinie](/help/assets/assets-dm/structure-mode.png)
+
+1. Tippen Sie unten auf der Seite auf **[!UICONTROL Layout-Container]** , um die Symbolleiste zu öffnen, und klicken Sie dann auf das Symbol &quot;Richtlinie&quot;.
+1. Stellen Sie auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;unter der Überschrift &quot; **[!UICONTROL Eigenschaften]** &quot;sicher, dass die Registerkarte &quot; **[!UICONTROL Zulässige Komponenten]** &quot;ausgewählt ist.
+
+![Zulässige Komponenten](/help/assets/assets-dm/allowed-components.png)
+
+1. Führen Sie einen Bildlauf durch, bis **[!UICONTROL dynamische Medien]** angezeigt werden.
+1. Tippen Sie auf das Symbol > links neben **[!UICONTROL Dynamische Medien]** , um die Liste zu erweitern, und wählen Sie die Dynamischen Medienkomponenten aus, die Sie aktivieren möchten.
+
+![Liste von Komponenten für dynamische Medien](/help/assets/assets-dm/dm-components-select.png)
+
+1. Tippen Sie rechts oben auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;auf das Symbol Fertig (Häkchen).
+
+1. Tippen Sie auf der rechten Seite der Symbolleiste oben auf der Seite in der Dropdown-Liste auf &quot; **[!UICONTROL Anfänglicher Inhalt]**&quot;und [fügen Sie wie gewohnt einer Seite](#adding-a-dynamic-media-component-to-a-page) eine Komponente für dynamische Medien hinzu.
 
 ## Localizing Dynamic Media components {#localizing-dynamic-media-components}
 
@@ -70,7 +101,7 @@ Dynamic Media and Interactive Media are available under the [!UICONTROL Dynamic 
 
 ### Komponente „Dynamische Medien“{#dynamic-media-component}
 
-Die Komponente &quot;Dynamische Medien&quot;ist intelligent. Je nachdem, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bild-Sets sowie Rotations-Sets, gemischte Medien-Sets und Videos. Darüber hinaus reagiert der Viewer. Das heißt, die Bildschirmgröße ändert sich automatisch je nach Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+Die Komponente &quot;Dynamische Medien&quot;ist intelligent. Je nachdem, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, gemischte Mediensets und Videos. Darüber hinaus reagiert der Viewer. Das heißt, die Bildschirmgröße ändert sich automatisch je nach Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 >[!NOTE]
 >
@@ -88,7 +119,7 @@ Die Komponente &quot;Dynamische Medien&quot;ist intelligent. Je nachdem, ob Sie 
 
 
 
-#### Arbeiten mit Bildern   {#when-working-with-images}
+#### Arbeiten mit Bildern     {#when-working-with-images}
 
 Mit der Komponente „Dynamische Medien“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
@@ -108,22 +139,22 @@ Dies ist die einzig verfügbare Option beim Anzeigen von Bildsets, Rotationssets
 * **[!UICONTROL Viewer-Modifikatoren]**-Viewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Paars mit einem &amp;-Trennzeichen und ermöglichen das Ändern von Viewern, wie im Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist posterimage=img.jpg&amp;caption=text.vtt,1, der ein anderes Bild für die Videominiatur festlegt und eine Untertiteldatei mit dem Video verknüpft.
 
 * **[!UICONTROL Bildvorgabe]**Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Bildmodifikatoren]**Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Haltepunkte]**Wenn Sie dieses Asset auf einer responsiven Site verwenden, müssen Sie die Bild-Haltepunkte hinzufügen. Bildhaltepunkte müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Titel]**&#x200B;Ändern Sie den Titel des Bilds.
 
 * **[!UICONTROL Alt-Text]**Hinzufügen einen Titel für das Bild für Benutzer, die Grafiken deaktiviert haben.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL URL, In]**Öffnen Sie ein Asset, um einen Link zu öffnen. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** Geben Sie den Wert in Pixel ein, wenn das Bild eine feste Größe haben soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -169,17 +200,17 @@ You can edit the following [!UICONTROL Dynamic Media Settings] by clicking **[!U
 >Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. Wenn Sie eine feste Größe einrichten möchten, legen Sie sie auf der Registerkarte [!UICONTROL Erweitert] in der Komponente mit der **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
 
 * **[!UICONTROL Bildmodifikatoren]**Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel]**&#x200B;Ändern Sie den Titel des Smart-Schnittbilds.
 
 * **[!UICONTROL Alt-Text]**Hinzufügen einen Titel für das intelligente Beschneidungsbild für Benutzer, die Grafiken deaktiviert haben.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL URL, In]**Öffnen Sie ein Asset, um einen Link zu öffnen. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
-Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Height** and **[!UICONTROL Width]** Geben Sie den Wert in Pixel ein, wenn das Smart-Schnittbild eine feste Größe haben soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
