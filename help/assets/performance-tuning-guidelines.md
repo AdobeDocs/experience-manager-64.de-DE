@@ -3,7 +3,10 @@ title: Handbuch zur Leistungsoptimierung von Assets
 description: Wichtige Bereiche der AEM-Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Performance von AEM Assets zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '3201'
+ht-degree: 84%
 
 ---
 
@@ -30,7 +33,7 @@ Nutzen Sie einen Hochleistungsspeicher für das temporäre Java-Verzeichnis, um 
 
 Bei einer großen Speicherkapazität des Servers kann ein RAM-Laufwerk konfiguriert werden. Führen Sie unter Linux die folgenden Befehle aus, um ein RAM-Laufwerk von 8 GB zu erstellen:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -81,7 +84,7 @@ Mit der Implementierung eines S3-Datenspeichers oder Shared File Datastore spare
 
 Mit der folgenden Konfiguration des S3-Datenspeichers (`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) konnte Adobe binäre große Objekte (BLOBs) mit einer Größe von 12,8 TB von einem vorhandenen Dateidatenspeicher in einen S3-Datenspeicher am Standort eines Kunden extrahieren:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
