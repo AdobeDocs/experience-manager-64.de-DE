@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2843'
-ht-degree: 52%
+source-wordcount: '2865'
+ht-degree: 53%
 
 ---
 
@@ -45,12 +45,13 @@ Das Hinzufügen einer Komponente für dynamische Medien zu einer Seite entsprich
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Ziehen Sie eine Komponente für dynamische Medien, die Sie verwenden möchten, auf die Seite an der gewünschten Position.
-1. Click the blue box around the component, then tap the **[!UICONTROL Configuration]** (wrench) icon.
+1. Bewegen Sie den Mauszeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, tippen Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Tippen Sie auf das Symbol **** Konfiguration (Schraubenschlüssel).
 1. [Bearbeiten Sie die Komponenten](#dynamic-media-components) nach Bedarf und klicken Sie auf das Häkchen, um die Änderungen zu speichern.
+1. 
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
-Wenn keine Komponenten für dynamische Medien verfügbar sind, die einer Seite hinzugefügt werden können, müssen Sie die Komponenten wahrscheinlich aktivieren.
+Wenn keine Komponenten für dynamische Medien verfügbar sind, die einer Seite hinzugefügt werden können, müssen Sie die Komponenten, die Sie verwenden möchten, zunächst aktivieren.
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Tippen Sie auf der linken Seite der Symbolleiste am oberen Rand der Seite auf das Symbol &quot;Seiteninformationen&quot;und dann in der Dropdown-Liste auf Vorlage **[!UICONTROL bearbeiten]** .
@@ -59,17 +60,17 @@ Wenn keine Komponenten für dynamische Medien verfügbar sind, die einer Seite h
 
 1. Tippen Sie auf der rechten Seite der Symbolleiste am oberen Seitenrand aus der Dropdown-Liste auf **[!UICONTROL Struktur]**.
 
-![Richtlinie](/help/assets/assets-dm/structure-mode.png)
+   ![Richtlinie](/help/assets/assets-dm/structure-mode.png)
 
 1. Tippen Sie unten auf der Seite auf **[!UICONTROL Layout-Container]** , um die Symbolleiste zu öffnen, und klicken Sie dann auf das Symbol &quot;Richtlinie&quot;.
 1. Stellen Sie auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;unter der Überschrift &quot; **[!UICONTROL Eigenschaften]** &quot;sicher, dass die Registerkarte &quot; **[!UICONTROL Zulässige Komponenten]** &quot;ausgewählt ist.
 
-![Zulässige Komponenten](/help/assets/assets-dm/allowed-components.png)
+   ![Zulässige Komponenten](/help/assets/assets-dm/allowed-components.png)
 
 1. Führen Sie einen Bildlauf durch, bis **[!UICONTROL dynamische Medien]** angezeigt werden.
 1. Tippen Sie auf das Symbol > links neben **[!UICONTROL Dynamische Medien]** , um die Liste zu erweitern, und wählen Sie die Dynamischen Medienkomponenten aus, die Sie aktivieren möchten.
 
-![Liste von Komponenten für dynamische Medien](/help/assets/assets-dm/dm-components-select.png)
+   ![Liste von Komponenten für dynamische Medien](/help/assets/assets-dm/dm-components-select.png)
 
 1. Tippen Sie rechts oben auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;auf das Symbol Fertig (Häkchen).
 
