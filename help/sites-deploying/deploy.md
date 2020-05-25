@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 80%
 
 ---
 
@@ -66,7 +69,7 @@ Adobe Experience Manager ist ein webbasiertes Client-Server-System für das Erst
 
 Auf Infrastrukturebene bietet AEM Folgendes:
 
-* **Webanwendungsserver**: AEM kann im eigenständigen Modus (einschließlich eines integrierten Jetty-Webservers) oder als Webanwendung innerhalb eines Drittanbieteranwendungsservers (WebLogic, WebSphere usw.) bereitgestellt werden.
+* **Webanwendung Server**: AEM kann im eigenständigen Modus (einschließlich eines integrierten Jetty-Webservers) oder als Webanwendung innerhalb eines Drittanbieteranwendungsservers (WebLogic, WebSphere usw.) bereitgestellt werden.
 * **Framework für Webanwendungen**: AEM verfügt über das Sling Web Application Framework (Sling-Webanwendungsframework). Dieses vereinfacht das Schreiben von RESTful- und inhaltsorientierten Webanwendungen.
 * **Inhalts-Repository**: AEM umfasst ein Java Content Repository (JCR). Hierbei handelt es sich um einen Typ hierarchischer Datenbank, die speziell für unstrukturierte und halb strukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten.
 
@@ -125,7 +128,7 @@ Mit AEM Managed Services können Kunden die folgenden Vorteile nutzen:
 
 **Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Adobe Managed Service-Kunden verfügbar.
 
-Weitere Informationen zu Cloud Manager und den zugehörigen Ressourcen finden Sie im [**Benutzerhandbuch zu Cloud Manager **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+To learn more about Cloud Manager and its resources, please refer to [**Cloud Manager User Guide **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## Erste Schritte {#getting-started}
 
@@ -139,13 +142,13 @@ On the client-side, AEM works with all modern browsers (**Microsoft Edge**, **In
 
 ### Abrufen der Software {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
 
 Das AEM-Softwarepaket steht in zwei Formen zur Verfügung:
 
-* **** cq-quickstart-6.4.0.jar: Eine eigenständige ausführbare *JAR* -Datei, die alles enthält, was für die Inbetriebnahme erforderlich ist.
+* **cq-quickstart-6.4.0.jar:** Eine eigenständige ausführbare *JAR* -Datei, die alles enthält, was für die Inbetriebnahme erforderlich ist.
 
-* **** cq-quickstart-6.4.0.war: Eine *Kriegsdatei* zur Bereitstellung auf einem Anwendungsserver eines Drittanbieters.
+* **cq-quickstart-6.4.0.war:** Eine *Kriegsdatei* zur Bereitstellung auf einem Anwendungsserver eines Drittanbieters.
 
 In the following section we describe the **standalone installation**. Details über das Installieren von AEM auf einem Anwendungsserver finden Sie unter [Applikationsserver-Installation](/help/sites-deploying/application-server-install.md).
 
@@ -277,7 +280,7 @@ Dieser Ordner enthält die folgenden Unix-Bash-Shell-Skripts:
 * **`start`**: Startet die Instanz
 * `stop`: Hält die Instanz an
 * **`status`**: Meldet den Status der Instanz
-* **`quickstart`**: Wird bei Bedarf zur Konfiguration der Startinformationen verwendet.
+* **`quickstart`**: Wird bei Bedarf zum Konfigurieren von Beginn-Informationen verwendet.
 
 Es stehen auch entsprechende **`bat`**-Dateien für Windows zur Verfügung. Detaillierte Informationen finden Sie in:
 
@@ -291,7 +294,7 @@ AEM startet und leitet Ihren Webbrowser automatisch zur entsprechenden Seite um.
 
 Nachdem Sie sich angemeldet haben, verfügen Sie über Zugriff auf AEM. Weitere Informationen in Abhängigkeit von Ihrer Rolle finden Sie unter den folgenden Punkten:
 
-* [Authoring](/help/sites-authoring/home.md)
+* [Authoring – ](/help/sites-authoring/home.md)
 * [Verwalten](/help/sites-administering/home.md)
 * [Entwickeln](/help/sites-developing/home.md)
 * [Verwaltung](/help/managing/best-practices.md)
