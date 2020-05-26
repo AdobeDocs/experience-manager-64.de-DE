@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 53%
@@ -47,7 +47,6 @@ Das Hinzufügen einer Komponente für dynamische Medien zu einer Seite entsprich
 1. Ziehen Sie eine Komponente für dynamische Medien, die Sie verwenden möchten, auf die Seite an der gewünschten Position.
 1. Bewegen Sie den Mauszeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, tippen Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Tippen Sie auf das Symbol **** Konfiguration (Schraubenschlüssel).
 1. [Bearbeiten Sie die Komponenten](#dynamic-media-components) nach Bedarf und klicken Sie auf das Häkchen, um die Änderungen zu speichern.
-1. 
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
