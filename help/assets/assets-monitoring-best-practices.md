@@ -3,7 +3,10 @@ title: Asset-Überwachung – Best Practices
 description: Best Practices für die Überwachung der Umgebung und Leistung Ihrer AEM-Instanz nach der Bereitstellung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +32,7 @@ Normalerweise kann die Überwachung in AEM Assets auf zwei Arten durchgeführt w
 
 Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwicklungsprozesses oder in Situationen mit hoher Auslastung durchzuführen, um sich mit den Leistungsmerkmalen Ihrer Umgebung vertraut zu machen. Normalerweise sollte für die Live-Überwachung eine Tool-Suite eingesetzt werden. Einige Empfehlungen:
 
-* [Visual VM](https://visualvm.github.io/): Mit Visual VM können Sie detaillierte Java VM-Informationen einschließlich CPU-Auslastung und Java-Speicherbelegung anzeigen. Außerdem können Sie Code prüfen und auswerten, der auf einer Instanz ausgeführt wird.
+* [Visual VM](https://visualvm.github.io/): Mit Visual VM können Sie detaillierte Java-VM-Informationen, einschließlich CPU-Auslastung und Java-Speicherbelegung, Ansicht werden. Außerdem können Sie Code prüfen und auswerten, der auf einer Instanz ausgeführt wird.
 * [Top](http://man7.org/linux/man-pages/man1/top.1.html): „Top“ ist ein Linux-Befehl zum Öffnen eines Dashboards, in dem Auslastungsstatistiken angezeigt werden, z. B. zur CPU-, Arbeitsspeicher- und I/O-Auslastung. Darin können Sie sich einen allgemeinen Überblick über die Vorgänge auf einer Instanz verschaffen.
 * [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
@@ -117,7 +120,7 @@ Replikationsagenten
 
 * Alarmdefinition: Blockierte Warteschlange im System. Dies ist ein Hinweis darauf, dass das Replikationsziel ausgefallen oder nicht erreichbar ist. Häufig führen Netzwerk- oder Infrastrukturprobleme dazu, dass eine übermäßig hohe Zahl von Einträgen in eine Warteschlange eingereiht wird, und dies kann sich negativ auf die Systemleistung auswirken.
 
-**Hinweis**:Ersetzen Sie für die Parameter MBean und URL durch `<AGENT_NAME>` den Namen des Replizierungsagenten, den Sie überwachen möchten.
+**Hinweis**: Ersetzen Sie für die Parameter MBean und URL durch `<AGENT_NAME>` den Namen des Replizierungsagenten, den Sie überwachen möchten.
 
 Sitzungszähler
 
@@ -186,12 +189,10 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 Wenn während des Überwachungsprozesses Probleme auftreten, können Sie die folgenden Problembehandlungsschritte ausführen, um häufig auftretende Probleme mit AEM-Instanzen zu lösen:
 
 * Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Überprüfen Sie die `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
-
+* Überprüfen Sie die `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
 * Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
 * Untersuchen Sie die Ausgangspunkte des Clientnetzwerks und die Eingangspunkte des AEM-Instanznetzwerks, einschließlich Dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md).
-* Erhöhen Sie die Größe Ihres AEM-Servers. Unter Umständen verfügen Sie über eine AEM-Instanz mit unzureichender Größe. Der Adobe Support kann bei der Ermittlung, ob Ihr Server ggf. zu klein ausgelegt ist, Unterstützung leisten.
+* Erhöhen Sie die Größe Ihres AEM-Servers. Unter Umständen verfügen Sie über eine AEM-Instanz mit unzureichender Größe. Der Adobe-Kundendienst kann Ihnen dabei helfen, festzustellen, ob Ihr Server untermaßig ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.
-
