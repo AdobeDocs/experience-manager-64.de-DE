@@ -3,10 +3,10 @@ title: Handbuch zur Leistungsoptimierung von Assets
 description: Wichtige Bereiche der AEM-Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Performance von AEM Assets zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
-ht-degree: 84%
+source-wordcount: '3202'
+ht-degree: 83%
 
 ---
 
@@ -417,6 +417,6 @@ Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung be
 * Entfernen Sie unnötige Schritte aus dem Arbeitsablauf zur DAM-Aktualisierung von Assets.
 * Konfigurieren des Arbeitsablaufs und der Versionsbereinigung.
 * Optimieren Sie die Lucene-Indexkonfiguration.
-* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Fragen Sie den Adobe-Support nach verfügbaren zusätzlichen Indexoptimierungen.
+* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Adobe-Kundendienst, um weitere verfügbare Indexoptimierungen zu erhalten.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
