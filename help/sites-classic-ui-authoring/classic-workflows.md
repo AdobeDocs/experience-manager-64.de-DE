@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '269'
+ht-degree: 100%
 
 ---
 
@@ -30,6 +33,6 @@ In der Regel gilt:
 
 Die folgenden Seiten behandeln:
 
-* [Anwenden von Workflows auf Seiten](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
+* [Anwenden von Workflows auf Seiten ](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
 * [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
 
