@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '7663'
+ht-degree: 93%
 
 ---
 
@@ -70,11 +73,11 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
 * **runModes (Zeichenfolge)**: Eine kommagetrennte Liste der zulässigen Ausführungsmodi für die Ausführung des Workflows. Beispiele:
 
-   * Autor
+   * author
 
-   * veröffentlichen
+   * publish
 
-   * author, veröffentlichen
+   * author, publish
 
    * publish, author
 
@@ -720,7 +723,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 ### Workflow erstellen {#create-a-workflow-1}
 
-1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.`https://[server]:[port]/worklow`
+1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.`https://[server]:[port]/workflow`
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
 1. Wählen Sie den neu erstellten Workflow aus und klicken Sie auf **Bearbeiten**. Der Workflow wird in einem neuen Fenster geöffnet.
