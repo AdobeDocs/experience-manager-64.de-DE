@@ -4,7 +4,7 @@ description: Spezifische Versionshinweise zu Adobe Experience Manager 6.4 Cumula
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 25%
@@ -49,7 +49,7 @@ Adobe Experience Manager 6.4.8.1 enthält Korrekturen an den folgenden Problemen
 * Wenn eine Komponente eine andere Komponente als datenbasierte Ressource enthält, wird der Platzhalter für die Komponente des übergeordneten Containers durch den Platzhalter für die inneren Komponenten ersetzt (NPR-33119).
 * Wenn Sie ein Inhaltsfragment auf einem Schema basieren und es einen obligatorischen Textbereich oder ein Pfadfeld enthält, kann das Inhaltsfragment nicht gespeichert werden (NPR-33007)
 * Wenn Sie eine benutzerdefinierte Komponente mithilfe der vordefinierten Erlebnisfragmentkomponente erstellen und sie auf den AEM-Siteseiten verwenden, zeigt AEM keine Verweise (Nutzung) für die benutzerdefinierte Komponente (NPR-32852) an.
-* Wenn eine AEM-Siteseite zu einem großen Inhaltsset mit mehreren Live-Kopien gehört, schlägt die Vorschau des Seitenversionsverlaufs fehl (NPR-32772).
+* Wenn eine AEM-Siteseite Teil eines großen Inhaltssatzes mit mehreren Live-Kopien ist, kann die Vorschau des Seitenversionsverlaufs nicht geladen werden (NPR-32772).
 * Wenn Sie einen Launch bewerben, wird das &quot;cq:LiveRelationship&quot;-Mixin zu jeder Komponente hinzugefügt, die im Launch hinzugefügt wird. Sie wirkt sich auf alle Starts aus, unabhängig davon, ob ein Startvorgang mit oder ohne Auswahl der Option —  Quellseitendaten übernehmen —  Option (NPR-32664).
 * Beim Paginieren werden nicht alle Elemente (NPR-32605) in der Erlebnisfragmentauswahl geladen.
 * Ein Start für eine AEM-Siteseite kann nicht erstellt werden. Die Erstellung des Startvorgangs führt zu einem Fehler (NPR-32544).
@@ -237,7 +237,7 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
 
 ## Bekannte Probleme {#known-issues}
 
-* Die Aktualisierung von [!DNL chrome] Version 83 verursacht ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Edge]andere Installationsoptionen für AEM-Standardpakete, um das Problem zu beheben.
+* Die Aktualisierung von [!DNL chrome] Version 83 verursacht ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Installationsoptionen für AEM-Standardpakete, um das Problem zu beheben.
 
 * Es kann keine E-Mail mit dem AEM-Standard-E-Mail-Sender an den Remote-SMTP-Server gesendet werden, da nur die Kommunikation mit TLS v1.2 möglich ist. Entfernen Sie das Bundle `javax.mail:mail:1.5.0-b01` aus `system/console` und aktualisieren Sie die Bundles, um das Problem zu beheben.
 
