@@ -1,6 +1,6 @@
 ---
-title: Seitenvergleich
-seo-title: Seitenvergleich
+title: 'Seitenvergleich  '
+seo-title: 'Seitenvergleich  '
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 seo-description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 96%
 
 ---
 
 
-# Seitenvergleich{#page-diff}
+# Seitenvergleich  {#page-diff}
 
 ## Einführung {#introduction}
 
@@ -25,22 +28,22 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die Berechtigung &quot; **Ändern/Erstellen/Löschen** &quot;auf dem Knoten verfügen, `/content/versionhistory` um die Funktion verwenden zu können.
 >
 >Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/sites-developing/pagediff.md#operation-details).
 
-## Verwenden Sie:{#use}
+## Verwenden Sie {#use}
 
 Folgendes kann verglichen werden:
 
-* [Versionen](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Frühere Version einer Seite mit dem aktuellen Status
-* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy mit ihrem Blueprint
-* [Starts](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Start mit der Quelle
-* [Sprachkopien](/help/sites-administering/tc-manage.md#comparing-language-copies) - Eine Seite vor und nach der (Wieder-)Übersetzung
+* [Versionen](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) – frühere Version einer Seite mit ihrem aktuellen Status
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies – Live Copy mit ihrer Blueprint
+* [Launches](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) – Launch mit seiner Quelle
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Sprachkopien – eine Seite vor und nach der (erneuten) Übersetzung
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden {#presentation-of-differences}
+### Darstellung von Unterschieden   {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -67,15 +70,15 @@ Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 **HTML-Änderungen** 
 
 * Dunkelgrün – HTML hinzugefügt
-* Rot - HTML entfernt
+* Rot – HTML entfernt
 
 >[!NOTE]
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden {#fullscreen-and-exiting}
+### Vollbild und Beenden   {#fullscreen-and-exiting}
 
-Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browserfenster zu vergrößern.
+Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
 ![](do-not-localize/chlimage_1-24.png)
 
@@ -95,7 +98,7 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
 * Bei Versionen erstellt der Seitenvergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
-* Wenn Änderungen an einem Bild vorgenommen werden, z. B. Änderungen an den Attributen &quot;alt&quot;, &quot;title&quot;oder &quot;src&quot;, wird es blau hervorgehoben, sobald es geändert wurde. In einigen Fällen hat das Bild jedoch eine Base64-Darstellung des Attributs src, und auch wenn beide Bilder gleich aussehen, werden sie aufgrund der unterschiedlichen src-Attribute vom Diff als verschieden gekennzeichnet.
+* Wenn Änderungen an einem Bild vorgenommen werden, z. B. eine Änderung der alt-, title- oder der src-Attribute, wird das geänderte Element blau hervorgehoben. In manchen Fällen weist ein Bild jedoch eine Base64-Darstellung des src-Attributs auf und selbst dann, wenn beide Bilder gleich aussehen, werden sie vom Seitenvergleich aufgrund der unterschiedlichen src-Attribute gekennzeichnet.
 * Der Seitenvergleich erkennt keine Bilddrehung.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
 
