@@ -8,7 +8,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '8013'
+ht-degree: 54%
 
 ---
 
@@ -274,6 +277,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
    * In the **[!UICONTROL KeyStore File Password]** field, enter the KeyStore File password. This is _not_ the KeyStore password that you created in step 5 but is the KeyStore File password Adobe provides in the Welcome email sent to you during provisioning. Wenden Sie sich an die Kundenunterstützung von Adobe, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden).
    * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
    * In the **[!UICONTROL Private Key Alias]** field, enter the private key alias. For example, `companyname-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
+
    ![edit_settings_fordynamic-media-Replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um Ihre Änderungen für diesen Benutzer zu speichern.
@@ -292,6 +296,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
    * **[!UICONTROL Mandant-ID]** : Dieser Wert ist der Name Ihrer Firma/des Mandanten, die/der im Replizierungsdienst veröffentlicht wird. Dieser Wert ist die Tenant-ID, die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenden Sie sich an die Kundenunterstützung von Adobe, falls Sie diese E-Mail nicht erhalten haben.
    * **[!UICONTROL Key Store-Alias]** - Dieser Wert ist identisch mit dem** New Alias**-Wert, der beim Generieren des Schlüssels unter [Einrichten der Authentifizierung](#setting-up-authentication)festgelegt wurde. zum Beispiel `replication`. (See step 7 in [Setting Up Authentication](#setting-up-authentication).)
    * **[!UICONTROL Key Store Password]** - Dies ist das KeyStore-Kennwort, das erstellt wurde, wenn Sie auf KeyStore **[!UICONTROL erstellen tippten]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. See step 5 of [Setting up Authentication](#setting-up-authentication).
+
    In der folgenden Abbildung ist der Replikationsagent mit Beispieldaten dargestellt:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -567,7 +572,7 @@ Make sure that the [!DNL Video Analytics] preset package from the first Author n
 
    * **Überprüfen Sie die[!DNL Video Analytics]Vorgabe über das Video Berichte-Tool in AEM**
 
-      Tippen Sie auf **[!UICONTROL Werkzeuge > Assets > Video-Berichte]**`http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+      Tippen Sie auf **[!UICONTROL Werkzeuge > Assets > Video Berichte]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
       Wenn die folgende Fehlermeldung angezeigt wird, ist die Report Suite verfügbar, aber nicht gefüllt. Dieser Fehler ist korrekt und erwünscht, wenn es sich um eine Neuinstallation handelt, bevor das System Daten erfasst hat.
 
@@ -584,7 +589,7 @@ Make sure that the [!DNL Video Analytics] preset package from the first Author n
 
 ### Beheben von Problemen bei der Konfiguration von Videoberichten {#troubleshooting-the-video-reporting-configuration}
 
-* Während der Installation treten manchmal Timeouts beim Analytics API Server auf. Bei der Installation wird 20-mal versucht, die Verbindung wiederherzustellen. Wenn diese Situation eintritt, zeichnet die Protokolldatei mehrere Fehler auf. Suchen nach `SiteCatalystReportService`.
+* Während der Installation treten manchmal Timeouts beim Analytics API Server auf. Bei der Installation wird 20-mal versucht, die Verbindung wiederherzustellen. Wenn diese Situation eintritt, zeichnet die Protokolldatei mehrere Fehler auf. Suchen Sie nach `SiteCatalystReportService`.
 * Not installing the [!DNL Video Analytics] preset package first can cause the creation of a new report suite.
 * Upgrading from AEM 6.3 to AEM 6.4 or AEM 6.4.1, then configuring **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**, still creates a report suite. Dieses Problem ist bekannt und wird in AEM 6.4.2 behoben.
 
@@ -794,7 +799,7 @@ Das Konfigurieren des Dynamic Media-Bildservers umfasst die Bearbeitung des Ado
 >[!NOTE]
 Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media). Sie können für Ihre Installation optional aber eine Feineinstellung verwenden, indem Sie den Dynamic Media-Bildserver so konfigurieren, dass er bestimmte Spezifikationen oder Anforderungen erfüllt.
 
-**Voraussetzung**: Stellen Sie _vor_ der Konfiguration des Image-Servers für dynamische Medien sicher, dass Ihre VM von Windows eine Installation der Microsoft Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können das [Microsoft Visual C++ 2010 Redistributable Package (x64) hier herunterladen](https://www.microsoft.com/de-de/download/details.aspx?id=14632).
+**Voraussetzung**: _Bevor_ Sie den Image-Server für dynamische Medien konfigurieren, stellen Sie sicher, dass Ihre VM von Windows eine Installation der Microsoft Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können das [Microsoft Visual C++ 2010 Redistributable Package (x64) hier herunterladen](https://www.microsoft.com/de-de/download/details.aspx?id=14632).
 
 **So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver**:
 
@@ -958,7 +963,7 @@ Für erweiterte Anwendungsfälle kann der Modifikator **[!UICONTROL icc=]** für
 * **[!UICONTROL iccEmbed]** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/de_DE/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
 >[!NOTE]
-The standard set of Adobe color profiles are only available if you have [Feature Pack 12445](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html). Feature Pack 12445 enthält die Adobe-Farbprofile.
+Der Standardsatz von Adobe-Profilen für Farben ist nur verfügbar, wenn Sie [Feature Pack 12445 aus Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) oder [Feature Pack 12445 aus der Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert haben. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html ) and [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 enthält die Adobe-Farbprofile.
 
 ### Installing feature pack 12445 {#installing-feature-pack}
 
@@ -966,7 +971,7 @@ Sie müssen Feature Pack 12445 installieren, um die Funktionen für das Farbmana
 
 **So installieren Sie Feature Pack 12445**:
 
-1. Navigate to [Package Share](https://www.adobeaemcloud.com/content/packageshare.html ) and download either `cq-6.3.0-featurepack-12445`.
+1. Navigieren Sie zu [Package Share](https://www.adobeaemcloud.com/content/packageshare.html ) oder [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) und laden Sie sie herunter `cq-6.3.0-featurepack-12445`.
 
    See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM.
 
