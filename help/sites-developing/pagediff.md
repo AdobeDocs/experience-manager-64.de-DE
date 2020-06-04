@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 46%
 
 ---
 
@@ -41,7 +44,7 @@ Da AEM beim Einsatz des Mechanismus zum Abweichen von Seiten die vorherige Versi
 
 >[!CAUTION]
 >
->Um die Funktion zum Abwechseln von Seiten verwenden zu können, muss der Benutzer über die Berechtigung** Ändern/Erstellen/Löschen** auf dem Knoten verfügen `/content/versionhistory`.
+>Um die Funktion zum Trennen von Seiten verwenden zu können, muss der Benutzer über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten verfügen `/content/versionhistory`.
 
 ### Ab AEM 6.4.3 {#as-of-aem}
 
@@ -49,9 +52,9 @@ Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden 
 
 `/tmp/versionhistory/`
 
-Dieser Inhalt wird von einem Dienstbenutzer erstellt, der über die Berechtigung verfügt, die Sichtbarkeit auf den aktuellen Benutzer zu beschränken. Daher sind keine speziellen Berechtigungen erforderlich.
+Dieser Inhalt wird von einem Dienstbenutzer erstellt, der über die Berechtigung verfügt, die Sichtbarkeit auf den aktuellen Benutzer zu beschränken. Aus diesem Grund sind keine speziellen Berechtigungen erforderlich.
 
-Eine Bereinigungsaufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
+Eine Bereinigungs-Aufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
 
 ## Entwicklerbeschränkungen {#developer-limitations}
 
