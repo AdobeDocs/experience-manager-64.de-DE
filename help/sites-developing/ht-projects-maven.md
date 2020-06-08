@@ -10,14 +10,17 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 0e3c64b43ceba3b8ebee134872123f5c5d03affa
+source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+workflow-type: tm+mt
+source-wordcount: '2247'
+ht-degree: 70%
 
 ---
 
 
 # Erstellen von AEM-Projekten mit Apache Maven{#how-to-build-aem-projects-using-apache-maven}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 This document describes how to set up an AEM project based on [Apache Maven](https://maven.apache.org/).
 
@@ -41,7 +44,7 @@ Wenn Sie Ihr AEM-Projekt mit Maven erstellen, haben Sie mehrere Vorteile:
 
 Früher mussten Entwickler recht viele einzelne Abhängigkeiten von verschiedenen AEM-Bibliotheken verwalten. Jedes Mal, wenn sie eine neue API verwendeten, mussten sie eine oder mehrere einzelne Abhängigkeiten zum Projekt hinzufügen. Bei einem Projekt führte die Einführung des UberJar dazu, dass 30 verschiedene Abhängigkeiten aus dem Projekt entfernt werden konnten.
 
-### Wie verwende ich das UberJar? {#how-to-i-use-the-uberjar}
+### How do I use the UberJar? {#how-do-i-use-the-uberjar}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
 
