@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
 workflow-type: tm+mt
-source-wordcount: '21556'
+source-wordcount: '21555'
 ht-degree: 25%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 25%
 |---|---|
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
-| Datum     | 05. März 2020 |
-| Download-URL | AEM 6.4.8.0 auf [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), [Softwareverteilung(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| Datum | 05. März 2020 |
+| Download-URL | AEM 6.4.8.0 für [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
 
@@ -143,7 +143,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Ungültige Zeichen werden in der URL angezeigt, die einer Schaltflächenkomponente hinzugefügt wird (NPR-32684).
 
-### Forms {#forms}
+### Formulare {#forms}
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Wenn ein Benutzer ein Inhaltsfragment bearbeitet, wird die bereits gelöschte Variante des Inhaltsfragments wiederhergestellt (NPR-31178).
 
-* Die Abfrage der Inhaltsfragmentmodelle ist ineffizient. Es ist sehr langsam, wenn die Instanz viele Seiten hat und ein Fehler auftritt (NPR-30666).
+* Die Abfrage der Inhaltsfragmentmodelle ist ineffizient. Es ist sehr langsam, wenn die Instanz viele Seiten hat und einen Fehler auslöst (NPR-30666).
 
 * Beim Speichern des Inhaltsfragmentmodells wird die Uhrzeit im Datums- und Uhrzeitfeld auf 00:00 (NPR-30540) eingestellt.
 
@@ -317,7 +317,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 * Der Administrator einer eingeschränkten Gruppe ist nicht in der Lage, die Gruppenkarte Ansicht, kann keine Schnelllink-Vorgänge (Gruppen bearbeiten/Veröffentlichen/Löschen) in der AEM-Autoreninstanz (NPR-30810) durchführen.
 * Bei der Erstellung einer neuen Site in der AEM-Autoreninstanz (NPR-28840) sind keine Informationen zu Mitgliedergruppen/Gruppen sichtbar.
 
-##### Forms {#forms-6470}
+##### Formulare {#forms-6470}
 
 >[!NOTE]
 >
@@ -458,7 +458,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 
 * Unterstützung für die Verfolgung von dynamischer UI-Zustände im Tracking-Ereignis in der Basis-API hinzugefügt. NPR-30742, GRANITE-26322: Hotfix für GRANITE-26036
 
-**Forms**
+**Formulare**
 
 >[!NOTE]
 >
@@ -678,7 +678,7 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 
 * Reflektiertes Cross-Site-Scripting (XSS) bei Verwendung einer ungültigen Auswahl. Hotfix für CQ-4270397
 
-**Forms**
+**Formulare**
 
 Zu den wichtigsten Merkmalen von AEM 6.4.5.0 Forms gehören:
 
@@ -934,7 +934,7 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 * Wenn wir das Dialogfeld &quot;Vollständige Arbeitselemente&quot;in der Workflow-Benachrichtigung öffnen, die ein Tag-Feld enthält, wird durch Klicken auf das Kreuz eine Tag-Eigenschaft hinzugefügt. NPR-28304: Hotfix für CQ-4261321
 * Die Schaltfläche zum Umschalten der Benutzerauswahl im Dialogfeld &quot;Aufgabe neu zuweisen&quot;funktioniert nicht. NPR-28963: Hotfix für CQ-4264206
 
-**Forms**
+**Formulare**
 
 Zu den wichtigsten Merkmalen von AEM 6.4.4.0 Forms gehören:
 
@@ -1199,7 +1199,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 
 * Die Bearbeitungssymbolleiste wird bei der ersten Bearbeitung für Komponenten deaktiviert. Hotfix für CQ-4253270
 
-**Forms**
+**Formulare**
 
 Zu den wichtigsten Merkmalen von AEM 6.4.3.0 Forms gehören:
 
@@ -1548,7 +1548,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 * Bei der Installation von Inhaltspaketen werden die ACLs nach Prinzipal gruppiert, wodurch das Berechtigungsmodell gebrochen wird. NPR-24583: Hotfix für Granite-21591
 * Aktualisieren Sie Jetty auf 9.4.11, um Schwachstellen zu beheben. NPR-25030: Hotfix für Granite-22120
 
-**Forms**
+**Formulare**
 
 Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 
@@ -1905,7 +1905,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 
 * Verbesserte intelligente Tags. NPR-21951
 
-**Forms**
+**Formulare**
 
 AEM Forms-Fehlerbehebungen werden über Add-on-Pakete und andere mit der Version gelieferte Patch-Installationsprogramme bereitgestellt. Weitere Informationen finden Sie unter AEM Forms-Versionen.
 
