@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '3076'
+ht-degree: 82%
 
 ---
 
 
 # Einführung in das Authoring adaptiver Formulare  {#introduction-to-authoring-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adaptive Formulare bieten Ihnen die Möglichkeit, ansprechende, interaktive, dynamische und adaptive Formulare zu erstellen. AEM Forms bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen von adaptiven Formularen und für die Arbeit mit diesen. Sie können adaptive Formulare auf Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
@@ -51,7 +54,7 @@ Wenn Sie ein neues adaptives Formular erstellen oder ein vorhandenes bearbeiten,
 
 ![Benutzeroberfläche für Authoring adaptiver Formulare](assets/formeditor.png)
 
-******A. Seitenleiste** B. Seitensymbolleiste **C.** Seite &quot;Adaptives Formular&quot;
+**A.** Seitenleiste **B.** Seitensymbolleiste **C.** Seite &quot;Adaptives Formular&quot;
 
 ### Randleiste {#sidebar}
 
@@ -65,7 +68,7 @@ Die Seitenleiste ermöglicht Ihnen Folgendes:
    ![Randleiste](assets/sidebar-comps-2.png)
    [Zum Vergrößern hier klicken](assets/sidebar-comps-2.png)
 
-******** A. Inhaltsbrowser **B. Eigenschaftenbrowser** C.**Asset Browser** D. Komponentenbrowser
+**A.** Inhaltsbrowser **B.** Eigenschaftenbrowser **C.** Asset Browser **D.** Komponentenbrowser
 
 Die Seitenleiste enthält folgende Browser:
 
@@ -85,9 +88,9 @@ Die Seitenleiste enthält folgende Browser:
 
 * **Eigenschaftenbrowser**
 
-   Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des adaptiven Formularcontainers an:
+   Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des Containers für adaptive Formulare an:
 
-   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > **[!UICONTROL Container]** für adaptive Formulare und dann auf ![cmppr](assets/cmppr.png).
+   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > Container **[!UICONTROL für]** adaptives Formular und dann auf ![cmppr](assets/cmppr.png).
 
 * **Assets-Browser**
 
@@ -149,7 +152,7 @@ Die Seitenleiste enthält folgende Browser:
   </tr> 
   <tr> 
    <td>Dateianlage</td> 
-   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td> 
+   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Unterstützte Dateiformate</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Auflistung der Dateianhänge</td> 
@@ -310,7 +313,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 * **[!UICONTROL Seitliches Bedienfeld]** ![umschalten](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 
-* **[!UICONTROL Seiteninformationen]** ![thematische Optionen](assets/theme-options.png): Ermöglicht die Anzeige von Seiteneigenschaften, das Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Formulars, das Starten eines Formular-Workflows und das Öffnen des Formulars in der klassischen Benutzeroberfläche.
+* **[!UICONTROL Seiteninformationen]** ![thematische Optionen](assets/theme-options.png): Ermöglicht die Ansicht von Seiteneigenschaften, das Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Formulars, den Beginn eines Formular-Workflows und das Öffnen des Formulars in der klassischen Benutzeroberfläche.
 
 * **[!UICONTROL Emulator]** - ![Lineal](assets/ruler.png): Hiermit können Sie das Aussehen des Formulars für verschiedene Displaygrößen wie Tablets und Smartphones emulieren.
 
@@ -383,7 +386,7 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 
 * **[!UICONTROL rootPanel]**: Der Stammbereich eines adaptiven Formulars. Er kann Unterbereiche unterhalb des Elementknotens enthalten. Jeder Bereich, einschließlich des Stammbereichs, kann mit einem Layout verknüpft sein. Das Layout des Bereichs legt fest, wie das Formular unterteilt wird. Beispielsweise werden im Akkordeon-Layout* die Elemente *als Akkordeon-Schritte dargestellt.
 
-* **[!UICONTROL Symbolleiste]**: Ein Container für adaptive Formulare verfügt über eine zugehörige globale Symbolleiste, die global für das Formular ist. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
+* **[!UICONTROL Symbolleiste]**: Ein Container eines adaptiven Formulars verfügt über eine zugehörige globale Symbolleiste, die für das Formular global ist. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **[!UICONTROL Assets]**: Dieser Knoten enthält weitere Informationen, die für das Authoring von Formularen verwendet werden. Beispiele: Formularmodelldetails, Lokalisierungsdetails usw.
 
