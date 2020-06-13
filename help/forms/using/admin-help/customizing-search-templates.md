@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +47,7 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
 
    * Wählen Sie oben in der Registerkarte „Kriterien“ ein Prozess- oder Aufgabenelement aus.
 
-      **Tipp**: *Wenn Sie zuvor das Element &quot;Prozessname&quot;ausgewählt und einen Prozess angegeben haben, stehen alle in diesem Prozess definierten Prozessvariablen zur Auswahl bereit.*
+      **Tipp**: *Wenn Sie zuvor das Element &quot;Prozessname&quot;ausgewählt und einen Prozess angegeben haben, stehen alle in diesem Prozess definierten Prozessvariablen ebenfalls zur Auswahl bereit.*
 
       **Tipp**: *Wenn Sie das Element &quot;Aufgabe sichtbar&quot;auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
 
@@ -55,9 +58,10 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
       * Wählen Sie einen Vergleichsoperator (z. B. „gleich“) aus der bereitgestellten Liste aus und geben Sie den Wert des Operanden im Feld daneben an.
       * (Optional) Damit Benutzer den Operandenwert in Workspace ändern können, aktivieren Sie „Dem Benutzer das Ändern des Operanden gestatten“.
       * (Optional) Damit Benutzer den Wert des relationalen Operators in Workspace ES ändern können, aktivieren Sie „Dem Benutzer das Auswählen eines anderen relationalen Operators gestatten“. Wählen Sie in der angezeigten Liste die Operatoren, die für den Benutzer verfügbar sein sollen.
+
       **Tipp**: *Wenn Sie Prozessname als Element ausgewählt haben, können Sie auf das Symbol neben dem Operandenfeld klicken, um eine Liste anzuzeigen, in der Sie einen Prozess auswählen können, der auf dem Formularserver ausgeführt wird. Nachdem Sie einen Vorgang ausgewählt haben, sind alle in diesem Prozess definierten Prozessvariablen im oberen Bereich der Registerkarte „Kriterien“ unter „Prozessvariablen“ verfügbar.*
 
-      **Tipp**: Sie *können ein Element aus der Suchvorlage löschen, indem Sie auf das Symbol Löschen neben den Suchkriterien des Elements klicken.*
+      **Tipp**: *Sie können ein Element aus der Suchvorlage löschen, indem Sie auf das Symbol Löschen neben den Suchkriterien des Elements klicken.*
 
 
 1. (Optional) Klicken Sie für jede Spaltenüberschrift, die in den Suchergebnissen angezeigt werden soll, auf die Registerkarte „Layout“ und führen Sie folgende Schritte aus:
@@ -66,7 +70,9 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
    * Wählen Sie in der Liste „Anzuzeigende Spalten“ das Prozess- oder Aufgabenelement aus und klicken Sie auf den Nach-oben- oder Nach-unten-Pfeil´ , um es an die gewünschte Position in der Spaltenreihenfolge zu verschieben. Die Spaltenüberschriften der Suchergebnisse werden in der hier aufgeführten Reihenfolge angezeigt.
    * (Optional) Wählen Sie zum Ändern des Namens des Elements für die Spaltenüberschrift das Element in der Liste „Anzuzeigende Spalten“ aus und geben Sie den neuen Namen an.
 
-      **Hinweis**: Das in *der Suchvorlage angegebene Layout setzt die Voreinstellungen des Benutzers für Spaltenüberschriften in Workspace außer Kraft.*
+   >[!NOTE]
+   >
+   >Das in der Suchvorlage angegebene Layout setzt die für Spaltenüberschriften in Workspace festgelegten Voreinstellungen des Benutzers außer Kraft.
 
 1. (Optional) Klicken Sie für jede Spalte, die in den Suchergebnissen sortiert werden soll, auf die Registerkarte „Sortierung“ und führen Sie folgende Schritte aus:
 
