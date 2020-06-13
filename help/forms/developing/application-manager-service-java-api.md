@@ -1,6 +1,6 @@
 ---
-title: Application Manager Service JavaAPI-Kurzanleitung (SOAP)
-seo-title: Application Manager Service JavaAPI-Kurzanleitung (SOAP)
+title: Application Manager Service JavaAPI Quick Beginn(SOAP)
+seo-title: Application Manager Service JavaAPI Quick Beginn(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
@@ -10,28 +10,33 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
 
-# Application Manager Service JavaAPI-Kurzanleitung (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Application Manager Service JavaAPI Quick Beginn (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-Java API Quick Start(SOAP) ist für den Application Manager-Dienst verfügbar.
+Java API Quick Beginn (SOAP) ist für den Application Manager-Dienst verfügbar.
 
-[Kurzanleitung: Bereitstellen von Anwendungen mit der Java API(SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Quick Beginn: Bereitstellen von Anwendungen mit der Java API(SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Kurzanleitung: Entfernen einer Anwendung mit der Java API(SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
+[Quick Beginn: Entfernen einer Anwendung mit der Java-API(SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
->Die APIs des Anwendungsmanagers unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
+>Die Anwendungsverwaltungs-APIs unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-* ***Hinweis **: Java API(SOAP)-Schnellstart in Programmieren mit AEM Forms basiert auf Forms, wenn Sie ein anderes Betriebssystem wie Unix verwenden. Ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Java API(SOAP) Quick Beginn im Abschnitt Programmieren mit AEM Forms basieren auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Kurzanleitung (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung basierend auf einer vorhandenen LCA-Datei mit dem Namen *EncryptDocument.lca* importiert.
 
@@ -133,7 +138,7 @@ Im folgenden Java-Codebeispiel wird eine Anwendung basierend auf einer vorhanden
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Entfernen einer Anwendung mit der Java-API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Entfernen einer Anwendung mit der Java-API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit dem Namen *EncryptDocument* entfernt.
 
