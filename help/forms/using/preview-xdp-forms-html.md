@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 80%
 
 ---
 
@@ -43,6 +46,7 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
       * -/de/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >Kopieren Sie nicht den angegebenen Wert in das Feld „Authentifizierungsanforderungen“, das es die Sonderzeichen im Wert beschädigen kann. Geben Sie die stattdessen den spezifizierten Wert in das Feld ein.
@@ -68,8 +72,8 @@ Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist sta
 1. In the Options window, select **Server Options** page, provide the following details, and click **OK**.
 
    * **Server URL**: AEM Forms-Server URL.
-   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.
-   * **** HTML-Vorschaukontext: Pfad des Profils zum Rendern von XFA-Formularen. Die folgenden Standardprofile werden zur Vorschau des Formulars in Designer verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
+   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.     
+   * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
@@ -77,6 +81,7 @@ Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
+
    **Hinweis:***Stellen Sie sicher, dass AEM Forms ausgeführt wird. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![AEM Forms Designer-Optionen ](assets/server_options.png)
@@ -103,7 +108,7 @@ Durch Testen Ihres Formulars mit Hilfe von Musterdaten können Sie sicherstellen
 
 1. Wählen Sie **Datei > Formulareigenschaften**.
 
-1. Klicken Sie auf die Registerkarte **Vorschau **und geben Sie im Feld &quot;Datendatei&quot;den vollständigen Pfad zu Ihrer Testdatendatei ein. Sie können auch auf die Schaltfläche „Durchsuchen“ klicken, um zur gewünschten Datei zu gelangen.
+1. Klicken Sie auf die Registerkarte **Vorschau** und geben Sie im Feld „Datendatei“ den vollständigen Pfad zu einer Testdatendatei ein. Sie können auch auf die Schaltfläche „Durchsuchen“ klicken, um zur gewünschten Datei zu gelangen.
 
 1. Klicken Sie auf **OK**. Wenn Sie das nächste Mal eine Vorschau des Formulars auf der Registerkarte **HTML-Vorschau** anzeigen, werden die Datenwerte der XML-Musterdatei in den entsprechenden Objekten dargestellt.
 
@@ -111,4 +116,4 @@ Durch Testen Ihres Formulars mit Hilfe von Musterdaten können Sie sicherstellen
 
 In AEM Forms können Sie die Formulare und Dokumente in einem Repository in der Vorschau anzeigen. Mithilfe der Vorschau können Sie genau sehen, wie die Formulare aussehen und wie sie von Endbenutzern verwendet werden.
 
-[**Support kontaktieren **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Support kontaktieren **](https://www.adobe.com/de/account/sign-in.supportportal.html)
