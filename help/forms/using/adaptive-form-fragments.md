@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2090'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +40,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Fens
 
    * **[!UICONTROL Kein]**: Das Fragment wird von Grund auf ohne Formularmodell erstellt.
    * **[!UICONTROL Formularvorlage]**: Das Fragment mit mithilfe einer XDP-Vorlage erstellt, die auf AEM Forms hochgeladen wurde. Wählen Sie die entsprechende XDP-Vorlage als Formularmodell für das Fragment aus.
+
    ![Erstellen eines adaptiven Formulars mit einer Formularvorlage als Modell](assets/form-template-model.png)
 
    Die Teilformulare, die als Fragmente in der ausgewählten Vorlage markiert sind, werden ebenfalls angezeigt. Sie können ein Teilformular für ein adaptives Formularfragment aus der Dropdownliste wählen.
@@ -46,6 +50,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Fens
    Außerdem können Sie ein adaptives Formularfragment aus Teilformularen erstellen, die nicht als Fragmente in der Formularvorlage markiert sind, indem Sie den SOM-Ausdruck für das Teilformular in der Dropdownliste angeben.
 
    * **[!UICONTROL XML-Schema]**: Das Fragment wird mithilfe eines XML-Schemas erstellt, das auf AEM Forms hochgeladen wurde. Sie können ein XML-Schema als Formularmodell hochladen oder aus den verfügbaren Schemata wählen.
+
    ![Erstellen eines adaptiven Formularfragments, das auf einem XML-Schema basiert](assets/xml-schema-model.png)
 
    Sie können ein adaptives Formularfragment auch erstellen, indem Sie einen „complexType“ im ausgewählten Schema aus der Dropdownliste wählen.
@@ -71,7 +76,9 @@ Wenn Sie ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für da
 
    * **[!UICONTROL Name]**: Name des Fragments. Der Standardwert ist der Elementname des Bedienfelds. Dies ist ein Pflichtfeld.
 
-      ***Hinweis **: Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment eingeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.*
+      >[!NOTE]
+      >
+      >Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment eingeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
 
    * **[!UICONTROL Title]**: Titel des Formulars. Der Standardwert ist der Titel des Bedienfelds. 
    * **[!UICONTROL Description]**: Beschreibung des Fragments.
@@ -84,8 +91,9 @@ Wenn Sie ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für da
 
    * **[!UICONTROL XSD-REF]**: Diese Option ist nur in den XSD-basierten adaptiven Formularen verfügbar. Es zeigt den Ort des XML-Schemas an.
    * **[!UICONTROL XDP-REF]**: Diese Option ist nur in den XDP-basierten adaptiven Formularen verfügbar. Es wird der Speicherort der XDP-Vorlage angezeigt.
+
    ![save-fragment](assets/save-fragment.png)
-   **** Abbildung: Dialogfeld &quot;Als Fragment *speichern&quot;*
+   **Abbildung:** *Als Fragment speichern, Dialogfeld*
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 
@@ -156,7 +164,7 @@ Sie können das Fragmentasset und dessen Bindungen im Dialogfeld „Komponente b
 
 Sie können mehrere Vorgänge auf adaptive Formularfragmente mithilfe von AEM Forms ausführen.
 
-1. Wechseln zu `https://[hostname]:[port]/aem/forms.html`.
+1. Rufen Sie `https://[hostname]:[port]/aem/forms.html` auf.
 
 1. Klicken Sie in der Symbolleiste von AEM Forms auf **[!UICONTROL Auswählen]** und wählen Sie ein adaptives Formularfragment aus. Die Symbolleiste enthält die folgenden Vorgänge, die Sie auf dem ausgewählten adaptiven Formularfragment ausführen können.
 
