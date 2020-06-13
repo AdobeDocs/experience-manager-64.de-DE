@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 81%
 
 ---
 
@@ -43,7 +46,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 >
 >Wenn Sie AEM Dispatcher zum Zwischenspeichern adaptiver Formulare verwenden, werden dabei auch adaptive Formulare im Cache abgelegt, die Formulare mit vorausgefüllten Daten enthalten. Werden solche Formulare aus dem AEM Dispatcher-Cache bereitgestellt, erhalten die Benutzer eventuell vorausgefüllte oder veraltete Daten. Verwenden Sie AEM Dispatcher daher zum Zwischenspeichern von Formularen, die keine vorausgefüllten Daten enthalten. Darüber hinaus werden im Dispatcher-Cache abgelegte Fragmente nicht automatisch ungültig gemacht. Verwenden Sie dies daher nicht zum Zwischenspeichern von Formularfragmenten. Verwenden Sie für solche Formulare und Fragmente vielmehr den [Adaptive Forms-Cache](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## JVM-Parameter {#jvm-parameters}
+## JVM-Parameter   {#jvm-parameters}
 
 For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
 
@@ -54,7 +57,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Hinweis**: Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64-bit) JDK und sollten gemäß Ihrer Systemkonfiguration angepasst werden.
+>[!NOTE]
+>
+>Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64-Bit) JDK und sollten gemäß Ihrer Systemkonfiguration hoch- oder herunterskaliert werden.
 
 ## Verwenden eines Webservers {#using-a-web-server}
 
@@ -62,7 +67,9 @@ Adaptive Formulare und HTML5-Formulare werden im HTML5-Format wiedergeben. Die A
 
 Führen Sie beispielsweise die folgenden Schritte durch, um die Komprimierung auf Apache Web Server 2.0 32-Bit mit Jboss zu ermöglichen:
 
-***Hinweis **: Die folgenden Anweisungen gelten für keine anderen Server als Apache Web Server 2.0 32 Bit. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.*
+>[!NOTE]
+>
+>Die folgenden Anweisungen gelten nicht für andere Server als den 32-Bit-Apache Web Server 2.0. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
 
 Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um die Komprimierung mit Apache Web Server zu aktivieren
 
