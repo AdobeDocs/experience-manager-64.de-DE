@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
-source-git-commit: 36d12ff07b1cdd1e6c6fee052a335d3f49eee3bb
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +25,7 @@ In diesem Abschnitt werden überwachte Ordner unter dem Aspekt der Sicherung und
 *Watched Folder* ist eine dateisystembasierte Anwendung zum Aufrufen konfigurierter Dienstvorgänge, über welche die Datei in einem der folgenden Ordner in der Hierarchie überwachter Ordner verarbeitet wird:
 
 * Eingabe
-* Bühne
+* Staging
 * Ausgabe
 * Failure
 * Preserve
@@ -66,7 +69,7 @@ In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (D
    <td><p>leer</p></td> 
   </tr> 
   <tr>
-   <td><p>Bühne</p></td> 
+   <td><p>Staging</p></td> 
    <td><p>leer</p></td> 
    <td><p>Datei1</p></td> 
    <td><p>Datei2</p></td> 
@@ -163,9 +166,12 @@ Wenn eine spätere Sicherung erfolgte, können Sie die Dateien wiederherstellen.
    * **Phase 3:** Kopiert in den Ordner „Stage“, und der Prozess wurde aufgerufen
    * **Phase 4:** Verarbeitung ist im Gang
    * **Phase 5:** Ergebnisse wurden zurückgegeben.
+
    Sind Dateien in Phase 1, werden sie verarbeitet. Sind Dateien in Phase 2 oder 3, legen Sie sie im Eingabeordner ab, damit die Verarbeitung erneut erfolgt.
 
-   **Hinweis**: Wenn die Verarbeitung einer Datei mehr als einmal erfolgt, wird ein Datenverlust verhindert, doch Ergebnisse werden ggf. dupliziert. *
+   >[!NOTE]
+   >
+   >Wenn die Verarbeitung einer Datei mehr als einmal erfolgt, wird ein Datenverlust verhindert, doch Ergebnisse werden ggf. dupliziert.
 
 ## Zusammenfassung {#conclusion}
 
