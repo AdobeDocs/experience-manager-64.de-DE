@@ -9,14 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 89%
 
 ---
 
 
 # Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen {#configuring-storage-services-for-drafts-and-submissions}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit AEM Forms können Sie speichern:
 
@@ -102,7 +105,7 @@ Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
 
 Geben Sie außer der oben angegebenen Konfiguration Informationen über die konfigurierte Fernverarbeitungsinstanz an.
 
-In the AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`), click to open **AEM DS Settings Service **in edit mode. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
+In the AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`), click to open **AEM DS Settings Service** in edit mode. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
 
 >[!NOTE]
 >
