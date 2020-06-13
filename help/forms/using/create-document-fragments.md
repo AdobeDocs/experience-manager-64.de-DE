@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '1695'
+ht-degree: 57%
 
 ---
 
@@ -46,7 +49,7 @@ Jedes Dokumentfragment enthält Felder mit statischem Text, Daten, die vom Formu
 
 Beim Erstellen von Dokumentfragmenten in diesem Tutorial werden Variablen für Felder erstellt, die Daten über die Agentenbenutzeroberfläche empfangen.
 
-Use **FDM_Create_First_IC**, as described in the [Create form data model](/help/forms/using/create-form-data-model0.md) section, as the form data model to create document fragments in this tutorial.
+Use **FDM_Create_First_IC**, as described in the [Create form data model](create-form-data-model-tutorial.md) section, as the form data model to create document fragments in this tutorial.
 
 ## Schritt 1: Erstellen Sie ein Textdokumentfragment für Rechnungsdetails {#step-create-bill-details-text-document-fragment}
 
@@ -77,12 +80,14 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    1. Geben Sie als Name der Variablen **Invoicenumber** ein.
    1. Wählen Sie als Typ **String**.
    1. Tippen Sie auf **Erstellen**.
+
    ![variable_create_string](assets/variable_create_string.png)
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
    * Rechnungszeitraum: String-Typ
    * Rechnungsdatum: Datumstyp
+
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. Erstellen Sie statischen Text für die folgenden Felder mit dem rechten Fensterbereich:
@@ -91,6 +96,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    * Rechnungszeitraum
    * Rechnungsdatum
    * Ihr Plan
+
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. Setzen Sie den Cursor neben dem Feld **Rechnungsnr.** und doppelklicken Sie auf die Variable **InvoiceNumber** auf der Registerkarte **Variablen** im linken Fensterbereich.
@@ -135,6 +141,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    1. Enter **Placesupply** as the name of the variable.
    1. Wählen Sie als Typ **String**.
    1. Tippen Sie auf **Erstellen**.
+
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
    * Statuscode: Zahlentyp
@@ -151,10 +158,11 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    * Verhältnis-Nummer
    * Status-Code
    * Anzahl von Verbindungen
+
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Place the cursor next to the **Mobile Number** field and double-click the **customer** > **mobilenum** property.
-1. Place the cursor next to the **Alternate Contact Number** field and double-click the** customer** > **alternatemobilenumber** property.
+1. Place the cursor next to the **Alternate Contact Number** field and double-click the **customer** > **alternatemobilenumber** property.
 1. Place the cursor next to the **Relationship Number** field and double-click the **customer** > **relationshipnumber** property.
 1. Select the **Variables** tab, place the cursor next to the **Place of Supply** field and double-click the **Placesupply** variable.
 1. Place the cursor next to the **State Code** field and double-click the **Statecode** variable.
@@ -194,6 +202,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    1. Enter **Previousbalance** as the name of the variable.
    1. Select **Number** as type.
    1. Tippen Sie auf **Erstellen**.
+
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
    * Zahlungen: Zahlentyp
@@ -211,6 +220,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    * Fälliger Betrag
    * Fälligkeitsdatum
    * Gebühren für verspätete Zahlungen nach Fälligkeitsdatum betragen 20 USD
+
    ![bill_summary_static](assets/bill_summary_static.png)
 
 1. Place the cursor next to the **Previous Balance** field and double-click the **Previousbalance** variable.
@@ -246,7 +256,7 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Enter **summary_charges_first_ic **as the name in the **Title** field. Der Titel wird im Feld Name automatisch ausgefüllt.
+   1. Enter **summary_charges_first_ic** as the name in the **Title** field. Der Titel wird im Feld Name automatisch ausgefüllt.
    1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
    1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
    1. Tippen Sie auf **Weiter**.
@@ -262,6 +272,7 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
    * Mehrwert - Service-Gebühren
    * Gesamgebühren
    * GESAMT ZAHLBAR
+
    ![summary_Ladys_static](assets/summary_charges_static.png)
 
 1. Wählen Sie die Registerkarte **Datenmodellobjekte**.
@@ -283,6 +294,7 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
    1. Wählen Sie **Datenmodelle und Variablen** und dann **Rechnungen** > **callcharges**.
    1. Wählen Sie **ist weniger als** als Betreiber.
    1. Wählen Sie **Anzahl** und geben Sie den Wert als **60** ein.
+
    Basierend auf dieser Bedingung wird die Zeile „Mehrwert - Service-Gebühren“ nur angezeigt, wenn der Wert für das Feld „Anrufkosten“ unter 60 liegt.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
