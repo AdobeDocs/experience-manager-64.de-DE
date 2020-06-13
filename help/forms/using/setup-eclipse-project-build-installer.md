@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 63%
 
 ---
 
@@ -18,9 +21,9 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Android-App für AEM Forms zu erstellen.
 
-1. [Laden Sie das Quellcode-Paket der AEM Forms-App herunter](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-277929160)
-1. [Legen Sie die Umgebungsvariable fest](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-111803610).
-1. [Standardmäßige AEM Forms-App erstellen](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-heading-0)
+1. [Laden Sie das Quellcode-Paket der AEM Forms-App herunter](#download-android-zip)
+1. [Legen Sie die Umgebungsvariable fest](#set-environment-variable-android).
+1. [Standardmäßige AEM Forms-App erstellen](#set-up-the-xcode-project)
 
 ## Laden Sie das Quellcode-Paket der AEM Forms-App herunter {#download-android-zip}
 
@@ -50,8 +53,8 @@ Legen Sie die folgenden Umgebungsvariablen fest, bevor Sie den Erstellungsprozes
 
 Nachdem Sie die Datei &quot;adobe-lc-mobileworkspace-src-&lt;version>.zip&quot;im lokalen Dateisystem gespeichert und die Variablen für die Umgebung festgelegt haben, erstellen Sie die AEM Forms-Android-Standardanwendung mit einer der folgenden Optionen:
 
-* [Erstellen Sie die AEM Forms-App mit Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
-* [Generieren Sie die .apk-Datei mit Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-0)
+* [Erstellen Sie die AEM Forms-App mit Android Studio](#using-android-studio)
+* [Generieren Sie die .apk-Datei mit Android Studio](#generate-apk-android-studio)
 
 ### Erstellen Sie die AEM Forms-App mit Android Studio {#using-android-studio}
 
@@ -73,6 +76,7 @@ Erstellen Sie die AEM Forms-App mit Android Studio über folgende Schritte:
    * [Branding-Anpassung](/help/forms/using/branding-customization.md)
    * [Designanpassung](/help/forms/using/theme-customization.md)
    * [Gestenanpassung](/help/forms/using/gesture-customization.md)
+
    Nach dem Anwenden entsprechender Anpassungen auf Ihre App können Sie die .apk-Datei für die Verteilung generieren.
 
 ### Generieren Sie die .apk-Datei mit Android Studio {#generate-apk-android-studio}
