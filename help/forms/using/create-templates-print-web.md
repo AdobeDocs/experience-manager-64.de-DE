@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+workflow-type: tm+mt
+source-wordcount: '1824'
+ht-degree: 66%
 
 ---
 
@@ -70,12 +73,14 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
 
    1. Specify **BillDetails** in the **Name** field.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
+
    ![forms_designer_subform](assets/forms_designer_subform.png)
 
 1. Similarly, select the root subform, select the **Subform** tab, and select **Flowed** from the **Content** drop-down list. Führen Sie auf der Registerkarte **Bindungen** folgende Schritte aus:
 
    1. Specify **TelecaBill** in the **Name** field.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
+
    ![root_subform_print_template](assets/root_subform_print_template.png)
 
 1. Wiederholen Sie die Schritte 2 bis 5, um die folgenden Teilformulare zu erstellen:
@@ -90,6 +95,7 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
    * ItemisedCalls
    * PayNow
    * Mehrwert - Service
+
    Um Zeit zu sparen, können Sie auch vorhandene Teilformulare kopieren und einfügen, um neue Teilformulare zu erstellen.
 
    To shift the **Charts** subform to the right of the Charges subform, select the **Charts** subform from the left pane, select the **Layout** tab, and specify a value for **AnchorX** field. Der Wert muss größer als der Wert für das Feld **Breite** für das Teilformular **Gebühren** sein. Wählen Sie das Teilformular **Gebühren** und wählen Sie die Registerkarte **Layout**, um den Wert des Felds **Breite** anzuzeigen.
@@ -153,6 +159,7 @@ Um ein Layoutfragment für den Druckkanal der interaktiven Kommunikation zu erst
    1. Navigate to the location to save the file and specify the name as **table_lf**.
    1. Wählen Sie **.xdp** aus der Dropdown-Liste **Dateityp**.
    1. Tippen Sie auf **Speichern**.
+
    Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server [hochladen](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) , damit die Vorlage beim Erstellen der von Layout-Fragmenten verwendet werden kann.
 
 ## Erstellen Sie eine Vorlage für den Webkanal {#create-template-for-web-channel}
@@ -170,7 +177,7 @@ Um eine Webkanal-Vorlage zu erstellen, definieren Sie einen Ordner, in dem Sie d
 
 Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Configuration Browser**.
+1. Tap **Tools** ![Tools](assets/tools-icon.svg) > **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -221,6 +228,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
    1. Geben Sie in das Feld „Titel“ **Rechnungsdetails** ein.
    1. Wählen Sie **1** aus der Dropdown-Liste **Anzahl der Spalten**.
    1. Tap ![done_icon](assets/done_icon.png) to save the properties.
+
    Der Name des Bereichs wird in der Inhaltsstruktur auf **Rechnungsdetails** aktualisiert.
 
 1. Wiederholen Sie die Schritte 7 bis 11, um der Vorlage Bereiche mit den folgenden Eigenschaften hinzuzufügen:
@@ -244,7 +252,7 @@ Nachdem Sie die Webvorlage erstellt haben, müssen Sie sie zur Erstellung der in
 
 Führen Sie die folgenden Schritte aus, um die Webvorlage zu aktivieren:
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Templates**.
+1. Tap **Tools** ![Tools](assets/tools-icon.svg) > **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Registerkarte **Aktivieren** erneut zur Bestätigung.
 
