@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
 translation-type: tm+mt
-source-git-commit: 1c79deea23ad9c5ba1c4e2471f36a40f5dbafea9
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '6809'
+ht-degree: 83%
 
 ---
 
@@ -68,23 +71,24 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
    * **Bedingung**: Klicken Sie, um eine Bedingung einzufügen. Text wird auf der Grundlage einer Bedingung eingefügt. Nur wenn die Bedingung den Status „true“ hat, wird der Text im Brief sichtbar.
    * **Hinzufügen Beschreibung**: Hinzufügen Anmerkung zu einem Textteil. Es handelt sich hierbei um Metadaten, die nur für den Autor sichtbar und nicht Teil des erstellten Briefs sind.
    * **Seitenumbruch**: Wenn Sie das Seitenumbruch-Attribut eines Textmoduls auf „false“ setzen, wird das Textmodul nicht auf mehreren Seiten angezeigt.
+
    Ein Texteditor wird geöffnet. Geben Sie den Text ein. Die Symbolleiste ändert sich je nach dem Typ der Bearbeitung, die Sie vornehmen: Absatz, Ausrichtung oder Auflistung:
 
    ![Symbolleistentyp auswählen](assets/toolbarselection.png)
 
-   **Abbildung:** Symbolleistentyp *auswählen: Absatz, Ausrichtung oder Auflistung*
+   **Abbildung:** *Symbolleistentyp auswählen: Absatz, Ausrichtung oder Auflistung*
 
    ![Absatz-Symbolleiste](assets/fonteditingtoolbar.png)
 
-   **Abbildung:** Symbolleiste *&quot;Absatz&quot;*
+   **Abbildung:** *Absatz, Werkzeugleiste*
 
    ![Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)
 
-   **Abbildung:** Werkzeugleiste *&quot;Ausrichtung&quot;*
+   **Abbildung:** *Ausrichtungssymbolleiste*
 
    ![Auflistungs-Symbolleiste](assets/bulleteditingtoolbar.png)
 
-   **Abbildung:** Symbolleiste *&quot;Auflistung&quot;*
+   **Abbildung:** *Symbolleiste &quot;Auflistung&quot;*
 
 1. Um einen anderen Textabsatz wiederzuverwenden, der in einer anderen Anwendung, z. B. auf MS Word- oder HTML-Seiten vorhanden ist, kopieren Sie den Text in den Texteditor. Die Formatierung des kopierten Textes wird im Texteditor beibehalten.
 
@@ -105,6 +109,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
    * Währungssymbole wie €,¥ und £
    * Mathematische Symbole wie z. B. □, , ^ und ^
    * Interpunktionssymbole wie ‟ und&quot;
+
    ![Sonderzeichen](assets/specialcharacters.png)
 
    Correspondence Management enthält integrierte Unterstützung für 210 Sonderzeichen. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
@@ -125,13 +130,14 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    * Add a data dictionary element in the text, select a data element from the list, and tap Insert ( ![insert](assets/insert.png)). Wenn Sie Geschützt auswählen, ist das Datenlexikonelement schreibgeschützt und wird im Briefeditor, aber nicht in der Benutzeroberfläche „Korrespondenz erstellen“ oder in der Korrespondenzerstellung angezeigt.
    * Um ein Platzhalterelement im Text einzufügen, klicken Sie im Bereich „Datenelemente“ auf „Neu erstellen“. geben Sie die Details des neuen Datenelements ein und klicken Sie auf „Erstellen“, um das neue Element der Liste hinzuzufügen. Der neue Platzhalter kann in den Text auf dieselbe Weise wie ein Datenlexikonelement eingefügt werden. Um einen Platzhalter zu bearbeiten, wählen Sie einen Platzhalter aus und tippen Sie auf „Bearbeiten“.
+
    ![Platzhalterelemente](assets/placeholder_elements_in_xmldata.png)
 
-   **Abbildung:** Platzhalterelemente wie in der Musterdatendatei eines Datenwörterbuchs angegeben **
+   **Abbildung:** *Platzhalterelemente wie in der Musterdatendatei eines Datenwörterbuchs angegeben*
 
    ![Platzhalterelemente im Brief](assets/placeholder_elements_in_text.png)
 
-   **Abbildung:** Werte für *Platzhalterelemente in der CCR-Ansicht, die aus den Datenwörterbuchvariablen gemäß den Angaben in der Musterdatendatei gefüllt werden*
+   **Abbildung:** *Platzhalterelementwerte in der CCR-Ansicht aus den Datenwörterbuchvariablen, wie in der Musterdatendatei angegeben*
 
 1. Sie können Inline-Bedingungen verwenden und wiederholen, um den Brief sehr kontextabhängig und gut strukturiert zu machen. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
 1. Tippen Sie auf **Speichern**.
@@ -395,13 +401,15 @@ For a detailed example of using static and dynamic tables in layout fragments, s
    * **Konfiguration für**: Wählen Sie die Tabelle für die Konfiguration aus. Als Suffix zum Tabellennamen in der Dropdown-Liste ist (Statisch), wenn die Tabelle statisch ist, oder (Dynamisch), wenn es sich bei der Tabelle um eine dynamische Tabelle handelt. Statische Tabellen enthalten eine feste Anzahl Zeilen. Statische Tabellen können Zielbereiche und -felder enthalten. Diese Zielbereiche und -felder können nicht an wiederholende DDEs gebunden werden. Die an Tabellenzellen gebundenen Daten bestimmen die Anzahl der Zeilen für dynamische Tabellen.
    * **Zeilen**: Wählen Sie die Anzahl der Zeilen für das Layout aus. Die konfigurierte Zeilenanzahl muss größer oder gleich der ursprünglichen Zeilenanzahl sein.
    * **Spalten**: Wählen Sie die Anzahl der Spalten für das Layout aus. Die konfigurierte Spaltenanzahl muss größer oder gleich der ursprünglichen Spaltenanzahl sein.
+
    Für jede Spalte sind folgende Details erforderlich:
 
    * **Kopfzeile**: für die Kopfzeile anzuzeigender Text
    * **Fußzeile**: für die Fußzeile anzuzeigender Text
    * **Typ**: Typ der zusätzlichen Spalte. Feld- oder Zielbereich Der Typ ist für statische Platzhaltertabellen aktiviert. Der Typ kann auf Spaltenebene definiert werden, nicht auf Zellenebene. Alle Zellen in einer erweiterten Spalte sind vom gleichen Typ. Für eine dynamische Tabelle haben alle Spalten den Typ „Feld“. Für Nicht-Platzhaltertabellen können Sie den Typ der zusätzlichen Spalten nicht definieren. In diesem Fall ist der Typ der zusätzlichen Zellen in einer erweiterten Spalte identisch mit dem Typ der letzten Spalte in dieser Zeile. Der Typ der Zelle in der zusätzlichen Zeile ist identisch mit dem Typ der letzten Zelle in dieser Spalte.
    * **Breitenverhältnis**: Verhältnis der Tabellenspaltenbreiten.
-   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#main-pars-header-28).
+
+   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 1. Tippen Sie auf **Speichern**.
 
@@ -489,6 +497,7 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
 
    * Hinzufügen Teilformular in die Tabellenspalte. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
    * Hinzufügen Sie ein Teilformular in die Tabellenzelle. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
+
    Oder verwenden Sie die hier angehängten statischen und dynamischen XDPs.
 
    Weitere Informationen zum Arbeiten mit Layout-Fragmenten finden Sie unter [Layout-Fragmente](#layoutfragments).
