@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +24,7 @@ Kenntnisse im Umgang mit CSS und von LESS-Framework.
 
 ## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](themes.md)keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 
@@ -52,7 +55,7 @@ Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Eleme
 
 ## Änderung des Komponentenstils {#changing-component-style}
 
-Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Um diese Aufgabe zu erfüllen, erstellen oder aktualisieren Sie Ihre benutzerdefinierten .css-Dateien, um die in diesem Artikel aufgeführten Stilkonstrukte einzuschließen.
+Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Um diese Aufgabe zu erreichen, erstellen oder aktualisieren Sie Ihre benutzerdefinierten .css-Dateien, um die in diesem Artikel aufgeführten Stilkonstrukte einzuschließen.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 
