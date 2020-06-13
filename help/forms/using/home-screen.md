@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +28,7 @@ Auf dem Startbildschirm werden standardmäßig alle Formulare einschließlich St
 In der folgenden Abbildung werden die wichtigsten Komponenten auf dem standardmäßigen Startbildschirm mit Anmerkungen erläutert.
 ![Startbildschirm](assets/home-screen-1.png)der Forms-App[Zum Vergrößern klicken](assets/home-screen-1-1.png)
 
-1. **Menüschaltfläche**: Tippen Sie auf die Schaltfläche **Menü **Aufgaben, Formulare, Postausgänge und Einstellungen. Wenn Ihre AEM Forms-App mit einem AEM Forms JEE-Server verbunden ist, wird die Option „Aufgaben“ angezeigt. Die Option „Aufgaben“ speichert auch die Entwürfe, die aus Aufgaben in einem Prozess erstellt wurden. Beim AEM Forms OSGi-Server ist die Option „Aufgaben“ ausgeblendet. Im Postausgang werden die gespeicherten Formulare und Entwürfe vor der Synchronisierung mit dem Server abgelegt. All saved forms and drafts in the Outbox are uploaded to the AEM Forms server when the app is [synchronized with the server](/help/forms/using/sync-app.md). Weitere Informationen zu den Einstellungen finden Sie unter [Aktualisieren allgemeiner Einstellungen](/help/forms/using/update-general-settings.md).
+1. **Menüschaltfläche**: Tippen Sie auf die **Menüschaltfläche** , um zu Aufgaben, Formularen, Postausgang und Einstellungen zu navigieren. Wenn Ihre AEM Forms-App mit einem AEM Forms JEE-Server verbunden ist, wird die Option „Aufgaben“ angezeigt. Die Option „Aufgaben“ speichert auch die Entwürfe, die aus Aufgaben in einem Prozess erstellt wurden. Beim AEM Forms OSGi-Server ist die Option „Aufgaben“ ausgeblendet. Im Postausgang werden die gespeicherten Formulare und Entwürfe vor der Synchronisierung mit dem Server abgelegt. All saved forms and drafts in the Outbox are uploaded to the AEM Forms server when the app is [synchronized with the server](/help/forms/using/sync-app.md). Weitere Informationen zu den Einstellungen finden Sie unter [Aktualisieren allgemeiner Einstellungen](/help/forms/using/update-general-settings.md).
 1. **Aufgabe oder Formular**: Tippen Sie auf die aufgeführte Aufgabe oder das Formular, mit denen Sie arbeiten möchten.
 1. **Horizontale Auslassungspunkte**: gibt an, dass Aktionen für das Formular zur Verfügung stehen. Beim Tippen auf die Auslassungspunkte werden die Aktionen und Beschreibungen angezeigt, die vom Autor angegeben wurden. The **Delete Draft** and **Complete** option is visible when you tap the ellipsis.
 1. **Aktualisieren-Symbol**: Tippen Sie auf dieses Symbol, um Ihre App mit dem AEM Forms-Server zu synchronisieren.
