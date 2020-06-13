@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +69,7 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 * Formulardatenmodell
 * Agent-Benutzeroberfläche
 * Bedingte Daten
-* Bilder 
+* Bilder
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
@@ -87,7 +90,7 @@ Ein Formulardatenmodell ermöglicht es, eine interaktive Kommunikation mit unter
 * Beispieldaten bearbeiten
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
 ## Schritt 3: Erstellen Sie Dokumentfragmente {#step-create-document-fragments}
 
@@ -138,7 +141,7 @@ Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie k
 * Erstellen Sie ein Diagramm in der Webversion der interaktiven Kommunikation
 * Erstellen von Hyperlinks in der Webversion der interaktiven Kommunikation
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
 ## Schritt 6: Testen Sie Ihre interaktive Kommunikation {#step-test-your-interactive-communication}
 
