@@ -10,7 +10,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '1702'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +38,7 @@ Führen Sie folgendes Verfahren durch um von der vorhandenen AEM 6.2 Forms on JE
 
 ## AEM 6.0 Forms on JEE > AEM 6.3 Forms on JEE {#aem-forms-jee-60-to-63}
 
-Die direkte Aktualisierung von LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms auf AEM 6.4 Forms ist nicht verfügbar. Sie können eine Zwischenaktualisierung auf eine oder mehrere Versionen von LiveCycle oder AEM Forms durchführen und dann auf AEM 6.4 Forms aktualisieren. Eine Liste der Zwischenversionen und entsprechenden Aktualisierungsanweisungen finden Sie unter [Aktualisierungspfad wählen](/help/forms/using/upgrade.md#main-pars-header).
+Die direkte Aktualisierung von LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms auf AEM 6.4 Forms ist nicht verfügbar. Sie können eine Zwischenaktualisierung auf eine oder mehrere Versionen von LiveCycle oder AEM Forms durchführen und dann auf AEM 6.4 Forms aktualisieren. Eine Liste der Zwischenversionen und entsprechenden Aktualisierungsanweisungen finden Sie unter [Aktualisierungspfad wählen](upgrade.md).
 
 ## LiveCycle ES4 SP1 > AEM 6.4 Forms on JEE {#livecycle-es4sp1-forms-jee}
 
@@ -50,7 +53,8 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 
       * In LiveCycle ES4 SP1 verwenden die Funktionen Correspondence Management, Forms Portal, HTML Workspace, and Process Reporting Content Repository. Wenn Sie diese Funktionen nicht in LiveCycle ES4 verwendet haben und planen, diese Funktionen nicht in AEM Forms zu verwenden, ist Content Repository nicht erforderlich.
       * In AEM Forms, Adaptive Forms, Correspondence Management, HTML5-Formularen (bekannt als Mobile Forms in LiveCycle ES4 SP1), Forms Portal, HTML Workspace, Process Reporting, formularzentrierten Workflows unter OSGi wird Content Repository verwendet. Wenn Sie planen, AEM Forms für diese Funktionen zu verwenden, ist Content Repository erforderlich.
-      * Sie benötigen kein Content Repository für AEM Forms Document Security.
+      * Sie benötigen kein Content Repository für AEM Forms Dokument Security.
+
       Darüber hinaus unterscheidet sich der Repository-Typ von LiveCycle und AEM Forms. Weitere Informationen zu verfügbaren Repository-Typen und zugehörige Informationen finden Sie unter [Persistenztyp für eine AEM Forms-Installation wählen](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
    1. Erstellen Sie eine Sicherung der LiveCycle ES4 SP1-Inhalte und -Daten:
@@ -112,10 +116,11 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
    1. Legen Sie den zu verwendenden Content Repository-Typ (CRX-Repository) fest. Nur wenige AEM Forms on JEE-Funktionen verwenden die CRX Repository-Persistenz zum Speichern von Inhalten und Assets. Installieren und konfigurieren Sie Content Repository nur, wenn Sie planen, solche AEM Forms on JEE-Funktionen zu verwenden:
 
       * In AEM Forms, adaptiven Formularen, Correspondence Management, HTML5-Formularen, Forms Portal, HTML Workspace, Prozessberichterstellung, formularbasierten Workflows unter OSGi, verwenden Sie Content Repository. Wenn Sie planen, AEM Forms für diese Funktionen zu verwenden, ist Content Repository erforderlich.
-      * Sie benötigen kein Content Repository für AEM Forms Document Security.
+      * Sie benötigen kein Content Repository für AEM Forms Dokument Security.
+
       Darüber hinaus unterscheidet sich der Repository-Typ von LiveCycle und AEM Forms. Weitere Informationen zu verfügbaren Repository-Typen und zugehörige Informationen finden Sie unter [Persistenztyp für eine AEM Forms-Installation wählen](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
-   1. Erstellen Sie eine Sicherung der LiveCycle ES3-Datenbank, des globalen Datenspeichers (GDS) und des Content Repository (nicht für Document Security erforderlich). Wenn Sie auf MongoMK oder RDBMK-Persistenz aktualisieren, exportieren Sie LiveCycle ES3 Correspondence Management Assets in eine CMP-Datei und erstellen Sie Assets als AEM-Paket.
+   1. Erstellen Sie eine Sicherung der LiveCycle ES3-Datenspeicherung, der globalen Datenspeicherung (GDS) und des Content Repository (nicht für die Dokument-Sicherheit erforderlich). Wenn Sie auf MongoMK oder RDBMK-Persistenz aktualisieren, exportieren Sie LiveCycle ES3 Correspondence Management Assets in eine CMP-Datei und erstellen Sie Assets als AEM-Paket.
    1. Stellen Sie sicher, dass Ihre vorhandene Plattform (d. h. Anwendungsserver, Datenbank, Betriebssystem, Adobe Acrobat oder Hardware) für AEM 6.4 Forms on JEE unterstützt wird. Informationen zu unterstützter Hardware und Software finden Sie im Dokument [Unterstützte Plattformkombinationen](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
       Wenn Sie eine neue Instanz der Datenbank erstellen, importieren Sie die in Schritt 3 gesicherten Daten in die Datenbank. Informationen zum Importieren von Daten in eine Datenbank finden Sie in der Dokumentation des entsprechenden Datenbankanbieters.
@@ -128,7 +133,7 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
    1. Installieren Sie AEM 6.4 Forms on JEE auf einem neuen Server, indem Sie das Installationsprogramm ausführen. Das Installationsprogramm legt alle erforderlichen Dateien in derselben Installationsordnerstruktur auf dem Computer ab.
    1. Nach Abschluss der Installation führen Sie den **Configuration Manager** aus, um verschiedene AEM Forms-Module zu konfigurieren und die entsprechenden Konfigurationen festzulegen. Zusammen mit den Konfigurationseinstellungen können Sie den Pfad des Global Data Storage (GDS) und des CRX-Repository angeben.
 
-      >[!NOTE] Wählen Sie im Bildschirm &quot;Auswahl der Aktualisierungsaufgaben&quot;die Option **[!UICONTROL Aktualisierung von Adobe Experience Manager Forms 6.2.0]** . The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.4 Forms.
+      >[!NOTE] Wählen Sie im Bildschirm &quot;Auswahl der Upgrade-Aufgabe&quot;die Option **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** . The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.4 Forms.
 
    1. (Für das AEM Forms Document Security-Modul nicht erforderlich) Aktualisieren und importieren Sie das CRX-Repository auf den AEM 6.4 Forms-Server.
 
