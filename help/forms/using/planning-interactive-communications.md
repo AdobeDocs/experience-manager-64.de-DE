@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 88%
 
 ---
 
@@ -47,9 +50,9 @@ Die Anatomie enthält Daten mit den folgenden Eingabemodi:
 * Formulardatenmodell
 * Agent-Benutzeroberfläche
 * Bedingte Daten
-* Bilder 
+* Bilder
 
-In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank enthält Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. For more information, see [Create form data model](/help/forms/using/create-form-data-model0.md).
+In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank enthält Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. For more information, see [Create form data model](create-form-data-model-tutorial.md).
 
 Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der interaktiven Kommunikation:
 
@@ -60,7 +63,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
    <td>Statischer Text</td> 
    <td>FDM </td> 
    <td>Agent-Benutzeroberfläche</td> 
-   <td>Bilder </td> 
+   <td>Bilder</td> 
   </tr>
   <tr>
    <td>Rechnungsdetails</td> 
