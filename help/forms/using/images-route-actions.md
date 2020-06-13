@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 53%
 
 ---
 
@@ -44,7 +47,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
 ## Popup bei Tasklist-Aufgabenaktion {#task-list-task-action-popup}
 
-1. Erstellen Sie ein Tasklisten-Aktionspopup (siehe [Erstellen von AEM Forms Workspace-Code](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3). Dazu muss ein Dev-Paket verwendet werden.)
+1. Erstellen Sie ein Tasklisten-Aktionspopup (siehe [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code). Dazu muss ein Dev-Paket verwendet werden.)
 
 1. Kopieren Sie `/libs/ws/js/runtime/templates/task.html` nach `/apps/ws/js/runtime/templates/task.html`.
 
