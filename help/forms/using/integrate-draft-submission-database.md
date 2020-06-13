@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 88%
 
 ---
 
@@ -75,10 +78,13 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    Angeben eines anderen Namens für die Metadatentabelle:
 
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Metadatenservice. Sie können die Werte der Datenquelle, Metadaten/zusätzlichen Metadatentabellennamen ändern.
+
    Angeben eines anderen Namens für die Datentabelle:
 
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Datenservice. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
-   **Hinweis**: Wenn Sie die Tabellennamen ändern, geben Sie sie in der Form Portal-Konfiguration an.
+   >[!NOTE]
+   >
+   >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Form Portal-Konfiguration an.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -158,6 +164,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
 >
 > * Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungspool zu konfigurieren.
 > * Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
+
 >
 
 
