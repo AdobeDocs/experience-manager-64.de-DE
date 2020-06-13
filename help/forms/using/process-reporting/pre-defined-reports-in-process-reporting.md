@@ -9,7 +9,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +50,11 @@ Der Bericht &quot;Dauerhaft ausgeführte Prozesse&quot;zeigt die AEM Forms-Proze
 
 1. Klicken Sie auf **Los** , um den Bericht auszuführen.
 
-   Der Bericht wird im Fenster **Bericht **rechts neben dem Fenster **Berichte** angezeigt.
+   Der Bericht wird im Bereich **Bericht** rechts neben dem Fenster **Process Berichte** angezeigt.
 
    ![long_running_processes](assets/long_running_processes.png)
 
-   Verwenden Sie die Optionen in der oberen rechten Ecke des Bereichs **Bericht **s, um die folgenden Vorgänge für den Bericht auszuführen.
+   Verwenden Sie die Optionen in der oberen rechten Ecke des **Berichtbedienfelds** , um die folgenden Vorgänge für den Bericht auszuführen.
 
    * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten in der Datenspeicherung
    * **Legendenfarbe**&#x200B;ändern: Auswählen und Ändern der Farbe der Berichtslegende
