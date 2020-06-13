@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +46,7 @@ Die Website für Adobe-Entwickler enthält die folgenden Artikel, in denen der A
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](#including-aem-forms-java-library-files)
 
-[An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[An Menschen orientierte langlebige Prozesse aufrufen](invoking-human-centric-long-lived.md)
 
 [AEM Forms mit Web Services aufrufen](/help/forms/developing/invoking-aem-forms-using-web.md)
 
@@ -79,7 +82,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
   <tr>
    <th><p>Datei</p></th>
    <th><p>Beschreibung</p></th>
-   <th><p>Standort</p></th>
+   <th><p>Ort</p></th>
   </tr>
  </thead>
  <tbody>
@@ -230,7 +233,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
   <tr>
    <th><p>Datei</p> </th>
    <th><p>Beschreibung</p> </th>
-   <th><p>Standort</p> </th>
+   <th><p>Ort</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
@@ -444,13 +447,18 @@ Um einen AEM Forms-Dienst erfolgreich aufzurufen, legen Sie die folgenden Verbin
    * If you set this connection property to `WebLogic`, the `java.naming.factory.initial` value is set to `weblogic.jndi.WLInitialContextFactory`.
    * Likewise, if you set this connection property to `JBoss`, the `java.naming.factory.initial` value is set to `org.jnp.interfaces.NamingContextFactory`.
    * Sie können die Eigenschaft `java.naming.factory.initial` auf einen Wert setzen, der Ihren Anforderungen entspricht, wenn Sie die Standardwerte nicht verwenden möchten.
-   ***Hinweis**: Anstelle einer Zeichenfolge zum Festlegen der Verbindungseigenschaft `DSC_SERVER_TYPE` können Sie ein statisches Mitglied der Klasse `ServiceClientFactoryProperties` verwenden. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+
+   >[!NOTE]
+   >
+   >Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Gibt den AEM Forms-Benutzernamen an. Damit ein Benutzer erfolgreich einen AEM Forms-Dienst aufrufen kann, benötigen Sie die Rolle „Dienstbenutzer“. Ein Benutzer kann auch eine andere Rolle haben, die die Berechtigung zum Service-Aufruf enthält. Andernfalls wird eine Ausnahme ausgelöst, wenn versucht wird, einen Dienst aufzurufen. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
 * **DSC_CREDENTIAL_PASSWORD:** Gibt den entsprechenden Kennwortwert an. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
 * **DSC_REQUEST_TIMEOUT:** Das Standardlimit für Anforderungszeitlimits für die SOAP-Anforderung beträgt 1200000 Millisekunden (20 Minuten). Manchmal kann eine Anfrage länger dauern, um den Vorgang abzuschließen. Beispielsweise kann eine SOAP-Anforderung, die eine große Menge von Datensätzen abruft, ein längeres Zeitlimit erfordern. Mit `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT`   können Sie das Zeitlimit für Anforderungsaufrufe für die SOAP-Anforderungen erhöhen.
 
-   **Hinweis**: Nur SOAP-basierte Aufrufe unterstützen die DSC_REQUEST_TIMEOUT-Eigenschaft.
+   >[!NOTE]
+   >
+   >Nur SOAP-basierte Aufrufe unterstützen die DSC_REQUEST_TIMEOUT-Eigenschaft.
 
 Führen Sie die folgenden Aufgaben aus, um Verbindungseigenschaften festzulegen:
 
@@ -459,6 +467,7 @@ Führen Sie die folgenden Aufgaben aus, um Verbindungseigenschaften festzulegen:
 
    * The `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value
    * Ein string-Wert, der die URL des J2EE-Anwendungsservers angibt, der AEM Forms hostet
+
    >[!NOTE]
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumeration value instead of the `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value.
@@ -467,6 +476,7 @@ Führen Sie die folgenden Aufgaben aus, um Verbindungseigenschaften festzulegen:
 
    * The `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` enumeration value
    * The `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value
+
    >[!NOTE]
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumeration value instead of the `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value.
@@ -984,6 +994,7 @@ Sie können den Repository-Dienst mithilfe einer Java-Clientbibliothek aufrufen 
    * A unique ID value by specifying `new Id()`.
    * A unique UUID value by specifying `new Lid()`.
    * Der Name der Ressource. Sie können den Dateinamen der XDP-Datei angeben.
+
    Wandeln Sie den Rückgabewert in `Resource` um.
 
 1. Create a `ResourceContent` object by invoking the `RepositoryInfomodelFactoryBean` object’s `newImage` method and casting the return value to `ResourceContent`. Dieses Objekt stellt den Inhalt dar, der dem Repository hinzugefügt wird.
