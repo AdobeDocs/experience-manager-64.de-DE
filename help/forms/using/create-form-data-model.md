@@ -9,7 +9,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 116995858cd81f69d330b77fbae6a4cff97a5c2d
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1444'
+ht-degree: 77%
 
 ---
 
@@ -22,7 +25,7 @@ Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives 
 
 ## Über die Schulung {#about-the-tutorial}
 
-Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen wie AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen wie AEM-Profil, RESTful-Webdiensten, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](/help/forms/using/data-integration.md).
 
@@ -37,7 +40,7 @@ Das Formulardatenmodell sieht etwa wie folgt aus:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**********A. Konfigurierte Datenquellen** B. Datenquellenschemata **C.** Verfügbare Dienste **D. Datenmodellobjekte** E. Konfigurierte Dienste
+**A.** Konfigurierte Datenquellen **B.** Datenquellen-Schema **C.** Verfügbare Dienste **D.** Datenmodellobjekte **E.** Konfigurierte Dienste
 
 ## Voraussetzungen {#prerequisites}
 
@@ -73,10 +76,11 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
       * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
-      * **** Test auf Borge: Aktivieren Sie die Option **Test on Borrow** .
+      * **Test auf Borge:** Aktivieren Sie die Option **Test on Borrow** .
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
       * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **Wählen Sie &amp;ast; von Kundendetails**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
+
       Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
    Eine Konfiguration ähnlich der folgenden wird erstellt.
 
@@ -84,12 +88,12 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#create-fdm}
 
-AEM Forms bietet eine intuitive Benutzeroberfläche zum [Erstellen eines Formulardatenmodells](/help/forms/using/data-integration.md#main-pars-header-1524967585) aus konfigurierten Datenquellen. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für unseren Anwendungsfall verwenden wir die konfigurierte MySQL-Datenquelle.
+AEM Forms provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für unseren Anwendungsfall verwenden wir die konfigurierte MySQL-Datenquelle.
 
 Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
 1. In AEM author instance, navigate to **Forms** >  **Data Integration** s.
-1. Tap **Create** >  **Form Data Model**.
+1. Tippen Sie auf **Erstellen** > **Formulardatenmodell**.
 1. Geben Sie im Dialogfeld „Formulardatenmodell erstellen“ einen **Namen** für das Formulardatenmodell ein. Zum Beispiel **customer-shipping-billing-details**. Tippen Sie auf **Weiter**.
 1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Select **WeRetailMySQL** data source and tap **Create**.
 
@@ -127,9 +131,10 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * get
       * Aktualisieren
+
    Tippen Sie auf **Ausgewählte hinzufügen**, um dem Formulardatenmodell ausgewählte Datenmodellobjekte und Dienste hinzuzufügen.
 
-   ![weretail-schema](assets/weretail-schema.png)
+   ![weretail-Schema](assets/weretail-schema.png)
 
    >[!NOTE]
    >
@@ -168,10 +173,11 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Ausgabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail-Schema
+         customerdetail Schema
       * **Array zurückgeben**: Deaktivieren Sie die Option **Array zurückgeben**.
       * **Argumente**: Wählen Sie das Argument mit dem Namen **ID**.
-      Tippen Sie auf **Done** (Fertig). Der Dienst zum Abrufen von Kundendaten aus der MySQL-Datenbank ist konfiguriert.
+
+      Tippen Sie auf **Fertig**. Der Dienst zum Abrufen von Kundendaten aus der MySQL-Datenbank ist konfiguriert.
 
       ![shiiping-address-retrieve](assets/shiiping-address-retrieval.png)
 
@@ -187,11 +193,12 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail-Schema
+         customerdetail Schema
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
       * **Argumente**: Wählen Sie das Argument mit dem Namen **ID** und **customerdetails**.
-      Tippen Sie auf **Done** (Fertig). Der Dienst **update** zum Aktualisieren von Kundendetails in der MySQL-Datenbank ist konfiguriert.
+
+      Tippen Sie auf **Fertig**. Der Dienst **update** zum Aktualisieren von Kundendetails in der MySQL-Datenbank ist konfiguriert.
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
 
