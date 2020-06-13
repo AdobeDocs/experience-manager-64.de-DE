@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: ce8849ae94fd643147df2a3a9d5e49264e6cb638
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 98%
 
 ---
 
@@ -72,16 +75,19 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 
    * Geben Sie in „Datei hochladen“ den Pfad und den Namen der HTML- oder ZIP-Datei ein oder klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen.
    * Geben Sie in das Feld „URL angeben“ die URL der zu konvertierenden Seite oder Website ein.
-
-      ***Hinweis **: Die zu konvertierende Datei muss eine der Dateinamenerweiterungen „HTML“, „HTM“ oder „ZIP“ haben.*
+   >[!NOTE]
+   >
+   >Die zu konvertierende Datei muss eine der Dateinamenerweiterungen „HTML“, „HTM“ oder „ZIP“ besitzen.
 
 1. Legen Sie die Konfigurationseinstellungen fest:
 
    * Um benutzerdefinierte Einstellungen zu verwenden, wählen Sie „Benutzerdefinierte Einstellungen verwenden“ aus, geben Sie die Sicherheits- und Dateitypeinstellungen an und legen Sie einen Zeitlimitwert fest. Der Standardwert ist 270 Sekunden.
-
-      ***Note**: If you configured the Generate PDF service to use Acrobat WebCapture, the File Type Settings that you select on this page do not affect the PDF produced. Nehmen Sie stattdessen die geeigneten Änderungen an der auf dem Server installierten Version von Acrobat vor. *
+   >[!NOTE]
+   >
+   >Wenn der Generate PDF-Dienst für die Verwendung von Acrobat WebCapture konfiguriert ist, haben die auf dieser Seite gewählten Dateitypeinstellungen keine Auswirkungen auf die erzeugte PDF. Nehmen Sie stattdessen die geeigneten Änderungen an der auf dem Server installierten Version von Acrobat vor.
 
    * Um eine vorhandene Einstellungsdatei zu verwenden, wählen Sie „Einstellungsdatei hochladen“ aus und klicken Sie auf „Durchsuchen“, um zum Speicherort der Datei zu wechseln.
+
 
 1. Um eine XMP-Datei hochzuladen, klicken Sie auf „Durchsuchen“ und wechseln Sie zum Speicherort der Datei. Eine XMP-Datei dient zum Hinzufügen standardmäßiger Metadateninformationen. (Siehe [Informationen zu XMP-Dateien](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klicken Sie auf Erstellen. Nach der Erstellung wird ein Link zur PDF-Datei angezeigt.
