@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 95%
 
 ---
 
@@ -59,13 +62,15 @@ Wenn Sie einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhal
 
 Sie können festlegen, welcher Repository Service Provider mit Documentum verwendet werden soll. Aufrufe des Repository-Dienstes werden an den konfigurierten Provider delegiert. Die folgenden Optionen sind verfügbar:
 
-**** Name des aktuellen Repository Service Providers: Der Name des aktuellen Repository Service Providers
+**Name des aktuellen Repository-Dienstleisters:** Der Name des aktuellen Repository-Dienstleisters
 
-**** ECM Documentum Repository Provider: Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
 
-**** Repository Provider: Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
 
-***Hinwesi **: Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie „RepositoryService“ in „Anwendungen und Dienste“ > „Dienstverwaltung“.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie „RepositoryService“ in „Anwendungen und Dienste“ > „Dienstverwaltung“. <!-- Fix broken link (See Managing Services) -->
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Wählen Sie im Bereich „Repository Service Provider-Informationen“ einen anderen Repository Service Provider aus.
