@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '3726'
+ht-degree: 67%
 
 ---
 
@@ -40,7 +43,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
    * forms-users (zur Vorschau auf der Autoreninstanz)
    * cm-agent-users (für Rendering auf Veröffentlichungsinstanz)
-   Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Wenn Sie versuchen, eine Korrespondenz ohne die entsprechenden Berechtigungen wiederzugeben, wird die Fehlerseite 404 angezeigt.
+   Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Wenn Sie versuchen, eine Korrespondenz ohne die entsprechenden Berechtigungen wiederzugeben, wird die 404-Fehlerseite angezeigt.
 
 1. Wenn Sie **Vorschau**> **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: For more information on the data file, see [Data Dictionary](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
@@ -48,13 +51,13 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
 1. Die HTML-Vorschau des Briefs (Vorschau für Formulare auf Mobilgeräten) wird geöffnet, wobei die Registerkarte „Daten“ standardmäßig aktiv ist.
 
-   For more information on mobile forms and the features they support, see [Feature differentiation between Mobile Forms and PDF Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   For more information on mobile forms and the features they support, see [Feature differentiation between Mobile Forms and PDF Forms](https://helpx.adobe.com/de/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    Es gibt drei Registerkarten: Daten, Inhalt und Anlagen. Wenn keine Datenelemente (Platzhaltervariablen und Layout-Felder) vorhanden sind, wird der Brief direkt in der Inhaltsansicht geöffnet. Die Registerkarte „Anlagen“ ist nur verfügbar, wenn Anlagen vorhanden sind oder der Bibliothekszugriff aktiviert ist.
 
    >[!NOTE]
 
-   >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/de/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Daten eingeben {#enterdata}
 
@@ -82,7 +85,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    In the Content or Data tab, by tapping Highlight Selected Modules ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) on upper left of the HTML letter preview, you can disable or enable functionality to go to the content/data module when the relevant text, paragraph, or data field is selected in the letter preview.
 
-   For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](/help/forms/using/create-letter.md#main-pars-header-9).
+   For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](create-letter.md).
 
 1. Verwenden Sie zum Suchen nach Inhaltsmodulen das Suchfeld. Geben den Namen oder Titel des Inhaltsmoduls ganz oder teilweise ein, um in der Korrespondenz nach diesem zu suchen.
 1. Tap the Display icon ( ![display](assets/display.png)) in front of a list, text, condition, or target area to show or hide it in the letter.
@@ -123,7 +126,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 1. Falls erforderlich, fügen Sie Sonderzeichen in die Korrespondenz ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie z. B. □, , ^
+   * Mathematische Symbole wie z. B. □, , ^ und ^
    * Interpunktionssymbole wie ‟ und&quot;
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
@@ -164,7 +167,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
    * **Text** Zeigt die Summe der eindeutigen nicht ausgefüllten Platzhaltervariablen und Datenwörterbuchelemente im Textmodul an.
    * **Bedingung** Zeigt die Summe der eindeutigen nicht ausgefüllten Bedingungsvariablen an, die in der Bedingung enthalten sind, und der Variablen, die in den resultierenden Modulen enthalten sind.
    * **Liste** Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den der Liste zugewiesenen Modulen enthalten sind.
-   * **Zielbereich** Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Zielbereich zugewiesen sind.
+   * **Bereich** Zielgruppe Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Bereich Zielgruppe zugewiesen sind.
    Beachten Sie Folgendes zu Variablen mit Standardwerten:
 
    * Ein boolesches Variablenfeld ergibt standardmäßig *false*. Die Variable wird jedoch als nicht ausgefüllt erfasst. This implies that the variable count includes all Boolean variable fields with value *false*.
@@ -186,7 +189,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 * Auswahl (Augenauswahl): Schließt Modul aus dem Brief ein oder aus.
 * Aufzählungszeichen überspringen (gilt für Listenmodule und ihre untergeordneten Module): Überspringt Aufzählungszeichen in einem bestimmten Modul.
 * Seitenumbruch bevor (anwendbar für untergeordnete Module des Zielbereichs): Fügt Seitenumbruch vor dem Modul ein.
-* Seitenumbruch nach (gilt für untergeordnete Module des Zielbereichs): Fügt einen Seitenumbruch vor dem Modul ein.
+* Seitenumbruch nach (gilt für untergeordnete Module des Bereichs Zielgruppe): Fügt einen Seitenumbruch vor dem Modul ein.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Zielbereich an.
 * Bearbeiten (nur Textmodule): Öffnen Sie den Rich-Text-Editor zum Bearbeiten des Textmoduls.
 * Datenformat (Text- und Bedingungsmodule): Öffnen Sie alle Variablen des Moduls.
@@ -228,7 +231,7 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
 
    By tapping Highlight Selected Modules in Content ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), you can disable or enable functionality to highlight the content module in Content tab when the relevant text, paragraph, or data field is tapped in the letter preview.
 
-   For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](/help/forms/using/create-letter.md#main-pars-header-9).
+   For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](create-letter.md).
 
 1. To add a page break to the letter, tap where you want to insert a page break and select Page Break Before or Page Break After ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
@@ -244,7 +247,7 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
 
    ![Saveasdraft](assets/saveasdraft.png)
 
-   Das Dialogfeld „Entwurfsbriefname“ wird mit der Briefinstanz-ID angezeigt. Sie können optional diese ID bearbeiten. Notieren Sie sich die Brief-ID und tippen Sie anschließend auf **Fertig**. Sie können diese ID später verwenden, um den [Briefentwurf neu zu laden](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-1).
+   Das Dialogfeld „Entwurfsbriefname“ wird mit der Briefinstanz-ID angezeigt. Sie können optional diese ID bearbeiten. Notieren Sie sich die Brief-ID und tippen Sie anschließend auf **Fertig**. Sie können diese ID später verwenden, um den [Briefentwurf neu zu laden](submit-letter-topostprocess.md#reloaddraft).
 
 1. To preview the letter as a flattened PDF with the exact layout and page breaks as it will be submitted, tap ( ![preview](assets/preview.png)) Preview.
 
@@ -343,7 +346,7 @@ For more information on scripting support in HTML5 forms, see [Scripting support
 
 In der Benutzeroberfläche „Korrespondenz erstellen“ wird standardmäßig HTML oder Mobile Forms zum Rendern der Briefvorschau verwendet. Die Mobile Forms-Vorschau kann in beliebigen Browsern problemlos gerendert werden, da sie das native Plugin des Browsers verwendet und daher keine zusätzlichen Plugins benötigt werden. Sie können zum Briefvorschaumodus PDF wechseln. Allerdings können aufgrund von Browserbeschränkungen Probleme bei verschiedenen Funktionen der interaktiven PDF-Vorschau des Briefs auftreten.
 
-For more information on browser compatibility with letter preview, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+For more information on browser compatibility with letter preview, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Um den Vorschaumodus des Briefs zu ändern, führen Sie die folgenden Schritte aus:
 
