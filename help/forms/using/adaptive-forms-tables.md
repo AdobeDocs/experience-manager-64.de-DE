@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 88%
 
 ---
 
@@ -112,7 +115,7 @@ Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schrei
 Während Tabellen und Zeilen nur Ausdrücke zum Steuern ihrer Sichtbarkeit unterstützen, unterstützen Zellen folgende Ausdrücke:
 
 * **Initialisierungsskript**: Zum Ausführen einer Aktion nach der Initialsierung eines Felds.
-* **** Skript zum Bestätigen von Werten: , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **Skript zum Bestätigen von Werten:** , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
 
 >[!NOTE]
 >
@@ -129,7 +132,7 @@ Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs
 
 ## Layout für Mobilgeräte {#mobile-layouts}
 
-Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms bietet zwei Arten von mobilen Layouts für Tabellen: &quot;Kopfzeilen links&quot;und &quot;Reduzierbare Spalten&quot;.
+Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms Angebots bietet zwei Tabellenlayouts für Mobilgeräte: &quot;Kopfzeilen links&quot;und &quot;Reduzierbare Spalten&quot;.
 
 Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bearbeiten“ einer Tabelle auf der Registerkarte „Stile“ konfigurieren.
 
@@ -137,21 +140,23 @@ Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bea
 
 Im Layout „Kopfzeilen links“ werden die Spaltenüberschriften der Tabelle auf der linken Seite angeordnet und nur eine Zelle steht neben der Kopfzeile. Jede Zeile in diesem Layout ist ein eigenständiger Abschnitt. In den folgenden Abbildungen wird eine Tabelle auf einem Desktop mit derselben auf einem Mobilgerät verglichen.
 
-![](assets/desktopview.png) desktopView **** Abbildung: *Desktop-Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
+![desktopView](assets/desktopview.png)**Abbildung:** *Desktop-Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
 
-![](assets/headersontheleft.png) headersontheleft **** Abbildung: Ansicht *einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
+![headersontheleft](assets/headersontheleft.png)**Abbildung:** *Mobile Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
 
 ### Layout „Reduzierbare Spalten“{#collapsible-columns-layout}
 
 Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert, dass je nach Gerätegröße eine oder zwei Spalten angezeigt wird, während andere Spalten reduziert werden. Klicken Sie zum Anzeigen der anderen Spalten in der Tabelle auf das Symbol „Reduzieren/Erweitern“.
 
-***Hinweis**: Das Layout „Reduzierbare Spalten“ ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf Desktops, wenn nicht genug Platz verfügbar ist, um alle Spalten in einer Tabelle anzuzeigen. *
+>[!NOTE]
+>
+>Das Layout &quot;Reduzierbare Spalten&quot;ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf dem Desktop, wenn die verfügbare Breite nicht ausreicht, um alle Spalten in einer Tabelle anzuzeigen.
 
 In den folgenden Abbildungen werden Tabellen mit reduzierten und erweiterten Spalten verglichen.
 
-![](assets/collapsed-column.png) Reduzierte Spalte **** Abbildung: Reduzierte Spalten einer Tabelle mit nur zwei Spalten, die auf einem Mobilgerät angezeigt *werden*
+![Reduzierte Spalte](assets/collapsed-column.png)**Abbildung:** *Reduzierte Spalten einer Tabelle mit nur zwei Spalten auf einem Mobilgerät*
 
-![](assets/collapsible_column.png) collapse_column **** Abbildung: Erweiterte Spalte *einer Tabelle auf einem Mobilgerät*
+![collapse_column](assets/collapsible_column.png)**Abbildung:** *Erweiterte Spalte einer Tabelle auf einem Mobilgerät*
 
 ## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
 
