@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '4026'
+ht-degree: 91%
 
 ---
 
@@ -132,6 +135,7 @@ Sie können eine Aufgabe zusammen mit Notizen oder Anlagen an einen anderen Benu
    * **Weiterleitung**
    * **Link freigeben**
    * **Besprechen**
+
    >[!NOTE]
    >
    >Abhängig von der Aufgabe können Sie diese Aktionen ggf. auch über die Aufgabenliste durchführen, ohne die Aufgabe zu öffnen.
@@ -229,6 +233,7 @@ Wenn Sie eine Aufgabe abschließen, wird je nach Aufgabe möglicherweise ein Dia
    * Wählen Sie die Aufgabe aus und klicken Sie im unteren Teil der Liste auf die entsprechende Schaltfläche, um den nächsten im Prozess erforderlichen Schritt einzuleiten.
    * If the form has no buttons and the Complete button in AEM Forms workspace is available, click **Complete**.
    * Wenn das Formular Schaltflächen enthält und die Schaltfläche zum Vervollständigen in AEM Forms Workspace nicht verfügbar ist, klicken Sie auf die entsprechende Schaltfläche im Formular, um den nächsten im Prozess erforderlichen Schritt auszuführen.
+
    Wenn das Formular keine Schaltflächen enthält und die Schaltfläche &quot;Abschließen&quot;in AEM Forms Workspace nicht verfügbar ist, wird eine Meldung angezeigt, die darauf hinweist, dass das Formular nicht gesendet werden kann.
 
 1. Wenn ein Dialogfeld zur Bestätigung angezeigt wird, führen Sie eine der folgenden Aktionen aus:
@@ -271,7 +276,9 @@ Legen Sie zunächst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Be
 
 Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AEM Forms Workspace geöffnet wird, eine Anlage mit dem Formular, das für die Aufgabe verwendet wird, oder Aktionen zum Abschließen der Aufgabe per E-Mail. Wenn die E-Mail-Nachricht ein Formular mit integrierten Schaltflächen zum Abschließen der Aufgabe enthält, können Sie das Formular öffnen und die Aufgabe abschließen. Wenn die E-Mail-Nachricht Aktionen zum Abschließen der Aufgabe enthält, können Sie die Aufgabe abschließen, indem Sie auf die Aktionen in der E-Mail klicken oder die E-Mail beantworten und die entsprechende Aktion als erste Zeile des E-Mail-Textes eingeben.
 
-**Hinweis**: Informationen zum Konfigurieren des Arbeitsbereichs für die Verwendung der entsprechenden E-Mail-Vorlagen finden Sie im [AEM Forms JEE Administrationshandbuch](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>[!NOTE]
+>
+>To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgabenliste in AEM Forms Workspace entfernt.
 
