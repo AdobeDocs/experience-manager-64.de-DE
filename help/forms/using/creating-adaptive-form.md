@@ -9,7 +9,10 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: c0ce06a6dccefeb4c4285d51ad85a26f0cefe1ba
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2046'
+ht-degree: 84%
 
 ---
 
@@ -39,8 +42,8 @@ Gehen Sie folgendermaßen vor, um ein adaptives Formular zu erstellen.
 1. Die Option „Eigenschaften hinzufügen“ wird angezeigt. Geben Sie die Werte für die folgenden Eigenschaftenfelder an. Die Felder „Titel“ und „Name“ sind obligatorisch.
 
    * **[!UICONTROL Titel:]** Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von AEM Forms.
-   * **** Name: Gibt den Namen des Formulars an. Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
-   * **** Beschreibung: Gibt die detaillierten Informationen zum Formular an.
+   * **[!UICONTROL Name:]** Gibt den Namen des Formulars an. Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
+   * **[!UICONTROL Beschreibung:]** Gibt die detaillierten Informationen zum Formular an.
    * **[!UICONTROL Tags:]** Gibt Tags an, die eine eindeutige Identifizierung des adaptiven Formulars ermöglichen. Tags erleichtern die Suche nach dem Formular. Um die Tags zu erstellen, geben Sie neue Tag-Namen in das Feld **Tags** ein.
 
 1. Sie können ein adaptives Formular erstellen, das auf den folgenden Formularmodellen basiert:
@@ -49,6 +52,7 @@ Gehen Sie folgendermaßen vor, um ein adaptives Formular zu erstellen.
    * [XFA-Formularvorlage](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p) 
    * [XML- oder JSON-Schema](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
    * Kein oder ohne Formularmodell
+
    Sie können diese auf der Registerkarte **[!UICONTROL Formularmodell]** konfigurieren. Sie befindet sich auf der Seite **[!UICONTROL Eigenschaften hinzufügen]**. Standardmäßig ist das Formularmodell **[!UICONTROL Ohne]** ausgewählt.
 
 1. Tippen Sie auf **Erstellen**. Ein adaptives Formular wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt.
@@ -101,7 +105,7 @@ Gehen Sie folgendermaßen vor, um eine XFA-Formularvorlage als Formularmodell f�
 1. In the Form Model tab, from the drop-down list, select **[!UICONTROL Form Templates]**. Hier stehen alle Formularvorlagen zur Auswahl, die über die Benutzeroberfläche von AEM Forms ins Repository hochgeladen wurden. Wählen Sie eine Vorlage aus der Liste aus.
 
    ![Verknüpfen einer XFA-Formularvorlage mit einem adaptiven Formular](assets/form_model_xfa_associate.png)
-   **** Abbildung: Formularvorlage *auswählen*
+   **Abbildung:** *Auswählen einer Formularvorlage*
 
    >[!NOTE]
    >
@@ -109,7 +113,7 @@ Gehen Sie folgendermaßen vor, um eine XFA-Formularvorlage als Formularmodell f�
 
 ## Erstellen eines adaptiven Formulars basierend auf einem XML- oder JSON-Schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dessen Elemente verwenden, um dem adaptiven Formular dynamischen Inhalt hinzuzufügen. Die Elemente des Schemas sind auf der Registerkarte &quot;Datenmodellobjekt&quot;des Inhaltsbrowsers zum Authoring adaptiver Formulare verfügbar. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
+XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und mit dessen Elementen dem adaptiven Formular dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte &quot;Datenmodellobjekt&quot;des Inhaltsbrowsers zum Authoring adaptiver Formulare zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
 
 In den folgenden Dokumenten erfahren Sie, wie Sie ein XML- oder JSON-Schema für die Erstellung adaptiver Formulare entwickeln.
 
@@ -125,17 +129,18 @@ Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmode
 
    * **[!UICONTROL Von Datenträger hochladen]** – Wählen Sie diese Option und tippen Sie auf „Schemadefinition hochladen“, um ein XML- oder JSON-Schema in Ihrem Dateisystem zu suchen und hochzuladen. Die hochgeladene Schemadatei befindet sich im Formular und ist für andere adaptive Formulare nicht zugänglich.
    * **[!UICONTROL Im Repository suchen]** – Wählen Sie diese Option, um eine Auswahl aus der Liste der im Repository verfügbaren Schemadefinitionsdateien zu treffen. Wählen Sie die XML- oder JSON-Schemadatei als Formularmodell aus. Das ausgewählte Schema wird dem Formular per Verweis zugeordnet und kann für andere adaptive Formulare verwendet werden.
+
    >[!CAUTION] {grayBox=&quot;true&quot;}
    >
    >Stellen Sie sicher, dass der Dateiname des JSON-Schemas mit **.schema.json** endet. Beispiel: mySchema.schema.json
 
    ![Auswählen eines XML- oder JSON-Schemas](assets/upload-schema.png)
-   **** Abbildung: XML- oder JSON-Schema *auswählen*
+   **Abbildung:** *Auswählen des XML- oder JSON-Schemas*
 
 1. (Nur für XML-Schema) Nachdem Sie ein XML-Schema ausgewählt oder hochgeladen haben, geben Sie ein Stammelement der ausgewählten XSD-Datei an, das mit dem adaptiven Formular zugeordnet werden soll.
 
    ![Auswählen eines XSD-Stammelements](assets/xsd-root-element.png)
-   **** Abbildung: XSD-Stammelement *auswählen*
+   **Abbildung:** *Auswählen des XSD-Stammelements*
 
 >[!NOTE]
 >
@@ -149,7 +154,7 @@ Darüber hinaus können Sie den Vorlageneditor verwenden, um eigene Vorlagen zu 
 
 >[!NOTE]
 >
->Wenn Sie ein adaptives Formular öffnen, das mit einer erweiterten Vorlage zur Bearbeitung erstellt wurde, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente für den Unterzeichnungs-Schritt, und Adobe Sign ist für diesen standardmäßig aktiviert. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign Cloud-Konfiguration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) und [konfigurieren Sie einen Unterzeichner](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451).
+>Wenn Sie ein adaptives Formular öffnen, das mit einer erweiterten Vorlage zur Bearbeitung erstellt wurde, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente für den Unterzeichnungs-Schritt, und Adobe Sign ist für diesen standardmäßig aktiviert. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign Cloud-Konfiguration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) und [konfigurieren Sie einen Unterzeichner](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform).
 
 ## Formularmodelleigenschaften eines adaptiven Formulars bearbeiten {#edit-form-model}
 
@@ -183,10 +188,12 @@ Die Option „Automatisches Speichern“ ist standardmäßig nicht aktiviert. Si
 
    * **[!UICONTROL Zeitbasiert:]** Wählen Sie diese Option, um den Inhalt anhand eines bestimmtes Zeitintervalls zu speichern.
    * **[!UICONTROL Ereignisbasiert:]** Wählen Sie diese Option, um den Inhalt beim Auslösen eines Ereignisses zu speichern.
+
    Wenn Sie einen Auslöser auswählen, wird das Feld „Strategiekonfiguration“ aktiviert. Mithilfe der Strategiekonfiguration können Sie:
 
    * ein Zeitintervall angeben, wenn Sie **[!UICONTROL Zeitbasiert]** für den Auslöser wählen.
    * Den Namen des Ereignisses angeben, wenn Sie **[!UICONTROL Ereignisbasiert]** für den Auslöser wählen.
+
    Darüber hinaus haben Sie die Möglichkeit, eine eigene benutzerdefinierte Strategie zu erstellen und diese der Liste hinzuzufügen. Weitere Informationen finden Sie unter [Implementieren einer benutzerdefinierten Strategie](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Nur zeitbasiertes automatisches Speichern) Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
@@ -195,7 +202,7 @@ Die Option „Automatisches Speichern“ ist standardmäßig nicht aktiviert. Si
 
 1. (Nur ereignisbasiertes automatisches Speichern) Führen Sie die folgenden Schritte aus, um Optionen für ereignisbasiertes automatisches Speichern zu konfigurieren.
 
-   1. Geben Sie im Feld **Automatisch nach diesem Ereignis speichern** ein [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)-Ereignis an. Das Formular wird immer dann gespeichert, wenn der Ausdruck „TRUE“ ergibt.
+   1. Geben Sie im Feld **Automatisch nach diesem Ereignis speichern** ein [GuideBridge](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html)-Ereignis an. Das Formular wird immer dann gespeichert, wenn der Ausdruck „TRUE“ ergibt.
 
 1. (Optional) Um den Inhalt automatisch für anonyme Benutzer zu speichern, wählen Sie die Option **Automatisches Speichern für anonyme Benutzer aktivieren** und klicken Sie auf **[!UICONTROL OK]**.
 
