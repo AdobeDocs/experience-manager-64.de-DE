@@ -8,7 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2069'
+ht-degree: 71%
 
 ---
 
@@ -19,11 +22,11 @@ Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, einzelne Kompone
 
 ![](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](create-your-first-adaptive-form.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 ## Über die Schulung  {#about-the-tutorial}
 
-Sie können Themen verwenden, um einem adaptiven Formular eine eindeutige Darstellung und einen einzigartigen Stil zu geben. Sie können Standarddesigns anwenden, die mit dem adaptiven Formulareditor bereitgestellt werden, oder eigene Designs erstellen. AEM Forms bietet einen [Design-Editor zum Erstellen benutzerdefinierter Designs](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html). Ein einzelnes Design kann das gleiche Aussehen auf Mobilgeräten, Tablets oder Desktops bieten. Vorkenntnisse von CSS oder LESS sind nicht erforderlich, um den Designeditor zu verwenden, aber sie sind erwünscht.
+Sie können Themen verwenden, um einem adaptiven Formular eine eindeutige Darstellung und einen einzigartigen Stil zu geben. Sie können Standarddesigns anwenden, die mit dem adaptiven Formulareditor bereitgestellt werden, oder eigene Designs erstellen. AEM Forms bietet einen [Design-Editor zum Erstellen benutzerdefinierter Designs](themes.md). Ein einzelnes Design kann das gleiche Aussehen auf Mobilgeräten, Tablets oder Desktops bieten. Vorkenntnisse von CSS oder LESS sind nicht erforderlich, um den Designeditor zu verwenden, aber sie sind erwünscht.
 
 Am Ende der Schulung lernen Sie Folgendes: 
 
@@ -57,11 +60,11 @@ Der Adaptive Forms Editor bietet mehrere Standarddesigns. Wenn Sie beabsichtigen
 
 ![Adaptives Formular mit dem Standarddesign](assets/default-adaptive-form.png)
 
-**** Abbildung: *Adaptives Formular mit dem Standarddesign*
+**Abbildung:** *Adaptives Formular mit dem Standarddesign*
 
 ![Adaptives Formular mit dem Umfragedesign](assets/adaptive-form-with-survey-theme.png)
 
-**** Abbildung: *Adaptives Formular mit dem Survey-Design*
+**Abbildung:** *Adaptives Formular mit dem Thema Umfrage*
 
 ## Schritt 2: Aktualisieren Sie Ihr adaptives Formular {#step-update-your-adaptive-form}
 
@@ -76,6 +79,7 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
    1. Tap logo image in the header component and tap ![cmppr](assets/cmppr.png) properties. Tippen Sie in der Bildeigenschaft auf X, um das vorhandene Logobild zu entfernen.
    1. Tap upload, select the logo.png, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) to save the changes. The image was downloaded in the [Before you start](/help/forms/using/style-your-adaptive-form.md#before-you-start) section.
    1. Tippen Sie auf Kopfzeilentext `We.Retail`und dann auf ![aem_6_3_edit](assets/aem_6_3_edit.png) , **edit**. Ändern Sie den Kopfzeilentext in `we retail`. Wenden Sie fett formatierte Formatierungen nur `we`in an `we retail`.
+
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Entfernen Sie Titel und fügen Sie Platzhaltertext hinzu:
@@ -84,6 +88,7 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
    1. Kopieren Sie den Inhalt des Felds **Titel** in das Feld **Platzhaltertext**.
    1. Löschen Sie den Inhalt des Felds **Titel** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Wiederholen Sie die vorherigen drei Schritte für alle Textfelder, das numerische Feld und das E-Mail-Feld im Formular.
+
    ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Schritt 3: Erstellen Sie ein benutzerdefiniertes Design für Ihr adaptives Formular {#step-create-a-custom-theme-for-your-adaptive-form}
@@ -99,8 +104,8 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** > **Forms** > **Themes**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Design]**. Die Seite „Design erstellen“ mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder „Titel“ und „Name“ sind obligatorisch.
 
-   * **** Titel: Geben Sie einen Titel des Designs an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
-   * **** Name: Geben Sie den Namen des Designs an. Zum Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
+   * **Titel:** Geben Sie einen Titel des Designs an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
+   * **Name:** Geben Sie den Namen des Designs an. Zum Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
 
 1. Tippen Sie auf **Erstellen**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tap **Open** to open the newly created theme in a new tab. Design wird im Design-Editor geöffnet. Zum Formatieren verwendet der Design-Editor ein Standardformular, das mit AEM Forms geliefert wird.
 
@@ -110,17 +115,17 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
 
    ![custom-theme](assets/custom-theme.png)
 
-   **** Abbildung: *Design-Editor mit dem adaptiven Formular shipping-address-add-update-form*
+   **Abbildung:** *Design-Editor mit dem adaptiven Formular shipping-address-add-update-form*
 
    ![create-a-theme](assets/create-a-theme.png)
 
-   **** Abbildung: *Adaptives Formular mit dem Standardformular*
+   **Abbildung:** *Adaptives Formular mit dem Standardformular*
 
 ### Kopf- und Fußzeile gestalten {#style-header-and-footer}
 
 Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwechselbares Aussehen. Im Allgemeinen enthält die Kopfzeile das Logo und den Namen der Organisation. Die Fußzeile enthält Copyright-Informationen, die in allen Formularen einer Organisation identisch bleiben. So formatieren Sie Kopf- und Fußzeile des adaptiven Formulars „shipping-address-add-update-form adaptive form“:
 
-1. Navigieren Sie im Bereich „Auswahl“ zur Option **Kopfzeile** > **Text**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. Wenn das Feld nicht sichtbar ist, tippen Sie auf ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/toggle-side-panel.png)Seitliches Bedienfeld ein/aus.
+1. Navigieren Sie im Bereich „Auswahl“ zur Option **Kopfzeile** > **Text**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. If the panel is not visible, tap ![Toggle side panel](assets/toggle-side-panel.png) Toggle Side Panel.
 
 1. Set the following properties in the **Text** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -176,7 +181,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -240,7 +245,7 @@ You can use a custom theme to apply an identical style to all the buttons of the
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -308,7 +313,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -397,7 +402,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -434,7 +439,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 
 ## Schritt 5: Bonusabschnitt: Verwenden von Webschriftarten in einem benutzerdefinierten Design {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Alle Geräte, auf denen das adaptive Formular angezeigt wird, verfügen möglicherweise nicht über die zum Entwerfen des adaptiven Formulars verwendeten Schriftarten. Sie können einen Webschriftartdienst verwenden, um dem Zielgerät die erforderlichen Schriftarten bereitzustellen.
+Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Alle Geräte, auf denen das adaptive Formular angezeigt wird, verfügen möglicherweise nicht über die zum Entwerfen des adaptiven Formulars verwendeten Schriftarten. Sie können einen Webschriftartdienst verwenden, um die erforderlichen Schriftarten an das Zielgruppe-Gerät zu senden.
 
 Adobe Typekit ist ein Webschriftartdienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. So verwenden Sie Adobe Typekit in einem adaptiven Formular:
 
