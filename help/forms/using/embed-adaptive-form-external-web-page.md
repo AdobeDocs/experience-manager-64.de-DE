@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 55%
 
 ---
 
@@ -30,7 +33,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie ein adaptives Formular in eine
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
-Sie können ein adaptives Formular einbetten, indem Sie einige Zeilen JavaScript in die Webseite einfügen. Die API im Code sendet eine HTTP-Anforderung an den AEM-Server für adaptive Formularressourcen und fügt das adaptive Formular in den angegebenen Formularcontainer ein. Im Folgenden finden Sie einen Beispielcode zum Einbetten eines adaptiven Formulars in eine externe Seite. Verwenden Sie den Code nicht so, wie er sich in einer Produktionsumgebung befindet. Passen Sie den Code an Ihre Website an, wie z. B. die Verwendung eines iFrame für Websites, die ihre eigene Version von jQuery verwenden. Die Verwendung von iFrame hilft, Konflikte innerhalb von jQuery-Versionen zu vermeiden:
+Sie können ein adaptives Formular einbetten, indem Sie einige Zeilen JavaScript in die Webseite einfügen. Die API im Code sendet eine HTTP-Anforderung an den AEM-Server für adaptive Formularressourcen und fügt das adaptive Formular in den angegebenen Formularcontainer ein. Im Folgenden finden Sie einen Beispielcode zum Einbetten eines adaptiven Formulars in eine externe Seite. Verwenden Sie den Code nicht so, wie er sich in einer Produktions-Umgebung befindet. Passen Sie den Code an Ihre Website an, wie z. B. die Verwendung eines iFrames für Websites, die eine eigene Version von jQuery verwenden. Die Verwendung von iFrame hilft, Konflikte innerhalb von jQuery-Versionen zu vermeiden:
 
 
 1. Betten Sie den folgenden Code in eine Webseite in Ihrer Website ein:
@@ -74,8 +77,8 @@ Sie können ein adaptives Formular einbetten, indem Sie einige Zeilen JavaScript
     async: false,
     success: function (data) {
     // Wenn jquery geladen wird, stellen Sie den inneren HTML-Code des Containers
-    ein// Wenn jquery nicht geladen wird, verwenden Sie APIs, die vom Dokument bereitgestellt werden, um den inneren HTML-Code festzulegen, aber diese APIs würden das Skript-Tag nicht in HTML gemäß HTML5-Spezifikation
-    / auswerten. Beispiel: document.getElementById().
+    // Wenn jquery nicht geladen wird, verwenden Sie APIs, die von Dokument bereitgestellt werden, um den inneren HTML-Code festzulegen, aber diese APIs werten das Skript-Tag nicht in HTML gemäß HTML5 spec
+    // aus. Beispiel: Dokument.getElementById().
     innerHTMLif(window.$ &amp;&amp; options.CSS_Selector){
     // HTML-API von jquery extrahiert die Tags, aktualisiert das DOM und wertet den im script-Tag eingebetteten Code aus.
     $(options.CSS_Selector).html(data);
@@ -113,7 +116,7 @@ Das adaptive Formular wird in die Webseite eingebettet. Beobachten Sie Folgendes
 * Die im Originalformular konfigurierten Erlebnis-Targeting und A/B-Tests funktionieren im eingebetteten adaptiven Formular nicht.
 * Wenn Adobe Analytics im ursprünglichen Formular konfiguriert ist, werden die Analysedaten im Adobe Analytics-Server erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
 
-## SSL Reverse Proxy {#reveseproxy}
+## SSL Reverse Proxy  {#reveseproxy}
 
 Die externe Webseite, in die das adaptive Formular eingebettet wird, sendet Anforderungen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anforderungen sicher auf den AEM-Server geleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
 
@@ -160,9 +163,9 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 
 * Stellen Sie sicher, dass die Formatierungsregeln in den Webseite-CSS nicht mit den Formularobjekt-CSS in Konflikt stehen. Um dies zu vermeiden, können Sie die Webseite-CSS im Design für das adaptive Formular mithilfe der AEM-Clientbibliothek wiederverwenden. Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
 * Verwenden Sie für den Formularcontainer auf der Webseite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formularcontainer nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
-* Use ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
-* Use ` [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
-* Richten Sie die Kopfzeile access-control-origin beim Senden der Antwort vom AEM-Server ein.
+* Use  [getData](https://helpx.adobe.com/de/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API to get the XML or JSON representation of form data in client.
+* Use [unloadAdaptiveForm](https://helpx.adobe.com/de/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API to unload the adaptive form from HTML DOM.
+* Richten Sie die Kopfzeile &quot;access-control-Herkunft&quot;ein, wenn Sie eine Antwort vom AEM-Server senden.
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms  {#cross-domain-sites}
 
