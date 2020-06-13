@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2546'
+ht-degree: 99%
 
 ---
 
@@ -82,11 +85,14 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
    * Ereignisse anzeigen
    * Delegieren
    * Externe Benutzer einladen
+
    **Document Security-Administrator**
 
    Benutzer mit dieser Rolle können den Document Security-Server mithilfe der Seite „Konfiguration“ im Document Security-Abschnitt von Administration Console konfigurieren. Diese Berechtigung ist mit der Rolle „Konfiguration verwalten“ verknüpft.
 
-   **Hinweis**: *Benutzer mit dieser Rolle müssen außerdem über die Rolle &quot;Administration Console-Benutzer&quot;verfügen, damit sie sich bei Administration Console anmelden und Konfigurationseinstellungen bearbeiten können.*
+   >[!NOTE]
+   >
+   >Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
    **Document Security-Richtliniensatz-Administrator**
 
@@ -98,7 +104,10 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
    * Herausgeber des Dokuments verwalten
    * Ereignisse anzeigen
    * Delegieren
-   **Hinweis**: *Benutzer mit dieser Rolle müssen außerdem über die Rolle &quot;Administration Console-Benutzer&quot;verfügen, damit sie sich bei Administration Console anmelden und Konfigurationseinstellungen bearbeiten können.*
+
+   >[!NOTE]
+   >
+   >Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
    **Document Security – Eingeladene und lokale Benutzer verwalten**
 
@@ -107,7 +116,10 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
    * Verwalten eingeladener und lokaler Benutzer
    * Externe Benutzer einladen
    * Auf Webseiten für Endbenutzer zugreifen
-   **Hinweis**: *Benutzer mit dieser Rolle müssen außerdem über die Rolle &quot;Administration Console-Benutzer&quot;verfügen, damit sie sich bei Administration Console anmelden und Konfigurationseinstellungen bearbeiten können.*
+
+   >[!NOTE]
+   >
+   >Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
    **Document security – Benutzer einladen**
 
@@ -115,6 +127,7 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
 
    * Externe Benutzer einladen
    * Auf Webseiten für Endbenutzer zugreifen
+
    **Document Security-Endbenutzer**
 
    Benutzer mit dieser Rolle können auf Document Security-Webseiten für Endbenutzer zugreifen. Diese Rolle kann auch Administratoren zugewiesen werden, damit diese auf den Endbenutzerseiten Richtlinien erstellen können. Diese Berechtigung ist mit der Rolle „Auf Webseiten für Endbenutzer zugreifen“ verknüpft:
