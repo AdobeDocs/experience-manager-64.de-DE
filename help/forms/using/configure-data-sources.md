@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 69%
 
 ---
 
@@ -42,12 +45,14 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    * Java-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
    * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
    >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Kennwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Gehen Sie zum Verschlüsseln wie folgt vor:
    >
-   >1. Wechseln zu `https://[server]:[port]/system/console/crypto`.
+   >1. Rufen Sie `https://[server]:[port]/system/console/crypto` auf.
    >1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
+
    >
    >Der verschlüsselte Text wird im Feld Geschützter Text angezeigt, das Sie in der Konfiguration angeben können.
 
@@ -73,15 +78,18 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
-   >**The**&amp;ast; im obigen Beispiel alle Knoten unter dem `profile/empLocation/` Knoten im AEM-Benutzerprofil in der CRXDE-Struktur. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
+   >The **&amp;ast;** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
 
 1. Tap **[!UICONTROL Save]** to save the configuration.
 
 ## Ordner für Cloud-Dienstkonfigurationen konfigurieren {#cloud-folder}
 
-**Hinweis**: Die Konfiguration des Cloud Services-Ordners ist erforderlich, um Cloud-Dienste für RESTful-, SOAP- und OData-Dienste zu konfigurieren.
+>[!NOTE]
+>
+>Zum Konfigurieren von Cloud-Diensten für RESTful-, SOAP- und OData-Dienste ist eine Konfiguration des Ordners für Cloud-Dienste erforderlich.
 
 All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud-Dienst-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud-Dienstkonfigurationen zu erstellen und zu organisieren.
 
@@ -149,6 +157,7 @@ Ein OData-Dienst wird anhand seiner Dienststamm-URL identifiziert. Stellen Sie z
 
    * Dienststamm-URL für den zu konfigurierenden OData-Dienst.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung oder benutzerdefinierte Authentifizierung — , um auf den OData-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+
    >[!NOTE]
    >
    >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
