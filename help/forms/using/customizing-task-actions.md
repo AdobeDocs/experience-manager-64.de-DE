@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 60%
 
 ---
 
@@ -135,7 +138,7 @@ Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-A
 
 ### Aufgabenaktionen-Popupmenü „Aufgabenliste“{#task-list-task-action-nbsp-pop-up-menu}
 
-1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copy /libs/ws/js/runtime/templates/task.html to `/apps/ws/js/runtime/templates/task.html`replace the following code snippet:
 
@@ -360,4 +363,4 @@ Führen Sie die folgenden Schritte aus, um das Aufgabenaktionen-Popupmenü „Au
 * Suchen Sie folgenden Text: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Replace the located text with the following text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
-[**Support kontaktieren **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Support kontaktieren **](https://www.adobe.com/de/account/sign-in.supportportal.html)
