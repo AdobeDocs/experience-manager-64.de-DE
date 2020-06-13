@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +39,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf&amp;ast; |
 | Ausgewählte Komponente(n) löschen | Strg+Rücktaste | Strg+Backspace&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
-| Kuratieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+I | Strg+I&amp;ast; |
+| Kuratieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschau-Modus | Strg+I | Strg+I&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
 
 >[!NOTE]
@@ -49,6 +52,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 >
 >* Windows: Strg+Klick auf benötigte Komponenten
 >* Mac OS: Befehlstaste+Klick auf benötigte Komponenten
+
 >
 
 
@@ -85,7 +89,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tastaturbefehl aufgeführt, die Sie im Correspondence Management-Texteditor verwenden können. Diese Tastaturkürzel können Sie wie folgt verwenden:
 
-* Creating or editing a [Text](/help/forms/using/document-fragments.md#main-pars-header-0) asset
+* Creating or editing a [Text](document-fragments.md) asset
 * Editing a text module after tapping the relevant Edit icon ( ![edittextmodule](assets/edittextmodule.png)) when [creating a correspondence](/help/forms/using/create-correspondence.md).
 
 ### Textauswahl und Bewegen des Cursors {#text-selection-and-moving-the-cursor-around}
