@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 3%
 
 ---
 
@@ -50,6 +53,8 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungsplan zu ändern
 >
 >Wenn Sie Ihre AEM Forms-Implementierung auf einem Cluster ausführen, führen Sie die folgenden Schritte auf jedem Knoten des Clusters aus.
 
+#### JBoss Application Server {#jboss-application-server}
+
 1. Beenden Sie die AEM Forms-Serverinstanz.
    * (Für Windows) Öffnen Sie die `[*JBoss root*]/bin/run.conf.bat` Datei in einem Editor.
    * (Für Linux, AIX und Solaris) `[*JBoss root*]/bin/run.conf.sh` in einem Editor.
@@ -63,6 +68,8 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungsplan zu ändern
 1. Save and close the `run.conf.bat` file.
 
 1. Starten Sie die AEM Forms-Serverinstanz neu.
+
+#### WebSphere Application Server {#websphere-application-server}
 
 1. Beenden Sie die AEM Forms-Serverinstanz.
 1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers** >  **Application servers** and then, in the right pane, click the server name.
@@ -80,6 +87,8 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungsplan zu ändern
 1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.
 
 1. Starten Sie die AEM Forms-Serverinstanz neu.
+
+#### WebLogic Application Server {#weblogic-application-server}
 
 1. Beenden Sie die AEM Forms-Serverinstanz.
 1. Melden Sie sich bei WebLogic Administration Console an. Die Standardadresse von WebLogic Administration Console ist `https://[hostname]:[port]/console`.
@@ -108,7 +117,7 @@ Der ProcessDataStorageProvider-Dienst empfängt Prozessdaten vom ProcessDataPubl
 
 Bei jedem Veröffentlichungszyklus werden die Daten in Unterordnern eines vordefinierten Stammordners gespeichert.
 
-Sie können die Administrationskonsole verwenden, um den Stammordner zu konfigurieren (**Standard**: `/content/reporting/pm`) Speicherort und Unterordner (**Standard**: `/yyyy/mm/dd/hh/mi/ss`) Hierarchieformat, in dem die Prozessdaten gespeichert werden.
+Sie können die Administrationskonsole verwenden, um den Stammordner zu konfigurieren (**Standard**: `/content/reporting/pm`) und Unterordner (**Standard**: `/yyyy/mm/dd/hh/mi/ss`) Hierarchieformat, in dem die Prozessdaten gespeichert werden.
 
 #### So konfigurieren Sie die Repository-Speicherorte für Process Berichte {#to-configure-the-process-reporting-repository-locations}
 
@@ -165,7 +174,7 @@ Der ReportConfiguration-Dienst wird von Process Berichte zum Konfigurieren des P
 
 Der ProcessDataPublisher-Dienst importiert Prozessdaten aus der AEM Forms-Datenbank und veröffentlicht die Daten zur Datenspeicherung an den ProcessDataStorageProvider-Dienst.
 
-#### So konfigurieren Sie den ProcessDataPublisher-Dienst {#to-configure-processdatapublisher-service-nbsp}
+#### So konfigurieren Sie den ProcessDataPublisher-Dienst   {#to-configure-processdatapublisher-service-nbsp}
 
 1. Melden Sie sich mit Administratorberechtigungen bei **Administration Console** an.
 
