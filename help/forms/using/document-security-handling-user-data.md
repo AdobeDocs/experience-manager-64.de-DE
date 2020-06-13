@@ -8,14 +8,17 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '950'
+ht-degree: 65%
 
 ---
 
 
 # Document Security | Umgang mit Benutzerdaten {#document-security-handling-user-data}
 
-Mit AEM Forms Document Security können Sie vordefinierte Sicherheitseinstellungen erstellen, speichern und auf Ihre Dokumente anwenden. Es stellt sicher, dass nur autorisierte Benutzer die Dokumente verwenden können. Sie können Dokumente durch Richtlinien schützen. Eine Richtlinie ist eine Zusammenstellung von Informationen, die unter anderem Sicherheitseinstellungen und eine Liste berechtigter Benutzer umfasst. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzer autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt wurden.
+Mit AEM Forms Dokument Security können Sie vordefinierte Sicherheitseinstellungen erstellen, speichern und auf Ihre Dokumente anwenden. Es stellt sicher, dass nur autorisierte Benutzer die Dokumente verwenden können. Sie können Dokumente durch Richtlinien schützen. Eine Richtlinie ist eine Zusammenstellung von Informationen, die unter anderem Sicherheitseinstellungen und eine Liste berechtigter Benutzer umfasst. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzer autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt wurden.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -49,7 +52,7 @@ Die folgende Tabelle zeigt, wie die Dokumentensicherheit Daten in Datenbanktabel
   </tr> 
   <tr> 
    <td><p><code>EdcRevokationEntity</code></p> </td> 
-   <td>Speichert Informationen über den Widerruf und die Wiederherstellung geschützter Dokumente.</td> 
+   <td>Speichert Informationen zum Widerruf und zur Wiederherstellung geschützter Dokumente.</td> 
   </tr> 
   <tr> 
    <td><code>EdcMyPolicyListEntity</code></td> 
@@ -124,7 +127,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->To export data from the `EdcAuditEntity` table, use the [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to export audit data based on `principalId`, `policyId`, or `licenseId`.
+>To export data from the `EdcAuditEntity` table, use the [EventManager.exportEvents](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to export audit data based on `principalId`, `policyId`, or `licenseId`.
 
 Um vollständige Daten über einen Benutzer im System zu erhalten, müssen Sie auf Daten aus der Benutzerverwaltungsdatenbank zugreifen und diese exportieren. For more information, see [Forms user management: Handling user data](/help/forms/using/user-management-handling-user-data.md).
 
@@ -149,13 +152,14 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
 
    >[!NOTE]
    >
-   >To delete data from the `EdcAuditEntity` table, use the [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to delete audit data based on `principalId`, `policyId`, or `licenseId`.
+   >To delete data from the `EdcAuditEntity` table, use the [EventManager.deleteEvents](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to delete audit data based on `principalId`, `policyId`, or `licenseId`.
 
 1. Active and archived policy XML files are stored in the `EdcPolicyXmlEntity` and `EdcPolicyArchiveEntity` database tables, respectively. Führen Sie die folgenden Schritte aus, um Daten für einen Benutzer aus diesen Tabellen zu löschen:
 
    1. Open the XML blob of each row in the `EdcPolicyXMLEntity` or `EdcPolicyArchiveEntity` table and extract the XML file. Die XML-Datei ähnelt der unten gezeigten.
    1. Bearbeiten Sie die XML-Datei, um den Blob für die Prinzipal-ID zu entfernen.
    1. Wiederholen Sie die Schritte 1 und 2 für die andere Datei.
+
    >[!NOTE]
    >
    >You must remove the complete blob within the `Principal` tag for a principal ID or the policy XML may get corrupt or unusable.
@@ -194,6 +198,7 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
    1. As an administrator, log into the Forms JEE administration console at https://[*server*]:[*port*]/adminui.
    1. Navigate to **[!UICONTROL Services > Document Security > Policy Sets]**.
    1. Öffnen Sie eine Richtliniengruppe und löschen Sie den Benutzer aus der Richtlinie.
+
    **Verwenden der Document Security-Webseite**
 
    Document Security-Benutzer, die zum Erstellen persönlicher Richtlinien berechtigt sind, können Benutzerdaten aus ihren Richtlinien löschen. Gehen Sie dazu wie folgt vor:
@@ -201,7 +206,10 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
    1. Users who have personal policies log into their document security web page at https://[*server*]:[*port*]/edc.
    1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
    1. Öffnen Sie eine Richtliniengruppe und löschen Sie den Benutzer aus der Richtlinie.
-   **Hinweis**: Administratoren können in Administration Console unter &quot; **[!UICONTROL Dienste&quot;> &quot;Document Security&quot;> &quot;Meine Richtlinien&quot;Benutzerdaten suchen, aufrufen und aus den persönlichen Richtlinien anderer Benutzer löschen. Dies geschieht in Administration Console]** .
+
+   >[!NOTE]
+   >
+   >Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
 
 1. Löschen Sie die Daten für die Prinzipal-ID aus der Benutzerverwaltungsdatenbank. For detailed steps, see [Forms User Management | Handling user data](/help/forms/using/user-management-handling-user-data.md).
 1. Starten Sie den AEM Forms-Server.
