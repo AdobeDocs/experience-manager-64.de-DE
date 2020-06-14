@@ -1,28 +1,31 @@
 ---
-title: Prozesselemente mit Medienhandlern und Workflows
+title: Prozesselemente mit Medien-Handlern und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2ab97e4bfb9eca32d343d22d6570dd21885db69
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 79%
 
 ---
 
 
 # Process assets Using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Media-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungsaufgabe und delegiert dann die spezifischen Aufgaben an die Media-Handler, z. B. die Erstellung von Miniaturbildern oder die Extraktion von Metadaten.
+Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Media-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungs-Aufgabe und delegiert dann die spezifischen Aufgaben an die Media-Handler, z. B. die Erstellung von Miniaturbildern oder die Metadaten-Extraktion.
 
-Ein Workflow kann definiert werden, der automatisch ausgeführt wird, wenn ein Asset eines bestimmten Typs oder Formats auf den Server hochgeladen wird. Die Verarbeitungsschritte werden als eine Reihe von AEM Assets-Medienhandlern definiert. AEM provides some [built in handlers,](#default-media-handlers) and additional ones can be either [custom developed](#creating-a-new-media-handler) or defined by delegating the process to a [command line tool](#command-line-based-media-handler).
+Ein Workflow kann definiert werden, der automatisch ausgeführt wird, wenn ein Asset eines bestimmten Typs oder Formats auf den Server hochgeladen wird. Die Verarbeitungsschritte werden als eine Reihe von AEM Assets-Medienhandlern definiert. AEM bietet einige [integrierte Handler](#default-media-handlers) und zusätzliche Handler können entweder [speziell entwickelt](#creating-a-new-media-handler) oder definiert werden, indem der Prozess an ein [Befehlszeilen-Tool](#command-line-based-media-handler) delegiert wird.
 
-Media Handler sind Dienste innerhalb von AEM Assets, die bestimmte Aktionen für Assets ausführen. Wenn beispielsweise eine MP3-Audiodatei in AEM hochgeladen wird, löst ein Workflow einen MP3-Handler aus, der die Metadaten extrahiert und ein Miniaturbild erstellt. Medien-Handler werden normalerweise in Verbindung mit Workflows verwendet. Die meisten gängigen MIME-Typen werden in AEM unterstützt. Spezielle Aufgaben können an Assets durchgeführt werden, indem Workflows erweitert bzw. erstellt, Medien-Handler erweitert bzw. erstellt oder Medien-Handler deaktiviert bzw. aktiviert werden.
+Medien-Handler sind Dienste innerhalb von AEM Assets, die spezielle Aktionen an Assets durchführen. Wenn beispielsweise eine MP3-Audiodatei in AEM hochgeladen wird, löst ein Workflow einen MP3-Handler aus, der die Metadaten extrahiert und ein Miniaturbild erstellt. Medien-Handler werden normalerweise in Verbindung mit Workflows verwendet. Die meisten gängigen MIME-Typen werden in AEM unterstützt. Spezielle Aufgaben können an Assets durchgeführt werden, indem Workflows erweitert bzw. erstellt, Medien-Handler erweitert bzw. erstellt oder Medien-Handler deaktiviert bzw. aktiviert werden.
 
 >[!NOTE]
 >
->Please refer to the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
+>Eine Beschreibung aller Formate, die von AEM Assets unterstützt werden, sowie Funktionen, die für jedes Format unterstützt werden, finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
 ## Default media handlers {#default-media-handlers}
 
-Die folgenden Media-Handler stehen in AEM Assets zur Verfügung und behandeln die am häufigsten verwendeten MIME-Typen:
+Die folgenden Medien-Handler sind in AEM Assets verfügbar und handhaben die gängigsten MIME-Typen:
 
 | Handler-Name | Dienstname (in der Systemkonsole) | Unterstützte MIME-Typen |
 |---|---|---|
@@ -36,7 +39,7 @@ Die folgenden Media-Handler stehen in AEM Assets zur Verfügung und behandeln di
 | [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
 | [!UICONTROL MSPowerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms-powerpoint |
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub/zip |
+| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | Ausweichmöglichkeit, falls kein anderer Handler gefunden wurde, der Daten aus einem Asset extrahiert |
 
 Alle Handler führen folgende Aufgaben aus:
@@ -46,8 +49,8 @@ Alle Handler führen folgende Aufgaben aus:
 
 Es ist möglich, die aktiven Medien-Handler anzuzeigen:
 
-1. In your browser, navigate to `http://localhost:4502/system/console/components`.
-1. Click the link `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
+1. Navigieren Sie im Browser zu `http://localhost:4502/system/console/components`.
+1. Klicken Sie auf den Link `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Eine Liste mit allen aktiven Medien-Handlern wird angezeigt. Beispiel:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
@@ -56,11 +59,11 @@ Es ist möglich, die aktiven Medien-Handler anzuzeigen:
 
 Medien-Handler sind Dienste, die normalerweise in Verbindung mit Workflows verwendet werden.
 
-AEM bietet verschiedene Standard-Workflows zur Bearbeitung von Assets. To view them, open the Workflow console and click the **[!UICONTROL Models]** tab: the workflow titles that start with AEM Assets are the assets specific ones.
+AEM bietet verschiedene Standard-Workflows zur Bearbeitung von Assets. Um sie anzuzeigen, öffnen Sie die Workflow-Konsole und klicken Sie auf die Registerkarte **[!UICONTROL Modelle]**: Die Workflow-Namen, die mit AEM Assets beginnen, sind Asset-spezifische Workflows.
 
 Bereits bestehende Workflows können erweitert und neue Workflows können erstellt werden, um Assets nach spezifischen Anforderungen zu bearbeiten.
 
-Das folgende Beispiel zeigt, wie der Workflow für die **[!UICONTROL AEM Assets-Synchronisierung]** verbessert werden kann, sodass Teil-Assets für alle Assets außer PDF-Dokumente generiert werden.
+Das folgende Beispiel zeigt, wie der **[!UICONTROL AEM Assets-Synchronisierungs-Workflow]** erweitert werden kann, damit Teil-Assets für alle Assets außer PDF-Dokumente erstellt werden.
 
 ### Deaktivieren/Aktivieren eines Medien-Handlers {#disabling-enabling-a-media-handler}
 
@@ -68,25 +71,25 @@ Die Medien-Handler können über die Apache Felix Web Management-Konsole deaktiv
 
 So aktivieren/deaktivieren Sie einen Medien-Handler:
 
-1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
-1. Klicken Sie neben dem Namen des Medienhandlers auf **[!UICONTROL Deaktivieren]** . Beispiel: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
-1. Seite aktualisieren: Neben dem Medienhandler wird ein Symbol angezeigt, das angibt, dass er deaktiviert ist.
-1. To enable the media handler, click **[!UICONTROL Enable]** next to the name of the media handler.
+1. Navigieren Sie im Browser zu `https://<host>:<port>/system/console/components`.
+1. Klicken Sie neben dem Namen des Medien-Handlers auf **[!UICONTROL Deaktivieren]**. Beispiel: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Aktualisieren Sie die Seite: Neben dem Medien-Handler wird ein Symbol angezeigt, das angibt, dass er deaktiviert ist.
+1. Um den Medien-Handler zu aktivieren, klicken Sie neben dem Namen des Medien-Handlers auf **[!UICONTROL Aktivieren]**.
 
 ### Erstellen eines neuen Medien-Handlers {#creating-a-new-media-handler}
 
 Um einen neuen Medientyp zu unterstützen oder eine bestimmte Aufgabe an einem Asset durchzuführen, muss ein neuer Medien-Handler erstellt werden. In diesem Abschnitt wird beschrieben, wie Sie vorgehen.
 
-#### Wichtige Klassen und Schnittstellen {#important-classes-and-interfaces}
+#### Wichtige Klassen und Schnittstellen     {#important-classes-and-interfaces}
 
-The best way to start an implementation is to inherit from a provided abstract implementation that takes care of most things and provides reasonable default behavior: the `com.day.cq.dam.core.AbstractAssetHandler` class.
+Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die `com.day.cq.dam.core.AbstractAssetHandler`-Klasse.
 
-Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. So if you inherit from this class and use the maven-sling-plugin, make sure that you set the inherit flag to `true`.
+Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernehmen und das maven-sling-Plug-in verwenden, müssen Sie die Übernahmemarkierung auf `true` setzen.
 
 Implementieren Sie die folgenden Methoden:
 
 * `extractMetadata()`: extrahiert alle verfügbaren Metadaten.
-* `getThumbnailImage()`: erstellt aus dem übergebenen Asset ein Miniaturbild.
+* `getThumbnailImage()`: erstellt ein Miniaturbild aus einem Asset.
 * `getMimeTypes()`: gibt die Asset-MIME-Typen zurück.
 
 Hier eine Beispielvorlage:
@@ -95,28 +98,28 @@ Hier eine Beispielvorlage:
 
 Schnittstelle und Klassen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte Mime-Typen hinzufügt. Wenn ein neuer MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
-* `com.day.cq.dam.core.AbstractAssetHandler` class: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
+* `com.day.cq.dam.api.handler.AssetHandler`-Schnittstelle: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Wenn ein neuer MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
+* `com.day.cq.dam.core.AbstractAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse:
-   * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extraktion von Teil-Assets.
-   * Die beste Möglichkeit zum Starten einer Implementierung besteht darin, eine bereitgestellte abstrakte Implementierung zu übernehmen, die die meisten Dinge übernimmt und ein vernünftiges Standardverhalten bietet: die Klasse com.day.cq.dam.core.AbstractAssetHandler.
+   * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extrahierung von Teil-Assets.
+   * Die beste Methode zum Beginn einer Implementierung besteht darin, eine bereitgestellte abstrakte Implementierung zu übernehmen, die die meisten Dinge übernimmt und ein vernünftiges Standardverhalten bietet: die Klasse com.day.cq.dam.core.AbstractAssetHandler.
    * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernehmen und das maven-sling-Plug-in verwenden, müssen Sie das Übernahme-Flag auf true setzen.
 
 Die folgenden Methoden müssen implementiert werden:
 
 * `extractMetadata()`: Diese Methode extrahiert alle verfügbaren Metadaten.
 * `getThumbnailImage()`: Diese Methode erstellt ein Miniaturbild aus dem übergebenen Asset.
-* `getMimeTypes()`: Diese Methode gibt den bzw. die Asset-Mime-Typen zurück.
+* `getMimeTypes()`: Diese Methode gibt den/die Asset-MIME-Typ(en) zurück.
 
 Hier eine Beispielvorlage:
 
-package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extension com.day.cq.dam.core.AbstractAssetHandler { // implementieren Sie die entsprechenden Teile }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // die relevanten Teile implementieren }
 
 Schnittstelle und Klassen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte Mime-Typen hinzufügt. Wenn ein neuer MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
-* `com.day.cq.dam.core.AbstractAssetHandler` class: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extrahierung von Teilassets.
+* `com.day.cq.dam.api.handler.AssetHandler`-Schnittstelle: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Wenn ein neuer MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
+* `com.day.cq.dam.core.AbstractAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
+* `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extrahierung von Teil-Assets.
 
 #### Beispiel: Erstellung eines spezifischen Text-Handlers {#example-create-a-specific-text-handler}
 
@@ -400,8 +403,8 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM h
      * * @return the number of words in the string
      * */ 
     private long wordCount(String text) { 
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count 
-     // The starting of the document is always a whitespace 
+     // We need to keep track of the last character, if we have two whitespace in a row we don't want to double count.
+     // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true; 
      boolean currentWhiteSpace = true; 
      char c; long numwords = 0; 
@@ -414,7 +417,7 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM h
       if (currentWhiteSpace && !prevWhiteSpace) { numwords++; } 
       prevWhiteSpace = currentWhiteSpace; 
      } 
-     // If we do not end with a white space then we need to add one extra word 
+     // If we do not end with a whitespace then we need to add one extra word.
      if (!currentWhiteSpace) { numwords++; } 
      return numwords; 
     } 
@@ -432,27 +435,27 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM h
 
 ## Befehlszeilenbasierter Medien-Handler {#command-line-based-media-handler}
 
-Mit AEM können Sie jedes Befehlszeilenwerkzeug innerhalb eines Workflows ausführen, um Assets (z. B. ImageMagick) zu konvertieren und die neue Darstellung dem Asset hinzuzufügen. Sie müssen das Befehlszeilentool auf dem Datenträger installieren, der den AEM-Server hostet, und dem Workflow einen Prozessschritt hinzufügen. The invoked process, called `CommandLineProcess`, also enables to filter according to specific MIME types and to create multiple thumbnails based on the new rendition.
+Mit AEM können Sie ein beliebiges Befehlszeilen-Tool (z. B. ImageMagick) innerhalb eines Workflows ausführen, um Assets zu konvertieren und dem Asset das neue Ausgabeformat hinzuzufügen. Sie müssen das Befehlszeilen-Tool auf dem Datenträger installieren, der den AEM-Server hostet, und dem Workflow einen Prozessschritt hinzufügen. Der aufgerufene Prozess `CommandLineProcess` ermöglicht zudem die Filterung nach spezifischen MIME-Typen und die Erstellung mehrerer Miniaturbilder auf der Grundlage des neuen Ausgabeformats.
 
 Die folgenden Konvertierungen können automatisch ausgeführt und in AEM Assets gespeichert werden:
 
-* EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/) 
+* EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/)
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/)
 * MP3-Kodierung mithilfe von [LAME](http://lame.sourceforge.net/)
-* Verarbeitung von Audiodaten mithilfe von [SOX](http://sox.sourceforge.net/) 
+* Verarbeitung von Audiodaten mithilfe von [SOX](http://sox.sourceforge.net/)
 
 >[!NOTE]
 >
->Bei Nicht-Windows-Systemen gibt das FFMpeg-Tool einen Fehler zurück, wenn Darstellungen für ein Video-Asset generiert werden, das ein einzelnes Anführungszeichen (&#39;) im Dateinamen enthält. Wenn der Name Ihrer Videodatei ein einfaches Anführungszeichen enthält, entfernen Sie es, bevor Sie das Asset auf AEM hochladen.
+>Auf Nicht-Windows-Systemen gibt das FFMpeg-Tool einen Fehler aus, wenn Ausgabeformate für ein Video-Asset erstellt werden, dessen Dateiname ein einfaches Anführungszeichen (&#39;) enthält. Wenn der Name Ihrer Videodatei ein einfaches Anführungszeichen enthält, entfernen Sie es, bevor Sie das Asset auf AEM hochladen.
 
-The `CommandLineProcess` process performs the following operations in the order they are listed:
+Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Reihenfolge aus:
 
 * Filtert die Datei nach bestimmten MIME-Typen, falls angegeben.
-* Erstellt ein temporäres Verzeichnis auf dem Datenträger, der den AEM-Server hostet. 
-* Streamt die Originaldatei in den temporären Ordner.
-* Führt den Befehl aus, der über die Argumente des Schritts definiert ist. Der Befehl wird im temporären Ordner mit den Berechtigungen des Benutzers ausgeführt, der AEM ausführt.
+* Erstellt ein temporäres Verzeichnis auf dem Datenträger, der den AEM-Server hostet.
+* Streamt die Originaldatei in das temporäre Verzeichnis.
+* Führt den Befehl aus, der über die Argumente des Schritts definiert ist. Der Befehl wird innerhalb des temporären Verzeichnisses ausgeführt, nachdem die Genehmigung des Benutzers eingeholt wurde, der AEM ausführt.
 * Streamt das Ergebnis zurück in den Ausgabeordner des AEM-Servers.
-* Löscht den temporären Ordner.
+* Löscht das temporäre Verzeichnis.
 * Erstellt Miniaturbilder auf der Grundlage dieser Ausgabeformate, falls angegeben. Die Anzahl und die Abmessungen von Miniaturbildern werden durch die Argumente des Schritts definiert.
 
 ### An example using ImageMagick {#an-example-using-imagemagick}
@@ -462,44 +465,44 @@ Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt so einricht
 Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf dem Datenträger, auf dem der AEM-Server gehostet wird:
 
 1. Installieren von ImageMagick. Weitere Informationen finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) .
-1. Richten Sie das Tool so ein, dass Sie die Konvertierung über die Befehlszeile ausführen können.
-1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
+1. Richten Sie das Tool ein, damit Sie den Befehl „convert“ über die Befehlszeile ausführen können.
+1. Um festzustellen, ob das Tool ordnungsgemäß installiert wurde, führen Sie den Befehl `convert -h` über die Befehlszeile aus.
 
-   Es wird ein Hilfebildschirm mit allen möglichen Optionen des Konvertierungstools angezeigt.
+   Es wird ein Hilfebildschirm mit allen möglichen Optionen des Konvertierungs-Tools angezeigt.
 
    >[!NOTE]
    >
-   >In manchen Versionen von Windows (z. B. Windows SE), kann der Konvertierungsbefehl eventuell nicht ausgeführt werden, da er in Konflikt mit dem nativen Konvertierungsdienstprogramm steht, das Teil der Windows-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In manchen Versionen von Windows (z. B. Windows SE) kann der Konvertierungsbefehl eventuell nicht ausgeführt werden, da er in Konflikt mit dem nativen Konvertierungsdienstprogramm steht, das Teil der Windows-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. To see if the tool runs properly, add a JPG image to the working directory and run the command `convert <image-name>.jpg -flip <image-name>-flipped.jpg` on the command line.
 
    Ein gespiegeltes Bild wird dem Verzeichnis hinzugefügt.
 
-Fügen Sie dem Workflow für **[!UICONTROL DAM Update Asset]** dann den Befehlszeilen-Prozessschritt hinzu:
+Fügen Sie dann den Befehlszeilenprozessschritt dem Workflow **[!UICONTROL DAM-Update-Asset]** hinzu:
 
-1. Go to the **[!UICONTROL Workflow]** console.
-1. In the **[!UICONTROL Models]** tab, edit the **[!UICONTROL DAM Update Asset]** model.
-1. Change the settings of the **[!UICONTROL Web enabled rendition]** step as follows:
+1. Rufen Sie die Konsole **[!UICONTROL Workflow]** auf.
+1. Bearbeiten Sie auf der Registerkarte **[!UICONTROL Modelle]** das Modell **[!UICONTROL DAM-Update-Asset]**.
+1. Ändern Sie die Einstellungen des Schritts **[!UICONTROL Web-aktivierte Ausgabe]** wie folgt:
 
    `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 1. Speichern Sie den Workflow.
 
-Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam`hinzu.
+Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinzu.
 
-1. Rufen Sie im Dateisystem ein TIFF-Bild Ihrer Wahl ab. Rename it to `myImage.tiff` and copy it to `/content/dam`, for example by using WebDAV.
-1. Go to the **[!UICONTROL CQ5 DAM]** console, for example `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
-1. Open the asset `myImage.tiff` and verify that the flipped image and the three thumbnails have been created.
+1. Rufen Sie im Dateisystem ein TIFF-Bild Ihrer Wahl ab. Benennen Sie es in `myImage.tiff` um und kopieren Sie es in `/content/dam`, z. B. mithilfe von WebDAV.
+1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Öffnen Sie das Asset `myImage.tiff` und prüfen Sie, ob das gespiegelte Bilder und die drei Miniaturbilder erstellt wurden.
 
 #### Configure the CommandLineProcess process step {#configuring-the-commandlineprocess-process-step}
 
-In diesem Abschnitt wird beschrieben, wie Sie die **[!UICONTROL Prozessargumente]** von `CommandLineProcess` festlegen. Trennen Sie die Werte von [!UICONTROL Prozessargumenten] durch ein Komma und beginnen Sie keinen Wert mit einem Leerzeichen.
+In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozessargumenten] mit einem Komma und verwenden Sie kein Beginn mit einem Leerzeichen.
 
 | Argument-Format | Beschreibung |
 |---|---|
-| mime:&lt;mime-type> | Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat. <br>Es können mehrere Mime-Typen definiert werden. |
-| tn:&lt;width>:&lt;height> | Optionales Argument. Der Prozess erstellt ein Miniaturbild mit den Abmessungen, die im Argument definiert sind. <br>Es können mehrere Miniaturansichten definiert werden. |
-| cmd: &lt;command> | Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilentool ab. Es kann nur ein Befehl definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. Original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
+| mime:&lt;MIME-Typ> | Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat. <br>Es können mehrere MIME-Typen definiert werden. |
+| tn:&lt;Breite>:&lt;Höhe> | Optionales Argument. Der Prozess erstellt ein Miniaturbild mit den Abmessungen, die im Argument definiert sind. <br>Es können mehrere Miniaturbilder definiert werden. |
+| cmd: &lt;Befehl> | Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. Original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
 
 Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den AEM-Server hostet, und Sie einen Prozessschritt mithilfe von **CommandLineProcess** als Implementierung erstellen und die folgenden Werte als **Prozess-Argumente** verwenden:
 
@@ -507,11 +510,11 @@ Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den AE
 
 dann gilt der Schritt bei der Ausführung des Workflows nur für Assets, die image/gif oder mime:image/tiff als MIME-Typ haben. Der Schritt erstellt ein gespiegeltes Bild des Originals, wandelt es in eine JPG-Datei um und erstellt drei Miniaturbilder mit den Abmessungen 140x100, 48x48 und 10x250.
 
-Use the following [!UICONTROL Process Arguments] to create the three standard thumbnails using ImageMagick:
+Verwenden Sie die folgenden [!UICONTROL Prozess-Argumente], um die drei Standard-Miniaturbilder mithilfe von ImageMagick zu erstellen:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Use the following [!UICONTROL Process Arguments] to create the web-enabled rendition using ImageMagick:
+Verwenden Sie die folgenden [!UICONTROL Prozess-Argumente], um die Web-fähige Ausgabe mithilfe von ImageMagick zu erstellen:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
