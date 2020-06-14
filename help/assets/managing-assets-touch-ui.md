@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9813'
-ht-degree: 67%
+source-wordcount: '9812'
+ht-degree: 68%
 
 ---
 
@@ -59,6 +59,7 @@ Vergewissern Sie sich vor dem Hochladen eines Assets, dass es in einem [unterst�
 
    * Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Erstellen]**. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
    * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Oberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+
    ![create_menu](assets/create_menu.png)
 
    Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Auf einem iPad können Sie jeweils nur eine Datei auswählen.
@@ -116,6 +117,7 @@ Vergewissern Sie sich vor dem Hochladen eines Assets, dass es in einem [unterst�
    Allerdings werden die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) nicht unterstützt:
    * Der Asset-Dateiname darf nicht enthalten: `* / : [ \ \ ] | # % { } ? &`
    * Der Asset-Ordnername darf nicht enthalten: `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+
    In addition, the Assets interface displays the most recent asset that you upload or the folder you create first in all the views (**[!UICONTROL Card view]**, **[!UICONTROL List view]**, and **[!UICONTROL Column view]**).
 
    Beim gleichzeitigen Hochladen großer Assets oder mehrerer Assets können Sie anhand visueller Indikatoren den Fortschritt häufig bewerten. The **[!UICONTROL Upload Progress]** dialog box displays the count of successfully uploaded files and the files that failed to upload.
@@ -192,7 +194,7 @@ Die in AEM angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum H
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the **[!UICONTROL Upload Job Options]** dialog box:
 
-* Leerraum am Rand von Bildern beschneiden (siehe Beschreibung in der oben stehenden Tabelle) 
+* Beschneiden von Leerzeichen am Rand von Bildern (siehe Beschreibung in Tabelle oben).
 * Ränder von Bildern manuell beschneiden (siehe Beschreibung in der oben stehenden Tabelle)
 * Ein Farbprofil auswählen (siehe Optionsbeschreibung in der oben stehenden Tabelle)
 * Eine Maske aus einem Beschneidungspfad erstellen
@@ -379,6 +381,7 @@ To create tags, you require write permission for `/content/cq:tags/default` in t
    * Anzahl der Aufrufe oder Downloads des Assets.
    * Kanäle/Geräte, über die das Asset genutzt wurde.
    * Kreativlösungen, in denen das Asset kürzlich verwendet wurde.
+
    Weitere Informationen finden Sie unter [Asset Insights](touch-ui-asset-insights.md).
 
 1. Tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
@@ -432,6 +435,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    * Geben Sie nach dem Verschieben den Namen für das Asset an. Then tap **[!UICONTROL Next]** to proceed.
    * Tap **[!UICONTROL Cancel]** to stop the process.
+
    >[!NOTE]
    >
    >Sie können denselben Namen für das Asset angeben, wenn sich am neuen Speicherort kein Asset mit diesem Namen befindet. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speichertort verschieben, an dem bereits ein Asset mit demselben Namen vorhanden ist. Wenn Sie denselben Namen verwenden, generiert das System automatisch eine Variante dieses Namens. Wenn Sie beispielsweise ein Asset mit dem Namen „Quadrat“ kopieren, generiert das System den Namen „Quadrat1“ für die Kopie.
@@ -456,6 +460,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
    * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
    * Tap **[!UICONTROL Cancel]** to stop the move operation.
+
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
 ## Verwalten von Ausgabeformaten {#managing-renditions}
@@ -482,7 +487,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    **Eine Darstellung löschen**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Darstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Darstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -535,6 +540,7 @@ Sie benötigen eine Löschberechtigung für DAM/Asset, um ein Asset löschen zu 
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
       * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
+
    >[!NOTE]
    >
    >Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen.
@@ -610,7 +616,7 @@ CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschr
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets     {#searching-assets}
+## Suchen von Assets       {#searching-assets}
 
 Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Use the **[!UICONTROL Search]** panel to search for assets, tags, and metadata. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md).
 
@@ -667,6 +673,7 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
    * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
    * Tippen Sie auf **[!UICONTROL Bearbeiten]** , die auf einem Asset in der Ansicht angezeigt wird.
    * In the asset page, tap the **[!UICONTROL Edit]** icon in the toolbar.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Um das Bild zu beschneiden, tippen Sie auf **[!UICONTROL Beschneiden]**.
@@ -737,7 +744,8 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 1. Tap the **[!UICONTROL Annotate]** icon from one of the following:
 
    * [Schnellaktionen](managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
+
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
@@ -819,7 +827,7 @@ To print the annotations and review status, tap the **[!UICONTROL Print]** icon 
 
    Sie können je nach Position, an der die Anmerkungen oder der Status in der gedruckten PDF-Datei angezeigt werden sollen, andere Einstellungen auswählen. If you want the annotations or status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
-1. Tippen Sie auf **[!UICONTROL Drucken]**. Je nach der in Schritt 2 gewählten Option zeigt die erstellte PDF-Datei die Anmerkungen oder den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **[!UICONTROL Oben links]** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
+1. Tap **[!UICONTROL Print]**. Je nach der in Schritt 2 gewählten Option zeigt die erstellte PDF-Datei die Anmerkungen oder den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **[!UICONTROL Oben links]** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
