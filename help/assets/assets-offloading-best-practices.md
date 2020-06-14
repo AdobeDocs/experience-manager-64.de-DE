@@ -1,12 +1,12 @@
 ---
 title: Best Practices für die Assets-Abladung
 description: Empfohlene Anwendungsfälle und Best Practices für die Abladung der Workflows zur Asset-Aufnahme und -Replikation in AEM Assets.
-uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
 translation-type: tm+mt
-source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1818'
+ht-degree: 72%
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
 
 >[!WARNING]
 >
->Diese Funktion wird ab AEM 6.4 nicht mehr unterstützt und in AEM 6.5 entfernt. Planen Sie entsprechend.
+>Diese Funktion wird ab AEM 6.4 nicht mehr unterstützt und in AEM 6.5 entfernt. Planen Sie dies entsprechend.
 
 Durch die Verarbeitung großer Dateien und Ausführung von Workflows in Adobe Experience Manager (AEM) Assets kann ein erheblicher Teil von CPU, Speicher und I/O-Ressourcen in Beschlag genommen werden. Insbesondere die Größe der Assets, die Workflows, die Anzahl der Benutzer und die Häufigkeit der Asset-Aufnahme können sich auf die Gesamtleistung des Systems auswirken. Zu den ressourcenintensivsten Vorgängen gehören die AEM-Workflows zur Asset-Aufnahme und Replikation. Eine intensive Nutzung dieser Workflows in einer AEM-Autoreninstanz kann die Bearbeitungseffizienz beeinträchtigen.
 
@@ -33,11 +33,11 @@ Die folgende Abbildung zeigt die Hauptkomponenten des Asset-Abladeprozesses:
 
 ### Workflow „Asset-Abladung für DAM-Update“{#dam-update-asset-offloading-workflow}
 
-Der Worfklow „Asset-Abladung für DAM-Update“ wird auf dem Master (Autor) ausgeführt, auf dem der Benutzer die Assets hochlädt. Dieser Workflow wird von einem regulären Workflowstarter ausgelöst. Statt das hochgeladene Asset zu verarbeiten, erstellt der Abladeworkflow einen neuen Auftrag mit dem Thema *com/adobe/granite/workflow/offloading*. Der Abladeworkflow fügt den Namen des Zielworkflows – in diesem Fall den DAM-Update-Asset-Workflow – und den Pfad des Assets der Nutzlast des Auftrags hinzu. Nach Erstellung des Abladeauftrags wartet der Abladeworkflow auf dem Master, bis der Abladeauftrag ausgeführt wurde.
+Der Arbeitsablauf für das DAM-Aktualisieren des Asset-Offloads wird auf dem primären (Autor-)Server ausgeführt, auf dem der Benutzer die Assets hochlädt. Dieser Workflow wird von einem regulären Workflowstarter ausgelöst. Statt das hochgeladene Asset zu verarbeiten, erstellt der Abladeworkflow einen neuen Auftrag mit dem Thema *com/adobe/granite/workflow/offloading*. Der Abladeworkflow fügt den Namen des Zielworkflows – in diesem Fall den DAM-Update-Asset-Workflow – und den Pfad des Assets der Nutzlast des Auftrags hinzu. Nach dem Erstellen des Ablade-Auftrags wartet der Ablade-Workflow auf der primären Instanz, bis der Ablade-Auftrag ausgeführt wurde.
 
 ### Job Manager {#job-manager}
 
-Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Verteilungsmechanismus muss an die Themenaktivierung gedacht werden. Aufträge können Instanzen nur dann zugewiesen werden, wenn das Thema des entsprechenden Auftrags aktiviert ist. Deaktivieren Sie das Thema *com/adobe/granite/workflow/offloading* auf dem Master und aktivieren Sie es auf dem Worker, um sicherzustellen, dass der Auftrag dem Worker zugewiesen ist.
+Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Verteilungsmechanismus muss an die Themenaktivierung gedacht werden. Aufträge können Instanzen nur dann zugewiesen werden, wenn das Thema des entsprechenden Auftrags aktiviert ist. Disable the topic `com/adobe/granite/workflow/offloading` on the primary, and enable it on the worker to ensure that the job is assigned to the worker.
 
 ### AEM-Abladung {#aem-offloading}
 
@@ -78,7 +78,7 @@ Die Asset-Abladung bedeutet einen Mehraufwand für das System, auch für den Bet
 * Skalierung der Hardware
 * Optimierung von Workflows
 * Nutzung von Verlaufsworkflows
-* Anzahl der für Workflows verwendeten Kerne begrenzen
+* Die Anzahl der für Workflows verwendeten Kerne begrenzen
 
 Wenn Sie zu dem Schluss kommen, dass die Assets-Abladung ein für Sie geeigneter Ansatz ist, sollten Sie die folgenden Adobe-Leitlinien berücksichtigen:
 
@@ -104,16 +104,19 @@ Adobe empfiehlt eine Deaktivierung der automatischen Agentenverwaltung, weil die
 
 ### Verwenden der Vorwärtsreplikation {#using-forward-replication}
 
-Standardmäßig kommt beim Abladetransport die Rückwärtsreplikation zum Einsatz, um die abgeladenen Assets per Pull-Vorgang vom Worker zurück an den Master zu übertragen. Die Agenten für die Rückwärtsreplikation bieten keine Unterstützung für die nicht binäre Replikation. Sie sollten die Abladung zur Nutzung der Vorwärtsreplikation konfigurieren, um die abgeladenen Assets per Push-Vorgang zurück vom Worker an den Master zu übertragen.
+Standardmäßig verwendet das Abladen des Transports die umgekehrte Replizierung, um die vom Benutzer abgeladenen Assets an den primären zurückzunehmen. Die Agenten für die Rückwärtsreplikation bieten keine Unterstützung für die nicht binäre Replikation. Sie sollten das Abladen so konfigurieren, dass die Vorwärtsreplikation verwendet wird, um die entladenen Assets von Worker zu Primär zurückzuschieben.
 
-1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named &quot; `offloading_outbox`&quot; and &quot; `offloading_reverse_*`&quot; on master and worker, where &amp;ast; represents the Sling id of the target instance.
-1. Erstellen Sie auf jedem Worker einen Agenten für die Vorwärtsreplikation, der auf den Master verweist. Hierbei gehen Sie so vor wie beim Erstellen von Agenten für die Vorwärtsreplikation vom Master zum Worker. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
+1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named &quot; `offloading_outbox`&quot; and &quot; `offloading_reverse_*`&quot; on primary and worker, where &amp;ast; represents the Sling id of the target instance.
+1. Erstellen Sie auf jedem Mitarbeiter einen neuen Forward-Replizierungsagenten, der auf das Primär verweist. Das Verfahren ist das gleiche wie das Erstellen von Forward-Agenten von Primär zu Arbeitnehmer. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
 1. Öffnen Sie die Konfiguration für `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Change value of the property `default.transport.agent-to-master.prefix` from `offloading_reverse` to `offloading`.
 
+<!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+-->
+
 ### Verwendung von freigegebenem Datenspeicher und nicht binärer Replikation zwischen Autor und Workern  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-Die nicht binäre Replikation wird empfohlen, um den transportbezogenen Mehraufwand bei der Asset-Abladung zu reduzieren. Weitere Informationen zum Einrichten der nicht binären Replikation für einen freigegebenen Datenspeicher finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM](/help/sites-deploying/data-store-config.md). Die Vorgehensweise ist bei der Assets-Abladung nicht anders, es sind lediglich andere Replikationsagenten beteiligt. Da die binäre Replikation nur mit Forward-Replizierungsagenten funktioniert, sollten Sie auch die Forward-Replizierung für alle Ablade-Agenten verwenden.
+Es wird empfohlen, binärfreie Replizierung zu verwenden, um den Transportaufwand für Asset-Abladungen zu reduzieren. Weitere Informationen zum Einrichten der nicht binären Replikation für einen freigegebenen Datenspeicher finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM](/help/sites-deploying/data-store-config.md). Die Vorgehensweise ist bei der Assets-Abladung nicht anders, es sind lediglich andere Replikationsagenten beteiligt. Da die binäre Replikation nur mit Forward-Replizierungsagenten funktioniert, sollten Sie auch die Forward-Replizierung für alle Ablade-Agenten verwenden.
 
 ### Deaktivieren von Transportpaketen {#turning-off-transport-packages}
 
@@ -134,12 +137,12 @@ Um den Transport des Workflow-Modells zu deaktivieren, ändern Sie den Worfklow 
 1. Öffnen Sie die Registerkarte „Modelle“.
 1. Öffnen Sie das Workflow-Modell DAM Update Asset Offloading.
 1. Öffnen Sie die Schritteigenschaften für den DAM Workflow-Offload-Schritt.
-1. Öffnen Sie die Registerkarte &quot;Argumente&quot;und deaktivieren Sie die Optionen &quot;Modell zur Eingabe hinzufügen&quot;und &quot;Modell zur Ausgabe hinzufügen&quot;.
+1. Öffnen Sie die Registerkarte &quot;Argumente&quot;und heben Sie die Auswahl der Optionen &quot;Hinzufügen Modell für Eingabe&quot;und &quot;Hinzufügen Modell für Ausgabe&quot;auf.
 1. Speichern Sie die Änderungen am Modell.
 
 ### Optimieren des Abrufintervalls {#optimizing-the-polling-interval}
 
-Die Workflow-Abladung wird über einen externen Workflow auf dem Master implementiert, der Abrufe für den Abschluss des Abladeworkflows auf dem Worker durchführt. Das standardmäßige Abrufintervall für die externen Workflowprozesse beträgt fünf Sekunden. Adobe empfiehlt, dass Sie das Abrufintervall des Assets-Abladeschritts auf mindestens 15 Sekunden erhöhen, um den abladebezogenen Mehraufwand auf dem Master zu reduzieren.
+Workflow-Abladungen werden mithilfe eines externen Arbeitsablaufs auf der primären Ebene implementiert, der den Abschluss des abgeladenen Arbeitsablaufs für den Arbeiter abfragt. Das standardmäßige Abrufintervall für die externen Workflowprozesse beträgt fünf Sekunden. Adobe empfiehlt, dass Sie das Abfrageintervall des Assets-Abladevorgangs auf mindestens 15 Sekunden erhöhen, um den Abladeaufwand für das Primär zu reduzieren.
 
 1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
