@@ -1,9 +1,12 @@
 ---
 title: Digitale Assets organisieren
-description: Organisieren Sie digitale Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
+description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 19%
 
 ---
 
@@ -16,22 +19,22 @@ AEM Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie
 
 ## Assets in Ordnern organisieren {#organize-using-folders}
 
-Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in Ordnern zu speichern. Es entspricht dem Organisieren von Dateien in Ordnern in unserem lokalen Dateisystem. Weitere Informationen zum Erstellen und Verwalten von Ordnern finden Sie unter [Verwalten von Assets](managing-assets-touch-ui.md). Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, kann erhebliche Auswirkungen auf die Verarbeitung dieser Assets haben. Durch die Verwendung konsistenter und geeigneter Strategien zur Datei- und Ordnerbenennung sowie einer bewährten Metadatenpraxis können Sie das Beste aus Ihrem digitalen Assets-Repository machen.
+Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in Ordnern zu speichern. Es entspricht dem Organisieren von Dateien in Ordnern in unserem lokalen Dateisystem. Weitere Informationen zum Erstellen und Verwalten von Ordnern finden Sie unter [Verwalten von Assets](managing-assets-touch-ui.md). Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie mit den Dateien in diesen Ordnern umgehen, kann erhebliche Auswirkungen auf die Verarbeitung dieser Assets haben. Durch die Verwendung konsistenter und geeigneter Strategien zur Datei- und Ordnerbenennung sowie einer bewährten Metadatenpraxis können Sie das Beste aus Ihrem digitalen Assets-Repository machen.
 
 * In den meisten Fällen wächst Ihr Repository für digitale Assets immer. Daher ist es wichtig, die Verwendung von Metadaten, die Ordnerstruktur und die Dateibenennung zu einem frühen Zeitpunkt des Inhaltserstellungszyklus zu formalisieren.
-* Verwenden Sie Ordner nur, um eine einheitliche Speicherstruktur für Ihre digitalen Assets zu gewährleisten. Diese Konsistenz hilft Ihnen, Ihre Assets besser zu verwalten. Beispielsweise können Sie mithilfe von Assets, die in den folgenden Ordnertypen platziert werden, geeignete [Profile für die Verarbeitung](processing-profiles.md)von Assets verwenden:
+* Verwenden Sie Ordner, um eine konsistente Speicherstruktur für die digitalen Assets durchzusetzen. Diese Konsistenz hilft Ihnen, Ihre Assets besser zu verwalten und zu verarbeiten. Beispielsweise können Sie mithilfe von Assets, die in den folgenden Ordnertypen platziert werden, geeignete [Profil für die Verarbeitung](processing-profiles.md)von Assets verwenden:
 
-   * **Entwicklungsordner** - enthält digitale Assets, an denen Sie derzeit arbeiten.
-   * **Clientordner** - enthält digitale Assets, die auf Clients oder Projektnamen basieren.
-   * **Hauptordner** - enthält digitale Originalelemente.
-   * **Ausgabeordner** - enthält Darstellungen und Kopien der digitalen Originalelemente.
-   * **Dateigrößenordner** : Enthält digitale Assets, die auf kleinen, mittleren oder großen Dateigrößen basieren.
-   * **Staging-Ordner** - enthält digitale Assets, die live auf Ihrer Website veröffentlicht werden können.
+   * **Entwicklungsordner** – enthalten digitale Assets, an denen Sie derzeit arbeiten.
+   * **Kundenordner** – enthalten digitale Assets basierend auf Kunden oder Projektnamen.
+   * **Primäre Ordner** - enthält digitale Originalelemente.
+   * **Ausgabeformatordner** – enthalten Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
+   * **Dateigrößenordner** – enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateien.
+   * **Bereitstellungsordner** – enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
    * **MIME-Typordner** - enthält digitale Assets, die für MIME-Typen wie Bilder, Dokumente und Multimedia spezifisch sind.
-   * **Archivordner** - enthält zurückgestellte digitale Assets.
-   * **Datumsbasierte Ordner** - enthält digitale Assets basierend auf einem Erstellungsdatum oder einem Datum der letzten Änderung.
+   * **Archivordner** – enthalten veraltete digitale Assets.
+   * **Datumsbasierte Ordner** – enthalten digitale Assets basierend auf einem Erstellungsdatum oder dem letzten Änderungsdatum.
 
-* Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern, sodass Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
+* Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern, sodass Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Profil weiterhin.
 * If an asset is already published, then you use AEM to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to AEM and cannot be unpublished. Als Best Practice sollten Sie daher zunächst die Veröffentlichung eines Assets rückgängig machen und es dann in einen anderen Ordner verschieben.
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
@@ -48,7 +51,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 ## Als Sammlungen organisieren {#organize-as-collections}
 
-Mit Asset-Sammlungen in Experience Manager Assets können Sie die Erstellung, Bearbeitung und Freigabe von Assets zwischen Benutzern optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenzliste mit Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
+Mit Asset-Sammlungen in Experience Manager Assets können Sie die Erstellung, Bearbeitung und Freigabe von Assets zwischen Benutzern optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenz-Liste von Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
 
 For more information, see [manage collections](managing-collections-touch-ui.md)
 
@@ -57,15 +60,15 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## Organisieren Sie Ihre Assets, um Profile zu verwenden {#organize-to-use-profiles}
+## Organisieren Sie Ihre Assets für die Verwendung von Profilen {#organize-to-use-profiles}
 
-Ein Verarbeitungsprofil enthält Verarbeitungsbefehle für Assets, die für Assets gelten, die in vordefinierte Ordner hochgeladen werden. Profile werden verwendet, um die Verarbeitung von Inhalten eines Ordners oder von frisch hochgeladenen Assets zu automatisieren. Sie können Profile nutzen, um Ihre Assets besser zu organisieren.
+Ein verarbeitendes Profil enthält Verarbeitungsbefehle für Assets, die für Assets gelten, die in vordefinierte  hochgeladen werden. Mit Profilen wird die Verarbeitung von Ordnerinhalten oder neu hochgeladenen Assets automatisiert. Sie können Profil nutzen, um Ihre Assets besser zu organisieren.
 
-Durch die Standardisierung der Metadaten-Nutzung, Dateibenennung und Ordnerstruktur wird sichergestellt, dass Sie mit zunehmender Anzahl digitaler Assets Verarbeitungsprofile mit größerer Präzision und Konsistenz auf Ordner anwenden können.
+Durch die Standardisierung der Metadaten-Nutzung, Dateibenennung und Ordnerstruktur wird sichergestellt, dass Sie mit zunehmender Anzahl digitaler Assets verarbeitende Profil präziser und konsistenter auf Ordner anwenden können.
 
 Weitere Informationen zu den verschiedenen Profilen, die Sie zur Verarbeitung von Assets erstellen und verwalten können, finden Sie unter
 
 * [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md)
 * [Metadatenprofile](metadata-profiles.md)
 * [Videoprofile](video-profiles.md)
-* [Dynamic Media-Bildprofile](image-profiles.md)
+* [Profile für dynamische Medienbilder](image-profiles.md)
