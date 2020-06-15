@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 55%
+source-wordcount: '1703'
+ht-degree: 54%
 
 ---
 
@@ -194,8 +194,8 @@ Damit der Autor den Seiteneditor zum Bearbeiten des Inhalts einer SPA verwenden 
 
 Das SPA Editor SDK unterstützt die folgenden Mindestversionen:
 
-* React 16.3
-* Angular 6.x
+* React 16.x und höher
+* Angular 6.x und höher
 
 Frühere Versionen dieser Frameworks funktionieren möglicherweise mit dem AEM SPA Editor SDK, werden jedoch nicht unterstützt.
 
