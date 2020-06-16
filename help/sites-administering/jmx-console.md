@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 0798ae5c-e06e-425f-ba8a-9309eb233083
 translation-type: tm+mt
-source-git-commit: 4fb1ee53c73d6c8e175109bc14def612ec360f04
+source-git-commit: 5b9a966480d98403311cdddcbffa267bde68dd1b
+workflow-type: tm+mt
+source-wordcount: '4948'
+ht-degree: 71%
 
 ---
 
@@ -36,22 +39,22 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 ### Betrieb {#operations}
 
-**listRunningWorkflowsPerModel** Listet die Anzahl der Workflow-Instanzen auf, die für jedes Workflow-Modell ausgeführt werden.
+**listRunningWorkflowsPerModel** Liste die Anzahl der Workflow-Instanzen, die für jedes Workflow-Modell ausgeführt werden.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
 
-**listCompletedWorkflowsPerModel** Listet die Anzahl der abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell auf.
+**listCompletedWorkflowsPerModel** Liste die Anzahl der abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
 
-**returnWorkflowQueueInfo** Listet Informationen zu verarbeiteten Workflow-Elementen auf, die zur Verarbeitung in die Warteschlange gestellt wurden.
+**returnWorkflowQueueInfo** -Listen zu verarbeiteten Workflow-Elementen, die zur Verarbeitung in die Warteschlange gestellt wurden.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
-   * Jobs
+   * Aufträge
    * Queue Name
    * Active Jobs
    * Average Processing Time
@@ -62,7 +65,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
    * Processed Jobs
    * Queued Jobs
 
-**returnWorkflowJobTopicInfo** Listet Verarbeitungsinformationen für Workflow-Aufträge nach Thema auf.
+**returnWorkflowJobTopicInfo** -Listen - Informationen zur Verarbeitung von Arbeitsablaufaufaufträgen, nach Thema geordnet.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
@@ -109,7 +112,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
    * StartComment
    * WorkflowTitle
 
-**retryFailedWorkItems** versucht, fehlgeschlagene Arbeitselementschritte auszuführen. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**retryFailedWorkItems** versucht, Schritte für Arbeitselemente auszuführen, die fehlgeschlagen sind. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -167,7 +170,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: eine Liste der Workflow-Instanzen, die neu gestartet werden.
 
-**fetchModelList** Listet alle Workflow-Modelle auf.
+**fetchModelList** Liste alle Workflow-Modelle.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten, die die Workflow-Modelle identifizieren, mit den ModelId- und ModelName-Spalten.
@@ -192,7 +195,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: die Anzahl an abgeschlossenen Workflow-Instanzen.
 
-**purgeComplete** Entfernt Datensätze zu abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**purgeCompleted** Entfernt Datensätze zu abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -234,7 +237,7 @@ Informationen zum CRX-Repository
 
 **MaximumNumberOfOpenFiles** Die Anzahl der Dateien, die gleichzeitig geöffnet werden können. Schreibgeschützt.
 
-**SessionTracker** Der Wert der Systemvariable crx.debug.session. true bedeutet eine Debug-Sitzung. false bedeutet eine normale Sitzung. Lese- und Schreibzugriff.
+**SessionTracker** Der Wert der Systemvariable crx.debug.session. &quot;true&quot;bedeutet eine Debug-Sitzung. false bedeutet eine normale Sitzung. Lese- und Schreibzugriff.
 
 **Deskriptoren** Eine Gruppe von Schlüssel/Wert-Paaren, die Repository-Eigenschaften darstellen. Alle Eigenschaften sind schreibgeschützt.
 
@@ -292,7 +295,7 @@ Informationen zum CRX-Repository
   </tr> 
   <tr> 
    <td>query.jcrscore</td> 
-   <td><p>"true"bedeutet, dass die pseudo-Eigenschaft "jcr:score"in XPath- und SQL-Abfragen verfügbar ist, die eine Funktion "jcrfn:contains"(in XPath) oder "CONTAINS"(in SQL) enthalten, um eine Volltextsuche durchzuführen.</p> </td> 
+   <td><p>"true"bedeutet, dass die pseudo-Eigenschaft "jcr:score"in XPath- und SQL-Abfragen verfügbar ist, die die Funktion jcrfn:contains (in XPath) oder CONTAINS (in SQL) enthalten, um eine Volltextsuche durchzuführen.</p> </td> 
   </tr> 
   <tr> 
    <td>option.simple.versioning.supported</td> 
@@ -368,7 +371,7 @@ Informationen zum CRX-Repository
   </tr> 
   <tr> 
    <td>node.type.management.inheritance</td> 
-   <td><p>Gibt den Grad der Unterstützung von Knotentypen-Vererbung durch das Repository an. Die folgenden Werte sind möglich:</p> <p>node.type.management.inheritance.minimal: Es können nur die primären Knotentypen registriert werden, die nur nt:base als Supertyp aufweisen. Die Registrierung von Mixin-Knotentypen ist auf die ohne Supertyp beschränkt.</p> <p>node.type.management.inreferance.single: Die Registrierung primärer Node-Typen ist auf solche mit einem Supertyp beschränkt. Die Registrierung von Mixin-Knotentypen ist auf die mit höchstens einem Supertyp beschränkt.</p> <p><br /> node.type.management.inreferance.multiple: Primäre Node-Typen können mit einem oder mehreren Supertypen registriert werden. Es können Mixin-Knotentypen mit null oder mehr Supertypen registriert werden.</p> </td> 
+   <td><p>Gibt den Grad der Unterstützung von Knotentypen-Vererbung durch das Repository an. Die folgenden Werte sind möglich:</p> <p>node.type.management.inheritance.minimal: Es können nur die primären Knotentypen registriert werden, die nur nt:base als Supertyp aufweisen. Die Registrierung von Mixin-Knotentypen ist auf die ohne Supertyp beschränkt.</p> <p>node.type.management.inreferance.single: Die Registrierung primärer Node-Typen ist auf solche mit einem Supertyp beschränkt. Die Registrierung von Mixin-Knotentypen ist auf die mit höchstens einem Supertyp beschränkt.</p> <p><br /> node.type.management.inreferance.multiple: Primär-Node-Typen können mit einem oder mehreren Supertypen registriert werden. Es können Mixin-Knotentypen mit null oder mehr Supertypen registriert werden.</p> </td> 
   </tr> 
   <tr> 
    <td>crx.cluster.preferredMaster</td> 
@@ -388,7 +391,7 @@ Informationen zum CRX-Repository
   </tr> 
   <tr> 
    <td>node.type.management.property.types</td> 
-   <td>ein Array von javax.jcr.PropertyType-Konstanten, die die Eigenschaftstypen darstellen, die ein registrierter Knotentyp angeben kann. Ein Array der Länge null gibt an, dass registrierte Knotentypen keine Eigenschaftsdefinitionen festlegen können. Eigenschaftstypen sind STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PFAD, WEAKREFERENCE, REFERENCE und UNDEFINED (sofern unterstützt)</td> 
+   <td>ein Array von javax.jcr.PropertyType-Konstanten, die die Eigenschaftstypen darstellen, die ein registrierter Knotentyp angeben kann. Ein Array der Länge null gibt an, dass registrierte Knotentypen keine Eigenschaftsdefinitionen festlegen können. Eigenschaftstypen sind STRING, URI, BOOLEAN, LONG, DUBLETTE, DECIMAL, BINARY, DATE, NAME, PFAD, WETTBEWERBSREFERENZ, REFERENZ und UNDEFINED (sofern unterstützt)</td> 
   </tr> 
   <tr> 
    <td>node.type.management.orderable.child.nodes.supported</td> 
@@ -576,7 +579,7 @@ Schreibgeschützt.
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**startTarOptimization** Startet den TAR-Dateioptimierungsprozess mit dem Standardwert für tarOptimizationDelay.
+**startTarOptimization** Beginn den TAR-Dateioptimierungsprozess mit dem Standardwert für tarOptimizationDelay.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
@@ -594,12 +597,12 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**getClusterMaster** Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und startet neu, wodurch sich alle Slave-Knoten mit dieser Instanz verbinden.
+**getClusterMaster** Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, sodass alle anderen Knoten im Cluster (d. h. die vom Master gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**joinCluster** Fügt dieses Repository einem Cluster als Slave-Knoten hinzu. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
+**joinCluster** Fügt dieses Repository einem Cluster als Knoten hinzu, der vom Clustermaster gesteuert wird. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
 
 * Argumente:
 
@@ -611,7 +614,7 @@ Schreibgeschützt.
 
 **traversalCheck** Traverses und behebt optional Inkonsistenzen in einer Unterstruktur, die an einer bestimmten Node beginnt. Ausführliche Informationen hierzu finden Sie in der Dokumentation zu Persistenzmanagern.
 
-**contextCheck** Checks und optional Korrekturen der Konsistenz im Datenspeicher. Ausführliche Informationen hierzu finden Sie in der Dokumentation zum Datenspeicher.
+**contextCheck** Checks und optional Korrekturen der Konsistenz im Datastore. Ausführliche Informationen hierzu finden Sie in der Dokumentation zum Datenspeicher.
 
 ## Repository-Statistiken (TimeSeries) {#repository-statistics-timeseries}
 
@@ -662,9 +665,9 @@ Statistische Informationen zu Repository-Abfragen.
 
 ### Attribute {#attributes-2}
 
-**SlowQueries** Informationen zu den Repository-Abfragen, die die längste Zeit zum Abschluss benötigt haben. Schreibgeschützt.
+**SlowSucht** Informationen zu den Repository-Abfragen, die am längsten abgeschlossen wurden. Schreibgeschützt.
 
-**SlowQueriesQueueSize** Die maximale Anzahl von Abfragen, die in die Liste SlowQueries aufgenommen werden sollen. Lese- und Schreibzugriff.
+**SlowQueriesQueueSize** Die maximale Anzahl von Abfragen, die in die SlowQueries-Liste einbezogen werden sollen. Lese- und Schreibzugriff.
 
 **Beliebte Abfragen** Informationen zu den Repository-Abfragen, die am häufigsten aufgetreten sind. Schreibgeschützt.
 
@@ -672,7 +675,7 @@ Statistische Informationen zu Repository-Abfragen.
 
 ### Betrieb {#operations-2}
 
-**clearSlowQueriesQueue** Entfernt alle Abfragen aus der Liste SlowQueries.
+**clearSlowQueriesQueue** Entfernt alle Abfragen aus der SlowQueries-Liste.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
@@ -686,10 +689,10 @@ Statistische Informationen zu Repository-Abfragen.
 
 Überwachen Sie die Dienste für jeden Replikationsagenten. Wenn Sie einen Replikationsagenten erstellen, wird der Dienst automatisch in der JMX-Konsole angezeigt.
 
-* **** Domäne: com.adobe.granite.Replication
-* **** Typ: agent
-* **** Name: no value
-* **** Eigenschaften: {id=&quot;*Name*&quot;}, wobei *Name* der Wert der Eigenschaft &quot;Agentenname&quot;ist.
+* **Domäne:** com.adobe.granite.Replication
+* **Typ:** agent
+* **Name:** no value
+* **Eigenschaften:** {id=&quot;*Name*&quot;}, wobei *Name* der Wert der Eigenschaft &quot;Agentenname&quot;ist.
 
 ### Attribute {#attributes-3}
 
