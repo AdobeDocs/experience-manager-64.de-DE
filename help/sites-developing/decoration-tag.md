@@ -2,7 +2,7 @@
 title: Decoration-Tag
 description: Wenn eine Komponente einer Webseite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 79%
@@ -10,7 +10,7 @@ ht-degree: 79%
 ---
 
 
-# Decoration-Tag{#decoration-tag}
+# Decoration-Tag {#decoration-tag}
 
 Wenn eine Komponente einer Webseite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Dies dient in erster Linie zwei Zwecken:
 
@@ -38,9 +38,7 @@ Es folgen einige allgemeine Empfehlungen, wann Sie ein einschließendes Element 
 Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden, um das Verhalten ihrer Decoration-Tags zu steuern:
 
 * **`cq:noDecoration {boolean}`:**Diese Eigenschaft kann einer Komponente hinzugefügt werden. Wenn der Wert „true“ lautet, darf AEM keine einschließenden Elemente für die Komponente generieren.
-
 * **`cq:htmlTag`node :**Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
-
    * **`cq:tagName {String}`:**Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
    * **`class {String}`:**Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
    * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen String-Wert hinzugefügt.
