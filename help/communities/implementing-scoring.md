@@ -1,8 +1,8 @@
 ---
 title: Communities - Bewertung und Abzeichen
 seo-title: Communities - Bewertung und Abzeichen
-description: Mithilfe der Bewertungsfunktionen und Abzeichen für AEM Communities können Sie Community-Mitglieder identifizieren und belohnen
-seo-description: Mithilfe der Bewertungsfunktionen und Abzeichen für AEM Communities können Sie Community-Mitglieder identifizieren und belohnen
+description: AEM Communities-Scoring und -Abzeichen ermöglichen die Identifizierung und Belohnung von Community-Mitgliedern
+seo-description: AEM Communities-Scoring und -Abzeichen ermöglichen die Identifizierung und Belohnung von Community-Mitgliedern
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2885'
+ht-degree: 3%
 
 ---
 
 
 # Communities - Bewertung und Abzeichen {#communities-scoring-and-badges}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Die Funktion für die Bewertung und Abzeichen von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
+Die Funktion für die Bewertung und Kennzeichnung von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
 Wichtigste Aspekte der Bewertung und Abzeichen sind:
 
@@ -37,7 +40,7 @@ Wichtigste Aspekte der Bewertung und Abzeichen sind:
 
 ## Zeichen {#badges}
 
-Kennzeichen werden unter dem Namen eines Mitglieds platziert, um entweder ihre Rolle oder ihr Ansehen in der Gemeinschaft anzugeben. Abzeichen können entweder als Bild oder als Name angezeigt werden. Bei der Anzeige als Bild wird der Name als alternativer Text für die Barrierefreiheit eingefügt.
+Kennzeichen werden unter dem Namen eines Mitglieds platziert, um entweder ihre Rolle oder ihr Ansehen in der Gemeinschaft anzugeben. Abzeichen können entweder als Bild oder als Name angezeigt werden. Wenn der Name als Bild angezeigt wird, wird er als alternativer Text für die Barrierefreiheit eingefügt.
 
 Standardmäßig befinden sich Abzeichen im Repository unter
 
@@ -55,7 +58,7 @@ Die Communities [Badges-Konsole](badges.md) bietet die Möglichkeit, benutzerdef
 
 Rollenbasierte Abzeichen werden von einem Administrator entsprechend ihrer Rolle in der Community Mitgliedern zugewiesen.
 
-Zugewiesene (und gedachte) Abzeichen werden im ausgewählten [SRP](srp.md) gespeichert und sind nicht direkt zugänglich. Solange keine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur mit Code oder cURL zugewiesen werden. Anweisungen zu cURL finden Sie im Abschnitt [Zuweisen und Sperren von Kennzeichen](#assign-and-revoke-badges).
+Zugewiesene (und gewarnte) Abzeichen werden im ausgewählten [SRP](srp.md) gespeichert und sind nicht direkt zugänglich. Solange keine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur mit Code oder cURL zugewiesen werden. Anweisungen zu cURL finden Sie im Abschnitt [Zuweisen und Sperren von Kennzeichen](#assign-and-revoke-badges).
 
 In der Version sind drei rollenbasierte Abzeichen enthalten:
 
@@ -75,9 +78,9 @@ In der Version sind drei rollenbasierte Abzeichen enthalten:
 
 ### Ausgegebene Kennzeichen {#awarded-badges}
 
-Belohnungsbasierte Abzeichen werden durch den Bewertungsdienst an Mitglieder der Gemeinschaft vergeben, die auf Regeln beruhen, die auf ihre Tätigkeit in der Gemeinschaft angewandt werden.
+Belohnungsbasierte Abzeichen werden vom Bewertungsdienst an Mitglieder der Gemeinde vergeben, die auf Regeln beruhen, die für ihre Aktivität in der Gemeinde gelten.
 
-Damit Abzeichen als Belohnung für Aktivitäten erscheinen, müssen zwei Dinge geschehen:
+Damit Kennzeichen als Belohnung für Aktivität erscheinen, müssen zwei Dinge geschehen:
 
 * Die Kennzeichnung muss für die Feature-Komponente [aktiviert](#enable-badges-for-component) sein.
 * Auf die Seite (oder den Vorläufer), auf der die Komponente platziert wird, müssen Scoring- und Kennzeichnungsregeln [angewendet](#apply-rules-to-content) werden
@@ -106,9 +109,9 @@ In der Version sind drei belohnungsbasierte Abzeichen enthalten:
 
 ### Benutzerdefinierte Abzeichen {#custom-badges}
 
-Benutzerdefinierte Kennzeichen können mit der [Badges-Konsole](badges.md) installiert und in Kennzeichnungsregeln zugewiesen oder angegeben werden.
+Benutzerdefinierte Kennzeichen können mit der [Badges-Konsole](badges.md) installiert und entweder zugewiesen oder in Kennzeichnungsregeln angegeben werden.
 
-Bei der Installation über die Badges-Konsole werden benutzerdefinierte Abzeichen automatisch in die Veröffentlichungsumgebung repliziert.
+Bei der Installation über die Badges-Konsole werden benutzerdefinierte Abzeichen automatisch in die Veröffentlichungs-Umgebung repliziert.
 
 ## Bewertung aktivieren {#enable-scoring}
 
@@ -128,14 +131,14 @@ Um die Bewertung und Abzeichen zu aktivieren, fügen Sie die Eigenschaften `scor
 
 Wenn die Site bereits veröffentlicht wurde, veröffentlichen Sie die Site nach Anwendung aller Regeln und aktivierenden Komponenten erneut.
 
-Die Regeln, die für eine badging-fähige Komponente gelten, sind die für die aktuelle Node oder deren Vorgänger.
+Die Regeln, die für eine badging-fähige Komponente gelten, sind die Regeln für die aktuelle Node oder deren Vorgänger.
 
 Wenn der Knoten vom Typ `cq:Page` (empfohlen) ist, fügen Sie mithilfe von CRXDE|Lite die Eigenschaften seinem `jcr:content`Knoten hinzu.
 
 | **Eigenschaft** | **Typ** | **Beschreibung** |
 |---|---|---|
-| badgingRules | Zeichenfolge[] | eine Array-Liste mit [Kennzeichnungsregeln](#badging-rules) |
-| scoringRules | Zeichenfolge[] | eine Array-Liste mit [Bewertungsregeln](#scoring-rules) |
+| badgingRules | Zeichenfolge[] | eine Array-Liste von [Kennzeichnungsregeln](#badging-rules) |
+| scoringRules | Zeichenfolge[] | eine Array-Liste von [Bewertungsregeln](#scoring-rules) |
 
 >[!NOTE]
 >
@@ -153,13 +156,13 @@ Eine boolesche Eigenschaft aktiviert `allowBadges`bzw. deaktiviert die Anzeige v
 
 >[!NOTE]
 >
->Jede Komponente kann überlagert werden, um Abzeichen mit dem HBS-Code in Foren, QnA und Kommentaren anzuzeigen.
+>Jede Komponente kann überlagert werden, um Abzeichen mit dem HBS-Code anzuzeigen, der in Foren, QnA und Kommentaren zu finden ist.
 
 ## Bewertungsregeln {#scoring-rules}
 
 Bewertungsregeln sind die Grundlage für die Verleihung von Abzeichen.
 
-Jede Bewertungsregel ist eine Liste mit einer oder mehreren Unterregeln. Bewertungsregeln werden auf den Inhalt der Community-Site angewendet, um die Regeln zu identifizieren, die bei Aktivierung von Kennzeichen angewendet werden.
+Jede Bewertungsregel ist ganz einfach eine Liste einer oder mehrerer Unterregeln. Bewertungsregeln werden auf den Inhalt der Community-Site angewendet, um die Regeln zu identifizieren, die bei Aktivierung von Kennzeichen angewendet werden.
 
 Bewertungsregeln werden geerbt, jedoch nicht additiv. Beispiel:
 
@@ -172,7 +175,7 @@ Bewertungsregeln werden geerbt, jedoch nicht additiv. Beispiel:
 
 Wenn es mehr als eine Bewertungsregel gibt, werden die Ergebnisse für jede Regel separat beibehalten.
 
-Bewertungsregeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf der `jcr:content`Node, die die Liste der Unterregeln, die diese definieren, angeben.
+Bewertungsregeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf dem `jcr:content`Knoten, die die Liste der Unterregeln angeben, die sie definieren.
 
 Scores werden in SRP gespeichert.
 
@@ -219,13 +222,13 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
    <td>Long</td> 
    <td> 
     <ul> 
-     <li>erforderlich; das Verb entspricht einer Ereignisaktion</li> 
+     <li>erforderlich; das Verb entspricht einer Ereignis-Aktion</li> 
      <li>Es muss mindestens eine Verb-Eigenschaft vorhanden sein</li> 
      <li>das Verb muss in allen UPPERCASE eingegeben werden</li> 
-     <li>Es können mehrere Verb-Eigenschaften vorhanden sein, aber keine Duplikate</li> 
+     <li>Es können mehrere Eigenschaften von Verb vorhanden sein, jedoch keine Duplikat</li> 
      <li>der Wert ist der Wert, der für dieses Ereignis gelten soll</li> 
      <li>der Wert kann positiv oder negativ sein</li> 
-     <li>Eine Liste der in der Version unterstützten Verben finden Sie im Abschnitt <a href="#topics-and-verbs">Themen und Verben</a> .</li> 
+     <li>Eine Liste der Verben, die in der Version unterstützt werden, finden Sie im Abschnitt <a href="#topics-and-verbs">Themen und Verben</a> .</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -233,20 +236,20 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
    <td>Zeichenfolge[]</td> 
    <td> 
     <ul> 
-     <li>optional; beschränkt Unterregel auf Community-Komponenten, die nach Ereignisthemen identifiziert werden</li> 
-     <li>falls angegeben: value ist eine Zeichenfolge mit mehreren Werten für Ereignisthemen</li> 
-     <li>eine Liste der Themen in der Version finden Sie im Abschnitt <a href="#topics-and-verbs">Themen und Verben</a></li> 
-     <li>gilt standardmäßig für alle Themen, die mit dem bzw. den Verb(en) verknüpft sind</li> 
+     <li>optional; beschränkt Unterregel auf Community-Komponenten, die nach Ereignis-Themen identifiziert werden</li> 
+     <li>falls angegeben: value ist eine Zeichenfolge mit mehreren Werten für Ereignis-Themen</li> 
+     <li>Eine Liste der Themen in der Version finden Sie im Abschnitt <a href="#topics-and-verbs">Themen und Verben</a> .</li> 
+     <li>ist standardmäßig auf alle Themen anzuwenden, die mit dem bzw. den Verb(en) verbunden sind</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><code>forOwner</code></td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td> 
     <ul> 
      <li>optional; nicht relevant, wenn ein Mitglied mit Inhalten handelt, die ihm gehören</li> 
-     <li>Wenn "true", wird das Ergebnis auf den Eigentümer des Inhalts angewendet, auf den die Aktion angewendet wird</li> 
-     <li>Wenn false, Bewertung auf Member anwenden, die Aktion durchführen</li> 
+     <li>Wenn "true", wird das Ergebnis auf den Eigentümer des Inhalts angewendet, auf den reagiert wird</li> 
+     <li>Wenn false, Punktzahl auf die Aktion des Mitglieds anwenden</li> 
      <li>default ist false</li> 
     </ul> </td> 
   </tr> 
@@ -258,7 +261,7 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
      <li>optional; erkennt die Bewertungsmaschine</li> 
      <li>if "basic" gibt die Bewertungsmaschine basierend auf der Menge an 
       <ul> 
-       <li>in der Version</li> 
+       <li>in der Version enthalten</li> 
       </ul> </li> 
      <li>if "advanced", gibt die Bewertungsmaschine auf der Grundlage von Qualität und Menge an 
       <ul> 
@@ -311,7 +314,7 @@ In der Version sind zwei Bewertungsregeln für die [Forenfunktion](functions.md#
 
 ### Aktivieren benutzerdefinierter Bewertungsregeln {#activating-custom-scoring-rules}
 
-Änderungen oder Ergänzungen, die an Bewertungsregeln oder Unterregeln in der Autorenumgebung vorgenommen wurden, müssen bei der Veröffentlichung installiert werden.
+Änderungen oder Ergänzungen, die an Bewertungsregeln oder Unterregeln in der Autorenregel vorgenommen wurden, müssen bei der Veröffentlichung installiert werden.
 
 ## Abstandsregeln {#badging-rules}
 
@@ -322,7 +325,7 @@ Kennzeichnungsregeln verknüpfen Bewertungsregeln mit Kennzeichen, indem sie Fol
 
 Kennzeichnungsregeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:content`Knoten, die Bewertungsregeln mit Bewertungen und Abzeichen korrelieren.
 
-Die Regeln für das Abzeichen bestehen aus einer obligatorischen `thresholds`Eigenschaft, bei der es sich um eine geordnete Liste von Punktzahlen handelt, die Abzeichen zugeordnet sind. Die Ergebnisse müssen in zunehmendem Wert angeordnet werden. Beispiel:
+Die Kennzeichnungsregeln bestehen aus einer obligatorischen `thresholds`Eigenschaft, bei der es sich um eine geordnete Liste von Kennzahlen handelt, die Kennzeichen zugeordnet sind. Die Ergebnisse müssen in zunehmendem Wert angeordnet werden. Beispiel:
 
 * `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -342,7 +345,7 @@ Die `scoringRules`Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein,
 
 >[!NOTE]
 >
->Optimale Vorgehensweise: Erstellen Sie individuelle Abzeichen-Bilder für jede AEM-Site.
+>Optimale Vorgehensweise: Sie können individuelle Abzeichen-Bilder für jede AEM-Site erstellen.
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -361,7 +364,7 @@ Die `scoringRules`Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein,
      <li>number = score</li> 
      <li>| = vertikaler Zeilenabstand (U+007C)</li> 
      <li>path = vollständiger Pfad zur Abzeichen-Bildressource</li> 
-    </ul> Die Zeichenfolgen müssen so angeordnet sein, dass die Zahlen an Wert zunehmen und zwischen Zahl und Pfad kein Leerzeichen angezeigt wird.<br /><br /> Beispieleintrag: <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
+    </ul> Die Zeichenfolgen müssen so angeordnet sein, dass die Zahlen an Wert zunehmen und zwischen Zahl und Pfad kein Leerzeichen angezeigt wird.<br /> Beispieleintrag:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
   </tr> 
   <tr> 
    <td>badgingType</td> 
@@ -372,7 +375,7 @@ Die `scoringRules`Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein,
    <td> 
     <code>scoringRules </code></td> 
    <td>Zeichenfolge[]</td> 
-   <td>(<em>optional</em>) Eine Zeichenfolge mit mehreren Werten, mit der die Kennzeichnungsregel auf durch die Bewertungsregeln identifizierte Ereignisse beschränkt wird</td> 
+   <td>(<em>optional</em>) Eine Zeichenfolge mit mehreren Werten, mit der die Kennzeichnungsregel auf durch die Bewertungsregeln identifizierte Ereignis beschränkt wird</td> 
   </tr> 
  </tbody> 
 </table>
@@ -393,7 +396,7 @@ In der Version sind zwei Kennzeichnungsregeln enthalten, die den Bewertungsregel
 
 ### Aktivieren benutzerdefinierter Kennzeichnungsregeln {#activating-custom-badging-rules}
 
-Änderungen oder Ergänzungen von Kennzeichnungsregeln oder Bildern, die in der Autorenumgebung vorgenommen wurden, müssen bei der Veröffentlichung installiert werden.
+Änderungen oder Ergänzungen an den Kennzeichnungsregeln oder Bildern, die in der Authoring-Umgebung vorgenommen wurden, müssen bei der Veröffentlichung installiert werden.
 
 ## Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
 
@@ -401,30 +404,31 @@ Abzeichen können Mitgliedern entweder über die [Mitgliederkonsole](members.md#
 
 Die folgenden cURL-Befehle zeigen, was für eine HTTP-Anforderung zum Zuweisen und Sperren von Kennzeichen erforderlich ist. Das Basisformat lautet:
 
-cURL -i -X POST -H *header* -u *signin * -F *operation * -F *badge * *member-profile-url*
+cURL -i -X POST -H *header* -u *signin * -F *operation * -F *badge * *member-Profil-url*
 
 *header* = &quot;Accept:application/json&quot;\
 Benutzerdefinierter Header zum Übergeben an den Server (erforderlich)
 
-*sign* = administrator-id:password\
- Beispiel: admin:admin
+*signin* = administrator-id:password\
+Beispiel: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* = der Speicherort der Badge-Bilddatei im Repository\
- Beispiel: /etc/community/badging/images/moderator/jcr:content/moderator.png
+Beispiel: /etc/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = Endpunkt für das Profil des Mitglieds beim Veröffentlichen\
- Beispiel: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-Profil-url* = Endpunkt für das Profil des Mitglieds beim Veröffentlichen\
+Beispiel: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
->Die *member-profile-url*
+>Die *Member-Profil-URL*
 >
 >* Kann auf eine Autoreninstanz verweisen, wenn der [Tunneldienst](users.md#tunnel-service) aktiviert ist
 >* Kann ein undurchsichtiger, zufälliger Name sein - siehe Checkliste für die [Sicherheit](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) hinsichtlich der zulässigen IDs
+
 >
 
 
@@ -449,28 +453,28 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 ## Bewertung und Abzeichen für benutzerdefinierte Komponenten {#scoring-and-badges-for-custom-components}
 
-Scoring- und Badging-Regeln können für benutzerdefinierte Komponenten erstellt werden, indem die für die Komponente erstellten Ereignisthemen mit Verben verknüpft werden.
+Scoring- und Badging-Regeln können für benutzerdefinierte Komponenten erstellt werden, indem die für die Komponente erstellten Ereignis-Themen mit Verben verknüpft werden.
 
 ## Themen und Verben {#topics-and-verbs}
 
-Wenn Mitglieder mit Communities-Funktionen interagieren, werden Ereignisse gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen und Scoring.
+Wenn Mitglieder mit Communities-Funktionen interagieren, werden Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen und Scoring.
 
-Die SocialEvent-Instanz einer Komponente zeichnet die Ereignisse auf, `actions`die für eine Komponente auftreten `topic`. Das SocialEvent enthält eine Methode, um eine mit der Aktion `verb`verbundene Aktion zurückzugeben. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
+Die SocialEvent-Instanz einer Komponente zeichnet die Ereignis auf, `actions`die für eine `topic`Komponente auftreten. Das SocialEvent enthält eine Methode, um eine mit der Aktion `verb`verbundene Aktion zurückzugeben. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
 
 Für die bereitgestellten Communities-Komponenten beschreiben die folgenden Tabellen die `verbs`definierten für jede `topic`verfügbare Komponente, die in [Bewertungsunterregeln](#scoring-sub-rules)verwendet werden kann.
 
 >[!NOTE]
 >
->Eine neue boolesche Eigenschaft aktiviert bzw. deaktiviert `allowBadges`die Anzeige von Kennzeichen für eine Komponenteninstanz. Es kann in aktualisierten Dialogfeldern[ zum Bearbeiten von ](author-communities.md)Komponenten mithilfe eines Kontrollkästchens mit der Bezeichnung **Anzeigemarke** konfiguriert werden.
+>Eine neue boolesche Eigenschaft aktiviert bzw. deaktiviert `allowBadges`die Anzeige von Kennzeichen für eine Komponenteninstanz. Es kann in aktualisierten Dialogfeldern [zum Bearbeiten von](author-communities.md) Komponenten mithilfe eines Kontrollkästchens mit der Bezeichnung **Anzeigemarke** konfiguriert werden.
 
 **[Kalenderkomponente](calendar.md)**SocialEvent`topic`= com/adobe/cq/social/calendar
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| POST | Mitglied erstellt ein Kalenderereignis |
-| HINZUFÜGEN | Mitgliederkommentare für ein Kalenderereignis |
-| UPDATE | Kalenderereignis oder Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Kalenderereignis oder Kommentar des Mitglieds wird gelöscht |
+| POST | Mitglied erstellt ein Ereignis im Kalender |
+| HINZUFÜGEN | Mitgliederkommentare für ein Kalendertool |
+| UPDATE | Ereignis oder Kommentar des Mitglieds wird bearbeitet |
+| DELETE | Ereignis oder Kommentar des Mitglieds wird gelöscht |
 
 **[Kommentarkomponente](comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
 
@@ -499,7 +503,7 @@ Für die bereitgestellten Communities-Komponenten beschreiben die folgenden Tabe
 | UPDATE | Forenthema oder Antwort des Mitglieds wird bearbeitet |
 | DELETE | Forenthema oder Antwort des Mitglieds wird gelöscht |
 
-**[Journal Component](blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/Journal
+**[Protokoll Component](blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/Protokoll
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -531,14 +535,14 @@ Für die bereitgestellten Communities-Komponenten beschreiben die folgenden Tabe
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| RATING HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
+| HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
 | RATING ENTFERNEN | der Inhalt des Mitglieds wurde heruntergesetzt |
 
 **[Abstimmungskomponente](voting.md)**SocialEvent`topic`= com/adobe/cq/social/tally/stimmberechtigt
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| ABSTIMMUNG HINZUFÜGEN | Der Inhalt des Mitglieds wurde abgestimmt |
+| HINZUFÜGEN ABSTIMMUNG | Der Inhalt des Mitglieds wurde abgestimmt |
 | ABSTIMMUNG ENTFERNEN | Inhalt des Mitglieds wurde abgelehnt |
 
 **Moderationsaktivierte Komponenten** SocialEvent `topic`= com/adobe/cq/social/moderation
@@ -552,9 +556,9 @@ Für die bereitgestellten Communities-Komponenten beschreiben die folgenden Tabe
 | SCHLIESSEN | Mitglied schließt Kommentar zu Bearbeitungen und Antworten |
 | OPEN | Mitglied öffnet Kommentar erneut |
 
-### Benutzerdefinierte Komponentenereignisse {#custom-component-events}
+### Ereignis für benutzerdefinierte Komponenten {#custom-component-events}
 
-Bei einer benutzerdefinierten Komponente wird ein SocialEvent instanziiert, um die Ereignisse der Komponente als `actions`die Ereignisse für eine `topic`Komponente aufzuzeichnen.
+Bei einer benutzerdefinierten Komponente wird ein SocialEvent instanziiert, um die Ereignis der Komponente als `actions`die für eine `topic`Komponente auftretenden Ereignisse aufzuzeichnen.
 
 Um die Bewertung zu unterstützen, muss das SocialEvent die Methode überschreiben, `getVerb()` sodass für jede Methode ein passender Wert zurückgegeben `verb`wird `action`. Die für eine Aktion `verb` zurückgegebene kann eine häufig verwendete (z. B. `POST`) oder eine für die Komponente spezialisierte (z. B. `ADD RATING`) Aktion sein. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
 
@@ -562,7 +566,7 @@ Um die Bewertung zu unterstützen, muss das SocialEvent die Methode überschreib
 
 ### Abzeichen werden nicht angezeigt {#badges-are-not-appearing}
 
-Wenn für den Inhalt der Website Scoring- und Badging-Regeln angewendet wurden, Abzeichen jedoch nicht für eine Aktivität angezeigt werden, stellen Sie sicher, dass für die Instanz dieser Komponente Abzeichen aktiviert wurden.
+Wenn für den Inhalt der Website Scoring- und Kennzeichnungsregeln angewendet wurden, für keine Aktivität Kennzeichen angezeigt werden, stellen Sie sicher, dass für die Komponenteninstanz Kennzeichen aktiviert wurden.
 
 Siehe [Aktivieren von Abzeichen für Komponenten](#enable-badges-for-component).
 
@@ -574,7 +578,7 @@ Siehe auch `scoringRules`Eigenschaft von [Badging Rules](#badging-rules).
 
 ### Groß-/Kleinschreibung {#case-sensitive-typo}
 
-Bei den meisten Eigenschaften und Werten, insbesondere den Verben, wird die Groß-/Kleinschreibung beachtet. Verbs müssen in einer Scoring-Unterregel als alle UPPERCASE verwendet werden.
+Bei den meisten Eigenschaften und Werten, insbesondere bei den Verben, wird die Groß-/Kleinschreibung beachtet. Verbs müssen in einer Scoring-Unterregel als alle UPPERCASE verwendet werden.
 
 Wenn die Funktion nicht wie erwartet funktioniert, stellen Sie sicher, dass die Daten korrekt eingegeben wurden.
 
@@ -587,23 +591,23 @@ Mithilfe der Website &quot;Erste [Schritte - Tutorial](getting-started.md) &quot
 
    * /content/sites/engagement/de/jcr:content
 
-* Fügen Sie die Eigenschaft badgingRules hinzu:
+* Hinzufügen der badgingRules-Eigenschaft:
 
    * **Name**: `badgingRules`
    * **Typ**: `String`
    * Wählen Sie **[!UICONTROL Multi]**
-   * Hinzufügen **[!UICONTROL auswählen]**
+   * Auswählen **[!UICONTROL Hinzufügen]**
    * Geben Sie Folgendes ein `/etc/community/badging/rules/forums-badging`
    * Wählen Sie nun eine der folgenden Optionen aus `+`
    * Geben Sie Folgendes ein `/etc/community/badging/rules/comments-badging`
    * Wählen Sie **[!UICONTROL OK]** aus
 
-* Fügen Sie die Eigenschaft scoringRules hinzu:
+* Hinzufügen der Eigenschaft scoringRules:
 
    * **Name**: `scoringRules`
    * **Typ**: `String`
    * Wählen Sie **[!UICONTROL Multi]**
-   * Hinzufügen **[!UICONTROL auswählen]**
+   * Auswählen **[!UICONTROL Hinzufügen]**
    * Geben Sie Folgendes ein `/etc/community/scoring/rules/forums-scoring`
    * Wählen Sie nun eine der folgenden Optionen aus `+`
    * Geben Sie Folgendes ein `/etc/community/scoring/rules/comments-scoring`
@@ -620,7 +624,7 @@ Stellen Sie dann sicher, dass die Forum- und Kommentarkomponenten die Anzeige vo
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-* Fügen Sie ggf. die boolesche Eigenschaft allowBadges hinzu und stellen Sie sicher, dass sie wahr ist.
+* Hinzufügen boolesche Eigenschaft allowBadges, falls erforderlich, und stellen Sie sicher, dass sie wahr ist
 
    * **Name**: `allowBadges`
    * **Typ**: `Boolean`
@@ -649,6 +653,6 @@ Dies sollte dem Community-Mitglied ein Bronzemarke mit seinem Forenbeitrag sicht
 
 More information may be found on the [Scoring and Badges Essentials](configure-scoring.md) page for developers.
 
-Informationen zur erweiterten Scoring-Engine finden Sie unter [Erweiterte Scoring- und Badges-Funktion](advanced.md).
+Weitere Informationen zur erweiterten Scoring-Engine finden Sie unter [Erweiterte Scoring- und Badges-Funktion](advanced.md).
 
 Die konfigurierbare Leaderboard- [Komponente](enabling-leaderboard.md) und - [Funktion](functions.md#leaderboard-function) vereinfacht die Anzeige von Mitgliedern und deren Ergebnissen auf einer Community-Site.
