@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 80%
+source-wordcount: '820'
+ht-degree: 82%
 
 ---
 
@@ -30,9 +30,9 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 ### Apache Sling Authentifizierungsdienst konfigurieren{#configure-apache-sling-authentication-service} 
 
-1. Wechseln Sie zu https://[*server*]:[*port*]/system/console/configMgr auf AEM Forms unter OSGi oder
+1. Zu `https://[server]:[port]/system/console/configMgr` AEM Forms mit OSGi wechseln oder
 
-   https://[*server*]:[*port*]/lc/system/console/configMgr auf AEM Forms, das auf JEE ausgeführt wird.
+   `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, die auf JEE laufen.
 
 1. Wählen Sie die Konfiguration **Apache Sling-Authentifizierungsdienst**, um ihn im Modus „Bearbeiten“ zu öffnen.
 
@@ -60,8 +60,8 @@ Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
 1. Melden Sie sich bei der AEM-Web-Konsole als Administrator an.
 
-   * URL for AEM Forms on OSGi is https://[server]:[port]/system/console/configMgr
-   * URL for AEM Forms on JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
+   * URL for AEM Forms on OSGi is `https://[server]:[port]/system/console/configMgr`
+   * URL für AEM Forms unter JEE ist `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Öffnen Sie **[!UICONTROL Mobile Forms-Konfigurationen]** für die Bearbeitung.
 1. Wählen Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
