@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 61%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 [OSGi](https://www.osgi.org/) ist ein grundlegendes Element im Technologiestapel von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
 
-OSGi *bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einer Anwendung zusammengefügt und bereitgestellt werden*.
+OSGi *bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einer Anwendung zusammengefügt und bereitgestellt werden*&quot;.
 
 Dies ermöglicht die einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://www.osgi.org/Specifications/HomePage)) ist in einem der Bundles enthalten. Beim Arbeiten mit AEM haben Sie verschiedene Möglichkeiten, Konfigurationseinstellungen für diese Bundles zu verwalten. Einzelheiten und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -190,7 +193,7 @@ Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurie
 
 * Welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
-* Eine Whitelist von Servern, die zusätzlich zum Serverhost zugelassen werden sollen.
+* und eine Liste von Servern, die zusätzlich zum Server-Host zulässig sind.
 
 Weitere Informationen finden Sie unter [Sicherheitsprüfliste – Probleme mit Site-übergreifenden Anforderungsfälschungen](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).
 
@@ -251,7 +254,7 @@ Verschiedene Parameter können festgelegt werden, z. B.:
 
 * Definieren Sie den **Schriftpfad** , der nach projektspezifischen Schriftarten gesucht werden soll.
 
-   Beispiel: `/apps/myapp/fonts`. 
+   Beispiel: `/apps/myapp/fonts`.
 
 **Apache HTTP-Komponenten Proxy Configuration** Proxy Configuration Proxy-Konfiguration für alle Code, der den Apache HTTP-Client verwendet, wenn ein HTTP-Vorgang ausgeführt wird; z. B. bei der Replikation.
 
@@ -317,7 +320,7 @@ Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwen
 
 **Tag-CQ-Stammzuordnung** konfigurieren:
 
-* **Zielgruppe Path** , um zu definieren, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
+* **Target Path** , um festzulegen, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
 
 In AEM sind [zwei Benutzeroberflächen](/help/sites-authoring/select-ui.md) verfügbar:
 
@@ -348,7 +351,8 @@ Verschiedene Eigenschaften können konfiguriert werden:
 
 * **Path** Der Pfad, für den dieser Authentifizierungs-Handler aktiv ist. Wenn dieser Parameter nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Beispielsweise wird beim Pfad / der Authentifizierungs-Handler für das gesamte Repository verwendet.
 
-* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Es handelt sich um einen `int`-Wert, bei dem ein höherer Wert vorrangig ist.
+* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dies ist eine 
+`int` Wert, bei dem höhere Werte eine höhere Priorität angeben.
 
    Der Standardwert ist `0`.
 
@@ -358,9 +362,10 @@ Verschiedene Eigenschaften können konfiguriert werden:
 
 * **Parameter Names** Die Namen von Anforderungsparametern, die möglicherweise eine Benutzer-ID angeben.
 
-* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Falls der Benutzername `admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Beachten Sie, dass das Zeichen „=“ durch ein führendes „\“ geschützt werden muss.
+* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Wenn der Benutzername 
+`admin` auf beiden Seiten der Map angezeigt wird, wird die Zuordnung ignoriert. Beachten Sie, dass das Zeichen „=“ durch ein führendes „\“ geschützt werden muss.
 
-* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie Folgendes:
+* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden:
 
    * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
    * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
@@ -430,7 +435,7 @@ Weitere Informationen finden Sie unter [Löschen von Versionen](/help/sites-depl
 
 **Day CQSE HTTP Service** Control CQ Servlet Engine:
 
-* **NIO für HTTP**, ob NIO für HTTP verwendet werden soll. Der Standardwert ist „true“. Wird nur verwendet, wenn HTTP aktiviert ist.
+* **NIO für HTTP**, ob NIO für HTTP verwendet werden soll. Standardwert ist „true“. Wird nur verwendet, wenn HTTP aktiviert ist.
 * **Verbindungstimeout**, Zeitüberschreitung der Verbindung in Millisekunden. Diese Eigenschaft gilt für HTTP- und HTTPS-Verbindungen. Der Standardwert ist 60 Sekunden.
 
 * **Aktivieren Sie HTTPS,** unabhängig davon, ob HTTPS aktiviert ist. Der Standardwert ist false.
