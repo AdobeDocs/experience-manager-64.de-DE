@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1843'
 ht-degree: 80%
 
 ---
@@ -59,7 +59,7 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Definitionen des Releasebilds aktualisieren](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Was ist AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [Was ist AEM Screens?](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Grundlegende Konzepte {#basic-concepts}
 
@@ -78,7 +78,7 @@ Auf dieser Grundlage bietet AEM einige Funktionen auf Anwendungsebene für die V
 * **Websites**
 * **Mobilanwendungen**
 * **digitalen Veröffentlichungen**
-* **Forms**
+* **Formulare**
 * **Digitale Assets**
 * **Communities**
 * **Online-Handel**
@@ -321,5 +321,5 @@ Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Definitionen des Releasebilds aktualisieren](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Was ist AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [Was ist AEM Screens?](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
