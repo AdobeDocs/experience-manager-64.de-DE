@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 73%
 
 ---
 
@@ -52,7 +55,7 @@ Gehen Sie zur Vorbereitung der Connector-Verwendung wie folgt vor:
 
 ## Installieren des SharePoint-Connectors {#installing-sharepoint-connector}
 
-Der Connector liegt als Inhaltspaket vor und lässt sich ganz einfach installieren. Installieren Sie das Paket mit Package Manager und legen Sie dann die SharePoint Server-URL fest\
+Der Connector liegt als Inhaltspaket vor und lässt sich ganz einfach installieren. Installieren Sie das Paket mit Package Manager und legen Sie dann die SharePoint Server-URL fest.\
 und andere Konfigurationsoptionen. Der SharePoint-Inhalt steht im AEM-Repository zur Verfügung.
 
 ### Installationsanforderungen {#installation-requirements}
@@ -90,7 +93,7 @@ Der Connector unterstützt Folgendes:
 
 Produktfeatures, Beispiele und Hotfixes werden über AEM Package Share verteilt. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Sie benötigen eine gültige Adobe-ID, die Ihre Unternehmens-E-Mail-Adresse enthält. Nach der Anmeldung bei Ihrem Konto müssen Sie außerdem Zugriff auf Package Share anfordern.
+To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Sie benötigen eine gültige Adobe ID, die Ihre Firma-E-Mail-Adresse enthält. Nach der Anmeldung bei Ihrem Konto müssen Sie außerdem Zugriff auf Package Share anfordern.
 
 #### Integrieren mit AEM {#integrating-with-aem}
 
@@ -132,9 +135,9 @@ Der Connector kann auch für mehrere Workspaces konfiguriert werden. In diesem F
 `<name>` der Name des JCR-Arbeitsbereichs und\
 `<url>` ist die URL des SharePoint-Servers für diesen Arbeitsbereich.
 
-Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Fügen Sie das Bundle **com.day.cq.dam.cq-dam-jcr-connectors** der Whitelist hinzu.
+Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Zulassungsliste des Bundles &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Gehen Sie wie folgt vor, um Bundles in AEM der Whitelist hinzuzufügen:
+So führen Sie das zulassungsliste von Bundles in AEM durch:
 
 1. Navigieren Sie zur OSGi Management Console: http://localhost:4502/system/console/configMgr.
 
