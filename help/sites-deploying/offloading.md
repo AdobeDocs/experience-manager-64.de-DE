@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 74%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 Mit der Abladung werden Verarbeitungsaufgaben auf die Experience Manager-Instanzen in einer Topologie verteilt. Mit der Abladung können Sie bestimmte Experience Manager-Instanzen zur Durchführung bestimmter Verarbeitungsarten verwenden. Mit dieser gezielten Verarbeitung kann die Nutzung der verfügbaren Serverressourcen maximiert werden.
 
-Die Abladung basiert auf den [Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)- und JobManager-Funktionen von Apache Sling. Zum Verwenden des Abladens fügen Sie einer Topologie Experience Manager-Cluster hinzu und identifizieren die Auftragsthemen, die vom Cluster verarbeitet werden. Cluster bestehen aus einer oder mehr Experience Manager-Instanzen, sodass eine Instanz als Cluster gilt.
+Die Abladung basiert auf den [Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)- und JobManager-Funktionen von Apache Sling. Zur Verwendung des Offloading fügen Sie einer Topologie Experience Manager-Cluster hinzu und identifizieren die Auftragsthemen, die vom Cluster verarbeitet werden. Cluster bestehen aus einer oder mehr Experience Manager-Instanzen, sodass eine Instanz als Cluster gilt.
 
 Weitere Informationen zum Hinzufügen von Instanzen zu einer Topologie finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -72,7 +75,7 @@ Für jeden Cluster wird eine Liste der Cluster-Mitglieder angezeigt, die angibt,
 
 Für jede Instanz des Clusters werden verschiedene topologiebezogene Eigenschaften angezeigt:
 
-* Eine Whitelist mit Themen für die Auftragsverarbeiter (JobConsumer) der Instanz
+* Eine zulassungsliste von Themen für den Jobkonsumenten der Instanz.
 * Die Endpunkte, die für die Verbindung mit der Topologie verfügbar gemacht werden
 * Die Auftragsthemen, für die die Instanz für die Abladung registriert ist
 * Die von der Instanz verarbeiteten Auftragsthemen
@@ -105,10 +108,10 @@ Gehen Sie wie folgt vor, um die Seite „Topology Management“ der Web-Konsole 
 
 Der ressourcenbasierte Apache Sling-Discovery-Dienst wird auf jeder Instanz ausgeführt und steuert, wie Experience Manager-Instanzen mit einer Topologie interagieren.
 
-Der Discovery-Dienst sendet regelmäßig POST-Anforderungen (Heartbeats) an Topologie-Connector-Dienste, um Verbindungen mit der Topologie herzustellen und aufrechtzuerhalten. Der Topologie-Connector-Dienst verwaltet eine Whitelist mit IP-Adressen oder Hostnamen, die Mitglied der Topologie werden dürfen:
+Der Discovery-Dienst sendet regelmäßig POST-Anforderungen (Heartbeats) an Topologie-Connector-Dienste, um Verbindungen mit der Topologie herzustellen und aufrechtzuerhalten. Der Topology Connector-Dienst verwaltet eine zulassungsliste mit IP-Adressen oder Hostnamen, die der Topologie beitreten dürfen:
 
 * Um eine Instanz zum Topologie-Mitglied zu machen, geben Sie die URL für den Topologie-Connector-Dienst des Stamm-Mitglieds an.
-* Um einer Instanz zu ermöglichen, Topologie-Mitglied zu werden, fügen Sie die Instanz zur Whitelist für den Topologie-Connector-Dienst des Stamm-Mitglieds hinzu.
+* Um zu ermöglichen, dass eine Instanz einer Topologie beitritt, fügen Sie die Instanz der zulassungsliste des Topology Connector-Dienstes des Stammmitglieds hinzu.
 
 Verwenden Sie die Web-Konsole oder einen „slign:OsgiConfig“-Knoten, um die folgenden Eigenschaften des Dienstes „org.apache.sling.discovery.impt.Config“ zu konfigurieren:
 
@@ -133,9 +136,9 @@ Verwenden Sie die Web-Konsole oder einen „slign:OsgiConfig“-Knoten, um die f
    <td>15</td> 
   </tr> 
   <tr> 
-   <td>Minimale Ereignisverzögerung (Sekunden)</td> 
+   <td>Minimale Ereignis-Verzögerung (Sekunden)</td> 
    <td>minEventDelay</td> 
-   <td><p>Wenn eine Änderung an der Topologie eintritt, die Zeitdauer, um die Statusänderung von TOPOLOGY_CHANGING zu TOPOLOGY_CHANGED zu verzögern. Jede Änderung, die auftritt, wenn der Status TOPOLOGY_CHANGING lautet, erhöht die Verzögerung um diesen zeitlichen Wert.</p> <p>Diese Verzögerung verhindert, dass Listener von Ereignissen überflutet werden. </p> <p>Wenn Sie keine Verzögerung verwenden möchten, geben Sie 0 oder eine negative Zahl an.</p> </td> 
+   <td><p>Wenn eine Änderung an der Topologie eintritt, die Zeitdauer, um die Änderung des Status von TOPOLOGY_CHANGING zu TOPOLOGY_CHANGED zu verzögern. Jede Änderung, die auftritt, wenn der Status TOPOLOGY_CHANGING lautet, erhöht die Verzögerung um diesen zeitlichen Wert.</p> <p>Diese Verzögerung verhindert, dass Listener von Ereignissen überflutet werden. </p> <p>Wenn Sie keine Verzögerung verwenden möchten, geben Sie 0 oder eine negative Zahl an.</p> </td> 
    <td>3</td> 
   </tr> 
   <tr> 
@@ -145,9 +148,9 @@ Verwenden Sie die Web-Konsole oder einen „slign:OsgiConfig“-Knoten, um die f
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Whitelist zum Thema-Connector</td> 
+   <td>Topology Connector-zulassungsliste</td> 
    <td>topologyConnectorWhitelist</td> 
-   <td>Die Liste der IP-Adressen oder Hostnamen, die der lokale Topology Connector-Dienst in der Topologie zulässt. </td> 
+   <td>Die Liste von IP-Adressen oder Hostnamen, die der lokale Topology Connector-Dienst in der Topologie zulässt. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
   </tr> 
   <tr> 
@@ -166,12 +169,12 @@ Gehen Sie wie folgt vor, um eine CQ-Instanz mit dem Stamm-Mitglied einer Topolog
 1. Klicken Sie auf „Configure Discovery Service“.
 1. Fügen Sie ein Element zur Eigenschaft „Topology Connector URLs“ hinzu und geben Sie die URL des Topologie-Connector-Dienstes für das Stamm-Mitglied der Topologie an. Die URL hat das Format https://rootservername:4502/libs/sling/topology/connector.
 
-Führen Sie die folgenden Schritte für das Stamm-Mitglied der Topologie aus. Dadurch werden die Namen der anderen Topologiemitglieder zur Whitelist für den Discovery-Dienst hinzugefügt.
+Führen Sie die folgenden Schritte für das Stamm-Mitglied der Topologie aus. Die Prozedur fügt die Namen der anderen Topologiemitglieder zu ihrer Discovery Service-zulassungsliste hinzu.
 
 1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf „Main“ > „Topology Management“.
 1. Klicken Sie auf „Configure Discovery Service“.
-1. Fügen Sie für jedes Topologiemitglied ein Element zur Eigenschaft „Topology Connector Whitelist“ hinzu und geben Sie den Hostnamen oder die IP-Adresse des Topologiemitglieds an.
+1. Fügen Sie für jedes Mitglied der Topologie der Topology Connector-zulassungsliste-Eigenschaft ein Element hinzu und geben Sie den Hostnamen oder die IP-Adresse des Topologieelements an.
 
 ## Konfigurieren der Themenverarbeitung {#configuring-topic-consumption}
 
@@ -197,6 +200,7 @@ Aufgaben werden mithilfe der Round-Robin-Logik auf die Instanzen verteilt, auf d
    * Aktiviert: Diese Instanz verarbeitet Aufträge für dieses Thema.
    * Deaktiviert: Diese Instanz verarbeitet keine Aufträge für dieses Thema.
    * Exklusiv: Diese Instanz verarbeitet nur Aufträge für dieses Thema.
+
    **Hinweis:** Wenn Sie die Option „Exklusiv“ für ein Thema auswählen, werden alle anderen Themen automatisch auf „Deaktiviert“ gesetzt.
 
 ### Installierte JobConsumer-Dienste {#installed-job-consumers}
@@ -211,18 +215,18 @@ Die Installation von Experience Manager umfasst mehrere implementierte JobConsum
 
 ### Deaktivieren und Aktivieren von Themen für eine Instanz {#disabling-and-enabling-topics-for-an-instance}
 
-Der JobConsumerManager-Dienst von Apache Sling stellt Whitelist- und Blacklist-Eigenschaften für Themen bereit. Konfigurieren Sie diese Eigenschaften, um die Verarbeitung von bestimmten Themen auf einer Experience Manager-Instanz zu aktivieren oder zu deaktivieren.
+Der Apache Sling Job Consumer Manager-Dienst stellt Eigenschaften zum zulassungsliste und blockierungsliste bereit. Konfigurieren Sie diese Eigenschaften, um die Verarbeitung von bestimmten Themen auf einer Experience Manager-Instanz zu aktivieren oder zu deaktivieren.
 
-**** Hinweis: Wenn die Instanz zu einer Topologie gehört, können Sie den Offload-Browser auch auf einem beliebigen Computer in der Topologie verwenden, um Themen zu aktivieren oder zu deaktivieren.
+**Hinweis:** Wenn die Instanz zu einer Topologie gehört, können Sie den Offload-Browser auch auf einem beliebigen Computer in der Topologie verwenden, um Themen zu aktivieren oder zu deaktivieren.
 
-The logic that creates the list of enabled topics first allows all of the topics that are in the whitelist, and then removes topics that are on the blacklist.By default, all topics are enabled (the whitelist value is `*`) and no topics are disabled (the blacklist has no value).
+The logic that creates the list of enabled topics first allows all of the topics that are in the allow list, and then removes topics that are on the block list.By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
 
 Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folgenden Eigenschaften zu konfigurieren. Für `sling:OsgiConfig`-Knoten lautet die PID des JobConsumerManager-Dienstes „org.apache.sling.event.impl.jobs.JobConsumerManager“.
 
 | Eigenschaftsname in der Webkonsole | OSGi-ID | Beschreibung |
 |---|---|---|
-| ThemenWhitelist | job.consumermanager.whitelist | Eine Liste der Themen, die vom lokalen JobManager-Dienst verarbeitet werden. Der Standardwert von &amp;ast; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
-| Thema-Blacklist | job.consumermanager.blacklist | Eine Liste der Themen, die vom lokalen JobManager-Dienst nicht verarbeitet werden. |
+| ThemenWhitelist | job.consumermanager.whitelist | Eine Liste von Themen, die vom lokalen JobManager-Dienst verarbeitet werden. Der Standardwert von &amp;ast; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
+| Thema-Blacklist | job.consumermanager.blacklist | Eine Liste von Themen, die vom lokalen JobManager-Dienst nicht verarbeitet werden. |
 
 ## Erstellen von Replikationsagenten für die Abladung {#creating-replication-agents-for-offloading}
 
@@ -277,8 +281,8 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Einstellungen > Serialisierungstyp | Default |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Transportbenutzer | Replikationsbenutzer auf Zielinstanz |
-   | Transport > Transportpass | Benutzerkennwort auf Zielinstanz replizieren |
+   | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
+   | Transport > Transportpass | Replizieren des Benutzerkennworts auf der Zielgruppe |
    | Erweitert > HTTP-Methode | POST |
    | Auslöser > Standard ignorieren | True |
 
@@ -291,8 +295,8 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Einstellungen > Serialisierungstyp | Default |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Transportbenutzer | Replikationsbenutzer auf Zielinstanz |
-   | Transport > Transportpass | Benutzerkennwort auf Zielinstanz replizieren |
+   | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
+   | Transport > Transportpass | Replizieren des Benutzerkennworts auf der Zielgruppe |
    | Erweitert > HTTP-Methode | GET |
 
 ### Erstellen des Postausgangs-Agenten {#creating-the-outbox-agent}
@@ -329,7 +333,7 @@ Beim nachfolgenden Verfahren wird von den folgenden Merkmalen für die Abladungs
 * Die Benutzer interagieren nicht direkt mit einer oder mehr Experience Manager-Instanzen, die die DAM-Assets verarbeiten. Diese Instanzen sind dedizierte Instanzen für die Hintergrundverarbeitung von DAM-Assets.
 
 1. Konfigurieren Sie den Discovery-Dienst auf allen Experience Manager-Instanzen so, dass er auf den Stamm-Topologie-Connector verweist. (Weitere Informationen finden Sie unter [Konfigurieren der Topologie-Mitgliedschaft](#title4).)
-1. Konfigurieren Sie den Stamm-Topologie-Connector so, dass die damit verbundenen Instanzen auf der Whitelist aufgeführt sind.
+1. Konfigurieren Sie den Topography Connector-Stammordner so, dass sich die Verbindungsinstanzen auf der zulassungsliste befinden.
 1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
