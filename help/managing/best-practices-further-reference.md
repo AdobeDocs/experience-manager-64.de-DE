@@ -10,7 +10,10 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
-source-git-commit: 8145f71848e956647cb4321aaa432b33b9ef9383
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+workflow-type: tm+mt
+source-wordcount: '3767'
+ht-degree: 88%
 
 ---
 
@@ -27,16 +30,16 @@ Auf dieser Seite finden Sie weitere Details, um die Dokumente und Prinzipien von
 
 ### Funktionen innerhalb von AEM {#features-within-aem}
 
-When implementing AEM (particularly for the first time) you will need to review the [capabilites and workflows of AEM](https://www.adobe.com/marketing/experience-manager.html) to be sure of which areas you want/need.
+When implementing AEM (particularly for the first time) you will need to review the [capabilites and workflows of AEM](https://www.adobe.com/de/marketing/experience-manager.html) to be sure of which areas you want/need.
 
 Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
 
 * [Commerce](/help/sites-administering/ecommerce.md)
-* [Screens](/help/screens/aem-screens-introduction.md)
+* [Screens](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Formulare](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
@@ -104,7 +107,7 @@ Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzu
 
    * Dabei ist es wichtig, nur eine Kopie der Informationen aufzubewahren und die Informationen (und damit den Zugriff auf das verwendete Tool) zu teilen. Dies erleichtert die Wartung und hilft, Unstimmigkeiten zu vermeiden.
 
-* **Anwendungsbereich**
+* **Umfang**
 
    Definieren Sie klar, was das Projekt auf verschiedenen Ebenen abdecken soll:
 
@@ -499,19 +502,19 @@ Die folgenden Site-Metriken sollten definiert werden:
 
 | Klassifizierung | Definition |
 |---|---|
-| Anzahl der Websites |  |
+| Anzahl der Internetseiten |  |
 | Anzahl der Intranet-Sites |  |
 | Anzahl der Codegrundlagen (z. B. wenn Internet und Intranet unterschiedlich sind) |  |
 | Anzahl der einzelnen Seiten |  |
 | Anzahl der Site-Besuche/Tage |  |
-| Anzahl der Seitenansichten/Tag |  |
+| Anzahl der Ansichten pro Tag |  |
 | Menge (in GB) der Datenübertragung/Tag |  |
 | Anzahl gleichzeitiger Benutzer (geschlossene Benutzergruppe) |  |
 | Anzahl gleichzeitiger Besucher (Veröffentlichen) |  |
 | Anzahl gleichzeitiger Autoren |  |
 | Anzahl der registrierten Autoren |  |
-| Anzahl der Seitenaktivierungen / Arbeitstag |  |
-| Anzahl der Seitenaktivierungen während der Bereitstellung |  |
+| Anzahl der Aktivierungen/Arbeitstage |  |
+| Anzahl der Aktivierungen während der Bereitstellung |  |
 
 ## Übersicht der möglichen Werkzeuge {#overview-of-potential-tools}
 
@@ -582,7 +585,7 @@ Darüber hinaus sind die folgenden Abschnitte von besonderem Interesse:
 Adobe bietet weitere Best Practices für alle Phasen und Zielgruppen:
 
 * [Bereitstellung](/help/sites-deploying/best-practices.md)
-* [Authoring](/help/sites-authoring/best-practices.md)
+* [Authoring – ](/help/sites-authoring/best-practices.md)
 * [Verwalten](/help/sites-administering/administer-best-practices.md)
 * [Entwickeln](/help/sites-developing/best-practices.md)
 * [Projektmanagement](/help/managing/best-practices.md)
