@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 93%
@@ -53,7 +53,6 @@ Um einen überwachten Ordner zu konfigurieren, erstellen Sie einen Konfiguration
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-
    Eine vollständige Liste der unterstützten Eigenschaften finden Sie unter [Eigenschaften für überwachte Ordner](#watchedfolderproperties).
 
 1. Klicken Sie auf **Alle speichern**. Der Knoten wird erstellt und die Eigenschaften werden gespeichert. The `input`, `result`, `failure`, `preserve`, and `stage`folders are created at the path specified in the `folderPath` property.
@@ -141,7 +140,6 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/
    * %l = Millisekunde
    * %R = Zufallszahl (zwischen 0 und 9)
    * %P = Prozess- oder Auftrags-ID
-
    Wenn es beispielsweise der 17. Juli 2009, 20 Uhr, ist und Sie C:/Test/WF0/failure/%Y/%M/%D/%H/ angeben, ist der Ergebnisordner C:/Test/WF0/failure/2009/07/17/20
 
    Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachten Ordner erstellt. Der Standardwert ist „result/%Y/%M/%D/“, d. h. der Ergebnisordner im überwachten Ordner. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -164,7 +162,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/
 
 * **overwriteDuplicateFilename (Boolescher Wert)**: Bei Festlegung auf „True“ werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
 * **preserveOnFailure (Boolescher Wert)**: Bewahrt die Eingabedateien auf, wenn es zu einem Fehler bei der Ausführung des Vorgangs für einen Dienst kommt. Der Standardwert lautet true.
-* **inputFilePattern (Zeichenfolge)**: Geben Sie das Muster der Eingabedateien für einen überwachten Ordner an. Dadurch wird eine Whitelist für die Dateien erstellt.
+* **inputFilePattern (Zeichenfolge)**: Geben Sie das Muster der Eingabedateien für einen überwachten Ordner an. Erstellt eine zulassungsliste der Dateien.
 * **asynch (Boolescher Wert)**: Bestimmt, ob ein asynchroner oder ein synchroner Aufruftyp verwendet wird. Der Standardwert ist „true“ (asynchron). Da die Verarbeitung von Dateien sehr ressourcenintensiv ist, sollten Sie den Wert „true“ für das Flag „asynch“ beibehalten, um eine Überlastung des Haupt-Threads des Überprüfungsauftrags zu vermeiden. In einer Clusterumgebung muss der Wert „true“ für das Flag unter allen Umständen beibehalten werden, um den Lastenausgleich für die Dateiverarbeitung zwischen den verfügbaren Servern zu ermöglichen. Wird für das Flag der Wert „false“ festgelegt, versucht der Überprüfungsauftrag, die einzelnen Dateien bzw. Ordner der höchsten Ebene nacheinander innerhalb seines eigenen Threads zu verarbeiten. Legen Sie daher nur in Sonderfällen den Wert „false“ für das Flag fest, z. B. für die Workflow-basierte Verarbeitung in einer Einrichtung mit einem einzelnen Server.
 
 >[!NOTE]
@@ -537,7 +535,6 @@ Wenn die Quelldateien im Bereitstellungsordner nicht vom Watched Folder-Dienst v
 
    * Ändern Sie die Eigenschaft „includeFilePattern“ für den überwachten Ordner in eine Angabe, die mit keiner der neuen Eingabedateien übereinstimmen kann (z. B. NOMATCH).
    * Setzen Sie den Prozess aus, der neue Eingabedateien erstellt.
-
    Warten Sie, bis AEM Forms alle Dateien wiederherstellt und verarbeitet. Die Mehrheit der Dateien sollte wiederhergestellt und alle neuen Eingabedateien ordnungsgemäß verarbeitet werden. Der Zeitraum, den Sie darauf warten müssen, dass der Watched Folder-Dienst die Dateien wiederherstellt und verarbeitet, hängt von der Dauer des aufzurufenden Vorgangs sowie von der Anzahl wiederherzustellender Dateien ab.
 
 1. Ermitteln Sie, welche Dateien nicht verarbeitet werden können. Wenn Sie ausreichend lange gewartet und den vorangehenden Schritt ausgeführt haben, sich aber immer noch nicht verarbeitete Dateien im Bereitstellungsordner befinden, fahren Sie mit dem nächsten Schritt fort.
