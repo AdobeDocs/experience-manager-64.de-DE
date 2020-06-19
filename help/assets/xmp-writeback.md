@@ -3,7 +3,7 @@ title: XMP-Writeback in Ausgabeformaten
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b7180dcc7b50dca1c101a3fd28e031ef8e08f37f
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 46%
@@ -73,16 +73,6 @@ The metadata changes are propagated to the renditions `thumbnail.140.100.png` an
 Beim Filtern mit einer blockierungsliste können Sie alle XMP-Metadateneigenschaften mit Ausnahme der Eigenschaften importieren, die für den Ausschluss angegeben wurden. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn beim Filtern mit einer blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP-Metadaten importiert werden kann, kann es bei der AEM-Instanz oder dem AEM-Cluster zu Stabilitätsproblemen kommen, z. B. zu verstopften Beobachtungswarteschlangen.
 
 Das Filtern von XMP-Metadaten über zulassungsliste behebt dieses Problem, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden alle anderen oder unbekannten XMP-Eigenschaften ignoriert. Zur Abwärtskompatibilität können Sie einige dieser Eigenschaften zum Filter hinzufügen, der eine blockierungsliste verwendet.
-
-<!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
-in Config Manager. And the settings are,
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_whitelist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.whitelist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_blacklist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.blacklist.name
- 
-TBD: Make updates to configurations for allow and block list after product updates are done.
--->
 
 >[!NOTE]
 >
