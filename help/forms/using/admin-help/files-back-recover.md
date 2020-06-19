@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ Die zu sichernden Anwendungs- und Datendateien werden in den folgenden Abschnitt
 Berücksichtigen Sie folgende Punkte zu Sicherung und Wiederherstellung:
 
 * Die Datenbank sollte vor GDS und AEM-Repository gesichert werden.
-* Wenn Sie die Knoten in einer Clusterumgebung für die Sicherung verringern möchten, stellen Sie sicher, dass die Slave-Knoten vor dem Master-Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem muss der Master-Knoten vor den Slave-Knoten bereitgestellt werden.
+* Wenn Sie die Nodes in einer geclusterten Umgebung zur Sicherung herunterfahren müssen, stellen Sie sicher, dass die sekundären Nodes vor dem primären Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem sollte der primäre Knoten vor jedem sekundären Knoten live geschaltet werden.
 * Für den Wiederherstellungsvorgang eines Clusters sollte der Anwendungsserver für jeden Knoten im Cluster angehalten werden.
 
 ## Ordner des globalen Dokumentenspeichers {#global-document-storage-directory}
