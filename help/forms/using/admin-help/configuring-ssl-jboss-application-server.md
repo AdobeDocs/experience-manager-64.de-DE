@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: 479b0192f8a9f1a4f30f712222a20bf20ac73f27
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 51%
 
 ---
 
@@ -30,7 +33,7 @@ In diesem Verfahren gilt:
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the credential and keystore:
 
-   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppenname* `, O=`*Firma Name *`,L=`*Stadt* `, S=`*Land *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**Ländercode&quot;key_passwordkeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppenname* `, O=`*Firma Name *`,L=`*Stadt Name* `, S=`*Bundesland *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`*Ländercode&quot;key_passwordkeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ In diesem Verfahren gilt:
 
 1. Copy the *keystorename*.keystore to the `[appserver root]/server/[type]/conf` directory by typing one of the following commands:
 
-   * (Windows-Einzelserver) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows-Einzelserver) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
    * (Windows-Servercluster) copy `keystorename.keystore[appserver root]\domain\configuration`
    * (Linux Einzelserver) `cp keystorename.keystore [appserver root]/standalone/configuration`
    * (Linux-Servercluster) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
@@ -75,7 +78,7 @@ In diesem Verfahren gilt:
 
 1. Importieren Sie das Zertifikat durch Eingabe des folgenden Befehls:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. Dieses Kennwort ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
 1. Geben Sie bei Aufforderung `Trust this certificate? [no]`: `yes`ein. Daraufhin wird die Bestätigung „Certificate was added to keystore“ angezeigt.
@@ -123,7 +126,7 @@ In diesem Verfahren gilt:
    </security-realm>
    ```
 
-   On the master node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname>.xml, locate the &lt;server> section present after the following code:
+   On the primary node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname>.xml, locate the &lt;server> section present after the following code:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -166,7 +169,7 @@ In diesem Verfahren gilt:
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the keystore and the key:
 
-   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppe Name* `, O=`*Firma Name *`, L=`*Stadt* `, S=`*Land *Code&quot;`, C=`**`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`**-Schlüssel KennwortKeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppe Name* `, O=`*Firma Name *`, L=`*Stadt* `, S=`*Land *Code&quot;`, C=`**`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`*-SchlüsselKennwortKeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -192,7 +195,7 @@ In diesem Verfahren gilt:
 
 1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to import the credential into the keystore:
 
-   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename*`.keystore`
+   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
