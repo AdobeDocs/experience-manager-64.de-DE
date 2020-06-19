@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 759068fa-dc1b-4cf5-bc7b-62b8c5464831
 translation-type: tm+mt
-source-git-commit: 662d3bbc86ae2b1e99df2548a02322ffde156dbd
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 93%
 
 ---
 
@@ -35,9 +38,9 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
    * For AEM Forms on OSGi, the bundles are listed at `https://[server]:[port]/system/console/bundles`.
    * For AEM Forms on JEE, the bundles are listed at `https://[server]:[port]/[context-path]/system/console/bundles`. Beispiel `http://localhost:8080/lc/system/console/bundles`.
 
-* Setzen Sie das *sun.util.calendar*-Paket auf die Positivliste. Gehen Sie wie folgt vor, um das Paket auf die Positivliste zu setzen:
+* Add the *sun.util.calendar* package to the allowlist. So fügen Sie das Paket der zulassungsliste hinzu:
 
-   1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://[server]:[port]/system/console/configMgr`.
+   1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
    1. Fügen Sie das sun.util.calendar-Paket zu den Positiv-Klassen oder dem Paketpräfixfeld hinzu und klicken Sie auf **Save**.
 
@@ -50,19 +53,20 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 
 ### Konfigurieren des Adobe LiveCycle Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://[server]:[port]/system/console/configMgr`.
+1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-Paket**. Geben Sie den Wert für die folgenden Felder an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der Forms on JEE-Keystore-Datei> neu.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
    * **Benutzername:** Geben Sie den Benutzernamen des AEM Forms on JEE-Konto an, der verwendet werden soll, um Aufrufe von AEM-Server zu initiieren. Das angegebene Konto benötigt Berechtigungen zum Starten der Document Services auf dem AEM Forms on JEE-Server.
    * **Kennwort:** Geben Sie das Kennwort für das AEM Forms on JEE-Konto an, das im Feld „Benutzername“ erwähnt ist.
+
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
 ### Konfigurieren von Adobe LiveCycle Client SDK Bundle mit gegenseitiger Authentifizierung {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
-1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://[server]:[port]/system/console/configMgr`.
+1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
+1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-** Paket. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
@@ -72,6 +76,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
    * **KeyStore-Kennwort**: Geben Sie das Kennwort für die KeyStore-Datei an.
    * **TrustStorePassword**: Geben Sie das Kennwort für die TrustStore-Datei an.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
+
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
 ## Indizieren eines richtliniengeschützten Beispiel-PDF-Dokuments {#index-a-sample-policy-protected-pdf-document}
