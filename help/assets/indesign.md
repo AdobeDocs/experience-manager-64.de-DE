@@ -3,7 +3,7 @@ title: Integration von AEM Assets mit Adobe InDesign Server
 description: Erfahren Sie mehr über die Integration von AEM Assets mit InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 71%
@@ -226,15 +226,15 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
    >[!NOTE]
    >
-   >Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die blockierte Liste von IDS-Mitarbeitern aktivieren.
+   >Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die blockierungsliste von IDS-Mitarbeitern aktivieren.
    >
    >Dazu aktivieren Sie das Kontrollkästchen „enable.retry.name“ unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, die Wiederholungen von IDS-Aufträgen ermöglicht.
    >
    >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
    >
-   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Mitarbeiter online gefunden wird, wird er aus der blockierten Liste entfernt.
+   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Mitarbeiter online gefunden wird, wird er aus der blockierungsliste entfernt.
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Unterstützung für Adobe InDesign Server 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-higher}
