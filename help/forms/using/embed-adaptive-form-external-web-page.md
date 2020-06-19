@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 55%
+source-wordcount: '1274'
+ht-degree: 53%
 
 ---
 
@@ -155,7 +155,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs für Senden, Vorausfüllen und andere Funktionen auf der Dispatcher-Ebene in die Positivliste eintragen.
+>Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs &quot;Senden&quot;, &quot;Vorausfüllen&quot;und andere URLs zum zulassungsliste des auf der Dispatcher-Ebene hinzufügen.
 
 ## Best Practices {#best-practices}
 
