@@ -3,7 +3,10 @@ title: Verwenden von Adobe Stock-Assets in AEM Assets
 description: Sie können Adobe Stock-Assets in AEM suchen, abrufen und verwalten. Behandeln Sie die lizenzierten Assets wie jedes andere AEM-Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +36,9 @@ Um die Kommunikation zwischen AEM und Adobe Stock zu ermöglichen, erstellen Sie
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie die entsprechenden Werte in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Geheimer Clientschlüssel]** und **[!UICONTROL Nutzlast]** ein. Detaillierte Informationen zum Abrufen dieser Werte aus der Adobe-E/A-Datei finden Sie unter [Schnellstart zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 1. Fügen Sie den heruntergeladenen Schlüssel zu Ihrem Adobe I/O-Servicekonto hinzu.
+
+<!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+-->
 
 ### Erstellen einer Adobe Stock-Konfiguration in AEM   {#create-adobe-stock-configuration-in-aem}
 
