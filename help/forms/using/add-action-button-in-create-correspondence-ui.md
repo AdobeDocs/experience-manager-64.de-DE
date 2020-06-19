@@ -9,18 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '1912'
+ht-degree: 56%
 
 ---
 
 
 # Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu {#add-custom-action-button-in-create-correspondence-ui}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
 
-Im Szenario in diesem Dokument wird erläutert, wie Sie eine Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;erstellen können, um einen Brief als Review-PDF freizugeben, das an eine E-Mail angehängt wird.
+In diesem Dokument wird beschrieben, wie Sie eine Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;erstellen können, um einen Brief als Review-PDF freizugeben, das an eine E-Mail angehängt wird.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -50,11 +53,11 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
    * Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/config/defaultApp/
+      **[!UICONTROL Pfad:]** /libs/fd/cm/config/defaultApp/
 
-      **** Überlagerungsort: /apps/
+      **[!UICONTROL Überlagerungsort:]** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **[!UICONTROL Knotentypen abgleichen:]** Überprüft
 
       ![Überlagerungsknoten](assets/2_defaultappoverlaynode.png)
 
@@ -89,7 +92,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
    </extensionsConfig> 
    ```
 
-1. Um ein Schreiben per E-Mail zu versenden, können Sie den LiveCycle Forms-Arbeitsablauf verwenden. Fügen Sie unter dem modelExtension-Tag in der Datei acmExtensionsConfig.xml einen customAction-Tag wie folgt hinzu:
+1. Um ein Schreiben per E-Mail zu versenden, können Sie den LiveCycle Forms-Arbeitsablauf verwenden. Hinzufügen Sie ein customAction-Tag unter dem modelExtension-Tag in acmExtensionsConfig.xml wie folgt:
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -103,7 +106,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
    | **Name** | **Beschreibung** |
    |---|---|
-   | name | Der alphanumerische Name der auszuführenden Aktion. Der Wert dieses Tags wird benötigt, muss eindeutig sein (d. h. innerhalb des modelExtension-Tags) und muss mit einem Buchstaben beginnen. |
+   | name | Der alphanumerische Name für die auszuführende Aktion. Der Wert dieses Tags wird benötigt, muss eindeutig sein (d. h. innerhalb des modelExtension-Tags) und muss mit einem Buchstaben beginnen. |
    | label | Die Beschriftung der Aktionsschaltfläche |
    | tooltip | QuickInfo-Text der Schaltfläche, der angezeigt wird, wenn der Benutzer den Cursor auf der Schaltfläche bewegt. |
    | styleName | Name des benutzerdefinierten Stils, der auf die Aktionsschaltfläche angewendet wird. |
@@ -115,14 +118,14 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
    | **Name** | **Beschreibung** |
    |---|---|
    | serviceName | Wenn eine customAction ein untergeordnetes Tag mit dem Namen serviceName enthält, wird beim Klicken auf die entsprechende Schaltfläche/Verknüpfung ein Prozess mit dem Namen aufgerufen, der vom Tag serviceName repräsentiert wird. Stellen Sie sicher, dass dieser Prozess dieselbe Signatur wie der Brief PostProcess hat. Fügen Sie das Präfix „Forms-Arbeitsablauf“ zum Servicenamen hinzu. |
-   | Parameter, die das Präfix cm_ im Tag-Namen enthalten | Enthält eine customAction untergeordnete Tags, die mit dem Namen cm_ beginnen, dann sind diese Parameter im Nachbearbeitungsprozess (Brief-Nachbearbeitung oder der spezielle Prozess, der vom serviceName-Tag dargestellt wird) im Eingabe-XML-Code unter dem entsprechenden Tag verfügbar, wobei das Präfix cm_ entfernt wurde. |
+   | Parameter, die das Präfix cm_ im Tag-Namen enthalten | Enthält eine customAction untergeordnete Tags, die mit dem Namen cm_ beginnen, dann sind diese Parameter im Nachbearbeitungsprozess (Brief-Nachbearbeitung oder der spezielle Prozess, der vom serviceName-Tag repräsentiert wird) im Eingabe-XML-Code unter dem entsprechenden Tag verfügbar, wobei das Präfix cm_ entfernt wurde. |
    | actionName | Wenn ein Nachbearbeitungsprozess durch einen Klick verursacht wird, enthält die gesendete XML ein spezielles Tag mit dem Namen unter dem Tag mit dem Namen der Benutzeraktion. |
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 #### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
-Die ACMExtensionsMessages.properties-Datei enthält Beschriftungen und Quickinfo-Meldungen verschiedener Felder in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
+Die ACMExtensionsMessages.properties-Datei enthält Beschriftungen und QuickInfo-Meldungen verschiedener Felder in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
 
 1. Right-click the **[!UICONTROL locale]** folder at the following path and select **[!UICONTROL Overlay Node]**:
 
@@ -130,11 +133,11 @@ Die ACMExtensionsMessages.properties-Datei enthält Beschriftungen und Quickinfo
 
 1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-   **** Pfad: /libs/fd/cm/config/defaultApp/locale
+   **[!UICONTROL Pfad:]** /libs/fd/cm/config/defaultApp/locale
 
-   **** Überlagerungsort: /apps/
+   **[!UICONTROL Überlagerungsort:]** /apps/
 
-   **** Knotentypen abgleichen: Überprüft
+   **[!UICONTROL Knotentypen abgleichen:]** Überprüft
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -166,7 +169,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset C
 >
 >Möglicherweise müssen Sie die Daten im Browsercache löschen.
 
-1. Wechseln zu `https://[host]:[port]/system/console/bundles`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://[host]:[port]/system/console/bundles` auf. Falls erforderlich, melden Sie sich als Administrator an.
 
 1. Suchen Sie das Asset Composer-Baustein-Bundle von Adobe. Starten Sie das Bundle neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
 
@@ -188,7 +191,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 * Aktivieren/Deaktivieren der neu hinzugefügten Aktion: , indem die Funktion actionEnabled() außer Kraft gesetzt wird.
 * Tatsächliche Behandlung der Aktion, wenn der Benutzer auf die Schaltfläche klickt: erfolgt, indem die Implementierung der Funktion handleAction() außer Kraft gesetzt wird.
 
-1. Wechseln zu `https://[server]:[port]/[ContextPath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://[server]:[port]/[ContextPath]/crx/de` auf. Falls erforderlich, melden Sie sich als Administrator an.
 
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen`js`   in der /apps-Verzweigung von CRX, mit einer ähnlichen Struktur des folgenden Ordners:
 
@@ -202,11 +205,11 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **[!UICONTROL Pfad:]** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** Überlagerungsort: /apps/
+      **[!UICONTROL Überlagerungsort:]** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **[!UICONTROL Knotentypen abgleichen:]** Überprüft
 
    1. Klicken Sie auf **[!UICONTROL OK]**.
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -347,6 +350,7 @@ Der LCA-Vorgang wird auf dem LiveCycle-Server ausgeführt und erfordert die Serv
    * **[!UICONTROL Server-URL]**: URL des LC-Servers, dessen Dienst &quot;Zur Überprüfung senden&quot;der Aktionshandler-Code verwendet.
    * **[!UICONTROL Benutzername]**: Administratorbenutzername des LC-Servers
    * **[!UICONTROL Kennwort:]** Kennwort des Adminbenutzernamens 
+
    ![Adobe LiveCycle Client SDK-Konfiguration](assets/3_clientsdkconfiguration.png)
 
 #### Installieren des LiveCycle Archivs (LCA) {#install-livecycle-archive-lca}
@@ -377,7 +381,7 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienst-Prozess aktiviert.
 
 1. Wählen Sie **[!UICONTROL Importieren]**.
 
-#### Hinzufügen von ServiceName zur WhiteListed-Liste der Dienste {#adding-servicename-to-the-whitelisted-service-list}
+#### Adding ServiceName to the AllowListed Service list {#adding-servicename-to-the-allowlisted-service-list}
 
 Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server zugreifen möchten.
 
@@ -418,18 +422,19 @@ For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/form
    * **crx.username** = AEM-Benutzername
    * **crx.password**= AEM-Kennwort
    * **crx.appRoot** = /content/apps/cm
+
    >[!NOTE]
    >
    >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
 
-   Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API, um den Brief als PDF-Bytes aus XML-Daten zu rendern, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API, um den Brief als PDF-Bytes aus XML-Daten zu rendern, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Anfang Workbench und melden Sie sich an.
-1. Select **[!UICONTROL Window > Show Views > Components]**. Die Komponentenansicht wird Workbench ES2 hinzugefügt.
+1. Select **[!UICONTROL Window > Show Views > Components]**. Die Komponenten-Ansicht wird zu Workbench ES2 hinzugefügt.
 
 1. Right-click **[!UICONTROL Components]** and select **[!UICONTROL Install Component]**.
 
