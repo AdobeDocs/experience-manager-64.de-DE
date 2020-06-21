@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: ec8492b5190ea9006d80269aa97849a5ee3af95e
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 81%
 
 ---
 
@@ -79,6 +82,6 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 
 Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Use the method of [activating a complete section (tree)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) to activate the repository nodes that store the Microsoft Translator or third-party cloud service configurations. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
 
-* Microsoft Translation Service: /etc/cloudservices/msft-translation
+* Microsoft Translation Service: /libs/settings/cloudconfigs/translation/msft-translation
 * Übersetzung von Drittanbietern: /etc/cloudservices/machine-translation
 
