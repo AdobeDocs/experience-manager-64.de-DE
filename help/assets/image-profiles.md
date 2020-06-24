@@ -1,6 +1,6 @@
 ---
-title: Profile für dynamische Medienbilder
-seo-title: Profile für dynamische Medienbilder
+title: Profile für Dynamic Media
+seo-title: Profile für Dynamic Media
 description: Erstellen Sie Profile mit Einstellungen für Unschärfemaske und/oder intelligentes Beschneiden oder Muster und wenden Sie das Profil dann auf einen Ordner mit Bild-Assets an.
 seo-description: Erstellen Sie Profile mit Einstellungen für Unschärfemaske und/oder intelligentes Beschneiden oder Muster und wenden Sie das Profil dann auf einen Ordner mit Bild-Assets an.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
 workflow-type: tm+mt
 source-wordcount: '2708'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 Die Koordinaten der intelligenten Zuschneidung sind vom Seitenverhältnis abhängig. Das heißt, bei den verschiedenen Einstellungen für intelligente Beschneidung in einem Bild-Profil, wenn das Seitenverhältnis für die hinzugefügten Dimensionen im Profil identisch ist, wird dasselbe Seitenverhältnis an dynamische Medien gesendet. Aus diesem Grund empfiehlt Adobe, den gleichen Bereich für die Beschneidung zu verwenden. Auf diese Weise wird sichergestellt, dass die verschiedenen im Image-Profil verwendeten Abmessungen nicht beeinträchtigt werden.
 
-Achten Sie darauf, dass jede von Ihnen erstellte Smart-Zuschneidegeneration eine zusätzliche Verarbeitung erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für intelligente Zuschneiden kann beispielsweise zu einer langsamen Erfassungsrate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie Smart-Zuschnitte auf Ordnerebene anwenden können, empfiehlt Adobe, diese auf Ordner *nur* dort zu verwenden, wo sie benötigt werden.
+Achten Sie darauf, dass jede von Ihnen erstellte Smart-Zuschneidegeneration eine zusätzliche Verarbeitung erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für das smarte Zuschneiden kann beispielsweise zu einer langsamen Aufnahmerate für Assets führen. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* dort anzuwenden, wo es benötigt werden.
 
 Es stehen zwei Optionen zum Beschneiden zur Auswahl. Sie haben auch die Möglichkeit, die Erstellung von Farb- und Bildfeldern zu automatisieren.
 
@@ -96,7 +96,7 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
   </tr> 
   <tr> 
    <td>Radius</td> 
-   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.    Bereich: 0-250.</td> 
+   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.      Bereich: 0-250.</td> 
   </tr> 
   <tr> 
    <td>Schwelle</td> 
@@ -111,7 +111,7 @@ Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/s
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-**So erstellen Sie Dynamische Medien-Image-Profil**:
+**So erstellen Sie Dynamic Media-Image-Profil**:
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Bildprofil hinzuzufügen.
@@ -119,7 +119,7 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
    Es empfiehlt sich, einen Profilnamen auszuwählen, der den Zweck des Profils beschreibt. Wenn Sie beispielsweise ein Profil erstellen, das nur Farb-/Bildmuster generiert – wo also smartes Zuschneiden deaktiviert und „Farb- und Bildmuster“ aktiviert ist –, können Sie das Profil „Smarte Farb-/Bildmuster“ nennen.
 
-   Siehe auch Optionen für [Smart-Zuschneiden und Smart-Musterabschnitt](#crop-options) sowie [Unscharf maskieren](#unsharp-mask).
+   Siehe auch Optionen für [Smartes Zuschneiden und smarte Farb-/Bildmuster](#crop-options) sowie [Unscharf maskieren](#unsharp-mask).
 
    ![Zuschneiden](assets/crop.png)
 
@@ -159,13 +159,13 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tippen Sie auf **[!UICONTROL Verarbeitungsprofil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen oder klicken Sie anschließend auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+1. Tippen Sie auf **[!UICONTROL Verarbeitungsprofil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen oder klicken Sie anschließend auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 #### Anwenden von Bildprofilen für Dynamic Media auf Ordner über „Eigenschaften“{#applying-image-profiles-to-folders-from-properties}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Bildprofil anwenden möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Bildprofile]**. Wählen Sie in der Dropdown-Liste **[!UICONTROL Profilname]** das gewünschte Profil aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+1. Tippen Sie auf die Registerkarte **[!UICONTROL Bildprofile]**. Wählen Sie in der Dropdown-Liste **[!UICONTROL Profilname]** das gewünschte Profil aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -249,12 +249,14 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
       * Wenn das Bild nur über einen smarten Zuschnitt oder ein smartes Farb-/Bildmuster verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen.
       * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen. Oder tippen oder klicken Sie auf das smarte Bildmuster unter dem Bild (Farbmuster sind statisch) und ziehen Sie die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Bildmusters anzupassen.
+
       ![Größenänderung des smarten Zuschnitts eines Bildes.](assets/edit_smart_crops-resize.png)
 
    * Verschieben Sie das smarte Zuschnittsfeld. Führen Sie einen der folgenden Schritte aus:
 
       * Wenn das Bild nur über einen smarten Zuschnitt oder ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Zuschnittsfeld im Bild an eine neue Position.
       * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Zuschnittsfeld im Bild an eine neue Position. Tippen Sie alternativ auf das intelligente Farbfeld unter dem Bild (Farbfelder sind statisch) und ziehen Sie dann das Feld für die intelligente Musterzuordnung an eine neue Position.
+
       ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
 
    * Machen Sie all Ihre Änderungen rückgängig und stellen Sie den ursprünglichen smarten Zuschnitt bzw. das smarte Farb-/Bildmuster wieder her (gilt nur für die aktuelle Bearbeitungssitzung).
