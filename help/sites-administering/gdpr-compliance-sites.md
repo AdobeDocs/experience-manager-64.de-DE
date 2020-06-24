@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +28,7 @@ Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kr
 
 AEM Sites kann Kunden bei der Erfüllung ihrer DSGVO-Compliancepflichten unterstützen. Auf dieser Seite werden die Verfahren zur Handhabung DSGVO-bezogener Anfragen in AEM Sites beschrieben. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
 
-Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
@@ -49,13 +52,13 @@ AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md) that
 
 AEM Sites bietet eine optionale Integration mit Enhanced Insights by Analytics, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
 
 AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -148,6 +151,7 @@ Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglic
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
+
       Der ContextHub-Speicher definiert, welche Persistenzschicht verwendet wird. Um den aktuellen Status der Persistenz anzuzeigen, sollten daher alle Schichten überprüft werden.
 
 
@@ -177,6 +181,7 @@ Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglic
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
+
       Der ContextHub-Speicher definiert, welche Persistenzschicht verwendet wird. Um den aktuellen Status der Persistenz anzuzeigen, sollten daher alle Schichten überprüft werden.
 
 
