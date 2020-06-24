@@ -3,10 +3,10 @@ title: Berichte zur Nutzung und Freigabe Ihrer digitalen Assets.
 description: Berichte zu Ihren Assets, [!DNL Adobe Experience Manager Assets] in denen Sie die Nutzung, Aktivität und Freigabe Ihrer digitalen Assets verstehen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a5e9b38cd7ed7a513c2ca6b6c0c3b5d0830dfdab
+source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 49%
+source-wordcount: '1061'
+ht-degree: 47%
 
 ---
 
@@ -59,11 +59,11 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 
    >[!NOTE]
    >
-   >Standardmäßig sind die Inhaltsfragmente und Linkfreigaben im Bericht „Asset heruntergeladen“ enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Downloaded report]. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
 
    >[!NOTE]
    >
-   >Der [!UICONTROL Download] -Bericht zeigt nur Details zu den Assets an, die einzeln ausgewählt und heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
+   >Der [!UICONTROL Bericht &quot;Herunterladen] &quot;zeigt nur Details zu den Assets an, die einzeln ausgewählt und mit der Schnellaktion heruntergeladen oder heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
 
 1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. By default, the folder path is `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
