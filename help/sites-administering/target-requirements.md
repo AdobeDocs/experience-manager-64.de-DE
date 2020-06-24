@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 translation-type: tm+mt
-source-git-commit: 152f60a7c9579d89cca5dc326679dc5a08d4dd5f
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +33,7 @@ Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe 
 >Ihr Konto muss auch vom Target-Team aktiviert werden, damit die Integration genutzt werden kann.
 >
 >
->Falls dies nicht der Fall ist, wenden Sie sich an den [Adobe Target-Kundendienst](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
+>Falls dies nicht der Fall ist, wenden Sie sich an den [Adobe Target-Kundendienst](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
@@ -51,7 +54,7 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
 Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
-**Der Knoten** cq:ActivitySettings`/content/campaigns/*nameofbrand*` ist in CRXDE lite unter *** unter dem Aktivitätenknoten jcr:content verfügbar. *zum Beispiel `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
+The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
 The **cq:ActivitySettings** node under the activity&#39;s jcr:content is protected by the following ACLs:
 
