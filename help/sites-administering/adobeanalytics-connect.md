@@ -10,17 +10,20 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 68%
 
 ---
 
 
 # Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
 
-Um Webdaten von Ihren AEM-Seiten in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Services-Konfiguration und ein Adobe Analytics-Framework:
+Um Webdaten von Ihren AEM-Seiten in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Service-Konfiguration und ein Adobe Analytics-Framework:
 
-* **** Adobe Analytics-Konfiguration: Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
-* **** Adobe Analytics Framework: Eine Gruppe von Zuordnungen zwischen Adobe Analytics Report Suite-Eigenschaften und CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
+* **Adobe Analytics Configuration:** Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
+* **Adobe Analytics Framework:** Eine Gruppe von Zuordnungen zwischen Adobe Analytics Report Suite-Eigenschaften und CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
 
 Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework das Tracking für diese Seite und die untergeordneten Elemente dieser Seite durch. Seitenansichten können dann von Adobe Analytics abgerufen und in der Sites-Konsole angezeigt werden.
 
@@ -28,7 +31,7 @@ Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework das
 
 ### Adobe Analytics-Konto {#adobe-analytics-account}
 
-Zur Verfolgung von AEM-Daten in Adobe Analytics benötigen Sie ein gültiges Adobe Marketing Cloud Adobe Analytics-Konto.
+Zur Verfolgung von AEM-Daten in Adobe Analytics benötigen Sie ein gültiges Adobe Marketing Cloud-Adobe Analytics-Konto.
 
 Das Adobe Analytics-Konto muss:
 
@@ -49,7 +52,7 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Ihre Anmeldeinformationen Ihnen d
 
 ### Konfigurieren von AEM zur Verwendung Ihrer Adobe Analytics-Datenzentren {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Sie müssen AEM für die Verwendung des Rechenzentrums konfigurieren, das Ihre Adobe Analytics-Report Suite hostet. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
+Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Sie müssen AEM für die Verwendung des Rechenzentrums konfigurieren, das Ihre Adobe Analytics Report Suite hostet. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
 
 | Datenzentrum | URL |
 |---|---|
@@ -114,9 +117,10 @@ Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche
 
 4. Im Dialogfeld **Framework erstellen**:
 
-   * Geben Sie einen **Titel** an.
+   * einen **Titel** angeben,
    * Optional können Sie auch den **Namen** zu dem Knoten angeben, der die Framework-Details im Repository speichert.
    * Select **Adobe Analytics Framework**
+
    und klicken Sie auf **Erstellen**.
 
    Das Framework wird zur Bearbeitung geöffnet.
@@ -149,7 +153,7 @@ Beginnen Sie mit dem Öffnen des Bedienfelds. Klicken Sie auf den Pfeil nach unt
 
    * enthält die URL zum Senden von Adobe Analytics-Aufrufen
 
-      * cname - Standard: Adobe Analytics-Konto * Firmenname * *
+      * cname - standardmäßig der Name * Firma * * des Adobe Analytics-Kontos
       * d1 – bezieht sich auf das Datenzentrum, an das die Informationen gesendet werden (entweder d1, d2 oder d3)
       * sc.omtrdc.net - Domänenname
 
@@ -180,12 +184,12 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 1. Wählen Sie **Speichern und schließen** aus.
 1. **[Veröffentlichen](/help/sites-authoring/publishing-pages.md)**Sie die Seite, um die Seite und alle verbundenen Konfigurationen/Dateien zu aktivieren.
 1. Der letzte Schritt ist der Besuch der Seite in der Veröffentlichungsinstanz und die Suche nach Stichwort (z. B. Aubergine) mithilfe der Komponente **Suchen**.
-1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. In dem genannten Beispiel sollte der Aufruf den eingegebenen Wert (d. h. Aubergine) in eVar7 enthalten und die Ereignisliste sollte „event3“ enthalten.
 
 ### Seitenansichten {#page-views}
 
-Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anzahl der Seitenansichten in der Listenansicht der Site-Konsole angezeigt werden.
+Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anzahl der Ansichten in der Liste-Ansicht der Sites-Konsole angezeigt werden.
 
 Weitere Details finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/pa-using.md).
 
@@ -195,7 +199,7 @@ Konfigurieren der passenden Instanz des Diensts **Adobe AEM Managed Polling Conf
 
 * **Abstimmungsintervall**:
 
-   Das Intervall in Sekunden, in dem der Dienst Seitenansichtsdaten aus Adobe Analytics abruft.
+   Das Intervall in Sekunden, in dem der Dienst Seitendaten von Adobe Analytics abruft.
 
    Das Standardintervall beträgt 43200000 ms (12 Stunden).
 
