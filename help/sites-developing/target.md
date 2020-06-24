@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
 translation-type: tm+mt
-source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1222'
+ht-degree: 72%
 
 ---
 
@@ -138,9 +141,9 @@ Das JSP fügt die erforderlichen JavaScript-Objekte für Analysen und Verweise a
 <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/init.js"></script>
 ```
 
-#### Der Hauptteil (Start) {#the-body-section-start}
+#### Die Textabteilung (Beginn) {#the-body-section-start}
 
-Fügen Sie den folgenden Code unmittelbar nach dem `<body>` -Tag hinzu, um der Seite die Clientkontextfunktionen hinzuzufügen:
+Hinzufügen Sie den folgenden Code unmittelbar nach dem `<body>` -Tag, um der Seite die Clientkontextfunktionen hinzuzufügen:
 
 ```xml
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -148,13 +151,13 @@ Fügen Sie den folgenden Code unmittelbar nach dem `<body>` -Tag hinzu, um der S
 
 #### Der Abschnitt &quot;Textkörper&quot;(Ende) {#the-body-section-end}
 
-Fügen Sie den folgenden Code unmittelbar vor dem `</body>` end-Tag hinzu:
+Hinzufügen Sie den folgenden Code unmittelbar vor dem `</body>` end-Tag:
 
 ```xml
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-Das JSP-Skript dieser Komponente generiert Aufrufe der Target-JavaScript-API und implementiert andere erforderliche Konfigurationen. Der HTML-Code, den das Skript generiert, ähnelt dem folgenden Beispiel:
+Das JSP-Skript dieser Komponente generiert Aufrufe an die JavaScript-API des Targets und implementiert andere erforderliche Konfigurationen. Der HTML-Code, den das Skript generiert, ähnelt dem folgenden Beispiel:
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -194,7 +197,7 @@ Das JSP-Skript dieser Komponente generiert Aufrufe der Target-JavaScript-API und
 
 The default mbox.js file that is used to create mboxes is located at `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Um eine individuelle mbox.js-Datei zu verwenden, fügen Sie sie zur Target-Cloud-Konfiguration hinzu. To add the file, the `mbox.js` file must be available on the file system.
 
-For example, if you want to use the [Marketing Cloud ID service](https://marketing.adobe.com/resources/help/en_US/mcvid/) you need to download mbox.js so that it contains the correct value for the `imsOrgID` variable, which is based on your tenant. Diese Variable ist für die Integration mit den Marketing Cloud-ID-Service erforderlich. For information, see [Adobe Analytics as the Reporting Source for Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) and [Before You Implement](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html).
+For example, if you want to use the [Marketing Cloud ID service](https://docs.adobe.com/content/help/en/id-service/using/home.html) you need to download mbox.js so that it contains the correct value for the `imsOrgID` variable, which is based on your tenant. Diese Variable ist für die Integration mit den Marketing Cloud-ID-Service erforderlich. For information, see [Adobe Analytics as the Reporting Source for Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) and [Before You Implement](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
@@ -230,7 +233,7 @@ For example, to disable targeting for the title components of the Geometrixx Dem
 >
 >Wenn Sie DTM nicht verwenden, senden Sie Auftragsbestätigungen an Adobe Target.
 
-Um die Leistung Ihrer Website zu verfolgen, senden Sie Kaufinformationen von Ihrer Bestellbestätigungsseite an Adobe Target. (Siehe [Erstellen einer orderConfirmPage-Mbox](https://marketing.adobe.com/resources/help/en_US/dtm/target/order-confirmation-mbox.html) in der Adobe Target-Dokumentation.) Adobe Target erkennt Mbox-Daten als Auftragsbestätigungsdaten, wenn Ihr MBox-Name `orderConfirmPage` lautet, und verwendet die folgenden spezifischen Parameternamen:
+Um die Leistung Ihrer Website zu verfolgen, senden Sie Kaufinformationen von Ihrer Bestellbestätigungsseite an Adobe Target. (Siehe [Erstellen einer orderConfirmPage-Mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) in der Adobe Target-Dokumentation.) Adobe Target erkennt Mbox-Daten als Auftragsbestätigungsdaten, wenn Ihr MBox-Name `orderConfirmPage` lautet, und verwendet die folgenden spezifischen Parameternamen:
 
 * productPurchasedId: Eine Liste der IDs, die die gekauften Produkte identifizieren.
 * orderId: Die ID der Bestellung.
@@ -314,7 +317,7 @@ Wenn die Komponente in der Kaufbestätigungsseite im vorherigen Beispiel enthalt
 
 ## Grundlagen der Target-Komponente {#understanding-the-target-component}
 
-Die Target-Komponente ermöglicht es Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. (Siehe [Content-Targeting](/help/sites-authoring/content-targeting-touch.md).) Die Target-Komponente befindet sich unter /libs/cq/personalization/components/target.
+Die Target-Komponente ermöglicht es Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. (Siehe [Content-Targeting](/help/sites-authoring/content-targeting-touch.md).) Die Target-Komponente befindet sich unter /libs/cq/personalization/components/Zielgruppe.
 
 Das target.jsp-Skript greift auf die Seiteneigenschaften zu, um die Targeting-Engine zu bestimmen, die für die Komponente verwendet werden soll, und führt dann das entsprechende Skript aus:
 
