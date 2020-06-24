@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '5893'
+ht-degree: 82%
 
 ---
 
@@ -102,7 +105,7 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Startpfad** Ein absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
+**Beginn Path** Ein absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
 
 **Rekursiv** Beim Bereinigen von Daten können Sie zwischen der Ausführung des Vorgangs auf einer Node oder einer ganzen Hierarchie wählen, indem Sie Rekursiv auswählen. Im letzteren Fall definiert der angegebene Pfad den Stammknoten der Hierarchie.
 
@@ -110,9 +113,9 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 **Maximum version age** Das maximale Alter der Version eines Knotens. Wenn das Alter einer Version diesen Wert überschreitet, wird sie gelöscht.
 
-**Trockenausführung** Da das Entfernen von Versionen Ihres Inhalts definitiv ist und ohne Wiederherstellung einer Sicherung nicht rückgängig gemacht werden kann, bietet das Bereinigen-Versionen-Tool einen trockenen Ausführungsmodus, mit dem Sie eine Vorschau der bereinigten Versionen anzeigen können. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
+**Trockenausführung** Da das Entfernen von Inhaltsversionen definitiv ist und ohne Wiederherstellung einer Sicherung nicht rückgängig gemacht werden kann, bietet das Bereinigen-Versionen-Tool einen trockenen Ausführungsmodus, mit dem Sie die bereinigten Versionen Vorschau haben. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
 
-**Bereinigen** Starten Sie die Bereinigung der Versionen auf dem Knoten, der vom Startpfad definiert wird.
+**Bereinigen** Starten Sie die Bereinigung der Versionen auf dem Knoten, der vom Beginn-Pfad definiert wird.
 
 ### Bereinigen von Versionen einer Website {#purging-versions-of-a-web-site}
 
@@ -187,7 +190,7 @@ Diverse Protokolldateien werden auf dem Dateiserver gespeichert, auf dem Sie AEM
 
    * `access.log`
 
-      Hier werden alle Zugriffsanforderungen an das AEM WCM-System und das Repository registriert.
+      Hier werden alle Zugriffsanfragen an das AEM WCM-System und das Repository registriert.
 
    * `audit.log`
 
@@ -197,21 +200,21 @@ Diverse Protokolldateien werden auf dem Dateiserver gespeichert, auf dem Sie AEM
 
       Hier werden Fehlermeldungen (mit unterschiedlichem Schweregrad) registriert.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Dieses Protokoll wird nur verwendet, wenn dynamische Medien aktiviert sind. Er enthält Statistiken und analytische Informationen, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
 
    * `request.log`
 
-      Hier werden alle Zugriffsanforderungen zusammen mit der Antwort registriert.
+      Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       Dieses Protokoll wird nur verwendet, wenn dynamische Medien aktiviert sind. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
 
    * `stderr.log`
 
-      Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. By default the log level is set to `Warning` ( `WARN`)
+       Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. By default the log level is set to `Warning` ( `WARN`)
 
    * `stdout.log`
 
@@ -249,10 +252,10 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 Die Protokollebenen lauten wie folgt:
 
-| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen, und das Installationsprogramm kann nicht fortgesetzt werden. |
+| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen und das Installationsprogramm kann nicht fortgesetzt werden. |
 |---|---|---|
 | 1 | Fehler | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, ein Teil des AEM WCM-Systems wird jedoch nicht richtig installiert und funktioniert nicht. |
-| 2 | Warnung | Die Aktion war erfolgreich, hatte aber Probleme. Das AEM WCM-System funktioniert möglicherweise nicht ordnungsgemäß. |
+| 2 | Warnung | Die Aktion war erfolgreich, stieß aber auf Probleme. Das AEM WCM-System funktioniert möglicherweise nicht ordnungsgemäß. |
 | 3 | Informationen | Die Aktion war erfolgreich. |
 
 ### Erstellen einer benutzerdefinierten Protokolldatei {#create-a-custom-log-file}
@@ -263,18 +266,18 @@ Die Protokollebenen lauten wie folgt:
 
 Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte Protokolldatei mit einer anderen Protokollebene erstellen. Gehen Sie dazu im Repository wie folgt vor:
 
-1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<project-name>/config`.
-1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
+1. Erstellen Sie, falls nicht bereits vorhanden, einen neuen Konfigurationsordner (`sling:Folder`) für das Projekt `/apps/<project-name>/config`.
+1. Erstellen Sie unter `/apps/<project-name>/config`[ einen Knoten für die neue Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
    * Name:
-   `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (da dies eine Protokollfunktion ist)
+   `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (da dies ein Logger ist)
 
-   Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Beispiel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   wobei `<identifier>` durch einen freien Text ersetzt wird, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden). Beispiel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
+   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<identifier>` einen eindeutigen Parameter zu verwenden.
 
 1. Legen Sie die folgenden Eigenschaften des Knotens fest:
 
@@ -288,7 +291,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: `String[] (String + Multi)`
 
-      Wert: Geben Sie die OSGi-Dienste an, für die die Protokollfunktion Meldungen protokollieren soll. Beispielsweise alle folgenden Elemente:
+      Wert: Geben Sie die OSGi-Dienste an, für die die Protokollfunktion Meldungen protokollieren soll. zum Beispiel alle folgenden Elemente:
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -297,7 +300,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: String
 
-      Wert: die erforderliche Protokollierungsstufe ( `debug`, `info`, `warn` oder `error`) angeben;zum Beispiel `debug`
+      Wert: die erforderliche Protokollierungsstufe ( `debug`, `info`, `warn` oder `error`) angeben; zum Beispiel `debug`
 
    * Konfigurieren Sie ggf. weitere Parameter:
 
@@ -355,14 +358,14 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
-   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (da dies ein Schriftsteller ist)
+   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
 
-      Wie beim Logger `<identifier>` wird durch freien Text ersetzt, den Sie (müssen) eingeben, um die Instanz zu identifizieren (Sie können diese Informationen nicht auslassen). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
+   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<identifier>` einen eindeutigen Parameter zu verwenden.
 
    Legen Sie die folgenden Eigenschaften des Knotens fest:
 
@@ -370,7 +373,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: `String`
 
-      Wert: die Protokolldatei so anzugeben, dass sie mit der im Protokollprogramm angegebenen Datei übereinstimmt;
+      Wert: Geben Sie die Protokolldatei so an, dass sie mit der im Protokollprogramm angegebenen Datei übereinstimmt.
 
       für dieses Beispiel `../logs/myLogFile.log`.
 
@@ -426,7 +429,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
 
-The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `http://localhost:4502/system/console/slinglog`.
+Die Felix-Konsole enthält auch Informationen zum Sling Log-Support unter `../system/console/slinglog`; beispielsweise `http://localhost:4502/system/console/slinglog`.
 
 ### Suchen nach Auditdatensätzen {#finding-the-audit-records}
 
@@ -574,12 +577,12 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr> 
    <td>Thread-Dumps</td> 
    <td>Beobachten Sie die JVM-Threads. Identifizieren Sie Konflikte, Sperren und lange Ausführungszeiten.</td> 
-   <td><p><br /> Abhängig vom Betriebssystem: - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (Konsolenmodus): Strg+Umbruch<br /> </p> <p>Analyse-Tools sind ebenso verfügbar, wie zum Beispiel <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analyse-Tools sind ebenso verfügbar, wie zum Beispiel <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Heap-Dumps</td> 
    <td>Probleme mit dem Speicher, die zu Leistungsverlusten führen.</td> 
-   <td><p><br /> Fügen Sie Folgendes hinzu: zum <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> Java-Aufruf von AEM.</p> <p>Siehe <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Anleitung zur Fehlersuche für Java SE 6 with HotSpot VM</a>.</p> </td> 
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>Siehe <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Anleitung zur Fehlersuche für Java SE 6 with HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Systemaufrufe</td> 
@@ -840,7 +843,7 @@ Percentage of the requests served within a certain time (ms)
 
 Die obigen Zahlen stammen von einem MacBook Pro-Laptop (Mitte 2010), der auf die Unternehmensseite von Geometrixx zugreift, wie sie in einer Standardinstallation von AEM enthalten ist. Die Seite ist sehr einfach aufgebaut, aber nicht für Leistung optimiert.
 
-`apachebench` zeigt außerdem die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; siehe `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
+`apachebench` zeigt auch die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; siehe `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
 
 ### Anforderungszähler {#request-counters}
 
@@ -950,7 +953,7 @@ Um die Gesamtzahl der Seitenaktivierungen ab der Serverinstallation anzuzeigen, 
 
 * **Pfad** `/`
 
-* **Abfrage**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Abfrage** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Ermitteln Sie die Anzahl der Tage seit der Installation, um den Durchschnitt zu berechnen.
 
@@ -962,7 +965,7 @@ Um die Anzahl der aktuellen Seiten auf dem Server anzuzeigen, führen Sie eine R
 
 * **Pfad** `/`
 
-* **Abfrage**`//element(*, cq:Page)`
+* **Abfrage** `//element(*, cq:Page)`
 
 #### Falls Sie MSM verwenden, wie hoch ist die durchschnittliche Anzahl der Rollouts pro Monat? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -972,7 +975,7 @@ Um die Gesamtzahl der Rollouts ab der Installation anzuzeigen, verwenden Sie ein
 
 * **Pfad** `/`
 
-* **Abfrage**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Abfrage** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Ermitteln Sie die Anzahl der Monate seit der Installation, um den Durchschnitt zu berechnen.
 
@@ -984,7 +987,7 @@ Um die Gesamtzahl der Live Copies ab der Installation anzuzeigen, verwenden Sie 
 
 * **Pfad** `/`
 
-* **Abfrage**`//element(*, cq:LiveSyncConfig)`
+* **Abfrage** `//element(*, cq:LiveSyncConfig)`
 
 Ermitteln Sie erneut die Anzahl der Monate seit der Installation, um den Durchschnitt zu berechnen.
 
@@ -996,7 +999,7 @@ Um anzuzeigen, wie viele DAM-Assets Sie derzeit unterhalten, verwenden Sie eine 
 
 * **Pfad** `/`
 
-* **Abfrage**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Abfrage** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Wie groß sind die Assets im Durchschnitt? {#what-is-the-average-size-of-the-assets}
 
@@ -1021,7 +1024,7 @@ Um die Anzahl der aktuellen Vorlagen auf dem Server anzuzeigen, führen Sie eine
 
 * **Pfad** `/`
 
-* **Abfrage**`//element(*, cq:Template)`
+* **Abfrage** `//element(*, cq:Template)`
 
 #### Wie viele Komponenten werden derzeit verwendet? {#how-many-components-are-currently-used}
 
@@ -1031,7 +1034,7 @@ Um die Anzahl der aktuellen Komponenten auf dem Server anzuzeigen, führen Sie e
 
 * **Pfad** `/`
 
-* **Abfrage**`//element(*, cq:Component)`
+* **Abfrage** `//element(*, cq:Component)`
 
 #### Wie viele Anforderungen pro Stunde erfolgen zu Spitzenzeiten auf dem Autorensystem? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
@@ -1065,9 +1068,9 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 >
 >In folgenden Artikeln finden Sie weitere Informationen:
 >
->* [Thread-Dumps](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html) 
->* [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
->* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
+>* [Thread-Dumps](https://helpx.adobe.com/de/experience-manager/kb/TakeThreadDump.html) 
+>* [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
+>* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
 >* [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
 >
 
@@ -1094,7 +1097,7 @@ In diesen Fällen müssen Sie Folgendes überprüfen:
 * Die zum [Starten von AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
 * Wissensdatenbank:
 
-   * [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
+   * [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
 
 ### Festplatten-I/O {#disk-i-o}
 
