@@ -4,7 +4,7 @@ seo-title: Versionshinweise zu AEM 6.4
 description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
 seo-description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 28%
@@ -37,7 +37,7 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM-Instanz erstellen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird die erfolgreiche Verwaltung eines AEM-Projekts beschrieben. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
 
 ## Wichtige AEM-Ressourcen
 
