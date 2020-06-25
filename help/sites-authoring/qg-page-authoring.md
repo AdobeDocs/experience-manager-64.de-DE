@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +44,7 @@ Vor der Zusammenfassung der Details finden Sie hier zunächst einige allgemeine 
 
 * Neuanordnen von Seiten in einem Ordner
 
-   * This can be done in [List View](/help/sites-authoring/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+   * Dies kann in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) erfolgen. Die Änderungen werden übernommen und in anderen Ansichten angezeigt.
 
 * Ändern der Benutzeroberfläche
 
@@ -64,8 +67,6 @@ Vor der Zusammenfassung der Details finden Sie hier zunächst einige allgemeine 
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
->
-
 
 
 ## Suchen nach Seiten {#finding-your-page}
@@ -76,20 +77,20 @@ Vor der Zusammenfassung der Details finden Sie hier zunächst einige allgemeine 
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#the-header), which allows you to return to the selected location:
+1. Navigieren Sie in der Baumstruktur nach oben, indem Sie [die Breadcrumbs in der Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) verwenden. Dies ermöglicht es Ihnen, zum ausgewählten Pfad zurückzukehren:
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-1. [Navigieren Sie zu der Position,](#finding-your-page) an der Sie die neue Seite erstellen möchten.
+1. [Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.](#finding-your-page)
 1. Verwenden Sie das Symbol **Erstellen** und wählen Sie dann in der Liste die Option **Seite**:
 
    ![screen_shot_2018-03-21at160324](assets/screen_shot_2018-03-21at160324.png)
 
 1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der erforderlichen Informationen beim [Erstellen der neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) führt. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
-## Auswählen Ihrer Seite für weitere Aktionen {#selecting-your-page-for-further-action}
+## Auswählen Ihrer Seite für weitere Aktionen   {#selecting-your-page-for-further-action}
 
 Sie können eine Seite auswählen, um Aktionen damit auszuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, damit die für diese Ressource relevanten Aktionen angezeigt werden.
 
@@ -101,9 +102,10 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
 
       * Mobilgerät: tippen und halten
       * Desktop: [Schnellaktion](/help/sites-authoring/basic-handling.md#quick-actions) – Häkchen:
-   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
-   * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
+         ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+
+      * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
    >[!NOTE]
    >
    >Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
@@ -123,7 +125,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
-## Editing Your Page Content {#editing-your-page-content}
+## Bearbeiten des Seiteninhalts {#editing-your-page-content}
 
 1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie bearbeiten möchten.
 1. [Öffnen Sie die zu bearbeitende Seite](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) über das Symbol „Bearbeiten“ (Bleistift):
@@ -143,14 +145,15 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
       * die Komponentenregisterkarte (den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser)) auswählen
       * die gewünschte Komponente auf Ihre Seite ziehen
       Der Seitenbereich kann mit folgendem Symbol geöffnet (und geschlossen) werden:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+
+      ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf der Seite bearbeiten:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
       * Öffnen Sie den Editor für Bearbeitung in Kontext durch langes Tippen oder langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, starten Sie mit folgendem Symbol den Vollbildmodus:
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Die Eigenschaften einer vorhandenen Komponente konfigurieren](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -158,21 +161,21 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
    * Eine Komponente mit einem der folgenden Verfahren [verschieben:](/help/sites-authoring/editing-content.md#moving-a-component)
 
       * Ziehen Sie die benötigte Komponente an die neue Position.
-      * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Ausschneiden** und **Einfügen** nach Bedarf.
    * Eine Komponente [kopieren (und einfügen):](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
-   >[!NOTE]
-   >
-   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden. 
+      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
+      >[!NOTE]
+      >
+      >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
-   * Eine Komponente [löschen:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
+   * Eine Komponente [löschen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
-      * Open the component toolbar with either tap or click, then use the **Delete** icon.
+      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie dann das Symbol **Löschen**.
    * Der Seite [Anmerkungen hinzufügen:](/help/sites-authoring/annotations.md#annotations)
 
       * Wählen Sie den Modus **Anmerken** (Sprechblasensymbol). Fügen Sie Anmerkungen mit dem Symbol **Anmerkung hinzufügen** (Plussymbol) hinzu. Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Eine Seite prüfen](/help/sites-authoring/editing-content.md#preview-mode) (um ihre Darstellung in der Veröffentlichungsumgebung anzuzeigen)
 
@@ -182,11 +185,11 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
    >
    >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
-## Bearbeiten der Seiteneigenschaften {#editing-the-page-properties}
+## Bearbeiten der Seiteneigenschaften   {#editing-the-page-properties}
 
 Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md):
 
-* In der **Sites-Konsole**:
+* In der Konsole **Sites**:
 
    1. [Navigieren Sie zu der Seite,](#finding-your-page) die Sie veröffentlichen möchten.
    1. Wählen Sie das Symbol **Eigenschaften** aus, indem Sie wahlweise Folgendes verwenden:
@@ -208,13 +211,13 @@ Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigens
 
 Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/sites-authoring/publishing-pages.md) (und zum Rückgängigmachen der Veröffentlichung):
 
-* In der **Sites-Konsole**:
+* In der Konsole **Sites**:
 
    1. [Navigieren Sie zu der Seite,](#finding-your-page) die Sie veröffentlichen möchten.
-   1. Select the **Quick Publish** icon from either:
+   1. Wählen Sie das Symbol **Quick Publish** aus, indem Sie wahlweise Folgendes verwenden:
 
       * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
-      * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-authoring/publishing-pages.md#manage-publication))
+      * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-authoring/publishing-pages.md#manage-publication)).
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Beim [Bearbeiten Ihrer Seite](#editing-your-page-content):
@@ -231,7 +234,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
    Weitere Informationen finden Sie unter [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-## Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite {#move-copy-and-paste-or-delete-your-page}
+## Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite   {#move-copy-and-paste-or-delete-your-page}
 
 1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie verschieben, kopieren und einfügen oder löschen möchten.
 1. Wählen Sie das Symbol zum Kopieren (und dann Einfügen), Verschieben oder Löschen nach Bedarf aus, indem Sie eine der folgenden Aktionen durchführen:
@@ -252,7 +255,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
    >
    >Löschen ist nicht als Schnellaktion verfügbar.
 
-## Locking Your Page (then Unlocking) {#locking-your-page-then-unlocking}
+## Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
 [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
@@ -278,7 +281,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
 
-## Erstellen einer Seitenversion {#creating-a-version-of-your-page}
+## Erstellen einer Seitenversion   {#creating-a-version-of-your-page}
 
 1. Wählen Sie zum Öffnen der Timeline-Leiste die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)**mithilfe des Symbolleistensymbols (vor oder nach dem[Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
