@@ -3,10 +3,10 @@ title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 36%
+source-wordcount: '960'
+ht-degree: 35%
 
 ---
 
@@ -39,7 +39,7 @@ Imaging Transcoding Library ist nur für RHEL 7- und CentOS 7-Distributionen ver
 >
 >Mac OS und andere *nix-Distributionen (z. B. Debian und Ubuntu) werden nicht unterstützt.
 
-## Nutzung {#usage}
+## Verwendung {#usage}
 
 Die Imaging Transcoding Library bietet unter anderem folgende Befehlszeilenargumente:
 
@@ -77,7 +77,7 @@ Um die ITL-Verarbeitung zu konfigurieren, erstellen Sie eine Konfigurationsdatei
 
 Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibliotheken mithilfe der folgenden Schritte anzugeben. Sie benötigen Administrator- oder Root-Berechtigungen.
 
-1. Laden Sie das Imaging Transcoding Library-Paket von [Packase Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) oder von der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) herunter und installieren Sie es mit Package Manager. Das Paket ist mit AEM 6.5 kompatibel.
+1. Download the Imaging Transcoding Library package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Das Paket ist mit AEM 6.5 kompatibel.
 
 1. Um eine Bündel-ID für anzugeben, melden Sie sich bei der Web-Konsole an `com.day.cq.dam.cq-dam-switchengine`und tippen Sie auf **[!UICONTROL OSGi > Pakete]**. Alternativ können Sie zum Öffnen der Bündelkonsole auf die `https://[aem_server:[port]/system/console/bundles/` URL zugreifen. Suchen Sie nach `com.day.cq.dam.cq-dam-switchengine` Bundle und dessen ID.
 
@@ -129,7 +129,6 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
-
    ![CHlimage](assets/chlimage_1-199.png)
 
 1. (Optional) Erstellen Sie Miniaturbilder aus einer Zwischendarstellung mit einem einzelnen Befehl. Die Zwischenausgabe dient als Quelle, um statische und Webausgaben zu generieren. Diese Methode ist schneller als die frühere Methode. Sie können mit dieser Methode jedoch keine benutzerdefinierten Parameter auf Miniaturen anwenden.
