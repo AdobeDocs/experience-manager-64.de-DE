@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 translation-type: tm+mt
-source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+source-git-commit: 770cf9a616b44312e80ee9fbe3cb8924aa5297de
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 88%
 
 ---
 
@@ -51,6 +54,15 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 
 
 ## Konfigurieren des Encapsulated Tokens {#configuring-the-encapsulated-token}
+
+>[!NOTE]
+>Alle Authentifizierungs-Handler, die Benutzer synchronisieren und die Token-Authentifizierung (z. B. SAML und OAuth) benötigen, funktionieren nur mit verkapselten Token, wenn:
+>
+>* Fixierbare Sitzungen sind aktiviert oder
+   >
+   >
+* Benutzer werden bereits in AEM erstellt, wenn die Synchronisierung Beginn. Dies bedeutet, dass verkapselte Token nicht unterstützt werden, wenn die Handler während des Synchronisierungsprozesses Benutzer **erstellen** .
+
 
 Bei der Konfiguration des Encapsulated Tokens müssen Sie einige Aspekte berücksichtigen:
 
