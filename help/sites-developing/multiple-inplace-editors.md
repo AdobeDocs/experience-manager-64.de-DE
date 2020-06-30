@@ -3,19 +3,19 @@ title: RTE für mehrere ersetzende Editoren konfigurieren.
 description: Erstellen Sie mehrere ersetzende Editoren in Adobe Experience Manager, indem Sie Rich Text Editor konfigurieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 26%
+source-wordcount: '445'
+ht-degree: 25%
 
 ---
 
 
 # Mehrere ersetzende Editoren konfigurieren {#configure-multiple-in-place-editors}
 
-Sie können den Rich-Text-Editor in Adobe Experience Manager so konfigurieren, dass mehrere ersetzende Editoren vorhanden sind. Nach der Konfiguration können Sie den entsprechenden Inhalt auswählen und den passenden Editor öffnen. Beispiel:
+Sie können den Rich-Text-Editor in Adobe Experience Manager so konfigurieren, dass mehrere ersetzende Editoren vorhanden sind. Nach der Konfiguration können Sie den entsprechenden Inhalt auswählen und den passenden Editor öffnen.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![Ein spezifischer ersetzender Editor](assets/rte-inplace-editor.png)
 
 ## Mehrere Editoren konfigurieren {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ Beispiel:
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
