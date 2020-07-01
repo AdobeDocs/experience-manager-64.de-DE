@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 69%
+source-wordcount: '1414'
+ht-degree: 65%
 
 ---
 
@@ -45,14 +45,12 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    * Java-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
    * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
-
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
    >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Kennwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Gehen Sie zum Verschlüsseln wie folgt vor:
    >
    >1. Rufen Sie `https://[server]:[port]/system/console/crypto` auf.
    >1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
-
    >
    >Der verschlüsselte Text wird im Feld Geschützter Text angezeigt, das Sie in der Konfiguration angeben können.
 
@@ -78,7 +76,6 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
    >The **&amp;ast;** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
@@ -136,7 +133,11 @@ SOAP-basierte Webdienste werden mithilfe von [WSDL-Spezifikationen (Web Services
 1. Geben Sie Folgendes für den SOAP-Webdienst an:
 
    * WSDL-URL für den Webdienst.
-   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung oder benutzerdefinierte Authentifizierung — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+   * Dienstendpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Dienstendpunkt zu überschreiben.
+   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, benutzerdefinierte Authentifizierung oder X509-Token — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+
+      Wenn Sie als Authentifizierungstyp &quot;X509-Token&quot;auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Geben Sie den KeyStore-Alias für das X509-Zertifikat im Feld **[!UICONTROL Key Alias]** an. Geben Sie im Feld &quot; **[!UICONTROL Zeit bis zum Live]** &quot;die Zeit in Sekunden an, bis die Authentifizierungsanforderung gültig bleibt. Optional können Sie den Nachrichtentext oder die Zeitstempelüberschrift oder beides signieren.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webdienst zu erstellen.
 
@@ -157,7 +158,6 @@ Ein OData-Dienst wird anhand seiner Dienststamm-URL identifiziert. Stellen Sie z
 
    * Dienststamm-URL für den zu konfigurierenden OData-Dienst.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung oder benutzerdefinierte Authentifizierung — , um auf den OData-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
-
    >[!NOTE]
    >
    >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
