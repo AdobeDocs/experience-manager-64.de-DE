@@ -1,106 +1,96 @@
 ---
-title: Asynchrone Vorgänge zur Leistungsverbesserung
-description: Überblick über asynchrone Vorgänge in AEM Assets.
+title: Konfigurieren Sie asynchrone Vorgänge in [!DNL Adobe Experience Manager].
+description: Führen Sie asynchron einige ressourcenintensive Aufgaben durch, um die Leistung in [!DNL Experience Manager Assets]zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 19%
 
 ---
 
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung einzuschränken, werden bestimmte lang laufende und ressourcenintensive Asset-Vorgänge in Adobe Experience Manager (AEM) Assets asynchron verarbeitet. Zu diesen Vorgängen gehören u. a.:
+Um negative Auswirkungen auf die Leistung zu reduzieren, [!DNL Adobe Experience Manger Assets] werden bestimmte langfristige und ressourcenintensive Asset-Vorgänge asynchron verarbeitet. Bei der asynchronen Verarbeitung werden mehrere Aufgaben in die Warteschlange gestellt und anschließend in einer seriellen Ausführung ausgeführt, sofern Systemressourcen zur Verfügung stehen. Zu diesen Vorgängen gehören u. a.:
 
 * Löschen vieler Assets.
 * Verschieben vieler Assets oder Assets mit vielen Verweisen.
-* Exportieren/Importieren von Asset-Metadaten in großen Mengen.
+* Exportieren und Importieren von Asset-Metadaten als Massendatei
 
-Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
-
-You can view the status of asynchronous jobs from the **[!UICONTROL Async Job Status]** page.
+You can view the status of asynchronous tasks from the **[!UICONTROL Async Job Status]** page.
 
 >[!NOTE]
 >
->Standardmäßig werden Aufträge in AEM Assets parallel ausgeführt. Wenn N die Anzahl der CPU-Kerne ist, können standardmäßig N/2 Aufträge parallel ausgeführt werden. Um benutzerdefinierte Einstellungen für die Auftragswarteschlange festzulegen, passen Sie die Konfiguration **[!UICONTROL Async Operation Default Queue]** über die Web-Konsole an. For more information, see [Queue Configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Standardmäßig werden die [!DNL Assets] Aufgaben parallel ausgeführt. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Jedes Mal, wenn AEM Assets einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem Posteingang sowie per E-Mail.
+Bei jeder asynchronen [!DNL Assets] Verarbeitung eines Vorgangs erhalten Sie eine Benachrichtigung in Ihrem [!DNL Experience Manager] Posteingang [](/help/sites-authoring/inbox.md) und per E-Mail. Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Async-Auftragsstatus]**.
 
-To view the status of the asynchronous operations in detail, navigate to the **Async Job Status** page.
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Vorgänge]** > **[!UICONTROL Aufträge]**.
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Assets > Aufträge]**.
-1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
+1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Async-Auftragsstatus]**.
 
-   ![job_status](assets/job_status.png)
+   ![Status und Details asynchroner Vorgänge](assets/job_status.png)
 
-   Den Fortschritt einzelner Vorgänge finden Sie in der Spalte **[!UICONTROL Status]**. Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
+   Informationen zum Fortschritt eines Vorgangs finden Sie in der Spalte **[!UICONTROL Status]** . Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
 
-   **Aktiv**: Der Vorgang wird verarbeitet
+   * **[!UICONTROL Aktiv]**: Der Vorgang wird verarbeitet.
+   * **[!UICONTROL Erfolg]**: Der Vorgang wurde abgeschlossen.
+   * **[!UICONTROL Fehler]******: Der Vorgang konnte nicht verarbeitet werden.
+   * **[!UICONTROL Geplant]**: Die Verarbeitung des Vorgangs ist für einen späteren Zeitpunkt geplant.
 
-   **Erfolg**: Der Vorgang wurde abgeschlossen
+1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** ![stop icon](assets/do-not-localize/stop_icon.svg) from the toolbar.
 
-   **Fehler**: Der Vorgang konnte nicht verarbeitet werden
+1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** ![open_icon](assets/do-not-localize/edit_icon.svg) from the toolbar. Die Detailseite der Aufgabe wird angezeigt.
 
-   **Geplant**: Die Verarbeitung des Vorgangs ist für einen späteren Zeitpunkt geplant
+   ![Details einer Metadaten-Import-Aufgabe](assets/job_details.png)
 
-1. Um einen aktiven Vorgang abzubrechen, wählen Sie ihn in der Liste aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Stopp]** in der Symbolleiste.
-
-   ![stop_icon](assets/stop_icon.png)
-
-1. Um zusätzliche Details anzuzeigen, beispielsweise eine Beschreibung und Protokolle, wählen Sie den Vorgang aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Öffnen]** in der Symbolleiste.
-
-   ![open_icon](assets/open_icon.png)
-
-   Die Detailseite für den Auftrag wird angezeigt.
-
-   ![job_details](assets/job_details.png)
-
-1. Um den Vorgang aus der Liste zu löschen, wählen Sie die Option **[!UICONTROL Löschen]** in der Symbolleiste aus. Um die Details als CSV-Datei herunterzuladen, tippen/klicken Sie auf das Symbol **[!UICONTROL Herunterladen]**.
+1. Um den Vorgang aus der Liste zu löschen, wählen Sie die Option **[!UICONTROL Löschen]** in der Symbolleiste aus. To download the details in a CSV file, click **[!UICONTROL Download]**.
 
    >[!NOTE]
    >
-   >Sie können einen Auftrag nicht löschen, wenn er aktiv ist oder sich in der Warteschlange befindet.
+   >Sie können eine Aufgabe nicht löschen, wenn ihr Status aktiv oder in der Warteschlange steht.
 
-## Bereinigen abgeschlossener Aufträge {#purging-completed-jobs}
+## Bereinigen abgeschlossener Aufgaben {#purge-completed-tasks}
 
-AEM Assets führt jeden Tag um 1:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+[!DNL Experience Manager Assets] Führt täglich um 100 Uhr eine Bereinigungsstunde aus, um abgeschlossene asynchrone Aufgaben zu löschen, die älter als ein Tag sind.
 
-Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
+<!-- TBD: Find out from the engineering team and mention the time zone of this 1:00 am task.
+-->
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge > Vorgänge > Web Console]**.
-1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** job.
-1. Geben Sie die Schwellenzahl der Tage an, nach denen abgeschlossene Aufträge gelöscht werden, und die maximale Anzahl von Aufträgen, für die Details im Verlauf beibehalten werden.
+Sie können den Zeitplan für die Bereinigungszeit und die Aufgabe ändern, in der Details abgeschlossener Aufgaben vor dem Löschen beibehalten werden. Sie können auch die maximale Anzahl abgeschlossener Aufgaben konfigurieren, für die Details jederzeit beibehalten werden.
 
-   ![purge_job](assets/purge_job.png)
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** task.
+1. Geben Sie die Schwellenzahl der Tage an, nach denen abgeschlossene Aufgaben gelöscht werden, und die maximale Anzahl der Aufgaben, für die Details im Verlauf beibehalten werden. Speichern Sie die Änderungen.
 
-1. Speichern Sie die Änderungen.
+   ![Konfiguration zum Planen des Bereinigens asynchroner Aufgaben](assets/purge_job.png)
 
-## Konfigurieren von Schwellenwerten für die asynchrone Verarbeitung {#configuring-thresholds-for-asynchronous-processing}
+## Konfigurieren des Schwellenwerts für asynchrone Löschvorgänge {#configure-thresholds-for-asynchronous-delete-operations}
 
-Sie können den Schwellenwert für Assets oder Verweise festlegen, damit AEM Assets einen bestimmten Vorgang asynchron verarbeitet.
+Wenn die Anzahl der zu löschenden Assets oder Ordner die festgelegte Schwellenzahl überschreitet, wird der Löschvorgang asynchron durchgeführt.
 
-### Konfigurieren des Schwellenwerts für asynchrone Löschvorgänge {#configuring-thresholds-for-asynchronous-delete-operations}
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
+1. Geben Sie im Feld **[!UICONTROL Schwellenwert für die Anzahl der Assets]** die Schwellenwerte an, um Assets, Ordner oder Verweise asynchron zu löschen. Speichern Sie die Änderungen.
 
-Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert überschreitet, wird der Löschvorgang asynchron verarbeitet.
+   ![Festlegen des Schwellenwerts für die Aufgabe, Assets zu löschen](assets/delete_threshold.png)
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge > Vorgänge > Web Console]**.
-1. From the web console, open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
-1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
+## Konfigurieren des Schwellenwerts für asynchrone Verschiebungsvorgänge {#configure-thresholds-for-asynchronous-move-operations}
 
-   ![delete_Schwellenwert](assets/delete_threshold.png)
+Wenn die Anzahl der zu verschiebenden Assets, Ordner oder Verweise die festgelegte Schwellenzahl überschreitet, wird der Verschiebungsvorgang asynchron ausgeführt.
 
-1. Speichern Sie die Änderungen.
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
+1. Geben Sie im Feld **[!UICONTROL Schwellenwert für die Anzahl der Assets/Verweise]** die Schwellenwerte an, um Assets, Ordner oder Verweise asynchron zu verschieben. Speichern Sie die Änderungen.
 
-### Konfigurieren des Schwellenwerts für asynchrone Verschiebungsvorgänge {#configuring-thresholds-for-asynchronous-move-operations}
+   ![Festlegen des Schwellenwerts für die Aufgabe zum Verschieben von Assets](assets/move_threshold.png)
 
-Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert überschreitet, wird der Löschvorgang asynchron verarbeitet.
+>[!MORELIKETHIS]
+>
+>* [Konfigurieren Sie E-Mail in Experience Manager](/help/sites-administering/notification.md).
+>* [Stapelweises Importieren und Exportieren von Asset-Metadaten](/help/assets/metadata-import-export.md).
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge > Vorgänge > Web Console]**.
-1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
-1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
-
-   ![move_Schwellenwert](assets/move_threshold.png)
-
-1. Speichern Sie die Änderungen.
