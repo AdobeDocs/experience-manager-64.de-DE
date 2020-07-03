@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 0dced2f56fcebfb03fa6264e98cd686e8e7902c6
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 64%
 
 ---
 
@@ -73,11 +76,11 @@ Die folgenden Optionen sind verfügbar:
 
 * `versionmanager.ivPaths` (Zeichenfolge[], Standard: {&quot;/&quot;})
 
-   Pfade, auf denen Versionen implizit bei der Aktivierung erstellt werden, wenn versionmanager.createVersionOnActivation true ist.
+   Pfade, auf denen Versionen implizit auf der Aktivierung erstellt werden, wenn versionmanager.createVersionOnActivation true ist.
 
 * `versionmanager.purgingEnabled` (Boolescher Wert, Standard: false)
 
-   ob beim Erstellen neuer Versionen die Bereinigung aktiviert werden soll
+   ob das Bereinigen aktiviert werden soll, wenn neue Versionen erstellt werden
 
 * `versionmanager.purgePaths` (Zeichenfolge[], Standard: {&quot;/content&quot;})
 
