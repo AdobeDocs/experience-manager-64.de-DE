@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 83%
 
 ---
 
@@ -53,7 +56,7 @@ Sie können [adaptive Formulare](/help/forms/using/creating-adaptive-form.md) un
 
 Sobald das auf einem Formulardatenmodell basierende adaptive Formular oder Formularfragment erstellt ist, werden Formulardatenobjekte auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** des Inhaltsbrowsers im Editor für adaptive Formulare angezeigt.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Bei adaptiven Formularfragmenten werden nur das zum Zeitpunkt des Authoring ausgewählte Datenmodellobjekt und die zugehörigen Datenmodellobjekte auf der Registerkarte &quot;Datenmodellobjekte&quot;angezeigt.
 
@@ -93,7 +96,7 @@ So zeigen Sie eine interaktive Kommunikation mit Stichprobendatenmodelldaten an:
 
 Die interaktive Kommunikation öffnet sich mit vorbefüllten Beispieldaten.
 
-![web-preview](assets/web-preview.png)
+![web-Vorschau](assets/web-preview.png)
 
 Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen Sie das adaptive Formular im Autorenmodus und tippen Sie auf **[!UICONTROL Vorschau]**.
 
