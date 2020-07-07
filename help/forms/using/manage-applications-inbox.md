@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +27,7 @@ In der Benutzeroberfläche des Posteingangs können die Aufgaben in einer Listen
 
 Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen und zugewiesene Aufgaben verwalten.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Damit Sie den AEM-Posteingang verwenden können, müssen Sie der Gruppe „workflow-users“ angehören.
 
@@ -44,7 +47,7 @@ Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenm
 
 1. Tippen Sie auf die Miniaturansicht der Aufgabe, um sie auszuwählen. Optionen zum Öffnen oder Delegieren der Aufgabe werden oben angezeigt.
 
-   ![select-task](assets/select-task.png)
+   ![select-Aufgabe](assets/select-task.png)
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -65,7 +68,7 @@ Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügb
    >
    >Wenn eine Aufgabe einer Gruppe zugewiesen ist, müssen Sie sie annehmen, damit Sie sie in der detaillierten Ansicht anzeigen können.
 
-![task-details](assets/task-details.png)
+![Aufgabe-Details](assets/task-details.png)
 
 Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
@@ -111,9 +114,9 @@ Die Aufgabe wird geöffnet und das dazugehörige Dokument oder adaptive Formular
 
 Im Abschnitt mit den Aufgabendetails werden Informationen wie die durchgeführte Aktion, der Aufgabenstatus, das Startdatum und das Enddatum angezeigt.
 
-![completed-task](assets/completed-task.png)
+![completed-Aufgabe](assets/completed-task.png)
 
 The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
 
-![completed-task-workflow](assets/completed-task-workflow.png)
+![completed-Aufgabe-workflow](assets/completed-task-workflow.png)
 
