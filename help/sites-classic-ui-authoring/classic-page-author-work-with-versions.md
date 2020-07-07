@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +26,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version {#creating-a-new-version}
+## Erstellen einer neuen Version   {#creating-a-new-version}
 
 So erstellen Sie die neue Version einer Seite:
 
@@ -62,7 +65,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Auswahl von** Version wiederherstellen...** listet Dokumentversionen im aktuellen Ordner auf. Auch wenn eine Seite gelöscht wurde, wird die letzte Version aufgelistet:
+1. Auswahl von** Version wiederherstellen...** Listen von Dokumenten im aktuellen Ordner. Auch wenn eine Seite gelöscht wurde, wird die letzte Version aufgelistet:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -99,7 +102,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Wählen Sie im Sidekick die Unter-Registerkarte **Version wiederherstellen** aus und klicken Sie auf **&lt;&lt;Zurück**, um die aktuelle Version anzuzeigen.
 
-## Timewarp {#timewarp}
+## Timewarp   {#timewarp}
 
 Timewarp ist eine Funktion, die den ***Veröffentlichungsstatus*** einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -179,14 +182,14 @@ Wenn Sie die Timeline im Dokument anzeigen möchten:
 
 ### Timewarp-Beschränkungen
 
-Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität des kontinuierlichen Authoring von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
+Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Bearbeitung von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
 
-* **Timewarp funktioniert auf veröffentlichten Seiten** - Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
-* **&quot;Zeitverkrümmung&quot;verwendet Seitenversionen** - Wenn Sie zu einer Seite navigieren, die aus dem Repository entfernt/gelöscht wurde, wird sie korrekt wiedergegeben, wenn ältere Versionen der Seite noch im Repository verfügbar sind.
-* **Entfernte Versionen wirken sich auf Zeitwarp** aus - Wenn Versionen aus dem Repository entfernt werden, kann Timewarp nicht die richtige Ansicht anzeigen.
-* **Zeitwarp ist schreibgeschützt** - Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über Wiederherstellen manuell ausführen.
-* **Timewarp basiert nur auf Seiteninhalt** - Wenn Elemente (wie Code, CSS, Assets/Bilder usw.) zum Rendern der Website geändert wurden, unterscheidet sich die Ansicht von der ursprünglich verwendeten, da diese Elemente nicht im Repository versioniert sind.
+* **Timewarp funktioniert auf veröffentlichten Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
+* **Timewarp verwendet Seitenversionen** : Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
+* **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
+* **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über Wiederherstellen manuell ausführen.
+* **Timewarp basiert nur auf dem Seiteninhalt**: Die Ansicht unterscheidet sich von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Assets/Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
 >[!CAUTION]
 >
-> Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
