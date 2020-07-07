@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 translation-type: tm+mt
-source-git-commit: 1d1914f760e3d77350665ab55025266e79d9f0fe
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '2178'
+ht-degree: 78%
 
 ---
 
@@ -31,7 +34,7 @@ Bevor Sie mit der Aktualisierung beginnen, ist es wichtig, die folgenden Wartung
 * [Deaktivieren von benutzerdefinierten geplanten Aufträgen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs) 
 * [Durchführen der Offline-Revisionsbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup) 
 * [Durchführen der Datenspeicherbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection) 
-* [Aktualisieren des Datenbankschemas bei Bedarf](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
+* [Aktualisieren Sie bei Bedarf das Schema Database.](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
 * [Benutzer löschen, die die Aktualisierung behindern könnten](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
 * [Rotieren von Protokolldateien](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files) 
 
@@ -186,12 +189,12 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr> 
   <tr> 
    <td><code>runAllPreUpgradeTasks()</code></td> 
-   <td>ACTION</td> 
+   <td>AKTION</td> 
    <td>Führt alle in der Liste genannten Wartungsaufgaben vor der Aktualisierung aus.</td> 
   </tr> 
   <tr> 
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
+   <td>AKTION</td> 
    <td>Führt die Wartungsaufgabe vor der Aktualisierung mit dem als Parameter angegebenen Namen aus.</td> 
   </tr> 
   <tr> 
@@ -206,22 +209,22 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
+   <td>AKTION</td> 
    <td>Gibt die genaue Ausführungszeit der Wartungsaufgaben vor der Aktualisierung mit dem Namen als Parameter an.</td> 
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
+   <td>AKTION</td> 
    <td>Gibt den letzten Ausführungsstatus der Wartungsaufgabe vor der Aktualisierung mit dem Namen als Parameter an.</td> 
   </tr> 
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
-   <td>ACTION</td> 
+   <td>AKTION</td> 
    <td><p>Runs all the pre-upgrade health checks and saves their status in a file named <code>preUpgradeHCStatus.properties</code> that is located in the sling home path. If the <code>shutDownOnSuccess</code> parameter is set to <code>true</code>, the AEM instance will be shut down, but only if all the pre-upgrade health checks have an OK status.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Aktualisierungen verwendet<br /> und der Aktualisierungsvorgang wird angehalten, wenn die Konsistenzprüfungen vor einer Aktualisierung<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einer Aktualisierung ignorieren und die Aktualisierung trotzdem starten möchten, können Sie die Datei löschen.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
-   <td>ACTION</td> 
+   <td>AKTION</td> 
    <td>Listet alle importierten Pakete auf, die nach der<br /> Aktualisierung auf eine bestimmte AEM-Version nicht mehr kompatibel sind. Die AEM-Zielversion muss<br /> als Parameter angegeben werden.</td> 
   </tr> 
  </tbody> 
@@ -234,6 +237,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
 >* Die JMX-Konsole
 >* Eine beliebige externe Anwendung, die eine Verbindung mit JMX herstellt
 >* cURL
+
 >
 
 
@@ -311,10 +315,10 @@ Nach der Revisionsbereinigung auf CRX3-Instanzen sollten Sie die Datenspeicherbe
 
 >[!NOTE]
 >
->Diese Wartungsaufgabe vor der Aktualisierung ist nur erforderlich, wenn:
+>Diese Aufgabe zur Wartung vor der Aktualisierung ist nur erforderlich, wenn:
 >
-> * Sie aktualisieren von AEM-Versionen, die älter sind als AEM 6.3
-> * Während der Aktualisierung werden die folgenden Fehler angezeigt.
+>* Sie aktualisieren von AEM-Versionen, die älter sind als AEM 6.3
+>* Während der Aktualisierung werden die folgenden Fehler angezeigt.
 
 
 Es gibt Ausnahmefälle, in denen Dienstbenutzer in einer älteren AEM-Version möglicherweise falsch getaggt werden als normale Benutzer.
@@ -330,7 +334,7 @@ Um dieses Problem zu umgehen, gehen Sie wie folgt vor:
 
 * Die Instanz vom Produktions-Traffic trennen
 * Erstellen Sie eine Sicherung der Benutzer, die das Problem verursachen. Sie können dies über Package Manager tun. For more information, see [How to Work with Packages](/help/sites-administering/package-manager.md).
-* Löschen Sie die Benutzer, die das Problem verursachen. Nachfolgend finden Sie eine Liste der Benutzer, die unter diese Kategorie fallen könnten:
+* Löschen Sie die Benutzer, die das Problem verursachen. Nachfolgend finden Sie eine Liste von Benutzern, die unter diese Kategorie fallen könnten:
    * dynamic-media-Replication
    * community-ugc-writer
    * community-utility-reader
@@ -338,18 +342,18 @@ Um dieses Problem zu umgehen, gehen Sie wie folgt vor:
    * oauthservice
    * sling-Skripterstellung
 
-## Aktualisieren des Datenbankschemas bei Bedarf {#upgrade-the-database-schema-if-needed}
+## Aktualisieren Sie bei Bedarf das Schema Database. {#upgrade-the-database-schema-if-needed}
 
-Normalerweise übernimmt der zugrunde liegende Apache Oak-Stapel, den AEM für Persistenz verwendet, bei Bedarf die Aktualisierung des Datenbankschemas.
+Normalerweise übernimmt der zugrunde liegende Apache Oak-Stack, den AEM für die Persistenz verwendet, bei Bedarf die Aktualisierung des Schemas.
 
-Es kann jedoch vorkommen, dass das Schema nicht automatisch aktualisiert werden kann. Es handelt sich dabei meist um Umgebungen mit hoher Sicherheit, in denen die Datenbank unter einem Benutzer mit sehr begrenzten Berechtigungen ausgeführt wird. In diesem Fall verwendet AEM weiterhin das alte Schema.
+Es kann jedoch vorkommen, dass das Schema nicht automatisch aktualisiert werden kann. Dies sind meist Umgebung mit hoher Sicherheit, bei denen die Datenbank unter einem Benutzer mit sehr begrenzten Berechtigungen ausgeführt wird. In diesem Fall verwendet AEM weiterhin das alte Schema.
 
 Um dies zu verhindern, müssen Sie das Schema wie folgt aktualisieren:
 
 1. Fahren Sie die zu aktualisierende AEM-Instanz herunter.
-1. Aktualisieren Sie das Datenbankschema. Bitte lesen Sie in der Dokumentation Ihres Datenbanktyps nach, welche Werkzeuge Sie dazu benötigen.
+1. Aktualisieren Sie das Schema der Datenbank. Bitte lesen Sie die Dokumentation für Ihren Datenbanktyp, um zu sehen, welche Werkzeuge Sie dazu benötigen.
 
-   Weitere Informationen zum Umgang von Oak mit Schemaaktualisierungen finden Sie auf [dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
+   Weitere Informationen zum Umgang von Oak mit Schema-Upgrades finden Sie auf [dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
 1. Fahren Sie mit der Aktualisierung von AEM fort.
 
