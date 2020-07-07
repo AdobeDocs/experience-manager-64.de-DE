@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 67%
 
 ---
 
@@ -22,7 +25,7 @@ Wenn Sie neue Komponenten entwickeln, müssen Sie die Grundlagen ihrer Struktur 
 
 Dazu müssen Sie den theoretischen Hintergrund kennenlernen und sich mit den vielfältigen Komponenten-Implementierungen in einer standardmäßigen AEM-Instanz vertraut machen. Der zuletzt genannte Ansatz wird ein Stück weit durch die Tatsache erschwert, dass AEM zwar standardmäßig eine neue, moderne Touch-optimierte Benutzeroberfläche einsetzt, die klassische Benutzeroberfläche aber nach wie vor unterstützt.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er bietet so einen guten Einstieg in die Entwicklung eigener Komponenten.
 
@@ -58,7 +61,7 @@ Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten
 Bevor es um die Entwicklung von Komponenten geht, müssen Sie wissen, welche Benutzeroberfläche Ihre Autoren verwenden:
 
 * **Touch-optimierte Benutzeroberfläche**
-   [Die Standard-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) , die in AEM 5.6.0 als Vorschau eingeführt und in 6.x erweitert wurde. Es basiert auf der einheitlichen Benutzererfahrung für die Adobe Marketing Cloud und verwendet die zugrunde liegenden Technologien der Benutzeroberfläche [von](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral und der [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [Die Standard-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) , die in AEM 5.6.0 als Vorschau eingeführt und in 6.x erweitert wurde. Es basiert auf der einheitlichen Benutzererfahrung für das Adobe Marketing Cloud und verwendet die zugrunde liegenden Technologien der Benutzeroberfläche [von](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral und der [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Klassische Benutzeroberfläche** Eine auf der ExtJS-Technologie basierende Benutzeroberfläche, die mit CQ 5.1 eingeführt wurde.
 
@@ -69,19 +72,20 @@ Komponenten können je nach Implementierung die Touch-optimierte Benutzeroberfl�
 Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider Versionen abgedeckt.
 
 >[!NOTE]
-> Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration vereinfachen.
+>
+>Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration vereinfachen.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
-Dieser Ansatz wird durch [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Diese (optionale) Logik wird von HTL über einen speziellen Befehl aufgerufen. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
+Dieser Ansatz wird durch [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Diese (optionale) Logik wird von HTL über einen speziellen Befehl aufgerufen. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
 
 ### Vergleich zwischen HTL und JSP {#htl-vs-jsp}
 
 HTL ist eine HTML-Vorlagensprache, die mit AEM 6.0 eingeführt wurde.
 
-Die Frage, ob Sie bei der Entwicklung eigener Komponenten [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) oder JSP (Java Server Pages) nutzen sollten, ist leicht zu beantworten – immerhin ist HTL nun die empfohlene Skriptsprache für AEM.
+Die Frage, ob Sie bei der Entwicklung eigener Komponenten [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) oder JSP (Java Server Pages) nutzen sollten, ist leicht zu beantworten – immerhin ist HTL nun die empfohlene Skriptsprache für AEM.
 
 Sie können sowohl HTL als auch JSP für die Entwicklung von Komponenten für die klassische wie die Touch-optimierte Benutzeroberfläche verwenden. Zwar wird häufig angenommen, dass HTL nur für die Touch-optimierte und JSP für die klassische Benutzeroberfläche ist, doch diese Vermutung ist falsch und wohl auf die Tatsache zurückzuführen, dass die Touch-optimierte Benutzeroberfläche und HTL ungefähr zur selben Zeit in AEM integriert wurden. Da HTL nun die empfohlene Sprache ist, wird sie für neue Komponenten verwendet, die meistens für die Touch-optimierte Benutzeroberfläche ausgelegt sind.
 
@@ -176,6 +180,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
       Diese definieren Statische Element, die von der Komponente verwendet werden.
 
    * Skripte:
+
    werden verwendet, um das Verhalten der resultierenden Instanz der Komponente zu implementieren.
 
 * **Stammknoten**:
@@ -453,6 +458,7 @@ Dialogdefinitionen sind spezifisch für jede Benutzeroberfläche.
 >
 >* Zum Zweck der Kompatibilität kann die Touch-optimierte Benutzeroberfläche die Definition eines Dialogfelds der klassischen Benutzeroberfläche nutzen, wenn kein Dialogfeld für die Touch-optimierte Benutzeroberfläche definiert wurde.
 >* Das [Dialogkonvertierungs-Tool](/help/sites-developing/dialog-conversion.md) unterstützt Sie beim Erweitern/Konvertieren von Komponenten, bei denen nur Dialogfelder für die klassische Benutzeroberfläche festgelegt wurden.
+
 >
 
 
@@ -469,6 +475,7 @@ Dialogdefinitionen sind spezifisch für jede Benutzeroberfläche.
 
          * Bei standardmäßigen Komponenten verweist diese Eigenschaft häufig auf eine Seite in der Dokumentation.
          * Wenn kein `helpPath` festgelegt ist, wird die Standard-URL (Übersichtsseite der Dokumentation) angezeigt.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    In diesem Dialogfeld werden einzelne Felder definiert:
@@ -487,6 +494,7 @@ Dialogdefinitionen sind spezifisch für jede Benutzeroberfläche.
 
          * Bei standardmäßigen Komponenten verweist diese Eigenschaft häufig auf eine Seite in der Dokumentation.
          * Wenn kein `helpPath` festgelegt ist, wird die Standard-URL (Übersichtsseite der Dokumentation) angezeigt.
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    In diesem Dialogfeld werden einzelne Felder definiert:
