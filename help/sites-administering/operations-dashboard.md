@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 6eb03b035793a21eafd120ac848a6d62eaf6e6ec
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '6231'
 ht-degree: 79%
@@ -595,7 +595,7 @@ Sie können Workflows auch über das Wartungs-Dashboard bereinigen. Führen Sie 
 
 >[!NOTE]
 >
-> Weitere Informationen zur Workflow-Wartung finden Sie [auf dieser Seite](workflows-administering.md#regular-purging-of-workflow-instances).
+>Weitere Informationen zur Workflow-Wartung finden Sie [auf dieser Seite](workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Auditprotokoll-Wartung {#audit-log-maintenance}
 
