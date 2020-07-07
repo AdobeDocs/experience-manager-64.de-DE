@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 translation-type: tm+mt
-source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 94%
 
 ---
 
@@ -20,14 +23,14 @@ source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
 Die Integration von Adobe Analytics und AEM ermöglicht es Ihnen, Webseitenaktivität zu erfassen:
 
 * Eine Adobe Analytics-Konfiguration ermöglicht AEM die Authentifizierung mit Adobe Analytics.
-* Ein Framework identifiziert die Daten, die an Ihre Adobe Analytics-Report Suite gesendet werden.
+* Ein Framework identifiziert die Daten, die an die Adobe Analytics-Report Suite übermittelt werden.
 
 Die Daten umfassen Seiten- und Benutzerdaten, z. B.:
 
 * Daten, die von AEM-Komponenten erfasst werden
 * Link-Klicks
 * Videonutzungsdaten
-* die Anzahl von Seitenbesuchen von Adobe Analytics
+* die Anzahl von Seitenbesuchen aus Adobe Analytics
 
 Die folgenden Seiten helfen Ihnen beim Konfigurieren der Integration:
 
@@ -40,14 +43,14 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durc
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie im Artikel [Integrieren von AEM mit Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Weitere Informationen finden Sie im Artikel [Integrieren von AEM mit Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Weiterführende Informationen {#further-information}
 
 Siehe:
 
-* [Erweitern der Adobe Analytics-Integration](/help/sites-developing/extending-analytics.md) für Informationen zur Entwicklung von Komponenten, die Benutzerdaten erfassen und das Adobe Analytics-Framework anpassen.
-* The knowledge base article, [Adobe Analytics integration - troubleshooting issues](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), for information about troubleshooting your Adobe Analytics integration.
+* [Erweitern der Adobe Analytics-Integration](/help/sites-developing/extending-analytics.md), um Informationen zur Entwicklung von Komponenten zu erhalten, die Benutzerdaten erfassen, und zur Anpassung des Adobe Analytics-Frameworks.
+* den Knowledgebase-Artikel [Adobe Analytics-Integration – Problembehebung](https://helpx.adobe.com/de/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), um Information zur Behebung von Problemen mit der Adobe Analytics-Integration zu erhalten.
 
 >[!NOTE]
 >
@@ -57,9 +60,8 @@ Siehe:
    >  for example, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Apache HTTP-Komponenten-Proxy-Konfiguration** zum Konfigurieren der 4.x-API;\
-   >  for example, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+* **Apache HTTP Components Proxy Configuration** zum Konfigurieren der 4.x-API;
 >
-
-
+>  
+for example, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
