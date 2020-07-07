@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 85%
@@ -40,7 +40,7 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 ### Glossar der Begriffe in MSM für Assets   {#glossary-msm-for-assets}
 
-* **Quelle:** Die ursprünglichen Assets oder Ordner. Primärkopie, von der Live-Kopien abgeleitet werden.
+* **Quelle:** Die ursprünglichen Assets oder Ordner. Primär Kopie, von der Live-Kopien abgeleitet werden.
 
 * **Live Copy:** Die Kopie der Quellelemente/Ordner, die mit der Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe [Erstellen von LCs](#create-live-copy-asset).
 
@@ -253,9 +253,9 @@ AEM ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern.
 
 >[!NOTE]
 >
-> * Blueprints in MSM für Sites werden in MSM für Assets als Live Copy-Quellen bezeichnet.
-> * Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Sites wird in MSM für Assets nicht unterstützt.
-> * Das Konfigurieren von MSM-Sperren in Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für Assets nicht unterstützt.
+>* Blueprints in MSM für Sites werden in MSM für Assets als Live Copy-Quellen bezeichnet.
+>* Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Sites wird in MSM für Assets nicht unterstützt.
+>* Das Konfigurieren von MSM-Sperren in Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für Assets nicht unterstützt.
 
 
 ## Auswirkungen von Asset-Management-Aufgaben auf Live Copies {#impact-of-asset-management-tasks-on-live-copies}
