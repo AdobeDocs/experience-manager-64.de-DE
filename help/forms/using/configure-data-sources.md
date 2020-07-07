@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1410'
 ht-degree: 65%
 
 ---
@@ -45,12 +45,14 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    * Java-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
    * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
-   >[!NOTE] {grayBox=&quot;true&quot;}
+
+   >[!NOTE]
    >
    >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Kennwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Gehen Sie zum Verschlüsseln wie folgt vor:
    >
    >1. Rufen Sie `https://[server]:[port]/system/console/crypto` auf.
    >1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
+
    >
    >Der verschlüsselte Text wird im Feld Geschützter Text angezeigt, das Sie in der Konfiguration angeben können.
 
@@ -76,7 +78,8 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-   >[!NOTE] {grayBox=&quot;true&quot;}
+
+   >[!NOTE]
    >
    >The **&amp;ast;** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
 
@@ -158,6 +161,7 @@ Ein OData-Dienst wird anhand seiner Dienststamm-URL identifiziert. Stellen Sie z
 
    * Dienststamm-URL für den zu konfigurierenden OData-Dienst.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung oder benutzerdefinierte Authentifizierung — , um auf den OData-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+
    >[!NOTE]
    >
    >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
