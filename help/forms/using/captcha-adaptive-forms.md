@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 83%
 
 ---
 
@@ -20,9 +23,10 @@ CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans
 
 AEM Forms unterstützt CAPTCHA in adaptiven Formularen. Sie können den reCAPTCHA-Dienst von Google verwenden, um CAPTCHA zu implementieren.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >AEM Forms unterstützt nur reCaptcha v2. Es werden keine anderen Versionen unterstützt.
+>
 >Im Offline-Modus wird CAPTCHA in adaptiven Formularen in der AEM Forms-App nicht unterstützt.
 
 ## ReCAPTCHA-Dienst von Google konfigurieren {#google-recaptcha}
