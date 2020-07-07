@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '3150'
+ht-degree: 82%
 
 ---
 
@@ -42,7 +45,7 @@ Sie können Datenmodellobjekte und Dienste aus verfügbaren Datenquellen im Form
 So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
 1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
-1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und -dienste anzuzeigen.
+1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und -dienste Ansicht.
 1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell hinzufügen möchten, und tippen Sie auf **[!UICONTROL Ausgewählte hinzufügen]**.
 
    ![selected-object](assets/selected-objects.png)
@@ -51,7 +54,7 @@ So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
    ![model-tab](assets/model-tab.png)
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Sie können die Datenmodellobjekt-Boxen durch Ziehen im Inhaltsbereich anordnen. Alle im Formulardatenmodell hinzugefügten Datenmodellobjekte werden im Bereich „Datenquellen“ ausgegraut.
 
@@ -65,7 +68,7 @@ So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um das Formularmodellobjekt zu speichern.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Sie können die auf der Registerkarte „Dienste“ eines Formulardatenmodells konfigurierten Dienste mithilfe von Regeln für adaptive Formulare aufrufen. Die konfigurierten Dienste sind in der Aktion zum Aufrufen von Diensten im Regeleditor verfügbar. Weitere Informationen zum Verwenden dieser Dienste in Regeln für adaptive Formulare finden Sie unter „Aufrufen von Diensten und Festlegen von Werten für Regeln“ unter [Regeleditor](/help/forms/using/rule-editor.md).
 
@@ -167,7 +170,7 @@ In der Regel werden Verknüpfungen zwischen Datenmodellobjekten in einer Datenqu
 
 Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell hinzufügen, werden deren Verknüpfungen beibehalten und als durch Pfeilzeilen verbundene Elemente angezeigt. Sie können in einem Formulardatenmodell Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Vordefinierte Verknüpfungen in einer JDBC-Datenquelle werden nicht im Formulardatenmodell beibehalten. Sie müssen sie manuell erstellen.
 
@@ -193,6 +196,7 @@ So fügen Sie eine Verknüpfung hinzu:
    * Wählen Sie den Assoziierungstyp aus — Ein zu eins oder eins zu viele.
    * Wählen Sie das Datenmodellobjekt aus, zu dem Sie die Verknüpfung erstellen möchten.
    * Wählen Sie den Lesedienst, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument für den Lesedienst wird angezeigt. Bearbeiten Sie das Argument gegebenenfalls mit den nötigen Änderungen, und binden Sie es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts.
+
    Im folgenden Beispiel ist `dependentid`das Standardargument für den Lesedienst des Datenmodellobjekts „Angehörige“.
 
    ![add-associated-example](assets/add-association-example.png)
@@ -210,7 +214,7 @@ So fügen Sie eine Verknüpfung hinzu:
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 1. Wiederholen Sie diese Schritte, um nach Bedarf weitere Verknüpfungen zu erstellen.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Die hinzugefügte Verknüpfung wird der Box für das Datenmodellobjekt mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
@@ -230,6 +234,7 @@ Eigenschaften bearbeiten
    * **Datenmodellobjekt**: Geben Sie die Lese- und Schreibdienste an und bearbeiten Sie Argumente.
    * **Eigenschaft**: Geben Sie den Typ, den Untertyp und das Format für die Eigenschaft an. Sie können außerdem angeben, ob die ausgewählte Eigenschaft der Primärschlüssel für das Datenmodellobjekt ist.
    * **Dienst**: Geben Sie das Eingabemodellobjekt, den Ausgabetyp und Argumente für den Dienst an. Bei einem Get-Dienst können Sie angeben, ob ein Array als Rückgabe erwartet wird.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Dialogfeld „Eigenschaften bearbeiten“ für einen Get-Dienst
