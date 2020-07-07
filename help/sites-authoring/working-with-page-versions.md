@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1087'
+ht-degree: 96%
 
 ---
 
@@ -23,14 +26,14 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version {#creating-a-new-version}
+## Erstellen einer neuen Version   {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 * über die [Timeline-Leiste](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
-### Erstellen einer neuen Version: Timeline {#creating-a-new-version-timeline}
+### Erstellen einer neuen Version – Timeline {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -48,7 +51,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
    Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
 
-### Creating a New Version - Create with a Selected Resource {#creating-a-new-version-create-with-a-selected-resource}
+### Erstellen einer neuen Version – Erstellen mit einer ausgewählten Ressource {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -59,7 +62,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
-   Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert. 
+   Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
 
 ## Wiederherstellen einer früheren Seitenversion {#reverting-to-a-page-version}
 
@@ -76,6 +79,7 @@ Nachdem eine Version erstellt wurde, können Sie diese Version bei Bedarf wieder
 >* Stellen Sie die erste Version wieder her, d. h. Version 1.0.
 >* Erstellen Sie weitere neue Versionen.
 >* Die erzeugten Etiketten und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
+
 >
 
 
@@ -91,7 +95,7 @@ So stellen Sie eine frühere Version wieder her:
 
 1. Wählen Sie **Auf diese Version zurücksetzen**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline werden aktualisiert.
 
-## Vorschau einer Version {#previewing-a-version}
+## Vorschau einer Version   {#previewing-a-version}
 
 Sie können eine Vorschau einer bestimmten Version anzeigen:
 
@@ -123,7 +127,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-authoring/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp {#timewarp}
+## Timewarp   {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -134,7 +138,7 @@ Gehen Sie hierfür wie folgt vor:
 * Das System sucht die Seitenversion, die zum gewählten Zeitpunkt aktiv war.
 * Dies bedeutet, dass die angezeigte Version *vor* dem in Timewarp ausgewählten Zeitpunkt erstellt/aktiviert wurde.
 * Wenn Sie zu einer inzwischen gelöschten Seite navigieren, wird diese ebenfalls wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
-* Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (dadurch wird eine Fehler-/404-Seite vermieden, die dazu führen würde, dass Sie nicht weiterbrowsen können).
+* Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (dadurch wird eine Fehler-/404-Seite vermieden, die dazu führen würde, dass Sie nicht weiter browsen können).
 
 ### Verwenden von Timewarp {#using-timewarp}
 
@@ -154,14 +158,14 @@ Timewarp ist ein [Modus](/help/sites-authoring/author-environment-tools.md#page-
 
 ### Timewarp-Beschränkungen
 
-Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität des kontinuierlichen Authoring von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
+Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Bearbeitung von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
 
-* **Timewarp funktioniert auf veröffentlichten Seiten** - Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
-* **&quot;Zeitverkrümmung&quot;verwendet Seitenversionen** - Wenn Sie zu einer Seite navigieren, die aus dem Repository entfernt/gelöscht wurde, wird sie korrekt wiedergegeben, wenn ältere Versionen der Seite noch im Repository verfügbar sind.
-* **Entfernte Versionen wirken sich auf Zeitwarp** aus - Wenn Versionen aus dem Repository entfernt werden, kann Timewarp nicht die richtige Ansicht anzeigen.
-* **Zeitwarp ist schreibgeschützt** - Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über Wiederherstellen manuell ausführen.
-* **Timewarp basiert nur auf Seiteninhalt** - Wenn Elemente (wie Code, CSS, Assets/Bilder usw.) zum Rendern der Website geändert wurden, unterscheidet sich die Ansicht von der ursprünglich verwendeten, da diese Elemente nicht im Repository versioniert sind.
+* **Timewarp funktioniert auf veröffentlichten Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
+* **Timewarp verwendet Seitenversionen** : Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
+* **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
+* **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über Wiederherstellen manuell ausführen.
+* **Timewarp basiert nur auf dem Seiteninhalt**: Die Ansicht unterscheidet sich von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Assets/Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
 >[!CAUTION]
 >
-> Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
