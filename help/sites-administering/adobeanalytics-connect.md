@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 68%
+source-wordcount: '1556'
+ht-degree: 66%
 
 ---
 
@@ -44,11 +44,11 @@ Das Adobe Analytics-Konto muss:
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-Bevor Sie fortfahren, stellen Sie sicher, dass Ihre Anmeldeinformationen Ihnen die Anmeldung bei Adobe Analytics erlauben – und zwar über einen der folgenden Links:
+Bevor Sie fortfahren, müssen Sie sich mit Ihren Anmeldeinformationen bei Adobe Analytics mit einer der folgenden Methoden anmelden:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Adobe Experience Cloud-Anmeldung](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Adobe Analytics-Anmeldung](https://sc.omniture.com/login/)
 
 ### Konfigurieren von AEM zur Verwendung Ihrer Adobe Analytics-Datenzentren {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
