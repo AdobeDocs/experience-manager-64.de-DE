@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 63%
+source-wordcount: '743'
+ht-degree: 55%
 
 ---
 
@@ -27,13 +27,18 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die An
 
 ## Laden Sie das Quellcode-Paket der AEM Forms-App herunter {#download-android-zip}
 
-AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. Dieses Archiv enthält den Quellcode, der zum Erstellen einer benutzerdefinierten AEM Forms-App erforderlich ist. The archive is included in the `adobe-aemfd-forms-app-src-pkg-<version>.zip`package available on the package share.
+AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. Dieses Archiv enthält den Quellcode, der zum Erstellen einer benutzerdefinierten AEM Forms-App erforderlich ist. Das Archiv ist im `adobe-aemfd-forms-app-src-pkg-<version>.zip`Paket enthalten, das in der Softwareverteilung verfügbar ist.
 
 Perform the following steps to download the `adobe-aemfd-forms-app-src-pkg-<version>.zip` file:
 
-1. Log in to the author instance of the [AEM server](http://localhost:4502/) as an administrator and open [package share](http://localhost:4502/crx/packageshare). Zum Anmelden bei der Paketfreigabe benötigen Sie eine Adobe ID.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search `adobe-aemfd-forms-app-src-pkg-<version>.zip`, click the package applicable to your operating system, and click **Download**. Lesen und akzeptieren Sie die Lizenzvereinbarung und klicken Sie auf **OK**. Der Download wird gestartet. Nachdem der Download abgeschlossen ist, wird das Wort **Heruntergeladen** neben dem Paket angezeigt.
-1. Nachdem der Download abgeschlossen ist, klicken Sie auf **Heruntergeladen**. Sie werden zum Paketmanager weitergeleitet. Suchen Sie im Paketmanager das heruntergeladene Paket und klicken Sie auf **Installieren**.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. In the **[!UICONTROL Filters]** section:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
+1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
+1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+1. Select the package and click **[!UICONTROL Install]**.
 1. To download the source-code archive, open **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** in your browser. Die ZIP-Datei der Android-App wird auf Ihr Gerät heruntergeladen.
 1. Extrahieren Sie den Inhalt der ZIP-Datei in einen Ordner in Ihrem lokalen Dateisystem. For example, *C:\Folder Structure\adobe-lc-mobileworkspace-src-2.4.20*
 
@@ -51,7 +56,7 @@ Legen Sie die folgenden Umgebungsvariablen fest, bevor Sie den Erstellungsprozes
 
 ## Standardmäßige AEM Forms-App erstellen {#set-up-the-xcode-project}
 
-Nachdem Sie die Datei &quot;adobe-lc-mobileworkspace-src-&lt;version>.zip&quot;im lokalen Dateisystem gespeichert und die Variablen für die Umgebung festgelegt haben, erstellen Sie die AEM Forms-Android-Standardanwendung mit einer der folgenden Optionen:
+Nachdem Sie die Datei &quot;adobe-lc-mobileworkspace-src-&lt;version>.zip&quot;im lokalen Dateisystem gespeichert und die Umgebung-Variablen festgelegt haben, erstellen Sie die standardmäßige AEM Forms-Android-App mit einer der folgenden Optionen:
 
 * [Erstellen Sie die AEM Forms-App mit Android Studio](#using-android-studio)
 * [Generieren Sie die .apk-Datei mit Android Studio](#generate-apk-android-studio)
