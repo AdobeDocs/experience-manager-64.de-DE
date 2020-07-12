@@ -10,10 +10,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 90%
+source-wordcount: '849'
+ht-degree: 79%
 
 ---
 
@@ -50,14 +50,16 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
 
-   1. Melden Sie sich beim AEM-Server als Administrator an und öffnen Sie Package Share. The default URL of the package share is `https://[server]:[port]/crx/packageshare`.
-   1. Suchen Sie in Package Share nach **[!UICONTROL Add-On-Pakete für AEM 6.4 Forms]** und klicken Sie auf das Paket für Ihr Betriebssystem und dann auf **[!UICONTROL Herunterladen]**. Lesen und akzeptieren Sie die Lizenzvereinbarung und klicken Sie auf **[!UICONTROL OK]**. Der Download wird gestartet. Nachdem der Download abgeschlossen ist, wird das Wort **[!UICONTROL Heruntergeladen]** neben dem Paket angezeigt.
+   1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
+   1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+   1. In the **[!UICONTROL Filters]** section:
+      1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
+   1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
+   1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+   1. Select the package and click **[!UICONTROL Install]**.
 
-      Alternately, you can also use the hyperlinks listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) to manually download a package.
-
-   1. Nachdem der Download abgeschlossen ist, klicken Sie auf **[!UICONTROL Heruntergeladen]**. Sie werden zum Paketmanager weitergeleitet. Suchen Sie im Paketmanager das heruntergeladene Paket und klicken Sie auf **[!UICONTROL Installieren]**.
-
-      Wenn Sie das Paket manuell über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) angegeben ist, öffnen Sie AEM Package Manager, klicken Sie auf **[!UICONTROL Paket hochladen]**, wählen Sie das heruntergeladene Paket aus und klicken Sie auf „Hochladen“. Nachdem Sie das Paket hochgeladen haben, klicken Sie auf den Paketnamen und dann auf **[!UICONTROL Installieren]**.
+      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 
       >[!NOTE]
       >
@@ -74,7 +76,7 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
    * **Migrationsdienstprogramm ausführen**
 
-      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.4 Forms. Sie können das Dienstprogramm von AEM Package Share herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
+      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.4 Forms. Sie können das Dienstprogramm von der AEM-Softwareverteilung herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
 
       Wenn Sie [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung](integrate-draft-submission-database.md) mit der Datenbank verwenden und von einer früheren Version aktualisieren, führen Sie nach der Aktualisierung die folgenden SQL-Abfragen aus:
 
