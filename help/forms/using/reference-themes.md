@@ -1,14 +1,17 @@
 ---
 title: Referenzthemen
 seo-title: Referenzthemen
-description: 'AEM Forms bietet adaptive Formulardesigns, die Sie aus der Paketfreigabe erhalten und verwenden, um ein Formular zu formatieren. '
-seo-description: 'AEM Forms bietet adaptive Formulardesigns, die Sie aus der Paketfreigabe erhalten und verwenden, um ein Formular zu formatieren. '
+description: 'AEM Forms bietet Themen für adaptive Formulare, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können. '
+seo-description: 'AEM Forms bietet Themen für adaptive Formulare, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 78%
 
 ---
 
