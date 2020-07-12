@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 67c655865ab419caac6e8eccf3db46556b87ec19
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '2507'
+ht-degree: 74%
 
 ---
 
 
 # Introduction to AEM Forms app {#aem-forms-app}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die AEM Forms-App ermöglicht die Synchronisierung adaptiver Formulare sowie von Formularen auf Mobilgeräten und Formularsätzen auf Mobilgeräten basierend auf Ihrem Server. Sie können Workflows definieren, die [formularzentrierte Workflows auf OSGi ](/help/forms/using/aem-forms-workflow.md) oder [ Formular-Workflows auf JEE ](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application) sind. Angenommen, Sie leiten ein Bankgeschäft und nutzen AEM Forms für die Verwaltung von Kundenanträgen und - mitteilungen. Ihre Kunden füllen ein Formular aus und übermitteln es zur Prüfung. Wenn Sie das Formular auf Mobilgeräten aktivieren, können Ihre Kunden es in der AEM Forms-App ausfüllen. Sie können darüber hinaus den Arbeitsablauf für die Prüfung verwalten, indem Sie das Überprüfungsformular auf Mobilgeräten aktivieren. Ihr Außendienstmitarbeiter kann ein Mobilgerät zum Kundenstandort mitnehmen, die Details überprüfen und das Formular senden. Die AEM Forms-App wird mit dem AEM Forms-Server synchronisiert und ruft die Formulare ab, die für Mobilgeräte aktiviert wurden. Wenn die App offline ist, speichert sie die Daten lokal.
 
-Der Quellcode der AEM Forms-App ist für Kunden über die Package Share verfügbar. The source code package in package share is available as: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+Der Quellcode der AEM Forms-App steht Kunden über die Softwareverteilung zur Verfügung. Das Quellcode-Paket in der Softwareverteilung ist verfügbar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 Die AEM Forms-App wird auf iOS-, Android- und Windows-Geräten unterstützt. Sie können die AEM Forms-App für Android von Google Play, iOS aus dem App Store und Windows aus dem Windows Store installieren.
 
@@ -35,7 +38,7 @@ Informationen zum Installieren, Anpassen und Verteilen der App auf iOS-, Android
 
 ## Voraussetzungen {#prerequisites}
 
-Die AEM Forms-App erfordert einen AEM Forms-Server. Benutzer können Formulare wiedergeben, die Sie in AEM Forms erstellen\
+Die AEM Forms-App erfordert einen AEM Forms-Server. Benutzer können Formulare wiedergeben, die Sie in den AEM Forms erstellen\
 -Server, füllen Sie sie aus, speichern Sie sie als Entwürfe und senden Sie sie ab. Die App stellt eine Verbindung zum Server her und ruft aktivierte Formulare ab. Die AEM Forms-App wird mit dem Server synchronisiert und sobald Formulare in der App geladen werden, können Benutzer im Offlinemodus arbeiten. Wenn die App offline ist, werden die Daten auf dem Gerät gespeichert, und die Daten werden mit dem Server synchronisiert, wenn die App wieder online ist.
 
 ### AEM Forms-App mit Servern, die den AEM Forms-Arbeitsablauf verwenden {#aem-forms-app-with-servers-using-aem-forms-workflow}
@@ -93,7 +96,7 @@ Bei AEM Forms-Servern ohne AEM Forms-Arbeitsablauf werden Formulare, für die di
 
 Sie können Ihre App mit dem AEM Forms Workflow-Server synchronisieren und auf Ihrem Mobilgerät an Aufgaben und Formularen arbeiten.
 
-A task on the mobile device contains an adaptive form, HTML5 form, or a form set and can also contain attachments and [summary URL](/help/forms/using/getting-task-variables-summary-url.md). Standardmäßig werden die Ihnen zugewiesenen Aufgaben im Ordner **[!UICONTROL Tasks]** platziert. Beim Bearbeiten einer Aufgabe können Sie die Aufgabe ändern und eine Kopie des Entwurfs auf dem AEM Forms-Server speichern.
+A task on the mobile device contains an adaptive form, HTML5 form, or a form set and can also contain attachments and [summary URL](/help/forms/using/getting-task-variables-summary-url.md). Standardmäßig werden die Ihnen zugewiesenen Aufgaben im Ordner **[!UICONTROL Tasks]** platziert. Bei der Arbeit an einer Aufgabe können Sie die Aufgabe ändern und einen Entwurf der Aufgabe auf dem AEM Forms-Server speichern.
 
 Ein Formular auf einem Mobilgerät kann ein adaptives Formular oder ein Formular für ein Mobilgerät sein. Die für die Synchronisierung aktivierten Formulare in der Forms-App stehen im Ordner „Formulare“ zur Verfügung. Es ist möglich, Formulare zu synchronisieren, die auf dem AEM Forms-Server ohne AEM Form-Arbeitsablauf (AEM Forms on OSGi) aktiviert sind.
 
@@ -114,7 +117,7 @@ Sie können Formularen auf Ihrem Gerät die folgenden Anhänge hinzufügen
 
 * **Notizen**: Mit der Funktion &quot;Notizen&quot;können Sie ein Freihand-Scribble oder eine Textanmerkung in Ihr Formular einfügen. Weitere Informationen finden Sie unter [ Notizen hinzufügen](/help/forms/using/add-attachments.md#adding-a-note).
 
-* **Abbildung**: Die AEM Forms-App enthält eine Funktion, die die Kamerafunktion oder die Galerie Ihres Mobilgeräts verwendet. Mit dem Fotoanhang können Sie dem zugehörigen Formular ein Foto hinzufügen. Weitere Informationenfinden Sie unter [Hinzufügen eines Fotos](/help/forms/using/add-attachments.md#adding-a-photograph).
+* **Bild**: Die AEM Forms-App enthält eine Funktion, die die Kamerafunktion oder die Galerie Ihres Mobilgeräts verwendet. Mit dem Fotoanhang können Sie dem zugehörigen Formular ein Foto hinzufügen. Weitere Informationenfinden Sie unter [Hinzufügen eines Fotos](/help/forms/using/add-attachments.md#adding-a-photograph).
 
 ### Automatisch speichern {#autosave}
 
@@ -148,7 +151,7 @@ Mit Formularsätzen können mehrere zu einem Dienst oder Prozess gehörige Formu
 
 ## Funktionsweise der AEM Forms-App {#how-aem-forms-app-works}
 
-Die AEM Forms-App bietet eine mobile Lösung, mit der Außendienstmitarbeiter mit ihnen zugewiesenen Formularen arbeiten können. Die Anwendung speichert alle Daten vom Server zwischen und bietet einen effizienten Arbeitsablauf, da die gesamte Arbeit lokal gespeichert wird. Diese Daten werden über regelmäßige Synchronisierungsupdates an den Server gesendet.
+Die App &quot;AEM Forms&quot;bietet eine mobile Lösung für Außendienstmitarbeiter, mit denen sie an ihnen zugewiesenen Formularen arbeiten können. Die Anwendung speichert alle Daten vom Server zwischen und bietet einen effizienten Arbeitsablauf, da die gesamte Arbeit lokal gespeichert wird. Diese Daten werden über regelmäßige Synchronisierungsupdates an den Server gesendet.
 
 Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-Modell effizient verwendet wird, um in den Modellen gespeicherte Daten über Ansichten darzustellen. Alle nativen Vorgänge werden durch PhoneGap-Plug-Ins ausgeführt.
 
@@ -158,7 +161,7 @@ Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-
 >
 >Gilt nur, wenn Sie AEM Forms-App-Quellcode zum Erstellen der App verwenden.
 
-Die AEM Forms-App lässt sich ganz einfach an unternehmensspezifische Anforderungen anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
+Die AEM Forms-App lässt sich ganz einfach an die Bedürfnisse Ihres Unternehmens anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
 
 ### Anpassen {#customize}
 
@@ -166,9 +169,9 @@ Sie können Ihre App anpassen:
 
 **Branding**: Ändern Sie das App-Symbol, den App-Namen, Startbilder und Seiten in der AEM Forms-App. Außerdem können Sie Text ändern, um die App für eine bestimmte Region zu lokalisieren. Weitere Informationen zum Branding der AEM Forms-App finden Sie unter [Branding-Anpassung](/help/forms/using/branding-customization.md).
 
-**Thema**: Ändern Sie Stile wie Farben, Schriftarten und Abstände in der Benutzeroberfläche der AEM Forms-App. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/theme-customization.md).
+**Thema**: Ändern Sie Stile wie Farben, Schriftarten und Abstände in der Benutzeroberfläche der AEM Forms App. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/theme-customization.md).
 
-**Geste**: Ändern Sie Gesten wie das Wischen nach rechts und links in der Benutzeroberfläche der AEM Forms-App. Weitere Informationen finden Sie unter [Gestenanpassung](/help/forms/using/gesture-customization.md).
+**Geste**: Ändern Sie Gesten wie das Wischen nach rechts und links in der Benutzeroberfläche der AEM Forms App. Weitere Informationen finden Sie unter [Gestenanpassung](/help/forms/using/gesture-customization.md).
 
 Weitere Informationen zum Einrichten eines AEM Forms-App-Projekts zur Anpassung finden Sie unter:
 
@@ -179,16 +182,18 @@ Weitere Informationen zum Einrichten eines AEM Forms-App-Projekts zur Anpassung 
 
 ### Pakete erstellen und bereitstellen {#build-and-distribute}
 
-Der Quellcode für die AEM Forms-App kann aus der Datei &quot;adobe-lc-mobileworkspace-src.zip&quot;extrahiert werden, die als Teil des AEM Forms-App-Quellpakets auf Package Share verfügbar ist.
+The source code for the AEM Forms app can be extracted from the `adobe-lc-mobileworkspace-src.zip` that is available as part of the AEM Forms app source package on Software Distribution.
 
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
-1. Zu Package Share navigieren
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Laden Sie das Quellpaket herunter. Wenn Sie das Paket herunterladen, wird es in Ihrem AEM Forms Package Manager hinzugefügt.
-1. Nach dem Herunterladen navigieren Sie zu: und `https://<server>:<port>/crx/packmgr/index.jsp`installieren `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. In the **[!UICONTROL Filters]** section:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
+1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
+1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+1. Select the package and click **[!UICONTROL Install]**.
 
 1. Um das Paket herunterzuladen, öffnen Sie es `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser.
 
