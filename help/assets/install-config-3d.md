@@ -10,7 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 32%
 
 ---
 
@@ -78,19 +81,17 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wenn es sich dabei um ein Windows Server-System handelt, melden Sie sich bei dem Server als Administrator an.
-   * Wenn es sich um einen Mac oder einen Windows-Desktop handelt, stellen Sie sicher, dass Sie über Administratorberechtigungen verfügen.
+   * Wenn es sich um einen Mac- oder Windows-Desktop handelt, stellen Sie sicher, dass Sie über Administratorrechte verfügen.
 
 1. Stellen Sie sicher, dass Sie einen unterstützten Browser verwenden, der auf AEM zugreifen kann.
 
    Siehe [Systemanforderungen](/help/release-notes/aem3d-release-notes.md#system-requirements).
 
-1. Melden Sie sich über einen unterstützten Browser mit Administratorrechten bei AEM an.
-1. In AEM, click the AEM logo to access the global navigation console, then click the **[!UICONTROL Tools]** icon and navigate to **[!UICONTROL Administration > Deployment > Package Share]**.
-1. Melden Sie sich auf der Seite von Adobe mithilfe Ihrer Adobe ID-Anmeldeinformationen bei Ihrem Adobe Creative Cloud-Konto an.
-1. On the Adobe packages page, locate version 3.0.1 of `AEM-6.4-DynamicMedia-3D` feature pack, then download it.
+1. Zugriff auf [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Suchen Sie Version 3.0.1 des `AEM-6.4-DynamicMedia-3D` Feature Packs und laden Sie es herunter.
 
 1. Klicken Sie in AEM auf **[!UICONTROL Tools > Administration > Bereitstellung > Paketmanager]**.
-1. Suchen Sie das heruntergeladene Feature Pack und klicken Sie dann auf **[!UICONTROL Installieren]**.
+
+1. Laden Sie das heruntergeladene Feature Pack auf AEM hoch. Suchen Sie es und klicken Sie auf **[!UICONTROL Installieren]**.
 
 1. In the **[!UICONTROL Install Package]** dialog box, expand **Advanced Settings**, then set **[!UICONTROL Access Control Handling]** to **Merge**.
 1. Klicken Sie auf **[!UICONTROL Installieren]**, um die Installation des Pakets zu starten.
@@ -142,7 +143,7 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
 1. Kontrollieren Sie in der Kartenansicht die Meldungsbanner, die auf den 3D-Asset-Karten angezeigt werden.
 
-   Jedes Asset durchläuft mehrere Verarbeitungsschritte. **[!UICONTROL Beim]** Erstellen der Vorschau... Nach Abschluss des Verarbeitungsschritts wird die Karte mit einem Miniaturbild aktualisiert. Wenn die abschließende Verarbeitung abgeschlossen ist, wird das Banner durch den Hinweis **[!UICONTROL NEU]** ersetzt.
+   Jedes Asset durchläuft mehrere Verarbeitungsschritte. When the **[!UICONTROL Creating Preview...]** processing step completes, the card is updated with a thumbnail image. Wenn die abschließende Verarbeitung abgeschlossen ist, wird das Banner durch den Hinweis **[!UICONTROL NEU]** ersetzt.
 
    >[!NOTE]
    >
@@ -181,15 +182,15 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
 >[!NOTE]
 >
->Diese Konfigurationsaufgabe ist optional.
+>Diese Aufgabe ist optional.
 
 Sie können optional die Unterstützung in AEM 3D für Adobe Dimension-Assets konfigurieren.
 
-Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung, Vorschau und Veröffentlichung von Adobe Dimension 3D-Assets in AEM zu ermöglichen. Der Dienst konvertiert vom proprietären Adobe Dimension-Format (`.dn`) in eine Variante von glTF (als `.glb` Datei formatiert), die mit dem DN-Asset als Darstellung gespeichert wird. Die `.glb` Darstellung wird für die webbasierte Anzeige des 3D-Assets in AEM Assets, Sites und Bildschirmen verwendet und kann auch für Anwendungen von Drittanbietern heruntergeladen werden.
+Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung, Vorschau und Veröffentlichung von Adobe Dimension 3D-Assets in AEM zuzulassen. Der Dienst konvertiert vom proprietären Adobe Dimension-Format (`.dn`) in eine Variante von glTF (als `.glb` Datei formatiert), die mit dem DN-Asset als Darstellung gespeichert wird. Die `.glb` Darstellung wird für die webbasierte Anzeige des 3D-Assets in AEM Assets, Sites und Bildschirmen verwendet und steht auch zum Herunterladen für Anwendungen von Drittanbietern zur Verfügung.
 
 >[!NOTE]
 >
->Der Konvertierungsdienst wird von Adobe in Amazon AWS gehostet. Nach der ordnungsgemäßen Konfiguration des Dienstes werden die auf AEM hochgeladenen `.dn` Dateien dann sicher in den Konvertierungsdienst kopiert, indem sie in Amazon S3 temporär gespeichert werden. Das Konversionsergebnis wird durch temporären S3-Speicher zurück auf AEM übertragen. Sämtliche Übertragungen und Lager sind gesichert. Außerdem bleiben die Inhalte in S3 und der Konvertierungsdienst nur kurz (normalerweise höchstens wenige Minuten) erhalten.
+>Der Konvertierungsdienst wird von Adobe in Amazon AWS gehostet. Nach der ordnungsgemäßen Konfiguration des Dienstes werden die auf AEM hochgeladenen `.dn` Dateien dann sicher in den Konvertierungsdienst kopiert, indem in Amazon S3 eine temporäre Datenspeicherung verwendet wird. Das Konversionsergebnis wird über eine temporäre S3-Datenspeicherung zurück auf AEM übertragen. Alle Überweisungen und Datenspeicherung sind gesichert. Außerdem bleiben die Inhalte in S3 und der Konvertierungsdienst nur kurz (normalerweise höchstens wenige Minuten) erhalten.
 
 **So konfigurieren Sie die Unterstützung für Adobe Dimension-Assets**:
 
@@ -216,14 +217,14 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
    1. Laden Sie den neuen Kennwortwert in die `encryptedPassword` Eigenschaft. Dieser Wert wird automatisch verschlüsselt, wenn Sie auf Alle **[!UICONTROL speichern]** tippen.
    1. Tippen Sie auf Alle **[!UICONTROL speichern]**, laden Sie die Seite neu und überprüfen Sie dann, ob die `encryptedPassword` Eigenschaft eine andere Zeichenfolge enthält, die von geschweiften Klammern eingeschlossen ist. Dieses Erscheinungsbild zeigt an, dass das Kennwort korrekt verschlüsselt und sicher ist.
 
-1. Legen Sie das Format der `.glb` Konvertierungswiedergabe wie folgt in **[!UICONTROL CRXDE Lite]** fest:
+1. Geben Sie das Format der `.glb` Konvertierungswiedergabe an, indem Sie Folgendes in **[!UICONTROL CRXDE Lite]** ausführen:
 
    1. Navigieren Sie zu `/libs/settings/dam/v3D/services/dncr` in **[!UICONTROL CRXDE Lite]**.
    1. Legen Sie für die `outputFormat` Eigenschaft entweder `Dn` oder `generic`fest.
 
       Bei Festlegung auf `Dn`, umfasst die `.glb` Konvertierung Adobe-spezifische Erweiterungen, wie z. B. IBL-Beleuchtung, um die beste Qualität bei der Anzeige von Dn-Assets in AEM zu gewährleisten. Die konvertierte .glb-Darstellung wird jedoch in Drittanbieteranwendungen möglicherweise nicht gut dargestellt.
 
-      Bei Festlegung auf `generic`ist die `.glb` Darstellung generisch ohne Adobe-spezifische Erweiterungen. Diese Einstellung ermöglicht die Verwendung in Drittanbieteranwendungen, während die Anzeige mit dem AEM 3D-Viewer visuell nicht optimal ist.
+      Bei Festlegung auf `generic`ist die `.glb` Darstellung generisch ohne Adobe-spezifische Erweiterungen. Diese Einstellung ermöglicht die Verwendung in Anwendungen von Drittanbietern, während die Anzeige mit dem AEM 3D-Viewer visuell nicht optimal ist.
 
 1. Aktivieren Sie das Dn-Dateiformat, indem Sie Folgendes in **[!UICONTROL CRXDE Lite]** ausführen:
 
@@ -236,11 +237,12 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
    1. In `logo_sphere.dn` den `test3d` Ordner hochladen. Die Datei befindet sich in `sample-3D-content/models`.
 
       Beachten Sie, dass `sample-3D-content.zip` zuvor zum Überprüfen der grundlegenden 3D-Funktionen heruntergeladen wurde.
-   1. Return to the **[!UICONTROL Card View]** and observe the message banner shown on the uploaded asset. **[!UICONTROL Das]** Konvertierungsformat... während der Konvertierung angezeigt wird.
-   1. Nachdem die Verarbeitung abgeschlossen ist, öffnen Sie das Asset in der **[!UICONTROL Detailansicht]** , um sicherzustellen, dass das konvertierte Asset korrekt angezeigt wird und die Navigationssteuerelemente des Viewers verwendet werden können.
+   1. Return to the **[!UICONTROL Card View]** and observe the message banner shown on the uploaded asset. Das **[!UICONTROL Konvertierungsformat...]** Banner wird angezeigt, während der Konvertierungsprozess läuft.
+   1. Nachdem die Verarbeitung abgeschlossen ist, öffnen Sie das Asset in der **[!UICONTROL Detail-Ansicht]** , um sicherzustellen, dass das konvertierte Asset korrekt angezeigt wird und die Navigationssteuerelemente des Viewers verwendet werden können.
+
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
-   Wenn nach 10-15 Minuten im DN-Asset in der **[!UICONTROL Kartenansicht]** ein &quot;Verarbeitungsfehler&quot;angezeigt wird, ist die Konvertierung fehlgeschlagen.
+   Wenn nach 10-15 Minuten ein &quot;Verarbeitungsfehler&quot;auf dem DN-Asset in der **[!UICONTROL Card-Ansicht]** angezeigt wird, ist die Konvertierung fehlgeschlagen.
 
    In diesem Fall können Sie die Konvertierung wie folgt beheben:
 
