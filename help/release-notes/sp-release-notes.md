@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 25%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 25%
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
 | Datum | 05. März 2020 |
-| Download-URL | AEM 6.4.8.0 für [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/AEM-6.4.8.0-Service-Pack), [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| Download-URL | AEM 6.4.8.0 für [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
 
@@ -237,7 +237,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Der Arbeitsablauf für die Neuverarbeitung in Scene7 wird angehalten, wenn einem Asset der Metadaten-Knoten fehlt (CQ-4281170).
 
-* Der Schritt BatchUpload im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit Video-Asset (CQ-4280630).
+* Der Schritt &quot;BatchUpload&quot;im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit dem Video-Asset (CQ-4280630).
 
 * Für an DM gesendete PDF-Optionen ist &quot;extractKeywords&quot;standardmäßig auf &quot;true&quot;gesetzt (CQ-4280101).
 
@@ -788,7 +788,7 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 **Sites**
 
 * (Klassische Benutzeroberfläche) Ein Bruchteil der Live-Kopien wird in der Rollout-Liste angezeigt. NPR-28598, NPR-28574: Hotfix für CQ-4263410
-* LiveRelationshipManagerImpl gibt Ausnahmen aus, wenn cq:master leer oder ungültig ist. NPR-28590: Hotfix für CQ-4263115
+* LiveRelationshipManagerImpl gibt Ausnahmen aus, wenn cq:Übergeordnet leer oder ungültig ist. NPR-28590: Hotfix für CQ-4263115
 * Der vordefinierte Arbeitsablauf &quot;Anforderung zum Löschen&quot;löscht die Seiten nicht ordnungsgemäß. NPR-28668: Hotfix für CQ-4263195
 * Die Benutzeroberfläche für den Beziehungsstatus zeigt keine korrekten Jahres- oder Zeitstempelwerte für verwandte Korallendatepickerfelder an. NPR-28666: Hotfix für CQ-4263661
 * Website-übergreifende Skripterstellung (XSS) in SuggestionHandler für 6.4. NPR-28693: Hotfix für CQ-4253821
@@ -811,7 +811,7 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 * Wenn Sie Tags aus dem Suchbereich für Assets des Tags-Filters des Seiteneditors entfernen, wird die Liste nicht ordnungsgemäß aktualisiert. NPR-27983: Hotfix für CQ-4245567
 * Wenn die Werte für die Anzahl der Felder leer sind, führt das Klicken auf Speichern zu einer unendlichen Ladeaufforderung, ohne dass die Daten tatsächlich ausgefüllt werden.  NPR-28400, NPR-28393: Hotfix für CQ-4244058, CQ-4244349
 * Mit der Berechtigung &quot;Nur lesen&quot;können Benutzer/Gruppen keine XF auswählen und haben keine Option zur Ansicht der XF- und der zugehörigen Seiteneigenschaften. NPR-28341: Hotfix für CQ-4260412
-* Die JSON-Daten, die von Target empfangen werden, weisen mehrere Escape-Zeichen auf, wodurch die Anwendungsseite umgebrochen wird. NPR-28318: Hotfix für CQ-4252043
+* Die JSON-Daten, die von der Zielgruppe empfangen werden, weisen eine Reihe von Escape-Zeichen auf, wodurch die Anwendungsseite umgebrochen wird. NPR-28318: Hotfix für CQ-4252043
 * Nach der Installation von AEM 6.4.3 können keine Komponenten bearbeitet werden. NPR-28125: Hotfix für CQ-4261216
 * Das Löschen aller Tags für ein Tag-Feld wird für ein strukturiertes Inhaltsfragment nicht beibehalten. NPR-28133: Hotfix für CQ-4247241
 * Beim Bearbeiten einer Inhaltsfragment-Eigenschaft &quot;jcr:lastmodifiedby&quot;und &quot;jcr:lastchanged&quot;werden die Werte aktualisiert, ohne dass der Benutzer Änderungen vornimmt. NPR-27847: Hotfix für CQ-4257138
@@ -1347,7 +1347,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 * (Seitenkomponente) Wenn Sie eine Komponente zu Parsys hinzufügen, wird sie von rechts abgeschnitten und die Rahmenbreite des Geräts wird gelöscht. NPR-25536: Hotfix für CQ-4238224
 * Der Plaintext-Editor sendet nicht zugeschnittene Daten und fügt zusätzliche Leerzeichen hinzu. NPR-25312: Hotfix für CQ-4249006
 * Beim Öffnen der Komponente im Inlide-Modus sind zuvor geladene Plugins beim zweiten Mal nicht sichtbar. NPR-24610: Hotfix für CQ-4236850
-* Beim Laden einer XF-Datei in der Editor-Ansicht per Kopieren/Einfügen wird die Mastervariation nicht automatisch geladen. NPR-24841: Hotfix für CQ-4248037
+* Beim Laden einer XF-Datei in der Editor-Ansicht per Kopieren/Einfügen wird die Übergeordnet-Variante nicht automatisch geladen. NPR-24841: Hotfix für CQ-4248037
 * Falsche HTML-Struktur in siteadmin/damadmin bricht IE11. NPR-24686: Hotfix für CQ-4246363, CQ-4248402
 * (Assistent zum Verwalten von Veröffentlichungen) Der Kalender für das Datum der Aktivierung im Schritt &quot;Optionen&quot;wird nach einigen Aktionen im Schritt &quot;Umfang&quot;nicht geöffnet. NPR-25681: Hotfix für CQ-4250205
 * Die klassische Benutzeroberfläche funktioniert aufgrund der veralteten Version nicht, um CUG zu bearbeiten. NPR-25075: Hotfix für 4241823
@@ -1482,7 +1482,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 
 **Experience Fragments**
 
-* Integration von Erlebnisfragmenten/Targets in AEM 6.4.2.0. Hotfix für CQ-4248653
+* Integration von Erlebnisfragmenten/Zielgruppen in AEM 6.4.2.0. Hotfix für CQ-4248653
 
 **Verwaltung von Inhaltsfragmenten**
 
@@ -1600,7 +1600,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 * (CCR) Das Neuladen des Entwurfs schlägt aufgrund der XML-Analyse fehl. Hotfix für CQ-4250950
 * (IC-Editor) Die Schaltfläche &quot;Fragment bearbeiten&quot;sollte leichter zu finden sein. Hotfix für CQ-4244694
 * (XDP) Beim Hinzufügen eines Layout-Fragments zum neu erstellten Teilformular wird ein leerer Bildschirm angezeigt. Hotfix für CQ-4248810
-* DocumentFragment-master-DeployWithServerSideTests-Testfehler. Hotfix für CQ-4245496
+* DocumentFragment-Übergeordnet-DeployWithServerSideTests-Testfehler. Hotfix für CQ-4245496
 * Im Bedingungsmodul duplizierte Variableninstanz. Hotfix für CQ-4252128
 * Die PDF-Vorschauen-URL zeigt beim Veröffentlichen keinen Transaktions-Berichte an. Hotfix für CQ-4246158
 * IC Sync verwandte Probleme mit der Synchronisierung von Print Kanal mit Web Kanal. Hotfix für CQ-4251505
@@ -2008,7 +2008,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 * Das Datumsfeld in der Vorlage überschneidet sich mit dem Teilformular im IC-Authoring. Hotfix für CQ-4240110
 * Der Header sollte nicht gelöscht oder im IC Web Kanal Authoring nach oben und unten verschoben werden dürfen. Hotfix für CQ-4243358
 * (IC Editor) Die Standardzeilen für Tabellenkomponenten werden auf 1 gesetzt. Hotfix für CQ-4244848
-* Target-Bereich, damit er auch dann sichtbar bleibt, wenn der Inhalt gezogen und abgelegt wurde. Hotfix für CQ-4244534
+* Zielgruppen-Bereich, damit er auch dann sichtbar bleibt, wenn der Inhalt gezogen und abgelegt wurde. Hotfix für CQ-4244534
 * Web Kanal erkennt keinen Tabulatorraum in Text Dokument Fragments. Hotfix für CQ-4244481
 * (Print Kanal) Die Darstellung des Dokuments (IC) sollte als Transaktion mit dem Transaktionsaufzeichnungsdienst protokolliert werden. Hotfix für CQ-4245335
 * (Web Kanal) Die Darstellung des Dokuments (IC) sollte als Transaktion mit dem Transaktionsaufzeichnungsdienst protokolliert werden. Hotfix für CQ-4245334
@@ -2018,7 +2018,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 * Anonymen Zugriff auf die IC Anonymous-Client-Bibliothek zulassen, auf die nicht zugegriffen werden kann. Hotfix für CQ-4245588
 * (Web-Kanal) Daten werden in keiner der Tabellen in der Web-Vorschau aufgelöst und als leer angezeigt. Hotfix für CQ-4244476
 * Tabellenüberschriften werden bei der automatischen Generierung als Variablen im Web Kanal angezeigt. Hotfix für CQ-4244242
-* (IC-Editor) Die Größe des Inhalts eines in einer IC verwendeten Dokument-Fragments sollte automatisch an die Breite des Target-Bereichs angepasst werden. Hotfix für CQ-4244094
+* (IC-Editor) Die Inhaltsgröße eines in einer IC verwendeten Dokument-Fragments sollte automatisch an die Zielgruppe angepasst werden. Hotfix für CQ-4244094
 * Der im mittleren oberen Bereich angezeigte Kanal muss entweder für den IC-Titel für WEB/PRINT konsistent sein. Hotfix für CQ-4242498
 * Texteditor Das Datenobjektbedienfeld sollte nur Entitäten der obersten Ebene Liste, Hotfix für CQ-4244121
 * Beim Hinzufügen einer neuen Komponente im Editor wird kein Standardname zugewiesen. Hotfix für CQ-4244691
@@ -2106,8 +2106,8 @@ Liste der in AEM 6.4.1.0 enthaltenen Inhaltspakete
 >
 >Für Kunden mit Feature Packs, die in AEM 6.4 installiert sind: Optionale Feature Packs, die von Adobe bereitgestellt werden, weisen Abhängigkeiten von der Release-Version und dem Service Pack auf. Wenn Sie ein Feature Pack installiert haben, wenden Sie sich an das AEM-Kundendienstteam, um die Kompatibilität dieses Feature Packs mit diesem Service Pack für AEM 6.4 zu bestätigen.
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* Der Download des Service Packs ist in Adobe Package Share verfügbar, auf das Sie direkt über die AEM 6.4-Instanz zugreifen können.
+* AEM 6.4.8.0 erfordert AEM 6.4. Weitere Informationen finden Sie in der [Aktualisierungsdokumentation](../sites-deploying/upgrade.md).
+* Der Service Pack-Download steht im [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) zum Download bereit.
 * Installieren Sie bei einer Implementierung mit MongoDB und mehreren Instanzen AEM 6.4.8.0 mithilfe von Package Manager auf einer der Autoreninstanzen.
 * Erstellen Sie eine Momentaufnahme oder ein neues Backup Ihrer AEM-Instanz, bevor Sie das Service Pack installieren.
 * Starten Sie die Instanz vor der Installation neu. Dies ist zwar nur dann erforderlich, wenn sich die Instanz noch im Aktualisierungsmodus befindet (und dies ist der Fall, wenn die Instanz gerade von einer früheren Version aktualisiert wurde). Dennoch wird dies allgemein empfohlen, wenn die Instanz über einen längeren Zeitraum ausgeführt wurde.
@@ -2116,14 +2116,13 @@ Liste der in AEM 6.4.1.0 enthaltenen Inhaltspakete
 >
 >Adobe rät davon ab, das AEM 6.4.8.0-Paket zu entfernen oder zu deinstallieren.
 
-### Installieren des Service Packs über Package Share {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 Führen Sie folgende Schritte aus, um das Service Pack in einer vorhandenen AEM 6.4-Instanz zu installieren:
 
-1. Melden Sie sich von AEM aus oder direkt über Ihren Browser bei Package Share an und laden Sie das Paket AEM 6.4.8.0 herunter.
+1. Laden Sie das Paket von der Softwareverteilung herunter.
 
-    (Suchen Sie nach „AEM-6.4.8.0“, um es zu finden.)
-1. Installieren Sie das heruntergeladene Paket mit Package Manager.
+1. Melden Sie sich in AEM bei Package Manager an und fügen Sie das heruntergeladene AEM 6.4.8.0-Paket hinzu. Wählen Sie das hochgeladene Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
 >[!NOTE]
 >
