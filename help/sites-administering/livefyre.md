@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 66%
+source-wordcount: '1652'
+ht-degree: 67%
 
 ---
 
@@ -39,22 +39,13 @@ In AEM 6.4 ist das Livefyre-Feature Pack 1.2.6 vorinstalliert. Dieses Paket bein
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Return to the AEM homepage, click Tools, then navigate to **Deployment > Package Share**.
+1. Laden Sie das Livefyre-Paket von der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)herunter.
 
-   Es wird eine Liste der zum Herunterladen verfügbaren Feature Packs und Hotfixes angezeigt.
-
-1. Suchen Sie mittels Keyword-Suche nach „Livefyre“. Wählen Sie dann das Livefyre-Feature Pack für Ihre AEM-Version aus.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. On the feature pack information page, click **Download**, then read the Package License Agreement and click **Accept**.
-1. Return to the Package Manager, locate the newly downloaded package, and click **Install**.
+1. Installieren Sie das heruntergeladene Paket aus Package Manager. Anweisungen zur Verwendung der Softwareverteilung und der Pakete in AEM finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Ihr Livefyre-AEM-Paket ist jetzt installiert. Vor Nutzung der Integrationsfunktionen müssen Sie AEM für Livefyre konfigurieren.
-
-   For more information on packages, see [How to Work With Packages](https://helpx.adobe.com/de/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    For more information and release notes on feature packs, see [Feature Packs](https://helpx.adobe.com/de/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
