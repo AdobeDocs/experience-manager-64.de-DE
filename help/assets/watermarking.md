@@ -3,19 +3,22 @@ title: Bilder mit Wasserzeichen versehen
 description: Verwenden Sie die Wasserzeichenfunktion, um Ihren PNG- UND JPEG-Bildern ein digitales Wasserzeichen hinzuzufügen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+source-git-commit: 04de28347ddf0082d2e224aa3853297cad3aacd8
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 40%
 
 ---
 
 
 # Wasserzeichen für Assets {#watermarking}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Bildern ein digitales Wasserzeichen hinzufügen, mit dem Benutzer die Authentizität und das Urheberrecht der Assets überprüfen können. AEM Assets unterstützt die Verwendung von Text als Wasserzeichen auf PNG- und JPEG-Dateien.
+Mit Adobe Experience Manager (AEM) Assets können Sie Bildern ein digitales Wasserzeichen hinzufügen, mit dem die Authentizität und das Urheberrecht der Assets überprüft werden können. AEM Assets unterstützt die Verwendung von Text als Wasserzeichen auf PNG- und JPEG-Dateien.
 
 To be able to apply watermark on assets, add the [!UICONTROL Watermark] step in the [!UICONTROL DAM Update Asset] workflow.
 
 1. Tap the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the Workflow Models page, select the **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
+1. Wählen Sie auf der Seite der Workflow-Modelle den Workflow **[!UICONTROL DAM-Update-Asset]** aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 
 1. From the side panel, drag the **[!UICONTROL Add Watermark]** step and add it to the [!UICONTROL DAM Update Asset] workflow.
 
@@ -30,5 +33,7 @@ To be able to apply watermark on assets, add the [!UICONTROL Watermark] step in 
 
    ![Bereitstellen der Argumente im Schritt „Wasserzeichen hinzufügen“ in Assets](assets/arguments_add_watermark_aem_assets.png)
 
-1. Speichern Sie den **[!UICONTROL DAM Update Asset]**-Workflow beim Wasserzeichenschritt.
+1. Speichern Sie den Workflow **[!UICONTROL DAM-Update-Asset]** mit dem Schritt „Wasserzeichen“.
 1. Laden Sie in der AEM-Benutzeroberfläche ein Beispiel-Asset hoch. Das Wasserzeichen wird mit der Schriftgröße, der Farbe usw. an der Position angezeigt, die Sie in den oben genannten Schritten konfiguriert haben.
+
+Um PDF-Dokumente programmgesteuert oder mit dynamischen Informationen zu versehen, sollten Sie das [AEM Dokument Services](/help/forms/using/overview-aem-document-services.md) -Angebot in Erwägung ziehen.
