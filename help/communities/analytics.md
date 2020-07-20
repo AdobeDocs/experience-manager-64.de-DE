@@ -20,7 +20,7 @@ ht-degree: 6%
 
 # Analytics Configuration for Communities - Funktionen {#analytics-configuration-for-communities-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen von Adobe Marketing Cloud.
 
@@ -195,7 +195,7 @@ Im Dialogfeld &quot;Konfiguration erstellen&quot;wird die Konfiguration durch di
 
 ### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
 
-Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und zu einem neuen Dialogfeld für die Eingabe der Analytics-Einstellungen. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer eingeholt werden.
+Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und zu einem neuen Dialogfeld für die Eingabe der Analytics-Einstellungen. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer erhalten wurden.
 
 ![chlimage_1-267](assets/chlimage_1-267.png)
 
