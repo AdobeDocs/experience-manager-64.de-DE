@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 32%
@@ -48,7 +48,7 @@ Sie können digitale Assets wie folgt in Dynamic Media Classic veröffentlichen:
 
 * [In der Assets-Konsole, klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-the-assets-console) 
 * [Von einem Asset, klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-an-asset) 
-* [In der klassischen Benutzeroberfläche von außerhalb des CQ-Target-Ordners](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
+* [In der klassischen Benutzeroberfläche von außerhalb des CQ-Zielgruppe-Ordners](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
 
 >[!NOTE]
 >
@@ -182,13 +182,13 @@ Mit der Komponente &quot;Dynamic Media Classic **[!UICONTROL Image]** &quot;kön
 
 * **[!UICONTROL Scharfzeichnen]** Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options) und in den [Best Practices für das Scharfzeichnen](/help/assets/assets/s7_sharpening_images.pdf) detailliert beschrieben.
 
-* **[!UICONTROL URL-Modifikatoren]** Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und in der [Befehlsreferenz](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
+* **[!UICONTROL URL-Modifikatoren]** Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und in der [Befehlsreferenz](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
 
 * **[!UICONTROL Haltepunkte]** Wenn Ihre Website responsiv ist, sollten Sie die Haltepunkte anpassen. Haltepunkte müssen durch Kommas (,) voneinander getrennt werden.
 
 ### Bildvorlage {#image-template}
 
-[Dynamic Media Classic-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sind Fotoshop-Inhalte mit Ebenen, die in Dynamic Media Classic importiert wurden, wobei Inhalt und Eigenschaften auf Variabilität parametrisiert wurden. Mit der Komponente **[!UICONTROL Bildvorlage]** können Sie Bilder importieren und den Text in AEM dynamisch ändern. Zusätzlich können Sie die Komponente **[!UICONTROL Bildvorlage]** dahingehend konfigurieren, dass sie Werte aus dem Clientkontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
+[Dynamic Media Classic-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sind Photoshop-Inhalte mit Ebenen, die in Dynamic Media Classic importiert wurden, wobei Inhalt und Eigenschaften auf Variabilität parametrisiert wurden. Mit der Komponente **[!UICONTROL Bildvorlage]** können Sie Bilder importieren und den Text in AEM dynamisch ändern. Zusätzlich können Sie die Komponente **[!UICONTROL Bildvorlage]** dahingehend konfigurieren, dass sie Werte aus dem Clientkontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
@@ -270,11 +270,9 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
 >* Wenn die [sichere Vorschau aktiviert](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)ist, werden veröffentlichte und unveröffentlichte Assets in Dynamic Media Classic im Inhaltsbrowser von Dynamic Media Classic angezeigt.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Für Videos unterstützt der Inhaltsbrowser Dynamic Media Classic Folgendes:
-   >
-   >  
-* Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
->  * Einzelnes MP4-Video
->  * Einzelnes F4V-Video
+   >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
+   >   * Einzelnes MP4-Video
+   >   * Einzelnes F4V-Video
 
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
@@ -289,6 +287,7 @@ Durchsuchen Sie die Dynamic Media Classic-Assets, indem Sie im dritten Dropdownm
 >
 >* Der Inhaltsbrowser Dynamic Media Classic lädt etwa 100 Assets und sortiert sie nach Namen.
 >* Wenn Sie einen sicheren Vorschauserver festgelegt haben, verwendet der Browser diesen Vorschauserver zum Darstellen von Miniaturansichten und Assets.
+
 >
 
 
@@ -341,6 +340,7 @@ Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
    >
 * Beim Durchsuchen eines Videos suchen Sie nach einem einzelnen Ausgabeformat. Die Ergebnisse geben die ursprüngliche Darstellung (nur &amp;ast;.mp4) und die kodierte Darstellung zurück.
 >* Beim Durchsuchen eines adaptiven Videosets suchen Sie den Ordner und alle Unterordner, allerdings nur, wenn Sie der Suche einen Suchbegriff hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht AEM nicht die Unterordner.
+
 >
 
 
