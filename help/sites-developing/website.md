@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '4919'
+ht-degree: 64%
 
 ---
 
@@ -58,7 +61,7 @@ Website-Inhaltspaket
 
 ## Installieren von Adobe Experience Manager {#installing-adobe-experience-manager}
 
-To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](/help/sites-deploying/deploy.md#author-and-publish-installs), or perform a [generic installation](/help/sites-deploying/deploy.md#default-local-install). Die allgemeine Installation umfasst das Herunterladen der AEM QuickStart-JAR-Datei, das Platzieren der Datei &quot;license.properties&quot;im selben Ordner wie die JAR-Datei und das Doppelklicken auf die JAR-Datei.
+To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](/help/sites-deploying/deploy.md#author-and-publish-installs), or perform a [generic installation](/help/sites-deploying/deploy.md#default-local-install). Bei der allgemeinen Installation wird die AEM QuickStart-JAR-Datei heruntergeladen, die Datei &quot;license.properties&quot;in demselben Ordner wie die JAR-Datei abgelegt und die JAR-Datei durch Dublette angeklickt.
 
 Nachdem Sie AEM installiert haben, greifen Sie auf die CRXDE Lite-Entwicklungsumgebung zu, indem Sie auf der Begrüßungsseite auf den Link für CRXDE Lite klicken:
 
@@ -128,6 +131,7 @@ Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websi
    * **[!UICONTROL Titel]**: My Website Content Page Template
    * **[!UICONTROL Beschreibung]**: This is my Website Content Page Template
    * **[!UICONTROL Ressourcentyp]**: mywebsite/components/contentpage
+
    Verwenden Sie den Standardwert für die Eigenschaft „Rangfolge“.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
@@ -142,7 +146,7 @@ Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websi
 
    When an author creates a page below `/content`, the **[!UICONTROL contentpage]** template appears in a list of available templates to use.
 
-1. Click **[!UICONTROL Next** in the **[!UICONTROL Allowed Parents]** and **[!UICONTROL Allowed Children]** panels and click **[!UICONTROL OK]**. Klicken Sie in CRXDE Lite auf **[!UICONTROL Alle speichern]**.
+1. Klicken Sie in den Bedienfeldern **[!UICONTROL Zugelassene übergeordnete Elemente]** und **[!UICONTROL Zugelassene untergeordnete Elemente]** auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL OK]**. Klicken Sie in CRXDE Lite auf **[!UICONTROL Alle speichern]**.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -156,6 +160,7 @@ Erstellen Sie die *Komponente*, die den Inhalt definiert und die Seiten rendert,
    * **[!UICONTROL Bezeichnung]**: contentpage
    * **[!UICONTROL Titel]**: My Website Content Page Component
    * **[!UICONTROL Beschreibung]**: This is My Website Content Page Component
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
    The location of the new component is `/apps/mywebsite/components/contentpage`. This path corresponds with the resource type of the contentpage template (minus the initial `/apps/` part of the path).
@@ -223,6 +228,7 @@ In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die contentpage
    * **[!UICONTROL Titel]**: `My Website`
    * **[!UICONTROL Name]**: `mywebsite`
    * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. In the folder tree, select the `/Websites/My Website` page and click **[!UICONTROL New > New Page]**.
@@ -249,6 +255,7 @@ In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die contentpage
 
    * **Titel**: Kunden
    * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+
    Ihre Struktur sieht nun wie folgt aus:
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
@@ -258,6 +265,7 @@ In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die contentpage
    * **[!UICONTROL Name]**: cq:designPath
    * **[!UICONTROL Typ]**: String
    * **[!UICONTROL Wert]**: /etc/designs/mywebsite
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. In a new web browser tab or window, open [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
@@ -670,7 +678,7 @@ Create two pages located below the **[!UICONTROL Products]** page. Legen Sie fü
    1. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
    1. Erstellen Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** eine weitere Eigenschaft mit den folgenden Werten:
 
-      * **[!UICONTROL Name]**:date
+      * **[!UICONTROL Name]**: date
       * **[!UICONTROL Typ]**: String
       * **[!UICONTROL Wert]**: 14.02.2008
       * Klicken Sie auf **[!UICONTROL Hinzufügen]**.
@@ -685,11 +693,11 @@ Create two pages located below the **[!UICONTROL Products]** page. Legen Sie fü
 
       * **[!UICONTROL Name]**: jcr:description
       * **[!UICONTROL Typ]**: String
-      * **[!UICONTROL Wert]**: Dies ist eine Beschreibung des Produkts 2!.
+      * **[!UICONTROL Wert]**: Dies ist eine Beschreibung des Produkts 2!..
    1. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
    1. Ersetzen Sie in denselben Textfeldern die vorherigen Werte durch die folgenden Werte:
 
-      * **[!UICONTROL Name]**:date
+      * **[!UICONTROL Name]**: date
       * **[!UICONTROL Typ]**: String
       * **[!UICONTROL Wert]**: 11.05.2012
       * Klicken Sie auf **[!UICONTROL Hinzufügen]**.
@@ -754,6 +762,7 @@ Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildre
 
       * **[!UICONTROL Beschriftung]**: `dialog`
       * **[!UICONTROL Titel]**: `Edit Component` und klicken Sie auf **[!UICONTROL OK]**.
+
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    Mit den folgenden Eigenschaften:
@@ -769,15 +778,17 @@ Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildre
 
    * **[!UICONTROL Name]**: items
    * **[!UICONTROL Typ]**: cq:WidgetCollection
+
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Erstellen Sie einen Knoten unterhalb des Knotens „items“ mit den folgenden Eigenschaftswerten:
 
    * **[!UICONTROL Name]**: listroot
    * **[!UICONTROL Typ]**: cq:Widget
+
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Fügen Sie Eigenschaften für den Knoten listroot hinzu, um ihn als Textfeld zu konfigurieren. Jede Zeile der folgenden Tabelle stellt eine Eigenschaft dar. When finished, click **[!UICONTROL Save All]**.
+1. Hinzufügen Eigenschaften für den Listroot-Knoten, um ihn als Textfeld zu konfigurieren. Jede Zeile der folgenden Tabelle stellt eine Eigenschaft dar. When finished, click **[!UICONTROL Save All]**.
 
    | Name | Typ | Wert |
    |---|---|---|
@@ -900,7 +911,7 @@ Erstellen Sie das Dialogfeld zum Konfigurieren Ihrer logo-Komponente im Designmo
    1. Right-click the `/apps/mywebsite/components/logo` node and click **[!UICONTROL Create > Create Dialog]**.
    1. Type the following property values and then click **[!UICONTROL OK]**:
 
-      * **[!UICONTROL Beschriftung]**`design_dialog`
+      * **[!UICONTROL Beschriftung]** `design_dialog`
       * **[!UICONTROL Titel]** `Logo (Design)`
 
 1. Klicken Sie mit der rechten Maustaste im Zweig „design_dialog“ auf den Knoten „tab1“ und klicken Sie dann auf „Löschen“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -911,7 +922,7 @@ Erstellen Sie das Dialogfeld zum Konfigurieren Ihrer logo-Komponente im Designmo
    | fileNameParameter | Zeichenfolge | ./imageName |
    | fileReferenceParameter | Zeichenfolge | ./imageReference |
    | name | Zeichenfolge | ./image |
-   | Titels | Zeichenfolge | Bild |
+   | title | Zeichenfolge | Bild |
    | xtype | Zeichenfolge | html5smartimage |
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
@@ -1202,7 +1213,7 @@ In diesem Abschnitt zeigen Sie die Seite **[!UICONTROL Products]** an und fügen
 1. Click the **[!UICONTROL Edit]** button to edit the design dialog of par.
 1. Im Dialogfeld wird die Liste **[!UICONTROL Zugelassene Komponenten]** angezeigt. Navigieren Sie zu **[!UICONTROL MyWebsite]**, wählen Sie die Komponente **[!UICONTROL My Image]** aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Return to **[!UICONTROL Edit mode]**.
-1. Double-click the parsys frame (on **[!UICONTROL Drag components or assets here**). Die Auswahlen **[!UICONTROL Neue Komponente einfügen]** und **[!UICONTROL Sidekick]** sehen wie folgt aus:
+1. Doppelklicken Sie auf den parsys-Rahmen (im Bereich **[!UICONTROL Komponenten oder Assets hierhin ziehen]**). Die Auswahlen **[!UICONTROL Neue Komponente einfügen]** und **[!UICONTROL Sidekick]** sehen wie folgt aus:
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
