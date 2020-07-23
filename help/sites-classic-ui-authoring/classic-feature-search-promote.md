@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 64%
 
 ---
 
@@ -39,7 +42,7 @@ Facetten werden auf dem Search&amp;Promote-Server konfiguriert, genau wie die vo
    <td>Anzeige von Bannerwerbung. Banner werden auf Grundlage der Daten ausgewählt, die von Search&amp;Promote erfasst werden.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Breadcrumbs</td> 
+   <td>Breadcrumb</td> 
    <td>Zeigt den Suchbegriff und die Reihenfolge der Filter an, die der Benutzer auf Suchergebnisse angewendet hat.</td> 
   </tr> 
   <tr> 
@@ -86,13 +89,13 @@ You can configure the following component properties in [!UICONTROL Edit] mode t
 * **[!UICONTROL Einzelne Ergebnisseite]** ausblenden: Wählen Sie diese Option, um die Seitennavigationssteuerelemente auszublenden, wenn die Suche eine einzelne Ergebnisseite zurückgibt.
 * **[!UICONTROL &quot;Erste/Letzte]** ausblenden&quot;- Wählen Sie diese Option, um zu verhindern, dass Benutzer zur ersten oder letzten Ergebnisseite springen.
 * **[!UICONTROL Vorherige/Nächste]** ausblenden - Bestimmt, ob Benutzer relativ zur aktuellen Seite navigieren können.
-* **[!UICONTROL Alle]** anzeigen ausblenden - Bestimmt, ob der Benutzer alle Suchergebnisse auf einer Seite konsolidieren kann. In der Regel erfolgt die Nutzung von Serverressourcen bei Daten mit Seitenaufteilung effizienter. Wählen Sie diese Option aus, um die Übertragung großer Datenmengen in einer einzelnen Antwortmeldung zu verhindern.
+* **[!UICONTROL Alle]** Ansichten ausblenden - Bestimmt, ob der Benutzer alle Suchergebnisse auf einer Seite konsolidieren kann. In der Regel erfolgt die Nutzung von Serverressourcen bei Daten mit Seitenaufteilung effizienter. Wählen Sie diese Option aus, um die Übertragung großer Datenmengen in einer einzelnen Antwortmeldung zu verhindern.
 
 ## Aktivieren der Filterung von Ergebnissen durch Facetten {#enabling-the-filtering-of-results-by-facets}
 
 Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **[!UICONTROL Breadcrumbs]** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
 
-The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
 
 * **[!UICONTROL Facet Name]** - Der Name der Facette, die für Filter verwendet wird.
 
@@ -123,7 +126,7 @@ Die Komponente **[!UICONTROL Breadcrumbs]** ermöglicht es Kunden, die aktuell a
 Sie können die folgenden Eigenschaften für Breadcrumbs im Bearbeitungsmodus konfigurieren, um das Erscheinungsbild der Komponente anzupassen:
 
 * **[!UICONTROL Trennzeichen]** : Definieren Sie die Zeichen- oder Zeichenzeichenfolge, die als Trennzeichen zwischen den einzelnen Breadcrumbs dienen soll. Das Trennzeichen-Feld akzeptiert alle Zeichenfolgen als Eingabe. Die Standardeinstellung ist: „>“ (ohne die Anführungszeichen)
-* **[!UICONTROL Trennzeichen]** nach dem Komma: Definieren Sie eine Zeichen- oder Zeichenzeichenfolge, die am Ende der Breadcrumbs angezeigt werden soll. Das Feld &quot;Trennzeichen nach&quot;akzeptiert alle Zeichenfolgen als Eingabe. Die Standardeinstellung ist &quot;leer&quot;(d. h. am Ende der Breadcrumb-Linie wird nichts angezeigt)
+* **[!UICONTROL Trennzeichen]** nach dem Komma: Definieren Sie eine Zeichen- oder Zeichenzeichenfolge, die am Ende der Breadcrumbs angezeigt werden soll. Das Feld &quot;Trennzeichen nach&quot;akzeptiert alle Zeichenfolgen als Eingabe. Die Standardeinstellung für diese Einstellung ist &quot;leer&quot;(d. h., am Ende der Breadcrumb-Linie wird nichts angezeigt)
 
 ## Hinzufügen von Suchfeldern {#adding-search-boxes}
 
