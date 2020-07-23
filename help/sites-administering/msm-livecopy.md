@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: d4357905fe6b7acc70f828d9b73581393e003cd5
+workflow-type: tm+mt
+source-wordcount: '3964'
+ht-degree: 92%
 
 ---
 
@@ -77,6 +80,7 @@ Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
    * **Eigenschaften**: Hierüber können Sie die Eigenschaften der Konfiguration anzeigen und bearbeiten.
    * **Löschen**
+
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Erstellen von Live Copies {#creating-a-live-copy}
@@ -90,7 +94,7 @@ Sie können eine Live Copy einer Seite oder eines Zweigs erstellen. Beim Erstel
 
 Sie können Live Copies für beliebige Seite erstellen:
 
-* Seiten, auf die eine [Blueprint-Konfiguration](#creating-a-blueprint-configuration) verweist;
+* Pages that are referenced by a [blueprint configuration](#creating-a-blueprint-configuration).
 * Seiten ohne verbundene Konfiguration.
 * AEM unterstützt zudem die Erstellung einer Live Copy innerhalb der Seiten einer anderen Live Copy.
 
@@ -121,6 +125,7 @@ So erstellen Sie eine Live Copy:
 
    * einen **Titel** für die Seite;
    * einen **Namen**, der in der URL verwendet wird.
+
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Verwenden Sie das Kontrollkästchen **Unterseiten ausschließen**:
@@ -199,7 +204,7 @@ So zeigen Sie die Eigenschaften an:
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie im Knowledgebase-Artikel [Livecopy status message – Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Weitere Informationen finden Sie im Knowledgebase-Artikel [Livecopy status message – Up-to-date/Green/In Sync](https://helpx.adobe.com/de/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 ### Anzeigen der Live Copies einer Blueprint-Seite {#seeing-the-live-copies-of-a-blueprint-page}
 
@@ -246,7 +251,7 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 
    * **Rollout im Hintergrund**:
 
-      Wenn viele Seiten/Unterseiten betroffen sind, können Sie den Rollout als Hintergrundaufgabe ausführen.
+      Wenn viele Seiten/Unterseiten betroffen sind, können Sie den Rollout als Hintergrund-Aufgabe ausführen.
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Wählen Sie nach Bestätigung dieser Details die Option **Rollout** aus, um die Aktion durchzuführen.
@@ -291,6 +296,7 @@ Die [Synchronisierungsaktion ist auch über die Live Copy-Übersicht verfügbar
 
    * **Seite und Unterseiten**
    * **Nur Seite**
+
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 ## Ändern von Live Copy-Inhalt {#changing-live-copy-content}
@@ -356,6 +362,7 @@ Die [Aussetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/hel
 
    * **Aussetzen**
    * **Aussetzen mit untergeordneten Elementen**
+
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
 1. Confirm the **Suspend** action in the **Suspend Live Copy **dialog:
@@ -423,6 +430,7 @@ So geben Sie die Tiefe an oder ändern diese:
 
    * Aktivierung bei einer tiefen Live Copy (untergeordnete Seiten eingeschlossen)
    * Deaktivierung bei einer flachen Live Copy (untergeordnete Seiten ausgeschlossen)
+
    >[!CAUTION]
    >
    >Der Wechsel zu einer flachen Live Copy wirkt sich direkt aus und kann nicht rückgängig gemacht werden.
@@ -550,7 +558,8 @@ To track the changes you have made, you can view the blueprint page in **Referen
 1. Wählen Sie eine bestimmte Live Copy aus und aktivieren Sie dann eine der folgenden Optionen:
 
    * **Mit Blueprint vergleichen** (bei Auswahl einer Live Copy-Seite)
-   * **Mit Live Copy** vergleichen (bei Auswahl einer Blueprint-Seite)
+   * **Mit Live Copy** vergleichen (wenn eine Blueprint-Seite ausgewählt ist)
+
    Beispiel:
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
@@ -583,12 +592,14 @@ Je nachdem, wo innerhalb der Struktur die Option **Trennen** verwendet wird, ist
 
    * wird die Live-Beziehung für diese Unterseite (oder diesen Zweig) entfernt
    * und die (Unter-)Seiten im Live Copy-Zweig werden so behandelt, als wären sie manuell erstellt worden.
+
    *Allerdings* sind die Unterseiten weiterhin der Live-Beziehung des übergeordneten Zweigs unterworfen, sodass bei einem weiteren Rollout der Blueprint-Seite(n) Folgendes geschieht:
 
    1. Die getrennten Seite(n) werden umbenannt:
 
       * Der Grund: MSM betrachtet die Seiten als manuell erstellte Seiten, die einen Konflikt verursachen, da sie denselben Namen aufweisen wie die zu erstellenden Live Copy-Seiten.
    1. Es wird eine neue (Live Copy-)Seite mit dem ursprünglichen Namen und den Änderungen vom Rollout erstellt.
+
    >[!NOTE]
    >
    >Details für solche Situationen finden Sie unter [MSM-Rollout-Konflikte](/help/sites-administering/msm-rollout-conflicts.md).
