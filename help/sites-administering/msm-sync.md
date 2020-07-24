@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 82%
+source-wordcount: '2671'
+ht-degree: 81%
 
 ---
 
@@ -187,7 +187,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr> 
   <tr> 
    <td> Workflow</td> 
-   <td><p>Startet den Workflow, der durch die Zieleigenschaft definiert ist (nur für Seiten), und nutzt die Live Copy als Nutzlast.</p> <p>Der Zielpfad ist der Pfad des Modellknotens, zum Beispiel: /etc/workflow/models/request_for_activation/jcr:content/model</p> </td> 
+   <td><p>Startet den Workflow, der durch die Zieleigenschaft definiert ist (nur für Seiten), und nutzt die Live Copy als Nutzlast.</p> <p>Der Pfad der Zielgruppe ist der Pfad des Modellknotens.</p> </td> 
    <td>target: (String) Der Pfad zum Workflow-Modell.<br /> </td> 
   </tr> 
   <tr> 
@@ -416,4 +416,4 @@ Konfigurieren Sie den Dienst entweder über die [Web-Konsole](/help/sites-deploy
 * In der Web-Konsole ist der Name der zu konfigurierenden Eigenschaft „Standardmäßige Rollout-Konfiguration“.
 * Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Legen Sie diesen Eigenschaftswert auf den Pfad der Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Legen Sie diesen Eigenschaftswert auf den Pfad der Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
