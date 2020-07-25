@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Developing User Guide
+user-guide-title: AEM 6.4 Developer-Benutzerhandbuch
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 80%
 
 ---
 
@@ -38,7 +42,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Seitenvorlagen - statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM  ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -66,7 +70,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](/help/sites-authoring/style-system.md)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
@@ -87,7 +91,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Internationalisierung von UI-Zeichenfolgen](i18n-dev.md)
       + [Verwalten von Wörterbüchern mithilfe des Übersetzers](i18n-translator.md)
       + [Extrahieren von Zeichenfolgen zur Übersetzung](i18n-extract.md)
-   + Klassische Komponenten der Benutzeroberfläche{#classic-ui-components}
+   + Classic-Komponenten der Benutzeroberfläche{#classic-ui-components}
       + [Entwickeln von AEM-Komponenten (klassische Benutzeroberfläche)](developing-components-classic.md)
       + [Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)](widgets.md)
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
@@ -117,7 +121,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Inhaltsfragmente und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Entwicklungstools{#devtools}
    + [Entwicklungstools](dev-tools.md)
-   + [AEM-Modernisierungstools](modernization-tools.md)
+   + [AEM-Modernisierungs-Tools](modernization-tools.md)
    + [Dialogfeldeditor](dialog-editor.md)
    + [Dialogfeldkonvertierungs-Tool](dialog-conversion.md)
    + [Entwickeln mit CRXDE Lite](developing-with-crxde-lite.md)
@@ -130,7 +134,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung   {#personlization}
++ Personalisierung     {#personlization}
    + [ContextHub](contexthub.md)
    + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
@@ -148,7 +152,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Anpassen von Ansichten von Seiteneigenschaften](page-properties-views.md)
    + [Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften](bulk-editing.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](customizing-content-fragments.md)
-   + Erweitern von Workflows{#extending-workflows}
+   + Workflows erweitern{#extending-workflows}
       + [Entwickeln und Erweitern von Workflows](workflows.md)
       + [Erstellen von Workflow-Modellen](workflows-models.md)
       + [Erweitern der Workflow-Funktionen](workflows-customizing-extending.md)
@@ -157,13 +161,13 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Best Practices für Workflows](workflows-best-practices.md)
       + [Referenz für Workflow-Prozesse](workflows-process-ref.md)
    + [Erweitern des Multi-Site-Managers](extending-msm.md)
-   + Verfolgung und Analyse{#extending-analytics}
+   + Tracking und Analytics{#extending-analytics}
       + [Erweitern der Ereignisverfolgung](extending-analytics.md)
       + [Hinzufügen der Adobe Analytics-Verfolgung zu Komponenten](extending-analytics-components.md)
-      + [Anpassen des Adobe Analytics-Frameworks](extending-analytics-framework.md)
+      + [Anpassen des Adobe Analytics Framework](extending-analytics-framework.md)
       + [Implementieren serverseitiger Seitennamen für Analytics](extending-analytics-pa-naming.md)
-   + Cloud-Services{#extending-cloud-services}
-      + [Cloud-Service-Konfigurationen](extending-cloud-config.md)
+   + Cloud Services{#extending-cloud-services}
+      + [Cloud Service-Konfigurationen](extending-cloud-config.md)
       + [Erstellen eines individuellen Cloud-Service](extending-cloud-config-custom-cloud.md)
    + [Erstellen benutzerspezifischer Erweiterungen](extending-campaign-extensions.md)
    + Formulare{#extending-forms}
