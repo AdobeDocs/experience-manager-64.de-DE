@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: AEM 6.4 Authoring-Benutzerhandbuch
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 88%
 
 ---
 
@@ -12,7 +16,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 # AEM 6.4 Authoring User Guide {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Grundlegende Aufgaben, Werkzeuge und Konzepte für AEM Authoring {#essentials}
++ Grundlegende Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
@@ -35,19 +39,19 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Exportieren in CSV](csv-export.md)
    + [Komponenten](default-components.md)
    + [Verfassen einer Seite für Mobilgeräte](mobile.md)
-   + [Fehlerbehebung in AEM bei der Bearbeitung](troubleshooting.md)
+   + [Fehlerbehebung in AEM beim Authoring](troubleshooting.md)
    + [Tastaturbefehle für die Seitenbearbeitung](page-authoring-keyboard-shortcuts.md)
    + [Best Practices](best-practices.md)
 + Site- und Seitenfunktionen {#siteandpage}
    + [Verwenden von Tags](tags.md)
-   + [Erstellen von Seitenvorlagen](templates.md)
+   + [Erstellen von Seitenvorlagen  ](templates.md)
    + [Stilsystem](style-system.md)
    + [Arbeiten mit Seitenversionen](working-with-page-versions.md)
    + [Seitenvergleich](page-diff.md)
    + [Komponentenkonsole](default-components-console.md)
    + [Responsives Layout](responsive-layout.md)
    + [Inhaltseinblick ](content-insights.md)
-   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](creating-accessible-content.md)
+   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien) ](creating-accessible-content.md)
    + [Strukturvorlage](scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](default-components-designmode.md)
    + [Foundation-Komponenten](default-components-foundation.md)
@@ -65,7 +69,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Weiterleiten von Launches](launches-promoting.md)
 + Workflows {#workflows}
    + [Arbeiten mit Workflows](workflows.md)
-   + [Anwenden von Workflows auf Seiten](workflows-applying.md)
+   + [Anwenden von Workflows auf Seiten ](workflows-applying.md)
    + [Teilnehmen an Workflows](workflows-participating.md)
    + [Arbeiten mit Projekt-Workflows](projects-with-workflows.md)
 + Seitenleistung {#page-performance}
@@ -73,9 +77,9 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung    {#personalization}
-   + [Personalisierung   ](personalization.md)
-   + [Seitenvorschau mit ContextHub-Daten](ch-previewing.md)
++ Personalisierung      {#personalization}
+   + [Personalisierung     ](personalization.md)
+   + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
    + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](technical-multisite-targeted.md)
@@ -83,7 +87,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Verwalten von Zielgruppen](managing-audiences.md)
    + [Erstellen und Verwalten von Angeboten](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
-+ AEM und Adobe Campaign {aem-adobe-campaign}
++ AEM und Adobe Campaign {aem-adobe-Kampagne}
    + [Arbeiten mit Adobe Campaign](adobe-campaign.md)
    + [Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard](campaign.md)
    + [Targeting von Adobe Campaign](target-adobe-campaign.md)
