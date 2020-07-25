@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.4 Administering User Guide
+user-guide-title: AEM 6.4 - Administrationsbenutzerhandbuch
+user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +64,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
    + [Starten von Workflows](workflows-starting.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins    ](configure-rich-text-editor-plug-ins.md)
    + [Admin-Konsolen](enable-classic-ui-admin.md)
 + Sicherheit {#security}
    + [Benutzerverwaltung und Sicherheit](security.md)
@@ -87,8 +91,8 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung    {#personalization}
-   + [Personalisierung   ](personalization.md)
++ Personalisierung      {#personalization}
+   + [Personalisierung     ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -98,7 +102,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Integrieren von Einstiegsseiten in Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
-   + [Konzepte](concepts.md)
+   + [Konzepte ](concepts.md)
    + [Verwaltung des generischen E-Commerce](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
@@ -107,7 +111,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
 + Integrationen {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
-   + [Integration mit Adobe Target](target.md)
+   + [Integrieren mit Adobe Target](target.md)
    + [Integrieren mit Livefyre](livefyre.md)
    + [Integrieren mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
@@ -123,7 +127,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
    + [Hinweis zur Einstellung von Flash-Viewer](flash-viewers-eol.md)
-   + [Integrieren mit Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [Integrieren mit Adobe Creative Cloud](https://docs.adobe.com/content/help/de-DE/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
