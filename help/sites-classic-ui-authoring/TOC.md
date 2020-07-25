@@ -2,16 +2,20 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Classic UI Authoring User Guide
+user-guide-title: AEM 6.4 Classic UI Authoring-Benutzerhandbuch
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 91%
 
 ---
 
 
 # AEM 6.4 Classic UI Authoring User Guide {#classic-ui}
 
-+ [Überblick über die Benutzeroberfläche](home.md)
++ [Überblick über das Authoring der klassischen Benutzeroberfläche](home.md)
 + Einführung in das Authoring der klassischen Benutzeroberfläche {#introduction}
    + [Erste Schritte für Autoren](classic-page-author-first-steps.md)
    + [Bearbeiten in der klassischen Benutzeroberfläche](classicui.md)
@@ -31,8 +35,8 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [Veröffentlichen von Seiten](classic-page-author-publish-pages.md)
    + [Bearbeiten der Seiteneigenschaften](classic-page-author-edit-page-properties.md)
    + [Anmerkungen beim Bearbeiten einer Seite](classic-page-author-annotations.md)
-   + [Fehlerbehebung in AEM bei der Bearbeitung](classic-page-author-troubleshooting.md)
-   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](classic-page-author-accessible-content.md)
+   + [Fehlerbehebung in AEM beim Authoring](classic-page-author-troubleshooting.md)
+   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien) ](classic-page-author-accessible-content.md)
    + [Verfassen einer Seite für Mobilgeräte](classic-feature-mobile.md)
    + [Komponenten für die Seitenbearbeitung](classic-page-author-edit-mode.md)
    + [Tastaturbefehle für die Seitenbearbeitung](classic-page-author-keyboard-shortcuts.md)
@@ -48,13 +52,13 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
 + Workflows {#workflows}
    + [Teilnehmen an Workflows](classic-workflows-participating.md)
    + [Arbeiten mit Workflows](classic-workflows.md)
-   + [Anwenden von Workflows auf Seiten](classic-workflows-applying.md)
+   + [Anwenden von Workflows auf Seiten ](classic-workflows-applying.md)
 + Launches {#launches}
    + [Launches](classic-launches.md)
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung    {#personalization}
++ Personalisierung      {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
@@ -79,9 +83,9 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [Arbeiten mit IBL-Bühnen](classicui-stages-aem3d-ibl.md)
    + [Rendern von 3D-Assets](classicui-rendering-3d.md)
    + [Anzeigen von 3D-Assets](classicui-view-3d-assets.md)
-   + [Bereitstellen von Dynamic Media Assets](dynamic-media-assets-delivering.md)
+   + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
    + [Einrichten einer Standardbühne mit Autodesk Maya und Mental Ray](classicui-stages-aem3d-ad-mr.md)
-   + [Hinzufügen von Assets mit dynamischen Medien zu Seiten](dynamic-media-assets-adding-to-page.md)
+   + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Scene7-Features zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
    + [Arbeiten mit 3D-Assets](classicui-3dassets.md)
