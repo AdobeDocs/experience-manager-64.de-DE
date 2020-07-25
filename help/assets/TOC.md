@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets-Benutzerhandbuch
+user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 76%
 
 ---
 
@@ -17,8 +21,8 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 + [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
-   + [AEM Assets-Startseite](assets-home-page.md)
-   + [Suchen nach Assets in AEM  ](search-assets.md)
+   + [Erfahrung mit AEM Assets-Startseiten](assets-home-page.md)
+   + [Suchen nach Assets in AEM      ](search-assets.md)
    + [GQL-Volltextsuche](gql-search.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Verwenden von Adobe Stock-Assets in AEM Assets](aem-assets-adobe-stock.md)
@@ -49,15 +53,15 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [Bildsets](image-sets.md)
-   + [Gemischte Mediensets](mixed-media-sets.md)
-   + [Rotationssets](spin-sets.md)
+   + [Sets für gemischte Medien](mixed-media-sets.md)
+   + [Rotations-Sets](spin-sets.md)
    + [Panoramabilder](panoramic-images.md)
    + [Video](video.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [Karussellbanner](carousel-banners.md)
-   + [Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups](custom-pop-ups.md)
-   + [Bereitstellen von optimierten Bildern für eine responsive Website](responsive-site.md)
+   + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
+   + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md)
    + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
@@ -99,7 +103,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [PDF-Rasterfunktion](aem-pdf-rasterizer.md)
    + [Konfigurieren von Einschränkungen beim Hochladen von Assets](configuring-asset-upload-restrictions.md)
    + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integration von AEM Assets mit dem InDesign-Server](indesign.md)
+   + [Integrieren von AEM Assets mit dem InDesign-Server](indesign.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Verwenden des Demopakets für Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
@@ -110,7 +114,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Erkennen des MIME-Typs von Assets mit Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
    + [Unterstützung für IPTC-Metadaten](iptc-support.md)
-   + [Metadatenschemata  ](metadata-schemas.md)
+   + [Metadatenschemata](metadata-schemas.md)
    + [Multi-Tenancy für Sammlungen, Snippets sowie Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen  ](watermarking.md)
    + [Massenimport und -export von Metadaten](metadata-import-export.md)
@@ -155,7 +159,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Verwenden von Seitenverfolgung und Einbettungs-Code in Web-Seiten](touch-ui-using-page-tracker.md)
    + [Verwalten von ebenenübergreifenden Assets](managing-linked-subassets.md)
    + [Zugehörige Assets](related-assets.md)
-   + [Asset-Insights](touch-ui-asset-insights.md)
+   + [Asset Insights](touch-ui-asset-insights.md)
    + [Suchen nach Video-Assets](search-video-assets.md)
    + [Freigeben privater Ordner](private-folder.md)
    + [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md)
