@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 |---|---|
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
-| Datum | 05. März 2020 |
+| Datum           | 05. März 2020 |
 | Download-URL | AEM 6.4.8.0 für [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
@@ -95,11 +95,11 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das Bild wird auf der Zeitleiste nach dem Hinzufügen von Anmerkungen nicht angezeigt, wenn auf einem Experience Manager im Scene7-Ausführungsmodus (NPR-31754) von Dynamic Media ausgeführt wird.
 
-* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-31745) geöffnet werden.
+* ZIP-Datei, die von DAM heruntergeladen wurde, kann nicht mit WinZip (NPR-31745) geöffnet werden.
 
 ### Integrationen {#integrations-6480}
 
-* Die Dropdown-Menüs **Firma** und **Berichte** Suite werden ausgeblendet, sobald beim Konfigurieren von Adobe Analytics in Experience Manager Cloud Services (NPR-31729) die Option **Berichte Source** ausgewählt wurde.
+* Die Dropdown-Menüs **Firma** und **Berichte** Suite werden ausgeblendet, sobald beim Konfigurieren von Adobe Analytics in Experience Manager Cloud Services (NPR-31729) die Option **Berichte-Quelle** ausgewählt wurde.
 
 * Adobe Campaign-Eigenschaften werden nicht bereinigt, wenn eine Sprachkopie eines mit einem Adobe Campaign verknüpften Newsletters erstellt wird, während eine Bereinigung erfolgt, wenn ein mit einem Adobe Campaign verknüpfter Newsletter kopiert oder eingefügt wird (NPR-32540).
 
@@ -237,7 +237,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Der Arbeitsablauf für die Neuverarbeitung in Scene7 wird angehalten, wenn einem Asset der Metadaten-Knoten fehlt (CQ-4281170).
 
-* Der Schritt &quot;BatchUpload&quot;im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit dem Video-Asset (CQ-4280630).
+* Der Schritt BatchUpload im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit Video-Asset (CQ-4280630).
 
 * Für an DM gesendete PDF-Optionen ist &quot;extractKeywords&quot;standardmäßig auf &quot;true&quot;gesetzt (CQ-4280101).
 
@@ -995,10 +995,6 @@ Ein Bundle bleibt nach der Installation des Forms Management-Pakets in Release/6
 
 * Einige JPEG-Bilder in einer XDP-Vorlage werden nicht korrekt dargestellt.  NPR-26702: Hotfix für LC-3917457
 
-**Formulare - OBSOLETE**
-
-* Der Papiererfassungsdienst stürzt bei der Verarbeitung von TIFF-Dateien ab. NPR-28079: Hotfix für CQ-4240649
-
 **Forms – Workflow**
 
 * HTML5-Formulare mit Standardversand in an.lca funktionieren nicht auf JBoss 7. NPR-28675: Hotfix für CQ-4243928
@@ -1158,7 +1154,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Die für &quot;Anzahl der Ergebnisse&quot;in der Forumssuche angezeigte Zahl verwendet ein falsches Trennzeichen für englische und deutsche Gebietsschemata. NPR-27050: Hotfix für CQ-4248939
 * Ungelesene Benachrichtigungen steigen nicht über 21 hinaus. NPR-26946, NPR-27480: Hotfix für CQ-4252829, CQ-4256939
 * Durch die Paginierung im Kommentarbereich einer beliebigen Komponente wird der Seiteninhalt beim Erreichen einer Seite durch Paginierung angezeigt. NPR-27032: Hotfix für CQ-4251228
-* Der Community-Site-Ordner kann nicht auf dem Miniaturbild angeklickt werden, wenn er von der Admin-Konsole auf der AEM Author-Instanz angezeigt wird. NPR-26986: Hotfix für CQ-4254036
+* Der Community-Site-Ordner kann nicht auf einem Miniaturbild angeklickt werden, wenn er von der Admin-Konsole auf der AEM Author-Instanz angezeigt wird. NPR-26986: Hotfix für CQ-4254036
 * Mit der Option &quot;Alle lesen markieren&quot;werden nur die ersten 10 Benachrichtigungen als gelesen markiert und andere bleiben bis zur Aktualisierung der Seite ungelesen. NPR-27037: Hotfix für CQ-4254058
 * Aus Ideationsgründen wird keine Paginierung ausgelöst, und die Liste von Themen (oder Antworten) wird länger, es sei denn, sie werden neu geladen. NPR-26193: Hotfix für CQ-4252104
 * Die Aktivitäten anderer Benutzer wurden gelöscht und beim Anmelden mit Moderatorberechtigungen und beim Hinzufügen von &quot;#social-Aktivitäten&quot;oder &quot;#tabs-2&quot;am Ende der Profil-URL des Moderators sichtbar. Hotfix für CQ-4251355
@@ -1255,6 +1251,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.3.0 Forms gehören:
 
 * Die Einstellungen für &quot;Standards Berichte&quot;und &quot;Kompatibilität&quot;für PDF Generator können nicht angezeigt werden. NPR-26715: Hotfix für CQ-4253384
 * Die Binärdatei &quot;convertpdf&quot;fehlt im Add-On-Paket für AIX Forms, was beim Aufrufen des PDFA-Dienstes zu Fehlern führt. Hotfix für CQ-4257873
+* Der Papiererfassungsdienst stürzt bei der Verarbeitung von TIFF-Dateien ab. NPR-28079: Hotfix für CQ-4240649
 
 **Document Services**
 
