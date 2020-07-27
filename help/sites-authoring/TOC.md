@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 Authoring-Benutzerhandbuch
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: e0b25517821971098978db078b2f205a8a380459
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 88%
+source-wordcount: '267'
+ht-degree: 89%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 88%
    + [Verwalten von Zielgruppen](managing-audiences.md)
    + [Erstellen und Verwalten von Angeboten](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
-+ AEM und Adobe Campaign {aem-adobe-Kampagne}
++ AEM und Adobe Campaign {#aem-adobe-campaign}
    + [Arbeiten mit Adobe Campaign](adobe-campaign.md)
    + [Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard](campaign.md)
    + [Targeting von Adobe Campaign](target-adobe-campaign.md)
