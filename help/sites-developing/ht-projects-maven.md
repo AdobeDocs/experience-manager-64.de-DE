@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 70%
@@ -447,7 +447,7 @@ Below dependencies need to be added to the `content` modules&#39;s POM.
 
 >[!NOTE]
 >
->Sofern Sie die Produktabhängigkeiten nicht wie oben beschrieben importieren, müssen sie auch dem übergeordneten POM hinzugefügt werden, zusammen mit der Version, die wie oben beschrieben mit Ihrem AEM-Setup übereinstimmt. Die Kommentare in jedem folgenden Eintrag zeigen das Paket, nach dem Sie in der Abhängigkeitssuche suchen müssen.
+>Sofern Sie nicht die Produktabhängigkeiten wie oben beschrieben importieren, müssen sie auch zum übergeordneten POM hinzugefügt werden, zusammen mit der Version, die wie oben beschrieben mit Ihrem AEM Setup übereinstimmt. Die Kommentare in jedem folgenden Eintrag zeigen das Paket, nach dem Sie in der Abhängigkeitssuche suchen müssen.
 
 >[!NOTE]
 >
@@ -551,14 +551,14 @@ Um die aus den JSPs kompilierten Klassen zu löschen, richten wir das Maven-Clea
 >
 >
 ```
-> <resource>  
->           <directory>src/main/content/jcr_root</directory>  
->           <includes>  
->                   <include>apps/**</include>  
->                   <include>libs/foundation/global.jsp</include>
->       </includes>  
->   </resource>  
->  ```
+><resource>
+>       <directory>src/main/content/jcr_root</directory>
+>       <includes>
+>               <include>apps/**</include>
+>               <include>libs/foundation/global.jsp</include>
+>       </includes>
+></resource>
+>```
 
 ### Arbeit mit SCM-Systemen {#how-to-work-with-scm-systems}
 
