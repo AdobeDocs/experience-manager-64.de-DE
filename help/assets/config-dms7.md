@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
 workflow-type: tm+mt
 source-wordcount: '5552'
 ht-degree: 74%
@@ -54,7 +54,7 @@ If you are upgrading AEM Dynamic Media from 6.3 to 6.4 (which now includes the a
 
 >[HINWEIS]
 >
->Wenn Sie Ihre AEM-Instanz im Kompatibilitätsmodus ausführen, d. h. die Kompatibilität installiert ist, müssen Sie diese Befehle nicht ausführen.
+>Wenn Sie Ihre AEM Instanz im Kompatibilitätsmodus ausführen, d. h. die Kompatibilität ist verpackt, müssen Sie diese Befehle nicht ausführen.
 
 To migrate your custom presets and configurations from `/etc` to `/conf`, run the following Linux curl command:
 
@@ -66,7 +66,7 @@ Bei allen Upgrades, ob mit oder ohne Kompatibilitätspaket, können Sie mit dem 
 
 ## (Optional) Installing feature pack 18912 for bulk asset migration {#installing-feature-pack}
 
-Mit dem Feature Pack 18912 können Sie Assets per Massen-Import per FTP erfassen oder Assets von Dynamic Media - Hybrid-Modus oder Dynamic Media Classic - in Dynamic Media - Scene7-Modus auf AEM migrieren. Es ist über Adobe Professional Services verfügbar.
+Mit dem Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets von einem Dynamic Media - Hybrid-Modus oder Dynamic Media Classic in Dynamic Media - Scene7-Modus auf AEM migrieren. Es ist in Adobe Professional Services erhältlich.
 
 Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration](bulk-ingest-migrate.md) von Assets.
 
@@ -76,7 +76,7 @@ Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für
 
 >[!NOTE]
 >
->Standardmäßig ist der Konfigurationspfad für Cloud Service `/content/dam`. Andere Konfigurationspfade werden von Dynamic Media - Scene7-Modus - nicht unterstützt.
+>Standardmäßig ist der Konfigurationspfad für Cloud Service `/content/dam`. Jeder andere Konfigurationspfad wird von Dynamic Media - Scene7-Modus nicht unterstützt.
 
 So konfigurieren Sie Dynamic Media-Cloud Service:
 
@@ -97,7 +97,7 @@ So konfigurieren Sie Dynamic Media-Cloud Service:
    * **[!UICONTROL Veröffentlichung von Assets]** – Die Option **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich. Die Option **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.
    * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 
-      Adobe empfiehlt, die Standardeinstellung zu verwenden, es sei denn, Sie haben eine besondere Anordnung zur Verwendung des Servers Ihrer eigenen Firma oder eines Spezialservers.
+      Sofern Sie keine spezielle Anordnung zur Verwendung des eigenen Firma-Servers oder eines Spezialservers haben, empfiehlt Adobe die Verwendung der Standardeinstellung.
    >[!NOTE]
    >
    >Die Versionierung wird in DMS7 nicht unterstützt. Eine verzögerte Aktivierung gilt nur, wenn auf der Seite „Konfiguration dynamischer Medien bearbeiten“ die Option **[!UICONTROL Assets veröffentlichen]** auf **[!UICONTROL Bei Aktivierung]** eingestellt ist, und erst dann, wenn das Asset zum ersten Mal aktiviert wird.
@@ -144,7 +144,7 @@ Die Aufgaben für die Einrichtung und Konfiguration sind:
 * [Hinzufügen benutzerdefinierter MIME-Typen für nicht unterstützte Formate](#adding-custom-mime-types-for-unsupported-formats)
 * [Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotations-Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Veröffentlichungseinstellungen für Image-Server         {#publishing-setup-for-image-server}
+#### Veröffentlichungseinstellungen für Image-Server           {#publishing-setup-for-image-server}
 
 Mit den Veröffentlichungseinstellungen wird festgelegt, wie Assets standardmäßig von Dynamic Media bereitgestellt werden. Wenn keine Einstellung festgelegt wird, stellt Dynamic Media ein Asset gemäß den Standardeinstellungen unter „Veröffentlichungseinstellungen“ bereit. Beispiel: Bei der Anforderung, ein Bild bereitzustellen, das kein Auflösungsattribut enthält, wird ein Bild mit der Einstellung „Standardobjektauflösung“ bereitgestellt.
 
@@ -264,7 +264,7 @@ Sie können in AEM Assets benutzerdefinierte MIME-Typen für nicht unterstützte
 
 1. On the page, scroll down to the name **[!UICONTROL Adobe CQ Scene7 Asset MIME type Service]**. To the right of the name, tap **[!UICONTROL Edit the configuration values]** (pencil icon).
 
-   ![edit](assets/2019-08-02_16-44-56.png)
+   ![Bearbeiten](assets/2019-08-02_16-44-56.png)
 
 1. Klicken Sie auf der Seite **[!UICONTROL Adobe CQ Scene7 Asset MIME type Service]** auf ein beliebiges Pluszeichen `+`. Die Position in der Tabelle, an der Sie auf das Pluszeichen klicken, um den neuen MIME-Typ hinzuzufügen, ist unerheblich.
 
@@ -469,7 +469,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 ### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Damit Dynamic Media reibungslos ausgeführt werden, empfiehlt Adobe die folgenden Tipps zur Synchronisierungsleistung/Skalierbarkeit:
+Damit Dynamic Media - Scene7-Modus reibungslos ausgeführt werden können, empfiehlt Adobe die folgenden Tipps zur Synchronisierungsleistung/Skalierbarkeit:
 
 * Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate.
 * Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Video-Assets).
@@ -482,10 +482,14 @@ Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schneller
 
 Adobe empfiehlt die Verwendung der folgenden „angepassten“ Auftragsparameter für PDF-, PostScript- und PSD-Dateien:
 
+<!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
+
+<!-- OLD POSTSCRIPT JOB PARAMETERS `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` -->
+
 | Dateityp | Empfohlene Auftragsparameter |
 | ---| ---|
-| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
-| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PDF | `pdfprocess=Thumbnail&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 Um einen dieser Parameter zu aktualisieren, führen Sie die Schritte unter [Unterstützung von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern](#enabling-mime-type-based-assets-scene-upload-job-parameter-support) aus.
@@ -555,9 +559,9 @@ Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dy
 
 ### (Optional) Filtern von Assets für die Replizierung {#optional-filtering-assets-for-replication}
 
-In Bereitstellungen ohne Dynamic Media replizieren Sie *alle *Elemente (sowohl Umgebung als auch Videos) aus Ihrer AEM-Autorendatei in den AEM-Veröffentlichungsknoten. Dieser Arbeitsablauf ist erforderlich, da die AEM-Veröffentlichungsserver auch die Assets bereitstellen.
+Bei Bereitstellungen ohne Dynamic Media replizieren Sie *alle *Elemente (sowohl Bilder als auch Videos) aus der Umgebung Ihres AEM Autors in den AEM Veröffentlichungsknoten. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
 
-Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen von Dynamic Media nicht an AEM-Veröffentlichungsknoten repliziert werden. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
+Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen von Dynamic Media nicht repliziert werden, um Veröffentlichungsknoten AEM. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
 Mit den Filtern können Sie Assets von der Replikation auf dem AEM-Veröffentlichungsknoten *ausschließen*.
 
