@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 56%
+source-wordcount: '1896'
+ht-degree: 55%
 
 ---
 
@@ -38,7 +38,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
 1. Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche 
 1. Hinzufügen der Aktionsbearbeitung zur Schaltfläche
-1. Hinzufügen des LiveCycle-Prozesses zur Aktivierung der Aktion &quot;Verarbeitung
+1. Hinzufügen des LiveCycle-Prozesses zur Aktivierung der Aktionsbearbeitung
 
 ### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -163,7 +163,7 @@ Die ACMExtensionsMessages.properties-Datei enthält Beschriftungen und QuickInfo
 
 #### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset Composer-Baustein-Bundle von Adobe neu. In diesem Szenario werden die Dateien &quot;acmExtensionsConfig.xml&quot;und &quot;ACMExtensionsMessages.properties&quot;auf der Serverseite bearbeitet. Daher muss das Asset Composer-Baustein-Bundle von Adobe neu gestartet werden.
+Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset Composer-Baustein-Bundle von Adobe neu. In diesem Szenario werden die Dateien &quot;acmExtensionsConfig.xml&quot;und &quot;ACMExtensionsMessages.properties&quot;auf der Serverseite bearbeitet. Daher ist ein Neustart des Adobe Asset Composer-Bausteins erforderlich.
 
 >[!NOTE]
 >
@@ -326,11 +326,10 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die Teil der angehängten Datei components.zip sind:
 
-* DSC-Komponente JAR-Datei (DSCSample.jar)
-* Brief zum Review-Prozess LCA senden(SendLetterForReview.lca)
+* DSC component jar (`DSCSample.jar`)
+* Send letter for review process LCA (`SendLetterForReview.lca`)
 
-Laden Sie die Datei components.zip herunter und dekomprimieren Sie sie, um die Dateien DSCSample.jar und SendLetterForReview.lca abzurufen. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.\
-components.zip
+Download and unzip the `components.zip` file to get `DSCSample.jar` and `SendLetterForReview.lca` files. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
 
 [Datei laden](assets/components.zip)
 
@@ -355,7 +354,7 @@ Der LCA-Vorgang wird auf dem LiveCycle-Server ausgeführt und erfordert die Serv
 
 #### Installieren des LiveCycle Archivs (LCA) {#install-livecycle-archive-lca}
 
-Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienst-Prozess aktiviert.
+Der erforderliche LiveCycle-Prozess, der den E-Mail-Serviceprozess aktiviert.
 
 >[!NOTE]
 >
@@ -408,11 +407,11 @@ In diesem Szenario müssen Sie den E-Mail-Dienst im LifeCycle-Server konfigurier
 
 #### DSC-Dienst konfigurieren {#configure-the-dsc-service}
 
-Um die Correspondence Management-API zu verwenden, laden Sie die Datei &quot;DSCSample.jar&quot;(in diesem Dokument als Teil von components.zip angehängt) herunter und laden Sie sie auf den LiveCycle-Server hoch. Nachdem die Datei &quot;DSCSample.jar&quot;auf den LiveCycle-Server hochgeladen wurde, verwendet der AEM-Server die Datei &quot;DSCSample.jar&quot;, um auf die renderLetter-API zuzugreifen.
+To use the Correspondence Management API, download the `DSCSample.jar` (attached in this document as part of `components.zip`) and upload it to the LiveCycle server. After the `DSCSample.jar` file is uploaded to the LiveCycle server, the AEM server uses the `DSCSample.jar` file to access the renderLetter API.
 
 For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Aktualisieren Sie die AEM-Server-URL in cmsa.properties in DSCSample.jar, das sich am folgenden Speicherort befindet:
+1. Update the AEM server URL in cmsa.properties in `DSCSample.jar`, which is at the following location:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
@@ -420,25 +419,25 @@ For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/form
 
    * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
    * **crx.username** = AEM-Benutzername
-   * **crx.password**= AEM-Kennwort
+   * **crx.password**= AEM
    * **crx.appRoot** = /content/apps/cm
 
    >[!NOTE]
    >
    >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
 
-   Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Die `DSCSample.jar` Datei verwendet die `renderLetter` API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API, um den Brief als PDF-Bytes aus XML-Daten zu rendern, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+`DSCSample.jar` -Datei verwendet die `renderLetter` API zum Rendern des Briefs als PDF-Byte aus XML-Daten, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Anfang Workbench und melden Sie sich an.
 1. Select **[!UICONTROL Window > Show Views > Components]**. Die Komponenten-Ansicht wird zu Workbench ES2 hinzugefügt.
 
 1. Right-click **[!UICONTROL Components]** and select **[!UICONTROL Install Component]**.
 
-1. Select the **[!UICONTROL DSCSample.jar]** file through the file browser and click **[!UICONTROL Open]**.
+1. Select the `DSCSample.jar` file through the file browser and click **[!UICONTROL Open]**.
 1. Right-click **[!UICONTROL RenderWrapper]** and select **[!UICONTROL Start Component]**. Wenn die Komponente gestartet wird, erscheint ein grüner Pfeil neben dem Komponentennamen.
 
 ## Schreiben an Review senden {#send-letter-for-review}
