@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +26,7 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
+Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die im Arbeitsbereich &quot;AEM Forms&quot;wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
 
 Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
@@ -98,7 +101,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
    }
    ```
 
-   [DSC-Datei](assets/dscsample.zip)herunterladen: Ein Beispiel-DSC ist in der oben angehängten Datei DSCSample.zip verfügbar. Laden Sie die Datei DSCSample.zip herunter und dekomprimieren Sie sie. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [DSC-Datei](assets/dscsample.zip)herunterladen: Eine DSC-Beispieldatei ist in der oben `DSCSample.zip` angehängten Datei verfügbar. Download and unzip the `DSCSample.zip` file. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Wählen Sie im Dialogfeld „Aktivität definieren“ die entsprechende Aktivität wie getLetterInstanceInfo aus und klicken Sie auf **OK**.
 
