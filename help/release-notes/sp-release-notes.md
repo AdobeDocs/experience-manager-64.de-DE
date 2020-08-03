@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '21532'
+source-wordcount: '21612'
 ht-degree: 25%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 25%
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
 | Datum           | 05. März 2020 |
-| Download-URL | AEM 6.4.8.0 für [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| Download-URL | AEM 6.4.8.0 zur [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
 
-AEM 6.4.8.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Erweiterungen sowie Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Die Version wurde seit der allgemeinen Verfügbarkeit von AEM 6.4 im **April 2018 veröffentlicht.**
+AEM 6.4.8.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen und Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Die seit der allgemeinen Verfügbarkeit von AEM 6.4 im **April 2018 veröffentlichte Version wurde veröffentlicht.**
 
-Es ist auch kumulativ, was bedeutet, dass 6.4.8.0 alle AEM 6.4 Service Packs umfasst, die zuvor veröffentlicht wurden.
+Es ist auch kumulativ, was bedeutet, dass 6.4.8.0 alle AEM 6.4 Service Packs umfasst, die vor ihm veröffentlicht wurden.
 
 Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
@@ -48,7 +48,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Integration von Formulardatenmodellen mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
-* AEM Assets werden jetzt über Adobe I/O mit Brand Portal konfiguriert.
+* AEM Assets werden jetzt mit Brand Portal über Adobe I/O konfiguriert.
 
 * Die in ContextHub enthaltene jQuery-Version wurde auf 3.2.1 aktualisiert.
 
@@ -71,9 +71,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 ### Assets {#assets}
 
-* Ein Ordner ohne Namen wird im SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Scene7-Dynamic Media (NPR-32440) von einem Ordner in einen anderen verschoben wird.
+* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Dynamic Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
-* Auf der Seite &quot;Assets detail&quot;von PDF-Dateien werden keine Aktionsschaltflächen in Experience Managern angezeigt, die im Scene7-Modus ausgeführt werden (NPR-32316).
+* Die Detailseite &quot;Assets&quot;von PDF-Dateien zeigt keine Aktionsschaltflächen in Experience Manager an, der im Scene7-Modus von Dynamic Media ausgeführt wird (NPR-32316).
 
 * Asset- und Videodarstellungen können nicht gelöscht werden (NPR-32213).
 
@@ -93,13 +93,13 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Dynamic Media-Videokodierungen können nicht hochgeladen werden, wenn die Scene7 Cloud-Konfiguration in einem privaten Ordner `/conf` statt `/conf/global` (NPR-31779) abgelegt wird.
 
-* Das Bild wird auf der Zeitleiste nach dem Hinzufügen von Anmerkungen nicht angezeigt, wenn auf einem Experience Manager im Scene7-Ausführungsmodus (NPR-31754) von Dynamic Media ausgeführt wird.
+* Das Bild wird auf der Zeitleiste nach dem Hinzufügen von Anmerkungen nicht angezeigt, wenn auf einem Experience Manager, der auf Dynamic Media ausgeführt wird, der Scene7-Ausführungsmodus ausgeführt wird (NPR-31754).
 
-* ZIP-Datei, die von DAM heruntergeladen wurde, kann nicht mit WinZip (NPR-31745) geöffnet werden.
+* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-31745) geöffnet werden.
 
 ### Integrationen {#integrations-6480}
 
-* Die Dropdown-Menüs **Firma** und **Berichte** Suite werden ausgeblendet, sobald beim Konfigurieren von Adobe Analytics in Experience Manager Cloud Services (NPR-31729) die Option **Berichte-Quelle** ausgewählt wurde.
+* Die Dropdown-Menüs **Firma** und **Berichte** Suite werden ausgeblendet, sobald beim Konfigurieren von Adobe Analytics in Experience Manager Cloud Services (NPR-31729) die Option **Berichte Source** ausgewählt wurde.
 
 * Adobe Campaign-Eigenschaften werden nicht bereinigt, wenn eine Sprachkopie eines mit einem Adobe Campaign verknüpften Newsletters erstellt wird, während eine Bereinigung erfolgt, wenn ein mit einem Adobe Campaign verknüpfter Newsletter kopiert oder eingefügt wird (NPR-32540).
 
@@ -155,7 +155,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Dokument Security: Eine geschützte PDF-Datei kann nicht offline geöffnet werden, wenn die Option DisableGlobalOfflineSynchronizationData auf True (NPR-32080) eingestellt ist.
 
-* Dokument Security: Probleme beim Öffnen einer geschützten PDF-Datei nach dem Upgrade von ES4 auf AEM 6.3 (NPR-32170).
+* Dokument Security: Probleme beim Öffnen einer geschützten PDF-Datei nach einem Upgrade von ES4 auf AEM 6.3 (NPR-32170).
 
 * Dokument-Dienste: Beim Konvertieren einer PDF-Datei in ein PDF/A-Dokument mit der toPDFA-Konvertierungsmethode (NPR-32663) wird eine Fehlermeldung angezeigt.
 
@@ -171,7 +171,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 AEM 6.4.7.0 is an important update that includes performance, stability, security and key customer fixes and enhancements released since the general availability of AEM 6.4 in **April 2018.**
 
-Es ist auch kumulativ, d. h., dass 6.4.7.0 alle AEM 6.4 Service Packs vor der Veröffentlichung enthält.
+Es ist auch kumulativ, was bedeutet, dass 6.4.7.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.7.0 sind:
 
@@ -203,13 +203,13 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Sonderzeichen, die in der Betreffzeile von E-Mail-Vorlagen auftreten, werden nicht richtig angezeigt (NPR-30547).
 
-* Beim Verschieben von Assets aus einem Ordner in einen anderen in AEM, das im Scene7-Runmode von Dynamic Media ausgeführt wird (NPR-31631), werden die Asset-Namen in Kleinbuchstaben geändert.
+* Beim Verschieben von Assets aus einem Ordner in einen anderen im AEM Scene7-Runmode (NPR-31631) werden die Asset-Namen in Kleinbuchstaben geändert.
 
 * Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn Bildsatz (oder Mediaset) erstellt und mit einer entsprechenden Benennungskonvention in DAM (NPR-31576) benannt wird.
 
 * Dynamic Media Encode Video-Arbeitsablauf kann keine Miniaturansicht für das Video generieren, das von Scene7 in den Scene7-Ausführungsmodus (NPR-31523) migriert wird.
 
-* Interner Serverfehler wird beobachtet, wenn Sie mit dem Filter nach Sets suchen, in AEM, das auf Dynamic Media ausgeführt wird - Scene7-Runmode (NPR-31388).
+* Interner Serverfehler wird beim Verwenden des Filters zur Suche nach Sets beobachtet, AEM auf Dynamic Media ausgeführt werden - Scene7-Runmode (NPR-31388).
 
 * Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler festgestellt, da sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31347).
 
@@ -217,7 +217,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Der für den Modus „Dynamic Media Hybrid“ konfigurierte Wert zum Ablauf (Client-Cache-Zeit bis zum Livestream) wird nicht in die Umgebung für die Bereitstellung dynamischer Medien repliziert (NPR-31126) .
 
-* Das Hochladen von AEM-Dynamic Media - Scene7-Runmode zu Scene7 dauert zu lange. (NPR-30926)
+* Uploads von AEM Dynamic Media - Scene7-Runmode zu Scene7 dauert zu lange. (NPR-30926)
 
 * Nachdem Sie eine Seite erstellt haben, die eine Dynamic Media-Komponente beim Veröffentlichen derselben enthält, wird der Benutzer in der Autoreninstanz, die auf Dynamic Media ausgeführt wird - Scene7-Runmode, aufgefordert, die dmscene7-Konfiguration zu veröffentlichen (NPR-30880).
 
@@ -229,7 +229,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Asset-Titel und Namensänderung bleiben nach dem Verschieben in einen Zielordner nicht erhalten, der beim Auswählen unendlichen Bildlaufs auslöst (NPR-30647).
 
-* Sammlungen werden aus der Ansicht entfernt, wenn ein Filter in AEM Assets angewendet wird, die über Adobe Asset Link aufgerufen werden (CQ-4280534).
+* Sammlungen werden aus der Ansicht entfernt, wenn ein Filter in AEM Assets angewendet wird, die über den Asset-Link der Adobe aufgerufen werden (CQ-4280534).
 
 * Stapelgröße und Zeitüberschreitung für Arbeitsablaufschritte für &quot;Neu verarbeiten&quot;und &quot;Batch Upload&quot;sind nicht über die Benutzeroberfläche konfigurierbar und müssen in CRXDE eingestellt werden. Der Arbeitsablauf muss zweimal synchronisiert werden (CQ-4281254).
 
@@ -243,7 +243,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Null-Punkt-Ausnahme wird beim Ausführen des Scene7-Arbeitsablaufs für einen Ordner mit Nicht-DM-Assets beobachtet (CQ-4279555).
 
-* Beim Umbenennen von Assets in AEM kann nicht mit Szene 7 synchronisiert werden, wenn in Scene7 bereits ein Asset mit einem Duplikat-Namen vorhanden ist (CQ-4276763).
+* Beim Umbenennen von Assets in AEM kann nicht mit Szene 7 synchronisiert werden, wenn in Scene 7 bereits ein Asset mit einem Duplikat-Namen vorhanden ist (CQ-4276763).
 
 * Die Zip-Datei, die per E-Mail zum Herunterladen von Assets gesendet wird, kann nicht entpackt werden, wenn ein Benutzer mit der Berechtigung &quot;Lesen&quot;versucht, sie zu öffnen (CQ-4277925).
 
@@ -269,7 +269,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Wenn ein Benutzer ein Inhaltsfragment bearbeitet, wird die bereits gelöschte Variante des Inhaltsfragments wiederhergestellt (NPR-31178).
 
-* Die Abfrage der Inhaltsfragmentmodelle ist ineffizient. Es ist sehr langsam, wenn die Instanz viele Seiten hat und einen Fehler auslöst (NPR-30666).
+* Die Abfrage der Inhaltsfragmentmodelle ist ineffizient. Es ist sehr langsam, wenn die Instanz viele Seiten hat und ein Fehler auftritt (NPR-30666).
 
 * Beim Speichern des Inhaltsfragmentmodells wird die Uhrzeit im Datums- und Uhrzeitfeld auf 00:00 (NPR-30540) eingestellt.
 
@@ -303,7 +303,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 ##### Livefyre {#livefyre-6470}
 
-* Die Livefyre-Integration mit der AEM 6.4-Aktualisierung führt zu einer Null-Punkt-Ausnahme, wenn die Integration mit dem DITA-Plugin für synthetische Ressourcen erfolgt. Die Integration funktioniert jedoch, wenn Komponenten manuell hinzugefügt werden (FYR-11066).
+* Die Livefyre-Integration mit AEM 6.4-Aktualisierung führt zu einer Null-Punkt-Ausnahme, wenn die Integration mit dem DITA-Plugin für synthetische Ressourcen erfolgt. Die Integration funktioniert jedoch, wenn Komponenten manuell hinzugefügt werden (FYR-11066).
 
 ##### Übersetzung {#translation-6470}
 
@@ -312,10 +312,10 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 ##### Communities {#communities-6470}
 
 * Die E-Mail-Funktion funktioniert in einigen Fällen nicht ordnungsgemäß, auch wenn E-Mail-Nachrichten in den Benachrichtigungseinstellungen aktiviert sind. Das System löst eine Ausnahme im NotificationsActivityStreamProvider (NPR-31521) aus.
-* Da keine neuen Mitglieder erstellt werden können, wird im Bildschirm &quot;Create Member&quot;in der AEM-Autoreninstanz (NPR-30951) ein leerer Bildschirm angezeigt.
+* Da keine neuen Mitglieder erstellt werden können, wird im Bildschirm &quot;Create Member&quot;in AEM Autoreninstanz (NPR-30951) ein leerer Bildschirm angezeigt.
 * Benutzer kann keinen Kommentar zu einem Blog in Internet Explorer 11 (NPR-30927) posten.
-* Der Administrator einer eingeschränkten Gruppe ist nicht in der Lage, die Gruppenkarte Ansicht, kann keine Schnelllink-Vorgänge (Gruppen bearbeiten/Veröffentlichen/Löschen) in der AEM-Autoreninstanz (NPR-30810) durchführen.
-* Bei der Erstellung einer neuen Site in der AEM-Autoreninstanz (NPR-28840) sind keine Informationen zu Mitgliedergruppen/Gruppen sichtbar.
+* Der Administrator einer eingeschränkten Gruppe ist nicht in der Lage, die Gruppenkarte Ansicht, kann keine Schnelllink-Vorgänge (Gruppen bearbeiten/Veröffentlichen/Löschen) in AEM Autoreninstanz (NPR-30810) durchführen.
+* Bei der Erstellung einer neuen Site in AEM Autoreninstanz (NPR-28840) sind keine Informationen zu Mitgliedergruppen/Gruppen sichtbar.
 
 ##### Formulare {#forms-6470}
 
@@ -329,7 +329,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Zeichenfolgen enthalten den Wörterbuchschlüssel beim Lokalisieren von adaptiven Formularen (NPR-31109).
 
-* Die Kontrollkästchen und Dropdown-Listen in Forms schlagen Barrierefreiheitsüberprüfungen fehl (NPR-31282).
+* Die Kontrollkästchen und Dropdown-Listen in Forms führen keine Zugänglichkeitsprüfungen durch (NPR-31282).
 
 **HTML5-Formulare**
 
@@ -339,7 +339,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Beim Ausführen mehrerer Threads zum Zusammenstellen der Formulare mit der Methode com.adobe.fd.assembler.service.AssemblerService.invoke() wird eine Fehlermeldung angezeigt (NPR-31164).
 
-* Die temporären Dateien, die vom Assembler Service erstellt wurden, werden nicht automatisch gelöscht und erfordern einen Neustart von AEM (NPR-30846).
+* Die temporären Dateien, die vom Assembler Service erstellt wurden, werden nicht automatisch gelöscht und müssen AEM neu gestartet werden (NPR-30846).
 
 * Das Anwenden von ReaderExtension-Rechten auf PDF-Dateien führt zu einer Fehlermeldung (NPR-30930).
 
@@ -357,13 +357,13 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 **PDFG Service**
 
-* Die Adobe PDF-Einstellungsdatei, die über die Admin-Benutzeroberfläche (NPR-31273) heruntergeladen wurde, kann nicht hochgeladen werden.
+* Die mit der Admin-Benutzeroberfläche (NPR-31273) heruntergeladene Adobe PDF-Einstellungsdatei kann nicht hochgeladen werden.
 
 #### AEM 6.4.6.0 {#experience-manager-6460}
 
 AEM 6.4.6.0 is an important update that includes performance, stability, security and key customer fixes and enhancements released since the general availability of AEM 6.4 in **April 2018.**
 
-Es ist auch kumulativ, d. h., dass 6.4.6.0 alle AEM 6.4 Service Packs vor der Veröffentlichung enthält.
+Es ist auch kumulativ, was bedeutet, dass 6.4.6.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 
@@ -391,7 +391,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 **Sites**
 
 * `pageinfo.json` -Anforderungen sind extrem langsam und das Laden dauert zu lange. NPR-29709: Hotfix für CQ-4269560
-* `onTime` oder `offTime` auf Assets gespeicherte Metadateneigenschaften werden nicht zurückgerufen, wenn der AEM-Server neu gestartet wird. NPR-30413: Hotfix für CQ-4272784
+* `onTime` oder `offTime` auf Assets gespeicherte Metadateneigenschaften nicht zurückgerufen werden, wenn der AEM neu gestartet wird. NPR-30413: Hotfix für CQ-4272784
 * Aufgrund des fehlerhaften Verhaltens der ConfigPostProcessor-Klasse wird durch das Aussetzen der übergeordneten Seite cq entfernt: LiveRelationship-Mischungstyp von der untergeordneten Seite. NPR-30536, NPR-30510: Hotfix für CQ-4254113
 * Site-übergreifende Skripterstellung (XSS) im Arbeitsablaufdialogfeld am Beginn auf der Bearbeitungsseite für Kampagnen. NPR-29747: Hotfix für CQ-4271067
 * (Klassische Benutzeroberfläche) Die Workflow-Sperrstufe deaktiviert die Registerkarte &quot;Workflow&quot;, bis die Sperre losgelassen wird. NPR-30356: Hotfix für CQ-4237557
@@ -404,7 +404,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 * Der Wert des Abfrageparameters „resourceType“ wird in den Wert eines HTML-Tag-Attributs kopiert, das in doppelte Anführungszeichen eingeschlossen ist. NPR-29832: Hotfix für CQ-4255365
 * Eine Aktualisierung der Seite ist erforderlich, nachdem Komponenten kopiert und von einer Seite auf eine andere eingefügt wurden. NPR-29982: Hotfix für CQ-4256019
 * Veröffentlichen/Veröffentlichung rückgängig machen aus einem Seitenalias wird nicht unterstützt und sollte entfernt werden. NPR-30062: Hotfix für CQ-4271249
-* Ungeschlossene ResourceResolver-Warnung in ExperienceFragmentsReplicationListener, die im Laufe der Zeit zu Stabilitätsproblemen führt und einen Neustart von AEM-Instanzen erzwingt. NPR-30416: Hotfix für CQ-4257521
+* Ungeschlossene ResourceResolver-Warnung in ExperienceFragmentsReplicationListener, die im Laufe der Zeit zu Stabilitätsproblemen führt und AEM Instanzen neu starten muss. NPR-30416: Hotfix für CQ-4257521
 * Durch Verschieben von Erlebnisfragmenten, auf die auf mehr als 150 Seiten verwiesen wird, wird fragmentPath auf den Seiten, auf die verwiesen wird, nicht verändert. NPR-30556: Hotfix für CQ-4274900
 * Parsing-Fehler beim Öffnen eines Inhaltsfragments, das die Zeichen Dollar ($) und Klammer ({) nacheinander enthält. Hotfix für CQ-4270266
 * Das VersionPreview-Servlet schlägt beim Versuch, eine Version eines Experience Fragment in der Timeline anzuzeigen, mit NullPointerException fehl. NPR-30074: Hotfix für CQ-4271881
@@ -469,7 +469,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 **Adaptive Formulare**
 
 * Die leere .css-Datei benötigt mehr Zeit, um vom Herausgeber abzurufen, was zu Leistungsproblemen führt. NPR-30558: Hotfix für CQ-4274399
-* Formulare, die nach der Veröffentlichung geändert werden, werden beim Veröffentlichen der Site nicht erneut veröffentlicht. NPR-30411: Hotfix für CQ-4236566
+* Forms, die nach der Veröffentlichung geändert werden, werden beim Veröffentlichen der Site nicht erneut veröffentlicht. NPR-30411: Hotfix für CQ-4236566
 
 **Forms - Backend-Integration**
 
@@ -490,12 +490,12 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 
 **Forms – Foundation JEE**
 
-* Beim Hinzufügen oder Bearbeiten einer Webdienstverbindung durch Aufrufen von Webdiensten aus AEM Forms Workbench wird ein Fehler ausgegeben: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30116: Hotfix für CQ-4273217
+* Beim Hinzufügen oder Bearbeiten einer Webdienst-Verbindung durch Aufrufen von Webdiensten aus AEM Forms Workbench wird ein Fehler ausgegeben: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30116: Hotfix für CQ-4273217
 
 **Forms - Document Services**
 
-* Fehler &quot;PDF/A-Beschriftung fehlt&quot;in Acrobat Preflight NPR-30594: Hotfix für CQ-4276032
-* Datenbindungen mit einem einzelnen Zeichen in PDF führen dazu, dass Reader Extensions mit dem Fehler &quot;java.lang.StringIndexOutOfBoundsException: Zeichenfolgenindex außerhalb des Bereichs: 1&quot;. NPR-30128: Hotfix für CQ-4273878
+* Fehler &quot;PDF/A-Beschriftung fehlt&quot;in Acrobat Preflight. NPR-30594: Hotfix für CQ-4276032
+* Datenbindungen mit einem Zeichen in PDF führen dazu, dass Reader-Erweiterungen mit dem Fehler &quot;java.lang.StringIndexOutOfBoundsException: Zeichenfolgenindex außerhalb des Bereichs: 1&quot;. NPR-30128: Hotfix für CQ-4273878
 * Wenn ein Ladetest für den HTML-zu-PDF-Dienst ausgeführt wird, schlägt er mit einem Fehler fehl und die Dateitypeinstellungen werden vom AEM Forms-Server entfernt. NPR-30085: Hotfix für CQ-4272631
 * Beim Reduzieren einer PDF-Datei mit Adobe Acrobat 9.1 (XFA-Version 3.0) wird der Status des PDF-Formulars nicht beibehalten: Unsichtbare Elemente im Formular werden wieder auf einen sichtbaren Status zurückgesetzt. NPR-29978: Hotfix für CQ-4270888
 
@@ -514,14 +514,14 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 
 AEM 6.4.5.0 is an important update that includes performance, stability, security and key customer fixes and enhancements released since the general availability of AEM 6.4 in **April 2018.**
 
-Es ist auch kumulativ, d. h., dass 6.4.5.0 alle AEM 6.4 Service Packs vor der Veröffentlichung enthält.
+Es ist auch kumulativ, was bedeutet, dass 6.4.5.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.13 aktualisiert.
 * Socket-Timeout und Verbindungs-Timeout wurden in den Replizierungsagenten von Brand Portal hinzugefügt.
 * Verbesserungen bei der Omniture-Suche: Die Paginierungsgrenze des Suchergebnisses wurde auf 100 Seiten erhöht.
-* Die `AssetDownloadServlet` OSGi-Komponente wurde in AEM-Veröffentlichungsinstanzen standardmäßig deaktiviert. For more information, see [Download assets from AEM](/help/assets/download-assets-from-aem.md).
+* Die `AssetDownloadServlet` OSGi-Komponente wurde in AEM Instanzen im Veröffentlichungsmodus standardmäßig deaktiviert. For more information, see [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 * Multi-Site-Manager bietet jetzt Unterstützung für Assets. For more information, see [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
 
 **Assets**
@@ -545,19 +545,19 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 * Die markierte Sammlung kann nicht eingegeben werden, wenn nach Auswahl der Sammlung die Eingabetaste gedrückt wird. NPR-29723: Hotfix für CQ-4261607
 * Cross-Site Scripting (XSS) Angriff durch das eingeschränkte Warnfenster. NPR-29671: Hotfix für CQ-4270133
 * Das Hinzufügen von Beziehungen zu Assets schlägt bei Benutzern ohne Löschberechtigung fehl. NPR-29640: Hotfix für CQ-4269196
-* Wenn der Benutzer nach dem Hinzufügen des Asset-Titels zur Eigenschaftsseite versucht, die Seite zu schließen, öffnet AEM die Eigenschaftsseite erneut. NPR-29628: Hotfix für CQ-4264929
+* Wenn der Benutzer versucht, die Seite nach dem Hinzufügen des Asset-Titels auf der Eigenschaftenseite zu schließen, wird AEM die Eigenschaftsseite erneut geöffnet. NPR-29628: Hotfix für CQ-4264929
 * Das Erstellen einer großen Anzahl von Beziehungen zu einem Asset führt zu einem Fehler. NPR-28779: Hotfix für CQ-4250708
 * Die Asset-Erfassung erfolgt im Scene7 Connect-Ausführungsmodus langsam. NPR-28658: Hotfix für CQ-4263007
 * Ein Fehler Nicht gefangen TypeError: Die Eigenschaft &#39;split&#39; von undefined kann nicht gelesen werden, wenn versucht wird, die Suchergebnisse Ansicht. NPR-28803: Hotfix für CQ-4248371
-* Die Replizierung von AEM zu Brand Portal ist über lange Zeit blockiert. NPR-28914: Hotfix für CQ-4254932
-* Das Verschieben von Assets in DAM führt nicht zu einem ähnlichen Wechsel in Scene7. NPR-28957: Hotfix für CQ-4264974
+* Die Replizierung von AEM zum Markenportal ist über lange Zeit blockiert. NPR-28914: Hotfix für CQ-4254932
+* Das Verschieben von Assets in DAM führt unter Scene7 nicht zu einem ähnlichen Schritt. NPR-28957: Hotfix für CQ-4264974
 * Metadaten-Aktualisierungen werden nicht an IPS weitergeleitet, wenn das Metadatenfeld in AEM aktualisiert wird. NPR-28961: Hotfix für CQ-4255393
 * VersioningTimelineEventProvider sollte die Stammversion zusammen mit dem Versionskommentar bereitstellen. Hotfix für GRANITE-26063
 * Die Eingabe von Daten führt zur Codeausführung auf Serverseite. Hotfix für CQ-4270246
 * Multi-Site-Manager bietet jetzt Unterstützung für Assets. Hotfix für CQ-4271453, CQ-4268621, CQ-4257491
 * In der AEM-Oberfläche sollte ein zusätzlicher Eintrag für die aktuelle Version des Assets im Timeline-Verlauf angezeigt werden, der den neuesten Eincheckkommentar von Adobe Asset Link enthält. Hotfix für CQ-4262864
 * Das Beispielvideo wird beim Erstellen oder Bearbeiten eines MixedMediaSet nicht geladen. Hotfix für CQ-4244889
-* Wenn Sie die Berechtigungen zum Löschen von Inhalten auf der AEM-Seite deaktivieren, kann der Benutzer keine Inhalte im Markenportal veröffentlichen. Hotfix für CQ-4270426
+* Wenn Sie die Berechtigungen zum Löschen von Inhalten auf der AEM deaktivieren, kann der Benutzer keine Inhalte im Markenportal veröffentlichen. Hotfix für CQ-4270426
 * Abfragen begrenzen Probleme mit Asset-Berichten nach einem Upgrade auf AEM 6.4.3. NPR-28588: Hotfix für CQ-4262022, CQ-4260697
 * Die Downloadfunktion nutzt AEM Assets über das assetdownload-Servlet, sodass anonyme Benutzer alle Assets herunterladen können. NPR-27315, Hotfix für CQ-4254732
 
@@ -602,13 +602,13 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 
 **Social - Berichte**
 
-* AEM-Community-Berichte werden nicht in der AEM-Autoreninstanz angezeigt. Hotfix für CQ-4266294
+* AEM Community-Berichte werden AEM Autoreninstanz nicht angezeigt. Hotfix für CQ-4266294
 
 **Plattform**
 
 * Site-übergreifende Skripterstellung (XSS) im Paketmanager beim Installieren eines Pakets. NPR-29734, NPR-29713, NPR-29630: Hotfix für GRANITE-26161, GRANITE-
-* Mehrere gespeicherte und reflektierte Cross-Site-Scripting (XSS) in CRXDE Lite. NPR-29634: Hotfix für GRANITE-26049
-* Die Anmeldungsfunktion für Package Share verwendet die GET-Anforderung und nicht die POST-Anforderung, wodurch das Kennwort unter der Registerkarte &quot;Netzwerk&quot;angezeigt wird. NPR-29631: Hotfix für GRANITE-26048
+* Mehrere gespeicherte und reflektierte Cross-Site-Scripting (XSS) in der CRXDE Lite. NPR-29634: Hotfix für GRANITE-26049
+* Die Anmeldungsfunktion für Package Share verwendet die Anforderung der GET und nicht die Anforderung der POST, wodurch das Kennwort auf der Registerkarte &quot;Netzwerk&quot;angezeigt wird. NPR-29631: Hotfix für GRANITE-26048
 
 **Felix**
 
@@ -635,11 +635,11 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 * Die Paginierungsgrenze des Suchergebnisses wurde für die Ansicht der Karte auf 100 Seiten und für die Ansicht der Liste auf 200 Seiten erhöht. NPR-29332: Hotfix für GRANITE-24644
 * Aufgrund des verzögerten Ladens von Tags wird auf der Sammlungsseite nichts angezeigt. NPR-29267: Hotfix für GRANITE-24902
 * Wenn Sie die Paginierungsgrenze auf 100 statt auf 40 ändern, wird eine zusätzliche verzögerte Ladezeit ohne Paginierungsanforderung ausgelöst. NPR-29246: Hotfix für GRANITE-25027
-* Das AEM-Feld für das Granite-Kennwort wird nach der Verschlüsselung nicht ausgefüllt. NPR-29245: Hotfix für GRANITE-24908
+* AEM Kennwortfeld für Granite wird nach der Verschlüsselung nicht ausgefüllt. NPR-29245: Hotfix für GRANITE-24908
 
 **Integration**
 
-* Beim Versuch, die AEM-Startkonfiguration zu bearbeiten und zu speichern, wird eine Ausnahmemeldung angezeigt. NPR-29086: Hotfix für CQ-4266153
+* Beim Versuch, die AEM Startkonfiguration zu bearbeiten und zu speichern, wird eine Ausnahmemeldung angezeigt. NPR-29086: Hotfix für CQ-4266153
 * Anmeldeversuche mit den BrightEdge-Anmeldeinformationen schlagen mit einem Verbindungsfehler fehl.  NPR-29167: Hotfix für CQ-4265872
 * Das Kontrollkästchen &quot;Vererbt von&quot;, das auf der Stammebene in Cloud Service Configs angezeigt wird, sollte entfernt werden. NPR-27856: Hotfix für CQ-4259676
 
@@ -695,7 +695,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.5.0 Forms gehören:
 * SOAP Webservice-Anforderung ist innerhalb von AEM Forms fehlerhaft. NPR-29013: Hotfix für CQ-4265443
 * Beim Testen des SOAP-Dienstes wird keine Fehlermeldung angezeigt, wenn ein falscher Datumswert vorliegt. Hotfix für CQ-4265445
 
-**Formulare - Interaktive Kommunikation und Formulare - Correspondence Management**
+**Forms - Interaktive Kommunikation und Forms - Correspondence Management**
 
 * Die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;(CCR-Benutzeroberfläche) kann eine Gleitkommazahl nicht verarbeiten.  NPR-29210: Hotfix für CQ-4254201
 * Die auf einer Variablen eingestellte QuickInfo ist in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;(CCR-Benutzeroberfläche) nicht sichtbar. NPR-29739: Hotfix für CQ-4250533
@@ -711,7 +711,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.5.0 Forms gehören:
 
 * Die Webdienstkomponente in AEM Forms Workbench kann keinen Webdienst aufrufen, der eine bidirektionale SSL-Authentifizierung erfordert. NPR-29485: Hotfix für CQ-4246794
 * AEM Forms JEE Configuration Manager funktioniert nicht mit mehreren NIC-Karten. NPR-29236: Hotfix für CQ-4268598
-* AEM-Startfehler von GemFire: java.lang.IllegalStateException: Es kann nur eine Verbindung mit AdminDistributedSystem hergestellt werden. NPR-29524: Hotfix für CQ-4266295
+* AEM Startfehler von GemFire: java.lang.IllegalStateException: Es kann nur eine Verbindung mit AdminDistributedSystem hergestellt werden. NPR-29524: Hotfix für CQ-4266295
 * NoClassDefFoundError, da die JAR-Version nicht übereinstimmt. NPR-28834: Hotfix für NPR-28834
 
 **Forms - Document Services**
@@ -751,7 +751,7 @@ Liste der in AEM 6.4.5.0 enthaltenen Inhaltspakete
 
 AEM 6.4.4.0 is an important update that includes performance, stability, security and key customer fixes and enhancements released since the general availability of AEM 6.4 in **April 2018.**
 
-Es ist auch kumulativ, was bedeutet, dass 6.4.4.0 alle AEM 6.4 Service Packs vor der Veröffentlichung enthält.
+Es ist auch kumulativ, was bedeutet, dass 6.4.4.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 
@@ -771,19 +771,19 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 
 * Migration der AKP- und Bestandsintegration zu AEM 6.4.4.0 NPR-27632
 * Wenn Sie später einen leeren Asset-Ordner mit Unterordnern veröffentlichen, werden die Unterordner ausgeblendet. NPR-27558: Hotfix für CQ-4254701
-* Die Hinzufügung der Eigenschaft &quot;Einzelner nicht namensbezogener String\[\]&quot;führt zu einer unvollständigen XMP-Wiederaufnahme der Schreibvorgänge. NPR-26805: Hotfix für CQ-4254142
+* Die Hinzufügung der Eigenschaft &quot;Einzelne nicht namensgetrennte Zeichenfolge\[\]&quot;führt zu einer unvollständigen XMP. NPR-26805: Hotfix für CQ-4254142
 * Nach dem Rastern der PDF-Eingabedatei fehlen in der Ausgabe Bilder. NPR-27929: Hotfix für CTG-4150481
 * Der Assistent zum Verschieben von Assets zeigt eine falsche Anzahl der verweisenden Seiten für veröffentlichte Seiten an. NPR-27833: Hotfix für CQ-4258014
 * AssetPicker sucht nur das erste Tag, um das Ergebnis beim Filtern mit Tags zu filtern. NPR-27778: Hotfix für CQ-4257705
-* Der AEM OOTB PDF-Handler bleibt bei der Verarbeitung von PDF-Dateien mit Fremdzeichen hängen. NPR-28778: Hotfix für CQ-4254234
-* Wenn eine CSV-Datei einen Wert hat, der durch Komma in einer einzelnen Spalte getrennt ist, wird das Komma im AEM CSV-Editor nicht als separate Spalte behandelt. NPR-28801: Hotfix für CQ-4261694
+* AEM OOTB PDF Handler bleibt bei der Verarbeitung von PDF mit Fremdzeichen hängen. NPR-28778: Hotfix für CQ-4254234
+* Wenn eine CSV-Datei einen Wert hat, der durch Komma in einer einzelnen Spalte getrennt ist, AEM CSV-Editor nicht das Komma umgeht und es als separate Spalte behandelt. NPR-28801: Hotfix für CQ-4261694
 * Problem mit dem Metadaten-Schema-Editor beim Auswählen von Daten mithilfe des Pfadbrowsers. NPR-28674: Hotfix für CQ-4263005
 * Zu viele Assets werden in den Smart Content Service verarbeitet, was zu einer enormen Zeitspanne für den Abschluss des regelmäßigen Tagging-Prozesses führt. NPR-28640: Hotfix für CQ-4262661, CQ-4262644, CQ-4263234
 * Desktop-Aktionen funktionieren nicht für Omniture-Suchergebnisse von `aem/start.html` Seite. NPR-27242: Hotfix für CQ-4248176
 * Die Assets-API lässt das Hochladen von Dateien mit einem Dateiformat von mehr als 2 GB nicht zu und führt zu einem Fehler beim Hochladen. NPR-27629: Hotfix für Granite-23590
 * Beim ersten Versuch werden Metadaten nicht im heruntergeladenen Asset gespeichert, falls auf der Instanz Dynamic Media aktiviert sind. NPR-28233: Hotfix für CQ-4260759
-* Der Service-Auflöser wird in der SiteCatalyst-Konfiguration nicht geschlossen. NPR-28015: Hotfix für CQ-4259397
-* Das Verschieben von Assets in DAM führt nicht zu einem ähnlichen Schritt in Scene7 (p2p-Konfiguration). NPR-28313: Hotfix für CQ-4261091
+* Der Dienst-Auflöser wird in der SiteCatalyst-Konfiguration nicht geschlossen. NPR-28015: Hotfix für CQ-4259397
+* Das Verschieben von Assets in DAM führt unter Scene7 nicht zu einem ähnlichen Schritt (p2p-Konfiguration). NPR-28313: Hotfix für CQ-4261091
 
 **Sites**
 
@@ -812,10 +812,10 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 * Wenn die Werte für die Anzahl der Felder leer sind, führt das Klicken auf Speichern zu einer unendlichen Ladeaufforderung, ohne dass die Daten tatsächlich ausgefüllt werden.  NPR-28400, NPR-28393: Hotfix für CQ-4244058, CQ-4244349
 * Mit der Berechtigung &quot;Nur lesen&quot;können Benutzer/Gruppen keine XF auswählen und haben keine Option zur Ansicht der XF- und der zugehörigen Seiteneigenschaften. NPR-28341: Hotfix für CQ-4260412
 * Die JSON-Daten, die von der Zielgruppe empfangen werden, weisen eine Reihe von Escape-Zeichen auf, wodurch die Anwendungsseite umgebrochen wird. NPR-28318: Hotfix für CQ-4252043
-* Nach der Installation von AEM 6.4.3 können keine Komponenten bearbeitet werden. NPR-28125: Hotfix für CQ-4261216
+* Komponenten können nach der Installation von AEM 6.4.3 nicht bearbeitet werden. NPR-28125: Hotfix für CQ-4261216
 * Das Löschen aller Tags für ein Tag-Feld wird für ein strukturiertes Inhaltsfragment nicht beibehalten. NPR-28133: Hotfix für CQ-4247241
 * Beim Bearbeiten einer Inhaltsfragment-Eigenschaft &quot;jcr:lastmodifiedby&quot;und &quot;jcr:lastchanged&quot;werden die Werte aktualisiert, ohne dass der Benutzer Änderungen vornimmt. NPR-27847: Hotfix für CQ-4257138
-* Die Versionierung für Inhaltsfragmente vergleichen verschiedene Verbesserungen für AEM 6.4. NPR-27764
+* Die Versionierung für Inhaltsfragmente bietet einen Vergleich der Verbesserungen für AEM 6.4. NPR-27764
 * Wenn für /content/experience-fragments keine cq:allowedTemplates definiert sind und allowedPaths für die Experience Fragment-Vorlage verwendet werden, wird ein Fehler ausgegeben, wenn das Experience Fragment verschoben/kopiert wird. NPR-27487: Hotfix für CQ-4257489
 * Schaltfläche &quot;Erstellen&quot;wird beim Aktualisieren für den neuen Benutzer angezeigt. NPR-27335: Hotfix für CQ-4255360
 * Beim Versuch, eine veröffentlichte Seite zu verschieben, ist die Zählung &quot;Verweisende Seiten&quot;auf der ersten Seite des Assistenten &quot;Seite verschieben&quot;falsch. NPR-28111: Hotfix für CQ-4259663
@@ -904,7 +904,7 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 
 * Die im HTML Client Library Manager integrierte Funktion &quot;Dateisystem Output Cache&quot;bricht die Funktion &quot;debugClientLibs&quot;für kompilierte Skripte wie LESS-Dateien. NPR-27249: Hotfix für Granite-23313
 * Die Anzahl der Assets, die angezeigt werden, wenn der Debug-Modus aktiviert ist, ist immer 1 und es werden viele JS-Fehler in der Konsole des Browsers ausgegeben.  NPR-27575: Hotfix für GRANITE-23750
-* Beim Speichern und Schließen der Seiteneigenschaften kehrt mit Tomcat nicht zur richtigen Seite in AEM WAR zurück. NPR-27566: Hotfix für GRANITE-23671
+* Das Speichern und Schließen auf den Seiteneigenschaften kehrt nicht zur richtigen Seite in AEM WAR mit Tomcat zurück. NPR-27566: Hotfix für GRANITE-23671
 
 **Integration**
 
@@ -957,7 +957,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.4.0 Forms gehören:
 * Es kann kein Wert zwischen den Feldern der verzögert geladenen Fragmente eines adaptiven Formulars festgelegt werden. NPR-28320: Hotfix für CQ-4262345
 * Adaptives Formular verwendet keinen Rich-Text-Editor, lädt aber seine Bibliotheken.  NPR-28001: Hotfix für CQ-4259703, CQ-4259193
 * Scribble-Signatur funktioniert nicht für AEM Forms-Apps mit Apple iOS 12.1. NPR-28497: Hotfix für CQ-4261765
-* Übermittlungsaktion unter Verwendung von &quot;Forms Workflow&quot;Classic-Authoring-Problemen in 6.4. Hotfix für CQ-4252740
+* Übermittlungsaktion unter Verwendung von &quot;Forms Workflow&quot;-Classic-Authoring-Problemen in 6.4. Hotfix für CQ-4252740
 * Entfernen von Blockierungen und tmp-Datenspeicherung. NPR-28806: Hotfix für CQ-4264441
 
 **Forms – Correspondence Management**
@@ -965,15 +965,15 @@ Zu den wichtigsten Merkmalen von AEM 6.4.4.0 Forms gehören:
 * Die Benutzeroberfläche des Agenten behält die Originalgröße des Bildes nicht bei. NPR-28800: Hotfix für CQ-4259767
 * CCR/Agent-Benutzeroberfläche: Die Beschriftungen der Datumsfelder wurden auf der Registerkarte &quot;Daten&quot;verschoben. Hotfix für CQ-4255499
 
-**Forms - Transaction Berichte**
+**Forms - Transaktions-Berichte**
 
 * Es wurde Unterstützung hinzugefügt, um die Verwendung digitaler Signaturen oder die Zertifizierung eines Dokuments als abrechnungsfähige Transaktionen zu zählen. NPR-28495: Hotfix für CQ-4260236
 * Digitale Signatur und Zertifizierung zur abrechnungsfähigen API hinzugefügt. Hotfix für CQ-4260236
 
-**Formularverwaltung**
+**Forms Management**
 
-Zusätzliche Unterstützung zum Ersetzen der Verwendung der Clientbibliothek &quot;Handlebars&quot;durch einen Unterstrich im Assistenten zum Überprüfen des Beginns von Forms Manager und zum Verschieben des Asset-Assistenten. NPR-27643: Hotfix für CQ-4246536.
-Ein Bundle bleibt nach der Installation des Forms Management-Pakets in Release/640-Zweig im installierten Zustand. Hotfix für CQ-4265410Formulare, die mit Anlagen in diesen Formularen gesendet werden, werden nicht im Workflow angezeigt, wenn die Übermittlungsaktion &quot;AEM Forms-Workflow aufrufen&quot;und die Portalübermittlung aktiviert ist. Hotfix für CQ-4263110
+Zusätzliche Unterstützung zum Ersetzen der Verwendung der Clientbibliothek mit Handlebars durch Unterstriche im Forms Manager-Assistenten zum Überprüfen des Beginns und zum Verschieben des Asset-Assistenten. NPR-27643: Hotfix für CQ-4246536.
+Nach der Installation des Forms Management-Pakets in Release/640-Zweig bleibt ein Paket im installierten Zustand. Hotfix für CQ-4265410Forms, das mit Anlagen in den Anhängen gesendet wurde, wird nicht im Workflow angezeigt, wenn die Übermittlungsaktion &quot;AEM Forms-Workflow aufrufen&quot;und &quot;Portal-Übermittlung aktivieren&quot;markiert ist. Hotfix für CQ-4263110
 
 **Forms - Backend-Integration**
 
@@ -997,17 +997,17 @@ Ein Bundle bleibt nach der Installation des Forms Management-Pakets in Release/6
 
 **Forms – Workflow**
 
-* HTML5-Formulare mit Standardversand in an.lca funktionieren nicht auf JBoss 7. NPR-28675: Hotfix für CQ-4243928
+* HTML5 Forms mit dem standardmäßigen Sendeprozess in an.lca funktioniert nicht mit JBoss 7. NPR-28675: Hotfix für CQ-4243928
 * PDF forms können nicht in HTML Workspace gesendet werden. NPR-28058: Hotfix für CQ-4260373
-* Kundendaten werden mithilfe des Arbeitsablaufs &quot;FDM-Dienst Forms&quot;in Informationsprotokollen gedruckt. Hotfix für CQ-4260385
+* Kundendaten werden mit Invoke FDM Service Forms Workflow in Infoprotokollen gedruckt. Hotfix für CQ-4260385
 
 **Enthaltene Feature Packs**
 
 **Sites**
 
-* Die Versionierung für Inhaltsfragmente vergleichen die Verbesserungen für Unterschiede in AEM 6.4.  NPR-26760: FP für CQ-4248839
-* Verbesserungen der Variationsunterschiede für Inhaltsfragmente für AEM 6.4.  NPR-27866: FP für CQ-4248839
-* Funktion in der OSGI-Konfiguration **AEM-Workflow-Rücknahme aktiviert - Funktionskennzeichnung**. Die Aktion zum Entfernen sollte die Workflow-Instanz beenden, nachdem das Flag festgelegt wurde. NPR-26451: Hotfix für CQ-4259090
+* Die Versionierung für Inhaltsfragmente vergleichen die Verbesserungen für AEM 6.4.  NPR-26760: FP für CQ-4248839
+* Unterschiede bei Inhaltsfragmenten für AEM 6.4.  NPR-27866: FP für CQ-4248839
+* Funktion in OSGI-Konfiguration aktiviert **AEM Funktionskennzeichnung zurückziehen**. Die Aktion zum Entfernen sollte die Workflow-Instanz beenden, nachdem das Flag festgelegt wurde. NPR-26451: Hotfix für CQ-4259090
 
 **Plattform**
 
@@ -1027,21 +1027,21 @@ Liste der in AEM 6.4.4.0 enthaltenen Inhaltspakete
 
 #### AEM 6.4.3.0 {#experience-manager-6430}
 
-AEM 6.4.3.0 ist ein wichtiges Update, das Verbesserungen der Leistung, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Verbesserungen enthält, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im April 2018 veröffentlicht wurden.
+AEM 6.4.3.0 ist ein wichtiges Update, das Funktionen für Leistung, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen umfasst, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im April 2018 veröffentlicht wurden.
 
-Es ist auch kumulativ, d. h., dass 6.4.3.0 alle AEM 6.4 Service Packs vor der Veröffentlichung enthält.
+Es ist auch kumulativ, was bedeutet, dass 6.4.3.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.9 aktualisiert.
 * Unterstützung für die Eigenschaft allowedPaths in Vorlagen für adaptive Formulare hinzugefügt.
-* Erweiterte Bereichsbasierte Suche nach Assets in AEM
+* Erweiterte panel-basierte Suche nach Assets in AEM
 * Site-übergreifende Skripterstellungskorrekturen (XSS) auf der Anmeldeseite.
 * Verbesserte UI-Instrumentierung.
 * Verbesserte FormData-Verarbeitung.
 * Verbesserte Handhabung der Elementbenennung in einem Multifield.
 * Verbesserte Handhabung von Platzhalterelementen (Ansicht der Karten und der Liste) während der Auswahl.
-* Adobe IMS-Authentifizierung und Admin Console-Support für Managed Services hinzugefügt.
+* Adobe IMS-Authentifizierung und Admin Console-Unterstützung für Managed Services hinzugefügt.
 
 **Assets**
 
@@ -1075,7 +1075,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Benutzer können die Berechtigungen für geschlossene Benutzergruppen in den Seiteneigenschaften nicht bearbeiten. NPR-27138: Hotfix für CQ-4256089Tags können nicht über Tagging bearbeitet werden. NPR-26957: Hotfix für CQ-4254858
 * Beim Verschieben eines Tags, auf das von einem strukturierten Inhaltsfragmentmodell verwiesen wird, werden die vorhandenen Verweise auf das Tag in einem Inhaltsfragment nicht aktualisiert. Dies geschieht im Bearbeitungsbildschirm des Inhaltsfragmentmodells. NPR-26776: Hotfix für CQ-4251805
 * Wenn Sie einen Start mit mehreren Seiten erstellen und bewerben, werden für jede Seite mehrere Versionen erstellt. NPR-26917: Hotfix für CQ-4254663
-* AEM siteadmin verarbeitet keine Pfade, die in die Adressleiste des Browsers eingegeben wurden. NPR-26780: Hotfix für CQ-4254097
+* AEM siteadmin behandelt keine in die Adressleiste des Browsers eingegebenen Pfade. NPR-26780: Hotfix für CQ-4254097
 * Wenn eine Seite ohne Umbenennung an einen neuen Speicherort verschoben wird, geht der Versionsverlauf der Seite verloren. NPR-26706: Hotfix für CQ-4254025
 * URLs im Erlebnisfragment-Admin-Editor lassen keine Überlagerungen zu. NPR-26319: Hotfix für CQ-4252156
 * Wenn eine Seite mit einer Vorlage erstellt und veröffentlicht wird, die ein leeres Erlebnisfragment enthält, schlägt das Öffnen der Seite fehl, und es tritt ein DefaultSlingScript-Fehler auf. NPR-26305: Hotfix für CQ-4252460
@@ -1085,12 +1085,12 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 **DAM - Markenportal**
 
 * Tag-Vorhersagen werden nicht veröffentlicht, wenn das Metadaten-Schema-Formular im Markenportal veröffentlicht wird. Hotfix für CQ-4256218
-* Wenn ein Ordner der dritten Ebene von AEM in Brand Portal veröffentlicht wird, ohne die übergeordneten Ordner zu veröffentlichen, ändert sich der Ordnername. Hotfix für CQ-4255423
+* Wenn ein Ordner der dritten Ebene von AEM in das Markenportal veröffentlicht wird, ohne die übergeordneten Ordner zu veröffentlichen, ändert sich der Ordnername. Hotfix für CQ-4255423
 * Die Pfadbrowservorhersage wird wie erwartet von AEM Assets zum Markenportal veröffentlicht. Der veröffentlichte Pfad bei BP bleibt jedoch /content/dam, der aktualisiert werden muss. Hotfix für CQ-4256240
 
 **DAM - Creative Cloud**
 
-* Das Symbol &quot;Adobe Assets durchsuchen&quot;fehlt in der AEM-Hauptnavigation. Hotfix für CQ-4254343
+* Das Symbol &quot;Assets durchsuchen&quot;fehlt in der AEM Hauptnavigation. Hotfix für CQ-4254343
 
 **DAM - DM Client**
 
@@ -1137,7 +1137,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Hinzugefügte Gruppen sind in der Dropdown-Liste &quot;Community-Manager&quot;, &quot;Community-Moderatoren&quot;und &quot;Berechtigte Mitglieder&quot;beim Bearbeiten einer veröffentlichten Site nicht sichtbar. NPR-27190: Hotfix für CQ-4258574
 * Nur 10 Gruppen werden auf der Seite &quot;Ressourcen für die Aktivierung&quot;aufgelistet, selbst wenn die Paginierung für die Gruppenaufstellung aktiviert ist. NPR-26934: Hotfix für CQ-4252985
 * Die Option zum Aktivieren/Deaktivieren der Suche für die Komponente Geplanter Beitrag im Protokoll ist in ConfigMgr verfügbar und der SearchScheduledPosts-Auftrag wurde optimiert. NPR-26923: Hotfix für CQ-4250463
-* Die Suche nach Suchbegriffen in der Adresse funktioniert nicht auf der Seite der Kalenderkomponenten, wenn AEM-Community für die Verwendung mit DSRP eingerichtet ist. NPR-26737: Hotfix für CQ-4258493
+* Die Suche nach Suchbegriffen in der Adresse funktioniert nicht auf der Kalenderkomponentenseite, wenn AEM Community so eingestellt ist, dass sie mit DSRP funktioniert. NPR-26737: Hotfix für CQ-4258493
 * Direkter Link zum Kommentar anstelle des Hauptbeitrags in den Details eines Kommentars für Moderations-UI- und Aktivierungsressourcen implementiert. NPR-26704: Hotfix für CQ-4251381
 * Inhalte, die über eine Mehrfachauswahl in der Moderationskonsole moderiert wurden, werden im Aktivität-Stream nicht angezeigt. NPR-26695: Hotfix für CQ-4253244
 * Die Suche mit Vorname und Nachname im Feld Communities Messaging gibt nicht das erwartete Ergebnis zurück. NPR-26385: Hotfix für CQ-4248673
@@ -1146,7 +1146,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Sammlungskomponenten (Foren, Blogs, Kalender, Ideation, QnA) verfügen jetzt über eine Eigenschaft im Komponentendialogfeld, um &quot;UGC im Bearbeitungsmodus des Autors blockieren&quot;zu aktivieren/deaktivieren, um das Laden von UGC im WCM-Bearbeitungsmodus zu erlauben/zu verweigern. NPR-26978: Hotfix für CQ-4248161
 * Tags Die Suche funktioniert nicht bei lokalisierten Suchbegriffen. NPR-26171: Hotfix für CQ-4249926
 * Über die Schaltfläche &quot;Zurück&quot;wird eine Seite in der Forumssuche übersprungen. NPR-26950: Hotfix für CQ-4254804
-* Die AEM-Instanz, die auf dem standardmäßigen HTTP-Anschluss (80) ausgeführt wird, kann nicht die Datei &quot;imsmanifest.xml&quot;erreichen. NPR-27173: Hotfix für CQ-4252211
+* AEM Instanz, die auf dem standardmäßigen HTTP-Anschluss (80) ausgeführt wird, kann nicht die Datei imsmanifest.xml erreichen. NPR-27173: Hotfix für CQ-4252211
 * Das Entfernen der Markierung als Antwort für QnA funktioniert nicht, wenn AEM Communities mit DSRP eingestellt sind. NPR-26247: Hotfix für CQ-4252232
 * Adobe Datenspeicherung kann nicht aufgerufen werden: 414 error - Lange GET-URI, die beobachtet wird, wenn Benutzer /content/community-components/en/search.html suchen und das Autorenfeld als einen der Filter für diesen Suchbegriff auswählen. NPR-26643: Hotfix für CQ-4251303
 * Der Dropdown-Wert für DataCenterURL in der ASRP-Konfiguration wird von Dallas in Virginia geändert (für VA6). NPR-26936: Hotfix für CQ-4254434
@@ -1154,7 +1154,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Die für &quot;Anzahl der Ergebnisse&quot;in der Forumssuche angezeigte Zahl verwendet ein falsches Trennzeichen für englische und deutsche Gebietsschemata. NPR-27050: Hotfix für CQ-4248939
 * Ungelesene Benachrichtigungen steigen nicht über 21 hinaus. NPR-26946, NPR-27480: Hotfix für CQ-4252829, CQ-4256939
 * Durch die Paginierung im Kommentarbereich einer beliebigen Komponente wird der Seiteninhalt beim Erreichen einer Seite durch Paginierung angezeigt. NPR-27032: Hotfix für CQ-4251228
-* Der Community-Site-Ordner kann nicht auf einem Miniaturbild angeklickt werden, wenn er von der Admin-Konsole auf der AEM Author-Instanz angezeigt wird. NPR-26986: Hotfix für CQ-4254036
+* Der Community-Site-Ordner kann nicht auf dem Miniaturbild angeklickt werden, wenn er von der Admin-Konsole auf der AEM Author-Instanz angezeigt wird. NPR-26986: Hotfix für CQ-4254036
 * Mit der Option &quot;Alle lesen markieren&quot;werden nur die ersten 10 Benachrichtigungen als gelesen markiert und andere bleiben bis zur Aktualisierung der Seite ungelesen. NPR-27037: Hotfix für CQ-4254058
 * Aus Ideationsgründen wird keine Paginierung ausgelöst, und die Liste von Themen (oder Antworten) wird länger, es sei denn, sie werden neu geladen. NPR-26193: Hotfix für CQ-4252104
 * Die Aktivitäten anderer Benutzer wurden gelöscht und beim Anmelden mit Moderatorberechtigungen und beim Hinzufügen von &quot;#social-Aktivitäten&quot;oder &quot;#tabs-2&quot;am Ende der Profil-URL des Moderators sichtbar. Hotfix für CQ-4251355
@@ -1182,7 +1182,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 
 **Integration**
 
-* Änderungen in AEM-Erlebnissen, die über die Targeting-Engine erstellt wurden, werden nicht veröffentlicht. NPR-24869: Hotfix für CQ-4247832
+* Änderungen in AEM Erlebnissen, die über die Targeting-Engine erstellt wurden, werden nicht veröffentlicht. NPR-24869: Hotfix für CQ-4247832
 * Es können nicht mehrere Aktivitäten und Erlebnisse erstellt werden, wenn deren Namen japanische Zeichen enthalten. NPR-27271: Hotfix für CQ-4256857
 * Aktualisierung des Start-API-Endpunkts. NPR-26790: Hotfix für CQ-4254380
 * (Personalisierung) BrandsRetriever führt den gesamten Baum. NPR-27060: Hotfix für CQ-4255790
@@ -1200,7 +1200,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 Zu den wichtigsten Merkmalen von AEM 6.4.3.0 Forms gehören:
 
 * Unterstützung für ein Array/eine Liste von Objekten mit der dynamischen Entitätsersetzung aktiviert.
-* FIPS-Kompatibilität für den Reader Extended-Arbeitsablauf in Digital Signature, Reader Extensions, CryptoProvider und TrustStore aktiviert.
+* FIPS-Kompatibilität für Reader Extended-Arbeitsablauf in Digital Signature, Reader Extensions, CryptoProvider und TrustStore aktiviert.
 * Unterstützung für PDF/UA zu XFA-Formularen hinzugefügt, die mit Designer oder dem Output-Dienst generiert wurden.
 * Unterstützung für die Eigenschaft allowedPaths in Vorlagen für adaptive Formulare aktiviert.
 * JBoss 7.1.4-Unterstützung für AEM Forms 6.4 hinzugefügt.
@@ -1237,7 +1237,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.3.0 Forms gehören:
 
 **Forms – Workflow**
 
-* Wenn beim Ausführen des Arbeitsablaufs für Formulare Klammern im Namen der Aufgabe enthalten sind, wird eine Ausnahme in den Protokollen angezeigt. Hotfix für CQ-4256626
+* Wenn beim Ausführen des Forms-Workflows Klammern im Namen der Aufgabe enthalten sind, wird eine Ausnahme in den Protokollen angezeigt. Hotfix für CQ-4256626
 * Suchvorlage kann nicht in AEM Forms Workspace geöffnet werden. Hotfix für CQ-4255651
 
 **Mobile Forms**
@@ -1250,7 +1250,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.3.0 Forms gehören:
 **PDF Generator-Dienst**
 
 * Die Einstellungen für &quot;Standards Berichte&quot;und &quot;Kompatibilität&quot;für PDF Generator können nicht angezeigt werden. NPR-26715: Hotfix für CQ-4253384
-* Die Binärdatei &quot;convertpdf&quot;fehlt im Add-On-Paket für AIX Forms, was beim Aufrufen des PDFA-Dienstes zu Fehlern führt. Hotfix für CQ-4257873
+* Die Binärdatei &quot;convertpdf&quot;fehlt im AIX Forms Add-On-Paket, was beim Aufrufen des PDFA-Dienstes zu Fehlern führt. Hotfix für CQ-4257873
 * Der Papiererfassungsdienst stürzt bei der Verarbeitung von TIFF-Dateien ab. NPR-28079: Hotfix für CQ-4240649
 
 **Document Services**
@@ -1282,16 +1282,16 @@ Liste der in AEM 6.4.3.0 enthaltenen Inhaltspakete
 #### AEM 6.4.2.0 {#experience-manager-6420}
 
 AEM 6.4.2.0 is an important update that includes performance, stability, security and key customer fixes and enhancements released since the general availability of AEM 6.4 in **April 2018.**
-Es ist auch kumulativ, was bedeutet, dass 6.4.2.0 alle AEM 6.4 Service Packs vor der Veröffentlichung enthält.
+Es ist auch kumulativ, was bedeutet, dass 6.4.2.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.7 aktualisiert.
 * Neue Unterstützung für HTML-Vorlagensprache (HTL) Spezification 1.4-Funktionen
 * Unterstützung für MongoDB Enterprise 3.6 hinzugefügt.
-* Der Site-Seiten-Editor bietet Unterstützung für kontextbezogene Bearbeitung und Komposition mit clientseitigen Komponenten, die in React oder Angular in Kombination mit dem <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>erstellt wurden.
+* Der Site-Seiten-Editor bietet Unterstützung für kontextbezogene Bearbeitung und Komposition mit clientseitigen Komponenten, die in React oder Angular in Kombination mit <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>erstellt wurden.
 * Verbesserungen bei Inhaltsfragmenten: Die Funktion zum Kommentieren in Textfeldern wurde hinzugefügt. Außerdem können Versionen nebeneinander verglichen werden.
-* Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, damit die Benutzer Adobe Stock-Assets direkt über die AEM-Benutzeroberfläche suchen, Vorschau, speichern und lizenzieren können. Detailliertere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/stock-assets-feature-video-use.md).
+* Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, damit die Benutzer Adobe Stock-Assets direkt über AEM Benutzeroberfläche suchen, Vorschau, speichern und lizenzieren können. Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Assets unterstützen jetzt das dynamische bedingte Metasystem und die Möglichkeit, ein Metadaten-Schema für Asset-Ordner festzulegen.
 * Es wurde eine Konfiguration in jeder Komponente hinzugefügt, um die Funktion zum Erstellen/Aktualisieren von Ordnerminiaturen zu aktivieren/deaktivieren.
 * Verbesserungen am Bildeditor beim Erstellen von Seiten.
@@ -1310,7 +1310,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 **Assets**
 
 * Die Generierung von Teilassets für die pptx-Datei enthält keine Bilder und Miniaturansichten. NPR-24286: Hotfix für CQ-4217986
-* migrateAllAssets - Hinzufügen Unterstützung für die Stapelverarbeitung und Verbesserung der AEM-Methode, die alte Assets mit UUID ergänzt. NPR-24861: Hotfix für CQ-4242863 und CQ-4247874
+* migrateAllAssets - Hinzufügen Unterstützung für die Stapelverarbeitung und Verbesserung der AEM Methode, die alte Assets mit UUID ergänzt. NPR-24861: Hotfix für CQ-4242863 und CQ-4247874
 * Leistungsproblem bei der Erstellung von Miniaturbildern. NPR-24693: Hotfix für CQ-4246960
 * (Touch-Benutzeroberfläche) Die Komponente &quot;options Predicate&quot;bleibt leer, wenn sie der Seite &quot;Asset Share-Herausgeber&quot;hinzugefügt wird. NPR-24643: Hotfix für CQ-4245295
 * (Workflow) Smart-Tag-Assets werden nicht über die Proxykonfiguration verarbeitet. NPR-25840: Hotfix für CQ-4248202
@@ -1322,7 +1322,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 * (Backport) Barrierefreiheitsverbesserungen: Duplikat-ID: id-Attributwert muss eindeutig sein, Beschriftung: Formularelemente müssen über Beschriftungen und Linknamen verfügen: Links müssen einen erkennbaren Text enthalten. NPR-24252: Hotfix für CQ-4250905, CQ-4250906, CQ-4250907
 * Das Hochladen einer CSV-Datei mit Feldern, die durch &quot;,&quot;getrennt sind, schlägt in europäischen Ländern fehl. NPR-25549: Hotfix für CQ-4249931
 * (Markenportal) Subassets einer mehrseitigen PDF-Datei werden nicht veröffentlicht, wenn ein Asset veröffentlicht wird. NPR-25991: Hotfix für CQ-4245162
-* Veröffentlichen Sie spätere Funktionen für die AEM to Brand Portal-Replikation. NPR-25911: Hotfix für CQ-109139
+* Veröffentlichen Sie spätere Funktionen für die Replizierung von AEM in Brand Portal. NPR-25911: Hotfix für CQ-109139
 * Das Veröffentlichen und Rückgängigmachen der Veröffentlichung der privaten Sammlung durch Benutzer, die keine Administratoren sind, führt zu einem NPE. NPR-25906: Hotfix für CQ-4250594
 * Deaktivieren Sie die Veröffentlichung von Inhaltsfragmenten und Forms-Schemas im Markenportal. NPR-24176, NPR-26004: Hotfix für CQ-4251592, CQ-4252026
 * (Dynamic Media) DM-Viewer wurden auf Version 5.10.1 aktualisiert, wodurch die Suche nach Duplikat auf der Seite &quot;Bildvorgabe&quot;aktiviert wird. Weitere Informationen finden Sie unter Dynamic Media-Viewer aktualisieren (5.10.1). NPR-24403: Hotfix für CQ-4247554
@@ -1333,12 +1333,12 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 
 * Die Abfrage von datasource.jsp auf AEM 6.2 unterscheidet sich von AEM 6.4. NPR-24968: Hotfix für CQ-4244235
 * (Klassische Benutzeroberfläche) Seiten können keine Tags hinzugefügt werden. NPR-25255, NPR-25612: Hotfix für CQ-4249615
-* Sprachspezifikation 1.4 für HTML-Vorlagen - Funktionen, die auf AEM 6.4.2.0 NPR-24585 zurückportiert sind
+* Sprachspezifikation für HTML-Vorlagen 1.4 Funktionen, die auf AEM 6.4.2.0 NPR-24585 zurückportiert sind
 * Falsche Vererbung bei einer lokalen Komponente nach dem Kopieren einer Live Copy-Seite. NPR-25920: Hotfix für CQ-4236737, CQ-4248957
 * Die EIN-/AUS-Zeit wird in crx/de gespeichert, ruft jedoch nicht dasselbe in der UI-Konsole der Seiteneigenschaften ab. NPR-25154: Hotfix für CQ-4243431
 * Stile Systemumbrüche die anfänglichen Eigenschaftenwerte des Dialogfelds. NPR-25648: Hotfix für CQ-4250073
 * Beim Definieren einer Eigenschaft cq:tagName in einem Knoten cq:htmlTag wird der Tag-Name nicht berücksichtigt, wenn die Komponente über JSP eingeschlossen wird. NPR-24154: Hotfix für CQ-4244120
-* Bei verschachtelten parsys-Komponenten wird immer der erste (mit dem am wenigsten verschachtelten Pfad) passende Entwurf aus mehreren verfügbaren Komponenten angewendet. Weitere Informationen finden Sie unter [Entwurfspfadauflösung](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/page-templates-static.html). NPR-24973: Hotfix für CQ-4246276
+* Bei verschachtelten parsys-Komponenten wird immer der erste (mit dem am wenigsten verschachtelten Pfad) passende Entwurf aus mehreren verfügbaren Komponenten angewendet. Weitere Informationen finden Sie unter [Entwurfspfadauflösung](https://docs.adobe.com/content/help/en/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973: Hotfix für CQ-4246276
 * Beim Einfügen von Text in eine RTE-Komponente wird ein Popup-Dialogfeld angezeigt, das jedoch nicht ordnungsgemäß wiedergegeben wird. NPR-24895: Hotfix für CQ-4245901
 * (RTE) Leistungsprobleme mit obligatorischer Feldanzeige. NPR-24894: Hotfix für CQ-4241895
 * (Seitenkomponente) Wenn Sie eine Komponente zu Parsys hinzufügen, wird sie von rechts abgeschnitten und die Rahmenbreite des Geräts wird gelöscht. NPR-25536: Hotfix für CQ-4238224
@@ -1389,7 +1389,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 **Sicherheit**
 
 * SAML meldet sich erneut auf die Abmeldeseite mit Okta IDP an. NPR-25523: Hotfix für GRANITE-22364
-* Die IMS-Authentifizierung über OAK externe IDP OAuth Provider-Konfigurationen deaktiviert den in AEM erstellten Benutzer. NPR-25301: Hotfix für Granite-22363
+* IMS-Authentifizierung über OAK externe IDP OAuth Provider-Konfigurationen deaktiviert den in AEM erstellten Benutzer. NPR-25301: Hotfix für Granite-22363
 
 **MAC - Test- und Target-Integration**
 
@@ -1462,7 +1462,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 
 **Übersetzung**
 
-* Es wurde behoben, dass beim Importieren eines übersetzten Projekts zwei parallele POST-Anforderungen ausgeführt werden, wodurch Fehler verursacht werden. NPR-24889: Hotfix für CQ-4247638
+* Es wurde behoben, dass beim Importieren eines übersetzten Projekts zwei Anforderungen an die gleichzeitige POST gestellt wurden, wodurch ein Fehler auftrat. NPR-24889: Hotfix für CQ-4247638
 * Es wurde behoben, dass beim Erstellen eines Übersetzungsprojekts für mehrere Sprachen alle Seiten für dieselbe Sprache demselben Auftrag hinzugefügt werden. NPR-25091: Hotfix für CQ-4246112
 * Es wurde behoben, dass in einigen Fällen Übersetzungsaufträge nur auf die 40 Seiten der obersten Ebene Liste wurden. NPR-25974: Hotfix für CQ-4248661
 * DataPicker-Komponente (Coral2), die das Jahr nicht ändert. NPR-24466: Hotfix für Granite-21893
@@ -1553,7 +1553,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 * Zusätzliche Funktion für den Benutzer, dieselbe WSDL-Datei für mehrere Dienste zu verwenden.
 * Das nicht unterstützte Zeitstempelmuster wurde aus der Dropdown-Liste &quot;Datumsauswahl&quot;entfernt.
 * Unterstützung für die Ausführung von xfaf und pdf in OSGI hinzugefügt.
-* Unterstützung für die Verwendung der [Funktion](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) für Transaktionsberichte bei lokalen Bereitstellungen hinzugefügt.
+* Unterstützung für die Verwendung der [Funktion](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) für Transaktionsberichte bei lokalen Bereitstellungen hinzugefügt.
 * Es wurde Code hinzugefügt, um die untergeordnete var im Bedingungsregel-Editor nicht anzuzeigen.
 
 **Forms-Add-on-Paket**
@@ -1566,7 +1566,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 
 **Forms – Workflow**
 
-* (HTML Workspace) Wenn ein Benutzer eine Aufgabe beansprucht, wird die Anzahl der Warteschlangen für den betreffenden Benutzer aktualisiert, nicht jedoch für andere Benutzer, es sei denn, die Seite wird aktualisiert. Dieses Problem wurde durch eine neue Eigenschaft behoben. Informationen zum Konfigurieren dieser neuen Eigenschaft für Ihre AEM-Instanz finden Sie in den Konfigurationseinstellungen. NPR-24536: Hotfix für CQ-4233665
+* (HTML Workspace) Wenn ein Benutzer eine Aufgabe beansprucht, wird die Anzahl der Warteschlangen für den betreffenden Benutzer aktualisiert, nicht jedoch für andere Benutzer, es sei denn, die Seite wird aktualisiert. Dieses Problem wurde durch eine neue Eigenschaft behoben. Informationen zum Konfigurieren dieser neuen Eigenschaft für Ihre AEM Instanz finden Sie in den Konfigurationseinstellungen. NPR-24536: Hotfix für CQ-4233665
 * Großes Formular kann nicht in die AEM Forms App auf 6.4 geladen werden. NPR-24463: Hotfix für CQ-4245091
 * Problem in der Mobile Workspace-App, wenn versucht wird, die freigegebene Aufgabe Ansicht. NPR-25177: Hotfix für CQ-4248733
 * Inkonsistentes Überprüfungsverhalten zwischen Web und APK. NPR-25670: Hotfix für CQ-4248178
@@ -1579,7 +1579,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 * Daten werden nicht angezeigt, wenn mehrzeilige Felder in der HTML-Vorschau vorausgefüllt sind. NPR-24549: Hotfix für CQ-4244212
 * Daten gehen verloren, wenn das Skript in einem mehrzeiligen Feld ausgewertet wird. NPR-25333, Hotfix für CQ-4249610
 
-**Formulare - Interaktive Kommunikation und Correspondence Management**
+**Forms - Interaktive Kommunikation und Correspondence Management**
 
 * Die Synchronisierung schlägt auf der IC mit Basic Template und Reference IC Print Template fehl. NPR-24912
 * (CCR) Validatoren funktionieren nicht für Felder/Variablen. Hotfix für CQ-4245047
@@ -1617,10 +1617,10 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 **Adaptive Formulare**
 
 * Übermittlungsaktion als &quot;Mail senden&quot;gibt eine Ausnahme aus, wenn die CC/BC-Felder leer sind. NPR-25019: Hotfix für CQ-4243039
-* Die OOTB-AEM-Formularkomponente kann aufgrund der ineffizienten Abfrage nicht verwendet werden. NPR-25065: Hotfix für CQ-4247256
+* Die OOTB AEM Formularkomponente kann aufgrund der ineffizienten Abfrage nicht verwendet werden. NPR-25065: Hotfix für CQ-4247256
 * Entfernen Sie sling:orderBefore von den Dialogknoten guideImageChoiceComponent. Hotfix für CQ-4245013
 * (Datumsauswahl) Das Bearbeitungsmuster unterstützt nicht zwei Typen von Zeitstempelmustern. Hotfix für CQ-4237982
-* Übermittlungsaktion mit den klassischen Authoring-Problemen des &quot;Forms Workflow&quot;. Hotfix für CQ-4236981
+* Übermittlungsaktion mit Problemen beim Authoring in Forms Workflow Classic. Hotfix für CQ-4236981
 * (Web Kanal) Das IC-Diagramm sollte die Eigenschaft colspan aus dem AF-Diagramm übernehmen. Hotfix für CQ-4252143
 
 **Backend-Integration**
@@ -1636,11 +1636,11 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 **PDFG Service**
 
 * Die Funktion zum Erstellen/Ändern von Sicherheitseinstellungen funktioniert nicht. NPR-24769: Hotfix für CQ-4246927
-* Optimieren Sie PDFs, indem Sie die Einbettung von Schriftarten selektiv aufheben. NPR-23287
+* Optimizen PDF durch selektives Aufheben der Einbettung von Schriftarten über einen einzelnen API-Aufruf. NPR-23287
 
 **Document Services**
 
-* Der Output-Dienst stellt nicht die korrekten Tags für den Barrierefreiheitsleser bereit. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Hotfix für CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
+* Der Output-Dienst stellt nicht die korrekten Tags für den Reader der Ein-/Ausgabehilfe bereit. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Hotfix für CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
 **Document Security**
 
@@ -1656,17 +1656,17 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 
 **Assets**
 
-* Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, sodass Benutzer Adobe Stock-Assets direkt über die AEM-Benutzeroberfläche suchen, Vorschau, speichern und lizenzieren können. Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM-Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html). NPR-15779: Hotfix für CQ-30857
+* Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, damit Benutzer Adobe Stock-Assets direkt über AEM Benutzeroberfläche suchen, Vorschau, speichern und lizenzieren können. Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix für CQ-30857
 * Unterstützung für dynamisches bedingtes Metaschema hinzugefügt. For more information, see [Cascading Metadata](/help/assets/cascading-metadata.md). NPR-25189: Hotfix für CQ-4237413
 * Option &quot;Asset-Download&quot;für Inhaltsfragmente aktiviert. For more information, see [Asset Reports](/help/assets/asset-reports.md). NPR-25186: Hotfix für CQ-4237410
-* Möglichkeit zum Festlegen eines Metadaten-Schemas für Asset-Ordner. Weitere Informationen finden Sie im Schema [zu](/help/assets/folder-metadata-schema.md) Ordnermetadaten und im Beitrag zu den [Konfigurationseinstellungen](#configuration-settings-required-for-npr) für AEM 6.4.2.0. NPR-21268: Hotfix für CQ-4221574
+* Möglichkeit zum Festlegen eines Metadaten-Schemas für Asset-Ordner. Weitere Informationen finden Sie im Schema [zu](/help/assets/folder-metadata-schema.md) Ordnermetadaten und im Beitrag [Konfigurationseinstellungen](#configuration-settings-required-for-npr) AEM 6.4.2.0. NPR-21268: Hotfix für CQ-4221574
 
 **Sites**
 
-* Erlauben Sie die Bearbeitung eines Inhaltsfragments ohne Löschberechtigungen. Weitere Informationen finden Sie unter [Anpassen und Erweitern von Inhaltsfragmenten](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/customizing-content-fragments.html#AssetPermissions). NPR-25793: Hotfix für CQ-4248750
-* Inhaltsfragmente können jetzt kommentiert werden. For more information, see [Variations-Authoring Fragments](https://helpx.adobe.com/experience-manager/6-4/assets/using/content-fragments-variations.html#AnnotatingaContentFragment). NPR-25188: Hotfix für CQ-4235336
-* Version: Vergleichen Sie Inhaltsfragmente nebeneinander. Weitere Informationen finden Sie unter [Verwalten von Inhaltsfragmenten](https://helpx.adobe.com/experience-manager/6-4/assets/using/content-fragments-managing.html#ComparingFragmentVersions). NPR-25187: Hotfix für CQ-4237412
-* Verbesserungen im Bildeditor, die auf AEM 6.4.2.0 rückportiert wurden. Weitere Informationen finden Sie unter [Bildeditor](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html). NPR-24467
+* Erlauben Sie die Bearbeitung eines Inhaltsfragments ohne Löschberechtigungen. Weitere Informationen finden Sie unter [Anpassen und Erweitern von Inhaltsfragmenten](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: Hotfix für CQ-4248750
+* Inhaltsfragmente können jetzt kommentiert werden. For more information, see [Variations-Authoring Fragments](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: Hotfix für CQ-4235336
+* Version: Vergleichen Sie Inhaltsfragmente nebeneinander. Weitere Informationen finden Sie unter [Verwalten von Inhaltsfragmenten](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: Hotfix für CQ-4237412
+* Verbesserungen im Bildeditor, die auf AEM 6.4.2.0 zurückportiert wurden. Weitere Informationen finden Sie unter [Bildeditor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **OSGI-Pakete und Inhaltspakete enthalten**
 
@@ -1680,7 +1680,7 @@ Liste der in AEM 6.4.2.0 enthaltenen Inhaltspakete
 
 #### AEM 6.4.1.0 {#experience-manager-6410}
 
-AEM 6.4.1.0 ist ein wichtiges Update, das Verbesserungen der Leistung, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Verbesserungen enthält, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im April 2018 veröffentlicht wurden.
+AEM 6.4.1.0 ist ein wichtiges Update, das Funktionen für Leistung, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen umfasst, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im April 2018 veröffentlicht wurden.
 
 AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen des Service Packs gehören:
 
@@ -1710,7 +1710,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * Auf der veröffentlichten WCM-Seite werden Platzhaltersymbole für Hotspot angezeigt. CSS-Dateien fehlen mit 403-Fehler für OOTB-Viewer. NPR-23041: Hotfix für CQ-4233716
 * (Detail-Ansicht) Die Funktion &quot;Weiter/Zurück&quot;hinterlässt eine DIV-Überlagerung im Bereich &quot;Vorschau für dynamische Darstellung&quot;, die den Zugriff auf den Viewer blockiert. NPR-23043: Hotfix für CQ-4238499
 * Die CMYK-Bilddarstellung weist eine falsche Sättigung auf. NPR-23048: Hotfix für CQ-4235470
-* Die Extraktion von XMP-Metadaten durch Scene7ListInfoProvider ist ressourcenintensiv. NPR-23754
+* XMP Metadaten-Extraktion von Scene7ListInfoProvider ist ressourcenintensiv. NPR-23754
 * (dam-Versand) HTTP-Forwarder respektiert keine HTTP-Proxy-Einstellungen. NPR-24002: Hotfix für CQ-4244140
 
 **Sites**
@@ -1755,10 +1755,10 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * (Personalisierung) Symbole werden beim Wechsel zur Ansicht der Karte deformiert. NPR-23373, NPR-23374: Hotfix für CQ-4240018, CQ-4240019
 * (Personalisierung) Audience Console zeigt keine nt:folder-Typen an. NPR-23375: Hotfix für CQ-4242293
 * Wenn eine Komponente auf eine Veröffentlichungsinstanz ausgerichtet ist, wird das Flackern angezeigt, das das Standarderlebnis vor der Zielinstanz anzeigt. NPR-23415: Hotfix für CQ-4242038
-* (Adobe IMS-Konsole) Die Konfiguration des AccessTokenProvider OSGi-Dienstes wird nach dem Löschen erneut angezeigt. NPR-23520: Hotfix für CQ-4208250
+* (Adobe IMS Console) Die Konfiguration des AccessTokenProvider OSGi-Dienstes wird nach dem Löschen erneut angezeigt. NPR-23520: Hotfix für CQ-4208250
 * Die Replikation der Konfigurationsreferenzen mit der Zwischenordnerstruktur schlägt fehl. NPR-23485: Hotfix für CQ-4242751
 * (Personalisierung) clientlib blockiert durch das Proxy-Servlet. NPR-23521: Hotfix für CQ-4240995
-* (Adobe IMS Console) Registrierte Cloud-Lösungen werden im Konfigurationsassistenten nicht abgerufen. NPR-23977: Hotfix für CQ-4244549
+* (Adobe IMS Console) Registrierte Cloud-Lösungen werden im Konfigurationsassistenten nicht aufgenommen. NPR-23977: Hotfix für CQ-4244549
 * Endlose Schleife beim Laden zielgerichteter Inhalte auf Seiten ohne HTML-Erweiterung. NPR-23522: Hotfix für CQ-4223600
 * Aktivierung schlägt bei einer Seite mit Verweisen auf die Konfiguration des dynamischen Tag-Managements fehl. NPR-23485: Hotfix für CQ-4242751
 
@@ -1766,8 +1766,8 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 
 * (Klassische Benutzeroberfläche)(Touch-Benutzeroberfläche) Die Tag-Auswahl wird nicht angezeigt und gibt beim Versuch, über eine im Schema &quot;Asset-Suche&quot;vorhergesagte Tags nach Tags zu suchen, eine Ausnahme aus. NPR-23049: Hotfix für CQ-4239371
 * (Klassische Benutzeroberfläche) Komponenten, die xtype=tags verwenden, geben null zurück und können nicht aus der eth-Liste von Tags ausgewählt werden. NPR-23050: Hotfix für CQ-4239937
-* (Branding) In den Anmeldedialogfeldern wird Adobe Marketing Cloud anstelle von Adobe Experience Cloud erwähnt. NPR-23210: Hotfix für CQ-4237799
-* Mit der Filteroption wird AEM nach der Aktualisierung von 6.3 auf 6.4 langsam. NPR-23260: Hotfix für CQ-4239847 (zu prüfen)
+* (Branding) Bei einem Anmeldungsdialogfeld wird Adobe Marketing Cloud anstelle von Adobe Experience Cloud erwähnt. NPR-23210: Hotfix für CQ-4237799
+* Die Filteroption macht AEM nach der Aktualisierung von 6.3 auf 6.4 langsam. NPR-23260: Hotfix für CQ-4239847 (zu prüfen)
 * Proaktiver Backport für Fehlerbehebungen &quot;granite.omnisearch.core&quot;. NPR-23536
 * Proaktive Backport für Fehlerbehebungen &quot;platform.clientlibs&quot;. NPR-23569
 * Cloud Service-Config-Vererbung ist beim Bearbeiten anderer Seiteneigenschaften fehlgeschlagen. NPR-23216: Hotfix für CQ-4239782
@@ -1896,11 +1896,11 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * Die CMYK-Bilddarstellung weist eine falsche Sättigung auf. Hotfix für CQ-4235470
 * Image-Server-Einstellungen werden nicht auf Versand repliziert, während die Replizierungsprotokolle sie als erfolgreich markieren. Hotfix für CQ-4239480, CQ-4239046
 * (DMS7) Sätze können nicht mit alten/neuen Verweisen auf die Cloud-Konfiguration erstellt werden. Hotfix für CQ-4238078
-* Der Schritt im Scene7-Workflow liest Scene7 nur im Namen und in der Beschreibung, aber den Workflow-Schritt im DAM-Aktualisierungsarbeitsablauf wird nicht geklärt. Hotfix für CQ-4237865
+* Der Arbeitsablaufschritt von Scene7 liest nur Scene7 im Namen und in der Beschreibung, aber nicht den Workflow-Schritt im DAM-Aktualisierungsarbeitsablauf. Hotfix für CQ-4237865
 
 **DAM - Intelligente Tags**
 
-* Verbesserte intelligente Tags. NPR-21951
+* Vorgestellte [erweiterte intelligente Tags](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **Formulare**
 
@@ -1908,7 +1908,7 @@ AEM Forms-Fehlerbehebungen werden über Add-on-Pakete und andere mit der Version
 
 Die wichtigsten Highlights für AEM Forms sind:
 
-* AEM Forms bietet die Möglichkeit [zur](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) Transaktionsberichterstellung, Transaktionen wie gesendete Formulare, verarbeitete Dokumente und gerenderte Dokumente bei der Bereitstellung Ihrer AEM Forms zu verfolgen und zu zählen. Es bietet Einblicke in die Produktnutzung und hilft Geschäftsbenutzern, digitale Verarbeitungsvolumina zu verstehen.
+* AEM Forms bietet die Möglichkeit [zur](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) Transaktionsberichterstellung, Transaktionen wie gesendete Formulare, verarbeitete Dokumente und gerenderte Dokumente bei der Bereitstellung Ihrer AEM Forms zu verfolgen und zu zählen. Es bietet Einblicke in die Produktnutzung und hilft Geschäftsbenutzern, digitale Verarbeitungsvolumina zu verstehen.
 * PDF/UA-Unterstützung für XML-Formulare aktiviert.
 * allowProxy = true für Clientlib **aemfd.ccm.Kanal.contentpage hinzugefügt**
 * Der Code wurde aktualisiert, um eine erweiterte Titelsuche mit &quot;enthält&quot;statt mit &quot;gleich&quot;zu ermöglichen.
@@ -1925,11 +1925,11 @@ Die wichtigsten Highlights für AEM Forms sind:
 * (FDM Client SDK) Tests von Pre-/Post-Vorprozessor- und benutzerdefinierten Übermittlungsaktionen können nicht durchgeführt werden. Hotfix für CQ-4238469
 * Fehlerbehebungen bei Javadoc-Problemen in Dermis. Hotfix für CQ-4244250
 * Verbesserte Eingabe in WSDL (Web Services Description Language). Hotfix für CQ-4244133
-* Grundlegende Authentifizierungstests für WSDL führen bei derselben Konfiguration in AEM 6.3 und AEM 6.4 zu unterschiedlichen Fehlern. Hotfix für CQ-4244132
+* Grundlegende Authentifizierungstests für WSDL führen zu unterschiedlichen Fehlern für dieselbe Konfiguration in AEM 6.3 und AEM 6.4. Hotfix für CQ-4244132
 * Anfrage zur Einbeziehung von ValueUtil in client-sdk und javadocs. Hotfix für CQ-4242803
 * (FDM Cloud-Konfiguration) SOAP-basierte Authentifizierung kann nicht aus der Cloud-Konfiguration konfiguriert werden. Hotfix für CQ-4238462
 * Dermis - Hinzufügen Pakete in Javadocs fehlen. Hotfix für CQ-4242815
-* WSDLInvokerParams in Forms Hinzufügen-On Client SDK enthalten. NPR-23381: Hotfix für CQ-4240233
+* WSDLInvokerParams wird in Forms Hinzufügen-On Client SDK aufgenommen. NPR-23381: Hotfix für CQ-4240233
 
 **Adaptive Formulare**
 
@@ -1956,7 +1956,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 * Die Übermittlung des adaptiven Formulars funktioniert nicht und es werden keine Änderungen bei der Transaktionszählung aufgrund eines Fehlers bei der Übermittlung vorgenommen. Hotfix für CQ-4246125
 * (Bildauswahl) Dokument der Datensatzoptionen ist nicht sichtbar. Hotfix für CQ-4236976
 * Die Benutzeroberfläche des Vorlageneditors ist nicht stabil. Hotfix für CQ-4241497
-* AFs werden nicht über die Registerkarte &quot;Assets&quot;des Seitenbedienfelds angezeigt, während die Option &quot;Durchsuchen&quot;für das Dialogfeld mit den Eigenschaften der AEM Forms-Komponente angezeigt wird. Hotfix für CQ-4236751
+* AFs werden nicht über die Registerkarte &quot;Assets&quot;des Seitenbedienfelds angezeigt, während die Option &quot;Durchsuchen&quot;für AEM Dialogfeld für die Eigenschaft der Formularkomponente angezeigt wird. Hotfix für CQ-4236751
 * Die für die Formularkonvertierung generierte Workflow-ID sollte im erstellten adaptiven Formular verfügbar sein. Hotfix für CQ-4240014
 * Vorlage zum Erstellen einer Seite in Sites bei Direct Upgrade kann nicht ausgewählt werden: LiveCycle auf 6.4-Server. Hotfix für CQ-4241300
 
@@ -1976,7 +1976,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 * Entwürfe, die auf dem Server vor der Aktualisierung gespeichert wurden, werden auf dem aktualisierten Server nicht korrekt geöffnet. Hotfix für CQ-4243303
 * Anlagenszenarien funktionieren beim Ersetzen/Hinzufügen/Entfernen von Anlagen in einer neuen Instanz/in derselben Entwurfsinstanz nicht mehr. Hotfix für CQ-4243165
 * Die Anzahl der bei der Abfrage der Datenbank abgerufenen Entwürfe ist mehr als die Anzahl der im Portal vorhandenen Entwürfe. Hotfix für CQ-4241489
-* Formulare, die auf dem Server vor der Aktualisierung gesendet werden, sind auf dem aktualisierten Server nicht vorhanden. Hotfix für CQ-4241490
+* Forms, das auf einem Server vor der Aktualisierung gesendet wurde, ist auf dem aktualisierten Server nicht vorhanden. Hotfix für CQ-4241490
 * Das in der Benutzeroberfläche auf der Registerkarte &quot;Übermittlungen&quot;angezeigte Formular befindet sich trotz erfolgreicher Übermittlungsmeldung im Status &quot;Nicht übermittelt&quot;. Hotfix für CQ-4241487
 * Der guideContext sollte durch Deep Copy der Felder gebildet werden, da guideContext customPropertyMap enthält, die selbst ein Objekt ist. Hotfix für CQ-4240126
 * Fehler beim Versuch, ein Formular zu speichern. Hotfix für CQ-4240763
@@ -1986,7 +1986,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 **Mobile Forms**
 
 * Das Datumsfeld überschneidet sich in Mobile Forms. Hotfix für CQ-4242256
-* Die Formularübermittlung für Mobile Forms sollte mit dem Transaktionsaufzeichnungsdienst als Transaktion protokolliert werden. Hotfix für CQ-4246166
+* Die Formularübermittlung für Mobile Forms sollte als Transaktion mit dem Transaktionsaufzeichnungsdienst protokolliert werden. Hotfix für CQ-4246166
 * Die Formularübermittlung in FormSet sollte als Transaktion mit dem Transaktionsaufzeichnungsdienst protokolliert werden. Hotfix für CQ-4246165
 
 **AEM Forms-App**
@@ -1997,7 +1997,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 
 * Transaktionsprotokolliereinrichtung in der Aufgabe Workflow-Zuweisung. Hotfix für CQ-4244440
 * (FDM-Schritt) Werte aus Workflow-Metadaten können nicht verwendet werden, wenn ein Zuweisungsschritt zwischen dem Prozessschritt und dem FDM-Schritt eingefügt wird. Hotfix für CQ-4241472
-* Die Übertragung der Zuweisungsfunktion funktioniert nicht in der Forms-Integration in OSGI-Workflows. NPR-23709: Hotfix für CQ-4243700
+* Die Delegation der Zuweisung von Aufgabe funktioniert nicht in Forms Integration in OSGI Workflows. NPR-23709: Hotfix für CQ-4243700
 * (Workflow-Modell-Editor) Einige Workflow-Modelle können nicht über den ClassicUI WF-Modelleditor bearbeitet werden. Hotfix für CQ-4241151
 
 **MultiChannel-Dokument**
@@ -2043,7 +2043,7 @@ Die wichtigsten Highlights für AEM Forms sind:
 
 * Transaktionsprotokolliereinrichtung bei PDFG-Diensten. Hotfix für CQ-4244951, CQ-4244586
 * Reduzierung von PDFs durch selektives Aufheben der Einbettung von Schriftarten über einen einzelnen API-Aufruf. NPR-23287
-* Problem mit der Aktualisierung von PDFG-Konfigurationen bei der AEM-Aktualisierung. Hotfix für CQ-4241176
+* Aktualisierungsfehler bei PDFG-Konfigurationen bei AEM Aktualisierung. Hotfix für CQ-4241176
 * Transaktionsprotokolliereinrichtung im PDFUtility Service. Hotfix für CQ-4245014
 
 **Prozessverwaltung**
@@ -2066,12 +2066,12 @@ Die wichtigsten Highlights für AEM Forms sind:
 
 **Assets**
 
-* Die Funktion für erweiterte intelligente Tags wurde hinzugefügt. Weitere Informationen finden Sie unter [Erweiterte Smart-Tags](https://helpx.adobe.com/experience-manager/6-4/assets/using/enhanced-smart-tags.html). NPR-21951: Hotfix für CQ-4234883
-* Verweise auf AEM Assets in InDesign For more information, see [AEM Assets References in InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
+* Die Funktion für erweiterte intelligente Tags wurde hinzugefügt. Weitere Informationen finden Sie unter [Erweiterte Smart-Tags](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: Hotfix für CQ-4234883
+* Verweise auf AEM Assets in InDesign. For more information, see [AEM Assets References in InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **Sites**
 
-* (Seiten-Authoring) Verbesserungen am Bildeditor. For more information, see [Image Editor](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html). NPR-24267: Hotfix für CQ-4245502
+* (Seiten-Authoring) Verbesserungen am Bildeditor. For more information, see [Image Editor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267: Hotfix für CQ-4245502
 
 **OSGI-Bundles und Inhaltspakete sind enthalten**
 
@@ -2172,7 +2172,7 @@ To determine the certified platform for running with this release of AEM Sites a
 
 1. Stellen Sie sicher, dass Sie das AEM Service Pack installiert haben.
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
-1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
+1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installieren des AEM Forms JEE-Installationsprogramms {#install-aem-forms-jee-installer}
 
@@ -2192,7 +2192,7 @@ Wenn Sie die klassische (alte) Benutzeroberfläche verwenden und Metadatenvorlag
 
 #### Für NPR-24536 erforderliche Konfigurationseinstellungen {#configuration-settings-required-for-npr-1}
 
-Die Anzahl freigegebener Warteschlangen wird für andere Benutzer nicht standardmäßig aktualisiert, wenn ein Benutzer eine Aufgabe beantragt. Dafür haben wir eine neue Eigenschaft eingeführt. Gehen Sie wie folgt vor, um diese Eigenschaft auf Ihrer AEM-Instanz zu konfigurieren:
+Die Anzahl freigegebener Warteschlangen wird für andere Benutzer nicht standardmäßig aktualisiert, wenn ein Benutzer eine Aufgabe beantragt. Dafür haben wir eine neue Eigenschaft eingeführt. Gehen Sie wie folgt vor, um diese Eigenschaft in Ihrer AEM zu konfigurieren:
 
 1. Gehen Sie zu Admin-Benutzeroberfläche -> Dienste -> Arbeitsbereich -> Globale Verwaltung.
 1. Globale Einstellungen exportieren.
@@ -2227,7 +2227,7 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
 | Bereich | Funktion | Ersatz | Version |
 |---|---|---|---|
 | Assets | Tag-Aktion für Teilassets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
-| Assets und Adobe Creative Cloud-Integration | [Die gemeinsame Nutzung](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) von AEM in Creative Cloud-Ordnern wurde in AEM 6.2 eingeführt, um kreativen Benutzern Zugriff auf Assets aus AEM zu geben. Eine neue Funktion der Creative Cloud-Anwendung, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe wird die Ordnerfreigabe nicht weiter verbessern. Während die Funktion in AEM enthalten ist, empfehlen Kunden dringend, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-App. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Assets und Adobe Creative Cloud-Integration | [Die Freigabe](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) von Creative Cloud-Ordnern wurde in AEM 6.2 eingeführt, um kreativen Benutzern Zugriff auf Assets aus AEM zu gewähren. Eine neue Funktion der Creative Cloud-Anwendung, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe wird die Ordnerfreigabe nicht weiter verbessern. Während die Funktion in AEM enthalten ist, wird Kunden dringend empfohlen, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-App. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Bekannte Probleme {#known-issues}
 
@@ -2240,7 +2240,7 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout wartet auf reg change, um unregistered abzuschließen.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` Keine Wartungsfenster unter granite/operations/maintenance gefunden
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: Die unbindAmendment-Methode hat eine Ausnahme ausgelöst (java.lang.IllegalStateException: Dienst ist bereits nicht registriert).
-Diese Fehler erfordern keine Aktion, da sie keine Auswirkungen auf Ihre AEM-Instanz haben.
+Diese Fehler erfordern keine Aktion, da sie Ihre AEM nicht beeinflussen.
 
 
 ### Behobene Probleme {#resolved-issues}
@@ -2255,7 +2255,7 @@ Diese Fehler erfordern keine Aktion, da sie keine Auswirkungen auf Ihre AEM-Inst
 
 ### OSGi-Bundles und Inhaltspakete sind enthalten {#osgi-bundles-and-content-packages-included}
 
-Die folgenden Dokumente Liste der OSGi-Pakete und Inhaltspakete in AEM 6.4.8.0.
+Die folgenden Dokumente Liste der OSGi-Pakete und Content Packages in AEM 6.4.8.0.
 
 Liste der in AEM 6.4.8.0 enthaltenen OSGi-Bundles
 
@@ -2276,5 +2276,6 @@ Liste der in AEM 6.4.8.0 enthaltenen Inhaltspakete
 
 Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe-Kundenbetreuer.
 
-* [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Kundensupport.](https://daycare.day.com/)
+* [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).
+* Produktupdates, Patches und Pakete für zusätzliche Funktionen bei der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Kundenservice per Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neue Adobe - Kundendiensterfahrung](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
