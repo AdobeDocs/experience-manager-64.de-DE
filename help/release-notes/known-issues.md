@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 44%
@@ -27,11 +27,13 @@ Auf dieser Seite finden Sie eine Liste der bekannten Probleme, die am April 2018
 Hybrid-Geräte werden nicht unterstützt. Bei der Verwendung dieser Art von Geräten können verschiedene Probleme auftreten. Die folgenden empfohlenen Verfahren helfen bei der Lösung vieler Probleme:
 
 Wenn Sie Google Chrome als Browser verwenden:
+
 * Type `chrome://flags/` in the address bar and press Enter.
 * Klicken Sie auf Touch-Ereignis aktivieren > Deaktiviert.
 * Starten Sie den Browser (alle Registerkarten und Fenster) neu.
 
 Wenn Sie Mozilla Firefox als Browser verwenden:
+
 * Type `about:config` in the address bar and press Enter.
 * Filter the settings to `dom.w3c`.
 * Vergewissern Sie sich, dass die Einstellungen `0` und `false`.
@@ -123,7 +125,7 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 
 * Authentifizierungskonfigurationen für SOAP-basierte Webservices sind nicht sichtbar und können daher nicht in Cloud-Services konfiguriert werden. Gehen Sie folgendermaßen vor, um das Problem zu lösen:
 
-   1. Wechseln Sie in der CRXDE Lite-Konsole zum folgenden Knoten.\
+   1. Wechseln Sie in CRXDE Lite Console zum folgenden Knoten.\
       /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices/\
       wsdlauthenticationSettings/items/fixedcolumns/items/Container/items/wsdl/items/\
       selectAuthentication/items/custom.
