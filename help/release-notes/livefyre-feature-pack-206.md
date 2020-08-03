@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 7%
+source-wordcount: '657'
+ht-degree: 5%
 
 ---
 
@@ -20,42 +20,18 @@ ht-degree: 7%
 
 ## Versionshinweise {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <td>Produkte</td> 
-   <td>Livefyre Feature Pack 2.0.6</td> 
-  </tr>
-  <tr>
-   <td>Version</td> 
-   <td>2.0.6</td> 
-  </tr>
-  <tr>
-   <td>Typ</td> 
-   <td>Neue Funktionen</td> 
-  </tr>
-  <tr>
-   <td>Datum</td> 
-   <td>31. August 2018</td> 
-  </tr>
-  <tr>
-   <td>Download-URL<br /> </td> 
-   <td>Wenden Sie sich an Ihren Administrator</td> 
-  </tr>
-  <tr>
-   <td>Kompatibilität (*)</td> 
-   <td>AEM 6.4 SP1, 6.4, 6.3 GA und 6.2 SP1</td> 
-  </tr>
-  <tr>
-   <td>Beschreibung</td> 
-   <td>Dieses Paket ermöglicht Ihnen die Integration der branchenführenden Kurationsfunktionen von Livefyre in Ihre AEM-Instanz. So können Sie innerhalb weniger Minuten wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken auf Ihrer Site veröffentlichen.</td> 
-  </tr>
- </tbody>
-</table>
+| Produkte | Livefyre Feature Pack 2.0.6 |
+|--- |--- |
+| Version | 2.0.6 |
+| Typ | Neue Funktionen |
+| Datum | 31. August 2018 |
+| Download-URL | Wenden Sie sich an Ihren Administrator |
+| Kompatibilität (*) | AEM 6.4 SP1, 6.4, 6.3 GA und 6.2 SP1 |
+| Beschreibung | Mit diesem Paket können Sie Livefyres branchenführende Kurationsfunktionen in Ihre AEM-Instanz integrieren. So können Sie innerhalb weniger Minuten wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken auf Ihrer Site veröffentlichen. |
 
 ## What is included in Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}
 
-Dieses Paket integriert die branchenführenden Kurationsfunktionen von Livefyre in Ihre AEM-Instanz. So können Sie innerhalb weniger Minuten wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken auf Ihrer Site veröffentlichen. Es gibt drei verschiedene Komponenten dieses Pakets:
+Dieses Paket integriert die branchenführenden Kurationsfunktionen von Livefyre in Ihre AEM-Instanz, sodass Sie innerhalb weniger Minuten wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken auf Ihrer Site veröffentlichen können. Es gibt drei verschiedene Komponenten dieses Pakets:
 
 **UGC-Inhalte in AEM Assets importieren**
 
@@ -72,9 +48,9 @@ Dieses Paket integriert die branchenführenden Kurationsfunktionen von Livefyre 
 **Importieren von Produktkatalogen in Livefyre mit AEM Commerce**
 
 * Integrieren Sie nahtlos Ihren bestehenden Produktkatalog in Livefyre, um die Benutzerinteraktion und Konversion auf Ihren Sites zu fördern und einkaufsfähige UGC-Erlebnisse bereitzustellen.
-* Bearbeiten oder löschen Sie Elemente im AEM Commerce-Produktkatalog und aktualisieren Sie automatisch Änderungen in Livefyre.
+* Bearbeiten oder löschen Sie Elemente in Ihrem AEM Commerce-Produktkatalog und aktualisieren Sie automatisch Änderungen in Livefyre.
 
-Hilfe zur Installation finden Sie unter [Integration mit Livefyre](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/livefyre.html).
+Hilfe zur Installation finden Sie unter [Integration mit Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html).
 
 ### Zusätzliche Versionsinformationen {#additional-release-information}
 
@@ -82,20 +58,20 @@ Aufgrund von Aktualisierungen, die sich auf die Aggregation von Inhalten von Ins
 
 >[!NOTE]
 >
->Livefyre Feature Pack 2.0.6 unterstützt keine AEM Classic-Benutzeroberfläche.
+>Livefyre Feature Pack 2.0.6 unterstützt AEM klassische Benutzeroberfläche nicht.
 
 #### Neue Funktion oder Verbesserung {#new-feature-or-improvement}
 
 * Es wurde die Möglichkeit hinzugefügt, UGC zu durchsuchen, bevor Sie Rechte einrichten und soziale Konten in Livefyre anfordern. Sie müssen soziale Konten einrichten, um Rechte anzufordern, oder die Berechtigungsanforderung überschreiben, wenn Sie Eigentümer des Inhalts sind.
-* Der Arbeitsablauf [für Anfragen zu Instagram- und Twitter-](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/livefyre.html) UGC-Rechten wurde aktualisiert, um die neuesten APIs zu erfüllen.
+* Der Arbeitsablauf [für Anfragen zu Instagram- und Twitter-](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) UGC-Rechten wurde aktualisiert, um die neuesten APIs zu erfüllen.
 * Der Rights-Status und entsprechende Aktionen werden jetzt im Bildschirm &quot;Rights Request&quot;angezeigt.
 
-#### Fehlerbehebungen {#bug-fixes}
+#### Bug fixes {#bug-fixes}
 
 * Es wurde ein Problem behoben, bei dem das Löschen eines Social-Kontos in Livefyre Studio, das für die Berechtigungsanforderung verwendet wurde, einen Fehler verursachte, wenn die UGC-Bibliothek in AEM geladen wurde.
-* Es wurde ein Problem behoben, bei dem die Asset-Anzahl im Livefyre-Studio nicht mit der Asset-Anzahl in der AEM UGC-Bibliothek übereinstimmte.
+* Es wurde ein Problem behoben, bei dem die Asset-Anzahl im Livefyre-Studio nicht mit der Asset-Anzahl in der AEM-UGC-Bibliothek übereinstimmte.
 * Es wurde ein Problem in der UGC-Bibliothek behoben, bei dem gefilterte Ergebnisse angezeigt wurden, nachdem die Filteroptionen zurückgesetzt wurden.
-* Es wurde ein Problem mit AEM Commerce behoben, bei dem durch Aktionsaufruf-Schaltflächen Benutzer zur falschen URL weitergeleitet wurden.
+* Es wurde ein Problem mit AEM Commerce behoben, bei dem Aktionsaufruf-Schaltflächen Benutzer zur falschen URL weiterleiteten.
 * Es wurde ein Problem in AEM Sites behoben, bei denen das Ziehen und Ablegen mehrerer Komponenten in den parsys-Platzhalter dazu führte, dass diese nicht mehr angezeigt wurden.
 * Es wurde ein Problem behoben, durch das deaktivierte soziale Konten beim Senden einer Berechtigungsanfrage zur Auswahl verfügbar waren.
 * Es wurde ein Problem behoben, bei dem beim Ziehen und Ablegen von UGC aus Assets in Sites ein Fehler auftrat.
@@ -108,4 +84,3 @@ Aufgrund von Aktualisierungen, die sich auf die Aggregation von Inhalten von Ins
 * Es wurde ein Problem mit der Touch-Benutzeroberfläche und der Inline-Bearbeitung behoben.
 * Es wurde ein Fehler behoben, der beim Importieren bestimmter Instagram-Bild-Assets zu einem Fehler führte.
 * Es wurde ein Problem behoben, bei dem der Livefyre-HTTP-Client in AEM keine Proxykonfiguration unterstützte.
-
