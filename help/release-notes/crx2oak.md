@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 66%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 ### Version 1.6.8 (März 2017) {#version-march}
 
 * Oak wurde auf Version 1.6.1 aktualisiert
-* CQ-61847 Merge crx2oak-quickstart-extension with crx2oak (added migration profiles)
+* CQ-61847 Merge crx2oak-quickstart-extension with crx2oak (added migration Profils)
 * CQ-97488 Es wurden AEM-Ausführungsmodi hinzugefügt und entfernt (indem sling.options.file neu geschrieben wurde)
 * GRANITE-12798/OAK-4260 Möglichkeit, die Klassifizierung vom Oak-Segment zum Oak-Segment-Tar zu verschieben
 
