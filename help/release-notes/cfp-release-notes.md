@@ -1,18 +1,18 @@
 ---
-title: Versionshinweise zu AEM 6.4 Cumulative Fix Pack
+title: AEM 6.4 - Versionshinweise zu allen Fix-Paketen
 description: Spezifische Versionshinweise zu Adobe Experience Manager 6.4 "Kumulative Fix Packs".
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 24%
+source-wordcount: '2125'
+ht-degree: 25%
 
 ---
 
 
-# Versionshinweise zu AEM 6.4 Cumulative Fix Pack {#aem-cumulative-fix-pack-release-notes}
+# AEM 6.4 - Versionshinweise zur kumulativen Fehlerbehebung {#aem-cumulative-fix-pack-release-notes}
 
 ## Versionshinweise {#release-information}
 
@@ -20,15 +20,15 @@ ht-degree: 24%
 |---|---|
 | Version | 6.4.8.1 |
 | Typ | Cumulative Fix Pack |
-| Datum | 04. Juni 2020 |
+| Datum           | 04. Juni 2020 |
 | Voraussetzung | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| Download-URL | AEM 6.4.8.1 für die [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| Download-URL | AEM 6.4.8.1 zur [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## Was ist in AEM 6.4.8.1 enthalten?{#what-s-included-in-aem}
 
-AEM Cumulative Fix Pack 6.4.8.1 ist ein wichtiges Update, das seit der allgemeinen Verfügbarkeit von AEM 6.4 Service Pack 8 (6.4.8.0) im März 2020 mehrere interne und kundenspezifische Fehlerbehebungen enthält.
+AEM Cumulative Fix Pack 6.4.8.1 ist ein wichtiges Update, das seit der allgemeinen Verfügbarkeit von AEM 6.4 Service Pack 8 (6.4.8.0) im März 2020 einige interne und kundenspezifische Fehlerbehebungen enthält.
 
-AEM Cumulative Fix Pack 6.4.8.1 ist von AEM 6.4 Service Pack 8 abhängig. Daher müssen Sie das AEM Cumulative Fix Pack 6.4.8.1-Paket nach der Installation von AEM 6.4 Service Pack 8 installieren.
+AEM Cumulative Fix Pack 6.4.8.1 ist von AEM 6.4 Service Pack 8 abhängig. Daher müssen Sie das AEM Cumulative Fix Pack 6.4.8.1 Paket nach der Installation von AEM 6.4 Service Pack 8 installieren.
 
 Einige der wichtigsten Highlights von AEM 6.4.8.1 sind:
 
@@ -109,11 +109,11 @@ In Adobe Experience Manager 6.4.8.1 wurden die folgenden Probleme behoben:
 >AEM Cumulative Fix Pack enthält keine Korrekturen für AEM Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * Correspondence Management: Wenn ein Benutzer Inhalte aus einem [!DNL Word] Dokument einfügt, behält das Textfragment keine Formatierung bei (NPR-33213).
-* Adaptive Formulare: Eine neue Zeile zu einer Zeichenfolge in einem Wörterbuch für adaptive Formulare fügt dem Wörterbuch Zeichen hinzu (NPR-33265). `&#xa;`
-* Adaptive Formulare: Der Benutzer kann ein adaptives Formular nicht mit mehr als einer Anlage speichern (NPR-33214).
-* Adaptive Formulare: `AddInstance` und `RemoveInstance` Methoden für die Instanz Manager-Klasse fügen keine dynamische Anzahl von Instanzen für verzögerte Ladefragmente hinzu [!DNL Internet Explorer 11] (NPR-33201).
-* Adaptive Formulare: Analytics, das auf einem adaptiven Formular aktiviert ist, das in eine [!DNL Sites] Seite eingebettet ist, zeichnet keine Daten für Ereignisse zum Senden und Abbrechen auf (NPR-31359).
-* Adaptive Formulare: Wenn ein Benutzer den Inhalt aus einem [!DNL Word] Dokument in ein adaptives Formular einfügt und es sendet, enthält das gesendete adaptive Formular Unicode-Zeichen. Darüber hinaus schlägt die Konvertierung von PDF in PDF/A aufgrund von Unicode-Zeichen (NPR-33348) fehl.
+* Adaptives Forms: Eine neue Zeile zu einer Zeichenfolge in einem Wörterbuch für adaptive Formulare fügt dem Wörterbuch Zeichen hinzu (NPR-33265). `&#xa;`
+* Adaptives Forms: Der Benutzer kann ein adaptives Formular nicht mit mehr als einer Anlage speichern (NPR-33214).
+* Adaptives Forms: `AddInstance` und `RemoveInstance` Methoden für die Instanz Manager-Klasse fügen keine dynamische Anzahl von Instanzen für verzögerte Ladefragmente hinzu [!DNL Internet Explorer 11] (NPR-33201).
+* Adaptives Forms: Analytics, das auf einem adaptiven Formular aktiviert ist, das in eine [!DNL Sites] Seite eingebettet ist, zeichnet keine Daten für Ereignisse zum Senden und Abbrechen auf (NPR-31359).
+* Adaptives Forms: Wenn ein Benutzer den Inhalt aus einem [!DNL Word] Dokument in ein adaptives Formular einfügt und es sendet, enthält das gesendete adaptive Formular Unicode-Zeichen. Darüber hinaus schlägt die Konvertierung von PDF in PDF/A aufgrund von Unicode-Zeichen (NPR-33348) fehl.
 * BackendIntegration: Formulardatenmodellanforderungen schlagen fehl, da der Aktualisierungstoken aufgrund eines inaktiven Status (NPR-33168) abläuft.
 * Dokument-Dienste: Der Convert PDF-Dienst kann PDF-Dokumente nicht in PostScript konvertieren, da Gibson-JARs für [!DNL WebLogic] den [!DNL Linux] Server fehlen (NPR-33515, CQ-4292239).
 * Dokument-Dienste: Wenn ein Benutzer eine Textdatei in eine PDF-Datei konvertiert, werden japanische Zeichen nicht korrekt dargestellt (NPR-33239).
@@ -134,11 +134,11 @@ In Adobe Experience Manager 6.4.8.1 wurden die folgenden Probleme behoben:
 
 >[!CAUTION]
 >
->Für Kunden mit Feature Packs, die auf AEM 6.4 installiert sind. Die von Adobe bereitgestellten optionalen Funktionspakete hängen von der Release-Version und den Service Packs ab. Wenn Sie ein Feature Pack installiert haben, wenden Sie sich an den AEM-Kundendienst, um die Kompatibilität dieser Feature Packs mit diesem kumulativen Fix Pack für AEM 6.4 zu überprüfen.
+>Für Kunden mit Feature Packs, die auf AEM 6.4 installiert sind. Optionale Funktionspakete, die von Adobe bereitgestellt werden, hängen von der Release-Version und den Service Packs ab. Wenn Sie ein Feature Pack installiert haben, wenden Sie sich bitte an das AEM Kundenservice-Team, um die Kompatibilität dieser Feature Packs mit diesem kumulativen Fix Pack für AEM 6.4 zu überprüfen.
 
 * AEM 6.4.8.1 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
 * Installieren Sie bei einer Implementierung mit MongoDB und mehreren Instanzen AEM 6.4.8.1 mithilfe von Package Manager auf einer der Autoreninstanzen.
-* Bevor Sie das kumulative Fix Pack installieren, stellen Sie sicher, dass Sie über einen Schnappschuss oder eine neue Sicherung Ihrer AEM-Instanz verfügen.
+* Bevor Sie das kumulative Fix Pack installieren, stellen Sie sicher, dass Sie eine Momentaufnahme oder eine erneute Sicherung Ihrer AEM erhalten.
 * Starten Sie die Instanz vor der Installation neu. Dies ist zwar nur dann erforderlich, wenn sich die Instanz noch im Aktualisierungsmodus befindet (und dies ist der Fall, wenn die Instanz gerade von einer früheren Version aktualisiert wurde). Dennoch wird dies allgemein empfohlen, wenn die Instanz über einen längeren Zeitraum ausgeführt wurde.
 
 >[!NOTE]
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/de/experience
 
 ### Bestätigen der Installation {#validate-install}
 
-1. Auf der Seite &quot;Produktinformationen&quot;(*/system/console/production *) sollte nun die aktualisierte Versionszeichenfolge &quot;Adobe Experience Manager, Version 6.4.8.1&quot;unter &quot;Installierte Produkte&quot;angezeigt werden.
+1. Auf der Seite „Produktinformationen“ (*/system/console/productinfo*) sollte nun unter „Installierte Produkte“ die aktualisierte Version „Adobe Experience Manager, Version 6.4.8.1“ angezeigt werden.
 1. Alle OSGI-Bundles sind in der OSGI-Konsole entweder AKTIV oder FRAGMENT. (Verwenden Sie die Webkonsole: /system/console/bundles.)
 1. Das OSGI-Bundle org.apache.jackrabbit.oak-core ist auf Version 1.8.17 oder höher (Web-Konsole verwenden: /system/console/bundles).
 
 To determine the certified platform for running with this release of AEM Sites and Assets, see [Technical Requirements](../sites-deploying/technical-requirements.md).
 
 >[!NHinweis]
->On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
+>On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Aktualisieren von Dynamic Media-Viewern (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1 enthält eine neue Version der Dynamic Media-Viewer (5.10.1), mit der auf der Seite "Bildvorgabe"nach Duplikat gesucht werden kann. Dynamic Media wird empfohlen, den folgenden Befehl auszuführen, um die Viewer-Vorgaben im Lieferumfang auf den neuesten Stand zu bringen.
+AEM 6.4.8.1 enthält eine neue Version der Dynamic Media-Viewer (5.10.1), mit der auf der Seite &quot;Bildvorgabe&quot;nach Duplikat gesucht werden kann. Dynamic Media wird empfohlen, den folgenden Befehl auszuführen, um die Viewer-Vorgaben im Lieferumfang auf den neuesten Stand zu bringen.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -200,7 +200,7 @@ To determine the certified platform for running with this release of AEM Sites a
 
 1. Stellen Sie sicher, dass Sie das AEM Cumulative Fix Pack installiert haben.
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
-1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
+1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installieren des AEM Forms JEE-Installationsprogramms {#install-aem-forms-jee-installer}
 
@@ -233,19 +233,19 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
 | Bereich | Funktion | Ersatz | Version |
 |---|---|---|---|
 | Assets | Tag-Aktion für Teilassets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
-| Assets und Adobe Creative Cloud-Integration | [Die gemeinsame Nutzung](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) von AEM in Creative Cloud-Ordnern wurde in AEM 6.2 eingeführt, um kreativen Benutzern Zugriff auf Assets aus AEM zu geben. Eine neue Funktion der Creative Cloud-Anwendung, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe wird die Ordnerfreigabe nicht weiter verbessern. Während die Funktion in AEM enthalten ist, empfehlen Kunden dringend, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-App. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Assets und Adobe Creative Cloud-Integration | [Die Freigabe](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) von Creative Cloud-Ordnern wurde in AEM 6.2 eingeführt, um kreativen Benutzern Zugriff auf Assets aus AEM zu gewähren. Eine neue Funktion der Creative Cloud-Anwendung, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus.  Adobe wird die Ordnerfreigabe nicht weiter verbessern. Während die Funktion in AEM enthalten ist, wird Kunden dringend empfohlen, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-App. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ## Bekannte Probleme {#known-issues}
 
-* Bei der Installation von AEM 6.4.8.1 verursacht die Aktualisierung von [!DNL Chrome] Version 83 ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Installationsoptionen für AEM-Standardpakete, um das Problem zu beheben. Das Problem wird nach der Installation von AEM 6.4.8.1 behoben.
+* Bei der Installation von AEM 6.4.8.1 verursacht die Aktualisierung von [!DNL Chrome] Version 83 ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Standardinstallationsoptionen AEM Pakets, um das Problem zu beheben. Das Problem wird nach der Installation von AEM 6.4.8.1 behoben.
 
-* Es kann keine E-Mail mit dem AEM-Standard-E-Mail-Sender an den Remote-SMTP-Server gesendet werden, da nur die Kommunikation mit TLS v1.2 möglich ist. Entfernen Sie das Bundle `javax.mail:mail:1.5.0-b01` aus `system/console` und aktualisieren Sie die Bundles, um das Problem zu beheben.
+* Es kann keine E-Mail mit dem Standard-E-Mail-Sender an den Remote-SMTP-Server gesendet werden, da nur die Kommunikation mit TLS v1.2 möglich ist. Entfernen Sie das Bundle `javax.mail:mail:1.5.0-b01` aus `system/console` und aktualisieren Sie die Bundles, um das Problem zu beheben.
 
-Informationen zu bekannten Problemen mit AEM 6.4.8.0 Service Pack finden Sie unter [AEM 6.4.8.0 Service Pack - Versionshinweise](sp-release-notes.md).
+Informationen zu den bekannten Problemen im AEM 6.4.8.0 Service Pack finden Sie unter [AEM 6.4.8.0 Service Pack - Versionshinweise](sp-release-notes.md).
 
 ## OSGi-Bundles und Inhaltspakete sind enthalten {#osgi-bundles-and-content-packages-included}
 
-Die folgenden Dokumente Liste der OSGi-Pakete und Inhaltspakete in AEM 6.4.8.1.
+Die folgenden Dokumente Liste der OSGi-Pakete und Content Packages in AEM 6.4.8.1.
 
 Liste der in AEM 6.4.8.1 enthaltenen OSGi-Bundles
 
