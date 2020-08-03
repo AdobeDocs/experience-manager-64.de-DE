@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1689'
+ht-degree: 59%
 
 ---
 
@@ -21,13 +24,13 @@ Die wichtigsten Funktionen, Highlights und Erweiterungen in AEM 6.4 Assets werde
 
 ## Adobe Asset Link {#adobe-asset-link}
 
-Mit Adobe Asset Link in Creative Cloud für Unternehmen lässt sich die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Erstellung von Inhalten optimieren. Es handelt sich um eine neue native Funktion in Creative Cloud für Unternehmen, die eine Verbindung zu AEM Assets direkt aus Adobe Fotoshop, Adobe Illustrator oder Adobe InDesign herstellt — ohne diese Werkzeuge zu verlassen.
+Mit Adobe Asset Link in Creative Cloud für Unternehmen lässt sich die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Erstellung von Inhalten optimieren. Es handelt sich um eine neue native Funktion im Creative Cloud für Unternehmen, die eine Verbindung zu AEM Assets direkt von Adobe Photoshop, Adobe Illustrator oder Adobe InDesign herstellt — ohne diese Werkzeuge zu verlassen.
 
-To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) page.
+To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) page.
 
 ## Enhanced Smart Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
-AEM 6.4 bietet zusätzlich zu Smart-Tags, die in AEM 6.3 gestartet wurden, Funktionen für erweiterte intelligente, intelligente und intelligente Tags, die auf künstlicher Intelligenz basieren.
+AEM 6.4 bietet zusätzlich zu Smart-Tags, die in AEM 6.3 eingeführt wurden, Funktionen für erweiterte Smart-Tags mit künstlicher Intelligenz.
 
 * Der Smart Content Service erfährt die geschäftliche Taxonomie des Kunden und verwendet sie, um digitale Assets automatisch mit kundenrelevanten Tags zu taggen, zusätzlich zu generischen Tags. Dadurch lassen sich Asset erheblich schneller auffinden, wodurch die Markteinführungszeit verkürzt wird.
 * Adobe Sensei unterstützt den Smart Content Service, der Ihnen die Schulung des Bilderkennungsalgorithmus in Ihrer Geschäftstaxonomie ermöglicht. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf ähnliche Assets anzuwenden.
@@ -36,15 +39,15 @@ Um AEM Assets Enhanced Smart Tags zu verwenden, installieren Sie das [neueste Se
 
 ## Smart Translation Search (powered by Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
-AEM 6.4 bietet die Funktion zur intelligenten Übersetzungssuche, um Szenarien für die mehrsprachige Suche zu unterstützen. Unternehmen mit weltweit verstreuten Teams können nun in verschiedenen Sprachen nach Assets suchen, ohne auf kostspielige und zeitraubende Übersetzungs-Workflows angewiesen zu sein. 
+AEM 6.4 bietet die Funktion zur intelligenten Suche nach Übersetzungen, um Szenarien für die mehrsprachige Suche zu unterstützen. Unternehmen mit weltweit verstreuten Teams können nun in verschiedenen Sprachen nach Assets suchen, ohne auf kostspielige und zeitraubende Übersetzungs-Workflows angewiesen zu sein. 
 
-* Die Suchabfrage wird ohne manuelles Eingreifen übersetzt.
+* Die Abfrage der Suche wird ohne manuelles Eingreifen übersetzt.
 * Intelligente Tags werden auf Englisch generiert und maschinell in andere Sprachen übersetzt.
 * Die mehrsprachige Suche wird mithilfe der Open Source-Bibliothek Apache Joshua erstellt, die mehr als 50 Sprachen unterstützt.
 
 ## Benutzererlebnis {#user-experience}
 
-AEM 6.4 bietet bedeutende Verbesserungen für die Benutzererfahrung in den Bereichen Durchsuchen, Suchen, mehrseitige Assets und Administrationstools. Details:
+AEM 6.4 bietet erhebliche Verbesserungen der Benutzererfahrung in den Bereichen Durchsuchen, Suchen, mehrseitige Assets und Administrationstools. Details:
 
 Verbesserungen beim Durchsuchen
 
@@ -84,7 +87,7 @@ AEM 6.4 umfasst mehrere erweiterte Metadatenverwaltungsfunktionen, um Metadaten 
 
 ## Berichte {#reports}
 
-AEM 6.4 bietet wichtige Verbesserungen bei der Asset-Berichterstellung:
+AEM 6.4 bietet wesentliche Verbesserungen am Asset Berichte:
 
 * Neues, (für große Repositorys) skalierbares Bericht-Framework auf Unternehmensebene, das Sling-Aufträge für die asynchrone Verarbeitung von Berichtanforderungen anwendet. Sie können die Berichterstellung zu einem bestimmten Zeitpunkt planen. Sie können einem Bericht auch benutzerdefinierte Spalten hinzufügen.
 * Neue OOTB-Berichte werden von Kunden wie Disk Usage, Files, Link Shares, Publish to Brand Portal und Smart Tags Training am häufigsten gestellt.
@@ -103,8 +106,8 @@ AEM 6.4 bietet wichtige Verbesserungen bei der Asset-Berichterstellung:
 
 ## AEM-Desktop-Programm {#aem-desktop-app}
 
-AEM desktop app is updated to version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.\
-Im Folgenden finden Sie eine Liste der wichtigsten AEM Desktop-App-Highlights seit der Veröffentlichung von AEM 6.3:
+AEM desktop app is updated to version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) document.\
+Hier finden Sie eine Liste AEM Highlights der Desktop-App seit der Veröffentlichung von AEM 6.3:
 
 * Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen.
 * Benutzeroberfläche zur Überwachung von Asset-Uploads im Hintergrund.
@@ -115,22 +118,21 @@ Im Folgenden finden Sie eine Liste der wichtigsten AEM Desktop-App-Highlights se
 
 Um den Zugriff auf die Dokumentation und Best Practices zu erleichtern, stehen die folgenden Dokumentationen zur Verfügung:
 
-* [Benutzerhandbuch](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)für Endbenutzer, die mit der Anwendung arbeiten
-* [Leitfaden](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app-best-practices.html)zu Best Practices für Endbenutzer und Administratoren
-* [Installationshandbuch](https://helpx.adobe.com/experience-manager/desktop-app/install-configure-aem-desktop-app.html)für die Zusammenarbeit von Administratoren bei der Einrichtung von AEM und AEM Desktop-Apps
+* [Benutzerhandbuch](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)für Endbenutzer, die mit der Anwendung arbeiten.
+* [Installationshandbuch](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)für Administratoren, die AEM und AEM Desktop-App für die Zusammenarbeit einrichten
 
 ## Mehrstufiger Speicher {#tiered-storage}
 
 AEM 6.4 enthält eine Reihe von Funktionen, die verschiedene Voreinstellungen für mehrstufigen Speicher unterstützen und Lebenszyklusregeln implementieren. Die Speicheroptionen unterstützen u. a. auch Public Clouds, nämlich AWS oder Azure.
 
-* Die Möglichkeit für Benutzer, die Speicherklasse nach Belieben auszuwählen und später zu ändern und Regeln für die Speicherung von Assets von einer Klasse in eine andere zu definieren oder den Lebenszyklus ihrer Assets zu verwalten.
+* Die Möglichkeit für Benutzer, die Datenspeicherung nach Belieben auszuwählen und später zu ändern und Regeln für die Datenspeicherung von Assets von einer Klasse in eine andere zu definieren oder den Lebenszyklus ihrer Assets zu verwalten.
 * Die Möglichkeit für Benutzer, ihre Speicherkosten durch die Wahl einer anderen AWS- oder Azure-Option zu senken.
 
 Eine Übersicht der unterstützten Plattformen finden Sie in der [Dokumentation der technischen Anforderungen](../sites-deploying/technical-requirements.md).
 
 ## Geschlossene Benutzergruppe {#closed-user-group}
 
-* In AEM 6.4 bieten die Optionen &quot;Geschlossene Benutzergruppe&quot;oder &quot;CUG&quot;eine Möglichkeit, den Ordnerzugriff in der Veröffentlichungsinstanz einzuschränken. Es handelt sich um eine Touch-UI-Option, um Prinzipale über die Ordnereigenschaftsseite auf Ordnerebene hinzuzufügen und auf alle Ordner- und Unterordner/Assets innerhalb von Ordnern anzuwenden.
+* In AEM 6.4 bietet die Option &quot;Geschlossene Benutzergruppe&quot;oder &quot;CUG&quot;eine Möglichkeit, den Ordnerzugriff in der Veröffentlichungsinstanz einzuschränken. Es handelt sich um eine Touch-UI-Option, um Prinzipale über die Ordnereigenschaften auf Ordnerebene hinzuzufügen und sie auf alle Ordner- und Unterordner/Assets innerhalb von Ordnern anzuwenden.
 * Wenn im Veröffentlichungsmodus ein CUG konfiguriert ist und die Autorisierung für einen Ordner aktiviert ist, werden Benutzer zu einer Anmeldeseite weitergeleitet, wenn sie versuchen, auf den Ordner zuzugreifen. Daher können autorisierte Benutzer erst nach erfolgreicher Anmeldung auf den Ordner und seine Assets zugreifen. Entsprechend beschränkt die geschlossene Benutzergruppe den Lesezugriff auf eine bestimmte Struktur im Content-Repository für alle Benutzer außer ausgewählten Prinzipalen.
 
 ## Dynamic Media add-on {#dynamic-media-add-on}
@@ -169,4 +171,4 @@ Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbea
 
 ### 3D and integration with Dimension CC {#d-and-integration-with-dimension-cc}
 
-Integration with [Adobe Dimension CC](https://www.adobe.com/products/dimension.html) for more seamless 3D workflow has been introduced. Weitere Informationen finden Sie in der Dokumentation zum [Arbeiten mit 3D-Assets](../assets/assets-3d.md) .
+Integration with [Adobe Dimension CC](https://www.adobe.com/de/products/dimension.html) for more seamless 3D workflow has been introduced. Weitere Informationen finden Sie in der Dokumentation zum [Arbeiten mit 3D-Assets](../assets/assets-3d.md) .
