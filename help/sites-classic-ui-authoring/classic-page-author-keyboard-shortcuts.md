@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >* Windows: Strg + Klick auf die gewünschten Komponenten.
 >* Mac: Befehlstaste + Klick auf die gewünschten Komponenten.
+
 >
 
 
@@ -38,14 +42,14 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 <table> 
  <tbody> 
   <tr> 
-   <th>Position</th> 
+   <th>Ort</th> 
    <th>Kürzel</th> 
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
    <td>Bearbeitungsmodus</td> 
    <td><code>Ctrl-z</code></td> 
-   <td>Letzte Änderung rückgängig machen</td> 
+   <td>Letzte Änderung rückgängig machen.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -55,12 +59,12 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr> 
    <td> </td> 
    <td><strong><code>Shift-Click</code></strong></td> 
-   <td>Auswahl mehrerer Absätze.</td> 
+   <td>Mehrere Absätze auswählen.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-Click</code></strong></td> 
-   <td>Auswahl mehrerer Absätze.</td> 
+   <td>Mehrere Absätze auswählen.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -116,7 +120,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-U</code></strong><br /> </td> 
-   <td>Unterstrichen</td> 
+   <td>Unterstreichen</td> 
   </tr> 
   <tr> 
    <td>Content Finder - Suchfeld</td> 
@@ -160,13 +164,13 @@ Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastatu
 <table> 
  <tbody> 
   <tr> 
-   <th>Position</th> 
+   <th>Ort</th> 
    <th>Kürzel</th> 
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
-   <td>Bearbeitungsmodus</td> 
-   <td><br /> Legen Sie das folgende Suffix in der URL fest: Verwenden Sie <code>?debugClientLibs=true</code><br /> dann:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Modus Bearbeiten</td> 
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Anzeige von zeitlichen Statistiken zum Laden von Seiten.</td> 
   </tr> 
  </tbody> 
