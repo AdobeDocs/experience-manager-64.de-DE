@@ -153,7 +153,7 @@ The path specified by the `sling:resourceType` can be either:
 * absolut oder
 * relativ zu einem Konfigurationsparameter
 
-   Relative Pfade werden von Adobe zur Verbesserung der Portabilität empfohlen.
+   Relative Pfade werden von der Adobe empfohlen, da sie die Portabilität erhöhen.
 
 All Sling scripts are stored in subfolders of either `/apps` or `/libs`, which will be searched in this order (see [Customizing Components and Other Elements](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -173,13 +173,13 @@ Darüber hinaus unterstützt Apache Sling die Integration mit anderen gängigen 
 
 Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
-* GET/HEAD-Anforderungen und URLs, die in HTML enden (Standardanforderungstypen, Standardformat)
+* GET/HEAD-Anforderungen und URLs mit der Endung .html (Standardanforderungstypen, Standardformat)
 
    Das Skript lautet /apps/hr/jobs/jobs.esp. Im letzten Abschnitt von sling:resourceType wird der Dateiname festgelegt.
 
-* POST-Anforderungen (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben sein)
+* Anforderungen an die POST (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
 
-   Der POST-Test wird im Skriptnamen verwendet.
+   POST wird im Skriptnamen verwendet.
 
    The script will be `/apps/hr/jobs/jobs.POST.esp`.
 
@@ -355,7 +355,7 @@ wobei currentNode das aktuelle Knotenobjekt ist.
 
 Weitere Informationen zum Bearbeiten von Knotenobjekten finden Sie in den [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**Widget** In AEM werden alle Benutzereingaben von Widgets verwaltet. Diese werden oft verwendet, um die Bearbeitung eines Inhalts zu steuern.
+**Widget** AEM alle Benutzereingaben werden von Widgets verwaltet. Diese werden oft verwendet, um die Bearbeitung eines Inhalts zu steuern.
 
 Dialogfelder werden durch die Kombination von Widgets erstellt.
 
@@ -414,7 +414,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen, For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
 
 * `/apps`
 
