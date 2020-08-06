@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 74%
 
 ---
 
@@ -23,7 +26,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
 1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
 1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
 
-   * from `/libs/ws`
+   * von `/libs/ws`
    * in `/apps/sampleApplication/wscomponents`.
 
 1. Erstellen Sie im Ordner /apps/sampleApplication/wscomponents/js eine Datei mit dem Namen demomain.js. Kopieren Sie Code aus /libs/ws/js/main.js in demomain.js.
