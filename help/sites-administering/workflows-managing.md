@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 90%
 
 ---
 
@@ -66,6 +69,7 @@ If the workflow model is stored within `/var/workflow/models` then you can assig
    * **Typ**: `Deny`
    * **Berechtigungen**: `jcr:read`
    * **rep:glob**: Verweis auf den spezifischen Workflow
+
    ![wf-108](assets/wf-108.png)
 
    The **Access Control List** table now includes the restriction for `content-authors` on the `prototype-wfm-01` workflow model.
@@ -101,6 +105,7 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
    * **Grundsatz**: `content-authors`
    * **Typ**: `Deny`
    * **Berechtigungen**: `jcr:read`
+
    >[!NOTE]
    >
    >Wie im Abschnitt [Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) können Sie ein „rep:glob“ einfügen, um den Zugriff auf einen spezifischen Workflow zu beschränken.
