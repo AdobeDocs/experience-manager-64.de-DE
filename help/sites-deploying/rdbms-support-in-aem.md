@@ -11,13 +11,16 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 74%
 
 ---
 
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
@@ -43,7 +46,7 @@ Weitere Informationen über die Schritte zum Erstellen von OSGi-Bundles für JDB
 
 >[!NOTE]
 >
->Einige SQL-Treiber werden bereits als OSGi-Pakete verpackt.
+>Einige der SQL-Treiber werden bereits als OSGi-Pakete verpackt.
 >
 >Wenn dies der Fall ist, kopieren Sie einfach die JAR-Datei in install-path/crx-quickstart/install/9.
 
@@ -68,11 +71,11 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
    1. ZIP-Archiv von https://dev.mysql.com/downloads/connector/j/ herunterladen
       * Version muss >= 5.1.38 sein
    1. Extrahieren Sie das `mysql-connector-java-version-bin.jar` (Bundle) aus dem Archiv
-   1. Verwenden Sie die Webkonsole, um das Bundle zu installieren und zu starten:
+   1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und Beginn:
       * Go to *http://serveraddress:serverport/system/console/bundles*
       * Wählen Sie **Installieren/Aktualisieren**
       * Navigieren Sie zum ausgewählten Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde
-      * Überprüfen Sie, ob der JDBC-Treiber für **Oracle Corporation für MySQLcom.mysql.jdbc** aktiv ist, und starten Sie ihn.
+      * Vergewissern Sie sich, dass der JDBC-Treiber der **Oracle Corporation für MySQLcom.mysql.jdbc** aktiv ist, und Beginn ihn.
 
 1. Finally, start AEM with the `crx3` and `crx3rdb` runmodes:
 
