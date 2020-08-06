@@ -11,6 +11,9 @@ content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1436'
+ht-degree: 77%
 
 ---
 
@@ -48,8 +51,8 @@ Ihre adaptiven Formulare können möglicherweise einige Konfigurationen, Einstel
 
    * Benutzerdefinierte Layouts
    * Benutzerdefiniertes Erscheinungsbild
-   * CSS-Datei - als Eingabe im Dialogfeld Eigenschaften des adaptiven Formularcontainers genommen
-   * Client-Bibliothekskategorie - als Eingabe im Dialogfeld Eigenschaften des adaptiven Formularcontainers genommen
+   * CSS-Datei - als Eingabe im Dialogfeld Eigenschaften des Containers für adaptive Formulare genommen
+   * Client Library-Kategorie - wird als Eingabe im Dialogfeld Eigenschaften des Containers für adaptive Formulare verwendet
    * Andere Client-Bibliothek, die als Teil der adaptiven Formularvorlage enthalten sein kann.
    * Entwurfspfade
 
@@ -73,6 +76,7 @@ Ein Asset kann über folgende Status verfügen:
       * Wenn Sie sich in der Listenansicht befinden, aktivieren Sie das Kontrollkästchen eines Assets. Das Asset wird ausgewählt.
       * Tippen Sie auf ein Asset, um dessen Details anzuzeigen.
       * Display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
+
       >[!NOTE]
       >
       >Wählen Sie nicht mehrere Assets aus. Das Veröffentlichen mehrerer Assets auf einmal wird nicht unterstützt.
@@ -128,7 +132,7 @@ Mit AEM Forms können Sie die Veröffentlichung von Formularen und Dokumenten un
 Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröffentlichung bzw. das Rückgängigmachen der Veröffentlichung bei Formular- und Dokument-Assets zu planen:
 
 1. Select an asset and tap **[!UICONTROL View Properties]**. Die Seite mit den Metadateneigenschaften wird geöffnet.
-1. Tippen Sie auf der Seite &quot;Metadateneigenschaften&quot;auf **[!UICONTROL Erweitert]** und dann auf **[!UICONTROL Bearbeiten]** der Datei &quot; ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png)&quot;.
+1. Tippen Sie auf der Seite &quot;Metadateneigenschaften&quot;auf **[!UICONTROL Erweitert]** und dann auf **[!UICONTROL Bearbeiten]** von illustratorcc_penciltool_cur_edit_2_17 ![](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Wählen Sie in den Feldern **[!UICONTROL Veröffentlichungszeit]** und **[!UICONTROL Zeit für Rückgängigmachen der Veröffentlichung]** das Datum und die Uhrzeit aus.
 
    Tippen Sie auf **[!UICONTROL Fertig]** ![aem6forms_check](assets/aem6forms_check.png).
