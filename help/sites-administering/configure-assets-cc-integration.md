@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
 source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +28,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 >[!NOTE]
 >
->Die Funktion zum Freigeben von AEM-Ordnern für Adobe Creative Cloud ist veraltet. Learn more and find a better method in [AEM and Creative Cloud integration best practices](../assets/aem-cc-integration-best-practices.md). Die Konfiguration der Replikation von AEM zu Marketing Cloud und zum Austausch von Assets zwischen AEM Assets und Marketing Cloud wird weiterhin unterstützt.
+>Die Funktion zum Freigeben von AEM Adobe Creative Cloud-Ordnern wird nicht mehr unterstützt. Learn more and find a better method in [AEM and Creative Cloud integration best practices](../assets/aem-cc-integration-best-practices.md). Die Konfiguration der Replikation von AEM zu Marketing Cloud und zum Austausch von Assets zwischen AEM Assets und Marketing Cloud wird weiterhin unterstützt.
 
 ![Datenfluss, wenn AEM Assets und Creative Cloud integriert werden](assets/chlimage_1-287.png)
 
@@ -48,7 +51,7 @@ Datenfluss, wenn AEM Assets und Creative Cloud integriert werden
    >Sie benötigen Administratorrechte, um eine Anwendungs-ID zu erstellen.
 
 1. From the left pane, navigate to **[!UICONTROL Developer Tools]** > **[!UICONTROL Applications]** to view a list of applications.
-1. Klicken Sie auf **[!UICONTROL Add]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) , um eine Anwendung zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) , um eine Anwendung zu erstellen.
 1. Wählen Sie aus der Liste **[!UICONTROL Client-Anmeldeinformationen]** die Option **[!UICONTROL Dienstkonto (JWT-Assertion)]** aus. Dies ist ein Server-zu-Server-Kommunikationsdienst für die Serverauthentifizierung.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
@@ -150,7 +153,7 @@ Datenfluss, wenn AEM Assets und Creative Cloud integriert werden
    >[!NOTE]
    Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird im Rahmen der Freigabe in Adobe Marketing Cloud nicht unterstützt. Wenn Sie einen Ordner bei seiner Erstellung in AEM Assets freigeben möchten, wählen Sie nicht die Option **[!UICONTROL Geordnet]** aus.
 
-1. Aktualisieren Sie die Benutzeroberfläche von AEM Assets. Der Ordner, den Sie in der Asset-Konsole Ihrer lokalen AEM Assets-Instanz erstellt haben, wird in die Marketing Cloud-Benutzeroberfläche kopiert. Das Asset, das Sie in den Ordner in AEM Assets hochladen, wird in der Kopie des Ordners in der Marketing Cloud angezeigt, nachdem es vom AEM-Server verarbeitet wurde.
+1. Aktualisieren Sie die AEM Assets-Benutzeroberfläche. Der Ordner, den Sie in der Asset-Konsole Ihrer lokalen AEM Assets-Instanz erstellt haben, wird in die Marketing Cloud-Benutzeroberfläche kopiert. Das Asset, das Sie in den Ordner in AEM Assets hochladen, wird in der Ordnerkopie in Marketing Cloud angezeigt, nachdem es vom AEM verarbeitet wurde.
 1. Sie können in der replizierten Kopie des Ordners in Marketing Cloud auch ein Asset hochladen. Nach der Verarbeitung wird das Asset im freigegebenen Ordner in AEM Assets angezeigt.
 
 ## Austauschen von Assets zwischen AEM Assets und Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
@@ -170,7 +173,7 @@ Mit AEM Assets können Sie Ordner mit Assets für Benutzer von Adobe Creative Cl
 
 Die Synchronisierung zwischen AEM Assets und Marketing Cloud ist so gestaltet, dass die Benutzercomputerinstanz, von der das Asset hochgeladen wird, das Recht zur Änderung des Assets behält. Nur diese Änderungen werden in der anderen Instanz eingefügt. 
 
-Wenn zum Beispiel ein Asset von einer AEM Assets-Instanz (vor Ort) hochgeladen wird, werden die von dieser Instanz vorgenommenen Änderungen am Asset in der Marketing Cloud-Instanz aufgefüllt. Die Änderungen, die von der Marketing Cloud-Instanz zu demselben Asset vorgenommen wurden, werden jedoch nicht an die AEM-Instanz weitergegeben und umgekehrt für Assets, die aus der Marketing Cloud hochgeladen wurden.
+Wenn zum Beispiel ein Asset von einer AEM Assets-Instanz (vor Ort) hochgeladen wird, werden die von dieser Instanz vorgenommenen Änderungen am Asset in der Marketing Cloud-Instanz aufgefüllt. Die von der Marketing Cloud-Instanz zu demselben Asset vorgenommenen Änderungen werden jedoch nicht an die AEM-Instanz weitergegeben und umgekehrt, wenn ein Asset aus Marketing Cloud hochgeladen wird.
 
 >[!MORELIKETHIS]
 * [Best Practices für die Integration von AEM und Creative Cloud](../assets/aem-cc-integration-best-practices.md)
