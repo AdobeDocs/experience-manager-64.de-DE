@@ -12,6 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 56%
 
 ---
 
@@ -76,17 +79,17 @@ Statische Vorlagen:
 
 >[!NOTE]
 >
->Ab AEM 6.4 gilt die Verwendung von statischen Vorlagen nicht als bewährte Verfahren. Verwenden Sie stattdessen bearbeitbare Vorlagen.
+>Ab AEM 6.4 wird die Verwendung von statischen Vorlagen nicht als bewährtes Verfahren betrachtet. Verwenden Sie stattdessen bearbeitbare Vorlagen.
 >
->[Mit den AEM-Moderationstools](modernization-tools.md) können Sie von statischen zu bearbeitbaren Vorlagen migrieren.
+>[AEM Modernisierungstools](modernization-tools.md) unterstützen Sie bei der Migration von statischen zu bearbeitbaren Vorlagen.
 
 ### Verfügbarkeit der Vorlage {#template-availability}
 
 >[!CAUTION]
 >
->AEM bietet mehrere Eigenschaften, um die unter **Sites** zulässigen Vorlagen zu steuern. Eine Kombination dieser Regeln kann jedoch zu sehr komplexen Regeln führen, die sich nur schwer verfolgen und verwalten lassen.
+>AEM Angeboten mehrere Eigenschaften, um die unter **Sites** zulässigen Vorlagen zu steuern. Eine Kombination dieser Regeln kann jedoch zu sehr komplexen Regeln führen, die sich nur schwer verfolgen und verwalten lassen.
 >
->Daher empfiehlt Adobe, dass Sie mit einem einfachen Einstieg beginnen, indem Sie Folgendes definieren:
+>Daher empfiehlt Adobe, dass Sie einen einfachen Beginn durchführen, indem Sie Folgendes definieren:
 >
 >* Nur die `cq:allowedTemplates` Eigenschaft
    >
@@ -96,7 +99,7 @@ Statische Vorlagen:
 >
 For an example, see We.Retail: `/content/we-retail/jcr:content`
 >
->Die Eigenschaften `allowedPaths`, `allowedParents`und `allowedChildren` können auch in die Vorlagen eingefügt werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *viel* einfacher, weitere `cq:allowedTemplates` Eigenschaften in Unterabschnitten der Site zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden müssen.
+>Die Eigenschaften `allowedPaths`, `allowedParents`und `allowedChildren` können auch auf den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *viel* einfacher, weitere `cq:allowedTemplates` Eigenschaften in Unterabschnitten der Site zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden müssen.
 >
 >Ein weiterer Vorteil besteht darin, dass die `cq:allowedTemplates` Eigenschaften von einem Autor auf der Registerkarte &quot; **Erweitert** &quot;der **Seiteneigenschaften** aktualisiert werden können. Die anderen Vorlageneigenschaften können nicht über die (Standard-) Benutzeroberfläche aktualisiert werden. Daher benötigen Sie einen Entwickler, der die Regeln und eine Codebereitstellung für jede Änderung pflegt.
 
