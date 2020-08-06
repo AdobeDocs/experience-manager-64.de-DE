@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 48%
 
 ---
 
@@ -22,7 +25,7 @@ AEM has integrated the landing pages solution with [Adobe Analytics](https://www
 1. Click Through-Komponente
 1. Grafischer Link
 
-Diese Komponenten stellen bestimmte Attribute bereit, die über Adobe Analytics-Variablen (Traffic, Konversionsvariablen) und Erfolgsereignisse zugeordnet werden können, um Informationen an Adobe Analytics zu senden.
+Diese Komponenten stellen bestimmte Attribute zur Verfügung, die über Adobe Analytics-Variablen (Traffic, Konversionsvariablen) und Erfolgsvariablen zugeordnet werden können, um Informationen an Adobe Analytics zu senden.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -38,7 +41,7 @@ In AEM, the **Call to Action** components - **ClickThroughLink** and **Graphical
 
 Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
 
-1. Wählen Sie nach dem Erstellen der Adobe Analytics-Konfiguration und dem Erstellen eines neuen Frameworks die entsprechende Report Suite aus dem Dropdownmenü. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
+1. Wählen Sie nach dem Erstellen der Adobe Analytics-Konfiguration und dem Erstellen eines neuen Frameworks die entsprechende Berichte-Suite aus dem Dropdownmenü. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
 1. Ziehen Sie Aktionsaufrufkomponenten bei Bedarf vom Sidekick in den Zuordnungsbereich in der Mitte der Seite und legen Sie sie dort ab.
 
 <table> 
@@ -50,37 +53,37 @@ Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
   </tr>
   <tr>
    <td><strong>CTA-Click-Through-Link</strong></td> 
-   <td><i>eventData.clickthroughLinkLabel</i><br /> </td> 
+   <td><i>eventData.clickthroughLinkLabel</i> <br /> </td> 
    <td>Die Beschriftung auf dem Link oder der Text des Links </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventData.clickthroughLinkTarget</i><br /> </td> 
+   <td><i>eventData.clickthroughLinkTarget</i> <br /> </td> 
    <td>Das Ziel, an dem Sie sich befinden, wenn Sie auf den Link klicken </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventData.events.clickthroughLinkClick</i><br /> </td> 
+   <td><i>eventData.Ereignisses.clickthroughLinkClick</i> <br /> </td> 
    <td>Das Klickereignis </td> 
   </tr>
   <tr>
    <td><strong>CTA-Grafiklink</strong></td> 
-   <td><i>eventData.clicktroughImageLabel</i><br /> </td> 
+   <td><i>eventData.clicktroughImageLabel</i> <br /> </td> 
    <td>Der Titel des CTA-Bildes </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventData.clicktroughImageTarget</i><br /> </td> 
+   <td><i>eventData.clicktroughImageTarget</i> <br /> </td> 
    <td>Das Ziel, das aufgerufen wird, wenn Sie auf das Bild mit Link klicken</td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventData.clicktroughImageAsset</i><br /> </td> 
+   <td><i>eventData.clicktroughImageAsset</i> <br /> </td> 
    <td>Der Pfad zum Bild-Asset im Repository </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventData.events.clicktroughImageClick</i><br /> </td> 
+   <td><i>eventData.Ereignisses.clicktroughImageClick</i> <br /> </td> 
    <td>Das Klickereignis</td> 
   </tr>
  </tbody>
