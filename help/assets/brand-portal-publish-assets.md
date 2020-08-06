@@ -4,17 +4,20 @@ description: Erfahren Sie, wie Sie Assets im Markenportal veröffentlichen und d
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: f09853921dec6602952f369982a1563c7e4a9727
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 52%
 
 ---
 
 
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
 
-Als Administrator für Adobe Experience Manager (AEM) Assets können Sie Assets für Ihr Unternehmen in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungsarbeitsablauf auf ein späteres Datum/eine spätere Uhrzeit planen). Sie müssen jedoch zuerst AEM Assets mit dem Markenportal konfigurieren. For details, see [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager (AEM) Asset-Administrator können Sie Assets für Ihr Unternehmen in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow auf ein späteres Datum/eine spätere Uhrzeit planen). Zunächst müssen Sie AEM Assets jedoch mit Brand Portal konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Nachdem Sie ein Asset veröffentlicht haben, steht es Benutzern im Markenportal zur Verfügung.
 
-Wenn Sie nachfolgende Änderungen am ursprünglichen Asset in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie das Asset erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass derzeit vorgenommene Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte Änderungen, die von einem Administrator veröffentlicht werden, sind im Markenportal verfügbar.
+Wenn Sie nachfolgende Änderungen am ursprünglichen Asset in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie das Asset erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in Brand Portal veröffentlichen. Gehen Sie wie folgt vor, um Assets in Brand Portal zu veröffentlichen:
 
@@ -32,13 +35,13 @@ Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in Bran
    * [Assets sofort veröffentlichen](#publish-now)
    * [Assets später veröffentlichen](#publish-later)
 
-## Assets jetzt veröffentlichen {#publish-now}
+## Sofortiges Veröffentlichen von Assets {#publish-now}
 
 Um die ausgewählten Assets in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-* From the toolbar, select **[!UICONTROL Quick Publish]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
 
-* From the toolbar, select **[!UICONTROL Manage Publication]**.
+* Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
    1. Then from the **[!UICONTROL Action]** select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**. Klicken oder tippen Sie auf **[!UICONTROL Weiter].**
 
@@ -53,11 +56,11 @@ So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem spätere
 1. Once you have selected assets/ folders to publish, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
 2. On **[!UICONTROL Manage Publication]** page, select **[!UICONTROL Publish to Brand Portal]** from **[!UICONTROL Action]** and select **[!UICONTROL Later]** from **[!UICONTROL Scheduling]**.
 
-   ![publishlatbp-1](assets/publishlaterbp-1.png)
+   ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. Select an **[!UICONTROL Activation date]** and specify time. Klicken oder tippen Sie auf **[!UICONTROL Weiter]**.
-4. Select an **[!UICONTROL Activation date]** and specify time. Klicken oder tippen Sie auf **[!UICONTROL Weiter]**.
-5. Specify a Workflow title under **[!UICONTROL Workflows]**. Tap/ click **[!UICONTROL Publish Later]**.
+3. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken oder tippen Sie auf **[!UICONTROL Weiter]**.
+4. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken oder tippen Sie auf **[!UICONTROL Weiter]**.
+5. Geben Sie einen Workflow-Titel unter **[!UICONTROL Workflows]** an. Tap/ click **[!UICONTROL Publish Later]**.
 
    ![publishworkflow](assets/publishworkflow.png)
 
