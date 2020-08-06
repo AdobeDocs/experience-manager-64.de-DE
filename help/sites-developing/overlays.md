@@ -1,7 +1,7 @@
 ---
 title: Überlagerungen
 seo-title: Überlagerungen
-description: 'AEM nutzt Überlagerungen, um die Konsolen und andere Funktionen zu erweitern und anzupassen. '
+description: 'AEM nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen. '
 seo-description: 'AEM nutzt Überlagerungen, um die Konsolen und andere Funktionen zu erweitern und anzupassen. '
 uuid: d14c08fe-04c0-4925-8c99-c6644357919d
 contentOwner: Guillaume Carlino
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 67%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
 
 AEM (und zuvor CQ) nutzt seit Langem Überlagerungen, um die [Konsolen](/help/sites-developing/customizing-consoles-touch.md) und andere Funktionen (beispielsweise die [Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md)) zu erweitern und anzupassen.
 
-Überlagerung ist ein Begriff, der in unterschiedlichen Zusammenhängen verwendet werden kann. In diesem Zusammenhang (der Erweiterung von AEM) ist damit die Übernahme der vordefinierten Funktionen und das Anwenden eigener Definitionen (zum Anpassen der Standardfunktionen) gemeint.
+Der Begriff „Überlagerung“ kann in unterschiedlichen Zusammenhängen verwendet werden. In diesem Zusammenhang (der Erweiterung von AEM) ist damit die Übernahme der vordefinierten Funktionen und das Anwenden eigener Definitionen (zum Anpassen der Standardfunktionen) gemeint.
 
-In a standard instance the predefined functionality is held under `/libs` and it is recommended practice to define your overlay (customizations) under the `/apps` branch. AEM uses a search path to find a resource, searching first the `/apps` branch and then the `/libs` branch (the [search path can be configured](#configuring-the-search-paths)). Durch diesen Mechanismus hat Ihre Überlagerung (und die dort definierten Anpassungen) Priorität.
+In a standard instance the predefined functionality is held under `/libs` and it is recommended practice to define your overlay (customizations) under the `/apps` branch. AEM uses a search path to find a resource, searching first the `/apps` branch and then the `/libs` branch (the [search path can be configured](#configuring-the-search-paths)). Durch diesen Mechanismus hat Ihre Überlagerung  (und die dort definierten Anpassungen) Priorität.
 
 Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwendung von Überlagerungen vorgenommen:
 
@@ -29,11 +32,11 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
    * Methode
 
-      * Reconstruct the appropriate `/libs` structure under `/apps`.
+      * Rekonstruieren Sie die entsprechende `/libs`-Struktur unter `/apps`.
 
          Dies erfordert keine 1:1-Kopie, der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) wird verwendet, um die erforderlichen Originaldefinitionen zu vergleichen. Der Sling Resource Merger stellt Dienste für den Zugriff auf und die Zusammenführung von Ressourcen mittels Vergleichsmechanismen bereit.
 
-      * Make any changes under `/apps`.
+      * Nehmen Sie beliebige Änderungen unter `/apps` vor.
    * Vorteile
 
       * Robuster gegenüber Änderungen unter `/libs`.
@@ -44,11 +47,11 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
    * Methode
 
-      * Kopieren Sie den Inhalt von `/libs` in `/apps`
+      * Copy the content from `/libs` to `/apps`
 
          Sie müssen die gesamte Unterverzweigung einschließlich der Eigenschaften kopieren.
 
-      * Make any changes under `/apps`.
+      * Nehmen Sie beliebige Änderungen unter `/apps` vor.
    * Nachteile
 
       * Although your changes will not be lost when something changes under `/libs`, you might have to recreate certain changes that occur in your overlay under `/apps`.
