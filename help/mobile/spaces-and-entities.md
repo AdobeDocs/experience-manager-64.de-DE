@@ -1,8 +1,8 @@
 ---
 title: Bereiche und Entitäten
 seo-title: Entwickeln von AEM Mobile Content Services
-description: Diese Seite dient als Landingpage für die Entwicklung von AEM Mobile Content Services.
-seo-description: Diese Seite dient als Landingpage für die Entwicklung von AEM Mobile Content Services.
+description: Diese Seite bietet eine Landingpage zur Entwicklung von AEM Mobile Content Services.
+seo-description: Diese Seite bietet eine Landingpage zur Entwicklung von AEM Mobile Content Services.
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 4%
 
 ---
 
@@ -24,23 +27,23 @@ Ein Leerzeichen ist ein bequemer Speicherort für Entitäten, die über die Cont
 
 >[!NOTE]
 >
->Um einem beliebigen Kanal von Content Services etwas zur Verfügung zu stellen, muss es sich unter einem Leerzeichen befinden.
+>Um einem Kanal über Content Services etwas zur Verfügung zu stellen, muss es unter einem Leerzeichen stehen.
 
 ## Erstellen eines Bereichs {#creating-a-space}
 
 Wenn der Benutzer einer mobilen App einen Haufen Inhalte und Assets bereitstellen möchte, erstellt der Benutzer den Bereich mithilfe des AEM Mobile-Dashboards.
 
-Erstmals zeigt das AEM Mobile-Dashboard, der keine Inhaltsdienste für die Verwendung mit Leerzeichen konfiguriert hat, nur Apps an, nachdem **Content Services** ausgewählt wurde.
+Erstmals zeigt das AEM Mobile-Dashboard nur Apps an, nachdem der Benutzer keine Inhaltsdienste für die Verwendung mit Leerzeichen konfiguriert hat, nachdem er **Content Services** ausgewählt hat.
 
 >[!CAUTION]
 >
->**Voraussetzungen für das Hinzufügen eines Bereichs**
+>**Voraussetzungen für das Hinzufügen eines Raums**
 >
->Markieren Sie die Option &quot;AEM Content Services **für die Verwendung von Bereichen** aktivieren&quot;und aktivieren Sie sie im AEM Mobile-Anwendungs-Dashboard.
+>Markieren Sie die Option &quot; **AEM Content Services** aktivieren&quot;, um mit Bereichen zu arbeiten, und aktivieren Sie sie in Ihrem AEM Mobile-Anwendungs-Dashboard.
 >
 >Weitere Informationen finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md) .
 
-Nachdem Sie Leerzeichen im Dashboard konfiguriert haben, führen Sie die folgenden Schritte aus, um Leerzeichen zu erstellen:
+Nachdem Sie Leerzeichen in Dashboard konfiguriert haben, führen Sie die folgenden Schritte aus, um Leerzeichen zu erstellen:
 
 1. Wählen Sie **Bereiche** in Content Services.
 
@@ -56,7 +59,7 @@ Nachdem Sie Leerzeichen im Dashboard konfiguriert haben, führen Sie die folgend
 
 Nachdem Sie einen Bereich erstellt haben, klicken Sie auf der linken Seite, um den Bereich in der Liste zu verwalten.
 
-Sie können Eigenschaften des Bereichs anzeigen, den Bereich löschen oder den Bereich und dessen Inhalt in einer AEM-Veröffentlichungsinstanz veröffentlichen.
+Sie können die Eigenschaften des Bereichs festlegen, den Bereich löschen oder den Ansicht- und Inhaltsbereich in einer AEM Veröffentlichungsinstanz veröffentlichen.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -89,7 +92,7 @@ Leerzeichen können Ordner enthalten, um den Inhalt und die Assets des Raums wei
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Geben Sie den **Titel**,**den** Namen und die **Beschreibung** für den Ordner ein
+1. Geben Sie den **Titel**, **den** Namen und die **Beschreibung** für den Ordner ein
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -101,7 +104,7 @@ Leerzeichen können Ordner enthalten, um den Inhalt und die Assets des Raums wei
 >
 >Die Sprachkopie funktioniert in dieser Version nicht vollständig. Es richtet nur die Struktur ein.
 
-Mit der Funktion &quot; **Sprachkopie** &quot;können Autoren ihre Mastersprachkopie kopieren und dann ein Projekt und einen Workflow erstellen, um den Inhalt automatisch zu übersetzen. Sprachkopie erstellt die richtige Struktur. Nachdem Sie einen Ordner in einem Bereich hinzugefügt haben, können Sie dem Bereich &quot;Sprachkopie&quot;hinzufügen.
+Mit der Funktion &quot; **Sprachkopie** &quot;können Autoren ihre Übergeordnet-Sprachkopie kopieren und dann ein Projekt und einen Workflow erstellen, um den Inhalt automatisch zu übersetzen. Sprachkopie erstellt die richtige Struktur. Nachdem Sie einen Ordner in einem Bereich hinzugefügt haben, können Sie dem Bereich &quot;Sprachkopie&quot;hinzufügen.
 
 >[!NOTE]
 >
@@ -119,7 +122,7 @@ Mit der Funktion &quot; **Sprachkopie** &quot;können Autoren ihre Mastersprachk
    >
    >Sprachkopie-Knoten können nur als direkt untergeordnetes Element des Bereichs vorhanden sein.
 
-1. **** Wählen Sie **Content Package Language&amp;ast; und geben Sie** Title&amp;ast ein; im Dialogfeld &quot;Sprachkopie **erstellen&quot;** .
+1. Wählen Sie **Content Package Language&amp;ast;** und geben Sie **Title&amp;ast ein;** im Dialogfeld &quot;Sprachkopie **erstellen&quot;** .
 
    Klicken Sie auf **Erstellen**.
 
@@ -131,20 +134,20 @@ Mit der Funktion &quot; **Sprachkopie** &quot;können Autoren ihre Mastersprachk
 
    >[!NOTE]
    >
-   >Wählen Sie &quot; **Sprachmaster** &quot;, um die Sprachkopieordner anzuzeigen.
+   >Wählen Sie &quot; **Sprachmaster** &quot;, um die Sprachkopieordner Ansicht.
 
 ### Entfernen eines Ordners aus dem Bereich {#removing-a-folder-from-the-space}
 
-1. Wählen Sie den Ordner aus der Liste mit den Platzhaltern
+1. Wählen Sie den Ordner aus der Liste des Bereichsinhalts
 1. Click **Delete** from the toolbar
 
    >[!NOTE]
    >
-   >Um in einen Ordner zu navigieren und dessen Inhalt anzuzeigen oder einen Unterordner oder eine Entität hinzuzufügen, klicken Sie auf den Titel des Ordners in der Inhaltsliste des Bereichs.
+   >Um in einen Ordner zu navigieren und dessen Inhalt anzuzeigen oder einen Unterordner oder eine Entität hinzuzufügen, klicken Sie auf den Ordnertitel in der Liste &quot;Inhalt&quot;des Bereichs.
 
 ## Arbeiten mit Entitäten in einem Bereich {#working-with-entities-in-a-space}
 
-Entitäten stellen Inhalte dar, die über den Webdienst-Endpunkt bereitgestellt werden. Entitäten werden in Räumen gespeichert, sodass sie leicht zu finden sind und unabhängig von der AEM-Repository-Struktur, die ihren zugehörigen Inhalt enthält, aufbewahrt werden.
+Entitäten stellen Inhalte dar, die über den Webdienst-Endpunkt verfügbar gemacht werden. Entitäten werden in Räumen gespeichert, damit sie leicht gefunden werden können und unabhängig von der AEM Repository-Struktur, die ihren zugehörigen Inhalt enthält, aufbewahrt werden.
 
 Möglicherweise möchten Sie Entitäten in einer logischen Zusammenstellung gruppieren. Dazu können Sie eine beliebige Anzahl von Ordnern erstellen.
 
@@ -158,7 +161,7 @@ Wenn Entitätsuntergeordnete Elemente, bei denen es sich um andere Entitäten ha
 
 1. Öffnen Sie die Space-Konsole und klicken Sie auf den Titel des Bereichs.
 
-   Optional können Sie zum Ordner navigieren, indem Sie auf den Titel des Ordners in der Liste klicken.
+   Optional können Sie zu dem Ordner navigieren, indem Sie auf den Titel des Ordners in der Liste klicken.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -168,7 +171,7 @@ Wenn Entitätsuntergeordnete Elemente, bei denen es sich um andere Entitäten ha
 
    >[!NOTE]
    >
-   >Sie können das **Asset-Modell**, das **Seitenmodell** oder ein zuvor erstelltes Entitätsmodell auswählen.
+   >Sie haben die Möglichkeit, das **Asset-Modell**, das **Seitenmodell** oder ein zuvor erstelltes Entitätsmodell auszuwählen.
    >
    >Siehe [Erstellen eines Modells](/help/mobile/administer-mobile-apps.md), um Ihre benutzerdefinierte Entität zu erstellen.
 
@@ -196,7 +199,7 @@ Wenn Entitätsuntergeordnete Elemente, bei denen es sich um andere Entitäten ha
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   Alternativ können Sie auf **Vorschau** klicken, um den JSON-Link anzuzeigen.
+   Alternativ können Sie auf **Vorschau** klicken, um den JSON-Link Ansicht.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -210,15 +213,15 @@ Wenn Entitätsuntergeordnete Elemente, bei denen es sich um andere Entitäten ha
 
    >[!NOTE]
    >
-   >Nachdem Sie eine Entität hinzugefügt haben, muss sie gespeichert werden, damit der Link &quot;Vorschau&quot;funktioniert. Klicken Sie zum Anzeigen der Vorschau auf **Speichern**. Wenn Sie auf die **Vorschau** klicken, wird der JSON des hinzugefügten Assets angezeigt, wie in der folgenden Abbildung dargestellt:
+   >Nachdem Sie eine Entität hinzugefügt haben, muss sie gespeichert werden, damit der Link &quot;Vorschau&quot;funktioniert. Um die Vorschau Ansicht, klicken Sie auf **Speichern**. Wenn Sie auf die **Vorschau** klicken, wird der JSON des hinzugefügten Assets angezeigt, wie in der folgenden Abbildung dargestellt:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Nach dem Hinzufügen von Assets zu Ihrer Entität können Sie entweder &quot; **Speichern** &quot;wählen, um die Änderungen zu speichern, oder &quot; **Speichern und Schließen** &quot;wählen, um zu speichern und zur Liste &quot;Space Console&quot;umzuleiten, in der die Entitäten definiert sind.
+   >Nach dem Hinzufügen von Assets zu Ihrer Entität können Sie entweder &quot; **Speichern** &quot;wählen, um die Änderungen zu speichern, oder &quot; **Speichern und Schließen** &quot;wählen, um zu speichern und zur Space Console-Liste umzuleiten, in der die Entitäten definiert sind.
 
-   Wählen Sie außerdem eine Entität aus der Liste der Leertaste und klicken Sie auf **Eigenschaften** , um die Eigenschaften für eine definierte Entität anzuzeigen und zu bearbeiten.
+   Wählen Sie außerdem eine Entität aus der Liste der Leertaste aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften für eine definierte Entität Ansicht und zu bearbeiten.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -228,7 +231,7 @@ Wenn Entitätsuntergeordnete Elemente, bei denen es sich um andere Entitäten ha
 
 ### Entfernen einer Entität {#removing-an-entity}
 
-1. Wählen Sie die Entität aus der Liste mit dem Inhalt des Bereichs
+1. Wählen Sie die Entität aus der Liste des Bereichsinhalts
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
@@ -238,7 +241,7 @@ Wenn Entitätsuntergeordnete Elemente, bei denen es sich um andere Entitäten ha
 
 Sie haben die Möglichkeit, zum Veröffentlichen der Entität die Option &quot; **Veröffentlichungsstruktur** &quot;oder &quot; **Schnelle Veröffentlichung** &quot;zu wählen.
 
-1. Wählen Sie eine Entität aus der Liste der Leerkonsole und klicken Sie auf **Veröffentlichungsstruktur **um diese Entität und ihre untergeordneten Elemente zu veröffentlichen.
+1. Wählen Sie eine Entität aus der Liste der Leertaste und klicken Sie auf **Veröffentlichungsstruktur **um diese Entität und ihre untergeordneten Elemente zu veröffentlichen.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
