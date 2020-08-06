@@ -1,8 +1,8 @@
 ---
-title: Kommentar zur Beispielseite hinzufügen
-seo-title: Kommentar zur Beispielseite hinzufügen
-description: Hinzufügen benutzerdefinierter Kommentare zu einer Seite
-seo-description: Hinzufügen benutzerdefinierter Kommentare zu einer Seite
+title: Hinzufügen auf Beispielseite
+seo-title: Hinzufügen auf Beispielseite
+description: Hinzufügen benutzerdefinierter Kommentare auf einer Seite
+seo-description: Hinzufügen benutzerdefinierter Kommentare auf einer Seite
 uuid: 7dbaff4f-9986-435d-9379-7add676ea254
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be
 translation-type: tm+mt
 source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
 
-# Kommentar zur Beispielseite hinzufügen {#add-comment-to-sample-page}
+# Hinzufügen auf Beispielseite {#add-comment-to-sample-page}
 
 Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsordner (/apps) vorhanden sind, ist es möglich, die erweiterte Komponente zu verwenden. Die Instanz des Kommentarsystems auf einer Website, die betroffen sein soll, muss ihren resourceType als benutzerdefiniertes Kommentarsystem festlegen und alle erforderlichen Client-Bibliotheken einschließen.
 
@@ -23,15 +26,15 @@ Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendung
 
 Die für den Stil und die Funktionsweise der Standardkommentare erforderlichen Client-Bibliotheken sind auch für erweiterte Kommentare erforderlich.
 
-Das Handbuch[ zu ](components-guide.md)Community-Komponenten identifiziert die erforderlichen Client-Bibliotheken. Navigieren Sie zum Komponentenhandbuch und sehen Sie sich die Komponente &quot;Kommentare&quot;an, z. B.:
+Das Handbuch [zu](components-guide.md) Community-Komponenten identifiziert die erforderlichen Client-Bibliotheken. Navigieren Sie zum Komponentenhandbuch und Ansicht der Kommentarkomponente, z. B.:
 
 [http://localhost:4502/content/community-components/en/comments.html](http://localhost:4502/content/community-components/en/comments.html)
 
-Beachten Sie die drei Clientbibliotheken, die für die ordnungsgemäße Wiedergabe und Funktionsweise von Kommentaren erforderlich sind. Diese müssen eingeschlossen werden, wenn auf erweiterte Kommentare verwiesen wird, sowie die Client-Bibliothek[ ](extend-create-components.md#create-a-client-library-folder)erweiterter Kommentare ( `apps.custom.comments`).
+Beachten Sie die drei Clientbibliotheken, die für die ordnungsgemäße Wiedergabe und Funktionsweise von Kommentaren erforderlich sind. Diese müssen eingeschlossen werden, wenn auf erweiterte Kommentare verwiesen wird, sowie die Client-Bibliothek [](extend-create-components.md#create-a-client-library-folder) erweiterter Kommentare ( `apps.custom.comments`).
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-## Hinzufügen benutzerdefinierter Kommentare zu einer Seite {#add-custom-comments-to-a-page}
+## Hinzufügen benutzerdefinierter Kommentare auf einer Seite {#add-custom-comments-to-a-page}
 
 Da pro Seite nur ein Kommentarsystem erstellt werden kann, ist es einfacher, eine Beispielseite zu erstellen, wie im kurzen Lernprogramm &quot;Beispielseite [erstellen&quot;beschrieben](create-sample-page.md) .
 
@@ -65,5 +68,5 @@ Hier finden Sie aaron.mcdonald@mailinator.com zum Posten eines Kommentars:
 
 ![chlimage_1-51](assets/chlimage_1-51.png) ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Nun, da es so aussieht, als ob die erweiterte Komponente mit dem Standardaussehen korrekt funktioniert, ist es Zeit, das Erscheinungsbild zu ändern.
+Nun, da es so aussieht, als ob die erweiterte Komponente mit dem Standardaussehen korrekt funktioniert, ist es an der Zeit, das Erscheinungsbild zu ändern.
 
