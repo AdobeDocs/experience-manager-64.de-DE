@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +33,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 
 >[!CAUTION]
 >
->Es ist nicht möglich, einen einzelnen Launch gleichzeitig mehrfach weiterzuleiten. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Es ist nicht möglich, einen einzelnen Launch gleichzeitig mehrfach weiterzuleiten. Dies bedeutet, dass zwei gleichzeitig ausgeführte Weiterleitungen für denselben Launch einen Fehler verursachen können: `Launch could not be promoted` (zusammen mit Konfliktfehlern im Protokoll).
 
 >[!CAUTION]
 >
@@ -44,6 +47,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 >
 >* [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch), wenn die Struktur mehrere Launches enthält.
 >* [Der Ablauf eines Launches](/help/sites-authoring/launches.md#launches-the-order-of-events) für weitere Informationen zur automatischen Weiterleitung und Veröffentlichung.
+
 >
 
 
@@ -54,7 +58,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 
    * die Konsole **Sites**:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#references) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Alle Verweise werden angezeigt.
+      1. Öffnen Sie die Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#references) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
 
       1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
@@ -71,7 +75,8 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
    * **Geänderte Seiten bewerben**
    * **Aktuelle Seite bewerben**
    * **Aktuelle Seite und Unterseiten bewerben**
-   Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen: 
+
+   Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -80,15 +85,15 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
    >Hier wird ein individueller Launch beschrieben. Informationen zu verschachtelten Launches finden Sie unter [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
 
 1. Klicken Sie auf **Weiter**, um den Vorgang fortzusetzen.
-1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab: 
+1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab:
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Wählen Sie **Bewerben**.
 
-## Weiterleiten von Launch-Seiten bei der Bearbeitung {#promoting-launch-pages-when-editing}
+## Weiterleiten von Launch-Seiten bei der Bearbeitung   {#promoting-launch-pages-when-editing}
 
-Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen. 
+Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -96,7 +101,7 @@ Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch
 >
 >Diese Option steht für einzelne und [verschachtelte Launches](#promoting-a-nested-launch) zur Verfügung.
 
-## Weiterleiten eines verschachtelten Launches {#promoting-a-nested-launch}
+## Weiterleiten eines verschachtelten Launches   {#promoting-a-nested-launch}
 
 Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an jede der Quellen weiterleiten, auch an die Stammquelle (Produktion).
 
@@ -117,10 +122,11 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
       * **Geänderte Seiten bewerben**
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
-1. Wählen Sie **Weiter**.
-1. Überprüfen Sie die Details, bevor Sie **Bewerben** auswählen: 
+1. Wählen Sie **Weiter** aus.
+1. Überprüfen Sie die Details, bevor Sie **Bewerben** auswählen:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -132,7 +138,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-## Verarbeiten von promoteten Seiten mit AEM Workflow {#processing-promoted-pages-using-aem-workflow}
+## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 
 Verwenden Sie Workflow-Modelle, um eine Stapelverarbeitung weitergeleiteter Launch-Seiten durchzuführen:
 
