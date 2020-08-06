@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 89%
 
 ---
 
 
 # Formularvorschau {#previewing-a-form}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In AEM Forms können Sie die Formulare und Dokumente im Repository in der Vorschau anzeigen. So wissen Sie genau, wie die Formulare aussehen und sich verhalten, wenn sie an die Endbenutzer ausgegeben werden.
 
@@ -54,7 +57,7 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, für unterschied
 
    >[!NOTE]
    >
-   >Um ein Asset auszuwählen, wechseln Sie aus der Standardkartenansicht in die Listenansicht. Klicken Sie auf ![aem6forms_viewlist](assets/aem6forms_viewlist.png) oder ![aem6forms_viewcard](assets/aem6forms_viewcard.png) , um die Ansicht zu wechseln.
+   >Um ein Asset auszuwählen, wechseln Sie aus der Standardkartenansicht in die Listenansicht. Klicken Sie auf ![aem6forms_viewlist](assets/aem6forms_viewlist.png) oder ![aem6forms_viewcard](assets/aem6forms_viewcard.png) , um die Ansichten zu wechseln.
 
 1. Wenn Sie auf „Vorschau“ klicken, werden die möglichen Vorschauoptionen für den ausgewählten Asset-Typ aufgelistet. Klicken Sie auf die gewünschte Option, um das ausgewählte Asset in einer neuen Registerkarte anzuzeigen.
 
