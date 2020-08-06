@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +24,7 @@ Bei einer Integration mit Adobe Campaign stehen Ihnen für die Arbeit mit Newsl
 
 ## Adobe Campaign-Newsletter-Komponenten {#adobe-campaign-newsletter-components}
 
-Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html) basieren.
+Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/de/experience-manager/htl/using/overview.html) basieren.
 
 Öffnen Sie eine E-Mail oder einen Newsletter, der oder die für die Integration mit Adobe Campaign konfiguriert wurde, werden Ihnen im Abschnitt **Adobe Campaign-Newsletter** folgende Optionen angezeigt:
 
@@ -161,7 +164,7 @@ Folgendes können Sie in den Registerkarten **Anzeige**, **URL-Info** oder **Erw
 
 * **Zusätzliche URL-Parameter**
 
-   Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
+   Hinzufügen alle zusätzlichen URL-Parameter. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
 >[!NOTE]
 >
@@ -176,7 +179,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ darges
 
 ### Scene7-Bildvorlage (Kampagne) {#scene-image-template-campaign}
 
-[Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sind Bilddateien mit Ebenen, in denen Inhalt und Eigenschaften auf Variabilität parametrisiert werden können. Mithilfe der Komponente **Bildvorlage** können Sie Scene7-Vorlagen in Newslettern verwenden und die Werte der Vorlagenparameter bearbeiten. Darüber hinaus können Sie in den Parametern Adobe Campaign-Metadatenvariablen verwenden, damit jeder Benutzer das Bild auf eine personalisierte Weise erfährt.
+[Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sind Bilddateien mit Ebenen, bei denen Inhalt und Eigenschaften auf Variabilität parametrisiert werden können. Mithilfe der Komponente **Bildvorlage** können Sie Scene7-Vorlagen in Newslettern verwenden und die Werte der Vorlagenparameter bearbeiten. Darüber hinaus können Sie Adobe Campaign-Metadatenvariablen in den Parametern verwenden, damit jeder Benutzer das Bild auf eine personalisierte Weise aufruft.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
@@ -271,6 +274,7 @@ Im Editor im Kontext können Sie Text hinzufügen, Anpassungen ändern, Links hi
 >
 >* Welche Personalisierungsfelder Ihnen zur Verfügung stehen, hängt davon ab, mit welcher Adobe Campaign-Vorlage Ihr Newsletter verknüpft ist.
 >* Nach der Auswahl eines Profils im ContextHub werden die Personalisierungsfelder automatisch durch Daten des gewählten Profils ersetzt.
+
 >
 >
 Weitere Informationen finden Sie unter [Einfügen von Personalisierungen](/help/sites-authoring/campaign.md#inserting-personalization).
@@ -323,7 +327,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr> 
   <tr> 
    <td><p>Datumsfeld (Kampagne)</p> <p>Datumsfeld/HTM 5 (Kampagne)</p> </td> 
-   <td><p>Datum</p> </td> 
+   <td><p>date</p> </td> 
    <td><p>Geburtsdatum</p> </td> 
   </tr> 
   <tr> 
@@ -364,7 +368,7 @@ Für die meisten Komponenten können Sie Folgendes konfigurieren:
 
 * **Beschreibung**
 
-   Fügen Sie dem Feld eine Beschreibung hinzu, um weitere Informationen für Benutzer bereitzustellen.
+   Hinzufügen Sie eine Beschreibung in das Feld, um weitere Informationen für Benutzer bereitzustellen.
 
 * **Nur Wert anzeigen**
 
@@ -376,11 +380,11 @@ Sie können Folgendes konfigurieren:
 
 * **Zuordnung**
 
-   Wählen Sie gegebenenfalls ein Adobe Campaign-Personalisierungsfeld aus.
+   Wählen Sie ggf. ein Adobe Campaign-Personalisierungsfeld aus.
 
 * **Abstimmschlüssel**
 
-   Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld Teil des Abgleichschlüssels ist.
+   Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld Teil des Abstimmschlüssels ist.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -425,7 +429,8 @@ Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](
 * **Beschränkungsmeldung**
 
    Darüber hinaus können Sie eine Einschränkungsmeldung hinzufügen, damit Benutzer wissen, wie ihre Antworten korrekt formatiert werden.
-* **Stile - Breite** Passen Sie die Breite des Felds an, indem Sie auf die **+** - und **-** -Symbole klicken oder auf eine Zahl tippen.
+* **Stil - Breite** Anpassen der Feldbreite durch Klicken oder Tippen auf die Schaltfläche 
+**+** - und **-** -Symbole oder Eingabe einer Zahl.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Datumsfeld (Kampagne)“ mit angepasster Breite angezeigt wird.
 
@@ -442,7 +447,8 @@ In der Komponente „Verschlüsselter Primärschlüssel (Kampagne)“ können Si
 * **Titel und Text - Elementname**
 
    Der Standardwert ist encryptedPK. Sie müssen den Elementnamen lediglich ändern, wenn er mit einem anderen Elementnamen des gleichen Formulars in Konflikt steht. Zwei Formularfelder dürfen keinesfalls den gleichen Namen tragen.
-* **Adobe Campaign – URL-Parameter** Fügen Sie den URL-Parameter des EPK hinzu. Hierfür können Sie beispielsweise den Wert **epk** verwenden.
+* **Adobe Campaign – URL-Parameter** Fügen Sie den URL-Parameter des EPK hinzu. Sie können beispielsweise den Wert 
+**epk**.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Verschlüsselter Primärschlüssel (Kampagne)“ dargestellt wird.
 
@@ -458,7 +464,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Fehleranzeige (Kampagne)�
 
 ### Ausgeblendeter Abstimmschlüssel (Kampagne) {#hidden-reconciliation-key-campaign}
 
-Mit der Komponente Ausgeblendeter Versöhnungsschlüssel (Kampagne) können Sie einem Formular verborgene Felder als Teil des Versöhnungsschlüssels hinzufügen.
+Mit der Komponente &quot;Ausgeblendeter Abstimmschlüssel (Kampagne)&quot;können Sie ausgeblendete Felder als Teil des Abstimmschlüssels zu einem Formular hinzufügen.
 
 In der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Folgendes konfigurieren:
 
@@ -484,7 +490,8 @@ Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](
 * **Beschränkungsmeldung**
 
    Darüber hinaus können Sie eine Einschränkungsmeldung hinzufügen, damit Benutzer wissen, wie ihre Antworten korrekt formatiert werden.
-* **Stile - Breite** Passen Sie die Breite des Felds an, indem Sie auf die **+** - und **-** -Symbole klicken oder auf eine Zahl tippen.
+* **Stil - Breite** Anpassen der Feldbreite durch Klicken oder Tippen auf die Schaltfläche 
+**+** - und **-** -Symbole oder Eingabe einer Zahl.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Numerisches Feld (Kampagne)“ mit konfigurierter Breite angezeigt wird.
 
