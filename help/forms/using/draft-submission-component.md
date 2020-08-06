@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 219dd379-5bc9-40b0-bdc2-2fb347da29d8
 translation-type: tm+mt
 source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 63%
 
 ---
 
@@ -90,15 +93,15 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
  </tbody>
 </table>
 
-## Anpassen des Speichers {#customizing-the-storage}
+## Anpassen der Datenspeicherung {#customizing-the-storage}
 
 Wenn Sie die Forms Portal Aktion-Übermittlungsaktion verwenden oder die Store-Daten über die Forms-Portal-Optionen im adaptiven Formular aktivieren, werden die Formulardaten im AEM-Repository gespeichert. In einer Produktionsumgebung wird empfohlen, keine Entwurfs- oder gesendete Formulardaten nicht im AEM-Repository zu speichern. Stattdessen müssen Sie die Entwurfs- und Übermittlungskomponente mit einem sicheren Speicher wie der Unternehmensdatenbank integrieren, um Entwürfe und übermittelte Formulardaten zu speichern.
 
-Mit dem Forms Portal können Sie Daten im lokalen AEM-Repository, im Remote-AEM-Repository oder in einer Datenbank speichern. Mit AEM Forms können Sie die Implementierung zum Speichern von Benutzerdaten für Entwürfe und Übermittlungen anpassen. Sie können Standardmethoden außer Kraft setzen, um anzugeben, wie Entwurfs- und Übermittlungsdaten in einem Speicher Ihrer Wahl gespeichert werden. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
+Mit dem Forms Portal können Sie Daten im lokalen AEM Repository, im Remote AEM Repository oder in einer Datenbank speichern. Mit AEM Forms können Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen. Sie können Standardmethoden außer Kraft setzen, um anzugeben, wie Entwurfs- und Übermittlungsdaten in einer Datenspeicherung Ihrer Wahl gespeichert werden. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
-Forms Portal bietet standardmäßig Dienste (APIs) zum Speichern von Daten im CRX-Repository von lokalen und Remote-AEM Forms-Veröffentlichungsinstanzen. Sie können die Standardimplementierungen, die im Artikel zum [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschrieben sind, durch benutzerdefinierte Implementierungen ersetzen, um Standardfunktionen zu ersetzen. Detaillierte Informationen zu den Methoden, die in einer benutzerdefinierten Implementierung zum Speichern von Inhalten an einem geschützten Speicherort erforderlich sind, finden Sie unter [Anpassen von Entwurfs- und Übermittlungsdatendiensten](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerdefinierter Speicher für Komponenten für Entwürfe und Übermittlungen.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms Portal bietet Out-of-the-Box-Dienste (APIs) zum Speichern von Daten im CRX-Repository von lokalen und Remote-AEM Forms-Veröffentlichungsinstanzen. Sie können die Standardimplementierungen, die im Artikel zum [Konfigurieren von Datenspeicherung für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschrieben sind, durch benutzerdefinierte Implementierungen ersetzen, um die Standardfunktion zu ersetzen. Detaillierte Informationen zu den Methoden, die in einer benutzerdefinierten Implementierung zum Speichern von Inhalten an einem gesicherten Speicherort erforderlich sind, finden Sie unter [Anpassen von Entwurfs- und Übermittlungsdatendiensten](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerspezifische Datenspeicherung für die Komponente &quot;Drafts and Submissions&quot;.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-Die AEM Forms-Dokumentation enthält ein [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Mithilfe der Beispielimplementierung können Sie Ihre eigene benutzerdefinierte Implementierung entwickeln.
+Die AEM Forms-Dokumentation enthält ein [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Sie können die Beispielimplementierung verwenden, um Ihre eigene benutzerdefinierte Implementierung zu entwickeln.
 
 ## Verwandte Artikel
 
@@ -106,7 +109,7 @@ Die AEM Forms-Dokumentation enthält ein [Beispiel für die Integration der Komp
 * [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
-* [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
+* [Anpassen der Datenspeicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
