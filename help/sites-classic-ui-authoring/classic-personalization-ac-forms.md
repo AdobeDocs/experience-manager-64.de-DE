@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 63%
 
 ---
 
@@ -56,7 +59,7 @@ Zunächst müssen Sie prüfen, ob die Verbindung zwischen Autoren- und Veröffen
 
 1. Starten Sie „siteadmin“.
 1. Durchsuchen Sie die Baumstruktur so lange, bis Sie den Ort finden, an dem Sie das Formular auf der gewünschten Website erstellen möchten.
-1. **Wählen Sie** Neu **>** Neue Seite... .
+1. Select **New** > **New page...**.
 1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
 
    >[!NOTE]
@@ -80,7 +83,7 @@ Für Adobe Campaign erstellte Formulare verfügen über bestimmte Komponenten. 
 In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen behandelt. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Navigieren Sie zu dem Formular, das Sie bearbeiten möchten.
-1. **Wählen Sie in der Toolbox** Seite **>** Seiteneigenschaften... gehen Sie dann im Popup-Fenster zur Registerkarte &quot; **Cloud-Dienste** &quot;.
+1. In the toolbox, select **Page** > **Page Properties...** then go to the **Cloud Services** tab of the pop-up window.
 1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. Diese Konfiguration wird bei der Einrichtung der Verbindung zwischen den Instanzen durchgeführt. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -94,6 +97,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    * **Adobe Campaign: Profil speichern**: Mit dieser Option können Sie Empfänger in Adobe Campaign erstellen oder aktualisieren (Standardeinstellung).
    * **Adobe Campaign: Services abonnieren**: Mit dieser Option können Sie Abonnements eines Empfängers in Adobe Campaign verwalten.
    * **Adobe Campaign: Abonnement von Services beenden**: Mit dieser Einstellung können Sie die Abonnements eines Empfängers in Adobe Campaign beenden.
+
    The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
 
 1. Fügen Sie die ausgewählten Komponenten hinzu, indem Sie sie von der Toolbox in das Formular ziehen. Weitere Informationen über die verschiedenen Adobe Campaign-spezifischen Komponenten finden Sie unter [Adobe-Formular-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
