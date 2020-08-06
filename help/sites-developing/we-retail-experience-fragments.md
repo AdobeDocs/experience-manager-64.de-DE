@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 40%
 
 ---
 
@@ -23,21 +26,22 @@ Ein [Experience Fragment](/help/sites-authoring/experience-fragments.md) ist ein
 
 Sie ermöglichen es einem Autor, Teile einer Seite (ein Fragment eines Erlebnisses) wiederzuverwenden, ohne den Inhalt kopieren und einfügen zu müssen.
 
-Dies unterstützt den Anwendungsfall des kostenlosen Content Management Systems (CMS), bei dem Autoren AEM nur für das Authoring, nicht aber für die Bereitstellung an den Kunden verwenden möchten. Ein Drittanbietersystem/Touchpoint kann dieses Erlebnis dann nutzen und dann an den Endbenutzer liefern.
+Dies unterstützt den Anwendungsfall des kostenlosen Content-Management-Systems (CMS), bei dem Autoren AEM nur für das Authoring, nicht aber für die Bereitstellung an den Kunden verwenden möchten. Ein Drittanbietersystem/Touchpoint kann dieses Erlebnis dann nutzen und dann an den Endbenutzer liefern.
 
 >[!NOTE]
 >
 >**[Inhaltsfragmente](/help/sites-developing/we-retail-content-fragments.md)**und **Experience Fragments**sind unterschiedliche Funktionen in AEM:
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
->* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Webseiten dar.
+>* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
 >
 Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 
 ## Erstellen von Erlebnisfragmenten in We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Select **Experience Fragments** from the Global Navigation. Hier konfigurieren, [erstellen](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) und [bearbeiten](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) Sie Ihre Erlebnisfragmente und alle zugehörigen [Varianten](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+Wählen Sie in der globalen Navigation die Option **Experience Fragments** aus. Hier konfigurieren, [erstellen](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) und [bearbeiten](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) Sie Ihre Erlebnisfragmente und alle verwandten [Varianten](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
 ## Verwendungsmöglichkeiten von Erlebnisfragmenten in We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
