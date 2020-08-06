@@ -40,7 +40,7 @@ Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, gehen die Sitzung
 
 Die Lösung für die horizontale Skalierbarkeit besteht in der „Stateless“-Authentifizierung, bei der die neue Unterstützung von Encapsulated Tokens in AEM genutzt wird.
 
-Das verkapselte Token ist ein Teil der Kryptographie, mit dem AEM Authentifizierungsinformationen sicher offline erstellen und validieren kann, ohne auf das Repository zugreifen zu müssen. So kann eine Authentifizierungsabfrage auf allen Veröffentlichungsinstanzen ohne dauerhafte Verbindung erfolgen. Außerdem bietet dieser Ansatz den Vorteil, dass die Authentifizierungsleistung verbessert wird, da nicht bei jeder Authentifizierungsabfrage ein Zugriff auf das Repository vonnöten ist.
+Das verkapselte Token ist ein Teil der Kryptographie, mit dem AEM Authentifizierungsinformationen sicher offline erstellen und validieren können, ohne auf das Repository zugreifen zu müssen. So kann eine Authentifizierungsabfrage auf allen Veröffentlichungsinstanzen ohne dauerhafte Verbindung erfolgen. Außerdem bietet dieser Ansatz den Vorteil, dass die Authentifizierungsleistung verbessert wird, da nicht bei jeder Authentifizierungsabfrage ein Zugriff auf das Repository vonnöten ist.
 
 Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und TarMK-Veröffentlichungsinstanzen funktioniert, sehen Sie in der folgenden Grafik:
 
@@ -81,6 +81,7 @@ Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgende
 1. Suchen Sie im lokalen Dateisystem das Bundle `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:
 
    * &lt;Autor-AEM-Installationsverzeichnis>/crx-quickstart/launchpad/felix/bundle21
+
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
