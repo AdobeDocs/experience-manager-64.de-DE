@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +37,7 @@ Nach der Installation des Pakets werden die Layout-Vorlagen (XDPs) im Vorlagenor
 
 Im Folgenden werden die allgemeinen Datenfelder in allen Vorlagen in diesem Paket aufgeführt:
 
-* Datum
+* Datum          
 * Anrede
 * Schließender Text
 * Unterschriften-Text
