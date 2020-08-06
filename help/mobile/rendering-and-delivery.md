@@ -1,6 +1,6 @@
 ---
-title: Wiedergabe und Bereitstellung
-seo-title: Wiedergabe und Bereitstellung
+title: Rendern und Versand
+seo-title: Rendern und Versand
 description: 'null'
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
@@ -10,17 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 12%
 
 ---
 
 
-# Wiedergabe und Bereitstellung{#rendering-and-delivery}
+# Rendern und Versand{#rendering-and-delivery}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM-Inhalte können problemlos über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate wiederzugeben.
+AEM Inhalte können problemlos über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate wiederzugeben.
 
 Diese sofort einsetzbaren Renderer führen normalerweise das Repository aus und geben Inhalt wie bisher zurück.
 
@@ -93,7 +96,7 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>Zeichenfolge[]</td>
    <td>nichts ausschließen</td>
    <td>Präfixe für Eigenschaften</td>
-   <td>Ausschließen von Eigenschaften, die mit bestimmten Präfixen beginnen, aus dem JSON-Export</td>
+   <td>Ausschließen von Eigenschaften, die Beginn mit angegebenen Präfixen aus dem JSON-Export enthalten</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
