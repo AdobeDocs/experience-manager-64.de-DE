@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -62,7 +65,7 @@ See [Tagging Enablement Resources](tag-resources.md).
 
 Eine Community-Site-Struktur, die die [Katalogfunktion](functions.md#catalog-function)enthält, enthält eine konfigurierte `enablement catalog` Komponente.
 
-### Vorfilter {#pre-filters}
+### Pre-Filters {#pre-filters}
 
 Wenn einer Community-Site eine Katalogfunktion hinzugefügt wurde, können die Aktivierungsressourcen und Lernpfade, die im Katalog angezeigt werden, durch Angabe eines Vorfilters eingeschränkt werden. Dies geschieht durch Festlegen von Eigenschaften für die Instanz der Katalogressource für die Site.
 
@@ -77,7 +80,7 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
 
    * Beispiel: `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Knoten für untergeordnete Filter hinzufügen
+* Hinzufügen eines untergeordneten Filter-Knotens
 
    * Wählen Sie den `catalog`Knoten
    * Knoten **[!UICONTROL erstellen auswählen]**
@@ -87,20 +90,20 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
    * Select **[!UICONTROL Save All]**
 
 
-* Eigenschaft `se_resource-tags` zum `filters` Knoten hinzufügen
+* Hinzufügen `se_resource-tags` Eigenschaft des `filters` Knotens
 
-   * Wählen Sie den `filters` Knoten
+   * Wählen Sie die `filters` Node
    * Hinzufügen einer Multi-Eigenschaft
 
       * Name: `se_resource-tags`
       * Typ: String
       * Wert: *&lt;TagID[eingeben](#pre-filter-tagids)>*
       * Wählen Sie **[!UICONTROL Multi]**
-      * Hinzufügen **[!UICONTROL auswählen]**
+      * Auswählen **[!UICONTROL Hinzufügen]**
 
          * Wählen Sie im Popup-Dialogfeld `+` die Option zum Hinzufügen zusätzlicher TagIDs vor dem Filter
 
-* Community-Site erneut veröffentlichen
+* Veröffentlichen Sie die Community-Site erneut.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
@@ -114,7 +117,7 @@ Die [TagIDs](../../help/sites-developing/framework.md#tagid) vor dem Filter müs
 
 * [Aktivierungs-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [Berichterstellungs-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [Berichte-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [Berichterstellungs-Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
