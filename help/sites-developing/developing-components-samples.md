@@ -12,6 +12,9 @@ discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +36,7 @@ Informationen zur klassischen Benutzeroberfläche finden Sie unter [AEM-Komponen
 >
 >* [Entwicklermodus](/help/sites-developing/developer-mode.md)
 >* ein [Framework zum Automatisieren von Tests, basierend auf der Hobbes.js-Bibliothek](/help/sites-developing/hobbes.md)
+
 >
 
 
