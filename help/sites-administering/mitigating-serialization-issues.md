@@ -26,9 +26,9 @@ ht-degree: 68%
 
 Bei der in diesem Paket enthaltenen Agent-JAR-Datei handelt es sich um die modifizierte NotSoSerial-Distribution von Adobe.
 
-NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Mit dieser Prüfung wird ein Klassenname gegen eine Firewall-ähnliche zulassungsliste und/oder blockierungsliste getestet. Aufgrund der begrenzten Anzahl von Klassen im Standard-blockierungsliste ist es unwahrscheinlich, dass sich dies auf Ihre Systeme oder Ihren Code auswirkt.
+NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Mit dieser Prüfung wird ein Klassenname gegen eine Firewall-ähnliche Zulassungsliste und/oder Blockierungsliste getestet. Aufgrund der begrenzten Anzahl von Klassen in der Standardklasse ist es unwahrscheinlich, dass sich dies auf Ihre Blockierungslisten oder Ihren Code auswirkt.
 
-Standardmäßig führt der Agent eine blockierungsliste-Prüfung für aktuelle bekannte verwundbare Klassen durch. Diese blockierungsliste soll Sie vor der aktuellen Liste von Exploits schützen, die diese Art von Verwundbarkeit nutzen.
+Standardmäßig führt der Agent eine Blockierungsliste-Prüfung für aktuelle bekannte verwundbare Klassen durch. Diese Blockierungsliste soll Sie vor der aktuellen Liste von Exploits schützen, die diese Art von Verwundbarkeit nutzen.
 
 The block list and allow list can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
 
@@ -69,7 +69,7 @@ Der NotSoSerial-Agent ist nicht in der AEM-Standarddistribution für Anwendungss
 
 ## Konfigurieren des Agents {#configuring-the-agent}
 
-Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dies umfasst eine blockierungsliste von bekannten, durch entfernte Ausführung gefährdeten Klassen und eine zulassungsliste von Paketen, bei denen die Deserialisierung von vertrauenswürdigen Daten relativ sicher sein sollte.
+Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dies umfasst eine Blockierungsliste bekannter, durch entfernte Ausführung verwundbarer Klassen und eine Zulassungsliste von Paketen, bei denen die Deserialisierung vertrauenswürdiger Daten relativ sicher sein sollte.
 
 Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert werden:
 
@@ -83,15 +83,15 @@ Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert w
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Diese Konfiguration enthält die Protokollierung von zulassungsliste, blockierungsliste und Deserialisierung.
+Diese Konfiguration enthält die Protokollierung von Zulassungsliste, Blockierungsliste und Deserialisierung.
 
 **Auflistung zulassen**
 
-Im Abschnitt Listen zulassen sind dies Klassen oder Paket-Präfixe, die zur Deserialisierung zugelassen werden. Es ist wichtig zu beachten, dass Sie, wenn Sie eigene Klassen deserialisieren, entweder die Klassen oder Pakete zu dieser zulassungsliste hinzufügen müssen.
+Im Abschnitt Listen zulassen sind dies Klassen oder Paket-Präfixe, die zur Deserialisierung zugelassen werden. Beachten Sie, dass Sie, wenn Sie eigene Klassen deserialisieren, entweder die Klassen oder Pakete zu dieser Zulassungsliste hinzufügen müssen.
 
 **Blockliste**
 
-Im Abschnitt Blockauflistungen finden Sie Klassen, die niemals deserialisiert werden dürfen. Standardmäßig umfasst die Liste nur Klassen, die für Remoteausführungsangriffe anfällig sind. Die blockierungsliste wird vor allen zulässigen Einträgen angewendet.
+Im Abschnitt Blockauflistungen finden Sie Klassen, die niemals deserialisiert werden dürfen. Standardmäßig umfasst die Liste nur Klassen, die für Remoteausführungsangriffe anfällig sind. Die Blockierungsliste wird vor allen zulässigen Einträgen angewendet.
 
 **Diagnoseprotokollierung**
 
