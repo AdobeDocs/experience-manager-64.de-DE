@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 90%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe plant nicht, die Verfolgung von durch den AEM SMTP-Dienst gesendeten/abgeschnittenen E-Mails weiter zu verbessern.
+>Die Adobe plant nicht, die Verfolgung von E-Mails, die von AEM SMTP-Dienst geöffnet/abgeschnitten werden, weiter zu verbessern.
 >
->Es wird empfohlen, Adobe Campaign und seine AEM-Integration [zu nutzen](/help/sites-administering/campaign.md).
+>Es wird empfohlen, Adobe Campaign und seine AEM [zu nutzen](/help/sites-administering/campaign.md).
 
 Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird. Der Standardwert für fehlgeschlagene Zustellversuche beträgt 3, er kann jedoch angepasst werden.
 
@@ -51,7 +54,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    **Eigenschaften der POP3-Konfiguration:**
 
-   `pop3.leave.on.server`: Definiert, ob Meldungen auf dem Server bleiben sollen. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Der Standardwert ist „true“.
+   `pop3.leave.on.server`: Definiert, ob Meldungen auf dem Server bleiben sollen oder nicht. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Standardwert ist „true“.
 
    **POP3-Beispiele:**
 
