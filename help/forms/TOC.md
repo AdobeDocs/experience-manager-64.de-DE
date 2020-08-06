@@ -54,25 +54,25 @@ ht-degree: 73%
    + [Architektur und Bereitstellungstopologien für AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Wählen eines Persistenztyps für eine AEM Forms-Installation](using/choosing-persistence-type-for-aem-forms.md)
    + Installieren von AEM Forms on OSGi {#osgi-installation}
-      + [Unterstützte Plattformen für AEM Forms unter OSGi](https://helpx.adobe.com/de/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
+      + [Unterstützte Plattformen für AEM Formulare auf OSGi](https://helpx.adobe.com/de/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Installieren und Konfigurieren von Dokument Services](using/install-configure-document-services.md)
       + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](using/installing-configuring-aem-forms-osgi.md)
       + [Forms-zentrierten Arbeitsablauf unter OSGi installieren und konfigurieren](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installieren und konfigurieren Sie Interaktive Kommunikationen](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + Install AEM Forms on JEE {#jee-installation}
       + [Unterstützte Plattformen für AEM Forms on JEE](using/aem-forms-jee-supported-platforms.md)
-      + [AEM Forms mithilfe von JBoss Turnkey installieren und bereitstellen](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_de)
+      + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_de)
       + [Nur Dokument-Sicherheitsserver installieren und konfigurieren](using/installing-and-configuring-the-document-security-server.md)
-      + [Vorbereiten der Installation von AEM Forms auf einem Einzelserver](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_de)
-      + [Installieren und Bereitstellen von AEM Forms auf JEE für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_de)
-      + [Installieren und Bereitstellen von AEM Forms auf JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_de)
+      + [Vorbereiten der Installation des AEM Forms-Einzelservers](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_de)
+      + [Installieren und Bereitstellen von AEM Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_de)
+      + [Installieren und Bereitstellen von AEM Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_de)
       + [Installieren und Bereitstellen von AEM Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_de)
-      + [Installieren von AEM Forms Workbench](http://help.adobe.com/de/AEMForms/6.1/InstallWorkbench/index.html)
+      + [AEM Forms Workbench installieren](http://help.adobe.com/de/AEMForms/6.1/InstallWorkbench/index.html)
       + [Installieren und Konfigurieren von Designer](using/installing-configuring-designer.md)
       + [Vorbereiten der Installation des AEM Forms-Serverclusters](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_de)
-      + [AEM Forms auf JEE auf JBoss-Cluster konfigurieren](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_de)
-      + [AEM Forms auf JEE auf einem WebLogic-Cluster konfigurieren](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_de)
-      + [AEM Forms auf JEE auf einem WebSphere-Cluster konfigurieren](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_de)
+      + [AEM Forms on JEE auf JBoss-Cluster konfigurieren](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_de)
+      + [Konfigurieren von AEM Forms on JEE auf einem WebLogic-Cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_de)
+      + [AEM Forms on JEE auf einem WebSphere-Cluster konfigurieren](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_de)
    + AEM Forms konfigurieren {#configure-aem-forms}
       + [Leistungsoptimierung für AEM Forms-Server](using/performance-tuning-aem-forms.md)
       + [Cache für adaptive Formulare konfigurieren](using/configure-adaptive-forms-cache.md)
@@ -81,11 +81,11 @@ ht-degree: 73%
       + [Konfigurieren des Connector für Microsoft SharePoint](http://help.adobe.com/de/AEMForms/6.1/SharePointConfig/index.html)
       + [Verbinden von AEM Forms mit Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Konfigurieren von AEM Forms zum Senden von Formulardaten an einen AEM Forms on JEE-Prozess](using/submit-form-data-livecycle-process.md)
-      + [AEM-Desktop-App für AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [AEM Desktop-App für AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Upgrade AEM Forms {#upgrade-aem-forms}
    + [Verfügbare Aktualisierungspfade](using/upgrade.md)
    + AEM Forms auf OSGi aktualisieren {#aem-forms-osgi-upgrade}
-      + [Aktualisierung auf AEM 6.4 forms unter OSGi](using/upgrade-forms-osgi.md)
+      + [Aktualisierung auf AEM 6.4 Forms unter OSGi](using/upgrade-forms-osgi.md)
       + [Installieren Sie das Kompatibilitäts-Paket](using/compatibility-package.md)
       + [Migration der Assets und Dokumente von AEM Forms](using/migration-utility.md)
    + AEM Forms auf JEE aktualisieren {#aem-forms-jee-upgrade}
@@ -113,7 +113,7 @@ ht-degree: 73%
    + Handling user data {#handling-user-data}
       + [Forms-zentrierte Workflows auf OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Forms-Benutzerverwaltung](using/user-management-handling-user-data.md)
-      + [Forms JEE-Workflows](using/forms-workflow-jee-handling-user-data.md)
+      + [Forms JEE Workflows](using/forms-workflow-jee-handling-user-data.md)
       + [Formularportal](using/forms-portal-handling-user-data.md)
       + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
       + [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
@@ -121,8 +121,8 @@ ht-degree: 73%
    + Hardening AEM Forms Environment {#hardening-aem-forms-environment}
       + [Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen](using/hardening-securing-aem-forms-environment.md)
       + [Allgemeine Sicherheitsaspekte für AEM Forms auf JEE](using/general-security-considerations.md)
-      + [Härtung Ihrer AEM Forms auf der JEE-Umgebung](using/hardening-aem-forms-jee-environment.md)
-      + [Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms auf JEE](using/configuring-secure-administration-settings-aem.md)
+      + [Härtung Ihrer AEM Forms auf JEE-Umgebung](using/hardening-aem-forms-jee-environment.md)
+      + [Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
 + Formulardatenmodell {#form-data-model}
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
@@ -244,7 +244,7 @@ ht-degree: 73%
    + [Arbeiten mit Aufgabenlisten](using/todo-lists.md)
    + [Fehlerbehebung bei Richtlinien für AEM Forms Workspace](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms-App {#aem-forms-app}
-   + [Einführung in die App &quot;AEM Forms&quot;](using/aem-forms-app.md)
+   + [Einführung in die AEM Forms-App](using/aem-forms-app.md)
    + [Einrichten einer Umgebung für die AEM Forms-App](using/setup-environment-mobile-workspace.md)
    + [Einrichten des Xcode-Projekts und Erstellen der iOS-App](using/setup-xcode-project-build-installer.md)
    + [Erstellen einer sicheren AEM Forms-App für iOS](using/building-secure-mobile-workspace-app.md)
@@ -392,7 +392,7 @@ ht-degree: 73%
    + [Anzeigen und Verstehen von Transaktionsberichten](using/viewing-and-understanding-transaction-reports.md)
    + [Transaktionsberichte Abrechnungsfähige APIs](using/transaction-reports-billable-apis.md)
    + [Eine Transaktion für benutzerdefinierte Implementierungen aufzeichnen](using/record-transaction-custom-implementation.md)
-+ Administratorhilfe für AEM Forms auf JEE {#administrator-help}
++ Administratorhilfe für AEM Forms on JEE {#administrator-help}
    + Erste Schritte {#get-started}
       + [Allgemeine AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Lizenztyp für die Bereitstellung aktualisieren](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -579,11 +579,11 @@ ht-degree: 73%
    + [Form Bridge APIs für HTML5-Formulare](using/form-bridge-apis.md)
    + [Assembler Service und DDX-Referenz](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Workbench-Hilfe](http://www.adobe.com/go/learn_aemforms_workbench_64)
-   + Programmierung mit AEM Forms JEE {#programming-aem-forms-jee}
-      + Einführung in die Programmierung mit AEM Forms JEE {#introduction-programming-aem-forms-jee}
+   + Programmierung mit AEM Forms on JEE {#programming-aem-forms-jee}
+      + Einführung in die Programmierung mit AEM Forms on JEE {#introduction-programming-aem-forms-jee}
          + [Einführung in Java API QuickStart](developing/introducing-java-api-soap-quick.md)
          + [Aufrufen von AEM Forms mithilfe von APIs](developing/invoking-aem-forms-using-apis.md)
-         + [AEM Forms-Vorgänge](developing/aem-forms-processes.md)
+         + [Die AEM Forms-Prozesse](developing/aem-forms-processes.md)
          + [Service Container](developing/service-container.md)
       + Java-API-Quick-Beginn - Codebeispiele {#java-api-quick-start-code-examples}
          + [Application Manager Client JavaAPI Quick Beginn (SOAP)](developing/application-manager-client-java-api.md)
@@ -613,7 +613,7 @@ ht-degree: 73%
          + [Aufgabe Manager Service Java API QuickStart(SOAP)](developing/task-manager-service-java-api.md)
          + [User Manager Java API Quick Beginn(SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Beginn(SOAP)](developing/xmp-utilities-service-java-api.md)
-      + Aufrufen von AEM Forms für JEE mithilfe von APIs {#invoking-aem-forms-jee-apis}
+      + Aufrufen von AEM Forms on JEE mithilfe von APIs {#invoking-aem-forms-jee-apis}
          + [Aufrufen von AEM Forms mithilfe von REST-Anforderungen](developing/invoking-aem-forms-using-rest.md)
          + [Aufrufen von AEM Forms mit Remoting](developing/invoking-aem-forms-using-remoting.md)
          + [AEM Forms mit Web Services aufrufen](developing/invoking-aem-forms-using-web.md)
@@ -622,7 +622,7 @@ ht-degree: 73%
          + [Erstellen von Flash Builder-Anwendungen, die eine SSO-Authentifizierung mit HTTP-Token durchführen](developing/creating-flash-builder-applications-perform.md)
       + Ausführen von Dienstvorgängen mit APIs {#performing-service-operations-using-apis}
          + [Ausführen von Dienstvorgängen mit APIs](developing/performing-service-operations-using-apis.md)
-         + [Wiedergabe von Formularen](developing/rendering-forms.md)
+         + [Rendern von Forms](developing/rendering-forms.md)
          + [Zusammenstellen von PDF-Dokumenten](developing/assembling-pdf-documents.md)
          + [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](developing/programmatically-assembling-pdf-documents.md)
          + [Konvertieren zwischen Dateiformaten und PDF](developing/converting-file-formats-pdf.md)
@@ -635,23 +635,23 @@ ht-degree: 73%
          + [Verwendungsrechte zuweisen](developing/assigning-usage-rights.md)
          + [Zusammenstellen von PDF-Portfolios](developing/assembling-pdf-portfolios.md)
          + [Formulardaten berechnen](developing/calculating-form-data.md)
-         + [Erstellen von Webanwendungen, die Formulare wiedergeben](developing/creating-web-applications-renders-forms.md)
+         + [Erstellen von Webanwendungen, die Forms rendern](developing/creating-web-applications-renders-forms.md)
          + [Erstellen von PDF-Dokumenten mit SubmittedXML-Daten](developing/creating-pdf-documents-submitted-xml.md)
          + [Aufteilen eines PDF-Dokuments mit der Webdienst-API](developing/disassemble-pdf-document-using-web.md)
          + [Bestimmen, ob Dokumente PDF/A-konform sind](developing/determining-whether-documents-pdf-a.md)
          + [DDDX-Dokumente dynamisch erstellen](developing/dynamically-creating-ddx-documents.md)
-         + [Verarbeiten gesendeter Formulare](developing/handling-submitted-forms.md)
+         + [Bearbeitung von übermittelten Forms](developing/handling-submitted-forms.md)
          + [Optimieren der Leistung des Forms-Dienstes](developing/optimizing-performance-forms-service.md)
          + [Übergeben von Dokumenten an FormsService](developing/passing-documents-forms-service.md)
-         + [Vorausfüllen von Formularen mit flexiblen Layouts](developing/prepopulating-forms-flowable-layouts.md)
-         + [Wiedergabe von Formularen basierend auf Fragmenten](developing/rendering-forms-based-fragments.md)
-         + [Wiedergabe von Formularen nach Wert](developing/rendering-forms-value.md)
-         + [Wiedergabe von Formularen als HTML](developing/rendering-forms-html.md)
-         + [Wiedergabe von Formularen auf dem Client](developing/rendering-forms-client.md)
-         + [Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien](developing/rendering-html-forms-using-custom.md)
-         + [Wiedergabe von HTML-Formularen mit CustomToolbars](developing/rendering-html-forms-custom-toolbars.md)
+         + [Vorausfüllen von Forms mit flexiblen Layouts](developing/prepopulating-forms-flowable-layouts.md)
+         + [Rendern von Forms auf Grundlage von Fragmenten](developing/rendering-forms-based-fragments.md)
+         + [Rendern von Forms nach Wert](developing/rendering-forms-value.md)
+         + [Rendern von Forms als HTML](developing/rendering-forms-html.md)
+         + [Rendern von Forms auf dem Client](developing/rendering-forms-client.md)
+         + [Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien](developing/rendering-html-forms-using-custom.md)
+         + [Rendern von HTML Forms mit CustomToolbars](developing/rendering-html-forms-custom-toolbars.md)
          + [Interaktive PDF forms wiedergeben](developing/rendering-interactive-pdf-forms.md)
-         + [Wiedergabe von Formularen mit aktivierten Rechten](developing/rendering-rights-enabled-forms.md)
+         + [Wiedergabe von Rights-aktiviertem Forms](developing/rendering-rights-enabled-forms.md)
          + [Validieren von DDX-Dokumenten](developing/validating-ddx-documents.md)
          + [Konvertieren von PDF-Dateien in PostScript- und Bilddateien](developing/converting-pdf-postscript-image-files.md)
          + [Konvertieren von PostScript in PDF-Dokumente](developing/converting-postscript-pdf-documents.md)
@@ -660,7 +660,7 @@ ht-degree: 73%
          + [PDF-Dokumente verschlüsseln und entschlüsseln](developing/encrypting-decrypting-pdf-documents.md)
          + [Importieren und Exportieren von Daten](developing/importing-exporting-data.md)
          + [Benutzer verwalten](developing/users.md)
-         + [Arbeiten mit AEM Forms-Repository](developing/aem-forms-repository.md)
+         + [Arbeiten mit AEM Forms Repository](developing/aem-forms-repository.md)
          + [Arbeiten mit Formularen mit Strichcode](developing/barcoded-forms.md)
          + [Arbeiten mit Berechtigungen](developing/credentials.md)
          + [Arbeiten mit PDF/A-Dokumenten](developing/pdf-a-documents.md)
