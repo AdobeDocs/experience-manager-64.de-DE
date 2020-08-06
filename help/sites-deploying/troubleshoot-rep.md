@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 80%
 
 ---
 
@@ -43,17 +46,17 @@ Es gibt verschiedene Gründe, warum eine Replikation fehlschlägt. Dieser Artike
 1. Does the queue status show **Queue is active - # pending**? Möglicherweise wurde der Replikationsauftrag durch einen SocketRead-Vorgang unterbrochen und wartet auf eine Reaktion der Veröffentlichungsinstanz oder des Dispatchers. Das bedeutet, dass u. U. eine hohe Last auf der Veröffentlichungsinstanz oder dem Dispatcher vorliegt oder dass diese durch eine Sperre unterbrochen wurden. Überprüfen Sie in diesem Fall die Thread-Sicherungskopien der Autoren- und Veröffentlichungsinstanzen.
 
    * Öffnen Sie die Thread-Sicherungskopien der Autoreninstanz in einem Analyzer für Thread-Sicherungskopien und prüfen Sie, ob der Sling-Eventing-Auftrag des Replikationsagenten durch einen SocketRead-Vorgang unterbrochen wurde.
-   * Öffnen Sie die Thread-Sicherungskopien der Veröffentlichungsinstanz in einem Analyzer für Thread-Sicherungskopien und analysieren Sie, aus welchen Grund die Veröffentlichungsinstanz möglicherweise nicht reagiert. Sie sollten einen Thread mit dem Namen POST /bin/receive sehen, d. h. den Thread, der die Replizierung vom Autor erhält.
+   * Öffnen Sie die Thread-Sicherungskopien der Veröffentlichungsinstanz in einem Analyzer für Thread-Sicherungskopien und analysieren Sie, aus welchen Grund die Veröffentlichungsinstanz möglicherweise nicht reagiert. Sie sollten einen Thread mit der POST /bin/receive in ihrem Namen sehen, d. h. den Thread, der die Replizierung vom Autor erhält.
 
 **Wenn alle Agentenwarteschlangen hängen geblieben sind:**
 
 1. Es ist möglich, dass ein bestimmtes Inhaltselement aufgrund einer Beschädigung des Repositorys oder eines anderen Problems nicht unter /var/Replication/data serialisiert werden kann. Überprüfen Sie logs/error.log auf einen entsprechenden Fehler. Gehen Sie wie folgt vor, um das fehlerhafte Replikationselement zu entfernen:
 
-   1. Wechseln Sie zu https://&lt;Host>:/crx und melden Sie sich als Administrator an. Gehen Sie in CQ5.5 stattdessen zu https://&lt;Host>:&lt;Anschluss>/crx/explorer.
+   1. Wechseln Sie zu https://&lt;Host>:&lt;Anschluss>/crx und melden Sie sich als Administrator an. Gehen Sie in CQ5.5 stattdessen zu https://&lt;Host>:&lt;Anschluss>/crx/explorer.
    1. Klicken Sie auf „Content Explorer“.
    1. Klicken Sie im Fenster „Content Explorer“ in der oberen rechten Ecke auf die Schaltfläche mit der Lupe. Daraufhin wird ein Suchdialogfeld angezeigt.
    1. Wählen Sie die Optionsschaltfläche „XPath“ aus.
-   1. Geben Sie in das Feld &quot;Abfrage&quot;die Reihenfolge /jcr:root/var/event/jobs//element(&amp;ast;,slingevent:Job) von @slingevent:created ein
+   1. Geben Sie in das Feld &quot;Abfrage&quot;die Abfrage /jcr:root/var/event/jobs//element(&amp;ast;,slingevent:Job) der Bestellung von @slingevent:created ein.
    1. Klicken Sie auf „Suchen“.
    1. Die in den Ergebnissen ganz oben angezeigten Elemente sind die aktuellen Sling-Eventing-Aufträge. Klicken Sie auf die einzelnen Aufträge, um nach den unterbrochenen Replikationen zu suchen, die mit dem oben in der Warteschlange Angezeigten übereinstimmen.
 
@@ -65,7 +68,7 @@ Es gibt verschiedene Gründe, warum eine Replikation fehlschlägt. Dieser Artike
 1. Möglicherweise ist auch der Status der Konfiguration „DefaultJobManager“ inkonsistent. Dies kann vorkommen, wenn die Konfiguration für „Apache Sling Job Event Handler“ über die OSGi-Konsole manuell geändert wird (z. B. durch Deaktivieren und erneutes Aktivieren der Eigenschaft „Job Processing Enabled“ und Speichern der Konfiguration).
 
    * Dies führt dazu, dass der Status der unter „crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config“ gespeicherten Konfiguration für „DefaultJobManager“ inkonsistent wird. Obwohl die Eigenschaft „Apache Sling Job Event Handler“ anzeigt, dass „Job Processing Enabled“ aktiviert ist, wird auf der Registerkarte „Sling Eventing“ die Nachricht „JOB PROCESSING IS DISABLED“ angezeigt und die Replikation funktioniert nicht.
-   * Um dieses Problem zu beheben, müssen Sie zur Konfigurationsseite der OSGi-Konsole navigieren und die Konfiguration &quot;Apache Sling Job Event Handler&quot;löschen. Starten Sie dann den Master-Knoten des Clusters neu, um den Status der Konfiguration wieder konsistent zu machen. Damit sollte das Problem behoben sein und die Replikation sollte wieder funktionieren.
+   * Um dieses Problem zu beheben, müssen Sie zur Konfigurationsseite der OSGi-Konsole navigieren und die Konfiguration &quot;Apache Sling Job Ereignis Handler&quot;löschen. Starten Sie dann den Master-Knoten des Clusters neu, um den Status der Konfiguration wieder konsistent zu machen. Damit sollte das Problem behoben sein und die Replikation sollte wieder funktionieren.
 
 **Erstellen einer „replication.log“-Datei**
 
@@ -108,5 +111,5 @@ In einigen Fällen wird die Replikations-Warteschlange beim Versuch blockiert, N
 1. Klicken Sie auf **Eintrag hinzufügen** (das Plussymbol).
 1. Geben Sie den Namen des Benutzers ein.
 1. Select `jcr:namespaceManagement` from the privileges list.
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 
