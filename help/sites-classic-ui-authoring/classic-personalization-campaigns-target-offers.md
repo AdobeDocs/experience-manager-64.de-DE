@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 71%
 
 ---
 
@@ -35,6 +38,6 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
    >Test&amp;Target-Erlebnisse werden zurzeit nicht im MCM aufgeführt. Sie können über die **Websites**-Konsole unter „Kampagnen“ darauf zugreifen.
 
-## Integration mit Adobe Target {#integrating-with-adobe-target}
+## Integrieren mit Adobe Target {#integrating-with-adobe-target}
 
 See [Integrate with Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) for full details.
