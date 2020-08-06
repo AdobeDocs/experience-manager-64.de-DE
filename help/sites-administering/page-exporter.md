@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '1019'
+ht-degree: 63%
 
 ---
 
@@ -62,7 +65,7 @@ So erstellen Sie eine Konfigurationsvorlage für das Seiten-Exporttool:
 
 1. In **CRXDE Lite**, create a node below `/etc/contentsync/templates`:
 
-   * Name:z. B. `mysite`. Der Name wird im Dialogfeld &quot;Seiteneigenschaften&quot;angezeigt, wenn Sie die Vorlage für den Seitenexporteur auswählen.
+   * Name: z. B. `mysite`. Der Name wird im Dialogfeld &quot;Seiteneigenschaften&quot;angezeigt, wenn Sie die Vorlage für den Seitenexporteur auswählen.
    * Typ: `nt:unstructured`
 
 1. Erstellen Sie unter dem Vorlagenknoten (in diesem Beispiel: `mysite`) eine Knotenstruktur mit den unten beschriebenen Konfigurationsknoten.
