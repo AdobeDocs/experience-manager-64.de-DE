@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -57,7 +60,7 @@ Fügen Sie Anmerkungen zur Verwaltungsschnittstelle hinzu, um MBean-Metadaten an
 Klassen werden für die Erstellung von Dynamic MBeans bereitgestellt, die die Anmerkungen nutzen, die Sie zu ihren Schnittstellen hinzufügen:
 
 * **AnnotatedStandardMBean:** eine Unterklasse der Klasse javax.management.StandardMBean, die der JMX-Konsole die Anmerkungs-Metadaten automatisch bereitstellt.
-* **** OpenAnnotatedStandardMBean: Eine Unterklasse der AnnotatedStandardMBean-Klasse zum Erstellen von Open Mbeans, die die OpenTypeInfo-Ankündigung nutzen.
+* **OpenAnnotatedStandardMBean:** Eine Unterklasse der AnnotatedStandardMBean-Klasse zum Erstellen von Open Mbeans, die die OpenTypeInfo-Ankündigung nutzen.
 
 ### Entwickeln von MBeans {#developing-mbeans}
 
@@ -136,9 +139,9 @@ Wenn Sie MBeans als OSGi-Dienst registrieren, werden sie automatisch beim MBean-
 
 Neben den zu OSGi gehörenden Metadaten müssen Sie auch die Metadaten angeben, die das Aries JMX Whiteboard-Modul für die Registrierung des MBean beim MBean-Server benötigt:
 
-* **** Name der DynamicMBean-Schnittstelle: Erklären Sie, dass der MBean-Dienst die `javax.management.DynamicMBea`n-Schnittstelle implementiert. Diese Deklaration informiert das Aries JMX Whiteboard-Modul darüber, dass es sich bei dem Dienst um einen MBean-Dienst handelt.
+* **Name der DynamicMBean-Schnittstelle:** Erklären Sie, dass der MBean-Dienst die `javax.management.DynamicMBea`n-Schnittstelle implementiert. Diese Deklaration informiert das Aries JMX Whiteboard-Modul darüber, dass es sich bei dem Dienst um einen MBean-Dienst handelt.
 
-* **** Die MBean-Domäne und Schlüsseleigenschaften: Unter Felix geben Sie diese Informationen als Eigenschaft des OSGi-Dienstes von MBean an. Dabei handelt es sich um dieselben Daten, die Sie für gewöhnlich dem MBean-Server in einem `javax.management.ObjectName`-Objekt bereitstellen.
+* **Die MBean-Domäne und Schlüsseleigenschaften:** Unter Felix geben Sie diese Informationen als Eigenschaft des OSGi-Dienstes von MBean an. Dabei handelt es sich um dieselben Daten, die Sie für gewöhnlich dem MBean-Server in einem `javax.management.ObjectName`-Objekt bereitstellen.
 
 Wenn Ihr MBean das Abbild eines einzelnen Dienstes ist, ist nur eine einzige Instanz des MBean-Dienstes erforderlich. In diesem Fall können Sie, wenn Sie das Felix SCR Maven-Plug-in verwenden, mit den Apache Felix Service Component Runtime (SCR)-Anmerkungen auf der MBean-Implementierungsklasse die JMX-Metadaten festlegen. Um mehrere MBean-Instanzen zu initiieren, könnten Sie eine weitere Klasse erstellen, die die Registrierung des OSGi-Dienstes des MBean durchführt. In diesem Fall werden die JMX-Metadaten bei Laufzeit erzeugt.
 
