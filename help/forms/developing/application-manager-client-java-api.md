@@ -38,11 +38,11 @@ Der folgende Java API Quick Beginn (SOAP) ist für den Application Manager-Clien
 
 [Quick Beginn (SOAP-Modus): Löschen des AEM Forms-Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Quick Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn im Verzeichnis &quot;Programmieren mit AEM Forms&quot;basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -644,9 +644,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des LiveCycle ES2-Anwendungsarchivs und höher mit der Java-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird die Vorschau von AEM Forms und späteren Anwendungsarchiven mit der Java-API gezeigt.
+Im folgenden Java-Codebeispiel wird die Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API gezeigt.
 
 ```as3
 /* 
