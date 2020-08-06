@@ -69,7 +69,7 @@ Adobe Experience Manager ist ein webbasiertes Client-Server-System für das Erst
 
 Auf Infrastrukturebene bietet AEM Folgendes:
 
-* **Webanwendung Server**: AEM kann im eigenständigen Modus (einschließlich eines integrierten Jetty-Webservers) oder als Webanwendung innerhalb eines Drittanbieteranwendungsservers (WebLogic, WebSphere usw.) bereitgestellt werden.
+* **Webanwendung Server**: AEM können im eigenständigen Modus (einschließlich eines integrierten Jetty-Webservers) oder als Webanwendung innerhalb eines Drittanbieteranwendungsservers (WebLogic, WebSphere usw.) bereitgestellt werden.
 * **Framework für Webanwendungen**: AEM verfügt über das Sling Web Application Framework (Sling-Webanwendungsframework). Dieses vereinfacht das Schreiben von RESTful- und inhaltsorientierten Webanwendungen.
 * **Inhalts-Repository**: AEM umfasst ein Java Content Repository (JCR). Hierbei handelt es sich um einen Typ hierarchischer Datenbank, die speziell für unstrukturierte und halb strukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten.
 
