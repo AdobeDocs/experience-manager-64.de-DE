@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 translation-type: tm+mt
 source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 >[!CAUTION]
 >
@@ -37,28 +40,27 @@ Sie können Ihre Website-spezifischen Vorlagen für Inhaltsfragmente erstellen u
 
 * `/apps/settings/dam/cfm/templates`
 
-   
-Der Speicherort zum Überlagern von vordefinierten Vorlagen oder Bereitstellen kundenspezifischer, anwendungsweiter Vorlagen, die zur Laufzeit nicht erweitert/geändert werden sollen.
+   Der Speicherort zum Überlagern von vordefinierten Vorlagen oder Bereitstellen kundenspezifischer, anwendungsweiter Vorlagen, die zur Laufzeit nicht erweitert/geändert werden sollen.
 
 * `/conf/global/settings/dam/cfm/templates`
 
-   
-Der Speicherort für kundenspezifische Instanzvorlagen, die zur Laufzeit geändert werden müssen.
+   Der Speicherort für kundenspezifische Instanzvorlagen, die zur Laufzeit geändert werden müssen.
 
 The order of precedence is (in descending order) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
 >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
    >
    >
-1. Make any changes within `/apps`
+1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+
 >
 
 
@@ -139,7 +141,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>erforderlich</p> </td> 
-   <td><p><code>true</code>, wenn die Teilassets, die die Elemente (mit Ausnahme des Masterelements) des Inhaltsfragments darstellen, beim Erstellen des Inhaltsfragments erstellt werden sollten; <em>false</em> , wenn sie "on the fly"erstellt werden sollten.</p> <p><strong>Hinweis</strong>: Derzeit muss dieser Parameter auf <code>true</code>.</p> </td> 
+   <td><p><code>true</code>, wenn die Teilassets, die die Elemente (mit Ausnahme des Übergeordnet-Elements) des Inhaltsfragments darstellen, beim Erstellen des Inhaltsfragments erstellt werden sollten; <em>false</em> , wenn sie "on the fly"erstellt werden sollen.</p> <p><strong>Hinweis</strong>: Derzeit muss dieser Parameter auf <code>true</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
@@ -161,7 +163,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>erforderlich</p> </td> 
-   <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. It is mandatory and needs to contain at least one child node for the <strong>Main</strong> element, but can contain [1..n] untergeordneten Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird die Unterverzweigung "Elemente"in die Modell-Unterverzweigung des Fragments kopiert.</p> <p>The first element (as viewed in CRXDE Lite) is automatically considered to be the <i>main</i> element; the node name is irrelevant and the node itself does not have a special significance, apart from the fact that it is represented by the main asset; the other elements are handled as sub assets.</p> </td> 
+   <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. It is mandatory and needs to contain at least one child node for the <strong>Main</strong> element, but can contain [1..n] untergeordneten Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird die Unterverzweigung "Elemente"in die Unterverzweigung "Modell"des Fragments kopiert.</p> <p>The first element (as viewed in CRXDE Lite) is automatically considered to be the <i>main</i> element; the node name is irrelevant and the node itself does not have a special significance, apart from the fact that it is represented by the main asset; the other elements are handled as sub assets.</p> </td> 
   </tr> 
  </tbody> 
 </table>
