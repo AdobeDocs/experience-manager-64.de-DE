@@ -1,6 +1,6 @@
 ---
-title: 'Bearbeiter     '
-seo-title: 'Bearbeiter     '
+title: 'Bearbeiter            '
+seo-title: 'Bearbeiter            '
 description: Erfahren Sie, wie Sie zurück zum klassischen Benutzeroberflächen-Editor wechseln.
 seo-description: Erfahren Sie, wie Sie zurück zum klassischen Benutzeroberflächen-Editor wechseln.
 uuid: 78ba4db0-affa-4081-bf29-a3306720c968
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 5fca5401-502d-483b-bfc1-ef53e2c041b7
 translation-type: tm+mt
 source-git-commit: 9fa15a44cf83a50538cea3fb37bcccf405f66738
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 91%
 
 ---
 
 
-# Bearbeiter     {#editor}
+# Bearbeiter            {#editor}
 
 Standardmäßig ist die Möglichkeit, zum klassischen Benutzeroberflächen-Editor zu wechseln, deaktiviert.
 
