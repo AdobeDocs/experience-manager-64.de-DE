@@ -60,7 +60,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 Bevor Sie einen Convert PDF-Dienstvorgang programmgesteuert durchführen können, müssen Sie einen Convert PDF-Dienstclient erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ConvertPdfServiceClient` Objekt. Wenn Sie die Webdienst-API verwenden, erstellen Sie ein `ConvertPDFServiceService` Objekt.
 
-In diesem Abschnitt werden Webdienstfunktionen verwendet, die in AEM Forms eingeführt wurden. Um auf neue Funktionen zugreifen zu können, müssen Sie das Proxy-Objekt mithilfe des `lc_version` Attributs erstellen. (Siehe &quot;Zugriff auf neue Funktionen mithilfe von Webdiensten&quot;in [Aufrufen von AEM Forms mithilfe von Web-Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Dieser Abschnitt verwendet Webdienst-Funktionen, die in AEM Forms eingeführt werden. Um auf neue Funktionen zugreifen zu können, müssen Sie das Proxy-Objekt mithilfe des `lc_version` Attributs erstellen. (Siehe &quot;Zugriff auf neue Funktionen mithilfe von Webdiensten&quot;in [Aufrufen von AEM Forms mithilfe von Web-Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Verweisen Sie auf das PDF-Dokument, das in eine PostScript-Datei konvertiert werden soll**
 
@@ -76,7 +76,7 @@ Wenn Sie die `ExpandToFit` Option (mit der die Ausgabe der PostScript-Datei an d
 
 >[!NOTE]
 >
->Informationen zu den Laufzeitwerten, die Sie einstellen können, finden Sie in der `ToPSOptionsSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Informationen zu den Laufzeitwerten, die Sie einstellen können, finden Sie in der `ToPSOptionsSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **PDF-Dokument in eine PostScript-Datei konvertieren**
 
@@ -119,7 +119,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Convert PDF Service API (Java) in
 1. Legen Sie Laufzeitoptionen für Konversionen fest.
 
    * Create a `ToPSOptionsSpec` object by invoking its constructor.
-   * Legen Sie Laufzeitoptionen fest, indem Sie eine geeignete Methode aufrufen, die zum `ToPSOptionsSpec` Objekt gehört. Um beispielsweise die erstellte PostScript-Ebene zu definieren, rufen Sie die `ToPSOptionsSpec` Objektmethode auf und übergeben Sie einen Wert für die `setPsLevel` `PSLevel` Auflistung, der die PostScript-Ebene angibt. Informationen zu allen Laufzeitwerten, die Sie festlegen können, finden Sie in der `ToPSOptionsSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie Laufzeitoptionen fest, indem Sie eine geeignete Methode aufrufen, die zum `ToPSOptionsSpec` Objekt gehört. Um beispielsweise die erstellte PostScript-Ebene zu definieren, rufen Sie die `ToPSOptionsSpec` Objektmethode auf und übergeben Sie einen Wert für die `setPsLevel` `PSLevel` Auflistung, der die PostScript-Ebene angibt. Informationen zu allen von Ihnen festgelegten Laufzeitwerten finden Sie in der `ToPSOptionsSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Konvertieren Sie das PDF-Dokument in eine PostScript-Datei.
 
@@ -155,12 +155,12 @@ Konvertieren eines PDF-Dokuments mithilfe der Convert PDF Service API (Webdienst
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen Convert PDF-Client.
 
    * Create a `ConvertPdfServiceClient` object by using its default constructor.
-   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom`an.
+   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom`an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `ConvertPdfServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -203,9 +203,9 @@ Konvertieren eines PDF-Dokuments mithilfe der Convert PDF Service API (Webdienst
 
 [Zusammenfassung der Schritte](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Konvertieren von PDF-Dokumenten in Bildformate {#converting-pdf-documents-to-image-formats}
 
@@ -242,7 +242,7 @@ Sie müssen das PDF-Dokument abrufen, um es in ein Bild zu konvertieren. Sie kö
 
 **Festlegen von Laufzeitoptionen**
 
-Sie müssen Laufzeitoptionen wie das Bildformat und die Auflösungswerte festlegen. Informationen zu den Laufzeitwerten finden Sie in der `ToImageOptionsSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie müssen Laufzeitoptionen wie das Bildformat und die Auflösungswerte festlegen. Informationen zu den Laufzeitwerten finden Sie in der `ToImageOptionsSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **PDF in ein Bild konvertieren**
 
@@ -316,12 +316,12 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Convert PDF Service API (Webdiens
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen PDF-Client zum Konvertieren.
 
    * Create a `ConvertPdfServiceClient` object by using its default constructor.
-   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom`an.
+   * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom`an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `ConvertPdfServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -364,6 +364,6 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Convert PDF Service API (Webdiens
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
