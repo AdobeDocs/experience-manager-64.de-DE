@@ -28,7 +28,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
-Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON-Exporter verwenden, um den Inhalt einer (y) AEM-Seite im JSON-Datenmodellformat bereitzustellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON-Exporter verwenden, um den Inhalt einer (y) AEM Seite im JSON-Datenmodellformat bereitzustellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsd
 
 Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
-Innerhalb von AEM wird der Versand mithilfe der Auswahl `model` und `.json` Erweiterung erreicht.
+Innerhalb AEM Versands wird mithilfe der Auswahl `model` und `.json` Erweiterung erreicht.
 
 `.model.json`
 
@@ -82,7 +82,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
 Siehe auch:
 
-* Assets-HTTP-API
+* Assets-HTTP-API  
 
    * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
