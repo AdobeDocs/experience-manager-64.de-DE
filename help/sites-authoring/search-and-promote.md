@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Search&Promote-Funktionen zu Ihrer Seite
-seo-title: Hinzufügen von Search&Promote-Funktionen zu Ihrer Seite
+title: Hinzufügen von Search&Promote zu einer Seite
+seo-title: Hinzufügen von Search&Promote zu einer Seite
 description: Um Search&Promote-Funktionen in Ihre Website zu integrieren, verwenden Sie die Search&Promote-Komponenten, um Schlüsselwortsuchen, Suchergebnisseiten, Suchverfeinerung und Bannerfunktionen zu Ihrer Seite hinzuzufügen.
 seo-description: Um Search&Promote-Funktionen in Ihre Website zu integrieren, verwenden Sie die Search&Promote-Komponenten, um Schlüsselwortsuchen, Suchergebnisseiten, Suchverfeinerung und Bannerfunktionen zu Ihrer Seite hinzuzufügen.
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 79%
 
 ---
 
