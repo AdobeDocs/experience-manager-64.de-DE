@@ -1,16 +1,19 @@
 ---
 title: Info zu AEM Assets
-description: Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das AEM Asset-Angebot von Adobe.
+description: Erfahren Sie mehr über die Verwaltung digitaler Assets, ihre Anwendungsfälle und das Asset-Angebot der Adobe.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 56%
 
 ---
 
 
 # Info zu AEM Assets {#about-assets}
 
-Assets ist ein DAM-Tool (Digital Asset Management), das vollständig in die AEM-Plattform integriert ist und Ihrem Unternehmen die Freigabe und Verteilung digitaler Assets ermöglicht. Benutzer im gesamten Unternehmen können Bilder, Videos, Dokumente, Audioclips und Rich-Media wie Flash-Dateien für die Verwendung im Internet, zum Drucken und für die digitale Verteilung verwalten, speichern und darauf zugreifen.
+Assets ist ein DAM-Tool (Digital Asset Management), das vollständig in die AEM integriert ist und Ihrem Unternehmen die Freigabe und Verteilung digitaler Assets ermöglicht. Benutzer im gesamten Unternehmen können Bilder, Videos, Dokumente, Audioclips und Rich-Media wie Flash-Dateien für die Verwendung im Internet, zum Drucken und für die digitale Verteilung verwalten, speichern und darauf zugreifen.
 
 ## What is Digital Asset Management (DAM)? {#what-is-digital-asset-management}
 
@@ -25,7 +28,7 @@ AEM Assets ist vollständig in AEM integriert und ermöglicht Ihnen Folgendes:
 * Ausführen von Bildbearbeitungsvorgängen, beispielsweise Skalierung und Hinzufügen von Bildfiltern. Importieren und Exportieren mehrerer digitaler Assets gleichzeitig mithilfe eines WebDAV- oder CIFS-Ordners.
 * Verwenden von Workflows und Benachrichtigungen, um die gemeinsame Verarbeitung und den gemeinsamen Download mehrerer Assets zu ermöglichen und Zugriffsrechte auf Assets zu verwalten.
 
-### AEM Assets ist vollständig in die WCM-Funktionen von AEM integriert {#aem-assets-fully-integrated-in-cq-wcm}
+### AEM Assets ist vollständig in AEM WCM-Funktionen integriert {#aem-assets-fully-integrated-in-cq-wcm}
 
 AEM Assets ist vollständig in CQ WCM integriert und die Funktionen sind über das DAM-Symbol verfügbar:
 
@@ -45,7 +48,7 @@ In CQ DAM verwaltete Assets sind dann über die Inhaltssuche von WCM zugänglic
 
 ### Digital Asset Management versus the Image component {#digital-asset-management-versus-image-component}
 
-Berücksichtigen Sie bei der Entscheidung, ob Sie ein Bild in AEM Assets einfügen oder die Image-Komponente verwenden, den Lebenszyklus des Bilds:
+Berücksichtigen Sie bei der Entscheidung, ob ein Bild in AEM Assets platziert oder die Image-Komponente verwendet werden soll, den Bildlebenszyklus:
 
 * Wenn das Bild denselben Lebenszyklus wie die Seite hat, verwenden Sie die Image-Komponente.
 * Wenn das Bild einen eigenen Lebenszyklus hat – beispielsweise, wenn Sie das Bild zweimal oder außerhalb von WCM verwenden –, verwenden Sie AEM Assets.
@@ -78,7 +81,7 @@ Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Termino
 
 * **Versionen:** Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Teilassets:** Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Fotoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
+* **Teilassets:** Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Photoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
 
 ### Arbeiten mit Assets {#how-to-work-with-assets}
 
