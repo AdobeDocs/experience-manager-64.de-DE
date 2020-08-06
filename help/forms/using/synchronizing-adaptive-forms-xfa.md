@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 83%
 
 ---
 
@@ -118,7 +121,7 @@ Die folgenden Schritte veranschaulichen diesen Gebrauchsfluss für die Assets in
 
 1. Aktualisieren Sie die Datei `sample-form.xdp` und löschen Sie NumericField1.
 1. Laden Sie die Datei `sample-form.xdp` in die AEM Forms-Benutzeroberfläche hoch.
-1. Öffnen Sie das adaptive Formular `sample-xfa-af` zum Authoring. Die folgende Fehlermeldung wird angezeigt: Die Schema-/Formularvorlage für das adaptive Formular wurde aktualisiert. `Click Here` , um es mit der neuen Version neu zu erstellen.
+1. Öffnen Sie das adaptive Formular `sample-xfa-af` zum Authoring. Die folgende Fehlermeldung wird angezeigt: Schema-/Formularvorlage für das adaptive Formular wurde aktualisiert. `Click Here` , um es mit der neuen Version neu zu erstellen.
 
 1. Click the link (labeled &quot; `Click Here`&quot;) in the message. Eine Fehlermeldung wird angezeigt, dass das Feld nicht mehr in der XDP-Datei vorhanden ist.
 
