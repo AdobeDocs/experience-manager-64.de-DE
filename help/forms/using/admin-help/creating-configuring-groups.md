@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '1595'
+ht-degree: 97%
 
 ---
 
@@ -90,11 +93,11 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
    >
    >Wenn das Gleichheitszeichen mit den Attributen „E-Mail“, „Beschreibung“ oder „Kanonischer Name“ verwendet wird, muss bei den Attributen die Groß- und Kleinschreibung beachtet werden. Bei den Operatoren „Beginnt mit“, „Endet mit“ oder „Enthält“ muss die Groß- und Kleinschreibung nicht beachtet werden.
 
-   **** E-Mail: E-Mail-Domäne des Benutzers, z. B. `@adobe.com`.
+   **E-Mail:** E-Mail-Domäne des Benutzers, z. B. `@adobe.com`.
 
    **Beschreibung**: Beschreibung des Benutzers, z. B. „Informatiker“.
 
-   **** Kanonischer Name: Kanonischer Name des Benutzers, z. B. `ou=adobe.com`
+   **Kanonischer Name:** Kanonischer Name des Benutzers, z. B. `ou=adobe.com`
 
    **Domänenname**: Der Name der Domäne, zu der der Benutzer gehört, z. B. `DefaultDom`. Bei dem Attribut „Domänenname“ muss die Groß- und Kleinschreibung beachtet werden, wenn der Operator „Enthält“ verwendet wird. Bei den Operatoren „Beginnt mit“, „Endet mit“ oder „Enthält“ muss die Groß- und Kleinschreibung nicht beachtet werden.
 
