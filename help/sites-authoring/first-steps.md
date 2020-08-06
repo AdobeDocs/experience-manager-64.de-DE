@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 93%
 
 ---
 
@@ -21,11 +24,11 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 
 Er deckt folgende Themen ab:
 
-* [Erste Schritte](#getting-started) - Eine detaillierte Beschreibung der grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
+* [Erste Schritte](#getting-started) - Eine detaillierte Übersicht der Ereignis, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
 
 * [Weitere Aktionen](#further-actions) - Die vielen anderen Aktionen, die Sie beim Authoring verwenden können, werden fortgesetzt.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Diese Bildschirmpräsentation (Clickthrough) bietet einen schnellen visuellen Überblick darüber, wie Sie mit AEM Ihre erste Seite bearbeiten. Links zu Details zu den einzelnen Schritten finden Sie dann unter [Einstieg](#getting-started).
 
