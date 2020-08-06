@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 14%
 
 ---
 
@@ -54,7 +57,7 @@ Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und
 
 ### Abschluss- und Erfolgsstatus {#completion-and-success-status}
 
-Der Status &quot;Abschluss&quot;und &quot;Erfolg&quot;werden in Berichten sowie Statusbannern für Zuweisungen verwendet.
+Der Status &quot;Abschluss&quot;und &quot;Erfolg&quot;werden in Berichten sowie in Statusbannern für Zuweisungen verwendet.
 
 Abschlussstatus:
 
@@ -88,6 +91,6 @@ Eine Community-Site-Struktur, die die [Zuweisungsfunktion](functions.md#assignme
 
 * [Aktivierungs-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [Berichterstellungs-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [Berichte-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Berichterstellungs-Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
