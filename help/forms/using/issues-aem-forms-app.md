@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 65%
 
 ---
 
@@ -41,7 +44,7 @@ AEM Forms-App für iOS, die zur Synchronisierung mit AEM Forms unter OSGi konfig
 
 ## Entwürfe von HTML5 -Formularen, die von Workspace-Benutzern eingesendet wurden, werden nicht auf dem Portal angezeigt {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-For HTML5 forms enabled in AEM Forms app with **Save as Draft** HTML Render Profile, the saved drafts are not visible to workspace users. So zeigen Sie gespeicherte Entwürfe von HTML5-Formularen an, die von Workspace-Benutzern im Portal übermittelt wurden:
+For HTML5 forms enabled in AEM Forms app with **Save as Draft** HTML Render Profile, the saved drafts are not visible to workspace users. So führen Sie die folgenden Schritte aus, um gespeicherte Entwürfe von HTML5-Formularen, die von Workspace-Benutzern im Portal übermittelt wurden, Ansicht:
 
 1. Öffnen Sie CRXDE und melden Sie sich als Administrator an.
 
@@ -80,23 +83,23 @@ Modifizieren Sie den Pfad des Formulars und seine Ressourcen, um die Anzahl der 
 
 ## Nicht unterstützte Version von Gradle {#unsupported-version-of-gradle}
 
-**** Fehlermeldung: Das Projekt verwendet eine nicht unterstützte Version von Gradle.
+**Fehlermeldung:** Das Projekt verwendet eine nicht unterstützte Version von Gradle.
 
 Die Fehlermeldung wird angezeigt, wenn Sie die AEM Forms-App in Android Studio erstellen. Das Problem tritt aufgrund einer nicht unterstützten Version von Gradle auf, die vom System unterstützt wird.
 
-**** Lösung: Klicken Sie auf **Korrigieren Sie den Gradle Wrapper und importieren Sie das Projekt** erneut, um das Problem zu beheben.
+**Lösung:** Klicken Sie auf **Korrigieren Sie den Gradle Wrapper und importieren Sie das Projekt** erneut, um das Problem zu beheben.
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Kompatibilitätsprobleme mit Gradle und Android Gradle Plug-In {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
-**** Fehlermeldung: Die Versionen des Android-Gradle-Plug-Ins und der Gradle-Funktion sind nicht kompatibel.
+**Fehlermeldung:** Die Versionen des Android-Gradle-Plug-Ins und der Gradle-Funktion sind nicht kompatibel.
 
 The error message is displayed when you select **Build APK** option from the **Build** menu on the Android Studio user interface.
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**** Lösung: Öffnen Sie die Datei **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die **Eigenschaft distributionUrl** .
+**Lösung:** Öffnen Sie die Datei **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die **Eigenschaft distributionUrl** .
 
 For example, the Android Studio console recommends downgrading the Gradle version to 3.5. Edit the version in **distributionUrl** of **gradle-wrapper.properties** file.
 
