@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +40,7 @@ Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-comp
 
 >[!NOTE]
 >
->Dieses Dokument befasst sich hauptsächlich mit der Entwicklung von Formularen mit den [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt, bei der Formularentwicklung in der Touch-optimierten Benutzeroberfläche die neuen [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und [Ausblendebedingungen](/help/sites-developing/hide-conditions.md) zu nutzen.
+>Dieses Dokument befasst sich hauptsächlich mit der Entwicklung von Formularen mit den [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt, bei der Formularentwicklung in der Touch-optimierten Benutzeroberfläche die neuen [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und [Ausblendebedingungen](/help/sites-developing/hide-conditions.md) zu nutzen.
 
 ## Vorausfüllen von Formularwerten {#preloading-form-values}
 
@@ -117,7 +120,7 @@ You can add your own action under `/apps` as follows:
    * Optional:
 
       * `jcr:title`: Geben Sie einen Titel Ihrer Wahl an, der in der Dropdown-Auswahlliste angezeigt wird. Wenn Sie dies nicht festlegen, wird der Name des Knotens angezeigt
-      * `jcr:description` - Geben Sie eine Beschreibung Ihrer Wahl ein
+      * `jcr:description` - Geben Sie eine Beschreibung Ihrer Wahl ein.
 
 1. Erstellen Sie im Ordner einen Dialogknoten:
 
@@ -144,6 +147,7 @@ You can add your own action under `/apps` as follows:
 
    * Ein `post.POST.jsp` eignet sich für kleine Vorgänge, die vollständig von der Aktion selbst ausgeführt werden.
    * `forward.jsp` ist hingegen hilfreich, wenn nur Delegation erforderlich ist.
+
    Die Skripte werden in folgender Reihenfolge ausgeführt:
 
    * Upon rendering the form ( `GET`):
@@ -171,7 +175,7 @@ You can add your own action under `/apps` as follows:
 
       The name of the script is `addfields.<extension>`, e.g. `addfields.jsp`
 
-      Ein addfields-Skript wird unmittelbar nach dem Schreiben des HTML für den Formularstart aufgerufen. Dadurch kann die Aktion benutzerdefinierte Eingabefelder oder sonstigen HTML-Code in das Formular einfügen.
+      Ein addfields-Skript wird unmittelbar nach dem Schreiben des HTML-Codes für den Formular-Beginn aufgerufen. Dadurch kann die Aktion benutzerdefinierte Eingabefelder oder sonstigen HTML-Code in das Formular einfügen.
 
    1. Ein Initialisierungsskript.
 
@@ -292,6 +296,7 @@ In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname�
       * **Beliebig**: Wenn nur eine oder mehrere Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
    * Wählen Sie in der Bedingungszeile (eine wird als Standard gezeigt) eine Komponente und einen Operator aus und geben Sie einen Wert an.
    * Klicken Sie bei Bedarf auf **Bedingung hinzufügen**, um weitere Bedingungen hinzuzufügen.
+
    Beispiel:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
