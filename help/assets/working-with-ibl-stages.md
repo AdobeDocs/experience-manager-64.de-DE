@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 58%
 
 ---
 
@@ -32,8 +35,8 @@ Derzeit unterstützt AEM 3D nur 32-Bit-TIFF-Dateien. Verwenden Sie gegebenenfal
 
 Häufig ist ein einziges HDR-Bild für IBL-Bühnen ausreichend. AEM 3D lässt jedoch bis zu drei separate Bilder zu und bietet so zusätzliche Steuerungsmöglichkeiten der IBL-Effekte:
 
-* **Bild** für die diffuse Beleuchtung: Bei diesem Bild sollte es sich um ein HDR-Bild handeln, das jedoch relativ klein sein kann, da das Bild stark gefiltert wird, bevor es für diffuse Beleuchtung verwendet wird.
-* **Reflection Environment Image** - Dieser Bildtyp wird verwendet, um Reflexionen in Objektoberflächen zu erstellen. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe und Auflösung sind geeignet, um die Anforderungen an Qualität und Schärfe der Reflexionen zu erfüllen. Bei Angabe eines HDR-Bildes wandelt AEM 3D das Bild in 8-Bit-RGB um, bevor ein proprietärer Algorithmus verwendet wird.
+* **Lichtbild** - Bei diesem Bildtyp handelt es sich um ein HDR-Umgebung, das jedoch relativ klein sein kann, da das Bild vor der Verwendung für diffuse Beleuchtung stark gefiltert wird.
+* **Reflektionsbild** - Dieser Bildtyp wird verwendet, um Reflexionen in Objektoberflächen zu erstellen. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe und Auflösung sind geeignet, um die Anforderungen an Qualität und Schärfe der Reflexionen zu erfüllen. Bei Angabe eines HDR-Bildes wandelt AEM 3D das Bild in 8-Bit-RGB um, bevor ein proprietärer Algorithmus verwendet wird.
 * **Hintergrundbild** - Dieser Bildtyp wird als Hintergrund verwendet. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe/Auflösung/Detailgrad sollte die Anforderungen an den Bühnen-Hintergrund erfüllen. Wenn ein HDR-Bild angegeben ist, konvertiert AEM 3D dieses mithilfe eines proprietären Algorithmus in ein 8-Bit-RGB-Bild. ``
 
 >[!NOTE]
@@ -54,7 +57,7 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
    <td>IBL-Sun-Details</td> 
    <td><p>Hiermit können Sie die Richtung und Stärke der zusätzlichen Lichtquelle einstellen, die die Sonne simuliert. <span class="diff-html-added">Diese Lichtquelle erhöht die Helligkeit der Beleuchtung und sorgt für einen Schlagschatten auf der Ausgangsebene. Der Schattenwurf wird beim Rendern mit Rapid Refine und in der Vorschau mit Google Chrome unterstützt. Von anderen Browsern wird er derzeit nicht unterstützt.</span></p> 
     <ul> 
-     <li><strong>lat</strong> - Die vertikale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> eine Einstellung von <code>0.0</code> ist am Horizont (vertikaler Mittelpunkt des Bildes für die diffuse Beleuchtung); befindet <code>1.0</code> sich am oberen Rand des Bildes für die diffuse Beleuchtung.</li> 
+     <li><strong>lat</strong> - Die vertikale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> eine Einstellung von <code>0.0</code> ist am Horizont (vertikaler Mittelpunkt des Bilds für die diffuse Umgebung); <code>1.0</code> befindet sich am höchsten Punkt (obere Kante der Umgebung "Diffuse Lighting").</li> 
      <li><strong>long</strong> - Die horizontale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> Die Einstellung 0,0 steht für die linke Ecke, 1,0 für die rechte Ecke des Umgebungsbildes für diffuse Beleuchtung.<br /> </li> 
      <li><strong>hell</strong> - Die Helligkeit der Sonnenlichtquelle. Erhöhen Sie diesen Wert, um die Sonnenlichtquelle aufzuhellen. Verringern Sie den Wert, um sie zu verdunkeln. <br /> Bei einer Einstellung werden zusätzliche Beleuchtung <code>0</code> deaktiviert und Schatten deaktiviert. Der Parameter wirkt sich nicht auf die Umgebungsreflexionen aus.<br /> </li> 
     </ul> </td> 
@@ -64,7 +67,7 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
    <td>Wenn der IBL-Hintergrund in der Nähe des Horizonts verzerrt angezeigt wird, ist es möglich, die Verzerrung durch Anpassen dieser Eigenschaft zu reduzieren oder zu beseitigen. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Umgebungsbeleuchtung</td> 
+   <td>Umgebung-Beleuchtung</td> 
    <td><p><span class="diff-html-added">Hiermit können Sie die diffuse Beleuchtung steuern. Wenn das Bild mit diffuser Beleuchtungsumgebung ungewöhnlich hell oder dunkel ist (beispielsweise Nachtszenen), müssen Sie diese Eigenschaft manuell korrigieren.</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Derzeit nicht verwendet.</li> 
@@ -78,16 +81,16 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
 
 IBL-Stufen verwenden standardmäßig kugelförmige Hintergrundbilder mit einem Durchmesser von 20 Metern. Diese Stufen eignen sich gut für Objekte bis zu 10 Meter. Wenn Sie jedoch größere Objekte anzeigen, können Sie den kugelförmigen Hintergrunddurchmesser einer IBL-Bühne erhöhen.
 
-**So erhöhen Sie den kugelförmigen Hintergrunddurchmesser einer IBL-Stufe**:
+**Erhöhen des kugelförmigen Hintergrunddurchmessers einer IBL-Stufe**:
 
-1. Navigieren Sie in CRXDE Lite zu der Bühne, deren kugelförmiger Hintergrunddurchmesser Sie erhöhen möchten. Beispiel:
+1. Navigieren Sie in der CRXDE Lite zu der Bühne, deren kugelförmiger Hintergrunddurchmesser Sie erhöhen möchten. Beispiel:
 
    `/content/dam/test3d/stage-helipad.fbx`
 
 1. Erweitern Sie den Knoten &quot;stage&quot;auf `jcr:content/metadata`.
 1. Legen Sie die Eigenschaft `dam:gPlaneRadius` auf den gewünschten Millimeterwert fest.
 
-   Zur effizienten Darstellung empfiehlt Adobe, dass Sie diesen Wert auf etwa die größte Dimension des größten Objekts beschränken, das Sie auf der Bühne anzeigen möchten.
+   Zur Steigerung der Rendereffizienz empfiehlt Adobe, diesen Wert auf etwa die größte Dimension des größten Objekts zu beschränken, das Sie auf der Bühne anzeigen möchten.
 
    Beispielsweise wird ein 20 Meter langes Jet-plane-Modell gut angezeigt, wenn `dam:gPlaneRadius=20000`.
 
