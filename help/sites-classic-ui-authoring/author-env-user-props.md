@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 71%
 
 ---
 
@@ -21,7 +24,8 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
-* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese am oberen Rand des Browser-Fensters angezeigte Symbolleiste beinhaltet Schaltflächen zum **Kopieren**, **Ausschneiden**, **Einfügen** und **Löschen**, die mit den Absatzkomponenten auf dieser Seite verwendet werden können:
+* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, zeigt Ihnen 
+**Schaltflächen &quot;Kopieren**&quot;, &quot; **Ausschneiden**&quot;, &quot; **Einfügen**&quot;und &quot; **Löschen** &quot;für die Verwendung mit den Absatzkomponenten auf dieser Seite:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
@@ -30,13 +34,13 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 * **Identität annehmen als**
 Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
-* **Sprache** Die für die Benutzeroberfläche der Authoring-Umgebung zu verwendende Sprache.Wählen Sie die gewünschte Sprache in der verfügbaren Liste aus.
+* **Sprache** Die für die Benutzeroberfläche der Authoring-Umgebung zu verwendende Sprache. Wählen Sie in der verfügbaren Liste die gewünschte Sprache aus.
 
 * **Fensterverwaltung**
 Wählen Sie entweder:
 
-   * Mehrere Fenster (Standard):Seiten werden in einem neuen Fenster geöffnet.
-   * Einzelnes Fenster:Seiten werden im aktuellen Fenster geöffnet.
+   * Mehrere Fenster (Standard): Die Seiten werden in einem neuen Fenster geöffnet.
+   * Einzelnes Fenster: Seiten werden im aktuellen Fenster geöffnet.
 
 ## Kontoeinstellungen {#account-settings}
 
