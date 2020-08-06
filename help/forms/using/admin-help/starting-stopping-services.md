@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 82%
 
 ---
 
@@ -33,8 +36,8 @@ AEM Forms-Module (z. B. Forms, Rights Management, Output) arbeiten als Dienste. 
 
 Eine vollständige Implementierung von AEM Forms umfasst einen Anwendungsserver und Datenbankdienste:
 
-* *`[application server]`* für AEM Forms
-* *`[database]`* für AEM Forms
+* *`[application server]`* für AEM
+* *`[database]`* für AEM
 
 On Windows, these services are accessible through the **Administrative Tools** > **Services panel**. Wenn Sie z. B. AEM Forms unter JBoss mit der Turnkey-Methode installiert haben, stehen auf Ihrem System die folgenden Dienste zur Verfügung:
 
