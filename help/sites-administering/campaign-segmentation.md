@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 83%
 
 ---
 
@@ -95,11 +98,11 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
   </tr> 
   <tr> 
    <td> Benutzeralter<br /> </td> 
-   <td>Wie aus dem Benutzerprofil genommen.<br /> </td> 
+   <td>Wie aus dem Profil des Benutzers genommen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Benutzereigenschaft<br /> </td> 
-   <td>Alle weiteren Informationen, die im Benutzerprofil verfügbar sind. </td> 
+   <td>Alle anderen Informationen, die im Profil des Benutzers verfügbar sind. </td> 
   </tr> 
  </tbody> 
 </table>
