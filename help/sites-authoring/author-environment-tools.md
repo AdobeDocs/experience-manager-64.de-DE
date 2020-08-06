@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 93%
 
 ---
 
 
 # Autorenumgebung und Tools{#authoring-the-environment-and-tools}
 
-Die Authoring-Umgebung von AEM bietet verschiedene Mechanismen zum Organisieren und Bearbeiten Ihrer Inhalte. Auf die bereitgestellten Tools können Sie von den verschiedenen Konsolen und Seiteneditoren aus zugreifen.
+Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
 
 ## Verwalten Ihrer Site {#managing-your-site}
 
@@ -50,11 +53,11 @@ Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zu
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Komponenten-Browser {#components-browser}
+## Komponenten-Browser   {#components-browser}
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
-Der Komponentenbrowser ist eine Registerkarte innerhalb des Seitenbedienfelds (zusammen mit dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) und der [Inhaltsstruktur](/help/sites-authoring/author-environment-tools.md#content-tree)). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
+Der Komponenten-Browser befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) und der [Inhaltsstruktur](/help/sites-authoring/author-environment-tools.md#content-tree)). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
 ![](do-not-localize/screen_shot_2018-03-22at141659.png)
 
@@ -90,10 +93,12 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
       * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
       * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
-   In der Symbolleiste des Komponenten-Browsers haben Sie folgende Möglichkeiten:
+
+   In der oberen Symbolleiste des Komponenten-Browsers haben Sie folgende Möglichkeiten:
 
    * Komponenten nach Namen filtern
    * mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
+
    Für eine detailliertere Beschreibung der Komponente können Sie im Browser Komponenten auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar).
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
@@ -143,7 +148,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 >[!NOTE]
 >
->Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
+>Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
 * **Mobilgerät, z. B. iPad**
 
@@ -165,15 +170,15 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur     {#content-tree}
+## Inhaltsstruktur       {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
-Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem Asset-Browser). Um das Seitenbedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
+Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem Asset-Browser). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
 ![](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Select the **Content Tree** tab if necessary. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
+Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
 ![screen_shot_2018-03-22at142526](assets/screen_shot_2018-03-22at142526.png)
 
@@ -195,7 +200,7 @@ Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird 
 
 >[!NOTE]
 >
->Die Inhaltsstruktur ist nicht verfügbar, wenn Sie eine Seite auf einem Mobilgerät bearbeiten (wenn die Browserbreite unter 1024 px liegt).
+>Beim Bearbeiten einer Seite auf einem Mobilgerät ist die Inhaltsstruktur nicht verfügbar (wenn die Browser-Breite weniger als 1.024 Pixel beträgt).
 
 ## Fragmente: Browser für zugehörige Inhalte {#fragments-associated-content-browser}
 
@@ -207,12 +212,12 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 * Blueprints
 * Launches
-* Live Copys
+* Live Copies
 * Sprachkopien
 * Verwendung der Verweiskomponente
 * Verweise auf Produktseiten (auf der Konsole „E-Commerce - Produkte“)
 
-Open the required console, then navigate to the required resource and open **References** using:
+Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie **Verweise** wie folgt:
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
@@ -225,7 +230,7 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 * Verwendung der Verweiskomponente (z. B. Navigieren zur referenzierenden bzw. referenzierten Seite)
 * [Verweise auf Produktseiten](/help/sites-administering/generic.md#showing-product-references) (verfügbar in der Konsole „E-Commerce - Produkte“)
 * [Launches](/help/sites-authoring/launches.md)
-* [Live Copies](/help/sites-administering/msm.md) zeigt die Pfade aller Live-Kopien an, die auf der ausgewählten Ressource basieren.
+* [](/help/sites-administering/msm.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 * [Sprachkopien](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)
 
@@ -237,7 +242,7 @@ Sie können beispielsweise einen beschädigten Verweis innerhalb einer Verweisko
 
 Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
 
-Open the required console, then navigate to the required resource and open **Timeline**, using:
+Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Timeline** wie folgt:
 
 ![screen_shot_2018-03-22at153952](assets/screen_shot_2018-03-22at153952.png)
 
@@ -247,7 +252,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 ## Seiteninformationen {#page-information}
 
-Mit den Seiteninformationen (Equalizer-Symbol) wird ein Menü geöffnet, das auch Details zur letzten Bearbeitung und zur letzten Veröffentlichung enthält. Abhängig von den Eigenschaften der Seite (und der Website, zu der sie gehört) sind u. U. weitere Optionen verfügbar:
+Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch Details zur letzten Bearbeitung und zur letzten Aktivierung enthält. Abhängig von den Eigenschaften der Seite (und der Website, zu der sie gehört) sind u. U. weitere Optionen verfügbar:
 
 ![screen_shot_2018-03-22at154210](assets/screen_shot_2018-03-22at154210.png)
 
@@ -270,12 +275,12 @@ Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen 
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi {#page-modes}
+## Seitenmodi   {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
 * [Bearbeiten:](/help/sites-authoring/editing-content.md) Der Modus zum Bearbeiten des Seiteninhalts.
-* [Layout](/help/sites-authoring/responsive-layout.md) - ermöglicht das Erstellen und Bearbeiten eines reaktionsfähigen Layouts je nach Gerät (wenn die Seite auf einem Layout-Container basiert)
+* [Layout](/help/sites-authoring/responsive-layout.md): Ermöglicht es Ihnen, Ihr responsives Layout gerätespezifisch zu erstellen und zu bearbeiten (wenn die Seite auf einem Layout-Container basiert).
 
 * [Strukturvorlage:](/help/sites-authoring/scaffolding.md) Hilft Ihnen bei der Erstellung einer großen Anzahl von Seiten, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen.
 * [Entwickler](/help/sites-developing/developer-mode.md): Ermöglicht die Durchführung verschiedener Aktionen (Berechtigungen erforderlich), zu denen die Untersuchung der technischen Details einer Seite und von deren Komponenten gehört.
@@ -291,7 +296,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 
 * [Anmerken](/help/sites-authoring/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 
-Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Symbol ändert abhängig vom verwendeten Modus:
+Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Symbol ändert sich je nach verwendetem Modus:
 
 ![chlimage_1-293](assets/chlimage_1-293.png)
 
@@ -300,7 +305,8 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Abhängig von den Merkmalen der Seite sind einige Modi ggf. nicht verfügbar.
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
->* Mit einem [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) kann zwischen **Vorschau** und dem derzeit ausgewählten Modus (z. B. **Bearbeiten**, **Layout**) umgeschaltet werden.
+>* Mit dem [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+
 >
 
 
@@ -309,7 +315,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 
 Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfadbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
 
-### Pfad-Felder {#path-fields}
+### Pfadfelder {#path-fields}
 
 Im vorliegenden Beispiel wird zur Verdeutlichung die Bildkomponente verwendet. Weitere Informationen zur Verwendung und Bearbeitung von Komponenten finden Sie unter [Komponenten für die Seitenbearbeitung](/help/sites-authoring/default-components.md).
 
@@ -317,13 +323,13 @@ Die Pfad-Felder bieten jetzt auch automatisches Ausfüllen und Vorausschau auf E
 
 ![screen_shot_2018-03-22at154403](assets/screen_shot_2018-03-22at154403.png)
 
-Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** auf dem Pfad-Feld wird das Dialogfeld [Pfadbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) geöffnet, in dem Optionen für eine präzisere Auswahl zur Verfügung stehen.
+Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** auf dem Pfadfeld wird das Dialogfeld [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) geöffnet, in dem Optionen für eine präzisere Auswahl zur Verfügung stehen.
 
 ![](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-### Pfadbrowser {#path-browser}
+### Pfad-Browser {#path-browser}
 
-Der Pfadbrowser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
+Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
