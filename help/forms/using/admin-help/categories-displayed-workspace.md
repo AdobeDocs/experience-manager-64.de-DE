@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 97%
 
 ---
 
@@ -21,9 +24,9 @@ In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien i
 
 Beim Angeben von Kategorienamen müssen diese so erstellt werden, dass sie im Navigationsbereich von Workspace ordnungsgemäß angezeigt werden. Der linke Navigationsbereich hat standardmäßig eine feste Breite von 210 Pixel, was ca. 24 Zeichen entspricht. Wenn der von Ihnen angegebene Wert nicht in das Feld mit fester Länge im linken Navigationsbereich passt, wird er abgeschnitten. Der vollständige Name wird nur angezeigt, wenn Sie den Mauszeiger darüber positionieren. Versuchen Sie nach Möglichkeit, das Abschneiden von Kategorienamen zu vermeiden. Die folgenden Beispiele zeigen passende und abgeschnittene Kategorienamen:
 
-**** Passender Kategoriename: An- und Abwesenheit
+**Passender Kategorie-Name:** An- und Abwesenheit
 
-**** Verkürzter Kategoriename: Teilnahme &amp; Urlaub (USA)
+**Abgeschnittener Name der Kategorie:** An- und Abwesenheit (Vereinigte Staaten)
 
 In Workspace werden Prozesse in einer Kategorie zumeist als Karten auf der Seite „Prozess starten“ angezeigt. Im Allgemeinen können auf dem Bildschirm für eine Kategorie sechs Karten angezeigt werden, bevor der Benutzer einen Bildlauf zum Anzeigen der restlichen Karten ausführen muss. Da das Auffinden eines Prozesses durch einen Bildlauf erschwert wird, begrenzen Sie ggf. jede Kategorie auf sechs Prozesse bzw. (abhängig von Ihrer Auflösung) auf die Anzahl von Prozessen, die ohne Bildlauf auf dem Bildschirm angezeigt werden kann.
 
