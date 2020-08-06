@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 44%
 
 ---
 
@@ -33,17 +36,17 @@ Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Pano
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
+* Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** component.
 
 Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
 
-## Konfigurieren von Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
+## Configuring Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit den für Dynamic Media Classic und Dynamic Media Classic spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in JCR aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
+Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit den für Dynamic Media Classic und Dynamic Media Classic spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich für jedes Unternehmenskonto bei Ihrer Instanz von Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) an.
+1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
 1. On the **[!UICONTROL Image Server Publish]** page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
@@ -61,6 +64,7 @@ Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie 
 
    * Set **[!UICONTROL Request Obfuscation Mode]** to **[!UICONTROL Disabled]**.
    * Set **[!UICONTROL Request Locking Mode]** to **[!UICONTROL Disabled]**.
+
    These settings are necessary for using the **[!UICONTROL Panoramic Media]** component in AEM.
 
 1. At the bottom of the **[!UICONTROL Image Server Publish]** page, on the left side, tap **[!UICONTROL Save]**.
@@ -79,8 +83,8 @@ If you dropped an image into the **[!UICONTROL Panoramic Media]** component in y
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
-Informationen hierzu finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
+Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
