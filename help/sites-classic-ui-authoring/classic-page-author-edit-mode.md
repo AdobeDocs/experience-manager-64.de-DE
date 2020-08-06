@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '6177'
+ht-degree: 86%
 
 ---
 
@@ -157,7 +160,7 @@ Hier geben Sie an wie das Karussell arbeitet:
       Die Zeit in Millisekunden vor der nächsten Folie wird angezeigt.
    * Übergangszeit
 
-      Zeit in Millisekunden für den Übergang zwischen zwei Dias.
+      Zeit in Millisekunden für die Transition zwischen zwei Dias.
    * Steuerelemente-Stil
 
       Über ein Pulldown-Menü stehen verschiedene Optionen zur Verfügung. zum Beispiel die Schaltflächen &quot;Zurück&quot;/&quot;Weiter&quot;, &quot;Rechts oben&quot;.
@@ -167,7 +170,7 @@ Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
    * **Liste erstellen mittels**
 
-      Es gibt mehrere Möglichkeiten, eine Seitenliste zu erstellen - untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
+      Es gibt mehrere Möglichkeiten, eine Liste zu erstellen: Untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
 
       Beachten Sie, dass, unabhängig von der ausgewählten Methode, den Seiten, die Sie Ihrer Liste hinzufügen, bereits ein Bild zugeordnet worden sein muss. Dieses Bild wird dann im Karussell angezeigt. Wenn in den Seiteneigenschaften einer bestimmten Seite kein Bild vorhanden ist, sollten Sie der Seite ein Bild zuordnen, bevor Sie anfangen. Anderenfalls wird im Karussell eine leere (oder fast leere) Seite angezeigt Siehe [Bearbeiten der Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -182,7 +185,7 @@ Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
          * **Seiten**
 
-            Wählen Sie eine Liste der Seiten aus. Use `+` to add more entries and the up/down buttons to adjust the order.
+            Wählen Sie eine Liste von Seiten aus. Use `+` to add more entries and the up/down buttons to adjust the order.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -195,12 +198,12 @@ Sie können eine Textsuchanfrage eingeben.
 
          * **Querybuilder-Eigenschafts-Notation**
 
-            Sie können eine Suchabfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
+            Sie können eine Abfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
    * **Sortieren nach**
 
-      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdownmenü.
+      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü.
 
    * **Beschränkung**
 
@@ -260,7 +263,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 [Inhaltsfragmente](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
-### Design-Importtool {#design-importer}
+### Design-Import-Tool {#design-importer}
 
 Mit dem Design-Importtool können Sie eine ZIP-Datei mit einem Designpaket hochladen.
 
@@ -441,14 +444,14 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
             Geben Sie einen Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten** : Wählen Sie eine Liste der Seiten aus. Verwenden Sie +, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten** - Wählen Sie eine Liste von Seiten aus. Verwenden Sie +, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
-         * **Start in** - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe der Auswahl. Suchanfrage
+         * **Beginn in** - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe der Auswahl. Suchanfrage
 Sie können eine Textsuchanfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
-         * **Querybuilder-Vorhersage** - Sie können eine Suchabfrage mit Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine ausführliche Erläuterung der Abfrageausdrücke und weiterer Beispiele finden Sie unter [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) .
+         * **Querybuilder-Vorhersage** - Sie können eine Abfrage mit Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine ausführliche Erläuterung der Ausdrücke und weitere Beispiele finden Sie unter [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) .
       * **Tags** - Geben Sie die **übergeordnete Seite**, **Tags/Suchbegriffe** und Ihre erforderlichen Übereinstimmungskriterien an.
    * **Anzeigen als**
 
@@ -477,7 +480,7 @@ Sie können eine Textsuchanfrage eingeben.
 
 Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wie eine Liste mit untergeordneten Seiten angezeigt werden würde, wobei das Layout durch die benutzerdefinierten CSS-Definitionen eines Site-Designs gesteuert wird.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_Liste_use](assets/dc_list_use.png)
 
 ### Anmeldung {#login}
 
@@ -525,7 +528,8 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung**
 
-      Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
+      
+Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
 
    * **Typ/Größe**
 
@@ -533,7 +537,7 @@ Sie können Folgendes konfigurieren:
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-### Verweis {#reference}
+### Verweis   {#reference}
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -563,7 +567,7 @@ Nach der Konfiguration wird der Inhalt exakt so angezeigt wie auf der Quellseite
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-### Suche{#search-features}
+### Suche {#search-features}
 
 Die Komponente „Suche“ stellt für Ihre Seite eine Suchfunktion zur Verfügung.
 
@@ -766,7 +770,7 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung zu**
 
-      Geben Sie einen Zielpfad an.
+      Geben Sie einen Pfad zur Zielgruppe an.
 
    * **Beschreibung**
 
@@ -825,6 +829,7 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Flash-Video)
+
 >
 
 
@@ -1079,7 +1084,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Lead wird dieser Liste hinzugefügt**
 
-            Geben Sie die erforderliche Interessentenliste an.
+            Geben Sie die erforderliche Liste für den Interessenten an.
       * **Konto erstellen und aktualisieren**
 
          * **Anfangsgruppe**
@@ -1142,7 +1147,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Lead wird aus dieser Liste gelöscht**
 
-            Geben Sie die erforderliche Interessentenliste an.
+            Geben Sie die erforderliche Liste für den Interessenten an.
 
 
 
@@ -1335,7 +1340,7 @@ Sie können auf einer speziellen Registerkarte verschiedene Parameter angeben, d
    * **Zulässige Namespaces**
 
       * **Geometrixx Outdoors**
-      * **Workflow**
+      * **Arbeitsablauf**
       * **Forum**
       * **Stockfotographie**
       * **Geometrixx Media**
