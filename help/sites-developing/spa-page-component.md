@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +24,7 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 >[!NOTE]
 >
->Für die Einzelseitenanwendung (SPA) Editor-Funktion ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Einzelseitenanwendung (SPA) Editor&quot;ist AEM 6.4 Service Pack 2 oder höher erforderlich.
 >
 >Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen clientseitiges Rendering (z.B. React oder Angular) durch das SPA-Framework erforderlich ist.
 
@@ -42,7 +45,7 @@ Vergessen Sie nicht, die Einbeziehung der `cq.authoring.pagemodel.messaging` Kat
 
 ## Kommunikationsdatentyp {#communication-data-type}
 
-Der Kommunikationsdatentyp wird mithilfe des `data-cq-datatype` Attributs ein HTML-Element innerhalb der AEM-Seitenkomponente festgelegt. Wenn der Kommunikationsdatentyp auf JSON eingestellt ist, treffen die GET-Anforderungen auf die Sling-Modell-Endpunkte einer Komponente. Nach einer Aktualisierung im Seiten-Editor wird die JSON-Repräsentation der aktualisierten Komponente an die PageModel-Bibliothek gesendet. Die Seitenmodellbibliothek warnt dann die SPA vor Aktualisierungen.
+Der Kommunikationsdatentyp wird mithilfe des `data-cq-datatype` Attributs ein HTML-Element innerhalb der Komponente &quot;AEM Seite&quot;festgelegt. Wenn der Kommunikationsdatentyp auf JSON eingestellt ist, treffen die GET-Anforderungen auf die Sling Model-Endpunkte einer Komponente. Nach einer Aktualisierung im Seiten-Editor wird die JSON-Repräsentation der aktualisierten Komponente an die PageModel-Bibliothek gesendet. Die Seitenmodellbibliothek warnt dann die SPA vor Aktualisierungen.
 
 **SPA-Seitenkomponente:`body.html`**
 
@@ -92,7 +95,7 @@ Die Metadatenressourceneigenschaften, die den SPA-Inhalt beschreiben:
 >
 >Dieses Dokument verwendet die App &quot;We.Retail Protokoll&quot;nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
 >
->Jedes AEM-Projekt sollte den [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt. Alle SPA-Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
+>Jedes AEM Projekt sollte das [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, das SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK nutzt. Alle SPA-Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
 
 ## Synchronisierung von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
@@ -100,7 +103,7 @@ Die Synchronisierung der Überlagerungen wird durch denselben Mutation-Beobachte
 
 ## Sling Model JSON Export Structure Configuration {#sling-model-json-exported-structure-configuration}
 
-Wenn die Routing-Funktionen aktiviert sind, wird davon ausgegangen, dass der JSON-Export der SPA die verschiedenen Anwendungsrouten enthält, dank des JSON-Exports der AEM-Navigationskomponente. Die JSON-Ausgabe der AEM-Navigationskomponente kann in der SPA-Stammseiten-Inhaltsrichtlinie mit den folgenden beiden Eigenschaften konfiguriert werden:
+Wenn die Routing-Funktionen aktiviert sind, wird davon ausgegangen, dass der JSON-Export der SPA die verschiedenen Anwendungsrouten enthält, dank des JSON-Exports der AEM Navigationskomponente. Die JSON-Ausgabe der AEM-Navigationskomponente kann in der SPA-Stammseiten-Inhaltsrichtlinie mit den folgenden beiden Eigenschaften konfiguriert werden:
 
 * `structureDepth`: Zahl, die die Tiefe der exportierten Baumstruktur angibt
 * `structurePatterns`: Regex des Arrays von Regexen, die der zu exportierenden Seite entsprechen
