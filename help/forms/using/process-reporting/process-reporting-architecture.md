@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: 4afc68fc-6b39-4c31-95fa-2ef3111c57da
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ Process Berichte ist das Berichte-Modul von AEM Forms on JEE.
 
 Mit Process Berichte können Sie Berichte zu AEM Forms-Prozessen und -Aufgaben ausführen.
 
-Process Berichte verwendet das eingebettete Process Berichte-Repository, um Formulardaten zu veröffentlichen. Diese Daten werden dann zum Ausführen von Berichten verwendet.
+Process Berichte verwendet das eingebettete Process Berichte-Repository, um Forms-Daten zu veröffentlichen. Diese Daten werden dann zum Ausführen von Berichten verwendet.
 
 Process Berichte umfasst die folgenden Module:
 
@@ -38,7 +41,7 @@ Process Berichte umfasst die folgenden Module:
 
 ### ProcessDataPublisher-Dienst {#processdatapublisher-service-br}
 
-Der ProcessDataPublisher-Server wird regelmäßig in der AEM Forms-Datenbank ausgeführt und extrahiert die Daten, die sich seit der letzten Ausführung des Dienstes geändert haben. Anschließend werden die Daten im Process Data Datenspeicherung-Dienst veröffentlicht.
+Der ProcessDataPublisher-Server wird regelmäßig auf der AEM Forms-Datenbank ausgeführt und extrahiert die Daten, die seit der letzten Ausführung des Dienstes geändert wurden. Anschließend werden die Daten im Process Data Datenspeicherung-Dienst veröffentlicht.
 
 Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter ProcessDataPublisher-Dienst [konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
@@ -60,7 +63,7 @@ Der Dienst nutzt dann OSGi-Dienste, um die relevanten Daten des Berichte abzuruf
 
 ### Benutzeroberfläche von Process Berichte {#process-reporting-user-interface-br}
 
-Die Benutzeroberfläche von Process Berichte ist eine webbrowser-basierte Benutzeroberfläche. Sie verwenden diese Schnittstelle zur Ansicht von Informationen zur Verarbeitung und Aufgabe, die aus der AEM Forms-Datenbank veröffentlicht werden.
+Die Benutzeroberfläche von Process Berichte ist eine webbrowser-basierte Benutzeroberfläche. Auf dieser Oberfläche können Sie Informationen zur Ansicht und Aufgabe verwenden, die aus der AEM Forms-Datenbank veröffentlicht werden.
 
 ### QueryDataServlet-Dienst {#querydataservlet-service-br-1}
 
