@@ -10,6 +10,9 @@ topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 95%
 
 ---
 
@@ -92,7 +95,7 @@ Geben Sie die folgenden Parameter in der Anforderungs-URL an:
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (optional)</td> 
-   <td>Gibt eine kommagetrennte Liste von Formulareigenschaften an, die in die Ergebnisse aufgenommen werden sollen. <br /> Die Standardeigenschaften sind: <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
+   <td>Gibt eine kommagetrennte Liste von Formulareigenschaften an, die in die Ergebnisse aufgenommen werden sollen. Die Standardeigenschaften sind:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
   </tr> 
   <tr> 
    <td><code>search</code> <br /> (optional)</td> 
