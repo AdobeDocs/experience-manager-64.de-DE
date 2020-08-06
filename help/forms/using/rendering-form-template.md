@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## Render-Endpunkt {#render-endpoint}
 
-HTML5 forms have the notion of **Profiles** which are exposed as REST Endpoints to enable Mobile Rendering of Form Templates. These Profiles have associated **Profile Renderer**. Es handelt sich dabei um JSP-Seiten, die für die Generierung der HTML-Darstellung des Formulars durch Aufruf des Forms OSGi-Dienstes verantwortlich sind. Der JCR-Pfad der Profil-Node bestimmt die URL des Render-Endpunkts. Der Standard-Render-Endpunkt des Formulars, der auf das Standard-Profil verweist, sieht wie folgt aus:
+HTML5 forms have the notion of **Profiles** which are exposed as REST Endpoints to enable Mobile Rendering of Form Templates. These Profiles have associated **Profile Renderer**. Es handelt sich dabei um JSP-Seiten, die für das Generieren einer HTML-Darstellung des Formulars durch Aufruf des Forms OSGi-Dienstes verantwortlich sind. Der JCR-Pfad der Profil-Node bestimmt die URL des Render-Endpunkts. Der Standard-Render-Endpunkt des Formulars, der auf das Standard-Profil verweist, sieht wie folgt aus:
 
 https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containg form xdp*>&amp;template=&lt;*name of the xdp*>
 
