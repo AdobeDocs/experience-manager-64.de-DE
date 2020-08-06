@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1199'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## Assembler {#assembler}
 
-AEM Forms bietet benutzerdefinierte Workflows zum Aufrufen der folgenden Assembler-Dienst-APIs:
+AEM Forms stellt benutzerdefinierte Workflows zum Aufrufen der folgenden Assembler-Dienst-APIs bereit:
 
 * **invoke**: Ruft die Prozesse auf, die in der Eingabe-DDX bei gelieferten Eingaben angegeben wurden.
 * **toPDFA**: Konvertiert Eingabe-PDF-Dokumente in PDF/A-Dokumente.
@@ -43,7 +46,7 @@ Der Arbeitsablauf „Invoke DDX“ erfordert folgende Eingabedokumente:
 
 * **Create Map from PayLoad**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für die `invoke`-API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 
-* **Zuordnung** des Eingabedokuments: Gibt die Zuordnung des Eingabedokuments an. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
+* **Input Dokument Map**: Gibt die Zuordnung des Eingabe-Dokuments an. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
 
 #### Environment Options {#environment-options}
 
@@ -58,7 +61,7 @@ Auf der Registerkarte „Environment Options“ können Sie die verschiedenen Ve
 
 Je nach Eingabe-DDX kann das invoke-API mehrere Ausgabe-Dokumente erstellen. Auf der Registerkarte „Output Documents“ können Sie festlegen, wo Output Documents gespeichert werden.
 
-1. *Ausgabe in Nutzlast* speichern: Speichert Ausgabedokumente im Payload-Ordner oder überschreibt die Payload, wenn Payload eine Datei ist.
+1. *Ausgabe in Nutzlast* speichern: Speichert Ausgabedateien im Payload-Ordner oder überschreibt die Payload, wenn Payload eine Dokumente ist.
 1. *Output Document&#39;s Map*: Hiermit können Sie explizit angeben, wo jedes output document gespeichert werden soll, indem ein Eintrag pro output document hinzugefügt wird. Jeder Eintrag gibt das Dokument und den entsprechenden Speicherort an. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
 
 1. *Job Log*: Gibt an, wo das Auftragsprotokolldokument gespeichert werden soll, was bei Fehlerbehebungsfehlern hilfreich sein kann.
