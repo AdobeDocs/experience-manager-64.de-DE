@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 
    **Voll-HTML**, um das Formular mit vollständigen HTML-Tags wiederzugeben (eine vollständige HTML-Seite). Dies ist der Standardwert.
 
-   **** Formularkörper: So rendern Sie das Formular innerhalb von `<BODY>` -Tags (nicht als vollständige HTML-Seite).
+   **Formularkörper:** So rendern Sie das Formular innerhalb von `<BODY>` -Tags (nicht als vollständige HTML-Seite).
 
 1. Klicken Sie auf Speichern.
 
