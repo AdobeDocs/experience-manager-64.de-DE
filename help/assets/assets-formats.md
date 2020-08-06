@@ -1,6 +1,6 @@
 ---
 title: In AEM Assets unterstützte Dateiformate
-description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
+description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, und der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
@@ -29,7 +29,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Interaktive Bearbeitung | Metadaten-Writeback | Insights |
+| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Interaktive Bearbeitung | Metadaten-Writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -47,7 +47,7 @@ Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 
 **‡** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-Folgende Rasterbildformate werden für Dynamic Media-Funktionen unterstützt:
+Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -77,11 +77,11 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
-## Nicht unterstützte Rasterbildformate in Dynamic Media {#unsupported-image-formats-dynamic-media}
+## Nicht unterstützte Rasterbildformate in dynamischen Medien {#unsupported-image-formats-dynamic-media}
 
-Die folgende Liste beschreibt die Untertypen der Rasterbilddateiformate, die von Dynamic Media *nicht* unterstützt werden.
+In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
 
-Siehe auch Nicht unterstützte Dateiformate [erkennen für Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Siehe auch [Erkennung nicht unterstützter Dateiformate für dynamische Medien](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
@@ -102,7 +102,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Imaging Transcoding Library {#supported-image-transcoding-library}
 
-Die Adobe Imaging Transcoding Library ist eine Bildverarbeitungslösung, die grundlegende Bildbearbeitungsfunktionen wie Kodierung, Transkodierung, Neuberechnung und Größenanpassung ausführt.
+Die Adobe Imaging Transcoding Library ist eine Bildverarbeitungslösung, die Bildbearbeitungsfunktionen wie Kodierung, Transkodierung, Neuberechnung und Größenanpassung ausführt.
 
 Die Imaging Transcoding Library unterstützt die Typen JPG/JPEG, PNG (8 Bit und 16 Bit), GIF, BMP, TIFF/Komprimiertes TIFF (außer 32-Bit-TIFF- und PTIFF-Dateien), ICO und ICN MIME.
 
@@ -116,7 +116,7 @@ Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbi
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicher | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | Subasset<br> extraction | Metadata<br> writeback |
+| Format | Speicherung | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | Subasset<br> extraction | Metadata<br> writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -137,7 +137,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Folgende Dokument-Formate werden für Dynamic Media-Funktionen unterstützt:
+Folgende Formate werden für dynamische Medienfunktionen unterstützt:
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -170,7 +170,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 ## Multimediaformate {#supported-multimedia-formats}
 
-| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFMPEG-Transkodierung |
+| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFMPEG-Transkodierung |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | ✓ | ✓ |  | − | * |
 | MIDI | ✓ | ✓ |  | − | * |
@@ -216,7 +216,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows werden in der folgenden Tabelle behandelt.
 
-| Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
+| Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -230,7 +230,7 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 
 Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wird in der folgenden Tabelle beschrieben.
 
-| Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
+| Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -243,9 +243,9 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
-Standardmäßig erkennt AEM den Dateityp mit der Dateierweiterung. AEM kann es anhand des Inhalts der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
+Standardmäßig erkennt AEM den Dateityp mithilfe der Dateierweiterung. AEM kann es aus dem Inhalt der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
-Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`verfügbar.
 
 | Dateierweiterung | MIME-Typ/Internetmedientyp | Standardmäßiger jobParam-Wert | Zulässiger jobParam-Wert |
 |---|---|---|---|
