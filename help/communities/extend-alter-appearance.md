@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 1%
 
 ---
 
 
 # Erscheinungsbild ändern (HBS) {#alter-the-appearance-hbs}
 
-Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsverzeichnis (/apps) vorhanden sind, wobei ein resourceSuperType auf das Standard-Kommentarsystem verweist und das benutzerdefinierte Modell/View registriert ist, kann die Implementierung geändert werden.
+Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsordner (/apps) vorhanden sind, wobei ein resourceSuperType auf das Standardkommentarsystem verweist und das benutzerdefinierte Modell/die benutzerdefinierte Ansicht registriert ist, kann die Implementierung geändert werden.
 
 Bei einer einfachen Demonstration wird der Avatar des angemeldeten Benutzers, der einen Kommentar veröffentlicht, entfernt.
 
@@ -65,9 +68,9 @@ Eine Möglichkeit dazu ist
    * Deaktivieren `Only Modified`
    * Schaltfläche `Activate` auswählen
 
-## Änderungskommentar auf der Seite &quot;Veröffentlichte Beispielseite&quot;anzeigen {#view-modified-comment-on-published-sample-page}
+## Änderungskommentar zur Ansicht auf der Seite &quot;Veröffentlichte Beispieldatei&quot; {#view-modified-comment-on-published-sample-page}
 
-[Wenn Sie das Erlebnis](extend-sample-page.md#publish-sample-page) auf der Veröffentlichungsinstanz fortsetzen, die noch als derselbe Benutzer angemeldet ist, können Sie jetzt die Seite in der Veröffentlichungsumgebung aktualisieren, um die Änderung zum Entfernen des Avatars anzuzeigen:
+[Wenn Sie das Erlebnis](extend-sample-page.md#publish-sample-page) in der Veröffentlichungsinstanz fortsetzen und weiterhin als derselbe Benutzer angemeldet sind, können Sie jetzt die Seite in der Umgebung &quot;Veröffentlichen&quot;aktualisieren, um die Änderung zum Entfernen des Avatars Ansicht:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
