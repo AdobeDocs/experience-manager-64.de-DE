@@ -7,6 +7,9 @@ contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 translation-type: tm+mt
 source-git-commit: dc779a0d89dc4c044ca4f3e3f92c4a9b651d09a8
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +22,7 @@ Um Ihre Markenbilder effektiv mit Tags versehen zu können, erfordert der Smart 
 
 Für optimale Ergebnisse sollten Bilder im Trainingssatz folgende Richtlinien einhalten:
 
-**** Menge und Größe: Mindestens **30 Bilder pro Tag**. Mindestens 500 Pixel auf der längeren Seite.
+**Menge und Größe:** Mindestens **30 Bilder pro Tag**. Mindestens 500 Pixel auf der längeren Seite.
 
 **Kohärenz**: Bilder für ein Tag sollten visuell ähnlich sein.
 
@@ -29,11 +32,11 @@ So ist es beispielsweise nicht empfehlenswert, all diese Bilder mit dem Tag *my-
 
 **Abdeckung:** Bei den Trainings-Bildern muss eine ausreichende Vielfalt vorhanden sein. Der Grundgedanke ist, einige Beispiele bereitzustellen, die jedoch verhältnismäßig vielfältig sind, sodass AEM lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell unähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein.
 
-Beispiel: Schließen Sie für das Tag *model-down-pose* mehr Trainingsbilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Dienst ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.
+Beispiel: Schließen Sie für das Tag *model-down-pose* mehr Trainings-Bilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Dienst ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/coverage_1.png)
 
-**Ablenkung/Verdeckung**: Der Dienst kann besser mit Bildern trainieren, die weniger Ablenkungen enthalten (hervorgehobenen Hintergründe oder Elemente ohne Bezug wie Objekte/Personen neben dem Hauptsubjekt).
+**Ablenkung/Verdeckung**: Der Service kann besser mit Bildern trainieren, die weniger Ablenkungen enthalten (hervorgehobenen Hintergründe oder Elemente ohne Bezug wie Objekte/Personen neben dem Hauptsubjekt).
 
 Beispiel: Für das Tag *casual-shoe* ist das zweite Bild kein guter Kandidat für das Training.
 
@@ -47,7 +50,7 @@ Beispiel: Für das Tag *casual-shoe* ist das zweite Bild kein guter Kandidat fü
 
 Optimierte Smart-Tags basieren auf Lernmodellen von Markenbildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version des Smart Content Service gibt es folgende Einschränkungen:
 
-* Subtile Unterschiede in Bildern können nicht erkannt werden. Zum Beispiel schlanke im Vergleich zu normal montierten Hemden.
+* Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
 * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
 * Tagging wird in den Sprachen unterstützt, in denen AEM unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
@@ -57,5 +60,5 @@ Verwenden Sie die Asset-OmniSearch, um nach Assets mit Smart-Tags (normal oder e
 >
 >Die Fähigkeit des Smart Content Service, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.
 >
->Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Dienst für die einzelnen Tags zu trainieren.
+>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
 
