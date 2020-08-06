@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 80%
 
 ---
 
@@ -49,7 +52,7 @@ Gehen Sie zur Integration von AEM Forms Workspace in einen Webpart wie folgt vor
 
    ![Feld „Seiten-Viewer-Webpart“ in Microsoft Office SharePoint Server.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
-   **** Abbildung: *Das Feld &quot;Seiten-Viewer-Webpart&quot;im Microsoft Office SharePoint-Server.*
+   **Abbildung:** *Das Feld &quot;Seiten-Viewer-Webpart&quot;im Microsoft Office SharePoint-Server.*
 
 1. Führen Sie auf der Seite „Seiten-Viewer“ folgende Aufgaben durch:
 
@@ -67,5 +70,5 @@ Nachdem Sie die oben beschriebenen Schritte durchgeführt haben, sieht Ihre Shar
 
 ![AEM Forms Workspace in Microsoft Office SharePoint Server integriert](assets/aem-forms-workspace.jpg)
 
-**** Abbildung: In Microsoft Office SharePoint Server integrierte *AEM Forms Workspace*
+**Abbildung:** *AEM Forms Workspace in Microsoft Office SharePoint Server integriert*
 
