@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 90%
 
 ---
 
 
 # Bearbeiten: Umgebung und Tools{#authoring-the-environment-and-tools}
 
-Die Authoring-Umgebung von AEM bietet verschiedene Mechanismen zum Organisieren und Bearbeiten Ihrer Inhalte. Auf die bereitgestellten Tools können Sie von den verschiedenen Konsolen und Seiteneditoren aus zugreifen.
+Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
 
 ## Site-Administration {#site-administration}
 
@@ -98,7 +101,7 @@ In dieser Registerkarte werden sämtliche Produkte aufgeführt. Nachdem Sie eine
 
 ### Suchen nach Seiten {#finding-pages}
 
-Auf dieser Registerkarte werden alle Seiten angezeigt. Doppelklicken Sie auf eine beliebige Seite, um sie zur Bearbeitung zu öffnen.
+Auf dieser Registerkarte werden alle Seiten angezeigt. Klicken Sie mit der Dublette auf eine beliebige Seite, um sie zur Bearbeitung zu öffnen.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -154,7 +157,7 @@ So zeigen Sie direkte Seitenverweise an:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Wählen Sie Referenzen** anzeigen... AEM öffnet das Fenster &quot;Referenzen&quot;und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich ihrer Pfade.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -177,7 +180,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Seitenmodi {#page-modes}
+## Seitenmodi   {#page-modes}
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
