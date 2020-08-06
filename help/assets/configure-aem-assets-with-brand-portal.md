@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von AEM Assets mit Brand Portal
-description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal für das Veröffentlichen von Assets und Sammlungen im Markenportal konfigurieren. '
+description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal konfigurieren, um Assets und Sammlungen im Markenportal zu veröffentlichen. '
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -30,8 +30,8 @@ Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konf
 
 
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
-* [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit dem Markenportal konfigurieren möchten, können Sie eine neue Konfiguration auf der Adobe-E/A erstellen.
-* [Upgrade-Konfiguration](#upgrade-integration-64): Wenn Sie ein bestehender Brand Portal-Benutzer mit Ihrer AEM Assets-Autoreninstanz sind, die mit Brand Portal auf dem alten OAuth Gateway konfiguriert wurde, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf der Adobe-E/A-Benutzeroberfläche erstellen.
+* [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal konfigurieren möchten, können Sie eine neue Konfiguration auf Adobe I/O erstellen.
+* [Upgrade-Konfiguration](#upgrade-integration-64): Wenn Sie bereits mit Ihrer AEM Assets-Autoreninstanz, die mit Brand Portal auf dem alten OAuth Gateway konfiguriert wurde, arbeiten, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Adobe auf der E/A-Mail-Benutzeroberfläche erstellen.
 
 Benutzer dieser Hilfe sollten mit den folgenden Technologien vertraut sein:
 
@@ -54,7 +54,7 @@ Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 
 ### Herunterladen und Installieren von AEM 6.4 {#aemquickstart}
 
-Es wird empfohlen, über AEM 6.4 zu verfügen, um eine AEM-Autoreninstanz einzurichten. Wenn Sie AEM nicht eingerichtet haben, laden Sie es von den folgenden Speicherorten herunter:
+Es wird empfohlen, AEM 6.4 zu verwenden, um eine AEM Autoreninstanz einzurichten. Wenn Sie AEM nicht eingerichtet haben, laden Sie es von den folgenden Speicherorten herunter:
 
 * If you are an existing AEM customer, download AEM 6.4 from [Adobe Licensing website](http://licensing.adobe.com).
 
@@ -68,11 +68,11 @@ Ausführliche Anweisungen finden Sie unter
 
 * [Versionshinweise zum AEM 6.4 Service Pack](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Wenden Sie sich an den Kundendienst** , wenn Sie das neueste AEM-Paket oder Service Pack nicht finden können.
+**Wenden Sie sich an den Kundendienst** , wenn Sie das neueste AEM oder Service Pack nicht finden können.
 
 ## Erstellen der Konfiguration {#configure-new-integration-64}
 
-Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch, wenn Sie AEM Assets mit Markenportal zum ersten Mal konfigurieren:
+Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch, wenn Sie AEM Assets zum ersten Mal mit dem Markenportal konfigurieren:
 1. [Abrufen eines öffentlichen Zertifikats](#public-certificate)
 1. [Erstellen der Adobe I/O-Integration](#createnewintegration)
 1. [Erstellen der Konfiguration des IMS-Kontos](#create-ims-account-configuration)
@@ -92,7 +92,7 @@ Die IMS-Konfiguration umfasst zwei Schritte:
 
 Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profils in Adobe I/O.
 
-1. Anmelden bei der Autoreninstanz AEM AssetsStandard-URL: http:// localhost:4502/aem/start.html
+1. Anmelden bei Ihrer AEM Assets-AutoreninstanzStandard-URL: http:// localhost:4502/aem/start.html
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Benutzeroberfläche der Adobe IMS-Kontokonfiguration](assets/ims-config1.png)
@@ -223,7 +223,7 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
 
    ![](assets/create-cloud-service.png)
 
-1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Die Cloud-Konfiguration wird erstellt. Ihre Autoreninstanz für AEM Assets ist jetzt mit dem Markenportal-Mandanten integriert.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Die Cloud-Konfiguration wird erstellt. Ihre AEM Assets-Autoreninstanz ist jetzt mit dem Markenportal-Mandanten integriert.
 
 ### Testen der Konfiguration {#test-integration}
 
@@ -231,7 +231,7 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
 
    Standard-URL: http:// localhost:4502/aem/start.html
 
-1. Navigieren Sie im Bereich **Tools** ![Tools](assets/tools.png) zu **[!UICONTROL Bereitstellung > Replikation]**.
+1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
    ![](assets/test-integration1.png)
 
@@ -293,13 +293,13 @@ Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge aus, um vorh
 
 ### Ausführen von Aufträgen überprüfen {#verify-jobs}
 
-Vergewissern Sie sich, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichungsauftrag ausgeführt wird, bevor Sie Änderungen vornehmen. Dazu können Sie alle vier Replizierungsagenten überprüfen und sicherstellen, dass die Warteschlange ideal/leer ist.
+Stellen Sie sicher, dass auf Ihrer AEM Assets-Autoreninstanz kein Veröffentlichungsauftrag ausgeführt wird, bevor Sie Änderungen vornehmen. Dazu können Sie alle vier Replizierungsagenten überprüfen und sicherstellen, dass die Warteschlange ideal/leer ist.
 
 1. Bei Ihrer AEM Assets-Autoreninstanz anmelden
 
    Standard-URL: http:// localhost:4502/aem/start.html
 
-1. Navigieren Sie im Bereich **Tools** ![Tools](assets/tools.png) zu **[!UICONTROL Bereitstellung > Replikation]**.
+1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
 1. Die Replikationsseite wird geöffnet.
 
@@ -322,7 +322,7 @@ Sie müssen beim Löschen der vorhandenen Liste die folgende Prüfung ausführen
 
 Führen Sie die folgenden Schritte aus, um die vorhandene Konfiguration zu löschen:
 
-1. Melden Sie sich bei Ihrer Autoreninstanz für AEM Assets an und öffnen Sie CRX Lite als Administrator.
+1. Melden Sie sich bei Ihrer AEM Assets-Autoreninstanz an und öffnen Sie CRX Lite als Administrator.
 
    Standard-URL: http:// localhost:4502/crx/de/index.jsp
 
@@ -330,7 +330,7 @@ Führen Sie die folgenden Schritte aus, um die vorhandene Konfiguration zu lösc
 
    ![](assets/delete-replication-agent.png)
 
-1. Navigieren Sie zur `/etc/cloudservices/mediaportal` Cloud-Dienstkonfiguration **und löschen Sie sie**.
+1. Navigieren Sie zur Konfiguration `/etc/cloudservices/mediaportal` des **Cloud Service und löschen Sie sie**.
 
    ![](assets/delete-cloud-service.png)
 
@@ -339,7 +339,7 @@ Führen Sie die folgenden Schritte aus, um die vorhandene Konfiguration zu lösc
    ![](assets/delete-mac-user.png)
 
 
-Sie können jetzt eine Konfiguration [für Ihre AEM 6.4-Autoreninstanz auf der Adobe-I/O](#configure-new-integration-64) erstellen.
+Sie können jetzt eine Konfiguration [für Ihre AEM 6.4 Autoreninstanz auf der Adobe I/O](#configure-new-integration-64) erstellen.
 
 
 
