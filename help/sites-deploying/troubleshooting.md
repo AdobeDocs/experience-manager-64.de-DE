@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +40,7 @@ AEM speichert detaillierte Protokolle, die Sie konfigurieren können, um Install
 
 ## Verwenden der Option „verbose“ (ausführlich){#using-the-verbose-option}
 
-Wenn Sie AEM WCM starten, können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
+Beim Beginn AEM WCM können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
 
 Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls in der Konsole an und kann somit für die Fehlerbehebung verwendet werden.
 
@@ -45,7 +48,7 @@ Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls
 
 Im folgenden Abschnitt werden einige Installationsprobleme und zugehörige Lösungen beschrieben.
 
-### **Durch Doppelklicken auf die Quickstart-JAR-Datei wird die JAR-Datei nicht mit einem anderen Programm geöffnet (z. B. Archiv-Manager){#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### **Durch Klicken auf die QuickStart-JAR-Datei durch Dublette wird keine Auswirkung erzielt oder die JAR-Datei mit einem anderen Programm geöffnet (z. B. Archiv-Manager){#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
 
 Dies weist in der Regel auf ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems zum Öffnen von Dateien mit der Erweiterung .jar hin. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
 
@@ -66,7 +69,7 @@ Beheben Sie dieses Problem wie folgt:
 
 >[!NOTE]
 >
->Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+>Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 CRX selbst benötigt sehr wenig Arbeitsspeicher. Wenn die Anwendung, die in CRX ausgeführt wird, größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit entsprechenden Speichereinstellungen gestartet werden.
