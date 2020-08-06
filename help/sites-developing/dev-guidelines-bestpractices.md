@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 translation-type: tm+mt
 source-git-commit: 8b7373b116a93322ae32bb9afa7028e831ca09f6
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 87%
 
 ---
 
@@ -66,7 +69,7 @@ Beispiel:
 
       * Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
-         * from `/libs/foundation/components/text`
+         * von `/libs/foundation/components/text`
          * in `/apps/myProject/components/text`
 
 * [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
@@ -75,14 +78,14 @@ Beispiel:
 
    * Kopieren Sie im Repository das/die Standardskript(e):
 
-      * from `/libs/sling/servlet/errorhandler/`
+      * von `/libs/sling/servlet/errorhandler/`
       * in `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->You **must not** change anything in the `/libs` path.
+>Sie dürfen **** keinerlei Änderungen im Pfad `/libs` vornehmen.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Für die Konfiguration und andere Änderungen:
 >
@@ -97,7 +100,7 @@ JCR-Abfragen sind sehr wirksam, wenn sie richtig eingesetzt werden. Sie sind bes
 * echte Benutzerabfragen, wie die Volltextsuche in Inhalten.
 * die Suche nach strukturierten Inhalten in einem gesamten Repository.
 
-   Stellen Sie in solchen Fällen sicher, dass Abfragen nur bei Bedarf ausgeführt werden, z. B. bei der Komponentenaktivierung oder bei der Cache-Ungültigmachung (im Gegensatz zu z. B. Workflows, Ereignishandler, die Inhaltsänderungen auslösen, Filtern usw.).
+   Stellen Sie in solchen Fällen sicher, dass Abfragen nur ausgeführt werden, wenn dies unbedingt erforderlich ist, z. B. bei Aktivierung oder Cache-Ungültigmachung (im Gegensatz zu Workflows Schritte, Ereignis-Handler, die Inhaltsänderungen auslösen, Filter usw.).
 
 JCR-Abfragen sollten nicht für reine Rendering-Anforderungen verwendet werden. Beispielsweise sind JCR-Abfragen nicht geeignet für
 
