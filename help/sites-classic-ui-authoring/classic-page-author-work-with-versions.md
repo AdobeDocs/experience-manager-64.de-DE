@@ -98,6 +98,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
    * Gelöschter Text wird rot und durchgestrichen angezeigt.
    * Hinzugefügter Text wird grün und hervorgehoben angezeigt.
    * Bilder, die hinzugefügt oder gelöscht wurden, werden grün umrahmt angezeigt.
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. Wählen Sie im Sidekick die Unter-Registerkarte **Version wiederherstellen** aus und klicken Sie auf **&lt;&lt;Zurück**, um die aktuelle Version anzuzeigen.
@@ -149,6 +150,7 @@ Die Kalenderversion wird verwendet, wenn Sie einen bestimmten Tag anzeigen möch
 
    * Mit **Timewarp beenden** verlassen Sie Timewarp und kehren zur aktuellen Autorenseite zurück.
    * [Timeline anzeigen](#using-the-timewarp-timeline), um die Timeline anzuzeigen.
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### Verwenden der Timewarp-Timeline {#using-the-timewarp-timeline}
