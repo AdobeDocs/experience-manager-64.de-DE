@@ -75,6 +75,7 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 
    * Geben Sie in „Datei hochladen“ den Pfad und den Namen der HTML- oder ZIP-Datei ein oder klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen.
    * Geben Sie in das Feld „URL angeben“ die URL der zu konvertierenden Seite oder Website ein.
+
    >[!NOTE]
    >
    >Die zu konvertierende Datei muss eine der Dateinamenerweiterungen „HTML“, „HTM“ oder „ZIP“ besitzen.
