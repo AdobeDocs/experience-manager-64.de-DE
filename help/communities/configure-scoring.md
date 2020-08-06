@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
 source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 
 
 # Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
 
-Die Funktion für die Bewertung und Abzeichen von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
+Die AEM Communities-Funktion für Scoring und Abzeichen bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
 Die Details zur Einrichtung der Funktion finden Sie unter
 
@@ -31,7 +34,7 @@ Diese Seite enthält weitere technische Details:
 
 >[!CAUTION]
 >
->Die in CRXDE Lite sichtbare Implementierungsstruktur kann geändert werden.
+>Die in der CRXDE Lite sichtbare Implementierungsstruktur kann sich ändern.
 
 ## Anzeigen von Abzeichen {#displaying-badges}
 
@@ -79,7 +82,7 @@ Ausführliche Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten 
 
 So richten Sie eine Slinglog-Datei schnell ein:
 
-1. Greifen Sie beispielsweise auf die **[!UICONTROL Adobe Experience Manager Web Console-Protokollunterstützung]** zu.
+1. So können Sie beispielsweise auf die **[!UICONTROL Adobe Experience Manager Web-Konsolenprotokoll-Unterstützung]** zugreifen
 
    * http://localhost:4502/system/console/slinglog
 
@@ -93,7 +96,7 @@ So richten Sie eine Slinglog-Datei schnell ein:
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
-   1. Wählen Sie **[!UICONTROL Speichern]**
+   1. Wählen Sie **[!UICONTROL Speichern]** aus
 
 
 
@@ -118,11 +121,11 @@ So zeigen Sie Protokolleinträge an:
 
 Es ist möglich, die UGC in Bezug auf die Bewertung und Abzeichen zu Ansichten, wenn die gewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community Content Datenspeicherung](working-with-srp.md) und Übersicht über [Datenspeicherung Resource Provider](srp.md).)
 
-Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da die UGC mit [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)leicht zugänglich ist.
+Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da der Zugriff auf das UGC mit der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)einfach ist.
 
 **JSRP für Autor**: Das Experimentieren in der Autorendatei führt zu einer UGC, die nur in der Autorenversion der Umgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ähnlich ist es bei Tests auf der Veröffentlichungsinstanz erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](../../help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss CRXDE Lite [aktiviert werden](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests auf der Umgebung &quot;Veröffentlichen&quot;erforderlich, auf die CRXDE Lite mit Administratorrechten auf einer Instanz im Veröffentlichungsmodus zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](../../help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Beispielinhalt), muss die CRXDE Lite [aktiviert](../../help/sites-administering/enabling-crxde-lite.md)werden.
 
 Der Basisort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
@@ -139,9 +142,9 @@ Die neuesten Javadocs für die installierten [Versionen](deploy-communities.md#L
 
 ### Beispieleinrichtung {#example-setup}
 
-Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und Abzeichen für ein Forum auf zwei verschiedenen AEM-Sites:
+Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und Abzeichen für ein Forum auf zwei verschiedenen AEM Websites:
 
-1. Eine AEM-Site mit einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde):
+1. Eine AEM mit einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde):
 
    * Verwenden der Website &quot;Erste Schritte&quot;-Lernprogramm (Interaktion), die während der [Übungen für die ersten Schritte erstellt wurde](getting-started.md)
    * Suchen Sie den Knoten der Forumseite
@@ -167,7 +170,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 
 
 
-1. Eine AEM-Site *ohne* eine eindeutige ID:
+1. Eine AEM Site *ohne* eine eindeutige ID:
 
    * Verwenden des Handbuchs &quot; [Community-Komponenten&quot;](components-guide.md)
    * Suchen Sie den Knoten der Forumseite
@@ -176,12 +179,14 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    * Hinzufügen und Abzeichen
 
       * 
+
          ```
          scoringRules = [/etc/community/scoring/rules/comments-scoring,
          /etc/community/scoring/rules/forums-scoring]
          ```
 
       * 
+
          ```
          badgingRules =[/etc/community/badging/rules/comments-scoring,
          /etc/community/badging/rules/forums-scoring]
@@ -220,7 +225,8 @@ Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen e
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* Erstellen von eindeutigen Abzeichen-Bildern für verschiedene AEM-Sites
+* Erstellen von eindeutigen Abzeichen-Bildern für verschiedene AEM Sites
+
 >
 
 
@@ -235,7 +241,7 @@ Zu Ermittlungszwecken ist der Basisordner, der Ergebnisse enthält, z. B. mithil
 
 Der untergeordnete Knoten von `scoring`ist der Name der Bewertungsregel. Eine Best Practice ist daher, dass die Namen von Bewertungsregeln auf einem Server global eindeutig sind.
 
-Für die Geometrixx-Engage-Site befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Bewertungsregel, der Community-Site-ID ( `engage-ba81p`), einer eindeutigen ID und der Benutzer-ID verknüpft ist:
+Für die Geometrixx Engage-Site befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Bewertungsregel, der Site-ID der Community ( `engage-ba81p`), einer eindeutigen ID und der ID des Benutzers verknüpft ist:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
