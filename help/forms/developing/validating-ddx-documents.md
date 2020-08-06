@@ -12,13 +12,16 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 3%
 
 ---
 
 
 # Validieren von DDX-Dokumenten {#validating-ddx-documents}
 
-Sie können ein DDX-Dokument, das vom Assembler-Dienst verwendet wird, programmgesteuert validieren. Mit der Assembler-Dienst-API können Sie also festlegen, ob ein DDX-Dokument gültig ist. Wenn Sie beispielsweise von einer früheren AEM Forms-Version aktualisiert haben und sicherstellen möchten, dass Ihr DDX-Dokument gültig ist, können Sie es mithilfe der Assembler-Dienst-API überprüfen.
+Sie können ein DDX-Dokument, das vom Assembler-Dienst verwendet wird, programmgesteuert validieren. Mit der Assembler-Dienst-API können Sie also festlegen, ob ein DDX-Dokument gültig ist. Wenn Sie beispielsweise ein Upgrade von einer früheren AEM Forms-Version durchgeführt haben und sicherstellen möchten, dass Ihr DDX-Dokument gültig ist, können Sie es mithilfe der Assembler-Dienst-API überprüfen.
 
 >[!NOTE]
 >
@@ -48,8 +51,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss bereitgestellt wird, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
@@ -59,17 +62,17 @@ Bevor Sie einen Assembler-Vorgang programmgesteuert durchführen können, müsse
 
 **Ein vorhandenes DDX-Dokument referenzieren**
 
-Zum Überprüfen eines DDX-Dokuments müssen Sie auf ein vorhandenes DDX-Dokument verweisen.
+Um ein DDX-Dokument zu validieren, müssen Sie auf ein vorhandenes DDX-Dokument verweisen.
 
-**Festlegen von Laufzeitoptionen zur Überprüfung des DDX-Dokuments**
+**Festlegen von Laufzeitoptionen zur Validierung des DDX-Dokuments**
 
-Beim Überprüfen eines DDX-Dokuments müssen Sie bestimmte Laufzeitoptionen festlegen, die den Assembler-Dienst anweisen, das DDX-Dokument zu validieren, anstatt es auszuführen. Außerdem können Sie die Menge an Informationen erhöhen, die der Assembler-Dienst in die Protokolldatei schreibt.
+Bei der Validierung eines DDX-Dokuments müssen Sie bestimmte Laufzeitoptionen festlegen, die den Assembler-Dienst anweisen, das DDX-Dokument zu validieren, anstatt es auszuführen. Außerdem können Sie die Menge an Informationen erhöhen, die der Assembler-Dienst in die Protokolldatei schreibt.
 
 **Validierung durchführen**
 
-Nachdem Sie den Assembler-Dienst-Client erstellt haben, auf das DDX-Dokument verweisen und Laufzeitoptionen festgelegt haben, können Sie den `invokeDDX` Vorgang zum Überprüfen des DDX-Dokuments aufrufen. Bei der Validierung des DDX-Dokuments können Sie `null` als Map-Parameter übergeben (dieser Parameter speichert normalerweise PDF-Dokumente, die der Assembler zur Durchführung der im DDX-Dokument angegebenen Vorgänge benötigt).
+Nachdem Sie den Assembler-Dienst-Client erstellt haben, auf das DDX-Dokument verweisen und Laufzeitoptionen festgelegt haben, können Sie den `invokeDDX` Vorgang zur Überprüfung des DDX-Dokuments aufrufen. Bei der Validierung des DDX-Dokuments können Sie `null` als Map-Parameter übergeben (dieser Parameter speichert normalerweise PDF-Dokumente, die der Assembler zur Ausführung der im DDX-Dokument angegebenen Vorgänge benötigt).
 
-Wenn die Überprüfung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist, kann von der `OperationException` Instanz abgerufen werden. Nach der grundlegenden XML-Analyse und Schemakonferenz wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle im DDX-Dokument enthaltenen Fehler werden im Protokoll angegeben.
+Wenn die Überprüfung fehlschlägt, wird eine Ausnahme ausgelöst und die Protokolldatei enthält Details, die erklären, warum das DDX-Dokument ungültig ist, kann von der `OperationException` Instanz abgerufen werden. Nach der grundlegenden XML-Parsing- und Schema-Prüfung wird die Validierung anhand der DDX-Spezifikation durchgeführt. Alle im DDX-Dokument enthaltenen Fehler werden im Protokoll angegeben.
 
 **Die Prüfergebnisse in einer Protokolldatei speichern**
 
@@ -77,7 +80,7 @@ Der Assembler-Dienst gibt die Überprüfungsergebnisse zurück, die Sie in eine 
 
 **Siehe auch**
 
-[Validieren eines DDX-Dokuments mit der Java-API](#validate-a-ddx-document-using-the-java-api)
+[Validieren eines DDX-Dokuments mithilfe der Java-API](#validate-a-ddx-document-using-the-java-api)
 
 [Validieren eines DDX-Dokuments mithilfe der Webdienst-API](#validate-a-ddx-document-using-the-web-service-api)
 
@@ -87,7 +90,7 @@ Der Assembler-Dienst gibt die Überprüfungsergebnisse zurück, die Sie in eine 
 
 [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## Validieren eines DDX-Dokuments mit der Java-API {#validate-a-ddx-document-using-the-java-api}
+## Validieren eines DDX-Dokuments mithilfe der Java-API {#validate-a-ddx-document-using-the-java-api}
 
 Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Java):
 
@@ -108,16 +111,17 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Java):
 1. Legen Sie Laufzeitoptionen fest, um das DDX-Dokument zu validieren.
 
    * Erstellen Sie ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie die Laufzeitoption fest, mit der der Assembler-Dienst angewiesen wird, das DDX-Dokument zu überprüfen, indem die Methode setValidateOnly des `AssemblerOptionSpec` Objekts aufgerufen und weitergegeben wird `true`.
-   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie die `AssemblerOptionSpec` `getLogLevel` Objektmethode aufrufen und einen Zeichenfolgenwert weitergeben, der Ihre Anforderungen erfüllt. Bei der Validierung eines DDX-Dokuments sollten weitere Informationen in die Protokolldatei geschrieben werden, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER`.
+   * Legen Sie die Laufzeitoption fest, mit der der Assembler-Dienst angewiesen wird, das DDX-Dokument zu überprüfen, indem die setValidateOnly-Methode des `AssemblerOptionSpec` Objekts aufgerufen und weitergegeben wird `true`.
+   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie die `AssemblerOptionSpec` `getLogLevel` Objektmethode aufrufen und einen Zeichenfolgenwert weitergeben, der Ihre Anforderungen erfüllt. Bei der Validierung eines DDX-Dokuments sollen weitere Informationen in die Protokolldatei geschrieben werden, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER`.
 
 1. Führen Sie die Überprüfung durch.
 
    Rufen Sie die `AssemblerServiceClient` Objektmethode `invokeDDX` auf und übergeben Sie die folgenden Werte:
 
    * Ein `com.adobe.idp.Document` Objekt, das das DDX-Dokument darstellt.
-   * Der Wert `null` für das java.io.Map-Objekt, das normalerweise PDF-Dokumente speichert.
+   * Der Wert `null` für das java.io.Map-Objekt, in dem normalerweise PDF-Dokumente gespeichert werden.
    * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object that specifies the run-time options.
+
    Die `invokeDDX` Methode gibt ein `AssemblerResult` Objekt zurück, das Informationen darüber enthält, ob das DDX-Dokument gültig ist.
 
 1. Speichern Sie die Überprüfungsergebnisse in einer Protokolldatei.
@@ -125,6 +129,7 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Java):
    * Create a `java.io.File` object and ensure that the file name extension is .xml.
    * Rufen Sie die `AssemblerResult` Methode des `getJobLog` Objekts auf. Diese Methode gibt eine `com.adobe.idp.Document` Instanz mit Überprüfungsinformationen zurück.
    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file.
+
    >[!NOTE]
    >
    >Wenn das DDX-Dokument ungültig ist, wird ein `OperationException` ausgegeben. Innerhalb der catch-Anweisung können Sie die `OperationException` Methode des `getJobLog` Objekts aufrufen.
@@ -133,7 +138,7 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Java):
 
 [Validieren von DDX-Dokumenten](#validating-ddx-documents)
 
-[Kurzanleitung (SOAP-Modus): Validieren von DDX-Dokumenten mit der Java-API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (SOAP-Modus)
+[Quick Beginn (SOAP-Modus): Validieren von DDX-Dokumenten mit der Java-API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (SOAP-Modus)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -154,7 +159,7 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Webdienst):
 1. Erstellen Sie einen PDF Assembler-Client.
 
    * Erstellen Sie ein `AssemblerServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -176,24 +181,26 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Webdienst):
 
    * Erstellen Sie ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
    * Legen Sie die Laufzeitoption fest, mit der der Assembler-Dienst angewiesen wird, das DDX-Dokument zu validieren, indem der Wert &quot;true&quot;dem `AssemblerOptionSpec` Datenmember des `validateOnly` Objekts zugewiesen wird.
-   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie dem `AssemblerOptionSpec` Datenmember des Objekts einen Zeichenfolgenwert zuweisen `logLevel` . -Methode Bei der Validierung eines DDX-Dokuments sollten weitere Informationen in die Protokolldatei geschrieben werden, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER`die Variable angeben. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie dem `AssemblerOptionSpec` Datenmember des Objekts einen Zeichenfolgenwert zuweisen `logLevel` . -Methode Bei der Validierung eines DDX-Dokuments sollten weitere Informationen in die Protokolldatei geschrieben werden, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER`die Variable angeben. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Führen Sie die Überprüfung durch.
 
    Rufen Sie die `AssemblerServiceClient` Objektmethode `invokeDDX` auf und übergeben Sie die folgenden Werte:
 
    * Ein `BLOB` Objekt, das das DDX-Dokument darstellt.
-   * Der Wert `null` für das `Map` Objekt, in dem normalerweise PDF-Dokumente gespeichert werden.
+   * Der Wert `null` für das `Map` Objekt, in dem in der Regel PDF-Dokumente gespeichert werden.
    * Ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen angibt.
+
    Die `invokeDDX` Methode gibt ein `AssemblerResult` Objekt zurück, das Informationen darüber enthält, ob das DDX-Dokument gültig ist.
 
 1. Speichern Sie die Überprüfungsergebnisse in einer Protokolldatei.
 
    * Erstellen Sie ein `System.IO.FileStream` Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort der Protokolldatei und den Modus zum Öffnen der Datei darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
    * Erstellen Sie ein `BLOB` Objekt, das Protokollinformationen speichert, indem Sie den Wert des `AssemblerResult` Objektdatenelements abrufen `jobLog` .
-   * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB` Objekts speichert. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB` Objektfelds abrufen `MTOM` .
+   * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB` Objekts speichert. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB` Objektfelds `MTOM` abrufen.
    * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` Objektmethode aufrufen und das Bytearray `Write` übergeben.
+
    >[!NOTE]
    >
    >Wenn das DDX-Dokument ungültig ist, wird ein `OperationException` ausgegeben. Innerhalb der catch-Anweisung können Sie den Wert des `OperationException` Objektelements `jobLog` abrufen.
@@ -202,4 +209,4 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Webdienst):
 
 [Validieren von DDX-Dokumenten](#validating-ddx-documents)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
