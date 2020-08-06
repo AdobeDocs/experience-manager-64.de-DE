@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2267'
+ht-degree: 70%
 
 ---
 
@@ -41,7 +44,7 @@ Da jedes potenzielle Ergebnis überprüft werden muss, steigen die Kosten zur Be
 
 Durch Abfragebeschränkungen und Tuning von Indizes können die Indexdaten in einem optimierten Format gespeichert werden, das schnell Ergebnisse produziert und eine lineare Inspektion potenzieller Ergebnismengen unnötig macht.
 
-In AEM 6.3 schlägt die Abfrage standardmäßig fehl und löst einen Ausnahmefehler aus, wenn 100.000 potenzielle Ergebnisse durchlaufen wurden. Diese Beschränkung ist in AEM-Versionen vor AEM 6.3 nicht standardmäßig vorhanden, kann jedoch über die Apache Jackrabbit Query Engine Settings OSGi-Konfiguration und QueryEngineSettings JMX Bean (Eigenschaft LimitReads) festgelegt werden.
+In AEM 6.3 schlägt die Abfrage standardmäßig fehl und löst einen Ausnahmefehler aus, wenn 100.000 potenzielle Ergebnisse durchlaufen wurden. Diese Beschränkung ist in AEM Versionen vor AEM 6.3 nicht standardmäßig vorhanden, kann jedoch über die Apache Jackrabbit Abfrage Engine Settings OSGi-Konfiguration und QueryEngineSettings JMX Bean (Eigenschaft LimitReads) festgelegt werden.
 
 ### Erkennen von Abfragen ohne Index {#detecting-index-less-queries}
 
@@ -49,7 +52,7 @@ In AEM 6.3 schlägt die Abfrage standardmäßig fehl und löst einen Ausnahmefeh
 
 Explain **all** queries and ensure their query plans do not contain the **/&amp;ast; traverse** explanation in them. Beispiel für das Durchlaufen eines Abfrageplans:
 
-* **** PLAN: `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
+* **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
 #### Nach der Bereitstellung {#post-deployment}
 
@@ -80,6 +83,7 @@ Vor dem Hinzufügen der cq:tags-Indexregel
 * **Query Builder-Abfrage**
 
    * 
+
       ```
       type=cq:Page
        property=jcr:content/cq:tags
@@ -97,6 +101,7 @@ Nach dem Hinzufügen der cq:tags-Indexregel
 * **cq:tags-Index-Regel**
 
    * 
+
       ```
       /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
        @name=jcr:content/cq:tags
@@ -106,6 +111,7 @@ Nach dem Hinzufügen der cq:tags-Indexregel
 * **Query Builder-Abfrage**
 
    * 
+
       ```
       type=cq:Page
        property=jcr:content/cq:tags
@@ -146,7 +152,7 @@ Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Siche
 
 #### Nach der Bereitstellung {#post-deployment-2}
 
-* Überwachen Sie die Protokolle auf Abfragen, die eine große Node-Traversal oder einen hohen Speicherverbrauch auslösen: &quot;
+* Überwachen Sie die Protokolle auf Abfragen, die einen großen Node-Traversal- oder großen Heap-Speicherverbrauch auslösen: &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimieren Sie die Abfrage, um die Anzahl durchlaufener Knoten zu reduzieren.
@@ -156,7 +162,7 @@ Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Siche
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimieren Sie die Abfrage, um den Heap-Speicherverbrauch zu reduzieren.
 
-Bei AEM 6.0-6.2-Versionen können Sie den Schwellenwert für die Knotenverfolgung über JVM-Parameter im AEM-Startskript anpassen, um zu verhindern, dass große Abfragen die Umgebung überladen. Folgende Werte werden empfohlen:
+Bei AEM 6.0-6.2-Versionen können Sie den Schwellenwert für die Node-Traversal mithilfe von JVM-Parametern im Skript &quot;AEM Beginn&quot;anpassen, um zu verhindern, dass große Abfragen die Umgebung überladen. Folgende Werte werden empfohlen:
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
@@ -188,6 +194,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Nicht optimierte Abfrage**
 
       * 
+
          ```
           property=jcr:content/contentType
           property.value=article-page
@@ -195,6 +202,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Optimierte Abfrage**
 
       * 
+
          ```
           type=cq:Page 
           property=jcr:content/contentType 
@@ -209,6 +217,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Nicht optimierte Abfrage**
 
       * 
+
          ```
          type=nt:hierarchyNode
          property=jcr:content/contentType
@@ -217,6 +226,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          property=jcr:content/contentType
@@ -226,6 +236,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
 
    * Other node inherit from `nt:hierarchyNode` (eg. `dam:Asset`), die zu den möglichen Ergebnissen unnötigerweise hinzufügt.
    * No AEM-provided index exists for `nt:hierarchyNode`, however as there a provided index for `cq:Page`.
+
    Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page`-Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Untergruppe von Knoten (nur cq:Page-Knoten) in AEM beschränkt.
 
 1. Sie können auch die Eigenschaftseinschränkungen so anpassen, dass die Abfrage zu einem vorhandenen Eigenschaftsindex aufgelöst wird.
@@ -233,6 +244,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Nicht optimierte Abfrage**
 
       * 
+
          ```
          property=jcr:content/contentType
          property.value=article-page
@@ -240,6 +252,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Optimierte Abfrage**
 
       * 
+
          ```
          property=jcr:content/sling:resourceType
          property.value=my-site/components/structure/article-page
@@ -253,6 +266,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Nicht optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -262,6 +276,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          path=/content/my-site/us/en
@@ -277,6 +292,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Nicht optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          property=jcr:content/contentType
@@ -286,12 +302,13 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          fulltext=article
          fulltext.relPath=jcr:content/contentType
          ```
-   Die LIKE-Bedingung ist nur langsam auszuwerten, da kein Index verwendet werden kann, wenn der Text mit einem Platzhalter (&quot;%...&quot;) beginnt. Die Bedingung jcr: ermöglicht die Verwendung eines Volltext-Index und wird daher bevorzugt. This requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
+   Die LIKE-Bedingung ist nur langsam auszuwerten, da kein Index verwendet werden kann, wenn der Text mit einem Platzhalter (&quot;%...&quot;) Beginn. Die Bedingung jcr: ermöglicht die Verwendung eines Volltext-Index und wird daher bevorzugt. This requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
 
    Using query functions like `fn:lowercase(..)` may be harder to optimize as there are not faster equivalents (outside more complex and obtrusive index analyzer configurations). Es ist ratsam, andere Scoping-Beschränkungen zu identifizieren, damit die Funktionen mit der kleinstmöglichen Ergebnismenge arbeiten, um die Abfrageleistung insgesamt zu verbessern.
 
@@ -302,6 +319,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Nicht optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -309,6 +327,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Optimierte Abfrage**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -327,6 +346,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Query Builder-Abfrage**
 
       * 
+
          ```
          query type=cq:Page
          path=/content/my-site/us/en
@@ -338,6 +358,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Aus der Query Builder-Abfrage generierter XPath**
 
       * 
+
          ```
          /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
          ```
@@ -378,6 +399,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Query Builder-Abfrage**
 
       * 
+
          ```
          type=myApp:Author
          property=firstName
@@ -386,6 +408,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    * **Aus der Query Builder-Abfrage generierter XPath**
 
       * 
+
          ```
          //element(*, myApp:Page)[@firstName = 'ira']
          ```
@@ -416,7 +439,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
 
    Nach der Erstbereitstellung dieses Index füllt AEM ihn mit den erforderlichen Daten aus.
 
-## Wann sind index-less- und traversal-Abfragen OK? {#when-index-less-and-traversal-queries-are-ok}
+## Wann sind indexlose und übergreifende Abfragen OK? {#when-index-less-and-traversal-queries-are-ok}
 
 Aufgrund der flexiblen Inhaltsarchitektur von AEM ist es schwer vorherzusagen und zu verhindern, dass der Durchlauf von Inhaltsstrukturen im Laufe der Zeit auf eine inakzeptable Größe anwächst.
 
