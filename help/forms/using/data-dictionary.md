@@ -9,6 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
 source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+workflow-type: tm+mt
+source-wordcount: '3866'
+ht-degree: 87%
 
 ---
 
@@ -56,6 +59,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    * **Beschreibung**: (Optional) Beschreibung des Datenwörterbuchs.
    * **Tags:** (Optional) Um ein benutzerdefiniertes Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
    * **Erweiterte Eigenschaften**: (Optional) Tippen Sie auf **Hinzufügen Feld** , um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
+
    ![Eigenschaften des Datenwörterbuchs auf Deutsch](do-not-localize/1_ddproperties.png)
 
 1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen des Elements im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
@@ -78,6 +82,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    * Ein Composite DDE enthält andere DDEs, die vom Typ „Primitive“, „Composite“ oder „Collection“ sein können. Das kann z. B. eine Adresse sein, die aus einer Straße, einer Stadt, einem Bezirk, einem Land und einer Postleitzahl besteht.
    * Primitive-DDEs sind Primitive-Elemente wie Zeichenfolgen, Zahlen, Daten und boolesche Werte, die Informationen wie z. B. den Stadtnamen enthalten.
    * Eine „Collection“ ist eine Liste von ähnlichen Simple- oder Composite-DDEs. Beispielsweise ein Kunde mit mehreren Wohnsitzen oder mit unterschiedlicher Rechnungs- und Versandadresse.
+
    Nachfolgend finden Sie einige Regeln zu Erstellen eines Datenwörterbuchs:
 
    * Nur der Composite-Typ ist als DDE der obersten Ebene in einem Datenwörterbuch zulässig.
@@ -85,6 +90,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    * Der Referenzname muss eindeutig sein.
    * Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDE mit demselben Namen haben.
    * „Enums“ enthalten nur Primitive-Zeichenfolgentypen.
+
    For more information on Composite, Collection, and Primitive elements and working with data dictionary elements, see [Mapping Data Dictionary Elements to XML Schema](#mappingddetoschema).
 
    For information on validations in Data Dictionary, see [Data Dictionary Editor validations](#ddvalidations).
@@ -125,6 +131,7 @@ Beim Bearbeiten oder Anzeigen des Datenwörterbuchs sehen Sie, welche Elemente d
    * Bewegen Sie den Mauszeiger über ein Datenwörterbuch und tippen Sie auf „Bearbeiten“.
    * Wählen Sie ein Datenwörterbuch aus und tippen Sie in der Kopfzeile auf „Bearbeiten“.
    * Bewegen Sie den Mauszeiger über ein Datenwörterbuch und tippen Sie auf „Auswählen“. Tippen Sie dann in der Kopfzeile auf „Bearbeiten“.
+
    Oder tippen Sie auf ein Datenwörterbuch, um es anzuzeigen.
 
 1. Im Datenwörterbuch tippen Sie auf ein einfaches Element, um es auszuwählen. Composite- und Collection-Elemente haben keine Verweise.
@@ -281,7 +288,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
    <td>Ein optionaler benutzerfreundlicher Name des DDEs.</td> 
   </tr> 
   <tr> 
-   <td>Beschreibung</td> 
+   <td>description</td> 
    <td>Zeichenfolge</td> 
    <td>Beschreibung des DDE.</td> 
   </tr> 
@@ -297,12 +304,12 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
   </tr> 
   <tr> 
    <td>Schlüssel</td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE ein Schlüsselelement ist.</td> 
   </tr> 
   <tr> 
    <td>Berechnet</td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. Standardmäßig werden JSP-Ausdruck unterstützt.</td> 
   </tr> 
   <tr> 
@@ -322,7 +329,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
   </tr> 
   <tr> 
    <td>Erforderlich</td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>Die Markierung gibt an, dass die dem Datenwörterbuch entsprechende Quelle von Instanzdaten den Wert dieses bestimmten DDE enthalten muss.</td> 
   </tr> 
   <tr> 
@@ -559,7 +566,7 @@ Im folgenden Beispiel wird das Schema für eine Anmerkung gezeigt.
    <td>/note/to</td> 
   </tr> 
   <tr> 
-   <td>from</td> 
+   <td>von</td> 
    <td>/note/from</td> 
   </tr> 
   <tr> 
