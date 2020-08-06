@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 58%
 
 ---
 
@@ -214,7 +217,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
    <td><p>So nehmen Sie eine Anpassung an eine neue Repository-Sturktur vor:</p> 
     <ol> 
-     <li>Alle benutzerdefinierten oder geänderten Skripten kopieren von <strong><code>/etc/dam/indesign/scripts</code></strong><strong><code>/apps/settings/dam/indesign/scripts</code></strong><br /> 
+     <li>Alle benutzerdefinierten oder geänderten Skripten kopieren von <strong><code>/etc/dam/indesign/scripts</code></strong> <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br /> 
       <ol> 
        <li>Only copy new or modified scripts as unmodified scripts provided by AEM will be available via <strong><code>/libs/settings</code></strong> in AEM 6.4</li> 
       </ol> </li> 
