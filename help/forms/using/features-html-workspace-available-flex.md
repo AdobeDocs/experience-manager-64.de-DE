@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 85%
 
 ---
 
 
 # In Flex Workspace nicht verfügbare Funktionen von AEM Forms {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
-AEM Forms Workspace ist eine Innovation, die über Flex-basierte Arbeitsflächen, Angebot-Funktionen und Funktionen hinausgeht, die die Integration von Unternehmen und die Benutzerproduktivität verbessern.
+AEM Forms Workspace ist eine Innovation, die über den Flex-basierten Arbeitsbereich hinausgeht, bis hin zu Funktionen und Funktionen für Angebote, die die Integration von Unternehmen und die Benutzerproduktivität verbessern.
 
 Im Folgenden sehen Sie einen kurzen Überblick über diese Funktionen. Weitere Informationen finden Sie in den jeweiligen Artikeln, die am Ende dieses Artikels aufgeführt sind.
 
