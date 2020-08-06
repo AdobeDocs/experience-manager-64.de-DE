@@ -28,13 +28,13 @@ Java API Quick Beginn (SOAP) ist für den Application Manager-Dienst verfügbar.
 
 >[!NOTE]
 >
->Die Anwendungsverwaltungs-APIs unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
+>Die APIs des Anwendungsmanagers unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der AEM Forms stark typisierten API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Java API(SOAP) Quick Beginn im Abschnitt Programmieren mit AEM Forms basieren auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Java API(SOAP) Quick Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
