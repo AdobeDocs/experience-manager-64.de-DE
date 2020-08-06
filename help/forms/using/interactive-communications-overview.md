@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 77%
 
 ---
 
@@ -20,7 +23,7 @@ Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen 
 
 ![](do-not-localize/correspondence-management.png)
 
-Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Aussagen, Benefiz, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits.
+Interactive Communications zentralisiert und verwaltet die Erstellung, Zusammenstellung und den Versand sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Aussagen, Vorteilsmitteilungen, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits.
 
 ## Schlüsselfunktionen {#key-capabilities}
 
@@ -30,7 +33,7 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 * Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
 * Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
 * Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
-* Die Benutzeroberfläche des Agenten zeigt die Druck- und Webvorschau der interaktiven Kommunikation an
+* Die Benutzeroberfläche des Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation an
 * Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
 ## Beispielanwendungsfall {#sample-use-case}
@@ -52,7 +55,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 1. Fügen Sie mit der [Drag &amp; Drop-Beutzeroberfläche](/help/forms/using/introduction-interactive-communication-authoring.md) je nach Bedarf Dokumentfragmente, Bilder, Komponenten zum Druck- und Webkanal der interaktiven Kommunikation hinzu.
 1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten wie folgt:
 
-   1. Bilder 
+   1. Bilder
    1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (einschließlich Layout-Fragmente)
    1. [Diagramme](/help/forms/using/chart-component-interactive-communications.md)
    1. [Dokumentfragmente](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
@@ -67,8 +70,8 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 * [Formulardatenmodell](/help/forms/using/data-integration.md)
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 * [Dokumentfragmente](/help/forms/using/document-fragments.md)
-* Bilder 
-* [Designs](/help/forms/using/themes.md) für den Webkanal
+* Bilder
+* [Themen](/help/forms/using/themes.md) für den Web-Kanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -106,7 +109,7 @@ Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur E
    <td>Keine Benutzeroberfläche für die Erstellung eines bedingten Ausdrucks</td> 
   </tr>
   <tr>
-   <td>Authoring</td> 
+   <td>Authoring – </td> 
    <td>Drag-and-Drop-Benutzeroberfläche für Erstellung von Druck- und Webkanal</td> 
    <td>Kein Drag-and-Drop-Mechanismus </td> 
   </tr>
