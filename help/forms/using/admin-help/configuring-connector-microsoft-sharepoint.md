@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 63%
 
 ---
 
@@ -22,13 +25,13 @@ Connector für Microsoft SharePoint aktiviert die Kommunikation zwischen AEM For
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für Microsoft SharePoint“.
 1. Geben Sie die folgenden Einstellungen für Ihren SharePoint-Server an:
 
-   **** Hostname des SharePoint-Servers: Die Hostname-Anschlussnummer der Webanwendung auf dem SharePoint-Server im Format `[hostname]:[port]`.
+   **Hostname des SharePoint-Servers:** Die Hostname-Anschlussnummer der Webanwendung auf dem SharePoint-Server im Format `[hostname]:[port]`.
 
-   **** Benutzername: Das Benutzerkonto, mit dem eine Verbindung zum SharePoint-Server hergestellt wird.
+   **Benutzername:** Das Benutzerkonto, mit dem eine Verbindung zum SharePoint-Server hergestellt wird.
 
-   **** Kennwort: Kennwort für das Benutzerkonto, mit dem eine Verbindung zum SharePoint-Server hergestellt wird
+   **Kennwort:** Kennwort für das Benutzerkonto, mit dem eine Verbindung zum SharePoint-Server hergestellt wird
 
-   **** Domänenname: Domäne, auf der sich der SharePoint-Server befindet.
+   **Domänenname:** Domäne, auf der sich der SharePoint-Server befindet.
 
 1. Klicken Sie auf Speichern.
 
