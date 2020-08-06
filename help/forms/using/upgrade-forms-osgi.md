@@ -50,10 +50,10 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
 
-   1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
-   1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+   1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen ein Adobe ID, um sich bei der Softwareverteilung anzumelden.
+   1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]** .
    1. In the **[!UICONTROL Filters]** section:
-      1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+      1. Wählen Sie **[!UICONTROL Forms]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
       1. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
    1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
    1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
@@ -76,7 +76,7 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
    * **Migrationsdienstprogramm ausführen**
 
-      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.4 Forms. Sie können das Dienstprogramm von der AEM-Softwareverteilung herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
+      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.4 Forms. Sie können das Dienstprogramm von AEM Software Distribution herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
 
       Wenn Sie [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung](integrate-draft-submission-database.md) mit der Datenbank verwenden und von einer früheren Version aktualisieren, führen Sie nach der Aktualisierung die folgenden SQL-Abfragen aus:
 
