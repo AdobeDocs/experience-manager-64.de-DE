@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 61%
 
 ---
 
@@ -42,6 +45,7 @@ Abhängigkeiten von primären 3D-Modelldateien wie Texturmap-Dateien werden bei 
 
       1. Beachten Sie die fehlenden Pfade und Dateinamen.
       1. Tippen Sie in der rechten oberen Ecke auf **[!UICONTROL Schließen]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. Das neu hochgeladene Asset wird nun korrekt als referenziertes Asset aufgeführt.
 
    * **[!UICONTROL Abhängigkeiten ignorieren]**.
