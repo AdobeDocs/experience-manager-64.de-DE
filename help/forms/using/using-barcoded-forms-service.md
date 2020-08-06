@@ -44,7 +44,7 @@ Mit dem Barcoded Forms-Dienst können Sie die folgenden Aufgaben ausführen:
 
 Der Barcoded Forms-Dienst sucht in einer Grafik den Strichcode, dekodiert diesen und extrahiert die Daten. Der Dienst gibt die Strichcodedaten (bei Bedarf mithilfe der Entitätenkodierung) in einem Element vom Typ content eines XML-Dokuments zurück. Die folgende gescannte TIFF-Grafik eines Formulars enthält beispielsweise zwei Strichcodes:
 
-![example](assets/example.png)
+![Beispiel](assets/example.png)
 
 Der Barcoded Forms-Dienst gibt nach Dekodierung der Strichcodes das folgende XML-Dokument zurück:
 
@@ -123,7 +123,7 @@ Beim Einsatz der BCF-API sollten Sie die folgenden Einschränkungen berücksicht
 
 ### Weitere Einschränkungen {#other-limitations}
 
-Beachten Sie bei der Verwendung des Barcoded Forms-Dienstes auch die folgenden Einschränkungen:
+Beachten Sie bei Verwendung des Barcoded Forms-Dienstes auch die folgenden Einschränkungen:
 
 * Der Dienst unterstützt AcroForms und statische Formulare mit 2D-Strichcodes, die mit Adobe Reader oder Acrobat gespeichert wurden, in vollem Umfang. Für 1D-Strichcodes müssen Sie das Formular jedoch reduzieren oder es als gescanntes PDF- oder TIFF-Dokument zur Verfügung stellen.
 * Dynamische XFA-Formulare werden nicht in vollem Umfang unterstützt. Für die ordnungsgemäße Dekodierung eines 1D- und 2D-Strichcodes in einem dynamischen Formular müssen Sie das Formular entweder reduzieren oder es als gescanntes PDF- oder TIFF-Dokument bereitstellen.
