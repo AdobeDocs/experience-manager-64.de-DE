@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
 translation-type: tm+mt
 source-git-commit: 77997d6d8744cf1498add91a0aa2dab4e29f8e3d
+workflow-type: tm+mt
+source-wordcount: '6512'
+ht-degree: 93%
 
 ---
 
@@ -64,7 +67,7 @@ In virtualisierten Umgebungen erfordert MongoDB bestimmte I/O- und VM-Konfigurat
 
 ## Hardwarehinweise {#hardware-considerations}
 
-### Speicher {#storage}
+### Speicherung {#storage}
 
 Um den Lese- und Schreibdurchsatz für eine optimale Leistung zu erreichen, ohne hierzu auf eine vorzeitige horizontale Skalierung angewiesen zu sein, setzt MongoDB im Allgemeinen SSD-Speicher oder Speicher mit einer SSD-ähnlichen Leistung voraus.
 
@@ -187,8 +190,7 @@ wobei:
 
 * `cache`
 
-   
-Die Cachegröße in Megabytes. Dieser Wert ist über diverse im `DocumentNodeStore` verwendete Cache-Speicher verteilt. Die Standardgröße ist 256 MB. Allerdings profitiert die Oak-Leseleistung von einem größeren Cache.
+   Die Cachegröße in Megabytes. Dieser Wert ist über diverse im `DocumentNodeStore` verwendete Cache-Speicher verteilt. Die Standardgröße ist 256 MB. Allerdings profitiert die Oak-Leseleistung von einem größeren Cache.
 
 * `blobCacheSize`
 
@@ -394,18 +396,15 @@ Das Verhalten des MongoDB-Prozesses variiert abhängig von der jeweiligen Zuordn
 
 * `-membind=<nodes>`
 
-   
-Ordnen Sie nur den aufgelisteten Knoten zu. Mongod ordnet keinen Speicher auf aufgeführten Knoten zu und nutzt möglicherweise nicht sämtlichen verfügbaren Speicher.
+   Ordnen Sie nur den aufgelisteten Knoten zu. Mongod ordnet keinen Speicher auf aufgeführten Knoten zu und nutzt möglicherweise nicht sämtlichen verfügbaren Speicher.
 
 * `-cpunodebind=<nodes>`
 
-   
-Führen Sie nur auf den Knoten aus. Mongod wird nur auf den aufgeführten Knoten ausgeführt und nutzt nur den auf diesen Knoten verfügbaren Speicher.
+   Führen Sie nur auf den Knoten aus. Mongod wird nur auf den aufgeführten Knoten ausgeführt und nutzt nur den auf diesen Knoten verfügbaren Speicher.
 
 * `-physcpubind=<nodes>`
 
-   
-Nur Ausführung auf aufgelisteten CPUs (Kerne). Mongod wird nur auf den aufgeführten CPUs ausgeführt und nutzt nur den auf diesen CPUs verfügbaren Speicher.
+   Führen Sie nur auf aufgelisteten CPUs (Kerne) aus. Mongod wird nur auf den aufgeführten CPUs ausgeführt und nutzt nur den auf diesen CPUs verfügbaren Speicher.
 
 * `--localalloc`
 
@@ -587,7 +586,7 @@ Wenn Sie virtualisierte Umgebungen mithilfe von VMware ESX verwalten und bereits
 1. Weisen Sie dem `mongod`-Prozess über Storage I/O Control genügend I/O-Kapazität zu.
 1. Garantieren Sie den MongoDB-Hostmaschinen CPU-Ressourcen, indem Sie die Option für die [CPU-Reservierung](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html) einstellen.
 
-1. Ziehen Sie die Verwendung von Paravirtual-I/O-Treibern in Betracht. Weitere Informationen dazu finden Sie in diesem [Knowledgebase-Artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
+1. Ziehen Sie die Verwendung von Paravirtual-I/O-Treibern in Betracht. Weitere Informationen dazu finden Sie in diesem [Knowledgebase-Artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
 
 ### Amazon Web Services {#amazon-web-services}
 
@@ -699,4 +698,4 @@ If AEM is running on a MongoMK persistence manager deployment, [page names are l
 
 >[!NOTE]
 >
->[Bitte beachten Sie die MongoDB Dokumentation](https://docs.mongodb.com/manual/reference/limits/) , um sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB selbst vertraut zu machen.
+>[Bitte beachten Sie auch die MongoDB Dokumentation](https://docs.mongodb.com/manual/reference/limits/) , um sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB selbst vertraut zu machen.
