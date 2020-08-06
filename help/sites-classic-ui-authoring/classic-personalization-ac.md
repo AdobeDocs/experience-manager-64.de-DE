@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
 translation-type: tm+mt
 source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ In dieser Dokumentation wird beschrieben, wie Sie mit Adobe Campaign arbeiten k�
 * Adobe Campaign 6.1, erhältlich als On-Premise-Version.
 * Adobe Campaign Standard, erhältlich als Lizenzabonnement.
 
-Beachten Sie Folgendes
+Beachten Sie Folgendes:
 
 * [Arbeiten mit Adobe Campaign 6.1 und Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
 * [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
