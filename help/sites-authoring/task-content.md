@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 100%
 
 ---
 
@@ -21,21 +24,21 @@ Bei Aufgaben handelt es sich um Arbeitsschritte, die auf Inhalt ausgeführt werd
 
 Aufgaben werden auch in Projekten verwendet, um den Grad der Vollständigkeit der aktuellen Aufgaben, einschließlich Workflow-Aufgaben zu bestimmen.
 
-## Verfolgen des Projektfortschritts {#tracking-project-progress}
+## Verfolgen des Projektfortschritts   {#tracking-project-progress}
 
 Sie können den Projektfortschritt verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben in einem Projekt betrachten, die auf der Kachel **Aufgaben** dargestellt werden. Der Projektfortschritt kann bestimmt werden durch:
 
-* **Aufgabenkachel:** Der Gesamtfortschritt des Projekts wird in der Aufgabenkachel auf der Seite mit den Projektdetails dargestellt.
+* **Aufgabenkachel:** Ein Gesamtfortschritt des Projekts wird in der Aufgabenkachel dargestellt, die auf der Seite „Projektdetails“ verfügbar ist.
 
-* **Aufgabenliste:** Wenn Sie auf die Aufgabenkachel klicken, wird eine Liste der Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
+* **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
 
 Beide enthalten sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt in der **Aufgabenkachel** erstellen.
 
-### Aufgabenkachel {#task-tile}
+### Aufgabenkachel   {#task-tile}
 
 Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb des Projekts angezeigt. Die Aufgabenkachel zeigt den aktuellen Status des Projekts an. Die Anzeige basiert auf den vorhandenen Aufgaben innerhalb des Workflows und beinhaltet keine Aufgaben, die in der Zukunft erzeugt werden, während der Workflow fortgesetzt wird. Die folgenden Informationen sind in der Aufgabenkachel sichtbar:
 
-* Prozentsatz der abgeschlossenen Aufgaben 
+* Prozentsatz der abgeschlossenen Aufgaben
 * Prozentsatz der aktiven Aufgaben
 * Prozentsatz der überfälligen Aufgaben
 
@@ -45,7 +48,7 @@ Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb de
 
 Zusätzlich zur Verfolgung des Fortschritts möchten Sie vielleicht auch Informationen über das Projekt anzeigen oder es ändern.
 
-#### Aufgabenliste {#task-list}
+#### Aufgabenliste   {#task-list}
 
 Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste der Aufgaben anzuzeigen, die mit dem Projekt verbunden sind. Die Aufgaben werden in übergeordnete Workflows aufgeteilt. Die Aufgabendetails werden zusammen mit Metadaten wie Fälligkeitsdatum, Verantwortlicher, Priorität und Status angezeigt.
 
@@ -53,7 +56,7 @@ Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste
 
 #### Aufgabendetails {#task-details}
 
-Für weitere Informationen zu einer bestimmten Aufgabe tippen/klicken Sie in der Aufgabenliste auf die Aufgabe und **Aufgabendetails **öffnen.
+Tippen/klicken Sie für weitere Informationen über eine bestimmte Aufgabe in der Aufgabenliste auf die Aufgabe und öffnen Sie „Aufgabendetails“.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -74,9 +77,9 @@ So fügen Sie eine Aufgabe hinzu:
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. Tippen/klicken Sie auf **Erstellen**.
+1. Tippen oder klicken Sie auf **Erstellen**.
 
-## Arbeiten mit Aufgaben im Posteingang {#working-with-tasks-in-the-inbox}
+## Arbeiten mit Aufgaben im Posteingang   {#working-with-tasks-in-the-inbox}
 
 Eine andere Möglichkeit, auf Aufgaben zuzugreifen, bietet der Posteingang. Sie können den Inhalt aus dem Posteingang öffnen, um die erforderlichen Änderungen vorzunehmen. Wenn Sie fertig sind, ändern Sie den Aufgabenstatus in „Fertig gestellt“. Aufgaben werden auch in Ihrem Posteingang angezeigt, wenn sie einer Benutzergruppe zugewiesen werden, der Sie angehören. In diesem Fall kann jedes Mitglied der Gruppe die erforderliche Bearbeitung durchführen und die Aufgabe fertigstellen.
 
