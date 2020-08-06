@@ -1,14 +1,17 @@
 ---
-title: Verwandte Assets
+title: Zugehörige Assets
 description: Erfahren Sie, wie Sie Assets mit bestimmten gemeinsamen Attributen verknüpfen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 100%
 
 ---
 
 
-# Related assets {#related-assets}
+# Zugehörige Assets {#related-assets}
 
 Mit Adobe Experience Manager (AEM) Assets können Sie Assets manuell entsprechend den Anforderungen Ihres Unternehmens zuordnen. Verwenden Sie hierfür die Funktion „Zugehörige Assets“. Beispielsweise können Sie einem Asset oder einem Bild/Video eine Lizenzdatei zu einem ähnlichen Thema zuordnen. Sie können Assets zuordnen, die bestimmte gängige Attribute teilen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, der INDD-Quelldatei zuordnen.
 
@@ -35,8 +38,9 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um die Quelldatei des Elements zuzuordnen, wählen Sie **[!UICONTROL Quelle]** aus der Liste aus.
-   * To relate a derived file, select **[!UICONTROL Derived]** from the list.
+   * Um eine abgeleitete Datei zuzuordnen, wählen Sie **[!UICONTROL Abgeleitet]** aus der Liste aus.
    * Um eine Zweiwege-Beziehung zwischen den Assets zu erstellen, wählen Sie **[!UICONTROL Andere]** aus der Liste aus.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Navigieren Sie im Bildschirm **[!UICONTROL Assets auswählen]** zum Speicherort des Elements, das Sie zuordnen möchten, und wählen Sie es aus.
@@ -44,7 +48,7 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klicken/tippen Sie auf das Symbol **[!UICONTROL Bestätigen]**.
-1. Click/tap **[!UICONTROL OK]** to close the dialog. Je nach Auswahl der Beziehung in Schritt 3 wird das zugeordnete Asset unter einer entsprechenden Kategorie im Abschnitt **[!UICONTROL Zugehörig]** aufgeführt. Beispiel: Wenn das zugeordnete Asset die Quelldatei des aktuellen Elements ist, wird es unter **[!UICONTROL Quelle]** aufgeführt.
+1. Klicken/tippen Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Je nach Auswahl der Beziehung in Schritt 3 wird das zugeordnete Asset unter einer entsprechenden Kategorie im Abschnitt **[!UICONTROL Zugehörig]** aufgeführt. Beispiel: Wenn das zugeordnete Asset die Quelldatei des aktuellen Elements ist, wird es unter **[!UICONTROL Quelle]** aufgeführt.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -89,6 +93,6 @@ Ist die Quelldatei mit einem anderen Asset verknüpft, ruft AEM Assets das refe
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Select the asset that is related to the source, and then click/tap **[!UICONTROL Reveal in Assets]**. Das übersetzte zugehörige Asset wird angezeigt.
+1. Wählen Sie das mit der Quelle verknüpfte Element aus und klicken/tippen Sie auf **[!UICONTROL In Assets einblenden]**. Das übersetzte zugehörige Asset wird angezeigt.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
