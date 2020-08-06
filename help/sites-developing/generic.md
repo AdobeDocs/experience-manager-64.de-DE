@@ -26,7 +26,7 @@ ht-degree: 84%
 
 Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dies ermöglicht es Ihnen, AEM-Komponenten für eCommerce-Funktionen (unabhängig von einer bestimmten eCommerce-Engine) zu erstellen. Außerdem können Sie die interne CRX-Datenbank verwenden oder ein eCommerce-System einbinden und Produktdaten in AEM ziehen.
 
-Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM-Komponenten zur Verfügung. Derzeit sind folgende Komponenten verfügbar:
+Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM zur Verfügung. Derzeit sind folgende Komponenten verfügbar:
 
 * Produktanzeige
 * Warenkorb
@@ -45,7 +45,7 @@ Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden, die v
 
    * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
 
-* AEM unterstützt `Resource.adaptTo()` und `CommerceService` `Product`
+* AEM unterstützt `Resource.adaptTo()` für `CommerceService` und `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -333,7 +333,7 @@ public class AxisFilter implements VariantFilter {
 
 **Speicher**
 
-* Speicher
+* Speicherung
 
    * Im AEM-generischen Fall werden Warenkörbe im [ClientContext](/help/sites-administering/client-context.md) gespeichert
 
