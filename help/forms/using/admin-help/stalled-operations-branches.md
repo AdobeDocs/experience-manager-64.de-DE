@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 89%
 
 ---
 
@@ -26,17 +29,17 @@ Wenn ein Prozess anhält, werden weitere Vorgänge erst wieder ausgeführt, wenn
 
 Für jedes angehaltene Element werden in der Liste die folgenden Informationen angezeigt:
 
-**** Vorgangsname oder Zweigname: Der Name des Vorgangs oder Zweigs.
+**Vorgangsname oder Zweigname:** Der Name des Vorgangs oder Zweigs.
 
-**** Status: Bei angehaltenen Elementen immer ANGEHALTEN.
+**Status:** Bei angehaltenen Elementen immer ANGEHALTEN.
 
-**** Fehler: Eine kurze Beschreibung des Problems.
+**Fehler:** Eine kurze Beschreibung des Problems.
 
-**** Prozess-ID: Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID:** Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
-**** Prozessname - Version: Der Name des in Workbench zugewiesenen Prozesses.
+**Prozessname - Version:** Der Name des in Workbench zugewiesenen Prozesses.
 
-**** Angehaltenes Datum: Datum und Uhrzeit der Anhalten des Vorgangs oder der Verzweigung.
+**Angehaltenes Datum:** Datum und Uhrzeit der Anhalten des Vorgangs oder der Verzweigung.
 
 Sie können auf den Seiten „Angehaltene Vorgänge“ bzw. „Angehaltene Zweige“ folgende Aufgaben durchführen:
 
