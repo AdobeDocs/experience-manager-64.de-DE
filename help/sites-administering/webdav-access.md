@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 78%
 
 ---
 
@@ -81,7 +84,7 @@ Die URL für den WebDAV-Server weist die folgende Struktur auf:
   <tr>
    <td><strong>Beschreibung</strong></td> 
    <td>Host und Anschluss, auf dem AEM ausgeführt wird</td> 
-   <td>Pfad für die AEM-Repository-Webapp</td> 
+   <td>Pfad für die AEM Repository-Webapp</td> 
    <td>Pfad, dem das WebDAV-Servlet zugeordnet wird</td> 
    <td>Name der Arbeitsfläche</td> 
   </tr>
@@ -156,6 +159,7 @@ So stellen Sie unter Windows eine Verbindung über WebDAV zu AEM her:
    * **Laufwerk**: Wählen Sie einen der verfügbaren Buchstaben aus.
    * **Ordner**: `http://localhost:4502`
    * Klicken Sie auf **Verbindung mit anderen Anmeldeinformationen herstellen**.
+
    Klicken Sie auf „Beenden“.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
@@ -213,14 +217,14 @@ So stellen Sie mit GNOME eine Verbindung zu AEM über WebDAV her:
 1. Klicken Sie auf „Verknüpfen“.**** AEM fordert Sie auf, Ihr Kennwort einzugeben.
 1. Geben Sie das Kennwort `admin` ein und klicken Sie auf **Verbinden**.
 
-GNOME hat AEM jetzt als Volume gemountet und kann wie jedes andere Volume verwendet werden.
+GNOME hat jetzt AEM als Volume gemountet und kann wie jedes andere Volume verwendet werden.
 
 #### KDE {#kde}
 
 1. Öffnen Sie den Assistenten „Netzwerkordner“.
 1. Wählen Sie **Webordner** aus und klicken Sie auf „Weiter“.
 1. Geben Sie unter **Name** den Verbindungsnamen ein.
-1. Geben Sie in **Benutzer** Adobe ein, dass Sie das vorkonfigurierte Administratorkonto verwenden sollten. Geben Sie `admin.` Adobe an.
+1. Geben Sie in **Benutzer** die `admin.` Adobe ein, um das vorkonfigurierte Administratorkonto zu verwenden.
 1. Geben Sie in **Server**`http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
@@ -232,4 +236,4 @@ GNOME hat AEM jetzt als Volume gemountet und kann wie jedes andere Volume verwen
 1. Klicken Sie auf **Speichern und Verbinden**.
 1. Wenn Sie nach dem Kennwort gefragt werden, geben Sie das Kennwort `admin` ein und klicken Sie auf **Verbinden**
 
-KDE hat jetzt AEM als Volume gemountet und kann wie jedes andere Volume verwendet werden.
+KDE hat jetzt AEM als Volume montiert und Sie können es wie jedes andere Volume verwenden.
