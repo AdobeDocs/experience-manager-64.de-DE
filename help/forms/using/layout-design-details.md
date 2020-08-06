@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1305'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +26,7 @@ XFA-Formularvorlagen oder XDPs sind die Vorlagen für:
 
 * Layout-Fragmente
 
-Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Entwerfen Ihrer XDPs zum Erstellen effektiver Korrespondenz/Interaktive Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden.
+Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Entwerfen Ihrer XDPs zum Erstellen effektiver Korrespondenz/Interaktive Kommunikation, z. B. wo Formularfelder oder Zielgruppen verwendet werden und wann Layout-Fragmente verwendet werden.
 
 ## Erstellen eines Layouts für Briefe oder für den Druckkanal von interaktiver Kommunikation {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
