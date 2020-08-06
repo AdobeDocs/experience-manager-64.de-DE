@@ -30,7 +30,7 @@ Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole](members.md
 
 Mithilfe der Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied von einem Community Manager jederzeit proaktiv entfernt oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community Manager sendet, der eine solche Anforderung sendet.
 
-## AEM Communities Benutzergenerierte Inhaltsbeitragsbeschränkungen Konfiguration {#aem-communities-user-generated-content-contribution-limits-configuration}
+## AEM Communities Benutzergenerierte Inhaltsbeitragsbeschränkungen - Konfiguration {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Diese OSGi-Konfiguration
 
@@ -53,7 +53,7 @@ So erreichen Sie diese OSGi-Konfiguration:
 
 * **[!UICONTROL Automatische Anwendung von UGC-Beitragsbeschränkungen]**
 
-   Wenn diese Option aktiviert ist, legen Sie bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen für Benutzer fest. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md)aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer zulassungsliste von Domänen werden nie eingeschränkt.
+   Wenn diese Option aktiviert ist, legen Sie bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen für Benutzer fest. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md)aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer Zulassungsliste von Domänen sind nie eingeschränkt.
 
    Diese Option ist standardmäßig deaktiviert.
 
@@ -71,11 +71,11 @@ So erreichen Sie diese OSGi-Konfiguration:
 
 * **[!UICONTROL Domänen]**
 
-   Eine zulassungsliste-Liste einer oder mehrerer E-Mail-Domänen. Klicken Sie auf das Symbol +, um weitere Einträge einzugeben.
+   Eine Zulassungsliste-Liste einer oder mehrerer E-Mail-Domänen. Klicken Sie auf das Symbol +, um weitere Einträge einzugeben.
 
-   Benutzer mit E-Mail-Adressen in der zulassungsliste der Domänen des  sind nicht betroffen, wenn die UGC-Beitragsbeschränkungen automatisch angewendet werden. Wenn beispielsweise eine Domäne zur Liste von Domänen hinzugefügt `mycompany.com` wird, wird ein Mitglied mit E-Mail-Adresse nie vom Posten ausgeschlossen `me@mycompany.com` werden.
+   Benutzer mit E-Mail-Adressen in der Zulassungsliste der Domänen sind davon nicht betroffen, wenn die Beitragsbeschränkungen für UGC automatisch angewendet werden. Wenn beispielsweise eine Domäne zur Liste von Domänen hinzugefügt `mycompany.com` wird, wird ein Mitglied mit E-Mail-Adresse nie vom Posten ausgeschlossen `me@mycompany.com` werden.
 
-   Der Standardwert ist ein leeres zulassungsliste.
+   Standard ist eine leere Zulassungsliste.
 
 * **[!UICONTROL Messaging-Empfänger]**
 
