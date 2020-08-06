@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 61%
 
 ---
 
@@ -25,9 +28,9 @@ Sie können die Sammlung von Nutzungsstatistiken über die Touch-Benutzeroberfl�
 
 >[!NOTE]
 >
->Es gibt verschiedene Datenschutz- und Datenschutzbestimmungen. einschließlich beispielsweise GDPR und CCPA. AEM-Sites sind bereit, Kunden bei ihren Datenschutzverpflichtungen und der Einhaltung der Datenschutzbestimmungen zu unterstützen. Auf dieser Seite werden Kunden durch die Verfahren zum Aktivieren (oder Deaktivieren) der aggregierten Sammlung von Nutzungsstatistiken angeleitet.
+>Es gibt verschiedene Datenschutz- und Datenschutzbestimmungen. einschließlich beispielsweise GDPR und CCPA. AEM Sites ist bereit, Kunden bei ihren Datenschutzverpflichtungen und ihren Datenschutzverpflichtungen zu unterstützen. Auf dieser Seite werden Kunden durch die Verfahren zum Aktivieren (oder Deaktivieren) der aggregierten Sammlung von Nutzungsstatistiken angeleitet.
 >
->Weitere Informationen finden Sie im Datenschutzzentrum von [Adobe](https://www.adobe.com/privacy.html).
+>Weitere Informationen finden Sie im Datenschutzzentrum der [Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
