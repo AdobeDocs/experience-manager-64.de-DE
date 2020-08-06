@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 75%
 
 ---
 
@@ -125,6 +128,7 @@ Im Folgenden finden Sie eine Beschreibung der Schritte, die zum Aktivieren der B
 >
 >* Als Standardbenutzer wird **`admin`** zugewiesen.
 >* Nicht verwenden `*communities-user-admin *user*.*`
+
 >
 
 
@@ -522,7 +526,7 @@ Der autorisierte Benutzer sollte als Mitglied der Benutzergruppe **`administrato
 
 Für den autorisierten Benutzer sollten explizit die folgenden Rechte und Einschränkungen für alle Veröffentlichungsinstanzen gelten:
 
-| **path** | **jcr:all** | **rep:glob** |
+| **Pfad** | **jcr:all** | **rep:glob** |
 |---|---|---|
 | /home | X | &amp;ast;/Aktivitäten/&amp;ast; |
 | /home/users | X | &amp;ast;/Aktivitäten/&amp;ast; |
@@ -530,7 +534,7 @@ Für den autorisierten Benutzer sollten explizit die folgenden Rechte und Einsch
 
 As a member of the `administrators` group, the authorized user should have the following privileges on all publish instances :
 
-| **path** | **jcr:all** | **jcr:read** | **rep:write** |
+| **Pfad** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |
