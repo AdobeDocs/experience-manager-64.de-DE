@@ -10,6 +10,9 @@ topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 87%
 
 ---
 
@@ -56,13 +59,13 @@ Führen Sie die folgenden Schritte aus, um Analytics-Berichte anzuzeigen:
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**** A. Analytics-Bericht, Befehl
+**A.** Analytics-Bericht, Befehl
 
 AEM Forms zeigt Analytics-Berichte für das Formular und für jeden Bereich im Formular an, wie unten dargestellt.
 
 ![Zusammenfassungsbericht eines adaptiven Formulars](assets/analyticsdashboard_callout.png)
 
-************ A. Konversionen **B. Zusammenfassung auf Formularebene** C.**Zusammenfassung auf Bereichsebene** D. Browser der Besucher - Filter **E. Betriebssystem der Besucher - Filter** F. Sprache der Besucher - Filter
+**A.** Konversionen **B.** Zusammenfassung auf Formularebene **C.** Zusammenfassung auf Bereichsebene **D.** Browser der Besucher - Filter **E.** Betriebssystem der Besucher - Filter **F.** Sprache der Besucher - Filter
 
 Standardmäßig wird der Analytics-Bericht für die letzten sieben Tage angezeigt. Sie können Berichte für die letzten 15 Tage, den letzten Monat usw. anzeigen oder einen Datumsbereich angeben.
 
@@ -92,7 +95,7 @@ Mit der Zusammenfassung auf Formularebene erhalten Sie einen Einblick in die Lei
 * **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde 
 * **Übermittlungen**: Gibt an, wie oft das Formular gesendet wurde
 * **Abbruch**: Gibt an, wie oft Benutzer das Ausfüllen des Formulars begonnen und dann abgebrochen haben
-* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch Unique Visitors. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch eindeutige Besucher. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
 
