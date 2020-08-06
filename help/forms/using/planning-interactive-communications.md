@@ -132,7 +132,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
    <td>Einzeln aufgeführte Anrufe - Ausgehend</td> 
    <td><p>Spaltennamen:</p> 
     <ul> 
-     <li>Datum</li> 
+     <li>Datum          </li> 
      <li>Zeit</li> 
      <li>Nummer</li> 
      <li>Dauer</li> 
