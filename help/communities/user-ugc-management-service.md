@@ -24,13 +24,13 @@ ht-degree: 40%
 >
 >GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
 
-AEM Communities bietet APIs, die standardmäßig zur Verwaltung von Benutzerinhalten und zum Massenmanagement von benutzergenerierten Profilen (UGC) verwendet werden. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzbestimmungen der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
+AEM Communities stellt bereits verfügbare APIs zur Verwaltung von Profilen und Massenverwaltung benutzergenerierter Inhalte (UGC) bereit. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzbestimmungen der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
 
 Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Wenn Sie [Adobe Analytics auf der AEM Communities](analytics.md) -Site konfiguriert haben, werden die erfassten Benutzerdaten an den Adobe Analytics-Server gesendet. Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, sie exportieren und löschen und GDPR einhalten können. Weitere Informationen finden Sie unter Zugriff [senden und Anforderungen](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)löschen.
+>Wenn Sie [Adobe Analytics auf der AEM Communities](analytics.md) -Site konfiguriert haben, werden die erfassten Benutzerdaten an den Adobe Analytics-Server gesendet. Adobe Analytics stellt APIs bereit, mit denen Sie auf Benutzerdaten zugreifen, sie exportieren und löschen und GDPR einhalten können. Weitere Informationen finden Sie unter Zugriff [senden und Anforderungen](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)löschen.
 
 To put these APIs to use, you need to enable the `/services/social/ugcmanagement` endpoint by activating the UserUgcManagement service. To activate this service, install the [sample servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) available on [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Dann drücken Sie den Endpunkt auf der Veröffentlichungsinstanz Ihrer Communities-Site mit den entsprechenden Parametern mithilfe einer HTTP-Anforderung, ähnlich wie im Folgenden:
 
@@ -64,11 +64,11 @@ Um beispielsweise die UGC eines Benutzers mit autorisierbarer ID weston.mccall@d
 
 ### UGC aus Adobe Analytics löschen {#delete-ugc-from-analytics}
 
-Um Benutzerdaten aus dem Adobe Analytics zu löschen, befolgen Sie den GDPR Analytics-Arbeitsablauf. da die API keine Benutzerdaten aus Adobe Analytics löscht.
+Um Benutzerdaten aus dem Adobe Analytics zu löschen, befolgen Sie den Arbeitsablauf für GDPR-Analysen. da die API keine Benutzerdaten aus Adobe Analytics löscht.
 
-Für die von AEM Communities verwendeten Adobe Analytics-Variablenzuordnungen siehe folgende Abbildung:
+Für Adobe Analytics-Variablenzuordnungen, die von AEM Communities verwendet werden, siehe folgende Abbildung:
 
-![Variablenzuordnung für AEM Communities für Adobe Analytics](assets/Analytics-Communities-Mapping.png)
+![Variablenzuordnung AEM Communities für Adobe Analytics](assets/Analytics-Communities-Mapping.png)
 
 ## Benutzerkonto deaktivieren {#disable-a-user-account}
 
