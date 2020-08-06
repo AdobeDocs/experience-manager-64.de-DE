@@ -28,7 +28,7 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 
 >[!CAUTION]
 >
->Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die Berechtigung &quot; **Ändern/Erstellen/Löschen** &quot;auf dem Knoten verfügen, `/content/versionhistory` um die Funktion verwenden zu können.
+>Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die Berechtigung **Ändern/Erstellen/Löschen** auf dem Knoten verfügen, `/content/versionhistory` um die Funktion verwenden zu können.
 >
 >Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/sites-developing/pagediff.md#operation-details).
 
