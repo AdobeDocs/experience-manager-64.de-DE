@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 76%
 
 ---
 
 
 # Dienstbenutzer in AEM{#service-users-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 The main way of getting an administrative session or resource resolver in AEM was using the `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` methods provided by Sling.
 
@@ -67,7 +70,7 @@ Achten Sie außerdem darauf, dass alle neu entwickelten Funktionen diesen Richtl
 
 ## Strenge Zugriffssteuerung {#strict-access-control}
 
-Unabhängig davon, ob Sie die Zugriffssteuerung während der Umstrukturierung von Inhalten oder bei einem neuen Dienstbenutzer anwenden, müssen Sie strengste Zugriffssteuerungslisten wie möglich anwenden. Verwenden Sie alle verfügbaren Funktionen für die Zugriffssteuerung:
+Unabhängig davon, ob Sie Zugriffskontrolle bei der Umstrukturierung von Inhalten oder bei einem neuen Dienstbenutzer anwenden, müssen Sie strengste Zugriffssteuerungslisten anwenden. Verwenden Sie alle verfügbaren Funktionen für die Zugriffssteuerung:
 
 * For example, instead of applying `jcr:read` on `/apps`, only apply it to `/apps/*/components/*/analytics`
 
@@ -217,19 +220,19 @@ Bei der Verarbeitung von Ereignissen oder Aufträgen und in manchen Fällen Work
 
    **Vorteile:** Benutzerfreundlich.
 
-   **** Nachteile: Verwendet immer noch `loginAdministrative()`. Authentifiziert eine Anfrage erneut, die bereits authentifiziert wurde.
+   **Nachteile:** Verwendet immer noch `loginAdministrative()`. Authentifiziert eine Anfrage erneut, die bereits authentifiziert wurde.
 
 1. Erstellen oder erneutes Verwenden eines Dienstbenutzers, der Zugriff auf die Daten hat
 
    **Vorteile:** Entspricht aktuellem Design. Erfordert minimale Änderung.
 
-   **** Nachteile: Benötigt sehr leistungsstarke Dienstbenutzer, um flexibel zu sein, was leicht zu Privilegien-Eskalationen führen kann. Umgeht das Sicherheitsmodell.
+   **Nachteile:** Benötigt sehr leistungsstarke Dienstbenutzer, um flexibel zu sein, was leicht zu Privilegien-Eskalationen führen kann. Umgeht das Sicherheitsmodell.
 
 1. Pass a serialization of the `Subject` in the event payload, and create a `ResourceResolver` based on that subject. Ein Beispiel ist die Verwendung des JAAS `doAsPrivileged` in der `ResourceResolverFactory`.
 
    **Vorteile:** Saubere Implementierung von einem Sicherheitsstandpunkt aus. Diese Methode vermeidet die erneute Authentifizierung und nutzt die ursprünglichen Berechtigungen. Sicherheitsrelevanter Code ist für den Verbraucher des Ereignisses nicht sichtbar.
 
-   **** Nachteile: Muss umgestaltet werden. Die Tatsache, dass sicherheitsrelevanter Code für den Verbraucher nicht sichtbar ist, kann auch zu Problemen führen.
+   **Nachteile:** Muss umgestaltet werden. Die Tatsache, dass sicherheitsrelevanter Code für den Verbraucher nicht sichtbar ist, kann auch zu Problemen führen.
 
 Der dritte Ansatz ist derzeit die bevorzugte Verarbeitungsweise.
 
