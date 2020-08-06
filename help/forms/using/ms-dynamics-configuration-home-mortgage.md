@@ -9,6 +9,9 @@ topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Microsoft® Dynamics 365 ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Interessenten, Chancen und Fällen bietet.
 
@@ -51,7 +54,7 @@ Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stell
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. Tippen Sie auf **Done** (Fertig).
+1. Tippen Sie auf **Fertig**.
 1. Veröffentlichen Sie die bearbeitete Seite.
 
    >[!NOTE]
