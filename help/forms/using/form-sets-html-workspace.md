@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 73%
 
 ---
 
@@ -38,7 +41,7 @@ AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können meh
 
 ## Die Verwendung von Formularsätzen in AEM Forms Workspace {#using-formset-in-nbsp-aem-forms-workspace}
 
-Sobald ein Formularsatz an einen Startpunkt angehängt ist, kann der Startpunkt wie jeder andere Startpunkt aus AEM Forms Workspace aufgerufen werden.
+Sobald ein Formularsatz an einen Startpunkt angehängt ist, kann der Startpunkt wie jeder andere Startpunkt aus dem AEM Forms Workspace aufgerufen werden.
 
 Folgende Vorgänge von Formularsätzen werden von AEM Forms Workspace unterstützt:
 
