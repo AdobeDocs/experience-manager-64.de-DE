@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +41,7 @@ So konfigurieren Sie diese Komponente:
    | Bei Konflikt überschreiben | Wählen Sie **Ja**, um Datenkollisionen zu überschreiben. Standardmäßig ist **Nein** eingestellt. |
    | Bearbeitete löschen | Ist **Ja** eingestellt, werden die verarbeiteten Knoten nach dem Export gelöscht. Der Standardwert lautet **False**. |
    | Beschreibung des Exportvorgangs | Geben Sie eine Beschreibung für den Adobe Classifications-Auftrag ein. |
-   | Benachrichtigungs-E-Mail | Geben Sie eine E-Mail-Adresse für die Benachrichtigung zu Adobe Classifications ein. |
+   | Benachrichtigungs-E-Mail | Geben Sie eine E-Mail-Adresse für die Benachrichtigung zu Adoben-Classifications ein. |
    | Report Suite | Geben Sie die Report Suite ein, für die der Importauftrag ausgeführt werden soll. |
    | Datensatz | Geben Sie die Datensatz-Bezugs-ID ein, für die der Importauftrag ausgeführt werden soll. |
    | Transformator | Wählen Sie aus dem Dropdown-Menü eine Transformator-Implementierung aus. |
@@ -51,13 +54,13 @@ So konfigurieren Sie diese Komponente:
 
 Datensätze werden seitenweise verarbeitet. Adobe Classifications erstellt standardmäßig Seiten mit einem Seitenformat von 1000.
 
-Eine Seite kann maximal 25000 in Adobe Classifications pro Definition groß sein und kann von der Felix-Konsole aus geändert werden. Während des Exports sperrt Adobe Classifications den Quellknoten, um gleichzeitige Änderungen zu vermeiden. Der Knoten wird nach dem Export, bei einem Fehler oder beim Schließen der Sitzung wieder entsperrt.
+Eine Adobe kann maximal 25000 Seiten umfassen, je nach Definition in den Klassifizierungen und kann von der Felix-Konsole aus geändert werden. Während des Exports sperrt Adobe Classifications den Quellknoten, um gleichzeitige Änderungen zu vermeiden. Der Knoten wird nach dem Export, bei einem Fehler oder beim Schließen der Sitzung wieder entsperrt.
 
 So ändern Sie die Seitengröße:
 
 1. Navigate to the OSGI console at **https://&lt;host>:&lt;port>/system/console/configMgr** and select **Adobe AEM Classifications Exporter**.
 
-   ![aa-26](assets/aa-26.png)
+   ![aa-25](assets/aa-26.png)
 
 1. Aktualisieren Sie die **Seitengröße für den Export** nach Bedarf und klicken Sie auf **Speichern**.
 
@@ -69,7 +72,7 @@ So ändern Sie die Seitengröße:
 
 Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format zu konvertieren. For Adobe Classifications, a subinterface `SAINTTransformer<String[]>` implementing the Transformer interface has been provided. This interface is used to restrict the data type to `String[]` which is used by the SAINT API and to have a marker interface to find such services for selection.
 
-In der Standardimplementierung SAINTDefaultTransformer werden die untergeordneten Ressourcen der Exporteurquelle als Datensätze mit Eigenschaftsnamen als Schlüssel und Eigenschaftenwerte als Werte behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Benannte Eigenschaften (mit :) werden nicht berücksichtigt.
+In der Standardimplementierung SAINTDefaultTransformer werden die untergeordneten Ressourcen der Exporteurquelle als Datensätze mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerte als Werte behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Benannte Eigenschaften (mit :) werden nicht berücksichtigt.
 
 *Knotenstruktur:*
 
