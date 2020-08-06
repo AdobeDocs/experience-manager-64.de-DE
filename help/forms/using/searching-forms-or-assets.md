@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +40,7 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 * Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. For example, when you type `geometrixx`, assets with titles `Geometrixx`, `GEOMETRIXX`, and `GeoMetRixx` are displayed in the search results.
 
 * Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Verwenden Sie zum Suchen mit partiellen Zeichenfolgen &amp;ast; Platzhalter. Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
-* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Zum Beispiel `My form` ist nicht dieselbe Suchanfrage wie `My form`.
+* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Beispielsweise `My form` ist nicht dieselbe Abfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. geändert oder veröffentlicht, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.
 
@@ -79,7 +82,7 @@ Sie können beliebig viele Assettypen auswählen. Bei der Suche werden alle ausg
 <table> 
  <tbody>
   <tr>
-   <th>Wahl</th> 
+   <th>Option</th> 
    <th>Beschreibung</th> 
   </tr>
   <tr>
@@ -99,7 +102,7 @@ Sie können beliebig viele Assettypen auswählen. Bei der Suche werden alle ausg
    <td>Durchsuchen Sie alle adaptiven Formulare.</td> 
   </tr>
   <tr>
-   <td>Ressource</td> 
+   <td>Resource</td> 
    <td>Durchsuchen Sie alle Ressourcen.<br /> </td> 
   </tr>
  </tbody>
