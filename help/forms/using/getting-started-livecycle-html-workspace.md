@@ -28,9 +28,9 @@ Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
 ## Navigieren in AEM Forms Workspace {#navigating-html-workspace}
 
-In der Benutzeroberfläche von AEM Forms Workspace werden je nach Prozess und Aufgabe, an der Sie arbeiten, verschiedene Elemente angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
+Je nach dem Prozess und der Aufgabe, an der Sie arbeiten, werden in der Benutzeroberfläche von AEM Forms Workspace verschiedene Elemente angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
 
-Sie können mithilfe einer der folgenden Methoden durch die Hauptbenutzeroberfläche von AEM Forms Workspace navigieren:
+Sie können mithilfe einer der folgenden Methoden durch die AEM Forms Workspace-Hauptbenutzeroberfläche navigieren:
 
 * Klicken Sie auf die Elemente in der oberen Navigationsleiste, um auf den Startprozess, die Aufgabenliste, Voreinstellungen, Verfolgung, Hilfe und die Option zum Abmelden zuzugreifen.
 * Klicken Sie auf die Registerkarte „Prozess starten“, „Aufgaben“ oder „Verfolgung“, um auf die drei Hauptarbeitsbereiche zuzugreifen.
@@ -42,7 +42,7 @@ Sie können mithilfe einer der folgenden Methoden durch die Hauptbenutzeroberfl�
 
 ## Verwenden von AEM Forms Workspace mit einer Bildschirmlesehilfe {#using-html-workspace-with-screen-readers}
 
-AEM Forms Workspace ist eine webbasierte HTML-Anwendung und mit Bildschirmlesehilfen kompatibel. Sie können mithilfe der Tastatur durch die AEM Forms Workspace-Oberfläche navigieren.
+AEM Forms Workspace ist eine webbasierte HTML-Anwendung und mit Bildschirmlesehilfen kompatibel. Sie können über die Tastatur durch die AEM Forms Workspace-Oberfläche navigieren.
 
 Um AEM Forms Workspace mit einer Bildschirmlesehilfe zu verwenden, beachten Sie folgende Punkte:
 
@@ -52,7 +52,7 @@ Um AEM Forms Workspace mit einer Bildschirmlesehilfe zu verwenden, beachten Sie 
 
 ## Navigieren in AEM Forms Workspace über die Tastatur {#navigating-html-workspace-using-a-keyboard}
 
-Wenn Sie in AEM Forms Workspace mithilfe einer Tastatur navigieren, entspricht die Navigation den Konventionen für die Barrierefreiheit von HTML. Unter bestimmten Umständen entspricht die Aktivierreihenfolge von Schaltflächen nicht den herkömmlichen Konventionen. Die folgenden Tipps erleichtern Ihnen die Navigation in der Benutzeroberfläche:
+Wenn Sie mit einer Tastatur im AEM Forms Workspace navigieren, entspricht die Navigation den Konventionen für die Barrierefreiheit von HTML. Unter bestimmten Umständen entspricht die Aktivierreihenfolge von Schaltflächen nicht den herkömmlichen Konventionen. Die folgenden Tipps erleichtern Ihnen die Navigation in der Benutzeroberfläche:
 
 * Wenn Sie Probleme haben, die Symbolleisten oben im Browser durch Drücken der Tabulatortaste zu verlassen, drücken Sie Strg+Tabulatortaste, um in den Inhalt des Browserfensters zu gelangen.
 * Die AEM Forms Workspace-Hilfe wird in einem separaten Browserfenster geöffnet. Verschieben Sie nach dem Anzeigen der Hilfe den Fokus wieder in das Browserfenster, das AEM Forms Workspace enthält. Das Hilfemenü behält den Fokus, wenn der Fokus zurückgegeben wird.
