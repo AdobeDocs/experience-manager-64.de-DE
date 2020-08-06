@@ -58,7 +58,7 @@ AEM bietet eine intuitive Benutzeroberfläche, über die ein Workflow-Modell unt
 
 ### Modell für einen Workflow zur Genehmigung und Prüfung erstellen {#create-a-model-for-an-approval-and-review-workflow}
 
-Genehmigungs- und Prüfungs-Workflow sind für Aufgaben vorgesehen, bei denen Entscheidungen von Personen getroffen werden müssen. Im folgenden Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem Front-End-Bankmitarbeiter ausgefüllt werden soll. Sobald der Antrag ausgefüllt ist, wird er zur Genehmigung übermittelt. Später wird der genehmigte Antrag mit Adobe Sign zur elektronischen Signatur an den Antragsteller gesendet.
+Genehmigungs- und Prüfungs-Workflow sind für Aufgaben vorgesehen, bei denen Entscheidungen von Personen getroffen werden müssen. Im folgenden Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem Front-End-Bankmitarbeiter ausgefüllt werden soll. Sobald der Antrag ausgefüllt ist, wird er zur Genehmigung übermittelt. Später wird der genehmigte Antrag mit Adobe Sign an den Antragsteller für elektronische Signaturen gesendet.
 
 Das Beispiel ist als Paket verfügbar und ist unten angehängt. Importieren und installieren Sie das Beispiel mithilfe von Package Manager. Sie können darüber hinaus die folgenden Schritte ausführen, um das Workflow-Modell für den Antrag manuell zu erstellen:
 
@@ -74,7 +74,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
    * Die Schritte für Flussstart und Flussende. Diese Schritte geben den Anfang und das Ende des Workflows an. Diese Schritte sind obligatorisch und können nicht bearbeitet oder entfernt werden.
    * Ein Beispiel für einen Teilnehmerschritt mit dem Namen Schritt 1. Dieser Schritt ist so konfiguriert, dass er dem Admin-Benutzer ein Arbeitselement zuordnet. Entfernen Sie diesen Schritt.
 
-1. Aktivieren Sie E-Mail-Benachrichtigungen. Sie können den formularzentrierten Arbeitsablauf auf OSGi konfigurieren, um E-Mail-Benachrichtigungen an Benutzer oder Bevollmächtigte zu senden. Führen Sie die folgenden Konfigurationen durch, um E-Mail-Benachrichtigungen zu aktivieren:
+1. Aktivieren Sie E-Mail-Benachrichtigungen. Sie können den Forms-zentrierten Arbeitsablauf auf OSGi konfigurieren, um E-Mail-Benachrichtigungen an Benutzer oder Bevollmächtigte zu senden. Führen Sie die folgenden Konfigurationen durch, um E-Mail-Benachrichtigungen zu aktivieren:
 
    1. Wechseln Sie zum AEM Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
    1. Öffnen Sie die Konfiguration des **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -126,7 +126,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Fügen Sie weitere Workflow-Schritte hinzu, um die Geschäftslogik zu erstellen.
 
-   Fügen Sie für das Hypothekenbeispiel in Verzweigung 1 einen Schritt zum Generieren des Datensatzdokuments, zwei Schritte zum Zuweisen einer Aufgabe und einen Schritt zum Signieren des Dokuments hinzu wie in der Abbildung unten gezeigt. Ein Schritt „Aufgabe zuweisen“ dient zum Anzeigen und Senden **zu unterzeichnender Darlehensdokumente an den Antragsteller** und der zweite Schritt „Aufgabe zuweisen“ dient zum **Anzeigen der unterzeichneten Dokumente**. Fügen Sie auch Verzweigung 2 einen Schritt „Aufgabe zuweisen“ hinzu. Es wird aktiviert, wenn ein Benutzer in AEM Inbox auf Ablehnen tippt.
+   Fügen Sie für das Hypothekenbeispiel in Verzweigung 1 einen Schritt zum Generieren des Datensatzdokuments, zwei Schritte zum Zuweisen einer Aufgabe und einen Schritt zum Signieren des Dokuments hinzu wie in der Abbildung unten gezeigt. Ein Schritt „Aufgabe zuweisen“ dient zum Anzeigen und Senden **zu unterzeichnender Darlehensdokumente an den Antragsteller** und der zweite Schritt „Aufgabe zuweisen“ dient zum **Anzeigen der unterzeichneten Dokumente**. Fügen Sie auch Verzweigung 2 einen Schritt „Aufgabe zuweisen“ hinzu. Es wird aktiviert, wenn ein Benutzer in AEM Posteingang auf Ablehnen tippt.
 
    Um den vollständige Satz der Werte in allen Feldern für die Schritte „Aufgabe zuweisen“ sowie die Schritte für das Datensatzdokument und zum Unterzeichnen des Dokuments zu erhalten, die für den Beispielhypothekenantrag konfiguriert sind, importieren Sie das Beispielpaket, das am Anfang dieses Abschnitts zur Verfügung steht.
 
@@ -238,7 +238,7 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
    <td>Geben Sie den Namen für den überwachten Ordner ein. In diesem Feld muss ein alphanumerischer Wert eingegeben werden.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Pfad       </span></td> 
+   <td><span class="uicontrol">Pfad         </span></td> 
    <td>Geben Sie den physischen Speicherort des überwachten Ordners ein. Verwenden Sie in einer Clusterumgebung einen freigegebenen Netzwerkordner, auf den über einen AEM-Clusterknoten zugegriffen werden kann.</td> 
   </tr> 
   <tr> 
@@ -266,7 +266,7 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
 
 ### Senden einer interaktiven Kommunikation oder eines Briefes {#letter}
 
-Sie können einen formularzentrierten Workflow auf OSGi beim Senden einer interaktiven Kommunikation oder eines Briefs verknüpfen und ausführen. Im Correspondence Management werden Workflows zur Nachbearbeitung von interaktiven Kommunikationen und Briefen verwendet. Dazu gehören beispielsweise Versenden per E-Mail, Drucken, Faxen und Archivieren der endgültigen Briefe. Detaillierte Schritte finden Sie unter [Nachbearbeitung von interaktiver Kommunikation und Briefen](/help/forms/using/submit-letter-topostprocess.md).
+Sie können einen Forms-zentrierten Arbeitsablauf auf OSGi beim Senden einer interaktiven Kommunikation oder eines Briefs verknüpfen und ausführen. Im Correspondence Management werden Workflows zur Nachbearbeitung von interaktiven Kommunikationen und Briefen verwendet. Dazu gehören beispielsweise Versenden per E-Mail, Drucken, Faxen und Archivieren der endgültigen Briefe. Detaillierte Schritte finden Sie unter [Nachbearbeitung von interaktiver Kommunikation und Briefen](/help/forms/using/submit-letter-topostprocess.md).
 
 ## Zusätzliche Konfigurationen {#additional-configurations}
 
