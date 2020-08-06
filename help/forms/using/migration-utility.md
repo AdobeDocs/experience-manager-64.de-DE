@@ -12,6 +12,9 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1872'
+ht-degree: 73%
 
 ---
 
@@ -66,7 +69,7 @@ Für Correspondence Management-Assets:
 
 ### Ausführen des Migrationsdienstprogramms{#runningmigrationutility} 
 
-Führen Sie die Migration aus, bevor Sie Änderungen an den Assets vornehmen oder Assets erstellen. Wir empfehlen, das Dienstprogramm erst dann auszuführen, wenn Änderungen an den Assets vorgenommen wurden oder Assets erstellt wurden. Stellen Sie sicher, dass die Benutzeroberfläche von Correspondence Management oder adaptiven Formularen Assets nicht geöffnet ist, während der Migrationsprozess ausgeführt wird.
+Führen Sie die Migration aus, bevor Sie Änderungen an den Assets vornehmen oder Assets erstellen. Wir empfehlen, das Dienstprogramm erst dann auszuführen, wenn Änderungen an den Assets vorgenommen wurden oder Assets erstellt wurden. Stellen Sie sicher, dass die Benutzeroberfläche von Correspondence Management oder Adaptive Forms Assets nicht geöffnet ist, während der Migrationsprozess ausgeführt wird.
 
 Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protokoll unter dem folgenden Pfad und mit dem folgenden Namen erstellt: `\[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log`. Dieses Protokoll enthält aktualisierte Correspondence Management- und Adaptive Forms-Migrationsinformationen, beispielsweise zum Verschieben von Assets.
 
@@ -96,18 +99,20 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
       * Designs
       * Briefe
       * Datenwörterbücher
+
    >[!NOTE]
    >
    >Während der Asset-Migration treten möglicherweise Warnungen ähnlich der folgenden auf: „Konflikt aufgetreten bei …“. Solche Meldungen weisen darauf hin, dass Regeln für einige Komponenten in adaptiven Formularen nicht migriert werden konnten. Beispiel: Wenn bei einer Komponente ein Ereignis auftritt, das sowohl Regeln als auch Skripten umfasst und wenn die Regeln nach einem Skript angewendet werden, wird keine der Regeln für die Komponente migriert. Allerdings können diese Regeln migriert werden, indem der Regeleditor für das Authoring von adaptiven Formularen geöffnet wird.
    >
    >Diese Komponenten können migriert werden, indem sie im Regel-Editor im Editor für adaptive Formulare geöffnet werden.
    >
-   >* Um Regeln und Skripten (die bei einer Aktualisierung von 6.3 nicht erforderlich sind) in benutzerdefinierten Komponenten zu migrieren, tippen Sie auf Migration zu benutzerdefinierten adaptiven Formularen und dann im nächsten Bildschirm auf Migration starten. Die folgenden Elemente werden migriert:
+   >* Zum Migrieren von Regeln und Skripten (bei Aktualisierung von 6.3 nicht erforderlich) in benutzerdefinierten Komponenten tippen Sie auf Migration von benutzerdefinierten adaptiven Forms-Komponenten und anschließend auf Beginn Migration. Die folgenden Elemente werden migriert:
       >
       >  
    * Regeln und Skripten, erstellt mithilfe des Regel-Editors (6.1 FP1 und höher)
    >  * Skripte, erstellt mithilfe der Skript-Registerkarte in der Benutzeroberfläche von Version 6.1 oder niedriger
-   >* Um Vorlagen zu migrieren (bei Aktualisierung von 6.3 nicht erforderlich), tippen Sie auf Migration zu adaptiven Formularen und klicken Sie im nächsten Bildschirm auf Migration starten. Die folgenden Elemente werden migriert:
+   >* Um Vorlagen zu migrieren (bei Aktualisierung von 6.3 nicht erforderlich), tippen Sie auf Adaptive Forms-Vorlagenmigration und dann im nächsten Bildschirm auf Beginn Migration. Die folgenden Elemente werden migriert:
+
       >
       >  
    * Alte Vorlagen - die Vorlagen für adaptive Formulare, die unter /apps mit AEM 6.1 Forms oder früher erstellt wurden. Dazu gehören die Skripten, die in den Vorlagenkomponenten definiert wurden.
@@ -122,6 +127,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
       * Die adaptiven Formularvorlagen, die unter /Apps oder /Conf mit dem AEM-Vorlageneditor erstellt wurden.
    * Migrieren Sie die AEM Forms Cloud-Konfigurationsdienste, um das neue kontextbezogene Cloud-Dienst-Paradigma zu nutzen, das die Benutzeroberfläche mit Touch-Funktion (unter/conf) umfasst. Wenn Sie AEM Forms Cloud-Konfigurationsdienste migrieren, werden die Cloud-Dienste in /etc nach /conf verschoben. Wenn Sie keine Anpassungen an Cloud-Services vornehmen, die von den alten Pfaden (/etc) abhängen, sollten Sie das Migrationsdienstprogramm unmittelbar nach der Aktualisierung auf 6.4 ausführen und die Touch-Cloud-Konfigurationsschnittstelle für weitere Arbeiten verwenden. Wenn Sie über Anpassungen für die bereits vorhandene Cloud-Dienste verfügen, setzen Sie die klassische Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfaden (/conf) abgeschlossen sind, und führen Sie das Migrationshilfsprogramm aus.
+
    To migrate **AEM Forms cloud services**, which include the following, tap AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package), tap AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, tap **Start Migration**:
 
    * Cloud-Dienste für Formulardatenmodell
@@ -140,15 +146,18 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
       * Quellpfad: /etc/cloudservices/typekit
       * Zielpfad: /conf/global/settings/cloudconfigs/typekit
+
    Im Browserfenster wird während der Migration Folgendes ausgeführt: 
 
    * Wenn die Assets aktualisiert sind: Assets wurden erfolgreich aktualisiert.
    * Nachdem die Migration abgeschlossen ist: Migration für Elemente wurde abgeschlossen.
+
    Wenn ausgeführt, geht das Migrationsdienstprogramm wie folgt vor: 
 
    * **Fügt den Elementen die Tags hinzu**: Fügt das Tag „Correspondence Management: Migrierte Assets“ / „Adaptive Forms : Migrierte Assets“. den migrierten Assets hinzu, damit Benutzer migrierte Inhalte ermitteln können. Wenn Sie das Migrationsdienstprogramm ausführen, werden alle vorhandenen Assets im System als migriert markiert.
    * **Erstellt Tags**: Die Kategorien und Unterkategorien, die im Vorgängersystem vorhanden sind, werden als Tags erstellt, und dann werden diese Tags den entsprechenden Correspondence Management-Assets in AEM zugeordnet. So werden beispielsweise eine Kategorie (Schadensmeldungen) sowie eine Unterkategorie (Schadensmeldungen) einer Briefvorlage als Tags generiert.
    * **Verschiebt Layouts und Layoutfragmente auf die AEM 6.4 Forms-Benutzeroberfläche**: Wenn Sie von 6.2 auf 6.4 aktualisieren, werden die Layout-Vorlagen und Layoutfragmente als Formulare auf der AEM Forms 6.4-Benutzeroberfläche eingefügt.
+
    >[!NOTE]
    >
    >Wenn Sie von 6.2 auf 6.4 aktualisieren, können neue Ordner für Correspondence Management (einschließlich jene für Ihre Assets) in der Benutzeroberfläche angezeigt werden. Möglicherweise müssen Sie diese Ordner überprüfen, um Ihre Assets zu finden.
@@ -159,7 +168,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende Systemverwaltungsaufgaben durch: 
 
-1. Stellen Sie sicher, dass die XFA-Version von Layouts und Fragmentlayouts 3.3 oder höher ist. Wenn Sie Layouts und Fragmentlayouts einer älteren Version verwenden, kann es zu Problemen beim Rendern des Briefs kommen. Um ein älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
+1. Stellen Sie sicher, dass die XFA-Version von Layouts und Fragment-Layouts 3.3 oder höher ist. Wenn Sie Layouts und Fragmentlayouts einer älteren Version verwenden, kann es zu Problemen beim Rendern des Briefs kommen. Um ein älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
 
    1. [Herunterladen von XFA- als ZIP-Datei](/help/forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) aus der Forms-Benutzeroberfläche.
    1. Extrahieren Sie die Datei. 
