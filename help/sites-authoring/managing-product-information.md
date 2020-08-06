@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
 source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 68%
 
 ---
 
 
 # Creative Project und PIM-Integration{#creative-project-and-pim-integration}
 
-Wenn Sie Marketingexperten oder Kreativprofis sind, können Sie mit den Werkzeugen von Creative Project in Adobe Experience Manager (AEM) die eCommerce-bezogene Produktfotografie und damit verbundene kreative Prozesse in Ihrem Unternehmen verwalten.
+Wenn Sie Marketingexperten oder Kreativprofis sind, können Sie mit den Werkzeugen des Creative Project in Adobe Experience Manager (AEM) die eCommerce-bezogene Produktfotografie und damit verbundene kreative Prozesse in Ihrem Unternehmen verwalten.
 
 Insbesondere können Sie Creative Project zur Optimierung der folgenden Aufgaben in Ihrem Fotoshooting-Workflow verwenden:
 
@@ -57,7 +60,7 @@ Die Vorlage beinhaltet die folgenden Workflows:
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
-1. Tippen/klicken Sie auf **Erstellen**. Eine Bestätigungsmeldung informiert Sie, dass das Projekt erstellt wurde.
+1. Tippen oder klicken Sie auf **Erstellen**. Eine Bestätigungsmeldung informiert Sie, dass das Projekt erstellt wurde.
 1. Tap/click **Done** to return to the **Projects** console. Alternatively, tap/click **Open** to view the assets within the photoshoot project.
 
 ## Beginn der Arbeit an einem Projekt für Produkt-Fotoshooting {#starting-work-in-a-product-photo-shoot-project}
@@ -73,7 +76,7 @@ Im Lieferumfang eines Produkt-Fotoshooting-Projekts sind folgende Workflows enth
 
 Verwenden Sie den Workflow „Produkt-Fotoshooting (Commerce-Integration)“ zur Zuordnung von Bild-Assets zu den Produkten in AEM. Dieser Workflow nutzt Commerce-Integration zur Verknüpfung der bestätigten Bilder mit den vorhandenen Produktdaten unter dem Speicherort */etc/commerce*.
 
-Der Arbeitsablauf für das Produkt-Foto-Shoot (Commerce-Integration) umfasst die folgenden Aufgaben:
+Der Arbeitsablauf für Produktfotos (Commerce-Integration) umfasst die folgenden Aufgaben:
 
 * Aufnahmenliste erstellen
 * Fotoshooting hochladen
@@ -99,7 +102,7 @@ Beide Workflows umfassen Schritte zur Verknüpfung von Produkten mit ihren best�
 * Starten eines Projekt-Workflows: Erläutert, wie ein Produkt-Fotoshooting gestartet wird
 * Workflow-Aufgabendetails: Stellt Details von Aufgaben bereit, die im Workflow zur Verfügung stehen
 
-## Verfolgen des Projektfortschritts {#tracking-project-progress}
+## Verfolgen des Projektfortschritts   {#tracking-project-progress}
 
 Sie können den Fortschritt eines Projekts verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben im Projekt überwachen.
 
@@ -109,12 +112,12 @@ Verwenden Sie Folgendes, um den Fortschritt eines Projekts zu überwachen:
 
 * **Aufgabenliste**
 
-Die Aufgabenkarte zeigt den Gesamtfortschritt des Projekts an. Sie wird nur dann auf der Seite „Projektdetails“ angezeigt, wenn das Projekt zugehörige Aufgaben aufweist. Die Aufgabenkarte zeigt den aktuellen Abschlussstatus des Projekts auf der Basis der abgeschlossenen Aufgaben an. Zukünftige Aufgaben werden nicht berücksichtigt.
+Die Projektkarte zeigt den Gesamtfortschritt des Aufgabe-Projekts an. Sie wird nur dann auf der Seite „Projektdetails“ angezeigt, wenn das Projekt zugehörige Aufgaben aufweist. Die Aufgabenkarte zeigt den aktuellen Abschlussstatus des Projekts auf der Basis der abgeschlossenen Aufgaben an. Zukünftige Aufgaben werden nicht berücksichtigt.
 
 Die Aufgabenkarte stellt die folgenden Detailinformationen bereit:
 
 * Prozentsatz der aktiven Aufgaben
-* Prozentsatz der abgeschlossenen Aufgaben 
+* Prozentsatz der abgeschlossenen Aufgaben
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -153,6 +156,7 @@ So konfigurieren Sie den Workflow **Produkt-Fotoshooting**:
    * Produkt-Fotoshooting retuschieren
    * Fotoshooting-Bewertung
    * In Produktion verschieben
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 In diesem Abschnitt wird beschrieben, wie das Produktinformationsmanagement in Ihr Creative-Projekt integriert wird.
@@ -219,6 +223,7 @@ Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die 
    * Der Produkthierarchie entsprechende Assets werden in einem Ordner mit demselben Namen wie der Titel des Workflow erstellt.
    * Die Metadaten für die Assets werden in der Konsole „Assets“ bearbeitbar, sogar bevor der Fotograf die Bilder zur Verfügung stellt.
    * Es wird ein Fotoshooting-Ordner erstellt, in dem die vom Fotografen bereitgestellten Bilder gespeichert werden. Dieser Ordner enthält Unterordner für jeden Produkteintrag in der Aufnahmenliste.
+
    Für den Workflow „Produkt-Fotoshooting“ (ohne Commerce-Integration) ist „Aufnahmenliste hochladen“ die erste Aufgabe. Tippen/klicken Sie auf **Aufnahmenliste hochladen**, um eine Datei mit dem Namen **shotlist.csv** hochzuladen. Die CSV-Datei sollte die Produkt-ID enthalten. Die anderen Felder sind optional. Sie können sie für die Zuordnung von Assets zu Produkten verwenden.
 
 ### Aufnahmenlistenaufgabe hochladen {#upload-shot-list-task}
@@ -245,7 +250,7 @@ Ein Produkt kann zu einer bestimmten Kategorie gehören. Die Produktkategorie ka
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
 1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. Der Workflow erkennt diese Datei als eine Quelle, die zum Extrahieren von Produktdaten für die nächste Aufgabe verwendet werden kann.
-1. Laden Sie eine CSV-Datei hoch, die Produktinformationen im entsprechenden Format enthält. Der Link **Hochgeladene Assets anzeigen **wird nach dem Hochladen der CSV-Datei unter der Karte angezeigt.
+1. Laden Sie eine CSV-Datei hoch, die Produktinformationen im entsprechenden Format enthält. Der Link **Ansicht Hochgeladene Assets **wird nach dem Hochladen der CSV-Datei unter der Karte angezeigt.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -316,7 +321,7 @@ Mithilfe der Assets-Benutzeroberfläche können Sie zu den Projekt-Assets navigi
 
 Klicken Sie auf die nächste Ebene, um Produkte entsprechend Ihrer Produktdatenhierarchie anzuzeigen.
 
-Creative Project verbindet bestätigte Assets mit dem referenzierten Produkt. Die Asset-Metadaten werden mit der Produktreferenz und den grundlegenden Informationen auf der Registerkarte **Produktdaten **unter den Asset-Eigenschaften aktualisiert, die im Abschnitt AEM Asset-Metadaten angezeigt werden.
+Creative Project verbindet bestätigte Assets mit dem referenzierten Produkt. Die Asset-Metadaten werden mit der Produktreferenz und den grundlegenden Informationen auf der Registerkarte **Produktdaten **unter den Asset-Eigenschaften aktualisiert, die im Abschnitt &quot;Asset-Metadaten&quot;AEM angezeigt werden.
 
 >[!NOTE]
 Im Workflow „Produkt-Fotoshooting“ (ohne Commerce-Integration) sind die bestätigten Bilder mit keinen Produkten verbunden.
@@ -363,7 +368,7 @@ Sie können die Workflows für Projekt-Fotoshootings je nach Anforderung anpasse
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Geben Sie auf der Registerkarte **Routing** die Aktionen für die Aufgabe an. Um mehrere Aktionen hinzuzufügen, tippen/klicken Sie auf den Link **Element hinzufügen*.
+1. Geben Sie auf der Registerkarte **Routing** die Aktionen für die Aufgabe an. Um mehrere Aktionen hinzuzufügen, tippen/klicken Sie auf den Link **Hinzufügen Element **Verknüpfung.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
