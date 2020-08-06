@@ -11,6 +11,9 @@ topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 83%
 
 ---
 
@@ -54,6 +57,7 @@ The actual migration is performed using the standard AEM quickstart jar file, ex
 >Wenn Sie die Migration von TarMK-Repository-Inhalten mit der CRX2Oak-Schnellstarterweiterung durchführen, können Sie den Betriebsmodus **samplecontent** entfernen, indem Sie das Folgende zu der Migrations-Befehlszeile hinzufügen:
 >
 >* `--promote-runmode nosamplecontent`
+
 >
 
 
@@ -71,7 +75,7 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
   <tr> 
    <td><strong>Quell-Repository </strong></td> 
    <td><strong>Ziel-Repository </strong></td> 
-   <td><strong>Profile</strong></td> 
+   <td><strong>Profil</strong></td> 
    <td><strong>Zusätzliche Flags</strong><br /> </td> 
   </tr> 
   <tr> 
@@ -179,7 +183,7 @@ Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht g
    ps -ef | grep java
    ```
 
-1. Suchen Sie nach dem AEM-Prozess. Es sieht ungefähr so aus:
+1. Suchen Sie nach dem AEM-Prozess. Es sieht in etwa so aus:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
