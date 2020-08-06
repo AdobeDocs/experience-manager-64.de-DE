@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +45,7 @@ Meistens besteht die Nutzlast aus einem JCR-Knoten im Repository (beispielsweise
 
 Einige Workflow-Prozesse akzeptieren Argumente, die der Administrator beim Einrichten des Workflow-Schritts angibt.
 
-Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Beispielsweise zeigt Folgendes an, dass die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren besteht, wobei jedes Paar aus einem Namen (der eine Zeichenfolge ist) und einem Wert besteht, der durch einen Doppelpunkt voneinander getrennt ist:
+Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Beispielsweise zeigt Folgendes an, dass die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren besteht, wobei jedes Paar aus einem Dublette-Doppelpunkt (also einer Zeichenfolge) und einem Wert besteht:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -152,7 +155,7 @@ Die folgenden Prozesse führen einfache Aufgaben durch oder dienen als Beispiel.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
@@ -220,9 +223,9 @@ Beispiel: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 Sperrt die Nutzlast des Workflows.
 
-* **** Java-Klasse: `com.day.cq.workflow.impl.process.LockProcess`
+* **Java-Klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** Nutzlast: JCR_PATH und JCR_UUID
+* **Nutzlast:** JCR_PATH und JCR_UUID
 * **Argumente:** Keine
 * **Zeitüberschreitung:** Ignoriert
 
@@ -235,9 +238,9 @@ Unter folgenden Bedingungen ist der Schritt nicht wirksam:
 
 Entsperrt die Nutzlast des Workflows.
 
-* **** Java-Klasse: `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Java-Klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** Nutzlast: JCR_PATH und JCR_UUID
+* **Nutzlast:** JCR_PATH und JCR_UUID
 * **Argumente:** Keine
 * **Zeitüberschreitung:** Ignoriert
 
