@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 66%
 
 ---
 
@@ -27,7 +30,7 @@ So konfigurieren Sie den Referrer-Filterdienst:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Melden Sie sich als admin an.
 * In the **Configurations** menu, select: *Apache Sling Referrer Filter*
-* Markieren Sie das Feld Leeres Feld zulassen, um leere/fehlende Referrer-Kopfzeilen zuzulassen.
+* Markieren Sie das Feld Leeres Feld zulassen, um leere/fehlende Werber-Kopfzeilen zuzulassen.
 * Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
