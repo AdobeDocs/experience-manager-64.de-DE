@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 66%
 
 ---
 
@@ -133,8 +136,7 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 
 Gehen Sie zum Erstellen eines benutzerdefinierten mobilen Emulators wie folgt vor:
 
-1. Erstellen Sie unten `/apps/myapp/components/emulators` die Komponente `myemulator` (Knotentyp: 
-     `cq:Component`).
+1. Erstellen Sie unten `/apps/myapp/components/emulators` die Komponente `myemulator` (Knotentyp: `cq:Component`).
 
 1. Set the `sling:resourceSuperType` property to `/libs/wcm/mobile/components/emulators/base`
 
@@ -151,5 +153,6 @@ Gehen Sie zum Erstellen eines benutzerdefinierten mobilen Emulators wie folgt vo
    * Name = `canRotate`, Typ = `Boolean`, Wert = `true`: , um die Rotationsfunktion einzuschließen.
 
    * Name = `touchScrolling`, Type = `Boolean`, Value = `true`: to include the touch scrolling functionality.
+
    Sie können weitere Funktionen hinzufügen, indem Sie eigene Plug-ins definieren.
 
