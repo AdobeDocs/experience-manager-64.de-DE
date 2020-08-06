@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 59%
 
 ---
 
@@ -37,7 +40,7 @@ Sie sollten alles im Repository speichern, anstatt sich auf separate Datenquelle
 
 ### Anwenden des Designgrundsatzes „Content Model First“ {#use-the-content-model-first-design-principle}
 
-Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Auf diese Weise können Sie sicherstellen, dass Ihre Implementierung mit den standardmäßigen Zugriffssteuerungsmechanismen gut funktioniert und dass Sie unnötige CRUD-artige Servlets vermeiden.
+Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Auf diese Weise können Sie sicherstellen, dass Ihre Implementierung problemlos mit den standardmäßigen Zugriffskontrollen funktioniert, und vermeiden, dass unnötige Servlets im CRUD-Stil generiert werden.
 
 ### RESTful statt Panik {#be-restful}
 
@@ -49,7 +52,7 @@ Knotentypen setzen auf einer niedrigen Ebene der Infrastrukturschicht an und die
 
 ### Einhalten Sie Namenskonventionen im JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Codebasis erhöht, die Fehler-Inzidenzrate gesenkt und der Arbeitsprozess der beteiligten Entwickler beschleunigt. Die folgenden Konventionen werden von Adobe bei der Entwicklung von AEM verwendet:
+Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Codebasis erhöht, die Fehler-Inzidenzrate gesenkt und der Arbeitsprozess der beteiligten Entwickler beschleunigt. Die folgenden Übereinkommen werden von der Adobe bei der Entwicklung von AEM verwendet:
 
 * Knotennamen
 
