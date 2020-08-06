@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Das Rendering von adaptiven Vorlagen bietet eine Möglichkeit, eine Seite mit Variationen zu verwalten. Ursprünglich sollte diese Funktion verschiedene HTML-Ausgaben für mobile Geräte bereitstellen (z. B. für Feature- und für Smartphones). Sie ist auch dann nützlich, wenn Erlebnisse für verschiedene Geräte bereitgestellt werden sollen, die unterschiedliche Markup- oder HTML-Ausgaben erfordern.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Vorlagen werden im Allgemeinen auf einem responsiven Raster aufgebaut. Seiten, die basierend auf diesen Vorlagen erstellt wurden, sind vollständig responsiv und passen sich automatisch an das Ansichtsfenster des Client-Geräts an. Über die Emulator-Symbolleiste im Seiten-Editor können Autoren Layouts für bestimmte Geräte festlegen.
 
