@@ -8,21 +8,24 @@ contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 2%
 
 ---
 
 
 # What&#39;s New in AEM 6.4 Communities {#what-s-new-in-aem-communities}
 
-AEM Communities bietet Unternehmen ein Framework zur Zusammenarbeit zwischen ihren Partnern, Kunden und Mitarbeitern. Es bietet soziale Möglichkeiten zur Website-Struktur und hilft Unternehmen, sich mit ihren Interessenvertretern zu beschäftigen und ihnen Wissen zu vermitteln, um ihren Markenwert auf ihre Weise zu verbessern.
+AEM Communities Angebots bietet Unternehmen einen Rahmen für die Zusammenarbeit zwischen ihren Partnern, Kunden und Mitarbeitern. Es bietet soziale Möglichkeiten zur Website-Struktur und hilft Unternehmen, sich mit ihren Interessenvertretern zu beschäftigen und ihnen Wissen zu vermitteln, um ihren Markenwert auf ihre Weise zu verbessern.
 
-AEM 6.4 Communities bietet Funktionen, um die Benutzererfahrung in der Community zu verbessern und die laufenden Aufgaben von Administratoren, Moderatoren und Managern zu erleichtern.
+AEM 6.4 Communities bietet Funktionen, um die Benutzererfahrung in der Community zu verbessern und die Aufgaben von Administratoren, Moderatoren und Managern in der Community zu erleichtern.
 
-Lesen Sie weitere Informationen, um schnell neue Funktionen und Verbesserungen vorzustellen. Also, see AEM 6.4 Communities [release notes](../release-notes/communities-release-notes.md). Die Dokumentation zu AEM 6.4 Communities finden Sie im [AEM 6.4 Communities-Benutzerhandbuch](home.md).
+Lesen Sie mehr, um sich schnell mit neuen Funktionen und Verbesserungen vertraut zu machen. Also, see AEM 6.4 Communities [release notes](../release-notes/communities-release-notes.md). Die Dokumentation zu AEM 6.4 Communities finden Sie im [AEM 6.4 Communities Benutzerhandbuch](home.md).
 
 ## Verwalten von Untergemeinschaften oder Community-Gruppen {#managing-sub-communities-or-community-groups}
 
-Mit AEM Communities können Community-Administratoren Gruppen und Untergruppen innerhalb der Communities-Site mithilfe vordefinierter Vorlagen in der Autorenumgebung erstellen. Diese Gruppen dienen als Untergruppen, die viele Konfigurationen übernehmen können, wie Themen und Stile von der übergeordneten Site. Diese Gruppen können jedoch von der übergeordneten Site abweichen, beispielsweise mit einem anderen Satz von Gruppenmoderatoren, oder die Sicherheitsstufe variieren. Diese Gruppen funktionieren als unabhängige, vollwertige Mini-Communities, die durch die folgenden Erweiterungen weiter gestärkt werden.
+AEM Communities ermöglicht es Community-Administratoren, Gruppen und Untergruppen innerhalb der Communities-Site mithilfe vordefinierter Vorlagen in der Authoring-Umgebung zu erstellen. Diese Gruppen dienen als Untergruppen, die viele Konfigurationen übernehmen können, z. B. Themen und Stile von der übergeordneten Site. Diese Gruppen können jedoch von der übergeordneten Site abweichen, beispielsweise mit einem anderen Satz von Gruppenmoderatoren, oder die Sicherheitsstufe variieren. Diese Gruppen fungieren als unabhängige, vollwertige Mini-Communities, die durch die folgenden Erweiterungen weiter gestärkt werden.
 
 ### Erstellen mehrsprachiger Gruppen in einem einzigen Schritt{#create-multi-locale-groups-in-single-step} 
 
@@ -34,7 +37,7 @@ Um solche Gruppen zu erstellen, können die Benutzer über die Site-Konsole einf
 
 ### Community-Gruppen aus der Gruppenkonsole löschen {#delete-community-groups-from-groups-console}
 
-AEM 6.4 Communities stellt das Symbol &quot;Gruppe löschen&quot;für die vorhandenen Community-Gruppen in der Community-Gruppensammlung in der Community-Sites-Konsole bereit. Dies ermöglicht das Löschen[ von ](groups.md#deleting-the-group)Gruppen mit nur einem Klick sowie das Löschen aller Elemente, die mit der Gruppe verbunden sind (z. B. Inhalte und Benutzermitgliedschaften).
+AEM 6.4 Communities stellt das Symbol &quot;Gruppe löschen&quot;für die vorhandenen Community-Gruppen in der Community-Gruppensammlung in der Community-Sites-Konsole bereit. Dies ermöglicht das Löschen [von](groups.md#deleting-the-group) Gruppen mit nur einem Klick sowie das Löschen aller Elemente, die mit der Gruppe verbunden sind (z. B. Inhalte und Benutzermitgliedschaften).
 
 ![deletegrp](assets/deletegrp.png)
 
@@ -46,7 +49,7 @@ Lerninhalte können jetzt für eine bestimmte Gruppe von zielgerichteten Communi
 
 ## Moderieren benutzergenerierter Inhalte {#moderating-user-generated-content}
 
-AEM 6.4 Communities bietet nur wenige Verbesserungen bei der Moderation, die entscheidend zur Erleichterung des täglichen Lebens von Moderatoren in der Community beitragen.
+AEM 6.4 Communities Angebote zeigen nur wenige Verbesserungen in der Moderation, die das tägliche Leben der Moderatoren in der Community erleichtern.
 
 ### Automatische Spamerkennung{#automatic-spam-detection} 
 
@@ -68,9 +71,9 @@ Bei Auswahl des Status &quot;Beantwortet&quot;sind alle beantworteten Fragen fü
 
 ### Lesezeichen für Moderationsfilter {#bookmark-moderation-filters}
 
-AEM Communities bietet die Möglichkeit, die vordefinierten Moderationsfilter[ in der Moderationskonsole mit einem ](moderation.md#filter-rail)Lesezeichen zu versehen. Diese gespeicherten Lesezeichen können später erneut besucht und für andere Benutzer freigegeben werden.
+AEM Communities bietet die Möglichkeit, die vordefinierten Moderations-Filter [in der Moderationskonsole mit einem](moderation.md#filter-rail) Lesezeichen zu versehen. Diese gespeicherten Lesezeichen können später erneut besucht und für andere Benutzer freigegeben werden.
 
-Die Benutzer müssen die gewünschten Filter einfach in der Filterleiste in der Moderationskonsole auswählen, um das gefilterte benutzergenerierte Benutzerkontenschutzgerät anzuzeigen und die Filter in ihren Browsern mit einem Lesezeichen zu versehen. Diese Filter werden am Ende der URL-Zeichenfolge angehängt und können daher später freigegeben, wiederverwendet und erneut aufgerufen werden.
+Die Benutzer müssen einfach die gewünschten Filter aus der Filterleiste in der Moderationskonsole auswählen, um das gefilterte benutzerspezifische Benutzerkontensymbol Ansicht und die Filter mit einem Lesezeichen in ihren Browsern zu versehen. Diese Filter werden an das Ende der URL-Zeichenfolge angehängt und können daher später freigegeben, wiederverwendet und erneut aufgerufen werden.
 
 ## Verwalten von Community-Sites {#managing-community-sites}
 
@@ -92,11 +95,11 @@ AEM 6.4 Communities stellt auf den bestehenden Community-Sites in der Community-
 
 ## Managing UGC and user profiles {#managing-ugc-and-user-profiles}
 
-AEM Communities stellt [APIs standardmäßig](user-ugc-management-service.md) und als [Beispiel-Servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)bereit, um den Schutz von Benutzerdaten im Zentrum der Community-Erfahrung zu halten. Diese APIs unterstützen die Massenverwaltung (Massenlöschung und Massenexport) benutzergenerierter Inhalte und das Löschen von Benutzerprofilen und sind bei der Bearbeitung von EU-Anforderungen zur Einhaltung der PDF-Richtlinien von entscheidender Bedeutung.
+AEM Communities hält den Schutz von Benutzerdaten im Mittelpunkt der Community-Erfahrung und stellt [APIs standardmäßig](user-ugc-management-service.md) und [Beispielservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)zur Verfügung. Diese APIs helfen bei der Massenverwaltung (Massenlöschung und Massenexport) benutzergenerierter Profil und beim Löschen von Benutzerinhalten und sind bei der Bearbeitung von EU-Anforderungen zur Einhaltung der PDF-Richtlinien von entscheidender Bedeutung.
 
 ## Änderungen {#what-s-changed}
 
-* Die Captcha-Überprüfung ist beim Erstellen einer neuen Community-Site nicht mehr standardmäßig in AEM 6.4 Communities verfügbar. Die Communities-Site kann jedoch angepasst werden, um die [Google-Komponente reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) für mehr Sicherheit einzuschließen.
+* Die Captcha-Verifizierung beim Erstellen einer neuen Community-Site ist in AEM 6.4 Communities nicht mehr standardmäßig verfügbar. Die Communities-Site kann jedoch angepasst werden, um die [Google-Komponente reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) für mehr Sicherheit einzuschließen.
 * Die Option zum Hochladen einer benutzerdefinierten CSS wurde aus dem Design der Community-Sites und -Gruppen entfernt.
 * In der Benutzeroberfläche &quot;Massenmoderation&quot;der Filterleiste wurden Symbole für &quot;Nur Inhalt&quot;und &quot;Suche&quot;hinzugefügt.
 * Der Filter &quot;Inhaltspfad&quot;wurde in der Benutzeroberfläche &quot;Filterleiste in Massenmoderation&quot;hinzugefügt.
