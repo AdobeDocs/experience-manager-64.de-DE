@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '3509'
+ht-degree: 77%
 
 ---
 
@@ -312,7 +315,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 
 ### Lead-Formular {#lead-form}
 
-Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen eines Besuchers/Leads zu sammeln. Diese Informationen können gespeichert und später dazu verwendet werden, anhand dieser Informationen effizientes Marketing durchzuführen. Die Informationen enthalten im Allgemeinen Titel, Namen, E-Mail, Geburtsdatum, Adresse, Interessen usw. Es gehört zur Gruppe &quot;CTA-Interessentenformular&quot;.
+Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen eines Besuchers/Leads zu sammeln. Diese Informationen können gespeichert und später dazu verwendet werden, anhand dieser Informationen effizientes Marketing durchzuführen. Die Informationen enthalten im Allgemeinen Titel, Namen, E-Mail, Geburtsdatum, Adresse, Interessen usw. Es ist Teil der Gruppe &quot;CTA-Interessentenformular&quot;.
 
 **Unterstützte Funktionen**
 
@@ -321,7 +324,7 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 * Weisen Sie Interessentenformularfelder mit bestimmten vordefinierten Namen des CTA-Interessentenformulars zu, z. B. &quot;firstName&quot;für den Vornamen im Interessentenformular usw.
 * Felder, die nicht dem Lead-Formular zugewiesen sind, werden cq:form-Komponenten zugewiesen: Text, Optionsschalter, Kontrollkästchen, Dropdown, Verborgen, Kennwort.
 * Benutzer können den Titel mit dem Tag „label“ und Stile mit dem Stilattribut „class“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
-* Danksagungsseite und Abonnementliste können als ausgeblendeter Parameter des Formulars bereitgestellt werden (vorhanden in index.htm) oder über die Bearbeitungsleiste von &quot;Start des Interessentenformulars&quot;hinzugefügt/bearbeitet werden.
+* Die Liste der Danksagungsseite und des Abonnements kann als ausgeblendeter Parameter des Formulars bereitgestellt werden (in der Datei &quot;index.htm&quot;vorhanden) oder über die Bearbeitungsleiste von &quot;Beginn des Interessentenformulars&quot;hinzugefügt/bearbeitet werden.
 
    &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/de/user/register/danke_you&quot;/>
 
@@ -381,7 +384,7 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 * Startet den Sidekick mit Standardkomponenten. Neue Komponenten können der Einstiegsseite hinzugefügt werden, indem sie aus dem Sidekick auf die parsys-Komponente gezogen werden.
 * Zwei title-Komponenten sind ebenfalls Teil des parsys.
 
-### Target {#target}
+### Ziel {#target}
 
 Die target-Komponente zeigt den Inhalt eines Erlebnisses auf der Seite an. In einer Kampagne können mehrere Erlebnisse erstellt werden und die Zielkomponente kann verschiedenen Besuchern der Seite dynamisch Inhalte aus verschiedenen Erlebnissen anzeigen.
 
@@ -453,7 +456,7 @@ Die Verwendung von CSS-Auswahlen, die den folgenden ähneln, wird bei der Verwen
 
 | E > F | ein einem E-Element untergeordnetes F-Element | [Kinderkombinator](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
-| E > F | ein F-Element, dem ein E-Element unmittelbar vorhergeht | [Angrenzender Parallelkombinator](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
+| E > F | ein F-Element, dem ein E-Element unmittelbar vorhergeht | [Angrenzender Geschwisterkombinator](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | ein F-Element, dem ein E-Element vorhergeht | [Allgemeiner Geschwisterkombinator](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
 | E:root | ein E-Element, Stamm des Dokuments | [Strukturelle Pseudo-Klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-child(n) | ein E-Element, das n. untergeordnete Element des übergeordneten Elements | [Strukturelle Pseudo-Klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
@@ -493,12 +496,12 @@ In der folgenden Tabelle finden Sie eine Kurzbeschreibung der Eigenschaften:
   <tr> 
    <td>Builder für die Einstiegsseite</td> 
    <td>Dateimuster</td> 
-   <td>Der Einstiegsseitenaufbau kann so konfiguriert werden, dass HTML-Dateien, die einem regulären Ausdruck entsprechen, gemäß dem Dateimuster verarbeitet werden.</td> 
+   <td>Der Landingpage Builder kann so konfiguriert werden, dass HTML-Dateien, die einem regulären Ausdruck entsprechen, wie durch Dateimuster definiert, verarbeitet werden.</td> 
   </tr> 
   <tr> 
    <td>Builder für mobile Einstiegsseiten</td> 
    <td>Dateimuster</td> 
-   <td>Der Einstiegsseitenaufbau kann so konfiguriert werden, dass HTML-Dateien, die einem regulären Ausdruck entsprechen, gemäß dem Dateimuster verarbeitet werden.</td> 
+   <td>Der Landingpage Builder kann so konfiguriert werden, dass HTML-Dateien, die einem regulären Ausdruck entsprechen, wie durch Dateimuster definiert, verarbeitet werden.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -548,7 +551,7 @@ Bei Fehlern (z. B. wenn das importierte Paket keine gültige ZIP-Datei ist) impo
 
 ### Nach dem Import werden Warnmeldungen angezeigt {#warnings-displayed-after-import}
 
-Im Falle von Warnungen (z. B. HTML bezieht sich auf Bilder, die nicht im Paket vorhanden sind), importiert der Design-Importer die ZIP-Datei, zeigt aber gleichzeitig eine Liste von Problemen/Warnungen im Ergebnisfenster an. Wenn Sie auf den Link &quot;Probleme&quot;klicken, wird eine Liste der Warnungen angezeigt, die auf Probleme innerhalb des Designpakets hinweisen. Unter anderem werden in folgenden Fällen vom Design Importer Warnmeldungen erzeugt und angezeigt:
+Bei Warnungen (z. B. HTML bezieht sich auf Bilder, die nicht im Paket enthalten sind) importiert der Design-Importer die ZIP-Datei, zeigt aber gleichzeitig eine Liste von Problemen/Warnungen im Ergebnisfenster an. Wenn Sie auf den Link &quot;Probleme&quot;klicken, wird eine Liste von Warnungen angezeigt, die auf alle Probleme innerhalb des Designpakets hinweisen. Unter anderem werden in folgenden Fällen vom Design Importer Warnmeldungen erzeugt und angezeigt:
 
 * HTML bezieht sich auf Bilder, die nicht im Paket vorhanden sind.
 * HTML bezieht sich auf Skripten, die nicht im Paket vorhanden sind.
