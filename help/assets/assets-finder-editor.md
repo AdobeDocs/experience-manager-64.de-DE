@@ -4,6 +4,9 @@ description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstel
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '3314'
+ht-degree: 79%
 
 ---
 
@@ -118,7 +121,7 @@ Die folgenden Linsen stehen zur Verfügung:
 
 | Objektiv | Beschreibung |
 |---|---|
-| **[!UICONTROL Listenlinse]** | Stellt die Assets mit Details in einer Liste dar. |
+| **[!UICONTROL Listenlinse]** | Stellt die Assets in einer Liste mit Details dar. |
 | **[!UICONTROL Mosaik-Linse]** | Stellt Assets in einer Mosaik dar. |
 
 #### Mosaik-Linse {#mosaic-lens}
@@ -155,7 +158,7 @@ So passen Sie den Query Builder an:
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Vorhersagen hinzufügen {#adding-predicates}
+#### Hinzufügen {#adding-predicates}
 
 AEM Assets beinhaltet eine Reihe von Eigenschaften, die Sie der Asset-Freigabe-Seite hinzufügen können. So können Benutzer Suchvorgänge weiter eingrenzen. Mitunter können sie auch einen Query-Builder-Parameter (etwa den Pfad-Parameter) überschreiben.
 
@@ -171,11 +174,11 @@ So fügen Sie Eigenschaften hinzu:
 
    Die folgenden Prognosen stehen zur Verfügung:
 
-| Eigenschaft | Beschreibung |
+| Prädikat | Beschreibung |
 |---|---|
 | **[!UICONTROL Datumseigenschaft]** | Ermöglicht Benutzern die Suche nach Assets, die vor und nach bestimmten Daten geändert wurden. |
 | **[!UICONTROL Options-Eigenschaft]** | Der Site-Eigentümer kann eine Eigenschaft angeben, nach der gesucht werden soll (wie in der Eigenschaft &quot;Predicate&quot;, z. B. &quot;cq:tags&quot;), und eine Inhaltsstruktur, aus der die Optionen gefüllt werden (z. B. die Tag-Struktur). Hierdurch wird eine Liste von Optionen generiert, aus der der Benutzer die gewünschten Werte (Tags) für die ausgewählte Eigenschaft (Tag-Eigenschaft) auswählen kann. Über diese Eigenschaft können Sie Steuerungen wie eine Tag-Liste, Dateitypen, Bildausrichtungen usw. erstellen – ideal geeignet für einen festen Satz an Optionen. |
-| **[!UICONTROL Pfad-Eigenschaft]** | Ermöglicht Benutzern, bei Bedarf den Pfad und die Unterordner zu definieren. |
+| **[!UICONTROL Pfad-Eigenschaft]** | Ermöglicht es Benutzern, bei Bedarf den Pfad und die Unterordner zu definieren. |
 | **[!UICONTROL Eigenschaftsprädikat]** | Der Site-Eigentümer gibt eine Eigenschaft an, nach der gesucht werden soll, z. B. tiff:ImageLength, und der Benutzer kann dann einen Wert, z. B. 800, eingeben. Dadurch werden alle Bilder mit einer Höhe von 800 Pixel zurückgegeben. Dies ist nützlich, wenn eine Eigenschaft beliebige Werte aufweisen darf. |
 
 Weitere Informationen finden Sie in den [Predicate Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
@@ -249,9 +252,9 @@ So fügen Sie Asset-Editor-Komponenten hinzu:
    | Komponente | Beschreibung |
    |---|---|
    | **[!UICONTROL Metadatenformular]und[!UICONTROL Metadatentextfeld]** | Ermöglicht das Hinzufügen zusätzlicher Metadaten zu einem Asset und das Durchführen einer Aktion, z. B. das Senden, zu diesem Asset. |
-   | **[!UICONTROL Unter-Assets]** | Hiermit können Sie Teilassets anpassen. |
+   | **[!UICONTROL Unter-Assets]** | Ermöglicht das Anpassen von Teilassets. |
    | **Tags** | Ermöglicht Benutzern das Auswählen und Hinzufügen von Tags zu einem Asset. |
-   | **[!UICONTROL Miniatur]** | Zeigt eine Miniaturansicht des Assets und den Dateinamen an und ermöglicht das Hinzufügen eines alternativen Textes. Hierüber können Sie zudem Asset-Editor-Aktionen hinzufügen. |
+   | **[!UICONTROL Miniaturansicht]** | Zeigt eine Miniaturansicht des Assets und den Dateinamen an und ermöglicht das Hinzufügen eines alternativen Textes. Hierüber können Sie zudem Asset-Editor-Aktionen hinzufügen. |
    | **[!UICONTROL Titel]** | Zeigt den Asset-Titel an, der angepasst werden kann. |
 
    ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
@@ -327,7 +330,7 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Tags“:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatur {#thumbnail}
+#### Miniaturansicht       {#thumbnail}
 
 In der Komponente „Miniatur“ zeigt das Asset die ausgewählte Miniatur an (für eine Vielzahl der Formate wird die Miniatur automatisch extrahiert). Außerdem präsentiert die Komponente den Dateinamen und [von Ihnen veränderbare Aktionen](assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -361,13 +364,14 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Titel“:
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-#### Asset Editor-Aktionen hinzufügen {#adding-asset-editor-actions}
+#### Aktionen Hinzufügen Asset Editor {#adding-asset-editor-actions}
 
 Sie können anhand einer Auswahl vordefinierter Aktionen festlegen, welche Aktionen Benutzer für ausgewählte digitale Assets ausführen können.
 
 So fügen Sie der Asset-Editor-Seite Aktionen hinzu:
 
 1. In the Asset Editor page that you want to customize, click **[!UICONTROL Asset Editor]** in the sidekick.<br>
+
    ![Asset-Editor im Sidekick auswählen](assets/screen_shot_2012-04-23at35515pm.png)
 
    Die folgenden Aktionen stehen zur Verfügung:
@@ -377,7 +381,7 @@ So fügen Sie der Asset-Editor-Seite Aktionen hinzu:
    | [!UICONTROL Download] | Ermöglicht Benutzern das Herunterladen ausgewählter Assets auf ihren Computern. |
    | [!UICONTROL Editoren] | Ermöglicht Benutzern die Bearbeitung eines Bildes (interaktive Bearbeitung) |
    | [!UICONTROL Lightbox] | Speichert Assets in einem &quot;Leuchtkasten&quot;, in dem Sie andere Aktionen ausführen können. Dies ist praktisch, wenn über mehrere Seiten hinweg an Assets gearbeitet wird. |
-   | [!UICONTROL Sperren] | Hiermit können Benutzer ein Asset sperren. Diese Funktion ist nicht standardmäßig aktiviert und muss in der Liste der Komponenten aktiviert werden. |
+   | [!UICONTROL Sperren] | Ermöglicht Benutzern das Sperren eines Assets. Diese Funktion ist nicht standardmäßig aktiviert und muss in der Liste der Komponenten aktiviert werden. |
    | [!UICONTROL Verweise] | Klicken Sie auf diese Option, um anzuzeigen, auf welchen Seiten das Asset verwendet wird. |
    | [!UICONTROL Versionierung] | Ermöglicht das Erstellen und Wiederherstellen von Versionen eines Assets. |
 
@@ -390,15 +394,16 @@ So fügen Sie der Asset-Editor-Seite Aktionen hinzu:
 Mit AEM Assets können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
 
 * Tags
-* Metadaten 
+* Metadaten  
 
 So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite durch:
 
-1. Öffnen Sie die Seite Geometrixx **[!UICONTROL Press Center]** unter `http://localhost:4502/content/geometrixx/en/company/press.html`.
+1. Öffnen Sie die Seite &quot;Geometrixx **[!UICONTROL Pressezentrum]** &quot;unter `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Wählen Sie die Assets aus:
 
-   * Windows: jedes `Ctrl + click` Assets.
-   * Mac: jedes `Cmd + click` Assets.
+   * Windows: `Ctrl + click` jedes Assets.
+   * Mac: `Cmd + click` jedes Assets.
+
    To select a range of assets: click the first asset then `Shift + click` the last asset.
 
 1. Klicken Sie im Feld **[!UICONTROL Aktionen]** auf **Metadaten bearbeiten** (linker Seitenbereich).
@@ -414,11 +419,13 @@ So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite du
 
    * Ein Tag, das nicht für alle Assets gilt, sondern nur für einige wenige, hat einen grauen Hintergrund.
    * Ein Tag, das für alle Assets gilt, hat einen weißen Hintergrund.
+
    Sie haben folgende Möglichkeiten:
 
    * Klicken Sie auf das Symbol `x`, um das Tag für alle Assets zu entfernen.
    * Click the `+` icon to add the tag to all the assets.
    * Click the `arrow` and select a tag to add a new tag to all the assets.
+
    Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen in das Formular zu schreiben. Das Kästchen neben dem Feld **Tags** wird automatisch aktiviert.
 
 1. Bearbeiten Sie das Feld Beschreibung. For example set it to: `This is a common description`. When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted. Das Feld neben dem Feld wird bei der Bearbeitung des Felds automatisch markiert.
