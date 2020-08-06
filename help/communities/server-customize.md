@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
 
 # Serverseitige Anpassung {#server-side-customization}
 
-| **[⇐](essentials.md)** | **[Clientseitige Anpassung ⇒](client-customize.md)** |
+| **[⇐ Essentials](essentials.md)** | **[Clientseitige Anpassung ⇒](client-customize.md)** |
 |---|---|
-|  | **[SCF-Handlebars Helpers](handlebars-helpers.md)** |
+|  | **[SCF-Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
 ## Java-APIs {#java-apis}
 
@@ -29,9 +32,9 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ### SocialComponent-Schnittstelle {#socialcomponent-interface}
 
-SocialComponents sind POJOs, die eine Ressource für eine AEM Communities-Funktion darstellen. Idealerweise stellt jede SocialComponent einen bestimmten resourceType mit offen gelegten GETters dar, die dem Client Daten bereitstellen, damit die Ressource korrekt dargestellt wird. Alle Geschäftslogik und Ansichtslogik sind in der SocialComponent eingeschlossen, gegebenenfalls einschließlich der Sitzungsinformationen des Site-Besuchers.
+SocialComponents sind POJOs, die eine Ressource für eine AEM Communities-Funktion darstellen. Idealerweise stellt jede SocialComponent einen bestimmten resourceType mit offen gelegten GETters dar, die dem Client Daten bereitstellen, damit die Ressource korrekt dargestellt wird. Die gesamte Geschäftslogik und die Logik der Ansicht sind in der SocialComponent eingeschlossen, einschließlich der Sitzungsinformationen des Site-Besuchers, sofern erforderlich.
 
-Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass die Schnittstelle Map&lt;String, Object> getAsMap()- und String toJSONString()-Methoden vorgibt, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
+Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass in der Schnittstelle die Methoden Map&lt;String, Object> getAsMap() und String toJSONString() festgelegt sind, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
 
 Alle SocialComponent-Klassen müssen die Schnittstelle implementieren `com.adobe.cq.social.scf.SocialComponent`
 
@@ -65,9 +68,9 @@ Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf
 
 #### PostOperation-Klasse {#postoperation-class}
 
-Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation`Schnittstelle (Paket) definiert werden `org.apache.sling.servlets.post`.
+Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation`Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
 
-Die Implementierung `PostOperation`des Endpunkts setzt `sling.post.operation`auf einen Wert, auf den der Vorgang reagiert. Alle POST-Anforderungen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
+Die Implementierung `PostOperation`des Endpunkts setzt `sling.post.operation`auf einen Wert, auf den der Vorgang reagiert. Alle POST-Anfragen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
 
 Die `PostOperation`ruft die `SocialOperation`auf, die die für den Vorgang erforderlichen Aktionen ausführt.
 
@@ -106,7 +109,7 @@ Alle `OperationService`Klassen erweitern `AbstractOperationService`und ermöglic
 * `performBeforeActions()`
 Ermöglicht die Vorab-/Vorverarbeitung und Überprüfung
 * `performAfterActions()`
-Ermöglicht weitere Änderungen an Ressourcen oder das Aufrufen benutzerspezifischer Ereignisse, Workflows usw.
+Ermöglicht eine weitere Änderung der Ressourcen oder das Aufrufen benutzerdefinierter Ereignis, Workflows usw.
 
 #### OperationExtension-Klasse {#operationextension-class}
 
@@ -114,15 +117,15 @@ Ermöglicht weitere Änderungen an Ressourcen oder das Aufrufen benutzerspezifis
 
 ## Beispielcode {#sample-code}
 
-Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) -Repository verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
+Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) Repository verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
 
 ## Best Practices {#best-practices}
 
-Sehen Sie sich die [Coding-Richtlinien](code-guide.md) für AEM Communities-Entwickler an, um verschiedene Codierungsrichtlinien und Best Practices zu erhalten.
+Ansicht der [Coding-Richtlinien](code-guide.md) für verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
 
-Informationen zum Zugriff auf benutzerdefinierte Inhalte finden Sie unter auch [Storage Resource Provider (SRP) für UGC](srp.md) .
+Informationen zum Zugriff auf benutzergenerierte Inhalte finden Sie unter auch [Datenspeicherung Resource Provider (SRP) für UGC](srp.md) .
 
-| **[⇐](essentials.md)** | **[Clientseitige Anpassung ⇒](client-customize.md)** |
+| **[⇐ Essentials](essentials.md)** | **[Clientseitige Anpassung ⇒](client-customize.md)** |
 |---|---|
-|  | **[SCF-Handlebars Helpers](handlebars-helpers.md)** |
+|  | **[SCF-Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
