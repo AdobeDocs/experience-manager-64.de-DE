@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 78%
 
 ---
 
@@ -163,17 +166,17 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Term</strong></td> 
+   <td><strong>Begriff</strong></td> 
    <td><strong>Definition</strong></td> 
-   <td><strong>Weitere Einzelheiten</strong></td> 
+   <td><strong>Further details</strong></td> 
   </tr> 
   <tr> 
    <td><strong>Quelle</strong></td> 
-   <td>Die Originalseiten.</td> 
+   <td>The original pages.</td> 
    <td>Synonym für Blueprints- und/oder Blueprint-Seiten.</td> 
   </tr> 
   <tr> 
-   <td><strong>Live Copy</strong></td> 
+   <td><strong>Live Copy      </strong></td> 
    <td>Die Kopie (der Quelle), die durch Synchronisierungsaktionen gemäß den Rollout-Konfigurationen verwaltet wird. </td> 
    <td> </td> 
   </tr> 
@@ -188,13 +191,13 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
    <td>Stellt sicher, dass Änderungen an der Quelle mit der Live-Kopie synchronisiert werden können.</td> 
   </tr> 
   <tr> 
-   <td><strong>Blaupause</strong></td> 
+   <td><strong>Blueprint</strong></td> 
    <td>Synonym mit Quelle.</td> 
    <td>Kann durch eine Blueprint-Konfiguration definiert werden.</td> 
   </tr> 
   <tr> 
    <td><strong>Blueprint-Konfiguration</strong></td> 
-   <td>Vordefinierte Konfiguration zur Angabe eines Quellpfads.</td> 
+   <td>Vordefinierte Konfiguration, die einen Quellpfad angibt.</td> 
    <td>Wenn in einer Blueprint-Konfiguration auf eine Blueprint-Seite verwiesen wird, steht der Befehl "Rollout"zur Verfügung.</td> 
   </tr> 
   <tr> 
@@ -204,7 +207,7 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
   </tr> 
   <tr> 
    <td><strong>Rollout</strong><br /> </td> 
-   <td>Synchronisiert von der Quelle zur Livecopy.<br /> Kann von einem Autor (auf einer Blueprint-Seite) oder von einem Systemereignis (wie in der Rollout-Konfiguration definiert) ausgelöst werden.</td> 
+   <td>Synchronisiert von der Quelle zur Livecopy.<br /> Kann von einem Autor (auf einer Blueprint-Seite) oder von einem System-Ereignis (wie in der Rollout-Konfiguration definiert) ausgelöst werden.</td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -243,7 +246,7 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
   </tr> 
   <tr> 
    <td><strong>Langsam</strong></td> 
-   <td>Eine Live-Kopie einer einzelnen Seite.</td> 
+   <td>A live copy of a single page.</td> 
    <td> </td> 
   </tr> 
   <tr> 
