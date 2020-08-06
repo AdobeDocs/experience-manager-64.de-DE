@@ -32,11 +32,11 @@ Die folgenden Quick-Beginn sind für den PDF Utilities-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Bereinigen von PDF-Dokumenten](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellere Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in ein XDP-Dokument mit der Java-API {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -241,7 +241,7 @@ Im folgenden Codebeispiel wird ein XDP-Dokument in ein PDF-Dokument konvertiert.
 
 ## Quick Beginn (SOAP-Modus): Abrufen von PDF-Dokument-Eigenschaften mit der Java-API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-Im folgenden Codebeispiel wird bestimmt, ob es sich bei dem Dokument um ein PDF-Dokument handelt und, falls ja, um die älteste Acrobat-Version, die gelesen werden kann. (Siehe PDF-Dokument-Eigenschaften [abrufen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
+Im folgenden Codebeispiel wird bestimmt, ob es sich bei dem Dokument um ein PDF-Dokument handelt und, falls ja, um die älteste Acrobat-Version, die es lesen kann. (Siehe PDF-Dokument-Eigenschaften [abrufen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
 ```as3
  /* 
