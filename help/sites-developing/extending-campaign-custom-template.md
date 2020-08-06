@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 59%
 
 ---
 
@@ -33,6 +36,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
+
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
 1. **ClientContext-Einstellungen**
@@ -41,6 +45,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
    * ClientContext points to `/etc/clientcontext/campaign`
    * Es ist außerdem ein zusätzlicher Knoten *config* vorhanden.
+
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
@@ -73,7 +78,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
    In the template ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) you see the following default values:
 
-   | **acMapping** | mapRecipient (für Adobe Campaign 6.1), profile (für Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient (für Adobe Campaign 6.1), Profil (für Adobe Campaign Standard) |
    |---|---|
    | **acTemplateId** | mail |
 
