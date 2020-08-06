@@ -1,6 +1,6 @@
 ---
-title: Erstellen von PDF-Dokumenten mit übermittelten XML-Daten
-seo-title: Erstellen von PDF-Dokumenten mit übermittelten XML-Daten
+title: Erstellen von PDF-Dokumenten mit SubmittedXML-Daten
+seo-title: Erstellen von PDF-Dokumenten mit SubmittedXML-Daten
 description: 'null'
 seo-description: 'null'
 uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
@@ -12,23 +12,26 @@ topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1279'
+ht-degree: 5%
 
 ---
 
 
-# Erstellen von PDF-Dokumenten mit gesendeten XML-Daten {#creating-pdf-documents-with-submittedxml-data}
+# Erstellen von PDF-Dokumenten mit übermittelten XML-Daten {#creating-pdf-documents-with-submittedxml-data}
 
-## Erstellen von PDF-Dokumenten mit gesendeten XML-Daten {#creating-pdf-documents-with-submitted-xml-data}
+## Erstellen von PDF-Dokumenten mit übermittelten XML-Daten {#creating-pdf-documents-with-submitted-xml-data}
 
-Webbasierte Anwendungen, die es Benutzern ermöglichen, interaktive Formulare auszufüllen, erfordern, dass die Daten an den Server zurückgesendet werden. Mit dem Forms-Dienst können Sie die Formulardaten abrufen, die der Benutzer in ein interaktives Formular eingegeben hat. Anschließend können Sie die Formulardaten an einen anderen AEM Forms-Dienstvorgang weiterleiten und ein PDF-Dokument mit den Daten erstellen.
+Webbasierte Anwendungen, die es Benutzern ermöglichen, interaktive Formulare auszufüllen, erfordern, dass die Daten an den Server zurückgesendet werden. Mit dem Forms-Dienst können Sie die Formulardaten abrufen, die der Benutzer in ein interaktives Formular eingegeben hat. Anschließend können Sie die Formulardaten an einen anderen AEM Forms-Dienstvorgang weiterleiten und ein PDF-Dokument mithilfe der Daten erstellen.
 
 >[!NOTE]
 >
->Bevor Sie diesen Inhalt lesen, sollten Sie mit dem Umgang mit gesendeten Formularen vertraut sein. Konzepte wie die Beziehung zwischen einem Formularentwurf und gesendeten XML-Daten werden unter Verarbeiten gesendeter Formulare behandelt.
+>Bevor Sie diesen Inhalt lesen, sollten Sie mit dem Umgang mit gesendeten Formularen vertraut sein. Konzepte wie die Beziehung zwischen einem Formularentwurf und gesendeten XML-Daten werden unter Verarbeiten gesendeter Forms behandelt.
 
 Betrachten Sie den folgenden Arbeitsablauf, der drei AEM Forms-Dienste umfasst:
 
-* Ein Benutzer sendet XML-Daten von einer webbasierten Anwendung an den Forms-Dienst.
+* Ein Benutzer sendet XML-Daten aus einer webbasierten Anwendung an den Forms-Dienst.
 * Der Forms-Dienst wird zum Verarbeiten des gesendeten Formulars und zum Extrahieren von Formularfeldern verwendet. Formulardaten können verarbeitet werden. Die Daten können beispielsweise an eine Unternehmensdatenbank gesendet werden.
 * Formulardaten werden an den Output-Dienst gesendet, um ein nicht interaktives PDF-Dokument zu erstellen.
 * Das nicht interaktive PDF-Dokument wird in Content Services (nicht mehr unterstützt) gespeichert.
@@ -46,20 +49,20 @@ Nachdem der Benutzer das Formular über den Client-Webbrowser gesendet hat, wird
 So erstellen Sie ein nicht interaktives PDF-Dokument mit gesendeten XML-Daten und speichern es im PDF-Dokument in Content Services (nicht mehr unterstützt):
 
 1. Schließen Sie Projektdateien ein.
-1. Erstellen Sie Forms-, Output- und Document Management-Objekte.
+1. Erstellen Sie Forms-, Output- und Dokument Management-Objekte.
 1. Rufen Sie Formulardaten mithilfe des Forms-Dienstes ab.
 1. Erstellen Sie ein nicht interaktives PDF-Dokument mit dem Output-Dienst.
-1. Speichern Sie das PDF-Formular mit dem Document Management-Dienst in Content Services (nicht mehr unterstützt).
+1. Speichern Sie das PDF-Formular mit dem Dokument Management-Dienst in Content Services (nicht mehr unterstützt).
 
 **Projektdateien einschließen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxydateien einschließen.
 
-**Erstellen von Forms-, Output- und Document Management-Objekten**
+**Erstellen von Forms-, Output- und Dokument Management-Objekten**
 
-Bevor Sie einen Forms-Dienst-API-Vorgang programmgesteuert durchführen können, erstellen Sie ein Forms Client-API-Objekt. Da dieser Workflow die Output- und Document Management-Dienste aufruft, erstellen Sie auch ein Output Client-API-Objekt und ein Document Management Client-API-Objekt.
+Bevor Sie einen Forms-Dienst-API-Vorgang programmgesteuert durchführen können, erstellen Sie ein Forms Client-API-Objekt. Da dieser Workflow die Output- und Dokument-Management-Dienste aufruft, erstellen Sie auch ein Output Client-API-Objekt und ein Dokument Management Client-API-Objekt.
 
-**Abrufen von Formulardaten mit dem Forms-Dienst**
+**Formulardaten mit dem Forms-Dienst abrufen**
 
 Rufen Sie Formulardaten ab, die an den Forms-Dienst gesendet wurden. Sie können gesendete Daten entsprechend Ihren Geschäftsanforderungen verarbeiten. Sie können beispielsweise Formulardaten in einer Unternehmensdatenbank speichern. Um jedoch ein nicht interaktives PDF-Dokument zu erstellen, werden die Formulardaten an den Output-Dienst übergeben.
 
@@ -67,9 +70,9 @@ Rufen Sie Formulardaten ab, die an den Forms-Dienst gesendet wurden. Sie können
 
 Verwenden Sie den Output-Dienst, um ein nicht interaktives PDF-Dokument zu erstellen, das auf einem Formularentwurf und XML-Formulardaten basiert. Im Arbeitsablauf werden die Formulardaten vom Forms-Dienst abgerufen.
 
-**Speichern des PDF-Formulars in Content Services (nicht mehr unterstützt) mithilfe des Document Management-Dienstes**
+**Speichern des PDF-Formulars in Content Services (nicht mehr unterstützt) mithilfe des Dokument Management-Dienstes**
 
-Verwenden Sie die Document Management-Dienst-API, um ein PDF-Dokument in Content Services (nicht mehr unterstützt) zu speichern.
+Verwenden Sie die API des Dokument Management-Dienstes, um ein PDF-Dokument in Content Services (nicht mehr unterstützt) zu speichern.
 
 **Siehe auch**
 
@@ -77,31 +80,32 @@ Verwenden Sie die Document Management-Dienst-API, um ein PDF-Dokument in Content
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ### Erstellen eines PDF-Dokuments mit gesendeten XML-Daten mithilfe der Java-API {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
-Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Output- und Document Management API (Java):
+Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Output- und Dokument Management API (Java):
 
 1. Projektdateien einschließen
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-forms-client.jar&quot;, &quot;adobe-output-client.jar&quot;und &quot;adobe-contentservices-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
 
-1. Erstellen von Forms-, Output- und Document Management-Objekten
+1. Erstellen von Forms-, Output- und Dokument Management-Objekten
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
    * Create an `OutputClient` object by using its constructor and passing the `ServiceClientFactory` object.
    * Erstellen Sie ein `DocumentManagementServiceClientImpl`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
-1. Abrufen von Formulardaten mit dem Forms-Dienst
+1. Formulardaten mit dem Forms-Dienst abrufen
 
    * Rufen Sie die `FormsServiceClient` Objektmethode `processFormSubmission` auf und übergeben Sie die folgenden Werte:
 
       * Das `com.adobe.idp.Document` Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die `CONTENT_TYPE` Umgebungsvariable angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
+      * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Variable &quot; `CONTENT_TYPE` Umgebung&quot;angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
       * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert.
+
       Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult` Objektmethode `getAction` aufrufen. Wenn diese Methode den Wert zurückgibt `0`, können die Daten verarbeitet werden.
@@ -126,9 +130,9 @@ Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Out
    * The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
    * Rufen Sie das nicht interaktive PDF-Dokument ab, indem Sie die `OutputResult` Objektmethode `getGeneratedDoc` aufrufen. Diese Methode gibt eine `com.adobe.idp.Document` Instanz zurück, die das nicht interaktive PDF-Dokument darstellt.
 
-1. Speichern des PDF-Formulars in Content Services (nicht mehr unterstützt) mithilfe des Document Management-Dienstes
+1. Speichern des PDF-Formulars in Content Services (nicht mehr unterstützt) mithilfe des Dokument Management-Dienstes
 
-   Fügen Sie den Inhalt hinzu, indem Sie die `DocumentManagementServiceClientImpl` Methode des `storeContent` Objekts aufrufen und die folgenden Werte übergeben:
+   Hinzufügen Sie den Inhalt, indem Sie die `DocumentManagementServiceClientImpl` Methode des `storeContent` Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Store angibt, in dem der Inhalt hinzugefügt wird. The default store is `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des Bereichs angibt, in dem der Inhalt hinzugefügt wird (z. B. `/Company Home/Test Directory`). Dieser Wert ist ein obligatorischer Parameter.
@@ -136,10 +140,11 @@ Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Out
    * Ein Zeichenfolgenwert, der den Knotentyp angibt. Um neue Inhalte hinzuzufügen, z. B. eine PDF-Datei, geben Sie an `{https://www.alfresco.org/model/content/1.0}content`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein `com.adobe.idp.Document` Objekt, das den Inhalt darstellt. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den Kodierungswert angibt (z. B. `UTF-8`). Dieser Wert ist ein obligatorischer Parameter.
-   * Ein `UpdateVersionType` Aufzählungswert, der angibt, wie Versionsinformationen verarbeitet werden (z. B. `UpdateVersionType.INCREMENT_MAJOR_VERSION` um die Inhaltsversion zu erhöhen). ) Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Wert für die `UpdateVersionType` Auflistung, der angibt, wie Versionsinformationen verarbeitet werden (z. B. `UpdateVersionType.INCREMENT_MAJOR_VERSION` um die Inhaltsversion zu erhöhen). ) Dieser Wert ist ein obligatorischer Parameter.
    * Eine `java.util.List` Instanz, die inhaltliche Aspekte angibt. Dieser Wert ist ein optionaler Parameter und Sie können ihn angeben `null`.
    * Ein `java.util.Map` Objekt, das Inhaltsattribute speichert.
-   Die `storeContent` Methode gibt ein `CRCResult` Objekt zurück, das den Inhalt beschreibt. Mithilfe eines `CRCResult` Objekts können Sie beispielsweise den eindeutigen Bezeichnerwert des Inhalts abrufen. Um diese Aufgabe auszuführen, rufen Sie die `CRCResult` Methode des `getNodeUuid` Objekts auf.
+
+   Die `storeContent` Methode gibt ein `CRCResult` Objekt zurück, das den Inhalt beschreibt. Mithilfe eines `CRCResult` Objekts können Sie beispielsweise den eindeutigen Bezeichnerwert des Inhalts abrufen. Um diese Aufgabe auszuführen, rufen Sie die `CRCResult` `getNodeUuid` Objektmethode auf.
 
 **Siehe auch**
 
