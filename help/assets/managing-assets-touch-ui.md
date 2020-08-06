@@ -16,7 +16,7 @@ ht-degree: 68%
 
 Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können.
 
-In diesem Artikel wird beschrieben, wie Sie Assets mithilfe der touchoptimierten Benutzeroberfläche von Adobe Experience Manager (AEM) verwalten und bearbeiten. For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+In diesem Artikel wird beschrieben, wie Sie Assets mithilfe der Adobe Experience Manager (AEM) Touch-optimierten Benutzeroberfläche verwalten und bearbeiten. For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
 ## Erstellen von Ordnern {#create-folders}
 
@@ -108,7 +108,7 @@ Vergewissern Sie sich vor dem Hochladen eines Assets, dass es in einem [unterst�
 
    Tap **[!UICONTROL Keep]** to retain the duplicate asset in AEM Assets. Tap  **[!UICONTROL Delete]** to delete the duplicate asset you uploaded.
 
-   AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset hochzuladen, das die unzulässigen Zeichen enthält, zeigt AEM Assets eine Warnmeldung zum Vorhandensein verbotener Zeichen im Dateinamen an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+   AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset hochzuladen, das die unzulässigen Zeichen enthält, zeigt AEM Assets eine Warnmeldung an, dass der Dateiname verbotene Zeichen enthält, und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
    To suit specific file naming conventions for your organization, the **[!UICONTROL Upload Assets]** dialog box lets you specify long names for the files that you upload.
 
@@ -128,7 +128,7 @@ Vergewissern Sie sich vor dem Hochladen eines Assets, dass es in einem [unterst�
 
 ### Serielle Uploads {#serial-uploads}
 
-Das Hochladen zahlreicher Assets in großen Mengen erfordert erhebliche Systemressourcen, was sich negativ auf die Leistung Ihrer AEM-Bereitstellung auswirken kann. Mögliche Engpässe sind Ihre Internetverbindung, Lese- und Schreibvorgänge auf der Festplatte, Einschränkungen des Webbrowsers bei der Anzahl der POST-Anfragen beim gleichzeitigen Hochladen von Assets. Der Vorgang zum Hochladen von Massen kann fehlschlagen oder vorzeitig beendet werden. Dabei kann es vorkommen, dass in AEM Assets bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
+Das Hochladen zahlreicher Assets in großen Mengen erfordert erhebliche Systemressourcen, was sich negativ auf die Leistung Ihrer AEM auswirken kann. Mögliche Engpässe sind Ihre Internetverbindung, Lese- und Schreibvorgänge auf der Festplatte, Einschränkungen des Webbrowsers bei der Anzahl der POST-Anfragen beim gleichzeitigen Hochladen von Assets. Der Vorgang zum Hochladen von Massen kann fehlschlagen oder vorzeitig beendet werden. Dabei kann es vorkommen, dass in AEM Assets bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
 
 Um diese Situation zu vermeiden, gibt es die Möglichkeit, Ladevorgänge im Stapelmodus seriell durchzuführen. Dabei werden in AEM Assets die Assets nicht gleichzeitig, sondern einzeln nacheinander erfasst.
 
@@ -144,7 +144,7 @@ Dynamische Medien ermöglichen das Batch-Hochladen von Assets über den FTP-Serv
 
 >[!NOTE]
 >
->Um Assets per FTP in Dynamic Media - Scene7-Modus zu laden, installieren Sie Feature Pack (FP) 18912 unter AEM-Autor. Wenden Sie sich an den Adobe-Kundendienst, um Zugriff auf das FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets per FTP in Dynamic Media - Scene7-Modus installieren Feature Pack (FP) 18912 auf AEM Autor hochzuladen. Wenden Sie sich an den Kundendienst der Adobe, um Zugriff auf das FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 Die in AEM angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
 **So laden Sie Assets per FTP hoch**
@@ -160,7 +160,7 @@ Die in AEM angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum H
 
    >[!NOTE]
    >
-   >Wenn Sie Assets über FTP hochladen, haben die in Scene7 (Dynamic Media Classic) festgelegten Upload-Auftragsoptionen Vorrang vor den in AEM festgelegten Asset-Verarbeitungsparametern.
+   >Wenn Sie Assets über FTP hochladen, haben die in Dynamic Media Classic (Scene7) festgelegten Upload-Auftragsoptionen Vorrang vor den in AEM festgelegten Asset-Verarbeitungsparametern.
 
 1. In the lower-right corner of the **[!UICONTROL Upload Job Options]** dialog box, tap **[!UICONTROL Save]**.
 1. In the lower-right corner of the **[!UICONTROL Upload]** page, tap **[!UICONTROL Submit Upload]**.
@@ -229,7 +229,7 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 |  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
 |  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
-#### Festlegen von Upload-Optionen für Fotoshop {#setting-photoshop-upload-options}
+#### Festlegen von Photoshop-Upload-Optionen {#setting-photoshop-upload-options}
 
 PSD (Photoshop)-Dateien werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie daraus automatisch eine Bildvorlage erstellen (aktivieren Sie auf dem Uploadbildschirm die Option „Vorlage erstellen“). 
 
@@ -616,7 +616,7 @@ CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschr
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets       {#searching-assets}
+## Suchen von Assets         {#searching-assets}
 
 Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Use the **[!UICONTROL Search]** panel to search for assets, tags, and metadata. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md).
 
@@ -744,7 +744,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 1. Tap the **[!UICONTROL Annotate]** icon from one of the following:
 
    * [Schnellaktionen](managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben        oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -846,7 +846,7 @@ To print the annotations and review status, tap the **[!UICONTROL Print]** icon 
    Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
 
 **So drucken Sie Anmerkungen in Fremdsprachen**:
-Wenn ein Asset Anmerkungen in Fremdsprachen (insbesondere in Nicht-lateinischen Sprachen) enthält, müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager-Dienst auf dem AEM-Server konfigurieren, um diese Anmerkungen drucken zu können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
+Wenn ein Asset Anmerkungen in Fremdsprachen (insbesondere in Nicht-lateinischen Sprachen) enthält, müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager Service auf dem AEM Server konfigurieren, um diese Anmerkungen drucken zu können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
 
 1. Open the **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** configuration page from the URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. To configure **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]**, do one of the following:
@@ -862,7 +862,7 @@ Wenn ein Asset Anmerkungen in Fremdsprachen (insbesondere in Nicht-lateinischen 
 
 1. Starten Sie die AEM-Instanz neu.
 
-Das folgende Beispiel zeigt, wie Sie AEM für das Drucken von Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) konfigurieren:
+Das folgende Beispiel zeigt, wie Sie AEM zum Drucken von Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) konfigurieren:
 
 1. Laden Sie die Google Noto CJK-Schriftarten über die folgenden Links herunter und speichern Sie sie im Schriftartenverzeichnis, das in Font Manager Service konfiguriert ist.
 
