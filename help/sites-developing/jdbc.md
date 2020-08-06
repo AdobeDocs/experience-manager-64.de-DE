@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 83%
 
 ---
 
@@ -84,13 +87,13 @@ Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet is
 
 Die folgenden Links öffnen die Downloadseiten für einige gängige Datenbankprodukte:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
 ### Konfiguration des JDBC Connections Pool-Dienstes {#configuring-the-jdbc-connection-pool-service}
 
-Fügen Sie eine Konfiguration für den JDBC Connections Pool-Dienst hinzu, der den JDBC-Treiber verwendet, um Datenquellenobjekte zu erstellen. Ihr Anwendungscode verwendet diesen Dienst, um das Objekt abzurufen und eine Verbindung zur Datenbank herzustellen.
+Hinzufügen eine Konfiguration für den JDBC Connections Pool-Dienst, bei der mit dem JDBC-Treiber Datenquellenobjekte erstellt werden. Ihr Anwendungscode verwendet diesen Dienst, um das Objekt abzurufen und eine Verbindung zur Datenbank herzustellen.
 
 JDBC Connections Pool (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) ist ein Factory Service. Wenn Sie Verbindungen benötigen, die unterschiedliche Eigenschaften verwenden, zum Beispiel schreibgeschützten oder Lese-/Schreibzugriff, erstellen Sie mehrere Konfigurationen.
 
