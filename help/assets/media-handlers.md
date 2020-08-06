@@ -15,7 +15,7 @@ ht-degree: 79%
 
 Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Media-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungs-Aufgabe und delegiert dann die spezifischen Aufgaben an die Media-Handler, z. B. die Erstellung von Miniaturbildern oder die Metadaten-Extraktion.
 
-Ein Workflow kann definiert werden, der automatisch ausgeführt wird, wenn ein Asset eines bestimmten Typs oder Formats auf den Server hochgeladen wird. Die Verarbeitungsschritte werden als eine Reihe von AEM Assets-Medienhandlern definiert. AEM bietet einige [integrierte Handler](#default-media-handlers) und zusätzliche Handler können entweder [speziell entwickelt](#creating-a-new-media-handler) oder definiert werden, indem der Prozess an ein [Befehlszeilen-Tool](#command-line-based-media-handler) delegiert wird.
+Ein Workflow kann definiert werden, der automatisch ausgeführt wird, wenn ein Asset eines bestimmten Typs oder Formats auf den Server hochgeladen wird. Die Verarbeitungsschritte werden als eine Reihe von AEM Assets-Media-Handlern definiert. AEM bietet einige [integrierte Handler](#default-media-handlers) und zusätzliche Handler können entweder [speziell entwickelt](#creating-a-new-media-handler) oder definiert werden, indem der Prozess an ein [Befehlszeilen-Tool](#command-line-based-media-handler) delegiert wird.
 
 Medien-Handler sind Dienste innerhalb von AEM Assets, die spezielle Aktionen an Assets durchführen. Wenn beispielsweise eine MP3-Audiodatei in AEM hochgeladen wird, löst ein Workflow einen MP3-Handler aus, der die Metadaten extrahiert und ein Miniaturbild erstellt. Medien-Handler werden normalerweise in Verbindung mit Workflows verwendet. Die meisten gängigen MIME-Typen werden in AEM unterstützt. Spezielle Aufgaben können an Assets durchgeführt werden, indem Workflows erweitert bzw. erstellt, Medien-Handler erweitert bzw. erstellt oder Medien-Handler deaktiviert bzw. aktiviert werden.
 
@@ -462,7 +462,7 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 
 Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt so einrichten, dass jedes Mal, wenn ein Asset mit dem MIME-Typ GIF oder TIFF zu /content/dam auf dem AEM-Server hinzugefügt wird, ein gespiegeltes Bild des Originals zusammen mit drei zusätzlichen Miniaturbildern (140x100, 48x48 und 10x250) erstellt wird.
 
-Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf dem Datenträger, auf dem der AEM-Server gehostet wird:
+Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf der Festplatte, auf der der AEM Server gehostet wird:
 
 1. Installieren von ImageMagick. Weitere Informationen finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) .
 1. Richten Sie das Tool ein, damit Sie den Befehl „convert“ über die Befehlszeile ausführen können.
