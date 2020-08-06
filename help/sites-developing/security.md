@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
 source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +24,7 @@ Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folge
 
 ## Verwenden Sie Sitzungsanfragen {#use-request-session}
 
-Gemäß dem Grundsatz der Mindestberechtigungen empfiehlt Adobe, dass für jeden Repository-Zugriff die Sitzung verwendet wird, die an die Benutzeranforderung gebunden ist, und dass die Zugriffskontrolle ordnungsgemäß durchgeführt wird.
+Entsprechend dem Prinzip der Zugriffsrechte auf das Repository empfiehlt Adobe, dass jeder Repository-Zugriff über die an die Benutzeranforderung gebundene Sitzung und die richtige Zugriffskontrolle erfolgt.
 
 ## Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -55,9 +58,9 @@ Das webservicesupport-Modul schreibt Statistiken und Konfigurationsinformationen
 
 Mit den Standardberechtigungen:
 
-* Autorenumgebung: `read` für `contributors`
+* Autor-Umgebung: `read` for `contributors`
 
-* Veröffentlichungsumgebung: `read` für `everyone`
+* Umgebung veröffentlichen: `read` for `everyone`
 
 ## Schützen Sie sich vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery-attacks}
 
