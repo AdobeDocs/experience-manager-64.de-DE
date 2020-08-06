@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden [Konfigurations-](/help/sites-administering/contexthub-config.md) und [Entwicklerdokumentation](/help/sites-developing/contexthub.md).
 
-Der Kundenkontext ist ein Mechanismus, mit dem Sie bestimmte Informationen über die aktuelle Seite und den Besucher erhalten. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
+Der Client-Kontext ist ein Mechanismus, mit dem Sie bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher erhalten. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
 
 ![clientcontext_alisonparker](assets/clientcontext_alisonparker.png)
 
@@ -50,18 +53,18 @@ ClientContext kann die folgenden Eigenschaften anzeigen ([abhängig von der mit 
 **Surfer-Informationen** Zeigt die folgenden clientseitigen Informationen an:
 
 * die **IP-Adresse**
-* **Suchbegriffe** für Suchmaschinenverweise
+* **Suchbegriffe** , die für Suchmaschinenverweise verwendet werden
 * der **verwendete Browser**
 * das **Betriebssystem** , das verwendet wird
 * die **Bildschirmauflösung**
 * X-Position der **Maus**
 * die Y **-Position der** Maus
 
-**Aktivitäts-Stream** : Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. zum Beispiel die AEM-Foren, Blogs, Ratings usw.
+**Aktivität Stream** : Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. zum Beispiel die AEM Foren, Blogs, Ratings usw.
 
 **Kampagne** Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
-Die Kampagnenauflösung basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
+Die Auflösung der Kampagne basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
 **Warenkorb** zeigt Informationen zum Warenkorb einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), gelöste Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
 
@@ -85,7 +88,7 @@ Bei Anzeige in der Kontext-Cloud nutzt die Komponente eine Google-API, um eine K
 
 **JSONP Store** Eine Komponente, die Inhalte anzeigt, die von Ihrer Installation abhängig sind.
 
-Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-App mit Servern in einer anderen Domäne kommunizieren kann). Es besteht darin, das JSON-Objekt in einen Funktionsaufruf einzuschließen, um es als eine von der anderen Domäne (eine zulässige Ausnahme von derselben Ursprungsrichtlinie) laden zu können.
+Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-App mit Servern in einer anderen Domäne kommunizieren kann). Es besteht darin, das JSON-Objekt in einen Funktionsaufruf einzuschließen, um es als eine von der anderen Domäne zu laden (was eine zulässige Ausnahme von der gleichen Herkunft ist).
 
 Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Informationen aus einer anderen Domäne, ohne dass für diese Informationen ein Proxy in der aktuellen Domäne benötigt wird. Siehe hierzu das Beispiel unter [Speichern von Daten in ClientContext über JSON](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
@@ -93,7 +96,7 @@ Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Information
 >
 >Der JSONP-Store speichert die Informationen nicht im Cookie zwischen, ruft aber die Daten bei jedem Seitenladevorgang ab.
 
-**Profildaten** Zeigt die im Benutzerprofil erfassten Informationen an. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
+**Profil Data** zeigt Informationen, die im Profil des Benutzers erfasst wurden. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
 
 **Gelöste Segmente** Zeigt an, welche Segmente zurzeit aufgelöst werden (häufig abhängig von anderen im Kundenkontext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
 
@@ -240,7 +243,7 @@ Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Si
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 1. Kehren Sie zur Geometrixx Outdoors-Homepage zurück und aktualisieren Sie die Seite. ClientContext umfasst nun die Informationen aus der Komponente „JSONP-Store“.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
