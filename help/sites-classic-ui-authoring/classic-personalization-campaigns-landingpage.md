@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 83%
 
 ---
 
@@ -129,7 +132,7 @@ Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textli
 
 **Beschriftung** Der Text, den Benutzer sehen. Sie können die Formatierung mit dem Rich-Text-Editor anpassen.
 
-**Ziel-URL** Geben Sie den URI ein, den die Benutzer besuchen sollen, wenn sie auf den Text klicken.
+**URL** der Zielgruppe Geben Sie den URI ein, den die Benutzer beim Klicken auf den Text aufrufen sollen.
 
 **Renderoptionen** Beschreibt Renderoptionen. Wählen Sie aus den Folgenden:
 
@@ -154,7 +157,7 @@ Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild 
 
 **Beschriftung** Der Text, den Benutzer in der Grafik sehen. Sie können die Formatierung mit dem Rich-Text-Editor anpassen.
 
-**Ziel-URL** Geben Sie den URI ein, den die Benutzer beim Klicken auf das Bild besuchen sollen.
+**URL** der Zielgruppe Geben Sie den URI ein, den die Benutzer beim Klicken auf das Bild aufrufen sollen.
 
 **Renderoptionen** Beschreibt Renderoptionen. Wählen Sie aus den Folgenden:
 
@@ -244,7 +247,7 @@ Im folgenden Abschnitt werden die Komponenten beschrieben, die in CTA-Lead-Formu
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-**Geschlechtsspezifische** Benutzer können ihr Geschlecht aus einer Dropdownliste auswählen.
+**Geschlechtsspezifische** Benutzer können ihr Geschlecht aus einer Dropdown-Liste auswählen.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -252,7 +255,7 @@ Im folgenden Abschnitt werden die Komponenten beschrieben, die in CTA-Lead-Formu
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-**Interessentenformular** Fügen Sie diese Komponente hinzu, um Ihrer Einstiegsseite ein Interessentenformular hinzuzufügen. Ein Lead-Formular enthält automatisch die Felder Beginn des Lead-Formulars und Ende des Lead-Formulars. Zwischen diesen Feldern fügen Sie die in diesem Abschnitt beschriebenen Lead-Formular-Komponenten hinzu.
+**Interessentenformular** Hinzufügen diese Komponente, um ein Interessentenformular zu Ihrer Landingpage hinzuzufügen. Ein Lead-Formular enthält automatisch die Felder Beginn des Lead-Formulars und Ende des Lead-Formulars. Zwischen diesen Feldern fügen Sie die in diesem Abschnitt beschriebenen Lead-Formular-Komponenten hinzu.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -269,7 +272,7 @@ Für die Konfiguration sind zwei Registerkarten verfügbar: **Formular** und **E
 **Danksagungsseite**
 Die Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wenn dies leer gelassen wird, wird das Formular nach der Übermittlung erneut angezeigt.
 
-**Arbeitsablauf** starten Legt fest, welcher Arbeitsablauf ausgelöst wird, sobald ein Interessentenformular gesendet wurde.
+**Beginn-Workflow** Legt fest, welcher Workflow ausgelöst wird, sobald ein Interessentenformular gesendet wurde.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -277,8 +280,8 @@ Die Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wen
 
 * Lead erstellen
 * E-Mail-Dienst: Abonnenten erstellen und zu Liste hinzufügen - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget nutzen.
-* E-Mail-Dienst: E-Mail mit automatischer Antwort senden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Serviceanbieter wie ExactTarget verwenden.
-* E-Mail-Dienst: Benutzer von Liste abmelden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Service-Provider wie ExactTarget verwenden.
+* E-Mail-Dienst: E-Mail mit automatischer Antwort senden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstleister wie ExactTarget verwenden.
+* E-Mail-Dienst: Benutzer von Liste abmelden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstleister wie ExactTarget verwenden.
 * Benutzer entfernen
 
 **Formular-ID** Die Formular-ID identifiziert das Interessentenformular eindeutig. Verwenden Sie die Formular-ID, wenn sich mehrere Formulare auf einer Seite befinden. Achten Sie darauf, dass die Formulare unterschiedliche IDs haben.
@@ -287,7 +290,7 @@ Die Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wen
 
 Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
 
-**Client-Validierung** Gibt an, ob für dieses Formular eine Client-Validierung erforderlich ist (Servervalidierung erfolgt immer). Dies kann zusammen mit der Forms Captcha-Komponente erreicht werden.
+**Client-Validierung** Gibt an, ob für dieses Formular eine Client-Validierung erforderlich ist (Servervalidierung tritt immer ein). Dies kann in Verbindung mit der Forms Captcha-Komponente erreicht werden.
 
 **Überprüfungsressource-Typ** Definiert den Formularüberprüfungsressourcentyp, wenn Sie das gesamte Interessentenformular (anstelle einzelner Felder) validieren möchten.
 
@@ -365,7 +368,7 @@ Nachdem Sie das Designpaket fertiggestellt haben, können Sie es folgendermaßen
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Ziehen Sie das Designpaket per Drag-and-Drop auf den Ablagebereich. Beachten Sie, dass die Richtung des Pfeiles sich ändert, wenn ein Paket darüber gezogen wird.
-1. Als Ergebnis des Drag-and-Drop-Vorgangs sehen Sie Ihre Einstiegsseite anstatt der Importtool-Seite. Ihre HTML-Einstiegsseite wurde erfolgreich importiert.
+1. Als Ergebnis des Drag-and-Drop-Vorgangs sehen Sie Ihre Einstiegsseite anstatt der Importtool-Seite. Ihre HTML-Landingpage wurde erfolgreich importiert.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -437,7 +440,7 @@ Der einzige Unterschied liegt darin, dass Sie bei Löschen einer Desktop-Einstie
 
 ### Veröffentlichen einer Einstiegsseite {#publishing-a-landing-page}
 
-Sie können die Einstiegsseite und alle zugehörigen Abhängigkeiten wie eine normale Seite veröffentlichen.
+Sie können die Landingpage und alle zugehörigen Abhängigkeiten wie eine normale Seite veröffentlichen.
 
 >[!NOTE]
 >
