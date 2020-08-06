@@ -8,6 +8,9 @@ contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 57%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 ## AEM Foundation GDPR support {#aem-foundation-gdpr-support}
 
-Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benutzerprofil. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
+Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das User-Profil. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
@@ -84,7 +87,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   Die Benutzeroberfläche zeigt dann an, dass der Benutzer deaktiviert wurde, indem er die Profilkarte ausgrauert und eine Sperre hinzugefügt hat:
+   Die Benutzeroberfläche weist dann darauf hin, dass der Profil deaktiviert wurde, indem er die Karte ausgrauert und eine Sperre hinzugefügt hat:
 
    ![disableuser](assets/disableduser.png)
 
@@ -101,7 +104,8 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Löschen Sie die Profilknoten und die ihnen zugehörigen untergeordneten Elemente. Abhängig von der AEM-Version liegen die Profilknoten in zwei unterschiedlichen Formaten vor:
 
    1. The default private profile under `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`für neue Profile, die mit AEM 6.4 erstellt wurden.
+   1. `[!UICONTROL /profiles]`, für neue Profil, die mit AEM 6.4 erstellt wurden.
+
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP-API {#http-api-1}
@@ -125,7 +129,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Löschen von Benutzerprofilen*
 
-Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profilknotenspeicherorte:
+Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profil-Knotenpunkte:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
