@@ -80,7 +80,7 @@ Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnu
 
 Der Standardwert ist eine leere Zeichenfolge.
 
-**Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
+**Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträgercache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
 **Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
@@ -88,7 +88,7 @@ Der Standardwert ist eine leere Zeichenfolge.
 * **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[Name der AEM-Forms-Domäne]\adobe\[Name des Formularservers]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners von AEM Forms erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. The subdirectory is named adobeform_[servername].
+**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners für AEM Formulare erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. The subdirectory is named adobeform_[servername].
 
 >[!NOTE]
 >
