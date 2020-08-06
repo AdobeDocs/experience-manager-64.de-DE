@@ -168,7 +168,7 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 So erstellen Sie eine neue Rollout-Konfiguration:
 
-1. Öffnen Sie CRXDE Lite; Beispiel:
+1. Offene CRXDE Lite; Beispiel:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Navigieren Sie zu :
@@ -219,7 +219,7 @@ Rollout-Konfigurationen werden unter dem [Rollout-Konfigurationsknoten](#create-
 
 Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. Die Reihenfolge der Synchronisierungsaktionsknoten bestimmt die Reihenfolge, in der die Aktionen durchgeführt werden.
 
-1. Wählen Sie in CRXDE Lite weiterhin den Knoten [Rollout-Konfiguration](#create-the-rollout-configuration) aus.
+1. Wählen Sie in CRXDE Lite Ihren Knoten [Rollout-Konfiguration](#create-the-rollout-configuration) aus.
 
    Beispiel:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
