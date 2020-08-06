@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 10%
 
 ---
 
@@ -22,17 +25,17 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!CAUTION]
 >
->Die Content Services-Funktion wird nur zu Vorschauzwecken dokumentiert.
+>Die Content Services-Funktion wird nur zu Zwecken der Vorschau dokumentiert.
 >
 >Es kann mit der Veröffentlichung von 6.3 GA Service Pack 1 geändert werden.
 
-AEM Mobile Content Services ist eine einfache Funktion zum Anfordern von Inhalten, die von AEM verwaltet werden. Dadurch erhalten alle App-Entwickler eine leistungsstarke Möglichkeit, Inhalte abzurufen, ohne über umfassende Kenntnisse des Inhalts-Repository (JCR) und des Web-Frameworks (Sling) von AEM verfügen zu müssen. Dadurch können die anfordernden Anwendungen vom Inhalts-Repository entkoppelt werden.
+AEM Mobile Content Services ist eine einfache Funktion zum Anfordern von Inhalten, die von AEM verwaltet werden. Dadurch erhalten alle App-Entwickler eine leistungsstarke Möglichkeit, Inhalte abzurufen, ohne über umfassende Kenntnisse im Content Repository (JCR) und im Web Framework (Sling) verfügen zu müssen. Dadurch können die anfordernden Anwendungen vom Inhalts-Repository entkoppelt werden.
 
-Content Services stellt mehrere neue AEM-Konstrukte vor, mit denen Entwickler auf AEM-verwaltete Inhalte zugreifen können, ohne die Repository-Struktur dieses Inhalts zu kennen.
+Content Services bietet verschiedene neue AEM-Konstrukte, die Entwicklern den Zugriff auf AEM verwalteten Inhalt ermöglichen, ohne die Repository-Struktur dieses Inhalts zu kennen.
 
-Diese Konstrukte sind erforderlich, um Flexibilität zu gewährleisten und eine künftige Erweiterung zu ermöglichen, indem eine Abstraktionsebene zwischen den von AEM verwalteten Inhalten und den mobilen Apps, die den Inhalt konsumieren, bereitgestellt wird. Dadurch kann AEM Content Services als Abstraktionsebene zwischen den Inhaltsanforderungen der nativen Anwendung und dem AEM-Inhalts-Repository verwendet werden.
+Diese Konstrukte sind erforderlich, um Flexibilität zu gewährleisten und eine künftige Erweiterung zu ermöglichen, indem eine Abstraktionsebene zwischen den AEM verwalteten Inhalten und den mobilen Apps, die die Inhalte verbrauchen, bereitgestellt wird. Auf diese Weise kann AEM Content Services als Abstraktionsebene zwischen den Inhaltsanforderungen der nativen Anwendung und dem AEM Content Repository arbeiten.
 
-Content Services kann die Inhalte als Assets, verpacktes HTML (HTML/CSS/JS) oder als kanalunabhängige Inhalte bereitstellen.
+Content Services kann die Inhalte als Assets, verpacktes HTML (HTML/CSS/JS) oder als Kanal-unabhängige Inhalte bereitstellen.
 
 >[!CAUTION]
 >
@@ -44,8 +47,8 @@ Content Services kann die Inhalte als Assets, verpacktes HTML (HTML/CSS/JS) oder
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-Nachdem Sie das Flag &quot;Content Services&quot;und die Datenmodelle in Configuration Browser aktiviert haben, sehen Sie sich die folgenden Ressourcen an, um mit AEM Mobile Content Services zu beginnen, und lernen Sie die Content Services-Konzepte kennen, wie z. B. Modellverwaltung, Entitätsverwaltung und anschließende Inhaltsbereitstellung/-wiedergabe für AEM Mobile Content Services.
+Nachdem Sie das Flag &quot;Content Services&quot;und die Datenmodelle in Configuration Browser aktiviert haben, sehen Sie sich die folgenden Ressourcen an, um mit AEM Mobile Content Services zu beginnen. Lernen Sie die Content Services-Konzepte kennen, wie z. B. Modellverwaltung, Entitätsverwaltung, gefolgt von Content Versand/Rendering für AEM Mobile Content Services.
 
 * Modelle im Repository
-* Wiedergabe und Bereitstellung
+* Rendern und Versand
 
