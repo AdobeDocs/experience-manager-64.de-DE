@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 68%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
 
 In diesem Abschnitt ist beschrieben, wie Sie den [Query Builder](/help/sites-developing/querybuilder-api.md) durch Implementieren eines benutzerdefinierten Prädikat-Auswerters erweitern können.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Mit dem [Query Builder](/help/sites-developing/querybuilder-api.md) können Sie problemlos das Inhalts-Repository abfragen. Im Lieferumfang von AEM sind eine Reihe von Auswertern für die Vorhersage enthalten, die Ihnen beim Umgang mit Ihren Daten helfen.
+Mit dem [Query Builder](/help/sites-developing/querybuilder-api.md) können Sie problemlos das Inhalts-Repository abfragen. AEM enthält eine Reihe von Bewertungsfaktoren, die Ihnen beim Umgang mit Ihren Daten helfen.
 
 Sie möchten jedoch vielleicht Abfragen vereinfachen, indem Sie einen benutzerdefinierten Prädikat-Auswerter implementieren, der weniger komplex ist und für eine bessere Semantik sorgt.
 
@@ -83,7 +86,7 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-Diese Abfrage ist zwar gültig, jedoch schwer zu lesen. Außerdem wird die Beziehung zwischen den drei Replikationseigenschaften nicht hervorgehoben. Die Implementierung eines benutzerdefinierten Prädikatsauswerters verringert die Komplexität und verbessert die Semantik dieser Abfrage.
+Diese Abfrage ist zwar gültig, jedoch schwer zu lesen. Außerdem wird die Beziehung zwischen den drei Replikationseigenschaften nicht hervorgehoben. Die Implementierung eines benutzerdefinierten Prognoseauswerters verringert die Komplexität und verbessert die Semantik dieser Abfrage.
 
 ### Ziele {#objectives}
 
@@ -97,7 +100,7 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-Durch die Gruppierung von Replikationsmetadaten wird eine aussagekräftige Abfrage mithilfe eines benutzerspezifischen Prädikatsauswerters erstellt.
+Durch die Gruppierung von Replikationsmetadaten wird eine aussagekräftige Abfrage mit einem benutzerdefinierten Prädikat-Evaluator ermöglicht.
 
 ### Aktualisieren von Maven-Abhängigkeiten {#updating-maven-dependencies}
 
