@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 62%
 
 ---
 
@@ -295,7 +298,7 @@ Im Folgenden finden Sie eine Liste mit VLT-Optionen, die für alle Befehle verf�
 
 |  |  |
 |--- |--- |
-| Wahl | Beschreibung |
+| Option | Beschreibung |
 | `-Xjcrlog <arg>` | Erweiterte JCRlog-Optionen |
 | `-Xdavex <arg>` | Erweiterte JCR-Entfernungsoptionen |
 | `--credentials <arg>` | Die zu verwendenden Standardberechtigungen |
@@ -327,7 +330,7 @@ Die folgende Tabelle beschreibt alle verfügbaren VLT-Befehle. Detaillierte Info
 | `proplist` | `pl` | Druckt die Eigenschaften von Dateien oder Verzeichnissen. |
 | `propset` | `ps` | Legt den Wert einer Eigenschaft in Dateien oder Verzeichnissen fest. |
 | `add` |  | Legt Dateien und Ordner unter Versionskontrolle. |
-| `delete` | `del` oder `rm` ermöglichen. | Entfernt Dateien und Verzeichnisse aus der Versionskontrolle. |
+| `delete` | `del` oder `rm` sein. | Entfernt Dateien und Verzeichnisse aus der Versionskontrolle. |
 | `diff` | `di` | Zeigt die Unterschiede zwischen zwei Pfaden an. |
 | `console` |  | Führt eine interaktive Konsole aus. |
 | `rcp` |  | Kopiert einen Knotenbaum von einem Remote-Repository in ein anderes. |
@@ -469,7 +472,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 | `-N (--non-recursive)` | auf einem einzelnen Verzeichnis ausgeführt wird |
 | `<file> [<file> ...]` | Datei oder Verzeichnis zur Anzeige des Status |
 
-### Update {#update}
+### Aktualisieren {#update}
 
 Kopiert Änderungen aus dem Repository in die Arbeitskopie.
 
