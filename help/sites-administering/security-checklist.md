@@ -54,9 +54,9 @@ Adobe empfiehlt dringend, dass Sie das Kennwort für die mit allen Berechtigunge
 
 Diese Konten beinhalten:
 
-* Das AEM- `admin` Konto
+* Das AEM `admin` Konto
 
-   Nachdem Sie das Kennwort für das AEM-Administratorkonto geändert haben, müssen Sie beim Zugriff auf CRX das neue Kennwort verwenden.
+   Nachdem Sie das Kennwort für das AEM Admin-Konto geändert haben, müssen Sie beim Zugriff auf CRX das neue Kennwort verwenden.
 
 * Das `admin` Kennwort für die OSGi-Webkonsole
 
@@ -301,7 +301,7 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
       **Max. JSON-Ergebnisse** ( `json.maximumresults`)
 
-      in der Konfiguration für das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
+      in der Konfiguration für den [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
 
    * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
