@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 translation-type: tm+mt
 source-git-commit: 4ca6d4e59843656d289c0d650a68d8c9cf2ff0a0
+workflow-type: tm+mt
+source-wordcount: '2725'
+ht-degree: 84%
 
 ---
 
@@ -78,6 +81,7 @@ Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung 
 >
 >* von org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService zu org.apache.jackrabbit.oak.segment.standby.store.StandbyStore.StandbyStoreService
 >* von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+
 >
 >
 Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um dieser Änderung Rechnung zu tragen.
@@ -97,11 +101,13 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
    1. Erstellen Sie im selben Verzeichnis die Datei `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` und konfigurieren Sie sie entsprechend. Weitere Informationen zu den Konfigurationsoptionen finden Sie unter [Konfiguration](/help/sites-deploying/tarmk-cold-standby.md#configuration).
    1. If you are using an AEM TarMK instance with an external data store, create a folder named `crx3` under `aem-primary/crx-quickstart/install` named `crx3`
    1. Speichern Sie die Konfigurationsdatei für den Datenspeicher im Ordner `crx3`.
+
    Wenn Sie beispielsweise eine AEM-TarMK-Instanz mit einer externen Datenspeicherdatei ausführen, benötigen Sie die folgenden Konfigurationsdateien:
 
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
    * `aem-primary/crx-quickstart/install/crx3/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`
+
    Nachfolgend finden Sie Beispielkonfigurationen für die primäre Instanz:
 
    **Beispiel für org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -150,6 +156,7 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
    1. Bearbeiten Sie die Dateien und erstellen Sie die erforderlichen Konfigurationen.
+
    Nachfolgend finden Sie Beispiel-Konfigurationsdateien für eine typische Standby-Instanz:
 
    **Beispiel für org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -253,23 +260,23 @@ Darüber hinaus werden bei der Ausführung über einen nicht freigegebenen `File
 *DEBUG* [nioEventLoopGroup-228-1] org.apache.jackrabbit.oak.segment.standby.codec.ReplyDecoder received blob with id eb26faeaca7f6f5b636f0ececc592f1fd97ea1a9#169102 and size 169102
 ```
 
-### Konfiguration{#configuration}
+### Konfiguration {#configuration}
 
 Die folgenden OSGi-Einstellungen sind für den Cold-Standby-Dienst verfügbar:
 
 * **Konfiguration beibehalten:** Bei Aktivierung dieser Option wird die Konfiguration im Repository anstatt wie üblich in den OSGi-Konfigurationsdateien gespeichert. Es wird empfohlen, diese Einstellung auf Produktionssystemen zu deaktivieren, damit die Konfiguration der primären Instanz nicht von der Standby-Instanz abgerufen wird.
 
-* **`mode`Modus (**): wird der Ausführungsmodus der Instanz ausgewählt.
+* **Modus (`mode`):** wird der Ausführungsmodus der Instanz ausgewählt.
 
 * **Port (port):** Der für die Kommunikation zu verwendende Port. Der Standardwert lautet `8023`.
 
-* **`primary.host`Primärhost (**): - der Host der primären Instanz. Diese Einstellung gilt nur für die Standby-Instanz.
-* **`interval`Synchronisierungsintervall (**): - Diese Einstellung bestimmt das Intervall zwischen der Synchronisierungsanforderung und gilt nur für die Standby-Instanz.
+* **Primär Host (`primary.host`):** - der Host der primären Instanz. Diese Einstellung gilt nur für die Standby-Instanz.
+* **Synchronisierungsintervall (`interval`):** - Diese Einstellung bestimmt das Intervall zwischen der Synchronisierungsanforderung und gilt nur für die Standby-Instanz.
 
-* **`primary.allowed-client-ip-ranges`Zulässige IP-Bereiche (**): - die IP-Bereiche, von denen die primären Verbindungen zulassen.
-* **`secure`Sicher (**): Aktivieren Sie SSL-Verschlüsselung. Damit Sie die Einstellung nutzen können, muss sie auf allen Instanzen aktiviert werden.
-* **`standby.readtimeout`Standby Read Timeout (**): Timeout für Anforderungen, die von der Standby-Instanz in Millisekunden ausgegeben werden. **Die empfohlene Timeout-Einstellung lautet 43200000. In der Regel wird empfohlen, einen Timeout-Wert von mindestens 12 Stunden festzulegen.**
-* **`standby.autoclean`Automatische Standby-Bereinigung (**): Rufen Sie die Bereinigungsmethode auf, wenn die Größe des Speichers bei einem Synchronisierungszyklus zunimmt.
+* **Zulässige IP-Bereiche (`primary.allowed-client-ip-ranges`):** - die IP-Bereiche, von denen die primären Verbindungen zulassen.
+* **Sicher (`secure`):** Aktivieren Sie SSL-Verschlüsselung. Damit Sie die Einstellung nutzen können, muss sie auf allen Instanzen aktiviert werden.
+* **Standby Read Timeout (`standby.readtimeout`):** Timeout für Anforderungen, die von der Standby-Instanz in Millisekunden ausgegeben werden. **Die empfohlene Timeout-Einstellung lautet 43200000. In der Regel wird empfohlen, einen Timeout-Wert von mindestens 12 Stunden festzulegen.**
+* **Automatische Standby-Bereinigung (`standby.autoclean`):** Rufen Sie die Bereinigungsmethode auf, wenn die Größe des Speichers bei einem Synchronisierungszyklus zunimmt.
 
 >[!NOTE]
 >
@@ -332,7 +339,7 @@ Dieser Knoten verfügt über fünf schreibgeschützte Attribute:
 
 Darüber hinaus gibt es drei aufrufbare Methoden:
 
-* `start():` startet den Synchronisierungsprozess.
+* `start():` Der Synchronisierungsprozess wird Beginn.
 * `stop():` beendet den Synchronisierungsprozess.
 * `cleanup():` Führt den Bereinigungsvorgang auf der Standby-Instanz durch.
 
@@ -388,6 +395,7 @@ Es ist wichtig, hin und wieder eine Speicherbereinigung (Garbage Collection) fü
 
    * On the primary, run the data store garbage collection via the relevant JMX bean as described in [this article](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * On the standby, the data store garbage collection is available only via the **BlobGarbageCollection** MBean - `startBlobGC()`. The **RepositoryManagement** MBean is not available on the standby.
+
    >[!NOTE]
    >
    >Wenn Sie keinen freigegebenen Datenspeicher verwenden, muss die Speicherbereinigung zuerst auf der primären und dann auf der Standby-Instanz ausgeführt werden.
