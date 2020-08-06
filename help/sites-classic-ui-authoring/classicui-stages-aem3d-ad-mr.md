@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * Gerichtete Beleuchtung
    * Spotlichter
    * Punktlichter 
+
    Andere Lichtarten werden ignoriert oder in eine der oben genannten unterstützten Lichtarten konvertiert, wenn die Bühnendatei in AEM 3D geladen wird. Die konvertierten Lichtarten werden beim Anzeigen des Assets und beim Rendern mit dem integrierten Renderer Rapid Refine verwendet. Die ursprünglichen Lichtarten werden beim Rendern mit Maya verwendet.
 
 1. Erstellen Sie, falls erforderlich, eine neue Ausgangsebene und wenden Sie ein geeignetes Material an.
