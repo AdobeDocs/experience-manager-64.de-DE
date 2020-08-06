@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
 source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+workflow-type: tm+mt
+source-wordcount: '3313'
+ht-degree: 93%
 
 ---
 
@@ -194,6 +197,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
    * Interaktion der Anwendungen miteinander und mit Anwendern
    * Daten, die von den Anwendungen genutzt und produziert werden sollen, nicht ihre interne Struktur
+
    Die Definitionen sollten Folgendes umfassen:
 
    * grundlegende Code-Struktur für das Projekt;
@@ -233,7 +237,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
    Vor der Entwicklung sollten alle Unterstützungsprozesse, die zur Bereitstellung, zur Veröffentlichung, zum Test und zur Meldung von Problemen notwendig sind, erstellt werden.
 
-   Informationen finden Sie auch im [Adobe Support-Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+   Informationen finden Sie auch im [Adobe Support-Portal](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Ablaufplanung und Abläufe {#operations-planning-and-operations}
 
@@ -251,6 +255,7 @@ Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um
    * Definition of the use of privileges that impact the publish environment; for example, `replicate`
    * Für Benutzer mit minimalen Privilegien sollten Workflows definiert werden
    * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
+
    For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Überwachung und Wartung**
@@ -259,6 +264,7 @@ Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um
 
    * was überwacht werden muss;
    * Wartungsaufgaben, sowohl für die regelmäßige Wartung als auch besondere Fälle.
+
    Weitere Informationen finden Sie unter [Überwachung und Wartung](/help/sites-deploying/monitoring-and-maintaining.md).
 
 * **Migration**
@@ -358,6 +364,7 @@ Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität 
 
    * die Lösung die Anforderungen des Benutzers/Kunden erfüllt;
    * der Kunde/Benutzer die Lösung akzeptiert (Funktion, Design und Leistung);
+
    eine formelle Checkliste sollte für die Kundenübergabe erstellt werden, die idealerweise automatisiert ist und nächtlich gegenüber einer Momentaufnahme durchgeführt wird. Die Ergebnisse sollten an den Projektmanager oder das Entwicklerteam weitergeleitet werden.
 
 * **Testen der Leistung und Belastbarkeit**
@@ -369,6 +376,7 @@ Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität 
    * [Leistungstests](/help/sites-deploying/configuring-performance.md)
    * [Planen und Ausführen von Tests](/help/sites-developing/planning.md)
    * [Grundlegende Leistungsrichtlinien](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
+
    >[!NOTE]
    >
    >Dieser Prozess muss auch während der normalen Verwendung von AEM fortgeführt werden, diese frühen Phasen sind jedoch am wichtigsten.
@@ -593,7 +601,7 @@ Weitere Informationen zu Best Practices für die Bereitstellung, Verwaltung, Ent
 
 * Dokumentation zu AEM
 
-   Darüber hinaus sind die folgenden Abschnitte der AEM-Dokumentation von besonderem Interesse (diese Liste ist jedoch nicht vollständig):
+   Darüber hinaus sind die folgenden Abschnitte AEM Dokumentation von besonderem Interesse (diese Liste ist jedoch nicht erschöpfend):
 
    * [Sicherheit](/help/sites-developing/security.md)
    * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
@@ -602,7 +610,7 @@ Weitere Informationen zu Best Practices für die Bereitstellung, Verwaltung, Ent
    * AEM-Konzepte:
       * [Entwickeln der Grundlagen](/help/sites-developing/the-basics.md)
       * [MSM-Konzepte](/help/sites-administering/msm.md)
-      * [HTML-Vorlagensprache (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
+      * [HTML-Vorlagensprache (HTL)](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html)
 
 * Verwandte Dokumentation
-   * Adobe Experience Cloud - [Planung für Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud - [Planung für Adobe Experience Cloud](https://helpx.adobe.com/de/marketing-cloud/how-to/planning.html)
