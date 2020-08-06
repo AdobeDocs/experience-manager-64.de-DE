@@ -11,11 +11,14 @@ topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
 source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
+workflow-type: tm+mt
+source-wordcount: '998'
+ht-degree: 49%
 
 ---
 
 
-# Definitionen für AEM Update Release Release Vehicle {#update-release-vehicle-definitions}
+# Definitionen für AEM Update Release Vehicle {#update-release-vehicle-definitions}
 
 Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe Experience Manager (AEM), einschließlich Vollversionen, Feature Packs und Services Packs, die Adobe für Kunden bereitstellt.
 
@@ -35,8 +38,8 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Benennung </strong></td> 
    <td>
     <ul> 
-     <li>Die Versionsnummern für größere Releases steigen nach der Formel X+1.Y.Z. </li> 
-     <li>Versionsnummern für kleinere Releases steigen je nach Formel X.Y+1.Z</li> 
+     <li>Die Versionsnummern für größere Releases erhöhen sich nach der Formel X+1.Y.Z. </li> 
+     <li>Versionsnummern für kleinere Releases erhöhen sich je nach Formel X.Y+1.Z</li> 
     </ul> <p>Dabei ist X die primäre Versionsnummer, Y die sekundäre Versionsnummer und Z die Patch-Nummer.</p> </td> 
   </tr>
   <tr>
@@ -52,8 +55,8 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Dokumentation</strong></td> 
    <td>
     <ul> 
-     <li>Versionshinweise finden Sie im Dokumentationsportal</li> 
-     <li>Dokumentation zu Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im Dokumentationsportal</li> 
+     <li>Versionshinweise finden Sie im Dokumentationsportal.</li> 
+     <li>Dokumentation zu Funktionen, Verbesserungen und Fehlerkorrekturen finden Sie im Dokumentationsportal</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -65,7 +68,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td>
     <ul> 
      <li>Lieferbar als eigenständiges Produktinstallationsprogramm</li> 
-     <li>Verfügbar auf der Lizenzierungs-Website und auf der Website für Managed Services</li> 
+     <li>Verfügbar auf der Lizenzierungs-Website und der Managed Services Licensing-Website</li> 
      <li>Eventuelle Migration zum Inhaltsrepository</li> 
     </ul> </td> 
   </tr>
@@ -146,7 +149,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Definition</strong></td> 
    <td>
     <ul> 
-     <li>Einzelauslieferungsmodell von Korrekturen</li> 
+     <li>Ein Versand-Modell für die Freigabe von Korrekturen</li> 
      <li>Aggregator-Inhaltspaket mit Inhaltspaket einzelner Komponenten</li> 
      <li>CFPs sind ein Rollover von Hotfixes, und es gibt keine Verbesserungen.</li> 
     </ul> </td> 
@@ -203,7 +206,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
   </tr>
   <tr>
    <td><strong>Lieferumfang </strong></td> 
-   <td>COFP ist ein kumulatives Fix Pack mit Fehlerbehebungen aller Oak Komponenten für eine bestimmte 1.x Version. Wenn der Kunde z. B. COHF 1.x.3 anwendet, gilt: COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td> 
+   <td>COFP ist ein kumulatives Fix Pack mit Fehlerbehebungen aller Oak-Komponenten für eine bestimmte 1.x-Version. Wenn der Kunde z. B. COHF 1.x.3 anwendet, gilt: COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td> 
   </tr>
   <tr>
    <td><strong>Dokumentation</strong></td> 
@@ -245,7 +248,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
   </tr>
   <tr>
    <td><strong>Dokumentation</strong></td> 
-   <td>Versionshinweise zu den öffentlichen Hotfixes sind nur nach Kundenanfragen über das AEM-Support-Portal verfügbar.</td> 
+   <td>Versionshinweise zu den öffentlichen Hotfixes sind nur nach Kundenanfragen über das AEM Support Portal verfügbar.</td> 
   </tr>
   <tr>
    <td><strong>Veröffentlichungsintervall </strong></td> 
@@ -266,7 +269,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td>
     <ul> 
      <li>Validiert durch die Kundenunterstützung</li> 
-     <li>Für AEM-Hotfixes gilt nicht die gleiche Qualitätssicherung wie für Service Packs oder Produktversionen. Daher sollten sie zuerst in einer Staging-Umgebung im Zuge des Qualitätsbereitstellungsprozesses geprüft werden.</li> 
+     <li>AEM Hotfixes profitieren nicht vom gleichen Qualitätssicherungsniveau wie Service Packs oder Produktversionen. Daher sollten sie zuerst in einer Staging-Umgebung im Zuge des Qualitätsbereitstellungsprozesses geprüft werden.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -300,7 +303,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Verfügbarkeit und Installation </strong></td> 
    <td>
     <ul> 
-     <li>Als Paket von der AEM-Kundenunterstützung bereitgestellt</li> 
+     <li>Lieferbar als Paket durch AEM Kundenunterstützung</li> 
      <li>Nicht unbedingt in Service Packs oder Vollversionen enthalten</li> 
     </ul> </td> 
   </tr>
@@ -319,7 +322,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Definition</strong></td> 
    <td>
     <ul> 
-     <li>Feature Packs sind Zusatzfunktionalitäten und werden über Service Packs bereitgestellt. Wenn eine AEM-Version ihr letztes Service Pack veröffentlicht hat, stellt Adobe in Zukunft kein Feature Pack dafür bereit.</li> 
+     <li>Feature Packs sind Zusatzfunktionalitäten und werden über Service Packs bereitgestellt. Wenn eine AEM Version ihr letztes Service Pack veröffentlicht hat, stellt die Adobe in Zukunft kein Feature Pack dafür bereit.</li> 
      <li>Die FPs enthalten Produktverbesserungen, die für eine spätere Produktversion geplant sind, aber aufgrund der Entscheidung des Produktmanagements von Adobe frühzeitig bereitgestellt werden.</li> 
      <li>Features werden immer mit der nächsten Hauptversion zusammengeführt und dann in die vom Kunden benötigte AEM-Version zurückportiert.</li> 
      <li>Feature Packs mit Funktionen von allgemeinem Interesse und GA Feature Packs werden mit dem nächsten Service Pack zusammengeführt</li> 
@@ -351,7 +354,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td>
     <ul> 
      <li>Wird als Paket bereitgestellt</li> 
-     <li>Steht über Package Share zur Verfügung. Kunden akzeptieren die Geschäftsbedingungen von Adobe über Package Share.</li> 
+     <li>Steht über Package Share zur Verfügung. Kunden akzeptieren die Geschäftsbedingungen der Adobe über Package Share.</li> 
     </ul> </td> 
   </tr>
   <tr>
