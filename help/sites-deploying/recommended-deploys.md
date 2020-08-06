@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 92%
 
 ---
 
@@ -73,7 +76,7 @@ Die Nachteile:
 
 >[!NOTE]
 >
->Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
 
 ### TarMK-Farm {#tarmk-farm}
 
@@ -144,7 +147,7 @@ Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach 
 1. Anzahl der benannten, verbundenen Benutzer an einem Tag: Tausende oder mehr.
 1. Anzahl der gleichzeitigen Benutzer: Hunderte oder mehr.
 1. Volumen der erfassten Assets pro Tag: Hunderttausende oder mehr.
-1. Anzahl der Seitenbearbeitungen pro Tag: in Hunderttausenden oder mehr (einschließlich automatisierter Aktualisierungen über Multi-Site-Manager oder z. B. News-Feed-Einträgen).
+1. Anzahl der Seitenbearbeitungen pro Tag: in Hunderttausenden oder mehr (einschließlich automatisierter Updates über Multi-Site-Manager oder z. B. News-Feed-Einstiege).
 1. Volumen der Suchvorgänge pro Tag: Zehntausende oder mehr.
 
 >[!NOTE]
@@ -188,7 +191,7 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 >[!NOTE]
 >
->Wenn Sie weitere Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen haben, wenden Sie sich an den [Kundendienst von Adobe](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Wenn Sie weitere Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen haben, wenden Sie sich an den [Kundendienst von Adobe](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Faktoren für AEM Communities {#considerations-for-aem-communities}
 
