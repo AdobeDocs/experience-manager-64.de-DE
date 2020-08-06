@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 17%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 ## Einführung {#introduction}
 
-Die `Leaderboard` Komponente bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Gemeinschaft interagieren, indem sie Mitglieder nach Punkten (Grundbewertung) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstufen.
+Die `Leaderboard` Komponente bietet die Möglichkeit, einen Eindruck davon zu erhalten, wie Mitglieder innerhalb der Gemeinschaft interagieren, indem sie Mitglieder nach Punkten (Basis-Scoring) oder ihrem Fachwissen (Advanced Scoring) einstufen.
 
-Bevor Sie die Lederboard-Komponente auf eine Seite einfügen, müssen Sie die [Bewertung und Abzeichen](implementing-scoring.md)für Communities konfigurieren.
+Bevor Sie die Komponente &quot;Lederboard&quot;auf eine Seite einfügen, müssen Sie die Bewertung und Abzeichen der [Communities konfigurieren](implementing-scoring.md).
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
@@ -65,13 +68,13 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** an, welche Inform
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Verwenden Sie Avatar]** Wenn aktiviert, wird das Avatar-Bild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds in die Lederboard aufgenommen.
+* **[!UICONTROL Verwenden Sie Avatar]** Wenn aktiviert, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds verknüpft.
 
    Diese Option ist standardmäßig deaktiviert.
 
 ### Registerkarte &quot;Regeln&quot; {#rules-tab}
 
-Auf der Registerkarte &quot; **[!UICONTROL Regeln]** &quot;finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln
+Auf der Registerkarte &quot; **[!UICONTROL Regeln]** &quot;finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln.
 
 * **[!UICONTROL Regelspeicherort]**(erforderlich) Der Speicherort, an dem die Regel für Bewertung/Abzeichen konfiguriert ist.
 
@@ -109,7 +112,7 @@ Konfiguration der Leaderboard-Komponente:
 
 ## Beispiel: Expert Leaderboard {#example-experts-leaderboard}
 
-Dieser Bericht des Lederboards beruht auf der Anwendung erweiterter Bewertungsregeln.
+Dieser Bericht des Lederboards ist das Ergebnis der Anwendung erweiterter Bewertungsregeln.
 
 Konfiguration der Leaderboard-Komponente:
 
