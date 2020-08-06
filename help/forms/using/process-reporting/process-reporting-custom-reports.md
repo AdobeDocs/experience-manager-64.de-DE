@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ Die REST-Schnittstelle CRX QueryBuilder stellt die Funktionalität des Asset Sha
    >
    >In jeder Abfrage verweist der Pfadparameter auf die Position der crx-Datenspeicherung und die Zeichen werden gemäß dem URL-Standard mit Escape-Zeichen versehen.
 
-## Erstellen eines Dienstes mit der Abfrage Builder-API {#creating-a-service-using-query-builder-api-nbsp}
+## Erstellen eines Dienstes mit der Abfrage Builder-API  {#creating-a-service-using-query-builder-api-nbsp}
 
 Voraussetzung für das Erstellen eines Dienstes mit der Abfrage Builder-API ist das [Erstellen und Bereitstellen des CQ OSGI-Bundles](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) und die [Verwendung der Abfrage Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
@@ -420,7 +423,7 @@ Die `pom.xml`Beispieldatei, die über dem Dienst erstellt werden soll, lautet:
 </project>
 ```
 
-## Erstellen einer separaten Benutzeroberfläche {#creating-a-separate-ui-nbsp}
+## Erstellen einer separaten Benutzeroberfläche  {#creating-a-separate-ui-nbsp}
 
 Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige der Ergebnisse sind die [Grundlagen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html)zum Sling, das [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen entsprechender [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche von Process Berichte {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche von Process Berichte  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige der Ergebnisse sind die [Grundlagen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html)zum Sling, das [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen entsprechender [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -640,6 +643,7 @@ Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige
    * **link**- Gibt den relativen Link zum Renderer der separaten Benutzeroberfläche an. Der Link wird in Schritt 1 erstellt.
    * **description**- Gibt die einzeilige Beschreibung des Berichts an. Sie können das Beschreibungsfeld leer lassen.
    * **icon**- Gibt das Bild an, das den Bericht bildlich darstellen soll. Sie können das Symbolfeld leer lassen.
+
    ![Knoteneigenschaften ](assets/nodeproperties.png)
 
    Knoteneigenschaften
