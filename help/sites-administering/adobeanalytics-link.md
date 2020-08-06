@@ -33,7 +33,7 @@ Wenn Benutzer auf Links auf Seiten Ihrer Website klicken, können Sie zugehörig
 
 ## Nachverfolgen von Datei-Downloads {#tracking-file-downloads}
 
-Konfigurieren Sie das Adobe Analytics-Framework, damit von verknüpften Seiten heruntergeladene Dateien automatisch als Downloads in Adobe Analytics verfolgt werden. Wenn Sie die Nachverfolgung von Downloads aktivieren, werden nur die von Ihnen angegebenen Dateitypen nachverfolgt.
+Konfigurieren Sie das Adobe Analytics-Framework so, dass von verknüpften Seiten heruntergeladene Dateien automatisch als Downloads in Adobe Analytics verfolgt werden. Wenn Sie die Nachverfolgung von Downloads aktivieren, werden nur die von Ihnen angegebenen Dateitypen nachverfolgt.
 
 Downloads der folgenden Dateitypen werden standardmäßig nachverfolgt:
 
@@ -117,7 +117,7 @@ So senden Sie Variablendaten bei Link-Klicks:
 
 Eigenschaften zum Senden von Variablendaten bei Link-Klicks:
 
-* **Ereignisse** verknüpfen Geben Sie die Adobe Analytics-Ereignis-Variablen ein, die Sie zum Zählen von Link-Klicks verwenden möchten.
+* **Ereignisse** verfolgen verknüpfen Geben Sie die Adobe Analytics-Ereignis-Variablen ein, die Sie zum Zählen von Link-Klicks verwenden möchten.
 
    Trennen Sie mehrere Variablennamen durch Kommas.
 
@@ -158,7 +158,7 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
   <tr> 
    <th>CQ-Variable<br /> </th> 
    <th>Eintrag im Variablenbrowser<br /> </th> 
-   <th>Adobe Analytics Variable</th> 
+   <th>Adobe Analytics-Variable</th> 
   </tr> 
   <tr> 
    <td>pagedata.title</td> 
@@ -180,7 +180,7 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
   <tr> 
    <th>CQ-Variable<br /> </th> 
    <th>Eintrag im Variablenbrowser</th> 
-   <th>Adobe Analytics Variable</th> 
+   <th>Adobe Analytics-Variable</th> 
   </tr> 
   <tr> 
    <td>eventdata.keyword</td> 
@@ -243,7 +243,7 @@ Der Abruf sieht bei der Anzeige mit Adobe Marketing Cloud Debugger wie folgt 
 1. Aktivieren Sie **Suchbegriff belassen**.
 1. Laden Sie die Seitenvorschau neu und klicken Sie auf den Link.
 
-Die im Adobe Marketing Cloud-Debugger angezeigten Aufrufdetails sind dem folgenden Beispiel ähnlich:
+Die im Adobe Marketing Cloud Debugger angezeigten Aufrufdetails ähneln dem folgenden Beispiel:
 
 ![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
 
