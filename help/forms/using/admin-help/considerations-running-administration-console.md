@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 89%
 
 ---
 
@@ -24,6 +27,7 @@ Folgendes sollte beim Ausführen von Administration Console beachtet werden:
 
    * Beim Klicken auf einen Link wechseln Sie zur Anmeldeseite zurück, nicht zum erwarteten Ziel des Links.
    * Beim Klicken auf einen Link wird ein Berechtigungsfehler angezeigt.
+
    Es wird empfohlen, Administration Console in einem anderen Browser auszuführen, z. B. Mozilla Firefox, um sicherzustellen, dass keine Links fehlerhaft funktionieren.
 
 * Verwenden Sie bei Suchvorgängen in Administration Console keine umgekehrten Schrägstriche (\).
