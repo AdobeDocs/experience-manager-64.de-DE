@@ -4,6 +4,9 @@ description: Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 73%
 
 ---
 
@@ -34,7 +37,7 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. In der Benutzeroberfläche von AEM Assets werden nur die Assets angezeigt, deren Titel genau mit &quot;Target&quot;übereinstimmen.
+1. Press **[!UICONTROL Enter]**. Die AEM Assets-Benutzeroberfläche zeigt nur die Assets an, deren Titel exakt mit &quot;Zielgruppe&quot;übereinstimmen.
 
 Mit der Volltextsuche-Funktion für GQL können Sie Assets auf der Grundlage folgender Elemente suchen:
 
@@ -42,25 +45,25 @@ Mit der Volltextsuche-Funktion für GQL können Sie Assets auf der Grundlage fol
 * Mehrere Werte für ein einzelnes Metadatenfeld
 * Übereinstimmende Teilzeichenfolgen
 
-Mit der Volltextsuche-Funktion GQL können Sie anhand der folgenden Metadateneigenschaften nach Assets suchen. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Mit der Volltextsuche-Funktion für GQL können Sie anhand der folgenden Metadateneigenschaften nach Assets suchen. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 >[!NOTE]
 >
 >Die GQL-Volltextsuche funktioniert nur mit Volltexteigenschaften.
 
-| Eigenschaft | Suchformat (Facet-Wert) |
+| Property | Suchformat (Facet-Wert) |
 |---|---|
 | [!UICONTROL Titel] | title:John |
 | [!UICONTROL Ersteller] | creator:John |
 | [!UICONTROL Mitarbeiter] | contributor:John |
 | [!UICONTROL Ort] | location:India |
-| [!UICONTROL Beschreibung] | description:„Sample Image“ |
+| [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
-| [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:„Adobe Systems“ |
+| [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL Mitarbeiter] | contributor:John |
 | [!UICONTROL Nutzungsbedingungen] | usageterms:„CopyRights Reserved“ |
-| [!UICONTROL Erstellt] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Ablaufdatum] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Erstellt] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Ablaufdatum] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Einschaltzeit] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ausschaltzeit] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Zeitraum] (läuft dateontime ab, offtime) | facet field : lowerbound..upperbound |
@@ -79,27 +82,27 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 
 tiltle:&quot;John Doe&quot;-Creatortool: Adobe&amp;ast;
 
-* So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds):
+* So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds)
 
 title:„Scott Reynolds“
 
-* So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe):
+* So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe)
 
 title:„Scott Reynolds“ OR „John Doe“
 
-* So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds):
+* So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds)
 
 title:&quot;Scott&quot;
 
-* So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge enden (wie: title ist Scott Reynolds):
+* So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge enden (wie: title ist Scott Reynolds)
 
 title:&quot;Reynolds&quot;
 
-* So zeigen Sie Assets mit einem Eigenschaftswert an, der eine bestimmte Zeichenfolge enthält (wie: title = Basel Meeting Room):
+* So zeigen Sie Assets mit einem Eigenschaftswert an, der eine bestimmte Zeichenfolge enthält (wie: title=Basel Meeting Room)
 
 Titel:&quot;Sitzung&quot;;
 
-* So zeigen Sie Assets an, die eine bestimmte Zeichenfolge enthalten und einen bestimmten Eigenschaftswert aufweisen (wie die Suche nach der Zeichenfolge „Adobe“ in Assets mit dem Titel „John Doe“):
+* So zeigen Sie Assets an, die eine bestimmte Zeichenfolge enthalten und einen bestimmten Eigenschaftswert aufweisen (wie die Suche nach der Zeichenfolge „Adobe“ in Assets mit title=John Doe)
 
 &amp;ast;Adobe&amp;ast; title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
 
@@ -107,14 +110,14 @@ Titel:&quot;Sitzung&quot;;
 >
 >Die Eigenschaften „path“, „limit“, „size“ und „orderby“ können nicht über ODER mit einer anderen Eigenschaft verknüpft werden.
 >
->Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
+>Der Suchbegriff für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
 
 
 >[!NOTE]
 >
 >Wenn Sie eine JCR-Abfrage schreiben, um nur Unter-Assets zu suchen, werden die referenzierten Assets ebenfalls zusammen mit den übereinstimmenden Unter-Assets angezeigt.
 
-Die Volltextsuche unterstützt auch Operatoren wie -, ^ usw. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie zum Beispiel &quot;Notebook - Schönheit&quot; anstelle von Notebook - Schönheit.
+Die Volltextsuche unterstützt auch Operatoren wie -, ^ usw. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie z. B. „Notebook - Schönheit“ statt Notebook - Schönheit.
 
 ## Optimieren der Suche {#boosting-search}
 
