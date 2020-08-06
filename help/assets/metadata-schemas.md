@@ -41,7 +41,7 @@ Um eine Liste von Formularen/Vorlagen Ansicht, navigieren Sie in der [!DNL Exper
 |---|---|---|
 | [!UICONTROL default] |  | Dies ist das Basisformular für Assets. |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schema-Formular für Dynamic Media Videos. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schema-Formular für Videos mit dynamischen Medien. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Schema-Formular für Assets mit dem MIME-Typ &quot;image&quot;, z. B. image/jpeg, image/png usw. <br> Das [!UICONTROL Bildformular] verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit Untertyp [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL Anwendung]</li></ul> | Schema-Formular für Assets mit MIME-Typ &quot;application&quot;, z. B. application/pdf, application/zip usw. <br>[!UICONTROL pdf]: Schema-Formular für Assets mit dem Untertyp pdf. |
 |  | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Assets mit dem MIME-Typ „video“, beispielsweise video/avi, video/mp4 usw. |
@@ -294,4 +294,4 @@ Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in 
 
 >[!CVorsicht]
 >
->Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn bei der AEM-Bereitstellung Leistungsprobleme auftreten, deaktivieren Sie diesen Auftrag.
+>Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn bei der AEM Implementierung Leistungsprobleme auftreten, versuchen Sie, diesen Auftrag zu deaktivieren.
