@@ -100,7 +100,7 @@ Die folgenden Optionen sind verfügbar:
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, eine große Anzahl von Versionen im Repository zu halten. Achten Sie also bei der Konfiguration des Versions-Bereinigungsvorgangs darauf, nicht zu viele Versionen von der Bereinigung auszuschließen, da sonst die Größe des Repositorys nicht richtig optimiert wird. Wenn Sie aufgrund einer geschäftlichen Anforderung eine große Anzahl von Versionen behalten, wenden Sie sich an den Adobe-Support, um alternative Möglichkeiten zur Optimierung der Repository-Größe zu finden.
+>Es wird nicht empfohlen, eine große Anzahl von Versionen im Repository zu halten. Achten Sie also bei der Konfiguration des Versions-Bereinigungsvorgangs darauf, nicht zu viele Versionen von der Bereinigung auszuschließen, da sonst die Größe des Repositorys nicht richtig optimiert wird. Wenn Sie aufgrund einer Geschäftsanforderung eine große Anzahl von Versionen behalten, wenden Sie sich bitte an den Support der Adobe, um alternative Möglichkeiten zur Optimierung der Repository-Größe zu finden.
 
 ### Kombinieren von Aufbewahrungsoptionen {#combining-retention-options}
 
