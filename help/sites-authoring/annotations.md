@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
 source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
 
 Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
 
-Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platziert. Mit der Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
+Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platziert. Mit einer Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!NOTE]
 >
->Abhängig von Ihren Anforderungen können Sie auch einen Workflow entwickeln, um Benachrichtigungen beim Hinzufügen, Aktualisieren oder Löschen von Anmerkungen zu senden.
+>Je nach Ihren Anforderungen können Sie auch einen Workflow erstellen, damit Benachrichtigungen gesendet werden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
 
 ## Anmerkungen {#annotations}
 
@@ -51,11 +54,12 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 >
 >* [Anmerkungen zu Assets](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotating-video-assets)
+
 >
 
 
 
-### Anmerkungen zu Komponenten {#annotating-a-component}
+### Hinzufügen von Anmerkungen zu Komponenten {#annotating-a-component}
 
 Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeiten, verschieben oder löschen.
 
@@ -84,13 +88,15 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
    * Einen Anmerkungstext eingeben.
    * Eine Zeichnung (Linien und Formen) erstellen, um den Bereich der Komponente hervorzuheben.
 
-      Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichenlinie spiegelt die Anmerkungsfarbe wider und kann entweder ein Pfeil, ein Kreis oder ein Oval sein.
+      Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Farbe wählen/ändern:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Die Anmerkung löschen.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Sie können das Dialogfeld für die Anmerkungen schließen, indem Sie außerhalb des Dialogfelds. Eine abgeschnittene Ansicht (das erste Wort) der Anmerkung wird zusammen mit sämtlichen Zeichnungen angezeigt:
