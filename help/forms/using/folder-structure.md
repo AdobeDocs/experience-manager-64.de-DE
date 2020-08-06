@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 66%
 
 ---
 
@@ -33,7 +36,7 @@ Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruk
 
 **Routen** Enthält universelle Routen. Der Ordner „templates“ unter „routes“ enthält den HTML-Code und die Verweise auf die Komponenten.
 
-**services** Enthält die Dienstschnittstelle zum Aufrufen von Adobe Experience Manager Server-APIs für REST-Endpunkte.
+**services** Enthält die Dienstschnittstelle zum Aufrufen von Adobe Experience Manager-Server-APIs am REST-Endpunkt.
 
 **util** Enthält allgemeine Dienstprogramme, die von mehreren Komponenten verwendet werden können.
 
