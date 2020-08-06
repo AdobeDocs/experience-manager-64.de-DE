@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 87%
 
 ---
 
 
 # Konfigurieren des Administratorkennworts bei der Installation{#configure-the-admin-password-on-installation}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ab Version 6.3 kann bei der Installation einer neuen AEM-Instanz das Administratorkennwort über die Befehlszeile festgelegt werden.
 
