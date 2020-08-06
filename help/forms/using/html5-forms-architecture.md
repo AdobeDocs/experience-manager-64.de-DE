@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2053'
+ht-degree: 79%
 
 ---
 
@@ -42,14 +45,14 @@ HTML5-Formulare speichert alle Zwischenobjekte zwischen, die für die Verarbeitu
 
 Mobile Forms bietet zwei unterschiedliche Zwischenspeicher-Ebenen: den PreRender-Cache und den Render-Cache. Der PreRender-Cache enthält alle Fragmente und Bilder einer gelösten Vorlage und Render-Cache enthält gerenderten Inhalt wie HTML.
 
-![Arbeitsablauf](assets/cacheworkflow.png)für HTML5-Formulare **Abbildung:** Arbeitsablauf für *HTML5-Formulare*
+![Arbeitsablauf](assets/cacheworkflow.png)für HTML5-Formulare **Abbildung:** *Arbeitsablauf für HTML5-Formulare*
 
 HTML5-Formulare speichert Vorlagen nicht zwischen, die fehlende Verweise auf Fragmente und Bilder aufweisen. Wenn HTML5-Formulare länger als gewöhnlich lädt, prüfen Sie die Server-Protokolle auf fehlende Verweise und Warnungen. Stellen Sie auch sicher, dass die maximale Größe des Objekts nicht erreicht wurde.
 
 Der Forms OSGi-Dienst verarbeitet eine Anforderung in zwei Schritten:
 
 * **Generierung eines Layouts und des anfänglichen Formularstatus**: Der Forms OSGi-Renderdienst ruft die Formular-Cachekomponente auf, um zu bestimmen, ob das Formular bereits zwischengespeichert wurde und ob es noch gültig ist. Wenn das Formular zwischengespeichert und gültig ist, liefert es das generierte HTML aus dem Cache. Wenn das Formular ungültig ist, generiert der Forms OSGi-Render-Dienst das anfängliche Formularlayout und den Formularstatus im XML-Format. Diese XML-Datei wird vom Forms OSGi-Dienst in HTML-Layout und in den anfänglichen JSON-Formularstatus umgewandelt sowie für folgende Anforderungen zwischengespeichert.
-* **Vorausgefüllte Formulare**: Beim Rendern ruft der Forms OSGi-Renderdienst den Forms-Dienst Container auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
+* **Vorausgefülltes Forms**: Beim Rendern ruft der Forms OSGi-Renderdienst den Forms-Dienst auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
 
 Wenn ein Formular aktualisiert wurde oder Elemente in einem Formular verwendet wurden, erkennt die Formular-Cache-Komponente es und der Cache für dieses bestimmte Formular wird ungültig. Wenn die Verarbeitung durch den Forms OSGi-Dienst abgeschlossen ist, fügt das Profil-Renderer-JSP JavaScript-Bibliotheksverweise in das Formular ein und gibt die Antwort an den Client zurück. Hierfür kann ein typischer Webserver wie [Apache](https://httpd.apache.org/) mit aktivierter HTML-Komprimierung verwendet werden. Ein Webserver würde die Antwortgröße, den Netzwerkverkehr und die für das Streaming der Daten zwischen Server und Clientcomputer erforderliche Zeit erheblich verringern.
 
@@ -61,7 +64,7 @@ Sie benötigen das AEM Forms-Add-On-Paket, um HTML5-Formulare zu aktivieren. Wei
 
 ### OSGi-Komponenten (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er von der Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er von der Bündel-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
 
 Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und Konfigurationseinstellungen.
 
