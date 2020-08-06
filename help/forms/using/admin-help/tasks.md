@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 68%
 
 ---
 
@@ -43,19 +46,19 @@ Die Ergebnisse der Suche nach Aufgaben werden auf der Seite „Aufgabenliste“ 
 
 Die Aufgaben werden mit folgenden Informationen angezeigt:
 
-**** Aufgaben-ID: Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einem anderen Benutzer zuweisen.
+**Aufgaben-ID:** Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einem anderen Benutzer zuweisen.
 
-**** Status: Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war. Möglich ist auch der Status Abgeschlossen.
+**Status:** Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war. Möglich ist auch der Status Abgeschlossen.
 
-**** Aktivität: Zeigt das Formular und den Namen für einen ersten Vorgang oder den Prozessvorgang an, der die Aufgabe generiert hat.
+**Aktivität:** Zeigt das Formular und den Namen für einen ersten Vorgang oder den Prozessvorgang an, der die Aufgabe generiert hat.
 
-**** Prozess-ID: Diese positive Ganzzahl wird vom Arbeitsablauf für Formulare zugewiesen, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID:** Diese positive Ganzzahl wird vom Arbeitsablauf für Formulare zugewiesen, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
-**** Prozessname - Version: Der Name des Prozesses, wie in Workbench definiert.
+**Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
 
-**** Anwendung: Der Name der Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
+**Anwendung:** Der Name der Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
 
-**** Erstellungsdatum: Datum und Uhrzeit der Erstellung der Aufgabe.
+**Erstellungsdatum:** Datum und Uhrzeit der Erstellung der Aufgabe.
 
 ## Aufgabenverlauf anzeigen und Aufgaben neu zuweisen {#viewing-task-history-and-reassigning-tasks}
 
@@ -63,29 +66,29 @@ Auf der Seite „Aufgabenverlauf“ wird eine Liste der Benutzer und Gruppen ang
 
 Für jede Aufgabenzuweisung werden in der Liste die folgenden Informationen angezeigt:
 
-**** Name: Der Name des Benutzers.
+**Name:** Der Name des Benutzers.
 
-**** Status: Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war.
+**Status:** Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war.
 
-**** Arbeitslisten-ID: Die numerische ID der Benutzerwarteschlange, zu der die Aufgabe gehört. Ein Prozess kann von mehreren Benutzern gemeinsam verwendet werden.
+**Arbeitslisten-ID:** Der numerische Bezeichner der Benutzerwarteschlange, zu der die Aufgabe gehört. Ein Prozess kann von mehreren Benutzern gemeinsam verwendet werden.
 
-**** Typ: Gibt an, wie die Aufgabe zugewiesen wurde:
+**Typ:** Gibt an, wie die Aufgabe zugewiesen wurde:
 
-**** Anfänglich: Dem Benutzer wurde die Aufgabe ursprünglich zugewiesen.
+**Anfänglich:** Dem Benutzer wurde die Aufgabe ursprünglich zugewiesen.
 
-**** Weiterleiten: Der ursprüngliche Aufgabenbesitzer hat die Aufgabe einem anderen Benutzer zugewiesen.
+**Weiterleiten:** Der ursprüngliche Eigentümer der Aufgabe hat die Aufgabe einem anderen Benutzer zugewiesen.
 
-**** Ablehnen: Eine weitergeleitete Aufgabe wurde abgelehnt oder eine Aufgabe wurde an eine Arbeitsliste zurückgegeben, ohne abgeschlossen zu sein.
+**Ablehnen:** Eine weitergeleitete Aufgabe wurde abgelehnt oder eine Aufgabe wurde an eine Arbeitsliste zurückgegeben, ohne abgeschlossen zu sein.
 
-**** Anforderung: Der Benutzer hat die Aufgabe in einer freigegebenen Arbeitsliste angefordert.
+**Anforderung:** Der Benutzer hat die Aufgabe in einer freigegebenen Arbeitsliste angefordert.
 
-**** Eskalation: Eine vordefinierte Zeitspanne (wie in der Benutzeraktion in Workbench festgelegt) ohne Benutzerinteraktion und ein anderer Benutzer wurde die Aufgabe zugewiesen.
+**Eskalation:** Eine zuvor festgelegte Zeitdauer (wie in der Benutzeraktion in Workbench festgelegt) ohne Benutzerinteraktion verstrichen und einem anderen Benutzer wurde die Aufgabe zugewiesen.
 
-**** Besprechen: Der Aufgabenbesitzer hat diese Aufgabe an einen anderen Benutzer weitergeleitet, der das Formular öffnen, Daten speichern, die Anlagen und Hinweise ändern kann, den Schritt jedoch nicht abschließen kann. Der Benutzer muss die Aufgabe an den Aufgabenbesitzer zurückgeben, der sich mit dem Benutzer besprochen hat.
+**Besprechen:** Der Eigentümer der Aufgabe hat diese Aufgabe an einen anderen Benutzer weitergeleitet, der das Formular öffnen, Daten speichern, die Anlagen und Hinweise ändern kann, den Vorgang jedoch nicht abschließen kann. Der Benutzer muss die Aufgabe an den Aufgabenbesitzer zurückgeben, der sich mit dem Benutzer besprochen hat.
 
-**** Admin-Neuzuweisung: Die Aufgabe wurde von einem Administrator neu zugewiesen.
+**Admin-Neuzuweisung:** Die Aufgabe wurde von einem Administrator neu zugewiesen.
 
-**** Zuweisungsdatum: Datum und Uhrzeit der Zuweisung der Aufgabe an den Benutzer.
+**Zuweisungsdatum:** Datum und Uhrzeit der Zuweisung der Aufgabe an den Benutzer.
 
 ### Einer Aufgabe einen neuen Benutzer zuweisen {#assigning-a-new-user-to-a-task}
 
