@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 63%
 
 ---
 
 
 # Hinzufügen von Schriftarten für das Grafik-Rendering{#adding-fonts-for-graphic-rendering}
 
-Mit AEM können Sie Grafiken erstellen, in denen dynamisch aus Ihren Inhalten extrahierter Text enthalten ist.
+AEM ermöglicht Ihnen die Erstellung von Grafiken mit dynamisch aus Ihren Inhalten stammendem Text.
 
 Hierfür können Sie auch Ihre eigenen Schriftarten hochladen und verwenden.
 
 Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https://en.wikipedia.org/wiki/Truetype)-Schriftarten.
 
-1. Öffnen Sie CRXDE Lite und navigieren Sie zum Projektanwendungsordner:
+1. Öffnen Sie die CRXDE Lite und navigieren Sie zum Projektanwendungsordner:
 
    `/apps/<your-project>/`
 
@@ -31,6 +34,7 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
 
    * **Name**: `fonts`
    * **Typ**: `sling:Folder`
+
    Speichern Sie alle Änderungen.
 
 1. Kopieren Sie die Schriftarten-Dateien in diesen Ordner, z. B. mit WebDAV.
