@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 translation-type: tm+mt
 source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+workflow-type: tm+mt
+source-wordcount: '2218'
+ht-degree: 92%
 
 ---
 
@@ -295,6 +298,7 @@ Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils
 >* Begleitmaterial, Anzeigen und Präsentationen von Adobe
 >* Benutzeroberfläche von Anwendungen unter der Marke Adobe (Schriftart darf nicht frei für andere Zwecke verfügbar sein)
 >* Geringe Anpassungen
+
 >
 >
 Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
@@ -302,6 +306,7 @@ Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden 
 >* Dokumente und andere Elemente, die sich nicht auf Adobe beziehen
 >* Umgebungen für die Inhaltserstellung (in denen die Ausgangselemente von Dritten generiert werden)
 >* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit Adobe verknüpft sind
+
 >
 
 
