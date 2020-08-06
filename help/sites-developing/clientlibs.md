@@ -102,7 +102,7 @@ Ausführliche Informationen wie Attribute zum Filtern von JS, CSS oder Themenbib
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, die in der Vergangenheit häufig zum Einschließen von Clientbibliotheken verwendet wurde, wurde seit AEM 5.6 nicht mehr unterstützt. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>`, die in der Vergangenheit häufig zur Einbindung von Client-Bibliotheken verwendet wurde, ist seit AEM 5.6 veraltet. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -156,7 +156,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 >[!CAUTION]
 >
->Bei Verwendung von Proxyclient-Bibliotheken erfordert die AEM Dispatcher-Konfiguration möglicherweise ein Update, um sicherzustellen, dass die URIs mit der Erweiterung clientlibs zulässig sind.
+>Bei der Verwendung von Proxyclient-Bibliotheken erfordert die AEM Dispatcher-Konfiguration möglicherweise ein Update, um sicherzustellen, dass die URIs mit der Erweiterung clientlibs zulässig sind.
 
 >[!CAUTION]
 >
@@ -340,7 +340,7 @@ Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.
 >
 >Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
 
-### Nutzung {#usage}
+### Verwendung {#usage}
 
 Sie können die Präprozessorkonfiguration pro Client-Bibliothek oder systemweit festlegen.
 
@@ -447,6 +447,7 @@ The `dumplibs` component includes a test selector that displays the source code 
    * Öffnen Sie die folgende URL in Ihrem Webbrowser (verwenden Sie je nach Bedarf einen anderen Host und Port):
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    Die Standardseite zeigt die Ausgabe für Tags ohne Wert für das category-Attribut.
 
 1. To see the output for a category, type the value of the client library&#39;s `categories` property and click **Submit Query**.
