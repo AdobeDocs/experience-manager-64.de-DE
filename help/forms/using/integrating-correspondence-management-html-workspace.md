@@ -26,7 +26,7 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die im Arbeitsbereich &quot;AEM Forms&quot;wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
+Beginn durch Erstellen einer Correspondence Management-Beispielvorlage, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
 
 Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
