@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +26,7 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Eigenschaft</strong></td> 
+   <td><strong>Property</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr> 
   <tr> 
