@@ -4,6 +4,9 @@ description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese ins
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 59%
 
 ---
 
@@ -18,7 +21,7 @@ Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheran
 
 >[!NOTE]
 >
->Wenn Sie AEM unter Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe-Kundendienst, wenn Sie planen, viele große PSD- oder PSB-Dateien zu verarbeiten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
+>Wenn Sie AEM für Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie eine große Menge großer PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
 
 ## Installieren von ImageMagick {#installing-imagemagick}
 
