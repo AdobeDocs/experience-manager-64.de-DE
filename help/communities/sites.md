@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 4%
 
 ---
 
@@ -21,11 +24,11 @@ Die Konsole &quot;Site-Vorlagen&quot;ist der Konsole &quot; [Gruppenvorlagen](to
 
 >[!NOTE]
 >
->Die Konsolen zum Erstellen von [Community-Sites](sites-console.md), [Community-Site-Vorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur für die Verwendung in der Autorenumgebung vorgesehen.
+>Die Konsolen für die Erstellung von [Community-Sites](sites-console.md), [Community-Site-Vorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur zur Verwendung in der Autorendatei bestimmt.
 
 ## Site-Vorlagenkonsole {#site-templates-console}
 
-In der Autorenumgebung, um die Community-Sites-Konsole zu erreichen
+In der Umgebung &quot;Autor&quot;zur Konsole der Community-Sites
 
 * Aus globaler Navigation: **[!UICONTROL Tools > Communities > Site-Vorlagen]**
 
@@ -51,7 +54,7 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 
 * **[!UICONTROL Deaktiviert/Aktiviert]** Ein Umschalter, der steuert, ob die Vorlage referenzierbar ist
 
-### Miniatur {#thumbnail}
+### Miniaturansicht       {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -63,7 +66,7 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 
 Um Community-Funktionen hinzuzufügen, ziehen Sie von der rechten Seite nach links in der Reihenfolge, in der die Sitemenü-Links angezeigt werden sollen. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
 
-Wenn Sie beispielsweise eine Homepage wünschen, ziehen Sie die Funktion &quot;Seite&quot;aus der Bibliothek und legen Sie sie unter dem Vorlagenaufbau ab. Dadurch wird das Dialogfeld für die Seitenkonfiguration geöffnet. Informationen zu den Konfigurationsdialogen finden Sie in der [Funktionskonsole](functions.md) .
+Wenn Sie beispielsweise eine Startseite erstellen möchten, ziehen Sie die Funktion &quot;Seite&quot;aus der Bibliothek und legen Sie sie unter dem Vorlagenaufbau ab. Dadurch wird das Dialogfeld für die Seitenkonfiguration geöffnet. Informationen zu den Konfigurationsdialogen finden Sie in der [Funktionskonsole](functions.md) .
 
 Ziehen Sie weitere Community-Funktionen, die basierend auf dieser Vorlage für eine Community-Site gewünscht werden, und legen Sie sie ab.
 
@@ -79,7 +82,7 @@ Die Seitenfunktion stellt eine leere Seite bereit. Die Funktion &quot;Gruppen&qu
 
 ### Gruppenvorlagen für die Funktion &quot;Gruppen&quot; {#group-templates-for-groups-function}
 
-Wenn Sie eine Gruppenfunktion in die Sitevorlage aufnehmen, erfordert die Konfiguration die Angabe der Gruppenvorlagenauswahl, die zulässig ist, wenn eine neue Gruppe in der Veröffentlichungsumgebung erstellt wird.
+Wenn Sie eine Gruppenfunktion in die Site-Vorlage aufnehmen, müssen Sie die Gruppenvorlagenauswahl festlegen, die beim Erstellen einer neuen Umgebung in der Veröffentlichungsgruppe zulässig ist.
 
 >[!CAUTION]
 >
