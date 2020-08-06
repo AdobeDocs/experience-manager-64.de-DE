@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +26,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
-### Einfach {#basic}
+### Allgemein {#basic}
 
 * **Titel**
 
@@ -91,7 +94,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Vanity-URL umleiten**
 
-   Gibt an, ob für die Seite eine Vanity-URl verwendet werden soll.
+   Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
 
 ### Erweitert {#advanced}
 
@@ -131,7 +134,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    Geben Sie eine Exportkonfiguration an.
 
-### Miniaturansicht {#thumbnail}
+### Miniaturansicht       {#thumbnail}
 
 * **Seitenminiatur**
 
@@ -145,21 +148,21 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
       Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
 
-### Cloud-Services {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Cloud-Services**
+* **Cloud Services**
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung    {#personalization}
+### Personalisierung      {#personalization}
 
 * **Personalisierung**
 
-   Wählen Sie eine [Marke aus, um einen Bereich für das Targeting anzugeben](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+   Wählen Sie eine [Marke, um einen Bereich für das Targeting anzugeben](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ### Berechtigungen {#permissions}
 
-* **Berechtigungen** (Touch-optimierte Benutzeroberfläche)
+* **Berechtigungen** (touchoptimierte Benutzeroberfläche)
 
    Zeigen Sie die [effektiven Berechtigungen an und fügen Sie neue Berechtigungen hinzu](/help/sites-administering/user-group-ac-admin.md).
 
@@ -169,15 +172,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
-### Live Copy {#live-copy}
+### Live Copy       {#live-copy}
 
 * **Live Copy**
 
    Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur {#site-structure}
+### Site-Struktur       {#site-structure}
 
-* Geben Sie Links zu Seiten an, die siteübergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
+* Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-2}
 
