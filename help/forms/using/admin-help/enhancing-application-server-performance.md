@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
 source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 95%
 
 ---
 
@@ -105,7 +108,7 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 
    >[!NOTE]
    >
-   >Der Wert der Eigenschaft &quot;Max. Inline-Größe&quot;des Dokuments muss für AEM Forms on JEE-Umgebung identisch sein, und AEM Forms on OSGi Bundle enthält AEM Forms on JEE-Umgebung. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
+   >Der Wert der Eigenschaft &quot;Max. Inline-Größe&quot;des Dokuments muss für AEM Forms auf JEE-Umgebung identisch sein, während AEM Forms auf OSGi-Bundle AEM Forms on JEE-Umgebung enthält. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
 
 1. Starten Sie den Anwendungsserver mit folgenden Systemeigenschaft neu:
 
