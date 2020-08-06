@@ -1,8 +1,8 @@
 ---
 title: Systeminformationsdienst-APIs
 seo-title: Systeminformationsdienst-APIs
-description: Dieses Dokument enthält detaillierte Informationen zu den vom Systeminformationsdienst bereitgestellten APIs.
-seo-description: Dieses Dokument enthält detaillierte Informationen zu den vom Systeminformationsdienst bereitgestellten APIs.
+description: Dieses Dokument enthält detaillierte Informationen zu den vom Informationsdienst bereitgestellten APIs.
+seo-description: Dieses Dokument enthält detaillierte Informationen zu den vom Informationsdienst bereitgestellten APIs.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 68%
 
 ---
 
