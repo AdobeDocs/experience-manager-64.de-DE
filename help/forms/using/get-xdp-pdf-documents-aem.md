@@ -10,13 +10,16 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 92%
 
 ---
 
 
 # XDP- und PDF-Dokumente in AEM Forms übernehmen {#getting-xdp-and-pdf-documents-in-aem-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository importieren, indem Sie sie in AEM Forms hochladen. Der Upload-Vorgang wird für die folgenden Assettypen unterstützt:
 
@@ -64,7 +67,7 @@ AEM Forms-Server ermöglicht es Ihnen, JavaScript-Code auszuführen. Ein schadha
 
 Der abgesicherte Modus ist standardmäßig aktiviert. Bei Bedarf können Sie den abgesicherten Modus deaktivieren:
 
-1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. Die URL lautet `https://[server]:[port]/system/console/configMgr`
+1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. The URL is `https://[server]:[port]/system/console/configMgr`
 1. Öffnen Sie Mobile Forms Konfigurationen für die Bearbeitung.
 1. Wählen Sie die Option „Abgesicherter Modus“ und klicken Sie auf **Speichern**. Der abgesicherte Modus ist deaktiviert.
 
