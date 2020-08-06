@@ -1,6 +1,6 @@
 ---
-title: Vorausfüllen von Formularen mit flexiblen Layouts
-seo-title: Vorausfüllen von Formularen mit flexiblen Layouts
+title: Vorausfüllen von Forms mit flexiblen Layouts
+seo-title: Vorausfüllen von Forms mit flexiblen Layouts
 description: 'null'
 seo-description: 'null'
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
@@ -11,13 +11,16 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
 source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
+workflow-type: tm+mt
+source-wordcount: '3489'
+ht-degree: 3%
 
 ---
 
 
-# Vorausfüllen von Formularen mit flexiblen Layouts {#prepopulating-forms-with-flowable-layouts1}
+# Vorausfüllen von Forms mit flexiblen Layouts {#prepopulating-forms-with-flowable-layouts1}
 
-## Vorausfüllen von Formularen mit flexiblen Layouts {#prepopulating-forms-with-flowable-layouts2}
+## Vorausfüllen von Forms mit flexiblen Layouts {#prepopulating-forms-with-flowable-layouts2}
 
 Beim Vorausfüllen von Formularen werden Daten für Benutzer in einem wiedergegebenen Formular angezeigt. Angenommen, ein Benutzer meldet sich mit einem Benutzernamen und einem Kennwort bei einer Website an. Bei erfolgreicher Authentifizierung wird von der Clientanwendung eine Datenbank für Benutzerinformationen Abfrage. Die Daten werden mit dem Formular zusammengeführt und dann dem Benutzer wiedergegeben. Dadurch kann der Benutzer personalisierte Daten innerhalb des Formulars Ansicht haben.
 
@@ -36,7 +39,7 @@ Für jedes Formularfeld, das im Voraus gefüllt werden soll, muss ein XML-Elemen
 
 Wenn Sie ein Formular vorab ausfüllen, das bereits Daten enthält, müssen Sie die Daten angeben, die bereits in der XML-Datenquelle angezeigt werden. Angenommen, ein Formular mit 10 Feldern enthält Daten in vier Feldern. Nehmen Sie als Nächstes an, dass Sie die restlichen sechs Felder vorab ausfüllen möchten. In diesem Fall müssen Sie 10 XML-Elemente in der XML-Datenquelle angeben, die zum Vorausfüllen des Formulars verwendet wird. Wenn Sie nur sechs Elemente angeben, sind die ursprünglichen vier Felder leer.
 
-Sie können beispielsweise ein Formular wie das Musterbestätigungsformular im Voraus ausfüllen. (Siehe &quot;Bestätigungsformular&quot;in [Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Sie können beispielsweise ein Formular wie das Musterbestätigungsformular im Voraus ausfüllen. (Siehe &quot;Bestätigungsformular&quot;in [Rendering Interactive PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 Zum Vorausfüllen des Musterbestätigungsformulars müssen Sie eine XML-Datenquelle erstellen, die drei XML-Elemente enthält, die den drei Feldern im Formular entsprechen. Dieses Formular enthält die folgenden drei Felder: `FirstName`, `LastName`und `Amount`. Der erste Schritt besteht darin, eine XML-Datenquelle zu erstellen, die XML-Elemente enthält, die mit den Feldern im Formularentwurf übereinstimmen. Der nächste Schritt besteht darin, den XML-Elementen Datenwerte zuzuweisen, wie im folgenden XML-Code dargestellt.
 
@@ -54,7 +57,7 @@ Nachdem Sie das Bestätigungsformular mit dieser XML-Datenquelle ausgefüllt und
 
 ### Vorausfüllen von Formularen mit flexiblen Layouts {#prepopulating_forms_with_flowable_layouts-1}
 
-Formulare mit flexiblen Layouts sind nützlich, um eine unbestimmte Datenmenge für Benutzer anzuzeigen. Da sich das Layout des Formulars automatisch an die zusammengeführte Datenmenge anpasst, müssen Sie kein festes Layout oder keine Seitenzahl für das Formular vorab festlegen, wie Sie es bei einem Formular mit festem Layout tun müssen.
+Forms mit flexiblen Layouts ist nützlich, um Benutzern eine unbestimmte Datenmenge anzuzeigen. Da sich das Layout des Formulars automatisch an die zusammengeführte Datenmenge anpasst, müssen Sie kein festes Layout oder keine Seitenzahl für das Formular vorab festlegen, wie Sie es bei einem Formular mit festem Layout tun müssen.
 
 Ein Formular wird in der Regel mit Daten gefüllt, die während der Laufzeit abgerufen werden. Daher können Sie ein Formular vorab ausfüllen, indem Sie eine XML-Datenquelle im Arbeitsspeicher erstellen und die Daten direkt in die XML-Datenquelle im Arbeitsspeicher platzieren.
 
@@ -101,7 +104,7 @@ Das folgende Diagramm zeigt ein Beispiel für ein Bestellformular. Die Informati
 
 ### Überlegungen zum Formularentwurf {#form-design-considerations}
 
-Formulare mit flexiblen Layouts basieren auf Formularentwürfen, die in Designer erstellt wurden. Ein Formularentwurf gibt einen Satz von Layout-, Präsentations- und Datenerfassungsregeln an, einschließlich der Berechnung von Werten, die auf der Benutzereingabe basieren. Die Regeln werden angewendet, wenn Daten in ein Formular eingegeben werden. Felder, die einem Formular hinzugefügt werden, sind Teilformulare, die sich im Formularentwurf befinden. Im Bestellformular im vorherigen Diagramm ist jede Zeile beispielsweise ein Teilformular. Informationen zum Erstellen eines Formularentwurfs mit Teilformularen finden Sie unter [Bestellformular mit flexiblem Layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)erstellen.
+Forms mit flexiblen Layouts basieren auf Formularentwürfen, die in Designer erstellt wurden. Ein Formularentwurf gibt einen Satz von Layout-, Präsentations- und Datenerfassungsregeln an, einschließlich der Berechnung von Werten, die auf der Benutzereingabe basieren. Die Regeln werden angewendet, wenn Daten in ein Formular eingegeben werden. Felder, die einem Formular hinzugefügt werden, sind Teilformulare, die sich im Formularentwurf befinden. Im Bestellformular im vorherigen Diagramm ist jede Zeile beispielsweise ein Teilformular. Informationen zum Erstellen eines Formularentwurfs mit Teilformularen finden Sie unter [Bestellformular mit flexiblem Layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)erstellen.
 
 ### Datenuntergruppen {#understanding-data-subgroups}
 
@@ -184,7 +187,7 @@ Jede Datenuntergruppe muss XML-Elemente enthalten, die mit den Feldnamen im Teil
 
 >[!NOTE]
 >
->Wenn Sie versuchen, ein Formular mit einer Datenquelle, die sich wiederholende XML-Elemente enthält, im Voraus zu füllen, und Sie die `RenderAtClient` Option auf `No`setzen, wird nur der erste Datensatz in das Formular zusammengeführt. Um sicherzustellen, dass alle Datensätze in das Formular zusammengeführt werden, setzen Sie den `RenderAtClient` auf `Yes`. Informationen zur `RenderAtClient` Option finden Sie unter [Wiedergabe von Formularen auf dem Client](/help/forms/developing/rendering-forms-client.md).
+>Wenn Sie versuchen, ein Formular mit einer Datenquelle, die sich wiederholende XML-Elemente enthält, im Voraus zu füllen, und Sie die `RenderAtClient` Option auf `No`setzen, wird nur der erste Datensatz in das Formular zusammengeführt. Um sicherzustellen, dass alle Datensätze in das Formular zusammengeführt werden, setzen Sie den `RenderAtClient` auf `Yes`. Informationen zur `RenderAtClient` Option finden Sie unter [Rendern von Forms auf dem Client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
@@ -231,13 +234,13 @@ Sie können ein vorausgefülltes Formular wie jedes andere Formular wiedergeben.
 
 [Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interaktive PDF forms wiedergeben](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Erstellen von Webanwendungen zum Rendern von Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Vorausfüllen von Formularen mit der Java-API {#prepopulating-forms-using-the-java-api}
 
-So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms-API (Java) im Voraus aus:
+So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (Java) im Voraus aus:
 
 1. Projektdateien einschließen
 
@@ -294,6 +297,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms-API (J
    * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
+
    Die `renderPDFForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
    * Erstellen Sie ein `javax.servlet.ServletOutputStream` Objekt, das zum Senden eines Formulardatenstreams an den Client-Webbrowser verwendet wird.
@@ -305,7 +309,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms-API (J
 
 **Siehe auch**
 
-[Quick Beginn (SOAP-Modus): Vorausfüllen von Formularen mit fließenden Layouts mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Vorausfüllen von Forms mit flexiblen Layouts mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -374,6 +378,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (W
    * Ein leeres `javax.xml.rpc.holders.LongHolder` Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
    * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert den Gebietsschemawert.)
    * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das die Ergebnisse dieses Vorgangs enthält.
+
    Die `renderPDFForm` Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
 
    * Erstellen Sie ein `FormResult` Objekt, indem Sie den Wert des `com.adobe.idp.services.holders.FormsResultHolder` Objektdatenelements abrufen `value` .
@@ -383,11 +388,12 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (W
    * Erstellen Sie ein `javax.servlet.ServletOutputStream` Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `javax.servlet.http.HttpServletResponse` Objektmethode `getOutputStream` aufrufen.
    * Erstellen Sie ein Bytearray und füllen Sie es durch Aufrufen der `BLOB` Objektmethode `getBinaryData` . Diese Aufgabe weist den Inhalt des `FormsResult` Objekts dem Bytearray zu.
    * Rufen Sie die `javax.servlet.http.HttpServletResponse` Methode des `write` Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Bytearray an die `write` Methode.
+
    >[!NOTE]
    >
    >Die `renderPDFForm` Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
