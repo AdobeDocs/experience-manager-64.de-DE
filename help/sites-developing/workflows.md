@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 76%
 
 ---
 
@@ -42,6 +45,7 @@ Die Hauptaspekte sind unten beschrieben; die folgenden Seiten enthalten weitere 
 >* See the [Ask the AEM Experts Webinar on Workflows](https://bit.ly/ATACE218).
 >* For an end-to-end Community Article see [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html).
 >* Informationen zu Änderungen der Datenspeicherorte finden Sie unter [Neustrukturierung von Repositorys in AEM 6.4](/help/sites-deploying/repository-restructuring.md) und [Best Practices für Workflows – Speicherorte](/help/sites-developing/workflows-best-practices.md#locations).
+
 >
 
 
@@ -121,15 +125,15 @@ The `WorkItems` are assigned to either the user account directly or to the group
 
 Es gibt diverse Workflow-Typen, wie aus der Konsole für Workflow-Modelle ersichtlich:
 
-![wf-upgrade-03](assets/wf-upgraded-03.png)
+![wf-upgraded-03](assets/wf-upgraded-03.png)
 
 * **Default**
 
-   Dies sind die vordefinierten Arbeitsabläufe, die in einer Standard-AEM-Instanz enthalten sind.
+   Dies sind die vordefinierten Workflows, die in einer standardmäßigen AEM enthalten sind.
 
-* Benutzerdefinierte Arbeitsabläufe (kein Indikator in der Konsole)
+* Benutzerdefinierte Workflows (kein Indikator in der Konsole)
 
-   Dies sind Workflows, die als neu erstellt wurden, oder aus vordefinierten Workflows, die mit Anpassungen überlagert wurden.
+   Es handelt sich um Workflows, die als neu erstellt wurden, oder um vordefinierte Workflows, die mit Anpassungen überlagert wurden.
 
 * **Veraltet**
 
@@ -157,6 +161,7 @@ Standard-Workflows speichern bei der Ausführung Laufzeit- bzw. Verlaufsdaten. Y
 >* Für den Nutzlasttyp (z. B. Video) sind externe Verarbeitungsschritte erforderlich. In diesem Fall ist der Laufzeitverlauf zum Bestätigen des Status erforderlich.
 >* Der Workflow erreicht eine **UND-Teilung**. In diesem Fall ist der Laufzeitverlauf zum Bestätigen des Status erforderlich.
 >* Wenn der Übergangs-Workflow einen Teilnehmerschritt erreicht, ändert sich der Modus (während der Laufzeit) in „dauerhaft“. Wenn die Aufgabe an eine Person weitergeleitet wird, muss der Verlauf persistent gespeichert werden.
+
 >
 
 
@@ -187,7 +192,7 @@ Wenn **Unterstützung für mehrere Ressourcen** nicht für ein Workflow-Modell a
 
 Der Workflow-Status ist hilfreich, um den Fortschritt eines Workflows beim Ausführen von Aufgaben anzuzeigen. Der Status kann einen Überblick darüber geben, wie weit ein Workflow verarbeitet wurde. Wenn der Workflow ausgeführt wird, kann der Benutzer den Fortschritt anhand der **Status**-Beschreibung (anstelle eines einzelnen Schritts) anzeigen.
 
-Da die einzelnen Schrittnamen spezifisch und technisch sein können, können die Anzeigenamen definiert werden, um einen konzeptionellen Überblick über den Workflow-Fortschritt zu erhalten.
+Da die einzelnen Schrittnamen spezifisch und technisch sein können, können die Anzeigenamen definiert werden, um eine konzeptionelle Ansicht des Workflow-Fortschritts zu erhalten.
 
 Für einen Workflow mit sechs Schritten und vier Status kann dies wie folgt aussehen:
 
@@ -195,6 +200,7 @@ Für einen Workflow mit sechs Schritten und vier Status kann dies wie folgt auss
 
    * Mehrere Statusnamen können erstellt werden.
    * Dann wird jedem Schritt ein einzelner Statusname zugewiesen (ein Statusname kann einem oder mehreren Schritten zu gewiesen werden).
+
    | **Schrittname** | **Phase (dem Schritt zugewiesen)** |
    |---|---|
    | Schritt 1 | Erstellen |
