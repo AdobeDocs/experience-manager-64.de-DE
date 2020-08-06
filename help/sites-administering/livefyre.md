@@ -204,7 +204,7 @@ AEM Commerce-Benutzer können ihren vorhandenen Produktkatalog nahtlos in Livefy
 
 Nach dem Import des Produktkatalogs werden die Produkte in Echtzeit in Ihrer Livefyre-Instanz angezeigt. Wenn Sie Elemente in Ihrem AEM Commerce-Produktkatalog bearbeiten oder löschen, werden die Änderungen automatisch in Livefyre widergespiegelt.
 
-1. Vergewissern Sie sich, dass auf Ihrer AEM-Instanz das neueste Livefyre für AEM-Paket installiert ist.
+1. Vergewissern Sie sich, dass auf Ihrer AEM die neueste Version von Livefyre für AEM Paket installiert ist.
 1. From the AEM homepage, navigate to **AEM Commerce**.
 1. Erstellen Sie eine neue Sammlung oder verwenden Sie eine vorhandene Sammlung.
 1. Hover over the collection and click **Collection Properties** (pencil icon).
