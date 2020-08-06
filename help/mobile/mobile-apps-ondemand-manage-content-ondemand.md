@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Inhalten
 seo-title: Verwalten von Inhalten
-description: Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Auf dieser Seite erfahren Sie mehr.
-seo-description: Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Auf dieser Seite erfahren Sie mehr.
+description: Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Auf dieser Seite erfahren Sie mehr.
+seo-description: Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Auf dieser Seite erfahren Sie mehr.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 11%
 
 ---
 
@@ -21,17 +24,17 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
+Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
 
 ## Inhaltsübersicht {#content-overview}
 
-Wenn Sie an eine Online-Zeitschrift denken, umfasst der Hauptinhalt Artikel, Anzeigen und Deckblätter. In AEM können drei Haupttypen von Mobile On-Demand-Inhalten erstellt werden:
+Wenn Sie an eine Online-Zeitschrift denken, umfasst der Hauptinhalt Artikel, Anzeigen und Deckblätter. Innerhalb von AEM können drei Haupttypen von Mobile On-Demand-Inhalten erstellt werden:
 
 * **Artikel**: Text, der zusammen mit Kunst zur Informationsübermittlung verwendet wird
-* **** Banner: typischerweise grafische Werbeinhalte
-* **** Sammlungen: einen klar definierten *Behälter* darstellen, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titeldesign entsprechen
+* **Banner:** typischerweise grafische Werbeinhalte
+* **Sammlungen:** einen klar definierten *Behälter* darstellen, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titeldesign entsprechen
 
-* **** Freigegebene Ressourcen: ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
+* **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
 
 >[!NOTE]
 >
@@ -42,7 +45,7 @@ Wenn Sie an eine Online-Zeitschrift denken, umfasst der Hauptinhalt Artikel, Anz
 Die folgenden Themen beschreiben die Erstellung und Verwaltung von Inhalten, insbesondere von Artikeln, Bannern und Sammlungen. Sobald Sie wissen, wie Sie den Inhalt erstellen und verwalten, werden Ihnen weitere Themen angezeigt, wie das Hochladen freigegebener Ressourcen, das Veröffentlichen/Rückgängigmachen der Veröffentlichung und die Vorschau mit Preflight.
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
-* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichung von Inhalten aufheben](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
@@ -55,6 +58,6 @@ Die folgenden Themen beschreiben die Erstellung und Verwaltung von Inhalten, ins
 
 Informationen zu den Rollen und Verantwortlichkeiten von Administratoren und Entwicklern finden Sie in den nachfolgend aufgeführten Ressourcen:
 
-* [Entwickeln von AEM Content für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile-on-demand.md)
-* [Verwalten von Inhalten für die Verwendung von AEM Mobile-On-Demand-Diensten](/help/mobile/aem-mobile.md)
+* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Verwalten von Inhalten für die Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
