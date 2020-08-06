@@ -1,8 +1,8 @@
 ---
 title: Mitglieder und Gruppenverwaltungskonsolen
 seo-title: Mitglieder und Gruppenverwaltungskonsolen
-description: Zugriff auf Mitglieder und Konsolen der Gruppenverwaltung
-seo-description: Zugriff auf Mitglieder und Konsolen der Gruppenverwaltung
+description: Zugriff auf Mitglieder- und Gruppenverwaltungskonsolen
+seo-description: Zugriff auf Mitglieder- und Gruppenverwaltungskonsolen
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,34 +11,37 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
 source-git-commit: c53ad108620f9066179c79195f90b930d5cab0ff
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 4%
 
 ---
 
 
 # Mitglieder und Gruppenverwaltungskonsolen {#members-groups-management-consoles}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-AEM Communities-Funktionen erfordern häufig, dass Site-Besucher registriert und angemeldet sind, bevor sie an einer Community in der Veröffentlichungsumgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungsumgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von in der Autorenumgebung registrierten *Benutzern* zu unterscheiden.
+AEM Communities-Funktionen erfordern häufig, dass Site-Besucher registriert und angemeldet sind, bevor sie an einer Community in der Veröffentlichungs-Umgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von den in der Autorenversion registrierten *Benutzern* zu unterscheiden.
 
 ### Mitglieder (Benutzer) bei der Veröffentlichung {#members-users-on-publish}
 
-Mithilfe der Communities Mitglieder und Gruppen-Konsolen können in der *Veröffentlichungsumgebung* registrierte Mitglieder und Mitgliedsgruppen aus der *Autorenumgebung* erstellt und verwaltet werden. Dies ist nur möglich, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aktiviert ist.
+Mithilfe der Community-Mitglieder- und -Gruppenkonsolen können in der *Veröffentlichungs* -Umgebung registrierte Mitglieder und Mitgliedsgruppen von der *AutorenUmgebung* erstellt und verwaltet werden. Dies ist nur möglich, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aktiviert ist.
 
-### Benutzer im Autor {#users-on-author}
+### Benutzer im Autorenmodus {#users-on-author}
 
-Zum Verwalten von in der *Autorenumgebung* registrierten Benutzern und Gruppen ist erforderlich, um die Sicherheitskonsole der Plattform zu verwenden:
+Für die Verwaltung der in der *Autor* -Umgebung registrierten Benutzer und Gruppen ist erforderlich, um die Sicherheitskonsole der Plattform zu verwenden:
 
 * Wählen Sie aus der globalen Navigation `Tools, Security, Users`
 * Wählen Sie aus der globalen Navigation `Tools, Security, Groups`
 
 >[!NOTE]
 >
->Wenn Beispielinhalte bereitgestellt und aktiviert sind, gibt es viele Beispielbenutzer sowohl in der Autor- als auch in der Veröffentlichungsumgebung. Diese Benutzer sind nicht vorhanden, wenn sie mit [nosampleContent-Ausführungsmodus](../../help/sites-administering/production-ready.md)ausgeführt werden.
+>Wenn Beispielinhalte bereitgestellt und aktiviert sind, gibt es viele Beispielbenutzer sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung. Diese Benutzer sind nicht vorhanden, wenn sie mit [nosampleContent-Ausführungsmodus](../../help/sites-administering/production-ready.md)ausgeführt werden.
 
 ## Mitgliederkonsole {#members-console}
 
-In der Autorenumgebung zur Mitgliederkonsole gelangen, um in der Veröffentlichungsumgebung registrierte Mitglieder zu verwalten:
+In der Umgebung &quot;Autor&quot;erreichen Sie die Mitgliederkonsole, um in der Umgebung &quot;Veröffentlichen&quot;registrierte Mitglieder zu verwalten:
 
 * Aus globaler Navigation: **[!UICONTROL Navigation > Communities > Member]**
 
@@ -48,7 +51,7 @@ In der Autorenumgebung zur Mitgliederkonsole gelangen, um in der Veröffentlichu
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
-### Suche{#search-features}
+### Suche {#search-features}
 
 Klicken Sie auf das Symbol für das Seitenbedienfeld auf der linken Seite der `Members` Kopfzeile, um das Suchseitenbedienfeld zu öffnen.
 
@@ -58,7 +61,7 @@ Klicken Sie auf das Suchsymbol auf der linken Seite der `Members` Kopfzeile, um 
 
 ### Mitgliederstatistiken {#member-statistics}
 
-Die Spalten `Views`, `Posts`und `Follows` werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites ist, auf denen Adobe Analytics `Likes`aktiviert[](sites-console.md#analytics)ist.
+Die Spalten `Views`, `Posts`und `Follows`werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites ist, für die Adobe Analytics `Likes` aktiviert [](sites-console.md#analytics)ist.
 
 ### CSV exportieren {#export-csv}
 
@@ -70,30 +73,42 @@ Die Spaltenüberschriften sind
 
 ## Neues Mitglied erstellen {#create-new-member}
 
-Wählen Sie diese Option, `Create Member` um einen Benutzer in der Veröffentlichungsumgebung zu erstellen.
+Wählen Sie diese Option, `Create Member` um einen Benutzer in der Umgebung &quot;Veröffentlichen&quot;zu erstellen.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### ALLGEMEINE - Mitgliederdetails {#general-member-details}
 
-Die meisten Felder sind optionale Felder, die das Mitglied später in seinem Profil ausfüllen kann.
+Bei den meisten Feldern handelt es sich um optionale Felder, die das Mitglied später auf seinem Profil ausfüllen kann.
 
-* **[!UICONTROL ID]**(*erforderlich*) Die autorisierbare ID ist die Anmelde-ID des Mitglieds.
+* **[!UICONTROL ID]**
+(
+*erforderlich*) Die autorisierbare ID ist die Anmelde-ID des Mitglieds.
 Standardmäßig wird die ID auf den Wert der erforderlichen E-Mail-Adresse eingestellt.
    *Nach der Erstellung kann die ID nicht mehr geändert werden.*
 
-* **[!UICONTROL E-Mail-Adresse]**(*erforderlich*) Die E-Mail-Adresse des Mitglieds.
-Das Mitglied kann seine E-Mail-Adresse bei der Aktualisierung seines Profils ändern.Wenn die ID standardmäßig auf die E-Mail-Adresse eingestellt ist, ändert sich die ID *nicht* , wenn die E-Mail-Adresse geändert wird.
+* **[!UICONTROL E-Mail-Adresse]**
+(
+*erforderlich*) Die E-Mail-Adresse des Mitglieds.
+Das Mitglied kann seine E-Mail-Adresse beim Aktualisieren seines Profils ändern.Wenn die ID standardmäßig auf die E-Mail-Adresse gesetzt ist, ändert sich die ID *nicht* , wenn die E-Mail-Adresse geändert wird.
 
-* **[!UICONTROL Kennwort]**(*erforderlich*) Das Anmeldekennwort.
+* **[!UICONTROL Kennwort]**
+(
+*erforderlich*) Das Anmeldekennwort.
 
-* **[!UICONTROL Kennwort]** erneut eingeben (*erforderlich*) Geben Sie das Kennwort zur Überprüfung erneut ein.
+* **[!UICONTROL Kennwort erneut eingeben]**
+(
+*erforderlich*) Geben Sie das Kennwort zur Überprüfung erneut ein.
 
-* **[!UICONTROL Mitglied zu Sites]** hinzufügen (*optional*) Wählen Sie aus vorhandenen Community-Sites aus, um das Mitglied zur Mitgliedergruppe der Community-Site hinzuzufügen.
+* **[!UICONTROL Mitglied zu Sites hinzufügen]**
+(
+*optional*) Wählen Sie aus vorhandenen Community-Sites aus, um das Mitglied zur Mitgliedergruppe der Community-Site hinzuzufügen.
 
-* **[!UICONTROL Mitglied zu Gruppen]** hinzufügen (*optional*) Wählen Sie aus vorhandenen Mitgliedsgruppen aus, um das Mitglied dieser Gruppe hinzuzufügen.
+* **[!UICONTROL Mitglieder zu Gruppen hinzufügen]**
+(
+*optional*) Wählen Sie aus vorhandenen Mitgliedsgruppen aus, um das Mitglied dieser Gruppe hinzuzufügen.
 
-* Wählen Sie **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### GENERAL - Account settings {#general-account-settings}
 
@@ -104,6 +119,7 @@ Unter &quot;Kontoeinstellungen&quot;kann ein Community-Administrator
       Ein Mitglied kann sich nicht anmelden, was verhindert, dass es Seiten anzeigt oder an Aktivitäten teilnimmt, für die eine Anmeldung erforderlich ist. Sie können immer noch anonym eine offene Community-Site besuchen.
 
    * Nicht verbotenEin Mitglied hat vollen Zugriff auf die Community-Site.
+
    Der Standardwert ist `Not Banned`.
 
 * **[!UICONTROL Beitragsbeschränkungen]**Wenn diese aktiviert sind, ist die Fähigkeit des Mitglieds, Inhalte zu posten, eingeschränkt.
@@ -132,15 +148,15 @@ Siehe auch [Scoring und Badges](implementing-scoring.md).
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
-* **[!UICONTROL Hinzufügen von Abzeichen]**
-   * Geben Sie mit der Eingabe an, um aus den [verfügbaren Abzeichen](badges.md)auszuwählen. Wählen Sie nach Auswahl eines Kennzeichens jede Website oder alle Sites aus, auf denen das Zeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
+* **[!UICONTROL Hinzufügen]**
+   * Geben Sie mit der Eingabe an, um aus den [verfügbaren Abzeichen](badges.md)auszuwählen. Wählen Sie nach Auswahl eines Kennzeichens jede Website oder alle Sites aus, auf denen das Kennzeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
    * Es können mehrere Abzeichen und Sites ausgewählt werden.
 * **[!UICONTROL Entfernen von Markierungen]**
    * Wählen Sie das Papierkorbsymbol neben einer Markierung aus, um sie zu entfernen
 
 ## Gruppenkonsole {#groups-console}
 
-Die in der Autorenumgebung verfügbare Gruppenkonsole ermöglicht die Erstellung und Verwaltung von in der Veröffentlichungsumgebung registrierten Mitgliedsgruppen. Sie ist besonders nützlich für:
+Die in der Umgebung &quot;Autor&quot;verfügbare Gruppenkonsole ermöglicht die Erstellung und Verwaltung von in der Umgebung &quot;Veröffentlichen&quot;registrierten Mitgliedsgruppen. Sie ist besonders nützlich für:
 * [Privilegierte Mitgliedergruppen](users.md#privilegedmembersgroups)
 * Gruppenbasierte Zuweisung von [Aktivierungsressourcen](resources.md)
 
@@ -153,24 +169,32 @@ So greifen Sie auf die Konsole &quot;Gruppen&quot;zu:
 
 ### Neue Gruppe erstellen {#create-new-group}
 
-Wählen Sie diese Option, `Add Group` um eine Gruppe in der Veröffentlichungsumgebung zu erstellen.
+Wählen Sie diese Option, `Add Group` um eine Gruppe in der Umgebung &quot;Veröffentlichen&quot;zu erstellen.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 Die folgenden Felder sind zum Erstellen einer neuen Gruppe von Mitgliedern auf der Seite der Veröffentlichung erforderlich:
 
-* **[!UICONTROL ID]**(*erforderlich*) Die eindeutige ID der Gruppe.
+* **[!UICONTROL ID]**
+(
+*erforderlich*) Die eindeutige ID der Gruppe.
    *Nach der Erstellung kann die ID nicht mehr geändert werden.*
 
-* **[!UICONTROL Name]**(*optional*) Der Anzeigename für die Gruppe.
+* **[!UICONTROL Name]**
+(
+*optional*) Der Anzeigename für die Gruppe.
 
    Der Standardwert ist die ID.
 
-* **[!UICONTROL Beschreibung]**(*optional*) Eine Beschreibung des Zwecks und der Berechtigungen der Gruppe.
+* **[!UICONTROL Beschreibung]**
+(
+*optional*) Eine Beschreibung des Zwecks und der Berechtigungen der Gruppe.
 
-* **[!UICONTROL Mitglieder zu Gruppe]** hinzufügen (*optional*) Wählen Sie Mitglieder auf der Veröffentlichungsseite aus, die als erste Mitglieder der Gruppe aufgenommen werden sollen.
+* **[!UICONTROL Mitglieder zu Gruppe hinzufügen]**
+(
+*optional*) Wählen Sie Mitglieder auf der Seite des Veröffentlichungsmodus aus, die als erste Mitglieder der Gruppe aufgenommen werden sollen.
 
-* Wählen Sie **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ## Autorisierte Administratoren {#authorized-administrators}
 
