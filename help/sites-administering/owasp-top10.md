@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -46,7 +46,7 @@ Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und dahe
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
-Cross-Site Request Forgery (CSRF) wird durch das automatische Einsetzen eines kryptografischen Tokens in alle Formulare und AJAX-Anforderungen und die Überprüfung dieses Tokens auf dem Server für jeden POST-Test abgemildert.
+Cross-Site Request Forgery (CSRF) wird durch die automatische Injektion eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST abgemildert.
 
 In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
 
