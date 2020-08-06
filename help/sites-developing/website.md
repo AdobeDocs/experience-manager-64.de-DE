@@ -61,7 +61,7 @@ Website-Inhaltspaket
 
 ## Installieren von Adobe Experience Manager {#installing-adobe-experience-manager}
 
-To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](/help/sites-deploying/deploy.md#author-and-publish-installs), or perform a [generic installation](/help/sites-deploying/deploy.md#default-local-install). Bei der allgemeinen Installation wird die AEM QuickStart-JAR-Datei heruntergeladen, die Datei &quot;license.properties&quot;in demselben Ordner wie die JAR-Datei abgelegt und die JAR-Datei durch Dublette angeklickt.
+To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](/help/sites-deploying/deploy.md#author-and-publish-installs), or perform a [generic installation](/help/sites-deploying/deploy.md#default-local-install). Bei der allgemeinen Installation wird die AEM Quickstart-JAR-Datei heruntergeladen, die Datei &quot;license.properties&quot;in demselben Ordner wie die JAR-Datei abgelegt und die JAR-Datei durch Klicken auf die Dublette aufgerufen.
 
 Nachdem Sie AEM installiert haben, greifen Sie auf die CRXDE Lite-Entwicklungsumgebung zu, indem Sie auf der Begrüßungsseite auf den Link für CRXDE Lite klicken:
 
@@ -500,7 +500,7 @@ Die Quelle für den Bildlink zur Seite „Products“ könnte beispielsweise htt
 
 Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/components/contentpage/navimage.png.java zu, das Sie erstellen.
 
-1. Öffnen Sie in CRXDE Lite das `topnav.jsp` unter Inhalt des Ankerelements `/apps/mywebsite/components/topnav.`suchen (Zeile 14):
+1. Öffnen Sie in CRXDE Lite das `topnav.jsp` unter &quot;Inhalt des Ankerelements `/apps/mywebsite/components/topnav.`suchen&quot;(Zeile 14):
 
    ```xml
    <%=child.getTitle() %>
@@ -1002,7 +1002,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### Hinzufügen von logo-Komponenten zu contentpage-Komponenten {#adding-the-logo-component-to-the-contentpage-component}
 
-1. Öffnen Sie in CRXDE Lite die `left.jsp` Datei unter `/apps/mywebsite/components/contentpage file` und suchen Sie die folgende Codezeile:
+1. Öffnen Sie in CRXDE Lite die `left.jsp` Unterstreichung `/apps/mywebsite/components/contentpage file` und suchen Sie die folgende Codezeile:
 
    ```xml
    <div>logo</div>
