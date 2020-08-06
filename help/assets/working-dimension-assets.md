@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 1%
 
 ---
 
@@ -19,34 +22,34 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
 
 Das AEM 3D Feature Pack unterstützt Adobe Dimension-Assets (`.dn` Dateien) in AEM Assets, AEM Sites und AEM Screens.
 
-Ein neuer 3D-Viewer, der auf dem offenen Standard glTF basiert, bietet Funktionen zum Anzeigen von Vorschau und Sites und Bildschirmen für Adobe Dimension-Assets.
+Ein neuer 3D-Viewer, der auf dem Open-Standard glTF basiert, bietet Vorschau- und Sites- und Screens-Anzeigefunktionen für Adobe Dimension-Assets.
 
 ## Informationen zum Cloud-basierten Konvertierungsdienst {#about-the-cloud-based-conversion-service}
 
-Wenn ein Dimension-Asset in AEM hochgeladen wird, wird eine Kopie der Datei an einen von Adobe verwalteten Cloud-basierten Dienst weitergeleitet, der in Amazon AWS gehostet wird. Dieser Dienst konvertiert vom proprietären Dimension-Dateiformat von Adobe in das offene glTF-Standardformat. Das konvertierte 3D-Modell wird als binärer glTF (`.glb`) verpackt. AEM speichert das konvertierte Modell mit dem primären Dimension-Asset als Darstellung.
+Wenn ein Dimensionen-Asset in AEM hochgeladen wird, wird eine Kopie der Datei an einen Cloud-basierten Dienst weitergeleitet, der in Amazon AWS gehostet wird. Dieser Dienst konvertiert vom Dateiformat der Adobe-proprietären Dimension in das offene Standardformat glTF. Das konvertierte 3D-Modell wird als binärer glTF (`.glb`) verpackt. AEM speichert das konvertierte Modell mit dem Asset der primären Dimension als Darstellung.
 
-Sie können das `.glb` Konvertierungsformat auf zwei Arten konfigurieren (Anweisungen finden Sie unter [Installieren und Konfigurieren von AEM 3D](install-config-3d.md) ):
+Sie können das `.glb` Konvertierungsformat auf zwei Arten konfigurieren (Anweisungen finden Sie unter [Installieren und Konfigurieren AEM 3D](install-config-3d.md) ):
 
-* Schließen Sie Adobe-spezifische Erweiterungen ein, um die visuelle Qualität zu maximieren, wenn Sie mit dem Adobe glTF-Viewer Dimensionselemente in AEM Assets, AEM Sites oder AEM Screens anzeigen. Dadurch sind die `.glb` Darstellungen mit den meisten Drittanbieteranwendungen nicht kompatibel.
-* Schließen Sie Adobe-spezifische Erweiterungen aus, um die Kompatibilität der `.glb` Darstellung mit Drittanbieteranwendungen zu erreichen. Dadurch wird die visuelle Qualität bei der Anzeige in AEM Assets, AEM Sites oder AEM Screens (z. B. ohne IBL-Beleuchtung) eingeschränkt, um die Qualität typischer Drittanbieteranwendungen zu simulieren.
+* Schließen Sie Adobe-spezifische Erweiterungen ein, um die Visualisierungsqualität zu maximieren, wenn Sie den glTF-Viewer für die Adobe verwenden, um Assets für die Dimension in AEM Assets, AEM Sites oder AEM Screens Ansicht. Dadurch sind die `.glb` Darstellungen mit den meisten Drittanbieteranwendungen nicht kompatibel.
+* Schließen Sie Adoben-spezifische Erweiterungen aus, um die Kompatibilität der `.glb` Darstellung mit Drittanbieteranwendungen zu erreichen. Dies schränkt die visuelle Qualität bei der Anzeige in AEM Assets, AEM Sites oder AEM Screens ein (z. B. keine IBL-Beleuchtung), um die Qualität typischer Drittanbieteranwendungen zu simulieren.
 
-Die Übertragung der Dimensions-/glTF-Dateien auf oder von Amazon AWS und deren temporärer Speicher in AWS sind vollständig gesichert. Diese Dateien bestehen in Amazon AWS nur über einen minimalen Zeitraum. Normalerweise höchstens wenige Minuten während des normalen Betriebs.
+Die Übertragung der Dimension-/glTF-Dateien von oder auf Amazon AWS und ihre temporäre Datenspeicherung in AWS sind vollständig gesichert. Diese Dateien bestehen in Amazon AWS nur über einen minimalen Zeitraum. Normalerweise höchstens wenige Minuten während des normalen Betriebs.
 
-Um die Unterstützung für Dimension-Assets zu aktivieren, müssen Sie beim Zugriff auf den Konvertierungsdienst Anmeldeinformationen von Adobe erhalten. Siehe [Installieren und Konfigurieren von AEM 3D](install-config-3d.md).
+Um die Unterstützung für Dimension-Assets zu aktivieren, müssen Sie über die Adobe Anmeldeinformationen für den Zugriff auf den Konvertierungsdienst erhalten. Siehe [Installieren und Konfigurieren von AEM 3D](install-config-3d.md).
 
 >[!NOTE]
 >
->Wenn Sie die angegebenen Anmeldeinformationen installieren und verwenden, verstehen Sie, dass Ihre Adobe Dimension 3D-Assets an den von Adobe verwalteten, Cloud-basierten Konvertierungsdienst übertragen und von diesem verarbeitet werden, der in Amazon AWS gehostet wird.
+>Wenn Sie die angegebenen Anmeldeinformationen installieren und verwenden, verstehen Sie, dass Ihre Adobe Dimension 3D-Assets an den in Amazon AWS gehosteten, Cloud-basierten Konvertierungsdienst übertragen und von diesem verarbeitet werden.
 
-### Anzeigen auf AEM Assets {#viewing-on-aem-assets}
+### Ansicht auf AEM Assets {#viewing-on-aem-assets}
 
-Das AEM 3D Feature Pack enthält einen neuen Viewer, der auf dem offenen glTF-Standard basiert, der zum Anzeigen von Adobe Dimension-Assets verwendet wird. Dieser Viewer wird automatisch ausgewählt, wenn eine Dimensionsdatei oder eine komprimierte glTF in der Detailansicht von AEM Assets oder mit der 3D-Komponente in AEM Sites geöffnet wird.
+Das AEM 3D Feature Pack enthält einen neuen Viewer, der auf dem offenen glTF-Standard basiert, der zur Ansicht von Adobe Dimension-Assets verwendet wird. Dieser Viewer wird automatisch ausgewählt, wenn eine Dimension-Datei oder eine komprimierte glTF-Datei in der Detail-Ansicht in AEM Assets oder mit der 3D-Komponente in AEM Sites geöffnet wird.
 
 Beachten Sie, dass sich die Benutzeroberfläche des glTF-Viewers etwas von dem Standard-3D-Viewer unterscheidet, der für alle anderen 3D-Asset-Typen verwendet wird.
 
 #### See also the following: {#see-also-the-following}
 
 * [AEM 3D-Versionshinweise](/help/release-notes/aem3d-release-notes.md) zu Einschränkungen und Einschränkungen für Dn-Assets und den glTF-Viewer.
-* [Arbeiten mit der Komponente](using-the-3d-sites-component.md) &quot;3D-Sites&quot;für für Adobe Dimension-Assets spezifische Komponenteneigenschaften
-* [Installieren und Konfigurieren von AEM 3D](install-config-3d.md) zum Konfigurieren des Cloud-basierten Konvertierungsdiensts.
+* [Arbeiten mit der Komponente](using-the-3d-sites-component.md) &quot;3D-Sites&quot;für für Adobe Dimension-Assets spezifische Komponenteneigenschaften.
+* [Installieren und Konfigurieren AEM 3D](install-config-3d.md) zum Konfigurieren des Cloud-basierten Konvertierungsdiensts.
 
