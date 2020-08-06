@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1709'
+ht-degree: 62%
 
 ---
 
@@ -88,7 +91,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Pfadbrowser-Eigenschaften {#path-browser-predicates}
 
@@ -109,7 +112,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Tags-Eigenschaften {#tags-predicates}
 
@@ -187,7 +190,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Ausgeblendeter Filter {#hidden-filter}
 
@@ -229,7 +232,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Eigenschaft für Bereich {#range-predicate}
 
@@ -250,7 +253,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 >[!NOTE]
 >
@@ -275,7 +278,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Reglerbereichseigenschaft {#slider-range-predicate}
 
@@ -296,7 +299,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Komponenteneigenschaft {#components-predicate}
 
@@ -317,7 +320,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Verfassereigenschaft {#author-predicate}
 
@@ -338,7 +341,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Vorlageneigenschaft {#templates-predicate}
 
@@ -359,9 +362,9 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
-## Asset-Admin-Suchschiene {#assets-admin-search-rail}
+## Asset-Admin-Suchleiste {#assets-admin-search-rail}
 
 The nodes below refer to the names in `/conf/global/settings/dam/search/facets/assets/items`
 
@@ -383,7 +386,7 @@ In 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In V
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predikates/pathbrowserPredikate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching-Predikates/pathbrowserPredikate |
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Eigenschaften des MIME-Typs {#mime-type-predicates}
 
@@ -392,7 +395,7 @@ In 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In V
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predicates/optionspredicate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching-Predicates/optionspredicate |
 
-**** Aktion: Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
 ### Dateigrößen-Eigenschaften {#file-size-predicates}
 
@@ -414,7 +417,7 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 
 ### Veröffentlichungseigenschaft {#publish-predicate}
 
-| Knoten im Standard-Suchformular in 6.1 | veröffentlichen |
+| Knoten im Standard-Suchformular in 6.1 | publish |
 |---|---|
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predikates/publishPredicate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching Predikates/publishPredicate |
@@ -434,7 +437,7 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predicates/optionspredicate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching-Predicates/optionspredicate |
 
-**** Aktion:Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
 
 ### Eigenschaften für Gültigkeitsdauer {#expiry-status-predicates}
 
@@ -443,7 +446,7 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predikates/expiredassetPredikate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching-Predikates/expiredassetPredicate |
 
-**** Aktion:Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
 
 ### Eigenschaften für Metadaten-Gültigkeit {#metadata-validity-predicates}
 
@@ -452,7 +455,7 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predicates/optionspredicate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching-Predicates/optionspredicate |
 
-**** Aktion:Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
 
 ### Bewertungseigenschaften {#rating-predicates}
 
@@ -461,7 +464,7 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predikates/ratingPredikate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate |
 
-**** Aktion:Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
 
 ### Ausrichtungseigenschaft {#orientation-predicate}
 
@@ -504,7 +507,7 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searching-Predicates/optionspredicate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searching-Predicates/optionspredicate |
 
-**** Aktion:Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
 
 ### Eigenschaft für Haupt-Asset {#mainasset-predicate}
 
@@ -513,4 +516,4 @@ Aktion: Passen Sie die Eigenschaft resourceType an (fügen Sie &quot;/coral&quot
 | Ressourcentyp in 6.1 | granite/ui/components/foundation/form/hidden |
 | Ressourcentyp in 6.2 | granite/ui/components/coral/foundation/form/hidden |
 
-**** Aktion:Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
+**Aktion:** Passen Sie die `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2)
