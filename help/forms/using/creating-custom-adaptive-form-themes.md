@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 >[!CAUTION]
 >
->AEM Forms bietet die [Design-Editor](/help/forms/using/themes.md) -Funktion zum Erstellen und Ändern von adaptiven [Formularthemen](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgelisteten Schritte nur aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die keinen [Design-Editor](/help/forms/using/themes.md) hat, und Sie bereits über eine Investition in Designs verfügen, die mit &quot;Weniger/CSS&quot;-Dateien erstellt wurden (Methode vor dem Design-Editor).
+>AEM Forms bietet die [Design-Editor](/help/forms/using/themes.md) -Funktion zum Erstellen und Ändern von [Themen](/help/forms/using/themes.md)für adaptive Formulare. Führen Sie die in diesem Artikel aufgelisteten Schritte nur dann aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die keinen [Design-Editor](/help/forms/using/themes.md) hat, und wenn Sie bereits über eine Investition in Themen verfügen, die mit weniger/CSS-Dateien erstellt wurden (Bearbeitungsmethode vor dem Design).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -42,7 +45,7 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![](assets/thumbnail.png) Snapshot **zum adaptiven Formular für Wälder** Abbildung: Beispiel *für Waldgebiete*
+![Snapshot](assets/thumbnail.png)zum adaptiven Formular für Wälder **Abbildung:** *Waldthemenbeispiel*
 
 1. Create a node of type `cq:ClientLibraryFolder` under the `/apps`node.
 
@@ -63,12 +66,14 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
       Dieser Ordner besteht aus den Variablendateien `less`, mixin-Dateien `less` und den Dateien `less`, mit deren Hilfe Stile mit mit Mixins und Variablen definiert werden. Diese Dateien werden dann alle in „styles.less“ importiert.
 
    * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Thema zu verwendenden statischen Stile definieren.
+
    **Less-Variablendateien:** Das sind die Dateien, in denen Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
    Adaptive Formulare stellen OTTB-Variablen bereit, die in den folgenden .less-Dateien festgelegt werden:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
+
    Adaptive Formulare stellen auch Drittanbieter-Variablen bereit, die definiert wurden in:
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
@@ -96,6 +101,7 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
    1. Importieren Sie dann die less-Datei, die überschriebene Variablen einbezieht.
+
    Muster für neue Variablendefinitionen:
 
    ```
@@ -108,9 +114,11 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
    Adaptive Formulare stellen OTTB-Mixins bereit, die festgelegt werden in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
+
    Adaptive Formulare stellen auch Drittanbieter-Mixins bereit, die definiert wurden in:
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
+
    Definition für Muster-mixin:
 
    ```
