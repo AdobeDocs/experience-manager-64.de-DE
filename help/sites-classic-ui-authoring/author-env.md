@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 In der Autorenumgebung können Sie folgende Aufgaben ausführen:
 
-* [Authoring](/help/sites-authoring/author.md) (einschließlich [Seitenverfassen](/help/sites-authoring/qg-page-authoring.md) und [Verwalten von Assets](/help/assets/assets.md))
+* [Authoring](/help/sites-authoring/author.md) (einschließlich [Seiten-Authoring](/help/sites-authoring/qg-page-authoring.md) und [Verwaltung von Assets](/help/assets/assets.md))
 
 * [Verwaltungsaufgaben](/help/sites-administering/administer-best-practices.md), die Sie für die Erstellung und Verwaltung des Inhalts auf Ihrer Website benötigen
 
@@ -36,6 +39,7 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * Sie wurde für die Nutzung auf Desktop-Geräten entwickelt.
    * Sie wird nicht weiterentwickelt.
    * Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zu Bearbeitungsmöglichkeiten in der neueren, Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Touch-optimierte Benutzeroberfläche
@@ -46,8 +50,10 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
 
    * Desktop:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Tablets (oder Desktop mit einer Breite von weniger als 1024 Pixeln):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
