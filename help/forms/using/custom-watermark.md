@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 58%
 
 ---
 
 
 # Wasserzeichen in der PDF-Briefvorschau {#custom-watermark-in-letter-pdf-preview}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
 
@@ -39,11 +42,11 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/configFiles/previewwatermark
+      **Pfad:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Überlagerungsort: /apps/
+      **Überlagerungsort:** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **Knotentypen abgleichen:** Überprüft
 
       >[!NOTE]
       >
