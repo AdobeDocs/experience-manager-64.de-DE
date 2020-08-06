@@ -20,7 +20,7 @@ ht-degree: 59%
 
 # Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-AEM Forms Workspace bietet standardmäßig Unterstützung für Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus können Sie die Benutzeroberfläche von AEM Forms Workspace in jeder anderen Sprache lokalisieren.
+AEM Forms Workspace bietet standardmäßig Unterstützung für Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus bietet es die Möglichkeit, die Benutzeroberfläche von AEM Forms Workspace in jeder anderen Sprache zu lokalisieren.
 
 So lokalisieren Sie die Benutzeroberfläche von AEM Forms Workspace in eine Sprache Ihrer Wahl:
 
