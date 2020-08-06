@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 ## Erstellen von Gruppen beim Autor {#creating-groups-on-author}
 
-Beim Autor über die globale Navigation
+Beim Autor, von der globalen Navigation
 
 * Wählen Sie **[!UICONTROL Communities > Sites]**
 * Wählen Sie **[!UICONTROL den Ordner]** &quot;engagement&quot;aus, um ihn zu öffnen
-* Wählen Sie die Karte für die Site &quot;Erste **[!UICONTROL Schritte - Lernprogramm]** - Englisch&quot;
+* Wählen Sie die Karte für die Site &quot;Erste **[!UICONTROL Schritte - Lernprogramm]** - Englisch&quot;aus.
    * Kartenbild auswählen
    * Symbol *nicht* auswählen
 
@@ -45,24 +48,25 @@ Diese Konsolen sind der Communities Sites-Konsole sehr ähnlich.
 * `1 Community Group Template`:
    * Community-Gruppentitel: Kunst
    * Community-Gruppenbeschreibung: Eine übergeordnete Gruppe für verschiedene Kunstgruppen.
-   * Community-Gruppenstamm: Als Standard *beibehalten*
-   * Zusätzliche verfügbare Community-Gruppensprache(n): Wählen Sie im Pulldown-Menü die verfügbaren Gemeinschaftsgruppensprachen aus. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wurde. Benutzer können in diesem Schritt eine der folgenden Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
+   * Community-Gruppenstamm: *Lassen als Standard*
+   * Zusätzliche verfügbare Community-Gruppensprache(n): Wählen Sie im Pulldown-Menü die verfügbaren Gemeinschaftsgruppensprachen aus. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wurde. Benutzer können in diesem Schritt eine der folgenden Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Konsole &quot;Gruppen&quot;der jeweiligen Community-Sites erstellt.
    * Community-Gruppenname: Kunst
    * Vorlage: nach unten ziehen, um `Reference Group`
    * Wählen Sie nun eine der folgenden Optionen aus `Next`
+
       ![parenttonestedgroup](assets/parenttonestedgroup.png)
 
 Führen Sie mit den folgenden Einstellungen weitere Schritte durch:
 
 * **2 Design**
    * Sie können den Entwurf ändern oder zulassen, dass der Entwurf der übergeordneten Site standardmäßig verwendet wird
-   * Wählen Sie **[!UICONTROL Weiter]**
+   * Wählen Sie **[!UICONTROL Weiter]** aus
 * **3 Einstellungen**
    * **Moderation**
-      * Leer lassen (von der übergeordneten Site übernehmen)
+      * Leer lassen (von übergeordneter Site übernehmen)
    * **Mitgliedschaft**
       * use default `Optional Membership`
-   * **Miniatur**
+   * **Miniaturansicht**
       * `optional`
    * Wählen Sie nun eine der folgenden Optionen aus `Next`
 * Wählen Sie **[!UICONTROL Erstellen]**
@@ -101,7 +105,8 @@ Die `arts` Gruppe sollte auch einen `groups` Ordner enthalten, der jedoch leer i
    * Titel: `Art History`
    * Name: `history`
    * Vorlage: `Reference Group`
-   * Mitgliedschaft: Wählen Sie `Restricted Membership`eine geheime Gruppe aus, die als Beispiel nur für eingeladene Mitglieder sichtbar ist und [Demobenutzer](tutorials.md#demo-users) einlädt `emily.andrews@mailinator.com`
+   * Mitgliedschaft: Wählen Sie `Restricted Membership`eine geheime Gruppe aus, die als Beispiel nur für eingeladene Mitglieder sichtbar ist. 
+[Demo-Benutzer](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Aktualisieren Sie die Seite, um alle drei verschachtelten Gruppen (Unter-Communities) anzuzeigen.
 
