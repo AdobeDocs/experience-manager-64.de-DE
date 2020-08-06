@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Übersicht {#overview}
 
-Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern mit angemeldeten Sites (Mitgliedern), Nachrichten an andere zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
+Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern (Teilnehmern) mit angemeldeten Sites, Nachrichten an andere zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
 
 Die Messaging-Funktion wird für eine Community-Site aktiviert, indem während der Erstellung [](sites-console.md)einer Community-Site ein Kästchen markiert wird.
 
@@ -32,7 +32,7 @@ For additional information for developers, see [Messaging Essentials](essentials
 
 ## Messaging-Dienst {#messaging-operations-service}
 
-Der [AEM Communities Messaging Operations-Dienst](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifiziert den Endpunkt, der Messaging-bezogene Anfragen verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden sollte, und wenn Meldungen Dateianhänge enthalten können, welche Dateitypen sind zulässig.
+Der [AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifiziert den Endpunkt, der mit Messaging zusammenhängende Anfragen verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden sollte, und wenn Meldungen Dateianhänge enthalten können, welche Dateitypen sind zulässig.
 
 Für Community-Sites, die mit der [Communities Sites Console](sites-console.md)erstellt wurden, ist bereits eine Instanz des Dienstes vorhanden, wobei der Posteingang auf `/mail/community/inbox`festgelegt ist.
 
