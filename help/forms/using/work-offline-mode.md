@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Im Offlinemodus der AEM Forms-App können Sie nahtlos arbeiten, auch wenn die App offline ist. Sie können ein Formular öffnen, aktualisieren und senden, ohne dass eine Netzwerkverbindung erforderlich ist.
 
-Sie können die AEM Forms-App nicht bearbeiten, indem Sie Ihre App mit dem AEM Forms-Server synchronisieren. Alle Formulare, die Ihnen zugewiesen sind, werden in Ihre App heruntergeladen. Für AEM Forms on JEE werden Aufgaben auf die Registerkarte „Aufgaben“, mit Startpunkten verbundene Formulare sowie sonstige Formulare auf der Registerkarte „Formulare“ abgerufen. Bei AEM Forms on OSGi werden nur Formulare auf die Registerkarte „Formulare“ geladen.
+Sie können die AEM Forms-App nicht bearbeiten, indem Sie die App mit dem AEM Forms-Server synchronisieren. Alle Formulare, die Ihnen zugewiesen sind, werden in Ihre App heruntergeladen. Für AEM Forms on JEE werden Aufgaben auf die Registerkarte „Aufgaben“, mit Startpunkten verbundene Formulare sowie sonstige Formulare auf der Registerkarte „Formulare“ abgerufen. Bei AEM Forms on OSGi werden nur Formulare auf die Registerkarte „Formulare“ geladen.
 
 Ausführliche Informationen zum Synchronisieren der App finden Sie unter [Synchronisieren der App](/help/forms/using/sync-app.md).
 
@@ -43,7 +46,7 @@ Serverseitige Offlinekomponente der AEM Forms-App konfigurieren:
 1. Unter „Allgemeine Einstellungen“ können Sie die folgenden Vorgänge ausführen:
 
    * **Cache löschen**: Löscht die serverseitig im Cache gespeicherten Formularabhängigkeiten.
-   * **Konfiguration** zurücksetzen: Setzt die Offlinekonfiguration der AEM Forms-App zurück.
+   * **Konfiguration** zurücksetzen: Setzt die AEM Forms-App-Offlinekonfiguration zurück.
    * **Cache-Gültigkeitsdauer**: Gibt die Gültigkeitsdauer für den serverseitigen Offline-Cache an.
    * **Beobachtungspfade für Ressourcen**: Geben Sie die Pfade an, unter die der Offlinedienst auf Ressourcenänderungen überwachen soll. Wenn Änderungen unter den angegebenen Pfaden auftreten, wird der Offline-Cache aller abhängigen Formulare aktualisiert. Beispiel: `/etc/clientlibs/fd,/content/dam/images`.
 
