@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-authoring/launches.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Wählen Sie **Gehe zu Seite** aus, um die Seite zur Bearbeitung zu öffnen.
 
-### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy {#editing-launch-pages-subject-to-a-live-copy}
+### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
 
 Wenn Ihr Launch auf einer [Live Copy](/help/sites-administering/msm.md) basiert, sehen Sie Folgendes:
 
@@ -37,7 +40,7 @@ Eine Livecopy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer 
 Sie können Änderungen auf dieselbe Weise vornehmen wie bei einer Standard-Live-Copy, z. B.:
 
 * Durch Klicken auf ein geschlossenes Schloss wird die Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht von Änderungen überschrieben, die am selben Ort innerhalb der Startverzweigung vorgenommen werden.
-* **Aussetzen** (und **Wiederaufnehmen**) der Vererbung für eine bestimmte Seite.
+* Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
 Siehe [Ändern des Live-Copy-Inhalts](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
 
@@ -66,7 +69,8 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
       * Wählen Sie **Bearbeiten** aus.
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console) zum Anzeigen verfügbarer Aktionen:
 
-      * Wählen Sie **Launch bearbeiten** aus. 
+      * Wählen Sie **Launch bearbeiten** aus.
+
    Die Quellseiten werden angezeigt.
 
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie dann mit **Speichern**.
@@ -75,9 +79,9 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
    >
    >Damit Seiten zu einem Launch hinzugefügt werden können, müssen sich diese unter einem gemeinsamen Sprachstamm befinden, d. h. innerhalb einer einzelnen Website.
 
-## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration   {#editing-a-launch-configuration}
 
-Sie können die Eigenschaften für einen Launch jederzeit bearbeiten: 
+Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
 1. Sie können auf den Launch wie folgt zugreifen und ihn auswählen:
 
@@ -86,14 +90,15 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
       * Wählen Sie **Eigenschaften** aus.
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console) zum Anzeigen verfügbarer Aktionen:
 
-      * Wählen Sie **Eigenschaften bearbeiten** aus. 
+      * Wählen Sie **Eigenschaften bearbeiten** aus.
+
    Die Details werden angezeigt.
 
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie dann mit **Speichern**.
 
-   Unter [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie weitere Informationen über den Zweck und die Interaktion der Felder **Launch-Datum** und **Produktionsbereit**.
+   Unter [Launches – Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie Informationen zum Zweck und zur Interaktion der Felder **Launch-Datum** und **Bereit für Produktion**.
 
-## Ermitteln des Launch-Status einer Seite {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite   {#discovering-the-launch-status-of-a-page}
 
 Der Status wird angezeigt, wenn Sie einen bestimmten Launch auf der Registerkarte „Verweise“ auswählen (siehe [Launches in Verweisen (Sites-Konsole))](/help/sites-authoring/launches.md#launches-in-references-sites-console).
 
