@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 36%
 
 ---
 
@@ -52,7 +55,7 @@ Siehe auch [Integration von AEM 3D mit AutoDesk 3ds Max](integrating-aem-3d-with
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Um Maya für die Erfassung und Wiedergabe zu aktivieren, öffnen Sie **[!UICONTROL CRXDE Lite]** , navigieren Sie zu `/libs/settings/dam/v3D/assetTypes/maya` und legen Sie die **[!UICONTROL Enabled]** -Eigenschaft auf `true`fest.
+1. Um Maya für die Erfassung und Wiedergabe zu aktivieren, öffnen Sie die **[!UICONTROL CRXDE Lite]** , navigieren Sie zu `/libs/settings/dam/v3D/assetTypes/maya` und legen Sie die **[!UICONTROL Enabled]** -Eigenschaft auf `true`fest.
 
    ![image2018-6-22_12-42-7](assets/image2018-6-22_12-42-7.png)
 
@@ -82,7 +85,7 @@ Siehe auch [Integration von AEM 3D mit AutoDesk 3ds Max](integrating-aem-3d-with
 
 1. Nachdem die Verarbeitung abgeschlossen ist, öffnen Sie das `logo-sphere.ma` Asset und wählen Sie die `stage-helipad.ma` Bühne aus.
 
-   Das Vorschaufenster ist dasselbe wie mit `logo_sphere.fbx` und `stage-helipad.fbx`.
+   Das Erlebnis der Vorschau ist identisch mit dem Erlebnis mit `logo_sphere.fbx` und `stage-helipad.fbx`.
 
 1. Near the upper-left corner of the page, tap or click the drop-down list and then select **[!UICONTROL CRender]**.
 
@@ -105,7 +108,7 @@ Siehe auch [Integration von AEM 3D mit AutoDesk 3ds Max](integrating-aem-3d-with
 
 (Optional) Maya unterstützt eine Reihe von 3D-Eingabeformaten, von denen jedes aktiviert werden kann, damit AEM den Dateityp erkennt. Wenn diese Option aktiviert ist, sendet AEM die Datei an Maya, um sie in ein Zwischenformat zu konvertieren, das direkt von AEM aufgenommen werden kann.
 
-Je nach Format kann die Unterstützung für Funktionen eingeschränkt sein (z. B. werden Materialien nicht weitergegeben) und Qualität/Treue kann eingeschränkt sein (z. B. umgekehrte Gesichter). Adobe unterstützt nur den allgemeinen Mechanismus, jedoch keine bestimmte Formatkonversion.
+Je nach Format kann die Unterstützung für Funktionen eingeschränkt sein (z. B. werden Materialien nicht weitergegeben), und Qualität/Treue kann eingeschränkt sein (z. B. umgekehrte Gesichter). Adobe unterstützt nur den allgemeinen Mechanismus, jedoch keine bestimmte Formatkonversion.
 
 See [Supported Data Import Formats | Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-69BC066D-D4D8-4B12-900C-CF42E798A5D6-htm.html) for information about the formats supported by Maya.
 
