@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 83%
 
 ---
 
@@ -42,19 +45,20 @@ Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizi
 
    Legen Sie beispielsweise für NTLM Folgendes fest:
 
-   * **** Pfad: nach Bedarf; zum Beispiel `/`
+   * **Pfad:** nach Bedarf; zum Beispiel `/`
    * **Kopfzeilennamen**: `LOGON_USER`
    * **ID-Format**: `^<DOMAIN>\\(.+)$`
 
       Where `<*DOMAIN*>` is replaced by your own domain name.
    Für CoSign:
 
-   * **** Pfad: nach Bedarf; zum Beispiel `/`
+   * **Pfad:** nach Bedarf; zum Beispiel `/`
    * **Kopfzeilennamen**: remote_user
-   * **** ID-Format: AsIs
+   * **ID-Format:** AsIs
+
    Für SiteMinder:
 
-   * **** Pfad: nach Bedarf; zum Beispiel `/`
+   * **Pfad:** nach Bedarf; zum Beispiel `/`
    * **Kopfzeilennamen:** SM_USER
    * **ID-Format:** AsIs
 
@@ -83,6 +87,7 @@ Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizi
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 Im `disp_iis.ini` Satz:\
@@ -90,6 +95,7 @@ Im `disp_iis.ini` Satz:\
 >
 >* `servervariables=1` (leitet IIS-Servervariablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 >* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
+
 >
 >
 In IIS:
@@ -98,6 +104,7 @@ In IIS:
    >
    >
 * Aktivieren Sie die Option **Integrierte Windows-Authentifizierung**.
+
 >
 
 
@@ -150,7 +157,7 @@ Transfer-Encoding: chunked
 ....
 ```
 
-Dies funktioniert auch bei Anforderung:\
+Dies funktioniert auch, wenn Sie Folgendes anfordern:\
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
 Sie können auch den folgenden Befehl &quot;curl&quot;verwenden, um die `TestHeader` Kopfzeile an `admin:`\
