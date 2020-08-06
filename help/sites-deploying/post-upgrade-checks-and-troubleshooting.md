@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 translation-type: tm+mt
 source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
+workflow-type: tm+mt
+source-wordcount: '1887'
+ht-degree: 89%
 
 ---
 
@@ -75,7 +78,7 @@ Navigate to the OSGi console `/system/console/bundles` and look to see if any bu
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.8.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentter.
+Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.8.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentteer.
 
 ### Überprüfen des Ordners „PreUpgradeBackup“{#inspect-preupgradebackup-folder}
 
@@ -131,7 +134,7 @@ Diese Szenarien sollen dabei helfen, die Grundursache der mit der Aktualisierung
 
 ### Erstellen der Konfiguration der dynamischen Media Cloud nach der Aktualisierung {#dynamic-media-cloud-configuration}
 
-Nach der Aktualisierung auf AEM 6.4 von einer früheren Version kann die Dynamic Media Cloud-Konfiguration aus früheren Einstellungen in der AEM 6.4 TouchUI nicht mehr verfügbar sein. Um dieses Problem zu beheben, verwenden Sie CRXDE Lite, um die früheren Einstellungen zu entfernen, und erstellen Sie dann eine neue Konfiguration der dynamischen Media Cloud. See also [Dynamic Media repository restructuring in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
+Nach der Aktualisierung auf AEM 6.4 von einer früheren Version kann die Dynamic Media Cloud-Konfiguration aus früheren Einstellungen in der TouchUI AEM 6.4 nicht mehr verfügbar sein. Um dieses Problem zu beheben, verwenden Sie CRXDE Lite, um die früheren Einstellungen zu entfernen, und erstellen Sie dann eine neue Konfiguration der dynamischen Media Cloud. See also [Dynamic Media repository restructuring in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
 
 ### Fehler bei der Repository-Migration  {#repository-migration-failing-}
 
@@ -195,7 +198,7 @@ Einige Fehlermeldungen sind möglicherweise nicht sofort selbsterklärend. In di
 
 * `grep -B` zum Hinzufügen von Zeilen vor dem Fehler;
 
- oder  ermöglichen.
+ oder
 
 * `grep -A` zum Hinzufügen von Zeilen nach.
 
