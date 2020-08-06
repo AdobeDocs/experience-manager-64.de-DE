@@ -29,7 +29,7 @@ The [Opt-in wizard](/help/sites-administering/opt-in.md) that [integrates AEM wi
 Darüber hinaus können Sie Adobe Target auch als Quelle für die Berichterstellung für bestimmte Inhalte konfigurieren, indem Sie die „A4T-Analyse-Cloud-Konfiguration“ konfigurieren.
 
 To locate the cloud configuration and the framework, Navigate to **Cloud Services** via **Tools** > **Deployment** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))\
-Klicken Sie unter Adobe Target auf Konfigurationen **anzeigen oder tippen Sie auf Konfigurationen** anzeigen.
+Klicken Sie unter Adobe Target auf oder tippen Sie auf Konfigurationen **anzeigen**.
 
 ### Eigenschaften der bereitgestellten Target-Konfiguration {#provisioned-target-configuration-properties}
 
@@ -150,7 +150,7 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
    * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 
    * **Verwenden Sie genaues Targeting:** Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
-   * **Segmente aus Adobe Target synchronisieren:** Wählen Sie diese Option, um Segmente herunterzuladen, die in Target definiert sind, um sie in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+   * **Segmente aus Adobe Target synchronisieren:** Wählen Sie diese Option, um in der Zielgruppe definierte Segmente herunterzuladen, um sie in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
    * **Client-Bibliothek:** Wählen Sie aus, ob die Client-Bibliothek &quot;mbox.js&quot;oder &quot;AT.js&quot;verwendet werden soll.
    * **Verwenden Sie DTM zur Bereitstellung der Client-Bibliothek** - Wählen Sie diese Option, um entweder AT.js oder mbox.js aus DTM oder einem anderen Tag-Management-System zu verwenden. You must [configure the DTM integration](/help/sites-administering/dtm.md) to use this option. Adobe empfiehlt zum Bereitstellen der Bibliothek die Verwendung von DTM anstelle von AEM.
    * **Benutzerdefinierte mbox.js**: Lassen Sie dieses Feld leer, wenn Sie das Feld „DTM“ aktiviert haben oder die standardmäßige Datei „mbox.js“ verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „mbox.js“ hochladen. Sie wird nur angezeigt, wenn Sie „mbox.js“ ausgewählt haben.
