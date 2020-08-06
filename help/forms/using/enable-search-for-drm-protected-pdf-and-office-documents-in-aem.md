@@ -42,10 +42,11 @@ Eine sichere Verbindung ermöglicht den Informationsfluss zwischen AEM Forms on 
 1. Öffnen Sie AEM Configuration Manager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie Werte für die folgenden Eigenschaften an:
 
-   * **Server-URL:** Geben Sie die HTTP-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie die AEM Forms auf dem JEE-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms auf JEE-Keystore-Datei> neu.
+   * **Server-URL:** Geben Sie die HTTP-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM Forms on JEE-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
    * **Benutzername:** Geben Sie den Benutzernamen des AEM Forms on JEE-Kontos an, um Aufrufe vom AEM Forms on JEE-Server zu initiieren. Das angegebene Konto benötigt Berechtigungen zum Aufrufen der Document Services auf dem AEM Forms on JEE-Server.
    * **Kennwort:** Geben Sie das Kennwort für das AEM Forms on JEE-Konto an, das im Feld „Benutzername“ erwähnt ist.
+
    Klicken Sie auf **Speichern**. AEM ist aktiviert, um PDF- und Microsoft Office-Dokumente, die durch Document Security geschützt sind zu durchsuchen.
 
 ### Konfigurieren von AEM Forms Client SDK Bundle mit gegenseitiger Authentifizierung   {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
@@ -54,13 +55,14 @@ Eine sichere Verbindung ermöglicht den Informationsfluss zwischen AEM Forms on 
 1. Öffnen Sie AEM Configuration Manager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie Werte für die folgenden Eigenschaften an:
 
-   * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie die AEM Forms auf dem JEE-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms auf JEE-Keystore-Datei> neu.
+   * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM Forms on JEE-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
    * **2-Weg-SSL aktivieren**: Aktivieren Sie die Option für 2-Weg-SSL.
    * **KeyStore-Datei-URL**: Geben Sie die URL der KeyStore-Datei an.
    * **TrustStore-Datei-URL**: Geben Sie die URL für die TrustStore-Datei an.
    * **KeyStore-Kennwort**: Geben Sie das Kennwort für die KeyStore-Datei an.
    * **TrustStorePassword**: Geben Sie das Kennwort für die TrustStore-Datei an.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
+
    Klicken Sie auf **Speichern**. AEM ist aktiviert, um PDF- und Microsoft Office-Dokumente, die durch Document Security geschützt sind zu durchsuchen.
 
 ## Indexieren Sie ein Beispiel für ein richtliniengeschütztes PDF- oder Microsoft Office-Dokument. {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
