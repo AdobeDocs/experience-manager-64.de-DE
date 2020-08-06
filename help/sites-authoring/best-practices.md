@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +26,7 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [Formulare](#forms)
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
@@ -69,7 +72,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 |  |  |  |
 |---|---|---|
 | Authoring-Werkzeuge | [Autorenumgebung und Tools](/help/sites-authoring/author-environment-tools.md)  | Bietet eine Übersicht über die Werkzeuge zum Erstellen von Seiten. |
-| Seiten organisieren | [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md) | Bietet eine Übersicht darüber, wie Sie Ihre Seiten am besten organisieren, einschließlich Benennungskonventionen. |
+| Seiten organisieren | [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md) | Bietet eine Übersicht darüber, wie Sie Ihre Seiten am besten organisieren können, einschließlich Benennungskonventionen. |
 
 ## Formulare {#forms}
 
