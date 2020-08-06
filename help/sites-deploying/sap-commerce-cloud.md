@@ -12,6 +12,9 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 translation-type: tm+mt
 source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
 >
 >Diese Seite enthält Links zur hybris-Website. Für bestimmte Seiten benötigen Sie ein Konto, mit dem Sie sich anmelden können.
 
-## Bereitstellen von eCommerce mit der SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## Bereitstellen von eCommerce mit SAP-Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -50,6 +53,7 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 >* Unterstützt bis zu hybris 6.4 mit OCC-Version 2
 >* Sie benötigen Java 7 für den [hybris 5 Server](https://www.hybris.com/en/architecture-technology).
 >* Das hybris-Add-on, der [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wird nicht von der AEM-Erweiterung unterstützt.
+
 >
 
 
