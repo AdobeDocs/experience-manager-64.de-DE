@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +29,7 @@ Einige Hauptkonzepte sind die folgenden:
 
 **HTML-Vorlage** Eine Wrapper-Vorlage mit vom Modell ausgefüllten Platzhaltern.
 
-**AEM Forms Workspace** enthält mehrere einzelne Komponenten. Jede Komponente:
+**AEM Forms Workspace** Enthält mehrere einzelne Komponenten. Jede Komponente:
 
 * Stellt ein einzelnes logischen Element der Benutzeroberfläche dar.
 * Kann eine Sammlung ähnlicher Komponenten sein.
@@ -50,8 +53,8 @@ Ein Beispiel:
 
 1. Benutzer klickt in der Aufgabenliste auf eine Aufgabenvorlage.
 1. Aufgabenansicht erfasst den Klick und ruft Renderfunktion im Aufgabenmodell auf.
-1. Das Aufgabe-Modell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die gesamte Kommunikation mit dem AEM Forms-Server ist.
-1. Dienstklasse ruft AEM Forms REST-Endpunkt für die Rendermethode über AJAX auf.
+1. Das Aufgabe-Modell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die Kommunikation mit dem AEM Forms-Server ist.
+1. Die Dienstklasse ruft den AEM Forms REST-Endpunkt für die Rendermethode über AJAX auf.
 1. Der Erfolgsrückruf für diesen Ajax-Aufruf wird im Aufgabenmodell definiert.
 1. Aufgabenmodell erstellt ein Backbone-Ereignis als Benachrichtigung, dass der Renderaufruf abgeschlossen ist.
 1. Eine andere Ansicht, die Aufgabendetailansicht, überwacht dieses Ereignis des Aufgabenmodells.
