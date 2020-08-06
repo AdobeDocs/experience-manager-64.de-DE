@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 48%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 Die Blogfunktion für AEM Communities wurde von einer Erstellungsaktivität in eine richtige Community-Aktivität umgewandelt, die in der Veröffentlichungsumgebung stattfindet.
 
-Die Blogfunktion unterstützt die Bereitstellung von Community-Informationen in einem Aufzeichnungsformat. Blog-Einträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierte, angemeldete Benutzer) vorgenommen.
+Die Blogfunktion unterstützt die Bereitstellung von Community-Informationen in einem Aufzeichnungsformat. Blog-Einträge werden in der Umgebung &quot;Veröffentlichen&quot;von autorisierten Mitgliedern (registrierte, angemeldete Benutzer) vorgenommen.
 
 Die Blogfunktion bietet Folgendes:
 
@@ -36,7 +39,7 @@ Die Blogfunktion bietet Folgendes:
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Blog-Funktion zu einer AEM-Site
+* Hinzufügen der Blog-Funktion zu einer AEM Site
 * Konfigurationseinstellungen für Blog-Komponenten
 
 >[!NOTE]
@@ -84,13 +87,13 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Privilegierte Mitglieder]** zulassen Wenn diese Option aktiviert ist, dürfen nur Privilegierte Mitglieder Inhalte erstellen.
 
-* **[!UICONTROL Zulässige privilegierte Mitglieder]** Fügen Sie die privilegierten Mitglieder hinzu, die Inhalte erstellen dürfen.
+* **[!UICONTROL Zulässige privilegierte Mitglieder]** Hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
 
 * **[!UICONTROL Blockieren benutzergenerierter Inhalte im Bearbeitungsmodus]**&quot;Autor&quot;Blockieren Sie,wenn diese Option aktiviert ist, beim Bearbeiten im Autorenmodus den vom Benutzer erstellten Inhalt.
 
 * **[!UICONTROL Journaltitel]** Der Blogname, der auf der Seite angezeigt werden soll.
    >Hinweis:
-   >Mit dem Journaltitel wird automatisch eine URL für das Blog erstellt. Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen zur Eindeutigkeit) werden aus dem hier angegebenen Zeitschriftentitel verwendet, um eine URL für das Blog zu erstellen.
+   >Mit dem Protokoll-Titel wird automatisch eine URL für den Blog erstellt. Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen zur Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
 
 * **[!UICONTROL Journalbeschreibung]** Die Beschreibung des Blogs.
 
@@ -144,7 +147,7 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL E-Mail-Abonnements zulassen]**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](subscriptions.md)). Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern per E-Mail ([Abonnement](subscriptions.md)) eine Benachrichtigung über neue Beiträge erlauben. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
@@ -158,7 +161,7 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
    Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** die Moderationseinstellungen an:
 
@@ -172,11 +175,11 @@ Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** die Moderati
 
 * **[!UICONTROL Posts kennzeichnen]**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, Themen oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Themen oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Liste mit Kenn-zeichnungsgründen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie ein Thema oder einen Kommentar als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können die Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie ein Thema oder einen Kommentar als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]**
 
@@ -196,7 +199,7 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** können Sie angeben, welche Tags
 
 * **[!UICONTROL Zulässige Namespaces]**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **[!UICONTROL Empfehlungsgrenze]**
 
@@ -219,7 +222,8 @@ Auf der Registerkarte **[!UICONTROL Journal-Sidebar-Einstellungen]** können Sie
    * MMMMM: vollständiger Monat, z. B. Juni
    * MMM: abgekürzter Monat, z. B. Jun
    * MM: Monatszahl, z. B. 06
-   Der Standardwert ist &quot;yyyy MMMMM&quot;, der beispielsweise &quot;Juni 2015&quot;anzeigen würde.
+
+   Der Standardwert ist &quot;yyyy MMMMM&quot;, der z. B. &quot;Juni 2015&quot;anzeigen würde.
 
 * **[!UICONTROL Ansichtstyp]**
 
@@ -276,7 +280,7 @@ Insbesondere können sie
 * Posten eines Kommentars zu einem Blog-Artikel
 * Bearbeiten Sie einen eigenen Blog-Artikel oder -Kommentar
 * Löschen Sie einen eigenen Blog-Artikel oder -Kommentar
-* Markieren von Blog-Artikeln oder -Kommentaren anderer
+* Markieren von Blog-Artikeln oder -Kommentaren anderer Benutzer
 
 ![chlimage_1-153](assets/chlimage_1-153.png) ![chlimage_1-154](assets/chlimage_1-154.png)
 
