@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 607b2242-d81c-4e7a-9e56-e6dabffccbb6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1659'
+ht-degree: 52%
 
 ---
 
 
 # Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare {#writing-custom-submit-action-for-adaptive-forms}
 
-Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe, die für die Daten ausgeführt wird, die Sie mit einem adaptiven Formular senden. Adobe Experience Manager (AEM) includes [OOTB Submit actions](/help/forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
+Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe der Daten, die Sie mit einem adaptiven Formular senden. Adobe Experience Manager (AEM) includes [OOTB Submit actions](/help/forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
 
 ## Workflow für eine Übermittlungsaktion {#workflow-for-a-submit-action}
 
@@ -50,7 +53,7 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 
 ### Aktionsfelder {#action-fields}
 
-A Submit action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. Diese ausgeblendeten Felder können Werte enthalten, die beim Verarbeiten der Formularübermittlung benötigt werden. Beim Senden des Formulars werden diese Feldwerte als Anforderungsparameter zurückgesendet, die die Übermittlungsaktion während der Übermittlungsverarbeitung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
+A Submit action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/de/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. Diese ausgeblendeten Felder können Werte enthalten, die beim Verarbeiten der Formularübermittlung benötigt werden. Beim Senden des Formulars werden diese Feldwerte als Anforderungsparameter zurückgesendet, die die Übermittlungsaktion während der Übermittlungsverarbeitung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
 
 For example, a Submit action that also captures the time taken to fill a form can add the hidden input fields `startTime` and `endTime`.
 
@@ -60,7 +63,7 @@ Ein Skript kann die Werte der Felder `startTime` und `endTime` bereitstellen, we
 
 Übermittlungsaktionen können auch die Dateianlagen verwenden, die Sie mit der Dateianlagenkomponente hochladen. Skripts für Übermittlungsaktionen können auf diese Dateien mit dem Sling [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html) zugreifen. The [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) method of the API helps identify whether the request parameter is a file or a form field. Sie können die Abfrageparameter in einer Übermittlungsaktion wiederholen, um die Dateianlagenparameter zu identifizieren.
 
-Der folgende Beispielcode identifiziert die Dateianlagen in der Abfrage. Next, it reads the data into the file using the [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Schließlich wird mit den Daten ein Dokumentobjekt erstellt und an eine Liste angehängt.
+Der folgende Beispielcode identifiziert die Dateianlagen in der Abfrage. Next, it reads the data into the file using the [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Schließlich wird mit den Daten ein Dokument-Objekt erstellt und an eine Liste angehängt.
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -82,7 +85,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlung
 >
 >Ein Autor stellt die Umleitungs-URL bereit (über die Konfiguration der Dankeseite). [OOTB-Übermittlungsaktionen](/help/forms/using/configuring-submit-actions.md) verwenden die Umleitungs-URL, um den Browser von der Ressource umzuleiten, auf die der Weiterleitungspfad verweist.
 >
->Sie können eine benutzerdefinierte Übermittlungsaktion schreiben, die eine Anforderung an eine Ressource oder ein Servlet weiterleitet. Adobe empfiehlt, dass das Skript, das die Ressourcenverarbeitung für den Weiterleitungspfad durchführt, die Anforderung nach Abschluss der Verarbeitung an die Weiterleitungs-URL weiterleitet.
+>Sie können eine benutzerdefinierte Übermittlungsaktion schreiben, die eine Anforderung an eine Ressource oder ein Servlet weiterleitet. Adobe empfiehlt, dass das Skript, das die Ressourcenverarbeitung für den Weiterleitungspfad ausführt, die Anforderung nach Abschluss der Verarbeitung an die Weiterleitungs-URL weiterleitet.
 
 ## Übermittlungsaktion {#submit-action}
 
@@ -100,13 +103,13 @@ Eine Übermittlungsaktion ist ein sling:Folder, der Folgendes enthält:
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die OOTB-Übermittlungsaktion &quot;Store Content&quot;(nicht mehr unterstützt), mit der die Daten im CRX-Repository gespeichert werden. In addition, CQ provides a [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?#Configuring the Mail Service) the Day CQ Mail service through the system console. Sie können die Aktion &quot;Inhalt speichern&quot;(nicht mehr unterstützt) wiederverwenden, um die Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet)  ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
-1. Melden Sie sich bei CRXDE Lite unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, sofern dieser nicht bereits vorhanden ist.
+1. Melden Sie sich bei der CRXDE Lite unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, sofern dieser nicht bereits vorhanden ist.
 
    ![Screenshot zur Erstellung eines Knotens mit der Eigenschaft „sling:Folder“](assets/step1.png)
 
 1. **Füllen Sie die erforderlichen Konfigurationsfelder aus.**
 
-   Fügen Sie die Konfiguration hinzu, die für die Store-Aktion erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Store-Aktion aus dem Ordner /libs/fd/af/components/guidesubmittype/store in den Ordner „action“ unter /apps/custom_submit_action/store_and_email.
+   Hinzufügen die Konfiguration, die für die Aktion &quot;Store&quot;erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Store-Aktion aus dem Ordner /libs/fd/af/components/guidesubmittype/store in den Ordner „action“ unter /apps/custom_submit_action/store_and_email.
 
    ![Screenshot zum Kopieren des Knotens „dialog“ in den Ordner „action“](assets/step2.png)
 
