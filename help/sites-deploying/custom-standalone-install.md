@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
 translation-type: tm+mt
 source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 76%
 
 ---
 
@@ -39,6 +42,7 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 >* Diese Ziffern müssen nach dem Bindestrich stehen.
 >* if there are any other digits in the filename, then the port number must be prefixed with `-p`
 >* Das Präfix „cq5“ am Anfang des Dateinamens wird ignoriert.
+
 >
 
 
@@ -86,7 +90,8 @@ So installieren und starten Sie AEM als Windows-Dienst:
 
    * prunsrv_amd64
    * prunsrv_ia64
-   Dieser Befehl ruft das entsprechende Skript auf, das den Windows-Dienst-Daemon in 64-Bit Java statt in 32-Bit Java startet.
+
+   Dieser Befehl ruft das entsprechende Skript auf, mit dem der Windows-Dienst-Daemon in 64-Bit-Java statt in 32-Bit-Java Beginn wird.
 
 1. Verhindern Sie, dass der Vorgang sich in mehr als einen Prozess aufspaltet, indem Sie die maximale Heap-Größe und die PermGen-JVM-Parameter erhöhen. Locate the `set jvm_options` command and set the value as follows:
 
@@ -101,9 +106,11 @@ So installieren und starten Sie AEM als Windows-Dienst:
 1. Starten Sie den Dienst, indem Sie einen der folgenden Schritte ausführen:
 
    * Klicken Sie unter „Systemsteuerung“ > „Dienste“ auf „cq5“ und anschließend auf „Starten“.
+
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
    * Geben Sie in der Befehlszeile „net start cq5“ ein.
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. Windows gibt an, dass der Dienst ausgeführt wird. AEM wird gestartet und die ausführbare Datei „prunsrv“ wird im Task-Manager angezeigt. Navigieren Sie in Ihrem Webbrowser zu AEM, beispielsweise `http://localhost:4502`, um mit der Nutzung von AEM zu beginnen.
@@ -276,13 +283,11 @@ Mit den folgenden Links können Sie die Funktionsfähigkeit Ihrer Installation �
 
 * `http://localhost:8080/crx/de`
 
-   
-Die CRXDE Lite-Konsole.
+   Die CRXDE Lite-Konsole.
 
 * `http://localhost:8080/system/console`
 
-   
-Die Web-Konsole.
+   Die Web-Konsole.
 
 ## Aktionen nach der Installation {#actions-after-installation}
 
