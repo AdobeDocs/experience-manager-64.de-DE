@@ -31,7 +31,7 @@ AEM LiveCycle Connector ist Teil des [AEM Forms-Add-On-Pakets](/help/forms/using
 
 Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigsten erläutert:
 
-* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, Beginn AEM mit der folgenden JVM
+* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, AEM Beginn mit folgender JVM
 
    ```
    argument 
