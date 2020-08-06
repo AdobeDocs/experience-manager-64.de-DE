@@ -4,6 +4,9 @@ description: Trennen Sie Inhalte im CRX-Repository nach Kundenorganisation, um u
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 34%
 
 ---
 
@@ -25,7 +28,7 @@ Mit der Funktion für mehrere Mandanten können Sie die folgenden Assets und Kom
 
 * Sammlungen
 * Allgemeine Sammlungen
-* Kataloge (einschließlich des Assistenten &quot;Seite hinzufügen/auswählen&quot;)
+* Kataloge (einschließlich des Assistenten &quot;Seite Hinzufügen/auswählen&quot;)
 * Vorlagen
 * Snippet-Vorlagen
 * Lightbox
