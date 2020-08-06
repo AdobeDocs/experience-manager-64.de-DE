@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 translation-type: tm+mt
 source-git-commit: a210d3bf80b7e7ec62c76a21f1cc2e71e986a4dc
+workflow-type: tm+mt
+source-wordcount: '1107'
+ht-degree: 68%
 
 ---
 
@@ -56,7 +59,7 @@ Um dieses Problem zu beheben, können Sie Folgendes versuchen:
 * Überprüfen Sie, ob eine große Anzahl von PollingImporter-Instanzen registriert ist (siehe „Herunterfahren dauert aufgrund von PollingImporter lange“ weiter unten).
 * Führen Sie Report Importer zu einem bestimmten Zeitpunkt am Tag aus. Verwenden Sie hierfür CRON-Ausdrücke für die `ManagedPollingImporter`-Konfigurationen in der [OSGi-Konsole](/help/sites-deploying/configuring-osgi.md).
 
-For additional details about creating custom data importer services in AEM, read the following article [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html).
+For additional details about creating custom data importer services in AEM, read the following article [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/de/experience-manager/using/polling.html).
 
 ### Herunterfahren dauert aufgrund von PollingImporter lange {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
@@ -83,7 +86,7 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 Stellen Sie außerdem sicher, dass nur Seiten der obersten Ebene (oben in der Hierarchie) auf eine Analytics-Konfiguration verweisen.
 
-For additional details about creating custom data importer services in AEM, read the following article [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html).
+For additional details about creating custom data importer services in AEM, read the following article [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/de/experience-manager/using/polling.html).
 
 ## Probleme mit DTM (Legacy){#dtm-legacy-issues}
 
@@ -141,7 +144,7 @@ Weitere Informationen finden Sie auf der Seite [Entwickeln für zielgerichtete I
 
 ### Fehler „Fehlende Report Suite-ID in AppMeasurement-Initialisierung“ in der Browser-Konsole {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
-Dieses Problem kann auftreten, wenn Adobe Analytics mithilfe von DTM auf der Website implementiert wird und benutzerspezifischer Code verwendet wird. The cause is using the `s = new AppMeasurement()` to instantiate the `s` object.
+Dieses Problem kann auftreten, wenn Adobe Analytics mithilfe von DTM implementiert wird und benutzerdefinierter Code verwendet wird. The cause is using the `s = new AppMeasurement()` to instantiate the `s` object.
 
 #### Lösung {#solution-4}
 
@@ -210,7 +213,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Wenn die Antwort die Zeile `a4tEnabled:false` enthält, wenden Sie sich an die [Adobe-Kundenunterstützung,](https://helpx.adobe.com/contact.html), um die Bereitstellung Ihres Kontos zu korrigieren.
+Wenn die Antwort die Zeile `a4tEnabled:false` enthält, wenden Sie sich an die [Adobe-Kundenunterstützung,](https://helpx.adobe.com/de/contact.html), um die Bereitstellung Ihres Kontos zu korrigieren.
 
 ### Nützliche Target-APIs {#helpful-target-apis}
 
