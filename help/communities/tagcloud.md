@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 43%
 
 ---
 
@@ -53,19 +56,22 @@ Legen Sie auf der Registerkarte **[!UICONTROL Social Tag-Cloud]** fest, welche T
 
    * `From page and child pages`
    * `All tags`
-   Die Standardeinstellung ist `From page and child pages`, wobei &quot;page&quot;auf die **Seiteneinstellung** unten verweist.
 
-* **[!UICONTROL Seite]**(erforderlich, wenn nicht `All tags)` Der Pfad zum UGC für eine Seite. Wird kein Pfad angegeben, verweist die Standardeinstellung automatisch auf die aktuelle Seite.
+   Die Standardeinstellung ist `From page and child pages`, wobei &quot;page&quot;auf die unten stehende Einstellung &quot; **Page** &quot;verweist.
+
+* **[!UICONTROL Seite]**(erforderlich, wenn nicht erforderlich) 
+`All tags)` Der Pfad zum UGC für eine Seite. Wird kein Pfad angegeben, verweist die Standardeinstellung automatisch auf die aktuelle Seite.
 
 * **[!UICONTROL Keine Einschränkung bezüglich Tags]** Ist diese Option aktiviert, werden Tags in der Tag-Cloud als normaler Text dargestellt. Wenn diese Option nicht aktiviert ist, werden die Tags als aktive Links angezeigt, die nach allen Inhalten suchen, auf die dieses Tag angewendet wird. Standardmäßig ist die Option deaktiviert und es muss ein **[!UICONTROL Suchergebnispfad]** festgelegt werden.
 
-* **[!UICONTROL Suchergebnispfad]** Der Pfad zu einer Seite, auf der eine `Search Result` Komponente platziert wurde, die so konfiguriert ist, dass auf UGC verwiesen wird, das den von der Einstellung &quot; **Seite** &quot;angegebenen UGC-Pfad enthält.
+* **[!UICONTROL Suchergebnispfad]** Der Pfad zu einer Seite, auf der eine 
+`Search Result` -Komponente platziert wurde, konfiguriert, um auf UGC zu verweisen, das den UGC-Pfad enthält, der durch die Einstellung **Seite** angegeben wurde.
 
 ## Anpassen der Anzeige einer Social-Tag-Cloud {#change-display-of-social-tag-cloud}
 
 To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
 
-Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Ein Tag kann ein einfaches Tag, ein einzelnes Wort im Standard-Namespace oder eine hierarchische Taxonomie sein:
+Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Ein Tag kann ein einfaches Tag, ein einzelnes Wort im Standard-Namensraum oder eine hierarchische Taxonomie sein:
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
@@ -75,6 +81,7 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    * Aktiviert: `Geometrixx Media: Gadgets / Cars`
    * Deaktiviert: `Cars`
+
    Bei einfachen Tags ist kein Unterschied feststellbar.
 
    Diese Option ist standardmäßig deaktiviert.
@@ -89,6 +96,7 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    * Checked: only `Cars` will display, if applied
    * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied
+
    Einfache Tags sind immer Leaf-Tags.
 
    Diese Option ist standardmäßig deaktiviert.
