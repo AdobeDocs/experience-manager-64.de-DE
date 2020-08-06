@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 78%
 
 ---
 
 
 # Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal {#integrating-create-correspondence-ui-with-your-custom-portal}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
@@ -95,7 +98,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
   </tr>
   <tr>
    <td>cmUseTestData</td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>Um die Testdaten wiederzuverwenden, die im Datenwörterbuch angehängt sind.</td> 
   </tr>
  </tbody>
@@ -114,7 +117,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>„True“, um den Brief im Vorschaumodus zu öffnen<br />  </td> 
   </tr>
   <tr>
