@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +26,7 @@ Die Sling-API arbeitet auf einem höheren, abstrakteren Niveau als die JCR-API. 
 
 ## Vermeiden Sie Abfragen, wo immer es möglich ist {#avoid-queries-wherever-possible}
 
-Es ist immer schneller, das Repository zu durchsuchen, um Daten abzurufen, als eine Abfrage auszuführen. Es gibt Fälle, in denen Abfragen erforderlich sind, z. B. eine Endbenutzerabfrage oder die Suche nach strukturiertem Inhalt aus dem gesamten Repository, aber in allen anderen Fällen wird es bevorzugt, zu den erforderlichen Knoten zu navigieren. Abfragen sollten in der Renderlogik wie Navigationskomponenten, einer &quot;Liste der zuletzt verwendeten Elemente&quot;, der Anzahl der Elemente usw. stets vermieden werden. In diesen Fällen ist es besser, durch die Hierarchie zu gehen oder das Ergebnis vorab zwischenzuspeichern, damit es direkt beim Rendern verwendet werden kann.
+Es ist immer schneller, das Repository zu durchsuchen, um Daten abzurufen, als eine Abfrage auszuführen. Es gibt Fälle, in denen Abfragen erforderlich sind, z. B. eine Endbenutzerabfrage oder die Suche nach strukturiertem Inhalt aus dem gesamten Repository, aber in allen anderen Fällen wird es bevorzugt, zu den erforderlichen Knoten zu navigieren. Abfragen sollten in der Renderlogik wie Navigationskomponenten, einer &quot;Liste der letzten Elemente&quot;, der Zählung von Elementen usw. stets vermieden werden. In diesen Fällen ist es besser, durch die Hierarchie zu gehen oder das Ergebnis vorab zwischenzuspeichern, damit es direkt beim Rendern verwendet werden kann.
 
 ## Schränken Sie die JCR-Überwachung ein {#restrict-the-scope-of-jcr-observation}
 
