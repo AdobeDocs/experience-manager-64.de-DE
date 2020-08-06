@@ -10,13 +10,16 @@ topic-tags: develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 81%
 
 ---
 
 
 # Automatisieren von Tests von adaptiven Formularen {#automate-testing-of-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, dass Sie Ihre adaptiven Formulare mit jeder Änderung testen, die Sie daran vornehmen, z. B. beim Rollout eines neuen Fixpack oder beim Ändern einer Regel im Formular. Allerdings kann das funktionelle Testen adaptiver Formen und jedes Feld in ihnen mühsam sein.
 
@@ -75,7 +78,7 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
    <td><p>UI-Interaktion</p> </td> 
    <td> 
     <ul> 
-     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testen von UI-Interaktion mit adaptiven Formularobjekten </a></li> 
+     <li><a href="https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testen von UI-Interaktion mit adaptiven Formularobjekten </a></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -85,9 +88,9 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
 
 Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie Folgendes wissen:
 
-* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
-* [Hobbes-Javascript-APIs](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
-* [Calvin JavaScript-APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/de/aem/6-3/develop/components/hobbes.html)
+* [Hobbes-Javascript-APIs](https://docs.adobe.com/docs/de/aem/6-2/develop/ref/test-api/index.html)
+* [Calvin JavaScript-APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
 ## Beispiel: Erstellen Sie einen Test für ein adaptives Formular mit Hobbes als Tests-Rahmen {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
@@ -159,7 +162,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
    * Name: testForm (Ihr Formularname)
    * Typ: cq:ClientLibraryFolder
 
-1. Fügen Sie die folgenden Eigenschaften zum Testen eines adaptiven Formulars zum neu erstellten Knoten (hier &quot;testForm&quot;) hinzu:
+1. Hinzufügen Sie die folgenden Eigenschaften an den neu erstellten Knoten (hier &quot;testForm&quot;), um ein adaptives Formular zu testen:
 
    | **Eigenschaft** | **Typ** | **Wert** |
    |---|---|---|
@@ -174,7 +177,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner, den Sie für das Testformular (hier testForm) erstellt haben und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**. Nennen Sie die Datei scriptingTest.js und fügen Sie den folgenden Code zur Datei hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   Um den folgenden Code zum Testen eines anderen adaptiven Formulars zu verwenden, ändern Sie den Pfad und den Namen des Formulars in **navigateTo** (Zeilen 11, 36 und 62) und die entsprechenden Testfälle. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Um den folgenden Code zum Testen eines anderen adaptiven Formulars zu verwenden, ändern Sie den Pfad und den Namen des Formulars in **navigateTo** (Zeilen 11, 36 und 62) und die entsprechenden Testfälle. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -312,7 +315,7 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Term</strong></td> 
+   <td><strong>Begriff</strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
@@ -324,7 +327,7 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
    <td><p>Ein Testfall stellt eine Aufgabe dar, die ein Benutzer mithilfe der Benutzeroberfläche ausführt. Fügen Sie Testfälle zu Ihrer Testsuite hinzu, um die Aktivitäten zu testen, die Benutzer ausführen.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Aktionen</p> </td> 
+   <td><p>Aktionen   </p> </td> 
    <td><p>Aktionen sind Methoden, die eine Geste auf der Benutzeroberfläche ausführen, wie z. B. das Klicken auf eine Schaltfläche oder das Füllen eines Eingabefeldes mit einem Wert.</p> <p>Die Methoden der Klassen hobs.actions.Assets, hobs.actions.Core und hobs.utils.af sind Aktionen, die Sie in Ihren Tests verwenden können. Alle Aktionen werden synchron ausgeführt.</p> </td> 
   </tr> 
   <tr> 
