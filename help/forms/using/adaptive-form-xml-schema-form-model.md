@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1081'
+ht-degree: 92%
 
 ---
 
@@ -167,6 +170,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 >
 >* Großschreibung des ersten Zeichens des Elementnamens
 >* Einfügen eines Leerzeichens bei Binnenmajuskeln.
+
 >
 >
 For example, if you add the `userFirstName` schema element, the caption generated in the adaptive form is `User First Name`.
@@ -217,7 +221,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>Boolesch </p> </td> 
+   <td><p>Boolesch</p> </td> 
    <td><p>Wenn „true“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, kleiner sein als der numerische Wert oder das Datum, der/das für die Eigenschaft „maximum“ angegeben ist.</p> <p>Wenn „false“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, kleiner oder gleich dem numerischen Wert oder Datum sein, der/das für die Eigenschaft „maximum“ angegeben ist.</p> </td> 
    <td> 
     <ul> 
@@ -228,7 +232,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>Boolesch </p> </td> 
+   <td><p>Boolesch</p> </td> 
    <td><p>Wenn „true“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, größer sein als der numerische Wert oder das Datum, der/das für die Eigenschaft „minimum“ angegeben ist.</p> <p>Wenn „false“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, größer oder gleich dem numerischen Wert oder Datum sein, der/das für die Eigenschaft „minimum“ angegeben ist.</p> </td> 
    <td> 
     <ul> 
@@ -297,7 +301,7 @@ The bindRef</code> field shows the association between a tree element and an ele
 
 >[!NOTE]
 >
->Attributes have an `@` symbol in their `bindRef`value to distinguish them from elements. Beispiel, `/config/projectDetails/@duration`.
+>Attributes have an `@` symbol in their `bindRef`value to distinguish them from elements. Beispiel: `/config/projectDetails/@duration`.
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
 
