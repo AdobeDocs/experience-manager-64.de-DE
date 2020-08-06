@@ -36,7 +36,7 @@ Die AEM Forms-Sicherungsstrategie umfasst zwei Sicherungsarten:
 
 **Systembild:** Eine vollständige Systemsicherung, mit der Sie den Inhalt Ihres Computers wiederherstellen können, wenn die Festplatte oder der gesamte Computer nicht mehr funktioniert. Eine Systemabbildsicherung ist nur vor der Bereitstellung von AEM Forms in der Produktionsumgebung erforderlich. Interne Unternehmensrichtlinien bestimmen anschließend, wie häufig Systemabbildsicherungen erforderlich sind.
 
-**AEM Forms-spezifische Daten:** Anwendungsdaten befinden sich in der Datenspeicherung für globale Dokumente (GDS) und im AEM-Repository und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
+**AEM formularspezifische Daten:** Anwendungsdaten befinden sich in der Datenspeicherung für globale Dokumente (GDS) und AEM Repository und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
 
 >[!NOTE]
 >
