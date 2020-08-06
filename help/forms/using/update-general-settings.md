@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +25,7 @@ Allgemeine Einstellungen des AEM Forms App können Sie die Einstellungen, z. B. 
 
 Wenn Sie die App mit dem AEM Forms-Server synchronisieren, werden alle Formulare und definierten Aufgaben auf Ihr mobiles Gerät heruntergeladen.
 
-Die im Lieferumfang enthaltene AEM Forms-App-Lösung lädt die mit jedem Formular verknüpften Anlagen nicht herunter, wenn die App synchronisiert wird.
+Die im Lieferumfang enthaltene AEM Forms-App-Lösung lädt die mit den einzelnen Formularen verknüpften Anlagen nicht herunter, wenn die App synchronisiert wird.
 
 Ändern Sie auf der Registerkarte „Allgemein“ die Einstellungen für das Herunterladen von Anlagen, für den Offline-Modus, den Einstiegsbildschirm, die automatische Speicherung und die Synchronisierung. Sie können den [Startbildschirm](/help/forms/using/home-screen.md) der App ändern.
 
@@ -49,7 +52,7 @@ Sie können folgende Änderungen an den Einstellungen der App vornehmen.
 
    Verfügbare Optionen:
 
-   * Forms
+   * Formulare
    * Aufgaben
    * Favoriten
 
@@ -57,7 +60,7 @@ Sie können folgende Änderungen an den Einstellungen der App vornehmen.
 
 * **Autosave Frequency**: So legen Sie fest, wie oft Ihre [mobile App Formulardaten](/help/forms/using/autosave-data-app.md) lokal speichert.
 
-* **Synchronisierungshäufigkeit**: So legen Sie die Häufigkeit fest, mit der die [mobile App im Onlinemodus mit dem AEM Forms-Server synchronisiert](/help/forms/using/sync-app.md) wird.
+* **Synchronisierungshäufigkeit**: So legen Sie die Häufigkeit fest, mit der die [mobile App im Online-Modus mit dem AEM Forms-Server synchronisiert](/help/forms/using/sync-app.md) wird.
 
 **Clear Local Data**: Löscht die Datenbank, einschließlich Einstellungen und lokaler Daten für alle Benutzer und Dateispeicher auf dem Gerät.
 
