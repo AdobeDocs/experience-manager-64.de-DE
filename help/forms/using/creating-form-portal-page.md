@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 73%
 
 ---
 
@@ -22,13 +25,13 @@ Forms Portal-Komponenten bieten Webentwicklern Komponenten zum Erstellen und Anp
 
 Forms Portal-Komponenten stehen nicht standardmäßig zur Verfügung. Stellen Sie sicher, dass die folgenden Forms Portal-Komponentenkategorien aktiviert sind, wie unter [Aktivieren der Komponenten im Forms Portal](/help/forms/using/enabling-forms-portal-components.md) beschrieben.
 
-**Document Services** umfasst die Komponenten &quot;Search &amp; Lister&quot;, &quot;Link&quot;und &quot;Drafts and Submissions&quot;.
+**Dokument Services** umfasst die Komponenten &quot;Search &amp; Lister&quot;, &quot;Link&quot;und &quot;Drafts and Submissions&quot;.
 
 **Document Services-Eigenschaften**: Umfasst die Komponenten „Date Predicate“, „Full Text Predicate“, „Properties Predicate“ und Tags Predicate. Diese Komponenten werden zum Konfigurieren der Suche in der Komponente „Search &amp; Lister“ verwendet.
 
 Sobald sie auf einer AEM-Site-Seite aktiviert sind, stehen diese Komponentenkategorien für die Verwendung im Komponenten-Browser zur Verfügung.
 
-![](assets/component-categories.png) AEM Forms Portal-Komponenten im Komponenten-Browser **** Abbildung: Komponentenkategorien *für Forms Portal*
+![AEM Forms Portal-Komponenten im Komponenten-Browser](assets/component-categories.png)**Abbildung:** *Kategorien von Forms-Portalkomponenten*
 
 ## Komponente „Search &amp; Lister“{#search-amp-lister-component}
 
@@ -37,9 +40,9 @@ Die Komponente „Search &amp; Lister“, die in der Document Services- Komponen
 * Listenbereich, in dem die Formulare aufgeführt sind.
 * Suchbereich, in dem Sie die Suchfunktion hinzufügen.
 
-Sie können die Komponente &quot;Search &amp; Lister&quot;aus der Document Services-Komponentenkategorie im Komponenten-Browser auf die Seite ziehen. Ist die Komponente hinzugefügt, sieht sie beispielsweise wie folgt aus.
+Sie können die Komponente &quot;Search &amp; Lister&quot;aus der Kategorie der Dokument Services-Komponenten im Komponentenbrowser auf die Seite ziehen. Ist die Komponente hinzugefügt, sieht sie beispielsweise wie folgt aus.
 
-![](assets/fp-grid-viw.png) Komponente &quot;Search &amp; Lister&quot;in einer Seite **** Abbildung: Komponente &quot; *Search &amp; Lister&quot;auf einer Seite mit Rasterlayout*
+![Komponente &quot;Search &amp; Lister&quot;in einer Seite](assets/fp-grid-viw.png)**Abbildung:** *Komponente &quot;Search &amp; Lister&quot;auf einer Seite mit Rasterlayout*
 
 ### Listenbereich {#list-pane}
 
@@ -47,7 +50,7 @@ Im Listenbereich werden die Formulare aufgeführt. Die Komponente „Search &amp
 
 To configure the List pane, tap the Search and Lister component and then tap ![settings_icon](assets/settings_icon.png). Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
 
-![](assets/edit-list.png) Listenbereich im Bearbeitungsmodus **** Abbildung: *Listenbereich im Bearbeitungsmodus*
+![Liste im Bearbeitungsmodus](assets/edit-list.png)**Abbildung:** *Bereich &quot;Liste&quot;im Bearbeitungsmodus*
 
 Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Tap **[!UICONTROL OK]** to save the configuration, when done.
 
@@ -152,7 +155,7 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
 
 **Tipp:** *Sie können anhand vorgegebener Kriterien die Liste der Formulare festlegen, die im Formularportal angezeigt werden, und die Suchfunktion für Endbenutzer ausblenden. Um die Formularliste zu steuern, verwenden Sie die Prädikatkomponenten, um Suchfilter anzuwenden. You can also specify the default filter values and disable the search from the Display tab of the Edit Component dialog.*
 
-![](assets/search-with-predicates.png) Suchfeld mit den Eigenschaften **&quot;Datum&quot;, &quot;Volltext&quot;, &quot;Eigenschaften&quot;und &quot;Tags&quot;** Abbildung: *Suchfeld mit den Eigenschaften &quot;Datum&quot;, &quot;Volltext&quot;, &quot;Eigenschaften&quot;und &quot;Tags&quot;*
+![Suchfeld mit den Eigenschaften](assets/search-with-predicates.png)&quot;Datum&quot;, &quot;Volltext&quot;, &quot;Eigenschaften&quot;und &quot;Tags&quot;**Abbildung:** *Suchfeld mit der Eigenschaft &quot;Datum&quot;, &quot;Volltext&quot;, &quot;Eigenschaften&quot;und &quot;Tags&quot;*
 
 #### Datumseigenschaft {#date-predicate}
 
@@ -163,11 +166,11 @@ Konfigurieren der Komponente „Date Predicate“:
 1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Geben Sie Folgendes an:
 
-   * **** Typ: Die einzige verfügbare Option ist &quot; **[!UICONTROL Letztes Änderungsdatum]**&quot;.
+   * **[!UICONTROL Typ:]** Die einzige verfügbare Option ist &quot; **[!UICONTROL Letztes Änderungsdatum]**&quot;.
    * **[!UICONTROL Text:]** Beschriftung der Komponente „Date Predicate“. The default value is **[!UICONTROL Last Modified Date]**.
-   * **** Beschriftung des Startdatums: Beschriftung oder Beschriftung des Felds für das Startdatum.
-   * **** Bezeichnung des Enddatums: Beschriftung für das Feld &quot;Enddatum&quot;.
-   * **** Ausblenden: So erzwingen Sie den Standarddatumsfilter zur Auflistung von Formularen.
+   * **[!UICONTROL Bezeichnung des Beginns:]** Beschriftung oder Beschriftung des Datumsfelds des Beginns.
+   * **[!UICONTROL Bezeichnung des Enddatums:]** Beschriftung für das Feld &quot;Enddatum&quot;.
+   * **[!UICONTROL Ausblenden:]** So erzwingen Sie den Standarddatumsfilter für Formulare zur Liste.
 
 1. Tippen Sie auf **[!UICONTROL OK]**.
 
@@ -221,11 +224,11 @@ Um Formulare mit dem Status „Entwurf“ sowie bereits gesendete Formulare aufz
 
 ## Eignung für Mobilgeräte {#mobile-device-friendliness}
 
-Die Forms-Portal-Komponente „Search &amp; Lister“ ist für Mobilgeräte geeignet und passt sich entsprechend an. Alle drei Standardansichten: Raster-, Karten-, Bedienfeld-Layouts entsprechend dem Gerät, auf dem die Site geöffnet wird, vorausgesetzt, dass sich die Webseite auch anpasst. Die simple Tatsache besteht darin, dass „Search &amp; Lister“ nur eine Komponente ist und nicht den Seitenstil steuert.
+Die Forms-Portal-Komponente „Search &amp; Lister“ ist für Mobilgeräte geeignet und passt sich entsprechend an. Alle drei Standardeinstellungen: Raster-, Karten-, Bedienfeld-Layouts entsprechend dem Gerät, auf dem die Site geöffnet wird, vorausgesetzt, dass sich die Webseite auch anpasst. Die simple Tatsache besteht darin, dass „Search &amp; Lister“ nur eine Komponente ist und nicht den Seitenstil steuert.
 
 In der folgenden Abbildung wird die Komponente „Search &amp; Lister“ angezeigt, wenn sie auf einem Mobilgerät geöffnet wird:
 
-![](assets/search_lister.png) Screenshot der Komponente **&quot;Search and Lister&quot;** Abbildung: Komponente *Search &amp; Lister*
+![Screenshot der Komponente](assets/search_lister.png)&quot;Search and Lister&quot;**Abbildung:** *Komponente &quot;Search &amp; Lister&quot;*
 
 ## Anpassen einer Forms Portal-Seite {#customizing-a-forms-portal-page-br}
 
