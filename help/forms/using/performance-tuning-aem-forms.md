@@ -148,9 +148,9 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM-Installationsordner]\crx-repository\temp
-   * [AEM-Installationsordner]\crx-repository\repository
-   * [AEM-Installationsordner]\crx-repository\launchpad
+   * [AEM Installationsordner]\crx-repository\temp
+   * [AEM Installationsordner]\crx-repository\repository
+   * [AEM Installationsordner]\crx-repository\launchpad
 
 * Temporärer Ordner des Anwendungsservers. Der Standardspeicherort lautet:
 
