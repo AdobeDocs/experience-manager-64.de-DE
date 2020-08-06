@@ -10,13 +10,16 @@ topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1581'
+ht-degree: 93%
 
 ---
 
 
 # Erstellen und Verwalten von A/B-Test für adaptive Formulare {#create-and-manage-a-b-test-for-adaptive-forms}
 
-## Überblick {#overview-br}
+## Übersicht {#overview-br}
 
 Ihre Kunden werden ein Formular wahrscheinlich verlassen, wenn sie nicht davon angesprochen fühlen. Für die Kunden ist dies ein frustrierendes Erlebnis. Für Ihr Unternehmen kann es zusätzlichen Supportaufwand und Mehrkosten bedeuten. Das Kundenerlebnis optimal zu gestalten und dadurch eine höhere Konvertierungsrate zu erzielen, ist absolut unverzichtbar und stellt zugleich eine große Herausforderung dar. Mit Adobe Experience Manager Forms erhalten Sie das entscheidende Werkzeug dafür.
 
