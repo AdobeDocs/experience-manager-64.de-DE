@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 98%
 
 ---
 
@@ -253,7 +256,7 @@ So fügen Sie schon bestehenden Listen Leads hinzu:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...** Das Fenster **Zur Liste hinzufügen **wird geöffnet.
+1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...** Das Fenster **Hinzufügen in Liste **wird geöffnet.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
