@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
 translation-type: tm+mt
 source-git-commit: ecfac782540ac6712e11bed9148199561b7e7f79
+workflow-type: tm+mt
+source-wordcount: '1442'
+ht-degree: 87%
 
 ---
 
@@ -71,7 +74,7 @@ Ein XFA-Formular kann viele Abschnitte enthalten, die nur für Datensatzdokument
 
 Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Es bedarf jedoch gemeinsamer Bemühungen, um effiziente und produktive Formulare zu entwickeln. Zusätzlich zu HTML5-Formularen finden Sie hier einige Informationen für bewährte Verfahren zu AEM:
 
-* [Best Practices für die Bereitstellung und Wartung von AEM](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung und Verwaltung von AEM](/help/sites-deploying/best-practices.md)
 * [Bewährte Verfahren zum Erstellen von Inhalten](/help/sites-authoring/best-practices.md)
 * [Best Practices für die Verwaltung von AEM](/help/sites-administering/administer-best-practices.md)
 * [Bewährte Verfahren zur Entwicklung von Lösungen](/help/sites-developing/best-practices.md)
@@ -81,4 +84,4 @@ Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in e
 ## Schnellnachweiskarte {#quick-reference-card}
 
 Sie können folgende Karte drucken (klicken Sie auf eine Karte, um eine hochauflösende Version herunterzuladen) und diese auf Ihrem Schreibtisch aufbewahren, um eine kurze Referenz zu erhalten:
-Best Practices für[ ![HTML5-Formulare - Schnellverweiskarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[ ![Best Practices für HTML5 Forms - Schnellverweiskarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
