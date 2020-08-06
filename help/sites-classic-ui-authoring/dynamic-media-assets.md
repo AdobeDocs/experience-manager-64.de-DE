@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Dynamic Media
 seo-title: Arbeiten mit Dynamic Media
-description: Mit dynamischen Medien können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Master-Assets können Sie mit dynamischen Medien mehrere Variationen ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
-seo-description: Mit dynamischen Medien können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Master-Assets können Sie mit dynamischen Medien mehrere Variationen ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+description: Mit Dynamic Media können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Master-Assets können Sie mit dynamischen Medien mehrere Variationen ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+seo-description: Mit Dynamic Media können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Master-Assets können Sie mit dynamischen Medien mehrere Variationen ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
 translation-type: tm+mt
 source-git-commit: 4ae3c1dc9af8a9d4a3cdb8a30ed8d898e1079ce6
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 90%
 
 ---
 
 
 # Arbeiten mit Dynamic Media{#working-with-dynamic-media}
 
-Mit [dynamischen Medien](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets aus Master-Assets können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets aus Master-Assets können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
 Dynamic Media ermöglicht interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
 
