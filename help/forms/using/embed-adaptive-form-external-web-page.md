@@ -60,7 +60,7 @@ Sie können ein adaptives Formular einbetten, indem Sie einige Zeilen JavaScript
     if(options.path) {
     // options.path bezieht sich auf die Veröffentlichungs-URL des adaptiven Formulars
     // Beispiel: http:myserver:4503/content/forms/af/ABC, wobei ABC das adaptive Formular
-    // Hinweis ist: Wenn der AEM-Server auf einem Kontextpfad ausgeführt wird, muss die URL des adaptiven Formulars den
+    // Hinweis ist: Wenn AEM Server auf einem Kontextpfad ausgeführt wird, muss die URL des adaptiven Formulars den
     Pfad context pathvar path = options.path;
     path += &quot;/jcr:content/guideContainer.html&quot;;
     $.ajax({
@@ -155,7 +155,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs &quot;Senden&quot;, &quot;Vorausfüllen&quot;und andere URLs zum zulassungsliste des auf der Dispatcher-Ebene hinzufügen.
+>Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie der Zulassungsliste auf der Dispatcher-Ebene die URLs &quot;Senden&quot;, &quot;Vorausfüllen&quot;und andere URLs hinzufügen.
 
 ## Best Practices {#best-practices}
 
@@ -165,7 +165,7 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 * Verwenden Sie für den Formularcontainer auf der Webseite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formularcontainer nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
 * Use  [getData](https://helpx.adobe.com/de/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API to get the XML or JSON representation of form data in client.
 * Use [unloadAdaptiveForm](https://helpx.adobe.com/de/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API to unload the adaptive form from HTML DOM.
-* Richten Sie die Kopfzeile &quot;access-control-Herkunft&quot;ein, wenn Sie eine Antwort vom AEM-Server senden.
+* Richten Sie beim Senden der Antwort vom AEM den Header access-control-Herkunft ein.
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms  {#cross-domain-sites}
 
