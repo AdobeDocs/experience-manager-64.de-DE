@@ -30,9 +30,9 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 ### Apache Sling Authentifizierungsdienst konfigurieren{#configure-apache-sling-authentication-service} 
 
-1. Zu `https://[server]:[port]/system/console/configMgr` AEM Forms mit OSGi wechseln oder
+1. Wechseln Sie zu `https://[server]:[port]/system/console/configMgr` AEM Forms unter OSGi oder
 
-   `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, die auf JEE laufen.
+   `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, das auf JEE läuft.
 
 1. Wählen Sie die Konfiguration **Apache Sling-Authentifizierungsdienst**, um ihn im Modus „Bearbeiten“ zu öffnen.
 
@@ -61,7 +61,7 @@ Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist sta
 1. Melden Sie sich bei der AEM-Web-Konsole als Administrator an.
 
    * URL for AEM Forms on OSGi is `https://[server]:[port]/system/console/configMgr`
-   * URL für AEM Forms unter JEE ist `https://[server]:[port]/lc/system/console/configMgr`
+   * URL für AEM Forms on JEE: `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Öffnen Sie **[!UICONTROL Mobile Forms-Konfigurationen]** für die Bearbeitung.
 1. Wählen Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
@@ -72,7 +72,7 @@ Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist sta
 1. In the Options window, select **Server Options** page, provide the following details, and click **OK**.
 
    * **Server URL**: AEM Forms-Server URL.
-   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.     
+   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.         
    * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
