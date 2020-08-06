@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 92%
 
 ---
 
@@ -21,35 +24,35 @@ AEM wurde mit Blick auf eine maximale Umsetzung der Content Accessibility Guidel
 
 Die [Web Content Accessibility Guidelines, Version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) sind eine vom [World Wide Web Consortium (W3C)](https://www.w3.org/) im Rahmen seiner [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) entwickelte Zusammenstellung international anerkannter Richtlinien.
 
-WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Webinhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autoren, Designer und Entwickler von Webinhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Hörverlust, Lernschwächen, altersbedingte Einschränkungen u. Ä.
+WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autoren, Designer und Entwickler von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Hörverlust, Lernschwächen, altersbedingte Einschränkungen u. Ä.
 
-Die Beschreibung eines Bilds (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
+Die Beschreibung eines Bildes (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
 
-Darüber hinaus kann WCAG 2.0 Vorteile für andere Bedürftige bringen, so z. B. für Personen, die ggf. als *situationsabhängig* behindert gelten. Also Personen, die aufgrund von Faktoren wie Browsertechnologie, Geschwindigkeit der Netzwerkverbindung oder Browserumgebung auf ähnliche Hindernisse stoßen können wie Menschen mit Behinderungen.
+Darüber hinaus kann WCAG 2.0 Vorteile für andere Bedürftige bringen, so z. B. für Personen, die ggf. als *situationsabhängig* behindert gelten. Also Personen, die aufgrund von Faktoren wie Browser-Technologie, Geschwindigkeit der Netzwerkverbindung oder Browser-Umgebung auf ähnliche Hindernisse stoßen können wie Menschen mit Behinderungen.
 
-Mit Adobe Experience Manager können Inhaltsautoren und/oder Websitebetreiber Webinhalte erstellen, die den Erfolgskriterien der WCAG 2.0 Level A und Level AA entsprechen.
+Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber Web-Inhalte erstellen, die den Erfolgskriterien der WCAG 2.0 Level A und Level AA entsprechen.
 
-Daher ist das Verständnis der Ziele von WCAG 2.0 und der Struktur der Richtlinien ein wichtiger Teil des Verständnisses von Barrierefreiheit im Web und wie die Richtlinien bei der Erstellung barrierefreier Webinhalte helfen können.
+Daher ist das Verständnis der Ziele von WCAG 2.0 und der Struktur der Richtlinien ein wichtiger Teil des Verständnisses von Barrierefreiheit im Web und wie die Richtlinien bei der Erstellung barrierefreier Web-Inhalte helfen können.
 
 Absicht von WCAG 2.0 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen:
 
 * Sind **technologieunabhängig:**
 
-   Mit anderen Worten, Richtlinien, die auf eine Reihe von Webinhalt-Formaten angewendet werden können, nicht nur HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Webtechnologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
+   Mit anderen Worten, Richtlinien, die auf eine Reihe von Webinhalt-Formaten angewendet werden können, nicht nur HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
 
 * Sind **testbar:**
 
    Jede Leitlinie wird so geschrieben, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Zugänglichkeitsexperten generell zustimmt, dass die Leitlinie eingehalten wurde. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht. WCAG 2.0 wurde mit dem Ziel verfasst, die Subjektivität zu reduzieren, die in einigen der WCAG 1.0-Richtlinien und -Kontrollpunkte vorhanden war.
 
-* Unterstützung **priorisierter und kontextbezogener Implementierung:**
+* Unterstützung einer **priorisierten und kontextabhängigen Implementierung:**
 
-   Wie bei WCAG 1.0 werden die WCAG 2.0-Richtlinien in Bezug auf die voraussichtlichen Auswirkungen, die sich aus der Nichtbefolgung einer Leitlinie auf eine bestimmte Gruppe von Benutzern mit Behinderungen ergeben, vorrangig behandelt. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Webtechnologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. Von Anwendern verlangen, dass sie über spezielle assistierenden Techniken und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
+   Wie bei WCAG 1.0 werden die WCAG 2.0-Richtlinien in Bezug auf die voraussichtlichen Auswirkungen, die sich aus der Nichtbefolgung einer Leitlinie auf eine bestimmte Gruppe von Benutzern mit Behinderungen ergeben, vorrangig behandelt. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Web-Technologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. von Anwendern verlangen, dass sie über spezielle unterstützende Technologien und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.0 wesentlich beeinflusst.
 
 >[!NOTE]
 >
->Es ist nicht möglich, eine Website zu erstellen, die für alle denkbaren Behinderungen oder Personentypen geeignet ist. Zweck von WCAG 2.0 ist es, Webautoren bei der Erstellung von Websites zu unterstützen, die so umfassend wie möglich unter bestimmten Bedingungen und in vertretbarem Rahmen barrierefrei sind.
+>Es ist nicht möglich, eine Website zu erstellen, die für alle denkbaren Behinderungen oder Personentypen geeignet ist. Zweck von WCAG 2.0 ist es, Web-Autoren bei der Erstellung von Websites zu unterstützen, die so umfassend wie möglich unter bestimmten Bedingungen und in vertretbarem Rahmen barrierefrei sind.
 
 >[!NOTE]
 >
@@ -57,9 +60,9 @@ Diese Ziele haben die Struktur von WCAG 2.0 wesentlich beeinflusst.
 
 ## Struktur {#structure}
 
-WCAG 2.0 ist so strukturiert, dass Konzepte der barrierefreien Erstellung von Webinhalten schrittweise und detailliert umgesetzt werden. Dies mag den Eindruck erwecken, dass es sich bei WCAG 2.0 um eine sehr komplexe Zusammenstellung miteinander verknüpfter Dokumente handelt. Doch das eigentliche Ziel ist es, (nach und nach) detailliertere Informationen zur Verfügung zu stellen, wenn die Autoren sie benötigen, anstatt sie alle in einem sehr großen Dokument bereitzustellen.
+WCAG 2.0 ist so strukturiert, dass Konzepte der barrierefreien Erstellung von Web-Inhalten schrittweise und detailliert umgesetzt werden. Dies mag den Eindruck erwecken, dass es sich bei WCAG 2.0 um eine sehr komplexe Zusammenstellung miteinander verknüpfter Dokumente handelt. Doch das eigentliche Ziel ist es, (nach und nach) detailliertere Informationen zur Verfügung zu stellen, wenn die Autoren sie benötigen, anstatt sie alle in einem sehr großen Dokument bereitzustellen.
 
-WCAG 2.0 besteht aus vier Grundprinzipien für barrierefreies Design.Diese sind:
+WCAG 2.0 besteht aus vier Grundprinzipien für barrierefreies Design. Diese sind:
 
 1. **Wahrnehmbar**: Kann ein Anwender den betreffenden Webinhalt nachvollziehen?
 1. **Bedienbar**: Kann ein Anwender navigieren, Daten eingeben oder anderweitig mit den Webinhalten interagieren?
@@ -75,14 +78,14 @@ Diese Prinzipien werden im Englischen gelegentlich mit dem Akronym POUR bezeichn
 
 * Jede Richtlinie besteht aus einem oder mehreren **Erfolgskriterien**.
 
-   * Success criteria are written as statements, which are either `True` or `False` for any given web page.
+   * Erfolgskriterien werden als Aussagen geschrieben, die für eine bestimmte Web-Seite entweder `True` oder `False` sind.
    * Erfolgskriterien können Entweder/Oder-Entscheidungen oder Ausnahmen vorsehen, d. h. Situationen, in denen die Erfolgskriterien nicht erfüllt sein müssen.
    * Erfolgskriterien sind gemäß der übergeordneten Richtlinie und dem Prinzip von 1.1.1 bis 4.1.1 nummeriert. Sie haben auch einen Kurznamen, der zur besseren Orientierung die Absicht des Kriteriums zusammenfasst. Beispielsweise heißt das Erfolgskriterium 1.1.1 „Textalternativen“.
-   * Success criteria include a list of related **techniques** (described in more detail below).
+   * Zu den Erfolgskriterien gehört eine Liste zugehöriger **Techniken** (siehe unten).
 
 ## Unterstützende Ressourcen {#supporting-resources}
 
-Zusätzlich zu den WCAG 2.0-Hauptkomponenten (Prinzipien, Richtlinien und Erfolgskriterien) gibt es eine Reihe unterstützender Dokumente. Einige davon bieten spezifische Ratschläge dazu, wie Aspekte der Richtlinien erfüllt werden können. Andere sind allgemeinere Hinweise, die Webautoren, -designern und -entwicklern aller Fachrichtungen helfen, WCAG 2.0 so effektiv wie möglich zu verstehen und zu nutzen.
+Zusätzlich zu den WCAG 2.0-Hauptkomponenten (Prinzipien, Richtlinien und Erfolgskriterien) gibt es eine Reihe unterstützender Dokumente. Einige davon bieten spezifische Ratschläge dazu, wie Aspekte der Richtlinien erfüllt werden können. Andere sind allgemeinere Hinweise, die Web-Autoren, -Designern und -Entwicklern aller Fachrichtungen helfen, WCAG 2.0 so effektiv wie möglich zu verstehen und zu nutzen.
 
 Während WCAG 2.0 ein statisches Dokument ist und sich nicht ändern wird, sind die meisten dieser unterstützenden Ressourcen dynamisch. Sie werden sich im Laufe der Zeit ändern und umfassender werden, sobald neue Technologien auftauchen und neue Beispiele dafür gefunden werden, wie Barrierefreiheit im Internet erreicht werden kann.
 
@@ -90,7 +93,7 @@ Während WCAG 2.0 ein statisches Dokument ist und sich nicht ändern wird, sind 
 
 * [Eine Übersicht über alle zu WCAG 2.0 gehörigen Dokumente](https://www.w3.org/WAI/intro/wcag.php)
 * [Erläuterung der Zusammenhänge zwischen den einzelnen Komponenten](https://www.w3.org/WAI/intro/wcag20)
-* [Häufig gestellte Fragen zu WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html)
+* [Häufig gestellte Fragen zu WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
 ### Techniken für WCAG 2.0 {#techniques-for-wcag}
 
@@ -102,7 +105,7 @@ Da Techniken weitaus spezifischer als Erfolgskriterien sind, beziehen sie sich i
 
 So kann auf Techniken zugegriffen werden:
 
-* Durch Erfassung (Techniken können allgemein sein oder sich auf eine bestimmte Technologie oder ein bestimmtes Format beziehen - wie HTML, CSS oder clientseitige Skripterstellung) oder
+* Nach Sammlung (Techniken können allgemein sein oder sich auf eine bestimmte Technologie oder ein bestimmtes Format beziehen – wie HTML, Cascading Style Sheets oder Client-seitiges Scripting) oder
 * Anhand zugehöriger Erfolgskriterien. Techniken können für mehr als ein Erfolgskriterium gelten.
 
 Jede Technik hat eine eindeutige Zahl, die auf ihre Sammlung verweist. Eine der ARIA-Techniken ist beispielsweise die *Technik ARIA2: Identifizieren von Pflichtfeldern mit der Eigenschaft „required“*.
@@ -132,14 +135,14 @@ Zu allen Erfolgskriterien gibt es auch eine eigene Seite des Typs „Grundlagen�
 * Zweck des Erfolgskriteriums
 * Gängige Beispiele, wie das Erfolgskriterium erfüllt werden kann
 * Verwandte (nicht W3C-) Ressourcen mit Informationen, wie das Erfolgskriterium erfüllt wird
-* Techniken und Fehler: spezifische und detaillierte Beispiele, wie das Erfolgskriterium erfüllt werden kann (weiter unten beschrieben)
-* Schlüsselbegriffe - ein Glossar von Begriffen, die für das Verständnis des Erfolgskriteriums wichtig sind.
+* Techniken und Fehler: Konkrete und detaillierte Beispiele, wie das Erfolgskriterium erfüllt werden kann (im Folgenden näher beschrieben)
+* Schlüsselbegriffe: Ein Glossar von Begriffen, die für das Verständnis des Erfolgskriteriums wichtig sind.
 
-Ein Beispiel finden Sie unter: [Non-text Content – Understanding SC 1.1.1](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html).
+Ein Beispiel finden Sie unter: [Erfolgskriterium 1.1.1 verstehen (Nichttextlicher Inhalt)](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html).
 
 ### Erfüllen von WCAG 2.0 {#how-to-meet-wcag}
 
-Der Abschnitt „How to Meet“ befindet sich auf der Seite [How To Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/). Dieser Abschnitt bietet eine alternative Darstellung der WCAG, die es erlaubt, den Inhalt der Richtlinien auf die für die eigenen Interessen oder Gegebenheiten des Lesers relevantesten zu präzisieren. Leser können die Erfolgskriterien filtern, die sie einsehen möchten, indem sie bestimmte Webinhaltstechnologien wie Cascading Style Sheets oder Skripts oder bestimmte Prioritätsstufen angeben.
+Der Abschnitt „Erfüllen von“ befindet sich auf der Seite [Erfüllen von WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/). Dieser Abschnitt bietet eine alternative Darstellung der WCAG, die es erlaubt, den Inhalt der Richtlinien auf die für die eigenen Interessen oder Gegebenheiten des Lesers relevantesten zu präzisieren. Leser können die Erfolgskriterien filtern, die sie einsehen möchten, indem sie bestimmte Webinhaltstechnologien wie Cascading Style Sheets oder Skripts oder bestimmte Prioritätsstufen angeben.
 
 Ohne Filterung liefert diese Ressource alle Erfolgskriterien, nach Richtlinien gruppiert. Für jedes Erfolgskriterium wird Folgendes angegeben:
 
