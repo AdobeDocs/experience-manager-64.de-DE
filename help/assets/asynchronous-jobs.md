@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 19%
+ht-degree: 22%
 
 ---
 
@@ -23,15 +23,15 @@ You can view the status of asynchronous tasks from the **[!UICONTROL Async Job S
 
 >[!NOTE]
 >
->Standardmäßig werden die [!DNL Assets] Aufgaben parallel ausgeführt. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Standardmäßig werden die [!DNL Assets] Aufgaben parallel ausgeführt. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. Weitere Informationen finden Sie unter [Warteschlangenkonfigurationen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Bei jeder asynchronen [!DNL Assets] Verarbeitung eines Vorgangs erhalten Sie eine Benachrichtigung in Ihrem [!DNL Experience Manager] Posteingang [](/help/sites-authoring/inbox.md) und per E-Mail. Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Async-Auftragsstatus]**.
+Whenever [!DNL Assets] processes an operation asynchronously, you receive a notification in your [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) and via an email. Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Status asynchroner Aufträge]**.
 
-1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Vorgänge]** > **[!UICONTROL Aufträge]**.
+1. In the [!DNL Experience Manager] interface click **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
 
-1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Async-Auftragsstatus]**.
+1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Status von asynchronen Aufträgen]**.
 
    ![Status und Details asynchroner Vorgänge](assets/job_status.png)
 
@@ -48,7 +48,7 @@ Bei jeder asynchronen [!DNL Assets] Verarbeitung eines Vorgangs erhalten Sie ein
 
    ![Details einer Metadaten-Import-Aufgabe](assets/job_details.png)
 
-1. Um den Vorgang aus der Liste zu löschen, wählen Sie die Option **[!UICONTROL Löschen]** in der Symbolleiste aus. To download the details in a CSV file, click **[!UICONTROL Download]**.
+1. Um den Vorgang aus der Liste zu löschen, wählen Sie die Option **[!UICONTROL Löschen]** in der Symbolleiste aus. Um die Details als CSV-Datei herunterzuladen, tippen/klicken Sie auf **[!UICONTROL Herunterladen]**.
 
    >[!NOTE]
    >
@@ -92,5 +92,5 @@ Wenn die Anzahl der zu verschiebenden Assets, Ordner oder Verweise die festgeleg
 >[!MORELIKETHIS]
 >
 >* [Konfigurieren Sie E-Mail in Experience Manager](/help/sites-administering/notification.md).
->* [Stapelweises Importieren und Exportieren von Asset-Metadaten](/help/assets/metadata-import-export.md).
+>* [Importieren und Exportieren von Asset-Metadaten in großen Mengen](/help/assets/metadata-import-export.md).
 
