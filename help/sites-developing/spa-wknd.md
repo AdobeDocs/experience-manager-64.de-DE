@@ -24,9 +24,9 @@ Tauchen Sie ein in die SPA-Entwicklung mit diesem mehrteiligen Tutorial, das Sie
 
 ## Tutorials {#tutorials}
 
-Ein durchgehendes Beispiel zum Erstellen einer eigenen Einzelseitenanwendung, die mit AEM bearbeitet werden kann und mit der Projekteinrichtung über das Anwendungs-Routing beginnt, finden Sie in den WKND SPA-Lernprogrammen:
+Ein durchgehendes Beispiel zum Erstellen einer eigenen Einzelseitenanwendung, die mit AEM Projekteinrichtung über das Routing bearbeitet werden kann, finden Sie in den WKND-SPA-Tutorials:
 
-* [Erste Schritte mit AEM SPA Editor und Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Erste Schritte mit AEM SPA Editor und React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Erste Schritte mit dem AEM SPA Editor und Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Erste Schritte mit dem AEM SPA-Editor und React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Bevor Sie jedoch mit Ihrem eigenen SPA-Projekt für AEM beginnen, sollten Sie auch die [Entwicklungs-SPAs für AEM](/help/sites-developing/spa-architecture.md) Dokument lesen.
+Bevor Sie jedoch Ihr eigenes SPA-Projekt für AEM starten, sollten Sie auch die [Entwicklungs-SPAs für AEM](/help/sites-developing/spa-architecture.md) Dokument lesen.
