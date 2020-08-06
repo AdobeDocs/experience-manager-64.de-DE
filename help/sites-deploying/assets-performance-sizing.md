@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 80%
 
 ---
 
@@ -72,15 +75,15 @@ In der folgenden Legende werden Bereiche mit möglichen Leistungsproblemen samt 
 
 **Temporäres Dateisystem** Ein langwieriges lokales Dateisystem kann zu interaktiven Leistungsproblemen führen, besonders bei der Suche, da die Suchindizes auf der lokalen Festplatte gespeichert werden. Darüber hinaus können Probleme bei der Asset-Verarbeitung auftreten, sofern der Befehlszeilenprozess verwendet wird.
 
-**AEM DAM Finder** Interaktive Leistungsprobleme, die häufig bei Suchvorgängen auftreten, werden durch eine hohe CPU-Auslastung verursacht, die durch viele gleichzeitige Benutzer oder andere CPU-konsumierende Prozesse auf derselben Instanz verursacht wird. Durch den Wechsel von virtuellen Maschinen zu dedizierten Maschinen und die Sicherstellung, dass keine weiteren Dienste auf dem Rechner ausgeführt werden, kann die Leistung verbessert werden. Wenn eine hohe CPU-Last durch eine Asset-Verarbeitung und viele gleichzeitige Benutzer verursacht wird, empfiehlt Day das Hinzufügen weiterer Clusterknoten.
+**AEM DAM Finder** Interactive Leistungsprobleme, die häufig bei Suchvorgängen auftreten, werden durch eine hohe CPU-Auslastung aufgrund vieler gleichzeitiger Benutzer oder anderer CPU-konsumierender Prozesse auf derselben Instanz verursacht. Durch den Wechsel von virtuellen Maschinen zu dedizierten Maschinen und die Sicherstellung, dass keine weiteren Dienste auf dem Rechner ausgeführt werden, kann die Leistung verbessert werden. Wenn eine hohe CPU-Last durch eine Asset-Verarbeitung und viele gleichzeitige Benutzer verursacht wird, empfiehlt Day das Hinzufügen weiterer Clusterknoten.
 
-**AEM DAM Workflow** Dauerhaft ausgeführte Arbeitsablaufprozesse während der Asset-Erfassung verursachen Probleme bei der Verarbeitung von Assets. Abhängig vom Typ der verarbeiteten Assets kann dies auf eine Überauslastung der CPU hindeuten. Day empfiehlt, die Anzahl der anderen im System ausgeführten Prozesse zu reduzieren und die Anzahl der verfügbaren CPUs durch Hinzufügen von Clusterknoten zu erhöhen.
+**AEM DAM-Workflow** Dauerhaft ausgeführte Arbeitsablaufprozesse während der Asset-Erfassung verursachen Leistungsprobleme bei der Asset-Verarbeitung. Abhängig vom Typ der verarbeiteten Assets kann dies auf eine Überauslastung der CPU hindeuten. Day empfiehlt, die Anzahl der anderen im System ausgeführten Prozesse zu reduzieren und die Anzahl der verfügbaren CPUs durch Hinzufügen von Clusterknoten zu erhöhen.
 
 **NAS-Konnektivität** Schlechte Netzwerkverbindung zum NAS verursacht interaktive Leistungsprobleme, da der Zugriff auf neue Knoten während der Asset-Verarbeitung aufgrund der Netzwerklatenz verlangsamt wird. Außerdem wirkt sich ein langsamer Netzwerkdurchsatz nicht nur negativ auf den Durchsatz aus, sondern auch auf die Leistung bei der Asset-Verarbeitung, denn Wiedergaben werden langsamer geladen und gespeichert.
 
 Ursachen für eine schlechte Latenz und unzureichenden Durchsatz in einem NAS sind gewöhnlich die Netzwerktopologie oder eine NAS-Überauslastung durch andere Dienste.
 
-**Netzwerkgebundene Speichersysteme** Zu wenig genutzte, mit Netzwerken verbundene Speichersysteme können zu einer Reihe von Problemen führen:
+**Netzwerkgebundene Datenspeicherung** Durch zu viele Netzwerkverbindungen verursachte Datenspeicherung können Probleme verursachen:
 
 * Geringer Festplattenspeicher ist ein häufig auftretendes Problem, das durch eine ordnungsgemäße Dimensionierung von DAM-Projekten verhindert werden kann.
 * Eine hohe Festplattenlatenz führt zu langsamen Zugriffszeiten für CRX und kann Probleme mit der interaktiven Leistung verursachen.
@@ -105,7 +108,7 @@ Die folgenden Leistungsoptimierungen wurden bisher in Projekten angewendet:
 * Generieren selektiver Wiedergaben: Generieren Sie nur die von Ihnen benötigten Wiedergaben, indem Sie dem Workflow für die Asset-Verarbeitung Bedingungen hinzufügen, damit aufwandsintensivere Wiedergaben nur für ausgewählte Assets erzeugt werden.
 * Zwischen Instanzen freigegebener Datenspeicher: Wenn nicht genügend Festplattenspeicher vorhanden ist, kann sich hierdurch die Menge des benötigten Speicherplatzes deutlich reduzieren – allerdings verbunden mit einem höheren Konfigurationsaufwand und dem Verlust der automatischen Datenspeicherbereinigung.
 
-## Weitere Informationen {#further-reading}
+## Weiterführende Literatur {#further-reading}
 
 * [Analysieren von langsamen und blockierten Prozessen](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
