@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 81%
 
 ---
 
@@ -122,6 +125,7 @@ Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für
    >
    >
 * Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+
 >
 
 
@@ -184,7 +188,7 @@ To view user created in AEM repository, log into `https://[*server*]:[*port*]/lc
 
 So löschen Sie einen Benutzer:
 
-1. Wechseln Sie zu `https://[*server*]:[*port*]/lc/useradmin` mit AEM-Administratorberechtigungen.
+1. Wechseln Sie zu `https://[*server*]:[*port*]/lc/useradmin` mit AEM Administratorberechtigungen.
 1. Suchen Sie nach einem Benutzer und doppelklicken Sie auf den Benutzernamen, um die Benutzereigenschaften zu öffnen. Kopieren Sie die `Path` Eigenschaft.
 1. Go to AEM CRX DELite at `https://[*server*]:[*port*]/lc/crx/de/index.jsp` and navigate or search the user path.
 1. Löschen Sie den Pfad und klicken Sie auf **[!UICONTROL Alle speichern]**, um dauerhaft den Benutzer vom AEM-Repository zu löschen.
