@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ Dieses Problem kann durch die Verwendung von Dispatcher 4.1.6 oder höher behobe
 
 ### Zugriff auf Forumsbeiträge nach einem Upgrade von CQ 5.4 nicht möglich {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Wenn ein Forum für CQ 5.4 und veröffentlichte Themen erstellt wurde und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge anzuzeigen, zu einem Fehler auf der Seite führen:
+Wenn ein Forum für CQ 5.4 und veröffentlichte Themen erstellt wurde und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge Ansicht, zu einem Fehler auf der Seite führen:
 
 Ungültiges Musterzeichen &#39;a&#39;\
 Anfrage an /content/demoforums/forum-test.html auf diesem Server kann nicht gesendet werden
@@ -62,7 +65,7 @@ Während des Starts (nicht der 1., sondern danach alle) kann die folgende Warnun
 
 * 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; wurde durch &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39; ersetzt
 
-Diese Warnung kann unbedenklich ignoriert werden, da jknack.handlebars.Handlebars, die von [SCF](scf.md#handlebarsjavascripttemplatinglanguage)verwendet werden, mit einem eigenen i18n-Hilfsprogramm geliefert werden. Beim Starten wird er durch einen AEM-spezifischen [i18n-Helfer](handlebars-helpers.md#i-n)ersetzt. Diese Warnung wird von der Drittanbieter-Bibliothek generiert, um die Außerkraftsetzung eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann unbedenklich ignoriert werden, da jknack.handlebars.Handlebars, die von [SCF](scf.md#handlebarsjavascripttemplatinglanguage)verwendet werden, mit einem eigenen i18n-Hilfsprogramm geliefert werden. Beim Beginn wird er durch einen AEM spezifischen [i18n-Helfer](handlebars-helpers.md#i-n)ersetzt. Diese Warnung wird von der Drittanbieter-Bibliothek generiert, um die Außerkraftsetzung eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
