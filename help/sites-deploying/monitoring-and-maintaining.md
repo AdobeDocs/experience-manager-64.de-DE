@@ -97,7 +97,7 @@ Das Tool **Versionen bereinigen** dient zum Bereinigen der Versionen eines Knote
 
 In diesem Abschnitt werden die Wartungsaufgaben im Zusammenhang mit der Versionsfunktion von AEM behandelt. Mit dem Tool **Versionsbereinigung** können Sie Versionen eines Knotens oder eine Knotenhierarchie Ihres Repository bereinigen. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole **unter**„Versionsverwaltung“**oder direkt unter folgender URL verfügbar: ``
 
@@ -270,6 +270,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 1. Erstellen Sie unter `/apps/<project-name>/config`[ einen Knoten für die neue Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
    * Name:
+
    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (da dies ein Logger ist)
 
    wobei `<identifier>` durch einen freien Text ersetzt wird, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden). Beispiel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
@@ -396,11 +397,13 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >
    >* eine maximalen Dateigröße
    >* einen Zeit-/Terminplan
+
    >
    >um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
    >
    >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
    >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
+
    >
    >  Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
    >
@@ -489,6 +492,7 @@ Gehen Sie wie folgt vor, um Replikationsagenten zu überwachen:
    * **Protokoll anzeigen** für den Zugriff auf das Protokoll beliebiger Aktionen des Replikationsagenten.
    * **Verbindung testen** zum Testen der Verbindung mit der Zielinstanz.
    * **Erneuten Versuch erzwingen**, um einen erneuten Versuch auf beliebigen Elementen der Warteschlange zu erzwingen, falls erforderlich.
+
    >[!CAUTION]
    >
    >Verwenden Sie den Link „Verbindung testen“ nicht für den Postausgang der Rückwärtsreplikation auf der Veröffentlichungsinstanz.
@@ -732,7 +736,7 @@ Sie sollten testen, wie viele gleichzeitige Benutzer das System unterstützt, be
 
 ### Verwenden von rlog.jar bei der Suche nach Anforderungen mit langer Dauer {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM umfasst verschiedene Hilfstools unter:\
+AEM enthält verschiedene Hilfstools unter:\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Eines dieser Tools, `rlog.jar`, kann zum schnellen Sortieren von `request.log` verwendet werden, sodass Anforderungen nach Dauer (längste bis kürzeste Zeit) angezeigt werden.
@@ -1072,6 +1076,7 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 >* [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
 >* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
 >* [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
+
 >
 
 
