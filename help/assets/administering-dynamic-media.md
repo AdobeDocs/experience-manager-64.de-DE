@@ -1,21 +1,24 @@
 ---
-title: Einrichten dynamischer Medien
-seo-title: Einrichten dynamischer Medien
-description: Zum Einrichten dynamischer Medien müssen Sie dynamische Medien konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
-seo-description: Zum Einrichten dynamischer Medien müssen Sie dynamische Medien konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
+title: 'Einrichten von Dynamic Media  '
+seo-title: 'Einrichten von Dynamic Media  '
+description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
+seo-description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 73%
 
 ---
 
 
-# Einrichten dynamischer Medien {#setting-up-dynamic-media}
+# Einrichten von Dynamic Media  {#setting-up-dynamic-media}
 
-Mit [dynamischen Medien](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) können Sie Assets durch die On-Demand-Bereitstellung visuell ansprechender Merchandising- und Marketing-Assets verwalten, die automatisch für das Internet sowie mobile und Social-Media-Websites skaliert werden. Über ein Set von Master-Assets generieren und liefern dynamische Medien durch ein globales, skalierbares, leistungsoptimiertes Netzwerk mehrere Varianten attraktiver Inhalte in Echtzeit.
+Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie Assets durch die On-Demand-Bereitstellung visuell ansprechender Merchandising- und Marketing-Assets verwalten, die automatisch für das Internet sowie mobile und Social-Media-Websites skaliert werden. Über ein Set von Master-Assets generiert und liefert Dynamic Media durch ein globales, skalierbares, leistungsoptimiertes Netzwerk mehrere Varianten vielfältiger Inhalte in Echtzeit.
 
 >[!NOTE]
 >
@@ -25,8 +28,8 @@ Mit [dynamischen Medien](https://www.adobe.com/solutions/web-experience-manageme
 
 Wenn Sie dynamische Medien verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren des dynamischen Media-Scene7-Modus](config-dms7.md) - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Kunde von dynamischen Medien sind.
-* [Konfigurieren des dynamischen Media-Hybrid-Modus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie bereits Kunde von Dynamic Media sind und AEM aktualisieren.
+* [Konfigurieren des dynamischen Media-Scene7-Modus](config-dms7.md) - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Kunde von Dynamic Media sind.
+* [Konfigurieren des dynamischen Media-Hybrid-Modus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie ein bestehender AEM für das Upgrade auf dynamische Medien sind.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
 * [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
@@ -38,6 +41,6 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 >[!NOTE]
 >
->**Wenn Sie aktualisieren:**
+>**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Nachdem Sie AEM ausgeführt haben, ist für jedes hochgeladene Asset automatisch &quot;Dynamische Medien&quot;aktiviert (es sei denn, es wurde explizit vom Systemadministrator deaktiviert). Wenn Sie eine aktualisierte Instanz von AEM verwenden und neu für dynamische Medien sind, müssen Sie Ihre Assets möglicherweise neu verarbeiten, um sie für dynamische Medien zu aktivieren.
+>* Sobald Sie AEM eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten AEM-Instanz befinden und Dynamic Media noch nicht verwendet haben, müssen Sie Assets ggf. erneut verarbeiten, um Dynamic Media für die Assets verwenden zu können.
