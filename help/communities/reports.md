@@ -11,27 +11,30 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 8%
 
 ---
 
 
 # Berichte-Konsole {#reports-console}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Für AEM Communities gibt es verschiedene Berichte, auf die auf verschiedene Weise aus der Autorenumgebung zugegriffen werden kann.
+Für AEM Communities gibt es verschiedene Berichte, auf die von der Autorendatei aus auf verschiedene Weise zugegriffen werden kann.
 
 Die verschiedenen Berichte sind im Allgemeinen:
 
 * [Bericht](#assignments-report) &quot;Zuweisungen&quot;- für eine [Community](overview.md#enablement-community), die die Lernenden bei ihren Zuweisungen unterstützt, bietet einen Überblick über den Fortschritt, einschließlich eines zugehörigen Ergebnisses bei der Implementierung des SCORM-Standards
-* [Bericht](#views-report) &quot;Ansichten&quot;: Bietet ein Diagramm der Ansichten der Inhalte von Community-Mitgliedern und Site-Besuchern für jede Community-Site
+* [Ansichten-Bericht](#views-report) - enthält eine Übersicht über die Ansichten von Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site
 * [Bericht](#posts-report) zu Beiträgen - enthält ein Diagramm der verschiedenen Arten von Beiträgen von Mitgliedern der Community zu jeder Community-Site
 
-Wenn [Adobe Analytics aktiviert](sites-console.md#analytics)ist, enthalten die Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Laufe der Zeit
+Wenn [Adobe Analytics aktiviert](sites-console.md#analytics)ist, enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Zeitverlauf
 
 Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format exportiert werden.
 
-## Berichtkonsolen {#reporting-consoles}
+## Berichte-Konsolen {#reporting-consoles}
 
 ### Berichte für Community-Sites {#reports-for-community-sites}
 
@@ -77,7 +80,7 @@ Wählen Sie die Kriterien für den Bericht aus:
 * **[!UICONTROL Site]** Wählen Sie eine Community-Site für die Aktivierung aus
 * **[!UICONTROL Benutzer oder Gruppe]**
    * Benutzer auswählen, um einen Bericht für einen Lernenden zu erstellen
-   * Gruppe auswählen, um einen Bericht für eine Gruppe von Lernenden zu erstellenDer Tunneldienst greift in der Veröffentlichungsumgebung auf Mitglieder und Mitgliedergruppen zu
+   * Gruppe auswählen, um einen Bericht für eine Lerngruppe zu erstellenDer Tunneldienst greift über die Umgebung zur Veröffentlichung auf Mitglieder und Mitgliedergruppen zu
 * **[!UICONTROL Zuweisung]** Wählen Sie aus den den ausgewählten Lernenden zugewiesenen Ressourcen
 
 Wählen Sie **[!UICONTROL Erstellen]** , um den Bericht zu erstellen:
@@ -86,7 +89,7 @@ Wählen Sie **[!UICONTROL Erstellen]** , um den Bericht zu erstellen:
 
 ## Ansichtsbericht {#views-report}
 
-Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten bei Seitenansichten durch Community-Funktionen für einen bestimmten Zeitraum.
+Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten auf Ansichten durch Community-Funktionen für einen bestimmten Zeitraum.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
