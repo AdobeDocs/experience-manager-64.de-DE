@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +38,7 @@ Sie können den Proxyserver zum Beispiel zwischen zwei Anwendungen schalten, die
 
 ## Starten des Proxyservertools {#starting-the-proxy-server-tool}
 
-Das Tool befindet sich im Ordner &quot;/opt/helpers&quot;Ihrer AEM-Installation. Geben Sie Folgendes ein, um es zu starten:
+Das Tool befindet sich im Ordner /opt/helpers Ihrer AEM Installation. Geben Sie Folgendes ein, um es zu starten:
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
