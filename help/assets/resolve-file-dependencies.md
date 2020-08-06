@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 48%
 
 ---
 
@@ -42,6 +45,7 @@ Abhängigkeiten von primären 3D-Modelldateien wie Texturmap-Dateien werden bei 
 
       1. Beachten Sie die fehlenden Pfade und Dateinamen.
       1. Tippen Sie in der rechten oberen Ecke auf **[!UICONTROL Schließen]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. Das neu hochgeladene Asset wird nun korrekt als referenziertes Asset aufgeführt.
 
    * **Abhängigkeiten ignorieren**.
