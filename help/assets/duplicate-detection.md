@@ -4,6 +4,9 @@ description: Erfahren Sie, wie Sie die Erkennung von Asset-Duplikaten in AEM akt
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 61%
 
 ---
 
@@ -22,5 +25,5 @@ Die Funktion zur Duplikatserkennung ist nun in AEM Assets aktiviert. Wenn ein Be
 
 >[!MORELIKETHIS]
 >
->* [Duplizieren von Assets im vorhandenen Repository (ein Tutorial von Community-Mitgliedern)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Duplikat-Assets im vorhandenen Repository (ein Tutorial von Community-Mitgliedern)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 
