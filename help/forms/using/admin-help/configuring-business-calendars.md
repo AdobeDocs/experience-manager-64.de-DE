@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 94%
 
 ---
 
@@ -37,11 +40,11 @@ Wenn für einige der Benutzer in Ihrer Organisation abweichende geschäftsfreie 
 
 1. Entscheiden Sie, wie Benutzern geeignete Geschäftskalender zugewiesen werden sollen. Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen.
 
-   **** Gruppenmitgliedschaft: Sie können einem Benutzer anhand der Gruppenmitgliedschaft des Benutzers einen Geschäftskalender zuweisen. In diesem Fall verwenden alle Benutzer der Gruppe denselben Geschäftskalender.
+   **Gruppenmitgliedschaft:** Sie können einem Benutzer anhand der Gruppenmitgliedschaft des Benutzers einen Geschäftskalender zuweisen. In diesem Fall verwenden alle Benutzer der Gruppe denselben Geschäftskalender.
 
    Ist ein Benutzer Mitglied in zwei verschiedenen Gruppen, die unterschiedlichen Geschäftskalendern zugeordnet sind, verwendet AEM Forms den ersten in den Suchergebnissen gefundenen Kalender. In diesem Fall sollten Sie in Betracht ziehen, Benutzer anhand von Geschäftskalenderschlüsseln den Geschäftskalendern zuzuordnen.
 
-   **** Geschäftskalenderschlüssel: Sie können einem Benutzer einen Geschäftskalender zuweisen, der auf einem Geschäftskalenderschlüssel basiert, der in User Management festgelegt ist. Anschließend ordnen Sie den Geschäftskalenderschlüssel einem Geschäftskalender im Arbeitsablauf für Formulare zu. 
+   **Geschäftskalenderschlüssel:** Sie können einem Benutzer einen Geschäftskalender auf Grundlage eines Geschäftskalenderschlüssels zuweisen, wobei es sich um eine Einstellung handelt, die in User Management festgelegt wurde. Anschließend ordnen Sie den Geschäftskalenderschlüssel einem Geschäftskalender im Arbeitsablauf für Formulare zu. 
 
     Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybriddomäne verwendet wird. Detaillierte Informationen zum Einrichten von Domänen finden Sie unter [Domänen hinzufügen](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
@@ -71,7 +74,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
    Wählen Sie zum Bearbeiten eines vorhandenen Geschäftskalenders diesen aus der Dropdown-Liste aus.
 
 1. Wählen Sie unter „Geschäftsfreier Standardtag“ alle geschäftsfreien Wochentage aus, wie z. B. Wochenenden.
-1. [Optional] Wählen Sie Geschäftszeiten verwenden und geben Sie die Start- und Endzeiten für die Geschäftstage an.
+1. [Optional] Wählen Sie Geschäftszeiten verwenden und geben Sie den Beginn und die Endzeit für die Geschäftstage an.
 
    Wenn Sie diese Option wählen, wird ein Ereignis, das vor dem angegebenen Zeitraum eintritt, an den Anfang des Zeitraums verschoben, und ein Ereignis, das nach dem Zeitraum eintritt, wird an die Anfangszeit des nächsten Geschäftstages verschoben.
 
