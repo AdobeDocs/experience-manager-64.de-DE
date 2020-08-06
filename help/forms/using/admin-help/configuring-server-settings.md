@@ -58,7 +58,7 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail be
 
 >[!NOTE]
 >
->Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
+>Der Flex Workspace wird für AEM Forms-Version nicht mehr unterstützt.
 
 Standardmäßig enthalten die E-Mails, die von AEM Forms gesendet werden, Links zu Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE). Sie können AEM Forms so konfigurieren, das E-Mails mit Links zu AEM Forms Workspace gesendet werden. Um mehr über die Vorteile von AEM Forms Workspace gegenüber Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) zu erfahren, lesen Sie [diesen Artikel](/help/forms/using/features-html-workspace-available-flex.md).
 
