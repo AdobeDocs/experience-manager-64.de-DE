@@ -11,6 +11,9 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 51%
 
 ---
 
@@ -27,7 +30,7 @@ In diesem Kapitel werden die Benutzerrollen und die Konfiguration der Benutzer u
 
 ### AEM Mobile Application Content Authors (app-author group) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobile-Anwendungsinhalten einschließlich Seiten, Text, Bilder und Videos verantwortlich.
+Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte mobiler Anwendungen zuständig, einschließlich Seiten, Text, Bilder und Videos.
 
 #### Gruppenkonfiguration: app-authors {#group-configuration-app-authors}
 
@@ -47,7 +50,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobil
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Im Folgenden können Sie der AEM Content Authors-Gruppe hinzufügen:
+1. Im Folgenden können Sie AEM Inhaltsautorengruppe hinzufügen:
 
    (Lesen) am
 
@@ -75,6 +78,7 @@ Members of the app-admins group can author application content with the same per
 
    * content-authors
    * workflow-users
+
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
    >[!NOTE]
@@ -89,6 +93,7 @@ Members of the app-admins group can author application content with the same per
 
    * (Lesen, Verändern, Erstellen, Löschen, Replizieren) für „/etc/packages/mobileapp“
    * (Lesen) für „/var/contentsync“
+
    >[!NOTE]
    >
    >Die Paketreplikation wird verwendet, um Anwendungsaktualisierungen aus der Erstellungsinstanz in der Veröffentlichungsinstanz zu veröffentlichen.
@@ -108,7 +113,7 @@ Members of the app-admins group can author application content with the same per
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
-Weitere Informationen zu den beiden anderen Rollen und Verantwortlichkeiten beim Erstellen einer AEM Mobile-On-Demand-Dienste-App finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu den beiden anderen Rollen und Verantwortlichkeiten beim Erstellen einer AEM Mobile On-demand Services-App finden Sie in den folgenden Ressourcen:
 
-* [Entwickeln von AEM Content für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile-on-demand.md)
-* [Authoring von AEM Content für AEM Mobile On-Demand Services-App](/help/mobile/mobile-apps-ondemand.md)
+* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Authoring AEM Inhalte für AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
