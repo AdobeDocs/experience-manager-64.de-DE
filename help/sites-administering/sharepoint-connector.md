@@ -22,7 +22,7 @@ ht-degree: 73%
 
 Day JCR Connector for Microsoft Sharepoint 2010 und Microsoft SharePoint 2013, Version 4.0.
 
-Dieser Artikel enthält Details zum Adobe JCR Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0.
+Dieser Artikel enthält Informationen zur Adobe JCR Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0.
 
 Der SharePoint-Connector unterstützt folgende grundlegenden Funktionen:
 
@@ -93,7 +93,7 @@ Der Connector unterstützt Folgendes:
 
 Produktfeatures, Beispiele und Hotfixes werden über AEM Package Share verteilt. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Sie benötigen eine gültige Adobe ID, die Ihre Firma-E-Mail-Adresse enthält. Nach der Anmeldung bei Ihrem Konto müssen Sie außerdem Zugriff auf Package Share anfordern.
+To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Sie benötigen ein gültiges Adobe ID, das Ihre Firma-E-Mail-Adresse enthält. Nach der Anmeldung bei Ihrem Konto müssen Sie außerdem Zugriff auf Package Share anfordern.
 
 #### Integrieren mit AEM {#integrating-with-aem}
 
@@ -137,7 +137,7 @@ Der Connector kann auch für mehrere Workspaces konfiguriert werden. In diesem F
 
 Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Zulassungsliste des Bundles &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-So führen Sie das zulassungsliste von Bundles in AEM durch:
+Führen Sie die folgenden Schritte aus, um Pakete in AEM Zulassungsliste zu installieren:
 
 1. Navigieren Sie zur OSGi Management Console: http://localhost:4502/system/console/configMgr.
 
@@ -203,7 +203,7 @@ Somit stehen folgende Authentifizierungsarten zur Verfügung:
 * Anspruchsbasiert/Standard
 * Anspruchs-/formularbasiert
 
-AEM JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0. unterstützt die bedarfsbasierte Authentifizierung (die von Microsoft vorgeschlagen wird), die in den folgenden Modi funktioniert:
+Der AEM JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0. unterstützt die bedarfsbasierte Authentifizierung (die von Microsoft vorgeschlagen wird), die in den folgenden Modi funktioniert:
 
 * **Standard-/NTLM-Authentifizierung:** Der Connector versucht zunächst, unter Verwendung der Standardauthentifizierung eine Verbindung herzustellen. Steht diese Option nicht zur Verfügung, wird die NTLM-basierte Authentifizierung verwendet.
 * **Forms-basierte Authentifizierung**: SharePoint überprüft Benutzer anhand von Anmeldedaten, die Benutzer in ein Anmeldeformular eingeben (normalerweise eine Webseite). Das System gibt für authentifizierte Anforderungen ein Token aus, das einen Schlüssel zur Identitätsfeststellung bei Folgeanforderungen enthält.
