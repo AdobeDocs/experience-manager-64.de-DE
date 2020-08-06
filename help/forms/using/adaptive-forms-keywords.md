@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +58,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
    <td><p>Instanzen</p> </td> 
   </tr>
   <tr>
-   <td><p>Titels</p> </td> 
+   <td><p>title</p> </td> 
    <td><p>resolveNode</p> </td> 
    <td><p>syncXFAProps</p> </td> 
   </tr>
@@ -75,7 +78,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
    <td><p>untergeordnete Elemente</p> </td> 
   </tr>
   <tr>
-   <td><p>value</p> </td> 
+   <td><p>Wert</p> </td> 
    <td><p>autoSaveInfo</p> </td> 
    <td><p>setAttribute</p> </td> 
   </tr>
@@ -100,7 +103,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
    <td><p>name</p> </td> 
   </tr>
   <tr>
-   <td><p>obligatorisch</p> </td> 
+   <td><p>mandatory</p> </td> 
    <td><p>panel</p> </td> 
    <td><p>templateId</p> </td> 
   </tr>
