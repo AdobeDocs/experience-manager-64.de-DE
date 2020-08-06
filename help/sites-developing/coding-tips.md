@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
 ## So oft wie möglich TagLibs oder HTL verwenden {#use-taglibs-or-htl-as-much-as-possible}
 
-Das Einschließen von Scriptlets in JSPs erschwert das Debugging von Fehlern im Code. Außerdem ist es durch die Einbeziehung von Skripten in JSPs schwierig, Geschäftslogik von der Ansichtsebene zu trennen, was eine Verletzung des Prinzips &quot;Einfache Verantwortung&quot;und des MVC-Designmusters darstellt.
+Das Einschließen von Scriptlets in JSPs erschwert das Debugging von Fehlern im Code. Durch die Einbeziehung von Skripten in JSPs ist es außerdem schwierig, Geschäftslogik und Ansicht von der Ebene zu trennen, was eine Verletzung des Prinzips &quot;Einfache Verantwortung&quot;und des MVC-Designmusters darstellt.
 
 ### Lesbaren Code schreiben {#write-readable-code}
 
@@ -74,7 +77,7 @@ Wenn eine API veraltet ist, ist es besser, den neuen empfohlenen Ansatz zu suche
 
 ### Lokalisierbaren Code schreiben {#write-localizable-code}
 
-Alle Strings, die nicht von einem Autor bereitgestellt werden, sollten in einem Aufruf des i18n-Wörterbuchs von AEM über *I18n.get()* in JSP/Java und *CQ.I18n.get()* in JavaScript zusammengefasst werden. Bei dieser Implementierung wird die Zeichenfolge zurückgegeben, die an sie übergeben wurde, wenn keine Implementierung gefunden wurde. Auf diese Weise erhalten Sie die Flexibilität bei der Implementierung der Lokalisierung nach der Implementierung der Funktionen in der Hauptsprache.
+Alle Strings, die nicht von einem Autor bereitgestellt werden, sollten in einem Aufruf des i18n-Wörterbuchs von AEM über *I18n.get()* in JSP/Java und *CQ.I18n.get()* in JavaScript zusammengefasst werden. Diese Implementierung gibt die Zeichenfolge zurück, die an sie übergeben wurde, wenn keine Implementierung gefunden wurde. Auf diese Weise wird die Flexibilität bei der Implementierung der lokale Anpassung nach der Implementierung der Funktionen in der Hauptsprache Angebot.
 
 ### Ressourcenpfade zur Sicherheit maskieren {#escape-resource-paths-for-safety}
 
@@ -90,7 +93,7 @@ Für Java-Code unterstützt AEM slf4j als Standard-API für die Protokollierung 
 
 * ERROR: Wenn etwas im Code nicht funktioniert und die Verarbeitung nicht fortgesetzt werden kann. Dies geschieht oft aufgrund einer unerwarteten Ausnahme. In der Regel ist es hilfreich, Stapelspuren in diese Szenarien einzubeziehen.
 * WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. This will often be the result of an exception that we expected, such as a *PathNotFoundException*.
-* INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Denken Sie daran, dass dies der Standard ist und dass die meisten Kunden dies in ihren Umgebungen beibehalten. Verwenden Sie diese Ebene daher nicht zu häufig.
+* INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Denken Sie daran, dass dies der Standard ist und dass die meisten Kunden dies auf ihren Umgebung beibehalten werden. Verwenden Sie diese Ebene daher nicht zu häufig.
 * DEBUG: Informationen der unteren Ebene zur Verarbeitung. Hilfreich, wenn ein Problem zusammen mit dem Support behoben wird.
 * TRACE: Die niedrigste Ebene von Informationen, z. B. das Aufrufen/Beenden von Methoden. Dies wird in der Regel nur von Entwicklern verwendet.
 
