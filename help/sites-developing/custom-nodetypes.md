@@ -20,7 +20,7 @@ ht-degree: 52%
 
 # Benutzerdefinierte Knotentypen{#custom-node-types}
 
-Da AEM auf Sling basiert und ein JCR-Repository verwendet, stehen die von beiden folgenden Node-Typen zur Verwendung zur Verfügung:
+Da AEM auf Sling basiert und ein JCR-Repository verwendet, stehen die beiden folgenden Knotentypen zur Verwendung zur Verfügung:
 
 * [JCR-Knotentypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Sling-Knotentypen](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -618,7 +618,7 @@ LiveSync-Konfiguration
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Fügen Sie für AEM 5.4 zum Ende der Liste hinzu:
+Für AEM 5.4 fügen Sie am Ende der Liste Folgendes hinzu:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
