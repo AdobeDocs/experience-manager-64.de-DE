@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 82%
 
 ---
 
@@ -30,8 +33,9 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >Wenn Sie Seiteninformationen im JSON-Format benötigen, um Inhalte für Kanäle bereitzustellen, bei denen es sich nicht um herkömmliche AEM-Webseiten handelt, beispielsweise:
 >
 >* Einzelseiten-Webanwendungen
->* native Mobilanwendungen
->* Andere Kanäle und Touchpoints außerhalb von AEM
+>* native Mobile Apps
+>* Andere Kanal und Berührungspunkte außerhalb von AEM
+
 >
 >
 dann finden Sie weitere Informationen im Dokument [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md).
