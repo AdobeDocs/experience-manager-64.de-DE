@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 79%
 
 ---
 
@@ -68,7 +71,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>Verarbeitung</td> 
-   <td>Grundlegende Verarbeitung und Extraktion von Metadaten.</td> 
+   <td>Grundlegende anfängliche Verarbeitung und Metadaten-Extraktion.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -77,7 +80,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Vorschau erstellen</td> 
+   <td>Erstellen von Vorschauen</td> 
    <td>Die FBX- oder OBJ-Datei wird erfasst und verarbeitet. Dateiabhängigkeiten werden bei Möglichkeit als Asset-Referenzen ausgewertet und aufgelöst.</td> 
   </tr> 
   <tr> 
