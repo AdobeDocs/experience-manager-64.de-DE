@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 80%
 
 ---
 
@@ -27,11 +30,11 @@ ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextda
 >
 >The path containing the sample ContextHub configuration that is used by the [We.Retail reference implementation](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) should only be used as a reference for creating your own configuration.
 >
->Es sollte nicht als eigene ContextHub-Konfiguration in einem Projekt verwendet werden.
+>Es sollte nicht in einem Projekt als Ihre eigene ContextHub-Konfiguration verwendet werden.
 
 ## Persistenz {#persistence}
 
-ContextHub speichert persistente Kontextdaten auf dem Client. Die ContextHub JavaScript-API ermöglicht Ihnen den Zugriff auf Stores zum Erstellen, Aktualisieren und Löschen von Daten nach Bedarf. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
+ContextHub speichert persistente Kontextdaten auf dem Client. Die ContextHub JavaScript-API ermöglicht Ihnen den Zugriff auf Stores, um Daten nach Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
 
 Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 
