@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 65%
 
 ---
 
@@ -41,23 +44,23 @@ The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be
 
 Es weist folgende Attribute auf:
 
-**categories** - Eine Liste der durch Kommas getrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
+**Kategorien** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**theme** - Eine Liste von durch Kommas getrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
+**theme** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - Eine Liste von durch Kommas getrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
+**js** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** - Eine Liste mit durch Kommas getrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
+**css** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**themed** - Ein Flag, das nur die Bibliotheken mit oder ohne Designs anzeigt, sollte einbezogen werden. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
+**themed** - Ein Flag, das nur die Bibliotheken mit oder ohne Designs anzeigt, sollte eingeschlossen werden. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
 
 The `<ui:includeClientLib>` tag can be used as follows in a jsp:
 
@@ -256,29 +259,29 @@ Should you use `<cq:include>` or `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` ist seit AEM 5.6 veraltet. Stattdessen [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) sollte es verwendet werden.
+>`<cq:includeClientLib>` ist seit AEM 5.6 veraltet. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) sollte stattdessen verwendet werden.
 
 The `<cq:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css or a theme library. Für mehrere Inklusionen verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals in der jsp-Datei verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Dienstschnittstelle `com.day.cq.widget.HtmlLibraryManager`.
 
 Es weist folgende Attribute auf:
 
-**categories** - Eine Liste der durch Kommas getrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
+**Kategorien** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**theme** - Eine Liste von durch Kommas getrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
+**theme** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 Equivalent to: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - Eine Liste von durch Kommas getrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
+**js** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** - Eine Liste mit durch Kommas getrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
+**css** - Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**themed** - Ein Flag, das nur die Bibliotheken mit oder ohne Designs anzeigt, sollte einbezogen werden. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
+**themed** - Ein Flag, das nur die Bibliotheken mit oder ohne Designs anzeigt, sollte eingeschlossen werden. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
 
 The `<cq:includeClientLib>` tag can be used as follows in a jsp:
 
@@ -336,7 +339,7 @@ The `<cq:defineObjects>` tag exposes the following, regularly used, scripting ob
 
 * das Seiteneigenschaftenobjekt der aktuellen Seite (org.apache.sling.api.resource.ValueMap).
 
-**properties**
+**Eigenschaften**
 
 * das Eigenschaftenobjekt der aktuellen Ressource (org.apache.sling.api.resource.ValueMap).
 
@@ -470,7 +473,7 @@ Es weist folgende Attribute auf:
 
 * Name des Parameters, der hinzugefügt werden soll
 
-**value**
+**Wert**
 
 * Wert des Parameters, der hinzugefügt werden soll
 
