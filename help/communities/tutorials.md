@@ -1,8 +1,8 @@
 ---
 title: Tutorials
 seo-title: Tutorials
-description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit dem Social-Komponenten-Framework (SCF) von AEM Communities
-seo-description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit dem Social-Komponenten-Framework (SCF) von AEM Communities
+description: Beispiele für die Unterstützung beim Lernen und Arbeiten mit dem AEM Communities-Framework für soziale Komponenten (SCF)
+seo-description: Beispiele für die Unterstützung beim Lernen und Arbeiten mit dem AEM Communities-Framework für soziale Komponenten (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 5%
 
 ---
 
 
 # Tutorials {#tutorials}
 
-Dies sind Beispiele für das Lernen und Arbeiten mit AEM 6.1 Communities [Social Component Framework (SCF)](scf.md).
+Dies sind Beispiele für das Lernen und Arbeiten mit AEM 6.1 Communities [social component framework (SCF)](scf.md).
 
 ## Clientseitige Anpassung {#client-side-customization}
 
@@ -43,7 +46,7 @@ Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Mark
 
 ## Anleitung {#how-to-instructions}
 
-* [AEM Communities zu MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
    ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf entwickelt wird
 
@@ -57,9 +60,9 @@ Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Mark
 
 ## Demobenutzer {#demo-users}
 
-Das Geometrixx-Beispielpaket enthält Demobenutzer. Es besteht oft ein Unterschied zwischen Besuchern (die nicht angemeldet sind) und Mitgliedern (angemeldet sind). Solange die Geometrixx-Beispielpakete installiert bleiben, können Sie mit diesen Benutzern einen angemeldeten Status simulieren, wenn Sie mit dem [Community-Komponenten-Handbuch](components-guide.md)arbeiten.
+Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Unterschied zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet), und solange die Geometrixx Samplingpakete installiert bleiben, können Sie mithilfe dieser Benutzer einen angemeldeten Status simulieren, wenn Sie mit dem [Community Components-Handbuch](components-guide.md)arbeiten.
 
-Um eine vollständige Liste der Demobenutzer anzuzeigen, navigieren Sie mit der Leiste zu **[!UICONTROL Tools > Vorgänge > Sicherheit > Benutzer]**. Oder verwenden Sie die Classic UI- [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
+Um eine vollständige Liste der Demobenutzer zu erhalten, navigieren Sie mit der Leiste zu **[!UICONTROL Tools > Vorgänge > Sicherheit > Benutzer]**. Oder verwenden Sie die Classic UI- [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
 
 Wenn eine [Community-Site erstellt](getting-started.md)wurde, ist es möglich, Demobenutzer den [Community-Benutzergruppen](users.md)zuzuweisen.
 
