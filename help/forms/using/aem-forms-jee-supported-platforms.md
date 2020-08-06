@@ -10,6 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
 source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+workflow-type: tm+mt
+source-wordcount: '3276'
+ht-degree: 87%
 
 ---
 
@@ -28,6 +31,7 @@ In diesem Dokument werden die unterstützten Client- und Serverplattformen für 
 >
 >* Eine vollständige Liste der Ausnahmen für unterstütze Serverplattformen finden Sie unter [Ausnahmen für unterstützte Serverplattformen](#exceptions-to-supported-server-platforms).
 >* AEM Forms on JEE unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
+
 >
 
 
@@ -92,6 +96,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 >
 >* AEM Forms on JEE wird nur von 64-Bit-JVMs für Produktionsumgebungen unterstützt.
 >* Es wird empfohlen, die Sicherheitsbulletins vom Java-Anbieter zu verfolgen, um den Schutz und die Sicherheit von Produktionsumgebungen sicherzustellen und die neuesten Java-Aktualisierungen zu installieren.
+
 >
 
 
@@ -306,7 +311,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 
 #### Virtualisierte Umgebung {#virtualized-environment}
 
-Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie mit AEM Forms in einer virtuellen Umgebung auf Probleme stoßen, versuchen Sie, das Problem auf einer physischen Maschine zu reproduzieren. Wenn das Problem auf dem physischen Computer weiterhin auftritt, wenden Sie sich zwecks Lösung an den Adobe Support. Bei Problemen, die auf einer physischen Maschine nicht reproduzieren können, wenden Sie sich an den Verkäufer Ihrer virtuellen Umgebung.
+Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie mit AEM Forms in einer virtuellen Umgebung auf Probleme stoßen, versuchen Sie, das Problem auf einer physischen Maschine zu reproduzieren. Wenn das Problem auf dem physischen Computer weiterhin auftritt, wenden Sie sich an den Support der Adobe, um eine Lösung zu erhalten. Bei Problemen, die auf einer physischen Maschine nicht reproduzieren können, wenden Sie sich an den Verkäufer Ihrer virtuellen Umgebung.
 
 #### Entwicklungsumgebungen {#development-environments}
 
@@ -329,6 +334,7 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
 >
 >* AEM Forms on JEE wird nur von 64-Bit-Betriebssystemen unterstützt.
 >* PDF Generator-Dienst wird unter Windows 10 nicht unterstützt. 
+
 >
 
 
@@ -344,7 +350,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
 1. AEM Forms on JEE unterstützt IBM® DB2 mit JBoss® nicht.
-1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK mit CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
+1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Es können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository vorhanden sein. Auf einer AEM Forms on JEE-Umgebung können Sie MongoMK mit CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
 1. AEM Forms on JEE unterstützt keinen WebSphere-Anwendungsserver unter CentOS.
 1. AIX- und Solaris-Betriebssysteme sind nur für Upgrade-Kunden verfügbar.
 1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss.
@@ -517,6 +523,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >* Der HTML2PDF-Dienst wird unter AIX nicht mehr unterstützt.
 >* Die Funktionen von OCR PDF, Optimize PDF und Export PDF werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+
 >
 
 
@@ -575,7 +582,7 @@ Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.sectio
 
 Für zusätzliche Anforderungen siehe:
 
-* [Systemanforderungen für eine Bereitstellung von AEM Forms on JEE auf einem Einzelserver](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
+* [Systemanforderungen für eine AEM Forms on JEE-Bereitstellung mit einem Server](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
 * [Systemanforderungen für eine Clusterbereitstellung von AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_64)
 
 ## Unterstützte Clients für AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
@@ -702,7 +709,7 @@ Für zusätzliche Anforderungen siehe:
 >
 >Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
 >
->* Die meisten modernen Browser unterstützen keine NPAPI-basierten Plug-Ins mehr. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+>* Die meisten modernen Browser unterstützen keine NPAPI-basierten Plug-Ins mehr. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 >* Safari wird nur unter Mac OS X unterstützt.
 
 
@@ -740,6 +747,7 @@ Für zusätzliche Anforderungen siehe:
 >[!NOTE]
 >
 >* Forms Portal wird nur auf einem iPad nur in Safari unterstützt.
+
 >
 
 
@@ -777,7 +785,7 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 
 ### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
-Klicken Sie [hier](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html), um die Systemanforderungen für Adobe Document Security Extension for Microsoft® Office anzuzeigen.
+Klicken Sie [hier](https://www.adobe.com/de/products/livecycle/rightsmanagement/extension/downloads.html), um die Systemanforderungen für Adobe Document Security Extension for Microsoft® Office anzuzeigen.
 
 ### Ausnahmen der Clientunterstützung {#exceptions-to-client-support}
 
@@ -801,4 +809,4 @@ Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unt
 
 Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der Adobe Enterprise-Supportseite, indem Sie nach Knowledgebase-Artikeln für Ihr jeweiliges Produkt suchen.
 
-[**Support kontaktieren **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Support kontaktieren **](https://www.adobe.com/de/account/sign-in.supportportal.html)
