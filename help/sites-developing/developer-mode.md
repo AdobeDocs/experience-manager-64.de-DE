@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 86%
 
 ---
 
@@ -47,6 +50,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* auf einer Autoreninstanz mit dem Ausführungsmodus nosampleContent
 >* auf einer Veröffentlichungsinstanz
+
 >
 >
 Der Modus sollte nach der Verwendung wieder deaktiviert werden.
@@ -100,6 +104,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
    * Alle zum Rendern der Komponente verwendeten Komponentenskripte
    * Den Repository-Inhaltspfad für diese spezifische Komponente
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Skript bearbeiten**: ein Link, der:
@@ -110,6 +115,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
    * Die Hierarchie innerhalb der ausgewählten Komponente.
    * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt. 
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
