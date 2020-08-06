@@ -4,17 +4,20 @@ description: Es wird beschrieben, wie Sie Ordner in Brand Portal veröffentliche
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 58%
 
 ---
 
 
 # Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal}
 
-Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Assets und Ordner in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow für einen späteren Zeitpunkt planen). Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. For details, see [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Assets und Ordner in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow für einen späteren Zeitpunkt planen). Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Nachdem Sie ein Asset oder einen Ordner veröffentlicht haben, steht es Benutzern im Markenportal zur Verfügung.
 
-Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass derzeit vorgenommene Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte Änderungen, die von einem Administrator veröffentlicht werden, sind im Markenportal verfügbar.
+Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal-1}
 
@@ -28,8 +31,8 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-   * From the toolbar, select **[!UICONTROL Quick Publish]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
-   * From the toolbar, select **[!UICONTROL Manage Publication]**.
+   * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
 3. Then from the **[!UICONTROL Action]** select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**. Tippen Sie auf **[!UICONTROL Weiter].**
 4. Within **[!UICONTROL Scope]**, confirm your selection and tap **[!UICONTROL Publish to Brand Portal]**.
@@ -45,15 +48,15 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. Select an **[!UICONTROL Activation date]** and specify time. Tippen Sie auf **[!UICONTROL Weiter]**.
-   4. Confirm your selection in **[!UICONTROL Scope]**. Tippen Sie auf **[!UICONTROL Weiter]**.
-   5. Specify a Workflow title under **[!UICONTROL Workflows]**. Tap **[!UICONTROL Publish Later]**.
+   3. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Tippen Sie auf **[!UICONTROL Weiter]**.
+   4. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Umfang]**. Tippen Sie auf **[!UICONTROL Weiter]**.
+   5. Geben Sie einen Workflow-Titel unter **[!UICONTROL Workflows]** an. Tap **[!UICONTROL Publish Later]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
 ## Veröffentlichung von Ordnern in Brand Portal rückgängig machen {#unpublish-folders-from-brand-portal}
 
-Sie können alle in Brand Portal veröffentliche Assets/Ordner entfernen, indem Sie die Veröffentlichung über die AEM-Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des Originalordners rückgängig gemacht haben, steht die Kopie nicht mehr für Markenportal-Benutzer zur Verfügung.
+Sie können alle in Brand Portal veröffentliche Assets/Ordner entfernen, indem Sie die Veröffentlichung über die AEM-Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
 Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig machen oder diesen Vorgang für einen späteren Zeitpunkt planen. So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgängig:
 
@@ -70,14 +73,15 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
    1. On **[!UICONTROL Manage Publication]** page, from **[!UICONTROL Action]** select **[!UICONTROL Unpublish from Brand Portal]** and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**.
    2. Klicken oder tippen Sie auf **[!UICONTROL Weiter].**
    3. Within **[!UICONTROL Scope]**, confirm your selection and tap **[!UICONTROL Unpublish from Brand Portal]**.
-   ![verify-unpublish](assets/confirm-unpublish.png)
+
+   ![confirm-unpublish](assets/confirm-unpublish.png)
 
    **Rückgängigmachen der Veröffentlichung aus dem Markenportal später**
 
    So können Sie die Veröffentlichung eines Ordners in Brand Portal zu einem späteren Zeitpunkt rückgängig machen:
 
    1. On **[!UICONTROL Manage Publication]** page, from **[!UICONTROL Action]** select **[!UICONTROL Unpublish from Brand Portal]** and from **[!UICONTROL Scheduling]** select **[!UICONTROL Later].**
-   2. Select an **[!UICONTROL Activation date]** and specify the time. Tippen Sie auf **[!UICONTROL Weiter]**.
+   2. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Tippen Sie auf **[!UICONTROL Weiter]**.
    3. Within **[!UICONTROL Scope]**, confirm your selection and tap **[!UICONTROL Next]**.
    4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. Tap **[!UICONTROL Unpublish Later].**
 
