@@ -10,13 +10,16 @@ topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 80%
 
 ---
 
 
 # Output Service {#output-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der OSGi-Dienst Output ist eine Komponente der AEM Document Services. Der Output-Dienst unterstützt verschiedene Ausgabeformate und Ausgabeentwurfsfunktionen von AEM Forms Designer. Mit dem Output-Dienst können Sie XFA-Vorlagen und XML-Daten in verschiedene Druckformate konvertieren.
 
@@ -25,7 +28,7 @@ Dabei können Sie mit dem Output-Dienst Anwendungen mit folgenden Funktionen ers
 * Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
 * Generieren von Ausgabeformularen in verschiedenen Formaten einschließlich nicht interaktiver PDF-, PostScript-, PCL- und ZPL-Druckdatenströme
 * Generieren von druckbaren PDFs aus XFA-Formular-PDFs
-* Generieren Sie PDF-, PostScript-, PCL- und ZPL-Dokumente stapelweise durch Zusammenführen mehrerer Datensätze mit den bereitgestellten Vorlagen.
+* Generieren Sie PDF-, PostScript-, PCL- und ZPL-Dokumente stapelweise, indem Sie mehrere Datensätze mit den bereitgestellten Vorlagen zusammenführen.
 
 >[!NOTE]
 >
