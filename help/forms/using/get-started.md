@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 HTML5-Formulare bieten zahlreiche für Mobilgeräte geeignete Funktionen. Dies hilft Ihnen, Ihre aktuellen Lösungen und Arbeitsabläufe auf Tablets oder Smartphones mit HTML5-Browsern zu erweitern. Einige der Funktionen:
 
-* **HTML5-basierte Wiedergabe von XFA-Formularvorlagen:** Neben normalen PDF-Formularen können Sie jetzt Ihre vorhandenen XFA-basierten Formulare im HTML5-Format wiedergeben. Diese Funktion ermöglicht Ihnen, Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablets und -Smartphones usw.) auszuweiten, die HTML5 unterstützen und Adobe Reader mit XFA-Formularen nicht unterstützen. For more information about HTML5-based rendering capability, see [Introduction to HTML5 forms](/help/forms/using/introduction.md).
+* **HTML5-basierte Wiedergabe von XFA-Formularvorlagen:** Zusätzlich zu den regulären PDF forms können Sie jetzt Ihre vorhandenen XFA-basierten Formulare im HTML5-Format wiedergeben. Diese Funktion ermöglicht Ihnen, Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablets und -Smartphones usw.) auszuweiten, die HTML5 unterstützen und Adobe Reader mit XFA-Formularen nicht unterstützen. For more information about HTML5-based rendering capability, see [Introduction to HTML5 forms](/help/forms/using/introduction.md).
 
 * **Verwaltung von Formularen:** AEM bietet außerdem neue Funktionen, um das Organisieren und Verwalten von Formularen zu vereinfachen. Sie können Formulare aktivieren, deaktivieren, veröffentlichen und in der Vorschau anzeigen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](/help/forms/using/introduction-managing-forms.md).
 
