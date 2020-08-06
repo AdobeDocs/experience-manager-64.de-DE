@@ -10,19 +10,22 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 73%
 
 ---
 
 
 # Anpassen der Benutzeroberfläche „Korrespondenz erstellen“{#customize-create-correspondence-ui}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit der Correspondence Management können Sie die dazugehörige Lösungsvorlage so umbenennen, dass Sie einen besseren Markenwert erzielen und die Markenstandards Ihres Unternehmens erfüllt werden. Die Umbenennung der Benutzeroberfläche umfasst das Ändern des Unternehmenslogo in der linken oberen Ecke der Benutzeroberfläche „Korrespondenz erstellen“.
 
 Sie können das Logo in der Benutzeroberfläche „Korrespondenz erstellen“ mit Ihrem Firmenlogo ersetzen.
 
-![](assets/0_1_introscreenshot.png) Das benutzerdefinierte Symbol in der Benutzeroberfläche **&quot;Korrespondenz erstellen&quot;** Abbildung: Das benutzerdefinierte Symbol *in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
+![Das benutzerdefinierte Symbol in der Benutzeroberfläche](assets/0_1_introscreenshot.png)&quot;Korrespondenz erstellen&quot;**Abbildung:** *Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
 
 ### Ändern des Logos in der Benutzeroberfläche „Korrespondenz erstellen“{#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -59,11 +62,11 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Überlagerungsort: /apps/
+      **Überlagerungsort:** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **Knotentypen abgleichen:** Überprüft
 
       ![Überlagerungsknotenpfad](assets/0_1_5ioverlaynodedialog.png)
 
@@ -83,11 +86,11 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
    1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Überlagerungsort: /apps/
+      **Überlagerungsort:** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **Knotentypen abgleichen:** Überprüft
 
    1. Klicken Sie auf **OK**.
 
@@ -107,7 +110,7 @@ Laden Sie Ihre benutzerdefinierte Logodatei auf CRX hoch. Standard-HTML-Regeln s
 
 Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf CRX hochzuladen:
 
-1. Wechseln zu `https://[server]:[port]/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://[server]:[port]/[contextpath]/crx/de` auf. Falls erforderlich, melden Sie sich als Administrator an.
 1. Klicken Sie in CRXDE mit der rechten Maustaste auf den Ordner **imgs** an folgendem Speicherort und wählen Sie **Erstellen > Datei erstellen:**
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -132,14 +135,14 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
    Das Dialogfeld „jcr:data bearbeiten“ wird angezeigt.
 
-   Klicken Sie jetzt auf den Ordner newlogo.png, doppelklicken Sie auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
+   Klicken Sie nun auf den Ordner newlogo.png, klicken Sie in der Dublette auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
 
 1. Klicken Sie im Dialogfeld „jcr:data bearbeiten“, auf **Durchsuchen** und wählen Sie die Bilddatei, die Sie als Logo (hier CustomLogo.png) verwenden möchten.
 
    Die unterstützten Bildformate werden vom Browser bestimmt, den Sie verwenden, um auf AEM Forms zuzugreifen. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
 
    ![Beispiele für benutzerdefinierte Logodatei](assets/geometrixx-outdoors.png)
-   **** Abbildung: *Beispiel - CustomLogo.png wird als benutzerdefiniertes Logo verwendet*
+   **Abbildung:** *Beispiel: CustomLogo.png als benutzerdefiniertes Logo verwenden*
 
 1. Klicken Sie auf **Alle speichern**.
 
@@ -149,7 +152,7 @@ Das benutzerdefinierte Logobild ist ein zusätzliches im Inhaltskontext zu laden
 
 Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe des Logos einzurichten:
 
-1. Wechseln zu `https://[server]:[port]/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://[server]:[port]/[contextpath]/crx/de` auf. Falls erforderlich, melden Sie sich als Administrator an.
 1. Erstellen Sie eine Datei mit dem Namen customcss.css (Sie können keinen anderen Dateinamen verwenden) an folgendem Speicherort:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -172,5 +175,5 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
 
 Löschen Sie den Browsercache und öffnen Sie dann die Instanz der Benutzeroberfläche „Korrespondenz erstellen“ in Ihrem Browser. Sie sollten nun Ihr eigenes Logo sehen können.
 
-![](assets/0_1_introscreenshot-1.png) Benutzeroberfläche &quot;Korrespondenz erstellen&quot;mit benutzerdefiniertem Logo **** Abbildung: Das benutzerdefinierte Symbol *in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
+![Benutzeroberfläche &quot;Korrespondenz erstellen&quot;mit benutzerdefiniertem Logo](assets/0_1_introscreenshot-1.png)**Abbildung:** *Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
 
