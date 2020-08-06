@@ -8,6 +8,9 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 78%
 
 ---
 
@@ -42,7 +45,7 @@ Am Ende des Artikels haben Sie ein Formular, was so ähnlich wie Folgendes aussi
 
 1. Eine Option **Eigenschaften hinzufügen** wird angezeigt. Die Felder **Titel** und **Name** sind obligatorisch.
 
-   * **** Titel: Geben Sie `Add new or update shipping address` im Feld &quot;Titel&quot;an. Das Feld „Titel“: Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von AEM Forms.
+   * **Titel:** Geben Sie `Add new or update shipping address` im Feld &quot;Titel&quot;an. Das Feld „Titel“: Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von AEM Forms.
    * **Name:** Geben Sie `shipping-address-add-update-form` in das Feld „Name“ ein. Das Feld „Name“ gibt den Namen des Formulars an. Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
 
 1. Tippen Sie auf **Erstellen**. Ein adaptives Formular wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tap **Open** to open the newly created form in a new tab. Das Formular wird zur Bearbeitung geöffnet. Es zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
@@ -78,7 +81,7 @@ Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM Forms 
 <table> 
  <tbody> 
   <tr> 
-   <td>Eigenschaft</td> 
+   <td>Property</td> 
    <td>Textfeld 1<br /> </td> 
    <td>Textfeld 2<br /> </td> 
    <td>Textfeld 3</td> 
