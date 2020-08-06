@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '5182'
+ht-degree: 56%
 
 ---
 
@@ -23,7 +26,7 @@ Adobe Experience Manager (AEM) verwendet die [ExtJS](https://www.sencha.com/)-Wi
 
 Diese Widgets sind in AEM enthalten und können nicht nur von AEM, sondern auch von jeder mit AEM erstellten Website verwendet werden.
 
-Eine vollständige Übersicht aller verfügbaren Widgets in AEM finden Sie in der [Widget-API-Dokumentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) oder der [Liste der bestehenden X-Typen](/help/sites-developing/xtypes.md). Darüber hinaus zeigen zahlreiche Beispiele auf der Website von [Sencha](https://www.sencha.com/products/extjs/examples/), dem Eigentümer des Frameworks, wie das ExtJS-Framework zu verwenden ist.
+Eine vollständige Übersicht aller verfügbaren Widgets in AEM finden Sie in der [Widget-API-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) oder der [Liste der bestehenden X-Typen](/help/sites-developing/xtypes.md). Darüber hinaus zeigen zahlreiche Beispiele auf der Website von [Sencha](https://www.sencha.com/products/extjs/examples/), dem Eigentümer des Frameworks, wie das ExtJS-Framework zu verwenden ist.
 
 Auf dieser Seite erhalten Sie einige Einblicke in die Verwendung und Erweiterung von Widgets. Zuerst wird beschrieben, wie [clientseitiger Code in eine Seite eingefügt wird](#including-the-client-sided-code-in-a-page). Dann werden einige Beispielkomponenten beschrieben, die erstellt wurden, um einige grundlegende Anwendungs- und Erweiterungsfälle zu illustrieren. Diese Komponenten stehen als das Paket **Using ExtJS Widgets** auf **Package Share** zur Verfügung.
 
@@ -100,8 +103,7 @@ Fügen Sie die Client-Bibliothek wie folgt in die Seitenkomponenten-JSP ein:
 
    `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
 
-   
-wobei `<category-nameX>` der Name der clientseitigen Bibliothek steht.
+   wobei `<category-nameX>` der Name der clientseitigen Bibliothek steht.
 
 * nur JavaScript-Code einschließen:
 
@@ -123,10 +125,9 @@ To follow the tutorials on this page, install the package called **Using ExtJS W
 
 1. In your AEM instance download the package called **Using ExtJS Widgets (v01)** from Package Share and install the package. It creates the project `extjstraining` below `/apps` in the repository.
 
-1. Schließen Sie die Client-Bibliothek mit den Skripten (js) und dem Stylesheet (css) im head-Tag der geometrixx page jsp ein, da Sie die Beispielkomponenten in eine neue Seite der **Geometrixx** -Verzweigung einschließen:
+1. Schließen Sie die Client-Bibliothek, die die Skripte (js) und das Stylesheet (css) enthält, im head-Tag der geometrixx page jsp ein, da Sie die Beispielkomponenten auf einer neuen Seite der **Geometrixx** -Verzweigung einfügen:
 
-   
-in **CRXDE Lite** die Datei öffnen `/apps/geometrixx/components/page/headlibs.jsp` und die `cq.extjstraining` Kategorie wie folgt zum vorhandenen `<ui:includeClientLib>` Tag hinzufügen:
+   in der **CRXDE Lite** öffnen Sie die Datei `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining` Kategorie wie folgt zum vorhandenen `<ui:includeClientLib>` -Tag hinzu:
 
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 
@@ -211,7 +212,7 @@ So verwenden Sie das Dialogfeld „Single Panel“:
    1. Klicken Sie auf **Alle speichern**, um die Änderungen zu speichern.
    1. Copy the node: `/apps/extjstraining/components/dialogbasics/singlepanel`
    1. Paste the copied node below: `/apps/extjstraining/components/dialogbasics`
-   1. Wählen Sie die Node aus: und benennen Sie sie `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`um `dialog`.
+   1. Wählen Sie die Node aus: `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`und benennen Sie es um `dialog`.
 
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
@@ -238,12 +239,11 @@ Das Dialogfeld **Multi Panel** zeigt dasselbe wie das Dialogfeld **Full**, ist 
 
 * Empfohlene Verwendung: für Dialogfelder mit mehreren Registerkarten.
 
-So verwenden Sie das Dialogfeld &quot;Mehrere Bereiche&quot;:
+So verwenden Sie das Dialogfeld &quot;Multi-Panel&quot;:
 
 1. Replace the dialog of the **Dialog Basics** component with the **Multi Panel** dialog:
 
-   
-befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
+   befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
@@ -272,8 +272,7 @@ So verwenden Sie das Dialogfeld **Rich**:
 
 1. Replace the dialog of the **Dialog Basics** component with the **Rich** dialog:
 
-   
-befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
+   befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
@@ -322,7 +321,7 @@ Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementie
 
    `beforeshow="function(dialog){Ejst.x2.manageTabs(dialog.items.get(0));}"`
 
-   `dialog.items.get(0)` Ruft das Tabulatorbedienfeld mit dem Auswahlfeld und den 3 optionalen Bereichen ab.
+   `dialog.items.get(0)` Ruft das Tabulatorbedienfeld mit dem Auswahlbedienfeld und den 3 optionalen Bereichen ab.
 
 * The `Ejst.x2` object is defined in the `exercises.js` file at:
 
@@ -338,7 +337,7 @@ Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementie
 
 * In the `Ejst.x2.showTab()` method:
 
-   `field.findParentByType('tabpanel')` ruft das Tabulatorbedienfeld ab, das alle Registerkarten enthält ( `field` entspricht dem Auswahl-Widget)
+   `field.findParentByType('tabpanel')` Ruft das Tabulatorbedienfeld ab, das alle Registerkarten enthält ( `field` entspricht dem Auswahl-Widget)
 
    `field.getValue()` ruft den Wert der Auswahl ab, z. B.: tab2
 
@@ -412,8 +411,7 @@ So verwenden Sie das Dialogfeld **Arbitrary**:
 
 1. Replace the dialog of the **Dynamic Dialog** component with the **Arbitrary** dialog:
 
-   
-befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
+   befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
@@ -463,8 +461,7 @@ To use the **Toggle Fields** dialog:
 
 1. Replace the dialog of the **Dynamic Dialog** component with the **Toggle Fields** dialog:
 
-   
-befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
+   befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
@@ -508,8 +505,7 @@ Das auf dem **Custom Multifield**-Widget basierende Dialogfeld:
 
       `/apps/extjstraining/clientlib/js/exercises.js`
 
-      
-und gibt 2 Optionen zurück.
+      und gibt 2 Optionen zurück.
 
 * Wird durch den `multifield` Knoten unter:
 
@@ -536,7 +532,7 @@ Das benutzerdefinierte Multifield-Widget (xtype = `ejstcustom`):
    * `allowField` ist ein [CQ.form.Selection](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Selection)-Objekt vom Typ „select“. optionsProvider ist eine Konfiguration des Selection-Objekts, das mit der optionsProvider-Konfiguration des CustomWidget instanziiert wird, die im Dialogfeld
    * `otherField` ist ein [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)-Objekt.
 
-* Überschreibt die Methoden `setValue``getValue` und `getRawValue` von [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) , um den Wert von CustomWidget mit folgendem Format festzulegen und abzurufen:
+* Überschreibt die Methoden `setValue``getValue` `getRawValue` und [von](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) CQ.form.CompositeField, um den Wert von CustomWidget mit folgendem Format festzulegen und abzurufen:
 
    `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
 
@@ -600,8 +596,7 @@ To use the **Custom Treebrowse** widget based dialog:
 
 1. Ersetzen Sie das Dialogfeld der Komponente &quot; **Benutzerdefinierte Widgets** &quot;durch das Dialogfeld &quot; **Benutzerdefinierte Treue** &quot;:
 
-   
-befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
+   befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
@@ -613,7 +608,7 @@ Das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld ist ein auf
 
 Das auf dem **RTE-Plug-in** basierende Dialogfeld:
 
-* Wird durch den Knoten rteplugin unter:
+* Wird durch den Knoten rteplugin definiert unter:
 
    `/apps/extjstraining/components/customwidgets/rteplugin`
 
@@ -653,8 +648,7 @@ So verwenden Sie das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialo
 
 1. Ersetzen Sie das Dialogfeld der Komponente &quot; **Benutzerdefinierte Widgets** &quot;durch das **Rich Text Editor (RTE) Plug-in** -basierte Dialogfeld:
 
-   
-befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
+   befolgen Sie die für [Beispiel 2 beschriebenen Schritte: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 
 1. Bearbeiten Sie die Komponente.
 1. Klicken Sie auf das letzte Symbol rechts (das Symbol mit vier Pfeilen). Geben Sie einen Pfad ein und klicken Sie auf **OK**:
