@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a063d1ba-712a-49e1-8844-75bfa6e98977
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '7050'
+ht-degree: 97%
 
 ---
 
@@ -62,11 +65,11 @@ Schulung für Mitarbeiter, die Inhalte für die Lösung erstellen. Unter [Adobe 
 
 ## AEM-Zertifizierungsprüfung {#aem-certification-exam}
 
-Stellen Sie sicher, dass die gewünschten Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) registriert sind.
+Stellen Sie sicher, dass die gewünschten Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) registriert sind.
 
 ## AEM-zertifiziert {#aem-certified}
 
-Stellen Sie sicher, dass die gewünschten Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) bestanden haben.
+Stellen Sie sicher, dass die gewünschten Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) bestanden haben.
 
 ## Technische Schulung zu AEM {#aem-technical-training}
 
@@ -105,9 +108,9 @@ Neben den standardmäßigen Wartungsaufgaben für Adobe Experience Manager (AEM)
 
 Stellen Sie sicher, dass Ihr Team aus Mitarbeitern mit entsprechender Qualifikation besteht. Zu Projektteams müssen die folgenden Mitglieder zählen:
 
-* mindestens ein AEM-zertifizierter Interessentenentwickler
-* mindestens ein AEM-zertifizierter Architekt
-* mindestens 75 % Ihrer Entwickler AEM-zertifiziert sind;
+* mindestens ein AEM zertifizierter Interessentenentwickler
+* mindestens ein AEM zertifizierter Architekt
+* mindestens 75 % Ihrer Entwickler AEM zertifiziert;
 
    Dies ermöglicht es zertifizierten Entwicklern, Junior-Entwickler zu betreuen und sorgt für Wissensaustausch und Transparenz
 
@@ -206,8 +209,7 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen des Kunden. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Geschäftslösung sollte die Richtlinie die Frage beantworten:
-&quot;Was will das Unternehmen tun?&quot;
+Bei der Prüfung der Geschäftslösung sollte die Richtlinie die Frage beantworten: &quot;Was will das Unternehmen tun?&quot;
 
 ## Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -532,7 +534,7 @@ Anfangsschätzungen der folgenden Elemente:
 
 ## Verfügbarkeit der Hardware zum Erfüllen der Anforderungen {#hardware-will-be-available-to-fulfill-requirements}
 
-Bestätigung, dass alle Umgebungen über die erforderliche Mindesthardware verfügen.
+Bestätigung, dass alle Umgebung über die erforderliche Mindesthardware verfügen.
 
 ## Allgemeine Anforderungen {#high-level-requirements}
 
@@ -1267,7 +1269,7 @@ Berichte mit den Testergebnissen einschließlich:
 * Status der ausgeführten Testfälle
 * Andere qualitätsbezogene Aspekte
 
-Folgendes muss beachtet werden:
+Beachten Sie Folgendes:
 
 * Jedes Testteam sollte die Möglichkeit haben, beim Liefern der Testergebnisse neutral zu bleiben.
 * Es obliegt dem Projektleiter, die Auswirkungen der Ergebnisse zu bewerten und über geeignete Maßnahmen zu entscheiden.
@@ -1373,7 +1375,7 @@ Das Konzept muss auch Folgendes abdecken:
 * Aspekte der Suchmaschinenoptimierung, z. B. robots.txt
 * Sitemap
 
-## Anwendungsfälle {#use-cases}
+## Nutzungsszenarien {#use-cases}
 
 Ein Anwendungsfall ist die Liste der Aktionen oder Ereignisschritte, die zur Erreichung eines Ziels ausgeführt werden müssen. In der Regel dienen sie zur Definition der Interaktionen zwischen einer Rolle und der Lösung. Die Rolle kann ein Benutzer oder ein externes System sein.
 
