@@ -22,7 +22,7 @@ ht-degree: 8%
 
 **Info zum Signature-Dienst**
 
-Mit dem Signature-Dienst kann Ihr Unternehmen die Sicherheit und den Datenschutz von Adobe PDF-Dokumenten schützen, die es verteilt und empfängt. Dieser Dienst verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur vorgesehene Empfänger Dokumente ändern können. Da Sicherheitsfunktionen auf das Dokument selbst angewendet werden, bleibt das Dokument während seines gesamten Lebenszyklus sicher und kontrolliert. Ein Dokument bleibt über die Firewall hinaus geschützt, wenn es offline heruntergeladen und an Ihr Unternehmen zurückgesendet wird.
+Der Signature-Dienst ermöglicht Ihrem Unternehmen den Schutz der Sicherheit und Privatsphäre von Adobe PDF-Dokumenten, die es verteilt und empfängt. Dieser Dienst verwendet digitale Signaturen und Zertifizierung, um sicherzustellen, dass nur vorgesehene Empfänger Dokumente ändern können. Da Sicherheitsfunktionen auf das Dokument selbst angewendet werden, bleibt das Dokument während seines gesamten Lebenszyklus sicher und kontrolliert. Ein Dokument bleibt über die Firewall hinaus geschützt, wenn es offline heruntergeladen und an Ihr Unternehmen zurückgesendet wird.
 
 >[!NOTE]
 >
@@ -80,8 +80,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 **Signaturclient erstellen**
 
@@ -162,12 +162,12 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -207,9 +207,9 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Signaturfeldnamen abrufen {#retrieving-signature-field-names}
 
@@ -237,8 +237,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -309,12 +309,12 @@ Signaturfeldnamen mit der Signature-API abrufen (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -341,9 +341,9 @@ Signaturfeldnamen mit der Signature-API abrufen (Webdienst):
 
 [Signaturfeldnamen abrufen](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Modifying Signature Fields {#modifying-signature-fields}
 
@@ -379,8 +379,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including LiveCycle Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -464,7 +464,7 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
 
    >[!NOTE]
    >
-   >Informationen zu allen von Ihnen festgelegten Wörterbuchwerten für Seed-Werte finden Sie in der `PDFSeedValueOptionSpec` Klassenreferenz. (Siehe [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+   >Informationen zu allen von Ihnen festgelegten Wörterbuchwerten für Seed-Werte finden Sie in der `PDFSeedValueOptionSpec` Klassenreferenz. (Siehe [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 1. Signaturfeld ändern
 
@@ -491,12 +491,12 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -526,7 +526,7 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
 
    >[!NOTE]
    >
-   >Informationen zu allen von Ihnen festgelegten Wörterbuchwerten für Seed-Werte finden Sie in der `PDFSeedValueOptionSpec` Klassenreferenz. (Siehe [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+   >Informationen zu allen von Ihnen festgelegten Wörterbuchwerten für Seed-Werte finden Sie in der `PDFSeedValueOptionSpec` Klassenreferenz. (Siehe [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 1. Signaturfeld ändern
 
@@ -547,9 +547,9 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Digitally Signing PDF Documents {#digitally-signing-pdf-documents}
 
@@ -585,7 +585,7 @@ Informationen zum Umgang mit den Sicherheitsberechtigungen finden Sie im Handbuc
 
 **OpenShield-HSM-Berechtigung**
 
-Bei Verwendung einer OpenShield-HSM-Berechtigung zum Signieren oder Zertifizieren eines PDF-Dokuments kann die neue Berechtigung erst verwendet werden, wenn der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt ist, neu gestartet wurde. Sie können jedoch einen Konfigurationswert festlegen, der dazu führt, dass der Vorgang zum Signieren oder Zertifizieren funktioniert, ohne den J2EE-Anwendungsserver neu zu starten.
+Bei Verwendung einer OpenShield-HSM-Berechtigung zum Signieren oder Zertifizieren eines PDF-Dokuments kann die neue Berechtigung erst verwendet werden, nachdem der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt ist, neu gestartet wurde. Sie können jedoch einen Konfigurationswert festlegen, der dazu führt, dass der Vorgang zum Signieren oder Zertifizieren funktioniert, ohne den J2EE-Anwendungsserver neu zu starten.
 
 Sie können den folgenden Konfigurationswert in der Datei &quot;cknfastrc&quot;hinzufügen, die sich unter &quot;/opt/nfast/cknfastrc&quot;(oder &quot;c:\nfast\cknfastrc&quot;) befindet:
 
@@ -601,7 +601,7 @@ Beim Zertifizieren und Signieren desselben PDF-Dokuments wird beim Öffnen des P
 
 **Signieren von Dokumenten, die XFA-basierte Formulare sind**
 
-Wenn Sie versuchen, ein XFA-basiertes Formular mit der Signature-Dienst-API zu signieren, fehlen die Daten möglicherweise im `View` Ordner `Signed` in Acrobat `Version` . Betrachten Sie zum Beispiel den folgenden Arbeitsablauf:
+Wenn Sie versuchen, ein XFA-basiertes Formular mit der Signature-Dienst-API zu signieren, fehlen die Daten möglicherweise im `View` Acrobat- `Signed` `Version` Speicherort. Betrachten Sie zum Beispiel den folgenden Arbeitsablauf:
 
 * Mit einer XDP-Datei, die mit Designer erstellt wurde, führen Sie einen Formularentwurf zusammen, der ein Unterschriftsfeld und XML-Daten enthält, die Formulardaten enthalten. Mit dem Forms-Dienst können Sie ein interaktives PDF-Dokument erstellen.
 * Sie signieren das PDF-Dokument mit der Signature-Dienst-API.
@@ -625,8 +625,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 **Signaturclient erstellen**
 
@@ -657,7 +657,7 @@ Um die Sperrüberprüfung für ein Zertifikat durchzuführen, können Sie eine U
 
 Statt einen CRL-Server zu verwenden, können Sie einen OCSP-Server (Online Certificate Status Protocol) verwenden, wenn Sie die Sperrüberprüfung durchführen. Bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server wird die Sperrüberprüfung in der Regel schneller durchgeführt. (Siehe &quot;Online-Zertifikatstatusprotokoll&quot;unter [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst mit Adobe-Anwendungen und -Diensten verwendet. Beispiel: Wenn der OCSP-Server zuerst in Adobe Applications and Services eingestellt wird, wird der OCSP-Server und anschließend der CRL-Server überprüft. (Siehe &quot;Verwalten von Zertifikaten und Berechtigungen mithilfe des Trust Store&quot;in der AAC-Hilfe).
+Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst mit Adobe Applications and Services verwendet. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server und anschließend der CRL-Server überprüft. (Siehe &quot;Verwalten von Zertifikaten und Berechtigungen mithilfe des Trust Store&quot;in der AAC-Hilfe).
 
 Wenn Sie angeben, dass keine Sperrüberprüfung durchgeführt werden soll, prüft der Signature-Dienst nicht, ob das zum Signieren oder Zertifizieren eines Dokuments verwendete Zertifikat widerrufen wurde. Das heißt, die Serverinformationen für CRL und OCSP werden ignoriert.
 
@@ -754,12 +754,12 @@ So signieren Sie ein PDF-Dokument mit der Signature-API (Webdienst) digital:
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -791,7 +791,7 @@ So signieren Sie ein PDF-Dokument mit der Signature-API (Webdienst) digital:
    * Ein Zeichenfolgenwert, der die Kontaktinformationen des Unterzeichners darstellt.
    * Ein `PDFSignatureAppearanceOptions` Objekt, das das Erscheinungsbild der digitalen Unterschrift steuert. Beispielsweise können Sie mit diesem Objekt ein benutzerdefiniertes Logo zu einer digitalen Unterschrift hinzufügen.
    * Ein `System.Boolean` Objekt, das angibt, ob eine Sperrüberprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrüberprüfung durchgeführt wird, wird sie in die Signatur eingebettet. Der Standardwert lautet `false`.
-   * Ein `OCSPOptionSpec` Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Ein `OCSPOptionSpec` Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences` Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben.
    * Ein `TSPPreferences` Objekt, das Voreinstellungen für die Unterstützung von Zeitstempelanbietern (TSP) speichert. Dieser Parameter ist optional und kann `null`verwendet werden.
 
@@ -808,28 +808,28 @@ So signieren Sie ein PDF-Dokument mit der Signature-API (Webdienst) digital:
 
 [PDF-Dokumente digital signieren](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Interaktive Formulare digital signieren {#digitally-signing-interactive-forms}
+## Interaktives Forms digital signieren {#digitally-signing-interactive-forms}
 
 Sie können ein interaktives Formular signieren, das vom Forms-Dienst erstellt wird. Betrachten Sie zum Beispiel den folgenden Arbeitsablauf:
 
 * Sie führen ein XFA-basiertes PDF-Formular zusammen, das mit Designer erstellt wurde, und Formulardaten, die sich in einem XML-Dokument befinden, mit dem Forms-Dienst. Der Forms-Server rendert ein interaktives Formular.
 * Sie signieren das interaktive Formular mit der Signature-Dienst-API.
 
-Das Ergebnis ist ein interaktives, digital signiertes PDF-Formular. Beim Signieren eines PDF-Formulars, das auf einem XFA-Formular basiert, stellen Sie sicher, dass Sie die PDF-Datei als statisches PDF-Formular von Adobe speichern. Wenn Sie versuchen, ein PDF-Formular zu signieren, das als dynamisches Adobe PDF-Formular gespeichert wurde, tritt eine Ausnahme auf. Da Sie das Formular signieren, das vom Forms-Dienst zurückgegeben wird, stellen Sie sicher, dass das Formular ein Unterschriftsfeld enthält.
+Das Ergebnis ist ein interaktives, digital signiertes PDF-Formular. Wenn Sie ein PDF-Formular signieren, das auf einem XFA-Formular basiert, müssen Sie sicherstellen, dass Sie die PDF-Datei als statisches PDF-Formular für die Adobe speichern. Wenn Sie versuchen, ein PDF-Formular zu signieren, das als dynamisches PDF-Formular der Adobe gespeichert wurde, tritt eine Ausnahme auf. Da Sie das Formular signieren, das vom Forms-Dienst zurückgegeben wird, stellen Sie sicher, dass das Formular ein Unterschriftsfeld enthält.
 
 >[!NOTE]
 >
 >Bevor Sie ein interaktives Formular digital signieren können, müssen Sie sicherstellen, dass das Zertifikat AEM Forms hinzugefügt wird. Ein Zertifikat wird mithilfe von Administration Console oder programmgesteuert mithilfe der Trust Manager-API hinzugefügt. (Siehe [Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)importieren.)
 
-Wenn Sie die Forms Service API verwenden, setzen Sie die `GenerateServerAppearance` Laufzeitoption auf `true`. Mit dieser Laufzeitoption wird sichergestellt, dass das Erscheinungsbild des Formulars, das auf dem Server generiert wird, gültig bleibt, wenn es in Acrobat oder Adobe Reader geöffnet wird. Es wird empfohlen, diese Laufzeitoption beim Generieren eines interaktiven Formulars zur Unterzeichnung mit der Forms-API festzulegen.
+Wenn Sie die Forms Service API verwenden, setzen Sie die `GenerateServerAppearance` Laufzeitoption auf `true`. Diese Laufzeitoption stellt sicher, dass das Erscheinungsbild des Formulars, das auf dem Server generiert wird, gültig bleibt, wenn es in Acrobat oder Adobe Reader geöffnet wird. Es wird empfohlen, diese Laufzeitoption beim Generieren eines interaktiven Formulars für die Anmeldung mit der Forms API festzulegen.
 
 >[!NOTE]
 >
->Bevor Sie interaktive Formulare digital signieren, sollten Sie mit dem Signieren von PDF-Dokumenten vertraut sein. (See [Digitally Signing PDF Documents](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+>Bevor Sie Digital Signing Interactive Forms lesen, sollten Sie sich mit dem Signieren von PDF-Dokumenten auskennen. (See [Digitally Signing PDF Documents](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ### Zusammenfassung der Schritte {#summary_of_steps-4}
 
@@ -851,14 +851,14 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
 * adobe-forms-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Forms- und Signaturclients**
+**Forms- und Signaturclient erstellen**
 
-Da dieser Arbeitsablauf sowohl die Forms- als auch die Signature-Dienste aufruft, erstellen Sie sowohl einen Forms-Dienstclient als auch einen Signature-Dienstclient.
+Da dieser Arbeitsablauf sowohl den Forms- als auch den Signature-Dienst aufruft, erstellen Sie sowohl einen Forms-Dienstclient als auch einen Signature-Dienstclient.
 
 **Interaktives Formular mit dem Forms-Dienst abrufen**
 
@@ -868,7 +868,7 @@ Bei Verwendung von Webdiensten können Sie auch die `BLOB` Instanz weiterleiten,
 
 >[!NOTE]
 >
->Der schnelle Beginn, der mit dem Abschnitt &quot;Interaktive Formulare mit digitalem Signieren&quot;verknüpft ist, ruft die `renderPDFForm2` Methode auf.
+>Der Schnellmodus, der mit dem Abschnitt &quot;Interaktives Forms digital signieren&quot;verknüpft ist, ruft die `renderPDFForm2` Methode auf.
 
 **Interaktives Formular unterschreiben**
 
@@ -896,17 +896,17 @@ Nachdem der Signature-Dienst das PDF-Dokument digital signiert hat, können Sie 
 
 [PDF-Dokumente digital signieren](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
+[Interaktive PDF forms wiedergeben](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
 ### Interaktives Formular mit der Java-API digital signieren {#digitally-sign-an-interactive-form-using-the-java-api}
 
-Interaktive Formulare mit der Formular- und Signatur-API (Java) digital signieren:
+Interaktives Formular mit der Forms- und Signature-API (Java) digital signieren:
 
 1. Projektdateien einschließen
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-signatures-client.jar&quot;und &quot;adobe-forms-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
-1. Erstellen eines Forms- und Signaturclients
+1. Forms- und Signaturclient erstellen
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
@@ -957,7 +957,7 @@ Interaktive Formulare mit der Formular- und Signatur-API (Java) digital signiere
 
 **Siehe auch**
 
-[Interaktive Formulare digital signieren](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Interaktives Forms digital signieren](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [Quick Beginn (SOAP-Modus): Digitales Signieren eines PDF-Dokuments mit der Java-API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
@@ -967,7 +967,7 @@ Interaktive Formulare mit der Formular- und Signatur-API (Java) digital signiere
 
 ### Interaktives Formular mit der Webdienst-API digital signieren {#digitally-sign-an-interactive-form-using-the-web-service-api}
 
-Interaktive Formulare mit der Formular- und Signatur-API (Webdienst) digital signieren:
+Interaktive Formulare mit der Forms- und Signature-API (Webdienst) digital signieren:
 
 1. Projektdateien einschließen
 
@@ -979,12 +979,12 @@ Interaktive Formulare mit der Formular- und Signatur-API (Webdienst) digital sig
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
-1. Erstellen eines Forms- und Signaturclients
+1. Forms- und Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1038,7 +1038,7 @@ Interaktive Formulare mit der Formular- und Signatur-API (Webdienst) digital sig
    * Ein Zeichenfolgenwert, der die Kontaktinformationen des Unterzeichners darstellt.
    * Ein `PDFSignatureAppearanceOptions` Objekt, das das Erscheinungsbild der digitalen Unterschrift steuert. Beispielsweise können Sie mit diesem Objekt ein benutzerdefiniertes Logo zu einer digitalen Unterschrift hinzufügen.
    * Ein `System.Boolean` Objekt, das angibt, ob eine Sperrüberprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrüberprüfung durchgeführt wird, wird sie in die Signatur eingebettet. Der Standardwert lautet `false`.
-   * Ein `OCSPPreferences` Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Ein `OCSPPreferences` Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences` Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben.
    * Ein `TSPPreferences` Objekt, das Voreinstellungen für die Unterstützung von Zeitstempelanbietern (TSP) speichert. Dieser Parameter ist optional und kann `null`verwendet werden.
 
@@ -1053,9 +1053,9 @@ Interaktive Formulare mit der Formular- und Signatur-API (Webdienst) digital sig
 
 **Siehe auch**
 
-[Interaktive Formulare digital signieren](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Interaktives Forms digital signieren](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## PDF-Dokumente zertifizieren {#certifying-pdf-documents}
 
@@ -1065,7 +1065,7 @@ Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signat
 * Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bestimmte Arten modifiziert werden kann, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, Acrobat verhindert, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 * Zum Zeitpunkt des Signierens wird das Dokument auf bestimmte Typen von Inhalt überprüft, durch die die Inhalte eines Dokuments mehrdeutig oder irreführend werden könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
 
-Sie können PDF-Dokumente programmgesteuert mit der Signature-Dienst-Java-API oder der Signature-Webdienst-API zertifizieren. Beim Zertifizieren eines PDF-Dokuments müssen Sie auf eine Sicherheitsberechtigung verweisen, die im Berechtigungsdienst vorhanden ist. Informationen zur Sicherheitsberechtigung finden Sie im Handbuch *Installieren und Bereitstellen von AEM Forms* für Ihren Anwendungsserver.
+Sie können PDF-Dokumente programmgesteuert mit der Signature-Dienst-Java-API oder der Signature-Webdienst-API zertifizieren. Beim Zertifizieren eines PDF-Dokuments müssen Sie auf eine Sicherheitsberechtigung verweisen, die im Berechtigungsdienst vorhanden ist. Informationen zu den Sicherheitsberechtigungen finden Sie im Handbuch *Installieren und Bereitstellen von AEM Forms* für Ihren Anwendungsserver.
 
 >[!NOTE]
 >
@@ -1073,7 +1073,7 @@ Sie können PDF-Dokumente programmgesteuert mit der Signature-Dienst-Java-API od
 
 >[!NOTE]
 >
->Bei Verwendung einer OpenShield-HSM-Berechtigung zum Signieren oder Zertifizieren eines PDF-Dokuments kann die neue Berechtigung erst verwendet werden, wenn der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt wird, neu gestartet wurde. Sie können jedoch einen Konfigurationswert festlegen, der dazu führt, dass der Vorgang zum Signieren oder Zertifizieren funktioniert, ohne den J2EE-Anwendungsserver neu zu starten.
+>Bei Verwendung einer OpenShield-HSM-Berechtigung zum Signieren oder Zertifizieren eines PDF-Dokuments kann die neue Berechtigung erst verwendet werden, nachdem der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt ist, neu gestartet wurde. Sie können jedoch einen Konfigurationswert festlegen, der dazu führt, dass der Vorgang zum Signieren oder Zertifizieren funktioniert, ohne den J2EE-Anwendungsserver neu zu starten.
 
 Sie können den folgenden Konfigurationswert in der Datei &quot;cknfastrc&quot;hinzufügen, die sich unter &quot;/opt/nfast/cknfastrc&quot;(oder &quot;c:\nfast\cknfastrc&quot;) befindet:
 
@@ -1106,8 +1106,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1127,7 +1127,7 @@ Zum erfolgreichen Zertifizieren eines PDF-Dokuments benötigen Sie die folgenden
 * **Name** des Unterschriftsfelds: Der vollständig qualifizierte Name des zertifizierten Signaturfelds. Der folgende Wert ist ein Beispiel: `form1[0].#subform[1].SignatureField3[3]`. Bei Verwendung eines XFA-Formularfelds kann auch der teilweise Name des Signaturfelds verwendet werden: `SignatureField3[3]`. Wenn für den Feldnamen ein Null-Wert übergeben wird, wird ein unsichtbares Unterschriftsfeld dynamisch erstellt und zertifiziert.
 * **Sicherheitsberechtigung**: Eine Berechtigung zum Zertifizieren des PDF-Dokuments. Diese Sicherheitsberechtigung enthält ein Kennwort und einen Alias, der mit einem Alias übereinstimmen muss, der in der Berechtigung im Berechtigungsdienst angezeigt wird. Der Alias ist ein Verweis auf eine tatsächliche Berechtigung, die sich in einer PKCS#12-Datei (mit der Erweiterung .pfx) oder in einem Hardware-Sicherheitsmodul (HSM) befinden kann.
 * **Hash-Algorithmus**: Ein Hash-Algorithmus, mit dem das PDF-Dokument verarbeitet werden kann.
-* **Grund für die Unterzeichnung**: Ein Wert, der in Acrobat oder Adobe Reader angezeigt wird, damit andere Benutzer den Grund für die Zertifizierung des PDF-Dokuments kennen.
+* **Grund für die Unterzeichnung**: Ein Wert, der in Acrobat oder Adobe Reader angezeigt wird, sodass andere Benutzer den Grund für die Zertifizierung des PDF-Dokuments kennen.
 * **Speicherort des Unterzeichners**: Der Speicherort des Unterzeichners, der durch die Berechtigung angegeben wird.
 * **Kontaktangaben**: Kontaktinformationen des Unterzeichners, z. B. Adresse und Telefonnummer.
 * **Berechtigungsinformationen**: Berechtigungen, die die Aktionen steuern, die ein Endbenutzer an einem Dokument ausführen kann, ohne dass die zertifizierte Signatur ungültig wird. Sie können die Berechtigung beispielsweise so festlegen, dass jede Änderung am PDF-Dokument dazu führt, dass die zertifizierte Signatur ungültig wird.
@@ -1187,7 +1187,7 @@ PDF-Dokumente mithilfe der Signature-API (Java) zertifizieren:
    * Ein Zeichenfolgenwert, der erklärt, welche Aktionen die Unterschrift ungültig machen.
    * Ein `java.lang.Boolean` Objekt, das angibt, ob eine Sperrüberprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrüberprüfung durchgeführt wird, wird sie in die Signatur eingebettet. Der Standardwert lautet `false`.
    * Ein `java.lang.Boolean` Objekt, das angibt, ob das zertifizierte Unterschriftsfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Unterschriftsfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann nicht von Personen gelöscht werden, die nicht über die erforderlichen Berechtigungen verfügen. Der Standardwert lautet `false`.
-   * Ein `OCSPPreferences` Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Ein `OCSPPreferences` Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences` Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null`angeben.
    * Ein `TSPPreferences` Objekt, das Voreinstellungen für die Unterstützung von Zeitstempelanbietern (TSP) speichert. Nachdem Sie beispielsweise ein `TSPPreferences` Objekt erstellt haben, können Sie die URL des TSP-Servers festlegen, indem Sie die `TSPPreferences` Objektmethode `setTspServerURL` aufrufen. Dieser Parameter ist optional und kann `null`verwendet werden. For more information, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
@@ -1218,12 +1218,12 @@ PDF-Dokumente mithilfe der Signature-API (Webdienst) zertifizieren:
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1277,15 +1277,15 @@ PDF-Dokumente mithilfe der Signature-API (Webdienst) zertifizieren:
 
 [PDF-Dokumente zertifizieren](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verifying Digital Signatures {#verifying-digital-signatures}
 
 Digitale Signaturen können überprüft werden, um sicherzustellen, dass ein signiertes PDF-Dokument nicht geändert wurde und die digitale Signatur gültig ist. Beim Überprüfen einer digitalen Signatur können Sie den Status der Signatur und die Eigenschaften der Signatur, z. B. die Identität des Unterzeichners, überprüfen. Bevor Sie einer digitalen Signatur vertrauen, sollten Sie sie überprüfen. Verwenden Sie beim Überprüfen einer digitalen Signatur ein PDF-Dokument, das eine digitale Signatur enthält.
 
-Nehmen Sie an, dass die Identität des Unterzeichners unbekannt ist. Wenn Sie das PDF-Dokument in Acrobat öffnen, wird in einer Warnmeldung darauf hingewiesen, dass die Identität des Unterzeichners unbekannt ist (siehe folgende Abbildung).
+Nehmen Sie an, dass die Identität des Unterzeichners unbekannt ist. Wenn Sie das PDF-Dokument in Acrobat öffnen, wird in einer Warnmeldung darauf hingewiesen, dass die Identität des Unterzeichners unbekannt ist, wie in der folgenden Abbildung dargestellt.
 
 ![vd_vd_verifysig](assets/vd_vd_verifysig.png)
 
@@ -1316,8 +1316,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1337,15 +1337,15 @@ Legen Sie die folgenden PKI-Laufzeitoptionen fest, die der Signature-Dienst beim
 * Sperrüberprüfung
 * Zeitstempelwerte
 
-Während Sie diese Optionen einstellen, können Sie die Überprüfungszeit angeben. Sie können beispielsweise die aktuelle Zeit (die Zeit auf dem Computer des Validators) auswählen, was bedeutet, dass die aktuelle Zeit verwendet werden soll. Weitere Informationen zu den verschiedenen Zeitwerten finden Sie im `VerificationTime` Wert &quot;Auflistung&quot;in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Während Sie diese Optionen einstellen, können Sie die Überprüfungszeit angeben. Sie können beispielsweise die aktuelle Zeit (die Zeit auf dem Computer des Validators) auswählen, was bedeutet, dass die aktuelle Zeit verwendet werden soll. Weitere Informationen zu den verschiedenen Zeitwerten finden Sie im Abschnitt zum Wert `VerificationTime` Auflistung in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Sie können auch angeben, ob die Sperrüberprüfung im Rahmen des Überprüfungsprozesses durchgeführt werden soll. Sie können beispielsweise eine Sperrüberprüfung durchführen, um zu ermitteln, ob das Zertifikat gesperrt wurde. Weitere Informationen zu den Optionen für die Prüfung von Sperren finden Sie im Abschnitt zur `RevocationCheckStyle` Auflistung in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können auch angeben, ob die Sperrüberprüfung im Rahmen des Überprüfungsprozesses durchgeführt werden soll. Sie können beispielsweise eine Sperrüberprüfung durchführen, um zu ermitteln, ob das Zertifikat gesperrt wurde. Informationen zu den Optionen für die Prüfung von Sperren finden Sie im Abschnitt zum Wert `RevocationCheckStyle` Auflistung in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Um eine Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec` Objekts eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an. Wenn Sie jedoch keine URL für den Zertifikatsperrlisten-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
+Um eine Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec` Objekts eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an. Wenn Sie jedoch keine URL für den CRL-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
 
 Statt einen CRL-Server zu verwenden, können Sie einen OCSP-Server (Online Certificate Status Protocol) verwenden, wenn Sie die Sperrüberprüfung durchführen. Normalerweise wird die Sperrüberprüfung bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server schneller durchgeführt. (See [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
-Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst verwendet, indem Sie Adobe-Anwendungen und -Dienste verwenden. Beispiel: Wenn der OCSP-Server zuerst in Adobe Applications and Services eingestellt wird, wird der OCSP-Server und anschließend der CRL-Server überprüft.
+Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst verwendet, indem Sie Adobe Applications und Services verwenden. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server und anschließend der CRL-Server überprüft.
 
 Wenn Sie keine Sperrüberprüfung durchführen, prüft der Signature-Dienst nicht, ob das Zertifikat gesperrt wurde. Das heißt, die Serverinformationen für CRL und OCSP werden ignoriert.
 
@@ -1367,7 +1367,7 @@ Standardmäßig beschränkt der Signature-Dienst die Zeit, die ein Dokument nach
 
 >[!NOTE]
 >
->Weitere Werte, die Sie beim Überprüfen einer Unterschrift benötigen, finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Weitere Werte, die Sie beim Überprüfen einer Unterschrift benötigen, finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Status der Signatur festlegen**
 
@@ -1455,12 +1455,12 @@ Sie können die Identität des Unterzeichners festlegen, bei der es sich um eine
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1508,9 +1508,9 @@ Sie können die Identität des Unterzeichners festlegen, bei der es sich um eine
 
 [Digitale Signaturen überprüfen](#unresolvedlink-lc-si)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verifying Multiple Digital Signatures {#verifying-multiple-digital-signatures}
 
@@ -1540,8 +1540,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1561,15 +1561,15 @@ Legen Sie die folgenden PKI-Laufzeitoptionen fest, die der Signature-Dienst beim
 * Sperrüberprüfung
 * Zeitstempelwerte
 
-Während Sie diese Optionen einstellen, können Sie die Überprüfungszeit angeben. Sie können beispielsweise die aktuelle Zeit (die Zeit auf dem Computer des Validators) auswählen, was bedeutet, dass die aktuelle Zeit verwendet werden soll. Weitere Informationen zu den verschiedenen Zeitwerten finden Sie im `VerificationTime` Wert &quot;Auflistung&quot;in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Während Sie diese Optionen einstellen, können Sie die Überprüfungszeit angeben. Sie können beispielsweise die aktuelle Zeit (die Zeit auf dem Computer des Validators) auswählen, was bedeutet, dass die aktuelle Zeit verwendet werden soll. Weitere Informationen zu den verschiedenen Zeitwerten finden Sie im Abschnitt zum Wert `VerificationTime` Auflistung in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Sie können auch angeben, ob die Sperrüberprüfung im Rahmen des Überprüfungsprozesses durchgeführt werden soll. Sie können beispielsweise eine Sperrüberprüfung durchführen, um zu ermitteln, ob das Zertifikat gesperrt wurde. Weitere Informationen zu den Optionen für die Prüfung von Sperren finden Sie im Abschnitt zur `RevocationCheckStyle` Auflistung in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können auch angeben, ob die Sperrüberprüfung im Rahmen des Überprüfungsprozesses durchgeführt werden soll. Sie können beispielsweise eine Sperrüberprüfung durchführen, um zu ermitteln, ob das Zertifikat gesperrt wurde. Informationen zu den Optionen für die Prüfung von Sperren finden Sie im Abschnitt zum Wert `RevocationCheckStyle` Auflistung in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Um eine Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec` Objekts eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an. Wenn Sie jedoch keine URL für einen Zertifikatsperrlisten-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
 
 Statt einen CRL-Server zu verwenden, können Sie einen OCSP-Server (Online Certificate Status Protocol) verwenden, wenn Sie die Sperrüberprüfung durchführen. Normalerweise wird die Sperrüberprüfung schneller durchgeführt, wenn ein OCSP-Server anstelle eines CRL-Servers verwendet wird. (See [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
-Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst verwendet, indem Sie Adobe-Anwendungen und -Dienste verwenden. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server und anschließend der CRL-Server überprüft.
+Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst verwendet, indem Sie Adobe Applications und Services verwenden. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server überprüft, gefolgt vom CRL-Server.
 
 Wenn Sie keine Sperrüberprüfung durchführen, prüft der Signature-Dienst nicht, ob das Zertifikat gesperrt wurde. Das heißt, die Serverinformationen für CRL und OCSP werden ignoriert.
 
@@ -1670,12 +1670,12 @@ Mehrere digitale Signaturen mithilfe der Signature Service API (Webdienst) über
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1718,9 +1718,9 @@ Mehrere digitale Signaturen mithilfe der Signature Service API (Webdienst) über
 
 [Überprüfen mehrerer digitaler Signaturen](#unresolvedlink-lc-si)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Removing Digital Signatures {#removing-digital-signatures}
 
@@ -1749,8 +1749,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1834,12 +1834,12 @@ Entfernen Sie eine digitale Signatur mithilfe der Signature-API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Signaturclient erstellen
 
    * Create a `SignatureServiceClient` object by using its default constructor.
-   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1877,6 +1877,6 @@ Entfernen Sie eine digitale Signatur mithilfe der Signature-API (Webdienst):
 
 [Entfernen digitaler Signaturen](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
