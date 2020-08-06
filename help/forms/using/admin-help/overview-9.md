@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 translation-type: tm+mt
 source-git-commit: 36d12ff07b1cdd1e6c6fee052a335d3f49eee3bb
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ Auf jeder Seite des Arbeitsablaufs für Formulare in Administration Console kön
 <table>
  <thead>
   <tr>
-   <th><p>Seite</p></th> 
+   <th><p>Seite      </p></th> 
    <th><p>Aufgaben</p></th> 
    <th><p>Siehe</p></th> 
   </tr> 
