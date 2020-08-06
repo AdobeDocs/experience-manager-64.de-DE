@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 82%
 
 ---
 
@@ -28,15 +31,15 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 >Manche Begriffe im Zusammenhang mit dem Veröffentlichen können leicht verwechselt werden:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
-   >  Dies sind die primären Begriffe für die Aktionen, mit denen Ihre Inhalte in Ihrer Veröffentlichungsumgebung öffentlich verfügbar gemacht werden (oder nicht).
+   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
    >
    >
 * **Aktivieren/Deaktivieren**
-   >  Diese Begriffe sind gleichbedeutend mit Veröffentlichung/Rückgängigmachen der Veröffentlichung.
+   >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
    >
    >
-* **Wiederholen/Replikation**
-   >  Dies sind die technischen Begriffe, die die Datenbewegung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. wenn Benutzerkommentare veröffentlicht oder rückgängig repliziert werden.
+* **Replizieren/Replikation**
+   >  Dies sind die technischen Begriffe, die die Datenübertragung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen beschreiben, z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
 >
 
 
@@ -47,6 +50,7 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 >
 >* Ein Workflow wird ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
 >* Eine Meldung wird (für kurze Zeit) angezeigt, in der Sie darüber informiert werden.
+
 >
 
 
