@@ -28,11 +28,11 @@ Mit dem Seitenvergleich können Benutzer die aktuelle Seite mit Launches, frühe
 
 ## Vorgangsdetails {#operation-details}
 
-Beim Vergleich von Versionen einer Seite wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich](/help/sites-authoring/page-diff.md#presentation-of-differences)nebeneinander gerendert werden kann.
+Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich](/help/sites-authoring/page-diff.md#presentation-of-differences)nebeneinander gerendert werden kann.
 
 Dieser Erholungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert kein Eingreifen. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
 
-Abhängig vom AEM-Patch-Level ist das Verhalten unterschiedlich und erfordert möglicherweise bestimmte Berechtigungen, um ordnungsgemäß funktionieren zu können.
+Je nach AEM Patch-Level ist das Verhalten unterschiedlich und erfordert möglicherweise bestimmte Berechtigungen, um ordnungsgemäß funktionieren zu können.
 
 ### Vor AEM 6.4.3 {#prior-to-aem}
 
@@ -40,7 +40,7 @@ Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden 
 
 `/content/versionhistory/<userId>/<site structure>`
 
-Da AEM beim Einsatz des Mechanismus zum Abweichen von Seiten die vorherige Version der Seite neu erstellt, muss der Benutzer über bestimmte JCR-Berechtigungen verfügen, um die Funktion verwenden zu können.
+Wenn Sie den Mechanismus zum Abweichen von Seiten verwenden, erstellt AEM die vorherige Version der Seite neu, damit die Funktion verwendet werden kann, muss der Benutzer über bestimmte JCR-Berechtigungen verfügen.
 
 >[!CAUTION]
 >
