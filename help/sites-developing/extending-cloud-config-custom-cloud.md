@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 63%
 
 ---
 
@@ -37,6 +40,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
 
    * **Name**: components
    * **Typ**: `sling:Folder`
+
    und
 
    * **Name**: templates
@@ -53,6 +57,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
 1. Click **Next** twice and specify:
 
    * **Zugelassene übergeordnete Elemente:** `acs/analytics/templates/googleanalytics`
+
    Click **Next** twice and click **OK**.
 
 1. Add a property to `googleanalyticspage`:
@@ -195,6 +200,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
 
    * **Titel**: `Google Analytics`
    * **Name**: `googleanalytics`
+
    Go back in CRXDE Lite, and under `/etc/cloudservices/googleanalytics`, add the following property to `jcr:content`:
 
    * **Name**: `componentReference`
@@ -206,6 +212,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
 
    * **Übergeordnete Konfiguration**: `/etc/cloudservices/googleanalytics`
    * **Titel:**  `My First GA Config`
+
    Wählen Sie **Google Analytics Configuration** und klicken Sie auf **Erstellen**.
 
 1. Geben Sie eine **Konto-ID** ein, z. B. `AA-11111111-1`. Klicken Sie auf **OK**.
