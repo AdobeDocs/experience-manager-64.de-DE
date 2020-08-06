@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +26,7 @@ Da sie häufig einen Großteil der Verarbeitung in einer AEM-Umgebung ausmachen,
 
 Wir empfehlen daher dringend, Workflow-Implementierungen sorgfältig zu planen.
 
-## Konfiguration{#configuration}
+## Konfiguration {#configuration}
 
 Beim Konfigurieren von angepassten und/oder vorgefertigten Workflow-Prozessen müssen ein paar Dinge berücksichtigt werden.
 
@@ -106,6 +109,7 @@ Workflow-Modelle werden im Repository auf der Grundlage ihres Typs gespeichert:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Modelle.
    >* edit anything in `/libs`
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -141,6 +145,7 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Starter.
    >* edit anything in `/libs`
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -172,6 +177,7 @@ Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs ges
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Skripte.
    >* edit anything in `/libs`
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -199,6 +205,7 @@ Workflow-Benachrichtigungen werden im Repository ebenfalls auf der Grundlage ihr
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Benachrichtigungsdefinitionen.
    >* edit anything in `/libs`
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
