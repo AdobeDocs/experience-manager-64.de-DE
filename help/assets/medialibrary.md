@@ -1,9 +1,12 @@
 ---
-title: Vergleichen Sie die in AEM Assets und AEM Media Library verfügbaren Funktionen
+title: Vergleichen Sie die in AEM Assets und AEM Medienbibliothek verfügbaren Funktionen.
 description: Häufig gestellte Fragen zu AEM Assets und AEM Media Library, einschließlich der Unterschiede.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 79%
 
 ---
 
@@ -28,7 +31,7 @@ Die folgenden einzigartigen Funktionen stehen AEM Assets-Kunden exklusiv zur Ver
 
 1. die Möglichkeit, andere Metadaten als Titel, Tags und Beschreibungen zu extrahieren und zu bearbeiten.
 1. the AEM Assets Admin, available from the welcome screen by clicking the second button next to the `siteadmin`.
-1. Alle Arbeitsablaufschritte im Zusammenhang mit der Digital Asset Management, d. h. die AEM-Asset-Erfassung, das Löschen von AEM Assets, die Verarbeitung von AEM Assets-Teilassets und die AEM Assets-Metadaten-Extraktion.
+1. Alle Workflow-Schritte im Zusammenhang mit Digital Asset Management, d. h. AEM Asset-Erfassung, AEM Assets-Löschung, AEM Assets-Bearbeitung von Teilassets, AEM Assets-Metadaten-Extraktion.
 1. libraries including `dam` im package space.
 
 Zur Nutzung dieser Funktionen ist eine gültige AEM Assets-Lizenz erforderlich. 
