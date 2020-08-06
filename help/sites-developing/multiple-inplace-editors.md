@@ -6,14 +6,14 @@ translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
 
 # Mehrere ersetzende Editoren konfigurieren {#configure-multiple-in-place-editors}
 
-Sie können den Rich-Text-Editor in Adobe Experience Manager so konfigurieren, dass mehrere ersetzende Editoren vorhanden sind. Nach der Konfiguration können Sie den entsprechenden Inhalt auswählen und den passenden Editor öffnen.
+Sie können den Rich-Text-Editor in Adobe Experience Manager so konfigurieren, dass er mehrere ersetzende Editoren enthält. Nach der Konfiguration können Sie den entsprechenden Inhalt auswählen und den passenden Editor öffnen.
 
 ![Ein spezifischer ersetzender Editor](assets/rte-inplace-editor.png)
 
@@ -86,7 +86,7 @@ Gehen Sie wie folgt vor, um mehrere Editoren zu konfigurieren:
 
 ### Additional configuration for Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-Die Konfiguration mehrerer Rich-Text-Editoren unterscheidet sich etwas vom zuvor beschriebenen Verfahren, da Sie jede einzelne RTE-Instanz separat konfigurieren können. Weitere Informationen finden Sie unter Rich-Text-Editor [konfigurieren](/help/sites-administering/rich-text-editor.md). Um mehrere RTE zu haben, erstellen Sie eine Konfiguration für jede ersetzende RTE. Adobe empfiehlt die Erstellung des neuen Konfigurationsknotens unter `cq:InplaceEditingConfig` dem jeder RTE eine andere Konfiguration aufweisen kann. Erstellen Sie unter dem neuen Knoten jede einzelne RTE-Konfiguration.
+Die Konfiguration mehrerer Rich-Text-Editoren unterscheidet sich etwas vom zuvor beschriebenen Verfahren, da Sie jede einzelne RTE-Instanz separat konfigurieren können. Weitere Informationen finden Sie unter Rich-Text-Editor [konfigurieren](/help/sites-administering/rich-text-editor.md). Um mehrere RTE zu haben, erstellen Sie eine Konfiguration für jede ersetzende RTE. Adobe empfiehlt die Erstellung des neuen Konfigurationsknotens unter `cq:InplaceEditingConfig` dem jeder RTE eine andere Konfiguration haben kann. Erstellen Sie unter dem neuen Knoten jede einzelne RTE-Konfiguration.
 
 ```xml
     texttext
