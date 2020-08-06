@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 66%
 
 ---
 
@@ -45,12 +48,15 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 1. Geben Sie in beiden Fällen Folgendes ein:
 
-   * **Titel**(*Erforderlich*) Der Anzeigentitel für das Tag. Jedes Zeichen kann eingegeben werden,
+   * **Titel**
+(
+*Erforderlich*) Der Anzeigentitel des Tags. Jedes Zeichen kann eingegeben werden,
 
       Es wird empfohlen, diese Sonderzeichen nicht zu verwenden:
 
-      * `colon (:)` - Namespace-Trennzeichen
+      * `colon (:)` - Namensraum-Trennzeichen
       * `forward slash (/)` - Trennzeichen für Untertags
+
       Diese Zeichen werden möglicherweise nicht angezeigt, wenn sie eingegeben werden.
 
    * **Name**
@@ -88,7 +94,7 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 **Liste** öffnet ein neues Fenster, das die Pfade zu allen Seiten enthält, die das markierte Tag verwenden:
 
-![list_show_wortagsarereferencing](assets/list_showing_wheretagsarereferenced.png)
+![Liste_show_wortagsarreferences](assets/list_showing_wheretagsarereferenced.png)
 
 ## Verschieben von Tags {#moving-tags}
 
