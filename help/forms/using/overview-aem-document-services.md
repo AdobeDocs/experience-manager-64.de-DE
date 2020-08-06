@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 0685478b-d08e-4d69-8dd3-f75270772167
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +44,7 @@ Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
 
 * **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs
-* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von Druckdokumenten (PS, PCL, ZPL, DPL, IPL, TPCL) zu generieren. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
+* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel gedruckter Dokumente (PS, PCL, ZPL, DPL, IPL, TPCL) zu generieren. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
 
 ## Assembler-Dienst {#assembler-service}
 
@@ -84,7 +87,7 @@ Mithilfe von DDX können zusammen mit der Dokumentzusammenführung und -aufteilu
 
 Sie können eine einfache Eingabezuordnung zum Angeben der Speicherorte für Quell- und Zieldokumente verwenden. Sie können auch die folgenden URL-Typen für externe Daten verwenden:
 
-* Datei
+* File
 * FTP
 * HTTP/HTTPS
 
