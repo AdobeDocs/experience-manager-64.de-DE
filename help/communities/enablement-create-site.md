@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1744'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +28,7 @@ So erstellen Sie eine neue Community-Site:
 
 Verwenden der [Autoreninstanz](http://localhost:4502/)
 
-* Anmelden mit Administratorrechten
+* Anmelden mit Administratorberechtigungen
 * Navigieren Sie zu **[!UICONTROL Communities > Sites]**
 
 * Wählen Sie **[!UICONTROL Erstellen]**
@@ -54,7 +57,7 @@ Geben Sie im Schritt **Site-Vorlage** einen Titel, eine Beschreibung und den Nam
 
 * **[!UICONTROL Referenz-Site-Vorlage]**: nach unten ziehen `Reference Structured Learning Site Template`
 
-Wählen Sie **[!UICONTROL Weiter]**
+Wählen Sie **[!UICONTROL Weiter]** aus
 
 ### Schritt 2: Design {#step-design}
 
@@ -72,7 +75,7 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 ![chlimage_1-284](assets/chlimage_1-284.png) ![chlimage_1](assets/chlimage_1.jpeg)
 
-Wählen Sie **[!UICONTROL Weiter]**.
+Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
@@ -87,7 +90,7 @@ Eine Community-Site ist privat, wenn anonymen Site-Besuchern der Zugriff verweig
 Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung](sites-console.md#user-management)deaktiviert sind:
 
 * Site-Besucher NICHT zur Selbstregistrierung zulassen
-* Anonyme Site-Besucher NICHT zum Anzeigen der Site zulassen
+* Anonyme Site-Besucher NICHT zur Ansicht der Site zulassen
 * Optional, ob Messaging unter Community-Mitgliedern zulässig ist
 * Anmeldung bei Facebook NICHT zulassen
 * Anmeldung mit Twitter NICHT zulassen
@@ -96,11 +99,11 @@ Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung]
 
 #### TAGGING {#tagging}
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden durch Auswahl von AEM-Namespaces gesteuert, die zuvor über die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. der [Tutorial-Namespace](enablement-setup.md#create-tutorial-tags)).
+Die Tags, die auf Community-Inhalte angewendet werden können, werden gesteuert, indem AEM Namensraum ausgewählt werden, die zuvor über die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. der [Tutorial-Namensraum](enablement-setup.md#create-tutorial-tags)).
 
-Darüber hinaus wird bei der Auswahl von Tag-Namespaces für die Community-Site die Auswahl eingeschränkt, die beim Definieren von Katalogen und Aktivierungsressourcen angezeigt wird. Wichtige Informationen finden Sie unter [Tagging-Aktivierungsressourcen](tag-resources.md) .
+Darüber hinaus wird bei der Auswahl von Tag-Namensräumen für die Community-Site die Auswahl beim Definieren von Katalogen und Aktivierungsressourcen eingeschränkt. Wichtige Informationen finden Sie unter [Tagging-Aktivierungsressourcen](tag-resources.md) .
 
-Die Suche nach Namespaces ist mit der Typenvorschau einfach. Beispiel:
+Die Suche nach Namensräumen ist mit der Typenvorschau einfach. Beispiel:
 
 * Typ &#39;tut&#39;
 * Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
@@ -116,11 +119,11 @@ Damit ein Community-Mitglied (oder eine Gruppe von Mitgliedern) die Site als Com
 Beispiel:
 
 * Typ &quot;q&quot;
-* Quinn [Harper auswählen](enablement-setup.md#publishcreateenablementmembers)
+* Wählen Sie [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
->[Der Tunnel-Dienst](deploy-communities.md#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
+>[Der Tunnel-Dienst](deploy-communities.md#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungs-Umgebung vorhanden sind.
 
 ![community_roles](assets/community_roles.png)
 
@@ -134,7 +137,7 @@ Beispiel:
 
 Wählen Sie im Pulldown-Menü das für diese Community-Site konfigurierte Analytics Cloud-Service-Framework aus.
 
-Die Auswahl im Screenshot ist `Communities`das Framework-Beispiel aus der [Konfigurationsdokumentation.](analytics.md#aem-analytics-framework-configuration)
+Die im Screenshot angezeigte Auswahl ist `Communities`das Framework-Beispiel aus der [Konfigurationsdokumentation.](analytics.md#aem-analytics-framework-configuration)
 
 ![chlimage_1-288](assets/chlimage_1-288.png)
 
@@ -142,7 +145,7 @@ Die Auswahl im Screenshot ist `Communities`das Framework-Beispiel aus der [Konfi
 
 Die [Übersetzungseinstellungen](sites-console.md#translation) geben an, ob und in welche Sprache UGC übersetzt werden darf.
 
-* Maschinelle Übersetzung **[!UICONTROL zulassen]**
+* Maschinelle Übersetzung **[!UICONTROL zulassen prüfen]**
 * Standardeinstellungen verwenden
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
@@ -151,16 +154,17 @@ Die [Übersetzungseinstellungen](sites-console.md#translation) geben an, ob und 
 
 Für eine Aktivierungsgemeinschaft ist es erforderlich, einen oder mehrere Community-Aktivierungsmanager zu identifizieren.
 
-* **[!UICONTROL Aktivierungsmanager]**(erforderlich) Mitglieder der `Community Enablement Managers` Gruppe können ausgewählt werden, um diese Community-Site zu verwalten.
+* **[!UICONTROL Aktivierungsmanager]**(erforderlich) Mitglieder der 
+`Community Enablement Managers` zur Verwaltung dieser Community-Site ausgewählt werden.
 
    * Typ &quot;s&quot;
    * Wählen Sie nun eine der folgenden Optionen aus `Sirius Nilson`
 
-* **[!UICONTROL Marketing Cloud-Organisations-ID]**(optional) Die ID für ein Adobe Analytics-Konto, die erforderlich ist, wenn [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) in die Aktivierungsberichte aufgenommen wird.
+* **[!UICONTROL Marketing Cloud-Organisations-ID]**(optional) Die ID für ein Adobe Analytics-Konto, die erforderlich ist, wenn [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) in den Berichte für die Aktivierung aufgenommen wird.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
-Wählen Sie **[!UICONTROL Weiter]**.
+Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Schritt 4: Community-Site erstellen {#step-create-community-site}
 
@@ -192,7 +196,7 @@ Von links nach rechts:
 
 * **Website** veröffentlichen Wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen (standardmäßig auf localhost:4503)
 
-* **Site** exportieren Wählen Sie das Exportsymbol, um ein Paket der Community-Site zu erstellen, das sowohl im [Paketmanager](../../help/sites-administering/package-manager.md) gespeichert als auch heruntergeladen wird.
+* **Site** exportieren Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, das sowohl im [Paketmanager](../../help/sites-administering/package-manager.md) gespeichert als auch heruntergeladen wird.
 
    Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
@@ -216,26 +220,26 @@ Es wird ein Hinweis geben, dass die Site veröffentlicht wurde.
 
 Neben der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Veröffentlichungsumgebung vorhanden sind, unter dem Site-Namen &quot;Aktivieren&quot;in Schritt 1 in der Konsole &quot; [Communities Mitglieder und Gruppen&quot;angezeigt](members.md#groups-console):
+Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Umgebung &quot;Veröffentlichen&quot;vorhanden sind, unter dem Site-Namen &quot;Aktivieren&quot;in Schritt 1 in der Konsole &quot; [Communities-Mitglieder und -Gruppen&quot;angezeigt](members.md#groups-console):
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
 ### Mitglieder zur Community-Gruppe &quot;Mitglieder aktivieren&quot;zuweisen {#assign-members-to-community-enable-members-group}
 
-Bei aktiviertem Tunneldienst ist es möglich, die während der Einrichtung[ erstellten ](enablement-setup.md#publishcreateenablementmembers)Benutzer der Community-Mitglieder-Gruppe für die neu erstellte Community-Site zuzuweisen.
+Bei aktiviertem Tunneldienst ist es möglich, die während der Ersteinrichtung erstellten [Benutzer der Community-Mitglieder-Gruppe für die neu erstellte Community-Site zuzuweisen](enablement-setup.md#publishcreateenablementmembers) .
 
-Mithilfe der Community-Gruppenkonsole können Mitglieder einzeln hinzugefügt oder über die Mitgliedschaft in einer Gruppe hinzugefügt werden.
+Mithilfe der Community Groups-Konsole können Mitglieder einzeln hinzugefügt oder über die Mitgliedschaft in einer Gruppe hinzugefügt werden.
 
 In diesem Beispiel `Community Ski Class` wird die Gruppe als Mitglied der Gruppe `Community Enable Members` sowie als Mitglied hinzugefügt `Quinn Harper`.
 
 * Navigieren Sie zu **[!UICONTROL Communities > Gruppen]** -Konsole
 * Gruppe **[!UICONTROL Community-Mitglieder]** aktivieren
-* Geben Sie `ski` in das Suchfeld &quot;Mitglieder zu Gruppe **** hinzufügen&quot;ein
+* Geben Sie `ski` in das Suchfeld &quot; **[!UICONTROL Hinzufügen Mitglieder zur Gruppierung]** &quot;ein
 * Wählen Sie **[!UICONTROL Community Ski Class]** (Gruppe der Lernenden)
 * In `quinn` das Suchfeld eingeben
 * Wählen Sie **[!UICONTROL Quinn Harper]** (Ansprechpartner für die Aktivierungsressource)
 
-* Wählen Sie **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ![chlimage_1-295](assets/chlimage_1-295.png)
 
@@ -249,13 +253,13 @@ In diesem Beispiel `Community Ski Class` wird die Gruppe als Mitglied der Gruppe
 
 Nachdem eine Site konfiguriert und zur Veröffentlichung gesendet wurde, [konfigurieren Sie die Anmeldezuordnung](sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldedaten der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut anzeigt.
 
-Hinzufügen eines `Login Page Mapping` Formulars
+Hinzufügen `Login Page Mapping` als
 
 * /content/sites/enable/de/signin:/content/sites/enable/de
 
-### (Optional) Ändern der Standard-Homepage {#optional-change-the-default-home-page}
+### (Optional) Ändern der Startseite &quot;Standard&quot; {#optional-change-the-default-home-page}
 
-Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, kann es nützlich sein, die Standard-Homepage in die neue Site zu ändern.
+Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, ist es ggf. sinnvoll, die standardmäßige Startseite auf die neue Site zu ändern.
 
 Hierzu müssen Sie [CRX|DE](http://localhost:4503/crx/de) Lite verwenden, um die Tabelle für die [Ressourcenzuordnung](../../help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
 
@@ -265,8 +269,8 @@ Erste Schritte
 
    * Navigieren Sie beispielsweise zu [http://localhost:4503/crx/de](http://localhost:4503/crx/de) und melden Sie sich mit `admin/admin`
 
-1. Erweitern Sie im Projektbrowser `/etc/map`
-1. Wählen Sie den `http` Knoten
+1. Erweitern Sie im Projektbrowser die `/etc/map`
+1. Wählen Sie die `http` Node
 
    * Knoten **[!UICONTROL erstellen auswählen]**
 
@@ -278,14 +282,14 @@ Erste Schritte
 
 1. Mit neu erstelltem `localhost.4503` Knoten ausgewählt
 
-   * Eigenschaft hinzufügen
+   * Hinzufügen
 
       * **Name** sling:match
       * **Typzeichenfolge**
       * **Wert** localhost.4503/\$
 
          (Muss mit &#39;$&#39; Zeichen enden)
-   * Eigenschaft hinzufügen
+   * Hinzufügen
 
       * **Name** sling:internalRedirect
       * **Typzeichenfolge**
@@ -306,19 +310,19 @@ Erste Schritte
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
 
-Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namespace-Präfix `localhost`handelt.
+Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namensraum-Präfix `localhost`handelt.
 
 ![chlimage_1-298](assets/chlimage_1-298.png)
 
-#### Fehlerbehebung: Fehler bei Umleitung {#troubleshooting-fail-to-redirect}
+#### Fehlerbehebung: Fehler bei der Umleitung {#troubleshooting-fail-to-redirect}
 
-Die Zeichenfolge &#39;**$**&#39; am Ende der `sling:match`Zeichenfolge für reguläre Ausdrücke ist von entscheidender Bedeutung, sodass nur exakt `http://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach der URL server:port existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt es fehl.
+Die **Zeichenfolge &#39;**$ `sling:match`&#39; am Ende des regulären Ausdrucks ist von entscheidender Bedeutung, sodass nur exakt `http://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt sie fehl.
 
 ## Ändern der Community-Site {#modifying-the-community-site}
 
-Nachdem die Site zum ersten Mal erstellt wurde, können Autoren mit dem Symbol [Offene Site](sites-console.md#authoring-site-content) standardmäßige AEM-Authoring-Aktivitäten durchführen.
+Nachdem die Site zum ersten Mal erstellt wurde, können Autoren das Symbol [Site öffnen verwenden, um Aktivitäten zum Erstellen AEM Standarddokuments](sites-console.md#authoring-site-content) durchzuführen.
 
-Darüber hinaus können Administratoren die Eigenschaften der Site, z. B. den Titel, über das Symbol[ &quot;Site ](sites-console.md#modifying-site-properties)bearbeiten&quot;ändern.
+Darüber hinaus können Administratoren die Eigenschaften der Site, z. B. den Titel, über das Symbol [&quot;Site](sites-console.md#modifying-site-properties) bearbeiten&quot;ändern.
 
 Denken Sie nach jeder Änderung daran, die Site zu **speichern** und erneut zu **veröffentlichen** .
 
@@ -342,8 +346,8 @@ Wählen Sie das STRUKTURbedienfeld aus, um einen Katalog hinzuzufügen oder eine
 
 * **URL**: `catalog`
 
-* **Alle Namespaces** auswählen: als Standard beibehalten.
-* Wählen Sie **[!UICONTROL Speichern]**
+* **Alle Namensraum** auswählen: als Standard beibehalten.
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ![chlimage_1-299](assets/chlimage_1-299.png)
 
