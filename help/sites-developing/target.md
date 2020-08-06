@@ -157,7 +157,7 @@ Hinzufügen Sie den folgenden Code unmittelbar vor dem `</body>` end-Tag:
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-Das JSP-Skript dieser Komponente generiert Aufrufe an die JavaScript-API des Targets und implementiert andere erforderliche Konfigurationen. Der HTML-Code, den das Skript generiert, ähnelt dem folgenden Beispiel:
+Das JSP-Skript dieser Komponente generiert Aufrufe an die JavaScript-API der Zielgruppe und implementiert andere erforderliche Konfigurationen. Der HTML-Code, den das Skript generiert, ähnelt dem folgenden Beispiel:
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -317,7 +317,7 @@ Wenn die Komponente in der Kaufbestätigungsseite im vorherigen Beispiel enthalt
 
 ## Grundlagen der Target-Komponente {#understanding-the-target-component}
 
-Die Target-Komponente ermöglicht es Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. (Siehe [Content-Targeting](/help/sites-authoring/content-targeting-touch.md).) Die Target-Komponente befindet sich unter /libs/cq/personalization/components/Zielgruppe.
+Die Target-Komponente ermöglicht es Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. (Siehe [Content-Targeting](/help/sites-authoring/content-targeting-touch.md).) Die Komponente &quot;Zielgruppe&quot;befindet sich unter /libs/cq/personalization/components/Zielgruppe.
 
 Das target.jsp-Skript greift auf die Seiteneigenschaften zu, um die Targeting-Engine zu bestimmen, die für die Komponente verwendet werden soll, und führt dann das entsprechende Skript aus:
 
