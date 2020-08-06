@@ -20,10 +20,10 @@ ht-degree: 66%
 
 # Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
 
-Um Webdaten von Ihren AEM-Seiten in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Service-Konfiguration und ein Adobe Analytics-Framework:
+Um Webdaten von Ihren AEM in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Services-Konfiguration und ein Adobe Analytics-Framework:
 
-* **Adobe Analytics Configuration:** Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
-* **Adobe Analytics Framework:** Eine Gruppe von Zuordnungen zwischen Adobe Analytics Report Suite-Eigenschaften und CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
+* **Adobe Analytics-Konfiguration:** Informationen zu Ihrem Adobe Analytics-Konto. Die Adobe Analytics-Konfiguration ermöglicht es AEM, eine Verbindung mit Adobe Analytics herzustellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
+* **Adobe Analytics-Rahmen:** Eine Gruppe von Zuordnungen zwischen den Eigenschaften der Adobe Analytics Report Suite und den CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
 
 Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework das Tracking für diese Seite und die untergeordneten Elemente dieser Seite durch. Seitenansichten können dann von Adobe Analytics abgerufen und in der Sites-Konsole angezeigt werden.
 
@@ -31,9 +31,9 @@ Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework das
 
 ### Adobe Analytics-Konto {#adobe-analytics-account}
 
-Zur Verfolgung von AEM-Daten in Adobe Analytics benötigen Sie ein gültiges Adobe Marketing Cloud-Adobe Analytics-Konto.
+Zur Verfolgung AEM Daten in Adobe Analytics benötigen Sie ein gültiges Adobe Marketing Cloud Adobe Analytics-Konto.
 
-Das Adobe Analytics-Konto muss:
+Das Adobe Analytics-Konto muss
 
 * Über **Administratorrechte** verfügen
 * Der Benutzergruppe **Webdienstzugriff** zugeordnet sein
@@ -52,7 +52,7 @@ Bevor Sie fortfahren, müssen Sie sich mit Ihren Anmeldeinformationen bei Adobe 
 
 ### Konfigurieren von AEM zur Verwendung Ihrer Adobe Analytics-Datenzentren {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Sie müssen AEM für die Verwendung des Rechenzentrums konfigurieren, das Ihre Adobe Analytics Report Suite hostet. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
+Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Sie müssen AEM konfigurieren, um das Rechenzentrum zu verwenden, in dem Ihre Adobe Analytics Report Suite gehostet wird. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
 
 | Datenzentrum | URL |
 |---|---|
@@ -153,7 +153,7 @@ Beginnen Sie mit dem Öffnen des Bedienfelds. Klicken Sie auf den Pfeil nach unt
 
    * enthält die URL zum Senden von Adobe Analytics-Aufrufen
 
-      * cname - standardmäßig der Name * Firma * * des Adobe Analytics-Kontos
+      * cname - standardmäßig der Adobe Analytics-Kontoname * Firma * *
       * d1 – bezieht sich auf das Datenzentrum, an das die Informationen gesendet werden (entweder d1, d2 oder d3)
       * sc.omtrdc.net - Domänenname
 
