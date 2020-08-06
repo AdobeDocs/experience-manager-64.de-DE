@@ -94,9 +94,9 @@ Sie können die Standardwerte für die Adobe PDF-, Sicherheits- und Dateitypeins
 1. Klicken Sie auf der Seite **[!UICONTROL Adobe PDF-Einstellungen]**, **[!UICONTROL Dateitypeinstellungen]** oder **[!UICONTROL Sicherheitseinstellungen]**  auf **[!UICONTROL Standardeinstellungen festlegen]**.
 1. Wählen Sie Ihre bevorzugten Standardeinstellungen. Mindestens eine der folgenden Einstellungen ist auf der Seite „Standardeinstellungen festlegen“ verfügbar:
 
-   **[!UICONTROL Adobe PDF-Einstellung]**: Die ursprüngliche Standardeinstellung ist Standard (Acrobat 6).
+   **[!UICONTROL Adobe PDF-Einstellung]**: Die ursprüngliche Standardeinstellung ist &quot;Standard (Acrobat 6)&quot;.
 
-   **[!UICONTROL Sicherheitseinstellungen]**: Der ursprüngliche Standard lautet &quot;Keine Sicherheit&quot;(Acrobat 5).
+   **[!UICONTROL Sicherheitseinstellungen]**: Die ursprüngliche Standardeinstellung ist &quot;Keine Sicherheit (Acrobat 5)&quot;.
 
    **[!UICONTROL Dateitypeinstellungen]**: Die ursprüngliche Standardeinstellung ist Standard.
 
@@ -126,7 +126,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Wei
 
 ***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
-**Primäre OCR-Sprache:** Gibt die Sprache an, in der die OCR-Engine die Zeichen identifizieren soll.
+**Primär OCR-Sprache:** Gibt die Sprache an, in der die OCR-Engine die Zeichen identifizieren soll.
 
 **Stil der PDF-Ausgabe:** Bestimmt den zu erstellenden PDF-Typ. Alle Formate wenden OCR und Schriftart- und Seitenerkennung auf die Bilder im Text an und konvertieren sie in normalen Text.
 
@@ -412,7 +412,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Inform
 
 **PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
 
-**Lesezeichen in Adobe PDF** Hinzufügen: Konvertiert Excel-Arbeitsblattnamen in Lesezeichen. Standardmäßig ist diese Option aktiviert.
+**Hinzufügen Lesezeichen auf Adobe PDF**: Konvertiert Excel-Arbeitsblattnamen in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
 **Arbeitsblatt an eine einzelne Seite** anpassen: Reduziert die Größe des Textes, sodass er auf eine einzelne Seite passt.
 
@@ -426,7 +426,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Inform
 
 **Quelldatei an Adobe PDF** anhängen: Wenn diese Option aktiviert ist, wird die ursprüngliche Excel-Tabelle als Anlage in das generierte PDF-Dokument eingefügt.
 
-**Barrierefreiheit aktivieren und Umfließen mit Adobe PDF** mit Tagging aktivieren: Bettet Tags in das PDF-Dokument ein, um Barrierefreiheit und Umfließen zu aktivieren.
+**Barrierefreiheit und Reflow mit Tagged Adobe PDF** aktivieren: Bettet Tags in das PDF-Dokument ein, um Barrierefreiheit und Umfließen zu aktivieren.
 
 **Liste der zu ladenden** Excel-Add-Ins: Standardmäßig werden (aus Sicherheitsgründen) keine Excel-Add-Ins ausgeführt, wenn eine Excel-Datei in PDF konvertiert wird. Wenn Sie zulassen möchten, dass bestimmte Excel-Add-Ins während der Konvertierung ausgeführt werden, stellen Sie eine durch Kommas getrennte Liste mit den Namen der Add-Ins bereit.
 
