@@ -144,6 +144,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
       * den Seitenbereich öffnen
       * die Komponentenregisterkarte (den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser)) auswählen
       * die gewünschte Komponente auf Ihre Seite ziehen
+
       Der Seitenbereich kann mit folgendem Symbol geöffnet (und geschlossen) werden:
 
       ![](do-not-localize/screen_shot_2018-03-21at160738.png)
@@ -153,6 +154,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
       * Öffnen Sie den Editor für Bearbeitung in Kontext durch langes Tippen oder langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, starten Sie mit folgendem Symbol den Vollbildmodus:
+
       ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Die Eigenschaften einer vorhandenen Komponente konfigurieren](/help/sites-authoring/editing-content.md#component-edit-dialog)
@@ -175,12 +177,14 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
    * Der Seite [Anmerkungen hinzufügen:](/help/sites-authoring/annotations.md#annotations)
 
       * Wählen Sie den Modus **Anmerken** (Sprechblasensymbol). Fügen Sie Anmerkungen mit dem Symbol **Anmerkung hinzufügen** (Plussymbol) hinzu. Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
+
       ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Eine Seite prüfen](/help/sites-authoring/editing-content.md#preview-mode) (um ihre Darstellung in der Veröffentlichungsumgebung anzuzeigen)
 
       * Wählen Sie in der Symbolleiste die Option **Vorschau**.
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
+
    >[!NOTE]
    >
    >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
@@ -196,6 +200,7 @@ Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigens
 
       * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
+
    ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
 * Die Seiteneigenschaften werden angezeigt. Sie können nach Bedarf Aktualisierungen vornehmen. Speichern Sie diese anschließend, um sie beizubehalten.
@@ -218,12 +223,14 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
       * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-authoring/publishing-pages.md#manage-publication)).
+
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Beim [Bearbeiten Ihrer Seite](#editing-your-page-content):
 
    1. Öffnen Sie das Menü **Seiteninformationen**.
    1. Wählen Sie **Seite veröffentlichen**.
+
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur auf der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
