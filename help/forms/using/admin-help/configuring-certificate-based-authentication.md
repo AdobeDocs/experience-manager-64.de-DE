@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 94%
 
 ---
 
@@ -55,10 +58,11 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
    Sie können folgende Zeichen in dem Regex verwenden:
 
    * . (alle Zeichen)
-   *  &amp;ast; (0 oder mehr Vorfälle)
+   * &amp;ast; (0 oder mehr Vorfälle)
    * () (Geben Sie die Gruppe in Klammern an)
    * \ (Wird verwendet, um ein Regex-Zeichen durch ein reguläres Zeichen zu ersetzen)
    * $n (Wird verwendet, um auf die n-te Gruppe zu verweisen)
+
    Beispiele regulärer Ausdrücke:
 
    * So extrahieren Sie „Alex Pink“ aus „Alex Pink (Authentifizierung)“
