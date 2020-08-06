@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 63%
 
 ---
 
@@ -198,7 +201,7 @@ Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteu
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zur Konfiguration der Bereichslayouts hinzugefügt.
 
-   ![Das benutzerdefinierte Bedienfeldlayout wird in der Liste](assets/auth-layt.png) des Bedienfeldlayouts des adaptiven Formulars im ![Screenshot des benutzerdefinierten Bedienfeldlayouts](assets/s1.png) angezeigt. In diesem Screenshot wird die Funktion des benutzerdefinierten Layouts ![zum Umschalten dargestellt](assets/s2.png)
+   ![Das benutzerdefinierte Bedienfeldlayout wird in der Liste](assets/auth-layt.png) des Bedienfeldlayouts des adaptiven Formulars im ![Screenshot angezeigt, in der das benutzerdefinierte Bedienfeldlayout](assets/s1.png) verwendet wird. In diesem Screenshot wird die Funktion des benutzerdefinierten Layouts ![zum Umschalten dargestellt](assets/s2.png)
 
 Beispiel-ZIP-Datei für ein benutzerdefiniertes Bedienfeldlayout und ein adaptives Formular, das dieses verwendet.
 
