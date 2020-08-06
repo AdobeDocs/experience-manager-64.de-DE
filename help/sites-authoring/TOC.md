@@ -16,7 +16,7 @@ ht-degree: 89%
 # AEM 6.4 Authoring User Guide {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Grundlegende Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
++ Wichtige Aufgaben, Werkzeuge und Konzepte für AEM Authoring {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
