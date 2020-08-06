@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 71%
 
 ---
 
@@ -51,7 +54,7 @@ Formularersteller können jedem Bedienfeld eines adaptiven Formulars ein Layout 
 
 The Panel layouts are available at `/libs/fd/af/layouts/panel` location.
 
-![](assets/layouts.png) Liste der Bedienfeldlayouts für den Stammbereich eines adaptiven Formulars **** Abbildung: Liste *der Bereichslayouts in adaptiven Formularen*
+![Liste der Bereichslayouts für den Stammbereich eines adaptiven Formulars](assets/layouts.png)**Abbildung:** *Liste von Bereichslayouts in adaptiven Formularen*
 
 ### Reaktionsschnell – alles auf einer Seite ohne Navigation {#responsive-everything-on-one-page-without-navigation-br}
 
@@ -61,11 +64,11 @@ Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]** c
 
 ![Formular mit einem reaktionsfähigem Layout auf einem kleinen Bildschirm](assets/responsive_layout_seen_on_small_screen.png)
 
-**** Abbildung: Formular mit *reaktionsfähigem Layout, wie auf einem kleinen Bildschirm dargestellt*
+**Abbildung:** *Ein Formular mit reaktionsfähigem Layout, wie auf einem kleinen Bildschirm dargestellt*
 
 ![Formular mit einem reaktionsfähigem Layout auf einem großen Bildschirm](assets/responsive_layout_seen_on_large_screen.png)
 
-**** Abbildung: Formular mit *reaktionsfähigem Layout, wie auf einem großen Bildschirm dargestellt*
+**Abbildung:** *Ein Formular mit reaktionsfähigem Layout, wie auf einem großen Bildschirm dargestellt*
 
 ### Assistent – ein Mehrstufenformular, bei dem jeder einzelne Schritt genau angezeigt wird {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
@@ -79,11 +82,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![Ausdruck für das Abschließen von Schritten im Assistentenlayout für ein Mehrstufenformular](assets/layout-sidebar.png)
 
-**** Abbildung: Ausdruck zum *Abschluss von Schritten im Assistentenlayout für ein mehrstufiges Formular*
+**Abbildung:** *Ausdruck zum Abschluss von Schritten im Assistentenlayout für ein mehrstufiges Formular*
 
 ![Ein Formular, das den Assistentenlayout verwendet](assets/wizard-layout.png)
 
-**** Abbildung: Formular *mit Assistenten*
+**Abbildung:** *Ein Formular mit Assistenten*
 
 ### Layout für Akkordeon-Design {#layout-for-accordion-design}
 
@@ -93,7 +96,7 @@ Der Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten 
 
 ![Wiederholbare Bedienfelder mit Akkordeonlayout in adaptiven Formularen](assets/repeatable_panels_using_accordion_layout.png)
 
-**** Abbildung: Mit dem Akkordeon-Layout erstellte *wiederholbare Bedienfelder*
+**Abbildung:** *Mit dem Akkordeon-Layout erstellte wiederholbare Bedienfelder*
 
 ### Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt {#tabbed-layout-tabs-appear-on-the-left}
 
@@ -101,7 +104,7 @@ Using this layout, you can place the `Panel adaptive form` component in a panel 
 
 ![Im Layout mit Registerkarten werden die Registerkarten links angezeigt](assets/tabbed_layout_left.png)
 
-**** Abbildung: Registerkarten *links neben einem Bedienfeld*
+**Abbildung:** *Registerkarten links neben einem Bedienfeld*
 
 ### Layout mit Registerkarten – Registerkarten werden oben angezeigt {#tabbed-layout-tabs-appear-on-the-top}
 
@@ -109,7 +112,7 @@ Using this layout, you can place the `Panel adaptive form` Component in a panel 
 
 ![Layout mit Registerkarten in adaptiven Formen mit Registerkarten am oberen Rand](assets/tabbed_layout_top.png)
 
-**** Abbildung: Über einem Bedienfeld angezeigte *Registerkarten*
+**Abbildung:** *Registerkarten oben in einem Bedienfeld*
 
 ## Layout für Mobilgeräte {#mobile-layouts}
 
@@ -121,7 +124,7 @@ The Mobile Layouts are available at `/libs/fd/af/layouts/mobile/` location. Die 
 
 ![Liste der Layouts für Mobilgeräte in adaptiven Formularen](assets/mobile-navigation.png)
 
-**** Abbildung: *Liste der Layouts für Mobilgeräte in adaptiven Formularen*
+**Abbildung:** *Liste von Layouts für Mobilgeräte in adaptiven Formularen*
 
 When using a mobile layout, the form menu, to access various form panels, is available by tapping ![aem6forms_form_menu](assets/aem6forms_form_menu.png) icon.
 
@@ -131,7 +134,7 @@ Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und
 
 ![Layouts für Mobilgeräte mit Bedienfeldtiteln in den Formularkopfzeilen](assets/mobile_layout_with.png)
 
-**** Abbildung: *Mobile Layouts mit Bedienfeldtiteln in den Formularüberschriften*
+**Abbildung:** *Layouts für Mobilgeräte mit Bedienfeldtiteln in Formularkopfzeilen*
 
 ### Layout ohne Bedienfeldtitel in der Formularkopfzeile {#layout-without-panel-titles-in-the-form-header}
 
@@ -139,7 +142,7 @@ Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und d
 
 ![Layouts für Mobilgeräte ohne Bedienfeldtitel in den Formularkopfzeilen](assets/mobile_layout_without.png)
 
-**** Abbildung: *Mobile Layouts ohne Bedienfeldtitel in den Formularüberschriften*
+**Abbildung:** *Layouts für Mobilgeräte ohne Bedienfeldtitel in den Formularüberschriften*
 
 ## Symbolleistenlayouts {#toolbar-layouts}
 
@@ -147,7 +150,7 @@ Ein Symbolleistenlayout steuert die Positionierung und Anzeige von Aktionsschalt
 
 ![Liste der Symbolleistenlayouts in adaptiven Formularen zur Steuerung des Schaltflächenlayouts](assets/toolbar-layouts.png)
 
-**** Abbildung: Liste *der Symbolleistenlayouts in adaptiven Formularen*
+**Abbildung:** *Eine Liste von Symbolleistenlayouts in adaptiven Formularen*
 
 Toolbar layouts are available at `/libs/fd/af/layouts/toolbar` location. Adaptive Formulare stehen in den folgenden Symbolleistenlayouts standardmäßig zur Verfügung.
 
@@ -159,7 +162,7 @@ Außerdem können Sie mehrere Symbolleisten mit Aktionsschaltflächen hinzufüge
 
 ![Standardansicht für Symbolleiste](assets/toolbar_layout_default.png)
 
-**** Abbildung: Standardansicht *der Symbolleiste*
+**Abbildung:** *Standardmäßige Ansicht für die Symbolleiste*
 
 ### Mobiles festes Layout für Symbolleiste {#mobile-fixed-layout-for-toolbar}
 
@@ -171,5 +174,5 @@ Beim Layout für Mobilgeräte können Sie mithilfe von Symbolen Aktionsschaltfl�
 
 ![Festes Layout für Mobilgeräte für Symbolleiste](assets/toolbar_layout_mobile_fixed.png)
 
-**** Abbildung: Festes Layout *für Mobilgeräte für Symbolleiste*
+**Abbildung:** *Festes Layout für Mobilgeräte für Symbolleiste*
 
