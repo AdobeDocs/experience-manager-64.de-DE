@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 78%
 
 ---
 
@@ -49,7 +52,7 @@ Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](/help
 ContextHub-Speicher verwenden einen der folgenden Beibehaltungsmodi:
 
 * **Lokal:** Verwendet „localStorage“ (HTML5), um Daten beizubehalten. Lokaler Speicher wird im Browser sitzungsübergreifend beibehalten.
-* **** Sitzung: Verwendet HTML5 sessionStorage, um Daten zu erhalten. Sitzungsspeicher wird für die Dauer der Browsersitzung beibehalten und steht für alle Browserfenster zur Verfügung.
+* **Sitzung:** Verwendet HTML5 sessionStorage, um Daten zu erhalten. Sitzungsspeicher wird für die Dauer der Browsersitzung beibehalten und steht für alle Browserfenster zur Verfügung.
 * **Cookie:** Verwendet die native Cookie-Unterstützung des Browsers für die Datenspeicherung. Cookie-Daten werden in HTTP-Anforderungen an den bzw. vom Server gesendet.
 * **Window.name:** Verwendet die Eigenschaft „window.name“, um Daten beizubehalten.
 * **Speicher:** Verwendet ein JavaScript-Objekt, um Daten beizubehalten.
