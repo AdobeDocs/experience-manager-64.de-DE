@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 26%
 
 ---
 
@@ -39,11 +42,17 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Bezeichnung]** für positive Antwort (*Erforderlich*) Der interne Eigenschaftenname für eine positive Antwort.
+* **[!UICONTROL Beschriftung für positive Antwort]**
+(
+*Erforderlich*) Der interne Eigenschaftenname für eine positive Antwort.
 
-* **[!UICONTROL Negative Response Label]**(*Erforderlich*) Der interne Eigenschaftenname für eine negative Antwort.
+* **[!UICONTROL Beschriftung für negative Antwort]**
+(
+*Erforderlich*) Der interne Eigenschaftenname für eine negative Antwort.
 
-* **[!UICONTROL Tally Name]**(*Erforderlich*) Der interne, identifizierbare Eigenschaftenname für diese Instanz einer stimmberechtigten Komponente.
+* **[!UICONTROL Zählername]**
+(
+*Erforderlich*) Der interne, identifizierbare Eigenschaftsname für diese Instanz einer stimmberechtigten Komponente.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
