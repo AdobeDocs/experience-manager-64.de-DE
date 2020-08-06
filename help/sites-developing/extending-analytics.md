@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 53%
 
 ---
 
@@ -58,7 +61,7 @@ Ein Beispiel kann wie folgt aussehen:
 </span>
 ```
 
-At page load, all `data-tracking` attributes will be collected and added to the event store of the ContextHub, where they can be mapped to Adobe Analytics events. Ereignisse, die nicht zugeordnet sind, werden von Adobe Analytics nicht verfolgt. See [Connecting to Adobe Analytics](/help/sites-administering/adobeanalytics.md) for more details about mapping events.
+At page load, all `data-tracking` attributes will be collected and added to the event store of the ContextHub, where they can be mapped to Adobe Analytics events. Ereignis, die nicht zugeordnet sind, werden von Adobe Analytics nicht verfolgt. See [Connecting to Adobe Analytics](/help/sites-administering/adobeanalytics.md) for more details about mapping events.
 
 ### Verfolgen von benutzerspezifischen Ereignissen nach dem Laden einer Seite {#tracking-custom-events-after-page-load}
 
@@ -84,7 +87,7 @@ Beispielsweise verursacht bei folgender Definition das Klicken eines Benutzers a
 </h1>
 ```
 
-## Zugriff auf Werte in ContextHub {#accessing-values-in-the-contexthub}
+## Zugreifen auf Werte in ContextHub {#accessing-values-in-the-contexthub}
 
 Die ContextHub JavaScript-API verfügt über eine `getStore(name)` Funktion, die den angegebenen Store zurückgibt, sofern verfügbar. The store has a `getItem(key)` function that returns the value of the specified key, if available. Mithilfe der `getKeys()` Funktion kann ein Array mit definierten Schlüsseln für den jeweiligen Store abgerufen werden.
 
@@ -92,7 +95,7 @@ Sie können über Werteänderungen in einem Speicher benachrichtigt werden, inde
 
 The best way to be notified of initial availability of the ContextHub is to use the `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` function.
 
-**Zusätzliche Ereignisse für ContextHub:**
+**Zusätzliche Ereignis für ContextHub:**
 
 Alle Speicher bereit:
 
