@@ -4,6 +4,9 @@ description: Verwenden Sie Keywords und Dateieigenschaften, wie z. B. MIME-Typ,
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 68%
 
 ---
 
@@ -31,7 +34,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 | Video-Codec | x264Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 | Video-Bitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
 | Audio-Codec | Libvorbis, Lame MP3, AAC Encoding.Value wird nur in den Metadaten der Videodarstellungen gespeichert. |
-| Audiobitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
+| Audiobitrate       | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
 
 1. Tippen Sie auf der **[!UICONTROL Experience Manager]**-Seite in der linken Seitenleiste auf **[!UICONTROL Assets]**.
 
@@ -43,7 +46,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
    * Suche mit Suchbegriffen
 
-      Geben Sie im Feld Suchbegriffe eingeben die Eingabe ein und drücken Sie die Eingabetaste.
+      Geben Sie im Feld Suchbegriffe eingeben den Beginn ein und drücken Sie die Eingabetaste.
 
       Die aktuelle Ansicht wird anhand der eingegebenen Keywords gefiltert. Dateien werden als Suchergebnisse angezeigt, wenn die Keywords mit dem Namen, den Metadaten-Tags oder anderen Eigenschaften der Datei übereinstimmen.
 
@@ -53,6 +56,6 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
    * Suche mit Suchbegriffen und Eigenschaften
 
-      Geben Sie einen Suchbegriff ein, erweitern Sie jedoch, anstatt die Eingabetaste zu drücken, eine Video- oder Audioeigenschaftsliste und legen Sie dann die gewünschten Werte fest.
+      Geben Sie einen Suchbegriff ein, erweitern Sie die Liste der Video- oder Audioeigenschaft und legen Sie dann die gewünschten Werte fest, anstatt die Eingabetaste zu drücken.
 
 1. (Optional) Tippen Sie unten auf der Seite auf **[!UICONTROL Intelligente Sammlung speichern]** und geben Sie einen Namen für die Suche ein. Aktivieren Sie **[!UICONTROL Öffentlich]**, wenn die gespeicherte Suche auch für andere Benutzer des Adobe Experience Manager-Kontos verfügbar sein soll. Deaktivieren Sie diese Option, wenn die Suche nur für Sie verfügbar sein soll, wenn Sie beim Konto angemeldet sind. Tippen Sie auf **[!UICONTROL Speichern]**.
