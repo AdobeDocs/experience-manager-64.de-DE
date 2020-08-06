@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1595'
+ht-degree: 83%
 
 ---
 
@@ -56,25 +59,25 @@ Um den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server zu verwenden, wähle
 
 Wenn Sie einen anderen LDAP-Server für die Authentifizierung verwenden möchten, wählen Sie LDAP als Authentifizierungsanbieter aus und aktivieren Sie das Kontrollkästchen „Benutzerdefinierte LDAP-Authentifizierung“. Es werden die folgenden Konfigurationseinstellungen angezeigt.
 
-**** Server: (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Der vollständig qualifizierte Domänenname eines Computers namens x im Netzwerk corp.example.com lautet x.corp.example.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
+**Server:** (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Der vollständig qualifizierte Domänenname eines Computers namens x im Netzwerk corp.example.com lautet x.corp.example.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
 
-**** Anschluss: (Obligatorisch) Der Anschluss, den der Ordnerserver verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
+**Anschluss:** (Obligatorisch) Der Anschluss, den der Ordnerserver verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
 
-**** SSL: (Obligatorisch) Gibt an, ob der Ordnerserver beim Senden von Daten über das Netzwerk SSL verwendet. Die Standardeinstellung ist „Nein“. Wenn Sie „Ja“ wählen, muss das entsprechende LDAP-Serverzertifikat von der Java™-Umgebung (Java Runtime Environment) des Anwendungsservers als vertrauenswürdig betrachtet werden.
+**SSL:** (Obligatorisch) Gibt an, ob der Ordnerserver beim Senden von Daten über das Netzwerk SSL verwendet. Die Standardeinstellung ist „Nein“. Wenn Sie „Ja“ wählen, muss das entsprechende LDAP-Serverzertifikat von der Java™-Umgebung (Java Runtime Environment) des Anwendungsservers als vertrauenswürdig betrachtet werden.
 
 **Bindung** (Obligatorisch) Gibt an, wie auf den Ordner zugegriffen wird.
 
-**** Anonym: Es ist kein Benutzername oder Kennwort erforderlich.
+**Anonym:** Es ist kein Benutzername oder Kennwort erforderlich.
 
-**** Benutzer: Authentifizierung ist erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten  Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld „Kennwort“ das zugehörige Kennwort an. Wenn Sie „Benutzer“ als Bindungsoption auswählen, sind diese Einstellungen obligatorisch.
+**Benutzer:** Authentifizierung ist erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten  Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld „Kennwort“ das zugehörige Kennwort an. Wenn Sie „Benutzer“ als Bindungsoption auswählen, sind diese Einstellungen obligatorisch.
 
-**** Basis-DNs abrufen: (Nicht obligatorisch) Ruft die Basis-DNs ab und zeigt sie in der Dropdownliste an. Diese Einstellung ist sinnvoll, wenn mehrere Basis-DNs vorhanden sind und Sie einen Wert auswählen müssen.
+**Basis-DNs abrufen:** (Nicht obligatorisch) Ruft die Basis-DNs ab und zeigt sie in der Dropdown-Liste an. Diese Einstellung ist sinnvoll, wenn mehrere Basis-DNs vorhanden sind und Sie einen Wert auswählen müssen.
 
-**** Basis-DN: (Obligatorisch) Wird als Ausgangspunkt für die Synchronisierung von Benutzern und Gruppen aus der LDAP-Hierarchie verwendet. Es empfiehlt sich, einen Basis-DN auf der niedrigsten Hierarchieebene anzugeben, die sämtliche Benutzer und Gruppen enthält, die für Dienste synchronisiert werden müssen. Diese Einstellung enthält nicht den definierten Namen (DN) des Benutzers. Um einen bestimmten Benutzer zu synchronisieren, wählen Sie die Einstellung „Suchfilter“.
+**Basis-DN:** (Obligatorisch) Wird als Ausgangspunkt für die Synchronisierung von Benutzern und Gruppen aus der LDAP-Hierarchie verwendet. Es empfiehlt sich, einen Basis-DN auf der niedrigsten Hierarchieebene anzugeben, die sämtliche Benutzer und Gruppen enthält, die für Dienste synchronisiert werden müssen. Diese Einstellung enthält nicht den definierten Namen (DN) des Benutzers. Um einen bestimmten Benutzer zu synchronisieren, wählen Sie die Einstellung „Suchfilter“.
 
-**** Seite mit folgenden Elementen füllen: (Nicht obligatorisch) Wenn diese Option aktiviert ist, werden Attribute auf den Seiten &quot;Benutzer- und Gruppeneinstellungen&quot;mit entsprechenden LDAP-Standardwerten gefüllt.
+**Seite mit folgenden Elementen füllen:** (Nicht obligatorisch) Wenn diese Option aktiviert ist, werden Attribute auf den Seiten &quot;Benutzer- und Gruppeneinstellungen&quot;mit entsprechenden LDAP-Standardwerten gefüllt.
 
-**** Suchfilter: (Obligatorisch) Der Suchfilter, der verwendet wird, um den Datensatz zu finden, der mit dem Benutzer verknüpft ist. Siehe Syntax für Suchfilter.
+**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet wird, um den Datensatz zu finden, der mit dem Benutzer verknüpft ist. Siehe Syntax für Suchfilter.
 
 ### Kerberos-Einstellungen {#kerberos-settings}
 
@@ -82,9 +85,9 @@ Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybriddomäne konfig
 
 **DNS-IP:** Die DNS-IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. Unter Windows können Sie diese IP-Adresse bestimmen, indem Sie ipconfig /all in die Befehlszeile eingeben.
 
-**** KDC-Host: Vollqualifizierter Hostname oder IP-Adresse des Active Directory-Servers, der für die Authentifizierung verwendet wird.
+**KDC-Host:** Vollqualifizierter Hostname oder IP-Adresse des Active Directory-Servers, der für die Authentifizierung verwendet wird.
 
-**** Dienstbenutzer: Wenn Sie Active Directory 2003 verwenden, ist dieser Wert die Zuordnung, die für den Dienstprinzipal im Formular erstellt wurde `HTTP/<server name>`. Wenn Sie Active Directory 2008 verwenden, ist dieser Wert die Anmelde-ID des Dienstprinzipals. Nehmen wir an, der Dienstprinzipal heißt um spnego die Benutzer-ID heißt spnegodemo und die Zuordnung lautet HTTP/example.corp.yourcompany.com. Bei Active Directory 2003 legen Sie Dienstbenutzer auf HTTP/example.corp.yourcompany.com fest. Bei Active Directory 2008 legen Sie Dienstbenutzer auf spnegodemo fest. (Siehe Einmalige Anmeldung über SPNEGO aktivieren.)
+**Dienstbenutzer:** Wenn Sie Active Directory 2003 verwenden, ist dieser Wert die Zuordnung, die für den Dienstprinzipal im Formular erstellt wurde `HTTP/<server name>`. Wenn Sie Active Directory 2008 verwenden, ist dieser Wert die Anmelde-ID des Dienstprinzipals. Nehmen wir an, der Dienstprinzipal heißt um spnego die Benutzer-ID heißt spnegodemo und die Zuordnung lautet HTTP/example.corp.yourcompany.com. Bei Active Directory 2003 legen Sie Dienstbenutzer auf HTTP/example.corp.yourcompany.com fest. Bei Active Directory 2008 legen Sie Dienstbenutzer auf spnegodemo fest. (Siehe Einmalige Anmeldung über SPNEGO aktivieren.)
 
 **Dienstbereich:** Der Domänenname für Active Directory
 
@@ -96,13 +99,13 @@ Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybriddomäne konfig
 
 Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybriddomäne konfigurieren und die SAML-Authentifizierung wählen, sind die folgenden Einstellungen verfügbar. Informationen zu weiteren SAML-Einstellungen finden Sie unter [SAML-Dienstanbietereinstellungen konfigurieren](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
-**** Wählen Sie eine zu importierende SAML-Identitätsanbieter-Metadatendatei aus: Klicken Sie auf Durchsuchen, um eine SAML-Identitäts-Provider-Metadatendatei auszuwählen, die von Ihrem IDP generiert wurde, und klicken Sie dann auf Importieren. Die Details des Identitätsanbieters werden angezeigt.
+**Wählen Sie eine zu importierende SAML-Identitäts-Provider-Metadatendatei aus:** Klicken Sie auf Durchsuchen, um eine SAML-Identitäts-Provider-Metadatendatei auszuwählen, die von Ihrem IDP generiert wurde, und klicken Sie dann auf Importieren. Die Details des Identitätsanbieters werden angezeigt.
 
-**** Titel: Alias zur URL, die von der EntityID angegeben wird. Der Titel wird ebenfalls auf der Anmeldeseite für Unternehmen und lokale Benutzer angezeigt.
+**Titel:** Alias zur URL, die von der EntityID angegeben wird. Der Titel wird ebenfalls auf der Anmeldeseite für Unternehmen und lokale Benutzer angezeigt.
 
-**** Identitäts-Provider unterstützt Client Basic-Authentifizierung: Client Basic-Authentifizierung wird verwendet, wenn der IDP ein SAML-Artefaktauflösungsprofil verwendet. In diesem Profil stellt User Management eine Verbindung zurück zu einem Webdienst her, der beim IDP ausgeführt wird, um die aktuelle SAML-Bestätigung abzurufen. Der IDP erfordert möglicherweise eine Authentifizierung. Wenn der IDP eine Authentifizierung erfordert, wählen Sie diese Option aus und geben Sie in den entsprechenden Feldern einen Benutzernamen und ein Kennwort an.
+**Identitäts-Provider unterstützt Client Basic-Authentifizierung:** Client Basic-Authentifizierung wird verwendet, wenn der IDP ein SAML-Artefaktauflösungs-Profil verwendet. In diesem Profil stellt User Management eine Verbindung zurück zu einem Webdienst her, der beim IDP ausgeführt wird, um die aktuelle SAML-Bestätigung abzurufen. Der IDP erfordert möglicherweise eine Authentifizierung. Wenn der IDP eine Authentifizierung erfordert, wählen Sie diese Option aus und geben Sie in den entsprechenden Feldern einen Benutzernamen und ein Kennwort an.
 
-**** Benutzerdefinierte Eigenschaften: Hiermit können Sie zusätzliche Eigenschaften angeben. Die zusätzlichen Eigenschaften lauten Name=Wert, Paare durch neue Zeilen getrennt.
+**Benutzerdefinierte Eigenschaften:** Hiermit können Sie zusätzliche Eigenschaften angeben. Die zusätzlichen Eigenschaften lauten Name=Wert, Paare durch neue Zeilen getrennt.
 
 Die folgenden benutzerdefinierten Eigenschaften sind erforderlich, wenn Artefaktbindung verwendet wird.
 
