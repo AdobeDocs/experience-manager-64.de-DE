@@ -1,8 +1,8 @@
 ---
 title: Härtung Ihrer AEM Forms on JEE-Umgebung
 seo-title: Härtung Ihrer AEM Forms on JEE-Umgebung
-description: Erfahren Sie mehr über die verschiedenen Sicherheitseinstellungen, um die Sicherheit von AEM Forms auf JEE zu erhöhen, die in einem firmeninternen Intranet ausgeführt werden.
-seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitseinstellungen, um die Sicherheit von AEM Forms auf JEE zu erhöhen, die in einem firmeninternen Intranet ausgeführt werden.
+description: Erfahren Sie mehr über die verschiedenen Sicherheitseinstellungen, um die Sicherheit von AEM Forms on JEE in einem Corporate Intranet zu verbessern.
+seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitseinstellungen, um die Sicherheit von AEM Forms on JEE in einem Corporate Intranet zu verbessern.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -17,11 +17,11 @@ ht-degree: 73%
 ---
 
 
-# Härtung Ihrer AEM Forms auf der JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
+# Härtung Ihrer AEM Forms auf JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
 
-Erfahren Sie mehr über die verschiedenen Sicherheitseinstellungen, um die Sicherheit von AEM Forms auf JEE zu erhöhen, die in einem firmeninternen Intranet ausgeführt werden.
+Erfahren Sie mehr über die verschiedenen Sicherheitseinstellungen, um die Sicherheit von AEM Forms on JEE in einem Corporate Intranet zu verbessern.
 
-In diesem Abschnitt werden empfohlene Vorgehensweisen und Richtlinien für das Sichern von Servern beschrieben, auf denen AEM Forms on JEE ausgeführt wird. Dieses Dokument stellt keine umfassende Anleitung zum Härten (Absichern) des Hosts für das Betriebssystem und die Anwendungsserver dar. Stattdessen werden in diesem Artikel eine Reihe von Einstellungen für die Sicherheitshärtung beschrieben, die Sie implementieren sollten, um die Sicherheit von AEM Forms auf JEE zu verbessern, die in einem firmeninternen Intranet ausgeführt werden. Um sicherzustellen, dass die AEM Forms on JEE-Anwendungsserver sicher bleiben, sollten Sie jedoch auch Verfahren für die Sicherheitsüberwachung, Problemerkennung und -behandlung implementieren.
+In diesem Abschnitt werden empfohlene Vorgehensweisen und Richtlinien für das Sichern von Servern beschrieben, auf denen AEM Forms on JEE ausgeführt wird. Dieses Dokument stellt keine umfassende Anleitung zum Härten (Absichern) des Hosts für das Betriebssystem und die Anwendungsserver dar. Stattdessen werden in diesem Artikel eine Reihe von Einstellungen für die Sicherheitshärtung beschrieben, die Sie implementieren sollten, um die Sicherheit von AEM Forms on JEE zu verbessern, die in einem firmeninternen Intranet ausgeführt wird. Um sicherzustellen, dass die AEM Forms on JEE-Anwendungsserver sicher bleiben, sollten Sie jedoch auch Verfahren für die Sicherheitsüberwachung, Problemerkennung und -behandlung implementieren.
 
 In diesem Artikel werden Härtungsverfahren beschrieben, die in den folgenden Phasen des Installations- und Konfigurationszyklus durchgeführt werden sollten:
 
@@ -41,7 +41,7 @@ Sie sollten AEM Forms on JEE nicht unter Verwendung einer Root Shell installiere
 
 **Installation und Konfiguration unter Windows**
 
-Sie müssen die Installation unter Windows als Administrator durchführen, wenn Sie AEM Forms on JEE mit der Turnkey-Methode oder PDF Generator installieren. Wenn Sie PDF Generator unter Windows mit der Unterstützung nativer Anwendungen installieren, müssen Sie die Installation außerdem als der Windows-Benutzer durchführen, der Microsoft Office installiert hat. Weitere Informationen zu Installationsberechtigungen finden Sie im Dokument* Installieren und Bereitstellen von AEM Forms auf JEE* für Ihren Anwendungsserver.
+Sie müssen die Installation unter Windows als Administrator durchführen, wenn Sie AEM Forms on JEE mit der Turnkey-Methode oder PDF Generator installieren. Wenn Sie PDF Generator unter Windows mit der Unterstützung nativer Anwendungen installieren, müssen Sie die Installation außerdem als der Windows-Benutzer durchführen, der Microsoft Office installiert hat. Weitere Informationen zu Installationsberechtigungen finden Sie im Dokument* Installieren und Bereitstellen von AEM Forms on JEE* für Ihren Anwendungsserver.
 
 ### Sicherheit der Netzwerkschicht {#network-layer-security}
 
@@ -63,7 +63,7 @@ In der folgenden Tabelle werden gängige Prozesse beschrieben, die Schwachstelle
   </tr> 
   <tr> 
    <td><p>Private IP-Adressen</p> </td> 
-   <td><p>Verwenden Sie die NAT (Network Address Translation) mit RFC 1918 privaten IP-Adressen auf dem Anwendungsserver der AEM Forms. Weisen Sie private IP-Adressen (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) zu, damit es für einen Angreifer schwieriger wird, Traffic über das Internet zu und von einem internen NAT'd-Host zu leiten.</p> </td> 
+   <td><p>Verwenden Sie NAT (Network Address Translation) mit privaten IP-Adressen nach RFC 1918 auf dem AEM Forms-Anwendungsserver. Weisen Sie private IP-Adressen (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) zu, damit es für einen Angreifer schwieriger wird, Traffic über das Internet zu und von einem internen NAT'd-Host zu leiten.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Firewalls</p> </td> 
@@ -173,6 +173,7 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
 
    * Wählen Sie **Benutzer kann Kennwort nicht ändern aus**.
    * Stellen Sie sicher, dass auf der Registerkarte **Mitglied von** die Gruppe **Benutzer** aufgelistet wird.
+
    >[!NOTE]
    >
    >Sie können diesen Wert für PDF Generator nicht ändern.
@@ -446,7 +447,7 @@ Nachdem Sie AEM Forms on JEE erfolgreich installiert haben, müssen Sie die Sich
 
 Sie können einen *Reverse-Proxy* verwenden, um sicherzustellen, dass eine Gruppe von URLs für AEM Forms on JEE-Webanwendungen sowohl für externe als auch interne Benutzer verfügbar ist. Diese Konfiguration bietet mehr Sicherheit als die Erlaubnis für Benutzer, eine direkte Verbindung zu dem Anwendungsserver herzustellen, auf dem AEM Forms on JEE ausgeführt wird. Der Reverse-Proxy führt alle HTTP-Anfragen für den Anwendungsserver durch, auf dem AEM Forms on JEE läuft. Benutzer haben nur Netzwerkzugriff auf den Reverse-Proxy und können nur URL-Verbindungen aufbauen, die der Reverse-Proxy unterstützt.
 
-**AEM Forms auf JEE-Stamm-URLs zur Verwendung mit dem Reverse-Proxy-Server**
+**Stammordner-URLs von AEM Forms on JEE zur Verwendung mit dem Reverse-Proxy-Server**
 
 Die folgende Tabelle enthält Anwendungsstammordner-URLs für jede AEM Forms on JEE-Webanwendung. Sie sollten den Reverse-Proxy so konfigurieren, dass er nur URLs für Webanwendungsfunktionalität offenlegt, die Endbenutzern zur Verfügung gestellt werden soll.
 
@@ -640,7 +641,7 @@ Die folgenden Merkmale sind für CSRF-Angriffe charakteristisch:
 * Bringen den Browser des Benutzers dazu, HTTP-Anforderungen an eine Ziel-Site zu senden
 * Verwenden HTTP-Anforderungen mit Nebeneffekten
 
-AEM Forms JEE verwendet die Funktion &quot;Werber-Filter&quot;, um CSRF-Angriffe zu blockieren. Die folgenden Begriffe werden in diesem Abschnitt verwendet, um den Werber-Filtermechanismus zu beschreiben:
+AEM Forms on JEE verwendet die Funktion &quot;Werber-Filter&quot;, um CSRF-Angriffe zu blockieren. Die folgenden Begriffe werden in diesem Abschnitt verwendet, um den Werber-Filtermechanismus zu beschreiben:
 
 * **Zulässiger Werber:** Ein Werber ist die Adresse der Quellseite, die eine Anforderung an den Server sendet. Bei JSP-Seiten oder -Formularen ist der Werber normalerweise die vorherige Seite im Browserverlauf. Werber für Bilder sind normalerweise die Seiten, auf denen die Bilder angezeigt werden. Sie können den Werber identifizieren, der Zugriff auf Ihre Serverressourcen hat, indem Sie ihn zur Liste &quot;Zulässige Werber&quot;hinzufügen.
 * **Zulässige Werber-Ausnahmen:** Möglicherweise möchten Sie den Zugriffsbereich für einen bestimmten Werber in Ihrer Liste für zulässige Werber einschränken. Um diese Einschränkung zu erzwingen, können Sie der Liste &quot;Zulässige Werber - Ausnahmen&quot;einzelne Pfade dieses Werbers hinzufügen. Anforderungen, die von Pfaden in der Liste &quot;Zulässige Werber - Ausnahmen&quot;stammen, können keine Ressourcen auf dem Formularserver aufrufen. Sie können Ausnahmen für zulässige Werber für eine bestimmte Anwendung definieren und eine globale Liste von Ausnahmen verwenden, die für alle Anwendungen gelten.
@@ -656,10 +657,10 @@ Der Werber-Filterprozess kann wie folgt beschrieben werden:
    1. Bei POST prüft der Formularserver den Werber-Header.
    1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* ist in der Datei *web.xml* für Ihre Anwendung festgelegt.
 
-1. Der Formularserver überprüft, ob der angeforderte URI auf die Zulassungsliste gesetzt ist:
+1. Der Formularserver prüft, ob der angeforderte URI auf die Zulassungsliste gesetzt ist:
 
    1. Wenn der URI auf die Zulassungsliste gesetzt ist, akzeptiert der Server die Anforderung.
-   1. Wenn der angeforderte URI nicht auf die Zulassungsliste gesetzt ist, ruft der Server den Werber der Anforderung ab.
+   1. Wenn der angeforderte URI nicht auf die Zulassungsliste gesetzt wird, ruft der Server den Werber der Anforderung ab.
 
 1. Wenn die Anforderung einen Werber enthält, prüft der Server, ob es sich um einen zulässigen Werber handelt. Ist dies zulässig, sucht der Server nach einer Werber-Ausnahme:
 
@@ -673,9 +674,9 @@ Der Werber-Filterprozess kann wie folgt beschrieben werden:
 
 ### Verwalten des Werber-Filters {#managing-referer-filtering}
 
-AEM Forms on JEE bietet einen Werber-Filter, um Werber anzugeben, denen der Zugriff auf Serverressourcen erlaubt ist. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Wenn die Anschlussnummer für den Eintrag für einen zulässigen Werber auf 0 eingestellt ist, lassen AEM Forms auf JEE alle Anforderungen mit Werber von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Werber-Filterung ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Werber&quot;gelöscht werden.
+AEM Forms on JEE bietet einen Werber-Filter, um Werber anzugeben, denen der Zugriff auf Serverressourcen erlaubt ist. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Wenn die Anschlussnummer für den Eintrag für einen zulässigen Werber auf 0 eingestellt ist, lässt AEM Forms on JEE alle Anforderungen mit Werber von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Werber-Filterung ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Werber&quot;gelöscht werden.
 
-Wenn Sie Dokument Services zum ersten Mal installieren, wird die Liste &quot;Zulässiger Werber&quot;mit der Adresse des Servers aktualisiert, auf dem Dokument Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste für zulässige Werber hinzugefügt werden, werden vom Host-Betriebssystem zurückgegeben. Ein Server mit einer IP-Adresse von 10.40.54.187 enthält beispielsweise die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben werden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domänennamen haben), wird die zulassungsliste &quot;&quot;nicht aktualisiert. Ändern Sie die Liste für zulässige Werber entsprechend Ihrer geschäftlichen Umgebung. Stellen Sie den Formularserver nicht mit der standardmäßigen Liste für zulässigen Werber in der Produktions-Umgebung bereit. Nachdem Sie einen der zulässigen Werber, Werber-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
+Wenn Sie Dokument Services zum ersten Mal installieren, wird die Liste &quot;Zulässiger Werber&quot;mit der Adresse des Servers aktualisiert, auf dem Dokument Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste für zulässige Werber hinzugefügt werden, werden vom Host-Betriebssystem zurückgegeben. Ein Server mit einer IP-Adresse von 10.40.54.187 enthält beispielsweise die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle vom Host-Betriebssystem zurückgegebenen unqualifizierten Namen (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domänennamen haben) wird die Zulassungsliste nicht aktualisiert. Ändern Sie die Liste für zulässige Werber entsprechend Ihrer geschäftlichen Umgebung. Stellen Sie den Formularserver nicht mit der standardmäßigen Liste für zulässigen Werber in der Produktions-Umgebung bereit. Nachdem Sie einen der zulässigen Werber, Werber-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
 
 **Verwalten der Liste für zulässige Werber**
 
@@ -694,7 +695,7 @@ AEM Forms on JEE stellt APIs zur Verwaltung der Liste &quot;Zulässige Werber - 
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Weitere Informationen zu den APIs finden Sie in der* AEM Forms auf JEE API-Referenz*.
+Weitere Informationen zu den APIs finden Sie in der* AEM Forms on JEE API Reference*.
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). You can also append a regular expression to the end of a relative URI, e.g. `/sample/(.)*`.
 
@@ -716,7 +717,7 @@ Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup scri
 
 Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit AEM Forms on JEE speziell für Ihre Geschäftsanforderungen erstellt. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
 
-**CSRF_CHECK_GETS** steuert die Überprüfung des Werbers bei GET-Anforderungen. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
+**CSRF_CHECK_GETS** steuert die Überprüfung des Werbers bei GET. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS** ist die ID der Liste &quot;Zulässige Werber - Ausnahmen&quot;. Der Werber-Filter verhindert, dass Anforderungen, die von Werbern in der durch die Listen-ID identifizierten Liste stammen, Ressourcen auf dem Formularserver aufrufen.
 
@@ -918,7 +919,7 @@ In diesem Abschnitt werden die Standardanschlüsse (und alternativen Konfigurati
 
 **WebSphere -Anschlüsse**
 
-Informationen zu WebSphere-Anschlüssen, die für AEM Forms auf JEE erforderlich sind, finden Sie unter Port number setting in WebSphere Application Server UI.
+Informationen zu WebSphere-Anschlüssen, die für AEM Forms on JEE erforderlich sind, finden Sie unter Port number setting in WebSphere Application Server UI.
 
 ### Konfigurieren von SSL {#configuring-ssl}
 
@@ -991,7 +992,7 @@ Wenn Sie überwachte Ordner verwenden, um Dokumente mit einem Formularserverdien
 
 ## JBoss-spezifische Sicherheitsempfehlungen {#jboss-specific-security-recommendations}
 
-Dieser Abschnitt enthält Empfehlungen zur Anwendungsserverkonfiguration, die spezifisch für JBoss 7.0.6 sind, wenn AEM Forms unter JEE ausgeführt werden.
+Dieser Abschnitt enthält spezifische Empfehlungen zur Anwendungsserverkonfiguration für JBoss 7.0.6, wenn es zum Ausführen von AEM Forms on JEE verwendet wird.
 
 ### JBoss Management Console und JMX-Konsole deaktivieren {#disable-jboss-management-console-and-jmx-console}
 
