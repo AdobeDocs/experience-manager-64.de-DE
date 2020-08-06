@@ -10,6 +10,9 @@ discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 85%
 
 ---
 
@@ -49,7 +52,7 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
    [Datensatzdokument-Einstellungen](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Passen Sie die Branding-Informationen des Datensatzdokuments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) an und stellen Sie sicher, dass das Gebietsschema des Browsers auf die Sprache eingestellt ist, in der Sie das adaptive Formular mithilfe der Maschinensprache lokalisiert haben. Das Browsergebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
-1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Das Dokument aus Datensatz-PDF wird in Ihrem Browser auf einer neuen Registerkarte generiert und geöffnet.
+1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Das Dokument des PDF-Datensatzes wird in einem neuen Register in Ihrem Browser generiert und geöffnet.
 
 ## Lokalisieren von adaptiven Formulars und seines DoR mithilfe professioneller Übersetzung {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
@@ -74,6 +77,7 @@ Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines D
 >[!NOTE]
 >
 >* Komponenten für adaptive Formulare unterstützen keine RTL-Sprachen (Right to Left). Zum Beispiel Hebräisch.
+
 >
 
 
