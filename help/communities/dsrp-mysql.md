@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 5%
 
 ---
 
@@ -29,13 +32,13 @@ Diese Anweisungen beschreiben, wie eine Verbindung zum MySQL-Server hergestellt 
 
    * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server Version 5.6 oder höher
 
-      * Kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
+      * Kann auf demselben Host ausgeführt werden wie AEM oder remote ausgeführt werden
    * [MySQL-Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 
 ## MySQL installieren {#installing-mysql}
 
-[MySQL](https://dev.mysql.com/downloads/mysql/) sollte gemäß den Anweisungen für das Zielbetriebssystem heruntergeladen und installiert werden.
+[MySQL](https://dev.mysql.com/downloads/mysql/) sollte gemäß den Anweisungen für das Zielgruppe OS heruntergeladen und installiert werden.
 
 ### Tabellennamen in Kleinbuchstaben {#lower-case-table-names}
 
@@ -71,7 +74,7 @@ Um eine bessere mehrsprachige Unterstützung zu bieten, muss der UTF8-Zeichensat
 
 MySQL Workbench bietet eine Benutzeroberfläche zum Ausführen von SQL-Skripten, die das Schema und die Ausgangsdaten installieren.
 
-MySQL Workbench sollte gemäß den Anweisungen für das Zielbetriebssystem heruntergeladen und installiert werden.
+MySQL Workbench sollte gemäß den Anweisungen für das Zielgruppe OS heruntergeladen und installiert werden.
 
 ## Communities-Verbindung {#communities-connection}
 
@@ -84,14 +87,14 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden, sofern sie nicht ber
 1. Wählen Sie das `+` Symbol rechts neben `MySQL Connections`.
 1. Geben Sie im Dialogfeld `Setup New Connection`die für Ihre Plattform geeigneten Werte ein
 
-   Zu Demonstrationszwecken mit dem Autor AEM-Instanz und MySQL auf demselben Server:
+   Zu Demonstrationszwecken mit der Autorinstanz AEM MySQL auf demselben Server:
 
    * Verbindungsname: `Communities`
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
    * Kennwort: `no password by default`
-   * Standardschema: `leave blank`
+   * Standard-Schema: `leave blank`
 
 1. Wählen Sie `Test Connection` zur Überprüfung der Verbindung mit dem ausgeführten MySQL-Dienst
 
@@ -112,23 +115,23 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden, sofern sie nicht ber
 
 ### SQL-Skript abrufen {#obtain-the-sql-script}
 
-Das SQL-Skript wird vom AEM-Repository abgerufen:
+Das SQL-Skript wird aus dem AEM Repository abgerufen:
 
-1. Zu CRXDE Lite navigieren
+1. Zur CRXDE Lite navigieren
 
    * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/schema
+1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/Schema
 1. Download `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Eine Methode zum Herunterladen des Schemas ist
+Eine Möglichkeit zum Herunterladen des Schemas besteht darin,
 
 * Wählen Sie den `jcr:content`Knoten für die SQL-Datei aus
-* Beachten Sie, dass der Wert für die `jcr:data`Eigenschaft ein Ansichtslink ist
+* Beachten Sie, dass der Wert für die `jcr:data`Eigenschaft ein Link zur Ansicht ist
 
-* Link &quot;Ansicht&quot;auswählen, um die Daten in einer lokalen Datei zu speichern
+* Wählen Sie den Link &quot;Ansicht&quot;, um die Daten in einer lokalen Datei zu speichern
 
 ### DSRP-Datenbank erstellen {#create-the-dsrp-database}
 
@@ -155,7 +158,7 @@ In der folgenden Abbildung steht die `init_schema.sql` Datei zur Ausführung ber
 
 #### Aktualisieren {#refresh}
 
-Nach Ausführung des Skripts muss der `SCHEMAS`Abschnitt des Skripts aktualisiert werden, `Navigator` damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
+Nachdem das Skript ausgeführt wurde, muss der `SCHEMAS`Abschnitt des Skripts aktualisiert werden, `Navigator` damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -163,11 +166,11 @@ Nach Ausführung des Skripts muss der `SCHEMAS`Abschnitt des Skripts aktualisier
 
 Der JDBC Connections Pool **von OSGi für** Day Commons konfiguriert den MySQL JDBC-Treiber.
 
-Alle Veröffentlichungs- und Autoreninstanzen von AEM sollten auf denselben MySQL-Server verweisen.
+Alle Veröffentlichungs- und Autoreninstanzen sollten auf denselben MySQL-Server verweisen AEM.
 
 Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, muss der Hostname des Servers anstelle von &quot;localhost&quot;im JDBC-Connector angegeben werden.
 
-* Auf jeder Autoren- und Veröffentlichungsinstanz von AEM
+* Auf jeder Instanz im Autorenmodus und AEM veröffentlichen
 * Mit Administratorrechten angemeldet
 * Access the [web console](../../help/sites-deploying/configuring-osgi.md)
 
@@ -183,9 +186,9 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
    * **[!UICONTROL JDBC-Treiberklasse]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL JDBC-Verbindungs-URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Server anstelle von localhost angeben, wenn der MySQL-Server nicht mit dem AEM-Server &quot;this&quot;identisch ist
+      Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht identisch mit dem &quot;this&quot;-AEM ist
 
-      *Communities* ist der standardmäßige Datenbankname (Schema)
+      *Communities* ist der Standarddateiname (Schema)
 
    * **[!UICONTROL Benutzername]**: `root`
 
@@ -198,5 +201,5 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
       andernfalls geben Sie das konfigurierte Kennwort für den MySQL-Benutzernamen ein
    * **[!UICONTROL Name]** der Datenquelle: Name, der für die [MySQL-Verbindung](#new-connection-settings)eingegeben wurde, z. B. &quot;Communities&quot;
 
-* Wählen Sie **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
