@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3429'
+ht-degree: 86%
 
 ---
 
@@ -43,8 +46,8 @@ Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Überse
 
 AEM erkennt, ob ein Übersetzungsprojekt zur Erstübersetzung des Inhalts oder zur Aktualisierung von bereits übersetzten Sprachkopien erstellt werden soll. Wenn Sie ein Übersetzungsprojekt für eine Seite erstellen und die Sprachkopien angeben, für die Sie eine Übersetzung benötigen, erkennt AEM, ob die Quellseite bereits in den Zielsprachkopien vorhanden ist:
 
-* **** Die Sprachkopie enthält keine Seite: AEM behandelt diese Situation als erste Übersetzung. Die Seite wird sofort in die Sprachkopie kopiert und in das Projekt eingefügt. Wenn die übersetzte Seite in AEM importiert wird, kopiert AEM diese direkt in die Sprachkopie.
-* **** Die Sprachkopie enthält bereits die Seite: AEM behandelt diese Situation als aktualisierte Übersetzung. Es wird ein Lauch erstellt, eine Kopie der Seite dem Launch hinzugefügt und dieser in das Projekt eingefügt. Mithilfe von Launches können Sie aktualisierte Übersetzungen vor dem Einfügen in die Sprachkopie überprüfen:
+* **Die Sprachkopie enthält keine Seite:** AEM behandelt diese Situation als erste Übersetzung. Die Seite wird sofort in die Sprachkopie kopiert und in das Projekt eingefügt. Wenn die übersetzte Seite in AEM importiert wird, kopiert AEM diese direkt in die Sprachkopie.
+* **Die Sprachkopie enthält bereits die Seite:** AEM behandelt diese Situation als aktualisierte Übersetzung. Es wird ein Lauch erstellt, eine Kopie der Seite dem Launch hinzugefügt und dieser in das Projekt eingefügt. Mithilfe von Launches können Sie aktualisierte Übersetzungen vor dem Einfügen in die Sprachkopie überprüfen:
 
    * Wenn die übersetzte Seite in AEM importiert wird, wird die Seite im Launch überschrieben.
    * Die übersetzte Seite überschreibt die Sprachkopie nur, wenn der Launch weitergeleitet (beworben) wird.
@@ -93,6 +96,7 @@ Nach der Übersetzung können Sie [die Übersetzung überprüfen](#reviewing-and
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für das Projekt die Option „Neues Übersetzungsprojekt erstellen“ aus.
    * Geben Sie einen Namen für das Projekt ein.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
 1. Klicken oder tippen Sie auf „Erstellen“.
@@ -113,6 +117,7 @@ Nach der Übersetzung können Sie [die Übersetzung überprüfen](#reviewing-and
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für das Projekt die Option „Neues Übersetzungsprojekt erstellen“ aus.
    * Geben Sie einen Namen für das Projekt ein.
+
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
 1. Klicken oder tippen Sie auf „Starten“.
@@ -142,6 +147,7 @@ So wie beim Erstellen eines neuen Projekts werden beim Hinzufügen von Seiten be
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für das Projekt die Option „Zu vorhandenem Übersetzungsprojekt hinzufügen“ aus.
    * Wählen Sie das Projekt aus.
+
    >[!NOTE]
    >
    >Die im Übersetzungsprojekt festgelegte Sprache muss dem Pfad der Sprachkopie, der im Bedienfeld „Verweise“ angezeigt wird, entsprechen.
@@ -242,7 +248,7 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 | Status | Beschreibung |
 |---|---|
 | Draft | Der Übersetzungsauftrag wurde noch nicht gestartet. Übersetzungsaufträge haben den Status ENTWURF, wenn sie erstellt werden. |
-| Übermittelt | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungsdienst gesendet wurden. Dieser Status kann nach der Ausgabe des Befehls &quot;Anforderungsbereich&quot;oder des Befehls &quot;Start&quot;auftreten. |
+| Übermittelt | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungsdienst gesendet wurden. Dieser Status kann nach der Ausgabe des Befehls &quot;Anforderungsbereich&quot;oder des Befehls &quot;Beginn&quot;auftreten. |
 | Berechnung angefragt | Für den Arbeitsablauf der menschlichen Übersetzung wurden die Dateien im Auftrag zum Scoping an den Übersetzungsanbieter übermittelt. Er wird nach Ausgabe des Befehls „Berechnung anfordern“ angezeigt. |
 | Berechnung abgeschlossen | Der Verkäufer hat den Übersetzungsauftrag abgespielt. |
 | Übersetzungsauftrag | Der Projekteigentümer hat den Anwendungsbereich akzeptiert. Dieser Status zeigt an, dass der Übersetzungsanbieter mit der Übersetzung der Dateien im Auftrag beginnen soll. |
@@ -369,7 +375,7 @@ So vergleichen Sie Sprachkopien mit dem Sprach-Master:
 1. Navigieren Sie in der **Sites-Konsole** zur Sprachkopie, die Sie vergleichen wollen.
 1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-authoring/basic-handling.md#references)**.
 1. Under the **Copies** heading select **Language Copies.**
-1. Wählen Sie die gewünschte Sprachkopie aus und klicken Sie dann auf **Mit Master vergleichen **oder **Mit vorheriger **vergleichen.
+1. Wählen Sie die gewünschte Sprachkopie aus und klicken Sie dann auf **Mit Übergeordnet vergleichen **oder **Mit vorherigen **vergleichen.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -404,6 +410,7 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Master-Sprache enthäl
 
    * Wählen Sie die Option „Alle Unterseiten auswählen“ aus.
    * Wählen Sie für das Projekt die Option „Nur Struktur erstellen“ aus.
+
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Klicken oder tippen Sie auf „Starten“.
@@ -423,7 +430,7 @@ Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grun
 1. Wählen Sie dann die Vorlage „Übersetzungsprojekt“ aus und klicken oder tippen Sie auf „Weiter“.
 1. Geben Sie Werte für die grundlegenden Eigenschaften ein.
 1. Klicken oder tippen Sie auf „Erweitert“ und geben Sie Werte für die übersetzungsspezifischen Eigenschaften an.
-1. Klicken oder tippen Sie auf „Erstellen“. Klicken oder tippen Sie im Bestätigungsfeld auf „Fertig“, um zur Projektekonsole zurückzukehren, oder auf „Projekt öffnen“, um das Projekt zu öffnen und mit der Verwaltung des Projekts zu beginnen.
+1. Klicken oder tippen Sie auf Erstellen. Klicken oder tippen Sie im Bestätigungsfeld auf „Fertig“, um zur Projektekonsole zurückzukehren, oder auf „Projekt öffnen“, um das Projekt zu öffnen und mit der Verwaltung des Projekts zu beginnen.
 
 ## Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 
