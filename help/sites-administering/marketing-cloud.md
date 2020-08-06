@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
 source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+workflow-type: tm+mt
+source-wordcount: '1004'
+ht-degree: 86%
 
 ---
 
@@ -32,11 +35,11 @@ In addition, you can integrate AEM with the [Creative Cloud](/help/assets/aem-cc
 
 ## Integrieren mit Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) ist die branchenführende Lösung, die E-Marketingexperten eine zentrale Stelle zur Messung, Analyse und Optimierung integrierter Daten aus allen Online-Initiativen über mehrere Marketingkanäle hinweg bietet. Die Lösung ermöglicht Marketing-Experten die Web-Analyse in Echtzeit und mit verwertbaren Ergebnissen für digitale Strategien und Marketing-Initiativen. Adobe Analytics unterstützt Marketing-Experten dabei, schnell die profitabelsten Pfade einer Website zu ermitteln, Traffic zu segmentieren, um wertvolle Webbesucher zu identifizieren, herauszufinden, wohin Besucher die Website verlassen, und entscheidende Erfolgsmetriken für Online-Marketing-Kampagnen zu finden.
+[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) ist die branchenführende Lösung, die Marketingexperten eine zentrale Stelle zur Messung, Analyse und Optimierung integrierter Daten aus allen Online-Kanälen bietet. Die Lösung ermöglicht Marketing-Experten die Web-Analyse in Echtzeit und mit verwertbaren Ergebnissen für digitale Strategien und Marketing-Initiativen. Adobe Analytics unterstützt Marketing-Experten dabei, schnell die profitabelsten Pfade einer Website zu ermitteln, Traffic zu segmentieren, um wertvolle Webbesucher zu identifizieren, herauszufinden, wohin Besucher die Website verlassen, und entscheidende Erfolgsmetriken für Online-Marketing-Kampagnen zu finden.
 
 Sie können Adobe Analytics nutzen, um Daten Ihrer Website zu analysieren.
 
-Durch die Integration mit Adobe Analytics können Sie Folgendes tun:
+Durch die Integration mit Adobe Analytics haben Sie folgende Möglichkeiten:
 
 * Aktivieren Sie die Analytics-Benutzerverfolgung.
 * Zuweisen von Ausführungsmodi (z. B. Erstellen, Veröffentlichen) zu unterschiedlichen Report Suites
@@ -49,9 +52,9 @@ Weitere Informationen zur Integration von AEM mit Analytics finden Sie unter [In
 
 Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durchführung der Integration.
 
-## Integration mit Adobe Target {#integrating-with-adobe-target}
+## Integrieren mit Adobe Target {#integrating-with-adobe-target}
 
-[Adobe Target](https://www.omniture.com/en/products/conversion/test-and-target) wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Onlineerlebnisse zu automatisieren.
+[Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Online-Erlebnisse zu automatisieren.](https://www.omniture.com/en/products/conversion/test-and-target)
 
 Die Wünsche der Onlinekunden entwickeln sich ständig weiter und für die Vielzahl von Websites und Inhaltsquellen, die zur Auswahl stehen, werden relevante und auch personalisierte Inhalte erwartet. Um eine Online-Zielgruppe zu erreichen, ist es wichtig, dass Experten für Online-Marketing schnell identifizieren, welche Angebote und Inhalte für ihre Zielgruppen relevant und interessant sind. Basierend auf diesem Wissen müssen Marketing-Experten die Möglichkeit haben, ihre Website ständig weiterzuentwickeln und die entsprechenden Inhalte auf unterschiedliche Zielgruppen auszurichten.
 
