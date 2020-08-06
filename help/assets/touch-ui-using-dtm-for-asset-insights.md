@@ -29,6 +29,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
 
    * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
    * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]** (see [documentation](https://helpx.adobe.com/de/experience-manager/using/dtm.html)).
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
