@@ -40,7 +40,7 @@ Mit der neuen Architektur ist AEM für Master-Assets und Synchronisierungen mit 
 
 >[HINWEIS]
 >
->Dynamic Media - Der Scene7-Modus ist nur für die AEM Author-Instanz verfügbar. Daher müssen Sie die Konfiguration `runmode=dynamicmedia_scene7`für die AEM Author-Instanz und nicht für die AEM Publish-Instanz vornehmen.
+>Dynamische Medien - Der Scene7-Modus ist nur für die AEM-Autoreninstanz verfügbar. Daher müssen Sie `runmode=dynamicmedia_scene7`die AEM Author-Instanz konfigurieren, nicht die AEM Publish-Instanz.
 
 To enable Dynamic Media, you must startup AEM using the `dynamicmedia_scene7` runmode from the command line by entering the folllowing in a terminal window (example port used is 4502):
 
@@ -66,19 +66,19 @@ Bei allen Upgrades, ob mit oder ohne Kompatibilitätspaket, können Sie mit dem 
 
 ## (Optional) Installing feature pack 18912 for bulk asset migration {#installing-feature-pack}
 
-Mit dem Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets von einem Dynamic Media - Hybrid-Modus oder Dynamic Media Classic in Dynamic Media - Scene7-Modus auf AEM migrieren. Es ist in Adobe Professional Services erhältlich.
+Mit Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets aus dem Dynamic Media - Hybrid-Modus oder dem Dynamic Media Classic in den Modus Dynamische Medien - Scene7 auf AEM migrieren. Es ist in Adobe Professional Services erhältlich.
 
 Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration](bulk-ingest-migrate.md) von Assets.
 
 ## Konfigurieren von Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-Ändern Sie das Kennwort, bevor Sie die Cloud Service für Dynamic Media konfigurieren. After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
+Ändern Sie das Kennwort, bevor Sie Cloud Services für dynamische Medien konfigurieren. After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
 
 >[!NOTE]
 >
->Standardmäßig ist der Konfigurationspfad für Cloud Service `/content/dam`. Jeder andere Konfigurationspfad wird von Dynamic Media - Scene7-Modus nicht unterstützt.
+>Standardmäßig ist der Konfigurationspfad für Cloud Services `/content/dam`. Andere Konfigurationspfade werden nicht vom Modus &quot;Dynamische Medien - Scene7&quot;unterstützt.
 
-So konfigurieren Sie Dynamic Media-Cloud Service:
+So konfigurieren Sie Cloud Services für dynamische Medien:
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** and tap **[!UICONTROL Create]**. Tippen Sie nicht auf das Ordnersymbol links neben [!UICONTROL global]oder wählen Sie es aus.
@@ -469,7 +469,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 ### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Damit Dynamic Media - Scene7-Modus reibungslos ausgeführt werden können, empfiehlt Adobe die folgenden Tipps zur Synchronisierungsleistung/Skalierbarkeit:
+Damit der Modus &quot;Dynamische Medien - Scene7&quot;reibungslos ausgeführt werden kann, empfiehlt Adobe die folgenden Tipps zur Synchronisierungsleistung/Skalierbarkeit:
 
 * Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate.
 * Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Video-Assets).
@@ -559,15 +559,15 @@ Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dy
 
 ### (Optional) Filtern von Assets für die Replizierung {#optional-filtering-assets-for-replication}
 
-Bei Bereitstellungen ohne Dynamic Media replizieren Sie *alle *Elemente (sowohl Bilder als auch Videos) aus der Umgebung Ihres AEM Autors in den AEM Veröffentlichungsknoten. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
+Bei Bereitstellungen für nicht dynamische Medien replizieren Sie *alle *Elemente (sowohl Bilder als auch Videos) aus der Umgebung Ihres AEM Autors in den Veröffentlichungsknoten AEM. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
 
-Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen von Dynamic Media nicht repliziert werden, um Veröffentlichungsknoten AEM. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
+Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen für dynamische Medien nicht repliziert werden, um Veröffentlichungsknoten zu AEM. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
 Mit den Filtern können Sie Assets von der Replikation auf dem AEM-Veröffentlichungsknoten *ausschließen*.
 
 #### Verwenden von Asset-Standardfiltern für die Replikation {#using-default-asset-filters-for-replication}
 
-Wenn Sie Dynamic Media für die Bildbearbeitung und/oder Videowiedergabe verwenden, können Sie die standardmäßigen Filter verwenden, die wir Ihnen zur Verfügung stellen. Folgende Filter sind standardmäßig aktiviert:
+Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, können Sie die standardmäßigen Filter verwenden, die wir Ihnen zur Verfügung stellen. Folgende Filter sind standardmäßig aktiviert:
 
 <table> 
  <tbody> 
@@ -587,7 +587,7 @@ Wenn Sie Dynamic Media für die Bildbearbeitung und/oder Videowiedergabe verwend
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Video Versand</td> 
+   <td>Video-Versand für dynamische Medien</td> 
    <td>filter-video</td> 
    <td>Beginn mit <strong>Video/</strong></td> 
    <td>Das vordefinierte "filter-video" wird: 
