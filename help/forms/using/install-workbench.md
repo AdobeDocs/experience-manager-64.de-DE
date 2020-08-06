@@ -8,6 +8,9 @@ topic-tags: author
 discoiquuid: null
 translation-type: tm+mt
 source-git-commit: 19dcda357b34e7160792d43cb9335fc3be0dedbc
+workflow-type: tm+mt
+source-wordcount: '2745'
+ht-degree: 63%
 
 ---
 
@@ -36,31 +39,31 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
    <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">Workbench-Hilfe</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Allgemeine Informationen zu AEM Forms und zur Integration mit anderen Adobe-Produkten</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Übersicht über</a><br /> AEM Forms <br /> </p> </td> 
+   <td><p>Allgemeine Informationen über AEM Forms und seine Integration mit anderen Produkten der Adobe</p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-Übersicht</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Ein Lernprogramm zum Erstellen einer AEM Forms-Anwendung und zum Testen dieser Anwendung in Workspace</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Erstellen der ersten AEM Forms-Anwendung</a><br /><br /> </p> </td> 
+   <td><p>Ein Lernprogramm zum Erstellen einer AEM Forms-Anwendung und zum Testen der Anwendung im Arbeitsbereich</p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Erstellen der ersten AEM Forms-Anwendung</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Die gesamte für AEM Forms verfügbare Dokumentation</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Dokumentation</a><br /> zu AEM Forms <br /> </p> </td> 
+   <td><p>Die gesamte Dokumentation für AEM Forms</p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-Dokumentation</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Weitere Dienste und Produkte, die in AEM Forms integriert werden können</p> </td> 
-   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /><br /> </p> </td> 
+   <td><p>Sonstige Dienstleistungen und Produkte, die in AEM Forms integriert sind</p> </td> 
+   <td><p><a href="http://www.adobe.com/de/">www.adobe.com</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Patch-Updates, technische Hinweise und zusätzliche Informationen zu dieser Produktversion</p> </td> 
-   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Wenden Sie sich an den Adobe Enterprise-Support</a><br /> <br /> </p> </td> 
+   <td><p><a href="https://www.adobe.com/de/account/sign-in.supportportal.html">Wenden Sie sich an den Adobe Enterprise-Support</a><br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Der Flex Workspace für AEM Forms wird nicht mehr unterstützt. Es ist für die AEM Forms-Version verfügbar.
+>Der Flex Workspace ist für AEM Forms nicht mehr unterstützt. Es ist für die AEM Forms-Version verfügbar.
 
 ## Vor der Installation {#before-you-install}
 
@@ -74,7 +77,7 @@ Die folgende Abbildung zeigt die Workbench-Installation, einschließlich:
 
 >[!NOTE]
 >
->Der AEM Forms-Server erfordert ein separates Installationsprogramm. Weitere Informationen finden Sie in der Installationsdokumentation zu AEM Forms on JEE.
+>Für den AEM Forms-Server ist ein separates Programm erforderlich. Weitere Informationen finden Sie in der Installationsdokumentation zu AEM Forms on JEE.
 
 ## Systemanforderungen {#system-prerequisites}
 
@@ -82,7 +85,7 @@ In diesem Abschnitt werden die Hardware- und Softwareanforderungen und die unter
 
 ### Mindestanforderungen an Hardware und Software {#minimum-hardware-software-requirements}
 
-**Workbench**Die folgenden Anforderungen werden als Minimum empfohlen:
+**Workbench**Die folgenden Anforderungen werden als Mindestanforderung empfohlen:
 Speicherplatz für die Installation:
 * 680 MB nur für Workbench.
 * 2,15 GB auf einem einzigen Laufwerk für eine vollständige Installation von Workbench, Designer und die Assemblierung der Beispiele.
@@ -93,7 +96,7 @@ Speicherplatz für die Installation:
 >Wenn sich alle diese Speicherorte auf einem einzigen Laufwerk befinden, müssen während der Installation 1,5 GB Speicherplatz verfügbar sein. Die Dateien, die in den temporären Ordner kopiert werden, werden nach Abschluss der Installation gelöscht.
 
 * Hardware-Anforderung: Intel® Pentium® 4 oder gleichwertiger AMD-Prozessor, 1 GHz.
-* Download and install the latest version of Adobe AIR (from <a href="http://www.adobe.com/">www.adobe.com</a>) required for Community Help Client, integrated with Workbench.
+* Download and install the latest version of Adobe AIR (from <a href="http://www.adobe.com/de/">www.adobe.com</a>) required for Community Help Client, integrated with Workbench.
 * Java™ Runtime Environment (JRE) 6.0 update 22 or later updates to 6.0 *New for 10*.
 * Minimale Bildschirmauflösung 1024 x 768 Pixel oder höher mit 16-Bit-Farbtiefe oder höher.
 * TCP/IPv4- oder TCP/IPv6-Netzwerkverbindung zum AEM Forms-Server.
@@ -110,7 +113,7 @@ Speicherplatz für die Installation:
 
 ### Unterstützte Plattformen {#supported-platforms}
 
-Eine vollständige Liste der unterstützten Plattformen für Workbench finden Sie unter Unterstützte Plattformen für [AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Lesen Sie die vollständige Liste der unterstützten Plattformen für Workbench unter [AEM Forms Supported Plattformen](http://adobe.com/go/learn_aemforms_supportedplatforms_65_de).
 
 ## Überlegungen zur Installation von Designer {#designer-installation-considerations}
 
@@ -138,19 +141,19 @@ Verschiedene Versionen von Designer können parallel auf demselben System vorhan
 
 ### Deinstallation von Designer (eigenständig) {#uninstall-designer-standalone}
 
-1. Gehen Sie zu **Systemsteuerung > Programme > Programme und Funktionen**
+1. Gehen Sie zu **Systemsteuerung > Programme > Programm und Funktionen**
 1. Wählen Sie unter Aktuell installierte Programm das Programm **Adobe Designer**.
 1. Click **Uninstall** and then click **Yes**.
 
 ### Deinstallation von Designer (eigenständig) unter Windows 10 {#uninstall-designer-standalone-windows10}
 
-1. Gehen Sie zu **Systemsteuerung > Programme > Programme und Funktionen**
+1. Gehen Sie zu **Systemsteuerung > Programme > Programm und Funktionen**
 1. Wählen Sie unter Aktuell installierte Programm das Programm **Adobe Designer**.
 1. Click **Uninstall** and then click **Yes**.
 
 ### Deinstallation von Designer, wenn das Programm in Acrobat Pro oder Acrobat Pro Extended enthalten ist {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
 
-1. Gehen Sie zu **Systemsteuerung > Programme > Programme und Funktionen**
+1. Gehen Sie zu **Systemsteuerung > Programme > Programm und Funktionen**
 1. Wählen Sie unter Aktuell installierte Programm **Adobe Acrobat Pro** oder **Adobe Acrobat Pro Extended**.
 1. Click **Change** and then click **Next**.
 1. Select **Modify** and then click **Next**.
@@ -159,7 +162,7 @@ Verschiedene Versionen von Designer können parallel auf demselben System vorhan
 
 ### To uninstall Designer included with Acrobat Pro or Acrobat Pro Extended on Windows 10 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
 
-1. Gehen Sie zu **Systemsteuerung > Programme > Programme und Funktionen**
+1. Gehen Sie zu **Systemsteuerung > Programme > Programm und Funktionen**
 1. Wählen Sie unter Aktuell installierte Programm **Adobe Acrobat Pro** oder **Adobe Acrobat Pro Extended**.
 1. Click **Change** and then click **Next**.
 1. Select **Modify** and then click **Next**.
@@ -179,13 +182,14 @@ Before you install Workbench, you must ensure that your environment includes the
 1. Führen Sie eine der folgenden Aufgaben aus:
    * Navigieren Sie zum Ordner \Workbench auf dem Installationsmedium und doppelklicken Sie auf die Datei „run_windows_installer.bat“.
    * Laden Sie Workbench auf Ihr Dateisystem herunter und entpacken Sie es. Nach dem Herunterladen navigieren Sie zum Ordner \Workbench und doppelklicken Sie auf die Datei „run_windows_installer.bat“.
+
    >[!IMPORTANT]
    >
    >Das Installationsprogramm von Workbench wird nur von einer DVD oder einem lokalen Laufwerk aus ausgeführt. Es kann nicht von einer Remote-Site aus ausgeführt werden.
 
    >[!NOTE]
    >
-   >Wenn der Fehler &quot;Java Virtual Machine konnte nicht erstellt werden&quot;angezeigt wird, erstellen Sie eine Umgebungsvariable mit dem Wert _JAVA_OPTIONS mit dem Wert -Xmx512M und führen Sie das Installationsprogramm aus.
+   >Wenn die Fehlermeldung &quot;Java Virtual Machine konnte nicht erstellt werden&quot;angezeigt wird, erstellen Sie eine Umgebung mit dem Wert _JAVA_OPTIONS mit dem Wert -Xmx512M und führen Sie das Installationsprogramm aus.
 
 1. Klicken Sie im Begrüßungsbildschirm auf Weiter.
 1. Lesen Sie die Lizenzvereinbarung für das Produkt, wählen Sie Ich akzeptiere die Bedingungen der Lizenzvereinbarung und klicken Sie dann auf Weiter.
@@ -202,13 +206,13 @@ Before you install Workbench, you must ensure that your environment includes the
    >Der Installationsordnerpfad darf keine #- (Raute-) und $- (Dollar-)Zeichen enthalten.
 
 1. Lesen Sie die Vorinstallationsübersicht und klicken Sie auf Installieren. Das Installationsprogramm zeigt den Status der Installation an.
-1. Lesen Sie die Installationsübersicht. Wählen Sie AEM Forms Workbench starten, um Workbench zu starten, und klicken Sie auf Weiter.
+1. Lesen Sie die Installationsübersicht. Wählen Sie Beginn AEM Forms Workbench, um Workbench zu starten, und klicken Sie auf Weiter.
 1. Lesen Sie die Versionshinweise und klicken Sie auf Fertig.
 1. Jetzt sind die folgenden Elemente auf Ihrem Computer installiert:
-   * **Workbench**: Um Workbench über das Startmenü auszuführen, wählen Sie Alle Programme > AEM Forms > Workbench, wenn Sie den Tastaturbefehlsordner dort speichern möchten. Weitere Informationen finden Sie in der Dokumentation Verwenden von Workbench.
+   * **Workbench**: Um Workbench im Menü &quot;Beginn&quot;auszuführen, wählen Sie &quot;Alle Programm&quot;> &quot;AEM Forms&quot;> &quot;Workbench&quot;, wenn Sie den Kontextordner dort speichern möchten. Weitere Informationen finden Sie in der Dokumentation Verwenden von Workbench.
    * **Designer**: Sie können von Workbench aus auf Designer zugreifen. Weitere Informationen finden Sie in der Datei Erste Schritte in der Designer-Hilfe.
    * **Workbench-Plug-In**: Befolgen Sie die Anweisungen auf Seite 6 unter &quot;3.3 Installieren der Workbench Eclipse-Funktion&quot;.
-   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="http://www.adobe.com/go/learn_lc_programming_10">Programmieren mit AEM Forms</a>.
+   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="http://www.adobe.com/go/learn_lc_programming_10_de">Programmieren mit AEM Forms</a>.
 
 ## Aktualisieren von Prozessen {#upgrading-processes}
 
@@ -239,6 +243,7 @@ Workbench unterstützt die Aktualisierungsfunktion, um sicherzustellen, dass die
 * WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: This is contained in the &#39;Eclipse XML Editors and Tools&#39; [org.eclipse.wst.xml_ui.feature.feature.group]
 
 * Plug-in &#39;org.apache.commons.lang_2.3.0&#39; [n/a]: This is contained in the &#39;Mylyn Task List (Required)&#39; [org.eclipse.mylyn_feature.feature.group]
+
    </p> </td> 
   </tbody>
   </table>
@@ -255,15 +260,15 @@ Workbench unterstützt die Aktualisierungsfunktion, um sicherzustellen, dass die
 
    >[!NOTE]
    >
-   >Mit dem Adobe AEM Forms Discovery Plug-in für Flash Builder können Sie schnell Adobe Flex- und AIR-Anwendungen erstellen, die einen Dienst aufrufen, der über seine Remoting-Endpunkte zu AEM Forms gehört. Information about how to install and update the plug-in is available on the Adobe web site at **Link Required**.
+   >Mit dem Adobe AEM Forms Discovery Plug-in für Flash Builder können Sie schnell Flex- und AIR-Adoben erstellen, die einen Dienst aufrufen, der über seine Remoting-Endpunkte zu AEM Forms gehört. Information about how to install and update the plug-in is available on the Adobe web site at **Link Required**.
 
 ### Konfiguration und Protokollierung beim Server {#configuring-and-logging-server}
 
-Zur Verwendung von Workbench muss eine Instanz von AEM Forms ausgeführt werden, normalerweise auf einem separaten Computer. Sie müssen über einen Benutzernamen und ein Kennwort verfügen, um sich bei AEM Forms anzumelden, sowie über Details zum Speicherort des Servers.
+Um Workbench verwenden zu können, muss eine Instanz von AEM Forms ausgeführt werden, üblicherweise auf einem separaten Computer. Sie müssen über einen Benutzernamen und ein Kennwort für die Anmeldung bei AEM Forms sowie über Details zum Serverstandort verfügen.
 
 >[!NOTE]
 >
->Wenn Sie AEM Forms für die Verwendung des EMC Documentum- oder IBM FileNet-Repository-Providers konfiguriert haben und sich bei einem anderen Repository als dem Repository anmelden möchten, das in AEM Forms Administration Console als Standard konfiguriert ist, geben Sie den Benutzernamen username@Repository an.
+>Wenn Sie AEM Forms für die Verwendung des EMC Documentum- oder IBM FileNet-Repository-Providers konfiguriert haben und Sie sich bei einem anderen Repository als dem Repository anmelden möchten, das in AEM Forms Administration Console als Standard konfiguriert ist, geben Sie den Benutzernamen username@Repository an.
 
 ### Konfigurieren von Zeitlimiteinstellungen {#configuring-timeout-settings}
 
@@ -319,7 +324,7 @@ Der Forms-Dienst erhält Vorlagen durch Verweis auf Dateinamen oder Repository-S
 * **Durch Verweis übergebene Vorlagen**: Verwendet den Inhaltsstamm und den Formularnamen. Wenn bei jeder Anforderung eindeutige Vorlagen mit unterschiedlichem Dateinamen mithilfe dieser Methode übergeben werden, wächst der Datenträger-Cache endlos und wird nie wieder verwendet. Um dies zu verhindern, sollten eindeutige Vorlagen mit demselben Dateinamen übergeben werden, um sicherzustellen dass für alle Anforderungen derselbe Cache aktualisiert wird.
 * **Nach Wert übergebene Vorlagen**: Verwendet die Vorlagen-Bytes, die zusammen mit den Daten übergeben werden, mithilfe des Parameters theinDataDoc. Wenn eindeutige Vorlagen mit unterschiedlichem UUID mithilfe dieser Methode übergeben werden, wächst der Datenträger-Cache endlos und wird nie wieder verwendet. Um dies zu verhindern, sollte das UUID-Attribut aus allen Vorlagen entfernt werden, um sicherzustellen, dass für die Vorlage kein Cache erstellt wird. Alternativ werden durch die Übergabe derselben UUID, deren Wert nicht Null ist, Cache-Objekte erstellt, es wird jedoch sichergestellt, dass bei jeder Anforderung derselbe Cache aktualisiert wird.
 
-Um zu verhindern, dass der Cache endlos wächst, sollten Sie die folgenden Faktoren berücksichtigen, um dynamisch generierte Vorlagen mit den neuen AEM Forms-APIs zu rendern, d. h. renderHTMLForm2 und renderPDFForm2.
+Um zu verhindern, dass der Cache endlos wächst, sollten Sie die folgenden Faktoren berücksichtigen, um dynamisch generierte Vorlagen mit den neuen AEM Forms-APIs zu rendern: renderHTMLForm2 und renderPDFForm2.
 
 Wenn Sie neue APIs verwenden, wird die Vorlage als ein Dokumentobjekt übergeben, das im Forms-Dienst bearbeitet wird, je nachdem, ob es passiviert ist oder nicht.
 
@@ -336,7 +341,7 @@ Die folgenden bewährten Methoden stellen sicher, dass der Cache nicht endlos w�
 
 ### Deinstallieren von Workbench {#uninstalling-workbench}
 
-Verwenden Sie die Funktion Software in der Systemsteuerung, um das Deinstallationsprogramm zu starten. Die Workbench- und Designer-Anwendungen haben unterschiedliche Deinstallationsprogramme.
+Verwenden Sie die Funktion &quot;Programm Hinzufügen oder entfernen&quot;in der Systemsteuerung, um das Deinstallationsprogramm Beginn. Die Workbench- und Designer-Anwendungen haben unterschiedliche Deinstallationsprogramme.
 
 ## Configuring AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
