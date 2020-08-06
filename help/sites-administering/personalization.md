@@ -1,6 +1,6 @@
 ---
-title: 'Personalisierung   '
-seo-title: 'Personalisierung   '
+title: 'Personalisierung     '
+seo-title: 'Personalisierung     '
 description: Erfahren Sie mehr über die Personalisierung in AEM.
 seo-description: Erfahren Sie mehr über die Personalisierung in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
 source-git-commit: c1cf6fa92c923cce18000c8dd82b2c17d6783ee5
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 79%
 
 ---
 
 
-# Personalisierung   {#personalization}
+# Personalisierung     {#personalization}
 
 ## Was ist Personalisierung? {#what-is-personalization}
 
@@ -134,19 +137,19 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 |---|---|
 | Geprüftes Kennwort-Feld | Fordert zur Eingabe des Kennworts und Bestätigung des Kennworts auf. |
 | Kombinierte Anmeldung | Ermöglicht dem Benutzer, sich entweder bei einem vorhandenen Konto anzumelden oder sich für ein neues Konto zu registrieren. |
-| Feld &quot;Formulare-Adresse&quot; | Ein komplexes Feld, das die Eingabe einer internationalen Adresse ermöglicht. |
-| Formulare beginnen | Startet eine Formulardefinition |
+| Forms-Adressfeld | Ein komplexes Feld, das die Eingabe einer internationalen Adresse ermöglicht. |
+| Forms Begin | Beginn einer Formulardefinition |
 | Forms Captcha | Ein Feld, das aus einem automatisch aktualisierten alphanumerischen Wort besteht. Die Captcha-Komponente schützt Websites vor Bots.  |
 | Forms-Kontrollkästchengruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Kontrollkästchen vorangestellt sind. Benutzer können mehrere Kontrollkästchen auswählen. |
-| Dropdown-Liste für Formulare | Mehrere Elemente, die als Dropdown-Liste angeordnet sind. Der Schalter für die Mehrfachauswahl gibt an, ob mehrere Elemente aus der Liste ausgewählt werden können. |
-| Formularende | Beendet die Formulardefinition. |
-| Formulardatei hochladen | Ein Upload-Element, mit dem der Benutzer eine Datei zum Server hochladen kann. |
-| Ausgeblendetes Formularfeld | Dieses Feld wird dem Benutzer nicht angezeigt. Mit ihm kann ein Wert zum Client und zurück zum Server übertragen werden. Für dieses Feld gelten keine Beschränkungen. |
-| Formular-Bildschaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, die als Bild dargestellt wird. |
-| Formularkennwortfeld | Identisch mit einem Textfeld, doch nur eine Zeile ist zulässig und die Texteingabe des Benutzers ist im Feld nicht sichtbar. |
-| Forms-Optionsfeldgruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzer dürfen nur einen Optionsschalter auswählen. |
-| Schaltfläche &quot;Formular senden&quot; | Eine zusätzliche Senden-Schaltfläche für das Formular, wobei der Titel als Text auf der Schaltfläche dargestellt wird. |
-| Formulartextfeld | Ein Textfeld, in das Benutzer Informationen eingeben können. |
+| Forms Dropdown-Liste | Mehrere Elemente, die als Dropdown-Liste angeordnet sind. Der Schalter für die Mehrfachauswahl gibt an, ob mehrere Elemente aus der Liste ausgewählt werden können. |
+| Forms End | Beendet die Formulardefinition. |
+| Forms-Datei-Upload | Ein Upload-Element, mit dem der Benutzer eine Datei zum Server hochladen kann. |
+| Ausgeblendetes Forms-Feld | Dieses Feld wird dem Benutzer nicht angezeigt. Mit ihm kann ein Wert zum Client und zurück zum Server übertragen werden. Für dieses Feld gelten keine Beschränkungen. |
+| Forms-Bildschaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, die als Bild dargestellt wird. |
+| Forms-Kennwortfeld | Identisch mit einem Textfeld, doch nur eine Zeile ist zulässig und die Texteingabe des Benutzers ist im Feld nicht sichtbar. |
+| Forms Radio Group | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzer dürfen nur einen Optionsschalter auswählen. |
+| Forms-Senden-Schaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, wobei der Titel als Text auf der Schaltfläche dargestellt wird. |
+| Forms-Textfeld | Ein Textfeld, in das Benutzer Informationen eingeben können. |
 | Meine Gadgets | Ermöglicht Ihnen, eine Auswahl verfügbarer Geräte einzuschließen. |
 | Profil-Avatar-Foto | Ermöglicht die Eingabe eines Avatar-Fotos. |
 | Profil – Genauer Name | Eingabe von Namendetails, einschließlich Elemente wie Titel, zweiter Vorname und Suffix, falls erforderlich. |
@@ -155,7 +158,7 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Profil-Geschlecht | Ermöglicht die Eingabe des Geschlechts.  |
 | Profil - Primäre Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer.  |
 | Profil - Primäre URL | Ermöglicht die Eingabe einer URL. |
-| Eigenschaft &quot;Allgemeiner Text&quot; | Profileigenschaften. |
+| Profil General Text, Eigenschaft | Profileigenschaften. |
 | Anmelden | Ermöglicht Ihnen, bei der Anmeldung einen Benutzernamen und ein Kennwort zu senden. |
 | Abmelden | Gibt den derzeit angemeldeten Benutzer an und gibt einen Link zum Abmelden an. |
 | Tag-Cloud | Eine Tag-Cloud, um eine grafisch dargestellte Auswahl von Tags innerhalb Ihrer Website anzuzeigen |
