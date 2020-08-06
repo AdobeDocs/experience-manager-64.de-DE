@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 81%
 
 ---
 
@@ -34,8 +37,9 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 
 1. Geben Sie die folgenden Details ein:
 
-   * **** Titel: Anzeigename für den Ordner
+   * **Titel:** Anzeigename für den Ordner
    * **Name:***(Obligatorisch)* Der Knotenname, unter dem Sie den Ordner im Repository speichern möchten
+
    >[!NOTE]
    >
    >Standardmäßig wird der Wert des Namensfelds automatisch aus dem Titel gefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
@@ -49,7 +53,7 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 ### Bearbeiten des Ordnertitels {#edit-the-folder-title-br}
 
 1. Wählen Sie den Ordner aus, dessen Namen Sie bearbeiten möchten.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_edit](assets/aem6forms_edit.png) .
+1. Klicken Sie in der Symbolleiste auf das Symbol zum Bearbeiten von ![aem6forms_edit](assets/aem6forms_edit.png) .
 1. Geben Sie den neuen Titel ein. Das Textfeld wird vorab mit dem aktuellen Wert des Ordnertitels gefüllt. Sie können diesen in einen neuen Wert ändern.
 1. Klicken Sie auf **[!UICONTROL Übermitteln].**
 
