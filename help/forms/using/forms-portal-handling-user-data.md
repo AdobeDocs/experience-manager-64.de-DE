@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 68%
 
 ---
 
@@ -40,7 +43,7 @@ Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und ü
   <tr> 
    <td><p><strong>Persistenztyp</strong></p> </td> 
    <td><p><strong>Datenspeicher</strong></p> </td> 
-   <td><p><strong>Standort</strong></p> </td> 
+   <td><p><strong>Ort</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Default</p> </td> 
