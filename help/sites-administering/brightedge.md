@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 100%
 
 ---
 
@@ -26,6 +29,7 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
 
    * „Jetzt konfigurieren“: Dieser Link wird angezeigt, wenn keine Konfiguration erstellt wurde.
    * „Konfigurationen anzeigen“: Dieser Link wird angezeigt, wenn mindestens eine Konfiguration erstellt wurde.
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. Wenn Sie auf „Konfigurationen anzeigen“ geklickt haben, klicken Sie auf den Link mit dem Pluszeichen (+) neben „Verfügbare Konfigurationen“.
