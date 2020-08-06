@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 
 
 # Die Tools-Konsolen{#tools-consoles}
 
-Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. Aktuell gibt es zwei Varianten der **Tools-Konsole** – abhängig von der verwendeten Benutzeroberfläche:
+Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können. Aktuell gibt es zwei Varianten der **Tools-Konsole** – abhängig von der verwendeten Benutzeroberfläche:
 
 * [Tools – klassische Benutzeroberfläche](#tools-classic-ui)
 * [Tools – Touch-optimierte Benutzeroberfläche](#tools-touch-optimized-ui)
@@ -42,7 +45,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Der <a href="/help/sites-developing/client-context.md">Client Context</a> ist eine dynamisch zusammengestellte Sammlung von Benutzerdaten. Hier werden die Standard- und Marketing-Cloudkonfigurationen gespeichert.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Cloud Service-Konfigurationen<br /> </td> 
+   <td>Cloud Services-Konfigurationen<br /> </td> 
    <td> </td> 
    <td>Speichert Konfigurationen zum <a href="/help/sites-administering/marketing-cloud.md">Integrieren mit Adobe Marketing Cloud</a></td> 
   </tr> 
@@ -200,11 +203,11 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
  <tbody> 
   <tr> 
    <th>Abschnitt</th> 
-   <th>Wahl</th> 
+   <th>Option</th> 
    <th>Zweck</th> 
   </tr> 
   <tr> 
-   <td>Authoring</td> 
+   <td>Authoring – </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -245,12 +248,12 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud-Services</a></td> 
+   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Services</a></td> 
    <td>Mit Adobe Marketing Cloud verbinden.</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/workflows.md">Workflows</a></td> 
+   <td><a href="/help/sites-administering/workflows.md">Workflows  </a></td> 
    <td>Workflows modellieren und verwalten.</td> 
   </tr> 
   <tr> 
@@ -265,7 +268,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-developing/hobbes.md">Testen</a></td> 
+   <td><a href="/help/sites-developing/hobbes.md">Tests</a></td> 
    <td>Für die Anwendung definierte Tests ausführen.</td> 
   </tr> 
   <tr> 
