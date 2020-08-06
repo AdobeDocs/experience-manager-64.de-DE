@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +47,7 @@ Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für d
 
 ### JKS-Format {#jks-format}
 
-Erstellen Sie einen privaten Schlüssel und ein Zertifikat im JKS-Format. Der private Schlüssel wird in einer KeyStore-Datei, das Zertifikat in einer TrustStore-Datei gespeichert. Use [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) to create both.
+Erstellen Sie einen privaten Schlüssel und ein Zertifikat im JKS-Format. Der private Schlüssel wird in einer KeyStore-Datei, das Zertifikat in einer TrustStore-Datei gespeichert. Verwenden Sie [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html), um beide zu erstellen.
 
 Führen Sie mit dem Java-`keytool` folgende Schritte aus, um den privaten Schlüssel und die Anmeldedaten zu erstellen:
 
@@ -64,9 +67,9 @@ Gehen Sie wie folgt vor, um einen privaten Schlüssel und ein selbstsigniertes Z
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Wahl | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichen   |
    |---|---|---|
-   | -alias | Autor | veröffentlichen |
+   | -alias | author | publish |
    | -keystore | author.keystore | publish.keystore |
 
 1. Um das Zertifikat zu exportieren, geben Sie folgenden Befehl anhand der Optionswerte in der nachfolgenden Tabelle ein:
@@ -75,9 +78,9 @@ Gehen Sie wie folgt vor, um einen privaten Schlüssel und ein selbstsigniertes Z
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Wahl | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichen   |
    |---|---|---|
-   | -alias | Autor | veröffentlichen |
+   | -alias | author | publish |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -91,7 +94,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Wahl | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichen   |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -101,7 +104,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Wahl | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichen   |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -114,7 +117,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Wahl | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichen   |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -126,12 +129,12 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Wahl | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichen   |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -name | Autor | veröffentlichen |
+   | -name | author | veröffentlichen |
 
 ## Installieren von privatem Schlüssel und TrustStore auf der Autoreninstanz {#install-the-private-key-and-truststore-on-author}
 
