@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 translation-type: tm+mt
 source-git-commit: b6a5b222bf6629dc14a16531972a2a50e2b5ed37
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 66%
 
 ---
 
@@ -30,15 +33,15 @@ Diese Seite enthält eine Übersicht über die Komponenten von Adobe Experience 
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Sie können das Bearbeitungsverhalten konfigurieren.
 * Verwenden von Dialogfeldern, die mit Unterelementen basierend auf Granite UI-Komponenten erstellt wurden
-* Are developed using [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (recommended) or JSP.
+* Are developed using [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) (recommended) or JSP.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
 
 * Entwickeln einer neuen Komponente auf Ihrer lokalen Instanz
-* Stellen Sie es in Ihrer Testumgebung bereit.
+* Stellen Sie es in Ihrer Test-Umgebung bereit.
 * Bereitstellen in Ihrer Live-Authoring-Umgebung, in der Autoren bzw. Administratoren Inhalt hinzufügen und konfigurieren können
-* Stellen Sie sie in Ihrer (den) Live-Veröffentlichungsumgebung(en) bereit, in der (denen) sie zum Rendern von Inhalten für Besucher Ihrer Website verwendet werden. Bestimmte Komponenten, z. B. für Communitys, akzeptieren auch Eingaben von Ihren Benutzern.
+* Stellen Sie sie in Ihrer (den) Live-Veröffentlichungs-Umgebung(en) bereit, in der (denen) sie zum Rendern von Inhalten für Besucher auf Ihrer Website verwendet werden. Bestimmte Komponenten, z. B. für Communitys, akzeptieren auch Eingaben von Ihren Benutzern.
 
 Für jede AEM-Komponente gilt Folgendes:
 
@@ -62,18 +65,18 @@ Mit den bereitgestellten Komponenten und deren Nutzung auf den bereitgestellten 
 
 Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md)
 
-**Die Kernkomponenten** wurden mit AEM 6.3 eingeführt und bieten flexible und funktionsreiche Authoring-Funktionen. The [We.Retail reference site](/help/sites-developing/we-retail.md) illustrates how the core components can be used and represent the current best-practices of component development.
+**Die Kernkomponenten** wurden mit AEM 6.3 und der flexiblen und funktionsreichen Authoring-Funktionalität von Angebot eingeführt. The [We.Retail reference site](/help/sites-developing/we-retail.md) illustrates how the core components can be used and represent the current best-practices of component development.
 
 **Foundation-Komponenten** gehören in vielen Versionen von AEM zur Grundausstattung und sind direkt nach einer Standardinstallation verfügbar. Obwohl sie noch unterstützt werden, wurden die meisten nicht mehr unterstützt, wurden nicht mehr verbessert und basieren auf alten Technologien.
 
 >[!NOTE]
 >
->[Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) sind die derzeit beste Vorgehensweise für den Entwurf und die Entwicklung von Komponenten und dienen als Referenzimplementierungen.
+>[Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) sind die derzeit beste Vorgehensweise für den Entwurf und die Entwicklung von Komponenten und dienen als Referenzimplementierungen.
 >
->[AEM-Modernisierungstools](modernization-tools.md) können die Migration zu Kernkomponenten unterstützen.
+>[AEM Modernisierungstools](modernization-tools.md) können bei der Migration zu Kernkomponenten helfen.
 
 ### Anzeigen der verfügbaren Komponenten {#viewing-available-components}
 
@@ -104,7 +107,7 @@ Auf den folgenden Seiten finden Sie detaillierte Informationen zur Entwicklung d
 * [Komponenten für Inhaltsfragmente](/help/sites-developing/components-content-fragments.md)
 * [Ermitteln von Seiteninformationen im JSON-Format](/help/sites-developing/pageinfo.md)
 * [Internationalisieren von Komponenten](/help/sites-developing/i18n.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Verwenden von Bedingungen zum Ausblenden](/help/sites-developing/hide-conditions.md)
 * Klassische Benutzeroberfläche
 
