@@ -10,6 +10,9 @@ topic-tags: integrations
 discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1542'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +27,7 @@ AEM Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsme
 >
 >Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto und Administratorrechte auf der AEM-Instanz. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Verwenden Sie Adobe Analytics, um Interaktionsmuster und Probleme von Benutzern beim Arbeiten mit adaptiven Formularen, HTML5-Formularen und interaktiver Kommunikation zu ermitteln. Adobe Analytics ist so vorkonfiguriert, dass Informationen zu den folgenden Parametern nachverfolgt und gespeichert werden:
 
@@ -74,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 1. Wählen Sie die neu erstellte Report Suite aus. Wählen Sie **Einstellungen bearbeiten** > **Allgemein** > **Allgemeine Kontoeinstellungen**.
 
    ![Allgemeine Kontoeinstellungen](assets/geographic_settings.png)
-   **** Abbildung: Allgemeine *Kontoeinstellungen*
+   **Abbildung:** *Allgemeine Kontoeinstellungen*
 
 1. In General Account Settings screen, enable **Geography Reporting**, and click **Save**.
 1. Navigieren Sie zu **Einstellungen bearbeiten** > **Traffic** > **Traffic-Variablen**.
@@ -84,7 +87,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
    * **formName**: Bezeichner für ein adaptives Formular.
    * **formInstance**: Bezeichner einer Instanz eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
    * **fieldName**: Bezeichner eines adaptiven Formularfelds. Aktivieren Sie Pfadberichte für diese Variable.
-   * **panelName**: Bezeichner eines Bereichs für ein adaptives Formular. Aktivieren Sie Pfadberichte für diese Variable.
+   * **panelName**: Bezeichner eines Bedienfelds für ein adaptives Formular. Aktivieren Sie Pfadberichte für diese Variable.
    * **formTitle**: Titel des Formulars.
    * **fieldTitle**: Titel des Formularfelds.
    * **panelTitle**: Titel des Formularbereichs.
@@ -98,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
    | render | Zähler |
    | panelVisit | Zähler |
    | fieldVisit | Zähler |
-   | save | Zähler |
+   | Speichern | Zähler |
    | Fehler | Zähler |
    | help | Zähler |
    | submit | Zähler |
@@ -143,7 +146,7 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 1. Click the **[+]** link next to next to your Analytics configuration.
 
    ![Adobe Analytics-Konfiguration](assets/adobe-analytics-cloud-services.png)
-   **** Abbildung: Konfiguration von *Adobe Analytics*
+   **Abbildung:** *Adobe Analytics-Konfiguration*
 
 1. Geben Sie einen **Titel** und einen **Namen** für das Framework ein, wählen Sie **Adobe Analytics** Framework und klicken Sie auf **Erstellen**. Das Framework wird zur Bearbeitung geöffnet.
 
@@ -163,10 +166,10 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 ## Konfigurieren des Analytics-Konfigurationsservices von AEM Forms {#configuring-aem-forms-analytics-configuration-service}
 
 1. On author instance, open AEM Web Console Configuration manager at https://&lt;*server*>:&lt;*port*>/system/console/configMgr.
-1. Suchen und öffnen Sie die Analytics-Konfiguration von AEM Forms
+1. AEM Forms Analytics-Konfiguration suchen und öffnen
 
    ![Analytics-Konfigurationsservice von AEM Forms](assets/analytics_configuration.png)
-   **** Abbildung: Analytics-Konfigurationsdienst für *AEM Forms*
+   **Abbildung:** *AEM Forms Analytics-Konfigurationsdienst*
 
 1. Legen Sie die entsprechenden Werte für die folgenden Felder fest und klicken Sie auf **Speichern**.
 
@@ -174,6 +177,7 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
    * **Verfolgungsgrundlinie der Feldzeit**: Legen Sie die Dauer in Sekunden fest, nach dem der Feldaufruf nachverfolgt werden muss. Der Standardwert ist 0. Ist der Wert größer als 0 (Null), werden zwei separate Verfolgungsereignisse an den Adobe Analytics-Server gesendet. Mit dem ersten Ereignis wird der Analytics-Server angewiesen, die Verfolgung für das Feld beim Verlassen zu beenden. Das zweite Ereignis wird nach Ablauf der angegebenen Zeit gesendet. Das zweite Ereignis weist den Analytics-Server an, mit der Verfolgung des besuchten Felds zu beginnen. Durch die Verwendung zweier separater Ereignisse können Sie präzise messen, wie lange das Feld verwendet wurde. Wenn der Wert 0 (Null) ist, wird ein einzelnes Verfolgungsereignis an den Adobe Analytics-Server gesendet.
    * **Berichtsynchronisierungs-cron für Analytics**: Geben Sie einen cron-Ausdruck für das Abrufen von Berichten aus Adobe Analytics an. Der Standardwert ist 0 0 2 ?.
    * **Zeitlimit für Berichtsabruf:** Geben Sie die Dauer in Sekunden an, die auf den Server für den Abruf des Analyseberichts gewartet werden soll. Der Standardwert ist 120 Sekunden.
+
    >[!NOTE]
    >
    >Es kann bis zu 10 Sekunden dauern, bis der Timeout-Berichtsabruf und dann die angegebene Anzahl von Sekunden abgeschlossen ist.
@@ -188,9 +192,9 @@ Jetzt können Sie Analysen für Formulare aktivieren und einen Analysebericht er
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**, wählen Sie ein Formular oder ein Dokument aus und klicken Sie auf **Analyse aktivieren**. Die Analyse ist aktiviert.
 
    ![Aktivieren der Analyse für ein Formular oder Dokument](assets/enable-analytics-1.png)
-   **** Abbildung: Analyse für ein Formular *aktivieren*
+   **Abbildung:** *Aktivieren der Analyse für ein Formular*
 
-   ******A. Schaltfläche &quot;Analyse&quot;** B aktivieren Ausgewähltes Formular
+   **A.** Schaltfläche &quot;Analyse&quot; **B aktivieren** Ausgewähltes Formular
 
    For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
 
