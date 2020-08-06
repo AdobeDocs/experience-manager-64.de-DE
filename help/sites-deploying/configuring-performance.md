@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '6722'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 >
 >Weitere Informationen zur Fehlerbehebung und zur Beseitigung von Leistungsproblemen finden Sie außerdem im [Leistungsbaum](/help/sites-deploying/performance-tree.md).
 >
->Zusätzlich ist ein Artikel in der Wissensdatenbank mit [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) verfügbar. 
+>Zusätzlich ist ein Artikel in der Wissensdatenbank mit [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html) verfügbar. 
 
 Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anforderungen durch Besucher zu reagieren. Obwohl dieser Wert für jede Anforderung anders ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert längerfristig erreichbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und auf potenzielle Probleme hinzuweisen.
 
@@ -40,7 +43,8 @@ Diese Umgebung enthält Inhalte, die Sie Ihren Benutzern zugänglich machen. Hie
 >[!NOTE]
 >
 >* Folgen Sie nach der Konfiguration zur Leistungsoptimierung der Anleitung in [Tough Day](/help/sites-developing/tough-day.md), um die Umgebung unter starker Belastung zu testen.
->* Siehe auch [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>* Siehe auch [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
@@ -63,7 +67,7 @@ Diese Regeln gelten weitgehend für Webprojekte im Allgemeinen und sind für Pro
 
 Ca. 10 % der Projektarbeit sollten für die Leistungsoptimierung reserviert werden. Natürlich hängen die tatsächlichen Anforderungen an die Leistungsoptimierung von der Komplexität eines Projekts und der Erfahrung des Entwicklerteams ab. Auch wenn Ihr Projekt nicht die gesamte einkalkulierte Zeit beanspruchen sollte, ist es empfehlenswert, bei der Leistungsoptimierung die vorgeschlagene Zeit zu berücksichtigen.
 
-Wenn möglich, sollte ein Projekt zunächst weich an eine begrenzte Zielgruppe gestartet werden, um Erfahrungen im realen Leben zu sammeln und weitere Optimierungen durchzuführen, ohne den zusätzlichen Druck zu erhöhen, der auf eine vollständige Ankündigung folgt.
+Wenn möglich, sollte ein Projekt zunächst weich auf eine begrenzte Audience gestartet werden, um echte Erfahrungen zu sammeln und weitere Optimierungen durchzuführen, ohne den zusätzlichen Druck zu erhöhen, der auf eine vollständige Ankündigung folgt.
 
 Doch auch nach dem Launch muss die Projektoptimierung fortgesetzt werden. Der Lauch ist der Moment, in dem Ihr System einer „echten“ Belastung ausgesetzt wird. Deshalb sollten nach dem Launch zusätzliche Anpassungen eingeplant werden.
 
@@ -81,7 +85,7 @@ Die Simulation der Realität ist schwierig, und wie viel Mühe Sie vernünftiger
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-Die Bedeutung einer ordnungsgemäßen Festlegung von Leistungszielen ist nicht zu unterschätzen. Oft ist es sehr schwierig, diese Ziele nachträglich zu ändern, sobald Menschen sich auf bestimmte Leistungsziele konzentrieren, selbst wenn sie auf wilden Annahmen beruhen.
+Die Bedeutung einer ordnungsgemäßen Festlegung von Leistungszielen ist nicht zu unterschätzen. Oft ist es, sobald Menschen sich auf bestimmte Leistungsziele konzentrieren, sehr schwierig, diese Ziele nachträglich zu ändern, auch wenn sie auf wilden Annahmen beruhen.
 
 Das Festlegen guter, konkreter Leistungsziele ist eine der schwierigsten Aufgaben. Oft empfiehlt es sich, echte Protokolle und Benchmarks von einer vergleichbaren Website heranzuziehen (z. B. vom Vorgänger der neuen Website).
 
@@ -95,7 +99,7 @@ Es ist wichtig, immer jeweils einen Engpass nach dem anderen zu optimieren. Wenn
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
-Im Zuge der Leistungsanpassung werden Werte immer wieder gemessen, analysiert, optimiert und validiert, bis der Zielwert erreicht ist. Um diesen Aspekt ordnungsgemäß zu berücksichtigen, implementieren Sie nach jeder Iteration einen agilen Validierungsprozess in der Optimierungsphase und nicht einen schwereren Testprozess.
+Im Zuge der Leistungsanpassung werden Werte immer wieder gemessen, analysiert, optimiert und validiert, bis der Zielwert erreicht ist. Um diesem Aspekt gebührend Rechnung zu tragen, implementieren Sie nach jeder Iteration einen agilen Validierungsprozess in der Optimierungsphase und nicht einen aufwändigeren Testprozess, der eine größere Gewichtung ermöglicht.
 
 Der Entwickler, der die Optimierung durchführt, sollte rasch erkennen können, ob mit einer Optimierung der Zielwert erreicht wurde. Dies ist eine wertvolle Information, denn sobald der Zielwert erreicht ist, ist die Optimierung abgeschlossen.
 
@@ -206,7 +210,7 @@ Gewisse Aspekte von CQ (und/oder des zugrunde liegenden CRX) können so konfigur
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie im [Artikel in der Wissensdatenbank](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html). 
+>Weitere Informationen finden Sie im [Artikel in der Wissensdatenbank](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html). 
 
 ### Suchindizierung {#search-indexing}
 
@@ -225,12 +229,12 @@ Wenn beispielsweise Bilder (oder DAM-Assets im Allgemeinen) hochgeladen werden, 
 
 Die Workflow-Engine verwendet Apache Sling-Auftragswarteschlangen zur Handhabung und Planung der Verarbeitung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig aus der Konfigurationsdienstfactory des Apache Sling Job Queue für die Verarbeitung von Workflow-Aufträgen erstellt:
 
-* Granite-Workflow-Warteschlange: Die meisten Arbeitsablaufschritte, wie die, die DAM-Assets verarbeiten, verwenden den Granite Workflow Queue-Dienst.
+* Granite-Workflow-Warteschlange: Die meisten Arbeitsablaufschritte, z. B. die, die DAM-Assets verarbeiten, verwenden den Granite Workflow Queue-Dienst.
 * Externe Prozessauftragswarteschlange für Granite-Workflow: Dieser Dienst wird für spezielle externe Arbeitsablaufschritte verwendet, die normalerweise zur Kontaktaufnahme mit einem externen System und zum Abruf von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Media Extraction Process“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführten Workflow-Prozesse zu beschränken.
 
-**** Hinweis: Das Konfigurieren dieser Auftragswarteschlangen betrifft alle Arbeitsabläufe, es sei denn, Sie haben eine Auftragswarteschlange für ein bestimmtes Workflow-Modell erstellt (siehe Warteschlange für ein bestimmtes Workflow-Modell [konfigurieren](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) unten).
+**Hinweis:** Das Konfigurieren dieser Auftragswarteschlangen wirkt sich auf alle Workflows aus, es sei denn, Sie haben eine Auftragswarteschlange für ein bestimmtes Workflow-Modell erstellt (siehe Warteschlange für ein bestimmtes Workflow-Modell [konfigurieren](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) unten).
 
 **Konfiguration im Repository**
 
@@ -497,6 +501,7 @@ Der Dispatcher bietet verschiedene integrierte Mechanismen zur Optimierung der L
 >
 >* alle Daten zwischenspeichern können, die als Seite gespeichert und mit einer URL abgerufen werden können
 >* keine anderen Daten speichern können, z. B. Cookies, Sitzungsdaten und Formulardaten
+
 >
 >
 Allgemein müssen für viele Caching-Strategien geeignete URLs ausgewählt werden, damit diese zusätzlichen Daten nicht benötigt werden.
@@ -617,6 +622,7 @@ Der Dispatcher kann keine personalisierten Daten zwischenspeichern. Sie sollten 
 >
 >* Sie können die Seite mit iFrames aufteilen in einen Teil, der für alle Benutzer gleich ist, und einen Teil, der bei allen Seiten eines Benutzers gleich ist. Diese beiden Teile können dann zwischengespeichert werden.
 >* Sie können mit clientseitigem JavaScript personalisierte Informationen anzeigen. Sie müssen jedoch sicherstellen, dass die Seite weiterhin richtig angezeigt wird, wenn ein Benutzer JavaScript deaktiviert.
+
 >
 
 
@@ -639,7 +645,7 @@ Für die meisten Dateien wird der MIME-Typ durch die Dateierweiterung angegeben 
 
 Wenn der Dateiname keine Erweiterung aufweist, wird er als einfacher Text dargestellt.
 
-Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header cachen. Wenn Sie keine Antwort-Header im Dispatcher cachen, beachten Sie, dass der Mime-Typ Bestandteil der HTTP-Kopfzeile ist. Wenn Ihre AEM-Anwendung daher Dateien zurückgibt, deren Dateiende nicht erkannt wurde und die stattdessen auf dem MIME-Typ basieren, werden diese Dateien möglicherweise falsch angezeigt.
+Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header cachen. Wenn Sie keine Antwort-Header im Dispatcher cachen, beachten Sie, dass der Mime-Typ Bestandteil der HTTP-Kopfzeile ist. Wenn Ihre AEM-Anwendung daher Dateien zurückgibt, die kein erkanntes Dateiende haben und stattdessen den MIME-Typ verwenden, werden diese Dateien möglicherweise falsch angezeigt.
 
 Um sicherzustellen, dass Dateien richtig zwischengespeichert werden, halten Sie sich an die folgenden Richtlinien.
 
@@ -677,7 +683,7 @@ In der folgenden Tabelle werden die für die Sicherungs-Benchmarks verwendeten D
    <td><strong>Inhalt</strong></td> 
    <td><strong>Knoten</strong></td> 
    <td><strong>Seiten</strong></td> 
-   <td><strong>Bilder </strong></td> 
+   <td><strong>Bilder</strong></td> 
    <td><strong>Tags</strong></td> 
   </tr> 
   <tr> 
@@ -688,7 +694,7 @@ In der folgenden Tabelle werden die für die Sicherungs-Benchmarks verwendeten D
    <td>237</td> 
   </tr> 
   <tr> 
-   <td>Kleine Inhalte für inkrementelle Sicherung</td> 
+   <td>Kleine Inhalte für die inkrementelle Sicherung</td> 
    <td><br type="_moz" /> </td> 
    <td>+100</td> 
    <td>+2</td> 
