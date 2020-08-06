@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 83%
 
 ---
 
@@ -120,7 +123,7 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie festlegen, welcher beim Start verwendet werden soll. Zur Spezifizierung des Ausführungsmodus gibt es mehrere Möglichkeiten. Gehen Sie nach dieser Reihenfolge vor:
 
 1. [ `sling.properties` Datei an](#using-the-sling-properties-file)
-1. [ `-r` Option](#using-the-r-option)
+1. [ `-r` option](#using-the-r-option)
 1. [Systemeigenschaften (`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [Erkennung von Dateinamen](#filename-detection-renaming-the-jar-file) 
@@ -135,13 +138,13 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Fügen Sie die folgenden Eigenschaften hinzu: das folgende Beispiel ist für den Autor bestimmt:
+1. Hinzufügen die folgenden Eigenschaften; das folgende Beispiel ist für den Autor bestimmt:
 
    `sling.run.modes=author`
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-A custom run mode can be activated by using the `-r` option when launching the quickstart. Verwenden Sie zum Beispiel den folgenden Befehl, um eine AEM-Instanz mit dem Ausführungsmodus zu starten, für den dev festgelegt ist. &quot;
+A custom run mode can be activated by using the `-r` option when launching the quickstart. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus zu starten, für die &quot;dev&quot;festgelegt ist. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -159,7 +162,7 @@ Mit einer Systemeigenschaft im Startskript kann der Ausführungsmodus spezifizie
 
 Die folgenden beiden Installationslaufmodi können vor der Installation durch Umbenennen der JAR-Datei für die Installation aktiviert werden:
 
-* veröffentlichen
+* publish
 * author
 
 Die JAR-Datei muss diese Benennungskonvention verwenden:
