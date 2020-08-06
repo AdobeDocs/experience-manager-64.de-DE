@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 4%
 
 ---
 
 
 # Tag Essentials {#tag-essentials}
 
-Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt taggen, den sie in der Veröffentlichungsumgebung posten.
+Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt taggen, den sie in der Umgebung veröffentlichen veröffentlichen.
 
-Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumgebung angewendet werden, ist dieselbe wie für Tags, die in der Autorenumgebung auf Inhalte wie Seiten und Assets angewendet werden:
+Die zugrunde liegende Infrastruktur für Tags, die in der Umgebung &quot;Veröffentlichen&quot;angewendet werden, ist die gleiche wie für Tags, die in der Autoreninhalt-Umgebung angewendet werden, wie z. B. Seiten und Assets:
 
 * See [Administering Tags](../../help/sites-administering/tags.md) and [Tagging User Generated Content](tag-ugc.md) (UGC) for information about creating and managing tags.
 
 * See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
 
-* Informationen zum Hinzufügen einer [ Komponente zu einer Seite finden Sie unter Verwenden der Social Tag Cloud](tagcloud.md) `social tag cloud`, um die Tags hervorzuheben, die in der Veröffentlichungsumgebung auf UGC angewendet werden.
+* Unter [Verwenden der Social Tag Cloud](tagcloud.md) finden Sie Informationen für Autoren dazu, wie Sie einer Seite eine `social tag cloud` Komponente hinzufügen können, um die Tags hervorzuheben, die in der Umgebung &quot;Veröffentlichen&quot;auf UGC angewendet werden.
 
 * Informationen zum Tagging von Ressourcen für Kataloge finden Sie unter Ressourcen für die [Tagging-Aktivierung](tag-resources.md) .
 
