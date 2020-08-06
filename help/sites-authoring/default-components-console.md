@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 95%
 
 ---
 
@@ -25,11 +28,11 @@ It can be accessed from **Tools** -> **General** -> **Components**. In der Konso
 
 >[!NOTE]
 >
->In der Komponentenkonsole werden alle im System vorhandenen Komponenten angezeigt. Im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) werden Komponenten angezeigt, die Autoren zur Verfügung stehen, und alle Komponentengruppen verborgen, die mit einem Punkt beginnen ( `.`).
+>In der Komponentenkonsole werden alle im System vorhandenen Komponenten angezeigt. Im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) werden Komponenten angezeigt, die Autoren zur Verfügung stehen, und alle Komponentengruppen verborgen, die mit einem Punkt beginnen (`.`).
 
-## Suche{#search-features}
+## Suche {#search-features}
 
-Mit dem Symbol **Nur Inhalt** (oben links) können Sie das Fenster **Suche** öffnen, um die Komponenten zu suchen und/oder zu filtern:
+Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern: 
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -52,7 +55,7 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
       * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Da `/apps` zur Laufzeit nicht bearbeitet werden kann, ist die Komponentenkonsole schreibgeschützt.
 
 * **Richtlinien**
 
