@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1764'
+ht-degree: 62%
 
 ---
 
@@ -82,11 +85,11 @@ Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. 
 
 ![chlimage_1-183](assets/chlimage_1-183.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespaces.png)
 
-* **Titel***(erforderlich) *Ein Anzeigentitel für den Namespace.
+* **title***(erforderlich) *Ein Anzeigentitel für den Namensraum.
 
-* **Name***(optional) *Ein Name für den Namespace. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. See [TagID](/help/sites-developing/framework.md#tagid).
+* **Name***(optional) *Ein Name für den Namensraum. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. See [TagID](/help/sites-developing/framework.md#tagid).
 
-* **Beschreibung***(optional) *Eine Beschreibung des Namespace.
+* **Beschreibung***(optional) *Eine Beschreibung des Namensraums.
 
 Wenn Sie die erforderlichen Informationen eingegeben haben:
 
@@ -102,7 +105,7 @@ Wenn Sie einen Namespace oder ein anderes Tag auswählen, werden die folgenden V
 * [Bearbeiten](#editing-tags)
 * [Verschieben](#moving-tags)
 * [Merge](#merging-tags)
-* [Veröffentlichen](#publishing-tags)
+* [Veröffentlichen  ](#publishing-tags)
 * [Veröffentlichung rückgängig machen](#unpublishing-tags)
 * [Löschen](#deleting-tags)
 
@@ -187,11 +190,13 @@ When a namespace or other tag is selected, selecting the **`Move`** icon will al
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Pfad**
+
    *(schreibgeschützt)* Der aktuelle Pfad zum ausgewählten Tag.
 
 * **Verschieben nach** Wählen Sie den neuen Pfad aus, in den das Tag verschoben werden soll.
 
-* **&quot;Umbenennen&quot;** zeigt zunächst den aktuellen Tag `name`an. A new `name`may be entered.
+* **Beim Umbenennen wird** zunächst die aktuelle 
+`name`des Tags. A new `name`may be entered.
 
 * 
 * Klicken Sie auf **Speichern**.
@@ -207,6 +212,7 @@ When a namespace or other tag is selected, selecting the **`Merge`**icon will op
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Pfad**
+
    *(schreibgeschützt)* Der Pfad des Tags, der zum Zusammenführen in ein anderes Tag ausgewählt wurde.
 
 * **Zusammenführen in** Wählen Sie den Pfad des Tags aus, mit dem das erste Tag zusammengeführt werden soll.
@@ -248,7 +254,7 @@ Tag permissions are [&#39;secure (by default)&#39;](/help/sites-administering/pr
 
       * z. B. unter http://localhost:4502/useradmin.
    * Wählen Sie im linken Bedienfeld die Gruppe oder die Benutzer aus, für die die [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
-   * im rechten Bereich den **Pfad **zum Tag-Namespace
+   * im rechten Bereich den **Pfad **zum Tag-Namensraum
 
       * for example, `/content/cq:tags/mycommunity`
    * select the `checkbox`in the **Read** column
