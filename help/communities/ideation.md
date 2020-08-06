@@ -1,6 +1,6 @@
 ---
-title: Grundlegende Informationen
-seo-title: Grundlegende Informationen
+title: Grundlagen der Ideenfindung
+seo-title: Grundlagen der Ideenfindung
 description: Übersicht über die Ideenfunktion
 seo-description: Übersicht über die Ideenfunktion
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 6%
 
 ---
 
 
-# Grundlegende Informationen {#ideation-essentials}
+# Grundlagen der Ideenfindung {#ideation-essentials}
 
 Diese Seite bietet die wesentlichen Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnelt, aber mit der Möglichkeit, als Entwurf zu speichern und ein stärker gemeinschaftliches Gefühl.
 
