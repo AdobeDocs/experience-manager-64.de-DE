@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3137'
+ht-degree: 82%
 
 ---
 
@@ -107,6 +110,7 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 >* CRX berücksichtigt keine Benutzerhierarchie bei der Kompilierung der Liste.
 >* CRX verwendet nur dann eine Gruppenhierarchie, wenn Sie eine Gruppe als Mitglied einer anderen Gruppe einfügen. Es gibt keine automatische Vererbung (Übernahme) von Gruppenberechtigungen.
 >* Die Reihenfolge, in der Sie die Gruppen festlegen, hat keinen Einfluss auf die Zugriffsrechte.
+
 >
 
 
@@ -267,6 +271,7 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 >
 >* Benutzer
 >* Gruppen mit vielen Mitgliedern
+
 >
 
 
@@ -346,9 +351,9 @@ Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt a
 
 **Gruppenmitgliedschaft** : Zeigt alle Gruppen an, denen das aktuelle Gruppenkonto angehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
-Durch Klicken auf eine Gruppen-ID wird das Dialogfeld für diese Gruppe geöffnet.
+Wenn Sie auf eine Gruppen-ID klicken, wird das Dialogfeld für diese Gruppe geöffnet.
 
-**Mitglieder** Listet alle Konten (Benutzer und/oder Gruppen) auf, die Mitglieder der aktuellen Gruppe sind.
+**Mitglieder** Listen alle Konten (Benutzer und/oder Gruppen), die Mitglieder der aktuellen Gruppe sind.
 
 Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
@@ -446,7 +451,8 @@ Sie können Richtlinien für Folgendes auswählen:
 
 * **Aktueller Pfad**: Wählen Sie wie im vorherigen Beispiel eine Ressource innerhalb des Repositorys aus. Die Richtlinien für diesen aktuellen Pfad werden angezeigt.
 
-* **Repository**: Wählt die Zugriffssteuerung auf Repository-Ebene aus. Beispiel: Wenn Sie die Berechtigung `jcr:namespaceManagement` festlegen, die nur für das Repository und nicht für einen Knoten relevant ist.
+* **Repository**: Wählt die Zugriffssteuerung auf Repository-Ebene aus. Wenn Sie beispielsweise die Variable 
+`jcr:namespaceManagement` -Berechtigung, die nur für das Repository relevant ist, nicht für einen Knoten.
 
 * **Prinzipal** Ein Prinzipal, der im Repository registriert ist
 
@@ -478,11 +484,11 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>rep:write</code></td> 
-   <td>Dies ist ein Jackrabbit-spezifisches aggregiertes Privileg von jcr:write und jcr:nodeTypeManagement.<br /> </td> 
+   <td>Dies ist ein Jackrabbit-spezifisches Aggregat-Privileg von jcr:write und jcr:nodeTypeManagement.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:all</code></td> 
-   <td>Dies ist eine aggregierte Berechtigung, die alle anderen vordefinierten Berechtigungen enthält.</td> 
+   <td>Dies ist eine Aggregat-Berechtigung, die alle anderen vordefinierten Berechtigungen enthält.</td> 
   </tr> 
   <tr> 
    <td><strong>Erweitert</strong></td> 
@@ -498,7 +504,7 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:lifecycleManagement</code></td> 
-   <td>Durchführen von Lebenszyklusoperationen auf einem Knoten.</td> 
+   <td>Führen Sie Lebenszyklusoperationen auf einem Knoten durch.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:lockManagement</code></td> 
@@ -506,7 +512,7 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:modifyAccessControl</code></td> 
-   <td>Ändern Sie die Zugriffssteuerungsrichtlinien eines Knotens.</td> 
+   <td>Ändern Sie die Zugriffskontrollen einer Node.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:modifyProperties</code></td> 
@@ -514,7 +520,7 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:namespaceManagement</code></td> 
-   <td>Registrieren, Rückgängigmachen und Ändern von Namespace-Definitionen.</td> 
+   <td>Registrieren, heben Sie die Registrierung auf und ändern Sie die Namensraum-Definitionen.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:nodeTypeDefinitionManagement</code></td> 
@@ -522,11 +528,11 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:nodeTypeManagement</code></td> 
-   <td>Fügen Sie Mixin-Knotentypen hinzu und entfernen Sie sie und ändern Sie den primären Knotentyp einer Node. Dies schließt auch alle Aufrufe der Node.addNode- und XML-Importmethoden ein, bei denen der Mixin-Typ oder primäre Typ des neuen Knotens explizit festgelegt ist.</td> 
+   <td>Hinzufügen und entfernen Sie mixin-Knotentypen und ändern Sie den primären Knotentyp einer Node. Dies schließt auch alle Aufrufe der Node.addNode- und XML-Importmethoden ein, bei denen der Mixin-Typ oder primäre Typ des neuen Knotens explizit festgelegt ist.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:readAccessControl</code></td> 
-   <td>Lesen Sie die Zugriffssteuerungsrichtlinie eines Knotens.</td> 
+   <td>Lesen Sie die Richtlinie zur Zugriffskontrolle einer Node.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:removeChildNodes</code></td> 
@@ -550,7 +556,7 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:write</code></td> 
-   <td><br /> Dies ist eine aggregierte Berechtigung, die Folgendes enthält: - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
+   <td>Dies ist eine Aggregat-Berechtigung, die Folgendes enthält:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
   </tr> 
   <tr> 
    <td><code>rep:privilegeManagement</code></td> 
