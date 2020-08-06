@@ -35,7 +35,7 @@ Siehe auch [Arbeiten mit der 3D-Sites-Komponente](using-the-3d-sites-component.m
 
 >[!NOTE]
 >
->Vergewissern Sie sich vor dem Herunterladen und Installieren des 3D-Pakets, dass alle erforderlichen AEM-Pakete erfolgreich installiert wurden. Siehe [Versionshinweise zu AEM 3D.](install-config-3d.md)
+>Vergewissern Sie sich vor dem Herunterladen und Installieren des 3D-Pakets, dass alle erforderlichen AEM erfolgreich installiert wurden. Siehe [Versionshinweise zu AEM 3D.](install-config-3d.md)
 
 ## Installieren der Autodesk FBX SDK-Bibliothek {#installing-the-autodesk-fbx-sdk-library}
 
@@ -91,7 +91,7 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
 1. Klicken Sie in AEM auf **[!UICONTROL Tools > Administration > Bereitstellung > Paketmanager]**.
 
-1. Laden Sie das heruntergeladene Feature Pack auf AEM hoch. Suchen Sie es und klicken Sie auf **[!UICONTROL Installieren]**.
+1. Laden Sie das heruntergeladene Feature Pack zu AEM hoch. Suchen Sie es und klicken Sie auf **[!UICONTROL Installieren]**.
 
 1. In the **[!UICONTROL Install Package]** dialog box, expand **Advanced Settings**, then set **[!UICONTROL Access Control Handling]** to **Merge**.
 1. Klicken Sie auf **[!UICONTROL Installieren]**, um die Installation des Pakets zu starten.
@@ -123,7 +123,7 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 1. Klicken Sie in der rechten oberen Ecke der Seite **[!UICONTROL DAM Update Asset]** auf **[!UICONTROL Synchronisieren]** , um das bearbeitete Workflow-Modell zu speichern.
 1. Starten Sie AEM neu.
 
-   Nach dem Neustart können Sie 3D-Inhalte hochladen und von AEM verarbeiten lassen.
+   Nach dem Neustart können Sie 3D-Inhalte hochladen und AEM verarbeiten.
 
    Fahren Sie mit [Validieren der Einstellungen von AEM 3D](#validating-the-setup-of-aem-d) fort.
 
@@ -178,7 +178,7 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-## Konfigurieren der Unterstützung für Adobe Dimension-Assets {#configuring-support-for-adobe-dimension-assets}
+## Unterstützung für Adobe Dimension-Assets konfigurieren {#configuring-support-for-adobe-dimension-assets}
 
 >[!NOTE]
 >
@@ -186,19 +186,19 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
 Sie können optional die Unterstützung in AEM 3D für Adobe Dimension-Assets konfigurieren.
 
-Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung, Vorschau und Veröffentlichung von Adobe Dimension 3D-Assets in AEM zuzulassen. Der Dienst konvertiert vom proprietären Adobe Dimension-Format (`.dn`) in eine Variante von glTF (als `.glb` Datei formatiert), die mit dem DN-Asset als Darstellung gespeichert wird. Die `.glb` Darstellung wird für die webbasierte Anzeige des 3D-Assets in AEM Assets, Sites und Bildschirmen verwendet und steht auch zum Herunterladen für Anwendungen von Drittanbietern zur Verfügung.
+Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung, Vorschau und Veröffentlichung von Adobe Dimension 3D-Assets in AEM zuzulassen. Der Dienst konvertiert vom proprietären Adobe Dimension-Format (`.dn`) in eine Variante von glTF (als `.glb` Datei formatiert), die mit dem DN-Asset als Darstellung gespeichert wird. Die `.glb` Darstellung wird für die webbasierte Anzeige des 3D-Assets in AEM Assets, Sites und Bildschirmen verwendet und kann auch für Anwendungen von Drittanbietern heruntergeladen werden.
 
 >[!NOTE]
 >
->Der Konvertierungsdienst wird von Adobe in Amazon AWS gehostet. Nach der ordnungsgemäßen Konfiguration des Dienstes werden die auf AEM hochgeladenen `.dn` Dateien dann sicher in den Konvertierungsdienst kopiert, indem in Amazon S3 eine temporäre Datenspeicherung verwendet wird. Das Konversionsergebnis wird über eine temporäre S3-Datenspeicherung zurück auf AEM übertragen. Alle Überweisungen und Datenspeicherung sind gesichert. Außerdem bleiben die Inhalte in S3 und der Konvertierungsdienst nur kurz (normalerweise höchstens wenige Minuten) erhalten.
+>Der Konvertierungsdienst wird von der Adobe in Amazon AWS gehostet. Nach der ordnungsgemäßen Konfiguration des Dienstes werden die `.dn` Dateien, die in AEM hochgeladen wurden, mithilfe der temporären Datenspeicherung in Amazon S3 sicher in den Konvertierungsdienst kopiert. Das Konversionsergebnis wird über eine temporäre S3-Datenspeicherung zurück auf AEM übertragen. Alle Überweisungen und Datenspeicherung sind gesichert. Außerdem bleiben die Inhalte in S3 und der Konvertierungsdienst nur kurz (normalerweise höchstens wenige Minuten) erhalten.
 
-**So konfigurieren Sie die Unterstützung für Adobe Dimension-Assets**:
+**So konfigurieren Sie den Suoport für Adobe Dimension-Assets**:
 
-1. Wenden Sie sich an Ihren Adobe AEM-Kundenbetreuer, Bereitstellungsexperten oder Supportmitarbeiter, um Anmeldeinformationen für **AEM3D-Dienste** anzufordern.
+1. Wenden Sie sich an Ihren Adobe AEM Kundenbetreuer, Bereitstellungsexperten oder Supportmitarbeiter, um Anmeldeinformationen für **AEM3D-Dienste** anzufordern.
 
    >[!NOTE]
    >
-   >Für jedes Unternehmen ist unabhängig von der Anzahl der AEM-Instanzen, auf denen die Anmeldeinformationen installiert sind, nur ein Satz Anmeldeinformationen erforderlich.
+   >Für jedes Unternehmen ist unabhängig von der Anzahl AEM Instanzen, auf denen die Anmeldeinformationen installiert sind, nur ein Satz Anmeldeinformationen erforderlich.
 
 1. Vergewissern Sie sich, dass Sie die folgenden Informationen erhalten haben:
 
@@ -209,7 +209,7 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
    * userPoolId
    * clientId
 
-1. Melden Sie sich als Administrator bei Ihrer AEM-Autoreninstanz an, in der die Anmeldeinformationen installiert werden sollen, und öffnen Sie dann **[!UICONTROL CRXDE Lite]**.
+1. Melden Sie sich als Administrator bei Ihrer AEM Autoreninstanz an, in der die Anmeldeinformationen installiert werden sollen, und öffnen Sie dann die **[!UICONTROL CRXDE Lite]**.
 1. Konfigurieren Sie die neuen Anmeldeinformationen wie folgt in CRXDE Lite:
 
    1. Navigieren Sie zu `/libs/settings/dam/v3D/services/dncr` und legen Sie die `clientId` Eigenschaft auf den neuen Wert fest.
@@ -217,16 +217,16 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
    1. Laden Sie den neuen Kennwortwert in die `encryptedPassword` Eigenschaft. Dieser Wert wird automatisch verschlüsselt, wenn Sie auf Alle **[!UICONTROL speichern]** tippen.
    1. Tippen Sie auf Alle **[!UICONTROL speichern]**, laden Sie die Seite neu und überprüfen Sie dann, ob die `encryptedPassword` Eigenschaft eine andere Zeichenfolge enthält, die von geschweiften Klammern eingeschlossen ist. Dieses Erscheinungsbild zeigt an, dass das Kennwort korrekt verschlüsselt und sicher ist.
 
-1. Geben Sie das Format der `.glb` Konvertierungswiedergabe an, indem Sie Folgendes in **[!UICONTROL CRXDE Lite]** ausführen:
+1. Geben Sie das Format der `.glb` Konvertierungsdarstellung an, indem Sie Folgendes in der **[!UICONTROL CRXDE Lite]** ausführen:
 
-   1. Navigieren Sie zu `/libs/settings/dam/v3D/services/dncr` in **[!UICONTROL CRXDE Lite]**.
+   1. Navigieren Sie in `/libs/settings/dam/v3D/services/dncr` der **[!UICONTROL CRXDE Lite]**.
    1. Legen Sie für die `outputFormat` Eigenschaft entweder `Dn` oder `generic`fest.
 
-      Bei Festlegung auf `Dn`, umfasst die `.glb` Konvertierung Adobe-spezifische Erweiterungen, wie z. B. IBL-Beleuchtung, um die beste Qualität bei der Anzeige von Dn-Assets in AEM zu gewährleisten. Die konvertierte .glb-Darstellung wird jedoch in Drittanbieteranwendungen möglicherweise nicht gut dargestellt.
+      Bei Festlegung auf `Dn`, umfasst die `.glb` Konvertierung für die Anzeige von DN-Assets in AEM Adobe spezifische Erweiterungen wie IBL-Beleuchtung. Die konvertierte .glb-Darstellung wird jedoch in Drittanbieteranwendungen möglicherweise nicht gut dargestellt.
 
-      Bei Festlegung auf `generic`ist die `.glb` Darstellung generisch ohne Adobe-spezifische Erweiterungen. Diese Einstellung ermöglicht die Verwendung in Anwendungen von Drittanbietern, während die Anzeige mit dem AEM 3D-Viewer visuell nicht optimal ist.
+      Bei Festlegung auf `generic`ist die `.glb` Darstellung generisch ohne Adobe-spezifische Erweiterungen. Diese Einstellung ermöglicht die Verwendung in Anwendungen von Drittanbietern, während die Anzeige mit dem AEM 3D-Viewer visuell suboptimal ist.
 
-1. Aktivieren Sie das Dn-Dateiformat, indem Sie Folgendes in **[!UICONTROL CRXDE Lite]** ausführen:
+1. Aktivieren Sie das DN-Dateiformat, indem Sie Folgendes in der **[!UICONTROL CRXDE Lite]** ausführen:
 
    1. Navigieren Sie zu `/libs/settings/dam/v3D/assetTypes/Dn`.
    1. Set the `Enabled` property to true.
@@ -247,5 +247,5 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
    In diesem Fall können Sie die Konvertierung wie folgt beheben:
 
    * Löschen Sie das Asset und laden Sie es dann erneut hoch.
-   * Vergewissern Sie sich, dass Sie alle Konfigurationsparameter in **[!UICONTROL CRXDE Lite]** korrekt eingestellt haben.
+   * Vergewissern Sie sich, dass Sie alle Konfigurationsparameter in der **[!UICONTROL CRXDE Lite]** korrekt eingestellt haben.
    * Vergewissern Sie sich, dass keine Firewall den Zugriff auf den Konvertierungsdienst und AWS-Endpunkte blockiert.
