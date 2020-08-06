@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1715'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +39,7 @@ Um einen Satz, einen Absatz oder eine Textzeichenfolge in einer interaktiven Kom
 
 For more information, see Create rule in text in [Texts in Interactive Communications](/help/forms/using/texts-interactive-communications.md).
 
-Wenn Sie das Textfragment in eine interaktive Kommunikation einbeziehen und Agent die Agent-Benutzeroberfläche zur Erstellung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
+Wenn Sie das Textfragment in eine interaktive Kommunikation einbeziehen und der Agent die Agent-Benutzeroberfläche zur Erstellung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
 
 ### Beispiel: Wenn die Inline-Bedingung in einem Brief verwendet wird, um die entsprechende Adresse zu rendern  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
@@ -82,6 +85,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    * Eine XML-Beispieldatendatei, die basierend auf dem relevanten Datenwörterbuch erstellt wurde, während der Brief mit Beispieldaten in der Vorschau angezeigt wird.
    * Eine XML-Datendatei, am relevanten Datenwörterbuch angehängt ist.
+
    Weitere Informationen finden Sie unter [Datenwörterbuch](/help/forms/using/data-dictionary.md).
 
    ![5_letteroutput](assets/5_letteroutput.png)
@@ -185,6 +189,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
    * **Zeilenumbruch:** Einfügen eines Zeilenumbruchs nach jedem Transaktionseintrag im Ausgabebrief.
    * **Text:** Fügt das angegebene Textzeichen nach jedem Transaktionseintrag in den Ausgabebrief ein.
+
    Nachdem Sie die Bedingung eingefügt haben, wird der Text mit Wiederholung rot hervorgehoben und ein Ziehgriff wird auf der linken Seite angezeigt. Sie können die Maus über dem Ziehgriff auf der linken Seite der Wiederholung bewegen, um das Wiederholungskonstrukt anzuzeigen.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
@@ -197,6 +202,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
    * Eine XML-Beispieldatendatei, die basierend auf dem relevanten Datenwörterbuch erstellt wurde, während der Brief mit Beispieldaten in der Vorschau angezeigt wird
    * Eine XML-Datendatei, am relevanten Datenwörterbuch angehängt ist.
+
    Weitere Informationen finden Sie unter [Datenwörterbuch](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
