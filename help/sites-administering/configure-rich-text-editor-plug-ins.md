@@ -1,16 +1,19 @@
 ---
-title: Konfigurieren der Rich-Text-Editor-Plug-ins
+title: 'Konfigurieren der Rich-Text-Editor-Plug-ins    '
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+workflow-type: tm+mt
+source-wordcount: '4220'
+ht-degree: 93%
 
 ---
 
 
-# Konfigurieren der Rich-Text-Editor-Plug-ins {#configure-the-rich-text-editor-plug-ins}
+# Konfigurieren der Rich-Text-Editor-Plug-ins   {#configure-the-rich-text-editor-plug-ins}
 
-RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „features“ bereitgestellt. Sie können die Eigenschaft „features“ so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-Ins spezifisch konfigurieren.
+RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Eigenschaft „features“ so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-ins spezifisch konfigurieren.
 
 Weitere Informationen zu den anderen RTE-Konfigurationen finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
 
@@ -22,21 +25,21 @@ Weitere Informationen zu den anderen RTE-Konfigurationen finden Sie unter [Konfi
 
 Gehen Sie wie folgt vor, um ein Plug-in zu aktivieren. Einige Schritte sind nur erforderlich, wenn Sie ein Plug-in zum ersten Mal konfigurieren, da die entsprechenden Knoten noch nicht vorhanden sind.
 
-By default, `format`, `link`, `list`, `justify`, and `control` plugins and all their features are enabled in RTE.
+Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `control` sowie alle ihre Funktionen im RTE aktiviert.
 
 >[!NOTE]
 >
 >The respective rtePlugins node is referred to as &lt;*rtePlugins-node*> to avoid duplication in this article.
 
 1. Suchen Sie mithilfe von CRXDE Lite nach der Textkomponente für Ihr Projekt.
-1. Create the parent node of `<rtePlugins-node>` if it does not exist, before configuring any RTE plug-ins:
+1. Falls noch nicht vorhanden, erstellen Sie den übergeordneten Knoten von `<rtePlugins-node>`, bevor Sie mit dem Konfigurieren von RTE-Plug-ins beginnen:
 
    * Abhängig von Ihrer Komponente sind die übergeordneten Knoten:
 
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * ein alternativer Konfigurationsknoten: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * Are of type: **jcr:primaryType** `cq:Widget`
+   * Sie weisen den folgenden Typ auf: **jcr:primaryType** `cq:Widget`
    * Beide verfügen über die folgende Eigenschaft:
 
       * **Name** `name`
@@ -44,7 +47,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
       * **Wert** `./text`
 
 
-1. Depending on the interface you are configuring for, create a node `<rtePlugins-node>`, if it does not exist:
+1. Je nach Benutzeroberfläche, für die Sie Konfigurationen vornehmen, müssen Sie einen Knoten `<rtePlugins-node>` erstellen, falls noch nicht vorhanden:
 
    * **Name** `rtePlugins`
    * **Typ** `nt:unstructured`
@@ -54,7 +57,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
    * **Typ** `nt:unstructured`
    * **Name:** die Plug-in-ID des erforderlichen Plug-ins
 
-After activating a plug-in, follow these guidelines to configure the `features` property.
+Halten Sie sich nach der Aktivierung eines Plug-ins an diese Richtlinien, um die Eigenschaft `features` zu konfigurieren.
 
 <table> 
  <tbody> 
@@ -66,9 +69,9 @@ After activating a plug-in, follow these guidelines to configure the `features` 
   </tr> 
   <tr> 
    <td><strong>Name</strong></td> 
-   <td>features</td> 
-   <td>features</td> 
-   <td>features</td> 
+   <td>Funktionen</td> 
+   <td>Funktionen</td> 
+   <td>Funktionen</td> 
   </tr> 
   <tr> 
    <td><strong>Typ</strong></td> 
@@ -85,11 +88,11 @@ After activating a plug-in, follow these guidelines to configure the `features` 
  </tbody> 
 </table>
 
-## Das findreplace-Plug-in {#understand--findreplace-plugin}
+## Grundlegendes zum findreplace-Plug-in {#understand--findreplace-plugin}
 
-The `findreplace` plug-in does not need any configuration. Es funktioniert aus der Schachtel.
+Das `findreplace`-Plug-in (Suchen und Ersetzen) erfordert keine Konfiguration. Es ist vorkonfiguriert und sofort einsatzfähig.
 
-Bei Verwendung der Funktion zum Ersetzen sollte die zu ersetzende Zeichenfolge gleichzeitig mit der Zeichenfolge Suchen eingegeben werden. Sie können jedoch noch auf Suchen klicken, um nach der Zeichenfolge zu suchen, bevor Sie sie ersetzen. Wenn die Zeichenfolge zum Ersetzen eingegeben wird, nachdem auf Suchen geklickt wurde, wird die Suche auf den Anfang des Textes zurückgesetzt.
+Bei Verwendung der Funktion zum Ersetzen sollte die Zeichenfolge zum Ersetzen gleichzeitig mit der Suchzeichenfolge eingegeben werden. Sie können jedoch weiterhin auf „Suchen“ klicken, um nach der Zeichenfolge zu suchen, bevor Sie sie ersetzen. Wenn die Zeichenfolge zum Ersetzen eingegeben wird, nachdem auf „Suchen“ geklickt wurde, wird die Suche auf den Anfang des Textes zurückgesetzt.
 
 Das Dialogfeld „Suchen und ersetzen“ wird transparent, wenn auf „Suchen“ geklickt wird, und undurchsichtig, wenn auf „Ersetzen“ geklickt wird. Dadurch kann der Autor den Text überprüfen, den der Autor ersetzen wird. Wenn der Benutzer auf „Alle ersetzen“ klickt, wird das Dialogfeld geschlossen und die Anzahl der vorgenommenen Ersetzungen angezeigt.
 
@@ -99,13 +102,13 @@ Bei Verwendung des RTE können Autoren Inhalte in einem der drei folgenden Modi 
 
 * **Browsermodus**: Fügen Sie Text mit der Standardfunktion des Browsers zum Einfügen ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann.
 
-* **Reiner Textmodus**: Fügen Sie Inhalte aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine AEM-Komponente eingefügt wird.
+* **Klartextmodus**: Fügen Sie Inhalte aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine AEM-Komponente eingefügt wird.
 
-* **Microsoft Word-Modus**: Fügen Sie beim Kopieren aus Microsoft Word Text, einschließlich Tabellen, mitsamt Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Webseite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
+* **Microsoft Word-Modus**: Fügen Sie beim Kopieren aus Microsoft Word Text, einschließlich Tabellen, mitsamt Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
-### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen  {#configure-paste-options-available-on-the-rte-toolbar}
+### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen {#configure-paste-options-available-on-the-rte-toolbar}
 
-Sie können Ihren Autoren in der RTE-Symbolleiste nur manche, alle oder keine dieser drei Symbole zur Verfügung stellen:
+Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine dieser drei Symbole zur Verfügung stellen:
 
 * **[!UICONTROL Einfügen (STRG+V)]**: Kann vorkonfiguriert werden, um einem der drei obigen Einfügemodi zu entsprechen.
 
@@ -119,8 +122,8 @@ Um die Anzeige der Symbole in RTE zu konfigurieren, führen Sie folgende Schritt
 
    `/apps/<myProject>/components/text`
 
-1. Navigate to the node `rtePlugins/edit`. Lesen Sie die Informationen unter [Aktivieren von Plug-ins](#activateplugin), falls noch kein Knoten vorhanden ist.
-1. Erstellen Sie die Eigenschaft `features` auf dem Knoten `edit` und fügen Sie eine oder mehrere Funktionen hinzu. Speichern Sie alle Änderungen.
+1. Navigieren Sie zum Knoten `rtePlugins/edit`. Lesen Sie die Informationen unter [Aktivieren von Plug-ins](#activateplugin), falls noch kein Knoten vorhanden ist.
+1. Erstellen Sie die Eigenschaft `features` im Knoten `edit` und fügen Sie eine oder mehrere Funktionen hinzu. Speichern Sie alle Änderungen.
 
 ### Verhalten des Symbols bzw. der Tastenkombination „Einfügen (STRG+V)“ konfigurieren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
@@ -128,24 +131,24 @@ Sie können das Verhalten des Symbols **[!UICONTROL Einfügen (STRG+V)]** mit fo
 
 Die Konfiguration ermöglicht die drei folgenden Anwendungsfälle:
 
-* Fügen Sie Text mit der Standardfunktion des Browsers zum Einfügen ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann. Configured using `browser` below.
+* Fügen Sie Text mit der Standardfunktion des Browsers zum Einfügen ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann. Konfiguriert mithilfe von `browser`, wie unten gezeigt.
 
-* Fügen Sie den Inhalt aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine AEM-Komponente eingefügt wird. Configured using `plaintext` below.
+* Fügen Sie den Inhalt aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine AEM-Komponente eingefügt wird. Konfiguriert mithilfe von `plaintext`, wie unten gezeigt.
 
-* Fügen Sie den Text, einschließlich Tabellen, mit Formatierung beim Kopieren aus Microsoft Word ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Webseite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten. Configured using `wordhtml` below.
+* Fügen Sie den Text, einschließlich Tabellen, mit Formatierung beim Kopieren aus Microsoft Word ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten. Konfiguriert mithilfe von `wordhtml`, wie unten gezeigt.
 
-1. In your component, navigate to `<rtePlugins-node>/edit` node. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
+1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/edit`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie im Knoten `edit` eine Eigenschaft mithilfe der folgenden Details:
 
    * **Name** `defaultPasteMode`
    * **Typ** `String`
-   * **Wert** Einer der erforderlichen Einfügemodi `browser`, `plaintext`oder `wordhtml`.
+   * **Wert:** einer der erforderlichen Einfügemodi `browser`, `plaintext` oder `wordhtml`.
 
 ### Konfigurieren der beim Einfügen von Inhalten zulässigen Formate {#pasteformats}
 
-The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so that you can explicitly define which styles are allowed when pasting in AEM from another program, such as Microsoft Word.
+Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguriert werden. So können Sie explizit festlegen, welche Stile beim Einfügen von Inhalten in AEM von einem anderen Programm wie beispielsweise Microsoft Word aus zulässig sind. 
 
-Wenn beispielsweise beim Einfügen in AEM nur fett formatierte Formate und Listen zulässig sein sollten, können Sie die anderen Formate herausfiltern. Dies wird als konfigurierbare Paste-Filterung bezeichnet, die für beide Aufgaben durchgeführt werden kann:
+Sollen beim Einfügen von Inhalten in AEM zum Beispiel nur fett gedruckte Formate und Listen zulässig sein, können Sie die anderen Formate herausfiltern. Dieser Vorgang wird als konfigurierbare Filterung beim Einfügen bezeichnet, die für Folgendes verwendet werden kann:
 
 * [Text](#pastemodes)
 * [Links](#linkstyles)
@@ -154,7 +157,7 @@ Für Links können Sie zudem die Protokolle definieren, die automatisch akzeptie
 
 So konfigurieren Sie, welche Formate beim Einfügen von Text in AEM von einem anderen Programm aus zulässig sind:
 
-1. In your component, navigate to the node `<rtePlugins-node>/edit`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
+1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/edit`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie unter dem Knoten `edit` einen Knoten, unter dem die HTML-Einfügeregeln gespeichert werden sollen:
 
    * **Name** `htmlPasteRules`
@@ -172,7 +175,8 @@ So konfigurieren Sie, welche Formate beim Einfügen von Text in AEM von einem an
    * **Name** `underline`
    * **Name:** `anchor` (sowohl für Links als auch für benannte Anker)
    * **Name** `image`
-   All properties are of **Type** `Boolean`, so in the appropriate **Value** you can either select or remove the check mark to enable or disable the functionality.
+
+   Alle Eigenschaften weisen den **Typ** `Boolean` auf, daher können Sie für den geeigneten **Wert** das Kontrollkästchen aktivieren oder deaktivieren, um die Funktion entsprechend zu aktivieren oder zu deaktivieren.
 
    >[!NOTE]
    Ist der Wert nicht explizit festgelegt, wird der Standardwert „true“ verwendet und das Format akzeptiert.
@@ -205,7 +209,7 @@ So konfigurieren Sie, welche Formate beim Einfügen von Text in AEM von einem an
   <tr> 
    <td>table</td> 
    <td>nt:unstructured</td> 
-   <td><p>Definiert das Verhalten beim Einfügen von Tabellen.<br /> </p> <p>Dieser Knoten muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Tabellen zulässig ist.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type<code> String</code>) to define how pasted table content is handled. Valid values for <code>ignoreMode</code> are:</p> 
+   <td><p>Definiert das Verhalten beim Einfügen von Tabellen.<br /> </p> <p>Dieser Knoten muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Tabellen zulässig ist.</p> <p>Wenn <code>allow</code> auf <code>false</code> gesetzt ist, müssen Sie den Wert für die Eigenschaft <code>ignoreMode</code> (Typ <code> String</code>) angeben, um festzulegen, wie eingefügte Tabelleninhalte verarbeitet werden sollen. Gültige Werte für <code>ignoreMode</code> sind:</p> 
     <ul> 
      <li><code>remove</code>: Entfernt Tabelleninhalte.</li> 
      <li><code>paragraph</code>: Wandelt Tabellenzellen in Absätze um.</li> 
@@ -214,16 +218,16 @@ So konfigurieren Sie, welche Formate beim Einfügen von Text in AEM von einem an
   <tr> 
    <td>list</td> 
    <td>nt:unstructured</td> 
-   <td><p>Definiert das Verhalten beim Einfügen von Listen.<br /> </p> <p>Muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Listen zulässig ist.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p> 
+   <td><p>Definiert das Verhalten beim Einfügen von Listen.<br /> </p> <p>Muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Listen zulässig ist.</p> <p>Wenn <code>allow</code> auf <code>false</code> gesetzt ist, müssen Sie den Wert für die Eigenschaft <code>ignoreMode</code> (Typ <code>String</code>) angeben, um festzulegen, wie eingefügte Listeninhalte verarbeitet werden. Gültige Werte für <code>ignoreMode</code> sind:</p> 
     <ul> 
-     <li><code>remove</code>: Entfernt den Inhalt der Liste.</li> 
-     <li><code>paragraph</code>: Wandelt Listen in Absätze um.</li> 
+     <li><code>remove</code>: Entfernt Listeninhalte.</li> 
+     <li><code>paragraph</code>: Wandelt Listenelemente in Absätze um.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Example of a valid `htmlPasteRules` structure:
+Beispiel einer gültigen `htmlPasteRules`-Struktur:
 
 ```xml
 "htmlPasteRules": {
@@ -259,21 +263,21 @@ Wenn das styles-Plug-in zum ersten Mal aktiviert wird, sind keine Standardstile 
 * Geben Sie die Speicherorte der Stylesheets an.
 * Geben Sie die einzelnen Stile an, die in der Dropdown-Liste „Stil“ auswählbar sein sollen.
 
-Für spätere (Neu-) Konfigurationen, beispielsweise um weitere Stile hinzuzufügen, befolgen Sie nur die Anweisungen zum Verweisen auf ein neues Stylesheet und zum Angeben zusätzlicher Stile.
+Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Stile hinzuzufügen, befolgen Sie nur die Anweisungen zum Verweisen auf ein neues Stylesheet und zum Angeben zusätzlicher Stile.
 
 >[!NOTE]
-Auch für [Tabellen oder Tabellenzellen können Stile definiert werden](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
+Auch für [Tabellen oder Tabellenzellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) können Stile definiert werden. Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
 
-### Aktivieren der Dropdown-Liste „Stil“{#styleselectorlist}
+### Aktivieren der Dropdown-Auswahlliste „Stil“ {#styleselectorlist}
 
 Aktivieren Sie dazu das styles-Plug-in.
 
-1. In your component, navigate to the node `<rtePlugins-node>/styles`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
-1. Create the `features` property on the `styles` node:
+1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/styles`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
+1. Erstellen Sie die `features`-Eigenschaft für den Knoten `styles`:
 
    * **Name** `features`
    * **Typ** `String`
-   * **Wert** `*` (Sternchen)
+   * **Wert:** `*` (Sternchen)
 
 1. Speichern Sie alle Änderungen.
 
@@ -284,12 +288,13 @@ Sobald das styles-Plug-in aktiviert ist, wird die Dropdown-Liste „Stil“ im D
 
 Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen möchten:
 
-1. Navigate to the root node of your text component, for example `/apps/<myProject>/components/text`.
-1. Add the property `externalStyleSheets` to the parent node of `<rtePlugins-node>`:
+1. Navigieren Sie zum Stammknoten der Textkomponente, beispielsweise `/apps/<myProject>/components/text`.
+1. Fügen Sie dem übergeordneten Knoten des Knotens `<rtePlugins-node>` die Eigenschaft `externalStyleSheets` hinzu:
 
    * **Name** `externalStyleSheets`
-   * **Typ** `String[]` (mehrere Zeichenfolgen) auf **Multi** in CRXDE klicken)
+   * **Typ:** `String[]` (mehrere Zeichenfolgen; klicken Sie in CRXDE auf **Multi**)
    * **Wert(e):** Der Pfad und der Dateiname von jedem Stylesheet, das eingeschlossen werden soll. Verwenden Sie Repository-Pfade.
+
    >[!NOTE]
    Sie können jederzeit Verweise auf weitere Stylesheets hinzufügen.
 
@@ -306,7 +311,7 @@ Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte
 
 ### Festlegen von Stilen, die in der Popup-Liste verfügbar sein sollen {#stylesindropdown}
 
-1. In the component definition, navigate to the node `<rtePlugins-node>/styles`, as created in [Enabling the style drop-down selector](#styleselectorlist).
+1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/styles`, den Sie wie unter [Aktivieren der Dropdown-Auswahl „Stil“](#styleselectorlist) beschrieben erstellt haben.
 1. Erstellen Sie unter dem Knoten `styles` einen neuen Knoten (ebenfalls mit dem Namen `styles`), unter dem die zur Verfügung zu stellende Liste gespeichert werden soll:
 
    * **Name** `styles`
@@ -321,7 +326,7 @@ Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte
 
    * **Name** `cssName`
    * **Typ** `String`
-   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; z. B. `cssClass` anstelle von `.cssClass`)
+   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
 
 1. Fügen Sie demselben Knoten die Eigenschaft `text` hinzu. Dadurch wird der im Auswahlfeld angezeigte Text definiert:
 
@@ -335,7 +340,7 @@ Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte
 
 ## Konfigurieren der Absatzformate {#paraformats}
 
-Any text authored in RTE is placed within a block tag, the default being `<p>`. By enabling the `paraformat` plug-in, you specify additional block tags that can be assigned to paragraphs, using a drop-down selection list. Absatzformate bestimmen den Absatztyp durch Zuweisung des richtigen Block-Tags. Der Autor kann diese mithilfe der Format-Auswahl auswählen und zuweisen. Die Beispiel-Block-Tags beinhalten u. a. den Standardabsatz „&lt;p>“ und die Kopfzeilen „&lt;h1>“, „&lt;h2>“ usw.
+Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmäßig handelt es sich dabei um das Tag `<p>`. Durch Aktivierung des `paraformat`-Plug-ins können Sie weitere Block-Tags festlegen, die mithilfe einer Dropdown-Auswahlliste Absätzen zugewiesen werden können. Absatzformate bestimmen den Absatztyp durch Zuweisung des richtigen Block-Tags. Der Autor kann diese mithilfe der Format-Auswahl auswählen und zuweisen. Die Beispiel-Block-Tags beinhalten u. a. den Standardabsatz „&lt;p>“ und die Kopfzeilen „&lt;h1>“, „&lt;h2>“ usw.
 
 >[!CAUTION]
 Dieses Plug-in eignet sich nicht für Inhalte mit komplexer Struktur, beispielsweise Listen und Tabellen.
@@ -345,21 +350,21 @@ Wenn ein Block-Tag, beispielsweise ein &lt;hr>-Tag, keinem Absatz zugewiesen wer
 
 Wenn das paraformat-Plug-in zum ersten Mal aktiviert wird, sind keine Standabsatzformate verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um Absatzformate für Autoren bereitzustellen:
 
-* Aktivieren Sie die Dropdown-Auswahl-Liste Format.
+* Aktivieren Sie die Dropdown-Auswahlliste „Format“.
 * Legen Sie die Block-Tags fest, die als Absatzformate in der Dropdown-Liste ausgewählt werden können.
 
 Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Formate hinzuzufügen, folgen Sie nur dem entsprechenden Teil der Anweisungen.
 
-### Aktivieren der Dropdown-Auswahl „Format“. {#formatselectorlist}
+### Aktivieren der Dropdown-Auswahl „Format“.   {#formatselectorlist}
 
 Aktivieren Sie zunächst das paraformat-Plug-in:
 
-1. In your component, navigate to the node `<rtePlugins-node>/paraformat`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
-1. Create the `features` property on the `paraformat` node:
+1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/paraformat`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
+1. Erstellen Sie die `features`-Eigenschaft für den Knoten `paraformat`:
 
    * **Name** `features`
    * **Typ** `String`
-   * **Wert** `*` (Sternchen)
+   * **Wert:** `*` (Sternchen)
 
 >[!NOTE]
 Wenn das Plug-in nicht weiter konfiguriert ist, werden die folgenden Standardformate aktiviert:
@@ -377,7 +382,7 @@ Entfernen Sie beim Konfigurieren der Absatzformate des RTE nicht das Absatz-Tag 
 
 Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
-1. In the component definition, navigate to the node `<rtePlugins-node>/paraformat`, as created in [Enabling the format drop-down selector](#styleselectorlist).
+1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie wie unter [Aktivieren der Dropdown-Auswahl „Format“](#styleselectorlist) beschrieben erstellt haben.
 1. Erstellen Sie unter dem Knoten `paraformat` einen neuen Knoten, unter dem die Liste der Formate gespeichert werden soll:
 
    * **Name** `formats`
@@ -407,7 +412,7 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
    Wiederholen Sie die Schritte für jedes erforderliche Format.
 
 >[!CAUTION]
-If you define custom formats, the default formats (`<p>`, `<h1>`, `<h2>`, and `<h3>`) are removed. Re-create `<p>` format as it is the default format.
+Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
 
 ## Konfigurieren von Sonderzeichen {#spchar}
 
@@ -418,16 +423,16 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 >[!CAUTION]
 Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie diese Zeichen bei Bedarf in Ihrer eigenen Auswahl (neu).
 
-### Definieren einzelner Zeichen {#definesinglechar}
+### Definieren einzelner Zeichen   {#definesinglechar}
 
-1. In your component, navigate to the node `<rtePlugins-node>/misctools`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
-1. Create the `features` property on the `misctools` node:
+1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/misctools`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
+1. Erstellen Sie die `features`-Eigenschaft für den Knoten `misctools`:
 
    * **Name** `features`
    * **Typ** `String[]`
    * **Wert** `specialchars`
 
-          (or `String / *` if applying all features for this plug-in)
+          (oder `String / *`, wenn alle Funktionen für dieses Plug-in verwendet werden sollen)
 
 1. Erstellen Sie unter `misctools` einen Knoten, um die Sonderzeichenkonfigurationen zu speichern:
 
@@ -441,14 +446,14 @@ Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrie
 
 1. Fügen Sie unter `chars` einen neuen Knoten hinzu, unter dem eine individuelle Zeichendefinition gespeichert werden soll:
 
-   * **Name:** Sie können einen Namen angeben, dieser sollte jedoch das Zeichen widerspiegeln, wie beispielsweise „half“ (Halb).
+   * **Name:** Sie können einen Namen angeben, dieser sollte jedoch das Zeichen widerspiegeln, wie beispielsweise „half“ (halb).
    * **Typ** `nt:unstructured`
 
 1. Fügen Sie diesem Knoten die folgende Eigenschaft hinzu:
 
    * **Name** `entity`
    * **Typ** `String`
-   * **Wert** der HTML-Darstellung des erforderlichen Zeichens; zum Beispiel `&189;` für die Bruchteile eine Hälfte.
+   * **Wert:** Die HTML-Darstellung des erforderlichen Zeichens, z. B. `&189;` für die Bruchzahl „ein halb“.
 
 1. Speichern Sie die Änderungen.
 
@@ -469,12 +474,14 @@ Fügen Sie in CRXDE ein einzelnes Zeichen hinzu, um es in der RTE-Symbolleiste v
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
+
       **Typ** `Long`
-      **Wert** der [Unicode](https://unicode.org/) -Darstellung (Dezimalzahl) des ersten Zeichens im Bereich
+      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
+
       **Typ** `Long`
-      **Wert** der [Unicode](https://unicode.org/) -Darstellung (Dezimalzahl) des letzten Zeichens im Bereich
+      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
 1. Speichern Sie die Änderungen.
 
@@ -496,49 +503,50 @@ Neben der Definition von Stilen, die auf normalen Text angewendet werden, könne
 Sie können Stile für Tabellen und Tabellenzellen nur in der klassischen Benutzeroberfläche definieren.
 
 >[!NOTE]
-Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Sie wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser können die Ergebnisse unterschiedlich ausfallen. Wenn Sie beispielsweise eine Tabelle in einer RTE-Komponente in Mozilla Firefox in der Benutzeroberfläche &quot;Klassisch&quot;und &quot;Touch&quot;kopieren und einfügen, wird das Layout der Tabelle nicht beibehalten.
+Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Sie wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser können die Ergebnisse unterschiedlich ausfallen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/table`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
-1. Create the `features` property on the `table` node:
+1. Erstellen Sie die `features`-Eigenschaft für den Knoten `table`:
 
    * **Name** `features`
    * **Typ** `String`
-   * **Wert** `*` (Sternchen)
+   * **Wert:** `*` (Sternchen)
+
    >[!NOTE]
    Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
    * **Typ** `String[]`
 
    * **Wert(e):** Nach Bedarf einen oder beide der folgenden Werte:
-      * `table` die Bearbeitung von Tabelleneigenschaften zu ermöglichen; einschließlich der Stile.
-      * `cellprops` , um die Bearbeitung von Zelleneigenschaften einschließlich der Stile zu ermöglichen.
+      * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
+      * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 
 1. Definieren Sie den Speicherort von CSS-Stylesheets, um auf diese zu verweisen. Lesen Sie den Abschnitt [Festlegen des Speicherorts des Stylesheets](#locationofstylesheet), da die Vorgehensweise hier dieselbe ist wie beim Definieren von [Stilen für Text](#textstyles). Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):
 
-   * So definieren Sie Stile für die komplette Tabelle (verfügbar unter **Tabelleneigenschaften**):
+   * Definieren der Stile für die komplette Tabelle (verfügbar unter **Tabelleneigenschaften**):
 
       * **Name** `tableStyles`
       * **Typ** `cq:WidgetCollection`
-   * So definieren Sie Stile für einzelne Tabellenzellen (verfügbar unter **Zellen-Eigenschaften**):
+   * Definieren der Stile für einzelne Tabellenzellen (verfügbar unter **Zellen-Eigenschaften**):
 
       * **Name** `cellStyles`
       * **Typ** `cq:WidgetCollection`
 
 
-1. Create a new node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style:
+1. Erstellen Sie einen neuen Knoten (unter dem Knoten `tableStyles` oder `cellStyles`, sofern erforderlich), der einen einzelnen Stil repräsentiert:
 
-   * **Name** Sie können den Namen angeben, er sollte jedoch den Stil widerspiegeln.
+   * **Name:** Sie können einen Namen angeben, dieser sollte jedoch den Stil widerspiegeln.
    * **Typ** `nt:unstructured`
 
 1. Erstellen Sie in diesem Knoten die folgenden Eigenschaften:
 
-   * So definieren Sie den CSS-Stil, auf den verwiesen werden soll:
+   * Definieren des CSS-Stils, auf den verwiesen werden soll:
 
       * **Name** `cssName`
       * **Typ** `String`
-      * **Wert** des Namens der CSS-Klasse (ohne vorherige `.`z. B. `cssClass` anstelle von `.cssClass`)
-   * So definieren Sie einen beschreibenden Text, der im Dropdown-Selektor angezeigt werden soll:
+      * **Wert:** Der Name der CSS-Klasse (ohne `.` voranzustellen, beispielsweise `cssClass` anstatt `.cssClass`)
+   * Definieren eines beschreibenden Texts, der in der Dropdown-Auswahl angezeigt werden soll:
 
       * **Name** `text`
       * **Typ** `String`
@@ -549,32 +557,32 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
 
 Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern {#hiddenheader}
+### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern     {#hiddenheader}
 
 Manchmal kann es sein, dass Sie Datentabellen ohne visuellen Text in einer Spaltenkopfzeile erstellen, da Sie voraussetzen, dass sich der Zweck der Kopfzeile durch die visuelle Beziehung der Spalte mit anderen Spalten ergibt. In diesem Fall ist es erforderlich, dass Sie ausgeblendeten inneren Text innerhalb der Zelle in der Kopfzeilenzelle bereitstellen, damit Bildschirmlesehilfen und andere unterstützende Technologien Benutzern mit unterschiedlichen Bedürfnissen helfen können, den Zweck der Spalte zu verstehen.
 
-Um die Zugänglichkeit in solchen Fällen zu verbessern, unterstützt der RTE ausgeblendete Kopfzeilenzellen. Darüber hinaus stellt er Konfigurationseinstellungen bezüglich der ausgeblendeten Kopfzeilen in Tabellen bereit. Mit diesen Einstellungen können Sie CSS-Stile auf ausgeblendete Kopfzeilen im Bearbeitungs- und Vorschau-Modus anwenden. Damit Autoren ausgeblendete Kopfzeilen im Bearbeitungsmodus besser identifizieren können, fügen Sie die folgenden Parameter in Ihren Code ein:
+Um die Zugänglichkeit in solchen Fällen zu verbessern, unterstützt der RTE ausgeblendete Kopfzeilenzellen. Darüber hinaus stellt er Konfigurationseinstellungen bezüglich der ausgeblendeten Kopfzeilen in Tabellen bereit. Mithilfe dieser Einstellungen können Sie CSS-Stile auf ausgeblendete Kopfzeilen im Bearbeitungs- und im Vorschaumodus anwenden. Damit Autoren ausgeblendete Kopfzeilen im Bearbeitungsmodus besser identifizieren können, fügen Sie die folgenden Parameter in Ihren Code ein:
 
-* `hiddenHeaderEditingCSS`: Gibt den Namen der CSS-Klasse an, die bei der Bearbeitung von RTE auf die Zelle der ausgeblendeten Kopfzeile angewendet wird.
-* `hiddenHeaderEditingStyle`: Gibt eine Stilzeichenfolge an, die bei der Bearbeitung der RTE auf die Zelle der ausgeblendeten Kopfzeile angewendet wird.
+* `hiddenHeaderEditingCSS`: Gibt den Namen der CSS-Klasse an, die auf die ausgeblendete Kopfzeilenzelle angewendet wird, wenn der RTE bearbeitet wird.
+* `hiddenHeaderEditingStyle`: Gibt eine Stilzeichenfolge an, die auf die ausgeblendete Kopfzeilenzelle angewendet wird, wenn der RTE bearbeitet wird.
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-Um Autoren bei der Anwendung von CSS auf ausgeblendete Header im Vorschau-Modus zu unterstützen, können Sie die folgenden Parameter in Ihren Code einschließen:
+Um Autoren bei der Anwendung von CSS auf ausgeblendete Kopfzeilen im Vorschaumodus zu helfen, können Sie die folgenden Parameter in Ihren Code einfügen:
 
 * `hiddenHeaderClassName`: Gibt den Namen der CSS-Klasse an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird.
 * `hiddenHeaderStyle`: Gibt eine Stilzeichenfolge an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung {#adddict}
+## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung     {#adddict}
 
-Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. the `/en/` branch is checked as English, the `/de/` branch as German.
+Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
 >[!NOTE]
-The message `Spell checking failed` is seen if a check is tried for a language that is not installed. The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Diese Dateien sollten nicht geändert werden.
+The message `Spell checking failed` is seen if a check is tried for a language that is not installed. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden README-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
-Eine AEM-Standardinstallation beinhaltet die Wörterbücher für Englisch (`en_us`) und Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
+Eine AEM Installation beinhaltet die Wörterbücher für Englisch (`en_us`) und Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
 
 1. Navigieren Sie zur Seite [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -589,11 +597,11 @@ Eine AEM-Standardinstallation beinhaltet die Wörterbücher für Englisch (`en_u
    Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da die Wörterbücher jetzt Archivdateien sind, ist es ratsam, eine vollständige Prüfung nach dem Herunterladen durchzuführen.
 
 1. Suchen Sie nach den *.aff- und *.dic-Dateien. Der Dateiname darf nur Kleinbuchstaben aufweisen. Zum Beispiel `de_de.aff` und `de_de.dic`.
-1. Load the .aff and .dic files in the repository at `/apps/cq/spellchecker/dictionaries`.
+1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE überprüft die Rechtschreibung von Wörtern und hebt die falsch geschriebenen Wörter hervor.
-Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden die Textänderungen und falsch geschriebenen Wörter nicht mehr hervorgehoben. Um die Rechtschreibprüfung auszuführen, tippen/klicken Sie erneut auf die Rechtschreibprüfung.
+Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden die Textänderungen und falsch geschriebenen Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
 
@@ -611,11 +619,11 @@ Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschr
 
 1. Speichern Sie die Änderungen.
 
-## Konfigurieren der Tabulator-Schrittweite {#tabsize}
+## Konfigurieren der Tabulator-Schrittweite     {#tabsize}
 
 Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig werden drei geschützte Leerzeichen und ein normales Leerzeichen eingefügt. So definieren Sie die Tabulator-Schrittweite:
 
-1. In your component, navigate to the node `<rtePlugins-node>/keys`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
+1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/keys`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie im `keys`-Knoten die folgende Eigenschaft:
 
    * **Name** `tabSize`
@@ -624,7 +632,7 @@ Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird 
 
 1. Speichern Sie die Änderungen.
 
-## Festlegen des Einzugsrands {#indentmargin}
+## Festlegen des Einzugsrands     {#indentmargin}
 
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
@@ -632,28 +640,29 @@ Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Ei
 Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/lists`. Erstellen Sie diese Knoten, falls sie nicht bereits vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
-1. On the `lists` node create the `identSize` parameter:
+1. Erstellen Sie im `lists`-Knoten den `identSize`-Parameter:
 
    * **Name**: `identSize`
    * **Typ**: `Long`
-   * **Wert:** Die Anzahl an Pixel, die für den Einzugsrand erforderlich sind
+   * **Wert:** Die Anzahl der Pixel, die für den Einzugsrand erforderlich sind
 
 ## Konfigurieren der Höhe des bearbeitbaren Bereichs {#editablespace}
 
 Sie können die Höhe des bearbeitbaren Bereichs definieren, der innerhalb des Komponenten-Dialogfelds angezeigt wird:
 
-1. On the `../items/text` node in the dialog definition for the component, create a new property:
+1. Erstellen Sie im `../items/text`-Knoten in der Dialogfelddefinition für die Komponente eine neue Eigenschaft:
 
    * **Name** `height`
    * **Typ** `Long`
    * **Wert:** Die Höhe der Bearbeitungsfläche in Pixeln
+
    >[!NOTE]
    Dies wirkt sich nicht auf die Höhe des Dialogfelds aus.
 
 1. Speichern Sie die Änderungen.
 
 >[!NOTE]
-Dies ist nur bei Verwendung der RTE in einem Dialogfeld möglich (nicht ersetzende Bearbeitung in der klassischen Benutzeroberfläche).
+Diese Option ist nur anwendbar, wenn der RTE in einem Dialogfeld verwendet wird (nicht bei Bearbeitung im Kontext in der klassischen Benutzeroberfläche).
 
 ## Konfigurieren von Stilen und Protokollen für Links {#linkstyles}
 
@@ -665,16 +674,18 @@ Wenn Sie Links in AEM einfügen, können Sie Folgendes definieren:
 Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefügt werden, müssen Sie HTML-Regeln definieren.
 
 1. Suchen Sie mithilfe von CRXDE Lite nach der Textkomponente für Ihr Projekt.
-1. Create a new node at the same level as `<rtePlugins-node>`, that is, create the node under the parent node of `<rtePlugins-node>`:
+1. Erstellen Sie auf derselben Ebene wie `<rtePlugins-node>` einen neuen Knoten (d. h. erstellen Sie den Knoten unter dem übergeordneten Knoten von `<rtePlugins-node>`):
 
    * **Name** `htmlRules`
    * **Typ** `nt:unstructured`
+
    >[!NOTE]
-   The `../items/text` node has the property:
+   Der Knoten `../items/text` hat die Eigenschaft:
    * **Name** `xtype`
    * **Typ** `String`
    * **Wert** `richtext`
-   The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
+
+   Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Nachfolgend sehen Sie zwei Beispiele:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
 
@@ -690,18 +701,18 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
       * **Name** `cssInternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; z. B. `cssClass` anstelle von `.cssClass`)
+      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
    * CSS-Stil für externe Links
 
       * **Name** `cssExternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; z. B. `cssClass` anstelle von `.cssClass`)
-   * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
+      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+   * Array von gültigen **Protokollen** (unter anderem: https://, https:// file://, mailto:)
 
       * **Name** `protocols`
       * **Typ** `String[]`
       * **Wert(e):** Ein oder mehrere Protokolle
-   * **defaultProtocol** (Eigenschaft des Typs **String**): Protokoll, das verwendet wird, wenn der Benutzer keines explizit festlegt
+   * **defaultProtocol** (Eigenschaft vom Typ **Zeichenfolge**): Protokoll, das verwendet wird, wenn der Benutzer keines explizit festlegt
 
       * **Name** `defaultProtocol`
       * **Typ** `String`
@@ -710,6 +721,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
       * **Name** `targetConfig`
       * **Typ** `nt:unstructured`
+
       Definieren Sie im Knoten `targetConfig` die erforderlichen Eigenschaften:
 
       * Legen Sie den Zielmodus fest:
@@ -718,9 +730,9 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
          * **Typ** `String`)
          * **Wert(e)**:
 
-            * `auto`: bedeutet, dass eine automatische Zielgruppe gewählt wird
+            * `auto`: bedeutet, dass ein automatisches Ziel ausgewählt wird
 
-               (durch die `targetExternal` Eigenschaft für externe Links oder `targetInternal` für interne Links angegeben).
+               (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
 
             * `manual` : In diesem Kontext unzulässig
             * `blank` : In diesem Kontext unzulässig
@@ -728,7 +740,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
          * **Name** `targetInternal`
          * **Typ** `String`
-         * **Zielgruppe für interne Links bewerten** (nur verwenden, wenn der Modus `auto`)
+         * **Wert:** Das Ziel für interne Links (nur verwenden, wenn der Modus `auto` aktiv ist)
       * Das Ziel für externe Links:
 
          * **Name** `targetExternal`
