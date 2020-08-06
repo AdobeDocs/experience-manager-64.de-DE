@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 86%
 
 ---
 
@@ -86,6 +89,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    * Zugelassene Komponenten
    * Einstellungen
+
    **Zugelassene Komponenten**
 
    On the **Allowed Components** tab, you define which components are available for the parsys.
@@ -95,6 +99,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
    * Ein Minuszeichen zeigt an, dass mindestens eines, aber nicht alle Elemente in einer Gruppe ausgewählt sind.
    * Eine Suche zum Filtern einer Komponente nach Name ist verfügbar.
    * Die rechts neben dem Namen der Komponentengruppe aufgelisteten Werte stellen die Gesamtanzahl der ausgewählten Komponenten in diesen Gruppen dar (unabhängig vom Filter).
+
    Die Konfiguration wird pro Seitenkomponente definiert. Wenn untergeordnete Seiten dieselbe Vorlage und/oder Seitenkomponente verwenden (normalerweise ausgerichtet), wird dieselbe Konfiguration auf das zugehörige Absatzsystem angewendet.
 
    >[!NOTE]
@@ -127,9 +132,10 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    Das Dialogfeld hat drei Registerkarten:
 
-   * Haupt
+   * Allgemein
    * Funktionen
    * Stile
+
    **Eigenschaften**
 
    Auf der Registerkarte **Eigenschaften** können Sie die wichtigen Entwurfsparameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal und minimal zulässige Größe des Bildes festlegen.
@@ -148,7 +154,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Verwenden Sie das Symbol ** Löschen **um einen Eintrag aus einer Liste mit mehreren Einträgen zu entfernen.
+   Verwenden Sie das Symbol** Löschen **um einen Eintrag aus einer Liste mit mehreren Einträgen zu entfernen.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 
