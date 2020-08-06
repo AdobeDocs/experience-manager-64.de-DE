@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 79%
 
 ---
 
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (wie in einer vordefinierten AEM-Instanz verfügbar) stellt das Fragment **Arctic Surfing in Lofoten** als Grundmuster bereit. Dies verdeutlicht:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (wie in einer vordefinierten Instanz von AEM verfügbar) stellt das Fragment **Arctic Surfing in Lofoten** als Grundmuster zur Verfügung. Dies verdeutlicht:
 
 * Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen.
 
@@ -36,7 +39,8 @@ Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln 
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)**sind unterschiedliche Funktionen in AEM:
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
->* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Webseiten dar.
+>* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
 >
 Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -49,7 +53,7 @@ Diese enthalten **Arktisches Surfen in Lofoten**, ein Fragment zusammen mit dazu
 
 * Navigate via **Assets**, **Files**, **We.Retail**, **English**, **Experiences**, **Artic Surfing in Lofoten**:
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten) 
+   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
 
 ![cf-44](assets/cf-44.png)
 
