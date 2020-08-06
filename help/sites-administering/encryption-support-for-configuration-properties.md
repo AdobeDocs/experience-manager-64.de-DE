@@ -11,15 +11,18 @@ topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 87%
 
 ---
 
 
 # Verschlüsselungsunterstützung für Konfigurationseigenschaften{#encryption-support-for-configuration-properties}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole wird verwendet, um verschlüsselten Text aus unverschlüsseltem Text mithilfe des systemweiten Verschlüsselungs-Master-Schlüssels zu erstellen.
+Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole wird verwendet, um mithilfe des systemweiten Verschlüsselungsschlüssels verschlüsselten Übergeordnete aus Klartext zu erstellen.
 
 Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um die Eigenschaft zu entschlüsseln, bevor sie von einem Dienst verwendet wird.
 
