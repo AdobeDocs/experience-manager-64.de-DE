@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 78%
 
 ---
 
@@ -48,7 +51,7 @@ Umrechnungs-, Verarbeitungs- und Renderaufträge werden in die Warteschlange des
    Siehe [Anzeigen von 3D-Assets](viewing-3d-assets.md).
 
 1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
 1. Navigieren Sie zu einem 3D-Asset, das Sie rendern möchten.
 1. Tippen Sie auf die Karte des 3D-Assets, um das Asset auf der Seite mit den Asset-Details zu öffnen.
 1. Tippen Sie in der linken oberen Ecke der Seite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Rendern]**.
