@@ -4,19 +4,22 @@ description: Erfahren Sie, wie Sie Assets zur Bearbeitung auschecken und nach Ab
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 66%
 
 ---
 
 
-# Checkin- und Checkout-Dateien in Assets {#check-in-and-check-out-files-in-assets}
+# Ein- und Auschecken von Dateien in Assets {#check-in-and-check-out-files-in-assets}
 
-Mit Adobe Experience Manager (AEM)-Assets können Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken. Nachdem Sie ein Asset ausgecheckt haben, können Sie es nur bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+Mit Adobe Experience Manager (AEM) Assets können Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken. Nachdem Sie ein Asset ausgecheckt haben, können Sie es nur bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder bei AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
 Damit Sie Assets auschecken oder einchecken können, benötigen Sie Schreibzugriff auf diese Assets.
 
 Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Autor vorgenommenen Änderungen überschreiben, wenn mehrere Benutzer teamübergreifend im Rahmen von Bearbeitungsworkflows zusammenarbeiten.
 
-## Checkout-Assets {#checking-out-assets}
+## Auschecken von Assets {#checking-out-assets}
 
 1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus, das Sie auschecken möchten. Sie können auch mehrere Assets zum Auschecken auswählen.
 
