@@ -4,6 +4,9 @@ description: Best Practices für die Dateiunterstützung in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 92%
 
 ---
 
