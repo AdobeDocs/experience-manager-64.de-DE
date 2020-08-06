@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
 source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +30,7 @@ Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche Ber
 * Der Benutzer greift auf eine HTML-Seite mit dem Namen StartLoan.html zu, die als Beginn der Webanwendung fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm`auf.
 * Das `GetLoanForm` Servlet rendert ein Darlehensformular. Dieses Formular enthält ein Skript, interaktive Felder, eine Berechnungsschaltfläche und eine Senden-Schaltfläche.
 * Der Benutzer gibt Werte in die Felder des Formulars ein und klickt auf die Schaltfläche &quot;Berechnen&quot;. Das Formular wird an das `CalculateData` Java-Servlet gesendet, in dem das Skript ausgeführt wird. Das Formular wird mit den im Formular angezeigten Berechnungsergebnissen an den Benutzer zurückgesendet.
-* Der Benutzer fährt mit der Eingabe und Berechnung der Werte fort, bis ein zufriedenstellendes Ergebnis angezeigt wird. Wenn der Benutzer zufrieden ist, klickt er auf die Schaltfläche &quot;Senden&quot;, um das Formular zu verarbeiten. Das Formular wird an ein anderes Java-Servlet mit dem Namen `ProcessForm` gesendet, das für das Abrufen der gesendeten Daten zuständig ist. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+* Der Benutzer fährt mit der Eingabe und Berechnung der Werte fort, bis ein zufriedenstellendes Ergebnis angezeigt wird. Wenn der Benutzer zufrieden ist, klickt er auf die Schaltfläche &quot;Senden&quot;, um das Formular zu verarbeiten. Das Formular wird an ein anderes Java-Servlet mit dem Namen `ProcessForm` gesendet, das für das Abrufen der gesendeten Daten zuständig ist. (Siehe [Umgang mit übermittelten Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 Das folgende Diagramm zeigt den logischen Ablauf der Anwendung.
 
@@ -103,15 +106,15 @@ So berechnen Sie Formulardaten:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxydateien einschließen.
 
-**Erstellen eines Forms Client-API-Objekts**
+**Forms Client API-Objekt erstellen**
 
 Bevor Sie einen Forms-Dienst-Client-API-Vorgang programmgesteuert durchführen können, müssen Sie einen Forms-Dienstclient erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `FormsServiceClient` Objekt. Wenn Sie die Forms-Webdienst-API verwenden, erstellen Sie ein `FormsServiceService` Objekt.
 
 **Abrufen eines Formulars mit einem Berechnungsskript**
 
-Mit der Forms-Dienst-Client-API können Sie eine Anwendungslogik erstellen, die ein Formular verarbeitet, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert wurde. Der Prozess ähnelt der Bearbeitung eines gesendeten Formulars. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/handling-submitted-forms.md).)
+Mit der Forms-Dienst-Client-API können Sie eine Anwendungslogik erstellen, die ein Formular verarbeitet, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert wurde. Der Prozess ähnelt der Bearbeitung eines gesendeten Formulars. (Siehe [Umgang mit übermittelten Forms](/help/forms/developing/handling-submitted-forms.md).)
 
-Vergewissern Sie sich, dass der mit dem gesendeten Formular verknüpfte Verarbeitungsstatus `1` `(Calculate)`ist. Das bedeutet, dass der Forms-Dienst eine Berechnung der Formulardaten durchführt und die Ergebnisse an den Benutzer zurückgeschrieben werden müssen. In diesem Fall wird automatisch ein Skript ausgeführt, das für die Ausführung auf dem Server konfiguriert ist.
+Vergewissern Sie sich, dass der mit dem gesendeten Formular verknüpfte Verarbeitungsstatus `1` `(Calculate)`ist. Das bedeutet, dass der Forms-Dienst einen Berechnungsvorgang für die Formulardaten durchführt und die Ergebnisse an den Benutzer zurückgeschrieben werden müssen. In diesem Fall wird automatisch ein Skript ausgeführt, das für die Ausführung auf dem Server konfiguriert ist.
 
 **Den Formulardatenstream zurück in den Client-Webbrowser schreiben**
 
@@ -125,19 +128,19 @@ Nachdem Sie überprüft haben, ob der Verarbeitungsstatus, der mit einem gesende
 
 [Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interaktive PDF forms wiedergeben](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Erstellen von Webanwendungen zum Rendern von Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Formulardaten mit der Java-API berechnen {#calculate-form-data-using-the-java-api}
 
-Berechnen von Formulardaten mithilfe der Forms API (Java):
+Berechnen von Formulardaten mit der Forms API (Java):
 
 1. Projektdateien einschließen
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-forms-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
-1. Erstellen eines Forms Client-API-Objekts
+1. Forms Client API-Objekt erstellen
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -151,6 +154,7 @@ Berechnen von Formulardaten mithilfe der Forms API (Java):
       * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Sie müssen den zu verarbeitenden Inhaltstyp angeben, indem Sie einen oder mehrere Werte für die Variable &quot; `CONTENT_TYPE` Umgebung&quot;angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt; zum Beispiel `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert.
+
       Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Vergewissern Sie sich, dass der Verarbeitungsstatus, der mit einem gesendeten Formular verknüpft ist, `1` durch Aufrufen der `FormsResult` Objektmethode `getAction` erreicht wird. Wenn diese Methode den Wert zurückgibt, `1`wurde die Berechnung durchgeführt und die Daten können an den Client-Webbrowser zurückgeschrieben werden.
@@ -172,14 +176,14 @@ Berechnen von Formulardaten mithilfe der Forms API (Java):
 
 ## Formulardaten mithilfe der Webdienst-API berechnen {#calculate-form-data-using-the-web-service-api}
 
-Berechnen von Formulardaten mithilfe der Forms API (Webdienst):
+Berechnen Sie die Formulardaten mithilfe der Forms API (Webdienst):
 
 1. Projektdateien einschließen
 
    * Erstellen Sie Java-Proxyklassen, die die Forms-Dienst-WSDL verwenden.
    * Schließen Sie die Java-Proxyklassen in Ihren Klassenpfad ein.
 
-1. Erstellen eines Forms Client-API-Objekts
+1. Forms Client API-Objekt erstellen
 
    Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
@@ -205,6 +209,7 @@ Berechnen von Formulardaten mithilfe der Forms API (Webdienst):
       * Ein leeres `javax.xml.rpc.holders.ShortHolder` Objekt, das von der Methode gefüllt wird.
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder` Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianlagen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder` Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
+
       Die `processFormSubmission` Methode füllt den `FormsResultHolder` Parameter mit den Ergebnissen der Formularübermittlung. Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Vergewissern Sie sich, dass der Verarbeitungsstatus, der mit einem gesendeten Formular verknüpft ist, `1` durch Aufrufen der `FormsResult` Objektmethode `getAction` erreicht wird. Wenn diese Methode den Wert zurückgibt, `1`wurde die Berechnung durchgeführt und die Daten können an den Client-Webbrowser zurückgeschrieben werden.
@@ -219,4 +224,4 @@ Berechnen von Formulardaten mithilfe der Forms API (Webdienst):
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
