@@ -1,8 +1,8 @@
 ---
 title: Vordefinierte Berichte in Process Berichte
 seo-title: Vordefinierte Berichte in Process Berichte
-description: Abfrage für AEM Forms on JEE-Prozessdaten zum Erstellen von Berichten über Prozesse mit langer Laufzeit, Prozessdauer und Arbeitsablaufvolumen
-seo-description: Abfrage für AEM Forms on JEE-Prozessdaten zum Erstellen von Berichten über Prozesse mit langer Laufzeit, Prozessdauer und Arbeitsablaufvolumen
+description: Abfrage für AEM Forms on JEE-Prozessdaten zum Erstellen von Berichten über langlaufende Prozesse, Prozessdauer und Arbeitsablaufvolumen
+seo-description: Abfrage für AEM Forms on JEE-Prozessdaten zum Erstellen von Berichten über langlaufende Prozesse, Prozessdauer und Arbeitsablaufvolumen
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Vordefinierte Berichte in Process Berichte {#pre-defined-reports-in-process-reporting}
 
-Im Lieferumfang von AEM Forms Process Berichte sind folgende *vordefinierte* Berichte enthalten:
+AEM Forms Process Berichte enthält die folgenden *vordefinierten* Berichte:
 
 * **[Lange laufende Prozesse](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Ein Bericht zu allen AEM Forms-Prozessen, deren Abschluss mehr als eine bestimmte Zeit dauerte
 
-* **[Prozessdauer-Diagramm](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: Ein Bericht eines angegebenen AEM Forms-Prozesses nach Dauer
+* **[Prozessdauer-Diagramm](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: Ein Bericht eines bestimmten AEM Forms-Prozesses nach Dauer
 
 * **[Arbeitsablaufvolumen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: Ein Bericht der ausgeführten und abgeschlossenen Instanzen des angegebenen Prozesses nach Datum
 
 ## Dauerhaft ausgeführte Prozesse {#long-running-processes}
 
-Der Bericht &quot;Dauerhaft ausgeführte Prozesse&quot;zeigt die AEM Forms-Prozesse an, deren Abschluss mehr als eine bestimmte Zeit in Anspruch genommen hat.
+Der Bericht &quot;Dauerhaft ausgeführte Prozesse&quot;zeigt die AEM Forms-Prozesse an, die länger als eine angegebene Zeitspanne zum Abschluss gebraucht haben.
 
 ### So führen Sie einen Bericht über einen langwierigen Prozess aus {#to-execute-a-long-running-process-report-br}
 
@@ -62,7 +62,7 @@ Der Bericht &quot;Dauerhaft ausgeführte Prozesse&quot;zeigt die AEM Forms-Proze
 
 ## Bericht &quot;Prozessdauer&quot; {#process-duration-report-br}
 
-Der Bericht &quot;Prozessdauer&quot;zeigt die Anzahl der Instanzen eines Formularprozesses nach Anzahl der Tage an, die jede Instanz ausgeführt hat.
+Der Bericht &quot;Prozessdauer&quot;zeigt die Anzahl der Instanzen eines Forms-Prozesses nach Anzahl der Tage an, die jede Instanz ausgeführt wurde.
 
 ### So führen Sie einen Bericht zur Prozessdauer aus {#to-execute-a-process-duration-report-br}
 
