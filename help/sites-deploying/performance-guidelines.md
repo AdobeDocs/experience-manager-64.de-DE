@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 translation-type: tm+mt
 source-git-commit: 949ec23eb548a094425622d68e1dbf4f6ec7581f
+workflow-type: tm+mt
+source-wordcount: '2993'
+ht-degree: 84%
 
 ---
 
@@ -24,7 +27,7 @@ Diese Seite erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AE
 * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
 * [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)
 
-Nachfolgend sind die für AEM verfügbaren Bereitstellungsoptionen dargestellt (Bildlauf zur Ansicht aller Optionen):
+Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (Bildlauf zur Ansicht aller Optionen):
 
 <table> 
  <tbody> 
@@ -51,7 +54,7 @@ Nachfolgend sind die für AEM verfügbaren Bereitstellungsoptionen dargestellt (
    <td><p>LDAP</p> </td> 
    <td><p>Tar</p> </td> 
    <td><p>Segment</p> </td> 
-   <td><p>Eigenschaft</p> </td> 
+   <td><p>Property</p> </td> 
    <td><p>Apache</p> </td> 
    <td><p>Edge</p> </td> 
    <td><p>Target</p> </td> 
@@ -64,11 +67,11 @@ Nachfolgend sind die für AEM verfügbaren Bereitstellungsoptionen dargestellt (
    <td><p>IBM</p> </td> 
    <td><p>SAML</p> </td> 
    <td><p>MongoDB</p> </td> 
-   <td><p>Datei</p> </td> 
+   <td><p>File</p> </td> 
    <td><p>Lucene</p> </td> 
    <td><p>IIS</p> </td> 
    <td><p>IE</p> </td> 
-   <td><p>Analytics</p> </td> 
+   <td><p>Analyse</p> </td> 
   </tr> 
   <tr> 
    <td><p>Communities</p> </td> 
@@ -85,7 +88,7 @@ Nachfolgend sind die für AEM verfügbaren Bereitstellungsoptionen dargestellt (
    <td><p>Campaign</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Forms</p> </td> 
+   <td><p>Formulare</p> </td> 
    <td><p>Autor – Abladung</p> </td> 
    <td><p>HP-UX</p> </td> 
    <td><p>Tomcat </p> </td> 
@@ -99,7 +102,7 @@ Nachfolgend sind die für AEM verfügbaren Bereitstellungsoptionen dargestellt (
    <td><p>Social</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Mobile</p> </td> 
+   <td><p>Mobilgerät</p> </td> 
    <td><p>Autor – Cluster</p> </td> 
    <td><p>IBM AIX</p> </td> 
    <td><p>JBoss</p> </td> 
@@ -152,7 +155,7 @@ Nachfolgend sind die für AEM verfügbaren Bereitstellungsoptionen dargestellt (
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
-   <td><p>Mobile</p> </td> 
+   <td><p>Mobilgerät</p> </td> 
   </tr> 
   <tr> 
    <td><p>Brand Portal</p> </td> 
@@ -303,7 +306,7 @@ In AEM können Binärdaten unabhängig von Inhaltsknoten gespeichert werden. Der
 
 >[!CAUTION]
 >
->Der RDB-Mikrokernel wird nur eingeschränkt unterstützt. Bevor Sie diesen Mikrokernel verwenden, kontaktieren Sie den [Adobe-Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Der RDB-Mikrokernel wird nur eingeschränkt unterstützt. Bevor Sie diesen Mikrokernel verwenden, kontaktieren Sie den [Adobe-Kundendienst](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
@@ -321,7 +324,7 @@ For further details on the available configuration options, see [Configuring Nod
 >
 >For additional details also see the [technical requirements](/help/sites-deploying/technical-requirements.md#supported-platforms) page.
 
-### Suche{#search-features}
+### Suche {#search-features}
 
 In diesem Abschnitt sind die in AEM verwendeten benutzerdefinierten Index-Provider aufgeführt. To know more about indexing, see [Oak Queries and Indexing](/help/sites-deploying/queries-and-indexing.md).
 
@@ -428,7 +431,7 @@ Nachfolgend sind die Architekturrichtlinien für AEM Sites und AEM Assets beschr
 
 ### TarMK-Einstellungen – Richtlinien {#tarmk-settings-guideline}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 <table> 
  <tbody> 
@@ -451,7 +454,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
    <td> </td> 
   </tr> 
   <tr> 
-   <td>JVM-Parameter</td> 
+   <td>JVM-Parameter  </td> 
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td> 
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td> 
    <td>Fügen Sie diese JVM-Parameter zum AEM-Startskript hinzu, um zu verhindern, dass umfangreiche Abfragen die Systeme überlasten.</td> 
@@ -538,7 +541,7 @@ Um bei Verwendung von MongoMK eine optimale Leistung zu erzielen, sollten Sie al
 
 ### MongoMK-Einstellungen – Richtlinien {#mongomk-settings-guidelines}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 <table> 
  <tbody> 
@@ -561,7 +564,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
    <td> </td> 
   </tr> 
   <tr> 
-   <td>JVM-Parameter</td> 
+   <td>JVM-Parameter  </td> 
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td> 
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td> 
    <td>Fügen Sie diese JVM-Parameter zum AEM-Startskript hinzu, um zu verhindern, dass umfangreiche Abfragen die Systeme überlasten.</td> 
@@ -659,7 +662,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
  <tbody> 
   <tr> 
    <td><strong> </strong></td> 
-   <td><strong>Autorenknoten</strong></td> 
+   <td><strong>OAK-Autorenknoten</strong></td> 
    <td><strong>MongoDB-Knoten</strong></td> 
    <td> </td> 
   </tr> 
@@ -776,9 +779,9 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr> 
   <tr> 
    <td>Festplatte</td> 
-   <td>SSD - 10-k-IOPS</td> 
-   <td>SSD - 10-k-IOPS</td> 
-   <td>SSD - 10-k-IOPS</td> 
+   <td>SSD - 10.000 IOPS</td> 
+   <td>SSD - 10.000 IOPS</td> 
+   <td>SSD - 10.000 IOPS</td> 
   </tr> 
   <tr> 
    <td>Java</td> 
