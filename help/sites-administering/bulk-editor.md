@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 79%
 
 ---
 
@@ -70,7 +73,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
  <tbody> 
   <tr> 
    <td>Feld</td> 
-   <td>Eigenschaft</td> 
+   <td>Property</td> 
   </tr> 
   <tr> 
    <td>Stammverzeichnis</td> 
@@ -90,7 +93,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr> 
   <tr> 
    <td>Benutzerdefinierte Eigenschaften/Spalten</td> 
-   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im Feld <strong>Eigenschaften/Spalten</strong> aufgeführt sind. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i></i> Hinweis: Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td> 
+   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im Feld <strong>Eigenschaften/Spalten</strong> aufgeführt sind. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -117,10 +120,10 @@ Beispiel:
 
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
-* **** path: nur Suchknoten unterhalb dieses Pfades. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
-* **** type: nur zurückgegebene Knoten der angegebenen Knotentypen. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **** Reihenfolge: ordnen Sie das Ergebnis nach den angegebenen Eigenschaften an. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
-* **** limit: begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, Start inklusiv und Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL maximal diese Anzahl von Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
+* **path:** nur Suchknoten unterhalb dieses Pfades. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
+* **type:** nur Rückgabeknoten der angegebenen Knotentypen zurückgeben. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
+* **Reihenfolge:** ordnen Sie das Ergebnis nach den angegebenen Eigenschaften an. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
+* **limit:** begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv und das Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL maximal diese Anzahl von Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
 
 ### Exportieren von Inhalten {#exporting-content}
 
@@ -153,7 +156,7 @@ Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor ö
 So importieren Sie Inhalte:
 
 1. Öffnen Sie den Bulk Editor.
-1. Fügen Sie `?hib=false` der URL hinzu, z. B.:
+1. Hinzufügen `?hib=false` zur URL, z. B.:
 
    `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 
