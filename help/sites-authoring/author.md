@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
 AEM bietet Ihnen zwei Umgebungen:
 
 * Autor
-* Veröffentlichen
+* Veröffentlichen  
 
 Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher ihn lesen können.
 
@@ -35,11 +38,11 @@ In der Autorenumgebung werden die Funktionen von AEM in zwei Benutzeroberfläche
 
 >[!NOTE]
 >
->Mit AEM und dem Dispatcher wird diese AEM-Dokumentation veröffentlicht.
+>AEM und der Dispatcher werden verwendet, um diese AEM Dokumentation zu veröffentlichen.
 
 ## Autorenumgebung {#author-environment}
 
-The author works in what is known as the **[author environment](/help/sites-authoring/home.md)**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+Der Autor arbeitet in der sogenannten **[Autorenumgebung](/help/sites-authoring/home.md)**. Diese bietet eine einfach zu verwendende Oberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen von Inhalt. Normalerweise befindet sich diese hinter der Firewall eines Unternehmens, die vollen Schutz bietet und eine Anmeldung des Autors mit einem Konto mit entsprechenden Zugriffsrechten erfordert.
 
 >[!NOTE]
 >
@@ -78,19 +81,19 @@ Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/over
 >Leider gibt es bei der verwendeten Terminologie gelegentlich Überschneidungen. Dies ist bei folgenden Begriffen möglich:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
-   >  Dies sind die primären Begriffe für die Aktionen, mit denen Ihre Inhalte in Ihrer Veröffentlichungsumgebung öffentlich verfügbar gemacht werden (oder nicht).
+   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
    >
    >
 * **Aktivieren/Deaktivieren**
-   >  Diese Begriffe sind gleichbedeutend mit Veröffentlichung/Rückgängigmachen der Veröffentlichung. In der klassischen Benutzeroberfläche werden diese Begriffe häufiger verwendet.
+   >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung. In der klassischen Benutzeroberfläche werden diese Begriffe häufiger verwendet.
    >
    >
-* **Wiederholen/Replikation**
-   >  Hierbei handelt es sich um die technischen Begriffe, die zur Angabe der Datenbewegung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere verwendet werden; z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
+* **Replizieren/Replikation**
+   >  Hierbei handelt es sich um die technischen Begriffe, die zur Angabe der Datenbewegung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen verwendet werden; z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
 >
 
 
 
 ## Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Lastverteilung und Caching durch.**
