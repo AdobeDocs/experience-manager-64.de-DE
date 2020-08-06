@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2726'
+ht-degree: 66%
 
 ---
 
@@ -51,7 +54,7 @@ Bestimmte Konzepte und Leitprinzipien sind tief in der früheren Day-Kultur verw
 
 ### Alles ist Inhalt {#everything-is-content}
 
-Der Inhalt umfasst nicht nur alle Daten, die die Webanwendung speichert. Programmcode, Bibliotheken, Skripten, Vorlagen, HTML, CSS, Bilder und Artefakte aller Art, alles und alles wird im Content Repository beibehalten und in Form von Paketen über Package Manager und Package Share importiert/exportiert.
+Der Inhalt umfasst nicht nur alle Daten, die die Webanwendung speichert. Der Programm-Code, Bibliotheken, Skripten, Vorlagen, HTML, CSS, Bilder und Artefakte aller Art bleiben im Content Repository erhalten und werden über Package Manager und Package Share in Form von Paketen importiert/exportiert.
 
 ### Davids Modell {#david-s-model}
 
@@ -75,7 +78,7 @@ Schwerpunkte der Apache Sling-Anfrageauflösung sind, wie Anfragen hauptsächlic
 
 Kein Schritt drei: zum Installieren und Ausführen lädt man einfach die Schnellstart-JAR-Datei herunter und doppelklickt darauf. Es gibt keinen Schritt drei. Jede zusätzliche optionale Funktionalität erfordert nichts weiter als die Installation des entsprechenden Pakets von Package Share.
 
-Kleine Schnellstart-Größe: halten Sie die Größe der Schnellstart-JAR-Datei auf ein Minimum begrenzt. Intelligente, optimierte Verwendung von Bibliotheken, Verschiebung optionaler Funktionen zur Paketfreigabe.
+Kleine Schnellstart-Größe: halten Sie die Größe der Schnellstart-JAR-Datei auf ein Minimum begrenzt. Intelligente, optimierte Verwendung von Bibliotheken, wobei optionale Funktionen zur Paketfreigabe verschoben werden.
 
 Schnellere Startzeit: wenn Sie eine Änderung vornehmen, die sich auf die Startzeit auswirken könnte, stellen Sie sicher, dass sie kürzer wird, nicht länger.
 
@@ -117,23 +120,23 @@ Abwärtskompatibilität sollte auch im Hinblick auf die allgemeine Konsistenz de
 
 ## Grundlegende Konzepte {#core-concepts}
 
-**Autoreninstanz** : Aus Sicherheits-, Verwaltungs- und anderen Gründen unterteilt eine Produktions-Site AEM-Instanzen in Autoren- und Veröffentlichungsinstanzen. Weitere Informationen zur Bereitstellungsarchitektur (einschließlich Autoren-/Veröffentlichungsinstanzen) finden Sie in der Dokumentation zu AEM-Instanzen.
+**Autoreninstanz** : Aus Sicherheitsgründen, zur Verwaltung und aus anderen Gründen unterteilt eine Produktionssite Instanzen von AEM in Instanzen im Autoren- und Veröffentlichungsmodus. Weitere Informationen zur Bereitstellungsarchitektur (einschließlich Autoren-/Veröffentlichungsinstanzen) finden Sie in der Dokumentation zu AEM Instanzen.
 
-**Zwischenspeicherung, Braten und Backen** - Traditionell sind die Konzepte von Backen und Braten eine wichtige Unterscheidung zwischen verschiedenen Web Content Management Systemen. Im CMS-Jargon bezieht sich &quot;Backen&quot;auf das Konzept der Datenbindung an statische Dateien zur Veröffentlichungszeit, während &quot;Braten&quot;auf das Konzept der Verarbeitung von Daten zur endgültigen Präsentation zur Anforderungszeit (d.h. gerade rechtzeitig) verweist.
+**Zwischenspeicherung, Braten und Backen** - Traditionell unterscheiden sich die Konzepte von Backen und Braten in verschiedenen Web-Content-Management-Systemen. Im CMS-Jargon bezieht sich &quot;Backen&quot;auf das Konzept der Datenbindung an statische Dateien zur Veröffentlichungszeit, während &quot;Braten&quot;auf das Konzept der Verarbeitung von Daten zur endgültigen Präsentation zur Anforderungszeit (d.h. gerade rechtzeitig) verweist.
 
-**Clustering und Lastenausgleich** - Zur Verbesserung der Verfügbarkeit und der Leistung einer Produktionsumgebung ist es üblich, mehrere Instanzen im Autoren- und/oder Veröffentlichungsmodus (in Clustern) zu kombinieren, indem sie entweder verschiedenen Benutzergruppen zur Verfügung gestellt werden oder indem sie hinter einer Dispatcher-Konfiguration Lastenausgleich vornehmen.
+**Clustering und Lastenausgleich** - Zur Verbesserung der Verfügbarkeit und der Leistung einer Produktions-Umgebung ist es üblich, mehrere Autor- und/oder Veröffentlichungsinstanzen (in Clustern) zu kombinieren, indem sie entweder verschiedenen Benutzergruppen zur Verfügung gestellt werden oder indem sie hinter einer Dispatcher-Konfiguration einen Lastenausgleich vornehmen.
 
 It is also possible to combine multiple instances of the content repository to create a *high-availability* JCR solution, which can then be integrated with your AEM solution to maximize protection against hardware and software failure. Weitere Informationen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter).
 
-**Komponente** - In AEM ist eine Komponente ein Objekttyp, dessen Instanzen im Allgemeinen durch Ziehen und Ablegen aus dem Sidekick erstellt werden können. So enthalten beispielsweise mit AEM ausgelieferte Standardkomponenten die Komponenten Text, Titel, Tag Cloud, Karussell, Bild und Liste, die alle zur Laufzeit über den Sidekick verfügbar sind.
+**Komponente** : Eine Komponente ist AEM ein Objekttyp, dessen Instanzen im Allgemeinen durch Ziehen und Ablegen aus dem Sidekick erstellt werden können. So enthalten beispielsweise mit AEM ausgelieferte Standardkomponenten die Komponenten Text, Titel, Tag Cloud, Karussell, Bild und Liste, die alle zur Laufzeit über den Sidekick verfügbar sind.
 
-**Content Finder** - Im Authoring-Modus ist die Inhaltssuche ein spezielles Bedienfeld (Frame) auf der linken Seite der Seite, in dem je nach der Registerkarte, die Sie oben auswählen, eine Liste mit Bildern, Dokumenten, Flash-Assets, Seiten, Absätzen oder Repository-Ressourcen angezeigt wird, die Sie per Drag &amp; Drop aus der Inhaltssuche auf die Seite ziehen können, an der Sie gerade arbeiten (rechts).
+**Content Finder** - Im Authoring-Modus ist die Inhaltssuche ein spezielles Bedienfeld (Frame) auf der linken Seite der Seite, in dem je nach der Registerkarte, die Sie oben auswählen, Listen von Bildern, Dokumenten, Flashs, Seiten, Absätzen oder Repository-Ressourcen angezeigt werden, die Sie aus der Inhaltssuche auf die Seite ziehen können, an der Sie arbeiten (rechts).
 
-**Digitale Assets** - In AEM sind digitale Assets (in der Regel) Bilder und Rich-Media-Dateien. Weitere Informationen finden Sie unter Arbeiten mit digitalen Assets in DAM.
+**Digitale Assets** - AEM sind digitale Assets (in der Regel) Bilder und Rich-Media-Dateien. Weitere Informationen finden Sie unter Arbeiten mit digitalen Assets in DAM.
 
 **Dispatcher** - Der Dispatcher ist sowohl ein Cache- und Lastenausgleichswerkzeug, als auch bietet bestimmte Sicherheitsgarantien.
 
-**ExtJS-Widgets** - Die meisten Elemente der Benutzeroberfläche in AEM verwenden ExtJS, eine Widget-Bibliothek eines Drittanbieters, die in JavaScript geschrieben wurde. ExtJS bietet leistungsstarke, anpassbare UI-Widgets und ein gut gestaltetes und erweiterbares Komponentenmodell.
+**ExtJS-Widgets** - Die meisten Elemente der Benutzeroberfläche in AEM verwenden ExtJS, eine Widget-Bibliothek eines Drittanbieters, die in JavaScript geschrieben ist. ExtJS bietet leistungsstarke, anpassbare UI-Widgets und ein gut gestaltetes und erweiterbares Komponentenmodell.
 
 **JCR, Java Content Repository** - Die Java Content Repository-Spezifikation (JSR-283) bietet sowohl ein abstraktes Datenmodell als auch eine Anwendungsprogrammierschnittstelle zur Realisierung eines massiv skalierbaren NoSQL-Datenrepository, das Funktionen eines Dateisystems und einer Objektdatenbank kombiniert. Obwohl Sie JSR-283 nicht umfassend verstehen müssen, sollten Sie sich die Zeit nehmen, sich mit den grundlegenden Funktionen von JCR und dem zugrunde liegenden Datenmodell vertraut zu machen, da JCR die „Alles ist Inhalt“-Philosophie von AEM ermöglicht.
 
@@ -145,15 +148,15 @@ Die JavaDoc für die JCR-Java-API finden Sie [hier](http://jackrabbit.apache.org
 
 Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, sollten Sie sich diese [High-Level-Erklärung](/help/sites-developing/the-basics.md#java-content-repository) von JCR ansehen, die von Adobe Experience Services implementiert wird.
 
-**Multi-Site-Manager (MSM)** - Die MSM-Funktion von AEM unterstützt Kunden bei der Verwaltung mehrsprachiger und multinationaler Inhalte, sodass sie zentralisiertes Branding mit lokalisierten Inhalten in Einklang bringen können.
+**Multi-Site Manager (MSM)** - The MSM feature of AEM helps customers handle multilingual and multinational content, enabling them to balance centralized branding with localized content.
 
 **OSGi** - OSGi ist die dienstbasierte Laufzeittechnologie, die die Grundlage für die modulare Java-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Bundle) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Bundles bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Bundles bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die von Anwendungsservern gelöst werden sollten, jedoch auf leichte und hochdynamische Weise. So können beispielsweise Dienste schnell bereitgestellt werden (der neue Code wird sofort verfügbar, ohne den Server neu zu starten).
 
-**Parsys, Absatzsystem** - Das Absatzsystem (parsys) ist eine zusammengesetzte Komponente, mit der Autoren Komponenten unterschiedlicher Typen zu einer Seite hinzufügen können und andere Absatzkomponenten enthalten. Jeder Absatztyp wird als eine Komponente dargestellt. Das Absatzsystem selbst ist auch eine Komponente, die die anderen enthält.
+**Parsys, Absatzsystem** - Das Absatzsystem (parsys) ist eine zusammengesetzte Komponente, mit der Autoren Komponenten unterschiedlicher Typen zu einer Seite hinzufügen können und die andere Absatzkomponenten enthalten. Jeder Absatztyp wird als eine Komponente dargestellt. Das Absatzsystem selbst ist auch eine Komponente, die die anderen enthält.
 
 **Microkernel** - Jeder Arbeitsbereich im Repository kann separat konfiguriert werden, um seine Daten über einen bestimmten Microkernel zu speichern (eine Klasse, die das Lesen und Schreiben der Daten verwaltet). Ebenso kann der Repository-weite Versionsspeicher unabhängig für die Verwendung eines bestimmten Mikrokernels konfiguriert werden. Eine Reihe verschiedener Mikrokernel sind verfügbar, die Daten in einer Vielzahl von Dateiformaten oder relationalen Datenbanken speichern können. (Zum Beispiel gibt es Persistence Manager für MongoDB, DB2 oder Oracle). Der Standard-Microkernel für AEM ist TarMK (siehe weiter unten).
 
-**Veröffentlichungsinstanz** : Aus Sicherheits-, Verwaltungs- und anderen Gründen unterteilt eine Produktions-Site Instanzen von AEM normalerweise in Autoren- und Veröffentlichungsinstanzen. Weitere Informationen zur Bereitstellungsarchitektur (einschließlich Autoren-/Veröffentlichungsinstanzen) finden Sie in der Dokumentation zu AEM-Instanzen.
+**Veröffentlichungsinstanz** : Aus Sicherheits-, Verwaltungs- und anderen Gründen unterteilt eine Produktions-Site Instanzen von AEM in Instanzen im Autoren- und Veröffentlichungsmodus. Weitere Informationen zur Bereitstellungsarchitektur (einschließlich Autoren-/Veröffentlichungsinstanzen) finden Sie in der Dokumentation zu AEM Instanzen.
 
 **Quickstart** - Im Gegensatz zu vielen anderen Programmen installieren Sie AEM mit einer einzigen, selbstextrahierenden JAR-Datei. Wenn Sie zum ersten Mal auf die JAR-Datei doppelklicken, wird alles, was Sie benötigen, automatisch installiert. Die Schnellstart-JAR enthält alle für das CRX-Repository erforderlichen Dateien (einschließlich Verwaltungseinrichtungen), virtuelle Repository-Dienste, Index- und Suchdienste, Workflow-Services, Sicherheit und einen Webserver sowie die CQ Servlet Engine (CQSE) und alle AEM-Dienste. Es sind keine weiteren Dateien zu installieren: Der Schnellstart ist eigenständig.
 
@@ -165,18 +168,18 @@ Viele Startoptionen (z. B. die Nummer des aktiven Ports und ob die fragliche AE
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Replizierungsagenten** - Replizierungsagenten sind von zentraler Bedeutung für AEM als Mechanismus zum Veröffentlichen (Aktivieren) von Inhalten von einem Autor in einer Veröffentlichungsumgebung. Inhalte aus dem Dispatcher-Cache löschen; vom Benutzer generierte Inhalte (z. B. Formulareingabe) aus der Veröffentlichungsumgebung in die Autorenumgebung zurückgeben.
+**Replizierungsagenten** - Replizierungsagenten sind von zentraler Bedeutung für AEM als Mechanismus zur Veröffentlichung (Aktivierung) von Inhalten von einem Autor zu einer Umgebung zur Veröffentlichung. Inhalte aus dem Dispatcher-Cache löschen; vom Benutzer generierte Inhalte (z. B. Formulareingaben) aus der Umgebung &quot;Veröffentlichen&quot;in die Umgebung &quot;Autor&quot;zurückgeben.
 
 **Gerüst** - Mit dem Gerüst können Sie ein Formular (ein Gerüst) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Anschließend können Sie mit diesem Formular auf einfache Weise Seiten erstellen, die auf dieser Struktur basieren.
 
-**Segmentierung** - Site-Besucher haben beim Besuch einer Site unterschiedliche Interessen und Ziele. Die Ziele der Besucher zu verstehen und ihre Erwartungen zu erfüllen, ist eine wichtige Erfolgsvoraussetzung für das Online-Marketing. Die Segmentierung hilft dabei, die Details eines Besuchers zu analysieren und zu charakterisieren.
+**Segmentierung** - Site-Besucher haben unterschiedliche Interessen und Ziele, wenn sie zu einer Site gelangen. Die Ziele der Besucher zu verstehen und ihre Erwartungen zu erfüllen, ist eine wichtige Erfolgsvoraussetzung für das Online-Marketing. Die Segmentierung hilft dabei, die Details eines Besuchers zu analysieren und zu charakterisieren.
 
 **Sidekick** - Der Sidekick ist ein palettenähnliches schwebendes Fenster, das auf der bearbeitbaren Seite angezeigt wird und aus dem neue Komponenten gezogen werden können und Aktionen ausgeführt werden können, die für die Seite gelten.
 
-**SiteCatalyst** - SiteCatalyst bietet Marketingfachleuten eine zentrale Stelle zur Messung, Analyse und Optimierung integrierter Daten aus allen Online-Initiativen über mehrere Marketingkanäle hinweg. Sie können mit Adobe SiteCatalyst Daten von AEM-Websites analysieren.
+**SiteCatalyst** - SiteCatalyst bietet Marketingexperten eine zentrale Stelle zur Messung, Analyse und Optimierung integrierter Daten aus allen Onlineinitiativen über mehrere Marketing-Kanal hinweg. Sie können mit Adobe SiteCatalyst Daten von AEM-Websites analysieren.
 
-**Tar Storage (TarMK)** - TarMK ist das Standard-Persistenzsystem in AEM. Obwohl AEM für die Verwendung eines anderen Persistenzsystems (z. B. MongoDB) konfiguriert werden kann, hat TarMK gewisse Vorteile, da es für typische JCR-Anwendungsfälle leistungsoptimiert ist (also sehr schnell), ein Industriestandard-Datenformat verwendet kann schnell und einfach gesichert werden kann.
+**Tar Datenspeicherung (TarMK)** - TarMK ist das Standardpersistenzsystem in AEM. Obwohl AEM für die Verwendung eines anderen Persistenzsystems (z. B. MongoDB) konfiguriert werden kann, hat TarMK gewisse Vorteile, da es für typische JCR-Anwendungsfälle leistungsoptimiert ist (also sehr schnell), ein Industriestandard-Datenformat verwendet kann schnell und einfach gesichert werden kann.
 
-**Vorlage** - In AEM gibt eine Vorlage einen bestimmten Seitentyp an. Sie definiert die Struktur einer Seite (während sie normalerweise auch ein Miniaturbild und verschiedene Eigenschaften angibt). Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden.
+**Vorlage** : In AEM gibt eine Vorlage einen bestimmten Seitentyp an. Sie definiert die Struktur einer Seite (während sie normalerweise auch ein Miniaturbild und verschiedene Eigenschaften angibt). Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden.
 
 **Workflow** - Das AEM Workflow-System ermöglicht die Erstellung automatisierter Prozesse, die Seiten oder Assets beinhalten.
