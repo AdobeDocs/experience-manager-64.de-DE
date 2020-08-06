@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5e1e0039-670e-4051-9f2a-e88162482467
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 69%
 
 ---
 
@@ -31,14 +34,14 @@ Siehe [Informationen zu Bühnen in AEM 3D](/help/sites-classic-ui-authoring/cla
 
 ## Leistungsaspekte beim Anzeigen von 3D-Assets  {#performance-considerations-when-you-view-d-assets}
 
-Wie schnell ein 3D-Asset auf der Seite „Asset-Details“ geöffnet wird, hängt u. a. von den folgenden Faktoren ab:
+Wie schnell ein 3D-Asset auf der Seite „Asset-Details“ geöffnet wird, hängt u. a. von den folgenden Faktoren abhängt:
 
 * Bandbreite und Latenz zum Server.
 * Modellgröße (Anzahl der Flächen).
 * Anzahl und Größe der Maps.
 * Komplexität der Bühnendatei. Beispielsweise die Größe des IBL-Bildes.
 
-Darüber hinaus sind die Funktionen des Client-Computers, wie eine Workstation, ein Notebook oder ein mobiles Touch-Gerät, auch bei der interaktiven Manipulation der Kamera wichtig. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
+Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
 
 **So zeigen Sie 3D-Assets an**:
 
@@ -46,7 +49,7 @@ Darüber hinaus sind die Funktionen des Client-Computers, wie eine Workstation, 
 
    Siehe [Informationen zum Hochladen und Verarbeiten von 3D-Assets in AEM](/help/sites-classic-ui-authoring/classicui-upload-proc-3d.md).
 1. Tippen Sie im **[!UICONTROL Adobe Experience Manager]** auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
 
 1. Navigieren Sie zu einem 3D-Asset, das Sie anzeigen möchten.
 1. Tippen Sie auf die Karte des 3D-Assets, um das Asset auf der Seite „Asset-Details“ zu öffnen.
@@ -65,32 +68,32 @@ Darüber hinaus sind die Funktionen des Client-Computers, wie eine Workstation, 
       <td><strong>Beschreibung</strong></td> 
       </tr> 
       <tr> 
-      <td><p>Zoom</p> <p> oder  ermöglichen.</p> <p>Persp</p> </td> 
-      <td><p>Tippen oder klicken Sie, um zwischen den Modi "Zoom"und "Perspektive"zu wechseln.</p> <p>Oder halten Sie die <code>ALT/OPTION</code> Taste während der Aktion gedrückt, um vorübergehend in den Perspektivmodus<br /> zu wechseln. Lassen Sie die Taste los, um in den Zoom-Modus zurückzukehren.</p> 
+      <td><p>Zoom</p> <p> oder</p> <p>Persp</p> </td> 
+      <td><p>Tippen oder klicken Sie auf , um zwischen den Modi "Zoom"und "Perspektive"zu wechseln.</p> <p>Oder halten Sie die <code>ALT/OPTION</code> Taste während der Aktion gedrückt, um vorübergehend in den Perspektivmodus<br /> zu wechseln. Lassen Sie die Taste los, um in den Zoom-Modus zurückzukehren.</p> 
         <ul> 
         <li><strong>Zoom</strong>-Dolly-Ein- und Auszoomen-Verhalten, das die Kamera näher oder weiter weg von dem Asset<br /> bewegt, das Sie sehen. Zoom ist das Standardverhalten für das Mausrad (falls verfügbar), für Pinch-Gesten mit zwei Fingern auf Mobilgeräten oder dann, wenn Sie bei gedrückter Umschalttaste mit der linken Maustaste nach oben oder unten ziehen.</li> 
-        <li><strong>Perspektive</strong>- Ändert die Brennweite (auch als Sichtfeld bezeichnet) der Kamera, wobei die relative Größe des Assets in der Ansicht beibehalten wird. Perspektive ist ein alternatives Verhalten für das Mausrad (falls verfügbar), für Pinch-Gesten mit zwei Fingern auf Mobilgeräten oder dann, wenn Sie bei gedrückter Umschalttaste mit der linken Maustaste nach oben oder unten ziehen.</li> 
+        <li><strong>Perspektive</strong>-Ändert die Brennweite (auch als "Ansicht-Feld"bezeichnet) der Kamera, wobei die relative Größe des Assets in der Ansicht beibehalten wird. Perspektive ist ein alternatives Verhalten für das Mausrad (falls verfügbar), für Pinch-Gesten mit zwei Fingern auf Mobilgeräten oder dann, wenn Sie bei gedrückter Umschalttaste mit der linken Maustaste nach oben oder unten ziehen.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
-      <td><p>Orbit</p> <p> oder  ermöglichen.</p> <p>Schwenken</p> </td> 
+      <td><p>Orbit</p> <p> oder</p> <p>Schwenken</p> </td> 
       <td><p>Tippen oder klicken Sie auf , um zwischen dem Umlaufmodus und dem Schwenken zu wechseln.</p> <p>Oder halten Sie während der Aktion die <code>ALT/OPTION</code> Taste gedrückt, um vorübergehend in den Schwenk-Modus zu wechseln. Lassen Sie die Taste los, um in den Orbit-Modus zurückzukehren.</p> 
         <ul> 
-        <li><strong>Orbit</strong>: Verschiebt die Betrachtungskamera auf eine Kugel, die auf einem Zielpunkt zentriert ist, der sich in der Mitte des 3D-Assets befindet, ist standardmäßig eingestellt. Orbit ist das Standardverhalten beim Ziehen mit der linken Maustaste oder dem Ziehen mit Touch auf Mobilgeräten.</li> 
+        <li><strong>Orbit</strong>: Verschiebt die Betrachtungskamera auf eine Kugel, die auf einem Punkt der Zielgruppe zentriert ist, der sich in der Mitte des 3D-Assets befindet, ist standardmäßig eingestellt. Orbit ist das Standardverhalten beim Ziehen mit der linken Maustaste oder dem Ziehen mit Touch auf Mobilgeräten.</li> 
         <li><strong>Schwenken</strong>-Verschiebt die Kamera in der Betrachtungsebene. Der Zielpunkt wird entsprechend verschoben, sodass die Kamera in nachfolgenden Orbit-Vorgängen um einen neuen Zielpunkt bewegt wird. Schwenken ist ein alternatives Verhalten für das Ziehen mit der linken Maustaste und das Ziehen mit einem Touch.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
-      <td><p>Untersuchen</p> <p> oder  ermöglichen.</p> <p>Target</p> </td> 
-      <td><p>Tippen oder klicken Sie auf , um zwischen dem Test- und dem Target-Modus zu wechseln.</p> 
+      <td><p>Untersuchen</p> <p> oder</p> <p>Target</p> </td> 
+      <td><p>Tippen oder klicken Sie auf , um zwischen dem Prüfungs- und dem Zielgruppe-Modus zu wechseln.</p> 
         <ul> 
-        <li><strong>Überprüfen Sie</strong>, ob Sie auf tippen oder klicken, um in den Target-Modus zu wechseln.</li> 
-        <li><strong>Mit Target</strong>-Tippen oder Klicken auf einen Punkt an einer beliebigen Stelle auf das 3D-Asset, um die Ansicht auf diesem Teil des Assets zu zentrieren.<br /> Der neue Zielpunkt wird für Drehungsaktionen verwendet.</li> 
+        <li><strong>Überprüfen Sie</strong>, ob Sie auf tippen oder klicken, um in den Zielgruppe-Modus zu wechseln.</li> 
+        <li><strong>Zielgruppe</strong>-Tippen oder klicken Sie auf einen Punkt an einer beliebigen Stelle des 3D-Assets, um die Ansicht auf diesem Teil des Assets zu zentrieren.<br /> Der neue Zielpunkt wird für Drehungsaktionen verwendet.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>Zurücksetzen</td> 
-      <td>Tippen oder klicken Sie auf , um den Ansichtszielpunkt in der Mitte des Modells wiederherzustellen. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Tippen oder klicken Sie auf , um die Zielgruppe der Ansicht in der Mitte des Modells wiederherzustellen. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
       </tr> 
     </tbody> 
     </table>
@@ -99,7 +102,7 @@ Darüber hinaus sind die Funktionen des Client-Computers, wie eine Workstation, 
 
    ![](do-not-localize/chlimage_1-2.png)
 
-   Die Stufen bieten den Hintergrund, die Bodenebene und die Beleuchtung, in der das 3D-Modell angezeigt wird.
+   Die Stufen liefern den Hintergrund, die Grundebene und die Beleuchtung, in der das 3D-Umgebung angezeigt wird.
 
    Siehe [Informationen zu Bühnen in AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
