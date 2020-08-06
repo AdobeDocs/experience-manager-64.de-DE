@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1242'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +73,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ **Administrative user roles**.
 1. Klicken Sie auf „Add“ und führen Sie folgende Schritte aus:
 
-   1. **Typ**&amp;ast; im Suchfeld und klicken Sie auf Suchen.
+   1. Type **&amp;ast;** in the search box and click search.
    1. Klicken Sie unter „Roles“ auf **Administrator**.
    1. Fügen Sie den neu erstellten Benutzer zu „Mapped to role“ hinzu und ordnen Sie ihn zu „Administrator“ zu.
 
@@ -156,7 +159,7 @@ Die Konvertierung von HTML in PDF von der Site, deren Zertifikat hinzugefügt wu
 
 ## Konfigurieren von dynamischen Ports {#configuring-dynamic-ports}
 
-IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können die dauerhafte Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 lesen.
+IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können sich über die dauerhafte Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 informieren.
 
 Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu lösen:
 
