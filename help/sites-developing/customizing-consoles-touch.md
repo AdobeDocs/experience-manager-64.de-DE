@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 76%
 
 ---
 
@@ -40,22 +43,24 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
 Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) behandelt.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
 >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
    >
    >
-1. Make any changes within `/apps`
+1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+
 >
 
 
@@ -192,7 +197,7 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    Der erste Eintrag ist die Standardeinstellung.
 
-   Die verfügbaren Nodes korrelieren mit den verfügbaren Ansichtsoptionen:
+   Die verfügbaren Nodes korrelieren mit den verfügbaren Optionen für die Ansicht:
 
    * `column`
    * `card`
