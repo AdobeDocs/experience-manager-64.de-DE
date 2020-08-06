@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 88%
 
 ---
 
@@ -35,7 +38,7 @@ Die Beispiel-Geometrixx-Website umfasst mehrere Sprachzweige und weist die folge
 
 Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. For example, `/content/geometrixx/fr` is the language root for the French language copy. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](/help/sites-administering/tc-prep.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von einer Quell-Website durchgeführt werden.
 
-Die Sprachkopie, für die Sie ursprünglich Inhalte verfassen, ist der Sprach-Master. Die Sprachmustervorlage ist die Quelle, die in andere Sprachen übersetzt wird.
+Die Sprachkopie, für die Sie ursprünglich Inhalte verfassen, ist der Sprach-Master. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird.
 
 Führen Sie die folgenden Schritte aus, um Ihre Website für die Übersetzung vorzubereiten:
 
@@ -73,7 +76,7 @@ Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Klicken oder tippen Sie auf „Erstellen“. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
+1. Klicken oder tippen Sie auf Erstellen. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
 
 ## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
