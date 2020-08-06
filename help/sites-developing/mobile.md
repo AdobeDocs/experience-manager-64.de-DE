@@ -12,6 +12,9 @@ discoiquuid: e6b2de9e-dddc-4987-af2f-cf3477634ea9
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3875'
+ht-degree: 68%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md).
 
-Das Erstellen einer mobilen Website ähnelt dem Erstellen einer Standardwebsite, da auch Vorlagen und Komponenten erstellt werden müssen Weitere Informationen zum Erstellen von Vorlagen und Komponenten finden Sie auf den folgenden Seiten: [Vorlagen](/help/sites-developing/templates.md), [Komponenten](/help/sites-developing/components.md) und [Erste Schritte Entwickeln von AEM-Websites](/help/sites-developing/getting-started.md). Der Hauptunterschied besteht darin, die integrierten Funktionen von AEM für Mobilgeräte innerhalb der Site zu aktivieren. Dies wird erreicht, indem eine Vorlage erstellt wird, die auf der mobilen Seitenkomponente basiert.
+Das Erstellen einer mobilen Website ähnelt dem Erstellen einer Standardwebsite, da auch Vorlagen und Komponenten erstellt werden müssen Weitere Informationen zum Erstellen von Vorlagen und Komponenten finden Sie auf den folgenden Seiten: [Vorlagen](/help/sites-developing/templates.md), [Komponenten](/help/sites-developing/components.md) und [Erste Schritte Entwickeln von AEM-Websites](/help/sites-developing/getting-started.md). Der Hauptunterschied besteht darin, die AEM integrierten Funktionen für Mobilgeräte innerhalb der Site zu aktivieren. Dies wird erreicht, indem eine Vorlage erstellt wird, die auf der mobilen Seitenkomponente basiert.
 
 Sie sollten auch in Betracht ziehen, [responsives Design](/help/sites-developing/responsive.md) zu verwenden und eine einzelne Website zu erstellen, die mehrere Bildschirmgrößen unterstützt.
 
@@ -34,7 +37,7 @@ Um eine mobile Website zu erstellen, gehen Sie folgendermaßen vor:
 
    * Set the `sling:resourceSuperType` property to `wcm/mobile/components/page`
 
-      Auf diese Weise stützt sich die Komponente auf die Komponente für mobile Seiten.
+      Auf diese Weise stützt sich die Komponente auf die Komponente für die mobile Seite.
 
    * Erstellen Sie die Datei `body.jsp` mit der projektspezifischen Logik.
 
@@ -103,7 +106,7 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
   <tr> 
    <td>mobilelist</td> 
    <td>Mobilgerät</td> 
-   <td>- basierend auf der Listenstiftkomponente<br /> - listitem_teaser.jsp ein Bild rendert, wenn das Gerät<br /> </td> 
+   <td>- basierend auf der Liste Foundation-Komponente<br /> - listitem_teaser.jsp ein Image rendert, wenn das Gerät<br /> </td> 
   </tr> 
   <tr> 
    <td>mobilelogo</td> 
@@ -152,7 +155,7 @@ Das AEM-Mobile-Framework ermöglicht die Entwicklung von Komponenten, die für d
 
    `String userAgent = device.getUserAgent();`
 
-* Rufen Sie die Gerätegruppenliste (Gerätegruppen, die der Site vom Autor zugewiesen wurden) von der aktuellen Seite ab:
+* Abrufen der Liste der Gerätegruppe (Gerätegruppen, die der Site vom Autor zugewiesen wurden) von der aktuellen Seite:
 
    `DeviceGroupList deviceGroupList = currentPage.adaptTo(DeviceGroupList.class);`
 
@@ -188,7 +191,7 @@ Informationen zum Erstellen eines Emulators finden Sie im Abschnitt [Erstellen e
 
 * Via the device group&#39;s configuration dialog, the `emulators` property is set with the path of the desired emulator(s). Beispiel: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
-* Die Emulator-Komponenten (z. `/libs/wcm/mobile/components/emulators/iPhone4`) Erweitern Sie die mobile Basisemulatorkomponente ( `/libs/wcm/mobile/components/emulators/base`).
+* Die Emulator-Komponenten (z. `/libs/wcm/mobile/components/emulators/iPhone4`) erweitern Sie die mobile Basisemulatorkomponente ( `/libs/wcm/mobile/components/emulators/base`).
 
 * Jede Komponente, die den mobilen Basisemulator erweitert, kann beim Konfigurieren einer Gerätegruppe ausgewählt werden. Benutzerdefinierte Emulatoren können daher problemlos erstellt oder erweitert werden.
 * Zur Zeit der Anforderung im Bearbeitungsmodus wird die Emulatorimplementierung zum Rendern der Seite verwendet.
@@ -271,9 +274,11 @@ Erstellen Sie eine Gerätegruppe, wenn die von AEM installierten Gruppen Ihren A
    * **Funktionen**: Definiert, ob die Gruppe Bilder, CSS, JavaScript oder Gerätedrehungen verarbeiten kann.
    * **Minimale Bildschirmbreite** und **-höhe**
    * **Emulator deaktivieren**: Zum Aktivieren/Deaktivieren des Emulators während der Inhaltsbearbeitung.
+
    Auf der Registerkarte **Emulatoren**:
 
    * **Emulatoren**: Wählen Sie die Emulatoren aus, die dieser Gerätegruppe zugewiesen sind.
+
    Auf der Registerkarte **Filter**:
 
    * Um einen Filter hinzuzufügen, klicken Sie auf „Objekt hinzufügen“ und wählen Sie einen Filter aus der Dropdown-Liste aus.
@@ -281,7 +286,7 @@ Erstellen Sie eine Gerätegruppe, wenn die von AEM installierten Gruppen Ihren A
 
 
 
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 
 Das Konfigurationsdialogfeld für die Mobilgerätegruppe sieht folgendermaßen aus:
 
@@ -329,7 +334,7 @@ Wenn ein Gerät auf Ihre mobile Website zugreift, erkennt AEM das Gerät, ordnet
 
 #### Installieren einer anderen WURFL™-Datenbank {#installing-a-different-wurfl-database}
 
-Die gekürzte WURFL™-Datenbank, die mit AEM installiert wird, ist eine Version, die vorab aktualisiert wird\
+Die abgeschnittene WURFL™-Datenbank, die mit AEM installiert wird, ist eine Version, die vorab datiert\
 30. August 2011. Wenn Ihre Version von WURFL nach dem 30. August 2011 veröffentlicht wurde, vergewissern Sie sich, dass Ihre Verwendung Ihrer Lizenz entspricht.
 
 So installieren Sie eine WURFL™-Datenbank:
@@ -346,21 +351,21 @@ AEM automatically parses the `wurfl.xml` file and updates the nodes below `/var/
 
 #### Hinzufügen eines Regex-basierten Benutzeragenten-Abgleichs {#adding-a-regexp-based-user-agent-matching}
 
-Fügen Sie einen Benutzeragenten als regulären Ausdruck unter /apps/wcm/mobile/device/wurfl/regexp hinzu, um auf einen bestehenden WURFL™-Gerätetyp zu verweisen.
+Hinzufügen Sie einen Benutzeragenten als regulären Ausdruck unterhalb von /apps/wcm/mobile/devices/wurfl/regexp, um auf einen bestehenden WURFL™-Gerätetyp zu verweisen.
 
 1. Erstellen Sie in **CRXDE Lite** einen Knoten unterhalb von /apps/wcm/mobile/devicespecs/regexp, z. B. apple_ipad_ver1.
 1. Fügen Sie dem Knoten  folgende Eigenschaften hinzu:
 
-   * **regexp**: regulärer Ausdruck zur Definition von Benutzeragenten, z. B.: .&amp;ast;Mozilla.&amp;ast;iPad.&amp;ast;AppleWebKit.&amp;ast;Safari. &amp;ast;
+   * **regexp**: regulärer Ausdruck zur Definition von Benutzeragenten, z. B.: .&amp;ast;Mozilla.&amp;ast;iPad.&amp;ast;AppleWebKit.&amp;ast;Safari.&amp;ast;
    * **deviceId**: die Geräte-ID gemäß der Definition in Wurfl.xml, z. B.: apple_ipad_ver1
 
-Die oben beschriebene Konfiguration führt dazu, dass Geräte, für die der User-Agent mit dem bereitgestellten regulären Ausdruck übereinstimmt, der Geräte-ID aple_ipad_ver1 WURFL™ zugeordnet werden, sofern vorhanden.
+Die oben beschriebene Konfiguration führt dazu, dass Geräte, für die der User-Agent mit dem bereitgestellten regulären Ausdruck übereinstimmt, der Geräte-ID apple_ipad_ver1 WURFL™ zugeordnet werden, sofern vorhanden.
 
 ## Clientseitige Geräterkennung {#client-side-device-detection}
 
 In diesem Abschnitt wird beschrieben, wie Sie die clientseitige Erkennung von AEM auf dem Gerät verwenden, um das Seitenrendering zu optimieren oder dem Client alternative Websiteversionen bereitzustellen.
 
-AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` in AEM als Client-Bibliothek unter `/etc/clientlibs/browsermap`.
+AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` wird in AEM als Client-Bibliothek unter `/etc/clientlibs/browsermap`.
 
 `BrowserMap` bietet Ihnen drei Strategien, die Sie verwenden können, um einem Client eine alternative Website bereitzustellen, die in der folgenden Reihenfolge verwendet wird:
 
@@ -379,7 +384,7 @@ The `PageVariantsProvider` OSGi service is capable of generating alternate links
 
 The `cq:siteVariant` node needs to have the following properties:
 
-* `cq:childNodesMapTo` - bestimmt, welchem Attribut des Linkelements die untergeordneten Knoten zugeordnet werden; Es wird empfohlen, den Inhalt Ihrer Website so zu organisieren, dass die untergeordneten Elemente des Stammknotens die Wurzel für eine Sprachvariante Ihrer globalen Website darstellen (z. `/content/mysite/en`, `/content/mysite/de`); in diesem Fall ist der Wert der `cq:childNodesMapTo` Variablen `hreflang`;
+* `cq:childNodesMapTo` - bestimmt, welchem Attribut des Linkelements die untergeordneten Knoten zugeordnet werden; Es wird empfohlen, den Inhalt Ihrer Website so zu organisieren, dass die untergeordneten Elemente des Stammknotens die Wurzel für eine Sprachvariante Ihrer globalen Website darstellen (z. `/content/mysite/en`, `/content/mysite/de`); in diesem Fall sollte der Wert der `cq:childNodesMapTo` Variablen `hreflang`sein;
 
 * `cq:variantDomain` - gibt an, welche `Externalizer`-Domäne zum Generieren der absoluten URLs der Seitenvarianten verwendet wird. Wenn dieser Wert nicht gesetzt ist, werden die Seitenvarianten mit relativen Links erzeugt;
 
@@ -566,7 +571,7 @@ AEM verarbeitet eine Anfrage, die von einem Mobilgerät ausgegeben wird, das zur
 
 ### Statistiken {#statistics}
 
-Sie können Statistiken zur Anzahl der Anfragen abrufen, die Mobilgeräte an den AEM-Server gesendet haben. Die Anzahl der Anfragen kann wie folgt aufgeteilt werden:
+Sie können Statistiken über die Anzahl der Anfragen abrufen, die Mobilgeräte an den AEM Server gesendet haben. Die Anzahl der Anfragen kann wie folgt aufgeteilt werden:
 
 * pro Gerätegruppe und Gerät
 * pro Jahr, Monat und Tag
