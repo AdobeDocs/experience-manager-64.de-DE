@@ -272,9 +272,9 @@ Ab Experience Manager 6.4 werden Tags unter gespeichert, `/content/cq:tags`die z
 >
 >Es wird empfohlen, die Tag-Manager-API als Ressource zu verwenden.
 
-**Wenn die aktualisierte AEM-Instanz die TagManager-API unterstützt**
+**Wenn die aktualisierte AEM TagManager-API unterstützt**
 
-1. Am Beginn der Komponente erkennt die TagManager-API, ob es sich um eine aktualisierte AEM-Instanz handelt. In einem aktualisierten System werden Tags unter `/etc/tags`gespeichert.
+1. Am Beginn der Komponente erkennt die TagManager-API, ob es sich um eine aktualisierte AEM handelt. In einem aktualisierten System werden Tags unter `/etc/tags`gespeichert.
 
 1. Die TagManager-API wird dann im Abwärtskompatibilitätsmodus ausgeführt, d. h. die API verwendet `/etc/tags` den Basispfad. Wenn nicht, wird ein neuer Speicherort verwendet `/content/cq:tags`.
 
@@ -334,13 +334,13 @@ println "---------------------------------Success-------------------------------
 
 Das Skript ruft alle Tags ab, die `/etc/tags` im Wert der `cq:movedTo/cq:backLinks` Eigenschaft vorhanden sind. Anschließend durchläuft er den abgerufenen Ergebnissatz und löst die Werte für `cq:movedTo` und `cq:backlinks` Eigenschaft auf `/content/cq:tags` Pfade (sofern im Wert erkannt `/etc/tags` wird).
 
-**Wenn die aktualisierte AEM-Instanz auf der klassischen Benutzeroberfläche ausgeführt wird**
+**Wenn eine aktualisierte AEM auf der klaasischen Benutzeroberfläche ausgeführt wird**
 
 >[!NOTE]
 >
 >Die klassische Benutzeroberfläche ist nicht mit Ausfallzeiten 0 kompatibel und unterstützt keinen neuen Tag-Basispfad. Wenn Sie die klassische Benutzeroberfläche verwenden möchten, die erstellt werden muss, gefolgt von einem Neustart der `/etc/tags` `cq-tagging` Komponente.
 
-Bei aktualisierten AEM-Instanzen, die von der TagManager-API unterstützt werden und in der klassischen Benutzeroberfläche ausgeführt werden:
+Bei aktualisierten AEM, die von der TagManager-API unterstützt werden und in der klassischen Benutzeroberfläche ausgeführt werden:
 
 1. Nachdem Verweise auf alten Tag-Basispfad durch tagId oder den neuen Tag-Speicherort ersetzt `/etc/tags` wurden, können Sie Tags an den neuen Speicherort `/content/cq:tags``/content/cq:tags` in CRX migrieren und anschließend einen Komponenten-Neustart durchführen.
 
