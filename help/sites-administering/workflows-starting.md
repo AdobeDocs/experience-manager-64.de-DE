@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 63%
 
 ---
 
@@ -32,10 +35,11 @@ Bei der Verwaltung von Workflows können Sie sie mit unterschiedlichen Methoden 
 >
 >Autoren stehen noch weitere Methoden zur Verfügung. Weitere Informationen finden Sie unter:
 >
->* [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md)
+>* [Anwenden von Workflows auf Seiten ](/help/sites-authoring/workflows-applying.md)
 >* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Übersetzungsprojekte](/help/sites-administering/tc-manage.md)
+
 >
 
 
@@ -139,7 +143,7 @@ Ein Workflow-Paket:
 
    * **Bedingungen**
 
-      Eine Liste der Bedingungen für Node-Werte, die bei der Auswertung bestimmen, ob der Workflow gestartet wird. Beispielsweise führt die folgende Bedingung zum Start des Workflows, wenn für den Knoten als name-Eigenschaft der Wert „User“ festgelegt wurde:
+      Eine Liste von Bedingungen für Node-Werte, die bei der Auswertung bestimmen, ob der Workflow gestartet wird. Beispielsweise führt die folgende Bedingung zum Start des Workflows, wenn für den Knoten als name-Eigenschaft der Wert „User“ festgelegt wurde:
 
       name==Benutzer
 
@@ -148,15 +152,16 @@ Ein Workflow-Paket:
       Eine Liste der zu aktivierenden Funktionen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
 
    * **Deaktivierte Funktionen**
+
    Eine Liste der zu deaktivierenden Funktionen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
 
    * **Workflow-Modell**
 
-      Der Workflow, der gestartet wird, wenn der Ereignistyp auf dem Knoten und/oder Pfad unter der definierten Bedingung auftritt.
+      Der Workflow, der gestartet werden soll, wenn der Ereignistyp auf dem Knoten und/oder Pfad unter der definierten Bedingung auftritt.
 
    * **Beschreibung**
 
-      Eigener Text zur Beschreibung und Identifizierung der Startkonfiguration.
+      Eigener Text zur Beschreibung und Identifizierung der Starter-Konfiguration.
 
    * **Aktivieren**
 
@@ -166,12 +171,13 @@ Ein Workflow-Paket:
       * Wählen Sie **Deaktivieren** aus, wenn der Workflow nicht ausgeführt werden soll (selbst dann nicht, wenn die Konfigurationseigenschaften erfüllt sind).
    * **Liste ausschließen**
 
-      Hiermit werden alle JCR-Ereignisse angegeben, die ausgeschlossen werden sollen (d. h. ignoriert werden), wenn festgestellt wird, ob ein Workflow ausgelöst werden soll.
+      Hiermit werden alle JCR-Ereignis angegeben, die ausgeschlossen werden sollen (d. h. ignoriert werden), wenn festgestellt wird, ob ein Workflow ausgelöst werden soll.
 
       Bei dieser Startereigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen: ``
 
       * `property-name` ignoriert alle `jcr`-Ereignisse, die beim festgelegten Eigenschaftsnamen ausgelöst werden. ``
-      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die das `*<someValue*`>- `user-data` Ereignis enthalten, das über die [ API`ObservationManager`] (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String) festgelegt wurde.
+      * `event-user-data:<*someValue*>` ignoriert alle Ereignis, die das `*<someValue*`>- `user-data` Set über die [ API `ObservationManager`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String) enthalten.
+
       Beispiel:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
