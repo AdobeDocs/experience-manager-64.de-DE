@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Communities-Komponenten
 seo-title: Grundlagen zu Communities-Komponenten
-description: Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
-seo-description: Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
+description: Funktionen von Communities AEM Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
+seo-description: Funktionen von Communities AEM Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 61%
 
 ---
 
 
 # Grundlagen zu Communities-Komponenten {#communities-components-basics}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Im Autorenabschnitt der Dokumentation finden Sie Informationen zum Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus sowie eine Beschreibung der Komponentenkonfigurationen.
 
