@@ -10,13 +10,16 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 75%
 
 ---
 
 
 # Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“{#custom-storage-for-drafts-and-submissions-component}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
 
@@ -27,7 +30,7 @@ By default, AEM Forms stores the user data associated with the draft and submiss
 * Aktivieren von [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
 * Aktivieren [adaptiver Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Informationen zur [Implementierung des benutzerdefinierten Speichers](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Informationen zur [Implementierung von benutzerdefinierten Datenspeicherung](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
