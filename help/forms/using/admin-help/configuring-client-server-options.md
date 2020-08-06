@@ -43,7 +43,7 @@ Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation
 
 **Zugriff auf anonyme Benutzer zulassen:** Wählen Sie diese Option, um freigegebene und persönliche Richtlinien zu erstellen, die es anonymen Benutzern ermöglichen, richtliniengeschützte Dokumente zu öffnen. (Benutzer ohne Konto können auf das Dokument zugreifen, sich jedoch nicht bei Document Security anmelden oder andere richtliniengeschützte Dokumente nutzen.)
 
-**Zugriff auf Version 7-Clients deaktivieren:** Gibt an, ob Benutzer Acrobat oder Reader 7.0 verwenden können, um eine Verbindung zum Server herzustellen. Ist diese Option aktiviert, müssen Benutzer Acrobat oder Reader 8.0 oder höher verwenden, um Document Security-Vorgänge für PDF-Dokumente durchzuführen. Falls Richtlinien erfordern, dass Acrobat oder Reader 8.0 oder höher zum Öffnen richtliniengeschützter Dokumente im zertifizierten Modus ausgeführt werden muss, müssen Sie den Zugriff auf Acobat oder Reader 7 deaktivieren. (Siehe Die Dokumentberechtigungen für Benutzer und Gruppen angeben.)
+**Zugriff auf Version 7-Clients deaktivieren:** Gibt an, ob Benutzer mit Acrobat oder Reader 7.0 eine Verbindung zum Server herstellen können. Ist diese Option aktiviert, müssen Benutzer Acrobat oder Reader 8.0 oder höher verwenden, um Document Security-Vorgänge für PDF-Dokumente durchzuführen. Falls Richtlinien erfordern, dass Acrobat oder Reader 8.0 oder höher zum Öffnen richtliniengeschützter Dokumente im zertifizierten Modus ausgeführt werden muss, müssen Sie den Zugriff auf Acobat oder Reader 7 deaktivieren. (Siehe Die Dokumentberechtigungen für Benutzer und Gruppen angeben.)
 
 **Offline-Zugriff pro Dokument** zulassen Wählen Sie diese Option, um den Offline-Zugriff pro Dokument festzulegen. Wenn diese Einstellung aktiviert ist, kann der Benutzer nur auf die Dokumente offline zugreifen, die er mindestens einmal online geöffnet hat.
 
@@ -59,7 +59,7 @@ Durch Auswahl dieser Option werden Clientanwendungen für die Verwendung der erw
 
 ***Hinweis **: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
-**Bevorzugte Breite des HTML-Steuerelements für erweiterte Authentifizierung** Geben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
+**Bevorzugte HTML-Steuerelementbreite für erweiterte Authentifizierung** Geben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
 **Bevorzugte Höhe des HTML-Steuerelements für erweiterte Authentifizierung** Geben Sie die Höhe des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
@@ -365,7 +365,7 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Die synchronisierte Client** -Client-Anwendung muss Informationen mit dem Server synchronisieren, um den Offline-Zugriff zu ermöglichen.
 
-**Versionskonflikt:** Eine Version des AEM Forms-SDK, die nicht mit dem Server kompatibel ist, versuchte, eine Verbindung zum Server herzustellen.
+**Versionskonflikt:** Eine Version des AEM Forms SDK, die nicht mit dem Server kompatibel ist, versuchte, eine Verbindung zum Server herzustellen.
 
 **Informationen zur Ordnersynchronisierung:** Diese Informationen stehen auf der Seite &quot;Ereignisse&quot;nicht zur Verfügung. Die aktuellen Informationen zur Ordnersynchronisierung, einschließlich des aktuellen Synchronisierungszustands und des Zeitpunktes der letzten Synchronisierung, werden auf der Seite „Domänenverwaltung“ angezeigt. Um Zugriff auf die Domänenverwaltung zu erhalten, klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 
@@ -420,7 +420,7 @@ Diese Einstellungen steuern den im Dialogfeld für die Zertifikatauthentifizieru
 
 **Client-Zertifikatanzeige anpassen**
 
-**Nur Herausgeber von vertrauenswürdigen Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Zertifizierungsstellen zur Verfügung, denen AEM Forms vertraut (siehe Verwalten von Zertifikaten und Berechtigungen). Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
+**Nur Herausgeber von vertrauenswürdigen Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Ausstellern zur Verfügung, denen AEM Formulare für die Vertrauenswürdigkeit konfiguriert sind (siehe Verwalten von Zertifikaten und Berechtigungen.) Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
 
 ## Dynamische Wasserzeichen konfigurieren {#configure-dynamic-watermarks}
 
