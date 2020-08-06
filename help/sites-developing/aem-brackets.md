@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '926'
+ht-degree: 55%
 
 ---
 
 
 # AEM Brackets-Erweiterung{#aem-brackets-extension}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. This extension also provides some support for the [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html), which takes away the complexity of JSP to make component development easier and more secure.
+Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. This extension also provides some support for the [HTML Template Language (HTL)](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html), which takes away the complexity of JSP to make component development easier and more secure.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -27,7 +30,7 @@ Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbe
 
 Die Hauptmerkmale der AEM Brackets-Erweiterung sind:
 
-* Automatisierte Synchronisierung geänderter Dateien mit der AEM-Entwicklungsinstanz.
+* Automatisierte Synchronisierung von geänderten Dateien mit der AEM Entwicklungsinstanz.
 * Manuelle bidirektionale Synchronisierung von Dateien und Ordnern.
 * Vollständige Synchronisierung des Inhaltspakets des Projekts.
 * HTL code completion for expressions and `data-sly-*` block statements.
