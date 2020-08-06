@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 76%
 
 ---
 
@@ -49,7 +52,7 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 >[!TIP]
 >
->Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im Tutorial[ ](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html)zum Erweitern der Seiteneigenschaften.
+>Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im Tutorial [](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) zum Erweitern der Seiteneigenschaften.
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
@@ -75,12 +78,12 @@ Beispiel: Der [**Seitenerstellungsassistent **](/help/sites-authoring/managing-p
    >
    >However, you ***must*** not change anything in the `/libs` path.
    >
-   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
    >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
-   >1. Make any changes within `/apps`
+   >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
 1. Legen Sie die `path` Eigenschaft auf fest, `basic` um auf die Außerkraftsetzung der Registerkarte &quot;Einfach&quot;zu zeigen (siehe auch nächsten Schritt). Beispiel:
@@ -100,6 +103,7 @@ Beispiel: Der [**Seitenerstellungsassistent **](/help/sites-authoring/managing-p
    * **Name**: `cq:showOnCreate`
    * **Typ**: `Boolean`
    * **Wert**: `false`
+
    Der Abschnitt **Weitere Titel und Beschreibungen** wird nicht mehr im **Seitenerstellungsassistenten** angezeigt.
 
 >[!NOTE]
