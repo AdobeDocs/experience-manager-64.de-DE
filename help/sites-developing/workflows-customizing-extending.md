@@ -68,6 +68,7 @@ The `/libs/cq/workflow/components/model/step` component is the nearest common an
 
    * **Allgemein**: für die Bearbeitung von Titel und Beschreibung
    * **Erweitert**: für die Bearbeitung von E-Mail-Benachrichtigungseigenschaften
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ Mit dem folgenden Verfahren können Sie die Standardwerte für die Felder **Tite
 >* Das Dialogfeld „Bearbeiten“ des Schritts speichert den Titel und die Beschreibung in den folgenden Orten: >
 >* `./jcr:title`
 >* `./jcr:description` Positionen
+
 >
 >  
 This requirement is satisfied when the edit dialog uses the Common tab that the `/libs/cq/flow/components/step/step` component implements.
@@ -132,6 +134,7 @@ This requirement is satisfied when the edit dialog uses the Common tab that the 
 
    * Name: `cq:editConfig`
    * Typ: `cq:EditConfig`
+
    >[!NOTE]
    >
    >For more information about the cq:editConfig node, see [Configuring the Edit Behavior of a Component](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
@@ -182,6 +185,7 @@ Um die Komponente auf die Verwendung in einem bestimmten Workflow-Szenario auszu
 
    * Name: `cq:editConfig`
    * Typ: `cq:EditConfig`
+
    Weitere Informationen zum Knoten cq:editConfig finden Sie unter [Konfigurieren des Bearbeitungsverhaltens einer Komponente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Fügen Sie unter dem Knoten cq:EditConfig den folgenden Knoten hinzu:
@@ -216,6 +220,7 @@ Peform the following procedure on your new component (see [Creating Custom Workf
 
    * Name: `cq:editConfig`
    * Typ: `cq:EditConfig`
+
    For more information about the cq:editConfig node, see [Configuring the Edit Behavior of a Component](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Fügen Sie unter dem Knoten cq:EditConfig den folgenden Knoten hinzu:
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ Eine einfache Möglichkeit, einen eigenen angepassten Schritt zu erstellen, best
       * Projekte
       * WCM-Workflow
       * Workflow
+
    ![wf-35](assets/wf-35.png)
 
 1. Sie können jetzt ein Workflow-Modell zur Bearbeitung öffnen. Im Schritt-Browser können Sie einen Filter nutzen, um **Mein angepasster Schritt** anzuzeigen:
@@ -887,6 +894,7 @@ Nach dem [Erstellen des Basisschritts](#creating-the-basic-step) definieren Sie 
       Legt den Standardtitel auf der Schritt-Karte in der Modellzuordnung und im Feld **Titel** des Konfigurationsdialogfelds **Mein angepasster Schritt – Eigenschaften** fest.
 
    * Sie können auch Ihre eigenen angepassten Eigenschaften definieren.
+
    ![wf-40](assets/wf-40.png)
 
 1. Configure the properties on the node `cq:listeners`.
@@ -899,6 +907,7 @@ Nach dem [Erstellen des Basisschritts](#creating-the-basic-step) definieren Sie 
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    Diese Konfiguration ist für das einwandfreie Funktionieren des Editors unabdingbar. In den meisten Fällen darf diese Konfiguration nicht geändert werden.
 
    Wenn Sie jedoch `cq:inherit` auf „true“ festlegen (auf dem Knoten `cq:editConfig`, s. o.), können Sie diese Konfiguration erben, ohne sie explizit in die Schrittdefinition einschließen zu müssen. Wenn keine Vererbung vorliegt, müssen Sie diesen Knoten mit den folgenden Eigenschaften und Werten hinzufügen.
@@ -1040,6 +1049,7 @@ The `_cq_dialog/.content.xml` sample used in this example:
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 You must not modify anything in `/libs`, simply use them as examples. If you want to leverage any of the existing steps, copy them to `/apps` and modify them there.
