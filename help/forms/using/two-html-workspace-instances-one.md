@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +26,7 @@ AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu 
 Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
 1. Installieren Sie das Dev-Paket von AEM Forms Workspace auf dem Server. Anweisungen zum Erstellen finden Sie unter [Dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
-1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie darauf zugreifen `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Melden Sie sich bei der CRXDE Lite als Administrator an, indem Sie darauf zugreifen `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Kopieren Sie den Knoten „ws“ unter „/content“ und fügen Sie ihn unter „/content“ ein. Benennen Sie den Knoten in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Kopieren Sie den Ordner „ws“ unter „/libs“ und fügen Sie ihn unter „/apps “ein. Benennen Sie den Ordner in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
