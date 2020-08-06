@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1056'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung Folgendes tun können:
 
 * Erstellen neuer Themen
-* Anzeigen und Antworten auf Themen
+* Ansicht und Beantwortung von Themen
 * Thema
 * Forum suchen
 * Hilfe beim Moderieren des Foruminhalts
@@ -30,7 +33,7 @@ Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Forumsfunktion zu einer AEM-Site
+* Hinzufügen der Forumsfunktion zu einer AEM Site
 * Configuration settings for the `Forum`component
 
 ## Hinzufügen eines Forums zu einer Seite {#adding-a-forum-to-a-page}
@@ -69,17 +72,19 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die Einstellungen
 
 * **[!UICONTROL Datei-Uploads zulassen]** Ist diese Option aktiviert, können Themen oder Kommentaren Dateien hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulassen]** Wenn diese Option aktiviert ist, fügen Sie folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Zulassen]** Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Veröffentlichen]** zulassen Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste eingefügt werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Veröffentlichen]** zulassen Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Liste der Themen eingefügt werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Wenn Sie]** die Option &quot;Vorgestellte Inhalte zulassen&quot;aktivieren, kann die Idee als [speziellen Inhalt](featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL E-Mail-Abonnements]** zulassen Wenn diese Option aktiviert ist, erlauben Sie Mitgliedern, über neue Beiträge per E-Mail ([Abonnement](subscriptions.md)) benachrichtigt zu werden. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL E-Mail-Abonnements]** zulassen Wenn diese aktiviert sind, erlauben Sie den Mitgliedern, über neue Beiträge per E-Mail ([Abonnement](subscriptions.md)) benachrichtigt zu werden. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Max. Dateigröße]** Relevant nur, wenn `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+* **[!UICONTROL Max. Dateigröße]** nur relevant, wenn 
+`Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
-* **[!UICONTROL Zulässige Dateitypen]** Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+* **[!UICONTROL Zugelassene Dateitypen]** relevant nur, wenn 
+`Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Max. Größe]** der Bilddatei anhängen ist nur relevant, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
 
@@ -97,7 +102,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die Einstellungen
 >
 >Es kann erforderlich sein, Kommentare zu einem Thema sowohl zu prüfen `AllowThreaded Replies` als auch `Allow users to Delete Comments and Topics` zu aktivieren.
 
-### Registerkarte Benutzermoderation {#user-moderation-tab}
+### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics and replies (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
@@ -105,7 +110,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics an
 
 * **[!UICONTROL Themen schließen/erneut öffnen]** Ist diese Option aktiviert, können moderierende Mitglieder Themen für die weitere Bearbeitung oder Kommentare schließen oder bereits geschlossene Themen erneut öffnen. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Themen]** verschieben Wenn diese Option aktiviert ist, können Sie Moderatoren auf der Veröffentlichungsseite das Verschieben von Themen zulassen. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Themen]** verschieben Wenn diese Option aktiviert ist, können Sie Moderatoren auf der Veröffentlichungsseite das Verschieben von Themen gestatten. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Posts kennzeichnen]** Ist diese Option aktiviert, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
@@ -121,9 +126,10 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics an
 
 Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert) verwendet werden können.
 
-* **[!UICONTROL Zulässige Namespaces]** Relevant, wenn `Allow Tagging` sie auf der Registerkarte **[!UICONTROL Einstellungen]** markiert sind. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+* **[!UICONTROL Zulässige Namensraum]** Relevant, wenn `Allow Tagging` auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &quot;aktiviert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
-* **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Default is **-** 1 (no limits).
+* **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Der Standardwert ist 
+**-** 1 (keine Beschränkungen).
 
 ### Registerkarte &quot;Übersetzung&quot; {#translation-tab}
 
@@ -135,11 +141,14 @@ Auf der Registerkarte **[!UICONTROL Übersetzung]** können Sie festlegen, ob be
 
 Geben Sie auf der Registerkarte &quot; **[!UICONTROL Sortiereinstellungen]** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
-* **[!UICONTROL Sortieren nach]** Aktivieren aller zulässigen Sortierungsoptionen: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Sortieren nach]** Aktivieren aller zulässigen Sortierungsoptionen: 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Als Standard]**-Pulldown festlegen, um eine der aktivierten Sortieroptionen als Standard festzulegen. Der Standardwert ist `Newest`.
+* **[!UICONTROL Als Standard]**-Pulldown festlegen, um eine der aktivierten Sortieroptionen als Standard festzulegen. Der Standardwert ist 
+`Newest`.
 
-* **[!UICONTROL Wählen Sie die Zeitoptionen für die Analytics-Sortierung]** Pulldown aus, um eine von `All, Last 24 Hours, Last 7 Days, Last 30 Days`auszuwählen. Der Standardwert ist `All`.
+* **[!UICONTROL Wählen Sie die Zeitoptionen für die Analytics-Sortierung]**, um eine der folgenden Optionen auszuwählen: 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
 
 ## Zusätzliche Informationen {#additional-information}
 
