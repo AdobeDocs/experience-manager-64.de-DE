@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 66%
 
 ---
 
 
 # Speichern eines HTML5-Formulars als Entwurf {#saving-an-html-form-as-a-draft}
 
-Sie können ein HTML5-Formular als Entwurf speichern, und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Forms Portal können Benutzer HTML5-Formulare speichern und wiederherstellen. Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, fügen Sie dem Profilknoten die folgenden Konfigurationen hinzu:
+Sie können ein HTML5-Formular als Entwurf speichern, und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Forms Portal können Benutzer HTML5-Formulare speichern und wiederherstellen. Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, fügen Sie dem Profil-Knoten die folgenden Konfigurationen hinzu:
 
 ## benutzerdefiniertes Profil zum Aktivieren der Funktion „Als Entwurf speichern“{#custom-profile-to-allow-save-as-draft-feature}
 
@@ -51,7 +54,7 @@ To enable Save as Draft functionality for your existing [custom profile](/help/f
 
 Nach der Aktivierung der Funktion „Als Entwurf speichern“ wird das Formular, wenn es gespeichert wurde, in der Komponente [Drafts and Submission (Entwurf und Übermittlung)](/help/forms/using/draft-submission-component.md) aufgelistet. Sie können das gespeicherte Formular aus der Komponente „Drafts and Submissions“ abrufen und mit dem Ausfüllen beginnen.
 
-Um die Formularauflistung für die Komponente &quot;Drafts and Submission&quot;zu aktivieren, fügen Sie die folgende Eigenschaft zum Profilknoten hinzu:
+Um die Formularauflistung für die Komponente &quot;Drafts and Submission&quot;zu aktivieren, fügen Sie die folgende Eigenschaft zum Profil-Knoten hinzu:
 
 <table> 
  <tbody> 
