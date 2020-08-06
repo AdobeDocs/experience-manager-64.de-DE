@@ -10,13 +10,16 @@ topic-tags: document_services
 discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 84%
 
 ---
 
 
 # Formularservice {#forms-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Forms-Dienst ermöglicht das Erstellen interaktiver Clientanwendungen zur Datenerfassung, die in Designer erstellte Formulare überprüfen, verarbeiten, transformieren und übermitteln. Mit dem Forms-Dienst kann jeder von Ihnen entwickelte Formularentwurf als PDF-Dokument wiedergegeben werden.
 
@@ -54,5 +57,5 @@ Die Verwendung von Fragmenten hat unter anderem folgende Vorteile:
 
 * **Wiederverwendbarkeit von Inhalten**: Sie können Inhalte in mehreren Formularentwürfen wiederverwenden. Am schnellsten können Sie Teile mit demselben Inhalt in mehreren Formularen wiederverwenden, indem Sie ein entsprechendes Fragment erstellen. Kopieren oder gar Neuerstellen des Inhalts dauert in jedem Fall länger. Durch die Verwendung von Fragmenten stellen Sie außerdem sicher, dass häufig verwendete Bestandteile eines Formularentwurfs in allen darauf verweisenden Formularen stets einen konsistenten Inhalt und ein einheitliches Erscheinungsbild besitzen.
 * **Globale Aktualisierungen**: Sie müssen globale Änderungen für mehrere Formulare nur einmal in einer Datei vornehmen. Sie können Inhalt, Skriptobjekte, Datenbindungen, Layout und Stile eines Fragments ändern. Alle XDP-Formulare, die auf dieses Fragment verweisen, spiegeln diese Änderungen wider.
-* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung im Bereich der Skripterstellung und anderen erweiterten Funktionen von AEM Forms Designer können Fragmente mit Skripten und dynamischen Eigenschaften entwickeln und freigeben. Formularentwickler können diese Fragmente zur Gestaltung ihrer Formulare verwenden. Neben der einfacheren Entwicklung stellen sie dadurch sicher, dass Aussehen und Funktionalität aller Formularteile in allen Formularen einheitlich sind.
+* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung in der Skripterstellung und anderen erweiterten Funktionen von AEM Forms Designer können Fragmente mit Skripten und dynamischen Eigenschaften entwickeln und freigeben. Formularentwickler können diese Fragmente zur Gestaltung ihrer Formulare verwenden. Neben der einfacheren Entwicklung stellen sie dadurch sicher, dass Aussehen und Funktionalität aller Formularteile in allen Formularen einheitlich sind.
 
