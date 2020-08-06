@@ -523,7 +523,7 @@ Schreibgeschützt.
 
 **ClusterId** Die Kennung dieses Repository-Clusters. Schreibgeschützt.
 
-**ClusterMasterId** Der Bezeichner des Master-Knotens dieses Repository-Clusters. Schreibgeschützt.
+**ClusterMasterId** Der Bezeichner des Übergeordnet-Knotens dieses Repository-Clusters. Schreibgeschützt.
 
 **ClusterNodeId** Die Kennung dieses Knotens im Repository-Cluster. Schreibgeschützt.
 
@@ -597,12 +597,12 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**getClusterMaster** Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, sodass alle anderen Knoten im Cluster (d. h. die vom Master gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
+**getClusterMaster** Legt diesen Repository-Knoten als Übergeordnet-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Übergeordnet-Knoten festgelegt und neu gestartet, sodass alle anderen Knoten im Cluster (d. h. die vom Übergeordnet gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**joinCluster** Fügt dieses Repository einem Cluster als Knoten hinzu, der vom Clustermaster gesteuert wird. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
+**joinCluster** Fügt dieses Repository einem Cluster als Knoten hinzu, der vom Cluster Übergeordnet gesteuert wird. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
 
 * Argumente:
 
