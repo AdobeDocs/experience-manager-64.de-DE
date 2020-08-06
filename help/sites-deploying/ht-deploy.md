@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +25,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie bestimmte Bereitstellungsaufg
 * [Anleitung zur Verwendung der Protokollanzeige](https://helpx.adobe.com/experience-manager/kb/logsviewer.html) 
 * [Anleitung zur Bereinigung von Workflows und des Auditprotokolls](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html) 
 
-* [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 
+* [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html) 
 * [Anleitung zum Entfernen von Funktionen vom Startbildschirm](/help/sites-developing/customizing-the-welcome-console.md)
 * [Anleitung zur Deaktivierung der Standortverfolgung](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html) 
 
