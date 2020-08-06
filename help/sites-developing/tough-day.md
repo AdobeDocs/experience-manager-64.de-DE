@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 54%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 ## Was ist Tough Day 2?{#what-is-tough-day}
 
-Tag 2 ist eine Anwendung, mit der Sie die Grenzen Ihrer AEM-Instanz testen können. Sie können ihn direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) sehen Sie eine Präsentation der Anwendung.
+Tough Day 2 ist eine Anwendung, mit der Sie die Grenzen Ihrer AEM testen können. Sie können ihn direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://docs.adobe.com/ddc/de/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) sehen Sie eine Präsentation der Anwendung.
 
 ## Ausführen von Tough Day 2 {#how-to-run-tough-day}
 
@@ -91,22 +94,22 @@ In der nachfolgenden Tabelle finden Sie die relevanten Hilfeparameter.
   </tr> 
   <tr> 
    <td> —help —runmode/publishmode type=&lt;mode&gt;</td> 
-   <td>Listet Informationen zum angegebenen Ausführungsmodus oder Veröffentlichungsmodus auf.</td> 
+   <td>Listen enthalten Informationen zum angegebenen Ausführungsmodus oder Veröffentlichungsmodus.</td> 
    <td><p>java -jar toughday2.jar —help —runmode type=conantload</p> <p>java -jar toughday2.jar —help —publishmode type=interval</p> </td> 
   </tr> 
   <tr> 
    <td>—help —suite=&lt;SuiteName&gt;</td> 
-   <td>Listet alle Tests einer angegebenen Suite und deren jeweilige konfigurierbare Eigenschaften auf.</td> 
+   <td>Liste aller Tests einer bestimmten Suite und ihrer jeweiligen konfigurierbaren Eigenschaften.</td> 
    <td><br /> java -jar toughday2.jar —help —suite=get_tests</td> 
   </tr> 
   <tr> 
    <td> —help —tag=&lt;Tag&gt;</td> 
-   <td><br /> Listet alle Elemente mit dem angegebenen Tag auf.</td> 
+   <td><br /> Liste aller Elemente mit dem angegebenen Tag.</td> 
    <td>java -jar toughday2.jar —help —tag=publish</td> 
   </tr> 
   <tr> 
    <td>—help &lt;TestClass/PublisherClass&gt;</td> 
-   <td><br /> Listet alle konfigurierbaren Eigenschaften für den jeweiligen Test oder Herausgeber auf.</td> 
+   <td><br /> Liste aller konfigurierbaren Eigenschaften für den jeweiligen Test oder Herausgeber.</td> 
    <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar —help CSVPublisher</p> </td> 
   </tr> 
  </tbody> 
@@ -132,7 +135,7 @@ Nachfolgend finden Sie alle relevanten Parameter:
 | `--password=<Val>` | Kennwort für den angegebenen Benutzer. | admin |  |
 | `--duration=<Val>` | Dauer der Tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. | 1d |  |
 | `--timeout=<Val>` | Wie lange ein Test ausgeführt wird, bevor er unterbrochen und als fehlgeschlagen markiert wird. In Sekunden angegeben. | 180 |  |
-| `--suite=<Val>` | Der Wert kann eine oder eine Liste (durch Kommas getrennt) vordefinierter Test Suites sein. | toughday |  |
+| `--suite=<Val>` | Der Wert kann eine oder eine Liste (durch Kommas getrennt) vordefinierter Testsuiten sein. | toughday |  |
 | `--configfile=<Val>` | Die zielgerichtete yaml-Konfigurationsdatei. |  |  |
 | `--contextpath=<Val>` | Kontextpfad der Instanz. |  |  |
 | `--loglevel=<Val>` | Die Protokollierungsstufe für die Tough Day 2-Engine. | INFO | ALL, DEBUG, INFO, WARN, FEHLER, FATAL, AUS |
@@ -315,7 +318,7 @@ Furthermore, tests can have a `count` property, which limits the number of execu
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20 
 ```
 
- oder  ermöglichen.
+ oder
 
 ```xml
 - add : CreateAssetTreeTest
@@ -346,7 +349,7 @@ Tough Day 2 gibt Testmetriken und -protokolle aus. Weitere Informationen finden
 
 ### Testmetriken {#test-metrics}
 
-Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. **Metriken mit**&amp;ast; -Symbol nur nach erfolgreicher Ausführung gemeldet werden:
+Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metrics with the **&amp;ast;** symbol are reported only after successful runs:
 
 | **Name** | **Beschreibung** |
 |---|---|
