@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -67,11 +67,11 @@ Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen]
 >
 >Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von serverseitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine serverseitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
 
-## Quellen für Hintergrundinformationen     {#background-information-sources}
+## Quellen für Hintergrundinformationen       {#background-information-sources}
 
 Die Integration von AEM in Adobe Target erfordert Kenntnisse zu Adobe Target, AEM-Aktivitätenmanagement und AEM-Zielgruppenmanagement. Sie sollten mit den folgenden Informationen vertraut sein:
 
-* Adobe Target (siehe [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
+* Adobe Target (siehe [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/de-DE/target/using/target-home.html)).
 * AEM-Aktivitätskonsole (siehe [Verwalten von Aktivitäten](/help/sites-authoring/activitylib.md)).
 * AEM-Zielgruppen (siehe [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md)).
 
