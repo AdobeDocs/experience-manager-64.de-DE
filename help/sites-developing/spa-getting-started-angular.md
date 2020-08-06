@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 30%
 
 ---
 
@@ -22,10 +25,10 @@ Die SPA-Erstellungsfunktion bietet eine umfassende Lösung zur Unterstützung vo
 
 >[!NOTE]
 >
->Dieser Artikel basiert auf dem Angular-Framework. Das entsprechende Dokument für das React-Framework finden Sie unter [Erste Schritte mit SPAs in AEM - React](/help/sites-developing/spa-getting-started-react.md).
+>Dieser Artikel basiert auf dem Angular-Framework. Das entsprechende Dokument für das React Framework finden Sie unter [Erste Schritte mit SPAs in AEM - Reaktion](/help/sites-developing/spa-getting-started-react.md).
 
 >[!NOTE]
->Für die Einzelseitenanwendung (SPA) Editor-Funktion ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Einzelseitenanwendung (SPA) Editor&quot;ist AEM 6.4 Service Pack 2 oder höher erforderlich.
 >
 >Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen clientseitiges Rendering (z.B. React oder Angular) durch das SPA-Framework erforderlich ist.
 
@@ -33,7 +36,7 @@ Die SPA-Erstellungsfunktion bietet eine umfassende Lösung zur Unterstützung vo
 
 Dieser Artikel fasst die grundlegenden Funktionen einer einfachen SPA und die Grundlagen zusammen, die Sie für deren Nutzung benötigen.
 
-Weitere Informationen zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Dokumenten:
+Weitere Informationen über die Funktionsweise von BSG in AEM finden Sie in den folgenden Dokumenten:
 
 * [Einführung und exemplarische Vorgehensweisen zu SPA](/help/sites-developing/spa-walkthrough.md)
 
@@ -55,7 +58,7 @@ Zusätzlich zur erwarteten Angular-Abhängigkeit kann die Beispiel-SPA zusätzli
 
 ### Abhängigkeiten {#dependencies}
 
-Die `package.json` Datei definiert die Anforderungen des gesamten SPA-Pakets. Die erforderlichen AEM-Abhängigkeiten sind hier aufgelistet.
+Die `package.json` Datei definiert die Anforderungen des gesamten SPA-Pakets. Die erforderlichen AEM Abhängigkeiten sind hier aufgelistet.
 
 ```
 "dependencies": {
@@ -114,11 +117,11 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
+Jedes AEM Projekt sollte den [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## Anwendungsstruktur {#application-structure}
 
-Wenn Sie die Abhängigkeiten einbeziehen und Ihre App wie oben beschrieben erstellen, erhalten Sie ein funktionierendes SPA-Paket, das Sie in Ihre AEM-Instanz hochladen können.
+Wenn Sie die Abhängigkeiten einbeziehen und Ihre App wie oben beschrieben erstellen, erhalten Sie ein funktionierendes SPA-Paket, das Sie in Ihre AEM Instanz hochladen können.
 
 Im nächsten Abschnitt dieses Dokuments erfahren Sie, wie eine SPA in AEM strukturiert ist, welche wichtigen Dateien die Anwendung antreiben und wie sie zusammenarbeiten.
 
@@ -288,10 +291,10 @@ Es ist regelmäßig erforderlich, dass Komponenten in einer Einzelseitenanwendun
 
 ## Nächste Schritte {#next-steps}
 
-Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Lernprogramm [Erste Schritte mit dem AEM SPA Editor - WKND Ereignisses](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Lernprogramm [Erste Schritte mit dem AEM SPA Editor - WKND Ereignisse](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
-Weitere Informationen zur Organisation der Entwicklung von SPAs für AEM finden Sie im Artikel [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md).
+Weitere Informationen darüber, wie Sie sich für die Entwicklung von SPAs organisieren können, finden Sie AEM Artikel [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md).
 
-Weitere Informationen zum dynamischen Modell zur Komponentenzuordnung und dazu, wie es in AEM in SPAs funktioniert, finden Sie im Artikel [Dynamisches Modell zur Komponentenzuordnung für SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Weitere Informationen zum dynamischen Modell für die Komponentenzuordnung und zur Funktionsweise in SPAs in AEM finden Sie im Artikel [Dynamisches Modell für Komponentenzuordnung für SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Wenn Sie SPAs in AEM für ein anderes Framework als &quot;React&quot;oder &quot;Angular&quot;implementieren möchten oder einfach einen tiefen Einblick in die Funktionsweise des SPA-SDK für AEM erhalten möchten, lesen Sie den Artikel [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
+Wenn Sie SPAs in AEM für ein anderes Framework als React oder Angular implementieren möchten oder einfach einen tiefen Einblick in die Funktionsweise des SPA SDK for AEM haben möchten, lesen Sie den Artikel [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
