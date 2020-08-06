@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 92%
 
 ---
 
@@ -64,7 +67,7 @@ Die möglichen Aktionen hängen auch davon ab, ob eine Ressource ausgewählt ist
 
 Die linke Leiste kann nach Bedarf geöffnet oder ausgeblendet werden. Sie zeigt Folgendes an:
 
-* **Zeitleiste**
+* **Timeline**
 * **Verweise**
 * **Filter**
 
