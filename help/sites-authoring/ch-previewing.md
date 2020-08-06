@@ -1,6 +1,6 @@
 ---
-title: Seitenvorschau mit ContextHub-Daten
-seo-title: Seitenvorschau mit ContextHub-Daten
+title: Vorschau von Seiten mit ContextHub-Daten
+seo-title: Vorschau von Seiten mit ContextHub-Daten
 description: In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können Sie mithilfe der Leiste Store-Daten bearbeiten und Inhalte in der Vorschau ansehen.
 seo-description: In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können Sie mithilfe der Leiste Store-Daten bearbeiten und Inhalte in der Vorschau ansehen.
 uuid: 0150555a-0a92-4692-a706-bbe59fd34d6a
@@ -11,11 +11,14 @@ topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 96%
 
 ---
 
 
-# Seitenvorschau mit ContextHub-Daten{#previewing-pages-using-contexthub-data}
+# Vorschau von Seiten mit ContextHub-Daten {#previewing-pages-using-contexthub-data}
 
 In der [ContextHub](/help/sites-developing/contexthub.md)-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können mithilfe der Leiste Store-Daten bearbeitet werden. Die ContextHub-Symbolleiste eignet sich besonders für die Vorschau von Inhalten, die durch Daten im ContextHub Store gesteuert werden.
 
@@ -46,9 +49,9 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 Jedes Benutzeroberflächenmodul verfügt über eigene Funktionen, es stehen jedoch auch folgende gemeinsam genutzte Funktionen zur Verfügung. Da sich die Benutzeroberflächenmodule erweitern lassen, können Entwickler je nach Wunsch weitere Funktionen einbauen.
 
-### Inhalt der Symbolleiste {#toolbar-content}
+### Inhalt der Symbolleiste   {#toolbar-content}
 
-Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
+Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub-Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
 
 ![screen_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
 
@@ -62,9 +65,9 @@ In einigen Benutzeroberflächenmodulen wird ein Popup-Overlay angezeigt, wenn da
 
 In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Steuern diese Store-Daten Seiteninhalte, können Sie mit dem Formular Änderungen vornehmen, die sich dann in den Seiteninhalten widerspiegeln.
 
-### Vollbildmodus {#fullscreen-mode}
+### Vollbildmodus   {#fullscreen-mode}
 
-In einigen Popup-Overlays ist ein Symbol enthalten, das beim Anklicken oder Antippen dafür sorgt, dass der Popup-Inhalt den ganzen Bildschirm oder das gesamte Browserfenster ausfüllt.
+Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
 
 ![](do-not-localize/chlimage_1-18.png)
 
