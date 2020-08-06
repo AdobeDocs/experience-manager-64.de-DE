@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 65%
 
 ---
 
@@ -43,7 +46,7 @@ Nach einem erzwungenen Abschalten hält AEM die asynchrone Indizierung bis zu 30
 
 1. Finden Sie zuerst heraus, ob das Abschalten der AEM-Instanz erzwungen wurde (das Ende des AEM-Vorgangs wurde erzwungen oder ein Stromausfall trat auf) und diese anschließend neu gestartet wurde.
 
-   * [Die AEM-Protokollierung](/help/sites-deploying/configure-logging.md) kann zu diesem Zweck überprüft werden.
+   * [AEM Protokollierung](/help/sites-deploying/configure-logging.md) kann zu diesem Zweck überprüft werden.
 
 1. Falls das Abschalten erzwungen wurde, wurde die Neuindizierung von AEM beim Neustart automatisch für bis zu 30 Minuten angehalten.
 1. Warten Sie ungefähr 45 Minuten, dass AEM den normalen asynchronen Indizierungsvorgang wieder aufnimmt.
@@ -61,6 +64,7 @@ Bei außergewöhnlichen Umständen kann der zum Verwalten der asynchronen Indizi
    * On the affected AEM instance, navigate to AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler or go to https://&lt;host>:&lt;port>/system/console/configMgr (for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
    * Geben Sie in das Feld „Allowed Thread Pools“ den Wert „Oak“ ein.
    * Klicken Sie unten rechts auf „Save“, um die Änderungen zu speichern.
+
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. Überprüfen Sie, dass der neue Thread-Pool in Apache Sling Scheduler registriert ist und in der Statusanzeige der Web-Konsole von Apache Sling Scheduler angezeigt wird.
@@ -70,6 +74,7 @@ Bei außergewöhnlichen Umständen kann der zum Verwalten der asynchronen Indizi
 
       * ApacheSlingoak
       * ApacheSlingdefault
+
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
 ## Überwachungswarteschlange ist voll {#observation-queue-is-full}
@@ -125,7 +130,7 @@ Gehen Sie wie folgt vor, um einen unterbrochenen Neuindizierungsvorgang zu ident
 1. Nachdem Sie alle in Schritt 1 beschriebenen Informationen gesammelt haben, starten Sie AEM neu.
 
    * Durch Neustarten von AEM kann das Problem im Fall von hohen gleichzeitigen Lasten (überlaufende Überwachungswarteschlange oder Ähnliches) eventuell behoben werden.
-   * If a restart does not solve the problem, open an issue with [Adobe Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) and provide all the information collected in Step 1.
+   * If a restart does not solve the problem, open an issue with [Adobe Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) and provide all the information collected in Step 1.
 
 ## Sicheres Abbrechen der asynchronen Neuindizierung {#safely-aborting-asynchronous-re-indexing}
 
@@ -141,8 +146,9 @@ Um die Neuindizierung sicher abzubrechen, führen Sie folgende Schritte aus:
    * Navigate to the appropriate IndexStats MBean via the JMX console by going to either AEM OSGi Web Console>Main>JMX or https://&lt;host>:&lt;port>/system/console/jmx (for example, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
    * Open the IndexStats MBean based on the re-indexing lane that you wish to stop ( `async`, `async-reindex`, or `fulltext-async`)
 
-      * Um die entsprechende Spur und damit die IndexStats MBean-Instanz zu identifizieren, sehen Sie sich die Eigenschaft &quot;async&quot;der Oak-Indizes an. The &quot;async&quot; property will contain the lane name: `async`, `async-reindex`, or `fulltext-async`.
+      * Um die entsprechende Spur und damit die IndexStats-MBean-Instanz zu identifizieren, sehen Sie sich die Eigenschaft &quot;async&quot;der Oak-Indizes an. The &quot;async&quot; property will contain the lane name: `async`, `async-reindex`, or `fulltext-async`.
       * Sie können auch über den AEM-Index-Manager in der Spalte „Asynchron“ auf die Spur zugreifen. Um auf den Index-Manager zuzugreifen, wechseln Sie zu „Vorgänge“ > „Diagnose“ > „Index-Manager“.
+
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
 1. Invoke the `abortAndPause()` command on the appropriate `IndexStats` MBean.
@@ -157,6 +163,7 @@ Um die Neuindizierung sicher abzubrechen, führen Sie folgende Schritte aus:
 
          * `/oak:index/someNewIndex@type=disabled`
       * oder entfernen Sie die Indexdefinition vollständig.
+
    Speichern Sie die Änderungen nach Beendigung des Vorgangs im Repository.
 
 1. Setzen Sie dann die asynchrone Indizierung auf den abgebrochenen Index-Spuren fort.
@@ -165,4 +172,4 @@ Um die Neuindizierung sicher abzubrechen, führen Sie folgende Schritte aus:
 
 ## Verhindern der langsamen Neuindizierung {#preventing-slow-re-indexing}
 
-Am besten ist es, die Indexierung während ruhiger Zeiträume (z. B. nicht während einer großen Inhaltsaufnahme) und idealerweise während Wartungsfenstern, wenn AEM-Ladezeit bekannt und kontrolliert ist, erneut durchzuführen. Vergewissern Sie sich außerdem, dass Ihre Neuindizierung nicht während anderer Wartungstätigkeiten stattfindet.
+Es ist am besten, die Indexierung während ruhiger Zeiträume (z. B. nicht während einer großen Inhaltsaufnahme) und idealerweise während Wartungsfenstern zu ändern, wenn AEM Last bekannt und kontrolliert ist. Vergewissern Sie sich außerdem, dass Ihre Neuindizierung nicht während anderer Wartungstätigkeiten stattfindet.
