@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 92%
 
 ---
 
@@ -34,11 +37,14 @@ In diesem Dokument werden die verschiedenen Elemente beschrieben, aus denen Kamp
 Das Kampagnenmanagement umfasst verschiedene Elemente:
 
 * **Marken**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+In AEM sind Marken die oberste Ebene und bilden eine Sammlung von 
+**Kampagnen**.
 
-* **Kampagnen** Eine Kampagne ist eine Sammlung einzelner **Erlebnisse**.
+* **Kampagnen** Eine Kampagne ist eine Sammlung von 
+**Erlebnisse**.
 
-* **Erlebnisse** Die zielgerichteten Inhalte bilden verschiedene Erlebnisse, die Besuchern an **Touchpoints** präsentiert werden. Es gibt verschiedene Erlebnistypen:
+* **Erlebnisse** Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unter 
+**Touchpoints**. Es gibt verschiedene Erlebnistypen:
 
    * **Teasers**
       [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte Besucher-**Segmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
@@ -47,6 +53,7 @@ In AEM, brands are the top level unit and form a collection of **Campaigns**.
 
       * Präsentieren einer Optionspalette, aus der der Besucher wählen kann
       * Anzeigen nur eines Teaser-Absatzes basierend auf dem jeweiligen Besuchersegment. Der angezeigte Teaser-Absatz kann beispielsweise vom Alter des Besuchers abhängig sein.
+
       Bei einer Teaser-Seite handelt es sich in der Regel um eine temporäre Aktion, die für eine bestimmte Zeitdauer gültig ist, bis sie durch die nächste Teaser-Seite ersetzt wird.
 
    * **Newsletter**
