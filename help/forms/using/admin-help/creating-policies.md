@@ -182,11 +182,11 @@ Diese Dokumentberechtigungen sind auf der Registerkarte „Berechtigungen“ ver
 
 **Seiten ändern:** Benutzer darf Seiten hinzufügen und entfernen und Inhalte in der PDF-Datei bearbeiten.
 
-**Ausfüllen und Unterschreiben:** Benutzer darf Formularfelder in der PDF-Datei ausfüllen und signieren.
+**Fill &amp; Sign:** Benutzer darf Formularfelder in der PDF-Datei ausfüllen und signieren.
 
 **Kopieren:** Erlaubt dem Benutzer das Kopieren von Text aus einem Dokument, das mit dieser Richtlinie geschützt ist.
 
-**Bildschirmlesehilfen:** Diese Berechtigung wird angezeigt, wenn Sie das Kontrollkästchen &quot;Benutzerdefinierte Berechtigungen für PDF anzeigen&quot;aktivieren. Wenn diese Option aktiviert ist, verfügt Adobe Acrobat über die Berechtigung zum Hinzufügen von temporären Tags zu der PDF-Datei, um die Lesbarkeit mit einer Bildschirmlesehilfe zu verbessern. 
+**Reader:** Diese Berechtigung wird angezeigt, wenn Sie das Kontrollkästchen &quot;Benutzerdefinierte Berechtigungen für PDF anzeigen&quot;aktivieren. Wenn diese Option aktiviert ist, verfügt Adobe Acrobat über die Berechtigung zum Hinzufügen von temporären Tags zu der PDF-Datei, um die Lesbarkeit mit einer Bildschirmlesehilfe zu verbessern. 
 
 Diese Dokumentberechtigungen sind auf der Registerkarte „Optionen“ verfügbar. Sie können diese Berechtigungen auf PDF-, PTC Pro/E- und Microsoft Office-Dateien anwenden:
 
@@ -264,7 +264,7 @@ Wenn Sie eine Richtlinie bearbeiten und der Administrator ein konfiguriertes Was
 >
 >Bei Richtlinien, die einen anonymen Benutzerzugriff zulassen, werden der Benutzername und die ID eines anonymen Benutzers nicht als Wasserzeichen angezeigt, auch wenn Sie diesen Typ von Wasserzeichen auswählen.
 
-**Nur zertifizierte Acrobat-Zusatzmodule für PDF verwenden:** Wenn diese Option für eine Richtlinie ausgewählt ist, wird festgelegt, dass Acrobat 8.0 und höher beim Öffnen von Dokumenten, die mit der Richtlinie gesichert sind, im zertifizierten Modus ausgeführt werden muss. Wird Acrobat im zertifizierten Modus ausgeführt, werden keine Drittanbieter-Plug-Ins geladen.
+**Nur zertifizierte Acrobat-Zusatzmodule für PDF verwenden:** Wenn diese Option für eine Richtlinie ausgewählt ist, gibt sie an, dass Acrobat 8.0 und höher beim Öffnen von Dokumenten, die mit der Richtlinie gesichert sind, im zertifizierten Modus ausgeführt werden muss. Wird Acrobat im zertifizierten Modus ausgeführt, werden keine Drittanbieter-Plug-Ins geladen.
 
 Wählen Sie diese Option aus, wenn Sie befürchten, dass ein Dokumentempfänger ein Plug-In schreibt, das die Dokumentschutzmaßnahmen in Acrobat 8.0 oder höher umgehen könnte. Aktivieren Sie diese Option nicht, wenn die Dokumentempfänger in Acrobat Plug-Ins von Drittanbietern für die Interaktion mit Dokumenten verwenden müssen.
 
