@@ -80,7 +80,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
 <table>
  <thead>
   <tr>
-   <th><p>Datei</p></th>
+   <th><p>File</p></th>
    <th><p>Beschreibung</p></th>
    <th><p>Ort</p></th>
   </tr>
@@ -231,7 +231,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
 <table>
  <thead>
   <tr>
-   <th><p>Datei</p> </th>
+   <th><p>File</p> </th>
    <th><p>Beschreibung</p> </th>
    <th><p>Ort</p> </th>
   </tr>
