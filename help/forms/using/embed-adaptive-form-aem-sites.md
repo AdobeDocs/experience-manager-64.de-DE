@@ -10,19 +10,22 @@ topic-tags: interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
 source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 75%
 
 ---
 
 
 # Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM-Sites-Seite ein.{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit AEM Forms können Formularentwickler nahtlos adaptive Formulare in eine AEM-Site-Seite oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und versenden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
 
 For information about embedding an adaptive form in an external web page, see [Embed adaptive form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
-Auf der Seite &quot;AEM-Sites&quot;können Sie ein adaptives Formular oder eine interaktive Kommunikation hinzufügen, indem Sie:
+Auf der Seite &quot;AEM Sites&quot;können Sie ein adaptives Formular oder eine interaktive Kommunikation hinzufügen, indem Sie:
 
 * **[AEM Forms-Container-Komponente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms bietet eine Komponente, die Sie Ihren Siteseiten hinzufügen können. Über die AEM Forms-Container-Komponente können Sie ein adaptives Formular und interaktive Kommunikation einbetten.
 
@@ -30,7 +33,7 @@ Auf der Seite &quot;AEM-Sites&quot;können Sie ein adaptives Formular oder eine 
 
 ## Voraussetzungen {#prerequisites}
 
-Um ein adaptives Formular oder eine interaktive Kommunikation in eine AEM-Siteseite einzubetten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die AEM Form-Komponente in der zugehörigen Vorlage als zulässige Komponente konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
+Um ein adaptives Formular oder eine interaktive Kommunikation in eine AEM Siteseite einzubetten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die AEM-Formularkomponente in der zugehörigen Vorlage als zulässige Komponente konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
 
 Falls eine Siteseite eine statische Vorlage verwendet, müssen Sie es im Absatzsystem der Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](/help/sites-authoring/default-components-designmode.md).
 
@@ -93,5 +96,5 @@ Beachten Sie die folgenden Punkte, wenn Sie adaptive Formulare in AEM-Siteseiten
 * Benutzerentwürfe und Übermittlungen von eingebetteten Formularen werden unterstützt und sind auf der entsprechenden Registerkarte im Forms Portal sichtbar.
 * Die im Originalformular konfigurierte Aktion wird im eingebetteten Formular beibehalten.
 * Die im Originalformular konfigurierten Erlebnis-Targeting und A/B-Tests funktionieren im eingebetteten Formular nicht. Sie können jedoch Erlebnis-Targeting auf der Siteseite verwenden, um verschiedene Formular je nach Benutzerprofil darzustellen.
-* Wenn Adobe Analytics für das Originalformular konfiguriert ist, werden die Analysedaten des eingebetteten Formulars in Adobe Analytics erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
+* Wenn Sie Adobe Analytics für das Originalformular konfiguriert haben, werden die Analysedaten des eingebetteten Formulars in Adobe Analytics erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
 
