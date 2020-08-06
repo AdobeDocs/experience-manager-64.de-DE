@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
 seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, in einer Produktionsumgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
-seo-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, in einer Produktionsumgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+seo-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
 source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 
 # Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, in einer Produktionsumgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
 
 Im Allgemeinen verwenden Entwickler nicht die -Produktionsumgebung zum Erstellen und Testen ihrer Anwendungen. Sie müssen daher Benutzerkonten und -dienste verwalten, die, obwohl sie in einer privaten Entwicklungsumgebung benötigt werden, in einer Produktionsumgebung nicht erforderlich sind.
 
@@ -99,6 +102,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
    * WorkspacePropertyService
    * OutputService
    * FormsService
+
    Wenn Sie vorhaben, alle oder einiger dieser Dienste für den Remote-Aufruf verfügbar zu machen, sollten Sie auch überlegen, ob Sie nicht den anonymen Zugriff für diese Dienste deaktivieren. Ansonsten kann jeder Aufrufer mit Netzwerkzugriff auf diesen Dienst den Dienst ohne Übergabe gültiger Berechtigungen aufrufen.
 
    Der anonyme Zugriff sollte für alle nicht erforderlichen Dienste deaktiviert werden. Für viele interne Dienste muss die anonyme Authentifizierung aktiviert sein, da sie möglicherweise von jedem beliebigen Benutzer im System ohne vorherige Authentifizierung aufgerufen werden müssen.
