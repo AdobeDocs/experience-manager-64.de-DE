@@ -1,6 +1,6 @@
 ---
-title: Cloud-Dienstkonfigurationen
-seo-title: Cloud-Dienstkonfigurationen
+title: Cloud Service-Konfigurationen
+seo-title: Cloud Service-Konfigurationen
 description: Sie können die vorhandenen Instanzen erweitern und Ihre eigenen Konfigurationen erstellen.
 seo-description: Sie können die vorhandenen Instanzen erweitern und Ihre eigenen Konfigurationen erstellen.
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 66%
 
 ---
 
 
-# Cloud-Dienstkonfigurationen{#cloud-service-configurations}
+# Cloud Service-Konfigurationen{#cloud-service-configurations}
 
 Konfigurationen sollen die Logik und Struktur für die Speicherung von Dienstkonfigurationen bereitstellen.
 
@@ -30,7 +33,7 @@ Die Prinzipien, die bei der Entwicklung von Konfigurationen zum Einsatz kommen, 
 * Die Verweise erfolgen von Analyseknoten nach Pfad.
 * Sie sind einfach erweiterbar.
 * Has the flexibility to cater for more complex configurations, such as [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Unterstützung für Abhängigkeiten (z. B. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Plugins benötigen eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Konfiguration).
+* Unterstützung von Abhängigkeiten (z. B. benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Plugins eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Konfiguration).
 
 ## Struktur {#structure}
 
