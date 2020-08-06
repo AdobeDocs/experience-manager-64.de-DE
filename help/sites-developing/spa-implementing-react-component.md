@@ -1,8 +1,8 @@
 ---
 title: Implementieren einer React-Komponente für SPA
 seo-title: Implementieren einer React-Komponente für SPA
-description: Dieser Artikel enthält ein Beispiel dafür, wie eine einfache, vorhandene React-Komponente an den AEM SPA Editor angepasst werden kann.
-seo-description: Dieser Artikel enthält ein Beispiel dafür, wie eine einfache, vorhandene React-Komponente an den AEM SPA Editor angepasst werden kann.
+description: In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente an den AEM SPA-Editor angepasst werden kann.
+seo-description: In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente an den AEM SPA-Editor angepasst werden kann.
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 10%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten in der Lage sein, Websites mithilfe von SPA-Frameworks zu erstellen, und Autoren möchten Inhalte innerhalb von AEM für eine Website, die mit SPA-Frameworks erstellt wurde, nahtlos bearbeiten.
 
-Die SPA-Erstellungsfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel enthält ein Beispiel dafür, wie eine einfache, vorhandene React-Komponente an den AEM SPA Editor angepasst werden kann.
+Die SPA-Erstellungsfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente an den AEM SPA-Editor angepasst werden kann.
 
 >[!NOTE]
->Für die Einzelseitenanwendung (SPA) Editor-Funktion ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Einzelseitenanwendung (SPA) Editor&quot;ist AEM 6.4 Service Pack 2 oder höher erforderlich.
 >
 >Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen clientseitiges Rendering (z.B. React oder Angular) durch das SPA-Framework erforderlich ist.
 
 ## Einführung {#introduction}
 
-Dank des einfachen und leichten Vertrags, der von AEM benötigt wird und zwischen SPA und SPA Editor eingerichtet wurde, ist es einfach, eine vorhandene JavaScript-Anwendung zu verwenden und sie für die Verwendung mit einer SPA in AEM anzupassen.
+Dank des einfachen und leichten Vertrags, der von AEM benötigt und zwischen SPA und SPA Editor eingerichtet wird, ist es einfach, eine vorhandene Javascript-Anwendung zu benutzen und sie für die Verwendung mit einer SPA in AEM anzupassen.
 
 In diesem Artikel wird das Beispiel der Wetterkomponente im Beispiel für das Web.Retail-Protokoll-SPA veranschaulicht.
 
-Bevor Sie diesen Artikel lesen, sollten Sie mit der [Struktur einer SPA-Anwendung für AEM](/help/sites-developing/spa-getting-started-react.md) vertraut sein.
+Sie sollten sich mit der [Struktur einer SPA-Anwendung für AEM](/help/sites-developing/spa-getting-started-react.md) vertraut machen, bevor Sie diesen Artikel lesen.
 
 >[!CAUTION]
 >Dieses Dokument verwendet die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
 >
->Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
+>Jedes AEM Projekt sollte den [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## Die Wetterkomponente {#the-weather-component}
 
@@ -47,11 +50,11 @@ Die Wetterkomponente befindet sich oben links in der Web.Retail-Protokoll-App. E
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Beim Authoring von Inhalten der SPA im SPA-Editor wird die Wetterkomponente wie jede andere AEM-Komponente zusammen mit einer Symbolleiste angezeigt und kann bearbeitet werden.
+Beim Authoring von Inhalten der SPA im SPA-Editor wird die Wetterkomponente wie jede andere AEM mit einer Symbolleiste angezeigt und kann bearbeitet werden.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
-Die Stadt kann wie jede andere AEM-Komponente in einem Dialog aktualisiert werden.
+Die Stadt kann wie jede andere AEM in einem Dialog aktualisiert werden.
 
 ![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
@@ -70,7 +73,7 @@ Im Folgenden finden Sie Ausschnitte aus der NPM-Dokumentation zur Verwendung der
 Überprüfen des Codes der angepassten Wetterkomponente ( `Weather.js`) im Protokoll We.Retail:
 
 * **Linie 16**: Das Widget &quot;Offenes Wetter react&quot;wird nach Bedarf geladen.
-* **Linie 46**: Die `MapTo` Funktion verknüpft diese React-Komponente mit einer entsprechenden AEM-Komponente, damit sie im SPA-Editor bearbeitet werden kann.
+* **Linie 46**: Die `MapTo` Funktion bezieht diese React-Komponente mit einer entsprechenden AEM-Komponente zusammen, damit sie im SPA-Editor bearbeitet werden kann.
 
 * **Zeilen 22-29**: Der Wert `EditConfig` wird definiert, wobei geprüft wird, ob der Ort gefüllt wurde, und der Wert definiert wird, wenn er leer ist.
 
