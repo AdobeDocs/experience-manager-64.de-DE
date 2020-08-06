@@ -214,7 +214,7 @@ Stellen Sie darüber hinaus in der Datei *configure.xml* (alternativ in der Umge
 >
 >The ImageMagick `policy.xml` and `configure.xml` files may be found under `/usr/lib64/ImageMagick-*/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
 
-Wenn Sie AEM unter Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe-Kundendienst, wenn Sie planen, viele große PSD- oder PSB-Dateien zu verarbeiten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
+Wenn Sie AEM für Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie eine große Menge großer PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
 
 <!-- 
 
@@ -410,13 +410,13 @@ Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung be
 * Verwenden Sie eine Kabelverbindung, um umfangreiche Assets hochzuladen.
 * Legen Sie optimale JVM-Parameter fest.
 * Konfigurieren Sie einen Filesystem DataStore oder einen S3 DataStore.
-* Deaktivieren Sie die Erzeugung von Teilassets. Ist sie aktiviert, erstellt der AEM-Arbeitsablauf für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist ein einzelnes Asset, das zusätzlichen Speicherplatz auf der Festplatte benötigt, eine Versionsverwaltung und eine zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Aktivitäten für die Generierung und Extraktion von Teilassets.
+* Deaktivieren Sie die Erzeugung von Teilassets. Ist sie aktiviert, erstellt AEM Workflow für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist ein einzelnes Asset, das zusätzlichen Speicherplatz auf der Festplatte benötigt, eine Versionsverwaltung und eine zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Aktivitäten für die Generierung und Extraktion von Teilassets.
 * Aktivieren Sie transiente Workflows.
 * Passen Sie die Granite-Workflow-Warteschlangen an, um gleichzeitige Aufträge zu begrenzen.
 * Konfigurieren Sie ImageMagick, um den Ressourcenverbrauch zu begrenzen.
 * Entfernen Sie unnötige Schritte aus dem Arbeitsablauf zur DAM-Aktualisierung von Assets.
 * Konfigurieren des Arbeitsablaufs und der Versionsbereinigung.
 * Optimieren Sie die Lucene-Indexkonfiguration.
-* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Adobe-Kundendienst, um weitere verfügbare Indexoptimierungen zu erhalten.
+* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Kundendienst von Adobe, um weitere verfügbare Indexoptimierungen zu erhalten.
 * Use `guessTotal` to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
