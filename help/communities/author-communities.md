@@ -1,8 +1,8 @@
 ---
 title: Communities-Komponenten
 seo-title: Communities-Komponenten
-description: 'Hinzufügen von Community-Funktionen zu einer AEM-Site '
-seo-description: 'Hinzufügen von Community-Funktionen zu einer AEM-Site '
+description: 'Hinzufügen von Community-Funktionen zu AEM Website '
+seo-description: 'Hinzufügen von Community-Funktionen zu AEM Website '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 67%
 
 ---
 
