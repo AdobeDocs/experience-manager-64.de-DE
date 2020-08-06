@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: c0fbebb86385931315edd05aabe2b23fcc39c4f9
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 53%
 
 ---
 
@@ -89,7 +92,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody> 
   <tr> 
    <td>HTTP-Anforderungsmethode</td> 
-   <td>Aktionen</td> 
+   <td>Aktionen   </td> 
   </tr> 
   <tr> 
    <td><code>GET</code></td> 
@@ -108,7 +111,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| HTTP-Anforderungsmethode | Aktionen |
+| HTTP-Anforderungsmethode | Aktionen    |
 |---|---|
 | `GET` | Listen der verfügbaren Workflow-Instanzen und deren Status ( `RUNNING`, `SUSPENDED``ABORTED` oder `COMPLETED`) |
 
@@ -122,7 +125,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody> 
   <tr> 
    <td>HTTP-Anforderungsmethode</td> 
-   <td>Aktionen</td> 
+   <td>Aktionen   </td> 
   </tr> 
   <tr> 
    <td><code>GET</code></td> 
@@ -145,7 +148,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody> 
   <tr> 
    <td>HTTP-Anforderungsmethode</td> 
-   <td>Aktionen</td> 
+   <td>Aktionen   </td> 
   </tr> 
   <tr> 
    <td><code>GET</code></td> 
@@ -230,7 +233,7 @@ Where `*{uri}*` is the path to the model node in the repository.
  <tbody> 
   <tr> 
    <td>HTTP-Anforderungsmethode</td> 
-   <td>Aktionen</td> 
+   <td>Aktionen   </td> 
   </tr> 
   <tr> 
    <td><code>GET</code></td> 
@@ -242,7 +245,7 @@ Where `*{uri}*` is the path to the model node in the repository.
   </tr> 
   <tr> 
    <td><code>POST</code></td> 
-   <td>Das gleiche Verhalten wie bei PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td> 
+   <td>Wie bei PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td> 
   </tr> 
   <tr> 
    <td><code>DELETE</code></td> 
@@ -335,7 +338,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| HTTP-Anforderungsmethode | Aktionen |
+| HTTP-Anforderungsmethode | Aktionen    |
 |---|---|
 | `GET` | Ruft die Daten des Modells in der angegebenen Version ab (sofern vorhanden). |
 
@@ -349,7 +352,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody> 
   <tr> 
    <td>HTTP-Anforderungsmethode</td> 
-   <td>Aktionen</td> 
+   <td>Aktionen   </td> 
   </tr> 
   <tr> 
    <td><code>GET</code></td> 
@@ -368,7 +371,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| HTTP-Anforderungsmethode | Aktionen |
+| HTTP-Anforderungsmethode | Aktionen    |
 |---|---|
 | `GET` | Ruft die Daten (Definition und Metadaten) des Posteingangs ab, der durch seine ID `WorkItem` identifiziert wird. |
 
@@ -492,6 +495,7 @@ Wenn ein neues Modell erstellt wird:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
+
    Wenn Sie ein Modell erstellen, müssen Sie zunächst diesen `cq:Page`-Knoten erstellen und seinen `jcr:content`-Knoten als übergeordneten Knoten des Modellknotens verwenden.
 
 * The `id` argument that some methods require for identifying the model is the absolute path of the model node in the repository:
@@ -807,7 +811,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Warten auf Workflow-Ereignisse {#listening-for-workflow-events}
 
-Verwenden Sie das OSGi-Ereignis-Framework, um auf Ereignisse zu warten, die die Klasse [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) definiert. Diese Klasse bietet auch einige nützliche Methoden zum Abrufen von Informationen über das Thema des Ereignisses. Beispielsweise gibt die Methode `getWorkItem` das `WorkItem`-Objekt für das Arbeitselement, das am Ereignis beteiligt ist, zurück.
+Verwenden Sie das OSGi-Ereignis-Framework, um auf Ereignisse zu warten, die die Klasse [`com.adobe.granite.workflow.event.WorkflowEvent` definiert.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) Diese Klasse bietet auch einige nützliche Methoden zum Abrufen von Informationen über das Thema des Ereignisses. Beispielsweise gibt die Methode `getWorkItem` das `WorkItem`-Objekt für das Arbeitselement, das am Ereignis beteiligt ist, zurück.
 
 Der folgende Beispielcode definiert einen Dienst, der auf Workflow-Ereignisse wartet und je nach Art des Ereignisses Aufgaben ausführt.
 
