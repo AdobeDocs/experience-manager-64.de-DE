@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '2295'
+ht-degree: 86%
 
 ---
 
@@ -82,7 +85,7 @@ Mithilfe eines Online-Backups von Ihrem Repository können Sie Backup-Dateien er
 
 Zu Beginn eines Backups können Sie den **Zielpfad** und/oder eine **Verzögerung** festlegen.
 
-**Zielpfad** Die Sicherungsdateien werden in der Regel im übergeordneten Ordner des Ordners gespeichert, in dem sich die Schnellstart-JAR-Datei (.jar) befindet. Wenn sich die AEM-JAR-Datei beispielsweise im Ordner /InstallationKits/AEM befindet, wird das Backup im Ordner /InstallationKits generiert. Sie können auch ein Ziel an einem Speicherort Ihrer Wahl angeben.
+**Zielgruppe Path** Die Sicherungsdateien werden normalerweise im übergeordneten Ordner des Ordners gespeichert, in dem sich die Schnellstart-JAR-Datei (.jar) befindet. Wenn sich die AEM-JAR-Datei beispielsweise im Ordner /InstallationKits/AEM befindet, wird das Backup im Ordner /InstallationKits generiert. Sie können auch ein Ziel an einem Speicherort Ihrer Wahl angeben.
 
 Wenn unter **Zielpfad** ein Verzeichnis angegeben wird, wird das Image des Repositorys in diesem Verzeichnis erstellt. Falls dasselbe Verzeichnis mehrmals (oder immer) zum Speichern von Backups verwendet wird,
 
@@ -100,11 +103,12 @@ Wenn unter **Zielpfad** ein Verzeichnis angegeben wird, wird das Image des Repos
 >* der Komprimierungsprozess vom Repository ausgeführt, sodass möglicherweise die Leistung beeinträchtigt wird;
 >* es zu einer Verzögerung des Backup-Prozesses kommt;
 >* Java bis zur Java-Version 1.6 nur in der Lage ist, ZIP-Dateien bis zu einer Größe von 4 GB zu erstellen.
->
->
-Wenn Sie eine ZIP als Sicherungsformat erstellen müssen, sollten Sie eine Sicherung in einem Verzeichnis durchführen und dann ein Komprimierungsprogramm verwenden, um die ZIP-Datei zu erstellen.
 
-**Verzögerung** Gibt eine Zeitverzögerung (in Millisekunden) an, sodass die Repository-Leistung nicht beeinträchtigt wird. Standardmäßig wird das Repository-Backup mit voller Geschwindigkeit ausgeführt. Sie können die Geschwindigkeit der Erstellung eines Online-Backups verringern, sodass das Backup nicht dazu führt, dass andere Aufgaben langsamer ausgeführt werden.
+>
+>
+Wenn Sie eine ZIP-Datei als Sicherungsformat erstellen müssen, sollten Sie eine Sicherung in einem Verzeichnis erstellen und dann ein Komprimierungs-Programm verwenden, um die ZIP-Datei zu erstellen.
+
+**Verzögerung** Gibt eine Verzögerung (in Millisekunden) an, sodass die Repository-Leistung nicht beeinträchtigt wird. Standardmäßig wird das Repository-Backup mit voller Geschwindigkeit ausgeführt. Sie können die Geschwindigkeit der Erstellung eines Online-Backups verringern, sodass das Backup nicht dazu führt, dass andere Aufgaben langsamer ausgeführt werden.
 
 Achten Sie bei der Festlegung einer sehr großen Verzögerung darauf, dass das Online-Backup nicht länger als 24 Stunden dauert. Andernfalls verwerfen Sie dieses Backup, da es möglicherweise nicht alle Binärdateien enthält.\
  Eine Verzögerung von 1 ms führt in der Regel zu einer 10%igen CPU-Auslastung und eine Verzögerung von 10 ms führt normalerweise zu einer CPU-Auslastung von weniger als 3 %. Die Gesamtverzögerung in Sekunden können Sie wie folgt schätzen: die Repository-Größe (in MB) multipliziert mit der Verzögerung in ms geteilt durch 2 (wenn die ZIP-Option verwendet wird) bzw. geteilt durch 4 (wenn das Backup in einem Verzeichnis gespeichert wird). Das bedeutet, dass sich die Backup-Zeit durch ein Backup eines 200 MB großen Repositorys in einem Verzeichnis bei einer Verzögerung von 1 ms um 50 Sekunden erhöht.
@@ -215,12 +219,12 @@ Für das Online-Backup wird der folgende Algorithmus verwendet:
 
 1. Wenn Sie eine ZIP-Datei erstellen, ist der erste Schritt die Erstellung oder Lokalisierung des Zielverzeichnisses.
 
-   * Beim Sichern in eine ZIP-Datei wird ein temporäres Verzeichnis erstellt. Der Ordnername beginnt mit `backup.` und endet mit `.temp`; zum Beispiel `backup.f4d3.temp`.
+   * Beim Sichern in eine ZIP-Datei wird ein temporäres Verzeichnis erstellt. Der Ordnername Beginn mit `backup.` und endet mit `.temp`; zum Beispiel `backup.f4d3.temp`.
    * Beim Sichern in ein Verzeichnis wird der im Zielpfad festgelegte Name verwendet. Ein vorhandenes Verzeichnis kann verwendet werden, andernfalls wird ein neues Verzeichnis erstellt.
 
       Es wird eine leere Datei mit dem Namen `backupInProgress.txt` im Zielverzeichnis erstellt, wenn das Backup gestartet wird. Diese Datei wird gelöscht, sobald das Backup abgeschlossen ist.
 
-1. Die Dateien werden aus dem Quellverzeichnis in das Zielverzeichnis (oder das temporäre Verzeichnis, wenn eine Zip-Datei erstellt wird) kopiert. Der Segmentspeicher wird vor dem Datenspeicher kopiert, um eine Beschädigung des Repositorys zu vermeiden. Der Index und die Zwischenspeicherdaten werden bei der Erstellung des Backups ausgelassen. As a result, data from `crx-quickstart/repository/cache` and `crx-quickstart/repository/index` is not included in the backup. Der Fortschrittsleistenindikator des Prozesses liegt zwischen 0 % - 70 % beim Erstellen einer ZIP-Datei oder 0 % - 100 %, wenn keine ZIP-Datei erstellt wurde.
+1. Die Dateien werden aus dem Quellverzeichnis in das Zielverzeichnis (oder das temporäre Verzeichnis, wenn eine Zip-Datei erstellt wird) kopiert. Der Segmentspeicher wird vor dem Datenspeicher kopiert, um eine Beschädigung des Repositorys zu vermeiden. Der Index und die Zwischenspeicherdaten werden bei der Erstellung des Backups ausgelassen. As a result, data from `crx-quickstart/repository/cache` and `crx-quickstart/repository/index` is not included in the backup. Der Fortschrittsleistenindikator des Prozesses liegt bei 0 % - 70 % beim Erstellen einer ZIP-Datei bzw. bei 0 % - 100 %, wenn keine ZIP-Datei erstellt wurde.
 
 1. Falls das Backup in einem vorab vorhandenen Verzeichnis erstellt wird, werden die „alten“ Dateien im Zielverzeichnis gelöscht. Alte Dateien sind Dateien, die im Quellverzeichnis nicht vorhanden sind.
 
@@ -232,7 +236,7 @@ Das Kopieren der Dateien in das Zielverzeichnis lässt sich in vier Phasen unter
    * Phase B: Nur der Datenspeicher wird kopiert (mit Verzögerung).
 
 1. In der zweiten Kopierphase (Fortschrittsanzeige 63 % bis 65,8 %, wenn eine ZIP-Datei erstellt wird, oder 90 % bis 94 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der ersten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien bis hin zu einer signifikanten Anzahl an Dateien enthalten sind (da die erste Dateikopierphase in der Regel sehr viel Zeit in Anspruch nimmt). Der Kopierprozess entspricht dem der ersten Phase (Phase A und Phase B mit Verzögerung).
-1. In der dritten Kopierphase (Fortschrittsanzeige 65,8 % bis 68,6 %, wenn eine ZIP-Datei erstellt wird, oder 94 % bis 98 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der zweiten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur sehr wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Der Kopiervorgang ähnelt der zweiten Phase - Phase A und Phase B, jedoch unverzüglich.
+1. In der dritten Kopierphase (Fortschrittsanzeige 65,8 % bis 68,6 %, wenn eine ZIP-Datei erstellt wird, oder 94 % bis 98 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der zweiten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur sehr wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Der Kopiervorgang ähnelt der zweiten Phase - Phase A und Phase B, jedoch ohne Verzögerung.
 1. Die Dateikopierphasen 1 bis 3 werden zeitgleich ausgeführt, während das Repository ausgeführt wird. Nur Dateien, die seit dem Start der dritten Kopierphase im Quellordner erstellt oder geändert wurden, werden kopiert. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur äußerst wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Die Fortschrittsanzeige zeigt 68,6 % bis 70 % an, wenn eine ZIP-Datei erstellt wird, oder 98 % bis 100 %, wenn keine ZIP-Datei erstellt wird. Der Kopierprozess entspricht der dritten Phase.
 1. Abhängig vom Ziel:
 
@@ -260,7 +264,7 @@ Wenn Sie Knoten mit dem Package Manager oder dem Content Zipper sichern, speiche
 * Die Knotentyp-Definitionen, die für die zu sichernden Inhalte verwendet werden
 * Die Namespace-Definitionen, die für die zu sichernden Inhalte verwendet werden
 
-Beim Sichern verliert AEM die folgenden Informationen:
+Beim Sichern gehen AEM die folgenden Informationen verloren:
 
 * Der Versionsverlauf
 
