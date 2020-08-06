@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +37,7 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
   <tr>
    <td><p><strong>Persistenztyp</strong></p> </td> 
    <td><p><strong>Datenspeicher</strong></p> </td> 
-   <td><p><strong>Standort</strong></p> </td> 
+   <td><p><strong>Ort</strong></p> </td> 
   </tr>
   <tr>
    <td><p>Default</p> </td> 
