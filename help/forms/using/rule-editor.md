@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
 source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+workflow-type: tm+mt
+source-wordcount: '6348'
+ht-degree: 80%
 
 ---
 
 
 # Regeleditor für adaptive Formulare {#adaptive-forms-rule-editor}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Regeleditorfunktion in Adobe Experience Manager Forms ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz beim schnellen und korrekten Ausfüllen der Formulare.
 
@@ -46,7 +49,7 @@ Eine Regel entspricht normalerweise einem der folgenden Konstrukte:
 
 Im Regeleditor wird das Bedingung-Aktion-Konstrukt durch den Regeltyp **Wenn** durchgesetzt.
 
-**Aktionsbedingung** In diesem Konstrukt definiert eine Regel zuerst eine auszulösende Aktion, gefolgt von Bedingungen für die Auswertung. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert False zurückgibt.
+**Action-Bedingung** In diesem Konstrukt definiert eine Regel zuerst eine auszulösende Aktion, gefolgt von Bedingungen für die Auswertung. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert False zurückgibt.
 
 Die Regeltypen zum Anzeigen, Ausblenden, Aktivieren, Deaktivieren und Wert einstellen im Regeleditor setzen das Aktion-Bedingung-Regelkonstrukt um. Die alternative Aktion für „Anzeigen“ ist standardmäßig „Ausblenden“, für „Aktivieren“ ist es „Deaktivieren“ und umgekehrt. Sie können die standardmäßige alternative Aktion nicht ändern.
 
@@ -137,7 +140,7 @@ Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL ange
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-**Legen Sie den Wert** &quot;Berechnet&quot;fest und legen Sie den Wert des angegebenen Objekts fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den berechneten Wert mithilfe eines mathematischen Ausdrucks oder einer Funktion, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldiensts festlegen. Wenn Sie die Option &quot;Webdienst&quot;wählen, werden alle Dienste angezeigt, die in allen Formulardatenmodellen auf Ihrer AEM-Instanz konfiguriert sind. Bei der Auswahl eines Formulardatenmodell-Diensts erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen dienst zuordnen können.
+**Legen Sie den Wert** &quot;Berechnet&quot;fest und legen Sie den Wert des angegebenen Objekts fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den berechneten Ausdruck mit mathematischem  oder einer Funktion, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldiensts festlegen. Wenn Sie die Option &quot;Webdienst&quot;wählen, werden alle Dienste angezeigt, die in allen Formulardatenmodellen auf Ihrer AEM konfiguriert sind. Bei der Auswahl eines Formulardatenmodell-Diensts erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen dienst zuordnen können.
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
@@ -149,13 +152,13 @@ For more information about configuring services in form data model, see [AEM For
 
 **Formular speichern** Speichert das Formular.
 
-**Formulare** senden Sendet das Formular.
+**Senden von Forms** Sendet das Formular.
 
 **Formular zurücksetzen** Setzt das Formular zurück.
 
 **Formular** überprüfen Validiert das Formular.
 
-**Instanz** hinzufügen Fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
+**Hinzufügen Instanz** fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
 **Instanz** entfernen Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
@@ -170,7 +173,7 @@ Wert von Objekt A einstellen auf:
 (Zeichenfolge ABC) ODER\
 (Objekteigenschaft X von Objekt C) ODER\
 (Wert aus einer Funktion) ODER\
-(Wert aus einem mathematischen Ausdruck) ODER\
+(Wert eines mathematischen Ausdrucks) ODER\
 (Ausgabewert eines Datenmodelldienstes oder Webdiensts);
 
 Wenn (optional):
@@ -421,6 +424,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
    * Wählen Sie das Feld **Gehalt** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das erste Feld **Legen Sie das Objekt ab oder wählen Sie hier aus** und legen Sie es dort ab.
    * Wählen Sie **Plus** aus dem Feld **Operator wählen**.
    * Select or drag-drop from the Forms Object tab the **Spouse Salary** field in the other **Drop object or select here** field.
+
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. Next, tap in the highlighted area around the expression field and tap **Extend Expression**.
@@ -446,6 +450,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
    * Wählen Sie das Feld **Familienstand** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das erste Feld **Legen Sie das Objekt ab oder wählen Sie hier aus** und legen Sie es dort ab.
    * Wählen Sie **Ist gleich** aus dem Feld **Operator wählen**.
    * Select String in the other **Drop object or select here** field and specify **Married** in the **Enter a String** field.
+
    Die Regel wird schließlich wie folgt im Regeleditor angezeigt.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Tippen Sie auf **Fertig**, um die Regel zu speichern.
@@ -466,7 +471,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
 Benutzer, die zur Gruppe der Formular-Hauptbenutzer hinzugefügt wurden, können den Code-Editor verwenden. Der Regeleditor generiert automatisch den JavaScript-Code für jede Regel, die Sie mithilfe des Visual Editor erstellen. Indem Sie vom Visual Editor zum Codeeditor wechseln, können Sie den generierten Code anzeigen. Wenn Sie jedoch den Code einer Regel im Codeeditor ändern, können Sie nicht mehr zurück zum Visual Editor wechseln. Sie können neue Regeln auch von Anfang an im Codeeditor schreiben, wenn Sie diesen dem Visual Editor vorziehen. Mithilfe des Schalters zwischen dem Visual Editor und dem Codeeditor können Sie zwischen den beiden Modi wechseln.
 
-Der Code-Editor JavaScript ist die Ausdruckssprache adaptiver Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html).
+Der Code-Editor JavaScript ist die Programmiersprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-4/forms/javascript-api/index.html).
 
 Weitere Informationen zu Richtlinien für das Schreiben von Regeln im Codeeditor finden Sie unter [Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md).
 
@@ -502,7 +507,7 @@ Unterstützte `jsdoc` Tags:
 
    Syntax: `@name funcName <Function Name>`
 
-   Alternativ `,` können Sie Folgendes verwenden: `@function funcName <Function Name>` oder **** `@func``funcName <Function Name>`.
+   Alternativ `,` können Sie Folgendes verwenden: `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>`.
 
    `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
 
@@ -512,13 +517,13 @@ Unterstützte `jsdoc` Tags:
 
    Syntax: `@memberof namespace`
 
-   Fügt der Funktion einen Namespace hinzu.
+   Fügt der Funktion einen Namensraum hinzu.
 
 * **Parameter**
 
    Syntax: `@param {type} name <Parameter Description>`
 
-   Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` oder **** `@arg``{type}``name <Parameter Description>`.
+   Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` **las** `@arg` . `{type}` `name <Parameter Description>`.
 
    Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens). 
 
@@ -527,6 +532,7 @@ Unterstützte `jsdoc` Tags:
    1. Zeichenfolge
    1. number
    1. Boolesch
+
    Alle anderen Parametertypen fallen in eine der oben genannten Kategorien.  „None“ wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Für die Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>`
 
 * **Rückgabetyp**
@@ -542,8 +548,9 @@ Unterstützte `jsdoc` Tags:
    1. Zeichenfolge
    1. number
    1. Boolesch
-   1. Datum
+   1. date
    1. array
+
    Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien.  „None“ wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Für Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
 >[!NOTE]
@@ -561,7 +568,7 @@ Führen Sie die folgenden Schritte aus, um eine Client-Bibliothek zu erstellen u
 
    >[!NOTE]
    >
-   >`customfunction`ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib` erstellen.
+   >`customfunction`ist eine Kategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib` erstellen.
 
 Nachdem Sie die Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. Führen Sie die folgenden Schritte aus, um die Client-Bibliothek dem adaptiven Formular hinzuzufügen.
 
@@ -645,7 +652,7 @@ var c = {
 
 Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). Sie können den Titel und eine Vorschau der Regelübersicht anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![list-rules](assets/list-rules.png)
+![Listen](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln durchführen:
 
@@ -767,7 +774,7 @@ Ein Bestellformular enthält die folgende Tabelle, in der die Benutzer ihre Best
 
 ![example-function-table](assets/example-function-table.png)
 
-******A. Zeile 1** B. Menge **C.** Menge insgesamt
+**A.** Zeile 1 **B.** Menge **C.** Menge insgesamt
 
 Als Nächstes sollen die in der Spalte „Produktmenge“ angegebenen Mengen für alle Produkte addiert und die Summe in der Zelle „Menge insgesamt“ angezeigt werden. Dies erreichen Sie, indem Sie wie unten gezeigt eine Regel des Typs „Wert einstellen“ für die Zelle „Menge insgesamt“ schreiben.
 
