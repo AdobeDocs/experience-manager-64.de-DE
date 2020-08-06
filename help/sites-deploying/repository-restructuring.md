@@ -11,6 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## Einführung {#introduction}
 
-Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen der JCR bereitgestellt, die sich bei Aktualisierungen ändern mussten. Aus diesem Grund wurde in offiziellen AEM-Versionen häufig der benutzerdefinierte Code, die Konfiguration oder der Inhalt überschrieben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
+Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen der JCR bereitgestellt, die bei Aktualisierungen geändert werden mussten. Aus diesem Grund wurde in formellen AEM Versionen häufig der benutzerdefinierte Code, die Konfiguration oder der Inhalt überschrieben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
 
 Durch klare Abgrenzungshierarchien für AEM-Produktcode und Kundencode können diese Konflikte vermieden werden.
 
@@ -41,10 +44,10 @@ Bei der Planung einer Aktualisierung auf AEM 6.4 sollten die folgenden Seiten zu
 
 * [Repository-Neustrukturierung für alle AEM-Lösungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [Umstrukturierung des AEM Assets-Repositorys](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [AEM Assets-Repository-Umstrukturierung](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
-* [AEM Forms Repository-Umstrukturierung](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
-* [AEM-Repository-Umstrukturierung](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
+* [AEM Forms-Repository-Umstrukturierung](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
+* [AEM Communities-Repository-Umstrukturierung](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
 
 Jede Seite enthält zwei Bereiche entsprechend der Dringlichkeit der erforderlichen Änderungen. Alle Punkte im Abschnitt „Mit der Aktualisierung auf 6.4“ sollten im Rahmen des AEM 6.4-Aktualisierungsprojekts behandelt werden. Alles, was unter „Vor der Aktualisierung auf 6.5“ steht, kann optional auf nach der Aktualisierung verschoben werden.
