@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 5%
 
 ---
 
@@ -23,15 +26,15 @@ Die Communities Badges-Konsole bietet die Möglichkeit, benutzerdefinierte Abzei
 
 ### Sichtbarkeit der Abzeichen {#badge-visibility}
 
-Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen wird, zusammen mit ihrem Namen und Avatar an folgenden Stellen angezeigt:
+Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen wird, zusammen mit ihrem Namen und Avatar an den folgenden Orten angezeigt:
 
 * Profile
 * [Foren](forum.md)
 * [Frage und Antwort](working-with-qna.md)
-* [LEITPinnwände](enabling-leaderboard.md)
+* [Leadership-Pinnwände](enabling-leaderboard.md)
 * [Ideen](ideation-feature.md)
 
-In der Autorenumgebung, um die Badges-Konsole zu erreichen
+In der Umgebung &quot;Autor&quot;zur Konsole &quot;Badges&quot;
 
 * Aus globaler Navigation: **[!UICONTROL Werkzeuge > Communities > Abzeichen]**
 
@@ -41,9 +44,9 @@ Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeic
 
 ## Abzeichen erstellen {#create-badge}
 
-Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/etc/community/badging/images` und automatisch in die Veröffentlichungsumgebung repliziert.
+Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/etc/community/badging/images` und automatisch in die Umgebung &quot;Veröffentlichen&quot;repliziert.
 
-Wenn die Veröffentlichungsumgebung eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](sync.md)konfigurieren.
+Wenn die Umgebung zum Veröffentlichen eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](sync.md)konfigurieren.
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -61,7 +64,7 @@ Wenn die Veröffentlichungsumgebung eine Herausgeberfarm ist, müssen Sie die [B
 
 * **[!UICONTROL Beschreibung]**
 
-   (*Optional*) Eine Beschreibung für das Zeichen.
+   (*Optional*) Eine Beschreibung des Kennzeichens.
 
 ## Zusätzliche Informationen {#additional-information}
 
