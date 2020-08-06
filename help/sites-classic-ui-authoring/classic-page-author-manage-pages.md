@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 91%
 
 ---
 
@@ -38,7 +41,7 @@ Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhal
 
 The following shows an extract from the Geometrixx site; where, for example, the `Triangle` page will be accessed:
 
-* Autorenumgebung
+* Autor-Umgebung
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -72,7 +75,7 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Seitenbenennungskonventionen {#page-naming-conventions}
 
 Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
@@ -88,7 +91,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
 When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
-Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich geringfügig von der Benutzeroberfläche (sie ist für die touchaktivierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
+Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich je nach Benutzeroberfläche geringfügig (sie ist für die touchaktivierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
 
 * „a“ bis „z“
 * „A“ bis „Z“
@@ -100,7 +103,7 @@ Verwenden Sie nur diese Zeichen, wenn Sie sicher sein möchten, dass sie akzepti
 
 #### Titel {#title}
 
-Wenn Sie beim Erstellen einer neuen Seite nur einen **Seitentitel** angeben, leitet AEM den **Seitennamen**[ aus dieser Zeichenfolge ab und überprüft den Namen gemäß den von AEM und JCR festgelegten Konventionen. ](/help/sites-developing/naming-conventions.md) In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen**[ für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -109,7 +112,7 @@ Wenn Sie beim Erstellen einer neuen Seite nur einen **Seitentitel** angeben, lei
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM [den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen**[ für die Seite angeben, validiert AEM den Namen entsprechend den Konventionen von AEM und JCR.](/help/sites-developing/naming-conventions.md)
 
 In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
@@ -131,7 +134,7 @@ Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Die angebotenen Vorlagen hängen von der einzelnen Website ab. Welche Informationen (beim Erstellen der neuen Seite) angegeben werden müssen, hängt von der verwendeten Benutzeroberfläche ab. Die wichtigsten Felder sind:
 
 * **Titel**
-Der Titel wird auf der resultierenden Webseite angezeigt.
+Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
 
 * **Name**
 Wird beim Benennen der Seite verwendet.
@@ -207,7 +210,7 @@ Sie haben verschiedene Möglichkeiten, um eine Seite zur [Bearbeitung](/help/sit
 
 * Nachdem Sie eine Seite geöffnet haben, können Sie zu anderen Seiten innerhalb der Website navigieren, um sie zu bearbeiten, indem Sie auf die zugehörigen Hyperlinks klicken.
 
-### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite       {#copying-and-pasting-a-page}
 
 Beim Kopieren können Sie entweder
 
@@ -226,6 +229,7 @@ Beim Kopieren können Sie entweder
 
    * **Einfügen** - um die Seite zusammen mit allen Unterseiten einzufügen
    * **Umschalt + Einfügen** - um nur die ausgewählte Seite einzufügen
+
    Die Seite bzw. die Seiten werden am neuen Speicherort eingefügt.
 
    >[!NOTE]
