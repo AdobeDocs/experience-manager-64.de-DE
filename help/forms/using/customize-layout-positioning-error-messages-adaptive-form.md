@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 89%
 
 ---
 
@@ -49,7 +52,7 @@ Indem Sie Designs im Design-Editor erstellen, könen Sie das Layout aller Felder
 
 ## Benutzerdefiniertes Feldlayout definieren {#create-a-custom-field-layout}
 
-1. Öffnen Sie CRXDE Lite. The default URL is `https://[Server]:[Port]/crx/de`.
+1. Öffnen Sie CRXDE Lite. Die Standardeinstellung ist `https://[Server]:[Port]/crx/de`.
 1. Kopieren Sie ein Feldlayout vom Knoten „/libs/fd/af/layouts/field“ (z. B. defaultFieldLayout) in den Knoten „/apps“ (z. B. „/apps/af-field-layout“).
 1. Benennen Sie den kopierten Knoten und die Datei „defaultFieldLayout.jsp“ um. Beispielsweise in „errorOnRight.jsp“. 
 
