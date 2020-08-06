@@ -67,9 +67,9 @@ Das Tutorial veranschaulicht die Schritte zur Integration von interaktiven Bilde
    * Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-previewing-interactive-images). Bei Bedarf können Sie eine Darstellung des Banners mit Shopping-Funktion anzeigen und dessen Interaktivität testen.
    * Weitere Informationen zum Veröffentlichen von interaktiven Bild-Assets finden Sie unter [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
-1. **Hinzufügen eines interaktiven Bildes zu Ihrer Website oder zu Ihrer Website in AEM**
+1. **Hinzufügen eines interaktiven Bildes zu Ihrer Website oder Ihrer Website in AEM**
 
-   * Wenn Sie AEM Sites, AEM eCommerce oder beides verwenden, können Sie das interaktive Bild direkt zu einer Webseite in AEM hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md). 
+   * Wenn Sie AEM Sites, AEM eCommerce oder beides verwenden, können Sie das interaktive Bild direkt zu einer Webseite in AEM hinzufügen, indem Sie die Komponente Interaktive Medien auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md). 
    * .
 Wenn Sie lediglich AEM Assets und Dynamic Media verwenden, müssen Sie den Einbettungs-Code auf Ihrer Website kopieren und in Ihre vorhandene Schnellansicht integrieren. Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
    * Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie das neue interaktive Video in die vorhandene Schnellansichtsimplementierung integrieren, die auf Ihrer Website verwendet wird. Siehe [Integrieren eines interaktiven Bildes in einer Schnellansicht](#integrating-an-interactive-image-with-an-existing-quickview).
