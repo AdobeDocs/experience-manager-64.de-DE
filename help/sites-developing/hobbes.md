@@ -11,6 +11,9 @@ topic-tags: testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
 
 AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework umfasst eine JavaScript-API für das Erstellen von Tests.
 
-Das AEM-Testframework verwendet Hobbes.js, eine in Javascript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
+Das AEM Testframework verwendet Hobbes.js, eine in Javascript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ Wenn Sie automatisierte Tests in AEM verwenden, sollten Sie die folgenden Begrif
 
 |  |  |
 |---|---|
-| Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
+| Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. durch Klicken auf einen Link oder eine Schaltfläche. |
 | Test Case | Ein **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen** bestehen kann. |
 | Testsuite | Eine **Test Suite** ist eine Gruppe verwandter **Testfälle** , die zusammen einen bestimmten Anwendungsfall testen. |
 
