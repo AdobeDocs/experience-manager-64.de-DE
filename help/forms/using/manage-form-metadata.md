@@ -10,13 +10,16 @@ topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1995'
+ht-degree: 89%
 
 ---
 
 
 # Verwalten von Formularmetadaten {#manage-form-metadata}
 
-## Überblick  {#overview-nbsp}
+## Übersicht  {#overview-nbsp}
 
 Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 
@@ -69,7 +72,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>PDF-Formular, PDF-Formular (Acroform) oder PDF-Formular (Signiert)</li> 
      <li>Dokument, Dokument (Signiert)</li> 
      <li>Adaptives Formular</li> 
-     <li>Ressource</li> 
+     <li>Resource</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -147,7 +150,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
   </tr> 
   <tr> 
    <td>Verweise</td> 
-   <td><p>Adaptives Formular</p> <p>Formularvorlage</p> <p>Ressource</p> </td> 
+   <td><p>Adaptives Formular</p> <p>Formularvorlage</p> <p>Resource</p> </td> 
    <td><p>Liste der Assets (andere Formulare oder Ressourcen), mit denen dieses Formular verwandt ist. Diese Assets können zu den folgenden zwei Kategorien gehören:</p> 
     <ul> 
      <li>Refers (Verweist): Assets, auf die das aktuelle Formular verweist.</li> 
@@ -178,7 +181,7 @@ Assets weisen vorhandene Eigenschaftswerte auf, die im schreibgeschützten Modus
 
 1. Öffnen Sie die Eigenschaftsseite mit einer der folgenden Methoden:
 
-   1. Klicken Sie in den Schnellaktionen auf das Symbol Eigenschaften anzeigen ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) .
+   1. Klicken Sie in den Schnellaktionen auf das Symbol Ansicht Properties ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) .
 
       >[!NOTE]
       >
@@ -193,6 +196,7 @@ Assets weisen vorhandene Eigenschaftswerte auf, die im schreibgeschützten Modus
 
    * Bearbeiten: ![aem6forms_edit](assets/aem6forms_edit.png) Bearbeiten der Metadateneigenschaftswerte
    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+
    Der Inhaltsbereich ist in zwei Abschnitte unterteilt:
 
    * Der linke Bereich enthält die Miniaturansicht des Formulars
@@ -219,6 +223,7 @@ Sie können den Wert von vorhandenen Metadateneigenschaften bearbeiten oder eine
 
    * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
    * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
+
    Bei beiden Aktionen wird der Benutzer zurück zum schreibgeschützten Modus der Eigenschaftsseite mit den aktualisierten Werten geleitet.
 
 ### Aktualisieren der Formularminiaturansicht  {#update-the-form-thumbnail-nbsp}
@@ -233,6 +238,7 @@ Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit dene
 >
 >* Verwenden Sie ein quadratisches Bild für die Miniatur. Wenn Sie ein nicht quadratisches Bild verwenden und die Miniaturansicht in der Listenansicht anzeigen, sieht die Miniaturansicht abgeschnitten aus.
 >* Sobald ein neues Bild hochgeladen oder generiert wurde, wird die Miniaturansicht durch dieses Bild ersetzt und kann nicht auf das vorherige Bild zurückgesetzt werden.
+
 >
 
 
