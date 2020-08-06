@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f25d901a-c62c-46b4-aab7-3ca3da1cea5b
 translation-type: tm+mt
 source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+workflow-type: tm+mt
+source-wordcount: '6097'
+ht-degree: 85%
 
 ---
 
@@ -107,7 +110,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dies ist der Startpfad des Portlets. Er definiert den Inhalt, der anfänglich angezeigt wird.</p> <p><strong>Wichtig</strong>: Wenn das Portlet für die Verbindung mit AEM-Autoreninstanzen und Veröffentlichungsinstanzen konfiguriert ist, die auf einem anderen Kontextpfad als<strong> /</strong>ausgeführt werden, müssen Sie die erzwungene <strong>CQUrlInfo</strong> in der Html Library Manager-Konfiguration dieser AEM-Instanzen aktivieren (z. B. über Felix Webconsole), oder die Bearbeitung funktioniert nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
+   <td><p>Dies ist der Startpfad des Portlets. Er definiert den Inhalt, der anfänglich angezeigt wird.</p> <p><strong>Wichtig</strong>: Wenn das Portlet so konfiguriert ist, dass es eine Verbindung zu AEM Autor- und Veröffentlichungsinstanzen herstellt, die auf einem anderen Kontextpfad als<strong> /</strong>ausgeführt werden, müssen Sie die erzwungene <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über Felix Webconsole) aktivieren, oder die Bearbeitung funktioniert nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -328,10 +331,10 @@ Bevor Sie SSO für AEM WCM aktivieren können, muss das zugrundeliegende Reposit
 
 Greifen Sie zur Aktivierung von SSO in AEM WCM auf den relevanten Konfigurationseintrag in der Apache Felix Web Management Console (OSGi) von AEM WCM zu:
 
-1. Greifen Sie über den URI auf die Konsole unter https://&lt;AEM-Host>:&lt;Port>/system/console zu.
+1. Greifen Sie über den URI auf die Konsole unter https://&lt;AEM-host>:&lt;port>/system/console zu.
 1. Wählen Sie im Menü „Konfigurationen“ den SSO-Authentifizierungs-Handler aus. In diesem Beispiel akzeptiert der SSO-Handler SSO-Anfragen für alle Pfade basierend auf dem vom AEM-Portlet bereitgestellten Cookie. Ihre Konfiguration könnte davon abweichen.
 
-   | Pfad | / | Aktiviert den SSO-Handler für alle Anforderungen |
+   | Pfad          | / | Aktiviert den SSO-Handler für alle Anforderungen |
    |---|---|---|
    | Cookie-Namen | cqpsso | Name des vom Portlet bereitgestellten Cookies, wie in der OSGi-Konsole des Portlets konfiguriert. |
 
@@ -488,7 +491,7 @@ Die Verwaltungsansicht hat vier Schaltflächen: „Bearbeiten“, Registerkarte 
 
 | Platzhalterzeichenfolge | Beschreibung |
 |---|---|
-| {buttonEdit} | Platzhalter wird durch die Schaltfläche** Bearbeiten** ersetzt, mit der ein neues Fenster mit der aktuellen Seite im Bearbeitungsmodus von AEM geöffnet wird. |
+| {buttonEdit} | Platzhalter wird durch die Schaltfläche** Bearbeiten** ersetzt, mit der ein neues Fenster mit der aktuellen Seite im AEM Bearbeitungsmodus geöffnet wird. |
 | {buttonWebsites tab} | Der Platzhalter wird durch eine Schaltfläche ersetzt, mit der Sie die Registerkarte „Websites“ von AEM WCM öffnen. |
 | {buttonRefresh} | Aktualisiert die aktuelle Ansicht |
 | {buttonBack} | Wechselt zurück zur Veröffentlichungsansicht |
@@ -775,6 +778,7 @@ So konfigurieren Sie das Portlet:
    * **Autor-Basis-URL**: Die Basis-URL für die AEM-Autorenistanz
    * **Veröffentlichungs-Basis-URL**: Die Basis-URL für die AEM-Veröffentlichungsinstanz.
    * **Autor wird als Veröffentlichungsinstanz verwendet**: Wird die Autoreninstanz als Veröffentlichungsinstanz verwendet (für die Bereitstellung)?
+
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
 1. Klicken Sie auf **Speichern**. Sie können das Portlet nun zu Portalseiten hinzufügen und das Portal verwenden.
