@@ -24,13 +24,13 @@ Bei Einzelseitenanwendungen in AEM ist die App für das Routing verantwortlich. 
 
 >[!NOTE]
 >
->Für die Einzelseitenanwendung (SPA) Editor-Funktion ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Einzelseitenanwendung (SPA) Editor&quot;ist AEM 6.4 Service Pack 2 oder höher erforderlich.
 >
 >Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen clientseitiges Rendering (z.B. React oder Angular) durch das SPA-Framework erforderlich ist.
 
 ## Project Routing {#project-routing}
 
-Die App ist im Besitz des Routings und wird dann von den Frontend-Entwicklern des Projekts implementiert. Dieses Dokument beschreibt das Routing, das für das vom AEM-Server zurückgegebene Modell spezifisch ist. Die Datenstruktur des Seitenmodells stellt die URL der zugrunde liegenden Ressource dar. Das Front-End-Projekt kann eine benutzerdefinierte Bibliothek oder eine Bibliothek eines Drittanbieters verwenden, die Routing-Funktionen bereitstellt. Sobald eine Route ein Fragment des Modells erwartet, kann ein Aufruf an die `PageModelManager.getData()` Funktion durchgeführt werden. Wenn eine Modellroute geändert wurde, muss ein Ereignis ausgelöst werden, um Listening-Bibliotheken wie den Seiten-Editor zu warnen.
+Die App ist im Besitz des Routings und wird dann von den Frontend-Entwicklern des Projekts implementiert. Dieses Dokument beschreibt das Routing, das für das vom AEM zurückgegebene Modell spezifisch ist. Die Datenstruktur des Seitenmodells stellt die URL der zugrunde liegenden Ressource dar. Das Front-End-Projekt kann eine benutzerdefinierte Bibliothek oder eine Bibliothek eines Drittanbieters verwenden, die Routing-Funktionen bereitstellt. Sobald eine Route ein Fragment des Modells erwartet, kann ein Aufruf an die `PageModelManager.getData()` Funktion durchgeführt werden. Wenn eine Modellroute geändert wurde, muss ein Ereignis ausgelöst werden, um Listening-Bibliotheken wie den Seiten-Editor zu warnen.
 
 ## Architektur {#architecture}
 
