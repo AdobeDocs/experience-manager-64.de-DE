@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1233'
+ht-degree: 81%
 
 ---
 
@@ -94,12 +97,12 @@ Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfü
 * Die Standardeigenschaft dient als Ausgangswert eines adaptiven Formularfelds.
 * Die maxLength-Eigenschaft wird als maxlength-Attribut der Textfeldkomponente festgelegt.
 * Die Eigenschaften &quot;minimum&quot;, &quot;maximum&quot;, &quot;excludeMinimum&quot;und &quot;exclusiveMaximum&quot;werden für die Komponente &quot;Numeric box&quot;verwendet.
-* Zur Unterstützung des Bereichs für die DatePicker-Komponente werden zusätzliche JSON-Schemaeigenschaften minDate und maxDate bereitgestellt.
+* Zur Unterstützung des Bereichs für die DatePicker-Komponente werden zusätzliche JSON-Schema-Eigenschaften minDate und maxDate bereitgestellt.
 * Die Eigenschaften minItems und maxItems beschränken die Anzahl der Elemente/Felder, die einer Bereichskomponente hinzugefügt oder daraus entfernt werden können.
 * Die Eigenschaft readOnly legt das Attribut readonly einer Komponente des adaptiven Formulars fest.
 * Die erforderliche Eigenschaft kennzeichnet das Feld für das adaptive Formular als obligatorisch, während im Falle des Bereichs (bei dem der Typ ein Objekt ist) die endgültigen gesendeten JSON-Daten Felder mit leerem Wert haben, die diesem Objekt entsprechen.
 * Die pattern-Eigenschaft wird als Überprüfungsmuster (regulärer Ausdruck) im adaptiven Formular festgelegt.
-* Die Erweiterung der JSON-Schemadatei muss .schema.json beibehalten werden. Beispiel: .schema.json.
+* Die Erweiterung der JSON-Schema-Datei muss .Schema.json beibehalten werden. Beispiel: &lt;filename>.Schema.json.
 
 ## JSON-Beispielschema {#sample-json-schema}
 
@@ -285,7 +288,7 @@ Im Folgenden finden Sie ein Beispiel eines JSON-Schemas.
 
 ### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 
-Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
+Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schema-Definitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
 
 ```
 {
@@ -372,7 +375,7 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>Boolesch </p> </td> 
+   <td><p>Boolesch</p> </td> 
    <td><p>Wenn „true“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, kleiner sein als der numerische Wert oder das Datum, der/das für die Eigenschaft „maximum“ angegeben ist.</p> <p>Wenn „false“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, kleiner oder gleich dem numerischen Wert oder Datum sein, der/das für die Eigenschaft „maximum“ angegeben ist.</p> </td> 
    <td> 
     <ul> 
@@ -383,7 +386,7 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>Boolesch </p> </td> 
+   <td><p>Boolesch</p> </td> 
    <td><p>Wenn „true“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, größer sein als der numerische Wert oder das Datum, der/das für die Eigenschaft „minimum“ angegeben ist.</p> <p>Wenn „false“, muss der numerische Wert oder das Datum, der/das in der Komponente des Formulars festgelegt ist, größer oder gleich dem numerischen Wert oder Datum sein, der/das für die Eigenschaft „minimum“ angegeben ist.</p> </td> 
    <td> 
     <ul> 
