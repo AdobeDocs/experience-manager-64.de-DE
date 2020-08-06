@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 75%
 
 ---
 
@@ -84,7 +87,7 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
    <td>Vergleicht eine Eigenschaft eines Stores mit einer anderen Eigenschaft<br /> </td> 
   </tr> 
   <tr> 
-   <td>Eigenschafts-Segment-Referenz</td> 
+   <td>Eigenschafts-/Segmentreferenz</td> 
    <td>Vergleicht eine Eigenschaft eines Stores mit einem anderen referenzierten Segment<br /> </td> 
   </tr> 
   <tr> 
@@ -92,7 +95,7 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
    <td>Vergleicht eine Eigenschaft eines Stores mit den Ergebnissen eines Skripts<br /> </td> 
   </tr> 
   <tr> 
-   <td>Segment-Referenz - Skript-Referenz</td> 
+   <td>Segmentreferenz - Skriptreferenz</td> 
    <td>Vergleicht ein referenziertes Segment mit den Ergebnissen eines Skripts<br /> </td> 
   </tr> 
  </tbody> 
@@ -167,7 +170,7 @@ ODER
 
 Weiblich und zwischen 30 und 59
 
-Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers fügen Sie zwei UND-Container hinzu und in beiden können Sie die Eigenschaft oder die Referenz-Komponenten hinzufügen.
+Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers fügen Sie zwei UND-Container hinzu. In beiden können Sie die Eigenschaften- oder Referenzkomponenten hinzufügen.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
 
