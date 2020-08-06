@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
 source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 85%
 
 ---
 
@@ -225,7 +228,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
    **Name:** Der vollständige Pfad des freigegebenen Ordners
 
-   **** Medientyp: `File`
+   **Medientyp:** `File`
 
 1. Klicken Sie mit der rechten Maustaste auf das neue Gerät und wählen Sie Operations aus.
 1. Klicken Sie auf „Label“, geben Sie einen Namen ein, klicken Sie auf „OK“ und klicken Sie dann auf „Mount“.
