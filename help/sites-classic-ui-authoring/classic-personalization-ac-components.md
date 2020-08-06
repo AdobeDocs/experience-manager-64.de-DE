@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +24,7 @@ Bei einer Integration mit Adobe Campaign stehen Ihnen für die Arbeit mit Newsl
 
 ## Adobe Campaign-Newsletter-Komponenten {#adobe-campaign-newsletter-components}
 
-Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html) basieren.
+Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/de/experience-manager/htl/using/overview.html) basieren.
 
 Öffnen Sie eine E-Mail oder einen Newsletter, der oder die für die Integration mit Adobe Campaign konfiguriert wurde, werden Ihnen im Abschnitt **Adobe Campaign-Newsletter** folgende Optionen angezeigt:
 
@@ -129,7 +132,8 @@ Folgendes können Sie in den Registerkarten **Anzeige**, **URL-Info** oder **Erw
 
 * **Link-QuickInfo** Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
-* **Verknüpfungstyp** Wählen Sie in der Dropdown-Liste aus einer **URL** und einem **adaptiven Dokument** aus. Dieses Feld ist obligatorisch. Entscheiden Sie sich für eine benutzerdefinierte URL, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+* **LinkType** Wählen Sie in der Dropdown-Liste zwischen einem 
+**Benutzerdefinierte URL** und ein **adaptives Dokument**. Dieses Feld ist obligatorisch. Entscheiden Sie sich für eine benutzerdefinierte URL, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter** Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
@@ -255,7 +259,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr> 
   <tr> 
    <td><p>Datumsfeld (Kampagne)</p> <p>Datumsfeld/HTM 5 (Kampagne)</p> </td> 
-   <td><p>Datum</p> </td> 
+   <td><p>date</p> </td> 
    <td><p>Geburtsdatum</p> </td> 
   </tr> 
   <tr> 
@@ -294,7 +298,7 @@ Für die meisten Komponenten können Sie Folgendes konfigurieren:
 
 * **Beschreibung**
 
-   Fügen Sie dem Feld eine Beschreibung hinzu, um weitere Informationen für Benutzer bereitzustellen.
+   Hinzufügen Sie eine Beschreibung in das Feld, um weitere Informationen für Benutzer bereitzustellen.
 
 * **Nur Wert anzeigen**
 
@@ -306,11 +310,11 @@ Sie können Folgendes konfigurieren:
 
 * **Zuordnung**
 
-   Wählen Sie gegebenenfalls ein Adobe Campaign-Personalisierungsfeld aus.
+   Wählen Sie ggf. ein Adobe Campaign-Personalisierungsfeld aus.
 
 * **Abstimmschlüssel**
 
-   Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld Teil des Abgleichschlüssels ist.
+   Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld Teil des Abstimmschlüssels ist.
 
 #### Einschränkungen {#constraints}
 
@@ -374,7 +378,7 @@ In der Komponente „Verschlüsselter Primärschlüssel (Kampagne)“ können Si
 
 * **Adobe Campaign - URL-Parameter**
 
-   Fügen Sie den URL-Parameter für das EPK hinzu. Hierfür können Sie beispielsweise den Wert **epk** verwenden.
+   Hinzufügen den URL-Parameter für das EPK. Hierfür können Sie beispielsweise den Wert **epk** verwenden.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Verschlüsselter Primärschlüssel (Kampagne)“ dargestellt wird.
 
@@ -390,7 +394,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Fehleranzeige (Kampagne)�
 
 ### Ausgeblendeter Abstimmschlüssel (Kampagne) {#hidden-reconciliation-key-campaign}
 
-Mit der Komponente Ausgeblendeter Versöhnungsschlüssel (Kampagne) können Sie einem Formular verborgene Felder als Teil des Versöhnungsschlüssels hinzufügen.
+Mit der Komponente &quot;Ausgeblendeter Abstimmschlüssel (Kampagne)&quot;können Sie ausgeblendete Felder als Teil des Abstimmschlüssels zu einem Formular hinzufügen.
 
 In der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Folgendes konfigurieren:
 
@@ -416,7 +420,8 @@ Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](
 * **Beschränkungsmeldung**
 
    Darüber hinaus können Sie eine Einschränkungsmeldung hinzufügen, damit Benutzer wissen, wie ihre Antworten korrekt formatiert werden.
-* **Stile - Breite** Passen Sie die Breite des Felds an, indem Sie auf die **+** - und **-** -Symbole klicken oder auf eine Zahl tippen.
+* **Stil - Breite** Anpassen der Feldbreite durch Klicken oder Tippen auf die Schaltfläche 
+**+** - und **-** -Symbole oder Eingabe einer Zahl.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Numerisches Feld (Kampagne)“ mit konfigurierter Breite angezeigt wird.
 
