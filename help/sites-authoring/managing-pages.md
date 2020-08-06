@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 94%
 
 ---
 
@@ -135,7 +138,7 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Eine Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![screen_shot_2018-03-22at104817](assets/screen_shot_2018-03-22at104817.png)
 
@@ -198,12 +201,14 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
    * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie auf **Weiter**, um fortzufahren.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
 
    * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
    * Verwenden Sie **Zurück**, um zur Vorlagenauswahl zurückzukehren.
+
    Die Schlüsselfelder sind:
 
    * **Titel**:
@@ -214,6 +219,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM[ den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter [Benennungskonventionen für Seiten](#page-naming-conventions).
@@ -248,6 +254,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#product-navigation) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Bearbeiten** aus:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -258,7 +265,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >
 >Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite   {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite       {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -267,6 +274,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#product-navigation) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Seite kopieren** aus:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -309,6 +317,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#product-navigation) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Verschieben** aus:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -319,6 +328,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    Der Seitenname kann unverändert bleiben, wenn Sie die Seite nur verschieben.
@@ -334,6 +344,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
       * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken. 
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
@@ -363,14 +374,14 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    >[!NOTE]
    >
-   >Als Sicherheitsmaßnahme ist das Seitensymbol **Löschen** nicht per Schnellzugriff verfügbar.
+   >Als Sicherheitsmaßnahme ist das Symbol **Löschen** nicht per Schnellzugriff verfügbar.
 
-1. Ein Dialogfeld wird zur Bestätigung aufgerufen.
+1. Ein Bestätigungsdialogfeld wird angezeigt.
 
-   * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
+   * **Möchten Sie Seiten vor dem Löschen archivieren?** – Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden.](/help/sites-authoring/working-with-page-versions.md)
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
-      * Diese Option ist nur in AEM Version 6.4.7.0 verfügbar.
+      * Diese Option ist nur ab AEM Version 6.4.7.0 verfügbar.
    * Mit **Abbrechen** können Sie den Vorgang abbrechen.
    * **Löschen** bestätigen Sie die Aktion.
 
@@ -400,6 +411,7 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 >* Ordner können nur direkt unter **Sites** oder unter anderen Ordnern erstellt werden. Sie können jedoch nicht unter einer Seite erstellt werden.
 >* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
+
 >
 
 
