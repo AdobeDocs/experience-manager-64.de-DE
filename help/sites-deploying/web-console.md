@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 75%
 
 ---
 
@@ -37,7 +40,7 @@ The console can be accessed from `../system/console`; for example:
 
 `http://localhost:4502/system/console/components`
 
-## Konfiguration{#configuration}
+## Konfiguration {#configuration}
 
 Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und bildet deshalb den zugrunde liegenden Mechanismus für die Konfiguration der AEM-Systemparameter.
 
@@ -47,7 +50,7 @@ Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und
 
 Sie können mit einer der beiden folgenden Methoden auf die Registerkarte **Konfiguration** zugreifen:
 
-* Das Dropdownmenü:
+* Das Dropdown-Menü:
 
    **OSGi >**
 
@@ -102,7 +105,7 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 The **Bundles** tab is the mechanism for installing the OSGi bundles required for AEM. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
-* Das Dropdownmenü:
+* Das Dropdown-Menü:
 
    **OSGi >**
 
@@ -132,11 +135,11 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Anfang**
 
-   Startet ein Bundle entsprechend der angegebenen Startstufe.
+   Beginn eines Bundles entsprechend der angegebenen Beginn-Ebene.
 
 * **Stopp**
 
-   Stoppt das Bundle.
+   Hält das Bundle an.
 
 * **Deinstallieren**
 
@@ -154,9 +157,9 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 The **Components** tab allows you to Enable and/or Disable the various components. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
-* Das Dropdownmenü:
+* Das Dropdown-Menü:
 
-   **Haupt >**
+   **Allgemein >**
 
 * die URL; Beispiel:
 
