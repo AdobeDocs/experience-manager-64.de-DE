@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 63%
 
 ---
 
 
 # Texteditor anpassen {#customize-text-editor}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können den Texteditor in der Benutzeroberfläche „Assets verwalten und Korrespondenz erstellen“ anpassen, um weitere Schriftarten und Schriftgrade hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
 
@@ -37,7 +40,7 @@ Wenn Sie so verfahren, müssen Sie folgende Schritte durchführen:
 Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxeditor-config.xml&quot;anzupassen:
 
 1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, indem Sie die folgenden Schritte durchführen:
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, und führen Sie die folgenden Schritte aus:
 
    1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -47,11 +50,11 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/config
+      **Pfad:** /libs/fd/cm/config
 
-      **** Ort: /apps/
+      **Ort:** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **Knotentypen abgleichen:** Ausgewählt
 
       ![Überlagerungsknoten](assets/2-2.png)
 
@@ -70,7 +73,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
 1. Öffnen Sie die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config und nehmen Sie dann die erforderlichen Änderungen vor.
 
-   1. Doppelklicken Sie auf die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config. Die Datei wird geöffnet.
+   1. Klicken Sie bei gedrückter Dublette auf die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config. Die Datei wird geöffnet.
 
       ```xml
       <editorConfig>
@@ -163,6 +166,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
       * Eigenschaften wie Höhe und Zeichenabstand
       * Standardwerte von Schriftfamilie und -grad, Höhe, Zeichenabstand und Datumsformat
       * Einzüge für Aufzählungszeichen 
+
       Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes eintragen in der  XML-Datei: `<font>Sazanami Mincho Medium</font>`. Sie müssen diese Schriftart auch auf dem Clientcomputer installieren, der zum Zugriff auf die Schriftartanpassung und zum Arbeiten mit ihr verwendet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
 
       Sie können auch die Standardeinstellungen für verschiedene Aspekte des Textes ändern und durch Entfernen der Einträge die Schriftarten aus dem Texteditor entfernen.
@@ -177,7 +181,7 @@ Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, 
 Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
 * [Installieren oder Deinstallieren von Schriftarten unter Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts) 
-* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/en-us/HT201749) 
+* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/de-de/HT201749) 
 
 ## Zugriff auf Schriftartanpassungen {#access-font-customizations}
 
