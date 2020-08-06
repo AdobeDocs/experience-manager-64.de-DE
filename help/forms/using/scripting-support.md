@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '3911'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +27,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 <table> 
  <tbody> 
   <tr> 
-   <th>Eigenschaft </th> 
+   <th>Property </th> 
    <th>Beschreibung<br /> </th> 
    <th>Ausnahme</th> 
   </tr> 
@@ -732,7 +735,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td>Die Festlegung des Werts zur Laufzeit wird nicht unterstützt</td> 
   </tr> 
   <tr> 
-   <td>value</td> 
+   <td>Wert</td> 
    <td>Das value-Objekt umfasst eine Dateninhaltseinheit.<br /> </td> 
    <td> </td> 
   </tr> 
