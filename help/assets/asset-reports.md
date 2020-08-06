@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 47%
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichen
+* Veröffentlichen  
 * [!DNL Brand Portal] publish
 * Festplattenauslastung
 * Dateien
@@ -63,7 +63,7 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 
    >[!NOTE]
    >
-   >Der [!UICONTROL Bericht &quot;Herunterladen] &quot;zeigt nur Details zu den Assets an, die einzeln ausgewählt und mit der Schnellaktion heruntergeladen oder heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
+   >The [!UICONTROL Download] report displays details of only those assets which are selected individually and downloaded or downloaded using Quick Action. Er enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
 
 1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. By default, the folder path is `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
@@ -120,7 +120,7 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichen
+* Veröffentlichen  
 * [!DNL Brand Portal] publish
 * Dateien
 
