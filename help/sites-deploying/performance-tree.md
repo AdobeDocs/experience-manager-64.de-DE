@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 92%
 
 ---
 
@@ -106,7 +109,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr> 
    <td><strong>Schritte 10 und 29</strong></td> 
    <td>Untersuchung der Netzwerkschicht</td> 
-   <td><p>Überprüfen Sie die Netzwerkschicht auf Sättigungs- und Latenzprobleme.</p> <p>Für die Autorenschicht wird empfohlen, dass der Latenzwert 100 Millisekunden nicht übersteigt.</p> <p>Weitere Tipps zur Leistungsoptimierung finden Sie auf <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">dieser Seite</a>.</p> </td> 
+   <td><p>Überprüfen Sie die Netzwerkschicht auf Sättigungs- und Latenzprobleme.</p> <p>Für die Autorenschicht wird empfohlen, dass der Latenzwert 100 Millisekunden nicht übersteigt.</p> <p>Weitere Tipps zur Leistungsoptimierung finden Sie auf <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">dieser Seite</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Schritt 11</strong></td> 
@@ -160,7 +163,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
     <ol> 
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Unzureichender Speicher</a></li> 
      <li><a href="/help/sites-deploying/troubleshooting.md">Meine Anwendung gibt Fehler über unzureichenden Speicher aus</a></li> 
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Analyse von Speicherproblemen mit der Helpx-Funktion.</a><br /> </li> 
+     <li><a href="https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html">Analyse von Speicherproblemen mit der Helpx-Funktion.</a><br /> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -183,7 +186,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
    <td>Repository-Optimierung</td> 
    <td> 
     <ul> 
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Tipps zur Leistungsoptimierung </a></li> 
+     <li><a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">Tipps zur Leistungsoptimierung </a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Konfiguration zur Leistungsoptimierung</a></li> 
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Optimierung der Repository-Leistung</a></li> 
     </ul> </td> 
@@ -211,7 +214,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
     <ol> 
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Synchronisierungsdienst für Assets</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Mehrere DAM-Instanzen</a></li> 
-     <li>Artikel mit Tipps zur Leistungsoptimierung finden Sie <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a> und <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a>.<br /> </li> 
+     <li>Artikel mit Tipps zur Leistungsoptimierung finden Sie <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">hier</a> und <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">hier</a>.<br /> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -252,12 +255,12 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr> 
    <td><strong>Schritt 34</strong></td> 
    <td>Aktualisierung der Dispatcher-Version</td> 
-   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td> 
+   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td> 
   </tr> 
   <tr> 
    <td><strong>Schritt 35</strong></td> 
    <td>Konfiguration des Dispatchers</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Konfigurieren des Dispatchers</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html">Konfigurieren des Dispatchers</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Schritt 36</strong></td> 
