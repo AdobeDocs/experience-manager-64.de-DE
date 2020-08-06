@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 95%
 
 ---
 
 
 # Projekte{#projects}
 
-Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine gemeinsam genutzte Umgebung erleichtert die Projektverwaltung. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden in AEM als Kacheln bezeichnet. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine gemeinsam genutzte Umgebung erleichtert die Projektverwaltung. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden in AEM als Kacheln bezeichnet. Kacheln können Projekt- und Team-Informationen, Assets, Workflows und andere Arten von Informationen sein. Ausführliche Informationen finden Sie unter [Projektkacheln](#project-tiles).
 
 >[!CAUTION]
 >
@@ -49,20 +52,20 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
 
-## Projektkacheln {#project-tiles}
+## Projektkacheln   {#project-tiles}
 
 Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
 
 Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in den folgenden Abschnitten beschrieben:
 
 * Assets und Asset-Sammlungen
-* Erlebnisse
+* Erlebnisse  
 * Links
 * Projektinformationen
 * Team
 * Einstiegsseiten
 * E-Mails
-* Workflows
+* Workflows  
 * Launches
 * Aufgaben
 
@@ -78,15 +81,15 @@ Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets
 
 ### Asset-Sammlungen {#asset-collections}
 
-[Asset-Sammlungen](/help/assets/managing-collections-touch-ui.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“.
+[Asset-Sammlungen](/help/assets/managing-collections-touch-ui.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“. 
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
-Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung aus der Liste auswählen.
+Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung in der Liste auswählen.
 
 ### Erlebnisse {#experiences}
 
-Über die Kachel **Erlebnisse** können Sie eine mobile Anwendung, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
+Über die Kachel **Erlebnisse** können Sie eine Mobile App, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -122,7 +125,7 @@ In der Kachel „Übersetzungsauftrag“ können Sie eine Übersetzung starten u
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
+Klicken Sie auf die Auslassungszeichen unten auf der Karte **Übersetzungsauftrag**, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
@@ -170,7 +173,7 @@ Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für d
 
 ### Aufgaben {#tasks}
 
-Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben überwachen, einschließlich Workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben überwachen, einschließlich Workflows. Aufgaben werden im Detail unter [Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md) beschrieben.
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
@@ -178,14 +181,14 @@ Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben üb
 
 Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
-* Ein einfaches Projekt - Ein Referenzbeispiel für Projekte, die nicht in andere Kategorien passen (ein Sammelformular). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Einstiegsseite anfordern und E-Mail anfordern).
-* Ein Medienprojekt - Ein Beispielprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es umfasst außerdem zwei Arbeitsabläufe im Zusammenhang mit Medieninhalten - &quot;Kopie anfordern&quot;(zum Anfordern und Überprüfen von Text) und &quot;Foto-Shoot&quot;(zum Verwalten produktbezogener Fotografien)
+* Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
+* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
 * [Produktfoto-Projekt](/help/sites-authoring/managing-product-information.md) - Ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
-* [Ein Übersetzungsprojekt](/help/sites-administering/translation.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflows-Benutzeroberfläche zugegriffen werden kann.
+* [Ein Übersetzungsprojekt](/help/sites-administering/translation.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt   {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 
@@ -209,7 +212,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
    <td><p>Gruppe „workflow-users“</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Bearbeiter     </p> </td> 
+   <td><p>Bearbeiter</p> </td> 
    <td><p>Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten.</p> <p> </p> </td> 
    <td> 
     <ul> 
@@ -222,7 +225,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
   </tr> 
   <tr> 
    <td><p>Inhaber</p> </td> 
-   <td><p>Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. </p> </td> 
+   <td><p>Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden.</p> </td> 
    <td> 
     <ul> 
      <li>Schreibberechtigung für „/etc/commerce“</li> 
