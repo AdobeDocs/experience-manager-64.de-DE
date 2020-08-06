@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 71%
 
 ---
 
@@ -23,7 +26,7 @@ Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der E
 
 Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
 
-1. Wechseln zu `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Das folgende Dialogfeld wird angezeigt:
+1. Rufen Sie `https://[server]:[port]/system/console/configMgr` auf. Locate and open the *Apace Sling logging logger configuration* option. Das folgende Dialogfeld wird angezeigt:
 
    ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
@@ -168,7 +171,7 @@ Beispiel:
 >
 >Die Standardprotokollebene für jede Protokollkategorie – a (xfa), b (xfaView) und c (xfaPerf) – ist 2 (ERROR). Entsprechend lauten bei der Protokollkonfiguration 2-b6 die Protokollebenen für die verschiedenen Kategorien:\
 >a (xfa): 2 (Standard-EBENENFEHLER)\
->b (xfaView): 6 (vom Benutzer angegebener TRACE)\
+>b (xfaView): 6 (vom Benutzer angegebenes TRACE)\
 >a (xfaPerf): 2 (Standard-EBENENFEHLER)
 
 ### Aktivieren der Protokollierung über den Configuration Manager {#enabling-logging-using-configuration-manager}
