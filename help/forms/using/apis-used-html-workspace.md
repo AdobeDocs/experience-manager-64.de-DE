@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
 source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 100%
 
 ---
 
@@ -353,7 +356,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>removeProperty</td> 
    <td>WorkspacePropertyService</td> 
-   <td>delete</td> 
+   <td>Löschen Sie</td> 
    <td>Löscht eine Workspace-Eigenschaft für einen Benutzer.</td> 
   </tr>
   <tr>
