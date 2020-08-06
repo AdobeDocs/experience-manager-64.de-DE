@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2224'
+ht-degree: 74%
 
 ---
 
@@ -27,8 +30,9 @@ Nach der Konfiguration der Integration erfordern Änderungen an den Dynamic Tag 
 >
 >Wenn Sie DTM mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
 >* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)  konfiguriert.
+
 >
 
 
@@ -71,14 +75,14 @@ Aktivieren Sie den Bereitstellungs-Hook-Service für Dynamic Tag Management, um 
 
 Führen Sie die Konfiguration entweder mit der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einem [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)-Knoten durch:
 
-* Verwenden Sie auf der Seite &quot;Konfiguration&quot;die Option &quot;Adobe DTM-Konfiguration für die Hook-Bereitstellung&quot;.
+* Verwenden Sie in der Web-Konsole das Element Adobe DTM-Konfiguration für die Bereitstellung der Hook-Konfiguration auf der Seite &quot;Konfiguration&quot;.
 * Für eine OSGi-Konfiguration lautet die PID des Dienstes `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
 
 In der folgenden Tabelle sind die zu konfigurierenden Eigenschaften beschrieben.
 
 | Webkonsole, Eigenschaft | OSGi-Eigenschaft | Beschreibung |
 |---|---|---|
-| Staging der DTM IP-White-List | `dtm.staging.ip.whitelist` | Die IP-Adresse des Servers für dynamisches Tag-Management, der die Staging-Bibliotheken aktualisiert. |
+| Staging der DTM IP-White-List | `dtm.staging.ip.whitelist` | Die IP-Adresse des Servers für dynamisches Tag-Management, auf dem die Staging-Bibliotheken aktualisiert werden. |
 | Produktions-DTM-IP-White-List | `dtm.production.ip.whitelist` | Die IP-Adresse des Servers für dynamisches Tag-Management, auf dem die Produktionsbibliotheken aktualisiert werden. |
 
 ## Erstellen der Dynamic Tag Management-Konfiguration {#creating-the-dynamic-tag-management-configuration}
@@ -103,15 +107,15 @@ Erstellen Sie eine Cloud-Konfiguration, sodass die AEM-Instanz sich mit Dynamic 
   </tr> 
   <tr> 
    <td>Unternehmen</td> 
-   <td>Das Unternehmen, mit dem Ihre Anmelde-ID verknüpft ist.</td> 
+   <td>Die Firma, mit der Ihre Anmelde-ID verknüpft ist.</td> 
   </tr> 
   <tr> 
-   <td>Eigenschaft</td> 
-   <td>Der Name der Webeigenschaft, die Sie zum Verwalten der Tags für Ihre AEM-Site erstellt haben.</td> 
+   <td>Property</td> 
+   <td>Der Name der Webeigenschaft, die Sie zum Verwalten der Tags für Ihre AEM Site erstellt haben.</td> 
   </tr> 
   <tr> 
    <td>Produktionscode bei Autor mit angeben</td> 
-   <td><p>Wählen Sie diese Option, damit die Autoren- und Veröffentlichungsinstanzen von AEM die Produktionsversion der dynamischen Tag-Management-Bibliotheken verwenden. </p> <p>Wird diese Option nicht ausgewählt, werden die Staging-Einstellungen auf die Autoreninstanz angewandt und die Produktionseinstellungen auf die Veröffentlichungsinstanz.</p> </td> 
+   <td><p>Wählen Sie diese Option, damit AEM Autor- und Veröffentlichungsinstanzen die Produktionsversion der Bibliotheken des dynamischen Tag-Managements verwenden. </p> <p>Wird diese Option nicht ausgewählt, werden die Staging-Einstellungen auf die Autoreninstanz angewandt und die Produktionseinstellungen auf die Veröffentlichungsinstanz.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -136,7 +140,7 @@ Beim Hosten der Dynamic Tag Management-Bibliotheken in AEM konfiguriert AEM auto
   </tr> 
   <tr> 
    <td>Self Hosting verwenden</td> 
-   <td>Wählen Sie diese Option, wenn Sie die Bibliotheksdatei des dynamischen Tag-Managements in AEM hosten. Die Auswahl dieser Option sorgt dafür, dass die anderen Eigenschaften in dieser Tabelle angezeigt werden.</td> 
+   <td>Wählen Sie diese Option, wenn Sie die Bibliotheksdatei des dynamischen Tag-Managements auf AEM hosten. Die Auswahl dieser Option sorgt dafür, dass die anderen Eigenschaften in dieser Tabelle angezeigt werden.</td> 
   </tr> 
   <tr> 
    <td>URL des DTM-Bundles</td> 
@@ -156,7 +160,7 @@ Beim Hosten der Dynamic Tag Management-Bibliotheken in AEM konfiguriert AEM auto
   </tr> 
   <tr> 
    <td>Gemeinsamer geheimer Schlüssel</td> 
-   <td><p>(Optional) Das Shared-Secret, das zum Entschlüsseln des Downloads verwendet wird. Rufen Sie diesen Wert im Feld "Shared Secret"auf der Seite "Bibliotheksdownload"des dynamischen Tag-Managements ab.</p> <p><strong></strong> Hinweis: Sie müssen die <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> -Bibliotheken auf dem Computer installiert haben, auf dem AEM installiert ist, damit AEM die heruntergeladenen Bibliotheken entschlüsseln kann.</p> </td> 
+   <td><p>(Optional) Das Shared-Secret, das zum Entschlüsseln des Downloads verwendet wird. Rufen Sie diesen Wert im Feld "Shared Secret"auf der Seite "Bibliotheksdownload"des dynamischen Tag-Managements ab.</p> <p><strong>Hinweis:</strong> Sie müssen die <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> -Bibliotheken auf dem Computer installiert haben, auf dem AEM installiert ist, damit AEM die heruntergeladenen Bibliotheken entschlüsseln können.</p> </td> 
   </tr> 
   <tr> 
    <td>Abruf-Importtool aktivieren</td> 
@@ -205,6 +209,7 @@ Bei der folgenden Vorgehensweise wird die Touch-optimierte Benutzeroberfläche f
 
    * Klicken Sie auf Jetzt konfigurieren, wenn dies die erste Konfiguration ist, die Sie hinzufügen.
    * Klicken Sie auf „Konfigurationen anzeigen“ und anschließend auf den „+“-Link neben „Verfügbare Konfigurationen“, wenn eine oder mehrere Konfigurationen erstellt wurden.
+
    ![chlimage_1-354](assets/chlimage_1-354.png)
 
 1. Geben Sie einen Titel für die Konfiguration ein und klicken Sie dann auf „Erstellen“.
@@ -243,6 +248,7 @@ Laden Sie die Dynamic Tag Management-Bibliotheken bei Bedarf manuell herunter, u
 >* `companyID`
 >* `propertyID`
 >* `servertype`
+
 >
 
 
@@ -261,7 +267,7 @@ Verwenden Sie das folgende Verfahren, um eine Seite und die untergeordneten Elem
 
 1. Verwenden Sie das Dropdown-Menü „Dynamic Tag Management“, um Ihre Konfiguration auszuwählen, und klicken Sie dann auf „OK“.
 
-Gehen Sie wie folgt vor, um die übernommene Konfigurationsverknüpfung für eine Seite außer Kraft zu setzen. Die Außerkraftsetzung betrifft die Seite und alle untergeordneten Elemente der Seite.
+Gehen Sie wie folgt vor, um die übernommene Konfigurationsverknüpfung für eine Seite außer Kraft zu setzen. Die Außerkraftsetzung wirkt sich auf die Seite und alle untergeordneten Elemente der Seite aus.
 
 1. Öffnen Sie die Seite in der klassischen Benutzeroberfläche.
 1. Verwenden Sie den Sidekick, um die Seiteneigenschaften zu öffnen.
