@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu 
 
 1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten.
-1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100.
+1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100.         
 
    >[!NOTE]
    >
