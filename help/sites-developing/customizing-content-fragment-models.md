@@ -1,5 +1,5 @@
 ---
-title: VERÖFFENTLICHEN SIE NICHT, ABER LÖSCHEN SIE KEINE Anpassungsmodelle für Inhaltsfragmente
+title: NICHT VERÖFFENTLICHEN, SONDERN KEIN DELETE ZUM Anpassen von Inhaltsfragmentmodellen
 seo-title: Anpassen von Inhaltsfragmentmodellen
 description: Inhaltsfragmentmodelle können angepasst und erweitert werden.
 seo-description: Inhaltsfragmentmodelle können angepasst und erweitert werden.
@@ -10,11 +10,14 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 3%
 
 ---
 
 
-# VERÖFFENTLICHEN SIE NICHT, ABER LÖSCHEN SIE KEINE Anpassungsmodelle für Inhaltsfragmente{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NICHT VERÖFFENTLICHEN, SONDERN KEIN DELETE ZUM Anpassen von Inhaltsfragmentmodellen{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
 Der Editor des Inhaltsfragmentmodells ist ein Assistent, der auf `Formbuilder`Folgendem basiert:
 
@@ -26,19 +29,20 @@ Diese Komponente verfügt über die Werkzeuge, die zum Rendern der Drag &amp; Dr
 
 Modelle werden unter `/conf`einem Ordner gespeichert und erstellt, in dem die Eigenschaft &quot; [Inhaltsfragmentmodelle&quot;aktiviert ist](/help/assets/content-fragments-models.md#enable-content-fragment-models) . Diese Einstellung wird auch in den **Konfigurationseigenschaften** angezeigt, auf die über den **Konfigurationsbrowser** zugegriffen werden kann.
 
-1. Navigieren Sie zum Browser über **Tools**, **General**, **Configuration Browser** z. B. `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. Navigieren Sie zum Browser über **Tools**, **General**, **Configuration Browser** z. B. 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
-1. Wählen Sie im Browser die entsprechende Konfiguration und dann **Eigenschaften** aus der Symbolleiste.
+1. Wählen Sie im Browser die entsprechende Konfiguration und dann **Eigenschaften** aus der Symbolleiste aus.
 
    Die Eigenschaften für `global`Folgendes: `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-In der Modellkonsole werden alle Ordner mit der Eigenschaft **Inhaltsfragmentmodelle** angezeigt. Navigieren über **Tools**, **Assets**, **Inhaltsfragmentmodelle**; zum Beispiel `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
+In der Modellkonsole werden alle Ordner mit der **Eigenschaft &quot;Inhaltsfragmentmodelle** &quot;angezeigt. Navigieren über **Tools**, **Assets**, **Inhaltsfragmentmodelle**; zum Beispiel `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
 
-Ein Benutzer kann ein Inhaltsfragmentmodell[ mithilfe des Assistenten zum ](/help/assets/content-fragments-models.md#creating-a-content-fragment-model)Erstellen des Modells **** erstellen (mithilfe von **Erstellen** aus der Konsole).
+Ein Benutzer kann ein Inhaltsfragmentmodell [mithilfe des Assistenten zum](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) Erstellen des Modells **** erstellen (mithilfe von **Erstellen** aus der Konsole).
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
@@ -63,7 +67,7 @@ Der Assistent erstellt einen Eintrag mit der folgenden Struktur:
 
 * `model`
 
-   Die `model` Node enthält eine Eigenschaft `dataTypesConfig`, mit der die Datentypen bestimmt werden, die im Modelleditor verwendet werden.
+   Die `model` Node enthält eine Eigenschaft, `dataTypesConfig`mit der die Datentypen bestimmt werden, die im Modelleditor verwendet werden.
 
 * `items`
 
@@ -73,20 +77,20 @@ Der Assistent erstellt einen Eintrag mit der folgenden Struktur:
 >
 >Alle Datentypen, die in einen Modelleditor gezogen und abgelegt werden und daher instanziiert werden, **müssen** über die Eigenschaftseingabe des Benutzers verfügen `name` .
 >
->**Dies wird als** Eigenschaftsname&amp;ast; auf der Registerkarte **Eigenschaften** des Modelleditors.
+>Dies wird als **Eigenschaftsname&amp;ast;** auf der Registerkarte &quot; **Eigenschaften** &quot;des Modelleditors.
 
 ## Struktur des Modelleditors {#structure-of-the-model-editor}
 
 Der **Content Fragment Model Editor** besteht aus zwei Teilen:
 
-* Die Vorschau oder Ansicht auf der linken Seite, wo Sie Elemente ablegen können. Dieser Knoten:
+* Das Bedienfeld &quot;Vorschau&quot;oder &quot;Ansicht&quot;auf der linken Seite, in dem Sie Elemente ablegen können. Dies:
 
    * Zeigt eine Vorschau des instanziierten **Datentyps** an.
    * Ermöglicht die Bestellung im Modelleditor.
 
-* Die Registerkarten **Datentypen**/**Eigenschaften** im Bereich auf der rechten Seite. Dieser Knoten:
+* Die Registerkarten **Datentypen**/**Eigenschaften** im Bereich auf der rechten Seite. Dies:
 
-   * Zeigt eine Liste der Datentypen an, die gezogen und instanziiert werden können.
+   * Zeigt eine Liste von Datentypen an, die gezogen und instanziiert werden können.
    * Für den vordefinierten Modelleditor ist die Liste vorhanden unter:
 
       `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes`
@@ -95,11 +99,11 @@ Der **Content Fragment Model Editor** besteht aus zwei Teilen:
       This node contains all the data types currently supported in the model editor. For more information on how to configure the data types, see [Customizing Data Types for Content Fragment Models](/help/sites-developing/customizing-content-fragment-model-data-types.md).
       -->
 
-   * Alle gerenderten Datentypen haben zwei Skript-Tags, die nach der Instanziierung die Ansicht (die auf der linken Seite gerenderte Komponente) und die Registerkarte **Eigenschaften** bilden, die die Eigenschaften definiert, die ein Benutzer für eine bestimmte Komponente definieren kann.
+   * Alle gerenderten Datentypen haben zwei Skript-Tags, die bei Instanziierung die Ansicht (die auf der linken Seite gerenderte Komponente) und die Registerkarte &quot; **Eigenschaften** &quot;bilden, auf der die Eigenschaften definiert werden, die ein Benutzer für eine bestimmte Komponente definieren kann.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
@@ -109,7 +113,7 @@ The properties on the right side define a form that is submitted directly into J
 
 Wenn ein Datentyp instanziiert wird, werden HTML-Eingaben für jede Eigenschaft erstellt, die die Komponente in einem Inhaltsfragment wiedergegeben werden muss. Dazu gehören beispielsweise:
 
-* **** Eigenschaftsname&amp;ast; ( `name`) - dient als Identifikator für Komponenten
+* **Eigenschaftsname&amp;ast;** ( `name`) - dient als Identifikator für Komponenten
 
 * **Rendern als** ( `metaType`): Geben Sie die Komponente als
 
