@@ -39,11 +39,11 @@ Sie können diese Aufgaben mithilfe des Encryption-Dienstes ausführen:
 
 ## Encrypting PDF Documents with a Password {#encrypting-pdf-documents-with-a-password}
 
-Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, damit das Dokument in Adobe Reader oder Acrobat geöffnet werden kann. Bevor ein anderer AEM Forms-Vorgang, z. B. das digitale Signieren des PDF-Dokuments, auf dem Dokument ausgeführt werden kann, muss die Sperre eines kennwortverschlüsselten PDF-Dokuments aufgehoben werden.
+Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, damit das Dokument in Adobe Reader oder Acrobat geöffnet werden kann. Bevor ein anderer AEM Forms-Vorgang wie das digitale Signieren des PDF-Dokuments auf dem Dokument ausgeführt werden kann, muss die Sperre eines kennwortverschlüsselten PDF-Dokuments aufgehoben werden.
 
 >[!NOTE]
 >
->Wenn Sie ein verschlüsseltes PDF-Dokument in das AEM Forms-Repository hochladen, kann es das PDF-Dokument nicht entschlüsseln und den XDP-Inhalt extrahieren. Es wird empfohlen, ein Dokument nicht vor dem Hochladen in das AEM Forms-Repository zu verschlüsseln. (Siehe [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Wenn Sie ein verschlüsseltes PDF-Dokument in das AEM Forms-Repository hochladen, kann es das PDF-Dokument nicht entschlüsseln und den XDP-Inhalt extrahieren. Es wird empfohlen, ein Dokument vor dem Hochladen in das AEM Forms-Repository nicht zu verschlüsseln. (Siehe [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
@@ -69,8 +69,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 **Erstellen eines Verschlüsselungs-Client-API-Objekts**
 
@@ -82,7 +82,7 @@ Sie müssen ein unverschlüsseltes PDF-Dokument abrufen, um das Dokument mit ein
 
 **Festlegen von Optionen für die Verschlüsselungslaufzeit**
 
-Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, geben Sie vier Werte ein, darunter zwei Kennwortwerte. Der erste Kennwortwert wird zum Verschlüsseln des PDF-Dokuments verwendet und muss beim Öffnen des PDF-Dokuments angegeben werden. Der zweite Kennwortwert, der als Master-Kennwortwert bezeichnet wird, wird zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet. Bei Kennwortwerten wird die Groß-/Kleinschreibung beachtet, und diese beiden Kennwortwerte dürfen nicht mit den gleichen Werten übereinstimmen.
+Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, geben Sie vier Werte ein, darunter zwei Kennwortwerte. Der erste Kennwortwert wird zum Verschlüsseln des PDF-Dokuments verwendet und muss beim Öffnen des PDF-Dokuments angegeben werden. Der zweite Kennwortwert mit dem Namen &quot;Übergeordnet password value&quot;wird zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet. Bei Kennwortwerten wird die Groß-/Kleinschreibung beachtet, und diese beiden Kennwortwerte dürfen nicht mit den gleichen Werten übereinstimmen.
 
 Sie müssen die zu verschlüsselnden PDF-Dokument-Ressourcen angeben. Sie können das gesamte PDF-Dokument verschlüsseln, mit Ausnahme der Metadaten des Dokuments oder nur der Anlagen des Dokuments. Wenn Sie nur die Anlagen des Dokuments verschlüsseln, wird ein Benutzer beim Versuch, auf die Dateianlagen zuzugreifen, zur Eingabe eines Kennworts aufgefordert.
 
@@ -141,9 +141,9 @@ Verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlüsse
    * Geben Sie die zu verschlüsselnden PDF-Dokument-Ressourcen an, indem Sie die `PasswordEncryptionOptionSpec` Objektmethode aufrufen und einen Wert für die `setEncryptOption` `PasswordEncryptionOption` Auflistung übergeben, der die zu verschlüsselnden Dokumente angibt. Wenn Sie beispielsweise das gesamte PDF-Dokument einschließlich der zugehörigen Metadaten und Anlagen verschlüsseln möchten, geben Sie dies an `PasswordEncryptionOption.ALL`.
    * Erstellen Sie ein `java.util.List` Objekt, das die Verschlüsselungsberechtigungen mithilfe des `ArrayList` Konstruktors speichert.
    * Geben Sie eine Berechtigung an, indem Sie die `java.util.List` Objektmethode `add` aufrufen und einen Wert für die Auflistung übergeben, der der gewünschten Berechtigung entspricht. Um beispielsweise die Berechtigung zum Kopieren von Daten im PDF-Dokument festzulegen, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`diese an. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
-   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die `PasswordEncryptionOptionSpec` Objektmethode aufrufen und einen Wert für die Auflistung übergeben, der die Acrobat-Kompatibilitätsstufe angibt, `setCompatability` und zwar For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die `PasswordEncryptionOptionSpec` Objektmethode aufrufen und einen Auflistung-Wert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. `setCompatability` For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem er die `PasswordEncryptionOptionSpec` Objektmethode aufruft und einen Zeichenfolgenwert übergibt, der das Kennwort &quot;open&quot;darstellt. `setDocumentOpenPassword`
-   * Geben Sie den Wert des Hauptkennworts an, mit dem ein Benutzer die Verschlüsselung aus dem PDF-Dokument entfernen kann, indem er die `PasswordEncryptionOptionSpec` Objektmethode aufruft und einen Zeichenfolgenwert übergibt, der das Hauptkennwort darstellt. `setPermissionPassword` Dieser Wert wird dann verwendet.
+   * Geben Sie den Wert für das Übergeordnet-Kennwort an, mit dem ein Benutzer die Verschlüsselung aus dem PDF-Dokument entfernen kann, indem er die `PasswordEncryptionOptionSpec` `setPermissionPassword` Objektmethode aufruft und einen Zeichenfolgenwert übergibt, der das Übergeordnet-Kennwort darstellt.
 
 1. Hinzufügen das Kennwort.
 
@@ -179,12 +179,12 @@ Verschlüsseln eines PDF-Dokuments mit einem Kennwort mithilfe der Verschlüssel
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie ein Encryption Client-API-Objekt.
 
    * Erstellen Sie ein `EncryptionServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `EncryptionServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -208,7 +208,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Kennwort mithilfe der Verschlüssel
    * Geben Sie die zu verschlüsselnden PDF-Dokument-Ressourcen an, indem Sie dem `PasswordEncryptionOption` Datenmember des Objekts einen Wert für die `PasswordEncryptionOptionSpec` Auflistung zuweisen `encryptOption` . Zum Verschlüsseln der gesamten PDF-Datei, einschließlich der zugehörigen Metadaten und Anlagen, weisen Sie sie diesem `PasswordEncryptionOption.ALL` Datenmember zu.
    * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie dem `PasswordEncryptionCompatability` Datenmember des Objekts einen Wert für die `PasswordEncryptionOptionSpec` Auflistung zuweisen `compatability` . Weisen Sie beispielsweise diesem Datenmember `PasswordEncryptionCompatability.ACRO_7` zu.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem er dem `PasswordEncryptionOptionSpec` Datenmember des `documentOpenPassword` Objekts einen Zeichenfolgenwert zuweist, der das Kennwort &quot;open&quot;darstellt.
-   * Geben Sie den Kennwortwert an, mit dem ein Benutzer die Verschlüsselung aus dem PDF-Dokument entfernen kann, indem er dem `PasswordEncryptionOptionSpec` Datenmember des `permissionPassword` Objekts einen Zeichenfolgenwert zuweist, der das Hauptkennwort darstellt.
+   * Geben Sie den Kennwortwert an, mit dem ein Benutzer die Verschlüsselung aus dem PDF-Dokument entfernen kann, indem er dem Datenmember des `PasswordEncryptionOptionSpec` Objekts einen Zeichenfolgenwert zuweist, der das Übergeordnet verwendete Kennwort darstellt `permissionPassword` .
 
 1. Hinzufügen das Kennwort.
 
@@ -230,9 +230,9 @@ Verschlüsseln eines PDF-Dokuments mit einem Kennwort mithilfe der Verschlüssel
 
 [Zusammenfassung der Schritte](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Encrypting PDF Documents with Certificates {#encrypting-pdf-documents-with-certificates}
 
@@ -247,7 +247,7 @@ Ein Zertifikat mit öffentlichem Schlüssel enthält den öffentlichen Schlüsse
 
 >[!NOTE]
 >
->Wenn Sie ein verschlüsseltes PDF-Dokument in das AEM Forms-Repository hochladen, kann es das PDF-Dokument nicht entschlüsseln und den XDP-Inhalt extrahieren. Es wird empfohlen, ein Dokument nicht vor dem Hochladen in das AEM Forms-Repository zu verschlüsseln. (Siehe [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Wenn Sie ein verschlüsseltes PDF-Dokument in das AEM Forms-Repository hochladen, kann es das PDF-Dokument nicht entschlüsseln und den XDP-Inhalt extrahieren. Es wird empfohlen, ein Dokument vor dem Hochladen in das AEM Forms-Repository nicht zu verschlüsseln. (Siehe [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
@@ -363,7 +363,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
 
    Verschlüsseln Sie das PDF-Dokument mit einem Zertifikat, indem Sie die `EncryptionServiceClient` `encryptPDFUsingCertificates` Objektmethode aufrufen und die folgenden Werte übergeben:
 
-   * Das zu verschlüsselnde `com.adobe.idp.Document` Objekt mit dem PDF-Dokument.
+   * Das `com.adobe.idp.Document` zu verschlüsselnde Objekt des PDF-Dokuments.
    * Das `java.util.List` Objekt, das Zertifikatinformationen speichert.
    * Das `CertificateEncryptionOptionSpec` Objekt, das Verschlüsselungslaufzeitoptionen enthält.
 
@@ -394,12 +394,12 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie ein Encryption Client-API-Objekt.
 
    * Erstellen Sie ein `EncryptionServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `EncryptionServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -457,9 +457,9 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
 
 [Zusammenfassung der Schritte](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Removing Certificate Based Encryption {#removing-certificate-based-encryption}
 
@@ -509,7 +509,7 @@ Zum Entfernen der zertifikatbasierten Verschlüsselung aus einem verschlüsselte
 
 **PDF-Dokument speichern**
 
-Nachdem die zertifikatbasierte Verschlüsselung aus einem verschlüsselten PDF-Dokument entfernt wurde, können Sie das PDF-Dokument als PDF-Datei speichern. Die Benutzer können das PDF-Dokument in Adobe Reader oder Acrobat öffnen.
+Nachdem die zertifikatbasierte Verschlüsselung aus einem verschlüsselten PDF-Dokument entfernt wurde, können Sie das PDF-Dokument als PDF-Datei speichern. Benutzer können das PDF-Dokument in Adobe Reader oder Acrobat öffnen.
 
 **Siehe auch**
 
@@ -575,12 +575,12 @@ Zertifikatbasierte Verschlüsselung mithilfe der Verschlüsselungs-API (Webdiens
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen Verschlüsselungsdienstclient.
 
    * Erstellen Sie ein `EncryptionServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `EncryptionServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -618,13 +618,13 @@ Zertifikatbasierte Verschlüsselung mithilfe der Verschlüsselungs-API (Webdiens
 
 [Zusammenfassung der Schritte](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Kennwortverschlüsselung entfernen {#removing-password-encryption}
 
-Die kennwortbasierte Verschlüsselung kann aus einem PDF-Dokument entfernt werden, damit Benutzer das PDF-Dokument in Adobe Reader oder Acrobat öffnen können, ohne ein Kennwort angeben zu müssen. Nachdem die kennwortbasierte Verschlüsselung aus einem PDF-Dokument entfernt wurde, ist das Dokument nicht mehr sicher.
+Die kennwortbasierte Verschlüsselung kann aus einem PDF-Dokument entfernt werden, sodass Benutzer das PDF-Dokument in Adobe Reader oder Acrobat öffnen können, ohne ein Kennwort angeben zu müssen. Nachdem die kennwortbasierte Verschlüsselung aus einem PDF-Dokument entfernt wurde, ist das Dokument nicht mehr sicher.
 
 >[!NOTE]
 >
@@ -649,8 +649,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 **Erstellen eines Verschlüsselungsdienstclients**
 
@@ -662,11 +662,11 @@ Zum Entfernen der kennwortbasierten Verschlüsselung benötigen Sie ein verschl�
 
 **Kennwort entfernen**
 
-Um eine kennwortbasierte Verschlüsselung aus einem verschlüsselten PDF-Dokument zu entfernen, benötigen Sie sowohl ein verschlüsseltes PDF-Dokument als auch einen Master-Kennwortwert, der zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet wird. Das Kennwort zum Öffnen eines kennwortverschlüsselten PDF-Dokuments kann nicht zum Entfernen der Verschlüsselung verwendet werden. Ein Hauptkennwort wird angegeben, wenn das PDF-Dokument mit einem Kennwort verschlüsselt wird. (Siehe PDF-Dokumente mit einem Kennwort [verschlüsseln](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Zum Entfernen der kennwortbasierten Verschlüsselung aus einem verschlüsselten PDF-Dokument benötigen Sie ein verschlüsseltes PDF-Dokument und einen Übergeordnet-Kennwortwert, mit dem die Verschlüsselung aus dem PDF-Dokument entfernt wird. Das Kennwort zum Öffnen eines kennwortverschlüsselten PDF-Dokuments kann nicht zum Entfernen der Verschlüsselung verwendet werden. Wenn das PDF-Dokument mit einem Kennwort verschlüsselt ist, wird ein Übergeordnet-Kennwort angegeben. (Siehe PDF-Dokumente mit einem Kennwort [verschlüsseln](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 **PDF-Dokument speichern**
 
-Nachdem der Encryption-Dienst die kennwortbasierte Verschlüsselung aus einem PDF-Dokument entfernt hat, können Sie das PDF-Dokument als PDF-Datei speichern. Benutzer können das PDF-Dokument in Adobe Reader oder Acrobat öffnen, ohne ein Kennwort angeben zu müssen.
+Nachdem der Encryption-Dienst die kennwortbasierte Verschlüsselung aus einem PDF-Dokument entfernt hat, können Sie das PDF-Dokument als PDF-Datei speichern. Benutzer können das PDF-Dokument in Adobe Reader oder Acrobat öffnen, ohne ein Kennwort anzugeben.
 
 **Siehe auch**
 
@@ -701,7 +701,7 @@ Entfernen Sie die kennwortbasierte Verschlüsselung aus einem PDF-Dokument mithi
    Entfernen Sie die kennwortbasierte Verschlüsselung aus dem PDF-Dokument, indem Sie die `EncryptionServiceClient` Objektmethode aufrufen und die folgenden Werte übergeben `removePDFPasswordSecurity` :
 
    * Ein `com.adobe.idp.Document` Objekt, das das verschlüsselte PDF-Dokument enthält.
-   * Ein Zeichenfolgenwert, der den Master-Kennwortwert angibt, der zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet wird.
+   * Ein Zeichenfolgenwert, der den Übergeordnet-Kennwortwert angibt, der zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet wird.
 
    Die `removePDFPasswordSecurity` Methode gibt ein `com.adobe.idp.Document` Objekt zurück, das ein ungesichertes PDF-Dokument enthält.
 
@@ -724,12 +724,12 @@ Entfernen Sie die kennwortbasierte Verschlüsselung mithilfe der Verschlüsselun
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen Verschlüsselungsdienstclient.
 
    * Erstellen Sie ein `EncryptionServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `EncryptionServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -765,13 +765,13 @@ Entfernen Sie die kennwortbasierte Verschlüsselung mithilfe der Verschlüsselun
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Entsperren von verschlüsselten PDF-Dokumenten {#unlocking-encrypted-pdf-documents}
 
-Ein kennwortverschlüsseltes oder zertifikatverschlüsseltes PDF-Dokument muss entsperrt werden, bevor ein anderer AEM Forms-Vorgang durchgeführt werden kann. Wenn Sie versuchen, einen Vorgang mit einem verschlüsselten PDF-Dokument auszuführen, wird eine Ausnahme generiert. Nachdem Sie ein verschlüsseltes PDF-Dokument entsperrt haben, können Sie einen oder mehrere Vorgänge daran durchführen. Diese Vorgänge können zu anderen Diensten gehören, z. B. dem Acrobat Reader DC Extensions-Dienst.
+Ein kennwortverschlüsseltes oder zertifikatverschlüsseltes PDF-Dokument muss entsperrt werden, bevor ein anderer AEM Forms-Vorgang darauf ausgeführt werden kann. Wenn Sie versuchen, einen Vorgang mit einem verschlüsselten PDF-Dokument auszuführen, wird eine Ausnahme generiert. Nachdem Sie ein verschlüsseltes PDF-Dokument entsperrt haben, können Sie einen oder mehrere Vorgänge daran durchführen. Diese Vorgänge können zu anderen Diensten gehören, z. B. dem Acrobat Reader DC Extensions-Dienst.
 
 >[!NOTE]
 >
@@ -861,11 +861,11 @@ Entsperren Sie ein verschlüsseltes PDF-Dokument mithilfe der Verschlüsselungs-
    * A `com.adobe.idp.Document` object that contains the certificate-encrypted PDF document.
    * Ein Zeichenfolgenwert, der den Aliasnamen des öffentlichen Schlüssels angibt, der dem zum Verschlüsseln des PDF-Dokuments verwendeten privaten Schlüssel entspricht.
 
-   Sowohl die `unlockPDFUsingPassword` als auch die `unlockPDFUsingCredential` Methoden geben ein `com.adobe.idp.Document` Objekt zurück, das Sie zur Durchführung eines Vorgangs an eine andere AEM Forms-Java-Methode übergeben.
+   Die Methoden `unlockPDFUsingPassword` und `unlockPDFUsingCredential` geben ein `com.adobe.idp.Document` Objekt zurück, das Sie zur Durchführung eines Vorgangs an eine andere AEM Forms Java-Methode übergeben.
 
 1. Führen Sie einen AEM Forms-Vorgang durch.
 
-   Führen Sie einen AEM Forms-Vorgang für das entsperrte PDF-Dokument durch, um Ihre Geschäftsanforderungen zu erfüllen. Wenn Sie beispielsweise Verwendungsrechte auf ein nicht gesperrtes PDF-Dokument anwenden möchten, übergeben Sie das `com.adobe.idp.Document` Objekt, das von den Methoden `unlockPDFUsingPassword` oder `unlockPDFUsingCredential` zurückgegeben wurde, an die `ReaderExtensionsServiceClient` `applyUsageRights` Objektmethode.
+   Führen Sie einen AEM Forms-Vorgang für das entsperrte PDF-Dokument aus, um Ihre Geschäftsanforderungen zu erfüllen. Wenn Sie beispielsweise Verwendungsrechte auf ein nicht gesperrtes PDF-Dokument anwenden möchten, übergeben Sie das `com.adobe.idp.Document` Objekt, das von den Methoden `unlockPDFUsingPassword` oder `unlockPDFUsingCredential` zurückgegeben wurde, an die `ReaderExtensionsServiceClient` `applyUsageRights` Objektmethode.
 
 **Siehe auch**
 
@@ -889,12 +889,12 @@ Entsperren Sie ein verschlüsseltes PDF-Dokument mithilfe der Verschlüsselungs-
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen Verschlüsselungsdienstclient.
 
    * Erstellen Sie ein `EncryptionServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `EncryptionServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -930,15 +930,15 @@ Entsperren Sie ein verschlüsseltes PDF-Dokument mithilfe der Verschlüsselungs-
 
 1. Führen Sie einen AEM Forms-Vorgang durch.
 
-   Führen Sie einen AEM Forms-Vorgang für das entsperrte PDF-Dokument durch, um Ihre Geschäftsanforderungen zu erfüllen. Wenn Sie beispielsweise Verwendungsrechte auf das nicht gesperrte PDF-Dokument anwenden möchten, übergeben Sie das `BLOB` Objekt, das von den Methoden `unlockPDFUsingPassword` oder `unlockPDFUsingCredential` zurückgegeben wurde, an die `ReaderExtensionsServiceClient` `applyUsageRights` Objektmethode.
+   Führen Sie einen AEM Forms-Vorgang für das entsperrte PDF-Dokument aus, um Ihre Geschäftsanforderungen zu erfüllen. Wenn Sie beispielsweise Verwendungsrechte auf das nicht gesperrte PDF-Dokument anwenden möchten, übergeben Sie das `BLOB` Objekt, das von den Methoden `unlockPDFUsingPassword` oder `unlockPDFUsingCredential` zurückgegeben wurde, an die `ReaderExtensionsServiceClient` `applyUsageRights` Objektmethode.
 
 **Siehe auch**
 
 [Zusammenfassung der Schritte](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Ermitteln des Verschlüsselungstyps {#determining-encryption-type}
 
@@ -1045,12 +1045,12 @@ Bestimmen Sie mithilfe der Verschlüsselungs-API (Webdienst) den Verschlüsselun
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen Dienstclient.
 
    * Erstellen Sie ein `EncryptionServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `EncryptionServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/EncryptionService?WSDL`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `EncryptionServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1077,6 +1077,6 @@ Bestimmen Sie mithilfe der Verschlüsselungs-API (Webdienst) den Verschlüsselun
 
 [Zusammenfassung der Schritte](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
