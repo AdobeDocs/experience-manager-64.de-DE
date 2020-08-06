@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 72%
+ht-degree: 78%
 
 ---
 
@@ -33,11 +33,11 @@ Die folgende Abbildung zeigt die Hauptkomponenten des Asset-Abladeprozesses:
 
 ### Workflow „Asset-Abladung für DAM-Update“{#dam-update-asset-offloading-workflow}
 
-Der Arbeitsablauf für das DAM-Aktualisieren des Asset-Offloads wird auf dem primären (Autor-)Server ausgeführt, auf dem der Benutzer die Assets hochlädt. Dieser Workflow wird von einem regulären Workflowstarter ausgelöst. Statt das hochgeladene Asset zu verarbeiten, erstellt der Abladeworkflow einen neuen Auftrag mit dem Thema *com/adobe/granite/workflow/offloading*. Der Abladeworkflow fügt den Namen des Zielworkflows – in diesem Fall den DAM-Update-Asset-Workflow – und den Pfad des Assets der Nutzlast des Auftrags hinzu. Nach dem Erstellen des Ablade-Auftrags wartet der Ablade-Workflow auf der primären Instanz, bis der Ablade-Auftrag ausgeführt wurde.
+Der Arbeitsablauf für das DAM-Aktualisieren des Asset-Offloads wird auf dem primären (Autor-)Server ausgeführt, auf dem der Benutzer die Assets hochlädt. Dieser Workflow wird von einem regulären Workflowstarter ausgelöst. Statt das hochgeladene Asset zu verarbeiten, erstellt der Abladeworkflow einen neuen Auftrag mit dem Thema *com/adobe/granite/workflow/offloading*. Der Abladeworkflow fügt den Namen des Zielworkflows – in diesem Fall den DAM-Update-Asset-Workflow – und den Pfad des Assets der Nutzlast des Auftrags hinzu. Nach Erstellung des Abladeauftrags wartet der Ablade-Workflow auf der primären Instanz, bis der Abladeauftrag ausgeführt wurde.
 
 ### Job Manager {#job-manager}
 
-Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Verteilungsmechanismus muss an die Themenaktivierung gedacht werden. Aufträge können Instanzen nur dann zugewiesen werden, wenn das Thema des entsprechenden Auftrags aktiviert ist. Disable the topic `com/adobe/granite/workflow/offloading` on the primary, and enable it on the worker to ensure that the job is assigned to the worker.
+Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Verteilungsmechanismus muss an die Themenaktivierung gedacht werden. Aufträge können Instanzen nur dann zugewiesen werden, wenn das Thema des entsprechenden Auftrags aktiviert ist. Deaktivieren Sie das Thema `com/adobe/granite/workflow/offloading` auf der primären INstanz und aktivieren Sie es auf dem Worker, um sicherzustellen, dass der Auftrag dem Worker zugewiesen ist.
 
 ### AEM-Abladung {#aem-offloading}
 
@@ -104,10 +104,10 @@ Adobe empfiehlt eine Deaktivierung der automatischen Agentenverwaltung, weil die
 
 ### Verwenden der Vorwärtsreplikation {#using-forward-replication}
 
-Standardmäßig verwendet das Abladen des Transports die umgekehrte Replizierung, um die vom Benutzer abgeladenen Assets an den primären zurückzunehmen. Die Agenten für die Rückwärtsreplikation bieten keine Unterstützung für die nicht binäre Replikation. Sie sollten das Abladen so konfigurieren, dass die Vorwärtsreplikation verwendet wird, um die entladenen Assets von Worker zu Primär zurückzuschieben.
+Standardmäßig kommt beim Abladetransport die Rückwärtsreplikation zum Einsatz, um die abgeladenen Assets per Pull-Vorgang vom Worker zurück an die primäre Instanz zu übertragen. Die Agenten für die Rückwärtsreplikation bieten keine Unterstützung für die nicht binäre Replikation. Sie sollten die Abladung zur Nutzung der Vorwärtsreplikation konfigurieren, um die abgeladenen Assets per Push-Vorgang zurück vom Worker an die primäre Instanz zu übertragen.
 
 1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named &quot; `offloading_outbox`&quot; and &quot; `offloading_reverse_*`&quot; on primary and worker, where &amp;ast; represents the Sling id of the target instance.
-1. Erstellen Sie auf jedem Mitarbeiter einen neuen Forward-Replizierungsagenten, der auf das Primär verweist. Das Verfahren ist das gleiche wie das Erstellen von Forward-Agenten von Primär zu Arbeitnehmer. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
+1. Erstellen Sie auf jedem Worker einen Agenten für die Vorwärtsreplikation, der auf die primäre Instanz verweist. Das Verfahren ist das gleiche wie das Erstellen von Forward-Agenten von Primär zu Arbeitnehmer. See [Creating Replication Agents For Offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
 1. Öffnen Sie die Konfiguration für `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Change value of the property `default.transport.agent-to-master.prefix` from `offloading_reverse` to `offloading`.
 
@@ -143,7 +143,7 @@ Um den Transport des Workflow-Modells zu deaktivieren, ändern Sie den Worfklow 
 
 ### Optimieren des Abrufintervalls {#optimizing-the-polling-interval}
 
-Workflow-Abladungen werden mithilfe eines externen Arbeitsablaufs auf der primären Ebene implementiert, der den Abschluss des abgeladenen Arbeitsablaufs für den Arbeiter abfragt. Das standardmäßige Abrufintervall für die externen Workflowprozesse beträgt fünf Sekunden. Adobe empfiehlt, dass Sie das Abfrageintervall des Assets-Abladevorgangs auf mindestens 15 Sekunden erhöhen, um den Abladeaufwand für das Primär zu reduzieren.
+Workflow-Abladungen werden mithilfe eines externen Arbeitsablaufs auf der primären Ebene implementiert, der den Abschluss des abgeladenen Arbeitsablaufs für den Arbeiter abfragt. Das standardmäßige Abrufintervall für die externen Workflow-Prozesse beträgt fünf Sekunden. Adobe empfiehlt, dass Sie das Abrufintervall des Assets-Abladeschritts auf mindestens 15 Sekunden erhöhen, um den abladebezogenen Mehraufwand auf der primären Instanz zu reduzieren.
 
 1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
