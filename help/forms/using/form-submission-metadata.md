@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 90%
 
 ---
 
@@ -41,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um ein Element zu den Metadaten hinzuzuf
    `(agebox.value >= 21) ? true : false`
 
    ![Metadatenskript](assets/add-element-metadata.png)
-   **** Abbildung: Auf der Registerkarte &quot;Metadaten&quot;eingegebenes *Skript*
+   **Abbildung:** *Auf der Registerkarte &quot;Metadaten&quot;eingegebenes Skript*
 
 1. Klicken Sie auf **OK**.
 
