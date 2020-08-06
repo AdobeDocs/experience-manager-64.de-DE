@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 translation-type: tm+mt
 source-git-commit: c777ad6314fb0a83f574e82aa11cb677eb52b7d6
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 40%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: c777ad6314fb0a83f574e82aa11cb677eb52b7d6
 
 Erfahren Sie, wie Sie mit Catalog Producer in AEM Assets Produktkataloge mit Ihren digitalen Assets generieren.
 
-Mit dem Catalog Producer von Adobe Experience Manager (AEM) Assets können Sie mit InDesign-Vorlagen, die Sie aus einer InDesign-Anwendung importieren, Kataloge für Ihre Markenprodukte erstellen. Um InDesign-Vorlagen zu importieren, integrieren Sie zunächst AEM Assets in einen InDesign-Server.
+Mit dem Catalog Producer von Adobe Experience Manager (AEM) Assets können Sie mit InDesign-Vorlagen, die Sie aus einer InDesign-Anwendung importieren, Kataloge für Ihre Markenprodukte erstellen. Um InDesign-Vorlagen zu importieren, integrieren Sie zunächst AEM Assets mit einem InDesign-Server.
 
 ## Integration mit einem InDesign-Server {#integrating-with-indesign-server}
 
