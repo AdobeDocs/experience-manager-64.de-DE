@@ -1,8 +1,8 @@
 ---
 title: Ideenfunktion
 seo-title: Ideenfunktion
-description: Hinzufügen und Konfigurieren der Ideenfunktion
-seo-description: Hinzufügen und Konfigurieren der Ideenfunktion
+description: Hinzufügen und Konfigurieren der Funktion "Idee"
+seo-description: Hinzufügen und Konfigurieren der Funktion "Idee"
 uuid: b21507da-10c8-4149-9e2c-a4ff5dec582b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7c0a9120-2edb-431b-b460-68398832d5ec
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 40%
 
 ---
 
@@ -19,16 +22,16 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## Einführung {#introduction}
 
-Die Funktion &quot;Ideation&quot;bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung, in dem Folgendes möglich ist:
+Die Funktion &quot;Zielversion&quot;bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Umgebung &quot;Veröffentlichen&quot;für:
 
 * Erstellen Sie Ideen, die mit der Community geteilt werden sollen
-* Ideen anzeigen und kommentieren
+* Ansicht und Kommentar zu Ideen
 * Folgen Sie einer Idee
 * Abstimmung über eine Idee
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Zielfunktion zu einer AEM-Site
+* Hinzufügen der Suchfunktion zu einer AEM Site
 * Konfigurationseinstellungen für die Komponente &quot;Idee&quot;
 
 ## Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
@@ -51,7 +54,8 @@ Select the placed `Ideation` component to access and select the `Configure` icon
 
 Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments:
 
-* **[!UICONTROL Ideentitel]** Der Anzeigentitel der Idee. Der Standardwert ist `Ideation`.
+* **[!UICONTROL Ideentitel]** Der Anzeigentitel für die Idee. Der Standardwert ist 
+`Ideation`.
 
 * **[!UICONTROL Ideenbeschreibung]** Eine Beschreibung, die als Untertitel für die Idee angezeigt werden soll. Standard ist keine Beschreibung.
 
@@ -67,9 +71,11 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **[!UICONTROL Datei-Uploads]** zulassen: Wenn diese Option aktiviert ist, können Sie zulassen, dass der Idee oder dem Kommentar Dateianlagen hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Max. Dateigröße]** Relevant nur, wenn `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+* **[!UICONTROL Max. Dateigröße]** nur relevant, wenn 
+`Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
-* **[!UICONTROL Zulässige Dateitypen]** Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+* **[!UICONTROL Zugelassene Dateitypen]** relevant nur, wenn 
+`Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Max. Größe]** der Bilddatei anhängen ist nur relevant, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
 
@@ -79,15 +85,15 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **[!UICONTROL Zulassen]** Wenn diese Option aktiviert ist, fügen Sie folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL E-Mail-Abonnements]** zulassen Wenn diese Option aktiviert ist, erlauben Sie Mitgliedern, über neue Beiträge per E-Mail ([Abonnement](subscriptions.md)) benachrichtigt zu werden. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL E-Mail-Abonnements]** zulassen Wenn diese aktiviert sind, erlauben Sie den Mitgliedern, über neue Beiträge per E-Mail ([Abonnement](subscriptions.md)) benachrichtigt zu werden. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Abstimmung]** zulassen Wenn aktiviert, die Abstimmung über die Kommentare einer Idee zulassen. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Abstimmung zulassen]** Wenn aktiviert, lassen Sie die Abstimmung über die Kommentare einer Idee zu. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Anzeigen von Abzeichen]** Wenn aktiviert, zeigen Sie verdiente und zugewiesene [Abzeichen](implementing-scoring.md) mit der Idee eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Wenn Sie]** die Option &quot;Vorgestellte Inhalte zulassen&quot;aktivieren, kann die Idee als [speziellen Inhalt](featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte Benutzermoderation {#user-moderation-tab}
+### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and comments (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
@@ -109,25 +115,30 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and
 
 Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert) verwendet werden können.
 
-* **[!UICONTROL Zulässige Namespaces]** Relevant, wenn `Allow Tagging` sie auf der Registerkarte **Einstellungen** markiert sind. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+* **[!UICONTROL Zulässige Namensraum]** relevant, wenn 
+`Allow Tagging` unter der Registerkarte **Einstellungen** markiert. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
-* **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Der Wert **-** 1 bedeutet keine Begrenzung. Der Standardwert ist 0.
+* **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Ein Wert von 
+**-** 1 bedeutet keine Begrenzung. Der Standardwert ist 0.
 
 ### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
 Geben Sie auf der Registerkarte &quot; **[!UICONTROL Sortiereinstellungen]** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
-* **[!UICONTROL Sortieren nach]** Aktivieren aller zulässigen Sortierungsoptionen: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Sortieren nach]** Aktivieren aller zulässigen Sortierungsoptionen: 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Als Standard]**-Pulldown festlegen, um eine der aktivierten Sortieroptionen als Standard festzulegen. Der Standardwert ist `Newest`.
+* **[!UICONTROL Als Standard]**-Pulldown festlegen, um eine der aktivierten Sortieroptionen als Standard festzulegen. Der Standardwert ist 
+`Newest`.
 
-* **[!UICONTROL Wählen Sie die Zeitoptionen für die Analytics-Sortierung]** Pulldown aus, um eine von `All, Last 24 Hours, Last 7 Days, Last 30 Days`auszuwählen. Der Standardwert ist `All`.
+* **[!UICONTROL Wählen Sie die Zeitoptionen für die Analytics-Sortierung]**, um eine der folgenden Optionen auszuwählen: 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Erstellen einer Idee {#creating-idea}
 
-Wie bei allen Community-Funktionen kann ein Besucher nur Ideen lesen und andere Meinungen anzeigen, wenn er nicht angemeldet ist (durch Kommentare und Abstimmung/Gefällt mir).
+Wie bei allen Community-Funktionen, wenn nicht angemeldet, kann ein Site-Besucher nur Ideen lesen und Ansicht andere Meinungen (durch Kommentare und Abstimmung/Gefällt mir).
 
 Nach der Anmeldung kann ein Mitglied eine neue Idee erstellen.
 
