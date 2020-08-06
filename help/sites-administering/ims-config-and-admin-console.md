@@ -1,8 +1,8 @@
 ---
 title: 'Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services '
 seo-title: 'Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services '
-description: Erfahren Sie, wie Sie die Admin-Konsole in AEM verwenden.
-seo-description: Erfahren Sie, wie Sie die Admin-Konsole in AEM verwenden.
+description: Erfahren Sie, wie Sie die Admin Console in AEM verwenden.
+seo-description: Erfahren Sie, wie Sie die Admin Console in AEM verwenden.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 AEM 6.4.3.0 introduces Admin Console support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.
 
-Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzer und Gruppen können Produktprofilen zugewiesen werden, die mit AEM-Instanzen verknüpft sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
+Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzer und Gruppen können Produktinstanzen zugeordnet werden, die AEM Instanzen zugeordnet sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
 
 ## Wichtige Highlights {#key-highlights}
 
@@ -35,7 +38,7 @@ Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed S
 * Produktprofile in der Admin Console legen fest, auf welche Instanzen ein Benutzer zugreifen kann.
 * Federated Authentication über den SAML 2-konformen Identitäts-Provider des Kunden wird unterstützt.
 * Nur Enterprise IDs oder Federated IDs (für Single Sign-On beim Kunden) werden unterstützt, jedoch keine persönlichen Adobe IDs.
-* User Management (in der Adobe Admin Console) wird weiterhin im Besitz der Kundenadministratoren sein.
+* User Management (in Adobe Admin Console) befindet sich weiterhin im Eigentum der Kundenadministratoren.
 
 ## Architektur {#architecture}
 
@@ -51,9 +54,9 @@ Die Schritte zur Benutzeranmeldung werden unten gezeigt. Der Benutzer wird zu IM
 
 Das Onboarding von Kunden zur Admin Console ist eine Voraussetzung für die Verwendung von Adobe IMS zur AEM-Authentifizierung.
 
-Als ersten Schritt sollten Kunden eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden in der [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) als IMS-Organisationen angezeigt.
+Als ersten Schritt sollten Kunden eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden in der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) als IMS-Organisationen angezeigt.
 
-AEM Managed Services-Kunden sollten bereits über eine Organisation verfügen. Als Teil der IMS-Bereitstellung werden die Kundeninstanzen in der Admin-Konsole zur Verwaltung von Benutzerberechtigungen und zum Zugriff bereitgestellt.
+AEM Managed Services-Kunden sollten bereits über eine Organisation verfügen, und im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in der Admin Console zur Verwaltung von Benutzerberechtigungen und zum Zugriff bereitgestellt.
 
 Der Wechsel zu IMS zur Benutzerauthentifizierung ist eine gemeinsame Maßnahme zwischen AMS und Kunden, wobei jede Seite eigene Workflows abschließen muss.
 
@@ -61,7 +64,7 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
-1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei der Admin-Konsole
+1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei der Admin Console
 1. Die Systemadministrator beansprucht die Domäne, um die Eigentümerschaft der Domäne zu bestätigen (in diesem Beispiel acme.com).
 1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator konfiguriert den Identitätsanbieter (IDP) in der Admin Console, um SSO einzurichten.
@@ -69,9 +72,9 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 
 >[!NOTE]
 >
->Weitere Informationen zu den Grundlagen zur Identitätsverwaltung von Adobe, einschließlich der IDP-Konfiguration, finden Sie [auf dieser Seite](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+>Weitere Informationen zu den Grundlagen zur Identitätsverwaltung von Adobe, einschließlich der IDP-Konfiguration, finden Sie [auf dieser Seite](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html).
 >
->Weitere Informationen zur Verwaltung für Unternehmen und zur Admin Console finden Sie [auf dieser Seite](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>Weitere Informationen zur Verwaltung für Unternehmen und zur Admin Console finden Sie [auf dieser Seite](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
 
 ### Onboarding von Benutzern in der Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -103,11 +106,11 @@ Wenn die Benutzersynchronisierung ausgeführt wird, ruft das Tool eine Liste der
 
 Mit dem Tool kann der Systemadministrator Benutzergruppen im Verzeichnis des Kunden Produktkonfigurationen und Benutzergruppen in der Admin Console zuordnen. Die neue UST-Version ermöglicht außerdem die dynamische Erstellung von Benutzergruppen in der Admin Console.
 
-To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [User Management API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
+Um die Benutzersynchronisierung einzurichten, muss die Organisation Anmeldeinformationen erstellen. Die Schritte hierfür sind dieselben wie bei der [User Management-API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
-Das UST steht über das Adobe Github-Repository an diesem Speicherort zur Verfügung:
+Das zur Benutzersynchronisierung steht über das Adobe Github-Repository an diesem Speicherort zur Verfügung:
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
@@ -191,7 +194,7 @@ Sobald die Authentifizierung abgeschlossen ist, wird der Benutzer zurück zu AEM
 
 Für vorhandene AEM-Instanzen, die eine andere Authentifizierungsmethode verwenden und jetzt zu IMS migriert werden, muss ein Migrationsschritt durchgeführt werden.
 
-Vorhandene Benutzer im AEM-Repository (lokal über LDAP oder SAML bezogen) können migriert werden, um mithilfe des Benutzermigrationsprogramms auf IMS als IDP zu verweisen.
+Vorhandene Benutzer im AEM Repository (lokal über LDAP oder SAML bezogen) können migriert werden, um mithilfe des Benutzermigrationsprogramms auf IMS als IDP zu verweisen.
 
 Dieses Dienstprogramm wird von Ihrem AMS-Team im Rahmen der IMS-Bereitstellung ausgeführt.
 
@@ -203,7 +206,7 @@ Im Beispiel unten werden der lokalen Gruppe *Dam_Users* synchronisierte Gruppen 
 
 Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the Admin Console** above).
 
-&amp;ast;Beachten Sie, dass Benutzergruppen nur synchronisiert werden, wenn sich die Benutzer bei der Instanz anmelden. Für Kunden mit einer großen Anzahl von Benutzern und Gruppen kann ein Dienstprogramm zur Gruppensynchronisierung von AMS ausgeführt werden, um Gruppen für die oben beschriebene Zugriffssteuerung und Berechtigungsverwaltung vorab abzurufen.
+&amp;ast;Beachten Sie, dass Benutzergruppen nur synchronisiert werden, wenn sich die Benutzer bei der Instanz anmelden. Für Kunden mit einer großen Anzahl von Benutzern und Gruppen kann ein Dienstprogramm zur Gruppensynchronisierung von AMS ausgeführt werden, um Gruppen für die oben beschriebene Zugriffskontrolle- und Berechtigungsverwaltung vorab abzurufen.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
