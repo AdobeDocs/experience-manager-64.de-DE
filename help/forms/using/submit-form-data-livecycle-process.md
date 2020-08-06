@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +40,7 @@ Nachdem der AEM Forms konfiguriert ist, ordnen Sie die Daten-XML und Anhänge vo
 1. In der AEM-Web-Konfigurationskonsole klicken Sie auf **Guide LiveCycle Process Locator and Invoker**, um die Konfiguration zu bearbeiten.
 1. Geben Sie die folgenden Parameter an:
 
-   * **Name des data xml-Parameters** (obligatorisch): Geben Sie die XML-Eigenschaftendatei des AEM Forms on JEE-Prozesses an, der die gesendeten Daten verarbeiten muss. Der Standardwert lautet **dataxml**.
+   * **Name des data xml-Parameters** (obligatorisch): Geben Sie die XML-Eigenschaftendatei des AEM Forms on JEE-Prozesses an, der die gesendeten Daten verarbeiten soll. Der Standardwert lautet **dataxml**.
    * **Name des Dateianlagenparameters**(optional): Geben Sie die Liste der Dokumentobjekte an, die der AEM Forms on JEE-Prozess verarbeiten muss. Der Standardwert lautet **fileAttachmentsList**.
 
 1. Überprüfen Sie die Einstellungen und klicken Sie auf **Speichern**.
