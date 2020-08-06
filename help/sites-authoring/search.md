@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -31,13 +34,13 @@ Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
-* Suchen nach einem bestimmten Keyword, Pfad oder Tag. 
+* Suchen Sie nach einem bestimmten Keyword, Pfad oder Tag.
 * Filtern nach ressourcenspezifischen Kriterien, wie Änderungsdatumsangaben, Seitenstatus, Dateigröße usw.
 * Definieren und Verwenden einer [gespeicherten Suche](#saved-searches), die auf den oben genannten Kriterien basiert.
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>Sie können die Suche auch aufrufen, indem Sie den Hotkey `/` (Schrägstrich) verwenden, wenn die Suchschiene sichtbar ist.
 
 ## Suchen und Filtern {#search-and-filter}
 
@@ -47,7 +50,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
-   Standardmäßig sind die Suchergebnisse auf den aktuellen Speicherort beschränkt (d. h. Konsole und Ressourcentyp): 
+   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position begrenzt (d. h. Konsolen- und zugehörigen Ressourcentyp):
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
@@ -70,6 +73,7 @@ So durchsuchen und filtern Sie Ressourcen:
    * Verzeichnisse, die durchsucht werden sollen
    * Tags
    * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status. 
+
    >[!NOTE]
    >
    >Die Suchkriterien können variieren:
@@ -80,7 +84,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
 
-1. Sie können auch zusätzliche Suchbegriffe hinzufügen: 
+1. Sie können auch zusätzliche Suchbegriffe hinzufügen:
 
    ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 
@@ -92,7 +96,7 @@ So durchsuchen und filtern Sie Ressourcen:
 >
 >Bei Auswahl eines Elements auf der Seite mit den Suchergebnissen bleiben die Suchkriterien erhalten, wenn Sie über die Zurück-Schaltfläche des Browsers zur Suchseite zurückkehren.
 
-## Saved Searches {#saved-searches}
+## Gespeicherte Suchvorgänge {#saved-searches}
 
 Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestimmte Suchkonfiguration speichern, um diese später abzurufen und zu verwenden:
 
@@ -100,7 +104,7 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 
    ![screen_shot_2018-03-23at101710-1](assets/screen_shot_2018-03-23at101710-1.png)
 
-1. Weisen Sie einen Namen zu und wählen Sie **Speichern** zur Bestätigung:
+1. Weisen Sie einen Namen zu und wählen Sie zur Bestätigung **Speichern** aus:
 
    ![screen_shot_2018-03-23at101852](assets/screen_shot_2018-03-23at101852.png)
 
