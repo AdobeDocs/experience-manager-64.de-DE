@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 89%
 
 ---
 
@@ -140,7 +143,7 @@ Für den Import von XML oder die Interaktion mit bestehendem XML sind SNS mögli
 
 #### Beispiel {#example-4}
 
-Verwenden Sie:
+Verwenden
 
 ```xml
 /content/myblog/posts/what_i_learned_today
@@ -218,7 +221,7 @@ Wenn Sie also beispielsweise auf einen Knoten vom Typ „Document“ verweisen k
 
 #### Beispiel {#example-7}
 
-Verwenden Sie Folgendes:
+Verwenden:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
