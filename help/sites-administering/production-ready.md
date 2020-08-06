@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 83%
 
 ---
 
@@ -58,10 +61,10 @@ Genauer gesagt werden die folgenden Konfigurationsveränderungen durchgeführt, 
 
 1. **Der Adobe Granite HTML Library Manager** ist mit den folgenden Einstellungen konfiguriert:
 
-   1. **** Minimieren: `enabled`
+   1. **Minimieren:** `enabled`
    1. **Debug:** `disabled`
-   1. **** Gzip: `enabled`
-   1. **** Zeit: `disabled`
+   1. **Gzip:** `enabled`
+   1. **Zeit:** `disabled`
 
 1. Das **Apache Sling Get Servlet** ist so eingestellt, dass es sichere Konfigurationen standardmäßig unterstützt, so zum Beispiel wie folgt:
 
