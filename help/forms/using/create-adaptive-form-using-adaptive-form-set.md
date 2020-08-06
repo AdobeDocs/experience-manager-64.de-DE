@@ -9,13 +9,16 @@ topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 77%
 
 ---
 
 
 # Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare {#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In einem Workflow wie einer Anwendung zum Eröffnen eines Bankkontos müssen Ihre Benutzer mehrere Formulare ausfüllen. Anstatt sie zu bitten, einen Satz von Formularen auszufüllen, können Sie die Formulare zusammenfassen und ein großes Formular (übergeordnetes Formular) erstellen. Wenn Sie ein adaptives Formular zu dem größeren Formular hinzufügen, wird sie in Form eines Bereichs angezeigt hinzugefügt (Formular des untergeordneten Elements). Sie fügen eine Reihe von untergeordneten Formularen hinzu, um ein übergeordnetes Formular zu erstellen. Sie können die Bereiche je nach Benutzereingabe anzeigen oder ausblenden. Schaltflächen im übergeordneten Formular, z. B. „Senden“ und „Zurücksetzen“, setzen die Schaltflächen im untergeordneten Formular außer Kraft. Um ein adaptives Formular im übergeordneten Formular hinzuzufügen, können Sie das adaptive Formular per Drag&amp;Drop aus dem Assets-Browser verschieben (wie adaptive Formularfragmente).
 
@@ -51,7 +54,7 @@ Ihre Kunden füllen zum Beispiel ein Antragsformular aus. Die ersten beiden Feld
 </afData>
 ```
 
-Sie können ein anderes Formular in der Anwendung hinzufügen, sodass Ihre Kunden ihre Geschäftsadresse ausfüllen können. Der Schemastamm des Formulars des untergeordneten Elements ist `officeAddress`. Anwenden `bindref` oder `/application/officeAddress``/officeAddress` . Wenn `bindref` nicht angegeben wird, wird das Formular des untergeordneten Elements als Unterstruktur von `officeAddress` hinzugefügt. So sehen Sie die „XML“ im unten stehenden Formular:
+Sie können ein anderes Formular in der Anwendung hinzufügen, sodass Ihre Kunden ihre Geschäftsadresse ausfüllen können. Der Schemastamm des Formulars des untergeordneten Elements ist `officeAddress`. Anwenden `bindref` oder `/application/officeAddress` `/officeAddress`. Wenn `bindref` nicht angegeben wird, wird das Formular des untergeordneten Elements als Unterstruktur von `officeAddress` hinzugefügt. So sehen Sie die „XML“ im unten stehenden Formular:
 
 ```xml
 <afData>
@@ -140,5 +143,5 @@ Führen Sie die folgenden Schritte durch, um ein adaptives Formular als untergeo
    [![Auswählen des adaptiven Formulars unter „Assets“](assets/asset.png)](assets/asset-1.png)
 
 1. Ziehen Sie das adaptive Formular, das Sie als untergeordnetes Formular hinzufügen möchten.
-   [ Ziehen Sie das adaptive Formular ![per Drag &amp; Drop in Ihre](assets/drag-drop.png)](assets/drag-drop-1.png)SiteDas adaptive Formular, das Sie ablegen, wird als untergeordnetes Formular hinzugefügt.
+   [ ![Ziehen Sie das adaptive Formular per Drag &amp; Drop in Ihre](assets/drag-drop.png)](assets/drag-drop-1.png)SiteDas adaptive Formular, das Sie ablegen, wird als untergeordnetes Formular hinzugefügt.
 
