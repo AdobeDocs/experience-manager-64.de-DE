@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: ccc59dd5-c0cf-415a-b71a-5bc0cf452ede
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 89%
 
 ---
 
