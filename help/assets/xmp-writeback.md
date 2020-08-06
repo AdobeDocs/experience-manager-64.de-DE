@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 46%
+ht-degree: 66%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 46%
 
 Die XMP-Writeback-Funktion in Adobe Experience Manager (AEM) Assets repliziert Änderungen von Asset-Metadaten in den Ausgabeformaten des Assets.
 
-Wenn Sie die Metadaten für ein Asset innerhalb von AEM Assets oder beim Hochladen des Assets ändern, werden Änderungen zunächst innerhalb des Asset-Knotens in CRX-De gespeichert.
+Wenn Sie die Metadaten für ein Asset aus AEM Assets oder beim Hochladen des Assets ändern, werden Änderungen zunächst innerhalb des Asset-Knotens in CRX-De gespeichert.
 
-Die XMP-Funktion &quot;Schriftarterfassung&quot;propagiert die Änderungen der Metadaten an alle oder bestimmte Darstellungen des Assets.
+Mit der Funktion &quot;XMP Writeback&quot;werden die Änderungen an den Metadaten an alle oder bestimmte Darstellungen des Assets übertragen.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -29,9 +29,9 @@ In diesem Fall speichert AEM Assets die Änderungen an der Eigenschaft **[!UICO
 
 AEM Assets propagiert die Metadatenänderungen jedoch nicht automatisch in die Ausgabeformate eines Assets.
 
-Mit der XMP-Funktion &quot;Schriftarterfassung&quot;können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
+Mit der Funktion zum XMP Schriftwechsel können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
 
-## XMP-Schreibback aktivieren {#enabling-xmp-writeback}
+## XMP Schreibback aktivieren {#enabling-xmp-writeback}
 
 Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propagieren, bearbeiten Sie die Konfiguration **Adobe CQ DAM Rendition Maker** in Configuration Manager.
 
@@ -47,7 +47,7 @@ Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabeformate 
 
 Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten in die Ausgabeformat-Miniaturansichten „140.100.png“ und „319.319.png“ übertragen.
 
-1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools > Workflow > Modelle]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools > Workflow > Models]**.
 1. From the [!UICONTROL Models] page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. Öffnen Sie auf der Eigenschaftsseite **[!UICONTROL DAM-Metadaten-Writeback]** den Schritt **[!UICONTROL XMP-Writeback-Vorgang]**.
 1.  Tippen/Klicken Sie im Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** auf die Registerkarte **[!UICONTROL Prozess]**.
@@ -56,7 +56,7 @@ Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten 
    ![Schritteigenschaften](assets/step_properties.png)
 
 1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-PTIFF-Darstellungen werden nur lokal im Hybrid-Modus von Dynamic Media erstellt und gespeichert. Speichern Sie den Workflow.
+PTIFF-Darstellungen werden nur lokal im dynamischen Media Hybrid-Modus erstellt und gespeichert. Speichern Sie den Workflow.
 
 The metadata changes are propagated to the renditions `thumbnail.140.100.png` and `thumbnail.319.319.png` of the asset, and not the others.
 
@@ -68,11 +68,11 @@ The metadata changes are propagated to the renditions `thumbnail.140.100.png` an
 
 ## Filtern von XMP-Metadaten {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] unterstützt das blockierungsliste- und zulassungsliste-Filtern von Eigenschaften/Knoten für XMP-Metadaten, die aus Asset-Binärdateien gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden.
+[!DNL Experience Manager Assets] unterstützt das Filtern von Eigenschaften/Knoten in Blockierungsliste und Zulassungsliste für XMP Metadaten, die aus Asset-Binärdateien gelesen und bei der Erfassung von Assets in JCR gespeichert werden.
 
-Beim Filtern mit einer blockierungsliste können Sie alle XMP-Metadateneigenschaften mit Ausnahme der Eigenschaften importieren, die für den Ausschluss angegeben wurden. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn beim Filtern mit einer blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP-Metadaten importiert werden kann, kann es bei der AEM-Instanz oder dem AEM-Cluster zu Stabilitätsproblemen kommen, z. B. zu verstopften Beobachtungswarteschlangen.
+Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn durch das Filtern mit einer Blockierungsliste eine große Anzahl von Assets mit vielen XMP-Metadaten importiert werden kann, kann es zu Stabilitätsproblemen bei AEM-Instanz oder -Cluster kommen, zum Beispiel zu blockierten Beobachtungswarteschlangen.
 
-Das Filtern von XMP-Metadaten über zulassungsliste behebt dieses Problem, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden alle anderen oder unbekannten XMP-Eigenschaften ignoriert. Zur Abwärtskompatibilität können Sie einige dieser Eigenschaften zum Filter hinzufügen, der eine blockierungsliste verwendet.
+Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem behoben, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Aus Gründen der Abwärtskompatibilität können Sie einige dieser Eigenschaften dem Filter hinzufügen, der eine Blockierungsliste verwendet.
 
 >[!NOTE]
 >
@@ -80,12 +80,12 @@ Das Filtern von XMP-Metadaten über zulassungsliste behebt dieses Problem, indem
 
 1. Öffnen Sie Configuration Manager von `https://[aem_server]:[port]/system/console/configMgr`.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
+1. Um die Filterfunktion mit einer Zulassungsliste anzuwenden, klicken Sie auf **[!UICONTROL Zulassungsliste auf XMP-Eigenschaften anwenden]** und geben Sie die Eigenschaften an, die in das Feld **[!UICONTROL Zulässige XML-Namen für XMP-Filterfunktion]** importiert werden sollen.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. Um blockierte XMP-Eigenschaften nach dem Anwenden der Filterung über zulassungsliste zu filtern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP-Filterung]** an. Speichern Sie die Änderungen.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box. Speichern Sie die Änderungen.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. Das heißt, das Filtern mit einer blockierungsliste ist standardmäßig aktiviert. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
+   >Die Option **[!UICONTROL Blockierungsliste auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern über eine Blockierungsliste ist standardmäßig aktiviert. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
