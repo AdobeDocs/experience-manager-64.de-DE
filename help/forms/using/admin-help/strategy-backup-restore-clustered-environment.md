@@ -64,7 +64,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 
    Beachten Sie, dass der kontinuierliche Sicherungsmodus nach einer Wiederherstellung beendet werden muss.
 
-1. Fahren Sie alle sekundären Knoten des Clusters in Bezug auf AEM herunter. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Schließen Sie alle sekundären Knoten des Clusters in Bezug auf AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie von jedem Knoten Datenbank, GDS und Connectors. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Führen Sie die folgenden Schritte aus, um das AEM-Repository offline zu sichern:
 
@@ -83,7 +83,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 
    Beachten Sie, dass der kontinuierliche Sicherungsmodus nach einer Wiederherstellung beendet werden muss.
 
-1. Fahren Sie alle sekundären Knoten des Clusters in Bezug auf AEM herunter. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Schließen Sie alle sekundären Knoten des Clusters in Bezug auf AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie von jedem Knoten Datenbank, GDS und Connectors. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Führen Sie die folgenden Schritte aus, um das AEM-Repository online zu sichern:
 
@@ -96,13 +96,13 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 
 ### Sichern der Bootstrap-Eigenschaftendatei {#back-up-the-bootstrap-properties-file}
 
-Wenn Sie einen AEM-Cluster erstellen, wird im Anwendungsserver eine Eigenschaftendatei für alle sekundären Knoten erstellt. Es wird empfohlen, die Bootstrap-Eigenschaftendatei zu sichern. Sie finden die Datei im folgenden Verzeichnis auf Ihrem Anwendungsserver:
+Beim Erstellen eines AEM Clusters wird im Anwendungsserver eine Eigenschaftendatei für alle sekundären Knoten erstellt. Es wird empfohlen, die Bootstrap-Eigenschaftendatei zu sichern. Sie finden die Datei im folgenden Verzeichnis auf Ihrem Anwendungsserver:
 
 * JBoss: im BIN-Ordner
 * WebLogic: im Domänenordner
 * WebSphere: im Profilordner
 
-Sie müssen die Datei für das Disaster Recovery-Szenario des sekundären AEM-Knotens sichern und sie an dem angegebenen Speicherort auf dem Anwendungsserver ersetzen, falls sie wiederhergestellt wird.
+Sie müssen die Datei für das Disaster Recovery-Szenario AEM sekundären Knotens sichern und sie an dem angegebenen Speicherort auf dem Anwendungsserver ersetzen, falls sie wiederhergestellt wird.
 
 ## Wiederherstellung in einer Clusterumgebung {#recovery-in-a-clustered-environment}
 
@@ -118,7 +118,7 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
 
    >[!NOTE]
    >
-   >Wenn der beschädigte Knoten ein AEM-primärer Knoten ist, schließen Sie den gesamten Clusterknoten.
+   >Wenn der beschädigte Knoten ein AEM primären Knoten ist, schließen Sie den gesamten Clusterknoten.
 
 1. Erstellen Sie bei Bedarf das physische System von einem Systemabbild neu.
 1. Wenden Sie Patches oder Aktualisierungen für AEM Forms an, die seit der Erstellung des Abbilds angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. AEM Forms muss entsprechend dem Patchlevel zum Zeitpunkt der Systemsicherung wiederhergestellt werden.
@@ -142,7 +142,7 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
 >
 >Beachten Sie folgende Punkte:
 
-* Wenn der fehlerhafte Knoten ein primärer AEM-Knoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (crx-repository\crx.0000, wobei 0000 Ziffern sein können) in den Ordner &quot;crx-repository\ repository&quot;und löschen Sie den sekundären Repository-Ordner.
+* Wenn der fehlerhafte Knoten ein AEM primären Knoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (crx-repository\crx.0000, wobei 0000 Ziffern sein können) in den Ordner &quot;crx-repository\ repository&quot;und löschen Sie den sekundären Repository-Ordner.
 * Bevor Sie einen Clusterknoten neu starten, müssen Sie sicherstellen, dass Sie das Repository /clustered.txt aus dem primären Knoten löschen.
 * Vergewissern Sie sich, dass der primäre Knoten zuerst gestartet wird und nach dem vollständigen Einrichten weitere Knoten Beginn werden.
 
@@ -172,7 +172,7 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
 >
 >Beachten Sie folgende Punkte:
 
-* Wenn der fehlerhafte Knoten ein primärer AEM-Knoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (sieht wie crx-repository\crx.0000 aus, wobei 0000 Ziffern sein können) in den Ordner &quot;crx-repository\ repository&quot;.
+* Wenn der fehlerhafte Knoten ein AEM primären Knoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (es sieht aus wie crx-repository\crx.0000, wobei 0000 Ziffern sein können) in den Ordner &quot;crx-repository\ repository&quot;.
 * Bevor Sie einen Clusterknoten neu starten, müssen Sie sicherstellen, dass Sie das Repository /clustered.txt aus dem primären Knoten löschen.
 * Vergewissern Sie sich, dass der primäre Knoten zuerst gestartet wird und nach dem vollständigen Einrichten weitere Knoten Beginn werden.
 
