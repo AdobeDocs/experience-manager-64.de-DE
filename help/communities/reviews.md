@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 55%
 
 ---
 
@@ -47,7 +50,7 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
 * **[!UICONTROL Zulässige Bewertungen]**
 
-   Eine Liste der Bewertungen, aus denen ein Mitglied wählen kann.
+   Eine Liste von Ratings, aus denen ein Mitglied wählen kann.
 
     Verwenden Sie die Schaltflächen zur Bearbeitung der angezeigten Auswahl (Pfeil nach oben, Pfeil nach unten und Schaltfläche zum Löschen).
 
@@ -143,7 +146,7 @@ Auf der Registerkarte **[!UICONTROL Bewertungszusammenfassung]** können Sie Fol
 
 * `Review Path`
 
-   Geben Sie die platzierte Instanz der `reviews`Komponente ein oder suchen Sie nach dieser, um sie zusammenzufassen, wenn sie der Webseite der [Geometrixx-Engage-Site hinzugefügt wird. Der Pfad lautet beispielsweise](getting-started.md) :
+   Geben Sie die platzierte Instanz der `reviews`Komponente ein oder navigieren Sie zu dieser, um sie zusammenzufassen. Wenn Sie sie der Webseite der [Geometrixx Engage-Site hinzufügen,](getting-started.md) lautet der Pfad:
 
    /content/sites/engagement/de/page/jcr:content/content/primary/reviews
 
@@ -173,7 +176,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
    Navigieren Sie zum resourceType einer erweiterten `voting`Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
 
-   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Stimme veröffentlicht.
+   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Abstimmung veröffentlicht.
 
 * **[!UICONTROL System-Ressourcen-Typ kommentieren]**
 
