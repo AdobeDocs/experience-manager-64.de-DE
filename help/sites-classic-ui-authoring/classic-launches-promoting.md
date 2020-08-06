@@ -12,6 +12,9 @@ discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +41,7 @@ Führen Sie beim Bearbeiten der weiterzuleitenden Launch-Seite die folgenden Sch
 1. Um die Produktionsseiten einem Workflow-Paket hinzuzufügen, wählen Sie zunächst **Zu Workflow-Paket hinzufügen** und wählen Sie dann das Workflow-Paket.
 1. Klicken Sie auf **Bewerben**.
 
-## Verarbeiten von promoteten Seiten mit AEM Workflow {#processing-promoted-pages-using-aem-workflow}
+## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 
 Verwenden Sie Workflow-Modelle, um eine Stapelverarbeitung weitergeleiteter Launch-Seiten durchzuführen:
 
