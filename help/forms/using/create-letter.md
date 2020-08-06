@@ -370,7 +370,7 @@ Die folgenden Werte in der Tabelle
   <tr> 
    <td> </td> 
    <td><strong>Literal</strong></td> 
-   <td><strong>Asset-</strong></td> 
+   <td><strong>Asset</strong></td> 
    <td><strong>Datenwörterbuch</strong></td> 
    <td><strong>Groß-/Kleinschreibung</strong></td> 
    <td><strong>User</strong></td> 
