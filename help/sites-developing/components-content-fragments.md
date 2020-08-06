@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 84%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 ## Komponenten für die Fragmentbearbeitung {#components-for-fragment-authoring}
 
 >[!CAUTION]
 >
->Es wird nicht empfohlen, die im Fragmenteditor verwendeten Komponenten zu erweitern oder zu ändern, da sie noch geändert werden können.
+>Es wird nicht empfohlen, die tatsächlichen Komponenten, die im Fragmenteditor verwendet werden, zu erweitern oder zu ändern, da sie noch geändert werden können.
 
 See the [Content Fragment Management API - Client-Side](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
