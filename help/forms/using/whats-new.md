@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '2017'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +29,7 @@ In diesem Abschnitt erhalten Sie eine kurze Einführung in die neuen Funktionen 
 
 ![Korrespondenzmanagement](assets/correspondence-management.png)
 
-Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke wie Geschäftskorrespondenz, Briefe, Dokumente, Aussagen, Benefiz, Vermögensverwaltungsprospekt, Marketing-Mails, Rechnungen und Begrüßungs-Kits.
+Interactive Communications zentralisiert und verwaltet die Erstellung, Zusammenstellung und den Versand sicherer, personalisierter und interaktiver Schriftstücke wie Geschäftskorrespondenz, Briefe, Dokumente, Aussagen, Benefizscheine, Vermögensverwaltungsprospekt, Marketing-Mails, Rechnungen und Begrüßungs-Kits.
 
 Interaktive Kommunikation verwendet dieselbe zugrunde liegende Technologie, Prozesse und Komponenten wie die von adaptiven Formularen, um Responsive-Mehrkanalkommunikationen ähnlich wie der adaptiver Responsive-Formulare zu erstellen.
 
@@ -49,7 +52,7 @@ For more information, see [Interactive Communications Overview](/help/forms/usin
 
 Der WYSIWYG Drag-and-Drop-Dokumenteneditor ist geschäftsfreundlich. Die intuitive Benutzeroberfläche, Drag-&amp;-Drop-Funktionen, Standardkomponenten, Datenmodelle sowie ein integriertes Repository für Assets erleichtern das schnelle und einfache Erstellen von interaktiver Kommunikation.
 
-Um eine interaktive Kommunikation zu erstellen oder eine vorhandene zu bearbeiten, können Geschäftsbenutzer die folgenden Bausteine verwenden: Kanäle, Inhalt, Eigenschaften, Elemente, Komponenten und Datenquellen.
+Um eine interaktive Kommunikation zu erstellen oder eine vorhandene zu bearbeiten, können Geschäftsbenutzer die folgenden Bausteine verwenden: Kanal, Inhalt, Eigenschaften, Elemente, Komponenten und Datenquellen.
 
 ![drag-n-drop-lf](assets/drag-n-drop-lf.png)
 
@@ -57,7 +60,7 @@ For more information, see [Introduction to authoring Interactive Communication](
 
 ### Automatische Generierung der Webversion aus Druckinhalten in der interaktiven Kommunikation {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
-Autoren können Webdokumentinhalte automatisch aus Druckdokumenten erstellen, in denen sie sowohl Druck- als auch Webdokumente erstellen, in der Vorschau anzeigen und bearbeiten können. Autoren interaktiver Kommunikation können ein Mal erstellen und in allen Kanälen veröffentlichen. Autoren interaktiver Kommunikation können dieselben Dokumentfragmente im Druck- und Webkanal verwenden, um Doppelarbeit zu vermeiden.
+Autoren können Web-Dokument-Inhalte automatisch von Print-Dokumenten zu Autor, Vorschau und Bearbeitung sowohl Print- als auch Web-Dokumente im selben Editor erstellen. Autoren interaktiver Kommunikation können ein Mal erstellen und auf allen Kanälen veröffentlichen. Autoren interaktiver Kommunikation können dieselben Dokument-Fragmente im Druck- und Web-Kanal verwenden, um Doppelarbeit zu vermeiden.
 
 For more information, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
 
@@ -65,13 +68,13 @@ For more information, see [Print channel and web channel](/help/forms/using/web-
 
 Interaktive Kommunikation unterstützt Designs. Mit AEM Forms können Sie Designs erstellen und sie dann auf Ihre interaktive Kommunikation anwenden. Zu einem Design gehört die Formatierung von Details für Komponenten und Bereiche. Sie können ein Design in verschiedenen interaktiven Kommunikationen wiederverwenden, um ihnen ein einheitliches und konsistentes Erscheinungsbild und Branding zu geben.
 
-AEM Forms enthält ein vordefiniertes Design für interaktive Kommunikation. Mithilfe eines Designs können Sie außerdem anpassen, wie eine interaktive Kommunikation auf einem Gerät aussieht.
+AEM Forms enthält ein vordefiniertes Thema für interaktive Kommunikation. Mithilfe eines Designs können Sie außerdem anpassen, wie eine interaktive Kommunikation auf einem Gerät aussieht.
 
 Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
 
 ### Erweiterte Benutzeroberfläche des Agenten {#enhanced-agent-interface}
 
-Die Benutzeroberfläche des Agenten unterstützt nun die Druck- und Webvorschau der interaktiven Kommunikation. Über die Benutzeroberfläche des Agenten können Sie den Druckkanal bearbeiten und eine Vorschau des Webkanals Ihrer interaktiven Multichannel-Kommunikation anzeigen. Felder, Variablen, FDM-Elemente und Dokumentfragmente im Druckkanal können so konfiguriert werden, dass sie vom Agenten in der Benutzeroberfläche des Agenten geändert werden. Die Unterstützung von Formulardatenmodellen ermöglicht die Erstellung von Vorschaubildern mit vorgefüllten Beispieldaten.
+Die Benutzeroberfläche des Agenten unterstützt nun die Druck- und Webvorschau der interaktiven Kommunikation. In derselben Benutzeroberfläche des Agenten können Sie den Web-Kanal für Druck und Vorschau Ihrer interaktiven Kommunikation mit mehreren Kanälen bearbeiten. Felder, Variablen, FDM-Elemente und Dokumentfragmente im Druckkanal können so konfiguriert werden, dass sie vom Agenten in der Benutzeroberfläche des Agenten geändert werden. Die Unterstützung von Formulardatenmodellen ermöglicht die Erstellung von Vorschaubildern mit vorgefüllten Beispieldaten.
 
 For more information, see [Prepare and send Interactive Communication using the Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
 
@@ -127,7 +130,7 @@ For more information, see [Create form data model](/help/forms/using/create-form
 
 ### Berechnete Eigenschaften erstellen {#create-computed-properties}
 
-Formularautoren und -entwickler können berechnete Eigenschaften im Formulardatenmodell erstellen. Sie ermöglichen es Ihnen, einen Wert für die Eigenschaft zu berechnen, indem Sie Regeln oder Logik für Daten erstellen, die in konfigurierten Datenquellen verfügbar sind. Eine Regel ist ein Ausdruck, der ausgewertet wird, wenn die Daten im Formulardatenmodell geladen werden oder sich die Werte der Eigenschaften in der Ausdrucksänderung ändern. Eine berechnete Eigenschaft namens „Raten“ berechnet beispielsweise den monatlich zu zahlenden Betrag für ein Darlehen basierend auf dem in der Datenquelle angegebenen Zinssatz und dem vom Benutzer im Formular angegebenen Betrag und der Höhe des Darlehens.
+Formularautoren und -entwickler können berechnete Eigenschaften im Formulardatenmodell erstellen. Sie ermöglichen es Ihnen, einen Wert für die Eigenschaft zu berechnen, indem Sie Regeln oder Logik für Daten erstellen, die in konfigurierten Datenquellen verfügbar sind. Eine Regel ist ein Ausdruck, der ausgewertet wird, wenn die Daten im Formulardatenmodell geladen werden oder sich die Werte der Eigenschaften im Ausdruck ändern. Eine berechnete Eigenschaft namens „Raten“ berechnet beispielsweise den monatlich zu zahlenden Betrag für ein Darlehen basierend auf dem in der Datenquelle angegebenen Zinssatz und dem vom Benutzer im Formular angegebenen Betrag und der Höhe des Darlehens.
 
 Eine berechnete Eigenschaft befindet sich lokal in einem Formulardatenmodell und ist nicht in einer Datenquelle vorhanden. Sie können berechnete Eigenschaften in adaptiven Formularen und interaktiver Kommunikationen verwenden.
 
@@ -151,7 +154,7 @@ In dieser Version ist die Konfiguration der Cloud-Dienste für Datenquellen in d
 
 ## Adaptive Formulare {#adaptive-forms}
 
-![simpli-of-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
+![simpli-of-authoring-forms-and-Dokumente_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
 
 ### Leistung adaptiver Formulare mit verbesserter Lazy Loading-Funktion verbessern {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading}
 
@@ -169,7 +172,7 @@ Es gibt verschiedene Verbesserungen für die Lazy Loading-Funktion in dieser Ver
 
 Mit formularzentrierten AEM-Workflows können Sie Workflows für verschiedene Aufgaben auf dem OSGi-Stapel schnell erstellen und bereitstellen. Sie müssen die auf dem JEE-Stapel verfügbaren Prozessverwaltungsfunktionen nicht mehr installieren, wodurch die Bereitstellung vereinfacht und die Kosten für den Anwendungsserver und die Infrastruktur eingespart werden. Weitere Informationen finden Sie unter [Formularzentrierte Workflows unter OSGi](/help/forms/using/aem-forms-workflow.md).
 
-Im Folgenden werden die Verbesserungen in AEM-Arbeitsabläufen mit Forms-Centric beschrieben: ・
+Im Folgenden werden die Verbesserungen in Forms-Centric AEM Workflows beschrieben: ・
 
 * Der Workflow Modell-Editor ist in der Touch-Benutzeroberfläche verfügbar. Dadurch können Sie den Zeitaufwand für das Erstellen von formularzentrierten AEM-Workflows reduzieren.
 * Workflow-Schritt zum Senden von E-Mails. Beispielsweise können Sie den Schritt „E-Mail“ verwenden, um nach Abschluss eines Workflows ein Datensatzdokument zu senden.
@@ -188,9 +191,9 @@ Die folgenden Verbesserungen wurden in der AEM Forms-App vorgenommen:
 
 ## Document Security {#document-security}
 
-![aem-forms-document-security-](assets/aem-forms-document-security-.png)
+![aem-forms-Dokument-security-aem](assets/aem-forms-document-security-.png)
 
-Mithilfe von Document Security können Sie Informationen sicher verteilen, die Sie in einem unterstützten Format gespeichert haben. Document Security stellt sicher, dass Ihre Dokumente nur von autorisierten Benutzern genutzt werden können. Die folgenden wichtigen Änderungen betreffen Document Security:
+Mithilfe von Document Security können Sie Informationen sicher verteilen, die Sie in einem unterstützten Format gespeichert haben. Document Security stellt sicher, dass Ihre Dokumente nur von autorisierten Benutzern genutzt werden können. Im Folgenden werden die wichtigsten Veränderungen bei der Sicherheit von Dokumenten beschrieben:
 
 * Document Security stellt eine [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) bereit, um ein Dokument lokal zu schützen, ohne das Dokument an den AEM Forms-Server zu senden. Nur die Sicherheitsberechtigungen und Details der Datenschutzrichtlinie werden über das Netzwerk an den AEM Forms-Server gesendet. AEM 6.4 Forms hat die Portable Protection Library (PPL) im OSGi-Bundle-Format eingeführt. Jetzt können Sie die PPL-Bibliothek direkt auf einem AEM Forms-Server installieren und die Funktionen von AEM und PPL gemeinsam nutzen.
 * Document Security C++ SDK und C++ PPL-Bibliothek können mit Microsoft Visual Studio 2013 erstellt werden. Die zuvor unterstützte Version war Microsoft Visual Studio 2010.
