@@ -26,7 +26,7 @@ Die AEM Forms-App ermöglicht die Synchronisierung adaptiver Formulare sowie von
 
 Der Quellcode der AEM Forms-App steht Kunden über die Softwareverteilung zur Verfügung. Das Quellcode-Paket in der Softwareverteilung ist verfügbar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-Die AEM Forms-App wird auf iOS-, Android- und Windows-Geräten unterstützt. Sie können die AEM Forms-App für Android von Google Play, iOS aus dem App Store und Windows aus dem Windows Store installieren.
+Die AEM Forms-App wird auf iOS-, Android- und Windows-Geräten unterstützt. Sie können die AEM Forms-App für Android über Google Play, iOS über den App Store und Windows über den Windows Store installieren.
 
     [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
@@ -38,7 +38,7 @@ Informationen zum Installieren, Anpassen und Verteilen der App auf iOS-, Android
 
 ## Voraussetzungen {#prerequisites}
 
-Die AEM Forms-App erfordert einen AEM Forms-Server. Benutzer können Formulare wiedergeben, die Sie in den AEM Forms erstellen\
+Die AEM Forms-App erfordert einen AEM Forms-Server. Benutzer können Formulare wiedergeben, die Sie in AEM Forms erstellen\
 -Server, füllen Sie sie aus, speichern Sie sie als Entwürfe und senden Sie sie ab. Die App stellt eine Verbindung zum Server her und ruft aktivierte Formulare ab. Die AEM Forms-App wird mit dem Server synchronisiert und sobald Formulare in der App geladen werden, können Benutzer im Offlinemodus arbeiten. Wenn die App offline ist, werden die Daten auf dem Gerät gespeichert, und die Daten werden mit dem Server synchronisiert, wenn die App wieder online ist.
 
 ### AEM Forms-App mit Servern, die den AEM Forms-Arbeitsablauf verwenden {#aem-forms-app-with-servers-using-aem-forms-workflow}
@@ -117,7 +117,7 @@ Sie können Formularen auf Ihrem Gerät die folgenden Anhänge hinzufügen
 
 * **Notizen**: Mit der Funktion &quot;Notizen&quot;können Sie ein Freihand-Scribble oder eine Textanmerkung in Ihr Formular einfügen. Weitere Informationen finden Sie unter [ Notizen hinzufügen](/help/forms/using/add-attachments.md#adding-a-note).
 
-* **Bild**: Die AEM Forms-App enthält eine Funktion, die die Kamerafunktion oder die Galerie Ihres Mobilgeräts verwendet. Mit dem Fotoanhang können Sie dem zugehörigen Formular ein Foto hinzufügen. Weitere Informationenfinden Sie unter [Hinzufügen eines Fotos](/help/forms/using/add-attachments.md#adding-a-photograph).
+* **Abbildung**: Die AEM Forms-App enthält eine Funktion, die die Kamerafunktion oder die Galerie Ihres Mobilgeräts verwendet. Mit dem Fotoanhang können Sie dem zugehörigen Formular ein Foto hinzufügen. Weitere Informationenfinden Sie unter [Hinzufügen eines Fotos](/help/forms/using/add-attachments.md#adding-a-photograph).
 
 ### Automatisch speichern {#autosave}
 
@@ -151,7 +151,7 @@ Mit Formularsätzen können mehrere zu einem Dienst oder Prozess gehörige Formu
 
 ## Funktionsweise der AEM Forms-App {#how-aem-forms-app-works}
 
-Die App &quot;AEM Forms&quot;bietet eine mobile Lösung für Außendienstmitarbeiter, mit denen sie an ihnen zugewiesenen Formularen arbeiten können. Die Anwendung speichert alle Daten vom Server zwischen und bietet einen effizienten Arbeitsablauf, da die gesamte Arbeit lokal gespeichert wird. Diese Daten werden über regelmäßige Synchronisierungsupdates an den Server gesendet.
+Die AEM Forms-App bietet eine mobile Lösung für Außendienstmitarbeiter, um mit ihnen zugewiesenen Formularen zu arbeiten. Die Anwendung speichert alle Daten vom Server zwischen und bietet einen effizienten Arbeitsablauf, da die gesamte Arbeit lokal gespeichert wird. Diese Daten werden über regelmäßige Synchronisierungsupdates an den Server gesendet.
 
 Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-Modell effizient verwendet wird, um in den Modellen gespeicherte Daten über Ansichten darzustellen. Alle nativen Vorgänge werden durch PhoneGap-Plug-Ins ausgeführt.
 
@@ -161,7 +161,7 @@ Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-
 >
 >Gilt nur, wenn Sie AEM Forms-App-Quellcode zum Erstellen der App verwenden.
 
-Die AEM Forms-App lässt sich ganz einfach an die Bedürfnisse Ihres Unternehmens anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
+Die AEM Forms-App lässt sich ganz einfach an die Bedürfnisse Ihrer Organisation anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
 
 ### Anpassen {#customize}
 
@@ -169,9 +169,9 @@ Sie können Ihre App anpassen:
 
 **Branding**: Ändern Sie das App-Symbol, den App-Namen, Startbilder und Seiten in der AEM Forms-App. Außerdem können Sie Text ändern, um die App für eine bestimmte Region zu lokalisieren. Weitere Informationen zum Branding der AEM Forms-App finden Sie unter [Branding-Anpassung](/help/forms/using/branding-customization.md).
 
-**Thema**: Ändern Sie Stile wie Farben, Schriftarten und Abstände in der Benutzeroberfläche der AEM Forms App. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/theme-customization.md).
+**Thema**: Ändern Sie Stile wie Farben, Schriftarten und Abstände in der Benutzeroberfläche der AEM Forms-App. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/theme-customization.md).
 
-**Geste**: Ändern Sie Gesten wie das Wischen nach rechts und links in der Benutzeroberfläche der AEM Forms App. Weitere Informationen finden Sie unter [Gestenanpassung](/help/forms/using/gesture-customization.md).
+**Geste**: Ändern Sie Gesten wie das Wischen nach rechts und links in der AEM Forms App-Benutzeroberfläche. Weitere Informationen finden Sie unter [Gestenanpassung](/help/forms/using/gesture-customization.md).
 
 Weitere Informationen zum Einrichten eines AEM Forms-App-Projekts zur Anpassung finden Sie unter:
 
@@ -186,10 +186,10 @@ The source code for the AEM Forms app can be extracted from the `adobe-lc-mobile
 
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
-1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
-1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen ein Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]** .
 1. In the **[!UICONTROL Filters]** section:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   1. Wählen Sie **[!UICONTROL Forms]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
    2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
 1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
