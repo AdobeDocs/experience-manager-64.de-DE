@@ -1,12 +1,12 @@
 ---
 title: PDF-Rasterfunktion verwenden
-description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Raster-Bibliothek.
+description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -29,14 +29,16 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    >
    >Die PDF Rasterizer-Bibliothek ist nur für Windows und Linux verfügbar.
 
-1. Greifen Sie von `https://[AEM_server]:[port]/workflow`aus auf die AEM Assets Workflow-Konsole zu.
+1. Rufen Sie die AEM Assets Workflow-Konsole von `https://[AEM_server]:[port]/workflow`auf.
 1. Open the **[!UICONTROL DAM Update Asset]** workflow page.
 1. Konfigurieren Sie Folgendes, um die standardmäßige Miniaturansicht- und Webwiedergabegenerierung für PDF- und AI-Dateien zu überspringen:
 
    * Öffnen Sie den Schritt **[!UICONTROL Miniaturansicht-Prozess]** und fügen Sie `application/pdf` bzw. `application/postscript` im Feld &quot; **[!UICONTROL Mime-Typen]** überspringen&quot;hinzu.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
+
    ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
 
 1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type *application/pdf*, *application/postscript,* or *application/illustrator* from the **[!UICONTROL MIME Types]** list.
@@ -49,6 +51,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * Mime Types: *application/pdf* or *application/postscript*
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
+
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    **-d**: Flag zum Ermöglichen einer reibungslosen Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
@@ -80,6 +83,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * Mime-Typen: `application/pdf` oder `application/postscript`
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
+
    Die Befehlszeilenargumente für den PDFRasterizer-Befehl können Folgendes enthalten:
 
    **-d**: Flag zum Ermöglichen einer reibungslosen Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
@@ -104,4 +108,4 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Speichern Sie den Workflow.
-1. Laden Sie eine PDF- oder AI-Datei in AEM Assets hoch. PDF Rasterizer erstellt die Miniaturansichten und Webausgaben für die Datei.
+1. Laden Sie eine PDF- oder AI-Datei auf AEM Assets hoch. PDF Rasterizer erstellt die Miniaturansichten und Webausgaben für die Datei.
