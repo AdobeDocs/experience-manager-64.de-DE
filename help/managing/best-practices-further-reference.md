@@ -390,6 +390,7 @@ Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) be
 >* Offers an overview related to the *first* implemention of an AEM project.
 >* Ist als abstrakte Übersicht gedacht; siehe [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
+
 >
 
 
@@ -528,7 +529,7 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM selbst bietet eine Reihe von Mechanismen, mit denen Sie Ihre Anwendung überwachen, testen, untersuchen und debuggen können. einschließlich:</p>
+   <td><p>AEM bietet eine Reihe von Mechanismen, mit denen Sie Ihre Anwendung überwachen, testen, untersuchen und debuggen können. einschließlich:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Entwicklermodus</a></li>
      <li>Die <a href="/help/sites-developing/hobbes.md">Testkonsole</a></li>
@@ -559,11 +560,11 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">Entwickeln von AEM-Projekten mit Eclipse</a> .</p> </td>
+   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">Entwickeln AEM Projekte mit Eclipse</a> .</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Eine professionelle (und damit lizenzpflichtige) IDE mit einer umfassenden Palette von Features. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">Entwickeln von AEM-Projekten mit IntelliJ IDEA</a> .</p> </td>
+   <td><p>Eine professionelle (und damit lizenzpflichtige) IDE mit einer umfassenden Palette von Features. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">Entwickeln AEM Projekte mit IntelliJ IDEA</a> .</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
