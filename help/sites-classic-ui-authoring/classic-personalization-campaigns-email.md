@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe plant keine weitere Verbesserung der offenen/abgeschnittenen E-Mails, die vom AEM SMTP-Dienst gesendet werden.\
->Es wird empfohlen, Adobe Campaign und seine AEM-Integration [zu nutzen](/help/sites-administering/campaign.md).
+>Adobe plant nicht, die offenen/abgeschnittenen E-Mails, die vom AEM SMTP-Dienst gesendet werden, weiter zu verbessern.\
+>Es wird empfohlen, Adobe Campaign und seine AEM [zu nutzen](/help/sites-administering/campaign.md).
 
 E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue für die Newsletter spezifische Inhalte hinzufügen.
 
@@ -95,7 +98,7 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 
    * **Standard-Empfängerliste**
 
-      Standardliste, die den Newsletter erhalten soll.
+      Standardmäßige Liste, die den Newsletter erhalten soll.
    Sie können in größerem Umfang im Dialogfeld **Eigenschaften...** aktualisiert werden.
 
 1. Klicken Sie zum Speichern auf **OK**.
@@ -193,6 +196,7 @@ So passen Sie die Newsletter-Einstellungen an:
    1. Ändern Sie bei Bedarf den **Betreff** der E-Mail.
    1. Wählen Sie aus der Dropdown-Liste eine **Standard-Empfängerliste** aus.
    1. Klicken Sie auf **OK**.
+
    Wenn Sie den Newsletter testen oder versenden, erhalten die Empfänger E-Mails mit der angegebenen E-Mail-Adresse und dem festgelegten Betreff.
 
 ## Newsletter-Testlauf {#flight-testing-newsletters}
