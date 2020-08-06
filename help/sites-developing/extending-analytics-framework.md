@@ -1,6 +1,6 @@
 ---
-title: Anpassen des Adobe Analytics-Frameworks
-seo-title: Anpassen des Adobe Analytics-Frameworks
+title: Anpassen des Adobe Analytics-Rahmens
+seo-title: Anpassen des Adobe Analytics-Rahmens
 description: 'null'
 seo-description: 'null'
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '1620'
+ht-degree: 56%
 
 ---
 
 
-# Anpassen des Adobe Analytics-Frameworks{#customizing-the-adobe-analytics-framework}
+# Anpassen des Adobe Analytics-Rahmens{#customizing-the-adobe-analytics-framework}
 
-Das Adobe Analytics-Framework bestimmt die Informationen, die mit Adobe Analytics verfolgt werden. Um das Standardframework anzupassen, verwenden Sie JavaScript, um benutzerdefinierte Verfolgung hinzuzufügen, Adobe Analytics-Plugins zu integrieren und allgemeine Einstellungen in dem für die Verfolgung verwendeten Framework zu ändern.
+Das Adobe Analytics-Framework legt die Informationen fest, die mit Adobe Analytics verfolgt werden. Um das Standardframework anzupassen, verwenden Sie JavaScript, um benutzerdefinierte Verfolgung hinzuzufügen, Adobe Analytics-Plugins zu integrieren und allgemeine Einstellungen in dem für die Verfolgung verwendeten Framework zu ändern.
 
 ## Das generierte JavaScript für Frameworks {#about-the-generated-javascript-for-frameworks}
 
@@ -61,7 +64,7 @@ Wenn Sie mit angepasstem JavaScript-Code das Framework anpassen, ändern Sie den
 
 ## Adobe Analytics-Eigenschaften konfigurieren {#configuring-adobe-analytics-properties}
 
-Adobe Analytics verfügt über eine Reihe vordefinierter Variablen, die in einem Framework** konfiguriert werden können. **The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
+Es gibt eine Reihe vordefinierter Variablen in Adobe Analytics, die auf einem Framework** konfiguriert werden können. **The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
 
 ![aa-22](assets/aa-22.png)
 
@@ -91,7 +94,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 Mit dem folgenden Verfahren können Sie Variablen zur Liste hinzufügen:
 
-1. Erweitern Sie auf Ihrer Adobe Analytics-Framework-Seite den Bereich **Allgemeine Analytics-Einstellungen** .
+1. Erweitern Sie auf Ihrer Adobe Analytics-Rahmenseite den Bereich **Allgemeine Analytics-Einstellungen** .
 1. Klicken Sie unter der Liste der Variablen auf „Element hinzufügen“, um eine neue Variable zur Liste hinzuzufügen.
 1. Geben Sie in der linken Zelle einen Namenfür die Variable ein, zum Beispiel `prop10`.
 
@@ -109,7 +112,7 @@ Mit dem folgenden Verfahren können Sie Variablen zur Liste hinzufügen:
 >
 >Some of the variables in this list are **mandatory** in order for Adobe Analytics calls to function correctly, (e.g. **currencyCode**, **charSet**)
 >
->Selbst wenn sie also selbst aus dem Framework entfernt werden, werden sie beim Aufruf von Adobe Analytics weiterhin mit einem Standardwert versehen.
+>Selbst wenn sie also selbst aus dem Framework entfernt werden, werden sie bei der Ausführung des Adobe Analytics-Aufrufs weiterhin mit einem Standardwert versehen.
 
 ### Hinzufügen von benutzerdefiniertem JavaScript zu einem Adobe Analytics Framework {#adding-custom-javascript-to-an-adobe-analytics-framework}
 
@@ -125,7 +128,7 @@ The code in the [analytics.sitecatalyst.js](/help/sites-developing/extending-ana
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-Im folgenden Verfahren wird veranschaulicht, wie Adobe Analytics-Verfolgung mithilfe des JavaScript-Felds angepasst werden kann. If your javascript needs to use Adobe Analytics plugins, [integrate them](/help/sites-administering/adobeanalytics.md) into AEM.
+Im folgenden Verfahren wird veranschaulicht, wie die Adobe Analytics-Verfolgung mithilfe des JavaScript-Felds angepasst werden kann. If your javascript needs to use Adobe Analytics plugins, [integrate them](/help/sites-administering/adobeanalytics.md) into AEM.
 
 1. Fügen Sie den folgenden JavaScript-Code in das Feld ein, damit `s.doPlugins` ausgeführt wird:
 
@@ -139,7 +142,7 @@ Im folgenden Verfahren wird veranschaulicht, wie Adobe Analytics-Verfolgung mith
 
    >[!CAUTION]
    >
-   >Dieser Code ist erforderlich, wenn Sie Variablen in einem Adobe Analytics-Aufruf senden möchten, die auf eine Weise angepasst wurden, die nicht über die einfache Drag&amp;Drop-Oberfläche ODER über Inline-JavaScript in der Adobe Analytics-Ansicht durchgeführt werden kann.
+   >Dieser Code ist erforderlich, wenn Sie Variablen in einem Adobe Analytics-Aufruf senden möchten, die auf eine Weise angepasst wurden, die nicht über die einfache Drag&amp;Drop-Schnittstelle ODER über Inline-JavaScript in Adobe Analytics-Ansicht durchgeführt werden kann.
    >
    >Wenn die benutzerdefinierten Variablen außerhalb der Funktion s_doPlugins liegen, werden sie als *undefined *im Adobe Analytics-Aufruf gesendet
 
@@ -165,7 +168,7 @@ Ein Adobe Analytics-Framework verfügt über die folgenden Konfigurationen:
 
 * Wenn die Webseite, die das Framework verwendet, besucht wird (oder die Seite im Bearbeitungsmodus neu geladen oder in der Vorschau angezeigt wird), werden die Aufrufe an Adobe Analytics ausgeführt.
 
-Folgende Werte werden beispielsweise in Adobe Analytics generiert:
+Beispielsweise werden in Adobe Analytics die folgenden Werte generiert:
 
 ![aa-20](assets/aa-20.png)
 
@@ -184,7 +187,7 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-Code in der Datei &quot;analytics.sitecatalyst.js&quot;(die den Inhalt der Datei &quot;s_code.js&quot;von Adobe Analytics enthält) enthält den folgenden Code:
+Code in der Datei &quot;analytics.sitecatalyst.js&quot;(die den Inhalt der Datei &quot;Adobe Analytics s_code.js&quot;enthält) enthält den folgenden Code:
 
 if (s.usePlugins) s.doPlugins(s)
 
@@ -202,7 +205,7 @@ Therefore, your javascript should set `s.usePlugins` to `true` so that any code 
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `components`, den Sie gerade erstellt haben, und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Legen Sie die folgenden Eigenschaftswerte fest:
 
-   * Etikett: `sitecatalyst`
+   * Bezeichnung: `sitecatalyst`
    * Titel: `sitecatalyst`
    * Super Type: `/libs/cq/analytics/components/sitecatalyst`
    * Gruppe: `hidden`
@@ -229,7 +232,7 @@ Therefore, your javascript should set `s.usePlugins` to `true` so that any code 
    s.doPlugins=s_doPlugins;
    ```
 
-   Der JavaScript-Code, den das Skript /apps/cq/analytics/components/sitecatalyst/config.js.jsp generiert, wird jetzt für alle Seiten, die ein Adobe Analytics-Framework verwenden, in die Datei &quot;analytics.sitecatalyst.js&quot;eingefügt.
+   Der JavaScript-Code, den das Skript &quot;/apps/cq/analytics/components/sitecatalyst/config.js.jsp&quot;generiert, wird nun für alle Seiten, die ein Adobe Analytics-Framework verwenden, in die Datei &quot;analytics.sitecatalyst.js&quot;eingefügt.
 
 1. Fügen Sie den JavaScript-Code hinzu, den Sie in der Funktion `s_doPlugins` ausführen möchten, und klicken Sie auf „Alle speichern“.
 
@@ -258,7 +261,7 @@ AEM installiert die folgenden Adobe Analytics-Plugins, sodass sie standardmäßi
 * getPreviousValue()
 * split()
 
-Der Client-Bibliotheksordner /libs/cq/analytics/clientlibs/sitecatalyst/plugins enthält diese Plugins in der Kategorie sitecatalyst.plugins.
+Der Clientbibliotheksordner /libs/cq/analytics/clientlibs/sitecatalyst/plugins enthält diese Plugins in der Kategorie sitecatalyst.plugins.
 
 >[!NOTE]
 >
@@ -280,6 +283,7 @@ Mit dem folgenden Verfahren können Sie den Client-Bibliotheksordner für Ihre P
    * Typ: String
    * Wert: sitecatalyst.plugins
    * Multi: ausgewählt
+
    Klicken Sie im Eigenschaftsfenster auf „OK“, um den Eigenschaftswert zu bestätigen.
 
 1. Klicken Sie mit der rechten Maustaste auf den Client-Bibliotheksordner, den Sie gerade erstellt haben, und klicken Sie auf „Erstellen“ > „Datei erstellen“. Geben Sie als Dateinamen „js.txt“ ein und klicken Sie dann auf „OK“.
