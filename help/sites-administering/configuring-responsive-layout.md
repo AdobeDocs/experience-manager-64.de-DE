@@ -12,6 +12,9 @@ discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
 source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +45,8 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
          Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
-* **[Layoutmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Sobald der Container des Layouts auf der Seite positioniert ist, können Sie den **Layoutmodus**verwenden, um den Inhalt im interaktiven Raster zu positionieren.
+* **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Sobald der Layout-Container auf der Seite positioniert ist, können Sie die
+**Layout** -Modus zum Positionieren von Inhalten im interaktiven Raster.
 
 * [**Emulator **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich mit dem Emulator ansehen wie der Inhalt für bestimmte Geräte gerendert wird.
 
@@ -114,6 +118,7 @@ Wenn Sie ein vorhandenes Projekt (mit vorhandenen Inhalten) migrieren, müssen S
 >* Haltepunkte zu den Vorlagen hinzufügen
 >* dieselben Haltepunkte zu vorhandenen Seiten hinzufügen\
    >  Da die Vererbung in Betrieb ist, können Sie diese auf die Stamm-Seite Ihres Inhalts beschränken.
+
 >
 
 
@@ -294,7 +299,7 @@ Sie können die Anzahl an Spalten konfigurieren, die für jede spezifische Insta
 
    Sie können die Anzahl an Spalten konfigurieren, die für jede spezifische Instanz des Layout-Containers verfügbar sind.
 
-   Öffnen Sie dazu im [Design-Modus](/help/sites-authoring/default-components-designmode.md) das Design-Dialogfeld für den betroffenen Container. Hier können Sie festlegen, wie viele Spalten für die Positionierung und Größeneinstellung vorhanden sein sollen. Der Standardwert lautet 12.
+   Öffnen Sie dazu im [Design-Modus](/help/sites-authoring/default-components-designmode.md) das Design-Dialogfeld für den betroffenen Container. Hier können Sie festlegen, wie viele Spalten für die Positionierung und Größeneinstellung vorhanden sein sollen. Standard: 12.
 
 1. **XML**
 
