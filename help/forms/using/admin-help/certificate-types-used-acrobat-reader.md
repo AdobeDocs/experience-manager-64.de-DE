@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 89%
 
 ---
 
@@ -32,15 +35,15 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 Die Zeichenfolge enthält folgende Elemente:
 
-**** Zertifikatstyp: Beschreibt die AEM Forms-Module, die vom Zertifikat aktiviert werden, und die Aktivierungsstufe, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
+**Zertifikatstyp:** Beschreibt die AEM Formularmodule, die vom Zertifikat aktiviert werden, und die Aktivierung, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
 
-**** Bereitstellungstyp: Gibt die vorgesehene Verwendung des Zertifikats an, z. B. &quot;Produktion&quot;. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
+**Bereitstellungstyp:** Gibt die vorgesehene Verwendung des Zertifikats an, z. B. &quot;Produktion&quot;. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
 
-**** Version der Verwendungsrechte: Beschreibt die Version des Algorithmus für Verwendungsrechte, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version gibt nicht die Version von Acrobat oder Acrobat Reader DC Extensions an.
+**Version der Verwendungsrechte:** Beschreibt die Version des Algorithmus für Verwendungsrechte, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version steht nicht für die Version von Acrobat oder Acrobat Reader DC Extensions.
 
-**** Profilcode: Der Profilcode ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften, z. B. P8. Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
+**Profil-Code:** Der Profil-Code ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften, z. B. P8. Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
 
-**** Seriennummer: Jedem von Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen, z. B. &quot;0002054&quot;. Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
+**Seriennummer:** Jedem von der Adobe ausgestellten Zertifikat wird eine laufende Nummer zugewiesen, z. B. 0002054. Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
 
 ## Zertifikatprofile {#certificate-profiles}
 
