@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -27,11 +30,11 @@ Im Moment, da die Aktion durchgeführt wird, um eine neue Community-Gruppe zu er
 
 >[!NOTE]
 >
->Die Konsolen zum Erstellen von [Community-Sites](sites-console.md), [Community-Site-Vorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur für die Verwendung in der Autorenumgebung vorgesehen.
+>Die Konsolen für die Erstellung von [Community-Sites](sites-console.md), [Community-Site-Vorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur zur Verwendung in der Autorendatei bestimmt.
 
 ## Gruppenvorlagen-Konsole {#group-templates-console}
 
-In der Autorenumgebung, um die Gruppenvorlagen-Konsole zu erreichen
+In der Umgebung &quot;Autor&quot;zur Gruppenvorlagen-Konsole
 
 * Aus globaler Navigation: **[!UICONTROL Werkzeuge > Communities > Gruppenvorlagen]**
 
@@ -57,7 +60,7 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 
 * **[!UICONTROL Deaktiviert/Aktiviert]** Ein Umschalter, der steuert, ob die Vorlage referenzierbar ist
 
-### Miniatur {#thumbnail}
+### Miniaturansicht       {#thumbnail}
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -71,7 +74,7 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 >
 >Die Funktion für verschachtelte Gruppen ist ab Communities [FP1](communities.md#latestfeaturepack)verfügbar.
 >
->Es ist weiterhin nicht zulässig, eine Funktion &quot;Gruppen&quot;als erste oder einzige Funktion in einer Vorlage hinzuzufügen.
+>Es ist immer noch nicht zulässig, eine Funktion &quot;Gruppen&quot;als erste oder einzige Funktion in einer Vorlage hinzuzufügen.
 
 ![grptemplateeditor](assets/grptemplateeditor.png)
 
@@ -89,6 +92,6 @@ Nachdem alle gewünschten Funktionen in den Vorlagenaufbaubereich gezogen und ko
 
 Bei der Anzeige von Community-Gruppen in der Haupt- [Gruppenvorlagenkonsole](#group-templates-console)ist es möglich, eine vorhandene Gruppenvorlage zur Bearbeitung auszuwählen.
 
-Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits aus der Vorlage erstellt wurden. Stattdessen können Sie die Struktur einer Community-Site[direkt ](sites-console.md#modify-structure)bearbeiten.
+Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits aus der Vorlage erstellt wurden. Stattdessen können Sie die Struktur einer Community-Site [direkt](sites-console.md#modify-structure)bearbeiten.
 
 Dieser Vorgang stellt dieselben Bereiche bereit wie das [Erstellen einer Gruppenvorlage](#create-goup-template).
