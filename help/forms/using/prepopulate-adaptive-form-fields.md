@@ -228,7 +228,7 @@ Die XML-Tags für die Benutzerdaten, die für verschiedene Felder gesendet werde
 
 ## Konfigurieren des Vorbefüllungs-Diensts mithilfe von Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
-Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vorfülldienstes in der AEM Web Console-Konfiguration an. Führen Sie die folgenden Schritte aus, um den Vorbefüllungs-Dienst zu konfigurieren:
+Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vorfülldienstes in der AEM Web-Konsolenkonfiguration an. Führen Sie die folgenden Schritte aus, um den Vorbefüllungs-Dienst zu konfigurieren:
 
 >[!NOTE]
 >
@@ -247,7 +247,7 @@ Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vor
 
    >[!NOTE]
    >
-   >Standardmäßig ist das Vorausfüllen durch CRX-Dateien für alle Typen adaptiver Formulare (XSD, XDP, JSON, FDM und kein Formularmodell) zulässig. Vorbefüllen ist nur mit JSON- und XML-Dateien zulässig.
+   >Standardmäßig ist das Vorausfüllen durch CRX-Dateien für alle Typen des adaptiven Forms (XSD, XDP, JSON, FDM und kein Formularmodell) zulässig. Vorbefüllen ist nur mit JSON- und XML-Dateien zulässig.
 
 1. Der Vorbefüllungs-Dienst ist jetzt für Ihr Formular konfiguriert.
 
