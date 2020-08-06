@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
 source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 39%
 
 ---
 
@@ -39,7 +42,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
    1. Laden Sie die kompilierte Binärdatei als `ffmpeg.zip` herunter.
    1. Entpacken Sie den Inhalt in einen Ordner.
-   1. Legen Sie die Systemumgebungsvariable `PATH` auf `<*your-ffmpeg-locatio*n>\bin`
+   1. Die Variable &quot;Umgebung&quot;des Systems `PATH` auf `<*your-ffmpeg-locatio*n>\bin`
    1. Starten Sie AEM neu.
 
 * **Unter Mac OS X:**
@@ -51,7 +54,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
       `sudo port install ffmpeg`
 
-      `FFmpeg` muss in sein, `PATH` damit AEM sie über die Befehlszeile abrufen kann.
+      `FFmpeg` muss in sein, `PATH` damit AEM es über die Befehlszeile abrufen kann.
 
 * **Vorkompilierte Version für OS X 10.6:**
 
@@ -61,7 +64,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
       `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`
 
-**Konfigurieren von AEM**:
+**So konfigurieren Sie AEM**:
 
 1. Open [!UICONTROL CRXDE Lite] in your web browser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 1. Select the `/libs/settings/dam/video/format_aac/jcr:content` node and ensure that the node properties are as follows:
@@ -88,5 +91,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->OOTB-Workflow-Modelle werden beim Aktualisieren der AEM-Instanz nicht beibehalten. Adobe empfiehlt, dass Sie OOTB-Workflow-Modelle kopieren, bevor Sie sie bearbeiten. Kopieren Sie z. B. das OOTB DAM Update Asset-Modell, bevor Sie im DAM Update Asset-Modell den Schritt FFmpeg Transcoding bearbeiten, um Videoprofilnamen auszuwählen, die vor der Aktualisierung vorhanden waren. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>OOTB-Workflow-Modelle werden nicht beibehalten, wenn Sie Ihre AEM aktualisieren. Adobe empfiehlt, OOTB-Workflow-Modelle zu kopieren, bevor Sie sie bearbeiten. Kopieren Sie beispielsweise das OOTB DAM Update Asset-Modell, bevor Sie im DAM Update Asset-Modell den FFmpeg Transcoding-Schritt bearbeiten, um Video-Profil-Namen auszuwählen, die vor der Aktualisierung vorhanden waren. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
 
