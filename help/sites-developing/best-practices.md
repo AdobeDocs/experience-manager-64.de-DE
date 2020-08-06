@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 80%
 
 ---
 
@@ -79,7 +82,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) vereinfacht die Erstellung und Verwaltung von lokalen Gemeinschaften.
+[AEM Communities](/help/communities/overview.md) vereinfacht die Gründung und Verwaltung von Kommunen vor Ort.
 
 Einige Best Practices für Communities sind hier beschrieben:
 
@@ -99,6 +102,6 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0
 
 >[!NOTE]
 >
->Die folgenden mehrteiligen Lernprogramme könnten für die Best Practice zum Einrichten eines neuen AEM-Projekts interessant sein, in denen die Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung ausführlich beschrieben werden:\
+>Für die Best Practice zum Einrichten eines neuen AEM-Projekts, in dem die Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung ausführlich beschrieben werden, könnte es von Interesse sein, ein mehrteiliges Lernprogramm zu folgen:\
 >[Erste Schritte mit AEM Sites - WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
