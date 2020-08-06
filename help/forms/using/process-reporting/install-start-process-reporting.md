@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Getting Started with Process Reporting {#getting-started-with-process-reporting}
 
-Process Berichte gibt AEM Forms-Benutzern die Möglichkeit, Informationen über AEM Forms-Prozesse, die derzeit in der AEM Forms-Implementierung definiert sind, Abfrage. Process Berichte greift jedoch nicht direkt aus dem AEM Forms-Repository auf Daten zu. Die Daten werden zunächst (*durch die ProcessDataPublisher- und ProcessDataStorage-* Dienste) planmäßig im Process Berichte-Repository veröffentlicht. Die Berichte und Abfragen im Process Berichte werden dann aus den Process Berichte-Daten generiert, die im Repository veröffentlicht werden. Process Berichte wird als Teil des Forms Workflow-Moduls installiert.
+Process Berichte gibt AEM Forms-Benutzern die Möglichkeit, Informationen über AEM Forms-Prozesse Abfrage, die derzeit in der AEM Forms-Implementierung definiert sind. Process Berichte greift jedoch nicht direkt aus dem AEM Forms-Repository auf Daten zu. Die Daten werden zunächst (*durch die ProcessDataPublisher- und ProcessDataStorage-* Dienste) planmäßig im Process Berichte-Repository veröffentlicht. Die Berichte und Abfragen im Process Berichte werden dann aus den Process Berichte-Daten generiert, die im Repository veröffentlicht werden. Process Berichte wird als Teil des Forms Workflow-Moduls installiert.
 
 In diesem Artikel werden die Schritte beschrieben, mit denen die Veröffentlichung von AEM Forms-Daten im Process Berichte-Repository aktiviert werden kann. Danach können Sie Process Berichte verwenden, um Berichte und Abfragen auszuführen. In diesem Artikel werden auch die Optionen behandelt, die zum Konfigurieren der Process Berichte-Dienste verfügbar sind.
 
@@ -35,7 +35,7 @@ Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter
 
 >[!NOTE]
 >
->Die Tipps und Tricks des Dienstprogramms &quot;Bereinigen&quot;finden Sie im Artikel Adobe Developer Connection zum [Bereinigen von Prozessen und Aufträgen](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Die Tipps und Tricks des Dienstprogramms &quot;Bereinigen&quot;finden Sie im Adobe Developer Connection-Artikel zum [Bereinigen von Prozessen und Aufträgen](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
 ## Process Berichte Services konfigurieren {#configuring-process-reporting-services}
 
@@ -43,7 +43,7 @@ Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter
 
 Die Process Berichte-Dienste veröffentlichen Daten aus der AEM Forms-Datenbank planmäßig im Process Berichte-Repository.
 
-Dieser Vorgang kann ressourcenintensiv sein und die Leistung der AEM Forms-Server beeinträchtigen. Es wird empfohlen, diesen Zeitraum außerhalb der Zeitfenster des AEM Forms-Servers zu planen.
+Dieser Vorgang kann ressourcenintensiv sein und die Leistung der AEM Forms-Server beeinträchtigen. Es wird empfohlen, diese Zeitnischen außerhalb des AEM Forms-Servers zu planen.
 
 Standardmäßig ist die Veröffentlichung von Daten planmäßig für jeden Tag um 2:00 Uhr geplant.
 
@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungsplan zu ändern
 
 1. Hinzufügen des JVM-Arguments `-Dreporting.publisher.cron = <expression>.`
 
-   Beispiel: Der folgende Cron-Ausdruck verursacht, dass Process Berichte AEM Forms-Daten alle 5 Stunden im Process Berichte-Repository veröffentlicht:
+   Beispiel: Der folgende Cron-Ausdruck verursacht, dass Process Berichte alle 5 Stunden AEM Forms-Daten im Process Berichte-Repository veröffentlicht:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungsplan zu ändern
 
    In the Generic JVM arguments box, add the argument `-Dreporting.publisher.cron = <expression>.`
 
-   **Beispiel**: Der folgende Cron-Ausdruck verursacht, dass Process Berichte AEM Forms-Daten alle 5 Stunden im Process Berichte-Repository veröffentlicht:
+   **Beispiel**: Der folgende Cron-Ausdruck verursacht, dass Process Berichte alle 5 Stunden AEM Forms-Daten im Process Berichte-Repository veröffentlicht:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungsplan zu ändern
 
 1. Fügen Sie im Feld Arguments das JVM-Argument hinzu `-Dreporting.publisher.cron = <expression>`.
 
-   **Beispiel**: Der folgende Cron-Ausdruck verursacht, dass Process Berichte AEM Forms-Daten alle 5 Stunden im Process Berichte-Repository veröffentlicht:
+   **Beispiel**: Der folgende Cron-Ausdruck verursacht, dass Process Berichte alle 5 Stunden AEM Forms-Daten im Process Berichte-Repository veröffentlicht:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
