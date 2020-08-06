@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 62%
 
 ---
 
 
 # Hinzufügen benutzerdefinierter Aktionen zur Ansicht „Asset-Auflistung“{#add-custom-action-to-the-asset-listing-view}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Assets verwalten“ hinzuzufügen.
 
@@ -60,11 +63,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **[!UICONTROL Pfad:]** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** Ort: /apps/
+      **[!UICONTROL Ort:]** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **[!UICONTROL Knotentypen abgleichen:]** Ausgewählt
 
       ![Überlagerungsknoten](assets/2_createnodedownloadflatpdf.png)
 
@@ -78,12 +81,13 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **[!UICONTROL OK]**:
 
-      **** Name: downloadFlatPDF (oder der Name, den Sie dieser Eigenschaft geben möchten)
+      **[!UICONTROL Name:]** downloadFlatPDF (oder der Name, den Sie dieser Eigenschaft geben möchten)
 
       **[!UICONTROL Typ:]** nt:unstructured
 
    1. Klicken Sie auf den von Ihnen erstellten Knoten (hier: downloadFlatPDF). CRX zeigt die Eigenschaften des Knotens an.
    1. Fügen Sie dem Knoten (hier: downloadFlatPDF) die folgenden Eigenschaften hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**:
+
    <table> 
     <tbody> 
     <tr> 
@@ -99,7 +103,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
     <tr> 
     <td>foundation-collection-action</td> 
     <td>Zeichenfolge</td> 
-    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> kann ein oder mehrere der folgenden Einträge sein (durch Kommas getrennt): BRIEF,TEXT,LISTE,BEDINGUNG,DATADIKTIONÄR</p> </td> 
+    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> kann ein oder mehrere der folgenden Einträge sein (durch Kommas getrennt): BRIEF,TEXT,LISTE,BEDINGUNG,DATADIKTIONSBUCH</p> </td> 
     </tr> 
     <tr> 
     <td>icon</td> 
@@ -127,7 +131,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
     <td>Einfache PDF herunterladen (oder eine beliebige andere Beschriftung)<br /> <br /> Der Befehl, der in der Benutzeroberfläche von „Asset-Auflistung“ angezeigt wird</td> 
     </tr> 
     <tr> 
-    <td>Titels</td> 
+    <td>title</td> 
     <td>Zeichenfolge</td> 
     <td>Einfache PDF des ausgewählten Briefs herunterladen (oder eine beliebige andere Beschriftung/alternativer Text)<br /> <br /> Der Titel ist der alternative Text, den Correspondence Management anzeigt, wenn ein Benutzer den Mauszeiger auf den benutzerdefinierten Befehl bewegt.</td> 
     </tr> 
@@ -142,11 +146,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **[!UICONTROL Pfad:]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Ort: /apps/
+      **[!UICONTROL Ort:]** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **[!UICONTROL Knotentypen abgleichen:]** Ausgewählt
 
    1. Klicken Sie auf **[!UICONTROL OK]**. Die Ordnerstruktur wird im Apps-Ordner erstellt. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -232,11 +236,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL Pfad:]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Ort: /apps/
+      **[!UICONTROL Ort:]** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **[!UICONTROL Knotentypen abgleichen:]** Ausgewählt
 
    1. Klicken Sie auf **[!UICONTROL OK]**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
@@ -248,7 +252,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **[!UICONTROL OK]**:
 
-      **** Name: letterpdfdownloader (oder der Name, den Sie dieser Eigenschaft geben möchten - muss eindeutig sein. Wenn Sie hier einen anderen Namen verwenden, geben Sie dasselbe auch in der ACTION_URL-Variablen der Datei &quot;formaction.js&quot;an.)
+      **[!UICONTROL Name:]** letterpdfdownloader (oder der Name, den Sie dieser Eigenschaft geben möchten - muss eindeutig sein. Wenn Sie hier einen anderen Namen verwenden, geben Sie dasselbe auch in der ACTION_URL-Variablen der Datei &quot;formaction.js&quot;an.)
 
       **[!UICONTROL Typ:]** nt:unstructured
 
