@@ -34,7 +34,7 @@ Mit bearbeitbaren Vorlagen werden die Aspekte, die eine Seite bilden, innerhalb 
 
 >[!NOTE]
 >
->Für die Verwendung bearbeitbarer Vorlagen mit dem [SPA-Editor](/help/sites-developing/spa-overview.md)ist AEM 6.4.5.0 oder höher erforderlich.
+>AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA-Editor](/help/sites-developing/spa-overview.md)zu verwenden.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 >[!NOTE]
 >
 >Folgende Übung könnte auch für die Einrichtung einer bearbeitbaren Seitenvorlage in einem neuen Projekt von Interesse sein:\
->[Erste Schritte mit AEM-Sites Teil 2 - Erstellen einer Basisseite und Vorlage](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Erste Schritte mit AEM Sites Teil 2 - Erstellen einer Basisseite und Vorlage](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Erstellen neuer Vorlagen {#creating-a-new-template}
 
@@ -185,7 +185,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
 ### Verwenden von CRXDE Lite {#using-crxde-lite}
 
-1. Ein neuer Ordner (unter /conf) kann entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
+1. Ein neuer Ordner (unter /conf) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
    Nur die folgende Struktur darf verwendet werden:
 
@@ -252,7 +252,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
 <table> 
  <tbody> 
   <tr> 
-   <th>Pfad     </th> 
+   <th>Pfad         </th> 
    <th>Rolle/Gruppe</th> 
    <th>Berechtigungen<br /> </th> 
    <th>Beschreibung</th> 
@@ -312,7 +312,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table> 
  <tbody> 
   <tr> 
-   <th>Pfad     </th> 
+   <th>Pfad         </th> 
    <th>Rolle/Gruppe</th> 
    <th>Berechtigungen<br /> </th> 
    <th>Beschreibung</th> 
@@ -390,7 +390,7 @@ Die vordefinierten Vorlagentypen werden unter dem folgenden Pfad gespeichert:
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen, This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
 Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad vergleichbaren Stelle gespeichert werden:
 
@@ -536,7 +536,7 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 
 Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlagen-Editor erstellt und ausgewählt werden.
 
-* Die Eigenschaft `cq:policy`auf dem `root` Knoten
+* The property `cq:policy`, on the `root` node
 
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 
