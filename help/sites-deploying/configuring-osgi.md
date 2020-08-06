@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 72%
 
 ---
 
 
 # Konfigurieren von OSGi{#configuring-osgi}
 
-[OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). ](https://www.osgi.org/) OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
 
-OSGi *bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einer Anwendung zusammengefügt und bereitgestellt werden*.
+OSGi *bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einer Anwendung zusammengefügt und bereitgestellt werden*&quot;.
 
 Dies ermöglicht die einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://www.osgi.org/Specifications/HomePage)) ist in einem der Bundles enthalten.
 
@@ -189,8 +192,8 @@ Um eine neue Konfiguration zum Repository hinzuzufügen, benötigen Sie folgende
 1. Whether a specific [run mode](/help/sites-deploying/configure-runmodes.md) is required. Erstellen Sie den Ordner:
 
    * `config` - für alle Ausführungsmodi
-   * `config.author` - für die Autorenumgebung
-   * `config.publish` - für die Veröffentlichungsumgebung
+   * `config.author` - für die Umgebung des Verfassers
+   * `config.publish` - Umgebung zur Veröffentlichung
    * `config.<run-mode>` - gegebenenfalls
 
 1. Whether a **Configuration** or **Factory Configuration** is necessary.
@@ -199,7 +202,7 @@ Um eine neue Konfiguration zum Repository hinzuzufügen, benötigen Sie folgende
    Referenzieren Sie das einzelne Parameterfeld in der Web-Konsole. Der Name wird für jeden Parameter in Klammern angezeigt.
 
    Erstellen Sie beispielsweise eine Eigenschaft
-   `versionmanager.createVersionOnActivation` , um Version bei Aktivierung **erstellen** zu konfigurieren.
+   `versionmanager.createVersionOnActivation` , um Version **auf Aktivierung** erstellen zu konfigurieren.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -227,7 +230,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Typ: `sling:OsgiConfig`
    * Name: die beständige Identität (PID);
 
-      zum Beispiel Verwendung von AEM WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      zum Beispiel AEM Verwendung von WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
    >When making a Factory Configuration append `-<identifier>` to the name.
@@ -243,6 +246,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Name: der Parametername, wie er in der Web-Konsole gezeigt wird. Der Name erscheint in Klammern am Ende der Feldbeschreibung. Zum `Create Version on Activation` Einsatz `versionmanager.createVersionOnActivation`
    * Typ: entsprechend 
    * Wert: nach Bedarf
+
    Sie müssen nur Eigenschaften für die Parameter erstellen, die Sie konfigurieren möchten. Die anderen übernehmen die Standardwerte von AEM.
 
 1. Speichern Sie alle Änderungen.
@@ -251,7 +255,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
 
 >[!CAUTION]
 >
->You must not change anything in the `/libs` path.
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
 
 >[!CAUTION]
 >
@@ -308,7 +312,7 @@ In der folgenden Liste finden Sie eine kleine Auswahl an verfügbaren Konfigurat
 
    `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publish - AEM WCM-Filter:
+* Veröffentlichen - AEM WCM-Filter:
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
@@ -326,7 +330,7 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
 
 ### Persistenz von Konfigurationen {#configuration-persistence}
 
-* Wenn Sie eine Konfiguration über die Web-Konsole ändern, wird sie (normalerweise) in das Repository unter folgender Adresse geschrieben:
+* Wenn Sie eine Konfiguration über die Web-Konsole ändern, wird sie (in der Regel) in das Repository unter folgender Adresse geschrieben:
 
    `/apps/{somewhere}`
 
