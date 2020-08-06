@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 63%
 
 ---
 
@@ -59,10 +62,10 @@ When developing a website, it is highly recommended to store images and CSS file
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
 ```
 
-Das vorstehende Beispiel bietet mehrere Vorteile:
+Im obigen Angebot werden mehrere Leistungen angeboten:
 
 * Je nach Designpfad verschiedener Websites erwecken Komponenten einen anderen Eindruck.
 * Re-design of the website can be simply done by pointing the design path to a different node at the root of the site from `design/v1` to `design/v2.`
 
-* `/etc/designs` und `/content` sind die einzigen externen URLs, die der Browser sieht, um Sie davor zu schützen, dass ein externer Benutzer neugierig darauf wird, was unter Ihrer `/apps` Struktur ist. Die obigen URL-Vorteile helfen auch Ihrem Systemadministrator, bessere Sicherheitsmaßnahmen einzurichten, weil die Angriffsfläche der Assets auf wenige spezifische Orte beschränkt wird.
+* `/etc/designs` und `/content` sind die einzigen externen URLs, die der Browser sieht, um Sie davor zu schützen, dass ein externer Benutzer neugierig darauf wird, was sich unter Ihrer `/apps` Struktur befindet. Die obigen URL-Vorteile helfen auch Ihrem Systemadministrator, bessere Sicherheitsmaßnahmen einzurichten, weil die Angriffsfläche der Assets auf wenige spezifische Orte beschränkt wird.
 
