@@ -1,8 +1,8 @@
 ---
-title: Allgemeine Sicherheitsaspekte für AEM Forms on JEE
-seo-title: Allgemeine Sicherheitsaspekte für AEM Forms on JEE
-description: Hier erfahren Sie, wie Sie sich auf das Härten Ihrer AEM Forms on JEE-Umgebung vorbereiten.
-seo-description: Hier erfahren Sie, wie Sie sich auf das Härten Ihrer AEM Forms on JEE-Umgebung vorbereiten.
+title: Allgemeine Sicherheitsaspekte für AEM Forms auf JEE
+seo-title: Allgemeine Sicherheitsaspekte für AEM Forms auf JEE
+description: Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
+seo-description: Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 58%
 
 ---
 
 
-# Allgemeine Sicherheitsaspekte für AEM Forms on JEE {#general-security-considerations-for-aem-forms-on-jee}
+# Allgemeine Sicherheitsaspekte für AEM Forms auf JEE {#general-security-considerations-for-aem-forms-on-jee}
 
-Hier erfahren Sie, wie Sie sich auf das Härten Ihrer AEM Forms on JEE-Umgebung vorbereiten.
+Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
 
 In diesem Artikel finden Sie einleitende Informationen, die Ihnen die Vorbereitung auf das Härten Ihrer AEM Forms-Umgebung erleichtern sollen. Hier finden Sie Informationen zu AEM Forms on JEE, zum Betriebssystem, Anwendungsserver und Datenbanksicherheit, die Sie als Grundvoraussetzung benötigen. Überprüfen Sie diese Informationen, bevor Sie Ihre Umgebung weiterhin sperren.
 
@@ -235,7 +238,7 @@ Die von -Anwendungen gespeicherten E-Mail-Berechtigungen werden nicht verschlüs
 
 ### Sensibler Inhalt für Rights Management in der Datenbank {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um vertrauliche Informationen zum Dokumentschlüssel und anderes kryptographisches Material zu speichern, das für Richtliniendokumente verwendet wird. Wenn Sie die Datenbank gegen unberechtigten Zugriff schützen, erhöht dies den Schutz dieser sensiblen Informationen.
+AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um sensible Dokument-Schlüsselinformationen und anderes kryptographisches Material zu speichern, das für Policy-Dokumente verwendet wird. Wenn Sie die Datenbank gegen unberechtigten Zugriff schützen, erhöht dies den Schutz dieser sensiblen Informationen.
 
 ### Kennwort in unverschlüsseltem Textformular {#password-in-clear-text-format-in-adobe-ds-xml}
 
