@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
+>Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
 
 [Varianten](content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des Master-Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
 
@@ -36,7 +36,7 @@ Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp;
 * [Einfügen von visuellen Assets in Ihr Fragment](#inserting-assets-into-your-fragment) (Bilder)
 * Auswählen zwischen [Rich-Text](#rich-text), [Nur Text](#plain-text) und [Markdown](#markdown) für die Bearbeitung
 
-* [Hochladen von Inhalt](#uploading-content)
+* [Inhalt hochladen](#uploading-content)
 
 * [Anzeigen von Schlüsselstatistiken](#viewing-key-statistics) (über mehrzeiligen Text)
 * [Zusammenfassen von Text](#summarizing-text)
@@ -83,7 +83,7 @@ Der Vollbild-Editor bietet Folgendes:
 * Zugriff auf verschiedene [Aktionen](#actions)
 * Je nach [Format](#formats) weitere Formatierungsoptionen ([Rich-Text](#rich-text))
 
-### Aktionen  {#actions}
+### Aktionen    {#actions}
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
@@ -137,7 +137,7 @@ Nur Text ermöglicht die schnelle Eingabe von Inhalt ohne Formatierungs- oder Ma
 
 >[!CAUTION]
 >
->Wenn Sie **Klartext** auswählen, gehen möglicherweise alle Formatierungen, Markierungen und/oder Assets verloren, die Sie in **Rich Text** oder **Markdown** eingefügt haben.
+>Wenn Sie **Nur Text** auswählen, gehen möglicherweise alle Formatierungen, Markierungen und/oder Assets verloren, die Sie in **Rich-Text** oder **Markdown** eingefügt haben.
 
 ### Markdown {#markdown}
 
@@ -193,7 +193,7 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >
 >Englisch ist standardmäßig verfügbar.
 >
->Weitere Sprachen sind als Sprachmodell-Pakete aus der Softwareverteilung verfügbar:
+>Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügbar:
 >
 >* [Französisch (fr) aus Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 >* [Deutsch (de) aus Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
@@ -252,7 +252,7 @@ Anmerkungen:
 
    ![cfm-6420-25](assets/cfm-6420-25.png)
 
-* Kann in der Timeline für das ausgewählte [Fragment](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) angezeigt und gelöscht werden.
+* Kann in der [Timeline](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) für das ausgewählte Fragment angezeigt und gelöscht werden.
 
 ### Einfügen von Assets in das Fragment {#inserting-assets-into-your-fragment}
 
@@ -292,9 +292,9 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
    >* **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
-## Verwalten von Varianten   {#managing-variations}
+## Verwalten von Varianten     {#managing-variations}
 
-### Erstellen von Varianten {#creating-a-variation}
+### Variante erstellen {#creating-a-variation}
 
 Varianten ermöglichen die Abänderung von **Master**-Inhalt für einen bestimmten Zweck (sofern notwendig).
 
@@ -308,9 +308,9 @@ So erstellen Sie eine neue Variante:
 
    >[!NOTE]
    >
-   >Wenn eine neue Variante erstellt wird, wird immer **Master** kopiert, nicht die gerade geöffnete Variante.
+   >Wenn eine neue Variante erstellt wird, wird immer der **Master** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante   {#editing-a-variation}
+### Bearbeiten einer Variante     {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -349,7 +349,7 @@ So löschen Sie eine vorhandene Variante:
 >
 >**Master** kann nicht gelöscht werden.
 
-### Synchronisieren mit Master {#synchronizing-with-master}
+### Mit Master synchronisieren {#synchronizing-with-master}
 
 **Master** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die Masterkopie des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn Master aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
 
@@ -357,7 +357,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 >[!CAUTION]
 >
->Die Synchronisierung ist nur verfügbar, um Änderungen *vom **Master**in die Variation* zu kopieren.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *vom **Master**in die Variante* zu kopieren.
 >
 >Es wird nur das aktuelle Element der Variante synchronisiert.
 >
@@ -371,9 +371,9 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
    * über den Dropdown-Selektor **Aktionen** – **Aktuelles Element mit Master synchronisieren**
    * über die Symbolleiste des Vollbild-Editors – **Mit Master synchronisieren**
 
-3. Master und die Variante werden nebeneinander angezeigt:
+3. Master und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt      wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
