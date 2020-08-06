@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 1115697c-cb7d-441a-876f-3c01761568c0
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
@@ -28,7 +31,7 @@ Werfen wir einen Blick auf die in diesem Artikel verwendeten Schlüsselbegriffe 
 
 **jQuery-Plugin** Stellt einen Standardmechanismus bereit, der auf dem jQuery-Widget-Framework basiert, um ein alternatives Erscheinungsbild zu implementieren.
 
-**ClientLib** Ein clientseitiges Bibliothekssystem in der clientseitigen AEM-Verarbeitung, das durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie unter Verwenden clientseitiger Bibliotheken.
+**ClientLib** Ein clientseitiges Bibliothekssystem in AEM clientseitigen Verarbeitung, das durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie unter Verwenden clientseitiger Bibliotheken.
 
 **Archetype** A Maven Project Templating Toolkit definiert als ein Originalmuster oder -modell für Maven Projekte. Weitere Informationen finden Sie unter Einführung in Archetypen.
 
@@ -123,17 +126,17 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
   </tr> 
   <tr> 
    <td><code>render</code></td> 
-   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>und <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td> 
+   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td> 
   </tr> 
   <tr> 
    <td><code>getEventMap</code></td> 
    <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Dieses Beispiel zeigt, dass es sich <code>blur</code> um ein HTML-Ereignis handelt und dass es sich um das entsprechende XFA-Ereignis <code>XFA_EXIT_EVENT</code> handelt. </td> 
+      }</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> es sich um ein HTML-Ereignis handelt und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td> 
   </tr> 
   <tr> 
    <td><code>getOptionsMap</code></td> 
-   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget zur Verfügung gestellt werden, und die Werte sind Funktionen, die aufgerufen werden, wenn eine Änderung der Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer <code>value</code> und <code>displayValue</code>).</td> 
+   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget zur Verfügung gestellt werden, und die Werte sind Funktionen, die aufgerufen werden, wenn eine Änderung in der Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer <code>value</code> und <code>displayValue</code>).</td> 
   </tr> 
   <tr> 
    <td><code>getCommitValue</code></td> 
