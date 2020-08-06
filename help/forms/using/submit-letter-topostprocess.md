@@ -27,9 +27,9 @@ Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und int
 
 Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Arbeitsabläufen ausgeführt werden:
 
-1. **Arbeitsablauf für Formulare:** Dies sind die AEM Forms on JEE-Workflows zur Prozessverwaltung. Instructions for setting up [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Dies sind die AEM Forms on JEE-Workflows zur Prozessverwaltung. Instructions for setting up [Forms Workflow](#formsworkflow).
 
-1. **AEM-Workflow:** AEM Workflows kann auch als Nachbearbeitung für gesendete Briefe verwendet werden. Instructions for setting up [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
+1. **AEM Workflow:** AEM Workflows können auch als Nachbearbeitungsprozesse für gesendete Briefe verwendet werden. Instructions for setting up [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Formular-Workflow {#formsworkflow}
 
@@ -47,7 +47,7 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 
    Gehen Sie zur Deserialization Firewall Configuration und fügen Sie unter Whitelisted classes of package prefixes sun.util.calendar hinzu.
 
-1. Jetzt sind Ihre Server zugeordnet und die Nachbearbeitungsprozesse in AEM Forms on JEE sind in der AEM-Benutzeroberfläche beim Erstellen von Briefen verfügbar.
+1. Jetzt werden Ihre Server zugeordnet und die Nachbearbeitungsprozesse in AEM Forms on JEE stehen während der Erstellung von Briefen in der AEM Benutzeroberfläche zur Verfügung.
 
    ![Erstellen des Briefbildschirms mit aufgelisteten Nachbearbeitungsprozessen](assets/0configmanager.png)
 
