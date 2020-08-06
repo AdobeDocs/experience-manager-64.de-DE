@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 46%
 
 ---
 
@@ -34,6 +37,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
    * In Xcode, navigate to the **Capture > www > wsmobile > js > runtime > views** folder.
    * In Eclipse, navigate to the **assets > www > wsmobile > js > runtime > views** folder.
    * In Visual Studio, navigate to the **MWSWindows > www > wsmobile > js > runtime > views** folder.
+
    >[!NOTE]
    >
    >Die Datei „task.js“ enthält die Backbone-Ansicht, die mit allen Aufgaben oder Startpunkten in der Aufgaben- oder Startpunktliste verknüpft ist.
