@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Maven für Communities
 seo-title: Verwenden von Maven für Communities
-description: AEM Communities API JAR und AEM Uber API JAR
-seo-description: AEM Communities API JAR und AEM Uber API JAR
+description: AEM Communities API-JAR und AEM Uber API-JAR
+seo-description: AEM Communities API-JAR und AEM Uber API-JAR
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,22 +11,25 @@ content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 6%
 
 ---
 
 
 # Verwenden von Maven für Communities {#using-maven-for-communities}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Dieser Abschnitt der Dokumentation zu AEM Communities ergänzt:
+Dieser Abschnitt der AEM Communities-Dokumentation ergänzt:
 
 * [So erstellen Sie AEM-Projekte mit Apache Maven](../../help/sites-developing/ht-projects-maven.md)
 
 Es gibt jetzt zwei &quot;Uber&quot;-Artefakte, die einzelne Artefakte ersetzen:
 
-* AEM [Communities API-JAR](#communities-api-jar-artifact)
-* AEM [Uber API-JAR](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* API-JAR [für AEM](#communities-api-jar-artifact)
+* AEM [Uber-API-JAR](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Communities API JAR Artefakt {#communities-api-jar-artifact}
 
