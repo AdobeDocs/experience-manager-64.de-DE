@@ -4,15 +4,18 @@ description: Dieser Artikel beschreibt, wie Sie Metadaten in Batches importieren
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 75%
 
 ---
 
 
 # Bulk metadata import and export {#bulk-metadata-import-and-export}
 
-Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches aufnehmen.
+Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-## Importieren von Metadaten   {#import-metadata}
+## Importieren von Metadaten     {#import-metadata}
 
 Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während der schlanken Servernutzung, um Leistungseinbußen für andere Benutzer zu vermeiden.
 
@@ -37,11 +40,11 @@ Gehen Sie wie folgt vor, um Metadaten stapelweise zu importieren:
 
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
 
-Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00` Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T`, `hh` Stunden im 24-Stunden-Format, `fff` Nanosekunden und Zeitzonenversatz getrennt `-00:00` angegeben. Zum Beispiel `2020-03-26T11:26:00.000-07:00` ist der 26. März 2020 um 11:26:00 Uhr PST-Zeit.
+Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
 
 >[!CAUTION]
 >
->Stimmt das Datumsformat nicht überein, `YYYY-MM-DDThh:mm:ss.fff-00:00`werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei haben das Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie es importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den von `fff`Ihnen angegebenen Nanosekunden-Wert hinzufügen.
+>Wenn das Datumsformat nicht mit `YYYY-MM-DDThh:mm:ss.fff-00:00` übereinstimmt, werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
 
 ## Exportieren von Metadaten {#export-metadata}
 
