@@ -35,7 +35,7 @@ Um sich mit dem kompletten Ablauf zum Erstellen einer Formularanwendung vertraut
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
-**Beginn eines Geschäftsprozesses:** AEM Forms Workspace Kategorien Ihrer Prozesse, die von Ihrem Unternehmen entworfen und eingerichtet wurden. Sie können häufig verwendete Kategorien als Favoriten definieren, um schneller auf die zugreifen zu können. Beim Starten eines Prozesses füllen Sie normalerweise ein Formular aus, um einen von Forms gesteuerten Geschäftsprozess zu starten. Weitere Informationen finden Sie unter [Starten von Prozessen](/help/forms/using/starting-processes.md).
+**Beginn eines Geschäftsprozesses:** AEM Forms Workspace Kategorie der Prozesse, die von Ihrem Unternehmen entwickelt und eingerichtet wurden. Sie können häufig verwendete Kategorien als Favoriten definieren, um schneller auf die zugreifen zu können. Beim Starten eines Prozesses füllen Sie normalerweise ein Formular aus, um einen von Forms gesteuerten Geschäftsprozess zu starten. Weitere Informationen finden Sie unter [Starten von Prozessen](/help/forms/using/starting-processes.md).
 
 **Ansicht und Maßnahmen bei Aufgaben:** Bei der Ansicht Ihrer Aufgaben-Listen sehen Sie Aufgaben aus einem Geschäftsprozess, die Ihnen oder einer anderen Gruppe, der Sie angehören, zugewiesen sind oder die freigegebene Aufgaben anderer Benutzer sind. Sie können die Aufgaben wie benötigt öffnen, bearbeiten und abschließen. Um eine Aufgabe abzuschließen, müssen Sie normalerweise Informationen angeben, ein Formular genehmigen oder es ablehnen. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Aufgabenlisten](/help/forms/using/todo-lists.md).
 
