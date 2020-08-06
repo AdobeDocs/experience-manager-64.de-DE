@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 >
 >Der Inhalt des Ordners &quot;/libs&quot;wird nie bearbeitet, da bei einer Neuinstallation oder Aktualisierung der Ordner &quot;/libs&quot;gelöscht oder ersetzt werden kann, während der Inhalt des Ordners &quot;/apps&quot;unverändert bleibt.
 
-Wenn Sie [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz verwenden, erstellen Sie zunächst einen Pfad im Ordner /apps, der mit dem Pfad zu den überlagerten Komponenten im Ordner /libs identisch ist.
+Erstellen Sie zunächst mit der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz einen Pfad im Ordner &quot;/apps&quot;, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs&quot;identisch ist.
 
 Der duplizierte Pfad ist
 
@@ -78,6 +81,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
