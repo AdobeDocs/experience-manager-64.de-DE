@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 92%
 
 ---
 
@@ -52,7 +55,7 @@ Zusätzlich dazu sollten Sie die folgenden Richtlinien für den Sicherungs-/Wied
 
    Berücksichtigen Sie folgende Punkte, wenn Sie Autor- und Veröffentlichungsinstanzen sichern:
 
-   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden synchronisiert, um gleichzeitig zu starten. Obwohl Sie während der Sicherung weiterhin Autor- und Veröffentlichungsinstanzen verwenden können, wird empfohlen, während der Sicherung keine Assets zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
+   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden gleichzeitig mit Beginn synchronisiert. Obwohl Sie während der Sicherung weiterhin Autor- und Veröffentlichungsinstanzen verwenden können, wird empfohlen, während der Sicherung keine Assets zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
    * Die vollständige Sicherung des Autorknotens umfasst die Sicherung der Daten von Forms Manager und AEM Forms Workspace.
    * Workbench-Entwickler können an ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
    * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
@@ -95,8 +98,9 @@ Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehls
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 1. Führen Sie an der Befehlszeile den folgenden Befehl in einer einzelnen Zeile aus:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort* `] [-label=`*labelname *`] [-timeout=`** Sekunden `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort* `] [-label=`*labelname *`] [-timeout=`*Sekunden* `]`
    * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort* `] [-label=`*Beschriftungsname *`]`
+
    Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
 
    `Host` ist der Name des Hosts, auf dem AEM Forms ausgeführt wird.
@@ -138,7 +142,7 @@ Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Siche
 
 1. Rufen Sie den folgenden Befehl in einer einzelnen Zeile auf:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort*`]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort* `]`
    * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname *`] [-port=`*portnumber* `] [-user=`*username *`] [-password=`*password* `]`
 
       Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
