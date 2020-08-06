@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
 source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 89%
 
 ---
 
@@ -57,7 +60,7 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Außerdem unterstützt ein freigegebener Datenspeicher Binaryless-Replikationen und reduziert die Bandbreite zum Replizieren von Assets in Veröffentlichungsumgebungen oder Abladeinstanzen.
 
-#### Nutzungsszenarios {#use-cases}
+#### Nutzungsszenarien {#use-cases}
 
 Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Adobe empfiehlt die gemeinsame Nutzung des Datenspeichers zwischen primärer Autoreninstanz und Ablade-Autoreninstanzen, um Mehraufwand bei der Workflow-Abladung zu reduzieren. Sie können den Datenspeicher zudem zwischen Autor- und Veröffentlichungsinstanzen freigeben, um den Traffic während der Replikation zu minimieren.
 
@@ -118,7 +121,7 @@ Um diese Ineffizienzen zu verdeutlichen, hat Adobe die Systemleistung mit WebDAV
 
 Beim Analysieren der durchschnittlichen Speicherzeit für Dateien über WebDAV wurde eine deutliche Leistungszunahme festgestellt, als sich die Brandbreite auf 5–10 MBit/s erhöht hatte. Daher empfiehlt Adobe, dass alle Benutzer, die gleichzeitig auf das System zugreifen, mindestens über eine Uploadgeschwindigkeit von 10 MBit/s und eine Bandbreite von 5–10 MBit/s verfügen sollten.
 
-For more information, see [Troubleshooting AEM desktop app](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
+For more information, see [Troubleshooting AEM desktop app](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Beschränkungen {#limitations}
 
@@ -142,4 +145,4 @@ Die bei einem bestimmten Heap standardmäßig unterstützte TIFF-Dateigröße f�
 
 ## Größe der Assets {#size-of-assets}
 
-Standardmäßig können Sie mit AEM Assets mit einer Dateigröße von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in AEM finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
+Standardmäßig können Sie AEM Assets mit einer Dateigröße von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in AEM finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
