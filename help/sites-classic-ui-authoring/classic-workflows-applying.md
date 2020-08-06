@@ -11,17 +11,20 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
 
-# Anwenden von Workflows auf Seiten{#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten {#applying-workflows-to-pages}
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 * Der anzuwendende Workflow.
 
-   Sie können jeden Workflow anwenden (auf den Sie Zugriff haben, wie vom AEM-Administrator zugewiesen).
+   Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
 * Optional:
 
    * Ein Kommentar, der Informationen darüber enthält, weshalb Sie den Workflow gestartet haben.
