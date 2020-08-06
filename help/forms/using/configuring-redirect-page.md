@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 72%
 
 ---
 
@@ -24,13 +27,13 @@ Formularersteller können für jedes Formular eine Seite konfigurieren, zu der d
 1. Geben Sie die URL der Umleitungsseite unter der Danksagung im Bereich „Senden“ an.
 1. Optional können Sie unter „Übermittlungsaktion“ für die Übermittlungsaktion „An REST-Endpunkt übermitteln“ den Parameter konfigurieren, der zur Umleitungsseite geleitet werden soll.
 
-![](assets/thank-you-setting-1.png) Umleitungsseitenkonfiguration **** Abbildung: Konfiguration der *Umleitungsseite*
+![Umleitungsseitenkonfiguration](assets/thank-you-setting-1.png)**Abbildung:** *Konfiguration der Umleitungsseite*
 
 Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. For all the available submit actions, `status` and `owner` parameters are passed. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
 
-* **Aktion** zum Speichern von Inhalten (nicht mehr unterstützt): `contentPath`- der Pfad des Knotens im Repository, in dem die gesendeten Daten gespeichert werden, wird übergeben.
+* **Aktion** zum Speichern von Inhalten (nicht mehr unterstützt): `contentPath`—der Pfad des Knotens im Repository, in dem die gesendeten Daten gespeichert werden, wird übergeben.
 
-* **PDF-Aktion** speichern (nicht mehr unterstützt): `contentPath`- der gesendeten Daten und des Pfades zu dem Knoten, der die PDF-Datei im Repository speichert - wird weitergeleitet.
+* **PDF-Aktion** speichern (nicht mehr unterstützt): `contentPath`—der gesendeten Daten und des Pfades zum Knoten, der die PDF-Datei im Repository speichert, weitergeleitet werden.
 
 * **An Formular-Workflow übermitteln**: Ausgabeparameter, die aus dem Formular-Workflow zurückgegeben wurden, werden weitergeleitet.
 
