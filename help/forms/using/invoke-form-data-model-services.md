@@ -9,13 +9,16 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 61%
 
 ---
 
 
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](/help/forms/using/rule-editor.md).
 
