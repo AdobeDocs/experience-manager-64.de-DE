@@ -1,14 +1,17 @@
 ---
-title: Imagemaps hinzufügen
+title: Hinzufügen
 description: Erfahren Sie, wie Sie Bild-Assets per Hyperlink verbundene Imagemaps hinzufügen können.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 20%
 
 ---
 
 
-# Imagemaps hinzufügen {#adding-image-maps}
+# Hinzufügen {#adding-image-maps}
 
 Erfahren Sie, wie Sie Bild-Assets per Hyperlink verbundene Imagemaps hinzufügen können.
 
@@ -47,7 +50,7 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
-1. Um die Imagemap anzuzeigen, navigieren Sie zur Seite mit den Asset-Details und bewegen Sie den Cursor über das Bild.
+1. Um die Imagemap Ansicht, navigieren Sie zur Seite mit den Asset-Details und bewegen Sie den Cursor über das Bild.
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
