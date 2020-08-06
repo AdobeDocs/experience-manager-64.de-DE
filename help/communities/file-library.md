@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 68%
 
 ---
 
@@ -23,7 +26,7 @@ Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mi
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Dateibibliotheksfunktion zu einer AEM-Site
+* Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site
 * Configuration settings for the `File Library` component
 
 ## Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
@@ -46,13 +49,14 @@ Select the placed `File Library` component to access and select the `Configure` 
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
-### Registerkarte &quot;Kommentare&quot; {#comments-tab}
+### Comments tab {#comments-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
 * **[!UICONTROL Kommentare in Dateien zulassen]** Ist diese Option aktiviert, werden Kommentare zu hochgeladenen Dateien zugelassen. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Kommentare pro Seite]** Mit dieser Option wird die Anzahl der Kommentare und Antworten beschränkt, die pro Seite angezeigt werden. Der Standardwert ist **10**.
+* **[!UICONTROL Kommentare pro Seite]** Mit dieser Option wird die Anzahl der Kommentare und Antworten beschränkt, die pro Seite angezeigt werden. Der Standardwert ist 
+**10**.
 
 * **[!UICONTROL Max. Dateigröße]** Dieser Wert beschränkt die Größe der hochgeladenen Datei. Die Standardbeschränkung ist 104857600 (10 MB).
 
@@ -62,11 +66,11 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 * **[!UICONTROL Rich-Text-Editor]** Ist diese Option aktiviert, können Kommentare mit Markup versehen werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Kommentare]** löschen Wenn diese aktiviert sind, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Kommentare]** löschen Wenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Tagging zulassen]** Ist diese Option aktiviert, können Dateien Kennzeichnungen zugewiesen werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulässige Namespaces]** Wenn Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keine aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
+* **[!UICONTROL Zulässige Namensraum]** Wenn &quot;Tagging zulassen&quot;aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namensraum beschränkt. Wenn keine aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
 
 * **[!UICONTROL Empfehlungsgrenze]** Ist die Option „Tagging zulassen“ aktiviert, wird mit dieser Einstellung die Anzahl der vorgeschlagenen Tags eingegrenzt. Wurde der Wert „-1“ festgelegt, werden beliebig viele Tags eingeblendet. Der Standardwert ist -1.
 
@@ -76,7 +80,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 * **[!UICONTROL Threaded Replies]** zulassen Wenn diese aktiviert sind, erlauben Sie Antworten auf gepostete Kommentare. Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte Benutzermoderation {#user-moderation-tab}
+### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
 
@@ -94,9 +98,11 @@ Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Ko
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]** Ist diese Option aktiviert, können Besucher einen eigenen Grund dafür eingeben, warum sie Kommentare als unangemessen kennzeichnen möchten. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Schwellenwert für Moderation]** Geben Sie an, wie oft ein Kommentar von Besuchern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (**1**).
+* **[!UICONTROL Schwellenwert für Moderation]** Geben Sie an, wie oft ein Kommentar von Besuchern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (
+**1**).
 
-* **[!UICONTROL Kennzeichnungslimit]** Geben Sie an, wie oft ein Kommentar als unangemessen gekennzeichnet werden muss, bevor er aus dem öffentlichen Bereich ausgeblendet wird. Dieser Wert muss größer als der oder gleich dem **Schwellenwert für Moderation** sein. Der Standardwert ist 5.
+* **[!UICONTROL Kennzeichnungslimit]** Geben Sie an, wie oft ein Kommentar als unangemessen gekennzeichnet werden muss, bevor er aus dem öffentlichen Bereich ausgeblendet wird. Diese Zahl muss größer als oder gleich dem Wert 
+**Schwellenwert für Moderation**. Der Standardwert ist 5.
 
 ## Zusätzliche Informationen {#additional-information}
 
