@@ -12,6 +12,9 @@ discoiquuid: 20a0b2a8-7347-4875-a202-9cedd8e187ff
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +31,7 @@ Diese Seite sollte zusammen mit der [Mobilseite für Autoren](/help/sites-author
 
 ## Entwickeln von Websites für mobile Endgeräte {#developing-web-sites-for-mobile}
 
-Entwickeln Sie Seitenvorlagen und -komponenten, die für die Anzeige auf mobilen Geräten optimiert sind. Entwickeln Sie Seiten, die responsive Layouts verwenden, die sich verschiedenen Bildschirmgrößen anpassen, oder entwickeln Sie Seiten, die für eine bestimmte Bildschirmgröße optimiert sind. Verwenden Sie die von AEM bereitgestellten Geräteemulatoren oder erstellen Sie eigene Emulatoren für das Authoring und die Vorschau von WSYWIG:
+Entwickeln Sie Seitenvorlagen und -komponenten, die für die Anzeige auf mobilen Geräten optimiert sind. Entwickeln Sie Seiten, die responsive Layouts verwenden, die sich verschiedenen Bildschirmgrößen anpassen, oder entwickeln Sie Seiten, die für eine bestimmte Bildschirmgröße optimiert sind. Verwenden Sie Geräteemulatoren, die Ihre eigenen Emulatoren für das Authoring und die Vorschau von WSYWIG bereitstellen AEM oder erstellen:
 
 * [Erstellen von Gerätegruppenfiltern](/help/sites-developing/groupfilters.md)
 * [Responsives Design für Webseiten](/help/sites-developing/responsive.md)
