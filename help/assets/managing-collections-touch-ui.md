@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: dfe5d976da937162e902ba8afac862f290702f5b
 workflow-type: tm+mt
 source-wordcount: '2328'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -253,7 +253,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge     {#saved-searches}
+## Gespeicherte Suchvorgänge       {#saved-searches}
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
@@ -261,7 +261,7 @@ In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Re
 
 ### Erstellen gespeicherter Suchen {#creating-saved-searches}
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. The Saved Searches query for the collection is saved in the `dam:query` property in crxde at the relative location `/content/dam/collections/`. Die Suchvorgänge, die Sie speichern können, und die gespeicherten Suchvorgänge, die in der Liste angezeigt werden, sind unbegrenzt.
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. The Saved Searches query for the collection is saved in the `dam:query` property in crxde at the relative location `/content/dam/collections/`. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt. 
 
 >[!NOTE]
 >
