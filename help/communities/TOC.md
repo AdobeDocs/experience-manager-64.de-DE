@@ -40,7 +40,7 @@ ht-degree: 26%
    + [Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities](user-ugc-management-service.md)
    + [Communities Sites](administer-landing.md)
    + [Communities Konsolen](consoles.md)
-   + [Analytics Configuration for Communities - Funktionen](analytics.md)
+   + [Analytics-Konfiguration für Communities-Funktionen](analytics.md)
    + [Konfiguration von Aktivierungsfunktionen](enablement.md)
    + [Messaging konfigurieren](messaging.md)
    + [Moderieren von Community-Inhalten](moderate-ugc.md)
