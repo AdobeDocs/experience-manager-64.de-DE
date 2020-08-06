@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 71%
 
 ---
 
 
 # Verwalten von Agentenunterschriftbildern {#manage-agent-signature-images}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In der Correspondence Management können Sie ein Bild für die Agentunterzeichnung in Briefen verwenden. Nachdem Sie das Agentsignaturbild beim Erstellen eines Briefs eingerichtet haben, können Sie das Agentsignaturbild im Brief als Signatur des Absenderagenten wiedergeben.
 
@@ -24,7 +27,7 @@ Das agentSignatureImage-DDE ist ein berechnetes DDE zur Darstellung des Signatur
 
 Sie können Bilder im cmuserroot-Ordner hinzufügen. In den [Eigenschaften der Correspondence Management-Konfiguration](/help/forms/using/cm-configuration-properties.md) können Sie mithilfe der Eigenschaft „URL für CM-Benutzerelemente“ den Ordner wechseln, aus dem das Agentsignaturbild abgerufen wird.
 
-Der Wert des agentFolder-DDE wird dem CMUserRoot-Konfigurationsparameter für die Correspondence Management-Konfigurationseigenschaften entnommen. Standardmäßig verweist dieser Konfigurationsparameter auf /content/cmUserRoot im CRX-Repository. Sie können den Wert der CMUserRoot-Konfiguration in den Konfigurationseigenschaften ändern.\
+Der Wert des agentFolder-DDE wird aus dem CMUserRoot-Konfigurationsparameter für die Correspondence Management-Konfigurationseigenschaften entnommen. Standardmäßig verweist dieser Konfigurationsparameter auf /content/cmUserRoot im CRX-Repository. Sie können den Wert der CMUserRoot-Konfiguration in den Konfigurationseigenschaften ändern.\
 Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum Abrufen des Bilds der Benutzerunterschrift zu definieren.
 
 ## Agentsignaturbild hinzufügen {#adding-agent-signature-image}
@@ -32,7 +35,7 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 1. Stellen Sie sicher, dass das Agentsignaturbild denselben Namen wie der AEM-Benutzername des Benutzers hat. (Eine Erweiterung wird den Namen der Bilddateien nicht benötigt.)
 1. Erstellen Sie in CRX einen Ordner mit dem Namen `cmUserRoot` im aktuellen Ordner.
 
-   1. Wechseln zu `https://[server]:[port]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+   1. Rufen Sie `https://[server]:[port]/crx/de` auf. Falls erforderlich, melden Sie sich als Administrator an.
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **content** und wählen Sie **Erstellen** > **Ordner erstellen**.
 
@@ -46,7 +49,7 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 
 1. Navigieren Sie in Content Explorer zum cmUserRoot-Ordner und fügen Sie das Agentsignaturbild hinzu.
 
-   1. Wechseln zu `https://[server]:[port]/crx/explorer/index.jsp`. Melden Sie sich nötigenfalls als Administrator an.
+   1. Rufen Sie `https://[server]:[port]/crx/explorer/index.jsp` auf. Melden Sie sich nötigenfalls als Administrator an.
    1. Klicken Sie auf **Content Explorer**. Content Explorer wird in einem neuen Fenster geöffnet.
    1. Navigieren Sie in Content Explorer zum cmUserRoot-Ordner und wählen Sie ihn aus. Klicken Sie mit der rechten Maustaste auf den **cmUserRoot**-Ordner und wählen Sie **Neuer Knoten**.
 
@@ -54,7 +57,7 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 
       Nehmen Sie die folgenden Einträge in der Zeile für neue Knoten vor und klicken Sie dann auf das grüne Häkchen.
 
-      **** Name: JohnDoe (oder der Name Ihrer Agentsignaturdatei)
+      **Name:** JohnDoe (oder der Name Ihrer Agentsignaturdatei)
 
       **Typ:** nt:file
 
