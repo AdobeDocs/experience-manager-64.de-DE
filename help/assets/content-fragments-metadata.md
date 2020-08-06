@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
@@ -29,7 +32,8 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 1. Führen Sie einen der folgenden Schritte durch:
 
    * Wählen Sie [Eigenschaften anzeigen aus, um das Dialogfeld zu öffnen](managing-assets-touch-ui.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
-   * Open the [content fragment for Edit](content-fragments-managing.md#opening-the-fragment-editor), then select **[!UICONTROL Metadata]** from the side panel.
+   * Öffnen Sie das [Inhaltsfragment zum Bearbeiten](content-fragments-managing.md#opening-the-fragment-editor) und wählen Sie anschließend im seitlichen Bedienfeld **[!UICONTROL Metadaten]** aus.
+
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
 1. Auf der Registerkarte **[!UICONTROL Einfach]** können Sie die folgenden Optionen anzeigen oder bearbeiten:
@@ -39,5 +43,6 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
    * **Beschreibung**
    * **Tags**
    * Erstellt (nur Anzeige)
+
    ![cfm-6420-07](assets/cfm-6420-07.png)
 
