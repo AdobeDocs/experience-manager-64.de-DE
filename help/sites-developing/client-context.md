@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7b97fc27-30de-4ef9-9efe-673aec50cff2
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '2992'
+ht-degree: 83%
 
 ---
 
@@ -68,7 +71,7 @@ Ein Sitzungsspeicher kann über mehrere Browsersitzungen hinweg oder nur für di
 
 ### Kontextspeicherkomponenten {#context-store-components}
 
-Eine Kontextspeicherkomponente ist eine AEM-Komponente, die dem Client-Kontext hinzugefügt werden kann. In der Regel zeigen Kontextspeicherkomponenten Daten aus dem Sitzungsspeicher an, dem sie zugeordnet sind. Die Kontextspeicherkomponenten zeigen jedoch nicht nur Informationen aus dem Sitzungsspeicher an.
+Eine Kontextspeicherkomponente ist eine AEM Komponente, die dem Client-Kontext hinzugefügt werden kann. In der Regel zeigen Kontextspeicherkomponenten Daten aus dem Sitzungsspeicher an, dem sie zugeordnet sind. Die Kontextspeicherkomponenten zeigen jedoch nicht nur Informationen aus dem Sitzungsspeicher an.
 
 Mögliche Elemente von Kontextspeicherkomponenten:
 
@@ -302,7 +305,7 @@ The `/libs/cq/personalization/components/contextstores/profiledata` context stor
 
 Um Speicherdaten mithilfe einer genericstore-Komponente zu rendern, müssen Sie:
 
-* Fügen Sie dem JSP-Skript der Komponente das Tag personalization:storeRendererTag hinzu, um den Namen des Sitzungsspeichers zu identifizieren.
+* Hinzufügen Sie das Tag personalization:storeRendererTag an das JSP-Skript der Komponente, um den Namen des Sitzungsspeichers zu identifizieren.
 * eine Rendering-Methode für die Sitzungsspeicherklasse implementieren.
 
 #### Bestimmen des genericstore-Sitzungsspeichers {#identifying-the-genericstore-session-store}
@@ -325,8 +328,7 @@ Für Ihren Sitzungsspeicher ist eine Rendering-Methode erforderlich, die immer d
 
 * `@param {String} store`
 
-   
-Der zu rendernde Store
+   Der zu rendernde Store
 
 * `@param {String} divId`
 
@@ -440,7 +442,7 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 
 Für die aktuelle Seite ist eine entsprechende Mobilversion erforderlich. Dafür muss für die Seite eine mit einer mobilen Rollout-Konfiguration eingerichtete Live Copy verfügbar sein (`rolloutconfig.path.toLowerCase` enthält `mobile`).
 
-#### Konfiguration{#configuration}
+#### Konfiguration {#configuration}
 
 Beim Wechseln von der Desktopseite zur mobilen Ansicht:
 
