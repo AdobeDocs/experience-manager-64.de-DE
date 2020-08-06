@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 89%
 
 ---
 
@@ -20,8 +23,8 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 Die folgenden IBM DB2-Befehle werden für die regelmäßige Wartung Ihrer AEM Forms-Datenbank empfohlen. Detaillierte Informationen zur Wartung und Leistungsoptimierung der DB2-Datenbank finden Sie im *IBM DB2 Administration Guide*.
 
 * **runstats:** Dieser Befehl aktualisiert Statistiken, die die physischen Merkmale einer Datenbanktabelle sowie der dazugehörigen Indizes beschreiben. Von AEM Forms generierte dynamische SQL-Anweisungen verwenden automatisch diese aktualisierten Statistiken. Für statische SQL-Anweisungen, die innerhalb einer Datenbank erstellt wurden, muss jedoch auch der Befehl `db2rbind` ausgeführt werden.
-* **** db2rbind: Dieser Befehl bindet alle Pakete in der Datenbank erneut. Rufen Sie diesen Befehl nach Ausführung des Dienstprogramms `runstats` aus, um alle Pakete in der Datenbank erneut zu überprüfen.
-* **** REORG-Tabelle oder -Index: Mit diesem Befehl wird überprüft, ob eine Neuorganisation bestimmter Tabellen und Indizes erforderlich ist.
+* **db2rbind:** Dieser Befehl bindet alle Pakete in der Datenbank erneut. Rufen Sie diesen Befehl nach Ausführung des Dienstprogramms `runstats` aus, um alle Pakete in der Datenbank erneut zu überprüfen.
+* **REORG-Tabelle oder -Index:** Mit diesem Befehl wird überprüft, ob eine Neuorganisation bestimmter Tabellen und Indizes erforderlich ist.
 
    Da Datenbanken anwachsen und sich verändern, ist die Neuberechnung von Tabellenstatistiken wichtig für die Datenbankleistung und muss deshalb regelmäßig durchgeführt werden. Diese Befehle können entweder manuell mithilfe von Skripten oder über einen Cron-Auftrag ausgeführt werden.
 
