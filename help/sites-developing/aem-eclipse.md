@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
 
 ![](do-not-localize/chlimage_1-9.png)
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Developer Tools for Eclipse ist ein Eclipse-Plug-in, das auf dem [Eclipse-Plug-in für Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) basiert, das unter der Apache-Lizenz 2 veröffentlicht wurde.
 
@@ -37,7 +40,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie:
 
 * Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools unterstützen derzeit Eclipse Kepler oder höher
 
-* Kann mit AEM Version 5.6.1 oder höher verwendet werden
+* Kann mit AEM Version 5.6.1 oder neuer verwendet werden
 * Configure your eclipse installation to ensure that you have at least 1 gigabyte of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
