@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ba674a2d-7c78-430e-8e17-1a18619e71cb
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 Sie können die Trennzeichenkomponente verwenden, um Bereiche eines Formulars visuell zu trennen. Sie können die Gesamtdarstellung und den Stil einer Trennzeichenkomponente definieren, indem Sie die folgenden Eigenschaften einer Trennzeichenkomponente angeben:
 
 * **Elementname:** Gibt den Namen der Komponente an. Die SOM-Ausdrücke richten sich an die Komponenten mit dem Wert, der im Feld „Elementname“ angegeben ist.
-* **** Dicke: Gibt die Stärke der Trennzeichenkomponente in Pixel an.
+* **Dicke:** Gibt die Stärke der Trennzeichenkomponente in Pixel an.
 * **Colspan:** Gibt die Anzahl der Spalten an, die eine Trennzeichenkomponente umfasst.
 * **CSS-Klasse:** Gibt die benutzerdefinierte CSS-Klasse für die Trennzeichenkomponente an
 * **Inline-Stile:** Mit AEM Forms können Sie jetzt CSS-Inline-Stile auf individuelle adaptive Formularkomponenten anwenden und eine Vorschau der Änderungen in Echtzeit anzeigen.
