@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '6414'
+ht-degree: 52%
 
 ---
 
@@ -21,7 +24,7 @@ Diese Seite beschreibt die xtypes, die im Lieferumfang von Adobe Experience Mana
 
 In der ExtJS-Sprache ist ein xtype ein symbolischer Name, der einer Klasse zugewiesen wird. You can read the &quot;Component XTypes&quot; paragraph of the [Overview of ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) for a detailed explanation about what an xtype is and how it can be used.
 
-Informationen zu allen in AEM verfügbaren Widgets finden Sie in der [Dokumentation zur Widgets-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
+Informationen zu allen in AEM verfügbaren Widgets finden Sie in der [Dokumentation zur Widgets-API](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Sie können die folgende Xpath-Abfrage in CRXDE verwenden, um herausfinden, in welchen Komponenten ein bestimmter xtype in AEM verwendet wird. Ersetzen Sie dazu „checkbox“ durch den gewünschten xtype:
 
@@ -127,7 +130,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    Das CQ.Ext.chart-Paket stellt die Funktion zum Visualisieren von Daten anhand von Flash-basierten Diagrammen bereit. Jedes Diagramm ist direkt mit einem CQ.Ext.data.Store verbunden, wodurch das Diagramm automatisch aktualisiert werden kann. Sie können das Erscheinungsbild eines Diagramms anhand der Konfigurationsoptionen [chartStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) und [extraStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) ändern.
 
-* checkbox
+* Kontrollkästchen 
 
    [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
@@ -401,7 +404,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
 * hidden
 
-   [cQ.ext.form.hidden](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Hidden)
+   [cQ.ext.form.Ausgeblendet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Hidden)
 
    Ein allgemeines Feld zum Speichern ausgeblendeter Werte in Formularen, die beim Senden des Formulars weitergeleitet werden müssen.
 
@@ -791,7 +794,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    Mit „Static“ kann beliebiger Text oder HTML angezeigt werden.
 
-* statistics
+* Statistiken
 
    [CQ.wcm.statistics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
