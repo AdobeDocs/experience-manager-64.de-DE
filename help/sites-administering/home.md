@@ -1,20 +1,20 @@
 ---
-title: AEM 6.4 - Administrationsbenutzerhandbuch
-seo-title: AEM 6.4 - Administrationsbenutzerhandbuch
-description: AEM-Verwaltung
-seo-description: AEM-Verwaltung
+title: AEM 6.4 Benutzerhandbuch zur Verwaltung
+seo-title: AEM 6.4 Benutzerhandbuch zur Verwaltung
+description: AEM
+seo-description: AEM
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
 
-# AEM 6.4 - Administrationsbenutzerhandbuch
+# AEM 6.4 Benutzerhandbuch zur Verwaltung
 
-Dieses Handbuch behandelt alle AEM-Aufgaben für Administratoren.
+Dieses Handbuch behandelt alle AEM Aufgaben zur Verwaltung.
 
 ## Wichtige Artikel
 
@@ -23,27 +23,27 @@ Dieses Handbuch behandelt alle AEM-Aufgaben für Administratoren.
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4-Benutzerhandbücher
+## AEM 6.4 Benutzerhandbücher
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
 | [Versionshinweise](/help/release-notes/home.md) | Bietet wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
-| [Assets-Benutzerhandbuch](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren. |
-| [Forms-Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
+| [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren. |
+| [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
 | [Communities-Benutzerhandbuch](/help/communities/home.md) | Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
 | [Administratorhandbuch](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
-| [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM in der klassischen Benutzeroberfläche erläutert. |
+| [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
 | [Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
-| [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieses Handbuch zeigt Ihnen die Grundlagen von AEM. |
-| [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM-Instanz erstellen. |
-| [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird die erfolgreiche Verwaltung eines AEM-Projekts beschrieben. |
+| [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
+| [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM Instanz erstellen. |
+| [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
 
-## Wichtige AEM-Ressourcen
+## Wichtige AEM
 
-* [AEM-Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
