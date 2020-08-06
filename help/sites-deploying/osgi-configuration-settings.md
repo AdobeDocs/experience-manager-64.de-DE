@@ -38,7 +38,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 
 >[!NOTE]
 >
->Das OSGi Configuration Diff-Tool, das Teil der [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)ist, kann zur Liste der standardmäßigen OSGi-Konfigurationen verwendet werden.
+>Das OSGi Configuration Diff Tool, Teil der [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), kann zur Liste der standardmäßigen OSGi-Konfigurationen verwendet werden.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deployi
 
    Der empfohlene Wert lautet `-1` wie folgt: Hiermit wird die Warteschlange auf unbegrenzt eingestellt. Wenn eine Begrenzung festgelegt ist, können bei Überschreitung Verluste auftreten.
 
-* Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern. z. B. starke Verwendung von AEM DAM oder Workflow.
+* Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern. z. B. starke AEM DAM- oder Workflow-Nutzung.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
 * Diese Einstellungen können sich auf die Leistung Ihrer Instanz auswirken. Ändern Sie sie daher nicht ohne Grund und unter gebührender Berücksichtigung.
 
@@ -279,7 +279,7 @@ When creating a new configuration, do not make changes to the factory configurat
    * Deaktivieren Sie **Debug**.
    * Deaktivieren Sie **Timing**.
 
-* Für die JS-Entwicklung (insbesondere beim Firebugging/Debugging:
+* Für die JS-Entwicklung (insbesondere beim Firebugging/Debugging):
 
    * Deaktivieren Sie **Minify**.
    * Aktivieren Sie **Debug**, um die Dateien für das Debuggen und für die Verwendung mit Firebug zu trennen.
@@ -320,7 +320,7 @@ Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwen
 
 **Tag-CQ-Stammzuordnung** konfigurieren:
 
-* **Target Path** , um festzulegen, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
+* **Zielgruppe Path** , um zu definieren, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
 
 In AEM sind [zwei Benutzeroberflächen](/help/sites-authoring/select-ui.md) verfügbar:
 
@@ -345,7 +345,7 @@ Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie 
 >
 >Nach einer Standardinstallation wird die Touch-optimierte Benutzeroberfläche zur Standardbenutzeroberfläche.
 
-**Adobe Granite SSO Authentication Handler** Konfigurieren der Details zum Single-Sign-On (SSO); Diese werden häufig in Unternehmensautorenkonfigurationen benötigt, häufig in Verbindung mit LDAP.
+**Adobe Granite SSO Authentication Handler** Konfigurieren von Single-Sign-On (SSO)-Details; Diese werden häufig in Unternehmensautorenkonfigurationen benötigt, häufig in Verbindung mit LDAP.
 
 Verschiedene Eigenschaften können konfiguriert werden: 
 
@@ -467,11 +467,11 @@ Steuert den HTML-Parser für den CQ-Rewriter.
 
 Dies ist eine Factory-Konfiguration, sodass mehrere Instanzen konfiguriert werden. 
 
-**Adobe CQ Media DPS Sessions Service** Verwalten von DPS-Sitzungen für die Verwendung mit Veröffentlichungen.
+**Adobe CQ Media DPS-Sitzungsdienst** Verwalten von DPS-Sitzungen für die Verwendung mit Veröffentlichungen.
 
 Insbesondere können Sie `dps.session.service.url.name` konfigurieren. Die Standardeinstellung ist [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**Die CDN-Rewriter** -Kommunikation zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer gesendet werden. Dies beinhaltet zwei Aufgaben:
+**Die Kommunikation zwischen AEM und einem CDN mit dem CDN-Rewriter** muss sichergestellt werden, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer gesendet werden. Dies beinhaltet zwei Aufgaben:
 
 * Den Zugriff auf die Ressource von AEM aus über das CDN beim ersten Versuch (oder wenn sich die Ressource nicht mehr im Zwischenspeicher befindet).
 * Den sicheren Zugriff auf die im CDN zwischengespeicherte Ressource, denn sobald die Ressource im CDN zwischengespeichert ist, wird die Anforderung nicht an AEM gerichtet, sondern alle Benutzer mit Zugriff auf die Ressource werden vom CDN bedient.
