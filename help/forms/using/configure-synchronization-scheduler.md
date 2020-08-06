@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 79%
 
 ---
 
@@ -34,27 +37,27 @@ Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisie
 
 Sie können die Option **Assets aus Repository synchronisieren** verwenden, um die Elemente manuell zu synchronisieren. Führen Sie die folgenden Schritte durch, um die Elemente manuell zu synchronisieren:
 
-1. Melden Sie sich bei AEM Forms an. The default URL is `https://[Server]:[Port]/lc/aem/forms/`.
+1. Melden Sie sich bei AEM Forms an. Die Standardeinstellung ist `https://[Server]:[Port]/lc/aem/forms/`.
 
    ![AEM Forms-Benutzeroberfläche](assets/aem_forms_ui.png)
 
-   **** Abbildung: Benutzeroberfläche von *AEM Forms*
+   **Abbildung:** *AEM Forms-Benutzeroberfläche*
 
 1. Klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_sync](assets/aem6forms_sync.png) . Wenn im zuletzt konfigurierten Pfad keine Elemente vorhanden sind, wird das nachfolgende Dialogfeld angezeigt. Klicken Sie auf **Start**, um die Synchronisierung zu starten.
 
    ![Das Dialogfeld „Synchronisierung“](assets/migrate-and-syncronize.png)
 
-   **** Abbildung: Dialogfeld &quot; *Synchronisierung&quot;*
+   **Abbildung:** *Dialogfeld &quot;Synchronisierung&quot;*
 
 ## Fehlerbehebung von Snchronisierungsfehler {#troubleshooting-synchronization-error}
 
 Sie können neue Anwendungen im Workflow Designer (LiveCycle Workbench) erstellen. 
 
-If the newly created application and a folder at /content/dam/formsanddocuments has identical name, an error &quot;*An asset with the same name as this application already exists at root level.*&quot; protokolliert.
+If the newly created application and a folder at /content/dam/formsanddocuments has identical name, an error &quot;*An asset with the same name as this application already exists at root level.*&quot; wird protokolliert.
 
 Benennen Sie zum Beheben des Konflikts die Anwendung um und synchronisieren Sie die Elemente manuell.
 
 ![Das Dialogfeld „Konflikte bei der Synchronisierung von Elementen“](assets/sync-conflict.png)
 
-**** Abbildung: Dialogfeld &quot; *Konflikte bei der Synchronisierung von Elementen&quot;*
+**Abbildung:** *Dialogfeld &quot;Konflikte bei der Synchronisierung von Elementen&quot;*
 
