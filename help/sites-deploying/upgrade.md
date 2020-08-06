@@ -12,6 +12,9 @@ discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 75%
 
 ---
 
@@ -39,7 +42,7 @@ Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instan
 
 >[!NOTE]
 >
->Im Rahmen der Bemühungen zur Verbesserung der Zuverlässigkeit von Aktualisierungen wurde AEM 6.4 einer umfassenden Repository-Umstrukturierung unterzogen. For more information on how to align with the new structure, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
+>Im Rahmen der Bemühungen zur Verbesserung der Zuverlässigkeit von Upgrades wurde AEM 6.4 einer umfassenden Repository-Umstrukturierung unterzogen. For more information on how to align with the new structure, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
 ## Was wurde geändert? {#what-has-changed}
 
@@ -67,9 +70,9 @@ Mit **AEM 6.4** wird der [Musterdetektor](/help/sites-deploying/pattern-detector
 
 Einzelheiten zu weiteren Änderungen in den neuen AEM-Versionen finden Sie in den vollständigen Versionshinweisen:
 
-* [https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/de/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
+* [https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/de/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-4/release-notes.html)
 
 ## Überblick über die Aktualisierung {#upgrade-overview}
 
