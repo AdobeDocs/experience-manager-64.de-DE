@@ -28,7 +28,7 @@ Der Endpoint-Registrierungsdienst bietet die Möglichkeit, Endpunkte programmges
 * SOAP
 * Überwachter Ordner
 * E-Mail
-* (Veraltet für AEM Forms) Remoting
+* (Für AEM Formulare nicht mehr unterstützt) Remoting
 * Aufgabe Manager
 
    >[!NOTE]
@@ -189,7 +189,7 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Diese JAR-Dateien sind erforderlich, um einen SOAP-Endpunkt zu erstellen. Sie benötigen jedoch zusätzliche JAR-Dateien, wenn Sie den SOAP-Endpunkt zum Aufrufen des Dienstes verwenden. Weitere Informationen zu AEM Forms-JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Diese JAR-Dateien sind erforderlich, um einen SOAP-Endpunkt zu erstellen. Sie benötigen jedoch zusätzliche JAR-Dateien, wenn Sie den SOAP-Endpunkt zum Aufrufen des Dienstes verwenden. Weitere Informationen zu AEM Forms-JAR-Dateien finden Sie unter AEM Forms-Bibliotheksdateien [einschließen](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry Client-Objekt erstellen**
 
@@ -265,7 +265,7 @@ Hinzufügen eines SOAP-Endpunkts zu einem Dienst mithilfe der Java-API:
 
 Sie können einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Endpunkts für den überwachten Ordner können Sie Benutzern das Platzieren einer Datei (z. B. einer PDF-Datei) in einem Ordner ermöglichen. Wenn die Datei im Ordner abgelegt wird, wird der konfigurierte Dienst aufgerufen und verarbeitet die Datei. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei in einem angegebenen Ausgabeordner gespeichert. Ein überwachter Ordner ist so konfiguriert, dass er in einem bestimmten Zeitintervall oder mit einem Cron-Zeitplan gescannt wird, z. B. jeden Montag, Mittwoch und Freitag um 12 Uhr.
 
-Um einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzuzufügen, beachten Sie den folgenden Prozess mit kurzer Lebensdauer namens *EncryptDocument*. (Siehe [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
+Um einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzuzufügen, beachten Sie den folgenden Prozess mit kurzer Lebensdauer namens *EncryptDocument*. (Siehe [Die AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -325,12 +325,12 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **asynchron**: Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
 * **cronExpression**: Wird von Quarz verwendet, um die Abfrage des Eingabeordners zu planen. Weitere Informationen zum Konfigurieren des Cron-Ausdrucks finden Sie unter [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
 * **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll ist. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
-* **repeatInterval**: Das Intervall (in Sekunden), in dem der überwachte Ordner auf Eingabe überprüft wird. Sofern die Einschränkungen nicht aktiviert sind, sollte dieser Wert länger als die Verarbeitungszeit für einen durchschnittlichen Auftrag sein. Andernfalls kann das System überlastet werden. Der Standardwert ist 5.     
+* **repeatInterval**: Das Intervall (in Sekunden), in dem der überwachte Ordner auf Eingabe überprüft wird. Sofern die Einschränkungen nicht aktiviert sind, sollte dieser Wert länger als die Verarbeitungszeit für einen durchschnittlichen Auftrag sein. Andernfalls kann das System überlastet werden. Der Standardwert ist 5.         
 * **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder Ordner überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die jederzeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert batchSize bestimmt.
 * **userName**: Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus dem überwachten Ordner verwendet wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
 * **domainName**: Die Domäne des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
-* **batchSize**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Verwenden Sie diesen Wert, um eine Überlastung des Systems zu vermeiden. Das gleichzeitige Scannen zu vieler Dateien kann zu einem Absturz führen. Der Standardwert ist 2.     
+* **batchSize**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Verwenden Sie diesen Wert, um eine Überlastung des Systems zu vermeiden. Das gleichzeitige Scannen zu vieler Dateien kann zu einem Absturz führen. Der Standardwert ist 2.         
 * **waitTime**: Die Zeit in Millisekunden, die nach der Erstellung gewartet wird, bevor ein Ordner oder eine Datei überprüft wird. Wenn die Wartezeit beispielsweise 36.000.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von 59 oder mehr Minuten aufgenommen. Dieses Attribut ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Diese Einstellung verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie zehn Minuten lang nicht gewartet hat. Der Standardwert ist 0.
 * **excludeFilePattern**: Das Muster, mit dem ein überwachter Ordner ermittelt, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Dateien oder Ordner mit diesem Muster werden nicht zur Verarbeitung überprüft. Diese Einstellung ist nützlich, wenn die Eingabe ein Ordner ist, der mehrere Dateien enthält. Der Inhalt des Ordners kann in einen Ordner kopiert werden, der einen Namen hat, der vom überwachten Ordner aufgenommen wird. Dieser Schritt verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor der Ordner vollständig in den Eingabeordner kopiert wird. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ausdruck ändert den regulären Ordner, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von normalen Ausdrücken nicht unterstützt.
 * **includeFilePattern**: Das Muster, mit dem der überwachte Ordner ermittelt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. Der Standardwert ist `*`. Dieser Wert gibt alle Dateien und Ordner an. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ausdruck ändert den regulären Ordner, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von normalen Ausdrücken nicht unterstützt. Dieser Wert ist ein obligatorischer Wert.
@@ -496,9 +496,9 @@ Der [Schnellstart: Beim Hinzufügen eines Endpunkts für den überwachten Ordner
 
 ## Hinzufügen von E-Mail-Endpunkten {#adding-email-endpoints}
 
-Sie können einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Durch Hinzufügen eines E-Mail-Endpunkts können Sie Benutzern das Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto ermöglichen. Anschließend wird der Konfigurationsdienst aufgerufen und die Dateien werden verarbeitet. Nachdem der Dienst den angegebenen Vorgang ausgeführt hat, wird eine E-Mail-Nachricht mit den geänderten Dateien als Dateianlagen an den Absender gesendet.
+Sie können einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines E-Mail-Endpunkts können Sie Benutzern das Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto ermöglichen. Anschließend wird der Konfigurationsdienst aufgerufen und die Dateien werden verarbeitet. Nachdem der Dienst den angegebenen Vorgang ausgeführt hat, wird eine E-Mail-Nachricht mit den geänderten Dateien als Dateianlagen an den Absender gesendet.
 
-Zum programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication\EncryptDocument* in Betracht ziehen. Weitere Informationen zu Prozessen mit kurzer Lebensdauer finden Sie unter [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+Zum programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication\EncryptDocument* in Betracht ziehen. Weitere Informationen zu Prozessen mit kurzer Lebensdauer finden Sie unter [Die AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -560,9 +560,9 @@ Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmg
 
 * **cronExpression**: Ein Cron-Ausdruck, wenn die E-Mail mithilfe eines Cron-Ausdrucks geplant werden muss.
 * **repeatCount**: Gibt an, wie oft der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
-* **repeatInterval**: Die Abtastrate in Sekunden, die der Empfänger zum Prüfen auf eingehende E-Mails verwendet. Der Standardwert ist 10.     
+* **repeatInterval**: Die Abtastrate in Sekunden, die der Empfänger zum Prüfen auf eingehende E-Mails verwendet. Der Standardwert ist 10.         
 * **startDelay**: Die Wartezeit bis zum Scannen nach den Beginn der Planung. Die Standardzeit ist 0.
-* **batchSize**: Die Anzahl der E-Mail-Nachrichten, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.     
+* **batchSize**: Die Anzahl der E-Mail-Nachrichten, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.         
 * **userName**: Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domänenmuster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. For example, if `adobe.com` is used, only email from adobe.com is processed, email from other domains is ignored.
@@ -572,7 +572,7 @@ Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmg
 * **inboxHost**: Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
 * **inboxPort**: Der Anschluss, den der E-Mail-Server verwendet. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Ist SSL aktiviert, ist der Standardwert für POP3 „995“ und für IMAP „993“.
 * **inboxProtocol**: Das E-Mail-Protokoll für den E-Mail-Endpunkt, der zum Überprüfen des Posteingangs verwendet wird. Die Optionen sind `IMAP` oder `POP3`. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
-* **inboxTimeOut**: Zeitüberschreitung in Sekunden, bis der E-Mail-Anbieter auf Posteingangsantworten wartet. Der Standardwert ist 60.     
+* **inboxTimeOut**: Zeitüberschreitung in Sekunden, bis der E-Mail-Anbieter auf Posteingangsantworten wartet. Der Standardwert ist 60.         
 * **inboxUser**: Der Benutzername, der zum Anmelden beim E-Mail-Konto erforderlich ist. Je nach E-Mail-Server und Konfiguration kann dies nur der Benutzernamenteil der E-Mail-Adresse oder die vollständige E-Mail-Adresse sein.
 * **inboxPassword**: Das Kennwort für den Posteingangsbenutzer.
 * **inboxSSLEnabled**: Legen Sie diesen Wert fest, um den E-Mail-Anbieter zu zwingen, SSL zu verwenden, wenn Benachrichtigungen über Ergebnisse oder Fehler gesendet werden. Stellen Sie sicher, dass der IMAP- oder POP3-Host SSL unterstützt.
@@ -750,9 +750,9 @@ Der [Schnellstart: Beim Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/he
 
 >[!NOTE]
 >
->LiveCycle Remoting APIs für AEM Forms on JEE nicht mehr unterstützt.
+>LiveCycle Remoting-APIs für AEM Forms on JEE nicht mehr unterstützt.
 
-Sie können einem Dienst programmgesteuert einen Remoting-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Remoting-Endpunkts aktivieren Sie eine Flex-Anwendung, um den Dienst mithilfe von Remoting aufzurufen. (Siehe [Aufrufen von AEM Forms mithilfe von (für AEM Forms nicht mehr unterstützt) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Sie können einem Dienst programmgesteuert einen Remoting-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Remoting-Endpunkts aktivieren Sie eine Flex-Anwendung, um den Dienst mithilfe von Remoting aufzurufen. (Siehe [Aufrufen von AEM Forms mithilfe von (für AEM Formulare nicht mehr unterstützt) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Zum programmgesteuerten Hinzufügen eines Remoting-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *EncryptDocument* in Betracht ziehen.
 
@@ -861,7 +861,7 @@ Hinzufügen eines Remoting-Endpunkts mithilfe der Java-API:
 
 ## Hinzufügen von TaskManager-Endpunkten {#adding-taskmanager-endpoints}
 
-Sie können einem Dienst programmgesteuert einen TaskManager-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Indem Sie einem Dienst einen TaskManager-Endpunkt hinzufügen, aktivieren Sie einen Workspace-Benutzer, um den Dienst aufzurufen. Das heißt, ein in Workspace arbeitender Benutzer kann einen Prozess aufrufen, der über einen entsprechenden TaskManager-Endpunkt verfügt.
+Sie können einem Dienst programmgesteuert einen TaskManager-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Indem Sie einem Dienst einen TaskManager-Endpunkt hinzufügen, aktivieren Sie einen Workspace-Benutzer, um den Dienst aufzurufen. Das heißt, ein in Workspace arbeitender Benutzer kann einen Prozess aufrufen, der über einen entsprechenden TaskManager-Endpunkt verfügt.
 
 >[!NOTE]
 >
@@ -1057,7 +1057,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 1. Rufen Sie den zu ändernden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein als Filter fungierendes `getEndpoints` `PagingFilter` Objekt übergeben. Sie können einen `(PagingFilter)null` Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist. Weitere Informationen zu einem `PagingFilter` Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein als Filter fungierendes `getEndpoints` `PagingFilter` Objekt übergeben. Sie können einen `(PagingFilter)null` Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist. Weitere Informationen zu einem `PagingFilter` Objekt finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Durchlaufen Sie das `java.util.List` Objekt, um zu ermitteln, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint` Instanz.
    * Stellen Sie den Dienst fest, der einem Endpunkt entspricht, indem Sie die `EndPoint` Objektmethode `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
    * Bestimmen Sie den Endpunkttyp, indem Sie die `EndPoint` Objektmethode `getConnectorId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein Endpunkt des Typs &quot;Überwachter Ordner&quot;ist, gibt diese Methode `WatchedFolder`zurück.
@@ -1172,7 +1172,7 @@ Entfernen Sie einen Endpunkt mithilfe der Java-API:
 
 ## Abrufen von Endpunkt-Connector-Informationen {#retrieving-endpoint-connector-information}
 
-Mit der AEM Forms-API können Sie programmgesteuert Informationen zu Endpunktschnittstellen abrufen. Ein Connector ermöglicht es einem Endpunkt, einen Dienst mit verschiedenen Aufrufmethoden aufzurufen. Ein Connector für überwachte Ordner ermöglicht es beispielsweise einem Endpunkt, einen Dienst mit überwachten Ordnern aufzurufen. Durch programmgesteuertes Abrufen von Informationen zu Endpunktschnittstellen können Sie Konfigurationswerte abrufen, die mit einem Connector verknüpft sind, z. B. welche Konfigurationswerte erforderlich sind und welche optional sind.
+Mit der AEM Forms API können Sie programmgesteuert Informationen zu Endpunktschnittstellen abrufen. Ein Connector ermöglicht es einem Endpunkt, einen Dienst mit verschiedenen Aufrufmethoden aufzurufen. Ein Connector für überwachte Ordner ermöglicht es beispielsweise einem Endpunkt, einen Dienst mit überwachten Ordnern aufzurufen. Durch programmgesteuertes Abrufen von Informationen zu Endpunktschnittstellen können Sie Konfigurationswerte abrufen, die mit einem Connector verknüpft sind, z. B. welche Konfigurationswerte erforderlich sind und welche optional sind.
 
 In diesem Abschnitt wird veranschaulicht, wie Informationen zu Endpunktschnittstellen abgerufen werden, und es werden Informationen zu einem Connector für überwachte Ordner abgerufen. (See [Adding Watched Folder Endpoints](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
@@ -1182,7 +1182,7 @@ In diesem Abschnitt wird veranschaulicht, wie Informationen zu Endpunktschnittst
 
 >[!NOTE]
 >
->In diesem Thema wird die `ConnectorRegistryClient` API zum Abrufen von Informationen zu Endpunktschnittstellen verwendet. (Siehe [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+>In diesem Thema wird die `ConnectorRegistryClient` API zum Abrufen von Informationen zu Endpunktschnittstellen verwendet. (Siehe [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 ### Zusammenfassung der Schritte {#summary_of_steps-8}
 
