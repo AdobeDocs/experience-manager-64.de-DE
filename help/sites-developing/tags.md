@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 40%
 
 ---
 
@@ -26,4 +29,4 @@ Die folgenden Informationen sind für Entwickler verfügbar:
 
 * [AEM Tagging Framework](/help/sites-developing/framework.md) - Eine Beschreibung der für das Tagging verwendeten Knoten und Eigenschaften
 
-* [Erstellen von Tagging in einer AEM-Anwendung](/help/sites-developing/building.md) - Eine Beschreibung der APIs, die mit dem Tagging-Framework vom clientseitigen und serverseitigen Code aus funktionieren
+* [Erstellen von Tagging in einer AEM-Anwendung](/help/sites-developing/building.md) - Eine Beschreibung der APIs, die mit dem Tagging-Framework vom clientseitigen und serverseitigen Code funktionieren
