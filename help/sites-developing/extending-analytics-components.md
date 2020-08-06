@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '1265'
+ht-degree: 47%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
 
 Page template components (e.g. `head.jsp, body.jsp`) need JSP includes in order to load the ContextHub and the Adobe Analytics integration (which is a part of Cloud Services). Alle enthalten JavaScript-Dateien laden.
 
-Der ContextHub-Eintrag sollte direkt unter dem `<head>` -Tag eingefügt werden, während Cloud-Services im Abschnitt `<head>` und vor dem `</body>` Abschnitt enthalten sein sollten. Beispiel:
+Der ContextHub-Eintrag sollte direkt unterhalb des `<head>` Tags eingefügt werden, während Cloud Services in den Abschnitt `<head>` und vor dem `</body>` Abschnitt aufgenommen werden sollten. Beispiel:
 
 ```xml
 <head>
@@ -38,9 +41,9 @@ Der ContextHub-Eintrag sollte direkt unter dem `<head>` -Tag eingefügt werden, 
 
 The `contexthub` script that you insert after the `<head>` element adds the ContextHub features to the page.
 
-Die `cloudservices` Skripten, die Sie im Abschnitt `<head>` und in den `<body>` Abschnitten hinzufügen, gelten für die Cloud-Services-Konfigurationen, die der Seite hinzugefügt werden. (Wenn die Seite mehr als eine Cloud-Services-Konfiguration verwendet, müssen Sie ContextHub-JSP und Cloud-Services-JSP nur einmal einschließen.)
+Die `cloudservices` Skripten, die Sie im Abschnitt `<head>` und in den `<body>` Abschnitten hinzufügen, gelten für die Cloud-Services-Konfigurationen, die der Seite hinzugefügt werden. (Wenn die Seite mehrere Cloud Services konfiguriert, müssen Sie ContextHub-JSP und Cloud Services-JSP nur einmal einschließen.)
 
-Wenn ein Adobe Analytics-Framework zur Seite hinzugefügt wird, generieren die `cloudservices` Skripten Adobe Analytics-bezogene JavaScript-Funktionen und Verweise auf clientseitige Bibliotheken, ähnlich dem folgenden Beispiel:
+Wenn ein Adobe Analytics-Framework zur Seite hinzugefügt wird, generieren die `cloudservices` Skripten Adobe Analytics-bezogene JavaScript-Daten und Verweise auf clientseitige Bibliotheken, ähnlich dem folgenden Beispiel:
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -126,14 +129,14 @@ Dieses Ereignis wird als Bestätigung ausgelöst, sobald die Seitenverfolgung ab
 
 ## Implementieren der Adobe Analytics-Verfolgung für benutzerdefinierte Komponenten {#implementing-adobe-analytics-tracking-for-custom-components}
 
-Aktivieren Sie Ihre AEM-Komponenten für die Interaktion mit dem Adobe Analytics-Framework. Konfigurieren Sie dann Ihr Framework, damit Adobe Analytics die Komponentendaten verfolgt.
+Aktivieren Sie die AEM Komponenten, um mit dem Adobe Analytics-Framework zu interagieren. Konfigurieren Sie dann Ihr Framework so, dass Adobe Analytics die Komponentendaten verfolgt.
 
 Komponenten, die mit dem Adobe Analytics-Framework interagieren, werden in SideKick angezeigt, wenn Sie ein Framework bearbeiten. Nachdem Sie die Komponente in das Framework gezogen haben, werden die Komponenteneigenschaften angezeigt und Sie können sie dann den Adobe Analytics-Eigenschaften zuordnen. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
 Components can interact with the Adobe Analytics framework when the component has a child node named `analytics`. Der Knoten `analytics` hat folgende Eigenschaften:
 
-* `cq:trackevents`: Identifiziert die CQ-Ereignisse, die die Komponente bereitstellt. (Siehe „Benutzerdefinierte Ereignisse.)
-* `cq:trackvars`: Benennt die CQ-Variablen, die Adobe Analytics-Eigenschaften zugeordnet sind.
+* `cq:trackevents`: Identifiziert die CQ-Ereignis, die die Komponente bereitstellt. (Siehe „Benutzerdefinierte Ereignisse.)
+* `cq:trackvars`: Benennt die CQ-Variablen, die den Adobe Analytics-Eigenschaften zugeordnet sind.
 * `cq:componentName`: der Name der Komponente wird im Sidekick angezeigt.
 * `cq:componentGroup`: Die Gruppe im Sidekick, die die Komponente enthält.
 
@@ -142,7 +145,7 @@ Der Code in der component.jsp fügt JavaScript zur Seite hinzu, der die Verfolgu
 * Verwenden Sie das data-tracking-Attribut, um Ereignisdaten beim Laden einer Seite zu verfolgen. (Siehe [Verfolgen von benutzerdefinierten Ereignissen beim Laden einer Seite](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
 * Verwenden Sie die Funktion CQ_Analytics.record, um Ereignisdaten zu verfolgen, wenn Benutzer mit den Seitenfunktionen interagieren. (Siehe [Verfolgen von benutzerdefinierten Ereignissen nach dem Laden einer Seite](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
-Wenn Sie diese Datenverfolgungsmethoden verwenden, führt das Adobe Analytics-Integrationsmodul automatisch die Aufrufe an Adobe Analytics aus, um die Ereignisse und Daten aufzuzeichnen.
+Wenn Sie diese Datenverfolgungsmethoden verwenden, führt das Adobe Analytics-Integrationsmodul automatisch die Aufrufe an Adobe Analytics aus, um die Ereignis und Daten aufzuzeichnen.
 
 ### Beispiel: Verfolgen von topnav-Klicks {#example-tracking-topnav-clicks}
 
@@ -151,7 +154,7 @@ Erweitern Sie die Stiftung-Topnav-Komponente, sodass Adobe Analytics Klicks auf 
 Folgende Aufgaben müssen für die unten beschriebenen Verfahren bereits abgeschlossen sein:
 
 * Erstellen einer CQ-Anwendung
-* Adobe Analytics-Konfiguration und Adobe Analytics-Framework erstellt.
+* Eine Adobe Analytics-Konfiguration und ein Adobe Analytics-Framework erstellt.
 
 #### Kopieren der topnav-Komponente {#copy-the-topnav-component}
 
@@ -291,9 +294,9 @@ Der Inhalt der topnav.jsp-Datei sollte jetzt wie folgt aussehen:
 
 #### Hinzufügen der Verfolgungskomponente zum Sidekick {#adding-the-tracking-component-to-sidekick}
 
-Fügen Sie dem Sidekick Komponenten hinzu, die für die Verfolgung mit Adobe Analytics aktiviert wurden, damit Sie sie Ihrem Framework hinzufügen können.
+Hinzufügen Komponenten, die für die Verfolgung mit dem Adobe Analytics zum Sidekick aktiviert sind, damit Sie sie zu Ihrem Framework hinzufügen können.
 
-1. Öffnen Sie Ihr Adobe Analytics-Framework aus Ihrer Adobe Analytics-Konfiguration. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
+1. Öffnen Sie das Adobe Analytics-Framework in Ihrer Adobe Analytics-Konfiguration. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. Klicken Sie im Sidekick auf die Schaltfläche „Design“.
 
    ![](do-not-localize/chlimage_1.png)
@@ -307,7 +310,7 @@ Fügen Sie dem Sidekick Komponenten hinzu, die für die Verfolgung mit Adobe Ana
 
 #### Hinzufügen der topnav-Komponente zum Framework {#adding-the-topnav-component-to-your-framework}
 
-Ziehen Sie die topnav-Komponente in Ihr Adobe Analytics-Framework und ordnen Sie die Komponentenvariablen und -ereignisse Adobe Analytics-Variablen und -Ereignisse zu. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md).)
+Ziehen Sie die Komponente &quot;topnav&quot;in Ihr Adobe Analytics-Framework und ordnen Sie die Komponentenvariablen und Ereignis den Adobe Analytics-Variablen und -Ereignissen zu. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md).)
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -320,7 +323,7 @@ Komponenten können Daten für die Variable s.products generieren, die an Adobe 
 * Zeichnen Sie einen Wert `product` mit einer spezifischen Struktur auf.
 * Expose the data members of the `product` value so that they can be mapped with Adobe Analytics variables in the Adobe Analytics framework.
 
-Die Variable s.products von Adobe Analytics verwendet die folgende Syntax:
+Die Variable &quot;Adobe Analytics s.products&quot;verwendet die folgende Syntax:
 
 ```
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
