@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 85%
 
 ---
 
@@ -86,6 +89,7 @@ Sie können Sprach-Stämme jetzt unter Knoten gruppieren, z. B. nach Region. Di
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
+
 >
 >
 Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (americas/central-america) vom Knoten `en` entfernt ist.
