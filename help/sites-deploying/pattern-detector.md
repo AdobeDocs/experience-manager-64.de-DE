@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 93%
 
 ---
 
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -28,7 +31,7 @@ Dies kann als Bewertungsgrundlage für den erforderlichen Entwicklungsaufwand be
 
 ## Einrichtung {#how-to-set-up}
 
-Der Musterdetektor wird als separates [Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html) installiert werden.
+Der Musterdetektor wird als separates [Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/package-manager.html) installiert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -52,7 +55,7 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
 
-* **Über eine reaktive JSON-Zeilenschnittstelle**, die in jeder Zeile ein separates JSON-Dokument generiert.
+* **Über eine reaktive JSON-Leitungsschnittstelle**, die in jeder Zeile ein separates JSON-Dokument generiert.
 
 Beide Methoden werden im Folgenden erläutert:
 
