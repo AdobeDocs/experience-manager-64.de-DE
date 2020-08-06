@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
 translation-type: tm+mt
 source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
 
 Erstellen und Bearbeiten von Bedingungsfragmenten zur Verwendung in interaktiver Kommunikation. Bedingung ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktiver Kommunikation verwendet werden. Die anderen drei sind Texte, Listen und Layoutfragmente.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Bedingung ist ein Dokumentfragment, das Sie in eine interaktive Kommunikation einfügen können. Die anderen Dokumentfragmente sind [Text](/help/forms/using/texts-interactive-communications.md), Liste und Layout-Fragment. Mithilfe von Bedingungen können Sie ein oder mehrere kontextbezogene Elemente definieren, die basierend auf den bereitgestellten Daten und Regeln in eine interaktive Kommunikation einbezogen werden.
 
@@ -75,7 +78,7 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 
    **`[B]`Änderung annehmen.**Tippen Sie auf dieses Symbol, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.
 
-   **`[C]`Asset duplizieren.**Tippen Sie auf dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das duplizierte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zum Anzeigen alternativer Assets basierend auf einem bestimmten Kontext zu erstellen.
+   **`[C]`Duplikat-Asset.**Tippen Sie auf dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das duplizierte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zum Anzeigen alternativer Assets basierend auf einem bestimmten Kontext zu erstellen.
 
    **`[D]`Vorschau anzeigen.**Tippen Sie auf dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
 
@@ -133,6 +136,7 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 
    * Eigenschaft des zugeordneten Formulardatenmodells
    * Beliebige [Variablen](#variables), die Sie erstellt haben.
+
    ![createruledialog](assets/createruledialog.png)
 
    Wählen Sie die geeignete Option aus, die ausgewertet werden soll.
@@ -151,7 +155,7 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. Der erweiterte Vollbildansichtsdialog ermöglicht das Erstellen von [Variablen](#variables) zum Erstellen von Regeln. Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Regel erstellen“ zurückzukehren.
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
 
-1. Tippen Sie auf **[!UICONTROL Done]** (Fertig).
+1. Tippen Sie auf **[!UICONTROL Fertig]**.
 
    Die Regel wird auf das Asset angewendet.
 
