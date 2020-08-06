@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 62%
 
 ---
 
@@ -37,7 +40,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Kopieren Sie den `i18n` Ordner:
 
-   * from `/libs/livecycle/core/components/login`
+   * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
 1. Delete all the folders inside `i18n` except one, say `en`.
@@ -45,13 +48,14 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
    1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel: `ar`.
    1. Change the property `jcr:language` value to `ar`(for the `ar` folder).
+
    >[!NOTE]
    >
    >Wenn das Gebietsschema eine Sprach- und Ländercodekombination ist, beispielsweise `ar-DZ`, ändern Sie den Ordnernamen und den Eigenschaftswert zu `ar-DZ`.
 
 1. Kopieren `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
 1. Modify the following snippet of code for `/apps/livecycle/core/components/login/login.jsp`:
@@ -180,7 +184,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Ordner `i18n` kopieren:
 
-   * from `/libs/livecycle/core/components/login`
+   * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
 1. Ändern Sie nun den Wert der Eigenschaft `sling:message` des Knotens (unter dem Codeordner des gewünschten Gebietsschemas) für den Sie den Text ändern möchten. Die Übersetzung wird mit dem Schlüssel durchgeführt, der im Wert der Eigenschaft `sling:key` des Knotens aufgeführt ist.
@@ -189,9 +193,10 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    1. Erstellen Sie unter den Gebietsschemaordnern einen Knoten vom Typ `sling:MessageEntry` oder kopieren Sie einen vorhandenen Knoten und benennen Sie ihn um.
    1. Kopieren `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * von `/libs/livecycle/core/components/login`
       * in `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added text.
+
    ![erfassen](assets/capture.png)
 
    ```
@@ -215,7 +220,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Copy `login` node:
 
-   * from `/libs/livecycle/core/content`
+   * von `/libs/livecycle/core/content`
    * in `/apps/livecycle/core/content`
 
 1. Löschen von Dateien `login.js` und `jquery-1.8.0.min.js`von der Node `/apps/livecycle/core/content/login.`
@@ -225,7 +230,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    1. Neue Stile Hinzufügen `/apps/livecycle/core/content/login/login.css`
    1. Kopieren `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * von `/libs/livecycle/core/components/login`
       * in `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
 
