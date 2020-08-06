@@ -35,7 +35,7 @@ Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dadurc
 >
 >[API-Dokumentation](/help/sites-developing/ecommerce.md#api-documentation) ist ebenfalls verfügbar.
 
-Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM-Komponenten zur Verfügung. Derzeit sind folgende Komponenten verfügbar:
+Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM zur Verfügung. Derzeit sind folgende Komponenten verfügbar:
 
 * Produktanzeige
 * Warenkorb
@@ -51,7 +51,7 @@ Das eCommerce-Framework kann mit einer beliebigen eCommerce-Lösung verwendet we
 
    * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
 
-* AEM unterstützt `Resource.adaptTo()` und `CommerceService` `Product`
+* AEM unterstützt `Resource.adaptTo()` für `CommerceService` und `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -68,7 +68,7 @@ Das eCommerce-Framework kann mit einer beliebigen eCommerce-Lösung verwendet we
 
 Siehe folgendes Beispiel:
 
-| `cq:commerceProvider = geometrixx` | Bei einer standardmäßigen AEM-Installation ist eine spezifische Implementierung erforderlich. zum Beispiel das Beispiel geometrixx, das minimale Erweiterungen der generischen API enthält |
+| `cq:commerceProvider = geometrixx` | in einer AEM-Standardinstallation eine spezifische Implementierung erforderlich ist; zum Beispiel das Beispiel geometrixx, das minimale Erweiterungen der generischen API enthält |
 |---|---|
 | `cq:commerceProvider = hybris` | Hybridimplementierung |
 
@@ -426,7 +426,7 @@ public class AxisFilter implements VariantFilter {
 
 **Speicher**
 
-* Speicher
+* Speicherung
 
    * Bei Hybris steuert der Hybris-Server den Warenkorb.
    * Bei AEM werden Warenkörbe im Allgemeinen in [ClientContext](/help/sites-administering/client-context.md) gespeichert.
@@ -560,7 +560,7 @@ AEM kann mit diversen eCommerce-Systemen integriert werden. Dazu ist eine Strate
 
 * Konten in Hybris
 
-   AEM erstellt für jeden Käufer ein entsprechendes (untergeordnetes) Konto in Hybris. Der Benutzername dieses Kontos ist identisch mit dem AEM-Benutzernamen. Ein kryptografisches Zufallskennwort wird automatisch in AEM erstellt und gespeichert (verschlüsselt).
+   AEM erstellt für jeden Käufer ein entsprechendes (Untergeordnet-)Konto in hybris. Der Benutzername dieses Kontos ist mit dem AEM Benutzernamen identisch. Ein kryptografisches Zufallskennwort wird automatisch in AEM erstellt und gespeichert (verschlüsselt).
 
 #### Bereits vorhandene Benutzer {#pre-existing-users}
 
