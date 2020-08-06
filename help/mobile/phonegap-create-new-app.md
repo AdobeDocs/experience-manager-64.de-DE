@@ -33,7 +33,7 @@ AEM Mobile-Apps basieren auf einem Entwurf, der eine Seitenstruktur und Eigensch
 * **Beschreibung:** Eine Beschreibung des Antrags.
 * **Server-URL:** Die URL, die OTA-Inhalte (Over-the-Air) bereitstellt, wird der Anwendung aktualisiert. Der Standardwert ist die Veröffentlichungsserver-URL der Instanz, die zum Erstellen einer Anwendung verwendet wird (vom Externalisierungs-Dienst genommen). Beachten Sie, dass es sich hierbei nicht um einen Autor, sondern um eine Instanz im Veröffentlichungsserver handeln muss. Hierfür ist eine Authentifizierung erforderlich.
 
-Sie können auch eine Bilddatei zur Verwendung als Anwendungsminiaturansicht angeben, die PhoneGap Build-Konfiguration auswählen und die zu verwendende Mobile App-Analysekonfiguration auswählen. Dieses Bild wird nur als Miniaturansicht für Ihre Mobilanwendung in der App-Konsole in Experience Manager verwendet.
+Sie können auch eine Bilddatei angeben, die als Anwendungsminiaturansicht verwendet werden soll, die zu verwendende PhoneGap Build auswählen und die zu verwendende Mobile App Analytics-Konfiguration auswählen. Dieses Bild wird nur als Miniaturansicht für Ihre Mobilanwendung in der App-Konsole in Experience Manager verwendet.
 
 Zusätzliche (und optionale) Registerkarten sind vorhanden, um den Cloud-Dienst zu erstellen und das Adobe Mobile Services SDK-Plug-In in Ihre App zu integrieren.
 
@@ -49,7 +49,7 @@ Wenn Sie eine neue App erstellen, die auf der Vorlage einer anderen App basiert,
 
 Sie müssen über eine vorhandene mobile App-Vorlage verfügen (oder eine App mit einer App-Vorlage installiert haben), um diese Funktion nutzen zu können.
 
-Das neueste AEM Apps-Beispielpaket enthält eine aktualisierte Version der Geometrixx-App mit einer App-Vorlage. Alternativ können Sie auch das [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) installieren, das auch eine Vorlage bereitstellt.
+Das neueste AEM App-Musterpaket enthält eine aktualisierte Version der Geometrixx App mit einer App-Vorlage. Alternativ können Sie auch das [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) installieren, das auch eine Vorlage bereitstellt.
 
 Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 
@@ -58,7 +58,7 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-Wählen Sie eine App-Vorlage aus, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Struktur einer AEM Mobile-App](/help/mobile/phonegap-structure-an-app.md) .
+Wählen Sie eine App-Vorlage aus, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Struktur einer AEM Mobile-App](/help/mobile/phonegap-structure-an-app.md) für Entwickler.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
