@@ -317,11 +317,11 @@ Nach der Revisionsbereinigung auf CRX3-Instanzen sollten Sie die Datenspeicherbe
 >
 >Diese Aufgabe zur Wartung vor der Aktualisierung ist nur erforderlich, wenn:
 >
->* Sie aktualisieren von AEM-Versionen, die älter sind als AEM 6.3
+>* Sie aktualisieren von AEM älteren Versionen als AEM 6.3
 >* Während der Aktualisierung werden die folgenden Fehler angezeigt.
 
 
-Es gibt Ausnahmefälle, in denen Dienstbenutzer in einer älteren AEM-Version möglicherweise falsch getaggt werden als normale Benutzer.
+Es gibt Ausnahmefälle, in denen Dienstbenutzer in älteren AEM Versionen falsch getaggt werden können.
 
 In diesem Fall schlägt die Aktualisierung fehl mit einer Meldung wie der folgenden:
 
@@ -344,18 +344,18 @@ Um dieses Problem zu umgehen, gehen Sie wie folgt vor:
 
 ## Aktualisieren Sie bei Bedarf das Schema Database. {#upgrade-the-database-schema-if-needed}
 
-Normalerweise übernimmt der zugrunde liegende Apache Oak-Stack, den AEM für die Persistenz verwendet, bei Bedarf die Aktualisierung des Schemas.
+Normalerweise übernimmt der zugrunde liegende Apache Oak-Stapel, der AEM für Persistenz verwendet, bei Bedarf die Aktualisierung des Schemas.
 
-Es kann jedoch vorkommen, dass das Schema nicht automatisch aktualisiert werden kann. Dies sind meist Umgebung mit hoher Sicherheit, bei denen die Datenbank unter einem Benutzer mit sehr begrenzten Berechtigungen ausgeführt wird. In diesem Fall verwendet AEM weiterhin das alte Schema.
+Es kann jedoch vorkommen, dass das Schema nicht automatisch aktualisiert werden kann. Dies sind meist Umgebung mit hoher Sicherheit, bei denen die Datenbank unter einem Benutzer mit sehr begrenzten Berechtigungen ausgeführt wird. In diesem Fall wird AEM weiterhin das alte Schema verwenden.
 
 Um dies zu verhindern, müssen Sie das Schema wie folgt aktualisieren:
 
-1. Fahren Sie die zu aktualisierende AEM-Instanz herunter.
+1. Fahren Sie die AEM Instanz herunter, die aktualisiert werden muss.
 1. Aktualisieren Sie das Schema der Datenbank. Bitte lesen Sie die Dokumentation für Ihren Datenbanktyp, um zu sehen, welche Werkzeuge Sie dazu benötigen.
 
    Weitere Informationen zum Umgang von Oak mit Schema-Upgrades finden Sie auf [dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
-1. Fahren Sie mit der Aktualisierung von AEM fort.
+1. Fahren Sie mit der AEM fort.
 
 ## Rotieren von Protokolldateien {#rotate-log-files}
 
