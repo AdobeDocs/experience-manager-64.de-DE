@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 97%
 
 ---
 
@@ -41,6 +44,7 @@ Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müss
    * **Protokolldatei:** logs/useraudit.log
    * **Nachrichtenmuster:** Standardwert beibehalten
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Um beide Logger in das Feld **Logger** einzugeben, müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu die Schaltfläche „+“. Nun können Sie den Namen des zweiten Loggers eingeben.
 
 ## Beispielausgabe {#example-output}
