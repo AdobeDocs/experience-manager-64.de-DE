@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 82%
 
 ---
 
@@ -29,6 +32,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
    * `.core-wcm`: Die Standardkernkomponenten
    * `.core-wcm-form`: Die Kernkomponenten für die Formularübermittlung
+
    Choose `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
@@ -84,6 +88,6 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
+Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
 
 Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete details on editable templates.
