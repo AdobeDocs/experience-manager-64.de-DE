@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 87%
 
 ---
 
@@ -87,9 +90,11 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 1. Führen Sie abhängig von den verfügbaren Informationen eine der folgenden Abfragen aus:
 
    * Führen Sie Folgendes aus, wenn der Workflow-Initiator bekannt ist:
+
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
    * Führen Sie Folgendes aus, wenn der Benutzer, dessen Daten Sie finden, der aktuelle Workflow-Verantwortliche ist:
+
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
    Die Abfrage gibt den Speicherort aller Workflow-Instanzen für den angegebenen Workflow-Initiator oder den aktuellen Workflow-Empfänger zurück.
@@ -136,6 +141,7 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
    1. Go to `https://[server]:[port]/aem/start.html` and log in with administrator credentials.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
    1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um die laufenden Instanzen zu beenden.
+
    For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
 
 1. Wechseln Sie zur CRXDE Lite-Konsole, navigieren Sie zum Nutzlastpfad für eine Workflow-Instanz und löschen Sie den Knoten `payload`.
@@ -153,6 +159,6 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
 Sie können auch APIs verwenden, um auf Knoten und Eigenschaften zuzugreifen und sie zu entfernen. Weitere Informationen finden Sie in den folgenden Dokumente.
 
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](/help/sites-developing/access-jcr.md)
-* [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/de/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API-Referenz](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 
