@@ -1,5 +1,5 @@
 ---
-title: Integration von AEM Assets mit Adobe InDesign Server
+title: AEM Assets mit Adobe InDesign Server integrieren
 description: Erfahren Sie mehr über die Integration von AEM Assets mit InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,14 +11,14 @@ ht-degree: 71%
 ---
 
 
-# Integration von AEM Assets mit Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# AEM Assets mit Adobe InDesign Server integrieren {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager (AEM) Assets nutzt:
 
 * Einen Proxy für den Lastenausgleich bei der Verarbeitung bestimmter Aufgaben. Ein Proxy ist eine AEM-Instanz, die mit einem Proxy Worker kommuniziert, um eine bestimmte Aufgabe zu erfüllen, sowie mit anderen AEM-Instanzen, um das Ergebnis bereitzustellen.
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 
-Diese können eine Vielzahl von Aufgaben abdecken; zum Beispiel die Verwendung eines Adobe InDesign-Servers zur Verarbeitung von Dateien.
+Diese können eine Vielzahl von Aufgaben abdecken; zum Beispiel die Verwendung eines Adobe InDesign Server zur Verarbeitung von Dateien.
 
 Um Dateien, die Sie mit Adobe InDesign erstellt haben, vollständig in AEM Assets zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit Adobe InDesign Server, wo [Skripte](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabeformate für AEM Assets zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen InDesign Server und den AEM-Instanzen in einer Cloud-Konfiguration.
 
@@ -140,7 +140,7 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 
 >[!CAUTION]
 >
->Ändern Sie nicht die ExtendScript-Bibliothek. Die Bibliothek bietet die HTTP-Funktionalität, die für die Kommunikation mit Sling erforderlich ist. Diese Einstellung gibt die Bibliothek an, die zur Verwendung an Adobe InDesign Server gesendet werden soll.
+>Ändern Sie nicht die ExtendScript-Bibliothek. Die Bibliothek bietet die HTTP-Funktionalität, die für die Kommunikation mit Sling erforderlich ist. Diese Einstellung gibt die Bibliothek an, die dort zur Verwendung an das Adobe InDesign Server gesendet werden soll.
 
 Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Dieses Ausgabeformat wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für AEM erforderlichen statischen Ausgabeformate zu rendern.
 
@@ -180,7 +180,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **IDS-Pool**: Die SOAP-Endpunkte, die für die Kommunikation mit InDesign Server verwendet werden. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
+   * **IDS-Pool**: Der/die SOAP-Endpunkte, die für die Kommunikation mit der InDesign Server verwendet werden. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
 
 1. Klicken Sie zum Speichern auf **[!UICONTROL OK]**.
 
@@ -226,18 +226,18 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
    >[!NOTE]
    >
-   >Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die blockierungsliste von IDS-Mitarbeitern aktivieren.
+   >Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die Blockierungsliste von IDS-Mitarbeitern aktivieren.
    >
    >Dazu aktivieren Sie das Kontrollkästchen „enable.retry.name“ unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, die Wiederholungen von IDS-Aufträgen ermöglicht.
    >
    >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
    >
-   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Mitarbeiter online gefunden wird, wird er aus der blockierungsliste entfernt.
+   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Unterstützung für Adobe InDesign Server 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-higher}
+## Support für Adobe InDesign Server 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-higher}
 
 Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch, um Unterstützung für Mehrfachsitzungen zu aktivieren.
 
@@ -251,7 +251,7 @@ Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch,
 
 ## Experience Manager-Anmeldeinformationen konfigurieren {#configure-aem-credentials}
 
-Sie können die Standardberechtigung des Administrators (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrer AEM-Instanz aus ändern, ohne die Integration mit dem Adobe InDesign-Server zu unterbrechen.
+Sie können die Standardanmeldeinformationen des Administrators (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrer AEM aus ändern, ohne die Integration mit dem Adobe InDesign-Server zu unterbrechen.
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
 1. Geben Sie in diesem Dialogfeld den neuen Benutzernamen und das Kennwort ein.
