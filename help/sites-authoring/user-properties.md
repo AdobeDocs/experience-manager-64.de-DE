@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +32,7 @@ Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
    * Mit der Funktion [Stellvertretend agieren](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
-* Profile
+* Profil
 
    * Über das Profil kann bequem über einen Link auf [Benutzereinstellungen](/help/sites-administering/security.md) zugegriffen werden.
 
@@ -55,7 +58,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Fensterverwaltung**
 
-   Hiermit wird das Verhalten oder das Öffnen von Fenstern definiert. Wählen Sie ein der folgenden beiden Optionen:
+   Hiermit wird das Verhalten oder das Öffnen von Fenstern definiert. Wählen Sie eine der folgenden beiden Optionen aus:
 
    * **Mehrere Fenster** (Standard)
 
@@ -67,7 +70,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Desktop-Aktionen für Assets anzeigen**
 
-   Für diese Option ist die AEM Desktop App erforderlich.
+   Für diese Option ist das AEM-Desktop-Programm erforderlich.
 
 * **Anmerkungsfarbe**
 
@@ -95,6 +98,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
+
    Diese Option aktiviert Tastaturbefehle. Diese sind zwar standardmäßig aktiviert, können aber deaktiviert werden, etwa wenn für einen Benutzer bestimmte Anforderungen in Bezug auf die Barrierefreiheit bestehen.
 
 * **Klassisches Authoring-Erlebnis verwenden**
