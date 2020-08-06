@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 62%
 
 ---
 
@@ -66,7 +69,7 @@ Die Listen verbinden ein **Muster**, d. h. einen auf die Anforderung abgestimmt
 
 So löst beispielsweise das
 
-**Muster**`^[^/]+/[^/]+/welcome$`
+**Muster** `^[^/]+/[^/]+/welcome$`
 
 das
 
