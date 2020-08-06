@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 Das Paket **com.adobe.cq.social.ugcbase.SocialUtils** wurde in AEM 6.1 nicht mehr unterstützt.
 
-In der folgenden Tabelle sind die Methoden aufgeführt, die anstelle der SocialUtils-Methoden verwendet werden sollen.
+In den folgenden Tabellen werden die Methoden Liste, die anstelle der SocialUtils-Methoden verwendet werden sollen.
 
-## SocialResourceUtilities-Paket {#socialresourceutilities-package}
+## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
