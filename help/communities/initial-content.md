@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 7%
 
 ---
 
@@ -53,6 +56,7 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
    * Name: `an-scf-sandbox`
    * Wählen Sie **[!UICONTROL eine SCF-Sandbox-Abspielvorlage]**
    * Klicken Sie auf **[!UICONTROL Erstellen]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**:
@@ -77,7 +81,7 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-## Entwurfspfad hinzufügen {#add-the-design-path}
+## Hinzufügen des Entwurfspfads {#add-the-design-path}
 
 Wenn ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` sie mithilfe des Abschnitts &quot;Entwürfe&quot;der Konsole &quot;Werkzeuge&quot;erstellt wurde, wird die Eigenschaft
 
