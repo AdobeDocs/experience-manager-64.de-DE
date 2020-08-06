@@ -325,7 +325,7 @@ Die Farboptionen legen alle Informationen für das Farbmanagement für PDF Gener
 
 ### Adobe-Farbeinstellungen {#adobe-color-settings}
 
-**Einstellungsdatei:** Diese Liste enthält eine Liste von Farbeinstellungen, die auch in gängigen Grafikprogrammen wie Adobe Fotoshop und Adobe Illustrator verwendet werden. Die ausgewählte Farbeinstellung bestimmt die anderen Adobe-Farbeinstellungen auf dieser Seite. Wenn Sie beispielsweise eine andere Einstellung als „Ohne“ auswählen, sind alle Optionen (außer für „Geräteabhängige Daten“) vordefiniert und abgeblendet. Sie können die Einstellungen „Farbmanagement“ und „Arbeitsfarbräume“ nur bearbeiten, wenn Sie für „Einstellungsdatei“ die Option „Ohne“ auswählen.
+**Einstellungsdatei:** Diese Liste enthält eine Liste von Farbeinstellungen, die auch in gängigen Grafikanwendungen wie Adobe Photoshop und Adobe Illustrator verwendet werden. Die ausgewählte Farbeinstellung bestimmt die anderen Adobe-Farbeinstellungen auf dieser Seite. Wenn Sie beispielsweise eine andere Einstellung als „Ohne“ auswählen, sind alle Optionen (außer für „Geräteabhängige Daten“) vordefiniert und abgeblendet. Sie können die Einstellungen „Farbmanagement“ und „Arbeitsfarbräume“ nur bearbeiten, wenn Sie für „Einstellungsdatei“ die Option „Ohne“ auswählen.
 
 ### Farbmanagement-Richtlinien {#color-management-policies}
 
@@ -333,9 +333,9 @@ Wenn Sie für „Einstellungsdatei“ die Option „Ohne“ ausgewählt haben, g
 
 **Farbe unverändert lassen:** Behält geräteabhängige Farben unverändert bei und behält geräteunabhängige Farben als nächstmögliche Entsprechung in PDF bei. Diese Option eignet sich für Druckereien, die alle ihre Geräte kalibriert haben, diese Informationen zum Angeben von Farben in der Datei genutzt haben und alle Druckaufträge nur auf diesen Geräten ausgeben.
 
-**Alles für Farbmanagement kennzeichnen:** Bettet beim Destillieren von Dateien ein Profil des International Color Consortium ein und kalibriert Farbwerte in den Bildern, wodurch die Farben in den resultierenden PDF-Dateien geräteunabhängig werden, wenn Sie die Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben. Geräteabhängige Farbräume in Dateien (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert.
+**Alles für Farbmanagement kennzeichnen:** Bettet beim Destillieren von Dateien ein Profil des International Color Consortium ein und kalibriert Farben in den Bildern, wodurch Farben in den resultierenden PDF-Dateien geräteunabhängig werden, wenn Sie die Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben. Geräteabhängige Farbräume in Dateien (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert.
 
-**Nur Bilder für Farbmanagement kennzeichnen:** Bettet ICC-Profile nur bei Auswahl der Kompatibilität mit Acrobat 4 (PDF 1.3) in Bilder, nicht in Text oder Grafiken ein. Diese Option verhindert, dass schwarzer Text Farbverschiebungen unterzogen wird. Geräteabhängige Farbräume in Bildern (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert. Text und Grafiken werden nicht konvertiert.
+**Nur Bilder für Farbmanagement kennzeichnen:** Bettet ICC-Profile nur bei Auswahl der Acrobat 4 (PDF 1.3)-Kompatibilität in Bilder, nicht in Text oder Grafiken ein. Diese Option verhindert, dass schwarzer Text Farbverschiebungen unterzogen wird. Geräteabhängige Farbräume in Bildern (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert. Text und Grafiken werden nicht konvertiert.
 
 **Alle Farben in sRGB konvertieren oder Alle Farben in CMYK konvertieren:** Kalibriert die Farbe in der Datei, wodurch die Farbe geräteunabhängig wird, ähnlich wie bei &quot;Alles für Farbmanagement kennzeichnen&quot;. Wenn Sie eine Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben und eine Konvertierung in sRGB ausführen, werden CMYK- und RGB-Bilder in sRGB konvertiert.
 
@@ -399,7 +399,7 @@ Die erweiterten Optionen bestimmen, welche DSC-Kommentare (Document Structuring 
 
 Für das Arbeiten mit den erweiterten Optionen ist es hilfreich, mit der Sprache PostScript und ihrer Übersetzung in PDF vertraut zu sein. (Siehe [Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html).)
 
-**PostScript-Datei darf Adobe PDF-Einstellungen außer Kraft setzen:** Verwendet Einstellungen, die in einer PostScript-Datei gespeichert werden, anstelle der aktuellen Adobe PDF-Einstellungsdatei. Vor der Verarbeitung einer PostScript-Datei können Sie der Datei Parameter hinzufügen, um folgende Aspekte zu steuern:
+**PostScript-Datei darf Adobe PDF-Einstellungen überschreiben:** Verwendet in einer PostScript-Datei gespeicherte Einstellungen anstelle der aktuellen Adobe PDF-Einstellungsdatei. Vor der Verarbeitung einer PostScript-Datei können Sie der Datei Parameter hinzufügen, um folgende Aspekte zu steuern:
 
 * Komprimierung von Text und Grafiken
 * Neuberechnung und Kodierung ausgewählter Bilder
@@ -407,7 +407,7 @@ Für das Arbeiten mit den erweiterten Optionen ist es hilfreich, mit der Sprache
 
 **PostScript XObjects zulassen:** PostScript XObjects speichern Informationen, die auf vielen Seiten derselben Datei angezeigt werden, wie z.B. ein Hintergrundbild oder Kopf- und Fußzeileninformationen. Das Verwenden von PostScript XObjects kann zu einem schnelleren Druck führen, belegt aber mehr Druckerspeicher. Um das Erstellen von PostScript XObjects zu verhindern, deaktivieren Sie diese Option, wenn Sie PDF-Dateien mit einer Kompatibilität mit Acrobat 5 (PDF 1.4) oder höher erstellen.
 
-**Verläufe in weiche Schattierungen konvertieren:** Konvertiert Füllfarben in weiche Farbtöne für Acrobat 4 und höher, wodurch PDF-Dateien kleiner werden und die Qualität der endgültigen Ausgabe möglicherweise verbessert wird. PDF Generator konvertiert Farbverläufe aus Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark XPress und Microsoft PowerPoint.
+**Verläufe in weiche Schattierungen konvertieren:** Konvertiert Füllfarben in glatte Schattierungen für Acrobat 4 und höher, wodurch PDF-Dateien kleiner werden und die Qualität der endgültigen Ausgabe möglicherweise verbessert wird. PDF Generator konvertiert Farbverläufe aus Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark XPress und Microsoft PowerPoint.
 
 **Glatte Linien in Kurven konvertieren:** Reduziert die Anzahl der Steuerpunkte, die zum Erstellen von Kurven in CAD-Zeichnungen verwendet werden, was zu kleineren PDFs und einer schnelleren Bildschirmwiedergabe führt.
 
