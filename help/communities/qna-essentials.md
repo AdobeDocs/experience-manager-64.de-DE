@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 3%
 
 ---
 
@@ -66,17 +69,17 @@ Eine Community-Site-Struktur, die die [QnA-Funktion](functions.md#qna-function) 
 
 ### Zugriff auf QnA-Forumsbeiträge (UGC) {#accessing-qna-forum-posts-ugc}
 
-UGC sollte mit einer der Standardmethoden für Moderation moderiert werden.\
+UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.\
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
 * [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
