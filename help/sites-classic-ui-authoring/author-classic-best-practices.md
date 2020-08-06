@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +26,7 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [Formulare](#forms)
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
@@ -66,10 +69,10 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
 
 Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
 
-Authoring: [Autorenumgebung und -werkzeuge](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Bietet eine Übersicht über das Erstellen von Seiten.
+Authoring: [Authoring-Umgebung und -Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Bietet eine Übersicht über das Erstellen von Seiten.
 
 ## Formulare {#forms}
 
-Adaptive Formulare: Best [Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt bewährte Verfahren zum Einrichten, Erstellen und Anpassen adaptiver Formulare.
+Adaptive Formulare: [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt bewährte Verfahren zum Einrichten, Erstellen und Anpassen adaptiver Formulare.
 
 HTML5 forms: [Best practices for designing HTML5 forms](/help/forms/using/best-practices-for-html5-forms.md) - Describes best practices for working on layout and design of HTML5 forms.
