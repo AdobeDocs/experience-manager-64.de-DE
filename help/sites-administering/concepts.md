@@ -1,6 +1,6 @@
 ---
-title: Konzepte
-seo-title: Konzepte
+title: 'Konzepte '
+seo-title: 'Konzepte '
 description: Allgemeine eCommerce-Konzepte in AEM
 seo-description: Allgemeine eCommerce-Konzepte in AEM
 uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 translation-type: tm+mt
 source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
+workflow-type: tm+mt
+source-wordcount: '4532'
+ht-degree: 81%
 
 ---
 
 
-# Konzepte{#concepts}
+# Konzepte {#concepts}
 
 Das Integrationsframework stellt Mechanismen und Komponenten für die folgenden Aufgaben bereit:
 
@@ -42,6 +45,7 @@ Das heißt:
    >
    >
 * [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+
 >
 
 
@@ -68,7 +72,7 @@ Um den Betrieb zu optimieren, konzentrieren sich AEM und die eCommerce-Engine au
 
 * AEM kann:
 
-   * anfordern:
+   * Anforderung:
 
       * Produktdaten von der eCommerce-Engine
    * Geben Sie Folgendes an:
@@ -100,7 +104,7 @@ Um den Betrieb zu optimieren, konzentrieren sich AEM und die eCommerce-Engine au
 >
 >Die genauen Details hängen von der eCommerce-Engine und der Projektimplementierung ab.
 
-Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM-Komponenten zur Verfügung. Aktuell gehören dazu folgende:
+Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM zur Verfügung. Aktuell gehören dazu folgende:
 
 * Produktangaben
 * Warenkorb
@@ -136,6 +140,7 @@ AEM eCommerce wird mit einer eCommerce-Engine implementiert:
 >
 >* Ein eigenständiges, AEM-natives eCommerce-Beispiel, um die Nutzung der API zu veranschaulichen. Sie können damit in Verbindung mit den vorhandenen Datenanzeigen und Marketingkampagnen Produktdaten, Warenkörbe und Bezahlungen kontrollieren. In diesem Fall ist die Produktdatenbank im nativen Repository von AEM gespeichert (die [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)-Implementierung von Adobe).\
    >  Die standardmäßige AEM-Installation enthält die Grundlagen der [generischen eCommerce-Implementierung](/help/sites-administering/generic.md).
+
 >
 
 
@@ -204,7 +209,7 @@ Der tatsächliche Ort kann je nach Implementierung unterschiedlich ausfallen (z.
 
 ## Produkte {#products}
 
-### Produktdaten und Marketingdaten {#product-data-versus-marketing-data}
+### Produkt Data versus Marketing Data {#product-data-versus-marketing-data}
 
 #### Strukturelle Kategorien und Marketingkategorien {#structural-versus-marketing-categories}
 
@@ -212,13 +217,13 @@ Durch die Unterscheidung der folgenden beiden Kategorien können Sie deutliche U
 
 * *Struktur *Kategorien
 
-   die Kategoriestruktur, in der *das Produkt* definiert wird; Beispiel:
+   der Baum der Kategorie, der *das Erzeugnis* definiert; Beispiel:
 
    `/products/mens/shoes/sneakers`
 
 * *Marketing* -Kategorien
 
-   Alle anderen Kategorien, zu denen ein *Produkt gehören* kann; Beispiel:
+   Alle anderen Kategorien, denen ein *Erzeugnis angehören* kann; Beispiel:
 
    `/special-offers/christmas/shoes`)
 
@@ -269,7 +274,7 @@ Welche individuellen Attribute zu jedem Produkt gespeichert werden, hängt mögl
 
 * **Standard-Asset-Kategorie**
 
-   Eine Standardkategorie für Assets.
+   Eine Standard-Kategorie für Assets.
 
 * **ERP-Daten**
 
@@ -368,13 +373,13 @@ Diese Buckets werden in Form von Phantomordnern in die Katalogstruktur eingefüh
 
 Dieses Szenario sieht vor, dass zwei Autoreninstanzen eingerichtet werden:
 
-1. Master-Autoreninstanz
+1. Übergeordnet Autoreninstanz
 
    Importiert Produktdaten von PIM, bei denen die Nachbearbeitung für die Asset-Pfade deaktiviert ist.
 
 1. Dedizierte DAM-Autoreninstanz
 
-   Importiert und verarbeitet Produkt-Assets aus dem PIM und repliziert diese dann zur Verwendung zurück zur Master-Autoreninstanz.
+   Importiert und verarbeitet Produkt-Assets aus dem PIM und repliziert diese dann zur Verwendung zurück zur Übergeordnet Authoring-Instanz.
 
 ![Architekturdiagramm](assets/chlimage_1-171.png)
 
@@ -393,11 +398,11 @@ Wenn Produkte keine Assets (Bilder) enthalten, die importiert werden müssen, k�
 
 Leistungstests müssen bei AEM eCommerce-Implementierungen in Erwägung gezogen werden:
 
-* Autorenumgebung:
+* Autor-Umgebung:
 
-   Hintergrundaktivität (z. B. Import) kann gleichzeitig mit normaler Benutzeraktivität (z. B. Seitenbearbeitung) auftreten, und selbst wenn die Front-End-Leistung (im Allgemeinen) eine höhere Priorität erhält, kann eine schlechte Leistung, die von Online-Autoren gesehen wird, zu Frustration führen, die eine Go-Live-Entscheidung blockieren kann.
+   Die Aktivität im Hintergrund (z. B. beim Import) kann gleichzeitig mit der normalen Aktivität des Benutzers (z. B. bei der Seitenbearbeitung) erfolgen. Selbst wenn die Front-End-Leistung (im Allgemeinen) eine höhere Priorität erhält, kann eine schlechte Leistung, die von Online-Autoren erkannt wird, zu Frustration führen, die eine Go-Live-Entscheidung blockieren kann.
 
-* Veröffentlichungsumgebung:
+* Umgebung der Veröffentlichung:
 
    Die Replikation ist ein entscheidender Prozess, um sicherzustellen, dass die Inhalte schnell und zuverlässig veröffentlicht werden. Dies kann dadurch beeinflusst werden, wie der Autor die Inhalte gruppiert, die veröffentlicht werden sollen.
 
@@ -588,13 +593,13 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfas
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   außerhalb eines Erlebnisses liegt und daher nie automatisch ausgelöst wird (d. h.: basierend auf der Segmentierung). Sie wird jedoch von den Gutscheinen referenziert, die in mehreren Erlebnissen innerhalb der Artikelkampagne enthalten sind. Die Eingabe dieser Gutscheincodes in den Warenkorb führt zu einer Promotion-Auslösung.
+   außerhalb eines Erlebnisses liegt und daher nie automatisch ausgelöst wird (d. h.: basierend auf der Segmentierung). Sie wird jedoch von den Gutscheinen referenziert, die in mehreren Erlebnissen innerhalb der Kampagne des Artikels enthalten sind. Die Eingabe dieser Gutscheincodes in den Warenkorb führt zu einer Promotion-Auslösung.
 
 >[!NOTE]
 >
 >[hybris promotions](https://www.hybris.com/modules/promotion) und [hybris vouchers](https://www.hybris.com/en/modules/voucher) decken alle Aspekte ab, die sich auf den Warenkorb auswirken und mit der Preisfestlegung in Verbindung stehen. Promotionspezifische Marketinginhalte (wie Banner) sind nicht Teil der hybris-Promotion.
 
-## Personalisierung    {#personalization}
+## Personalisierung      {#personalization}
 
 ### Kundenregistrierung und -konten {#customer-registration-and-accounts}
 
@@ -680,7 +685,7 @@ Das Adressbuch kommt zum Einsatz, wenn Sie den Warenkorb bezahlen:
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 Addresses are persisted below `user_home/profile/addresses`.\
-Für Alison Parker wäre es beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/address
+Für Alison Parker wäre es beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/Profil/address
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. The profile property `address.default` is set with the path of the selected address for value.
 
@@ -811,7 +816,7 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Lieferadresse**
 
-   Anschrift, an die die Waren versandt werden sollen.
+   Die Anschrift, an die die Waren versandt werden sollen.
 
 * **Versandart**
 
@@ -819,7 +824,7 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Nachverfolgungsnummer**
 
-   Eine von der Reederei verwendete Rückverfolgungsnummer.
+   Eine beliebige von der Firma verwendete Verfolgungsnummer.
 
 * **Nachverfolgungslink**
 
@@ -849,7 +854,7 @@ Nachdem sie eine Bestellung aufgegeben haben, kehren Käufer häufig zurück, um
 
 Nach dem Erhalt der Lieferung möchten Käufer möglicherweise die Bestellungen einsehen, die sie in einem bestimmten Zeitraum aufgegeben haben.
 
-Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Informationen können von AEM über die Komponente &quot;Auftragsverlauf&quot;angezeigt werden, die alle relevanten Details einschließlich der angewendeten Gutscheine und Promotions anzeigt. Beispiel:
+Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Die Informationen können AEM mit der Bestellverlaufskomponente angezeigt werden, die alle relevanten Details einschließlich der Gutscheine und Promotions anzeigt. Beispiel:
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
@@ -869,7 +874,7 @@ Die Einhaltung des Payment Card Industry (PCI)-Standards ist gewährleistet.
 
 Die Bestellung wird auf dem Bildschirm bestätigt und lässt sich mit der [Bestellungsnachverfolgung](#order-tracking) nachverfolgen.
 
-## Suche{#search-features}
+## Suche {#search-features}
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
