@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +25,7 @@ Wenn Benutzer ein Formular ausfüllen, müssen Eingaben in manchen Felder zuweil
 Führen Sie die folgenden Schritte aus, um eine Vorlage zu erstellen:
 
 1. Öffnen Sie ein Formular und wählen Sie die Felder aus, für bei jeder Verwendung gleichbleibende Werte verwendet werden sollen, bzw. geben Sie diese Werte dort ein. Sie eine Anlage in die Vorlage einbeziehen, die normalerweise beim Ausfüllen des Formulars hinzugefügt wird.
-1. Tippen Sie auf **Als Vorlage** speichern ![als_](assets/save_as_template.png)Vorlage. Ein Dialogfeld, in dem Sie den Namen der Vorlage eingeben können, wird angezeigt.
+1. Tippen Sie auf das Symbol **Als Vorlage** speichern ![als_](assets/save_as_template.png)Vorlage. Ein Dialogfeld, in dem Sie den Namen der Vorlage eingeben können, wird angezeigt.
 1. Specify the name of the template and tap **Save**. Die Vorlage wird im Vorlagenordner angezeigt.
 
    Wenn Sie eine Vorlage mit demselben Namen vorhanden ist, wird ein Dialogfeld angezeigt, in dem Sie bestätigen müssen, dass die vorhandene Vorlage überschrieben werden soll. Um die vorhandene Vorlage durch die neue Vorlage zu ersetzen, tippen Sie auf **Weiter**, um die Vorlage unter einem anderen Namen zu speichern, tippen Sie auf **Abbrechen**.
