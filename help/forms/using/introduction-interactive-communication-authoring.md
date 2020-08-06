@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1315'
+ht-degree: 55%
 
 ---
 
@@ -33,7 +36,7 @@ Wenn Sie eine [neue interaktive Kommunikation](/help/forms/using/create-interact
 
 ![Benutzeroberfläche der interaktiven Kommunikation](assets/form-editor.png)
 
-******A. Seitenleiste** B. Seitensymbolleiste **C.** Inhaltsbereich
+**A.** Seitenleiste **B.** Seitensymbolleiste **C.** Inhaltsbereich
 
 ## Randleiste {#sidebar}
 
@@ -41,7 +44,7 @@ Wenn Sie eine [neue interaktive Kommunikation](/help/forms/using/create-interact
 
 [Zum Vergrößern hier klicken](assets/sidebar-comps-1.png)
 
-**************A. Kanalbrowser** B. Inhaltsbrowser **C.** Eigenschaftenbrowser **D. Asset Browser** E. Komponenten-Browser **F. Datenquellen-Browser - Datenmodell** G. Datenquellen-Browser - Hauptinhalt
+**A.** Kanal Browser **B.** Inhaltsbrowser **C.** Eigenschaftenbrowser **D.** Asset Browser **E.** Komponenten-Browser **F.** Datenquellen-Browser - Datenmodell **G.** Data Sources-Browser - Übergeordnet Content
 
 Die Seitenleiste beinhaltet Folgendes:
 
@@ -55,10 +58,9 @@ Die Seitenleiste beinhaltet Folgendes:
 
 * **Eigenschaftenbrowser**
 
-   Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokumentbehälters an:
+   Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokument-Containers an:
 
-   
-Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > **Dokumentcontainer** und dann auf ![cmppr](assets/cmppr.png).
+   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > **Dokument-Container** und dann auf ![cmppr](assets/cmppr.png).
 
 * **Assets-Browser**
 
@@ -66,21 +68,21 @@ Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-l
 
 * **Komponentenbrowser**
 
-   Umfasst Komponenten, die Sie zum Aufbau der Druck- und Webkanäle eines Dokuments verwenden können. Sie können Komponenten in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen und hinzugefügte Elemente gemäß den Anforderungen zu konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Webkanäle beschrieben. 
+   Umfasst Komponenten, die Sie zum Erstellen der Druck- und Web-Kanäle eines Dokuments verwenden können. Sie können Komponenten in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen und hinzugefügte Elemente gemäß den Anforderungen zu konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Webkanäle beschrieben. 
 
 | **Komponente** | **Druckkanal** | **Webkanal** | **Funktion** |
 |---|---|---|---|
 | Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
-| Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Texts, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf Formulardatenmodellen oder ohne Formulardatenmodell basieren. |
+| Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf Formulardatenmodellen oder ohne Formulardatenmodell basieren. |
 | Bild | ✓ | ✓ | Ermöglicht es Ihnen, ein Bild einzufügen. |
 | Fenster | - | ✓ | Die Bereichskomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bereichskomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. mehrere Einträge zum Ausfüllen von Bildungsnachweisen. Es empfiehlt sich außerdem, ein Bedienfeld für jede Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
-| Tabelle |  &amp;ast; | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
+| Tabelle | &amp;ast; | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
 | Zielbereich | &amp;ast;&amp;ast; | ✓ | Fügt einen Zielbereich in einen Webkanal ein, um die webkanalspezifischen Komponenten zu organisieren. |
 | Text | - | ✓ | Fügt dem Webkanal einer interaktiven Kommunikation Text hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
 
- &amp;ast; Verwenden Sie Layout-Fragmente im Druckkanal, um Tabellen hinzuzufügen.
+&amp;ast; Verwenden Sie Layout-Fragmente im Kanal &quot;Drucken&quot;, um Tabellen hinzuzufügen.
 
-&amp;ast;&amp;ast; Im Druckkanal sind Zielbereiche in der XDP-/Druckvorlage vordefiniert. Sie können keine neuen Zielbereiche mithilfe der Autorenoberfläche für die interaktive Kommunikation hinzufügen.
+&amp;ast;&amp;ast; Im Kanal &quot;Drucken&quot;sind die Bereiche der Zielgruppe in der XDP-/Druckvorlage vordefiniert. Sie können keine neuen Zielbereiche mithilfe der Autorenoberfläche für die interaktive Kommunikation hinzufügen.
 
 * **Datenquellen-Browser**
 
@@ -134,7 +136,7 @@ J. **More**: Provides more options to work with the selected component.
 
 ## Seitensymbolleiste {#page-toolbar}
 
-Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau der interaktiven Kommunikation anzeigen und deren Eigenschaften ändern können. Sie können eine Vorschau der interaktiven Kommunikation anzeigen, wenn Sie sie erstellen, und entsprechende Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
+Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommunikation Vorschau und ihre Eigenschaften ändern können. Sie können die interaktive Kommunikation beim Erstellen einer Vorschau erstellen und entsprechende Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
 
 * Toggle Side Panel ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
 * Page information ![pageinformationad](assets/pageinformationad.png): Lets you view page properties.
@@ -147,8 +149,8 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau der int
 
       * Entdecken Sie, woraus interaktive Kommunikation besteht.
       * Debugging der am Formular durchgeführten Aktionen zur Behebung von Fehlern.
-   * Ziel: Ermöglicht die Aktivierung oder Deaktivierung benutzerdefinierter Komponenten oder von vordefinierten Komponenten, die nicht in der Seitenleiste aufgeführt sind.
+   * Zielgruppe: Ermöglicht die Aktivierung oder Deaktivierung benutzerdefinierter Komponenten oder von vordefinierten Komponenten, die nicht in der Seitenleiste aufgeführt sind.
 
 
-* Vorschau: Hier können Sie eine Vorschau der interaktiven Kommunikation anzeigen, wenn Sie sie veröffentlichen.
+* Vorschau: Ermöglicht die Vorschau, wie die interaktive Kommunikation aussieht, wenn Sie sie veröffentlichen.
 
