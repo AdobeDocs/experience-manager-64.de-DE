@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '2270'
+ht-degree: 68%
 
 ---
 
@@ -107,12 +110,12 @@ Stellen Sie im Voraus sicher, dass Sie über die folgenden Elemente verfügen:
 
 * [Eine AEM-Autoreninstanz](/help/sites-deploying/deploy.md#getting-started)
 * [Eine AEM-Veröffentlichungsinstanz](/help/sites-deploying/deploy.md#author-and-publish-installs)
-* [Eine Adobe Campaign Classic-Instanz](https://helpx.adobe.com/support/campaign/classic.html) - einschließlich Client und Server
+* [Eine Adobe Campaign Classic-Instanz](https://helpx.adobe.com/support/campaign/classic.html) , einschließlich Client und Server
 * Internet Explorer 11
 
 >[!NOTE]
 >
->If you are running a version earlier than Adobe Campaign Classic build 8640, see the [upgrade documentation](https://docs.campaign.adobe.com/doc/AC6.1/en/PRO_Updating_Adobe_Campaign_Upgrading.html) for more information. Beachten Sie, dass der Client und die Datenbank auf denselben Build aktualisiert werden müssen.
+>If you are running a version earlier than Adobe Campaign Classic build 8640, see the [upgrade documentation](https://docs.campaign.adobe.com/doc/AC6.1/de/PRO_Updating_Adobe_Campaign_Upgrading.html) for more information. Beachten Sie, dass der Client und die Datenbank auf denselben Build aktualisiert werden müssen.
 
 >[!CAUTION]
 >
@@ -123,7 +126,7 @@ Stellen Sie im Voraus sicher, dass Sie über die folgenden Elemente verfügen:
 You must install the **AEM Integration** package in Adobe Campaign. Gehen Sie hierfür wie folgt vor:
 
 1. Wechseln Sie zu der Adobe Campaign-Instanz, die Sie gern mit AEM verknüpfen möchten.
-1. *Wählen Sie* Werkzeuge *>* Erweitert *> Paket* importieren... .
+1. Select *Tools* > *Advanced* > *Import package...*.
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -153,6 +156,7 @@ Sie müssen ein externes Konto konfigurieren, das es Ihnen ermöglicht, Adobe C
 >
 >* When installing the **AEM Integration** package, an external AEM account is created. Von diesem Konto aus können Sie die Verbindung mit der AEM-Instanz konfigurieren oder Sie können eine neue anlegen.
 >* Stellen Sie in AEM sicher, dass Sie das Kennwort für den Benutzer „campaign-remote“ festlegen. Sie müssen dieses Kennwort festlegen, um Adobe Campaign mit AEM zu verknüpfen. Melden Sie sich als Administrator an und wählen Sie an der Benutzeradministrationskonsole den Benutzer „campaign-remote“. Klicken Sie dann auf **Kennwort festlegen**.
+
 >
 
 
@@ -165,7 +169,7 @@ So konfigurieren Sie externe AEM-Konten:
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass die Serveradresse **nicht** in einem Schrägstrich endet. Geben Sie beispielsweise `https://yourserver:4502` anstelle von `https://yourserver:4502/`
+   >Stellen Sie sicher, dass die Serveradresse **nicht** in einem Schrägstrich endet. For example, enter `https://yourserver:4502` instead of `https://yourserver:4502/`
 
    ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -205,7 +209,7 @@ Inhalte, die in der AEM-Autoreninstanz erstellt werden, werden zunächst zur Ver
 >[!NOTE]
 >
 >If you do not want to use the replication URL but instead use the public-facing URL, you can set the **Public URL** in the following configuration setting in the OSGi (**AEM logo** >  **Tools** icon >  **Operations** > **Web Console** > **OSGi Configuration** > **AEM Campaign Integration - Configuration**):
-**** Öffentliche URL: com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+**Öffentliche URL:** com.day.cq.mcm.Kampagne.impl.IntegrationConfigImpl#aem.mcm.Kampagne.publicUrl
 
 Dieser Schritt ist auch erforderlich, um bestimmte Autoreninstanzkonfigurationen in die Veröffentlichungsinstanz zu replizieren.
 
@@ -235,7 +239,7 @@ Bevor Sie AEM und Adobe Campaign zusammen verwenden können, müssen Sie die be
 1. Create a new configuration by entering a **Title** and click **Create**, or choose the existing configuration that you want to link with your Adobe Campaign instance.
 1. Passen Sie die Konfiguration so an, dass sie den Parametern Ihrer Adobe Campaign-Instanz entspricht.
 
-   * **Benutzername**: **aemserver**, der AEM-Integrationspaket-Operator für Adobe Campaign, der zum Herstellen der Verbindung zwischen den beiden Lösungen verwendet wird.
+   * **Benutzername**: **aemserver**, der Adobe Campaign AEM Integration Package Operator, der zum Herstellen der Verbindung zwischen den beiden Lösungen verwendet wird.
    * **Kennwort**: Das Adobe Campaign-Kennwort des aemserver-Operators. Unter Umständen müssen Sie das Kennwort für diesen Operator direkt in Adobe Campaign erneut angeben.
    * **API-Endpunkt**: URL der Adobe Campaign-Instanz.
 
@@ -284,7 +288,7 @@ Eine Standardliste wird bereitgestellt, kann jedoch geändert werden. Sie könne
 To add a new personalization field to those that are already available, you have to extend the Adobe Campaign **nms:seedMember** schema as follows:
 
 >[!CAUTION]
-Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemaerweiterung hinzugefügt worden sein (**nms:recipient**). For more information, see the [Configuration](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Editing_schemas.html) guide.
+Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemaerweiterung hinzugefügt worden sein (**nms:recipient**). For more information, see the [Configuration](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Editing_schemas.html) guide.
 
 1. Go to the **Administration** > **Configuration** > **Data schemas** node in the Adobe Campaign navigation.
 1. Select **New**.
@@ -300,7 +304,7 @@ Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemae
    * **Schema**: Wählen Sie das Schema **nms:seedMember** . Die anderen Felder im Fenster werden automatisch ausgefüllt.
    * **Namespace**: Personalisieren Sie den Namespace des erweiterten Schemas.
 
-1. Bearbeiten Sie den XML-Code des Schemas, um das Feld anzugeben, das Sie dort hinzufügen möchten. For more information on extending schemas in Adobe Campaign, refer to the [Configuration guide](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Extending_a_schema.html).
+1. Bearbeiten Sie den XML-Code des Schemas, um das Feld anzugeben, das Sie dort hinzufügen möchten. For more information on extending schemas in Adobe Campaign, refer to the [Configuration guide](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Extending_a_schema.html).
 1. Save your schema then update the Adobe Campaign database structure via the **Tools** > **Advanced** > **Update database structure** menu in the console.
 1. Trennen Sie die Verbindung zur Adobe Campaign-Konsole und stellen Sie die Verbindung wieder her, um die Änderungen zu speichern. Das neue Feld wird nun in der Liste der in AEM verfügbaren Personalisierungsfelder angezeigt.
 
