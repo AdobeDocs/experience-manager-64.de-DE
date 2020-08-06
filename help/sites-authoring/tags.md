@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
 translation-type: tm+mt
 source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 82%
 
 ---
 
@@ -32,7 +35,7 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 1. Kontrolliertes Tagging: Tagging kann durch Anwenden von Berechtigungen auf Tags und/oder Namespaces zum Steuern der Tag-Erstellung und -Anwendung kontrolliert werden.
 
-1. Flexibles Tagging: Tags können viele Namen und Formen annehmen: Tags, Taxonomiebegriffe, Kategorien, Beschriftungen und vieles mehr. Ihr Inhaltsmodell und ihre Verwendung flexibel und können an die jeweiligen Bedürfnisse angepasst werden, z. B. bei der Zielgruppendefinition, der Kategorisierung und Bewertung von Inhalten oder bei der Erstellung sekundärer Inhaltshierarchien.
+1. Flexibles Tagging: Tags können viele Namen und Formen annehmen: Tags, Taxonomiebegriffe, Kategorien, Beschriftungen und vieles mehr. Ihr Inhaltsmodell und ihre Verwendung sind flexibel und können an die jeweiligen Bedürfnisse angepasst werden, z. B. bei der Zielgruppendefinition, der Kategorisierung und Bewertung von Inhalten oder bei der Erstellung sekundärer Inhaltshierarchien.
 
 1. Verbessertes Suchen: Die Standardsuchkomponente in AEM enthält erstellte Tags und angewendete Tags, auf die Filter angewendet werden können, um die Ergebnisse auf die relevanten einzugrenzen.
 
@@ -46,11 +49,11 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Assets entwerfen, sollten Sie den leichten und zugänglichen Ansatz berücksichtigen, den Tagging bietet.
 
-## Anwenden von Tags {#applying-tags}
+## Anwenden von Tags   {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. Die Registerkarte **Standard-Tags** ist der Standard-Namespace. Das bedeutet, dass der Taxonomie kein `namespace-string:`-Präfix vorangestellt wird.
+To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
