@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 56%
 
 ---
 
@@ -20,10 +23,10 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 ## Allgemein {#general}
 
 * [root](#root)
-* [group](#group)
+* [-Gruppe](#group)
 * [orderby](#orderby)
 
-## Eigenschaften {#predicates}
+## Prädikate {#predicates}
 
 * [boolproperty](/help/sites-developing/querybuilder-predicate-reference.md#boolproperty)
 * [contentfragment](/help/sites-developing/querybuilder-predicate-reference.md#contentfragment)
@@ -58,9 +61,11 @@ Unterstützt die Facettenextraktion. Erstellt für jeden Wert (`true` oder `fals
 
 #### Eigenschaften {#properties}
 
-* **boolproperty** relative path to property, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`
+* **Beispiel: boolproperty** relative path to property 
+`myFeatureEnabled` oder `jcr:content/myFeatureEnabled` sein.
 
-* **Wert**, für den die Eigenschaft &quot;, `true`&quot;oder &quot; `false`&quot; überprüft werden soll
+* **Wert**, für den die Eigenschaft überprüft werden soll, 
+`true`&quot; oder &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -157,13 +162,13 @@ Facettenextraktion wird nicht unterstützt.
 
 * **fulltext**
 
-   der/die Volltextsuchbegriff(e)
+   der/die Suchbegriff(e) im Volltext
 
 * **relPath**
 
    Der relative Pfad, der in der Eigenschaft oder dem Teilknoten durchsucht werden soll. Diese Eigenschaft ist optional.
 
-### group {#group}
+### -Gruppe{#group}
 
 Ermöglicht die Erstellung verschachtelter Bedingungen. Gruppen können verschachtelte Gruppen enthalten. Alles in einer querybuilder-Abfrage gehört zu einer root-Gruppe, die auch `p.or`- und `p.not`-Parameter aufweisen kann.
 
@@ -348,7 +353,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
    relative path to property, for example `jcr:title`
 
-* **value**
+* **Wert**
 
     Wert, auf den die Eigenschaft überprüft werden soll. Verarbeitet Umwandlungen anhand des JCR-Eigenschaftstyps als Zeichenfolgen.
 
@@ -366,7 +371,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **depth**
 
-   Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` überprüft Node/Größe, Node/&amp;ast;/size und node/&amp;ast;/&amp;ast;/size)
+   Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` überprüft Node/Größe, Node/&amp;ast;/Größe und Node/&amp;ast;/&amp;ast;/size)
 
 ### rangeproperty {#rangeproperty}
 
@@ -408,11 +413,11 @@ Gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuel
 
 Beispiel:
 
-* `upperBound=1h` (und nein `lowerBound`) würde in der nächsten Stunde etwas auswählen
-* `lowerBound=-1d` (und keine `upperBound`) würde in den letzten 24 Stunden etwas auswählen
-* `lowerBound=-6M` und `upperBound=-3M` wählen Sie alle 6 Monate bis 3 Monate aus
+* `upperBound=1h` (und nein `lowerBound`) würde in der nächsten Stunde irgendetwas auswählen
+* `lowerBound=-1d` (und nein `upperBound`) würde in den letzten 24 Stunden etwas auswählen
+* `lowerBound=-6M` und `upperBound=-3M` wählen Sie alle 6 Monate bis 3 Monate aus.
 * `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt. 
-* `lowerBound=1d` und `upperBound=2d` wählen übermorgen alles aus
+* `lowerBound=1d` und `upperBound=2d` wählte übermorgen alles aus
 
 Hinweis: Schaltjahre werden nicht berücksichtigt und alle Monate haben 30 Tage.
 
@@ -444,7 +449,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
 
 * **p.limit**
 
-   Zahl zur Angabe der Seitengröße
+   Zahl, die das Seitenformat angibt
 
 * **p.rateTotal**
 
@@ -496,7 +501,8 @@ Filtern wird nicht unterstützt. Facettenextraktion wird nicht unterstützt.
 
 * **similar** Absoluter Pfad zum Knoten, für den ähnliche Knoten gefunden werden sollen.
 
-* **lokal** ein relativer Pfad zu einem untergeordneten Knoten oder `.` für den aktuellen Knoten (optional, Standard ist `.`&quot;)
+* **lokal** einen relativen Pfad zu einem untergeordneten Knoten oder 
+`.` für die aktuelle Node (optional) (Standard ist &quot; `.`&quot;)
 
 ### tag {#tag}
 
@@ -570,6 +576,6 @@ Unterstützt die Facettenextraktion. Stellt für jeden einzigartigen Typ in den 
 
 #### Eigenschaften {#Properties-2}
 
-* **type**
+* **Typ**
 
    node type or mixin name to search for, for example `cq:Page`
