@@ -26,7 +26,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 
    * **Entwicklungsordner** – enthalten digitale Assets, an denen Sie derzeit arbeiten.
    * **Kundenordner** – enthalten digitale Assets basierend auf Kunden oder Projektnamen.
-   * **Primäre Ordner** - enthält digitale Originalelemente.
+   * **Primär folders** - enthält digitale Originalelemente.
    * **Ausgabeformatordner** – enthalten Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
    * **Dateigrößenordner** – enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateien.
    * **Bereitstellungsordner** – enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
@@ -39,9 +39,9 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Mithilfe von Tags als Metadaten können Sie ganz einfach Assets suchen, Sammlungen mit den Suchergebnissen erstellen, die Suchrangliste nach bestimmten Assets verbessern und die AI-Algorithmen von Adobe Sensei zur Ermittlung von Assets nutzen.
+Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mit den Suchergebnissen erstellen, die Suchrangliste für einige Assets verbessern und die AI-Algorithmen von Adobe Sensei zur Ermittlung von Assets nutzen.
 
-Adobe Experience Manager Assets verwendet einen Selbstlernalgorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset in nur wenigen Klicks finden können. Beim intelligenten Tagging wird Adobe Sensei verwendet, unser Framework für künstliche Intelligenz und maschinelles Lernen, mit dem Standard- und unternehmensspezifische Tags erkannt und auf Bilder angewendet werden können. Intelligente Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden
+Adobe Experience Manager Assets verwendet einen Selbstlernalgorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset in nur wenigen Klicks finden können. Beim intelligenten Tagging werden Adobe Sensei, unser künstliches Intelligenz- und maschinelles Lernen-Framework, eingesetzt, das sowohl Standard- als auch unternehmensspezifische Tags erkennen und auf Bilder anwenden kann. Intelligente Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 ## Als Sammlungen organisieren {#organize-as-collections}
 
-Mit Asset-Sammlungen in Experience Manager Assets können Sie die Erstellung, Bearbeitung und Freigabe von Assets zwischen Benutzern optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenz-Liste von Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
+Mit Asset-Sammlungen in Experience Manager Assets können Sie die Erstellung, Bearbeitung und Freigabe von Assets optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenz-Liste von Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
 
 For more information, see [manage collections](managing-collections-touch-ui.md)
 
