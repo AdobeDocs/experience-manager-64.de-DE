@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +23,7 @@ Mithilfe des Ausdrucksgenerators können Sie Ausdrücke oder Bedingungen erstell
 
 ## Erstellen von Ausdrücken und Remote-Funktionen mit dem Ausdrucksgenerator {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Der Expression Builder verwendet intern JSP EL-Bibliotheken, sodass der Ausdruck der JSPEL-Syntax entspricht. Weitere Informationen finden Sie unter [Beispielausdrücke](#exampleexpressions).
+Der Ausdruck Builder verwendet intern JSP-EL-Bibliotheken, sodass der Ausdruck die JSPEL-Syntax einhält. Weitere Informationen finden Sie unter [Beispielausdrücke](#exampleexpressions).
 
 ![Ausdrucksgenerator](assets/expressionbuilder.png)
 
@@ -33,7 +36,7 @@ Die zur Verwendung in Ausdrücken verfügbaren Operatoren sind auf der oberen Le
 Im Folgenden werden einige Beispiele für häufige JSP-EL-Verwendungszwecke gezeigt, die Sie für Ihre Correspondence Management-Lösung verwenden können.
 
 * So fügen Sie zwei Zahlen hinzu: ${number1 + number2}
-* Verketten zweier Zeichenfolgen: ${str1} ${str2}
+* So verketten Sie zwei Zeichenfolgen: ${str1} ${str2}
 * So vergleichen Sie zwei Zahlen: ${age &lt; 18}
 
 Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Der clientseitige Expression Manager unterstützt nicht alle Variablen und Funktionen in der JSP-EL-Spezifikation. Dabei gilt:
@@ -45,7 +48,7 @@ Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.
    * java.lang.Character
    * Char
    * java.lang.Boolean
-   * Boolesch 
+   * Boolesch
    * java.lang.Integer
    * Int
    * java.util.list
@@ -74,7 +77,7 @@ Remote-Funktionen ermöglichen die Nutzung von benutzerdefinierter Logik in Ausd
 Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Funktionen zur Verwendung in Ausdrücken zu exportieren. Um ein benutzerdefiniertes Bundle zum Exportieren Ihrer eigenen Remote-Funktionen zu erstellen, führen Sie folgende Schritte aus. Sie demonstrieren, wie Sie eine benutzerdefinierte Funktion schreiben, deren Eingabezeichenfolge groß geschrieben wird.
 
 1. Definieren Sie eine Schnittstelle für den OSGi-Dienst, die Methoden enthält, die zur Verwendung in Expression Manager exportiert werden sollen.
-1. Deklarieren Sie Methoden auf der Schnittstelle A und versehen Sie sie mit der Anmerkung &quot;@ServiceMethod&quot;(com.adobe.exm.expeval.ServiceMethod). Expression Manager ignoriert alle Methoden, bei denen keine Anmerkungen vorhanden sind. Die ServiceMethod-Anmerkung verfügt über die folgenden optionalen Attribute, die ebenfalls angegeben werden können:
+1. Deklarieren Sie Methoden auf der Schnittstelle A und kommentieren Sie sie mit der Anmerkung &quot;@ServiceMethod&quot;(com.adobe.exm.expeval.ServiceMethod). Expression Manager ignoriert alle Methoden, bei denen keine Anmerkungen vorhanden sind. Die ServiceMethod-Anmerkung verfügt über die folgenden optionalen Attribute, die ebenfalls angegeben werden können:
 
    1. **Enabled**: Bestimmt, ob diese Methode aktiviert ist. Expression Manager ignoriert deaktivierte Methoden.
    1. **familyId**: Legt die Familie (Gruppe) der Methode fest. Wenn dieses Attribut leer ist, geht Expression Manager davon aus, dass die Methode zur Standardfamilie gehört. Es ist keine Registrierung für Familien (außer der Standardeinstellung) vorhanden, um die Auswahl von Funktionen zu ermöglichen. Expression Manager erstellt die Registrierung dynamisch durch Zusammenführen aller Familien-IDs, die durch sämtliche von den verschiedenen Bundles exportierte Funktionen angegeben werden. Stellen Sie sicher, dass hier eine lesbare ID angegeben wird, da diese auch in der Authoring-Benutzeroberfläche für die Ausdrücke angezeigt wird.
@@ -98,7 +101,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.lang.Character
    * Char
    * java.lang.Boolean
-   * Boolesch 
+   * Boolesch
    * java.lang.Integer
    * Int
    * java.lang.Short
