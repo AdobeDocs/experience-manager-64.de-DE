@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 78%
 
 ---
 
@@ -47,7 +50,7 @@ Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren
   </tr> 
   <tr> 
    <td><p>Systemadministrator</p> </td> 
-   <td><p>Der AEM-Begrüßungsbildschirm wird nach Doppelklicken auf AEM CM Schnellstart nicht im Browser angezeigt</p> </td> 
+   <td><p>Der AEM Begrüßungsbildschirm wird nach dem Klicken der Dublette auf AEM CM QuickStart nicht im Browser angezeigt</p> </td> 
   </tr> 
   <tr> 
    <td><p>Systemadministrator</p> <p>Admin-Benutzer</p> </td> 
