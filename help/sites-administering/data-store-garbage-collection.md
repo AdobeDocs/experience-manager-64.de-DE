@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ee9d11a-85c2-440d-b487-a38d04dc040b
 translation-type: tm+mt
 source-git-commit: 3c4b8bf3fd912406657c4cecb75eb2b77dd41bc7
+workflow-type: tm+mt
+source-wordcount: '1905'
+ht-degree: 80%
 
 ---
 
@@ -53,7 +56,7 @@ Dieser Ansatz funktioniert bei einem einzelnen Knoten mit einem privaten Datensp
 
 >[!NOTE]
 >
->Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil Blob-IDs, die in einer vorherigen Garbage Collection gelöscht wurden, von anderen Clustern oder freigegebenen Knoten, die keine Informationen über die ID-Löschungen haben, falsch referenziert werden. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+>Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil Blob-IDs, die in einer vorherigen Garbage Collection gelöscht wurden, von anderen Clustern oder freigegebenen Knoten, die keine Informationen über die ID-Löschungen haben, fälschlicherweise erneut referenziert werden. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
 
 ## Ausführen der automatischen Datenspeicherbereinigung {#running-data-store-garbage-collection}
 
@@ -83,17 +86,17 @@ In der folgenden Tabelle sind die Speicherbereinigungstypen aufgeführt, die fü
   <tr> 
    <td>TarMK</td> 
    <td>Externes Dateisystem</td> 
-   <td><p>Datspeicher-Garbage Collection-Aufgabe über das Operations-Dashboard</p> <p>JMX-Konsole</p> </td> 
+   <td><p>Aufgabe der Datenerfassung über das Operations-Dashboard</p> <p>JMX-Konsole</p> </td> 
   </tr> 
   <tr> 
    <td>MongoDB</td> 
    <td>MongoDB</td> 
-   <td><p>Datspeicher-Garbage Collection-Aufgabe über das Operations-Dashboard</p> <p>JMX-Konsole</p> </td> 
+   <td><p>Aufgabe der Datenerfassung über das Operations-Dashboard</p> <p>JMX-Konsole</p> </td> 
   </tr> 
   <tr> 
    <td>MongoDB</td> 
    <td>Externes Dateisystem</td> 
-   <td><p>Datspeicher-Garbage Collection-Aufgabe über das Operations-Dashboard</p> <p>JMX-Konsole</p> </td> 
+   <td><p>Aufgabe der Datenerfassung über das Operations-Dashboard</p> <p>JMX-Konsole</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,7 +153,7 @@ So führen Sie die Speicherbereinigung durch:
 
 >[!NOTE]
 >
->Die Datenerfassungsaufgabe für den Datenspeicher wird nur gestartet, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. If an external file data store has not been configured, the task will return the message `Cannot perform operation: no service of type BlobGCMBean found` after invoking. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
+>Die Aufgabe zur Datenerfassung im Datenspeicher wird nur dann Beginn, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. If an external file data store has not been configured, the task will return the message `Cannot perform operation: no service of type BlobGCMBean found` after invoking. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
 
 ## Automatisieren der automatischen Datenspeicherbereinigung {#automating-data-store-garbage-collection}
 
@@ -162,7 +165,7 @@ Das integrierte, über das [Vorgangs-Dashboard](/help/sites-administering/opera
 >
 >Der Grund dafür, sie nicht gleichzeitig auszuführen, ist, dass alte (und nicht verwendete) Datenspeicherdateien ebenfalls gesichert werden, sodass die Binärdateien, falls sie zu einer alten Revision zurückgeführt werden müssen, weiterhin in der Sicherung vorhanden sind.
 
-Wenn Sie nicht möchten, dass Datenspeicher-Garbage Collection mit dem wöchentlichen Wartungsfenster im Operations Dashboard ausgeführt wird, kann sie auch mithilfe der HTTP-Clients &quot;wget&quot;oder &quot;curl&quot;automatisiert werden. Das folgende Beispiel zeigt, wie die Sicherung mithilfe von curl automatisiert wird:
+Wenn Sie nicht möchten, dass Datenspeicher-Garbage Collection mit dem wöchentlichen Wartungsfenster im Operations-Dashboard ausgeführt wird, kann sie auch mit den HTTP-Clients &quot;wget&quot;oder &quot;curl&quot;automatisiert werden. Das folgende Beispiel zeigt, wie die Sicherung mithilfe von curl automatisiert wird:
 
 >[!CAUTION]
 >
