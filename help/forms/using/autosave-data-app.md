@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 75%
 
 ---
 
@@ -40,5 +43,5 @@ Führen Sie die folgenden Schritte aus, um die automatische Speicherung in der A
 1. Wenn Sie die App neu starten und sich als derselbe Benutzer anmelden, werden Sie aufgefordert, Ihre Aufgabe mit dem Dialogfeld „Nicht gespeicherte Aufgabe wiederherstellen“ wiederherzustellen. Click **[!UICONTROL OK]** in the Recover Unsaved Task dialog to resume working with the saved task. Klicken Sie auf **[!UICONTROL Abbrechen]**, um die gespeicherten Daten entsprechend der zuletzt ausgelösten automatischen Speicherung zu löschen und an einer neuen Aufgabe zu arbeiten.
 
    Wenn Sie auf **[!UICONTROL OK]** klicken, wird die Aufgabe mit den Daten entsprechend der zuletzt ausgelösten automatischen Speicherung vor Absturz der App wiederhergestellt. Es enthält die Formulardaten und alle mit der Aufgabe verknüpften Anlagen.
-   [![](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)****Aufgabe** wiederherstellen **A. Ein derzeit bearbeitetes Formular** B. App wurde **C.** App mit dem Dialogfeld &quot;Nicht gespeicherte Aufgabe wiederherstellen&quot; **D erneut gestartet. Formular mit Originaldaten wiederhergestellt
+   [ ![Eine Aufgabe](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**wiederherstellenA.**Ein derzeit bearbeitetes Formular** B.**App wurde** C.**App wurde mit dem Dialogfeld &quot;Nicht gespeicherte Aufgabe wiederherstellen&quot;** D erneut gestartet.**Formular mit Originaldaten wiederhergestellt
 
