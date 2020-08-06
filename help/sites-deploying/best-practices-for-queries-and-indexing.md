@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '4620'
+ht-degree: 86%
 
 ---
 
@@ -21,7 +24,7 @@ Neben dem Übergang zu Oak in AEM 6 wurden auch einige bedeutende Änderungen i
 
 In diesem Artikel wird beschrieben, wann Indizes zu erstellen sind und wann auf sie verzichtet werden kann. Außerdem finden Sie hierin Tricks zum Vermeiden von nicht benötigten Abfragen sowie Tipps zur Funktionsoptimierung von Indizes und Abfragen.
 
-Darüber hinaus sollten Sie die [Oak-Dokumentation zum Erstellen von Abfragen und Indizes](/help/sites-deploying/queries-and-indexing.md) lesen. Neben Indizes, die in AEM 6 ein neues Konzept darstellen, gibt es syntaktische Unterschiede bei Oak-Abfragen, die bei der Migration von Code aus einer vorherigen AEM-Installation berücksichtigt werden müssen.
+Darüber hinaus sollten Sie die [Oak-Dokumentation zum Erstellen von Abfragen und Indizes](/help/sites-deploying/queries-and-indexing.md) lesen. Neben Indizes, die in AEM 6 ein neues Konzept darstellen, gibt es syntaktische Unterschiede in Oak-Abfragen, die bei der Migration von Code aus einer vorherigen AEM berücksichtigt werden müssen.
 
 ## Verwenden von Abfragen {#when-to-use-queries}
 
@@ -119,13 +122,13 @@ Sie können die Indizes Ihres Systems auch im JSON-Format extrahieren. In order 
 
 **Während der Entwicklung**
 
-Legen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10000) und oak. `queryLimitReads` (z. 5000) fest und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException-Ausnahme „The query read more than x nodes...“ auftritt.
+Legen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10000) und oak. `queryLimitReads` (z. B. 5000) fest und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException-Ausnahme „The query read more than x nodes...“ auftritt.
 
 Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Sicherung durch einen Index oder Sicherung durch einen weniger abdeckenden Index). Beispielsweise führt eine Abfrage, die 1 Million Knoten liest, zu einer I/O-Steigerung – mit negativen Folgen für die Gesamtleistung der Anwendung. Jede Abfrage, die aufgrund eines überschrittenen Limits fehlschlägt, sollte analysiert und optimiert werden.
 
 #### **Nach der Bereitstellung** {#post-deployment}
 
-* Überwachen Sie die Protokolle auf Abfragen, die eine große Node-Traversal oder einen hohen Speicherverbrauch auslösen: &quot;
+* Überwachen Sie die Protokolle auf Abfragen, die einen großen Node-Traversal- oder großen Heap-Speicherverbrauch auslösen: &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimieren Sie die Abfrage, um die Anzahl durchlaufener Knoten zu reduzieren.
@@ -135,7 +138,7 @@ Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Siche
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimieren Sie die Abfrage, um den Heap-Speicherverbrauch zu reduzieren.
 
-Bei AEM 6.0-6.2-Versionen können Sie den Schwellenwert für die Knotenverfolgung über JVM-Parameter im AEM-Startskript anpassen, um zu verhindern, dass große Abfragen die Umgebung überladen.
+Bei AEM 6.0-6.2-Versionen können Sie den Schwellenwert für die Node-Traversal mithilfe von JVM-Parametern im Skript &quot;AEM Beginn&quot;anpassen, um zu verhindern, dass große Abfragen die Umgebung überladen.
 
 Folgende Werte werden empfohlen:
 
@@ -226,6 +229,7 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 >* die Abfrage richtig ist
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
 >* Der Indizierungsvorgang wurde abgeschlossen.
+
 >
 
 
@@ -368,7 +372,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
    * If this does not resolve the issue, and the `AsyncIndexUpdate` exceptions persist then:
 
       1. [Indizieren](#how-to-re-index) Sie den fehlerhaften Index neu.
-      1. Also file an [Adobe Support](https://helpx.adobe.com/support.html) ticket
+      1. Also file an [Adobe Support](https://helpx.adobe.com/de/support.html) ticket
 
 
 ### Neuindizieren von Indizes {#how-to-re-index}
@@ -435,7 +439,7 @@ Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzero
 * Es muss ein Wartungsfenster vorhanden sein, um die CSV-Datei zu generieren und die abschließende Neuindizierung durchzuführen.
 * Die folgenden Oak-Version müssen verwendet werden: 1.0.18 oder höher, 1.2.3 oder höher.
 * [oak-run.](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)jarversion 1.7.4+
-* Ein Dateisystemordner/eine freigegebene Datei zum Speichern des extrahierten Texts, auf den/die die indizierende(n) AEM-Instanz(en) zugreifen kann
+* Ein Dateisystemordner/eine freigegebene Datei zum Speichern von extrahiertem Text, auf den/die AEM Indizierungsinstanzen zugreifen können
 
    * Die OSGi-Konfiguration zur Textvorextraktion setzt einen Dateisystempfad zu den extrahierten Textdateien voraus; diese dürfen also nicht direkt über die AEM-Instanz (lokales Laufwerk oder Bereitstellung der Dateifreigabe) verfügbar sein.
 
