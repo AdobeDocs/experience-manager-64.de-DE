@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2833'
+ht-degree: 72%
 
 ---
 
@@ -27,6 +30,7 @@ Workflow-Modelle beinhalten eine Reihe von Schritten unterschiedlichen Typs. Je 
 >
 >* [Referenz für Workflow-Schritte in AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Verarbeitung von Assets mithilfe von Medien-Handlern und Workflows](/help/assets/media-handlers.md)
+
 >
 
 
@@ -197,6 +201,7 @@ Mit der **[!UICONTROL ODER-Teilung]** wird der Workflow so geteilt, dass nur ein
       * **[!UICONTROL Skriptpfad]**: Der Pfad zu einer Datei, die das Skript enthält.
       * **[!UICONTROL Skript]**: Fügen Sie das Skript im Feld hinzu.
       * **[!UICONTROL Standardroute]**: Die Standardverzweigung wird verwendet, wenn mehrere Verzweigungen als „true“ ausgewertet werden. Sie können nur eine Verzweigung als Standard festlegen.
+
    >[!NOTE]
    >
    >Es gibt eine separate Registerkarte für jede Verzweigung:
@@ -238,6 +243,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 >
 >* der Workflow abgeschlossen (beendet) wurde.
 >* der Workflow abgebrochen (beendet) wurde.
+
 >
 
 
@@ -404,7 +410,7 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
 
    >[!CAUTION]
    >
-   >You *must* not change anything in the `/libs` path.
+   >Sie dürfen *keinerlei* Änderungen im Pfad `/libs` vornehmen.
    >
    >
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
@@ -427,6 +433,7 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
 
    * `SERVICE_PROPERTY_LABEL` Feld: Verwenden Sie dieses Feld, um den Namen der Teilnehmerauswahl anzugeben. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **[!UICONTROL Dynamischer Teilnehmer – Schritt]** angezeigt.
    * `getParticipant` Methode: Gibt die dynamisch aufgelöste Principal-ID als `String` Wert zurück.
+
    >[!CAUTION]
    >
    >The `getParticipant` method returns the dynamically resolved Principal id. Dies kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
@@ -513,7 +520,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 Erstellen Sie wie gewohnt ein Formular mit einem **[!UICONTROL Formular „Teilnehmer – Schritt“]**. Formulare für Formular „Teilnehmer – Schritt“ müssen wie folgt konfiguriert werden:
 
-* Für die Komponente **[!UICONTROL Start des Formulars]** muss die Eigenschaft **[!UICONTROL Aktionstyp]** auf `Edit Workflow Controlled Resource(s)`eingestellt sein.
+* Für den **[!UICONTROL Beginn der Formularkomponente]** muss die **[!UICONTROL Eigenschaft Aktionstyp]** auf `Edit Workflow Controlled Resource(s)`eingestellt sein.
 
 * The **[!UICONTROL Start of Form]** component must have a value for the `Form Identifier` property.
 
