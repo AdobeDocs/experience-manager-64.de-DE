@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 32%
 
 ---
 
@@ -25,8 +28,8 @@ Diese Verfolgungsmöglichkeit bietet eine zusätzliche Art der Aktivitätenansic
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Activity Streams-Komponente zu einer AEM-Site
-* Konfigurationseinstellungen für die Activity Stream-Komponente
+* Hinzufügen der Aktivität Streams-Komponente zu einer AEM Site
+* Konfigurationseinstellungen für die Aktivität Streams-Komponente
 
 ## Hinzufügen von Aktivitäts-Streams zu einer Seite {#adding-activity-streams-to-a-page}
 
@@ -55,27 +58,27 @@ Auf der Registerkarte **[!UICONTROL Benutzeraktivitäten]** können Sie festlege
 * **[!UICONTROL Max. Anzahl der Aktivitäten]** Die Anzahl der anzuzeigenden Aktivitäten
 * **[!UICONTROL Stream-Ressourcenpfad]** Feld leer lassen, um standardmäßig auf die Community-Site oder die Community-Gruppe zu verweisen. Mit dem Stream-Ressourcenpfad wird die Aktivitätenquelle festgelegt. Standardmäßig ist das Feld leer.
 * **[!UICONTROL Ansicht der Benutzeraktivitäten anzeigen]** Ist diese Option aktiviert, findet sich auf der Aktivitätenseite eine Registerkarte, mit der Aktivitäten nach denjenigen Elementen gefiltert werden können, die vom aktuellen Mitglied innerhalb der Community generiert wurden. Diese Option ist standardmäßig aktiviert.
-* **[!UICONTROL Alle Aktivitätenanzeige anzeigen]** Wenn diese Option aktiviert ist, enthält die Aktivitätsseite eine Registerkarte, die alle Aktivitäten enthält, die innerhalb der Community generiert wurden, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
-* **[!UICONTROL Nach Ansicht]** anzeigen Wenn diese Option aktiviert ist, enthält die Aktivitätsseite eine Registerkarte, in der Aktivitäten nach denen gefiltert werden, die das aktuelle Mitglied verfolgt. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Ansicht]**&quot;Alle Aktivitäten anzeigen&quot;Wenn diese Option aktiviert ist, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, die alle Aktivitäten enthält, die innerhalb der Community generiert wurden, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Anzeige Nach Ansicht]** Wenn aktiviert, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, auf der die Aktivitäten der Filter basierend auf denen des aktuellen Mitglieds folgen. Diese Option ist standardmäßig aktiviert.
 
-## Folgende Ansicht {#following-view}
+## FOLGENDE Ansicht {#following-view}
 
 Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [Blog](blog-feature.md), [Forum](forum.md), [QnA](working-with-qna.md), [Kalender](calendar.md), [Dateibibliothek](file-library.md)[](comments.md)undKommentare.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-Über die Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, [Benachrichtigungen](notifications.md)und/oder [Abonnements](subscriptions.md)verfolgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
+Über die Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, [Benachrichtigungen](notifications.md)und/oder [Abonnements](subscriptions.md)folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
 
 Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Folgendem** geändert. Aus praktischen Gründen ist es möglich, alle Methoden `Unfollow All` zu deaktivieren.
 
-Die Schaltfläche **Folgen** wird angezeigt:
+Die Schaltfläche &quot; **Folgen** &quot;wird angezeigt:
 
 * Beim Anzeigen des Profils eines anderen Mitglieds
 * Auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs
-   * Folgt allen Aktivitäten für diese allgemeine Funktion
+   * Folgt der gesamten Aktivität für diese allgemeine Funktion
 
 * Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Beantwortung einer Frage oder einen Blog-Artikel
-   * Folgt allen Aktivitäten für diesen spezifischen Eintrag
+   * Folgt der gesamten Aktivität für diesen spezifischen Eintrag
 
 ## Zusätzliche Informationen {#additional-information}
 
