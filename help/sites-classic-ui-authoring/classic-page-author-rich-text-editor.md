@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +36,7 @@ Das Editor-Dialogfeld arbeitet nach dem WYSIWYG-Prinzip und bietet eine Vielzahl
 >
 >Welche Features verfügbar sind, richtet sich nach dem jeweiligen Projekt, Ihre spezielle Installation kann also Abweichungen aufweisen.
 
-## Bearbeitung im Kontext {#in-place-editing}
+## Bearbeiten im Kontext {#in-place-editing}
 
 Zusätzlich zu der Bearbeitung in Dialogfeldern durch den Rich-Text-Editor bietet AEM noch die Möglichkeit einer Bearbeitung im Kontext, bei der Sie den Text so bearbeiten, wie er im Layout der Seite erscheint.
 
@@ -157,7 +160,7 @@ Verschachtelte Listen lassen sich durch Einrücken eines oder mehrerer Listenpun
 
 Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor innerhalb der Liste platzieren und einen anderen Stil wählen. Außerdem kann eine Unterliste einen anderen Stil aufweisen als die übergeordnete Liste. Dieser Stil kann angewendet werden, sobald Sie die Unterliste (durch Einrücken) erstellt haben.
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_Listen_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
@@ -350,7 +353,7 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung** - Links, Mitte oder rechts
+* **Horizontale Ausrichtung** - links, zentriert oder rechts
 * **Vertikale Ausrichtung** - Oben, Mitte, Unten oder Grundlinie
 * **Zellentyp** - Daten oder Kopfzeile
 * **Anwenden auf:**
@@ -408,6 +411,7 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 >
 >* Windows IE: Verwenden Sie Strg+primäre Maustaste (in der Regel linke Maustaste) zur Auswahl mehrerer Zellen.
 >* Firefox: Ziehen Sie mit der Maus, um einen Zellenbereich auszuwählen.
+
 >
 
 
