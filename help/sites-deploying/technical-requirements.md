@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
 source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+workflow-type: tm+mt
+source-wordcount: '3144'
+ht-degree: 84%
 
 ---
 
@@ -43,6 +46,7 @@ Mindestanforderungen für die Ausführung von Adobe Experience Manager:
 >
 >* Digitale Assets benötigen mehr Grundspeicher. Einzelheiten finden Sie unter [Bereitstellung und Wartung](/help/sites-deploying/deploy.md#default-local-install).
 >* Das [AEM Forms Add-on-Paket](/help/forms/using/installing-configuring-aem-forms-osgi.md) benötigt 15 GB temporären Speicherplatz. 
+
 >
 
 
@@ -315,7 +319,7 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen:
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Forms-Add-On-Funktionen werden nur unter CentOS 7 und Red Hat Enterprise Linux 6.5 und 7 unterstützt.
+1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Formular-Add-On-Funktionen werden nur unter CentOS 7 und Red Hat Enterprise Linux 6.5 und 7 unterstützt.
 1. AEM Assets: Informationen hierzu finden Sie im Abschnitt über die [Unterstützung für das Zurückschreiben von XMP-Metadaten](#requirements-for-aem-assets-xmp-metadata-write-back).
 1. AEM Assets: Nicht unterstützt für Dynamic Media Imaging. Videos für dynamische Medien werden nicht unterstützt.
 1. AEM Forms wird nur auf Ubuntu 16.04 LTS unterstützt.
@@ -336,7 +340,7 @@ Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services w
 
 ### Dispatcher-Plattformen (Webserver) {#dispatcher-platforms-web-servers}
 
-Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.4 ist die Dispatcher-Version 4.3.1 oder höher erforderlich.
+Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.4 ist die Dispatcher-Version 4.3.1 oder höher erforderlich.
 
 Die folgenden Webserver werden für die Verwendung mit der Dispatcher-Version 4.3.1 unterstützt:
 
@@ -543,15 +547,15 @@ Zur Verwendung von dynamischen Medien unter Windows müssen Microsoft Visual Stu
 
 x64
 
-* The Microsoft Visual Studio 2010 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
-* The Microsoft Visual Studio 2013 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* The Microsoft Visual Studio 2010 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/de-de/download/details.aspx?id=13523)
+* The Microsoft Visual Studio 2013 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/de-de/download/details.aspx?id=40784)
+* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/de-de/download/details.aspx?id=48145)
 
 x86
 
 * The Microsoft Visual Studio 2010 redistributable can be found at [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
 * The Microsoft Visual Studio 2013 redistributable can be found at [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* The Microsoft Visual Studio 2015 redistributable can be found at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/de-de/download/details.aspx?id=52685)
 
 #### MacOS {#macos}
 
@@ -618,6 +622,7 @@ x86
 >* PDF Generator-Konversionen für OpenOffice werden nur unter Windows, Linux und Solaris unterstützt.
 >* Die Funktionen von OCR PDF, Optimize PDF und Export PDF werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+
 >
 
 
