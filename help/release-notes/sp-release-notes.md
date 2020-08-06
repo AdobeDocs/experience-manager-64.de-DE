@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
+source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
 workflow-type: tm+mt
 source-wordcount: '21624'
 ht-degree: 25%
@@ -95,7 +95,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das Bild wird auf der Zeitleiste nicht angezeigt, nachdem Anmerkungen hinzugefügt wurden, auf einem Experience Manager, der im Scene7-Ausführungsmodus für dynamische Medien ausgeführt wird (NPR-31754).
 
-* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-31745) geöffnet werden.
+* ZIP-Datei, die von DAM heruntergeladen wurde, kann nicht mit WinZip (NPR-31745) geöffnet werden.
 
 ### Integrationen {#integrations-6480}
 
@@ -203,7 +203,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Sonderzeichen, die in der Betreffzeile von E-Mail-Vorlagen auftreten, werden nicht richtig angezeigt (NPR-30547).
 
-* Beim Verschieben von Assets aus einem Ordner in einen anderen im AEM im Dynamischen Media Scene7-Modus (NPR-31631) werden die Asset-Namen in Kleinbuchstaben geändert.
+* Beim Verschieben von Assets aus einem Ordner in einen anderen im AEM im Dynamic Media Scene7-Runmode (NPR-31631) werden die Asset-Namen in Kleinbuchstaben geändert.
 
 * Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn Bildsatz (oder Mediaset) erstellt und mit einer entsprechenden Benennungskonvention in DAM (NPR-31576) benannt wird.
 
@@ -409,7 +409,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 * Parsing-Fehler beim Öffnen eines Inhaltsfragments, das die Zeichen Dollar ($) und Klammer ({) nacheinander enthält. Hotfix für CQ-4270266
 * Das VersionPreview-Servlet schlägt beim Versuch, eine Version eines Experience Fragment in der Timeline anzuzeigen, mit NullPointerException fehl. NPR-30074: Hotfix für CQ-4271881
 * Inhaltsfragmente können nicht über die Eincheckfunktion gesperrt werden. NPR-29923: Hotfix für CQ-4258785
-* Fehler bei der Signaturüberprüfung im SAML-Authentifizierungshandler. NPR-30379: Anfrage zur Unterstützung von GRANITE-26567.
+* Fehler bei der Signaturüberprüfung im SAML-Authentifizierungshandler. NPR-30379: Antrag auf Unterstützung für GRANITE-26567
 
 **Replikation**
 
@@ -772,7 +772,7 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 
 * Migration der AKP- und Bestandsintegration zu AEM 6.4.4.0 NPR-27632
 * Wenn Sie später einen leeren Asset-Ordner mit Unterordnern veröffentlichen, werden die Unterordner ausgeblendet. NPR-27558: Hotfix für CQ-4254701
-* Die Hinzufügung der Eigenschaft &quot;Einzelne nicht benannte Zeichenfolge\[\]&quot;führt zu einer unvollständigen XMP. NPR-26805: Hotfix für CQ-4254142
+* Die Hinzufügung der Eigenschaft &quot;Einzelne nicht namensgetrennte Zeichenfolge\[\]&quot;führt zu einer unvollständigen XMP. NPR-26805: Hotfix für CQ-4254142
 * Nach dem Rastern der PDF-Eingabedatei fehlen in der Ausgabe Bilder. NPR-27929: Hotfix für CTG-4150481
 * Der Assistent zum Verschieben von Assets zeigt eine falsche Anzahl der verweisenden Seiten für veröffentlichte Seiten an. NPR-27833: Hotfix für CQ-4258014
 * AssetPicker sucht nur das erste Tag, um das Ergebnis beim Filtern mit Tags zu filtern. NPR-27778: Hotfix für CQ-4257705
