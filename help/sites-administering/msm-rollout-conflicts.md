@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 59%
 
 ---
 
@@ -41,7 +44,7 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
 
 * blueprint: `/b`
 
-   eine Masterseite; mit 1 untergeordneter Seite, bp-level-1.
+   Übergeordnet; mit 1 untergeordneter Seite, bp-level-1.
 
 * live copy: `/b`
 
@@ -54,18 +57,18 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Blueprint vor der Einführung</strong></td> 
+   <td><strong>Blueprint vor dem Rollout</strong></td> 
    <td><strong>Live Copy vor der Veröffentlichung</strong></td> 
    <td><strong>vor der Veröffentlichung veröffentlichen</strong></td> 
   </tr> 
   <tr> 
    <td><code>b</code> <br /> (erstellt in der Blueprint-Verzweigung, bereit für die Einführung)<br /> </td> 
-   <td><code>b</code> <br /> (manuell in Live Copy-Zweig erstellt)<br /> </td> 
+   <td><code>b</code> <br /> (manuell in einer Live-Kopie-Verzweigung erstellt)<br /> </td> 
    <td><code>b</code> <br /> (enthält den Inhalt der Seite b, der manuell in der Live-Kopie-Verzweigung erstellt wurde)</td> 
   </tr> 
   <tr> 
    <td><code> /bp-level-1</code></td> 
-   <td><code> /lc-level-1</code> <br /> (manuell in Live Copy-Zweig erstellt)<br /> </td> 
+   <td><code> /lc-level-1</code> <br /> (manuell in einer Live-Kopie-Verzweigung erstellt)<br /> </td> 
    <td><code> /lc-level-1</code> <br /> (enthält den Inhalt der untergeordneten Seite<br /> -Ebene-1, die manuell in der Live Copy-Verzweigung erstellt wurde)</td> 
   </tr> 
  </tbody> 
@@ -77,7 +80,7 @@ Mit dem Rollout-Manager können Sie das Konfliktmanagement aktivieren oder deakt
 
 Dies erfolgt mithilfe der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**:
 
-* **Konflikte mit manuell erstellten Seiten** lösen:
+* **Beheben Sie Konflikte mit manuell erstellten Seiten**:
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
@@ -126,11 +129,11 @@ Dieser Konflikt-Handler gibt dem Blueprint Vorrang. The live copy page `/b` is m
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Blueprint nach dem Rollout</strong></td> 
+   <td><strong>Blueprint nach Rollout</strong></td> 
    <td><strong>Live Copy nach der Aktualisierung</strong><br /> </td> 
    <td></td>
-   <td><strong>Live Copy nach der</strong><br /> Einführung <br /><br /> </td> 
-   <td><strong>nach der</strong><br /> Veröffentlichung veröffentlichen <br /> </td> 
+   <td><strong>Live Copy nach der Aktualisierung</strong><br /> <br /> <br /> </td> 
+   <td><strong>nach der Veröffentlichung veröffentlichen</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
@@ -189,14 +192,14 @@ In diesem Fall hat die Live Copy effektiv Vorrang. The blueprint page `/b` is no
  </caption> 
  <tbody> 
   <tr> 
-   <td><strong>Blueprint nach dem Rollout</strong></td> 
-   <td><strong>Live Copy nach der</strong><br /> Einführung <br /><br /> </td> 
-   <td><strong>nach der</strong><br /> Veröffentlichung veröffentlichen <br /> </td> 
+   <td><strong>Blueprint nach Rollout</strong></td> 
+   <td><strong>Live Copy nach der Aktualisierung</strong><br /> <br /> <br /> </td> 
+   <td><strong>nach der Veröffentlichung veröffentlichen</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
    <td><code>b</code> <br /> (keine Änderung; hat den Inhalt der Seite b, der manuell in der Live-Kopie-Verzweigung erstellt wurde)</td> 
-   <td><code>b</code> <br /> (keine Änderung; enthält den Inhalt der Seite b, die manuell in der Live-Kopie-Verzweigung erstellt wurde)<br /> </td> 
+   <td><code>b</code> <br /> (keine Änderung; enthält den Inhalt der Seite b, der manuell in der Live-Kopie-Verzweigung erstellt wurde)<br /> </td> 
   </tr> 
   <tr> 
    <td><code> /bp-level-1</code> </td> 
