@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 translation-type: tm+mt
 source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
 
 Asset-Vorlagen sind eine spezielle Asset-Klasse, die eine schnelle Wiederverwendung visuell reicher Inhalte für digitale und Druckmedien ermöglicht. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messagingabschnitt und den bearbeitbaren Abschnitt.
 
-Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle und textuelle Inhalte in Feldern enthalten, die zur Anpassung von Nachrichten bearbeitet werden können.
+Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle und textuelle Inhalte in Feldern enthalten, die bearbeitet werden können, um Messaging anzupassen.
 
 Da eingeschränkte Bearbeitungen flexibel vorgenommen werden können, während das globale Erscheinungsbild geschützt ist, sind Asset-Vorlagen ideale Bausteine für die schnelle Inhaltsadaptation und Verteilung als Inhaltsartefakte für verschiedene Funktionen. Durch die Wiederverwendung von Inhalten werden die Kosten für die Verwaltung von Printkanälen und digitalen Kanälen reduziert und ganzheitliche und konsistente Umgebungen für diese Kanäle bereitgestellt.
 
@@ -45,7 +48,7 @@ Außerdem können Sie die Ausgabe in diesen Formaten auf Ihr lokales System heru
 
 ## Eine Sicherheit erstellen {#creating-a-collateral}
 
-Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. InDesign, und die Vorlagen für Sie in AEM Assets hochladen. Bevor Sie eine Sicherheit erstellen, sollten Sie eine oder mehrere INDD-Vorlagen vorab in Experience Manager hochladen und verfügbar machen.
+Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. InDesign, und die Vorlagen für Sie in AEM Assets hochladen. Bevor Sie eine Sicherheit erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in den Experience Manager hochladen und verfügbar sein.
 
 1. Klicken bzw. tippen Sie auf das AEM-Logo und dann auf der Seite „Navigation“ auf **[!UICONTROL Assets]**.
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
@@ -56,7 +59,7 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. Lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in Experience Manager hochgeladen und verfügbar. Wählen Sie eine Vorlage für Ihre Broschüre aus und klicken bzw. tippen Sie auf **[!UICONTROL Weiter]**.
+1. Lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in den Experience Manager hochladen und verfügbar sein. Wählen Sie eine Vorlage für Ihre Broschüre aus und klicken bzw. tippen Sie auf **[!UICONTROL Weiter]**.
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -86,6 +89,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
    * Navigieren Sie auf der Seite „Vorlagen“ zu einem Ordner, in dem Sie das Material erstellt haben, und klicken bzw. tippen Sie in der Miniaturansicht eines Marketingmaterialelements auf die Option zum schnellen Bearbeiten.
    * Klicken bzw. tippen Sie auf der Asset-Seite für das Element in der Symbolleiste auf das Symbol „Bearbeiten“.
    * Wählen Sie die Assets aus und klicken Sie auf das Symbol Bearbeiten in der Symbolleiste.
+
    ![chlimage_1-313](assets/chlimage_1-313.png)
 
    Links auf der Seite werden die Asset-Suche und der Text-Editor angezeigt. Der Text-Editor ist standardmäßig geöffnet.
@@ -142,20 +146,22 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
    >
    >* Bilder sind nicht in die zugrunde liegende InDesign-Vorlage eingebettet
    >* Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem
+
    >
    >Gehen Sie wie folgt vor, um für AEM das Auflösen von Bildern zu ermöglichen:
    >
-   >* Betten Sie Bilder ein, während Sie InDesign-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Betten Sie Bilder ein, während Sie InDesign-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
    >* Stellen Sie AEM in Ihrem lokalen Dateisystem bereit und ordnen Sie anschließend fehlende Symbole den vorhandenen AEM-Assets zu.
+
    >
-   >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabe für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 1. Das Marketingmaterial wird in dem Ordner erstellt, in dem Sie den Vorgang begonnen haben. Öffnen Sie das Marketingmaterialelement und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabeformate]**, um die Ausgabeformate anzuzeigen.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Klicken Sie auf die PDF-Darstellung in der Liste der Darstellungen, um die PDF-Datei herunterzuladen. Öffnen Sie die PDF-Datei, um das Material zu überprüfen.
+1. Klicken Sie in der Liste der Darstellungen auf die PDF-Darstellung bzw. tippen Sie darauf, um die PDF-Datei herunterzuladen. Öffnen Sie die PDF-Datei, um das Material zu überprüfen.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
