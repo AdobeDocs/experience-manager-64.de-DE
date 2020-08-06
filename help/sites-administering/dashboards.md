@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 71%
 
 ---
 
@@ -70,7 +73,7 @@ Möglicherweise möchten Sie mehrere Dashboards, um die Informationen zu Ihrem I
 
 ## Dashboard-Komponenten {#dashboard-components}
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 Dashboard-Komponenten sind nichts anderes als reguläre [AEM-Komponenten](/help/sites-developing/developing-components-samples.md). Dieser Abschnitt beschreibt die Berichtskomponenten, die im Lieferumfang von AEM enthalten sind.
 
@@ -97,7 +100,7 @@ Auf der Registerkarte **Allgemein** wird der Zugriff auf die folgenden Konfigura
 
 **SiteCatalyst-Konfiguration (optional)** Die Konfiguration, mit der eine Verbindung zu SiteCatalyst hergestellt werden soll. falls nicht näher erläutert, wird von einer Konfiguration auf der Dashboardseite (über die Seiteneigenschaften) ausgegangen
 
-**Report Suite-ID (optional)** Die SiteCatalyst Report Suite, die Sie zum Generieren des Diagramms verwenden möchten.
+**Report Suite-ID (optional)** Die SiteCatalyst-Report Suite, die Sie zum Generieren des Diagramms verwenden möchten.
 
 #### Berichtskonfiguration {#report-configuration}
 
@@ -119,7 +122,7 @@ Jede Komponente definiert außerdem bestimmte Einstellungen.
 
 **Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde).
 
-**Metriken** Die Liste der Ereignisse, die angezeigt werden sollen.
+**Metriken** Die Liste der Ereignis, die angezeigt werden sollen.
 
 **Elemente** Die Liste der Elemente, die die Metrikdaten im Diagramm unterteilen.
 
@@ -161,7 +164,7 @@ Diese Komponente zeigt ein Diagramm an, das den laut folgender Konfiguration hä
 
 ## Erweitern des Dashboards {#extending-dashboard}
 
-### Überblick {#overview-1}
+### Übersicht {#overview-1}
 
 Dashboards sind normale Seiten (`cq:Page`), deshalb können zum Zusammenstellen von Dashboards beliebige Komponenten verwendet werden.
 
