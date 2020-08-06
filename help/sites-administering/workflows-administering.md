@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 85%
 
 ---
 
@@ -76,7 +79,8 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Use th
 
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
-* **Fehlerdetails** Ein Fenster mit der **Fehlermeldung**, dem **Schritt** und dem **Fehlerstapel** wird angezeigt.
+* **Fehlerdetails**&#x200B;Öffnet ein Fenster zum Anzeigen der 
+**Fehlermeldung**, **Schritt** - und **Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
@@ -158,5 +162,5 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname |
 |---|---|
-| Max. Posteingang-Abfragegröße | granite.workflow.inboxQuerySize |
+| Max. Posteingangsgröße für Abfragen | granite.workflow.inboxQuerySize |
 
