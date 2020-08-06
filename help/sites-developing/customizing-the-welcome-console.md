@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 79%
 
 ---
 
@@ -46,7 +49,7 @@ Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreff
 
 * **digitalen Assets:** `/libs/wcm/core/content/damadmin`
 
-* **** Community: `/libs/collab/core/content/admin`
+* **Community:** `/libs/collab/core/content/admin`
 
 * **Kampagnen:** `/libs/mcm/content/admin`
 
@@ -83,11 +86,11 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Cloud-Services</td> 
+   <td> Cloud Services</td> 
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td> 
   </tr> 
   <tr> 
-   <td> Workflows</td> 
+   <td> Workflows  </td> 
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td> 
   </tr> 
   <tr> 
@@ -196,6 +199,7 @@ In `/libs/cq/core/components/welcome/welcome.jsp` use is made of [ConsoleUtil](h
 >Führen Sie die folgende Abfrage aus, um die bestehende Liste zu finden:
 >
 >* `select * from cq:Console`
+
 >
 
 
