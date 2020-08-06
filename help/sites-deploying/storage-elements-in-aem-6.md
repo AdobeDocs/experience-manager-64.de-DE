@@ -12,6 +12,9 @@ discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 81%
 
 ---
 
@@ -35,7 +38,7 @@ Derzeit sind in AEM 6 zwei Implementierungen von Knotenspeicher verfügbar: TAR
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak geändert.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
+>Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak geändert.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 bis org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
 
 Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien und verwendet dabei die Standardkonfigurationsoptionen. Führen Sie folgende Schritte aus, um die Speichereinstellungen manuell zu konfigurieren:
 
@@ -74,10 +77,10 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
 
 1. Bearbeiten Sie die Datei und legen Sie die Konfigurationsoptionen fest. Die folgenden Optionen sind verfügbar:
 
-   * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Der Standardwert lautet `mongodb://localhost:27017`
+   * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
    * `db` : Name der Mongo-Datenbank. Standardmäßig wird bei AEM 6-Installationen **aem-author** als Datenbankname verwendet.
-   * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Der Standardwert lautet 256.
-   * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Der Standardwert lautet 256.
+   * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Standard: 256.
+   * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Standard: 256.
    * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet „false“.
 
 1. Erstellen Sie eine Konfigurationsdatei mit der PID des Datenspeichers, in dem Sie die Datei verwenden und bearbeiten möchten, um die Konfigurationsoptionen festzulegen. Weitere Informationen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern](/help/sites-deploying/data-store-config.md).
@@ -118,7 +121,8 @@ Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP
 >Zusätzlich können Sie auch die folgenden Ressourcen konsultieren:
 >
 >* For more information regarding Transparent Huge Pages on Red Hat Linux, see this [article](https://access.redhat.com/solutions/46111).
->* For Linux tuning tips, see this [article](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>* For Linux tuning tips, see this [article](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
