@@ -1,8 +1,8 @@
 ---
 title: MSRP - MongoDB Datenspeicherung Resource Provider
 seo-title: MSRP - MongoDB Datenspeicherung Resource Provider
-description: Einrichten von AEM Communities zur Verwendung einer relationalen Datenbank als gemeinsamen Speicher
-seo-description: Einrichten von AEM Communities zur Verwendung einer relationalen Datenbank als gemeinsamen Speicher
+description: AEM Communities für die Verwendung einer relationalen Datenbank als gemeinsamen Speicher einrichten
+seo-description: AEM Communities für die Verwendung einer relationalen Datenbank als gemeinsamen Speicher einrichten
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## Über MSRP {#about-msrp}
 
-Wenn AEM Communities für die Verwendung von MSRP als gemeinsamer Speicher konfiguriert ist, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass eine Synchronisierung oder Replikation erforderlich ist.
+Wenn AEM Communities so konfiguriert ist, dass MSRP als gemeinsamer Speicher verwendet wird, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass eine Synchronisierung oder Replikation erforderlich ist.
 
 Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-of-srp-options) und der [empfohlenen Topologien](topologies.md).
 
@@ -33,7 +33,7 @@ Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-
    * Version 2.6 oder höher
    * Keine Konfiguration von Mongos oder Freigeben erforderlich
    * Die Verwendung eines [Replikatsatzes wird dringend empfohlen](#mongoreplicaset)
-   * Kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
+   * Kann auf demselben Host ausgeführt werden wie AEM oder remote ausgeführt werden
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -129,7 +129,7 @@ Weitere Informationen zur Konfiguration finden Sie unter [Solr-Konfiguration fü
 
 Wenn Sie von einer früheren Version aktualisieren, die mit MSRP konfiguriert wurde, müssen Sie
 
-1. Führen Sie die [Aktualisierung auf AEM Communities durch](upgrade.md)
+1. Führen Sie das [Upgrade auf AEM Communities durch](upgrade.md)
 1. Neue Solr-Konfigurationsdateien installieren
    * Für [Standard-MLS](solr.md#installing-standard-mls)
    * Für [erweiterte MLS](solr.md#installing-advanced-mls)
@@ -217,7 +217,7 @@ Informationen zum Einrichten von MSRP für eine Demo- oder Entwicklungs-Umgebung
 
 Vergewissern Sie sich, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfigurationsoption der Datenspeicherung überprüfen. Standardmäßig ist der Datenspeicherung Resource Provider JSRP.
 
-Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur [Datenspeicherung Configuration Console](srp-config.md) oder überprüfen Sie das AEM-Repository:
+Rufen Sie auf allen Instanzen im Autorenmodus AEM Veröffentlichungsmodus erneut die [Datenspeicherung Configuration Console](srp-config.md) auf oder überprüfen Sie das AEM Repository:
 
 * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -226,13 +226,13 @@ Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur 
 
 ### UGC wird nach der Aktualisierung ausgeblendet {#ugc-disappears-after-upgrade}
 
-Bei der Aktualisierung von einer vorhandenen AEM Communities 6.0-Site müssen alle bereits vorhandenen UGC-Dateien entsprechend der für die [SRP](srp.md) -API erforderlichen Struktur konvertiert werden, nachdem auf AEM Communities 6.3 aktualisiert wurde.
+Bei der Aktualisierung von einer bestehenden AEM Communities 6.0-Site müssen alle bereits vorhandenen UGC konvertiert werden, um der für die [SRP](srp.md) -API erforderlichen Struktur zu entsprechen, nachdem auf AEM Communities 6.3 aktualisiert wurde.
 
 Zu diesem Zweck steht auf GitHub ein Open-Source-Tool zur Verfügung:
 
-* [AEM Communities-UGC-Migrationswerkzeug](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Das Migrationswerkzeug kann angepasst werden, um UGC aus früheren Versionen von AEM Social Communities für den Import in AEM Communities 6.1 oder höher zu exportieren.
+Das Migrationswerkzeug kann angepasst werden, um UGC aus früheren Versionen AEM Social Communities für den Import in AEM Communities 6.1 oder höher zu exportieren.
 
 ### Fehler - nicht definiertes Feld provider_id {#error-undefined-field-provider-id}
 
@@ -258,7 +258,7 @@ Um den Fehler zu beheben, müssen Sie bei Befolgen der Anweisungen zur [Installa
 Wenn ein Versuch, eine gesicherte Verbindung zum MongoDB-Server herzustellen aufgrund einer fehlenden Klassendefinition fehlschlägt, ist es notwendig, das MongoDB-Treiberpaket zu aktualisieren, das über das öffentliche Repository verfügbar `mongo-java-driver`ist.
 
 1. Laden Sie den Treiber von [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) herunter (Version 2.13.2 oder höher)
-1. Kopieren Sie das Bundle in den Ordner &quot;crx-quickstart/install&quot;für eine AEM-Instanz
+1. Kopieren Sie das Bundle in den Ordner &quot;crx-quickstart/install&quot;für eine AEM Instanz
 1. Starten Sie die AEM-Instanz neu
 
 ## Ressourcen {#resources}
