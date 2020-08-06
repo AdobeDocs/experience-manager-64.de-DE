@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +36,7 @@ Ein Experience Fragment:
 Experience Fragments können in folgenden Fällen verwendet werden:
 
 * Wenn Autoren die Teile einer Seite (die sogenannten Fragmente eines Erlebnisses) wiederverwenden möchten, müssen sie das entsprechende Fragment kopieren und an der gewünschten Stelle einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
-* Zur Unterstützung des nutzungsfreien CMS. Autoren möchten AEM nur zum Authoring, nicht aber zum Senden an den Kunden verwenden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bereitgestellt.
+* Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bereitgestellt.
 
 >[!NOTE]
 >
@@ -43,7 +46,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 >
 >Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
+## Wann ist die Verwendung von Experience Fragments sinnvoll?   {#when-should-you-use-experience-fragments}
 
 Experience Fragments sollten in folgenden Fällen verwendet werden:
 
@@ -61,25 +64,25 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
    * Kanal- oder kontextspezifische Varianten
    * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert)
 
-* Wenn Sie Omnichannel-Commerce betreiben.
+* Wenn Sie Omni-Channel-Commerce betreiben.
 
-   * Teilen von Commerce-bezogenen Social-Media-Kanälen in großem Maßstab
+   * Skaliertes Teilen von Commerce-bezogenem Inhalt auf Social-Media-Kanälen
    * Ermöglichen von Transaktionen an Touchpoints
 
-## Organisieren von Erlebnisfragmenten {#organizing-your-experience-fragments}
+## Organisieren von Experience Fragments {#organizing-your-experience-fragments}
 
-Es wird empfohlen,
-* Ordner zum Organisieren der Erlebnisfragmente verwenden,
+Folgendes wird empfohlen:
+* Verwenden von Ordnern zum Organisieren der Experience Fragments,
 
-* [konfigurieren Sie die zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
+* [Konfigurieren der zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
 
 Mit dem Erstellen von Ordnern können Sie:
 
-* eine aussagekräftige Struktur für Ihre Erlebnisfragmente erstellen; zum Beispiel nach Klassifizierung
+* eine aussagekräftige Struktur für Ihre Experience Fragments erstellen; zum Beispiel nach Klassifizierung
 
    >[!NOTE]
    >
-   >Es ist nicht erforderlich, die Struktur Ihrer Erlebnisfragmente an der Seitenstruktur Ihrer Site auszurichten.
+   >Es ist nicht erforderlich, die Struktur Ihrer Experience Fragments an der Seitenstruktur Ihrer Site auszurichten.
 
 * [Zuweisen der zulässigen Vorlagen auf Ordnerebene](#configure-allowed-templates-folder)
 
@@ -91,29 +94,29 @@ Das folgende Beispiel zeigt Erlebnisfragmente, die entsprechend strukturiert `Co
 
 >[!CAUTION]
 >
->Der folgende Screenshot wurde mithilfe von Adobe Experience Manager als Cloud-Dienst von der WKND-Site aufgenommen.
+>Der folgende Screenshot wurde von der WKND-Site mit Adobe Experience Manager als Cloud Service aufgenommen.
 
-![Ordner für Erlebnisfragmente](assets/xf-folders.png)
+![Ordner für Experience Fragments](assets/xf-folders.png)
 
-## Erstellen und Konfigurieren eines Ordners für Ihre Erlebnisfragmente {#creating-and-configuring-a-folder-for-your-experience-fragments}
+## Erstellen und Konfigurieren eines Ordners für Ihre Experience Fragments {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
-Um einen Ordner für Ihre Erlebnisfragmente zu erstellen und zu konfigurieren, wird empfohlen,
+Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren, wird Folgendes empfohlen:
 
-1. [Erstellen von Ordnern](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
+1. [Erstellen eines Ordners](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
 
-1. [Konfigurieren Sie die zulässigen Erlebnisfragment-Vorlagen für diesen Ordner](#configure-allowed-templates-folder).
+1. [Konfigurieren der die zulässigen Experience Fragment-Vorlagen für diesen Ordner](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
->Es ist auch möglich, die [zulässigen Vorlagen für Ihre Instanz](#configure-allowed-templates-instance)zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung überschrieben werden können.
+>It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
 
-### Zulässige Vorlagen für Ihren Ordner konfigurieren {#configure-allowed-templates-folder}
+### Konfigurieren zulässiger Vorlagen für Ihren Ordner {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
 >Dies ist die empfohlene Methode zur Angabe der **[!UICONTROL zulässigen Vorlagen]**, da die Werte bei der Aktualisierung nicht überschrieben werden.
 
-1. Navigieren Sie zum gewünschten Ordner **[!UICONTROL Experience Fragments]**.
+1. Navigieren Sie zum gewünschten Ordner mit **[!UICONTROL Experience Fragments]**.
 
 1. Wählen Sie den Ordner und dann **[!UICONTROL Eigenschaften]** aus.
 
@@ -122,48 +125,48 @@ Um einen Ordner für Ihre Erlebnisfragmente zu erstellen und zu konfigurieren, w
    Beispiel:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
-   ![Erlebnisfragment-Eigenschaften - Zulässige Vorlagen](assets/xf-folders-templates.png)
+   ![Experience Fragment-Eigenschaften – Zulässige Vorlagen](assets/xf-folders-templates.png)
 
-1. Select **[!UICONTROL Save and Close]**.
+1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus.
 
-### Zulässige Vorlagen für Ihre Instanz konfigurieren {#configure-allowed-templates-instance}
+### Konfigurieren zulässiger Vorlagen für Ihre Instanz {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->Es wird nicht empfohlen, die **[!UICONTROL zulässigen Vorlagen]** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
+>It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
 >
->Bitte benutzen Sie diesen Dialog nur zu Informationszwecken.
+>Verwenden Sie diesen Dialog nur zu Informationszwecken.
 
-1. Navigate to the required **[!UICONTROL Experience Fragments]** console.
+1. Navigieren Sie zur gewünschten Konsole **[!UICONTROL Experience Fragments]**.
 
-1. Wählen Sie **[!UICONTROL Konfigurationsoptionen]**:
+1. Wählen Sie **[!UICONTROL Konfigurationsoptionen]** aus:
 
-   ![Konfigurationsschaltfläche](assets/xf-folders-18.png)
+   ![Schaltfläche „Konfiguration“](assets/xf-folders-18.png)
 
-1. Geben Sie im Dialogfeld **[!UICONTROL Experience Fragments konfigurieren]** die erforderlichen Vorlagen an: 
+1. Geben Sie im Dialogfeld **[!UICONTROL Experience Fragments konfigurieren]** die erforderlichen Vorlagen an:
 
    ![Experience Fragments konfigurieren](assets/xf-folders-19.png)
 
-1. Wählen Sie **[!UICONTROL Speichern]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-## Erstellen eines Experience Fragments {#creating-an-experience-fragment}
+## Erstellen eines Experience Fragment {#creating-an-experience-fragment}
 
-Gehen Sie für die Erstellung eines Experience Fragment folgendermaßen vor:
+Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
-1. Select **[!UICONTROL Experience Fragments]** from the Global Navigation.
+1. Wählen Sie in der globalen Navigation die Option **[!UICONTROL Experience Fragments]** aus.
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigieren Sie zum gewünschten Ordner und wählen Sie **[!UICONTROL Erstellen]**.
+1. Navigate to the required folder and select **[!UICONTROL Create]**.
 
-1. Wählen Sie **[!UICONTROL Erlebnisfragment]** , um den Assistenten zum **[!UICONTROL Erstellen von Erlebnisfragmenten]** zu öffnen.
+1. Wählen Sie **[!UICONTROL Experience Fragment]** aus, um den Assistenten zum **[!UICONTROL Erstellen von Experience Fragments]** zu öffnen.
 
-   Wählen Sie die erforderliche **[!UICONTROL Vorlage]** und dann **[!UICONTROL Weiter]**:
+   Wählen Sie die gewünschte Vorlage **** aus und klicken Sie auf **[!UICONTROL Weiter]**:
 
    ![xf-authoring-02](assets/xf-authoring-02.png)
 
 
-1. Geben Sie die **[!UICONTROL Eigenschaften]** für Ihr Experience Fragment ein.
+1. Geben Sie die **[!UICONTROL Eigenschaften]** für das Experience Fragment ein.
 
    Sie müssen einen **[!UICONTROL Titel]** angeben. Wenn Sie das Feld **[!UICONTROL Name]** leer lassen, wird der Name vom **[!UICONTROL Titel]** abgeleitet.
 
@@ -191,7 +194,7 @@ Die folgende Beispielvorgehensweise veranschaulicht, wie Sie Teaser für Produkt
 1. Bestätigen Sie die Definitionen mit der Option **[!UICONTROL Fertig]** (Häkchen).
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu.
 
-## Erstellen einer Experience-Fragment-Variante {#creating-an-experience-fragment-variation}
+## Erstellen einer Experience Fragment-Variante {#creating-an-experience-fragment-variation}
 
 Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erstellen:
 
@@ -202,7 +205,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
 
 1. Die Option **Erstellen** ermöglicht es Ihnen, Folgendes zu erstellen:
 
-   * **[!UICONTROL Variation]**
+   * **[!UICONTROL Variante]**
    * **[!UICONTROL Variante als Live Copy]**
 
 1. Definieren Sie die gewünschten Eigenschaften:
@@ -212,7 +215,8 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
    * **[!UICONTROL Name]** (Wenn Sie das Feld leer lassen, wird der Name vom Titel abgeleitet.)
    * **[!UICONTROL Beschreibung]**
    * **[!UICONTROL Varianten-Tags]**
-   ![xf-authoring-06](assets/xf-authoring-07.png)
+
+   ![xf-authoring-07](assets/xf-authoring-07.png)
 
 1. Bestätigen Sie Ihre Auswahl mit der Option **[!UICONTROL Fertig]** (Häkchen). Daraufhin wird die neue Variante im Bedienfeld angezeigt:
 
@@ -224,7 +228,7 @@ Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
 
 1. Öffnen Sie eine beliebige Seite, um sie zu bearbeiten.
 
-   Beispiel: [http://localhost:4502/editor.html/content/we-retail/language-masters/de/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Beispiel: [http://localhost:4502/editor.html/content/we-retail/language-masters/de/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/de/products/men.html)
 
 1. Erstellen Sie eine Instanz der Experience-Fragment-Komponente, indem Sie die Komponente aus dem Komponenten-Browser auf das Seitenabsatzsystem ziehen:
 
@@ -232,8 +236,9 @@ Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
 
 1. Fügen Sie das eigentliche Experience Fragment zur Komponenteninstanz hinzu, indem Sie einen der folgenden Schritte ausführen:
 
-   * Ziehen Sie das gewünschte Fragment vom Asset-Browser auf die Komponente.
+   * Ziehen Sie das gewünschte Fragment vom Asset-Browser auf die Komponente
    * Wählen Sie in der Komponenten-Symbolleiste die Option **[!UICONTROL Konfigurieren]** und geben Sie das zu verwendende Fragment an. Bestätigen Sie Ihre Auswahl mit der Option **Fertig** (Häkchen).
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
@@ -252,7 +257,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![xf-authoring-12](assets/xf-authoring-12.png)
 
-1. Wählen Sie in der Komponenten-Symbolleiste die Option **[!UICONTROL In Baustein umwandeln]**:
+1. Wählen Sie in der Komponenten-Symbolleiste die Option **[!UICONTROL In Baustein umwandeln]** aus:
 
    ![xf-authoring-13-icon](assets/xf-authoring-13-icon.png)
 
@@ -260,7 +265,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![xf-authoring-13](assets/xf-authoring-13.png)
 
-1. Geben Sie den Namen des **[!UICONTROL Building-Blocks]** ein und bestätigen Sie mit **[!UICONTROL Konvertieren]**:
+1. Geben Sie den Namen des Bausteins **** ein und bestätigen Sie ihn mit der Option **[!UICONTROL Konvertieren]**:
 
    ![xf-authoring-14](assets/xf-authoring-14.png)
 
@@ -272,7 +277,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **[!UICONTROL Bausteine]** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* Master öffnen: Öffnen der Master-Variante in einer neuen Registerkarte
+* Zum Master wechseln: zum Öffnen der Master-Variante in einer neuen Registerkarte
 * Umbenennen
 * Löschen
 
@@ -282,17 +287,17 @@ Der Baustein wird auf der Registerkarte **[!UICONTROL Bausteine]** angezeigt. F�
 
 Sie können den Baustein wie bei jeder anderen Komponente auch in das Absatzsystem eines beliebigen Fragments ziehen.
 
-## Die Plain-HTML-Wiedergabe {#the-plain-html-rendition}
+## Einfache HTML-Ausgabe {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe zugreifen.
 
-Diese ist über den Browser verfügbar, aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Erlebnisfragments zu ermöglichen, und zwar allein über die URL.
+Diese ist über den Browser verfügbar, aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL.
 
 Die Plain-HTML-Wiedergabe fügt den Protokoll-, Host- und Kontextpfad zu Pfaden hinzu, welche:
 
-* des Typs: `src`, `href`oder `action`
+* den folgenden Typ aufweisen: `src`, `href` oder `action`
 
-* or end with: `-src`, or `-href`
+* oder folgendermaßen enden: `-src` oder `-href`
 
 Beispiel:
 
@@ -304,9 +309,9 @@ Beispiel:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportieren von Experience Fragments {#exporting-experience-fragments}
+## Exportieren von Experience Fragments   {#exporting-experience-fragments}
 
 Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann von AEM und Drittkanalanbietern gleichermaßen verwendet werden.
 
-Für den Export in Adobe Target wird HTML verwendet. Vollständige Informationen finden Sie unter [Target-Integration mit Experience Fragments](/help/sites-administering/experience-fragments-target.md).
+Für den Export nach Adobe Target wird HTML verwendet. Vollständige Informationen finden Sie unter [Target-Integration mit Experience Fragments](/help/sites-administering/experience-fragments-target.md).
 
