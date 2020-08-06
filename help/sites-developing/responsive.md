@@ -305,7 +305,7 @@ Beziehen Sie die folgenden JavaScript-Bibliotheken und fügen Sie sie in einen C
 
 **HTML**
 
-Erstellen Sie eine Komponente, die die erforderlichen div-Elemente generiert, die der picturefill.js-Code erwartet. Auf einer AEM-Seite ist der Wert des data-src-Attributs der Pfad zu einer Ressource im Repository. Beispielsweise kann eine Seitenkomponente die Medienabfragen und die zugeordneten Pfade für Bilddarstellungen in DAM fest programmieren. Alternativ können Sie eine benutzerdefinierte Bildkomponente erstellen, die es Autoren ermöglicht, Bilddarstellungen auszuwählen oder Laufzeit-Render-Optionen anzugeben.
+Erstellen Sie eine Komponente, die die erforderlichen div-Elemente generiert, die der picturefill.js-Code erwartet. Auf einer AEM Seite ist der Wert des data-src-Attributs der Pfad zu einer Ressource im Repository. Beispielsweise kann eine Seitenkomponente die Medienabfragen und die zugeordneten Pfade für Bilddarstellungen in DAM fest programmieren. Alternativ können Sie eine benutzerdefinierte Bildkomponente erstellen, die es Autoren ermöglicht, Bilddarstellungen auszuwählen oder Laufzeit-Render-Optionen anzugeben.
 
 Im folgenden HTML-Codebeispiel wird aus 2 DAM-Darstellungen desselben Bilds ausgewählt.
 
@@ -323,6 +323,7 @@ Im folgenden HTML-Codebeispiel wird aus 2 DAM-Darstellungen desselben Bilds aus
 >
 >* Client-Bibliotheksordner: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Skript, das HTML generiert: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+
 >
 >
 Der folgende Abschnitt enthält Details zu dieser Komponente.
@@ -345,7 +346,7 @@ Beispielsweise erzeugt das JSP der Bildkomponente das folgende HTML-Element:
 
 Wenn der Browser die Seite lädt, fordert er das Bild an und nutzt dazu den Wert des src-Attributs als URL. Sling zerlegt die URL:
 
-* Ressource: `/content/mywebsite/en/_jcr_content/par/image_0`
+* Resource: `/content/mywebsite/en/_jcr_content/par/image_0`
 * File name extension: `.jpg`
 * Selektor: `img`
 * Suffix: `1358372073597.jpg`
@@ -491,7 +492,7 @@ Weitere Informationen dazu, wie Sie AEM-Dienste konfigurieren, finden Sie unter 
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td> 
   </tr> 
   <tr> 
-   <th>Eigenschaft</th> 
+   <th>Property</th> 
    <td><p>Unterstützte Breiten</p> 
     <ul> 
      <li>Um eine unterstützte Breite hinzuzufügen, klicken Sie auf die Schaltfläche + und geben Sie eine positive Ganzzahl ein.</li> 
