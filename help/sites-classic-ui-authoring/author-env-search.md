@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 87%
 
 ---
 
@@ -42,11 +45,13 @@ Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken B
 >
 >* [Platzhalter](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches) 
 >* [Boolesche Operatoren](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [Reguläre Ausdrücke](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Feld-Gruppierung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
 >* [Verstärkung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
+
 >
 
 
@@ -75,6 +80,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * Angabe des für die Ersetzung zu verwenden Begriffs
    * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
    * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
+
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
