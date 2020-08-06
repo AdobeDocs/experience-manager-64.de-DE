@@ -1,8 +1,8 @@
 ---
-title: Verwalten von Dynamischen Medien-Assets
-seo-title: Verwalten von Dynamischen Medien-Assets
-description: Erfahren Sie, wie Sie mit dynamischen Medien-Assets arbeiten können
-seo-description: Erfahren Sie, wie Sie mit dynamischen Medien-Assets arbeiten können
+title: Verwalten von Dynamic Media-Assets
+seo-title: Verwalten von Dynamic Media-Assets
+description: Informationen zum Arbeiten mit Dynamic Media-Assets
+seo-description: Informationen zum Arbeiten mit Dynamic Media-Assets
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,22 +11,25 @@ content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
 source-git-commit: 0a29460e7212539b6805f0bcc04c94d7d57e9b98
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 100%
 
 ---
 
 
-# About managing Dynamic Media assets {#managing-assets}
+# Verwalten von Dynamic Media-Assets {#managing-assets}
 
-Die Verwaltung von Assets für dynamische Medien - Bilder, Videos und interaktive Assets - nach dem Hochladen umfasst viele Aufgaben, darunter die Vorschau, das Herunterladen oder Veröffentlichen.
+Das Verwalten von Dynamic Media-Assets – Bildern, Videos und interaktiven Assets – nach dem Hochladen beinhaltet eine Vielzahl von Aufgaben, darunter das Anzeigen von Bildern in der Vorschau sowie das Herunterladen oder Veröffentlichen von Bildern.
 
 In der Vorschau können Sie auch Bildvorgaben (nur für Bilder) oder Viewer-Vorgaben (für Videos und Bilder) anwenden. Sie können aber nicht beide Vorgabetypen auf ein Asset anwenden. Siehe [Anwenden von Viewer-Vorgaben](viewer-presets.md) und [Anwenden von Bildvorgaben](image-presets.md).
 
-General information on managing assets is found in [Managing Assets with the Touch UI](managing-assets-touch-ui.md).
+Allgemeine Informationen über das Verwalten von Assets finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](managing-assets-touch-ui.md).
 
-Die folgenden Themen beschreiben, was Sie zum Verwalten von Dynamischen Medien-Assets tun müssen:
+In den folgenden Themen wird beschrieben, wie Sie Dynamic Media-Assets verwalten:
 
 * [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Anzeigen einer Vorschau von Dynamic Media-Assets](previewing-assets.md)
-* [Veröffentlichen von Assets mit dynamischen Medien](publishing-dynamicmedia-assets.md)
+* [Anzeigen von Dynamic Media-Assets in der Vorschau](previewing-assets.md)
+* [Veröffentlichen von Dynamic Media-Assets   ](publishing-dynamicmedia-assets.md)
 * [Arbeiten mit Selektoren](working-with-selectors.md)
 
