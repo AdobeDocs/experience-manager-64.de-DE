@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dokument Security Service Java API Quick Beginn (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-Der Java API Quick Beginn (SOAP) ist für den Rights Management-Dienst verfügbar:
+Java API Quick Beginn (SOAP) ist für den Rights Management-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Richtlinien mit der Java-API erstellen](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
@@ -46,11 +46,11 @@ Der Java API Quick Beginn (SOAP) ist für den Rights Management-Dienst verfügba
 
 [Quick Beginn (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Java-API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Richtlinien mit der Java-API erstellen {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
@@ -2056,7 +2056,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Schützen einer PDF in Statement-Arbeitsablauf für einen vorhandenen Benutzer mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Protect einer PDF in Statement-Arbeitsablauf für einen vorhandenen Benutzer mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird die Methode zum Schutz eines Dokuments im Anweisungsarbeitsablauf für einen vorhandenen Benutzer veranschaulicht.
 
@@ -2164,7 +2164,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Schützen Sie eine PDF-Datei im Anweisungsarbeitsablauf für einen neuen Benutzer mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Protect einer PDF im Anweisungsarbeitsablauf für einen neuen Benutzer mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 Das folgende Java-Codebeispiel zeigt, wie Sie ein Dokument im Anweisungsarbeitsablauf schützen können. Dies ist ein zweistufiger Prozess:
 
