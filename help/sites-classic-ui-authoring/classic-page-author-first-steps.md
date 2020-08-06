@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 
 Er deckt folgende Themen ab:
 
-* [Erste Schritte](#getting-started):Detaillierte Darstellung der grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
+* [Erste Schritte](#getting-started): Detaillierte Darstellung der grundlegenden Reihenfolge der Ereignis, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
 
-* [Weitere Maßnahmen](#further-actions):Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
+* [Weitere Maßnahmen](#further-actions): Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
 
 ## Erste Schritte {#getting-started}
 
