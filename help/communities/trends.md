@@ -1,8 +1,8 @@
 ---
 title: Aktivitätstrends
 seo-title: Aktivitätstrends
-description: Hinzufügen einer Community-Aktivitätsliste-Komponente zu einer Seite
-seo-description: Hinzufügen einer Community-Aktivitätsliste-Komponente zu einer Seite
+description: Hinzufügen einer Liste zur Community-Aktivität zu einer Seite
+seo-description: Hinzufügen einer Liste zur Community-Aktivität zu einer Seite
 uuid: 6a030340-0e69-432a-98f1-3effb2b97136
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 29%
 
 ---
 
@@ -43,7 +46,7 @@ Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## Konfigurieren der Community-Aktivitätsliste {#configuring-community-activity-list}
+## Liste der Community-Aktivität konfigurieren  {#configuring-community-activity-list}
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
@@ -60,6 +63,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
    Die folgenden Optionen stehen zur Auswahl
    * `Members`
    * `Content`
+
    Der Standardwert ist `Members`.
 
 * **[!UICONTROL Anzeigetitel]**
@@ -70,7 +74,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 * **[!UICONTROL Anzeigezahl]**
 
-   Die Anzahl der anzuzeigenden Elemente.
+   Die Anzahl der zu Liste Elemente.
 
    Der Standardwert ist 10.
 
@@ -78,9 +82,10 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
    Wählen Sie eines von
    * `Views`(Seitenbesuche)
-   * `Posts`(UGC erstellen)
+   * `Posts`(Erstellen von UGC)
    * `Follows`
    * `Likes`
+
    Die Standardeinstellung lautet „Ansichten“.
 
 * **[!UICONTROL Zeitraum]**
@@ -92,11 +97,12 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    Der Standardwert ist `Total`.
 
 * **[!UICONTROL Kontextpfad]**
 
-   Bietet die Möglichkeit, die Aktivität auf eine Teilmenge der Site zu beschränken, z. B. auf einen bestimmten Blog.
+   Bietet die Möglichkeit, die Aktivität auf eine Untergruppe der Site, z. B. einen bestimmten Blog, zu erweitern.
 
    Standardmäßig ist die Community-Site ausgewählt.
 
@@ -110,10 +116,10 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 Konfiguration **Wichtigste Besucher** (Top Visitors): Typ = Mitglieder, Aktivitätstyp = Ansichten
 
-**Konfiguration der wichtigsten Mitarbeiter** : Typ = Mitglieder, Aktivitätstyp = Beiträge
+**Konfiguration der wichtigsten Mitarbeiter** : Typ = Member, Aktivität type = Beiträge
 
-**Konfiguration des Hauptinhalts** : Typ = Inhalt, Aktivitätstyp = Ansichten,
+**Konfiguration des Hauptinhalts** : Typ = Aktivität, Typ = Ansichten,
 
-**Konfigurieren des Trendinhalts** : Typ = Inhalt, Aktivitätstyp = Beiträge
+**Konfigurieren des Trendinhalts** : Typ = Aktivität, Typ = Beiträge
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
