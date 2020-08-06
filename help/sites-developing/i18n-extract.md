@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 71%
 
 ---
 
@@ -65,7 +68,7 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-|  &amp;ast; | Gibt eine normale Datei im Dateisystem an. |
+| &amp;ast; | Gibt eine normale Datei im Dateisystem an. |
 | none | Kein Präfix oder ein Muster, das mit einem Ordner- oder Dateinamen beginnt, zeigt eine normale Datei im Dateisystem an. |
 
 Bei Verwendung innerhalb eines Musters gibt das /-Zeichen einen Unterordner und den &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
