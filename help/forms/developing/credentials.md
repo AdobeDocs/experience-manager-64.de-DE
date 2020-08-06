@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +27,7 @@ Eine Berechtigung enthält Informationen zu Ihrem privaten Schlüssel, der zum S
 * Acrobat Reader DC Extensions verwendet eine Berechtigung zur Aktivierung von Adobe Reader-Verwendungsrechten in PDF-Dokumenten. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
 * Der Signature-Dienst greift beim Ausführen von Vorgängen wie dem digitalen Signieren von PDF-Dokumenten auf Zertifikate und Berechtigungen zu. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-Sie können mit der Trust Manager Java-API programmgesteuert mit dem Berechtigungsdienst interagieren. Sie können die folgenden Aufgaben ausführen:
+Sie können mit der Trust Manager Java-API programmgesteuert mit dem Berechtigungsdienst interagieren. Sie können die folgenden Aufgaben durchführen:
 
 * [Berechtigungen mithilfe der Trust Manager-API importieren](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 * [Löschen von Berechtigungen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
@@ -63,8 +66,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -74,7 +77,7 @@ Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, 
 
 **Referenz zur Berechtigung**
 
-Verweisen Sie auf eine Berechtigung, die Sie in AEM Forms importieren möchten. Der Schnellstart in diesem Abschnitt verweist auf eine P12-Datei im Dateisystem.
+Referenzieren Sie eine Berechtigung, die Sie in AEM Forms importieren möchten. Der mit diesem Abschnitt verknüpfte Quick-Beginn verweist auf eine P12-Datei im Dateisystem.
 
 **Durchführen des Importvorgangs**
 
@@ -88,7 +91,7 @@ Nachdem Sie auf die Berechtigung verwiesen haben, importieren Sie die Berechtigu
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API für den Berechtigungsdienst - Schnellstarts](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
+[API-Beginn für den Berechtigungsdienst](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
 
 [Löschen von Berechtigungen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
@@ -124,7 +127,7 @@ Importieren Sie eine Berechtigung mit der Trust Manager-API (Java) in AEM Forms:
 
 [Berechtigungen mithilfe der Trust Manager-API importieren](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[Kurzanleitung (SOAP-Modus): Importieren von Berechtigungen mit der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Importieren von Berechtigungen mit der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -153,8 +156,8 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -176,9 +179,9 @@ Um eine Berechtigung zu löschen, geben Sie den Alias an, der der Berechtigung e
 
 [Importieren von Anmeldeinformationen mit der Java-API](credentials.md#import-credentials-using-the-java-api)
 
-###  Löschen von Berechtigungen mit der Java-API {#deleting-credentials-using-the-java-api}
+### Löschen von Berechtigungen mit der Java-API {#deleting-credentials-using-the-java-api}
 
-Löschen Sie eine Berechtigung aus AEM Forms mithilfe der Trust Manager-API (Java):
+Eine Berechtigung aus AEM Forms mithilfe der Trust Manager-API (Java) löschen:
 
 1. Projektdateien einschließen
 
@@ -197,7 +200,7 @@ Löschen Sie eine Berechtigung aus AEM Forms mithilfe der Trust Manager-API (Jav
 
 [Löschen von Berechtigungen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[Kurzanleitung (SOAP-Modus): Löschen von Berechtigungen mit der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Löschen von Berechtigungen mit der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
