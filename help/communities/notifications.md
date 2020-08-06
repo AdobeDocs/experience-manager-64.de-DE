@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 2%
 
 ---
 
 
 # Communities-Benachrichtigungen {#communities-notifications}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-AEM Communities bietet einen Benachrichtigungsabschnitt, der Ereignisse anzeigt, die für das in Community-Mitgliedern signierte Mitglied von Interesse sind.
+AEM Communities stellt einen Benachrichtigungsabschnitt bereit, der Ereignisse anzeigt, die für das Mitglied der Community von Interesse sind.
 
 Benachrichtigungen ähneln [Aktivitäten](essentials-activities.md) und [Abonnements](subscriptions.md) , die sich aus
 
@@ -27,21 +30,21 @@ Benachrichtigungen ähneln [Aktivitäten](essentials-activities.md) und [Abonnem
 * Das Mitglied, das sich für ein anderes Mitglied entschieden hat
 * Das Mitglied, das sich dafür entschieden hat, bestimmten Themen, Artikeln und anderen Inhaltsthreads zu folgen
 
-Was unterscheidet Benachrichtigungen von Aktivitäten und Abonnements
+Was Benachrichtigungen von Aktivitäten und Abonnements unterscheidet, ist
 
 * Ein Link zum Abschnitt &quot;Benachrichtigungen&quot;ist immer in der Kopfzeile einer Community-Site vorhanden
-   * Aktivitäten erfordern, dass die [Aktivitätsstream-Funktion](functions.md#activity-stream-function) in die Struktur der Community-Site einbezogen wird.
-   * Abonnements müssen [per E-Mail konfiguriert werden](email.md)
-* Die Implementierung von Benachrichtigungen erfolgt über skalierbare und Plug-ins
+   * Aktivitäten erfordern, dass die [Aktivitäten-Stream-Funktion](functions.md#activity-stream-function) in die Struktur der Community-Site einbezogen wird.
+   * Abonnement müssen [konfiguriert werden](email.md)
+* Die Implementierung von Benachrichtigungen erfolgt über skalierbare und Plugin-fähige Kanal
    * Aktivitäten sind nur im Internet verfügbar
-   * Abonnements sind nur per E-Mail verfügbar
+   * Abonnement stehen nur per E-Mail zur Verfügung
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack)sind die verfügbaren Benachrichtigungskanäle
+Ab dem [RP1](deploy-communities.md#latestfeaturepack)der Gemeinschaften sind die Kanäle für die Anmeldung verfügbar unter
 
-* Der Webkanal, auf den über den `Notifications` Link zugegriffen wird
+* Der Web-Kanal, auf den über den `Notifications` Link zugegriffen wird
 * Der E-Mail-Kanal, der verfügbar ist, wenn E-Mail richtig konfiguriert ist
 
-Zukünftige Kanäle sind Mobil und Desktop.
+Zukünftige Kanal sind mobile Geräte und Desktop-PCs.
 
 ### Voraussetzungen {#requirements}
 
@@ -59,13 +62,13 @@ Beachten Sie, dass
 
 * Komponenten, die in Community- [Site-Vorlagen](sites.md) und [Gruppenvorlagen](tools-groups.md) verwendet werden, können bereits konfiguriert werden, um Folgendes zuzulassen:
 
-* Mitgliederprofile sind bereits so konfiguriert, dass andere Mitglieder folgen können
+* Die Profile der Mitgliedstaaten sind bereits so konfiguriert, dass andere Mitglieder folgen können
 
 ## Benachrichtigungen von {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-Über die Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, Abonnements und/oder Benachrichtigungen verfolgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
+Über die Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, Abonnements und/oder Benachrichtigungen folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
 
 Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Folgendem** geändert. Aus praktischen Gründen ist es möglich, alle Methoden `Unfollow All` zu deaktivieren.
 
@@ -73,19 +76,19 @@ Die Schaltfläche **Folgen** wird angezeigt
 
 * Beim Anzeigen des Profils eines anderen Mitglieds
 * Auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs
-   * Folgt allen Aktivitäten für diese allgemeine Funktion
+   * Folgt der gesamten Aktivität für diese allgemeine Funktion
 * Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Beantwortung einer Frage oder einen Blog-Artikel
-   * Folgt allen Aktivitäten für diesen spezifischen Eintrag
+   * Folgt der gesamten Aktivität für diesen spezifischen Eintrag
 
 ## Verwalten von Benachrichtigungseinstellungen {#managing-notification-settings}
 
 Wenn Sie auf der Seite &quot;Benachrichtigungen&quot;den Link &quot;Benachrichtigungseinstellungen&quot;auswählen, können Sie verwalten, wie Benachrichtigungen empfangen werden.
 
-Der Webkanal ist immer aktiviert.
+Der Web-Kanal ist immer aktiviert.
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-Der E-Mail-Kanal, der auf einer ordnungsgemäßen [Konfiguration von E-Mail](email.md)beruht, bietet dieselben Einstellungen wie für den Webkanal.
+Der E-Mail-Kanal, der auf einer ordnungsgemäßen [E-Mail](email.md)-Konfiguration basiert, stellt dieselben Einstellungen wie für den Web-Kanal bereit.
 
 Der E-Mail-Kanal ist standardmäßig deaktiviert.
 
@@ -107,7 +110,7 @@ Wenn Sie die veröffentlichte Site besuchen, werden bei Auswahl des `Notificatio
 
 ### E-Mail-Benachrichtigungen {#email-notifications}
 
-Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail, die einen Link zum Inhalt im Web enthält.
+Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail mit einer Verknüpfung zum Inhalt im Web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
