@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -75,7 +75,7 @@ Wenn Sie mithilfe der Aktivitätskonsole eine Marke erstellen, erscheint diese e
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Aktivitäten“ und „Angebote“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**. Die Marke erscheint nun in der Aktivitätskonsole.
 
-## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole   {#adding-editing-an-activity-using-the-activities-console}
+## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole     {#adding-editing-an-activity-using-the-activities-console}
 
 Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität, um Ihre Marketinganstrengungen auf bestimmte Zielgruppen abzustimmen. Beim Erstellen oder Bearbeiten von Aktivitäten werden folgende Daten festgelegt:
 
@@ -112,12 +112,13 @@ So fügen Sie eine Aktivität hinzu:
 1. Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden:
 
    1. Klicken Sie auf oder tippen Sie auf **Audience auswählen **und wählen Sie das Segment aus, das von Ihrem Erlebnis Zielgruppe wird.
-   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**. 
+   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
    1. Klicken oder tippen Sie auf **Weiter**.
+
    Wenn Sie A/B-Tests in Adobe Target verwenden:
 
    1. Klicken oder tippen Sie auf den Stift im Zielgruppenfeld, um eine Zielgruppe auszuwählen.
-   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**. 
+   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
    1. Geben Sie den prozentualen Anteil des Traffics ein, der auf die jeweiligen Erlebnisse umgelenkt wird.
    1. Klicken oder tippen Sie auf **Weiter**.
 
@@ -146,7 +147,7 @@ Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht wer
 
 >[!NOTE]
 >
->Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen, Der Status der Aktivität ändert sich nur, wenn Sie die Seite aktualisieren.
+>Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen,   ändert sich der Status der Aktivität nur, wenn Sie die Seite aktualisieren.
 
 So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückgängig:
 
@@ -157,14 +158,14 @@ So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückg�
 
 1. Soll die Aktivität veröffentlicht werden, klicken oder tippen Sie auf **Veröffentlichen**. Soll die Veröffentlichung der Aktivität rückgängig gemacht werden, klicken oder tippen Sie auf **Veröffentlichung rückgängig machen**. Die jeweilige Aktion wird durchgeführt und der Status der Aktivitäten in der Aktivitätskonsole angepasst (möglicherweise muss die Seite hierzu aktualisiert werden).
 
-## Aktivitäten in der Autoren- und Veröffentlichungsinstanz  {#activities-on-author-and-publish-instances}
+## Aktivitäten in der Autoren- und Veröffentlichungsinstanz    {#activities-on-author-and-publish-instances}
 
 Wird eine Aktivität aktiviert, deren Targeting-Engine Adobe Target ist, wird in der Autoreninstanz eine zweite Aktivität erstellt:
 
 * Mit der Aktivität in der Autoreninstanz wird die Aktivität in der Autoreninstanz verfolgt, was sich für die Simulation des Besuchererlebnisses oft als sehr nützlich erweist. Die für diese Aktivität aufgezeichneten Analysedaten spiegeln lediglich wider, was in der Autoreninstanz geschieht.
 * Die Aktivität in der Veröffentlichungsinstanz spiegelt die Aktivität auf dem Veröffentlichungsserver wider und reagiert auf Serveranfragen. Hierbei handelt es sich um die Aktivität, die auf der öffentlichen Website angezeigt wird. Für die Verfolgung und Analyse der Verwendung der online befindlichen Site wird nur die Aktivität der Veröffentlichungsinstanz benötigt.
 
-## Anzeigen der Performance und Konvertieren von Gewinnererlebnissen (A/B-Tests)   {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Anzeigen der Performance und Konvertieren von Gewinnererlebnissen (A/B-Tests)     {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Sie können die Leistung beliebiger Adobe Target-Aktivitäten (XT oder A/B) anzeigen. Wenn Sie A/B-Tests verwenden, können Sie zudem die Gewinnererlebnisse in Standarderlebnisse konvertieren.
 
@@ -182,13 +183,14 @@ So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
    * Die aktuelle Aktivität wird deaktiviert.
    * Es werden alle Seiten modifiziert und zielgerichtete Inhalte durch die Inhalte des Gewinnererlebnisses ersetzt. Der Inhalt des Gewinnererlebnisses wird Teil der normalen Seite **ohne** Targeting.
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    Gewinnererlebnisse sind diejenigen Erlebnisse, die in den Berichten größere Steigerungen als andere erzielen. Diese Steigerungen werden aus der Konversionsrate errechnet.
 
 1. Klicken oder tippen Sie auf **Ja**, um zu bestätigen, dass das Gewinnererlebnis konvertiert werden soll. Dies führt zur Deaktivierung der aktuellen Aktivität, die durch die Inhalte des Gewinnererlebnisses ersetzt wird.
 
-## Synchronisieren von Aktivitäten mit Adobe Target   {#synchronizing-activities-with-adobe-target}
+## Synchronisieren von Aktivitäten mit Adobe Target     {#synchronizing-activities-with-adobe-target}
 
 Aktivitäten, deren Targeting-Engine Adobe Target ist, werden mit Adobe Target-Kampagnen synchronisiert. Eine Aktivität wird automatisch mit Adobe Target synchronisiert, wenn folgende Bedingungen erfüllt sind:
 
@@ -209,7 +211,7 @@ Die _author-Aktivitäten werden unmittelbar bei Bearbeitung der Aktivität synch
 
 Veröffentlichte Aktivitäten werden zum Zeitpunkt ihrer Veröffentlichung mit der AEM-Veröffentlichungsinstanz synchronisiert.
 
-## Fehlerbehebung bei der Aktivitätssynchronisierung   {#troubleshooting-activity-synchronization}
+## Fehlerbehebung bei der Aktivitätssynchronisierung     {#troubleshooting-activity-synchronization}
 
 Bei der Synchronisierung von Aktivitäten mit Adobe Target durch AEM fügt AEM eine Eigenschaft mit der Bezeichnung `thirdPartyId` hinzu. Der Wert dieser Eigenschaft basiert auf dem Aktivitätenpfad im AEM-Verzeichnis. In Adobe Target dürfen unterschiedliche Kampagnen für `thirdPartyId` keinesfalls denselben Wert aufweisen. Somit schlägt die Synchronisierung von Aktivitäten fehl, wenn eine bestehende Kampagne (mit einem anderen Aktivitätstyp A/B, XT) in Adobe Target über denselben Wert für `thirdPartyId` verfügt.
 
