@@ -4,6 +4,9 @@ description: Hier erfahren Sie, wie Sie die Metadaten vieler Assets und Sammlung
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 77%
 
 ---
 
@@ -33,7 +36,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 
    >[!NOTE]
    >
-   >Wenn Sie mehrere Assets auswählen, wird die niedrigste gemeinsame übergeordnete Form für die Assets ausgewählt. Anders ausgedrückt, zeigt die Seite &quot;Eigenschaften&quot;nur Metadatenfelder an, die auf allen Eigenschaftsseiten der einzelnen Assets verwendet werden.
+   >Wenn Sie mehrere Assets auswählen, wird die niedrigste gemeinsame übergeordnete Form für die Assets ausgewählt. Anders ausgedrückt, zeigt die Seite &quot;Eigenschaften&quot;nur Metadatenfelder an, die auf den Eigenschaftsseiten aller einzelnen Assets häufig vorkommen.
 
 1. Ändern Sie die Metadateneigenschaften für ausgewählte Assets auf den verschiedenen Registerkarten.
 1. Heben Sie die Auswahl der anderen Assets in der Liste auf, um den Metadateneditor für ein bestimmtes Asset anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für das jeweilige Asset gefüllt.
@@ -41,16 +44,16 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
    >[!NOTE]
    >
    >* Auf der Eigenschaftenseite können Sie Assets aus der Asset-Liste entfernen, indem Sie die Auswahl aufheben. In der Asset-Liste sind alle Assets standardmäßig ausgewählt. Die Metadaten für Assets, die Sie aus der Liste entfernen, werden nicht aktualisiert.
-   >* At the top of assets list, select the check box near **Title** to toggle between selecting the assets and clearing the list.
+   >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **Titel**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
 
 1. Wenn Sie ein anderes Metadatenschema für die Assets wählen möchten, tippen oder klicken Sie auf das Symbol **[!UICONTROL Einstellungen]** in der Symbolleiste und wählen Sie das gewünschte Schema aus.
 1. Speichern Sie die Änderungen.
-1. Um die neuen Metadaten mit den vorhandenen Metadaten für Felder anzuhängen, die mehrere Werte enthalten, wählen Sie **[!UICONTROL Beifügemodus]** aus. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen/Klicken Sie auf **[!UICONTROL Senden]**.
+1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen oder klicken Sie auf **[!UICONTROL Absenden]**.
 
    >[!CAUTION]
    >
-   >Bei Feldern mit nur einem einzigen Wert werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Beifügemodus]** auswählen.
+   >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configure-limit-for-bulk-metadata-update}
 
