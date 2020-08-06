@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +24,7 @@ AEM provides a selection of [standard reports](/help/sites-administering/reporti
 
 Mithilfe des Frameworks können Sie diese Standardberichte erweitern oder Ihre eigenen Berichte entwickeln. Das Framework für die Berichterstellung setzt auf den bestehenden CQ5-Konzepten und -Prinzipien auf, sodass Entwickler ihre vorhandenen CQ5-Kenntnisse als Grundlage für die Entwicklung von Berichten nutzen können.
 
-Für mit AEM gelieferte Standardberichte:
+Für die mit AEM gelieferten Standardberichte:
 
 * Die folgenden Berichte basieren auf dem Framework für die Berichterstellung:
 
@@ -68,12 +71,13 @@ Für mit AEM gelieferte Standardberichte:
    >
    >
 * Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
->* Elemente durch| eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
+>* Elemente, die durch | eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
+
 >
 >  
 Beispiel: `String|String[]` Die Eigenschaft kann entweder String oder String[]sein.
 >
->* `[]` stellt ein Array dar; wie z. B. String[] oder ein Array von Knoten wie in der [Abfragedefinition](#query-definition).
+>* `[]` stellt ein Array dar; wie z. B. String[] oder ein Array von Knoten wie in der [Abfrage Definition](#query-definition).
 >
 >
 Sofern nicht anders angegeben, lauten die Standardtypen:
@@ -627,7 +631,7 @@ N:definitions
 
    * `page`
 
-        Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Beispielsweise `/content/.../page/jcr:content/par/xyz` auf `/content/.../page/jcr:content`.
+        Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. For example, `/content/.../page/jcr:content/par/xyz` is resolved to `/content/.../page/jcr:content`.
 
    * `path`
 
@@ -667,11 +671,11 @@ N:definitions
          Mit dieser Eigenschaft kann ein Suffix angegeben werden, das an den Pfad angehängt wird, bevor der Wert aufgelöst wird.
    * `pathextension`
 
-      * `path` (obligatorisch)
+      * `path` (mandatory)
 
          Definiert den vorzuzeigenden Pfad.
 
-      * `propertyName` (obligatorisch)
+      * `propertyName` (mandatory)
 
          Definiert die Eigenschaft auf dem aufgelösten Pfad, in dem sich der tatsächliche Wert befindet.
 
@@ -953,7 +957,7 @@ N:definitions
 
 * `aggregates`
 
-   Aggregate-Definitionen.
+   Aggregat-Definitionen.
 
    * `text`
 
@@ -961,7 +965,7 @@ N:definitions
 
    * `type`
 
-      Aggregattyp. Die verfügbaren Aggregate sind:
+      Aggregat. Die verfügbaren Aggregate sind:
 
       * `count`
 
@@ -1056,7 +1060,7 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
    Siehe `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Verwenden Sie Standard-AEM-Methoden, um (zusätzliche) Spalteneigenschaften zu definieren.
+* Verwenden Sie AEM Standardmethoden, um (zusätzliche) Spalteneigenschaften zu definieren.
 
    Beachten Sie, dass bei Eigenschaften, die sowohl für die Komponenten- als auch für Spalteninstanz definiert sind, der Wert für die Spalteninstanz Vorrang hat.
 
@@ -1067,8 +1071,9 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
    * `definitions/filters` - filters
    * `definitions/type` –   – der Typ der Spalte (dieser muss über das Dialogfeld definiert werden, entweder über eine Auswahl/ein Kombinationsfeld oder ein ausgeblendetes Feld)
    * `definitions/data/resolver` und `definitions/data/resolverConfig` (aber nicht `definitions/data/preprocessing` oder `.../clientFilter`) - der Auflöser und die Konfiguration
-   * `definitions/queryBuilder` - die Konfiguration des Abfragegenerators
-   * `defaults/aggregate` - das Standardaggregat
+   * `definitions/queryBuilder` - Abfrage Builder-Konfiguration
+   * `defaults/aggregate` - das Standard-Aggregat
+
    In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
@@ -1312,6 +1317,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    * den Titel `Bundle` aufweist (Spaltentitel in der Tabelle)
    * is in the sidekick group `OSGi Report`
    * bei bestimmten Ereignissen aktualisiert wird.
+
    >[!NOTE]
    >
    >In this example there are no definitions of `N:data` and `P:clientFilter`. Das liegt daran, dass der vom Server empfangene Wert 1:1 zurückgegeben wird – dies ist das Standardverhalten.
@@ -1439,6 +1445,7 @@ These can be viewed using the Configuration menu of the web console (available f
 >
 >* entweder für einen Bericht für zwei Benutzer mit unterschiedlichen Spracheinstellungen
 >* oder für einen Benutzer und zwei Berichte
+
 >
 
 
