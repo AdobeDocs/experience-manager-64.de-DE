@@ -1,8 +1,8 @@
 ---
-title: Welche Testumgebungen sind erforderlich?
-seo-title: Welche Testumgebungen sind erforderlich?
-description: Mehrere Umgebungen sollten als Teil von Tests betrachtet werden
-seo-description: Mehrere Umgebungen sollten als Teil von Tests betrachtet werden
+title: Welche Test-Umgebung sind erforderlich?
+seo-title: Welche Test-Umgebung sind erforderlich?
+description: Mehrere Umgebung sollten als Teil der Tests betrachtet werden
+seo-description: Mehrere Umgebung sollten als Teil der Tests betrachtet werden
 uuid: bb725e50-edae-4c20-8107-d1c8df2e60e2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
 translation-type: tm+mt
 source-git-commit: 2c46d0630690737ef7b7f944cdea5b3d393c92e5
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 44%
 
 ---
 
@@ -35,6 +38,6 @@ Sollte in Verbindung mit dem Dispatcher getestet werden.
 
 Als Letztes müssen Sie die verwendete Hardware berücksichtigen. Leistungstests sollten auf einem System ausgeführt werden, das möglichst ähnlich wie die endgültige Live-Umgebung konfiguriert ist. Daher wird empfohlen, den Projektstart wie folgt zu unterteilen:
 
-**Soft Launch** - reduzierte Verfügbarkeit die Zeit für Leistungstests, Abstimmung und Optimierung unter realistischen Bedingungen in der Produktionsumgebung erlaubt.
+**Soft Launch** - reduzierte Verfügbarkeit; die Zeit für Leistungstests, Optimierungen und Optimierungen unter realistischen Bedingungen auf der Umgebung der Produktion lässt.
 
 **Harter Start** - Vollständige Verfügbarkeit.
