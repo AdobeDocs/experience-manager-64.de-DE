@@ -8,13 +8,16 @@ contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
 translation-type: tm+mt
 source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 56%
 
 ---
 
 
 # Häufig gestellte Fragen (FAQ) zu AEM{#aem-faqs}
 
-Auf dieser Seite erhalten Sie Antworten auf einige Probleme bei der Fehlerbehebung und Konfiguration von AEM.
+Auf dieser Seite erhalten Sie Antworten auf einige AEM Probleme bei der Fehlerbehebung und Konfiguration.
 
 ## Sites {#sites}
 
@@ -46,7 +49,7 @@ If one requires the authors to manage projects as well, then the workaround is t
 Vor dem Erstellen eines Übersetzungsprojekts müssen Sie einen Sprach-Stamm und eine Sprachkopie innerhalb des Stamms erstellen.
 
 Beispiel:\
-Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Erstellen Sie anschließend eine Sprachkopie der Seite aus dem Referenzen-Bedienfeld und navigieren Sie zur `Create structure only` Option in `Create & Translate`. Erstellen Sie abschließend ein Übersetzungsprojekt und fügen Sie dann die Sprachkopie zum Übersetzungsauftrag hinzu.
+Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Erstellen Sie anschließend eine Sprachkopie der Seite aus dem Referenzen-Bedienfeld und navigieren Sie zu der `Create structure only` Option in `Create & Translate`. Erstellen Sie abschließend ein Übersetzungsprojekt und fügen Sie dann die Sprachkopie zum Übersetzungsauftrag hinzu.
 
 Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
 
@@ -66,15 +69,15 @@ Informationen dazu, wie Sie SSL standardmäßig aktivieren können, finden Sie u
 
 ### Welche Architektur empfiehlt sich bei der Nutzung der AEM Content Services über eine mobilen App, idealerweise React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
-Die Content Services basieren auf den Sling-Modellen, und die AEM-Entwickler müssen für jede Komponente, die exportiert wird, ein Sling-Modell-Pojo bereitstellen.
+Die Content Services basieren auf den Sling-Modellen, und die AEM Entwickler müssen für jede Komponente, die exportiert wird, ein Sling Model pojo bereitstellen.
 
-Erläuterungen dazu, wie AEM Content Services von einer React-Anwendung genutzt werden, erhalten Sie im Tutorial [Erste Schritte mit AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Erläuterungen dazu, wie AEM Content Services von einer React-Anwendung genutzt werden, erhalten Sie im Tutorial [Erste Schritte mit AEM Content Services](https://helpx.adobe.com/de/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
 Also, if the developers want to export a tree of components they can also implement the `ComponentExporter` and `ContainerExporter` interfaces as well as use the `ModelFactory` to iterate over the child components and return their model representation. Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
 
-[1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+[1] - [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling:Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling: Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
 
 ### Wie lässt sich das AEM 6.4-Umfrage-Popup deaktivieren? {#how-to-disable-aem-survey-pop-up}
 
@@ -84,11 +87,11 @@ Sie können die Sammlung von Nutzungsstatistiken über die Touch-optimierte Benu
 
 Refer to [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) that describes high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
 
-### Konfigurieren einer AEM-Instanz für die Verwendung des PorterStem-Filters {#how-to-configure-an-aem-instance-to-use-the-porterstem-filter}
+### Wie konfiguriere ich eine AEM Instanz für die Verwendung des PorterStem-Filters? {#how-to-configure-an-aem-instance-to-use-the-porterstem-filter}
 
 Der PorterStem-Filter wendet den Porter Stemming-Algorithmus für Englisch an. Die Ergebnisse sind ähnlich wie die Verwendung des Snowball Porter Stemmers mit dem *Argument language=&quot;English&quot;* . Aber dieser Stil ist direkt in Java kodiert und nicht auf Snowball basiert. Es akzeptiert keine Liste geschützter Wörter und ist nur für englischsprachigen Text geeignet.
 
-Oak stellt eine Reihe von Analyzer-Konfigurationselementen mit Lucene-Unterstützung zur Verwendung in AEM bereit. Weitere Informationen zur Verwendung von Filtern finden Sie unter **Apache Oak Analyzers** im [Implementierungshandbuch](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)zur einfachen Suche.
+Oak stellt eine Reihe von Analyzer-Konfigurationselementen zur Verwendung in AEM bereit. Weitere Informationen zur Verwendung von Filtern finden Sie unter **Apache Oak Analyzers** im [Implementierungshandbuch](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)zur einfachen Suche.
 
 ### Wie führt man eine vollständige Neuindizierung durch? {#how-to-perform-a-full-re-indexing}
 
@@ -98,7 +101,7 @@ Lesen Sie die [Best Practices für Abfragen und Indizierung](/help/sites-deployi
 
 ### Unterstützen wir minimierte JS libs in Design Importer? {#do-we-support-minified-js-libs-in-design-importer}
 
-Sie müssen die Eigenschaft &quot;JS-Prozessor default configs&quot;des Adobe Granite HTML Library Manager in ***min:gcc***&#x200B;ändern. Um das Design-Paket erfolgreich zu importieren, wird empfohlen, vorminimierte Drittanbieterbibliotheken in unsere clientseitigen Bibliotheken aufzunehmen.
+Sie müssen die Eigenschaft der Standardkonfigurationen des JS-Prozessors im HTML-Bibliotheksmanager der Adobe Granite in ***min:gcc***&#x200B;ändern. Um das Design-Paket erfolgreich zu importieren, wird empfohlen, vorminimierte Drittanbieterbibliotheken in unsere clientseitigen Bibliotheken aufzunehmen.
 
 ## Assets {#assets}
 
@@ -140,9 +143,9 @@ To learn how to create a custom console and customize a default view for a conso
 
 ### Was ist der Unterschied zwischen CoralUI 2- und CoralUI 3-basierten Komponenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) befinden. Es gibt einen Satz von CoralUI 2-basierten Komponenten und einen Satz von CoralUI 3-basierten Komponenten. Bei dem neuen Satz handelt es sich nicht um eine bloße Kopie des alten Satzes, sondern um eine bereinigte Version (u. .a optimiert und ohne veraltete Funktionen). Entsprechend empfiehlt es sich, dass eine Seite entweder ausschließlich den CoralUI 3-basierten oder aber den CoralUI 2-basierten Satz verwendet.
+A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) befinden. Es gibt einen Satz von CoralUI 2-basierten Komponenten und einen Satz von CoralUI 3-basierten Komponenten. Bei dem neuen Satz handelt es sich nicht um eine bloße Kopie des alten Satzes, sondern um eine bereinigte Version (u. .a optimiert und ohne veraltete Funktionen). Entsprechend empfiehlt es sich, dass eine Seite entweder ausschließlich den CoralUI 3-basierten oder aber den CoralUI 2-basierten Satz verwendet.
 
-To learn more in detail, refer to [Migration Guide to CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+To learn more in detail, refer to [Migration Guide to CoralUI 3-based](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 ### Wie lässt sich die Suchkomponente in AEM Assets anpassen? {#how-to-customize-the-search-component-in-aem-assets}
 
@@ -152,7 +155,7 @@ Bei der Implementierung der einfachen Suche handelt es sich um die Materialien v
 
 ### Wenn ein Kunde nur Sites-Lizenzen in AEM kauft, hat er dann trotzdem Zugriff auf Assets? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
 
-Nein, der Kunde kann nicht auf Assets (oder andere als Sites) zugreifen. Auch wenn alle lokalen Komponenten von Adobe Experience Manager (AEM) in der JAR enthalten sind, ist der Kunde berechtigt, nur auf die Komponenten in der JAR zuzugreifen, für die er in seinem Vertrag lizenziert ist. Wenn sie andere Komponenten erkunden möchten, können sie entweder das AEM-Testprogramm für bis zu 45 Tage verwenden oder eine Verkaufsbestellung für $0 unterzeichnen, mit der sie zum Auswerten (ohne Produktionsverwendung) benannter Komponenten wie Assets berechtigt sind.
+Nein, der Kunde kann nicht auf Assets (oder andere als Sites) zugreifen. Auch wenn alle in Adobe Experience Manager (AEM) untergebrachten Räumlichkeiten in der JAR enthalten sind, ist der Kunde berechtigt, nur auf die Komponenten im JAR zuzugreifen, für die er in seinem Vertrag lizenziert ist. Wenn sie andere Komponenten erkunden möchten, können sie entweder das AEM-Testversion-Programm für bis zu 45 Tage verwenden oder einen Verkaufsauftrag für $0 unterzeichnen, der es ihnen erlaubt, benannte Komponenten wie Assets auszuwerten (keine Produktionsverwendung).
 
 Weitere Informationen zu AEM On-Premise-Software und Adobe Managed Services finden Sie in den folgenden Ressourcen:
 
@@ -164,5 +167,5 @@ Weitere Informationen zu AEM On-Premise-Software und Adobe Managed Services find
 
 Informationen zum Erweitern der Standardeigenschaften einer Seite oder eines Assets finden Sie in den nachfolgend aufgeführten Ressourcen:
 
-* [Metadaten-Schemas in Assets](/help/assets/metadata-schemas.md)
+* [Metadaten-Schema in Assets](/help/assets/metadata-schemas.md)
 * [Anpassen von Ansichten von Seiteneigenschaften](/help/sites-developing/page-properties-views.md)
