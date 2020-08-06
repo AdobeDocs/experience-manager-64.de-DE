@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
 source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 75%
 
 ---
 
@@ -45,7 +48,7 @@ Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Üb
 
 ### vh-Einheiten {#vh-units}
 
-`vh` Einheiten werden nicht unterstützt, da die iframe-Höhe automatisch von AEM angepasst werden muss.
+`vh` Einheiten werden nicht unterstützt, da die iframe-Höhe automatisch durch AEM angepasst werden muss.
 
 ### Feste Hintergrundbilder {#fixed-background-images}
 
