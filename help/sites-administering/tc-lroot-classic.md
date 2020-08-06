@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 80%
 
 ---
 
@@ -28,6 +31,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Klein- oder Großbuchstaben gemäß ISO-3166
    1. Wählen Sie die Vorlage aus und klicken Sie auf „Erstellen“.
+
    ![newpagefr](assets/newpagefr.png)
 
 1. Wählen Sie in der Websites-Konsole in der Baumstruktur „Websites“ die Stammseite der Website aus.
