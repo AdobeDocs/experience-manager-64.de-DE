@@ -1,6 +1,6 @@
 ---
-title: Wiedergabe von Formularen mit aktivierten Rechten
-seo-title: Wiedergabe von Formularen mit aktivierten Rechten
+title: Wiedergabe von Rights-aktiviertem Forms
+seo-title: Wiedergabe von Rights-aktiviertem Forms
 description: 'null'
 seo-description: 'null'
 uuid: ce5e4be6-d9b0-4989-a0e1-a8c3b98aed77
@@ -12,15 +12,18 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1441'
+ht-degree: 5%
 
 ---
 
 
-# Wiedergabe von Formularen mit aktivierten Rechten {#rendering-rights-enabled-forms}
+# Wiedergabe von Rights-aktiviertem Forms {#rendering-rights-enabled-forms}
 
-Der Forms-Dienst kann Formulare mit Verwendungsrechten wiedergeben. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. Formulare mit Verwendungsrechten werden als Formulare mit aktivierten Verwendungsrechten bezeichnet. Ein Benutzer, der ein Formular mit aktivierten Benutzerrechten in Adobe Reader öffnet, kann Vorgänge ausführen, die für dieses Formular aktiviert sind.
+Der Forms-Dienst kann Formulare mit Verwendungsrechten wiedergeben. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. Forms, auf das Verwendungsrechte angewendet wurden, werden als Formulare mit aktivierten Verwendungsrechten bezeichnet. Ein Benutzer, der ein Formular mit aktivierten Benutzerrechten in Adobe Reader öffnet, kann Vorgänge ausführen, die für dieses Formular aktiviert sind.
 
-Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Extensions-Dienst Teil Ihrer AEM Forms-Installation sein. Darüber hinaus müssen Sie über eine gültige Berechtigung verfügen, mit der Sie Verwendungsrechte auf PDF-Dokumente anwenden können. Das heißt, Sie müssen den Acrobat Reader DC Extensions-Dienst ordnungsgemäß konfigurieren, bevor Sie ein Formular mit aktivierten Berechtigungen wiedergeben können. (Siehe [Info zum Acrobat Reader DC Extensions-Dienst](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Extensions-Dienst Teil Ihrer AEM Forms-Installation sein. Darüber hinaus müssen Sie über eine gültige Berechtigung verfügen, mit der Sie Verwendungsrechte auf PDF-Dokumente anwenden können. Das heißt, Sie müssen den Acrobat Reader DC Extensions-Dienst ordnungsgemäß konfigurieren, bevor Sie ein Formular mit aktivierten Rechten wiedergeben können. (Siehe [Info zum Acrobat Reader DC Extensions-Dienst](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >
@@ -28,7 +31,7 @@ Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Ext
 
 >[!NOTE]
 >
->Sie können ein Formular mit XML-Daten nicht im Voraus ausfüllen, wenn Sie die folgenden Verwendungsrechte angeben: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles`oder `enableDigitalSignatures`. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+>Sie können ein Formular mit XML-Daten nicht im Voraus ausfüllen, wenn Sie die folgenden Verwendungsrechte angeben: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles`oder `enableDigitalSignatures`. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
 
 >[!NOTE]
 >
@@ -36,7 +39,7 @@ Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Ext
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
-Um ein Formular mit aktivierten Berechtigungen wiederzugeben, führen Sie die folgenden Aufgaben aus:
+Führen Sie die folgenden Aufgaben aus, um ein Formular mit aktivierten Berechtigungen wiederzugeben:
 
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie ein Forms Client-API-Objekt.
@@ -48,13 +51,13 @@ Um ein Formular mit aktivierten Berechtigungen wiederzugeben, führen Sie die fo
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxydateien einschließen.
 
-**Erstellen eines Forms Client-API-Objekts**
+**Forms Client API-Objekt erstellen**
 
 Bevor Sie einen Forms-Dienst-Client-API-Vorgang programmgesteuert durchführen können, müssen Sie einen Forms-Dienstclient erstellen.
 
 **Laufzeitoptionen für Verwendungsrechte festlegen**
 
-Sie müssen Laufzeitoptionen für Verwendungsrechte festlegen, um ein Formular mit aktivierten Verwendungsrechten wiederzugeben. Sie müssen auch den Alias der Berechtigung angeben, die zum Anwenden von Verwendungsrechten auf ein Formular verwendet wird. Nachdem Sie den Aliaswert angegeben haben, geben Sie jedes Verwendungsrecht für das Formular an.
+Sie müssen Laufzeitoptionen für Verwendungsrechte festlegen, um ein Formular mit aktivierten Verwendungsrechten wiederzugeben. Sie müssen auch den Alias der Berechtigung angeben, die zum Anwenden von Verwendungsrechten auf ein Formular verwendet wird. Nachdem Sie den Aliaswert angegeben haben, geben Sie jedes Verwendungsrecht an, das auf das Formular angewendet werden soll.
 
 **Wiedergabe eines Formulars mit aktivierten Verwendungsrechten**
 
@@ -62,11 +65,11 @@ Zur Wiedergabe eines Formulars mit aktivierten Verwendungsrechten verwenden Sie 
 
 >[!NOTE]
 >
->Bei der Wiedergabe eines Formulars mit aktivierten Rechten mithilfe der Forms-Webdienst-API können Sie keine Dateien an das Formular anhängen.
+>Bei der Wiedergabe eines Formulars mit aktivierten Benutzerrechten mithilfe der Forms-Webdienst-API können Sie keine Dateien an das Formular anhängen.
 
 **Schreiben des Formulardatenstreams in den Client-Webbrowser**
 
-Wenn der Forms-Dienst ein Formular mit aktivierten Rechten wiedergibt, wird ein Formulardatenstream zurückgegeben, den Sie in den Client-Webbrowser schreiben müssen. Nach dem Schreiben in den Client-Webbrowser ist das Formular für den Benutzer sichtbar. Ein Benutzer, der das Formular mit aktivierten Benutzerrechten in Adobe Reader anzeigt, kann Vorgänge ausführen, die für dieses Formular aktiviert sind.
+Wenn der Forms-Dienst ein Formular mit aktivierten Benutzerrechten wiedergibt, wird ein Formulardatenstream zurückgegeben, den Sie in den Client-Webbrowser schreiben müssen. Nach dem Schreiben in den Client-Webbrowser ist das Formular für den Benutzer sichtbar. Ein Benutzer, der das Formular mit aktivierten Benutzerrechten in Adobe Reader anzeigt, kann Vorgänge ausführen, die für dieses Formular aktiviert sind.
 
 **Siehe auch**
 
@@ -78,21 +81,21 @@ Wenn der Forms-Dienst ein Formular mit aktivierten Rechten wiedergibt, wird ein 
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interaktive PDF forms wiedergeben](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Erstellen von Webanwendungen zum Rendern von Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Wiedergabe von Formularen mit aktivierten Verwendungsrechten mit der Java-API {#render-rights-enabled-forms-using-the-java-api}
 
-Wiedergabe eines Formulars mit aktivierten Rechten mithilfe der Forms API (Java):
+Wiedergabe eines Formulars mit aktivierten Berechtigungen mithilfe der Forms API (Java):
 
 1. Projektdateien einschließen
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-forms-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
 
-1. Erstellen eines Forms Client-API-Objekts
+1. Forms Client API-Objekt erstellen
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -102,19 +105,21 @@ Wiedergabe eines Formulars mit aktivierten Rechten mithilfe der Forms API (Java)
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
    * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` Objektmethode aufrufen und einen Zeichenfolgenwert angeben, der den Aliaswert darstellt. `setReCredentialAlias`
    * Legen Sie die Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec` Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung das Festlegen nicht zulässt. Beispiel. Um das Verwendungsrecht festzulegen, mit dem ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec` Methode des `setReFillIn` Objekts auf und übergeben Sie es `true`.
+
    >[!NOTE]
    >
-   >Es ist nicht erforderlich, die `ReaderExtensionSpec`*-Methode des `setReCredentialPassword` Objekts aufzurufen. Diese Methode wird vom Forms-Dienst nicht verwendet. *
+   >Es ist nicht erforderlich, die `ReaderExtensionSpec` *-Methode des `setReCredentialPassword`Objekts aufzurufen. Diese Methode wird vom Forms-Dienst nicht verwendet. *
 
 1. Wiedergabe eines Formulars mit aktivierten Verwendungsrechten
 
    Rufen Sie die `FormsServiceClient` Objektmethode `renderPDFFormWithUsageRights` auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, müssen Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` Objekt.
    * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert.
    * Ein `ReaderExtensionSpec` Objekt, das Laufzeitoptionen für Verwendungsrechte speichert.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
+
    Die `renderPDFFormWithUsageRights` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
@@ -129,7 +134,7 @@ Wiedergabe eines Formulars mit aktivierten Rechten mithilfe der Forms API (Java)
 
 **Siehe auch**
 
-[Kurzanleitung (SOAP-Modus): Wiedergabe eines Formulars mit aktivierten Rechten mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Wiedergabe eines Formulars mit aktivierten Rechten mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -144,7 +149,7 @@ Wiedergabe eines Formulars mit aktivierten Berechtigungen mithilfe der Forms API
    * Erstellen Sie Java-Proxyklassen, die die Forms-Dienst-WSDL verwenden.
    * Schließen Sie die Java-Proxyklassen in Ihren Klassenpfad ein.
 
-1. Erstellen eines Forms Client-API-Objekts
+1. Forms Client API-Objekt erstellen
 
    Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
@@ -158,11 +163,12 @@ Wiedergabe eines Formulars mit aktivierten Berechtigungen mithilfe der Forms API
 
    Rufen Sie die `FormsService` Objektmethode `renderPDFFormWithUsageRights` auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, müssen Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten mit dem Formular zusammenführen möchten, müssen Sie ein `BLOB` Objekt übergeben, das auf einer leeren XML-Datenquelle basiert. Ein `BLOB` Objekt, das null ist, kann nicht übergeben werden. Andernfalls wird eine Ausnahme ausgelöst.
    * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert.
    * Ein `ReaderExtensionSpec` Objekt, das Laufzeitoptionen für Verwendungsrechte speichert.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
+
    Die `renderPDFFormWithUsageRights` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
@@ -176,6 +182,6 @@ Wiedergabe eines Formulars mit aktivierten Berechtigungen mithilfe der Forms API
 
 **Siehe auch**
 
-[Wiedergabe von Formularen mit aktivierten Rechten](#rendering-rights-enabled-forms)
+[Wiedergabe von Rights-aktiviertem Forms](#rendering-rights-enabled-forms)
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
