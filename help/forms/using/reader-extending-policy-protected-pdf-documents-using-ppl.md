@@ -11,6 +11,9 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +48,7 @@ Sie können die folgenden Aufgaben mit dem Reader Extensions-Dienst ausführen:
 
 Mit der Java-API `applyUsageRights` können Sie Verwendungsrechte für PDF-Dokumente aktivieren. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewandt wurden, werden als Dokumente mit aktivierten Verwendungsrechten bezeichnet. Benutzer, die ein Dokument mit aktivierten Verwendungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
 
-**** Syntax: `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
+**Syntax:** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
 <table> 
  <tbody> 
@@ -76,7 +79,7 @@ Mit der Java-API `applyUsageRights` können Sie Verwendungsrechte für PDF-Dokum
 
 You can use the `getDocumentUsageRights`Java API to retrieve the reader extension usage rights applied to a policy-protected PDF document. Durch Abrufen von Informationen zu Verwendungsrechten erfahren Sie, welche Funktionen Reader Extension für das richtliniengeschützte PDF-Dokument aktiviert hat.
 
-**** Syntax: `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
+**Syntax:** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
 <table> 
  <tbody> 
@@ -141,7 +144,7 @@ System.out.println("RE rights for the file are :\n"+right1);
 
 Mit der Java-API `removeUsageRights` können Sie Verwendungsrechte von einem richtliniengeschützten Dokument entfernen. Das Entfernen von Verwendungsrechten aus einem richtliniengeschützte PDF-Dokument ist notwendig, um andere AEM Forms-Vorgänge darauf anzuwenden. Sie müssen beispielsweise ein PDF-Dokument digital signieren (bzw. zertifizieren), bevor Sie Verwendungsrechte festlegen. Wenn Sie demnach Vorgänge auf ein richtliniengeschütztes Dokument anwenden möchten, müssen Sie Verwendungsrechte vom PDF-Dokument entfernen, andere Vorgänge anwenden, z. B. das Dokument digital signieren, und anschließend die Verwendungsrechte wieder für das Dokument aktivieren.
 
-**** Syntax: `InputStream removeUsageRights(InputStream inputFile)`
+**Syntax:** `InputStream removeUsageRights(InputStream inputFile)`
 
 <table> 
  <tbody> 
