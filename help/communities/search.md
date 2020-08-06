@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 29%
 
 ---
 
@@ -27,11 +30,11 @@ The page that includes the `Search`component provides a place to launch a search
 
 Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass Site-Besucher und Mitglieder in der Lage sind, Inhalte einzusehen.
 
-## Suche{#search-features}
+## Suche {#search-features}
 
 ### Hinzufügen einer Suche zu einer Seite {#add-search-to-a-page}
 
-Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Search` und an ihre Position auf einer Seite zu ziehen. Die Verwendung `Search` erfordert eine zweite Seite für die Variable `Search Results.`
+Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Search` und auf eine Seite zu ziehen. Die Verwendung `Search` erfordert eine zweite Seite für die Variable `Search Results.`
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -53,7 +56,8 @@ Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are s
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Ergebnisseite]** Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der `Search Results` Komponente im Browser angegeben wird.
+* **[!UICONTROL Ergebnisseite]** Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der Variablen 
+`Search Results` component.
 
 ## Search Results {#search-results}
 
