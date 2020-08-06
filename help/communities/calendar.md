@@ -1,8 +1,8 @@
 ---
 title: Kalenderfunktion
 seo-title: Kalenderfunktion
-description: Bietet Community-Ereignisinformationen im Kalenderformat
-seo-description: Bietet Community-Ereignisinformationen im Kalenderformat
+description: Bietet Community-Ereignis-Informationen im Kalenderformat
+seo-description: Bietet Community-Ereignis-Informationen im Kalenderformat
 uuid: 6f1f327f-bf4b-4357-b8fd-4bec74016921
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 47%
 
 ---
 
@@ -23,7 +26,7 @@ Mit der Kalenderfunktion können der Community Veranstaltungsdaten im Kalenderfo
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
-* Hinzufügen der Kalenderfunktion zu einer AEM-Site
+* Hinzufügen der Kalenderfunktion zu einer AEM Site
 * Configuration settings for `Calendar`components
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
@@ -56,15 +59,15 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Moderiert]**
 
-   Wenn diese Option aktiviert ist, muss die Veröffentlichung von Kalenderereignissen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungssite erscheinen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, muss die Veröffentlichung von Kalenderkommentaren und Ereignissen genehmigt werden, bevor sie auf einer Veröffentlichungssite erscheinen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Geschlossen]**
 
-   Wenn diese Option aktiviert ist, wird der Kalender für neue Ereigniseinträge und Kommentare geschlossen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, wird der Ereignis für neue Einträge und Kommentare geschlossen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
-   Wenn diese Option aktiviert ist, können Kalenderereignisse und Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Kalenderkommentare und Ereignisse mit Markup eingegeben werden. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Tagging zulassen]**
 
@@ -72,11 +75,11 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Datei-Uploads zulassen]**
 
-   Wenn diese Option aktiviert ist, können Sie zulassen, dass Dateianlagen zu einem Kalenderereignis oder Kommentar hinzugefügt werden. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie zulassen, dass Dateianlagen zu einem Ereignis oder Kommentar im Kalender hinzugefügt werden. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Folgende zulassen]**
 
-   Wenn diese Option aktiviert ist, erlauben Sie Mitgliedern, Ereignisse zu verfolgen, die im Kalender veröffentlicht wurden. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, den im Kalender veröffentlichten Ereignissen zu folgen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Max. Dateigröße]**
 
@@ -92,19 +95,19 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Zugelassene Bildtypen für Deckblätter]**
 
-   Eine kommagetrennte Liste der Bilddateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Der Standardwert ist `.jpg,.jpeg,.png,.gif,.bmp`.
+   Eine kommagetrennte Liste von Bilddateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Der Standardwert ist `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **[!UICONTROL Antworten mit Diskussionsfaden zulassen]**
 
-   Wenn diese Option aktiviert ist, lassen Sie Antworten auf Kommentare zu, die im Kalenderereignis veröffentlicht wurden. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie Antworten auf Kommentare zulassen, die an das Kalender-Ereignis gesendet wurden. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Benutzern das Löschen von Anmerkungen und Ereignissen ermöglichen]**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die von ihnen veröffentlichten Kommentare und Kalenderereignisse zu löschen. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern das Löschen der geposteten Kommentare und Kalenderdaten gestatten. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
-   Wenn diese Option aktiviert ist, fügen Sie die Funktion &quot;Abstimmung&quot;in ein Kalenderereignis ein. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die Funktion &quot;Abstimmung&quot;in ein Ereignis ein. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Breadcrumbs anzeigen]**
 
@@ -112,7 +115,7 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Datumsbereich-Filter]**
 
-   Definiert die Anzahl der Tage, die zum aktuellen Datum hinzugefügt werden, um den &quot;An&quot;-Wert des Seitenfilters für das Kalenderereignis zu berechnen. Die Standardnummer ist 30.
+   Definiert die Anzahl der Tage, die zum aktuellen Ereignis hinzugefügt werden, um den &quot;An&quot;-Wert des Seitenfilters für die Kalenderauflistungen zu berechnen. Die Standardnummer ist 30.
 
 * **[!UICONTROL Feature-Inhalt zulassen]**
 
@@ -120,7 +123,7 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics and replies (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 * **[!UICONTROL Posts ablehnen]**
 
@@ -128,19 +131,19 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics an
 
 * **[!UICONTROL Ereignisse schließen/erneut öffnen]**
 
-   Wenn diese Option aktiviert ist, können Moderatoren mit vertrauenswürdigen Mitgliedern ein Ereignis schließen, um weitere Änderungen und Kommentare vorzunehmen, und ein Ereignis auch erneut öffnen. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren mit vertrauenswürdigen Mitgliedern ein Ereignis schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und auch ein Ereignis erneut öffnen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Posts kennzeichnen]**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Ereignisse oder Kommentare anderer Personen als unangemessen zu kennzeichnen. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Ereignisse oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Liste mit Kenn-zeichnungsgründen]**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern in einer Dropdownliste gestatten, ihren Grund für die Kennzeichnung eines Ereignisses oder Kommentars als unangemessen auszuwählen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können die Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie ein Ereignis oder einen Kommentar als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Ereignisses oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Ereignisses oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Schwellenwert für Moderation]**
 
@@ -156,7 +159,7 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags
 
 * **[!UICONTROL Zulässige Namespaces]**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **[!UICONTROL Empfehlungsgrenze]**
 
@@ -172,7 +175,7 @@ Auf der Registerkarte **[!UICONTROL Übersetzung]** können Sie festlegen, ob be
 
 * **[!UICONTROL Alles übersetzen]**
 
-   Wenn diese Option aktiviert ist, werden das Ereignis und die Kommentare in die bevorzugte Sprache des Benutzers übersetzt. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, werden die Ereignisse und Kommentare in die vom Benutzer bevorzugte Sprache übersetzt. Diese Option ist standardmäßig aktiviert.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -194,11 +197,11 @@ When the signed in user is a community member or [privileged member](users.md#pr
 
 Insbesondere ist Folgendes möglich:
 
-* Neues Kalenderereignis erstellen
-* Posten eines Kommentars zu einem Kalenderereignis
-* Bearbeiten eines eigenen Kalenderereignisses oder Kommentars
-* Löschen eines eigenen Kalenderereignisses oder Kommentars
-* Markieren von Kalenderereignissen oder Kommentaren anderer Benutzer
+* Erstellen eines neuen Ereignisses
+* Veröffentlichen eines Kommentars in einem Kalender-Ereignis
+* Bearbeiten eines eigenen Ereignisses oder Kommentars
+* Löschen eines eigenen Ereignisses oder Kommentars
+* Ereignisse oder Kommentare anderer kennzeichnen
 
 ![chlimage_1-116](assets/chlimage_1-116.png) ![chlimage_1-117](assets/chlimage_1-117.png)
 
