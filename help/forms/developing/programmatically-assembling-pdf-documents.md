@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
 source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
+workflow-type: tm+mt
+source-wordcount: '2092'
+ht-degree: 2%
 
 ---
 
@@ -79,8 +82,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
 Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss bereitgestellt wird, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
@@ -104,7 +107,7 @@ Sowohl die Datei &quot;map.pdf&quot;als auch die Datei &quot;richtungen.pdf&quot
 
 **Festlegen von Laufzeitoptionen**
 
-Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, bei Auftreten eines Fehlers mit der Verarbeitung eines Auftrags fortzufahren. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, bei Auftreten eines Fehlers mit der Verarbeitung eines Auftrags fortzufahren. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **PDF-Eingabedateien zusammenstellen**
 
@@ -191,6 +194,7 @@ Stellen Sie ein PDF-Dokument mithilfe der Assembler Service API (Java) zusammen:
    * Ein `com.adobe.idp.Document` Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map` Objekt, das die zu assemblierenden PDF-Eingabedateien enthält
    * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` Objekt, das die Laufzeitoptionen angibt, einschließlich der standardmäßigen Schriftart- und Auftragsprotokollebene
+
    Die `invokeDDX` Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags und alle aufgetretenen Ausnahmen enthält.
 
 1. Extrahieren Sie die Ergebnisse.
@@ -200,6 +204,7 @@ Stellen Sie ein PDF-Dokument mithilfe der Assembler Service API (Java) zusammen:
    * Rufen Sie die `AssemblerResult` Methode des `getDocuments` Objekts auf. Dadurch wird ein `java.util.Map` Objekt zurückgegeben.
    * Durchlaufen Sie das `java.util.Map` Objekt, bis Sie das resultierende `com.adobe.idp.Document` Objekt gefunden haben. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
    * Rufen Sie die `com.adobe.idp.Document` `copyToFile` Objektmethode auf, um das PDF-Dokument zu extrahieren.
+
    >[!NOTE]
    >
    >Wenn `*LOG_LEVEL*` die Erstellung eines Protokolls festgelegt wurde, können Sie das Protokoll mithilfe der `*AssemblerResult*` Objektmethode extrahieren `*getJobLog*` .
@@ -222,12 +227,12 @@ Zusammenstellen von PDF-Dokumenten mit der Assembler-Dienst-API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
    * Erstellen Sie ein `AssemblerServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -270,6 +275,7 @@ Zusammenstellen von PDF-Dokumenten mit der Assembler-Dienst-API (Webdienst):
    * Ein `BLOB` Objekt, das das DDX-Dokument darstellt.
    * Das `mapItem` Array, das die PDF-Eingabedateien enthält. Die Schlüssel müssen mit den Namen der PDF-Quelldateien übereinstimmen. Die Werte müssen die `BLOB` Objekte sein, die diesen Dateien entsprechen.
    * Ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen angibt.
+
    Die `invoke` Methode gibt ein `AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags sowie eventuell auftretende Ausnahmen enthält.
 
 1. Extrahieren Sie die Ergebnisse.
@@ -279,10 +285,11 @@ Zusammenstellen von PDF-Dokumenten mit der Assembler-Dienst-API (Webdienst):
    * Greifen Sie auf das `AssemblerResult` Objektfeld `documents` zu, das ein `Map` Objekt ist, das die PDF-Dokumente enthält.
    * Durchlaufen Sie das `Map` Objekt, bis Sie den Schlüssel gefunden haben, der dem Namen des resultierenden Dokuments entspricht. Dann wird das Array-Element `value` in eine `BLOB`umgewandelt.
    * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `BLOB` Objekteigenschaft `MTOM` zugreifen. Dadurch wird ein Bytearray zurückgegeben, das Sie in eine PDF-Datei schreiben können.
+
    >[!NOTE]
    >
    >Wenn `LOG_LEVEL` das Erstellen eines Protokolls festgelegt wurde, können Sie das Protokoll extrahieren, indem Sie den Wert des `AssemblerResult` Objektdatensatzes abrufen `jobLog` .
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
