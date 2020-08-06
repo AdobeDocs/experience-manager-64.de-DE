@@ -11,6 +11,9 @@ topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 70%
 
 ---
 
@@ -46,7 +49,7 @@ Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web C
   </tr> 
   <tr> 
    <td>Datenanzeigeformate</td> 
-   <td>Gebietsschemaspezifisches Anzeigeformat für Felder, Variablen und Formulardatenmodellelemente, die beim Erstellen einer interaktiven Kommunikation für Druck- und Webkanäle verfügbar sind.</td> 
+   <td>Gebietsschemaspezifisches Anzeigeformat für Felder, Variablen und Formulardatenmodellelemente, das beim Erstellen einer interaktiven Kommunikation für Print- und Web-Kanal verfügbar ist.</td> 
    <td> 
     <ul> 
      <li>locale = en_US, de_DE, fr_FR und ja_JP</li> 
