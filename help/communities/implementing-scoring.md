@@ -1,8 +1,8 @@
 ---
 title: Communities - Bewertung und Abzeichen
 seo-title: Communities - Bewertung und Abzeichen
-description: AEM Communities-Scoring und -Abzeichen ermöglichen die Identifizierung und Belohnung von Community-Mitgliedern
-seo-description: AEM Communities-Scoring und -Abzeichen ermöglichen die Identifizierung und Belohnung von Community-Mitgliedern
+description: Mit AEM Communities-Scoring und -Kennzeichen können Sie Community-Mitglieder identifizieren und belohnen
+seo-description: Mit AEM Communities-Scoring und -Kennzeichen können Sie Community-Mitglieder identifizieren und belohnen
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## Übersicht {#overview}
 
-Die Funktion für die Bewertung und Kennzeichnung von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
+Die AEM Communities-Funktion für Scoring und Abzeichen bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
 Wichtigste Aspekte der Bewertung und Abzeichen sind:
 
@@ -36,7 +36,7 @@ Wichtigste Aspekte der Bewertung und Abzeichen sind:
 
 >[!CAUTION]
 >
->Die in CRXDE Lite angezeigte Implementierungsstruktur kann sich ändern, sobald die Benutzeroberfläche verfügbar ist.
+>Die in der CRXDE Lite angezeigte Implementierungsstruktur kann sich ändern, sobald die Benutzeroberfläche verfügbar ist.
 
 ## Zeichen {#badges}
 
@@ -215,7 +215,7 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
   <tr> 
    <th>Eigenschaft</th> 
    <th>Typ</th> 
-   <th> Wertbeschreibung</th> 
+   <th> Wert Beschreibung</th> 
   </tr> 
   <tr> 
    <td><i><code>VERB</code></i></td> 
@@ -345,7 +345,7 @@ Die `scoringRules`Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein,
 
 >[!NOTE]
 >
->Optimale Vorgehensweise: Sie können individuelle Abzeichen-Bilder für jede AEM-Site erstellen.
+>Optimale Vorgehensweise: Sie können individuelle Abzeichen für jede AEM Website erstellen.
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -354,7 +354,7 @@ Die `scoringRules`Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein,
   <tr> 
    <th>Eigenschaft</th> 
    <th>Typ</th> 
-   <th>Wertbeschreibung</th> 
+   <th>Wert Beschreibung</th> 
   </tr> 
   <tr> 
    <td>Schwellenwerte</td> 
@@ -449,7 +449,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 >[!NOTE]
 >
->Die Verwendung von cURL zum Zuweisen und Sperren von Abzeichen funktioniert für jedes Abzeichen-Bild, aber wenn sie anstelle von &quot;verdient&quot;zugewiesen werden, werden sie als zugewiesene Abzeichen markiert und entsprechend behandelt.
+>Die Verwendung von cURL zum Zuweisen und Sperren von Abzeichen funktioniert für jedes Abzeichen-Bild, aber wenn sie anstelle von verdient zugewiesen werden, werden sie als zugewiesene Abzeichen markiert und entsprechend behandelt.
 
 ## Bewertung und Abzeichen für benutzerdefinierte Komponenten {#scoring-and-badges-for-custom-components}
 
@@ -586,7 +586,7 @@ Wenn die Funktion nicht wie erwartet funktioniert, stellen Sie sicher, dass die 
 
 Mithilfe der Website &quot;Erste [Schritte - Tutorial](getting-started.md) &quot;(Interaktion) können Sie schnell Scoring und Abzeichen ausprobieren:
 
-* Zugriff auf CRXDE Lite auf Autor
+* CRXDE Lite beim Autor aufrufen
 * Gehen Sie zur Basisseite:
 
    * /content/sites/engagement/de/jcr:content
@@ -653,6 +653,6 @@ Dies sollte dem Community-Mitglied ein Bronzemarke mit seinem Forenbeitrag sicht
 
 More information may be found on the [Scoring and Badges Essentials](configure-scoring.md) page for developers.
 
-Weitere Informationen zur erweiterten Scoring-Engine finden Sie unter [Erweiterte Scoring- und Badges-Funktion](advanced.md).
+Informationen zur erweiterten Scoring-Engine finden Sie unter [Erweiterte Scoring- und Badges-Funktion](advanced.md).
 
 Die konfigurierbare Leaderboard- [Komponente](enabling-leaderboard.md) und - [Funktion](functions.md#leaderboard-function) vereinfacht die Anzeige von Mitgliedern und deren Ergebnissen auf einer Community-Site.
