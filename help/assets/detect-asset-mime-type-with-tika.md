@@ -4,13 +4,16 @@ description: Aktivieren Sie Apache Tika, damit AEM Assets beim Upload-Vorgang de
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 37%
 
 ---
 
 
 # Verwenden Sie Apache Tika, um den MIME-Typ digitaler Assets zu erkennen {#detecting-mime-type-of-assets-using-apache-tika}
 
-In der Regel erkennt Adobe Experience Manager (AEM) Assets den MIME-Typ von Assets, die Sie von ihrer Dateierweiterung hochladen. Wenn Sie Apache Tika verwenden, um Assets hochzuladen, erkennt AEM Assets deren MIME-Typ durch den Content Stream während des Uploadvorgangs statt durch die Dateierweiterung. 
+Normalerweise erkennt Adobe Experience Manager (AEM) Assets den MIME-Typ von Assets, die Sie von ihrer Dateierweiterung hochladen. Wenn Sie Apache Tika verwenden, um Assets hochzuladen, erkennt AEM Assets deren MIME-Typ durch den Content Stream während des Uploadvorgangs statt durch die Dateierweiterung. 
 
 Diese Funktion ist standardmäßig deaktiviert.  To enable the feature, configure the **Day CQ DAM Mime Type** service from Configuration Manager.
 
@@ -25,4 +28,4 @@ Diese Funktion ist standardmäßig deaktiviert.  To enable the feature, configur
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+1. Klicken oder tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
