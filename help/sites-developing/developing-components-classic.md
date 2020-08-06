@@ -12,6 +12,9 @@ discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2420'
+ht-degree: 72%
 
 ---
 
@@ -28,7 +31,7 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 >
 >Auch wenn die HTML Template Language (HTL) und JSP beide für die Entwicklung von Komponenten für die klassische Benutzeroberfläche verwendet werden können, ist auf dieser Seite nur die Entwicklung mit JSP abgebildet. Dies liegt einzig an der Historie der Verwendung von JSP für die klassische Benutzeroberfläche.
 >
->HTL ist jetzt die empfohlene Skriptsprache für AEM. See [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) and [Developing AEM Components](/help/sites-developing/developing-components.md) to compare methods.
+>HTL ist jetzt die empfohlene Skriptsprache für AEM. See [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) and [Developing AEM Components](/help/sites-developing/developing-components.md) to compare methods.
 
 ## Struktur {#structure}
 
@@ -71,7 +74,7 @@ Zusammenfassung:
    * `sling` - Der Sling-Skript-Helfer.
    * `properties` - Die Eigenschaften der adressierten Ressource ( `resource.adaptTo(ValueMap.class);`).
    * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
-   * `pageManager` - Der Seitenmanager für den Zugriff auf AEM-Inhaltsseiten ( `resourceResolver.adaptTo(PageManager.class);`).
+   * `pageManager` - Der Seitenmanager für den Zugriff auf AEM Inhaltsseiten ( `resourceResolver.adaptTo(PageManager.class);`).
    * `component` – das Komponentenobjekt der aktuellen AEM-Komponente.
    * `designer` - Das Designerobjekt zum Abrufen von Designinformationen ( `resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` – das Design der betreffenden Ressource.
@@ -83,7 +86,7 @@ Es gibt drei Methoden für den Zugriff auf Inhalte in AEM WCM:
 
 * Über das in `global.jsp`:
 
-   Das properties-Objekt ist eine Instanz einer ValueMap (siehe [Sling API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) und enthält alle Eigenschaften der aktuellen Ressource.
+   Das properties-Objekt ist eine Instanz einer ValueMap (siehe [Sling-API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) und enthält alle Eigenschaften der aktuellen Ressource.
 
    Example: `String pageTitle = properties.get("jcr:title", "no title");` used in the rendering script of a page component.
 
@@ -153,7 +156,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
    Erstellen Sie die Knotenstruktur wie in den Bibliotheken neu und kopieren Sie dann die Definition einer vorhandenen Komponente, wie etwa die Textkomponente. Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
-   * from `/libs/foundation/components/text`
+   * von `/libs/foundation/components/text`
    * in `/apps/myProject/components/text`
 
 1. Modify the `jcr:title` to reflect its new name.
@@ -167,6 +170,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
       * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
    * replacing the `.jsp` file (name it after your new component)
    * oder vollständiges Überarbeiten der gesamten Komponente, falls gewünscht
+
    For example, if you take a copy of the standard Text component, you can add an additional field to the dialog box, then update the `.jsp` to process the input made there.
 
    >[!NOTE]
@@ -174,7 +178,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    >Eine Komponente für:
    >
    >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
-   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
 
    >[!NOTE]
@@ -215,6 +219,7 @@ Nach dem Entwickeln der Komponente fügen Sie sie dem Absatzsystem hinzu. Autore
       `<contextPath>/ Test.html?wcmmode=design`
 
    * Klicken auf „Design“ im Sidekick
+
    Sie befinden sich jetzt im Designmodus und können das Absatzsystem bearbeiten.
 
 1. Klicken Sie auf „Bearbeiten“.
@@ -263,6 +268,7 @@ Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Kompon
    * dialog definition: `textimage/dialog`
    * Komponentenskript: `textimage/textimage.jsp`
    * edit configuration node (allowing drag-and-drop of assets): `textimage/cq:editConfig`
+
    >[!NOTE]
    >
    >Die Dialogfelddefinition hängt von der Benutzeroberfläche ab:
@@ -283,23 +289,25 @@ Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Kompon
    * Übergeordnete Komponente für die neue Komponente (die standardmäßige textimage-Komponente)
 
       * Setzen Sie `sling:resourceSuperType` auf `foundation/components/textimage`
+
    Nach diesem Schritt sieht der Komponentenknoten wie folgt aus:
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. Ändern Sie die `sling:resourceType` Eigenschaft des Konfigurationsknotens zum Bearbeiten des Bildes (Eigenschaft: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) `geometrixx/components/textimage.`
+1. Ändern Sie die `sling:resourceType` Eigenschaft des Konfigurationsknotens zum Bearbeiten des Bildes (Eigenschaft: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) nach `geometrixx/components/textimage.`
 
    Auf diese Weise wird beim Ablegen eines Bilds in der Komponente auf der Seite die `sling:resourceType`-Eigenschaft der erweiterten textimage-Komponente auf `geometrixx/components/textimage.` festgelegt.
 
 1. Ändern Sie das Dialogfeld „Komponente“, damit es die neue Option enthält. Die neue Komponente erbt die Teile des Dialogfelds, die dem Original entsprechen. Wir erweitern zusätzlich lediglich die Registerkarte **Erweitert** und fügen eine Dropdown-Liste **Bildposition** mit den Optionen **Links** und **Rechts** hinzu:
 
    * Leave the `textimage/dialog`properties unchanged.
+
    Beachten Sie, dass `textimage/dialog/items` vier Unterknoten aufweist, tab1 bis tab4, die den vier Registerkarten des textimage-Dialogfelds entsprechen.
 
    * Für die ersten beiden Registerkarten (tab1 und tab2):
 
       * Ändern Sie xtype in cqinclude (um von der Standardkomponente zu erben).
-      * Fügen Sie eine Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`Werten hinzu.
+      * Hinzufügen einer Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`Werten.
       * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
    * Für tab3:
 
@@ -315,6 +323,7 @@ Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Kompon
       * Legen Sie für Knoten die Eigenschaften `position/options/o1` fest: `text` nach `Left` und `value` nach `left.`
       * Legen Sie für Knoten die Eigenschaften `position/options/o2` fest: `text` nach `Right` und `value` nach `right`.
    * Löschen Sie tab4.
+
    Die Bildposition wird im Inhalt als `imagePosition`-Eigenschaft des Knotens beibehalten, der für den Absatz `textimage` steht. Nach diesen Schritten sieht das Komponentendialogfeld folgendermaßen aus:
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
@@ -375,6 +384,7 @@ Um diese Funktion zu deaktivieren, verwenden wir die Standard-Bildkomponente als
    * **Name**: `allowUpload`
    * **Typ**: `String`
    * **Wert**: `false`
+
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. Klicken Sie auf **Alle speichern**. Die Komponente kann jetzt getestet werden.
