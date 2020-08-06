@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    Pfad zur Standard-Inhaltsrichtlinie: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   Kopieren Sie im Ordner `gridFluidLayout` die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um. Beispiel, `myPolicy`.
+   Kopieren Sie im Ordner `gridFluidLayout` die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um. Beispiel: `myPolicy`.
 
    ![Kopieren von Standardrichtlinien](assets/crx-default1.png)
 
