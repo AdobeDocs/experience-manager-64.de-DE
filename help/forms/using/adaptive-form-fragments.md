@@ -237,7 +237,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth√
 
    `127.0.0.1 <Host machine>`
 
-   **Hostcomputer**: Der Apple Mac-Computer, auf dem AEM Forms bereitgestellt werden.
+   **Hostcomputer**: Der Apple Mac-Computer, auf dem AEM Forms bereitgestellt wird.
 
 ## Referenzfragmente {#reference-fragments}
 
