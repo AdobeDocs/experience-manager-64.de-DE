@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 81%
 
 ---
 
@@ -49,6 +52,7 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
    * **Content path:** der Inhalts-Pfad, auf den die Regel angewandt wird;
    * **Minimum age:** die Zeit in Tagen, für die die Auditprotokolle aufbewahrt werden müssen
    * **Audit log type:** der Typ des zu löschenden Auditprotokolls
+
    >[!NOTE]
    >
    >The content path only applies to children of the `/var/audit/com.day.cq.wcm.core.page` node in the repository.
@@ -64,9 +68,9 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
 
 1. Sie können entweder das Datum der nächsten Ausführung ermitteln, es konfigurieren oder es durch das Drücken der Wiedergabetaste manuell ausführen.
 
-Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor der Vorgang &quot;Bereinigung des Prüfprotokolls&quot;abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
+Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe zur Bereinigung des Prüfprotokolls abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
 
-**Mit AEM 6.4** können Sie eine ausgeführte Audit Log Purge-Aufgabe manuell beenden, indem Sie auf das Symbol **Stopp** klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
+**Mit AEM 6.4** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das Symbol zum **Anhalten** klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
 
 >[!NOTE]
 >
