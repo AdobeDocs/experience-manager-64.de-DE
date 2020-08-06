@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +30,7 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 >
 >AEM-Entwickler können neue Gerätegruppen erstellen. (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
 
-Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu schreiben:
+Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Rufen Sie im Browser die Konsole **Siteadmin** auf.
 1. Öffnen Sie die Seite **Produkte** unterhalb von **Websites** >> **Geometrixx Mobile Demo Site**  >>  **Englisch**.
@@ -46,5 +49,5 @@ Die Seite nimmt die folgende Gestalt an:
 
 >[!NOTE]
 >
->Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird. Das Authoring kann dann über die touchfähige Benutzeroberfläche erfolgen.
+>Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird. Das Authoring kann dann über die touchfähige Benutzeroberfläche durchgeführt werden.
 
