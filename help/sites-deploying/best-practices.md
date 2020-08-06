@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 translation-type: tm+mt
 source-git-commit: c9591211c80d453de5172c90501d2d2907eba4e6
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 60%
 
 ---
 
@@ -53,7 +56,7 @@ Die folgenden Tabellen enthalten auch Beschreibungen und Links zu speziellen Dok
   <tr>
    <td>Mongo-Topologie</td> 
    <td><a href="/help/sites-deploying/recommended-deploys.md">Best Practices zur Mongo-Topologie</a></td> 
-   <td>Beschreibt Mongo-Topologie - wann welche Topologie verwendet werden soll.</td> 
+   <td>Beschreibt die Mongo-Topologie - wann welche Topologie verwendet werden soll.</td> 
   </tr>
   <tr>
    <td>Datenspeicheroptionen</td> 
@@ -70,9 +73,9 @@ Die folgenden Tabellen enthalten auch Beschreibungen und Links zu speziellen Dok
 
 ## Communities {#communities}
 
-AEM Communities vereinfacht die Erstellung und Verwaltung von lokalen Gemeinschaften. Bewährte Verfahren für AEM Communities werden hier beschrieben:
+AEM Communities vereinfacht die Gründung und Verwaltung von lokalen Gemeinschaften. Bewährte Verfahren für AEM Communities werden hier beschrieben:
 
-[Community Content Store](/help/communities/working-with-srp.md) - Behandelt die neue Funktion zum gemeinsamen Speicher für benutzergenerierte Inhalte (UGC) und die Überlegungen zur Auswahl der zugrunde liegenden [Topologie](/help/communities/topologies.md).
+[Community Content Store](/help/communities/working-with-srp.md) - Behandelt die neue Funktion für freigegebene Datenspeicherung für benutzergenerierte Inhalte (UGC) und die Überlegungen zur Auswahl der zugrunde liegenden [Topologie](/help/communities/topologies.md).
 
 [Empfohlene Bereitstellungen für Communities](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschreibt die empfohlenen Implementierungen für Communities. |
 
