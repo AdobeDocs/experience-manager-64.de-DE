@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 translation-type: tm+mt
 source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
 
 # Erweiterte Bewertung und Abzeichen {#advanced-scoring-and-badges}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die erweiterte Bewertung ermöglicht die Vergabe von Kennzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Bewertung werden Punkte basierend auf der Menge *und* Qualität der von einem Mitglied erstellten Inhalte zugewiesen, während bei der grundlegenden Bewertung Punkte nur auf der Grundlage der erstellten Inhaltsmenge zugewiesen werden.
 
 Dieser Unterschied ist auf die Bewertungsmaschine zurückzuführen, die zur Berechnung der Ergebnisse verwendet wird. Die Basis-Scoring-Engine verwendet einfache Mathematik. Die Advanced Scoring Engine ist ein adaptiver Algorithmus, der aktive Mitglieder belohnt, die wertvollen und relevanten Inhalt beisteuern, der durch die natürliche Sprachverarbeitung (Natural Language Processing, NLP) eines Themas abgezogen wird.
 
-Neben der Relevanz von Inhalten berücksichtigen die Bewertungsalgorithmen auch Mitgliederaktivitäten wie Abstimmungen und Prozentsatz der Antworten. Während die grundlegende Bewertung sie quantitativ umfasst, verwendet die erweiterte Bewertung sie algorithmisch.
+Neben der Relevanz von Inhalten berücksichtigen die Bewertungsalgorithmen auch Aktivitäten von Mitgliedern, wie z. B. Abstimmung und Prozentsatz der Antworten. Während die grundlegende Bewertung sie quantitativ umfasst, verwendet die erweiterte Bewertung sie algorithmisch.
 
-Daher benötigt die erweiterte Scoring-Engine genügend Daten, um die Analyse aussagekräftig zu machen. Der Leistungsschwellenwert für die Expertenausbildung wird ständig neu bewertet, da sich der Algorithmus ständig an die Menge und Qualität der erstellten Inhalte anpasst. Es gibt auch das Konzept des *Verfalls* älterer Posten eines Mitglieds. Wenn ein Expertenmitglied nicht mehr an dem Thema teilnimmt, in dem es einen Expertenstatus erlangt hat, könnte es zu einem bestimmten Zeitpunkt (siehe Konfiguration[der ](#configurable-scoring-engine)Bewertungsmaschine) seinen Status als Experte verlieren.
+Daher benötigt die erweiterte Scoring-Engine genügend Daten, um eine aussagekräftige Analyse zu ermöglichen. Der Leistungsschwellenwert für die Expertenausbildung wird ständig neu bewertet, da sich der Algorithmus ständig an die Menge und Qualität der erstellten Inhalte anpasst. Es gibt auch das Konzept des *Verfalls* älterer Posten eines Mitglieds. Wenn ein Expertenmitglied nicht mehr an dem Thema teilnimmt, in dem es einen Expertenstatus erlangt hat, könnte es zu einem bestimmten Zeitpunkt (siehe Konfiguration [der](#configurable-scoring-engine)Bewertungsmaschine) seinen Status als Experte verlieren.
 
 Die Einrichtung einer erweiterten Bewertung ist praktisch identisch mit der eines Basisscorings:
 
-* Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln werden auf Inhalte[ auf dieselbe Weise ](implementing-scoring.md#apply-rules-to-content)angewendet
+* Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln werden auf Inhalte [auf dieselbe Weise](implementing-scoring.md#apply-rules-to-content) angewendet
    * Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln können auf denselben Inhalt angewendet werden
 * [Aktivieren von Kennzeichen für Komponenten](implementing-scoring.md#enable-badges-for-component) ist generisch
 
@@ -37,13 +40,13 @@ Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich
 
 * Konfigurierbare erweiterte Scoring-Engine
 * Erweiterte Bewertungsregeln:
-   * `scoringType` auf **[!UICONTROL erweitert]**
+   * `scoringType` auf **[!UICONTROL erweitert einstellen]**
    * Stoppwörter erforderlich
 
 * Erweiterte Kennzeichnungsregeln:
-   * `badgingType` auf **[!UICONTROL erweitert]**
+   * `badgingType` auf **[!UICONTROL erweitert einstellen]**
    * `badgingLevels` auf die Anzahl der zu vergebenden Expertenstufen
-   * Erfordert ein `badgingPaths` Array von Zeichen anstelle von Schwellenwerten für Array-Zuordnungspunkten zu Zeichen
+   * Erfordert ein `badgingPaths` Array von Kennzeichen anstelle von Schwellenwerten für Array-Zuordnungspunkten zu Kennzeichen
 
 >[!NOTE]
 >
@@ -51,18 +54,17 @@ Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich
 
 ## Konfigurierbare Scoring-Engine {#configurable-scoring-engine}
 
-Die erweiterte Scoring-Engine bietet eine OSGi-Konfiguration mit Parametern, die den erweiterten Scoring-Algorithmus beeinflussen.
+Die erweiterte Scoring-Engine bietet eine OSGi-Konfiguration mit Parametern, die sich auf den erweiterten Scoring-Algorithmus auswirken.
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL Bewertungsgewichte]** Geben Sie für ein Thema das Verb an, das bei der Berechnung des Ergebnisses die höchste Priorität erhalten soll. Es können ein oder mehrere Themen eingegeben werden, jedoch nur **ein Verb pro Thema**. Siehe [Themen und Verben](implementing-scoring.md#topics-and-verbs).
+* **[!UICONTROL Gewichtungen]** zur Bewertung für ein Thema geben Sie das Verb an, das bei der Berechnung des Ergebnisses die höchste Priorität erhalten soll. Es können ein oder mehrere Themen eingegeben werden, jedoch nur **ein Verb pro Thema**. Siehe [Themen und Verben](implementing-scoring.md#topics-and-verbs).
 
    Wie `topic,verb` mit Escapezeichen eingegeben. Beispiel:
 
    `/social/forum/hbs/social/forum\,ADD`
 
-   
-Standard ist für QnA- und Forumkomponenten auf das ADD-Verb eingestellt.
+   Die Standardeinstellung ist auf das HINZUFÜGEN Verb für QnA- und Forumkomponenten festgelegt.
 
 
 * **[!UICONTROL Bewertungsbereich]**
@@ -91,7 +93,7 @@ In der Grundbewertung ist die Menge, die benötigt wird, um ein Zeichen zu verdi
 
 Bei der erweiterten Bewertung wird die benötigte Menge ständig an die Menge der Qualitätsdaten innerhalb des Systems angepasst. Die Bewertung wird kontinuierlich auf eine Weise berechnet, die einer Glockenkurve ähnlich ist.
 
-Wenn ein Mitglied ein Expertenabzeichen für ein Thema erhält, das nicht mehr aktiv ist, besteht die Möglichkeit, dass es sein Abzeichen aufgrund des Verfalls mit der Zeit verliert.
+Wenn ein Mitglied ein Expertenabzeichen zu einem Thema erhält, das nicht mehr aktiv ist, besteht die Möglichkeit, dass es sein Abzeichen aufgrund des Verfalls mit der Zeit verliert.
 
 ### ScoringType {#scoringtype}
 
@@ -99,7 +101,7 @@ Eine Bewertungsregel ist ein Satz von Bewertungsunterregeln, von denen jede die 
 
 Um die erweiterte Scoring-Engine aufzurufen, `scoringType`sollte die auf `advanced`.
 
-Siehe [Bewertungsunterregeln](implementing-scoring.md#scoring-sub-rules).
+Siehe [Scoring-Unterregeln](implementing-scoring.md#scoring-sub-rules).
 
 ![chlimage_1-261](assets/chlimage_1-261.png)
 
@@ -109,7 +111,7 @@ Das erweiterte Bewertungspaket installiert einen Konfigurationsordner, der eine 
 
 * `/etc/community/scoring/configuration/stopwords`
 
-Der erweiterte Bewertungsalgorithmus verwendet die Liste der Wörter, die in der stopwords-Datei enthalten sind, um häufig verwendete englische Wörter zu identifizieren, die bei der Inhaltsverarbeitung ignoriert werden.
+Der erweiterte Bewertungsalgorithmus verwendet die Liste der Wörter, die in der Stoppwortdatei enthalten sind, um häufig verwendete englische Wörter zu identifizieren, die bei der Inhaltsverarbeitung ignoriert werden.
 
 Es wird nicht erwartet, dass diese Datei geändert wird.
 
@@ -128,21 +130,21 @@ Anstatt Punkte mit einem Abzeichen zu verknüpfen, ist es nur notwendig, die Anz
 | badgingPath | Zeichenfolge[] | (Erforderlich) Eine Zeichenfolge mit mehreren Werten für Abzeichen bis zur Anzahl der badgingLevels. Die Abzeichen-Bildpfade müssen so angeordnet sein, dass der erste dem höchsten Fachmann verliehen wird. Wenn weniger Zeichen vorhanden sind als durch badgingLevels angegeben, füllt das letzte Zeichen im Array den Rest des Arrays aus. Beispieleintrag:/etc/community/badging/images/expertenbadge/jcr:content/expert.png |
 | badgingLevels | Long | (Optional) Gibt die zu vergebenden Fachkenntnisse an. Wenn beispielsweise ein Experte und ein fast Experte (zwei Abzeichen) vorhanden sein sollten, sollte der Wert auf 2 gesetzt werden. Die badgingLevel-Eigenschaft sollte mit der Anzahl der Kennzeichnungsbilder für Experten übereinstimmen, die für die badgingPath-Eigenschaft aufgelistet sind. Der Standardwert ist 1. |
 | badgingType | Zeichenfolge | (Erforderlich) Identifiziert die Scoring-Engine entweder als &quot;Basis&quot;oder als &quot;Erweitert&quot;. Auf &quot;advanced&quot;gesetzt, andernfalls ist der Standard &quot;basic&quot;. |
-| scoringRules | Zeichenfolge[] | (Optional) Eine Zeichenfolge mit mehreren Werten, mit der die Kennzeichnungsregel auf von der/den aufgeführten Bewertungsregel(n) identifizierte Ereignisse beschränkt wird.Beispieleintrag:/etc/community/scoring/rules/adv-comments-scoringDefault ist keine Einschränkung. |
+| scoringRules | Zeichenfolge[] | (Optional) Eine Zeichenfolge mit mehreren Werten, mit der die Kennzeichnungsregel auf von der/den aufgeführten Bewertungsregel(n) identifizierte Ereignis beschränkt wird.Beispieleintrag:/etc/community/scoring/rules/adv-comments-scoringDefault ist keine Einschränkung. |
 
 ## Einschließlich Regeln und Zeichen {#included-rules-and-badge}
 
 ### Einschließlich Badge {#included-badge}
 
-In dieser Beta-Version ist ein auf Belohnung basierendes Expertenzeichen enthalten:
+In dieser Beta-Version ist ein auf Belohnung basierendes Expertenabzeichen enthalten:
 
-* Experten
+* Expert
 
    `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
-Damit das Abzeichen von Experten als Belohnung für Aktivitäten erscheinen kann, müssen zwei Dinge geschehen:
+Damit das Expertenzeichen als Belohnung für Aktivität erscheinen kann, müssen zwei Dinge geschehen:
 
 * `badges` muss für die Funktion aktiviert sein, z. B. eine Forum- oder QnA-Komponente
 * erweiterte Scoring- und Kennzeichnungsregeln müssen auf die Seite (oder den Vorgänger) angewendet werden, auf der die Komponente platziert wird
@@ -162,7 +164,7 @@ In der Beta-Version sind zwei erweiterte Bewertungsregeln für die [Forenfunktio
 
       /etc/community/scoring/rules/sub-rules/adv-comments-rule
 
-      /etc/community/scoring/rules/sub-rules/adv-stimmregel-owner
+      /etc/community/scoring/rules/sub-rules/adv-stimmungs-rule-owner
 
       /etc/community/scoring/rules/sub-rules/adv-stimmregel
 
@@ -174,7 +176,7 @@ In der Beta-Version sind zwei erweiterte Bewertungsregeln für die [Forenfunktio
 
       /etc/community/scoring/rules/sub-rules/adv-comments-rule
 
-      /etc/community/scoring/rules/sub-rules/adv-stimmregel-owner
+      /etc/community/scoring/rules/sub-rules/adv-stimmungs-rule-owner
 
 **Hinweise:**
 
