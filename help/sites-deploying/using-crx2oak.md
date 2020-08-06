@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +26,7 @@ CRX2Oak ist ein Tool für die Migration von Daten zwischen verschiedenen Reposit
 
 Es kann zur Migration von Daten aus älteren CQ-Versionen, die auf Apache Jackrabbit 2 basieren, nach Oak verwendet werden, sowie zum Kopieren von Daten zwischen Oak-Repositorys.
 
-Sie können die neueste Version von crx2oak aus dem öffentlichen Adobe-Repository unter folgendem Speicherort herunterladen:\
+Sie können die neueste Version von crx2oak aus dem Repository der öffentlichen Adobe unter folgendem Speicherort herunterladen:\
 [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 Die Liste der Änderungen und Fehlerbehebungen für die aktuelle Version finden Sie in den [Versionshinweisen zu CRX2OAK](/help/release-notes/crx2oak.md).
@@ -137,7 +140,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--user`: Der Benutzer für die Ziel-RDB
 
-* `--password`: Kennwort für die Ziel-RDB.
+* `--password`: Kennwort für die Zielgruppe RDB.
 
 ### Migrationsoptionen {#migration-options}
 
@@ -145,18 +148,18 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 * `--fail-on-error`: Erzwingt ein Fehlschlagen der Migration, wenn die Knoten nicht aus dem Quell-Repository gelesen werden können.
 * `--ldap`: Migriert LDAP-Benutzer von einer CQ 5.x-Instanz zu einer Oak-basierten Instanz. Dies funktioniert jedoch nur, wenn der Identitätsanbieter in der Oak-Konfiguration als „ldap“ angegeben ist. Weitere Informationen finden Sie in der [LDAP-Dokumentation](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Verwenden Sie dies in Verbindung mit dem `--ldap` Parameter für CQ 5.x-Repositorys, die mehrere LDAP-Server zur Authentifizierung verwendet haben. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. Das Format ist `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Verwenden Sie dies in Verbindung mit dem `--ldap` Parameter für CQ 5.x-Repositorys, die mehrere LDAP-Server zur Authentifizierung verwendet haben. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. Das Format ist `--ldapconfig=path/to/ldap_login.conf`festgelegt.
 
 ### Optionen für die Versionsspeicherung {#version-store-options}
 
 * `--copy-orphaned-versions`: Überspringt Kopieren verwaister Versionen. Parameters supported are: `true`, `false` and `yyyy-mm-dd`. Standardwert ist `true`.
 
-* `--copy-versions:` Kopiert den Versionsspeicher. Parameters: `true`, `false`, `yyyy-mm-dd`. Standardwert ist `true`.
+* `--copy-versions:` Kopiert die Datenspeicherung der Version. Parameter: `true`, `false`, `yyyy-mm-dd`. Standardwert ist `true`.
 
 #### Pfadoptionen {#path-options}
 
-* `--include-paths:` Kommagetrennte Liste der Pfade, die beim Kopieren einbezogen werden sollen
-* `--merge-paths`: Kommagetrennte Liste der beim Kopieren zusammenzuführenden Pfade
+* `--include-paths:` Kommagetrennte Liste von Pfaden, die beim Kopieren einbezogen werden sollen
+* `--merge-paths`: Durch Kommas getrennte Liste von Pfaden, die beim Kopieren zusammengeführt werden sollen
 * `--exclude-paths:` Eine kommagetrennte Liste der beim Kopieren auszuschließenden Pfade.
 
 ### Quell BLOB-Speicheroptionen {#source-blob-store-options}
@@ -171,13 +174,13 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 ### Ziel BLOB-Speicheroptionen {#destination-blobstore-options}
 
-* `--datastore:` Der als Ziel zu verwendende Datenspeicher-Ordner `FileDataStore`
+* `--datastore:` Der als Zielgruppe zu verwendende Datenspeicherordner `FileDataStore`
 
-* `--fileblobstore:` Der als Ziel zu verwendende Datenspeicher-Ordner `FileBlobStore`
+* `--fileblobstore:` Der als Zielgruppe zu verwendende Datenspeicherordner `FileBlobStore`
 
-* `--s3datastore`: Der für das Ziel zu verwendende Datenspeicher-Ordner `S3DataStore`
+* `--s3datastore`: Der für die Zielgruppe zu verwendende Datenspeicherordner `S3DataStore`
 
-* `--s3config`: Die Konfigurationsdatei für das Ziel `S3DataStore`.
+* `--s3config`: Die Konfigurationsdatei für die Zielgruppe `S3DataStore`.
 
 ### Hilfeoptionen {#help-options}
 
