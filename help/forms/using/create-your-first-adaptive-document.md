@@ -1,6 +1,6 @@
 ---
-title: ERSTELLEN SIE NICHT DAS erste adaptive Dokument
-seo-title: ERSTELLEN SIE NICHT DAS erste adaptive Dokument
+title: ERSTELLEN SIE NICHT DAS erste adaptive Dokument.
+seo-title: ERSTELLEN SIE NICHT DAS erste adaptive Dokument.
 description: 'null'
 seo-description: 'null'
 page-status-flag: de-activated
@@ -8,22 +8,25 @@ uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 15%
 
 ---
 
 
-# ERSTELLEN SIE NICHT DAS erste adaptive Dokument {#do-not-publish-create-your-first-adaptive-document}
+# ERSTELLEN SIE NICHT DAS erste adaptive Dokument. {#do-not-publish-create-your-first-adaptive-document}
 
-## Nutzungsszenario {#use-case}
+## Nutzungsszenario       {#use-case}
 
-Wir Finance ist ein führendes Unternehmen im Bereich Finanzdienstleistungen, das umfassende und personalisierte Finanzlösungen anbietet, die den Anforderungen verschiedener Kundenprofile entsprechen.
+Wir Finance ist ein führendes Unternehmen im Bereich Finanzdienstleistungen, das umfassende und personalisierte Finanzlösungen für die Anforderungen verschiedener Profil Angebot.
 
-Eine der Versicherungspolicen ihrer Kunden läuft ab, und sie senden ihr eine interaktive Erinnerung mit einem PDF-Dokument mit dem Verlängerungsangebot. Die Mitteilung enthält auch weitere Informationen, wie Loyalitätsbelohnungen und Preisnachlässe.
+Eine der Versicherungspolicen ihrer Kunden läuft ab, und sie senden ihr eine interaktive Erinnerung mit einem PDF-Dokument mit dem Verlängerungsangebot. Die Mitteilung enthält auch weitere Informationen, wie Loyalitätsbelohnungen und Angebote von Rabatten.
 
-Das Portal wird auf Adobe AEM ausgeführt. Die Web- und Print-Willkommens-Kanalausgabe wird mithilfe der Mehrkanal-Funktionen des adaptiven Dokuments erstellt.
+Das Portal wird auf AEM ausgeführt. Die Web- und Print-Begrüßungs-Kanal-Ausgabe wird mit den Multi-Kanal-Funktionen von Adaptive Dokument erstellt.
 
 Am Ende des Lernprogramms haben Sie ein adaptives Dokument, das dem Folgenden ähnelt:
-[ ad-1![ ](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) ad-2[![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Das erste Tutorial für adaptive Dokumente wird in Schritte kategorisiert. Jeder Schritt ist ein vollständiger Artikel an sich.
+[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) [ ad-2 ![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Erstellen Ihres ersten Tutorials für adaptive Dokumente wird in Schritte kategorisiert. Jeder Schritt ist ein vollständiger Artikel an sich.
 
 <table> 
  <tbody>
@@ -31,8 +34,8 @@ Am Ende des Lernprogramms haben Sie ein adaptives Dokument, das dem Folgenden ä
    <th>Sie lernen</th> 
    <th>
     <ul> 
-     <li>Erstellen eines adaptiven Dokuments und eines Formulardatenmodells.</li> 
-     <li>Erstellen von Vorlagen und Designs für adaptive Dokumente.</li> 
+     <li>Erstellen eines adaptiven Dokument- und Formulardatenmodells.</li> 
+     <li>Erstellen von Vorlagen und Themen für adaptive Dokumente.</li> 
      <li>Erstellen von Geschäftsregeln mit dem Regeleditor.<br /> </li> 
      <li>Publishing an adaptive document. <br /> </li> 
     </ul> </th> 
@@ -41,12 +44,12 @@ Am Ende des Lernprogramms haben Sie ein adaptives Dokument, das dem Folgenden ä
    <td>Voraussetzung</td> 
    <td>
     <ul> 
-     <li>Einrichten der AEM-Autoreninstanz </li> 
+     <li>Einrichten AEM Autoreninstanz. </li> 
      <li>AEM Forms-Add-on installieren. Ausführliche Informationen finden Sie unter <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installieren und Konfigurieren von AEM Forms</a>.</li> 
      <li>Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele in der Übung basieren auf der MySQL-Datenbank und verwenden den Oracle MySQL JDBC-Datenbanktreiber. </li> 
      <li>Einrichten einer Datenbank mit Kundendaten. Eine Datenbank ist unverzichtbar, um ein adaptives Dokument zu erstellen. In diesem Lernprogramm wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet. </li> 
-     <li>Erstellen/importieren und aktivieren Sie <a href="/help/forms/using/web-channel-print-channel.md">Vorlagen für Druck- und Webkanäle</a>.</li> 
-     <li>Stellen Sie sicher, dass die <a href="/help/forms/using/document-fragments.md">Dokumentfragmente auf der Grundlage des FDM</a>vorhanden sind.</li> 
+     <li>Erstellen/importieren und aktivieren Sie <a href="/help/forms/using/web-channel-print-channel.md">Vorlagen für Druck- und Web-Kanal</a>.</li> 
+     <li>Vergewissern Sie sich, dass die <a href="/help/forms/using/document-fragments.md">Dokument-Fragmente auf der Grundlage des FDM</a>vorhanden sind.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -66,9 +69,9 @@ Ziele:
 
 ## Step 2: Create an adaptive document {#step-create-an-adaptive-document}
 
-Customer Communications zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Korrespondenz wie Geschäftskorrespondenz, Briefe, Dokumente, Aussagen, Vorteilsnotices, Vermögensverwaltungsprospekt, Marketing-Mails, Rechnungen und Begrüßungs-Kits.
+Kundenkommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und den Versand von sicheren, personalisierten und interaktiven Schriftstücken wie Geschäftskorrespondenz, Briefe, Dokumente, Aussagen, Benefiz, Vermögensverwaltungsprospekt, Marketing-Mails, Rechnungen und Begrüßungs-Kits.
 
-Mithilfe adaptiver Dokumente können Sie Kundenmitteilungen erstellen, die ansprechend, reaktionsschnell, dynamisch und adaptiv sind. AEM Forms bietet einen Drag &amp; Drop-WYSIWYG-Editor zum Erstellen adaptiver Dokumente.
+Mithilfe von adaptiven Dokumenten können Sie Kundenkommunikation erstellen, die ansprechend, reaktionsfähig, dynamisch und adaptiv ist. AEM Forms bietet einen Drag &amp; Drop-WYSIWYG-Editor, um adaptive Dokumente zu erstellen.
 
 <!--`For more information about adaptive documents, see [Introduction to authoring adaptive documents](/forms/using/introduction-ad-authoring.md).`-->
 
@@ -80,27 +83,27 @@ Ziele:
 
 <!--![see-the-guide-sm](assets/see-the-guide-sm.png)-->
 
-## Schritt 3: Regeln auf Felder für adaptive Dokumente anwenden (nur Webkanal) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
+## Schritt 3: Anwenden von Regeln auf Felder mit adaptiven Dokumenten (nur Web Kanal) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-Das adaptive Dokument bietet einen Editor zum Schreiben von Regeln für adaptive Dokumentobjekte. Diese Regeln definieren Aktionen, die auf Dokumentobjekten basierend auf vorgegebenen Bedingungen und Benutzeraktionen im Dokument ausgelöst werden. Dadurch wird die Genauigkeit und Benutzerfreundlichkeit in der Webversion des adaptiven Dokuments gewährleistet. Weitere Informationen zu Regeln und Regeln-Editoren für adaptive Dokumente finden Sie unter [Regeleditor](/help/forms/using/rule-editor.md).
-
-Ziele:
-
-* Erstellen und Anwenden von Regeln auf die Webkanalfelder adaptiver Dokumente
-* Verwenden Sie Regeln, um Dokumentdatenmodelldienste im Webkanal auszulösen
-
-## Schritt 4: Formatieren des adaptiven Dokuments (nur Webkanal) {#step-style-the-adaptive-document-web-channel-only}
-
-Adaptive Dokumente bieten einen Editor zum Erstellen von Designs für adaptive Dokumente und Inline-Stile. Ein Design enthält Stildetails für Komponenten und Bereiche und Sie können ein Design auf Webkanälen verschiedener Dokumente wiederverwenden. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie das Design auf Ihr Dokument anwenden, spiegelt der angegebene Stil die entsprechenden Komponenten des Dokuments wider. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/themes.md).
+Adaptives Dokument bietet einen Editor zum Schreiben von Regeln für adaptive Dokument-Objekte. Diese Regeln definieren Aktionen, die auf Dokument-Objekten basierend auf vorgegebenen Bedingungen und Benutzeraktionen auf dem Dokument ausgelöst werden. Dadurch wird die Genauigkeit und Benutzerfreundlichkeit in der Webversion des adaptiven Dokuments gewährleistet. Weitere Informationen zu Regeln- und Regeleditor für adaptive Dokument finden Sie unter [Regeleditor](/help/forms/using/rule-editor.md).
 
 Ziele:
 
-* Design für den Webkanal des adaptiven Dokuments erstellen
-* Anwenden des Designs auf den Webkanal des adaptiven Dokuments
-* Erscheinungsbild des Webkanals des adaptiven Dokuments auf Mobilgeräten und Desktop überprüfen
+* Erstellen und Anwenden von Regeln auf die Web-Kanal-Felder des adaptiven Dokuments
+* Verwenden Sie Regeln, um Dokument-Datenmodelldienste im Web-Kanal auszulösen
+
+## Schritt 4: Adaptives Dokument formatieren (nur Web-Kanal) {#step-style-the-adaptive-document-web-channel-only}
+
+Adaptive Dokumente bieten einen Editor zum Erstellen von Themen für die adaptive Dokumente- und Inline-Formatierung. Ein Design enthält Stildetails für Komponenten und Bereiche und Sie können ein Design auf Web-Kanälen verschiedener Dokumente wiederverwenden. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie das Design auf Ihr Dokument anwenden, spiegelt der angegebene Stil die entsprechenden Komponenten Ihres Dokuments wider. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/themes.md).
+
+Ziele:
+
+* Erstellen eines Designs für den Web-Kanal des adaptiven Dokuments
+* Anwenden des Designs auf den Web-Kanal des adaptiven Dokuments
+* Erscheinungsbild des adaptiven Dokument-Web-Kanals auf Mobilgeräten und Desktop überprüfen
 
 ## Schritt 5: Veröffentlichen des adaptiven Dokuments {#step-publish-the-adaptive-document}
 
 Nachdem Sie das Erstellen des adaptiven Dokuments abgeschlossen haben, müssen Sie es veröffentlichen, damit es in Ihrer Veröffentlichungsinstanz verfügbar ist, in der die Agenten das adaptive Dokument verwenden können, um die darauf basierenden Kommunikationsinstanzen zu erstellen.
 
-Zum Veröffentlichen des adaptiven Dokuments müssen die Dokumentautoren über die erforderlichen Berechtigungen verfügen.
+Um das adaptive Dokument zu veröffentlichen, müssen die Dokument-Autoren über die erforderlichen Berechtigungen verfügen.
