@@ -4,6 +4,9 @@ description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, d
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '174'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +27,7 @@ Das Übersetzen von Assets umfasst Folgendes:
 1. [Erstellen von Framework-Konfigurationen für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) 
 1. [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
 1. [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
-1. [Erstellen von Übersetzungsprojekten](translation-projects.md) 
+1. [Erstellen von Übersetzungsprojekten](translation-projects.md)
 
 If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
