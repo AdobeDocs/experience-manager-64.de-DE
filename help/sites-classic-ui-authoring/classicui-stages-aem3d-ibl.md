@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9291151-851a-4aff-a50e-a24330ee0c13
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 78%
 
 ---
 
@@ -54,7 +57,7 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
    <td>IBL-Sun-Details</td> 
    <td><p>Hiermit können Sie die Richtung und Stärke der zusätzlichen Lichtquelle einstellen, die die Sonne simuliert. <span class="diff-html-added">Diese Lichtquelle erhöht die Helligkeit der Beleuchtung und sorgt für einen Schlagschatten auf der Ausgangsebene. Der Schattenwurf wird beim Rendern mit Rapid Refine und in der Vorschau mit Google Chrome unterstützt. Von anderen Browsern wird er derzeit nicht unterstützt.</span></p> 
     <ul> 
-     <li><strong>lat</strong> - Die vertikale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> eine Einstellung von <code>0.0</code> ist am Horizont (vertikaler Mittelpunkt des Bildes für die diffuse Beleuchtung); befindet <code>1.0</code> sich am oberen Rand des Bildes für die diffuse Beleuchtung.</li> 
+     <li><strong>lat</strong> - Die vertikale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> eine Einstellung von <code>0.0</code> ist am Horizont (vertikaler Mittelpunkt des Bilds für die diffuse Umgebung); <code>1.0</code> befindet sich am höchsten Punkt (obere Kante der Umgebung "Diffuse Lighting").</li> 
      <li><strong>long</strong> - Die horizontale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> Die Einstellung 0,0 steht für die linke Ecke, 1,0 für die rechte Ecke des Umgebungsbildes für diffuse Beleuchtung.<br /> </li> 
      <li><strong>hell</strong> - Die Helligkeit der Sonnenlichtquelle. Erhöhen Sie diesen Wert, um die Sonnenlichtquelle aufzuhellen. Verringern Sie den Wert, um sie zu verdunkeln. <br /> Bei einer Einstellung werden zusätzliche Beleuchtung <code>0</code> deaktiviert und Schatten deaktiviert. Der Parameter wirkt sich nicht auf die Umgebungsreflexionen aus.<br /> </li> 
     </ul> </td> 
@@ -64,7 +67,7 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
    <td>Wenn der IBL-Hintergrund in der Nähe des Horizonts verzerrt angezeigt wird, ist es möglich, die Verzerrung durch Anpassen dieser Eigenschaft zu reduzieren oder zu beseitigen. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Umgebungsbeleuchtung</td> 
+   <td>Umgebung-Beleuchtung</td> 
    <td><p><span class="diff-html-added">Hiermit können Sie die diffuse Beleuchtung steuern. Wenn das Bild mit diffuser Beleuchtungsumgebung ungewöhnlich hell oder dunkel ist (beispielsweise Nachtszenen), müssen Sie diese Eigenschaft manuell korrigieren.</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Derzeit nicht verwendet.</li> 
