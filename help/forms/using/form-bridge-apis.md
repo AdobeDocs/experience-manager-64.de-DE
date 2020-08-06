@@ -10,13 +10,16 @@ topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
 source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 42%
 
 ---
 
 
 # Form Bridge APIs für HTML5-Formulare {#form-bridge-apis-for-html-forms}
 
-Sie können die Form Bridge-APIs verwenden, um einen Kommunikationskanal zwischen XFA-basierten HTML5-Formularen und Ihren Anwendungen zu öffnen. The Form Bridge APIs provides a **connect** API to create the connection.
+Sie können die Form Bridge-APIs verwenden, um einen Kanal für die Kommunikation zwischen XFA-basierten HTML5-Formularen und Ihren Anwendungen zu öffnen. The Form Bridge APIs provides a **connect** API to create the connection.
 
 Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine erfolgreiche Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handle aufgerufen.
 
@@ -83,17 +86,17 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Eingabe:**
 
-   * **** configName: Name der zu überschreibenden Konfiguration
+   * **configName:** Name der zu überschreibenden Konfiguration
 
-      * **** widgetConfig: Ermöglicht dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
+      * **widgetConfig:** Ermöglicht dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
          formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})
 
-      * **** pagingConfig: Ermöglicht dem Benutzer, das Standardverhalten des Renderns nur der ersten Seite zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
+      * **pagingConfig:** Ermöglicht dem Benutzer, das Standardverhalten des Renderns nur der ersten Seite zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
          window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).
 
-      * **** LoggingConfig: Ermöglicht dem Benutzer, die Protokollierungsstufe zu überschreiben, die Protokollierung für eine Kategorie zu deaktivieren oder festzulegen, ob die Protokollkonsole angezeigt oder an den Server gesendet werden soll. Die Konfiguration kann überschrieben werden wie folgt:
+      * **LoggingConfig:** Ermöglicht dem Benutzer, die Protokollierungsstufe zu überschreiben, die Protokollierung für eine Kategorie zu deaktivieren oder festzulegen, ob die Protokollkonsole angezeigt oder an den Server gesendet werden soll. Die Konfiguration kann überschrieben werden wie folgt:
 
       ```css
       formBridge.registerConfig{  
@@ -107,7 +110,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
         }
       ```
 
-      * **** SubmitServiceProxyConfig: Erlauben Sie den Benutzern, die Proxy-Dienste für Übermittlung und Protokollierung zu registrieren.
+      * **SubmitServiceProxyConfig:** Erlauben Sie den Benutzern, die Proxy-Dienste für Übermittlung und Protokollierung zu registrieren.
 
          ```css
          window.formBridge.registerConfig("submitServiceProxyConfig",  
@@ -125,20 +128,20 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Fehler:** keine
 
-**hideFields(fieldArray)** Blendet die Felder aus, deren SOM-Ausdrücke im fieldArray bereitgestellt werden. Setzt diepresence-Eigenschaft der angegebenen Felder auf invisible
+**hideFields(fieldArray)** Blendet die Felder aus, deren SOM-Ausdruck im fieldArray bereitgestellt werden. Setzt diepresence-Eigenschaft der angegebenen Felder auf invisible
 
 * **Eingabe:**
 
-   * **** fieldArray: Array von SOM-Ausdrücken für die auszublendenden Felder
+   * **fieldArray:** Array von SOM-Ausdrücken für die auszublendenden Felder
 
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**showFields(fieldArray)** Zeigt die Felder an, deren SOM-Ausdrücke im fieldArray bereitgestellt werden. Setzt diepresence-Eigenschaft der angegebenen Felder auf visible
+**showFields(fieldArray)** Zeigt die Felder an, deren SOM-Ausdruck im fieldArray bereitgestellt werden. Setzt diepresence-Eigenschaft der angegebenen Felder auf visible
 
 * **Eingabe:**
 
-   * **** fieldArray: Array von SOM-Ausdrücken für die anzuzeigenden Felder
+   * **fieldArray:** Array von SOM-Ausdrücken für die anzuzeigenden Felder
 
 * **Ausgabe:** keine
 * **Fehler:** keine
@@ -152,7 +155,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 **getFormState()** Gibt die JSON zurück, die den Formularstatus darstellt
 
 * **Eingabe:** keine
-* **** Ausgabe: Objekt mit JSON, das den aktuellen Formularstatus in der *data* -Eigenschaft darstellt.
+* **Ausgabe:** Objekt mit JSON, das den aktuellen Formularstatus in der *data* -Eigenschaft darstellt.
 
 * **Fehler:** keine
 
@@ -160,7 +163,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Eingabe:**
 
-   * **** Optionen: JavaScript-Objekt mit folgenden Eigenschaften:
+   * **Optionen:** JavaScript-Objekt mit folgenden Eigenschaften:
 
       * **Error:** Fehlerhandler-Funktion
       * **success:** Erfolgshandler-Funktion
@@ -172,24 +175,24 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 **setFocus (som)** Legt den Fokus auf das im SOM-Ausdruck angegebene Feld fest
 
-* **** Eingabe: Einige Ausdrücke des Felds, auf das der Fokus gelegt werden soll
+* **Eingabe:** Einige Ausdrücke des Felds, auf das der Fokus gelegt werden soll
 * **Ausgabe:** keine
 * **Fehler:** Gibt im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
 
-**setFieldValue (som, value)** Legt den Wert der Felder für die angegebenen SOM-Ausdrücke fest
+**setFieldValue (som, value)** Legt den Feldwert für die angegebenen SOM-Ausdruck fest
 
 * **Eingabe:**
 
-   * **som:** Array, das SOM-Ausdrücke des Felds enthält. Der som-Ausdruck, mit dem der Wert der Felder festgelegt wird.
-   * **** Wert: Array, das Werte enthält, die den SOM-Ausdrücken entsprechen, die in einem **som** -Array bereitgestellt werden. Wenn der Datentyp des Werts nicht mit fieldType identisch ist, wird der Wert nicht geändert.
+   * **som:** Array, das SOM-Ausdrücke des Felds enthält. Der som-Ausdruck, mit dem die Feldwerte festgelegt werden.
+   * **Wert:** Array, das Werte enthält, die den SOM-Ausdrücken entsprechen, die in einem **som** -Array bereitgestellt werden. Wenn der Datentyp des Werts nicht mit fieldType identisch ist, wird der Wert nicht geändert.
 
 * **Ausgabe:** keine
-* **** Fehler: Gibt im Fall eines falschen SOM-Ausdrucks eine Ausnahme aus
+* **Fehler:** Gibt bei einem falschen SOM-Ausdruck eine Ausnahme aus
 
-**getFieldValue (som)** Gibt den Wert der Felder für die angegebenen SOM-Ausdrücke zurück
+**getFieldValue (som)** Gibt den Feldwert für die angegebenen SOM-Ausdruck zurück
 
-* **** Eingabe: Array, das SOM-Ausdrücke der Felder enthält, deren Wert abgerufen werden muss
-* **** Ausgabe: Objekt, das das Ergebnis als Array in der **data** -Eigenschaft enthält.
+* **Eingabe:** Array, das SOM-Ausdrücke der Felder enthält, deren Wert abgerufen werden muss
+* **Ausgabe:** Objekt, das das Ergebnis als Array in der **data** -Eigenschaft enthält.
 
 * **Fehler:** keine
 
@@ -213,7 +216,7 @@ if(a.errors) {
    * **som:** Array, das SOM-Ausdrücke für die Felder enthält.
    * **property:** Name der Eigenschaft, deren Wert erforderlich ist.
 
-* **** Ausgabe: Objekt, das das Ergebnis als Array in der *data *property enthält
+* **Ausgabe:** Objekt, das das Ergebnis als Array in der *data *property enthält
 
 * **Fehler:** keine
 
@@ -221,9 +224,9 @@ if(a.errors) {
 
 * **Eingabe:**
 
-   * **** som: Array, das SOM-Ausdrücke der Felder enthält, deren Wert festgelegt werden muss
+   * **som:** Array, das SOM-Ausdrücke der Felder enthält, deren Wert festgelegt werden muss
    * **property:** Eigenschaft, deren Wert festgelegt werden soll.
-   * **** Wert: Array, das Werte der angegebenen Eigenschaft für in SOM-Ausdrücken angegebene Felder enthält
+   * **Wert:** Array, das Werte der angegebenen Eigenschaft für in SOM-Ausdrücken angegebene Felder enthält
 
 * **Ausgabe:** keine
 * **Fehler:** keine
