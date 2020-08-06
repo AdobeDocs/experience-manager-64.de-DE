@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87e62346-98d5-40ec-a3ef-904adf667425
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 55%
 
 ---
 
@@ -30,8 +33,9 @@ Führen Sie zum Abrufen des Dienstes Adobe Search&amp;Promote von unserer Websit
 >
 >Wenn Sie Search&amp;Promote mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche AEM-Funktionen 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)  konfiguriert.
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+
 >
 
 
@@ -40,7 +44,7 @@ Führen Sie zum Abrufen des Dienstes Adobe Search&amp;Promote von unserer Websit
 
 The default URL that is configured for the Search&amp;Promote service is `https://searchandpromote.omniture.com/px/`. Verwenden Sie zur Verwendung eines anderen Diensts die OSGi-Konsole, um eine andere URL anzugeben.
 
-**So ändern Sie die URL** des Search&amp;Promote-Dienstes:
+**So ändern Sie die URL** des Search&amp;Promote:
 
 1. Open the [!UICONTROL OSGi] console and tap the **[!UICONTROL Configuration]** tab. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))
 
@@ -73,10 +77,11 @@ Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass 
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Fügen Sie im Dialogfeld Komponentebearbeiten den Feldern Folgendes hinzu:
+1. Fügen Sie im Dialogfeld &quot;Komponente [!UICONTROL bearbeiten] &quot;den Feldern Folgendes hinzu:
 
    * **[!UICONTROL Mitglieds-ID]**
    * **[!UICONTROL Kontonummer]**
+
    >[!NOTE]
    >
    >Um diese Informationen selbst zu erhalten, melden Sie sich an bei:
@@ -103,7 +108,7 @@ Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass 
 
 ## Konfigurieren des Datenzentrums {#configuring-the-data-center}
 
-Wenn sich Ihr Search&amp;Promote-Konto in Asien oder Europa befindet, müssen Sie das Standard-Rechenzentrum so ändern, dass es auf das richtige verweist (das Standarddatencenter gilt für Nordamerika-Konten).
+Wenn sich Ihr Search&amp;Promote in Asien oder Europa befindet, müssen Sie das Standarddatencenter so ändern, dass es auf das richtige verweist (das Standarddatencenter gilt für Nordamerika-Konten).
 
 **Sie können das Datenzentrum wie folgt konfigurieren**:
 
@@ -154,6 +159,6 @@ Mit der Search&amp;Promote-Integration haben Sie folgende Möglichkeiten:
 * Use the [!UICONTROL eCommerce] API, independently of the underlying repository structure and commerce platform.
 * Leverage the [!UICONTROL Index Connector] feature of Search&amp;Promote to provide a product feed in XML format.
 * Leverage the [!UICONTROL Remote Control] feature of Search&amp;Promote to perform on-demand or scheduled requests of the product feed.
-* Feed-Erstellung für verschiedene Search&amp;Promote-Konten, konfiguriert als Cloud-Services-Konfigurationen.
+* Feed-Erstellung für verschiedene Search&amp;Promote, konfiguriert als Cloud-Services-Konfigurationen.
 
 For more information, see [Product Feed](/help/sites-administering/product-feed.md).
