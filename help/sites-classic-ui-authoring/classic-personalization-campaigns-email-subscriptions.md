@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 77%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe plant nicht, diese Funktion weiter zu verbessern (Verwalten von Interessenten und Listen).\
->Es wird empfohlen, [Adobe Campaign und seine AEM-Integration](/help/sites-administering/campaign.md)zu nutzen.
+>Die Adobe plant nicht, diese Funktion weiter zu verbessern (Verwaltung von Interessenten und Listen).\
+>Es wird empfohlen, [Adobe Campaign und seine AEM zu nutzen](/help/sites-administering/campaign.md).
 
 Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Ihren E-Mail-Dienst-Mailing-Listen konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
 
@@ -93,7 +96,7 @@ So melden Sie Benutzer aus Listen ab:
 
 So konfigurieren Sie eine automatische Nachricht für einen Abonnenten:
 
-1. Öffnen Sie die Seiteneigenschaften der AEM-Seite mit dem Anmeldeformular, um den automatischen Antwortsender für einen Interessenten zu konfigurieren.
+1. Öffnen Sie die Seiteneigenschaften der AEM Seite mit dem Anmeldeformular, um den automatischen Antwortsender für einen Interessenten zu konfigurieren.
 1. Wenden Sie die ExactTarget-Konfiguration auf die Seite an.
 
 1. Fügen Sie eine Komponente des Typs **Formular** hinzu, indem Sie sie aus dem Sidekick auf die Seite ziehen. Wenn die Komponente nicht verfügbar ist, wechseln Sie in den Designmodus und aktivieren Sie die **Formulargruppe**.
