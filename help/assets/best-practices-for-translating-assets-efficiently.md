@@ -4,6 +4,9 @@ description: Best Practices für die effiziente Verwaltung von Assets zur Synchr
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 98%
 
 ---
 
