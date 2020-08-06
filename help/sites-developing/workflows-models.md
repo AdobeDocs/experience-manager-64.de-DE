@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 translation-type: tm+mt
 source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 72%
 
 ---
 
@@ -127,6 +130,7 @@ When you edit a model, the available steps appear in the various groups of the *
    * Die Option **[!UICONTROL Filter]** zum Filtern nach bestimmten Schritten.
    * Verwenden Sie das Dropdown-Menü, um die Auswahl auf eine bestimmte Gruppe von Schritten zu begrenzen.
    * Select the Show Description icon ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
+
    ![wf-02](assets/wf-02.png)
 
 1. Ziehen Sie die entsprechenden Schritte an die gewünschte Stelle im Modell,
@@ -157,6 +161,7 @@ You can **Configure** and customize the behavior of a workflow step using the **
 
    * Tap the step in the workflow model and select **[!UICONTROL Configure]** from the component toolbar.
    * Doppelklicken Sie auf den Schritt.
+
    >[!NOTE]
    >
    >Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
@@ -190,20 +195,20 @@ Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-work
 
 ### Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#make-workflow-models-available-in-touchui}
 
-If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Die folgenden Schritte veranschaulichen die Verwendung des Workflow-Modells **[!UICONTROL Request for Activation]**.
+If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Die folgenden Schritte veranschaulichen die Verwendung des Workflow-Modells **[!UICONTROL Request for Aktivierung]**.
 
-1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Access an asset using `/assets.html/content/dam` path. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf Arbeitsablauf **[!UICONTROL starten]** und vergewissern Sie sich, dass das **[!UICONTROL Aktivierungsmodell]** nicht in der Popup-Liste vorhanden ist.
+1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Access an asset using `/assets.html/content/dam` path. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf **[!UICONTROL Beginn-Workflow]** und vergewissern Sie sich, dass das **[!UICONTROL Anforderungsmodell für Aktivierung]** nicht in der Popup-Liste vorhanden ist.
 
 1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
 
 1. Select **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Klicken Sie auf **[!UICONTROL Übermitteln]**.
    ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
 
-1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** und dann **[!UICONTROL Bearbeiten]**.
+1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Wählen Sie **[!UICONTROL Anforderung zur Aktivierung]** und dann **[!UICONTROL Bearbeiten]**.
 
 1. Wählen Sie **[!UICONTROL Bearbeiten]** und öffnen Sie dann die **[!UICONTROL Workflow-Modelleigenschaften]**. Go to the **[!UICONTROL Basic]** tab.
 
-1. Zu `Workflow : DAM`Tags **** hinzufügen. Bestätigen Sie die Auswahl mit dem Häkchen.
+1. Hinzufügen `Workflow : DAM` in das Feld **[!UICONTROL Tags]** . Bestätigen Sie die Auswahl mit dem Häkchen.
 
 1. Bestätigen Sie das Hinzufügen des Tags mit **[!UICONTROL Speichern und Schließen]**.
    ![Seiteneigenschaften des Modells bearbeiten](assets/workflow_model_edit_activation1.png)
@@ -252,7 +257,7 @@ Gehen Sie folgendermaßen vor, um **[!UICONTROL Phasen]** zu definieren:
 
    Eine Phase kann mehreren Schritten zugeordnet werden. Beispiel:
 
-   | **Schritt** | **Phase** |
+   | **Schritt** | **Staging** |
    |---|---|
    | Schritt 1 | Erstellen |
    | Schritt 2 | Erstellen |
@@ -316,7 +321,7 @@ Beim Testen eines Workflows ist es sinnvoll, verschiedene Nutzlasttypen zu verwe
 
 Testen Sie Ihren neuen Workflow beispielsweise wie folgt:
 
-1. [Starten Sie Ihr Workflow-Modell](/help/sites-administering/workflows-starting.md) von der Konsole aus.
+1. [Beginn des Workflow-Modells](/help/sites-administering/workflows-starting.md) in der Konsole.
 1. Definieren Sie die **[!UICONTROL Nutzlast]** und bestätigen Ihre Eingaben.
 
 1. Ergreifen Sie die erforderlichen Maßnahmen, damit der Workflow fortgesetzt wird.
@@ -330,7 +335,7 @@ Sie können AEM auch so konfigurieren, dass die **[!UICONTROL DEBUG]**-Meldungen
 
 Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen, wird im folgenden Beispiel eine Variante des Workflows `Publish Example` erstellt.
 
-1. [Erstellen Sie ein neues Workflow-Modell.](#creating-a-new-workflow)
+1. [Erstellen Sie ein neues Workflow-Modell](#creating-a-new-workflow).
 
    Der neue Workflow umfasst Folgendes:
 
@@ -353,6 +358,7 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 
    * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Benachrichtigen Sie den Benutzer per E-Mail]**.
    * Select `Administrator` ( `admin`) for the **[!UICONTROL User/Group]** field.
+
    >[!NOTE]
    >
    >Damit E-Mails versendet werden können, müssen [der E-Mail-Dienst und die Benutzerkontoinformationen konfiguriert werden](/help/sites-administering/notification.md).
@@ -374,7 +380,7 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 
    * **[!UICONTROL Titel]**: `Reject Publish Request`
    * **[!UICONTROL Benutzer/Gruppe]**: z. B. `projects-administrators`
-   * **[!UICONTROL Benutzer per E-Mail]** benachrichtigen: Aktivieren Sie diese Option, damit der Benutzer per E-Mail benachrichtigt wird.
+   * **[!UICONTROL Benutzer per E-Mail]** benachrichtigen: Aktivieren Sie diese Option, um den Benutzer per E-Mail benachrichtigen zu lassen.
 
 1. Ziehen Sie einen **[!UICONTROL Prozessschritt]** auf den rechten Zweig, öffnen Sie die Eigenschaften, geben Sie die folgenden Werte an und bestätigen Sie die Änderungen:
 
@@ -429,7 +435,7 @@ So definieren Sie eine ODER-Regel:
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-#### Funktion „Check()“ {#function-check}
+#### Function Check() {#function-check}
 
 >[!NOTE]
 >
