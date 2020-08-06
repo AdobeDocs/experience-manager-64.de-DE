@@ -12,6 +12,9 @@ discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
+workflow-type: tm+mt
+source-wordcount: '2226'
+ht-degree: 79%
 
 ---
 
@@ -25,15 +28,15 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 * [AEM-Anpassungen](#aem-customizations)
 * [Testverfahren](#testing-procedure) 
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Aktualisierungsplanung und detailliert auf [dieser Seite](/help/sites-deploying/pattern-detector.md) beschrieben, um einen Musterdetektorbericht zu erhalten, der weitere Informationen über Bereiche enthält, in denen zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM Probleme behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.4-kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.4-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.4-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Please see please see [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md) for more details.
 
-1. **Entwicklung der Code-Basis für 6.4** - Erstellen Sie eine dedizierte Verzweigung oder ein Repository für die Codebasis für die Target-Version. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
+1. **Entwicklung der Codebasis für 6.4** - Erstellen Sie eine dedizierte Verzweigung oder ein Repository für die Codebasis für die Zielgruppe. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
 1. **Kompilieren Sie mit 6.4 Uber-JAR** - Aktualisieren Sie Code-Basis-POMs, um auf 6.4 uber-Jar zu verweisen, und kompilieren Sie Code dagegen.
-1. **AEM-Anpassungen** aktualisieren: Alle Anpassungen oder Erweiterungen von AEM sollten aktualisiert/validiert werden, um in 6.4 zu funktionieren, und zur 6.4-Codebasis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
+1. **Aktualisierung AEM Anpassung** - Alle Anpassungen oder Erweiterungen, die AEM vorgenommen werden, sollten aktualisiert/validiert werden, um in 6.4 zu funktionieren und der 6.4-Codebasis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
 
-1. **Unter 6.4 Umgebung** bereitstellen - In einer Entwicklungs-/QA-Umgebung sollte eine saubere Instanz von AEM 6.4 (Autor + Veröffentlichung) stehen. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
+1. **Bereitstellung auf 6.4 Umgebung** - Eine saubere Instanz von AEM 6.4 (Autor + Veröffentlichung) sollte in einer Dev/QA-Umgebung stehen. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
 1. **Validierung und Fehlerbehebung bei** der Qualitätssicherung: Die Qualitätssicherung sollte die Anwendung sowohl in der Autoren- als auch in der Veröffentlichungsinstanz von 6.4 validieren. Alle gefundenen Fehler sollten behoben und an die 6.4-Codebasis gebunden werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
 
 Bevor Sie mit der Aktualisierung beginnen, benötigen Sie eine stabile Anwendungscodebasis, die sorgfältig gegen die Zielversion von AEM getestet wurde. Basierend auf den im Rahmen der Tests gemachten Beobachtungen kann möglicherweise der benutzerdefinierte Code optimiert werden. Dazu können die Umgestaltung des Codes zum Durchsuchen des Repositorys, die benutzerdefinierte Indizierung für optimierte Suchabfragen, die Verwendung von unsortierten Knoten in JCR und andere Optimierungen gehören.
@@ -85,7 +88,7 @@ Das klassische UI-Authoring ist in AEM 6.4 weiterhin verfügbar, ist jedoch vera
 
 >[!NOTE]
 >
->Damit Sie sich von der klassischen Benutzeroberfläche abwenden und die neuesten AEM-Technologien nutzen können, sollten Sie die [AEM-Modernisierungstools](/help/sites-developing/modernization-tools.md) nutzen, um die Migration zu vereinfachen.
+>Damit Sie sich von der klassischen Benutzeroberfläche abwenden und die neuesten AEM nutzen können, sollten Sie die [AEM Modernisierungstools](/help/sites-developing/modernization-tools.md) nutzen, um die Migration zu vereinfachen.
 
 ## Anpassung an die 6.4-Repository-Struktur {#align-repository-structure}
 
@@ -190,7 +193,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
    <td>Testen von AEM-Implementierung und zugehörigem Code auf der Veröffentlichungsschicht<br /> durch den Dispatcher. Muss Kriterien für Seitenaktualisierungen und<br /> Cache-Invalidierungen enthalten.</td> 
   </tr> 
   <tr> 
-   <td>Authoring</td> 
+   <td>Authoring – </td> 
    <td>Testen von AEM-Implementierung und zugehörigem Code auf der Autorenschicht. Dabei sollten Seiten, Komponenten-Authoring und Dialoge berücksichtigt werden.</td> 
   </tr> 
   <tr> 
@@ -214,7 +217,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
    <td>Alle Erweiterungen und Anpassungen der AEM-Benutzeroberfläche in der Autorenumgebung.</td> 
   </tr> 
   <tr> 
-   <td>Workflows</td> 
+   <td>Workflows  </td> 
    <td>Benutzerdefinierte und/oder vorkonfigurierte Workflows und Funktionen.</td> 
   </tr> 
   <tr> 
