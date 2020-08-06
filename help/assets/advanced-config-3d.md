@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 61%
 
 ---
 
@@ -84,15 +87,15 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
  </tbody> 
 </table>
 
-## Cloud Services-Konfigurationseinstellungen {#cloud-services-configuration-settings}
+## Konfigurationseinstellungen für Cloud Services {#cloud-services-configuration-settings}
 
-Die Werte für die folgenden Einstellungen werden von Ihrem Adobe-Kundenbetreuer, Bereitstellungsexperten oder Supportmitarbeiter bereitgestellt.
+Die Werte für die folgenden Einstellungen werden von Ihrem Kundenbetreuer, Bereitstellungsexperten oder Supportmitarbeiter bereitgestellt.
 
 | **Pfad** | **Beschreibung** |
 |---|---|
 | `/libs/settings/dam/v3D/services/aws/accountId` | Die Konto-ID des Adobe AWS-Kontos. |
-| `/libs/settings/dam/v3D/services/aws/bucketName` | Name des S3-Übertragungsbehälters; normalerweise `aem3d`. |
-| `/libs/settings/dam/v3D/services/aws/customerId` | Die eindeutige ID, die Adobe Ihrem Unternehmen zugewiesen hat. Wird als AWS-Cookie-Benutzer-ID verwendet. |
+| `/libs/settings/dam/v3D/services/aws/bucketName` | Name des S3-Übertragungsbehältnisses; normalerweise `aem3d`. |
+| `/libs/settings/dam/v3D/services/aws/customerId` | Die eindeutige ID, die Ihrer Organisation durch Adobe zugewiesen wird. Wird als AWS-Kognito-Benutzer-ID verwendet. |
 | `/libs/settings/dam/v3D/services/aws/encryptedPassword` | Das mit dieser customerId verknüpfte Kennwort. Wird als AWS-Kognito-Kennwort verwendet. |
 | `/libs/settings/dam/v3D/services/aws/region` | Die AWS-Region, in der die Cloud-Dienste bereitgestellt werden. |
 | `/libs/settings/dam/v3D/services/aws/userPoolId` | Die entsprechende AWS-Kognito-Benutzer-Pool-ID. |
