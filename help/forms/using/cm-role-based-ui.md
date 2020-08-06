@@ -10,19 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 342f111e-f15a-4f9a-8993-f90760363c02
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 28%
 
 ---
 
 
 # AUF DER Rolle basierende Benutzeroberfläche in Correspondence Management NICHT VERÖFFENTLICHEN {#do-not-publish-role-based-user-interface-in-correspondence-management}
 
-In AEM kann der Admin rollenbasierten Zugriff auf verschiedene Benutzergruppen bereitstellen und verschiedene Aktionen für verschiedene Ressourcen ausführen. Beispielsweise kann die Funktion zum Erstellen oder Bearbeiten von Datenwörterbüchern nur Benutzern in einer bestimmten Benutzergruppe zur Verfügung stehen, während andere Benutzer nur die Datenwörterbücher anzeigen und verwenden können.
+In AEM kann der Admin rollenbasierten Zugriff auf verschiedene Benutzergruppen bereitstellen und verschiedene Aktionen für verschiedene Ressourcen ausführen. Die Funktion zum Erstellen oder Bearbeiten von Datenwörterbüchern kann beispielsweise nur Benutzern einer bestimmten Benutzergruppe zur Verfügung stehen, während andere Benutzer nur die Datenwörterbücher Ansicht und verwenden können.
 
-Die AEM-Oberfläche zeigt die Optionen an, z. B. zum Erstellen oder Bearbeiten eines Asset-Typs, basierend auf der Zugriffsebene eines Benutzers. Wenn ein Benutzer beispielsweise nicht berechtigt ist, ein Datenwörterbuch zu erstellen, wird die Option zum Erstellen eines Datenwörterbuchs nicht in der Benutzeroberfläche angezeigt.
+Auf der AEM-Oberfläche werden die Optionen angezeigt, z. B. zum Erstellen oder Bearbeiten eines Asset-Typs, basierend auf der Zugriffsebene eines Benutzers. Wenn ein Benutzer beispielsweise nicht berechtigt ist, ein Datenwörterbuch zu erstellen, wird die Option zum Erstellen eines Datenwörterbuchs nicht in der Benutzeroberfläche angezeigt.
 
 Obwohl CRX Ihnen erlaubt, die Zugriffsrechte für Benutzer- und Gruppenkonten zu konfigurieren, geht es in diesem Artikel um Rollen- oder Benutzergruppenbasierte Zugriffsrechte.
 
-Weitere Informationen zu Gruppen, Berechtigungen, Zugriffssteuerungslisten und zum Verwalten von Benutzern und Gruppen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
+Weitere Informationen zu Gruppen, Berechtigungen, Listen zur Zugriffskontrolle und zum Verwalten von Benutzern und Gruppen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
 ## Verwalten von Berechtigungen {#managing-permissions}
 
@@ -47,7 +50,7 @@ Weitere Informationen zu Gruppen, Berechtigungen, Zugriffssteuerungslisten und z
 
    Über die Registerkarten können Sie auf verschiedene Konfigurationen zugreifen:
 
-1. Doppeltippen Sie in der linken Strukturliste auf den Namen der entsprechenden Gruppe und wählen Sie dann die Registerkarte &quot;Berechtigungen&quot;.
+1. Tippen Sie in der linken Liste der Baumstruktur mit der Dublette auf den Namen der entsprechenden Gruppe und wählen Sie dann die Registerkarte &quot;Berechtigungen&quot;aus.
 
    Um den Namen der Gruppe zu suchen, können Sie den Namen der Gruppe in den entsprechenden Bereich eingeben.
 
