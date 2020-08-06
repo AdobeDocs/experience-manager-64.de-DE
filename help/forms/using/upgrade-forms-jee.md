@@ -18,7 +18,7 @@ ht-degree: 80%
 ---
 
 
-# Aktualisierung auf AEM 6.4 Forms on JEE {#upgrade-to-aem-forms-jee}
+# Aktualisierung auf AEM 6.4 Forms auf JEE {#upgrade-to-aem-forms-jee}
 
 Verwenden Sie einen der folgenden Aktualisierungspfade wie für Ihre Umgebung benötigt.
 
@@ -38,7 +38,7 @@ Führen Sie folgendes Verfahren durch um von der vorhandenen AEM 6.2 Forms on JE
 
 ## AEM 6.0 Forms on JEE > AEM 6.3 Forms on JEE {#aem-forms-jee-60-to-63}
 
-Die direkte Aktualisierung von LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms auf AEM 6.4 Forms ist nicht verfügbar. Sie können eine Zwischenaktualisierung auf eine oder mehrere Versionen von LiveCycle oder AEM Forms durchführen und dann auf AEM 6.4 Forms aktualisieren. Eine Liste der Zwischenversionen und entsprechenden Aktualisierungsanweisungen finden Sie unter [Aktualisierungspfad wählen](upgrade.md).
+Das direkte Upgrade von LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms auf AEM 6.4 Forms ist nicht verfügbar. Sie können eine Zwischenaktualisierung auf eine oder mehrere Versionen von LiveCycle oder AEM Forms durchführen und dann auf AEM 6.4 Forms aktualisieren. Eine Liste der Zwischenversionen und entsprechenden Aktualisierungsanweisungen finden Sie unter [Aktualisierungspfad wählen](upgrade.md).
 
 ## LiveCycle ES4 SP1 > AEM 6.4 Forms on JEE {#livecycle-es4sp1-forms-jee}
 
@@ -49,7 +49,7 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 1. Vor der Aktualisierung:
 
    1. Laden Sie das Installationsprogramm für AEM 6.4 Forms on JEE von der [Adobe Licensing-Website (LWS)](https://licensing.adobe.com/) herunter. Sie benötigen einen gültigen Vertrag für Wartung und Support, um das Installationsprogramm herunterzuladen.
-   1. Legen Sie den zu verwendenden Content Repository-Typ (CRX-Repository) fest. Nur wenige AEM Forms on JEE-Funktionen verwenden die CRX Repository-Persistenz zum Speichern von Inhalten und Assets. Installieren und konfigurieren Sie Content Repository nur, wenn Sie planen, solche AEM Forms on JEE-Funktionen zu verwenden:
+   1. Legen Sie den zu verwendenden Content Repository-Typ (CRX-Repository) fest. Nur wenige AEM Forms on JEE-Funktionen verwenden die CRX Repository-Persistenz zum Speichern von Inhalten und Assets. Installieren und konfigurieren Sie Content Repository nur, wenn Sie solche AEM Forms on JEE-Funktionen verwenden möchten:
 
       * In LiveCycle ES4 SP1 verwenden die Funktionen Correspondence Management, Forms Portal, HTML Workspace, and Process Reporting Content Repository. Wenn Sie diese Funktionen nicht in LiveCycle ES4 verwendet haben und planen, diese Funktionen nicht in AEM Forms zu verwenden, ist Content Repository nicht erforderlich.
       * In AEM Forms, Adaptive Forms, Correspondence Management, HTML5-Formularen (bekannt als Mobile Forms in LiveCycle ES4 SP1), Forms Portal, HTML Workspace, Process Reporting, formularzentrierten Workflows unter OSGi wird Content Repository verwendet. Wenn Sie planen, AEM Forms für diese Funktionen zu verwenden, ist Content Repository erforderlich.
@@ -98,8 +98,8 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 **Wählen Sie je nach vorhandener Umgebung und Anwendungsserver eines der folgenden Dokumente und befolgen Sie die detaillierten Anweisungen:**
 
 * [Aktualisieren von LiveCycle ES4 SP1 auf AEM 6.4 Forms for JBoss](assets/upgrade-jboss-livecycle.pdf)
-* [Aktualisierung von LiveCycle ES4 SP1 auf AEM 6.4 Forms für WebLogic](assets/upgrade-weblogic-livecycle.pdf)
-* [Aktualisierung von LiveCycle ES4 SP1 auf AEM 6.4 Forms für WebSphere](assets/upgrade-websphere-livecycle.pdf)
+* [Upgrade von LiveCycle ES4 SP1 auf AEM 6.4 Forms für WebLogic](assets/upgrade-weblogic-livecycle.pdf)
+* [Upgrade von LiveCycle ES4 SP1 auf AEM 6.4 Forms für WebSphere](assets/upgrade-websphere-livecycle.pdf)
 * [Aktualisierung von LiveCycle ES4 SP1 auf AEM 6.4 Forms mithilfe von JBoss Turnkey](assets/upgrade-turnkey-livecycle.pdf)
 
 <!--Theses sections used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
@@ -113,14 +113,14 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 1. Vor der Aktualisierung:
 
    1. Laden Sie das Installationsprogramm für AEM 6.4 Forms on JEE von der [Adobe Licensing-Website (LWS)](https://licensing.adobe.com/) herunter. Sie benötigen einen gültigen Vertrag für Wartung und Support, um das Installationsprogramm herunterzuladen.
-   1. Legen Sie den zu verwendenden Content Repository-Typ (CRX-Repository) fest. Nur wenige AEM Forms on JEE-Funktionen verwenden die CRX Repository-Persistenz zum Speichern von Inhalten und Assets. Installieren und konfigurieren Sie Content Repository nur, wenn Sie planen, solche AEM Forms on JEE-Funktionen zu verwenden:
+   1. Legen Sie den zu verwendenden Content Repository-Typ (CRX-Repository) fest. Nur wenige AEM Forms on JEE-Funktionen verwenden die CRX Repository-Persistenz zum Speichern von Inhalten und Assets. Installieren und konfigurieren Sie Content Repository nur, wenn Sie solche AEM Forms on JEE-Funktionen verwenden möchten:
 
       * In AEM Forms, adaptiven Formularen, Correspondence Management, HTML5-Formularen, Forms Portal, HTML Workspace, Prozessberichterstellung, formularbasierten Workflows unter OSGi, verwenden Sie Content Repository. Wenn Sie planen, AEM Forms für diese Funktionen zu verwenden, ist Content Repository erforderlich.
       * Sie benötigen kein Content Repository für AEM Forms Dokument Security.
 
       Darüber hinaus unterscheidet sich der Repository-Typ von LiveCycle und AEM Forms. Weitere Informationen zu verfügbaren Repository-Typen und zugehörige Informationen finden Sie unter [Persistenztyp für eine AEM Forms-Installation wählen](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
-   1. Erstellen Sie eine Sicherung der LiveCycle ES3-Datenspeicherung, der globalen Datenspeicherung (GDS) und des Content Repository (nicht für die Dokument-Sicherheit erforderlich). Wenn Sie auf MongoMK oder RDBMK-Persistenz aktualisieren, exportieren Sie LiveCycle ES3 Correspondence Management Assets in eine CMP-Datei und erstellen Sie Assets als AEM-Paket.
+   1. Erstellen Sie eine Sicherungskopie der LiveCycle ES3-Datenspeicherung, des globalen Datenspeichers (GDS) und des Content Repository (nicht für die Dokument-Sicherheit erforderlich). Wenn Sie auf MongoMK oder RDBMK-Persistenz aktualisieren, exportieren Sie LiveCycle ES3 Correspondence Management Assets in eine CMP-Datei und erstellen Sie Assets als AEM-Paket.
    1. Stellen Sie sicher, dass Ihre vorhandene Plattform (d. h. Anwendungsserver, Datenbank, Betriebssystem, Adobe Acrobat oder Hardware) für AEM 6.4 Forms on JEE unterstützt wird. Informationen zu unterstützter Hardware und Software finden Sie im Dokument [Unterstützte Plattformkombinationen](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
       Wenn Sie eine neue Instanz der Datenbank erstellen, importieren Sie die in Schritt 3 gesicherten Daten in die Datenbank. Informationen zum Importieren von Daten in eine Datenbank finden Sie in der Dokumentation des entsprechenden Datenbankanbieters.
@@ -149,5 +149,5 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 
 * [Aktualisieren von LiveCycle ES3 auf AEM 6.4 Forms for JBoss](assets/upgrade-jboss-livecycle-es3.pdf)
 * [Aktualisierung von LiveCycle ES3 auf AEM 6.4 Forms für WebLogic](assets/upgrade-weblogic-livecycle-es3.pdf)
-* [Aktualisierung von LiveCycle ES3 auf AEM 6.4 Forms für WebSphere](assets/upgrade-websphere-livecycle-es3.pdf)
+* [Upgrade von LiveCycle ES3 auf AEM 6.4 Forms für WebSphere](assets/upgrade-websphere-livecycle-es3.pdf)
 * [Aktualisierung von LiveCycle ES3 auf AEM 6.4 Forms mithilfe von JBoss Turnkey](assets/upgrade-turnkey-livecycle-es3.pdf)
