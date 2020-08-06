@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +26,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Einfach {#basic}
+### Allgemein {#basic}
 
 * **Titel**
 
@@ -42,11 +45,12 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
       * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
    * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
    * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
+
    Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
 * **In Navigation ausblenden**
 
-   Gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet sein soll.
+   Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
 
 * **Seitentitel**
 
@@ -92,7 +96,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vanity-URL umleiten**
 
-   Gibt an, ob für die Seite eine Vanity-URl verwendet werden soll.
+   Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
 
 ### Erweitert {#advanced}
 
@@ -114,11 +118,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    >[!NOTE]
    >
-   > Alias legt die `sling:alias` Eigenschaft fest, um einen Aliasnamen für die Ressource zu definieren (dies betrifft nur die Ressource, nicht den Pfad).
+   > Alias legt die Eigenschaft `sling:alias` fest, um einen Alias für die Ressource zu definieren (dies betrifft nur die Ressource, nicht den Pfad).
    >
-   >Beispiel: Wenn Sie einen Alias für `latin-lang` den Knoten `/content/we-retail/spanish` definieren, kann diese Seite über `/content/we-retail/latin-language`
+   >Beispiel: Wenn Sie einen Alias `latin-lang` für den Knoten `/content/we-retail/spanish` definieren, kann auf diese Seite über `/content/we-retail/latin-language` zugegriffen werden. 
    >
-   >Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter Best Practices für das SEO- und URL-Management.](/help/managing/seo-and-url-management.md#localized-page-names)
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Zugelassene Vorlagen**
 
@@ -145,7 +149,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Geben Sie eine Exportkonfiguration an.
 
-### Miniaturansicht {#thumbnail}
+### Miniaturansicht       {#thumbnail}
 
 1. **Seitenminiatur**
 
@@ -167,19 +171,20 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Benutzerfreigabe aktivieren für Facebook**
    * **Benutzerfreigabe aktivieren für Pinterest**
-   * **Bevorzugte XF-Variation** Definieren Sie die Experience-Fragment-Variante, die zum Generieren von Metadaten für die Seite verwendet werden soll.
+   * **Bevorzugte XF-Variante**
+Definieren Sie die Experience Fragment-Variante, die zum Generieren von Metadaten für die Seite verwendet werden soll.
 
-### Cloud-Services {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Cloud-Services**
+* **Cloud Services**
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung    {#personalization}
+### Personalisierung      {#personalization}
 
 * **Personalisierung**
 
-   Wählen Sie eine [Marke aus, um einen Bereich für das Targeting anzugeben](/help/sites-authoring/personalization.md).
+   Wählen Sie eine [Marke, um einen Bereich für das Targeting anzugeben](/help/sites-authoring/personalization.md).
 
 ### Berechtigungen {#permissions}
 
@@ -190,6 +195,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * [Berechtigungen hinzufügen](/help/sites-administering/user-group-ac-admin.md)
    * [Geschlossene Benutzergruppe bearbeiten](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * [Effektive Berechtigungen](/help/sites-administering/user-group-ac-admin.md) anzeigen 
+
    >[!CAUTION]
    >
    >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
@@ -207,42 +213,43 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
-### Live Copy {#live-copy}
+### Live Copy       {#live-copy}
 
 * **Live Copy**
 
    Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur {#site-structure}
+### Site-Struktur       {#site-structure}
 
-* Geben Sie Links zu Seiten an, die siteübergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
+* Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-2}
 
 Sie können Seiteneigenschaften an folgenden Stellen definieren:
 
-* In der **Sites-Konsole**:
+* In der Konsole **Sites**:
 
    * [beim Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (ein Teil der Eigenschaften)
-   * Clicking or tapping **Properties**
+   * durch Klicken oder Tippen auf **Eigenschaften**
 
       * für eine einzelne Seite
       * für mehrere Seiten (bei der Massenbearbeitung steht nur ein Teil der Eigenschaften zur Verfügung)
 
-* Im Seiten-Editor:
+* Im Seiteneditor:
 
-   * Verwenden von **Seiteninformationen** (dann **Eigenschaften öffnen**)
+   * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
 ### In der Sites-Konsole (einzelne Seite):{#from-the-sites-console-single-page}
 
 durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
 
-1. Verwenden der **Sites**-Konsole, um zu der Seite zu navigieren, für die Sie Eigenschaften anzeigen und bearbeiten möchten.
+1. Navigieren Sie in der **Sites-Konsole** zu der Seite, für die Sie Eigenschaften anzeigen und bearbeiten möchten.
 
-1. Select the **Properties** option for the required page using either:
+1. Wählen Sie die Option **Eigenschaften** für die gewünschte Seite aus, indem Sie wahlweise Folgendes verwenden:
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    Die Seiteneigenschaften werden in den entsprechenden Registerkarten angezeigt.
 
 1. Sie können die Eigenschaften nach Bedarf anzeigen oder bearbeiten.
@@ -255,7 +262,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
 1. Öffnen Sie die Seite, für die Sie Eigenschaften bearbeiten möchten.
 
-1. Wählen Sie das Symbol **Seiteninformationen**, um das Auswahlmenü zu öffnen:
+1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Auswahlmenü zu öffnen:
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
@@ -314,6 +321,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
       * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
       * Wenn das Feld mehrwertig ist (z. B. Tags), werden nur Werte angezeigt, die *alle* gleich sind. Wenn nur einige gleich sind, werden diese nur bei der Bearbeitung angezeigt.
+
    Wenn keine Eigenschaften mit einem gemeinsamen Wert vorhanden sind, wird eine Meldung angezeigt.
 
 * **Bearbeiten**
@@ -324,7 +332,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
       * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Bei der Bearbeitung dieser Felder ist Vorsicht geboten, um Datenverluste zu vermeiden.
+   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`. Bei der Bearbeitung dieser Felder ist Vorsicht geboten, um Datenverluste zu vermeiden.
 
 
 >[!NOTE]
