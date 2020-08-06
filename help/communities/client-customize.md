@@ -1,8 +1,8 @@
 ---
 title: Clientseitige Anpassung
 seo-title: Clientseitige Anpassung
-description: Clientseitiges Verhalten oder Erscheinungsbild in AEM Communities anpassen
-seo-description: Clientseitiges Verhalten oder Erscheinungsbild in AEM Communities anpassen
+description: Anpassen des Verhaltens oder Erscheinungsbilds clientseitig in AEM Communities
+seo-description: Anpassen des Verhaltens oder Erscheinungsbilds clientseitig in AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
 
 # Clientseitige Anpassung {#client-side-customization}
 
-| **[⇐](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
+| **[⇐ Essentials](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
 |---|---|
-|  | **[SCF-Handlebars Helpers](handlebars-helpers.md)** |
+|  | **[SCF-Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
-Um das Erscheinungsbild und/oder Verhalten einer AEM Communities-Komponente clientseitig anzupassen, gibt es mehrere Ansätze.
+Zum Anpassen des Erscheinungsbilds und/oder Verhaltens einer AEM Communities-Komponente auf Clientseite gibt es mehrere Ansätze.
 
 Zwei Hauptansätze sind das Überlagern oder Erweitern einer Komponente.
 
-[Durch Überlagern](#overlays) einer Komponente wird die Standardkomponente geändert und wirkt sich auf jeden Verweis auf die Komponente aus.
+[Durch das Überlagern](#overlays) einer Komponente wird die Standardkomponente geändert und wirkt sich auf jeden Verweis auf die Komponente aus.
 
 [Die Erweiterung](#extensions) einer Komponente, die eindeutig benannt ist, schränkt den Umfang der Änderungen ein. Der Begriff &quot;Erweiterung&quot; wird synonym mit &quot;Außerkraftsetzen&quot; verwendet.
 
@@ -102,7 +105,7 @@ Die benutzerdefinierten Stile überschreiben jetzt die standardmäßigen Rahmens
 
 >[!CAUTION]
 >
->**Jeder CSS-Klassenname, dem** scf-js-&amp;ast vorangestellt wird; hat eine bestimmte Verwendung im JavaScript-Code. Diese Klassen wirken sich auf den Status einer Komponente aus (z. B. Umschalten von ausgeblendet zu sichtbar) und sollten weder überschrieben noch entfernt werden.
+>Jeder CSS-Klassenname, dem **scf-js-&amp;ast vorangestellt wird;** hat eine bestimmte Verwendung im JavaScript-Code. Diese Klassen wirken sich auf den Status einer Komponente aus (z. B. Umschalten von ausgeblendet zu sichtbar) und sollten weder überschrieben noch entfernt werden.
 >
 >Während der scf-js-&amp;ast; -Klassen wirken sich nicht auf Stile aus. Die Klassennamen können in Stylesheets mit dem Vorbehalt verwendet werden, dass, da sie die Zustände von Elementen steuern, möglicherweise Nebenwirkungen auftreten.
 
@@ -112,11 +115,11 @@ Um eine JavaScript-Implementierung der Komponenten zu erweitern, benötigen Sie 
 
 1. Erstellen Sie eine Komponente für Ihre App mit einem Wert für jcr:resourceSuperType der erweiterten Komponente jcr:resourceType, z. B. social/forum/components/hbs/forum
 1. Prüfen Sie das JavaScript der Standardkomponente der SCF, um festzustellen, welche Methoden mit SCF.registerComponent() registriert werden müssen.
-1. Kopieren Sie entweder das JavaScript der erweiterten Komponente oder beginnen Sie von Grund auf
+1. Kopieren Sie entweder das JavaScript oder den Beginn der erweiterten Komponente von Grund auf
 1. Methode erweitern
-1. Verwenden Sie SCF.registerComponent(), um alle Methoden entweder mit den Standardwerten oder den benutzerdefinierten Objekten und Ansichten zu registrieren.
+1. Verwenden Sie SCF.registerComponent(), um alle Methoden entweder mit den Standardwerten oder den angepassten Objekten und Ansichten zu registrieren.
 
-### forum.js: Beispielerweiterung des Forums - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Beispielerweiterung des Forums - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -143,7 +146,7 @@ Um eine JavaScript-Implementierung der Komponenten zu erweitern, benötigen Sie 
 
 ## Skript-Tags {#script-tags}
 
-Skript-Tags sind ein wesentlicher Bestandteil des clientseitigen Frameworks. Sie sind der Klebstoff, der dazu beiträgt, das auf der Serverseite generierte Markup mit den Modellen und Ansichten auf der Clientseite zu verbinden.
+Skript-Tags sind ein wesentlicher Bestandteil des clientseitigen Frameworks. Sie sind der Klebstoff, der dazu beiträgt, das auf dem Server generierte Markup mit den Modellen und Ansichten auf dem Client zu verbinden.
 
 Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Komponenten nicht entfernt werden. SCF-Skript-Tags, die automatisch für die JSON-Injektion in HTML erstellt wurden, werden mit dem Attribut `data-scf-json=`true identifiziert.
 
@@ -151,9 +154,9 @@ Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Kom
 
 Die Verwendung [clientseitiger Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, JavaScript und CSS zu organisieren und zu optimieren, die zum Rendern von Inhalten auf dem Client verwendet werden.
 
-Die clientlibs für SCF folgen einem sehr spezifischen Benennungsmuster für zwei Varianten, die nur durch das Vorhandensein von &quot;author&quot;im Kategorienamen variieren:
+Die clientlibs für SCF folgen einem sehr spezifischen Benennungsmuster für zwei Varianten, die nur durch das Vorhandensein von &quot;author&quot;im Namen der Kategorie variieren:
 
-| Clientlib-Variante | Muster für Kategorieneigenschaft |
+| Clientlib-Variante | Muster für Eigenschaft &quot;Kategorien&quot; |
 |--- |--- |
 | complete clientlib | cq.social.hbs.&lt;Name der Komponente> |
 | author clientlib | cq.social.author.hbs.&lt;Name der Komponente> |
@@ -169,9 +172,9 @@ Diese Versionen finden Sie unter:
 Beispiel:
 
 * Client-Ordnerknoten: /etc/clientlibs/social/hbs/forum
-* Kategorieneigenschaft: cq.social.hbs.forum
+* Eigenschaft &quot;Kategorien&quot;: cq.social.hbs.forum
 
-Im Handbuch &quot; [Community-Komponenten&quot;](components-guide.md) werden die vollständigen clientlibs aufgeführt, die für jede SCF-Komponente erforderlich sind.
+Im Handbuch [&quot;](components-guide.md) Community-Komponenten&quot;werden die vollständigen clientlibs für jede SCF-Komponente Liste.
 
 [clientlibs for Communities Components](clientlibs.md) beschreibt, wie Sie einer Seite clientlibs hinzufügen.
 
@@ -188,21 +191,21 @@ Diese Versionen befinden sich im Ordner &quot;SCF libs&quot;:
 Beispiel:
 
 * Client-Ordnerknoten: /libs/social/forum/hbs/forum/clientlibs
-* Kategorieneigenschaft: cq.social.author.hbs.forum
+* Eigenschaft &quot;Kategorien&quot;: cq.social.author.hbs.forum
 
-Hinweis: Während Autor clientlibs nie andere Bibliotheken einbetten, führen sie ihre Abhängigkeiten auf. Wenn sie in andere Bibliotheken eingebettet sind, werden die Abhängigkeiten nicht automatisch eingezogen und müssen auch eingebettet werden.
+Hinweis: Während Autor clientlibs nie andere Bibliotheken einbetten, machen sie Liste ihre Abhängigkeiten. Wenn sie in andere Bibliotheken eingebettet sind, werden die Abhängigkeiten nicht automatisch eingezogen und müssen auch eingebettet werden.
 
 Die erforderlichen Autoren-clientlibs können identifiziert werden, indem Sie &quot;author&quot;in die clientlibs einfügen, die für jede SCF-Komponente im Handbuch [Community-Komponenten aufgeführt sind](components-guide.md).
 
 ### Überlegungen zur Nutzung {#usage-considerations}
 
-Jede Website ist anders, was die Verwaltung von Client-Bibliotheken betrifft. Zu den verschiedenen Faktoren gehören:
+Jede Website ist anders, wenn es darum geht, Client-Bibliotheken zu verwalten. Zu den verschiedenen Faktoren gehören:
 
 * Gesamtgeschwindigkeit: Vielleicht möchten Sie, dass die Site reagiert, aber es ist akzeptabel, dass die erste Seite etwas langsam geladen wird. Wenn viele der Seiten dasselbe Javascript verwenden, können die verschiedenen Javascripts in eine clientlib eingebettet und von der ersten zu ladenden Seite aus referenziert werden. Das Javascript in diesem einzelnen Download bleibt zwischengespeichert, wodurch die Menge der herunterzuladenden Daten für nachfolgende Seiten minimiert wird.
 * Kurzzeit bis zur ersten Seite: Vielleicht möchten Sie, dass die erste Seite schnell geladen wird. In diesem Fall befindet sich das Javascript in mehreren kleinen Dateien, auf die nur bei Bedarf verwiesen werden kann.
 * Ein Gleichgewicht zwischen dem ersten Laden der Seite und nachfolgenden Downloads.
 
-| **[⇐](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
+| **[⇐ Essentials](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
 |---|---|
-|  | **[SCF-Handlebars Helpers](handlebars-helpers.md)** |
+|  | **[SCF-Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
