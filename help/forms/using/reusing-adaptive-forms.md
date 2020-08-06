@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 75%
 
 ---
 
@@ -51,7 +54,7 @@ Clicking the copy action automatically exits the selection mode and makes the pa
 
 Wenn Sie in denselben Ordner einfügen oder sich im Zielordner eine weitere Datei mit demselben Knotennamen (mit dem sie im CRX-Repository gespeichert ist) befindet, wird am Suffix „1“ angehängt (zum Beispiel wird „myaf“ zu „myaf1“ und wenn sich „myaf1“ in demselben Speicherort befindet, wird „myaf“ zu „myaf2“). Alle anderen Eigenschaften bleiben genauso wie beim ursprünglichen adaptiven Formular.
 
-Nach dem Klicken auf das Symbol ![aem6forms_paste](assets/aem6forms_paste.png) wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie von demselben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
+Nachdem Sie auf das Symbol zum Einfügen von ![aem6forms_paste](assets/aem6forms_paste.png) geklickt haben, wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie von demselben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
 
 ### Ändern der Inhalte eines neuen adaptiven Formulars {#change-contents-of-new-adaptive-form}
 
@@ -61,7 +64,7 @@ Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalt
 
    Sie können die Metadateneigenschaften des adaptiven Formulars ändern, z. B. Titel und Beschreibung. For more details about metadata properties and how they can be changed, see [Managing Form Metadata](/help/forms/using/manage-form-metadata.md)
 
-1. **XFA/XSD für XFA/XSD-basierte adaptive Formulare ändern:**
+1. **XFA/XSD für XFA/XSD-basiertes adaptives Forms ändern:**
 
    Sie können die in adaptiven Formularen verwendete XFA/XSD ändern. Informationen zum Ändern dieser adaptiven Formulare finden Sie unter [Verwalten von Formularmetadaten](/help/forms/using/manage-form-metadata.md).
 
