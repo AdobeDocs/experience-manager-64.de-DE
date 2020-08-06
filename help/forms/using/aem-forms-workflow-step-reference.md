@@ -8,6 +8,9 @@ contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '4561'
+ht-degree: 87%
 
 ---
 
@@ -38,7 +41,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
 * **Markieren Sie Aktion und Kommentar aus der letzten Aufgabe in „Aufgabendetails“:** Wählen Sie diese Option, um die letzte ausgeführte Aktion und den Kommentar, der im Abschnitt „Aufgabendetail“ einer Aufgabe erhalten wurde, anzuzeigen.
 * **Typ:** Wählen Sie den Typ des Dokuments, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular oder ein nicht interaktives PDF-Dokument auswählen.
-* **** Adaptives Formular verwenden: Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das unter einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben.
+* **Adaptives Formular verwenden:** Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das unter einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben.
 * **Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie im Feld &quot;Typ&quot;ein adaptives Formular oder eine schreibgeschützte Option für ein adaptives Formular in Verbindung mit der Option &quot;Absoluter Pfad&quot;im Feld &quot;Adaptives Formular verwenden&quot;verwenden.
 * **PDF-Pfad:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Der Pfad ist immer relativ zur Payload. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
 * **Für abgeschlossene Aufgaben rendern Sie das adaptive Formular wie folgt**: Wenn eine Aufgabe als abgeschlossen markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument ausgeben. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
@@ -96,21 +99,21 @@ Der E-Mail-Schritt verwendet den Day CQ Mail-Dienst Bevor Sie den E-Mail-Schritt
 
 **HTML-E-Mail-Vorlage**: HTML-Vorlage für die E-Mail. Sie können diese Variablen in einer E-Mail-Vorlage verwenden. Der E-Mail-Schritt extrahiert und zeigt alle Variablen an, die in einer Vorlage für Eingaben enthalten sind. 
 
-**** E-Mail-Vorlagenmetadaten: Der Wert der E-Mail-Vorlagenvariablen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Workflow-Metadateneigenschaft sein.
+**E-Mail-Vorlagenmetadaten:** Der Wert der E-Mail-Vorlagenvariablen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Workflow-Metadateneigenschaft sein.
 
 * **Literal:** Verwenden Sie die Option, wenn Sie den genauen, zu spezifizierenden Wert kennen. Beispiel: [example@example.com](mailto:example@example.com).
 
 * **Workflow-Metadaten:** Verwenden Sie die Option, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird. Nachdem Sie die Option ausgewählt haben, geben Sie den Namen der Metadateneigenschaft in das leere Textfeld unter der Option „Workflow-Metadaten“ ein. Zum Beispiel emailAddress.
-* **** Asset-URL: Verwenden Sie die Option, um einen Weblink einer interaktiven Kommunikation mit der E-Mail einzubetten. Wählen Sie nach Auswahl der Option die einzubettende interaktive Kommunikation aus. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
+* **Asset-URL:** Verwenden Sie die Option, um einen Weblink einer interaktiven Kommunikation mit der E-Mail einzubetten. Wählen Sie nach Auswahl der Option die einzubettende interaktive Kommunikation aus. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
 * **Bild:** Verwenden Sie die Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&amp;ast;&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.
 
-**** E-Mail-Adresse des Absenders/Empfängers: Wählen Sie die Option &quot; **Literal** &quot;, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abrufen von Workflow-Metadaten** &quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
+**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die Option &quot; **Literal** &quot;, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abrufen von Workflow-Metadaten** &quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
 
 **Pfad für Dateianhang:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. An example path is [Payload_Directory]/attachments/
 
 **Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den ursprünglichen Dateinamen der Anlage in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **Von Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird.
 
-## Schritt „Generieren von Datensatzdokument“ {#generate-document-of-record-step}
+## Schritt „Generieren von Datensatzdokument“{#generate-document-of-record-step}
 
 Wenn ein Formular ausgefüllt oder eingereicht wird, können Sie das Formular in gedruckter Form oder als Dokument speichern. Dies wird als Datensatzdokument (DOR) bezeichnet. Sie können den Schritt „Generieren von Datensatzdokument“ verwenden, um eine schreibgeschützte oder interaktive PDF-Version eines adaptiven Formulars zu erstellen. Die PDF-Version enthält Informationen, die zusammen mit dem Layout des adaptiven Formulars in das Formular eingegeben werden.
 
@@ -141,7 +144,7 @@ Um die Eingaben für Felder des Schritts zu erläutern, werden die folgende Date
 <table> 
  <tbody> 
   <tr> 
-   <td>Eigenschaft</td> 
+   <td>Property</td> 
    <td>Wert<br /> </td> 
   </tr> 
   <tr> 
@@ -207,7 +210,7 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 
 * **JSON Dot Notation:** Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Service-Parameter zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Parameter zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie ein JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie insurance.customerDetails an, um alle Details eines Kunden als Eingabe für den Dienst anzugeben.
 * **Ausgabe des Dienstes > Zuordnen von Ausgabewerten zu den Metadaten:** Wählen Sie die Option zum Speichern der Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu.
-* **** Output of service > Save output as JSON: Wählen Sie die Option zum Speichern der Ausgabewerte in einer JSON-Datei aus.
+* **Output of service > Save output as JSON:** Wählen Sie die Option zum Speichern der Ausgabewerte in einer JSON-Datei aus.
 * **Ausgabe JSON-Dateipfad** Pfad zum Speichern der JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein.
 
 ## Schritt „Dokument signieren“ {#sign-document-step}
@@ -258,7 +261,7 @@ Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScrip
 
 ### Schritt „PDF vom angegebenen Typ erstellen“ {#create-pdf-from-specified-type-step}
 
-Generiert ein PDF-Dokument aus einer Eingabedatei. Das Eingabedokument kann relativ zur Nutzlast sein, einen absoluten Pfad haben oder selbst Nutzlast sein.
+Generiert ein PDF-Dokument aus einer Eingabedatei. Das Eingabe-Dokument kann relativ zur Nutzlast sein, einen absoluten Pfad haben oder selbst Nutzlast sein.
 
 ### Schritt „PDF aus URL/HTML/ZIP erstellen“{#create-pdf-from-url-html-zip-step}
 
@@ -290,7 +293,7 @@ Optimiert PDF-Dateien durch Reduzierung ihrer Größe. Das Ergebnis dieser Konve
 
 Die Optimierungseinstellungen geben an, wie Dateien optimiert werden. Hier sind Beispieleinstellungen:
 
-* Target PDF-Version
+* Zielgruppe PDF-Version
 * Objekte wie JavaScript-Aktionen und eingebettete Seitenminiaturen verwerfen
 * Verwerfen von Benutzerdaten wie Kommentaren und Dateianlagen
 * Ungültige oder nicht verwendete Einstellungen verwerfen
