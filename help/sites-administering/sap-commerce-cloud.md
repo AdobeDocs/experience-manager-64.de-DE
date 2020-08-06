@@ -12,6 +12,9 @@ discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 translation-type: tm+mt
 source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+workflow-type: tm+mt
+source-wordcount: '1726'
+ht-degree: 89%
 
 ---
 
@@ -42,7 +45,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 1. **Öffnen Sie den Editor** für die **Sample Solr Configuration for clothescatalog**.
 
 1. Nutzen Sie unter **Katalogversionen** die Option **Katalogversion hinzufügen**, um `outdoors-Staged` und `outdoors-Online` zur Liste hinzuzufügen.
-1. **** Speichern Sie die Konfiguration.
+1. **Speichern Sie die Konfiguration.**
 1. Öffnen Sie **SOLR-Elementtypen**, um **SOLR-Sortierungen** zu `ClothesVariantProduct` hinzuzufügen:
 
    * relevance („Relevanz“, score)
@@ -50,11 +53,12 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
    * name-desc („Name (absteigend)“, name)
    * price-asc („Preis (aufsteigend)“, priceValue)
    * price-desc („Preis (absteigend)“, priceValue)
+
    >[!NOTE]
    >
    >Use the context menu (usually right-button click) to select `Create Solr sort`.
    >
-   >Bei Hybris 5.0.0 öffnen Sie die `Indexed Types` Registerkarte, doppelklicken Sie auf `ClothesVariantProduct`, dann die Registerkarte `SOLR Sort`.
+   >Bei Hybris 5.0.0 öffnen Sie die `Indexed Types` Registerkarte, klicken Sie mit der Dublette auf `ClothesVariantProduct`, dann auf die Registerkarte `SOLR Sort`.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -267,7 +271,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit hybris an:
 1. Aktivieren Sie das Kontrollkästchen **Inkrementeller Import**.
 1. Klicken Sie auf **Katalog importieren**, um den Import zu starten.
 
-   Nach Abschluss der Aktualisierung können Sie die in AEM aktualisierten Daten überprüfen unter:
+   Wenn abgeschlossen, können Sie die in AEM aktualisierten Daten überprüfen unter:
 
    ```
        /etc/commerce/products
@@ -303,7 +307,7 @@ Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung
 1. Aktivieren Sie das Kontrollkästchen **Express-Aktualisierung**.
 1. Klicken Sie auf **Katalog importieren**, um den Import zu starten.
 
-   Nach Abschluss der Aktualisierung können Sie die in AEM aktualisierten Daten überprüfen unter:
+   Wenn abgeschlossen, können Sie die in AEM aktualisierten Daten überprüfen unter:
 
    ```
        /etc/commerce/products
@@ -350,6 +354,7 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    * **Enable product removal**
    * **Enable product asset removal**
+
    >[!NOTE]
    >
    >In AEM können Sie die Konfigurationseinstellungen für solche Dienste auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
@@ -358,6 +363,7 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    * Die erste Ausführung resultiert in einigen geänderten Produkten – aufgeführt in der Protokollliste.
    * Bei der zweiten Ausführung sollten keine Produkte aktualisiert werden.
+
    >[!NOTE]
    >
    >Der erste Importvorgang dient zur Initialisierung der Produktdaten. Der zweite Importvorgang überprüft, ob alles funktioniert hat und der Produktsatz bereit ist.
@@ -374,7 +380,7 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    * Öffnen Sie die Seite [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
    * Katalog auswählen `Outdoors Staged`
-   * Suchen nach `Cajamara`
+   * Suchen Sie nach `Cajamara`
    * Select this product and change the approval status to `unapproved`
 
 1. Führen Sie eine weitere inkrementelle Aktualisierung durch (siehe [Katalogimport](#catalog-import)). Im Protokoll wird das gelöschte Produkt aufgeführt.
@@ -423,6 +429,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
 
       * Der Client Context zeigt eine Zusammenfassung des Auftragsverlaufs an.
       * Die Nachricht „Sie sind ein wiederkehrender Kunde.“ wird angezeigt.
+
    >[!NOTE]
    >
    >So wird die Nachricht realisiert:
