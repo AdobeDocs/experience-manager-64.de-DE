@@ -29,7 +29,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 >
 >* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem anpassen.
 >* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
->* Das Musterpaket funktioniert nur mit Übermittlungsaktionen für adaptive Formulare.
+>* Das Musterpaket funktioniert nur mit adaptiven Forms-Übermittlungsaktionen.
 
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
