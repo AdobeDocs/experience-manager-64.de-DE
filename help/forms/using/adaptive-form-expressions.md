@@ -89,7 +89,7 @@ Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken a
 
 **Rückgabetyp:** Der Ausdruck für ein Klickereignis gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Zum Ausfüllen eines Textfelds **textbox1** auf der Klickaktion einer Schaltfläche mit dem Wert **AEM Forms** lautet der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"` &quot;
+**Beispiel**: Wenn Sie ein Textfeld **textbox1** auf die Klickaktion einer Schaltfläche mit dem Wert **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"` &quot;
 
 ### Initialisierungsskript {#initialization-script}
 
