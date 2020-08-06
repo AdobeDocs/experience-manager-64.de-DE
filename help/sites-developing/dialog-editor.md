@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 88%
 
 ---
 
@@ -56,6 +59,6 @@ Geben Sie die erforderlichen Informationen ein und klicken Sie auf **Alle speich
 
 Ein Gerüst ist eine spezielle Seite mit einem Formular, das in einem Schritt ausgefüllt und gesendet werden kann. Damit können Sie anhand der eingegebenen Inhalte sehr schnell eine Seite erstellen.
 
-Das Formular, aus dem ein Gerüst besteht, wird durch eine Dialogfelddefinition definiert, im Grunde wie ein normales Dialogfeld, mit dem Unterschied, dass es auf der Gerüstseite in einer anderen Form erscheint. Da Dialogfelddefinitionen zum Definieren von Gerüsten verwendet werden, können Sie Gerüste mit dem Dialogfeldeditor entwerfen. Beachten Sie, dass der Render-Bereich bei dieser Verwendung des Dialogeditors die Dialogdefinition weiterhin in Form eines Dialogfelds und nicht als Gerüst anzeigt.
+Das Formular, aus dem ein Gerüst besteht, wird durch eine Dialogfelddefinition definiert, im Grunde wie ein normales Dialogfeld, mit dem Unterschied, dass es auf der Gerüstseite in einer anderen Form erscheint. Da Dialogfelddefinitionen zum Definieren von Gerüsten verwendet werden, können Sie Gerüste mit dem Dialogfeldeditor entwerfen. Beachten Sie, dass der Render-Bereich bei einer solchen Verwendung des Dialog-Editors die Dialogdefinition weiterhin in Form eines Dialogfelds und nicht als Gerüst anzeigt.
 
 Weitere Informationen zum Erstellen von Gerüsten mithilfe des Dialogfeldeditors finden Sie in [Gerüste](/help/sites-authoring/scaffolding.md).
