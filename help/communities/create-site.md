@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1649'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 Verwenden Sie die Autoreninstanz, um eine neue Community-Site zu erstellen
 
-* Anmelden mit Administratorrechten
+* Anmelden mit Administratorberechtigungen
 * Aus globaler Navigation: **[!UICONTROL Navigation > Communities > Sites]**
 
 Die Communities Sites-Konsole bietet einen Assistenten, der Sie durch die Schritte zum Erstellen einer Community-Site führt. Es ist möglich, den `Next`Schritt oder `Back`den vorherigen Schritt vor der Verpflichtung der Site im letzten Schritt weiter zu gehen.
@@ -30,13 +33,13 @@ So erstellen Sie eine neue Community-Site:
 
 * Wählen Sie die `Create` Schaltfläche
 
-![createccommunity site](assets/createcommunitysite.png)
+![createcommunitysite](assets/createcommunitysite.png)
 
 ### Schritt 1: Site-Vorlage {#step-site-template}
 
 ![createsitetemplate63](assets/createsitetemplate63.png)
 
-Geben Sie im Schritt[&quot; ](sites-console.md#step2013asitetemplate)Site-Vorlage&quot;einen Titel, eine Beschreibung und den Namen der URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
+Geben Sie im Schritt [&quot;](sites-console.md#step2013asitetemplate)Site-Vorlage&quot;einen Titel, eine Beschreibung und den Namen der URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
 
 * **[!UICONTROL Community-Site-Titel]**: `Getting Started Tutorial`
 
@@ -49,14 +52,14 @@ Geben Sie im Schritt[&quot; ](sites-console.md#step2013asitetemplate)Site-Vorlag
 
 * **[!UICONTROL Community-Site-Name]**: take
 
-   * Überprüfen Sie den Namen, da er nach der Erstellung der Site nicht leicht geändert werden kann.
-   * Die ursprüngliche URL wird unter dem Site-Namen der Community angezeigt
+   * Überprüfen Sie die Dublette, da der Name nach der Erstellung der Site nicht leicht geändert werden kann.
+   * Die anfängliche URL wird unter dem Site-Namen der Community angezeigt
    * Für eine gültige URL hängen Sie einen Basissprachcode an + &quot;.html&quot;
    * *Beispiel*: http://localhost:4502/content/sites/ `engage/en.html`
 
 * **[!UICONTROL Vorlage]**: nach unten ziehen `Reference Site`
 
-Wählen Sie **[!UICONTROL Weiter]**
+Wählen Sie **[!UICONTROL Weiter]** aus
 
 ### Schritt 2: Design {#step-design}
 
@@ -70,39 +73,39 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-(Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird am linken Rand des Browsers zwischen dem Community-Site-Header und dem Menü (Navigationslinks) fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
+(Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird an der linken Kante des Browsers zwischen dem Community-Site-Header und dem Menü (Navigationslinks) fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
 
 ![chlimage_1-353](assets/chlimage_1-353.png) ![chlimage_1-354](assets/chlimage_1-354.png)
 
-Wählen Sie **[!UICONTROL Weiter]**.
+Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
 Im Schritt &quot;Einstellungen&quot; `Next`werden vor der Auswahl sieben Abschnitte angezeigt, in denen Sie auf Konfigurationen zugreifen können, die mit Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse, Übersetzung und Aktivierung verbunden sind.
 
-Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für Aktivierung](getting-started-enablement.md) , um sich mit den Funktionen für die Aktivierung vertraut zu machen.
+Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für die Aktivierung](getting-started-enablement.md) , um mehr über die Funktionen zur Aktivierung zu erfahren.
 
 #### USER MANAGEMENT {#user-management}
 
 Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](sites-console.md#user-management)
 
 * So erlauben Sie Site-Besuchern, sich selbst zu registrieren
-* So gestatten Sie Site-Besuchern, die Site ohne Anmeldung anzuzeigen
+* So können Site-Besucher die Site anzeigen, ohne sich anmelden zu müssen
 * So ermöglichen Sie es Mitgliedern, Nachrichten von anderen Community-Mitgliedern zu senden und zu empfangen
-* So lassen Sie die Anmeldung bei Facebook statt der Registrierung und Erstellung eines Profils zu
+* So lassen Sie die Anmeldung bei Facebook zu, anstatt sich zu registrieren und ein Profil zu erstellen
 * So lassen Sie die Anmeldung bei Twitter statt der Registrierung und Erstellung eines Profils zu
 
 >[!NOTE]
 >
->In einer Produktionsumgebung müssen benutzerdefinierte Facebook- und Twitter-Anwendungen erstellt werden. Siehe [Social-Anmeldung bei Facebook und Twitter](social-login.md).
+>Für eine Produktions-Umgebung ist es erforderlich, benutzerdefinierte Facebook- und Twitter-Anwendungen zu erstellen. Siehe [Social-Anmeldung bei Facebook und Twitter](social-login.md).
 
 ![createsitesettings](assets/createsitesettings.png)
 
 #### TAGGING {#tagging}
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden durch Auswahl von AEM-Namespaces gesteuert, die zuvor über die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. der [Tutorial-Namespace](setup.md#create-tutorial-tags)).
+Die Tags, die auf Community-Inhalte angewendet werden können, werden gesteuert, indem AEM Namensraum ausgewählt werden, die zuvor über die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. der [Tutorial-Namensraum](setup.md#create-tutorial-tags)).
 
-Die Suche nach Namespaces ist mit der Typenvorschau einfach. Beispiel:
+Die Suche nach Namensräumen ist mit der Typenvorschau einfach. Beispiel:
 
 * Typ &#39;tut&#39;
 * Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
@@ -118,11 +121,11 @@ Damit ein Community-Mitglied (oder eine Gruppe von Mitgliedern) die Site als Com
 Beispiel:
 
 * Typ &quot;q&quot;
-* Quinn [Harper auswählen](enablement-setup.md#publishcreateenablementmembers)
+* Wählen Sie [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
->[Der Tunnel-Dienst](https://helpx.adobe.com/experience-manager/6-3/communities/using/deploy-communities.html#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
+>[Der Tunnel-Dienst](https://helpx.adobe.com/experience-manager/6-3/communities/using/deploy-communities.html#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungs-Umgebung vorhanden sind.
 
 ![community_roles-1](assets/community_roles-1.png)
 
@@ -144,7 +147,7 @@ Siehe [Analytics-Konfiguration für Communities-Funktionen](analytics.md).
 
 Die [Übersetzungseinstellungen](sites-console.md#translation) geben die Basissprache für die Site sowie ggf. an, ob UGC übersetzt werden darf und in welche Sprache.
 
-* Maschinelle Übersetzung **[!UICONTROL zulassen]**
+* Maschinelle Übersetzung **[!UICONTROL zulassen prüfen]**
 * Lassen Sie Standardsprachen für die Übersetzung vom standardmäßigen maschinellen Übersetzungsdienst ausgewählt
 * Übersetzungsdienstleister und Konfiguration beibehalten
 * Ein globaler Store ist nicht erforderlich, da es keine Sprachkopien gibt
@@ -157,9 +160,9 @@ Die [Übersetzungseinstellungen](sites-console.md#translation) geben die Basissp
 
 Lassen Sie beim Erstellen einer Interaktionsgemeinschaft leer.
 
-Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungsgemeinschaft](overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities für die Aktivierung](getting-started-enablement.md).
+Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungs-Community](overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities für die Aktivierung](getting-started-enablement.md).
 
-Wählen Sie **[!UICONTROL Weiter]**.
+Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Schritt 4: Communities-Site erstellen {#step-create-communities-site}
 
@@ -191,13 +194,13 @@ Von links nach rechts:
 
 * **Website** veröffentlichen Wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen (z. B. wenn Ihr Veröffentlichungsserver auf Ihrem lokalen Computer ausgeführt wird, dann standardmäßig auf localhost:4503)
 
-* **Site** exportieren Wählen Sie das Exportsymbol, um ein Paket der Community-Site zu erstellen, das sowohl im [Paketmanager](../../help/sites-administering/package-manager.md) gespeichert als auch heruntergeladen wird.
+* **Site** exportieren Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, das sowohl im [Paketmanager](../../help/sites-administering/package-manager.md) gespeichert als auch heruntergeladen wird.
 
    Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
 * **Site löschen**
 
-   Wählen Sie das Symbol zum Löschen, um die Community-Site in der Konsole **[!UICONTROL Communities > Sites zu löschen]**. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. UGC, Benutzergruppen, Assets und Datenbankdatensätze.
+   Wählen Sie das Symbol zum Löschen aus, um die Community-Site in der Konsole **[!UICONTROL Communities > Sites zu löschen]**. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. UGC, Benutzergruppen, Assets und Datenbankdatensätze.
 
 ![siteactions-1](assets/siteactions-1.png)
 
@@ -210,9 +213,10 @@ Von links nach rechts:
 >1. Navigieren Sie zu **[!UICONTROL Tools > Vorgänge > Replikationsmenü]** .
 >1. Agenten **[!UICONTROL beim Autor auswählen]**
 >1. Wählen Sie **[!UICONTROL Standardagent (publish)]**
->1. Wählen Sie neben **[!UICONTROL Einstellungen]** **[!UICONTROL Bearbeiten]**
+>1. Wählen Sie neben **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Bearbeiten]**
 >1. Wählen Sie im Popup-Dialogfeld für Agenteneinstellungen die Registerkarte Transport.
 >1. Ändern Sie im URI die Anschlussnummer 4503 in die gewünschte Anschlussnummer.
+
 >
 >
 So verwenden Sie z. B. Port 6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
@@ -240,14 +244,14 @@ Für diese neue Community-Site werden die vier neuen Benutzergruppen unter dem S
 * Community-Manager für Interaktionen
 * Community-Gruppenadministratoren
 * Community-Interaktionsmitglieder
-*  Community-Interaktionsmoderatoren
+* Community-Interaktionsmoderatoren
 * Community-Interaktion mit privilegierten Mitgliedern
 * Community Interagieren von SiteContent Manager
 
 Beachten Sie, dass [Aaron McDonald](tutorials.md#demo-users) Mitglied von
 
 * Community-Manager für Interaktionen
-*  Community-Interaktionsmoderatoren
+* Community-Interaktionsmoderatoren
 * Community-Interage-Mitglieder (indirekt als Mitglied der Moderatoren-Gruppe)
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
@@ -260,15 +264,15 @@ Beachten Sie, dass [Aaron McDonald](tutorials.md#demo-users) Mitglied von
 
 Nachdem eine Site konfiguriert und zur Veröffentlichung gesendet wurde, [konfigurieren Sie die Anmeldezuordnung](sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldedaten der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut anzeigt.
 
-Hinzufügen eines `Login Page Mapping` Formulars
+Hinzufügen `Login Page Mapping` als
 
 * /content/sites/engagement/de/signin:/content/sites/engagement/de
 
 ## Optionale Schritte {#optional-steps}
 
-### Standardstartseite ändern {#change-the-default-home-page}
+### Standardmäßige Startseite ändern {#change-the-default-home-page}
 
-Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, kann es nützlich sein, die Standard-Homepage in die neue Site zu ändern.
+Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, ist es ggf. sinnvoll, die standardmäßige Startseite auf die neue Site zu ändern.
 
 Hierzu müssen Sie [CRXDE](http://localhost:4503/crx/de) Lite verwenden, um die Tabelle für die [Ressourcenzuordnung](../../help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
 
@@ -276,8 +280,8 @@ Erste Schritte:
 
 1. Melden Sie sich bei der Veröffentlichung mit Administratorrechten an
 1. Navigieren Sie zu [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
-1. Erweitern Sie im Projektbrowser `/etc/map`
-1. Wählen Sie den `http` Knoten
+1. Erweitern Sie im Projektbrowser die `/etc/map`
+1. Wählen Sie die `http` Node
 
    * Knoten **[!UICONTROL erstellen auswählen]**
 
@@ -289,14 +293,14 @@ Erste Schritte:
 
 1. Mit neu erstelltem `localhost.4503` Knoten ausgewählt
 
-   * Eigenschaft hinzufügen
+   * Hinzufügen
 
       * **Name** sling:match
       * **Typzeichenfolge**
       * **Wert** localhost.4503/\$
 
          (muss mit &#39;$&#39; Zeichen enden)
-   * Eigenschaft hinzufügen
+   * Hinzufügen
 
       * **Name** sling:internalRedirect
       * **Typzeichenfolge**
@@ -317,19 +321,19 @@ Erste Schritte:
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
 
-Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namespace-Präfix `localhost`handelt.
+Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namensraum-Präfix `localhost`handelt.
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
-#### Fehlerbehebung: Fehler bei Umleitung {#troubleshooting-fail-to-redirect}
+#### Fehlerbehebung: Fehler bei der Umleitung {#troubleshooting-fail-to-redirect}
 
-Die Zeichenfolge &#39;**$**&#39; am Ende der `sling:match`Zeichenfolge für reguläre Ausdrücke ist von entscheidender Bedeutung, sodass nur exakt `http://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach der URL server:port existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt es fehl.
+Die **Zeichenfolge &#39;**$ `sling:match`&#39; am Ende des regulären Ausdrucks ist von entscheidender Bedeutung, sodass nur exakt `http://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt sie fehl.
 
 ### Ändern der Site {#modify-the-site}
 
-Nachdem die Site zum ersten Mal erstellt wurde, können Autoren mit dem Symbol [Offene Site](sites-console.md#authoring-site-content) standardmäßige AEM-Authoring-Aktivitäten durchführen.
+Nachdem die Site zum ersten Mal erstellt wurde, können Autoren das Symbol [Site öffnen verwenden, um Aktivitäten zum Erstellen AEM Standarddokuments](sites-console.md#authoring-site-content) durchzuführen.
 
-Darüber hinaus können Administratoren die Eigenschaften der Site, z. B. den Titel, über das Symbol[ &quot;Site ](sites-console.md#modifying-site-properties)bearbeiten&quot;ändern.
+Darüber hinaus können Administratoren die Eigenschaften der Site, z. B. den Titel, über das Symbol [&quot;Site](sites-console.md#modifying-site-properties) bearbeiten&quot;ändern.
 
 Denken Sie nach jeder Änderung daran, die Site zu **speichern** und **erneut zu veröffentlichen** .
 
