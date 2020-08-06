@@ -91,18 +91,18 @@ Bevor Sie AEM Forms-Datenerfassungsfunktionen installieren und konfigurieren, st
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält AEM bildet Datenerfassung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
-1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
-1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen ein Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]** .
 1. In the **[!UICONTROL Filters]** section:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   1. Wählen Sie **[!UICONTROL Forms]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
    2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
 1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
 1. Select the package and click **[!UICONTROL Install]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) herunterladen.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der Datei &quot; [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log&quot;nicht mehr angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;nicht mehr in der Datei &quot; [AEM-Installation-Directory]/crx-quickstart/logs/error.log&quot;angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -173,7 +173,7 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
 1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. Der Standardwert ist 100.       Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. Der Standardwert ist 100.         Klicken Sie auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
