@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 80%
 
 ---
 
 
 # Anpassen von Entwurfs- und Übermittlungsdatendiensten {#customizing-draft-and-submission-data-services}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit AEM Forms können Benutzer ein adaptives Formular als Entwurf speichern. Die Entwurfsfunktion bietet Benutzern die Möglichkeit, ein Formular, an dem sie gerade arbeiten, beizubehalten. Ein Benutzer kann das Formular dann jederzeit von jedem beliebigen Gerät ausfüllen und senden.
 
@@ -28,10 +31,10 @@ Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [E
 
 ## Voraussetzungen {#prerequisites}
 
-* Aktivieren der Komponenten im [Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Aktivieren von [Forms-Portalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
 * Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
 * Aktivieren [adaptiver Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Informationen zur [Implementierung des benutzerdefinierten Speichers](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Informationen zur [Implementierung von benutzerdefinierten Datenspeicherung](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
