@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 97%
 
 ---
 
 
-# Ihr Posteingang{#your-inbox}
+# Ihr Posteingang {#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, beispielsweise Benachrichtigungen zu Arbeitselementen oder Aufgaben bezüglich Aktionen, die Sie für Seiteninhalte durchführen müssen.
 
@@ -42,6 +45,7 @@ So zeigen Sie Ihre Benachrichtigungen an:
 
    * [Abonnieren von Benachrichtigungen](#subscribing-to-notifications)
    * [Verarbeiten von Benachrichtigungen](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## Abonnieren von Benachrichtigungen {#subscribing-to-notifications}
@@ -66,6 +70,7 @@ So abonnieren Sie Benachrichtigungen:
 
    * **Posteingang**: Die Benachrichtigungen werden in Ihrem AEM-Posteingang angezeigt.
    * **E-Mail**: Die Benachrichtigungen werden an die im Benutzerprofil angegebene E-Mail-Adresse gesendet.
+
    >[!NOTE]
    >
    >Einige Einstellungen müssen konfiguriert werden, damit die Benachrichtigung per E-Mail erfolgen kann. Außerdem können Sie die E-Mail-Vorlage anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. Informationen zum Konfigurieren von E-Mail-Benachrichtigungen in AEM finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md#configuringemailnotification).
@@ -92,6 +97,7 @@ So abonnieren Sie Benachrichtigungen:
       Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen Sie **Exakt?** auf **Ja**.
 
    * Um die Regel zu aktivieren, setzen Sie **Regel** auf **Zulassen**. Ist dieser Wert auf **Ablehnen** gesetzt, wird die Regel deaktiviert, aber nicht entfernt, und kann zu einem späteren Zeitpunkt aktiviert werden.
+
    Um eine Definition zu entfernen, wählen Sie die Zeile aus, indem Sie auf eine Tabellenzelle klicken und auf **Löschen** klicken.
 
 1. Klicken Sie auf **OK**, um die Konfiguration zu speichern.
