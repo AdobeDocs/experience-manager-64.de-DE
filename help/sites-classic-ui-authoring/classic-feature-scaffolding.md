@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 78%
 
 ---
 
@@ -67,7 +70,7 @@ Der Textkörper der Grundlage ist das Formular. Wenn ein Benutzer eine Seite mit
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*Gehen Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielvorlage *und den* Zielpfad *wie oben beschrieben fest.*
+*Gehen Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielgruppe-Vorlage *und den* Zielgruppen-Pfad *wie oben beschrieben fest.*
 
 *Als Nächstes müssen Sie die Struktur der Seite definieren, die dieses Gerüst erstellen wird. Gehen Sie dazu in den Designmodus auf der Gerüst-Seite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Grundlage im **Dialog-Editor** bearbeiten können.
 
@@ -89,7 +92,7 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 Daraufhin wird die Eigenschaftenliste für dieses Feld auf der rechten Seite des Dialog-Editors wie folgt angezeigt:
 
-![list_of_properties](assets/list_of_properties.png)
+![Liste_der_Eigenschaften](assets/list_of_properties.png)
 
 Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie weist folgenden Wert auf:
 
@@ -110,7 +113,7 @@ Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Click
 
 Dieses ausgeblendete Feld weist folgende Eigenschaften auf:
 
-![hidden_list_props](assets/hidden_list_props.png)
+![hidden_Liste_props](assets/hidden_list_props.png)
 
 Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
@@ -130,7 +133,7 @@ Das zweite ausgeblendete Feld kann angezeigt werden, indem Sie wie folgt darauf 
 
 Dieses ausgeblendete Feld weist folgende Eigenschaften auf:
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![hidden_Liste_props2](assets/hidden_list_props2.png)
 
 Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
