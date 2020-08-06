@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 Beachten Sie beim Erstellen eines Speicherorts für eine Java-Klasse, dass der Paketname dem Speicherort des Repository-Ordners mit den ordnungsgemäß Escape-Zeichen im Pfad entsprechen muss.
 
-Die Verwendung von Bindestrichen in den Namen von Repository-Elementen ist eine empfohlene Vorgehensweise bei der AEM-Entwicklung. Bindestriche sind innerhalb von Java-Paketnamen nicht zulässig.
+Die Verwendung von Bindestrichen in den Namen von Repository-Elementen ist eine empfohlene Vorgehensweise bei AEM Entwicklung. Bindestriche sind in Java-Paketnamen nicht zulässig.
 
 Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich &#39;_&#39; und einem Bindestrich &#39;-&#39; unterscheiden können. In JCR muss der Bindestrich daher durch den Unicode-Wert (u002d) ersetzt und mit einem Unterstrich &quot;_&quot;versehen werden.
 
