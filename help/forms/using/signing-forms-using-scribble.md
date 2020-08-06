@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 76%
 
 ---
 
@@ -45,6 +48,7 @@ Wie unten dargestellt, stellen beide Komponenten ein Fenster bereit, um ein Form
    * **Vorlagennachricht:** Geben Sie die Nachricht an, die angezeigt werden soll, während die Signatur-PDF geladen wird. Die Adobe Sign-Dienste benötigen einige Zeit, um die Signatur-PDF vorzubereiten und zu laden.
    * **Signaturdienst:** Wählen Sie die Option **Freihandsignatur** aus.
    * **CSS-Klasse**: Geben Sie ggf. die CSS-Klasse der Client-Bibliothek an. Es wird empfohlen, anstelle der CSS-Klasse [Designs](/help/forms/using/themes.md) und [Inline-Stile](/help/forms/using/inline-style-adaptive-forms.md) zu verwenden.
+
    Tippen Sie auf das Symbol Fertig ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
    Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. For detailed information, see [Sign an adaptive form using Scribble Signature](/help/forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p).
