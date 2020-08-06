@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1784'
+ht-degree: 84%
 
 ---
 
 
 # Einführung zur Anpassung des AEM Forms Workspace {#introduction-to-customizing-aem-form-workspace}
 
-AEM Forms Workspace bietet Funktionen zum Ändern der Darstellungssemantik und Funktionalität der Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
+AEM Formulararbeitsbereich bietet Funktionen zum Ändern der Darstellungssemantik und Funktionalität der Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
 
 ![cu_customized_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -49,7 +52,7 @@ Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen St
   </tr> 
   <tr> 
    <td><p>#header</p> </td> 
-   <td><p>Kopfzeile von AEM Forms Workspace</p> </td> 
+   <td><p>Kopfzeile des AEM Forms Workspace</p> </td> 
   </tr> 
   <tr> 
    <td><p>.categoryList</p> </td> 
@@ -128,7 +131,7 @@ For the exact steps to do these customizations, see [Generic steps for AEM Forms
 
 #### Bild {#image}
 
-Sie können AEM Forms Workspace anpassen, um Avatare von Benutzern hinzuzufügen oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Sie können den AEM Forms Workspace anpassen, um Avatare von Benutzern hinzuzufügen oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 Die wesentlichen Schritte für die Anpassungen der Bilder sind:
 
@@ -153,9 +156,9 @@ Einzelne Beispiele für diese Anpassungen finden Sie in den jeweiligen Hilfethem
 
 ### Änderung der Semantik {#semantic-changes}
 
-Um die AEM Forms Workspace-Funktion zu ändern, ändern Sie den JavaScript-Quellcode. Änderungen in der Kernfunktion werden als Semantikänderungen bezeichnet. Ändern Sie Modelle, Ansichten und Vorlagen, die als Teil des Quellcodes von AEM Forms Workspace bereitgestellt werden.
+Um die AEM Forms Workspace-Funktionalität zu ändern, ändern Sie den JavaScript-Quellcode. Änderungen in der Kernfunktion werden als Semantikänderungen bezeichnet. Ändern Sie Modelle, Ansichten und Vorlagen, die als Teil des Quellcodes von AEM Forms Workspace bereitgestellt werden.
 
-Die wichtigsten Schritte zum Durchführen semantischer Änderungen zum Ändern der Funktionen von AEM Forms Workspace sind:
+Die wichtigsten Schritte zum Durchführen semantischer Änderungen zur Änderung der Funktionen von AEM Forms Workspace sind:
 
 * Erstellen Sie in einem benutzerdefinierten Ordner die Kopien von den entsprechenden Standarddateien.
 * Fügen Sie dem benutzerdefinierten Ordner neue Modelle und Ansichten hinzu.
@@ -190,7 +193,7 @@ Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu g
 
 * client-html:
 
-   * assembly - Enthält zip.xml, das vom Skript zum Erstellen des AEM Forms Workspace-SDK verwendet wird.
+   * assembly - Enthält zip.xml, das vom Skript zum Erstellen des AEM Forms Workspace SDK verwendet wird.
    * src/main/webapp -
 
       * css - Enthält Stylesheets für AEM Forms Workspace.
@@ -213,7 +216,7 @@ Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu g
             * views - Enthält Backbone-Ansichten aller Komponenten in AEM Forms Workspace.
          * main.js
          * router.js
-      * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF-Formularen in AEM Forms Workspace verwendet und WSNextAdapter.swf wird zum Laden von SWF-Formularen und Guides in AEM Forms Workspace verwendet.
+      * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF forms in AEM Forms Workspace verwendet und WSNextAdapter.swf wird verwendet, um SWF-Formulare und Guides in AEM Forms Workspace zu laden.
       * locales:
 
          * de-DE - Enthält translation.json für Deutsch.
