@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfff6bdc-0d5f-4338-aa8a-7d0eb04bc19a
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 >
 >Silverpop Engage wird **nicht** standardmäßig bereitgestellt. Sie müssen das [Silverpop-Integrationspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) von Package Share herunterladen und auf Ihrer Instanz installieren. Nachdem Sie das Paket installiert haben, können Sie es wie in diesem Dokument beschrieben konfigurieren.
 
-Durch die Integration von AEM mit Silverpop Engage können Sie in AEM erstellte E-Mails über Silverpop verwalten und senden. Sie können auch die Interessentenverwaltungsfunktionen von Silverpop über AEM Forms auf AEM-Seiten verwenden.
+Durch die Integration von AEM mit Silverpop Engage können Sie in AEM erstellte E-Mails über Silverpop verwalten und senden. Sie können auch die Lead-Management-Funktionen von Silverpop über AEM Formulare auf AEM Seiten verwenden.
 
 Mit der Integration verfügen Sie über die folgenden Funktionen:
 
@@ -38,7 +41,7 @@ Sie können Silverpop-Konfigurationen über **Cloud-Services**, **Tools** oder *
 
 Gehen Sie wie folgt vor, um in Cloud-Services eine Silverpop-Konfiguration zu erstellen:
 
-1. Tippen oder klicken Sie in AEM auf **Tools**> **Bereitstellung** > **Cloud-Services**. (Oder direkt auf `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Tippen oder klicken Sie in AEM auf **Tools**> **Bereitstellung** > **Cloud-Services**. (Or directly access at `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Under third-party services, click **Silverop Engage** and then **Configure**. Das Fenster für die Silverpop-Konfiguration wird geöffnet.
 
    >[!NOTE]
@@ -86,6 +89,7 @@ Gehen Sie wie folgt vor, um die API-Endpunkte zu konfigurieren:
 
    1. **Name**: `text`, **Typ**: `String`, **Wert**: `Engage 0`
    1. **Name**: `value`, **Typ**: `String`, **Wert**: `https://api0.silverpop.com`
+
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
    Klicken Sie auf die Schaltfläche „Alle speichern“.
@@ -101,7 +105,7 @@ Gehen Sie wie folgt vor, um die API-Endpunkte zu konfigurieren:
 
    | **Knotenname** | **Vorhandener Endpunktwert** | **Neuer Endpunktwert** |
    |---|---|---|
-   | sp-e1 | https://api.engage2.silverpop.com/XMLAPI | https://api1.silverpop.com |
+   | sp-e1 | https://api.engage1.silverpop.com/XMLAPI | https://api1.silverpop.com |
    | sp-e2 | https://api.engage2.silverpop.com/XMLAPI | https://api2.silverpop.com |
    | sp-e3 | https://api.engage3.silverpop.com/XMLAPI | https://api3.silverpop.com |
    | sp-e4 | https://api.engage4.silverpop.com/XMLAPI | https://api4.silverpop.com |
