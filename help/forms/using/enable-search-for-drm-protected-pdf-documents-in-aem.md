@@ -38,7 +38,7 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
    * For AEM Forms on OSGi, the bundles are listed at `https://[server]:[port]/system/console/bundles`.
    * For AEM Forms on JEE, the bundles are listed at `https://[server]:[port]/[context-path]/system/console/bundles`. Beispiel `http://localhost:8080/lc/system/console/bundles`.
 
-* Add the *sun.util.calendar* package to the allowlist. So fügen Sie das Paket der zulassungsliste hinzu:
+* Add the *sun.util.calendar* package to the allowlist. So fügen Sie das Paket der Zulassungsliste hinzu:
 
    1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
