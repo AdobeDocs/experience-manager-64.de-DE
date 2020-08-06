@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 75%
 
 ---
 
@@ -51,7 +54,7 @@ Im Rahmen des Gesetzes über Informationsfreiheit beantragt Sarah eine Kopie der
 
 Sarah clicks **Apply** and in the Freedom of Information Act Request Form page, Sarah enters information including the following:
 
-* **** Agentur: Sarah gibt die Agentur an, an die der Antrag gerichtet wurde, als Justizministerium - Amt für Informationspolitik.
+* **Agentur:** Sarah gibt die Agentur an, an die der Antrag gerichtet wurde, als &quot;Justizministerium - Amt für Informationspolitik&quot;.
 
 * **Will Pay Up To** (Zahle bis zu): Sarah gibt an, dass sie bereit ist, bis zu 100 USD für Druck- und Portoausgaben zu zahlen.
 * **Bitte beschreiben Sie die Anforderung im Detail**: Sarah gibt an, dass &quot;für die Steuerjahre 2013 bis 2016 eine Kopie der Fallprotokolle der Administration für Kinder und Familien angefordert werden muss&quot;.
@@ -76,7 +79,7 @@ Wenn Sarah den FOIA-Antrag ausfüllt und abschickt, wird eine Aufzeichnung davon
 
 ### Sehen Sie selbst{#see-it-yourself-1} 
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit &quot;jjacobs/password&quot;als Benutzername/Kennwort für John Jacobs an und lesen Sie die FOIA-Anwendung. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit &quot;jjacobs/password&quot;als Benutzername/Kennwort für John Jacobs an und sehen Sie sich die FOIA-Anwendung an. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -102,7 +105,7 @@ Wenn John Jacobs den FOIA-Antrag genehmigt, wird ein PDF-Dokument oder ein Daten
 
 ### Sehen Sie selbst {#see-for-yourself}
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit grios/password als Benutzername/Kennwort für Gloria Rios an und lesen Sie die FOIS-Anforderung.
+Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM-Posteingang an und sehen Sie sich die FOIS-Anforderung an.
 
 Gloria öffnet den Antrag und sieht sich die Details an. Nach Prüfung der Antragsdetails und der Durchführbarkeit der Bereitstellung der erforderlichen Unterlagen genehmigt Gloria den Antrag.
 
