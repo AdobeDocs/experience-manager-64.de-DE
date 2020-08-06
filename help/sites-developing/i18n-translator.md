@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '2345'
+ht-degree: 83%
 
 ---
 
@@ -141,7 +144,7 @@ Gehen Sie wie folgt vor, um eine Zeichenfolge hinzuzufügen:
    ![chlimage_1-209](assets/chlimage_1-209.png)
 
 1. Geben Sie im Feld „Zeichenfolge“ des Dialogfelds „Zeichenfolge hinzufügen“ die englische Zeichenfolge ein. Geben Sie bei Bedarf im Kommentarfeld einen Übersetzungshinweis für den Übersetzer ein.
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 1. Klicken Sie auf Speichern.
 
    ![chlimage_1-210](assets/chlimage_1-210.png)
@@ -174,8 +177,8 @@ Gehen Sie wie folgt vor, um eine Zeichenfolge aus einem Wörterbuch zu entfernen
 
 Die Suchleiste am unteren Rand des Übersetzertools bietet verschiedene Auswahloptionen für Zeichenfolgen:
 
-* **** Nach Text filtern: Ein Muster, das mit der englischen Zeichenfolge, dem englischen Kommentar oder den Übersetzungen übereinstimmt. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
-* **** Änderungen: Beliebige, modifizierte, neue, gelöschte: Zeigt Elemente an, die geändert und nicht gespeichert wurden.
+* **Nach Text filtern:** Ein Muster, das mit der englischen Zeichenfolge, dem englischen Kommentar oder den Übersetzungen übereinstimmt. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
+* **Änderungen: Beliebige, modifizierte, neue, gelöschte:** Zeigt Elemente an, die geändert und nicht gespeichert wurden.
 
    * Beliebig: Zeigt Elemente an, die geändert, hinzugefügt oder entfernt wurden.
    * Geändert: Zeigt geänderte Elemente an.
@@ -209,9 +212,11 @@ Nachdem Sie die englische Zeichenfolge einem Wörterbuch hinzugefügt haben, kö
 1. Die übersetzten Texte für die Zeichenfolgen können wie folgt bearbeitet werden:
 
    * doppelt auf die entsprechende Sprache für die gewünschte Zeichenfolge klicken, um diesen einzelnen Text zu bearbeiten, oder
+
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
    * doppelt auf die Felder **Zeichenfolge** oder **Kommentar** klicken, damit die gewünschte Zeichenfolge im Dialogfenster **Zeichenfolge bearbeiten** geöffnet wird, die Übersetzungen nach Bedarf bearbeiten und schließlich auf **OK** klicken, um das Dialogfeld zu schließen.
+
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
 1. Klicken Sie auf der Symbolleiste auf **Speichern**, um die Änderungen zu übernehmen.
@@ -291,6 +296,7 @@ Gehen Sie wie folgt vor, um Sprachen hinzuzufügen oder zu entfernen:
 
       * fr
       * es
+
    >[!NOTE]
    >
    >Die Sprachcodes müssen in Kleinbuchstaben geschrieben sein.
