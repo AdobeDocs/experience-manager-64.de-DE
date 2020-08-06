@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 Das Skript `start` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl die Unix- als auch die Windows-Version wird bereitgestellt. Das Skript startet die im Verzeichnis *&lt;cq-installation>* installierte Instanz.
 
-Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum Beginn und zur Abstimmung der AEM-Instanz verwendet werden können.
+Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum Beginn und zur Abstimmung der AEM verwendet werden können.
 
 <table> 
  <tbody> 
