@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +43,7 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
 
    * **Asset Path**: Pfad für das Repository, in dem das Asset gespeichert ist.
    * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Wiedergabetyp „Auto“ erkennt die Benutzerumgebung und gibt das Formular entsprechend im HTML- oder PDF-Format wieder. Wenn das Formular beispielsweise auf einem Mobilgerät aufgerufen wird, gibt der Wiedergabetyp „Auto“ das Formular im HTML-Format wieder.
-   * **** Sende-URL:  URL zum Servlet, an das die Formulardaten gesendet werden.
+   * **Sende-URL:**  URL zum Servlet, an das die Formulardaten gesendet werden.
    * **HTML Profile**: Profil für die Wiedergabe des Formulars im HTML-Format.
    * **PDF Profile**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
 
