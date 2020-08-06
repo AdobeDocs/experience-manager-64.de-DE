@@ -26,7 +26,7 @@ Sie können das Keytool mit einem einzelnen Befehl ausführen, der alle zum Erst
 
 In diesem Verfahren gilt:
 
-* `[appserver root]` ist der Basisordner des Anwendungsservers, auf dem AEM Forms ausgeführt wird.
+* `[appserver root]` ist der Basisordner des Anwendungsservers, auf dem AEM Formulare ausgeführt werden.
 * `[type]` ist ein Ordnername, der je nach der von Ihnen ausgeführten Installation variiert.
 
 ## SSL-Berechtigung erstellen {#create-an-ssl-credential}
