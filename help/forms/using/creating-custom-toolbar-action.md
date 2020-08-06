@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +43,7 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
 
    ![Hierarchie der Knoten zur Anpassung der Symbolleiste](assets/action3.png)
 
-1. Wählen Sie `cq:template` Knoten in `reviewbeforesubmit` Knoten. Ensure that the value of `guideNodeClass` property is `guideButton` and change `jcr:title` property accordingly.
+1. Wählen Sie `cq:template` Knoten in `reviewbeforesubmit` Knoten aus. Ensure that the value of `guideNodeClass` property is `guideButton` and change `jcr:title` property accordingly.
 1. Change the type property in the `cq:Template` node. Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
 
    Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzer können diese CSS-Klasse verwenden, um ihre Aktionen zu formatieren. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
