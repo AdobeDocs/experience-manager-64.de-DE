@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Social-Diagrammen
 seo-title: Grundlagen zu Social-Diagrammen
-description: Komponente folgen und folgende Komponentenübersicht
-seo-description: Komponente folgen und folgende Komponentenübersicht
+description: Folgen Sie der Komponente und der folgenden Komponentenübersicht
+seo-description: Folgen Sie der Komponente und der folgenden Komponentenübersicht
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 12%
 
 ---
 
@@ -61,8 +64,8 @@ The `following`component lists the members that are either following the current
      <li>Type: Boolean</li> 
      <li>Wert:<br /> 
       <ul> 
-       <li><i>true </i>- die <code>following</code> Komponente listet die Mitglieder auf, die das derzeit angemeldete Mitglied sind <code>follows</code></li> 
-       <li><i>false </i>- die <code>following</code> Komponente listet die Mitglieder auf, <code>follow </code>die das derzeit angemeldete Mitglied sind</li> 
+       <li><i>true </i>- die <code>following</code> Komponente Liste die Mitglieder, die das derzeit angemeldete Mitglied sind <code>follows</code></li> 
+       <li><i>false </i>- die <code>following</code> Komponente Liste die Mitglieder, <code>follow </code>die das derzeit angemeldete Mitglied sind</li> 
       </ul> </li> 
     </ul> <p>Wenn die Eigenschaft fehlt, wird standardmäßig <i>true</i> verwendet. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz des <code>following </code>Knotens mit <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>hinzugefügt werden.</p> </td> 
   </tr>
