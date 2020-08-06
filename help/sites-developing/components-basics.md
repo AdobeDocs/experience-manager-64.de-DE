@@ -73,7 +73,7 @@ Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider V
 
 >[!NOTE]
 >
->Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration vereinfachen.
+>Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration erleichtern.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
@@ -110,7 +110,7 @@ Die Komponenten, die Inhalte rendern, müssen auf derselben AEM-Instanz bereitge
 
 Mit den folgenden Tools können Sie Ihre Komponenten in die Veröffentlichungsinstanz verschieben:
 
-* [Verwenden Sie Package Manager](/help/sites-administering/package-manager.md) , um Ihre Komponenten einem Paket hinzuzufügen und in eine andere AEM-Instanz zu verschieben.
+* [Verwenden Sie Package Manager](/help/sites-administering/package-manager.md) , um Ihre Komponenten einem Paket hinzuzufügen und in eine andere AEM Instanz zu verschieben.
 * [Mit dem Replikationstool „Tree aktivieren“](/help/sites-authoring/publishing-pages.md#manage-publication) können Sie die Komponenten replizieren.
 
 >[!NOTE]
