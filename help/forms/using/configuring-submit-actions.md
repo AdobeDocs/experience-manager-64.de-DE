@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 translation-type: tm+mt
 source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 78%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßige Übermittlungsaktion kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten.
 
-Wenn ein Formular vorausgefüllt oder gesendet wird, werden die gesendeten Daten über AEM zur Datenmassage in Zwischenformate weitergeleitet. Daten werden nicht auf einer AEM-Instanz gespeichert, es sei denn, das adaptive Formular verwendet Adobe Sign, verify, Forms Portal draft or submit oder AEM Workflows
+Wenn ein Formular vorausgefüllt oder gesendet wird, werden die gesendeten Daten AEM für die Datenmassage in Zwischenformate weitergeleitet. Daten werden nicht auf einer AEM gespeichert, es sei denn, das adaptive Formular verwendet Adobe Sign, verifizieren, Formularportalentwurf oder Senden oder AEM Workflows
 
 Sie können eine Sendeaktion in der Seitenleiste im Bereich **[!UICONTROL Senden]** des „Container für adaptive Formulare“ konfigurieren.
 
-![](assets/thank-you-setting.png) Konfigurieren der Übermittlungsaktion **** Abbildung: Übermittlungsaktion *konfigurieren*
+![Konfigurieren der Übermittlungsaktion](assets/thank-you-setting.png)**Abbildung:** *Übermittlungsaktion konfigurieren*
 
 Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmäßig zur Verfügung:
 
@@ -146,7 +149,7 @@ Alle sofort einsetzbaren Feldvalidierungen eines adaptiven Formulars, die erneut
 
 Verwenden Sie das Kontrollkästchen **Auf dem Server erneut überprüfen** im „Container für adaptive Formulare“ in der Seitenleiste, um die serverseitige Validierung für das aktuelle Formular zu aktivieren oder zu deaktivieren.
 
-![](assets/revalidate-on-server.png) Aktivieren der serverseitigen Validierung **** Abbildung: Serverseitige *Validierung aktivieren*
+![Aktivieren der serverseitigen Validierung](assets/revalidate-on-server.png)**Abbildung:** *Aktivieren der serverseitigen Validierung*
 
 Wenn der Endbenutzer diese Validierungen umgeht und die Formulare übermittelt, führt der Server die Validierung erneut aus. Wenn die Überprüfung serverseitig fehlschlägt, wird die Übermittlung abgebrochen. Dem Endbenutzer wird wieder das ursprüngliche Formular präsentiert. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt. 
 
@@ -154,7 +157,7 @@ Wenn der Endbenutzer diese Validierungen umgeht und die Formulare übermittelt, 
 
 Bisweilen befindet sich bei komplexen **Validierungsregeln** das exakte Validierungsskript in den benutzerdefinierten Funktionen. Der Autor kann diese benutzerdefinierten Funktionen über den Ausdrück für die Feldvalidierung abrufen. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **[!UICONTROL Basic]** tab of Adaptive Form Container properties as shown below.
 
-![](assets/clientlib-cat.png) Unterstützende benutzerdefinierte Funktionen in der **** Abbildung &quot;Überprüfungsausdrücke&quot;: Unterstützung *benutzerdefinierter Funktionen in Überprüfungsausdrücken*
+![Unterstützende benutzerdefinierte Funktionen in Validation Ausdrucks](assets/clientlib-cat.png)**Abbildung:** *Unterstützende benutzerdefinierte Funktionen in Validierungs-Ausdrücken*
 
 Autor kann benutzerdefinierte JavaScript-Bibliothek pro adaptivem Formular konfigurieren. Bewahren Sie in der Bibliothek nur die wiederverwendbaren Funktionen, die von den Drittanbieter-Bibliotheken „jquery“ und „underscore“ abhängen.
 
