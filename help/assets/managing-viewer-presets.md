@@ -1,8 +1,8 @@
 ---
-title: Verwalten von Dynamic Media-Viewer-Vorgaben
-seo-title: Verwalten von Dynamic Media-Viewer-Vorgaben
-description: Erstellen und Verwalten von Viewer-Vorgaben für Dynamic Media
-seo-description: Erstellen und Verwalten von Viewer-Vorgaben für Dynamic Media
+title: Verwalten von Viewer-Vorgaben für dynamische Medien
+seo-title: Verwalten von Viewer-Vorgaben für dynamische Medien
+description: Erstellen und Verwalten von Viewer-Vorgaben für dynamische Medien
+seo-description: Erstellen und Verwalten von Viewer-Vorgaben für dynamische Medien
 uuid: 31ef7a4e-2053-43b5-ac6c-cdc4b30c3914
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -14,14 +14,14 @@ translation-type: tm+mt
 source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
 source-wordcount: '4247'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
 
 # Managing Dynamic Media viewer presets {#managing-viewer-presets}
 
-Eine Viewer-Vorgabe für Dynamic Media ist eine Zusammenstellung von Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computerbildschirmen und Mobilgeräten Ansicht haben. Administratoren können Viewer-Vorgaben erstellen. Einstellungen sind für eine Vielzahl an Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Viewer-Anzeigegröße oder das Zoomverhalten ändern.
+Eine Viewer-Vorgabe für dynamische Medien ist eine Zusammenstellung von Einstellungen, mit denen festgelegt wird, wie Rich-Media-Assets auf den Computerbildschirmen und Mobilgeräten Ansicht werden. Administratoren können Viewer-Vorgaben erstellen. Einstellungen sind für eine Vielzahl an Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Viewer-Anzeigegröße oder das Zoomverhalten ändern.
 
 For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. Das SDK ist auf dem im SDK eingebetteten IS-Veröffentlichungsserver verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
 
@@ -36,7 +36,7 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 >
 >Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorhandenen Viewer-Vorgaben* als Szenario nicht unterstützt wird.  Wenn Sie versuchen, eine standardmäßig vorhandene Viewer-Vorgabe zu bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern. 
 
-## Möglichkeit des Zugriffs auf die Tastatur im Viewer     {#keyboard-accessibility-for-viewers}
+## Möglichkeit des Zugriffs auf die Tastatur im Viewer         {#keyboard-accessibility-for-viewers}
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
@@ -52,7 +52,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 >
 >Standardmäßig zeigt das System 15 Viewer-Vorgaben, wenn Sie in einer Detailansicht eines Assets „Viewer“ auswählen.  Sie können diese Grenze erhöhen. Siehe [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](#increasing-the-number-of-viewer-presets-that-display).
 
-## Viewer-Unterstützung für Web-Seiten mit responsivem Design      {#viewer-support-for-responsive-designed-web-pages}
+## Viewer-Unterstützung für Web-Seiten mit responsivem Design          {#viewer-support-for-responsive-designed-web-pages}
 
 Unterschiedliche Webseiten haben unterschiedliche Anforderungen.  Mitunter möchten Sie vielleicht, dass eine Webseite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browserfenster öffnet.  In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Hostseite einzubetten. In letzterem Fall kann die Webseite ein statisches Layout aufweisen.  Or, it may be *responsive* and display differently on different devices or for different browser window sizes. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Webseiten. 
 
@@ -100,7 +100,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
 
 ## List of out-of-the-box viewer presets {#list-of-out-of-the-box-viewer-presets}
 
-In der folgenden Tabelle sind alle vordefinierten, sofort einsetzbaren Viewer-Vorgaben aufgeführt, die mit Dynamic Media geliefert werden.
+In der folgenden Tabelle sind alle vordefinierten, sofort einsetzbaren Viewer-Vorgaben aufgeführt, die mit dynamischen Medien geliefert werden.
 
 Siehe auch [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -162,7 +162,7 @@ In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf i
 
 AEM zeigt verschiedene Viewer-Vorgaben an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Viewer]** anzeigen. Sie können die Anzahl der angezeigten Viewer erhöhen oder verringern.
 
-**So erhöhen Sie die Anzahl der anzuzeigenden** Dynamic Media-Viewer-Vorgaben:
+**So erhöhen Sie die Anzahl der anzuzeigenden** Viewer-Vorgaben für dynamische Medien:
 
 1. Navigate to **[!UICONTROL CRXDE Lite]** ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten mit der Viewer-Vorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -177,7 +177,7 @@ AEM zeigt verschiedene Viewer-Vorgaben an, wenn Sie ein Asset unter **[!UICONTRO
 1. In the **[!UICONTROL limit]** property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tippen Sie auf **[!UICONTROL Alle speichern]**.
 
-## Erstellen einer neuen Viewer-Vorgabe für Dynamic Media {#creating-a-new-viewer-preset}
+## Erstellen einer neuen Viewer-Vorgabe für dynamische Medien {#creating-a-new-viewer-preset}
 
 Durch Erstellen von Viewer-Vorgaben können Sie verschiedene Einstellungen anwenden, um Assets anzuzeigen und mit diesen zu interagieren.  Sie müssen jedoch keine neuen Viewer-Vorgaben erstellen.  Wenn Sie dies bevorzugen, können Sie auch die bereits standardmäßig in AEM Assets verfügbaren Viewer-Vorgaben verwenden. 
 
@@ -189,7 +189,7 @@ Siehe [Besondere Hinweise zum Erstellen von Vorgaben für interaktive Viewer](#s
 
 Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner](#special-considerations-for-creating-a-carousel-banner-viewer-preset). 
 
-**So erstellen Sie eine neue Viewer-Vorgabe** für Dynamic Media:
+**So erstellen Sie eine neue Viewer-Vorgabe** für dynamische Medien:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 
@@ -219,7 +219,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
         Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema *Anpassen des &lt;Viewer-Name>-Viewers* im [Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema Anpassen des *&lt;Viewer-Name>*-Viewers im [Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
    >[!NOTE]
    >
    >Wenn Sie CSS lieber direkt im Rohformat bearbeiten möchten, tippen Sie im Pulldown-Menü „Ausgewählter Typ“ auf **[!UICONTROL CSS ein-/ausblenden]** (Sie müssen ggf. im Visual Editor nach oben blättern, um diese Option anzuzeigen).****
@@ -249,7 +249,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
-## Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos      {#special-considerations-for-creating-an-interactive-viewer-preset}
+## Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos          {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Wissenswertes über Anzeigemodi für Bildminiaturansichten im Anzeigefeld** 
 
@@ -303,11 +303,11 @@ Beim Erstellen von Viewer-Vorgaben für Karussellbanner kann der Stil von Hotspo
 |---|---|---|
 | **Hotspot-Symbol** | Ändern des für Hotspots verwendeten Symbols | Um das Bild des Hotspot-Symbols zu ändern, tippen Sie auf der Registerkarte **[!UICONTROL Erscheinungsbild]** in **[!UICONTROL Ausgewählte Komponente]** auf **[!UICONTROL ImageMapEffect]**. Wählen Sie unter **[!UICONTROL Symbol]** die Option **[!UICONTROL Hintergrund]** und navigieren Sie im Feld **[!UICONTROL Bild]** zum gewünschten Hintergrundbild. |
 
-## Aktivieren oder Deaktivieren von Dynamic Media-Viewer-Vorgaben {#activating-or-deactivating-viewer-presets}
+## Aktivieren oder Deaktivieren von Viewer-Vorgaben für dynamische Medien {#activating-or-deactivating-viewer-presets}
 
 Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche Vorgaben im Autorenmodus aktiviert wurden. By default, a viewer preset is *On* after you create it. Wenn Sie die Vorgabe deaktivieren möchten, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird. Sie wird immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert wurde. Sie können die Viewer-Vorgaben deaktivieren, wenn die Liste zu schwerfällig wird oder wenn keine Viewer-Vorgabe zur Verfügung gestellt werden soll.
 
-**So aktivieren oder deaktivieren Sie Dynamic Media-Viewer-Vorgaben**:
+**So aktivieren oder deaktivieren Sie die Viewer-Vorgaben** für dynamische Medien:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. On the **[!UICONTROL Viewer Preset]** page, under the **[!UICONTROL State]** column header, tap the toggle to activate or deactivate a viewer preset.
@@ -324,7 +324,7 @@ Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactiva
 
 Siehe auch [Anzeigen von Assets in einer Vorschau](previewing-assets.md).
 
-**So veröffentlichen Sie Dynamic Media-Viewer-Vorgaben**:
+**So veröffentlichen Sie Viewer-Vorgaben** für dynamische Medien:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus. 
@@ -332,7 +332,7 @@ Siehe auch [Anzeigen von Assets in einer Vorschau](previewing-assets.md).
 
 ## Sorting Dynamic Media viewer presets {#sorting-viewer-presets}
 
-**So sortieren Sie Dynamic Media-Viewer-Vorgaben**:
+**So sortieren Sie die Viewer-Vorgaben** für dynamische Medien:
 
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) **[!UICONTROL > Assets > Viewer-Vorgaben]**.
 1. Klicken Sie auf **[!UICONTROL Vorgabentitel]**, **[!UICONTROL Typ]**, **[!UICONTROL Veröffentlicht]** oder **[!UICONTROL Status]**, um nach dieser Spaltenüberschrift zu sortieren. Klicken Sie beispielsweise auf **[!UICONTROL Typ]**, um die Viewer-Vorgabentypen in alphabetischer oder in umgekehrt alphabetischer Reihenfolge zu sortieren. 
@@ -341,7 +341,7 @@ Siehe auch [Anzeigen von Assets in einer Vorschau](previewing-assets.md).
 
 Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorhandenen Viewer-Vorgaben* als Szenario nicht unterstützt wird.  Wenn Sie eine standardmäßig vorhandene Viewer-Vorgabe bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern. 
 
-**So bearbeiten Sie Dynamic Media-Viewer-Vorgaben**:
+**So bearbeiten Sie Viewer-Vorgaben** für dynamische Medien:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. Wählen Sie eine Vorgabe aus, indem Sie das Kontrollkästchen links neben dem Viewer-Vorgabentitel aktivieren. 
@@ -352,11 +352,11 @@ Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorh
    * Tippen Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern und zur Seite „Viewer-Vorgabe“ zurückzukehren.****
    * Tippen Sie auf **[!UICONTROL Abbrechen]**, um alle von Ihnen vorgenommenen Änderungen rückgängig zu machen und zur Seite „Viewer-Vorgaben“ zurückzukehren.****
 
-## Löschen von Viewer-Vorgaben für benutzerdefinierte Dynamic Media {#deleting-custom-viewer-presets}
+## Löschen von benutzerdefinierten Viewer-Vorgaben für dynamische Medien {#deleting-custom-viewer-presets}
 
 Sie können Viewer-Vorgaben löschen, die Sie erstellt und Dynamic Media hinzugefügt haben.
 
-**So löschen Sie benutzerdefinierte Dynamic Media-Viewer-Vorgaben**:
+**So löschen Sie benutzerdefinierte Viewer-Vorgaben** für dynamische Medien:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. On the **[!UICONTROL Viewer Presets]** page, check a **[!UICONTROL Preset Title]**, and then tap the **[!UICONTROL Trash]** icon.
@@ -366,7 +366,7 @@ Sie können Viewer-Vorgaben löschen, die Sie erstellt und Dynamic Media hinzuge
 
 Wenn Sie das Asset und den ausgewählten Viewer bereits veröffentlicht haben, werden nach Auswahl einer Viewer-Vorgabe die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL Einbetten]** angezeigt.
 
-**So wenden Sie eine Dynamic Media-Viewer-Vorgabe auf ein Asset** an
+**So wenden Sie eine Viewer-Vorgabe für dynamische Medien auf ein Asset** an
 
 1. Öffnen Sie das Asset, tippen Sie in der Nähe des oberen linken Bereichs der Seite auf das Dropdown-Menü und wählen Sie **[!UICONTROL Viewer]** aus.
 
@@ -378,7 +378,7 @@ Wenn Sie das Asset und den ausgewählten Viewer bereits veröffentlicht haben, w
 
    Sie können die [URL kopieren, um sie für andere Benutzer freizugeben](linking-urls-to-yourwebapplication.md). 
 
-## Bereitstellen von Assets mit Dynamic Media-Viewer-Vorgaben {#delivering-assets-with-viewer-presets}
+## Bereitstellen von Assets mit Viewer-Vorgaben für dynamische Medien {#delivering-assets-with-viewer-presets}
 
 Informationen zum Abrufen der URLs für Viewer-Vorgaben finden Sie unter [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md). Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Webseite](embed-code.md).
 
