@@ -23,7 +23,7 @@ ht-degree: 84%
 
 Gehen Sie folgendermaßen vor, um ein adaptives Formular zu erstellen.
 
-1. Zugriff auf die Autoreninstanz von AEM Forms unter `https://[server]:[port]/<custom-context-if-any>.`
+1. Zugriff auf AEM Forms Authoring-Instanz unter `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -148,7 +148,7 @@ Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmode
 
 ## Adaptive Formularvorlagen {#adaptive-form-templates}
 
-Eine Vorlage bietet eine Grundstruktur für adaptive Formulare und definiert deren Erscheinungsbild (Layouts und Stile). Sie enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Standardmäßig stellt AEM Forms einige adaptive Formularvorlagen bereit. Um das vollständige Vorlagenpaket einschließlich erweiterter Vorlagen zu erhalten, müssen Sie das Add-On-Paket für AEM Forms installieren. For more information, see [Installing AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+Eine Vorlage bietet eine Grundstruktur für adaptive Formulare und definiert deren Erscheinungsbild (Layouts und Stile). Sie enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Standardmäßig stellt AEM Forms einige adaptive Formularvorlagen bereit. Um das vollständige Vorlagenpaket einschließlich erweiterter Vorlagen zu erhalten, müssen Sie das AEM Forms Add-On-Paket installieren. For more information, see [Installing AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 Darüber hinaus können Sie den Vorlageneditor verwenden, um eigene Vorlagen zu erstellen. Weitere Informationen zu Vorlagen finden Sie unter [Adaptive Formularvorlagen](/help/forms/using/template-editor.md).
 
