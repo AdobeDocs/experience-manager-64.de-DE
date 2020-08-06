@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 75%
 
 ---
 
@@ -72,33 +75,33 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **MBean-Struktur**
 
-**** Adobe-Domänenname: Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Domänenname der Adobe:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
 
-**** ServiceType: AdobeService ist der Name, mit dem alle Dienste aufgelistet werden.
+**ServiceType:** AdobeService ist der Name, der zur Liste aller Dienste verwendet wird.
 
-**** AdobeServiceName: Dienstname oder Dienst-ID.
+**AdobeServiceName:** Dienstname oder Dienst-ID.
 
-**** Version: Version des Dienstes.
+**Version:** Version des Dienstes.
 
 **Vorgangsstatistiken**
 
-**** Aufrufzeit: Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
+**Aufrufzeit:** Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
 
-**** Anzahl der Aufrufe: Die Häufigkeit, mit der der Dienst aufgerufen wird.
+**Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
 
-**** Durchschnittliche Aufrufzeit: Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
+**Durchschnittliche Aufrufzeit:** Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
 
-**** Max. Aufrufzeit: Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
+**Max. Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**** Min. Aufrufzeit: Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
+**Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**** Ausnahmeanzahl: Anzahl der Aufrufe, die zu Fehlern führten.
+**Ausnahmeanzahl:** Anzahl der Aufrufe, die zu Fehlern führten.
 
-**** Ausnahmemeldung: Die Fehlermeldung der letzten aufgetretenen Ausnahme.
+**Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
 
-**** Datum der letzten Probenahme: Das Datum des letzten Aufrufs.
+**Datum der letzten Probenahme:** Das Datum des letzten Aufrufs.
 
-**** Zeiteinheit: Der Standardwert ist Millisekunde.
+**Zeiteinheit:** Der Standardwert ist Millisekunde.
 
 Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
 
