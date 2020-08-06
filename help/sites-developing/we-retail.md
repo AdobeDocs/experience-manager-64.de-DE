@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 89%
 
 ---
 
@@ -34,10 +37,10 @@ Als standardmäßige AEM-Referenzimplementierung demonstriert We.Retail einige d
 | [Globalisierte Site-Struktur](/help/sites-administering/tc-bp.md) | We.Retail beinhaltet Sprach-Master, die als Live Copy in länderspezifische Sites kopiert werden. | [Jetzt testen!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Responsives Layout](/help/sites-authoring/responsive-layout.md) | Alle Seiten verfügen über ein responsives Layout, das sich dynamisch an die Bildschirm- und Gerätegröße anpasst. | [Jetzt testen!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) | Alle Seiten basieren auf bearbeitbaren Vorlagen, sodass auch Benutzer, die keine Entwickler sind, die Vorlagen anpassen können. | [Jetzt testen!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML-Vorlagensprache](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | Alle Komponenten basieren auf HTL. |  |
+| [HTML-Vorlagensprache](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) | Alle Komponenten basieren auf HTL. |  |
 | [eCommerce-Funktionen](/help/sites-developing/ecommerce.md) | Umfassen einen Produktkatalog. |  |
 | [Communities-Sites](/help/communities/overview.md) | Besucher können an Community-Diskussionen teilnehmen, Blogs lesen und vieles mehr. |  |
-| [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
+| [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
 | [Inhaltsfragmente](/help/assets/content-fragments.md) | Der Abschnitt „We.Retail Experiences“ veranschaulicht, wie sich über Inhalte mithilfe von Inhaltfragmenten wirkungsvoll wiederverwenden lassen. | [Jetzt testen!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) | Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. | [Jetzt testen!](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -82,16 +85,16 @@ Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen be
 | Globalisierte Site-Struktur | Sprachmaster live kopiert in länderspezifische Sites | Nicht verfügbar |
 | Inhaltsfragmente | Verfügbar | Nicht verfügbar |
 | Experience Fragments | Verfügbar | Nicht verfügbar |
-| Responsives Layout | Für alle Seiten | Nur Geometrixx-Medien |
+| Responsives Layout   | Für alle Seiten | Nur Geometrixx Media |
 | Bearbeitbare Vorlagen | Für alle Seiten | Nicht verfügbar |
 | HTL | Alle Komponenten | Limited |
-| Targeting | Für alle Seiten | Nur Geometrixx im Freien |
+| Targeting | Für alle Seiten | Nur Geometrixx Outdoors |
 | Screens | Verfügbar | Nicht verfügbar |
 | Mobilgerät | Nicht verfügbar | Verfügbar |
 | Manuskripte | Nicht verfügbar | Verfügbar |
 | Karussell, Download, Diagrammkomponenten | Nicht verfügbar | Verfügbar |
 | Spaltensteuerung | Ersetzt durch Layout-Container | Verfügbar |
-| Forms | Nicht verfügbar | Verfügbar |
+| Formulare | Nicht verfügbar | Verfügbar |
 | Campaign | Keine E-Mail-Beispiele | Verfügbar |
 
 >[!NOTE]
