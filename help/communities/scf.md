@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 0%
 
 ---
 
@@ -30,15 +33,15 @@ Vorteile des Rahmens:
 
 Entdecken Sie eine Instanz im Autoren- oder Veröffentlichungsmodus mithilfe des Handbuchs &quot;Interaktive [Community-Komponenten&quot;](components-guide.md).
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-In SCF besteht eine Komponente aus einem SocialComponent-POJO, einer Handlebars-JS-Vorlage (zum Rendern der Komponente) und CSS (zum Formatieren der Komponente).
+In SCF besteht eine Komponente aus einem SocialComponent-POJO, einer Handlebars-JS-Vorlage (zum Rendern der Komponente) und einem CSS (zum Formatieren der Komponente).
 
-Eine JS-Vorlage für Handlebars kann die JS-Komponenten des Modells/Ansicht erweitern, um die Benutzerinteraktion mit der Komponente auf dem Client zu verarbeiten.
+Eine Handlebars-JS-Vorlage kann die JS-Komponenten des Modells/der Ansicht erweitern, um die Benutzerinteraktion mit der Komponente auf dem Client zu verarbeiten.
 
 Wenn eine Komponente eine Datenänderung unterstützen muss, kann die Implementierung der SocialComponent-API geschrieben werden, um die Bearbeitung/Speicherung von Daten zu unterstützen, die dem Modell/den Datenobjekten in herkömmlichen Webanwendungen ähnlich sind. Darüber hinaus können Vorgänge (Controller) und ein Vorgangsdienst hinzugefügt werden, um Vorgangsanforderungen zu bearbeiten, Geschäftslogik auszuführen und die APIs auf den Modell-/Datenobjekten aufzurufen.
 
-Die SocialComponent-API kann erweitert werden, um Daten bereitzustellen, die von einem Client für eine Ansichtsebene oder einen HTTP-Client benötigt werden.
+Die SocialComponent-API kann erweitert werden, um Daten bereitzustellen, die von einem Client für eine Ansichten- oder HTTP-Client benötigt werden.
 
 ### Seitenwiedergabe für Client {#how-pages-are-rendered-for-client}
 
@@ -61,7 +64,7 @@ Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlage
 * So fügen Sie einen neuen benutzerdefinierten Vorgang hinzu
    * Neuen [Sling Post-Vorgang erstellen](server-customize.md#postoperation-class)
    * Vorhandene [OperationServices](server-customize.md#operationservice-class) nach Bedarf verwenden
-   * Fügen Sie JavaScript-Code hinzu, um Ihren Vorgang bei Bedarf von der Clientseite aus aufzurufen
+   * Hinzufügen Sie JavaScript-Code, um Ihren Vorgang bei Bedarf von der Clientseite aus aufzurufen.
 
 ## Serverseitiges Framework {#server-side-framework}
 
@@ -73,15 +76,15 @@ Die Java-APIs bieten abstrakte Klassen und Schnittstellen, die leicht geerbt ode
 
 Die Hauptklassen werden auf der Seite [Serverseitige Anpassung](server-customize.md) beschrieben.
 
-Informationen zum Arbeiten mit UGC finden Sie unter Übersicht über[ den ](srp.md)Storage Resource Provider.
+Informationen zum Arbeiten mit UGC finden Sie unter Übersicht über [den](srp.md) Datenspeicherung Resource Provider.
 
 ### HTTP-API {#http-api}
 
-Die HTTP-API unterstützt die einfache Anpassung und Auswahl von Client-Plattformen für PhoneGap-Apps, native Apps und andere Integrationen und Mashups. Darüber hinaus ermöglicht die HTTP-API es einer Community-Site, als Dienst ohne Client zu laufen, sodass Framework-Komponenten in jede Webseite integriert werden können, die auf jeder Technologie basiert.
+Die HTTP-API unterstützt die einfache Anpassung und Auswahl von Client-Plattformen für PhoneGap-Apps, native Apps und andere Integrationen und Mashups. Darüber hinaus ermöglicht die HTTP-API es einer Community-Site, als Dienst ohne Client zu laufen, sodass Framework-Komponenten in jede Webseite integriert werden können, die auf einer beliebigen Technologie basiert.
 
-### HTTP-API - GET-Anforderungen {#http-api-get-requests}
+### HTTP-API - GET Anfragen {#http-api-get-requests}
 
-Für jede SocialComponent stellt das Framework einen HTTP-basierten API-Endpunkt bereit. Der Zugriff auf den Endpunkt erfolgt durch Senden einer GET-Anforderung an die Ressource mit der Selektor + Erweiterung &quot;.social.json&quot;. Mit Sling wird der Antrag an die `DefaultSocialGetServlet`Bank übergeben.
+Für jede SocialComponent stellt das Framework einen HTTP-basierten API-Endpunkt bereit. Der Zugriff auf den Endpunkt erfolgt durch Senden einer GET an die Ressource mit der Auswahl &quot;.social.json&quot; + Erweiterung. Mit Sling wird der Antrag an die `DefaultSocialGetServlet`Bank übergeben.
 
 Die Seite `DefaultSocialGetServlet`
 
@@ -93,13 +96,13 @@ Die Seite `DefaultSocialGetServlet`
 
 **`GET Request`**
 
-Ein standardmäßiges GET-Servlet überwacht .social.json-Anforderungen, auf die die SocialComponent mit anpassbarer JSON-Datei reagiert.
+Ein standardmäßiges GET-Servlet überwacht Anforderungen vom Typ .social.json, auf die die SocialComponent mit anpassbarer JSON-Datei reagiert.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
 ### HTTP-API - POST-Anfragen {#http-api-post-requests}
 
-Zusätzlich zu den GET-Vorgängen (Lesen) definiert das Framework ein Endpunktmuster, um andere Vorgänge für eine Komponente zu aktivieren, einschließlich Erstellen, Aktualisieren und Löschen. Diese Endpunkte sind HTTP-APIs, die Eingaben akzeptieren und entweder mit HTTP-Statuscodes oder mit einem JSON-Antwortobjekt reagieren.
+Zusätzlich zu den Vorgängen &quot;GET (Lesen)&quot;definiert das Framework ein Endpunktmuster, um andere Vorgänge für eine Komponente zu aktivieren, einschließlich Erstellen, Aktualisieren und Löschen. Diese Endpunkte sind HTTP-APIs, die Eingaben akzeptieren und entweder mit HTTP-Statuscodes oder mit einem JSON-Antwortobjekt reagieren.
 
 Dieses Framework-Endpunktmuster macht CUD-Vorgänge erweiterbar, wiederverwendbar und prüfbar.
 
@@ -109,11 +112,11 @@ Für jeden SocialComponent-Vorgang gibt es eine Sling POST:operation. Die Gesch�
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
+### Datenspeicherung Resource Provider (SRP) {#storage-resource-provider-srp}
 
 Informationen zum Umgang mit im [Community Content Store](working-with-srp.md)gespeicherten UGC finden Sie unter
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP API-Dienstprogrammmethoden und Beispiele
 * [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien
 
@@ -129,7 +132,7 @@ HBS-Skripten sind einfach, logisch-frei, kompiliert auf Server und Client, leich
 
 Das Framework bietet mehrere [Handlebars-Helfer](handlebars-helpers.md) , die bei der Entwicklung von SocialComponents nützlich sind.
 
-Wenn Sling auf dem Server eine GET-Anforderung löst, identifiziert er das Skript, das zur Beantwortung der Anforderung verwendet wird. Wenn es sich bei dem Skript um eine HBS-Vorlage (.hbs) handelt, leitet Sling die Anforderung an die Handlebars-Engine weiter. Die Handlebars-Engine ruft dann die SocialComponent aus der entsprechenden SocialComponentFactory ab, erstellt einen Kontext und gibt den HTML-Code wieder.
+Wenn Sling auf dem Server eine GET auflöst, identifiziert er das Skript, das zur Beantwortung der Anforderung verwendet wird. Wenn es sich bei dem Skript um eine HBS-Vorlage (.hbs) handelt, leitet Sling die Anforderung an die Handlebars-Engine weiter. Die Handlebars-Engine ruft dann die SocialComponent aus der entsprechenden SocialComponentFactory ab, erstellt einen Kontext und gibt den HTML-Code wieder.
 
 ### Keine Zugriffsbeschränkung {#no-access-restriction}
 
@@ -139,13 +142,13 @@ Dies erfordert, dass alle HBS-Vorlagen im sling-Suchpfad (alle .hbs-Dateien unte
 
 HTTP-Zugriff auf .hbs-Dateien ist möglicherweise nicht verboten.
 
-### Hinzufügen oder Einschließen einer Communities-Komponente {#add-or-include-a-communities-component}
+### Eine Communities-Komponente Hinzufügen oder einschließen {#add-or-include-a-communities-component}
 
 Die meisten Communities-Komponenten müssen als adressierbare Sling-Ressource *hinzugefügt* werden. Einige ausgewählte Communities-Komponenten können als nicht vorhandene Ressource in eine Vorlage *aufgenommen* werden, um eine dynamische Einbindung und Anpassung des Ortes zu ermöglichen, an dem benutzergenerierte Inhalte (UGC) geschrieben werden.
 
 In beiden Fällen müssen auch die [erforderlichen Client-Bibliotheken](clientlibs.md) der Komponente vorhanden sein.
 
-**Komponente hinzufügen**
+**Hinzufügen einer Komponente**
 
 Das Hinzufügen einer Komponente bezieht sich auf den Prozess, bei dem eine Instanz einer Ressource (Komponente) hinzugefügt wird, z. B. wenn sie vom Komponenten-Browser (Sidekick) auf eine Seite im Authoring-Bearbeitungsmodus gezogen wird.
 
@@ -153,9 +156,9 @@ Das Ergebnis ist ein untergeordneter JCR-Knoten unter einem par-Knoten, der Slin
 
 **Komponente einschließen**
 
-Das Einschließen einer Komponente bezieht sich auf den Prozess, bei dem innerhalb der Vorlage eine Referenz zu einer [&quot;nicht vorhandenen&quot;Ressource](srp.md#for-non-existing-resources-ners) (kein JCR-Knoten) hinzugefügt wird, z. B. mithilfe einer Skriptsprache.
+Das Einschließen einer Komponente bezieht sich auf den Prozess des Hinzufügens eines Verweises zu einer [&quot;nicht vorhandenen&quot;Ressource](srp.md#for-non-existing-resources-ners) (kein JCR-Knoten) in der Vorlage, z. B. mithilfe einer Skriptsprache.
 
-Ab AEM 6.1 ist es möglich, die Eigenschaften der Komponente im Autorenmodus *design *mode zu bearbeiten, wenn eine Komponente dynamisch einbezogen und nicht hinzugefügt wird.
+Ab AEM 6.1 ist es möglich, die Eigenschaften der Komponente im Autorenmodus *design *mode zu bearbeiten, wenn eine Komponente dynamisch eingeschlossen und nicht hinzugefügt wird.
 
 Es können nur einige ausgewählte AEM Communities-Komponenten dynamisch eingeschlossen werden. Sie sind:
 
@@ -187,9 +190,9 @@ Eine Liste und Beschreibung der in SCF verfügbaren benutzerdefinierten Helfer f
 
 ## Clientseitiges Framework {#client-side-framework}
 
-### Modell-View JavaScript Framework {#model-view-javascript-framework}
+### Model-Ansicht Javascript Framework {#model-view-javascript-framework}
 
-Das Framework umfasst eine Erweiterung von [Backbone.js](https://www.backbonejs.org/), einem JavaScript-Framework zur Modellansicht, um die Entwicklung von Rich-Interaktive Komponenten zu erleichtern. Die objektorientierte Natur unterstützt ein erweiterbares/wiederverwendbares Framework. Die Kommunikation zwischen Client und Server wird mithilfe der HTTP-API vereinfacht.
+Das Framework umfasst eine Erweiterung von [Backbone.js](https://www.backbonejs.org/), einem JavaScript-Framework für Modellanwendungen, um die Entwicklung von Rich-Ansicht-Komponenten zu erleichtern. Die objektorientierte Natur unterstützt ein erweiterbares/wiederverwendbares Framework. Die Kommunikation zwischen Client und Server wird mithilfe der HTTP-API vereinfacht.
 
 Das Framework nutzt serverseitige Handlebars-Vorlagen, um die Komponenten für den Client wiederzugeben. Die Modelle basieren auf den JSON-Antworten, die von der HTTP-API generiert wurden. Die Ansichten binden sich an HTML, das von den Handlebars-Vorlagen generiert wurde, und bieten Interaktivität.
 
@@ -198,8 +201,8 @@ Das Framework nutzt serverseitige Handlebars-Vorlagen, um die Komponenten für d
 Die folgenden Konventionen werden zur Definition und Verwendung von CSS-Klassen empfohlen:
 
 * Verwenden Sie eindeutig benannte CSS-Klassenselektornamen und vermeiden Sie generische Namen wie &quot;heading&quot;, &quot;image&quot;usw.
-* Definieren Sie spezifische Stile für Klassenauswahl, damit die CSS-Stylesheets mit anderen Elementen und Stilen auf der Seite gut funktionieren. Beispiel: `.social-forum .topic-list .li { color: blue; }`
-* CSS-Klassen für die Formatierung getrennt von CSS-Klassen für UX, die von JavaScript gesteuert werden
+* Definieren Sie spezifische Stile für Klassenselektoren, damit die CSS-Stylesheets mit anderen Elementen und Stilen auf der Seite gut funktionieren. Beispiel: `.social-forum .topic-list .li { color: blue; }`
+* CSS-Klassen für die Formatierung getrennt von CSS-Klassen für UX, die von JavaScript gesteuert werden, beibehalten
 
 ### Clientseitige Anpassungen {#client-side-customizations}
 
