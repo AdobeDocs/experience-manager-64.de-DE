@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 28582d42-ef24-4ca1-98e6-e02248fc9dea
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ In dieser Dokumentation wird beschrieben, wie Sie mit Adobe Campaign arbeiten k�
 * Adobe Campaign Classic
 * Adobe Campaign Standard, erhältlich als Lizenzabonnement.
 
-Beachten Sie Folgendes
+Beachten Sie Folgendes:
 
 * [Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard](/help/sites-authoring/campaign.md)
 * [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md)
