@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 70%
 
 ---
 
@@ -29,14 +32,16 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
 
 1. Touch-optimierte Benutzeroberfläche
 
-   * Dies ist die moderne, standardmäßige AEM-Benutzeroberfläche.
+   * Dies ist die moderne, standardmäßige AEM Benutzeroberfläche.
    * Sie ist überwiegend in Grau gehalten und zeichnet sich durch ihre klare und minimalistische Gestaltung aus.
    * Sie ist für die Verwendung auf Touch- und Desktop-Geräten konzipiert, entsprechend ist das Aussehen und Verhalten auf allen Geräten gleich. Geringfügige Unterschiede gibt es lediglich beim [Anzeigen und Auswählen von Ressourcen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) (tippen statt klicken). 
 
       * Desktop:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * Tablets (oder Desktop mit einer Breite von weniger als 1024 Pixeln):
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. Klassische Benutzeroberfläche
@@ -45,6 +50,7 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * Sie ist vorwiegend in Grün gehalten.
    * Sie wurde für die Nutzung auf Desktop-Geräten entwickelt.
    * Die folgende Dokumentation bezieht sich auf die moderne Benutzeroberfläche. Informationen zur Inhaltserstellung in der klassischen Benutzeroberfläche finden Sie in der [Dokumentation zur Inhaltserstellung für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md).
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Wechseln der Benutzeroberfläche
@@ -167,6 +173,7 @@ Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen könn
 >
 >* Manuelles Bearbeiten der URL. Eine Nicht-Standard-URL könnte zu einer unbekannten Situation und zu Funktionsausfall führen.
 >* Verwendung beider Editoren zur selben Zeit, z. B. in separaten Fenstern
+
 >
 
 
