@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 66%
 
 ---
 
@@ -61,7 +64,7 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
   </tr> 
   <tr> 
    <td> jcr:created</td> 
-   <td> Datum</td> 
+   <td> Datum          </td> 
    <td>Date of creation of the template.<br /> </td> 
   </tr> 
   <tr> 
@@ -80,7 +83,7 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
    <td>Rang der Vorlage. Wird verwendet, um die Vorlage in der Benutzeroberfläche anzuzeigen<br /> </td> 
   </tr> 
   <tr> 
-   <td> jcr:content</td> 
+   <td> jcr:content gespeichert</td> 
    <td> cq:PageContent</td> 
    <td>Knoten, der den Inhalt der Vorlage enthält.<br /> </td> 
   </tr> 
@@ -131,7 +134,7 @@ Mit dieser Komponente wird die Struktur und das Design des Inhalts definiert, we
 
 ### Der von einer Vorlage erstellte Inhalt {#the-content-produced-by-a-template}
 
-Mit Vorlagen werden Seiten des Typs `cq:Page` erstellt (wie bereits erwähnt, ist eine Seite eine besondere Art der Komponente). Each AEM Page has a structured node `jcr:content`. Dieser Knoten:
+Mit Vorlagen werden Seiten des Typs `cq:Page` erstellt (wie bereits erwähnt, ist eine Seite eine besondere Art der Komponente). Each AEM Page has a structured node `jcr:content`. Dies:
 
 * ist vom Typ cq:PageContent
 * ist ein strukturierter Knotentyp, der eine festgelegte Inhaltsdefinition enthält
@@ -172,7 +175,7 @@ Wenn Stile in der Benutzeroberfläche im [Designmodus](/help/sites-authoring/def
 
 >[!CAUTION]
 >
->Adobe empfiehlt, Entwürfe nur im [Designmodus](/help/sites-authoring/default-components-designmode.md)anzuwenden.
+>Adobe empfiehlt nur die Anwendung von Entwürfen im [Designmodus](/help/sites-authoring/default-components-designmode.md).
 >
 >Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen.
 
@@ -188,11 +191,11 @@ Beim Rendern von Inhalten, die auf einer statischen Vorlage basieren, versucht A
 
 AEM bestimmt den relevantesten Stil für einen Inhaltsknoten in der folgenden Reihenfolge:
 
-* Wenn ein Entwurf für den vollständigen und exakten Pfad des Inhalts-Knotens vorhanden ist (wie bei der Definition des Entwurfs im Designmodus), verwenden Sie diesen Entwurf.
+* Wenn ein Entwurf für den vollständigen und exakten Pfad des Inhalts-Knotens vorhanden ist (z. B. wenn der Entwurf im Designmodus definiert wird), verwenden Sie diesen Entwurf.
 * Wenn ein Entwurf für den Inhaltsknoten des übergeordneten Elements vorhanden ist, verwenden Sie diesen Entwurf.
 * Wenn ein Entwurf für einen beliebigen Knoten auf dem Pfad des Inhalts-Knotens vorhanden ist, verwenden Sie diesen Entwurf.
 
-Wenn in den letzten beiden Fällen mehr als ein entsprechender Entwurf vorhanden ist, verwenden Sie den Entwurf, der der Inhaltsknoten am nächsten liegt.
+Wenn es in den letzten beiden Fällen mehr als einen geeigneten Entwurf gibt, verwenden Sie den Entwurf, der der Inhaltsknoten am nächsten liegt.
 
 ### Entscheidungsbaum {#decision-tree}
 
@@ -206,7 +209,7 @@ Betrachten Sie eine einfache Inhaltsstruktur wie folgt, bei der ein Entwurf auf 
 
 `/root/branch/leaf`
 
-Die folgende Tabelle beschreibt, wie AEM einen Entwurf auswählen wird.
+In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
 
 <table> 
  <tbody> 
