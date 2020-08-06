@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 7b9d3b81-3bb4-4ca6-b6e1-f9adfb455855
 translation-type: tm+mt
 source-git-commit: 9cc06c16122b98146c51ac61d7fa27553a9d971e
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 69%
 
 ---
 
@@ -25,4 +28,4 @@ Bühnen sind platzsparende 3D-Szenendateien, die die grundlegende Anzeigeumgebun
 
 Das Dateiformat der Bühne bestimmt, welchen Renderer Sie für diese Bühne verwenden können. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Wenn Sie beabsichtigen, den standardmäßigen Rapid Refine™-Renderer zu verwenden, ist jedes unterstützte Bühnen-Dateiformat akzeptabel.
 
-Alle Rendereinstellungen in AEM 3D mit Ausnahme von Ausgabebildtyp und -größe müssen vorkonfiguriert und in der Stage-Datei gespeichert werden, bevor sie auf AEM hochgeladen werden.
+Alle Rendereinstellungen in AEM 3D mit Ausnahme des Ausgabebildtyps und der -größe müssen vorkonfiguriert und in der Stage-Datei gespeichert werden, bevor sie in AEM hochgeladen werden.
