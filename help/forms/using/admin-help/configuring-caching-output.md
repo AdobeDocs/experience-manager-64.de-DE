@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 89%
 
 ---
 
@@ -90,9 +93,9 @@ Klicken Sie zum Zugreifen auf diese Einstellungen in Administration Console auf 
 
 Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf alle Cache-Typen aus. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**** Max. Cache-Dokumentgröße (KB): Die maximale Größe eines Formularentwurfs oder einer anderen Ressource in Kilobyte, die in einem Arbeitsspeichercache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeichercaches gilt. Wenn die Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert. Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Max. Cache-Dokument-Größe (KB):** Die maximale Größe eines Formularentwurfs oder einer anderen Ressource in Kilobyte, die in einem Arbeitsspeichercache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeichercaches gilt. Wenn die Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert. Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**** Formular-Rendering-Cache aktiviert: Standardmäßig ist diese Option aktiviert. Das bedeutet, dass wiedergegebene Formulare für den nachfolgenden Abruf zwischengespeichert werden. Diese Einstellung hat wenig Auswirkungen auf die Leistung des Output-Dienstes, da keine nicht-interaktiven Dokumente zwischengespeichert werden. Diese Option hat eine Auswirkung, wenn Sie den Output-Dienst für nicht interaktive Dokumente, die auf dem Client wiedergegeben werden, verwenden.
+**Formular-Rendering-Cache aktiviert:** Standardmäßig ist diese Option aktiviert. Das bedeutet, dass die wiedergegebenen Formulare für den nachfolgenden Abruf zwischengespeichert werden. Diese Einstellung hat wenig Auswirkungen auf die Leistung des Output-Dienstes, da keine nicht-interaktiven Dokumente zwischengespeichert werden. Diese Option hat eine Auswirkung, wenn Sie den Output-Dienst für nicht interaktive Dokumente, die auf dem Client wiedergegeben werden, verwenden.
 
 ### Formularentwürfe zwischenspeichern {#caching-form-designs}
 
@@ -100,11 +103,11 @@ Wenn der Output-Dienst eine Wiedergabeanforderung erhält, werden die Formularen
 
 Der Output-Dienst speichert Formularentwürfe immer auf dem Datenträger zwischen. Wenn Formularentwürfe auf dem Server gespeichert werden, werden diese Dateien als Datenträgercache bezeichnet. Der Output-Dienst speichert außerdem Formularentwürfe im Arbeitsspeicher zwischen, gemäß der Einstellung im Bereich **Arbeitsspeichercache für Vorlagenkonfiguration**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**** Cachegröße der Vorlagenkonfiguration: Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Arbeitsspeicher verbleiben sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer gleich dem Wert für die Vorlagencache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Cachegröße der Vorlagenkonfiguration:** Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Arbeitsspeicher verbleiben sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer gleich dem Wert für die Vorlagencache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**** Vorlagencache-Größe: Die maximale Anzahl von Vorlageninhaltsobjekten, die im Arbeitsspeicher aufbewahrt werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Vorlagencache-Größe:** Die maximale Anzahl von Vorlageninhaltsobjekten, die im Arbeitsspeicher aufbewahrt werden sollen. Der Standardwert ist 100.         Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**** Aktiviert: Standardmäßig ist dieses Kontrollkästchen aktiviert, d. h. die Formularvorlagen werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die Formularvorlagen nur auf dem Datenträger zwischengespeichert.
+**Aktiviert:** Standardmäßig ist dieses Kontrollkästchen aktiviert, d. h. die Formularvorlagen werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die Formularvorlagen nur auf dem Datenträger zwischengespeichert.
 
 ### Fragmente und Bilder zwischenspeichern {#caching-fragments-and-images}
 
@@ -112,15 +115,15 @@ Der Output-Dienst speichert Fragmente und Bilder, die in Formularentwürfen auf 
 
 Sie können die folgenden Einstellungen verwenden, um die Zwischenspeicherung von Fragmenten und Bildern auf dem Datenträger zu steuern. Diese Einstellungen befinden sich im Bereich **Cacheeinstellungen für Vorlagenressourcen**:
 
-**Ressourcenzwischenspeicherung** Wählen Sie eine der folgenden Optionen aus der Liste aus:
+**Ressourcenzwischenspeicherung** Wählen Sie eine der folgenden Optionen aus der Liste:
 
-**** Aktiviert für Fragmente und Bilder: Der Output-Dienst speichert Fragmente und Bilder zwischen. Dies ist die Standardoption.
+**Aktiviert für Fragmente und Bilder:** Der Output-Dienst speichert Fragmente und Bilder zwischen. Dies ist die Standardoption.
 
-**** Aktiviert für Fragmente: Der Output-Dienst speichert Fragmente, jedoch keine Bilder zwischen.
+**Aktiviert für Fragmente:** Der Output-Dienst speichert Fragmente, jedoch keine Bilder zwischen.
 
-**** Deaktiviert: Der Output-Dienst speichert keine Fragmente oder Bilder zwischen.
+**Deaktiviert:** Der Output-Dienst speichert keine Fragmente oder Bilder zwischen.
 
-**** Bereinigungsintervall (Sekunden): Gibt an, wie oft der Output-Dienst alte ungültige Cachedateien entfernt. Der Output-Dienst entfernt keine gültigen Cachedateien. Wenn Sie das Bereinigungsintervall ändern, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind.
+**Bereinigungsintervall (Sekunden):** Gibt an, wie oft der Output-Dienst alte ungültige Cachedateien entfernt. Der Output-Dienst entfernt keine gültigen Cachedateien. Wenn Sie das Bereinigungsintervall ändern, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind.
 
 ## Clustering-Überlegungen zum Zwischenspeicher {#clustering-considerations-for-caches}
 
