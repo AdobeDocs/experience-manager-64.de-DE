@@ -8,6 +8,9 @@ topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +45,7 @@ In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen 
 
    Eine E-Mail-Benachrichtigungsvorlage ist eine [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). Sie können den vorhandenen HTML-Code durch Ihren benutzerdefinierten Code ersetzen, um das Aussehen der Vorlage zu ändern.
 
-1. Speichern Sie die Datei. Damit ist die benutzerdefinierte Vorlage einsatzbereit.
+1. Speichern Sie die Datei . Damit ist die benutzerdefinierte Vorlage einsatzbereit.
 
 ## Erstellen einer E-Mail-Vorlage {#create-an-email-template}
 
@@ -58,7 +61,7 @@ In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen 
 
    Eine E-Mail-Benachrichtigungsvorlage ist eine [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). Sie können der Datei benutzerdefinierten HTML-Code hinzufügen, um eine neue Vorlage zu erstellen. 
 
-1. Speichern Sie die Datei. Damit ist die Vorlage zur Verwendung im Schritt „Aufgabe zuweisen“ bereit.
+1. Speichern Sie die Datei . Damit ist die Vorlage zur Verwendung im Schritt „Aufgabe zuweisen“ bereit.
 
 ## E-Mail-Vorlage im Schritt „Aufgabe zuweisen“ verwenden {#use-an-email-template-in-an-assign-task-step}
 
