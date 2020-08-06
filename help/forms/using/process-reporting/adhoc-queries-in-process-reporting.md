@@ -1,8 +1,8 @@
 ---
 title: Ad-hoc-Abfragen in Process Berichte
 seo-title: Ad-hoc-Abfragen in Process Berichte
-description: Erstellen Sie benutzerdefinierte Abfragen, um nach AEM Forms on JEE-Prozess- und -Aufgabe-Details in Process Berichte zu suchen
-seo-description: Erstellen Sie benutzerdefinierte Abfragen, um nach AEM Forms on JEE-Prozess- und -Aufgabe-Details in Process Berichte zu suchen
+description: Erstellen Sie benutzerdefinierte Abfragen, um nach AEM Forms on JEE-Prozess- und Aufgabe-Details im Process Berichte zu suchen
+seo-description: Erstellen Sie benutzerdefinierte Abfragen, um nach AEM Forms on JEE-Prozess- und Aufgabe-Details im Process Berichte zu suchen
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1690'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ Mit der Aufgabe-/Prozesssuche können Sie Filter für die Abfrage von Prozess-/A
 
       >[!NOTE]
       >
-      >Die Liste &quot;field&quot;enthält die Felder, die für AEM Forms-Prozess/-Aufgabe spezifisch sind.
+      >Die Liste &quot;field&quot;enthält die Felder, die für den AEM Forms-Prozess/die-Aufgabe spezifisch sind.
 
    1. Wählen Sie eine Bedingung aus.
 
@@ -126,6 +129,7 @@ Verwenden Sie die Optionen im Bereich **Meine Filter** , um die Ad-hoc-Abfragen 
    * **Abgeschlossene Zeit**: Datum und Uhrzeit des Abschlusses der Prozessinstanz
    * **Dauer**: Die Dauer vom Beginn bis zum Abschluss der Prozessinstanz
    * **Status**: Der aktuelle Status der Prozessinstanz.
+
    Standardmäßig wird das Ergebnis nach Prozess-ID sortiert. Um das Ergebnis jedoch nach einem der Felder zu sortieren, klicken Sie auf den Feldtitel.
 
    Da es sich bei der Sortierung um einen Umschalter handelt, klicken Sie auf eine Spaltenüberschrift, um das Ergebnis aufsteigend zu sortieren, und klicken Sie erneut darauf, um es absteigend zu sortieren.
@@ -139,6 +143,7 @@ Verwenden Sie die Optionen im Bereich **Meine Filter** , um die Ad-hoc-Abfragen 
    * **Abgeschlossene Zeit**: Datum und Uhrzeit des Abschlusses der Prozessinstanz
    * **Dauer**: Die Dauer vom Beginn bis zum Abschluss der Prozessinstanz
    * **Status**: Der aktuelle Status der Prozessinstanz.
+
    Standardmäßig wird das Ergebnis nach Aufgaben-ID sortiert. Um das Ergebnis jedoch nach einem der Felder zu sortieren, klicken Sie auf den Feldtitel. Das Ergebnis wird nach der Spalte sortiert, die durch einen dunklen Pfeil neben der Spaltenüberschrift gekennzeichnet ist.
 
    Da es sich bei der Sortierung um einen Umschalter handelt, klicken Sie auf eine Feldüberschrift, um das Ergebnis aufsteigend zu sortieren, und klicken Sie erneut darauf, um es absteigend zu sortieren. Die aktuelle Sortierreihenfolge (aufsteigend/absteigend) wird durch die Richtung des dunklen Pfeils neben der Spaltenüberschrift angezeigt.
@@ -150,6 +155,7 @@ Verwenden Sie die Optionen im Bereich **Meine Filter** , um die Ad-hoc-Abfragen 
 
    * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten in der Datenspeicherung
    * **In CSV** exportieren: Exportieren Sie die Berichtsdaten in eine kommagetrennte Datei.
+
    >[!NOTE]
    >
    >Wenn Sie einen Bericht exportieren, wird das gesamte Suchergebnis in eine CSV-Datei exportiert und nicht nur in die aktuelle Seite
@@ -162,7 +168,7 @@ Gleichermaßen verwenden Sie das Bedienfeld &quot; **Aufgaben-Details** &quot;, 
 
 ### So führen Sie Ansicht-/Aufgaben-Details durch {#to-view-process-task-details}
 
-Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten AEM Forms-Aufgabe Ansicht ausführen:
+Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten-Aufgabe Ansicht ausführen:
 
 * **Von einem Prozess-/Aufgaben-Suchergebnis**
 * **Durch Eingabe der Prozess-/Aufgaben-ID in das Bedienfeld &quot;Prozess-/Aufgaben-Details&quot;**
@@ -195,6 +201,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten AE
    * Prozessdauer
    * Prozessstatus
    * Prozessinitiator
+
    **Bedienfeld oben rechts:** Zeigt die folgenden Details zu den Aufgaben an, aus denen der ausgewählte Prozess besteht:
 
    * Aufgaben-ID
@@ -205,6 +212,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten AE
    * Abschlussdatum der Aufgabe
    * Dauer der Aufgabe
    * Status der Aufgabe
+
    **Bereich unten rechts:** Zeigt die folgenden Details zum Prozessverlauf des ausgewählten Prozesses an:
 
    * Prozessname
@@ -212,6 +220,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten AE
    * Aktualisierungsdatum
    * Abschlussdatum des Prozesses
    * Prozessstatus
+
    **Ergebnis der Aufgabe**
 
    ![Aufgabendetails](assets/task_details.png)
@@ -226,12 +235,14 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten AE
    * Dauer der Aufgabe
    * Status der Aufgabe
    * Gewählte Aufgabe
+
    **Bedienfeld oben rechts:** Zeigt die folgenden Details der Formulare an, aus denen die ausgewählte Aufgabe besteht:
 
    * Formular-ID
    * Zeitpunkt der Formularerstellung
    * Datum der Formularaktualisierung
    * URL der Formularvorlage
+
    **Bereich unten rechts:** Zeigt die folgenden Details zum Prozessverlauf der ausgewählten Aufgabe an:
 
    * Zuordnungstyp für Aufgaben
@@ -260,7 +271,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten AE
 
    ![process_details-1](assets/process_details-1.png)
 
-   Die Felder in der Abfrage &quot; **Prozess-/Aufgabe-Details** &quot;sind für einen AEM Forms-Prozess/eine AEM Forms-Aufgabe spezifische Felder.
+   Die Felder in der Abfrage &quot; **Prozess-/Aufgabe-Details** &quot;sind für einen AEM Forms-Prozess/eine-Aufgabe spezifische Felder.
 
    Bei einem Prozess zeigt das Ergebnis der Abfrage die Details der Aufgaben an, die im Prozess enthalten sind.
 
