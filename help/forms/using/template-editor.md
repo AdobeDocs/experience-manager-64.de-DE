@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1993'
+ht-degree: 86%
 
 ---
 
@@ -51,14 +54,14 @@ Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Edit
    * **Seitliches Bedienfeld ein/aus**: Hier können Sie die Seitenleiste ein- oder ausblenden.
    * **Seiteninformationen**: Ermöglicht Ihnen die Angabe von Informationen wie dem Zeitpunkt der Veröffentlichung oder der Zurücknahme der Veröffentlichung, Miniaturen, clientseitigen Bibliotheken, einer Seitenrichtlinie und dem Seitendesign einer clientseitigen Bibliothek.
    * **Emulator**: Hier können Sie das Erscheinungsbild für verschiedene Geräte simulieren und anpassen.
-   * **** Ebenenauswahl: Hiermit können Sie die Ebene ändern.
+   * **Ebenenauswahl:** Hiermit können Sie die Ebene ändern.
 
       Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. Auf der Strukturebene können Sie die Kopf- und Fußzeile hinzufügen und anpassen. Auf der Ebene &quot;Anfänglicher Inhalt&quot;können Sie den Formularinhalt anpassen.
 
-   * **** Vorschau: Ermöglicht die Vorschau des Erscheinungsbilds der Vorlage beim Veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
+   * **Vorschau:** Ermöglicht die Vorschau, wie die Vorlage aussieht, wenn Sie sie veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 
 * **Seitenleiste:** Enthält die Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
-* **** Komponenten-Symbolleiste: Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie die Komponente anpassen können.
+* **Komponenten-Symbolleiste:** Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie die Komponente anpassen können.
 * **Seite**: Der Bereich, in dem Sie Inhalt hinzufügen, um die Vorlage zu erstellen.
 
 Weitere Informationen zum Touch UI-Editor finden Sie unter [Einführung in das Authoring adaptiver Formulare.](/help/forms/using/introduction-forms-authoring.md)
@@ -78,9 +81,9 @@ Wenn Sie die Strukturebene im Vorlageneditor auswählen, werden die Layout-Conta
 
 ![Layout-Container in der Strukturebene](assets/header-layer-selector.png)
 
-**** Abbildung: Container *mit Layout in der Strukturebene*
+**Abbildung:** *Layout-Container in der Strukturebene*
 
-******A. Layout-Container für Kopfzeilenkomponente** B. Layout-Container für Fußzeilenkomponente
+**A.** Layout Container für Kopfzeilenkomponente **B.** Layout-Container für Fußzeilenkomponente
 
 Ziehen Sie die Kopfzeilenkomponente des adaptiven Formulars in den Layout-Container über dem Container des adaptiven Formulars. Nachdem Sie die Komponente hinzugefügt haben, können Sie seine Eigenschaften festlegen, mit denen Sie ein Logo hinzufügen und den Titel angeben können.
 
@@ -88,7 +91,7 @@ Wenn Sie die Fußzeilenkomponente in den Layout-Container unter dem Container de
 
 ![Kopf- und Fußzeile in der Strukturebene hinzugefügt](assets/header-and-footer.png)
 
-**** Abbildung: In der Strukturebene *hinzugefügte Kopf- und Fußzeile*
+**Abbildung:** *Kopf- und Fußzeile in der Strukturebene hinzugefügt*
 
 #### Sperren/Entsperren von Komponenten in der Strukturebene {#locking-unlocking-components-in-the-structure-layer}
 
@@ -116,7 +119,7 @@ Weitere Informationen finden Sie unter [Randleiste](/help/forms/using/introducti
 
 >[!NOTE]
 >
->Wenn Sie &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;als Übermittlungsaktion auswählen, erhalten Sie eine Option zum Angeben des Speicherpfads. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
+>Wenn Sie &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;als Übermittlungsaktion auswählen, erhalten Sie eine Option zum Festlegen des Pfads für die Datenspeicherung. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
 
 #### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
