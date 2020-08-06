@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 67%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Sie können mit Mobile Forms benutzerdefinierte Widgets einsetzen. Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.
 
-![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)**Abbildung:** Beispiel *für ein Standard- und benutzerdefiniertes Widget*
+![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)**Abbildung:** *Beispiel für ein Standard- und benutzerdefiniertes Widget*
 
 ## Integrieren benutzerdefinierter Widgets mit HTML5-Formularen {#integrating-custom-widgets-with-html-forms}
 
