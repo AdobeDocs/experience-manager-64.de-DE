@@ -19,7 +19,7 @@ ht-degree: 74%
 
 ## Einführung {#introduction}
 
-AEM Form bietet die Möglichkeit, die Erstellung, Zusammenstellung, Verwaltung und den Versand von sicheren und interaktiven Dokumenten wie Geschäftskorrespondenz, Dokumente, Aussagen, Vorteilsbenachrichtigungen, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits zu zentralisieren. Diese Funktion wird als interaktive Kommunikation bezeichnet. Die Funktion ist im AEM Forms Add-On-Paket enthalten. Das Add-On-Paket wird auf einer Autor- oder Veröffentlichungsinstanz von AEM bereitgestellt.
+AEM Form verfügt über die Fähigkeit, die Erstellung, Zusammenstellung, Verwaltung und den Versand von sicheren und interaktiven Dokumenten wie Geschäftskorrespondenz, Dokumente, Aussagen, Vorteilsbenachrichtigungen, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits zu zentralisieren. Diese Funktion wird als interaktive Kommunikation bezeichnet. Die Funktion ist im AEM Forms Add-On-Paket enthalten. Das Add-On-Paket wird auf einer Autor- oder Veröffentlichungsinstanz von AEM bereitgestellt.
 
 Sie können die interaktive Kommunikationsfunktion verwenden, um Kommunikation in mehreren Formaten zu erstellen. Zum Beispiel Web und PDF. Sie können interaktive Kommunikation mit AEM Workflow integrieren, um die zusammengestellte Kommunikation auf dem Kanal ihrer Wahl zu verarbeiten und an Kunden zu liefern. Zum Beispiel Senden einer Nachricht an Endbenutzer per E-Mail.
 
@@ -37,12 +37,12 @@ AEM Forms Interaktive Kommunikation führt Admin-, Autor- und Agentenbenutzerobe
 
 ## Systemanforderungen {#system-requirements}
 
-Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen der AEM Forms beginnen, stellen Sie Folgendes sicher:
+Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen von AEM Forms beginnen, stellen Sie Folgendes sicher:
 
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM-Instanz wird ausgeführt. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM-Instanz (Autor oder Verarbeitung), um die interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen der AEM Forms auszuführen:
+* Eine AEM-Instanz wird ausgeführt. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM Instanzen (Autor oder Verarbeitung), um die interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen von AEM Forms ausführen zu können:
 
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
    * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere Instanz von AEM Autor](/help/forms/using/hardening-securing-aem-forms-environment.md). Sie können eine Autoreninstanz einrichten und nach der Installation absichern.
@@ -86,20 +86,20 @@ Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations
 
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket umfasst AEM Forms wie interaktive Kommunikation, Korrespondenzverwaltung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
+AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket umfasst die interaktive Kommunikation mit AEM Forms, das Korrespondenzmanagement und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
-1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
-1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen ein Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]** .
 1. In the **[!UICONTROL Filters]** section:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   1. Wählen Sie **[!UICONTROL Forms]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
    2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
 1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
 1. Select the package and click **[!UICONTROL Install]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) herunterladen.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der Datei &quot; [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log&quot;nicht mehr angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;nicht mehr in der Datei &quot; [AEM-Installation-Directory]/crx-quickstart/logs/error.log&quot;angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
