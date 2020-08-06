@@ -1,8 +1,8 @@
 ---
 title: Zuweisungsfunktion
 seo-title: Zuweisungsfunktion
-description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen zugreifen
-seo-description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen zugreifen
+description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen für die Aktivierung zugreifen
+seo-description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen für die Aktivierung zugreifen
 uuid: e64da827-2fe9-41e2-a532-a1ef783ba167
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 26%
 
 ---
 
