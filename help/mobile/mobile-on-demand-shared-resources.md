@@ -1,8 +1,8 @@
 ---
 title: Hochladen freigegebener Ressourcen
 seo-title: Hochladen freigegebener Ressourcen
-description: Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Auf dieser Seite erfahren Sie mehr über das Hochladen freigegebener Ressourcen.
-seo-description: Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Auf dieser Seite erfahren Sie mehr über das Hochladen freigegebener Ressourcen.
+description: Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Folgen Sie dieser Seite, um mehr über das Hochladen freigegebener Ressourcen zu erfahren.
+seo-description: Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Folgen Sie dieser Seite, um mehr über das Hochladen freigegebener Ressourcen zu erfahren.
 uuid: f3595299-1279-4b94-9a49-9d1893250549
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
+Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten 
 
 ## Hochladen freigegebener Ressourcen {#uploading-shared-resources-1}
 
-In der Regel müssen Inhalte wie Artikel in allen Autoren und sogar Apps dasselbe Erscheinungsbild aufweisen. Skripten, CSS und Schriftarten für alle verfügbar zu machen, ist daher unerlässlich. Dieser Vorgang sendet solche freigegebenen Ressourcen an Mobile On-Demand, das dann bei Bedarf genutzt werden kann.
+In der Regel müssen Inhalte wie Artikel in allen Autoren und sogar Apps dasselbe Erscheinungsbild aufweisen. Skripten, CSS und Schriftarten für alle verfügbar zu machen, ist daher unverzichtbar. Dieser Vorgang sendet solche freigegebenen Ressourcen an Mobile On-Demand, das dann bei Bedarf genutzt werden kann.
 
 Nachdem Sie Ihre App konfiguriert und mit einer Cloud-Konfiguration verknüpft haben, können Sie Ihre freigegebenen Ressourcen hochladen. Ausführliche Anweisungen zum Verbinden der App mit einer Cloud-Konfiguration finden Sie [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
@@ -52,9 +55,9 @@ Führen Sie die folgenden Schritte aus, um Ihre freigegebenen Ressourcen für ei
 
 Sobald Sie Informationen zum Erstellen und Veröffentlichen von Inhalten erhalten haben Siehe
 
-* [Entwickeln von AEM Content für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile-on-demand.md)
-* [Verwalten von Inhalten für die Verwendung von AEM Mobile-On-Demand-Diensten](/help/mobile/aem-mobile.md)
+* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Verwalten von Inhalten für die Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Weitere Informationen zu den Authoring-Themen finden Sie unter
 
-[Authoring von AEM Content für AEM Mobile On-Demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
+[Authoring AEM Inhalte für AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
