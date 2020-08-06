@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 79%
 
 ---
 
@@ -50,6 +53,7 @@ The **Text** component in AEM is available for both the touch-enabled and the cl
 >
 >* [Plug-ins und ihre Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Plug-Ins und zugehörige Funktionen - Touch-fähige Benutzeroberfläche](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -71,12 +75,13 @@ Durch das Konfigurieren eines Plug-ins innerhalb des entsprechenden `rtePlugins`
 
 Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt werden:
 
-1. Legen Sie den [Konfigurationsort](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) abhängig von Ihrem RTE fest und navigieren Sie dorthin.
+1. Legen Sie den [Konfigurationsspeicherort](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) abhängig von Ihrem RTE fest und navigieren Sie dorthin.
 1. [Aktivieren Sie das Absatzauswahlfeld](/help/sites-administering/rich-text-editor.md) durch die [Aktivierung des Plug-ins](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 1. [Geben Sie die Formate an, die Sie im Absatzauswahlfeld zur Verfügung haben möchten](/help/sites-administering/rich-text-editor.md).
 1. Die Absatzformate sind dann für den Autor der Inhalte aus den Auswahlfeldern im RTE verfügbar. Auf sie kann wie folgt zugegriffen werden:
 
    * Using the paragraph ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) icon in the touch-enabled UI:
+
    ![Absatzsymbol (Pilcrow-Zeichen)](do-not-localize/chlimage_1-7.png)
 
    * Mithilfe des **Formatfelds** (Dropdown-Auswahl) in der klassischen Benutzeroberfläche.
@@ -84,13 +89,13 @@ Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt we
 
 Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt AEM eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen müssen sie entsprechende Strukturelemente wie Überschriften auswählen und über die Option „Arten“ ausgewählte globale Formatarten verwenden. Dies sorgt für ein sauberes Markup, mehr Optionen für Benutzer, die die Suche mit ihren eigenen Formatvorlagen durchführen, sowie korrekt strukturierte Inhalte.
 
-## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
+## Verwenden der Funktion „Quellenbearbeitung“   {#use-of-the-source-edit-feature}
 
-In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quellcode zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt ein zusätzliches Markup erfordern, um Compliance mit WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE umsetzen. You can specify the [ `sourceedit` feature on the `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt ein zusätzliches Markup erfordern, um Compliance mit WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Use the `sourceedit` feature carefully. Tippfehler und/oder nicht unterstützte Funktionen können zusätzliche Probleme hervorrufen.
+>Gehen Sie beim Verwenden der Funktion `sourceedit` sorgfältig vor. Tippfehler und/oder nicht unterstützte Funktionen können zusätzliche Probleme hervorrufen.
 
 ## Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute {#adding-support-for-additional-html-elements-and-attributes}
 
