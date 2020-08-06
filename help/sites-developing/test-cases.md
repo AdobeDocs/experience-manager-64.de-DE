@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 77%
 
 ---
 
@@ -48,7 +51,7 @@ Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, dahe
 
 ## Testen spezifischer Aspekte {#testing-specific-aspects}
 
-Beim Testen von AEM sind einige spezifische Details von besonderem Interesse:
+Beim Testen AEM einige spezifische Details von besonderem Interesse sind:
 
 Autor- und Veröffentlichungsumgebung
 
@@ -84,7 +87,7 @@ Bei den meisten Projekte installieren Sie den Dispatcher für Caching und Lasten
 
 Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackboxbasis vorgenommen werden. Die zu prüfenden Hauptaspekte sind:
 
-* **Genauigkeit**; stellen Sie sicher, dass Inhaltsaktualisierungen vom Website-Besucher gesehen werden.
+* **Genauigkeit**; stellen Sie sicher, dass Inhaltsaktualisierungen vom Besucher der Website gesehen werden.
 * **Kontinuität**; stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
 * **Cluster** -Cluster werden verwendet, um Folgendes bereitzustellen:
    * **Failover** Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
