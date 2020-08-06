@@ -121,7 +121,7 @@ Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
 **Neu erforderlich:** Erstellt immer einen neuen Transaktionskontext. Wenn bereits ein aktiver Transaktionskontext vorhanden ist, wird dieser ausgesetzt.
 
-**Transaktionszeitlimit (in Sekunden):** Die Anzahl der Sekunden, die der zugrunde liegende Transaktionsanbieter warten muss, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang umschließt. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.     
+**Transaktionszeitlimit (in Sekunden):** Die Anzahl der Sekunden, die der zugrunde liegende Transaktionsanbieter warten muss, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang umschließt. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.         
 
 **Schwellenwertauflösung für Glättung (in dpi):** Die Bildauflösung, unter der die Glättung (oder das Anti-Aliasing) auf Text, Strichgrafiken und Bilder angewendet wird, wenn Sie für diese Elemente die Option &quot;Glättung anwenden auf&quot;ausgewählt haben.
 
@@ -237,7 +237,7 @@ Folgende Einstellungen sind für den FTP-Dienst verfügbar:
 
 **Standardhost:** Die IP-Adresse oder URL des FTP-Servers.
 
-**Standardanschluss:** Der Anschluss, über den eine Verbindung zum FTP-Server hergestellt wird. Der Standardwert ist 21.     
+**Standardanschluss:** Der Anschluss, über den eine Verbindung zum FTP-Server hergestellt wird. Der Standardwert ist 21.         
 
 **Standardbenutzername:** Der Name des Benutzerkontos, mit dem Sie auf den FTP-Server zugreifen können. Das Benutzerkonto muss über ausreichende Berechtigungen verfügen, um die für diesen Dienst erforderlichen FTP-Vorgänge ausführen zu können.
 
@@ -257,11 +257,11 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Acrobat WebCapture verwenden (nur Windows):** Wenn diese Einstellung &quot;true&quot;ist, verwendet der Generate PDF-Dienst für alle &quot;HTML in PDF&quot;-Konvertierungen Acrobat X Pro. Auf diese Weise kann die Qualität der aus HTML erzeugten PDF-Dateien verbessert werden, obwohl die Leistung möglicherweise etwas langsamer wird. Der Standardwert lautet false.
 
-**Acrobat-Bildkonvertierung verwenden (nur Windows):** Wenn diese Einstellung &quot;true&quot;ist, verwendet der Generate PDF-Dienst für alle &quot;Bild in PDF&quot;-Konvertierungen Acrobat X Pro. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
+**Acrobat-Bildkonvertierung verwenden (nur Windows):** Wenn diese Einstellung &quot;true&quot;ist, verwendet der Generate PDF-Dienst für alle &quot;Image in PDF&quot;-Konvertierungen Acrobat X Pro. Diese Einstellung ist nur dann sinnvoll, wenn mit dem standardmäßigen, reinen Java-Konvertierungsmechanismus ein erheblicher Teil der Eingabebilder nicht erfolgreich konvertiert werden kann. Der Standardwert lautet false.
 
 **Acrobat-basierte AutoCAD-Konvertierungen aktivieren (nur Windows):** Wenn diese Einstellung &quot;true&quot;ist, verwendet der Generate PDF-Dienst für alle DWG-in-PDF-Konvertierungen Acrobat X Pro. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist bzw. wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
 
-**Reguläre Ausdrücke zum Auffinden verbotener Sonderzeichen im Benutzernamen (nur Windows):** Gibt Zeichen an, die die Vorgänge &quot;PDF exportieren&quot;und &quot;PDF optimieren&quot;beeinträchtigen, wenn die Zeichen im Namen des Benutzers erscheinen.
+**Reguläre Ausdrücke zum Auffinden verbotener Sonderzeichen im Benutzernamen (nur Windows):** Gibt Zeichen an, die den Export PDF- und Optimize PDF-Vorgang beeinträchtigen, wenn die Zeichen im Benutzernamen angezeigt werden.
 
 **ImageToPDF-Poolgröße:** Die Poolgröße des standardmäßigen (reinen Java) Bild-in-PDF-Konverters im Generate PDF-Dienst. Mit dieser Einstellung steuern Sie die maximale Anzahl gleichzeitiger „Bild in PDF“-Konvertierungen, die der Generate PDF-Dienst ausführen kann. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann.
 
@@ -269,7 +269,7 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **OCR-Poolgröße:** Die Poolgröße des PaperCaptureService, den PDF Generator für OCR verwendet. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann. Diese Einstellung ist nur auf Windows-Systemen gültig.
 
-**Ersatzschriftfamilie für HTML in PDF-Konvertierungen:** Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart für den AEM Forms-Server nicht verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie davon ausgehen, dass Sie HTML-Seiten konvertieren, die nicht verfügbare Schriften verwenden. Beispielsweise können auf Seiten, die in regionalen Sprachen geschrieben wurden, nicht verfügbare Schriften verwendet werden.
+**Ersatzschriftfamilie für HTML in PDF-Konvertierungen:** Der Name der Schriftfamilie, die in PDF-Dokumenten verwendet werden soll, wenn die im Original-HTML verwendete Schriftart nicht für den AEM Forms-Server verfügbar ist. Geben Sie eine Schriftfamilie an, wenn Sie davon ausgehen, dass Sie HTML-Seiten konvertieren, die nicht verfügbare Schriften verwenden. Beispielsweise können auf Seiten, die in regionalen Sprachen geschrieben wurden, nicht verfügbare Schriften verwendet werden.
 
 **Logik für native Konvertierungen** wiederholen gilt für weitere Zustellversuche der PDF-Generierung, wenn der erste Konvertierungsversuch fehlgeschlagen ist:
 
@@ -392,7 +392,7 @@ Folgende Einstellungen sind für den LDAP-Dienst verfügbar:
 
 **Ursprüngliche Kontextfactory:** Die Java-Klasse, die als Kontextfactory verwendet wird. Diese Klasse wird zum Herstellen einer Verbindung mit dem LDAP-Server verwendet. Der Standardwert ist com.sun.jndi.ldap.LdapCtxFactory und eignet sich für die meisten LDAP-Server.
 
-**Anbieter-URL:** Die URL, mit der eine Verbindung zum LDAP-Dienst hergestellt wird. Das Format des Werts ist `ldap://server name:port`
+**Anbieter-URL:** Die URL, mit der eine Verbindung zum LDAP-Dienst hergestellt wird. The format of the value is `ldap://server name:port`
 
 *Servername* steht für den Namen des Computers, der als Host für den LDAP-Server dient.
 
@@ -439,15 +439,15 @@ Folgende Einstellungen sind für den Microsoft SharePoint-Konfigurationsdienst v
 
 **Apple iOS:** Hiermit können iPhones und iPads eine Verbindung zum Server herstellen.
 
-**AIR:** Damit können Geräte, auf denen Apps mit Adobe AIR® ausgeführt werden, eine Verbindung zum Server herstellen.
+**AIR:** Ermöglicht Geräten, auf denen Apps auf Adobe AIR® basieren, eine Verbindung zum Server herzustellen.
 
 **BlackBerry:** Ermöglicht BlackBerry-Geräten die Verbindung zum Server.
 
-**Android Microsoft Exchange ActiveSync erforderlich:** Gibt an, ob Microsoft Exchange ActiveSync Policy Manager (EAS) auf Android-Geräten installiert und aktiv sein muss. Wenn diese Option aktiviert ist, muss EAS auf dem Android-Gerät erzwungen werden. Wenn diese Option nicht ausgewählt ist, wird keine Überprüfung durchgeführt, auch wenn andere Anforderungen noch erzwungen werden.
+**Android Microsoft Exchange ActiveSync erforderlich:** Gibt an, ob Microsoft Exchange ActiveSync Policy Manager (EA) auf Android-Geräten installiert und aktiv sein muss. Wenn diese Option aktiviert ist, müssen EA auf dem Android-Gerät erzwungen werden. Wenn diese Option nicht ausgewählt ist, wird keine Überprüfung durchgeführt, auch wenn andere Anforderungen noch erzwungen werden.
 
-**Android-PIN-Mindestlänge:** Android-Geräte müssen über eine globale Einstellung verfügen, die erzwingt, dass die PIN oder das Kennwort mindestens diese Länge hat. Einfach nur eine PIN der angegebenen Länge zu haben, reicht nicht aus. Die PIN-Länge muss vom System erzwungen werden, damit Benutzer die PIN nicht später entfernen oder verkürzen können. Der Standardwert ist 4.     
+**Android-PIN-Mindestlänge:** Android-Geräte müssen über eine globale Einstellung verfügen, die erzwingt, dass die PIN oder das Kennwort mindestens diese Länge hat. Einfach nur eine PIN der angegebenen Länge zu haben, reicht nicht aus. Die PIN-Länge muss vom System erzwungen werden, damit Benutzer die PIN nicht später entfernen oder verkürzen können. Der Standardwert ist 4.         
 
-**Maximale Kennworteingabe für Android vor dem Bereinigen:** Android-Geräte verfügen über eine globale Einstellung, mit der das System nach einer bestimmten Anzahl von Versuchen mit einem ungültigen Kennwort gelöscht wird. Diese globale Einstellung ist aktiviert und ist gleich oder niedriger als der hier angegebene Wert. Der Standardwert ist 5.     
+**Maximale Kennworteingabe für Android vor dem Bereinigen:** Android-Geräte verfügen über eine globale Einstellung, mit der das System nach einer bestimmten Anzahl von Versuchen mit einem ungültigen Kennwort gelöscht wird. Diese globale Einstellung ist aktiviert und ist gleich oder niedriger als der hier angegebene Wert. Der Standardwert ist 5.         
 
 **Android-Bereinigung beim Entfernen:** Gibt an, was passiert, wenn auf einem Android-Gerät eine Richtlinienverletzung auftritt. Wenn diese Option aktiviert ist, wird das Konto gelöscht. Wenn diese Option nicht ausgewählt ist, werden das gespeicherte Kontokennwort und die zwischengespeicherten Daten gelöscht. Es werden keine Synchronisierungsversuche mehr durchgeführt, bis der Benutzer die Richtlinienverletzung behebt.
 
@@ -484,7 +484,7 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **PS-Startdatei:** Der Name der für Adobe Acrobat Distiller erforderlichen Startdatei. Der Standardwert ist example.ps.
 
-**Server-Konvertierungstimeout:** Der maximale Auftragskonvertierungstimeout (in Sekunden) für den Generate PDF-Dienst und den Distiller-Dienst. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.     
+**Server-Konvertierungstimeout:** Der maximale Auftragskonvertierungstimeout (in Sekunden) für den Generate PDF-Dienst und den Distiller-Dienst. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.         
 
 **Server Global Timeout:** Bei der Ausführung von PDF-Konvertierungen berücksichtigt ein Formularserver die Timeout-Grenze. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
 
@@ -492,7 +492,7 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **Nicht-Unicode-Apps:** Eine kommagetrennte Liste von Anwendungsnamen, von denen bekannt ist, dass sie Unicode nicht unterstützen. Diese Liste enthält bereits die Namen einer Reihe von Anwendungen, für die die Unterstützung in PDF Generator vorkonfiguriert ist. Wenn Sie die Unterstützung von PDF-Konvertierungen durch weitere Anwendungen von Drittanbietern ermöglichen möchten, die Unicode nicht unterstützen, müssen Sie sie dieser Liste hinzufügen. Der Standardwert ist Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
 
-**Threadpool-Server-Anzahl:** Steuert die Größe des Threadpools, den der Generate PDF-Dienst intern zum Dienst von HTML-in-PDF-Konvertierungsanforderungen verwendet, die Spidern beinhalten (Konvertieren verknüpfter Seiten, auf die von der Hauptseite zugegriffen werden kann). Der Standardwert ist 20.     
+**Threadpool-Server-Anzahl:** Steuert die Größe des Threadpools, den der Generate PDF-Dienst intern zum Dienst von HTML-in-PDF-Konvertierungsanforderungen verwendet, die Spidern beinhalten (Konvertieren verknüpfter Seiten, auf die von der Hauptseite zugegriffen werden kann). Der Standardwert ist 20.         
 
 **PDFG-Bereinigungsprüfung (Sekunden):** Weitere Informationen finden Sie im Abschnitt &quot;Auftragsablauf (Sekunden)&quot;.
 
@@ -520,7 +520,7 @@ Die meisten Dienste sind so konfiguriert, dass Sie mit AEM Forms Remoting (nicht
 
 Folgende Einstellungen sind für den Remoting-Dienst verfügbar:
 
-**Flex-Client-Authentifizierungsmethode:** Bestimmt den Typ der Antwort, die der Server an den Client zurücksendet, wenn der aufgerufene Dienst für Sicherheit aktiviert ist, der aufgerufene Vorgang keine anonymen Aufrufe unterstützt und der Client keine oder ungültige Anmeldeinformationen übergibt. Sie können zwischen „Benutzerdefiniert“ und „Standard“ wählen. Der Standardwert ist Standard.
+**Flex Client-Authentifizierungsmethode:** Bestimmt den Typ der Antwort, die der Server an den Client zurücksendet, wenn der aufgerufene Dienst für Sicherheit aktiviert ist, der aufgerufene Vorgang keine anonymen Aufrufe unterstützt und der Client keine oder ungültige Anmeldeinformationen übergibt. Sie können zwischen „Benutzerdefiniert“ und „Standard“ wählen. Der Standardwert ist Standard.
 
 **Serialisierung nicht serialisierbarer Klassen zulassen:** Die meisten AEM Forms-Endpunkte lassen nur serialisierbare Klassen für den Aufruf zu. In älteren Versionen ermöglichte der Remoting-Endpunkt die Verwendung von nicht serialisierbaren Klassen für den Aufruf von Flex-basierten Clients. Um zu verhindern, dass eine Sicherheitslücke wie unter APS11-15 beschrieben auftritt, wurde dies geändert.  Wenn Sie weiterhin nicht serialisierbare Klassen mit dem Flex-Remoting-Endpunkt verwenden möchten, wählen Sie dieses Kontrollkästchen aus.
 
@@ -562,7 +562,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Maximum Size of Revocation Archival Info:** Die maximale Größe der Sperrinformationen in Kilobyte. AEM Forms versucht, so viele Sperrinformationen wie möglich zu speichern, ohne diesen Grenzwert zu überschreiten. Der Standardwert ist 10 KB.
 
-**Support Signatures Created from PreRelease Builds of Adobe Products:** Wenn diese Option aktiviert ist, wird eine Signatur, die mit einer Vorabversion von Adobe-Produkten erstellt wurde, korrekt validiert. Der Standardwert lautet false.
+**Support Signatures Created from PreRelease Builds of Adobe Products:** Wenn diese Option aktiviert ist, wird eine Signatur, die mit einer Vorabversion der Adobe erstellt wurde, korrekt validiert. Der Standardwert lautet false.
 
 **Überprüfungszeitoption:** Gibt den Zeitpunkt der Überprüfung des Zertifikats eines Unterzeichners an. Der Standardwert ist „Secure Time Else Current Time“.
 
@@ -570,7 +570,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Verwenden Sie die im Dokument für die Validierung von Signaturen gespeicherten Validierungsinformationen:** Wenn diese Option aktiviert ist, werden die im Dokument eingebetteten Überprüfungsinformationen (einschließlich Sperr- und Zeitstempelinformationen) zur Überprüfung von Unterschriften verwendet. Der Standardwert lautet true.
 
-**Maximale Anzahl verschachtelter Überprüfungssitzungen zulässig:** Die maximal zulässige Anzahl verschachtelter Überprüfungssitzungen. AEM Forms verhindert mithilfe dieses Wertes die Entstehung einer Endlosschleife bei der Überprüfung der OCSP- bzw. Zertifikatsperrlisten-Signiererzertifikate, wenn das OCSP- bzw. Zertifikatsperrlistenzertifikat nicht ordnungsgemäß eingerichtet ist. Der Standardwert ist 10.     
+**Maximale Anzahl verschachtelter Überprüfungssitzungen zulässig:** Die maximal zulässige Anzahl verschachtelter Überprüfungssitzungen. AEM Forms verhindert mithilfe dieses Wertes die Entstehung einer Endlosschleife bei der Überprüfung der OCSP- bzw. Zertifikatsperrlisten-Signiererzertifikate, wenn das OCSP- bzw. Zertifikatsperrlistenzertifikat nicht ordnungsgemäß eingerichtet ist. Der Standardwert ist 10.         
 
 **Maximale Uhrzeitabweichung zur Überprüfung:** Die maximale Zeit (in Minuten), die die Signaturzeit nach der Überprüfungszeit sein kann. Wenn die Uhrzeitabweichung diesen Wert überschreitet, ist die Signatur nicht gültig. Der Standardwert ist 65 Minuten.
 
@@ -580,7 +580,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Proxy-Host:** Die URL des Proxyhosts. Wird nur verwendet, wenn ein gültiger Wert angegeben ist. Kein Standardwert.
 
-**Proxy-Anschluss:** Der Proxyanschluss. Geben Sie eine gültige Anschlussnummer zwischen 0 und 65535 ein. Der Standardwert ist 80.     
+**Proxy-Anschluss:** Der Proxyanschluss. Geben Sie eine gültige Anschlussnummer zwischen 0 und 65535 ein. Der Standardwert ist 80.         
 
 **Proxy Login Username:** Der Benutzername für die Proxyanmeldung. Wird nur verwendet, wenn gültige Werte für den Proxyhost und den Proxyanschluss angegeben wurden. Kein Standardwert.
 
@@ -690,13 +690,13 @@ Folgende Einstellungen sind für den Watched Folder-Dienst verfügbar:
 
 **Wiederholungszahl:** Die Häufigkeit, mit der der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet uneingeschränktes Überprüfen des Ordners („unendlich“). Der Standardwert ist -1.
 
-**Wiederholungsintervall:** Die Standardanzahl, wenn Sekunden zwischen den einzelnen Umfragen liegen. Dieser Wert wird als Wiederholungsintervall verwendet, sofern in der Endpunktkonfiguration für den überwachten Ordner kein anderer Wert angegeben ist. Der Standardwert ist 5.     Weitere Informationen finden Sie in der Beschreibung der Einstellung „Stapelgröße“.
+**Wiederholungsintervall:** Die Standardanzahl, wenn Sekunden zwischen den einzelnen Umfragen liegen. Dieser Wert wird als Wiederholungsintervall verwendet, sofern in der Endpunktkonfiguration für den überwachten Ordner kein anderer Wert angegeben ist. Der Standardwert ist 5.         Weitere Informationen finden Sie in der Beschreibung der Einstellung „Stapelgröße“.
 
 **Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
 
 **Wartezeit:** Der Standardwert für die Zeit in Sekunden, nach der die Dateien aus den Eingabeordnern abgerufen werden. Wenn Dateien oder Ordner älter sind als die in „Wartezeit“ angegebene Zeit, werden sie zur Verarbeitung abgerufen. Der Standardwert ist 0.
 
-**Stapelgröße:** Der Standardwert für die Anzahl der Dateien oder Ordner, die pro Überprüfung verarbeitet werden. Der Standardwert ist 2.     
+**Stapelgröße:** Der Standardwert für die Anzahl der Dateien oder Ordner, die pro Überprüfung verarbeitet werden. Der Standardwert ist 2.         
 
 Die Einstellungen für Wiederholungsintervall und Stapelgröße bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der Watched Folder-Dienst verwendet einen Quartz-Threadpool, um den Eingabeordner zu überprüfen. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können. 
 
@@ -743,7 +743,7 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachte
 
 **Bei Fehler beibehalten:** Wenn &quot;true&quot;, werden Originaldateien bei einem Fehler im Fehlerordner beibehalten.
 
-**Flasche:** Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeitet. Der Wert für die Stapelgröße bestimmt die maximale Anzahl an Aufträgen (siehe Informationen zu Einschränkungen).
+**Flasche:** Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die Formulare zu jeder Zeit AEM. Der Wert für die Stapelgröße bestimmt die maximale Anzahl an Aufträgen (siehe Informationen zu Einschränkungen).
 
 ## Einstellungen des Web Service-Dienstes {#web-service-service-settings}
 
