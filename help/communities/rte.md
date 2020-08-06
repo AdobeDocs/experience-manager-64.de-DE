@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 4%
 
 ---
 
 
 # Rich Text Editor Essentials {#rich-text-editor-essentials}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ein Rich Text Editor (RTE) bietet die Möglichkeit, Text mit Markup einzugeben.
 
-Bei Communities-Komponenten wirkt sich dies ähnlich wie der [Rich-Text-Editor in der Autorenumgebung](../../help/sites-authoring/rich-text-editor.md)auf den in der Veröffentlichungsumgebung eingegebenen Text aus.
+Bei Communities-Komponenten wirkt sich dies ähnlich wie der [Rich-Text-Editor in der Autorendatei](../../help/sites-authoring/rich-text-editor.md)auf den in der Umgebung &quot;Veröffentlichen&quot;eingegebenen Text aus.
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -54,11 +57,11 @@ Das Ändern der clientlib cq.social.scf wird nicht empfohlen, da zukünftige Upg
 
 ### Beispielanpassung: Inline-Links {#example-customization-inline-links}
 
-Aus Sicherheitsgründen sind die Hyperlink-Optionen nicht in den Rich-Text-Symbolen enthalten, die Mitgliedern standardmäßig angezeigt werden. Die Fähigkeit zur Unschädlichkeit ist umfassend, wenn href in UGC erlaubt sind.
+Aus Sicherheitsgründen sind die Hyperlink-Optionen nicht in den Rich-Text-Symbolen enthalten, die den Mitgliedern standardmäßig angezeigt werden. Die Fähigkeit zur Unschädlichkeit ist umfassend, wenn href in UGC erlaubt sind.
 
 So fügen Sie der Symbolleiste Hyperlink-Optionen hinzu:
 
-* Symbolleiste mit dem Namen `links`&quot;
+* Hinzufügen einer Werkzeugleiste mit dem Namen `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Select **[!UICONTROL Save All]**
 
