@@ -1,6 +1,6 @@
 ---
-title: Verarbeiten gesendeter Formulare
-seo-title: Verarbeiten gesendeter Formulare
+title: Bearbeitung von übermittelten Forms
+seo-title: Bearbeitung von übermittelten Forms
 description: 'null'
 seo-description: 'null'
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
@@ -12,15 +12,18 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
 source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+workflow-type: tm+mt
+source-wordcount: '2867'
+ht-degree: 2%
 
 ---
 
 
-# Verarbeiten gesendeter Formulare {#handling-submitted-forms}
+# Bearbeitung von übermittelten Forms {#handling-submitted-forms}
 
 Webbasierte Anwendungen, die es einem Benutzer ermöglichen, interaktive Formulare auszufüllen, erfordern, dass die Daten an den Server zurückgesendet werden. Mit dem Forms-Dienst können Sie die Daten abrufen, die der Benutzer in ein interaktives Formular eingegeben hat. Nachdem Sie die Daten abgerufen haben, können Sie die Daten entsprechend Ihren Geschäftsanforderungen verarbeiten. Sie können beispielsweise die Daten in einer Datenbank speichern, die Daten an eine andere Anwendung senden, die Daten an einen anderen Dienst senden, die Daten in einem Formularentwurf zusammenführen, die Daten in einem Webbrowser anzeigen usw.
 
-Formulardaten werden als XML- oder PDF-Daten an den Forms-Dienst gesendet. Dies ist eine Option, die in Designer festgelegt ist. Mit einem als XML gesendeten Formular können Sie einzelne Felddatenwerte extrahieren. Das heißt, Sie können den Wert jedes Formularfelds extrahieren, das der Benutzer in das Formular eingegeben hat. Ein Formular, das als PDF-Daten übermittelt wird, sind Binärdaten, nicht XML-Daten. Sie können das Formular als PDF-Datei speichern oder an einen anderen Dienst senden. Wenn Sie Daten aus einem als XML gesendeten Formular extrahieren und dann mithilfe der Formulardaten ein PDF-Dokument erstellen möchten, rufen Sie einen anderen AEM Forms-Vorgang auf. (Siehe [Erstellen von PDF-Dokumenten mit gesendeten XML-Daten](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+Formulardaten werden entweder als XML- oder als PDF-Daten an den Forms-Dienst gesendet. Dies ist eine Option, die in Designer festgelegt ist. Mit einem als XML gesendeten Formular können Sie einzelne Felddatenwerte extrahieren. Das heißt, Sie können den Wert jedes Formularfelds extrahieren, das der Benutzer in das Formular eingegeben hat. Ein Formular, das als PDF-Daten übermittelt wird, sind Binärdaten, nicht XML-Daten. Sie können das Formular als PDF-Datei speichern oder an einen anderen Dienst senden. Wenn Sie Daten aus einem als XML gesendeten Formular extrahieren und dann mithilfe der Formulardaten ein PDF-Dokument erstellen möchten, rufen Sie einen anderen AEM Forms-Vorgang auf. (Siehe [Erstellen von PDF-Dokumenten mit gesendeten XML-Daten](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 Das folgende Diagramm zeigt Daten, die an ein Java-Servlet gesendet werden, das `HandleData` aus einem interaktiven Formular in einem Webbrowser benannt ist.
 
@@ -89,7 +92,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Der Forms-Dienst rendert ein interaktives PDF-Formular an den Client-Webbrowser.</p></td>
+   <td><p>Der Forms-Dienst rendert ein interaktives PDF-Formular im Client-Webbrowser.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -104,7 +107,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
 
 ## Verarbeiten gesendeter URL UTF-16-Daten {#handling-submitted-url-utf-16-data}
 
-Wenn Formulardaten als URL-UTF-16-Daten gesendet werden, erfordert der Clientcomputer Adobe Reader oder Acrobat 8.1 oder höher. Enthält der Formularentwurf eine Senden-Schaltfläche mit URL-kodierten Daten (HTTP Post) und die Datenkodierungsoption UTF-16, muss der Formularentwurf in einem Texteditor wie Notepad geändert werden. Sie können für die Kodierungsoption entweder `UTF-16LE` oder `UTF-16BE` für die Senden-Schaltfläche festlegen. Designer bietet diese Funktion nicht.
+Wenn Formulardaten als URL-UTF-16-Daten übermittelt werden, erfordert der Clientcomputer Adobe Reader oder Acrobat 8.1 oder höher. Enthält der Formularentwurf eine Senden-Schaltfläche mit URL-kodierten Daten (HTTP Post) und die Datenkodierungsoption UTF-16, muss der Formularentwurf in einem Texteditor wie Notepad geändert werden. Sie können für die Kodierungsoption entweder `UTF-16LE` oder `UTF-16BE` für die Senden-Schaltfläche festlegen. Designer bietet diese Funktion nicht.
 
 >[!NOTE]
 >
@@ -124,13 +127,13 @@ So verarbeiten Sie gesendete Formulare:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxydateien einschließen.
 
-**Erstellen eines Forms Client-API-Objekts**
+**Forms Client API-Objekt erstellen**
 
 Bevor Sie einen Forms-Dienst-Client-API-Vorgang programmgesteuert durchführen können, müssen Sie einen Forms-Dienstclient erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `FormsServiceClient` Objekt. Wenn Sie die Forms-Webdienst-API verwenden, erstellen Sie ein `FormsService` Objekt.
 
 **Formulardaten abrufen**
 
-Um gesendete Formulardaten abzurufen, rufen Sie die `FormsServiceClient` Methode des `processFormSubmission` Objekts auf. Beim Aufrufen dieser Methode müssen Sie den Inhaltstyp des gesendeten Formulars angeben. Wenn Daten von einem Client-Webbrowser an den Forms-Dienst gesendet werden, können sie als XML- oder PDF-Daten gesendet werden. Zum Abrufen der in Formularfelder eingegebenen Daten können die Daten als XML-Daten gesendet werden.
+Um gesendete Formulardaten abzurufen, rufen Sie die `FormsServiceClient` Methode des `processFormSubmission` Objekts auf. Beim Aufrufen dieser Methode müssen Sie den Inhaltstyp des gesendeten Formulars angeben. Wenn Daten von einem Client-Webbrowser an den Forms-Dienst gesendet werden, können sie als XML- oder PDF-Daten übermittelt werden. Zum Abrufen der in Formularfelder eingegebenen Daten können die Daten als XML-Daten gesendet werden.
 
 Sie können Formularfelder auch aus einem als PDF-Daten gesendeten Formular abrufen, indem Sie die folgenden Laufzeitoptionen festlegen:
 
@@ -146,9 +149,9 @@ Sie geben den Inhaltstyp des gesendeten Formulars an, wenn Sie die `processFormS
 
 >[!NOTE]
 >
->Sie werden feststellen, dass dem Abschnitt &quot;Verarbeiten gesendeter Formulare&quot;drei entsprechende schnelle Beginn zugeordnet sind. Das Verarbeiten von PDF-Formularen, die als PDF mit dem Java API-Quick-Beginn übermittelt wurden, zeigt, wie gesendete PDF-Daten verarbeitet werden. Der in diesem Quick-Beginn angegebene Inhaltstyp ist `application/pdf`. Das Verarbeiten von PDF-Formularen, die als XML mit dem Java-API-Quick-Beginn gesendet wurden, zeigt, wie gesendete XML-Daten, die von einem PDF-Formular gesendet wurden, verarbeitet werden. Der in diesem Quick-Beginn angegebene Inhaltstyp ist `text/xml`. Gleichermaßen zeigt der Handling-HTML-Formulare, die mit dem Java-API-Quick-Beginn als XML gesendet wurden, wie gesendete XML-Daten, die von einem HTML-Formular gesendet wurden, verarbeitet werden. Der in diesem Quick-Beginn angegebene Inhaltstyp lautet application/x-www-form-urlencoded.
+>Sie werden feststellen, dass dem Abschnitt &quot;Bearbeitung gesendet am Forms&quot;drei entsprechende schnelle Beginn zugeordnet sind. Die als PDF gesendeten PDF forms mit dem Java-API-Quick-Beginn zeigen, wie gesendete PDF-Daten verarbeitet werden. Der in diesem Quick-Beginn angegebene Inhaltstyp ist `application/pdf`. Die PDF forms, die mit dem Java-API-Quick-Beginn als XML gesendet wurden, zeigen, wie gesendete XML-Daten, die von einem PDF-Formular gesendet wurden, verarbeitet werden. Der in diesem Quick-Beginn angegebene Inhaltstyp ist `text/xml`. Gleichermaßen zeigt der Handling-HTML-Formulare, die mit dem Java-API-Quick-Beginn als XML gesendet wurden, wie gesendete XML-Daten, die von einem HTML-Formular gesendet wurden, verarbeitet werden. Der in diesem Quick-Beginn angegebene Inhaltstyp lautet application/x-www-form-urlencoded.
 
-Sie rufen Formulardaten ab, die an den Forms-Dienst gesendet wurden, und bestimmen den Verarbeitungsstatus. Das heißt, wenn Daten an den Forms-Dienst gesendet werden, bedeutet dies nicht unbedingt, dass die Verarbeitung der Daten durch den Forms-Dienst abgeschlossen ist und die Daten verarbeitet werden können. Beispielsweise können Daten an den Forms-Dienst gesendet werden, damit eine Berechnung durchgeführt werden kann. Nach Abschluss der Berechnung wird das Formular mit den angezeigten Berechnungsergebnissen an den Benutzer zurückgegeben. Bevor Sie gesendete Daten verarbeiten, sollten Sie überprüfen, ob der Forms-Dienst die Verarbeitung der Daten abgeschlossen hat.
+Sie rufen Formulardaten ab, die an den Forms-Dienst gesendet wurden, und bestimmen den Verarbeitungsstatus. Das heißt, wenn Daten an den Forms-Dienst übermittelt werden, bedeutet dies nicht unbedingt, dass der Forms-Dienst die Verarbeitung der Daten abgeschlossen hat und die Daten verarbeitet werden können. Beispielsweise können Daten an den Forms-Dienst gesendet werden, damit eine Berechnung durchgeführt werden kann. Nach Abschluss der Berechnung wird das Formular mit den angezeigten Berechnungsergebnissen an den Benutzer zurückgegeben. Bevor Sie gesendete Daten verarbeiten, sollten Sie ermitteln, ob der Forms-Dienst die Verarbeitung der Daten abgeschlossen hat.
 
 Der Forms-Dienst gibt die folgenden Werte zurück, um anzugeben, ob die Verarbeitung der Daten abgeschlossen ist:
 
@@ -164,7 +167,7 @@ Der Forms-Dienst gibt die folgenden Werte zurück, um anzugeben, ob die Verarbei
 
 **Stellen Sie fest, ob die Formularübermittlung Dateianlagen enthält.**
 
-Formulare, die an den Forms-Dienst gesendet werden, können Dateianlagen enthalten. Beispielsweise kann ein Benutzer mithilfe des in Acrobat integrierten Anlagenbereichs Dateianlagen auswählen, die zusammen mit dem Formular gesendet werden sollen. Außerdem kann ein Benutzer Dateianlagen auch über eine HTML-Symbolleiste auswählen, die mit einer HTML-Datei wiedergegeben wird.
+Forms, das an den Forms-Dienst gesendet wird, kann Dateianlagen enthalten. Beispielsweise kann ein Benutzer im integrierten Anlagenbereich von Acrobat Dateianlagen auswählen, die zusammen mit dem Formular gesendet werden sollen. Außerdem kann ein Benutzer Dateianlagen auch über eine HTML-Symbolleiste auswählen, die mit einer HTML-Datei wiedergegeben wird.
 
 Nachdem Sie festgestellt haben, ob ein Formular Dateianhänge enthält, können Sie die Daten verarbeiten. Sie können die Dateianlage beispielsweise im lokalen Dateisystem speichern.
 
@@ -184,9 +187,9 @@ Je nach Inhaltstyp der gesendeten Daten können Sie einzelne Formularfeldwerte a
 
 [Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Übergeben von Dokumenten an den Forms-Dienst](/help/forms/developing/passing-documents-forms-service.md)
+[Weiterleiten von Dokumenten an den Forms-Dienst](/help/forms/developing/passing-documents-forms-service.md)
 
-[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Erstellen von Webanwendungen zum Rendern von Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Verarbeiten gesendeter Formulare mit der Java-API {#handle-submitted-forms-using-the-java-api}
 
@@ -196,7 +199,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-forms-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
 
-1. Erstellen eines Forms Client-API-Objekts
+1. Forms Client API-Objekt erstellen
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -205,9 +208,10 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
    * Um Formulardaten abzurufen, die an ein Java-Servlet gesendet wurden, erstellen Sie ein `com.adobe.idp.Document` Objekt mit dem Konstruktor und rufen Sie die `javax.servlet.http.HttpServletResponse` Objektmethode im Konstruktor `getInputStream` auf.
    * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Wert für das Gebietsschema fest, indem Sie die `RenderOptionsSpec` Methode des `setLocale` Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt.
+
    >[!NOTE]
    >
-   >Sie können den Forms-Dienst anweisen, XDP- oder XML-Daten aus gesendeten PDF-Inhalten zu erstellen, indem Sie die `RenderOptionsSpec` Methode des Objekts aufrufen und weitergeben `setPDF2XDP` sowie aufrufen `true` und weitergeben `setXMLData` `true`. Anschließend können Sie die `FormsResult` Methode des `getOutputXML` Objekts aufrufen, um die XML-Daten abzurufen, die den XDP-/XML-Daten entsprechen. (Das `FormsResult` Objekt wird von der `processFormSubmission`*-Methode zurückgegeben, die im nächsten Unterschritt erläutert wird.)*
+   >Sie können den Forms-Dienst anweisen, XDP- oder XML-Daten aus gesendeten PDF-Inhalten zu erstellen, indem Sie die `RenderOptionsSpec` Objektmethode aufrufen und weitergeben `setPDF2XDP` sowie aufrufen `true` und weitergeben `setXMLData` `true`. Anschließend können Sie die `FormsResult` Methode des `getOutputXML` Objekts aufrufen, um die XML-Daten abzurufen, die den XDP-/XML-Daten entsprechen. (Das `FormsResult` Objekt wird von der `processFormSubmission`*-Methode zurückgegeben, die im nächsten Unterschritt erläutert wird.)*
 
    * Rufen Sie die `FormsServiceClient` Objektmethode `processFormSubmission` auf und übergeben Sie die folgenden Werte:
 
@@ -215,6 +219,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
       * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
       * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Dieser Parameterwert ist optional.
       * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert.
+
       Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult` Objektmethode `getAction` aufrufen. Wenn diese Methode den Wert zurückgibt `0`, können die Daten verarbeitet werden.
@@ -225,6 +230,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
    * Rufen Sie die `FormsResult` Methode des `getAttachments` Objekts auf. Diese Methode gibt ein `java.util.List` Objekt zurück, das Dateien enthält, die mit dem Formular gesendet wurden.
    * Durchlaufen Sie das `java.util.List` Objekt, um festzustellen, ob Dateianlagen vorhanden sind. Wenn Dateianlagen vorhanden sind, ist jedes Element eine `com.adobe.idp.Document` Instanz. Sie können die Dateianlagen speichern, indem Sie die `com.adobe.idp.Document` Methode des `copyToFile` Objekts aufrufen und ein `java.io.File` Objekt übergeben.
+
    >[!NOTE]
    >
    >Dieser Schritt ist nur relevant, wenn das Formular als PDF gesendet wird.
@@ -248,11 +254,11 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
 **Siehe auch**
 
-[Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als XML mit der Java-API gesendet werden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als XML mit der Java-API gesendet werden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
 [Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als PDF mit der Java-API gesendet werden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als PDF mit der Java-API gesendet wurden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -260,14 +266,14 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
 ## Verarbeiten gesendeter PDF-Daten mit der Webdienst-API {#handle-submitted-pdf-data-using-the-web-service-api}
 
-Verarbeiten eines gesendeten Formulars mit der Forms API (Webdienst):
+Verarbeiten Sie ein gesendetes Formular mit der Forms API (Webdienst):
 
 1. Projektdateien einschließen
 
    * Erstellen Sie Java-Proxyklassen, die die Forms-Dienst-WSDL verwenden.
    * Schließen Sie die Java-Proxyklassen in Ihren Klassenpfad ein.
 
-1. Erstellen eines Forms Client-API-Objekts
+1. Forms Client API-Objekt erstellen
 
    Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
@@ -293,6 +299,7 @@ Verarbeiten eines gesendeten Formulars mit der Forms API (Webdienst):
       * Ein leeres `javax.xml.rpc.holders.ShortHolder` Objekt, das von der Methode gefüllt wird.
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder` Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianlagen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder` Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
+
       Die `processFormSubmission` Methode füllt den `FormsResultHolder` Parameter mit den Ergebnissen der Formularübermittlung.
 
    * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult` Objektmethode `getAction` aufrufen. Wenn diese Methode den Wert zurückgibt `0`, können die Formulardaten verarbeitet werden. Sie können ein `FormsResult` Objekt abrufen, indem Sie den Wert des `FormsResultHolder` Datenelements des `value` Objekts abrufen.
@@ -324,4 +331,4 @@ Verarbeiten eines gesendeten Formulars mit der Forms API (Webdienst):
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
