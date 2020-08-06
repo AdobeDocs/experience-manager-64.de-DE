@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +94,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
  </tbody> 
 </table>
 
-## Häufig gestellte Fragen (FAQ){#faq}
+## Frage  {#faq}
 
 Weitere Einzelheiten finden Sie im Knowledge Base-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), darunter Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
 
