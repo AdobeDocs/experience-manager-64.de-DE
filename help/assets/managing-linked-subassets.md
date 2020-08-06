@@ -1,6 +1,6 @@
 ---
 title: Verwalten Sie zusammengesetzte Assets und erstellen Sie Teilassets.
-description: Hier erfahren Sie, wie Sie Verweise auf AEM-Assets aus InDesign-, Adobe Illustrator- und Fotoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
+description: Erfahren Sie, wie Sie Verweise auf AEM Assets aus InDesign-, Adobe Illustrator- und Photoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
@@ -58,7 +58,7 @@ Dieses Verfahren weist Ähnlichkeiten zur in [Hinzufügen von AEM-Assets als Ref
 
 1. Perform the steps in [Creating Workflow Models](/help/sites-developing/workflows-models.md) to create a new workflow.
 1. Verwenden Sie die Paketfunktion von Adobe InDesign, um das Dokument zu exportieren.
-Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner den Ordner &quot;Links&quot;, der in der InDesign-Datei enthaltene Teilassets enthält.
+Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner den Ordner &quot;Links&quot;, der in der InDesign Unterelemente enthält.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das AEM-Repository hoch.
 1. Starten Sie den Unarchiver-Workflow.
 1. Wenn der Workflow abgeschlossen ist, werden die Referenzen im Link-Ordner automatisch als Teil-Assets referenziert. Um eine Liste der referenzierten Assets anzuzeigen, navigieren Sie zur Asset-Detailseite des InDesign-Assets und schließen Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector).
@@ -83,7 +83,7 @@ Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportier
 
 ## Erstellen von Teilassets {#generate-subassets}
 
-Für die unterstützten Assets mit mehrseitigen Formaten — PDF-Dateien, AI-Dateien, Microsoft PowerPoint- und Apple Keynote-Dateien und Adobe InDesign-Dateien — AEM kann Teilassets generieren, die jeder einzelnen Seite des ursprünglichen Assets entsprechen. Diese Teilassets sind mit dem *übergeordneten* Asset verknüpft und erleichtern die mehrseitige Ansicht. Für alle anderen Zwecke werden die Teilassets in AEM wie normale Assets behandelt.
+Für die unterstützten Assets mit mehrseitigen Formaten — PDF-Dateien, AI-Dateien, Microsoft PowerPoint- und Apple Keynote-Dateien und Adobe InDesign-Dateien — AEM können Teilassets generieren, die den einzelnen Seiten des ursprünglichen Assets entsprechen. Diese Teilassets sind mit dem *übergeordneten* Asset verknüpft und erleichtern die mehrseitige Ansicht. Für alle anderen Zwecke werden die Teilassachen in AEM wie normale Vermögenswerte behandelt.
 
 Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um die Erzeugung von Teilassets zu aktivieren:
 
@@ -93,7 +93,7 @@ Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie f
 
 Führen Sie zum Generieren der Teilassets einen der folgenden Schritte aus:
 
-* Neue Assets: Der Arbeitsablauf [!UICONTROL DAM-Aktualisierung für Assets] wird für jedes neue Asset ausgeführt, das auf AEM hochgeladen wird. Teilassets werden automatisch für neue mehrseitige Assets generiert.
+* Neue Assets: Der Arbeitsablauf [!UICONTROL DAM-Aktualisierung für Assets] wird für jedes neue Asset ausgeführt, das in AEM hochgeladen wird. Teilassets werden automatisch für neue mehrseitige Assets generiert.
 * Vorhandene mehrseitige Assets: Führen Sie den Arbeitsablauf [!UICONTROL DAM Update Assets] manuell aus, indem Sie einen der folgenden Schritte ausführen:
 
    * Wählen Sie ein Asset aus und klicken Sie auf [!UICONTROL Zeitschiene] , um das linke Bedienfeld zu öffnen. Alternately, use the keyboard shortcut `alt + 3`. Klicken Sie auf [!UICONTROL Beginn Workflow], wählen Sie [!UICONTROL DAM Update Asset], klicken Sie auf [!UICONTROL Beginn]und dann auf [!UICONTROL Fortfahren].
@@ -109,7 +109,7 @@ Die Teilassets werden nur angezeigt, wenn die Teilassets generiert wurden und f�
 
 ## Anzeigen von Seiten einer mehrseitigen Datei  {#view-pages-of-a-multi-page-file}
 
-Sie können eine mehrseitige Ansicht, z. B. PDF-, INDD-, PPT-, PPTX- und AI-Datei, über die Funktion &quot;Seiten-Viewer&quot;von AEM Assets durchführen. Öffnen Sie ein mehrseitiges Asset und klicken Sie links oben auf der Seite auf &quot; **[!UICONTROL Ansichten]** &quot;. Der daraufhin geöffnete Seiten-Viewer zeigt die Seiten des Assets und die Steuerelemente zum Durchsuchen und Zoomen der einzelnen Seiten an.
+Sie können eine mehrseitige Datei, wie z. B. PDF, INDD, PPT, PPTX und AI, mit der Seitenanzeigefunktion von AEM Assets Ansicht werden. Öffnen Sie ein mehrseitiges Asset und klicken Sie links oben auf der Seite auf &quot; **[!UICONTROL Ansichten]** &quot;. Der daraufhin geöffnete Seiten-Viewer zeigt die Seiten des Assets und die Steuerelemente zum Durchsuchen und Zoomen der einzelnen Seiten an.
 
 ![Ansicht und Anzeige von Seiten eines mehrseitigen Assets](assets/view_multipage_asset_fmr.gif)
 
@@ -117,7 +117,7 @@ In InDesign können Sie Seiten mithilfe des InDesign-Servers extrahieren. Wenn d
 
 Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in den Seiten-Viewer-Steuerelementen zur Verfügung:
 
-* **[!UICONTROL Desktop-Aktionen]** zum Öffnen oder Einblenden eines bestimmten Unterassets mit der AEM-Desktop-App. Erfahren Sie, wie Sie Desktop-Aktionen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) konfigurieren, wenn Sie die AEM-Desktop-App verwenden.
+* **[!UICONTROL Desktop-Aktionen]** zum Öffnen oder Einblenden eines bestimmten Unterassets mit AEM Desktop-App. Erfahren Sie, wie Sie Desktop-Aktionen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) konfigurieren, wenn Sie AEM Desktop-App verwenden.
 
 * **[!UICONTROL Mit der Option &quot;Eigenschaften]** &quot;wird die Seite &quot; [!UICONTROL Eigenschaften] &quot;des jeweiligen Unterassets geöffnet.
 
@@ -129,7 +129,7 @@ Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in d
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 
-* Die Erzeugung von Teilassets kann bei jeder Experience Manager-Bereitstellung sehr ressourcenintensiv sein. Wenn Sie beim Hochladen komplexer Assets Teilassets generieren, fügen Sie den Schritt im DAM-Arbeitsablauf zum Aktualisieren von Assets hinzu. Wenn Sie bei Bedarf Teilassets erstellen, erstellen Sie einen separaten Workflow, um Teilassets zu generieren. Ein dedizierter Arbeitsablauf ermöglicht es Ihnen, die anderen Schritte im DAM Update Asset-Arbeitsablauf zu überspringen und Rechenressourcen zu speichern.
+* Die Erzeugung von Teilassets kann bei jeder Bereitstellung von Experience Managern sehr ressourcenintensiv sein. Wenn Sie beim Hochladen komplexer Assets Teilassets generieren, fügen Sie den Schritt im DAM-Arbeitsablauf zum Aktualisieren von Assets hinzu. Wenn Sie bei Bedarf Teilassets erstellen, erstellen Sie einen separaten Workflow, um Teilassets zu generieren. Ein dedizierter Arbeitsablauf ermöglicht es Ihnen, die anderen Schritte im DAM Update Asset-Arbeitsablauf zu überspringen und Rechenressourcen zu speichern.
 
 >[!MORELIKETHIS]
 >
