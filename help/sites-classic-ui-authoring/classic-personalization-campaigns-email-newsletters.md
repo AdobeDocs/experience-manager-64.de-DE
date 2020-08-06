@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 78%
 
 ---
 
@@ -86,7 +89,7 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
   </tr> 
   <tr> 
    <td>Abonnementzentrum</td> 
-   <td>Ein Abonnementcenter ist eine Webseite, auf der ein Abonnent die Nachrichten steuern kann, die er von Ihrem Unternehmen erhält.</td> 
+   <td>Ein Abonnement-Center ist eine Webseite, auf der ein Abonnent die Nachrichten steuern kann, die er von Ihrem Unternehmen erhält.</td> 
   </tr> 
   <tr> 
    <td>Öffnen der E-Mail verfolgen</td> 
@@ -109,6 +112,7 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
    >
    >
 * Zwei der E-Mail-Tools sind erforderlich: **Postanschrift (Erforderlich)** und **Profilzentrum (Erforderlich)**. Diese beiden E-Mail-Tools werden bei der Veröffentlichung der E-Mail in ExactTarget standardmäßig am Ende jeder E-Mail hinzugefügt.
+
 >
 
 
