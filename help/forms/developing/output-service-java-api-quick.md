@@ -30,7 +30,7 @@ Java API Quick Beginn (SOAP) ist für den Output-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Übergeben von Dokumenten an den Output-Dienst mit der Java-API](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Übergeben eines Dokuments im AEM Forms-Repository an den Output-Dienst mithilfe der Java-API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Übergeben eines Dokuments im AEM Forms-Repository an den Output-Dienst mit der Java-API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Quick Beginn (SOAP-Modus): Erstellen eines PDF-Dokuments basierend auf Fragmenten mit der Java-API](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -44,11 +44,11 @@ Java API Quick Beginn (SOAP) ist für den Output-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Transformieren eines PDF-Dokuments mit der Java-API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Schnellere Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 
 ## Quick Beginn (SOAP-Modus): Erstellen eines PDF-Dokuments mit der Java-API {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
@@ -674,7 +674,7 @@ Im folgenden Java-Codebeispiel wird ein PDF/A-Dokument mit dem Namen *LoanArchiv
 
 ## Quick Beginn (SOAP-Modus): Übergeben von Dokumenten an den Output-Dienst mit der Java-API {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-Mit dem folgenden Java-Quick-Beginn wird die Datei *Loan.xdp* aus Content Services abgerufen. Diese XDP-Datei befindet sich im `space /Company Home/Form Designs`. Die XDP-Datei wird in einer `com.adobe.idp.Document` Instanz zurückgegeben. Die `com.adobe.idp.Document` Instanz wird an den Output-Dienst übergeben. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen *Loan.pdf *auf dem Clientcomputer gespeichert. Da die Option &quot;Datei-URI&quot;festgelegt ist, wird die PDF-Datei *Loan.pdf *auch auf dem J2EE-Anwendungsserver gespeichert, auf dem AEM Forms gehostet wird. (Siehe [Übergeben von Dokumenten in Content Services ES2 an den Output-Dienst](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+Mit dem folgenden Java-Quick-Beginn wird die Datei *Loan.xdp* aus Content Services abgerufen. Diese XDP-Datei befindet sich im `space /Company Home/Form Designs`. Die XDP-Datei wird in einer `com.adobe.idp.Document` Instanz zurückgegeben. Die `com.adobe.idp.Document` Instanz wird an den Output-Dienst übergeben. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen *Loan.pdf *auf dem Clientcomputer gespeichert. Da die Option &quot;Datei-URI&quot;festgelegt ist, wird die PDF-Datei *Loan.pdf *auch auf dem J2EE-Anwendungsserver gespeichert, der als Host für AEM Forms dient. (Siehe [Übergeben von Dokumenten in Content Services ES2 an den Output-Dienst](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 ```as3
  /* 
