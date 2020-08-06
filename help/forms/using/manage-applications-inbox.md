@@ -33,7 +33,7 @@ Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen
 
 ## Anwendung erstellen {#create-application}
 
-1. Gehen Sie zu AEM Inbox `https://[server]:[port]/aem/inbox`.
+1. Gehen Sie zu AEM Posteingang `https://[server]:[port]/aem/inbox`.
 1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. Die Seite &quot;Anwendung auswählen&quot;wird angezeigt.
 1. Select an application and click **[!UICONTROL Create]**. Das zu der Anwendung gehörige adaptive Formular wird geöffnet. Fill up the forms and tap **[!UICONTROL Submit]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
 
@@ -52,9 +52,11 @@ Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenm
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um die Aufgabe delegieren, tippen Sie auf **[!UICONTROL Delegieren]**. Das Dialogfeld „Element delegieren“ wird geöffnet. Wählen Sie einen Benutzer aus, fügen Sie optional einen Kommentar ein und tippen Sie auf **[!UICONTROL OK]**.
+
    ![delegate](assets/delegate.png)
 
    * Um die Aufgabe anzunehmen, tippen Sie auf **[!UICONTROL Öffnen]**. Das Dialogfeld „Selbst zuweisen“ wird geöffnet. Tippen Sie auf **[!UICONTROL Fortfahren]**, um die Aufgabe anzunehmen. Die angenommene Aufgabe wird mit Ihnen als Empfänger in Ihrem Posteingang angezeigt.
+
    ![claim](assets/claim.png)
 
 ### Aufgabendetails anzeigen und Aktionen für Aufgaben durchführen {#view-details-and-perform-actions-on-tasks}
