@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1234'
+ht-degree: 78%
 
 ---
 
@@ -22,9 +25,9 @@ Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie 
 * Besucher der [AEM Communities](/help/communities/overview.md)Website müssen sich anmelden, um Inhalte an die Community posten zu können.
 * [Geschlossene Benutzergruppen](/help/sites-administering/cug.md)
 
-   Möglicherweise müssen Sie den Zugriff auf Ihre Website (oder Abschnitte davon) auf bestimmte Besucher beschränken.
+   Möglicherweise müssen Sie den Zugriff auf Ihre Website (oder deren Bereiche) auf bestimmte Besucher beschränken.
 
-* [Personalisierung](/help/sites-administering/personalization.md) Ermöglicht Besuchern, bestimmte Aspekte des Zugriffs auf Ihre Website zu konfigurieren.
+* [Personalisierung](/help/sites-administering/personalization.md) Ermöglicht es Besuchern, bestimmte Aspekte des Zugriffs auf Ihre Website zu konfigurieren.
 
 Die Anmelde (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil **](#profiles-and-user-accounts)bereitgestellt, das zusätzliche Informationen über den registrierten Besucher (Benutzer) enthält. Die tatsächlichen Prozesse für die Registrierung und Autorisierung können abweichen:
 
@@ -34,11 +37,11 @@ Die Anmelde (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil **](
 
 * Antrag auf Registrierung auf der Website
 
-   Bei einer geschlossenen Benutzergruppe können Sie Besuchern gestatten, eine Registrierung anzufordern, aber die Autorisierung mittels eines Workflows erzwingen.
+   Bei einer geschlossenen Benutzergruppe können Sie Besuchern gestatten, eine Registrierung anzufordern, aber die Autorisierung mithilfe eines Workflows erzwingen.
 
-* Registrieren Sie jedes Konto in der Autorenumgebung
+* Registrieren Sie jedes Konto bei der Autoren-Umgebung
 
-   Wenn Sie eine kleine Anzahl von Profilen haben, die ohnehin autorisiert werden müssen, können Sie sich entscheiden, diese direkt zu registrieren.
+   Wenn Sie eine kleine Anzahl von Profilen haben, die ohnehin eine Autorisierung benötigen, können Sie sich entscheiden, diese direkt zu registrieren.
 
 Eine Reihe von Komponenten und Formularen kann zum Erfassen der erforderlichen Identifikationsinformationen sowie danach der zusätzlichen (oft optionalen) Profilinformationen dienen, um den Besuchern die Registrierung zu ermöglichen. Nachdem sie sich registriert haben, sollten sie auch in der Lage sein, die Daten, die sie eingereicht haben, zu überprüfen und zu aktualisieren.
 
@@ -84,7 +87,7 @@ Da ein Anmeldemechanismus vorhanden ist, ist auch ein Abmeldemechanismus erforde
 
 ## Anzeigen und Aktualisieren eines Profils {#viewing-and-updating-a-profile}
 
-Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mit einem ähnlichen Formular erfolgen. Beispiel:
+Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mit einem ähnlichen Formular erfolgen. zum Beispiel in Geometrixx:
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
@@ -95,7 +98,7 @@ To see the details of your profile click on **My Profile** in the top right corn
 
 Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Autorenumgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
 
-1. Öffnen Sie eine Seite. z. B. Geometrixx-Seite:
+1. Öffnen Sie eine Seite. z. B. Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -130,6 +133,7 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
    * **Elementname** - `favoriteColor`
    * **Titel** - `Favorite Color`
    * **Elemente** – Fügen Sie mehrere Farben als Elemente hinzu
+
    Klicken Sie zum Speichern auf **OK**.
 
 1. Schließen Sie die Seite. Kehren Sie zur **Websites-Konsole** zurück und aktivieren Sie die Seite „Mein Profil“.
@@ -156,7 +160,7 @@ Dies geschieht mithilfe von:
 
 * [Statusanbieter](#state-providers)
 
-   Zum Verwalten der beiden Status einer bestimmten Eigenschaft und der Übergänge zwischen den beiden.
+   Zum Verwalten der beiden Zustände einer bestimmten Eigenschaft und der Transitionen zwischen den beiden.
 
 * [Workflows](#workflows)
 
@@ -194,7 +198,7 @@ Bei einer Standardinstallation (Autor oder Veröffentlichen), hat jeder Lesezugr
 
 Diese Zugriffsrechte werden durch die folgende Platzhalter-ACL definiert:
 
-/home Alle zulassen jcr:read rep:glob = &amp;ast;/profile&amp;ast;
+/home Alle zulassen jcr:read rep:glob = &amp;ast;/Profil&amp;ast;
 
 Dadurch ist Folgendes möglich:
 
@@ -220,23 +224,23 @@ Diese Komponente bietet Ihnen zwei Felder für:
 
 Die Standardeinstellungen der Komponente werden folgendermaßen angezeigt:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![dc_Profils_checkedpassword](assets/dc_profiles_checkedpassword.png)
 
 ### Profil-Avatar-Foto {#profile-avatar-photo}
 
 Diese Komponente bietet dem Benutzer die Möglichkeit, eine Avatar-Fotodatei auszuwählen und hochzuladen.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![dc_Profils_avatarphoto](assets/dc_profiles_avatarphoto.png)
 
 ### Profil – Genauer Name {#profile-detailed-name}
 
 Diese Komponente ermöglicht es dem Benutzer, einen detaillierten Namen einzugeben.
 
-![dc_profiles_detaillname](assets/dc_profiles_detailedname.png)
+![dc_Profils_detaillname](assets/dc_profiles_detailedname.png)
 
 ### Profil-Geschlecht {#profile-gender}
 
 Diese Komponente ermöglicht dem Benutzer die Eingabe seines Geschlechts.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![dc_Profils_gender](assets/dc_profiles_gender.png)
 
