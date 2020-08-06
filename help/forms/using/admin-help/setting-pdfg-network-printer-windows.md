@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 97%
 
 ---
 
@@ -66,5 +69,5 @@ Benutzer, die entweder über die Rolle „PDFG-Administrator“ oder über die R
 
    ***Hinweis **Wenn sich das Kennwort des Benutzers ändert, muss der PDFG-Netzwerkdrucker erneut auf dessen Computer installiert werden. Es ist nicht möglich, das Kennwort mithilfe von Administration Console zu aktualisieren.*
 
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 
