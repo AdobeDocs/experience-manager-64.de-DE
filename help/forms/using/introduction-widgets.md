@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +44,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
    <td>Ein Bezeichner, mit dem dieses Objekt oder Ereignis in Skriptausdrücken angegeben wird. Diese Eigenschaft gibt beispielsweise den Namen der Host-Anwendung an.</td> 
   </tr>
   <tr>
-   <td>value</td> 
+   <td>Wert</td> 
    <td>Tatsächlicher Wert des Felds. </td> 
   </tr>
   <tr>
@@ -181,7 +184,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
    <th>Beschreibung</th> 
   </tr>
   <tr>
-   <td>value<br /> </td> 
+   <td>Wert<br /> </td> 
    <td>Array der ausgewählten Werte.<br /> </td> 
   </tr>
   <tr>
@@ -228,7 +231,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 
 ### NumericEdit: NumericField, DecimalField {#numericedit-numericfield-decimalfield}
 
-| Optionen | Beschreibung |
+| Optionen      | Beschreibung |
 |---|---|
 | dataType | String, der, der den Datentyp des Felds darstellt (ganze Zahl/Dezimalzahl). |
 | leadDigits | Maximale führende Ziffern der Dezimalzahl. |
@@ -241,7 +244,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 <table> 
  <tbody>
   <tr>
-   <th>Optionen</th> 
+   <th>Optionen     </th> 
    <th>Beschreibung</th> 
   </tr>
   <tr>
