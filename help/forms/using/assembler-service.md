@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '2161'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +31,7 @@ Mithilfe des Assembler-Dienstes können Sie mindestens zwei PDF-Dokumente in ein
 
 Die folgende Abbildung zeigt, wie drei Quelldokumente zu einem einzelnen Zieldokument zusammengeführt werden.
 
-![](assets/as_document_assembly.png) Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten **** Abbildung: Zusammenstellen *eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
+![Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten](assets/as_document_assembly.png)**Abbildung:** *Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
 
 Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenführen des Dokuments verwendet wird. Er gibt den Namen der Quelldokumente, mit deren Hilfe das Zieldokument generiert werden soll, sowie den Namen des Zieldokuments an.
 
@@ -40,7 +43,7 @@ Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenfü
 </PDF>
 ```
 
-Bei der Dokumentzusammenführung wird ein Zieldokument mit folgendem Inhalt erstellt und\
+Die Dokument-Assembly erzeugt ein resultierendes Dokument, das folgende Inhalte enthält und\
 Merkmale:
 
 * Allen Quelldokumenten (vollständig oder teilweise).
@@ -83,7 +86,7 @@ Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwende
 
 Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet.
 
-![](do-not-localize/as_batesnumber.png) Ein PDF-Dokument mit einer eindeutigen ID im Kopfzeilenbild **** des Dokuments: Ein *PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet*
+![Ein PDF-Dokument mit einer eindeutigen Kennung im Header](do-not-localize/as_batesnumber.png)**Abbildung des Dokuments:** *Ein PDF-Dokument, das eine eindeutige ID enthält, die sich in der Kopfzeile des Dokuments befindet*
 
 ### Reduzieren und Zusammenführen von Dokumenten {#flatten-and-assemble-documents}
 
@@ -105,7 +108,7 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Sie XDP-Dokumente zusammenfü
 
 Die folgende Abbildung zeigt, wie drei XDP-Quelldokumente zu einem einzelnen XDP-Zieldokument zusammengeführt werden. Das XDP-Zieldokument enthält drei XDP-Quelldokumente und die dazugehörigen Daten. Das Zieldokument ruft grundlegende Basisattribute von dem Basisdokument ab, bei dem es sich um das erste XDP-Quelldokument handelt.
 
-![](assets/as_assembler_xdpassembly.png) Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten **** Abbildung: Assemblieren *eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
+![Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten](assets/as_assembler_xdpassembly.png)**Abbildung:** *Assemblieren eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
 
 Nachfolgend finden Sie ein DDX-Dokument, das das oben gezeigte Ergebnis erzeugt.
 
@@ -132,7 +135,7 @@ Sie können festlegen, wie der Assembler-Dienst die Bilder, auf die in den Quell
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
-   <td>Keine</td> 
+   <td>none</td> 
    <td>Löst keine Verweise auf.</td> 
   </tr> 
   <tr> 
@@ -155,7 +158,7 @@ Sie können den Wert des resolveAssets-Attributs entweder im XDP-Quell-Tag oder 
 #### Alle Quellverweise in einem XDP-Dokument auflösen {#resolve-all-source-references-in-an-xdp-document}
 
 Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die Variable\
-Zieldokument für alle, wie im folgenden Beispiel:
+resultierendes Dokument für alle, wie im folgenden Beispiel:
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -167,7 +170,7 @@ Zieldokument für alle, wie im folgenden Beispiel:
 </DDX
 ```
 
-Sie können auch das Attribut für alle Quell-XDP-Dokumente unabhängig angeben, um dasselbe zu erhalten\
+Sie können auch das Attribut für alle Quell-XDP-Dokumente unabhängig voneinander angeben, um dasselbe zu erhalten\
 Ergebnis.
 
 ```xml
@@ -219,7 +222,7 @@ Formularentwickler verwenden LiveCycle Designer, um Formularfragmente zu erstell
 
 Die folgende Abbildung zeigt zwei XML-Formulare (XFA-Vorlagen). Das Formular auf der linken Seite enthält eine Einfügemarke mit dem Namen myInsertionPoint. Das Formular auf der rechten Seite enthält ein Fragment mit dem Namen myFragment.
 
-![](assets/as_assembler_fragment_assy_assembled.png) Einfügen von Formularfragmenten in ein XFA-Formular **** Abbildung: Formularfragmente *in ein XFA-Formular einfügen*
+![Einfügen von Formularfragmenten in ein XFA-Formular](assets/as_assembler_fragment_assy_assembled.png)**Abbildung:** *Einfügen von Formularfragmenten in ein XFA-Formular*
 
 Wenn der Assembler-Dienst das folgende DDX-Dokument interpretiert, erstellt er ein XML-Formular, das ein anderes XML-Formular enthält. Das myFragment-Unterformular aus dem myFragmentSource-Dokument wird an der Einfügemarke myInsertionPoint in dem Dokument myFormSource eingefügt.
 
@@ -257,7 +260,7 @@ Mit dem Assembler-Dienst können Sie PDF-Dokumente aufteilen. Der Dienst kann Se
 
 In den folgenden Abbildungen werden die Seiten 1 bis 3 aus dem Quelldokument extrahiert und in einem neuen Zieldokument abgelegt.
 
-![](assets/as_intro_page_extraction.png) Extrahieren bestimmter Seiten aus einem Quelldokument **** Abbildung: Extrahieren bestimmter Seiten *aus einem Quelldokument*
+![Extrahieren bestimmter Seiten aus einem Quell-Dokument](assets/as_intro_page_extraction.png)**Abbildung:** *Extrahieren bestimmter Seiten aus einem Quell-Dokument*
 
 Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokuments verwendet wird.
 
@@ -271,7 +274,7 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 
 In der folgenden Abbildung wird DocA in mehrere Zieldokumente aufgeteilt. Dabei gibt das erste Lesezeichen auf Ebene 1 auf einer Seite den Anfang eines neuen Zieldokuments an.
 
-![](assets/as_intro_pdfsfrombookmarks.png) Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere Dokumente **** Abbildung: Aufteilen *eines Quelldokuments basierend auf Lesezeichen in mehrere Dokumente*
+![Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere Dokumente](assets/as_intro_pdfsfrombookmarks.png)**Abbildung:** *Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere Dokumente*
 
 Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen eines Quelldokuments Lesezeichen verwendet.
 
