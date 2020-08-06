@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 18%
 
 ---
 
 
 # Komponenten, Funktionen und Funktionen {#component-function-and-feature-essentials}
 
-Die Funktionen von AEM Communities erfordern, dass Site-Besucher Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt](sites-console.md)wird, so ausgelegt, dass sie eine Anmeldefunktion sowie Benutzerprofile, Nachrichten, Suchen, Moderation und Übersetzung enthalten.
+Für AEM Communities-Funktionen müssen Site-Besucher Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte veröffentlichen können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt](sites-console.md)wird, so konzipiert, dass sie eine Anmeldefunktion sowie Profil, Nachrichten, Suchen, Moderation und Übersetzung enthalten.
 
 Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die [Community-Gruppen-Funktion](functions.md#groups-function) in der ausgewählten Community-Site-Vorlage enthalten ist.
 
@@ -54,20 +57,20 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities Komponen
 
 * [Client-Bibliotheken](clientlibs.md)
 * [Community-Sites](sites-for-developers.md)
-* [Komponenten-OSGi-Ereignisse](events.md)
+* [Komponenten-OSGi-Ereignis](events.md)
 * [Komponenten-Sideloading](sideloading.md)
 * [Messaging](essentials-messaging.md)
 * [Rich-Text-Editor](rte.md)
 * [Bewertung und Abzeichen](configure-scoring.md)
 * [Suchen](search-implementation.md)
 * [Sozialdiagramm](essentials-socialgraph.md)
-* [Speicherressourcen-Provider](srp-and-ugc.md)`(SRP)`
+* [Datenspeicherung Resource Provider](srp-and-ugc.md) `(SRP)`
 
 * [Tagging](tag.md)
 
 ## Javadocs {#javadocs}
 
-Die [Online-JavaCs](../../help/sites-developing/reference-materials.md) spiegeln die in AEM 6.3 verfügbaren APIs wider.\
+Die [Online-JavaCs](../../help/sites-developing/reference-materials.md) spiegeln die APIs wider, die in AEM 6.3 verfügbar sind.\
 Communities-APIs sind in `com.adobe.cq.social.*` Paketen enthalten.
 
 Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack)wird eine JavaScript-Datei verfügbar gemacht. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
@@ -78,7 +81,7 @@ Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack)wird eine Java
 
    * [Clientseitige Anpassungen](client-customize.md)
    * [Serverseitige Anpassungen](server-customize.md)
-   * [Übersicht über den Speicher-Ressourcen-Provider](srp.md)
+   * [Übersicht über den Datenspeicherung Resource Provider](srp.md)
 
 * [Kodierungsrichtlinien ](code-guide.md)
 * [Tutorials](tutorials.md)
