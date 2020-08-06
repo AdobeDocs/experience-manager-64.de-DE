@@ -147,9 +147,9 @@ Obwohl „Basis-DN“ eine obligatorische Einstellung in Administration Console 
 
 **Einrichtung:** Schema-Attribut für den Namen der Organisation, der der Benutzer angehört.
 
-**Primäre E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse des Benutzers.
+**Primär-E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse des Benutzers.
 
-**Sekundäre E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse des Benutzers.
+**Sekundär-E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse des Benutzers.
 
 **Telefon:** Schema-Attribut für die Telefonnummer des Benutzers.
 
@@ -159,7 +159,7 @@ Obwohl „Basis-DN“ eine obligatorische Einstellung in Administration Console 
 
 **Zeitzone:** Schema-Attribut, das die Zeitzone enthält, in der sich der Benutzer befindet. Der Wert ist eine Zeichenfolge, z. B. City/Country.
 
-**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Forms Daten in Stapeln vom Ordnerserver abrufen kann. Wenn Sie Sun One als LDAP-Ordner verwenden und der Ordner sehr viele Benutzer enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Benutzern verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Gruppen aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie im Feld „Sortierfeld“ einen Namen an.
+**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Formulare Daten in Stapeln vom Ordnerserver abrufen können. Wenn Sie Sun One als LDAP-Ordner verwenden und der Ordner sehr viele Benutzer enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Benutzern verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Gruppen aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie im Feld „Sortierfeld“ einen Namen an.
 
 >[!NOTE]
 >
@@ -195,13 +195,13 @@ Wird der DN als eindeutiger Bezeichner angegeben, muss „Eindeutiger Bezeichner
 
 **Einrichtung:** Schema-Attribut für den Namen der Organisation, zu der die Gruppe gehört
 
-**Primäre E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse der Gruppe
+**Primär-E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse der Gruppe
 
-**Sekundäre E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse der Gruppe
+**Sekundär-E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse der Gruppe
 
 **Zeitstempel ändern:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um TimeStamp zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
 
-**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Forms Daten in Stapeln vom Ordnerserver abrufen kann. Wenn Sie Sun One als LDAP-Ordner verwenden und das Ordner sehr viele Gruppen enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Gruppen verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Benutzer aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie einen Sortierfeldnamen an.
+**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Formulare Daten in Stapeln vom Ordnerserver abrufen können. Wenn Sie Sun One als LDAP-Ordner verwenden und das Ordner sehr viele Gruppen enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Gruppen verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Benutzer aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie einen Sortierfeldnamen an.
 
 >[!NOTE]
 >
