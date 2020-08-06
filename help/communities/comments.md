@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 38%
 
 ---
 
@@ -54,7 +57,7 @@ Select the placed `Comments` component to access and select the `Configure` icon
 
 ![Kommentareinstellungen](assets/configure.png) ![konfigurieren](assets/commentssettings.png)
 
-### Registerkarte &quot;Kommentare&quot; {#comments-tab}
+### Comments tab {#comments-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer Kommentare eingeben sollen.
 
@@ -80,7 +83,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer K
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Eine kommagetrennte Liste mit Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind nicht angegebene Dateitypen nicht zulässig. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind nicht angegebene Dateitypen nicht zulässig. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
@@ -98,7 +101,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer K
 
    Wenn diese Option aktiviert ist, lassen Sie die Anzeige von verdienten und zuerkannten Abzeichen zu. Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte Benutzermoderation {#user-moderation-tab}
+### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted comments are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
@@ -124,7 +127,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted comments 
 
 * **[!UICONTROL Liste mit Kenn-zeichnungsgründen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie einen Kommentar als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können die Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie einen Kommentar als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]**
 
@@ -170,7 +173,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
    Navigieren Sie zum resourceType einer erweiterten `voting`Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
 
-   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Stimme veröffentlicht.
+   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Abstimmung veröffentlicht.
 
 * **[!UICONTROL System-Ressourcen-Typ kommentieren]**
 
