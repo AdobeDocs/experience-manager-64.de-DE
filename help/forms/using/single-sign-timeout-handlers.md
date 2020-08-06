@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 47%
 
 ---
 
@@ -25,7 +28,7 @@ Sitzungs-Timeouts für einen Benutzer können in der Administration Console konf
 
 To set the timeout, login to `https://[server]:[port]/adminui`, navigate to **Settings > User Management > Configuration > Configure Advanced System Attributes**, and make the desired settings.
 
-In AEM Forms Workspace-Timeout wird wie folgt behandelt:
+In AEM Forms Workspace wird Timeout wie folgt verarbeitet:
 
 * Session duration for a user is available in response of `initialize` call that initializes user session.
 * Ein Popup-Fenster informiert den Benutzer 15 Sekunden im Voraus, dass die Sitzung gleich ablaufen wird.
@@ -37,4 +40,4 @@ In diesem Popup-Dialog:
 
 >[!NOTE]
 >
->Wenn keine Aktion ausgeführt wird, wird der Benutzer drei Sekunden vor Ablauf der Sitzung automatisch von AEM Forms Workspace abgemeldet.
+>Wenn keine Aktion ausgeführt wird, wird der Benutzer drei Sekunden vor Ablauf der Sitzung automatisch aus AEM Forms Workspace abgemeldet.
