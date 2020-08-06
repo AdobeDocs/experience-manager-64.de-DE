@@ -31,7 +31,7 @@ Mit dem Output-Dienst können Sie Dokumente als PDF (einschließlich PDF/A-Dokum
 
 Mit dem Output-Dienst können Sie XML-Formulardaten mit einem Formularentwurf zusammenführen und das Dokument an einen Netzwerkdrucker oder eine Netzwerkdatei ausgeben.
 
-Es gibt zwei Möglichkeiten, einen Formularentwurf (eine XDP-Datei) an den Output-Dienst zu übergeben. Sie können eine `com.adobe.idp.Document` Instanz mit einem Formularentwurf an den Output-Dienst übergeben. Sie können auch einen URI-Wert übergeben, der den Speicherort des Formularentwurfs angibt. Diese beiden Methoden werden in *Programmieren mit AEM Forms* erläutert.
+Es gibt zwei Möglichkeiten, einen Formularentwurf (eine XDP-Datei) an den Output-Dienst zu übergeben. Sie können eine `com.adobe.idp.Document` Instanz mit einem Formularentwurf an den Output-Dienst übergeben. Sie können auch einen URI-Wert übergeben, der den Speicherort des Formularentwurfs angibt. Beide Methoden werden im *Programmieren mit AEM Formularen* erläutert.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Mit dem Output-Dienst können Sie ein PDF-Dokument erstellen, das auf einem Form
 
 Wenn Sie ein PDF-Dokument für die langfristige Datenspeicherung erstellen möchten, sollten Sie ein PDF/A-Dokument erstellen. (Siehe PDF/A-Dokumente [erstellen](creating-document-output-streams.md#creating-pdf-a-documents).)
 
-Verwenden Sie den Forms-Dienst, um ein interaktives PDF-Formular zu erstellen, mit dem der Benutzer Daten eingeben kann. (Siehe [Rendern von interaktiven PDF-Formularen](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+Verwenden Sie den Forms-Dienst, um ein interaktives PDF-Formular zu erstellen, mit dem der Benutzer Daten eingeben kann. (Siehe [Rendern von interaktiven PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
 >[!NOTE]
 >
@@ -104,10 +104,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird.
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
 **Output Client-Objekt erstellen**
 
@@ -166,17 +166,17 @@ Legen Sie beim Erstellen eines PDF-Dokuments die Datei-URI-Option fest. Diese Op
 
 Beim Erstellen eines PDF-Dokuments können Sie Laufzeitoptionen für die Wiedergabe festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu den erforderlichen PDF-Laufzeitoptionen), können Sie Aufgaben wie die Leistungsverbesserung des Output-Dienstes ausführen. Sie können beispielsweise den Formularentwurf, den der Output-Dienst verwendet, zwischenspeichern, um die Leistung zu verbessern.
 
-Wenn Sie ein Acrobat-Formular mit Tags als Eingabe verwenden, können Sie die Einstellung für Tags nicht mit der Java- oder Webdienst-API des Output-Dienstes deaktivieren. Wenn Sie versuchen, diese Option programmatisch auf `false`festzulegen, wird das PDF-Dokument mit Tags versehen.
+Wenn Sie ein getaggtes Acrobat-Formular als Eingabe verwenden, können Sie die Einstellung für getaggte Formulare nicht mit der Java- oder Webdienst-API des Output-Dienstes deaktivieren. Wenn Sie versuchen, diese Option programmatisch auf `false`festzulegen, wird das PDF-Dokument mit Tags versehen.
 
 >[!NOTE]
 >
->Wenn Sie keine Rendering-Laufzeitoptionen angeben, werden die Standardwerte verwendet. Informationen zum Rendern von Laufzeitoptionen finden Sie in der `RenderOptionsSpec` Klassenreferenz. (Siehe [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+>Wenn Sie keine Rendering-Laufzeitoptionen angeben, werden die Standardwerte verwendet. Informationen zum Rendern von Laufzeitoptionen finden Sie in der `RenderOptionsSpec` Klassenreferenz. (Siehe [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 **PDF-Dokument erstellen**
 
 Nachdem Sie eine gültige XML-Datenquelle mit Formulardaten referenziert und Laufzeitoptionen festgelegt haben, können Sie den Output-Dienst aufrufen, was zur Generierung eines PDF-Dokuments führt.
 
-Beim Generieren eines PDF-Dokuments geben Sie URI-Werte an, die vom Output-Dienst zum Erstellen eines PDF-Dokuments benötigt werden. Ein Formularentwurf kann an Speicherorten wie dem Serverdateisystem oder als Teil einer AEM Forms-Anwendung gespeichert werden. Ein Formularentwurf (oder andere Ressourcen wie eine Bilddatei), der als Teil einer Forms-Anwendung vorhanden ist, kann mithilfe des Inhaltsstamm-URI-Werts referenziert werden `repository:///`. Betrachten Sie zum Beispiel den folgenden Formularentwurf mit dem Namen *Loan.xdp* innerhalb einer Forms-Anwendung mit dem Namen *Applications/FormsApplication*:
+Beim Generieren eines PDF-Dokuments geben Sie URI-Werte an, die vom Output-Dienst zum Erstellen eines PDF-Dokuments benötigt werden. Ein Formularentwurf kann an Speicherorten wie dem Serverdateisystem oder als Teil einer AEM Forms-Anwendung gespeichert werden. Ein Formularentwurf (oder andere Ressourcen wie eine Bilddatei), der Teil einer Forms-Anwendung ist, kann mit dem Inhaltsstamm-URI-Wert referenziert werden `repository:///`. Betrachten Sie zum Beispiel den folgenden Formularentwurf mit dem Namen *Loan.xdp* innerhalb einer Forms-Anwendung mit dem Namen *Applications/FormsApplication*:
 
 ![cp_cp_formrepository](assets/cp_cp_formrepository.png)
 
@@ -190,7 +190,7 @@ Wenn die XDP-Datei Bilder (oder andere Ressourcen wie Fragmente) enthält, platz
 
 >[!NOTE]
 >
->Einen vollständigen Beginn zum Erstellen eines PDF-Dokuments durch Verweis auf eine XDP in einer Forms-Anwendung finden Sie unter [Quick Beginn (EJB-Modus): Erstellen eines PDF-Dokuments basierend auf einer Anwendungs-XDP-Datei mit der Java-API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Einen vollständigen Beginn zum Erstellen eines PDF-Dokuments durch Referenzieren einer XDP-Datei in einer Forms-Anwendung finden Sie unter [Schnellmodus (EJB-Modus): Erstellen eines PDF-Dokuments basierend auf einer Anwendungs-XDP-Datei mit der Java-API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **Abrufen der Ergebnisse des Vorgangs**
 
@@ -229,7 +229,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Ausgabe-API (Java):
 1. Legen Sie die PDF-Laufzeitoptionen fest.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie die `PDFOutputOptionsSpec` Objektmethode `setFileURI` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der vom Output-Dienst erstellten PDF-Datei angibt. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie die `PDFOutputOptionsSpec` Objektmethode `setFileURI` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der vom Output-Dienst erstellten PDF-Datei angibt. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
 
 1. Legen Sie Laufzeitoptionen für das Rendering fest.
 
@@ -238,7 +238,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Ausgabe-API (Java):
 
    >[!NOTE]
    >
-   >Sie können die Version des PDF-Dokuments nicht mit der `RenderOptionsSpec` `setPdfVersion` Objektmethode festlegen, wenn es sich bei dem Eingabedatum um ein Acrobat-Dokument (ein in Acrobat erstelltes Formular) oder um ein XFA-Dokument handelt, das signiert oder zertifiziert ist. Das PDF-Dokument für die Ausgabe behält die ursprüngliche PDF-Version bei. Gleichermaßen können Sie die Option &quot;Adobe PDF mit Tags&quot;nicht durch Aufrufen der `RenderOptionsSpec` Objektmethode `setTaggedPDF`* festlegen, wenn es sich bei dem Eingabe-Dokument um ein Acrobat-Formular oder ein signiertes oder zertifiziertes XFA-Dokument handelt. *
+   >Sie können die Version des PDF-Dokuments nicht mit der `RenderOptionsSpec` `setPdfVersion` Objektmethode festlegen, wenn es sich bei dem Eingabemodell um ein Acrobat-Dokument (ein in Acrobat erstelltes Formular) oder um ein XFA-Dokument handelt, das signiert oder zertifiziert ist. Das PDF-Dokument für die Ausgabe behält die ursprüngliche PDF-Version bei. Ebenso können Sie die Option &quot;Adobe PDF mit Tags&quot;nicht durch Aufrufen der `RenderOptionsSpec` Objektmethode `setTaggedPDF`* festlegen, wenn es sich bei dem Dokument &quot;Eingabe&quot;um ein Acrobat-Formular oder ein signiertes oder zertifiziertes XFA-Dokument handelt. *
 
    >[!NOTE]
    >
@@ -299,12 +299,12 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. *
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -325,7 +325,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Webdienst):
 1. Festlegen von PDF-Laufzeitoptionen
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
 
 1. Legen Sie Laufzeitoptionen für das Rendering fest.
 
@@ -334,7 +334,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Webdienst):
 
    >[!NOTE]
    >
-   >Sie können die Version des PDF-Dokuments nicht mit der `RenderOptionsSpec` `setPdfVersion` Objektmethode festlegen, wenn es sich bei dem Eingabedatum um ein Acrobat-Dokument (ein in Acrobat erstelltes Formular) oder um ein XFA-Dokument handelt, das signiert oder zertifiziert ist. Das PDF-Dokument für die Ausgabe behält die ursprüngliche PDF-Version bei. Ebenso können Sie die Option &quot;Adobe PDF mit Tags&quot;nicht durch Aufrufen der `RenderOptionsSpec` Objektmethode `setTaggedPDF`* festlegen, wenn es sich bei dem Eingabedokument um ein Acrobat-Dokument oder um ein signiertes oder zertifiziertes XFA-Dokument handelt.*
+   >Sie können die Version des PDF-Dokuments nicht mit der `RenderOptionsSpec` `setPdfVersion` Objektmethode festlegen, wenn es sich bei dem Eingabemodell um ein Acrobat-Dokument (ein in Acrobat erstelltes Formular) oder um ein XFA-Dokument handelt, das signiert oder zertifiziert ist. Das PDF-Dokument für die Ausgabe behält die ursprüngliche PDF-Version bei. Ebenso können Sie die Option &quot;Adobe PDF mit Tags&quot;nicht durch Aufrufen der `RenderOptionsSpec` Objektmethode `setTaggedPDF`* festlegen, wenn das Eingabedokument ein Acrobat-Dokument oder ein signiertes oder zertifiziertes XFA-Dokument ist.*
 
    >[!NOTE]
    >
@@ -373,9 +373,9 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Webdienst):
 
    [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-   [Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-   [Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -393,7 +393,7 @@ Ihr Unternehmen muss seine eigenen Bedürfnisse, die Dauer der Aufbewahrung des 
 
 Ein PDF/A-Dokument muss die im Formularentwurf angegebene Schrift verwenden und Schriften können nicht ersetzt werden. Wenn daher eine Schriftart, die sich in einem PDF-Dokument befindet, auf dem Host-Betriebssystem (OS) nicht verfügbar ist, tritt eine Ausnahme auf.
 
-Wenn ein PDF/A-Dokument in Acrobat geöffnet wird, wird eine Meldung angezeigt, die bestätigt, dass es sich um ein PDF/A-Dokument handelt, wie in der folgenden Abbildung dargestellt.
+Wenn ein PDF/A-Dokument in Acrobat geöffnet wird, wird eine Meldung angezeigt, die bestätigt, dass das Dokument ein PDF/A-Dokument ist, wie in der folgenden Abbildung dargestellt.
 
 ![cp_cp_pdfamessage](assets/cp_cp_pdfamessage.png)
 
@@ -426,10 +426,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird.
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
 **Output Client-Objekt erstellen**
 
@@ -451,7 +451,7 @@ Der `PDFARevisionNumber` Wert bezieht sich auf die Revisionsnummer eines PDF/A-D
 
 >[!NOTE]
 >
->Sie können die Option &quot;Adobe PDF mit Tags&quot;nicht auf `false` festlegen, wenn Sie ein PDF/A 1A-Dokument erstellen. PDF/A 1A ist immer ein PDF-Dokument mit Tags. Sie können die Option &quot;Adobe PDF mit Tags&quot;auch nicht auf `true` festlegen, wenn Sie ein PDF/A 1B-Dokument erstellen. PDF/A 1B ist immer ein PDF-Dokument ohne Tags.
+>Sie können beim Erstellen eines PDF/A 1A-Dokuments die Option &quot;Adobe PDF mit Tags&quot;nicht auf `false` &quot;festlegen. PDF/A 1A ist immer ein PDF-Dokument mit Tags. Sie können die Option &quot;Adobe PDF mit Tags&quot;auch nicht auf `true` festlegen, wenn Sie ein PDF/A 1B-Dokument erstellen. PDF/A 1B ist immer ein PDF-Dokument ohne Tags.
 
 **Generieren eines PDF/A-Dokuments**
 
@@ -494,7 +494,7 @@ Erstellen Sie ein PDF/A-Dokument mit der Output API (Java):
 1. Festlegen von PDF/A-Laufzeitoptionen.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie die `PDFOutputOptionsSpec` Objektmethode `setFileURI` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der vom Output-Dienst erstellten PDF-Datei angibt. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie die `PDFOutputOptionsSpec` Objektmethode `setFileURI` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der vom Output-Dienst erstellten PDF-Datei angibt. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
 
 1. Legen Sie Laufzeitoptionen für das Rendering fest.
 
@@ -557,12 +557,12 @@ Erstellen Sie ein PDF/A-Dokument mithilfe der Output API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. *
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -583,7 +583,7 @@ Erstellen Sie ein PDF/A-Dokument mithilfe der Output API (Webdienst):
 1. Festlegen von PDF/A-Laufzeitoptionen.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer
+   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer
 
 1. Legen Sie Laufzeitoptionen für das Rendering fest.
 
@@ -624,9 +624,9 @@ Erstellen Sie ein PDF/A-Dokument mithilfe der Output API (Webdienst):
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Output Service {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
@@ -757,12 +757,12 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. *
 
 1. Erstellen Sie eine Ausgabe und ein Dokument Management Client-API-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`) an den Forms-Dienst. Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -814,13 +814,13 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Übergeben von Dokumenten im Repository an den Output-Dienst {#passing-documents-located-in-the-repository-to-the-output-service}
 
 Der Output-Dienst rendert ein nicht interaktives PDF-Formular, das auf einem Formularentwurf basiert, der in der Regel als XDP-Datei gespeichert und in Designer erstellt wird. Sie können ein `com.adobe.idp.Document` Objekt, das den Formularentwurf enthält, an den Output-Dienst übergeben. Der Output-Dienst rendert dann den Formularentwurf im `com.adobe.idp.Document` Objekt.
 
-Ein Vorteil der Übergabe eines `com.adobe.idp.Document` Objekts an den Output-Dienst besteht darin, dass andere AEM Forms-Dienstvorgänge eine `com.adobe.idp.Document` Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document` Instanz von einem anderen Dienstvorgang abrufen und wiedergeben. Nehmen Sie beispielsweise an, dass eine XDP-Datei im AEM Forms-Repository gespeichert wird, wie in der folgenden Abbildung dargestellt.
+Ein Vorteil der Übergabe eines `com.adobe.idp.Document` Objekts an den Output-Dienst besteht darin, dass andere AEM Forms-Dienstvorgänge eine `com.adobe.idp.Document` Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document` Instanz von einem anderen Dienstvorgang abrufen und wiedergeben. Nehmen wir beispielsweise an, dass eine XDP-Datei im AEM Forms-Repository gespeichert wird, wie in der folgenden Abbildung dargestellt.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
@@ -842,7 +842,7 @@ Sie können eine PDF auf Basis einer XDP-Datei im Repository auf zwei Arten erst
 
 ### Zusammenfassung der Schritte {#summary_of_steps-3}
 
-Führen Sie die folgenden Aufgaben aus, um ein vom AEM Forms-Repository abgerufenes Dokument an den Output-Dienst zu übergeben:
+So übergeben Sie ein vom AEM Forms-Repository abgerufenes Dokument an den Output-Dienst:
 
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie eine Ausgabe und ein Dokument Management Client-API-Objekt.
@@ -866,7 +866,7 @@ Die XDP-Datei wird innerhalb einer `com.adobe.idp.Document` Instanz zurückgegeb
 
 **Nicht interaktives PDF-Formular wiedergeben**
 
-Um ein nicht interaktives Formular wiederzugeben, übergeben Sie die `com.adobe.idp.Document` Instanz, die mit der AEM Forms Repository API zurückgegeben wurde.
+Übergeben Sie zum Rendern eines nicht interaktiven Formulars die `com.adobe.idp.Document` Instanz, die mit der AEM Forms Repository API zurückgegeben wurde.
 
 >[!NOTE]
 >
@@ -929,7 +929,7 @@ ResourceRepositoryClient
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Quick Beginn (EJB-Modus): Übergeben eines Dokuments im AEM Forms-Repository an den Output-Dienst mithilfe der Java-API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Quick Beginn (EJB-Modus): Übergeben eines Dokuments im AEM Forms-Repository an den Output-Dienst mit der Java-API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -947,7 +947,7 @@ Bevor Sie PDF-Dokumente *mit Fragmenten* erstellen, sollten Sie sich mit der Ver
 
 >[!NOTE]
 >
->Sie können auch einen Formularentwurf, der vom Assembler-Dienst zusammengestellt wurde, an den Forms-Dienst und nicht an den Output-Dienst weiterleiten. Der Hauptunterschied zwischen dem Output-Dienst und dem Forms-Dienst besteht darin, dass der Forms-Dienst interaktive PDF-Dokumente generiert und der Output-Dienst nicht interaktive PDF-Dokumente erzeugt. Der Forms-Dienst kann auch keine druckerbasierten Ausgabestreams wie ZPL generieren.
+>Sie können auch einen Formularentwurf, der vom Assembler-Dienst zusammengestellt wurde, an den Forms-Dienst und nicht an den Output-Dienst weiterleiten. Der Hauptunterschied zwischen dem Output-Dienst und dem Forms-Dienst besteht darin, dass der Forms-Dienst interaktive PDF-Dokumente generiert und der Output-Dienst nicht interaktive PDF-Dokumente erzeugt. Auch der Forms-Dienst kann keine druckerbasierten Ausgabestreams wie ZPL generieren.
 
 >[!NOTE]
 >
@@ -1081,12 +1081,12 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. *
 
 1. Erstellen Sie ein Output- und Assembler-Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1140,7 +1140,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Drucken in Dateien {#printing-to-files}
 
@@ -1181,10 +1181,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird. (Siehe [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird. (Siehe [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
 **Output Client-Objekt erstellen**
 
@@ -1200,7 +1200,7 @@ Um in eine Datei zu drucken, müssen Sie die Laufzeitoption &quot;Datei-URI&quot
 
 >[!NOTE]
 >
->Es gibt optionale Laufzeitoptionen, die Sie definieren können. Weitere Informationen zu allen Optionen, die Sie festlegen können, finden Sie in der `PrintedOutputOptionsSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Es gibt optionale Laufzeitoptionen, die Sie definieren können. Informationen zu allen Optionen, die Sie festlegen können, finden Sie in der `PrintedOutputOptionsSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Drucken des Druckstreams in eine Datei**
 
@@ -1289,12 +1289,12 @@ Drucken Sie mit der Output API (Webdienst) in eine Datei:
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. *
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1343,9 +1343,9 @@ Drucken Sie mit der Output API (Webdienst) in eine Datei:
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Senden von Druckstreams an Drucker {#sending-print-streams-to-printers}
 
@@ -1386,10 +1386,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird.
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
 **Output Client-Objekt erstellen**
 
@@ -1403,7 +1403,7 @@ Um ein Dokument mit Daten zu drucken, müssen Sie auf eine XML-Datenquelle verwe
 
 Sie können die Laufzeitoptionen beim Senden eines Druckstreams an einen Drucker festlegen, einschließlich der folgenden Optionen:
 
-* **Kopien**: Gibt die Anzahl der Exemplare an, die an den Drucker gesendet werden sollen. Der Standardwert ist 1.     
+* **Kopien**: Gibt die Anzahl der Exemplare an, die an den Drucker gesendet werden sollen. Der Standardwert ist 1.         
 * **Stapel**: Eine XCI-Option wird festgelegt, wenn ein Heftklammer verwendet wird. Diese Option kann im Konfigurationsmodell vom Grundelement angegeben werden und wird nur für PS- und PCL-Drucker verwendet.
 * **OutputJog**: Eine XCI-Option wird eingestellt, wenn Ausgabeseiten joggt werden sollen (physisch in der Ausgabenablage verschoben). Diese Option ist nur für PS- und PCL-Drucker verfügbar.
 * **OutputBin**: XCI-Wert, der verwendet wird, um dem Druckertreiber die Auswahl der entsprechenden Ausgabenablage zu ermöglichen.
@@ -1416,7 +1416,7 @@ Sie können die Laufzeitoptionen beim Senden eines Druckstreams an einen Drucker
 
 Rufen Sie einen Druckstream ab, der an einen Drucker gesendet werden soll. Sie können beispielsweise eine PostScript-Datei abrufen und an einen Drucker senden.
 
-Sie können eine PDF-Datei senden, wenn Ihr Drucker PDF unterstützt. Ein Problem beim Senden eines PDF-Dokuments an einen Drucker besteht jedoch darin, dass jeder Druckerhersteller eine andere Implementierung des PDF-Interpreters hat. Das heißt, einige Druckhersteller verwenden die Adobe PDF-Interpretation, aber sie hängt vom Drucker ab. Andere Drucker haben einen eigenen PDF-Interpreter. Daher können die Druckergebnisse variieren.
+Sie können eine PDF-Datei senden, wenn Ihr Drucker PDF unterstützt. Ein Problem beim Senden eines PDF-Dokuments an einen Drucker besteht jedoch darin, dass jeder Druckerhersteller eine andere Implementierung des PDF-Interpreters hat. Das heißt, einige Druckereien verwenden die Adobe PDF-Interpretation, aber es hängt vom Drucker ab. Andere Drucker haben einen eigenen PDF-Interpreter. Daher können die Druckergebnisse variieren.
 
 Eine weitere Einschränkung beim Senden eines PDF-Dokuments an einen Drucker besteht darin, dass es nur gedruckt wird. Es kann nicht auf Duplex, Papierfachauswahl und Heftklammern zugreifen, außer über die Einstellungen auf dem Drucker.
 
@@ -1564,7 +1564,7 @@ Senden Sie einen Druckstream mit der Output API (Java) an einen Netzwerkdrucker:
 
    >[!NOTE]
    >
-   >Die `sendToPrinter` Methode wurde der AEM Forms-API in Version 8.2.1 hinzugefügt.
+   >Die `sendToPrinter` Methode wurde der AEM Forms API in Version 8.2.1 hinzugefügt.
 
 ### Senden eines Druckstreams an einen Drucker mithilfe der Webdienst-API {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
@@ -1576,12 +1576,12 @@ Senden Sie einen Druckstream mithilfe der Output API (Webdienst) an einen Netzwe
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `localhost`* durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. *
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1635,7 +1635,7 @@ Senden Sie einen Druckstream mithilfe der Output API (Webdienst) an einen Netzwe
 
    >[!NOTE]
    >
-   >Die `sendToPrinter` Methode wurde der AEM Forms-API in Version 8.2.1 hinzugefügt.
+   >Die `sendToPrinter` Methode wurde der AEM Forms API in Version 8.2.1 hinzugefügt.
 
 ## Mehrere Ausgabedateien erstellen {#creating-multiple-output-files}
 
@@ -1727,10 +1727,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird.
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
 **Output Client-Objekt erstellen**
 
@@ -1825,7 +1825,7 @@ Erstellen Sie mehrere PDF-Dateien mit der Output API (Java):
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie die Option &quot;Viele Dateien&quot;fest, indem Sie die `PDFOutputOptionsSpec` Objektmethode `setGenerateManyFiles` aufrufen. Geben Sie beispielsweise den Wert `true` an, um den Output-Dienst anzuweisen, für jeden Datensatz in der XML-Datenquelle eine separate PDF-Datei zu erstellen. (Wenn Sie weitergeben `false`, generiert der Output-Dienst ein einzelnes PDF-Dokument, das alle Datensätze enthält.)
-   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie die `PDFOutputOptionsSpec` Methode des `setFileUri` Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der Dateien angibt, die vom Output-Dienst generiert werden. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Legen Sie die Option &quot;Datei-URI&quot;fest, indem Sie die `PDFOutputOptionsSpec` Methode des `setFileUri` Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der Dateien angibt, die vom Output-Dienst generiert werden. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
    * Legen Sie die Option &quot;Datensatzname&quot;fest, indem Sie die `OutputOptionsSpec` `setRecordName` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den XML-Elementnamen in der Datenquelle angibt, der die Datensätze voneinander trennt. (Betrachten Sie zum Beispiel die XML-Datenquelle, die oben in diesem Abschnitt gezeigt wird. Der Name des XML-Elements, das Datensätze voneinander trennt, ist LoanRecord.
 
 1. Festlegen von Rendering-Laufzeitoptionen
@@ -1871,12 +1871,12 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Output API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -1898,7 +1898,7 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Output API (Webdienst):
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie die Option &quot;Viele Dateien&quot;fest, indem Sie dem `OutputOptionsSpec` Datenmember des Objekts einen booleschen Wert zuweisen `generateManyFiles` . Weisen Sie diesem Datenmember beispielsweise den Wert `true` zu, um den Output-Dienst anzuweisen, für jeden Datensatz in der XML-Datenquelle eine separate PDF-Datei zu erstellen. (Wenn Sie diesem Datenmember `false` zuweisen, generiert der Output-Dienst eine einzelne PDF-Datei, die alle Datensätze enthält.)
-   * Legen Sie die Datei-URI-Option fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der Datei(en) angibt, die der Output-Dienst dem `OutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Legen Sie die Datei-URI-Option fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der Datei(en) angibt, die der Output-Dienst dem `OutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
    * Legen Sie die Option für den Datensatznamen fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Namen des XML-Elements in der Datenquelle angibt, der die Datensätze zum `OutputOptionsSpec` Datenmember des `recordName` Objekts trennt.
    * Legen Sie die Kopieroption fest, indem Sie einen ganzzahligen Wert zuweisen, der die Anzahl der Kopien angibt, die der Output-Dienst dem `OutputOptionsSpec` Datenmember des `copies` Objekts generiert.
 
@@ -1932,9 +1932,9 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Output API (Webdienst):
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Suchregeln erstellen {#creating-search-rules}
 
@@ -1970,10 +1970,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie adobe-utilities.jar und jbossall-client.jar durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird.
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie adobe-utilities.jar und jbossall-client.jar durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird.
 
 **Output Client-Objekt erstellen**
 
@@ -2054,7 +2054,7 @@ Erstellen Sie Suchregeln mit der Output API (Java):
 1. Legen Sie die PDF-Laufzeitoptionen fest.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Namen und den Speicherort der PDF-Datei an, die der Output-Dienst durch Aufrufen der `PDFOutputOptionsSpec` Objektmethode `setFileURI` generiert. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der PDF-Datei angibt. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Geben Sie den Namen und den Speicherort der PDF-Datei an, die der Output-Dienst durch Aufrufen der `PDFOutputOptionsSpec` Objektmethode `setFileURI` generiert. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der PDF-Datei angibt. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
    * Legen Sie die Regeln fest, die Sie durch Aufrufen der `PDFOutputOptionsSpec` Objektmethode definiert `setRules` haben. Übergeben Sie das `java.util.List` Objekt, das die `Rule` Objekte enthält.
    * Legen Sie die Anzahl der Bytes fest, die auf die definierten Textmuster überprüft werden sollen, indem Sie die `PDFOutputOptionsSpec` Objektmethode `setLookAhead` aufrufen. Übergeben Sie einen ganzzahligen Wert, der die Anzahl der Byte darstellt.
 
@@ -2104,12 +2104,12 @@ Erstellen Sie Suchregeln mithilfe der Output API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -2144,7 +2144,7 @@ Erstellen Sie Suchregeln mithilfe der Output API (Webdienst):
 1. Festlegen von PDF-Laufzeitoptionen
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Datei-URI-Option fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms gehostet wird, und nicht zum Clientcomputer.
+   * Legen Sie die Datei-URI-Option fest, indem Sie einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `fileURI` Objekts generiert. Die Option &quot;Datei-URI&quot;ist relativ zum J2EE-Anwendungsserver, auf dem AEM Forms ausgeführt wird, und nicht zum Clientcomputer.
    * Legen Sie die Kopieroption fest, indem Sie einen ganzzahligen Wert zuweisen, der die Anzahl der Kopien angibt, die der Output-Dienst dem `PDFOutputOptionsSpec` Datenmember des `copies` Objekts generiert.
    * Legen Sie die Regeln fest, die Sie definiert haben, indem Sie das `MyArrayOf_xsd_anyType` Objekt, in dem die Regeln gespeichert werden, dem `PDFOutputOptionsSpec` `rules` Datenmember des Objekts zuweisen.
    * Legen Sie die Anzahl der Bytes fest, die auf die definierten Textmuster überprüft werden sollen, indem Sie einen ganzzahligen Wert zuweisen, der die Anzahl der zu scannenden Bytes für die `PDFOutputOptionsSpec` Datenmethode `lookAhead` des Objekts darstellt.
@@ -2156,7 +2156,7 @@ Erstellen Sie Suchregeln mithilfe der Output API (Webdienst):
 
    >[!NOTE]
    >
-   >Sie können die Version des PDF-Dokuments nicht mithilfe des `RenderOptionsSpec` Objektelements `pdfVersion` festlegen, wenn es sich bei dem Eingabedokument um ein Acrobat-Dokument handelt. Das PDF-Dokument für die Ausgabe behält die PDF-Version des Acrobat-Formulars bei. Gleichermaßen können Sie die Option &quot;PDF mit Tags&quot;nicht mit der `RenderOptionsSpec` `taggedPDF` Objektmethode festlegen, wenn es sich bei dem Eingabedatum um ein Acrobat-Dokument handelt.
+   >Sie können die Version des PDF-Dokuments nicht mithilfe des `RenderOptionsSpec` Objektelements `pdfVersion` festlegen, wenn es sich bei dem Eingabedokument um ein Acrobat-Dokument handelt. Das PDF-Dokument für die Ausgabe behält die PDF-Version des Acrobat-Formulars bei. Gleichermaßen können Sie die Option &quot;PDF mit Tags&quot;nicht mithilfe der `RenderOptionsSpec` `taggedPDF` Objektmethode festlegen, wenn das Eingabedatum ein Acrobat-Dokument ist.
 
    >[!NOTE]
    >
@@ -2191,9 +2191,9 @@ Erstellen Sie Suchregeln mithilfe der Output API (Webdienst):
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Reduzieren von PDF-Dokumenten {#flattening-pdf-documents}
 
@@ -2229,10 +2229,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungsserver sind, auf dem AEM Forms bereitgestellt wird. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Output Client-Objekt erstellen**
 
@@ -2319,12 +2319,12 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Output API (Webdienst)
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird.
 
 1. Erstellen Sie ein Output Client-Objekt.
 
    * Erstellen Sie ein `OutputServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -2367,6 +2367,6 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Output API (Webdienst)
 
 [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
