@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 translation-type: tm+mt
 source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 82%
 
 ---
 
@@ -152,7 +155,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
 
-   ![Hinzufügen von Ländernamen](assets/country-dropdown.png) ![Hinzufügen von Skripten zum Ausfüllen von](assets/state-dropdown.png) Dropdownlisten &quot; ![Land&quot;und &quot;Bundesland&quot;und zum Zusammenstellen](assets/2dropdowns.png)
+   ![Hinzufügen von Ländernamen](assets/country-dropdown.png) ![Hinzufügen von Skripten zum Ausfüllen der Dropdown-Listen](assets/state-dropdown.png) &quot; ![Land&quot;und &quot;Bundesland&quot;](assets/2dropdowns.png)
 
    ```
    JSON.parse(
