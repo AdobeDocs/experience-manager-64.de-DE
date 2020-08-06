@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 85%
 
 ---
 
@@ -23,7 +26,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
-1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Klicken Sie auf das Symbol zum Starten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Klicken Sie auf das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
 1. Geben Sie die folgenden Informationen ein:
 
    * Überprüfungsname: obligatorisch – kann alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
@@ -41,7 +44,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 1. Allen Überprüfern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Überprüfer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Überprüfer können klicken, um die Überprüfungsaufgabe zu öffnen, das Formular anzuzeigen und Kommentare hinzuzufügen.
 
    ![Warnung bei Überprüferbenachrichtigungen](assets/noti.png)
-   **** Abbildung: Benachrichtigungswarnung *für Reviewer*
+   **Abbildung:** *Benachrichtigungswarnung des Überprüfers*
 
 1. Das Kommentarfeld ist für den Initiator und die Überprüfer der Assets verfügbar. Andere können die Kommentare anzeigen, jedoch keine Kommentare schreiben.
 
@@ -69,7 +72,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 1. Bearbeiten Sie die erforderlichen Felder und klicken Sie dann auf „Aktualisieren“.
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
-   **** Abbildung: Aktualisierten Status im Task Manager *überprüfen*
+   **Abbildung:** *Aktualisierten Status in Aufgabe Manager überprüfen*
 
 1. Zum Beenden der Überprüfung klicken auf „Ende“.
 
@@ -83,7 +86,7 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
 1. Wenn ein Überprüfer entfernt wird:
 
    ![Entfernen von Überprüfern](assets/removeduser.png)
-   **** Abbildung: Reviewer *entfernen*
+   **Abbildung:** *Reviewer entfernen*
 
    1. Falls die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
    1. Der Überprüfer kann das Asset nicht mehr kommentieren.
@@ -91,7 +94,7 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
 1. Wenn ein Überprüfer hinzugefügt wird:
 
    ![Hinzufügen von Überprüfern](assets/addedreviewer.png)
-   **** Abbildung: Hinzufügen *eines Prüfers*
+   **Abbildung:** *Hinzufügen eines Prüfers*
 
    1. Eine Überprüfungsaufgabe wird erstellt und dem neu hinzugefügten Überprüfer zugewiesen.
    1. Der neu hinzugefügte Überprüfer kann Kommentare zu Assets hinzufügen.
