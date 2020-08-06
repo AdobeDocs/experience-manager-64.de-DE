@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '2737'
+ht-degree: 76%
 
 ---
 
@@ -131,7 +134,7 @@ Im Bereich „Informationen zum Antragsteller“ muss sie Angaben auf folgenden 
 
 * **[!UICONTROL Grundlegende Informationen]**
 
-Unter &quot;Grundlegende Informationen&quot;gibt Sarah ihren ID-Nachweis und ihre persönlichen Informationen ein. Zu Sarahs persönlichen Informationen gehören Name, E-Mail-ID und Sozialversicherungsnummer.
+Unter &quot;Grundlegende Informationen&quot;gibt Sarah ihren ID-Testversand und ihre persönlichen Informationen ein. Zu Sarahs persönlichen Informationen gehören Name, E-Mail-ID und Sozialversicherungsnummer.
 
 * **[!UICONTROL Beziehung]**
 
@@ -218,7 +221,7 @@ Wenn Sarah den Kindergeldantrag einreicht, wird ein PDF-Dokument oder ein Datens
 
 ### Sehen Sie selbst{#see-it-yourself-2} 
 
-Seite öffnen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als repräsentativ]** anmelden und melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM-Posteingang an. Die Kindergeld-Anwendung wird angezeigt. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Seite öffnen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als repräsentativ]** anmelden und melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM an. Die Kindergeld-Anwendung wird angezeigt. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![Glorias Posteingang auf der We.Gov-Referenzwebsite](assets/gloria-inbox.png)
 
@@ -226,7 +229,7 @@ Gloria kann den Antrag vom Antrags-Dashboard aus anzeigen, genehmigen oder ableh
 
 ### Funktionsweise {#how-it-works-3}
 
-Gloria, Leiterin für Genehmigungen bei We.Gov, öffnet den AEM-Posteingang. Es wird eine Überprüfungsaufgabe in der Aufgabenliste angezeigt. Sie öffnet und sieht sich die Review-Aufgabe an.
+Gloria, Leiterin für Genehmigungen bei We.Gov, öffnet den AEM-Posteingang. Es wird eine Überprüfungsaufgabe in der Aufgabenliste angezeigt. Sie öffnet und Ansicht die Review-Aufgabe.
 
 Sie sieht eine PDF-Datei des Formulars mit allen von Sarah eingegebenen Details sowie die Dokumente, die Sarah hochgeladen hat.\
 Gloria kann den Antrag genehmigen oder ablehnen. However, Gloria clicks **[!UICONTROL Assessment Required]** to get the application assessed.
@@ -285,7 +288,7 @@ Nachdem Conard die Überprüfung gesendet hat, wird die Überprüfungsaufgabe in
 
 ![gloriainbox-1](assets/gloriainbox-1.png)
 
-Unter &quot;Aufgabendetails&quot;sieht Gloria die letzte Aktion als &quot;Zur Neubewertung übermitteln&quot;(von Conard). Gloria sieht, dass der Antrag von Conard Simms überprüft wurde.
+Unter &quot;Details zur Aufgabe&quot;sieht Gloria die letzte Aktion als &quot;Zur Neubewertung einreichen&quot;(von Conard). Gloria sieht, dass der Antrag von Conard Simms überprüft wurde.
 
 ![gloriaapproval](assets/gloriaapproves.png)
 
@@ -315,25 +318,25 @@ Das Registrierungsdokument enthält Details, z. B. die Referenz-ID, unterstützt
 
 Sarah kann die Dokumente, die sie auf derselben Seite hochgeladen hat, sehen.
 
-![uploaded-documents](assets/uploaded-documents.png)
+![uploaded-Dokumente](assets/uploaded-documents.png)
 
 ### Funktionsweise {#how-it-works-6}
 
 Wenn Gloria den Antrag genehmigt, erhält Sarah eine automatische E-Mail mit einem Link zum Registrierungsdokument.
 
-Das Registrierungsdokument ist eine interaktive Kommunikation und kann auf jedem Gerät angezeigt werden. Es enthält die Details zum Kindergeld und die von Sarah bereitgestellten Informationen.
+Das Dokument für die Anmeldung ist eine interaktive Kommunikation, die auf jedem Gerät angezeigt werden kann. Es enthält die Details zum Kindergeld und die von Sarah bereitgestellten Informationen.
 
 ### Sehen Sie selbst{#see-it-yourself-6} 
 
 Überprüfen Sie den E-Mail-Client, den Sie für die automatische E-Mail mit einem Link zum Registrierungsdokument konfiguriert haben.
 
-Sie können das Dokument auch in Ihrem Browser anzeigen: `https://<hostname>:<PublishPort>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-gov/child-support/enrollment-document&referenceId=[reference-id]&channel=web`
+Alternativ können Sie das Dokument in Ihrem Browser anzeigen: `https://<hostname>:<PublishPort>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-gov/child-support/enrollment-document&referenceId=[reference-id]&channel=web`
 
 ## We.Gov analysiert die Leistung des Antrags {#we-gov-analyzes-the-performance-of-the-application}
 
-Wir.Gov prüft von Zeit zu Zeit die Leistung der Anwendung für Kindergeld, um festzustellen, ob Probleme auftreten, mit denen Kunden konfrontiert werden könnten. Sie verwenden diese Analyse, um fundierte Entscheidungen über die Änderungen zu treffen, die in der Kindergeld-Services-Anwendung erforderlich sind, um die Benutzerfreundlichkeit zu verbessern, die Abbruchrate von Formularen zu reduzieren und dadurch die Konvertierung zu verbessern. Zur Analyse nutzt das Unternehmen die Integration von AEM Forms mit Adobe Analytics. Die folgende Abbildung zeigt das Analyse-Dashboard des Unternehmens.
+Wir.Gov prüft von Zeit zu Zeit die Leistung der Anwendung für Kindergeld, um festzustellen, ob Probleme auftreten, mit denen Kunden konfrontiert werden könnten. Sie verwenden diese Analyse, um fundierte Entscheidungen über die Änderungen zu treffen, die in der Kindergeld-Services-Anwendung erforderlich sind, um die Benutzerfreundlichkeit zu verbessern, die Abbruchrate von Formularen zu reduzieren und damit die Konvertierung zu verbessern. Zur Analyse nutzt das Unternehmen die Integration von AEM Forms mit Adobe Analytics. Die folgende Abbildung zeigt das Analyse-Dashboard des Unternehmens.
 
-![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
+![child-support-analytics-Dashboard](assets/child-support-analytics-dashboard.png)
 
 ### Funktionsweise {#how-it-works-7}
 
@@ -341,7 +344,7 @@ Die Leistungsmetriken für das Antragsformular für Kindergeld werden mit Adobe 
 
 ### Sehen Sie selbst{#see-it-yourself-7} 
 
-Damit Sie den Analysebericht anzeigen und untersuchen können, stellen wir Seed-Daten für die Kindergeld-Services-Anwendung auf der Referenz-Website bereit. Bevor Sie Seed-Daten verwenden, lesen Sie[ Konfigurieren von Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Führen Sie folgende Schritte im Autorenmodus aus, um den Bericht mit den Seed-Daten anzuzeigen: 
+Damit Sie den Analysebericht Ansicht und Untersuchung erhalten, stellen wir Seed-Daten für die Kindergeld-Services-Anwendung auf der Referenz-Website bereit. Bevor Sie Seed-Daten verwenden, lesen Sie[ Konfigurieren von Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Führen Sie folgende Schritte im Autorenmodus aus, um den Bericht mit den Seed-Daten anzuzeigen: 
 
 1. Go to **[!UICONTROL Forms &amp; Documents]** UI at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
@@ -353,7 +356,7 @@ Damit Sie den Analysebericht anzeigen und untersuchen können, stellen wir Seed-
 So erstellen Sie einen Analysebericht mit Seed-Daten:
 
 1. In the address browser of CRXDE lite, type: **/apps/we-gov/demo-artifacts/analyticsTestData/Child support service Analytics Test Data**
-1. Die Seed-Daten werden in der linken Ordnerstruktur ausgewählt.
+1. Die Seed-Daten werden in der Verzeichnisstruktur auf der linken Seite ausgewählt.
 1. Doppelklicken Sie auf die ausgewählte Datei, um ihren Inhalt im rechten Seitenbereich zu öffnen.
 1. Kopieren Sie den gesamten Inhalt in die Testdatendatei.
 1. In CRXDE, navigate to: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
