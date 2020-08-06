@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +32,7 @@ Sie haben für die Konfiguration der Integration folgende Optionen:
 
 * Lehnen Sie die Integration ab.
 
-   Erwägen Sie die Verwendung dieser Option, falls Sie es vorziehen, [die Integration manuell zu konfigurieren](/help/sites-administering/marketing-cloud.md). Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+   Erwägen Sie die Verwendung dieser Option, falls Sie es vorziehen, [die Integration manuell zu konfigurieren](/help/sites-administering/marketing-cloud.md). Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Konfigurieren Sie das Setup und die Bereitstellung, indem Sie ein Skript verwenden.
 
@@ -75,7 +78,7 @@ Gehen Sie wie folgt vor, um den Opt-in über die vorab geladene Standardaufgabe 
    1. Geben Sie die Benutzerkontoinformationen für Target ein und klicken Sie dann auf die Schaltfläche **Hinzufügen**.
    1. Die entsprechenden Anmeldeinformationen werden authentifiziert. Der Status wird in **Hinzugefügt** geändert.
 
-1. Wählen Sie **Weiter**.
+1. Wählen Sie **Weiter** aus.
 1. Wählen Sie die Websites aus, für die Analytics bzw. Target verwendet werden soll.
 
 1. Wählen Sie **Fertig**, um den Vorgang abzuschließen.
@@ -182,6 +185,7 @@ Es hängt von Folgendem ab, welche Parameter Sie senden müssen:
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
    * `path`=Pfad zu einer AEM-Seite, um die erstellten Cloud Service-Konfigurationen anzufügen
+
    Eine Curl-Anforderung, mit der sowohl die Analytics- als auch die Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, lautet beispielsweise wie folgt:
 
    ```shell
@@ -194,13 +198,14 @@ Es hängt von Folgendem ab, welche Parameter Sie senden müssen:
    * servicename= `analytics|target`
    * path=Pfad zu einer AEM-Seite, um die erstellten Cloud Service-Konfigurationen anzufügen; es können mehrere Pfade definiert werden
    * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
+   * analytics.Firma= `Name of company`
    * analytics.username= `me`
    * analytics.secret= `secret`
    * analytics.reportsuite= `we-retail`
    * target.clientcode= `mycompany`
    * target.email= `me@adobe.com`
    * target.password= `password`
+
    In diesem Fall würde die Curl-Anforderung, mit der die Analytics- und Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, wie folgt lauten:
 
    ```shell
