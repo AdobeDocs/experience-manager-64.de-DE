@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 79%
 
 ---
 
@@ -42,6 +45,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    * Hochformat: `Default-Portrait~ipad.png` und `Default-Portrait@2x~ipad.png`
    * Querformat: `Default-Landscape~ipad.png` und `Default-Landscape@2x~ipad.png`
+
    Laden Sie die Dateien in das Capture-Projekt hoch, wobei Sie bestehende Dateien im Projekt ersetzen.
 
    >[!NOTE]
@@ -63,6 +67,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
+
    >[!NOTE]
    >
    >Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit demjenigen übereinstimmen, das Sie im Projekt ersetzen.
