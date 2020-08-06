@@ -135,7 +135,7 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
    | Schriftfarbe | FFFFFF |
    | Schriftgrad | 54px |
 
-1. Tippen Sie auf das Kopfzeilen-Widget und tippen Sie auf **Kopfzeile**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie das Akkordeon **Dimensionen und Position** , legen Sie die **Höhe** auf `120px`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf das Kopfzeilen-Widget und tippen Sie auf **Kopfzeile**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie das Akkordeon &quot; **Dimensionen und Position** &quot;, legen Sie die **Höhe** auf `120px`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Erweitern Sie das Akkordeon „Hintergrund“-des Kopfzeilen-Widgets und stellen Sie die **Hintergrundfarbe** auf `F6921E.` ein.
 
    Hover over **Image &amp; Gradient** > **+ Add**, tap **Image**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
