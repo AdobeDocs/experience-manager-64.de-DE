@@ -125,9 +125,9 @@ Weitere Informationen zu JGroups und Workspace finden Sie unter [JGroups and AEM
 
 **server_debugLevel:** Ändern Sie diese Einstellung nicht.
 
-**client_pollingInterval:** Legt das Abfrageintervall (in Sekunden) fest, das in Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) verwendet wird, um neue und geänderte Aufgaben zu erkennen. Der Standardwert ist 3 Sekunden. Dies ist für AEM Forms Workspace nicht möglich.
+**client_pollingInterval:** Legt das Abfrageintervall (in Sekunden) fest, das in Flex Workspace (für AEM Forms on JEE nicht mehr unterstützt) verwendet wird, um neue und geänderte Aufgaben zu erkennen. Der Standardwert ist 3 Sekunden. Dies ist für AEM Forms Workspace nicht möglich.
 
-**client_systemContext_name:** Geben Sie einen benutzerdefinierten Namen (z. B. Bürger) an, der im Feld &quot;Hinzugefügt von&quot;(auf der Registerkarte &quot;Anlagen&quot;) für die Anlagen einer Aufgabe in AEM Forms Workspace angezeigt werden soll.
+**client_systemContext_name:** Geben Sie einen benutzerdefinierten Namen (z. B. &quot;Bürger&quot;) an, der im Feld &quot;Hinzugefügt von&quot;(auf der Registerkarte &quot;Anlagen&quot;) für die Anlagen einer Aufgabe in AEM Forms Workspace angezeigt werden soll.
 
 Definieren des benutzerdefinierten Namens:
 
