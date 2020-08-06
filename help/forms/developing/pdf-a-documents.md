@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2342'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 **Informationen zum DocConverter-Dienst**
 
-Der DocConverter-Dienst kann PDF-Dokumente in PDF/A-Dokumente konvertieren. Folgende Aufgaben können Sie mit diesem Dienst ausführen:
+Der DocConverter-Dienst kann PDF-Dokumente in PDA/A-Dokumente konvertieren. Sie können diese Aufgaben mit diesem Dienst ausführen:
 
 * Konvertieren von PDF-Dokumenten in PDF/A-Dokumente (Siehe [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 * Stellen Sie fest, ob PDF-Dokumente PDF/A-Dokumente sind. (Siehe PDF/A-Kompatibilität [programmgesteuert ermitteln](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
@@ -28,13 +31,13 @@ Der DocConverter-Dienst kann PDF-Dokumente in PDF/A-Dokumente konvertieren. Folg
 >
 >For more information about the DocConverter service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Dokumente in PDF/A-Dokumente konvertieren {#converting-documents-to-pdf-a-documents}
+## Konvertieren von Dokumenten in PDF/A-Dokumente {#converting-documents-to-pdf-a-documents}
 
-Mit dem DocConverter-Dienst können Sie ein PDF-Dokument in ein PDF/A-Dokument konvertieren. Da PDF/A ein Archivierungsformat für die langfristige Erhaltung des Dokumentinhalts ist, werden alle Schriftarten eingebettet und die Datei nicht komprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte. Bevor Sie ein PDF-Dokument in ein PDF/A-Dokument konvertieren, stellen Sie sicher, dass es sich bei dem PDF-Dokument nicht um ein PDF/A-Dokument handelt.
+Mit dem DocConverter-Dienst können Sie ein PDF-Dokument in ein PDF/A-Dokument konvertieren. Da PDF/A ein Archivierungsformat für die langfristige Speicherung des Dokuments ist, werden alle Schriftarten eingebettet und die Datei nicht komprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte. Bevor Sie ein PDF-Dokument in ein PDF/A-Dokument konvertieren, stellen Sie sicher, dass das PDF-Dokument kein PDF/A-Dokument ist.
 
-Die PDF/A-1-Spezifikation besteht aus zwei Konformitätsstufen, nämlich A und B. Der Hauptunterschied zwischen den beiden besteht in der Unterstützung der logischen Struktur (Zugänglichkeit), die für die Konformitätsstufe B nicht erforderlich ist. Unabhängig von der Konformitätsstufe schreibt PDF/A-1 vor, dass alle Schriftarten in das erstellte PDF/A-Dokument eingebettet sind. Derzeit wird nur PDF/A-1b bei der Überprüfung (und Konvertierung) unterstützt.
+Die PDF/A-1-Spezifikation besteht aus zwei Stufen der Konformität, nämlich A und B. Der Hauptunterschied zwischen den beiden besteht in der Unterstützung der logischen Struktur (Zugänglichkeit), die für die Konformitätsstufe B nicht erforderlich ist. Unabhängig von der Konformitätsstufe schreibt PDF/A-1 vor, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind. Derzeit wird nur PDF/A-1b bei der Überprüfung (und Konvertierung) unterstützt.
 
-Während PDF/A der Standard für die Archivierung von PDF-Dokumenten ist, ist es nicht erforderlich, PDF/A für die Archivierung zu verwenden, wenn ein Standard-PDF-Dokument die Anforderungen Ihres Unternehmens erfüllt. Der Zweck des PDF/A-Standards besteht darin, eine PDF-Datei zu erstellen, die für die langfristige Archivierung und Dokumentenerhaltung gedacht ist.
+PDF/A ist zwar der Standard für die Archivierung von PDF-Dokumenten, es ist jedoch nicht erforderlich, dass PDF/A für die Archivierung verwendet wird, wenn ein Standard-PDF-Dokument die Anforderungen Ihrer Firma erfüllt. Der PDF/A-Standard dient dazu, eine PDF-Datei zu erstellen, die für langfristige Archivierungs- und Dokument-Schutzbedürfnisse gedacht ist.
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ Rufen Sie ein PDF-Dokument ab, das in ein PDF/A-Dokument konvertiert werden soll
 
 **Festlegen von Verfolgungsinformationen**
 
-Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst beim Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument verfolgt.
+Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst verfolgt, wenn ein PDF-Dokument in ein PDF/A-Dokument konvertiert wird.
 
 **Dokument konvertieren**
 
@@ -87,23 +90,23 @@ Sie können das PDF/A-Dokument als PDF-Datei speichern.
 
 **Siehe auch**
 
-[Dokumente mit der Java-API in PDF/A-Dokumente konvertieren](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-java-api)
+[Konvertieren von Dokumenten in PDF/A-Dokumente mit der Java-API](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-java-api)
 
-[Konvertieren von Dokumenten in PDF/A-Dokumente mit der Webdienst-API](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
+[Konvertieren von Dokumenten in PDF/A-Dokumente mithilfe der Webdienst-API](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Programmatische Bestimmung der PDF/A-Kompatibilität](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
+[Programmgesteuertes Bestimmen der PDF/A-Kompatibilität](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
 
-### Dokumente mit der Java-API in PDF/A-Dokumente konvertieren {#convert-documents-to-pdf-a-documents-using-the-java-api}
+### Konvertieren von Dokumenten in PDF/A-Dokumente mit der Java-API {#convert-documents-to-pdf-a-documents-using-the-java-api}
 
 Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der Java-API:
 
 1. Projektdateien einschließen
 
-   Schließen Sie Client-JAR-Dateien wie &quot;adobe-docconverter-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie &quot;adobe-docconverter-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines DocConvert-Clients
 
@@ -118,7 +121,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der Java-API:
 1. Festlegen von Verfolgungsinformationen
 
    * Erstellen Sie ein Objekt `PDFAConversionOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Informationsverfolgungsebene fest, indem Sie die `PDFAConversionOptionSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der die Verfolgungsstufe angibt, `setLogLevel` um die Informationen zu verfolgen. For example, pass the value `FINE`. Informationen zu den verschiedenen Werten finden Sie in der `setLogLevel` Methode in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Informationsverfolgungsebene fest, indem Sie die `PDFAConversionOptionSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der die Verfolgungsstufe angibt, `setLogLevel` um die Informationen zu verfolgen. For example, pass the value `FINE`. Informationen zu den verschiedenen Werten finden Sie in der `setLogLevel` Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Dokument konvertieren
 
@@ -126,6 +129,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der Java-API:
 
    * Das `com.adobe.idp.Document` Objekt, das das zu konvertierende PDF-Dokument enthält
    * Das `PDFAConversionOptionSpec` Objekt, das Verfolgungsinformationen angibt
+
    Die `toPDFA` Methode gibt ein `PDFAConversionResult` Objekt zurück, das das PDF/A-Dokument enthält.
 
 1. PDF/A-Dokument speichern
@@ -138,15 +142,15 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der Java-API:
 
 [Arbeiten mit PDF/A-Dokumenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Kurzanleitung (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-Dokument mit der Java-API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-Dokument mit der Java-API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Konvertieren von Dokumenten in PDF/A-Dokumente mit der Webdienst-API {#convert-documents-to-pdf-a-documents-using-the-web-service-api}
+### Konvertieren von Dokumenten in PDF/A-Dokumente mithilfe der Webdienst-API {#convert-documents-to-pdf-a-documents-using-the-web-service-api}
 
-Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der DocConverter API (Webdienst):
+Konvertieren Sie ein PDF-Dokument mithilfe der DocConverter-API (Webdienst) in ein PDF/A-Dokument:
 
 1. Projektdateien einschließen
 
@@ -177,6 +181,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der DocConverter
 
    * Das `BLOB` Objekt, das das zu konvertierende PDF-Dokument enthält
    * Das `PDFAConversionOptionSpec` Objekt, das Verfolgungsinformationen angibt
+
    Die `toPDFA` Methode gibt ein `PDFAConversionResult` Objekt zurück, das das PDF/A-Dokument enthält.
 
 1. PDF/A-Dokument speichern
@@ -191,13 +196,13 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument mithilfe der DocConverter
 
 [Arbeiten mit PDF/A-Dokumenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Erstellen einer .NET-Client-Assembly, die Base64-Kodierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Programmatische Bestimmung der PDF/A-Kompatibilität {#programmatically-determining-pdf-a-compliancy}
+## Programmgesteuertes Bestimmen der PDF/A-Kompatibilität {#programmatically-determining-pdf-a-compliancy}
 
-Mit dem DocConverter-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist. Weitere Informationen zu PDF/A-Dokumenten und zum Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument finden Sie unter [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+Mit dem DocConverter-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist. Informationen zu einem PDF/A-Dokument und zum Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument finden Sie unter [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
@@ -237,11 +242,11 @@ Ein PDF-Dokument muss referenziert und an den DocConverter-Dienst übergeben wer
 
 **Festlegen von Laufzeitoptionen**
 
-Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst beim Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument verfolgt.
+Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst verfolgt, wenn ein PDF-Dokument in ein PDF/A-Dokument konvertiert wird.
 
 **Abrufen von Informationen zum PDF-Dokument**
 
-Nachdem Sie den DocConverter-Dienstclient erstellt, auf das PDF-Dokument verwiesen und die Laufzeitoptionen festgelegt haben, können Sie festlegen, ob das PDF-Dokument ein PDF/A-konformes Dokument ist.
+Nachdem Sie den DocConverter-Dienstclient erstellt, auf das PDF-Dokument verwiesen und die Laufzeitoptionen festgelegt haben, können Sie festlegen, ob das PDF-Dokument ein PDF/A-kompatibles Dokument ist.
 
 **Siehe auch**
 
@@ -259,7 +264,7 @@ Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API:
 
 1. Projektdateien einschließen
 
-   Schließen Sie Client-JAR-Dateien wie &quot;adobe-docconverter-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie &quot;adobe-docconverter-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines DocConvert-Clients
 
@@ -275,7 +280,7 @@ Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API:
 
    * Erstellen Sie ein Objekt `PDFAValidationOptionSpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie die Kompatibilitätsstufe fest, indem Sie die `PDFAValidationOptionSpec` Methode des `setCompliance` Objekts aufrufen und übergeben `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * Legen Sie die Informationsverfolgungsebene fest, indem Sie die `PDFAValidationOptionSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der die Verfolgungsstufe angibt, `setLogLevel` um die Informationen zu verfolgen. For example, pass the value `FINE`. Informationen zu den verschiedenen Werten finden Sie in der `setLogLevel` Methode in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Informationsverfolgungsebene fest, indem Sie die `PDFAValidationOptionSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der die Verfolgungsstufe angibt, `setLogLevel` um die Informationen zu verfolgen. For example, pass the value `FINE`. Informationen zu den verschiedenen Werten finden Sie in der `setLogLevel` Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Abrufen von Informationen zum PDF-Dokument
 
@@ -283,13 +288,14 @@ Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API:
 
    * Das `com.adobe.idp.Document` Objekt, das das PDF-Dokument enthält.
    * Das `PDFAValidationOptionSpec` Objekt, das Laufzeitoptionen angibt.
+
    Die `isPDFA` Methode gibt ein `PDFAValidationResult` Objekt zurück, das die Ergebnisse dieses Vorgangs enthält.
 
 **Siehe auch**
 
 [Arbeiten mit PDF/A-Dokumenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Kurzanleitung (SOAP-Modus): Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -329,12 +335,13 @@ Bestimmen der PDF/A-Kompatibilität mithilfe der Webdienst-API:
 
    * Das `BLOB` Objekt, das das PDF-Dokument enthält.
    * Das `PDFAValidationOptionSpec` Objekt, das Laufzeitoptionen enthält.
+
    Die `isPDFA` Methode gibt ein `PDFAValidationResult` Objekt zurück, das die Ergebnisse dieses Vorgangs enthält.
 
 **Siehe auch**
 
 [Arbeiten mit PDF/A-Dokumenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Erstellen einer .NET-Client-Assembly, die Base64-Kodierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
