@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 78%
 
 ---
 
@@ -55,7 +58,7 @@ In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung,
 
 * **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Am besten arbeitet man mit einer Entwicklungsumgebung pro Entwickler (in der Regel lokale Installationen auf dem individuellen System).
 
-* **Author-Testumgebung**, um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+* **Author-Test-Umgebung**, um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
@@ -119,7 +122,7 @@ Für Benchmarkingzwecke hat Adobe einige Benchmarktests für eigenständige Auto
 
 * **Benchmark-Test 1**
 
-   Berechnen Sie den maximalen Durchsatz eines Lastprofils, bei dem Benutzer eine einfache Übung zum Erstellen einer Seite durchführen, die über eine Grundlast von 300 vorhandenen Seiten hinausgeht, die alle ähnlich sind. Die Schritte bestanden darin, sich bei der Website anzumelden, eine Seite mit einer SWF und Bild/Text zu erstellen, eine Tag-Cloud hinzuzufügen und die Seite zu aktivieren.
+   Berechnen Sie den maximalen Durchsatz eines Load-Profils, bei dem der Benutzer eine einfache Erstellungsseitenübung über einer Grundlast von 300 vorhandenen Seiten durchführen kann, die alle ähnlich sind. Die Schritte bestanden darin, sich bei der Website anzumelden, eine Seite mit einer SWF und Bild/Text zu erstellen, eine Tag-Cloud hinzuzufügen und die Seite zu aktivieren.
 
    * **Ergebnis**
 
@@ -127,7 +130,7 @@ Für Benchmarkingzwecke hat Adobe einige Benchmarktests für eigenständige Auto
 
 * **Benchmark-Test 2**
 
-   Berechnen Sie den maximalen Durchsatz, wenn das Lastenprofil eine Mischung aus der Erstellung neuer Seiten (10 %), der Änderung einer vorhandenen Seite (80 %) und der Erstellung und anschließenden Änderung einer Seite (10 %) enthält. Die Komplexität der Seiten bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Die Übung wurde wiederum auf einer Grundlast von 300 Seiten mit der gleichen Komplexität wie in Benchmarktest 1 durchgeführt.
+   Berechnen Sie den maximalen Durchsatz, wenn das Load-Profil eine Mischung aus der Erstellung neuer Seiten (10 %), der Änderung einer vorhandenen Seite (80 %) und der Erstellung und anschließenden Änderung einer Seite (10 %) aufweist. Die Komplexität der Seiten bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Die Übung wurde wiederum auf einer Grundlast von 300 Seiten mit der gleichen Komplexität wie in Benchmarktest 1 durchgeführt.
 
    * **Ergebnis**
 
@@ -151,7 +154,7 @@ Für solche Szenarien führte Adobe Benchmarktests auf einem Shared-Nothing-Clus
 
 * **Benchmark-Test 1a**
 
-   Mit einem Active-Active-nichts-Cluster aus 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Lastenprofil, bei dem Benutzer eine einfache Übung zum Erstellen einer Seite über einer Grundlast von 300 vorhandenen Seiten durchführen, die alle ähnlich sind.
+   Mit einem Active-Active-nichts-Cluster aus 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz mit einem Load-Profil, bei dem Benutzer eine einfache Erstellungsseitenübung über einer Grundlast von 300 vorhandenen Seiten durchführen, alle ähnlich.
 
    * **Ergebnis**
 
@@ -159,7 +162,7 @@ Für solche Szenarien führte Adobe Benchmarktests auf einem Shared-Nothing-Clus
 
 * **Benchmark-Test 2b**
 
-   Mit einem aktiven Cluster für freigegebene Inhalte mit zwei Instanzen im Autorenmodus berechnen Sie den maximalen Durchsatz, wenn das Lastenprofil eine Mischung aus neuer Seitenerstellung (10 %), Änderung einer vorhandenen Seite (80 %) und anschließender Erstellung und Änderung einer Seite (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
+   Mit einem aktiven Cluster für freigegebene Seiten mit zwei Instanzen im Autorenmodus können Sie den maximalen Durchsatz berechnen, wenn das Load-Profil eine Mischung aus der Erstellung neuer Seiten (10 %), der Änderung vorhandener Seiten (80 %) und der Erstellung und Bearbeitung einer Seite hintereinander (10 %) enthält. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
 
    * **Ergebnis**
 
@@ -174,7 +177,7 @@ Die beiden oben genannten Tests zeigen deutlich, dass AEM für Autoren, die grun
 
 Auf einer typischen Website geschieht das meiste Authoring während der Projektphase. Nach dem Start der Website sinkt die Anzahl der parallel arbeitenden Autoren in der Regel auf einen niedrigeren (Regelbetriebs-)Durchschnitt.
 
-Sie können die für die Autorenumgebung erforderliche Anzahl von Computern (oder CPUs) wie folgt berechnen:
+Sie können die für die Authoring-Umgebung erforderliche Anzahl von Computern (oder CPUs) wie folgt berechnen:
 
 `n = numberOfParallelAuthors / 30`
 
@@ -186,7 +189,7 @@ Please also see the additional comments on [Parallelization](/help/managing/hard
 
 Normalerweise können Sie für Ihre Autorenumgebung die gleiche Hardware verwenden, die für Ihre Veröffentlichungsumgebung empfohlen wird. Normalerweise ist der Website-Traffic auf Autorensystemen viel geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM-Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Leseoperationen; mit anderen Worten, ein AEM-Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsoperationen durchführen.
 
-Die Benchmark-Tests bei Adobe wurden unter Verwendung des Betriebssystems RedHat 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5 Hardware-Plattform mit der folgenden Konfiguration ausgeführt wurde:
+Die Benchmark-Tests zur Adobe wurden unter Verwendung des Betriebssystems RedHat 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5-Hardwareplattform mit der folgenden Konfiguration ausgeführt wurde:
 
 * Zwei Quad-Core Intel Xeon X5450 CPUs mit 3,00 GHz
 * 8 GB RAM
@@ -224,11 +227,11 @@ Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu 
 
 ### Formel {#formula}
 
-Mithilfe der folgenden Formel können Sie eine Schätzung der Gesamtkomplexität Ihrer AEM-Lösung berechnen:
+Mithilfe der folgenden Formel können Sie eine Schätzung der Gesamtkomplexität Ihrer AEM Lösung berechnen:
 
 `complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
 
-Anhand der Komplexität können Sie die Anzahl der Server (oder CPU-Kerne) ermitteln, die Sie für die Veröffentlichungsumgebung benötigen:
+Anhand der Komplexität können Sie die Anzahl der Server (oder CPU-Kerne) ermitteln, die Sie für die Umgebung zur Veröffentlichung benötigen:
 
 `n = (traffic * complexity / 1000 ) * activations`
 
@@ -237,7 +240,7 @@ Die Variablen in der Gleichung lauten wie folgt:
 <table>
  <tbody>
   <tr>
-   <td>traffic</td>
+   <td>Traffic</td>
    <td>Der erwartete Spitzenverkehr pro Sekunde. Man kann dies als die Anzahl der Seitenaufrufe pro Tag, geteilt durch 35.000, schätzen.</td>
   </tr>
   <tr>
@@ -245,9 +248,9 @@ Die Variablen in der Gleichung lauten wie folgt:
    <td><p>Verwenden Sie 1 für eine einfache Anwendung, 2 für eine komplexe Anwendung oder einen dazwischen liegenden Wert:</p>
     <ul>
      <li>1 - eine vollständig anonyme, inhaltsorientierte Site</li>
-     <li>1.1 - eine vollständig anonyme, inhaltsorientierte Site mit clientseitiger/Target-Personalisierung</li>
-     <li>1.5 - eine inhaltsorientierte Site mit anonymen und angemeldeten Abschnitten, clientseitige/Target-Personalisierung</li>
-     <li>1.7 - für eine inhaltsorientierte Site mit anonymen und angemeldeten Abschnitten, clientseitige/Target-Personalisierung und einige benutzergenerierte Inhalte</li>
+     <li>1.1 - eine vollständig anonyme, inhaltsorientierte Site mit clientseitiger/Zielgruppe-Personalisierung</li>
+     <li>1.5 - eine inhaltsorientierte Site mit anonymen und angemeldeten Bereichen, clientseitige/Zielgruppe-Personalisierung</li>
+     <li>1.7 - für eine inhaltsorientierte Site mit anonymen und angemeldeten Bereichen, clientseitige/benutzerspezifische Personalisierung und einige benutzergenerierte Zielgruppen</li>
      <li>2 - bei denen die gesamte Site angemeldet werden muss, mit umfangreichen benutzergenerierten Inhalten und einer Vielzahl von Personalisierungstechniken</li>
     </ul> </td>
   </tr>
@@ -261,7 +264,7 @@ Die Variablen in der Gleichung lauten wie folgt:
   </tr>
   <tr>
    <td>Aktivierungen</td>
-   <td>Anzahl der durchschnittlichen Aktivierungen (Replizierung von Seiten mit durchschnittlicher Größe und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde geteilt durch x, wobei x die Anzahl der auf einem System durchgeführten Aktivierungen ohne Leistungsbeeinträchtigungen zu anderen vom System verarbeiteten Aufgaben ist. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
+   <td>Anzahl der durchschnittlichen Aktivierungen (Replizierung von Seiten mit mittlerer Größe und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde geteilt durch x, wobei x die Anzahl der Aktivierungen ist, die auf einem System durchgeführt werden, ohne dass Auswirkungen auf die Leistung auf andere vom System verarbeitete Aufgaben auftreten. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -282,7 +285,7 @@ Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere W
 
 >[!NOTE]
 >
-> &amp;ast; Richten Sie zusätzlich zu dem für Ihre JVM erforderlichen Arbeitsspeicher genügend Arbeitsspeicher für Ihr Betriebssystem ein.
+>&amp;ast; Richten Sie zusätzlich zu dem für Ihre JVM erforderlichen Arbeitsspeicher genügend Arbeitsspeicher für Ihr Betriebssystem ein.
 
 ## Zusätzliche anwendungsspezifische Berechnungen {#additional-use-case-specific-calculations}
 
