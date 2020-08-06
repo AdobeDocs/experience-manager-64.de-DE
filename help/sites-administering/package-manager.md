@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +36,7 @@ Ein Paket ist eine Zip-Datei mit Repository-Inhalten in Form einer Dateisystem-S
 
 Pakete enthalten sowohl Seiteninhalte als auch projektspezifische Inhalte, die mithilfe von Filtern ausgewählt werden.
 
-Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen und Import-Konfigurationsinformationen. Zusätzliche Inhaltseigenschaften (die nicht für die Paketextrahierung verwendet werden) können in das Paket eingeschlossen werden, z. B. eine Beschreibung, ein visuelles Bild oder ein Symbol. Diese Eigenschaften dienen nur dem Benutzer des Inhaltspakets und nur zu Informationszwecken.
+Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen und Import-Konfigurationsinformationen. Zusätzliche Inhaltseigenschaften (die nicht für die Extraktion von Paketen verwendet werden) können in das Paket aufgenommen werden, z. B. eine Beschreibung, ein visuelles Bild oder ein Symbol. Diese Eigenschaften dienen nur dem Benutzer des Inhaltspakets und nur zu Informationszwecken.
 
 >[!NOTE]
 >
@@ -81,7 +84,7 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 | Gruppe | Der Name der Gruppe, der das Paket hinzugefügt werden soll, um Pakete zu organisieren. Geben Sie den Namen für eine neue Gruppe ein oder wählen Sie eine vorhandene Gruppe aus. |
 | Version | Für die benutzerdefinierte Version zu verwendender Text. |
 | Beschreibung | Eine kurze Beschreibung des Pakets. HTML-Markup kann zum Formatieren verwendet werden. |
-| Miniatur | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
+| Miniaturansicht       | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
 
 ![chlimage_1-344](assets/chlimage_1-344.png)
 
@@ -142,9 +145,9 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 
 | **Feld** | **Beschreibung** | **Format/Beispiel** |
 |---|---|---|
-| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
-| Behobene Fehler/Probleme | Ein Textfeld, mit dem Sie Details zu Fehlern auflisten können, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr-Zusammenfassung |
-| Abhängig von | Listet Abhängigkeitsinformationen auf, die beachtet werden müssen, wenn andere Pakete benötigt werden, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
+| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
+| Behobene Fehler/Probleme | Ein Textfeld, das die Liste von Details zu Fehlern ermöglicht, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr-Zusammenfassung |
+| Abhängig von | Abhängigkeitsinformationen von Listen, die beachtet werden müssen, wenn andere Pakete benötigt werden, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
 | Ersetzungen | Eine Liste veralteter Pakete, die dieses Paket ersetzt. Überprüfen Sie vor der Installation, ob dieses Paket alle erforderlichen Inhalte von den veralteten Paketen beinhaltet, sodass keine Inhalte überschrieben werden. | groupId:name:version |
 
 ### Paketfilter {#package-filters}
@@ -253,7 +256,7 @@ So erstellen Sie eine neue Paketdefinition:
 
    * **Gruppenname**
 
-      Der Name der Zielgruppe (oder des Ordners). Gruppen sind für die Organisation Ihrer Pakete vorgesehen.
+      Der Name der Zielpopulation (oder des Ordners). Gruppen sind für die Organisation Ihrer Pakete vorgesehen.
 
       Das System legt einen Ordner für die Gruppe an, sollte sie noch nicht vorhanden sein. Wenn Sie keinen Gruppennamen eingeben, wird das Paket in der Hauptpaketliste („Startseite“ > „Pakete“) erstellt.
 
@@ -266,7 +269,7 @@ So erstellen Sie eine neue Paketdefinition:
       Ein Textfeld zur Eingabe einer Version. Diese wird an den Paketnamen angehängt, um den Namen der ZIP-Datei zu bilden.
    Klicken Sie auf **OK**, um das Paket zu erstellen.
 
-1. AEM listet das neue Paket im entsprechenden Gruppenordner auf.
+1. AEM wird das neue Paket im entsprechenden Gruppenordner Liste.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -392,6 +395,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit dem **Package Manager** ein Pa
    >
    >
 * Pakete von [Package Share in das Dateisystem herunterladen](#downloading-packages-to-your-file-system-from-package-share).
+
 >
 
 
@@ -407,7 +411,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit dem **Package Manager** ein Pa
 
 ### Hochladen von Paketen von dem Dateisystem {#uploading-packages-from-your-file-system}
 
-Beim Hochladen von Paketen können Sie ein Paket aus Ihrem Dateisystem in den AEM Package Manager hochladen.
+Beim Hochladen eines Pakets können Sie ein Paket aus Ihrem Dateisystem in den AEM Package Manager hochladen.
 
 >[!NOTE]
 >
@@ -425,7 +429,7 @@ So laden Sie ein Paket hoch:
 
    * **File**
 
-      **Sie können entweder den Dateinamen direkt eingeben oder die** Durchsuchen... , um das gewünschte Paket aus Ihrem lokalen Dateisystem auszuwählen (nach Auswahl klicken Sie auf **OK**).
+      You can either type the file name directly, or use the **Browse...** dialog to select the required package from your local file system (after selection click **OK**).
 
    * **Hochladen erzwingen**
 
@@ -553,6 +557,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 The value of `type` defaults to `osgiPackageImports` if not passed.
@@ -591,6 +596,7 @@ Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren
    >
 * Siehe Liste der Paketinhalte:\
    >  Öffnen Sie das Paket und klicken Sie auf **Inhalt**.
+
 >
 
 
@@ -640,7 +646,7 @@ Wird Ihre Instanz ausgeführt und Sie fügen dem `install`-Ordner ein Paket hinz
 
 ### Deinstallieren von Paketen {#uninstalling-packages}
 
-Mit AEM können Sie Pakete deinstallieren. Durch diese Aktion werden die Inhalte des Repositorys zurückgesetzt, die im Snapshot enthalten sind, der unmittelbar vor der Paketinstallation erstellt wurde.
+AEM ermöglicht die Deinstallation von Paketen. Durch diese Aktion werden die Inhalte des Repositorys zurückgesetzt, die im Snapshot enthalten sind, der unmittelbar vor der Paketinstallation erstellt wurde.
 
 >[!NOTE]
 >
@@ -666,6 +672,7 @@ So löschen Sie ein Paket aus der/den Package Manager-Liste(n):
 
    * Click **Delete** in the toolbar menu.
    * Klicken Sie mit der rechten Maustaste und wählen Sie **Löschen** aus.
+
    ![packagesdelete](assets/packagesdelete.png)
 
 1. AEM fragt nach der Bestätigung, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
@@ -716,6 +723,7 @@ So erhalten Sie Zugriff auf Package Share:
 
    * sich mit Ihrer Adobe ID anzumelden oder
    * [eine Adobe ID zu erstellen](#registering-for-package-share).
+
    >[!NOTE]
    >
    >Bei der ersten Anmeldung mit Ihrer Adobe ID müssen Sie [Ihre E-Mail-Adresse validieren](#validating-your-adobe-id).
@@ -747,7 +755,7 @@ Wenn Sie auf Package Share zugreifen wollen, müssen Sie sich für eine Adobe ID
 
 * Auf der [Package Share-Anmeldeseite](#signing-in-to-package-share) befindet sich ein Link zur Registrierung einer Adobe ID.
 * Sie können sich auch über bestimmte Adobe-Desktop-Softwareprogramme für eine Adobe ID registrieren.
-* Alternativ können Sie sich online auf der [Adobe-Anmeldeseite](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1) registrieren.
+* Alternativ können Sie sich online auf der [Adobe-Anmeldeseite](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1) registrieren.
 
 Eine Adobe ID kann erstellt werden, wenn Sie Folgendes bereitstellen:
 
@@ -885,5 +893,5 @@ Sie können Pakete, die Sie hochgeladen haben, nur wie folgt löschen:
 
 ### Erstellen von halbprivaten Paketen {#making-packages-semi-private}
 
-Sie können Pakete freigeben, sodass sie außerhalb Ihrer Organisation, aber nicht öffentlich zugänglich sind. Diese Pakete sind halbprivate Pakete. Um diese halbprivaten Pakete freizugeben, benötigen Sie Hilfe vom Adobe-Support. Erstellen Sie daher ein Ticket für den Adobe Support mit der Aufforderung, ein Paket außerhalb Ihrer Organisation zugänglich zu machen. Sie werden Sie um eine Liste der Adobe-IDs bitten, die Sie für Ihre Pakete verwenden möchten.
+Sie können Pakete freigeben, sodass sie außerhalb Ihrer Organisation, aber nicht öffentlich zugänglich sind. Diese Pakete sind halbprivate Pakete. Um diese halbprivaten Pakete freizugeben, benötigen Sie Hilfe vom Adobe-Support. Erstellen Sie daher ein Ticket für den Adobe Support mit der Aufforderung, ein Paket außerhalb Ihrer Organisation zugänglich zu machen. Sie werden Sie um eine Liste von Adobe ID bitten, die Sie den Zugriff auf Ihre Pakete gewähren möchten.
 
