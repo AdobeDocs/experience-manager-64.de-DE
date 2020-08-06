@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -39,6 +42,7 @@ Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows 
 >* Applying and participating in workflows: [Working with Workflows](/help/sites-authoring/workflows.md).
 >* Das Erstellen von Workflow-Modellen und die Erweiterung der Workflow-Funktionalität: [Entwickeln und Erweitern von Workflows](/help/sites-developing/workflows.md).
 >* Verbesserung der Leistung von Workflows, die bedeutende Serverressourcen nutzen: [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+
 >
 
 
