@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 88%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
 
 ## Berechtigungen – Löschen oder nicht löschen {#permissions-delete-or-not-delete}
 
-Die Möglichkeit, Inhalt zu löschen ist wirkungsvoll, muss aber mit Bedacht verwendet werden, da viele Branchen die Erteilung dieser Berechtigungen einschränken und kontrollieren müssen. 
+Die Möglichkeit, Inhalt zu löschen, ist wirkungsvoll, muss aber mit Bedacht verwendet werden, da viele Branchen die Erteilung dieser Berechtigungen einschränken und kontrollieren müssen. 
 
 In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Perspektiven betrachtet werden:
 
 1. **Das Inhaltsfragment als einzelne Entität.**
 
    * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren und **ein ganzes Fragment löschen muss**. 
-   * **Berechtigungen:** Die Berechtigung zum [Löschen](/help/sites-administering/security.md#actions) kann [über die Benutzer- und/oder Gruppenverwaltung zugewiesen werden](/help/sites-administering/security.md#managing-permissions).
+   * **Berechtigungen:**[](/help/sites-administering/security.md#actions)[ Die Berechtigung zum Löschen kann über die Benutzer- und/oder Gruppenverwaltung zugewiesen werden](/help/sites-administering/security.md#managing-permissions).
 
 1. **Die verschiedenen Unterentitäten, die ein Inhaltsfragment bilden. Z. B. Varianten, Unterknoten.** 
 
@@ -49,7 +52,7 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
-Benutzern, die ein Inhaltsfragment bearbeiten/aktualisieren müssen, **ohne dass sie ein ganzes Fragment löschen können**, müssen spezifische Berechtigungen zugewiesen werden, da für den grundlegenden Vorgang des Inhaltsfragment-Editors das Löschen von Übergangsunterelementen erforderlich ist.
+Benutzer, die ein Fragment bearbeiten oder aktualisieren müssen, **aber keine kompletten Fragmente löschen dürfen**, benötigen bestimmte Berechtigungen, da die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können.
 
 Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
@@ -65,7 +68,7 @@ Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, zum Beispiel:
 
 >[!CAUTION]
 >
->Setting the permissions on `/content/dam` is also possible, as all content fragments are stored here.
+>Die Berechtigungen können auch auf `/content/dam` festgelegt werden, weil hier alle Inhaltsfragmente gespeichert werden.
 >
 >Allerdings wird die Löschberechtigung dadurch auch für *alle* anderen Asset-Typen gewährt.
 
@@ -79,13 +82,13 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* For the `jcr:content` node of all Content Fragments:
+* Für den `jcr:content`-Knoten aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`
 
-* For all nodes below `jcr:content` of all Content Fragments:
+* Für alle Knoten unter `jcr:content` aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
 These `remove` privileges must be [administered using Access Control Lists, within CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
