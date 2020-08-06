@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 84%
 
 ---
 
@@ -79,7 +82,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Telefonnummer**
    * **Berufsbezeichnung**
    * **Straße**
-   * **Mobil**
+   * **Mobilgerät**
    * **Ort**
    * **PLZ**
    * **Land**
@@ -89,7 +92,8 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Info**
    * **Kontoeinstellungen**
 
-      * **Status** Sie können das Konto als **aktiv** oder **inaktiv** kennzeichnen.
+      * **Status** Sie können das Konto entweder als 
+**aktiv** oder **inaktiv**.
    * **Foto**
 
       Hier können Sie ein Foto hochladen, um es als Avatar zu verwenden.
@@ -104,7 +108,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Gruppen**
 
-      Eine Liste der Gruppen, denen der Benutzer derzeit angehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste von Gruppen, zu denen der Benutzer zurzeit gehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie das Benutzerkonto definiert haben:
@@ -187,7 +191,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Beschreibung**
 
-       Eine Beschreibung der Gruppe.
+      Eine Beschreibung der Gruppe.
 
    * **Mitglieder zu Gruppe hinzufügen**
 
@@ -195,7 +199,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Gruppenmitglieder**
 
-      Eine Liste der Benutzer in der Gruppe. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste von Benutzern in der Gruppe. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie die Gruppe definiert haben:
 
