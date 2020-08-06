@@ -1362,7 +1362,7 @@ Darüber hinaus liefern Zertifikatsperrlisten Informationen zu Zertifikaten, die
 
 >[!NOTE]
 >
->Bevor Sie ein PDF-Dokument mit einem Zertifikat verschlüsseln können, müssen Sie sicherstellen, dass das Zertifikat dem AEM Trust Store hinzugefügt wird.
+>Bevor Sie ein PDF-Dokument mit einem Zertifikat verschlüsseln können, müssen Sie sicherstellen, dass das Zertifikat AEM Trust Store hinzugefügt wird.
 
 **Verwendungsrechte für PDF-Dokumente aktivieren**
 
