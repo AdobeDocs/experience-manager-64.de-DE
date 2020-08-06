@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
 source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 66%
 
 ---
 
@@ -22,7 +25,7 @@ Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietssche
 
 **Formularspezifisches Wörterbuch** Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Beispielsweise Beschriftungen, Feldnamen, Fehlermeldungen, Hilfebeschreibungen usw. It is managed as a set of XLIFF files for each locale and you can access it at https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
-**Globale Wörterbücher** Es gibt zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden, in der AEM-Client-Bibliothek. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Sie können diese Wörterbücher in CRXDe Lite finden Sie unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht oft aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema im Cache zwischenspeichern und die Beanspruchung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
+**Globale Wörterbücher** Es gibt zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden, in AEM Client-Bibliothek. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Sie können diese Wörterbücher in CRXDe Lite finden Sie unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht oft aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema im Cache zwischenspeichern und die Beanspruchung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
 
 ### Funktionsweise der Lokalisierung von adaptiven Formularen {#how-localization-of-adaptive-form-works}
 
@@ -44,7 +47,7 @@ Wenn keine Client-Bibliothek für das angeforderte Gebietsschema vorhanden ist, 
 
 ## Lokalisierungsunterstützung für nicht unterstützte Gebietsschemata hinzufügen {#add-localization-support-for-non-supported-locales}
 
-AEM Forms unterstützt derzeit die Lokalisierung von Inhalten adaptiver Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR, Chinesisch- (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
+AEM Forms unterstützt derzeit die lokale Anpassung von Inhalten für adaptive Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR, Chinesisch- (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
 
 So fügen Sie Unterstützung für ein neues Gebietsschema während der Laufzeit adaptiver Formulare hinzu:
 
@@ -58,7 +61,7 @@ So fügen Sie Unterstützung für ein neues Gebietsschema während der Laufzeit 
 
 ### Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Wechseln zu `https://[server]:[port]/system/console/configMgr`.
+1. Rufen Sie `https://[server]:[port]/system/console/configMgr` auf.
 1. Klicken Sie, um die Komponente **Handbuch-Lokalisierungsdienst** zu bearbeiten.
 1. Fügen Sie der Liste der unterstützen Gebietsschemata das gewünschte Gebietsschema hinzu.
 
@@ -84,7 +87,7 @@ Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderH
 
 Fügen Sie der Clientbibliothek folgende Dateien hinzu:
 
-* **i18n.js** definieren `guidelib.i18n`, mit Mustern von &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` für die `<locale>` [](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)gemäß den XFA-Spezifikationen, die unterLocale Set Specification beschrieben werden. You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.js** definieren `guidelib.i18n`, mit Mustern von &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` für die `<locale>` [](https://helpx.adobe.com/content/dam/de/Adobe/specs/xfa_spec_3_3.pdf)gemäß den XFA-Spezifikationen, die unterLocale Set Specification beschrieben werden. You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 
 * **LogMessages.js** definieren `guidelib.i18n.strings` und `guidelib.i18n.LogMessages` für die `<locale>` , wie in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 
@@ -102,7 +105,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Fügen Sie dem Knoten eine Zeichenfolgeneigenschaft mit mehreren Eigenschaften, `languages`, hinzu, falls nicht bereits vorhanden.
-1. Fügen Sie die `<locale>` Standardgebietsschemawerte `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, falls nicht bereits vorhanden, hinzu.
+1. Hinzufügen die `<locale>` Standardgebietsschemawerte `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, falls nicht bereits vorhanden.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
