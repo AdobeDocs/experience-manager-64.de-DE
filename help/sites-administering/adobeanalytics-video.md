@@ -38,7 +38,7 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 1. Richten Sie eine Webseite ein, indem Sie eine **Videokomponente** aus dem Sidekick ziehen und ein abspielbares **Video als Asset** für die Komponente hinzufügen.
 
-1. [Erstellen Sie eine Adobe Analytics-Konfiguration und ein Adobe-Framework](/help/sites-administering/adobeanalytics.md).
+1. [Erstellen Sie eine Adobe Analytics-Konfiguration und ein Framework](/help/sites-administering/adobeanalytics.md).
 
    * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and **videofw** for the framework.
 
@@ -113,7 +113,7 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr> 
   <tr> 
    <td>eventdata.a.contentType </td> 
-   <td>an jedem Meilenstein gesendet; wird als pev3 im Adobe Analytics-Aufruf angezeigt, der normalerweise als "video"gesendet wird<br /> </td> 
+   <td>an jedem Meilenstein gesendet; wird im Adobe Analytics-Aufruf als pev3 angezeigt, normalerweise als "video" gesendet<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.a.media.name </td> 
@@ -138,14 +138,14 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
 
    Die Versatzwerte müssen Ganzzahlen größer als 0 sein. Der Standardwert ist `10,25,50,75`.
 
-1. Um die CQ-Variablen Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben der CQ-Variablen auf der Komponente.
+1. Um die CQ-Variablen den Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben der CQ-Variablen auf der Komponente.
 
    For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) guide.
 
 1. [Hinzufügen das Framework](/help/sites-administering/adobeanalytics.md) auf der Seite.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
 
-Die folgenden Beispiele für Adobe Analytics-Verfolgungsdaten gelten für die Meilensteinverfolgung mit Verfolgungsoffset von 4,8,16,20 und 24 und den folgenden Zuordnungen für die CQ-Variablen:
+Die folgenden Adobe Analytics-Verfolgungsdatenbeispiele gelten für die Meilensteinverfolgung mit Verfolgungsoffset 4,8,16,20 und 24 und den folgenden Zuordnungen für die CQ-Variablen:
 
 <table> 
  <tbody> 
@@ -273,7 +273,7 @@ eventdata.events.milestoneXX
 
    Die Versatzwerte müssen Ganzzahlen größer als 0 sein.
 
-1. Um die CQ-Variablen Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben der CQ-Variablen auf der Komponente.
+1. Um die CQ-Variablen den Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben der CQ-Variablen auf der Komponente.
 
    For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) guide.
 
@@ -292,7 +292,7 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
    * Beispiel: 10, 50, 75, 100
 
-   Die an Adobe Analytics gesendeten Informationen sind außerdem weniger anpassbar. Es sind nur drei Variablen für die Zuordnung verfügbar:
+   Außerdem sind die an Adobe Analytics gesendeten Informationen weniger anpassbar. Es sind nur drei Variablen für die Zuordnung verfügbar:
 
 <table> 
  <tbody> 
@@ -319,7 +319,7 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
    Die **übrigen relevanten Informationen** des Aufrufs werden zusammenhängend in **einer** Variablen namens **pev3** gesendet.
 
-   **Beispielaufrufe** an Adobe Analytics mit dem bereitgestellten Beispiel sollten wie folgt aussehen, wenn sie mit dem DigitalPulse Debugger angezeigt werden:
+   **Beispiel-Aufrufe** an Adobe Analytics mit dem bereitgestellten Beispiel sollten wie folgt aussehen, wenn sie mit dem DigitalPulse Debugger angezeigt werden:
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -334,7 +334,7 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
 ## Legacy Seconds {#legacy-seconds}
 
-Bei Verwendung der**-Methode aus älteren Sekunden** werden Adobe Analytics-Aufrufe alle N Sekunden ausgelöst, wobei N im Feld für den Versatz der Verfolgung angegeben ist.
+Bei Verwendung der**-Methode aus älteren Sekunden** werden alle N Sekunden Adobe Analytics-Aufrufe ausgelöst, wobei N im Feld für den Versatz der Verfolgung angegeben ist.
 
 1. Setzen Sie den Versatz für die Verfolgung auf eine beliebige Anzahl Sekunden,
 
