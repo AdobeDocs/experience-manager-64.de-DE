@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 81%
 
 ---
 
@@ -28,7 +31,7 @@ Wenn der Ladevorgang abgeschlossen ist, werden Ihre 3D-Dateien konvertiert und w
 ## Best Practices beim Hochladen von 3D-Assets {#best-practices-for-uploading-d-assets}
 
 * Im Allgemeinen können die 3D-Inhalte in der Ordnerhierarchie von AEM Assets ohne Einschränkungen hochgeladen werden. Bei der automatischen Auflösung von Dateiabhängigkeiten durch AEM 3D bestehen jedoch Umfangbeschränkungen, damit die Zeitdauer für die Suche nach großen Asset-Repositorys gesteuert werden kann. Adobe empfiehlt daher, 3D-Assets und ihre Dateiabhängigkeiten in nahe gelegene Ordner hochzuladen (gemeinsamer auf zweiter Ebene übergeordneter Ordner). Nach Auflösung der Dateiabhängigkeiten können Sie das 3D-Asset und die abhängigen Elemente frei an beliebige Stellen innerhalb des Repositorys bewegen, ohne die erstellten Beziehungen zu verlieren.
-* Adobe empfiehlt, dass Sie sich für eine einheitliche Ordnerstruktur für 3D-Inhalte entscheiden, bevor Sie *hochladen. Hier einige Tipps und empfohlene Vorgehensweisen:
+* Adobe empfiehlt, dass Sie sich vor dem Hochladen über eine einheitliche Ordnerstruktur für 3D-Inhalte entscheiden. Hier einige Tipps und empfohlene Vorgehensweisen:
 
    * **Unterhalten Sie für jedes hochzuladende 3D-Asset einen separaten Ordner**.
 
@@ -66,7 +69,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>Verarbeitung</td> 
-   <td>Grundlegende Verarbeitung und Extraktion von Metadaten.</td> 
+   <td>Grundlegende anfängliche Verarbeitung und Metadaten-Extraktion.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -75,7 +78,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Vorschau erstellen</td> 
+   <td>Erstellen von Vorschauen</td> 
    <td>Die FBX- oder OBJ-Datei wird erfasst und verarbeitet. Dateiabhängigkeiten werden bei Möglichkeit als Asset-Referenzen ausgewertet und aufgelöst.</td> 
   </tr> 
   <tr> 
