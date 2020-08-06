@@ -232,7 +232,7 @@ Wenn Sie eine Aufgabe abschließen, wird je nach Aufgabe möglicherweise ein Dia
 
    * Wählen Sie die Aufgabe aus und klicken Sie im unteren Teil der Liste auf die entsprechende Schaltfläche, um den nächsten im Prozess erforderlichen Schritt einzuleiten.
    * If the form has no buttons and the Complete button in AEM Forms workspace is available, click **Complete**.
-   * Wenn das Formular Schaltflächen enthält und die Schaltfläche zum Vervollständigen in AEM Forms Workspace nicht verfügbar ist, klicken Sie auf die entsprechende Schaltfläche im Formular, um den nächsten im Prozess erforderlichen Schritt auszuführen.
+   * Wenn das Formular Schaltflächen enthält und die Schaltfläche &quot;Abschließen&quot;in AEM Forms Workspace nicht verfügbar ist, klicken Sie auf die entsprechende Schaltfläche im Formular, um den nächsten für den Vorgang erforderlichen Schritt auszuführen.
 
    Wenn das Formular keine Schaltflächen enthält und die Schaltfläche &quot;Abschließen&quot;in AEM Forms Workspace nicht verfügbar ist, wird eine Meldung angezeigt, die darauf hinweist, dass das Formular nicht gesendet werden kann.
 
@@ -272,7 +272,7 @@ Sie können mehrere Aufgaben aus Ihrer Aufgabenliste auf einmal senden. Es könn
 
 Sie können Aufgaben per E-Mail empfangen und abschließen. Durch das Teilnehmen an Aufgaben per E-Mail erübrigt sich das routinemäßige Prüfen Ihrer Aufgabenliste auf neue Aufgaben bzw. das Prüfen des Status einer Aufgabe auf der Seite „Verfolgung“.
 
-Legen Sie zunächst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Benachrichtigungen zu erhalten. AEM Forms Workspace kann E-Mail-Benachrichtigungen für Aufgaben in Ihrer Aufgabenliste oder einer beliebigen Gruppenaufgabenzuordnung, der Sie angehören, senden. Der Administrator legt fest, wann und an wen E-Mail-Benachrichtigungen gesendet werden.
+Legen Sie zuerst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Benachrichtigungen zu erhalten. AEM Forms Workspace kann E-Mail-Benachrichtigungen für Aufgaben in Ihrer Aufgabenzuweisung oder einer beliebigen Gruppenaufgabenzuordnung, der Sie angehören, senden. Der Administrator legt fest, wann und an wen E-Mail-Benachrichtigungen gesendet werden.
 
 Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AEM Forms Workspace geöffnet wird, eine Anlage mit dem Formular, das für die Aufgabe verwendet wird, oder Aktionen zum Abschließen der Aufgabe per E-Mail. Wenn die E-Mail-Nachricht ein Formular mit integrierten Schaltflächen zum Abschließen der Aufgabe enthält, können Sie das Formular öffnen und die Aufgabe abschließen. Wenn die E-Mail-Nachricht Aktionen zum Abschließen der Aufgabe enthält, können Sie die Aufgabe abschließen, indem Sie auf die Aktionen in der E-Mail klicken oder die E-Mail beantworten und die entsprechende Aktion als erste Zeile des E-Mail-Textes eingeben.
 
@@ -284,7 +284,7 @@ Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgab
 
 >[!NOTE]
 >
->Wenn der Benutzer nicht in AEM Forms Workspace im Browser angemeldet ist und einen Link zu einer Aufgabendatei öffnet, kann der Link für die direkte Ausführung nicht geöffnet werden und es wird eine Ausnahme angezeigt. Melden Sie sich bei AEM Forms Workspace an, bevor Sie auf Links in den E-Mails klicken.
+>Wenn der Benutzer nicht in AEM Forms Workspace im Browser angemeldet ist und einen Link zu einer Aufgaben-Aufgabe öffnet, kann der direkte Aufgabenlink nicht geöffnet werden und es wird eine Ausnahme angezeigt. Melden Sie sich bei AEM Forms Workspace an, bevor Sie auf Links in den E-Mails klicken.
 
 >[!NOTE]
 >
