@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 83%
 
 ---
 
@@ -41,6 +44,7 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
    * **Trust für Zertifikatauthentifizierung:** Gibt an, dass AEM Forms Zertifikate zum Authentifizieren von Benutzern mit Zertifikat- oder Smartcard-Authentifizierung verwendet.
    * **Trust für Online-Zertifikatstatusprotokoll-Server (OCSP):** Gibt an, dass AEM Forms Zertifikate verwenden kann, um Verbindungen zu externen OCSP-Respondern herzustellen.
    * **Trust für Identität:** Dieser Trust Store-Typ gibt an, dass Zertifikate verwendet werden können, um von den zuvor genannten Typen abweichenden Informationen zu vertrauen.
+
    >[!NOTE]
    >
    >Der Trust Store vertraut implizit einen Adobe-Stammzertifikat bei der Zertifikatauthentifizierung, der Signatur, dem Prüfen der Signatur und der Identität.
