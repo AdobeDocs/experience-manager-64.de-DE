@@ -4,6 +4,9 @@ description: Videoausgabeformate
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 100%
 
 ---
 
@@ -16,15 +19,15 @@ AEM Assets unterstützt statische und dynamische Ausgabeformate (DM-kodierte Aus
 
 Statische Ausgabeformate werden nativ mit FFMPEG (im Systempfad installiert und verfügbar) generiert und im Inhalts-Repository gespeichert.
 
-Die DM-kodierten Darstellungen werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
+Die DM-kodierten Ausgabeformate werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
 
-AEM Assets bietet Wiedergabeunterstützung für diese Ausgabeformate auf Clientseite.
+AEM Assets bietet Wiedergabeunterstützung für diese Ausgabeformate auf Client-Seite.
 
-Um die Darstellungen eines bestimmten Video-Assets anzuzeigen, öffnen Sie dessen Asset-Seite und tippen Sie auf das Symbol für globale Navigation. Then, choose **[!UICONTROL Renditions]** from the list.
+Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die entsprechende Asset-Seite und klicken oder tippen Sie auf das GlobalNav-Symbol. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-Die Liste mit Videoausgabeformaten wird im Bereich **[!UICONTROL Ausgabeformate]** angezeigt.
+Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** angezeigt.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
