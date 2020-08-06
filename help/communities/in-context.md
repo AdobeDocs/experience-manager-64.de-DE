@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Kontextbezogene Moderation {#in-context-moderation}
 
-Bei AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite durchgeführt werden, auf der die Community-Inhalte veröffentlicht wurden.
+Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite durchgeführt werden, auf der die Community-Inhalte veröffentlicht wurden.
 
 Bei Verwendung einer [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die beim Moderieren im Kontext verfügbar sind.
 
@@ -37,11 +40,11 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 ## Beispiel {#example}
 
-Mithilfe der beim [Einstieg in AEM Communities](http://localhost:4503/content/sites/engage/en.html)erstellten [Geometrixx-Engage](getting-started.md) -Website können Sie schnell einen Thread in einem Forum einrichten, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung ausgeführt werden können (siehe unten).
+Mithilfe der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) -Website, die beim [Einstieg in AEM Communities](getting-started.md)erstellt wurde, können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Umgebung &quot;Veröffentlichen&quot;erleben können, wie unten dargestellt.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Site zur Community-Interaktions-Moderatorengruppe hinzufügte.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied einer Community-Interaktionsgruppe über die [Members Console](members.md)hinzugefügt werden.
+Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied einer Community-Interaktionsgruppe über die [Members-Konsole](members.md)hinzugefügt werden.
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
@@ -85,9 +88,9 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 
 ### Anonymer Site-Besucher (#5) {#anonymous-site-visitor}
 
-Im Folgenden finden Sie einen Überblick über das Forum, das ein nicht angemeldeter Besucher anzeigt (5).
+Im Folgenden finden Sie eine Ansicht des Forums, das von einem Site-Besucher gesehen wird, der nicht angemeldet ist (5).
 
-Ein anonymer Sitebesucher kann nur das Forum anzeigen, jedoch keine Inhalte veröffentlichen und keine Moderationsaktionen durchführen.
+Ein anonymer Site-Besucher kann nur die Ansicht des Forums durchführen, darf jedoch keine Inhalte veröffentlichen und keine Moderationsaktionen durchführen.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -120,9 +123,9 @@ Hinweis
 
 ![community-admin-forum](assets/communityadmin-forum.png)
 
-Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Veröffentlichungsumgebung.
+Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
 
-Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Geometrixx Engage Community-Site.
+Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Community-Site von Geometrixx Engage.
 
 Der Suchfilter ist ein Sidepanel, das geöffnet oder geschlossen wird.
 
@@ -143,11 +146,11 @@ Hinweis
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Veröffentlichungsumgebung.
+Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
 
-Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage-Community-Site sichtbar sind.
+Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage Community-Site sichtbar sind.
 
-Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administrator hat (Bild ist bei geschlossener Suchseitenleiste geschlossen), aber keinen Zugriff auf andere AEM-Konsolen hat.
+Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administrator hat (Bild ist bei geschlossener Suchseitenleiste geschlossen), aber keinen Zugriff auf andere AEM Konsolen hat.
 
 Abmelden.
 
