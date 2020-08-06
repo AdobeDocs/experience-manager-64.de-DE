@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '698'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die **PhoneGap Build-Kachel** auf dem Anwendungs-Dashboard bietet die Möglichkeit, Ihre PhoneGap-Mobilanwendung über den Adobe PhoneGap Build Service zu erstellen und zu verteilen.
+Die **PhoneGap Build Kachel** auf dem Dashboard der Anwendung bietet die Möglichkeit, Ihre PhoneGap-Mobilanwendung über den Adobe PhoneGap Build-Dienst zu erstellen und zu verteilen.
 
 Alle unterstützten Plattformen, die in der Kachel App **** verwalten definiert sind, werden mit PhoneGap Build erstellt, wenn ein Remote-Build mit der **PhoneGap Build** -Kachel gesendet wird.
 
@@ -35,21 +38,21 @@ Um PhoneGap Build nutzen zu können, müssen Sie den AEM PhoneGap Build-Cloud-Se
 
 If you don&#39;t currently have an account, navigate to [https://build.phonegap.com](https://build.phonegap.com) and sign up! Wenn Sie über eine Adobe Creative Cloud-Mitgliedschaft verfügen, können Sie bis zu 25 private Apps (nicht Open-Source-Apps) unterstützen.
 
-Nachdem Sie überprüft haben, ob Ihr PhoneGap Build-Konto aktiv ist, navigieren Sie zu Ihrer AEM Cloud Management Console, insbesondere zum [PhoneGap Build Cloud-Dienst](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Nachdem Sie sich vergewissert haben, dass Ihr PhoneGap Build aktiv ist, navigieren Sie zu Ihrer AEM Cloud Management Console, insbesondere zum [PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Verwenden Sie die Kachel **Cloud-Dienste** verwalten, um eine neue Cloud-Dienstkonfiguration zu konfigurieren.
+Verwenden Sie die Kachel **Cloud Services** verwalten, um eine neue Cloud-Dienstkonfiguration zu konfigurieren.
 
-### Verwenden der Kachel &quot;Cloud-Dienste verwalten&quot; {#using-manage-cloud-services-tile}
+### Cloud Services verwalten {#using-manage-cloud-services-tile}
 
-Bevor Sie mit dem Erstellen Ihrer App mit der **PhoneGap Build** -Kachel beginnen, müssen Sie Ihre Cloud-Dienste mithilfe der Kachel &quot;Cloud-Dienste **verwalten** &quot;im AEM Mobile-Dashboard konfigurieren.
+Bevor Sie mit dem Erstellen der App mithilfe der **PhoneGap Build** -Kachel beginnen, müssen Sie Ihre Cloud-Dienste mithilfe der Kachel &quot;Cloud Services **** verwalten&quot;im AEM Mobile-Dashboard konfigurieren.
 
 Gehen Sie wie folgt vor, um Cloud-Dienste für Ihre App zu konfigurieren:
 
-1. Klicken Sie in der oberen rechten Ecke der Kachel **Cloud-Services** verwalten.
+1. Klicken Sie oben rechts in der Kachel Cloud Services **verwalten** .
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Wählen Sie **die Option &quot;PhoneGap-Build** &quot;im Bildschirm &quot;Cloud-Dienst **hinzufügen oder bearbeiten&quot;** .
+1. Wählen Sie im Bildschirm &quot; **Hinzufügen&quot;oder &quot;Cloud Service bearbeiten&quot;die Option &quot;** PhoneGap Build **&quot;** .
 
    Klicken Sie auf **Weiter**.
 
@@ -57,17 +60,17 @@ Gehen Sie wie folgt vor, um Cloud-Dienste für Ihre App zu konfigurieren:
 
 1. Geben Sie Ihre Anmeldedaten ein, um eine neue Cloud-Konfiguration zu erstellen.
 
-   Klicken Sie nach der Überprüfung auf **Senden**. Diese konfigurierte Cloud-Konfiguration wird jetzt in der Kachel **Cloud-Services** verwalten angezeigt.
+   Klicken Sie nach der Überprüfung auf **Senden**. Diese konfigurierte Cloud-Konfiguration wird jetzt in der Kachel **Cloud Services** verwalten angezeigt.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Erstellen einer App mit PhoneGap Build {#building-your-application-with-phonegap-build}
 
-Nachdem Sie die Cloud-Dienste konfiguriert haben, können Sie Ihre Anwendung mit **PhoneGap Build** -Kachel erstellen. Klicken Sie oben rechts auf , um aus den **Optionen Remote** erstellen oder Quelle **herunterladen** zu wählen.
+Nachdem Sie die Cloud-Dienste konfiguriert haben, können Sie Ihre Anwendung mit **PhoneGap Build** erstellen. Klicken Sie oben rechts auf , um aus den **Optionen Remote** erstellen oder Quelle **herunterladen** zu wählen.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Um einen Remote-Build mit Adobe PhoneGap Build aufzurufen, klicken Sie auf Remote **erstellen**.
+Um einen Remote-Build mit Adobe PhoneGap Build aufzurufen, klicken Sie auf **Remote** erstellen.
 
 >[!NOTE]
 >
@@ -77,9 +80,9 @@ Um einen Remote-Build mit Adobe PhoneGap Build aufzurufen, klicken Sie auf Remot
 
 PhoneGap bietet eine Befehlszeilenschnittstelle zum lokalen Aufbau der Anwendung.
 
-Kompilieren Sie die PhoneGap-Anwendung mithilfe der PhoneGap-Befehlszeilenschnittstelle (CLI) auf Ihrem Computer. Um den AEM-Inhalt in Ihre Anwendung aufzunehmen, erstellt AEM eine ZIP-Datei, die den Inhalt Ihrer mobilen Anwendung, die Inhaltssynchronisierungskonfigurationen und andere erforderliche Elemente enthält. Laden Sie die ZIP-Datei herunter und fügen Sie sie in Ihren Build ein.
+Kompilieren Sie die PhoneGap-Anwendung mithilfe der PhoneGap-Befehlszeilenschnittstelle (CLI) auf Ihrem Computer. Um den AEM Inhalt in Ihre Anwendung einzubeziehen, erstellt AEM eine ZIP-Datei, die den Inhalt Ihrer mobilen Anwendung, die Inhaltssynchronisierungskonfigurationen und andere erforderliche Elemente enthält. Laden Sie die ZIP-Datei herunter und fügen Sie sie in Ihren Build ein.
 
-Um die Befehlszeilenschnittstelle von PhoneGap nutzen zu können, müssen Sie Ihre lokale Umgebung so einrichten, dass Folgendes enthalten ist:
+Um die Befehlszeilenschnittstelle von PhoneGap nutzen zu können, müssen Sie Ihre lokale Umgebung wie folgt einrichten:
 
 1. Plattform-SDK (iOS, Android, WindowsPhone usw.)
 1. PhoneGap-CLI
@@ -101,7 +104,7 @@ phonegap run ios (or android, ...)
 Once you have verified that the above works, use the **PhoneGap Build** Tile to **Download Source**. Speichern und entzippen Sie die Datei auf Ihr lokales System. Danach:
 
 * zu dieser gespeicherten Datei navigieren (Ordner)
-* Führen Sie &#39;phonegap run ios&#39; (oder android usw.) aus
+* Führen Sie &#39;phonegap run ios&#39; (oder android usw.) aus.
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
