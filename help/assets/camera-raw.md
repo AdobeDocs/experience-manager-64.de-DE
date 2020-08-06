@@ -1,27 +1,27 @@
 ---
 title: Unterstützung von Camera Raw
-description: Erfahren Sie, wie Sie Camera Raw-Unterstützung in Adobe Experience Manager Assets aktivieren.
+description: Erfahren Sie, wie Sie Camera Raw Support in Adobe Experience Manager Assets aktivieren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 34%
+ht-degree: 45%
 
 ---
 
 
-# Verwenden von Camera Raw zum Verarbeiten von Bildern {#camera-raw-support}
+# Camera Raw zum Verarbeiten von Bildern verwenden {#camera-raw-support}
 
-Sie können die Camera Raw-Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird in Adobe Experience Manager Assets mit dem in der Softwareverteilung verfügbaren [Camera Raw-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt.
+Sie können die Camera Raw unterstützte Verarbeitung von Rohdateiformaten wie CR2, NEF und RAF aktivieren und die Bilder im JPEG-Format wiedergeben. Die Funktion wird in Adobe Experience Manager Assets mit dem [Camera Raw-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt, das über die Softwareverteilung verfügbar ist.
 
 >[!NOTE]
 >
 >Die Funktion unterstützt nur JPEG-Darstellungen. Es wird unter Windows 64 Bit, Mac OS und RHEL 7.x unterstützt.
 
-Gehen Sie wie folgt vor, um die Camera Raw-Unterstützung in Adobe Experience Manager Assets zu aktivieren:
+Gehen Sie wie folgt vor, um Camera Raw Support in Adobe Experience Manager Assets zu aktivieren:
 
-1. Laden Sie das [Camera Raw-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) aus der Softwareverteilung herunter.
+1. Download the [Camera Raw package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Software Distribution.
 
 1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Open the **[!UICONTROL DAM Update Asset]** workflow.
 
