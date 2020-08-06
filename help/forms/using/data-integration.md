@@ -10,6 +10,9 @@ topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 translation-type: tm+mt
 source-git-commit: 7e1d32127ee82f4353d768e5a2446a4bf4db2f57
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 96%
 
 ---
 
