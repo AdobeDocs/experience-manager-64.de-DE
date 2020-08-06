@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 translation-type: tm+mt
 source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 82%
 
 ---
 
@@ -74,7 +77,7 @@ So wenden Sie die CUG auf eine Seite an:
 1. Rufen Sie im folgenden Fenster die Registerkarte **Erweitert** auf.
 1. Blättern Sie nach unten und aktivieren Sie das Kontrollkästchen im Bereich **Authentifizierungsanforderungen**.
 
-1. Fügen Sie unten Ihren Konfigurationspfad hinzu und drücken Sie dann auf Speichern.
+1. Hinzufügen Sie unten Ihren Konfigurationspfad und drücken Sie dann auf Speichern.
 1. Rufen Sie dann die Registerkarte **Berechtigungen** auf und klicken Sie auf die Schaltfläche **Geschlossene Benutzergruppe bearbeiten**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
