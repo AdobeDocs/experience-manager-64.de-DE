@@ -4,6 +4,9 @@ description: Informieren Sie sich, wie Sie die Asset-Freigabe und den Asset-Edit
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
