@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 13%
 
 ---
 
@@ -28,18 +31,19 @@ Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websi
 
 Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
-1. Im Explorer-Bereich von CRXDE Lite
+1. Im Explorer-Bereich &quot;CRXDE Lite&quot;
 
    * auswählen `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Erstellen > Vorlage erstellen]**
 
 1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
 
-   * Etikett: `playpage`
+   * Bezeichnung: `playpage`
    * Titel: `An SCF Sandbox Play Template`
    * Beschreibung: `An SCF Sandbox template for play pages`
    * Ressourcentyp: `an-scf-sandbox/components/playpage`
    * Rangansicht: &lt;Als Standard beibehalten>
+
    Die Beschriftung wird für den Knotennamen verwendet.
 
    Der Ressourcentyp wird auf dem Knoten &quot;jcr:content&quot;des `playpage`Benutzers als Eigenschaft angezeigt `sling:resourceType`. Er identifiziert die Komponente (Ressource), die den Inhalt auf Anforderung eines Browsers rendert.
@@ -52,13 +56,13 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. &quot;Zulässige Pfade&quot;bezieht sich auf die Pfade von Seiten, die diese Vorlage verwenden, sodass die Vorlage für das Dialogfeld &quot; **[!UICONTROL Neue Seite]** &quot;aufgeführt wird.
+1. &quot;Zulässige Pfade&quot;bezieht sich auf die Pfade von Seiten, die diese Vorlage verwenden, sodass die Vorlage für das Dialogfeld &quot; **[!UICONTROL Neue Seite]** &quot;aufgelistet wird.
 
    Um einen Pfad hinzuzufügen, klicken Sie auf die Plusschaltfläche `+` und geben Sie `/content(/.&ast;)?` in das angezeigte Textfeld ein. Wenn Sie Kopieren/Einfügen verwenden, stellen Sie sicher, dass keine Leerzeichen am Anfang oder am Ende vorhanden sind.
 
    Note: The value of the allowed path property is a *regular expression.* Inhaltsseiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In this case, the regular expression matches the path of the **/content** folder and all its subpages.
 
-   Wenn ein Autor eine Seite unterhalb `/content`erstellt, wird die `playpage`Vorlage mit dem Titel &quot;Eine SCF-Sandbox-Seitenvorlage&quot;in einer Liste der verfügbaren Vorlagen angezeigt.
+   Wenn ein Autor eine Seite unterhalb `/content`erstellt, wird die `playpage`Vorlage &quot;Eine SCF-Sandbox-Seitenvorlage&quot;in einer Liste verfügbarer Vorlagen angezeigt.
 
    Nachdem die Stammseite aus der Vorlage erstellt wurde, kann der Zugriff auf die Vorlage auf diese Website eingeschränkt werden, indem die Eigenschaft geändert wird, um den Stammpfad in den regulären Ausdruck einzuschließen, d. h..
 
@@ -74,7 +78,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Wenn Sie auf &quot;OK&quot;klicken und die Vorlage erstellen, werden rote Dreiecke angezeigt, die in den Ecken der Registerkarte &quot;Eigenschaften&quot;für die neue `playpage`Vorlage angezeigt werden. Diese roten Dreiecke zeigen Bearbeitungen an, die nicht gespeichert wurden.
+1. Wenn Sie auf &quot;OK&quot;klicken und die Vorlage erstellen, werden rote Dreiecke angezeigt, die in den Ecken der Registerkarte &quot;Eigenschaften&quot;für die neue `playpage`Vorlage angezeigt werden. Diese roten Dreiecke zeigen Bearbeitungen an, die noch nicht gespeichert wurden.
 
    Klicken Sie auf Alle **[!UICONTROL speichern]** , um die neue Vorlage im Repository zu speichern.
 
@@ -93,16 +97,17 @@ Erstellen Sie die *Komponente* , die den Inhalt definiert und alle Seiten wieder
 
    Geben Sie im Dialogfeld **[!UICONTROL Komponente erstellen]** die folgenden Eigenschaftswerte ein:
 
-   * Beschriftung: **Playpage**
-   * Titel: **Eine SCF-Sandbox-Abspielkomponente**
+   * Beschriftung: **playpage**
+   * Titel: **Eine SCF-Sandbox-Wiedergabekomponente**
    * Beschreibung: **Diese Komponente rendert Inhalte für eine SCF-Sandbox-Seite.**
    * Super Type: *&lt;leer lassen>*
    * Gruppe:
+
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears
 
-   * Klicken Sie auf **[!UICONTROL OK]**.
+   * Klicken Sie auf **[!UICONTROL OK]**
    * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 1. Überprüfen Sie, ob der Pfad zur Komponente und der resourceType der Vorlage übereinstimmen.
