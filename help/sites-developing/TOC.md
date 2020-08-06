@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Developer-Benutzerhandbuch
+user-guide-title: AEM 6.4 Entwicklerhandbuch
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -42,7 +42,7 @@ ht-degree: 80%
       + [Seitenvorlagen - statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM  ](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM    ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -97,22 +97,22 @@ ht-degree: 80%
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
 + Headless-Experience-Management{#headless}
-   + [Headless und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Kopflos und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
    + Einzelseiten-Webanwendungen{#spas}
       + [Einführung und exemplarische Vorgehensweisen zu SPA](spa-walkthrough.md)
       + [SPA-WKND-Tutorial](spa-wknd.md)
-      + [Erste Schritte mit SPAs in AEM - React](spa-getting-started-react.md)
+      + [Erste Schritte mit SPAs in AEM - Reaktion](spa-getting-started-react.md)
       + [Erste Schritte mit SPAs in AEM - Angular](spa-getting-started-angular.md)
       + [Implementieren einer React-Komponente für SPA](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [SPA-Editor – Überblick](spa-overview.md)
-      + [Entwickeln von SPAs für AEM](spa-architecture.md)
+      + [Entwicklung von SPAs für AEM](spa-architecture.md)
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)
       + [Zuordnung dynamischer Modelle zu Komponenten für SPAs](spa-dynamic-model-to-component-mapping.md)
       + [SPA-Modell-Routing](spa-routing.md)
-      + [Integration von SPA und Adobe Experience Platform](spa-launch.md)
+      + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
       + [SPA- und serverseitiges Rendering](spa-ssr.md)
       + [JavaScript-API-Referenzen für SPAs](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
@@ -161,10 +161,10 @@ ht-degree: 80%
       + [Best Practices für Workflows](workflows-best-practices.md)
       + [Referenz für Workflow-Prozesse](workflows-process-ref.md)
    + [Erweitern des Multi-Site-Managers](extending-msm.md)
-   + Tracking und Analytics{#extending-analytics}
+   + Verfolgung und Analyse{#extending-analytics}
       + [Erweitern der Ereignisverfolgung](extending-analytics.md)
       + [Hinzufügen der Adobe Analytics-Verfolgung zu Komponenten](extending-analytics-components.md)
-      + [Anpassen des Adobe Analytics Framework](extending-analytics-framework.md)
+      + [Anpassen des Adobe Analytics-Rahmens](extending-analytics-framework.md)
       + [Implementieren serverseitiger Seitennamen für Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
       + [Cloud Service-Konfigurationen](extending-cloud-config.md)
@@ -195,7 +195,7 @@ ht-degree: 80%
    + [Testen der Benutzeroberfläche](hobbes.md)
 + Best Practices{#bestpractices}
    + [Übersicht über bewährte Verfahren](best-practices.md)
-   + [AEM-Entwicklungshinweise und -Best Practices](dev-guidelines-bestpractices.md)
+   + [AEM und Best Practices für die Entwicklung](dev-guidelines-bestpractices.md)
    + [Best Practices für die Entwicklung](development-practices.md)
    + [Inhaltsarchitektur](content-architecture.md)
    + [Software-Architektur](software-architecture.md)
