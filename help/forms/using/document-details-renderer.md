@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 66%
 
 ---
 
@@ -29,7 +32,7 @@ In diesem Dokument wird die Verwendung dieser Renderer aus der Perspektive der s
 
 ## PDF-Formulare {#pdf-forms}
 
-PDF-Formulare werden wiedergegeben von `PdfTaskForm View`.
+PDF forms werden von `PdfTaskForm View`.
 
 Wenn ein XDP-Formular als PDF-Datei gerendert wird, wird ein `FormBridge` JavaScript™ vom FormsAugmenter-Dienst hinzugefügt. Dieses JavaScript™ (innerhalb des PDF-Formulars) hilft bei Aktionen wie dem Senden und Speichern von Formularen oder dem Offlineschalten des Formulars.
 
@@ -81,15 +84,15 @@ Dieses Protokoll wird durch `WsNextAdapter.swf` definiert. Die vorhandenen `flex
 
 Drittanbieteranwendungen werden mithilfe der ExtAppTaskForm-Ansicht gerendert.
 
-**Kommunikation von Drittanbieteranwendungen mit AEM Forms Workspace**
+**Kommunikation mit Drittanbieteranwendungen im AEM Forms Workspace**
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[Die Meldung] kann eine Zeichenfolge sein, die als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`im `runtimeMap`. Anwendungen von Drittanbietern müssen diese Schnittstelle verwenden, um AEM Forms Workspace nach Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da AEM Forms Workspace wissen muss, dass die Aufgabe gesendet wird, damit das Fenster &quot;Aufgabe&quot;bereinigt werden kann.
+[Die Meldung] kann eine Zeichenfolge sein, die als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`im `runtimeMap`. Anwendungen von Drittanbietern müssen diese Schnittstelle verwenden, um AEM Forms Workspace bei Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da der AEM Forms Workspace wissen muss, dass die Aufgabe gesendet wird, damit das Fenster &quot;Aufgabe&quot;bereinigt werden kann.
 
-**Kommunikation zwischen AEM Forms Workspace und Anwendungen von Drittanbietern**
+**Kommunikation zwischen AEM Forms Workspace und Drittanbieteranwendungen**
 
-Wenn die Schaltflächen für die direkte Aktion von AEM Forms Workspace sichtbar sind, wird `window.[External-App-Name].getMessage([Action])`aufgerufen, wobei [ `Action]` vom `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
+Wenn die Schaltflächen für die direkte Aktion von AEM Forms Workspace sichtbar sind, wird `window.[External-App-Name].getMessage([Action])`aufgerufen, wobei [ `Action]` aus der `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
 
 For example, a Flex application can define `ExternalInterface.addCallback('getMessage', listener)` to support this communication. If the third-party application wants to handle form submission via its own buttons, then you should specify `hideDirectActions = true() in the runtimeMap` and you may skip this listener. Daher ist dieses Konstrukt optional.
 
