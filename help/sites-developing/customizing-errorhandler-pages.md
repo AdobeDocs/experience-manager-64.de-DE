@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 76%
 
 ---
 
 
 # Anpassen der vom Fehler-Handler angezeigten Seiten{#customizing-pages-shown-by-the-error-handler}
 
-AEM verfügt über einen Standard-Fehlerhandler zur Verarbeitung von HTTP-Fehlern. Beispiel:
+AEM enthält einen Standard-Fehlerhandler für die Verarbeitung von HTTP-Fehlern. Beispiel:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -46,8 +49,9 @@ Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fe
 
 1. Kopieren Sie im Repository das/die Standardskript(e):
 
-   * from `/libs/sling/servlet/errorhandler/`
+   * von `/libs/sling/servlet/errorhandler/`
    * in `/apps/sling/servlet/errorhandler/`
+
    Da der Zielpfad standardmäßig nicht vorhanden ist, müssen Sie ihn erstellen, wenn Sie diesen Vorgang zum ersten Mal durchführen.
 
 1. Navigieren Sie zu `/apps/sling/servlet/errorhandler`. Hier können Sie entweder:
@@ -69,13 +73,14 @@ HTTP 500-Fehler werden von serverseitigen Ausnahmefehlern verursacht.
 
 * **[500 Interner Serverfehler](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**Der Server hat einen unerwarteten Zustand entdeckt und kann daher die Anfrage nicht erfüllen.
 
-Wenn die Verarbeitung von Anforderungen eine Ausnahme ergibt, wird das Apache Sling-Framework (auf dem AEM basiert) wie folgt ausgeführt:
+Wenn die Verarbeitung von Anforderungen eine Ausnahme ergibt, wird das Apache Sling-Framework (das auf AEM basiert) wie folgt ausgeführt:
 
 * Protokollierung des Ausnahmefehlers
 * Folgendes wird zurückgegeben:
 
    * der HTTP-Antwortcode 500
    * Der Stacktrace des Ausnahmefehlers
+
    im Haupttext der Antwort.
 
 Indem Sie [die Seiten anpassen, die der Fehler-Handler zeigt](#how-to-customize-pages-shown-by-the-error-handler), können Sie ein `500.jsp`-Skript erstellen. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; i.e. from an exception catcher.
