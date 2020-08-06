@@ -13,6 +13,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '6592'
+ht-degree: 86%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 >[!NOTE]
 >
->In diesem Abschnitt werden die Foundation-Komponenten behandelt, die in vielen Versionen von AEM bereits zur Grundausstattung gehören und direkt nach einer Standardinstallation verfügbar sind. Eine Reihe von Stiftungskomponenten wurden jedoch mit AEM 6.4 nicht mehr unterstützt.
+>In diesem Abschnitt werden die Foundation-Komponenten behandelt, die in vielen Versionen von AEM bereits zur Grundausstattung gehören und direkt nach einer Standardinstallation verfügbar sind. Eine Reihe der Stiftungskomponenten wurden jedoch mit AEM 6.4 veraltet.
 >
 >Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://helpx.adobe.com/experience-manager/core-components/using/using.html) by your administrator.
 
@@ -29,7 +32,7 @@ Die Foundation-Komponenten wurden für die Verwendung beim Bearbeiten von Inhalt
 
 Some are immediately available through component browser, various others are also available by using [design mode](/help/sites-authoring/default-components-designmode.md) (if the page is based on a static template) or by [editing the template](/help/sites-authoring/templates.md) (if the page is based on an editable template).
 
-Die Verwendung von Stiftungskomponenten wird unterstützt, aber sie wurden durch Kernkomponenten ersetzt, die eine größere Erweiterbarkeit und Flexibilität bieten.
+Die Verwendung von Stiftungskomponenten wird unterstützt, aber sie wurden durch Kernkomponenten ersetzt, die mehr Erweiterbarkeit und Flexibilität Angebot haben.
 
 >[!NOTE]
 >
@@ -58,7 +61,7 @@ Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie In
 ### Kontoelement {#account-item}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Sie können einen Link mit Titel und Beschreibung definieren.
 
@@ -67,7 +70,7 @@ Sie können einen Link mit Titel und Beschreibung definieren.
 ### Adaptives Bild {#adaptive-image}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+>Diese Foundation-Komponente ist veraltet. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) instead.
 
 Die Komponente der Adaptive Image Foundation erzeugt Bilder, die in das Fenster eingepasst werden, in dem die Webseite geöffnet wird. Um die Komponente zu verwenden, geben Sie eine Bildressource entweder im Dateisystem oder im DAM an. Wenn die Webseite geöffnet wird, lädt der Webbrowser eine Kopie des Bildes herunter, die so in der Größe angepasst wurde, dass sie in das aktuelle Fenster passt.
 
@@ -178,7 +181,7 @@ Die Eigenschaften werden auf zwei Registerkarten angezeigt:
 
    * Übergangszeit
 
-      Zeit in Millisekunden für den Übergang zwischen zwei Dias.
+      Zeit in Millisekunden für die Transition zwischen zwei Dias.
 
    * Steuerelemente-Stil
 
@@ -190,7 +193,7 @@ Die Eigenschaften werden auf zwei Registerkarten angezeigt:
 
    * **Liste erstellen mittels**
 
-      Es gibt mehrere Möglichkeiten, eine Seitenliste zu erstellen - untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
+      Es gibt mehrere Möglichkeiten, eine Liste zu erstellen: Untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
 
       Beachten Sie, dass, unabhängig von der ausgewählten Methode, den Seiten, die Sie Ihrer Liste hinzufügen, bereits ein Bild zugeordnet worden sein muss. Dieses Bild wird dann im Karussell angezeigt. Wenn in den Seiteneigenschaften einer bestimmten Seite kein Bild vorhanden ist, sollten Sie der Seite ein Bild zuordnen, bevor Sie anfangen. Anderenfalls wird im Karussell eine leere (oder fast leere) Seite angezeigt Siehe [Bearbeiten der Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md).
 
@@ -202,7 +205,8 @@ Die Eigenschaften werden auf zwei Registerkarten angezeigt:
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten** Wählen Sie eine Liste der Seiten aus. Verwenden Sie `+` zum Hinzufügen weiterer Einträge und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten** Wählen Sie eine Liste von Seiten aus. Verwendung 
+`+` , um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -211,17 +215,17 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
 
          * **Suchabfrage**
 
-            Sie können eine einfache Textsuchabfrage eingeben.
+            Sie können eine Abfrage für die Textsuche eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
 
-            Sie können eine Suchabfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
+            Sie können eine Abfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
    * **Sortieren nach**
 
-      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdownmenü.
+      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü.
 
    * **Beschränkung**
 
@@ -275,7 +279,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 [Inhaltsfragmente](/help/sites-authoring/content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
-### Design-Importtool {#design-importer}
+### Design-Import-Tool {#design-importer}
 
 Mit dem Design-Importtool können Sie eine ZIP-Datei mit einem Designpaket hochladen.
 
@@ -330,7 +334,7 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 ### Flash  {#flash}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ein Flash-Asset aus dem Content Finder auf die Komponente ziehen oder das folgende Dialogfeld verwenden:
 
@@ -456,7 +460,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!NOTE]
 >
->Diese Komponente ist mit [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html) implementiert.
+>Diese Komponente ist mit [HTML Template Language (HTL)](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) implementiert.
 
 ### Liste {#list}
 
@@ -479,7 +483,7 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
          * **Seiten**
 
-            Wählen Sie eine Liste der Seiten aus. Fügen Sie mit + weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
+            Wählen Sie eine Liste von Seiten aus. Fügen Sie mit + weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -488,12 +492,12 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
          * **Suchabfrage**
 
-            Sie können eine einfache Textsuchabfrage eingeben.
+            Sie können eine Abfrage für die Textsuche eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
 
-            Sie können eine Suchabfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
+            Sie können eine Abfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
       * **Tags**
@@ -526,12 +530,12 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
 Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wie eine Liste mit untergeordneten Seiten angezeigt werden würde, wobei das Layout durch die benutzerdefinierten CSS-Definitionen eines Site-Designs gesteuert wird.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_Liste_use](assets/dc_list_use.png)
 
 ### Anmeldung {#login}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Stellt die Felder für den Benutzernamen und das Kennwort bereit.
 
@@ -577,7 +581,8 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung**
 
-      Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
+      
+Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
 
    * **Typ/Größe**
 
@@ -585,7 +590,7 @@ Sie können Folgendes konfigurieren:
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-### Verweis {#reference}
+### Verweis   {#reference}
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -615,10 +620,10 @@ Nach der Konfiguration wird der Inhalt exakt so angezeigt wie auf der Quellseite
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-### Suche{#search-features}
+### Suche {#search-features}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Schnellsuche“](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Schnellsuche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/quick-search.html). 
 
 Die Komponente „Suche“ stellt für Ihre Seite eine Suchfunktion zur Verfügung.
 
@@ -687,7 +692,7 @@ Das folgende Beispiel zeigt einen falsch geschriebenen und nicht verfügbaren Su
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) instead.
+>Diese Foundation-Komponente ist veraltet. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/breadcrumb.html) instead.
 
 Eine automatische Sitemap-Auflistung, in der (bei Standardeinstellungen) alle Seiten (als aktive Links) in der aktuellen Website aufgeführt werden: Beispiel:
 
@@ -704,7 +709,7 @@ Sie können bei Bedarf Folgendes konfigurieren:
 ### Diashow {#slideshow}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html). 
 
 Mit dieser Komponente können Sie mehrere Fotos laden, sodass sie als Diashow auf Ihrer Seite angezeigt werden. Sie können Bilder hinzufügen oder entfernen und jedem einen Titel zuweisen. Unter „Erweitert“ können Sie auch die Größe des Anzeigebereichs festlegen.
 
@@ -733,7 +738,7 @@ Die Bildschirmpräsentation-Komponente zeigt dann wiederholt die einzelnen Fotos
 ### Tabelle {#table}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
 
 >[!NOTE]
 >
@@ -837,7 +842,7 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung zu**
 
-      Geben Sie einen Zielpfad an.
+      Geben Sie einen Pfad zur Zielgruppe an.
 
    * **Beschreibung**
 
@@ -883,6 +888,7 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 * Video
 
    * **Video-Asset**
+
    Laden Sie das Video-Asset hoch oder legen Sie es ab.
 
    * **Größe**
@@ -897,6 +903,7 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Flash-Video)
+
 >
 
 
@@ -1054,7 +1061,7 @@ Zwischen dem Start und dem Ende eines Formulars können Sie Formular-Komponenten
 
 >[!NOTE]
 >
->Die Formular-Komponente der Foundation-Komponenten unterstützt nur die Verwendung anderer Formular-Komponenten von Foundation-Komponenten (Schaltflächen, Text, ausgeblendet usw.). Die Verwendung von [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in einem Foundation-Komponentenformular (und umgekehrt) wird nicht unterstützt.
+>Die Formular-Komponente der Foundation-Komponenten unterstützt nur die Verwendung anderer Formular-Komponenten von Foundation-Komponenten (Schaltflächen, Text, ausgeblendet usw.). Die Verwendung von [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in einem Foundation-Komponentenformular (und umgekehrt) wird nicht unterstützt.
 
 #### Beginn des Formulars {#start-of-form}
 
@@ -1071,7 +1078,8 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
 
 * **Erweitert**
 
-   * **Aktionstyp** Ein Formular erfordert eine Aktion. Die Aktion definiert den Vorgang, der zur Ausführung mit den vom Benutzer gesendeten Daten ausgelöst wird (ähnlich wie action= in HTML). Einige benötigen eine entsprechende **Aktionskonfiguration**.
+   * **Aktionstyp** Ein Formular erfordert eine Aktion. Die Aktion definiert den Vorgang, der zur Ausführung mit den vom Benutzer gesendeten Daten ausgelöst wird (ähnlich wie action= in HTML). Einige benötigen eine entsprechende 
+**Aktionskonfiguration**.
 
       Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
 
@@ -1163,7 +1171,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
 
          * **Lead wird dieser Liste hinzugefügt**
 
-            Geben Sie die erforderliche Interessentenliste an.
+            Geben Sie die erforderliche Liste für den Interessenten an.
       * **Konto erstellen und aktualisieren**
 
          * **Anfangsgruppe**
@@ -1226,7 +1234,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
 
          * **Lead wird aus dieser Liste gelöscht**
 
-            Geben Sie die erforderliche Interessentenliste an.
+            Geben Sie die erforderliche Liste für den Interessenten an.
 
 
 
@@ -1284,7 +1292,7 @@ Die Komponente ist für den unmittelbaren Einsatz konfiguriert, Sie können die 
 ### Captcha {#captcha}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge eingeben, die am Bildschirm angezeigt wird. Die Zeichenfolge ändert sich bei jeder Aktualisierung.
 
@@ -1309,7 +1317,7 @@ Sie können verschiedene Parameter festlegen wie einen Titel, eine Beschreibung 
 ### Kreditkartendetails {#credit-card-details}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Hiermit können Sie Felder bereitstellen, in die Kreditkartendetails eingegeben werden können. Sie können die Typen der akzeptierten Kreditkarten und die benötigten Informationen konfigurieren (z. B. den Sicherheitscode).
 
@@ -1425,7 +1433,7 @@ Sie können auf einer speziellen Registerkarte verschiedene Parameter angeben, d
    * **Zulässige Namespaces**
 
       * **Geometrixx Outdoors**
-      * **Workflow**
+      * **Arbeitsablauf**
       * **Forum**
       * **Stockfotographie**
       * **Geometrixx Media**
