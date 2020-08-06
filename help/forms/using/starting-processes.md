@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1364'
+ht-degree: 90%
 
 ---
 
@@ -54,6 +57,7 @@ Wenn Sie einen Prozess auswählen, werden die Registerkarten „Formular“ und 
 
    * Klicken Sie auf die Schaltfläche „Senden“ im Formular, wenn das Formular eine Schaltfläche „Senden“ hat.
    * Klicken Sie auf „Vervollständigen&quot; unterhalb des Formulars, wenn das Formular keine Schaltfläche „Senden“ hat.
+
    Process Management startet den Prozess und leitet das Formular in die Aufgabenlisten der entsprechenden Personen weiter, die die nächste Aufgabe im Prozess ausführen müssen.
 
    Wenn Sie ein Formular vor dem Senden schließen müssen und die eingegebenen Daten nicht verlieren möchten, speichern Sie es als Entwurf und stellen Sie es später fertig, wenn es der Prozess gestattet. Sofern dies für das Formular und den Prozess zulässig ist, können Sie auch auf **Offline** klicken und es dann später von Adobe® Reader® oder Adobe® Acrobat® Professional oder Acrobat Standard aus senden.
