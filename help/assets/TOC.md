@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets-Benutzerhandbuch
+user-guide-title: AEM 6.4 Asset Benutzerhandbuch
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -16,12 +16,12 @@ ht-degree: 76%
 # AEM 6.4 Assets User Guide {#assets}
 
 + [Asset-Benutzerhandbuch](home.md)
-+ [Versionshinweise zu AEM 6.4 Assets](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
++ [AEM 6.4 Versionshinweise zu Assets](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
-   + [Erfahrung mit AEM Assets-Startseiten](assets-home-page.md)
+   + [AEM Assets Startseite](assets-home-page.md)
    + [Suchen nach Assets in AEM      ](search-assets.md)
    + [GQL-Volltextsuche](gql-search.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
@@ -103,7 +103,7 @@ ht-degree: 76%
    + [PDF-Rasterfunktion](aem-pdf-rasterizer.md)
    + [Konfigurieren von Einschränkungen beim Hochladen von Assets](configuring-asset-upload-restrictions.md)
    + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integrieren von AEM Assets mit dem InDesign-Server](indesign.md)
+   + [Integration von AEM Assets mit dem InDesign-Server](indesign.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Verwenden des Demopakets für Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
@@ -165,7 +165,7 @@ ht-degree: 76%
    + [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
 + 3D-Assets {#three-d}
-   + [Versionshinweise zu AEM 3D](../release-notes/aem3d-release-notes.md)
+   + [AEM 3D-Versionshinweise](../release-notes/aem3d-release-notes.md)
    + [Arbeiten mit 3D-Assets](assets-3d.md)
    + [Installieren und Konfigurieren von AEM 3D](install-config-3d.md)
    + [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md)
