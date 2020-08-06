@@ -1,8 +1,8 @@
 ---
 title: Funktionen für spezielle Inhalte
 seo-title: Funktionen für spezielle Inhalte
-description: 'Mit der Funktion für speziellen Inhalt können angemeldete Site-Besucher Inhalte hervorheben '
-seo-description: 'Mit der Funktion für speziellen Inhalt können angemeldete Site-Besucher Inhalte hervorheben '
+description: 'Mit der Funktion für spezielle Inhalte können Besucher, die sich angemeldet haben, Inhalte hervorheben '
+seo-description: 'Mit der Funktion für spezielle Inhalte können Besucher, die sich angemeldet haben, Inhalte hervorheben '
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 ## Einführung {#introduction}
 
-Die Funktion für speziellen Inhalt bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung, in dem Inhalte für
+Die Funktion für speziellen Inhalt bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Umgebung &quot;Veröffentlichen&quot;, um Inhalte für
 
 * [Blogs](blog-feature.md)
 * [Kalender](calendar.md)
@@ -27,7 +30,7 @@ Die Funktion für speziellen Inhalt bietet einen Bereich für angemeldete Site-B
 * [Ideen](ideation-feature.md)
 * [Frage und Antwort](working-with-qna.md)
 
-Sobald der Inhalt als &quot;hervorgehoben&quot;gekennzeichnet ist, wird er in dieser Komponente aufgelistet, die auf bestimmten Einstiegsseiten oder in bestimmten Bereichen platziert werden kann, die die Aufmerksamkeit der Community-Mitglieder leicht erfassen.
+Sobald der Inhalt als &quot;hervorgehoben&quot;gekennzeichnet ist, wird er in dieser Komponente aufgelistet, die in bestimmten Landingpages oder Bereichen platziert werden kann, die die Aufmerksamkeit der Community-Mitglieder leicht erfassen.
 
 Die Funktion zum Feature von Inhalten kann pro Komponente zugelassen oder deaktiviert werden.
 
@@ -60,9 +63,11 @@ Select the placed `Featured Content` component to access and select the `Configu
 
 Identifizieren Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &quot;den zu verwendenden Inhalt:
 
-* **[!UICONTROL Anzeigename]** Der Titel für die Liste der speziellen Inhalte. For example `Featured Questions` or `Featured Ideas`. Die Standardeinstellung ist `Featured Content` bei leerem Feld.
+* **[!UICONTROL Anzeigename]** Der Titel für die Liste von speziellen Inhalten. Beispiel 
+`Featured Questions` oder `Featured Ideas`. Die Standardeinstellung ist `Featured Content` bei leerem Feld.
 
 * **[!UICONTROL Position des präsentierten Inhalts]**
+
    *(Erforderlich)* Navigieren Sie zu der Seite, die den Inhalt enthält, der möglicherweise Funktion ist (Komponenten dieser Seite müssen so konfiguriert sein, dass spezielle Inhalte zulässig sind). Beispiel: `/content/sites/engage/en/forum`
 
 * **[!UICONTROL Anzeigebeschränkung]** Die maximale Anzahl anzuzeigender spezieller Inhalte. Der Standardwert ist 5.
@@ -71,7 +76,7 @@ Identifizieren Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &
 
 Die Möglichkeit, Inhalte als speziellen Inhalt zu kennzeichnen, erfordert Moderatorenrechte.
 
-Wenn ein Moderator gepostete Inhalte anzeigt, hat er Zugriff auf die kontextbezogenen Moderations-Flags, die das neue `Feature` Flag enthalten.
+Wenn ein Moderator gepostete Inhalte Ansicht, hat er Zugriff auf die kontextbezogenen Moderations-Flags, die das neue `Feature` Flag enthalten.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
