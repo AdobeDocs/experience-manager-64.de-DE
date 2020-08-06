@@ -18,7 +18,7 @@ ht-degree: 70%
 
 # Forms JEE-Workflows| Verarbeiten von Benutzerdaten {#forms-jee-workflows-handling-user-data}
 
-AEM Forms JEE Workflows Werkzeuge zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen bereitstellen. Ein Workflow-Prozess besteht aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, z. B. einem Benutzer eine Aufgabe zuweisen oder eine E-Mail verschicken. Ein Prozess kann mit Assets, Benutzerkonten und Diensten interagieren und mit einer der folgenden Methoden ausgelöst werden:
+AEM Forms JEE Workflows bietet Tools zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Ein Workflow-Prozess besteht aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, z. B. einem Benutzer eine Aufgabe zuweisen oder eine E-Mail verschicken. Ein Prozess kann mit Assets, Benutzerkonten und Diensten interagieren und mit einer der folgenden Methoden ausgelöst werden:
 
 * Starten eines Prozesses von AEM Forms Workspace aus
 * Verwenden des SOAP- oder RESTful-Service
