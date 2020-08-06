@@ -10,17 +10,21 @@ topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '2534'
+ht-degree: 78%
 
 ---
 
 
 # Importieren und Exportieren von Assets in AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Sie können Formulare und zugehörige Assets, Designs, Datenwörterbücher, Dokumentfragmente und Briefe zwischen verschiedenen AEM Forms-Instanzen verschieben. Ein solches Verschieben ist bei der Migration von Systemen oder beim Verschieben von Formularen von einem Staging Server auf einen Produktionsserver erforderlich. Für diejenigen Assets, für die das Hochladen und Importieren über die AEM Forms-Benutzeroberfläche unterstützt wird, ist die Verwendung der Forms-Benutzeroberfläche der empfohlene Weg für den Export oder Import. Die Verwendung des AEM Package Manager zum Exportieren oder Importieren solcher Assets wird nicht empfohlen.
+Sie können Formulare und zugehörige Assets, Themen, Datenwörterbücher, Dokument-Fragmente und Briefe zwischen verschiedenen AEM Forms-Instanzen verschieben. Ein solches Verschieben ist bei der Migration von Systemen oder beim Verschieben von Formularen von einem Staging Server auf einen Produktionsserver erforderlich. Für diejenigen Assets, für die das Hochladen und Importieren über die AEM Forms-Benutzeroberfläche unterstützt wird, ist die Verwendung der Forms-Benutzeroberfläche der empfohlene Weg für den Export oder Import. Die Verwendung des AEM Package Manager zum Exportieren oder Importieren solcher Assets wird nicht empfohlen.
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms hat sich die Struktur und die Pfade des CRX-Repository geändert. Wenn Sie Assets aus einer früheren Version in AEM 6.4 Forms importieren und das Formular Abhängigkeiten zur älteren Struktur aufweist, müssen Sie die Abhängigkeiten manuell exportieren. Weitere Informationen zu Änderungen in der Struktur und den Pfaden des Repositorys finden Sie unter [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>* In AEM 6.4 Forms hat sich die Struktur und die Pfade des CRX-Repositorys geändert. Wenn Sie Assets von einer früheren Version auf AEM 6.4 Forms importieren und das Formular Abhängigkeiten von der älteren Struktur aufweist, müssen Sie die Abhängigkeiten manuell exportieren. Einzelheiten zu Änderungen in der Struktur und den Pfaden des Repositorys finden Sie unter [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+
 >
 
 
@@ -29,13 +33,13 @@ Sie können Formulare und zugehörige Assets, Designs, Datenwörterbücher, Doku
 
 Mithilfe der AEM Forms-Benutzeroberfläche können Sie Assets aus einer AEM-Instanz exportieren, indem Sie sie als CRX-Paket oder Binärdateien herunterladen. Sie können dann das heruntergeladene AEM CRX-Paket oder die Binärdatei in eine andere AEM-Instanz importieren.
 
-Der Export und Import über die AEM Forms-Benutzeroberfläche wird für alle Assets unterstützt, mit Ausnahme von Vorlagen für adaptive Formulare und Inhaltsrichtlinien für adaptive Formulare. Darum werden beim Exportieren eines adaptiven Formulars von der AEM Forms-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
+Exportieren und Importieren über die AEM Forms-Benutzeroberfläche wird für alle Assets unterstützt, mit Ausnahme von Vorlagen für adaptive Formulare und Inhaltsrichtlinien für adaptive Formulare. Darum werden beim Exportieren eines adaptiven Formulars von der AEM Forms-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
 
 Sie müssen AEM Package Manager verwenden, um ein CRX-Paket dieser Elemente auf dem AEM-Quellserver zu erstellen und das Paket auf dem Zielserver zu installieren. Weitere Informationen zum Erstellen und Installieren von Paketen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ### Assets für Formulare und Dokumente herunterladen {#download-forms-amp-documents-assets}
 
-So laden Sie Formulare und Dokumente herunter:
+So laden Sie Forms- und Dokumente-Assets herunter:
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms > Forms &amp; Documents.
@@ -98,7 +102,7 @@ Hochladen von Designs:
 1. Auf der Seite „Designs“ klicken Sie auf **Erstellen > Dateiaktualisierung**.
 1. In der Eingabeaufforderung zur Dateiaktualisierung suchen Sie ein Designpaket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
 
-   Das hochgeladene Design ist auf der Seite &quot;Designs&quot;verfügbar.
+   Das hochgeladene Design ist auf der Seite &quot;Themen&quot;verfügbar.
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms> Themes.
@@ -113,7 +117,7 @@ Um Assets wie Datenwörterbücher, Schreiben und Dokumentfragmente an zwei versc
 1. Tippen Sie auf den Seiten für die Briefe, Dokumentfragmente oder Datenwörterbücher auf die Assets, die Sie in ein einzelnes Paket exportieren möchten, und tippen Sie dann auf „Warteschlange für den Download“. Die Elemente werden für den Export aufgelistet.
 1. Wiederholen Sie den oben erwähnten Schritt zum Hinzufügen von Schreiben, Dokumentfragmenten und Datenwörterbüchern nach Bedarf.
 1. Tippen Sie auf **Herunterladen**.
-1. Correspondence Management zeigt das Dialogfeld &quot;Asset(s) herunterladen&quot;mit einer Liste der Assets in der Exportliste an.
+1. Correspondence Management zeigt das Dialogfeld &quot;Asset(s) herunterladen&quot;mit einer Liste von Assets in der Export-Liste an.
 
    ![export](assets/export.png)
 
@@ -169,6 +173,7 @@ Sie können in eine .cmp-Datei exportierte Assets importieren. Eine .cmp-Datei k
 
    * Autor: Gibt die ID des Benutzers an, der die Elemente auf dem Server importierte
    * Geändert: Die Uhrzeit, zu der die Assets auf den Server importiert wurden
+
    >[!NOTE]
    >
    >Damit Sie XDPs hochladen können (als Teil der cmp-Datei oder anderweitig), müssen Sie ein Teil der Gruppe der Formular-Hauptbenutzer sein. Für Zugriffsrechte wenden Sie sich an den Administrator.
@@ -206,8 +211,9 @@ Führen Sie zum Erstellen eines Ordners die folgenden Schritte aus:
 1. Tippen Sie auf „Erstellen“ > „Ordner“.
 1. Geben Sie die folgenden Details ein:
 
-   * **** Titel: Anzeigename für den Ordner
+   * **Titel:** Anzeigename für den Ordner
    * **Name:***(Obligatorisch)* Der Knotenname, unter dem Sie den Ordner im Repository speichern möchten
+
    >[!NOTE]
    >
    >Standardmäßig wird der Wert des Namensfelds automatisch aus dem Titel gefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
@@ -235,7 +241,7 @@ Führen Sie die folgenden Schritte aus, um Kopien von Elementen und Briefen zu e
 1. Bearbeiten Sie gegebenenfalls den Titel und den Namen, mit denen Sie die Kopie des Assets/Briefs speichern möchten.
 1. Wählen Sie „Einfügen“. Neue Kopien der kopierten Assets erstellt.
 
-## Suche{#search-features}
+## Suche {#search-features}
 
 Mit der AEM Forms-Benutzeroberfläche können Sie Ihren Inhalt suchen. Using the top bar, you can tap Search **A** to search your content for resources such as assets and documents.
 
@@ -243,9 +249,9 @@ Wenn Sie nach Assets suchen, zeigt AEM Forms den Seitenbereich an. You can also 
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Suche** B. Filter
+**A.** Suche **B.** Filter
 
-![](assets/search_sidepanel.png) Seitenbedienfeld - Filter **** Abbildung: *Seitenbedienfeld - Filter*
+![Seitenbedienfeld - Filter](assets/search_sidepanel.png)**Abbildung:** *Seitenbedienfeld - Filter*
 
 Auf der Seitenleiste können Sie die folgenden Funktionen verwenden, um Ihre Suchergebnisse einzugrenzen:
 
