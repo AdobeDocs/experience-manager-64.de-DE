@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 61%
 
 ---
 
@@ -73,10 +76,11 @@ Führen Sie zum Konvertieren von Dialogfeldern die folgenden Schritte aus:
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-   Die Tabelle listet alle vorhandenen Dialoge unter dem eingegebenen Pfad auf. Jeder Dialog hat seinen Typ aufgelistet. Dazu zählen die folgenden Typen:
+   The table lists all existing legacy dialogs below the entered path. Jeder Dialog hat seinen Typ aufgelistet. Dazu zählen die folgenden Typen:
 
-   * **** Klassisch: Knoten des Typs, `cq:Dialog` die über einen Knotennamen `dialog` oder `design_dialog`
-   * **** Koralle 2: Nodes mit Namen `cq:dialog` oder `cq:design_dialog` mit Granite UI/Coral 2-Ressourcentyp auf ihrem untergeordneten Content-Knoten
+   * **Klassisch:** Knoten des Typs, `cq:Dialog` die über einen Knotennamen `dialog` oder `design_dialog`
+   * **Koralle 2:** Nodes mit Namen `cq:dialog` oder `cq:design_dialog` mit Granite-Benutzeroberfläche/Coral 2-Ressourcentyp auf ihrem untergeordneten Content-Knoten
+
    Jede Zeile enthält einen Link zum Anzeigen des Dialogfelds und einen Link zu CRXDE Lite zum Anzeigen des Knotenbaums.
 
    >[!NOTE]
@@ -189,7 +193,7 @@ Regeln unterstützen auch die folgenden optionalen Eigenschaften.
 
 Der Ersetzungsbaum unterstützt außerdem die folgenden Spezialeigenschaften (beginnend mit `cq:rewrite`):
 
-* `cq:rewriteMapChildren` (Zeichenfolge)
+* `cq:rewriteMapChildren` (string)
 
    The node containing this property will receive a copy of the children of the node in the original tree referenced by the property value (e.g. `cq:rewriteMapChildren=./items`).
 
