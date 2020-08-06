@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
 source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 76%
 
 ---
 
@@ -62,6 +65,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    * aggrement_send
    * widget_write
    * workflow_read
+
    Schritt-für-Schritt-Anleitungen zum Konfigurieren der OAuth-Einstellungen für eine Adobe Sign-Anwendung und zum Abrufen der Schlüssel finden Sie in der Entwicklerdokumentation [Konfigurieren von oAuth-Einstellungen für die Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md).
 
    ![OAuth Config](assets/oauth_config.png)
