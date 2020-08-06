@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 48%
 
 ---
 
 
 # Community-Gruppen {#community-groups}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenumgebung erstellt zu werden.
+Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenversion der Umgebung erstellt zu werden.
 
 This ability is present when the [groups function](functions.md#groups-function) is present in the [community site](sites-console.md) structure.
 
@@ -49,9 +52,11 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Gruppen-URL-Name]** Der Name der Gruppenseite, der Teil ihrer URL ist.
 
-* **[!UICONTROL Gruppe]**&#x200B;öffnen Die Auswahl `Open Group` zeigt an, dass ein anonymer Site-Besucher den Inhalt anzeigen und die Auswahl aufheben kann `Member Only Group`.
+* **[!UICONTROL Gruppe]** auswählen öffnen 
+`Open Group` gibt an, dass ein anonymer Site-Besucher den Inhalt Ansicht und die Auswahl aufhebt `Member Only Group`.
 
-* **[!UICONTROL &quot;Nur Gruppe]** auswählen&quot; `Member Only Group` bedeutet, dass nur Mitglieder der Gruppe den Inhalt anzeigen können und die Auswahl aufheben `Open Group`.
+* **[!UICONTROL Nur Gruppe]** auswählen 
+`Member Only Group` gibt an, dass nur Gruppenmitglieder den Inhalt Ansicht haben und die Auswahl aufheben `Open Group`können.
 
 Under the **[!UICONTROL Template]** tab is the ability to select from the list of community group templates that were specified when the groups function was included in the community site&#39;s structure or in a community site template.
 
