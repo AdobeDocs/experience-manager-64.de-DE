@@ -22,7 +22,7 @@ ht-degree: 79%
 
 ## Einführung {#introduction}
 
-Mit dem Vorgangs-Dashboard in AEM 6 können Systemoperatoren auf einen Blick die AEM-Systemkonsistenz berwachen. Es bietet außerdem automatisch generierte Diagnoseinformationen zu relevanten Aspekten von AEM und ermöglicht die Konfiguration und Ausführung der selbstständigen Wartungsautomatisierung, um den Projektbetrieb und Unterstützungsfälle erheblich zu reduzieren. Sie können das Vorgangs-Dashboard durch benutzerdefinierte Konsistenzprüfungen und Wartungsaufgaben erweitern. Und über JMX können Sie von externen Überwachungstools auf die Daten des Vorgangs-Dashboards zugreifen.
+Mit dem Vorgangs-Dashboard in AEM 6 können Systemoperatoren auf einen Blick die AEM-Systemkonsistenz berwachen. Es bietet außerdem automatisch generierte Diagnoseinformationen zu relevanten Aspekten der AEM und ermöglicht die Konfiguration und Ausführung der selbstständigen Wartungsautomatisierung, um den Projektbetrieb und die Unterstützungsfälle erheblich zu reduzieren. Sie können das Vorgangs-Dashboard durch benutzerdefinierte Konsistenzprüfungen und Wartungsaufgaben erweitern. Und über JMX können Sie von externen Überwachungstools auf die Daten des Vorgangs-Dashboards zugreifen.
 
 **Das Vorgangs-Dashboard:**
 
@@ -233,7 +233,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
        <li>gibt den Status „OK“ zurück, wenn sie weniger als 45 Minuten zurückliegt </li> 
       </ul> </li> 
      <li>gibt den Status „OK“ zurück, wenn keine dieser Bedingungen zutrifft</li> 
-    </ul> <p>Die Schwellenwerte für „Kritisch“ und „Warnung“ sind konfigurierbar. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Hinweis: </strong>Dieser Health Check ist mit AEM 6.4 verfügbar und wurde auf AEM 6.3.0.1 zurückportiert.</p> </td> 
+    </ul> <p>Die Schwellenwerte für „Kritisch“ und „Warnung“ sind konfigurierbar. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Hinweis: </strong>Dieser Health Check ist ab AEM 6.4 verfügbar und wurde auf AEM 6.3.0.1 zurückportiert.</p> </td> 
   </tr> 
   <tr> 
    <td>Große Lucene-Indizes</td> 
@@ -439,7 +439,7 @@ Beispiele:
 
 >[!NOTE]
 >
->**Mit AEM 6.4** werden Aufgaben für die Wartung auf INFO-Ebene im Format &quot;Rich Information&quot;abgemeldet. Dieser Ansatz ermöglicht bessere Einblicke in den Status der Wartungsaufgaben.
+>**Mit AEM 6.4** werden Aufgaben für die Wartung auf INFO-Ebene in einem detaillierteren Format abgemeldet. Dieser Ansatz ermöglicht bessere Einblicke in den Status der Wartungsaufgaben.
 >
 >Wenn Sie Drittanbietertools (wie Splunk) verwenden, um die Wartungsaufgaben-Aktivität zu überwachen und darauf zu reagieren, können Sie die folgenden Protokollanweisungen nutzen:
 
@@ -578,7 +578,7 @@ Mit dieser Aufgabe können Sie Lucene-Binärdateien bereinigen und die Anforderu
 Zwar wurde die Wartungsaufgabe entwickelt, um Lucene-Revisions-Garbage zu verringern, aber ihre Ausführung verbessert auch allgemein die Effizienz:
 
 * Die wöchentliche Ausführung der Datenspeicherbereinigung wird schneller abgeschlossen.
-* Es kann außerdem die Gesamtleistung von AEM leicht verbessern
+* Sie kann auch die AEM insgesamt leicht verbessern
 
 You can access the Lucene Binaries Cleanup task from: **AEM > Tools > Operations > Maintenance > Daily Maintenance Window > Lucene Binaries Cleanup**.
 
