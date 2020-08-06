@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 83%
 
 ---
 
@@ -22,11 +25,11 @@ Wenn Sie ein adaptives Formular erstellen, können Sie ein Symbolleistenlayout f
 
 Die Verwendungen des Symbolleistenlayouts hängen stark von der clientseitigen Verarbeitung ab, die von komplexem JavaScript- und CSS-Code gesteuert wird. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein. Um Abhilfe zu schaffen, stellt AEM clientseitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Webseite, um den korrekten Code zu laden. Detaillierte Informationen dazu finden Sie unter [Funktionen von clientseitigen Bibliotheken in AEM.](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) Beispiellayout der Symbolleiste **** Abbildung: Beispiellayout *der Symbolleiste*
+![Beispiellayout der Symbolleiste](assets/default_toolbar_layout.png)**Abbildung:** *Beispiellayout der Symbolleiste*
 
 Adaptive Formulare enthalten einen standardmäßigen Satz mit Layouts:
 
-![](assets/toolbar1.png) Standardmäßig verfügbare Symbolleistenlayouts **Abbildung**: Standardmäßig verfügbare *Symbolleistenlayouts*
+![Standardmäßig verfügbare Symbolleistenlayouts ](assets/toolbar1.png)Abbildung **:** *Standardmäßig verfügbare Symbolleistenlayouts*
 
 Darüber hinaus können Sie ein benutzerdefiniertes Symbolleistenlayout erstellen.
 
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >Die Beschreibung, die im vorherigen Schritt aktualisiert wurde, wird in der Dropdown-Liste „Layout“ angezeigt.
 
-![](assets/toolbar_1.png) Desktop-Ansicht der Symbolleiste **** für das benutzerdefinierte Layout Abbildung: *Desktop-Ansicht der Symbolleiste für das benutzerdefinierte Layout*
+![Desktop-Ansicht der Symbolleiste](assets/toolbar_1.png)**für das benutzerdefinierte Layout Abbildung:** *Desktop-Ansicht der Symbolleiste für das benutzerdefinierte Layout*
