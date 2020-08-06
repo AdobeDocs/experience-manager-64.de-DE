@@ -9,13 +9,16 @@ topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 83%
 
 ---
 
 
 # Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
 
-Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein nicht von Adobe stammender PDF-Viewer, z. B. der standardmäßige PDF-Viewer in Chrome oder Firefox, den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
+Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, z. B. der standardmäßige PDF-Viewer in Chrome oder Firefox, den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
