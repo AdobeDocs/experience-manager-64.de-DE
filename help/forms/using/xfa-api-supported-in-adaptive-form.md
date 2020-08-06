@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 89%
 
 ---
 
@@ -175,7 +178,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
  </tbody>
 </table>
 
-### Skripten {#scripts}
+### Skripte {#scripts}
 
 Die folgende Tabelle erfasst, wie verschiedene XFA-Skripten, die in der XDP-Datei definiert sind, sich in adaptiven Formularen verhalten.
 
@@ -244,7 +247,7 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
   </tr>
   <tr>
    <td><p>Erforderlich (nullTest)</p> </td> 
-   <td><p>obligatorisch </p> </td> 
+   <td><p>mandatory </p> </td> 
   </tr>
   <tr>
    <td><p>Leere Meldung (nullTestMessage) </p> </td> 
