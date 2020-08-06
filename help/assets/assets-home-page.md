@@ -4,6 +4,9 @@ description: Passen Sie die AEM Assets-Startseite an, um Benutzern ein anspreche
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 56%
 
 ---
 
@@ -37,7 +40,7 @@ Die Assets-Startseite ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, 
 
    ![user_preferences](assets/user_preferences.png)
 
-Nachdem Sie die Seite &quot;Assets-Homepage&quot;aktiviert haben, navigieren Sie zur Benutzeroberfläche &quot;Assets&quot;auf der Navigationsseite.
+Nachdem Sie die Assets-Startseite aktiviert haben, navigieren Sie auf der Navigationsseite zur Benutzeroberfläche &quot;Assets&quot;.
 
 ![home_page](assets/home_page.png)
 
@@ -50,7 +53,7 @@ Die Assets-Startseite enthält die folgenden Abschnitte:
 
 **Begrüßungsabschnitt** 
 
-Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Außerdem zeigt es Ihr Profilbild und ein Begrüßungsbild an (falls bereits konfiguriert).
+Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Außerdem werden Ihr Profil und ein Begrüßungsbild angezeigt (falls bereits konfiguriert).
 
 Wenn Ihr Profil unvollständig ist, zeigt der Begrüßungsabschnitt eine generische Begrüßungsnachricht und einen Platzhalter für Ihr Profilbild an.
 
@@ -62,7 +65,7 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 * Aktuell
 * Entdecken
 
-**Aktivität**: Unter diesem Abschnitt zeigt das Widget &quot; **Meine Aktivität** &quot;die zuletzt vom angemeldeten Benutzer durchgeführten Aktivitäten mit Assets (einschließlich Assets ohne Ausgabeformate) an, z. B. Assets hochladen, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
+**Aktivität**: Unter diesem Abschnitt zeigt das Widget &quot; **Meine Aktivität** &quot;aktuelle Aktivitäten an, die der angemeldete Benutzer mit Assets (einschließlich Assets ohne Ausgabeformate) durchgeführt hat, z. B. Asset-Uploads, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
 
 **Zuletzt**: Das **kürzlich angezeigte** Widget unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
 
@@ -74,7 +77,7 @@ Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in
 
 >[!NOTE]
 >
->Die Aktivierung der Day CQ DAM Event Recorder- und DAM Event Purge-Dienste erhöht die Schreibvorgänge in JCR und die Suchindizierung, wodurch die Belastung des AEM-Servers erheblich erhöht wird. Die zusätzliche Last auf dem AEM-Server kann dessen Leistung beeinträchtigen.
+>Die Aktivierung der Day CQ DAM Ereignis Recorder- und DAM Ereignis Purge-Dienste erhöht die Schreibvorgänge in JCR und die Suchindizierung, wodurch die Belastung auf dem AEM erheblich erhöht wird. Die zusätzliche Last auf dem AEM-Server kann dessen Leistung beeinträchtigen.
 
 >[!CAUTION]
 >
