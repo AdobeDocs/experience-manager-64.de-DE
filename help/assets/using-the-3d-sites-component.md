@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1041'
+ht-degree: 36%
 
 ---
 
 
 # Working with the 3D Sites component {#working-with-the-d-sites-component}
 
-AEM 3D enthält eine AEM-Sites-Komponente, mit der Sie die interaktive Anzeige von 3D-Modellen auf Webseiten implementieren können.
+AEM 3D enthält eine AEM Sites-Komponente, mit der Sie interaktive 3D-Modelle auf Webseiten implementieren können.
 
 After you have added your 3D component, you can [view the 3D asset in that component.](viewing-3d-assets.md)
 
@@ -31,8 +34,8 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
 
 1. Navigieren Sie zu der Seitenvorlage, in der Sie die 3D-Komponente aktivieren möchten, und wählen Sie sie aus.
 
-1. Tap **[!UICONTROL Edit]** to open the template.
-1. Wählen Sie rechts oben auf der Seite im Dropdown-Menü die Option **[!UICONTROL Strukturierungsmodus]** , falls noch nicht aktiv.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]**, um die Vorlage zu öffnen.
+1. Wählen Sie oben rechts auf der Seite im Dropdown-Menü dem Modus **[!UICONTROL Struktur]**, falls dieser noch nicht aktiv ist.
 
    ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
 
@@ -51,9 +54,9 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
 
 **Hinzufügen der 3D-Viewer-Komponente zu einer Webseite**:
 
-1. Öffnen Sie AEM-Sites und wählen Sie die Webseite aus, der Sie die 3D-Komponente hinzufügen möchten.
+1. Öffnen Sie AEM Sites und wählen Sie die Webseite aus, der Sie die 3D-Komponente hinzufügen möchten.
 
-1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]** (Stift), um die Seite im Seiten-Editor zu öffnen. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
 
    ![image2017-11-14_15-44-40](assets/image2017-11-14_15-44-40.png)
 
@@ -65,9 +68,9 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
 
 ## Konfigurieren der 3D-Komponente {#configuring-the-d-component}
 
-1. In the AEM Sites page editor, select the **[!UICONTROL 3D Viewer]** component that you previously added to the page.
+1. Wählen Sie im Seiten-Editor in AEM Sites die Komponente **[!UICONTROL 3D Viewer]** aus, die Sie zuvor zur Seite hinzugefügt haben.
 
-1. Tap the **[!UICONTROL Configuration]** icon (wrench) to open the component configuration dialog box.
+1. Tippen Sie auf das Symbol **[!UICONTROL Konfiguration]** (Schraubenschlüssel), um das Dialogfeld mit der Komponentenkonfiguration zu öffnen.
 
    Sie können die folgenden Komponenteneigenschaften festlegen:
 
@@ -95,13 +98,13 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
         <li>Positiven Wert auf rechts drehen</li> 
         <li>Negativen Wert für die Drehung links festlegen</li> 
         <li>Legen Sie einen Wert von 0 fest, um die automatische Rotation zu deaktivieren.</li> 
-        </ul> <p>Der Standardwert ist 3 U/min, was 20 Sekunden pro voller Revolution entspricht.<br /><br /> <strong> </strong>Hinweis: Die Rotationsgeschwindigkeit setzt eine Bildrate von 60/s voraus. Diese Rate wird normalerweise bei kleinen bis mittelgroßen Modellen auf leistungsfähigeren Grafikhardware erreicht. Größere Modelle oder langsamere Geräte drehen sich bei niedrigeren Raten automatisch.</p> </td> 
+        </ul> <p>Der Standardwert ist 3 U/min, was 20 Sekunden pro voller Revolution entspricht.<br /> <br /> <strong>Hinweis:</strong> Die Rotationsgeschwindigkeit setzt eine Bildrate von 60/s voraus. Diese Rate wird normalerweise bei kleinen bis mittelgroßen Modellen auf leistungsfähigeren Grafikhardware erreicht. Größere Modelle oder langsamere Geräte drehen sich bei niedrigeren Raten automatisch.</p> </td> 
     <td>Wird für Adobe Dimension-Assets ignoriert.</td> 
     </tr> 
     <tr> 
     <td>Farbe der Navigationsschaltfläche</td> 
     <td>Verwenden Sie die Farbauswahl, um die primäre Farbe für die Viewer-Steuerelemente auszuwählen.</td> 
-    <td>Wird für Adobe Dimension Assets ignoriert.</td> 
+    <td>Ignored for Adobe Dimension asses.</td> 
     </tr> 
     <tr> 
     <td>Navigation mit Mauszeigerfarbe</td> 
@@ -128,7 +131,7 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
 
 1. Tippen Sie auf das Häkchen, um Ihre Änderungen zu speichern.
 
-   Zusätzlich zu den Einstellungen, die im Komponentenkonfigurationsdialogfeld verfügbar sind, stehen eine Reihe globaler Konfigurationseinstellungen zur Verfügung, die über CRXDE Lite geändert werden können.
+   Zusätzlich zu den im Komponentenkonfigurationsdialogfeld verfügbaren Einstellungen stehen eine Reihe globaler Konfigurationseinstellungen zur Verfügung, die über die CRXDE Lite geändert werden können.
 Weitere Informationen zu diesen globalen Einstellungen finden Sie unter [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
 ## Zuweisen eines 3D-Modells zu einer Komponente {#assigning-a-d-model-to-the-component}
@@ -149,15 +152,15 @@ Weitere Informationen zu diesen globalen Einstellungen finden Sie unter [Erweite
 
 While the web page is in **[!UICONTROL Edit]** mode, the 3D component displays the 3D model but no interaction with the model is possible.
 
-Sie können eine Vorschau der Webseite im Seiteneditor mit vollem Zugriff auf die Funktionalität der 3D-Komponente anzeigen.
+Sie können die Webseite im Seiteneditor mit vollem Zugriff auf die Funktionen der 3D-Komponente Vorschau haben.
 
 See also [Viewing 3D assets in the Sites 3D component](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
 
-**So zeigen Sie eine Vorschau einer Webseite mit einer 3D-Komponente** an:
+**So Vorschau einer Webseite mit einer 3D-Komponente**:
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
-   * Klicken Sie rechts oben auf der Seite auf **[!UICONTROL Vorschau]** , um in den Vorschaumodus zu wechseln.
+   * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter preview mode.
    * Löschen Sie `/edit.html` aus der Seiten-URL im Browser.
 
 ## Veröffentlichen von Seite und Assets {#publishing-the-page-and-assets}
@@ -168,5 +171,5 @@ Weitere Informationen zum Veröffentlichen von Assets finden Sie unter [Veröffe
 >
 >Using the **[!UICONTROL Publish Page]** menu item on the **[!UICONTROL Page Information]** menu will publish the page and all primary page dependencies. Sekundäre Abhängigkeiten, die möglicherweise vom 3D-Modell und/oder der 3D-Bühne verwendet werden, wie z. B. Texturmaps oder IBL-Bilder, werden auf diese Weise nicht veröffentlicht.
 >
->Adobe empfiehlt, dass Sie alle 3D-Assets und ihre Abhängigkeiten direkt aus AEM Assets veröffentlichen, bevor Sie die Webseite veröffentlichen, die auf diese Assets verweist.
+>Adobe empfiehlt, dass Sie alle 3D-Assets und ihre Abhängigkeiten direkt von AEM Assets veröffentlichen, bevor Sie die Webseite veröffentlichen, die auf diese Assets verweist.
 
