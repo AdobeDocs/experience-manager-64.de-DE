@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 99%
 
 ---
 
@@ -113,5 +116,6 @@ Personalisierte Dokumente, wie Empfangsbestätigungen, Willkommens-Kits und Anwe
 * Unterstützung für digitale Signaturen zum Validieren der Inhaltsintegrität und der Identität des Unterzeichners
 * Document Security-Add-On für AEM Forms mit Funktionen für Verschlüsselung, Nutzungsrichtlinien, Verfolgung und Prüfung
 
-![](do-not-localize/layout-02.png)**** Abbildung: Optimierter Arbeitsablauf *für personalisierte Kommunikation*
+![](do-not-localize/layout-02.png)
+**Abbildung:** *Optimierter Workflow für personalisierte Kommunikation*
 
