@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 70%
 
 ---
 
@@ -21,7 +24,7 @@ Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wi
 
 Dieses Tool vereinfacht die Dateiübertragung für Entwickler und lässt sich auch in IntelliJ und Eclipse integrieren, um die Entwicklung noch effizienter zu gestalten.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 For a given path inside a `jcr_root` filevault structure on the filesystem, AEM Repo Tool creates a package with a single filter for the entire subtree and pushes that to the server (similar to FTP `put`), fetches it from the server ( `get`) or compares the differences ( `status` and `diff`).
 
