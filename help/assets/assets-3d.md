@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 78%
 
 ---
 
@@ -73,7 +76,7 @@ Die primäre 3D-Modelldatei enthält die eigentliche 3D-Modellgeometrie und Defi
    <td>Wählen Sie nun eine der folgenden Optionen aus.</td> 
   </tr> 
   <tr> 
-   <td>NURBS-Oberflächen in</td> 
+   <td>Konvertieren von NURBS-Oberflächen in</td> 
    <td><strong>Software Render Mesh</strong></td> 
   </tr> 
   <tr> 
