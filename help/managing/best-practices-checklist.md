@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
 source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +26,7 @@ Checklisten sind für jede am Projekt beteiligte Rolle vorhanden. Sie enthalten 
 
 ## Download {#download}
 
-Checkliste für bewährte Verfahren für AEM-Projekte v2
+Checkliste für bewährte Verfahren für AEM Projekt, Version 2
 
 [Datei laden](assets/aem_project_bp_checklistv2.xlsx)
 
@@ -37,7 +40,7 @@ Die Tabelle bietet folgende Arbeitsblätter:
 * **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)**
 * Eine Reihe von Checklisten nach [Rolle](/help/managing/best-practices.md#persona), [Phase und Milestone](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossar**
-   * Das Glossar listet Details zu allen auslieferbaren Dokumenten aus der Checkliste &quot;Projekt&quot;auf.
+   * Die Glossar-Listen enthalten Details zu allen auslieferbaren Dokumenten aus der Projektprüfliste.
    * Das [Glossar](/help/managing/best-practices-glossary.md) ist ebenfalls als Teil der Dokumentation verfügbar.
 * **[Definition von Rollen](/help/managing/best-practices.md#persona)**
 
