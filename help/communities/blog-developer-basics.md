@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
 
 # Blog Essentials {#blog-essentials}
 
-Ab AEM 6.1 Communities ist ein Blog eine Community-Aktivität. Blog-Artikel werden jetzt in der Veröffentlichungsumgebung veröffentlicht, wo zuvor Blog-Artikel nur in der Autorenumgebung erstellt und veröffentlicht werden konnten.
+Seit AEM 6.1 Communities ist ein Blog eine Community-Aktivität. Blog-Artikel werden jetzt aus der Umgebung veröffentlicht, in der zuvor nur Blog-Artikel in der Umgebung Autor erstellt und veröffentlicht werden konnten.
 
 Blog-Artikel können jetzt von jedem Community-Mitglied erstellt werden, es sei denn, sie sind auf privilegierte Mitglieder beschränkt.
 
@@ -25,7 +28,7 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Blog
 
 >[!NOTE]
 >
->Die zugrunde liegende Infrastruktur der Blog-Funktion ist die Zeitschriftenfunktion.
+>Die zugrunde liegende Infrastruktur der Blog-Funktion ist die Protokoll-Funktion.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -37,7 +40,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 
-   <td>social/journal/components/hbs/journal</td> 
+   <td>social/Protokoll/components/hbs/Protokoll</td> 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td> 
@@ -45,7 +48,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.stimmst<br /> cq.social.hbs.journal</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.stimting<br /> cq.social.hbs.Protokoll</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -64,13 +67,13 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 
 ### Blog-Seitenleiste {#blog-sidebar}
 
-| **resourceType** | social/Journal/components/hbs/sidebar |
+| **resourceType** | social/Protokoll/components/hbs/sidebar |
 |---|---|
 | [**einschließbar **](scf.md#add-or-include-a-communities-component) | Nein |
 | [**clientllibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **properties** | siehe [Blog-Funktion](blog-feature.md) |
+| **Eigenschaften** | siehe [Blog-Funktion](blog-feature.md) |
 
 * [Clientseitige Anpassungen](client-customize.md)
 
@@ -88,29 +91,29 @@ Eine Community-Site-Struktur, die die [Bog-Funktion](functions.md#blog-function)
 
 ### Zugriff auf Blog-Einträge (UGC) {#accessing-blog-entries-ugc}
 
-UGC sollte mit einer der Standardmethoden für Moderation moderiert werden.\
+UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.\
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
 * [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
-## Herausgeber {#primary-publisher}
+## Primär Publisher {#primary-publisher}
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der nach Artikeln sucht, deren Veröffentlichung geplant ist.
 
-Weitere Informationen finden Sie unter [Primärherausgeber](deploy-communities.md#primary-publisher) .
+Weitere Informationen finden Sie unter [Primär Publisher](deploy-communities.md#primary-publisher) .
 
 ## Rich Media zulassen {#allowing-rich-media}
 
-Die AEM-Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie in
+Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie in
 
 * [Schutz vor Cross-Site Scripting (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
