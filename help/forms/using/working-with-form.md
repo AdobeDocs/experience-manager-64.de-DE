@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 92%
 
 ---
 
@@ -35,6 +38,7 @@ Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehre
 >
 >* Adaptive Formulare (ohne verzögertes Laden)
 >* Mobile Forms
+
 >
 >
 Anlagen auf Formularebene werden für adaptive Formulare, die in der AEM Forms-App mit einem AEM Forms OSGi-Server synchronisiert werden, nicht unterstützt. Benutzer können Dateien in einem Feld anhängen, wenn der Autor zum Zeitpunkt des Authoring des Formulars Anlagen auf Feldebenen aktiviert hat.
