@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 95%
 
 ---
 
@@ -46,7 +49,7 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
       Wenn Sie ein bestimmtes Segment auswählen, wird die Segment-Definitionsseite geöffnet.
 
    * [Berichte](/help/sites-administering/reporting.md)\
-      AEM bietet verschiedene Berichte, die Sie bei der Analyse und Überwachung des Status Ihrer Instanz unterstützen. In diesem MCM-Bereich werden die Berichte angezeigt.
+      AEM stellt verschiedene Berichte bereit, mit denen Sie den Status Ihrer Instanz analysieren und überwachen können. In diesem MCM-Bereich werden die Berichte angezeigt.
 
       Wenn Sie einen Bericht auswählen, wird die Berichtseite geöffnet.
 
@@ -72,7 +75,7 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
 Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead-)Listen, Segmente, Berichte und Kampagnen bieten. Hier können Sie ebenfalls auf die entsprechenden Grundfunktionen zugreifen.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_Dashboard](assets/mcm_dashboard.png)
 
 ## Leads {#leads}
 
@@ -183,7 +186,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * **Eine** Neu erstellen... Erfahrung; zum Beispiel Adobe Target-Angebote, Teaser und Newsletter.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
