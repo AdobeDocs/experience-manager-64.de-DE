@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 84%
 
 ---
 
@@ -54,6 +57,7 @@ Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nu
 >* Die [Konsistenzprüfung](#health-check) nutzt Auswahlfelder, um die Daten anzugeben, zu denen Sie einen Bericht erstellen möchten.
 >* Die [Speichernutzung](#disk-usage) verwendet Verknüpfungen für einen Drilldown durch die Repository-Struktur.
 >* Der [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report) bietet einen Überblick über die Workflows, die auf Ihrer Instanz ausgeführt werden.
+
 >
 >
 Die folgenden Verfahren zur Spaltenkonfiguration sind also nicht geeignet. Weitere Informationen finden Sie in den Beschreibungen der einzelnen Berichte.
@@ -299,7 +303,7 @@ Der Komponentenbericht stellt Informationen dazu bereit, wie Ihre Website die Ko
 * Komponentenpfad
 * Komponententyp
 * Letzte Änderung
-* Seite
+* Seite      
 
 Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
@@ -331,8 +335,7 @@ Der Bericht beginnt im Stamm ( / ) des Repositorys. Durch das Klicken auf einen 
 Dieser Bericht analysiert das aktuelle Anforderungsprotokoll:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`\
-
-, um die teuersten Anforderungen innerhalb eines bestimmten Zeitraums zu identifizieren.
+, um Ihnen bei der Ermittlung der teuersten Anforderung(en) innerhalb eines bestimmten Zeitraums zu helfen.
 
 Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
@@ -374,7 +377,7 @@ Im Seitenaktivitätsbericht werden die Seiten und die auf ihnen vorgenommenen Ak
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Seite
+* Seite      
 * Zeit
 * Typ
 * User
@@ -397,9 +400,9 @@ Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – s
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Datum
+* Datum          
 * IP-Adresse
-* Seite
+* Seite      
 * Referrer
 * Typ
 * Benutzerkennung
@@ -468,9 +471,9 @@ Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
 
    Wählen Sie den Feldtyp aus `String`, `Number`, `Integer`, `Date`.
 
-* **Standardaggregat**
+* **Standard-Aggregat**
 
-   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung der Spalte in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das gewünschte Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das gewünschte Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
    For example, *Count* for a `String` field means that the number of distinct `String` values is displayed for the column in the aggregated state.
 
