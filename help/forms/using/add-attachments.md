@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
 source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 67%
 
 ---
 
@@ -30,7 +33,7 @@ Ihre Optionen sind:
 
 >[!NOTE]
 >
->Von einem Benutzer hinzugefügte Anlagen sind für andere Benutzer der AEM Forms-App sichtbar. Andere Benutzer können die Anlagen nicht löschen, die von einem Benutzer hinzugefügt werden.
+>Von einem Benutzer hinzugefügte Anlagen sind für andere AEM Forms-App-Benutzer sichtbar. Andere Benutzer können die Anlagen nicht löschen, die von einem Benutzer hinzugefügt werden.
 
 
 ### Der Bildschirm „Anlagen“{#the-attachments-screen}
@@ -76,6 +79,7 @@ Mit der Option **Notizen** können Sie dem Formular Freihand-Scribbles oder Text
    * **[!UICONTROL Fertig]**: Fügt das aktuelle Scribble hinzu.
    * **[!UICONTROL Abbrechen]**: Verwirft das aktuelle Scribble und beendet die Scribble-Benutzeroberfläche.
    * ![Tastatur](assets/keyboard.png): Löscht das Scribble und ermöglicht das Hinzufügen einer Textanmerkung.
+
    ![Tastatur in AEM Forms-App-Scribble](assets/keyboard-inapp.png)
 
 ## Attachments in forms synced with the AEM Forms servers without AEM Forms Workflow (AEM Forms on OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
