@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 70%
 
 ---
 
@@ -63,6 +66,7 @@ Eine ausführliche Anleitung finden Sie in diesem Dokument.
 
    * **Adobe Campaign-E-Mail (AC 6.1)**: Hiermit können Sie einer Vorlage eigene Inhalte hinzufügen, bevor sie zur Bereitstellung an Adobe Campaign 6.1 übermittelt wird.
    * **Adobe Campaign-E-Mail (ACS)**: Hiermit können Sie einer Vorlage eigene Inhalte hinzufügen, bevor sie zur Bereitstellung an Adobe Campaign Standard weitergeleitet wird.
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. Click **Create** to create your email or newsletter.
@@ -112,8 +116,8 @@ E-Mail-Inhalte können entweder in der klassischen oder in der Touch-optimierten
 
 Beim Bearbeiten Ihres Inhalts können Sie Folgendes einfügen:
 
-* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können, und die entsprechend den Daten des Empfängers angepasst werden (z. B. Vorname, Nachname oder Daten der Zieldimension).
-* Adobe Campaign-Personalisierungsblöcke. Dies sind Blöcke vordefinierter Inhalte, die nicht mit den Daten des Empfängers in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Spiegelseite.
+* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Textfelder, die Sie in den Text einfügen können und die sich entsprechend den Daten des Empfängers (z. B. Vorname, Nachname oder Daten der Dimension &quot;Zielgruppe&quot;) anpassen.
+* Adobe Campaign-Personalisierungsblöcke. Dabei handelt es sich um vordefinierte Inhaltsblöcke, die nicht mit den Daten des Empfängers zusammenhängen, wie z. B. ein Markenlogo oder eine Verknüpfung zu einer Mirrorseite.
 
 Detaillierte Beschreibungen der Komponenten von Adobe Campaign finden Sie unter [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
@@ -121,6 +125,7 @@ Detaillierte Beschreibungen der Komponenten von Adobe Campaign finden Sie unter
 >
 >* Es werden nur die Felder der Adobe Campaign-**Profile** der Targeting-Dimension berücksichtigt.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. Sie können bei deren Bearbeitung direkt aus E-Mails darauf zugreifen.
+
 >
 
 
