@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 64%
 
 ---
 
 
 # Entwicklung von AEM-Projekten mit IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die folgenden Schritte sind erforderlich, um mit der AEM-Entwicklung unter IntelliJ zu beginnen.
 
