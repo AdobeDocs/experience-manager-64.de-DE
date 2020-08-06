@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 88%
 
 ---
 
@@ -73,7 +76,7 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
    <td><p>Ändert die Hintergrundfarbe zu Kornblumenblau (#6495ED)</p> <p>Hinweis: Sie können einen Farbnamen oder seinen Hexadezimalcode im Wertefeld angeben.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Etikett</p> </td> 
+   <td><p>Bezeichnung</p> </td> 
    <td><p>Abmessungen &amp; Position &gt; width</p> </td> 
    <td><p>100px</p> </td> 
    <td><p>Stellt die Breite als 100px für die Beschriftung ein</p> </td> 
@@ -93,7 +96,7 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
  </tbody> 
 </table>
 
-![](assets/applied-style.png) Textfeldstil nach Anwendung **des Inline-Stils** Abbildung: Komponente &quot; *Textfeld&quot;nach dem Anwenden von Inline-Stileigenschaften*
+![Textfeldstil nach Anwendung](assets/applied-style.png)des Inline-Stils **Abbildung:** *Komponente &quot;Textfeld&quot;nach dem Anwenden der Inline-Stileigenschaften*
 
 Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereiche, Sendeschaltflächen und Optionsschaltflächen auswählen und formatieren.
 
