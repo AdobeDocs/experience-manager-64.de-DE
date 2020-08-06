@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 62%
 
 ---
 
@@ -27,6 +30,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standar
    * **fileSizeLimit** -> value_in_mb (z. B. 5) (standardmäßig 2 MB)
    * **buttonText** -> Schaltflächentext für Popupfenster (&quot;Anhängen&quot;)
    * **accept** -> file types to accept (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; by default)
+
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9 können Benutzer Dateien anfügen, die größer sind, als der angegebene Grenzwert. Hierbei handelt es sich um ein bekanntes Problem.
