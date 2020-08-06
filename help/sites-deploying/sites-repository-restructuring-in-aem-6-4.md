@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 translation-type: tm+mt
 source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
+workflow-type: tm+mt
+source-wordcount: '1597'
+ht-degree: 78%
 
 ---
 
@@ -57,10 +60,10 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
     <ol> 
      <li>Copy any new or modified ContextHub Segments from the previous location to the appropriate new location (/<code>apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>)</li> 
      <li>Update references to ContextHub Segments in the previous location to the migrated ContextHub Segments in the new locations (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li> 
-    </ol> <p>Die folgende Abfrage mit QueryBuilder findet alle Verweise auf ContextHub-Segmente in den vorherigen Speicherorten.<br /> <br /><code class="code">path=/content
+    </ol> <p>Die folgende Abfrage mit QueryBuilder findet alle Verweise auf ContextHub-Segmente in den vorherigen Speicherorten.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> Dies kann über die <br />AEM QueryBuilder-Debugger-Benutzeroberfläche<a href="/help/sites-developing/querybuilder-api.md" target="_blank"></a> ausgeführt werden. Beachten Sie, dass es sich hierbei um eine durchgehende Abfrage handelt. Führen Sie sie daher nicht gegen die Produktion aus und stellen Sie sicher, dass die Traversal-Beschränkungen nach Bedarf angepasst werden.</p> </td> 
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dies kann über die Benutzeroberfläche <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder-Debuggers ausgeführt werden</a>. Beachten Sie, dass dies eine durchgehende Abfrage ist, also führen Sie sie nicht gegen die Produktion aus und stellen Sie sicher, dass die Traversal-Grenzwerte nach Bedarf angepasst werden.</p> </td> 
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td> 
@@ -166,7 +169,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
    <td>Alle neuen Konfigurationen für den Mobilgeräte-Emulator müssen an den neuen Speicherort migriert werden.
     <ol> 
      <li>Copy any new Mobile Device Emulator Configurations from the Previous Location to the new location (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li> 
-     <li>Aktualisieren Sie für alle AEM-Siteseiten, die von diesen Konfigurationen des Emulators für Mobilgeräte abhängen, den <span class="code"><code>
+     <li>Aktualisieren Sie für alle AEM Sites-Seiten, die von diesen Konfigurationen des Emulators für Mobilgeräte abhängen, den <span class="code"><code>
         jcr
        </code><code>
         :content
