@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +37,7 @@ Beim Sidekick handelt es sich um ein wichtiges Tool für die Bearbeitung von Sei
 Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
 * Komponenten
-* Seite
+* Seite      
 * Informationen
 * Versionierung
 * Workflow
@@ -74,6 +77,7 @@ So fügen Sie eine neue Komponente ein:
    * Doppelklicken Sie auf den mit **Komponenten oder Assets hierhin ziehen** bezeichneten Bereich. Die Symbolleiste **Neue Komponente einfügen** wird geöffnet. Wählen Sie eine Komponente aus und klicken Sie auf **OK**.
    * Ziehen Sie eine Komponente aus der unverankerten Symbolleiste (auch Sidekick genannt), um einen neuen Absatz einzufügen.
    * Klicken Sie mit der rechten Maustaste auf einen bestehenden Absatz und wählen Sie **Neu...**. Die Symbolleiste „Neue Komponente einfügen“ wird geöffnet. Wählen Sie eine Komponente aus und klicken Sie auf **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Sowohl im Sidekick als auch in der Symbolleiste **Neue Komponente einfügen** wird eine Liste der verfügbaren Komponenten (Absatztypen) angezeigt. Diese Liste kann gegliedert sein (z. B. in Allgemein, Spalten usw.), und Sie können die Gliederungen nach Bedarf aus- oder einblenden.
@@ -168,7 +172,7 @@ Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kont
 
 ## Vererbte Komponenten {#inherited-components}
 
-Vererbte Komponenten können sich aus diversen Szenarios ergeben, wie:
+Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
 * [Multi-Site-Management](/help/sites-administering/msm.md); auch in Verbindung mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance)
 
@@ -182,9 +186,11 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
    Wenn eine Komponente Teil einer Live Copy oder eines Launches ist, wird dies durch ein Schlosssymbol angezeigt. Sie können auf das Vorhängeschloss klicken, um die Vererbung abzubrechen.
 
    * Das Schlosssymbol wird angezeigt, wenn die Komponente ausgewählt wird. Beispiel:
+
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
    * Das Schloss wird ebenfalls im Dialogfeld von Komponenten angezeigt. Beispiel:
+
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. **Vererbungs-Absatzsystem**
@@ -197,7 +203,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 [Anmerkungen](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) bieten anderen Autoren die Möglichkeit Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau {#previewing-pages}
+## Anzeigen einer Seitenvorschau   {#previewing-pages}
 
 Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von Bedeutung:
 
@@ -247,7 +253,7 @@ So entsperren Sie eine Seite:
 1. Doppelklicken Sie auf die Seite, um sie zu öffnen.
 1. Wählen Sie auf der Registerkarte **Seite** des Sidekick die Option **Seite entsperren** aus:
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Rückgängigmachen und Wiederholen von Seitenbearbeitungen {#undoing-and-redoing-page-edits}
 
 Verwenden Sie die folgenden Tastaturbefehle, während der Inhalts-Frame der Seite den Fokus hat:
 
@@ -258,9 +264,9 @@ Wenn Sie das Entfernen, Hinzufügen oder Verschieben von Absätzen rückgängig 
 
 >[!NOTE]
 >
->Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie](#undoing-and-redoing-page-edits-the-theory), dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
+>Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie](#undoing-and-redoing-page-edits-the-theory); dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
@@ -279,6 +285,7 @@ Das Rückgängigmachen und Wiederholen von Befehlen funktioniert ähnlich wie in
 >* Aktionen wiederholen, solange Sie seit dem letzten Rückgängigmachen einer Aktion keine Seitenbearbeitungen durchgeführt haben.
 >* maximal 20 Bearbeitungsaktionen rückgängig machen (Standardeinstellung).
 >* Für das Rückgängigmachen und Wiederholen stehen auch verschiedene [Tastaturbefehle](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zur Verfügung.
+
 >
 
 
@@ -299,5 +306,5 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 
 >[!NOTE]
 >
->Spezielle Berechtigungen sind erforderlich, um Änderungen an Dateien und Bildern rückgängig zu machen bzw. zu wiederholen. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der zuständige Administrator kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.
+>Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der zuständige Administrator kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.
 
