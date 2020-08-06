@@ -12,6 +12,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 79%
 
 ---
 
@@ -26,9 +29,9 @@ AEM stellt mehrere APIs für die Entwicklung von Anwendungen bereit. Die folgend
 
 * [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
-* [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+* [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
-* [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+* [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
 * [Javascript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
 
@@ -49,7 +52,7 @@ APIs für AEM-Bereitstellung und Content Management:
    * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
    * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 
-* [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
 Die folgenden externen Ressourcen werden nur zu Referenzzwecken bereitgestellt:
 
