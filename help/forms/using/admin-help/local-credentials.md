@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +36,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
    * **Berechtigung für die Dokumentsignierung:** Eine Berechtigung, die zum Hinzufügen einer digitalen Signatur zu einem Dokument dient.
    * **Berechtigung für Acrobat Reader DC Extensions:** Ein digitales Zertifikat, das speziell für Acrobat Reader DC Extensions gilt und die Aktivierung von Adobe Reader-Benutzerrechten in den erstellten PDF-Dokumenten ermöglicht.
    * **Standard:** Zeigt an, dass dies die Standardberechtigung ist, die mit Acrobat Reader DC Extensions verwendet werden soll.
+
    Weitere Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 1. Geben Sie in das Feld „Alias“ einen Bezeichner für die Berechtigung ein. Dieser Bezeichner wird als Anzeigename für die Berechtigung in Acrobat Reader DC Extensions und im Signature-Dienst verwendet. Außerdem wird dieser Alias für den programmgesteuerten Zugriff auf die Berechtigung mithilfe des AEM Forms SDK verwendet.
