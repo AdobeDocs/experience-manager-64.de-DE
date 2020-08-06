@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1452'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Richten Sie die Referenz-Websites ein wie in [Einrichten und Konfigurieren von AEM Forms-Referenz-Websites](/help/forms/using/setup-reference-sites.md) beschrieben.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Referenz-Website-Portal ermöglicht. Die Organisation nutzt das Portal auch zur Verwaltung der Terminplanung, der Kurzliste und der internen Kommunikation der Kandidaten. Die Website verwaltet Folgendes:
 
@@ -55,7 +58,7 @@ Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung�
 
 Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“ in diesem Dokument dargestellt.
 
-![we-finance-employee-werbung-post-interviewworkflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-rekruting-post-interviewworkflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personen {#personas}
 
