@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 57%
 
 ---
 
@@ -46,13 +49,15 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
    * **server** ist der Hostname (kann ein Domänenname oder eine IP-Adresse sein).
    * **port** (optional) ist die Anschlussnummer.
    * **contextpath** (optional) wird nur festgelegt, wenn AEM als Webapp unter einem anderen Kontextpfad installiert wird.
+
    Beispiel: `production https://my.production.instance`
 
-   Die folgenden Zuordnungsnamen sind vordefiniert und müssen immer eingestellt werden, wenn AEM auf sie angewiesen ist:
+   Die folgenden Zuordnungsnamen sind vordefiniert und müssen immer so eingestellt werden, wie AEM davon abhängt:
 
    * **lokal** - lokale Instanz
    * **author** - das Authoring-System DNS
    * **publish** - die öffentlich zugängliche Website-DNS
+
    >[!NOTE]
    >
    >Eine benutzerdefinierte Konfiguration ermöglicht es Ihnen, eine neue Kategorie hinzuzufügen, z. B. „Produktion“, „Staging“ oder auch externe Nicht-AEM-Systeme, z. B. „mein-interner-Webdienst“. Auch ermöglicht sie es Ihnen, das Hartkodieren solcher URLs an verschiedenen Orten in einer Projektdatenbank zu vermeiden.
