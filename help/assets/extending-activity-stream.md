@@ -4,17 +4,20 @@ description: Beschreibt die Aufzeichnungsfunktionen von AEM und wie Sie AEM zum 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 77%
 
 ---
 
 
 # Integrieren von Assets in den Aktivitäts-Stream {#integrating-assets-with-activity-stream}
 
-Benutzer von Adobe Experience Manager (AEM) Assets führen zahlreiche Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von AEM beschrieben und gezeigt, und wie Sie AEM zum Aufzeichnen bestimmter Ereignisse konfigurieren.
+Adobe Experience Manager (AEM) Assets-Benutzer führen zahlreiche Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von AEM beschrieben und gezeigt, und wie Sie AEM zum Aufzeichnen bestimmter Ereignisse konfigurieren.
 
 ## Überlegungen zur Leistung und Standardverhalten {#performance-considerations-and-default-behavior}
 
-Diese Integration kann CPU- und Speicherplatz-intensiv sein, beispielsweise beim Massenimport. Aus diesen Gründen ist die AEM Assets-Integration mit dem Activity Stream standardmäßig deaktiviert.
+Diese Integration kann CPU- und Speicherplatz-intensiv sein, beispielsweise beim Massenimport. Aus diesen Gründen ist die AEM Assets-Integration mit dem Aktivität Stream standardmäßig deaktiviert.
 
 ## Unterstützte Aktionsereignisse {#supported-action-events}
 
@@ -38,7 +41,7 @@ Die folgenden Ereignisse können zur Aufzeichnung konfiguriert werden:
 
 ## Konfigurieren der AEM Assets-Ereignisaufzeichnung {#configuring-aem-assets-events-recording}
 
-The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. Gehen Sie wie folgt vor, um den Ereignisaufzeichnungsbefehl für AEM Assets zu konfigurieren:
+The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. Gehen Sie wie folgt vor, um den AEM Assets Ereignis-Recorder zu konfigurieren:
 
 1. Navigieren Sie zur **[!UICONTROL Web-Konsole]**.
 
