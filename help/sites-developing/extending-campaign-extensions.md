@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 81%
 
 ---
 
@@ -36,7 +39,7 @@ Die Standardintegration zwischen AEM und Campaign basiert auf JSON und JSSP (Jav
 
 >[!NOTE]
 >
->[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), das unter Package Share verfügbar ist.
+>[Für dieses Beispiel sehen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), die unter Package Share verfügbar ist.
 
 In diesem Beispiel erstellen wir eine neue benutzerdefinierte JSSP-Datei und rufen diese in AEM ab, um das Ergebnis zu erhalten. So können Sie beispielsweise Daten von Adobe Campaign abrufen oder Daten in Adobe Campaign speichern.
 
@@ -62,6 +65,7 @@ In diesem Beispiel erstellen wir eine neue benutzerdefinierte JSSP-Datei und ruf
 
    * Sie haben eine funktionierende Verbindung zwischen AEM und Campaign
    * Der Campaign-Cloud-Service ist auf **/content/geometrixx-outdoor** konfiguriert
+
    The most important object in this example is the **GenericCampaignConnector**, which allows you to call (get and post) jssp files on the Adobe Campaign side.
 
    Es folgt ein kleines Code-Snippet:
@@ -167,7 +171,7 @@ AEM bietet betriebsbereite APIs zum Abrufen der Objekte, die in der siteadmin-Ex
 
 >[!NOTE]
 >
->[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), das unter Package Share verfügbar ist.
+>[Für dieses Beispiel sehen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), die unter Package Share verfügbar ist.
 
 Für jeden Knoten im Explorer gibt es eine API, die mit ihm verknüpft ist. Beispiel:
 
