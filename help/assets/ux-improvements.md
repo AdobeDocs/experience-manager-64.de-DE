@@ -4,13 +4,16 @@ description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis v
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 79%
 
 ---
 
 
 # Verbesserungen beim Benutzererlebnis von Assets {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets enthalten mehrere Verbesserungen der Benutzerfreundlichkeit, die eine nahtlose Benutzererfahrung ermöglichen und die Produktivität steigern. Das beschleunigte Erstellen und Verwalten Ihres Go-to-Market-Inhalts verbessert die Content Velocity in Ihrem Unternehmen.
+AEM 6.4 Assets bieten eine Reihe von Verbesserungen der Benutzerfreundlichkeit, die eine nahtlose Benutzererfahrung ermöglichen und die Produktivität steigern. Das beschleunigte Erstellen und Verwalten Ihres Go-to-Market-Inhalts verbessert die Content Velocity in Ihrem Unternehmen.
 
 Die Oberfläche reagiert flexibler und hilft Ihnen bei der effizienten Verwaltung eines großen Assets. Sie können schnell eine lange Liste von Elementen durchsuchen, anzeigen, sortieren und reibungslos darin scrollen.
 
@@ -30,11 +33,11 @@ Gehen Sie wie folgt vor, um die Größe von Miniaturen in der Kartenansicht anzu
 
 1. Tap/click the Layout icon from the toolbar, and then choose the **[!UICONTROL View Settings]** option.
 
-   ![view_settings](assets/view_settings.png)
+   ![Ansicht_settings](assets/view_settings.png)
 
 1. From the **[!UICONTROL View Settings]** dialog, select the desired thumbnail size, and then tap/click **[!UICONTROL Update]**.
 
-   ![view_settings_dialog](assets/view_settings_dialog.png)
+   ![Ansicht_settings_dialog](assets/view_settings_dialog.png)
 
 1. Überprüfen Sie die Miniaturen, die in der gewählten Größe angezeigt werden.
 
@@ -48,11 +51,11 @@ In der Kachel in der Kartenansicht werden jetzt zusätzliche Informationen wie d
 
 In der Listenansicht werden in der ersten Spalte jetzt standardmäßig die Asset-Namen angezeigt. Außerdem werden zusätzliche Informationen wie der Veröffentlichungs- und Verarbeitungsstatus, die Sprachvariante usw. angezeigt.
 
-![list_view](assets/list_view.png)
+![Liste_Ansicht](assets/list_view.png)
 
 Sie können die anzuzeigende Detailtiefe konfigurieren. Tippen/klicken Sie auf das Layout-Symbol, wählen Sie die Option **[!UICONTROL Anzeigeeinstellungen]** aus und geben Sie die Spalten an, die im Dialogfeld **[!UICONTROL Anzeigeeinstellungen]** angezeigt werden sollen.
 
-![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
+![Ansicht_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Verbesserungen an der Spaltenansicht {#column-view-improvements}
 
@@ -74,7 +77,7 @@ Navigieren Sie in der Inhaltshierarchie zum gewünschten Asset.
 
 ## Navigation durch Asset-Details.{#navigating-asset-details}
 
-Die Seite mit den Asset-Details enthält jetzt die Schaltflächen &quot;Zurück&quot;und &quot;Weiter&quot; in der Symbolleiste, damit Sie alle Bilder in einem Ordner nacheinander anzeigen können.
+Auf der Seite mit den Asset-Details befinden sich jetzt die Schaltflächen &quot;Zurück&quot;und &quot;Weiter&quot;in der Symbolleiste, damit Sie alle Bilder in einem Ordner nacheinander Ansicht werden können.
 
 Abhängig vom verwendeten Gerät können Sie auch wischen oder die Pfeiltasten auf der Tastatur verwenden, um zwischen den Bildern hin- und herzuwechseln.
 
