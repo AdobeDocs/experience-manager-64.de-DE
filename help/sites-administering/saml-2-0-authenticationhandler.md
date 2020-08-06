@@ -26,7 +26,7 @@ Folgendes wird unterstützt:
 
 * Signierung und Verschlüsselung von Nachrichten
 * Automatische Erstellung von Benutzern
-* Synchronisieren von Gruppen mit vorhandenen in AEM
+* Synchronisieren von Gruppen mit bestehenden in AEM
 * Authentifizierung durch Dienstleister und Identitätsanbieter initiiert
 
 Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerknoten (`usernode/samlResponse`), um die Kommunikation mit dritten Dienstleistern zu erleichtern.
