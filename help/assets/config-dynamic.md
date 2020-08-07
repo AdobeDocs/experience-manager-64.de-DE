@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '7833'
 ht-degree: 55%
@@ -41,7 +41,7 @@ Die hybride Veröffentlichung und Bereitstellung ist eine Kernfunktion der Erwei
 
 Andere Inhalte, z. B. Dynamic Media-Viewer, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
-Wenn Sie Kunde von Dynamic Media sind, müssen Sie Hybrid-Versand als Versand für alle dynamischen Medieninhalte verwenden.
+If you are a customer of Dynamic Media, you are required to use hybrid delivery as the delivery mechanism for all Dynamic Media content.
 
 ## Hybride Veröffentlichungsarchitektur für Videos {#hybrid-publishing-architecture-for-videos}
 
@@ -156,7 +156,7 @@ Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic 
 
    Wenn Sie auf s7Versand veröffentlichen, müssen Sie außerdem die folgenden trustStore-Argumente einschließen:
 
-   ```
+   ```shell
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -230,7 +230,7 @@ Bei allen Upgrades, ob mit oder ohne Kompatibilitätspaket, können Sie mit dem 
 
 ## Configuring image replication {#configuring-image-replication}
 
-Image Versand für dynamische Medien funktioniert, indem Bild-Assets, einschließlich Videominiaturen, von AEM Author aus veröffentlicht und in den On-Demand-Replikationsdienst der Adobe repliziert werden (Replizierungsdienst-URL). Assets werden dann über den On-Demand-Image-Versand-Dienst (die Image-Dienst-URL) bereitgestellt.
+Image Versand für dynamische Medien funktioniert, indem Bild-Assets, einschließlich Videominiaturen, von AEM Author aus veröffentlicht und in den On-Demand-Replikationsdienst der Adobe repliziert werden (Replizierungsdienst-URL). Assets are then delivered by way of the on-demand image delivery service (the Image Service URL).
 
 Führen Sie die folgenden Schritte aus:
 
@@ -292,9 +292,9 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 1. Tap the **[!UICONTROL Settings]** tab, then enter the following:
 
    * **[!UICONTROL Aktiviert]**: Aktivieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
-   * **[!UICONTROL Region]** - Auf die entsprechende Region eingestellt: Nordamerika, Europa oder Asien
-   * **[!UICONTROL Mandant-ID]** : Dieser Wert ist der Name Ihrer Firma/des Mandanten, die/der im Replizierungsdienst veröffentlicht wird. Dieser Wert ist die Tenant-ID, die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenden Sie sich an die Kundenunterstützung von Adobe, falls Sie diese E-Mail nicht erhalten haben.
-   * **[!UICONTROL Key Store-Alias]** - Dieser Wert ist identisch mit dem** New Alias**-Wert, der beim Generieren des Schlüssels unter [Einrichten der Authentifizierung](#setting-up-authentication)festgelegt wurde. zum Beispiel `replication`. (See step 7 in [Setting Up Authentication](#setting-up-authentication).)
+   * **[!UICONTROL Region]** - Set to the appropriate region: North America, Europe, or Asia
+   * **[!UICONTROL Mandant-ID]** : Dieser Wert ist der Name Ihrer Firma/des Mandanten, die/der im Replizierungsdienst veröffentlicht wird. This value is the Tenant ID that Adobe provides in the Welcome email sent to you during provisioning. Wenden Sie sich an die Kundenunterstützung von Adobe, falls Sie diese E-Mail nicht erhalten haben.
+   * **[!UICONTROL Key Store Alias]** - This value is the same as the** New Alias** value set when generating the key in [Setting Up Authentication](#setting-up-authentication); for example, `replication`. (See step 7 in [Setting Up Authentication](#setting-up-authentication).)
    * **[!UICONTROL Key Store Password]** - Dies ist das KeyStore-Kennwort, das erstellt wurde, wenn Sie auf KeyStore **[!UICONTROL erstellen tippten]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. See step 5 of [Setting up Authentication](#setting-up-authentication).
 
    In der folgenden Abbildung ist der Replikationsagent mit Beispieldaten dargestellt:
@@ -305,7 +305,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
 ### Validieren des Replikationsagenten für Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
-Gehen Sie wie folgt vor, um den Replizierungsagenten für dynamische Medien zu validieren:
+To validate the replication agent for dynamic media, do the following:
 
 Tippen Sie auf Verbindung **[!UICONTROL testen]**. Die Beispielausgabe lautet wie folgt:
 
@@ -392,7 +392,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Lösung**: Stellen Sie sicher, dass für den Java-Prozess im AEM Author die Systemeigenschaft **-Djavax.net.ssl.trustStore=** auf einen gültigen TrustStore eingestellt ist.
+**Solution**: Make sure the java process on the AEM Author has the system property **-Djavax.net.ssl.trustStore=** set to a valid truststore.
 
 #### Problem: KeyStore ist entweder nicht eingerichtet oder nicht initialisiert {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -508,7 +508,7 @@ Bevor Sie Cloud Services für dynamische Medien einrichten, stellen Sie sicher, 
 
 Sie können Video-Berichte über mehrere Installationen von AEM mit dem Dynamic Media - Hybrid-Modus konfigurieren.
 
-**Verwendungszweck:** Bei der Konfiguration der **[!UICONTROL Konfiguration der Konfiguration dynamischer Medien (Version 6.3)]** werden zahlreiche Funktionen gestartet, einschließlich Video-Berichte. Die Konfiguration erstellt eine Report Suite in einem regionalen Analytics-Unternehmen Wenn Sie mehrere Autorknoten konfigurieren, erstellen Sie für jeden davon eine separate Report Suite. Das führt zu inkonsistenten Berichtsdaten in den einzelnen Installationen. Wenn jeder Autorknoten auf denselben Hybrid-Veröffentlichungsserver verweist, ändert die letzte Autorinstallation die Ziel-Report Suite für alle Videoberichte. Dieses Problem führt zur Überlastung des Analysesystems mit zu vielen Report Suites.
+**When to use:** At the time you configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**, numerous features are started including video reporting. Die Konfiguration erstellt eine Report Suite in einem regionalen Analytics-Unternehmen Wenn Sie mehrere Autorknoten konfigurieren, erstellen Sie für jeden davon eine separate Report Suite. Das führt zu inkonsistenten Berichtsdaten in den einzelnen Installationen. Wenn jeder Autorknoten auf denselben Hybrid-Veröffentlichungsserver verweist, ändert die letzte Autorinstallation die Ziel-Report Suite für alle Videoberichte. Dieses Problem führt zur Überlastung des Analysesystems mit zu vielen Report Suites.
 
 **Erste Schritte:** Konfigurieren Sie Videoberichte, indem Sie die folgenden drei Schritte ausführen.
 
@@ -545,15 +545,16 @@ Make sure that the [!DNL Video Analytics] preset package from the first Author n
 
 1. Führen Sie einen der folgenden Schritte aus, um die Paketinstallation zu überprüfen und bei Bedarf zu debuggen:
 
-   * **Überprüfen Sie die[!DNL Video Analytics]Vorgabe mithilfe von JCR**. Um die [!DNL Video Analytics] Vorgabe über JCR zu überprüfen, müssen Sie Zugriff auf die **[!UICONTROL CRXDE Lite]** haben.
+   * **Check the[!DNL Video Analytics]preset by way of the JCR**
+To check the [!DNL Video Analytics] preset by way of the JCR, you must have access to **[!UICONTROL CRXDE Lite]**.
 
       AEM - In **[!UICONTROL CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
 
       Sie lautet `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
-      Wenn Sie auf dem Autorknoten keinen Zugriff auf die **[!UICONTROL CRXDE Lite]** haben, können Sie die Vorgabe über den Veröffentlichungsserver überprüfen.
+      If you do not have access to **[!UICONTROL CRXDE Lite]** on the Author node, you can check the preset through the Publish server.
 
-   * **Überprüfen der[!DNL Video Analytics]Vorgabe über den Image-Server**
+   * **Check the[!DNL Video Analytics]preset through the Image Server**
 
       Sie können die [!DNL Video Analytics] Vorgabe direkt überprüfen, indem Sie eine Image-Server- `req=userdata` Anforderung erstellen.
 
@@ -561,7 +562,7 @@ Make sure that the [!DNL Video Analytics] preset package from the first Author n
 
       `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
-      Um die Vorgabe auf Publish-Servern zu überprüfen, können Sie eine ähnliche direkte Anforderung an den Publish-Server senden. Die Antworten sind auf dem Autor- und Veröffentlichungsknoten identisch. Die Antwort sieht ähnlich wie folgt aus:
+      Um die Vorgabe auf Publish-Servern zu überprüfen, können Sie eine ähnliche direkte Anforderung an den Publish-Server senden. Die Antworten sind auf dem Autor- und Veröffentlichungsknoten identisch. The response looks similar to the following:
 
       ```
       marketingCloudOrgId=0FC4E86B573F99CC7F000101
@@ -630,11 +631,11 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
 ## Filtern von Assets für die Replikation {#filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate _all_ assets (both images and video) from your AEM author environment to the AEM publish node. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
+In non-Dynamic Media deployments, you replicate _all_ assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
 
-Da Assets jedoch über die Cloud bereitgestellt werden, müssen diese Assets in Bereitstellungen für dynamische Medien nicht repliziert werden, um Veröffentlichungsknoten zu AEM. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Dynamic Media-Anzeigeprogramme, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
+However, in Dynamic Media deployments, because assets are delivered by way of the cloud, there is no need to replicate those same assets to AEM publish nodes. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Dynamic Media-Anzeigeprogramme, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
-Neben der Replizierung der Assets werden auch die folgenden Nicht-Assets repliziert:
+Besides replicating the assets, the following non-assets are also replicated:
 
 * Konfiguration des Versands für dynamische Medien: `/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
 * Bildvorgaben: `/conf/global/settings/dam/dm/presets/macros`
@@ -657,7 +658,7 @@ If you are using Dynamic Media for 1) imaging in production _or_ 2) imaging and 
   <tr> 
    <td>Dynamic Media Image Versand</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td> 
-   <td><p>Beginn mit <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> </td> 
+   <td><p>Starts with <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> </td> 
    <td>Die vordefinierten "Filterbilder"(gilt für Einzelbilder, einschließlich interaktiver Bilder) und "Filtersätze"(gilt für Rotationssets, Bildsätze, gemischte Mediensets und Karussell-Sets) werden wie folgt ausgeführt: 
     <ul> 
      <li>Schließen Sie PTIFF-Bilder und -Metadaten für die Replikation ein (jede Darstellung, die mit <strong>cqdam</strong>beginnt).</li> 
@@ -671,14 +672,14 @@ If you are using Dynamic Media for 1) imaging in production _or_ 2) imaging and 
    <td>Das vordefinierte "filter-video" wird: 
     <ul> 
      <li>Schließen Sie Proxy-Videodarstellungen, Videominiatur/Standbild, Metadaten (sowohl bei übergeordneten Video- als auch Videodarstellungen) für die Replikation ein (jede Darstellung, die mit <strong>cqdam</strong>beginnt).</li> 
-     <li>Schließen Sie die Originaldarstellungen für Videos und statische Miniaturansichten von der Replikation aus.<br /> <br /> <strong>Hinweis:</strong> Die Proxy-Videodarstellungen enthalten keine Binärdateien, sondern nur Knoteneigenschaften. Dies hat daher keine Auswirkung auf die Repositorygröße des Herausgebers.</li> 
+     <li>Schließen Sie die Originaldarstellungen für Videos und statische Miniaturansichten von der Replikation aus.<br /> <br /> <strong>Note:</strong> The proxy video renditions do not contain binaries, but instead are just node properties. Dies hat daher keine Auswirkung auf die Repositorygröße des Herausgebers.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Integration von Dynamic Media Classic (Scene7)</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p>filter-video</p> </td> 
-   <td><p>Beginn mit <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> <p>Beginn mit <strong>Video/</strong></p> </td> 
-   <td><p>Sie konfigurieren den Transport-URI so, dass er anstelle der Adobe Dynamic Media Cloud Replication Service-URL auf den AEM Veröffentlichungsserver verweist. Durch das Einrichten dieses Filters können Assets mit Dynamic Media Classic bereitgestellt werden, anstatt mit der AEM-Veröffentlichungsinstanz.</p> <p>Die vordefinierten "Filter-Bilder", "Filter-Sets"und "Filter-Video"werden wie folgt ausgeführt:</p> 
+   <td><p>Starts with <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> <p>Starts with <strong>video/</strong></p> </td> 
+   <td><p>Sie konfigurieren den Transport-URI so, dass er anstelle der Adobe Dynamic Media Cloud Replication Service-URL auf den AEM Veröffentlichungsserver verweist. Durch das Einrichten dieses Filters können Assets mit Dynamic Media Classic bereitgestellt werden, anstatt mit der AEM-Veröffentlichungsinstanz.</p> <p>The out-of-the-box "filter-images," "filter-sets," and "filter-video" will:</p> 
     <ul> 
      <li>Schließen Sie PTIFF-Bilder, Proxy-Videodarstellungen und Metadaten für die Replikation ein. Da diese Daten in JCR nicht vorhanden sind, werden keine Schritte ausgeführt (bei Durchführung der AEM/Dynamic Media Classic-Integration).</li> 
      <li>Das Originalbild, statische Bildwiedergaben, das Originalvideo und statische Miniaturwiedergaben werden aus der Replikation ausgeschlossen. Stattdessen werden von Dynamic Media Classic Bild- und Video-Assets bereitgestellt.</li> 
@@ -723,7 +724,7 @@ Wenn Sie Dynamic Media für die Bilddarstellung in Bereitstellungen außerhalb d
 
 1. Suchen Sie nach **[!UICONTROL filter-images]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Geben Sie den Namen `damRenditionFilters` des Typs ein `nt:unstructured`.
+1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`.
 1. Locate [!UICONTROL `damRenditionFilters`], right-click it and select **[!UICONTROL Paste]**.
 
 Die AEM-Veröffentlichungsinstanz für die Bereitstellung der Bilder in Ihrer Umgebung, die nicht für die Produktion bestimmt ist, wird eingerichtet. Mit dem Filter werden auch das Originalbild und statische Wiedergaben, die auf der Veröffentlichungsinstanz nicht benötigt werden, von der Replikation ausgeschlossen.
@@ -757,15 +758,15 @@ Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupasse
 
    To have the filter apply only to images of the type JPEG, enter a value of `image/jpeg`.
 
-1. Definieren Sie, welche Darstellungen Sie von der Replizierung ausschließen möchten.
+1. Define what renditions you want to include or exclude from replication.
 
    Sie können die folgenden Zeichen verwenden, um einen Filtervorgang für die Replikation durchzuführen:
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Zu verwendendes Zeichen</strong></td> 
-   <td><strong>So werden Assets für die Replizierung Filter</strong></td> 
+   <td><strong>Character to use</strong></td> 
+   <td><strong>How it filters assets for replication</strong></td> 
   </tr> 
   <tr> 
    <td>*</td> 
@@ -806,7 +807,7 @@ Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media
 1. In the upper-left corner of AEM, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools > Operations > Web Console]**.
 1. On the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page, tap **[!UICONTROL OSGi > Configuration]** to list all the bundles that are currently running within AEM.
 
-   Die Dynamic Media Versand-Server befinden sich in der Liste unter den folgenden Namen:
+   The Dynamic Media Delivery Servers are found under the following names in the list:
 
    * **[!UICONTROL Adobe CQ Scene7 ImageServer]**
    * **[!UICONTROL Adobe CQ Scene7 PlatformServer]**
@@ -827,7 +828,7 @@ Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media
   <tr> 
    <td>TcpPort.name</td> 
    <td><code><em>empty</em></code></td> 
-   <td>Anschlussnummer für die Kommunikation mit dem ImageServer-Prozess. Der freie Port wird standardmäßig automatisch erkannt.</td> 
+   <td>Port number to use for communication with the ImageServer process. Der freie Port wird standardmäßig automatisch erkannt.</td> 
   </tr> 
   <tr> 
    <td>AllowRemoteAccess.name</td> 
@@ -869,7 +870,7 @@ Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media
    | **[!UICONTROL Cache enabled]** | Aktiviert | Gibt an, ob der Cache für Antworten aktiviert ist.. |
    | **[!UICONTROL Cache roots]** | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Bundle-Ordner aufgelöst. |
    | **[!UICONTROL Cache Max Size]** | 200000000 | Gibt die maximale Größe des Caches für Antworten in Byte an. |
-   | **[!UICONTROL Cache Max Entries]** | 100000 | Maximale Anzahl der im Cache zulässigen Einträge. |
+   | **[!UICONTROL Cache Max Entries]** | 100000 | Maximum number of entries allowed in the cache. |
 
 ### Standardeinstellungen des Manifests {#default-manifest-settings}
 
@@ -991,7 +992,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
 
    Die Farbkorrektureigenschaften werden in der Tabelle **[!UICONTROL Farbkorrektureigenschaften]** beschrieben. Werte, die Sie Farbkorrektureigenschaften zuweisen können, sind in der Tabelle **[!UICONTROL Farbprofil]** angegeben.
 
-   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value]**. Tippen Sie auf **[!UICONTROL Hinzufügen]** und dann auf Alle **[!UICONTROL speichern]** , um Ihre Werte zu speichern.
+   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value]**. Tap **[!UICONTROL Add]**, then **[!UICONTROL Save All]** to save your values.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1057,7 +1058,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td> 
       <td>Zeichenfolge</td> 
       <td>relative</td> 
-      <td><p>Gibt die Renderpriorität an. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe empfiehlt, <strong>relativ </strong><i></i>als Standard festzulegen.</p> </td> 
+      <td><p>Specifies the render intent. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe empfiehlt, <strong>relativ </strong><i></i>als Standard festzulegen.</p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1139,7 +1140,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>JapanColorUngestern</td> 
       <td>CMYK</td> 
-      <td>Japan Color 2001 Ungestrichen</td> 
+      <td>Japan Color 2001 Uncoated</td> 
       </tr> 
       <tr> 
       <td>JapanColorWebCoated</td> 
@@ -1174,12 +1175,12 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>PS4Default</td> 
       <td>CMYK</td> 
-      <td>Photoshop 4 Standard-CMYK</td> 
+      <td>Photoshop 4 Default CMYK</td> 
       </tr> 
       <tr> 
       <td>PS5Default</td> 
       <td>CMYK</td> 
-      <td>Photoshop 5 Standard-CMYK</td> 
+      <td>Photoshop 5 Default CMYK</td> 
       </tr> 
       <tr> 
       <td>SheetfeedCoated</td> 
@@ -1204,7 +1205,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>UncoatedFogra29</td> 
       <td>CMYK</td> 
-      <td>Ungestrichenes FOGRA29 (ISO 12647-2:2004)</td> 
+      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td> 
       </tr> 
       <tr> 
       <td>WebCoated</td> 
@@ -1234,7 +1235,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>WideGamutRGB</td> 
       <td>RGB</td> 
-      <td>RGB-Farbraum</td> 
+      <td>Wide Gamut RGB</td> 
       </tr> 
     </tbody> 
     </table>
@@ -1267,7 +1268,7 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](delivering-dynamic-media-asse
   </tr> 
   <tr> 
    <td>Kopieren einer Viewer-URL</td> 
-   <td><p>Im Dialogfeld "URL kopieren"wird eine URL ähnlich der folgenden angezeigt (URL dient nur zu Demonstrationszwecken):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von AEM und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Weitere Informationen finden Sie unter <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Assets mit Dynamic Media</a>.</p> </td> 
+   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von AEM und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Weitere Informationen finden Sie unter <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Assets mit Dynamic Media</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Kopieren von Einbettungscode eines Viewers</td> 
