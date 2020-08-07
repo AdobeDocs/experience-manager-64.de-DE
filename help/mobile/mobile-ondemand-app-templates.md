@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Hinzufügen von Vorlagen und Komponenten
 seo-title: Erstellen und Hinzufügen von Vorlagen und Komponenten
-description: Folgen Sie dieser Seite, um mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App zu erfahren. Die Seite verwendet Geometrixx Unlimited App als App, die eine App-Beispielvorlage und Seitenvorlagen enthält.
-seo-description: Folgen Sie dieser Seite, um mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App zu erfahren. Die Seite verwendet Geometrixx Unlimited App als App, die eine App-Beispielvorlage und Seitenvorlagen enthält.
+description: Folgen Sie dieser Seite, um mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App zu erfahren. Die Seite verwendet die Geometrixx Unlimited-App als App, die eine App-Mustervorlage und Seitenvorlagen enthält.
+seo-description: Folgen Sie dieser Seite, um mehr über das Erstellen und Hinzufügen von Vorlagen und Komponenten zu Ihrer App zu erfahren. Die Seite verwendet die Geometrixx Unlimited-App als App, die eine App-Mustervorlage und Seitenvorlagen enthält.
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 translation-type: tm+mt
 source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 2%
 
 ---
 
@@ -22,15 +25,15 @@ source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
 
 AEM Mobile On-Demand bietet eine vollständig konfigurierte App-Vorlage, eine Artikelvorlage und Artikelkomponenten.
 
-Die Web.Unlimited-App ist eine Beispielvorlage, die die Shell einer vollständig konfigurierbaren und verwaltbaren AEM Mobile On-Demand-Anwendung darstellt.
+Die We.Unlimited App ist eine Beispielvorlage, die die Shell einer vollständig konfigurierbaren und überschaubaren AEM Mobile On-Demand-Anwendung darstellt.
 
-Durch Auswahl dieser Beispielvorlage beim Erstellen einer neuen App wird ein Rich-Dashboard für die AEM Mobile-Funktion bereitgestellt.
+Durch Auswahl dieser Beispielvorlage beim Erstellen einer neuen App erhalten Sie ein AEM Mobile-Feature-Rich-Dashboard.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
 >[!NOTE]
 >
->Informationen zum Verwalten der Inhalte Ihrer Anwendung und mobilen App über das AEM Mobile Apps Control Center finden Sie im [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Informationen zum Verwalten von Anwendungs- und mobilen App-Inhalten über das AEM Mobile Apps Control Center finden Sie im [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ## Erstellen von App-Vorlagen {#creating-app-templates}
 
@@ -45,7 +48,7 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 1. Navigieren Sie zum AEM Mobile-App-Katalog: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Wählen Sie **Erstellen** —> **App** wie unten dargestellt
 
-Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Artikel, Banner und Sammlungen hinzufügen. Informationen zum erneuten Besuch der Erstellung von Artikeln, Bannern und Sammlungen finden Sie unter [Inhaltsverwaltungsaktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Artikel, Banner und Sammlungen hinzufügen. Informationen zum erneuten Besuch der Erstellung von Artikeln, Bannern und Sammlungen finden Sie unter [Content-Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
@@ -66,8 +69,8 @@ Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Ar
 
 Jeder Entitätstyp verfügt über zwei vordefinierte Vorlagen. Diese sind:
 
-* **** Standardvorlagen: zur Inhaltserstellung mit entsprechenden Standardeigenschaften/-struktur verwendet
-* **** Importierte Vorlagen: zum Importieren von Inhalten aus AEM Mobile mit entsprechenden Standardeigenschaften/-Struktur
+* **Standardvorlagen:** zur Inhaltserstellung mit entsprechenden Standardeigenschaften/-struktur verwendet
+* **Importierte Vorlagen:** zum Importieren von Inhalten aus AEM Mobile mit entsprechenden Standardeigenschaften/-strukturen verwendet
 
 ### Artikelvorlagen {#article-templates}
 
@@ -86,7 +89,7 @@ Der Artikel &quot;Unbegrenzt&quot;ist eine Beispielvorlage, die ein typisches AE
 
 ### Hinzufügen von Komponenten zum Artikel {#adding-components-to-article}
 
-Nach der Erstellung kann ein Autor den Inhalt eines Artikels bearbeiten, indem er Komponenten wie Text und Bilder hinzufügt. Artikel sind eine Erweiterung der AEM-Seitenvorlagen.
+Nach der Erstellung kann ein Autor den Inhalt eines Artikels bearbeiten, indem er Komponenten wie Text und Bilder hinzufügt. Artikel sind eine Erweiterung AEM Seitenvorlagen.
 
 Wählen Sie einen Artikel aus, den Sie bearbeiten möchten, und klicken Sie auf &quot; **Bearbeiten** &quot;, um dem Artikel Komponenten hinzuzufügen.
 
@@ -98,15 +101,15 @@ Wählen Sie im linken Bereich das **+**-Zeichen, um dem Artikel Komponenten hinz
 
 ### Vordefinierte Vorlagen erstellen {#creating-out-of-the-box-templates}
 
-Es gibt keine vordefinierten Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die benutzerdefinierte Vorlagen erweitern sollten. Weitere Informationen finden Sie im [Artikelvorlagenbeispiel](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)der Geometrixx Unlimited App.
+Es gibt keine vordefinierten Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die benutzerdefinierte Vorlagen erweitern sollten. Weitere Informationen finden Sie im [Artikelvorlagenbeispiel](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)der Geometrixx Unlimited-App.
 
-Zu den wichtigsten Eigenschaften, die über die normale AEM-Vorlage hinausgehen, gehören:
+Zu den wichtigsten Eigenschaften, die über die normale AEM hinaus erforderlich sind, gehören:
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
-Diese Eigenschaft stellt sicher, dass die AEM-Seite als AEM Mobile-Zielartikelseite erkannt wird.
+Diese Eigenschaft stellt sicher, dass die AEM Seite als eine auf AEM Mobile ausgerichtete Artikelseite erkannt wird.
 
-Gemäß AEM-Vorlagen können Sie alle Standardeigenschaften oder untergeordneten Knoten zum ***jcr:content*** der Vorlage hinzufügen.
+Gemäß AEM Vorlagen können Sie alle Standardeigenschaften oder untergeordneten Knoten zur Vorlage &quot; ***jcr:content***&quot;hinzufügen.
 
 ### Banner- und Sammlungsvorlagen {#banner-and-collection-templates}
 
@@ -122,14 +125,14 @@ Eine einfache Komponente ist im Code-Repository enthalten, dessen Quelle in AEM 
 
 >[!NOTE]
 >
->Für AEM Mobile werden derzeit keine vordefinierten Komponenten bereitgestellt.
+>Für AEM Mobile sind derzeit keine vordefinierten Komponenten verfügbar.
 
 
-Sie können Ihrer Seite Komponenten hinzufügen. Jede Komponente kann in einer AEM Mobile-App verwendet werden, wird jedoch ggf. nicht ordnungsgemäß gerendert.
+Sie können Komponenten zu Ihrer Seite hinzufügen. Jede Komponente kann in einer AEM Mobile-App verwendet werden, wird jedoch bei Anwendung möglicherweise nicht ordnungsgemäß gerendert.
 
-Benutzerdefinierte Komponenten können jedoch nicht ordnungsgemäß exportieren und in AEM Mobile-On-Demand-Dienste hochladen, ohne dass ein benutzerdefinierter Exportinhaltssynchronisierungs-Handler zum Rendern in AEM verwendet wird.
+Benutzerdefinierte Komponenten können jedoch nicht ordnungsgemäß exportieren und nach AEM Mobile On-demand Services hochladen, ohne dass ein benutzerdefinierter Exportinhalt-Synchronisierungs-Handler zur Wiedergabe in AEM ausgeführt wird.
 
-Nachdem die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits auf einer AEM-Seite enthalten war, können Sie der Seite eine weitere Komponente hinzufügen oder eine vorhandene bearbeiten.
+Nachdem die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits in eine AEM Seite eingefügt wurde, können Sie der Seite eine weitere Komponente hinzufügen oder eine vorhandene bearbeiten.
 
 **So fügen Sie der Seite eine weitere Komponente hinzu:**
 
@@ -142,12 +145,12 @@ Nachdem die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits 
 
 **So bearbeiten Sie eine vorhandene Komponente:**
 
-1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie sich im **Bearbeitungsmodus befinden** , und wählen Sie die Komponente aus
+1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie sich im **Bearbeitungsmodus befinden** , und wählen Sie die Komponente aus.
 1. Tippen Sie auf das Schraubenschlüsselsymbol, um die Komponente zu konfigurieren.
 
 >[!NOTE]
 >
->Sie können eine Komponente in AEM erstellen und dasselbe mit [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)anpassen. Nachdem Sie die vorhandene Komponente Ihren Anforderungen entsprechend angepasst haben, können Sie sie Ihrer Seite mithilfe der Option &quot; **Bearbeiten** &quot;unter &quot;Artikel **** verwalten&quot;hinzufügen, wie in der Abbildung oben dargestellt.
+>Sie können eine Komponente in AEM erstellen und diese mit [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)anpassen. Nachdem Sie die vorhandene Komponente Ihren Anforderungen entsprechend angepasst haben, können Sie sie Ihrer Seite mithilfe der Option &quot; **Bearbeiten** &quot;unter &quot;Artikel **** verwalten&quot;hinzufügen, wie in der Abbildung oben dargestellt.
 
 >[!NOTE]
 >
@@ -155,5 +158,5 @@ Nachdem die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits 
 
 ### Die nächsten Schritte {#the-next-steps}
 
-* [Inhaltseigenschaften zum Exportieren von Inhalten verwenden](/help/mobile/on-demand-content-properties-exporting.md)
+* [Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten](/help/mobile/on-demand-content-properties-exporting.md)
 * [Mobil mit Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md)
