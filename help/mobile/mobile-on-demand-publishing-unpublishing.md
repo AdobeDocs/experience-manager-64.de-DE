@@ -1,8 +1,8 @@
 ---
 title: Veröffentlichung von Inhalten aufheben
 seo-title: Veröffentlichung von Inhalten aufheben
-description: Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut sind, folgen Sie dieser Seite, um mehr darüber zu erfahren, wie Sie Ihre Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
-seo-description: Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut sind, folgen Sie dieser Seite, um mehr darüber zu erfahren, wie Sie Ihre Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
+description: Sobald Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen vertraut sind, erfahren Sie auf dieser Seite, wie Sie Ihre Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
+seo-description: Sobald Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen vertraut sind, erfahren Sie auf dieser Seite, wie Sie Ihre Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut sind, können Sie Ihre Inhalte veröffentlichen. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
+Sobald Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen vertraut sind, können Sie Ihre Inhalte veröffentlichen. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
 
 >[!NOTE]
 >
@@ -29,7 +32,7 @@ Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen ve
 
 ## Veröffentlichen/Rückgängigmachen der Veröffentlichung des Inhalts {#publishing-unpublishing-the-content}
 
-Dies unterscheidet sich von &quot;AEM Publish&quot;. Inhalte werden nicht an eine AEM Publish-Serverinstanz gesendet, um sie öffentlich anzuzeigen. Hier teilen wir Mobile On-Demand mit, dass die ausgewählten Inhalte in der Mobile On-Demand-Live-App veröffentlicht werden sollen.
+Dies unterscheidet sich von einer &quot;AEM-Veröffentlichung&quot;. Inhalte werden nicht an eine AEM Publish-Serverinstanz gesendet, um sie öffentlich sichtbar zu machen. Hier teilen wir Mobile On-Demand mit, dass die ausgewählten Inhalte in der Mobile On-Demand-Live-App veröffentlicht werden sollen.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Der allgemeine Arbeitsablauf zum Veröffentlichen/Rückgängigmachen der Veröff
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
 1. Wählen Sie einen Artikel aus.
-1. Fügen Sie bei Bedarf weitere Artikel aus der Listenansicht hinzu.
+1. Hinzufügen Sie bei Bedarf weitere Artikel aus der Ansicht Liste.
 1. Wählen Sie in der Aktionsleiste &quot;Veröffentlichen&quot;aus. Nach einigen Augenblicken werden Ihre Artikel nun öffentlich sein.
 1. Gehen Sie wie oben beschrieben vor, um die Veröffentlichung von Artikeln rückgängig zu machen.
 
@@ -53,9 +56,9 @@ Der allgemeine Arbeitsablauf zum Veröffentlichen/Rückgängigmachen der Veröff
 
 Sobald Sie Informationen zum Erstellen und Veröffentlichen von Inhalten erhalten haben, siehe
 
-* [Entwickeln von AEM Content für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile-on-demand.md)
-* [Verwalten von Inhalten für die Verwendung von AEM Mobile-On-Demand-Diensten](/help/mobile/aem-mobile.md)
+* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Verwalten von Inhalten für die Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Weitere Informationen zu den Authoring-Themen finden Sie unter
 
-[Authoring von AEM Content für AEM Mobile On-Demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
+[Authoring AEM Inhalte für AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
