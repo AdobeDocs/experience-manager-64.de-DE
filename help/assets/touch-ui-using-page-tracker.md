@@ -3,7 +3,7 @@ title: Verwenden von Seitenverfolgung und Einbettungs-Code in Web-Seiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
@@ -33,9 +33,9 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","xxxx","xxx","list1","eVar3","event8","event7");
             </script>
-                    
+
     </head>
-                
+
     <body>
 
                                 <img
@@ -46,7 +46,7 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
 
         <a
             href="https://www.adobe.com"
-        
+
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
                     src="http://localhost/xxxx/content/dam/test/xyz.jpg"
@@ -75,7 +75,6 @@ Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. 
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
             </script>
-                                                
  </head>
 ```
 
@@ -94,7 +93,7 @@ Sie können Einbettungs-Code im Hauptteil des Website-Codes hinzufügen. Das fol
 
         <a
             href="https://www.adobe.com"
-        
+
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img
                     src="http://localhost:4502/xxxx/content/dam/test/xyz.jpg"
