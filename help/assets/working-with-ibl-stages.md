@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 58%
@@ -20,7 +20,7 @@ ht-degree: 58%
 
 # Arbeiten mit IBL-Bühnen {#about-working-with-ibl-stages}
 
-AEM 3D unterstützt die bildbasierte Beleuchtung (IBL) für die interaktive Anzeige und für das Rendern mit dem integrierten Adobe Rapid Refine™ Renderer und den Renderern von Drittanbietern. Sie können IBL-Bühnen mit gängigen Authoring-Werkzeugen wie Autodesk® Maya® oder Autodesk® 3ds Max® erstellen.
+AEM 3D unterstützt die bildbasierte Beleuchtung (IBL) für die interaktive Anzeige und für das Rendern mit dem integrierten Adobe Rapid Refine™ Renderer und den Renderern von Drittanbietern. You can create IBL stages with common authoring tools such as Autodesk® Maya® or Autodesk® 3ds Max®.
 
 ## Bilder für IBL {#images-for-ibl}
 
@@ -35,9 +35,9 @@ Derzeit unterstützt AEM 3D nur 32-Bit-TIFF-Dateien. Verwenden Sie gegebenenfal
 
 Häufig ist ein einziges HDR-Bild für IBL-Bühnen ausreichend. AEM 3D lässt jedoch bis zu drei separate Bilder zu und bietet so zusätzliche Steuerungsmöglichkeiten der IBL-Effekte:
 
-* **Lichtbild** - Bei diesem Bildtyp handelt es sich um ein HDR-Umgebung, das jedoch relativ klein sein kann, da das Bild vor der Verwendung für diffuse Beleuchtung stark gefiltert wird.
-* **Reflektionsbild** - Dieser Bildtyp wird verwendet, um Reflexionen in Objektoberflächen zu erstellen. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe und Auflösung sind geeignet, um die Anforderungen an Qualität und Schärfe der Reflexionen zu erfüllen. Bei Angabe eines HDR-Bildes wandelt AEM 3D das Bild in 8-Bit-RGB um, bevor ein proprietärer Algorithmus verwendet wird.
-* **Hintergrundbild** - Dieser Bildtyp wird als Hintergrund verwendet. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe/Auflösung/Detailgrad sollte die Anforderungen an den Bühnen-Hintergrund erfüllen. Wenn ein HDR-Bild angegeben ist, konvertiert AEM 3D dieses mithilfe eines proprietären Algorithmus in ein 8-Bit-RGB-Bild. ``
+* **Diffuse Lighting Environment Image** – This type of image should be an HDR image, but can be relatively small, as the image will be heavily filtered prior to using it for diffuse lighting.
+* **Reflection Environment Image** – This type of image is used to create reflections in object surfaces. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe und Auflösung sind geeignet, um die Anforderungen an Qualität und Schärfe der Reflexionen zu erfüllen. Bei Angabe eines HDR-Bildes wandelt AEM 3D das Bild in 8-Bit-RGB um, bevor ein proprietärer Algorithmus verwendet wird.
+* **Hintergrundbild** - Dieser Bildtyp wird als Hintergrund verwendet. Es kann sich um ein standardmäßiges 8-Bit-RGB-Bild handeln, das die gewünschte Größe/Auflösung/Detailebene für den Bühnenhintergrund aufweist. Wenn ein HDR-Bild angegeben ist, konvertiert AEM 3D dieses mithilfe eines proprietären Algorithmus in ein 8-Bit-RGB-Bild.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
     <ul> 
      <li><strong>lat</strong> - Die vertikale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> eine Einstellung von <code>0.0</code> ist am Horizont (vertikaler Mittelpunkt des Bilds für die diffuse Umgebung); <code>1.0</code> befindet sich am höchsten Punkt (obere Kante der Umgebung "Diffuse Lighting").</li> 
      <li><strong>long</strong> - Die horizontale Position der Lichtquelle (<code>0.0</code>-<code>1.0</code>).<br /> Die Einstellung 0,0 steht für die linke Ecke, 1,0 für die rechte Ecke des Umgebungsbildes für diffuse Beleuchtung.<br /> </li> 
-     <li><strong>hell</strong> - Die Helligkeit der Sonnenlichtquelle. Erhöhen Sie diesen Wert, um die Sonnenlichtquelle aufzuhellen. Verringern Sie den Wert, um sie zu verdunkeln. <br /> Bei einer Einstellung werden zusätzliche Beleuchtung <code>0</code> deaktiviert und Schatten deaktiviert. Der Parameter wirkt sich nicht auf die Umgebungsreflexionen aus.<br /> </li> 
+     <li><strong>bright</strong> - The brightness of the sun light source. Erhöhen Sie diesen Wert, um die Sonnenlichtquelle aufzuhellen. Verringern Sie den Wert, um sie zu verdunkeln. <br /> Bei einer Einstellung werden zusätzliche Beleuchtung <code>0</code> deaktiviert und Schatten deaktiviert. Der Parameter wirkt sich nicht auf die Umgebungsreflexionen aus.<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -68,9 +68,9 @@ Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenscha
   </tr> 
   <tr> 
    <td>Umgebung-Beleuchtung</td> 
-   <td><p><span class="diff-html-added">Hiermit können Sie die diffuse Beleuchtung steuern. Wenn das Bild mit diffuser Beleuchtungsumgebung ungewöhnlich hell oder dunkel ist (beispielsweise Nachtszenen), müssen Sie diese Eigenschaft manuell korrigieren.</span></p> 
+   <td><p><span class="diff-html-added">Lets you control the diffuse lighting. Wenn das Bild mit diffuser Beleuchtungsumgebung ungewöhnlich hell oder dunkel ist (beispielsweise Nachtszenen), müssen Sie diese Eigenschaft manuell korrigieren.</span></p> 
     <ul> 
-     <li><strong>r, g, b</strong> - Derzeit nicht verwendet.</li> 
+     <li><strong>r, g, b</strong> - Currently not used.</li> 
      <li><strong>hell</strong> - <span class="diff-html-added">Helligkeitsmultiplikator. Über diesen Wert können Sie die Gesamtlichtintensität (die grundlegende IBL-Beleuchtung und die Helligkeit der Sonnenlichtquelle) erhöhen und reduzieren.</span></li> 
     </ul> </td> 
   </tr> 
@@ -90,9 +90,9 @@ IBL-Stufen verwenden standardmäßig kugelförmige Hintergrundbilder mit einem D
 1. Erweitern Sie den Knoten &quot;stage&quot;auf `jcr:content/metadata`.
 1. Legen Sie die Eigenschaft `dam:gPlaneRadius` auf den gewünschten Millimeterwert fest.
 
-   Zur Steigerung der Rendereffizienz empfiehlt Adobe, diesen Wert auf etwa die größte Dimension des größten Objekts zu beschränken, das Sie auf der Bühne anzeigen möchten.
+   For rendering efficiency, Adobe recommends that you limit this value to approximately the largest dimension of the largest object that you intend to shown on the stage.
 
-   Beispielsweise wird ein 20 Meter langes Jet-plane-Modell gut angezeigt, wenn `dam:gPlaneRadius=20000`.
+   For example, a jet plane model that is 20 meters long displays well if `dam:gPlaneRadius=20000`.
 
 1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
 
