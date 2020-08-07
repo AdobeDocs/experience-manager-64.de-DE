@@ -1,6 +1,6 @@
 ---
-title: Inhaltseigenschaften zum Exportieren von Inhalten verwenden
-seo-title: Inhaltseigenschaften zum Exportieren von Inhalten verwenden
+title: Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten
+seo-title: Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten
 description: Die folgende Seite zeigt App-Eigenschaften und Knoten.
 seo-description: Die folgende Seite zeigt App-Eigenschaften und Knoten.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
@@ -11,11 +11,14 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 translation-type: tm+mt
 source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 10%
 
 ---
 
 
-# Inhaltseigenschaften zum Exportieren von Inhalten verwenden{#using-content-properties-to-export-content}
+# Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten{#using-content-properties-to-export-content}
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   <tr>
    <td>DPS-Cloud-Konfiguration</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu einem konfigurierten Mobile On-Demand Cloud-Dienst. Wird für On-Demand-Aktionen von AEM Mobile zu Mobile verwendet (API-Aufruf)</p> <p>Diese Verknüpfung wird über die Kachel "Verbindung verwalten"konfiguriert, wenn ein Autor einen Mobile On-Demand Cloud-Dienst wählt, mit dem die App verknüpft werden soll.</p> </td>
+   <td><p>Pfad zu einem konfigurierten Mobile On-Demand-Cloud Service. Wird für On-Demand-Aktionen von AEM Mobile zu Mobile (API-Aufruf) verwendet</p> <p>Diese Verknüpfung wird über die Kachel "Verbindung verwalten"konfiguriert, wenn ein Autor einen Mobile On-Demand-Cloud Service wählt, mit dem die App verknüpft werden soll.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -49,7 +52,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   <tr>
    <td>dps-projectId</td>
    <td>Zeichenfolge</td>
-   <td><p>ID/URI des Mobile On-Demand-Projekts, mit dem diese App verknüpft/verbunden ist.</p> <p>Diese Verknüpfung wird über die Kachel "Verbindung verwalten"konfiguriert, wenn ein Autor das Projekt aus einer Liste verfügbarer Projekte für den zugehörigen Mobile On-Demand Cloud-Dienst auswählt.</p> </td>
+   <td><p>ID/URI des Mobile On-Demand-Projekts, mit dem diese App verknüpft/verbunden ist.</p> <p>Diese Verknüpfung wird über die Kachel "Verbindung verwalten"konfiguriert, wenn ein Autor das Projekt aus einer Liste verfügbarer Projekte für den zugehörigen Mobile On-Demand-Cloud Service auswählt.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -63,16 +66,16 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Datum</td>
-   <td>Datum des letzten Uploads freigegebener Ressourcen von AEM auf AEM Mobile.</td>
+   <td>Datum          </td>
+   <td>Datum des letzten Uploads freigegebener Ressourcen von AEM nach AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>Zeichenfolge:userid</td>
-   <td>ID des Benutzers, der die letzte Anforderung für freigegebene Ressourcen von AEM auf AEM Mobile hochgeladen hat.</td>
+   <td>ID des Benutzers, der die letzte Anforderung für freigegebene Ressourcen von AEM nach AEM Mobile hochgeladen hat.</td>
   </tr>
   <tr>
-   <td>pge-dashboard-config</td>
+   <td>pge-Dashboard-config</td>
    <td>Zeichenfolge:Pfad</td>
    <td>Pfad zu einer Dashboard-Konfiguration. Der Pfad kann bei Bedarf zu einer benutzerdefinierten Dashboard-Konfiguration umgeleitet werden.</td>
   </tr>
@@ -88,4 +91,4 @@ Sie können zum Erstellen von Inhalten ***Inhaltseigenschaften*** verwenden. Sie
 
 * [Inhaltseigenschaften](/help/mobile/content-properties.md)
 * [Artikelexportkonfiguration erstellen](/help/mobile/creating-article-export-configuration.md)
-* [Exportkonfiguration für gemeinsame Ressourcen](/help/mobile/creating-shared-resources-export-configuration.md)
+* [Erstellen der Exportkonfiguration für gemeinsame Ressourcen](/help/mobile/creating-shared-resources-export-configuration.md)
