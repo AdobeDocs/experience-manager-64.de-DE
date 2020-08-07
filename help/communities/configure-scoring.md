@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -178,19 +178,16 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
       * `/content/community-components/en/forum/jcr:content`
    * Hinzufügen und Abzeichen
 
-      * 
+      ```
+      scoringRules = [/etc/community/scoring/rules/comments-scoring,
+      /etc/community/scoring/rules/forums-scoring]
+      ```
 
-         ```
-         scoringRules = [/etc/community/scoring/rules/comments-scoring,
-         /etc/community/scoring/rules/forums-scoring]
-         ```
+      ```
+      badgingRules =[/etc/community/badging/rules/comments-scoring,
+      /etc/community/badging/rules/forums-scoring]
+      ```
 
-      * 
-
-         ```
-         badgingRules =[/etc/community/badging/rules/comments-scoring,
-         /etc/community/badging/rules/forums-scoring]
-         ```
    * Suchen Sie den Knoten der Forumkomponente
 
       * `/content/community-components/en/forum/jcr:content/content/forum`
@@ -200,7 +197,6 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 
       * `allowBadges = true`
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
-
 
 
 
