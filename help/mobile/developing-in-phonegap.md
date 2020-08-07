@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 28%
 
 ---
 
@@ -24,7 +27,7 @@ AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten probl
 
 >[!NOTE]
 >
->Bevor Sie mit AEM Mobile mit Adobe PhoneGap beginnen, müssen Sie die Umgebung einrichten und mit dem [AEM Mobile-Anwendungs-Dashboard](/help/mobile/phonegap-authoring-apps.md)beginnen.
+>Bevor Sie mit AEM Mobile mit Adobe PhoneGap beginnen, stellen Sie sicher, dass Sie Ihre Umgebung einrichten und mit dem [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md)beginnen.
 
 Die folgenden Ressourcen helfen Ihnen beim Einstieg in AEM Mobile mit Adobe PhoneGap:
 
@@ -36,11 +39,11 @@ Die folgenden Ressourcen helfen Ihnen beim Einstieg in AEM Mobile mit Adobe Phon
 
    * Informationen zur Aktivierung von Content Services und Datenmodellen finden Sie unter Content Services [verwalten](/help/mobile/developing-content-services.md)
    * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwickeln von Modellen](/help/mobile/administer-mobile-apps.md)
-   * Weitere Informationen zu Wiedergabe und Bereitstellung finden Sie unter [Wiedergabe und Bereitstellung von Content Services](/help/mobile/rendering-and-delivery.md)
+   * Weitere Informationen zu Rendering und Versand finden Sie unter [Wiedergabe und Versand von Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Informationen zum Ausführen Ihrer AEM Mobile-Anwendungen auf einem beliebigen iOS- oder Android-Mobilgerät finden Sie unter [Mobile QuickStart mit AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md).
+>Informationen zum Ausführen Ihrer AEM Mobilanwendungen auf einem beliebigen iOS- oder Android-Mobilgerät finden Sie unter [Mobile QuickStart mit AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Vorwärts {#getting-ahead}
 
