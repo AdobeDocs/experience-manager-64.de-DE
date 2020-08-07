@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 translation-type: tm+mt
 source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Artikeln in einer Anwendung helfen. Die folgenden Aktionen werden für Artikel in der Anwendung ausgeführt.
+Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Artikeln in einer Anwendung helfen. Die folgenden Aktionen werden für Artikel in der Anwendung ausgeführt.
 
 ## Artikelübersicht {#articles-overview}
 
@@ -29,12 +32,13 @@ Artikel stellen den Text dar, der zusammen mit Kunst zur Informationsübermittlu
 
 >[!NOTE]
 >
->In den folgenden Ressourcen der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Apps:
+>In der Online-Hilfe finden Sie die folgenden Ressourcen, um mehr über die folgenden Themen in AEM Mobile-Apps zu erfahren:
 >
 >* [Betrachtungen zum Entwurf](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [Verwalten von Artikeln](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+
 >
 
 
@@ -53,7 +57,7 @@ Der allgemeine Arbeitsablauf zum Erstellen eines Artikels lautet wie folgt:
 
 ## Importieren eines neuen Artikels {#importing-a-new-article}
 
-Vorhandene Mobile On-Demand-Inhalte können von Mobile On-Demand auf AEM heruntergeladen (importiert) werden. Dadurch können lokale Inhalte bearbeitet und angezeigt werden.
+Vorhandene Mobile On-Demand-Inhalte können von Mobile On-Demand heruntergeladen (importiert) werden, um sie zu AEM. Dadurch können lokale Inhalte bearbeitet und angezeigt werden.
 
 >[!NOTE]
 >
@@ -74,7 +78,7 @@ Der Workflow zum Importieren eines neuen Artikels
 
 ## Bearbeiten eines Artikels {#editing-an-article}
 
-Verwenden Sie den integrierten AEM-Drag &amp; Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder aus DAM-Assets können eingefügt werden.
+Verwenden Sie den integrierten AEM Drag &amp; Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder aus DAM-Assets können eingefügt werden.
 
 >[!CAUTION]
 >
@@ -83,21 +87,21 @@ Verwenden Sie den integrierten AEM-Drag &amp; Drop-Editor, um einen Artikel hinz
 Der Workflow zum Bearbeiten eines Artikels:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie einen von AEM bereitgestellten Artikel aus der Kachel &quot;Artikel **verwalten&quot;** .
-1. Klicken Sie in der Listenansicht auf den hervorgehobenen Artikel, um ihn im Inhaltseditor zu öffnen.
+1. Wählen Sie einen AEM Artikel aus der Kachel &quot;Artikel **verwalten** &quot;aus.
+1. Klicken Sie in der Ansicht Liste auf den markierten Artikel, um ihn im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Artikelinhalte (Manuskripte, Bilder, Text usw.) zu ziehen.
 
 ### Anzeigen und Bearbeiten der Metadaten in einem Artikel {#viewing-and-editing-the-metadata-within-an-article}
 
-Inhalte wie Artikel, Banner usw. haben zahlreiche Eigenschaften wie Titel, Beschreibungen, Bilder. Diese Aktion dient zum Anzeigen und Ändern solcher Eigenschaften. Optional können diese Änderungen beim Speichern in Mobile On-Demand hochgeladen werden.
+Inhalte wie Artikel, Banner usw. haben zahlreiche Eigenschaften wie Titel, Beschreibungen, Bilder. Diese Aktion wird zur Ansicht und Änderung solcher Eigenschaften verwendet. Optional können diese Änderungen beim Speichern in Mobile On-Demand hochgeladen werden.
 
-Der allgemeine Arbeitsablauf zum Anzeigen/Bearbeiten eines Artikels:
+Der allgemeine Arbeitsablauf zum Ansichten/Bearbeiten eines Artikels:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie einen Artikel aus der Kachel &quot;Artikel **verwalten&quot;** .
+1. Wählen Sie einen Artikel aus der Kachel &quot;Artikel **verwalten** &quot;aus.
 
-1. Wählen Sie in der Aktionsleiste &quot;Eigenschaften **anzeigen&quot;** .
-1. Zeigen Sie alle verfügbaren Metadaten für diesen Artikel an.
+1. Wählen Sie in der Aktionsleiste die Option &quot; **Ansichten-Eigenschaften** &quot;aus.
+1. Ansicht aller für diesen Artikel verfügbaren Metadaten.
 1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie nach Abschluss des Vorgangs auf **Speichern** .
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
@@ -109,7 +113,7 @@ Der allgemeine Arbeitsablauf zum Hochladen eines Artikels:
 
 1. Wählen Sie in **Mobile** Ihre Mobile On-Demand-App aus dem Katalog.
 1. Wählen Sie in der Kachel &quot;Artikel **** verwalten&quot;einen Artikel zum Hochladen in Mobile On-Demand aus.
-1. Fügen Sie bei Bedarf weitere Artikel aus der Listenansicht hinzu.
+1. Hinzufügen Sie bei Bedarf weitere Artikel aus der Ansicht Liste.
 1. Wählen Sie **Hochladen** in der Aktionsleiste und klicken Sie dann im Dialogfeld auf Hochladen.
 1. Ihre Artikel werden jetzt in Mobile On-Demand hochgeladen.
 
@@ -117,7 +121,7 @@ Der allgemeine Arbeitsablauf zum Hochladen eines Artikels:
 
 ## Löschen eines Artikels {#deleting-an-article}
 
-Dieser Vorgang löscht den ausgewählten Inhalt aus Mobile On-Demand und optional aus der lokalen AEM-Instanz.
+Durch diesen Vorgang werden die ausgewählten Inhalte aus Mobile On-Demand und optional aus der lokalen AEM gelöscht.
 
 Der allgemeine Arbeitsablauf zum Löschen eines Artikels:
 
@@ -127,7 +131,7 @@ Der allgemeine Arbeitsablauf zum Löschen eines Artikels:
 1. Click **Delete** from the action bar.
 1. Überprüfen Sie, ob Sie sowohl AEM als auch Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
-1. Ihr Artikel wird jetzt aus der Liste entfernt.
+1. Ihr Artikel wurde jetzt aus der Liste entfernt.
 
 ![chlimage_1-5](assets/chlimage_1-5.gif)
 
@@ -135,7 +139,7 @@ Der allgemeine Arbeitsablauf zum Löschen eines Artikels:
 
 Informationen zum Verwalten von Artikeln finden Sie unter
 
-* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichen/Rückgängigmachen der Veröffentlichung des Inhalts](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
