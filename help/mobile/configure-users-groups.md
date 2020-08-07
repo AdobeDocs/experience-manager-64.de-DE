@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 52%
 
 ---
 
@@ -25,14 +28,14 @@ In diesem Kapitel werden die Benutzerrollen und die Konfiguration der Benutzer u
 
 ## AEM Mobile-Anwendungsbenutzer und Gruppenverwaltung {#aem-mobile-application-users-and-group-administration}
 
-Um das Berechtigungsmodell für AEM-Apps zu organisieren und zu verwalten, stehen die folgenden zwei Gruppen zur Verfügung:
+Um das Berechtigungsmodell für AEM Apps zu organisieren und zu verwalten, stehen die folgenden zwei Gruppen zur Verfügung:
 
 * app-admins für App-Administratoren
 * app-authors for App Authors
 
 ### AEM Mobile Application Content Authors (app-author group) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobile-Anwendungsinhalten einschließlich Seiten, Text, Bilder und Videos verantwortlich.
+Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte mobiler Anwendungen zuständig, einschließlich Seiten, Text, Bilder und Videos.
 
 #### Gruppenkonfiguration: app-authors {#group-configuration-app-authors}
 
@@ -48,7 +51,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobil
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-   App-Autoren zur Autorengruppe hinzufügen
+   Hinzufügen von App-Autoren zur Autorengruppe
 
 1. Nachdem Sie die Benutzergruppe „app-authors“ erstellt haben, können Sie ihr über die [Benutzer-Admin](http://localhost:4502/libs/granite/security/content/useradmin.md)-Konsole Teammitglieder hinzufügen.
 
@@ -61,7 +64,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobil
    * (Lesen) unter /etc/cloudservices
    >[!NOTE]
    >
-   >App-Autoren erweitern die Standard-Gruppe &quot;Inhaltautoren&quot;(Autoren) von AEM und erben so die Möglichkeit, Inhalte unter /content/phonegap zu erstellen
+   >App-Autoren erweitern die Standard-Gruppe &quot;Inhaltautoren&quot;(Autoren) von AEM und erben so die Möglichkeit, Inhalte unter /content/phonegap zu erstellen.
 
 ### AEM Mobile Application Administrators Group (app-admins group) {#aem-mobile-application-administrators-group-app-admins-group}
 
@@ -83,6 +86,7 @@ Members of the app-admins group can author application content with the same per
 
    * content-authors
    * workflow-users
+
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
 1. Navigate to the [Permissions console](http://localhost:4502/useradmin) and add permissions to administer cloudservices
@@ -94,6 +98,7 @@ Members of the app-admins group can author application content with the same per
 
    * (Lesen, Verändern, Erstellen, Löschen, Replizieren) für „/etc/packages/mobileapp“
    * (Lesen) für „/var/contentsync“
+
    >[!NOTE]
    >
    >Die Paketreplikation wird verwendet, um Anwendungsaktualisierungen aus der Erstellungsinstanz in der Veröffentlichungsinstanz zu veröffentlichen.
@@ -108,7 +113,7 @@ Members of the app-admins group can author application content with the same per
 
 ## Berechtigungen für die Dashboard-Kacheln {#dashboard-tile-permissions}
 
-Die Dashboard-Kacheln können je nach Berechtigungen des Benutzers verschiedene Aktionen enthalten. Im Folgenden werden die Aktionen beschrieben, die für die einzelnen Bereiche verfügbar sind.
+Die Dashboard-Kacheln können je nach Berechtigungen des Benutzers verschiedene Aktionen enthalten. Im Folgenden werden die Aktionen beschrieben, die für die einzelnen Kacheln verfügbar sind.
 
 Die Verfügbarkeit von Aktionen ist außerdem abhängig von der Konfiguration der aktuellen App. Beispielsweise ergibt die Aktion „Remote-Build“ keinen Sinn, wenn der App keine PhoneGap-Cloud-Konfiguration zugewiesen wurde. These will be listed below under &#39;**Configuration Condition**&#39; sections.
 
