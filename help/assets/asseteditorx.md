@@ -3,10 +3,10 @@ title: Asset-Editor erweitern
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Einige der AEM Assets-Komponenten erfordern, dass JS-Funktionen in `component.j
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
