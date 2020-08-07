@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten von Anwendungen
 seo-title: Bearbeiten von Anwendungen
-description: Mit dem AEM Mobile Dashboard können Sie Ihre mobile Anwendung erstellen, erstellen und bereitstellen, Anwendungsmetadaten erstellen, löschen und bearbeiten. Auf dieser Seite erfahren Sie mehr.
-seo-description: Mit dem AEM Mobile Dashboard können Sie Ihre mobile Anwendung erstellen, erstellen und bereitstellen, Anwendungsmetadaten erstellen, löschen und bearbeiten. Auf dieser Seite erfahren Sie mehr.
+description: Mit dem AEM Mobile-Dashboard können Sie Ihre Mobilanwendung erstellen, erstellen und bereitstellen, Anwendungsmetadaten erstellen, löschen und bearbeiten. Auf dieser Seite erfahren Sie mehr.
+seo-description: Mit dem AEM Mobile-Dashboard können Sie Ihre Mobilanwendung erstellen, erstellen und bereitstellen, Anwendungsmetadaten erstellen, löschen und bearbeiten. Auf dieser Seite erfahren Sie mehr.
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1053'
+ht-degree: 32%
 
 ---
 
@@ -21,19 +24,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Mit dem AEM Mobile Dashboard können Sie Ihre mobile Anwendung erstellen, erstellen und bereitstellen, Anwendungsmetadaten erstellen, löschen und bearbeiten. Sobald Ihre Anwendung live ist, können Sie Anwendungsanalysen einschließlich Lebenszyklusmetriken und Nutzungsmetriken analysieren, um die Kundenkonversion und die Markentreue zu verbessern.
+Mit dem AEM Mobile-Dashboard können Sie Ihre Mobilanwendung erstellen, erstellen und bereitstellen, Anwendungsmetadaten erstellen, löschen und bearbeiten. Sobald Ihre Anwendung live ist, können Sie Anwendungsanalysen einschließlich Lebenszyklusmetriken und Nutzungsmetriken analysieren, um die Kundenkonversion und die Markentreue zu verbessern.
 
 To build your AEM Mobile Application, see the [Building Mobile Applications](/help/mobile/building-app-mobile-phonegap.md) page.
 
-Informationen zum Einrichten Ihrer Umgebung und zum Einstieg finden Sie unter [Verwalten von AEM zur Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Informationen zum Einrichten Ihrer Umgebung und zum Einstieg finden Sie unter [Verwaltung AEMder Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## Der AEM Mobile-App-Katalog {#the-aem-mobile-apps-catalog}
 
 The [AEM Mobile Apps Catalog](http://localhost:4502/aem/apps.html/content/phonegap) displays all of your mobile app managed in AEM.
 
-Stellen Sie sich diesen Katalog als &quot;Einstiegsseite&quot;für AEM Mobile vor, auf der Administratoren eine neue AEM Mobile-Anwendung starten können, indem sie entweder eine Vorlage erstellen oder eine App hochladen, die bereits von einem Mobilentwickler gestartet wurde.
+Stellen Sie sich diesen Katalog als &quot;Landingpage&quot;für AEM Mobile vor, in der Administratoren eine neue AEM Mobile-Anwendung durch Erstellen einer Vorlage oder Hochladen einer App, die bereits von einem Mobilentwickler gestartet wurde, Beginn haben können.
 
-Führen Sie die folgenden Schritte aus, um zur Einstiegsseite des Apps-Katalogs zu gelangen:
+Führen Sie die folgenden Schritte aus, um zur App-Katalog-Landingpage zu gelangen:
 
 1. Navigieren Sie zur **Navigation** und wählen Sie dann &quot; **Mobil**&quot;.
 
@@ -43,9 +46,9 @@ Führen Sie die folgenden Schritte aus, um zur Einstiegsseite des Apps-Katalogs 
 
 ## Das AEM Mobile-App-Dashboard {#the-aem-mobile-app-dashboard}
 
-Wenn Sie eine AEM Mobile-App aus dem Katalog auswählen, wird das entsprechende Dashboard angezeigt. Hier können Sie Ihre Anwendung verwalten, Statistiken anzeigen, Inhalte für Ihre mobile App erstellen, bereitstellen und verwalten.
+Wenn Sie eine AEM Mobile-App aus dem Katalog auswählen, wird das entsprechende Dashboard angezeigt. Hier können Sie Ihre Applikation, Ihre Ansicht-Statistik verwalten, Ihre Inhalte für die mobile App erstellen, bereitstellen und verwalten.
 
-Sie können jede Kachel im AEM Mobile Dashboard erweitern, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken. in der unteren rechten Ecke.
+Sie können in jede Kachel im AEM Mobile-Dashboard erweitern, um Details zu Ansichten oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken. in der unteren rechten Ecke.
 
 ![AEM Mobile-Apps-Befehlszentrale](assets/chlimage_1-136.png)
 
@@ -67,7 +70,7 @@ Inhalt kann in AEM Mobile im Prinzip auf dieselbe Weise wie in AEM Sites erstell
 
 Nachdem Sie Ihre Inhalte über die Kachel &quot;Seiteninhalt verwalten&quot;hinzugefügt oder geändert haben, können Sie diese Änderungen mit einem Content Release-Update an Ihre Kunden senden.
 
-Mit dem Content Package kann der AEM App Author Seiteninhalte in AEM verwalten und Ihr Entwicklungsteam Änderungen an Ihrer PhoneGap Shell-Anwendung (d. h. App-Framework oder -Infrastruktur) vornehmen und diese dann schnell an Ihre Kunden weiterleiten, ohne dass ein Entwickler aufgefordert werden muss, sich erneut zur Distribution an die Varios Stores zu wenden.
+Mit dem Content Package kann der AEM App Author Seiteninhalte in AEM verwalten und Ihr Entwicklungsteam Änderungen an Ihrer PhoneGap Shell-Anwendung (d. h. App-Framework oder -Infrastruktur) vornehmen lassen und diese dann schnell an Ihre Kunden weiterleiten, ohne dass ein Entwickler aufgefordert werden muss, sich erneut zur Distribution an die verschiedenen Stores zu senden.
 
 Content Package erstellt für jedes Update eine ZIP-Datei, die als Inhaltsveröffentlichungspaket bezeichnet wird. Diese Pakete enthalten HTML-Ressourcen und HTML-Seiten, die beim Rendern der App generiert werden und intelligent genug sind, nur die Dateien zu verpacken, die seit der letzten Aktualisierung geändert wurden.
 
@@ -101,9 +104,9 @@ Sie können auch die Gerätequelle herunterladen, um die Erstellung lokal über 
 
 >[!CAUTION]
 >
->Die Kachel &quot;Metriken&quot;wird erst nach der Konfiguration des Cloud-Dienstes angezeigt.
+>Die Kachel &quot;Metriken&quot;wird erst angezeigt, nachdem Sie den Cloud-Dienst konfiguriert haben.
 >
->Weitere Informationen finden Sie unter Adobe Mobile Services Cloud-Dienst [konfigurieren](/help/mobile/configure-adobe-mobile-cloud-service.md) .
+>Weitere Informationen finden Sie unter Adobe Mobile Services-Cloud Service [](/help/mobile/configure-adobe-mobile-cloud-service.md) konfigurieren.
 
 AEM Mobile integerates with Adobe Analytics through [Adobe Mobile Services SDK](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS).
 
