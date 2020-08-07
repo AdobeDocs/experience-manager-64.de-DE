@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 80%
@@ -59,7 +59,7 @@ ht-degree: 80%
 
       * **Overall quality** – `0.5` oder weniger
       * **Indirekter Diffuse-Modus** - `Final Gather`
-      * ``**Filter Size** - `2.0`, `2.0`
+      * **Filter Size** - `2.0`, `2.0`
    * Rendern Sie die Szene mit den typischen Bildgrößen, die Sie gewohnt sind. Verfeinern Sie gegebenenfalls die Licht- und/oder Rendereinstellung, um die gewünschten Ergebnisse zu erzielen.
 
       Beachten Sie, dass das Rendern mit Mental Ray und bildbasierter Beleuchtung sehr langsam und rechenintensiv ist. Adobe empfiehlt die Einrichtung der niedrigsten Qualitätseinstellungen, mit denen noch die gewünschte Renderqualität erzielt werden kann.
