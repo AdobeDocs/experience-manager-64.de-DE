@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 54%
@@ -233,14 +233,20 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
    A special value for the `cq:movedTo` property is `nirvana`: it is applied when the tag is deleted but cannot be removed from the repository because there are subtags with a `cq:movedTo` that must be kept.
 
-   >[!NOTE]Die `cq:movedTo` Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
+   >[!NOTE]
+   >
+   >Die `cq:movedTo` Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
+   >
    >1. Tag wird im Inhalt verwendet (d. h. es enthält einen Verweis) ODER
    >1. Tag enthält bereits verschobene Kinder.
 
 
 * `cq:backlinks` speichert Verweise in die andere Richtung, d. h. sie enthält eine Liste aller Tags, die verschoben oder mit Tag B zusammengeführt wurden. Dies ist hauptsächlich erforderlich, um `cq:movedTo`-Eigenschaften auf dem aktuellen Stand zu halten, wenn Tag B auch verschoben/zusammengeführt/gelöscht oder aktiviert wird. In diesem Fall müssen all seine backlinks-Tags ebenso aktiviert werden.
 
->[!NOTE]Die `cq:backlinks` Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
+>[!NOTE]
+>
+>Die `cq:backlinks` Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
+>
 >1. Tag wird im Inhalt verwendet (d. h. es enthält einen Verweis) ODER
 >1. Tag enthält bereits verschobene Kinder.
 
