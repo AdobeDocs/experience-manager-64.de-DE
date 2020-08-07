@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 85%
@@ -171,18 +171,16 @@ In Hybris gepflegte Produktdaten müssen in AEM verfügbar sein. Dafür wurde fo
 
 * Die Hybris-Erweiterung stellt ein Abruf-Importtool („Hybris-Schema“) bereit, das für das Importieren von Änderungen in AEM in bestimmten Abständen konfiguriert werden kann (z. B. alle 24 Stunden, wobei das Intervall in Sekunden angegeben wird):
 
-   * 
-
-      ```
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```
+     http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+      {
+      * "jcr:mixinTypes": ["cq:PollConfig"],
+      * "enabled": true,
+      * "source": "hybris:outdoors",
+      * "jcr:primaryType": "cq:PageContent",
+      * "interval": 86400
+      }
+   ```
 
 * Die Katalogkonfiguration in AEM erkennt Kataloge der Versionen **Gestaffelt** und **Online**.
 
@@ -664,4 +662,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-
