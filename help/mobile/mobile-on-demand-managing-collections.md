@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Inhaltsverwaltungsaktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
+Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten von Inhalten in einer Anwendung helfen. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
 
 ## Übersicht über Sammlungen {#collections-overview}
 
@@ -29,12 +32,13 @@ Sammlungen stellen einen klar definierten *Behälter* dar, der mit Inhalten wie 
 
 >[!NOTE]
 >
->In den folgenden Ressourcen der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Apps:
+>In der Online-Hilfe finden Sie die folgenden Ressourcen, um mehr über die folgenden Themen in AEM Mobile-Apps zu erfahren:
 >
 >* [Betrachtungen zum Entwurf](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [Verwalten von Sammlungen](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+
 >
 
 
@@ -54,7 +58,7 @@ Der allgemeine Arbeitsablauf zum Erstellen einer Sammlung lautet wie folgt:
 
 ## Importieren einer neuen Sammlung {#importing-a-new-collection}
 
-Vorhandene Mobile On-Demand-Inhalte können von Mobile On-Demand auf AEM heruntergeladen (importiert) werden. Dadurch können lokale Inhalte bearbeitet und angezeigt werden.
+Vorhandene Mobile On-Demand-Inhalte können von Mobile On-Demand heruntergeladen (importiert) werden, um sie zu AEM. Dadurch können lokale Inhalte bearbeitet und angezeigt werden.
 
 >[!NOTE]
 >
@@ -73,26 +77,26 @@ Der Workflow zum Importieren einer neuen Sammlung
 
 ## Bearbeiten einer Sammlung {#editing-a-collection}
 
-Verwenden Sie den integrierten AEM-Drag &amp; Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder aus DAM-Assets können eingefügt werden.
+Verwenden Sie den integrierten AEM Drag &amp; Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder aus DAM-Assets können eingefügt werden.
 
 Der Workflow zum Bearbeiten einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie in der Kachel &quot;Sammlungen **verwalten** &quot;einen von AEM bereitgestellten Artikel aus.
-1. Klicken Sie in der Listenansicht auf die hervorgehobene Sammlung, um sie im Inhaltseditor zu öffnen.
+1. Wählen Sie in der Kachel &quot;Sammlungen **verwalten** &quot;einen AEM Artikel aus.
+1. Klicken Sie in der Ansicht Liste auf die hervorgehobene Sammlung, um sie im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Sammlungsinhalte (Manuskripte, Bilder, Text usw.) zu ziehen.
 
 ### Anzeigen und Bearbeiten der Metadaten in einer Sammlung {#viewing-and-editing-the-metadata-within-a-collection}
 
-Sammlungen verfügen über zahlreiche Eigenschaften wie Titel, Beschreibungen und Bilder. Diese Aktion dient zum Anzeigen und Ändern solcher Eigenschaften. Optional können diese Änderungen beim Speichern in Mobile On-Demand hochgeladen werden.
+Sammlungen verfügen über zahlreiche Eigenschaften wie Titel, Beschreibungen und Bilder. Diese Aktion wird zur Ansicht und Änderung solcher Eigenschaften verwendet. Optional können diese Änderungen beim Speichern in Mobile On-Demand hochgeladen werden.
 
-Der allgemeine Arbeitsablauf zum Anzeigen/Bearbeiten einer Sammlung:
+Der allgemeine Arbeitsablauf zum Ansichten/Bearbeiten einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
 1. Wählen Sie eine Sammlung aus der Kachel &quot;Sammlungen **verwalten** &quot;aus.
 
 1. Wählen Sie in der Aktionsleiste &quot; **Eigenschaften** &quot;aus.
-1. Zeigen Sie alle verfügbaren Metadaten für diesen Artikel an.
+1. Ansicht aller für diesen Artikel verfügbaren Metadaten.
 1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie nach Abschluss des Vorgangs auf **Speichern** .
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
@@ -104,13 +108,13 @@ Der allgemeine Arbeitsablauf zum Hochladen einer Sammlung:
 
 1. Wählen Sie in **Mobile** Ihre Mobile On-Demand-App aus dem Katalog.
 1. Wählen Sie in der Kachel &quot;Sammlungen **** verwalten&quot;einen Artikel zum Hochladen auf Mobile On-Demand aus.
-1. Fügen Sie bei Bedarf weitere Sammlungen aus der Listenansicht hinzu.
+1. Hinzufügen Sie bei Bedarf weitere Sammlungen aus der Ansicht Liste.
 1. Wählen Sie **Hochladen** in der Aktionsleiste und klicken Sie dann im Dialogfeld auf Hochladen.
 1. Ihre Sammlung(en) werden jetzt in Mobile On-Demand hochgeladen.
 
 ## Löschen von Sammlungen {#deleting-a-collection}
 
-Durch diesen Vorgang wird die ausgewählte Sammlung aus Mobile On-Demand und optional aus der lokalen AEM-Instanz gelöscht.
+Durch diesen Vorgang wird die ausgewählte Sammlung aus Mobile On-Demand und optional aus der lokalen AEM gelöscht.
 
 Der allgemeine Arbeitsablauf zum Löschen einer Sammlung:
 
@@ -130,11 +134,11 @@ Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte. Sie sammeln I
 >
 >Inhalte müssen in Mobile On-Demand hochgeladen werden, bevor sie einer Sammlung hinzugefügt werden können.
 
-Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte:Sie sammeln Inhalte wie Artikel und Banner zu Paketen, die die Navigationsstruktur Ihrer Anwendung definieren. Sammlungen können verschachtelt werden.
+Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte: Sie sammeln Inhalte wie Artikel und Banner zu Paketen, die die Navigationsstruktur Ihrer Anwendung definieren. Sammlungen können verschachtelt werden.
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
 1. Auswählen eines zuvor hochgeladenen Artikels (oder Banners/einer Sammlung)
-1. Wählen Sie in der Aktionsleiste &quot;Hinzufügen zu&quot;.
+1. Wählen Sie in der Aktionsleiste Hinzufügen aus.
 1. Wählen Sie im Dialogfeld eine zuvor hochgeladene Sammlung aus.
 1. Klicken Sie auf **Aktualisieren** , um der Sammlung Inhalte hinzuzufügen.
 
@@ -144,7 +148,7 @@ Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte:Sie sammeln In
 
 Informationen zum Verwalten von Sammlungen finden Sie unter
 
-* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichen/Rückgängigmachen der Veröffentlichung des Inhalts](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
