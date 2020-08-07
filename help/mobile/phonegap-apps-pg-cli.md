@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 4%
 
 ---
 
@@ -21,11 +24,11 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emulator ausführen, sofern Sie Ihre Entwicklungsumgebung konfiguriert haben.
+Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emulator ausführen, sofern Sie Ihre Entwicklungs-Umgebung konfiguriert haben.
 
 Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OSx (Mac) mit Xcode oder ein Mac/Win/Linux-System mit installiertem Android SDK ausführt.
 
-## Bootstrapping Ihrer Entwicklungsumgebung {#bootstrap-your-development-environment}
+## Bootstrap Ihrer Umgebung bei der Entwicklung {#bootstrap-your-development-environment}
 
 [Setup PhoneGap CLI](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
@@ -41,9 +44,9 @@ Für Android: Für die Entwicklung für iPhones und iPads benötigen Sie die Goo
 
 ## Quelle herunterladen {#download-the-source}
 
-Laden Sie die Quelle nach dem erfolgreichen Hochladen der Entwicklungsumgebung aus der AEM App Build-Kachel herunter:
+Laden Sie die Umgebung nach dem erfolgreichen Hochladen der App-Entwicklung aus der AEM App-Build-Kachel herunter:
 
-* Klicken Sie auf das Dropdown-Feld PhoneGap Build.
+* Klicken Sie auf das PhoneGap Build Dropdown Chevron.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -69,7 +72,7 @@ PhoneGap CLI kann ein Plattformprojekt erstellen, die Quelle kompilieren und die
 >
 >Sie können alle diese Schritte separat durchführen, siehe [PhoneGap-CLI-Dokumente](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
-1. Stellen Sie sicher, dass Sie PhoneGap CLI installiert haben (siehe oben).
+1. Vergewissern Sie sich, dass Sie PhoneGap CLI installiert haben (siehe oben).
 1. Navigieren Sie in einem Konsolenfenster (oder Terminalfenster) zum Stammverzeichnis der extrahierten Quelle.
 1. Geben Sie den folgenden Befehl ein:
 
@@ -91,9 +94,10 @@ phonegap run ios
 >1. Navigieren Sie in helloWorld (cd helloWorld)
 >1. Führen Sie &quot;phonegap run android (oder ersetzen Sie android durch ios wie oben).
 >1. Emulator öffnet Ihre neu erstellte PhoneGap-App, wobei &quot;Device Ready&quot;steht, wenn die JavaScript-Brücke zu native aktiv ist.
+
 >
 >
-Dadurch wird sichergestellt, dass die PhoneGap-CLI-Entwicklungsumgebung korrekt ausgeführt wird.
+Dadurch wird sichergestellt, dass die PhoneGap-Umgebung für die CLI-Entwicklung ordnungsgemäß ausgeführt wird.
 
 ## Debuggen von Javascripts mit Safari- und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -141,7 +145,7 @@ phonegap run <platform> --emulator
 
 Sie können Haltepunkte an einer beliebigen Stelle in der Quelle festlegen. Wenn Sie mit Ihrem Emulator oder Gerät interagieren, wird die Ausführung der App an diesen Haltepunkten beendet. Sie können die Ausführung schrittweise durchführen und die Werte in Variablen überprüfen.
 
-* Klicken Sie im Fenster des Webinspektors auf Ressourcen
+* Klicken Sie im Fenster des Webinspektors auf &quot;Ressourcen&quot;
 * Navigieren Sie zur Quellstruktur und klicken Sie auf die gewünschte Quelldatei
 * Klicken Sie auf die Zeilennummer neben, um einen Haltepunkt hinzuzufügen
 * Mit Gerät oder Emulator interagieren
