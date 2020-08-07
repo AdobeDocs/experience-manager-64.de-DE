@@ -1,8 +1,8 @@
 ---
 title: Kachel „App verwalten“
 seo-title: Kachel „App verwalten“
-description: 'Auf dieser Seite erfahren Sie mehr über die App-Kachel verwalten im App-Dashboard, mit der Sie Details zur Anwendung ändern können. '
-seo-description: 'Auf dieser Seite erfahren Sie mehr über die App-Kachel verwalten im App-Dashboard, mit der Sie Details zur Anwendung ändern können. '
+description: 'Auf dieser Seite erfahren Sie mehr über die App-Kachel verwalten im App-Dashboard, mit dem Sie Details zur Anwendung ändern können. '
+seo-description: 'Auf dieser Seite erfahren Sie mehr über die App-Kachel verwalten im App-Dashboard, mit dem Sie Details zur Anwendung ändern können. '
 uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 translation-type: tm+mt
 source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 44%
 
 ---
 
@@ -29,7 +32,7 @@ In der Kachel **App verwalten** im App-Dashboard können Sie die Details der Anw
 
 You can drill into each tile in the **Manage App** tile to view or edit details by clicking the &#39;...&#39; in the bottom right corner.
 
-### Registerkarte Einfach {#the-basic-tab}
+### Registerkarte &quot;Einfach&quot; {#the-basic-tab}
 
 Auf dieser Registerkarte können Sie den **Namen**, den **Autor**, die **Kurzbeschreibung** und die **Beschreibung** Ihrer App bearbeiten.
 
@@ -48,13 +51,13 @@ Die Plattformanzeige wird durch den Inhalt der config.xml von PhoneGap gesteuert
 </widget>
 ```
 
-Für jeden Anwendungsspeicher eines Anbieters, z. B. Apple App Store oder Google Play Store, sind ein oder mehrere Screenshots Ihrer mobilen Anwendung erforderlich, um Ihre Anwendungsdetails Kunden anzeigen zu können. Diese Screenshots können strenge Anforderungen an Dimensionen und Inhalte haben (im Grunde müssen sie die Anwendung wirklich repräsentieren). AEM-Apps bieten Unterstützung für die Auswahl und Verwaltung dieser Screenshots für die unterstützten Plattformen und die Anzeige der Portdimensionen, wie sie vom Anwendungsspeicher jedes Anbieters benötigt werden.
+Für jeden Anwendungsspeicher eines Anbieters, z. B. Apple App Store oder Google Play Store, sind ein oder mehrere Screenshots Ihrer mobilen Anwendung erforderlich, um Ihre Anwendungsdetails Kunden anzeigen zu können. Diese Screenshots können strenge Anforderungen an Dimensionen und Inhalte haben (im Grunde müssen sie die Anwendung wirklich repräsentieren). AEM Apps unterstützen die Auswahl und Verwaltung dieser Screenshots für die unterstützten Plattformen und die Abmessungen der Ansicht-Ports, wie sie vom Anwendungsspeicher jedes Herstellers benötigt werden.
 
 >[!NOTE]
 >
->Die AEM Verify-App bietet die Möglichkeit, Screenshots direkt an Ihre App-Details in AEM zu senden.
+>Die AEM Überprüfungs-App bietet die Möglichkeit, Screenshots in AEM direkt an Ihre App-Details zu senden.
 >
->Weitere Informationen finden Sie unter [Mobile QuickStart für AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) .
+>Weitere Informationen finden Sie unter [Mobile QuickStart für AEM Überprüfung](/help/mobile/phonegap-mobile-quickstart.md) .
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -62,7 +65,7 @@ Für jeden Anwendungsspeicher eines Anbieters, z. B. Apple App Store oder Google
 
 >[!NOTE]
 >
->Sobald Sie mit der Kachel &quot;App **** verwalten&quot;vertraut sind, finden Sie Informationen zum Anzeigen und Bearbeiten der Metadaten unter [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md) .
+>Sobald Sie mit der Kachel &quot;App **** verwalten&quot;vertraut sind, finden Sie weitere Informationen unter [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md) zur Ansicht und Bearbeitung der Metadaten.
 
 #### Allgemeine Metadaten {#common-metadata}
 
@@ -120,7 +123,7 @@ Die Exportfunktion ist eine praktische Möglichkeit, Screenshots und Metadaten z
 
 ### Server-URL für Inhaltsaktualisierung {#content-update-server-url}
 
-Eine der wichtigsten Funktionen von AEM-Apps ist die Möglichkeit, über ContentSync neue Inhalte für eine mobile Anwendung anzufordern, wobei Inhalte HTML-Ressourcen, Seiten, Videos, Bilder, Text und mehr sein können. Sobald ein Inhaltsersteller den Inhalt aktualisiert und dann veröffentlicht hat, stellt der Server die Inhaltsaktualisierung für die mobile Anwendung zum Herunterladen bereit.
+Eine der wichtigsten Funktionen von AEM Apps ist die Möglichkeit, über ContentSync neue Inhalte für eine mobile Anwendung anzufordern, wobei Inhalte HTML-Ressourcen, Seiten, Video, Bilder, Text und mehr sein können. Sobald ein Inhaltsersteller den Inhalt aktualisiert und dann veröffentlicht hat, stellt der Server die Inhaltsaktualisierung für die mobile Anwendung zum Herunterladen bereit.
 
 Die URL-Eigenschaft des Content Update Servers ist die URL, die auf eine Instanz im Veröffentlichungsmodus verweisen muss. entweder direkt oder über den Dispatcher oder CDN. Das Format der URL ist ganz einfach:
 
@@ -154,7 +157,7 @@ Auf der Registerkarte &quot; **Authentifizierung** &quot;können Sie einen OAuth
 
 ### Die nächsten Schritte {#the-next-steps}
 
-Nachdem Sie im Anwendungs-Dashboard Informationen zur Verwaltung der App-Kachel erhalten haben, finden Sie weitere Informationen zu den folgenden Ressourcen für Authoring-Rollen:
+Nachdem Sie im Dashboard &quot;application&quot;Informationen zur Verwaltung der App-Kachel erhalten haben, finden Sie weitere Informationen zu den Authoring-Rollen in den folgenden Ressourcen:
 
 * [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
