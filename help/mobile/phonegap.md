@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 17%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Adobe Experience Manager (AEM) Mobile ist nur eine Säule, die die vollständige AEM-Plattform bildet.
+Adobe Experience Manager (AEM) Mobile ist nur eine Säule, die die gesamte AEM Plattform ausmacht.
 
-Das Starten einer neuen AEM Mobile-App erfordert einen Zusammenhalt von Rollen, bevor sie zur Inhaltsbearbeitung bereit ist. Die folgenden Rollen sind ein Ausgangspunkt für die Erstellung einer neuen AEM Mobile-Anwendung:
+Das Starten einer neuen AEM Mobile-App erfordert einen Zusammenhalt von Rollen, bevor sie für die Bearbeitung von Inhalten bereit ist. Die folgenden Rollen sind ein Ausgangspunkt für die Erstellung einer neuen AEM Mobile-Anwendung:
 
 * **Administrator**
 * **Entwickler**
