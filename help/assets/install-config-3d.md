@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 32%
 
 ---
 
 
 # Installieren und Konfigurieren von AEM 3D {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>AEM 3D in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 Die Installation und Konfiguration von AEM 3D (Version 3.0) umfasst Folgendes:
 
@@ -87,7 +91,7 @@ Siehe auch [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
    Siehe [Systemanforderungen](/help/release-notes/aem3d-release-notes.md#system-requirements).
 
-1. Zugriff auf [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Suchen Sie Version 3.0.1 des `AEM-6.4-DynamicMedia-3D` Feature Packs und laden Sie es herunter.
+1. Access [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Suchen Sie Version 3.0.1 des `AEM-6.4-DynamicMedia-3D` Feature Packs und laden Sie es herunter.
 
 1. Klicken Sie in AEM auf **[!UICONTROL Tools > Administration > Bereitstellung > Paketmanager]**.
 
@@ -190,17 +194,17 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
 
 >[!NOTE]
 >
->Der Konvertierungsdienst wird von der Adobe in Amazon AWS gehostet. Nach der ordnungsgemäßen Konfiguration des Dienstes werden die `.dn` Dateien, die in AEM hochgeladen wurden, mithilfe der temporären Datenspeicherung in Amazon S3 sicher in den Konvertierungsdienst kopiert. Das Konversionsergebnis wird über eine temporäre S3-Datenspeicherung zurück auf AEM übertragen. Alle Überweisungen und Datenspeicherung sind gesichert. Außerdem bleiben die Inhalte in S3 und der Konvertierungsdienst nur kurz (normalerweise höchstens wenige Minuten) erhalten.
+>The conversion service is hosted by Adobe in Amazon AWS. After properly configuring the service, `.dn` files uploaded to AEM are then copied securely to the conversion service by way of temporary storage in Amazon S3. Das Konversionsergebnis wird über eine temporäre S3-Datenspeicherung zurück auf AEM übertragen. All transfers and storage are secured. Außerdem bleiben die Inhalte in S3 und der Konvertierungsdienst nur kurz (normalerweise höchstens wenige Minuten) erhalten.
 
-**So konfigurieren Sie den Suoport für Adobe Dimension-Assets**:
+**To configure suoport for Adobe Dimension assets**:
 
 1. Wenden Sie sich an Ihren Adobe AEM Kundenbetreuer, Bereitstellungsexperten oder Supportmitarbeiter, um Anmeldeinformationen für **AEM3D-Dienste** anzufordern.
 
    >[!NOTE]
    >
-   >Für jedes Unternehmen ist unabhängig von der Anzahl AEM Instanzen, auf denen die Anmeldeinformationen installiert sind, nur ein Satz Anmeldeinformationen erforderlich.
+   >Only one set of credentials is required for each organization, regardless of the number of AEM instances on which the credentials are installed.
 
-1. Vergewissern Sie sich, dass Sie die folgenden Informationen erhalten haben:
+1. Verify that you have received the following information:
 
    * accountId
    * customerId
@@ -231,20 +235,20 @@ Sie müssen einen externen Konvertierungsdienst konfigurieren, um die Erfassung,
    1. Navigieren Sie zu `/libs/settings/dam/v3D/assetTypes/Dn`.
    1. Set the `Enabled` property to true.
 
-1. Validieren Sie die Konfiguration wie folgt:
+1. Validate the configuration by doing the following:
 
    1. Öffnen Sie AEM Assets.
-   1. In `logo_sphere.dn` den `test3d` Ordner hochladen. Die Datei befindet sich in `sample-3D-content/models`.
+   1. Upload `logo_sphere.dn` to the `test3d` folder. The file is located in `sample-3D-content/models`.
 
       Beachten Sie, dass `sample-3D-content.zip` zuvor zum Überprüfen der grundlegenden 3D-Funktionen heruntergeladen wurde.
-   1. Return to the **[!UICONTROL Card View]** and observe the message banner shown on the uploaded asset. Das **[!UICONTROL Konvertierungsformat...]** Banner wird angezeigt, während der Konvertierungsprozess läuft.
-   1. Nachdem die Verarbeitung abgeschlossen ist, öffnen Sie das Asset in der **[!UICONTROL Detail-Ansicht]** , um sicherzustellen, dass das konvertierte Asset korrekt angezeigt wird und die Navigationssteuerelemente des Viewers verwendet werden können.
+   1. Return to the **[!UICONTROL Card View]** and observe the message banner shown on the uploaded asset. The **[!UICONTROL Converting Format...]** banner is displayed while the conversion process is in progress.
+   1. After all processing is complete, open the asset in **[!UICONTROL Detail View]** to verify that the converted asset is displayed correctly and that the viewer&#39;s navigation controls are usable.
 
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
-   Wenn nach 10-15 Minuten ein &quot;Verarbeitungsfehler&quot;auf dem DN-Asset in der **[!UICONTROL Card-Ansicht]** angezeigt wird, ist die Konvertierung fehlgeschlagen.
+   If a &quot;Processing Error&quot; is displayed on the Dn asset in the **[!UICONTROL Card View]** after 10-15 minutes, the conversion failed.
 
-   In diesem Fall können Sie die Konvertierung wie folgt beheben:
+   If such case, you can troubleshoot the conversion by doing the following:
 
    * Löschen Sie das Asset und laden Sie es dann erneut hoch.
    * Vergewissern Sie sich, dass Sie alle Konfigurationsparameter in der **[!UICONTROL CRXDE Lite]** korrekt eingestellt haben.
