@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit 3D-Assets
+title: Arbeiten mit AEM 3D-Assets
 seo-title: Arbeiten mit 3D-Assets
 description: Erfahren Sie, wie Sie in AEM 3D mit 3D-Assets arbeiten.
 seo-description: Erfahren Sie, wie Sie in AEM 3D mit 3D-Assets arbeiten.
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 78%
+source-wordcount: '1192'
+ht-degree: 74%
 
 ---
 
 
-# Arbeiten mit 3D-Assets {#working-with-d-assets}
+# Working with AEM 3D assets {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 3D in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 Mit AEM 3D (Adobe Experience Manager 3D) können Sie 3D-Inhalte hochladen, verwalten, anzeigen und rendern. Die Unterstützung für das Anzeigen und Rendern ist für einzelne Objekte optimiert.
 
@@ -53,11 +57,11 @@ Die primäre 3D-Modelldatei enthält die eigentliche 3D-Modellgeometrie und Defi
 
 * Wavefront-OBJ-Dateiformat (`.obj`)
 
-   Das OBJ-Format erfordert eine oder mehrere separate, externe MTL-Dateien (Materialvorlagenbibliothek) (`.mtl`).
+   The OBJ format requires one or more separate, external MTL files (Material Template Library) (`.mtl`).
 
 * Dateiformat Autodesk FBX (Filmbox) (`.fbx`)
 
-   das Format für den Austausch von 3D-Dateien von Autodesk; sowohl binäre als auch ASCII-Formate.
+   The Autodesk 3D file interchange format; both binary and ASCII formats.
 
    Für die Erstellung von FBX-Dateien in Drittanbieteranwendungen empfiehlt Adobe die folgenden Konfigurationseinstellungen (siehe Tabelle unten). Mit diesen Einstellungen können Sie die besten Ergebnisse für 3D-Dateien erzielen, die Sie in AEM nutzen möchten. The option names are taken from the **[!UICONTROL Autodesk Maya FBX Export Options]** dialog box.
 
@@ -68,7 +72,7 @@ Die primäre 3D-Modelldatei enthält die eigentliche 3D-Modellgeometrie und Defi
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
-   <td>Verweise beibehalten<br /> </td> 
+   <td>Preserve References<br /> </td> 
    <td><p>Auswahl aufheben.</p> <p>Für AEM 3D werden derzeit keine externen Verweise unterstützt.</p> </td> 
   </tr> 
   <tr> 
@@ -81,11 +85,11 @@ Die primäre 3D-Modelldatei enthält die eigentliche 3D-Modellgeometrie und Defi
   </tr> 
   <tr> 
    <td>Animation</td> 
-   <td><p>Auswählen oder Aufheben der Auswahl.</p> <p>Wenn Sie diese Option aktivieren, werden die Animationsinformationen in der Datei von AEM 3D ignoriert.</p> </td> 
+   <td><p>Select or deselect.</p> <p>Wenn Sie diese Option aktivieren, werden die Animationsinformationen in der Datei von AEM 3D ignoriert.</p> </td> 
   </tr> 
   <tr> 
-   <td>Kameras</td> 
-   <td><p>Wählen Sie für <strong>3D-Stufen</strong>.</p> <p>Deaktivieren Sie die Option für 3D-Modelle.</p> </td> 
+   <td>Cameras</td> 
+   <td><p>Select for <strong>3D stages</strong>.</p> <p>Deselect for 3D models.</p> </td> 
   </tr> 
   <tr> 
    <td>Lichter</td> 
@@ -147,7 +151,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit IBL-Bühnen](working-with-i
 >[!NOTE]
 >
 >Dateiverweise (mit Ausnahme der oben beschriebenen), die in der primären 3D-Modelldatei enthalten sind, werden derzeit ignoriert. AEM 3D unterstützt keine Verweise auf sekundäre 3D-Modelldateien.
-Y-up ist das bevorzugte Koordinatensystem für FBX-Dateien in dieser Version.
+Y-up is the preferred coordinate system for FBX files this release.
 
 ## Materialschattierungen in einer primären 3D-Modelldatei {#material-shading-in-a-primary-d-model-file}
 
