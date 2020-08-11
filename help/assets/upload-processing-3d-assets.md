@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 79%
+source-wordcount: '868'
+ht-degree: 75%
 
 ---
 
 
 # Informationen zum Hochladen und Verarbeiten von 3D-Assets in AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
+
+>[!IMPORTANT]
+>
+>AEM 3D in AEM 6.4 is no longer supported. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
 
 Verwenden Sie Standardverfahren zum Hochladen oder Synchronisieren, um 3D-Assets und ihre zugehörigen referenzierten Dateien in AEM Assets zu übertragen.
 
@@ -64,14 +68,14 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Verarbeitungsstufe</strong><br /> </td> 
-   <td><strong>Verarbeitungsnamen</strong></td> 
+   <td><strong>Processing stage</strong><br /> </td> 
+   <td><strong>Processing names</strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
    <td>1</td> 
    <td>Verarbeitung</td> 
-   <td>Grundlegende anfängliche Verarbeitung und Metadaten-Extraktion.</td> 
+   <td>Basic initial processing and metadata extraction.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -100,8 +104,8 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>7<br /> </td> 
-   <td>Warten auf Verarbeitung</td> 
-   <td>Wird angezeigt, wenn andere 3D-Assets Verarbeitungspriorität haben. Das sind beispielsweise Assets, die früher geladen wurden, deren Verarbeitung jedoch noch nicht abgeschlossen wurde.</td> 
+   <td>Waiting for processing</td> 
+   <td>Shown when other 3D assets have processing priority. Das sind beispielsweise Assets, die früher geladen wurden, deren Verarbeitung jedoch noch nicht abgeschlossen wurde.</td> 
   </tr> 
  </tbody> 
 </table>
