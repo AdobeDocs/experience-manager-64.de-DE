@@ -10,23 +10,27 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 46%
+source-wordcount: '1983'
+ht-degree: 44%
 
 ---
 
 
 # AEM 3D – Versionshinweise {#aem-d-release-notes}
 
+>[!IMPORTANT]
+>
+>Das AEM 3D Feature Pack in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
 AEM-6.4-DynamicMedia-3D Version 3.1.0 (10. Oktober 2018)
 
-Das AEM 3D Feature Pack ermöglicht die Unterstützung von 3D-Inhalten in AEM Assets. Es bietet Funktionen zum Hochladen, Verwalten und Wiedergeben sowie zur Vorschau von 3D-Assets. Die Unterstützung für Anzeige und Wiedergabe ist für einzelne Objekte optimiert (und nicht für komplexe Szenen mit mehreren Objekten).
+The AEM 3D feature pack enables support for 3D content in AEM Assets. Es bietet Funktionen zum Hochladen, Verwalten und Wiedergeben sowie zur Vorschau von 3D-Assets. Die Unterstützung für Anzeige und Wiedergabe ist für einzelne Objekte optimiert (und nicht für komplexe Szenen mit mehreren Objekten).
 
 AEM 3D unterstützt die Asset-Typen Adobe Dimension (Dn) und glTF. Die Implementierung für diese Asset-Typen unterscheidet sich wesentlich von der für herkömmliche 3D-Typen, die in dieser Dokumentation beschrieben werden. Siehe [Arbeiten mit Adobe Dimension-Assets](/help/assets/working-dimension-assets.md).
 
-Dazu gehören auch serverseitige Integrationen mit Autodesk® Maya® (nur Windows). Wenn Sie Maya auf demselben Server installieren und konfigurieren wie AEM, aktivieren Sie die Unterstützung für native Maya-Dateiformate, darunter die hochwertige Wiedergabe mit dem NVIDIA® Mental Ray Standalone Plug-in für Maya. Die Installation und Konfiguration von 3ds Max auf dem Server ermöglicht die Unterstützung des nativen .max-Dateiformats.
+Dazu gehören auch serverseitige Integrationen mit Autodesk® Maya® (nur Windows). Wenn Sie Maya auf demselben Server installieren und konfigurieren wie AEM, aktivieren Sie die Unterstützung für native Maya-Dateiformate, darunter die hochwertige Wiedergabe mit dem NVIDIA® Mental Ray Standalone Plug-in für Maya. Installing and configuring 3ds Max on the server enables support for the native .max file format.
 
 Weitere Informationen finden Sie unter [Integration in Autodesk Maya](/help/assets/integrate-maya-with-3d.md).
 
@@ -38,16 +42,16 @@ Siehe auch [Arbeiten mit 3D-Assets](/help/assets/assets-3d.md).
 
 **Voraussetzungen**
 
-* AEM 6.4.2 (AEM 6.4 mit Service Pack 2)
+* AEM 6.4.2 (AEM 6.4 with Service Pack 2)
 * Autodesk® FBX® SDK 2016.1.2
 
 **Unterstützte Betriebssysteme**
 
-* Microsoft Windows 2012 Server oder höher
+* Microsoft Windows 2012 Server or later
 * Apple OS X El Capitan 10.6 oder höher
 * RedHat Enterprise Linux 7.3
 
-**Unterstützte Webbrowser für AEM Assets**
+**Supported web browsers for AEM Assets**
 
 * Google Chrome 53 oder höher (empfohlen)
 * Apple Safari 9.1 oder höher
@@ -62,7 +66,7 @@ Andere Browser unterstützen möglicherweise keine interaktive Anzeige von 3D-In
 * Speicher – Empfohlen werden mindestens 32 GB.
 * Massenspeicherung – Empfohlen wird ein SSD-Speicher mit hoher Bandbreite.
 
-   Beim Hochladen werden 3D-Assets in ein proprietäres Format umgewandelt, um eine schnelle, interaktive Anzeige zu ermöglichen. Je nach Art des 3D-Assets ist eine Speicherkapazität erforderlich, die 2- bis 3-mal so groß ist wie das hochgeladene 3D-Asset.
+   On upload, 3D assets are converted to a proprietary format for fast, interactive viewing. Je nach Art des 3D-Assets ist eine Speicherkapazität erforderlich, die 2- bis 3-mal so groß ist wie das hochgeladene 3D-Asset.
 
 Siehe auch [Arbeiten mit 3D-Assets](/help/assets/assets-3d.md).
 
@@ -70,7 +74,7 @@ Siehe auch [Arbeiten mit 3D-Assets](/help/assets/assets-3d.md).
 
 Siehe [Installieren und Konfigurieren von AEM 3D](/help/assets/install-config-3d.md).
 
-Siehe auch [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md) und [Integration von AEM 3D mit Autodesk 3ds Max](/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md).
+See also [Integrating AEM 3D with Autodesk Maya](/help/assets/integrate-maya-with-3d.md) and [Integrating AEM 3D with Autodesk 3ds Max](/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md).
 
 ## Unterstützte 3D-Dateiformate {#supported-d-file-formats}
 
@@ -78,12 +82,12 @@ Siehe auch [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-may
 |--- |--- |--- |--- |
 | DN | Adobe Dimension | Alle | Erfordert Zugriff auf einen Cloud-basierten Konvertierungsdienst. |
 | GLTZ | Zip gITF | Alle |  |
-| GLB | BinärgITF | Alle | Nur Download (GLB-Darstellungen werden für DN-Elemente erstellt). |
+| GLB | Binary gITF | Alle | Nur Download (GLB-Darstellungen werden für DN-Elemente erstellt). |
 | OBJ | Wavefront OBJ 3D | Alle |  |
 | FBX | Autodesk FBX (Kaydara Filmbox) | Alle | Das Autodesk FBX SDK muss auf dem Autorknoten installiert sein. |
 | MA, MB | Native Autodesk Maya-Dateien | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
-| JT | Open CAD-Dateien von Siemens PLM | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
-| * | Es können zusätzliche, von Autodesk Maya unterstützte 3D-Eingabeformate aktiviert werden. See [Enabling Additional Formats Supported by Maya](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya). | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
+| JT | Open CAD-Dateien von Siemens PLM | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. See [Integrating AEM 3D with Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
+| * | Es können zusätzliche, von Autodesk Maya unterstützte 3D-Eingabeformate aktiviert werden. See [Enabling Additional Formats Supported by Maya](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya). | Nur Windows | Autodesk Maya is required on the Author node to enable these file formats. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
 | MAX | Native Autodesk 3ds Max | Nur Windows | Autodesk 3ds Max ist auf dem Autorenknoten erforderlich, um dieses Dateiformat zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk 3ds Max](/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md). |
 
 ## Verbesserungen und neue Funktionen {#enhancements-and-new-features}
@@ -107,14 +111,14 @@ Version 3.1
 * Diese Version von AEM3D bietet eingeschränkte Unterstützung für .dn-Dateien, die mit Adobe Dimension erstellt wurden.
 * Während der Upload-Verarbeitung AEM einen Cloud-basierten Konvertierungsdienst, der von der Adobe gehostet wird, nutzen, um eine glTF-Darstellung aus der nativen .dn-Datei zu erstellen. Der Zugriff auf den Konvertierungsdienst und die Auswahl der Amazon AWS-Endpunkte sind erforderlich.
 * Es wird ein neuer glTF-Viewer bereitgestellt, der die Anzeige von Dn-Assets in AEM Assets und in Sites/Bildschirmen unterstützt. Die Unterstützung für Phasen im Viewer ist noch nicht verfügbar.
-* Dn-Modelle können IBL-Lichter und -Hintergründe einbetten, die angezeigt werden, sofern vorhanden. Alternativ dazu wendet der Viewer eine Standardbeleuchtung oder eine standardmäßige Hintergrundfarbe oder beides an.
+* Dn-Modelle können IBL-Lichter und -Hintergründe einbetten, die angezeigt werden, sofern vorhanden. Alternatively, the viewer applies default lighting, or a default background color, or both.
 * Das hochwertige Rendering für DN-Assets ist noch nicht verfügbar.
-* Abhängigkeiten wie Texturmaps werden in DN-Assets eingebettet und können nicht explizit in AEM verwaltet werden.
+* Dependencies such as texture maps are embedded in Dn assets and cannot be managed explicitly in AEM.
 
 ### Kompatibilität {#compatibility}
 
 * **Das Ausführen als Windows-Dienst wird nicht unterstützt (nur Windows)** – Ggf. funktioniert dies, es wurde jedoch nicht getestet.
-* **Dynamic Media** ( `dynamicmedia-scene7` Modus) - Die Kompatibilität von AEM3D mit der neuen Dynamic Media-Lösung, die mit AEM 6.4 veröffentlicht wurde, wurde noch nicht vollständig überprüft. Wenn Dynamic Media und AEM3D zusammen bereitgestellt werden, sollten Sie 3D-Elemente und deren Abhängigkeiten nur in einem Bereich des AEM Assets-Repositorys platzieren, der nicht Dynamic Media zugewiesen ist. Diese Empfehlung ist besonders wichtig für 32-Bit-TIFF-Dateien, die für 3D-Phasen erforderlich sind, aber von Dynamic Media nicht unterstützt werden.
+* **Dynamic Media** ( `dynamicmedia-scene7` mode) - Compatibility of AEM3D with the new Dynamic Media solution released with AEM 6.4 is not yet fully verified. Wenn dynamische Medien und AEM3D zusammen bereitgestellt werden, sollten Sie 3D-Elemente und deren Abhängigkeiten nur in einem Bereich des AEM Assets-Repositorys platzieren, der nicht dynamischen Medien zugewiesen ist. Diese Empfehlung ist besonders wichtig für 32-Bit-TIFF-Dateien, die für 3D-Phasen erforderlich sind, aber nicht von dynamischen Medien unterstützt werden.
 
 ### Allgemein {#general}
 
@@ -132,7 +136,7 @@ Version 3.1
 
 * **Targa-Bilddateien (.tga)** – Ältere 3D-Modelldateien enthalten möglicherweise Verweise auf TGA-Dateien. Dieses Format wird nicht von AEM unterstützt. Adobe empfiehlt, dass Sie diese Dateien in ein anderes Format konvertieren, bevor Sie die 3D-Elemente in AEM hochladen.
 * **HDR-Bilder** – HDR-Bilder werden für Bühnen mit Image-based Lighting (IBL) verwendet. Derzeit werden nur 32-Bit-TIFF-Bilder zu diesem Zweck unterstützt.
-* **32-Bit-TIFF-Bilder** – 32-Bit-TIFF-Bilder werden für Bühnen mit Image-based Lighting (IBL) verwendet. AEM unterstützt nicht die Erstellung von Darstellungen für diese Assets, was zu leeren Miniaturbildern führt. Eine Vorschau ist nicht möglich. Das Asset funktioniert dennoch ordnungsgemäß, wenn es mit einer IBL-Bühne verwendet wird.
+* **32-Bit-TIFF-Bilder** – 32-Bit-TIFF-Bilder werden für Bühnen mit Image-based Lighting (IBL) verwendet. AEM does not support the creation of renditions for these assets, resulting in blank thumbnails, and preview is not possible. Das Asset funktioniert dennoch ordnungsgemäß, wenn es mit einer IBL-Bühne verwendet wird.
 * **Autodesk 3ds Max (.max)-Dateien** - Wenn Autodesk 3ds Max auf den Autorknoten installiert und konfiguriert ist, unterstützt AEM die Erfassung und Konvertierung von .max-Dateien. Die Verwendung von .max-Dateien als Phasen wird derzeit nicht unterstützt.
 
 ### Automatische Auflösung der Abhängigkeiten {#automatic-dependency-resolution}
@@ -150,7 +154,7 @@ Version 3.1
 
 * **Hintergrund von IBL-Stadien** – Bei manchen IBL-Szenen ist das Hintergrundbild ggf. von schlechter Qualität, also zum Beispiel zu hell oder zu verschwommen. Um die visuelle Qualität des Bildhintergrunds von IBL-Bühnen zu maximieren, empfiehlt Adobe, dass Sie ein separates 8-Bit-JPEG-Bild vorbereiten und der IBL-Bühne als **Bild mit dem Hintergrund der Umgebung hinzufügen**.
 
-* **Schwarzes Bild beim Rendern mit Maya mithilfe einer IBL-Bühne** – Dieses Problem wird wahrscheinlich durch Maya verursacht, das die IBL-Bildabhängigkeit nicht findet, da das durch die Bühne referenzierte IBL-Originalbild durch ein Bild mit einem anderen Namen ersetzt wurde. Um dieses Problem zu vermeiden, stellen Sie sicher, dass mindestens eine der drei Abhängigkeiten, auf die im Maya IBL-Stadium verwiesen wird, denselben Namen wie die ursprüngliche IBL-Dateireferenz in der Maya-Datei hat.
+* **Schwarzes Bild beim Rendern mit Maya mithilfe einer IBL-Bühne** – Dieses Problem wird wahrscheinlich durch Maya verursacht, das die IBL-Bildabhängigkeit nicht findet, da das durch die Bühne referenzierte IBL-Originalbild durch ein Bild mit einem anderen Namen ersetzt wurde. To avoid this issue, make sure that at least one of the three dependencies referenced by the Maya IBL stage has the same name as the original IBL file reference in the Maya file.
 * **Reservierter Hintergrund für IBL-Bühne** – Die Bilder zu IBL-Bühnen werden absichtlich horizontal gespiegelt, um dem Verhalten des NVIDIA Mental Ray Renderers zu entsprechen, der mit Autodesk Maya bereitgestellt wird. Problemumgehung: Spiegeln Sie die für IBL-Bühnen in Photoshop verwendeten Bilder, bevor Sie sie hochladen.
 * **Helligkeit von IBL-Bühnen** – Die automatische Analyse des IBL-Bildes kann zu einer Szene führen, die zu dunkel oder zu hell ist. To adjust the lighting brightness of IBL stages, navigate to **Basic Properties** and adjust the **bright** value of **Environment Lighting** as needed.
 
@@ -159,10 +163,10 @@ Version 3.1
 * **Eine 3D-Komponente pro Seite** - Derzeit ist auf jeder Webseite nur eine Instanz der 3D-Komponente zulässig. Wenn mehr als eine 3D-Komponente zur gleichen Seite hinzugefügt wird, funktioniert keine der 3D-Komponenten korrekt.
 * **3D-Ansicht fehlt bei der Vorschau in Sites** - Wenn Sie die **Vorschau** in Sites verwenden, muss die Seite im Browser neu geladen werden, damit der 3D-Viewer vollständig initialisiert werden kann. Dies ist kein Problem, wenn Sie die Webseite direkt (d. h., wenn sie aus dem Pfad entfernt `edit.html` wird) auf den Knoten &quot;Autor&quot;oder &quot;Veröffentlichen&quot;Ansicht haben.
 
-* **Vollbildmodus auf iOS-Geräten** nicht verfügbar - Die Vollbildschaltfläche ist auf iOS-Geräten unabhängig vom verwendeten Browser nicht verfügbar.
+* **Full-screen mode not available on iOS devices** - The full-screen button is not available on iOS devices, regardless of the browser used.
 
 ### Veröffentlichen von 3D-Inhalten {#publishing-d-content}
 
-* **Konfiguration** der 3D-Komponenten: Sie müssen das 3D-Feature Pack auf allen aktiven Veröffentlichungsknoten installieren und jeder Knoten muss mit **CRXDE Lite** zu den gleichen Konfigurationsoptionen am `/libs/settings/dam/v3D/WebGLSites`.
+* **3D Component configuration** - You must install the 3D Feature Pack on all active Publish nodes and each node must be configured with **CRXDE Lite** to the same configuration options at `/libs/settings/dam/v3D/WebGLSites`.
 
-* **Fehlende Texturen, Hintergrund oder Beleuchtung nach der Veröffentlichung** - Der **Veröffentlichungsmechanismus** in AEM Sites veröffentlicht automatisch die primären Abhängigkeiten der Seite, einschließlich des 3D-Modells und der 3D-Phase, auf die die 3D-Komponente verweist. 3D-Bühnen und 3D-Modelle sind üblicherweise auf sekundäre Assets für IBL-Bilder und Texturzuodnungen angewiesen, die der Veröffentlichungsmechanismus von Sites nicht automatisch veröffentlicht. Problemumgehung: alle 3D-Assets aus Assets veröffentlichen, bevor die Webseite von Sites veröffentlicht wird. Dadurch wird sichergestellt, dass alle Abhängigkeiten für 3D-Assets auf den Veröffentlichungsknoten verfügbar sind.
+* **Fehlende Texturen, Hintergrund oder Beleuchtung nach der Veröffentlichung** - Der Mechanismus &quot; **Veröffentlichen** &quot;in AEM Sites veröffentlicht automatisch die primären Abhängigkeiten der Seite, einschließlich des 3D-Modells und der 3D-Phase, auf die die 3D-Komponente verweist. 3D-Bühnen und 3D-Modelle sind üblicherweise auf sekundäre Assets für IBL-Bilder und Texturzuodnungen angewiesen, die der Veröffentlichungsmechanismus von Sites nicht automatisch veröffentlicht. Problemumgehung: alle 3D-Assets aus Assets veröffentlichen, bevor die Webseite von Sites veröffentlicht wird. Doing so ensures that all dependencies for 3D assets are available on the Publish nodes.
