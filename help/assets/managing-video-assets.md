@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 54%
@@ -42,7 +42,7 @@ Standardmäßig ist es im AEM Assets nicht möglich, Assets hochzuladen, die auf
 
 Zusätzlich zur AEM Assets-Konfiguration ändern Sie die folgenden Konfigurationen, um große Assets hochzuladen:
 
-* Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in Web Console unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
+* Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in Web Console unter `https://[aem_server]:[port]/system/console/configMgr`. For more information, see [CSRF protection](/help/sites-developing/csrf-protection.md).
 * Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
@@ -91,7 +91,7 @@ Nach dem Veröffentlichen Ihrer Video-Assets können diese über eine URL auf ei
 
    To exit the annotation wizard, tap **[!UICONTROL Close]**.
 
-1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. Um beispielsweise die ersten Sekunden des Videos zu überspringen, geben Sie `20`10 in das Textfeld ein.
+1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. Um beispielsweise die ersten Sekunden des Videos zu überspringen, geben Sie `20`20 in das Textfeld ein.
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
