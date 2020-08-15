@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 70%
 
 ---
@@ -98,20 +98,20 @@ Nach dem Hinzufügen der cq:tags-Indexregel
 
 * **cq:tags-Index-Regel**
 
-       ```
-       /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-     @name=jcr:content/cq:tags
-     @propertyIndex=true
-       ```
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **Query Builder-Abfrage**
 
-       ```
-       type=cq:Page
-     property=jcr:content/cq:tags
-     property.value=myTagNamespace:myTag
-       ```
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **Abfrageplan**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,7 +146,7 @@ Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Siche
 
 #### Nach der Bereitstellung {#post-deployment-2}
 
-* Überwachen Sie die Protokolle auf Abfragen, die einen großen Node-Traversal- oder großen Heap-Speicherverbrauch auslösen: &quot;
+* Überwachen Sie die Protokolle auf Abfragen, die eine hohe Anzahl durchlaufener Knoten oder einen hohen Heap-Speicherverbrauch auslösen:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimieren Sie die Abfrage, um die Anzahl durchlaufener Knoten zu reduzieren.
