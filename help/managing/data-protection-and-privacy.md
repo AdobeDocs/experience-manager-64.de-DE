@@ -1,8 +1,8 @@
 ---
 title: Datenschutzbestimmungen und Datenschutzbestimmungen - Adobe Experience Manager-Bereitschaft
 seo-title: Adobe Experience Manager Readiness for Data Protection and Data Privacy Regulations; z. B. GDPR, CCPA usw.
-description: 'Erfahren Sie mehr über die Unterstützung der Adobe Experience Manager für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Datenschutzgesetzes für Verbraucher und der Frage, wie bei der Umsetzung eines neuen AEM-Projekts zu verfahren ist. '
-seo-description: 'Erfahren Sie mehr über die Unterstützung der Adobe Experience Manager für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Datenschutzgesetzes für Verbraucher und der Frage, wie bei der Umsetzung eines neuen AEM-Projekts zu verfahren ist. '
+description: 'Learn about Adobe Experience Manager support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM project. '
+seo-description: 'Learn about Adobe Experience Manager support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM project. '
 uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 content-type: reference
@@ -54,11 +54,11 @@ Die Vorschriften für den Datenschutz und den Datenschutz enthalten in Kürze ne
 
 Die wichtigsten Bestimmungen dieser Verordnungen sind:
 
-1. erweiterte Definition der personenbezogenen Daten, um alle eindeutigen IDs einzuschließen; wie in direkt oder indirekt identifizierbaren Daten.
+1. Expanded definition of personal data to include all unique IDs; as in directly and indirectly identifiable data.
 
 2. Verbesserte Anforderungen an die Zustimmung.
 
-3. Verbesserter Fokus auf Löschrechte (Datenlöschung).
+3. Increased focus on deletion rights (Data Erasure).
 
 4. Ausschluss des Verkaufs von Daten.
 
@@ -68,7 +68,7 @@ Adobe Experience Manager:
 
    * Dies bedeutet, dass der Kunde die regulatorischen Aufgaben, einschließlich Geschäftseinheiten und Dienstleister, Datencontroller und Datenprozessor, unter anderem verwaltet.
 
-   * Der Datenschutzdienst für Adobe Experience Platform ist nicht Teil des Arbeitsablaufs für AEM, wie in der Abbildung unten dargestellt.
+   * Das Adobe Experience Platform Privacy Service ist nicht Teil des Arbeitsablaufs für AEM, wie in der Abbildung unten dargestellt.
 
 * AEM umfasst Unterlagen und Verfahren, die dem Datenschutzadministrator und/oder AEM Administrator des Kunden zur Durchführung der Datenschutzverordnung zur Verfügung stehen; entweder manuell oder über APIs, falls verfügbar.
 
@@ -82,13 +82,13 @@ Adobe Experience Manager:
 
 Adobe bietet Verfahren zur Bearbeitung von Datenschutzanfragen in Zusammenhang mit Zugriff, Löschen und Abwählen für Adobe Experience Manager. In einigen Fällen stehen APIs zur Verfügung, die von einem vom Kunden entwickelten Portal oder Skripten aufgerufen werden können, um die Automatisierung zu unterstützen.
 
-Das folgende Diagramm zeigt, wie ein Arbeitsablauf für Datenschutzanfragen aussehen könnte (illustriert mit Adobe Experience Manager 6.5):
+The following diagram illustrates what a privacy request workflow might look like (illustrated using Adobe Experience Manager 6.5):
 
-![Datenschutz und Datenschutz](assets/data-protection-and-privacy-01.png)
+![Data Protection and Privacy](assets/data-protection-and-privacy-01.png)
 
 ## Adobe Experience Manager und Regulierungsbereitschaft {#aem-and-regulatory-readiness}
 
-Die Dokumentation zu den Produktbereichen der AEM finden Sie in den folgenden Abschnitten.
+Please see the sections below for regulatory documentation for product areas of AEM.
 
 ## AEM Foundation {#aem-foundation}
 
@@ -100,22 +100,22 @@ Siehe [Aggregierte Sammlung von Nutzungsstatistiken](/help/sites-deploying/opt-i
 
 ## AEM Sites {#aem-sites}
 
-Siehe [AEM Sites - Datenschutz und Datenschutzbereitschaft.](/help/sites-administering/gdpr-compliance-sites.md)
+See [AEM Sites - Data Protection and Privacy Readiness.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-Siehe [AEM Commerce - Datenschutz und Datenschutzbereitschaft](/help/sites-administering/gdpr-compliance-commerce.md).
+See [AEM Commerce - Data Protection and Privacy Readiness](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 
-Siehe [AEM Mobile - Datenschutz und Datenschutzbereitschaft](/help/mobile/aem-mobile-gdpr-compliance.md).
+See [AEM Mobile - Data Protection and Privacy Readiness](/help/mobile/aem-mobile-gdpr-compliance.md).
 
 ## AEM-Integration mit Adobe Target und Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Diese Adobe Experience Manager-Integrationen sind mit datenschutz- und datenschutzfähigen Diensten (z. B. GDPR oder CCPA) ausgestattet. Im Zusammenhang mit den Integrationen werden keine personenbezogenen Daten von Adobe Target oder Adobe Analytics AEM gespeichert.
+These Adobe Experience Manager integrations are with data protection and privacy (for example, GDPR or CCPA) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
 Weitere Informationen finden Sie unter:
 
-* [Adobe Target - Datenschutzübersicht](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - Privacy Overview](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
 
 * [Adobe Analytics Data Privacy Workflow](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
 
@@ -127,7 +127,7 @@ Darüber hinaus gewährleistet AEM Communities mit der Konsole für die Massenmo
 
 ## AEM Forms {#aem-forms}
 
-AEM Forms beinhaltet Komponenten und Workflows, die zur Orchestrierung von Geschäftsprozessen und zum Abschließen von digitalen Transaktionen Daten erfassen, verarbeiten und speichern. Die einzelnen Komponenten verwenden unterschiedliche Datenspeicher und ermöglichen darüber hinaus die Integration mit benutzerdefinierten Datenspeichern. In der folgenden Dokumentation werden Verfahren und Richtlinien für den Zugriff auf und die Verarbeitung von Benutzerdaten zur Unterstützung des Datenschutzes und der Privatsphäre (z. B. GDPR oder CCPA) Workflows einer Komponente erläutert.
+AEM Forms beinhaltet Komponenten und Workflows, die zur Orchestrierung von Geschäftsprozessen und zum Abschließen von digitalen Transaktionen Daten erfassen, verarbeiten und speichern. Die einzelnen Komponenten verwenden unterschiedliche Datenspeicher und ermöglichen darüber hinaus die Integration mit benutzerdefinierten Datenspeichern. The following documentation explains procedures and guidelines for accessing and handling user data to support data protection and privacy (for example, GDPR or CCPA) workflows for a component.
 
 * [Formularportal](/help/forms/using/forms-portal-handling-user-data.md)
 * [Korrespondenzverwaltung](/help/forms/using/correspondence-management-handling-user-data.md)
