@@ -7,10 +7,10 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -95,7 +95,7 @@ AEM 6.4 Communities stellt auf den bestehenden Community-Sites in der Community-
 
 ## Managing UGC and user profiles {#managing-ugc-and-user-profiles}
 
-AEM Communities hält den Schutz von Benutzerdaten im Mittelpunkt der Community-Erfahrung und stellt [APIs standardmäßig](user-ugc-management-service.md) und [Beispielservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)zur Verfügung. Diese APIs helfen bei der Massenverwaltung (Massenlöschung und Massenexport) benutzergenerierter Profil und beim Löschen von Benutzerinhalten und sind bei der Bearbeitung von EU-Anforderungen zur Einhaltung der PDF-Richtlinien von entscheidender Bedeutung.
+AEM Communities hält den Schutz von Benutzerdaten im Mittelpunkt der Community-Erfahrung und stellt [APIs standardmäßig](user-ugc-management-service.md) und [Beispielservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)zur Verfügung. Diese APIs helfen bei der Massenverwaltung (Massenlöschung und Massenexport) benutzergenerierter Profil und beim Löschen von Benutzerinhalten und sind bei der Bearbeitung von EU-Anforderungen zur Einhaltung der PDF-Richtlinien von entscheidender Bedeutung.
 
 ## Änderungen {#what-s-changed}
 
