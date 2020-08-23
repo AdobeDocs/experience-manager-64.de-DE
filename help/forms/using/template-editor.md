@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 86%
+source-wordcount: '1983'
+ht-degree: 89%
 
 ---
 
@@ -109,11 +109,11 @@ Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container d
 
 Autoren können sie als Grundlage verwenden, um ein Formular zu erstellen. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage festgelegt. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png)**[!UICONTROL > Initial Content ]**.
 
-    [ ![Ebene &quot;Anfänglicher Inhalt&quot;im Vorlageneditor](assets/initial-content-layer.png)
+![Ebene „Anfänglicher Inhalt“ im Vorlageneditor](assets/initial-content-layer.png)
 
 In der Ebene „Anfänglicher Inhalt“ im Vorlageneditor ist der Container des adaptiven Formulars zum Festlegen von Eigenschaften ausgewählt.
 
-](assets/initial-content-layer-1.png) In der Ebene &quot;Anfänglicher Inhalt&quot;erstellen Sie die Vorlage für ein adaptives Formular, die Ihre Autoren als Grundlage verwenden. Beim Erstellen einer Vorlage verwenden Sie, ähnlich wie beim Erstellen eines Formulars, Optionen aus der Seitenleiste. Die Seitenleiste enthält die Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
+In der Ebene „Anfänglicher Inhalt“ erstellen Sie die Vorlage für ein adaptives Formular, das Ihre Autoren als Grundlage verwenden. Beim Erstellen einer Vorlage verwenden Sie, ähnlich wie beim Erstellen eines Formulars, Optionen aus der Seitenleiste. Die Seitenleiste enthält die Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
 
 Weitere Informationen finden Sie unter [Randleiste](/help/forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -141,11 +141,11 @@ Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informati
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
-    [ ![Adding fields in the adaptive form template](assets/template-edit-initial-content.png)
+![Hinzufügen von Feldern in Vorlagen für adaptive Formulare](assets/template-edit-initial-content.png)
 
 Hinzufügen von Feldern in der Vorlage
 
-](assets/template-edit-initial-content-1.png) Nachdem Sie Bereiche hinzugefügt und als Registerkarten strukturiert haben, können Sie Felder innerhalb der Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, sehen Sie die Option **[!UICONTROL Komponenten hierher ziehen]**. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag&amp;Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in der Seitenleiste ziehen.
+Nachdem Sie Bedienfelder hinzugefügt und sie als Registerkarten strukturiert haben, können Sie Felder innerhalb der Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, sehen Sie die Option **[!UICONTROL Komponenten hierher ziehen]**. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag&amp;Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in der Seitenleiste ziehen.
 
 Jede Komponente verfügt über Eigenschaften, die die Datenerfassung und -bearbeitung verbessern. Beispielsweise können Sie die Eigenschaft **[!UICONTROL Erforderliches Feld]** einer Komponente aktivieren. Die Autoren können die Meldung festlegen, die Ihre Kunden sehen, wenn sie das Ausfüllen eines erforderlichen Felds überspringen. Specify the message in **[!UICONTROL Required Field Message]** property.
 
