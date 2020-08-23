@@ -3,10 +3,10 @@ title: 'Konfigurieren der Rich-Text-Editor-Plug-ins    '
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4220'
-ht-degree: 93%
+source-wordcount: '4206'
+ht-degree: 94%
 
 ---
 
@@ -303,11 +303,10 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 >[!NOTE]
 Wenn Sie den RTE in einem Dialogfeld verwenden (klassische Benutzeroberfläche), können Sie Stylesheets festlegen, die optimal auf die Rich-Text-Bearbeitung abgestimmt sind. Aufgrund technischer Einschränkungen geht der CSS-Kontext im Editor verloren, daher sollten Sie diesen Kontext zur Verbesserung des WYSIWYG-Verhaltens emulieren.
 Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte`, die verwendet werden kann, um verschiedene Stile für die Anzeige und Bearbeitung bereitzustellen:
-# CQ td {
-// definiert den Stil für die Anzeige }
-# CQrte td {
-// definiert den Stil für die Bearbeitung }
-
+`#CQ td {`
+` // defines the style for viewing }`
+`#CQrte td {`
+` // defines the style for editing }`
 
 ### Festlegen von Stilen, die in der Popup-Liste verfügbar sein sollen {#stylesindropdown}
 
