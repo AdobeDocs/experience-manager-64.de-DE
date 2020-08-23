@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -40,10 +40,10 @@ Um Adobe Sign mit AEM Forms zu integrieren, benötigen Sie Folgendes:
 
 Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus, um Adobe Sign mit AEM Forms in der Autoreninstanz zu konfigurieren:
 
-1. On AEM Forms author instance, navigate to **[!UICONTROL Tools **![hammer](assets/hammer.png)>**General **>**Configuration Browser]**.
+1. On AEM Forms author instance, navigate to **[!UICONTROL Tools** ![hammer](assets/hammer.png) > **General** > **Configuration Browser]**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. Es wird ein Konfigurationscontainer für Cloud-Dienste erstellt.
-1. Navigate to **[!UICONTROL Tools **![hammer](assets/hammer.png)>**Cloud Services **>**Adobe Sign]**and select the configuration container you created in the above step.
+1. Navigate to **[!UICONTROL Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign]** and select the configuration container you created in the above step.
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
    ![OAuth Config](assets/oauth_config.png)
 
-1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. In the **[!UICONTROL Settings]** tab, the **!UICONTROL OAuth URL]**field mentions the following default URL:
+1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Auf der Registerkarte **[!UICONTROL Einstellungen]** wird im Feld **[!UICONTROL OAuth URL]** die folgende Standard-URL angegeben:
 
    `https://secure.na1.echosign.com/public/oauth`
 
@@ -107,6 +107,6 @@ Ein Adobe Sign-aktivirtes adaptives Formular wird nur gesendet, nachdem alle Unt
 
    `https://[localhost]:[port]/system/console/configMgr`
 
-1. Suchen und öffnen Sie die Option **[!UICONTROL Adobe Sign-Konfigurationsdienst]**. Geben Sie einen[ Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) in das Feld **[!UICONTROL Status-Aktualisierungs-Scheduler-Ausdruck]** und klicken Sie auf **[!UICONTROL Speichern]**. For example, to run the configuration service daily at 00:00 am, specify `0 0 0 1/1 * ? *` in the **[!UICONTROL Status Update Scheduler Expression]** field.
+1. Suchen und öffnen Sie die Option **[!UICONTROL Adobe Sign-Konfigurationsdienst]**. Geben Sie einen[ Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) in das Feld **[!UICONTROL Status-Aktualisierungs-Scheduler-Ausdruck]** und klicken Sie auf **[!UICONTROL Speichern]**. Um beispielsweise den Konfigurationsdienst täglich um 00:00 Uhr auszuführen, geben Sie `0 0 0 1/1 * ? *` im Ausdruck **[!UICONTROL &quot;]** Statusupdate-Planung&quot;an.
 
 Das Standardintervall für den Synchronisationsstatus von Adobe Sign wurde geändert.
