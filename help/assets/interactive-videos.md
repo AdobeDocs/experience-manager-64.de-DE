@@ -8,10 +8,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '6010'
-ht-degree: 92%
+source-wordcount: '6008'
+ht-degree: 93%
 
 ---
 
@@ -34,11 +34,11 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![A frame from an interactive, shoppable video](assets/chlimage_1-126.png) *A video frame capture from an interactive, shoppable video.*
+![Ein Rahmen aus einem interaktiven, einkaufbaren Video](assets/chlimage_1-126.png) *Ein Videoframe, der aus einem interaktiven, einkaufbaren Video erfasst wird.*
 
 >[!NOTE]
 >
->Bei interaktiven Videos, die eine Webseite aufrufen, sobald ein Benutzer auf eine Miniaturansicht klickt, wird die Anzeige der Popup-Webseite auf einigen Geräten blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings** > **Safari** > **Block Pop-ups**, then slide the control to **[!UICONTROL Off**. Wenn Sie ein interaktives Video wiedergeben und auf eine Miniaturansicht klicken, werden Sie gefragt, ob das Popup geöffnet werden soll. Wenn Sie dies akzeptieren, wird die Webseite geöffnet.
+>Bei interaktiven Videos, die eine Webseite aufrufen, sobald ein Benutzer auf eine Miniaturansicht klickt, wird die Anzeige der Popup-Webseite auf einigen Geräten blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. Auf einem Apple iPhone 6 tippen Sie beispielsweise auf **[!UICONTROL Einstellungen]** > **Safari** > **Popups blockieren** und schieben Sie das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie ein interaktives Video wiedergeben und auf eine Miniaturansicht klicken, werden Sie gefragt, ob das Popup geöffnet werden soll. Wenn Sie dies akzeptieren, wird die Webseite geöffnet.
 
 ## Erstellen von interaktiven Videos   {#watch-how-interactive-videos-are-created}
 
@@ -66,7 +66,7 @@ Wenn Sie das Tutorial im letzten Beispiel abgeschlossen haben, sieht die finale 
 
 [https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html)
 
-**Interactive video workflow**:
+**Interaktiver Videoworkflow**:
 
 1. **(Optional) Ermitteln von Schnellansichtsvariablen**: Ermitteln Sie zunächst die dynamischen Variablen, die von der vorhandenen Schnellansichtsimplementierung verwendet werden. Mit den Variablen ordnen Sie Produktminiaturansichten der entsprechenden Produktschnellansicht zu, wenn Sie ein interaktives Video erstellen. Siehe [(Optional) Ermitteln von Schnellansichtsvariablen](#optional-identifying-quickview-variables).
 
