@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 72%
+source-wordcount: '2831'
+ht-degree: 73%
 
 ---
 
@@ -108,7 +108,7 @@ The **[!UICONTROL AND Split]** creates a split in the workflow, after which both
 
 A **[!UICONTROL Container]** step starts another workflow model that runs as a child workflow.
 
-This **[!UICONTROL Container]]**lets you reuse workflow models to implement common sequences of steps. Beispielsweise kann ein Übersetzungs-Workflow-Modell in mehreren Bearbeitungs-Workflows verwendet werden.
+This **[!UICONTROL Container]** lets you reuse workflow models to implement common sequences of steps. Beispielsweise kann ein Übersetzungs-Workflow-Modell in mehreren Bearbeitungs-Workflows verwendet werden.
 
 ![wf-28](assets/wf-28.png)
 
@@ -138,7 +138,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [**[!UICONTROL Allgemein]**](#step-properties-common-tab)
 * **[!UICONTROL Prozess]**
 
-   * **[!UICONTROL Der zu]folgende Schritt **: Wählen Sie den auszuführenden Schritt aus.
+   * **[!UICONTROL Der Schritt, zu dem]** Sie gehen müssen: Wählen Sie den auszuführenden Schritt aus.
    * **[!UICONTROL Skriptpfad]**: Der Pfad zum ECMAScript, der bestimmt, ob der **[!UICONTROL Goto-Schritt]** ausgeführt werden soll.
    * **[!UICONTROL Skript]**: Das ECMAScript, das bestimmt, ob der **[!UICONTROL Goto-Schritt]** ausgeführt werden soll.
 
@@ -268,7 +268,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [**[!UICONTROL Benutzer/Gruppe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Dialogfeld]**
 
-   * **[!UICONTROL-Dialogpfad**: Der Pfad zum Knoten &quot;dialog&quot;des von Ihnen erstellten [Dialogfelds](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Dialog Path**]: The path to the dialog node of the [dialog you create](#dialog-participant-step-creating-a-dialog).
 
 #### Dialog Participant Step – Creating a dialog{#dialog-participant-step-creating-a-dialog}
 
@@ -396,7 +396,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 #### Dynamischer Teilnehmer – Schritt – Entwickeln der Teilnehmerauswahl {#dynamic-participant-step-developing-the-participant-chooser}
 
-Sie erstellen die Teilnehmerauswahl. Dabei können Sie beliebige Logik oder Kriterien für die Auswahl verwenden. Beispielsweise kann die Teilnehmerauswahl den Benutzer (innerhalb einer Gruppe) auswählen, dem die wenigsten Arbeitselemente zugewiesen sind. You can create any number of participant choosers to use with different instances of the **Dynamic Participant Step *]*component in your workflow models.
+Sie erstellen die Teilnehmerauswahl. Dabei können Sie beliebige Logik oder Kriterien für die Auswahl verwenden. Beispielsweise kann die Teilnehmerauswahl den Benutzer (innerhalb einer Gruppe) auswählen, dem die wenigsten Arbeitselemente zugewiesen sind. Sie können eine beliebige Anzahl von Teilnehmerauswahlen für die Verwendung mit verschiedenen Instanzen der Komponente **Dynamischer Teilnehmer – Schritt** in Ihren Workflow-Modellen erstellen.
 
 Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutzers, dem das Arbeitselement zugewiesen werden soll.
 
@@ -514,7 +514,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [**[!UICONTROL Benutzer/Gruppe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formular]**
 
-   * **[!UICONTROL-Formularpfad**: Der Pfad zum erstellten [Formular](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Formularpfad]**: Der Pfad zum erstellten [Formular](#form-participant-step-creating-the-form).
 
 #### Formular „Teilnehmer – Schritt“ - Erstellen des Formulars {#form-participant-step-creating-the-form}
 
