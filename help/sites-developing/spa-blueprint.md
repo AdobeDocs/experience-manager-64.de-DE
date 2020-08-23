@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 15%
 
 ---
@@ -278,7 +278,7 @@ Das folgende Fragment zeigt die typische HTML-Darstellung einer Seiteninhaltsstr
 
 Die App besitzt das Routing. Der Front-End-Entwickler muss zunächst eine Navigationskomponente implementieren (die einer AEM Navigationskomponente zugeordnet ist). Diese Komponente rendert URL-Links, die zusammen mit einer Reihe von Routen verwendet werden, die Fragmente von Inhalten ein- oder ausblenden.
 
-Die zugrunde liegende [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) Bibliothek und ihr `[`ModelRouter-Modul&quot;](/help/sites-developing/spa-routing.md) (standardmäßig aktiviert) sind für das Vorab-Abrufen und das Bereitstellen des mit einem bestimmten Ressourcenpfad verknüpften Modells verantwortlich.
+Die zugrunde liegende [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) Bibliothek und ihr (standardmäßig aktiviertes) [`ModelRouter`](/help/sites-developing/spa-routing.md) Modul sind für das Vorab-Abrufen und Bereitstellen des Zugriffs auf das mit einem bestimmten Ressourcenpfad verknüpfte Modell verantwortlich.
 
 Die beiden Entitäten beziehen sich auf den Begriff des Routings, aber der [`ModelRouter`](/help/sites-developing/spa-routing.md) ist nur dafür verantwortlich, dass der [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) mit einem Datenmodell geladen wird, das mit dem aktuellen Anwendungsstatus synchronisiert strukturiert ist.
 
