@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 74%
+source-wordcount: '705'
+ht-degree: 78%
 
 ---
 
@@ -50,8 +50,8 @@ Umrechnungs-, Verarbeitungs- und Renderaufträge werden in die Warteschlange des
 
    Siehe [Anzeigen von 3D-Assets](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
+1. Tippen Sie im **Adobe Experience Manager** auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]**.
+1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
 1. Navigieren Sie zu einem 3D-Asset, das Sie rendern möchten.
 
 1. Tippen Sie auf die Karte des 3D-Assets, um das Asset auf der Seite mit den Asset-Details zu öffnen.
