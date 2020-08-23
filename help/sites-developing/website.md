@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 64%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 64%
 
 >[!CAUTION]
 >
->In diesem Artikel wird erläutert, wie Sie über die klassische Benutzeroberfläche mithilfe von JSP Websites erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM-Websites](/help/sites-developing/getting-started.md) beschrieben.
+>In diesem Artikel wird erläutert, wie Sie über die klassische Benutzeroberfläche mithilfe von JSP Websites erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) beschrieben.
 
 In diesem Tutorial erfahren Sie, wie Sie mit Adobe Experience Manager (AEM) Websites mit vollem Funktionsumfang erstellen. Eine so erstellte Website basiert auf einer generischen Website und ist vor allem auf Webentwickler ausgerichtet. Die gesamte Entwicklung erfolgt in einer Autorenumgebung.
 
@@ -75,7 +75,7 @@ Nachdem Sie AEM installiert haben, greifen Sie auf die CRXDE Lite-Entwicklungsu
 
 Verwenden Sie CRXDE Lite, um die mywebsite-Anwendungsstruktur im Repository zu erstellen:
 
-1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **[!UICONTROL Create > Create Folder]**. In the **Create Folder** dialog, type `mywebsite` as the folder name and click **[!UICONTROL OK**.
+1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **[!UICONTROL Create > Create Folder]**. Geben Sie im Dialogfeld **Ordner erstellen** als Ordnernamen `mywebsite` ein und klicken Sie auf **OK**.
 1. Right-click the `/apps/mywebsite` folder and click **[!UICONTROL Create > Create Folder]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** als Ordnernamen `components` ein und klicken Sie auf **[!UICONTROL OK]**.
 1. Right-click the `/apps/mywebsite` folder and click **[!UICONTROL Create > Create Folder]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** als Ordnernamen `templates` ein und klicken Sie auf **[!UICONTROL OK]**.
 
@@ -788,7 +788,7 @@ Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildre
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Hinzufügen Eigenschaften für den Listroot-Knoten, um ihn als Textfeld zu konfigurieren. Jede Zeile der folgenden Tabelle stellt eine Eigenschaft dar. When finished, click **[!UICONTROL Save All]**.
+1. hinzufügen Eigenschaften für den Listroot-Knoten, um ihn als Textfeld zu konfigurieren. Jede Zeile der folgenden Tabelle stellt eine Eigenschaft dar. When finished, click **[!UICONTROL Save All]**.
 
    | Name | Typ | Wert |
    |---|---|---|
@@ -1082,7 +1082,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die title-Komponente einbinden, di
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!NHinweis]
+>[!NOTE]
 >You can set a different Title and the Type/Size in **[!UICONTROL Edit]** mode.
 
 ### Einbinden von parsys-Komponenten {#including-the-paragraph-system-component}
@@ -1275,7 +1275,7 @@ Das Eingabefeld für die Suche auf der Seite **[!UICONTROL Englisch]** sieht nun
       * **[!UICONTROL Beschreibung]**: Dies ist die Komponente Meine Suche
       * **[!UICONTROL Gruppe]**: MyWebsite
    1. Click **[!UICONTROL Next]**, then click **[!UICONTROL Next]** again.
-   1. On the **[!UICONTROL Allowed Parents** panel, click the **[!UICONTROL +]** button and type `*/parsys`.
+   1. On the **[!UICONTROL Allowed Parents]** panel, click the **[!UICONTROL +]** button and type `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 
