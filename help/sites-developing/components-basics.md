@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 67%
 
 ---
@@ -73,7 +73,7 @@ Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider V
 
 >[!NOTE]
 >
->Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration erleichtern.
+>Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Modernisierungstools](modernization-tools.md) können die Migration erleichtern.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
