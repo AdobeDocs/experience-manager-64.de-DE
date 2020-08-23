@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
+source-wordcount: '9231'
 ht-degree: 63%
 
 ---
@@ -812,7 +812,7 @@ Sarah erkundet die Registerkarten Überblick, Preis und Leistung, Portfolio-Mana
 
 #### Funktionsweise {#how-it-works-18}
 
-Die interaktive Kommunikation des Blue Chip Growth Fund nutzt die Bereiche Eltern und Kinder, um damit zusammenhängende Informationen in verschiedene Abschnitte zu unterteilen. Im übergeordneten Bereich werden alle untergeordneten Bereiche in Registerkarten organisiert.
+Die interaktive Kommunikation des Blue Chip Growth Fund nutzt die Bereiche Eltern und Kinder, um damit zusammenhängende Informationen in verschiedene Abschnitte zu unterteilen. Im übergeordneten Bedienfeld werden alle untergeordneten Bedienfelder in Registerkarten organisiert.
 
 Das Layout der übergeordneten Registerkarte ist auf &quot;Registerkarten oben&quot;eingestellt, um alle untergeordneten Bereiche in Registerkarten zu konvertieren. Sie können die Bereiche der interaktiven Kommunikation im Bearbeitungsmodus unter https://[authorHost]überprüfen:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
 
@@ -871,7 +871,7 @@ Die exemplarische Vorgehensweise für die automatische Versicherung enthält auc
 * Die Standardpolitik kostet weniger als die Prämienpolitik.
 * Die Prämienpolitik hat eine Belohnung gegen Diebstahl und die Standardpolitik hat eine intelligente Prämie
 
-Beide Richtlinien verwenden dieselbe interaktive Kommunikation. Die Abschnitte in der Richtlinie werden je nach der Bedingung des Richtlinientyps geändert oder ausgeblendet. You can access and review the auto insurance renewal interactive communication directly from https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
+Beide Richtlinien verwenden dieselbe interaktive Kommunikation. Die Abschnitte in der Richtlinie werden je nach der Bedingung des Richtlinientyps geändert oder ausgeblendet. You can access and review the auto insurance renewal interactive communication directly from `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Verwenden von Microsoft Dynamics als Datenquelle**
 
