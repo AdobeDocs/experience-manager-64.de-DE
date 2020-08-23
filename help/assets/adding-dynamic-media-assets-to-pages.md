@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 62%
 
 ---
@@ -213,7 +213,7 @@ Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemi
 * **[!UICONTROL URL, In]**Öffnen Sie ein Asset, um einen Link zu öffnen. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
-* **[!UICONTROL Height** and **[!UICONTROL Width]** Geben Sie den Wert in Pixel ein, wenn das Smart-Schnittbild eine feste Größe haben soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
+* **[!UICONTROL Höhe]** und **[!UICONTROL Breite]** Geben Sie den Wert in Pixel ein, wenn das Smart-Schnittbild eine feste Größe haben soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
 ### Interactive Media component {#interactive-media-component}
 
