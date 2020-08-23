@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -150,18 +150,20 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    * Suchen Sie den Knoten der Forumseite
 
       * `/content/sites/engage/en/forum/jcr:content`
-   * Hinzufügen und Abzeichen
+   * hinzufügen und Abzeichen
 
-      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
-/etc/community/scoring/rules/forums-scoring]`
-      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
-/etc/community/badging/rules/forums-scoring]`
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,`
+
+         `/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,`
+
+         `/etc/community/badging/rules/forums-scoring]`
    * Suchen Sie den Knoten der Forumkomponente
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
+   * hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
       * `allowBadges = true`
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
@@ -176,7 +178,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    * Suchen Sie den Knoten der Forumseite
 
       * `/content/community-components/en/forum/jcr:content`
-   * Hinzufügen und Abzeichen
+   * hinzufügen und Abzeichen
 
       ```
       scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -193,7 +195,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
+   * hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
       * `allowBadges = true`
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
