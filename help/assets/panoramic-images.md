@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 44%
@@ -60,7 +60,7 @@ Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie 
    >
    >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen zu Bildern oberhalb der Obergrenze geben einen „403“-Fehler zurück.
 
-1. Under the **Request Attributes]** heading, do the following:
+1. Under the **[Request Attributes]** heading, do the following:
 
    * Set **[!UICONTROL Request Obfuscation Mode]** to **[!UICONTROL Disabled]**.
    * Set **[!UICONTROL Request Locking Mode]** to **[!UICONTROL Disabled]**.
