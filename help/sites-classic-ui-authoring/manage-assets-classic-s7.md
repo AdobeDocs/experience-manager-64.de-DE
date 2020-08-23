@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 33%
 
 ---
@@ -109,7 +109,7 @@ Hierzu konfigurieren Sie die Cloud-Konfiguration für die Seite, auf der das Ass
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. Klicken Sie auf **[!UICONTROL-Cloud Services > Hinzufügen > Dynamic Media Classic (Scene7)**.
+1. Klicken Sie auf **[!UICONTROL Cloud Services]>[!UICONTROL Hinzufügen Dienste]>[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. Wählen Sie in der Dropdown-Liste Adobe Dynamic Media Classic die gewünschte Konfiguration und klicken Sie dann auf **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -240,7 +240,7 @@ Mit der Komponente &quot;Dynamisches Medienklassisches Bild&quot;können Sie Ihr
 
 **[!UICONTROL Ausgabeformat]** - Wählen Sie das Ausgabeformat des Bilds, z. B. jpeg, aus. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen möglicherweise zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Scharfzeichnen]** - Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird in den Best Practices für die [*Adobe &quot;Dynamische Medienklassik&quot;und &quot;Scharfzeichnen&quot;ausführlich erläutert *](/help/assets/assets/s7_sharpening_images.pdf).
+**[!UICONTROL Scharfzeichnen]** - Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird in den Best Practices für die [*Adobe &quot;Dynamische Medienklassik&quot;und &quot;Scharfzeichnen&quot;ausführlich erläutert*](/help/assets/assets/s7_sharpening_images.pdf).
 
 **[!UICONTROL URL-Modifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
