@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '7876'
 ht-degree: 4%
@@ -165,7 +165,7 @@ Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Gen
    * A `com.adobe.idp.Document` object that represents the file to convert.
    * Ein `java.lang.String` Objekt, das die Dateierweiterung enthält.
    * Ein `java.lang.String` Objekt, das die bei der Konvertierung zu verwendenden Dateitypeinstellungen enthält. Dateitypeinstellungen bieten Konvertierungseinstellungen für verschiedene Dateitypen, z. B. .doc oder .xls.
-   * Ein `java.lang.String` Objekt, das den Namen der zu verwendenden PDF-Einstellungen enthält. For example, you can specify `Standard`.
+   * Ein `java.lang.String` Objekt, das den Namen der zu verwendenden PDF-Einstellungen enthält. Sie können beispielsweise angeben `Standard`.
    * Ein `java.lang.String` Objekt, das den Namen der zu verwendenden Sicherheitseinstellungen enthält.
    * Ein optionales `com.adobe.idp.Document` Objekt, das Einstellungen enthält, die beim Generieren des PDF-Dokuments angewendet werden sollen.
    * Ein optionales `com.adobe.idp.Document` Objekt, das Metadateninformationen enthält, die auf das PDF-Dokument angewendet werden sollen.
@@ -715,7 +715,7 @@ Wenn die Attribute eine Beschriftung nicht identifizieren, können Sie stattdess
 Achten Sie auf folgende Probleme:
 
 * Microsoft Spy++ zeigt Beschriftungen mit einem kaufmännischen Und (&amp;) an, um den Hotkey der Beschriftung zu identifizieren. Beispielsweise zeigt Spy++ die Beschriftung für ein Druckdialogfeld als `Pri&nt`, was bedeutet, dass der Hotkey *n* ist. Beschriftungstitel in Skript- und Dialogfeld-XML-Dateien müssen keine kaufmännischen Zeichen enthalten.
-* Einige Beschriftungen enthalten Zeilenumbrüche. Der Generate PDF-Dienst kann Zeilenumbrüche nicht identifizieren. Wenn eine Beschriftung einen Zeilenumbruch enthält, muss die Beschriftung ausreichend groß sein, um sie von den anderen Menüelementen zu unterscheiden, und dann für den ausgelassenen Teil reguläre Ausdruck verwenden. An example is ( `^Long caption title$`).]. (Siehe [Verwenden von regulären Ausdrücken in Beschriftungsattributen](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Einige Beschriftungen enthalten Zeilenumbrüche. Der Generate PDF-Dienst kann Zeilenumbrüche nicht identifizieren. Wenn eine Beschriftung einen Zeilenumbruch enthält, muss die Beschriftung ausreichend groß sein, um sie von den anderen Menüelementen zu unterscheiden, und dann für den ausgelassenen Teil reguläre Ausdruck verwenden. An example is ( `^Long caption title$`). (Siehe [Verwenden von regulären Ausdrücken in Beschriftungsattributen](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Verwenden Sie Zeichenentitäten (auch als Escape-Sequenzen bezeichnet) für reservierte XML-Zeichen. Verwenden Sie zum Beispiel `&` für Ampersands, `<` für Kleiner- und Kleiner-als-Symbole, `>` für Apostrophe und `&apos;` `&quot;` für Anführungszeichen.
 
 Wenn Sie mit Dialog- oder Skript-XML-Dateien arbeiten möchten, sollten Sie die Anwendung Microsoft Spy++ installieren.
@@ -730,9 +730,9 @@ Die Dialogue- und Skriptdateien befinden sich in der Datei &quot;appmondata.jar&
 Nachdem Sie diese XML-Dateien der Datei &quot;adobe-appmondata.jar&quot;hinzugefügt haben, müssen Sie die GeneratePDF-Komponente erneut bereitstellen. So fügen Sie der Datei &quot;adobe-appmondata.jar&quot;Dialogue- und Skript-XML-Dateien hinzu:
 
 1. Öffnen Sie mithilfe eines Tools wie WinZip oder WinRAR die Datei adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar.
-1. Hinzufügen Sie die XML-Dateien &quot;dialog&quot;und &quot;script&quot;in die Datei &quot;appmondata.jar&quot;oder ändern Sie vorhandene XML-Dateien in dieser Datei. (Siehe [Erstellen oder Bearbeiten einer XML-Skript-Skript-Datei für eine native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)Anwendung und [Erstellen oder Ändern einer zusätzlichen XML-Datei für eine native Anwendung](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
+1. hinzufügen Sie die XML-Dateien &quot;dialog&quot;und &quot;script&quot;in die Datei &quot;appmondata.jar&quot;oder ändern Sie vorhandene XML-Dateien in dieser Datei. (Siehe [Erstellen oder Bearbeiten einer XML-Skript-Skript-Datei für eine native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)Anwendung und [Erstellen oder Ändern einer zusätzlichen XML-Datei für eine native Anwendung](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Öffnen Sie mit einem Tool wie WinZip oder WinRAR adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
-1. Hinzufügen Sie die XML-Dateien &quot;dialog&quot;und &quot;script&quot;in die Datei &quot;appmondata.jar&quot;oder ändern Sie vorhandene XML-Dateien in dieser Datei. (Siehe [Erstellen oder Bearbeiten einer XML-Skript-Skript-Datei für eine native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)Anwendung und [Erstellen oder Ändern einer zusätzlichen XML-Datei für eine native Anwendung](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nachdem Sie die XML-Dateien zur Datei &quot;adobe-appmondata.jar&quot;hinzugefügt haben, fügen Sie die neue Datei &quot;adobe-appmondata.jar&quot;in die Datei &quot;adobe-generatepdf-dsc.jar&quot;ein.
+1. hinzufügen Sie die XML-Dateien &quot;dialog&quot;und &quot;script&quot;in die Datei &quot;appmondata.jar&quot;oder ändern Sie vorhandene XML-Dateien in dieser Datei. (Siehe [Erstellen oder Bearbeiten einer XML-Skript-Skript-Datei für eine native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)Anwendung und [Erstellen oder Ändern einer zusätzlichen XML-Datei für eine native Anwendung](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nachdem Sie die XML-Dateien zur Datei &quot;adobe-appmondata.jar&quot;hinzugefügt haben, fügen Sie die neue Datei &quot;adobe-appmondata.jar&quot;in die Datei &quot;adobe-generatepdf-dsc.jar&quot;ein.
 1. Wenn Sie Unterstützung für ein zusätzliches natives Dateiformat hinzugefügt haben, erstellen Sie eine Systemvariable, die den Pfad der Umgebung bereitstellt (siehe [Erstellen einer Anwendungsvariable, um die native Umgebung](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)zu finden).
 
 **So stellen Sie die GeneratePDF-Komponente erneut bereit**
