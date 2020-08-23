@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 77%
 
 ---
@@ -145,7 +145,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
    1. Move the pointer over an asset and tap **[!UICONTROL Unpublish]** ![unpublish](assets/unpublish.png).
    1. Führen Sie einen der folgenden Schritte aus und tippen Sie dann auf „Veröffentlichung aufheben“:
 
-      * If you are in the card view, tap **[!UICONTROL Enter Selection** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. Das Asset wird ausgewählt.
+      * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. Das Asset wird ausgewählt.
       * If you are in the list view, hover over an asset and tap ![selectassetcheckmark](assets/selectassetcheckmark.png) . Das Asset wird ausgewählt.
       * Tippen Sie auf ein Asset, um dessen Details anzuzeigen.
       * Display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
