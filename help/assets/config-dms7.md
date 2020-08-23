@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5547'
 ht-degree: 74%
 
 ---
@@ -38,7 +38,7 @@ Mit der neuen Architektur ist AEM für Master-Assets und Synchronisierungen mit 
 
 [Dynamic Media ist standardmäßig deaktiviert. ](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) Funktionen für dynamische Medien müssen für die Nutzung aktiviert werden.
 
->[HINWEIS]
+>[!NOTE]
 >
 >Dynamische Medien - Der Scene7-Modus ist nur für die AEM-Autoreninstanz verfügbar. Daher müssen Sie `runmode=dynamicmedia_scene7`die AEM Author-Instanz konfigurieren, nicht die AEM Publish-Instanz.
 
@@ -52,7 +52,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 If you are upgrading AEM Dynamic Media from 6.3 to 6.4 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
->[HINWEIS]
+>[!NOTE]
 >
 >Wenn Sie Ihre AEM Instanz im Kompatibilitätsmodus ausführen, d. h. die Kompatibilität ist verpackt, müssen Sie diese Befehle nicht ausführen.
 
@@ -220,7 +220,7 @@ Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden,
 * Konvertieren eines Adobe Photoshop-Dokuments (.PSD) in ein Bannervorlagen-Asset für Personalisierung
 * Rastern einer Adobe Illustrator- (.AI) oder Adobe Photoshop Encapsulated Postscript-Datei (.EPS)
 
->[HINWEIS]
+>[!NOTE]
 >
 >Mit Video-Profilen und Imaging-Profilen können Sie die Verarbeitung von Videos bzw. Bildern definieren.
 
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    Hinweis: [!UICONTROL Formular anzeigen], wie oben rechts auf der Detailseite festgelegt, ist die Standardansicht.
 
 1. In the **[!UICONTROL Preset List]** panel, tap **[!UICONTROL Add]** to activate the definition fields in the **[!UICONTROL Details]** panel on the right hand side of the screen.
-1. In the **[!UICONTROL Details]** panel, in the [!UICONTROL Preset Name[!UICONTROL field, type a name for the preset.
+1. In the **[!UICONTROL Details]** panel, in the [!UICONTROL Preset Name] field, type a name for the preset.
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. In the **[!UICONTROL Sub Type]** drop-down list, select **[!UICONTROL Multi-Axis Spin Set]**.
 1. Expand **[!UICONTROL Asset Naming Conventions]**, and then in the **[!UICONTROL File Naming]** drop-down list, tap **[!UICONTROL Custom]**.
