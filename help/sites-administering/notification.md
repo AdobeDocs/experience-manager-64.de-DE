@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 75%
@@ -68,7 +68,7 @@ Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfi
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
 
-1. Add a `String` property to the node] named `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
+1. Add a `String` property to the node named `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
 
 1. Klicken Sie auf **Alle speichern**.
 
