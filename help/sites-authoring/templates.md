@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 97%
@@ -316,7 +316,7 @@ Die folgenden Aspekte einer Vorlage können bearbeitet werden:
 
 * [Layout](#editing-a-template-layout-template-author)
 
-   Hier können Sie das Vorlagenlayout für die erforderlichen Geräteformate vordefinieren. Der Modus **Layout** für das Erstellen von Vorlagen bietet dieselben Funktionen wie der Modus **[Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**für das Erstellen von Seiten].
+   Hier können Sie das Vorlagenlayout für die erforderlichen Geräteformate vordefinieren. Der Modus **Layout** für das Erstellen von Vorlagen bietet dieselben Funktionen wie der Modus **[Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** für das Erstellen von Seiten.
 
 * [Seitenrichtlinien](#editing-a-template-structure-template-author)
 
@@ -575,7 +575,7 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 
 >[!NOTE]
 >
->Der Modus **Anfänglicher Inhalt** kann als Bearbeitungsmodus für Seiten betrachtet werden, die mit dieser Vorlage erstellt werden. Daher sind Richtlinien nicht im Modus **Anfänglicher Inhalt**, sondern im **[Strukturmodus](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**definiert.
+>Der Modus **Anfänglicher Inhalt** kann als Bearbeitungsmodus für Seiten betrachtet werden, die mit dieser Vorlage erstellt werden. Daher sind Richtlinien nicht im Modus **Anfänglicher Inhalt**, sondern im **[Strukturmodus](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)** definiert.
 
 * Entsperrte Komponenten, die bearbeitet werden können, werden hervorgehoben. Werden sie ausgewählt, erhalten sie einen blauen Rand:
 
