@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '21624'
+source-wordcount: '21621'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 |---|---|
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
-| Datum           | 05. März 2020 |
+| Datum            | 05. März 2020 |
 | Download-URL | AEM 6.4.8.0 zur [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
@@ -52,7 +52,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die in ContextHub enthaltene jQuery-Version wurde auf 3.2.1 aktualisiert.
 
-## Liste der Änderungen      {#list-of-changes}
+## Liste der Änderungen  {#list-of-changes}
 
 ### Sites {#sites}
 
@@ -95,7 +95,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das Bild wird auf der Zeitleiste nicht angezeigt, nachdem Anmerkungen hinzugefügt wurden, auf einem Experience Manager, der im Scene7-Ausführungsmodus für dynamische Medien ausgeführt wird (NPR-31754).
 
-* ZIP-Datei, die von DAM heruntergeladen wurde, kann nicht mit WinZip (NPR-31745) geöffnet werden.
+* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-31745) geöffnet werden.
 
 ### Integrationen {#integrations-6480}
 
@@ -203,7 +203,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Sonderzeichen, die in der Betreffzeile von E-Mail-Vorlagen auftreten, werden nicht richtig angezeigt (NPR-30547).
 
-* Beim Verschieben von Assets aus einem Ordner in einen anderen im AEM im Dynamic Media Scene7-Runmode (NPR-31631) werden die Asset-Namen in Kleinbuchstaben geändert.
+* Beim Verschieben von Assets aus einem Ordner in einen anderen im AEM im Dynamischen Media Scene7-Modus (NPR-31631) werden die Asset-Namen in Kleinbuchstaben geändert.
 
 * Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn Bildsatz (oder Mediaset) erstellt und mit einer entsprechenden Benennungskonvention in DAM (NPR-31576) benannt wird.
 
@@ -406,7 +406,7 @@ Einige der wichtigsten Highlights von AEM 6.4.6.0 sind:
 * Veröffentlichen/Veröffentlichung rückgängig machen aus einem Seitenalias wird nicht unterstützt und sollte entfernt werden. NPR-30062: Hotfix für CQ-4271249
 * Ungeschlossene ResourceResolver-Warnung in ExperienceFragmentsReplicationListener, die im Laufe der Zeit zu Stabilitätsproblemen führt und AEM Instanzen neu starten muss. NPR-30416: Hotfix für CQ-4257521
 * Durch Verschieben von Erlebnisfragmenten, auf die auf mehr als 150 Seiten verwiesen wird, wird fragmentPath auf den Seiten, auf die verwiesen wird, nicht verändert. NPR-30556: Hotfix für CQ-4274900
-* Parsing-Fehler beim Öffnen eines Inhaltsfragments, das die Zeichen Dollar ($) und Klammer ({) nacheinander enthält. Hotfix für CQ-4270266
+* Parsing error when opening a Content Fragment which has characters dollar (`$`) and open brace (`{`) one after another. Hotfix für CQ-4270266
 * Das VersionPreview-Servlet schlägt beim Versuch, eine Version eines Experience Fragment in der Timeline anzuzeigen, mit NullPointerException fehl. NPR-30074: Hotfix für CQ-4271881
 * Inhaltsfragmente können nicht über die Eincheckfunktion gesperrt werden. NPR-29923: Hotfix für CQ-4258785
 * Fehler bei der Signaturüberprüfung im SAML-Authentifizierungshandler. NPR-30379: Antrag auf Unterstützung für GRANITE-26567
@@ -877,7 +877,7 @@ Einige der wichtigsten Highlights von AEM 6.4.4.0 sind:
 * Aktualisieren Sie die anfälligen Bootstrap-Bibliotheken auf 3.4 und die ckeditor-Bibliotheken auf 4.5.11. NPR-28490: Hotfix für CQ-4257511
 * Durch den Abbruch der Bearbeitungsmodi wird die gelöschte Anlage nicht wiederhergestellt. NPR-27902: Hotfix für CQ-4255150
 * Die Komposition im Namen der Box sollte nur für die privilegierten Mitglieder sichtbar sein. NPR-27900: Hotfix für CQ-4251235
-* Hinzufügen rep:cache in Ignorierbare Knoten bei AEM Communities User Sync Listener bei Veröffentlichungsinstanzen. NPR-27842: Hotfix für CQ-4247234
+* hinzufügen rep:cache in Ignorierbare Knoten bei AEM Communities User Sync Listener bei Veröffentlichungsinstanzen. NPR-27842: Hotfix für CQ-4247234
 * Das Suchfeld zeigt Escape-Zeichen auf UI-Ebene an. NPR-27838: Hotfix für CQ-4259757
 * Fehler beim Suchen nach Sonderzeichen wie (, +,? in Schnellsuche. NPR-28213: Hotfix für CQ-4260969
 * Erstellen Sie eine &quot;Community-spezifische Administratorgruppe&quot;, damit die Benutzer die entsprechende Community-Site bearbeiten und erstellen können. NPR-27731
@@ -1256,7 +1256,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.3.0 Forms gehören:
 
 **Document Services**
 
-* Hinzufügen FIPS-Kompatibilität für den RE-Arbeitsablauf in Digital Signature, Reader Extensions, CryptoProvider und TrustStore. NPR-27495: Hotfix für CQ-4257572
+* hinzufügen FIPS-Kompatibilität für den RE-Arbeitsablauf in Digital Signature, Reader Extensions, CryptoProvider und TrustStore. NPR-27495: Hotfix für CQ-4257572
 * Die Konvertierung schlägt fehl, wenn AssemblerService.toPDFA-Dienst in einer Schleife ausgeführt wird. NPR-26354: Hotfix für CQ-4248656
 * Die PDF-Kompatibilität kann nicht ordnungsgemäß anhand der PDF/A-1b-Standards überprüft werden. NPR-26286: Hotfix für CQ-4227539
 * Probleme mit ungenügendem Arbeitsspeicher bei der Aktualisierung von AEM Forms von 6.1 SP2 CFP5 auf CFP13. NPR-26285: Hotfix für CQ-4244379
@@ -1860,7 +1860,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * (DMS7) Die Bearbeitung von Remote-Sets in AEM wird in Scene7 nicht überschrieben. Hotfix für CQ-4243430
 * Verification of 6.4 SP1 build on DM Hybrid. Hotfix für CQ-4244623
 * (DMS7-UA) Wenn Sie für ein veröffentlichtes Video-Asset auf die Schaltfläche &quot;Einbetten&quot;klicken, wird nichts angezeigt. Das Dialogfeld &quot;Einbetten&quot;wird voraussichtlich mit HTML-Code angezeigt. Hotfix für CQ-4245237
-* (DM Hybrid) Beim Kopieren der URL für veröffentlichte Video-Assets oder gemischte Mediensets wird im URL-Dialogfeld &quot;[[Objekt-Objekt]&quot;angezeigt. Hotfix für CQ-4245236, CQ-4245451
+* (DM Hybrid) Beim Kopieren der URL für veröffentlichte Video-Assets oder gemischte Mediensets wird im URL-Dialogfeld &quot;`[object Object]`&quot;angezeigt. Hotfix für CQ-4245236, CQ-4245451
 * (DMHybrid) Die Seite &quot;Details&quot;der Ansicht enthält nicht die Vorschau der Videoasset-Anzeige und gibt eine Fehlermeldung an die Konsole aus. Hotfix für CQ-4244320
 * Automatische S7-Kodierung von We.Retail-Inhalten. Hotfix für CQ-4242253
 * Vorab aktualisierte Video-Verarbeitungsvorgaben dürfen weder eine neue Video-Kodierungsvorgabe hinzugefügt noch die vorhandenen Kodierungsvorgaben bearbeitet werden. Hotfix für CQ-4240407
@@ -1884,7 +1884,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 
 * (DMS7) Cloud-Konfiguration: Neue Inhalte können nach der Aktualisierung auf SP1 nicht mit Scene7 synchronisiert werden. Hotfix für CQ-4244437
 * (DMHybrid) Farbeinstellungen und Katalogeinstellungen werden nicht in einem debug_info=catalog-Aufruf registriert. Hotfix für CQ-4242346
-* Hinzufügen Sie die Profil auf den Kundeneinstellungen auf den Versand-Servern farblich an. Hotfix für CQ-4241818, CQ-4241819
+* hinzufügen Sie die Profil auf den Kundeneinstellungen auf den Versand-Servern farblich an. Hotfix für CQ-4241818, CQ-4241819
 * (DMHybrid) Nach 6.3 &amp;gt; 6.4-Aktualisierung, Katalogeinstellungen werden auf den falschen Knoten verschoben. Hotfix für CQ-4239974, CQ-4239975
 * (DMHybrid) Push-ViewerPresets-Skript erstellt nicht die Knoten, die zum Ändern der Katalogeinstellungen erforderlich sind. Hotfix für CQ-4240076
 * Wenn Sie die Dropdownliste &quot;Format&quot;verwenden und entweder PNG- oder JPG-Formate auswählen, wird die heruntergeladene Datei als übersättigt und dunkler als das ursprüngliche Asset angezeigt. Hotfix für CQ-4240073
@@ -2120,7 +2120,7 @@ Führen Sie folgende Schritte aus, um das Service Pack in einer vorhandenen AEM�
 
 1. Laden Sie das Paket von der Softwareverteilung herunter.
 
-1. Melden Sie sich in AEM bei Package Manager an und fügen Sie das heruntergeladene AEM 6.4.8.0-Paket hinzu. Wählen Sie das hochgeladene Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
+1. Melden Sie sich in AEM bei Package Manager an und fügen Sie das heruntergeladene AEM 6.4.8.0-Paket hinzu. Select the uploaded package and click **[!UICONTROL Install]**.
 
 >[!NOTE]
 >
@@ -2148,7 +2148,7 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/de/experience
 
 To determine the certified platform for running with this release of AEM Sites and Assets, see [Technical Requirements](../sites-deploying/technical-requirements.md).
 
->[!NHinweis]
+>[!NOTE]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Aktualisieren von Viewern für dynamische Medien (5.10.1) {#update-dynamic-media-viewers}
