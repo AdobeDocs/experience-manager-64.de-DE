@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9811'
 ht-degree: 68%
 
 ---
@@ -70,7 +70,7 @@ Vergewissern Sie sich vor dem Hochladen eines Assets, dass es in einem [unterst�
 
    Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren. Sie können das System beispielsweise so konfigurieren, dass Assets über 1000 MB (anstatt 500 MB) als große Assets angesehen werden. In diesem Fall wird die Schaltfläche **[!UICONTROL Pause]** im Fortschrittsbalken angezeigt, wenn Assets hochgeladen werden, die größer als 1000 MB sind.
 
-   The **[!UICONTROL Pause]]**button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000 MB, wird die Schaltfläche**[!UICONTROL Pause ]**angezeigt.
+   The **[!UICONTROL Pause]** button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000 MB, wird die Schaltfläche **[!UICONTROL Pause]** angezeigt.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
 
@@ -290,7 +290,7 @@ Sie können eine Videodatei neu kodieren, indem Sie aus einer Vielzahl von Video
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
-If you want to automatically create an Image Set or Spin Set from uploaded images, click the **[!UICONTROL Active** column for the preset you want to use. Sie können mehrere Vorgaben auswählen. 
+If you want to automatically create an Image Set or Spin Set from uploaded images, click the **[!UICONTROL Active]** column for the preset you want to use. Sie können mehrere Vorgaben auswählen. 
 
 Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -620,7 +620,7 @@ CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschr
 
 Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Use the **[!UICONTROL Search]** panel to search for assets, tags, and metadata. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md).
 
-![Filters_panel](assets/filters_panel.png)
+![filters_panel](assets/filters_panel.png)
 
 Bei kürzlich hochgeladenen Assets stehen die Metadaten (einschließlich Titel, Tags usw.) nicht sofort in der Liste der Vorschläge zur Verfügung, die beim Eingeben in das Feld &quot;Omniture Search&quot;angezeigt werden.
 
@@ -716,7 +716,7 @@ In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the
 **So verwenden Sie die Zeitschiene**:
 
 1. Öffnen Sie die Asset-Seite für ein Asset oder wählen Sie es in der Assets-Benutzeroberfläche aus.
-1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie in der Liste die Option **Zeitschiene]** .
+1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie in der Liste die Option **[Zeitschiene]** .
 
    ![Timeline](assets/timeline.png)
 
