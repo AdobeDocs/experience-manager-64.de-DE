@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -83,8 +83,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \\
 #### 2. Create a collection {#create-a-collection}
 
 Verweis:\
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Nutzung:\
 ./bin/solr erstellen \\
@@ -153,7 +152,7 @@ Die folgenden 33 Sprachen werden in Advanced MLS unterstützt.
 
 Für die SRP-Sammlung (entweder MSRP oder DSRP) muss zur Unterstützung der standardmäßigen mehrsprachigen Suche (MLS) zwei der Solr-Konfigurationsdateien geändert werden:
 
-* **Schema.xml**
+* **schema.xml**
 * **solrconfig.xml**
 
 Standard-MLS-Dateien (Schema.xml, solrconfig.xml) für Solaris 4.10
@@ -235,10 +234,10 @@ Installationsanweisungen - Beachten Sie die folgenden Unterschiede für Solr4 un
 1. Installieren und Konfigurieren von Solr im SolrCloud-Modus
 1. Extrahieren Sie den Inhalt des erweiterten MLS-Pakets auf die Festplatte. Der Inhalt sollte Folgendes umfassen:
 
-   * **Schema.xml**
+   * **schema.xml**
    * **solrconfig.xml**
    * **Stoppwörter/** Ordner
-   * **Profile/** Ordner
+   * **profile/** Ordner
    * **extra-libs/** folder
 
 1. Vorbereitung einer neuen Konfiguration:
