@@ -3,10 +3,10 @@ title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 92%
+source-wordcount: '1552'
+ht-degree: 87%
 
 ---
 
@@ -24,6 +24,9 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 
 Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
+>[!CAUTION]
+>
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namensraum. Die Metadateneigenschaften im `dc` Namensraum werden jedoch von der Benutzeroberfläche des Experience Managers aktualisiert.
 
 ## Datenmodell {#data-model}
 
@@ -66,17 +69,17 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 
 Die Assets-HTTP-API bietet die folgenden Funktionen:
 
-* Abrufen von Ordnerauflistungen.
-* Erstellen von Ordnern.
-* Erstellen von Assets.
-* Aktualisieren der Asset-Binärdatei.
-* Aktualisieren der Asset-Metadaten.
-* Erstellen von Asset-Ausgabedarstellungen.
-* Aktualisieren von Asset-Ausgabedarstellungen.
-* Erstellen von Asset-Kommentaren.
-* Kopieren von Ordnern oder Assets.
-* Verschieben von Ordnern oder Assets.
-* Löschen von Ordnern, Assets oder Ausgabedarstellungen.
+* [Abrufen von Ordnerauflistungen](#retrieve-a-folder-listing).
+* [Erstellen eines Ordners](#create-a-folder).
+* [Erstellen von Assets](#create-an-asset).
+* [Aktualisieren der Asset-Binärdatei](#update-asset-binary).
+* [Aktualisieren der Asset-Metadaten](#update-asset-metadata).
+* [Erstellen von Asset-Ausgabedarstellungen](#create-an-asset-rendition).
+* [Aktualisieren von Asset-Ausgabedarstellungen](#update-an-asset-rendition).
+* [Erstellen von Asset-Kommentaren](#create-an-asset-comment).
+* [Kopieren von Ordnern oder Assets](#copy-a-folder-or-asset).
+* [Verschieben von Ordnern oder Assets](#move-a-folder-or-asset).
+* [Löschen von Ordnern, Assets oder Ausgabedarstellungen](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -157,7 +160,7 @@ Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). 
 
 Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
 
-**Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -165,6 +168,27 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 404 – NICHT GEFUNDEN – wenn das Asset nicht gefunden oder unter dem angegebenen URI nicht aufgerufen werden konnte.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
+
+### Metadaten-Aktualisierung zwischen `dc` und `jcr` Namensraum synchronisieren {#sync-metadata-between-namespaces}
+
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namensraum. Die mithilfe von Touch-UI vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namensraum. Um die Metadatenwerte zwischen `dc` und `jcr` Namensraum zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der beim Bearbeiten des Assets ausgeführt wird. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
 
