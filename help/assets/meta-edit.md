@@ -3,10 +3,10 @@ title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
 description: Erfahren Sie mehr über Asset-Metadaten in AEM Assets und lernen Sie die verschiedenen Bearbeitungsmöglichkeiten kennen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 94%
+source-wordcount: '483'
+ht-degree: 86%
 
 ---
 
@@ -54,3 +54,11 @@ Sie können eigene Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespac
 
 1. Um einen Namespace hinzuzufügen, klicken oder tippen Sie am unteren Rand auf **[!UICONTROL Neu]**.
 1. Geben Sie einen benutzerdefinierten Namespace gemäß der XML-Namespace-Konvention ein (ID in Form einer URI und verknüpftes Präfix für die ID). Klicken oder tippen Sie auf **[!UICONTROL Speichern]**.
+
+## Tipps und Einschränkungen {#best-practices-limitations}
+
+* Die Metadaten-Aktualisierungen über die Touch-Benutzeroberfläche ändern die Metadateneigenschaften im `dc` Namensraum. Über die HTTP-API vorgenommene Aktualisierungen ändern die Metadateneigenschaften im `jcr` Namensraum. Siehe [Aktualisieren von Metadaten mit der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
+
+>[!MORELIKETHIS]
+>
+>* [Informationen zu Metadaten und deren Bedarf in Assets](metadata.md)
