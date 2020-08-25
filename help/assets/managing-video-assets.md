@@ -6,10 +6,10 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
+source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 54%
+source-wordcount: '795'
+ht-degree: 52%
 
 ---
 
@@ -42,7 +42,7 @@ Standardmäßig ist es im AEM Assets nicht möglich, Assets hochzuladen, die auf
 
 Zusätzlich zur AEM Assets-Konfiguration ändern Sie die folgenden Konfigurationen, um große Assets hochzuladen:
 
-* Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in Web Console unter `https://[aem_server]:[port]/system/console/configMgr`. For more information, see [CSRF protection](/help/sites-developing/csrf-protection.md).
+* Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in Web Console unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
 * Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
@@ -58,10 +58,8 @@ Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die fol
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. Aktualisieren Sie die Browser-Ansicht. Der Überlagerungsknoten `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` ist ausgewählt.
-1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. Geben Sie beispielsweise den folgenden Wert ein, um die maximale Größe auf 30 GB zu erhöhen:
-
-   `{sizeLimit : "32212254720"}`
+1. Aktualisieren Sie die Browser-Ansicht. Der Überlagerungsknoten `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` ist ausgewählt.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. For example, enter `32212254720` value to increase the size limit to 30 GB.
 
 1. From the toolbar, tap **[!UICONTROL Save All]**.
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Vorgänge > Web-Konsole]**.
