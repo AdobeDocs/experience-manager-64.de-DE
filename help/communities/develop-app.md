@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 6%
+source-wordcount: '611'
+ht-degree: 7%
 
 ---
 
@@ -33,9 +33,10 @@ Der erste Schritt besteht darin, dem `/apps/an-scf-sandbox/components/playpage` 
 Verwenden von CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Name: `sling:resourceSuperType`
-    * Typ: `String`
-    * Wert: `foundation/components/page`
+
+* Name: `sling:resourceSuperType`
+* Typ: `String`
+* Wert: `foundation/components/page`
 
 1. Klicken Sie auf die grüne **[!UICONTROL [+]Hinzufügen]**
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
