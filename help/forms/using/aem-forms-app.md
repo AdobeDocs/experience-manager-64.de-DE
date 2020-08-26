@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
+source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
 workflow-type: tm+mt
-source-wordcount: '2507'
-ht-degree: 76%
+source-wordcount: '2499'
+ht-degree: 77%
 
 ---
 
@@ -28,11 +28,11 @@ Der Quellcode der AEM Forms-App ist für Kunden über die Software Distribution 
 
 Die AEM Forms-App wird auf iOS-, Android- und Windows-Geräten unterstützt. Sie können die AEM Forms-App für Android über Google Play, iOS über den App Store und Windows über den Windows Store installieren.
 
-    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
-    
-    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+[![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+
+[![app_store](assets/app_store.png)](https://itunes.apple.com/de/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+
+[![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Informationen zum Installieren, Anpassen und Verteilen der App auf iOS-, Android- oder Windows-Geräten erhalten Sie unter [Anpassen, Erstellen und Verteilen der AEM Forms-App](#customize-build-distribute).
 
