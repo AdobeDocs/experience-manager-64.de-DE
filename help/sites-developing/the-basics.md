@@ -22,7 +22,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->Bevor Sie sich mit den grundlegenden Konzepten von AEM befassen, empfiehlt Adobe, dass Sie das WKND-Lernprogramm im Dokument [Erste Schritte bei der Entwicklung von AEM-Websites](/help/sites-developing/getting-started.md) absolvieren, um einen Überblick über den AEM-Entwicklungsprozess und eine Einführung in die grundlegende Konzepte zu erhalten.
+>Bevor Sie sich mit den grundlegenden Konzepten von AEM befassen, empfiehlt Adobe, dass Sie das WKND-Lernprogramm im Dokument [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) absolvieren, um einen Überblick über den AEM-Entwicklungsprozess und eine Einführung in die grundlegende Konzepte zu erhalten.
 
 ## Voraussetzungen für die Entwicklung auf AEM {#prerequisites-for-developing-on-aem}
 
