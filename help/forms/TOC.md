@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Benutzerhandbuch zu AEM 6.4 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 73%
 
 ---
@@ -23,10 +23,10 @@ ht-degree: 73%
 + Erste Schritte {#getting-started}
    + [Einführung in AEM Forms](using/introduction-aem-forms.md)
    + [Einführung in das Bearbeiten adaptiver Formulare](using/introduction-forms-authoring.md)
-   + [Introduction to Interactive Communications](using/interactive-communications-overview.md)
+   + [Einführung in die interaktive Kommunikation](using/interactive-communications-overview.md)
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
    + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
-      + [Tutorial: Create your first adaptive form](using/create-your-first-adaptive-form.md)
+      + [Übung: Erstellen des ersten adaptiven Formulars](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
       + [Schulung: Formulardatenmodell erstellen](using/create-form-data-model.md)
       + [Übung: Regeln auf Felder in adaptiven Formularen anwenden](using/apply-rules-to-adaptive-form-fields.md)
@@ -55,12 +55,12 @@ ht-degree: 73%
    + [Wählen eines Persistenztyps für eine AEM Forms-Installation](using/choosing-persistence-type-for-aem-forms.md)
    + Installieren von AEM Forms on OSGi {#osgi-installation}
       + [Unterstützte Plattformen für AEM Formulare auf OSGi](https://helpx.adobe.com/de/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
-      + [Install and configure document services](using/install-configure-document-services.md)
+      + [Installieren und Konfigurieren von Dokument Services](using/install-configure-document-services.md)
       + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](using/installing-configuring-aem-forms-osgi.md)
-      + [Install and Configure Forms-centric workflow on OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
+      + [Forms-zentrierten Arbeitsablauf unter OSGi installieren und konfigurieren](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installieren und konfigurieren Sie Interaktive Kommunikationen](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + Install AEM Forms on JEE {#jee-installation}
-      + [Supported platforms for AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
+      + [Unterstützte Plattformen für AEM Forms on JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_de)
       + [Nur Dokument-Sicherheitsserver installieren und konfigurieren](using/installing-and-configuring-the-document-security-server.md)
       + [Vorbereiten der Installation des AEM Forms-Einzelservers](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_de)
@@ -68,7 +68,7 @@ ht-degree: 73%
       + [Installieren und Bereitstellen von AEM Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_de)
       + [Installieren und Bereitstellen von AEM Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_de)
       + [AEM Forms Workbench installieren](http://help.adobe.com/de/AEMForms/6.1/InstallWorkbench/index.html)
-      + [Install and configure Designer](using/installing-configuring-designer.md)
+      + [Installieren und Konfigurieren von Designer](using/installing-configuring-designer.md)
       + [Vorbereiten der Installation des AEM Forms-Serverclusters](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_de)
       + [AEM Forms on JEE auf JBoss-Cluster konfigurieren](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_de)
       + [Konfigurieren von AEM Forms on JEE auf einem WebLogic-Cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_de)
@@ -85,20 +85,20 @@ ht-degree: 73%
 + Upgrade AEM Forms {#upgrade-aem-forms}
    + [Verfügbare Aktualisierungspfade](using/upgrade.md)
    + AEM Forms auf OSGi aktualisieren {#aem-forms-osgi-upgrade}
-      + [Upgrade to AEM 6.4 forms on OSGi](using/upgrade-forms-osgi.md)
+      + [Aktualisierung auf AEM 6.4 Forms unter OSGi](using/upgrade-forms-osgi.md)
       + [Installieren Sie das Kompatibilitäts-Paket](using/compatibility-package.md)
       + [Migration der Assets und Dokumente von AEM Forms](using/migration-utility.md)
    + AEM Forms auf JEE aktualisieren {#aem-forms-jee-upgrade}
       + [Vorbereiten der Aktualisierung von AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64_de)
-      + [Upgrade checklist and planning](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64_de)
+      + [Checkliste für die Aktualisierung und Planung](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64_de)
       + [Aktualisierung auf AEM 6.4 Forms auf JEE](using/upgrade-forms-jee.md)
       + [Aktualisieren von einer AEM Forms-Version auf AEM 6.4 Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64_de)
       + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE for JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
       + [Aktualisieren von einer AEM Forms-Version auf AEM 6.4 Forms on JEE für JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64_de)
       + [Aktualisieren von LiveCycle ES4 SP1 auf AEM Forms on JEE für JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-      + [Upgrading from an AEM Forms release to AEM 6.4 Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64_de)
+      + [Aktualisierung von einer AEM Forms-Version auf AEM 6.4 Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64_de)
       + [Aktualisieren von LiveCycle ES4 SP1 auf AEM Forms on JEE für WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [Upgrading from an AEM Forms release to AEM 6.4 Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64_de)
+      + [Aktualisierung von einer AEM Forms-Version auf AEM 6.4 Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64_de)
       + [Aktualisieren von LiveCycle ES4 SP1 auf AEM Forms on JEE für WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + Verwalten von AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms für OSGi-Gruppen und -Berechtigungen](using/forms-groups-privileges-tasks.md)
@@ -112,7 +112,7 @@ ht-degree: 73%
    + [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](using/supporting-new-language-localization.md)
    + Handling user data {#handling-user-data}
       + [Forms-zentrierte Workflows auf OSGi](using/forms-workflow-osgi-handling-user-data.md)
-      + [Forms user management](using/user-management-handling-user-data.md)
+      + [Forms-Benutzerverwaltung](using/user-management-handling-user-data.md)
       + [Forms JEE Workflows](using/forms-workflow-jee-handling-user-data.md)
       + [Formularportal](using/forms-portal-handling-user-data.md)
       + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
@@ -120,9 +120,9 @@ ht-degree: 73%
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Hardening AEM Forms Environment {#hardening-aem-forms-environment}
       + [Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen](using/hardening-securing-aem-forms-environment.md)
-      + [General Security Considerations for AEM Forms on JEE](using/general-security-considerations.md)
-      + [Hardening Your AEM Forms on JEE Environment](using/hardening-aem-forms-jee-environment.md)
-      + [Configuring Secure Administration Settings for AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
+      + [Allgemeine Sicherheitsaspekte für AEM Forms auf JEE](using/general-security-considerations.md)
+      + [Härtung Ihrer AEM Forms auf JEE-Umgebung](using/hardening-aem-forms-jee-environment.md)
+      + [Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
 + Formulardatenmodell {#form-data-model}
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
@@ -216,7 +216,7 @@ ht-degree: 73%
    + [Erstellen eines neuen Anmeldungsbildschirms](using/creating-new-login-screen.md)
    + [Anpassen von Fehlerdialogen](using/customizing-error-dialogs.md)
    + [Anpassen von Registerkarten für eine Aufgabe](using/customizing-tabs-task.md)
-   + [Customizing the task details page](using/customizing-task-details-page.md)
+   + [Anpassen der Detailseite der Aufgabe](using/customizing-task-details-page.md)
    + [Anpassen der Auflistung von Prozessinstanzen](using/customizing-listing-process-instances.md)
    + [Anpassen von Aufgabenaktionen](using/customizing-task-actions.md)
    + [Anzeigen zusätzlicher Daten in der ToDo-Liste](using/display-additional-data-in-todo-list.md)
@@ -244,7 +244,7 @@ ht-degree: 73%
    + [Arbeiten mit Aufgabenlisten](using/todo-lists.md)
    + [Fehlerbehebung bei Richtlinien für AEM Forms Workspace](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms-App {#aem-forms-app}
-   + [Introduction to AEM Forms app](using/aem-forms-app.md)
+   + [Einführung in die AEM Forms-App](using/aem-forms-app.md)
    + [Einrichten einer Umgebung für die AEM Forms-App](using/setup-environment-mobile-workspace.md)
    + [Einrichten des Xcode-Projekts und Erstellen der iOS-App](using/setup-xcode-project-build-installer.md)
    + [Erstellen einer sicheren AEM Forms-App für iOS](using/building-secure-mobile-workspace-app.md)
@@ -388,11 +388,11 @@ ht-degree: 73%
    + [Anzeigen von Komponenten basierend auf der verwendeten Vorlage](using/displaying-components-based-on-template.md)
    + [Erstellen benutzerdefinierter Themen für adaptive Formulare](using/creating-custom-adaptive-form-themes.md)
 + Transaktionsberichte {#transaction-reports}
-   + [Transaction Reports Overview](using/transaction-reports-overview.md)
+   + [Übersicht über Transaktionsberichte](using/transaction-reports-overview.md)
    + [Anzeigen und Verstehen von Transaktionsberichten](using/viewing-and-understanding-transaction-reports.md)
    + [Transaktionsberichte Abrechnungsfähige APIs](using/transaction-reports-billable-apis.md)
    + [Eine Transaktion für benutzerdefinierte Implementierungen aufzeichnen](using/record-transaction-custom-implementation.md)
-+ Administrator help for AEM Forms on JEE {#administrator-help}
++ Administratorhilfe für AEM Forms on JEE {#administrator-help}
    + Erste Schritte {#get-started}
       + [Allgemeine AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Lizenztyp für die Bereitstellung aktualisieren](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -504,7 +504,6 @@ ht-degree: 73%
       + [Schriften bereitstellen](/help/forms/using/admin-help/make-fonts-available.md)
       + [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md)
-      + [Den Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md)
    + Konfigurieren des Arbeitsablaufs für Formulare{#configure-forms-workflow}
       + [Informationen zur Administrations- und Prozessterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Verwalten von Prozessen](/help/forms/using/admin-help/processes.md)
@@ -593,7 +592,7 @@ ht-degree: 73%
          + [Acrobat Reader DC Extensions ServiceJava API Quick Beginn(SOAP)](developing/acrobat-reader-dc-extensions-service.md)
          + [APIQuick-Beginn für Sicherung und Wiederherstellung](developing/backup-restore-service-api-quick.md)
          + [Barcoded Forms Service Java APIQuick Beginn(SOAP)](developing/barcoded-forms-service-java-api.md)
-         + [Components and Services Java APIQuick Start(SOAP)](developing/components-services-java-api-quick.md)
+         + [Komponenten und Dienste - Java APIQuick Beginn(SOAP)](developing/components-services-java-api-quick.md)
          + [Convert PDF Service Java API QuickStart(SOAP)](developing/convert-pdf-service-java-api.md)
          + [Java-API für Berechtigungsdienst QuickStart(SOAP)](developing/credential-service-java-api-quick.md)
          + [Distiller Service Java API QuickStart(SOAP)](developing/distiller-service-java-api-quick.md)
@@ -602,12 +601,12 @@ ht-degree: 73%
          + [Dokument Security Service JavaAPI Quick Beginn (SOAP)](developing/document-security-service-java-api.md)
          + [Encryption Service Java API QuickStart(SOAP)](developing/encryption-service-java-api-quick.md)
          + [Endpoint Registry Java API QuickStart(SOAP)](developing/endpoint-registry-java-api-quick.md)
-         + [Form Data Integration Service JavaAPI Quick Start(SOAP)](developing/form-data-integration-service-java.md)
+         + [JavaAPI Quick Beginn (SOAP) des Formulardatenintegrationsdienstes](developing/form-data-integration-service-java.md)
          + [Beginn zur Forms Service API](developing/forms-service-api-quick-starts.md)
          + [Generate PDF Service Java API QuickStart(SOAP)](developing/generate-pdf-service-java-api.md)
-         + [Invocation API Quick Starts](developing/invocation-api-quick-starts.md)
-         + [LiveCycleProcess Java API(SOAP)Quick Start](developing/livecycleprocess-java-api-soap-quick.md)
-         + [Output Service Java API Quick Start(SOAP)](developing/output-service-java-api-quick.md)
+         + [Beginn zur Aufrufungs-API](developing/invocation-api-quick-starts.md)
+         + [LiveCycleProcess Java API(SOAP)Quick Beginn](developing/livecycleprocess-java-api-soap-quick.md)
+         + [Output Service Java API Quick Beginn(SOAP)](developing/output-service-java-api-quick.md)
          + [PDF Utilities Service Java APIQuick Beginn(SOAP)](developing/pdf-utilities-service-java-api.md)
          + [Beginn zur Repository Service API](developing/repository-service-api-quick-starts.md)
          + [Signature Service Java API QuickStart(SOAP)](developing/signature-service-java-api-quick.md)
@@ -625,19 +624,19 @@ ht-degree: 73%
          + [Ausführen von Dienstvorgängen mit APIs](developing/performing-service-operations-using-apis.md)
          + [Rendern von Forms](developing/rendering-forms.md)
          + [Zusammenstellen von PDF-Dokumenten](developing/assembling-pdf-documents.md)
-         + [Programmatically Assembling PDF Documents](developing/programmatically-assembling-pdf-documents.md)
-         + [Converting Between File Formatsand PDF](developing/converting-file-formats-pdf.md)
-         + [Programmatically Disassembling PDF Documents](developing/programmatically-disassembling-pdf-documents.md)
-         + [Assembling Encrypted PDF Documents](developing/assembling-encrypted-pdf-documents.md)
-         + [Assembling Multiple XDP Fragments](developing/assembling-multiple-xdp-fragments.md)
+         + [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](developing/programmatically-assembling-pdf-documents.md)
+         + [Konvertieren zwischen Dateiformaten und PDF](developing/converting-file-formats-pdf.md)
+         + [Programmatische Demontage von PDF-Dokumenten](developing/programmatically-disassembling-pdf-documents.md)
+         + [Zusammenstellen verschlüsselter PDF-Dokumente](developing/assembling-encrypted-pdf-documents.md)
+         + [Zusammenstellen mehrerer XDP-Fragmente](developing/assembling-multiple-xdp-fragments.md)
          + [Zusammenstellen von Dokumenten mit Bates-Nummerierung](developing/assembling-documents-using-bates-numbering.md)
-         + [Assembling Non-Interactive PDF Documents](developing/assembling-non-interactive-pdf-documents.md)
+         + [Zusammenstellen von nicht interaktiven PDF-Dokumenten](developing/assembling-non-interactive-pdf-documents.md)
          + [Zusammenstellen von PDF-Dokumenten mit Lesezeichen](developing/assembling-pdf-documents-bookmarks.md)
          + [Verwendungsrechte zuweisen](developing/assigning-usage-rights.md)
-         + [Assembling PDF Portfolios](developing/assembling-pdf-portfolios.md)
+         + [Zusammenstellen von PDF-Portfolios](developing/assembling-pdf-portfolios.md)
          + [Formulardaten berechnen](developing/calculating-form-data.md)
          + [Erstellen von Webanwendungen, die Forms rendern](developing/creating-web-applications-renders-forms.md)
-         + [Creating PDF Documents with SubmittedXML Data](developing/creating-pdf-documents-submitted-xml.md)
+         + [Erstellen von PDF-Dokumenten mit SubmittedXML-Daten](developing/creating-pdf-documents-submitted-xml.md)
          + [Aufteilen eines PDF-Dokuments mit der Webdienst-API](developing/disassemble-pdf-document-using-web.md)
          + [Bestimmen, ob Dokumente PDF/A-konform sind](developing/determining-whether-documents-pdf-a.md)
          + [DDDX-Dokumente dynamisch erstellen](developing/dynamically-creating-ddx-documents.md)
@@ -660,15 +659,15 @@ ht-degree: 73%
          + [Digitales Signieren und Zertifizieren von Dokumenten](developing/digitally-signing-certifying-documents.md)
          + [PDF-Dokumente verschlüsseln und entschlüsseln](developing/encrypting-decrypting-pdf-documents.md)
          + [Importieren und Exportieren von Daten](developing/importing-exporting-data.md)
-         + [Managing Users](developing/users.md)
+         + [Benutzer verwalten](developing/users.md)
          + [Arbeiten mit AEM Forms Repository](developing/aem-forms-repository.md)
          + [Arbeiten mit Formularen mit Strichcode](developing/barcoded-forms.md)
-         + [Working with Credentials](developing/credentials.md)
+         + [Arbeiten mit Berechtigungen](developing/credentials.md)
          + [Arbeiten mit PDF/A-Dokumenten](developing/pdf-a-documents.md)
          + [Arbeiten mit PDF Utilities](developing/pdf-utilities.md)
          + [Arbeiten mit XMP Utilities](developing/xmp-utilities.md)
          + [AEM Forms für Sicherung vorbereiten](developing/preparing-aem-forms-backup.md)
          + [Programmgesteuertes Verwalten von Endpunkten](developing/programmatically-endpoints.md)
          + [Programmgesteuertes Verwalten der Voreinstellungsknoten](developing/programmatically-preferences-nodes.md)
-         + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
-         + [Validate a DDX document using theweb service API](developing/validate-ddx-document-using-web.md)
+         + [Schutz von Dokumenten mit Richtlinien](developing/protecting-documents-policies.md)
+         + [Validieren eines DDX-Dokuments mithilfe der Webdienst-API](developing/validate-ddx-document-using-web.md)
