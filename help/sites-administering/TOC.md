@@ -5,9 +5,9 @@ audience: admin-user
 user-guide-title: AEM 6.4 Benutzerhandbuch zur Verwaltung
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 97%
 
 ---
@@ -91,8 +91,8 @@ ht-degree: 97%
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung      {#personalization}
-   + [Personalisierung     ](personalization.md)
++ Personalisierung   {#personalization}
+   + [Personalisierung  ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -150,7 +150,6 @@ ht-degree: 97%
    + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
    + [Target-Integration mit Experience Fragments](experience-fragments-target.md)
-   + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
 + Best Practices {#bestpractices}
    + [Best Practices](administer-best-practices.md)
    + [Best Practices für die Übersetzung](tc-bp.md)
