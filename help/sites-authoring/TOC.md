@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Authoring-Benutzerhandbuch
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: e0b25517821971098978db078b2f205a8a380459
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 89%
 
 ---
@@ -55,7 +55,6 @@ ht-degree: 89%
    + [Strukturvorlage](scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](default-components-designmode.md)
    + [Foundation-Komponenten](default-components-foundation.md)
-   + [Strukturvorlage](scaffolding.md)
 + Projekte {#projects}
    + [Projekte](projects.md)
    + [Verwalten von Projekten](touch-ui-managing-projects.md)
@@ -77,8 +76,8 @@ ht-degree: 89%
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung      {#personalization}
-   + [Personalisierung     ](personalization.md)
++ Personalisierung   {#personalization}
+   + [Personalisierung  ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
