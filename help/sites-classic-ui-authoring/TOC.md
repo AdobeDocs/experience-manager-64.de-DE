@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 Benutzerhandbuch für die Benutzeroberfläche
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 91%
+source-wordcount: '298'
+ht-degree: 90%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 91%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung      {#personalization}
++ Personalisierung   {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
@@ -67,10 +67,8 @@ ht-degree: 91%
    + [Arbeiten mit dem Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [E-Mail-Marketing](classic-personalization-campaigns-email.md)
    + [Nachverfolgen nicht zugestellter E-Mails](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
    + [Konzeption einer Kampagne](classic-personalization-campaigns-setting-up-your.md)
    + [Veröffentlichen von E-Mails bei E-Mail-Dienstanbietern](classic-personalization-campaigns-email-newsletters.md)
-   + [Arbeiten mit dem Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Erstellen einer effektiven Einstiegsseite für Newsletter](classic-personalization-campaigns-email-landingpage.md)
    + [Verwalten von Abonnements](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
