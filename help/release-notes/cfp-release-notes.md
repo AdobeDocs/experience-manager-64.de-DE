@@ -4,9 +4,9 @@ description: Versionshinweise speziell für Adobe Experience Manager 6.4 Cumulat
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f1a5f720ade66e5e8f909264563fa7ad1149b15f
+source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3331'
 ht-degree: 16%
 
 ---
@@ -158,6 +158,8 @@ In Adobe Experience Manager 6.4.8.2 wurden die folgenden Probleme behoben:
 **Aktualisierung**
 
 * Wenn Sie die [!DNL JBoss] Version auf 7.0.9 für [!DNL Experience Manager Forms] mit Dokument Security in einer [!DNL Linux] Umgebung aktualisieren, wird ein Fehler ausgegeben (CQ-4300546).
+
+Informationen zu Sicherheitsaktualisierungen finden Sie auf der Seite [zu Sicherheitsbulletins für](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager.
 
 ## Hotfixes und Feature Packs, die in früheren Cumulative Fix Packs enthalten waren {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
