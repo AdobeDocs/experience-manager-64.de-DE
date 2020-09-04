@@ -1,8 +1,8 @@
 ---
-title: Hinzufügen Clientlibs
-seo-title: Hinzufügen Clientlibs
-description: Hinzufügen eines ClientLibraryFolder
-seo-description: Hinzufügen eines ClientLibraryFolder
+title: hinzufügen Clientlibs
+seo-title: hinzufügen Clientlibs
+description: hinzufügen eines ClientLibraryFolder
+seo-description: hinzufügen eines ClientLibraryFolder
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 8%
@@ -18,9 +18,9 @@ ht-degree: 8%
 ---
 
 
-# Hinzufügen Clientlibs {#add-clientlibs}
+# hinzufügen Clientlibs {#add-clientlibs}
 
-## Hinzufügen eines ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## hinzufügen eines ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Erstellen Sie einen ClientLibraryFolder-Namen, `clientlibs`der die JS- und CSS-Dateien enthält, die zum Rendern der Seiten Ihrer Site verwendet werden.
 
@@ -45,7 +45,7 @@ Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** für den neuen `c
 * Klicken Sie auf **[!UICONTROL Hinzufügen]**
 * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
-Hinweis: dem Wert &quot;Kategorien&quot;mit &quot;Apps&quot;voranstellen. ist eine Konvention, die &#39;besitzende Anwendung&#39; als im Ordner /apps, nicht als /libs identifiziert.  WICHTIG: Hinzufügen Platzhalter `js.txt` und `css.txt` Dateien. (Es handelt sich nicht offiziell um cq:ClientLibraryFolder ohne diese.)
+Hinweis: dem Wert &quot;Kategorien&quot;mit &quot;Apps&quot;voranstellen. ist eine Konvention, die &#39;besitzende Anwendung&#39; als im Ordner /apps, nicht als /libs identifiziert.  WICHTIG: hinzufügen Platzhalter `js.txt` und `css.txt` Dateien. (Es handelt sich nicht offiziell um cq:ClientLibraryFolder ohne diese.)
 
 
 1. Rechtsklick auf **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -124,7 +124,7 @@ Sobald apps.an-scf-sandbox clientlibs enthalten ist, wird die Komponente &quot;S
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-Die Include-Anweisung gehört zum <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> Abschnitt <html> script. Die Standardeinstellung **`foundation head.jsp`** enthält ein Skript, das überlagert werden kann: **`headlibs.jsp`**.
+Die include-Anweisung gehört zum `<head>` Abschnitt des `<html>` Skripts. Die Standardeinstellung **`foundation head.jsp`** enthält ein Skript, das überlagert werden kann: **`headlibs.jsp`**.
 
 **Kopieren Sie die Datei &quot;headlibs.jsp&quot;und schließen Sie clientlibs ein:**
 
