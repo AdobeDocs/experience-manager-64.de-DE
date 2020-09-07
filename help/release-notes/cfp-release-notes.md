@@ -4,9 +4,9 @@ description: Versionshinweise speziell für Adobe Experience Manager 6.4 Cumulat
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
+source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
 workflow-type: tm+mt
-source-wordcount: '3331'
+source-wordcount: '3364'
 ht-degree: 16%
 
 ---
@@ -171,6 +171,7 @@ AEM Cumulative Fix Pack 6.4.8.1 ist von AEM 6.4 Service Pack 8 abhängig. Daher 
 
 Einige der wichtigsten Highlights von AEM 6.4.8.1 sind:
 
+* Der anonyme Zugriff auf CRXDE Lite ist nicht erlaubt, um die Sicherheit zu erhöhen. Stattdessen werden die Benutzer zum Anmeldebildschirm weitergeleitet. See [developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 * Die Paketfreigabe-Integration mit Adobe Experience Manager wurde entfernt.
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.21 aktualisiert.
 
@@ -180,6 +181,7 @@ In Adobe Experience Manager 6.4.8.1 wurden die folgenden Probleme behoben:
 
 #### Sites {#sites-6481}
 
+* Anonyme Benutzer können auf die Funktionen von CRX DE Lite zugreifen (NPR-33522).
 * Wenn der Name einer lokalen Komponente in einer LiveCopy mit dem Namen einer Komponente im Entwurf identisch ist und die Komponente aus dem Blueprint herausgegeben wird, wird dem Namen der lokalen Komponente kein Begriff _msm_move hinzugefügt (NPR-33207).
 * Die an die ursprüngliche Anforderung angehängten Parameter sind nicht in der Umleitungs-URL (NPR-33174) enthalten.
 * Wenn die Option &quot;Coral.Select&quot;emptyOption=true setzt oder ein Standardelement mit Wert = &quot;&quot; enthält, tritt in der Datei dropdownshowhide.js ein Fehler auf: Nicht abgefangener TypeError: component.getValue ist keine Funktion (NPR-33163).
