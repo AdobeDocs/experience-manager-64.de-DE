@@ -3,10 +3,10 @@ title: Kaskadierende Metadaten
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 96%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -14,6 +14,10 @@ ht-degree: 96%
 # Kaskadierende Metadaten {#cascading-metadata}
 
 In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
+
+>[!CAUTION]
+>
+>Das Kaskadieren von Metadaten wird für Inhaltsfragmente nicht unterstützt.
 
 Beim Erfassen der Metadateninformationen eines Assets geben Benutzer Informationen in den verschiedenen verfügbaren Feldern an. Sie können bestimmte Metadatenfelder oder Feldwerte anzeigen, die von den in anderen Feldern ausgewählten Optionen abhängig sind. Solche bedingt angezeigten Metadaten werden als „kaskadierende Metadaten“ bezeichnet. Anders ausgedrückt können Sie eine Abhängigkeit zwischen einem bestimmten Metadatenfeld/-wert und einem oder mehreren Feldern und/oder dessen/deren Werten schaffen.
 
