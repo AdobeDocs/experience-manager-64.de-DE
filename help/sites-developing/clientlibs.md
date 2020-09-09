@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 59%
@@ -63,7 +63,7 @@ Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, al
 
 ## Referenzieren von clientseitigen Bibliotheken {#referencing-client-side-libraries}
 
-Da HTL die bevorzugte Technologie zur Entwicklung von AEM-Sites ist, sollte HTL verwendet werden, um clientseitige Bibliotheken in AEM einzuschließen. Sie können jedoch auch JSP verwenden.
+Da HTL die bevorzugte Technologie zur Entwicklung von AEM Sites ist, sollte HTL verwendet werden, um clientseitige Bibliotheken in AEM einzuschließen. Sie können jedoch auch JSP verwenden.
 
 ### Verwendung von HTL {#using-htl}
 
@@ -181,8 +181,8 @@ Then you set the `allowProxy` property on `foo` to true.
 1. Wählen Sie den Client-Bibliotheksordner aus und klicken Sie auf **Erstellen > Datei erstellen**.
 1. Geben Sie in das Dateinamenfeld einen der folgenden Dateinamen ein und klicken Sie auf „OK“:
 
-   * **`js.txt`:**Verwenden Sie diesen Dateinamen, um eine JavaScript-Datei zu erzeugen.
-   * **`css.txt`:**Verwenden Sie diesen Dateinamen, um ein Cascading Style Sheet zu erzeugen.
+   * **`js.txt`:** Verwenden Sie diesen Dateinamen, um eine JavaScript-Datei zu erzeugen.
+   * **`css.txt`:** Verwenden Sie diesen Dateinamen, um ein Cascading Style Sheet zu erzeugen.
 
 1. Öffnen Sie die Datei und geben Sie den folgenden Text ein, um das Stammverzeichnis des Pfads der Quelldateien anzugeben:
 
@@ -242,7 +242,6 @@ In some cases you may find that the final HTML generated for typical page by you
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -303,7 +302,7 @@ Verwenden Sie die Eigenschaft `channels` eines Client-Bibliotheksordners, um die
 
 To associate a client library folder with a device group, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
-* **Name:** Kanal
+* **Name:** kanal
 * **Typ:** String`[]`
 * **Werte:** Der Name der mobilen Gruppe. Um den Bibliotheksordner aus einer Gruppe auszuschließen, setzen Sie ein Ausrufezeichen („!“) vor den Namen.
 
@@ -315,7 +314,7 @@ For example, the following table lists the value of the `channels` property for 
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*kein Wert *`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*kein Wert*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
