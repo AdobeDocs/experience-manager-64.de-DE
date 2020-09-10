@@ -3,10 +3,10 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal konfigurieren, um Assets und Sammlungen im Markenportal zu veröffentlichen. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 63%
+source-wordcount: '1678'
+ht-degree: 61%
 
 ---
 
@@ -254,10 +254,6 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
    >
    >Die Replizierungsagenten arbeiten parallel und teilen die Auftragsverteilung gleichmäßig, wodurch die Veröffentlichungsgeschwindigkeit um das Vierfache der Originalgeschwindigkeit steigt. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
 
-   >[!NOTE]
-   >
-   >Vermeiden Sie es, einen der Replikationsagenten zu deaktivieren, da dies dazu führen kann, dass die Replikation einiger Assets fehlschlägt.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -267,15 +263,13 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
 
    ![](assets/test-integration5.png)
 
-   >[!NOTE]
-   >
-   >Die Replizierungsagenten arbeiten parallel und teilen die Auftragsverteilung gleichmäßig, wodurch die Veröffentlichungsgeschwindigkeit um das Vierfache der Originalgeschwindigkeit steigt. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
 
 1. Überprüfen Sie die Testergebnisse für alle vier Replizierungsagenten einzeln.
 
    >[!NOTE]
    >
    >Vermeiden Sie es, einen der Replikationsagenten zu deaktivieren, da dies dazu führen kann, dass die Replikation einiger Assets fehlschlägt.
+   >Stellen Sie sicher, dass alle vier Replizierungsagenten so konfiguriert sind, dass kein Timeout-Fehler auftritt. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Markenportal wurde erfolgreich mit Ihrer AEM Assets-Autoreninstanz konfiguriert. Sie können jetzt:
 
