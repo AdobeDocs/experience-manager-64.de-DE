@@ -9,10 +9,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -49,7 +49,7 @@ Die `PageModelManager` Bibliothek wird als NPM-Paket bereitgestellt, das von ein
 
 Es abstrahiert den Abruf und die Verwaltung der JSON-Struktur, die die eigentliche Inhaltsstruktur darstellt, im Namen der SPA. Es ist auch für die Synchronisierung mit der SPA verantwortlich, um ihr mitzuteilen, wann sie ihre Komponenten wiedergeben muss.
 
-Siehe NPM-Paket [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Siehe NPM-Paket [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Beim Initialisieren der App lädt `PageModelManager`die Bibliothek zunächst das bereitgestellte Stammmodell der App (über Parameter, Metadateneigenschaft oder aktuelle URL). Wenn die Bibliothek erkennt, dass das Modell der aktuellen Seite nicht Teil des Stammmodells ist, wird es abgerufen und als Modell einer untergeordneten Seite eingefügt.
 
@@ -99,14 +99,14 @@ Die Trennung von Anliegen erleichtert die Projektdurchführung. Daher sollte ein
 
 Um die Interoperabilität der Bibliotheken zu erleichtern, empfiehlt Adobe dem Framework-spezifischen Modul, die folgenden Bibliotheken zu bündeln. Bei Bedarf kann die Ebene die zugrunde liegenden APIs einkapseln und anpassen, bevor sie dem Projekt bereitgestellt werden.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementierungen {#implementations}
 
 #### React {#react}
 
-npm-Modul: [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+npm-Modul: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
@@ -169,7 +169,7 @@ Die Komponente &quot;Responsive Grid&quot;sollte ihrem AEM vorab zugeordnet werd
 * `gridClassNames:` Klassennamen für das interaktive Raster bereitgestellt
 * `columnClassNames:` Klassennamen für die reagierende Spalte bereitgestellt
 
-Siehe auch npm resource [@adobe/cq-response-editable-components#srccomponentsResponsiveGridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Siehe auch npm resource [@adobe/aem-response-editable-components#srccomponent-responsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Platzhalter für das Reponsiv-Raster {#placeholder-of-the-reponsive-grid}
 
