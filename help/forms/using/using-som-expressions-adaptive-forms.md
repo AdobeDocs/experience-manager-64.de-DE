@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 89%
@@ -26,7 +26,7 @@ Die folgende Abbildung zeigt eine Knotenstruktur, in die ein adaptives Formular 
 
 ![DOM-Baumstruktur](assets/hierarchy-1.png)
 
-Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird das Präfix `guide[0].guide1[0]` vorangestellt. Die Position einer Komponente in der hierarchischen Knotenstruktur wird zum Ableiten ihres SOM-Ausdrucks verwendet.
+Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird das Präfix `guide[0].guide1[0]` ] vorangestellt. Die Position einer Komponente in der hierarchischen Knotenstruktur wird zum Ableiten ihres SOM-Ausdrucks verwendet.
 
 ![DOM-Baumstruktur mit zwei Optionsfeldern](assets/hierarchy_radio_button.png)
 
