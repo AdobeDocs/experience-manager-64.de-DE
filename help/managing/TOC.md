@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Verwalten des Benutzerhandbuchs
+breadcrumb-title: Managing Guide
 user-guide-description: Learn how to manage an AEM project.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 79%
@@ -19,7 +20,7 @@ ht-degree: 79%
 + Verwalten - Checkliste mit Best Practices {#managing-best-practices-checklist}
    + [Verwalten von Projekten - Checkliste mit Best Practices](best-practices.md)
    + [Die Checkliste](best-practices-checklist.md)
-   + [Glossar  ](best-practices-glossary.md)
+   + [Glossar ](best-practices-glossary.md)
    + [Die Checkliste - Weitere Referenzen](best-practices-further-reference.md)
 + Verwalten - weitere Referenzen {#managing-further-reference}
    + [Hardware-Skalierungsrichtlinien](hardware-sizing-guidelines.md)
