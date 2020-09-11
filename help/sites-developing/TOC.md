@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Entwicklerhandbuch
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 80%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 + [Entwicklerhandbuch - Übersicht](home.md)
 + Einführung für Entwickler{#introduction}
-   + [Erste Schritte bei der Entwicklung von AEM-Sites – WKND-Tutorial](getting-started.md)
+   + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](getting-started.md)
    + [Grundlegende AEM-Konzepte](the-basics.md)
    + [Struktur der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-structure.md)
    + [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-concepts.md)
@@ -114,7 +114,7 @@ ht-degree: 80%
       + [SPA-Modell-Routing](spa-routing.md)
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
       + [SPA- und serverseitiges Rendering](spa-ssr.md)
-      + [JavaScript-API-Referenzen für SPAs](spa-reference-materials.md)
+      + [SPA-Referenzmaterialien](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
    + [Inhaltsfragmente](/help/assets/content-fragments.md)
    + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
@@ -134,7 +134,7 @@ ht-degree: 80%
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung     {#personlization}
++ Personalisierung  {#personlization}
    + [ContextHub](contexthub.md)
    + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
