@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Mobile Benutzerhandbuch
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 26%
@@ -77,7 +78,7 @@ ht-degree: 26%
    + [Erstellen und Bearbeiten von Apps mit der Apps-Konsole](phonegap-apps-console.md)
    + [Ist Ihre Hybrid-App für AEM Mobile bereit?](phonegap-adding-content-to-imported-app.md)
    + [Gerätefunktionen aufrufen](phonegap-access-device-features.md)
-   + [Hinzufügen von Adobe Analytics zur Mobilanwendung](phonegap-add-analytics-to-apps.md)
+   + [hinzufügen von Adobe Analytics zur Mobilanwendung](phonegap-add-analytics-to-apps.md)
    + [Seitenvorlagen für mobile Apps](phonegap-apps-arch-page-templates.md)
    + [Adobe Target Cloud Service konfigurieren](aem-mobile-configuring-cloud-service.md)
    + [Einzelseiten-Webanwendungen](phonegap-single-page-applications.md)
