@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: d731d290738403f41e601da8e9bdb9bd3b94bcd4
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '9984'
 ht-degree: 6%
@@ -224,7 +224,7 @@ Weisen Sie den Feldern, die zur `BLOB` Instanz gehören, wie folgt Werte zu:
 
 Das Übertragungsprotokoll für zurückgegebene `BLOB` Objekte hängt von mehreren Faktoren ab, die in der folgenden Reihenfolge berücksichtigt werden, und endet, wenn die Hauptbedingung erfüllt ist:
 
-1. **Zielgruppe URL gibt das Übertragungsprotokoll** an. Wenn die beim SOAP-Aufruf angegebene Zielgruppen-URL den Parameter `blob="`*BLOB_TYPE *enthält, bestimmt* BLOB_TYPE *das Übertragungsprotokoll.* BLOB_TYPE *ist ein Platzhalter für base64, dime, mime, http, mtom oder sWaref.
+1. **Zielgruppe URL gibt das Übertragungsprotokoll** an. Wenn die beim SOAP-Aufruf angegebene Zielgruppen-URL den Parameter `blob="`*BLOB_TYPE* enthält, bestimmt *BLOB_TYPE* das Übertragungsprotokoll. *BLOB_TYPE* ist ein Platzhalter für base64, dime, mime, http, mtom oder sWaref.
 1. **Service SOAP-Endpunkt ist Smart**. Wenn die folgenden Bedingungen erfüllt sind, werden die Output-Dokumente mit demselben Übertragungsprotokoll wie die Input-Dokumente zurückgegeben:
 
    * Der SOAP-Endpunkt-Parameter des Dienstes &quot;Standardprotokoll für Output Blob-Objekte&quot;ist auf &quot;Smart&quot;eingestellt.
@@ -361,17 +361,17 @@ Die Adobe Developer-Website enthält den folgenden Artikel, in dem das Aufrufen 
 
 ## Java-Proxyklassen mit JAX-WS erstellen {#creating-java-proxy-classes-using-jax-ws}
 
-Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxyklassen zu konvertieren. Mit diesen Klassen können Sie AEM Forms-Dienstvorgänge aufrufen. Mit Apache Ant können Sie ein Buildskript erstellen, das Java-Proxyklassen durch Verweis auf eine AEM Forms-Dienst-WSDL generiert. Führen Sie die folgenden Schritte aus, um JAX-WS-Proxydateien zu generieren:
+Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxyklassen zu konvertieren. Diese Klassen ermöglichen es Ihnen, AEM Forms-Dienstvorgänge aufzurufen. Mit Apache Ant können Sie ein Buildskript erstellen, das Java-Proxyklassen durch Verweis auf eine AEM Forms-Dienst-WSDL generiert. Führen Sie die folgenden Schritte aus, um JAX-WS-Proxydateien zu generieren:
 
 1. Installieren Sie Apache Ant auf dem Clientcomputer. (Siehe [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).)
 
-   * Hinzufügen Sie den Ordner &quot;bin&quot;in Ihren Klassenpfad.
+   * hinzufügen Sie den Ordner &quot;bin&quot;in Ihren Klassenpfad.
    * Legen Sie die Variable &quot; `ANT_HOME` Umgebung&quot;auf den Ordner fest, in dem Sie Ant installiert haben.
 
 1. Installieren Sie JDK 1.6 oder höher.
 
-   * Hinzufügen Sie den JDK-Ordner &quot;bin&quot;in Ihren Klassenpfad.
-   * Hinzufügen Sie den JRE-Ordner &quot;bin&quot;in Ihren Klassenpfad. Diese Ablage befindet sich im Ordner [*JDK_INSTALL_LOCATION*]/jre.
+   * hinzufügen Sie den JDK-Ordner &quot;bin&quot;in Ihren Klassenpfad.
+   * hinzufügen Sie den JRE-Ordner &quot;bin&quot;in Ihren Klassenpfad. Diese Ablage befindet sich im Ordner [*JDK_INSTALL_LOCATION*]/jre.
    * Legen Sie die Variable &quot; `JAVA_HOME` Umgebung&quot;auf den Ordner fest, in dem Sie das JDK installiert haben.
 
    JDK 1.6 enthält das in der Datei &quot;build.xml&quot;verwendete wsimport-Programm. JDK 1.5 enthält dieses Programm nicht.
@@ -482,7 +482,7 @@ Sie können die Java-Bibliotheksdateien von Axis wie folgt generieren:
 
 1. Installieren Sie Apache Ant auf dem Clientcomputer. Sie ist unter [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi)verfügbar.
 
-   * Hinzufügen Sie den Ordner &quot;bin&quot;in Ihren Klassenpfad.
+   * hinzufügen Sie den Ordner &quot;bin&quot;in Ihren Klassenpfad.
    * Legen Sie die Variable &quot; `ANT_HOME` Umgebung&quot;auf den Ordner fest, in dem Sie Ant installiert haben.
 
 1. Installieren Sie Apache Axis 1.4 auf dem Clientcomputer. Sie ist unter [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md)verfügbar.
@@ -530,7 +530,7 @@ Sie können die Java-Bibliotheksdateien von Axis wie folgt generieren:
 
    >[!NOTE]
    >
-   >Es gibt verschiedene Möglichkeiten, .JAVA-Dateien in eine JAR-Datei zu setzen. Eine Möglichkeit ist die Verwendung einer Java IDE wie Eclipse. Erstellen Sie ein Java-Projekt und erstellen Sie ein `com.adobe.idp.services`*-Paket (alle .JAVA-Dateien gehören zu diesem Paket). Importieren Sie als Nächstes alle JAVA-Dateien in das Paket. Exportieren Sie das Projekt schließlich als JAR-Datei.*
+   >Es gibt verschiedene Möglichkeiten, .JAVA-Dateien in eine JAR-Datei zu setzen. Eine Möglichkeit ist die Verwendung einer Java IDE wie Eclipse. Erstellen Sie ein Java-Projekt und erstellen Sie ein `com.adobe.idp.services`*-Paket (alle .JAVA-Dateien gehören zu diesem Paket). Importieren Sie dann alle JAVA-Dateien in das Paket. Exportieren Sie das Projekt schließlich als JAR-Datei.*
 
 1. Ändern Sie die URL in der `EncryptionServiceLocator` Klasse, um den Kodierungstyp anzugeben. Um beispielsweise base64 zu verwenden, müssen Sie `?blob=base64` sicherstellen, dass das `BLOB` Objekt Binärdaten zurückgibt. Suchen Sie also in der `EncryptionServiceLocator` Klasse die folgende Codezeile:
 
@@ -544,7 +544,7 @@ Sie können die Java-Bibliotheksdateien von Axis wie folgt generieren:
     http://localhost:8080/soap/services/EncryptionService?blob=base64;
    ```
 
-1. Hinzufügen Sie die folgenden Axis-JAR-Dateien in den Klassenpfad Ihres Java-Projekts:
+1. hinzufügen Sie die folgenden Axis-JAR-Dateien in den Klassenpfad Ihres Java-Projekts:
 
    * activation.jar
    * achse.jar
@@ -1117,7 +1117,7 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Berücksichtigen Sie den `MyAp
    * Ein Zeichenfolgenwert, der den Speicherort des PDF-Dokuments angibt, das an den AEM Forms-Prozess übergeben wird.
 
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden.
-1. Hinzufügen Sie die DIME-Anlage an das `BLOB` Objekt, indem Sie den `Microsoft.Web.Services2.Dime.DimeAttachment` Datenelementwert des Objekts `Id` dem `BLOB` - `attachmentID` Datenmember zuweisen.
+1. hinzufügen Sie die DIME-Anlage an das `BLOB` Objekt, indem Sie den `Microsoft.Web.Services2.Dime.DimeAttachment` Datenelementwert des Objekts `Id` dem `BLOB` - `attachmentID` Datenmember zuweisen.
 1. Rufen Sie die `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` Methode auf und übergeben Sie das `Microsoft.Web.Services2.Dime.DimeAttachment` Objekt.
 1. Rufen Sie den `MyApplication/EncryptDocument` Prozess auf, indem Sie die `EncryptDocumentServiceWse` Methode des `invoke` `BLOB` Objekts aufrufen und das Objekt übergeben, das die DIME-Anlage enthält. Dieser Vorgang gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB` Objekts zurück.
 1. Rufen Sie den Wert der Anlagenkennung ab, indem Sie den Wert des zurückgegebenen `BLOB` Objektdatenelements abrufen `attachmentID` .
