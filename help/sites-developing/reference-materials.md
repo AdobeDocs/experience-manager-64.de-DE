@@ -11,10 +11,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
-source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 79%
+ht-degree: 72%
 
 ---
 
@@ -39,10 +39,10 @@ AEM stellt mehrere APIs für die Entwicklung von Anwendungen bereit. Die folgend
 
 AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Referenzen:
 
-* [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [Angular bearbeitbare Komponenten](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Angular bearbeitbare Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 APIs für AEM-Bereitstellung und Content Management:
 
