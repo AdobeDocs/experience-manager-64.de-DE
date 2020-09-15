@@ -4,9 +4,9 @@ description: Versionshinweise speziell für Adobe Experience Manager 6.4 Cumulat
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
+source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3402'
 ht-degree: 16%
 
 ---
@@ -165,7 +165,7 @@ Informationen zu Sicherheitsaktualisierungen finden Sie auf der Seite [zu Sicher
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
-AEM Cumulative Fix Pack 6.4.8.1 ist ein wichtiges Update, das seit der allgemeinen Verfügbarkeit von AEM 6.4 Service Pack 8 (6.4.8.0) im März 2020 einige interne und kundenspezifische Fehlerbehebungen enthält.
+AEM Cumulative Fix Pack 6.4.8.1 ist ein wichtiges Update, das seit der allgemeinen Verfügbarkeit von AEM 6.4 Service Pack 8 (6.4.8.0) im März 2020 mehrere interne und kundenspezifische Fehlerbehebungen enthält.
 
 AEM Cumulative Fix Pack 6.4.8.1 ist von AEM 6.4 Service Pack 8 abhängig. Daher müssen Sie das AEM Cumulative Fix Pack 6.4.8.1 Paket nach der Installation von AEM 6.4 Service Pack 8 installieren.
 
@@ -361,7 +361,7 @@ Informationen zum Installieren des kumulativen Installationsprogramms für AEM F
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.8.2 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+The Uber Jar for AEM 6.4.8.2 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -373,6 +373,10 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>Ab dieser Version sind UberJar und andere zugehörige Artefakte im Maven Central Repository anstelle der Adobe Public Maven Repository (repo.adobe.com) verfügbar. Die UberJar-Hauptdatei wird in `uber-jar-<version>.jar`. Daher gibt es für das `classifier`Tag keine Werte `apis` mit `dependency` dem Wert.
 
 ## Entfernte/veraltete Funktionen {#removed-deprecated-features}
 
