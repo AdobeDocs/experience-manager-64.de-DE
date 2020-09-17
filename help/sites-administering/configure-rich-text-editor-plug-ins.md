@@ -3,9 +3,9 @@ title: 'Konfigurieren der Rich-Text-Editor-Plug-ins    '
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4204'
 ht-degree: 94%
 
 ---
@@ -706,7 +706,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
       * **Name** `cssExternal`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
-   * Array von gültigen **Protokollen** (unter anderem: https://, https:// file://, mailto:)
+   * Array mit gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://`und `mailto:`.
 
       * **Name** `protocols`
       * **Typ** `String[]`
