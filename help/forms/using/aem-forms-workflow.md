@@ -5,11 +5,11 @@ description: Verwenden Sie AEM Forms-Workflows zum Automatisieren und schnellen 
 seo-description: Verwenden Sie AEM Forms-Workflows zum Automatisieren und schnellen Erstellen von Überprüfungen und Genehmigungen, zum Starten von Document Services (z. B. zum Konvertieren eines PDF-Dokuments in ein anderes Format), zum Integrieren in Signatur-Workflows mit Adobe Sign und mehr.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 91%
@@ -238,7 +238,7 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
    <td>Geben Sie den Namen für den überwachten Ordner ein. In diesem Feld muss ein alphanumerischer Wert eingegeben werden.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Pfad         </span></td> 
+   <td><span class="uicontrol">Pfad          </span></td> 
    <td>Geben Sie den physischen Speicherort des überwachten Ordners ein. Verwenden Sie in einer Clusterumgebung einen freigegebenen Netzwerkordner, auf den über einen AEM-Clusterknoten zugegriffen werden kann.</td> 
   </tr> 
   <tr> 
