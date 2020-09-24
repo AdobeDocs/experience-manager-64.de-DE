@@ -5,10 +5,10 @@ description: In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 3
 seo-description: In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: Configuration
+topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 76%
@@ -20,7 +20,7 @@ ht-degree: 76%
 
 In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Microsoft® Dynamics 365 ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Interessenten, Chancen und Fällen bietet.
 
