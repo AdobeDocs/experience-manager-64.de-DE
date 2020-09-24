@@ -6,10 +6,10 @@ seo-description: AEM Forms bietet eine benutzerfreundliche, aber leistungsstarke
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3076'
 ht-degree: 82%
@@ -19,7 +19,7 @@ ht-degree: 82%
 
 # Einführung in das Authoring adaptiver Formulare  {#introduction-to-authoring-adaptive-forms}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Adaptive Formulare bieten Ihnen die Möglichkeit, ansprechende, interaktive, dynamische und adaptive Formulare zu erstellen. AEM Forms bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen von adaptiven Formularen und für die Arbeit mit diesen. Sie können adaptive Formulare auf Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
