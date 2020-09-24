@@ -5,11 +5,11 @@ description: Adaptive Formulare können ein XML-Schema als Formularmodell verwen
 seo-description: Adaptive Formulare können ein XML-Schema als Formularmodell verwenden, sodass Sie vorhandene XSD-Vorlagen nutzen können, um adaptive Formulare zu erstellen. Sie können Schemaelemente per Drag & Drop von XSD in Ihr adaptives Formular verschieben.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 92%
