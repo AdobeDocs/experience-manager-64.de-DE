@@ -5,11 +5,11 @@ description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne 
 seo-description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne Programmierung oder Scripting dynamisches Verhalten und komplexe Logik in Ihre Formulare zu integrieren.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6348'
 ht-degree: 80%
@@ -19,7 +19,7 @@ ht-degree: 80%
 
 # Regeleditor für adaptive Formulare {#adaptive-forms-rule-editor}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die Regeleditorfunktion in Adobe Experience Manager Forms ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz beim schnellen und korrekten Ausfüllen der Formulare.
 
@@ -158,7 +158,7 @@ For more information about configuring services in form data model, see [AEM For
 
 **Formular** überprüfen Validiert das Formular.
 
-**Hinzufügen Instanz** fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
+**hinzufügen Instanz** fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
 **Instanz** entfernen Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
@@ -652,7 +652,7 @@ var c = {
 
 Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). Sie können den Titel und eine Vorschau der Regelübersicht anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![Listen](assets/list-rules.png)
+![listen](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln durchführen:
 
