@@ -6,10 +6,10 @@ seo-description: AEM Forms bietet Tools zum Verwalten adaptiver Formulare und zu
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 80%
