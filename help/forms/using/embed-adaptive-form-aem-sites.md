@@ -6,10 +6,10 @@ seo-description: Sie können adaptive Formulare in den AEM-Site-Seiten einbetten
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 75%
@@ -19,7 +19,7 @@ ht-degree: 75%
 
 # Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM-Sites-Seite ein.{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit AEM Forms können Formularentwickler nahtlos adaptive Formulare in eine AEM-Site-Seite oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und versenden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
 
@@ -27,9 +27,9 @@ For information about embedding an adaptive form in an external web page, see [E
 
 Auf der Seite &quot;AEM Sites&quot;können Sie ein adaptives Formular oder eine interaktive Kommunikation hinzufügen, indem Sie:
 
-* **[AEM Forms-Container-Komponente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms bietet eine Komponente, die Sie Ihren Siteseiten hinzufügen können. Über die AEM Forms-Container-Komponente können Sie ein adaptives Formular und interaktive Kommunikation einbetten.
+* **[AEM Forms-Container-Komponente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** AEM Forms bietet eine Komponente, die Sie Ihren Siteseiten hinzufügen können. Über die AEM Forms-Container-Komponente können Sie ein adaptives Formular und interaktive Kommunikation einbetten.
 
-* **[Asset Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**Alle Formulare und interaktiven Kommunikationen, die Sie erstellen, sind unter „Assets“ verfügbar. Sie können das Formular als Asset auf Ihrer Seite per Drag&amp;Drop einfügen.
+* **[Asset Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** Alle Formulare und interaktiven Kommunikationen, die Sie erstellen, sind unter „Assets“ verfügbar. Sie können das Formular als Asset auf Ihrer Seite per Drag&amp;Drop einfügen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -72,7 +72,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithil
 Betrachten wir die folgenden Szenarien für die Veröffentlichung eines eingebetteten Assets (eingebettetes Formular oder interaktive Kommunikation) in der AEM-Site-Seite:
 
 * Wenn Sie die AEM-Siteseite zum ersten Mal veröffentlichen und sie ein eingebettetes adaptives Formular oder interaktive Kommunikation enthält, veröffentlichen Sie die Siteseite und das eingebettete Formular oder Dokument.
-* Wenn Sie nur das eingebettete adaptive Formular oder die interaktive Kommunikation auf einer veröffentlichten Siteseite geändert haben, veröffentlichen Sie das ursprüngliche Asset und die Änderungen werden auf der Seite der veröffentlichten Site übernommen. Die veröffentliche Site-Seite enthält einen Verweis auf das Asset und erfordert kein erneutes Veröffentlichen der Seite.
+* Wenn Sie nur das eingebettete adaptive Formular oder die interaktive Kommunikation auf einer veröffentlichten Siteseite geändert haben, veröffentlichen Sie das ursprüngliche Asset und die Änderungen werden auf der veröffentlichten Siteseite übernommen. Die veröffentliche Site-Seite enthält einen Verweis auf das Asset und erfordert kein erneutes Veröffentlichen der Seite.
 * Wenn Sie die Site-Seite und das eingebettete adaptive Formular oder die interaktive Kommunikation geändert haben, veröffentlichen Sie die Sites-Seite und das eingebettete Asset erneut.
 
 ## Modifying embedded adaptive form and interactive communication {#modifying-embedded-adaptive-form-and-interactive-communication}
