@@ -6,10 +6,10 @@ seo-description: Mit dem AEM-Posteingang können Sie formularzentrierte Workflow
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 83%
@@ -70,7 +70,7 @@ Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügb
    >
    >Wenn eine Aufgabe einer Gruppe zugewiesen ist, müssen Sie sie annehmen, damit Sie sie in der detaillierten Ansicht anzeigen können.
 
-![Aufgabe-Details](assets/task-details.png)
+![aufgabe-Details](assets/task-details.png)
 
 Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
