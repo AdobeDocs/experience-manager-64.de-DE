@@ -5,11 +5,11 @@ description: Sie können Designs verwenden, um ein adaptives Formular oder eine 
 seo-description: Sie können Designs verwenden, um ein adaptives Formular oder eine interaktive Kommunikation zu stilisieren und eine visuelle Identität bereitzustellen. Sie können ein Design für beliebig viele adaptive Formulare oder interaktive Kommunikationen freigeben.
 uuid: 7fa8afd9-8454-44a5-939b-b213b9a800cc
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 78%
@@ -61,7 +61,7 @@ Sie können Designs als Zip-Datei exportieren und diese in anderen Projekten ode
 
 1. In the Themes page, select a theme, and click **[!UICONTROL Download]**. Ein Dialogfeld mit den Details des Designs wird angezeigt.
 
-1. Klicken Sie auf **[!UICONTROL Herunterladen]**. Das Design wird als eine zip.-Datei heruntergeladen.
+1. Klicken Sie auf **[!UICONTROL Download]**. Das Design wird als eine zip.-Datei heruntergeladen.
 
 >[!NOTE]
 >
