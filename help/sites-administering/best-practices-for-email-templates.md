@@ -7,10 +7,10 @@ uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: best-practices, integration
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 48%
@@ -53,11 +53,11 @@ Stellen Sie sicher, dass sich die Seite unter einer Übergeordnet angezeigten Se
    <td><strong>Implementierung</strong></td> 
   </tr> 
   <tr> 
-   <td><p>Geben Sie den Dokument-Typ an, um eine einheitliche Darstellung sicherzustellen.</p> <p>Hinzufügen DOCTYPE am Anfang (HTML oder XHTML)</p> </td> 
+   <td><p>Geben Sie den Dokument-Typ an, um eine einheitliche Darstellung sicherzustellen.</p> <p>hinzufügen DOCTYPE am Anfang (HTML oder XHTML)</p> </td> 
    <td><p>Ist konfigurierbar durch Änderung der <i>Eigenschaft cq:doctype</i> in<i>"/etc/designs/default/jcr:content/Kampagne_newsletterpage"</i></p> <p>Die Standardeinstellung ist "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//DE" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in "HTML_5"geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>Hinzufügen CHARSET-Erklärung (z. B. iso-8859-15, UTF-8) bis</p> </td> 
+   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>hinzufügen CHARSET-Erklärung (z. B. iso-8859-15, UTF-8) bis</p> </td> 
    <td><p>Ist auf UTF-8 eingestellt.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
   </tr> 
   <tr> 
@@ -93,10 +93,10 @@ Stellen Sie sicher, dass sich die Seite unter einer Übergeordnet angezeigten Se
 
 | **Best Practice** | **Implementierung** |
 |---|---|
-| Hinzufügen von *Alt* -Attributen zu Bildern | Das *Alt* -Attribut wurde als obligatorisch für die Bildkomponente definiert. |
+| hinzufügen von *Alt* -Attributen zu Bildern | Das *Alt* -Attribut wurde als obligatorisch für die Bildkomponente definiert. |
 | Verwenden Sie *das Format &quot;jpg* &quot;anstelle des *PNG* -Formats für Bilder | Bilder werden immer als JPG von der Bildkomponente bereitgestellt. |
 | Verwenden Sie `<img>` in einer Tabelle Elemente anstelle von Hintergrundbildern. | In den Vorlagen werden keine Hintergrundbilddaten verwendet. |
-| Hinzufügen attribute style=&quot;display block&quot; auf Bildern. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
+| hinzufügen attribute style=&quot;display block&quot; auf Bildern. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
 
 ## Text und Links {#text-and-links}
 
@@ -125,7 +125,7 @@ Stellen Sie sicher, dass sich die Seite unter einer Übergeordnet angezeigten Se
 |---|---|
 | Verwenden Sie den W3C-Validator, um den HTML-Code zu korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Code wurde validiert. Bei XHTML-Übergangsdokumenten fehlt nur das fehlende xmlns-Attribut für das `<html>` Element. |
 | Machen Sie sich keine Gedanken mit JavaScript oder Flash - diese Technologien werden von E-Mail-Clients weitgehend nicht unterstützt. | In der Newslettervorlage werden weder JavaScript noch Flash verwendet. |
-| Hinzufügen einer Nur-Text-Version für mehrteilige Versand. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
+| hinzufügen einer Nur-Text-Version für mehrteilige Versand. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
 
 ## Kampagnen-Newsletter – Vorlagen und Beispiele {#campaign-newsletter-templates-and-examples}
 
