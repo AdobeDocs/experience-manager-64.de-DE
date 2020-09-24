@@ -5,12 +5,12 @@ description: Sie erfahren in diesem Artikel, wie Sie eine Vorlage für ein Daten
 seo-description: Sie erfahren in diesem Artikel, wie Sie eine Vorlage für ein Datensatzdokument (DoR, Document of Record) für adaptive Formulare erstellen können.
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 66%
@@ -20,7 +20,7 @@ ht-degree: 66%
 
 # Generierung eines Datensatzdokuments für adaptive Formulare {#generate-document-of-record-for-adaptive-forms}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Nachdem Ihre Kunden ein Formular übermittelt haben, möchten sie im Allgemeinen in gedruckter Form oder im Dokumentformat Aufzeichnungen über die eingegebenen Informationen behalten, um später darauf zurückzukommen. Dies wird als Datensatzdokument bezeichnet.
 
@@ -385,7 +385,7 @@ Beachten Sie beim Arbeiten am Dokument der Aufzeichnung für adaptive Formulare 
 
 * Dokument von Datensatzvorlagen unterstützt keinen Rich-Text. Rich-Text im statischen adaptiven Formular oder bei den vom Endbenutzer ausgefüllten Informationen wird daher im Datensatzdokument als Nur-Text angezeigt.
 * Dokumentfragmente in einem adaptiven Formular werden im Datensatzdokument nicht angezeigt. Adaptive Formularfragmente werden jedoch nicht unterstützt.
-* Dokument des Datensatzes wird nur für Druckzwecke verwendet.
+* dokument des Datensatzes wird nur für Druckzwecke verwendet.
 * Die Inhaltsbindung in Datensatzdokumenten, die für XML-Schema-Basierte adaptive Formulare generiert werden, wird nicht unterstützt.
 * Die Inhaltsbindung in Datensatzdokumenten, die für XML-Schema-Basierte adaptive Formulare generiert werden, wird nicht unterstützt.
 * Lokalisierte Versionen des DoR werden nach Wunsch für ein Gebietsschema erstellt, wenn der Benutzer das Rendern des DoR anfordert. Die Lokalisierung von DoR tritt zusammen mit der Lokalisierung des adaptiven Formulars auf. Siehe [Verwenden von AEM-Übersetzungs-Arbeitsablauf zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
