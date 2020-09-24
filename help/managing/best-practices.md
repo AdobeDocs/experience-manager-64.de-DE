@@ -6,11 +6,11 @@ seo-description: 'Die Verwaltung eines Projekts zur Implementierung von Adobe Ex
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 93%
@@ -57,7 +57,7 @@ Das Arbeitsblatt zum **Projekt-Heartbeat** gibt eine graphische Übersicht über
 
 ## Status nach Rolle {#status-by-role}
 
-Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der **[Konsistenz, Qualität und Vollständigkeit](#project-heartbeat-dashboard)**, sortiert nach**[ Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
+Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der **[Konsistenz, Qualität und Vollständigkeit](#project-heartbeat-dashboard)**, sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
 
 ## Phasen und Milestones {#phases-and-milestones}
 
