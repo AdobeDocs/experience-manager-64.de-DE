@@ -6,10 +6,10 @@ seo-description: Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tes
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 81%
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 # Automatisieren von Tests von adaptiven Formularen {#automate-testing-of-adaptive-forms}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, dass Sie Ihre adaptiven Formulare mit jeder Änderung testen, die Sie daran vornehmen, z. B. beim Rollout eines neuen Fixpack oder beim Ändern einer Regel im Formular. Allerdings kann das funktionelle Testen adaptiver Formen und jedes Feld in ihnen mühsam sein.
 
@@ -162,7 +162,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
    * Name: testForm (Ihr Formularname)
    * Typ: cq:ClientLibraryFolder
 
-1. Hinzufügen Sie die folgenden Eigenschaften an den neu erstellten Knoten (hier &quot;testForm&quot;), um ein adaptives Formular zu testen:
+1. hinzufügen Sie die folgenden Eigenschaften an den neu erstellten Knoten (hier &quot;testForm&quot;), um ein adaptives Formular zu testen:
 
    | **Eigenschaft** | **Typ** | **Wert** |
    |---|---|---|
@@ -310,7 +310,7 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
 * Anzeigen von Test-Suites
 * Ausführen mehrerer Tests
 
-## Glossar   {#glossary}
+## Glossar    {#glossary}
 
 <table> 
  <tbody> 
