@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2824'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Die erforderlichen Schritte sind:
       * Erstellen und veröffentlichen Sie einen [Twitter Connect-Cloud-Dienst](#create-a-twitter-connect-cloud-service).
 
 
-1. [**Aktivieren **Sie die Anmeldung](#enable-social-login)in sozialen Netzwerken für eine Community-Site.
+1. [**Aktivieren** Sie die Anmeldung](#enable-social-login) in sozialen Netzwerken für eine Community-Site.
 
 Es gibt zwei grundlegende Konzepte:
 
@@ -82,12 +82,12 @@ Um eine Facebook-Anwendung zu erstellen, befolgen Sie die Anweisungen von Facebo
 
 Im Allgemeinen ab Facebook API Version 2.7:
 
-* *Hinzufügen einer neuen Facebook-App:*
+* *hinzufügen einer neuen Facebook-App:*
    * Wählen Sie als *Plattform* Website
       * Geben Sie für *Site-URL*`  https://<server>:<port>.`
    * Geben Sie als *Anzeigename* einen Titel ein, der als Titel des Facebook-Verbindungs-Dienstes verwendet werden soll.
    * Zur *Kategorie* wird empfohlen, &quot; *Apps für Seiten&quot;zu wählen,* kann jedoch alles sein.
-   * *Hinzufügen Produkt:  Facebook-Anmeldung*
+   * *hinzufügen Produkt:  Facebook-Anmeldung*
       * Geben Sie für *gültige OAuth-Umleitungs-URIs*`  https://<server>:<port>.`
 
 >[!NOTE]
@@ -98,7 +98,7 @@ Nachdem die Anwendung erstellt wurde, suchen Sie die Einstellungen für die **[!
 
 ### Facebook Connect-Cloud Service erstellen {#create-a-facebook-connect-cloud-service}
 
-Die Granite OAuth Application and Provider-Instanz der [Adobe](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) , instanziiert durch Erstellen einer Cloud-Dienstkonfiguration, identifiziert die Facebook-Anwendung und die Mitgliedsgruppe/n, der/denen die neuen Benutzer hinzugefügt werden.
+Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oauth-application-and-provider) , instanziiert durch Erstellen einer Cloud-Dienstkonfiguration, identifiziert die Facebook-Anwendung und die Mitgliedsgruppe/n, der/denen die neuen Benutzer hinzugefügt werden.
 
 1. Melden Sie sich auf der AEM Autoreninstanz mit Administratorrechten an.
 1. Wählen Sie in der globalen Navigation **[!UICONTROL Extras > Cloud Services > Facebook Social-Anmeldekonfiguration]**.
@@ -121,7 +121,7 @@ Die Granite OAuth Application and Provider-Instanz der [Adobe](https://chl-autho
    * **[!UICONTROL Benutzer]** erstellen Wenn diese Option aktiviert ist, wird bei der Anmeldung bei einem Facebook-Konto ein AEM Benutzereintrag erstellt und der/den ausgewählten Benutzergruppe(n) hinzugefügt.  Die Standardeinstellung ist aktiviert (wird dringend empfohlen).
    * **[!UICONTROL Benutzer-IDs]** maskieren: Lassen Sie die Auswahl aufgehoben.
    * **[!UICONTROL Scope-E-Mail]**: Die E-Mail-ID des Benutzers sollte von Facebook abgerufen werden.
-   * **[!UICONTROL Hinzufügen zu Benutzergruppen]** wählen Sie Hinzufügen Benutzergruppe aus, um eine oder mehrere [Mitgliedsgruppen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
+   * **[!UICONTROL hinzufügen zu Benutzergruppen]** wählen Sie Hinzufügen Benutzergruppe aus, um eine oder mehrere [Mitgliedsgruppen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
 
    >[!NOTE]
    >
@@ -141,7 +141,7 @@ Der AEM Communities-Anbieter erweitert die Granite OAuth-Anwendungsinstanz und -
 Dieser Anbieter muss bearbeitet werden, um:
 
 * Benutzeraktualisierungen zulassen
-* Hinzufügen zusätzlicher Felder [im Anwendungsbereich](#adobe-granite-oauth-application-and-provider)
+* hinzufügen zusätzlicher Felder [im Anwendungsbereich](#adobe-granite-oauth-application-and-provider)
 
    * Nicht alle standardmäßig zulässigen Felder sind standardmäßig eingeschlossen.
 
@@ -273,7 +273,7 @@ Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oa
 
    * **[!UICONTROL Benutzer-IDs]** maskieren lassen deaktiviert.
 
-   * **[!UICONTROL Hinzufügen zu Benutzergruppen]** wählen Sie Hinzufügen Benutzergruppe aus, um eine oder mehrere [Mitgliedsgruppen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
+   * **[!UICONTROL hinzufügen zu Benutzergruppen]** wählen Sie Hinzufügen Benutzergruppe aus, um eine oder mehrere [Mitgliedsgruppen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
    >[!NOTE]
    >
    >Gruppen können jederzeit hinzugefügt oder entfernt werden. Die Mitgliedschaft bestehender Benutzer wird jedoch nicht beeinträchtigt. Die automatische Mitgliedschaft gilt nur für neue Benutzer, die nach dieser Feldaktualisierung erstellt werden. Fügen Sie für Sites, bei denen anonyme Benutzer deaktiviert sind, Benutzer zu der entsprechenden Community-Mitglieder-Gruppe hinzu, die für diese geschlossene Community-Site vorgesehen ist.
@@ -459,7 +459,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindex]**: true
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL reindexCount]**: 3
 
 1. Unter Knoten /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
