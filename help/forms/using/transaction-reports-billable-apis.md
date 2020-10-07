@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 9%
 
 ---
@@ -278,7 +278,7 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
-   <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> -Objekt mit den resultierenden Dokumenten zurück. </td> 
+   <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> -Objekt zurück, das die resultierenden Dokumente enthält. </td> 
    <td>Verarbeitete Dokumente</td> 
    <td>Folgende Vorgänge werden nicht als Transaktionen erfasst:
     <ul> 
@@ -350,7 +350,7 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
 
 ## Billable Datenerfassungs-APIs {#billable-data-capture-apis}
 
-Alle Ereignisse zum Senden von adaptiven Formularen, HTML5-Forms und Formularsätzen werden als Transaktionen erfasst. Standardmäßig wird die Übermittlung eines PDF-Formulars nicht als Transaktion erfasst. Verwenden Sie die bereitgestellte [Transaktionsberichte-API](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) , um eine Übermittlung von PDF forms als Transaktion zu erfassen.
+Alle Ereignisse zum Senden von adaptiven Formularen, HTML5-Forms und Formularsätzen werden als Transaktionen erfasst. Standardmäßig wird die Übermittlung eines PDF-Formulars nicht als Transaktion erfasst. Verwenden Sie die bereitgestellte [Transaktionsberichte-API](record-transaction-custom-implementation.md) , um eine Übermittlung von PDF forms als Transaktion zu erfassen.
 
 ### Adaptive Formulare {#adaptive-forms}
 
