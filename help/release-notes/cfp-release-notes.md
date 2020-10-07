@@ -4,9 +4,9 @@ description: Versionshinweise speziell für Adobe Experience Manager 6.4 Cumulat
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '3402'
+source-wordcount: '3420'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ AEM 6.4.8.2 ist ein kumulatives Fix Pack (CFP), das von AEM 6.4 Service Pack 8 a
 
 In AEM 6.4.8.2 wird das integrierte Repository (Apache Jackrabbit Oak) auf Version 1.8.22 aktualisiert.
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 In Adobe Experience Manager 6.4.8.2 wurden die folgenden Probleme behoben:
 
@@ -175,7 +175,7 @@ Einige der wichtigsten Highlights von AEM 6.4.8.1 sind:
 * Die Paketfreigabe-Integration mit Adobe Experience Manager wurde entfernt.
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.21 aktualisiert.
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 In Adobe Experience Manager 6.4.8.1 wurden die folgenden Probleme behoben:
 
@@ -221,7 +221,7 @@ In Adobe Experience Manager 6.4.8.1 wurden die folgenden Probleme behoben:
 
 * Der [!DNL Sling] Filter wird nicht aufgerufen, wenn der `sling:match` Karteneintrag unter `/etc/maps` (NPR-33308) erstellt wird.
 * Alle Spülmittel werden beim Deaktivieren einer Seite ausgelöst (NPR-32941).
-* Wenn Sie die `ScriptProcessor` API zum Minimieren einer JavaScript-Bibliothek verwenden, wird in der Protokolldatei eine Fehlermeldung angezeigt, die darauf hinweist, dass der JavaScript-Code nicht dem strikten Modus entspricht. Die API bietet keine Option zum Aktivieren oder Deaktivieren des strikten Modus. (NPR-32746).
+* Wenn Sie die `ScriptProcessor` API zum Minimieren einer JavaScript-Bibliothek verwenden, zeigt die Protokolldatei eine Fehlermeldung an, dass der JavaScript-Code nicht dem strikten Modus entspricht. Die API bietet keine Option zum Aktivieren oder Deaktivieren des strikten Modus. (NPR-32746).
 * Wenn eine SQL-Abfrage länger ausgeführt wird (z. B. 7 Stunden), reagiert AEM nicht mehr (NPR-33043).
 
 #### Benutzeroberfläche {#ui-6481}
