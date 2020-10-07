@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 80%
+source-wordcount: '1835'
+ht-degree: 81%
 
 ---
 
@@ -58,7 +58,6 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Definitionen des Releasebilds aktualisieren](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [Was ist AEM Screens?](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Grundlegende Konzepte {#basic-concepts}
@@ -128,13 +127,13 @@ Mit AEM Managed Services können Kunden die folgenden Vorteile nutzen:
 
 **Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Adobe Managed Service-Kunden verfügbar.
 
-To learn more about Cloud Manager and its resources, please refer to [**Cloud Manager User Guide **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+To learn more about Cloud Manager and its resources, please refer to [**Cloud Manager User Guide**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## Erste Schritte {#getting-started}
 
 ### Voraussetzungen {#prerequisites}
 
-While production instances are usually run on dedicated machines running an officially supported OS (see [Technical Requirements](/help/sites-deploying/technical-requirements.md)), the Experience Manager server will actually run on any system that supports [**Java Standard Edition 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+While production instances are usually run on dedicated machines running an officially supported OS (see [Technical Requirements](/help/sites-deploying/technical-requirements.md)), the Experience Manager server will actually run on any system that supports [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 Um sich mit AEM vertraut zu machen bzw. um die Entwicklung auf AEM vorzunehmen, wird häufig eine auf Ihrem lokalen Computer installierte Instanz verwendet, auf der Apple OS X oder Desktopcomputerversionen von Microsoft Windows oder Linux ausgeführt werden.
 
@@ -142,7 +141,7 @@ On the client-side, AEM works with all modern browsers (**Microsoft Edge**, **In
 
 ### Abrufen der Software {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Das AEM-Softwarepaket steht in zwei Formen zur Verfügung:
 
@@ -320,6 +319,5 @@ Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Definitionen des Releasebilds aktualisieren](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [Was ist AEM Screens?](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
