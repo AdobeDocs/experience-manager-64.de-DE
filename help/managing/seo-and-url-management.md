@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 99%
@@ -254,7 +254,7 @@ Ein Beispiel dafür, wie dieses Problem auftritt:
 
 1. Der Dispatcher speichert die Antwort unter `/my-page.html` und leitet die Antwort zurück an den Benutzer.
 1. Ein Inhaltsautor ändert diese Seite und aktiviert sie.
-1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.**Da der Dispatcher auf diesem Pfad keine Seite gespeichert hat, bleibt der alte Inhalt gespeichert und ist nicht mehr aktuell.
+1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da der Dispatcher auf diesem Pfad keine Seite gespeichert hat, bleibt der alte Inhalt gespeichert und ist nicht mehr aktuell.
 
 Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche die kürzere URL zur Invalidierung des Cache an die längere URL weiterleiten.
 
