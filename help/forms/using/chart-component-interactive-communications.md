@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2423'
 ht-degree: 53%
 
 ---
@@ -95,7 +95,7 @@ Um dies zu erreichen, müssen Sie Folgendes angeben:
 * **[!UICONTROL Titel]** für die X- und Y-Achse (nur für das Spaltendiagramm im Druckkanal in diesem Beispiel) - in diesem Beispiel Betrag ($) für die X-Achse und Ausgabe für die Y-Achse.
 * **[!UICONTROL Beschriftungsrichtung]** (in diesem Beispiel nur für das Spaltentypdiagramm im Kanal &quot;print&quot;) - in diesem Beispiel `Tilt Left`
 
-* **[!UICONTROL QuickInfo]** , die beim Mauszeiger über eine Ausgabe angezeigt wird (nur Web-Kanal) - in diesem Beispiel `${x}: $ ${y}`wird die [Ausgabenbezeichnung angezeigt: $ Amount] (Beispiel: Themenparkbesuch: $ 315)
+* **[!UICONTROL QuickInfo]** , die beim Bewegen der Maus über eine Ausgabe angezeigt wird (nur Web-Kanal) - in diesem Beispiel `${x}: $ ${y}`wird wie `[Expense Label: $ Amount]` (Beispiel: Themenparkbesuch: $ 315)
 
 ![Spaltendiagramm in der Druckausgabe einer interaktiven Kommunikation](assets/chartprintchannel.png)**Abbildung:** *Spaltendiagramm in der Druckausgabe einer interaktiven Kommunikation*
 
