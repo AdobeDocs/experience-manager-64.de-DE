@@ -3,7 +3,7 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal konfigurieren, um Assets und Sammlungen im Markenportal zu veröffentlichen. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 61%
@@ -21,15 +21,14 @@ Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konf
 >
 >Zuvor wurde Brand Portal über das alte OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
 
-
 >[!TIP]
 >
 >***Nur für Bestandskunden***
 >
 >Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe I/O.
 
-
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
+
 * [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal konfigurieren möchten, können Sie eine neue Konfiguration auf Adobe I/O erstellen.
 * [Upgrade-Konfiguration](#upgrade-integration-64): Wenn Sie bereits mit Ihrer AEM Assets-Autoreninstanz, die mit Brand Portal auf dem alten OAuth Gateway konfiguriert wurde, arbeiten, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Adobe auf der E/A-Mail-Benutzeroberfläche erstellen.
 
@@ -46,7 +45,6 @@ Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 * Eine betriebsbereite AEM Assets-Autoreninstanz mit dem neuesten Service Pack.
 * Brand Portal-Mandanten-URL
 * Ein Benutzer mit Systemadministrator-Berechtigungen für die IMS-Organisation des Brand Portal-Mandanten
-
 
 [Herunterladen und Installieren von AEM 6.4](#aemquickstart)
 
@@ -73,6 +71,7 @@ Ausführliche Anweisungen finden Sie unter
 ## Erstellen der Konfiguration {#configure-new-integration-64}
 
 Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch, wenn Sie AEM Assets zum ersten Mal mit dem Markenportal konfigurieren:
+
 1. [Abrufen eines öffentlichen Zertifikats](#public-certificate)
 1. [Erstellen der Adobe I/O-Integration](#createnewintegration)
 1. [Erstellen der Konfiguration des IMS-Kontos](#create-ims-account-configuration)
@@ -82,7 +81,6 @@ Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch, wenn 
 >[!NOTE]
 >
 >Eine AEM Assets-Autoreninstanz darf nur mit einem Markenportal-Mandanten konfiguriert werden.
-
 
 ### Erstellen der IMS-Konfiguration {#create-ims-configuration}
 
@@ -205,8 +203,6 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 >
 >Vergewissern Sie sich, dass die IMS-Konfiguration die Konsistenzprüfung besteht. Wenn die Konfiguration die Konsistenzprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
 
-
-
 ### Konfigurieren von Cloud Service {#configure-the-cloud-service}
 
 Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für Brand Portal zu erstellen:
@@ -258,7 +254,6 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
    >[!NOTE]
    >
    >Die Replizierungsagenten arbeiten parallel und teilen die Auftragsverteilung gleichmäßig, wodurch die Veröffentlichungsgeschwindigkeit um das Vierfache der Originalgeschwindigkeit steigt. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -360,4 +355,3 @@ Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen im Bran
 * [Veröffentlichen von Assets in Brand Portal](brand-portal-publish-assets.md)
 * [Veröffentlichen von Assets und Ordnern in Brand Portal](brand-portal-publish-folder.md)
 * [Veröffentlichen von Sammlungen in Brand Portal](brand-portal-publish-collection.md)
-
