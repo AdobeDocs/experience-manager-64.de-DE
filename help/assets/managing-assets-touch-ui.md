@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 66%
 
 ---
@@ -424,7 +424,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Das Symbol **[!UICONTROL Einfügen]** ist in der Symbolleiste verfügbar, bis das Einfügen abgeschlossen ist.
 
-### Verschieben oder Umbenennen von Assets {#moving-or-renaming-assets}
+## Move and rename assets {#moving-or-renaming-assets}
 
 Wenn Sie Assets (oder Ordner) an einen anderen Speicherort verschieben, werden die Assets (oder Ordner) nicht dupliziert, anders als beim Kopieren des Assets. Die Assets (oder die Ordner) werden am Speicherort der Zielgruppe platziert und vom Quellspeicherort entfernt. Sie können das Asset auch umbenennen, wenn Sie es an den neuen Speicherort verschieben. Wenn Sie ein veröffentlichtes Asset an einen anderen Speicherort verschieben, haben Sie die Möglichkeit, das Asset erneut zu veröffentlichen. Standardmäßig wird beim Verschieben eines veröffentlichten Assets die Veröffentlichung automatisch rückgängig gemacht. Verschiebte Assets werden erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;auswählt.
 
@@ -434,39 +434,42 @@ So verschieben Sie Assets oder Ordner:
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![Sie können bereits veröffentlichte Assets beim Verschieben erneut veröffentlichen](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+So verschieben Sie Assets oder Ordner:
 
-1. In the **[!UICONTROL Move Assets]** wizard, do one of the following:
+1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
-   * Geben Sie nach dem Verschieben den Namen für das Asset an. Then tap **[!UICONTROL Next]** to proceed.
-   * Tap **[!UICONTROL Cancel]** to stop the process.
+1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
+   ![Option &quot;Verschieben&quot;in der Assets-Symbolleiste](assets/do-not-localize/move_icon.png)
 
+1. In the [!UICONTROL Move Assets] wizard, do one of the following:
+
+   * Geben Sie nach dem Verschieben den Namen für das Asset an. Then click **[!UICONTROL Next]** to proceed.
+
+   * Click **[!UICONTROL Cancel]** to stop the process.
    >[!NOTE]
    >
-   >Sie können denselben Namen für das Asset angeben, wenn sich am neuen Speicherort kein Asset mit diesem Namen befindet. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speichertort verschieben, an dem bereits ein Asset mit demselben Namen vorhanden ist. Wenn Sie denselben Namen verwenden, generiert das System automatisch eine Variante dieses Namens. Wenn Sie beispielsweise ein Asset mit dem Namen „Quadrat“ kopieren, generiert das System den Namen „Quadrat1“ für die Kopie.
-
-   >[!NOTE]
-   >
-   >Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unterstützt:
-   >* Der Asset-Dateiname darf nicht enthalten: `* / : [ \ \ ] | # % { } ? &`
-   >* Der Asset-Ordnername darf nicht enthalten: `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* Sie können denselben Namen für das Asset angeben, wenn sich am neuen Speicherort kein Asset mit diesem Namen befindet. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speichertort verschieben, an dem bereits ein Asset mit demselben Namen vorhanden ist. Wenn Sie denselben Namen verwenden, generiert das System automatisch eine Variante dieses Namens. Wenn Sie beispielsweise ein Asset mit dem Namen „Quadrat“ kopieren, generiert das System den Namen „Quadrat1“ für die Kopie.
+   >* Beim Umbenennen sind keine Leerzeichen in Dateinamen zulässig.
 
 
-1. On the **[!UICONTROL Select Destination]** page, do one of the following:
+1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** page.
+   * Navigate to the new location for the assets, and then click **[!UICONTROL Next]** to proceed.
+
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
 
 1. Wenn die verschobenen Assets verweisende Seiten, Assets oder Sammlungen umfassen, wird die Registerkarte **[!UICONTROL Verweise anpassen]** neben der Registerkarte **[!UICONTROL Ziel auswählen]** angezeigt.
 
-   Do one of the following on the **[!UICONTROL Adjust References]** page:
+   Führen Sie im Bildschirm **[!UICONTROL Verweise anpassen]** einen der folgenden Schritte aus:
 
-   * Specify the references to be adjusted based on the new details, and then tap **[!UICONTROL Move]** to proceed.
-   * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
-   * Tap **[!UICONTROL Cancel]** to stop the move operation.
+   * Specify the references to be adjusted based on the new details, and then click **[!UICONTROL Move]** to proceed.
+
+   * Aktivieren/deaktivieren Sie in der Spalte **[!UICONTROL Anpassen]** Verweise auf die Assets.
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
+
+   * Click **[!UICONTROL Cancel]** to stop the move operation.
 
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
