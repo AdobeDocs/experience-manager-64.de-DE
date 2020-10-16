@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Asset-Handbuch
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+user-guide-title: Assets-Anleitung
+breadcrumb-title: Assets-Anleitung
+user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Kreativelemente.
 translation-type: tm+mt
 source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 76%
+source-wordcount: '723'
+ht-degree: 77%
 
 ---
 
 
-# Asset-Handbuch {#assets}
+# Assets-Anleitung {#assets}
 
 + [Asset-Benutzerhandbuch](home.md)
 + [AEM 6.4 Versionshinweise zu Assets](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
