@@ -3,20 +3,20 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: 'Formulare '
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.4 Forms-Handbuch
-breadcrumb-title: Forms Guide
-user-guide-description: Create, manage, publish, and update digital forms.
+user-guide-title: Adobe Experience Manager 6.4, Forms-Anleitung
+breadcrumb-title: Forms-Anleitung
+user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3713'
+source-wordcount: '3722'
 ht-degree: 73%
 
 ---
 
-# Adobe Experience Manager 6.4 Forms-Handbuch {#forms}
+# Adobe Experience Manager 6.4, Forms-Anleitung {#forms}
 
-+ [Benutzerhandbuch zu AEM 6.4 Forms](home.md)
++ [AEM 6.4 Forms-Benutzeranleitung](home.md)
 + Versionshinweise {#release-notes-new-features}
    + [Versionshinweise](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
    + [Zusammenfassung der neuen Funktionen](using/whats-new.md)
