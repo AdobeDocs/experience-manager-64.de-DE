@@ -1,20 +1,20 @@
 ---
 title: Adobe Experience Manager 6.4 - Versionshinweise
 seo-title: Versionshinweise zu AEM 6.4
-description: Die AEM Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
-seo-description: Die AEM Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
+description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer unterstützter Plattformen, nicht mehr unterstützter und eingestellter Funktionen und bekannter Probleme.
+seo-description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer unterstützter Plattformen, nicht mehr unterstützter und eingestellter Funktionen und bekannter Probleme.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 27%
+ht-degree: 52%
 
 ---
 
 
 # Adobe Experience Manager 6.4 - Versionshinweise
 
-Die AEM Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
+Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer unterstützter Plattformen, nicht mehr unterstützter und eingestellter Funktionen und bekannter Probleme.
 
 ## Wichtige AEM
 
@@ -26,11 +26,11 @@ Die AEM Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
-| [Benutzerhandbuch für Assets](/help/assets/home.md) | Erstellen, verwalten, liefern und optimieren Sie digitale Assets. |
+| [Benutzerhandbuch für Assets](/help/assets/home.md) | Erstellen, verwalten, liefern und optimieren Sie digitale Kreativelemente. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
-| [Communities-Benutzerhandbuch](/help/communities/home.md) | Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
-| [Administratorhandbuch](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
-| [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
+| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
+| [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
+| [Autorenanleitung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
 | [Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
