@@ -2,14 +2,14 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Implementierungshandbuch
-breadcrumb-title: Deploying Guide
-user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
+user-guide-title: AEM 6.4-Implementierungsanleitung
+breadcrumb-title: Implementierungsanleitung
+user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
 translation-type: tm+mt
 source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 94%
+source-wordcount: '349'
+ht-degree: 95%
 
 ---
 
