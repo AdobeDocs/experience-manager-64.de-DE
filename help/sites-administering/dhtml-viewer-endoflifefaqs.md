@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 100%
+source-wordcount: '1665'
+ht-degree: 98%
 
 ---
 
@@ -131,4 +131,4 @@ Auch wenn Sie den DHTML-Viewer weiterhin bei der Produktion einsetzen können, i
 
 **An wen kann ich mich wenden, um weitere Informationen zu erhalten?**
 
-Wenn Ihre Fragen in diesen häufig gestellten Fragen nicht alle beantwortet werden, wenden Sie sich an den Support ([s7support@adobe.com](mailto:s7support@adobe.com)) oder Ihren Adobe-Kundenbetreuer.
+Wenn diese FAQ nicht alle Ihre Fragen beantwortet haben, [verwenden Sie die Admin Console, um einen Supportfall](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zu erstellen, oder wenden Sie sich an Ihren Kundenbetreuer.
