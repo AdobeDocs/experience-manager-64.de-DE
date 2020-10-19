@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
+source-wordcount: '5491'
 ht-degree: 22%
 
 ---
@@ -164,7 +164,7 @@ So verwenden Sie dynamische Medien und Dynamic Media Classic gleichzeitig:
 1. (Optional) (siehe Verwendungsfalltabelle) - Wenn Sie die Option &quot;Automatisches Hochladen von Assets zu Dynamisch Media Classic&quot;aktivieren, müssen Sie Folgendes hinzufügen:
 
    1. Richten Sie den automatischen Upload auf Dynamic Media Classic ein.
-   1. Hinzufügen Sie den Schritt zum Hochladen **von** Dynamischen Medien in Classic nach allen Schritten *am Ende* des Arbeitsablaufs für **DAM-Update-Asset** ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
+   1. hinzufügen Sie den Schritt zum Hochladen **von** Dynamischen Medien in Classic nach allen Schritten des Arbeitsablaufs für dynamische Medien *am Ende* des Arbeitsablaufs für **DAM-Aktualisierung von Assets** ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
    1. (Optional) Restrict Dynamic Media Classic asset upload by MIME type in [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). Asset-MIME-Typen, die nicht in dieser Liste enthalten sind, werden nicht auf den Dynamic Media Classic-Server hochgeladen.
    1. (Optional) Richten Sie Videos in der Konfiguration von Dynamic Media Classic ein. Sie können die Videokodierung für entweder dynamische Medien und Dynamic Media Classic gleichzeitig aktivieren. Dynamische Darstellungen werden für die lokale Vorschau und Wiedergabe in AEM Instanz verwendet, während Videodarstellungen von Dynamic Media Classic auf Servern von Dynamic Media Classic generiert und gespeichert werden. When setting up video encoding services for both Dynamic Media and Dynamic Media Classic, apply a [video processing profile](/help/assets/video-profiles.md) to the Dynamic Media Classic asset folder.
    1. (Optional) Sichere Vorschau [konfigurieren in Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
@@ -217,7 +217,7 @@ Sie können AEM so konfigurieren, dass Assets in Dynamic Media Classic hochgelad
 Um die Integration von Dynamic Media Classic in AEM zu konfigurieren, müssen Sie die folgenden Schritte ausführen:
 
 1. [Definieren einer Cloud-Konfiguration](#creating-a-cloud-configuration-for-scene) - Definiert die Zuordnung zwischen einem Ordner &quot;Dynamic Media Classic&quot;und einem Ordner &quot;Assets&quot;. Sie müssen diesen Schritt auch dann ausführen, wenn Sie nur eine einseitige Synchronisierung (AEM Assets zu Dynamic Media Classic) wünschen.
-1. [Aktivieren Sie den **Adobe CQ s7dam Dam Listener **](#enabling-the-adobe-cq-scene-dam-listener)- Fertig in der[!UICONTROL OSGi]-Konsole.
+1. [Aktivieren Sie den **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener) - Fertig in der [!UICONTROL OSGi] -Konsole.
 1. Wenn AEM Assets automatisch in Dynamic Media Classic hochgeladen werden sollen, müssen Sie diese Option aktivieren und dem DAM-Arbeitsablauf zum Aktualisieren von Assets hinzufügen. Außerdem können Sie manuell Assets hochladen.
 1. Hinzufügen von Komponenten aus Dynamic Media Classic zum Sidekick. Auf diese Weise können Benutzer auf ihren AEM Komponenten von Dynamic Media Classic verwenden.
 1. [Ordnen Sie die Konfiguration der Seite in AEM](#enabling-scene-for-wcm) zu - Dieser Schritt ist erforderlich, um alle Video-Vorgaben, die Sie in Dynamic Media Classic erstellt haben, Ansicht. Es ist auch erforderlich, wenn Sie ein Asset von außerhalb des Ordners &quot;CQ-Zielgruppe&quot;in &quot;Dynamic Media Classic&quot;veröffentlichen müssen.
@@ -425,7 +425,7 @@ Wenn Sie jedoch nicht möchten, dass Assets, die automatisch an Dynamic Media Cl
 
 Bevor Sie Assets an Dynamic Media Classic senden können, ohne sie zu veröffentlichen, müssen Sie Folgendes einrichten:
 
-1. Wenden Sie sich an den Kundendienst von Dynamic Media Classic (s7support@adobe.com), um eine sichere Vorschau für Ihr Konto bei Dynamic Media Classic zu aktivieren.
+1. [Verwenden Sie die Admin Console, um einen Supportfall zu erstellen.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In Ihrem Support-Fall fordern Sie die Aktivierung der sicheren Vorschau für Ihr Dynamic Media Classic-Konto an.
 1. Follow directions to [setup secure preview for your Dynamic Media Classic account.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Dies sind dieselben Schritte, die Sie ausführen würden, um eine sichere Testeinrichtung in Dynamic Media Classic zu erstellen.
@@ -605,7 +605,7 @@ Wenn Sie Probleme bei der Integration von AEM mit Dynamic Media Classic haben, f
 **Wenn neue oder geänderte Assets in AEM nicht automatisch in Dynamic Media Classic hochgeladen werden:**
 
 * Stellen Sie sicher, dass sich die Assets im CQ-Zielordner befinden. Nur Assets, die sich im CQ-Zielordner befinden, werden automatisch aktualisiert (vorausgesetzt, Sie haben AEM Assets für das automatische Hochladen von Assets konfiguriert).
-* Vergewissern Sie sich, dass Sie die Konfiguration der Cloud Services für &quot;Automatisches Hochladen aktivieren&quot;konfiguriert haben und dass Sie den DAM-Asset-Workflow aktualisiert und gespeichert haben, um das Hochladen von Dynamischem Media Classic einzuschließen.
+* Vergewissern Sie sich, dass Sie die Konfiguration der Cloud Services für &quot;Automatisches Hochladen aktivieren&quot;konfiguriert haben und dass Sie den DAM-Asset-Workflow aktualisiert und gespeichert haben, um das Hochladen von Dynamischen Medien in Classic einzuschließen.
 * Führen Sie beim Hochladen eines Bildes in einen Unterordner des Ordners &quot;Dynamic Media Classic Zielgruppe&quot;einen der folgenden Schritte aus:
 
    * Stellen Sie sicher, dass die Namen aller Assets unabhängig von ihrem Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und es verbleibt nur das Asset im Unterordner.
