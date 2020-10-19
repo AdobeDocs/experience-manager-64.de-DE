@@ -10,10 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 99%
+source-wordcount: '1758'
+ht-degree: 98%
 
 ---
 
@@ -120,8 +120,8 @@ Für Ihre erste benutzerdefinierte Domäne fallen mit einer Dynamic Media-Lizenz
 
 Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine entsprechende Anfrage stellen.
 
-1. Richten Sie eine Anfrage an den technischen Support (E-Mail: s7support@adobe.com). 
-1. In der Anfrage geben Sie folgende Informationen an:
+1. [Verwenden Sie die Admin Console, um einen Supportfall zu erstellen.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Geben Sie im Supportfall die folgenden Informationen ein:
 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
    1. Geben Sie alle Domänen an, für die intelligente Bildbearbeitung aktiviert werden soll (also bilder.unternehmen.com oder meinunternehmen.scene7.com).
