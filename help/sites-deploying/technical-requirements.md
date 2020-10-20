@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3143'
 ht-degree: 84%
 
 ---
@@ -319,7 +319,7 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen:
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Formular-Add-On-Funktionen werden nur unter CentOS 7 und Red Hat Enterprise Linux 6.5 und 7 unterstützt.
+1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Forms-Add-On-Funktionen werden nur unter CentOS 7 und Red Hat Enterprise Linux 7 unterstützt.
 1. AEM Assets: Informationen hierzu finden Sie im Abschnitt über die [Unterstützung für das Zurückschreiben von XMP-Metadaten](#requirements-for-aem-assets-xmp-metadata-write-back).
 1. AEM Assets: Nicht unterstützt für Dynamic Media Imaging. Videos für dynamische Medien werden nicht unterstützt.
 1. AEM Forms wird nur auf Ubuntu 16.04 LTS unterstützt.
