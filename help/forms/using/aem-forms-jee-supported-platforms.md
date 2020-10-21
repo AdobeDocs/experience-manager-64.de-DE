@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 87%
+source-wordcount: '3305'
+ht-degree: 86%
 
 ---
 
@@ -278,7 +278,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Updates und Patches</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Hinweis:</b> Red Hat Enterprise Linux 6 erreicht das Ende der Wartungsphase und Transitionen zur Extended Life Phase am 30. November 2020. Adobe empfiehlt Red Hat Enterprise Linux 7 für die Aktualisierung und Neuinstallation.</p> </td> 
    <td><p>A: Unterstützt</p> </td> 
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td> 
   </tr> 
@@ -809,4 +809,4 @@ Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unt
 
 Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der Adobe Enterprise-Supportseite, indem Sie nach Knowledgebase-Artikeln für Ihr jeweiliges Produkt suchen.
 
-[**Support kontaktieren **](https://www.adobe.com/de/account/sign-in.supportportal.html)
+[**Support kontaktieren**](https://www.adobe.com/de/account/sign-in.supportportal.html)
