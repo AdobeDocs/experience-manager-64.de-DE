@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '555'
+ht-degree: 86%
 
 ---
 
@@ -35,10 +35,6 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
 In der Autorenumgebung werden die Funktionen von AEM in zwei Benutzeroberflächen bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das Aussehen der Oberfläche, die Sie Ihren Benutzern zur Verfügung stellen.
-
->[!NOTE]
->
->AEM und der Dispatcher werden verwendet, um diese AEM Dokumentation zu veröffentlichen.
 
 ## Autorenumgebung {#author-environment}
 
@@ -96,4 +92,4 @@ Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/over
 
 ## Dispatcher {#dispatcher}
 
-Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Lastverteilung und Caching durch.**
+Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) Lastverteilung und Caching durch.**
