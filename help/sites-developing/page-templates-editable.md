@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 72%
 
 ---
@@ -34,7 +34,7 @@ Mit bearbeitbaren Vorlagen werden die Aspekte, die eine Seite bilden, innerhalb 
 
 >[!NOTE]
 >
->AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA-Editor](/help/sites-developing/spa-overview.md)zu verwenden.
+>AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA Editor](/help/sites-developing/spa-overview.md)zu verwenden.
 
 >[!NOTE]
 >
@@ -230,6 +230,8 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 >[!NOTE]
 >
 >Im Konfigurationsbrowser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ### ACLs und Gruppen {#acls-and-groups}
 
@@ -252,7 +254,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
 <table> 
  <tbody> 
   <tr> 
-   <th>Pfad         </th> 
+   <th>Pfad          </th> 
    <th>Rolle/Gruppe</th> 
    <th>Berechtigungen<br /> </th> 
    <th>Beschreibung</th> 
@@ -312,7 +314,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table> 
  <tbody> 
   <tr> 
-   <th>Pfad         </th> 
+   <th>Pfad          </th> 
    <th>Rolle/Gruppe</th> 
    <th>Berechtigungen<br /> </th> 
    <th>Beschreibung</th> 
@@ -585,7 +587,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
 1. **Zugelassene Vorlagen**
 
-   * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften **](/help/sites-authoring/templates.md#allowing-a-template-author)der entsprechenden Seite oder Stammseite einer Unterverzweigung.
+   * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die Eigenschaft fest:
 
       `cq:allowedTemplates`
