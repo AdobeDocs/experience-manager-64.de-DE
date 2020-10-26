@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 67%
+source-wordcount: '1668'
+ht-degree: 66%
 
 ---
 
@@ -52,6 +52,7 @@ In AEM 6.4 ist das Livefyre-Feature Pack 1.2.6 vorinstalliert. Dieses Paket bein
 ### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General > Configuration Browser**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Klicken Sie auf **Erstellen**, um das Dialogfeld „Konfiguration erstellen“ zu öffnen.
 1. Name your configuration and check the **Cloud Configurations** checkbox.
 
@@ -73,6 +74,8 @@ Konfigurieren Sie AEM so, dass die Livefyre-Lizenzinformationen Ihrer Organisati
    >Für Ordner müssen Cloud-Konfigurationen in ihren Eigenschaften aktiviert sein, bevor LiveCycle-Konfigurationen hinzugefügt werden können. Konfigurationsordner werden im Konfigurationsbrowser erstellt und verwaltet.
    >
    >Sie können eine Konfiguration nicht benennen – auf sie wird durch den Ordnerpfad verwiesen, unter dem sie sich befindet. Pro Ordner ist nur eine Konfiguration zulässig.
+   >
+   >See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Wählen Sie die neu erstellte Livefyre-Konfigurationskarte aus und klicken Sie dann auf **Eigenschaften**.
 
