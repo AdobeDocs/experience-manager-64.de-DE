@@ -9,10 +9,10 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 92%
+source-wordcount: '704'
+ht-degree: 91%
 
 ---
 
@@ -41,6 +41,7 @@ Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-model), **müssen** Sie Inhaltsfragmentmodelle zunächst über Configuration Manager aktivieren:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** und öffnen Sie dann den **[!UICONTROL Konfigurations-Browser]**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Wählen Sie den entsprechenden Speicherort für Ihre Web-Seite aus.
 1. Öffnen Sie über **[!UICONTROL Erstellen]** das Dialogfeld, in dem Sie:
 
