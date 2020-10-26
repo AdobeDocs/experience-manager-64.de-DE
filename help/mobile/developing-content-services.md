@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 10%
+source-wordcount: '303'
+ht-degree: 9%
 
 ---
 
@@ -43,7 +43,9 @@ Content Services kann die Inhalte als Assets, verpacktes HTML (HTML/CSS/JS) oder
 >
 >Bevor Sie mit Content Services beginnen, müssen Sie das Flag &quot;Content Services&quot;aktivieren. Um die Erstellung und Verwaltung von Modellen in Ihrer App zu aktivieren, müssen Sie Datenmodelle im Konfigurationsbrowser aktivieren.
 >
->Weitere Informationen finden Sie unter **[Verwalten von Content Services](/help/mobile/developing-content-services.md)**.
+>Weitere Informationen finden Sie unter **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** .
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
