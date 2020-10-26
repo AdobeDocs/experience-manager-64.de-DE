@@ -8,9 +8,9 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 66%
 
 ---
@@ -178,6 +178,7 @@ Um eine Webkanal-Vorlage zu erstellen, definieren Sie einen Ordner, in dem Sie d
 Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
 
 1. Tap **Tools** ![Tools](assets/tools-icon.svg) > **Configuration Browser**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
