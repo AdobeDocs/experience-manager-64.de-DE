@@ -10,10 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -33,7 +33,7 @@ Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie I
 | [Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) werden überwacht. |  |  |
 | Die Systemüberwachung wird (ständig) im Hintergrund ausgeführt. | Einschließlich CPU-, Arbeitsspeicher-, Festplatten- und Netzwerkauslastung. Verwendet wird z. B. iostat / vmstat / perfmon. | Protokollierte Daten werden angezeigt und können zum Nachverfolgen von Leistungsproblemen verwendet werden. Rohdaten sind ebenfalls verfügbar. |
 | [Die AEM-Leistung wird überwacht](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Einschließlich [Anfragezähler](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) zur Überwachung des Traffic-Niveaus. | Bei großem oder anhaltendem Leistungsverlust sollte eine detaillierte Analyse erfolgen. |
-| Sie überwachen Ihre [Replikationsagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). `` |  |  |
+| Sie überwachen Ihre [Replikationsagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Regelmäßige Bereinigung von Workflow-Instanzen. | Repository-Größe und Workflow-Leistung. | Siehe [Regelmäßige Bereinigung von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Backups {#backups}
@@ -97,9 +97,9 @@ Das Tool **Versionen bereinigen** dient zum Bereinigen der Versionen eines Knote
 
 In diesem Abschnitt werden die Wartungsaufgaben im Zusammenhang mit der Versionsfunktion von AEM behandelt. Mit dem Tool **Versionsbereinigung** können Sie Versionen eines Knotens oder eine Knotenhierarchie Ihres Repository bereinigen. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.
 
-### Übersicht {#overview}
+### Überblick {#overview}
 
-Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole **unter**„Versionsverwaltung“**oder direkt unter folgender URL verfügbar: ``
+Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole** unter **„Versionsverwaltung“** oder direkt unter folgender URL verfügbar:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
@@ -121,7 +121,7 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie zur **[Tools](/help/sites-administering/tools-consoles.md)-Konsole **, wählen Sie**Versioning **aus und doppelklicken Sie auf**Versionen bereinigen **.
+1. Navigieren Sie zur **[Tools](/help/sites-administering/tools-consoles.md)-Konsole**, wählen Sie **Versioning** aus und doppelklicken Sie auf **Versionen bereinigen**.
 1. Legen Sie den Startpfad für den zu löschenden Inhalt fest (z. B. `/content/geometrixx-outdoors`).
 
    * Falls Sie nur den durch den Pfad definierten Knoten löschen möchten, deaktivieren Sie die Option **„Rekursiv“**.
@@ -143,7 +143,7 @@ Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 Beim den Vorgängen **Probelauf** und **Löschen** werden alle Knoten aufgelistet, die verarbeitet werden. Während des Vorgangs kann ein Knoten einen der folgenden Statuswerte haben: 
 
 * `ignore (not versionnable)`: Der Knoten unterstützt keine Versionierung und wird während des Prozesses ignoriert.
-* `ignore (no version)`: Für den Knoten sind keine Versionen vorhanden und er wird beim Bereinigungsvorgang ignoriert. ``
+* `ignore (no version)`: Für den Knoten sind keine Versionen vorhanden und er wird beim Bereinigungsvorgang ignoriert.
 * `retained`: Der Knoten wurde nicht gelöscht.
 * `purged`: die Node wird bereinigt.
 
@@ -317,10 +317,15 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >`org.apache.sling.commons.log.pattern` unterstützt bis zu sechs Argumente.
    >
    >{0} Der Zeitstempel des Typs `java.util.Date`
+   >
    >{1} die Protokollmarkierung
-   >{2} der Name des aktuellen Threads\
-   >{3} Name der Protokollfunktion\
-   >{4} die Protokollebene\
+   >
+   >{2} der Name des aktuellen Threads
+   >
+   >{3} Name der Protokollfunktion
+   >
+   >{4} die Protokollebene
+   >
    >{5} die Protokollmeldung
    >
    >Falls der Protokollaufruf den Parameter `Throwable` enthält, wird der StackTrace an die Meldung angefügt.
@@ -405,21 +410,20 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
 
    >
-   >  Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
+   >Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
    >
-   >  So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
+   >So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
    >
-   >  | `'.'yyyy-MM` | Rotation zu Beginn jedes Monats |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | Rotation am ersten Wochentag (abhängig vom Gebietsschema). |
-   >  | `'.'yyyy-MM-dd` | Rotation jeden Tag um Mitternacht. |
-   >  | `'.'yyyy-MM-dd-a` | Rotation jeden Tages um Mitternacht und Mittag. |
-   >  | `'.'yyyy-MM-dd-HH` | Rotation am Anfang jeder Stunde. |
-   >  | `'.'yyyy-MM-dd-HH-mm` | Rotation am Anfang jeder Minute. |
+   >| `'.'yyyy-MM` | Rotation zu Beginn jedes Monats |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotation am ersten Wochentag (abhängig vom Gebietsschema). |
+   >| `'.'yyyy-MM-dd` | Rotation jeden Tag um Mitternacht. |
+   >| `'.'yyyy-MM-dd-a` | Rotation jeden Tages um Mitternacht und Mittag. |
+   >| `'.'yyyy-MM-dd-HH` | Rotation am Anfang jeder Stunde. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotation am Anfang jeder Minute. |
    >
-   >  Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
-   >
-   >  1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
+   >Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
+   > 1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
       >
       >     
       Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
@@ -456,7 +460,7 @@ Diese Einträge enthalten die gleichen Informationen wie sie beim Bearbeiten ein
 
 #### OSGi-Auditdatensätze aus der Web-Konsole {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -> **Log Files **tab in the AEM Web Console:
+OSGi-Ereignisse generieren ebenfalls Auditdatensätze, die Sie in der AEM-Web-Konsole auf der Registerkarte **Konfigurationsstatus** unter **Protokolldateien** anzeigen können:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
