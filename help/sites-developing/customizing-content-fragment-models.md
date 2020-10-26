@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Diese Komponente verfügt über die Werkzeuge, die zum Rendern der Drag &amp; Dr
 
 ## Standorte {#locations}
 
-Modelle werden unter `/conf`einem Ordner gespeichert und erstellt, in dem die Eigenschaft &quot; [Inhaltsfragmentmodelle&quot;aktiviert ist](/help/assets/content-fragments-models.md#enable-content-fragment-models) . Diese Einstellung wird auch in den **Konfigurationseigenschaften** angezeigt, auf die über den **Konfigurationsbrowser** zugegriffen werden kann.
+Modelle werden unter `/conf`einem Ordner gespeichert und erstellt, in dem die Eigenschaft &quot; [Inhaltsfragmentmodelle&quot;aktiviert ist](/help/assets/content-fragments-models.md#enable-content-fragment-models) . Diese Einstellung wird auch in den **Konfigurationseigenschaften** angezeigt, auf die über den **[Konfigurationsbrowser](/help/sites-administering/configurations.md)** zugegriffen werden kann.
 
 1. Navigieren Sie zum Browser über **Tools**, **General**, **Configuration Browser** z. B. 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
