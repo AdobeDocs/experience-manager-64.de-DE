@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2840'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,7 @@ Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oa
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Wählen Sie den Kontext und bearbeiten Sie die Eigenschaften. Aktivieren Sie Cloud-Konfigurationen, wenn sie noch nicht aktiviert sind.
 
    ![config-properties](assets/config-propertiespng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Konfiguration des Facebook-Cloud-Dienstes erstellen/bearbeiten.
 
@@ -258,6 +259,7 @@ Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oa
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Wählen Sie den Kontext und bearbeiten Sie die Eigenschaften. Aktivieren Sie Cloud-Konfigurationen, wenn sie noch nicht aktiviert sind.
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Konfiguration des Twitter-Cloud-Dienstes erstellen/bearbeiten.
 
@@ -333,7 +335,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 Nachdem ein Cloud-Dienst konfiguriert wurde, kann er für die entsprechende Social-Anmeldeeinstellung für eine Community-Site aktiviert werden. Verwenden Sie dazu das Unterbedienfeld [Benutzerverwaltungseinstellungen](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) , während Sie Community-Sites [erstellen](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [verwalten](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
-1. Wählen Sie den Kontext für die Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
+1. Wählen Sie den Kontext Ihrer Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
 
 1. Legen Sie auf der Registerkarte Allgemein die Cloud-Konfigurationen fest.
 
@@ -444,7 +446,7 @@ Wenn in den Protokollen übergreifende Warnungen angezeigt werden, wird empfohle
 
 Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
 
-1. Aus globaler Navigation: Wählen Sie **Tools,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Aus globaler Navigation: Wählen Sie **Tools, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Erstellen Sie einen Index mit dem Namen ntBaseLucene-oauth aus einer Kopie von ntBaseLucene:
 
    * Unter Knoten /oak:index
@@ -459,7 +461,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindex]**: true
-   * **[!UICONTROL reindexCount]**: 3
+   * **[!UICONTROL reindexCount]**: 1
 
 1. Unter Knoten /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
