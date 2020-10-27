@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Benutzerhandbuch für die Benutzeroberfläche
 breadcrumb-title: Handbuch zur Erstellung der klassischen Benutzeroberfläche
 user-guide-description: Dieses Handbuch behandelt die Konzepte des Authoring in AEM in der klassischen Benutzeroberfläche.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 85%
