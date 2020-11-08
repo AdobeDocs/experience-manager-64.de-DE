@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 70%
+source-wordcount: '3569'
+ht-degree: 68%
 
 ---
 
@@ -77,6 +77,10 @@ Führen Sie die folgenden Schritte aus, um ein adaptives Formular für Adobe Sig
 
    1. Geben Sie den **Namen** und den **Titel** für das adaptive Formular an.
    1. Wählen Sie den [Configuration Container](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der beim Konfigurieren von Adobe Sign mit AEM Forms erstellt wurde.
+
+      >[!NOTE]
+      >
+      >Die Dropdown-Liste **[!UICONTROL Adobe Sign Cloud Service]** zeigt die Cloud-Services an, die in dem in diesem Feld ausgewählten Container konfiguriert sind. Die Dropdown-Liste **[!UICONTROL Adobe Sign Cloud Service]** ist im Abschnitt **[!UICONTROL Elektronische Signatur]** der Eigenschaften des adaptiven Formulars verfügbar, wenn Sie die Option &quot;Adobe Sign **** aktivieren&quot;wählen.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen aus:
 
@@ -154,13 +158,15 @@ Führen Sie die folgenden Schritte aus, um einen Cloud-Service und die Reihenfol
 
    Wenn die Liste der **Cloud-Services von Adobe Sign** leer ist, befolgen Sie die Anweisungen zum [Konfigurieren von Adobe Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md), um den Dienst zu konfigurieren.
 
+   Die Dropdown-Liste Liste die Cloud-Dienste, die im `global` Ordner unter Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** vorhanden sind. Darüber hinaus werden im Dropdown-Menü auch die Cloud-Dienste Liste, die in dem Ordner vorhanden sind, den Sie beim Erstellen eines adaptiven Formulars im Feld **[!UICONTROL Configuration Container]** auswählen.
+
 1. Wählen Sie die Signaturreihenfolge im Dialogfeld **Benutzer können signieren**. Adobe Sign-Unterzeichner können ein adaptives Formular **sequenziell**, d. h. nacheinander, oder **simultan** in beliebiger Reihenfolge unterschreiben.
 
    Bei sequenzieller Reihenfolge erhält jeder Unterzeichner das Formular einzeln. Nachdem ein Unterzeichner das Dokument signiert hat, wird das Formular an den nächsten Unterzeichner gesendet und so weiter.
 
    Bei simultaner Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
 
-1. [Hinzufügen Sie Unterzeichner zu einem adaptiven Formular](#addsignerstoanadaptiveform) und tippen Sie auf das Symbol Fertig, um die Änderungen zu speichern.
+1. [hinzufügen Sie Unterzeichner zu einem adaptiven Formular](#addsignerstoanadaptiveform) und tippen Sie auf das Symbol Fertig, um die Änderungen zu speichern.
 
 ### Unterzeichner zu adaptivem Formular hinzufügen {#addsignerstoanadaptiveform}
 
