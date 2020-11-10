@@ -3,10 +3,10 @@ title: Verwalten Sie zusammengesetzte Assets und erstellen Sie Teilassets.
 description: Erfahren Sie, wie Sie Verweise auf AEM Assets aus InDesign-, Adobe Illustrator- und Photoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 52%
+source-wordcount: '1386'
+ht-degree: 51%
 
 ---
 
@@ -58,7 +58,7 @@ Dieses Verfahren weist Ähnlichkeiten zur in [Hinzufügen von AEM-Assets als Ref
 
 1. Perform the steps in [Creating Workflow Models](/help/sites-developing/workflows-models.md) to create a new workflow.
 1. Verwenden Sie die Paketfunktion von Adobe InDesign, um das Dokument zu exportieren.
-Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner den Ordner &quot;Links&quot;, der in der InDesign Unterelemente enthält.
+Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner den Ordner &quot;Links&quot;, der die Teilassets in der InDesign-Datei enthält.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das AEM-Repository hoch.
 1. Starten Sie den Unarchiver-Workflow.
 1. Wenn der Workflow abgeschlossen ist, werden die Referenzen im Link-Ordner automatisch als Teil-Assets referenziert. Um eine Liste der referenzierten Assets anzuzeigen, navigieren Sie zur Asset-Detailseite des InDesign-Assets und schließen Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector).
@@ -89,7 +89,7 @@ Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie f
 
 1. Melden Sie sich bei Experience Manager als Administrator an. Access **[!UICONTROL Tools > Workflow > Models]**.
 1. Wählen Sie **[!UICONTROL DAM Update Asset]** Workflow und klicken Sie auf **[!UICONTROL Bearbeiten]**.
-1. Klicken Sie auf **[!UICONTROL Seitenbedienfeld]** umschalten und suchen Sie den Schritt &quot;Unterelement **[!UICONTROL erstellen&quot;]** . Hinzufügen den Schritt zum Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
+1. Klicken Sie auf **[!UICONTROL Seitenbedienfeld]** umschalten und suchen Sie den Schritt &quot;Unterelement **[!UICONTROL erstellen&quot;]** . hinzufügen den Schritt zum Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
 
 Führen Sie zum Generieren der Teilassets einen der folgenden Schritte aus:
 
@@ -117,7 +117,7 @@ In InDesign können Sie Seiten mithilfe des InDesign-Servers extrahieren. Wenn d
 
 Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in den Seiten-Viewer-Steuerelementen zur Verfügung:
 
-* **[!UICONTROL Desktop-Aktionen]** zum Öffnen oder Einblenden eines bestimmten Unterassets mit AEM Desktop-App. Erfahren Sie, wie Sie Desktop-Aktionen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) konfigurieren, wenn Sie AEM Desktop-App verwenden.
+* **[!UICONTROL Desktop-Aktionen]** zum Öffnen oder Einblenden eines bestimmten Unterassets mit AEM Desktop-App. Erfahren Sie, wie Sie Desktop-Aktionen [](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) konfigurieren, wenn Sie AEM Desktop-App verwenden.
 
 * **[!UICONTROL Mit der Option &quot;Eigenschaften]** &quot;wird die Seite &quot; [!UICONTROL Eigenschaften] &quot;des jeweiligen Unterassets geöffnet.
 
@@ -133,4 +133,5 @@ Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in d
 
 >[!MORELIKETHIS]
 >
->* [Verwenden des Adobe Experience Manager-Desktop-Programms](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Verwenden des Adobe Experience Manager-Desktop-Programms](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+
