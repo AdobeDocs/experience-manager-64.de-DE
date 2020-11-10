@@ -3,10 +3,10 @@ title: Konfigurieren Sie das Asset-Tagging mit dem Smart Content Service.
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 47%
+source-wordcount: '1212'
+ht-degree: 48%
 
 ---
 
@@ -83,7 +83,7 @@ Nach Ablauf eines Zertifikats wird es nicht mehr als vertrauenswürdig eingestuf
 
    ![Löschen Sie den vorhandenen Eintrag für Ähnlichkeitssuche in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Abbildung: Löschen des vorhandenen Eintrags`similaritysearch`in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.*
+   *Abbildung: Löschen des vorhandenen Eintrags `similaritysearch` in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.*
 
 1. Navigieren Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy-Cloud Services]**. Klicken Sie auf **[!UICONTROL Asset-Smart-Tags]** > **[!UICONTROL Konfiguration anzeigen]** > **[!UICONTROL Verfügbare Konfigurationen]**. Klicken Sie auf die gewünschte Konfiguration.
 
@@ -190,5 +190,4 @@ Nachdem Sie die Konfiguration abgeschlossen haben, verwenden Sie eine JMX MBean,
 >* [Verwaltung intelligenter Tags](managing-smart-tags.md)
 >* [Übersicht und Schulung von Smart-Tags](enhanced-smart-tags.md)
 >* [Richtlinien und Regeln zur Schulung des intelligenten Inhaltsdienstes](smart-tags-training-guidelines.md)
->* [Videoschulung zum Konfigurieren von Smart-Tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
