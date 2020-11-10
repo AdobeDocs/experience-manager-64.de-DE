@@ -7,9 +7,9 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '721'
 ht-degree: 77%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 77%
 # Assets-Anleitung {#assets}
 
 + [Asset-Benutzerhandbuch](home.md)
-+ [AEM 6.4 Versionshinweise zu Assets](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
++ [AEM 6.4 Versionshinweise zu Assets](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
