@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 solution-title: Lernen und Support
-solution-hub-url: https://helpx.adobe.com/de/support/experience-manager/6-4.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-64.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Erste Schritte
-getting-started-url: https://helpx.adobe.com/de/experience-manager/tutorials.html
+getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
@@ -13,10 +13,10 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 50b278705b703c190babc208567f7267796e66e4
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 74%
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 | mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Der Standardwert ist 2.          |
 | git-repo | Gibt den Speicherort des Hauptberichts für die interne Verwendung an. |
 
-In der Datei &quot;TOC.md&quot;
+In der Datei TOC.md
 
 | metadata | Funktion |
 |--- |--- |
