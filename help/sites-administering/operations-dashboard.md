@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 79%
 
 ---
@@ -297,7 +297,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
   </tr> 
   <tr> 
    <td>Sicherheitsprüfungen</td> 
-   <td><p>Die Sicherheitsprüfung ist eine Verbundprüfung, die die Ergebnisse mehrerer sicherheitsbezogener Prüfungen aggregiert. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td> 
+   <td><p>Die Sicherheitsprüfung ist eine Verbundprüfung, die die Ergebnisse mehrerer sicherheitsbezogener Prüfungen aggregiert. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>Aktive Bundles</td> 
