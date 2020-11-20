@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie neue Komponenten entwickeln, müssen Sie die Grundlagen ihrer Struktur 
 
 Dazu müssen Sie den theoretischen Hintergrund kennenlernen und sich mit den vielfältigen Komponenten-Implementierungen in einer standardmäßigen AEM-Instanz vertraut machen. Der zuletzt genannte Ansatz wird ein Stück weit durch die Tatsache erschwert, dass AEM zwar standardmäßig eine neue, moderne Touch-optimierte Benutzeroberfläche einsetzt, die klassische Benutzeroberfläche aber nach wie vor unterstützt.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er bietet so einen guten Einstieg in die Entwicklung eigener Komponenten.
 
@@ -1030,10 +1030,12 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >[!NOTE]
 >
 >Bei verschachtelten Komponenten gibt es bestimmte Einschränkungen bezüglich der Aktionen, die als Eigenschaften auf dem Knoten `cq:listeners` definiert werden:
-
->* For nested components, the values of the following properties *must* be `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>
+>* Bei verschachtelten Komponenten *müssen* die Werte der folgenden Eigenschaften `REFRESH_PAGE` sein:
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Beispiel (hier ist `project.customerAction` eine statische Methode):
@@ -1045,7 +1047,8 @@ The following example is equivalent to the `REFRESH_INSERTED` configuration:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
+>
+>For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
 
 Mit der folgenden Konfiguration wird die Seite aktualisiert, nachdem die Komponente gelöscht, bearbeitet, eingefügt oder verschoben wurde:
 
