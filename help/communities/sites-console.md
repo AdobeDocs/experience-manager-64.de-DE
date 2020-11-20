@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 5%
@@ -179,7 +179,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die ko
 
    Wenn diese Option aktiviert ist, können Site-Besucher durch Selbstregistrierung Community-Mitglieder werden.
 
-   Wenn diese Option deaktiviert ist, ist die Community-Site *eingeschränkt* und die Site-Besucher müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anforderung stellen oder per E-Mail eine Einladung erhalten. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
+   Wenn diese Option deaktiviert ist, ist die Community-Site *eingeschränkt* und die Site-Besucher müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anfrage stellen oder per E-Mail eine Einladung erhalten. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
 
    Deaktivieren Sie die Option für eine *private* Community-Site. Diese Option ist standardmäßig aktiviert.
 
@@ -216,10 +216,11 @@ Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die ko
    Lassen Sie das Kontrollkästchen für eine *private* Community-Site deaktiviert. Diese Option ist standardmäßig deaktiviert.
 
 >[!NOTE]
-
-**[!UICONTROL Zulassen von Social-Anmeldungen]**
->Während Beispielkonfigurationen für Facebook und Twitter existieren und auswählbar sind, müssen für eine [Produktions-Umgebung](../../help/sites-administering/production-ready.md)benutzerdefinierte Facebook- und Twitter-Anwendungen erstellt werden. Siehe [Social-Anmeldung bei Facebook und Twitter](social-login.md).
 >
+>**[!UICONTROL Zulassen von Social-Anmeldungen]**
+>
+>Während Beispielkonfigurationen für Facebook und Twitter existieren und auswählbar sind, müssen für eine [Produktions-Umgebung](../../help/sites-administering/production-ready.md)benutzerdefinierte Facebook- und Twitter-Anwendungen erstellt werden. Siehe [Social-Anmeldung bei Facebook und Twitter](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
@@ -296,7 +297,7 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 
 * **[!UICONTROL Übersetzungsanbieter auswählen]**
 
-   Standardmäßig ist der Dienstleister ein Testdienst, der nur `microsoft`für Demonstrationen verwendet wird. Wenn kein Dienstleister für die Übersetzung lizenziert ist, sollte die Option &quot;maschinelle Übersetzung **zulassen** &quot;deaktiviert werden.
+   Standardmäßig ist der Dienstleister ein Testdienst, der nur `microsoft`für Demonstrationen verwendet wird. Wenn kein Dienstleister für Übersetzung lizenziert ist, sollte die Option &quot;maschinelle Übersetzung **zulassen** &quot;deaktiviert werden.
 
 * **[!UICONTROL Globalen geteilten Speicher auswählen]**
 
@@ -392,7 +393,8 @@ Der Inhalt einer Website kann mit den gleichen Tools wie jede andere AEM erstell
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>
+>If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Ändern der Site-Eigenschaften {#modifying-site-properties}
 
@@ -439,15 +441,20 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
       die Reihenfolge der Funktionen ändern, die in der Navigationsleiste auf der obersten Navigationsebene der Site angezeigt werden
 
 >[!NOTE]
-Sie können die Reihenfolge aller Funktionen in der Site-Struktur mit Ausnahme der Funktion oben ändern. Daher kann die Startseite der Communities site nicht geändert werden.
+>
+>Sie können die Reihenfolge aller Funktionen in der Site-Struktur mit Ausnahme der Funktion oben ändern. Daher kann die Startseite der Communities site nicht geändert werden.
 
 >[!CAUTION]
-Der Anzeigentitel kann ohne Nebenwirkungen geändert werden, es wird jedoch nicht empfohlen, den URL-Namen einer Community-Funktion zu bearbeiten, die zu einer Community-Site gehört.
-Wenn Sie beispielsweise die URL umbenennen, wird die vorhandene UGC nicht verschoben, sodass die UGC verliert wird.
+>
+>Der Anzeigentitel kann ohne Nebenwirkungen geändert werden, es wird jedoch nicht empfohlen, den URL-Namen einer Community-Funktion zu bearbeiten, die zu einer Community-Site gehört.
+>
+>Wenn Sie beispielsweise die URL umbenennen, wird die vorhandene UGC nicht verschoben, sodass die UGC verliert wird.
 
 >[!CAUTION]
-Die Funktion groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
-Jede andere Funktion, wie die [Seitenfunktion](functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
+>
+>Die Funktion groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
+>
+>Jede andere Funktion, wie die [Seitenfunktion](functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
 
 #### Beispiel: Hinzufügen einer Katalogfunktion zu einer Community-Site-Struktur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -525,8 +532,10 @@ Beachten Sie, dass alle Mitglieder, denen beim Erstellen der Site Rollen als Mod
 Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
 >[!NOTE]
-Wenn Social-Anmeldung [zulassen: Facebook](#user-management) ist aktiviert, sobald die Benutzergruppe
-* community-*&lt;site-name>*-*&lt;uid>*-members
+>
+>Wenn Social-Anmeldung [zulassen: Facebook](#user-management) ist aktiviert, sobald die Benutzergruppe
+>
+>* community-*&lt;site-name>*-*&lt;uid>*-members
 
 erstellt wurde, sollte der angewendete [Facebook-Cloud-Dienst](social-login.md#createafacebookcloudservice) so konfiguriert sein, dass dieser Gruppe Benutzer hinzugefügt werden.
 
