@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 5%
 
 Mit Adobe Experience Manager (AEM) Communities lässt sich leicht eine interne Communitysite erstellen, die verbesserte Leistung und optimierte Siteverwaltung bietet und aus Besuchern wertvolle Communitymitglieder macht.
 
-Wenden Sie sich an Ihren Kundenbetreuer, um Informationen zur Lizenzierung von AEM Communities sowie zu zusätzlichen Lizenzierungen für Aktivierungsfunktionen und Adobe Analytics zu erhalten.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Communities - Funktionen {#communities-features}
 
