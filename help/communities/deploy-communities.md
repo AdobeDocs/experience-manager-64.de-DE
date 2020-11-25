@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 ## Checkliste für die Installation {#installation-checklist}
 
-**Für die[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Für die [AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * Installieren Sie die neuesten [AEM 6.4-Updates](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 
    (Beispiel-Setup wird für die Entwicklung bereitgestellt)
 
-**Fähigkeit &quot;[Communities&quot;](overview.md)**
+**Fähigkeit &quot; [Communities&quot;](overview.md)**
 
 * Wenn Sie eine [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)bereitstellen, [müssen Sie den primären Herausgeber](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 5%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA mit Communities package. Informationen zu Updates für AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)finden Sie in den [AEM 6.4 Versionshinweisen](/help/release-notes/release-notes.md#release-information).
+AEM 6.4 Communities GA beinhaltet Communities-Paket. Informationen zu Updates für AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)finden Sie in den [AEM 6.4 Versionshinweisen](/help/release-notes/release-notes.md#release-information).
 
 ### AEM 6.4 Updates {#aem-updates}
 
@@ -150,7 +150,7 @@ Die AEM Communities SCORM-Engine ist für die [Aktivierungsfunktion](overview.md
 
 * **[cq -social- scorm -package, Version 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Dieses SCORM-Paket wird von allen AEM 6.4 Communities-Versionen unterstützt.
 
-* **[cq -social- scorm -package, Version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**enthält die[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)-Engine. Dieses SCORM-Paket wird ab AEM 6.4.2.x Communities unterstützt.
+* **[cq -social- scorm -package, Version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** enthält die [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) Engine. Dieses SCORM-Paket wird ab AEM 6.4.2.x Communities unterstützt.
 
 Für eine Neuinstallation der SCORM Engine sollte das Paket verwendet werden, das [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) enthält (was [ cq -social- scorm -package, Version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)ist). Damit Sie Lernressourcen spielen können, die von SCORM 2017 unterstützt werden.
 
@@ -160,9 +160,9 @@ Für eine Neuinstallation der SCORM Engine sollte das Paket verwendet werden, da
 
 1. Installieren Sie das **[cq-social-scorm-package, Version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
 1. Laden Sie **`/libs/social/config/scorm/database_scormengine_data.sql`** von der cq-Instanz herunter und führen Sie sie auf dem mysql-Server aus, um ein aktualisiertes scormEngineDB-Schema zu erstellen.
-1. Hinzufügen `/content/communities/scorm/RecordResults` in der Eigenschaft &quot;Ausgeschlossene Pfade&quot;im CSRF-Filter von Herausgebern `https://<hostname>;:<port>/system/console/configMgr` aus.
+1. hinzufügen `/content/communities/scorm/RecordResults` in der Eigenschaft &quot;Ausgeschlossene Pfade&quot;im CSRF-Filter von Herausgebern `https://<hostname>;:<port>/system/console/configMgr` aus.
 
-Bestehende SCORM-Installationen können auf [**cq-social-scorm-package, Version 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(die[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)verwendet) aktualisiert werden, wenn für die erstellten Kursinhalte SCORM 2017.1 erforderlich ist.
+Bestehende SCORM-Installationen können auf [**cq-social-scorm-package, Version 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (die [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)verwendet) aktualisiert werden, wenn für die erstellten Kursinhalte SCORM 2017.1 erforderlich ist.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Bestehende SCORM-Installationen können auf [**cq-social-scorm-package, Version 
 
    `java -Dlogback.configurationFile=logback.xml -cp "lib/*" RusticiSoftware.ScormContentPlayer.Logic.Upgrade.ConsoleApp EngineInstall.xml`
 1. Überwachen Sie die `engine_upgrade.log` Datei auf alle Fehler- und Aktualisierungsstatus des Schemas.
-1. Hinzufügen `/content/communities/scorm/RecordResults` in der Eigenschaft &quot; **[!UICONTROL Ausgeschlossene Pfade]** &quot;im CSRF-Filter von `https://<hostname>:<port>/system/console/configMgr` Herausgebern.
+1. hinzufügen `/content/communities/scorm/RecordResults` in der Eigenschaft &quot; **[!UICONTROL Ausgeschlossene Pfade]** &quot;im CSRF-Filter von `https://<hostname>:<port>/system/console/configMgr` Herausgebern.
 
 ### SCORM-Protokollierung {#scorm-logging}
 
@@ -390,7 +390,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 #### Granite Crypto-Bundle aktualisieren {#refresh-the-granite-crypto-bundle}
 
-* Greifen Sie auf jeder Instanz im Veröffentlichungsmodus auf die [Web-Konsole zu](../../help/sites-deploying/configuring-osgi.md)
+* Greifen Sie auf jeder Instanz im Veröffentlichungsmodus auf die [Webkonsole zu](../../help/sites-deploying/configuring-osgi.md)
 
    * Beispiel: [https://&lt;server>:&lt;port>/system/console/bundles](http://localhost:4503/system/console/bundles)
 
