@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Beispiel:
 * Das Mitglied aus Frankreich verwendet die Übersetzungsfunktion, um den japanischen Kommentar ins Französische zu übersetzen
 * Globale Kommunikation!
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In diesem Abschnitt der Dokumentation wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert. Dabei wird erläutert, wie AEM mit einem [Übersetzungsdienst](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbunden und dieser Dienst in eine Website integriert werden kann, indem ein [Übersetzungsintegrationsframework](../../help/sites-administering/tc-tic.md)konfiguriert wird.
 
@@ -42,7 +42,7 @@ Wenn ein Framework für die Integration von Übersetzungen zusätzlich zu dem Di
 
 ## Der Standard-Übersetzungsdienst {#the-default-translation-service}
 
-AEM Communities verfügt über eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [Standard-Übersetzungsdienst](../../help/sites-administering/tc-msconf.md) , der für mehrere Sprachen aktiviert ist.
+AEM Communities verfügt über eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [Standardübersetzungsdienst](../../help/sites-administering/tc-msconf.md) , der für mehrere Sprachen aktiviert ist.
 
 Beim [Erstellen einer Community-Site](sites-console.md)ist der Standard-Übersetzungsdienst aktiviert, wenn `Allow Machine Translation` er im Unterfeld [TRANSLATION](sites-console.md#translation) überprüft wird.
 
@@ -54,7 +54,7 @@ Beim [Erstellen einer Community-Site](sites-console.md)ist der Standard-Überset
 
 ## Globale Übersetzung von UGC {#global-translation-of-ugc}
 
-Wenn eine Website über mehrere [Sprachkopien](../../help/sites-administering/tc-prep.md)verfügt, erkennt der Standard-Übersetzungsdienst nicht, dass auf einer Site eingegebener UGC mit einem in einer anderen Site eingegebenen UGC in Beziehung stehen kann, als ob der UGC im Wesentlichen von derselben Komponente (der Sprachkopie der Seite, die die Komponente enthält) generiert wird.
+Wenn eine Website mehrere [Sprachkopien](../../help/sites-administering/tc-prep.md)hat, erkennt der Standard-Übersetzungsdienst nicht, dass auf einer Site eingegebener UGC mit einem in einer anderen Site eingegebenen UGC in Beziehung stehen kann, als ob der UGC im Wesentlichen von derselben Komponente (der Sprachkopie der Seite, die die Komponente enthält) generiert wird.
 
 Es ähnelt Gruppen von Menschen, die ein Thema diskutieren, die sich nicht bewusst sind, dass Kommentare in anderen Gruppen als ihren eigenen abgegeben werden, im Vergleich zu allen in einer großen Gruppe, die an einem Gespräch teilnimmt.
 
@@ -118,7 +118,7 @@ Ausführliche Anweisungen finden Sie unter [Erstellen einer Konfiguration für d
 `General.`
 
    * **[!UICONTROL Gebietsschema auswählen...]**
-(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](sites-console.md#translation) der Website. Durch Auswahl dieser Option `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
+(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](sites-console.md#translation) der Website aus. Durch Auswahl dieser Option `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **[!UICONTROL Registerkarte &quot;Assets]** &quot;: kann als Standard beibehalten werden
 * Wählen Sie **[!UICONTROL OK]** aus
