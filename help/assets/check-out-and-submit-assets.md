@@ -17,9 +17,9 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Assets zur Bearbeitung aus
 
 Damit Sie Assets auschecken oder einchecken können, benötigen Sie Schreibzugriff auf diese Assets.
 
-Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Autor vorgenommenen Änderungen überschreiben, wenn mehrere Benutzer teamübergreifend im Rahmen von Bearbeitungsworkflows zusammenarbeiten.
+Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Autor vorgenommenen Änderungen überschreiben, wenn mehrere Benutzer Team-übergreifend im Rahmen von Bearbeitungs-Workflows zusammenarbeiten.
 
-## Auschecken von Assets {#checking-out-assets}
+## Checkout-Assets {#checking-out-assets}
 
 1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus, das Sie auschecken möchten. Sie können auch mehrere Assets zum Auschecken auswählen.
 
@@ -53,13 +53,13 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
    Sie können das Asset auch mit Anmerkungen versehen oder es veröffentlichen.
 
-1. Wählen Sie das bearbeitete Asset in der Benutzeroberfläche „Assets“ aus und klicken Sie auf das Symbol **[!UICONTROL Checkin]** in der Symbolleiste.
+1. Wählen Sie das bearbeitete Asset in der Assets-Benutzeroberfläche aus und klicken Sie auf das Symbol **[!UICONTROL Checkin]** in der Symbolleiste.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
    Das geänderte Asset wird in AEM Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
-## Erzwungener Check-in {#forced-check-in}
+## Erzwungenes Einchecken {#forced-check-in}
 
 Administratoren können Assets einchecken, die von anderen Benutzern ausgecheckt wurden.
 
