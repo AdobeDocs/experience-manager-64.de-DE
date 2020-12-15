@@ -40,19 +40,19 @@ Um Dateien, die Sie mit Adobe InDesign erstellt haben, vollständig in AEM Asset
 
 ## So funktioniert die Extraktion {#how-the-extraction-works}
 
-The InDesign Server can be integrated with AEM Assets so that files created with InDesign ( `.indd`) can be uploaded, renditions generated, *all* media extracted (for example, video) and stored as assets:
+Die InDesign Server kann in AEM Assets integriert werden, sodass mit InDesign ( `.indd`) erstellte Dateien hochgeladen, Darstellungen generiert, *alle*-Medien extrahiert (z. B. Video) und als Assets gespeichert werden können:
 
 >[!NOTE]
 >
 >Frühere Versionen von AEM konnten XMP und die Miniaturansicht extrahieren, während jetzt alle Medien extrahiert werden können.
 
-1. Upload your `.indd` file to AEM Assets.
+1. Laden Sie die `.indd`-Datei nach AEM Assets hoch.
 1. Ein Framework sendet Befehlsskripte via SOAP (Simple Object Access Protocol) an InDesign Server.
 
 
    Dieses Befehlsskript führt folgende Aktionen aus:
 
-   * Retrieve the `.indd` file.
+   * Rufen Sie die Datei `.indd` ab.
    * Führt InDesign Server-Befehle aus:
 
       * Struktur, Text und alle Mediendateien werden extrahiert.
@@ -64,11 +64,11 @@ The InDesign Server can be integrated with AEM Assets so that files created with
    >
    >IDML ist ein XML-Format, das *alle Funktionen* der InDesign-Datei rendert. Es wird als komprimiertes Paket mithilfe der [ZIP-Komprimierung](https://www.techterms.com/definition/zip) gespeichert.
    >
-   >See [Adobe InDesign Interchange Formats INX and IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) for further information.
+   >Weitere Informationen finden Sie unter [Adobe InDesign Interchange Formats INX und IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
-   >If the InDesign Server is not installed or not configured, then you can still upload an `.indd` file into AEM. However the renditions generated will be limited to `png` and `jpeg`, you will not be able to generate `html`, `idml` or the page renditions.
+   >Wenn die InDesign Server nicht installiert oder nicht konfiguriert ist, können Sie trotzdem eine `.indd`-Datei in AEM hochladen. Die generierten Darstellungen sind jedoch auf `png` und `jpeg` beschränkt. Sie können nicht `html`, `idml` oder die Seitendarstellungen generieren.
 
 1. Nach der Extraktion und Ausgabegenerierung:
 
@@ -87,7 +87,7 @@ Um InDesign Server für die Verwendung mit AEM Assets zu integrieren und nach d
 
 1. Konfigurieren Sie einen [Proxy Worker für InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installieren von InDesign Server   {#installing-the-indesign-server}
+### Installieren von InDesign Server    {#installing-the-indesign-server}
 
 Um InDesign Server für die Verwendung mit AEM zu installieren und zu starten, gehen Sie wie folgt vor:
 
@@ -113,7 +113,7 @@ Um InDesign Server für die Verwendung mit AEM zu installieren und zu starten, g
 
 ### Konfigurieren des AEM Assets-Workflows {#configuring-the-aem-assets-workflow}
 
-AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several process steps specifically for InDesign:
+AEM Assets verfügt über einen vorkonfigurierten Workflow **DAM Update Asset**, der mehrere Prozessschritte speziell für die InDesign umfasst:
 
 * [Extrahierung von Medien](#media-extraction)
 * [Extrahierung von Seiten  ](#page-extraction)
@@ -124,7 +124,7 @@ Nach Abschluss des Setups löst das Hochladen von InDesign-Dateien in AEM Assets
 
 #### Extrahierung von Medien {#media-extraction}
 
-This step controls the extraction of media from the `.indd` file.
+Dieser Schritt steuert die Extraktion von Medien aus der Datei `.indd`.
 
 Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Medien]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
 
@@ -146,7 +146,7 @@ Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von M
 
 Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Voreinstellungen nicht entfernen, da sie für die AEM Assets-Benutzeroberfläche erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
-#### Extrahierung von Seiten   {#page-extraction}
+#### Extrahierung von Seiten    {#page-extraction}
 
 Dabei wird eine AEM-Seite aus den extrahierten Elementen erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungshandlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
 
@@ -154,7 +154,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-* **Seiten-Extraktionen-Handler**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extrahierungs-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Standardmäßig ist IDML Export Extraktion Handler verfügbar. Es funktioniert mit der im MediaExtract-Schritt generierten `IDML` Darstellung.
+* **Seiten-Extraktionen-Handler**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extrahierungs-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Standardmäßig ist IDML Export Extraktion Handler verfügbar. Es funktioniert mit der im MediaExtract-Schritt generierten Darstellung `IDML`.
 
 * **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Seite zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
 
@@ -219,8 +219,8 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
    * **[!UICONTROL Maximal parallel ausführbare Aufträge]** –`<*x*>` (Berechnung siehe oben)
 
 1. Speichern Sie diese Änderungen.
-1. Aktivieren Sie das `enable.multisession.name` Kontrollkästchen unten, um die Unterstützung für mehrere Sitzungen für Adobe CS6 und höher zu aktivieren `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`.
-1. Create a [pool of &lt; `*x*>` IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
+1. Aktivieren Sie das Kontrollkästchen `enable.multisession.name` unter `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`, um die Multisession-Unterstützung für Adobe CS6 und später zu aktivieren.
+1. Erstellen Sie einen [Pool von &lt; `*x*>` IDS-Mitarbeitern, indem Sie SOAP-Endpunkte zur IDS-Worker-Konfiguration](#configuring-the-proxy-worker-for-indesign-server) hinzufügen.
 
    Wenn mehrere Computer InDesign Server ausführen, fügen Sie SOAP-Endpunkte (Anzahl der Prozessoren pro Computer -1) für jeden Computer hinzu.
 
@@ -232,24 +232,24 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
    >
    >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
    >
-   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
+   >Standardmäßig wird der IDS-Mitarbeiter nach der konfigurierbaren (`retry.interval.to.whitelist.name`) Zeit in Minuten erneut überprüft. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Support für Adobe InDesign Server 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-higher}
+## Unterstützung für Adobe InDesign Server 10.0 oder höher {#enabling-support-for-indesign-server-or-higher} aktivieren
 
 Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch, um Unterstützung für Mehrfachsitzungen zu aktivieren.
 
-1. Öffnen Sie Configuration Manager von Ihrer [!DNL Assets] Instanz aus `https://[aem_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie Configuration Manager in der [!DNL Assets]-Instanz `https://[aem_server]:[port]/system/console/configMgr`.
 1. Bearbeiten Sie die Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
-1. Select **[!UICONTROL ids.cc.enable]** option, and click **[!UICONTROL Save]**.
+1. Wählen Sie die Option **[!UICONTROL ids.cc.enable]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
 >[!NOTE]
 >
->For [!DNL InDesign Server] integration with [!DNL Assets], use a multi-core processor because the session support feature necessary for the integration is not supported on single core systems.
+>Für die Integration von [!DNL InDesign Server] mit [!DNL Assets] verwenden Sie einen Multicore-Prozessor, da die für die Integration erforderliche Sitzungsunterstützungsfunktion auf einzelnen Core-Systemen nicht unterstützt wird.
 
-## Experience Manager-Anmeldeinformationen konfigurieren {#configure-aem-credentials}
+## Experience Manager-Anmeldeinformationen {#configure-aem-credentials} konfigurieren
 
 Sie können die Standardanmeldeinformationen des Administrators (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrer AEM aus ändern, ohne die Integration mit dem Adobe InDesign-Server zu unterbrechen.
 
