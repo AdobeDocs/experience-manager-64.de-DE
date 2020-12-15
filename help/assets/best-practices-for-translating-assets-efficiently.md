@@ -11,7 +11,7 @@ ht-degree: 98%
 ---
 
 
-# Bewährte Verfahren zur effizienten Übersetzung von Assets {#best-practices-for-translating-assets-efficiently}
+# Bewährte Verfahren zur effizienten Übersetzung von Assets{#best-practices-for-translating-assets-efficiently}
 
 Adobe Experience Manager (AEM) Assets unterstützt mehrsprachige Workflows, um Binärdateien, Metadaten und Tags für digitale Assets in verschiedene Gebietsschemas zu übertragen und die übersetzten Assets zu verwalten. Details finden Sie unter [Mehrsprachige Assets](multilingual-assets.md).
 
