@@ -11,7 +11,7 @@ ht-degree: 88%
 ---
 
 
-# Assets monitoring best practices {#assets-monitoring-best-practices}
+# Assets-Überwachung Best Practices {#assets-monitoring-best-practices}
 
 Aus Sicht von Adobe Experience Manager (AEM) Assets sollte die Überwachung das Beobachten und das Erstellen von Berichten für die folgenden Prozesse und Technologien umfassen:
 
@@ -28,20 +28,20 @@ Aus Sicht von Adobe Experience Manager (AEM) Assets sollte die Überwachung das 
 
 Normalerweise kann die Überwachung in AEM Assets auf zwei Arten durchgeführt werden: Live-Überwachung und Langzeitüberwachung.
 
-## Live monitoring {#live-monitoring}
+## Live-Überwachung {#live-monitoring}
 
 Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwicklungsprozesses oder in Situationen mit hoher Auslastung durchzuführen, um sich mit den Leistungsmerkmalen Ihrer Umgebung vertraut zu machen. Normalerweise sollte für die Live-Überwachung eine Tool-Suite eingesetzt werden. Einige Empfehlungen:
 
 * [Visual VM](https://visualvm.github.io/): Mit Visual VM können Sie detaillierte Java-VM-Informationen, einschließlich CPU-Auslastung und Java-Speicherbelegung, Ansicht werden. Außerdem können Sie Code prüfen und auswerten, der auf einer Instanz ausgeführt wird.
 * [Top](http://man7.org/linux/man-pages/man1/top.1.html): „Top“ ist ein Linux-Befehl zum Öffnen eines Dashboards, in dem Auslastungsstatistiken angezeigt werden, z. B. zur CPU-, Arbeitsspeicher- und I/O-Auslastung. Darin können Sie sich einen allgemeinen Überblick über die Vorgänge auf einer Instanz verschaffen.
-* [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
+* [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop kann auf den meisten Linux-Systemen mit `yum install htop` oder `apt-get install htop` installiert werden.
 
-* [Iotop](http://guichaz.free.fr/iotop/): „Iotop“ ist ein ausführliches Dashboard für die I/O-Auslastung von Datenträgern. Darin werden anhand von Balken und Anzeigen die Prozesse, für die Datenträger-I/O-Vorgänge genutzt werden, sowie die verwendete Menge dargestellt. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
+* [Iotop](http://guichaz.free.fr/iotop/): „Iotop“ ist ein ausführliches Dashboard für die I/O-Auslastung von Datenträgern. Darin werden anhand von Balken und Anzeigen die Prozesse, für die Datenträger-I/O-Vorgänge genutzt werden, sowie die verwendete Menge dargestellt. Iotop kann auf den meisten Linux-Systemen mit `yum install iotop` oder `apt-get install iotop` installiert werden.
 
-* [Iftop](http://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
+* [Iftop](http://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. Iftop kann auf den meisten Linux-Systemen mit `yum install iftop` oder `apt-get install iftop` installiert werden.
 
-* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. For more details, see [How to Use Java Flight Recorder to Diagnose CQ Runtime Problems](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* AEM-Datei „error.log“: Sie können die AEM-Datei „error.log“ nach Details zu Fehlern durchsuchen, die im System protokolliert wurden. Use the command `tail -F quickstart/logs/error.log` to identify errors that you should investigate.
+* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Weitere Informationen finden Sie unter [So verwenden Sie Java-Flugschreiber zur Diagnose von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* AEM-Datei „error.log“: Sie können die AEM-Datei „error.log“ nach Details zu Fehlern durchsuchen, die im System protokolliert wurden. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log`, um Fehler zu identifizieren, die Sie untersuchen sollten.
 * [Workflow-Konsole](../sites-administering/workflows.md): Nutzen Sie die Workflow-Konsole, um Workflows zu überwachen, die Verzögerungen aufweisen oder hängen.
 
 Normalerweise verwenden Sie diese Tools zusammen, um sich einen umfassenden Überblick über die Leistung Ihrer AEM-Instanz zu verschaffen.
@@ -73,7 +73,7 @@ Die Umgebungsüberwachung umfasst die Überwachung der folgenden Punkte:
 
 Sie benötigen externe Tools, z. B. NewRelic(TM) und AppDynamics(TM), um die einzelnen Elemente zu überwachen. Mit diesen Tools können Sie spezifische Warnungen für Ihr System generieren, z. B. für hohe Systemauslastung, Workflow-Stau, Fehler bei Integritätsprüfungen oder nicht authentifizierten Zugriff auf Ihre Website. Adobe spricht keinerlei Empfehlungen für bestimmte Tools aus. Ermitteln Sie, welches Tool für Ihre Zwecke am besten geeignet ist, und setzen Sie es dann ein, um die erwähnten Punkte zu überwachen.
 
-#### Interne Anwendungsüberwachung {#internal-application-monitoring}
+#### Interne Anwendungsüberwachung  {#internal-application-monitoring}
 
 Die interne Anwendungsüberwachung umfasst das Überwachen der Anwendungskomponenten, aus denen der AEM-Stapel besteht, z. B. JVM, das Inhaltsrepository und die Überwachung mit benutzerdefiniertem Anwendungscode, der auf der Plattform erstellt wird. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
 
@@ -120,7 +120,7 @@ Replikationsagenten
 
 * Alarmdefinition: Blockierte Warteschlange im System. Dies ist ein Hinweis darauf, dass das Replikationsziel ausgefallen oder nicht erreichbar ist. Häufig führen Netzwerk- oder Infrastrukturprobleme dazu, dass eine übermäßig hohe Zahl von Einträgen in eine Warteschlange eingereiht wird, und dies kann sich negativ auf die Systemleistung auswirken.
 
-**Hinweis**: Ersetzen Sie für die Parameter MBean und URL durch `<AGENT_NAME>` den Namen des Replizierungsagenten, den Sie überwachen möchten.
+**Hinweis**: Ersetzen Sie für die Parameter MBean und URL  `<AGENT_NAME>` den Namen des Replizierungsagenten, den Sie überwachen möchten.
 
 Sitzungszähler
 
@@ -188,9 +188,9 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 Wenn während des Überwachungsprozesses Probleme auftreten, können Sie die folgenden Problembehandlungsschritte ausführen, um häufig auftretende Probleme mit AEM-Instanzen zu lösen:
 
-* Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Überprüfen Sie die `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
-* Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. Weitere Informationen finden Sie unter [Warten des Repositorys](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+* Markieren Sie `OutOfMemoryError`-Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. Die Best Practices zur Optimierung der Abfrage und Indexierungsleistung finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
 * Untersuchen Sie die Ausgangspunkte des Clientnetzwerks und die Eingangspunkte des AEM-Instanznetzwerks, einschließlich Dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md).
