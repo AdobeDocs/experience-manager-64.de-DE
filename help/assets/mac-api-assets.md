@@ -17,16 +17,16 @@ Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erste
 
 So greifen Sie auf die API zu:
 
-1. Öffnen Sie das Dokument zum API-Dienst unter `https://[hostname]:[port]/api.json`.
-1. Folgen Sie dem Link zum Assets-Dienst, der zu `https://[hostname]:[server]/api/assets.json` führt.
+1. Öffnen Sie das Dokument zum API-Service unter `https://[hostname]:[port]/api.json`.
+1. Folgen Sie dem Link zum Assets-Service, der zu `https://[hostname]:[server]/api/assets.json` führt.
 
-Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
+Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwort-Code für weitere Analysen oder Aktionen.
 
 Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namensraum. Die Metadateneigenschaften im `dc` Namensraum werden jedoch von der Benutzeroberfläche des Experience Managers aktualisiert.
+>[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namensraum. Die Benutzeroberfläche des Experience Managers aktualisiert jedoch die Metadateneigenschaften im Namensraum `dc`.
 
 ## Datenmodell {#data-model}
 
@@ -88,14 +88,14 @@ Die Assets-HTTP-API bietet die folgenden Funktionen:
 **Voraussetzungen**
 
 * Greife Sie auf `https://[aem_server]:[port]/system/console/configMgr` zu.
-* Navigate to **[!UICONTROL Adobe Granite CSRF Filter]**.
-* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes umfasst: `POST`, `PUT`, `DELETE`.
+* Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes enthält: `POST`, `PUT`, `DELETE`.
 
 ## Abrufen von Ordnerauflistungen {#retrieve-a-folder-listing}
 
 Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten Entitäten ab (Unterordner oder Assets).
 
-**Anforderung**: `GET /api/assets/myFolder.json`
+**Anfrage**: `GET /api/assets/myFolder.json`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -107,13 +107,13 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 
 ## Erstellen von Ordnern {#create-a-folder}
 
-Erstellt einen neuen Ordner `sling`: `OrderedFolder` im festgelegten Pfad. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Akzeptiert als Anforderungsdaten wird entweder eine Siren-Darstellung des neuen Ordners oder ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form`- `data`. Dies ist dann sinnvoll, wenn Sie einen Ordner direkt aus einem HTML-Formular erstellen. Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
+Erstellt einen neuen Ordner `sling`: `OrderedFolder` im festgelegten Pfad. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Akzeptiert als Anfragedaten wird entweder eine Siren-Darstellung des neuen Ordners oder ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form`- `data`. Dies ist dann sinnvoll, wenn Sie einen Ordner direkt aus einem HTML-Formular erstellen. Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
 
 Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schlägt der API-Aufruf mit einem Antwort-Code `500` fehl. Ein Aufruf gibt einen Antwort-Code `409` zurück, wenn der Ordner bereits vorhanden ist.
 
 **Parameter**: `name` ist der Ordnername.
 
-**Anforderung**
+**Anfrage**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
@@ -127,11 +127,11 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. If a `*` is provided instead of a node name, the servlet uses the parameter name or the file name as node name.
+Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
 
-**Parameter**: Die Parameter beziehen sich `name` auf den Asset-Namen und `file` auf den Dateiverweis.
+**Parameter**: Die Parameter beziehen sich  `name` auf den Asset-Namen und  `file` auf die Dateireferenz.
 
-**Anforderung**
+**Anfrage**
 
 * `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
 * `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
@@ -147,7 +147,7 @@ Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DA
 
 Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). Eine Aktualisierung löst die Ausführung des standardmäßigen Arbeitsablaufs für die Verarbeitung von Assets aus, sofern dieser konfiguriert ist.
 
-**Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
+**Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -160,7 +160,7 @@ Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). 
 
 Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
 
-**Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
+**Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -169,9 +169,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Metadaten-Aktualisierung zwischen `dc` und `jcr` Namensraum synchronisieren {#sync-metadata-between-namespaces}
+### Synchronisieren Sie Metadaten-Update zwischen `dc` und `jcr` Namensraum {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namensraum. Die mithilfe von Touch-UI vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namensraum. Um die Metadatenwerte zwischen `dc` und `jcr` Namensraum zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der beim Bearbeiten des Assets ausgeführt wird. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im Namensraum `jcr`. Die mithilfe von Touch-UI vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namensraum `dc`. Um die Metadatenwerte zwischen dem Namensraum `dc` und dem `jcr` zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der den Workflow beim Bearbeiten von Assets ausführt. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -192,11 +192,11 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
 
-Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anforderungsparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
+Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anfrageparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
 
 **Parameter**: Die Parameter sind `name` für den Namen der Ausgabedarstellung und `file` als ein Dateiverweis.
 
-**Anforderung**
+**Anfrage**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -208,11 +208,11 @@ Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht 
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Aktualisieren von Asset-Ausgabeformaten {#update-an-asset-rendition}
+## Aktualisieren von Asset-Ausgabedarstellungen {#update-an-asset-rendition}
 
-Aktualisiert bzw. ersetzt ein Asset-Wiedergabeformat durch die neuen Binärdaten.
+Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärdaten.
 
-**Anforderung**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**Anfrage**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -227,7 +227,7 @@ Erstellt einen neuen Asset-Kommentar.
 
 **Parameter**: Die Parameter sind `message` für den Nachrichtentext des Kommentars und `annotationData` für die Anmerkungsdaten im JSON-Format bestimmt.
 
-**Anforderung**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**Anfrage**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -240,45 +240,45 @@ Erstellt einen neuen Asset-Kommentar.
 
 Kopiert einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel.
 
-**Anforderungs-Header**: Die Parameter sind:
+**Anfrage-Header**: Die Parameter sind:
 
 * `X-Destination` – ein neuer Ziel-URI im Bereich der API-Lösung, in den die Ressource kopiert werden soll.
 * `X-Depth` – entweder `infinity` oder `0`. Mit `0` werden nur die Ressource und ihre Eigenschaften kopiert und nicht ihre untergeordneten Elemente.
 * `X-Overwrite` – Verwenden Sie `F`, um ein Überschreiben eines Assets am vorhandenen Ziel zu verhindern.
 
-**Anforderung**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**Anfrage**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
 * 201 – ERSTELLT – wenn der Ordner/das Asset in ein nicht vorhandenes Ziel kopiert wurde.
 * 204 – KEIN INHALT – wenn der Ordner/das Asset in ein vorhandenes Ziel kopiert wurde.
-* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn ein Anforderungs-Header fehlt.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn ein Anfrage-Header fehlt.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Verschieben von Ordnern oder Assets {#move-a-folder-or-asset}
 
 Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel.
 
-**Anforderungs-Header**: Die Parameter sind:
+**Anfrage-Header**: Die Parameter sind:
 
 * `X-Destination` – ein neuer Ziel-URI im Bereich der API-Lösung, in den die Ressource kopiert werden soll.
 * `X-Depth` – entweder `infinity` oder `0`. Mit `0` werden nur die Ressource und ihre Eigenschaften kopiert und nicht ihre untergeordneten Elemente.
 * `X-Overwrite` Verwenden Sie entweder `T`, um das Löschen einer vorhandenen Ressource zu erzwingen, oder `F`, um das Überschreiben einer vorhandenen Ressource zu verhindern.
 
-**Anforderung**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**Anfrage**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
 * 201 – ERSTELLT – wenn der Ordner/das Asset in ein nicht vorhandenes Ziel kopiert wurde.
 * 204 – KEIN INHALT – wenn der Ordner/das Asset in ein vorhandenes Ziel kopiert wurde.
-* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn ein Anforderungs-Header fehlt.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn ein Anfrage-Header fehlt.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Löschen eines Ordners, eines Assets oder einer Ausgabedarstellung {#delete-a-folder-asset-or-rendition}
 
 Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
-**Anforderung**
+**Anfrage**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`
