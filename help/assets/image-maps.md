@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen
+title: hinzufügen
 description: Erfahren Sie, wie Sie Bild-Assets per Hyperlink verbundene Imagemaps hinzufügen können.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,26 +11,26 @@ ht-degree: 20%
 ---
 
 
-# Hinzufügen {#adding-image-maps}
+# hinzufügen Imagemaps {#adding-image-maps}
 
 Erfahren Sie, wie Sie Bild-Assets per Hyperlink verbundene Imagemaps hinzufügen können.
 
 Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die genau so wie andere Hyperlinks funktionieren.
 
-1. Do any one of the following to open **[!UICONTROL In-place Image Editor]**:
+1. Führen Sie einen der folgenden Schritte aus, um **[!UICONTROL Ersetzenden Bildeditor]** zu öffnen:
 
-   * Using Quick Actions, tap the **[!UICONTROL Edit]** icon that appears on an asset in the **[!UICONTROL Card]** view. In the List view, select the asset and tap the **Edit** icon in the toolbar.
+   * Tippen Sie mithilfe der Schnellaktionen auf das Symbol **[!UICONTROL Bearbeiten]**, das auf einem Asset in der Ansicht **[!UICONTROL Card]** angezeigt wird. Wählen Sie in der Ansicht &quot;Liste&quot;das Asset aus und tippen Sie in der Symbolleiste auf das Symbol **Bearbeiten**.
 
       >[!NOTE]
       >
-      >Quick Actions is not available in the **[!UICONTROL List]** view.
+      >Schnellaktionen stehen in der Ansicht **[!UICONTROL Liste]** nicht zur Verfügung.
 
-   * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and tap the **[!UICONTROL Edit]** icon on the toolbar.
-   * Tap the **[!UICONTROL Edit]** icon from the asset page.
+   * Wählen Sie in der Ansicht **[!UICONTROL Card]** oder **[!UICONTROL Liste]** das Asset aus und tippen Sie auf der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**.
+   * Tippen Sie auf der Asset-Seite auf das Symbol **[!UICONTROL Bearbeiten]**.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. To insert an image map, tap the **[!UICONTROL Launch Map]** icon from the toolbar.
+1. Um eine Imagemap einzufügen, tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Startkarte]**.
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -38,15 +38,15 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Tippen Sie auf den Hotspot und geben Sie die URL und den Alt-Text ein. From the **[!UICONTROL Target]** list, specify where you want the image map displayed, for example the same tab, a new tab, or an iFrame. For example, enter `https://www.adobe.com` as the URL, `Adobe website` as the Alt text, and specify **[!UICONTROL New Tab]** from the **[!UICONTROL Target]** list for the image map to open in a new tab.
+1. Tippen Sie auf den Hotspot und geben Sie die URL und den Alt-Text ein. Geben Sie in der Liste **[!UICONTROL Zielgruppe]** an, wo die Imagemap angezeigt werden soll, z. B. auf derselben Registerkarte, einer neuen Registerkarte oder einem iFrame. Geben Sie beispielsweise `https://www.adobe.com` als URL, `Adobe website` als Alternativtext ein und geben Sie **[!UICONTROL Neues Register]** in der Liste **[!UICONTROL Zielgruppe]** an, damit die Imagemap in einer neuen Registerkarte geöffnet wird.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Tap the **[!UICONTROL Confirm]** icon, and then tap the **[!UICONTROL Finish]** icon from the toolbar to save the changes.
+1. Tippen Sie auf das Symbol **[!UICONTROL Bestätigen]** und dann auf das Symbol **[!UICONTROL Fertigstellen]** in der Symbolleiste, um die Änderungen zu speichern.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   To delete the image map, tap the hot-spot and tap the **[!UICONTROL Delete]** icon.
+   Um die Imagemap zu löschen, tippen Sie auf den Hotspot und dann auf das Symbol **[!UICONTROL Löschen]**.
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -54,4 +54,4 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   If the Dynamic Media option is enabled, navigate to the Asset editor and tap the **[!UICONTROL Map]** icon to view all the applied image maps.
+   Wenn die Option &quot;Dynamic Media&quot;aktiviert ist, navigieren Sie zum Asset-Editor und tippen Sie auf das Symbol **[!UICONTROL Map]**, um alle angewendeten Imagemaps Ansicht.
