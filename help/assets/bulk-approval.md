@@ -23,7 +23,7 @@ Wenn Sie die Assets freigeben, können Prüfer sie genehmigen oder ablehnen. Ben
 
 Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehnt), erhalten Sie eine Benachrichtigung über den Abschluss der Prüfung.
 
-## Create a review task for folders {#creating-a-review-task-for-folders}
+## Erstellen einer Review-Aufgabe für Ordner {#creating-a-review-task-for-folders}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, für den Sie eine Prüfungsaufgabe erstellen möchten.
 1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Prüfungsaufgabe erstellen]**, um die Seite **[!UICONTROL Prüfungsaufgabe]** zu öffnen. Wenn Sie das Symbol in der Symbolleiste nicht sehen können, tippen/klicken Sie auf **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
@@ -71,7 +71,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 
    ![Listenansicht des Prüfungsstatus](assets/review_status_listview.png)
 
-## Create a review task for collections {#creating-a-review-task-for-collections}
+## Erstellen einer Review-Aufgabe für Sammlungen {#creating-a-review-task-for-collections}
 
 1. Wählen Sie auf der Seite „Sammlungen“ die Sammlung aus, für die Sie eine Prüfungsaufgabe erstellen möchten.
 1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Prüfungsaufgabe erstellen]**, um die Seite **[!UICONTROL Prüfungsaufgabe]** zu öffnen. Wenn Sie das Symbol in der Symbolleiste nicht sehen können, tippen/klicken Sie auf **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
