@@ -59,7 +59,7 @@ Der Einstieg ist abgeschlossen, wenn der Administrator den Dienst konfiguriert u
 
 >[!NOTE]
 >
->Wenn Sie AEM Version 6.3 oder früher verwenden und einen automatischen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart-Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart-Tags verwenden nicht die AI-Funktionen und sind weniger genau als die erweiterte Funktion für intelligentes Tagging.
+>Wenn Sie AEM Version 6.3 oder früher verwenden und einen automatischen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart-Tags verwenden nicht die AI-Funktionen und sind weniger genau als die erweiterte Funktion für intelligentes Tagging.
 
 ## Überprüfen von Assets und Tags {#reviewing-assets-and-tags}
 
@@ -72,7 +72,7 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 >[!NOTE]
 >
 >1. Das Training ist ein unwiderruflicher Vorgang. Adobe empfiehlt Ihnen, die Tags im Asset-Satz zu überprüfen, bevor Sie den Smart Content Service mit den Tags trainieren.
->1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
+>1. Bitte lesen Sie die [Richtlinien für Smart Content Service-Schulungen](smart-tags-training-guidelines.md), bevor Sie mit der Schulung für ein Tag beginnen.
 >1. Adobe empfiehlt Ihnen, mindestens zwei unterschiedliche Tags zu verwenden, wenn Sie den Smart Content Service zum ersten Mal trainieren.
 
 >
@@ -91,15 +91,15 @@ Sie können den Smart Content Service regelmäßig oder je nach Anforderung trai
 >
 >Der Trainings-Workflow wird nur für Ordner ausgeführt.
 
-### Regelmäßiges Trainieren {#periodic-training}
+### Regelmäßiges Trainieren  {#periodic-training}
 
-Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
+Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart Tags aktivieren]** unter der Registerkarte **[!UICONTROL Details]** und speichern Sie die Änderungen.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
 Wenn Sie diese Option für einen Ordner auswählt haben, führt AEM automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
 
-### Training bei Bedarf {#on-demand-training}
+### Training bei Bedarf  {#on-demand-training}
 
 Sie können den Smart Content Service über die Workflow-Konsole trainieren, wann immer es erforderlich ist.
 
@@ -131,7 +131,7 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
 1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Herunterladen]** in der Symbolleiste. Der Bericht wird als Excel-Datei heruntergeladen.
 
-## Automatisches Tagging von Assets {#tagging-assets-automatically}
+## Automatisches Tagging von Assets  {#tagging-assets-automatically}
 
 Wenn Sie den Smart Content Service trainiert haben, können Sie den Tagging-Workflow starten, um automatisch passende Tags auf einen anderen Satz ähnlicher Assets anzuwenden.
 
@@ -141,9 +141,9 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 >
 >Der Tagging-Workflow wird sowohl für Assets als auch für Ordner ausgeführt.
 
-### Periodisches Tagging {#periodic-tagging}
+### Periodisches Tagging  {#periodic-tagging}
 
-Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
+Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart Tags aktivieren]** unter der Registerkarte **[!UICONTROL Details]** und speichern Sie die Änderungen.
 
 Wenn diese Option für einen Ordner ausgewählt ist, werden die Assets im Ordner vom Smart Content Service automatisch mit Tags versehen. Standardmäßig wird der Tag-Tag um 12:00 Uhr ausgeführt.
 
@@ -152,13 +152,13 @@ Wenn diese Option für einen Ordner ausgewählt ist, werden die Assets im Ordner
 Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit Tags zu versehen:
 
 * Workflow-Konsole
-* Timeline
+* Zeitleiste
 
 >[!NOTE]
 >
 >Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
 
-#### Kennzeichnen von Assets über die Workflow-Konsole {#tagging-assets-from-the-workflow-console}
+#### Kennzeichnen von Assets über die Workflow-Konsole  {#tagging-assets-from-the-workflow-console}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflowmodelle]** den Workflow **[!UICONTROL DAM Smart Tags Assets]** aus und tippen/klicken Sie dann in der Symbolleiste auf **[!UICONTROL Workflow starten]**.
