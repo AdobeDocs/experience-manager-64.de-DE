@@ -17,7 +17,7 @@ AEM Assets unterstützt viele proprietäre und Drittanbieter-Dateiformatbiblioth
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
-## Adobe Camera Raw-Bibliothek {#adobe-camera-raw-library}
+## Adobe Camera Raw-Bibliothek  {#adobe-camera-raw-library}
 
 Für optimale Leistung empfiehlt Adobe die Verwendung der Adobe Camera Raw-Bibliothek für:
 
@@ -38,9 +38,9 @@ Um optimale Ergebnisse zu erzielen, sollte die Adobe PDF Rasterizer-Bibliothek f
 
 Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Ungeachtet des Farbraums der Quell-PDF-Datei generiert Adobe PDF Rasterizer nur eine RGB-Ausgabe.
 
-## Adobe InDesign Server {#adobe-indesign-cc-server}
+## Adobe InDesign Server  {#adobe-indesign-cc-server}
 
-Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. For more information, see [Adding AEM assets as references in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen AEM Assets als Verweise in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -57,9 +57,9 @@ Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
 * Beibehaltung von Transparenz
 * Verarbeitung von PSD- und PSB-Dateien
 
-To know how to set up the ImageMagic library in AEM, see [Using ImageMagick](media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md).
+Informationen zum Einrichten der ImageMagic-Bibliothek in AEM finden Sie unter [Verwenden von ImageMagick](media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md).
 
-## Imaging Transcoding Library {#image-transcoding-library}
+## Imaging Transcoding Library  {#image-transcoding-library}
 
 Bei der Adobe Imaging Transcoding Library handelt es sich um eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen übernimmt, darunter Bildkodierung, -transkodierung, -Resampling, Größenanpassung usw.
 
@@ -73,4 +73,4 @@ Die Imaging Transcoding Library unterstützt folgende MIME-Typen:
 * ICO
 * ICN
 
-For details, see [Imaging Transcoding Library](imaging-transcoding-library.md).
+Weitere Informationen finden Sie unter [Imaging Transcoding Library](imaging-transcoding-library.md).
