@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 * Erstellen
 * Löschen
 * Download (einschließlich Wiedergaben)
-* Veröffentlichen
+* Veröffentlichung
 * Veröffentlichung rückgängig machen
 * Genehmigen
 * Ablehnen
@@ -28,7 +28,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 
 Die in der Timeline angezeigten Aktivitätsprotokolle werden aus dem Ordner `/var/audit/com.day.cq.dam/content/dam` in CRX abgerufen, in dem Protokolldateien gespeichert werden. 
 
-Außerdem wird die Timeline-Aktivität protokolliert, wenn neue Assets hochgeladen oder vorhandene Assets geändert und in AEM über [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) oder das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) gespeichert werden.
+Außerdem wird die Timeline-Aktivität protokolliert, wenn neue Assets hochgeladen oder vorhandene Assets geändert und in AEM über [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) oder das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) gespeichert werden.
 
 >[!NOTE]
 >
