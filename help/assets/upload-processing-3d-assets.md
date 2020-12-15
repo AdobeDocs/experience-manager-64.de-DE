@@ -22,11 +22,11 @@ ht-degree: 75%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 is no longer supported. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
+>AEM 3D in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
 
 Verwenden Sie Standardverfahren zum Hochladen oder Synchronisieren, um 3D-Assets und ihre zugehörigen referenzierten Dateien in AEM Assets zu übertragen.
 
-Siehe [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
+Informationen hierzu finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
 
 Adobe empfiehlt, dass Sie alle referenzierten Dateien hochladen, bevor Sie die primäre 3D-Modelldatei hochladen oder gleichzeitig hochladen. Diese Vorgehensweise ist jedoch nicht obligatorisch.
 
@@ -57,25 +57,25 @@ Wenn der Ladevorgang abgeschlossen ist, werden Ihre 3D-Dateien konvertiert und w
 
 In der Regel werden für die Konvertierung und Verarbeitung von 3D-Dateien erhebliche CPU- und Speicherressourcen auf einem Server verbraucht. Außerdem ist der Zeitaufwand beträchtlich. Die Verarbeitungszeiten variieren abhängig von der Größe des Modells und den Fähigkeiten des Servers beträchtlich. Beispiel: Ein typisches kleines Modell mit weniger als 100.000 Flächen kann in der Regel in weniger als einer Minute angezeigt und in 2–3 Minuten vollständig verarbeitet werden. Die Verarbeitung eines größeren Modells mit mehr als einer Million Flächen kann hingegen mehrere Dutzend Minuten in Anspruch nehmen.
 
-Aufträge für Konvertieren, Verarbeiten und Rendern werden so in die Warteschlange gestellt, dass eine übermäßige Verlangsamung des Servers vermieden wird. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Dieser Status zeigt, dass andere Verarbeitungs- oder Renderaufträge abgeschlossen werden müssen, bevor das aktuelle Asset verarbeitet wird.
+Aufträge für Konvertieren, Verarbeiten und Rendern werden so in die Warteschlange gestellt, dass eine übermäßige Verlangsamung des Servers vermieden wird. Die Meldung &quot;Warten auf Verarbeitung...&quot; manchmal in der **[!UICONTROL Ansicht]** angezeigt wird, wenn Sie Assets hochgeladen haben. Dieser Status zeigt, dass andere Verarbeitungs- oder Renderaufträge abgeschlossen werden müssen, bevor das aktuelle Asset verarbeitet wird.
 
 Mit den verfügbaren Verfahren lässt sich die Nutzung der CPU auf die Erfassungsverarbeitung und das Rendern beschränken. Informationen zur Konfiguration der CPU-Grenzwerte finden Sie unter [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
-## Überwachen des Verarbeitungsstatus Ihrer hochgeladenen 3D-Dateien {#monitoring-the-processing-status-of-your-uploaded-d-files}
+## Überwachen des Verarbeitungsstatus Ihrer hochgeladenen 3D-Dateien  {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Jedes geladene 3D-Modell durchläuft in der Regel die folgenden 4–6 geordneten Verarbeitungsphasen:
+Nur in **[!UICONTROL Ansicht]** werden der Verarbeitungsstatus und der Fortschritt als Fortschrittsbanner auf der Asset-Karte angezeigt. Jedes geladene 3D-Modell durchläuft in der Regel die folgenden 4–6 geordneten Verarbeitungsphasen:
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Processing stage</strong><br /> </td> 
-   <td><strong>Processing names</strong></td> 
+   <td><strong>Verarbeitungsstufe</strong><br /> </td> 
+   <td><strong>Verarbeitungsnamen</strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
    <td>1</td> 
    <td>Verarbeitung</td> 
-   <td>Basic initial processing and metadata extraction.</td> 
+   <td>Grundlegende anfängliche Verarbeitung und Metadaten-Extraktion.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -90,27 +90,27 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>4</td> 
    <td>Erstellen von Schatten</td> 
-   <td>Optional. Auf der Ausgangsebene unter dem 3D-Objekt können Sie einen Ambient Occlusion-Schlagschatten generieren. Siehe <a href="/help/assets/advanced-config-3d.md">Erweiterte Konfigurationseinstellungen</a> , um diese Verarbeitung zu aktivieren oder zu deaktivieren.</td> 
+   <td>Optional. Auf der Ausgangsebene unter dem 3D-Objekt können Sie einen Ambient Occlusion-Schlagschatten generieren. Siehe <a href="/help/assets/advanced-config-3d.md">Erweiterte Konfigurationseinstellungen</a>, um diese Verarbeitung zu aktivieren oder zu deaktivieren.</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>Erstellen von Lightmaps</td> 
-   <td>Optional. Die Qualität der interaktiven Vorschau und des beschleunigten Renderns mit dem Standard-Renderer kann erhöht werden. Siehe <a href="/help/assets/advanced-config-3d.md">Erweiterte Konfigurationseinstellungen</a> , um diese Verarbeitung zu aktivieren oder zu deaktivieren.</td> 
+   <td>Optional. Die Qualität der interaktiven Vorschau und des beschleunigten Renderns mit dem Standard-Renderer kann erhöht werden. Siehe <a href="/help/assets/advanced-config-3d.md">Erweiterte Konfigurationseinstellungen</a>, um diese Verarbeitung zu aktivieren oder zu deaktivieren.</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
    <td>Animation erstellen</td> 
-   <td>Optional. Hier können Sie eine einfache Animation rendern, die anschließend in der Kartenansicht als visuelle Miniatur verwendet wird. Siehe <a href="/help/assets/advanced-config-3d.md">Erweiterte Konfigurationseinstellungen</a> , um diese Verarbeitung zu aktivieren oder zu deaktivieren.</td> 
+   <td>Optional. Hier können Sie eine einfache Animation rendern, die anschließend in der Kartenansicht als visuelle Miniatur verwendet wird. Siehe <a href="/help/assets/advanced-config-3d.md">Erweiterte Konfigurationseinstellungen</a>, um diese Verarbeitung zu aktivieren oder zu deaktivieren.</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
-   <td>Waiting for processing</td> 
-   <td>Shown when other 3D assets have processing priority. Das sind beispielsweise Assets, die früher geladen wurden, deren Verarbeitung jedoch noch nicht abgeschlossen wurde.</td> 
+   <td>Warten auf Verarbeitung</td> 
+   <td>Wird angezeigt, wenn andere 3D-Assets Verarbeitungspriorität haben. Das sind beispielsweise Assets, die früher geladen wurden, deren Verarbeitung jedoch noch nicht abgeschlossen wurde.</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. Sie müssen nicht warten, bis alle Verarbeitungsphasen abgeschlossen sind.
+>Sie können ein 3D-Asset in der Ansicht **[!UICONTROL Detail]** oder nach Abschluss der Phase &quot;Erstellen der Vorschau&quot;rendern. Sie müssen nicht warten, bis alle Verarbeitungsphasen abgeschlossen sind.
 
