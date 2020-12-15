@@ -26,22 +26,22 @@ Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Au
 
 Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie folgende Schritte ausführen:
 
-* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
+* Beginn-up-Befehl enthält das Argument `-r dynamicmedia_scene7` runmode.
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
    Dieses optionale Feature Pack bietet FTP-Unterstützung und Hilfe bei der Migration von Assets aus Dynamic Media Classic (Scene7) in Dynamic Media.
 
 * Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
-* Ensure that the **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replication agent is enabled.
+* Stellen Sie sicher, dass der Replizierungsagenten **[!UICONTROL Dynamic Media Asset Aktivierung (scene7)]** aktiviert ist.
 
-   This replication agent is found under **[!UICONTROL Agents]** on Author.
+   Dieser Replizierungsagenten befindet sich unter **[!UICONTROL Agenten]** im Autor.
 
-## General (all assets) {#general-all-assets}
+## Allgemein (alle Assets) {#general-all-assets}
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset synchronization status properties {#asset-synchronization-status-properties}
+### Eigenschaften des Synchronisierungsstatus von Elementen {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
@@ -50,13 +50,13 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Muss angegeben werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | `success` oder `failed:<error text>` sein. | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | `success` oder `failed:<error text>` | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
-Synchronisierungsfehler und -probleme werden in der Datei `error.log` (AEM-Server-Verzeichnis`/crx-quickstart/logs/`) protokolliert. Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) to gather more information.
+Synchronisierungsfehler und -probleme werden in der Datei `error.log` (AEM-Server-Verzeichnis`/crx-quickstart/logs/`) protokolliert. Es ist eine ausreichende Protokollierung verfügbar, um die Hauptursache der meisten Probleme zu ermitteln. Sie können jedoch die Protokollierung für DEBUG im `com.adobe.cq.dam.ips`-Paket über die Sling-Konsole ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) erhöhen, um weitere Informationen zu erfassen.
 
-### Move, Copy, or Delete {#move-copy-delete}
+### Verschieben, Kopieren oder Löschen {#move-copy-delete}
 
 Führen Sie folgende Schritte aus, bevor Sie einen Verschiebe-, Kopier- oder Löschvorgang ausführen:
 
@@ -64,11 +64,11 @@ Führen Sie folgende Schritte aus, bevor Sie einen Verschiebe-, Kopier- oder Lö
 * Prüfen Sie für Bild- und Viewer-Vorgaben, ob der Wert `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
 * Wenn der obige Metadatenwert fehlt, müssen Sie Assets erneut hochladen, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
 
-### Version control {#version-control}
+### Versionskontrolle {#version-control}
 
-Beim Ersetzen eines vorhandenen dynamischen Medienassets (gleicher Name und Speicherort) haben Sie die Möglichkeit, beide Assets beizubehalten oder eine Version zu ersetzen oder zu erstellen:
+Beim Ersetzen eines vorhandenen Dynamic Media-Assets (gleicher Name und Speicherort) haben Sie die Möglichkeit, beide Assets beizubehalten oder eine Version zu ersetzen oder zu erstellen:
 
-* Keeping both will create a new asset with a unique name for the published asset URL. For example, **[!UICONTROL image.jpg]** is the original asset and **[!UICONTROL image1.jpg]** is the newly uploaded asset.
+* Durch Beibehalten beider Werte wird ein neues Asset mit einem eindeutigen Namen für die URL des veröffentlichten Assets erstellt. Beispiel: **[!UICONTROL image.jpg]** ist das ursprüngliche Asset und **[!UICONTROL image1.jpg]** ist das neu hochgeladene Asset.
 
 * Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in Versand.
 
@@ -115,12 +115,12 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td><p>Verwenden Sie für das Karussell nur Bilder derselben Größe.</p> </td> 
   </tr> 
   <tr> 
-   <td>Bild wird im Viewer für dynamische Medien nicht als Vorschau angezeigt</td> 
+   <td>Bild wird im Viewer für Dynamic Media nicht als Vorschau angezeigt</td> 
    <td><p>Überprüfen Sie, ob das Asset <code>dam:scene7File</code> in den Metadateneigenschaften (CRXDE Lite) enthält.</p> </td> 
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td> 
   </tr> 
   <tr> 
-   <td>Hochgeladenes Asset wird nicht im Asset-Wähler angezeigt</td> 
+   <td>Hochgeladenes Asset wird nicht in der Asset-Auswahl angezeigt</td> 
    <td><p>Überprüfen Sie, ob das Asset die Eigenschaft <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite) aufweist.</p> </td> 
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td> 
   </tr> 
@@ -184,14 +184,14 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Die Videoverarbeitung dauert zu lang</td> 
    <td><p>So prüfen Sie, ob die Videokodierung noch läuft oder ob ein Fehler aufgetreten ist:</p> 
     <ul> 
-     <li>Überprüfen Sie den Videostatus <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
+     <li>Überprüfen Sie den Videostatus <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt;  <span class="kbd">dam:assetState</span></li> 
      <li>Überwachen Sie das Video in der Workflow-Konsole <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Registerkarten „Instanzen“, „Archiv“, „Fehler“.</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Videoausgabeformat fehlt</td> 
-   <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabeformate vorhanden sind:</p> 
+   <td>Videoausgabedarstellung fehlt</td> 
+   <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabedarstellungen vorhanden sind:</p> 
     <ul> 
      <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist.</li> 
      <li>Prüfen Sie anhand von <code>dam:scene7FileAvs</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li> 
@@ -256,7 +256,7 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
       </ol> </li> 
      <li>Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen. 
       <ul> 
-       <li>Nehmen Sie keine Änderungen vor und klicken Sie auf <strong>Speichern</strong>. Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.<br /> <br /> </li> 
+       <li>Nehmen Sie keine Änderungen vor und klicken Sie auf <strong>Speichern</strong>. Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.<br />  <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
