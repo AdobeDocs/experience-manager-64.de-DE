@@ -13,41 +13,41 @@ ht-degree: 79%
 
 # Metadatenschemata   {#metadata-schemas}
 
-In [!DNL Experience Manager Assets], a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw. Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ändern oder benutzerdefinierte Metadatenschemata hinzufügen.
+In [!DNL Experience Manager Assets] definiert ein Metadaten-Schema das Layout der Eigenschaftsseite und die Metadateneigenschaften, die für Assets angezeigt werden, die das jeweilige Schema verwenden. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw. Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ändern oder benutzerdefinierte Metadatenschemata hinzufügen.
 
 Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
 
-1. Klicken Sie auf oder tippen Sie auf die **[!UICONTROL Ansichten-Eigenschaften]** aus Schnellaktionen auf der Asset-Kachel in der Ansicht Karte.
+1. Klicken Sie auf oder tippen Sie auf die Schaltfläche **[!UICONTROL Eigenschaften von Ansichten]** aus Schnellaktionen auf der Elementkachel in der Ansicht Karte.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-   Alternatively, select an asset and then click or tap the **[!UICONTROL Properties]** icon from the toolbar.
+   Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]** klicken oder darauf tippen.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
+1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. Das Asset [!UICONTROL Typ] kann jedoch auf der Eigenschaftenseite auf der Registerkarte [!UICONTROL Einfach] nicht geändert werden.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Bearbeiten von Metadatenschema-Formularen](metadata-schemas.md#editing-metadata-schema-forms). Wenn Sie das Metadatenschema für einen bestimmten MIME-Typ ändern, werden das Layout der Eigenschaftenseite für Assets mit dem aktuellen MIME-Typ und alle untergeordneten Asset-Typen geändert. For example, modifying a `jpeg` schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `IMAGE/JPEG`. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
+   Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Bearbeiten von Metadatenschema-Formularen](metadata-schemas.md#editing-metadata-schema-forms). Wenn Sie das Metadatenschema für einen bestimmten MIME-Typ ändern, werden das Layout der Eigenschaftenseite für Assets mit dem aktuellen MIME-Typ und alle untergeordneten Asset-Typen geändert. Wenn Sie beispielsweise ein `jpeg`-Schema unter `default/image` ändern, wird nur das Metadatenlayout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `IMAGE/JPEG` geändert. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
 ## Metadaten-Schemaformulare {#default-metadata-schema-forms}
 
-Um eine Liste von Formularen/Vorlagen Ansicht, navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
+Um eine Liste von Formularen/Vorlagen Ansicht, navigieren Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
 
 [!DNL Experience Manager] stellt die folgenden Metadaten-Schema-Formularvorlagen bereit:
 
 | Vorlagen |  | Beschreibung |
 |---|---|---|
 | [!UICONTROL default] |  | Dies ist das Basisformular für Assets. |
-|  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schema-Formular für Videos mit dynamischen Medien. |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Schema-Formular für Assets mit dem MIME-Typ &quot;image&quot;, z. B. image/jpeg, image/png usw. <br> Das [!UICONTROL Bildformular] verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit Untertyp [!UICONTROL tiff].</li></ul> |
+|  | Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des Formulars [!UICONTROL default]: |  |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schema-Formular für Dynamic Media-Videos. |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Schema-Formular für Assets mit dem MIME-Typ &quot;image&quot;, z. B. image/jpeg, image/png usw. <br> Das   Bildformular verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit  [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit Untertyp  [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL Anwendung]</li></ul> | Schema-Formular für Assets mit MIME-Typ &quot;application&quot;, z. B. application/pdf, application/zip usw. <br>[!UICONTROL pdf]: Schema-Formular für Assets mit dem Untertyp pdf. |
 |  | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Assets mit dem MIME-Typ „video“, beispielsweise video/avi, video/mp4 usw. |
 | [!UICONTROL collection] |  | Schema-Formular für Sammlungen. |
 | [!UICONTROL contentfragment] |  | Schema-Formular für Inhaltsfragmente. |
-| [!UICONTROL forms] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] |  | Dieses Schema-Formular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Um eine Liste von Formularen/Vorlagen Ansicht, navigieren Sie in der [!DNL Exper
    >
    >Für nicht bearbeitete Vorlagen wird ein Schloss-Symbol angezeigt. Wenn Sie eine der Vorlagen anpassen, wird das Sperrsymbol angezeigt, bevor die Vorlage ausgeblendet wird.
 
-1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
+1. Geben Sie im Dialogfeld den Titel des Formulars ein und klicken Sie auf **[!UICONTROL Erstellen]**, um den Formularerstellungsprozess abzuschließen.
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
@@ -76,7 +76,7 @@ Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im
 
 Sie können dem Metadatenschema-Formular neue Registerkarten oder Formularelemente hinzufügen. Die vom übergeordneten Objekt abgeleiteten Registerkarten und Formularelemente sind gesperrt. Sie können auf untergeordneter Ebene nicht geändert werden.
 
-1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
+1. Aktivieren Sie auf der Seite **[!UICONTROL Schema Forms]** das Kontrollkästchen vor dem Formular und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -119,7 +119,7 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Assets als die Eigenschaft `dc:title`.
 
-* `./jcr:created`: Zeigt die JCR-Eigenschaft am Asset-Knoten an. Wenn Sie diese Eigenschaften für Ansichtseigenschaften konfigurieren, wird empfohlen, dass Sie sie mit „Bearbeitung deaktivieren“ markieren, da sie geschützt sind. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: Zeigt die JCR-Eigenschaft am Asset-Knoten an. Wenn Sie diese Eigenschaften für Ansichtseigenschaften konfigurieren, wird empfohlen, dass Sie sie mit „Bearbeitung deaktivieren“ markieren, da sie geschützt sind. Andernfalls konnte der Fehler [!UICONTROL Asset(s) nicht die Ergebnisse von] ändern, wenn Sie die Eigenschaften des Assets speichern.
 
 Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt angezeigt wird, sollte der Eigenschaftenpfad keine Leerzeichen enthalten.
 
@@ -139,7 +139,7 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 
 **Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
 
-**Löschen-Symbol** Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schema-Formular zu löschen.
+**Symbol** löschenKlicken Sie auf dieses Symbol, um eine Komponente aus dem Schema-Formular zu löschen.
 
 >[!NOTE]
 >
@@ -185,15 +185,15 @@ Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie auf da
 >
 >Die Standard-Metadatenschemaformulare in AEM Assets können nicht gelöscht werden.
 
-## Schemaformulare für MIME-Typen   {#schema-forms-for-mime-types}
+## Schemaformulare für MIME-Typen    {#schema-forms-for-mime-types}
 
 AEM Assets stellt voreingestellte Standardformulare für verschiedene MIME-Typen bereit. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
 
-### Add new forms for MIME types {#adding-new-forms-for-mime-types}
+### hinzufügen neuer Formulare für MIME-Typen {#adding-new-forms-for-mime-types}
 
-Erstellen Sie ein neues Formular unter dem entsprechenden Formulartyp. For example, to add a new template for the `image/png` subtype, create the form under the `image` forms. Der Titel für das Schemaformular ist der Name des Untertyps. In this case, the title is `png`.
+Erstellen Sie ein neues Formular unter dem entsprechenden Formulartyp. Um beispielsweise eine neue Vorlage für den Untertyp `image/png` hinzuzufügen, erstellen Sie das Formular unter den Formularen `image`. Der Titel für das Schemaformular ist der Name des Untertyps. In diesem Fall ist der Titel `png`.
 
-### Use an existing schema template for various MIME types {#using-an-existing-schema-template-for-various-mime-types}
+### Vorhandene Schema-Vorlage für verschiedene MIME-Typen {#using-an-existing-schema-template-for-various-mime-types} verwenden
 
 Sie können eine vorhandene Vorlage für einen anderen MIME-Typ verwenden. Nutzen Sie beispielsweise das Formular `image/jpeg` für Assets mit dem MIME-Typ `image/png`.
 
@@ -222,7 +222,7 @@ AEM Assets ordnet die folgenden MIME-Typen und Schemaformulare zu:
 
 ## Zugriff auf Metadatenschemata gewähren {#granting-access-to-metadata-schemas}
 
-Die Metadaten-Schema-Funktion steht nur Administratoren zur Verfügung. Administratoren können jedoch Benutzern ohne Administratorrechte Zugriff gewähren, indem sie **[!UICONTROL Berechtigungen zum Erstellen]**, **[!UICONTROL Ändern]** und **[!UICONTROL Löschen]** für den `/conf` Ordner bereitstellen.
+Die Metadaten-Schema-Funktion steht nur Administratoren zur Verfügung. Administratoren können jedoch Benutzern ohne Administratorrechte Zugriff gewähren, indem sie die Berechtigungen **[!UICONTROL Create]**, **[!UICONTROL Modify]** und **[!UICONTROL Delete]** für den Ordner `/conf` bereitstellen.
 
 ## Anwenden von ordnerspezifischen Metadaten {#applying-folder-specific-metadata}
 
@@ -243,7 +243,7 @@ Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unt
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Metadaten-Schema Forms]** das `my_default`-Formular und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 
 1. Fügen Sie auf der Seite **[!UICONTROL Metadatenschema-Editor]** ein Textfeld in das Schemaformular ein. Fügen Sie beispielsweise ein Feld mit der Bezeichnung **[!UICONTROL Kategorie]** hinzu.
 
@@ -262,7 +262,7 @@ Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unt
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Erfolgsmeldung zu schließen.
 1. Navigieren Sie zu dem Ordner, auf den Sie das geänderte Metadatenschema angewendet haben.
 
-## Definieren obligatorischer Metadaten {#defining-mandatory-metadata}
+## Definieren obligatorischer Metadaten  {#defining-mandatory-metadata}
 
 Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in der Kartenansicht ein entsprechender visueller Hinweis für die Assets angezeigt.
 
@@ -279,7 +279,7 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Um die benutzerspezifischen Metadaten auf einen Ordner anzuwenden, wählen Sie das Formular aus und klicken Sie in der Symbolleiste auf &quot;Auf Ordner **[!UICONTROL anwenden&quot;]** bzw. tippen Sie darauf.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Um die benutzerspezifischen Metadaten auf einen Ordner anzuwenden, wählen Sie das Formular aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Auf Ordner(s)]** anwenden.
 
 1. Navigieren Sie zum Ordner und laden Sie einige Assets mit fehlenden Metadaten für das Pflichtfeld, das Sie dem benutzerdefinierten Formular hinzugefügt haben. Die Kartenansicht für die Assets zeigt eine Meldung zu den fehlenden Metadaten für das Pflichtfeld an.
 
