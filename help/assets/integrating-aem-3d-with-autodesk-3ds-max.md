@@ -26,7 +26,7 @@ ht-degree: 8%
 
 Sie können optional AEM 3D mit der Autodesk 3ds Max Software integrieren, um die Unterstützung für native 3ds Max-Dateien (.MAX) zu aktivieren. Das Rendering mittels 3ds Max wird derzeit nicht unterstützt.
 
-See [Advanced configuration settings](advanced-config-3d.md).
+Siehe [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
 Siehe auch [Integration von AEM 3D mit AutoDesk Maya](integrate-maya-with-3d.md).
 
@@ -42,51 +42,51 @@ Siehe auch [Integration von AEM 3D mit AutoDesk Maya](integrate-maya-with-3d.md)
 
 1. Klicken Sie in 3ds Max auf **[!UICONTROL Anpassen > Plug-in-Manager]**.
 
-   Suchen Sie `FBXMAX.DLU` und überprüfen Sie, ob der **[!UICONTROL Status]** **[!UICONTROL geladen]** ist.
+   Suchen Sie nach `FBXMAX.DLU` und vergewissern Sie sich, dass **[!UICONTROL Status]** **[!UICONTROL geladen]** ist.
 
-   Schließen Sie die **[!UICONTROL Dialogfelder &quot;Plug-In Manager]** &quot;und &quot;3ds Max&quot;.
+   Schließen Sie die Dialogfelder **[!UICONTROL Plug-In-Manager]** und 3ds Max.
 
 1. Aktualisieren Sie das Konvertierungsskript.
 
-   AEM verwendet ein Befehlszeilenskript, um das Befehlszeilendienstprogramm 3ds Max aufzurufen `3dsmaxcmd.exe`. Sie müssen dieses Skript bearbeiten, wenn Sie eine andere Version als 3ds Max 2016 installiert haben, oder wenn Sie 3ds Max an einem nicht standardmäßigen Speicherort installiert haben oder wenn Sie AEM auf einer anderen Partition oder einem anderen Laufwerk installiert haben.
+   AEM verwendet ein Befehlszeilenskript, um das Befehlszeilendienstprogramm `3dsmaxcmd.exe` von 3ds Max aufzurufen. Sie müssen dieses Skript bearbeiten, wenn Sie eine andere Version als 3ds Max 2016 installiert haben, oder wenn Sie 3ds Max an einem nicht standardmäßigen Speicherort installiert haben oder wenn Sie AEM auf einer anderen Partition oder einem anderen Laufwerk installiert haben.
 
    1. Öffnen Sie die CRXDE Lite und navigieren Sie zu `/libs/settings/dam/v3D/scripts/max`.
-   1. Klicken Sie mit der Dublette `export-fbx.bat` , um es zu öffnen.
-   1. Bearbeiten Sie die erste Zeile des Skripts nach Bedarf, um den Speicherort des `3dsmaxcmd.exe` Dienstprogramms anzuzeigen. Wenn beispielsweise 3ds Max 2017 verwendet wird und AEM auf einem anderen Festplattenlaufwerk installiert ist:
+   1. Klicken Sie mit der Dublette auf `export-fbx.bat`, um es zu öffnen.
+   1. Bearbeiten Sie die erste Zeile des Skripts nach Bedarf, um den Speicherort des Dienstprogramms `3dsmaxcmd.exe` anzuzeigen. Wenn beispielsweise 3ds Max 2017 verwendet wird und AEM auf einem anderen Festplattenlaufwerk installiert ist:
 
    ![image2018-6-22_13-35-8](assets/image2018-6-22_13-35-8.png)
 
-1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
+1. Tippen Sie links oben auf der Seite &quot;CRXDE Lite&quot;auf **[!UICONTROL Alle speichern]**.
 
-   Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
+   Tippen Sie links oben auf der Seite &quot;CRXDE Lite&quot;auf **[!UICONTROL Alle speichern]**.
 
 1. Entfernen Sie den Arbeitsordner (nur erforderlich, wenn zuvor versucht wurde, eine .MAX-Datei zu erfassen).
 
-   1. Navigieren Sie in CRXDE Lite zu `/libs/settings/dam/v3D/Paths/maxWorkPath`. Der Standardwert dieser Einstellung ist `./MaxWork`relativ zum AEM Installationsstammordner.
+   1. Navigieren Sie in CRXDE Lite zu `/libs/settings/dam/v3D/Paths/maxWorkPath`. Der Standardwert dieser Einstellung ist `./MaxWork`, was relativ zum AEM Installationsstammordner ist.
    1. Melden Sie sich beim Server selbst an und verwenden Sie den DateiExplorer, um zum AEM Installationsstammordner zu navigieren.
-   1. Löschen Sie den **[!UICONTROL Ordner &quot;MaxWork]** &quot;einschließlich des gesamten Inhalts, falls vorhanden.
+   1. Löschen Sie den Ordner **[!UICONTROL MaxWork]** einschließlich des gesamten Inhalts, falls vorhanden.
 
       Der Ordner wird automatisch neu erstellt, wenn eine .MAX-Datei das nächste Mal aufgenommen wird.
 
 1. Aktivieren Sie &quot;3ds Max&quot;für die Erfassung, indem Sie folgende Schritte ausführen:
 
-   1. Navigieren Sie in der CRXDE Lite zu `/libs/settings/dam/v3D/assetTypes/max` und setzen Sie die **[!UICONTROL Enabled]** -Eigenschaft auf true:
+   1. Navigieren Sie in der CRXDE Lite zu `/libs/settings/dam/v3D/assetTypes/max` und setzen Sie die Eigenschaft **[!UICONTROL Enabled]** auf true:
 
    ![image2018-6-22_13-50-50](assets/image2018-6-22_13-50-50.png)
 
-1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
+1. Tippen Sie links oben auf der Seite &quot;CRXDE Lite&quot;auf **[!UICONTROL Alle speichern]**.
 
-## Testing the integration of AEM 3D with Autodesk 3ds Max {#testing-the-integration-of-aem-d-with-autodesk-ds-max}
+## Testen der Integration von AEM 3D mit Autodesk 3ds Max {#testing-the-integration-of-aem-d-with-autodesk-ds-max}
 
-1. Open AEM Assets, then upload the `.max` file located in `sample-3D-content/models` to the **[!UICONTROL test3d]** folder.
+1. Öffnen Sie AEM Assets und laden Sie dann die Datei `.max` unter `sample-3D-content/models` in den Ordner **[!UICONTROL test3d]** hoch.
 
    Beachten Sie, dass sample-3D-content.zip zuvor zum Überprüfen der grundlegenden 3D-Funktionen heruntergeladen wurde.
 
-1. Return to the **[!UICONTROL Card]** view and observe the message banners shown on the uploaded assets.
+1. Kehren Sie zur Ansicht **[!UICONTROL Card]** zurück und sehen Sie sich die Meldungsbanner an, die auf den hochgeladenen Assets angezeigt werden.
 
    Das Banner Konvertierungsformat wird angezeigt, während 3ds Max das native Format 3ds Max in .FBX konvertiert.
 
-1. Nach Abschluss der Verarbeitung öffnen Sie `logo-sphere.max` die **[!UICONTROL Detail]** -Ansicht.
+1. Nach Abschluss der Verarbeitung öffnen Sie `logo-sphere.max` in der Ansicht **[!UICONTROL Detail]**.
 
-   Das Erlebnis der Vorschau ist dasselbe wie bei `logo_sphere.fbx`.
+   Das Erlebnis für die Vorschau ist dasselbe wie bei `logo_sphere.fbx`.
 
