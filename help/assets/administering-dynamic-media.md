@@ -22,14 +22,14 @@ Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management
 
 >[!NOTE]
 >
->In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-administering/scene7.md).
+>In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic (früher &quot;Scene7&quot;) in AEM integriert verwenden, finden Sie weitere Informationen unter [Dynamic Media Classic-Integrationsdokumentation](/help/sites-administering/scene7.md).
 >
->See [Dual Use Scenario](/help/sites-administering/scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>Unter [Dual-Use-Szenario](/help/sites-administering/scene7.md#dual-use-scenario) finden Sie Zeiten, in denen Sie AEM in Dynamic Media Classic in Verbindung mit Dynamic Media integrieren möchten.
 
 Wenn Sie dynamische Medien verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren des dynamischen Media-Scene7-Modus](config-dms7.md) - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Kunde von Dynamic Media sind.
-* [Konfigurieren des dynamischen Media-Hybrid-Modus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie ein bestehender AEM für das Upgrade auf dynamische Medien sind.
+* [Dynamic Media-Scene7-Modus](config-dms7.md)  konfigurieren - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
+* [Konfiguration des Dynamic Media-Hybrid-Modus](config-dynamic.md)  - Verwenden Sie diese Konfiguration, wenn Sie ein bestehender Dynamic Media-AEM sind.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
 * [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
