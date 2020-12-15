@@ -31,7 +31,7 @@ AEM Assets propagiert die Metadatenänderungen jedoch nicht automatisch in die 
 
 Mit der Funktion zum XMP Schriftwechsel können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
 
-## XMP Schreibback aktivieren {#enabling-xmp-writeback}
+## Aktivieren XMP Schreibback {#enabling-xmp-writeback}
 
 Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propagieren, bearbeiten Sie die Konfiguration **Adobe CQ DAM Rendition Maker** in Configuration Manager.
 
@@ -41,30 +41,30 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
 
-## Enable XMP writeback for specific renditions {#enabling-xmp-writeback-for-specific-renditions}
+## Aktivieren XMP Schreibback für bestimmte Darstellungen {#enabling-xmp-writeback-for-specific-renditions}
 
 Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabeformate kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt „XMP-Writeback-Vorgang“ des Workflows „DAM-Metadaten-Writeback“ angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
 
 Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten in die Ausgabeformat-Miniaturansichten „140.100.png“ und „319.319.png“ übertragen.
 
-1. In Experience Manager, navigate to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the [!UICONTROL Models] page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools > Workflow > Modelle]**.
+1. Öffnen Sie auf der Seite [!UICONTROL Modelle] das Workflow-Modell **[!UICONTROL DAM Metadata Writeback]**.
 1. Öffnen Sie auf der Eigenschaftsseite **[!UICONTROL DAM-Metadaten-Writeback]** den Schritt **[!UICONTROL XMP-Writeback-Vorgang]**.
 1.  Tippen/Klicken Sie im Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** auf die Registerkarte **[!UICONTROL Prozess]**.
-1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tap/click **[!UICONTROL OK]**.
+1. Fügen Sie im Feld **[!UICONTROL Argumente]** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` hinzu. Tippen/klicken Sie auf **[!UICONTROL OK]**.
 
    ![Schritteigenschaften](assets/step_properties.png)
 
-1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-PTIFF-Darstellungen werden nur lokal im dynamischen Media Hybrid-Modus erstellt und gespeichert. Speichern Sie den Workflow.
+1. Um die Pyramiden-TIFF-Darstellungen für Dynamic Media-Bilder mit den neuen Attributen zu regenerieren, fügen Sie den Schritt **[!UICONTROL Dynamic Media Process Image Assets]** zum DAM-Metadaten-Schreibvorgang hinzu.
+PTIFF-Darstellungen werden nur lokal im Dynamic Media Hybrid-Modus erstellt und gespeichert. Speichern Sie den Workflow.
 
-The metadata changes are propagated to the renditions `thumbnail.140.100.png` and `thumbnail.319.319.png` of the asset, and not the others.
+Die Änderungen an den Metadaten werden an die Darstellungen `thumbnail.140.100.png` und `thumbnail.319.319.png` des Assets weitergegeben, nicht an die anderen.
 
 >[!NOTE]
 >
->For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+>XMP Probleme mit der Schreibmaschine in 64-Bit Linux finden Sie unter [Aktivieren XMP Schreibback auf 64-Bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Weitere Informationen zu unterstützten Plattformen finden Sie unter [XMP Voraussetzungen zum Zurückschreiben von Metadaten](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## Filtern von XMP-Metadaten {#filtering-xmp-metadata}
 
@@ -76,7 +76,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
 >[!NOTE]
 >
->Die Filterung funktioniert nur für aus XMP-Quellen in Asset-Binärdateien abgeleitete Eigenschaften. Bei Eigenschaften, die aus XMP-fremden Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. AEM stores this value in the metadata field named `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
+>Die Filterung funktioniert nur für aus XMP-Quellen in Asset-Binärdateien abgeleitete Eigenschaften. Bei Eigenschaften, die aus XMP-fremden Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. AEM speichert diesen Wert im Metadatenfeld `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
 
 1. Öffnen Sie Configuration Manager von `https://[aem_server]:[port]/system/console/configMgr`.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
@@ -84,8 +84,8 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box. Speichern Sie die Änderungen.
+1. Um blockierte XMP nach dem Anwenden der Filterung über die Zulassungsliste zu filtern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP Filterung]** an. Speichern Sie die Änderungen.
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL Blockierungsliste auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern über eine Blockierungsliste ist standardmäßig aktiviert. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
+   >Die Option **[!UICONTROL Blockierungsliste auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern über eine Blockierungsliste ist standardmäßig aktiviert. Um diese Filterung zu deaktivieren, deaktivieren Sie die Option **[!UICONTROL Blockierungsliste auf XMP Eigenschaften anwenden]**.
