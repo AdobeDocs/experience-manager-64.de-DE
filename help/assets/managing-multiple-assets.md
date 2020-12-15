@@ -11,7 +11,7 @@ ht-degree: 77%
 ---
 
 
-# Manage multiple assets and collections {#managing-multiple-assets-and-collections}
+# Verwalten mehrerer Assets und Sammlungen {#managing-multiple-assets-and-collections}
 
 Erfahren Sie, wie Sie die Metadaten mehrerer Assets und Sammlungen simultan bearbeiten können, um schnell häufige Metadaten-Änderungen zu übertragen.
 
@@ -28,7 +28,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 >
 >Die Massenbearbeitung kann auf Assets angewendet werden, die in einem Ordner oder einer Sammlung enthalten sind. Bei Assets, die über mehrere Ordner hinweg verfügbar sind oder die einem allgemeinen Kriterium entsprechen, ist es möglich, die Metadaten stapelweise aus den Asset-Suchergebnissen zu aktualisieren.
 
-## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
+## Bearbeiten von Metadateneigenschaften mehrerer Assets {#editing-metadata-properties-of-multiple-assets}
 
 1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
@@ -61,7 +61,7 @@ Um DOS-ähnliche Situationen zu vermeiden, beschränkt AEM die Anzahl der Parame
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+Um den Grenzwert zu ändern, rufen Sie **[!UICONTROL Tools > Vorgänge > Web-Konsole]** auf und ändern Sie den Wert von [!UICONTROL Maximale POST Parameter] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi-Konfiguration.
 
 >[!MORELIKETHIS]
 >
