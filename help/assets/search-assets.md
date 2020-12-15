@@ -1,5 +1,5 @@
 ---
-title: 'Suchen nach Assets in AEM      '
+title: 'Suchen nach Assets in AEM '
 description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 94%
 ---
 
 
-# Suchen nach Assets in AEM       {#search-assets-in-aem}
+# Suchen nach Assets in AEM  {#search-assets-in-aem}
 
 Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 
@@ -34,12 +34,12 @@ Sie können eine Suche basierend auf folgenden Optionen (Prädikaten) durchführ
 
 Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](search-facets.md) hinzufügen/entfernen. Führen Sie folgende Schritte aus, um das Bedienfeld „Filter“ anzuzeigen:
 
-1. In the Assets user interface, tap/click ![search_icon](assets/search_icon.png) from the toolbar to display the Omnisearch box.
+1. Tippen/klicken Sie in der Benutzeroberfläche &quot;Assets&quot;in der Symbolleiste auf ![search_icon](assets/search_icon.png), um das Feld &quot;Omniture&quot;anzuzeigen.
 1. Geben Sie Ihren Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie einfach die Eingabetaste drücken, ohne einen Suchbegriff einzugeben. Geben Sie keine vorangestellten Leerzeichen ein, da die Suche sonst nicht funktioniert.
 
 1. Tippen/klicken Sie auf das GlobalNav-Symbol. Das Bedienfeld „Filter“ wird angezeigt.
 
-   ![Filters_panel-1](assets/filters_panel-1.png)
+   ![filters_panel-1](assets/filters_panel-1.png)
 
    Abhängig von der Art der Elemente, nach denen Sie suchen, wird die Anzahl der Übereinstimmungen oben in den Suchergebnissen angezeigt.
 
@@ -85,7 +85,7 @@ Verwenden Sie die **Statuseigenschaft**, um nach Assets zu suchen, die auf versc
 
 Wenn Sie z. B. die Asset-Veröffentlichung überwachen, können Sie die entsprechende Option verwenden, um nach den zu veröffentlichen Assets zu suchen.
 
-![publish](assets/publish.png)
+![-Veröffentlichung](assets/publish.png)
 
 Wenn Sie den Prüfungsstatus von Assets überwachen, verwenden Sie die entsprechende Option, um herauszufinden, welche Assets genehmigt wurden und für welche Assets die Genehmigung aussteht.
 
