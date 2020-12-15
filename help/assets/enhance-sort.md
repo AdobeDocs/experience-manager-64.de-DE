@@ -50,7 +50,7 @@ Mit AEM Assets können Sie Ordner-Assets basierend auf den folgenden Feldern sor
 
 >[!NOTE]
 >
->To sort the values in the `Name` or the `Title`columns, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of `sortable` to `True`.
+>Um die Werte in den Spalten `Name` oder `Title`zu sortieren, überlagern Sie `/libs/dam/gui/content/commons/availablecolumns` und ändern Sie den Wert von `sortable` in `True`.
 
 ## Sortieren von Assets in Suchergebnissen {#sorting-assets-in-search-results}
 
@@ -81,7 +81,7 @@ Mit AEM Assets können Sie Timeline-Einträge chronologisch sortieren, wie z. B
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Wählen Sie in der Timeline einen Eintrag in der Liste aus.  For example, select **[!UICONTROL Comments]** to display the list of annotations associated with the asset.
+1. Wählen Sie in der Timeline einen Eintrag in der Liste aus.  Wählen Sie beispielsweise **[!UICONTROL Kommentare]** aus, um die Liste der Anmerkungen anzuzeigen, die mit dem Asset verknüpft sind.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
