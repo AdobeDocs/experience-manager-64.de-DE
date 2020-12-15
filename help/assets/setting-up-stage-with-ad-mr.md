@@ -43,15 +43,15 @@ ht-degree: 91%
 
    Konfigurieren Sie die Rendereinstellungen. Orientieren Sie sich dabei an den folgenden Vorschlägen:
 
-   * **[!UICONTROL Häufige]** Registerkarte
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Alpha-Kanal (maske)]** für alle renderbaren Kameras.
 
    * **[!UICONTROL Registerkarte „Quality“]**
 
-      * **[!UICONTROL Gesamtqualität]** `- 0.5` oder weniger
-      * **[!UICONTROL Indirekter Diffuse-Modus]** - `Final Gather`
-      * **[!UICONTROL Filtergröße]** - `2.0`, `2.0`
+      * **[!UICONTROL Allgemeine]** `- 0.5` Qualität oder weniger
+      * **[!UICONTROL Indirekter Diffuse-Modus]**  -  `Final Gather`
+      * **[!UICONTROL Filtergröße]** -  `2.0`,  `2.0`
    * Rendern Sie die Szene mit den typischen Bildgrößen, die Sie gewohnt sind. Verfeinern Sie gegebenenfalls die Licht- und/oder Rendereinstellung, um die gewünschten Ergebnisse zu erzielen.
 
       Beachten Sie, dass das Rendern mit Mental Ray und bildbasierter Beleuchtung sehr langsam und rechenintensiv ist. Adobe empfiehlt die Einrichtung der niedrigsten Qualitätseinstellungen, mit denen noch die gewünschte Renderqualität erzielt werden kann.
@@ -62,10 +62,10 @@ ht-degree: 91%
 1. Speichern Sie die Szene und beenden Sie Autodesk Maya.
 1. Laden Sie die Szene in AEM hoch und warten Sie, bis der Ladevorgang abgeschlossen ist.
 
-   Siehe [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
+   Informationen hierzu finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
 
    Wenn Autodesk® Maya® nicht auf dem AEM-Server konfiguriert ist, exportieren Sie eine FBX von Maya und laden Sie sie in AEM hoch.
 
-1. Öffnen Sie die Asset-Eigenschaften in AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Prüfen Sie, ob **[!UICONTROL Klasse]** auf **[!UICONTROL 3D-Bühne]** eingestellt ist. Speichern und beenden Sie.
+1. Öffnen Sie die Asset-Eigenschaften in AEM. Stellen Sie **[!UICONTROL title]** auf eine geeignete Zeichenfolge ein, die in der Dropdown-Liste **[!UICONTROL Stage Selector]** angezeigt wird. Prüfen Sie, ob **[!UICONTROL Klasse]** auf **[!UICONTROL 3D-Bühne]** eingestellt ist. Speichern und beenden Sie.
 1. Öffnen Sie ein 3D-Asset, wählen Sie eine neue Bühnendatei und prüfen Sie, ob sie wie erwartet in der Vorschau angezeigt und gerendert wird.
 
