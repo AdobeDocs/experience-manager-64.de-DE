@@ -29,6 +29,6 @@ Das Übersetzen von Assets umfasst Folgendes:
 1. [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
 1. [Erstellen von Übersetzungsprojekten](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Wenn Ihr Übersetzungs-Dienstleister keinen Connector zur Integration in AEM bereitstellt, verwenden Sie einen [Alternativprozess](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
+Siehe auch [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md).
