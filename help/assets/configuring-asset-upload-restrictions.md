@@ -11,11 +11,11 @@ ht-degree: 92%
 ---
 
 
-# Einschränkungen beim Hochladen von Assets konfigurieren {#configuring-asset-upload-restrictions}
+# Beschränkungen für das Hochladen von Assets konfigurieren {#configuring-asset-upload-restrictions}
 
 Sie können Adobe Experience Manager (AEM) Assets so konfigurieren, dass der von den Benutzern hochladbare Typ von Assets (Dateien) eingeschränkt ist. Mit dieser Funktion können Sie verhindern, dass Benutzer Assets in einem unerwünschten Format oder schädliche Dateien hochladen. Der Dienst `Day CQ DAM Asset Upload Restriction` ermöglicht es Ihnen, den Typ von Dateien, die Benutzer hochladen können, zu steuern. Standardmäßig lässt es AEM Assets zu, dass Benutzer Assets aller MIME-Typen hochladen. Sie können jedoch den Dienst so konfigurieren, dass Benutzer auf den Upload von Dateien bestimmter MIME-Typen beschränkt werden.
 
-1. Um die Configuration Manager-Webkonsole zu öffnen, öffnen Sie `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Um die Configuration Manager-Webkonsole zu öffnen, rufen Sie `https://[AEM_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie den Dienst **[!UICONTROL Day CQ DAM Asset Upload Restriction]** im Bearbeitungsmodus. Standardmäßig ist die Option **Alle MIME-Typen zulassen** aktiviert, sodass Benutzer Dateien aller MIME-Typen hochladen können.
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
