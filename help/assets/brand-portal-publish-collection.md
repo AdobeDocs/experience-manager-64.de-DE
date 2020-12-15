@@ -19,7 +19,7 @@ Wenn Sie nachfolgende Änderungen an der ursprünglichen Sammlung in AEM Assets 
 
 >[!NOTE]
 >
->Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Therefore, if you select content fragment(s) on AEM Author, then **[Publish to Brand Portal]** action is not available.
+>Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie also Inhaltsfragmente in AEM Author auswählen, ist die Aktion **[In Markenportal veröffentlichen]** nicht verfügbar.
 >
 >Wenn Sammlungen, die Inhaltsfragmente enthalten, über die AEM-Autoreninstanz in Brand Portal veröffentlicht werden, wird der gesamte Inhalt des Ordners mit Ausnahme der Inhaltsfragmente auf der Brand Portal-Oberfläche repliziert.
 
@@ -48,7 +48,7 @@ Sie können die Veröffentlichung von Sammlungen rückgängig machen, die Sie vo
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. From the toolbar, tap/click the **[!UICONTROL Remove from Brand Portal]** icon.
+2. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Entfernen aus dem Markenportal]**.
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 
