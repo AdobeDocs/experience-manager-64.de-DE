@@ -22,9 +22,9 @@ ht-degree: 77%
 + [Über DAM](assets.md)
 + [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
-+ AEM Assets verwenden {#using}
++ AEM Assets {#using} verwenden
    + [AEM Assets Startseite](assets-home-page.md)
-   + [Suchen nach Assets in AEM      ](search-assets.md)
+   + [Suchen nach Assets in AEM ](search-assets.md)
    + [GQL-Volltextsuche](gql-search.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Verwenden von Adobe Stock-Assets in AEM Assets](aem-assets-adobe-stock.md)
@@ -56,7 +56,7 @@ ht-degree: 77%
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [Bildsets](image-sets.md)
    + [Sets für gemischte Medien](mixed-media-sets.md)
-   + [Rotations-Sets](spin-sets.md)
+   + [Rotationssets](spin-sets.md)
    + [Panoramabilder](panoramic-images.md)
    + [Video](video.md)
    + [Interaktive Bilder](interactive-images.md)
@@ -139,7 +139,7 @@ ht-degree: 77%
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments-delete.md)
    + [Inhaltsfragmente – Markdown](content-fragments-markdown.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Assets verwalten {#managing}
    + [Verwalten von Assets mit der Touch-optimierten Benutzeroberfläche](managing-assets-touch-ui.md)
    + [Verwalten mehrerer Assets und Sammlungen](managing-multiple-assets.md)
    + [Asset-Wähler](asset-selector.md)
