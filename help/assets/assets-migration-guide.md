@@ -11,13 +11,13 @@ ht-degree: 67%
 ---
 
 
-# Assets migration guide {#assets-migration-guide}
+# Handbuch zur Asset-Migration {#assets-migration-guide}
 
 Beim Migrieren von Assets nach AEM sind verschiedene Schritte zu berücksichtigen. Das Extrahieren von Assets und Metadaten aus ihrem aktuellen Stammordner fällt nicht in den Anwendungsbereich dieses Dokuments, da es von Implementierung zu Implementierung sehr unterschiedlich ist. Stattdessen beschreibt dieses Dokument, wie diese Assets in AEM integriert, ihre Metadaten angewendet, Darstellungen generiert und die Assets aktiviert oder veröffentlicht werden.
 
 ## Voraussetzungen {#prerequisites}
 
-Before performing any of the steps described below, review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Viele Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Belastung. Andere Schritte wie die Konfiguration des Dateispeichers sind nach dem Laden des Systems mit Assets schwierig durchzuführen.
+Bevor Sie einen der unten beschriebenen Schritte ausführen, überprüfen und implementieren Sie die Anleitung unter [Tipps zur Leistungsoptimierung von Assets](performance-tuning-guidelines.md). Viele Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Belastung. Andere Schritte wie die Konfiguration des Dateispeichers sind nach dem Laden des Systems mit Assets schwierig durchzuführen.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Die Migration von Assets nach AEM setzt die Ausführung verschiedener Schritte v
 
 ### Deaktivieren von Workflows {#disable-workflows}
 
-Deaktivieren Sie vor dem Beginn einer Migration die Starter für den `DAM Update Asset` Workflow. Am besten erfassen Sie alle Assets in das System und führen Sie dann die Workflows in Stapeln aus. Wenn Sie während der Migration bereits live sind, können Sie planen, dass diese Aktivitäten außerhalb der Arbeitszeit ausgeführt werden.
+Deaktivieren Sie vor dem Beginn einer Migration die Starter für den `DAM Update Asset`-Workflow. Am besten erfassen Sie alle Assets in das System und führen Sie dann die Workflows in Stapeln aus. Wenn Sie während der Migration bereits live sind, können Sie planen, dass diese Aktivitäten außerhalb der Arbeitszeit ausgeführt werden.
 
 ### Laden von Tags {#load-tags}
 
@@ -73,7 +73,7 @@ Der andere Ansatz zur Aufnahme von Assets sieht einen Pull der Assets aus dem lo
 
 #### Ziehen Sie aus dem lokalen Dateisystem {#pull-from-the-local-file-system}
 
-The [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) pulls assets from the file system and asset metadata from a CSV file for the asset import. Die AEM Asset Manager-API dient zum Importieren der Assets in das System und zum Anwenden der konfigurierten Metadateneigenschaften. Im Idealfall werden die Assets über eine Netzwerkdateibereitstellung oder über ein externes Laufwerk auf dem Server bereitgestellt.
+Der CSV Asset Importer [ACS AEM Tools ruft Elemente aus dem Dateisystem und Asset-Metadaten aus einer CSV-Datei für den Asset-Import ab. ](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) Die AEM Asset Manager-API dient zum Importieren der Assets in das System und zum Anwenden der konfigurierten Metadateneigenschaften. Im Idealfall werden die Assets über eine Netzwerkdateibereitstellung oder über ein externes Laufwerk auf dem Server bereitgestellt.
 
 Wenn Assets nicht über ein Netzwerk übertragen werden, verbessert sich die Gesamtleistung erheblich. Diese Methode ist in der Regel die effizienteste Methode, um Assets in das Repository zu laden. Außerdem können Sie alle Assets und Metadaten in einem Schritt importieren, da das Tool die Metadaten-Erfassung unterstützt. Es ist kein weiterer Schritt erforderlich, um die Metadaten anzuwenden, z. B. mithilfe eines separaten Tools.
 
@@ -100,13 +100,13 @@ Jeder dieser Ansätze ist dahingehend eingeschränkt, dass die Assets in der Aut
 >
 >Adobe bietet weder Wartung noch Unterstützung für Grabbit.
 
-### Clone Publish {#clone-publish}
+### Veröffentlichung klonen {#clone-publish}
 
 Nach Aktivierung der Assets können Sie Ihre Veröffentlichungsinstanz klonen, um die zur Bereitstellung benötigte Anzahl an Kopien zu erstellen. Einen Server zu klonen, ist ein relativ unkomplizierter Vorgang. Dabei müssen jedoch einige wichtige Schritte berücksichtigt werden. So klonen Sie eine Veröffentlichungsinstanz:
 
 1. Sichern Sie die Quellinstanz und den Datenspeicher.
 1. Stellen Sie die Sicherung der Instanz und des Datenspeichers am Zielspeicherort wieder her. Die folgenden Schritte beziehen sich allesamt auf diese neue Instanz.
-1. Führen Sie eine Dateisystemsuche unter `crx-quickstart/launchpad/felix` nach durch `sling.id`. Löschen Sie diese Datei.
+1. Führen Sie eine Dateisystemsuche unter `crx-quickstart/launchpad/felix` nach `sling.id` durch. Löschen Sie diese Datei.
 1. Suchen und löschen Sie etwaig vorhandene `repository-XXX`-Dateien im Stammverzeichnis.
 1. Bearbeiten Sie `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` und `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config`, um auf den Speicherort des Datenspeichers in der neuen Umgebung zu zeigen.
 1. Starten Sie die Umgebung.
@@ -116,7 +116,7 @@ Nach Aktivierung der Assets können Sie Ihre Veröffentlichungsinstanz klonen, u
 
 Nach abgeschlossener Migration sollten die Starter für die Workflows „DAM-Update-Asset“ neu aktiviert werden, um die Ausgabegenerierung und Metadatenextraktion für die laufende, tagtägliche Systemnutzung zu unterstützen.
 
-## Assets über AEM Bereitstellung migrieren {#migrate-between-aem-instances}
+## Migrieren von Assets über AEM Bereitstellung {#migrate-between-aem-instances}
 
 Wenn es auch nicht so häufig vorkommt, müssen dennoch manchmal große Datenmengen zwischen AEM-Instanzen migriert werden, etwa wenn Sie ein AEM- bzw. Hardwareupgrade durchführen oder auf ein neues Rechenzentrum migrieren, wie bei der AMS-Migration.
 
@@ -128,10 +128,10 @@ In diesem Fall sind die Assets schon mit Metadaten aufgefüllt und Wiedergaben s
 
 1. Assets migrieren: Es gibt zwei Tools, die zum Verschieben von Assets von einer AEM Instanz in eine andere empfohlen werden:
 
-   * **Vault Remote Copy** oder `vlt rcp`ermöglicht die Verwendung von VLT in einem Netzwerk. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repositorydaten von einer Instanz herunter und lädt diese in die andere Instanz. Die Dokumentation zum vlt rcp-Tool finden Sie unter [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+   * **Vault Remote Copy** oder  `vlt rcp`ermöglicht die Verwendung von VLT in einem Netzwerk. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repositorydaten von einer Instanz herunter und lädt diese in die andere Instanz. Die Dokumentation zum vlt rcp-Tool finden Sie unter [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** ist ein Open-Source-Tool zur Inhaltssynchronisierung, das von Time Warner Cable für die eigene AEM-Implementierung entwickelt wurde. Durch die Nutzung kontinuierlicher Datenströme weist das Tool im Vergleich zu vlt rcp eine geringere Latenz auf. Darüber hinaus soll es zwei- bis zehnmal schneller sein als vlt rcp. Grabbit unterstützt zudem die alleinige Synchronisierung von Delta-Inhalten, sodass Änderungen nach erfolgreich abgeschlossener Erstmigration synchronisiert werden.
 
-1. Activate assets: Follow the instructions for [activating assets](#activate-assets) documented for the initial migration to AEM.
+1. Aktivieren von Assets: Befolgen Sie die Anweisungen für [Aktivieren von Elementen](#activate-assets), die für die anfängliche Migration zu AEM dokumentiert sind.
 
 1. Veröffentlichung klonen: Wie bei einer neuen Migration ist das Laden einer einzelnen Veröffentlichungsinstanz und das Klonen effizienter als das Aktivieren des Inhalts auf beiden Knoten. Siehe [Klonen von Veröffentlichungsinstanzen](#clone-publish).
 
