@@ -18,7 +18,7 @@ ht-degree: 96%
 ---
 
 
-# About profiles for processing metadata, images, and videos {#profiles-for-processing-metadata-images-and-videos}
+# Informationen zu Profilen zur Verarbeitung von Metadaten, Bildern und Videos {#profiles-for-processing-metadata-images-and-videos}
 
 Profile sind Rezepte, die vorgeben, welche Optionen auf Assets angewendet werden, die in einen Ordner hochgeladen werden. Beispielsweise können Sie angeben, welches Metadatenprofil und welches Videokodierungsprofil auf Video-Assets angewendet wird, die Sie hochladen. Alternativ können Sie angeben, welche Imaging-Profile auf Image-Assets angewendet werden, damit sie entsprechend zugeschnitten werden.
 
@@ -32,7 +32,7 @@ Um Metadaten-, Bild- oder Videoprofile erstellen, bearbeiten oder löschen zu k�
 
 Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
 
-Ein wichtiges Konzept zur Verwendung von Profilen in AEM Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden. Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden. Ein Beispiel finden Sie unter [Organisieren von Assets mit Ordnern](organize-assets.md#organize-using-folders).
+Ein wichtiges Konzept zur Verwendung von Profilen in AEM Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden. Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden. Ein Beispiel finden Sie unter [Assets mithilfe von Ordnern](organize-assets.md#organize-using-folders) organisieren.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Ein wichtiges Konzept zur Verwendung von Profilen in AEM Assets ist deren Zuweis
 
 >[!NOTE]
 >
->Gilt nur für *dynamische Medien - Scene7-Modus* in AEM 6.4.7.0 oder höher.
+>Gilt nur für *Dynamic Media - Scene7-Modus* in AEM 6.4.7.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
@@ -74,7 +74,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Timeline]**.
+1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Zeitleiste]**.
 1. Klicken Sie unten links auf der Seite rechts neben dem Kommentarfeld auf das Caret-Symbol (**^**).
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/assets/reprocess-assets1.png)
@@ -85,7 +85,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Assets erneut verarbeiten 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Bestätigen]**.
+1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
 
    Klicken Sie auf der Hauptseite der AEM-Konsole auf **[!UICONTROL Tools > Workflow]**, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
@@ -116,9 +116,9 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Dialogfeld „Eigenschaften“](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Stapel-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
+1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Batch-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
-1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess asset in a folder.
+1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn **[!UICONTROL Synchronisiert]** angezeigt wird, wird das Workflow-Laufzeitmodell erfolgreich synchronisiert und kann Assets in einem Ordner neu verarbeitet werden.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 
