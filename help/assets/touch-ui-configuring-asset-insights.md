@@ -36,7 +36,7 @@ Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von 
 
 Nachdem Sie Ihr Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Um Asset Insights zur Verfolgung von AEM-Assets in Websites von Drittanbietern zu aktivieren, beziehen Sie den Seitenverfolgungscode in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in AEM Assets, um den Seitenverfolgungscode zu erzeugen. Weitere Informationen dazu, wie Sie Ihren Seitenverfolgungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
 
-1. In AEM, click the **[!UICONTROL Tools > Assets]**.
+1. Klicken Sie in AEM auf **[!UICONTROL Tools > Assets]**.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
