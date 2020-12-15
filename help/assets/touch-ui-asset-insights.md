@@ -27,7 +27,7 @@ Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfiguriere
 >
 >Einblicke werden nur für Bilder unterstützt und bereitgestellt.
 
-## View statistics for an asset {#viewing-statistics-for-an-asset}
+## Statistiken zur Ansicht eines Assets {#viewing-statistics-for-an-asset}
 
 Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
@@ -60,11 +60,11 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
    >
    >Im Gegensatz zu den Daten im Abschnitt „Lösungen“ zeigt der Abschnitt „Leistungsstatistiken“ die neuesten Daten an.
 
-1. Um den Einbettungs-Code für das Asset zu erhalten, das Sie zu Websites hinzufügen, um Leistungsdaten zu gewinnen, tippen oder klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungs-Code abrufen]**. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](touch-ui-using-page-tracker.md).
+1. Um den Einbettungs-Code für das Asset zu erhalten, das Sie zu Websites hinzufügen, um Leistungsdaten zu gewinnen, tippen oder klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungs-Code abrufen]**. Weitere Informationen zum Einbettungscode in Webseiten von Drittanbietern finden Sie unter [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## View aggregate statistics for assets {#viewing-aggregate-statistics-for-assets}
+## Statistiken zum Aggregat von Ansichten für Assets {#viewing-aggregate-statistics-for-assets}
 
 Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
