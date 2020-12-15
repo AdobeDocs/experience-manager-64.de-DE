@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie asynchrone Vorgänge in [!DNL Adobe Experience Manager].
-description: Führen Sie asynchron einige ressourcenintensive Aufgaben durch, um die Leistung in [!DNL Experience Manager Assets]zu optimieren.
+description: Führen Sie asynchron einige ressourcenintensive Aufgaben durch, um die Leistung in [!DNL Experience Manager Assets] zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
@@ -13,38 +13,38 @@ ht-degree: 22%
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung zu reduzieren, [!DNL Adobe Experience Manger Assets] werden bestimmte langfristige und ressourcenintensive Asset-Vorgänge asynchron verarbeitet. Bei der asynchronen Verarbeitung werden mehrere Aufgaben in die Warteschlange gestellt und anschließend in einer seriellen Ausführung ausgeführt, sofern Systemressourcen zur Verfügung stehen. Zu diesen Vorgängen gehören u. a.:
+Um negative Auswirkungen auf die Leistung zu reduzieren, verarbeitet [!DNL Adobe Experience Manger Assets] bestimmte langfristige und ressourcenintensive Asset-Vorgänge asynchron. Bei der asynchronen Verarbeitung werden mehrere Aufgaben in die Warteschlange gestellt und anschließend in einer seriellen Ausführung ausgeführt, sofern Systemressourcen zur Verfügung stehen. Zu diesen Vorgängen gehören u. a.:
 
 * Löschen vieler Assets.
 * Verschieben vieler Assets oder Assets mit vielen Verweisen.
 * Exportieren und Importieren von Asset-Metadaten als Massendatei
 
-You can view the status of asynchronous tasks from the **[!UICONTROL Async Job Status]** page.
+Sie können den Status asynchroner Aufgaben auf der Seite **[!UICONTROL Asynchrone Auftragsstatus]** Ansicht haben.
 
 >[!NOTE]
 >
->Standardmäßig werden die [!DNL Assets] Aufgaben parallel ausgeführt. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. Weitere Informationen finden Sie unter [Warteschlangenkonfigurationen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Standardmäßig werden die [!DNL Assets]-Aufgaben parallel ausgeführt. Wenn `N` die Anzahl der CPU-Kerne ist, können `N/2`-Aufgaben standardmäßig parallel ausgeführt werden. Um benutzerdefinierte Einstellungen für die Warteschlange der Aufgabe zu verwenden, ändern Sie die Konfiguration **[!UICONTROL Standardwarteschlange für asynchrone Vorgänge]** in [!UICONTROL Webkonsole]. Weitere Informationen finden Sie unter [Warteschlangenkonfigurationen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
+## Überwachung des Status asynchroner Vorgänge {#monitoring-the-status-of-asynchronous-operations}
 
-Whenever [!DNL Assets] processes an operation asynchronously, you receive a notification in your [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) and via an email. Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Status asynchroner Aufträge]**.
+Wenn [!DNL Assets] einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem [!DNL Experience Manager] [Posteingang](/help/sites-authoring/inbox.md) und per E-Mail. Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Status asynchroner Aufträge]**.
 
-1. In the [!DNL Experience Manager] interface click **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
+1. Klicken Sie in der Oberfläche [!DNL Experience Manager] auf **[!UICONTROL Vorgänge]** > **[!UICONTROL Aufträge]**.
 
 1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Status von asynchronen Aufträgen]**.
 
    ![Status und Details asynchroner Vorgänge](assets/job_status.png)
 
-   Informationen zum Fortschritt eines Vorgangs finden Sie in der Spalte **[!UICONTROL Status]** . Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
+   Informationen zum Fortschritt eines Vorgangs finden Sie in der Spalte **[!UICONTROL Status]**. Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
 
    * **[!UICONTROL Aktiv]**: Der Vorgang wird verarbeitet.
    * **[!UICONTROL Erfolg]**: Der Vorgang wurde abgeschlossen.
    * **[!UICONTROL Fehler]******: Der Vorgang konnte nicht verarbeitet werden.
    * **[!UICONTROL Geplant]**: Die Verarbeitung des Vorgangs ist für einen späteren Zeitpunkt geplant.
 
-1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** ![stop icon](assets/do-not-localize/stop_icon.svg) from the toolbar.
+1. Um einen aktiven Vorgang zu beenden, wählen Sie ihn in der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Stopp]** ![Stopp-Symbol](assets/do-not-localize/stop_icon.svg).
 
-1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** ![open_icon](assets/do-not-localize/edit_icon.svg) from the toolbar. Die Detailseite der Aufgabe wird angezeigt.
+1. Um weitere Details wie Beschreibungen und Protokolle Ansicht, wählen Sie den Vorgang aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]** ![open_icon](assets/do-not-localize/edit_icon.svg). Die Detailseite der Aufgabe wird angezeigt.
 
    ![Details einer Metadaten-Import-Aufgabe](assets/job_details.png)
 
@@ -63,8 +63,8 @@ Whenever [!DNL Assets] processes an operation asynchronously, you receive a noti
 
 Sie können den Zeitplan für die Bereinigungszeit und die Aufgabe ändern, in der Details abgeschlossener Aufgaben vor dem Löschen beibehalten werden. Sie können auch die maximale Anzahl abgeschlossener Aufgaben konfigurieren, für die Details jederzeit beibehalten werden.
 
-1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** task.
+1. Klicken Sie in der Oberfläche [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**.
+1. Öffnen Sie die Aufgabe **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]**.
 1. Geben Sie die Schwellenzahl der Tage an, nach denen abgeschlossene Aufgaben gelöscht werden, und die maximale Anzahl der Aufgaben, für die Details im Verlauf beibehalten werden. Speichern Sie die Änderungen.
 
    ![Konfiguration zum Planen des Bereinigens asynchroner Aufgaben](assets/purge_job.png)
@@ -73,9 +73,9 @@ Sie können den Zeitplan für die Bereinigungszeit und die Aufgabe ändern, in d
 
 Wenn die Anzahl der zu löschenden Assets oder Ordner die festgelegte Schwellenzahl überschreitet, wird der Löschvorgang asynchron durchgeführt.
 
-1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
-1. Geben Sie im Feld **[!UICONTROL Schwellenwert für die Anzahl der Assets]** die Schwellenwerte an, um Assets, Ordner oder Verweise asynchron zu löschen. Speichern Sie die Änderungen.
+1. Klicken Sie in der Oberfläche [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**.
+1. Öffnen Sie unter [!UICONTROL Webkonsole] die Konfiguration **[!UICONTROL Async Delete operation Job Processing]**.
+1. Geben Sie im Feld **[!UICONTROL Schwellenwert der Anzahl der Assets]** die Schwellenwerte an, um Assets, Ordner oder Verweise asynchron zu löschen. Speichern Sie die Änderungen.
 
    ![Festlegen des Schwellenwerts für die Aufgabe, Assets zu löschen](assets/delete_threshold.png)
 
@@ -83,9 +83,9 @@ Wenn die Anzahl der zu löschenden Assets oder Ordner die festgelegte Schwellenz
 
 Wenn die Anzahl der zu verschiebenden Assets, Ordner oder Verweise die festgelegte Schwellenzahl überschreitet, wird der Verschiebungsvorgang asynchron ausgeführt.
 
-1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
-1. Geben Sie im Feld **[!UICONTROL Schwellenwert für die Anzahl der Assets/Verweise]** die Schwellenwerte an, um Assets, Ordner oder Verweise asynchron zu verschieben. Speichern Sie die Änderungen.
+1. Klicken Sie in der Oberfläche [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**.
+1. Öffnen Sie unter [!UICONTROL Webkonsole] die Konfiguration **[!UICONTROL Async Move operation Job Processing]**.
+1. Geben Sie im Feld **[!UICONTROL Schwellenwert für die Anzahl der Assets/Referenzen]** die Schwellenwerte an, um Assets, Ordner oder Referenzen asynchron zu verschieben. Speichern Sie die Änderungen.
 
    ![Festlegen des Schwellenwerts für die Aufgabe zum Verschieben von Assets](assets/move_threshold.png)
 
