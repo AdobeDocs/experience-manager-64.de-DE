@@ -48,7 +48,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. (Optional) Erstellen Sie im Metadatenschema-Editor ein neues bedingtes Feld. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und den Eigenschaftenpfad an.
 
-   To create a new tab, tap/click **[!UICONTROL +]** to add a tab and then add a metadata field.
+   Um eine neue Registerkarte zu erstellen, tippen/klicken Sie auf **[!UICONTROL +]**, um eine Registerkarte hinzuzufügen, und fügen Sie dann ein Metadatenfeld hinzu.
 
    ![Registerkarte hinzufügen](assets/add_tab.png)
 
