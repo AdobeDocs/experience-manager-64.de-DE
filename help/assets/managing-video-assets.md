@@ -28,9 +28,9 @@ AEM Assets generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn 
 
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
-   You can pause or play video in the **[!UICONTROL Card]** view only. The Play/Pause button is not available in the **[!UICONTROL List]** view.
+   Sie können Videos nur in der Ansicht **[!UICONTROL card]** anhalten oder abspielen. Die Schaltfläche &quot;Abspielen/Anhalten&quot;ist in der Ansicht **[!UICONTROL Liste]** nicht verfügbar.
 
-1. Tippen Sie auf das Symbol &quot; **[!UICONTROL Bearbeiten]** &quot;auf der Karte, um das Video in der Ansicht &quot; **[!UICONTROL Details]** &quot;Vorschau.
+1. Tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]**, um das Video in der Ansicht **[!UICONTROL Details]** Vorschau.
 
    Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
 
@@ -42,7 +42,7 @@ Standardmäßig ist es im AEM Assets nicht möglich, Assets hochzuladen, die auf
 
 Zusätzlich zur AEM Assets-Konfiguration ändern Sie die folgenden Konfigurationen, um große Assets hochzuladen:
 
-* Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in Web Console unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
+* Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in der Webkonsole unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
 * Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
@@ -52,26 +52,26 @@ Zusätzlich zur AEM Assets-Konfiguration ändern Sie die folgenden Konfiguration
 Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die folgenden Schritte im Verzeichnis `/apps` aus.
 
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
-1. In the **[!UICONTROL CRXDE Lite]** page, in the directory window on the left, navigate to `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. To see the directory window, touch `>>` icon.
-1. From the toolbar, tap **[!UICONTROL Overlay Node]**. Wählen Sie alternativ **[!UICONTROL Überlagerungsknoten]** aus dem Kontextmenü aus.
+1. Navigieren Sie auf der Seite **[!UICONTROL CRXDE Lite]** im Ordnerfenster auf der linken Seite zu `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Um das Ordnerfenster anzuzeigen, tippen Sie auf das Symbol `>>`.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Überlagerungsknoten]**. Wählen Sie alternativ **[!UICONTROL Überlagerungsknoten]** aus dem Kontextmenü aus.
 1. Tippen Sie im Dialogfeld **[!UICONTROL Überlagerungsknoten]** auf **[!UICONTROL OK]**.
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
 1. Aktualisieren Sie die Browser-Ansicht. Der Überlagerungsknoten `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` ist ausgewählt.
-1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. For example, enter `32212254720` value to increase the size limit to 30 GB.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. Geben Sie beispielsweise den Wert `32212254720` ein, um die Größenbeschränkung auf 30 GB zu erhöhen.
 
-1. From the toolbar, tap **[!UICONTROL Save All]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Alle speichern]**.
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Vorgänge > Web-Konsole]**.
-1. On the **[!UICONTROL Adobe Experience Manager Web Console Bundles]** page, under the **[!UICONTROL Name]** column of the table, locate and tap **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours).
+1. Suchen Sie auf der Seite **[!UICONTROL Adobe Experience Manager Web Console Bundles]** unter der Spalte **[!UICONTROL Name]** nach **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** und tippen Sie darauf.
+1. Stellen Sie auf der Seite **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** die Sekunden für die Felder **[!UICONTROL Default Timeout]** und **[!UICONTROL Max Timeout]** auf `18000` (fünf Stunden) ein.
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Workflow > Modelle]**.
-1. On the **[!UICONTROL Workflow Models]** page, select **[!UICONTROL Dynamic Media Encode Video]**, then tap **[!UICONTROL Edit]**.
-1. On the **[!UICONTROL Workflow]** page, double-tap the **[!UICONTROL Dynamic Media Video Service Process]** component.
+1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** **[!UICONTROL Dynamic Media-Kodierung Video]** und tippen Sie dann auf **[!UICONTROL Bearbeiten]**.
+1. Tippen Sie auf der Seite **[!UICONTROL Workflow]** Dublette-Tippen Sie auf die Komponente **[!UICONTROL Dynamic Media Video Service Process]**.
 1. Erweitern Sie im Dialogfeld **[!UICONTROL Schritteigenschaften]** auf der Registerkarte **[!UICONTROL Allgemein]** die Option **[!UICONTROL Erweiterte Einstellungen]**.
 1. Geben Sie im Feld **[!UICONTROL Timeout]** den Wert `18000` an und tippen Sie dann auf **[!UICONTROL OK]**, um zur Workflow-Seite **[!UICONTROL Dynamic Media-Videokodierung]** zurückzukehren.
-1. Near the top of the page, below the **[!UICONTROL Dynamic Media Encode Video]** page title, tap **[!UICONTROL Save]**.
+1. Tippen Sie oben auf der Seite unter dem Seitentitel **[!UICONTROL Dynamic Media-Kodierung Video]** auf **[!UICONTROL Speichern]**.
 
 ## Veröffentlichen von Video-Assets {#publishing-video-assets}
 
@@ -79,20 +79,20 @@ Nach dem Veröffentlichen Ihrer Video-Assets können diese über eine URL auf ei
 
 ## Hinzufügen von Anmerkungen zu Video-Assets {#annotating-video-assets}
 
-1. From the Assets console, tap the **[!UICONTROL Edit]** icon on the asset card to display the asset details page.
-1. Tap the **[!UICONTROL Preview]** icon to play the video.
-1. To annotate the video, tap the **[!UICONTROL Annotate]** button. Eine Anmerkung wird an diesem speziellen Zeitpunkt (Frame) im Video hinzugefügt.
+1. Tippen Sie in der Assets-Konsole auf das Symbol **[!UICONTROL Bearbeiten]** auf der Asset-Karte, um die Seite mit den Asset-Details anzuzeigen.
+1. Tippen Sie auf das Symbol **[!UICONTROL Vorschau]**, um das Video abzuspielen.
+1. Um das Video zu kommentieren, tippen Sie auf die Schaltfläche **[!UICONTROL Anmerken]**. Eine Anmerkung wird an diesem speziellen Zeitpunkt (Frame) im Video hinzugefügt.
 
    Beim Hinzufügen von Anmerkungen können Sie auf der Arbeitsfläche zeichnen und einen Kommentar zur Zeichnung aufnehmen. Kommentare werden automatisch in Adobe Experience Manager-Assets gespeichert.
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
 
-   To exit the annotation wizard, tap **[!UICONTROL Close]**.
+   Um den Anmerkungsassistenten zu beenden, tippen Sie auf **[!UICONTROL Schließen]**.
 
-1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. Um beispielsweise die ersten Sekunden des Videos zu überspringen, geben Sie `20`20 in das Textfeld ein.
+1. Um zu einem bestimmten Punkt im Video zu springen, geben Sie die Zeit in Sekunden im Textfeld ein und klicken Sie auf **[!UICONTROL Jump]**. Um beispielsweise die ersten Sekunden des Videos zu überspringen, geben Sie `20`20 in das Textfeld ein.
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
-1. Klicken Sie auf eine Anmerkung, um sie in der Zeitleiste Ansicht. Tap **[!UICONTROL Delete]** to remove the annotation from the timeline.
+1. Klicken Sie auf eine Anmerkung, um sie in der Zeitleiste Ansicht. Tippen Sie auf **[!UICONTROL Löschen]**, um die Anmerkung aus der Zeitleiste zu entfernen.
 
    ![chlimage_1-206](assets/chlimage_1-206.png)
