@@ -19,7 +19,7 @@ Die Oberfläche reagiert flexibler und hilft Ihnen bei der effizienten Verwaltun
 
 Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und Spaltenansicht. Beispielsweise können Sie die Größe der Miniaturen konfigurieren, die in der Kartenansicht angezeigt werden sollen. In der Listenansicht können Sie konfigurieren, wie detailgenau die Assets in der Liste angezeigt werden sollen. AEM 6.4 Assets enthält eine neue Baumansicht, mit der Sie einfach durch das Asset-Repository navigieren und Ihre Assets finden können.
 
-## Lazy Loading (langsames Laden) {#lazy-loading}
+## Lazy Loading (langsames Laden)  {#lazy-loading}
 
 Wenn Sie in AEM 6.4 Assets nach Assets suchen bzw. die Assets durchsuchen, werden gleichzeitig bis zu 200 Assets angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
 
@@ -31,13 +31,13 @@ Je nach dem verwendeten Gerät und der erforderlichen Dateitiefe können Sie die
 
 Gehen Sie wie folgt vor, um die Größe von Miniaturen in der Kartenansicht anzupassen:
 
-1. Tap/click the Layout icon from the toolbar, and then choose the **[!UICONTROL View Settings]** option.
+1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie dann die Option **[!UICONTROL Ansicht Settings]**.
 
-   ![Ansicht_settings](assets/view_settings.png)
+   ![ansicht_settings](assets/view_settings.png)
 
-1. From the **[!UICONTROL View Settings]** dialog, select the desired thumbnail size, and then tap/click **[!UICONTROL Update]**.
+1. Wählen Sie im Dialogfeld **[!UICONTROL Ansicht Settings]** die gewünschte Miniaturgröße aus und tippen/klicken Sie dann auf **[!UICONTROL Aktualisieren]**.
 
-   ![Ansicht_settings_dialog](assets/view_settings_dialog.png)
+   ![ansicht_settings_dialog](assets/view_settings_dialog.png)
 
 1. Überprüfen Sie die Miniaturen, die in der gewählten Größe angezeigt werden.
 
@@ -51,11 +51,11 @@ In der Kachel in der Kartenansicht werden jetzt zusätzliche Informationen wie d
 
 In der Listenansicht werden in der ersten Spalte jetzt standardmäßig die Asset-Namen angezeigt. Außerdem werden zusätzliche Informationen wie der Veröffentlichungs- und Verarbeitungsstatus, die Sprachvariante usw. angezeigt.
 
-![Liste_Ansicht](assets/list_view.png)
+![liste_Ansicht](assets/list_view.png)
 
 Sie können die anzuzeigende Detailtiefe konfigurieren. Tippen/klicken Sie auf das Layout-Symbol, wählen Sie die Option **[!UICONTROL Anzeigeeinstellungen]** aus und geben Sie die Spalten an, die im Dialogfeld **[!UICONTROL Anzeigeeinstellungen]** angezeigt werden sollen.
 
-![Ansicht_settings_dialoglistview](assets/view_settings_dialoglistview.png)
+![ansicht_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Verbesserungen an der Spaltenansicht {#column-view-improvements}
 
@@ -67,7 +67,7 @@ Zusätzlich zur Karten- und Listenansicht können Sie jetzt über die Spaltenans
 
 AEM 6.4 Assets enthält eine Baumansicht, mit der Sie schnell und einfach Ihre Asset-Hierarchie durchsuchen und zum gewünschten Asset oder Ordner navigieren können.
 
-To open the Tree view, tap/click the GlobalNav icon in the `Assets UI`, and choose **[!UICONTROL Content tree]** from the menu.
+Um die Tree-Ansicht zu öffnen, tippen/klicken Sie auf das GlobalNav-Symbol in `Assets UI` und wählen Sie **[!UICONTROL Content tree]** aus dem Menü.
 
 ![content_tree](assets/content_tree.png)
 
