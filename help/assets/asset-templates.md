@@ -46,7 +46,7 @@ Sie können die aktualisierte Datei im übergeordneten Ordner in den folgenden F
 
 Außerdem können Sie die Ausgabe in diesen Formaten auf Ihr lokales System herunterladen.
 
-## Eine Sicherheit erstellen {#creating-a-collateral}
+## Erstellen einer Sicherheit {#creating-a-collateral}
 
 Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. InDesign, und die Vorlagen für Sie in AEM Assets hochladen. Bevor Sie eine Sicherheit erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in den Experience Manager hochladen und verfügbar sein.
 
@@ -55,7 +55,7 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Klicken bzw. tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie im Menü anschließend das Material aus, das Sie erstellen möchten. For example, choose **[!UICONTROL Brochure]**.
+1. Klicken bzw. tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie im Menü anschließend das Material aus, das Sie erstellen möchten. Wählen Sie beispielsweise **[!UICONTROL Prospekt]**.
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
@@ -79,7 +79,7 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Eine Sicherheit bearbeiten {#editing-a-collateral}
+## Bearbeiten einer Sicherheit {#editing-a-collateral}
 
 Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu können Sie es über die Seite „Vorlagen“ oder die Asset-Seite öffnen.
 
@@ -106,7 +106,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass Ihre AEM-Instanz in einen InDesign-Server integriert ist, damit AEM Assets Daten aus der InDesign-Vorlage extrahieren und für die Bearbeitung bereitstellen kann. For details, see [Integrating AEM Assets with InDesign Server](indesign.md).
+   >Stellen Sie sicher, dass Ihre AEM-Instanz in einen InDesign-Server integriert ist, damit AEM Assets Daten aus der InDesign-Vorlage extrahieren und für die Bearbeitung bereitstellen kann. Weitere Informationen finden Sie unter [Integration von AEM Assets mit InDesign Server](indesign.md).
 
 1. Klicken bzw. tippen Sie zum Ändern des Texts in einem bearbeitbaren Feld in der Liste mit den entsprechenden Feldern auf das Textfeld und bearbeiten Sie den Text.
 
@@ -118,7 +118,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. To swap an image, click/tap the **[!UICONTROL Asset Finder]** icon.
+1. Um ein Bild auszutauschen, klicken Sie auf das Symbol **[!UICONTROL Asset Finder]** bzw. tippen Sie darauf.
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -130,7 +130,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. Click/tap the **[!UICONTROL Preview]** icon to preview the image.
+1. Klicken Sie auf das Symbol **[!UICONTROL Vorschau]**, um das Bild Vorschau.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -138,7 +138,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Klicken bzw. tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Vorschau]**, um eine Vorschau für alle Änderungen anzuzeigen. Click/tap **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Klicken bzw. tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Vorschau]**, um eine Vorschau für alle Änderungen anzuzeigen. Klicken Sie auf **[!UICONTROL Fertig]**, um die Bearbeitungsänderungen an den Zusätzen zu speichern.
 
    >[!NOTE]
    >
@@ -154,7 +154,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
    >* Stellen Sie AEM in Ihrem lokalen Dateisystem bereit und ordnen Sie anschließend fehlende Symbole den vorhandenen AEM-Assets zu.
 
    >
-   >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Weitere Informationen zum Arbeiten mit InDesign-Dokumenten finden Sie unter [Best Practices für das Arbeiten mit InDesign-Dokumenten in AEM](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabe für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 1. Das Marketingmaterial wird in dem Ordner erstellt, in dem Sie den Vorgang begonnen haben. Öffnen Sie das Marketingmaterialelement und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabeformate]**, um die Ausgabeformate anzuzeigen.
@@ -170,7 +170,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
 1. Klicken Sie auf oder tippen Sie auf **[!UICONTROL Werkzeuge > Assets]**.
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
-1. Click/tap **[!UICONTROL Create]** and the choose **[!UICONTROL Merge]** from the menu.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Zusammenführen]** aus dem Menü.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
@@ -195,7 +195,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
 1. Klicken bzw. tippen Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
-1. In the **[!UICONTROL Preview &amp; Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Klicken bzw. tippen Sie in der Symbolleiste dann auf **[!UICONTROL Weiter]**.
+1. Ordnen Sie die Vorlagen im Bildschirm **[!UICONTROL Vorschau und neu anordnen]** bei Bedarf neu an und Vorschau der Vorlagenauswahl für das Zusammenführen. Klicken bzw. tippen Sie in der Symbolleiste dann auf **[!UICONTROL Weiter]**.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
