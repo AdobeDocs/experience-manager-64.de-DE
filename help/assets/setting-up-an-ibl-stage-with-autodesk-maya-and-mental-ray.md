@@ -25,10 +25,10 @@ ht-degree: 80%
 1. Erstellen Sie eine (vorübergehende) Referenz auf ein repräsentatives Modell. Auf diese Weise können Sie die Beleuchtung einfacher ermitteln, Kameras einrichten und den Renderer konfigurieren.
 1. Richten Sie eine bildbasierte Beleuchtung ein.
 
-   1. In **[!UICONTROL Render Settings]**, select **[!UICONTROL Render Render Using: mental ray]**, and open the Scene tab.
-   1. Open the **[!UICONTROL Render Environment]** accordion and click **[!UICONTROL Render Create Image Based Lighting]**.
-   1. Click the box icon that has a right arrow on the left side of the box to select the IBL node `mentalRayIblShape1`, then exit **[!UICONTROL Render Settings]**.
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. Wählen Sie unter **[!UICONTROL Rendereinstellungen]** **[!UICONTROL Rendereinstellungen mit: &quot;mental ray]**&quot;und öffnen Sie die Registerkarte &quot;Scene&quot;.
+   1. Öffnen Sie das Akkordeon **[!UICONTROL Render-Umgebung]** und klicken Sie auf **[!UICONTROL Render Create Image Based Lighting]**.
+   1. Klicken Sie auf das Feldsymbol mit dem Pfeil nach rechts auf der linken Seite des Felds, um den IBL-Knoten `mentalRayIblShape1` auszuwählen, und verlassen Sie dann **[!UICONTROL Rendereinstellungen]**.
+   1. Wählen Sie im **[!UICONTROL Attribut-Editor]** den Transformationsknoten `mentalRayIbl1` und benennen Sie dann den Transformationsknoten in `AdobeIbl` um.
    1. Legen Sie die Skalierung des Knotens fest. Machen Sie dabei den Umgebungsbereich erheblich größer als das größte 3D-Objekt, das mit dieser Bühne gezeigt werden soll (z. B. `10000,10000,10000`).
    1. Wählen Sie den Knoten `AdobeIblShape` aus und konfigurieren Sie ihn wie folgt:
 
@@ -49,17 +49,17 @@ ht-degree: 80%
 
 1. Richten Sie das Rendern mit Mental Ray ein.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions.
+   Konfigurieren Sie die **[!UICONTROL Rendereinstellungen]** mit den folgenden Vorschlägen.
 
-   * **[!UICONTROL Häufige]** Registerkarte
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all **[!UICONTROL Renderable Cameras]**.
+      Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Alpha-Kanal (maske)]** für alle **[!UICONTROL Renderbare Kameras]**.
 
    * **[!UICONTROL Registerkarte „Quality“]**
 
       * **Overall quality** – `0.5` oder weniger
-      * **Indirekter Diffuse-Modus** - `Final Gather`
-      * **Filtergröße** - `2.0`, `2.0`
+      * **Indirekter Diffuse-Modus**  -  `Final Gather`
+      * **Filtergröße** -  `2.0`,  `2.0`
    * Rendern Sie die Szene mit den typischen Bildgrößen, die Sie gewohnt sind. Verfeinern Sie gegebenenfalls die Licht- und/oder Rendereinstellung, um die gewünschten Ergebnisse zu erzielen.
 
       Beachten Sie, dass das Rendern mit Mental Ray und bildbasierter Beleuchtung sehr langsam und rechenintensiv ist. Adobe empfiehlt die Einrichtung der niedrigsten Qualitätseinstellungen, mit denen noch die gewünschte Renderqualität erzielt werden kann.
@@ -71,7 +71,7 @@ ht-degree: 80%
 
 1. Laden Sie die Szene und das IBL-PTIFF-Bild in AEM hoch und warten Sie, bis der Ladevorgang abgeschlossen ist.
 
-   Siehe [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
+   Informationen hierzu finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
 
 1. Lösen Sie eventuelle Dateiabhängigkeiten auf.
 
@@ -79,7 +79,7 @@ ht-degree: 80%
 
    Es kann vorkommen, dass AEM 3D das in der Bühne konfigurierte IBL-Bild nicht erkennen kann. In solchen Fällen müssen Sie die fehlenden Abhängigkeiten manuell auflösen. Sie können dasselbe zuvor hochgeladene IBL-PTIFF-Bild jeder der fehlenden Abhängigkeiten zuordnen. Alternativ können Sie verschiedene Bilder zuweisen, um die IBL-Effekte weiter zu steuern. Tippen Sie nach dem Auflösen der Abhängigkeiten auf **[!UICONTROL Speichern]**, um die Neuverarbeitung einzuleiten. 
 
-1. Öffnen Sie die Asset-Eigenschaften in AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Prüfen Sie, ob **[!UICONTROL Klasse]** auf **[!UICONTROL 3D-Bühne]** eingestellt ist. Speichern und beenden Sie.
+1. Öffnen Sie die Asset-Eigenschaften in AEM. Stellen Sie **[!UICONTROL title]** auf eine geeignete Zeichenfolge ein, die in der Dropdown-Liste **[!UICONTROL Stage Selector]** angezeigt wird. Prüfen Sie, ob **[!UICONTROL Klasse]** auf **[!UICONTROL 3D-Bühne]** eingestellt ist. Speichern und beenden Sie.
 
 1. Öffnen Sie ein 3D-Asset, wählen Sie eine neue Bühnendatei und prüfen Sie, ob sie wie erwartet in der Vorschau angezeigt und gerendert wird.
 
