@@ -11,7 +11,7 @@ ht-degree: 98%
 ---
 
 
-# Extend Asset Editor {#extending-asset-editor}
+# Erweitern des Asset-Editors {#extending-asset-editor}
 
 Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein über die Asset-Freigabe gefundenes Asset geklickt wird. Er ermöglicht dem Benutzer das Bearbeiten von Aspekten des Assets wie Metadaten, Miniatur, Titel und Tags.
 
@@ -47,7 +47,7 @@ Einige der AEM Assets-Komponenten erfordern, dass JS-Funktionen in `component.j
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
@@ -57,7 +57,7 @@ Einige der Komponenten von AEM Assets verwenden die AEM-Widget-Bibliothek. Dami
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx-Stylesheet     {#geometrixx-style-sheet}
+### Geometrixx-Stylesheet      {#geometrixx-style-sheet}
 
 Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.asseteditor` von `static.css` (`/etc/designs/geometrixx/static.css`) beginnen. Best Practice: Kopieren Sie alle `.asseteditor`-Selektoren in Ihr Stylesheet und passen Sie bei Bedarf die Regeln an.
 
@@ -120,7 +120,7 @@ Verwenden Sie im HTML-Teil den vorhergehenden festgelegten Titel (entweder Asset
 <title><%= title %></title>
 ```
 
-## Erstellen einer Feldkomponente für ein einfaches Formular     {#creating-a-simple-form-field-component}
+## Erstellen einer Feldkomponente für ein einfaches Formular      {#creating-a-simple-form-field-component}
 
 In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Metadaten eines geladenen Assets anzeigt.
 
@@ -201,7 +201,7 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
 
 1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, müssen sie dem Metadatenformular hinzugefügt werden.
 
-## Ändern von Metadatenoptionen     {#modifying-metadata-options}
+## Ändern von Metadatenoptionen      {#modifying-metadata-options}
 
 Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) verfügbaren Namespaces ändern.
 
