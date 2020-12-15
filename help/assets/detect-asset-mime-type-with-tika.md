@@ -11,20 +11,20 @@ ht-degree: 37%
 ---
 
 
-# Verwenden Sie Apache Tika, um den MIME-Typ digitaler Assets zu erkennen {#detecting-mime-type-of-assets-using-apache-tika}
+# Verwenden Sie Apache Tika, um den MIME-Typ digitaler Assets zu erkennen. {#detecting-mime-type-of-assets-using-apache-tika}
 
 Normalerweise erkennt Adobe Experience Manager (AEM) Assets den MIME-Typ von Assets, die Sie von ihrer Dateierweiterung hochladen. Wenn Sie Apache Tika verwenden, um Assets hochzuladen, erkennt AEM Assets deren MIME-Typ durch den Content Stream während des Uploadvorgangs statt durch die Dateierweiterung. 
 
-Diese Funktion ist standardmäßig deaktiviert.  To enable the feature, configure the **Day CQ DAM Mime Type** service from Configuration Manager.
+Diese Funktion ist standardmäßig deaktiviert.  Um die Funktion zu aktivieren, konfigurieren Sie den Dienst **Day CQ DAM Mime Type** in Configuration Manager.
 
 >[!NOTE]
 >
 >Die MIME-Typerkennung mit der Apache Tika-Bibliothek ist ein ressourcenintensiver Vorgang.
 
-1. Go to `https://[AEM_server]:[port]/system/console/configMgr` to open the Configuration Manager web console.
-1. From the list of services, locate **[!UICONTROL Day CQ DAM Mime Type Service]** and tap/click the **[!UICONTROL Edit]** icon beside it to open it in Edit mode.
+1. Wechseln Sie zu `https://[AEM_server]:[port]/system/console/configMgr`, um die Configuration Manager-Webkonsole zu öffnen.
+1. Suchen Sie in der Liste der Dienste nach **[!UICONTROL Day CQ DAM Mime Type Service]** und tippen/klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]**, um es im Bearbeitungsmodus zu öffnen.
 
-1. Select the **[!UICONTROL Detect MIME from content]** option to enable the parsing of uploaded assets to determine their MIME type while ignoring file extensions. Standardmäßig ist diese Option deaktiviert. 
+1. Wählen Sie die Option **[!UICONTROL MIME aus Inhalt erkennen]**, um die Analyse hochgeladener Assets zu aktivieren, um deren MIME-Typ zu bestimmen, während Sie Dateierweiterungen ignorieren. Standardmäßig ist diese Option deaktiviert. 
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
