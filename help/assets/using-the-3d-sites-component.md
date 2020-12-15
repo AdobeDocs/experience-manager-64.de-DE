@@ -18,15 +18,15 @@ ht-degree: 36%
 ---
 
 
-# Working with the 3D Sites component {#working-with-the-d-sites-component}
+# Arbeiten mit der 3D-Sitekomponente {#working-with-the-d-sites-component}
 
 AEM 3D enthält eine AEM Sites-Komponente, mit der Sie interaktive 3D-Modelle auf Webseiten implementieren können.
 
-After you have added your 3D component, you can [view the 3D asset in that component.](viewing-3d-assets.md)
+Nachdem Sie die 3D-Komponente hinzugefügt haben, können Sie das 3D-Asset in dieser Komponente [Ansicht.](viewing-3d-assets.md)
 
 ## Hinzufügen der 3D-Komponente zur Seitenvorlage {#adding-the-d-component-to-the-page-template}
 
-Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer Seite platzieren können. See [Editing templates](/help/sites-authoring/templates.md#editing-a-template-layout-template-author) for detailed information on enabling components in templates.
+Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer Seite platzieren können. Detaillierte Informationen zum Aktivieren von Komponenten in Vorlagen finden Sie unter [Bearbeiten von Vorlagen](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
 **Hinzufügen der 3D-Komponente zur Seitenvorlage**:
 
@@ -39,10 +39,10 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
 
    ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
 
-1. Tap in the **[!UICONTROL Layout Container]** region to select it.
+1. Tippen Sie auf den Container **[!UICONTROL Layout]**, um ihn auszuwählen.
 
-1. Tap the **[!UICONTROL Policy]** button to open the **[!UICONTROL Policy Editor]**.
-1. In the **[!UICONTROL Properties]** section, select the **[!UICONTROL 3D]** checkmark, and then tap **[!UICONTROL Done]** to save the changes and close the **[!UICONTROL Policy Editor]**.
+1. Tippen Sie auf die Schaltfläche **[!UICONTROL Richtlinie]**, um den **[!UICONTROL Richtlinien-Editor]** zu öffnen.
+1. Aktivieren Sie im Abschnitt **[!UICONTROL Eigenschaften]** das Kontrollkästchen **[!UICONTROL 3D]** und tippen Sie dann auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern und den **[!UICONTROL Richtlinien-Editor]** zu schließen.
 
    Sie können jetzt die Komponente &quot;3D-Sites&quot;auf allen Seiten platzieren, die diese Vorlage verwenden.
 
@@ -56,19 +56,19 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
 
 1. Öffnen Sie AEM Sites und wählen Sie die Webseite aus, der Sie die 3D-Komponente hinzufügen möchten.
 
-1. Tippen Sie auf **[!UICONTROL Bearbeiten]** (Stift), um die Seite im Seiten-Editor zu öffnen. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]** (Stift), um die Seite im Seiteneditor zu öffnen. Stellen Sie sicher, dass der Modus **[!UICONTROL Bearbeiten]** rechts oben auf der Seite ausgewählt ist.
 
    ![image2017-11-14_15-44-40](assets/image2017-11-14_15-44-40.png)
 
 1. Tippen Sie auf die Leiste, um das Seitenbedienfeld zu öffnen.
 
-1. Tap the plus sign icon to open the **[!UICONTROL Components]** list.
+1. Tippen Sie auf das Pluszeichen, um die Liste **[!UICONTROL Components]** zu öffnen.
 
-1. Drag the **[!UICONTROL 3D Viewer]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear.
+1. Ziehen Sie die Komponente **[!UICONTROL 3D-Viewer]** aus der Liste **[!UICONTROL Komponenten]** an die Stelle auf der Seite, an der der 3D-Viewer angezeigt werden soll.
 
 ## Konfigurieren der 3D-Komponente {#configuring-the-d-component}
 
-1. Wählen Sie im Seiten-Editor in AEM Sites die Komponente **[!UICONTROL 3D Viewer]** aus, die Sie zuvor zur Seite hinzugefügt haben.
+1. Wählen Sie im Seiteneditor in AEM Sites die Komponente **[!UICONTROL 3D Viewer]** aus, die Sie zuvor zur Seite hinzugefügt haben.
 
 1. Tippen Sie auf das Symbol **[!UICONTROL Konfiguration]** (Schraubenschlüssel), um das Dialogfeld mit der Komponentenkonfiguration zu öffnen.
 
@@ -87,8 +87,8 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
     <td> </td> 
     </tr> 
     <tr> 
-    <td>Bühne Name</td> 
-    <td><p>Wählen Sie eine 3D-Bühne aus der Liste verfügbarer Bühnen aus. Die Bühne bietet Hintergrund und Beleuchtung.</p> <p>See <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">About the use of stages in AEM 3D Sites</a>.</p> </td> 
+    <td>Name der Phase</td> 
+    <td><p>Wählen Sie eine 3D-Bühne aus der Liste verfügbarer Bühnen aus. Die Bühne bietet Hintergrund und Beleuchtung.</p> <p>Siehe <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">Informationen zur Verwendung von Phasen in AEM 3D-Sites</a>.</p> </td> 
     <td>Wird für Adobe Dimension-Assets ignoriert.</td> 
     </tr> 
     <tr> 
@@ -136,31 +136,31 @@ Weitere Informationen zu diesen globalen Einstellungen finden Sie unter [Erweite
 
 ## Zuweisen eines 3D-Modells zu einer Komponente {#assigning-a-d-model-to-the-component}
 
-1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open the Assets list in the side panel.
+1. Klicken Sie im AEM Sites-Seiteneditor auf das Symbol **[!UICONTROL Assets]**, um die Liste &quot;Assets&quot;im Seitenbedienfeld zu öffnen.
 
-1. Select the **[!UICONTROL 3D Models]** filter to hide unwanted asset types.
+1. Wählen Sie den Filter **[!UICONTROL 3D-Modelle]**, um unerwünschte Asset-Typen auszublenden.
 
    ![screen_shot_2017-12-11at124258](assets/screen_shot_2017-12-11at124258.png)
 
 1. Suchen Sie nach dem 3D-Asset, das Sie auf der entsprechenden Seite anzeigen möchten.
 
-1. Drag the 3D asset from the **[!UICONTROL Assets]** list to the **[!UICONTROL 3D Viewer]** component previously placed on the page.
+1. Ziehen Sie das 3D-Asset aus der Liste **[!UICONTROL Assets]** in die Komponente **[!UICONTROL 3D Viewer]**, die zuvor auf der Seite platziert wurde.
 
    Adobe Dimension-Assets werden mit neuer Viewer-Technologie auf der Grundlage des offenen Standards glTF gerendert, während alle anderen 3D-Asset-Typen auf dem klassischen AEM 3D WebGL-Viewer basieren. Die Komponente wählt automatisch den entsprechenden Viewer basierend auf dem Typ des 3D-Modells aus.
 
 ## Vorschau einer Webseite mit einer 3D-Komponente {#previewing-a-web-page-that-has-a-d-component}
 
-While the web page is in **[!UICONTROL Edit]** mode, the 3D component displays the 3D model but no interaction with the model is possible.
+Während sich die Webseite im Modus **[!UICONTROL Bearbeiten]** befindet, zeigt die 3D-Komponente das 3D-Modell an, es ist jedoch keine Interaktion mit dem Modell möglich.
 
 Sie können die Webseite im Seiteneditor mit vollem Zugriff auf die Funktionen der 3D-Komponente Vorschau haben.
 
-See also [Viewing 3D assets in the Sites 3D component](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
+Siehe auch [Anzeigen von 3D-Assets in der Sites 3D-Komponente](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
 
 **So Vorschau einer Webseite mit einer 3D-Komponente**:
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
-   * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter preview mode.
+   * Klicken Sie rechts oben auf der Seite auf **[!UICONTROL Vorschau]**, um in den Vorschau-Modus zu wechseln.
    * Löschen Sie `/edit.html` aus der Seiten-URL im Browser.
 
 ## Veröffentlichen von Seite und Assets {#publishing-the-page-and-assets}
@@ -169,7 +169,7 @@ Weitere Informationen zum Veröffentlichen von Assets finden Sie unter [Veröffe
 
 >[!NOTE]
 >
->Using the **[!UICONTROL Publish Page]** menu item on the **[!UICONTROL Page Information]** menu will publish the page and all primary page dependencies. Sekundäre Abhängigkeiten, die möglicherweise vom 3D-Modell und/oder der 3D-Bühne verwendet werden, wie z. B. Texturmaps oder IBL-Bilder, werden auf diese Weise nicht veröffentlicht.
+>Mit dem Menüelement **[!UICONTROL Seite veröffentlichen]** im Menü **[!UICONTROL Seiteninformationen]** veröffentlichen Sie die Seite und alle Abhängigkeiten der primären Seite. Sekundäre Abhängigkeiten, die möglicherweise vom 3D-Modell und/oder der 3D-Bühne verwendet werden, wie z. B. Texturmaps oder IBL-Bilder, werden auf diese Weise nicht veröffentlicht.
 >
 >Adobe empfiehlt, dass Sie alle 3D-Assets und ihre Abhängigkeiten direkt von AEM Assets veröffentlichen, bevor Sie die Webseite veröffentlichen, die auf diese Assets verweist.
 
