@@ -26,7 +26,7 @@ Die folgenden Funktionen können angepasst bzw. verbessert werden:
 * [Entwicklung von Asset-Proxys](proxy.md)
 * [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md) 
 
-## Anpassen des Erscheinungsbilds {#customizing-the-look-and-feel}
+## Anpassen des Erscheinungsbilds  {#customizing-the-look-and-feel}
 
 Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 
@@ -34,7 +34,7 @@ Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 * Farben und Schriftarten: Sie können die Farben und Schriftarten ändern, die in der Benutzeroberfläche verwendet werden.
 * HTML-Code: Zur besseren Anpassung können Sie den zugrunde liegenden HTML-Code ändern, der die Benutzeroberflächen definiert.
 
-## Anpassen von Ausgabeformaten {#customizing-renditions}
+## Anpassen von Ausgabeformaten  {#customizing-renditions}
 
 In der AEM Assets-Terminologie ist ein Ausgabeformat die Form, in der ein Asset dargestellt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
 
