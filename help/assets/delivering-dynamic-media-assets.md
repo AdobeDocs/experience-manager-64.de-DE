@@ -37,17 +37,17 @@ Mit Dynamic Media haben Sie mehrere Optionen:
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
-* [Hinzufügen dynamischer Medienelemente zu Webseiten](adding-dynamic-media-assets-to-pages.md)
+* [Hinzufügen von Dynamic Media Assets zu Webseiten](adding-dynamic-media-assets-to-pages.md)
 * [Einbetten des Video- oder Bild-Viewers in eine Website](embed-code.md)
 * [Aktivieren des Hotlink-Schutzes in Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
-* Integration digitaler nicht sichtbarer Wasserzeichen (Digimarc) in dynamische Medien (demnächst)
+* Integration digitaler nicht sichtbarer Wasserzeichen (Digimarc) mit Dynamic Media (demnächst)
 * [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
 * [Bereitstellung von Inhalten per HTTP/2](http2.md)
 * [Ungültigmachen von Inhalten im CDN-Cache ](invalidate-cdn-cached-content.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
 
-## Bereitstellung von Dynamic Media-Assets über HTTP/2    {#http-delivery-of-dynamic-media-assets}
+## Bereitstellung von Dynamic Media-Assets über HTTP/2   {#http-delivery-of-dynamic-media-assets}
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Anwendungen integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
