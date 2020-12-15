@@ -10,7 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
-source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+source-git-commit: a1709aa10d480e7509665f3f7a791348d8323076
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 82%
@@ -28,7 +28,7 @@ Checklisten sind für jede am Projekt beteiligte Rolle vorhanden. Sie enthalten 
 
 Checkliste für bewährte Verfahren für AEM Projekt, Version 2
 
-[Datei laden](assets/aem_project_bp_checklistv2.xlsx)
+[Datei laden](assets/aem_project_bp_checklistv2-64.xlsx)
 
 ## Arbeitsblätter {#worksheets}
 
@@ -48,11 +48,11 @@ Die Tabelle bietet folgende Arbeitsblätter:
 
 Um ein qualitativ hochwertiges Projekt erfolgreich bereitzustellen, müssen Sie alle Punkte der Checkliste abschließen, vorzugsweise in der entsprechenden Reihenfolge:
 
-1. The checklists are defined according to the **[Persona](/help/managing/best-practices.md#persona)**(role) involved. Jede Person sollte die Checkliste entsprechend ihrer Rolle im Projekt verwenden.
-1. The checklists cover the **[Required Documents](/help/managing/best-practices.md#required-documents)**and**[ Deliverables](/help/managing/best-practices.md#deliverables)** for each milestone - the relevant persona must set the status and quality fields appropriate.
+1. Die Checklisten werden entsprechend der beteiligten Rolle definiert. ](/help/managing/best-practices.md#persona)****[ Jede Person sollte die Checkliste entsprechend ihrer Rolle im Projekt verwenden.
+1. Die Checklisten decken die erforderlichen **[Dokumente](/help/managing/best-practices.md#required-documents)** und **[Lieferbare](/help/managing/best-practices.md#deliverables)** für jeden Meilenstein ab - die entsprechende Person muss die entsprechenden Statusfelder und Qualitätsfelder festlegen.
 
    >[!NOTE]
    >
    >Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und Ergebnissen.
 
-1. Basierend auf dem Status der **[erforderlichen Dokumente](/help/managing/best-practices.md#required-documents)**und**[ Ergebnisse](/help/managing/best-practices.md#deliverables)** werden die Arbeitsblätter **[Projekt-Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)**und**[ Status nach Rolle](/help/managing/best-practices.md#status-by-role)** automatisch aktualisiert, um Sie über den Fortschritt und die Konsistenz des Projekts auf dem Laufenden zu halten.
+1. Basierend auf dem Status der **[erforderlichen Dokumente](/help/managing/best-practices.md#required-documents)** und **[Ergebnisse](/help/managing/best-practices.md#deliverables)** werden die Arbeitsblätter **[Projekt-Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** und **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)** automatisch aktualisiert, um Sie über den Fortschritt und die Konsistenz des Projekts auf dem Laufenden zu halten.
