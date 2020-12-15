@@ -38,10 +38,10 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „V
 
    >[!NOTE]
    >
-   >So verwenden Sie die Ordnersuchfunktion aus der vorkonfigurierten **Assets Admin Search Leiste** aus einer früheren AEM:
+   >So verwenden Sie die Ordnersuchfunktion aus der vorkonfigurierten **Asset Admin Search Rail** aus einer früheren AEM Version:
    > 
-   >1. Navigieren Sie zu */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRX-DE.
-   >1. Löschen Sie die **Typknoten** .
+   >1. Navigieren Sie in CRX-DE zu */conf/global/settings/dam/search/facets/assets/jcr:content/items*.
+   >1. Löschen Sie den Knoten **type**.
    >1. Kopieren Sie aus dem Pfad */libs/settings/dam/search/facets/assets/jcr:content/items* die Knoten **asset, directory, typeor, excludepaths** und **searchtype** in den in Schritt 1 erwähnten Pfad.
    >1. Speichern Sie die Änderungen.
 
@@ -80,7 +80,7 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „V
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Suchbereich. Das Prädikat „Eigenschaft“ wird dem Bereich hinzugefügt.
 1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. Geben Sie beispielsweise „Adobe“ ein. Wenn Sie eine Suche durchführen, werden Assets mit der Beschreibung „Adobe“ in den Suchergebnissen aufgelistet.
 
-## Hinzufügen einer Options-Eigenschaft {#adding-an-options-predicate}
+## Hinzufügen einer Options-Eigenschaft  {#adding-an-options-predicate}
 
 Mit dem Options-Prädikat können Sie mehrere Suchoptionen im Bedienfeld „Filter“ hinzufügen. Sie können eine oder mehrere dieser Optionen im Bedienfeld „Filter“ auswählen, um nach Assets zu suchen. Beispiel: Um basierend auf dem Dateityp nach Assets zu suchen, konfigurieren Sie Optionen, wie Bilder, Multimedia, Dokumente und Archive im Suchformular. Nachdem Sie diese Optionen konfiguriert haben, wird die Suche für Assets vom Typ GIF, JPEG, PNG usw. ausgeführt, wenn Sie im Bedienfeld „Filter“ die Option „Bilder“ auswählen.
 
@@ -123,7 +123,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** den Pfad der JSON-Datei an, in der Sie die Knoten für die Optionen und entsprechende Schlüssel-Wert-Paare definiert haben.
-   * Tap ![Add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
+   * Tippen Sie auf ![Hinzufügen neben dem Feld Optionen, um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld Filter bereitstellen möchten. ](assets/do-not-localize/aem_assets_add_icon.png) Um eine weitere Option hinzuzufügen, tippen/klicken Sie auf das Symbol ![Hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
@@ -134,7 +134,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Suchfeld. Die Options-Eigenschaft wird dem Bereich **Suchen** hinzugefügt. Die Optionen für **[!UICONTROL Dateityp]** werden als Kontrollkästchen angezeigt.
 
-## Mehrwert-Eigenschaftsprädikat hinzufügen {#adding-a-multi-value-property-predicate}
+## Mehrwert-Eigenschaftsprädikat hinzufügen  {#adding-a-multi-value-property-predicate}
 
 Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Angenommen, Sie haben in AEM Assets Bilder mehrerer Produkte, deren Metadaten die zum Produkt gehörende Artikelnummer enthalten. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
@@ -147,7 +147,7 @@ Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Asset
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Bedienfeld „Filter“. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
 1. Geben Sie im Feld „Mehrwert“ mehrere durch Trennzeichen getrennte Werte ein und führen Sie die Suche aus. Die Eigenschaft sucht für die eingegebenen Werte nach genau übereinstimmenden Texten.
 
-## Hinzufügen eines Tag-Prädikats {#adding-a-tags-predicate}
+## Hinzufügen eines Tag-Prädikats  {#adding-a-tags-predicate}
 
 Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AEM Assets sucht standardmäßig nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
@@ -172,7 +172,7 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AE
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen anderer Eigenschaften     {#adding-other-predicates}
+## Hinzufügen anderer Eigenschaften       {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
@@ -193,7 +193,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
 | [!UICONTROL Gültigkeitsstatus] | Suchprädikat für die Suche nach Assets basierend auf ihrem Ablaufstatus | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Ausgeblendet] | Suchprädikat, das eine versteckte Feldeigenschaft für die Suche nach Assets definiert | <ul><li>Eigenschaftsname</li><li>Eigenschaftswert</li><li>Beschreibung</li></ul> |
 
-## Wiederherstellen der Standard-Suchfacetten {#restoring-default-search-facets}
+## Wiederherstellen der Standard-Suchfacetten  {#restoring-default-search-facets}
 
 Standardmäßig wird vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** das Sperrsymbol angezeigt. Das Sperrsymbol wird ausgeblendet, wenn Sie dem Formular Suchfacetten hinzufügen, um anzugeben, dass das Standardformular geändert wurde.
 
@@ -204,7 +204,7 @@ Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass
 Führen Sie die folgenden Schritte aus, um die standardmäßige Suchfacette wiederherzustellen:
 
 1. Wählen Sie **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** aus.
-1. Tap **[!UICONTROL Delete]** ![deleteoutline](assets/deleteoutline.png) in the toolbar.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]** ![deleteinnerhalb](assets/deleteoutline.png).
 1. Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Löschen]**, um die benutzerdefinierten Änderungen zu entfernen.
 
    Nach dem Löschen der benutzerdefinierten Anpassungen der Suchfacetten wird das Sperrsymbol vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** erneut angezeigt.
