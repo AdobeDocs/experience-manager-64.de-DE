@@ -58,7 +58,7 @@ Umrechnungs-, Verarbeitungs- und Renderaufträge werden in die Warteschlange des
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. Tippen Sie in der rechten oberen Ecke der Seite mit den Asset-Details auf das Symbol **[!UICONTROL Stage Selector]** (Spotlight) und wählen Sie dann einen Anzeigenamen mit dem Hintergrund und der Beleuchtung aus, die Sie auf das 3D-Objekt anwenden möchten.
 
    Siehe [Informationen zu Bühnen in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
@@ -66,7 +66,7 @@ Umrechnungs-, Verarbeitungs- und Renderaufträge werden in die Warteschlange des
 
    **[!UICONTROL Symbol für Bühnen-Auswahl]**
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Render]** auf der linken Seite der Asset-Details einen Renderer aus.
 
    Der Standard-Renderer **Rapid Refine** ist immer verfügbar. Wenn die ausgewählte Bühne ein natives Format hat, ist auch der entsprechende Drittpartei-Renderer in der Liste verfügbar und kann ausgewählt werden.
 
@@ -74,12 +74,12 @@ Umrechnungs-, Verarbeitungs- und Renderaufträge werden in die Warteschlange des
 
 1. Gehen Sie folgendermaßen vor:
 
-   * In the **[!UICONTROL Width]** and **[!UICONTROL Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
-   * (Optional) Select or deselect the **[!UICONTROL Overwrite existing imag]e **check box.
+   * Geben Sie in die Felder **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** die Pixelbreite und -höhe ein, die das Bild gerendert werden soll.
+   * Geben Sie im Feld **[!UICONTROL Bildname]** den Namen des gerenderten Bildes ein.
+   * Geben Sie im Feld **[!UICONTROL Exportpfad]** den Pfad ein, in dem das gerenderte Bild gespeichert werden soll. Oder tippen Sie auf das Symbol **[!UICONTROL Durchsuchen]** und navigieren Sie zu einem Speicherort.
+   * (Optional) Aktivieren oder deaktivieren Sie das Kontrollkästchen **[!UICONTROL Vorhandenes Bild überschreiben]e**.
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. Wählen Sie eine Kameraansicht aus, die Sie auf das gerenderte Bild anwenden möchten.
+1. Tippen Sie in der rechten oberen Ecke der Seite mit den Asset-Details auf das Symbol **[!UICONTROL Kamera-Auswahl]**. Wählen Sie eine Kameraansicht aus, die Sie auf das gerenderte Bild anwenden möchten.
 
    Die linken und rechten sowie oberen und unteren Balken sind sichtbarere Indikatoren dafür, welche Teile der Ansicht gerendert werden. Wenn die Kamera von der ausgewählten Bühne bereitgestellt wird, können Sie eine vordefinierte Kamera auswählen. 
 
