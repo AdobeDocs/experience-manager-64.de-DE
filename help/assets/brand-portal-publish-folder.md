@@ -21,7 +21,7 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. From the AEM Assets interface, hover over the desired folder and select **[!UICONTROL Publish]** option from the quick actions.
+1. Bewegen Sie den Mauszeiger in der AEM Assets-Oberfläche über den gewünschten Ordner und wählen Sie in den Schnellaktionen die Option **[!UICONTROL Veröffentlichen]**.
 
    Alternativ können Sie den gewünschten Ordner auswählen und den weiteren Schritten folgen.
 
@@ -31,11 +31,11 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Wählen Sie dann im Menü **[!UICONTROL In Markenportal veröffentlichen]**.
    * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-3. Then from the **[!UICONTROL Action]** select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**. Tippen Sie auf **[!UICONTROL Weiter].**
-4. Within **[!UICONTROL Scope]**, confirm your selection and tap **[!UICONTROL Publish to Brand Portal]**.
+3. Wählen Sie dann unter **[!UICONTROL Aktion]** **[!UICONTROL In Markenportal veröffentlichen]** und unter **[!UICONTROL Einplanen]** **[!UICONTROL Jetzt]**. Tippen Sie auf **[!UICONTROL Weiter].**
+4. Bestätigen Sie in **[!UICONTROL Scope]** Ihre Auswahl und tippen Sie auf **[!UICONTROL In Markenportal veröffentlichen]**.
 
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um den veröffentlichten Ordner zu sehen.
 
@@ -43,14 +43,14 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
    So planen Sie die Veröffentlichung von Asset-Ordnern im Brand Portal auf ein späteres Datum oder eine spätere Uhrzeit:
 
-   1. Once you have selected assets/folders to publish, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
-   2. On **[!UICONTROL Manage Publication]** page, select **[!UICONTROL Publish to Brand Portal]** from **[!UICONTROL Action]** and select **[!UICONTROL Later]** from **[!UICONTROL Scheduling]**.
+   1. Nachdem Sie die zu veröffentlichenden Assets/Ordner ausgewählt haben, wählen Sie in der Symbolleiste oben **[!UICONTROL Veröffentlichung verwalten]** aus.
+   2. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten]** die Option **[!UICONTROL In Markenportal veröffentlichen]** aus **[!UICONTROL Aktion]** und wählen Sie **[!UICONTROL Später]** aus **[!UICONTROL Einplanen]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
    3. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Tippen Sie auf **[!UICONTROL Weiter]**.
    4. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Umfang]**. Tippen Sie auf **[!UICONTROL Weiter]**.
-   5. Geben Sie einen Workflow-Titel unter **[!UICONTROL Workflows]** an. Tap **[!UICONTROL Publish Later]**.
+   5. Geben Sie einen Workflow-Titel unter **[!UICONTROL Workflows]** an. Tippen Sie auf **[!UICONTROL Später veröffentlichen]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
@@ -70,20 +70,20 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
 
    So können Sie die Veröffentlichung des gewünschten Ordners in Brand Portal schnell rückgängig machen:
 
-   1. On **[!UICONTROL Manage Publication]** page, from **[!UICONTROL Action]** select **[!UICONTROL Unpublish from Brand Portal]** and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**.
+   1. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten]** von **[!UICONTROL Aktion]** **[!UICONTROL Veröffentlichung rückgängig machen]** und **[!UICONTROL Planen]** **[!UICONTROL Jetzt]** aus.
    2. Klicken oder tippen Sie auf **[!UICONTROL Weiter].**
-   3. Within **[!UICONTROL Scope]**, confirm your selection and tap **[!UICONTROL Unpublish from Brand Portal]**.
+   3. Bestätigen Sie in **[!UICONTROL Scope]** Ihre Auswahl und tippen Sie auf **[!UICONTROL Veröffentlichung im Markenportal rückgängig machen]**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Rückgängigmachen der Veröffentlichung aus dem Markenportal später**
+   **Rückgängigmachen der Veröffentlichung aus dem Markenportal**
 
    So können Sie die Veröffentlichung eines Ordners in Brand Portal zu einem späteren Zeitpunkt rückgängig machen:
 
-   1. On **[!UICONTROL Manage Publication]** page, from **[!UICONTROL Action]** select **[!UICONTROL Unpublish from Brand Portal]** and from **[!UICONTROL Scheduling]** select **[!UICONTROL Later].**
+   1. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten]** von **[!UICONTROL Aktion]** **[!UICONTROL Rückgängigmachen der Veröffentlichung aus dem Markenportal]** und **[!UICONTROL Einplanen]** **[!UICONTROL Später].**.
    2. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Tippen Sie auf **[!UICONTROL Weiter]**.
-   3. Within **[!UICONTROL Scope]**, confirm your selection and tap **[!UICONTROL Next]**.
-   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. Tap **[!UICONTROL Unpublish Later].**
+   3. Bestätigen Sie innerhalb von **[!UICONTROL Scope]** Ihre Auswahl und tippen Sie auf **[!UICONTROL Weiter]**.
+   4. Geben Sie einen **[!UICONTROL Workflow-Titel]** unter **[!UICONTROL Workflows]** an. Tippen Sie auf **[!UICONTROL Veröffentlichung später rückgängig machen].**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
