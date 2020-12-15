@@ -1,6 +1,6 @@
 ---
-title: 'Arbeiten mit Selektoren '
-seo-title: 'Arbeiten mit Selektoren '
+title: Arbeiten mit Selektoren
+seo-title: Arbeiten mit Selektoren
 description: Auswählen von Assets für interaktive Bilder, interaktive Videos und Karussellbanner
 seo-description: Auswählen von Assets für interaktive Bilder, interaktive Videos und Karussellbanner
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
@@ -32,7 +32,7 @@ Beispiel: In diesem Karussellbanner verwenden Sie den Produktselektor, wenn Sie 
 
 Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Site-Selektor funktioniert nur, wenn Sie AEM Sites-Kunde sind. Der Produktselektor erfordert außerdem AEM Commerce.
 
-## Selecting products {#selecting-products}
+## Auswählen von Produkten {#selecting-products}
 
 Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchten, dass ein Hotspot oder eine Imagemap eine Schnellansicht zu einem bestimmten Produkt in Ihrem Produktkatalog zur Verfügung zu stellt.
 
