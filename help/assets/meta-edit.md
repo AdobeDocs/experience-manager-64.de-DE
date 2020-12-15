@@ -25,7 +25,7 @@ So bearbeiten Sie Metadaten:
 
    * Wählen Sie in der Benutzeroberfläche von AEM Assets das Asset aus und klicken oder tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]**.
    * Wählen Sie die Schnellaktion **[!UICONTROL Eigenschaften anzeigen]** aus der Miniaturansicht des Assets aus.
-   * From the asset page, click/tap the **[!UICONTROL View Properties]** icon ![info icon](assets/do-not-localize/info_icon.png) from the toolbar.
+   * Klicken Sie auf der Asset-Seite auf das Symbol **[!UICONTROL Eigenschaften von Ansichten]** ![Infosymbol](assets/do-not-localize/info_icon.png) in der Symbolleiste.
 
    Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Erfassen) in AEM Assets automatisch extrahiert.
 
@@ -49,7 +49,7 @@ Weitere Informationen zur Bearbeitung von Metadatenschemata finden Sie unter [Be
 
 Sie können eigene Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespaces wie cq, jcr und sling. Sie können aber auch einen Namespace für Ihre Repository-Metadaten und die XML-Verarbeitung hinzufügen.
 
-1. Go to the node type administration page `https://[AEM_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. Wechseln Sie zur Knotentyp Administrationsseite `https://[AEM_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Klicken oder tippen Sie am oberen Rand der Seite auf **[!UICONTROL Namespaces]**. Die Seite zur Namespace-Verwaltung wird in einem Fenster angezeigt.
 
 1. Um einen Namespace hinzuzufügen, klicken oder tippen Sie am unteren Rand auf **[!UICONTROL Neu]**.
@@ -57,7 +57,7 @@ Sie können eigene Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespac
 
 ## Tipps und Einschränkungen {#best-practices-limitations}
 
-* Die Metadaten-Aktualisierungen über die Touch-Benutzeroberfläche ändern die Metadateneigenschaften im `dc` Namensraum. Über die HTTP-API vorgenommene Aktualisierungen ändern die Metadateneigenschaften im `jcr` Namensraum. Siehe [Aktualisieren von Metadaten mit der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
+* Die Metadaten-Aktualisierungen über Touch-UI ändern die Metadateneigenschaften im Namensraum `dc`. Über die HTTP-API vorgenommene Aktualisierungen ändern die Metadateneigenschaften im Namensraum `jcr`. Siehe [Informationen zum Aktualisieren von Metadaten mit der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 >[!MORELIKETHIS]
 >
