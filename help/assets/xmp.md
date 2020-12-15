@@ -36,7 +36,7 @@ eine bestimmte Einrichtung, die als Ressource bezeichnet wird; Das heißt, die E
 
 Adobe hat den XMP-Standard zunächst im Rahmen des Adobe Acrobat-Softwareprodukts eingeführt. Mittlerweile ist der XMP-Standard weit verbreitet.
 
-### XMP ecosystem {#xmp-ecosystem}
+### XMP Ökosystem {#xmp-ecosystem}
 
 XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), das mit jedem definierten Satz von Metadatenelementen verwendet werden kann. XMP definiert außerdem bestimmte [Schemata](https://de.wikipedia.org/wiki/Schemasprache_(XML)) für Standardeigenschaften, die für die Aufzeichnung des Verlaufs einer Ressource nützlich sind, während sie mehrere Verarbeitungsschritte durchläuft – von der Aufnahme über [Scannen](https://de.wikipedia.org/wiki/Scanner_(Datenerfassung)) oder Verfassen als Text und Bildbearbeitungsschritte (wie [Zuschneiden](https://de.wikipedia.org/wiki/Cropping) oder Farbkorrektur) bis hin zur Zusammensetzung in das endgültige Bild. XMP ermöglicht es jedem Softwareprogramm oder Gerät, eigene Informationen zu einer digitalen Ressource hinzuzufügen, die dann in der endgültigen digitalen Datei gespeichert werden kann.
 
@@ -59,7 +59,7 @@ Das XMP-Standardformat ist erweiterbar, sodass Sie den XMP-Daten benutzerdefinie
 >
 >XMP lässt im Allgemeinen nicht zu, dass binäre Datentypen eingebettet werden. Um binäre Daten wie etwa Miniaturansichten in XMP zu übertragen, müssen diese in einem XML-kompatiblen Format wie beispielsweise Base64 kodiert werden.
 
-## Wesentliche XMP-Grundlagen {#xmp-core-concepts}
+## Wesentliche XMP-Grundlagen  {#xmp-core-concepts}
 
 In den folgenden Abschnitten werden die wesentlichen Grundlagen von XMP beschrieben, einschließlich Namespaces und Schemata, Eigenschaften und Werten sowie Sprachalternativen.
 
@@ -70,7 +70,7 @@ Datentyp und beschreibende Informationen. Ein XMP-Schema wird durch die zugehör
 
 Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für die Anwendung, von der das Asset erstellt wurde (z. B. Adobe Photoshop).
 
-### Eigenschaften und Werte {#properties-and-values}
+### Eigenschaften und Werte  {#properties-and-values}
 
 XMP kann Eigenschaften von einem oder mehreren der Schemata umfassen.
 
