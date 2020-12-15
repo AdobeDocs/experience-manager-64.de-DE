@@ -22,7 +22,7 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
 
 [Varianten](content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des Master-Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
 
@@ -87,7 +87,7 @@ Der Vollbild-Editor bietet Folgendes:
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
+* Wählen Sie das [Format](#formats) ([Rich Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown)).
 * [Textstatistiken anzeigen](#viewing-key-statistics)
 * [Inhalt hochladen](#uploading-content)
 * [Mit Master synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
@@ -292,7 +292,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
    >* **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
-## Verwalten von Varianten     {#managing-variations}
+## Verwalten von Varianten      {#managing-variations}
 
 ### Variante erstellen {#creating-a-variation}
 
@@ -310,7 +310,7 @@ So erstellen Sie eine neue Variante:
    >
    >Wenn eine neue Variante erstellt wird, wird immer der **Master** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante     {#editing-a-variation}
+### Bearbeiten einer Variante      {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -363,7 +363,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 >
 >Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
 >
->Es ist nicht möglich, Änderungen *von einer Variante auf **Master ***zu übertragen.
+>Es ist nicht möglich, Änderungen *von einer Variante auf **Master*** zu übertragen.
 
 1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass **Master** bearbeitet wurde.
 2. Es gibt folgende Möglichkeiten, eine bestimmte Variante sowie die entsprechende Synchronisierung auszuwählen:
