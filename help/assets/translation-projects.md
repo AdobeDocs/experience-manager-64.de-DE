@@ -39,7 +39,7 @@ Den Workflow zum Erstellen und Übersetzen verwenden Sie, um erstmals Sprachkopi
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Nur Struktur erstellen        {#create-structure-only}
+### Nur Struktur erstellen  {#create-structure-only}
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
@@ -177,7 +177,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
    >
    >Wenn das Asset, das Sie zum Übersetzungsauftrag hinzufügen, Teil-Assets enthält, wählen Sie die Teil-Assets und entfernen Sie sie, damit die Übersetzung fehlerfrei fortgesetzt werden kann.
 
-1. Um die Übersetzung der Assets zu starten, klicken/tippen Sie auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf den Pfeil und wählen Sie aus der Liste die Option **[!UICONTROL Start]**.
+1. Um die Übersetzung der Assets zu starten, klicken/tippen Sie auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf den Pfeil und wählen Sie aus der Liste die Option **[!UICONTROL Start.]**
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -189,7 +189,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-   For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Weitere Informationen finden Sie unter [Überwachen des Status eines Übersetzungsauftrags](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Nach Abschluss des Übersetzungsvorgangs ändert sich der Status in „Bereit für Überprüfung“. Navigieren Sie zur Benutzeroberfläche „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
@@ -198,7 +198,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Abhängig von den gewählten Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
 
 * Erstellen eines neuen Übersetzungsprojekts
-* Hinzufügen zu einem vorhandenen Übersetzungsprojekt 
+* Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
 ### Erstellen eines neuen Übersetzungsprojekts {#create-a-new-translation-project-1}
 
@@ -312,4 +312,4 @@ Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbe
 
 1. Navigieren Sie zur Konsole „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-For tips on translating metadata for assets efficiently, see [5 Steps for Efficiently Translating Metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Tipps zum effizienten Übersetzen von Metadaten für Assets finden Sie unter [5 Schritte zum effizienten Übersetzen von Metadaten](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
