@@ -11,7 +11,7 @@ ht-degree: 79%
 ---
 
 
-# Process assets Using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
+# Verarbeiten von Assets mit Media Handlern und Workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Media-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungs-Aufgabe und delegiert dann die spezifischen Aufgaben an die Media-Handler, z. B. die Erstellung von Miniaturbildern oder die Metadaten-Extraktion.
 
@@ -23,7 +23,7 @@ Medien-Handler sind Dienste innerhalb von AEM Assets, die spezielle Aktionen an 
 >
 >Eine Beschreibung aller Formate, die von AEM Assets unterstützt werden, sowie Funktionen, die für jedes Format unterstützt werden, finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
-## Default media handlers {#default-media-handlers}
+## Standard-Media-Handler {#default-media-handlers}
 
 Die folgenden Medien-Handler sind in AEM Assets verfügbar und handhaben die gängigsten MIME-Typen:
 
@@ -55,7 +55,7 @@ Es ist möglich, die aktiven Medien-Handler anzuzeigen:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Use media handlers in workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Verwenden Sie in Workflows Media Handler, um Aufgaben für Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets} durchzuführen
 
 Medien-Handler sind Dienste, die normalerweise in Verbindung mit Workflows verwendet werden.
 
@@ -127,15 +127,15 @@ In diesem Abschnitt erstellen Sie einen spezifischen Text-Handler, der Miniaturb
 
 Gehen Sie wie folgt vor:
 
-Lesen Sie die [Entwicklungstools](../sites-developing/dev-tools.md) , um Eclipse mit einem Maven-Plugin zu installieren und einzurichten und um die Abhängigkeiten einzurichten, die für das Maven-Projekt benötigt werden.
+Unter [Entwicklungstools](../sites-developing/dev-tools.md) finden Sie Informationen zum Installieren und Einrichten von Eclipse mit einem Maven-Plugin und zum Einrichten der Abhängigkeiten, die für das Maven-Projekt benötigt werden.
 
 Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM hochladen, werden die Metadaten der Datei extrahiert und zwei Miniaturbilder mit einem Wasserzeichen erstellt.
 
-1. Erstellen Sie in Eclipse ein `myBundle` Maven-Projekt:
+1. Erstellen Sie in Eclipse das Maven-Projekt `myBundle`:
 
-   1. In the Menu bar, click **[!UICONTROL File > New > Other]**.
-   1. In the dialog, expand the Maven folder, select Maven Project and click **[!UICONTROL Next]**.
-   1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
+   1. Klicken Sie in der Menüleiste auf **[!UICONTROL Datei > Neu > Andere]**.
+   1. Erweitern Sie im Dialogfeld den Ordner Maven, wählen Sie Maven Project und klicken Sie auf **[!UICONTROL Next]**.
+   1. Markieren Sie die Felder &quot;Einfaches Projekt erstellen&quot;und &quot;Standardspeicherorte für Workspace verwenden&quot;und klicken Sie dann auf **[!UICONTROL Weiter]**.
    1. Definieren Sie das Maven-Projekt:
 
       * Gruppen-ID: com.day.cq5.myhandler
@@ -147,7 +147,7 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM h
 
 1. Setzen Sie Java Compiler auf Version 1.5:
 
-   1. Right-click the `myBundle` project, select Properties.
+   1. Klicken Sie mit der rechten Maustaste auf das Projekt `myBundle` und wählen Sie Eigenschaften.
    1. Wählen Sie Java Compiler und setzen Sie folgende Eigenschaften auf 1.5:
 
       * Compiler-Kompatibilitätsstufe
@@ -273,16 +273,16 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM h
     </dependencies>
    ```
 
-1. Erstellen Sie das Paket, `com.day.cq5.myhandler` das die Java-Klassen enthält unter `myBundle/src/main/java`:
+1. Erstellen Sie das Paket `com.day.cq5.myhandler`, das die Java-Klassen unter `myBundle/src/main/java` enthält:
 
-   1. Under myBundle, right-click `src/main/java`, select New, then Package.
-   1. Name it `com.day.cq5.myhandler` and click Finish.
+   1. Klicken Sie unter myBundle mit der rechten Maustaste auf `src/main/java`, wählen Sie New und dann Package.
+   1. Benennen Sie es `com.day.cq5.myhandler` und klicken Sie auf Fertig stellen.
 
 1. Erstellen Sie den Java Class `MyHandler`:
 
-   1. In Eclipse, under `myBundle/src/main/java`, right-click the `com.day.cq5.myhandler` package, select New, then Class.
+   1. Klicken Sie in Eclipse unter `myBundle/src/main/java` mit der rechten Maustaste auf das `com.day.cq5.myhandler`-Paket, wählen Sie Neu und dann Klasse.
    1. Benennen Sie im Dialogfenster den Java Class MyHandler und klicken Sie auf „Fertigstellen“. Eclipse erstellt und öffnet die Datei MyHandler.java.
-   1. In `MyHandler.java` replace the existing code with the following and then save the changes:
+   1. Ersetzen Sie in `MyHandler.java` den vorhandenen Code durch den folgenden und speichern Sie dann die Änderungen:
 
    ```java
    package com.day.cq5.myhandler; 
@@ -426,11 +426,11 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in AEM h
 
 1. Kompilieren Sie die Java-Klasse und erstellen Sie das Bundle:
 
-   1. Right-click the myBundle project, select **[!UICONTROL Run As]**, then **[!UICONTROL Maven Install]**.
-   1. The bundle `myBundle-0.0.1-SNAPSHOT.jar` (containing the compiled class) is created under `myBundle/target`.
+   1. Klicken Sie mit der rechten Maustaste auf das myBundle-Projekt, wählen Sie **[!UICONTROL Ausführen als]** und dann **[!UICONTROL Maven Install]**.
+   1. Das Bundle `myBundle-0.0.1-SNAPSHOT.jar` (das die kompilierte Klasse enthält) wird unter `myBundle/target` erstellt.
 
-1. In CRX Explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
-1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). Der neue Text-Handler ist jetzt in AEM aktiv.
+1. Erstellen Sie in CRX Explorer einen neuen Knoten unter `/apps/myApp`. Name = `install`, Typ = `nt:folder`.
+1. Kopieren Sie das Bundle `myBundle-0.0.1-SNAPSHOT.jar` und speichern Sie es unter `/apps/myApp/install` (z. B. mit WebDAV). Der neue Text-Handler ist jetzt in AEM aktiv.
 1. Öffnen Sie im Browser die Apache Felix Web Management Console. Wählen Sie die Registerkarte „Komponenten“ aus und deaktivieren Sie den Standard-Text-Handler `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Befehlszeilenbasierter Medien-Handler {#command-line-based-media-handler}
@@ -458,13 +458,13 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 * Löscht das temporäre Verzeichnis.
 * Erstellt Miniaturbilder auf der Grundlage dieser Ausgabeformate, falls angegeben. Die Anzahl und die Abmessungen von Miniaturbildern werden durch die Argumente des Schritts definiert.
 
-### An example using ImageMagick {#an-example-using-imagemagick}
+### Beispiel mit ImageMagick {#an-example-using-imagemagick}
 
 Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt so einrichten, dass jedes Mal, wenn ein Asset mit dem MIME-Typ GIF oder TIFF zu /content/dam auf dem AEM-Server hinzugefügt wird, ein gespiegeltes Bild des Originals zusammen mit drei zusätzlichen Miniaturbildern (140x100, 48x48 und 10x250) erstellt wird.
 
 Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf der Festplatte, auf der der AEM Server gehostet wird:
 
-1. Installieren von ImageMagick. Weitere Informationen finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) .
+1. Installieren von ImageMagick. Weitere Informationen finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php).
 1. Richten Sie das Tool ein, damit Sie den Befehl „convert“ über die Befehlszeile ausführen können.
 1. Um festzustellen, ob das Tool ordnungsgemäß installiert wurde, führen Sie den Befehl `convert -h` über die Befehlszeile aus.
 
@@ -474,7 +474,7 @@ Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf der Festplatte,
    >
    >In manchen Versionen von Windows (z. B. Windows SE) kann der Konvertierungsbefehl eventuell nicht ausgeführt werden, da er in Konflikt mit dem nativen Konvertierungsdienstprogramm steht, das Teil der Windows-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. To see if the tool runs properly, add a JPG image to the working directory and run the command `convert <image-name>.jpg -flip <image-name>-flipped.jpg` on the command line.
+1. Um zu sehen, ob das Tool ordnungsgemäß ausgeführt wird, fügen Sie dem Arbeitsverzeichnis ein JPG-Bild hinzu und führen Sie den Befehl `convert <image-name>.jpg -flip <image-name>-flipped.jpg` in der Befehlszeile aus.
 
    Ein gespiegeltes Bild wird dem Verzeichnis hinzugefügt.
 
@@ -494,15 +494,15 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinz
 1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Öffnen Sie das Asset `myImage.tiff` und prüfen Sie, ob das gespiegelte Bilder und die drei Miniaturbilder erstellt wurden.
 
-#### Configure the CommandLineProcess process step {#configuring-the-commandlineprocess-process-step}
+#### Konfigurieren des BefehlsLineProcess-Prozessschritts {#configuring-the-commandlineprocess-process-step}
 
-In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozessargumenten] mit einem Komma und verwenden Sie kein Beginn mit einem Leerzeichen.
+In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozessargumente] durch ein Komma und geben Sie keinen Beginn mit einem Leerzeichen ein.
 
 | Argument-Format | Beschreibung |
 |---|---|
 | mime:&lt;MIME-Typ> | Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat. <br>Es können mehrere MIME-Typen definiert werden. |
 | tn:&lt;Breite>:&lt;Höhe> | Optionales Argument. Der Prozess erstellt ein Miniaturbild mit den Abmessungen, die im Argument definiert sind. <br>Es können mehrere Miniaturbilder definiert werden. |
-| cmd: &lt;Befehl> | Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. Original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
+| cmd: &lt;Befehl> | Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg  <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp  <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. Original  <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
 
 Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den AEM-Server hostet, und Sie einen Prozessschritt mithilfe von **CommandLineProcess** als Implementierung erstellen und die folgenden Werte als **Prozess-Argumente** verwenden:
 
@@ -520,4 +520,4 @@ Verwenden Sie die folgenden [!UICONTROL Prozess-Argumente], um die Web-fähige A
 
 >[!NOTE]
 >
->The `CommandLineProcess` step only applies to Assets (nodes of type `dam:Asset`) or descendants of an asset.
+>Der Schritt `CommandLineProcess` gilt nur für Assets (Knoten des Typs `dam:Asset`) oder untergeordnete Elemente eines Assets.
