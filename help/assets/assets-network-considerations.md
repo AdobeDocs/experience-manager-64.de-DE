@@ -46,7 +46,7 @@ Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzw
 
 Das Diagramm zeigt höhere Uplinkgeschwindigkeiten innerhalb des Unternehmensnetzwerks, als im Allgemeinen üblich sind. Diese Leitungen sind freigegebene Ressourcen. Wenn erwartet wird, dass ein freigegebener Switch die Vorgänge von 50 Clients abwickelt, kann es möglicherweise zu einem Engpass kommen. Im anfangs gezeigten Diagramm nutzen nur zwei Computer die betreffende Verbindung.
 
-## Uplink zum Internet vom Unternehmensnetzwerk und von der AEM-Umgebung     {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uplink zum Internet vom Unternehmensnetzwerk und von der AEM-Umgebung      {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -62,7 +62,7 @@ Dies ist der kleinste Engpass in Bezug auf Clients. Sie können jedoch die für 
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
-## Topologie der AEM-Umgebung  {#topology-of-the-aem-environment}
+## Topologie der AEM-Umgebung   {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
