@@ -23,12 +23,12 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
 ## Suchen nach Assets {#searching-assets}
 
-1. From the toolbar of the Assets user interface, click or tap the **[!UICONTROL Search]** icon to display the Omnisearch box.
+1. Klicken Sie in der Symbolleiste der Benutzeroberfläche &quot;Assets&quot;auf das Symbol **[!UICONTROL Suchen]** oder tippen Sie darauf, um das Feld &quot;Omniture&quot;anzuzeigen.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Drücken Sie die Eingabetaste, während sich der Cursor im OmniSearch-Feld befindet.
-1. Click or tap the GlobalNav icon to display the **[!UICONTROL Filters]** panel.
+1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um das Bedienfeld **[!UICONTROL Filter]** anzuzeigen.
 1. Geben Sie im OmniSearch-Feld den Wert „Ziel“ an. Um Ihre Suche auf einen bestimmten Ordner zu beschränken, klicken oder tippen Sie auf das Symbol „Durchsuchen“ im Bedienfeld „Filter“ und wählen Sie den Ordner aus. In diesem Fall wird die Übereinstimmung nur innerhalb des Ordners und in den untergeordneten Ordner gesucht.
 
    >[!NOTE]
@@ -37,7 +37,7 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. Die AEM Assets-Benutzeroberfläche zeigt nur die Assets an, deren Titel exakt mit &quot;Zielgruppe&quot;übereinstimmen.
+1. Drücken Sie **[!UICONTROL die Eingabetaste]**. Die AEM Assets-Benutzeroberfläche zeigt nur die Assets an, deren Titel exakt mit &quot;Zielgruppe&quot;übereinstimmen.
 
 Mit der Volltextsuche-Funktion für GQL können Sie Assets auf der Grundlage folgender Elemente suchen:
 
@@ -56,24 +56,24 @@ Mit der Volltextsuche-Funktion für GQL können Sie anhand der folgenden Metadat
 | [!UICONTROL Titel] | title:John |
 | [!UICONTROL Ersteller] | creator:John |
 | [!UICONTROL Mitarbeiter] | contributor:John |
-| [!UICONTROL Ort] | location:India |
+| [!UICONTROL Standort] | location:India |
 | [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
 | [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
-| [!UICONTROL Mitarbeiter] | contributor:John |
+| [!UICONTROL Mitarbeiter] | Mitarbeiter:John |
 | [!UICONTROL Nutzungsbedingungen] | usageterms:„CopyRights Reserved“ |
 | [!UICONTROL Erstellt] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ablaufdatum] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Einschaltzeit] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ausschaltzeit] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Zeitraum] (läuft dateontime ab, offtime) | facet field : lowerbound..upperbound |
+| [!UICONTROL Zeitraum]  (läuft dateontime ab, offtime) | facet field : lowerbound.upperbound |
 | [!UICONTROL Pfad] | /content/dam/&lt;Ordnername> |
 | [!UICONTROL PDF-Titel] | pdftitle:„Adobe Document“ |
 | [!UICONTROL Betreff] | subject:„Training“ |
 | [!UICONTROL Tags] | tags:„Location And Travel“ |
 | [!UICONTROL Typ] | type:&quot;image\png&quot; |
-| [!UICONTROL Bildbreite] | width:lowerbound..upperbound |
-| [!UICONTROL Bildhöhe] | height:lowerbound..upperbound |
+| [!UICONTROL Bildbreite] | width:lowerbound.upperbound |
+| [!UICONTROL Bildhöhe] | height:lowerbound.upperbound |
 | [!UICONTROL Person] | person:John |
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
@@ -110,7 +110,7 @@ Titel:&quot;Sitzung&quot;;
 >
 >Die Eigenschaften „path“, „limit“, „size“ und „orderby“ können nicht über ODER mit einer anderen Eigenschaft verknüpft werden.
 >
->Der Suchbegriff für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
+>Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
 
 
 >[!NOTE]
@@ -121,14 +121,14 @@ Die Volltextsuche unterstützt auch Operatoren wie -, ^ usw. Um diese Buchstaben
 
 ## Optimieren der Suche {#boosting-search}
 
-Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um die auf Suchbegriffen basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Suchbegriffe festlegen, erscheinen bei der Suche nach diesen Suchbegriffen oben in den Suchergebnissen.
+Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die auf Keywords basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Keywords festlegen, erscheinen bei der Suche nach diesen Keywords oben in den Suchergebnissen.
 
 1. Öffnen Sie in der Assets-Benutzeroberfläche die Eigenschaftenseite für das Asset, für das Sie einen Suchbegriff festlegen möchten.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Erweitert]** und klicken/tippen Sie auf die Option **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Für Suchbegriffe erhöhen]**.
 
    ![levate_for_search](assets/elevate_for_search.png)
 
-1. Geben Sie im Feld **[!UICONTROL Suche priorisieren]** einen Suchbegriff ein, für den Sie die Bildsuche optimieren möchten, und klicken oder tippen Sie anschließend auf **[!UICONTROL Hinzufügen]**. Geben Sie bei Bedarf mehrere Suchbegriffe auf die gleiche Weise an.
+1. Geben Sie im Feld **[!UICONTROL Suche priorisieren]** ein Keyword ein, für den Sie die Bildsuche optimieren möchten, und klicken oder tippen Sie anschließend auf **[!UICONTROL Hinzufügen]**. Geben Sie bei Bedarf mehrere Suchbegriffe auf die gleiche Weise an.
 
    ![add_search_word](assets/add_search_word.png)
 
