@@ -15,7 +15,7 @@ ht-degree: 56%
 
 Assets ist ein DAM-Tool (Digital Asset Management), das vollständig in die AEM integriert ist und Ihrem Unternehmen die Freigabe und Verteilung digitaler Assets ermöglicht. Benutzer im gesamten Unternehmen können Bilder, Videos, Dokumente, Audioclips und Rich-Media wie Flash-Dateien für die Verwendung im Internet, zum Drucken und für die digitale Verteilung verwalten, speichern und darauf zugreifen.
 
-## What is Digital Asset Management (DAM)? {#what-is-digital-asset-management}
+## Was ist Digital Asset Management (DAM)? {#what-is-digital-asset-management}
 
 Assets ermöglicht die unternehmensweite Frei- und Weitergabe der wichtigsten digitalen Assets einer Organisation. Benutzer in einem Unternehmen können digitale Assets wie Bilder, Grafiken, Audio, Video und Dokumente über eine Webschnittstelle (oder einen CIFS- oder WebDAV-Ordner) speichern, verwalten und darauf zugreifen.
 
@@ -28,13 +28,13 @@ AEM Assets ist vollständig in AEM integriert und ermöglicht Ihnen Folgendes:
 * Ausführen von Bildbearbeitungsvorgängen, beispielsweise Skalierung und Hinzufügen von Bildfiltern. Importieren und Exportieren mehrerer digitaler Assets gleichzeitig mithilfe eines WebDAV- oder CIFS-Ordners.
 * Verwenden von Workflows und Benachrichtigungen, um die gemeinsame Verarbeitung und den gemeinsamen Download mehrerer Assets zu ermöglichen und Zugriffsrechte auf Assets zu verwalten.
 
-### AEM Assets ist vollständig in AEM WCM-Funktionen integriert {#aem-assets-fully-integrated-in-cq-wcm}
+### AEM Assets ist vollständig in AEM WCM-Funktionen integriert.{#aem-assets-fully-integrated-in-cq-wcm}
 
 AEM Assets ist vollständig in CQ WCM integriert und die Funktionen sind über das DAM-Symbol verfügbar:
 
 <!-- TBD: Update image for branding -->
 
-![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946](assets/screen_shot_2012-04-17at15946pm.png) ![pmscreen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
 In CQ DAM verwaltete Assets sind dann über die Inhaltssuche von WCM zugänglich:
 
@@ -44,9 +44,9 @@ In CQ DAM verwaltete Assets sind dann über die Inhaltssuche von WCM zugänglic
 
 >[!NOTE]
 >
->The basic navigation of user interface is the same as the rest of AEM - see [Overview of the GUI Console](/help/sites-authoring/qg-page-authoring.md) for full details.
+>Die grundlegende Navigation der Benutzeroberfläche ist die gleiche wie der Rest der AEM - siehe [Übersicht über die GUI-Konsole](/help/sites-authoring/qg-page-authoring.md) für alle Details.
 
-### Digital Asset Management versus the Image component {#digital-asset-management-versus-image-component}
+### Digital Asset Management im Vergleich zur Bildkomponente {#digital-asset-management-versus-image-component}
 
 Berücksichtigen Sie bei der Entscheidung, ob ein Bild in AEM Assets platziert oder die Image-Komponente verwendet werden soll, den Bildlebenszyklus:
 
@@ -63,11 +63,11 @@ Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Me
 >
 >Das Hochladen bzw. Bearbeiten von sehr vielen Assets (insbesondere von Bildern) kann sich auf die Leistung Ihrer CQ-Instanz auswirken.
 
-### AEM Assets terminology {#aem-assets-terminology}
+### AEM Assets-Terminologie {#aem-assets-terminology}
 
 Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Terminologie vertraut sein:
 
-* **Sammlung:** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
+* **Sammlung:** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), den allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
 
 * **Metadaten:** Assets enthalten Metadaten; zum Beispiel Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden. AEM Assets unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
 
@@ -79,7 +79,7 @@ Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Termino
 
 * **Darstellungen:** Eine Darstellung ist die binäre Darstellung eines Assets. Assets verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
 
-* **Versionen:** Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versionen:** Versionierung erstellt einen Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt. Sie können frühere Versionen von Assets wiederherstellen. Siehe [Version in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Teilassets:** Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Photoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
 
@@ -98,4 +98,4 @@ Sie können Workflows natürlich auch manuell anwenden. Eine Liste der Standard-
 
 ## AEM DAM und AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
-See [AEM DAM and AEM MediaLibrary](medialibrary.md) for information on the differences.
+Informationen zu den Unterschieden finden Sie unter [AEM DAM und AEM MediaLibrary](medialibrary.md).
