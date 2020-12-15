@@ -39,9 +39,9 @@ Die folgenden Ereignisse können zur Aufzeichnung konfiguriert werden:
 * Unter-Asset aktualisiert (SUBASSET_UPDATED)
 * Unter-Asset entfernt (SUBASSET_REMOVED)
 
-## Konfigurieren der AEM Assets-Ereignisaufzeichnung {#configuring-aem-assets-events-recording}
+## Konfigurieren der AEM Assets-Ereignisaufzeichnung  {#configuring-aem-assets-events-recording}
 
-The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. Gehen Sie wie folgt vor, um den AEM Assets Ereignis-Recorder zu konfigurieren:
+Die [Webkonsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf die AEM Assets-Ereignis-Recorder-Abstimmung. Gehen Sie wie folgt vor, um den AEM Assets Ereignis-Recorder zu konfigurieren:
 
 1. Navigieren Sie zur **[!UICONTROL Web-Konsole]**.
 
