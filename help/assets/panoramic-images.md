@@ -32,54 +32,54 @@ Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Pano
 
 * Ein Seitenverhältnis von 2.
 
-   You can override the default aspect ratio setting of 2 in **[!UICONTROL CRXDE Lite]** at the following:
+   Sie können die Standardeinstellung für das Seitenverhältnis von 2 in **[!UICONTROL CRXDE Lite]** wie folgt überschreiben:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** component.
+Sowohl das Seitenverhältnis als auch die Suchbegriffkriterien gelten für panoramische Assets für die Seite mit den Asset-Details und die Komponente **[!UICONTROL Panoramische Medien]**.
 
 Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
 
-## Configuring Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
+## Konfigurieren von Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit den für Dynamic Media Classic und Dynamic Media Classic spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
+Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Panorama-Bild-Viewer-Vorgaben mit Dynamic Media Classic- und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) an.
+1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Dynamic Media ](https://www.adobe.com/de/marketing-cloud/experience-manager/scene7-login.html) Classic-Instanz an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
-1. On the **[!UICONTROL Image Server Publish]** page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Image-Server-Veröffentlichung]** aus dem Dropdownmenü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Server]**.
 
-1. On the same **[!UICONTROL Image Server Publish]** page, locate the heading **[!UICONTROL Request Attributes]**.
-1. Under the **[!UICONTROL Request Attributes]** heading, locate **[!UICONTROL Reply Image Size Limit]**. Then, in the associated **[!UICONTROL Width]** and **[!UICONTROL Height]** fields, increase the maximum allowable image size for panoramic images.
+1. Suchen Sie auf derselben Seite **[!UICONTROL Image-Server-Veröffentlichung]** die Überschrift **[!UICONTROL Anforderungsattribute]**.
+1. Suchen Sie unter der Überschrift **[!UICONTROL Anforderungsattribute]** nach **[!UICONTROL Maximale Antwortbildgröße]**. Erhöhen Sie dann in den zugehörigen Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** die maximal zulässige Bildgröße für Panoramabilder.
 
-   Der Wert von Dynamic Media Classic ist auf 25.000.000 Pixel begrenzt. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
+   Dynamic Media Classic ist auf 25.000.000 Pixel begrenzt. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
    >[!NOTE]
    >
    >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen zu Bildern oberhalb der Obergrenze geben einen „403“-Fehler zurück.
 
-1. Under the **[Request Attributes]** heading, do the following:
+1. Gehen Sie unter der Überschrift **[Anforderungsattribute]** wie folgt vor:
 
-   * Set **[!UICONTROL Request Obfuscation Mode]** to **[!UICONTROL Disabled]**.
-   * Set **[!UICONTROL Request Locking Mode]** to **[!UICONTROL Disabled]**.
+   * Stellen Sie **[!UICONTROL Abfrageverdeckungsmodus]** auf **[!UICONTROL Deaktiviert]** ein.
+   * Setzen Sie **[!UICONTROL Anforderungssperrmodus]** auf **[!UICONTROL Deaktiviert]**.
 
-   These settings are necessary for using the **[!UICONTROL Panoramic Media]** component in AEM.
+   Diese Einstellungen sind für die Verwendung der Komponente **[!UICONTROL Panoramamedien]** in AEM erforderlich.
 
-1. At the bottom of the **[!UICONTROL Image Server Publish]** page, on the left side, tap **[!UICONTROL Save]**.
+1. Tippen Sie unten auf der Seite **[!UICONTROL Image-Server-Veröffentlichung]** auf der linken Seite auf **[!UICONTROL Speichern]**.
 
-1. In the lower-right corner, tap **[!UICONTROL Close]**.
+1. Tippen Sie in der rechten unteren Ecke auf **[!UICONTROL Schließen]**.
 
-### Troubleshooting the Panoramic Media component {#troubleshooting-the-panoramic-media-wcm-component}
+### Fehlerbehebung bei der Komponente Panoramamedien {#troubleshooting-the-panoramic-media-wcm-component}
 
-If you dropped an image into the **[!UICONTROL Panoramic Media]** component in your WCM and the component placeholder collapsed, you may want to troubleshoot the following:
+Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramaische Medien]** in Ihrem WCM abgelegt haben und der Komponentenplatzhalter ausgeblendet ist, können Sie die folgenden Fehler beheben:
 
 * Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für *Maximale Größe des Antwortbildes* in [Konfigurieren von Dynamic Media Classic (Scene7)](#configuring-dynamic-media-classic-scene).
 
-* For an *Invalid lock* on the asset or *Parsing error* displayed on the page, check **[!UICONTROL Request Obfuscation Mode]** and **[!UICONTROL Request Locking Mode]** to ensure they are disabled.
-* For a tainted canvas error, setup a **[!UICONTROL Rule Set Definition File Path and Invalidate CTN]** for the previous requests for the image asset.
-* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. You can find the setting on the **[!UICONTROL Image Server Publish]** page. To access the page, see [Configuring Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
+* Aktivieren Sie für ein *Ungültiges Sperren* für das Asset oder *Analysefehler*, der auf der Seite angezeigt wird, **[!UICONTROL Abfrageverdeckungsmodus]** und **[!UICONTROL Anforderungssperrmodus]**, um sicherzustellen, dass sie deaktiviert sind.
+* Bei einem Fehler mit beschädigter Arbeitsfläche richten Sie für die vorherigen Anforderungen für das Bild-Asset einen **[!UICONTROL Pfad der Regeldefinitionsdatei und Ungültiges CTN]** ein.
+* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Die Einstellung finden Sie auf der Seite **[!UICONTROL Image Server Publish]**. Informationen zum Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
