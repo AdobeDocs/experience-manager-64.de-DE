@@ -21,7 +21,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
 | Suchfeld | Sucheigenschaftswerte |
 |---|---|
-| MIME-Typen | [!UICONTROL Bilder], [!UICONTROL Dokumente], [!UICONTROL Multimedia], [!UICONTROL Archive]usw. |
+| MIME-Typen | [!UICONTROL Bilder],  [!UICONTROL Dokumente],  [!UICONTROL Multimedia],  [!UICONTROL Archive] usw. |
 | [!UICONTROL Letzte Änderung] | Stunde, Tag, Woche, Monat oder Jahr |
 | [!UICONTROL Dateigröße] | Klein, Mittel oder Groß |
 | [!UICONTROL Veröffentlichungsstatus] | Veröffentlicht oder Veröffentlichung rückgängig gemacht |
@@ -34,7 +34,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 | Video-Codec | x264Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 | Video-Bitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
 | Audio-Codec | Libvorbis, Lame MP3, AAC Encoding.Value wird nur in den Metadaten der Videodarstellungen gespeichert. |
-| Audiobitrate       | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
+| Audiobitrate  | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
 
 1. Tippen Sie auf der **[!UICONTROL Experience Manager]**-Seite in der linken Seitenleiste auf **[!UICONTROL Assets]**.
 
