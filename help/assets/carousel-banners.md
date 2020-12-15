@@ -60,7 +60,7 @@ So schaffen Sie einen schnellen Einstieg:
    >
    >Wenn Sie AEM Assets und dynamische Medien verwenden, geben Sie Daten für Hotspots und Imagemaps manuell ein und fügen Sie dann die veröffentlichte URL oder den Einbettungscode in Ihrem Drittanbietersystem für Web Content Management ein.
 
-1. Optional: [Erstellen Sie eine Viewer-Vorgabe für Karussell-Sets](managing-viewer-presets.md) bei Bedarf.
+1. Optional: [Erstellen Sie eine Viewer-Vorgabe für Karussellsets](managing-viewer-presets.md) bei Bedarf.
 
    Wenn Sie ein Administrator sind, können Sie das Verhalten und das Erscheinungsbild des Karussells anpassen, indem Sie eine eigene Karussell-Viewer-Vorgabe erstellen. Der größte Vorteil besteht darin, dass diese benutzerdefinierte Viewer-Vorgabe für mehrere Karussells wiederverwendet werden kann. Benutzer haben jedoch auch die Möglichkeit, das Verhalten und das Erscheinungsbild des Karussells direkt bei der Erstellung anzupassen. Dies ist der bevorzugte Ansatz, wenn Sie ein spezifisches Design für ein bestimmtes Karussell wünschen.
 
@@ -68,35 +68,35 @@ So schaffen Sie einen schnellen Einstieg:
 
    Laden Sie Bildbanner hoch, die interaktiv sein sollen.
 
-1. [Erstellen Sie ein Karussell-Set](#creating-carousel-sets).
+1. [Erstellen Sie ein Karussellset](#creating-carousel-sets).
 
-   In Karussell-Sets navigieren Benutzer durch Bannerbilder und tippen auf Hotspots oder Imagemaps, um auf relevante Inhalte zuzugreifen.
+   In Karussellsets navigieren Benutzer durch Bannerbilder und tippen auf Hotspots oder Imagemaps, um auf relevante Inhalte zuzugreifen.
 
-   Um ein Karussell-Set in Assets zu erstellen, tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Karussell-Sets]**. Fügen Sie den Folien dann Assets hinzu und tippen Sie auf **[!UICONTROL Speichern]**. Sie können das Erscheinungsbild und Verhalten des Karussells auch direkt im Editor bearbeiten.
+   Um ein Karussellset in Assets zu erstellen, tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Karussellsets]**. Fügen Sie den Folien dann Assets hinzu und tippen Sie auf **[!UICONTROL Speichern]**. Sie können das Erscheinungsbild und Verhalten des Karussells auch direkt im Editor bearbeiten.
 
 1. [Fügen Sie Hotspots oder Imagemaps in einem Bildbanner hinzu.](#adding-hotspots-or-image-maps-to-an-image-banner)
 
-   Fügen Sie einem Bildbanner mindestens einen Hotspot oder eine Imagemap hinzu und weisen Sie allen von ihnen eine Aktion wie einen Link, eine Schnellansicht oder ein Experience Fragment zu. Nachdem Sie Hotspots oder Imagemaps hinzugefügt haben, schließen Sie diese Aufgabe ab, indem Sie das Karussell-Set veröffentlichen. Durch das Veröffentlichen wird der Einbettungscode erstellt, den Sie kopieren und auf die Einstiegsseite Ihrer Website anwenden können.
+   Fügen Sie einem Bildbanner mindestens einen Hotspot oder eine Imagemap hinzu und weisen Sie allen von ihnen eine Aktion wie einen Link, eine Schnellansicht oder ein Experience Fragment zu. Nachdem Sie Hotspots oder Imagemaps hinzugefügt haben, schließen Sie diese Aufgabe ab, indem Sie das Karussellset veröffentlichen. Durch das Veröffentlichen wird der Einbettungs-Code erstellt, den Sie kopieren und auf die Landingpage Ihrer Website anwenden können.
 
-   Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners) – Optional. Bei Bedarf können Sie eine Darstellung des Karussell-Sets anzeigen und dessen Interaktivität testen.
+   Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners) – Optional. Bei Bedarf können Sie eine Darstellung des Karussellsets anzeigen und dessen Interaktivität testen.
 
 1. [Veröffentlichen Sie Karussellbanner.](#publishing-carousel-banners)
 
-   Sie veröffentlichen ein Karussell-Set wie jedes andere Asset. In Assets, navigate to the Carousel Set and select it and tap or tap **[!UICONTROL Publish]**. Durch Veröffentlichen eines Karussell-Sets wird die URL und die Einbettungszeichenfolge aktiviert.
+   Sie veröffentlichen ein Karussellset wie jedes andere Asset. Navigieren Sie in Assets zum Karussellsatz, wählen Sie ihn aus und tippen oder tippen Sie auf **[!UICONTROL Veröffentlichen]**. Durch Veröffentlichen eines Karussellsets wird die URL und die Einbettungszeichenfolge aktiviert.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * [Fügen Sie ein Karussellbanner zu Ihrer Website-Seite hinzu.](#adding-a-carousel-banner-to-your-website-page) Sie können die Karussellbanner-URL oder den Einbettungs-Code hinzufügen, die oder den Sie auf die Website-Seite kopiert haben.
 
       * [Integrieren Sie das Karussellbanner in eine Schnellansicht.](#integrating-the-carousel-banner-with-an-existing-quickview) Wenn Sie ein Drittanbietersystem für Web Content Management verwenden, müssen Sie das neue Karussellbanner in der vorhandenen Schnellansichtsimplementierung auf Ihrer Website integrieren.
-   * [Fügen Sie ein Karussellbanner zu einer Website in AEM hinzu.](adding-dynamic-media-assets-to-pages.md) Wenn Sie AEM Sites-Kunde sind, können Sie das Karussell-Set direkt zur Seite in AEM hinzufügen, indem Sie die Komponente für interaktive Medien verwenden.
+   * [Fügen Sie ein Karussellbanner zu einer Website in AEM hinzu.](adding-dynamic-media-assets-to-pages.md) Wenn Sie AEM Sites-Kunde sind, können Sie das Karussellset direkt zur Seite in AEM hinzufügen, indem Sie die Komponente für interaktive Medien verwenden.
 
 
-If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel-sets). . Darüber hinaus können Sie [Eigenschaften von Karussell-Sets](/help/assets/managing-assets-touch-ui.md#editing-properties) anzeigen und bearbeiten.
+Informationen zum Bearbeiten von Karussellsätzen finden Sie unter [Bearbeiten von Karussellsätzen](#editing-carousel-sets). . Darüber hinaus können Sie [Eigenschaften von Karussellsets](/help/assets/managing-assets-touch-ui.md#editing-properties) anzeigen und bearbeiten.
 
 ## Ermitteln von Hotspot- und Imagemap-Variablen {#identifying-hotspot-and-image-map-variables}
 
-Ermitteln Sie zunächst die von der vorhandenen Schnellansichtsimplementierung verwendeten dynamische Variablen, damit Sie die Hotspots oder Imagemap-Daten beim Erstellen von Karussell-Sets in AEM Assets korrekt eingeben können.
+Ermitteln Sie zunächst die von der vorhandenen Schnellansichtsimplementierung verwendeten dynamische Variablen, damit Sie die Hotspots oder Imagemap-Daten beim Erstellen von Karussellsets in AEM Assets korrekt eingeben können.
 
 Beim Hinzufügen von Hotspots oder Imagemaps zu einem Bannerbild in AEM Assets müssen Sie jedem Hotspot und jeder Imagemap eine SKU und optional zusätzliche Variablen zuweisen. Mithilfe dieser Variablen werden Hotspots oder Imagemaps später Schnellansichtsinhalte zugeordnet.
 
@@ -110,31 +110,31 @@ Es ist wichtig, die Anzahl und den Typ der Variablen, denen Hotspot- oder Imagem
 
 Es gibt verschiedene Möglichkeiten, den für Hotspot- oder Imagemap-Daten zu verwendenden Variablensatz zu ermitteln,
 
-Manchmal ist es ausreichend, IT-Experten zu konsultieren, die für die vorhandene Schnellansichtsimplementierung verantwortlich sind. Diese kennen wahrscheinlich den Mindestsatz an Daten, die erforderlich sind, um die Schnellansicht im System zu ermitteln. In den meisten Fällen ist es jedoch auch möglich, einfach das vorhandene Verhalten des Front-End-Codes zu analysieren.
+Manchmal ist es ausreichend, IT-Experten zu konsultieren, die für die vorhandene Schnellansichtsimplementierung verantwortlich sind. Diese kennen wahrscheinlich den Mindestsatz an Daten, die erforderlich sind, um die Schnellansicht im System zu ermitteln. In den meisten Fällen ist es jedoch auch möglich, einfach das vorhandene Verhalten des Frontend-Codes zu analysieren.
 
 Der Großteil der Schnellansichtsimplementierungen verwendet das folgende Modell:
 
-* Benutzer aktiviert ein Benutzeroberflächenelement auf der Website. For example, clicking a **[!UICONTROL Quick View]** button.
-* Die Website sendet eine Ajax-Anforderung an das Back-End, um bei Bedarf die Schnellansichtsdaten oder -inhalte zu laden.
-* Die Schnellansichtsdaten werden in den Inhalt übersetzt, um für das Rendern auf der Webseite vorbereitet zu werden.
-* Schließlich zeigt der Front-End-Code diesen Inhalt visuell auf dem Bildschirm an.
+* Benutzer aktiviert ein Benutzeroberflächenelement auf der Website. Klicken Sie beispielsweise auf die Schaltfläche **[!UICONTROL Schnellere Ansicht]**.
+* Die Website sendet eine Ajax-Anfrage an das Backend, um bei Bedarf die Schnellansichtsdaten oder -inhalte zu laden.
+* Die Schnellansichtsdaten werden in den Inhalt übersetzt, um für das Rendern auf der Web-Seite vorbereitet zu werden.
+* Schließlich zeigt der Frontend-Code diesen Inhalt visuell auf dem Bildschirm an.
 
-Dann werden unterschiedliche Bereiche der vorhandenen Website besucht, auf denen die Schnellansichtsfunktion implementiert wird, die Schnellansicht wird ausgelöst und die Ajax-URL, die durch die Webseite zum Laden der Schnellansichtsdaten oder -inhalte gesendet wurde, wird erfasst.
+Dann werden unterschiedliche Bereiche der vorhandenen Website besucht, auf denen die Schnellansichtsfunktion implementiert wird, die Schnellansicht wird ausgelöst und die Ajax-URL, die durch die Web-Seite zum Laden der Schnellansichtsdaten oder -inhalte gesendet wurde, wird erfasst.
 
 Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Die folgenden Webbrowser beispielsweise umfassen Web-Inspektoren:
 
-* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows) or Command-Option-I (Mac) to open the Developer Tools panel, and then tap the **[!UICONTROL Network]** tab.
+* Um alle ausgehenden HTTP-Anforderungen in Google Chrome anzuzeigen, drücken Sie F12 (Windows) oder Command-Option-I (Mac), um das Bedienfeld &quot;Developer Tools&quot;zu öffnen, und tippen Sie dann auf die Registerkarte **[!UICONTROL Network]**.
 * In Firefox können Sie das Firebug-Plug-in aktivieren, indem Sie F12 (Windows) bzw. Befehlstaste + Wahltaste + I (Mac) drücken und die Registerkarte „Netz“ öffnen, oder Sie öffnen die Registerkarte „Netzwerk“ im integrierten Inspektor-Tool.
 
 Wenn die Netzwerküberwachung im Browser aktiviert ist, lösen Sie die Schnellansicht auf der Seite aus.
 
-Suchen Sie nun die Schnellansichts-Ajax-URL im Netzwerkprotokoll und kopieren Sie die aufgezeichnete URL für die zukünftige Analyse. In den meisten Fällen werden beim Auslösen der Schnellansicht zahlreiche Anforderungen an den Server gesendet. Normalerweise ist die Schnellansichts-Ajax-URL die erste in der Liste. Sie weist einen Teil oder Pfad mit einer komplexen Abfragezeichenfolge auf und ihr MIME-Typ lautet entweder `text/xml`, `text/html` oder `text/javascript`.
+Suchen Sie nun die Schnellansichts-Ajax-URL im Netzwerkprotokoll und kopieren Sie die aufgezeichnete URL für die zukünftige Analyse. In den meisten Fällen werden beim Auslösen der Schnellansicht zahlreiche Anfragen an den Server gesendet. Normalerweise ist die Schnellansichts-Ajax-URL die erste in der Liste. Sie weist einen Teil oder Pfad mit einer komplexen Abfragezeichenfolge auf und ihr MIME-Typ lautet entweder `text/xml`, `text/html` oder `text/javascript`.
 
 Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit verschiedenen Produktkategorien und -typen besuchen. Grund dafür ist, dass Schnellansichts-URLs möglicherweise Teile aufweisen, die für eine bestimmte Website-Kategorie häufig vorkommen, sich aber nur ändern, wenn Sie einen anderen Bereich der Website besuchen.
 
 Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der SKU-Wert der einzige Datenteil, den Sie benötigen, um dem Bannerbild Hotspots oder Imagemaps hinzuzufügen.
 
-In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farbcode, Größencode usw. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot- oder Imagemap-Datendefinition innerhalb der Karussellbanner-Funktion.
+In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farb-Code, Größen-Code usw. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot- oder Imagemap-Datendefinition innerhalb der Karussellbanner-Funktion.
 
 Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resultierenden Hotspot- oder Imagemap-Variablen:
 
@@ -178,43 +178,43 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 ## Hochladen von Bildbannern {#uploading-image-banners}
 
-Wenn Sie bereits die Bilder hochgeladen haben, die Sie verwenden möchten, fahren Sie mit dem nächsten Schritt [Erstellen von Karussell-Sets](#creating-carousel-sets) fort. Beachten Sie, dass die im Karussell verwendeten Bilder nach dem Aktivieren von Dynamic Media hochgeladen werden müssen.
+Wenn Sie bereits die Bilder hochgeladen haben, die Sie verwenden möchten, fahren Sie mit dem nächsten Schritt [Erstellen von Karussellsets](#creating-carousel-sets) fort. Beachten Sie, dass die im Karussell verwendeten Bilder nach dem Aktivieren von Dynamic Media hochgeladen werden müssen.
 
 Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md).
 
-## Erstellen von Karussell-Sets   {#creating-carousel-sets}
+## Erstellen von Karussellsets  {#creating-carousel-sets}
 
 >[!NOTE]
 >
 >Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **dam-users** hinzufügen kann.
 
-**So erstellen Sie ein Karussell-Set**:
+**So erstellen Sie ein Karussellset**:
 
-1. Navigieren Sie in Assets zu dem Ordner, in dem Sie das Karussell-Set erstellen möchten, und tippen Sie auf **[!UICONTROL Erstellen > Karussell-Set]**.
-1. On the **[!UICONTROL Carousel Banner Editor]** page, tap **[!UICONTROL Tap to open Asset Selector]** to select the image for your first slide.
+1. Navigieren Sie in Assets zu dem Ordner, in dem Sie das Karussellset erstellen möchten, und tippen Sie auf **[!UICONTROL Erstellen > Karussellset]**.
+1. Tippen Sie auf der Seite **[!UICONTROL Karussell-Banner-Editor]** auf **[!UICONTROL Tippen, um die Asset-Auswahl]** zu öffnen, um das Bild für die erste Folie auszuwählen.
 
-   On the **[!UICONTROL Carousel Banner Editor]** page, do either one of the following:
+   Führen Sie auf der Seite **[!UICONTROL Karussell-Banner-Editor]** einen der folgenden Schritte aus:
 
    * Tippen Sie oben links auf **[!UICONTROL Folie hinzufügen]**.
-   * Tippen Sie in der Mitte der Seite auf **[!UICONTROL Tippen, um den Asset-Wähler zu öffnen]**.
+   * Tippen Sie in der Mitte der Seite auf **[!UICONTROL Tippen, um die Asset-Auswahl zu öffnen]**.
 
    Tippen Sie zur Auswahl von Assets, die Sie in das Karussellset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol **[!UICONTROL Ansicht]** tippen und **[!UICONTROL Ansicht]**, **[!UICONTROL Ansicht]** oder **[!UICONTROL Liste-Ansicht]** auswählen.
 
    Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](working-with-selectors.md).
 
-1. Fügen Sie weitere Folien hinzu, bis Sie alle gewünschten Bilder für das Karussell-Set ausgewählt haben.
+1. Fügen Sie weitere Folien hinzu, bis Sie alle gewünschten Bilder für das Karussellset ausgewählt haben.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Ziehen Sie bei Bedarf die Folios, um die Bilder in der Liste neu anzuordnen.
-   * Um ein Bild zu löschen, wählen Sie es aus und tippen Sie in der Symbolleiste auf **[!UICONTROL Folie löschen]**. 
+   * Um ein Bild zu löschen, wählen Sie es aus und tippen Sie in der Symbolleiste auf **[!UICONTROL Folie löschen]**.
    * Um eine Vorgabe anzuwenden, tippen Sie oben rechts auf die Dropdownliste mit den Vorgaben. Wählen Sie anschließend eine Vorgabe aus, um sie auf das ganze Set anzuwenden.
 
-   To delete a slide, tap the slide, and tap **[!UICONTROL Delete Slide]** in the toolbar. Um eine Folie zu verschieben, tippen Sie auf das Symbol zur Neuanordnung und halten und bewegen Sie das Element an die gewünschte Position.
+   Um eine Folie zu löschen, tippen Sie auf die Folie und dann in der Symbolleiste auf **[!UICONTROL Folie]** löschen. Um eine Folie zu verschieben, tippen Sie auf das Symbol zur Neuanordnung und halten und bewegen Sie das Element an die gewünschte Position.
 
 1. Nachdem Sie die Bilder in den Folien hinzugefügt haben, können Sie einen Hotspot, eine Imagemap oder beides in die Bilder einfügen. Siehe [Hinzufügen von Hotspots oder Imagemaps](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Sie können das visuelle Design und das Verhalten von Karussell-Sets ändern, indem Sie auf die Registerkarten „Verhalten“ und „Darstellung“ tippen oder klicken und Anpassungen am Aussehen des Karussellbanners oder am Verhalten bestimmter Komponenten vornehmen. Weitere Informationen zum Verwenden des Viewer-Editors finden Sie unter [Verwalten von Viewer-Vorgaben](viewer-presets.md).
+1. Sie können das visuelle Design und das Verhalten von Karussellsets ändern, indem Sie auf die Registerkarten „Verhalten“ und „Darstellung“ tippen oder klicken und Anpassungen am Aussehen des Karussellbanners oder am Verhalten bestimmter Komponenten vornehmen. Weitere Informationen zum Verwenden des Viewer-Editors finden Sie unter [Verwalten von Viewer-Vorgaben](viewer-presets.md).
 
    >[!NOTE]
    >
@@ -223,16 +223,16 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
    >* Animation. Standardmäßig sind alle Folienübergänge Überblendungen. Sie können einen anderen Übergang auswählen.
    >* Stil der Schaltflächen Benutzer können die Banner durchlaufen, indem sie auf die jeweiligen Punkte oder Zahlen tippen. Sie können ändern, wo die Set-Indikatoren angezeigt werden (und ob es sich um einen numerischen oder Punktstil handelt). Sie können auch ihre Größe bestimmen.
    >* Ändern des Markierungsstils einer Imagemap oder des Symbols für Hotspots.
-   >* Wählen Sie vor dem Bearbeiten einer Viewer-Vorgabe das Format aus, auf dem die Vorgabe basieren soll. Wenn Sie diese Auswahl nicht treffen, wenn Sie mit dem Bearbeiten der Viewer-Vorgabe beginnen, werden alle Ihre Änderungen verworfen, wenn Sie eine andere Vorgabe festlegen. .
+   >* Wählen Sie vor dem Bearbeiten einer Viewer-Vorgabe das Format aus, auf dem die Vorgabe basieren soll. Wenn Sie diese Auswahl nicht treffen, wenn Sie mit dem Bearbeiten der Viewer-Vorgabe beginnen, werden alle Ihre Änderungen verworfen, wenn Sie eine andere Vorgabe festlegen..
 
 
    Sie können in einer Vorschau anzeigen, wie das Karussellbanner aussehen wird. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie fertig sind.
 
-## Adding hotspots or image maps to an Image Banner {#adding-hotspots-or-image-maps-to-an-image-banner}
+## Hinzufügen von Hotspots oder Imagemaps zu einem Bildbanner {#adding-hotspots-or-image-maps-to-an-image-banner}
 
-Sie können einem Banner mithilfe des Karussell-Set-Editors Hotspots oder Imagemaps hinzufügen.
+Sie können einem Banner mithilfe des Karussellset-Editors Hotspots oder Imagemaps hinzufügen.
 
 Beim Hinzufügen von Hotspots oder Imagemaps können Sie sie als eine Schnellansichts-Popup-Anzeige, als einen Hyperlink oder als Experience Fragment definieren.
 
@@ -244,7 +244,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
 Vergessen Sie nicht, Ihre Arbeit zu speichern, wenn Sie einem Bild Hotspots oder Imagemaps hinzufügen. **[!UICONTROL Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.]******
 
-When you finish creating your carousel banner, you can optionally use **[!UICONTROL Preview]** to see a representation of how your carousel banner will appear to customers.
+Wenn Sie mit der Erstellung des Karussell-Banners fertig sind, können Sie optional **[!UICONTROL Vorschau]** verwenden, um eine Darstellung der Darstellung Ihres Karussell-Banners für Ihre Kunden anzuzeigen.
 
 Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
 
@@ -252,7 +252,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
 >
 >Wenn Sie einem [interaktiven Bild](interactive-images.md) oder einem Bild für ein Karussellbanner Hotspots hinzufügen, werden die Hotspot-Informationen immer am selben Metadatenspeicherort gespeichert, der relativ zum Speicherort des Bildes ist, unabhängig davon, ob es sich um ein interaktives Bild oder um ein Karussellbanner handelt. Das bedeutet, dass Sie dasselbe Bild zusammen mit den definierten Hotspot-Daten in beiden Viewern einfach wiederverwenden können.
 >
->  Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussellbanner mit demselben Bild erstellen möchten. Stattdessen sollten Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
+>Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussellbanner mit demselben Bild erstellen möchten. Stattdessen sollten Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
 
 >[!NOTE]
 >
@@ -260,8 +260,8 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
 
 **So fügen Sie einem Bildbanner Hotspots hinzu**:
 
-1. Navigieren Sie in Assets zu dem Karussell-Set, das interaktiv werden soll.
-1. Wählen Sie das Karussell-Set aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
+1. Navigieren Sie in Assets zu dem Karussellset, das interaktiv werden soll.
+1. Wählen Sie das Karussellset aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie im Karussell-Viewer-Editor die Folie aus, die Sie interaktiv gestalten möchten.
 1. Tippen Sie in der Nähe der linken oberen Ecke der Seite auf **[!UICONTROL Hotspot]** oder **[!UICONTROL Imagemap]**.
 1. Führen Sie einen der folgenden Schritte aus:
@@ -271,35 +271,35 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
 
    Ziehen Sie den Hotspot oder die Imagemap ggf. an eine neue Position. Fügen Sie weitere Hotspots oder Imagemaps nach Bedarf hinzu.
 
-   Um einen Hotspot oder eine Image Map zu löschen, tippen Sie auf die Registerkarte **[!UICONTROL Aktionen]**. Wählen Sie unter der Überschrift **[!UICONTROL Maps und Hotspots]** aus dem Dropdownmenü **[!UICONTROL Ausgewählter Typ]** den Namen des Hotspots oder der Landkarte aus, den/die Sie entfernen möchten. Tippen Sie auf das **[!UICONTROL Papierkorb]**-Symbol neben dem Menü und dann auf **[!UICONTROL Löschen]**.
+   Um einen Hotspot oder eine Image Map zu löschen, tippen Sie auf die Registerkarte **[!UICONTROL Aktionen]**. Wählen Sie unter der Überschrift **[!UICONTROL Maps und Hotspots]** aus dem Dropdown-Menü **[!UICONTROL Ausgewählter Typ]** den Namen des Hotspots oder der Landkarte aus, den/die Sie entfernen möchten. Tippen Sie auf das **[!UICONTROL Papierkorb]**-Symbol neben dem Menü und dann auf **[!UICONTROL Löschen]**.
 
 1. Geben Sie im Textfeld „Name“ den Namen des Hotspots oder der Imagemap ein. Dieser Name wird auch in der Dropdownliste **[!UICONTROL Karten und Hotspots]** angezeigt. Wenn Sie einen Namen angeben, können Sie den Hotspot oder die Imagemap einfach erkennen, sollten Sie später Änderungen vornehmen.
 1. Führen Sie einen der folgenden Schritte auf der Registerkarte **[!UICONTROL Aktion]** aus:
 
    * Tippen Sie auf **[!UICONTROL Schnellansicht]**.
 
-      * If you are an AEM Sites and Ecommerce customer, tap the **[!UICONTROL Product Picker]** icon (magnifying glass) to open the **[!UICONTROL Select Product]** page. Tap the product you want to use, then tap the check mark in the upper-right corner of the page to return to the **[!UICONTROL Carousel Banner Editor]**.
-      * Wenn Sie kein AEM Sites- oder eCommerce-Kunde sind, gehen Sie wie folgt vor:
+      * Wenn Sie AEM Sites- und E-Commerce-Kunde sind, tippen Sie auf das Symbol **[!UICONTROL Produktauswahl]** (Lupe), um die Seite **[!UICONTROL Produkt auswählen]** zu öffnen. Tippen Sie auf das gewünschte Produkt und dann auf das Häkchen in der oberen rechten Ecke der Seite, um zum **[!UICONTROL Karussell-Banner-Editor]** zurückzukehren.
+      * Wenn Sie kein AEM Sites- oder E-Commerce-Kunde sind, gehen Sie wie folgt vor:
 
          * Lesen Sie [Ermitteln von Hotspot-Variablen](#identifying-hotspot-and-image-map-variables), da Sie diese Variablen ggf. definieren müssen.
-         * Geben Sie anschließend manuell den SKU-Wert ein. In the **[!UICONTROL SKU Value]** text field, type the product&#39;s SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System den Hotspot, auf den getippt wird, mit der Schnellansicht einer bestimmten SKU verbinden kann.
+         * Geben Sie anschließend manuell den SKU-Wert ein. Geben Sie im Textfeld **[!UICONTROL SKU-Wert]** die SKU (Stock Keeping Unit) des Produkts ein, die eine eindeutige Kennung für jedes einzelne Produkt oder jede Dienstleistung darstellt, das bzw. die Sie Angebot haben. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System den Hotspot, auf den getippt wird, mit der Schnellansicht einer bestimmten SKU verbinden kann.
          * (Optional) Wenn die Schnellansicht andere Variablen enthält, die Sie zur weiteren Identifikation eines Produkts benötigen, tippen Sie auf **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie eine zusätzliche Variable im Textfeld an. Beispielsweise ist `category=Mens` eine hinzugefügte Variable.
          * Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](working-with-selectors.md).
    * Tippen Sie auf **[!UICONTROL Hyperlink]**.
 
-      * If you are an AEM Sites customer, tap the **[!UICONTROL Site Selector]** icon (folder) to navigate to a URL.
+      * Wenn Sie AEM Sites-Kunde sind, tippen Sie auf das Symbol **[!UICONTROL Site-Auswahl]** (Ordner), um zu einer URL zu navigieren.
 
          >[!NOTE]
          >Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
 
-      * If you are a standalone customer, in the **[!UICONTROL HREF]** text field, specify the full URL path to a linked web page.
+      * Wenn Sie ein eigenständiger Kunde sind, geben Sie im Textfeld **[!UICONTROL HREF]** den vollständigen URL-Pfad zu einer verknüpften Webseite an.
 
          Vergessen Sie nicht anzugeben, ob der Link auf einer neuen Browser-Registerkarte (empfohlener Standard) oder auf derselben Registerkarte geöffnet werden soll.
 
          Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](working-with-selectors.md).
    * Tippen Sie auf **[!UICONTROL Experience Fragment]**.
 
-      * If you are an AEM Sites customer, tap the **[!UICONTROL Search]** icon (magnifying glass) to open the Experience Fragment page. Tap the Experience Fragment you want to use, then tap **[!UICONTROL Select]** in the upper-right corner of the page to return to the Hotspot management page.
+      * Wenn Sie AEM Sites-Kunde sind, tippen Sie auf das Symbol **[!UICONTROL Suchen]** (Lupe), um die Seite &quot;Erlebnisfragment&quot;zu öffnen. Tippen Sie auf das Erlebnisfragment, das Sie verwenden möchten, und tippen Sie dann oben rechts auf der Seite auf **[!UICONTROL Auswählen]**, um zur Hotspot-Verwaltungsseite zurückzukehren.
 
          Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
@@ -312,30 +312,30 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
    Sie können in einer Vorschau anzeigen, wie das Karussellbanner aussehen wird. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
-1. Veröffentlichen Sie das Karussell-Set. Durch das Veröffentlichen wird der Einbettungscode oder die URL erstellt, den/die Sie auf der Webseite verwenden können. Wenn Sie ein AEM Sites-Kunde sind, können Sie Ihrer Webseite das Karussell-Set direkt hinzufügen.
+1. Veröffentlichen Sie das Karussellset. Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, den/die Sie auf der Web-Seite verwenden können. Wenn Sie ein AEM Sites-Kunde sind, können Sie Ihrer Web-Seite das Karussellset direkt hinzufügen.
 
-   Informationen hierzu finden Sie unter [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
+   Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
-   Siehe [Hinzufügen eines Karussell-Sets zur Einstiegsseite Ihrer Website](#adding-a-carousel-banner-to-your-website-page).
+   Siehe [Hinzufügen eines Karussellsets zur Landingpage Ihrer Website](#adding-a-carousel-banner-to-your-website-page).
 
-## Bearbeiten von Karussell-Sets   {#editing-carousel-sets}
+## Bearbeiten von Karussellsets   {#editing-carousel-sets}
 
 >[!NOTE]
 >
 >Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
 
-Sie können mehrere Bearbeitungsaufgaben für Karussell-Sets ausführen, z. B.:
+Sie können mehrere Bearbeitungsaufgaben für Karussellsets ausführen, z. B.:
 
-* einem Karussell-Set Folien hinzufügen. Siehe auch [Arbeiten mit Selektoren](working-with-selectors.md).
-* die Anordnung der Folien im Karussell-Set ändern.
-* Assets im Karussell-Set löschen
+* einem Karussellset Folien hinzufügen. Siehe auch [Arbeiten mit Selektoren](working-with-selectors.md).
+* die Anordnung der Folien im Karussellset ändern.
+* Assets im Karussellset löschen
 * Viewer-Vorgaben anwenden.
-* das Karussell-Set löschen.
+* das Karussellset löschen.
 * Hotspots und Imagemaps hinzufügen oder bearbeiten. Siehe auch [Arbeiten mit Selektoren](working-with-selectors.md).
 
 Achten Sie darauf, dass beim Bearbeiten interaktiver Bilder mit Hotspots und beim Beschneiden des Bildes die Hotspots entfernt werden.
 
-**So bearbeiten Sie ein Karussell-Set**:
+**So bearbeiten Sie ein Karussellset**:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -343,20 +343,20 @@ Achten Sie darauf, dass beim Bearbeiten interaktiver Bilder mit Hotspots und bei
    * Bewegen Sie den Mauszeiger über ein Karussell-Asset, wählen Sie **[!UICONTROL Tippen]** (Kontrollkästchensymbol) und dann **[!UICONTROL Bearbeiten]** in der Symbolleiste.
    * Tippen Sie auf ein Karussell-Asset und dann links oben auf der Seite auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
 
-1. Um das Karussell-Set zu bearbeiten, führen Sie einen der folgenden Schritte aus:
+1. Um das Karussellset zu bearbeiten, führen Sie einen der folgenden Schritte aus:
 
-   * To add a slide, tap the **[!UICONTROL Add Slide]** icon then navigate to the asset you want to add to that slide and tap the checkmark.
+   * Um eine Folie hinzuzufügen, tippen Sie auf das Symbol **[!UICONTROL Hinzufügen Folie]**, navigieren Sie dann zu dem Asset, das Sie der Folie hinzufügen möchten, und tippen Sie auf das Häkchen.
    * Um die Folien neu anzuordnen, ziehen Sie eine Folie an eine neue Position (wählen Sie das Symbol für die Neuanordnung aus, um Elemente zu verschieben).
-   * To add a hotspot or image map, tap the hotspot or image map icons and see [adding hotspots and image maps](#adding-hotspots-or-image-maps-to-an-image-banner).
-   * Um das Erscheinungsbild und das Verhalten des Karussell-Sets zu bearbeiten, tippen Sie auf die Registerkarte **[!UICONTROL Erscheinungsbild]** oder **[!UICONTROL Verhalten]** und legen Sie dann die gewünschten Optionen fest.
+   * Um einen Hotspot oder eine Imagemap hinzuzufügen, tippen Sie auf das Hotspot- oder Imagemap-Symbol und lesen Sie [Hotspots und Imagemaps hinzufügen](#adding-hotspots-or-image-maps-to-an-image-banner).
+   * Um das Erscheinungsbild und das Verhalten des Karussellsets zu bearbeiten, tippen Sie auf die Registerkarte **[!UICONTROL Erscheinungsbild]** oder **[!UICONTROL Verhalten]** und legen Sie dann die gewünschten Optionen fest.
    * Um Hotspots oder Imagemaps zu bearbeiten, wählen Sie auf der entsprechenden Folie einen Hotspot oder eine Imagemap aus und nehmen Sie die erforderlichen Änderungen auf der Registerkarte **[!UICONTROL Aktionen]** vor.
    * Um eine Folie zu löschen, wählen Sie sie aus und tippen Sie in der Symbolleiste auf **[!UICONTROL Folie löschen]**.
    * Um eine Vorgabe anzuwenden, tippen Sie oben rechts auf der Seite auf die Dropdownliste der Vorgaben und wählen Sie eine Viewer-Vorgabe aus.
-   * Um ein ganzes Karussell-Set zu löschen, navigieren Sie zum Karussell-Set, wählen Sie es aus und tippen Sie auf **[!UICONTROL Löschen]**.
+   * Um ein ganzes Karussellset zu löschen, navigieren Sie zum Karussellset, wählen Sie es aus und tippen Sie auf **[!UICONTROL Löschen]**.
 
 ## (Optional) Anzeigen einer Vorschau für Karussellbanner {#optional-previewing-carousel-banners}
 
-You can use **[!UICONTROL Preview]** to see what your carousel banner will look like to customers and to test the carousel banners hotspots and image maps to ensure they are behaving as expected.
+Sie können **[!UICONTROL Vorschau]** verwenden, um zu sehen, wie Ihr Karussellbanner aussehen wird, und um die Hotspots und Imagemaps für Karussellbanner zu testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
 
 Wenn das Karussellbanner Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
@@ -364,7 +364,7 @@ Wenn das Karussellbanner Ihren Vorstellungen entspricht, können Sie es veröffe
 * Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
 * Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md).
 
-Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den Karussell-Editor (bevorzugte Methode) oder die **[!UICONTROL Viewer]**-Liste.
+Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den Karusselleditor (bevorzugte Methode) oder die **[!UICONTROL Viewer]**-Liste.
 
 **So erstellen Sie eine Vorschau von Karussellbannern**:
 
@@ -380,29 +380,29 @@ Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den
 **So zeigen Sie eine Vorschau für Karussellbanner über die Viewer-Liste an**:
 
 1. In **[!UICONTROL Assets]** navigieren Sie zu einem vorhandenen Karussellbanner, das Sie erstellt haben, und tippen Sie darauf, um das Banner zu öffnen.
-1. Near the upper-left corner of the **[!UICONTROL Preview]** page, tap the **[!UICONTROL Content]** icon.
+1. Tippen Sie links oben auf der Seite **[!UICONTROL Vorschau]** auf das Symbol **[!UICONTROL Inhalt]**.
 1. Tippen Sie in der **[!UICONTROL Viewer]**-Liste im Bedienfeld links auf der Seite auf den Namen der Viewer-Vorgabe für Karussellbanner, die Sie verwenden möchten.
 1. Tippen Sie auf die Hotspots oder Imagemaps im Bild, um die verbundenen Aktionen zu prüfen.
 
 ## Veröffentlichen von Karussellbannern {#publishing-carousel-banners}
 
-Sie müssen das Karussell veröffentlichen, um es verwenden zu können. Durch Veröffentlichen eines Karussell-Sets werden die URL und der Einbettungs-Code aktiviert. Außerdem wird das Karussell in der Dynamic Media-Cloud veröffentlicht, die für skalierbare und leistungsfähige Bereitstellung in ein CDN integriert ist.
+Sie müssen das Karussell veröffentlichen, um es verwenden zu können. Durch Veröffentlichen eines Karussellsets werden die URL und der Einbettungs-Code aktiviert. Außerdem wird das Karussell in der Dynamic Media-Cloud veröffentlicht, die für skalierbare und leistungsfähige Bereitstellung in ein CDN integriert ist.
 
 Wenn Sie ein vorhandenes interaktives Bild mit Hotspots für Ihr Karussellbanner verwenden, müssen Sie das interaktive Bild separat veröffentlichen, nachdem Sie das Karussellbanner veröffentlicht haben.
 
 Wenn Sie ein bereits vorhandenes und veröffentlichtes interaktives Bild ändern, das Sie in einem Karussellbanner verwenden, müssen Sie das interaktive Bild veröffentlichen, bevor die Änderungen im Karussellbanner sichtbar werden.
 
-Unter [Veröffentlichen von Dynamic Media-Assets ](publishing-dynamicmedia-assets.md) finden sie Informationen zum Veröffentlichen von Karussellbannern.
+Unter [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md) finden sie Informationen zum Veröffentlichen von Karussellbannern.
 
 ## Hinzufügen eines Karussellbanners zu Ihrer Website {#adding-a-carousel-banner-to-your-website-page}
 
-Nachdem Sie Bannerbilder hochgeladen haben, um ein Karussell zu erstellen, dem Banner Hotspots und/oder Imagemaps hinzugefügt und das Karussell-Set veröffentlicht haben, können Sie es jetzt einer vorhandenen Website hinzufügen.
+Nachdem Sie Bannerbilder hochgeladen haben, um ein Karussell zu erstellen, dem Banner Hotspots und/oder Imagemaps hinzugefügt und das Karussellset veröffentlicht haben, können Sie es jetzt einer vorhandenen Website hinzufügen.
 
 Wenn Sie AEM Sites-Kunde sind, können Sie das Karussellbanner direkt Ihrer Seite hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md).
 
 Wenn Sie jedoch nur AEM Assets verwenden, können Sie das Karussellbanner manuell der Landingpage Ihrer Website hinzufügen, wie im folgenden Abschnitt beschrieben.
 
-1. Kopieren Sie den Einbettungs-Code des veröffentlichten Karussell-Sets.
+1. Kopieren Sie den Einbettungs-Code des veröffentlichten Karussellsets.
 
    Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md).
 
@@ -410,42 +410,42 @@ Wenn Sie jedoch nur AEM Assets verwenden, können Sie das Karussellbanner manuel
 
    Der kopierte Einbettungs-Code ist responsiv und sollte sich automatisch an den Einbettungsbereich der Seite anpassen.
 
-## Integrating the Carousel Banner with an existing Quickview {#integrating-the-carousel-banner-with-an-existing-quickview}
+## Karussell-Banner mit einer vorhandenen QuickView {#integrating-the-carousel-banner-with-an-existing-quickview} integrieren
 
 Diese Aufgabe gilt nur, wenn Sie ein eigenständiger AEM Assets-Kunde sind.
 
-Der letzte Schritt in diesem Prozess ist die Integration des Karussellbanners in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür höchstwahrscheinlich die Unterstützung eines Front-End-IT-Mitarbeiters nötig ist.
+Der letzte Schritt in diesem Prozess ist die Integration des Karussellbanners in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür höchstwahrscheinlich die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
 
-Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette von untereinander verknüpften Aktionen dar, die auf der Webseite in der folgenden Reihenfolge stattfinden:
+Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette von untereinander verknüpften Aktionen dar, die auf der Web-Seite in der folgenden Reihenfolge stattfinden:
 
 1. Ein Benutzer löst ein Element auf der Benutzeroberfläche Ihrer Website aus.
-1. Der Front-End-Code ruft anhand des in Schritt 1 ausgelösten Benutzeroberflächenelements eine Schnellansichts-URL auf.
-1. Der Front-End-Code sendet mithilfe der in Schritt 2 abgerufenen URL eine Ajax-Anforderung.
-1. Die Back-End-Logik gibt dem Front-End-Code die entsprechenden Schnellansichtsdaten oder -inhalte zurück.
-1. Der Front-End-Code lädt die Schnellansichtsdaten oder -inhalte.
-1. Optional wandelt der Front-End-Code die geladenen Schnellansichtsdaten in eine HTML-Darstellung um.
-1. Der Front-End-Code zeigt ein modales Dialogfeld an und rendert den HTML-Inhalt auf dem Bildschirm für den Endbenutzer.
+1. Der Frontend-Code ruft anhand des in Schritt 1 ausgelösten Benutzeroberflächenelements eine Schnellansichts-URL auf.
+1. Der Frontend-Code sendet mithilfe der in Schritt 2 abgerufenen URL eine Ajax-Anfrage.
+1. Die Backend-Logik gibt dem Frontend-Code die entsprechenden Schnellansichtsdaten oder -inhalte zurück.
+1. Der Frontend-Code lädt die Schnellansichtsdaten oder -inhalte.
+1. Optional wandelt der Frontend-Code die geladenen Schnellansichtsdaten in eine HTML-Darstellung um.
+1. Der Frontend-Code zeigt ein modales Dialogfeld an und rendert den HTML-Inhalt auf dem Bildschirm für den Endbenutzer.
 
-Diese Aufrufe stellen möglicherweise keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Webseitenlogik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
+Diese Aufrufe stellen möglicherweise keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Web-Seitenlogik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 
-Sobald das interaktive Karussellbanner Schritt 1 und teilweise Schritt 2 ersetzt, sofern ein Benutzer auf einen Hotspot oder eine Imagemap im Karussellbanner klickt, wird eine solche Benutzerinteraktion durch den Viewer verarbeitet. Der Viewer gibt ein Ereignis an die Webseite zurück, das die gesamten Hotspot- oder Imagemap-Daten enthält, die zuvor hinzugefügt wurden.
+Sobald das interaktive Karussellbanner Schritt 1 und teilweise Schritt 2 ersetzt, sofern ein Benutzer auf einen Hotspot oder eine Imagemap im Karussellbanner klickt, wird eine solche Benutzerinteraktion durch den Viewer verarbeitet. Der Viewer gibt ein Ereignis an die Web-Seite zurück, das die gesamten Hotspot- oder Imagemap-Daten enthält, die zuvor hinzugefügt wurden.
 
-In einem solchen Ereignishandler nimmt der Front-End-Code Folgendes vor:
+In einem solchen Ereignishandler nimmt der Frontend-Code Folgendes vor:
 
 * Er lauscht am Ereignis, das durch das Karussellbanner ausgegeben wird.
 * Er erstellt eine Schnellansichts-URL anhand der Hotspot- oder Imagemap-Daten.
-* Er löst den Schnellansichts-Ladevorgang vom Back-End aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
+* Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
-Der von AEM Assets zurückgegebene Einbettungscode verfügt über einen einsatzbereiten Ereignishandler, der auskommentiert ist.
+Der von AEM Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler, der auskommentiert ist.
 
-Daher ist es nur erforderlich, die Auskommentierung des Codes aufzuheben und den Platzhalter-Handlertext durch den Code zu ersetzen, der für die bestimmte Webseite spezifisch ist.
+Daher ist es nur erforderlich, die Auskommentierung des Codes aufzuheben und den Platzhalter-Handlertext durch den Code zu ersetzen, der für die bestimmte Web-Seite spezifisch ist.
 
 Der Prozess der Erstellung der Schnellansichts-URL ist im Prinzip das Gegenteil des Prozesses, der verwendet wird, um die zuvor erläuterten Hotspot-und Imagemap-Variablen zu ermitteln.
 
 Siehe [Ermitteln von Hotspot- und Imagemap-Variablen](#identifying-hotspot-and-image-map-variables).
 
-Der letzte Schritt besteht darin, die Schnellansichts-URL auszulösen, und für das Aktivieren des Schnellansichtsbereichs ist höchstwahrscheinlich die Unterstützung einer Front-End-IT-Person aus Ihrer IT-Abteilung erforderlich. Sie verfügt am ehesten über das entsprechende Fachwissen, um die Schnellansichtsimplementierung aus dem entsprechenden Schritt entsprechend auszulösen, um über eine einsatzbereite Schnellansichts-URL zu verfügen.
+Der letzte Schritt besteht darin, die Schnellansichts-URL auszulösen, und für das Aktivieren des Schnellansichtsbereichs ist höchstwahrscheinlich die Unterstützung einer Frontend-IT-Person aus Ihrer IT-Abteilung erforderlich. Sie verfügt am ehesten über das entsprechende Fachwissen, um die Schnellansichtsimplementierung aus dem entsprechenden Schritt entsprechend auszulösen, um über eine einsatzbereite Schnellansichts-URL zu verfügen.
 
-## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups} 
+## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups}
 
 Siehe [Popups mithilfe von benutzerspezifischen Schnellansichten erstellen](custom-pop-ups.md).
