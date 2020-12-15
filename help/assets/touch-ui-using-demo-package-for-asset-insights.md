@@ -17,7 +17,7 @@ Mithilfe des Demopakets können Sie Adobe Asset Insights aktivieren, um Daten au
 
 ## Verwenden von AEM Asset Insights mit Beispiel-Webseiten  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configure Asset Insights using the instructions in [Configuring Asset Insights](touch-ui-configuring-asset-insights.md).
+1. Konfigurieren Sie Asset Insights mithilfe der Anweisungen unter [Konfigurieren von Asset Insights](touch-ui-configuring-asset-insights.md).
 1. Laden Sie das AEM Assets-Beispielpaket unten herunter und installieren Sie das Paket von CRXDE Package Manager.
 
    [Datei laden](assets/insightsdemo.zip)
