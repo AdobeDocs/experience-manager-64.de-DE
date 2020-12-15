@@ -11,7 +11,7 @@ ht-degree: 75%
 ---
 
 
-# Bulk metadata import and export {#bulk-metadata-import-and-export}
+# Massenmetadaten importieren und exportieren {#bulk-metadata-import-and-export}
 
 Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
@@ -27,15 +27,15 @@ Gehen Sie wie folgt vor, um Metadaten stapelweise zu importieren:
 
 1. Navigieren Sie zur Benutzeroberfläche „Assets“ und tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
-1. On the **[!UICONTROL Metadata Import]** page, tap/click the **[!UICONTROL Select File]**.  Wählen Sie die CSV-Datei mit den Metadaten aus.
+1. Tippen Sie auf der Seite **[!UICONTROL Metadatenimport]** auf **[!UICONTROL Datei]** auswählen/klicken.  Wählen Sie die CSV-Datei mit den Metadaten aus.
 1. Stellen Sie sicher, dass die CSV-Datei die folgenden Parameter enthält:
 
    | Metadaten-Importparameter | Beschreibung |
    |:---|:---|
    | [!UICONTROL Batch-Größe] | Anzahl der Assets in einem Batch, für die Metadaten importiert werden sollen. Der Standardwert ist 50. Der Wert darf maximal 100 betragen. |
-   | [!UICONTROL Feldtrennzeichen] | Default value is `,` – a comma. Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
-   | [!UICONTROL Mehrfachtrennzeichen] | Trennzeichen für Metadatenwerte. Default value is `|` – a pipe. |
-   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. When set to true and default Launcher settings are in effect for the `DAM Metadata WriteBack Workflow` (that writes metadata to the binary XMP data). Die Aktivierung der Workflows hat Auswirkungen auf die Leistung des Systems. |
+   | [!UICONTROL Feldtrennzeichen] | Der Standardwert ist `,` - ein Komma. Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
+   | [!UICONTROL Mehrfachtrennzeichen] | Trennzeichen für Metadatenwerte. Der Standardwert ist `|` - ein Rohr. |
+   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Bei Festlegung auf &quot;true&quot;sind die standardmäßigen Launcher-Einstellungen für `DAM Metadata WriteBack Workflow` (das Metadaten in die binären XMP schreibt) in Kraft. Die Aktivierung der Workflows hat Auswirkungen auf die Leistung des Systems. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
@@ -61,12 +61,12 @@ Gehen Sie wie folgt vor, um Metadaten mehrerer Assets stapelweise zu exportieren
 
 1. Wählen Sie einen Asset-Ordner aus, der Assets enthält, für die Sie Metadaten exportieren möchten. Wählen Sie in der Symbolleiste **[!UICONTROL Metadaten exportieren]** aus.
 
-1. In the [!UICONTROL Metadata Export] dialog, specify a name for the CSV file. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
+1. Geben Sie im Dialogfeld [!UICONTROL Metadatenexport] einen Namen für die CSV-Datei an. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 
 1. Wählen Sie die gewünschten Optionen aus. Geben Sie einen Dateinamen und ggf. ein Datum an.
-1. In the **[!UICONTROL Properties to be exported]**, specify whether you want to export all or specific properties. If you choose **[!UICONTROL Selective]** properties to be exported, add the desired properties.
+1. Geben Sie unter **[!UICONTROL Zu exportierende Eigenschaften]** an, ob Sie alle oder bestimmte Eigenschaften exportieren möchten. Wenn Sie die zu exportierenden **[!UICONTROL Selektive]**-Eigenschaften auswählen, fügen Sie die gewünschten Eigenschaften hinzu.
 
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Exportieren]**. Sie erhalten eine Meldung, die bestätigt, dass die Metadaten exportiert wurden. Schließen Sie die Meldung.
 
