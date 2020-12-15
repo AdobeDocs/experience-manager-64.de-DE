@@ -22,7 +22,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
 
 Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher hauptsächlich über die **[!UICONTROL Assets-Konsole]** verwaltet.
 
@@ -30,7 +30,7 @@ Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher haupts
 >
 >Inhaltsfragmente werden dann für erstellte Seiten verwendet. Weitere Informationen finden Sie unter [Seitenerstellung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Erstellen von Inhaltsfragmenten       {#creating-content-fragments}
+## Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
@@ -97,7 +97,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
    * Speichern Sie das Fragment als ZIP-Datei. Sie können festlegen, ob die betreffenden Elemente, Varianten und Metadaten enthalten sein sollen.
 
 * **[!UICONTROL Erstellen]**
-* **[!UICONTROL Auschecken]**
+* **[!UICONTROL Checkout]**
 * **[!UICONTROL Eigenschaften]**
 
    * Ermöglicht das Anzeigen bzw. Bearbeiten der Metadaten des Fragments.
@@ -120,9 +120,9 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](managing-assets-touch-ui.md) and/or the [desktop app](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html).
+>Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder die [Desktop-App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html).
 
-## Öffnen des Fragment-Editors {#opening-the-fragment-editor}
+## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
 So öffnen Sie ein Fragment zur Bearbeitung:
 
@@ -131,12 +131,12 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
 1. Navigieren Sie in der Konsole **[!UICONTROL Assets]** zum Speicherort des gewünschten Inhaltsfragments.
-1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte: 
+1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **[!UICONTROL Bearbeiten]** aus.
 
-   Der Fragment-Editor wird geöffnet:
+   Der Fragmenteditor wird geöffnet:
 
    ![cfm-6420-18](assets/cfm-6420-18.png)
 
@@ -157,23 +157,23 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    ![cfm-10](assets/cfm-10.png)
 
-1. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **[!UICONTROL Speichern]** oder **[!UICONTROL Abbrechen]**. 
+1. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **[!UICONTROL Speichern]** oder **[!UICONTROL Abbrechen]**.
 
    >[!NOTE]
    >
    >Sowohl **[!UICONTROL Speichern]** als auch **[!UICONTROL Abbrechen]** schließen den Editor – siehe [Speichern, Abbrechen und Versionen](#save-cancel-and-versions) für ausführliche Informationen zur Funktionsweise beider Optionen für Inhaltsfragmente.
 
-## Speichern, Abbrechen und Versionen        {#save-cancel-and-versions}
+## Speichern, Abbrechen und Versionen   {#save-cancel-and-versions}
 
 >[!NOTE]
 >
->Versionen können [über die Timeline auch erstellt, verglichen und zurückgesetzt werden](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
+>Versionen können [über die Zeitleiste auch erstellt, verglichen und zurückgesetzt werden](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
 
-Der Editor bietet zwei Optionen: 
+Der Editor bietet zwei Optionen:
 
 * **[!UICONTROL Speichern]**
 
-   Die aktuellen Änderungen werden gespeichert und der Editor wird beendet. 
+   Die aktuellen Änderungen werden gespeichert und der Editor wird beendet.
 
    >[!CAUTION]
    >
@@ -181,20 +181,20 @@ Der Editor bietet zwei Optionen:
 
    >[!NOTE]
    >
-   >Es ist möglich, im Fragment-Editor zu bleiben und vor Auswahl von **[!UICONTROL Speichern]** eine Reihe von Änderungen vorzunehmen. 
+   >Es ist möglich, im Fragmenteditor zu bleiben und vor Auswahl von **[!UICONTROL Speichern]** eine Reihe von Änderungen vorzunehmen.
 
    >[!CAUTION]
    >
-   >Die Option **[!UICONTROL Speichern]** speichert nicht nur einfach Ihre Änderungen, sondern aktualisiert auch alle Verweise und stellt sicher, dass der Dispatcher nach Bedarf geleert wird.  Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden.  Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden. 
+   >Die Option **[!UICONTROL Speichern]** speichert nicht nur einfach Ihre Änderungen, sondern aktualisiert auch alle Verweise und stellt sicher, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
    >
    >
-   >Beachten Sie das, wenn Sie die Option **[!UICONTROL Speichern]** auswählen und den Fragment-Editor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern. 
+   >Beachten Sie das, wenn Sie die Option **[!UICONTROL Speichern]** auswählen und den Fragmenteditor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
 
 * **[!UICONTROL Abbrechen]**
 
-   Der Editor wird beendet und die letzten Änderungen werden nicht gespeichert. 
+   Der Editor wird beendet und die letzten Änderungen werden nicht gespeichert.
 
-Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte wiederhergestellt werden können, falls Sie Ihre Änderungen über **[!UICONTROL Abbrechen]** verwerfen: 
+Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte wiederhergestellt werden können, falls Sie Ihre Änderungen über **[!UICONTROL Abbrechen]** verwerfen:
 
 1. Wenn ein Inhaltsfragment zur Bearbeitung geöffnet ist, überprüft AEM, ob ein Cookie-basiertes Token vorliegt, das angibt, ob eine *Bearbeitungssitzung* vorhanden ist:
 
@@ -218,29 +218,29 @@ Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit
 
 Wenn Sie das Fragment geöffnet haben, können Sie die Registerkarte [Varianten](content-fragments-variations.md) verwenden, um Ihren Inhalt zu erstellen.
 
-## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments       {#creating-and-managing-variations-within-your-fragment}
+## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments   {#creating-and-managing-variations-within-your-fragment}
 
-Sobald Sie den Master-Inhalt erstellt haben, können Sie [Varianten](content-fragments-variations.md) dieses Inhalts erstellen und verwalten.
+Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](content-fragments-variations.md) dieses Inhalts erstellen und verwalten.
 
-## Verknüpfen von Inhalt mit Ihrem Fragment       {#associating-content-with-your-fragment}
+## Verknüpfen von Inhalt mit Ihrem Fragment   {#associating-content-with-your-fragment}
 
 Sie können auch Inhalt mit einem Fragment [verknüpfen](content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
 
-## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments       {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Sie können die Eigenschaften eines Fragments über die Registerkarte [[!UICONTROL Metadaten]](content-fragments-metadata.md) anzeigen und bearbeiten.
 
-## Timeline für Inhaltsfragmente       {#timeline-for-content-fragments}
+## Zeitleiste für Inhaltsfragmente   {#timeline-for-content-fragments}
 
-Neben den Standardoptionen enthält die [Timeline](managing-assets-touch-ui.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
+Neben den Standardoptionen enthält die [Zeitleiste](managing-assets-touch-ui.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
 * Anzeigen von Informationen zu Versionen, Kommentaren und Anmerkungen
 * Aktionen für Versionen
 
-   * **[[!UICONTROL Auf diese Version zurücksetzen]](#reverting-to-a-version)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
+   * **[[!UICONTROL Auf diese Version zurück]](#reverting-to-a-version)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
    * **[[!UICONTROL Mit aktueller Version vergleichen]](#comparing-fragment-versions)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
    * **[!UICONTROL Beschriftung]** und/oder **[!UICONTROL Kommentar]** hinzufügen (ein vorhandenes Fragment und eine bestimmte Version auswählen)
-   * **[!UICONTROL Als Version speichern]** (ein vorhandenes Fragment und dann den Pfeil nach oben am unteren Rand der Timeline auswählen)
+   * **[!UICONTROL Als Version speichern]** (ein vorhandenes Fragment und dann den Pfeil nach oben am unteren Rand der Zeitleiste auswählen)
 
 * Aktionen für Anmerkungen
 
@@ -251,14 +251,14 @@ Neben den Standardoptionen enthält die [Timeline](managing-assets-touch-ui.md#t
 >Kommentare sind:
 >
 >* Standardfunktionen für alle Assets
->* In der Timeline erstellt worden
+>* In der Zeitleiste erstellt worden
 >* Mit dem Fragment-Asset verbunden
 
 >
 >
 Anmerkungen (für Inhaltsfragmente) sind:
 >
->* Im Fragment-Editor eingegeben worden
+>* Im Fragmenteditor eingegeben worden
 >* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 
 
@@ -268,7 +268,7 @@ Beispiel:
 
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
-Die Aktion **[!UICONTROL Mit aktueller Version vergleichen]** ist in der [[!UICONTROL Timeline] verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
+Die Aktion **[!UICONTROL Mit aktueller Version vergleichen]** ist in der [[!UICONTROL Zeitleiste] verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
 
 Folgendes wird geöffnet:
 
@@ -298,9 +298,9 @@ Sie werden nebeneinander angezeigt:
 
 Sie können eine frühere Version wiederherstellen.
 
-* Direkt über die [[!UICONTROL Timeline]](content-fragments-managing.md#timeline-for-content-fragments).
+* Direkt über die [[!UICONTROL Zeitleiste]](content-fragments-managing.md#timeline-for-content-fragments).
 
-   Wählen Sie die gewünschte Version und dann die Aktion **[!UICONTROL Auf diese Version zurücksetzen]** aus.
+   Wählen Sie die gewünschte Version und dann die Aktion **[!UICONTROL Auf diese Version zurück]** aus.
 
 * Beim [Vergleichen einer Version mit der aktuellen Version](content-fragments-managing.md#comparing-fragment-versions) können Sie die ausgewählte Version **[!UICONTROL wiederherstellen]**.
 
