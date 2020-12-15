@@ -99,7 +99,7 @@ Die intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandenen Bild
 
 Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?](#am-i-eligible-to-use-smart-imaging), um die Voraussetzungen für die intelligente Bildbearbeitung zu verstehen.
 
-## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?      {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?       {#does-smart-imaging-working-with-https-how-about-http}
 
 Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
 
