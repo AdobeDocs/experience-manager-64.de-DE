@@ -21,7 +21,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
 
 Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfragmente](content-fragments.md).
 
@@ -29,19 +29,19 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 
 >[!CAUTION]
 >
->If you do not enable **[!UICONTROL Content Fragment Models]**, the **[!UICONTROL Create]** option will not be available for creating new models.
+>Wenn Sie **[!UICONTROL Inhaltsfragmentmodelle]** nicht aktivieren, steht die Option **[!UICONTROL Erstellen]** nicht zur Erstellung neuer Modelle zur Verfügung.
 
 Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
 * Aktivieren Sie die Verwendung von Inhaltsfragmentmodellen im Konfigurations-Manager
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an
 
-### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
+### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager    {#enable-content-fragment-models-in-configuration-manager}
 
 Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-model), **müssen** Sie Inhaltsfragmentmodelle zunächst über Configuration Manager aktivieren:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** und öffnen Sie dann den **[!UICONTROL Konfigurations-Browser]**.
-   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+   * Weitere Informationen finden Sie in der Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md).[
 1. Wählen Sie den entsprechenden Speicherort für Ihre Web-Seite aus.
 1. Öffnen Sie über **[!UICONTROL Erstellen]** das Dialogfeld, in dem Sie:
 
@@ -74,7 +74,7 @@ Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbare
 
 1. Speichern Sie das leere Modell über **[!UICONTROL Erstellen]**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **[!UICONTROL Öffnen]** direkt bearbeiten oder über **[!UICONTROL Fertig]** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells   {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells    {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehenden Inhaltsmodells. Mit dem Modell-Editor können Sie die erforderlichen Felder hinzufügen und konfigurieren:
 
@@ -94,7 +94,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 
    >[!NOTE]
    >
-   >When a field is **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&amp;ast;**).
+   >Wenn ein Feld **Erforderlich** ist, wird die im linken Bereich angegebene **Beschriftung** mit einem Sternchen (**&amp;ast;**) gekennzeichnet.
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
@@ -135,7 +135,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
    >
    >Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells    {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
