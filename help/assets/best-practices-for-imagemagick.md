@@ -21,13 +21,13 @@ Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheran
 
 >[!NOTE]
 >
->Wenn Sie AEM für Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie eine große Menge großer PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
+>Wenn Sie AEM für Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie planen, viele große PSD- oder PSB-Dateien zu verarbeiten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
 
 ## Installieren von ImageMagick {#installing-imagemagick}
 
 Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssysteme verfügbar. Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
 
-1. Download the appropriate [ImageMagick installation files](https://www.imagemagick.org/script/download.php) for your operating system.
+1. Laden Sie die entsprechenden [ImageMagick-Installationsdateien](https://www.imagemagick.org/script/download.php) für Ihr Betriebssystem herunter.
 1. Um ImageMagick auf der Festplatte zu installieren, auf der der AEM-Server gehostet wird, starten Sie die Installationsdatei.
 
 1. Legen Sie die Path-Umgebungsvariable auf das ImageMagick-Installationsverzeichnis fest.
@@ -35,11 +35,11 @@ Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssyste
 
 ## Einrichten eines Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
 
-Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Perform these steps to generate a flipped image and thumbnails (140x100, 48x48, 319x319, and 1280x1280) each time you add a JPEG image file to `/content/dam` on the AEM server:
+Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Führen Sie die folgenden Schritte aus, um jedes Mal, wenn Sie eine JPEG-Bilddatei zu `/content/dam` auf dem AEM Server hinzufügen, ein gedrehtes Bild und Miniaturansichten (140 x 100, 48 x 48, 319 x 319 und 1280 x 1280) zu generieren:
 
-1. On the AEM server, go to the Workflow console (`https://[aem_server]:[Port]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
-1. From the **[!UICONTROL DAM Update Asset]** workflow model, open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step.
-1. In the **[!UICONTROL Arguments tab]**, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
+1. Rufen Sie auf dem AEM Server die Workflow-Konsole (`https://[aem_server]:[Port]/workflow`) auf und öffnen Sie das Workflow-Modell **[!UICONTROL DAM-Update-Asset]**.
+1. Öffnen Sie im Workflow-Modell **[!UICONTROL DAM Update Asset]** den Schritt **[!UICONTROL EPS-Miniaturansichten (powered by ImageMagick)]**.
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Argumente]** `image/jpeg` der Liste **[!UICONTROL Mime-Typen]** hinzu.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
@@ -47,11 +47,11 @@ Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfal
 
    `convert ./${filename} -flip ./${basename}.flipped.jpg`
 
-1. Select the **[!UICONTROL Delete Generated Rendition]** and **[!UICONTROL Generate Web Rendition]** flags.
+1. Wählen Sie die Flags **[!UICONTROL Generierte Darstellung löschen]** und **[!UICONTROL Webwiedergabe erstellen]** aus.
 
    ![select_flags](assets/select_flags.png)
 
-1. Legen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** die Details für die Ausgabedarstellung mit 1280x1280 Pixel fest. In addition, specify i *mage/jpeg* in the **[!UICONTROL Mimetype]** box.
+1. Legen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** die Details für die Ausgabedarstellung mit 1280x1280 Pixel fest. Geben Sie außerdem i *mage/jpeg* im Feld **[!UICONTROL Mimetype]** an.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
@@ -59,15 +59,15 @@ Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfal
 
    >[!NOTE]
    >
-   >The `convert` command may not run with certain Windows versions (for example Windows SE), because it conflicts with the native `convert` utility that is part of Windows installation. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Programm an. Geben Sie zum Beispiel Folgendes an:
+   >Der Befehl `convert` wird möglicherweise nicht mit bestimmten Windows-Versionen (z. B. Windows SE) ausgeführt, da er mit dem nativen Dienstprogramm `convert` in Konflikt steht, das Teil der Windows-Installation ist. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Programm an. Geben Sie zum Beispiel Folgendes an:
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. Open the **[!UICONTROL Process Thumbnails]** step, and add the MIME type `image/jpeg` under **[!UICONTROL Skip Mime Types]**.
+1. Öffnen Sie den Schritt **[!UICONTROL Prozessminiaturen]** und fügen Sie den MIME-Typ `image/jpeg` unter **[!UICONTROL MIME-Typen überspringen]** hinzu.
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Tippen/klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** den MIME-Typ `image/jpeg` unter **[!UICONTROL Liste überspringen]** hinzu. Tippen/klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -82,8 +82,8 @@ Darüber hinaus sind verschiedene Bildverarbeitungs-Plug-ins von der ImageMagick
 
 Wenn Sie ImageMagick oder eine betroffene Bibliothek verwenden, empfiehlt Adobe, die bekannten Sicherheitslücken zu minimieren, indem Sie mindestens eine der folgenden Aufgaben ausführen (vorzugsweise beide):
 
-1. Verify that all image files begin with the expected [&quot;magic bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) corresponding to the image file types you support before sending them to ImageMagick for processing.
-1. Verwenden Sie eine Richtliniendatei, um die verwundbaren ImageMagick-Codes zu deaktivieren. The global policy for ImageMagick is found at `/etc/ImageMagick`.
+1. Vergewissern Sie sich, dass alle Bilddateien mit den erwarteten [&quot;magischen Bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) beginnen, die den unterstützten Bilddateitypen entsprechen, bevor Sie sie zur Verarbeitung an ImageMagick senden.
+1. Verwenden Sie eine Richtliniendatei, um die verwundbaren ImageMagick-Codes zu deaktivieren. Die globale Richtlinie für ImageMagick finden Sie unter `/etc/ImageMagick`.
 
 >[!MORELIKETHIS]
 >
