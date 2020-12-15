@@ -60,35 +60,35 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Außerdem unterstützt ein freigegebener Datenspeicher Binaryless-Replikationen und reduziert die Bandbreite zum Replizieren von Assets in Veröffentlichungsumgebungen oder Abladeinstanzen.
 
-#### Nutzungsszenarien {#use-cases}
+#### Anwendungsfälle {#use-cases}
 
 Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Adobe empfiehlt die gemeinsame Nutzung des Datenspeichers zwischen primärer Autoreninstanz und Ablade-Autoreninstanzen, um Mehraufwand bei der Workflow-Abladung zu reduzieren. Sie können den Datenspeicher zudem zwischen Autor- und Veröffentlichungsinstanzen freigeben, um den Traffic während der Replikation zu minimieren.
 
-#### Nachteile {#drawbacks}
+#### Nachteile  {#drawbacks}
 
 Aufgrund gewisser Fallstricke wird die Freigabe eines Datenspeichers nicht in allen Fällen empfohlen.
 
-#### Single Point of Failure {#single-point-of-failure}
+#### Single Point of Failure  {#single-point-of-failure}
 
 Mit einem freigegebenen Datenspeicher entsteht ein Single Point of Failure in einer Infrastruktur. Stellen Sie sich ein Szenario vor, bei dem Ihr System eine Autoreninstanz und zwei Veröffentlichungsinstanzen aufweist, jeweils mit einem eigenen Datenspeicher. Stürzt einer der Datenspeicher ab, können die beiden anderen nach wie vor ausgeführt werden. Wenn der Datenspeicher jedoch gemeinsam genutzt wird, kann der Ausfall einer einzigen Festplatte die gesamte Infrastruktur zum Erliegen bringen. Stellen Sie daher sicher, dass Sie eine Sicherung des freigegebenen Datenspeichers aufbewahren, über die Sie den Datenspeicher schnell wiederherstellen können.
 
 Den AWS S3-Dienst für freigegebene Datenspeicher bereitzustellen, wird vorgezogen, weil hierdurch die Wahrscheinlichkeit eines Ausfalls gegenüber normalen Festplattenarchitekturen deutlich reduziert wird.
 
-#### Höhere Komplexität {#increased-complexity}
+#### Höhere Komplexität  {#increased-complexity}
 
 Freigegebene Datenspeicher erhöhen ebenfalls die Komplexität solcher Vorgänge, etwa der automatischen Speicherbereinigung. Normalerweise kann die automatische Speicherbereinigung für einen Standalone-Datenspeicher mit einem einzigen Klick initiiert werden. Allerdings setzen freigegebene Datenspeicher zusätzlich zu der auf jedem Knoten tatsächlich durchgeführten Bereinigung Mark-Sweep-Vorgänge auf jedem Mitglied voraus, das den Datenspeicher nutzt.
 
 Bei AWS-Vorgängen können, wenn statt des Aufbaus eines RAID-Arrays von EBS-Volumes ein zentraler Speicherort (über S3) implementiert wird, die Komplexität und die Betriebsrisiken auf dem System deutlich kompensiert werden.
 
-#### Leistungsprobleme {#performance-concerns}
+#### Leistungsprobleme  {#performance-concerns}
 
 Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Im Falle von AWS-Vorgängen liegen alle Festplatten remote vor, sodass eine Netzwerkanbindung erforderlich ist. Auf flüchtigen Volumes gehen Daten beim Starten und Stoppen von Instanzen verloren.
 
-#### Latenz {#latency}
+#### Latenz  {#latency}
 
 Latenz in S3-Implementierungen ist auf die im Hintergrund durchgeführten Schreibthreads zurückzuführen. Für Sicherungsvorgänge müssen diese Latenz und etwaige Abladevorgänge berücksichtigt werden. Das S3-Asset ist beim Start eines Abladeauftrags unter Umständen nicht in S3 vorhanden. Außerdem bleiben Lucene-Indizes möglicherweise unvollständig, wenn eine Sicherung durchgeführt wird. Dies gilt für alle zeitempfindlichen Dateien, die in einen S3-Datenspeicher geschrieben werden und auf die von einer anderen Instanz zugegriffen wird.
 
-### Knotenspeicher/Dokumentspeicher {#node-store-document-store}
+### Knotenspeicher/Dokumentspeicher  {#node-store-document-store}
 
 Es ist schwierig, genaue Dimensionierungszahlen für einen Knotenspeicher oder Dokumentspeicher zu ermitteln, da Ressourcen durch Folgendes verbraucht werden:
 
@@ -105,7 +105,7 @@ Verwenden Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level üb
 
 ## Netzwerk {#network}
 
-Für AEM Assets gibt es eine Reihe von Anwendungsbeispielen, in denen die Netzwerkleistung eine größere Bedeutung hat als bei vielen anderen unserer AEM-Projekte. Ein Kunde kann über einen schnellen Server verfügen. Wenn die Netzwerkverbindung jedoch nicht groß genug ist, um die Belastung der Benutzer zu unterstützen, die Assets vom System hochladen und herunterladen, dann scheint sie immer noch langsam zu sein. There is a good methodology for determining the choke point in a user&#39;s network connection to AEM at [AEM Asset considerations for user experience, instance sizing, workflow evaluation, and network topology](assets-network-considerations.md).
+Für AEM Assets gibt es eine Reihe von Anwendungsbeispielen, in denen die Netzwerkleistung eine größere Bedeutung hat als bei vielen anderen unserer AEM-Projekte. Ein Kunde kann über einen schnellen Server verfügen. Wenn die Netzwerkverbindung jedoch nicht groß genug ist, um die Belastung der Benutzer zu unterstützen, die Assets vom System hochladen und herunterladen, dann scheint sie immer noch langsam zu sein. Es gibt eine gute Methode zur Bestimmung des Choke-Punkts in der Netzwerkverbindung eines Benutzers mit AEM unter [AEM Asset-Überlegungen für Benutzererfahrung, Instanzgrößenänderung, Workflow-Auswertung und Netzwerktopologie](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
@@ -121,7 +121,7 @@ Um diese Ineffizienzen zu verdeutlichen, hat Adobe die Systemleistung mit WebDAV
 
 Beim Analysieren der durchschnittlichen Speicherzeit für Dateien über WebDAV wurde eine deutliche Leistungszunahme festgestellt, als sich die Brandbreite auf 5–10 MBit/s erhöht hatte. Daher empfiehlt Adobe, dass alle Benutzer, die gleichzeitig auf das System zugreifen, mindestens über eine Uploadgeschwindigkeit von 10 MBit/s und eine Bandbreite von 5–10 MBit/s verfügen sollten.
 
-For more information, see [Troubleshooting AEM desktop app](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-companion-app.html).
+Weitere Informationen finden Sie unter [Fehlerbehebung AEM Desktop-App](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Beschränkungen {#limitations}
 
@@ -129,7 +129,7 @@ Beim Dimensionieren einer Implementierung ist es wichtig, Systembeschränkungen 
 
 Die Dateigröße ist nicht der einzige Faktor, der bei OOM-Problemen (Out of Memory, nicht genügend Arbeitsspeicher) eine Rolle spielt. Es kommt auch auf die Bildabmessungen an. Sie können OOM-Probleme durch eine höhere Heap-Größe beim Starten von AEM vermeiden.
 
-In addition, you can edit the threshold size property of the `com.day.cq.dam.commons.handler.StandardImageHandler` component in Configuration Manager to use intermediate temporary file greater than zero.
+Darüber hinaus können Sie die Eigenschaft &quot;Schwellenwert&quot;der Komponente `com.day.cq.dam.commons.handler.StandardImageHandler` in Configuration Manager bearbeiten, um eine temporäre Zwischendatei größer als null zu verwenden.
 
 ## Maximale Anzahl von Assets {#maximum-number-of-assets}
 
@@ -143,6 +143,6 @@ Wurden die Wiedergaben nicht korrekt generiert, verwenden Sie die Camera Raw-Bib
 
 Die bei einem bestimmten Heap standardmäßig unterstützte TIFF-Dateigröße für AEM lässt sich nur schwer abschätzen, weil die Verarbeitung durch zusätzliche Faktoren wie die Pixelgröße beeinflusst wird. Es ist möglich, dass AEM eine 255 MB große Datei standardmäßig verarbeiten kann, aber eine 18 MB große Datei nicht, weil sich letztere gegenüber der ersteren eine ungewöhnlich hohe Anzahl an Pixel aufweist.
 
-## Größe der Assets {#size-of-assets}
+## Größe der Assets  {#size-of-assets}
 
 Standardmäßig können Sie AEM Assets mit einer Dateigröße von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in AEM finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
