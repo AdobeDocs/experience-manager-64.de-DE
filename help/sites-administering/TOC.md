@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 98%
+source-wordcount: '624'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 + [Überblick über das Administrationshandbuch](home.md)
 + Sites-Funktionen {#introduction}
    + [Website-Verwaltung](msm-and-translation.md)
-   + [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](msm.md)
+   + [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](msm.md)
    + [Konsole „Live Copy-Übersicht“](msm-livecopy-overview.md)
    + [Konfigurieren der Synchronisierung von Live Copies](msm-sync.md)
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
@@ -50,7 +50,7 @@ ht-degree: 98%
    + [Der Bulk Editor](bulk-editor.md)
    + [Konfigurieren von E-Mail-Benachrichtigungen](notification.md)
    + [Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites](rte-accessible-content.md)
-   + [Der Prüfer für externe Links](external-link-checker.md)
+   + [Link-Checker](external-link-checker.md)
    + [Beheben von Fehlern in AEM](troubleshoot.md)
    + [Auditprotokollwartung in AEM 6](operations-audit-log.md)
    + [Bearbeiter](enable-classic-ui-editor.md)
@@ -67,7 +67,7 @@ ht-degree: 98%
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
    + [Starten von Workflows](workflows-starting.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins    ](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins ](configure-rich-text-editor-plug-ins.md)
    + [Admin-Konsolen](enable-classic-ui-admin.md)
 + Sicherheit {#security}
    + [Benutzerverwaltung und Sicherheit](security.md)
@@ -75,7 +75,7 @@ ht-degree: 98%
    + [Sicherheitscheckliste](security-checklist.md)
    + [OWASP – Top 10](owasp-top10.md)
    + [Ausführung von AEM im produktionsbereiten Modus](production-ready.md)
-   + [Identitätsmanagement](identity-management.md)
+   + [Identitäts-Management](identity-management.md)
    + [Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services](ims-config-and-admin-console.md)
    + [Erstellen von geschlossenen Benutzergruppen](cug.md)
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
@@ -95,7 +95,7 @@ ht-degree: 98%
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
 + Personalisierung   {#personalization}
-   + [Personalisierung  ](personalization.md)
+   + [Personalisierung ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -114,11 +114,11 @@ ht-degree: 98%
 + Integrationen {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
-   + [Integrieren mit Adobe Target](target.md)
+   + [Integration mit Adobe Target](target.md)
    + [Integrieren mit Livefyre](livefyre.md)
-   + [Integrieren mit Adobe Analytics](adobeanalytics.md)
+   + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
-   + [Konfigurieren der Link-Überwachung für Adobe Analytics](adobeanalytics-link.md)
+   + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
    + [Zuordnen von Komponentendaten mit Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
    + [Konfigurieren von Videotracking für Adobe Analytics](adobeanalytics-video.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](scene7-http2faq.md)
