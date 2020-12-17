@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 6d07c570ce596871daa246a20c238432e4f8e67a
 workflow-type: tm+mt
-source-wordcount: '3444'
-ht-degree: 86%
+source-wordcount: '3525'
+ht-degree: 84%
 
 ---
 
@@ -37,11 +37,11 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 
 >[!NOTE]
 >
->This page is a continuation of the document [AEM Components - The Basics](/help/sites-developing/components-basics.md).
+>Diese Seite ist eine Fortsetzung des Dokuments [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
->Components below `/libs/cq/gui/components/authoring/dialog` are meant to be used only in the Editor (component dialogs in Authoring). Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
+>Komponenten unter `/libs/cq/gui/components/authoring/dialog` sind nur für die Verwendung im Editor vorgesehen (Komponentendialoge im Authoring). Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
 
 ## Codebeispiele {#code-samples}
 
@@ -63,21 +63,21 @@ Das Erweitern einer vorhandenen Komponente kann mit der [Ressourcentyphierarchie
 
 >[!NOTE]
 >
->Komponenten können mit einer Überlagerung ebenfalls neu definiert werden, die auf der Suchpfadlogik basiert. However in such case, the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) will not be triggered and `/apps` must define the entire overlay.
+>Komponenten können mit einer Überlagerung ebenfalls neu definiert werden, die auf der Suchpfadlogik basiert. In diesem Fall wird jedoch der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) nicht ausgelöst und `/apps` muss die gesamte Überlagerung definieren.
 
 >[!NOTE]
 >
 >Die [Inhaltsfragmentkomponente](/help/sites-developing/customizing-content-fragments.md) kann auch angepasst und erweitert werden, obwohl die vollständige Struktur und die Beziehungen zu Assets berücksichtigt werden müssen.
 
-### Anpassen eines vorhandenen Komponentendialogfelds {#customizing-a-existing-component-dialog}
+### Anpassen eines vorhandenen Komponentendialogfelds  {#customizing-a-existing-component-dialog}
 
 Es ist auch möglich, ein *Komponentendialogfeld* mithilfe des [Sling Resource Mergers](/help/sites-developing/sling-resource-merger.md) zu überschreiben und die Eigenschaft `sling:resourceSuperType` zu definieren.
 
-This means you only need to redefine the required differences, as opposed to redefining the entire dialog (using `sling:resourceSuperType`). Dies ist jetzt die empfohlene Methode für die Erweiterung eines Komponentendialogfelds
+Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt den gesamten Dialog neu zu definieren (mit `sling:resourceSuperType`). Dies ist jetzt die empfohlene Methode für die Erweiterung eines Komponentendialogfelds
 
 Siehe [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) für weitere Informationen.
 
-## Definieren von Markup {#defining-the-markup}
+## Definieren von Markup  {#defining-the-markup}
 
 Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss den HTML-Code definieren, der erforderlich ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
 
@@ -89,7 +89,7 @@ Die [HTML Vorlagensprache (HTL)](https://helpx.adobe.com/de/experience-manager/h
 >
 >Obwohl sowohl HTL als auch JSP zur Entwicklung von Komponenten verwendet werden können, zeigen wir auf dieser Seite die Entwicklung mit HTL, da dies die empfohlene Skriptsprache für AEM ist.
 
-## Entwicklung der Inhaltslogik {#developing-the-content-logic}
+## Entwicklung der Inhaltslogik  {#developing-the-content-logic}
 
 Diese optionale Logik wählt und/oder berechnet den Inhalt, der gerendert werden soll. Sie wird aus HTL-Ausdrücken mit dem entsprechenden Gebrauch-API Muster aufgerufen.
 
@@ -99,23 +99,23 @@ Der Mechanismus zum Trennen der Logik von der Erscheinung hilft zu verdeutlichen
 
 [Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen.](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
-### Verwenden von JavaScript {#using-javascript}
+### Verwenden von JavaScript  {#using-javascript}
 
 [Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
-### Verwendung clientseitiger HTML-Bibliotheken {#using-client-side-html-libraries}
+### Verwendung clientseitiger HTML-Bibliotheken  {#using-client-side-html-libraries}
 
 Moderne Websites beruhen in hohem Maße auf der clientseitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-To help deal with this issue, AEM provides **Client-side Library Folders**, which allow you to store your client-side code in the repository, organize it into categories and define when and how each category of code is to be served to the client. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
+Um dieses Problem zu lösen, stellt AEM **Clientseitige Bibliotheksordner** bereit, mit denen Sie den clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie die einzelnen Kategorien von Code dem Client bereitgestellt werden sollen. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
 
 Lesen Sie [Verwendung clientseitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md) für weitere Informationen.
 
-## Konfigurieren des Bearbeitungsverhaltens {#configuring-the-edit-behavior}
+## Konfigurieren des Bearbeitungsverhaltens  {#configuring-the-edit-behavior}
 
 Sie können das Bearbeitungsverhalten einer Komponente konfigurieren, einschließlich Attributen wie Aktionen, die für die Komponente verfügbar sind, Eigenschaften des Editors für die Bearbeitung im Kontext, die sich auf Ereignisse für die Komponente beziehen. Die Konfiguration gilt dabei für die Touch-optimierte wie die klassische Benutzeroberfläche, wenn auch mit gewissen Unterschieden.
 
-The [edit behavior of a component is configured](/help/sites-developing/components-basics.md#edit-behavior) by adding a `cq:editConfig` node of type `cq:EditConfig` below the component node (of type `cq:Component`) and by adding specific properties and child nodes.
+Das [Bearbeitungsverhalten einer Komponente wird konfiguriert, indem unter dem Komponentenknoten (vom Typ `cq:Component`) ein `cq:editConfig`-Knoten des Typs `cq:EditConfig` hinzugefügt und bestimmte Eigenschaften und untergeordnete Knoten hinzugefügt werden.](/help/sites-developing/components-basics.md#edit-behavior)
 
 ## Konfigurieren des Vorschauverhaltens {#configuring-the-preview-behavior}
 
@@ -125,11 +125,11 @@ Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müsse
 
 >[!NOTE]
 >
->In the touch-enabeld UI only the values `EDIT` and `PREVIEW` are used for the [WCM Mode](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
+>In der touchaktivierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` für das [WCM-Modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie verwendet.
 
 ## Erstellen und Konfigurieren eines Dialogfelds {#creating-and-configuring-a-dialog}
 
-Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente zu ermöglichen. Using a dialog allows authors and/or administrators to edit content, configure the component or define design parameters (using a [Design Dialog](#creating-and-configuring-a-design-dialog))
+Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente zu ermöglichen. Mithilfe eines Dialogfelds können Autoren und/oder Administratoren Inhalte bearbeiten, die Komponente konfigurieren oder Designparameter definieren (mithilfe eines [Designdialogs](#creating-and-configuring-a-design-dialog))
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-ui-and-granite-ui}
 
@@ -145,7 +145,7 @@ Ausführliche Informationen finden Sie hier:
 
    * Bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen
    * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite-Benutzeroberfläche
 
@@ -157,19 +157,19 @@ Ausführliche Informationen finden Sie hier:
 >
 >Aufgrund der Art der Granite-Benutzeroberflächenkomponenten (und der Unterschiede zu den ExtJS-Widgets) gibt es einige Unterschiede zwischen der Interaktion zwischen Komponenten mit der Touch-optimierten Benutzeroberfläche und der klassischen [Benutzeroberfläche](/help/sites-developing/developing-components-classic.md).
 
-### Erstellen eines neuen Dialogfelds {#creating-a-new-dialog}
+### Erstellen eines neuen Dialogfelds  {#creating-a-new-dialog}
 
 Dialogfelder für die Touch-optimierte Benutzeroberfläche:
 
-* are named `cq:dialog`.
-* are defined as an `nt:unstructured` node with the `sling:resourceType` property set.
+* werden mit `cq:dialog` benannt.
+* werden als `nt:unstructured`-Knoten mit der `sling:resourceType`-Eigenschaft definiert.
 
 * befinden sich unter ihrem Knoten `cq:Component` und neben ihrer Komponentendefinition.
 * werden auf der Serverseite (als Sling-Komponenten) basierend auf ihrer Inhaltsstruktur und der Eigenschaft `sling:resourceType` gerendert.
 * verwenden das Framework der Granite-Benutzeroberfläche.
 * enthalten eine Knotenstruktur, die die Felder im Dialogfeld beschreibt.
 
-   * these nodes are `nt:unstructured` with the required `sling:resourceType` property.
+   * Diese Knoten sind `nt:unstructured` mit der erforderlichen `sling:resourceType`-Eigenschaft.
 
 Eine Beispielknotenstruktur könnte wie folgt aussehen:
 
@@ -245,14 +245,14 @@ Ein Beispiel finden Sie unter:
 
    * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
-#### Erweiterung eines Felds (Vererbung) {#extending-inheriting-from-a-field}
+#### Erweiterung eines Felds (Vererbung)  {#extending-inheriting-from-a-field}
 
 Abhängig von Ihren Anforderungen können Sie entweder:
 
 * Ein gegebenes Granite-Benutzeroberflächenfeld um Komponentenvererbung (`sling:resourceSuperType`) erweitern
 * Ein bestimmtes Widget aus der zugrunde liegenden Widget-Bibliothek (im Falle der Granite-Benutzeroberfläche ist dies die Coral-Benutzeroberfläche) erweitern, indem Sie der Widget-Bibliothek-API folgen (JS/CSS-Vererbung)
 
-#### Zugriff auf Dialogfelder {#access-to-dialog-fields}
+#### Zugriff auf Dialogfelder  {#access-to-dialog-fields}
 
 Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulegen, wer Zugriff auf bestimmte Registerkarten/Felder in Ihrem Dialogfeld hat. beispielsweise:
 
@@ -268,14 +268,14 @@ Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulege
 
 Die Methode zur Behandlung von Ereignissen in Dialogfeldern wird jetzt mit [Listenern in einer benutzerdefinierten Client-Bibliothek](#listeners-in-a-custom-client-library) ausgeführt. Dies ist eine Änderung gegenüber der älteren Methode, [Listener in der Inhaltsstruktur](#listeners-in-the-content-structure) zu haben.
 
-#### Listener in einer benutzerdefinierten Client-Bibliothek {#listeners-in-a-custom-client-library}
+#### Listener in einer benutzerdefinierten Client-Bibliothek  {#listeners-in-a-custom-client-library}
 
 Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 
 1. Lassen Sie Ihr Feld mit einer bestimmten CSS-Klasse (dem *Hook*) markieren.
 1. Definieren Sie in Ihrer Client-Bibliothek einen JS-Listener, der mit diesem CSS-Klassennamen verknüpft ist (dadurch wird sichergestellt, dass Ihre benutzerdefinierte Logik nur für Ihr Feld gilt und andere Felder desselben Typs nicht betroffen sind).
 
-Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html). Dies ist dem Prozess sehr ähnlich, den Sie in der Vergangenheit mit ExtJS durchführen mussten: Suchen Sie die Dokumentationsseite eines bestimmten Widgets und überprüfen Sie dann die Details seiner Event-API.
+Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html). Dies ist dem Prozess sehr ähnlich, den Sie in der Vergangenheit mit ExtJS durchführen mussten: Suchen Sie die Dokumentationsseite eines bestimmten Widgets und überprüfen Sie dann die Details seiner Event-API.
 
 Ein Beispiel finden Sie unter:
 
@@ -283,11 +283,19 @@ Ein Beispiel finden Sie unter:
 
    * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
-#### Listener in der Inhaltsstruktur {#listeners-in-the-content-structure}
+#### Listener in der Inhaltsstruktur  {#listeners-in-the-content-structure}
 
 In der klassischen Benutzeroberfläche mit ExtJS war es üblich, Listener für ein bestimmtes Widget in der Inhaltsstruktur zu haben. Das Gleiche gilt für die Touch-optimierte Benutzeroberfläche, da der JS-Listenercode (oder überhaupt kein Code) nicht mehr im Inhalt definiert ist.
 
 Die Inhaltsstruktur beschreibt die semantische Struktur. Sie sollte (muss) nicht die Art des zugrunde liegenden Widget implizieren. Wenn Sie keinen JS-Code in der Inhaltsstruktur haben, können Sie die Implementierungsdetails ändern, ohne die Inhaltsstruktur ändern zu müssen. Mit anderen Worten, Sie können die Widget-Bibliothek ändern, ohne die Inhaltsstruktur zu berühren.
+
+#### Erkennen der Verfügbarkeit des Dialogfelds {#dialog-ready}
+
+Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden muss, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf das `dialog-ready`-Ereignis achten.
+
+Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h. wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
+
+`dialog-ready` kann verwendet werden, um in JavaScript benutzerspezifischen Code einzubinden, der Anpassungen an den Feldern in einem Dialogfeld oder ähnlichen Aufgaben durchführt.
 
 ### Feldüberprüfung {#field-validation}
 
@@ -304,9 +312,9 @@ Ein Beispiel finden Sie unter:
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title
 ```
 
-#### Feldüberprüfung (Granite-Benutzeroberfläche) {#field-validation-granite-ui}
+#### Feldüberprüfung (Granite-Benutzeroberfläche)  {#field-validation-granite-ui}
 
-Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutzeroberflächenkomponenten (entspricht Widgets) erfolgt mithilfe der API `foundation-validation`. [Weitere Informationen finden Sie in der `foundation-valdiation` Granite-Dokumentation.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutzeroberflächenkomponenten (entspricht Widgets) erfolgt mithilfe der API `foundation-validation`. [Weitere Informationen finden Sie in der  `foundation-valdiation` Granite-Dokumentation.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 Beispiele finden Sie unter:
 
@@ -322,7 +330,7 @@ Das Design-Dialogfeld wird bereitgestellt, wenn eine Komponente Entwurfsdetails 
 
 Die Definition ist der eines [Dialogfelds sehr ähnlich, das für die Bearbeitung von Inhalten](#creating-a-new-dialog) verwendet wird, mit dem Unterschied, dass es als Knoten definiert ist:
 
-* Node name: `cq:design_dialog`
+* Knotenname: `cq:design_dialog`
 * Typ: `nt:unstructured`
 
 ## Erstellen und Konfigurieren eines Editors für die Bearbeitung im Kontext {#creating-and-configuring-an-inplace-editor}
@@ -333,15 +341,15 @@ Ein Editor für die Bearbeitung im Kontext ist nicht für jeden Komponententyp n
 
 Weitere Informationen finden Sie unter [Erweiterung der Seitenerstellung - Hinzufügen eines neuen Editors für die Bearbeitung im Kontext](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
-## Anpassen der Komponentensymbolleiste {#customizing-the-component-toolbar}
+## Anpassen der Komponentensymbolleiste  {#customizing-the-component-toolbar}
 
 Die [Komponentensymbolleiste](/help/sites-developing/touch-ui-structure.md#component-toolbar) bietet dem Benutzer Zugriff auf eine Reihe von Aktionen für die Komponente, z. B. Bearbeiten, Konfigurieren, Kopieren und Löschen.
 
 Für weitere Informationen siehe [Erweiterung der Seitenerstellung - Hinzufügen neuer Aktionen zu Komponentensymbolleisten](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
-## Konfigurieren einer Komponente für die Verweisleiste (geliehen/verliehen) {#configuring-a-component-for-the-references-rail-borrowed-lent}
+## Konfigurieren einer Komponente für die Verweisleiste (geliehen/verliehen)  {#configuring-a-component-for-the-references-rail-borrowed-lent}
 
-Wenn Ihre neue Komponente auf Inhalte anderer Seiten verweist, können Sie sich überlegen, ob sie Auswirkungen auf die Abschnitte **Geliehener Inhalt** und **Verliehener Inhalt** der [**Verweisleiste **](/help/sites-authoring/basic-handling.md#references)haben soll.
+Wenn Ihre neue Komponente auf Inhalte anderer Seiten verweist, können Sie sich überlegen, ob sie Auswirkungen auf die Abschnitte **Geliehener Inhalt** und **Verliehener Inhalt** der [**Verweisleiste**](/help/sites-authoring/basic-handling.md#references) haben soll.
 
 Die Standardinstallation von AEM überprüft nur die Referenzkomponente. Um Ihre Komponente hinzuzufügen, müssen Sie die Referenzkonfiguration für das OSGi-Bundle **WCM Authoring Content** konfigurieren.
 
@@ -353,7 +361,7 @@ Erstellen Sie einen neuen Eintrag in der Definition und geben Sie Ihre Komponent
 >
 >Bei der Arbeit mit AEM gibt es verschiedene Methoden, die Konfigurationseinstellungen für solche Dienste zu verwalten. Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-## Aktivieren und Hinzufügen Ihrer Komponente zum Absatzsystem {#enabling-and-adding-your-component-to-the-paragraph-system}
+## Aktivieren und Hinzufügen Ihrer Komponente zum Absatzsystem  {#enabling-and-adding-your-component-to-the-paragraph-system}
 
 Nachdem die Komponente entwickelt wurde, muss sie für die Verwendung in einem geeigneten Absatzsystem aktiviert werden, damit sie auf den erforderlichen Seiten verwendet werden kann.
 
@@ -393,7 +401,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `assetGroup`:
 
       * Typ: `String`
-      * Value: the group that the related asset belongs to; for example, `media`
+      * Wert: die Gruppe, zu der der verbundene Vermögenswert gehört; zum Beispiel `media`
    * `assetMimetype`:
 
       * Typ: `String`
@@ -401,15 +409,15 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `droptarget`:
 
       * Typ: `String`
-      * Value: the drop target; for example, `image`
+      * Wert: die Dropdown-Zielgruppe; zum Beispiel `image`
    * `resourceType`:
 
       * Typ: `String`
-      * Value: the related component resource; for example, `foundation/components/image`
+      * Wert: die zugehörige Komponentenressource; zum Beispiel `foundation/components/image`
    * `type`:
 
       * Typ: `String`
-      * Value: the type, for example, `Images`
+      * Wert: der Typ, z. B. `Images`
 
 
 
@@ -427,11 +435,11 @@ CODE AUF GITHUB
 Den Code dieser Seite finden Sie auf GitHub
 
 * [Open aem-project-archetype project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip) herunter
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip) herunter.
 
 >[!NOTE]
 >
->The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
+>Die automatische Erstellung von Komponenteninstanzen kann jetzt problemlos in der Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
 ## Verwenden von AEM Brackets-Erweiterungen {#using-the-aem-brackets-extension}
 
@@ -440,21 +448,21 @@ Die [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md) bietet ei
 Die Erweiterung:
 
 * Erleichtert die Synchronisierung (kein Maven oder File Vault erforderlich), um die Effizienz der Entwickler zu erhöhen, und hilft Front-End-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen.
-* Provides some [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) support, the template language designed to simplify component development and increase security.
+* Bietet einige Unterstützung für [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html), die Vorlagensprache, die die Komponentenentwicklung vereinfacht und die Sicherheit erhöht.
 
 >[!NOTE]
 >
 >Brackets ist die empfohlene Vorgehensweise zum Erstellen von Komponenten. Es ersetzt die CRXDE Lite-Funktion „Komponente erstellen“, die für die klassische Benutzeroberfläche entwickelt wurde.
 
-## Migration von einer klassischen Komponente {#migrating-from-a-classic-component}
+## Migration von einer klassischen Komponente  {#migrating-from-a-classic-component}
 
 Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzeroberfläche konzipiert wurde, zu einer Komponente migrieren, die mit der Touch-optimierten Benutzeroberfläche (einzeln oder gemeinsam) verwendet werden kann, sollten die folgenden Probleme berücksichtigt werden:
 
 * HTL
 
-   * Die Verwendung von [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
+   * Die Verwendung von [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
 
-* Komponenten
+* Komponenten 
 
    * Migrieren Sie [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)-Code, der klassische benutzeroberflächespezifische Funktionen verwendet
    * RTE-Plug-in, für weitere Informationen siehe [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
@@ -469,9 +477,9 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
    * Migrieren von vtypes zur [Überprüfung in der Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
    * Weitere Informationen zum Verwenden von JS-Listenern finden Sie unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung zum [Anpassung von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
-### Migrieren von cq:listener-Code {#migrating-cq-listener-code}
+### Migrieren von cq:listener-Code  {#migrating-cq-listener-code}
 
-If you are migrating a project that was designed for the classic UI, then the `cq:listener` code (and component related clientlibs) might use functions that are specific to the classic UI (such as `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
+Wenn Sie ein Projekt migrieren, das für die klassische Benutzeroberfläche entwickelt wurde, verwendet der `cq:listener`-Code (und komponentenbezogene clientlibs) möglicherweise Funktionen, die für die klassische Benutzeroberfläche spezifisch sind (wie `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
 
 Wenn Ihr Projekt vollständig auf die Touch-optimierte Benutzeroberfläche migriert wird, müssen Sie diesen Code ersetzen, um die für die Touch-optimierte Benutzeroberfläche relevanten Objekte und Funktionen zu verwenden.
 
@@ -487,7 +495,7 @@ if (Granite.author) {
 }
 ```
 
-## Dokumentation Ihrer Komponente {#documenting-your-component}
+## Dokumentation Ihrer Komponente  {#documenting-your-component}
 
 Als Entwickler möchten Sie einfachen Zugriff auf die Komponentendokumentation, damit Sie Folgendes schnell verstehen können:
 
@@ -503,4 +511,4 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-The supported markdown is the same as that for [content fragments](/help/assets/content-fragments-markdown.md).
+Das unterstützte Markdown ist dasselbe wie bei [Inhaltsfragmenten](/help/assets/content-fragments-markdown.md).
