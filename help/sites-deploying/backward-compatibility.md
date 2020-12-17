@@ -10,10 +10,10 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6fc1a2502187be0fbbfbea516788e705f1a2697c
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 94%
+source-wordcount: '501'
+ht-degree: 77%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Eine Liste der Änderungen am Inhalt und an der Konfiguration, die das Kompatibilitätspaket nicht betreffen, finden Sie unter [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Eine Liste der Inhalts- und Konfigurationsänderungen, die nicht unter das Kompatibilitätspaket fallen, finden Sie unter [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
-In AEM 6.4 wurden alle Funktionen im Hinblick auf die Abwärtskompatibilität entwickelt.
+In AEM 6.4 wurden alle Funktionen mit Rückwärtskompatibilität entwickelt.
 
-In den meisten Fällen sollten Kunden, die mit AEM 6.3 arbeiten, weder ihren Code noch ihre Anpassungen ändern müssen, wenn sie die Aktualisierung durchführen. Kunden mit AEM 6.1 und 6.2 müssen nicht mehr zusätzliche Änderungen durchführen, als dies bei einem Upgrade auf 6.3 erforderlich ist.
+In den meisten Fällen sollten Kunden, die mit AEM 6.3 arbeiten, weder ihren Code noch ihre Anpassungen ändern müssen, wenn sie die Aktualisierung durchführen. Für AEM 6.1- und 6.2-Kunden gibt es keine zusätzlichen Änderungen, die sich während eines Upgrades auf 6.3 ändern würden.
 
-Für die Ausnahmen, in denen Funktionen nicht abwärtskompatibel realisiert werden konnten, kann die Abwärtskompatibilität für Bundles und Inhalte erzielt werden, indem ein Kompatibilitätspaket für 6.3 installiert wird (im Folgenden finden Sie weitere Informationen und erfahren, wo Sie das Paket herunterladen können). Dieses Compat-Paket stellt die Kompatibilität für Anwendungen wieder her, die AEM 6.3 entsprechen.
+Für die Ausnahmen, in denen Funktionen nicht abwärtskompatibel realisiert werden konnten, kann die Abwärtskompatibilität für Bundles und Inhalte erzielt werden, indem ein Kompatibilitätspaket für 6.3 installiert wird (im Folgenden finden Sie weitere Informationen und erfahren, wo Sie das Paket herunterladen können). Dieses Kompatibilitätspaket stellt die Kompatibilität für Anwendungen wieder her, die AEM 6.3 entsprechen.
 
 Mit dem Kompatibilitätspaket können Sie AEM im Kompatibilitätsmodus ausführen und so die benutzerdefinierte Entwicklung für neue AEM-Funktionen zurückstellen:
 
@@ -62,7 +62,7 @@ Der Legacy-Modus eignet sich für Kunden, die benutzerdefinierte Schnittstellen 
 
 ## Einrichtung {#how-to-set-up}
 
-The AEM 6.3 Compatibility Package will be installable as a package using the Package Manager at this [link](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Das AEM 6.3-Kompatibilitätspaket kann mit Package Manager als Paket installiert werden. Sie können das [AEM 6.3 Kompatibilitätspaket von der Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63)-Site herunterladen.
 
 Sobald das Kompatibilitätspaket installiert wurde, können Sie das Routing über einen Schalter in der OSGi-Konfiguration aktivieren oder deaktivieren:
 
