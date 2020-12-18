@@ -2,9 +2,9 @@
 title: Link-Checker
 description: Die Link-Prüfung hilft bei der Validierung sowohl interner als auch externer Links und ermöglicht das Umschreiben von Links.
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: d6d361244ddf725087e2ec664c36a439ee6bffde
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -65,14 +65,14 @@ So verwenden Sie die externe Link-Checker:
 1. Wählen Sie über die **** Navigation den Eintrag **Tools** und dann **Sites** aus.
 1. Wählen Sie **Externe Link-Checker** und eine Liste aller externen Links wird angezeigt.
 
-![](assets/external-link-checker.png)
+![Fenster zur Überprüfung externer Links](assets/external-link-checker.png)
 
 Die folgenden Informationen werden angezeigt:
 
-* **Status**  - Der Überprüfungsstatus des Links
+* **Status** : Der Überprüfungsstatus des Links, der einer der folgenden sein kann:
    * **Gültig** : Der externe Link ist über die Link-Checker erreichbar.
    * **Ausstehend**  - Der externe Link wurde dem Site-Inhalt hinzugefügt, wurde jedoch noch nicht von der Link Checker validiert.
-   * **Ungültig**  - Der externe Link kann nicht über die Link-Checker erreicht werden.
+   * **Ungültig** : Der externe Link kann nicht über die Link-Checker erreicht werden.
 * **URL**  - Der externe Link
 * **Werber**  - Die Inhaltsseite mit dem externen Link
    * Dies wird nur ausgefüllt, wenn konfiguriert.](#configuring)[
@@ -80,7 +80,7 @@ Die folgenden Informationen werden angezeigt:
    * Wie oft Links überprüft werden, ist konfigurierbar.[](#configuring)
 * **Letzter Status** : Der letzte HTML-Statuscode, der zurückgegeben wurde, wenn der externe Link zum letzten Mal vom Typ Link geprüft wurde
 * **Zuletzt verfügbar**  - Zeit, seit der Link zuletzt für die Link-Checker verfügbar war
-* **Letzter Zugriff**  - Zeit, seit der Link zuletzt von der Link-Checker aufgerufen wurde
+* **Letzter Zugriff**  - Zeit, seit der zuletzt auf die Seite mit dem externen Link in der Authoring-Oberfläche zugegriffen wurde
 
 Sie können den Inhalt des Fensters mithilfe der beiden Schaltflächen oben in der Liste der Links bearbeiten:
 
