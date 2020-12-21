@@ -25,15 +25,15 @@ Standardmäßig sind die Forms Portal-Komponenten nicht verfügbar. So zeigen Si
 
 1. Für Seiten, die eine statische Vorlage verwenden, führen Sie die folgenden Schritte aus:
 
-   1. In the page header, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Design** to open the page in Design mode.
-   1. Tap any component (with a blue border) and then tap ![field-level](assets/field-level.png) to select the paragraph system containing the current component.
-   1. In the paragraph system, tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the paragraph system.
+   1. Tippen Sie in der Kopfzeile der Seite auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Design**, um die Seite im Designmodus zu öffnen.
+   1. Tippen Sie auf eine beliebige Komponente (mit einem blauen Rand) und dann auf ![Feldebene](assets/field-level.png), um das Absatzsystem auszuwählen, das die aktuelle Komponente enthält.
+   1. Tippen Sie im Absatzsystem auf ![settings_icon](assets/settings_icon.png), um das Dialogfeld &quot;Bearbeiten&quot;für das Absatzsystem zu öffnen.
    1. Aktivieren Sie in der Liste **[!UICONTROL Zugelassene Komponenten]** die Kontrollkästchen für die Komponenten **** und **[!UICONTROL Dokumentdienst-Eigenschaften]**. Tippen Sie auf **[!UICONTROL OK]**.
 
 1. Für Seiten, die eine dynamische Vorlage verwenden, führen Sie die folgenden Schritte aus:
 
-   1. In the page header, tap ![properties](assets/properties.png) > **Edit Template** to open the template of the page.
-   1. Tippen Sie auf **Layout Container** und dann auf ![FeedManagement](assets/FeedManagement.png). In the **Allowed Components** tab, enable the **Document Services and Document Services Predicates** options, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Tippen Sie in der Kopfzeile der Seite auf ![properties](assets/properties.png) > **Vorlage bearbeiten**, um die Vorlage der Seite zu öffnen.
+   1. Tippen Sie auf **Layout-Container** und dann auf ![FeedManagement](assets/FeedManagement.png). Aktivieren Sie auf der Registerkarte **Zulässige Komponenten** die Optionen **Dokument Services and Dokument Services Predicates** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >
