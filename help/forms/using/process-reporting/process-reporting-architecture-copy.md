@@ -33,23 +33,23 @@ Process Berichte umfasst die folgenden Module:
 * [Abfrage Data Servlet](/help/forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
 * [Benutzeroberfläche von Process Berichte](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
-## Process Berichte-Architektur {#process-reporting-architecture-br}
+## Process Berichte architecture {#process-reporting-architecture-br}
 
 ![processreportingarchitecture](assets/processreportingarchitecture.png)
 
-## Process Berichte-Module {#process-reporting-modules}
+## Process Berichte modules {#process-reporting-modules}
 
 ### ProcessDataPublisher-Dienst {#processdatapublisher-service-br}
 
 Der ProcessDataPublisher-Server wird regelmäßig auf der AEM Forms-Datenbank ausgeführt und extrahiert die Daten, die seit der letzten Ausführung des Dienstes geändert wurden. Anschließend werden die Daten im Process Data Datenspeicherung-Dienst veröffentlicht.
 
-Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter ProcessDataPublisher-Dienst [konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter [ProcessDataPublisher-Dienst konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### ProcessDataStorageProvider-Dienst {#processdatastorageprovider-service-br}
 
 Der ProcessDataStorageProvider-Dienst empfängt Prozessdaten vom ProcessDataPublisher-Dienst und speichert die Daten im Process Berichte-Repository.
 
-Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter ProcessDataStorageProvider-Dienst [konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter [ProcessDataStorageProvider-Dienst konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### OSGi-Dienst {#osgi-service-br}
 
@@ -61,7 +61,7 @@ Der QueryDataServlet-Dienst akzeptiert Abfragen aus der Process Berichte-Benutze
 
 Der Dienst nutzt dann OSGi-Dienste, um die relevanten Daten des Berichte abzurufen, die Daten zu verarbeiten und die Daten an die Benutzeroberfläche zurückzugeben.
 
-### Benutzeroberfläche von Process Berichte {#process-reporting-user-interface-br}
+### Process Berichte-Benutzeroberfläche {#process-reporting-user-interface-br}
 
 Die Benutzeroberfläche von Process Berichte ist eine webbrowser-basierte Benutzeroberfläche. Auf dieser Oberfläche können Sie Informationen zur Ansicht und Aufgabe verwenden, die aus der AEM Forms-Datenbank veröffentlicht werden.
 
@@ -75,5 +75,5 @@ Der Dienst nutzt dann OSGi-Dienste, um die relevanten Daten des Berichte abzuruf
 
 Sie können eigene benutzerspezifische Berichte erstellen und diese Berichte auf der Registerkarte &quot;Benutzerspezifische Berichte&quot;der Benutzeroberfläche von Process Berichte anzeigen.
 
-Anweisungen zum Erstellen eines benutzerspezifischen Berichts finden Sie unter So erstellen Sie einen benutzerspezifischen Bericht im Artikel [Benutzerspezifische Berichte in Process Berichte](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Die Schritte zum Erstellen eines benutzerspezifischen Berichts finden Sie unter So erstellen Sie einen benutzerspezifischen Bericht im Artikel [Benutzerspezifische Berichte in Process Berichte](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
