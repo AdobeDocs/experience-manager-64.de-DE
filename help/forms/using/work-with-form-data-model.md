@@ -34,7 +34,7 @@ Erfahren Sie weitere Details zu verschiedenen Aufgaben und Konfigurationen, die 
 
 >[!NOTE]
 >
->You must be a member of both **fdm-author** and **forms-user** groups to be able to create and work with form data model. Wenden Sie sich an Ihren AEM-Administrator, um Mitglied der Gruppe zu werden.
+>Sie müssen Mitglied der Gruppen **fdm-author** und **forms-user** sein, um Formulardatenmodell erstellen und verwenden zu können. Wenden Sie sich an Ihren AEM-Administrator, um Mitglied der Gruppe zu werden.
 
 ## Datenmodellobjekte und Dienste hinzufügen {#add-data-model-objects-and-services}
 
@@ -72,7 +72,7 @@ So fügen Sie Datenmodellobjekte und -dienste hinzu:
    >
    >Sie können die auf der Registerkarte „Dienste“ eines Formulardatenmodells konfigurierten Dienste mithilfe von Regeln für adaptive Formulare aufrufen. Die konfigurierten Dienste sind in der Aktion zum Aufrufen von Diensten im Regeleditor verfügbar. Weitere Informationen zum Verwenden dieser Dienste in Regeln für adaptive Formulare finden Sie unter „Aufrufen von Diensten und Festlegen von Werten für Regeln“ unter [Regeleditor](/help/forms/using/rule-editor.md).
 
-## Erstellen von Datenmodellobjekten und untergeordneten Eigenschaften {#create-data-model-objects-and-child-properties}
+## Erstellen von Datenmodellobjekten und untergeordneten Eigenschaften  {#create-data-model-objects-and-child-properties}
 
 ### Erstellen von Datenmodellobjekten {#create-data-model-objects}
 
@@ -88,7 +88,7 @@ Erstellen eines Datenmodellobjekts ohne Datenquellen:
 
 Als Nächstes können Sie untergeordnete Objekte in nicht gebundenen Datenmodellobjekten hinzufügen.
 
-### Hinzufügen von untergeordneten Eigenschaften {#child-properties}
+### Hinzufügen von untergeordneten Eigenschaften  {#child-properties}
 
 Mit dem Formulardatenmodell-Editor können Sie untergeordnete Eigenschaften in einem Datenmodellobjekt erstellen. Die Eigenschaft ist beim Erstellen nicht an eine Eigenschaft in einer Datenquelle gebunden. Sie können die untergeordnete Eigenschaft später mit einer anderen Eigenschaft im enthaltenden Datenmodellobjekt verknüpfen.
 
@@ -103,11 +103,11 @@ Erstellen einer untergeordneten Eigenschaft:
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. For more information about creating adaptive forms and interactive communications using form data model, see [Use form data model](/help/forms/using/using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikation mit dem Formulardatenmodell finden Sie unter [Formulardatenmodell verwenden](/help/forms/using/using-form-data-model.md).
 
 ### Datenmodellobjekte und -eigenschaften binden {#bind-data-model-objects-and-properties}
 
-When the data sources you want to integrate with the form data model are available, you can add them to the form data model as described in [Update data sources](/help/forms/using/create-form-data-models.md#update). Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
+Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, verfügbar sind, können Sie sie dem Formulardatenmodell hinzufügen, wie unter [Datenquellen aktualisieren](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie mit einer Datenquelle binden möchten.
 1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
@@ -152,9 +152,9 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
    Für die Mitarbeiterdatenquelle konfigurierte Lese- und Schreibdienste
 
-1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to bind the argument to a User Profile Attribute, Request Attribute, or Literal value and specify the binding value. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
+1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png), um das read-Dienstargument an ein User Profil-Attribut, ein Request-Attribut oder einen Literalwert zu binden, und geben Sie den Bindungswert an. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
 
-   In diesem Beispiel nimmt das Argument `id` den Wert des Attributs `empid` des Benutzerprofils an und übergibt ihn als Argument an den Lesedienst. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt `employee` für die angegebene `empid` und gibt sie zurück. So, if you specify 00250 in the `empid` field in the form, the read service will read details of the employee with 00250 employee id.
+   In diesem Beispiel nimmt das Argument `id` den Wert des Attributs `empid` des Benutzerprofils an und übergibt ihn als Argument an den Lesedienst. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt `employee` für die angegebene `empid` und gibt sie zurück. Wenn Sie also 00250 im Feld `empid` im Formular angeben, liest der Lesedienst Details des Mitarbeiters mit der Mitarbeiter-ID 00250.
 
    Darüber hinaus können Sie ein Argument als obligatorisch oder optional definieren.
 
@@ -203,7 +203,7 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Standardargument für den Lesedienst für „Angehörige“ ist „dependentid“
 
-   Das Argument muss allerdings eine mit dem verknüpfenden Datenmodellobjekt gemeinsame Eigenschaft sein, in diesem Beispiel `Employeeid`. Therefore, the `Employeeid` argument must be bound to the `id` property of the Employee data model object to fetch the associated dependents details from the Dependents data model object.
+   Das Argument muss allerdings eine mit dem verknüpfenden Datenmodellobjekt gemeinsame Eigenschaft sein, in diesem Beispiel `Employeeid`. Daher muss das `Employeeid`-Argument an die `id`-Eigenschaft des Employee-Datenmodellobjekts gebunden sein, um die zugehörigen Abhängigkeitsdetails vom Datenmodellobjekt &quot;Abhängige&quot;abzurufen.
 
    ![add-associated-example-2](assets/add-association-example-2.png)
 
@@ -218,7 +218,7 @@ So fügen Sie eine Verknüpfung hinzu:
 >
 >Die hinzugefügte Verknüpfung wird der Box für das Datenmodellobjekt mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
->You can edit an association by selecting the checkbox against it and tap **[!UICONTROL Edit Association]**.
+>Sie können eine Zuordnung bearbeiten, indem Sie das Kontrollkästchen dazugehörige Verbindung markieren und auf **[!UICONTROL Zuordnung bearbeiten]** tippen.
 
 ![added-association](assets/added-association.png)
 
@@ -241,13 +241,13 @@ Eigenschaften bearbeiten
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
-### Berechnete Eigenschaften erstellen {#computed}
+### Berechnete Eigenschaften erstellen  {#computed}
 
 Eine berechnete Eigenschaft ist diejenige, deren Wert basierend auf einer Regel oder einem Ausdruck berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf eine Literalzeichenfolge, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
 
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 
-1. Create a new property with the name `FullName` whose data type is String.
+1. Erstellen Sie eine neue Eigenschaft mit dem Namen `FullName`, dessen Datentyp String ist.
 1. Aktivieren Sie **[!UICONTROL Berechnet]** und tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaft zu erstellen.
 
    ![berechnet](assets/computed.png)
@@ -263,15 +263,15 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
 1. Wählen Sie im mathematischen Ausdruck **[!UICONTROL FirstName]** und **[!UICONTROL LastName]** im ersten bzw. zweiten Objekt aus. Wählen Sie **[!UICONTROL plus]** als Bediener.
 
-   Tap **[!UICONTROL Done]** and then tap **[!UICONTROL Close]** to close the rule editor window. Die Regel sieht ähnlich der Folgenden aus:
+   Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]**, um das Fenster des Regeleditors zu schließen. Die Regel sieht ähnlich der Folgenden aus:
 
    ![rule](assets/rule.png)
 
 1. Tippen Sie im Formulardatenmodell auf **[!UICONTROL Speichern]**. Die berechnete Eigenschaft ist konfiguriert.
 
-## Arbeiten mit Navigationseigenschaften von OData-Diensten {#work-with-navigation-properties-of-odata-services}
+## Arbeiten mit Navigationseigenschaften von OData-Diensten  {#work-with-navigation-properties-of-odata-services}
 
-In OData-Diensten werden Navigationseigenschaften verwendet, um Zuordnungen zwischen zwei Datenmodellobjekten zu definieren. Diese Eigenschaften werden für einen Entitätstyp oder einen komplexen Typ definiert. For example, in the following extract from the metadata file of the sample [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData sample services, the person entity contains three navigation properties - Friends, BestFriend, and Trips.
+In OData-Diensten werden Navigationseigenschaften verwendet, um Zuordnungen zwischen zwei Datenmodellobjekten zu definieren. Diese Eigenschaften werden für einen Entitätstyp oder einen komplexen Typ definiert. Beispiel: In der folgenden Extraktion aus der Metadatendatei der Musterdienste [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData enthält die Entität der Person drei Navigationseigenschaften: Friends, BestFriend und Trips.
 
 Weitere Informationen finden Sie in der [OData-Dokumentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
 
@@ -301,21 +301,21 @@ Weitere Informationen finden Sie in der [OData-Dokumentation](https://docs.oasis
 </EntityType>
 ```
 
-Wenn Sie einen OData-Dienst in einem Formulardatenmodell konfigurieren, werden alle Navigationseigenschaften in einem Entitätencontainer über einen Dienst im Formulardatenmodell bereitgestellt. In this example of TripPin OData service, the three navigation properties in the `Person` entity container can be read using one `GET LINK` service in the Form Data Model.
+Wenn Sie einen OData-Dienst in einem Formulardatenmodell konfigurieren, werden alle Navigationseigenschaften in einem Entitätencontainer über einen Dienst im Formulardatenmodell bereitgestellt. In diesem Beispiel des TripPin OData-Dienstes können die drei Navigationseigenschaften im `Person`-Entitäts-Container mit einem `GET LINK`-Dienst im Formulardatenmodell gelesen werden.
 
-The following highlights the `GET LINK of Person /People` service in the Form Data Model, which is a combined service for the three navigation properties in the `Person` entity of the TripPin OData service.
+Im Folgenden wird der Dienst `GET LINK of Person /People` im Formulardatenmodell hervorgehoben, bei dem es sich um einen kombinierten Dienst für die drei Navigationseigenschaften im `Person`-Element des TripPin OData-Dienstes handelt.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. For example, the following `GET LINK of Person /People` service in the following example uses Trip as the output model object and the navigation property as Trips.
+Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. Beispielsweise verwendet der folgende `GET LINK of Person /People`-Dienst im folgenden Beispiel &quot;Trip&quot;als Ausgabemodellobjekt und die Navigationseigenschaft als &quot;Trips&quot;.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
 >[!NOTE]
 >
->The values available in the **[!UICONTROL Default Value]** field of the **NavigationPropertyName** argument depend on the state of the **[!UICONTROL Return array?]** ab. Wenn diese Funktion aktiviert ist, zeigt sie Navigationsfunktionen des Typs Sammlung an.
+>Die im Feld **[!UICONTROL Standardwert]** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des **[!UICONTROL Rückkehrarray ab?]** ab. Wenn diese Funktion aktiviert ist, zeigt sie Navigationsfunktionen des Typs Sammlung an.
 
-In this example, you can also choose the output model object as Person and navigation property argument as Friends or BestFriend (depending on whether **[!UICONTROL Return array?]** aktiviert oder deaktiviert ist).
+In diesem Beispiel können Sie auch das Ausgabemodellobjekt als &quot;Person&quot;und das Argument der Navigationseigenschaft als &quot;Freunde&quot;oder &quot;BestFriend&quot;auswählen (je nachdem, ob **[!UICONTROL Rückgaberarray?]** aktiviert oder deaktiviert ist).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
@@ -355,6 +355,6 @@ Ihr Formulardatenmodell ist konfiguriert. Bevor Sie es verwenden, sollten Sie je
 
 Auf ähnliche Weise können Sie andere Datenmodellobjekte und Dienste im Formulardatenmodell testen.
 
-## Nächste Schritte {#next-steps}
+## Nächste Schritte  {#next-steps}
 
 Sie haben ein funktionierendes Formulardatenmodell, das jetzt für die Verwendung in adaptiven Formularen und interaktiven Kommunikationsworkflows bereit ist. Weitere Informationen finden Sie unter [Verwenden eines Formulardatenmodells](/help/forms/using/using-form-data-model.md).
