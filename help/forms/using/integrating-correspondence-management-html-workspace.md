@@ -26,13 +26,13 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Beginn durch Erstellen einer Correspondence Management-Beispielvorlage, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](/help/forms/using/create-letter.md).
+Beginn durch Erstellen einer Correspondence Management-Beispielvorlage, die in AEM Forms Workspace wiedergegeben wird. Weitere Informationen finden Sie unter [Erstellen einer Briefvorlage](/help/forms/using/create-letter.md).
 
 Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 Dabei ist `encodedLetterId` die URL-kodierte Brief-ID. Verwenden Sie die gleiche Brief-ID, wenn Sie den Wiedergabeprozess für eine Workspace-Aufgabe in der Workbench definieren.
 
-## Erstellen Sie eine Aufgabe, um einen Brief in AEM Workspace zu rendern {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Erstellen Sie eine Aufgabe, um einen Brief in AEM Workspace zu rendern  {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Vergewissern Sie sich vor dem Ausführen dieser Schritte, dass Sie Mitglied der folgenden Gruppen sind:
 
@@ -45,7 +45,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
 
 1. Starten Sie die Workbench. Melden Sie sich beim localhost als Administrator an.
 1. Klicken Sie auf „Datei > Neu > Anwendung“. Geben Sie in das Feld „Anwendungsname“ `CMDemoSample` ein und klicken Sie dann auf „Fertig stellen“.
-1. Wählen Sie `CMDemoSample/1.0` und klicken Sie mit der rechten Maustaste `NewProcess`. Geben Sie in das Namensfeld `CMRenderer` ein und klicken Sie dann auf „Fertig stellen“.
+1. Wählen Sie `CMDemoSample/1.0` und klicken Sie mit der rechten Maustaste auf `NewProcess`. Geben Sie in das Namensfeld `CMRenderer` ein und klicken Sie dann auf „Fertig stellen“.
 1. Ziehen Sie die Startpunktaktivitätenauswahl und konfigurieren Sie sie:
 
    1. Wählen Sie in den Darstellungs-Daten „Ein CRX-Asset verwenden“.
@@ -101,12 +101,13 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
    }
    ```
 
-   [DSC-Datei](assets/dscsample.zip)herunterladen: Eine DSC-Beispieldatei ist in der oben `DSCSample.zip` angehängten Datei verfügbar. Download and unzip the `DSCSample.zip` file. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [DSC ](assets/dscsample.zip)
+herunterladen: Eine DSC-Beispieldatei ist in der oben angehängten  `DSCSample.zip` Datei verfügbar. Laden Sie die Datei `DSCSample.zip` herunter und dekomprimieren Sie sie. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Wählen Sie im Dialogfeld „Aktivität definieren“ die entsprechende Aktivität wie getLetterInstanceInfo aus und klicken Sie auf **OK**.
 
 1. Stellen Sie die Anwendung bereit. Speichern Sie bei Aufforderung die Assets.
-1. Log in to the AEM forms workspace at `https://[server]:[port]/lc/content/ws`.
+1. Melden Sie sich bei AEM forms Workspace unter `https://[server]:[port]/lc/content/ws` an.
 1. Öffnen Sie die Aufgabe, die Sie in CMRenderer hinzugefügt haben. Der Correspondence Management-Brief wird angezeigt.
 
    ![cminworkspace](assets/cminworkspace.png)
