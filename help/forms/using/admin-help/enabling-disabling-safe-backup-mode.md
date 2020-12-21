@@ -37,7 +37,7 @@ Im abgesicherten Sicherungsmodus wird AEM Forms normal ausgeführt mit der Ausna
 >
 >Wenn das System bereits im abgesicherten Sicherungsmodus ausgeführt wird, wird keine neue Reservierung erstellt, wenn Sie auf OK klicken.
 
-## Abgesicherten Sicherungsmodus deaktivieren {#disable-safe-backup-mode}
+## Abgesicherten Sicherungsmodus deaktivieren  {#disable-safe-backup-mode}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Sicherungseinstellungen“.
 1. Deaktivieren Sie auf der Seite „Sicherungseinstellungen“ die Option „Im abgesicherten Sicherungsmodus arbeiten“ und klicken Sie auf „OK“.
