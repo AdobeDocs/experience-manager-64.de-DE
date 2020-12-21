@@ -18,25 +18,25 @@ ht-degree: 4%
 ---
 
 
-# Create a Sample Page {#create-a-sample-page}
+# Beispielseite {#create-a-sample-page} erstellen
 
 Ab AEM 6.1 Communities ist es am einfachsten, eine Beispielseite zu erstellen, eine einfache Community-Site zu erstellen, die aus einer Seitenfunktion besteht.
 
-Dazu gehört eine parsys-Komponente, damit Sie Komponenten für das Authoring [aktivieren können](basics.md#accessing-communities-components).
+Dazu gehört eine parsys-Komponente, damit Sie [Komponenten für das Authoring](basics.md#accessing-communities-components) aktivieren können.
 
-Eine weitere Möglichkeit zur Untersuchung von Beispielkomponenten ist die Verwendung der im [Community-Komponentenleitfaden](components-guide.md)dargestellten Funktionen.
+Eine weitere Möglichkeit, Beispielkomponenten zu entdecken, besteht darin, die Funktionen zu verwenden, die im [Community-Komponentenleitfaden](components-guide.md) beschrieben sind.
 
-## Community-Site erstellen {#create-a-community-site}
+## Community-Site {#create-a-community-site} erstellen
 
-Dies ist der Erstellung einer neuen Site sehr ähnlich, die unter [Erste Schritte mit AEM Communities](getting-started.md)beschrieben wird.
+Dies ist der Erstellung einer neuen Site sehr ähnlich, die unter [Erste Schritte mit AEM Communities](getting-started.md) beschrieben wird.
 
-Der Hauptunterschied ist, dass dieses Tutorial eine neue Community-Site-Vorlage erstellen wird, die nur die Funktion [](functions.md#page-function) Seite enthält, um eine einfache Community-Site zu erstellen, die frei von anderen Funktionen ist (außer den vorab verkabelten Funktionen, die für alle Community-Sites grundlegend sind).
+Der Hauptunterschied ist, dass dieses Tutorial eine neue Community-Site-Vorlage erstellt, die nur die Funktion [Seite](functions.md#page-function) enthält, um eine einfache Community-Site zu erstellen, die frei von anderen Funktionen ist (außer den vorab verkabelten Funktionen, die für alle Community-Sites grundlegend sind).
 
 ### Neue Site-Vorlage erstellen {#create-new-site-template}
 
 Erstellen Sie zunächst eine einfache [Community-Site-Vorlage](sites.md).
 
-Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Extras > Communities > Site-Vorlagen]**.
+Wählen Sie in der globalen Navigation auf einer Autoreninstanz **[!UICONTROL Tools > Communities > Site-Vorlagen]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -51,7 +51,7 @@ Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Ext
 
 * STRUKTUR
 
-   * Ziehen Sie eine `Page` Funktion in den Vorlagenaufbau
+   * Ziehen Sie eine `Page`-Funktion in den Vorlagenaufbau
    * Geben Sie für Konfigurationsfunktionsdetails
 
       * `Title`: Einzelseite
@@ -59,14 +59,14 @@ Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Ext
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-* Für **`Save`** die Konfiguration auswählen
-* Für **`Save`** die Sitevorlage auswählen
+* Wählen Sie **`Save`** für die Konfiguration
+* Wählen Sie **`Save`** für die Sitevorlage
 
-### Neue Community-Site erstellen {#create-new-community-site}
+### Neue Community-Site {#create-new-community-site} erstellen
 
 Erstellen Sie jetzt eine neue Community-Site basierend auf der einfachen Site-Vorlage.
 
-Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!UICONTROL Communities > Sites]**.
+Wählen Sie nach dem Erstellen der Site-Vorlage in der globalen Navigation **[!UICONTROL Communities > Sites]**.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -81,7 +81,7 @@ Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!U
    * `Name`: Beispiel
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: auswählen `Single Page Template`
+   * `Template`: auswählen  `Single Page Template`
 
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
@@ -104,7 +104,7 @@ Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!U
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
-Wählen Sie in der [Community-Sites-Konsole](sites-console.md)das Veröffentlichungssymbol aus, um die Site zu veröffentlichen. Die Standardeinstellung ist &quot;http://localhost:4503&quot;.
+Wählen Sie in der [Community-Sites-Konsole](sites-console.md) das Symbol zum Veröffentlichen aus, um die Site zu veröffentlichen. Standardmäßig lautet das Symbol http://localhost:4503.
 
 ## Öffnen Sie die Site im Autorenmodus im Bearbeitungsmodus {#open-the-site-on-author-in-edit-mode}
 
@@ -120,4 +120,4 @@ Auf der einfachen Startseite ist es möglich, zu sehen, was durch die Community-
 
 ## Ansicht-Site bei Veröffentlichung {#view-site-on-publish}
 
-Nach dem Veröffentlichen der Seite öffnen Sie die Seite in der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html) , um mit den Funktionen als anonymer Site-Besucher, angemeldeter Benutzer oder Administrator zu experimentieren. Der in der Autorenumgebung angezeigte Link &quot;Administration&quot;wird in der Umgebung &quot;Veröffentlichen&quot;nur angezeigt, wenn sich ein Administrator anmeldet.
+Nach dem Veröffentlichen der Seite öffnen Sie die Seite in der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html), um mit den Funktionen als anonymer Site-Besucher zu experimentieren, als angemeldeter Mitglied oder als Administrator angemeldet zu sein. Der in der Autorenumgebung angezeigte Link &quot;Administration&quot;wird in der Umgebung &quot;Veröffentlichen&quot;nur angezeigt, wenn sich ein Administrator anmeldet.
