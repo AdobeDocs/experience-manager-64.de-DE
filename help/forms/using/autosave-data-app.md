@@ -37,11 +37,11 @@ Sie können die Intervalle angeben, in denen die App die eingegebenen Daten spei
 Führen Sie die folgenden Schritte aus, um die automatische Speicherung in der AEM Forms-App zu verwenden:
 
 1. Melden Sie sich bei der App und navigieren Sie zu **[!UICONTROL „Settings“ > „General“]**.
-1. In the General screen, use the **[!UICONTROL Autosave Frequency]** option to select the intervals at which you want the app to save the entered data.
+1. Verwenden Sie im Bildschirm &quot;Allgemein&quot;die Option **[!UICONTROL Häufigkeit automatisch speichern]**, um die Intervalle auszuwählen, in denen die App die eingegebenen Daten speichern soll.
    [![Einstellung „Autosave Frequency“](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Wenn Sie die App neu starten und sich als derselbe Benutzer anmelden, werden Sie aufgefordert, Ihre Aufgabe mit dem Dialogfeld „Nicht gespeicherte Aufgabe wiederherstellen“ wiederherzustellen. Click **[!UICONTROL OK]** in the Recover Unsaved Task dialog to resume working with the saved task. Klicken Sie auf **[!UICONTROL Abbrechen]**, um die gespeicherten Daten entsprechend der zuletzt ausgelösten automatischen Speicherung zu löschen und an einer neuen Aufgabe zu arbeiten.
+1. Wenn Sie die App neu starten und sich als derselbe Benutzer anmelden, werden Sie aufgefordert, Ihre Aufgabe mit dem Dialogfeld „Nicht gespeicherte Aufgabe wiederherstellen“ wiederherzustellen. Klicken Sie im Dialogfeld &quot;Nicht gespeicherte Aufgabe wiederherstellen&quot;auf **[!UICONTROL OK]**, um die Arbeit mit der gespeicherten Aufgabe fortzusetzen. Klicken Sie auf **[!UICONTROL Abbrechen]**, um die gespeicherten Daten entsprechend der zuletzt ausgelösten automatischen Speicherung zu löschen und an einer neuen Aufgabe zu arbeiten.
 
    Wenn Sie auf **[!UICONTROL OK]** klicken, wird die Aufgabe mit den Daten entsprechend der zuletzt ausgelösten automatischen Speicherung vor Absturz der App wiederhergestellt. Es enthält die Formulardaten und alle mit der Aufgabe verknüpften Anlagen.
-   [ ![Eine Aufgabe](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**wiederherstellenA.**Ein derzeit bearbeitetes Formular** B.**App wurde** C.**App wurde mit dem Dialogfeld &quot;Nicht gespeicherte Aufgabe wiederherstellen&quot;** D erneut gestartet.**Formular mit Originaldaten wiederhergestellt
+   [ ![Abrufen einer Aufgabe ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**wiederherstellenA.** Ein derzeit bearbeitetes Formular  **B.** App wurde zwangsweise geschlossen.  **C.** App wurde mit dem Dialogfeld Nicht gespeicherte Aufgabe wiederherstellen  **D.** Formular mit Originaldaten wiederhergestellt
 
