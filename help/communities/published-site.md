@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Erleben Sie die veröffentlichte Site {#experience-the-published-site}
 
-## Neue Site bei der Veröffentlichung suchen {#browse-to-new-site-on-publish}
+## Zu neuer Site bei Veröffentlichung suchen {#browse-to-new-site-on-publish}
 
 Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie zur URL, die beim Erstellen der Site angezeigt wird, jedoch auf dem Veröffentlichungsserver, z.
 
@@ -50,9 +50,9 @@ In der Benutzeroberfläche sieht ein anonymer Site-Besucher Folgendes:
 
 Wenn Sie verschiedene Links auswählen, befinden Sie sich im schreibgeschützten Modus.
 
-## Anonymen Zugriff auf JCR verhindern {#prevent-anonymous-access-on-jcr}
+## Anonymen Zugriff auf JCR {#prevent-anonymous-access-on-jcr} verhindern
 
-Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen Besuchern durch jcr-Inhalte und json zugänglich gemacht, obwohl der anonyme Zugriff **für den Site-Inhalt deaktiviert** ist. Dieses Verhalten kann jedoch mithilfe von Sling-Beschränkungen als Behelfslösung gesteuert werden.
+Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen Besuchern über jcr-Inhalte und json zugänglich gemacht, obwohl **Anonymen Zugriff zulassen** für den Site-Inhalt deaktiviert ist. Dieses Verhalten kann jedoch mithilfe von Sling-Beschränkungen als Behelfslösung gesteuert werden.
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
@@ -70,19 +70,19 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
    ![page-properties](assets/page-properties.png)
 
-1. Enable **[!UICONTROL Authentication Requirement]**.
-1. Hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`.
+1. Aktivieren Sie **[!UICONTROL Authentifizierungsanforderung]**.
+1. hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`.
 1. Veröffentlichen Sie die Seite.
 
-## Vertrauenswürdiger Community-Mitglied {#trusted-community-member}
+## Vertrauenswürdiges Community-Mitglied {#trusted-community-member}
 
-Diese Erfahrung setzt voraus, dass [Aaron McDonald](tutorials.md#demo-users) die Rollen von [Community Manager und Moderator](create-site.md#roles)zugewiesen wurde. Falls nicht, kehren Sie zur Autorendatei zurück, um die Site-Einstellungen [zu](sites-console.md#modifying-site-properties) ändern, und wählen Sie Aaron McDonald als Community Manager und Moderator aus.
+Dieses Erlebnis setzt voraus, dass Aaron McDonald[ die Rollen von ](tutorials.md#demo-users)Community Manager und Moderator[ zugewiesen wurden. ](create-site.md#roles) Andernfalls kehren Sie zur Autorendatei zurück, um die Site-Einstellungen zu ändern. Wählen Sie dann Aaron McDonald als Community Manager und Moderator aus.[](sites-console.md#modifying-site-properties)
 
-Wählen Sie in der oberen rechten Ecke den Benutzernamen &quot;aaron.mcdonald@mailinator.com&quot; `Log in`und das Kennwort &quot;password&quot;aus und melden Sie sich an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldedaten anzumelden.
+Wählen Sie in der oberen rechten Ecke `Log in` und melden Sie sich mit dem Benutzernamen &quot;aaron.mcdonald@mailinator.com&quot;und dem Kennwort &quot;password&quot;an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldedaten anzumelden.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
-Nach der Anmeldung gibt es einen neuen Menüpunkt, `Administration`der angezeigt wird, weil dem Mitglied die Rolle Moderator zugewiesen wurde. Die Auswahl verschiedener Links ist jetzt interessanter.
+Nach der Anmeldung gibt es einen neuen Menüpunkt `Administration`, der angezeigt wird, weil dem Mitglied die Rolle Moderator zugewiesen wurde. Die Auswahl verschiedener Links ist jetzt interessanter.
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
@@ -94,8 +94,8 @@ Beachten Sie, dass die Kalenderseite die Startseite ist, da die gewählte Refere
 >
 >Weitere Informationen zu Communities-Komponenten und -Funktionen finden Sie unter
 >
->* [Communities-Komponenten](author-communities.md) (für Autoren)
->* [Komponenten-, Funktionen- und Funktionsgrundlagen](essentials.md) (für Entwickler)
+>* [Communities-Komponenten](author-communities.md)  (für Autoren)
+>* [Komponenten-, Funktionen- und Funktionsgrundlagen](essentials.md)  (für Entwickler)
 
 >
 
@@ -117,36 +117,36 @@ Da Aaron ein Gruppenadministrator ist, kann Aaron durch Auswahl des Links Gruppe
 
 Dies ist ein Beispiel, bei dem eine Gruppe in der Umgebung zum Veröffentlichen erstellt wird.
 
-Gruppen können auch in der Umgebung &quot;Autor&quot;erstellt und innerhalb der Community-Site in der Umgebung &quot;Autor&quot;verwaltet werden ( [Community Groups-Konsole](groups.md)). Die Erfahrung mit dem [Erstellen von Gruppen unter Autor](nested-groups.md) ist als Nächstes in dieser Übung.
+Gruppen können auch in der Autorenkonsole erstellt und innerhalb der Community-Site in der Autorenkonsole verwaltet werden (die [Community-Gruppenkonsole](groups.md)). Das Erlebnis [Erstellen von Gruppen unter author](nested-groups.md) wird als Nächstes in dieser Übung angezeigt.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
 Erstellen einer Referenzgruppe:
 
-1. Neue **[!UICONTROL Gruppe auswählen]**
+1. Wählen Sie **[!UICONTROL Neue Gruppe]**
 1. **[!UICONTROL Registerkarte „Settings“]**
    * Gruppenname: `Sports`
    * Beschreibung: `A parent group for various sporting groups`
    * Gruppen-URL-Name: `sports`
-   * auswählen `Open Group` (die Teilnahme von Community-Mitgliedern durch Beitritt zulassen)
+   * select `Open Group` (Erlauben Sie allen Community-Mitgliedern die Teilnahme durch Beitritt)
 1. **[!UICONTROL Registerkarte &quot;Vorlage&quot;]**
-   * Auswählen `Reference Group` (enthält eine Gruppenfunktion in ihrer Struktur, um verschachtelte Gruppen zuzulassen)
-1. Gruppe **[!UICONTROL erstellen auswählen]**
+   * Wählen Sie `Reference Group` (enthält eine Gruppenfunktion in ihrer Struktur, um verschachtelte Gruppen zuzulassen)
+1. Wählen Sie **[!UICONTROL Gruppe erstellen]**
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-Nachdem eine neue Gruppe erstellt wurde, **wählen Sie die neue Sportgruppe** aus, um zwei Gruppen (verschachtelt) darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, muss nach dem Öffnen der Gruppe &quot;Sport&quot;der Link &quot;Gruppen&quot;ausgewählt werden:
+Nachdem eine neue Gruppe erstellt wurde, wählen Sie **die neue Sportgruppe** aus, um zwei Gruppen (verschachtelt) darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, muss nach dem Öffnen der Gruppe &quot;Sport&quot;der Link &quot;Gruppen&quot;ausgewählt werden:
 
 ![chlimage_1-318](assets/chlimage_1-318.png)
 
-Der zweite Satz von Links, beginnend mit `Blog`, gehört zur aktuell ausgewählten Gruppe, der `Sports`Gruppe. Durch Auswahl des `Groups` Links &quot;Sport&quot;können zwei Gruppen innerhalb der Gruppe &quot;Sport&quot;verschachtelt werden.
+Der zweite Satz von Links, beginnend mit `Blog`, gehört zur aktuell ausgewählten Gruppe, der `Sports`Gruppe. Durch Auswahl des Links &quot;Sport&quot; `Groups` können zwei Gruppen innerhalb der Gruppe &quot;Sport&quot;verschachtelt werden.
 
-Fügen Sie als Beispiel zwei n `ew groups.`
+Fügen Sie als Beispiel zwei n `ew groups.` hinzu
 
-* Ein Name `Baseball`
-   * Lassen Sie die Einstellung als `Open Group` (erforderliche Mitgliedschaft)
+* Einen Namen mit dem Namen `Baseball`
+   * Lassen Sie sie als `Open Group` eingestellt (erforderliche Mitgliedschaft)
    * Wählen Sie auf der Registerkarte &quot;Vorlagen&quot;die Option `Conversational Group`
-* Ein Name `Gymnastics`
+* Einen Namen mit dem Namen `Gymnastics`
    * Ändern Sie die Einstellung in `Member Only Group` (eingeschränkte Mitgliedschaft)
    * Wählen Sie auf der Registerkarte &quot;Vorlagen&quot;die Option `Conversational Group`
 
@@ -154,25 +154,25 @@ Fügen Sie als Beispiel zwei n `ew groups.`
 
 * Eine Aktualisierung der Seite kann erforderlich sein, bevor beide Gruppen angezeigt werden
 * Diese Vorlage enthält *nicht *die Funktion groups, sodass keine weitere Verschachtelung von Gruppen möglich ist
-* Beim Autor bietet die [Gruppenkonsole](groups.md) eine dritte Option - eine `Public Group` (optionale Mitgliedschaft)
+* Beim Autor bietet die [Gruppenkonsole](groups.md) eine dritte Auswahl - eine `Public Group` (optionale Mitgliedschaft)
 
 Nachdem beide Gruppen erstellt wurden, wählen Sie die Baseball-Gruppe, eine offene Gruppe, und beachten Sie die Links: `Discussions` `What's New` `Members`
 Die Links der Gruppe werden unterhalb der Links der Haupt-Site angezeigt und führen zur folgenden Anzeige:
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
-Unter &quot;Autor&quot;- mit Administratorrechten navigieren Sie zur [Communities Groups-Konsole](members.md) und fügen Sie der `Community Engage Gymnastics <uid> Members` Gruppe Weston McCall hinzu.
+Unter &quot;Autor - mit Administratorrechten&quot;navigieren Sie zur Konsole [Communities Gruppen](members.md) und fügen Sie Weston McCall der Gruppe `Community Engage Gymnastics <uid> Members` hinzu.
 
 Melden Sie sich bei der Veröffentlichung als Aaron McDonald an und Ansicht der Gruppen in der Gruppe &quot;Sport&quot;als anonymer Site-Besucher:
 
 * Von Startseite
-* Select `Groups`link
-* Select `Sports`link
-* Den `Groups`Link &quot;Sport&quot;auswählen
+* Link `Groups`auswählen
+* Link `Sports`auswählen
+* Wählen Sie den Link &quot;Sport&quot; `Groups`aus.
 
 Nur die Baseballgruppe wird angezeigt.
 
-Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum gleichen Speicherort. Beachten Sie, dass Weston in der Lage ist, `Join` die offene `Baseball` Gruppe und entweder `enter or Leave` die private `Gymnastics`Gruppe.
+Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum gleichen Speicherort. Beachten Sie, dass Weston in der Lage ist, `Join` die offene `Baseball` Gruppe und entweder `enter or Leave` die private `Gymnastics`Gruppe zu verwenden.
 
 ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -180,13 +180,13 @@ Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und n
 
 Ansicht der grundlegenden Webseite, die in der Site enthalten ist, durch Auswahl des Links &quot;Webseite&quot;. Die standardmäßigen AEM Authoring-Werkzeuge können verwendet werden, um dieser Umgebung Inhalte hinzuzufügen.
 
-Rufen Sie beispielsweise die **Autoreninstanz** auf, öffnen Sie den `engage` Ordner in der Konsole [&quot;](sites-console.md)Communities Sites&quot;und klicken Sie auf das Symbol zum **Öffnen der Site** , um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Modus Vorschau aus, um den `Web Page`Link auszuwählen, und wählen Sie dann den Bearbeitungsmodus, um die Titel- und Textkomponenten hinzuzufügen. Als letztes veröffentlichen Sie entweder nur die Seite oder die gesamte Site erneut.
+Gehen Sie beispielsweise zur Instanz **author**, öffnen Sie den Ordner `engage` in der Konsole [Communities Sites](sites-console.md) und klicken Sie auf das Symbol **Site öffnen**, um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Vorschau-Modus aus, um den Link `Web Page`auszuwählen, und wählen Sie dann den Bearbeitungsmodus, um die Titel- und Textkomponenten hinzuzufügen. Als letztes veröffentlichen Sie entweder nur die Seite oder die gesamte Site erneut.
 
 ![chlimage_1-321](assets/chlimage_1-321.png)
 
 ## Administrationslink {#administration-link}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der Link &quot;Administration&quot;angezeigt. Wenn Sie ihn auswählen, werden die geposteten Community-Inhalte angezeigt und können ähnlich wie die [Moderationskonsole](moderate-ugc.md) in der Autor-Umgebung [moderiert](moderation.md) werden.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der Link &quot;Administration&quot;angezeigt. Wenn Sie ihn auswählen, wird der gepostete Community-Inhalt angezeigt und es ist [moderiert](moderate-ugc.md) auf eine ähnliche Weise wie die [Moderationskonsole](moderation.md) in der Authoring-Umgebung zulässig.
 
 Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen sind in der Umgebung &quot;Veröffentlichen&quot;nicht über die globale Navigation zugänglich.
 
@@ -203,7 +203,7 @@ Nach dem Abmelden ist es möglich, eine neue Benutzerregistrierung zu erstellen.
 
 Standardmäßig ist die E-Mail-Adresse die Anmelde-ID. Wenn diese Option deaktiviert ist, kann der Besucher seine eigene Anmelde-ID (Benutzername) eingeben. Der Benutzername muss in der Umgebung zum Veröffentlichen eindeutig sein.
 
-Nachdem Sie den Namen, die E-Mail-Adresse und das Kennwort des Benutzers angegeben haben, `Sign Up`wird durch Auswahl dieser Option der Benutzer erstellt und für die Unterzeichnung aktiviert.
+Nachdem Sie den Benutzernamen, die E-Mail-Adresse und das Kennwort angegeben haben, können Sie den Benutzer durch Auswahl von `Sign Up`erstellen und signieren.
 
 Nach dem Anmelden ist die erste angezeigte Seite ihre `Profile`Seite, die sie personalisieren können.
 
