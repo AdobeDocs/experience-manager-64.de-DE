@@ -40,7 +40,7 @@ Führen Sie die folgenden Schritte aus, um ein Design zu erstellen:
 
 1. Klicken Sie in **[!UICONTROL Adobe Experience Manager]** auf **[!UICONTROL Formulare]** und dann auf **[!UICONTROL Designs]**.
 
-1. In the Themes page, click **[!UICONTROL Create > Theme]**.
+1. Klicken Sie auf der Seite &quot;Themen&quot;auf **[!UICONTROL Erstellen > Design]**.
 
    Ein Assistent zum Erstellen eines Designs wird gestartet.
 
@@ -51,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um ein Design zu erstellen:
    * **[!UICONTROL Clientlib-Speicherort]**: Speicherort im Repository, in dem die clientlibs für das Design gespeichert werden.
    * **[!UICONTROL Clientlib-Kategorie]**: Stellt ein Textfeld zur Eingabe des Namens der clientlib-Kategorie für das Design bereit.
 
-1. Click **[!UICONTROL Create]** and then click **[!UICONTROL Edit]** to open the theme in Theme Editor, or click **[!UICONTROL Done]** to return to the themes page.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** und dann auf **[!UICONTROL Bearbeiten]**, um das Design im Design-Editor zu öffnen, oder klicken Sie auf **[!UICONTROL Fertig]**, um zur Seite &quot;Themen&quot;zurückzukehren.
 
 ### Herunterladen eines Designs {#downloading-a-theme}
 
@@ -59,7 +59,7 @@ Sie können Designs als Zip-Datei exportieren und diese in anderen Projekten ode
 
 1. Klicken Sie in **[!UICONTROL Adobe Experience Manager]** auf **[!UICONTROL Formulare]** und dann auf **[!UICONTROL Designs]**.
 
-1. In the Themes page, select a theme, and click **[!UICONTROL Download]**. Ein Dialogfeld mit den Details des Designs wird angezeigt.
+1. Wählen Sie auf der Seite &quot;Themen&quot;ein Design aus und klicken Sie auf **[!UICONTROL Herunterladen]**. Ein Dialogfeld mit den Details des Designs wird angezeigt.
 
 1. Klicken Sie auf **[!UICONTROL Download]**. Das Design wird als eine zip.-Datei heruntergeladen.
 
@@ -175,7 +175,7 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
      <li>Der benutzerdefinierte Pfad für das Repository innerhalb von „/etc“, wo die clientlibs für dieses Design gespeichert werden.</li> 
      <li>Standardwert - „/etc/clientlibs/fd/themes“ + relativer Pfad des Designassets.</li> 
      <li>Wenn der Speicherort nicht vorhanden ist, wird die Ordnerhierarchie automatisch generiert.</li> 
-     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den eingegebenen neuen Speicherort verschoben.<br /> <em><strong>Hinweis:</strong> Wenn Sie den standardmäßigen clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>an <code>forms-users</code> und <code>crx:replicate</code>an <code>jcr:read </code>den neuen Speicherort <code>fd-service</code> zu. Also attach another ACL by adding <span class="kbd">deny jcr:addChildNodes</span> for <code>forms-user</code></em></li> 
+     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den eingegebenen neuen Speicherort verschoben.<br /> <em><strong>Hinweis:</strong> Wenn Sie den standardmäßigen clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository  <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>dem neuen Speicherort  <code>forms-users</code> und  <code>crx:replicate</code>dem neuen Speicherort  <code>jcr:read </code>  <code>fd-service</code> zu. Fügen Sie außerdem eine weitere ACL hinzu, indem Sie <span class="kbd">jcr:addChildNodes</span> für <code>forms-user</code></em> verweigern</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -201,7 +201,7 @@ Mit dem Design-Editor können Sie Stile der in einem Design mit einem Stil verse
 
 Der Design-Editor ist in zwei Bereiche unterteilt:
 
-* **Arbeitsfläche** - Wird auf der rechten Seite angezeigt. Hier wird ein Muster für ein adaptives Formular oder eine interaktive Kommunikation angezeigt, in dem alle Formatierungsänderungen sofort dargestellt werden. Sie können Objekte auch direkt auf der Arbeitsfläche auswählen, um verknüpfte Stile anzuzeigen und diese Stile zu bearbeiten. Das oben angezeigte Lineal für die Geräteauflösung bestimmt das Erscheinungsbild der Arbeitsfläche. Durch Auswahl eines Auflösungshaltepunktes auf dem Lineal wird die Vorschau des Beispielformulars oder der interaktiven Kommunikation für die jeweilige Lösung angezeigt. Die Arbeitsfläche wird [nachfolgend](/help/forms/using/themes.md#using-canvas) detailliert beschrieben.
+* **Arbeitsfläche**  - Wird auf der rechten Seite angezeigt. Hier wird ein Muster für ein adaptives Formular oder eine interaktive Kommunikation angezeigt, in dem alle Formatierungsänderungen sofort dargestellt werden. Sie können Objekte auch direkt auf der Arbeitsfläche auswählen, um verknüpfte Stile anzuzeigen und diese Stile zu bearbeiten. Das oben angezeigte Lineal für die Geräteauflösung bestimmt das Erscheinungsbild der Arbeitsfläche. Durch Auswahl eines Auflösungshaltepunktes auf dem Lineal wird die Vorschau des Beispielformulars oder der interaktiven Kommunikation für die jeweilige Lösung angezeigt. Die Arbeitsfläche wird [nachfolgend](/help/forms/using/themes.md#using-canvas) detailliert beschrieben.
 
 * **Seitenleiste** – Wird auf der linken Seite angezeigt. Sie umfasst die folgenden Elemente:
 
@@ -221,16 +221,16 @@ Der Design-Editor ist in zwei Bereiche unterteilt:
 
       Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder wie Alter, Name und Adresse die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite der Textfelder wird nicht geändert.
 
-   * **Bundesland:** Ermöglicht das Anpassen der Stile eines Objekts in einem bestimmten Status. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
+   * **Status:** Hier können Sie die Stile eines Objekts in einem bestimmten Status anpassen. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
    * **Eigenschaftenkategorien: ** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Dimension und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Stilinformationen ein. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
-   * **Erweitert:** Ermöglicht das Hinzufügen benutzerdefinierter CSS zu einem Objekt, wodurch die Eigenschaften, die visuelle Steuerelemente definieren, überschrieben werden, wenn eine Überschneidung vorliegt.
+   * **Erweitert:** Ermöglicht das Hinzufügen benutzerdefinierter CSS zu einem Objekt, wodurch die von visuellen Steuerelementen definierten Eigenschaften überschrieben werden, wenn eine Überschneidung vorliegt.
    * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente
 
    Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei zusätzliche Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen [nachfolgend](/help/forms/using/themes.md#using-rail) detailliert erläutert.
 
-   [ ![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **A.** Seitenleiste **B.** Arbeitsfläche
+   [ ![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **A.** Seitenleiste  **B.** Arbeitsfläche
 
-### Stilkomponenten {#styling-components}
+### Formatieren von Komponenten {#styling-components}
 
 Sie können ein Design in mehreren Formularen und interaktiver Kommunikation verwenden, wodurch die Formatierung der Formularkomponenten importiert wird, die Sie im Design angegeben haben. Sie können verschiedene Komponenten wie Titel, Beschreibung, Bedienfelder, Felder, Symbole und Textfelder formatieren. Verwenden Sie Widgets zur Konfiguration von Komponenteneigenschaften in einem Design. Vorkenntnisse im Umgang mit CSS oder LESS sind nicht erforderlich aber wünschenswert, obwohl Sie im Abschnitt „CSS-Überschreibung“ CSS-Code schreiben oder benutzerdefinierte Selektoren bereitstellen können. Der Abschnitt „CSS-Überschreibung“ wird angezeigt, wenn Sie eine Komponente in der Seitenleiste auswählen.
 
@@ -252,7 +252,7 @@ Zu den gebrauchsfertigen Bereichen gehören:
 
 * Registerkarten links
 * Registerkarten oben
-* Accordion
+* Akkordeon
 * Responsiv
 * Assistent
 * Layout für Mobilgeräte
@@ -301,7 +301,7 @@ Mit der Plus-Schaltfläche in der Asset-Bibliothek können Sie den Stil dauerhaf
 
 Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil an ein Design gebunden und steht nicht mehr für andere Designs zur Verfügung. Löschen eines gespeicherten Stils:
 
-1. On the CANVAS toolbar, click **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Manage Styles]**.
+1. Klicken Sie in der Symbolleiste &quot;CANVAS&quot;auf **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Stile verwalten]**.
 1. Wählen Sie im Dialogfeld „Stile verwalten“ einen gespeicherten Stil, klicken Sie auf **[!UICONTROL Löschen]**.
 
    ![Löschen Sie den gespeicherten Stil](assets/manage-styles.png)
@@ -314,15 +314,15 @@ Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil a
 >
 >Wenn ein ungültiges Zeichen in ein Feld eingegeben wird, wird die Farbe der Feldbegrenzung rot und eine Fehlermeldung wird in der oberen linken Ecke des Bildschirms angezeigt. Wenn Sie z. B. Alphabete in ein Textfeld eingeben, das numerische Zeichen als Eingabe akzeptiert, wird die Rahmenbegrenzung des Eingabefeldes rot. Sie können ein solches Design nicht speichern, ohne den oben angezeigten Fehler zu beheben.
 
-### Theme with another adaptive form or interactive communication {#theme-with-another-adaptive-form-or-interactive-communication}
+### Design mit einem anderen adaptiven Formular oder interaktiver Kommunikation {#theme-with-another-adaptive-form-or-interactive-communication}
 
-Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das im Lieferumfang des Design-Editors enthalten ist, können Sie ein Formular oder eine interaktive Kommunikation Ihrer Wahl auswählen, um den Stil und die Vorschau der Ergebnisse zu gewährleisten.
+Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das im Lieferumfang des Design-Editors enthalten ist, können Sie ein Formular oder eine interaktive Kommunikation Ihrer Wahl auswählen, um die Formatierung und Vorschau der Ergebnisse zu gewährleisten.
 
 So ersetzen Sie das aktuelle Formular oder die interaktive Kommunikation auf der Arbeitsfläche des Design-Editors:
 
-1. In the THEME EDITOR panel, click **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) **[!UICONTROL > Configure]**.
+1. Klicken Sie im Bereich &quot;DESIGN-EDITOR&quot;auf **[!UICONTROL Themenoptionen]** ![thematische Optionen](assets/theme-options.png) **[!UICONTROL Konfigurieren]**.
 
-1. In the General tab, browse and select a form or interactive communication for the **[!UICONTROL Adaptive Form/Document]** field.
+1. Wählen Sie auf der Registerkarte &quot;Allgemein&quot;ein Formular oder eine interaktive Kommunikation für das Feld **[!UICONTROL Adaptives Formular/Dokument]** aus.
 
 ### Wiederholen/Rückgängig {#redo-undo}
 
@@ -330,13 +330,13 @@ Sie können die unerwünschten Änderungen rückgängig machen oder wiederholen,
 
 ![redo-undo](assets/redo-undo.png)
 
-**Abbildung:** *Schaltflächen &quot;Rückgängig/Wiederholen&quot;auf der Arbeitsfläche*
+**Abbildung: Schaltflächen &quot;** *Rückgängig/Wiederholen&quot;auf der Arbeitsfläche*
 
 Die Schaltflächen „Wiederholen/Rückgängig“ werden angezeigt, wenn Sie eine Komponente im Design-Editor formatieren.
 
 ## Verwenden des Design-Editors {#using-the-theme-editor}
 
-Mit dem Design-Editor können Sie ein Design bearbeiten, das Sie erstellt oder hochgeladen haben. Navigate to **[!UICONTROL Forms &amp; Documents > Themes]**, and select a theme and open it. Das Design wird im Design-Editor geöffnet.
+Mit dem Design-Editor können Sie ein Design bearbeiten, das Sie erstellt oder hochgeladen haben. Navigieren Sie zu **[!UICONTROL Forms und Dokumente > Themen]**, wählen Sie ein Design aus und öffnen Sie es. Das Design wird im Design-Editor geöffnet.
 
 Der Design-Editor besteht, wie bereits erwähnt, aus zwei Bereichen: Seitenleiste und Arbeitsfläche.
 ![theme-editor](assets/theme-editor.png)
@@ -349,7 +349,7 @@ Das Design wird entweder mit dem standardmäßigen Formular oder mit einem Formu
 
 In der Arbeitsflächen-Symbolleiste sehen Sie Folgendes:
 
-* **[!UICONTROL Seitliches Bedienfeld]** ![umschalten](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
+* **[!UICONTROL Seitliches]** ![Bedienfeld](assets/toggle-side-panel.png) ein/aus: Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 
 * **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png): Bietet drei Optionen
 
@@ -358,7 +358,7 @@ In der Arbeitsflächen-Symbolleiste sehen Sie Folgendes:
    * Stile verwalten: Bietet Optionen zum Verwalten von Text- und Bildstilen
    * Hilfe: Zeigt eine Einführung in den Design-Editor mit Abbildungen an.
 
-* **[!UICONTROL Emulator]** - ![Lineal](assets/ruler.png): Emuliert das Aussehen des Designs für verschiedene Displaygrößen. Eine Displaygrößen wird im Emulator als Haltepunkt behandelt. Sie können einen Haltepunkt auswählen und einen Stil für ihn angeben. Zwei solche Haltepunkte sind beispielsweise Desktop und Tablet. Sie können unterschiedliche Formate für jeden Haltepunkt angeben.
+* **** ![Emulator](assets/ruler.png): Emuliert das Aussehen des Designs für verschiedene Displaygrößen. Eine Displaygrößen wird im Emulator als Haltepunkt behandelt. Sie können einen Haltepunkt auswählen und einen Stil für ihn angeben. Zwei solche Haltepunkte sind beispielsweise Desktop und Tablet. Sie können unterschiedliche Formate für jeden Haltepunkt angeben.
 
 Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten-Symbolleiste darüber angezeigt. Mit der Komponenten-Symbolleiste können Sie Komponenten auswählen oder zu allgemeinen Komponenten auf Containerebene wechseln. Beispiel: Sie wählen ein numerisches Feld in einem Bereich aus. Ihnen werden die folgenden Optionen in der Komponenten-Symbolleiste angezeigt:
 
@@ -424,7 +424,7 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
    <td><p>Erweitert</p> </td> 
    <td><p>Zum Hinzufügen von:</p> 
     <ul> 
-     <li>Properties for <code>::before</code> and <code>::after</code> pseudo elements to add content after or before default content in the selector, and style it.<br />Siehe<a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank"> CSS-Pseudo-Elemente</a>.</li> 
+     <li>Eigenschaften für <code>::before</code>- und <code>::after</code>-Pseudoelemente, um Inhalte nach oder vor dem Standardinhalt in der Auswahl hinzuzufügen und ihn zu formatieren.<br />Siehe<a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank"> CSS-Pseudo-Elemente</a>.</li> 
      <li>Hier können Sie benutzerdefinierten CSS-Inline-Code an eine Komponente anpassen und benutzerdefinierte Selektoren schreiben. </li> 
     </ul> <p>Wenn Sie benutzerdefinierten CSS-Code hinzufügen, überschreibt dieser die Anpassungen, die Sie mithilfe der Optionen in der Seitenleiste hinzugefügt haben. </p> </td> 
   </tr> 
@@ -445,7 +445,7 @@ Fügen Sie beispielsweise Ihrem Formular ein numerisches Feld hinzu, und legen S
 
    Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Fehlerstatus festlegen. Beispiel: In einem Formular legen Kunden Kennworte fest. Benutzer können Kennworte gemäß Richtlinien festlegen, die Sie erstellen. Wenn ein Benutzer ein Kennwort eingibt, das den Richtlinien nicht entspricht, wird das Textfeld rot. Wenn das Textfeld rot wird, zeigt es den Fehlerstatus an. Sie können die Formatierung für eine Komponente im Fehlerstatus festlegen und das Erscheinungsbild mit der Option „Fehler simulieren“ simulieren.
 
-### Formatieren einer Komponente {#styling-a-component}
+### Formatieren einer Komponente  {#styling-a-component}
 
 Beispiel: In Ihrem Formular gibt es zwei Arten von Textfeldern: in das eine lassen sich nur numerische und in das andere nur alphanumerische Werte eingeben. Sie können die Formatierung für das Textfeld anpassen, in das nur numerische Werte eingegeben werden können (ein numerisches Feld).
 
@@ -459,12 +459,12 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine bestimmte 
 
    * ![Feldebene](assets/field-level.png)
 
-1. Select **[!UICONTROL Numeric Box Widget]**.
+1. Wählen Sie **[!UICONTROL Widget]** &quot;Numerisches Feld&quot;.
 1. Der Titel der Seitenleiste ändert sich in Widget „Numerisches Feld“ und enthält die Optionen zum Anpassen der Darstellung.
 
-   Use **[!UICONTROL Dimension &amp; Position]** option in the sidebar to customize size of the component. Ensure that the State is **[!UICONTROL Default]**.
+   Verwenden Sie die Option **[!UICONTROL Dimension und Position]** in der Seitenleiste, um die Komponentengröße anzupassen. Stellen Sie sicher, dass der Status **[!UICONTROL Default]** ist.
 
-Instead of selecting **[!UICONTROL Numeric Box Widget]**, select **[!UICONTROL Field Widget]** in the component toolbar, and perform the steps above. When you select dimensions for **[!UICONTROL Field Widget]** option, all the text boxes except the numeric box have the same size.
+Wählen Sie in der Komponenten-Symbolleiste **[!UICONTROL Widget &quot;Numerisches Feld&quot;, anstatt**[!UICONTROL  Widget &quot;Feld ]**&quot;auszuwählen, &lt;a2/>und führen Sie die obigen Schritte aus.]** Wenn Sie Dimensionen für die Option **[!UICONTROL Feld-Widget]** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
 
 ### Formatieren von Feldern für einen bestimmten Status {#styling-fields-given-state}
 
@@ -477,16 +477,16 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine Komponente
    In der Seitenleiste werden Optionen zum Anpassen der Formatierung für die Komponente angezeigt.
 
 1. Wählen Sie einen Status in der Seitenleiste aus. Beispielsweise der Status „Fehler“.
-1. Use options such as **[!UICONTROL Border, Background]** in the sidebar to customize how the component looks.
+1. Verwenden Sie Optionen wie **[!UICONTROL Rand, Hintergrund]** in der Seitenleiste, um das Aussehen der Komponente anzupassen.
 1. Verwenden Sie die Option **[!UICONTROL Fehler simulieren]** am unteren Rand der Seitenleiste, um zu sehen, wie das Formatieren während der Bearbeitung aussieht.
 
 Wenn Sie die Formatierung einer Komponente anpassen, nachdem Sie den Status festgelegt haben, wird die Anpassung für die Komponente nur für den festgelegten Status angezeigt. Angenommen, Sie passen die Formatierung für die Komponente an, wenn der Status „Mausberührung“ festgelegt ist. Die Anpassung wird für die Komponente angezeigt, wenn Sie den Mauszeiger im generierten Formular oder in der interaktiven Kommunikation, auf das Sie das Design anwenden, über die Komponente halten.
 
-Um das Verhalten von anderen Status als „Fehler und Erfolg“ zu simulieren, verwenden Sie den Vorschaumodus. To use Preview mode, click **[!UICONTROL Preview]** in the page toolbar.
+Um das Verhalten von anderen Status als „Fehler und Erfolg“ zu simulieren, verwenden Sie den Vorschaumodus. Um den Seitenmodus zu verwenden, klicken Sie in der Seitensymbolleiste auf **[!UICONTROL Vorschau]**.
 
 ### Formatieren vonayouts für kleinere Displays {#styling-layouts-for-smaller-displays}
 
-Verwenden Sie das Lineal auf der Arbeitsfläche, um Haltepunkte für Geräte mit kleineren Displays auszuwählen. Click emulator ![ruler](assets/ruler.png) in Canvas to view ruler and breakpoints. Mithilfe der Haltepunkte können Sie ein Formular oder eine interaktive Kommunikation für Displaygrößen von verschiedenen Geräten, wie Smartphones und Tablets, Vorschau werden. Der Design-Editor unterstützt verschiedene Displaygrößen.
+Verwenden Sie das Lineal auf der Arbeitsfläche, um Haltepunkte für Geräte mit kleineren Displays auszuwählen. Klicken Sie auf Emulator ![Lineal](assets/ruler.png) auf der Arbeitsfläche, um das Lineal und die Haltepunkte der Ansicht zu ändern. Mithilfe der Haltepunkte können Sie ein Formular oder eine interaktive Kommunikation für Displaygrößen von verschiedenen Geräten, wie Smartphones und Tablets, Vorschau werden. Der Design-Editor unterstützt verschiedene Displaygrößen.
 
 So formatieren Sie Komponenten für verschiedene Haltepunkte:
 
@@ -501,12 +501,12 @@ Sie können Komponenten für Formulare oder interaktive Kommunikation für mehre
 
 ### Verwenden von Webschriften in einem Design {#using-web-fonts-in-a-theme}
 
-Sie können jetzt die Schriftarten, die in einem Webservice verfügbar sind, in einem adaptiven Formular oder in interaktiver Kommunikation verwenden. [Typekit](https://typekit.com/), der Adobe-Dienst für Webschriften, ist jetzt standardmäßig als Konfiguration verfügbar. To use Typekit, create a kit, and fonts in it, and obtain the Kit ID from [Typekit website](https://typekit.com/).
+Sie können jetzt die Schriftarten, die in einem Webservice verfügbar sind, in einem adaptiven Formular oder in interaktiver Kommunikation verwenden. [Typekit](https://typekit.com/), der Adobe-Dienst für Webschriften, ist jetzt standardmäßig als Konfiguration verfügbar. Um Typekit zu verwenden, erstellen Sie ein Kit und Schriftarten darin und rufen Sie die Kit-ID von der [Typekit-Website](https://typekit.com/) ab.
 
 Führen Sie die folgenden Schritte aus, um Typekit in AEM zu konfigurieren:
 
-1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager > Tools ]**![hammer](assets/hammer.png)**[!UICONTROL > Deployment > Cloud Services ]**.
-1. On the **[!UICONTROL Cloud Services]** page, navigate to **[!UICONTROL Third Party Services]** >  **[!UICONTROL Typekit]** , and click **[!UICONTROL Configure Now]** under Typekit. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche **+**, um eine neue Instanz zu erstellen.
+1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager > Tools ]**![hammer](assets/hammer.png)**[!UICONTROL  > Bereitstellung > Cloud Services ]**.
+1. Navigieren Sie auf der Seite **[!UICONTROL Cloud Services]** zu **[!UICONTROL Dienste von Drittanbietern]** > **[!UICONTROL Typekit]** und klicken Sie unter Typekit auf **[!UICONTROL Jetzt konfigurieren]**. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche **+**, um eine neue Instanz zu erstellen.
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und für die neue Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    Daraufhin werden Sie zur Seite „Konfiguration“ geleitet.
@@ -516,23 +516,23 @@ Führen Sie die folgenden Schritte aus, um Typekit in AEM zu konfigurieren:
 Führen Sie die folgenden Schritte aus, um ein Design zu konfigurieren, um die TypeKit-Konfiguration zu verwenden:
 
 1. Öffnen Sie in der Autorinstanz ein Design im Designeditor.
-1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**.
+1. Navigieren Sie im Design-Editor zu **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**.
 1. Wählen Sie im Feld **[!UICONTROL Typekit-Konfiguration]** ein Kit und klicken Sie auf **[!UICONTROL Speichern]**.
 
    Jetzt können Sie sehen, dass die Schriften in der Font-Familien-Eigenschaft des Designs hinzugefügt werden.
 
-### Auflistung und Auswählen von Schriften im Designeditor {#listing-and-selecting-fonts-in-theme-editor}
+### Auflistung und Auswählen von Schriften im Designeditor  {#listing-and-selecting-fonts-in-theme-editor}
 
 Mit dem Designkonfigurationsdienst können Sie dem Designeditor weitere Schriften hinzufügen. Führen Sie die folgenden Schritte durch, um Schriften hinzuzufügen:
 
-1. Melden Sie sich bei der AEM-Web-Konsole mit Administratorberechtigungen an. URL for the AEM Web Console is `https://[server]:[port]/system/console/configMgr`.
+1. Melden Sie sich bei der AEM-Web-Konsole mit Administratorberechtigungen an. Die URL für die AEM Webkonsole ist `https://[server]:[port]/system/console/configMgr`.
 1. Öffnen Sie den **[!UICONTROL Adaptiven Formulardesignkonfigurationsdienst]**.
 
    ![theme-config](assets/theme-config.png)
 
 1. Klicken Sie auf „+“, geben Sie den Namen der Schrift ein und klicken Sie auf **Speichern**. Die Schrift wurde hinzugefügt und ist im Designeditor verfügbar.
 
-#### Auswahl der Schriften im Designeditor  {#selecting-fonts-in-theme-editor}
+#### Auswahl der Schriften im Designeditor   {#selecting-fonts-in-theme-editor}
 
 Verwenden Sie die Schaltfläche „+“, um eine Schrift hinzuzufügen. Wenn Sie eine Schrift hinzufügen, wird sie in der Seitenleiste angezeigt.
 
@@ -550,9 +550,9 @@ Sie können die Komponentenschriftänderung sehen.
 
 Das Schriftfamilienfeld unterstützt mehrere Schriftarten. Wenn Sie eine Schrift eingeben, sucht der Browser nach ihr und wendet sie auf die ausgewählte Komponente an. Wenn der Browser eine Schrift nicht finden kann, sucht er nach einer Schrift, die in der Familie daneben liegt. Sie können mit der Eingabe der gewünschten Schrift beginnen. Wenn Sie die Schrift, die Sie verwenden möchten, nicht finden, können Sie eine generische Schrift in der Familie eingeben und verwenden.
 
-#### Maskieren von Stilen, die im Designeditor angewendet wurden {#mask-styles-applied-in-theme-editor}
+#### Maskieren von Stilen, die im Designeditor angewendet wurden  {#mask-styles-applied-in-theme-editor}
 
-Sie können die Stile maskieren, die in einem Design angewendet wurden. In the theme editor sidebar, you can use the ![toggle_eye](assets/toggle_eye.png)icon to disable an applied style. Wenn Sie beispielsweise die Abmessungen einer Komponente in einem Formular oder einer interaktiven Kommunikation ändern, können Sie die Maskenschaltfläche auf der linken Seite einer Eigenschaft verwenden, um sie zu deaktivieren. Wenn Sie ein Design speichern, bleiben die gewählten Maskierungsoptionen erhalten.
+Sie können die Stile maskieren, die in einem Design angewendet wurden. In der Design-Editor-Seitenleiste können Sie das Symbol ![toswitch_eye](assets/toggle_eye.png)verwenden, um einen angewendeten Stil zu deaktivieren. Wenn Sie beispielsweise die Abmessungen einer Komponente in einem Formular oder einer interaktiven Kommunikation ändern, können Sie die Maskenschaltfläche auf der linken Seite einer Eigenschaft verwenden, um sie zu deaktivieren. Wenn Sie ein Design speichern, bleiben die gewählten Maskierungsoptionen erhalten.
 
 ![Maskenoption, die in der Seitenleiste des Designeditors verfügbar ist](assets/mask-styles.png)
 
@@ -560,26 +560,26 @@ Das folgende Beispiel zeigt maskierte und nicht maskierte Stile in einem Design.
 
 ![Maskierte und nicht maskierte Stile](assets/mask2.png)
 
-## Applying a theme to a form or interactive communication {#applying-a-theme-to-a-form-or-interactive-communication-br}
+## Anwenden eines Designs auf ein Formular oder eine interaktive Kommunikation {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
 So wenden Sie ein Design auf ein adaptives Formular an:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus. Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Öffnen]**.
-1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, and then click ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, klicken Sie dann auf ![Feldebene](assets/field-level.png) > **[!UICONTROL Container des adaptiven Formulars]** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
 
    Sie können die Eigenschaften Ihres Formulars in der Seitenleiste bearbeiten.
 
 1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Formatierung]**.
-1. Select your theme from the **[!UICONTROL Adaptive Form Theme]** drop-down and click **[!UICONTROL Done]** ![check-button](assets/check-button.png).
+1. Wählen Sie Ihr Design aus der Dropdownliste **[!UICONTROL Adaptives Formulardesign]** und klicken Sie auf **[!UICONTROL Fertig]** ![Häkchen-Schaltfläche](assets/check-button.png).
 
 So wenden Sie ein Design auf eine interaktive Kommunikation an
 
 1. Öffnen Sie Ihre interaktive Kommunikation im Bearbeitungsmodus. Um eine interaktive Kommunikation im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Öffnen]**.
-1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) >**[!UICONTROL Document Container]**, and then click ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, klicken Sie dann auf ![Feldebene](assets/field-level.png) >**[!UICONTROL Dokument-Container]** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
 
    Sie können die Eigenschaften Ihres Formulars in der Seitenleiste bearbeiten.
 
-1. In the sidebar, under **[!UICONTROL Basic]**, select your theme from the **[!UICONTROL Theme]** drop-down and click **[!UICONTROL Done]** ![check-button](assets/check-button.png).
+1. Wählen Sie in der Seitenleiste unter **[!UICONTROL Einfach]** Ihr Design aus der Dropdownliste **[!UICONTROL Design]** und klicken Sie auf **[!UICONTROL Fertig]** ![Häkchen-Schaltfläche](assets/check-button.png).
 
 ### Ändern des Designs eines Formulars zur Laufzeit {#change-theme-of-a-form-at-runtime}
 
@@ -593,13 +593,13 @@ Mit dem Parameter „themeOverride“ können Sie ein Design auf die Laufzeit an
 
 Mit der Option `themeOverride`   können Sie einen Pfad zu einem Design bereitstellen. Sie ändert das Design des Formulars und aktualisiert das Formular mit aktualisierten Stilen.
 
-## Getting specific appearance using Themes {#specific-af-appearance}
+## Abrufen eines bestimmten Erscheinungsbilds mit Themen {#specific-af-appearance}
 
 Bei AEM Forms gibt es neben dem standardmäßigen Standarddesign-Design auch viele andere Designs. Wenn Sie andere Designs sowie weitere Änderungen zur Gestaltung Ihres Formulars oder Ihrer interaktiven Kommunikation verwenden möchten, kopieren Sie das gewünschte Design aus dem Ordner der Designbibliothek. Fügen Sie die kopierten Designs an einer Stelle außerhalb des Ordners für die Designbibliothek ein und bearbeiten Sie das kopierte Design wie benötigt.
 
 Gehen Sie wie folgt vor, um ein Design zu kopieren:
 
-1. In authoring instance, navigate to **[!UICONTROL Adobe Experience Manager > Forms > Themes]**.
+1. Navigieren Sie in der Autoreninstanz zu **[!UICONTROL Adobe Experience Manager > Forms > Themen]**.
 1. Öffnen Sie den Ordner für die Designbibliothek.
 1. Setzen Sie im Ordner für die Designbibliothek den Mauszeiger auf das entsprechende vordefinierte Design und tippen Sie auf ****.
 1. Fügen Sie das kopierte Design außerhalb des Ordners für die Designbibliothek ein.
@@ -613,11 +613,11 @@ Nachdem Sie das Design angepasst haben, wenden Sie es auf Ihr Formular oder Ihre
 
 ## Auswirkungen auf andere Anwendungsfälle adaptiver Formulare {#impact-on-other-adaptive-form-use-cases}
 
-* **Veröffentlichen und Rückgängigmachen der Veröffentlichung eines Formulars:** Beim Veröffentlichen eines Formulars wird das angewendete Design ebenfalls veröffentlicht (sofern es noch nicht veröffentlicht wurde)
-* **Formular importieren/exportieren:** Beim Importieren oder Exportieren eines Formulars wird das zugehörige Design auch automatisch importiert oder exportiert.
+* **Formular veröffentlichen/Veröffentlichung rückgängig machen:** Beim Veröffentlichen eines Formulars wird das angewendete Design ebenfalls veröffentlicht (sofern es noch nicht veröffentlicht wurde)
+* **Formular importieren/exportieren:** Beim Importieren oder Exportieren eines Formulars wird das zugehörige Design ebenfalls automatisch importiert oder exportiert.
 * **Verweise auf ein Formular:** Der Abschnitt &quot;Verweise&quot;in den Formularverweisen enthält einen zusätzlichen Eintrag für das Design.
-* **Letzte Änderungszeit eines Formulars:** Wird aktualisiert, wenn das zugehörige Design geändert wird.
-* **A/B-Tests:** Bei A/B-Tests können Sie ein anderes Design auf zwei Versionen des Formulars anwenden. Die Informationen der beiden Designs werden einzeln in den beiden Guide-Containern gespeichert.
+* **Letzte Änderungszeit eines Formulars: Wird** aktualisiert, wenn das zugehörige Design geändert wird.
+* **A/B-Tests:** Sie können bei A/B-Tests ein anderes Design auf zwei Versionen des Formulars anwenden. Die Informationen der beiden Designs werden einzeln in den beiden Guide-Containern gespeichert.
 
 ## CSS-Generierungssequenz {#css-generation-sequence}
 
@@ -635,15 +635,15 @@ Wenn Sie im Design-Editor Stile für Komponenten angeben, wird wie oben beschrie
 
 Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
 
-* Option **CSS anzeigen** in der Seitenleiste: Wenn Sie eine Komponente im Design auswählen, wird die Option „CSS anzeigen“ in der Seitenleiste angezeigt. It shows the generated CSS, including CSS for `::before` and `::after` pseudo elements.
+* Option **CSS anzeigen** in der Seitenleiste: Wenn Sie eine Komponente im Design auswählen, wird die Option „CSS anzeigen“ in der Seitenleiste angezeigt. Es zeigt die generierte CSS, einschließlich CSS für `::before`- und `::after`-Pseudoelemente.
 
-* **CSS** -Option &quot;Ansicht-Design&quot;in der Arbeitsflächenleiste: Klicken Sie in der Symbolleiste der Arbeitsfläche auf ![Designoptionen](assets/theme-options.png) > CSS für **Ansichten-Design**. Dadurch wird das gesamte Design-CSS angezeigt, das mithilfe der von Ihnen im Design-Editor definierten Eigenschaften generiert wurde.
+* **Option** CSS für Ansicht-Design in der Symbolleiste der Arbeitsfläche: Klicken Sie in der Symbolleiste der Arbeitsfläche auf  ![thematische Optionen](assets/theme-options.png) >  **Ansicht-Design-CSS**. Dadurch wird das gesamte Design-CSS angezeigt, das mithilfe der von Ihnen im Design-Editor definierten Eigenschaften generiert wurde.
 
 ## Fehlerbehebung, Empfehlungen und optimale Verfahren {#troubleshooting-recommendations-and-best-practices}
 
 * **Vermeiden von Assets aus einem anderen Design**
 
-   Wenn Sie ein Design bearbeiten, können Sie Assets (z. B. Bilder) aus anderen Themen durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. For example, when you select **[!UICONTROL Page]** ![edit-button](assets/edit-button.png)> **[!UICONTROL Background > Add > Image]**, you see a dialog that lets you browse and add images in other theme.
+   Wenn Sie ein Design bearbeiten, können Sie Assets (z. B. Bilder) aus anderen Themen durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. Wenn Sie z. B. **[!UICONTROL Seite]** ![Bearbeitungsschaltfläche](assets/edit-button.png) **[!UICONTROL Hintergrund > Hinzufügen > Bild]** auswählen, wird ein Dialogfeld angezeigt, in dem Sie Bilder in anderen Designs suchen und hinzufügen können.
 
 *  Dabei können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt, dieses jedoch verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu durchsuchen und hinzuzufügen.
 
@@ -675,7 +675,7 @@ Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
 
 * **Verwenden clientseitiger Bibliotheken**
 
-   If you want to create client libraries to import styling information, see [Using Client Side Libraries](/help/sites-developing/clientlibs.md). Nachdem Sie eine Client-Bibliothek erstellt haben, können Sie sie in das Design mithilfe der oben genannten Schritte importieren.
+   Wenn Sie Clientbibliotheken zum Importieren von Stilinformationen erstellen möchten, lesen Sie [Verwenden clientseitiger Bibliotheken](/help/sites-developing/clientlibs.md). Nachdem Sie eine Client-Bibliothek erstellt haben, können Sie sie in das Design mithilfe der oben genannten Schritte importieren.
 
 * **Ändern der Layoutbreite des Containers**
 
