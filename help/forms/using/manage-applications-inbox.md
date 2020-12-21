@@ -19,11 +19,11 @@ ht-degree: 83%
 
 # Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Zu den vielen Möglichkeiten, einen formularzentrierten Workflow zu starten oder auszulösen, gehören Anwendungen im AEM-Posteingang. Sie müssen eine Workflow-Anwendung erstellen, um einen Forms-Workflow als Anwendung im Posteingang verfügbar zu machen. For more information about workflow application and other ways to launch Forms workflows, see [Launch a Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md#launch).
+Zu den vielen Möglichkeiten, einen formularzentrierten Workflow zu starten oder auszulösen, gehören Anwendungen im AEM-Posteingang. Sie müssen eine Workflow-Anwendung erstellen, um einen Forms-Workflow als Anwendung im Posteingang verfügbar zu machen. Weitere Informationen zur Workflow-Anwendung und anderen Methoden zum Starten von Forms Workflows finden Sie unter [Einen Forms-zentrierten Workflow unter OSGi](/help/forms/using/aem-forms-workflow.md#launch) starten.
 
 Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus verschiedenen AEM-Komponenten einschließlich Forms-Workflows zusammen. Wenn ein Forms-Workflow ausgelöst wird, der einen Schritt zur Zuweisung einer Aufgabe enthält, wird die dazugehörige Anwendung als Aufgabe im Posteingang der zugewiesenen Person angezeigt. Wenn der Empfänger eine Gruppe ist, wird die Aufgabe im Posteingang aller Gruppenmitglieder angezeigt, bis eine Person die Aufgabe beansprucht oder delegiert.
 
-In der Benutzeroberfläche des Posteingangs können die Aufgaben in einer Listen- oder einer Kalenderansicht angezeigt werden. Sie können außerdem die Einstellungen für die Anzeige konfigurieren. Sie können die Aufgaben nach verschiedenen Parametern filtern. For more information about view and filters, see [Your Inbox](/help/sites-authoring/inbox.md).
+In der Benutzeroberfläche des Posteingangs können die Aufgaben in einer Listen- oder einer Kalenderansicht angezeigt werden. Sie können außerdem die Einstellungen für die Anzeige konfigurieren. Sie können die Aufgaben nach verschiedenen Parametern filtern. Weitere Informationen zu Ansicht und Filtern finden Sie unter [Ihr Posteingang](/help/sites-authoring/inbox.md).
 
 Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen und zugewiesene Aufgaben verwalten.
 
@@ -33,15 +33,15 @@ Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen
 
 ## Anwendung erstellen {#create-application}
 
-1. Gehen Sie zu AEM Posteingang `https://[server]:[port]/aem/inbox`.
-1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. Die Seite &quot;Anwendung auswählen&quot;wird angezeigt.
-1. Select an application and click **[!UICONTROL Create]**. Das zu der Anwendung gehörige adaptive Formular wird geöffnet. Fill up the forms and tap **[!UICONTROL Submit]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
+1. Gehen Sie zu AEM Posteingang bei `https://[server]:[port]/aem/inbox`.
+1. Tippen Sie in der Benutzeroberfläche des Posteingangs auf **[!UICONTROL Erstellen > Anwendung]**. Die Seite &quot;Anwendung auswählen&quot;wird angezeigt.
+1. Wählen Sie eine Anwendung aus und klicken Sie auf **[!UICONTROL Erstellen]**. Das zu der Anwendung gehörige adaptive Formular wird geöffnet. Füllen Sie die Formulare aus und tippen Sie auf **[!UICONTROL Senden]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
 
 ## Aufgaben verwalten {#manage-tasks}
 
 Wenn ein Forms-Workflow ausgelöst wird und Sie der Empfänger sind oder einer Empfängergruppe angehören, wird eine Aufgabe in Ihrem Posteingang angezeigt. Sie können im Posteingang Aufgabendetails anzeigen und verfügbare Aktionen für die Aufgabe ausführen.
 
-### Aufgaben annehmen oder delegieren {#claim-or-delegate-tasks}
+### Aufgaben annehmen oder delegieren  {#claim-or-delegate-tasks}
 
 Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenmitglieder angezeigt. Jedes Gruppenmitglied kann diese Aufgabe annehmen oder an ein anderes Gruppenmitglied delegieren. Gehen Sie dazu wie folgt vor:
 
@@ -81,7 +81,7 @@ Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
 #### Aufgabendetails {#task-details}
 
-Der Abschnitt „Aufgabendetails“ zeigt Informationen zur Aufgabe an. The information displayed depends on the configuration settings of the [Assign task step](/help/sites-developing/workflows-step-ref.md) in the workflow. Das Beispiel oben zeigt die Beschreibung, den Status, das Startdatum und den verwendeten Workflow für die Aufgabe an. Es ist außerdem möglich, Dateien an Aufgaben anzuhängen.
+Der Abschnitt „Aufgabendetails“ zeigt Informationen zur Aufgabe an. Die angezeigten Informationen hängen von den Konfigurationseinstellungen von [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) im Workflow ab. Das Beispiel oben zeigt die Beschreibung, den Status, das Startdatum und den verwendeten Workflow für die Aufgabe an. Es ist außerdem möglich, Dateien an Aufgaben anzuhängen.
 
 #### Formular- {#form}
 
@@ -89,7 +89,7 @@ Auf der Registerkarte „Formular“ im Hauptinhaltsbereich werden das übermitt
 
 #### Workflow-Details {#workflow-details}
 
-Die Registerkarte „Workflow-Details“ oben zeigt den Fortschritt der Aufgabe in verschiedenen Phasen des Workflows an. Sie zeigt abgeschlossene, aktuelle und ausstehende Phasen der Aufgabe. The stages for a workflow are defined in the [Assign task step](/help/sites-developing/workflows-step-ref.md) of the associated workflow.
+Die Registerkarte „Workflow-Details“ oben zeigt den Fortschritt der Aufgabe in verschiedenen Phasen des Workflows an. Sie zeigt abgeschlossene, aktuelle und ausstehende Phasen der Aufgabe. Die Schritte für einen Workflow werden im Schritt [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) des zugehörigen Workflows definiert.
 
 Darüber hinaus wird auf der Registerkarte der Aufgabenverlauf für jede abgeschlossene Phase im Workflow angezeigt. Sie können auf **[!UICONTROL Details anzeigen]** für eine abgeschlossene Phase tippen, um Details zu dieser Phase anzuzeigen. Dies zeigt Kommentare, Formular- und Aufgabenanhänge, Status, Start- und Enddatum usw. für die Aufgabe an.
 
@@ -101,24 +101,24 @@ Die Aktionssymbolleiste zeigt alle verfügbaren Optionen für die Aufgabe. Speic
 
 Wenn Sie eine Aktion für die Aufgabe ausführen, wird diese im Workflow weitergeleitet.
 
-### Abgeschlossene Aufgaben anzeigen {#view-completed-tasks}
+### Abgeschlossene Aufgaben anzeigen  {#view-completed-tasks}
 
 Im AEM-Posteingang werden nur aktive Aufgaben angezeigt. Abgeschlossene Aufgaben werden nicht in der Liste aufgeführt. Sie können jedoch mithilfe von Posteingangsfiltern Aufgaben basierend auf verschiedenen Parametern filtern, z. B. Aufgabentyp, Status, Start- und Enddatum usw. Abgeschlossene Aufgaben anzeigen:
 
-1. In AEM Inbox, tap ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
+1. Tippen Sie in AEM Posteingang auf ![umschaltbares Bedienfeld1](assets/toggle-side-panel1.png), um die Filterauswahl zu öffnen.
 1. Tippen Sie auf das Akkordion **[!UICONTROL Aufgabenstatus]** und wählen Sie **[!UICONTROL Abgeschlossen]**. Alle Ihre abgeschlossenen Aufgaben werden angezeigt.
 
    ![filter-1](assets/filter-1.png)
 
 1. Wählen Sie eine Aufgabe und klicken Sie auf **[!UICONTROL Öffnen]**.
 
-Die Aufgabe wird geöffnet und das dazugehörige Dokument oder adaptive Formular wird angezeigt. For adaptive form, it displays the read-only adaptive form or its PDF document of record as configured in the Form/Document tab of the [Assign Task workflow step](/help/sites-developing/workflows-step-ref.md).
+Die Aufgabe wird geöffnet und das dazugehörige Dokument oder adaptive Formular wird angezeigt. Bei adaptiven Formularen wird das schreibgeschützte adaptive Formular oder das zugehörige PDF-Dokument des Datensatzes angezeigt, wie auf der Registerkarte &quot;Formular/Dokument&quot;des Arbeitsablaufschritts [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) konfiguriert.
 
 Im Abschnitt mit den Aufgabendetails werden Informationen wie die durchgeführte Aktion, der Aufgabenstatus, das Startdatum und das Enddatum angezeigt.
 
 ![completed-Aufgabe](assets/completed-task.png)
 
-The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
+Auf der Registerkarte **[!UICONTROL Workflow-Details]** werden die einzelnen Schritte des Workflows angezeigt. Tippen Sie auf **[!UICONTROL Details zur Ansicht]**, um detaillierte Informationen zu erhalten.
 
 ![completed-Aufgabe-workflow](assets/completed-task-workflow.png)
 
