@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# SocialUtils-Umgestaltung {#socialutils-refactoring}
+# SocialUtils Refactoring {#socialutils-refactoring}
 
 ## SocialUtils-Paket veraltet {#socialutils-package-deprecated}
 
@@ -26,7 +26,7 @@ Das Paket **com.adobe.cq.social.ugcbase.SocialUtils** wurde in AEM 6.1 nicht meh
 
 In den folgenden Tabellen werden die Methoden Liste, die anstelle der SocialUtils-Methoden verwendet werden sollen.
 
-## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
+## SocialResourceUtilities-Paket {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -48,7 +48,7 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle der SocialUtil
 |---|
 | SocialResourceProvider getSocialResourceProvider(Resource resource) | ersetzt SocialResourceProvider getConfigurationProvider(Resource resource) |
 
-## SCFUtilities-Paket {#scfutilities-package}
+## SCFUtilities Package {#scfutilities-package}
 
 | Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
@@ -60,7 +60,7 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle der SocialUtil
 | String getSocialProfileURL(String username, ResourceResolver resolver, Page page) |
 | UserProperties getUserProperties(ResourceResolver resolver, String userId) |
 
-## For Internal Use Only {#for-internal-use-only}
+## Nur zur internen Verwendung {#for-internal-use-only}
 
 | boolean canAddNode(Session session, String path) |
 |---|
