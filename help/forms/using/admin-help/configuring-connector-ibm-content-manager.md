@@ -31,7 +31,7 @@ Connector für IBM Content Manager aktiviert die Kommunikation zwischen AEM Form
 1. (Optional) Geben Sie in das Feld „Alias-Verbindungszeichenfolge“ zusätzliche Verbindungsargumente ein. In den meisten Fällen sollte dieses Feld leer sein. Weitere Informationen finden Sie in der IMB-Dokumentation.
 1. Klicken Sie auf Speichern.
 
-## Diensteinstellungen überprüfen {#validation-of-service-settings}
+## Diensteinstellungen überprüfen  {#validation-of-service-settings}
 
 Wenn Sie einen falschen Aliasnamen für den Datenspeicher, einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhalten Sie in Abhängigkeit davon, ob der Content Repository Connector für IBM Content Manager-Dienst aktuell ausgeführt wird, folgende Ergebnisse:
 
