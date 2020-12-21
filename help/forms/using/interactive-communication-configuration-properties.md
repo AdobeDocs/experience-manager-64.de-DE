@@ -24,7 +24,7 @@ Bearbeiten Sie die Standardkonfigurationseigenschaften für interaktive Kommunik
 
 Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des Pakets [AEM Forms Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) automatisch konfiguriert werden. Autoren der interaktiven Kommunikation können diese Standardkonfigurationseigenschaften mit Hilfe der Seite **Konfiguration von Adobe Experience Manager Web Console** bearbeiten.
 
-Open the **Adobe Experience Manager Web Console Configuration** page using the following URL:
+Öffnen Sie die Seite **Adobe Experience Manager Web Console Configuration** unter Verwendung der folgenden URL:
 
 https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 
@@ -37,7 +37,7 @@ Die Konfigurationseigenschaften umfassen Folgendes:
 
 ## Konfiguration für Dokumentfragment {#document-fragments-configuration}
 
-Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
+Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** auf **, um die Konfigurationseigenschaften für Dokument-Fragmente Ansicht.**
 
 <table> 
  <tbody> 
@@ -58,19 +58,19 @@ Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web C
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td>Einzug</td> 
    <td>Die Breite der einzelnen Einzugseinheit, die auf den Text in Listendokumentfragmenten angewendet wird.</td> 
    <td>12.7mm</td> 
-   <td>Nummer</td> 
+   <td>Zahl</td> 
   </tr> 
   <tr> 
    <td>Mindestbreite von römischen Zahlen</td> 
    <td>Mindestbreite für das Aufzählungsfeld oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden. </td> 
-   <td>12.7mm</td> 
-   <td>Nummer</td> 
+   <td>12.7 mm</td> 
+   <td>Zahl</td> 
   </tr> 
   <tr> 
    <td>Mindestbreite von Nummer</td> 
@@ -81,35 +81,35 @@ Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web C
  </tbody> 
 </table>
 
-## Korrespondenzkonfiguration erstellen {#create-correspondence-configuration}
+## Korrespondenzkonfiguration erstellen  {#create-correspondence-configuration}
 
-Tap **Create Correspondence Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
+Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** auf Korrespondenzkonfiguration erstellen **, um die Konfigurationseigenschaften für die Agent-Benutzeroberfläche Ansicht.**
 
-| Eigenschaft | Beschreibung | Default | Zulässige Werte |
+| Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
 | Gelösten Inhalt zur Bearbeitung anzeigen | Aktivieren Sie das Kontrollkästchen, um aufgelösten Inhalt (tatsächliche Werte anstelle von Platzhaltern) anzuzeigen, während Sie Textmodule auf der Agentenbenutzeroberfläche bearbeiten. | Nicht ausgewählt | Nicht zutreffend |
 | Wasserzeichen während der Vorschau anwenden | Aktivieren Sie das Kontrollkästchen, um ein Wasserzeichen auf den Druckkanal der interaktiven Kommunikation im Vorschaumodus anzuwenden. | Nicht ausgewählt | Nicht zutreffend |
 
-## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel. Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
+Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** auf **, um die Konfigurationseigenschaften für den Web-Kanal Adaptive Forms und Interactive Communications Ansicht.** Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
 
-| Eigenschaft | Beschreibung | Default | Zulässige Werte |
+| Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
 | Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und in interaktiver Kommunikation enthalten sind. | Ausgewählt | Nicht zutreffend |
-| Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Nummer |
+| Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
 | Dateinamen als eindeutig festlegen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
 
-## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel themes.
+Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** auf **Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation**, um die Konfigurationseigenschaften für Themen des adaptiven Forms und des interaktiven Kommunikations-Web-Kanals Ansicht.
 
 <table> 
  <tbody> 
   <tr> 
    <td>Eigenschaft</td> 
    <td>Beschreibung</td> 
-   <td>Default</td> 
+   <td>Standard</td> 
    <td>Zulässige Werte</td> 
   </tr> 
   <tr> 
