@@ -38,23 +38,23 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **Tage:** Die Anzahl der Tage, nach denen die Aufgabe abgeschlossen werden soll. Die Anzahl der Tage wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Tage im Feld „Tage“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Tagen ein Zeitüberschreitungshandler ausgelöst.
 * **Stunden:** Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Anzahl der Stunden wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Stunden im Feld „Stunden“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Stunden ein Zeitüberschreitungshandler ausgelöst.
 * **Zeitüberschreitung nach Fälligkeitsdatum:** Wählen Sie diese Option, um das Auswahlfeld „Zeitüberschreitungshandler“ zu aktivieren.
-* **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
+* **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripten, die im CRX-Repository unter [apps]/fd/Dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl zur Verfügung. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
 * **Markieren Sie Aktion und Kommentar aus der letzten Aufgabe in „Aufgabendetails“:** Wählen Sie diese Option, um die letzte ausgeführte Aktion und den Kommentar, der im Abschnitt „Aufgabendetail“ einer Aufgabe erhalten wurde, anzuzeigen.
 * **Typ:** Wählen Sie den Typ des Dokuments, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular oder ein nicht interaktives PDF-Dokument auswählen.
 * **Adaptives Formular verwenden:** Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das unter einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben.
 * **Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie im Feld &quot;Typ&quot;ein adaptives Formular oder eine schreibgeschützte Option für ein adaptives Formular in Verbindung mit der Option &quot;Absoluter Pfad&quot;im Feld &quot;Adaptives Formular verwenden&quot;verwenden.
-* **PDF-Pfad:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Der Pfad ist immer relativ zur Payload. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
+* **PDF-Pfad:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Der Pfad ist immer relativ zur Payload. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
 * **Für abgeschlossene Aufgaben rendern Sie das adaptive Formular wie folgt**: Wenn eine Aufgabe als abgeschlossen markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument ausgeben. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **Vorab auszufüllende Angaben:** Die folgenden unten aufgeführten Felder dienen als Eingaben für die Aufgabe: 
 
-   * **Datendateipfad :** Pfad der Eingabedatendatei (.json oder .xml). Der Pfad ist immer relativ zur Payload. Beispielsweise enthält die Datei die Daten, die für das Formular über eine AEM Inbox-Anwendung gesendet werden. An example path is [Payload_Directory]/workflow/data.
-   * **Anlagenpfad:** Anlagen, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad ist immer relativ zur Payload. An example path is [Payload_Directory]/attachments/
+   * **Datendateipfad :** Pfad der Eingabedatendatei (.json oder .xml). Der Pfad ist immer relativ zur Payload. Beispielsweise enthält die Datei die Daten, die für das Formular über eine AEM Inbox-Anwendung gesendet werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
+   * **Anlagenpfad:** Anlagen, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad ist immer relativ zur Payload. Ein Beispielpfad ist [Payload_Directory]/attachments/
 
 * **Gesendete Informationen:** Die folgenden Felder dienen als Ausgabespeicherorte für die Aufgabe:
 
-   * **Datendateipfad:** Pfad der Datendatei (.json oder .xml). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Der Pfad ist immer relativ zur Payload. For example, [Payload_Directory]/Workflow/data, where data is a file.
+   * **Datendateipfad:** Pfad der Datendatei (.json oder .xml). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Der Pfad ist immer relativ zur Payload. Beispiel: [Payload_Directory]/Workflow/data, wobei data eine Datei ist.
    * **Anlagenpfad:** Pfad zum Speichern der Formularanlagen in einer Aufgabe.
-   * **Datensatzdokumentpfad:** Pfad zum Speichern einer Datensatzdokumentdatei. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Das Datensatzdokument wird nicht generiert, wenn das Feld „Pfad“ leer ist. Der Pfad ist immer relativ zur Payload.
+   * **Datensatzdokumentpfad:** Pfad zum Speichern einer Datensatzdokumentdatei. Beispiel: [Payload_Directory]/DocumentofRecord/credit-card.pdf. Das Datensatzdokument wird nicht generiert, wenn das Feld „Pfad“ leer ist. Der Pfad ist immer relativ zur Payload.
 
 * **Optionen zuweisen:** Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
 * **Teilnehmerauswahl:** Die Option ist verfügbar, wenn die Option **Dynamically to a user or group (Dynamisch zu einem Benutzer oder einer Gruppe)** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Dienst verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie im Abschnitt [Dynamisches Zuweisen eines Workflows zu Benutzern](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
@@ -79,7 +79,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **Bevollmächtigtem erlauben, Anlage(n) der Aufgabe hinzuzufügen**: Wählen Sie diese Option, um Anlagen für die Aufgabe zu aktivieren. Ein Beauftragter kann die Anlagen in der AEM Inbox zum Zeitpunkt der Aufgabensendung hinzufügen.
 * **Ausgabepfad von Aufgabenanlagen**: Geben Sie den Speicherort des Anlagenordners an. Der Speicherort ist relativ zur Payload.
 * **Benutzerdefinierte Metadaten verwenden:** Wählen Sie diese Option, um das benutzerdefinierte Metadatenfeld zu aktivieren. Benutzerdefinierte Metadaten werden in E-Mail-Vorlagen verwendet.
-* **Benutzerdefinierte Metadaten:** Wählen Sie benutzerdefinierte Metadaten für die E-Mail-Vorlagen. Die benutzerdefinierten Metadaten sind im CRX-Repository unter apps/fd/dashboard/scripts/metadataScripts verfügbar. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie können auch einen Dienst für die benutzerdefinierten Metadaten verwenden. You can also extend the `WorkitemUserMetadataService` interface to provide custom metadata.
+* **Benutzerdefinierte Metadaten:** Wählen Sie benutzerdefinierte Metadaten für die E-Mail-Vorlagen. Die benutzerdefinierten Metadaten sind im CRX-Repository unter apps/fd/dashboard/scripts/metadataScripts verfügbar. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie können auch einen Dienst für die benutzerdefinierten Metadaten verwenden. Sie können auch die `WorkitemUserMetadataService`-Schnittstelle erweitern, um benutzerdefinierte Metadaten bereitzustellen.
 
 * **Daten aus vorherigen Schritten anzeigen**: Wählen Sie - falls verfügbar - diese Option aus, um den Bevollmächtigten das Anzeigen früherer Bevollmächtigter, bereits vorgenommener Aktionen, Kommentare zu dieser Aufgabe und des Nachweisdokuments über abgeschlossene Aufgaben zu ermöglichen.
 * **Daten aus allen nachfolgenden Schritten einblenden:** Wählen Sie diese Option, um dem aktuellen Bearbeiter zu ermöglichen, die durchgeführte Aktion und Kommentare, die von nachfolgenden Beauftragten zur Aufgabe hinzugefügt wurden, anzuzeigen. Außerdem kann sich der aktuelle Bevollmächtigte ein Dokument als Nachweis über die abgeschlossenen Aufgaben anzeigen lassen - sofern verfügbar.
@@ -99,7 +99,7 @@ Der E-Mail-Schritt verwendet den Day CQ Mail-Dienst Bevor Sie den E-Mail-Schritt
 
 **HTML-E-Mail-Vorlage**: HTML-Vorlage für die E-Mail. Sie können diese Variablen in einer E-Mail-Vorlage verwenden. Der E-Mail-Schritt extrahiert und zeigt alle Variablen an, die in einer Vorlage für Eingaben enthalten sind. 
 
-**E-Mail-Vorlagenmetadaten:** Der Wert der E-Mail-Vorlagenvariablen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Workflow-Metadateneigenschaft sein.
+**Metadaten für E-Mail-Vorlagen: Der** Wert der Variablen für E-Mail-Vorlagen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Eigenschaft für Workflow-Metadaten sein.
 
 * **Literal:** Verwenden Sie die Option, wenn Sie den genauen, zu spezifizierenden Wert kennen. Beispiel: [example@example.com](mailto:example@example.com).
 
@@ -107,9 +107,9 @@ Der E-Mail-Schritt verwendet den Day CQ Mail-Dienst Bevor Sie den E-Mail-Schritt
 * **Asset-URL:** Verwenden Sie die Option, um einen Weblink einer interaktiven Kommunikation mit der E-Mail einzubetten. Wählen Sie nach Auswahl der Option die einzubettende interaktive Kommunikation aus. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
 * **Bild:** Verwenden Sie die Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&amp;ast;&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.
 
-**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die Option &quot; **Literal** &quot;, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abrufen von Workflow-Metadaten** &quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
+**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die  **** Literaloption aus, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abruf aus Workflow-** Metadaten&quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
 
-**Pfad für Dateianhang:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. An example path is [Payload_Directory]/attachments/
+**Pfad für Dateianhang:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/
 
 **Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den ursprünglichen Dateinamen der Anlage in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **Von Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird.
 
@@ -133,7 +133,7 @@ Wenn Sie den Pfad eines Ordners angeben, z. B. Anlagen, werden alle Dateien, die
 
 **Gebietsschema**: Geben Sie die Sprache des Datensatzdokuments an.
 
-## Schritt „Formulardatenmodelldienst aufrufen“ {#invoke-form-data-model-service-step}
+## Schritt „Formulardatenmodelldienst aufrufen“  {#invoke-form-data-model-service-step}
 
 Sie können [AEM Forms-Datenintegration](/help/forms/using/data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können eine Datenbank, ein Webdienst, ein REST-Dienst, ein OData-Dienst und eine CRM-Lösung sein. Mit AEM Forms-Datenintegration können Sie ein Formulardatenmodell erstellen, das verschiedene Dienste umfasst, um Vorgänge zum Datenabruf, Hinzufügen und Aktualisieren in der konfigurierten Datenbank durchzuführen. Sie können den **Schritt „Formulardatenmodelldienst aufrufen“** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Dienste des FDM abzurufen, zu aktualisieren oder Daten unterschiedlichen Datenquellen hinzuzufügen.
 
@@ -210,10 +210,10 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 
 * **JSON Dot Notation:** Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Service-Parameter zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Parameter zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie ein JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie insurance.customerDetails an, um alle Details eines Kunden als Eingabe für den Dienst anzugeben.
 * **Ausgabe des Dienstes > Zuordnen von Ausgabewerten zu den Metadaten:** Wählen Sie die Option zum Speichern der Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu.
-* **Output of service > Save output as JSON:** Wählen Sie die Option zum Speichern der Ausgabewerte in einer JSON-Datei aus.
+* **Ausgabe des Dienstes > Ausgabe als JSON speichern:** Wählen Sie die Option zum Speichern der Ausgabewerte in einer JSON-Datei aus.
 * **Ausgabe JSON-Dateipfad** Pfad zum Speichern der JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein.
 
-## Schritt „Dokument signieren“ {#sign-document-step}
+## Schritt „Dokument signieren“  {#sign-document-step}
 
 Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren von Dokumenten verwenden. Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 
@@ -244,14 +244,14 @@ Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Ers
 
 Fügen Sie einen Zeitstempel in das Dokument ein. Sie geben Dokumentdetails wie den Pfad des Eingabedokuments, den Namen des Eingabedokuments und den Speicherort für die exportierten Daten an. Sie können die vorhandene Payload-Datei überschreiben oder einen anderen Dateinamen wählen, um Daten in einer anderen Datei im Nutzdatenordner zu speichern.
 
-### Schritt „In Bild umwandeln“ {#convert-to-image-step}
+### Schritt „In Bild umwandeln“  {#convert-to-image-step}
 
 Konvertiert ein PDF-Dokument in eine Bilddatei. Unterstützte Bildformate sind JPEG, JPEG2000, PNG und TIFF. Die folgenden Informationen gelten für Konvertierungen in TIFF-Bilder:
 
 * Eine mehrseitige TIFF-Datei wird generiert.
 * Einige Anmerkungen sind nicht in TIFF-Bildern enthalten. Anmerkungen, die Acrobat zur Erstellung ihrer Darstellung benötigen, sind nicht enthalten.
 
-### Schritt „Nach PDF/A konvertieren“ {#convert-to-pdf-a-step}
+### Schritt „Nach PDF/A konvertieren“  {#convert-to-pdf-a-step}
 
 Konvertiert ein PDF-Dokument mit den verfügbaren Optionen in das PDF/A-Format. Die PDF/A-Version des Portable Document Format (PDF) ist auf die Archivierung und Langzeitarchivierung von Dokumenten spezialisiert. 
 
@@ -259,7 +259,7 @@ Konvertiert ein PDF-Dokument mit den verfügbaren Optionen in das PDF/A-Format. 
 
 Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie für den Konvertierungsvorgang das Quelldokument und die PostScript-Ebene (2 oder 3) angeben. Das PDF-Dokument, das in eine PostScript-Datei konvertiert wird, muss nicht interaktiv sein.
 
-### Schritt „PDF vom angegebenen Typ erstellen“ {#create-pdf-from-specified-type-step}
+### Schritt „PDF vom angegebenen Typ erstellen“  {#create-pdf-from-specified-type-step}
 
 Generiert ein PDF-Dokument aus einer Eingabedatei. Das Eingabe-Dokument kann relativ zur Nutzlast sein, einen absoluten Pfad haben oder selbst Nutzlast sein.
 
@@ -267,15 +267,15 @@ Generiert ein PDF-Dokument aus einer Eingabedatei. Das Eingabe-Dokument kann rel
 
 Erstellt ein PDF-Dokument anhand der bereitgestellten URL-, HTML- und ZIP-Datei.
 
-### Schritt „Daten exportieren“ {#export-data-step}
+### Schritt „Daten exportieren“  {#export-data-step}
 
 Exportiert Daten aus einem PDF-Formular oder aus einer XDP-Datei Sie müssen den Dateipfad des Eingabedokuments und das Exportdatenformat eingeben. Die Optionen für das Exportdatenformat sind Auto, XDP und XmlData.
 
-### Schritt „PDF in den angegebenen Format exportieren“ {#export-pdf-to-specified-type-step}
+### Schritt „PDF in den angegebenen Format exportieren“  {#export-pdf-to-specified-type-step}
 
 Konvertiert ein PDF-Dokument in ein ausgewähltes Format.
 
-### Schritt „Nicht interaktive PDF-Dateien generieren“ {#generate-non-interactive-pdf-step}
+### Schritt „Nicht interaktive PDF-Dateien generieren“  {#generate-non-interactive-pdf-step}
 
 Generieren Sie eine nicht interaktive PDF-Datei. Es bietet verschiedene Anpassungsoptionen.
 
@@ -283,11 +283,11 @@ Generieren Sie eine nicht interaktive PDF-Datei. Es bietet verschiedene Anpassun
 
 Führt Formulardaten in einem PDF-Formular zusammen. Sie können Formulardaten in ein PDF-Formular importieren.
 
-### Schritt „DDX aufrufen“ {#invoke-ddx-step}
+### Schritt „DDX aufrufen“  {#invoke-ddx-step}
 
 Führt die DDX-Datei in der angegebenen Zuordnung von Eingabedokumenten aus und gibt die veränderten PDF-Dokumente zurück.
 
-### Schritt „PDF optimieren“ {#optimize-pdf-step}
+### Schritt „PDF optimieren“  {#optimize-pdf-step}
 
 Optimiert PDF-Dateien durch Reduzierung ihrer Größe. Das Ergebnis dieser Konvertierung sind PDF-Dateien, die kleiner als ihre Originalversionen sein können. Bei diesem Vorgang werden außerdem PDF-Dokumente in die in den Optimierungsparametern angegebene PDF-Version konvertiert.
 
@@ -301,11 +301,11 @@ Die Optimierungseinstellungen geben an, wie Dateien optimiert werden. Hier sind 
 * Entfernen von eingebetteten Schriftarten
 * Festlegen von Transparenzwerten
 
-### Schritt „PDF-Formular ausgeben“ {#render-pdf-form-step}
+### Schritt „PDF-Formular ausgeben“  {#render-pdf-form-step}
 
 Rendert ein Formular, das in Form Designer (XDP) erstellt wurde, in ein PDF-Formular.
 
-### Schritt „Dokument absichern“ {#secure-document-step}
+### Schritt „Dokument absichern“  {#secure-document-step}
 
 Verschlüsseln, signieren und zertifizieren Sie ein Dokument. AEM Forms unterstützt sowohl die kennwortbasierte als auch die zertifikatsbasierte Verschlüsselung. Sie können auch zwischen verschiedenen Algorithmen zum Signieren von Dokumenten wählen. Zum Beispiel SHA-256 und SH-512. Sie können den Workflow-Schritt zum Reader Extending von PDF-Dokumenten verwenden. Der Workflow-Schritt bietet Optionen zum Aktivieren von Barcode-Dekodierung, digitalen Signaturen, Importieren und Exportieren von PDF-Daten und anderen Optionen.
 
