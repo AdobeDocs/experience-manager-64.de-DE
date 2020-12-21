@@ -22,7 +22,7 @@ AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adap
 
 Wenn ein Unterzeichner oder mehrere Unterzeichner ein adaptives Formular signieren und übermitteln, wird eine Adobe Sign-Vereinbarung generiert, die Informationen zu den Unterzeichnern enthält.
 
-For more information about AEM Forms integration with Adobe Sign, see [Using Adobe Sign in an adaptive form](/help/forms/using/working-with-adobe-sign.md).
+Weitere Informationen zur AEM Forms-Integration mit Adobe Sign finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
 
 ## Benutzerdaten und Datenspeicher {#data}
 
