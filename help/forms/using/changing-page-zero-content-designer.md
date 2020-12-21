@@ -20,7 +20,7 @@ ht-degree: 83%
 
 Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, z. B. der standardmäßige PDF-Viewer in Chrome oder Firefox, den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 
-![defaultpage0message](assets/defaultpage0message.png)
+![defaultPage0message](assets/defaultpage0message.png)
 
 Mit AEM Forms Feature Pack 1 von Designer können Sie die auf Seite Null angezeigte Meldung ändern. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
@@ -30,7 +30,7 @@ Mit AEM Forms Feature Pack 1 von Designer können Sie die auf Seite Null angezei
 
 1. Klicken Sie auf **„Datei“ > „Formulareigenschaften“.**
 
-1. In the Form Properties dialog, click ![plus](assets/plus.png) (Plus icon) to add a custom property.
+1. Klicken Sie im Dialogfeld &quot;Formulareigenschaften&quot;auf ![plus](assets/plus.png) (Plus-Symbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
 
 1. Legen Sie **_pagezerocontent** als den Namen der Eigenschaft fest.
 1. Fügen Sie die Meldung auf Seite Null als Wert im Rich Text-Format hinzu. Beispiel:
