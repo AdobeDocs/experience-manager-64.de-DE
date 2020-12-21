@@ -25,21 +25,24 @@ Wenn Sie ein adaptives Formular erstellen, können Sie ein Symbolleistenlayout f
 
 Die Verwendungen des Symbolleistenlayouts hängen stark von der clientseitigen Verarbeitung ab, die von komplexem JavaScript- und CSS-Code gesteuert wird. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein. Um Abhilfe zu schaffen, stellt AEM clientseitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Webseite, um den korrekten Code zu laden. Detaillierte Informationen dazu finden Sie unter [Funktionen von clientseitigen Bibliotheken in AEM.](/help/sites-developing/clientlibs.md)
 
-![Beispiellayout der Symbolleiste](assets/default_toolbar_layout.png)**Abbildung:** *Beispiellayout der Symbolleiste*
+![Beispiellayout der ](assets/default_toolbar_layout.png)
+**SymbolleisteAbbildung:** *Beispiellayout der Symbolleiste*
 
 Adaptive Formulare enthalten einen standardmäßigen Satz mit Layouts:
 
-![Standardmäßig verfügbare Symbolleistenlayouts ](assets/toolbar1.png)Abbildung **:** *Standardmäßig verfügbare Symbolleistenlayouts*
+![Standardmäßig verfügbare Symbolleistenlayouts  ](assets/toolbar1.png)
+**Abbildung:** *Standardmäßig verfügbare Symbolleistenlayouts*
 
 Darüber hinaus können Sie ein benutzerdefiniertes Symbolleistenlayout erstellen.
 
 Im Folgenden werden die Schritte erläutert, um eine benutzerdefinierte Symbolleiste zu erstellen, die drei Aktionen in der Symbolleiste und die anderen Aktionen in einer Dropdown-Liste in der Symbolleiste anzeigt.
 
-Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. After installing the content package, open `/content/forms/af/CustomLayoutDemo.html` to view the custom toolbar layout demo.
+Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. Öffnen Sie nach der Installation des Inhaltspakets `/content/forms/af/CustomLayoutDemo.html`, um die Demo zum benutzerdefinierten Symbolleistenlayout Ansicht.
 
 CustomToolbarLayoutDemo.zip
 
-[Benutzerdefiniertes Symbolleistenlayout für Datei](assets/customtoolbarlayoutdemo.zip)-Demo abrufen
+[Benutzerdefiniertes ](assets/customtoolbarlayoutdemo.zip)
+FileDemo-Symbolleistenlayout abrufen
 
 ## Erstellen eines benutzerdefinierten Symbolleistenlayouts {#layout-1}
 
@@ -51,15 +54,15 @@ CustomToolbarLayoutDemo.zip
 
    `/libs/fd/af/layouts/toolbar`
 
-   For example, copy the `mobileFixedToolbarLayout` node from the `/libs/fd/af/layouts/toolbar` folder to the `/apps/customlayout/toolbar` folder.
+   Kopieren Sie beispielsweise den Knoten `mobileFixedToolbarLayout` aus dem Ordner `/libs/fd/af/layouts/toolbar` in den Ordner `/apps/customlayout/toolbar`.
 
-   Also, copy the toolbarCommon.jsp to the `/apps/customlayout/toolbar` folder.
+   Kopieren Sie außerdem toolbarCommon.jsp in den Ordner `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
    >Der Ordner, den Sie für die benutzerdefinierten Layouts erstellen, muss mit dem Ordner `apps` erstellt werden.
 
-1. Rename the copied node, `mobileFixedToolbarLayout`, to `customToolbarLayout.`
+1. Benennen Sie den kopierten Knoten `mobileFixedToolbarLayout` in `customToolbarLayout.` um
 
    Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Beispiel: Ändern Sie jcr:description des Knotens in **Benutzerdefiniertes Layout für Symbolleiste**.
 
@@ -81,7 +84,7 @@ CustomToolbarLayoutDemo.zip
 
 1. Wählen Sie dieses benutzerdefinierte Symbolleistenlayout und klicken Sie auf „OK“.
 
-   Add clientlib (javascript and css) in the `/etc/customlayout` node and include the reference of the clientlib in the `customToolbarLayout.jsp`.
+   hinzufügen clientlib (javascript und css) im Knoten `/etc/customlayout` und fügen Sie den Verweis der clientlib in das `customToolbarLayout.jsp` ein.
 
    ![Pfad der Datei customToolbarLayout.css](assets/toolbar_3.png)
 
@@ -226,4 +229,5 @@ CustomToolbarLayoutDemo.zip
 >
 >Die Beschreibung, die im vorherigen Schritt aktualisiert wurde, wird in der Dropdown-Liste „Layout“ angezeigt.
 
-![Desktop-Ansicht der Symbolleiste](assets/toolbar_1.png)**für das benutzerdefinierte Layout Abbildung:** *Desktop-Ansicht der Symbolleiste für das benutzerdefinierte Layout*
+![Desktop-Ansicht der ](assets/toolbar_1.png)
+**Symbolleiste für das benutzerdefinierte LayoutAbbildung:** *Desktop-Ansicht der Symbolleiste für das benutzerdefinierte Layout*
