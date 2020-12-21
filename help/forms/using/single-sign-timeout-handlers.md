@@ -26,11 +26,11 @@ AEM Forms Workspace ist SSO-fähig. Wenn sich ein Benutzer bei einer AEM Forms-A
 
 Sitzungs-Timeouts für einen Benutzer können in der Administration Console konfiguriert werden.
 
-To set the timeout, login to `https://[server]:[port]/adminui`, navigate to **Settings > User Management > Configuration > Configure Advanced System Attributes**, and make the desired settings.
+Um den Timeout festzulegen, melden Sie sich bei `https://[server]:[port]/adminui` an, navigieren Sie zu **Einstellungen > User Management > Konfiguration > Erweiterte Systemattribute konfigurieren** und nehmen Sie die gewünschten Einstellungen vor.
 
 In AEM Forms Workspace wird Timeout wie folgt verarbeitet:
 
-* Session duration for a user is available in response of `initialize` call that initializes user session.
+* Die Sitzungsdauer für einen Benutzer ist als Antwort auf einen `initialize`-Aufruf verfügbar, der die Benutzersitzung initialisiert.
 * Ein Popup-Fenster informiert den Benutzer 15 Sekunden im Voraus, dass die Sitzung gleich ablaufen wird.
 
 In diesem Popup-Dialog:
