@@ -26,8 +26,8 @@ Die Kommentarfunktion ermöglicht es angemeldeten Site-Besuchern (Mitgliedern), 
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Adding `Comments`to a page
-* Configuration settings for the `Comments`component
+* Hinzufügen von `Comments`zu einer Seite
+* Konfigurationseinstellungen für die Komponente `Comments`
 
 >[!NOTE]
 >
@@ -35,29 +35,29 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 ## Hinzufügen von Kommentaren zu einer Seite {#adding-comments-to-a-page}
 
-To add a `Comments`component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Comments`Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Comments`
 
 und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. in die Nähe einer Eigenschaft, die Benutzer kommentieren sollen, oder fügen Sie die Komponente am Ende der Seite ein.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-comments.md#essentials-for-client-side) are included, this is how the `Comments`component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-comments.md#essentials-for-client-side) einbezogen werden, wird die `Comments`Komponente so angezeigt.
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Only one `Comments`component may exist on a page. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, z. B. ein Blog, ein Kalender, ein Forum, eine QnA-Datei und Rezensionen.
+>Auf einer Seite kann nur eine `Comments`Komponente vorhanden sein. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, z. B. ein Blog, ein Kalender, ein Forum, eine QnA-Datei und Rezensionen.
 
 ## Konfigurieren von Kommentaren {#configuring-comments}
 
-Select the placed `Comments` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Comments` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![Kommentareinstellungen](assets/configure.png) ![konfigurieren](assets/commentssettings.png)
+![](assets/configure.png) ![configuringCommentsSettings](assets/commentssettings.png)
 
-### Comments tab {#comments-tab}
+### Kommentar, Registerkarte {#comments-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer Kommentare eingeben sollen.
 
@@ -101,9 +101,9 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer K
 
    Wenn diese Option aktiviert ist, lassen Sie die Anzeige von verdienten und zuerkannten Abzeichen zu. Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted comments are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
 * **[!UICONTROL Vor der Moderation]**
 
@@ -143,29 +143,29 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted comments 
 
 ### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **[!UICONTROL Sortiereinstellungen]** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie unter der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **[!UICONTROL Sortierfeld]**
 
-   Ziehen Sie nach unten, um einen von `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`oder `Most Liked`auszuwählen.
+   Ziehen Sie nach unten, um eines von `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` oder `Most Liked` auszuwählen.
 
 * **[!UICONTROL Sortierreihenfolge]**
 
-   Ziehen Sie nach unten, um einen von `Ascending` oder `Descending`auszuwählen.
+   Ziehen Sie nach unten, um eines von `Ascending` oder `Descending` auszuwählen.
 
 ### Ändern in einen benutzerdefinierten Kommentartyp {#changing-to-a-custom-comment-type}
 
 Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht mehr mithilfe des Standardsystems eine Instanz eines Kommentars, sondern mithilfe einer Einstellung, die von Entwicklern definiert (erweitert) wurde.
 
-Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Comments` component to open a dialog with an additional tab.
+Sobald die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) ein und klicken Sie mit der Dublette auf die platzierte `Comments`-Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
-Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Geben Sie auf der Registerkarte **[!UICONTROL Ressourcentypen]** den benutzerdefinierten resourceType für neue Instanzen der `Comments or Voting`Komponenten an:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL Kommentarressourcentyp]**
 
-   Navigieren Sie zum resourceType einer erweiterten `comment`Komponente (ein einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
+   Navigieren Sie zum resourceType einer erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
 
    Diese Ressource identifiziert den resourceType des UGC, der erstellt wird, wenn ein Besucher einen Kommentar veröffentlicht.
 
@@ -177,7 +177,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 * **[!UICONTROL System-Ressourcen-Typ kommentieren]**
 
-   Navigieren Sie zum resourceType einer erweiterten `comments`Komponente (Kommentarsystem) in /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Weitere Informationen erhalten Sie in den Hilfethemen des[{{include}}-Helpers](handlebars-helpers.md#include).
+   Navigieren Sie zum resourceType einer erweiterten `comments`Komponente (Kommentarsystem) in /apps. Lassen Sie das Feld leer, es sei denn, die Seitenvorlage [enthält dynamisch](scf.md#add-or-include-a-communities-component) das Kommentarsystem im zugrunde liegenden Skript, anstatt der Seite als Ressource (Kommentarknoten) hinzugefügt zu werden. Weitere Informationen erhalten Sie in den Hilfethemen des[{{include}}-Helpers](handlebars-helpers.md#include).
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -200,8 +200,8 @@ Nicht registrierte oder angemeldete Besucher können veröffentlichte Kommentare
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Comments Essentials](essentials-comments.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Grundlegende Kommentare](essentials-comments.md) für Entwickler.
 
-For moderation of posted comments, see [Moderating User Generated Content](moderate-ugc.md).
+Moderation geposteter Kommentare finden Sie unter [Moderieren von benutzergenerierten Inhalten](moderate-ugc.md).
 
 Informationen zur Übersetzung von Kommentaren finden Sie unter [Übersetzung benutzergenerierter Inhalte](translate-ugc.md).
