@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# AEM Forms für Sicherung vorbereiten {#preparing-aem-forms-for-backup}
+# Vorbereiten von AEM Forms für Sicherung {#preparing-aem-forms-for-backup}
 
-## Informationen zum Sicherungs- und Wiederherstellungsdienst {#about-the-backup-and-restore-service}
+## Info zum Sicherungs- und Wiederherstellungsdienst {#about-the-backup-and-restore-service}
 
-Mit dem Sicherungs- und Wiederherstellungsdienst können Sie AEM Forms in den *Sicherungsmodus* versetzen, wodurch die Ausführung von Sicherungskopien aktiviert wird. Der Backup and Restore-Dienst führt keine Sicherung von AEM Forms durch oder stellt Ihr System wieder her. Stattdessen versetzt es Ihren Server in einen Status für konsistente und zuverlässige Backups, während der Server weiterhin ausgeführt werden kann. Sie sind für die Aktionen zur Sicherung der Datenspeicherung des globalen Dokuments (GDS) und der mit dem Formularserver verbundenen Datenbank verantwortlich. Der globale Dokumentenspeicher ist ein Ordner zum Speichern von Dateien, die in einem Prozess mit langer Lebensdauer verwendet werden.
+Mit dem Sicherungs- und Wiederherstellungsdienst können Sie AEM Forms in den Sicherungsmodus *setzen, der die Ausführung von Hot Backups ermöglicht.* Der Backup and Restore-Dienst führt keine Sicherung von AEM Forms durch oder stellt Ihr System wieder her. Stattdessen versetzt es Ihren Server in einen Status für konsistente und zuverlässige Backups, während der Server weiterhin ausgeführt werden kann. Sie sind für die Aktionen zur Sicherung der Datenspeicherung des globalen Dokuments (GDS) und der mit dem Formularserver verbundenen Datenbank verantwortlich. Der globale Dokumentenspeicher ist ein Ordner zum Speichern von Dateien, die in einem Prozess mit langer Lebensdauer verwendet werden.
 
 Der Sicherungsmodus ist ein vom Server eingegebener Zustand, sodass Dateien im globalen Dokumentenspeicher nicht bereinigt werden, während ein Sicherungsvorgang stattfindet. Stattdessen werden Unterordner im Ordner des globalen Dokumentenspeichers erstellt, um einen Datensatz der Dateien zu verwalten, die nach Beendigung des Sicherungsmodus bereinigt werden sollen. Eine Datei soll Systemneustarts überleben und kann Tage oder sogar Jahre umfassen. Diese Dateien sind ein wichtiger Bestandteil des Gesamtstatus des Formularservers und können PDF-Dateien, Richtlinien oder Formularvorlagen enthalten. Wenn eine dieser Dateien verloren geht oder beschädigt wird, können die Prozesse auf dem Formularserver instabil werden und Daten verloren gehen.
 
@@ -43,25 +43,25 @@ Sie können diese Aufgaben mit dem Backup and Restore-Dienst ausführen:
 
 >[!NOTE]
 >
->Weitere Informationen dazu, was Sie bei der Durchführung von Sicherungen für AEM Forms beachten sollten, finden Sie in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).
+>Weitere Informationen dazu, was Sie bei der Durchführung von Sicherungen für AEM Forms beachten sollten, finden Sie unter [Administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->For more information about the Backup and Restore service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Sicherungs- und Wiederherstellungsdienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Eingeben des Sicherungsmodus auf dem Formularserver {#entering-backup-mode-on-the-forms-server}
 
-Sie wechseln in den Sicherungsmodus, um Hot Backups des Formularservers zuzulassen. Wenn Sie in den Sicherungsmodus wechseln, geben Sie die folgenden Informationen basierend auf den Sicherungsverfahren Ihres Unternehmens an:
+Sie wechseln in den Sicherungsmodus, um Hot Backups des Formularservers zuzulassen. Wenn Sie in den Sicherungsmodus wechseln, geben Sie die folgenden Informationen basierend auf den Sicherungsvorgängen in Ihrem Unternehmen an:
 
 * Eine eindeutige Bezeichnung zur Identifizierung der Sicherungsmodussitzung, die für Ihre Sicherungsvorgänge nützlich sein kann.
 * Die Zeit, die für den Abschluss des Sicherungsverfahrens erforderlich ist.
 * Eine Flag, die angibt, ob Sie sich im kontinuierlichen Sicherungsmodus befinden, was nur nützlich ist, wenn Sie rollierende Sicherungen durchführen.
 
-Bevor Sie Anwendungen schreiben, die in den Sicherungsmodus versetzt werden, sollten Sie sich mit den Sicherungsverfahren vertraut machen, die nach dem Versetzen des Formularservers in den Sicherungsmodus verwendet werden. Weitere Informationen dazu, was Sie bei der Durchführung von Sicherungen für AEM Forms beachten sollten, finden Sie in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).
+Bevor Sie Anwendungen schreiben, die in den Sicherungsmodus versetzt werden, sollten Sie sich mit den Sicherungsverfahren vertraut machen, die nach dem Versetzen des Formularservers in den Sicherungsmodus verwendet werden. Weitere Informationen dazu, was Sie bei der Durchführung von Sicherungen für AEM Forms beachten sollten, finden Sie unter [Administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->For more information about the Backup and Restore service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Sicherungs- und Wiederherstellungsdienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -86,7 +86,7 @@ Um den Sicherungsmodus programmgesteuert zu deaktivieren, erstellen Sie ein Back
 
 **Entscheiden Sie über eine eindeutige Beschriftung, bestimmen Sie die Zeitdauer für die Sicherung und entscheiden Sie, ob Sie sich im kontinuierlichen Sicherungsmodus befinden.**
 
-Bevor Sie in den Sicherungsmodus wechseln, sollten Sie sich für eine eindeutige Beschriftung entscheiden, die Zeitdauer festlegen, die Sie für die Durchführung der Sicherung zuweisen möchten, und entscheiden, ob der Formularserver im Sicherungsmodus bleiben soll. Diese Überlegungen sind wichtig, um sie in die von Ihrem Unternehmen eingerichteten Sicherungsverfahren zu integrieren. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Bevor Sie in den Sicherungsmodus wechseln, sollten Sie sich für eine eindeutige Beschriftung entscheiden, die Zeitdauer festlegen, die Sie für die Durchführung der Sicherung zuweisen möchten, und entscheiden, ob der Formularserver im Sicherungsmodus bleiben soll. Diese Überlegungen sind wichtig, um sie in die von Ihrem Unternehmen eingerichteten Sicherungsverfahren zu integrieren. (Siehe [Administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Sicherungsmodus aktivieren**
 
@@ -116,10 +116,10 @@ Starten Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstellungs-
 
 1. Erstellen eines BackupService Client-API-Objekts
 
-   Sie verwenden ein `ServiceClientFactory` Objekt und das BackupService-Client-API-Objekt zusammen.
+   Sie verwenden ein `ServiceClientFactory`-Objekt und das BackupService-Client-API-Objekt zusammen.
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Create an `BackupService` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Erstellen Sie ein `BackupService`-Objekt, indem Sie den Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
 1. Entscheiden Sie über eine eindeutige Beschriftung, bestimmen Sie die Zeitdauer für die Sicherung und entscheiden Sie, ob Sie sich im kontinuierlichen Sicherungsmodus befinden.
 
@@ -127,23 +127,23 @@ Starten Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstellungs-
 
 1. Sicherungsmodus aktivieren
 
-   Starten Sie den Sicherungsmodus, indem Sie die `enterBackupMode` Methode mit den folgenden Parametern aufrufen:
+   Starten Sie den Sicherungsmodus, indem Sie die `enterBackupMode`-Methode mit den folgenden Parametern aufrufen:
 
-   * Ein `String` Wert, der eine eindeutige, für Menschen lesbare Beschriftung angibt, die die Sicherungsmodussitzung identifiziert. Es wird empfohlen, keine Leerzeichen oder Zeichen zu verwenden, die nicht im XML-Format kodiert werden können.
-   * Ein `int` Wert, der die Anzahl der Minuten angibt, die im Sicherungsmodus verbleiben sollen. Sie können einen Wert von `1` bis `10080` (die Anzahl der Minuten in einer Woche) angeben. Dieser Wert wird bei Verwendung des kontinuierlichen Sicherungsmodus ignoriert.
-   * Ein `Boolean` Wert, der angibt, ob der kontinuierliche Sicherungsmodus ausgeführt werden soll. Der Wert von `True` gibt an, im kontinuierlichen Sicherungsmodus zu sein. Im kontinuierlichen Sicherungsmodus wird der Wert ignoriert, den Sie für die Anzahl der Minuten angeben, die im Sicherungsmodus verbleiben sollen.
+   * Ein `String`-Wert, der eine eindeutige, für Menschen lesbare Beschriftung angibt, die die Sicherungsmodussitzung identifiziert. Es wird empfohlen, keine Leerzeichen oder Zeichen zu verwenden, die nicht im XML-Format kodiert werden können.
+   * Ein `int`-Wert, der die Anzahl der Minuten angibt, die im Sicherungsmodus verbleiben sollen. Sie können einen Wert zwischen `1` und `10080` (die Anzahl der Minuten in einer Woche) angeben. Dieser Wert wird bei Verwendung des kontinuierlichen Sicherungsmodus ignoriert.
+   * Ein `Boolean`-Wert, der angibt, ob der kontinuierliche Sicherungsmodus ausgeführt werden soll. Der Wert `True` gibt an, dass der kontinuierliche Sicherungsmodus aktiviert ist. Im kontinuierlichen Sicherungsmodus wird der Wert ignoriert, den Sie für die Anzahl der Minuten angeben, die im Sicherungsmodus verbleiben sollen.
 
-      Der kontinuierliche Sicherungsmodus bedeutet, dass eine neue Sicherungsmodussitzung nach Abschluss der aktuellen Sitzung gestartet wird. Ein Wert von `False` bedeutet, dass der kontinuierliche Sicherungsmodus nicht verwendet wird und das Bereinigen von Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Sicherungsmodus fortgesetzt wird.
+      Der kontinuierliche Sicherungsmodus bedeutet, dass eine neue Sicherungsmodussitzung nach Abschluss der aktuellen Sitzung gestartet wird. Der Wert `False` bedeutet, dass der kontinuierliche Sicherungsmodus nicht verwendet wird und das Bereinigen von Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Sicherungsmodus fortgesetzt wird.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 
-   Rufen Sie Informationen mit dem `BackupModeEntryResult` Objekt ab, das nach dem Aufrufen der `enterBackupMode` Methode zurückgegeben wird. Die Informationen, die Sie nach dem Starten des Sicherungsmodus abrufen können, können für die Integration in Ihre Sicherungsverfahren nützlich sein. Beispielsweise können die Beschriftung, die Sicherungs-ID und die Beginn-Zeit als Eingabe für Dateinamen für Ihr Sicherungsverfahren nützlich sein.
+   Rufen Sie Informationen mit dem `BackupModeEntryResult`-Objekt ab, das nach dem Aufrufen der `enterBackupMode`-Methode zurückgegeben wird. Die Informationen, die Sie nach dem Starten des Sicherungsmodus abrufen können, können für die Integration in Ihre Sicherungsverfahren nützlich sein. Beispielsweise können die Beschriftung, die Sicherungs-ID und die Beginn-Zeit als Eingabe für Dateinamen für Ihr Sicherungsverfahren nützlich sein.
 
 1. Sicherung des globalen Dokumentenspeichers und der Datenbank durchführen
 
    Sichern Sie die Datenspeicherung des globalen Dokuments (GDS) und die Datenbank, mit der der Formularserver verbunden ist. Die Aktionen zum Durchführen der Sicherung sind nicht Teil des AEM Forms SDK und können sogar manuelle Schritte für die Sicherungsabläufe in Ihrem Unternehmen enthalten.
 
-### Starten Sie den Sicherungsmodus mithilfe der Webdienst-API. {#enter-backup-mode-using-the-web-service-api}
+### Starten Sie den Sicherungsmodus mithilfe der Webdienst-API {#enter-backup-mode-using-the-web-service-api}
 
 Starten Sie den Sicherungsmodus mithilfe des Webdiensts, der von der Sicherungs- und Wiederherstellungs-Dienst-API bereitgestellt wird:
 
@@ -154,7 +154,7 @@ Starten Sie den Sicherungsmodus mithilfe des Webdiensts, der von der Sicherungs-
 
 1. Erstellen eines BackupService Client-API-Objekts
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `BackupServiceService` Objekt, indem Sie den Standardkonstruktor aufrufen, und geben Sie die Anmeldeinformationen mithilfe der `Credentials` Methode an.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `BackupServiceService`-Objekt, indem Sie den Standardkonstruktor aufrufen, und geben Sie die Anmeldeinformationen mit der `Credentials`-Methode an.
 
 1. Entscheiden Sie über eine eindeutige Beschriftung, bestimmen Sie die Zeitdauer für die Sicherung und entscheiden Sie, ob Sie sich im kontinuierlichen Sicherungsmodus befinden.
 
@@ -164,11 +164,11 @@ Starten Sie den Sicherungsmodus mithilfe des Webdiensts, der von der Sicherungs-
 
    Um in den Sicherungsmodus zu wechseln, rufen Sie die Methode enterBackupMode auf und übergeben Sie die folgenden Werte:
 
-   * Ein `String` Wert, der eine eindeutige, für Menschen lesbare Beschriftung angibt, die die Sicherungsmodussitzung identifiziert. Es wird empfohlen, keine Leerzeichen oder Zeichen zu verwenden, die nicht im XML-Format kodiert werden können.
-   * Ein `Uint32` Wert, der die Anzahl der Minuten angibt, die im Sicherungsmodus verbleiben sollen. Sie können einen Wert von `1` bis `10080` (Anzahl der Minuten in einer Woche) angeben. Dieser Wert wird bei Verwendung des kontinuierlichen Sicherungsmodus ignoriert.
-   * Ein `Boolean` Wert, der angibt, ob der kontinuierliche Sicherungsmodus ausgeführt werden soll. Der Wert von `True` gibt an, im kontinuierlichen Sicherungsmodus zu sein. Im kontinuierlichen Sicherungsmodus wird der Wert ignoriert, den Sie für die Anzahl der Minuten angeben, die im Sicherungsmodus verbleiben sollen. Der kontinuierliche Sicherungsmodus bedeutet, dass eine neue Sicherungsmodussitzung nach Abschluss der aktuellen Sitzung gestartet wird.
+   * Ein `String`-Wert, der eine eindeutige, für Menschen lesbare Beschriftung angibt, die die Sicherungsmodussitzung identifiziert. Es wird empfohlen, keine Leerzeichen oder Zeichen zu verwenden, die nicht im XML-Format kodiert werden können.
+   * Ein `Uint32`-Wert, der die Anzahl der Minuten angibt, die im Sicherungsmodus verbleiben sollen. Sie können einen Wert zwischen `1` und `10080` (Anzahl der Minuten in einer Woche) angeben. Dieser Wert wird bei Verwendung des kontinuierlichen Sicherungsmodus ignoriert.
+   * Ein `Boolean`-Wert, der angibt, ob der kontinuierliche Sicherungsmodus ausgeführt werden soll. Der Wert `True` gibt an, dass der kontinuierliche Sicherungsmodus aktiviert ist. Im kontinuierlichen Sicherungsmodus wird der Wert ignoriert, den Sie für die Anzahl der Minuten angeben, die im Sicherungsmodus verbleiben sollen. Der kontinuierliche Sicherungsmodus bedeutet, dass eine neue Sicherungsmodussitzung nach Abschluss der aktuellen Sitzung gestartet wird.
 
-      Ein Wert von `False` bedeutet, dass der kontinuierliche Sicherungsmodus nicht verwendet wird und das Bereinigen von Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Sicherungsmodus fortgesetzt wird.
+      Der Wert `False` bedeutet, dass der kontinuierliche Sicherungsmodus nicht verwendet wird und das Bereinigen von Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Sicherungsmodus fortgesetzt wird.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 
@@ -178,15 +178,15 @@ Starten Sie den Sicherungsmodus mithilfe des Webdiensts, der von der Sicherungs-
 
    Sichern Sie die Datenspeicherung des globalen Dokuments (GDS) und die Datenbank, mit der der Formularserver verbunden ist. Die Aktionen zum Durchführen der Sicherung sind nicht Teil des AEM Forms SDK und können sogar manuelle Schritte für die Sicherungsabläufe in Ihrem Unternehmen enthalten.
 
-## Sicherungsmodus auf dem Formularserver verlassen {#leaving-backup-mode-on-the-forms-server}
+## Sicherungsmodus auf dem Formularserver {#leaving-backup-mode-on-the-forms-server} verlassen
 
 Sie können den Sicherungsmodus deaktivieren, damit der Formularserver das Bereinigen der Dateien aus der Datenspeicherung des globalen Dokuments (GDS) auf dem Formularserver wieder aufnimmt.
 
-Bevor Sie Anwendungen schreiben, die in den Urlaubsmodus wechseln, sollten Sie sich mit den Sicherungsverfahren vertraut machen, die mit AEM Forms verwendet werden. Weitere Informationen dazu, was Sie bei der Durchführung von Sicherungen für AEM Forms beachten sollten, finden Sie in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).
+Bevor Sie Anwendungen schreiben, die in den Urlaubsmodus wechseln, sollten Sie sich mit den Sicherungsverfahren vertraut machen, die mit AEM Forms verwendet werden. Weitere Informationen dazu, was Sie bei der Durchführung von Sicherungen für AEM Forms beachten sollten, finden Sie unter [Administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->For more information about the Backup and Restore service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Sicherungs- und Wiederherstellungsdienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -215,7 +215,7 @@ Verlassen Sie den Sicherungsmodus, um das normale Bereinigen von Dateien aus der
 
 Nachdem Sie den Sicherungsmodus beendet haben, können Sie Informationen zur Sitzung abrufen. Diese Informationen können zur Integration in Ihre Sicherungsverfahren verwendet werden.
 
-### Sicherungsmodus mit der Java-API deaktivieren {#leave-backup-mode-using-the-java-api}
+### Sicherungsmodus mit der Java-API {#leave-backup-mode-using-the-java-api} deaktivieren
 
 Beenden Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstellungs-Dienst-API (Java):
 
@@ -231,20 +231,20 @@ Beenden Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstellungs-
 
 1. Erstellen eines BackupService Client-API-Objekts
 
-   Sie verwenden ein `ServiceClientFactory` Objekt und das BackupService-Client-API-Objekt zusammen.
+   Sie verwenden ein `ServiceClientFactory`-Objekt und das BackupService-Client-API-Objekt zusammen.
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Create a `BackupService` object by using its constructor and passing the `ServiceClientFactory` object as parameter.
+   * Erstellen Sie ein `BackupService`-Objekt, indem Sie den Konstruktor verwenden und das `ServiceClientFactory`-Objekt als Parameter übergeben.
 
 1. Sicherungsmodus aktivieren
 
-   Lassen Sie den Sicherungsmodus, indem Sie die `leaveBackupMode` Methode aufrufen.
+   Lassen Sie den Sicherungsmodus, indem Sie die `leaveBackupMode`-Methode aufrufen.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 
-   Rufen Sie Informationen zum Vorgang mit dem zurückgegebenen `BackupModeResult` Objekt ab. Die Informationen, die Sie nach dem Starten des Sicherungsmodus abrufen können, können für die Integration in Ihre Sicherungsverfahren nützlich sein. Beispielsweise können die Beschriftung, die Sicherungs-ID und die Beginn-Zeit als Eingabe für Dateinamen für Ihr Sicherungsverfahren nützlich sein.
+   Rufen Sie Informationen zum Vorgang mit dem zurückgegebenen `BackupModeResult`-Objekt ab. Die Informationen, die Sie nach dem Starten des Sicherungsmodus abrufen können, können für die Integration in Ihre Sicherungsverfahren nützlich sein. Beispielsweise können die Beschriftung, die Sicherungs-ID und die Beginn-Zeit als Eingabe für Dateinamen für Ihr Sicherungsverfahren nützlich sein.
 
-### Sicherungsmodus mithilfe der Webdienst-API deaktivieren {#leave-backup-mode-using-the-web-service-api}
+### Sicherungsmodus mithilfe der Webdienst-API {#leave-backup-mode-using-the-web-service-api} deaktivieren
 
 Beenden Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstellungs-Dienst-API (Webdienst):
 
@@ -257,11 +257,11 @@ Beenden Sie den Sicherungsmodus mithilfe der Sicherungs- und Wiederherstellungs-
 
 1. Erstellen eines BackupService Client-API-Objekts
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `BackupServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `BackupServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen.
 
 1. Sicherungsmodus aktivieren
 
-   Deaktivieren Sie den Sicherungsmodus, indem Sie den `leaveBackupMode` Webdienstvorgang aufrufen.
+   Lassen Sie den Sicherungsmodus, indem Sie den Webdienstvorgang `leaveBackupMode` aufrufen.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 
