@@ -26,8 +26,8 @@ Beachten Sie beim Erstellen eines Speicherorts für eine Java-Klasse, dass der P
 
 Die Verwendung von Bindestrichen in den Namen von Repository-Elementen ist eine empfohlene Vorgehensweise bei AEM Entwicklung. Bindestriche sind in Java-Paketnamen nicht zulässig.
 
-Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich &#39;_&#39; und einem Bindestrich &#39;-&#39; unterscheiden können. In JCR muss der Bindestrich daher durch den Unicode-Wert (u002d) ersetzt und mit einem Unterstrich &quot;_&quot;versehen werden.
+Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich (&quot;_&quot;) und einem Bindestrich (&quot;-&quot;) unterscheiden können. In JCR muss der Bindestrich daher durch den Unicode-Wert (u002d) ersetzt und mit einem Unterstrich (_) versehen werden.
 
-Wenn der Repository-Pfad beispielsweise **/apps/my-example/component/info/Info.java** lautet, sollte der Paketname `java package apps.my_002dexample.component.info;`
+Wenn beispielsweise der Repository-Pfad **/apps/my-example/component/info/Info.java** lautet, sollte der Paketname `java package apps.my_002dexample.component.info;` lauten.
 
-Beachten Sie, dass ein Unterstrich auf ähnliche Weise mit einem Escape-Zeichen versehen werden muss, sodass `_` es `_005f`wird.
+Beachten Sie, dass ein Unterstrich auf ähnliche Weise mit Escape-Zeichen versehen werden muss, sodass `_` `_005f` wird.
