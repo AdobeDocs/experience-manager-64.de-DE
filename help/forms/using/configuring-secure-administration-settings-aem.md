@@ -66,7 +66,7 @@ Führen Sie dieses Verfahren mithilfe der Webseite &quot;Anwendungen und Dienste
 
 1. Klicken Sie auf **Weiter** und wiederholen Sie den vorhergehenden Schritt für SOAP-Endpunkte, die nicht in der obigen Liste aufgeführt sind. Stellen Sie vor dem Entfernen von Endpunkten sicher, dass SOAP in der Spalte „Anbieter“ aufgeführt wird.
 
-## Nicht erforderlichen anonymem Zugriff auf Dienste deaktivieren  {#disabling-non-essential-anonymous-access-to-services}
+## Nicht erforderlichen anonymem Zugriff auf Dienste deaktivieren   {#disabling-non-essential-anonymous-access-to-services}
 
 Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufruf bestimmter Vorgänge zu. Das heißt, ein oder mehrere vom Dienst offengelegte Vorgänge können von beliebigen authentifizierten Benutzern oder anonymen Benutzern aufgerufen werden.
 
@@ -78,7 +78,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 1. Klicken Sie auf **Dienste > Anwendungen und Dienste > Dienstverwaltung**.
 1. Klicken Sie auf den Namen des zu deaktivierenden Dienstes (z. B. AuthenticationManagerService).
-1. Click the **Security tab**, deselect **Anonymous Access Allowed**, and click **Save**.
+1. Klicken Sie auf die Registerkarte **Sicherheit**, deaktivieren Sie **Anonymer Zugriff zulässig** und klicken Sie auf **Speichern**.
 1. Wiederholen Sie die Schritte 3 und 4 für die folgenden Dienste:
 
    * AuthenticationManagerService
@@ -111,7 +111,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 Endbenutzer können sich über Workbench, AEM Forms-Webanwendungen oder benutzerdefinierte Anwendungen, die AEM Forms-Serverdienste aufrufen, bei AEM Forms authentifizieren. Mithilfe einer globalen Zeitlimiteinstellung wird festgelegt, wie lange solche Benutzer AEM Forms nutzen können (mittels einer auf SAML basierenden Bestätigung), bevor sie sich erneut authentifizieren müssen. Der Standardwert ist zwei Stunden. In einer Produktionsumgebung muss die Zeitdauer auf den zulässigen Mindestwert in Minuten verringert werden.
 
-### Zeitlimit für die erneute Authentifizierung auf das Minimum einstellen {#minimize-reauthentication-time-limit}
+### Zeitlimit für die erneute Authentifizierung auf das Minimum einstellen  {#minimize-reauthentication-time-limit}
 
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
