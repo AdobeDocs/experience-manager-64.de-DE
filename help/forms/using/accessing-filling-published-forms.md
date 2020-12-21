@@ -29,11 +29,12 @@ Weitere Informationen zu Forms Portal und seinen Funktionen finden Sie unter [Ei
 
 ## Erste Schritte mit Forms Portal {#getting-started-with-forms-portal}
 
-Navigieren Sie zur veröffentlichten Forms Portal-Seite. For more information about creating a forms portal page, see [Creating a forms portal page](/help/forms/using/creating-form-portal-page.md).
+Navigieren Sie zur veröffentlichten Forms Portal-Seite. Weitere Informationen zum Erstellen einer Forms Portal-Seite finden Sie unter [Erstellen einer Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md).
 
 Die Komponente „Search &amp; Lister“ von Forms Portal zeigt die in der Veröffentlichungsinstanz des AEM-Servers verfügbaren Formulare. Diese Liste enthält alle Formulare oder die im Filter angegebenen Formulare zum Zeitpunkt der Bearbeitung der Forms Portal-Seite. Eine Forms Portal-Seite ist ähnlich der in der folgenden Abbildung gezeigten:
 
-![Beispiel für eine Forms Portal-Seite ](assets/forms-portal-page.png)**Abbildung:** *Beispiel für eine Forms Portal-Seite*
+![Beispiel für eine Forms Portal-Seite  ](assets/forms-portal-page.png)
+**Abbildung:** *Beispiel für eine Forms Portal-Seite*
 
 ### Search &amp; Lister {#search-and-lister}
 
@@ -54,21 +55,23 @@ Sie können mithilfe der folgenden Optionen auf der Forms Portal-Seite nach Form
 
 Mit der Volltextsuche können Sie anhand der angegebenen Schlüsselwörter Formulare suchen und auflisten.
 
-![Dialogfeld](assets/search-panel.png)für die erweiterte Suche **Abbildung:** *Dialogfeld für die erweiterte Suche*
+![Dialogfeld ](assets/search-panel.png)
+**für die erweiterte SucheAbbildung:** *Dialogfeld für die erweiterte Suche*
 
 Die erweiterte Suche ermöglicht das Suchen nach Formularen anhand der festgelegten Formulareigenschaften. Sie bietet genauere Ergebnisse als die Volltextsuche. Die erweiterte Suche umfasst die Suche auf Basis von Tags, Eigenschaften (wie Autor, Beschreibung und Titel), Änderungsdatum und Volltext.
 
 Lister zeigt Formulare anhand der Suchparameter. Jedes Formular im Suchergebnis wird mit einem Symbol angezeigt, das mit einem Hyperlink zum dazugehörigen Formular versehen ist. Klicken Sie auf das Symbol, um das Formular zu öffnen und damit zu arbeiten.
 
-### Ausfüllen eines Formulars {#filling-a-form}
+### Ausfüllen eines Formulars  {#filling-a-form}
 
-![Beispiel für ein adaptives Formular](assets/filling_a_form.png)**Abbildung:** *Beispiel für ein adaptives Formular*
+![Beispiel für ein adaptives ](assets/filling_a_form.png)
+**FormularAbbildung:** *Beispiel für ein adaptives Formular*
 
 Der Zugriff auf die Formulare ist über den Link möglich, der in der Komponente „Search &amp; Lister“ der Seite neben dem Formular zur Verfügung steht.
 
 Jedes Formular enthält Hilfeinformationen, mit denen Benutzer das Formular ausfüllen können.
 
-#### Formular und übermittelte Formulare {#drafts-and-submission}
+#### Formular und übermittelte Formulare  {#drafts-and-submission}
 
 Benutzer haben die Möglichkeit, den Entwurf eines Formulars zu speichern, indem sie auf die Schaltfläche „Speichern“ klicken. Dadurch können sie über einen längeren Zeitraum an einem Formular arbeiten, bevor sie es übermitteln.
 
@@ -80,7 +83,8 @@ Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie au
 >
 >Gesendete Formulare werden auf der Registerkarte &quot;Gesendetes Forms&quot;nur angezeigt, wenn die Übermittlungsaktion für das adaptive Formular als Forms Portal-Übermittlungsaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
 
-![Komponente](assets/draft-submission.png)&quot;Drafts &amp; Submissions&quot;**Abbildung:** *Komponente &quot;Drafts &amp; Submissions&quot;*
+![Komponente &quot;Drafts &amp; Submissions&quot;](assets/draft-submission.png)
+**Abbildung: Komponente &quot;** *Drafts &amp; Submissions&quot;*
 
 ## Erstellen ein neues Formular mit den gesendeten Formulardaten {#start-a-new-form-using-submitted-form-data}
 
@@ -88,6 +92,6 @@ Es gibt bestimmte Formulare, die Sie relativ häufig ausfüllen und senden müss
 
 AEM Forms trägt zu einem optimierten Benutzererlebnis beim Ausfüllen von Formularen bei und reduziert dafür benötigte Zeit erheblich. Endbenutzer können für ein neues Formular die Daten von einem früher gesendeten Formular verwenden. Diese Funktion ist integriert in der [Komponente „Drafts and Submissions“](/help/forms/using/draft-submission-component.md). Wenn Sie die Komponente „Drafts and Submissions“ zu Ihrer Forms Portal-Seite hinzufügen und sie veröffentlichen, finden Endbenutzer auf der Registerkarte „Gesendete Formulare und Entwurfsformulare“ die Option, ein neues Formular mit den Daten eines zuvor gesendeten Formulars zu beginnen. Auf der folgenden Abbildung ist diese Option hervorgehoben.
 
-![Beginn-a-new-form](assets/start-a-new-form.png)
+![beginn-a-new-form](assets/start-a-new-form.png)
 
 Wenn Sie auf die Schaltfläche klicken, um ein neues Formular zu starten, wird ein neues Formular mit Daten aus dem entsprechenden gesendeten Formular gestartet. Sie können jetzt die Informationen überprüfen, ggf. aktualisieren und das Formular senden.
