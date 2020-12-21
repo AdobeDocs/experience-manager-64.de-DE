@@ -19,7 +19,7 @@ ht-degree: 91%
 
 # ConvertPDF-Dienst {#convertpdf-service}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Convert PDF-Dienst konvertiert PDF-Dokumente in PostScript oder Bilddateien (JPEG, JPEG 2000, PNG und TIFF). Das Konvertieren eines PDF-Dokuments in PostScript ist nützlich für die unbeaufsichtigte serverbasierte Druckausgabe auf PostScript-Druckern. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist beim Archivieren von Dokumenten in Content Management-Systemen praktisch, die PDF-Dokumente nicht unterstützen.
 
@@ -30,7 +30,7 @@ Mit dem Convert PDF-Dienst können Sie Folgendes ausführen:
 
 ## Konfigurieren der Eigenschaften des Dienstes   {#properties}
 
-Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. The default URL of AEM console is `https://[host]:[port]/system/console/configMgr`.
+Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole ist `https://[host]:[port]/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using-the-service}
 
