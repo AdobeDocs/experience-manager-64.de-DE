@@ -20,7 +20,7 @@ ht-degree: 55%
 
 Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die Interaktive Kommunikation in der Agent-Benutzeroberfläche öffnen und eine Empfänger-spezifische Kopie erstellen, indem er Daten eingibt und Inhalte und Anlagen verwaltet. Schließlich kann der Agent die interaktive Kommunikation an einen Nachbearbeitungsprozess senden.
 
@@ -30,10 +30,10 @@ Während der Vorbereitung der interaktiven Kommunikation mithilfe der Agent-Benu
 * **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokument-Fragment wie zulässig vornehmen, während die Interaktive Kommunikation in den Eigenschaften dieser Dokument-Fragmente erstellt wird. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
 * **Anlagen**: Die Registerkarte &quot;Anlagen&quot;wird in der Benutzeroberfläche des Agenten nur angezeigt, wenn die interaktive Kommunikation über Anlagen verfügt oder der Agent über Bibliothekszugriff verfügt. Der Agent darf die Anlagen ändern oder bearbeiten.
 
-## Prepare Interactive Communication using the Agent UI {#prepare-interactive-communication-using-the-agent-ui}
+## Vorbereitung der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
-1. Select the appropriate Interactive Communication and tap **[!UICONTROL Open Agent UI]**.
+1. Wählen Sie die entsprechende interaktive Kommunikation aus und tippen Sie auf **[!UICONTROL Benutzeroberfläche des offenen Agenten]**.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Während der Vorbereitung der interaktiven Kommunikation mithilfe der Agent-Benu
 
 ### Daten eingeben {#enter-data}
 
-1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Fill up all the mandatory fields marked with an asterisk (&amp;ast;) to enable the **Submit** button.
+1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Füllen Sie alle erforderlichen Felder mit einem Sternchen (&amp;ast;) aus, um die Schaltfläche **Senden** zu aktivieren.
 
    Tippen Sie auf einen Datenfeldwert in der Vorschau Interaktive Kommunikation, um das entsprechende Datenfeld auf der Registerkarte &quot;Daten&quot;zu markieren oder umgekehrt.
 
@@ -67,9 +67,9 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   In the Content or Data tab, by tapping Highlight Selected Modules In Content ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) on upper left of the preview, you can disable or enable functionality to go to the document fragment when the relevant text, paragraph, or data field is tapped/selected in the preview.
+   Wenn Sie auf der Registerkarte &quot;Inhalt&quot;oder &quot;Daten&quot;links oben auf der Vorschau auf &quot;Ausgewählte Module im Inhalt markieren&quot;( ![highlightsselectedModuleIncontentccr](assets/highlightselectedmodulesincontentccr.png)) tippen, können Sie die Funktion deaktivieren oder aktivieren, um zum Dokument-Fragment zu wechseln, wenn auf den entsprechenden Text, Absatz oder das Datenfeld in der Vorschau getippt/ausgewählt wird.
 
-   The fragments that are allowed to be edited by the agent while creating the Interactive Communication have the Edit Selected Content ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icon. Tippen Sie auf das Symbol „Ausgewählten Inhalt bearbeiten“, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
+   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol Ausgewählten Inhalt bearbeiten ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol „Ausgewählten Inhalt bearbeiten“, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
 
    * [Formatierungsoptionen](#formattingtext)
 
@@ -78,9 +78,9 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
    * [Sonderzeichen](#specialcharacters)
    * [Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md)
 
-   For more information on the actions available for various document fragments in the Agent user interface, see [Actions and info available in the Agent user interface](#actionsagentui).
+   Weitere Informationen zu den Aktionen, die für verschiedene Fragmente des Dokuments in der Agent-Benutzeroberfläche verfügbar sind, finden Sie unter [Aktionen und Informationen in der Agent-Benutzeroberfläche](#actionsagentui).
 
-1. To add a page break to the print output of the Interactive Communication, place the cursor where you want to insert a page break and select Page Break Before or Page Break After ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
+1. Um der Druckausgabe der interaktiven Kommunikation einen Seitenumbruch hinzuzufügen, platzieren Sie den Cursor an der Stelle, an der Sie einen Seitenumbruch einfügen möchten, und wählen Sie &quot;Seitenumbruch vor&quot;oder &quot;Seitenumbruch nach&quot;( ![pagebreakVorher](assets/pagebreakbeforeafter.png)).
 
    Ein Platzhalter für einen expliziten Seitenumbruch wird in der interaktiven Kommunikation eingefügt. Sie können in der Druckvorschau anzeigen, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt.
 
@@ -88,15 +88,15 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    Fahren Sie mit der Verwaltung der Anlagen der interaktiven Kommunikation fort.
 
-### Anlagen verwalten {#manage-attachments}
+### Anlagen verwalten  {#manage-attachments}
 
-1. Select **[!UICONTROL Attachment]**. Die Benutzeroberfläche für Agenten zeigt die verfügbaren Anlagen so an, wie sie beim Erstellen der interaktiven Kommunikation eingerichtet wurden.
+1. Wählen Sie **[!UICONTROL Anlage]**. Die Benutzeroberfläche für Agenten zeigt die verfügbaren Anlagen so an, wie sie beim Erstellen der interaktiven Kommunikation eingerichtet wurden.
 
    Sie können festlegen, dass keine Anlage zusammen mit der interaktiven Kommunikation gesendet werden soll, indem Sie auf das Symbol &quot;Ansicht&quot;tippen, und Sie können auf das Kreuz in der Anlage tippen, um sie zu löschen (wenn der Agent die Anlage löschen oder ausblenden darf). Für die Anhänge, die beim Erstellen der interaktiven Kommunikation als obligatorisch festgelegt wurden, sind die Symbole „Anzeigen“ und „Löschen“ deaktiviert.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Tap the Library Access ( ![libraryaccess](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
+1. Tippen Sie auf das Symbol &quot;Bibliothekszugriff&quot;( ![Bibliothekszugriff](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anlagen einzufügen.
 
    >[!NOTE]
    >
@@ -105,13 +105,13 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 1. Wenn die Reihenfolge der Anhänge beim Erstellen der interaktiven Kommunikation nicht gesperrt war, können Sie die Reihenfolge der Anhänge neu anordnen, indem Sie einen Anhang auswählen und auf die Pfeile nach unten oder nach oben tippen.
 1. Verwenden Sie Webvorschau und Druckvorschau, um zu sehen, ob die beiden Ausgaben Ihren Anforderungen entsprechen.
 
-   If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorzunehmenden Änderungen zurückzukehren.
+   Wenn die Vorschauen zufriedenstellend sind, tippen Sie auf **[!UICONTROL Senden]**, um die interaktive Kommunikation an einen Nachbearbeitungsprozess zu senden/zu senden. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorzunehmenden Änderungen zurückzukehren.
 
 ## Text formatieren {#formattingtext}
 
 Beim Bearbeiten eines Textfragments in der Benutzeroberfläche für Agenten ändert sich die Symbolleiste abhängig vom Typ der von Ihnen vorgenommenen Änderungen: Schriftart, Absatz oder Liste:
 
-![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Font, Werkzeugleiste](do-not-localize/fonttoolbar.png)
+![](assets/typeofformattingtoolbar.png) ![typeofformattingtoolbarFont, Symbolleiste](do-not-localize/fonttoolbar.png)
 
 Schriftart-Symbolleiste
 
@@ -123,7 +123,7 @@ Absatz-Symbolleiste
 
 Liste-Symbolleiste
 
-### Teile des Textes markieren/hervorheben {#highlightemphasize}
+### Teile des Textes markieren/hervorheben  {#highlightemphasize}
 
 Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie den Text aus und tippen Sie auf „Hervorhebungsfarbe“.
 
@@ -135,7 +135,7 @@ Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie
 
 ### Sonderzeichen in Text einfügen {#specialcharacters}
 
-Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 210 Sonderzeichen. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
+Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung](/help/forms/using/custom-special-characters.md) hinzufügen.
 
 #### Anlagenübermittlung {#attachmentdelivery}
 
@@ -143,7 +143,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil der Benutzeroberfläche &quot;Mit Agent senden&quot;geladen wird, werden Anlagen als Parameter &quot;Liste&lt;com.adobe.idp.Dokument> inAttachmentDocs&quot;übergeben.
 * Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln auch Anlagen zusammen mit einer PDF-Datei der interaktiven Kommunikation.
 
-## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind {#actionsagentui}
+## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind  {#actionsagentui}
 
 ### Dokumentfragmente {#document-fragments}
 
@@ -153,7 +153,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
-* **Seitenumbruch nach** (gilt für untergeordnete Fragmente des Bereichs Zielgruppe): Fügt nach dem Fragment des Dokuments einen Seitenumbruch ein.
+* **Seitenumbruch nach**  (gilt für untergeordnete Fragmente des Bereichs Zielgruppe): Fügt nach dem Fragment des Dokuments einen Seitenumbruch ein.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -162,7 +162,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein/schließt sie daraus aus.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
-### Listendokumentfragmente {#list-document-fragments}
+### Listendokumentfragmente  {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
