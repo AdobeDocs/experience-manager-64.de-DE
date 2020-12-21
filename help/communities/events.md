@@ -20,26 +20,28 @@ ht-degree: 5%
 
 # OSGi-Ereignis für Communities-Komponenten {#osgi-events-for-communities-components}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen oder Gamification (Scoring und Abzeichen).
 
-Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) -Instanz einer Komponente zeichnet die Ereignis auf, `actions`die für eine `topic`Komponente auftreten. Das SocialEvent enthält eine Methode, um eine mit der Aktion `verb`verbundene Aktion zurückzugeben. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
+Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html)-Instanz einer Komponente zeichnet die Ereignis als `actions`auf, die für ein `topic` auftreten. Das SocialEvent enthält eine Methode, um eine `verb`zurückzugeben, die der Aktion zugeordnet ist. Es besteht eine *n-1*-Beziehung zwischen `actions`und `verbs`.
 
-Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version bereitgestellten Communities-Komponenten, die für die einzelnen `topic`verfügbaren Komponenten definiert sind.
+Die folgenden Tabellen beschreiben für die in der Version ausgelieferten Communities-Komponenten die für jedes `topic`verfügbare `verbs`Definition.
 
 ## Themen und Verben {#topics-and-verbs}
 
-[Kalenderkomponente](calendar-basics-for-developers.md)SocialEvent `topic`= com/adobe/cq/social/calendar
+[Calendar ](calendar-basics-for-developers.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/calendar
 
 | **Verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt ein Ereignis im Kalender |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalendertool |
-| UPDATE | Ereignis oder Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Ereignis oder Kommentar des Mitglieds wird gelöscht |
+| UPDATE | ereignis oder Kommentar des Mitglieds wird bearbeitet |
+| DELETE | ereignis oder Kommentar des Mitglieds wird gelöscht |
 
-[Kommentarkomponente](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
+[Kommentare ](essentials-comments.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -48,7 +50,8 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | UPDATE | Kommentar des Mitglieds wird bearbeitet |
 | DELETE | Kommentar des Mitglieds wird gelöscht |
 
-[File Library Component](essentials-file-library.md)SocialEvent `topic`= com/adobe/cq/social/fileLibrary
+[File Library ](essentials-file-library.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -57,7 +60,8 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | UPDATE | Mitglied aktualisiert einen Ordner oder eine Datei |
 | DELETE | löscht einen Ordner oder eine Datei |
 
-[Forum Component](essentials-forum.md)SocialEvent `topic`= com/adobe/cq/social/forum
+[Forum ](essentials-forum.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/forum
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -66,7 +70,8 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | UPDATE | Forenthema oder Antwort des Mitglieds wird bearbeitet |
 | DELETE | Forenthema oder Antwort des Mitglieds wird gelöscht |
 
-[Protokoll Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/Protokoll
+[Protokoll ](blog-developer-basics.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/Protokoll
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -75,18 +80,20 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | UPDATE | Blog-Artikel oder Kommentar des Mitglieds wird bearbeitet |
 | DELETE | Blog-Artikel oder Kommentar des Mitglieds wird gelöscht |
 
-[QnA Component](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
+[QnA ](qna-essentials.md)
+ComponentSocialEvent  `topic` = com/adobe/cq/social/qna
 
 | **Verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt eine QnA-Frage |
 | HINZUFÜGEN | Mitglied erstellt eine QnA-Antwort |
-| UPDATE | Frage oder Antwort des Mitglieds zur Servicequalität des Mitglieds wird bearbeitet |
+| UPDATE | Frage oder Antwort des Mitglieds zur Servicequalitätsprüfung wird bearbeitet |
 | SELECT | Antwort des Mitglieds ausgewählt |
 | AUSWAHL aufheben | Die Antwort des Mitglieds wird deaktiviert |
 | DELETE | Frage oder Antwort des Mitglieds zur Servicequalitätsprüfung wird gelöscht |
 
-[Reviews Component](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
+[Reviews ](reviews-basics.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -94,21 +101,24 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | UPDATE | Überprüfung des Mitglieds wird bearbeitet |
 | DELETE | Überprüfung des Mitglieds wird gelöscht |
 
-[Bewertungskomponente](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
+[Rating ](rating-basics.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
+| hinzufügen | Der Inhalt des Mitglieds wurde bewertet |
 | RATING ENTFERNEN | der Inhalt des Mitglieds wurde heruntergesetzt |
 
-[Komponente](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
+[Voting ](essentials-voting.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| HINZUFÜGEN ABSTIMMUNG | Der Inhalt des Mitglieds wurde abgestimmt |
+| hinzufügen ABSTIMMUNG | Der Inhalt des Mitglieds wurde abgestimmt |
 | ABSTIMMUNG ENTFERNEN | Inhalt des Mitglieds wurde abgelehnt |
 
-**Moderationsaktivierte Komponenten** SocialEvent `topic`= com/adobe/cq/social/moderation
+**Moderationsaktivierte**
+KomponentenSocialEvent  `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -121,15 +131,15 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 
 ## Ereignis für benutzerdefinierte Komponenten {#events-for-custom-components}
 
-Bei einer benutzerdefinierten Komponente muss die abstrakte [SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) erweitert werden, um die Ereignis der Komponente als `actions`die für eine `topic`Komponente auftretenden Ereignisse aufzuzeichnen.
+Bei einer benutzerdefinierten Komponente muss die abstrakte [SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) erweitert werden, um die Ereignis der Komponente als `actions`aufzuzeichnen, die für ein `topic` auftreten.
 
-Das benutzerdefinierte Ereignis setzt die Methode außer Kraft, `getVerb()` sodass für jede Methode ein passender Wert zurückgegeben `verb`wird `action`. Die für eine Aktion `verb` zurückgegebene kann eine häufig verwendete (z. B. `POST`) oder eine für die Komponente spezialisierte (z. B. `ADD RATING`) Aktion sein. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
+Das benutzerdefinierte Ereignis setzt die Methode `getVerb()` außer Kraft, sodass für jedes `action` ein entsprechendes `verb`zurückgegeben wird. Das für eine Aktion zurückgegebene `verb` kann eine häufig verwendete (z. B. `POST`) oder eine für die Komponente spezialisierte (z. B. `ADD RATING`) sein. Es besteht eine *n-1*-Beziehung zwischen `actions`und `verbs`.
 
 >[!NOTE]
 >
 >Stellen Sie sicher, dass eine benutzerdefinierte Erweiterung mit einer niedrigeren Rangfolge registriert ist als jede vorhandene Implementierung im Produkt.
 
-### Pseudo-Code für Ereignis einer benutzerdefinierten Komponente {#pseudo-code-for-custom-component-event}
+### Pseudo-Code für das Ereignis für benutzerdefinierte Komponenten {#pseudo-code-for-custom-component-event}
 
 [org.osgi.service.Ereignis.Ereignis](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);\
@@ -238,7 +248,7 @@ Im folgenden Pseudo-Codebeispiel werden DELETE-Ereignis für Kommentarkomponente
 
 ### Pseudo-Code für EventListener {#pseudo-code-for-eventlistener}
 
-Erfordert das [neueste Feature Pack](deploy-communities.md#latestfeaturepack).
+Erfordert [das neueste Feature Pack](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;
