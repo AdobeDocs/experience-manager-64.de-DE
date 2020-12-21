@@ -30,7 +30,7 @@ Wenn Sie mit dem AEM Forms-Server online sind, wird Ihre App standardmäßig all
 
 **Manuelles Synchronisieren der App**
 
-Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
+Tippen Sie auf die Schaltfläche Synchronisieren ![sync-app](assets/sync-app.png) in der rechten unteren Ecke des Startbildschirms.
 
 **Ändern der Synchronisierungsfrequenz**
 
@@ -42,7 +42,7 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 1. Tippen Sie für die Option „Sync frequency“ auf den Wert rechts neben „Sync frequency“. 
 1. Wählen Sie in der Dropdown-Liste die neue Synchronisierungshäufigkeit aus.
 
-### Technische Spezifikationen {#technical-specifications}
+### Technische Spezifikationen  {#technical-specifications}
 
 * Die Hauptlogik zum Übertragen der Offline-Daten der App an den AEM Forms-Server ist in „runtime/offline/util/offline.js“ enthalten.
 * In der .js sendet ein Aufruf der Funktion „processOfflineSubmittedSavedTasks(...)“ die gespeicherten bzw. übermittelten Aufgaben an den Server. Darüber hinaus werden Fehler bei der Synchronisierung behandelt. Wenn bei der Übermittlung einer Aufgabe ein Fehler auftritt, wird die Aufgabe in der App als fehlerhaft markiert. Darüber hinaus verbleibt die Aufgabe in der Outbox.
