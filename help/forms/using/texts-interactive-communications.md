@@ -20,7 +20,7 @@ ht-degree: 71%
 
 Erstellen und Bearbeiten von Textdokumentfragmenten zur Verwendung in interaktiver Kommunikation: Text ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktiver Kommunikation verwendet werden. Die anderen drei sind Bedingungen, Listen und Layoutfragmente.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Ein Textdokument besteht aus einem oder mehreren Textabsätzen. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz kann Formulardatenmodelleigenschaften und -variablen enthalten. Sie können auch Regeln anwenden und innerhalb eines Textfragments wiederholen. Beispielsweise könnte der Kundenname in einer Begrüßung eine FDM-Eigenschaft (Form Data Model) sein, deren Wert zur Laufzeit verfügbar gemacht wird. Durch Änderung dieser Werte kann dieselbe interaktive Kommunikation verwendet werden, um die interaktive Kommunikation für verschiedene Kunden mithilfe der Agent-Benutzeroberfläche vorzubereiten.
 
@@ -29,11 +29,11 @@ Das Textfragment in Interaktiver Kommunikation unterstützt den folgenden Typ dy
 * **Datenmodellobjekte**: Die Dateneigenschaften verwenden eine Back-End-Datenquelle.
 * **Regelbasierter Inhalt**: Teile des Inhalts in einem Text, die basierend auf einer Regel angezeigt oder ausgeblendet werden. Eine Regel kann auch auf den Eigenschaften und Variablen des Formulardatenmodells basieren.
 * **Variablen**: Im Textdokumentfragment sind Variablen nicht an eine Backend-Datenquelle gebunden. Der Agent füllt/wählt Werte in Variablen aus oder bindet die Variablen an Datenquellen, während er die interaktive Kommunikation für das Senden an einen Nachbearbeitungsprozess vorbereitet.
-* **Wiederholen**: Sie verfügen möglicherweise über dynamische Informationen in Ihrer interaktiven Kommunikation, z. B. Transaktionen in einem Kreditkartenauszug, deren Häufigkeit sich mit jeder generierten interaktiven Kommunikation ändern kann. Wenn Sie die Wiederholen-Funktion verwenden, können Sie solche dynamischen Daten formatieren und strukturieren. For more information, see [Inline condition and repeat](cm-inline-condition.md).
+* **Wiederholen**: Sie verfügen möglicherweise über dynamische Informationen in Ihrer interaktiven Kommunikation, z. B. Transaktionen in einem Kreditkartenauszug, deren Häufigkeit sich mit jeder generierten interaktiven Kommunikation ändern kann. Wenn Sie die Wiederholen-Funktion verwenden, können Sie solche dynamischen Daten formatieren und strukturieren. Weitere Informationen finden Sie unter [Inline-Bedingung und wiederholen](cm-inline-condition.md).
 
 ## Text erstellen {#createtext}
 
-1. Select **`[!UICONTROL Forms]`** > **[!UICONTROL Document Fragments]**.
+1. Wählen Sie **`[!UICONTROL Forms]`** > **[!UICONTROL Dokument-Fragmente]**.
 1. Wählen Sie **`[!UICONTROL Create]`** > **[!UICONTROL Text]**.
 1. Geben Sie die folgenden Daten an:
 
@@ -70,7 +70,7 @@ Das Textfragment in Interaktiver Kommunikation unterstützt den folgenden Typ dy
 
 Sie können ein vorhandenes Textdokumentfragment mithilfe der folgenden Schritte bearbeiten. Sie können auch ein Textfragment aus einem Dokument in einem Interaktiven Kommunikationseditor bearbeiten.
 
-1. Select **`[!UICONTROL Forms]`** > **[!UICONTROL Document Fragments]**.
+1. Wählen Sie **`[!UICONTROL Forms]`** > **[!UICONTROL Dokument-Fragmente]**.
 1. Navigieren Sie zu einem Textdokumentfragment und wählen Sie es aus.
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Nehmen Sie die erforderlichen Änderungen vor. Weitere Informationen zu Optionen im Text finden Sie unter [Text erstellen](#createtext).
@@ -78,15 +78,15 @@ Sie können ein vorhandenes Textdokumentfragment mithilfe der folgenden Schritte
 
 ## Personalisieren eines Textdokumentfragments mithilfe von Formulardatenmodelleigenschaften {#formdatamodel}
 
-Sie können Textdokumentfragmente personalisieren, indem Sie die Formulardatenmodelleigenschaften einfügen. Durch Einfügen der Eigenschaften des Formulardatenmodells in den Text können Sie Empfänger-spezifische Daten aus der zugehörigen Datenquelle abrufen und ausfüllen, während Sie eine Vorschau der interaktiven Kommunikation anzeigen. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Sie können Textdokumentfragmente personalisieren, indem Sie die Formulardatenmodelleigenschaften einfügen. Durch Einfügen der Eigenschaften des Formulardatenmodells in den Text können Sie Empfänger-spezifische Daten aus der zugehörigen Datenquelle abrufen und ausfüllen, während Sie eine Vorschau der interaktiven Kommunikation anzeigen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
 Wenn Sie beim Erstellen eines Textes ein Formulardatenmodell angegeben haben, werden die Eigenschaften im Formulardatenmodell im linken Bereich des Texteditors angezeigt. Das angegebene Formulardatenmodell sollte sowohl für das Textfeldfragment als auch für die interaktive Kommunikation, die das Dokument enthält, identisch sein.
 
 ![insertFdmelementtext](assets/insertfdmelementtext.png)
 
-* To insert an FDM property into text, place the cursor where you want to insert the property, then select the **`[A]`** property in the left pane by tapping on it, and tap **`[B]`** **[!UICONTROL Add Selected]**. You can also just double-tap the property to insert it at the **`[C]`** cursor position. Die Eigenschaften des Formulardatenmodells werden in einer braunen Hintergrundfarbe hervorgehoben.
+* Um eine FDM-Eigenschaft in Text einzufügen, platzieren Sie den Cursor an der Stelle, an der Sie die Eigenschaft einfügen möchten. Wählen Sie dann die **`[A]`**-Eigenschaft im linken Bereich aus, indem Sie darauf tippen, und tippen Sie auf **`[B]`** **[!UICONTROL Hinzufügen Ausgewählte]**. Sie können auch einfach mit der Dublette auf die Eigenschaft tippen, um sie an der Cursorposition **`[C]`** einzufügen. Die Eigenschaften des Formulardatenmodells werden in einer braunen Hintergrundfarbe hervorgehoben.
 
-* To allow the agents to edit an FDM property&#39;s value in the agent UI while [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) using the Agent UI, tap the **`[D]`** lock icon for that property and ensure it is in an unlocked state. Der Standardstatus der Eigenschaft ist gesperrt und ein Agent kann die Eigenschaft in der Benutzeroberfläche für Agenten nicht bearbeiten.
+* Um den Agenten zu ermöglichen, den Wert einer FDM-Eigenschaft in der Agent-Benutzeroberfläche zu bearbeiten, während [Interaktive Kommunikation](/help/forms/using/prepare-send-interactive-communication.md) mithilfe der Agent-Benutzeroberfläche vorbereiten und senden, tippen Sie auf das **`[D]`**-Sperrsymbol für diese Eigenschaft und stellen Sie sicher, dass sie sich in einem nicht gesperrten Zustand befindet. Der Standardstatus der Eigenschaft ist gesperrt und ein Agent kann die Eigenschaft in der Benutzeroberfläche für Agenten nicht bearbeiten.
 
 * 
 
@@ -102,7 +102,7 @@ Sie können Variablen anstelle von Formulardatenmodelleigenschaften verwenden, w
 * Das Textdokumentfragment hat zum Zeitpunkt seiner Erstellung kein Formulardatenmodell. Sie können Variablen einfügen und später zum Zeitpunkt der Erstellung der interaktiven Kommunikation an die Eigenschaften des Formulardatenmodells binden.
 * Sie müssen Text aus einem Textdokumentfragment binden und abrufen. Nur die Textdokumentfragmente können an Variablen gebunden werden, die keine Variablen enthalten.
 
-Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen erstellen und einfügen. Die von Ihnen erstellten Variablen werden auf der Registerkarte „Daten“ der Benutzeroberfläche des Agenten angezeigt. The agent specifies the values for the variables while [Prepare and send Interactive Communication using the Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
+Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen erstellen und einfügen. Die von Ihnen erstellten Variablen werden auf der Registerkarte „Daten“ der Benutzeroberfläche des Agenten angezeigt. Der Agent gibt die Werte für die Variablen an, während [Interaktive Kommunikation mithilfe der Agent-Benutzeroberfläche](/help/forms/using/prepare-send-interactive-communication.md) vorbereiten und senden.
 
 ### Variablen erstellen {#create-variables}
 
@@ -116,12 +116,12 @@ Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen
 
    Bereich „Variablen erstellen“ wird angezeigt.
 
-1. Enter the following information and tap **[!UICONTROL Create]**:
+1. Geben Sie die folgenden Informationen ein und tippen Sie auf **[!UICONTROL Erstellen]**:
 
    * **[!UICONTROL Name*]**: Name der Variablen.
    * **[!UICONTROL Beschreibung]**: Geben Sie optional eine Beschreibung der Variablen ein.
    * **[!UICONTROL Typ*]**: Wählen Sie einen Typ der Variablen: Zeichenfolge, Zahl, Boolesch oder Datum.
-   * **[!UICONTROL Nur bestimmte Werte zulassen]**: Bei Zeichenfolge- und Zahl-Variablen können Sie sicherstellen, dass der Agent aus einem bestimmten Satz von Werten für einen Platzhalter in der Agent-UI auswählt. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values]** field.
+   * **[!UICONTROL Nur bestimmte Werte zulassen]**: Bei Zeichenfolge- und Zahl-Variablen können Sie sicherstellen, dass der Agent aus einem bestimmten Satz von Werten für einen Platzhalter in der Agent-UI auswählt. Um den Satz von Werten anzugeben, wählen Sie diese Option und geben Sie dann kommagetrennte Werte an, die im Feld **[!UICONTROL Werte]** zulässig sind.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**.
 
@@ -179,7 +179,7 @@ Mit Regeleditor in einem Text können Sie Regeln erstellen, um Textzeichenfolgen
 
    Regel, um den ausgewählten Text anzuzeigen, wenn der Standort des Empfängers gemäß den Quelldaten von FDM US ist
 
-   * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. Der erweiterte Vollbildansichtsdialog ermöglicht Ihnen, Eigenschaften des Formulardatenmodells und Variablen mithilfe der Drag &amp; Drop-Funktion zu ziehen und einzufügen, um Regeln zu erstellen. Tippen Sie erneut auf „Größe ändern“, um zum Dialogfeld „Regel erstellen“ zurückzukehren.
+   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht Ihnen, Eigenschaften des Formulardatenmodells und Variablen mithilfe der Drag &amp; Drop-Funktion zu ziehen und einzufügen, um Regeln zu erstellen. Tippen Sie erneut auf „Größe ändern“, um zum Dialogfeld „Regel erstellen“ zurückzukehren.
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
    * Sie können auch überlappende Regeln erstellen, in denen eine Regel auf einen Teil eines Inhalts angewendet wird, auf den bereits eine Regel angewendet wurde.
 
@@ -209,15 +209,15 @@ Ausrichtungs-Symbolleiste
 
 Auflistungs-Symbolleiste
 
-### Teile des Textes hervorheben {#highlight}
+### Teile des Textes hervorheben  {#highlight}
 
 Um Textteile in einem bearbeitbaren Textfragment hervorzuheben oder hervorzuheben, wählen Sie den Dokument aus und klicken Sie auf &quot;Hervorhebungsfarbe&quot;.
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-You can either directly tap a basic color **`[A]`** present in the Basic Colors palette or tap **Select** after using the slider **`[B]`** to choose the appropriate shade of the color.
+Sie können entweder direkt auf eine Grundfarbe **`[A]`** in der Palette &quot;Grundfarben&quot;tippen oder auf **Wählen Sie**, nachdem Sie den Schieberegler **`[B]`** verwendet haben, um die entsprechende Farbschattierung auszuwählen.
 
-Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **`[C]`** to create the precise color and then tap Select **`[D]`** to apply the color to highlight the text.
+Optional können Sie auch auf der Registerkarte &quot;Erweitert&quot;die gewünschte Farbe für Farbton, Helligkeit und Sättigung **`[C]`** auswählen, um die exakte Farbe zu erstellen, und dann auf **`[D]`** tippen, um die Farbe anzuwenden und den Text zu markieren.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -242,12 +242,12 @@ Sie können den Text direkt aus dem Microsoft® Word-Dokument in ein bearbeitbar
 Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, , ^ und ^
+* Mathematische Symbole wie z. B. □, □ und ^
 * Interpunktionssymbole wie ‟ und&quot;
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
-Texteditor enthält integrierte Unterstützung für 210 Sonderzeichen. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
+Texteditor enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung](/help/forms/using/custom-special-characters.md) hinzufügen.
 
 ## Text suchen und ersetzen {#search-features}
 
@@ -267,4 +267,4 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
    Sie können auch auf „Alle ersetzen“ tippen, um alle Übereinstimmungen auf einmal zu ersetzen.
 
-   Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken. To use regex in your search, select **[!UICONTROL Reg ex]** and then tap **[!UICONTROL Find]** or **[!UICONTROL Replace]**.
+   Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken. Um regex in Ihrer Suche zu verwenden, wählen Sie **[!UICONTROL Reg ex]** und tippen Sie dann auf **[!UICONTROL Suchen]** oder **[!UICONTROL Ersetzen]**.
