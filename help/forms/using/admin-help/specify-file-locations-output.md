@@ -38,13 +38,13 @@ Der Standardwert ist `com/adobe/formServer/PA/pa_output.xci`.
 
 **Cache-Speicherort:** Gibt den Speicherort des Output-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
-**Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
+**Standardposition:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[forms server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners für AEM Formulare erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. The subdirectory is named `adobeoutput_[servername]`.
+**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners für AEM Formulare erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. Der Unterordner heißt `adobeoutput_[servername]`.
 
 >[!NOTE]
 >
