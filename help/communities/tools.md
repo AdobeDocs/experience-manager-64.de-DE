@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Communities-Tools {#communities-tools}
+# Communities Tools {#communities-tools}
 
 Wenn Sie Autor sind, können Sie auf die Communities Tools Console zugreifen:
 
@@ -27,11 +27,11 @@ Wenn Sie Autor sind, können Sie auf die Communities Tools Console zugreifen:
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Site-Vorlagen](sites.md) - Konsole für die Erstellung und Verwaltung von Sitevorlagen
-* [Gruppenvorlagen](tools-groups.md)- Konsole für die Erstellung und Verwaltung von Gruppenvorlagen
-* [Community-Funktionen](functions.md)- Konsole für die Erstellung und Verwaltung von Community-Funktionen
-* [Datenspeicherung Configuration](srp-config.md) - Console für Konfiguration und Auswahl des [Standard-SRP](working-with-srp.md)
+* [Site-Vorlagen](sites.md)  - Konsole für die Erstellung und Verwaltung von Sitevorlagen
+* [Gruppenvorlagen](tools-groups.md) - Konsole für die Erstellung und Verwaltung von Gruppenvorlagen
+* [Community-Funktionen](functions.md) - Konsole für die Erstellung und Verwaltung von Community-Funktionen
+* [Datenspeicherung Configuration](srp-config.md)  - Console für Konfiguration und Auswahl des  [Standard-SRP](working-with-srp.md)
 
-* [Komponentenleitfaden](components-guide.md) - Öffnet eine interaktive Site, auf der Experimente darüber durchgeführt werden können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
-* [Abzeichen](badges.md) - Konsole, in der benutzerdefinierte Abzeichen für die Verwendung in [Scoring- und Kennzeichnungsregeln hinzugefügt werden können](implementing-scoring.md)
+* [Komponenten-Handbuch](components-guide.md) : Öffnet eine interaktive Site, auf der Experimente darüber durchgeführt werden können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
+* [Abzeichen](badges.md)  - Konsole, in der benutzerdefinierte Abzeichen für die Verwendung in  [Scoring- und Kennzeichnungsregeln hinzugefügt werden können](implementing-scoring.md)
 
