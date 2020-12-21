@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Informationen zu neuesten Funktionen und Verbesserungen in AEM Forms finden Sie unter [Neue Funktionen in AEM Forms](/help/forms/using/whats-new.md).
 
-## Info zu AEM Forms {#about-aem-forms}
+## Info zu AEM Forms  {#about-aem-forms}
 
 Adobe Experience Manager (AEM) ist eine benutzerfreundliche Lösung, mit der Sie komplexe digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren und dabei in Back-End-Prozesse, Geschäftsregeln und Daten integrieren können.
 
@@ -47,7 +47,7 @@ Zusammenfassend lässt sich sagen, dass AEM Forms leistungsstarke Formularverwal
 * Integration mit Adobe Document Cloud-eSign-Diensten oder Scribble zur elektronischen Verschlüsselung von Dokumenten mit vertraulichen Informationen
 * Automatisierte Formularveröffentlichungsfunktionen und die Möglichkeit, zeitnahe, personalisierte und konsistente Kommunikation über mehrere Kanäle bereitzustellen
 
-## AEM-Formulartypen {#aem-form-types}
+## AEM-Formulartypen  {#aem-form-types}
 
 Mit AEM Forms können Sie neue und vorhandene Formulare erweitern, um Folgendes zu erstellen:
 
@@ -117,5 +117,5 @@ Personalisierte Dokumente, wie Empfangsbestätigungen, Willkommens-Kits und Anwe
 * Document Security-Add-On für AEM Forms mit Funktionen für Verschlüsselung, Nutzungsrichtlinien, Verfolgung und Prüfung
 
 ![](do-not-localize/layout-02.png)
-**Abbildung:** *Optimierter Workflow für personalisierte Kommunikation*
+**Abbildung:** *Optimierter Arbeitsablauf für die personalisierte Kommunikation*
 
