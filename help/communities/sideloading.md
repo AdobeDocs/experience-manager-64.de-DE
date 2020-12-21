@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Komponenten-Sideloading {#component-sideloading}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Das Sideloading von Communities-Komponenten ist nützlich, wenn eine Webseite als einfache Einzelseitenanwendung entworfen wird, die dynamisch ändert, was angezeigt wird, je nachdem, was vom Site-Besucher ausgewählt wird.
 
@@ -32,20 +32,20 @@ Wenn eine Seite zum Sideloading von Communities-Komponenten konzipiert ist, kann
 
 Die Schritte zum dynamischen Hinzufügen von SCF-Komponenten sind:
 
-1. [Hinzufügen der Komponente zum DOM](#dynamically-add-component-to-dom)
+1. [hinzufügen der Komponente zum DOM](#dynamically-add-component-to-dom)
 
-1. [Laden Sie die Komponente](#sideload-by-invoking-scf) mit einer der beiden Methoden herunter:
+1. [Laden Sie die ](#sideload-by-invoking-scf) Komponente mit einer der beiden Methoden herunter:
 
 * [Dynamische Inklusion](#dynamic-inclusion)
    * Alle dynamisch hinzugefügten Komponenten verstärken
 * [Dynamisches Laden](#dynamic-loading)
-   * Hinzufügen einer bestimmten Komponente auf Abruf
+   * hinzufügen einer bestimmten Komponente auf Abruf
 
 >[!NOTE]
 >
->Sideloading [nicht vorhandener Ressourcen](scf.md#add-or-include-a-communities-component) wird nicht unterstützt.
+>Das Sideloading von [nicht vorhandenen Ressourcen](scf.md#add-or-include-a-communities-component) wird nicht unterstützt.
 
-## Dynamische Hinzufügen von Komponenten zu DOM {#dynamically-add-component-to-dom}
+## Dynamische Hinzufügen der Komponente zu DOM {#dynamically-add-component-to-dom}
 
 Unabhängig davon, ob die Komponente dynamisch eingeschlossen oder dynamisch geladen wird, muss sie zunächst dem DOM hinzugefügt werden.
 
@@ -53,9 +53,11 @@ Beim Hinzufügen der SCF-Komponente wird am häufigsten das DIV-Tag verwendet, e
 
 Welches Tag verwendet wird, das Element muss mindestens dem normalen SCF-Stammelementmuster entsprechen, indem es die beiden folgenden Attribute enthält:
 
-* **data-component-id** Der effektive Pfad zur hinzugefügten Komponente
+* **data-component-**
+idDer effektive Pfad zur hinzugefügten Komponente
 
-* **data-scf-component** Der resourceType der Komponente
+* **data-scf-**
+componentDer resourceType der Komponente
 
 Im Folgenden finden Sie ein Beispiel für eine hinzugefügte Kommentarkomponente:
 
@@ -86,4 +88,4 @@ Anstatt alle im DOM gefundenen SCF-Komponenten zu bootstrapping durchzuführen, 
 
 SCF.addComponent(Dokument.getElementById(*someId*));
 
-Dabei ist *someId* der Wert des **data-component-id** -Attributs.
+Dabei ist *someId* der Wert des Attributs **data-component-id**.
