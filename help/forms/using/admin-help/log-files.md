@@ -22,19 +22,19 @@ ht-degree: 64%
 
 Ereignisse wie Laufzeit- oder Startfehler werden in die Protokolldateien des Anwendungsservers geschrieben. Wenn bei der Bereitstellung auf dem Anwendungsserver Probleme auftreten, können Sie diese mithilfe der Protokolldateien ermitteln. Sie können die Protokolldateien in einem beliebigen Texteditor öffnen.
 
-(JBoss) Die folgenden Protokolldateien befinden sich im `*[appserver root]*/server/*[server]*/log` Ordner:
+(JBoss) Die folgenden Protokolldateien befinden sich im Ordner `*[appserver root]*/server/*[server]*/log`:
 
 * boot.log
 * server.log.*[jjjj-mm-tt]*
 * server.log
 
-(WebLogic) Domain log files are located in the *[appserverdomain]* directory, and server log files are located in the *[appserverdomain]/servers/[appserver name]/logs *directory:
+(WebLogic) Die Protokolldateien für Domänen befinden sich im Ordner *[appserverdomain]* und die Protokolldateien für Server befinden sich im Ordner *[appserverdomain]/servers/[appserver name]/logs *Verzeichnis:
 
 * access.log
 * *[appserver name]*.log
 * *[appserver name]*.out.*[incremental number]*
 
-(WebSphere) The following log files are located in the *[appserver root]*/profiles/default/logs/*[appserver name]* directory:
+(WebSphere) Die folgenden Protokolldateien befinden sich im Ordner *[Anwendungsserver-Stammordner]*/Profils/default/logs/*[Anwendungsserver-Name]*:
 
 * SystemErr.log
 * SystemOut.log
