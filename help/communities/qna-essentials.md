@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# QnA-Grundlagen {#qna-essentials}
+# QnA Essentials {#qna-essentials}
 
 Diese Seite enthält die wesentlichen Informationen für die Arbeit mit dem Forum-Feature zu Fragen und Antworten (QnA).
 
@@ -36,7 +36,7 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit dem Foru
   </tr>
   <tr>
    <td> <a href="clientlibs.md">clientllibs</a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.stimmst<br /> cq.social.hbs.qna</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.stimbe<br /> cq.social.hbs.qna</td> 
   </tr>
   <tr>
    <td> templates</td> 
@@ -48,7 +48,7 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit dem Foru
   </tr>
   <tr>
    <td> properties</td> 
-   <td>Siehe <a href="working-with-qna.md">Funktion des QnA-Forums</a></td> 
+   <td>Siehe <a href="working-with-qna.md">QnA-Forumsfunktion</a></td> 
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit dem Foru
 
 ### Fragen/Antworten-Funktion {#qna-function}
 
-Eine Community-Site-Struktur, die die [QnA-Funktion](functions.md#qna-function) enthält, verfügt über eine konfigurierte `QnA` Komponente sowie Einstellungen, die sich auf Moderation und Tagging auswirken. Die Funktion QnA unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [QnA-Funktion](functions.md#qna-function) enthält, verfügt über eine konfigurierte `QnA`-Komponente sowie Einstellungen, die sich auf Moderation und Tagging auswirken. Die QnA-Funktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
 
 ### Zugriff auf QnA-Forumsbeiträge (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.\
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
