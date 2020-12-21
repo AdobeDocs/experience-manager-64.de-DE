@@ -146,13 +146,13 @@ Document Security-Administratoren können unter Verwendung der folgenden Berecht
 * Document Security – Serverereignisse anzeigen
 * Document Security – Richtlinieneigentümer ändern
 
-## Informationen zu Richtlinien und richtliniengeschützten Dokumenten {#policies-and-policy-protected-documents}
+## Informationen zu Richtlinien und richtliniengeschützten Dokumenten  {#policies-and-policy-protected-documents}
 
 Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen und Benutzern, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Eine Richtlinie ermöglicht auch eine dynamische Änderung der für ein Dokument geltenden Berechtigungen. Sie berechtigt den Benutzer, der das Dokument absichert, zum Ändern der Vertraulichkeitseinstellungen, um den Zugriff auf das Dokument zu sperren, oder das Wechseln der Richtlinie.
 
 Der Richtlinienschutz kann über Adobe Acrobat® Pro und Acrobat Standard für ein PDF-Dokument aktiviert werden. Der Richtlinienschutz kann auch für andere Dateitypen, z. B. Microsoft Word-, Excel- und PowerPoint-Dateien aktiviert werden. Verwenden Sie hierfür die Clientanwendung, wobei die entsprechende Acrobat Reader DC Extensions installiert sein muss.
 
-### Funktionsweise von Richtlinien {#how-policies-work}
+### Funktionsweise von Richtlinien  {#how-policies-work}
 
 Richtlinien enthalten Informationen zu den autorisierten Benutzern und den Vertraulichkeitseinstellungen, die auf Dokumente angewendet werden sollen. Bei den Benutzern kann es sich um unternehmensinterne Personen oder externe Personen mit einem Konto handeln. Wenn der Administrator die Benutzereinladungsfunktion aktiviert, können sogar neu eingeladene Benutzer zu Richtlinien hinzugefügt werden, wodurch ein E-Mail-basierter Einladungsprozess zur Registrierung eingeleitet wird.
 
@@ -181,7 +181,7 @@ Wenn Sie eine Richtlinie auf ein Dokument anwenden, werden die im Dokument entha
 
 Wenn die Offline-Nutzung aktiviert ist, können Empfänger auch offline (ohne aktive Internet- oder Netzwerkverbindung) für die in der Richtlinie angegebene Dauer mit richtliniengeschützten Dokumenten arbeiten.
 
-### Funktionsweise richtliniengeschützter Dokumente {#how-policy-protected-documents-work}
+### Funktionsweise richtliniengeschützter Dokumente  {#how-policy-protected-documents-work}
 
 Um richtliniengeschützte Dokumente öffnen und verwenden zu können, muss die Richtlinie Ihren Namen als Empfänger enthalten. Außerdem müssen Sie ein gültiges Document Security-Konto haben. Für PDF-Dokumente benötigen Sie Acrobat oder Adobe Reader®. Für andere Dateitypen müssen sowohl die entsprechende Anwendung als auch die Acrobat Reader DC Extensions für diese Anwendung installiert sein.
 
@@ -206,7 +206,7 @@ Nach Ende der Offline-Nutzungsdauer muss der Benutzer das Dokument wieder mit Do
 
 Wenn Sie eine Kopie eines richtliniengeschützten Dokuments mit dem Menübefehl „Speichern“ oder „Speichern unter“ speichern, wird die Richtlinie automatisch angewendet und für das neue Dokument erzwungen. Ereignisse, z. B. Versuche, das neue Dokument zu öffnen, werden für das ursprüngliche Dokument geprüft und aufgezeichnet.
 
-## Richtliniensätze {#policy-sets}
+## Richtliniensätze  {#policy-sets}
 
 *Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck.  Diese Richtliniensätze werden meist einer Teilmenge der Benutzer im System zur Verfügung gestellt.
 
