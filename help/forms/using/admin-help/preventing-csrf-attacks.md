@@ -28,9 +28,9 @@ Angenommen, Sie sind in einem Browser bei Administration Console angemeldet. Sie
 
 ## CSRF-verwandte Begriffe {#csrf-related-terms}
 
-**Referrer:** Die Adresse der Quellseite, von der eine Anforderung stammt. Eine Webseite auf „site1.com“ enthält beispielsweise einen Link zu „site2.com“. Beim Klicken auf den Link, wird eine Anforderung an „site2.com“ gesendet. Die Referenz dieser Anforderung ist „site1.com“, da die Anforderung von einer Seite stammt, deren Quelle „site1.com“ ist.
+**Referrer:** Die Adresse der Quellseite, von der aus eine Anforderung stammt. Eine Webseite auf „site1.com“ enthält beispielsweise einen Link zu „site2.com“. Beim Klicken auf den Link, wird eine Anforderung an „site2.com“ gesendet. Die Referenz dieser Anforderung ist „site1.com“, da die Anforderung von einer Seite stammt, deren Quelle „site1.com“ ist.
 
-**Whitelist-URIs:** URIs identifizieren Ressourcen auf dem Formularserver, die angefordert werden, z. B. /adminui oder /contentspace. Einige Ressourcen ermöglichen einer Anforderung möglicherweise, von einer externen Site aus auf die Anwendung zuzugreifen. Diese Ressourcen werden als auf die Zulassungsliste gesetzt URIs betrachtet. Der Formularserver führt nie eine Referrer-Prüfung von auf die Zulassungsliste gesetzt URIs durch.
+**Whitelisted URIs:** URIs identifizieren Ressourcen auf dem Formularserver, die angefordert werden, z. B. /adminui oder /contentspace. Einige Ressourcen ermöglichen einer Anforderung möglicherweise, von einer externen Site aus auf die Anwendung zuzugreifen. Diese Ressourcen werden als auf die Zulassungsliste gesetzt URIs betrachtet. Der Formularserver führt nie eine Referrer-Prüfung von auf die Zulassungsliste gesetzt URIs durch.
 
 **Null-Referenz:** Wenn Sie ein neues Browserfenster oder eine neue Registerkarte öffnen, dann eine Adresse eingeben und die Eingabetaste drücken, ist der Verweis null. Die Anforderung ist neu und stammt nicht aus einer übergeordneten Webseite, daher gibt es keine Referenz für die Anforderung. Der Forms kann eine Null-Referenz aus folgenden Quellen erhalten:
 
@@ -38,7 +38,7 @@ Angenommen, Sie sind in einem Browser bei Administration Console angemeldet. Sie
 * Beliebige Desktop-Clients, die eine HTTP-Anforderung an auf einem SOAP- oder REST-Endpunkt von AEM Forms durchführen
 * Wenn ein neues Browserfenster geöffnet wird und die URL für die Anmeldeseite einer AEM Forms-Webanwendung eingegeben wird
 
-Lassen Sie eine Null-Referenz auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem eine Null-Referenz auf allen URI-Anmeldeseiten, wie „/adminui“ und „/contentspace“, und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist das zugeordnete Servlet für „/contentspace“ „/contentspace/faces/jsp/login.jsp“, was eine Null-Referenzausnahme darstellt. Diese Ausnahme ist nur erforderlich, wenn Sie GET-Filterung für die Webanwendung aktivieren. Die Anwendungen können angeben, ob Null-Referenzen zulässig sind. See “Protecting from Cross-Site Request Forgery attacks” in [Hardening and Security for AEM forms](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+Lassen Sie eine Null-Referenz auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem eine Null-Referenz auf allen URI-Anmeldeseiten, wie „/adminui“ und „/contentspace“, und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist das zugeordnete Servlet für „/contentspace“ „/contentspace/faces/jsp/login.jsp“, was eine Null-Referenzausnahme darstellt. Diese Ausnahme ist nur erforderlich, wenn Sie GET-Filterung für die Webanwendung aktivieren. Die Anwendungen können angeben, ob Null-Referenzen zulässig sind. Siehe &quot;Schutz vor Cross-Site Request Forgery-Angriffen&quot; in [Härtung und Sicherheit für AEM Formulare](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 **Zulässige Referrer-Ausnahme:** Zulässige Referrer-Ausnahme ist eine Unterliste der Liste zulässiger Referrer, von der aus Anfragen blockiert werden. Zulässige Referenzauausnahmen beziehen sich insbesondere auf eine Webanwendung. Wenn eine Untergruppe der zulässigen Referrer keine bestimmte Webanwendung aufrufen darf, können Sie die Referrer über &quot;Zulässige Referrer - Ausnahmen&quot;per Blockierungsliste zuordnen. Zulässige Referenzausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen in „Härtung und Sicherheit für AEM Forms on Hilfe und Tutorials.)
 
@@ -66,7 +66,7 @@ AEM Forms bietet Referenzfilterung, die CSRF-Angriffe verhindern kann. Im Folgen
    * Wenn eine Null-Referenz zulässig ist, wird die Anforderung übergeben.
    * Wenn eine Null-Referenz nicht zulässig ist, überprüft der Server, ob der angeforderte URI eine Ausnahme für die Null-Referenz ist, und bearbeitet die Anfrage entsprechend.
 
-## Zulässige Referenzen konfigurieren {#configure-allowed-referers}
+## Zulässige Referenzen konfigurieren  {#configure-allowed-referers}
 
 Wenn Sie Configuration Manager ausführen, werden der Standardhost und die IP-Adresse oder der Formularserver der Liste für zulässige Referenzen hinzugefügt. Sie können diese Liste in Administration Console bearbeiten.
 
