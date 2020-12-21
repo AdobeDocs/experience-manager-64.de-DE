@@ -25,7 +25,7 @@ Mobile Device Management (MDM) ermöglicht die Bereitstellung von Apps für mobi
 >
 >Die Bereitstellung ist nur für iOS- und Android-Geräte möglich.
 
-## Die folgenden Hauptmerkmale werden im Allgemeinen durch MDM-Lösungen bereitgestellt: {#main-features-generally-provided-by-mdm-solutions}
+## Die folgenden Hauptmerkmale werden im Allgemeinen durch MDM-Lösungen bereitgestellt:  {#main-features-generally-provided-by-mdm-solutions}
 
 * Aktivieren der Geräte-Einschreibung in der Unternehmensumgebung
 * Zulassen der Konfiguration und Aktualisierung von Geräte-Einstellungen
