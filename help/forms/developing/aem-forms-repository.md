@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# Working with AEM Forms Repository {#working-with-aem-forms-repository}
+# Arbeiten mit AEM Forms Repository {#working-with-aem-forms-repository}
 
 **Informationen zum Repository-Dienst**
 
-Der Repository-Dienst stellt Ressourcen- und Verwaltungsdienste für AEM Forms bereit. When developers create an *AEM Forms* application, they can deploy the assets in the repository instead of the file system. Die Elemente können alle Typen von Zusätzen umfassen, darunter XML-Formulare, PDF-Formulare (einschließlich Acrobat-Formularen), Formularfragmente, Bilder, Profile, Richtlinien, SWF-Dateien, DDX-Dateien, XML-Schemas, WSDL-Dateien und Testdaten.
+Der Repository-Dienst stellt Ressourcen- und Verwaltungsdienste für AEM Forms bereit. Wenn Entwickler eine *AEM Forms*-Anwendung erstellen, können sie die Elemente im Repository anstatt im Dateisystem bereitstellen. Die Elemente können alle Typen von Zusätzen umfassen, darunter XML-Formulare, PDF-Formulare (einschließlich Acrobat-Formularen), Formularfragmente, Bilder, Profile, Richtlinien, SWF-Dateien, DDX-Dateien, XML-Schemas, WSDL-Dateien und Testdaten.
 
 Nehmen Sie beispielsweise die folgende Forms-Anwendung mit dem Namen *Applications/FormsApplication*:
 
@@ -32,7 +32,7 @@ Beachten Sie, dass sich im FormsFolder eine Datei mit dem Namen &quot;Loan.xdp&q
 
 >[!NOTE]
 >
->Informationen zum Erstellen einer Forms-Anwendung mit Workbench finden Sie in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Informationen zum Erstellen einer Forms-Anwendung mit Workbench finden Sie unter [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Der Pfad zu einer Ressource im AEM Forms-Repository lautet:
 
@@ -46,7 +46,7 @@ Die folgenden Werte zeigen einige Beispiele für URI-Werte:
 
 >[!NOTE]
 >
->Sie können das AEM Forms-Repository über einen Webbrowser durchsuchen. Um das Repository zu durchsuchen, geben Sie die folgende URL in einen Webbrowser ein https://[Servername]:[Serverport]/Repository. Mithilfe eines Webbrowsers können Sie die Beginn überprüfen, die mit dem Abschnitt Arbeiten mit AEM Forms-Repository verknüpft sind. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen. (See [Quick Start (SOAP mode): Writing a resource using the Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>Sie können das AEM Forms-Repository über einen Webbrowser durchsuchen. Um das Repository zu durchsuchen, geben Sie die folgende URL in einen Webbrowser ein https://[Servername]:[Serveranschluss]/Repository. Mithilfe eines Webbrowsers können Sie die Beginn überprüfen, die mit dem Abschnitt Arbeiten mit AEM Forms-Repository verknüpft sind. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen. (Siehe [Quick Beginn (SOAP-Modus): Schreiben einer Ressource mit der Java-API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 Die Repository-API bietet eine Reihe von Vorgängen, mit denen Sie Informationen aus dem Repository speichern und abrufen können. Sie können beispielsweise eine Liste von Ressourcen abrufen oder spezifische Ressourcen abrufen, die im Repository gespeichert werden, wenn eine Ressource im Rahmen der Verarbeitung einer Anwendung benötigt wird.
 
@@ -57,9 +57,9 @@ Die Repository-API bietet eine Reihe von Vorgängen, mit denen Sie Informationen
 Mithilfe der Repository-Dienst-API können Sie die folgenden Aufgaben ausführen:
 
 * Erstellen von Ordnern. Siehe [Erstellen von Ordnern](aem-forms-repository.md#creating-folders).
-* Schreiben Sie Ressourcen und ihre Eigenschaften. Siehe [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
-* Listen in einer bestimmten Sammlung oder im Zusammenhang mit anderen Ressourcen. Siehe [Auflisten von Ressourcen](aem-forms-repository.md#listing-resources).
-* Lesen Sie Ressourcen und ihre Eigenschaften. Siehe [Lesen von Ressourcen](aem-forms-repository.md#reading-resources).
+* Schreiben Sie Ressourcen und ihre Eigenschaften. Siehe [Schreibressourcen](aem-forms-repository.md#writing-resources).
+* Listen in einer bestimmten Sammlung oder im Zusammenhang mit anderen Ressourcen. Siehe [Listing Resources](aem-forms-repository.md#listing-resources).
+* Lesen Sie Ressourcen und ihre Eigenschaften. Siehe [Reading Resources](aem-forms-repository.md#reading-resources).
 * Aktualisieren Sie Ressourcen und ihre Eigenschaften. Siehe [Aktualisieren von Ressourcen](aem-forms-repository.md#updating-resources).
 * Suchen Sie nach Ressourcen, einschließlich ihres Verlaufs, der zugehörigen Ressourcen und Eigenschaften. Siehe [Suchen nach Ressourcen](aem-forms-repository.md#searching-for-resources).
 * Legen Sie Beziehungen zwischen Ressourcen fest. Siehe [Erstellen von Ressourcenbeziehungen](aem-forms-repository.md#creating-resource-relationships).
@@ -76,7 +76,7 @@ Mithilfe der Repository-Dienst-API können Sie die folgenden Aufgaben ausführen
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Erstellen von Ordnern {#creating-folders}
 
@@ -86,7 +86,7 @@ Dateien übernehmen Listen der Zugriffskontrolle (ACLs) aus Ordnern und Unterord
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -135,30 +135,30 @@ Erstellen Sie einen Ordner mithilfe der Repository Service API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Erstellen Sie den Ordner
 
-   Um eine Ressourcensammlung zu erstellen, müssen Sie zunächst ein `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` Objekt erstellen.
+   Um eine Ressourcensammlung zu erstellen, müssen Sie zunächst ein `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`-Objekt erstellen.
 
-   Rufen Sie die `repositoryInfomodelFactoryBean` Methode des `newResourceCollection` Objekts auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die `repositoryInfomodelFactoryBean`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`newResourceCollection`
 
-   * Eine `com.adobe.repository.infomodel.Id` UID-ID, die der Ressource zugewiesen wird.
-   * Eine `com.adobe.repository.infomodel.Lid` UID-ID, die der Ressource zugewiesen wird.
-   * Eine `java.lang.String` mit dem Namen der Ressourcensammlung. Beispiel: `FormsFolder`.
+   * Eine `com.adobe.repository.infomodel.Id` UUID-ID, die der Ressource zugewiesen wird.
+   * Eine `com.adobe.repository.infomodel.Lid` UUID-ID, die der Ressource zugewiesen wird.
+   * Ein `java.lang.String`, der den Namen der Ressourcensammlung enthält. Beispiel: `FormsFolder`.
 
-   Die Methode gibt ein `com.adobe.repository.infomodel.bean.ResourceCollection` Objekt zurück, das den neuen Ordner darstellt.
+   Die Methode gibt ein `com.adobe.repository.infomodel.bean.ResourceCollection`-Objekt zurück, das den neuen Ordner darstellt.
 
-   Legen Sie die Beschreibung des Ordners mithilfe der `setDescription` Methode fest und übergeben Sie den folgenden Parameter:
+   Legen Sie die Beschreibung des Ordners mit der `setDescription`-Methode fest und übergeben Sie den folgenden Parameter:
 
-   * Eine `String` , die die Ressourcensammlung beschreibt. In diesem Beispiel `"test Folder"` wird `.`
+   * Ein `String`, das die Ressourcensammlung beschreibt. In diesem Beispiel wird `"test Folder"` verwendet.`.`
 
 
 1. Den Ordner in das Repository schreiben
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `writeResource` Objekts auf und übergeben Sie den URI des Ordners und des `ResourceCollection` Objekts. Beispielsweise kann der URI für den Ordner der folgende Wert sein `/Applications/FormsApplication/1.0/`.
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI des Ordners und das `writeResource`-Objekt. `ResourceCollection` Beispielsweise kann der URI für den Ordner der folgende Wert sein: `/Applications/FormsApplication/1.0/`.
 
-   Die Methode gibt eine Instanz des neu erstellten `com.adobe.repository.infomodel.bean.Resource` Objekts zurück. Sie können beispielsweise den Bezeichnerwert der neuen Ressource abrufen, indem Sie die `com.adobe.repository.infomodel.bean.Resource` Objektmethode `getId` aufrufen.
+   Die Methode gibt eine Instanz des neu erstellten `com.adobe.repository.infomodel.bean.Resource`-Objekts zurück. Sie können beispielsweise den Bezeichnerwert der neuen Ressource abrufen, indem Sie die `com.adobe.repository.infomodel.bean.Resource`-Methode des Objekts aufrufen.`getId`
 
 **Siehe auch**
 
@@ -181,24 +181,24 @@ Erstellen Sie einen Ordner mithilfe der Repository Service API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie ihre `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Erstellen Sie den Ordner
 
-   Erstellen Sie den Ordner mit dem Standardkonstruktor für die `ResourceCollection` Klasse und übergeben Sie die folgenden Parameter:
+   Erstellen Sie den Ordner mit dem Standardkonstruktor für die `ResourceCollection`-Klasse und übergeben Sie die folgenden Parameter:
 
-   * Ein `Id` Objekt, das durch Aufrufen des Standardkonstruktors für die `Id` Klasse erstellt und dem `Resource` Objektfeld `id` zugewiesen wird.
-   * Ein `Lid` Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid` Klasse erstellt und dem `Resource` Objektfeld `lid` zugewiesen wird.
-   * Eine Zeichenfolge, die den Namen der Ressourcensammlung enthält, die dem `Resource` Objektfeld zugewiesen `name` wird. Der in diesem Beispiel verwendete Name lautet `"testfolder"`.
-   * Eine Zeichenfolge, die die Beschreibung der Ressourcensammlung enthält, die dem `Resource` Objektfeld zugewiesen `description` ist. Die in diesem Beispiel verwendete Beschreibung lautet `"test folder"`.
+   * Ein `Id`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Id`-Klasse erstellt und dem `Resource`-Objektfeld `id` zugewiesen wird.
+   * Ein `Lid`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid`-Klasse erstellt und dem `Resource`-Objektfeld `lid` zugewiesen wird.
+   * Eine Zeichenfolge, die den Namen der Ressourcensammlung enthält, die dem Feld `Resource` des Objekts `name` zugewiesen ist. Der in diesem Beispiel verwendete Name ist `"testfolder"`.
+   * Eine Zeichenfolge, die die Beschreibung der Ressourcensammlung enthält, die dem Feld `Resource` des Objekts `description` zugewiesen ist. Die in diesem Beispiel verwendete Beschreibung ist `"test folder"`.
 
 1. Den Ordner in das Repository schreiben
 
-   Rufen Sie die `RepositoryServiceService` Objektmethode `writeResource` auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`writeResource`
 
    * Der Pfad, in dem der Ordner erstellt werden soll.
-   * Das `ResourceCollection` Objekt, das den Ordner darstellt.
-   * Für `null` die anderen beiden Parameter übergeben.
+   * Das `ResourceCollection`-Objekt, das den Ordner darstellt.
+   * Übergeben Sie `null` für die anderen beiden Parameter.
 
 **Siehe auch**
 
@@ -206,7 +206,7 @@ Erstellen Sie einen Ordner mithilfe der Repository Service API (Webdienst):
 
 [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Ressourcen schreiben {#writing-resources}
+## Schreiben von Ressourcen {#writing-resources}
 
 Sie können Ressourcen an einem bestimmten Speicherort im Repository erstellen. Die natürliche Dateigröße unterliegt Datenbankbeschränkungen und Sitzungszeitlimit. Bei der Standardkonfiguration sind die Dateien auf 25 MB beschränkt. Um die maximale Dateigröße zu erhöhen oder zu verringern, müssen Sie die Datenbankkonfiguration ändern.
 
@@ -218,7 +218,7 @@ Sie können Ressourcen programmgesteuert mit der Java-API des Repository-Dienste
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -265,7 +265,7 @@ Rufen Sie die Methode des Repository-Dienstes auf, um die Ressource zu schreiben
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Ressourcen mit der Java-API schreiben {#write-resources-using-the-java-api}
+### Ressourcen mit der Java-API {#write-resources-using-the-java-api} schreiben
 
 Erstellen Sie eine Ressource mithilfe der Repository Service API (Java):
 
@@ -275,36 +275,36 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Geben Sie den URI des Ordners &quot;Zielgruppe&quot;für die Ressource an
 
-   Geben Sie den URI des Ressourcenordners für die Zielgruppe an. In diesem Fall wird der URI des Ordners gespeichert, da die Ressource mit dem Namen im Ordner `testResource` gespeichert `testFolder`wird `"/testFolder"`. Der URI wird als `java.lang.String` Objekt gespeichert.
+   Geben Sie den URI des Ressourcenordners für die Zielgruppe an. In diesem Fall ist der URI des Ordners `"/testFolder"`, da die Ressource `testResource` im Ordner `testFolder` gespeichert wird. Der URI wird als `java.lang.String`-Objekt gespeichert.
 
 1. Ressource erstellen
 
-   Um eine Ressource zu erstellen, müssen Sie zunächst ein `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` Objekt erstellen.
+   Um eine Ressource zu erstellen, müssen Sie zunächst ein `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`-Objekt erstellen.
 
-   Rufen Sie die `RepositoryInfomodelFactoryBean` Methode des `newResource` Objekts auf, mit der ein `com.adobe.repository.infomodel.bean.Resource` Objekt erstellt wird. In diesem Beispiel werden die folgenden Parameter bereitgestellt:
+   Rufen Sie die `RepositoryInfomodelFactoryBean`-Methode des Objekts auf, mit der ein `newResource`-Objekt erstellt wird. `com.adobe.repository.infomodel.bean.Resource` In diesem Beispiel werden die folgenden Parameter bereitgestellt:
 
-   * Ein `com.adobe.repository.infomodel.Id` Objekt, das durch Aufrufen des Standardkonstruktors für die `Id` Klasse erstellt wird.
-   * Ein `com.adobe.repository.infomodel.Lid` Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid` Klasse erstellt wird.
-   * Eine `java.lang.String` Datei, die den Dateinamen der Ressource enthält.
+   * Ein `com.adobe.repository.infomodel.Id`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Id`-Klasse erstellt wird.
+   * Ein `com.adobe.repository.infomodel.Lid`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid`-Klasse erstellt wird.
+   * Ein `java.lang.String`, der den Dateinamen der Ressource enthält.
 
-   Um die Beschreibung der Ressource anzugeben, rufen Sie die `Resource` Methode des `setDescription` Objekts auf und übergeben Sie eine Zeichenfolge, die die Beschreibung enthält. In diesem Beispiel lautet die Beschreibung `"test resource"`.
+   Um die Beschreibung der Ressource anzugeben, rufen Sie die `Resource`-Methode des Objekts `setDescription` auf und übergeben Sie eine Zeichenfolge, die die Beschreibung enthält. In diesem Beispiel lautet die Beschreibung `"test resource"`.
 
 1. Ressourceninhalt angeben
 
-   Um Inhalte für die Ressource zu erstellen, rufen Sie die `RepositoryInfomodelFactoryBean` Methode des `newResourceContent` Objekts auf, die ein `com.adobe.repository.infomodel.bean.ResourceContent` Objekt zurückgibt. Add content to the `ResourceContent` object. In diesem Beispiel wird dies durch folgende Aufgaben erreicht:
+   Um Inhalte für die Ressource zu erstellen, rufen Sie die `RepositoryInfomodelFactoryBean`-Objektmethode `newResourceContent` auf, die ein `com.adobe.repository.infomodel.bean.ResourceContent`-Objekt zurückgibt. hinzufügen Inhalt in das `ResourceContent`-Objekt. In diesem Beispiel wird dies durch folgende Aufgaben erreicht:
 
-   * Aufrufen der `ResourceContent` Objektmethode `setDataDocument` und Übergeben eines `com.adobe.idp.Document` Objekts
-   * Aufrufen der `ResourceContent` Objektmethode `setSize` und Übergeben der Größe in Byte des `Document` Objekts
+   * Aufrufen der `setDataDocument`-Methode des `ResourceContent`-Objekts und Übergeben eines `com.adobe.idp.Document`-Objekts
+   * Aufrufen der `setSize`-Methode des `ResourceContent`-Objekts und Übergeben der Größe in Byte des `Document`-Objekts
 
-   Hinzufügen Sie den Inhalt an die Ressource, indem Sie die `Resource` Methode des `setContent` Objekts aufrufen und das `ResourceContent` Objekt übergeben. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   hinzufügen Sie den Inhalt an die Ressource, indem Sie die `Resource`-Objektmethode `setContent` aufrufen und das `ResourceContent`-Objekt übergeben. Weitere Informationen finden Sie unter [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Ressource in den Ordner &quot;Zielgruppe&quot;schreiben
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `writeResource` Objekts auf und übergeben Sie den URI des Ordners sowie das `Resource` Objekt.
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI des Ordners sowie das `writeResource`-Objekt.`Resource`
 
 **Siehe auch**
 
@@ -316,7 +316,7 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Schreiben von Ressourcen mit der Webdienst-API {#write-resources-using-the-web-service-api}
+### Ressourcen mit der Webdienst-API {#write-resources-using-the-web-service-api} schreiben
 
 Erstellen Sie eine Ressource mithilfe der Repository Service API (Webdienst):
 
@@ -327,33 +327,33 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI des Ordners &quot;Zielgruppe&quot;für die Ressource an
 
-   Geben Sie den URI des Ressourcenordners für die Zielgruppe an. In diesem Fall wird der URI des Ordners gespeichert, da die Ressource mit dem Namen im Ordner `testResource` gespeichert `testFolder`wird `"/testFolder"`. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String` Objekt.
+   Geben Sie den URI des Ressourcenordners für die Zielgruppe an. In diesem Fall ist der URI des Ordners `"/testFolder"`, da die Ressource `testResource` im Ordner `testFolder` gespeichert wird. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String`-Objekt.
 
 1. Ressource erstellen
 
-   Um eine Ressource zu erstellen, rufen Sie den Standardkonstruktor für die `Resource` Klasse auf. In diesem Beispiel werden die folgenden Informationen im `Resource` Objekt gespeichert:
+   Um eine Ressource zu erstellen, rufen Sie den Standardkonstruktor für die Klasse `Resource` auf. In diesem Beispiel werden die folgenden Informationen im `Resource`-Objekt gespeichert:
 
-   * Ein `com.adobe.repository.infomodel.Id` Objekt, das durch Aufrufen des Standardkonstruktors für die `Id` Klasse erstellt und dem `Resource` Objektfeld `id` zugewiesen wird.
-   * Ein `com.adobe.repository.infomodel.Lid` Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid` Klasse erstellt und dem `Resource` Objektfeld `lid` zugewiesen wird.
-   * Eine Zeichenfolge, die den Dateinamen der Ressource enthält, der dem `Resource` Objektfeld zugewiesen `name` wird. Der in diesem Beispiel verwendete Name lautet `"testResource"`.
-   * Eine Zeichenfolge, die die Beschreibung der Ressource enthält, die dem `Resource` Objektfeld zugewiesen `description` ist. Die in diesem Beispiel verwendete Beschreibung lautet `"test resource"`.
+   * Ein `com.adobe.repository.infomodel.Id`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Id`-Klasse erstellt und dem `Resource`-Objektfeld `id` zugewiesen wird.
+   * Ein `com.adobe.repository.infomodel.Lid`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid`-Klasse erstellt und dem `Resource`-Objektfeld `lid` zugewiesen wird.
+   * Eine Zeichenfolge, die den Dateinamen der Ressource enthält, der dem Feld `Resource` des Objekts `name` zugewiesen ist. Der in diesem Beispiel verwendete Name ist `"testResource"`.
+   * Eine Zeichenfolge, die die Beschreibung der Ressource enthält, die dem Feld `Resource` des Objekts `description` zugewiesen ist. Die in diesem Beispiel verwendete Beschreibung ist `"test resource"`.
 
 1. Ressourceninhalt angeben
 
-   Um Inhalte für die Ressource zu erstellen, rufen Sie den Standardkonstruktor für die `ResourceContent` Klasse auf. Fügen Sie dann dem `ResourceContent` Objekt Inhalt hinzu. In diesem Beispiel wird dies durch folgende Aufgaben erreicht:
+   Um Inhalte für die Ressource zu erstellen, rufen Sie den Standardkonstruktor für die Klasse `ResourceContent` auf. Fügen Sie dann dem `ResourceContent`-Objekt Inhalt hinzu. In diesem Beispiel wird dies durch folgende Aufgaben erreicht:
 
-   * Zuweisen eines `BLOB` Objekts, das ein Dokument enthält, zum `ResourceContent` Objektfeld `dataDocument` .
-   * Zuweisen der Größe in Byte des `BLOB` Objekts zum `ResourceContent` Objektfeld `size` .
+   * Zuweisen eines `BLOB`-Objekts, das ein Dokument enthält, zum `ResourceContent`-Objektfeld `dataDocument`
+   * Zuweisen der Größe in Byte des Objekts `BLOB` zum Feld `ResourceContent` des Objekts `size`
 
-   Hinzufügen Sie den Inhalt der Ressource, indem Sie das `ResourceContent` Objekt dem `Resource` Objektfeld `content` zuweisen.
+   hinzufügen Sie den Inhalt der Ressource, indem Sie das `ResourceContent`-Objekt dem `Resource`-Objektfeld `content` zuweisen.
 
 1. Ressource in den Ordner &quot;Zielgruppe&quot;schreiben
 
-   Rufen Sie die `RepositoryServiceService` Methode des `writeResource` Objekts auf und übergeben Sie den URI des Ordners sowie das `Resource` Objekt. Für `null` die anderen beiden Parameter übergeben.
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI des Ordners sowie das `writeResource`-Objekt. `Resource` Übergeben Sie `null` für die anderen beiden Parameter.
 
 **Siehe auch**
 
@@ -361,7 +361,7 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Webdienst):
 
 [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Ressourcen auflisten {#listing-resources}
+## Auflisten von Ressourcen {#listing-resources}
 
 Sie können Ressourcen entdecken, indem Sie Ressourcen auflisten. Für das Repository wird eine Abfrage ausgeführt, um alle Ressourcen zu finden, die mit einer bestimmten Ressourcensammlung zusammenhängen.
 
@@ -371,7 +371,7 @@ Auflisten von Ressourcen funktioniert nach Beziehung: Ressourcen sind Mitglieder
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-2}
 
@@ -410,7 +410,7 @@ Rufen Sie die Methode des Repository-Dienstes auf, um die Liste der Zielgruppen 
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Listen mit der Java-API {#list-resources-using-the-java-api}
+### Liste von Ressourcen mit der Java-API {#list-resources-using-the-java-api}
 
 Listen mithilfe der Repository Service API (Java):
 
@@ -420,17 +420,17 @@ Listen mithilfe der Repository Service API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Ordnerpfad angeben
 
-   Geben Sie den URI der zu abfragenden Ressourcensammlung an. In diesem Fall lautet der URI `"/testFolder"`. Der URI wird als `java.lang.String` Objekt gespeichert.
+   Geben Sie den URI der zu abfragenden Ressourcensammlung an. In diesem Fall lautet der URI `"/testFolder"`. Der URI wird als `java.lang.String`-Objekt gespeichert.
 
 1. Abrufen der Liste von Ressourcen
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `listMembers` Objekts auf und übergeben Sie den URI des Ordners.
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts `listMembers` auf und übergeben Sie den URI des Ordners.
 
-   Die Methode gibt eine `java.util.List` von `com.adobe.repository.infomodel.bean.Resource` Objekten zurück, die die Quelle eines `com.adobe.repository.infomodel.bean.Relation` Typs sind `Relation.TYPE_MEMBER_OF` und die den Ressourcen-Collection-URI als Zielgruppe haben. Sie können dies durchlaufen, `List` um die einzelnen Ressourcen abzurufen. In diesem Beispiel werden der Name und die Beschreibung der einzelnen Ressourcen angezeigt.
+   Die Methode gibt ein `java.util.List` von `com.adobe.repository.infomodel.bean.Resource` Objekten zurück, die die Quelle eines `com.adobe.repository.infomodel.bean.Relation` vom Typ `Relation.TYPE_MEMBER_OF` sind und die den URI für die Ressourcensammlung als Zielgruppe haben. Sie können diese `List` durchlaufen, um die einzelnen Ressourcen abzurufen. In diesem Beispiel werden der Name und die Beschreibung der einzelnen Ressourcen angezeigt.
 
 **Siehe auch**
 
@@ -442,7 +442,7 @@ Listen mithilfe der Repository Service API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Liste von Ressourcen mit der Webdienst-API {#list-resources-using-the-web-service-api}
+### Liste von Ressourcen mithilfe der Webdienst-API {#list-resources-using-the-web-service-api}
 
 Liste von Ressourcen mithilfe der Repository Service API (Webdienst):
 
@@ -453,17 +453,17 @@ Liste von Ressourcen mithilfe der Repository Service API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Ordnerpfad angeben
 
-   Geben Sie eine Zeichenfolge an, die den URI des abzufragenden Ordners enthält. In diesem Fall lautet der URI `"/testFolder"`. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String` Objekt.
+   Geben Sie eine Zeichenfolge an, die den URI des abzufragenden Ordners enthält. In diesem Fall lautet der URI `"/testFolder"`. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String`-Objekt.
 
 1. Abrufen der Liste von Ressourcen
 
-   Rufen Sie die `RepositoryServiceService` Methode des `listMembers` Objekts auf und übergeben Sie den URI des Ordners als ersten Parameter. Für `null` die anderen beiden Parameter übergeben.
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts `listMembers` auf und übergeben Sie den URI des Ordners als ersten Parameter. Übergeben Sie `null` für die anderen beiden Parameter.
 
-   Die Methode gibt ein Array von Objekten zurück, die in `Resource` Objekte umgewandelt werden können. Sie können das Objektarray durchlaufen, um jede der zugehörigen Ressourcen abzurufen. In diesem Beispiel werden der Name und die Beschreibung der einzelnen Ressourcen angezeigt.
+   Die Methode gibt ein Array von Objekten zurück, die in `Resource`-Objekte umgewandelt werden können. Sie können das Objektarray durchlaufen, um jede der zugehörigen Ressourcen abzurufen. In diesem Beispiel werden der Name und die Beschreibung der einzelnen Ressourcen angezeigt.
 
 **Siehe auch**
 
@@ -471,7 +471,7 @@ Liste von Ressourcen mithilfe der Repository Service API (Webdienst):
 
 [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Ressourcen lesen {#reading-resources}
+## Reading Resources {#reading-resources}
 
 Sie können Ressourcen von einem bestimmten Speicherort im Repository abrufen, um deren Inhalt und Metadaten zu lesen. Der Workflow wird durch ein Initialisierungsformular vorn beendet. Der Prozess verfügt über alle Berechtigungen, die zum Lesen des Formulars erforderlich sind. Das System ruft das Datenformular ab und liest den Inhalt aus dem Repository. Das Repository gewährt Zugriff auf den Inhalt und die Metadaten (die Möglichkeit, die Ressource zu erkennen).
 
@@ -488,7 +488,7 @@ Sie können Ressourcen programmgesteuert mit der Java-API des Repository-Dienste
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-3}
 
@@ -527,7 +527,7 @@ Rufen Sie die Methode des Repository-Dienstes auf, um die Ressource zu lesen, un
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Ressourcen mithilfe der Java-API lesen {#read-resources-using-the-java-api}
+### Ressourcen mithilfe der Java-API {#read-resources-using-the-java-api} lesen
 
 Lesen Sie eine Ressource mithilfe der Repository-Dienst-API (Java):
 
@@ -537,15 +537,15 @@ Lesen Sie eine Ressource mithilfe der Repository-Dienst-API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Geben Sie den URI der zu lesenden Ressource an
 
-   Geben Sie einen Zeichenfolgenwert an, der den URI der abzurufenden Ressource darstellt. Wenn die Ressource beispielsweise den Namen *testResource* hat, der sich in einem Ordner mit dem Namen *testFolder* befindet, geben Sie an, `/testFolder/testResource`.
+   Geben Sie einen Zeichenfolgenwert an, der den URI der abzurufenden Ressource darstellt. Wenn die Ressource beispielsweise *testResource* heißt, die sich in einem Ordner mit dem Namen *testFolder* befindet, geben Sie `/testFolder/testResource` an.
 
 1. Ressource lesen
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `readResource` Objekts auf und übergeben Sie den URI der Ressource als Parameter. Diese Methode gibt eine `Resource` Instanz zurück, die die Ressource darstellt.
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `readResource` Diese Methode gibt eine `Resource`-Instanz zurück, die die Ressource darstellt.
 
 **Siehe auch**
 
@@ -563,20 +563,20 @@ Lesen Sie eine Ressource mithilfe der Repository-Dienst-API (Webdienst):
 
 1. Projektdateien einschließen
 
-   * Erstellen Sie eine Microsoft .NET-Client-Assembly, die die Repository-WSDL verwendet. (Siehe [Erstellen einer .NET-Client-Assembly, die Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)verwendet.)
-   * Verweisen Sie auf die Microsoft .NET-Clientassembly. (Siehe [Erstellen einer .NET-Client-Assembly, die Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)verwendet.)
+   * Erstellen Sie eine Microsoft .NET-Client-Assembly, die die Repository-WSDL verwendet. (Siehe [Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) verwendet.)
+   * Verweisen Sie auf die Microsoft .NET-Clientassembly. (Siehe [Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) verwendet.)
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI der zu lesenden Ressource an
 
-   Geben Sie eine Zeichenfolge an, die den URI der abzurufenden Ressource enthält. In diesem Fall lautet der URI des Felds, da sich die Ressource mit dem Namen `testResource` im Ordner `testFolder`befindet `"/testFolder/testResource"`. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String` Objekt.
+   Geben Sie eine Zeichenfolge an, die den URI der abzurufenden Ressource enthält. In diesem Fall lautet der URI `"/testFolder/testResource"`, da sich die Ressource `testResource` im Ordner `testFolder` befindet. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String`-Objekt.
 
 1. Ressource lesen
 
-   Rufen Sie die `RepositoryServiceService` Methode des `readResource` Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter. Für `null` die anderen beiden Parameter übergeben.
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter. `readResource` Übergeben Sie `null` für die anderen beiden Parameter.
 
 **Siehe auch**
 
@@ -584,7 +584,7 @@ Lesen Sie eine Ressource mithilfe der Repository-Dienst-API (Webdienst):
 
 [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Ressourcen aktualisieren {#updating-resources}
+## Ressourcen {#updating-resources} aktualisieren
 
 Sie können den Inhalt der Ressourcen im Repository abrufen und aktualisieren. Wenn Sie Ressourcen aktualisieren, bleibt die Zugriffskontrolle auf diese Ressourcen zwischen den verschiedenen Versionen unverändert. Bei der Ausführung einer Aktualisierung haben Sie die Möglichkeit, die Hauptversion zu erhöhen. Wenn Sie die Hauptversion nicht inkrementieren, wird die Nebenversion automatisch aktualisiert.
 
@@ -598,7 +598,7 @@ Sie können Ressourcen programmgesteuert mit der Java-API des Repository-Dienste
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-4}
 
@@ -619,7 +619,7 @@ Bevor Sie eine Ressource programmgesteuert lesen können, müssen Sie eine Verbi
 
 **Abrufen der zu aktualisierenden Ressource**
 
-Lesen Sie die Ressource. Weitere Informationen finden Sie unter Ressourcen [lesen](aem-forms-repository.md#reading-resources).
+Lesen Sie die Ressource. Weitere Informationen finden Sie unter [Reading Resources](aem-forms-repository.md#reading-resources).
 
 **Ressource aktualisieren**
 
@@ -637,7 +637,7 @@ Legen Sie die neuen Informationen in der Ressource fest und rufen Sie die Method
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Aktualisieren von Ressourcen mit der Java-API {#update-resources-using-the-java-api}
+### Ressourcen mithilfe der Java-API {#update-resources-using-the-java-api} aktualisieren
 
 Aktualisieren Sie eine Ressource mithilfe der Repository Service API (Java):
 
@@ -647,7 +647,7 @@ Aktualisieren Sie eine Ressource mithilfe der Repository Service API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Abrufen der zu aktualisierenden Ressource
 
@@ -655,13 +655,13 @@ Aktualisieren Sie eine Ressource mithilfe der Repository Service API (Java):
 
 1. Ressource aktualisieren
 
-   Aktualisieren Sie die Informationen des `Resource` Objekts. Um die Beschreibung in diesem Beispiel zu aktualisieren, rufen Sie die `Resource` Methode des `setDescription` Objekts auf und übergeben Sie die neue Zeichenfolge als Parameter.
+   Aktualisieren Sie die Informationen des Objekts `Resource`. Um die Beschreibung in diesem Beispiel zu aktualisieren, rufen Sie die `Resource`-Methode des Objekts `setDescription` auf und übergeben Sie die neue Zeichenfolge als Parameter.
 
-   Rufen Sie dann die `ServiceClientFactory` Methode des `updateResource` Objekts auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie dann die `ServiceClientFactory`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`updateResource`
 
-   * Ein `java.lang.String` Objekt, das den URI der Ressource enthält.
-   * Das `Resource` Objekt, das die aktualisierten Ressourceninformationen enthält.
-   * Ein `boolean` Wert, der angibt, ob die Haupt- oder Nebenversion aktualisiert werden soll. In diesem Beispiel `true` wird ein Wert von übergeben, der angibt, dass die Hauptversion inkrementiert werden soll.
+   * Ein `java.lang.String`-Objekt, das den URI der Ressource enthält.
+   * Das `Resource`-Objekt, das die aktualisierten Ressourceninformationen enthält.
+   * Ein `boolean`-Wert, der angibt, ob die Haupt- oder Nebenversion aktualisiert werden soll. In diesem Beispiel wird der Wert `true` übergeben, um anzugeben, dass die Hauptversion inkrementiert werden soll.
 
 **Siehe auch**
 
@@ -684,22 +684,22 @@ Aktualisieren Sie eine Ressource mithilfe der Repository API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Abrufen der zu aktualisierenden Ressource
 
-   Geben Sie den URI der Ressource an, die abgerufen und gelesen werden soll. In diesem Beispiel lautet der URI der Ressource `"/testFolder/testResource"`. Weitere Informationen finden Sie unter Ressourcen [lesen](aem-forms-repository.md#reading-resources).
+   Geben Sie den URI der Ressource an, die abgerufen und gelesen werden soll. In diesem Beispiel lautet der URI der Ressource `"/testFolder/testResource"`. Weitere Informationen finden Sie unter [Reading Resources](aem-forms-repository.md#reading-resources).
 
 1. Ressource aktualisieren
 
-   Aktualisieren Sie die Informationen des `Resource` Objekts. Um in diesem Beispiel die Beschreibung zu aktualisieren, weisen Sie dem `Resource` Objektfeld einen neuen Wert zu `description` .
+   Aktualisieren Sie die Informationen des Objekts `Resource`. Um in diesem Beispiel die Beschreibung zu aktualisieren, weisen Sie dem Feld `Resource` des Objekts `description` einen neuen Wert zu.
 
-1. Rufen Sie die `RepositoryServiceService` Methode des `updateResource` Objekts auf und übergeben Sie die folgenden Parameter:
+1. Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`updateResource`
 
-   * Ein `System.String` Objekt, das den URI der Ressource enthält.
-   * Das `Resource` Objekt, das die aktualisierten Ressourceninformationen enthält.
-   * Ein `boolean` Wert, der angibt, ob die Haupt- oder Nebenversion aktualisiert werden soll. In diesem Beispiel `true` wird ein Wert von übergeben, der angibt, dass die Hauptversion inkrementiert werden soll.
-   * Für `null` die verbleibenden beiden Parameter übergeben.
+   * Ein `System.String`-Objekt, das den URI der Ressource enthält.
+   * Das `Resource`-Objekt, das die aktualisierten Ressourceninformationen enthält.
+   * Ein `boolean`-Wert, der angibt, ob die Haupt- oder Nebenversion aktualisiert werden soll. In diesem Beispiel wird der Wert `true` übergeben, um anzugeben, dass die Hauptversion inkrementiert werden soll.
+   * Übergeben Sie `null` für die verbleibenden beiden Parameter.
 
 **Siehe auch**
 
@@ -715,19 +715,19 @@ Sie können zugehörige Ressourcen abrufen, um Abhängigkeiten zwischen einem Fo
 
 **Anweisungen zur Abfrage**
 
-Eine *Abfrage* enthält eine oder mehrere Anweisungen, die logisch mit Bedingungen verbunden sind. Eine *Anweisung* besteht aus einem linken Operanden, einem Operator und einem rechten Operanden. Darüber hinaus können Sie die Sortierreihenfolge festlegen, die für die Suchergebnisse verwendet werden soll. Die *Sortierreihenfolge* enthält Informationen, die einer SQL- `ORDER BY` Klausel entsprechen, und besteht aus Elementen, die die Attribute enthalten, auf denen die Suche basiert, sowie einem Wert, der angibt, ob eine aufsteigende oder absteigende Reihenfolge verwendet werden soll.
+Eine *Abfrage* enthält eine oder mehrere Anweisungen, die logisch mit Bedingungen verbunden sind. Eine *Anweisung* besteht aus einem linken Operanden, einem Operator und einem rechten Operanden. Darüber hinaus können Sie die Sortierreihenfolge festlegen, die für die Suchergebnisse verwendet werden soll. Die *Sortierreihenfolge* enthält Informationen, die einer SQL `ORDER BY`-Klausel entsprechen, und besteht aus Elementen, die die Attribute enthalten, auf denen die Suche basiert, sowie einem Wert, der angibt, ob eine aufsteigende oder absteigende Reihenfolge verwendet werden soll.
 
 Sie können mithilfe der Java-API des Repository-Dienstes programmgesteuert nach Ressourcen suchen. Derzeit ist es nicht möglich, die Web-Service-API für die Suche nach Ressourcen zu verwenden.
 
 **Sortierverhalten**
 
-Die Sortierreihenfolge wird nicht berücksichtigt, wenn die `ResourceRepositoryClient` Objektmethode aufgerufen und eine Sortierreihenfolge angegeben `searchProperties` wird. Angenommen, Sie erstellen eine Ressource mit drei benutzerdefinierten Eigenschaften, bei denen die Attributnamen `name`, `secondName`und `asecondName`. Als Nächstes erstellen Sie ein Element für die Sortierreihenfolge auf dem Attributnamen und legen den `ascending` Wert auf `true`.
+Die Sortierreihenfolge wird nicht berücksichtigt, wenn die `ResourceRepositoryClient`-Methode des Objekts `searchProperties` aufgerufen und eine Sortierreihenfolge angegeben wird. Angenommen, Sie erstellen eine Ressource mit drei benutzerdefinierten Eigenschaften, wobei die Attributnamen `name`, `secondName` und `asecondName` lauten. Als Nächstes erstellen Sie ein Element für die Sortierreihenfolge auf dem Attributnamen und setzen den Wert `ascending` auf `true`.
 
-Dann rufen Sie die `ResourceRepositoryClient` Objektmethode auf und übergeben die `searchProperties` Sortierreihenfolge. Die Suche gibt die richtige Ressource mit den drei Eigenschaften zurück. Die Eigenschaften werden jedoch nicht nach Attributnamen sortiert. Sie werden in der Reihenfolge zurückgegeben, in der sie hinzugefügt wurden: `name`, `secondName`und `asecondName`.
+Anschließend rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben die Sortierreihenfolge. `searchProperties` Die Suche gibt die richtige Ressource mit den drei Eigenschaften zurück. Die Eigenschaften werden jedoch nicht nach Attributnamen sortiert. Sie werden in der Reihenfolge zurückgegeben, in der sie hinzugefügt wurden: `name`, `secondName` und `asecondName`.
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-5}
 
@@ -784,7 +784,7 @@ Durchlaufen Sie die zurückgegebene Liste der Ressourcen und extrahieren Sie die
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Ressourcen mit der Java-API suchen {#search-for-resources-using-the-java-api}
+### Ressourcen mithilfe der Java-API {#search-for-resources-using-the-java-api} suchen
 
 Suchen Sie eine Ressource mithilfe der Repository Service API (Java):
 
@@ -794,7 +794,7 @@ Suchen Sie eine Ressource mithilfe der Repository Service API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Geben Sie den Ordner &quot;Zielgruppe&quot;für die Suche an
 
@@ -802,46 +802,46 @@ Suchen Sie eine Ressource mithilfe der Repository Service API (Java):
 
 1. Geben Sie die Attribute an, die bei der Suche verwendet werden
 
-   Geben Sie die Werte für die Attribute an, auf denen die Suche durchgeführt werden soll. Die Attribute befinden sich in einem `com.adobe.repository.infomodel.bean.Resource` Objekt. In diesem Beispiel wird die Suche mit dem Attribut name durchgeführt. Daher wird ein `java.lang.String` mit dem Namen des `Resource` Objekts verwendet, was in diesem `testResource` Fall der Fall ist.
+   Geben Sie die Werte für die Attribute an, auf denen die Suche durchgeführt werden soll. Die Attribute befinden sich in einem `com.adobe.repository.infomodel.bean.Resource`-Objekt. In diesem Beispiel wird die Suche mit dem Attribut name durchgeführt. Daher wird ein `java.lang.String`-Objekt verwendet, das den Namen des `Resource`-Objekts enthält, in diesem Fall `testResource`.
 
 1. Erstellen der bei der Suche verwendeten Abfrage
 
-   Um eine Abfrage zu erstellen, erstellen Sie ein `com.adobe.repository.query.Query` Objekt, indem Sie den Standardkonstruktor für die `Query` Klasse aufrufen und der Abfrage Anweisungen hinzufügen.
+   Um eine Abfrage zu erstellen, erstellen Sie ein `com.adobe.repository.query.Query`-Objekt, indem Sie den Standardkonstruktor für die `Query`-Klasse aufrufen und der Abfrage Anweisungen hinzufügen.
 
-   Um eine Anweisung zu erstellen, rufen Sie den Konstruktor für die `com.adobe.repository.query.Query.Statement` Klasse auf und übergeben Sie die folgenden Parameter:
+   Um eine Anweisung zu erstellen, rufen Sie den Konstruktor für die `com.adobe.repository.query.Query.Statement`-Klasse auf und übergeben Sie die folgenden Parameter:
 
-   * Ein linker Operand, der die Konstante für das Ressourcenattribut enthält. In diesem Beispiel wird der statische Wert verwendet, da der Name der Ressource als Grundlage für die Suche verwendet `Resource.ATTRIBUTE_NAME` wird.
-   * Ein Operator, der die bei der Suche nach dem Attribut verwendete Bedingung enthält. Der Operator muss eine der statischen Konstanten in der `Query.Statement` Klasse sein. In diesem Beispiel `Query.Statement.OPERATOR_BEGINS_WITH` wird der statische Wert verwendet.
-   * Ein rechter Operand mit dem Attributwert, auf dem die Suche durchgeführt werden soll. In diesem Beispiel wird das Attribut name verwendet, ein Attribut, das den Wert `String` enthält `"testResource"`.
+   * Ein linker Operand, der die Konstante für das Ressourcenattribut enthält. In diesem Beispiel wird der statische Wert `Resource.ATTRIBUTE_NAME` verwendet, da der Name der Ressource als Grundlage für die Suche verwendet wird.
+   * Ein Operator, der die bei der Suche nach dem Attribut verwendete Bedingung enthält. Der Operator muss eine der statischen Konstanten in der Klasse `Query.Statement` sein. In diesem Beispiel wird der statische Wert `Query.Statement.OPERATOR_BEGINS_WITH` verwendet.
+   * Ein rechter Operand mit dem Attributwert, auf dem die Suche durchgeführt werden soll. In diesem Beispiel wird das Attribut name, ein `String`, das den Wert `"testResource"` enthält, verwendet.
 
-   Geben Sie den Namensraum des linken Operanden an, indem Sie die `Query.Statement` Objektmethode aufrufen und einen der in der `setNamespace` `com.adobe.repository.infomodel.bean.ResourceProperty` Klasse enthaltenen statischen Werte übergeben. In diesem Beispiel `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY` wird verwendet.
+   Geben Sie den Namensraum des linken Operanden an, indem Sie die `Query.Statement`-Objektmethode `setNamespace` aufrufen und einen der in der `com.adobe.repository.infomodel.bean.ResourceProperty`-Klasse enthaltenen statischen Werte übergeben. In diesem Beispiel wird `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY` verwendet.
 
-   Hinzufügen jede Anweisung an die Abfrage, indem die `Query` Objektmethode aufgerufen und das `addStatement` `Query.Statement` Objekt übergeben wird.
+   hinzufügen Sie jede Anweisung an die Abfrage, indem Sie die `Query`-Objektmethode `addStatement` aufrufen und das `Query.Statement`-Objekt übergeben.
 
 1. Erstellen der Sortierreihenfolge für die Suchergebnisse
 
-   Um die in den Suchergebnissen verwendete Sortierreihenfolge festzulegen, erstellen Sie ein `com.adobe.repository.query.sort.SortOrder` Objekt, indem Sie den Standardkonstruktor für die `SortOrder` Klasse aufrufen und der Sortierreihenfolge Elemente hinzufügen.
+   Um die in den Suchergebnissen verwendete Sortierreihenfolge festzulegen, erstellen Sie ein `com.adobe.repository.query.sort.SortOrder`-Objekt, indem Sie den Standardkonstruktor für die `SortOrder`-Klasse aufrufen und Elemente zur Sortierreihenfolge hinzufügen.
 
-   Um ein Element für die Sortierreihenfolge zu erstellen, rufen Sie einen der Konstruktoren für die `com.adobe.repository.query.sort.SortOrder.Element` Klasse auf. In diesem Beispiel `Resource.ATTRIBUTE_NAME` wird der statische Wert als erster Parameter verwendet, da der Name der Ressource als Grundlage für die Suche verwendet wird, und die aufsteigende Reihenfolge (ein `boolean` Wert von `true`) als zweiter Parameter angegeben.
+   Um ein Element für die Sortierreihenfolge zu erstellen, rufen Sie einen der Konstruktoren für die Klasse `com.adobe.repository.query.sort.SortOrder.Element` auf. In diesem Beispiel wird der statische Wert `Resource.ATTRIBUTE_NAME` als erster Parameter verwendet und die aufsteigende Reihenfolge (ein `boolean`-Wert von `true`) als zweiter Parameter angegeben, da der Name der Ressource als Grundlage für die Suche verwendet wird.
 
-   Hinzufügen jedes Element in die Sortierreihenfolge, indem die `SortOrder` Methode des `addSortElement` Objekts aufgerufen und das `SortOrder.Element` Objekt übergeben wird.
+   hinzufügen jedes Element in die Sortierreihenfolge, indem die `SortOrder`-Objektmethode `addSortElement` aufgerufen und das `SortOrder.Element`-Objekt übergeben wird.
 
 1. Ressourcen suchen
 
-   Um nach `resources` anhand von Attributeigenschaften zu suchen, rufen Sie die `ResourceRepositoryClient` `searchProperties` Objektmethode auf und geben Sie die folgenden Parameter ein:
+   Um anhand der Attributeigenschaften nach `resources` zu suchen, rufen Sie die `ResourceRepositoryClient`-Methode des Objekts `searchProperties` auf und geben Sie die folgenden Parameter ein:
 
-   * Eine `String` Datei, die den Basispfad enthält, aus dem die Suche ausgeführt werden soll. In diesem Fall wird `"/testFolder"` verwendet.
+   * Ein `String`, der den Basispfad enthält, aus dem die Suche ausgeführt werden soll. In diesem Fall wird `"/testFolder"` verwendet.
    * Die bei der Suche verwendete Abfrage.
-   * Die Suchtiefe. In diesem Fall `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` wird angegeben, dass der Basispfad und alle zugehörigen Ordner verwendet werden sollen.
-   * Ein `int` Wert, der die erste Zeile angibt, aus der die nicht paginierte Ergebnismenge ausgewählt werden soll. In diesem Beispiel `0` wird angegeben.
-   * Ein `int` Wert, der die maximale Anzahl der zurückzugebenden Ergebnisse angibt. In diesem Beispiel `10` wird angegeben.
+   * Die Suchtiefe. In diesem Fall wird `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` verwendet, um anzugeben, dass der Basispfad und alle zugehörigen Ordner verwendet werden sollen.
+   * Ein `int`-Wert, der die erste Zeile angibt, aus der die nicht paginierte Ergebnismenge ausgewählt werden soll. In diesem Beispiel wird `0` angegeben.
+   * Ein `int`-Wert, der die maximale Anzahl der zurückzugebenden Ergebnisse angibt. In diesem Beispiel wird `10` angegeben.
    * Die bei der Suche verwendete Sortierreihenfolge.
 
-   Die Methode gibt eine `java.util.List` von `Resource` Objekten in der angegebenen Sortierreihenfolge zurück.
+   Die Methode gibt ein `java.util.List` von `Resource`-Objekten in der angegebenen Sortierreihenfolge zurück.
 
 1. Ressourcen aus dem Suchergebnis abrufen
 
-   Um die im Suchergebnis enthaltenen Ressourcen abzurufen, durchlaufen Sie den Bericht `List` und konvertieren Sie jedes Objekt in ein `Resource` , um die Informationen zu extrahieren. In diesem Beispiel wird der Name der einzelnen Ressourcen angezeigt.
+   Um die im Suchergebnis enthaltenen Ressourcen abzurufen, müssen Sie die `List` durchlaufen und jedes Objekt in ein `Resource` konvertieren, um die zugehörigen Informationen zu extrahieren. In diesem Beispiel wird der Name der einzelnen Ressourcen angezeigt.
 
 **Siehe auch**
 
@@ -867,7 +867,7 @@ Sie können Beziehungen zwischen Ressourcen programmgesteuert angeben, indem Sie
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-6}
 
@@ -916,28 +916,28 @@ Erstellen Sie Beziehungsressourcen mithilfe der Java-API des Repository-Dienstes
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen
 
-   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs, da die Ressourcen benannt `testResource1` und `testResource2` sich im Ordner mit dem Namen befinden `testFolder`, `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Die URIs werden als `java.lang.String` Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Erstellen einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs `testResource1` und `testResource2` und im Ordner `testFolder` enthalten, da sich die Ressourcen im Ordner &lt;a2/> befinden. `"/testFolder/testResource1"``"/testFolder/testResource2"` Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
 
 1. Beziehung erstellen
 
-   Rufen Sie die `ResourceRepositoryClient` Objektmethode `createRelationship` auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`createRelationship`
 
    * Der URI der Quellressource.
    * Der URI der Zielgruppe-Ressource.
-   * Der Beziehungstyp, der eine der statischen Konstanten in der `com.adobe.repository.infomodel.bean.Relation` Klasse ist. In diesem Beispiel wird eine Abhängigkeitsbeziehung durch Angabe des Werts festgelegt `Relation.TYPE_DEPENDANT_OF`.
-   * Ein `boolean` Wert, der angibt, ob die Zielgruppe-Ressource automatisch auf den `com.adobe.repository.infomodel.Id`basierten Bezeichner der neuen Kopfressource aktualisiert wird. In diesem Beispiel `true` wird der Wert aufgrund der Abhängigkeitsbeziehung angegeben.
+   * Der Beziehungstyp, der eine der statischen Konstanten in der `com.adobe.repository.infomodel.bean.Relation`-Klasse ist. In diesem Beispiel wird eine Abhängigkeitsbeziehung durch Angabe des Werts `Relation.TYPE_DEPENDANT_OF` hergestellt.
+   * Ein `boolean`-Wert, der angibt, ob die Zielgruppe-Ressource automatisch auf den `com.adobe.repository.infomodel.Id`-basierten Bezeichner der neuen Kopfressource aktualisiert wird. In diesem Beispiel wird aufgrund der Abhängigkeitsbeziehung der Wert `true` angegeben.
 
-   Sie können auch eine Liste der zugehörigen Ressourcen für eine bestimmte Ressource abrufen, indem Sie die `ResourceRepositoryClient` Objektmethode aufrufen und die folgenden Parameter `getRelated` übergeben:
+   Sie können auch eine Liste der zugehörigen Ressourcen für eine bestimmte Ressource abrufen, indem Sie die `getRelated`-Methode des Objekts `ResourceRepositoryClient` aufrufen und die folgenden Parameter übergeben:
 
    * Der URI der Ressource, für die zugehörige Ressourcen abgerufen werden sollen. In diesem Beispiel wird die Quellressource ( `"/testFolder/testResource1"`) angegeben.
-   * Ein `boolean` Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel `true` wird der Wert angegeben, da dies der Fall ist.
-   * Der Beziehungstyp, der eine der statischen Konstanten in der `Relation` Klasse ist. In diesem Beispiel wird eine Abhängigkeit angegeben, indem der gleiche Wert wie zuvor verwendet wird: `Relation.TYPE_DEPENDANT_OF`.
+   * Ein `boolean`-Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel wird der Wert `true` angegeben, da dies der Fall ist.
+   * Der Beziehungstyp, der eine der statischen Konstanten in der `Relation`-Klasse ist. In diesem Beispiel wird eine Abhängigkeit angegeben, indem der gleiche Wert wie zuvor verwendet wird: `Relation.TYPE_DEPENDANT_OF`.
 
-   Die `getRelated` Methode gibt eine Reihe `java.util.List` von `Resource` Objekten zurück, über die Sie die zugehörigen Ressourcen iterieren können, wobei Sie die im `List` Abschnitt enthaltenen Objekte während des `Resource` Vorgangs in die entsprechenden Objekte umwandeln. In diesem Beispiel `testResource2` wird erwartet, dass es sich in der Liste der zurückgegebenen Ressourcen befindet.
+   Die `getRelated`-Methode gibt ein `java.util.List` von `Resource`-Objekten zurück, über die Sie die zugehörigen Ressourcen aufrufen können, wobei die in `List` enthaltenen Objekte wie gewünscht auf `Resource` umgeleitet werden. In diesem Beispiel wird erwartet, dass `testResource2` sich in der Liste der zurückgegebenen Ressourcen befindet.
 
 **Siehe auch**
 
@@ -949,7 +949,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Java-API des Repository-Dienstes
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Erstellen von Beziehungsressourcen mit der Webdienst-API {#create-relationship-resources-using-the-web-service-api}
+### Erstellen von Beziehungsressourcen mithilfe der Webdienst-API {#create-relationship-resources-using-the-web-service-api}
 
 Erstellen Sie Beziehungsressourcen mithilfe der Repository API (Webdienst):
 
@@ -960,33 +960,33 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen
 
-   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs, da die Ressourcen benannt `testResource1` und `testResource2` sich im Ordner mit dem Namen befinden `testFolder`, `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Bei Verwendung einer Sprache, die mit Microsoft .NET Framework kompatibel ist (z. B. C#), werden die URIs als `System.String` Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Erstellen einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs `testResource1` und `testResource2` und im Ordner `testFolder` enthalten, da sich die Ressourcen im Ordner &lt;a2/> befinden. `"/testFolder/testResource1"``"/testFolder/testResource2"` Bei Verwendung einer Sprache, die mit Microsoft .NET Framework kompatibel ist (z. B. C#), werden die URIs als `System.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
 
 1. Beziehung erstellen
 
-   Rufen Sie die `RepositoryServiceService` Objektmethode `createRelationship` auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`createRelationship`
 
    * Der URI der Quellressource.
    * Der URI der Zielgruppe-Ressource.
-   * Die Art der Beziehung. In diesem Beispiel wird eine Abhängigkeitsbeziehung durch Angabe des Werts festgelegt `3`.
-   * Ein `boolean` Wert, der angibt, ob der Beziehungstyp angegeben wurde. In diesem Beispiel `true` wird der Wert angegeben.
-   * Ein `boolean` Wert, der angibt, ob die Zielgruppe-Ressource automatisch auf den `Id`basierten Bezeichner der neuen Kopfressource aktualisiert wird. In diesem Beispiel `true` wird der Wert aufgrund der Abhängigkeitsbeziehung angegeben.
-   * Ein `boolean` Wert, der angibt, ob die Zielgruppe head angegeben wurde. In diesem Beispiel `true` wird der Wert angegeben.
-   * Für `null` den letzten Parameter übergeben.
+   * Die Art der Beziehung. In diesem Beispiel wird eine Abhängigkeitsbeziehung durch Angabe des Werts `3` hergestellt.
+   * Ein `boolean`-Wert, der angibt, ob der Beziehungstyp angegeben wurde. In diesem Beispiel wird der Wert `true` angegeben.
+   * Ein `boolean`-Wert, der angibt, ob die Zielgruppe-Ressource automatisch auf den `Id`-basierten Bezeichner der neuen Kopfressource aktualisiert wird. In diesem Beispiel wird aufgrund der Abhängigkeitsbeziehung der Wert `true` angegeben.
+   * Ein `boolean`-Wert, der angibt, ob die Kopfzeile der Zielgruppe angegeben wurde. In diesem Beispiel wird der Wert `true` angegeben.
+   * Für den letzten Parameter übergeben Sie `null`.
 
-   Sie können auch eine Liste der zugehörigen Ressourcen für eine bestimmte Ressource abrufen, indem Sie die `RepositoryServiceService` Objektmethode aufrufen und die folgenden Parameter `getRelated` übergeben:
+   Sie können auch eine Liste der zugehörigen Ressourcen für eine bestimmte Ressource abrufen, indem Sie die `getRelated`-Methode des Objekts `RepositoryServiceService` aufrufen und die folgenden Parameter übergeben:
 
    * Der URI der Ressource, für die zugehörige Ressourcen abgerufen werden sollen. In diesem Beispiel wird die Quellressource ( `"/testFolder/testResource1"`) angegeben.
-   * Ein `boolean` Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel `true` wird der Wert angegeben, da dies der Fall ist.
-   * Ein `boolean` Wert, der angibt, ob die Quellressource angegeben wurde. In diesem Beispiel `true` wird der Wert angegeben.
+   * Ein `boolean`-Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel wird der Wert `true` angegeben, da dies der Fall ist.
+   * Ein `boolean`-Wert, der angibt, ob die Quellressource angegeben wurde. In diesem Beispiel wird der Wert `true` angegeben.
    * Ein Array von Ganzzahlen, das die Beziehungstypen enthält. In diesem Beispiel wird eine Abhängigkeitsbeziehung angegeben, indem der gleiche Wert im Array wie zuvor verwendet wird: `3`.
-   * Für `null` die verbleibenden beiden Parameter übergeben.
+   * Übergeben Sie `null` für die verbleibenden beiden Parameter.
 
-   Die `getRelated` Methode gibt ein Array von Objekten zurück, die in `Resource` Objekte umgewandelt werden können, über die Sie die zugehörigen Ressourcen abrufen können. In diesem Beispiel `testResource2` wird erwartet, dass es sich in der Liste der zurückgegebenen Ressourcen befindet.
+   Die `getRelated`-Methode gibt ein Array von Objekten zurück, die in `Resource`-Objekte umgewandelt werden können, durch die Sie die zugehörigen Ressourcen abrufen können. In diesem Beispiel wird erwartet, dass `testResource2` sich in der Liste der zurückgegebenen Ressourcen befindet.
 
 **Siehe auch**
 
@@ -994,7 +994,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository API (Webdienst):
 
 [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Ressourcen sperren {#locking-resources}
+## Sperren von Ressourcen {#locking-resources}
 
 Sie können eine Ressource oder einen Satz von Ressourcen sperren, um sie exklusiv von einem bestimmten Benutzer oder für mehrere Benutzer freizugeben. Ein freigegebenes Schloss ist ein Hinweis darauf, dass mit der Ressource etwas passieren wird, aber es hindert niemanden daran, mit dieser Ressource zu handeln. Eine freigegebene Sperre sollte als Signalmechanismus betrachtet werden. Ein exklusives Sperren bedeutet, dass der Benutzer, der die Ressource gesperrt hat, die Ressource ändern wird, und das Schloss stellt sicher, dass niemand anders dies tun kann, bis der Benutzer keinen Zugriff mehr auf die Ressource benötigt und die Sperre aufgehoben hat. Wenn ein Repository-Administrator eine Ressource entsperrt, werden alle exklusiven und freigegebenen Sperren für diese Ressource automatisch entfernt. Diese Aktion ist für Situationen gedacht, in denen ein Benutzer nicht mehr verfügbar ist und die Ressource nicht entsperrt hat.
 
@@ -1006,7 +1006,7 @@ Sie können den Zugriff auf Ressourcen programmgesteuert über die Java-API oder
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-7}
 
@@ -1055,7 +1055,7 @@ Rufen Sie die Methode des Repository-Dienstes auf, um die Ressource zu entsperre
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Sperren von Ressourcen mithilfe der Java-API {#lock-resources-using-the-java-api}
+### Sperren von Ressourcen mit der Java-API {#lock-resources-using-the-java-api}
 
 Sperren Sie Ressourcen mithilfe der Repository Service API (Java):
 
@@ -1065,31 +1065,31 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Geben Sie den URI der zu sperrenden Ressource an
 
-   Geben Sie den URI der Ressource an, die gesperrt werden soll. In diesem Fall lautet der URI des Felds, da sich die Ressource mit dem Namen `testResource` im Ordner `testFolder`befindet `"/testFolder/testResource"`. Der URI wird als `java.lang.String` Objekt gespeichert.
+   Geben Sie den URI der Ressource an, die gesperrt werden soll. In diesem Fall lautet der URI `"/testFolder/testResource"`, da sich die Ressource `testResource` im Ordner `testFolder` befindet. Der URI wird als `java.lang.String`-Objekt gespeichert.
 
 1. Ressource sperren
 
-   Rufen Sie die `ResourceRepositoryClient` Objektmethode `lockResource` auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`lockResource`
 
    * Der URI der Ressource.
-   * Der Sperrbereich. In diesem Beispiel wird der Sperrbereich als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`&quot;Sperrbereich&quot;festgelegt, da die Ressource für die ausschließliche Verwendung gesperrt wird.
-   * Die Sperrtiefe. Da die Sperrung in diesem Beispiel nur für die jeweilige Ressource und nicht für deren Mitglieder oder untergeordnete Elemente gilt, wird die Sperrtiefe als `Lock.DEPTH_ZERO`.
+   * Der Sperrbereich. In diesem Beispiel wird der Sperrbereich als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE` angegeben, da die Ressource für die ausschließliche Verwendung gesperrt wird.
+   * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe als `Lock.DEPTH_ZERO` angegeben, da die Sperrung nur für die jeweilige Ressource und nicht für deren Mitglieder oder untergeordnete Elemente gilt.
 
    >[!NOTE]
    >
-   >Die überladene Version der `lockResource` Methode, die vier Parameter erfordert, gibt eine Ausnahme aus. Stellen Sie sicher, dass Sie die `lockResource` Methode verwenden, für die drei Parameter erforderlich sind, wie in dieser exemplarischen Vorgehensweise gezeigt.
+   >Die überladene Version der `lockResource`-Methode, die vier Parameter erfordert, gibt eine Ausnahme aus. Stellen Sie sicher, dass Sie die `lockResource`-Methode verwenden, für die drei Parameter erforderlich sind, wie in dieser exemplarischen Vorgehensweise gezeigt.
 
 1. Sperren der Ressource abrufen
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `getLocks` Objekts auf und übergeben Sie den URI der Ressource als Parameter. Die Methode gibt eine Liste von Lock-Objekten zurück, durch die Sie iterieren können. In diesem Beispiel werden der Sperreneigentümer, die Sperrtiefe und der Umfang für jedes Objekt gedruckt, indem jeweils die `getOwnerUserId`-, `getDepth`und `getType` -methoden der Sperrobjekte aufgerufen werden.
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `getLocks` Die Methode gibt eine Liste von Lock-Objekten zurück, durch die Sie iterieren können. In diesem Beispiel werden der Sperreneigentümer, die Sperrtiefe und der Umfang für jedes Objekt gedruckt, indem die Methoden `getOwnerUserId`, `getDepth` und `getType` aufgerufen werden.
 
 1. Ressource entsperren
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `unlockResource` Objekts auf und übergeben Sie den URI der Ressource als Parameter. Weitere Informationen finden Sie in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `unlockResource` Weitere Informationen finden Sie unter [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Siehe auch**
 
@@ -1112,29 +1112,29 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI der zu sperrenden Ressource an
 
-   Geben Sie eine Zeichenfolge an, die den URI der zu sperrenden Ressource enthält. In diesem Fall ist der URI des Felds, da sich die Ressource mit dem Namen `testResource` im Ordner befindet `testFolder`, `"/testFolder/testResource"`vorhanden. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String` Objekt.
+   Geben Sie eine Zeichenfolge an, die den URI der zu sperrenden Ressource enthält. In diesem Fall lautet der URI `testResource`, da sich die Ressource `testFolder` im Ordner &lt;a1/> befindet. `"/testFolder/testResource"` Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String`-Objekt.
 
 1. Ressource sperren
 
-   Rufen Sie die `RepositoryServiceService` Objektmethode `lockResource` auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`lockResource`
 
    * Der URI der Ressource.
-   * Der Sperrbereich. In diesem Beispiel wird der Sperrbereich als `11`&quot;Sperrbereich&quot;festgelegt, da die Ressource für die ausschließliche Verwendung gesperrt wird.
-   * Die Sperrtiefe. Da die Sperrung in diesem Beispiel nur für die jeweilige Ressource und nicht für deren Mitglieder oder untergeordnete Elemente gilt, wird die Sperrtiefe als `2`.
-   * Ein `int` Wert, der die Anzahl der Sekunden angibt, bis die Sperre abläuft. In diesem Beispiel wird der Wert von verwendet `1000` .
-   * Für `null` den letzten Parameter übergeben.
+   * Der Sperrbereich. In diesem Beispiel wird der Sperrbereich als `11` angegeben, da die Ressource für die ausschließliche Verwendung gesperrt wird.
+   * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe als `2` angegeben, da die Sperrung nur für die jeweilige Ressource und nicht für deren Mitglieder oder untergeordnete Elemente gilt.
+   * Ein `int`-Wert, der die Anzahl der Sekunden angibt, bis die Sperre abläuft. In diesem Beispiel wird der Wert von `1000` verwendet.
+   * Für den letzten Parameter übergeben Sie `null`.
 
 1. Sperren der Ressource abrufen
 
-   Rufen Sie die `RepositoryServiceService` Methode des `getLocks` Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `null` als zweiten Parameter. Die Methode gibt ein `object` Array mit `Lock` Objekten zurück, durch die Sie iterieren können. In diesem Beispiel werden der Inhaber der Sperre, die Tiefe und der Umfang für jedes Objekt gedruckt, indem auf die Felder `Lock` , `ownerUserId`und `depth``type` Felder jedes Objekts zugegriffen wird.
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `getLocks` als zweiten Parameter. `null` Die Methode gibt ein `object`-Array zurück, das `Lock`-Objekte enthält, durch die Sie iterieren können. In diesem Beispiel werden der Inhaber der Sperre, die Tiefe und der Umfang für jedes Objekt gedruckt, indem auf die Felder `Lock`, `ownerUserId`, `depth` und `type` des Objekts zugegriffen wird.
 
 1. Ressource entsperren
 
-   Rufen Sie die `RepositoryServiceService` Methode des `unlockResource` Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `null` als zweiten Parameter.
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `unlockResource` als zweiten Parameter.`null`
 
 **Siehe auch**
 
@@ -1154,11 +1154,11 @@ Ein Löschvorgang ist in ECM-Systemen nicht transaktionssicher. Wenn Sie beispie
 
 >[!NOTE]
 >
->Bei Verwendung der `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` Methode mit dem ECM-Repository (EMC Documentum Content Server und IBM FileNet P8 Content Manager) wird die Transaktion nicht rückgängig gemacht, wenn der Löschvorgang bei einer der angegebenen Ressourcen fehlschlägt. Dies bedeutet, dass gelöschte Dateien nicht gelöscht werden können.
+>Bei Verwendung der `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()`-Methode mit dem ECM-Repository (EMC Documentum Content Server und IBM FileNet P8 Content Manager) wird die Transaktion nicht rückgängig gemacht, wenn der Löschvorgang für eine der angegebenen Ressourcen fehlschlägt. Dies bedeutet, dass die gelöschten Dateien nicht gelöscht werden können.
 
 >[!NOTE]
 >
->For more information about the Repository service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-8}
 
@@ -1197,7 +1197,7 @@ Rufen Sie die Methode des Repository-Dienstes auf, um die Ressource zu löschen,
 
 [Beginn zur Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Ressourcen mithilfe der Java-API(SOAP) löschen {#delete-resources-using-the-java-api-soap}
+### Ressourcen mithilfe der Java-API(SOAP) {#delete-resources-using-the-java-api-soap} löschen
 
 Löschen Sie eine Ressource mithilfe der Repository API (Java):
 
@@ -1207,15 +1207,15 @@ Löschen Sie eine Ressource mithilfe der Repository API (Java):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie ein `ResourceRepositoryClient` Objekt, indem Sie dessen Konstruktor verwenden und ein `ServiceClientFactory` Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie den Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Geben Sie den URI der zu löschenden Ressource an
 
-   Geben Sie den URI der abzurufenden Ressource an. Da sich die Ressource testResourceToBeDeleted in dem Ordner testFolder befindet, wird deren URI `/testFolder/testResourceToBeDeleted`verwendet. Der URI wird als `java.lang.String` Objekt gespeichert. In diesem Beispiel wird die Ressource zuerst in das Repository geschrieben und der zugehörige URI abgerufen. Weitere Informationen zum Erstellen einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie den URI der abzurufenden Ressource an. In diesem Fall ist der URI der Ressource mit dem Namen testResourceToBeDeleted im Ordner testFolder `/testFolder/testResourceToBeDeleted`. Der URI wird als `java.lang.String`-Objekt gespeichert. In diesem Beispiel wird die Ressource zuerst in das Repository geschrieben und der zugehörige URI abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
 
 1. Ressource löschen
 
-   Rufen Sie die `ResourceRepositoryClient` Methode des `deleteResource` Objekts auf und übergeben Sie den URI der Ressource als Parameter.
+   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter.`deleteResource`
 
 **Siehe auch**
 
@@ -1227,7 +1227,7 @@ Löschen Sie eine Ressource mithilfe der Repository API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Löschen von Ressourcen mithilfe der Webdienst-API {#delete-resources-using-the-web-service-api}
+### Ressourcen mithilfe der Webdienst-API {#delete-resources-using-the-web-service-api} löschen
 
 Löschen Sie eine Ressource mithilfe der Repository API (Webdienst):
 
@@ -1238,15 +1238,15 @@ Löschen Sie eine Ressource mithilfe der Repository API (Webdienst):
 
 1. Dienstclient erstellen
 
-   Erstellen Sie mithilfe der Microsoft .NET-Clientassembly ein `RepositoryServiceService` Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie seine `Credentials` Eigenschaft mithilfe eines `System.Net.NetworkCredential` Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mit der Microsoft .NET-Clientassembly ein `RepositoryServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen. Legen Sie die Eigenschaft `Credentials` mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI der zu löschenden Ressource an
 
-   Geben Sie den URI der abzurufenden Ressource an. In diesem Fall lautet der URI des Felds, da sich die Ressource mit dem Namen `testResourceToBeDeleted` im Ordner `testFolder`befindet `"/testFolder/testResourceToBeDeleted"`. In diesem Beispiel wird die Ressource zuerst in das Repository geschrieben und der zugehörige URI abgerufen. Weitere Informationen zum Erstellen einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie den URI der abzurufenden Ressource an. In diesem Fall lautet der URI `"/testFolder/testResourceToBeDeleted"`, da sich die Ressource `testResourceToBeDeleted` im Ordner `testFolder` befindet. In diesem Beispiel wird die Ressource zuerst in das Repository geschrieben und der zugehörige URI abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
 
 1. Ressource löschen
 
-   Rufen Sie die `RepositoryServiceService` Methode des `deleteResources` Objekts auf und übergeben Sie ein `System.String` Array, das den URI der Ressource als ersten Parameter enthält. Für `null` den zweiten Parameter übergeben.
+   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie ein `System.String`-Array, das den URI der Ressource als ersten Parameter enthält. `deleteResources` Übergeben Sie `null` für den zweiten Parameter.
 
 **Siehe auch**
 
