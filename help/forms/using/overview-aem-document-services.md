@@ -91,7 +91,7 @@ Sie können eine einfache Eingabezuordnung zum Angeben der Speicherorte für Que
 * FTP
 * HTTP/HTTPS
 
-## Doc Assurance-Dienst {#doc-assurance-service}
+## Doc Assurance-Dienst  {#doc-assurance-service}
 
 Der Doc Assurance-Dienst unterstützt Sie beim Verschlüsseln und Entschlüsseln von Dokumenten, beim Erweitern der Funktionen von Adobe Reader mit zusätzlichen Nutzungsrechten sowie beim Hinzufügen digitaler Signaturen zu Ihren Dokumenten. Ihre Benutzer können mit PDF-Formularen und -Dokumenten mühelos interagieren, während in Ihrer Organisation Sicherheit, Archivierung und Compliance verbessert werden.
 
@@ -107,11 +107,11 @@ Der Signature-Dienst ermöglicht das Arbeiten mit digitalen Signaturen und Dokum
 
 Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind.
 
-### Encryption-Dienst {#encryption-service}
+### Encryption-Dienst  {#encryption-service}
 
 Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alle Daten außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikat) entschlüsseln. Der private Schlüssel, der zum Entschlüsseln des PDF-Dokuments verwendet wird, muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
 
-### Reader Extension-Dienst {#reader-extension-service}
+### Reader Extension-Dienst  {#reader-extension-service}
 
 Der Reader Extensions-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 und höher. Der Dienst fügt dem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
@@ -130,6 +130,6 @@ Diese speziellen Benutzerfunktionen werden automatisch aktiviert, wenn ein PDF-D
 
 Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des Doc Assurance-Dienstes finden Sie unter[ Document Services konfigurieren](/help/forms/using/install-configure-document-services.md).
 
-## An Drucker senden {#send-to-printer-service}
+## An Drucker senden  {#send-to-printer-service}
 
 Der Dienst &quot;An Drucker senden&quot;stellt eine API zum Senden von Dokumenten an den angegebenen Drucker zum Drucken bereit.
