@@ -18,7 +18,7 @@ ht-degree: 78%
 
 # Referenzthemen {#reference-themes}
 
-[Designs](/help/forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. In addition to the default theme, you can get the following themes by installing the [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package:
+[Designs](/help/forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Themen abrufen, indem Sie das [AEM-FORMS-6.3-REFERENCE-THEMEN](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES)-Paket installieren:
 
 * Beryl
 * Exec
@@ -35,12 +35,13 @@ Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden k�
 
 Die Designs, die in diesem Paket enthalten sind, sind responsive und die Formatierung in diesen Themen ist definiert für Mobil- und Desktopanzeigen. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
 
-For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Weitere Informationen zum Installieren des Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
 Das Beryl-Design wird vom [adaptiven We.Gov-Formular](/help/forms/using/gov-reference-site-walkthrough.md) verwendet, und hebt die Verwendung von Hintergrundbildern, Transparenz und großen und flachen Symbolen hervor. Im Screenshot unten können Sie sehen, wie das Beryl-Design angezeigt wird und wie es das Formatieren des Formulars verbessern kann.
-![Beryl theme](assets/beryl.png)[Klicken Sie auf zum Vergrößern](assets/beryl-1.png)
+![Beryl ](assets/beryl.png)
+[themeClick zum Vergrößern](assets/beryl-1.png)
 
 ## Exec {#exec}
 
