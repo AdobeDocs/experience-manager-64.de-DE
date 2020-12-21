@@ -30,12 +30,12 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
 1. Wählen Sie auf der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **Wörterbuch hinzufügen**.
 1. Wählen Sie auf dem Bildschirm **Wörterbuch zum Übersetzungsprojekt hinzufügen** die Option **Neues Übersetzungsprojekt erstellen** oder **Zu vorhandenem Übersetzungsprojekt hinzufügen**.
 1. Geben Sie im Feld **Projekttitel** den Titel an. Beispiel: `Government Reference Site - German locale.`
-1. In the **Target Languages** field, specify a locale (For example, `German(de)`), and click **Done**. Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt.
+1. Geben Sie im Feld **Sprachen der Zielgruppe** ein Gebietsschema an (z. B. `German(de)`) und klicken Sie auf **Fertig**. Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt.
 1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**. Öffnen Sie auf dem Bildschirm „Projekte“ das neu erstellte Projekt.
 1. Klicken Sie unten auf der Kachel **Übersetzungszusammenfassung** auf die **Auslassungspunkte**. Der Bildschirm „Übersetzungszusammenfassung“ wird geöffnet.
 1. Klicken Sie am oberen Rand des Bildschirms **Übersetzungszusammenfassung** auf das Symbol **Bearbeiten**. Öffnen Sie die Registerkarte **Übersetzung** und wählen Sie auf dem Bildschirm **Übersetzungsmethode** die Option „Maschinelle Übersetzung“. Wählen Sie den entsprechenden **Übersetzungsanbieter** und die entsprechende **Cloud-Konfiguration**. Klicken Sie am oberen Rand des Bildschirms auf das Symbol **Fertig**.
-1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Start**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Bereit für Überprüfung**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
-1. After the status changes to **Ready for review** on the **Translation Job** tile, open the form in a browser window. Eine lokalisierte Version des Formulars wird angezeigt.
+1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downPfeil](assets/aem62forms_downarrow.png) und dann auf **Beginn**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Bereit für Überprüfung**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
+1. Nachdem der Status auf **Bereit für Überprüfung** auf der Kachel **Übersetzungsauftrag** geändert wurde, öffnen Sie das Formular in einem Browserfenster. Eine lokalisierte Version des Formulars wird angezeigt.
 
    >[!NOTE]
    >
@@ -66,11 +66,11 @@ Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines D
 
 1. [Verknüpfen Sie die Seiten Ihres Sprach-Masters](/help/sites-administering/tc-tic.md) mit dem Übersetzungsdienstleister und den Framework-Konfigurationen.
 
-1. [Identifizieren Sie den zu übersetzenden Inhaltstyp](/help/sites-administering/tc-rules.md) .
+1. [Identifizieren Sie den Typ des zu übersetzenden ](/help/sites-administering/tc-rules.md) Inhalts.
 
 1. [Bereiten Sie die Inhalte für die Übersetzung vor](/help/sites-administering/tc-prep.md), indem Sie die Sprach-Master und die Stammseiten der Sprachkopien erstellen.
 
-1. [Erstellen Sie Übersetzungsprojekte](/help/sites-administering/tc-manage.md) , um die zu übersetzenden Inhalte zu sammeln und den Übersetzungsprozess vorzubereiten.
+1. [Erstellen Sie Übersetzungsprojekte, ](/help/sites-administering/tc-manage.md) um die zu übersetzenden Inhalte zu sammeln und den Übersetzungsprozess vorzubereiten.
 
 1. Verwenden Sie die Übersetzungsprojekte, um [den Prozess zur Übersetzung der Inhalte zu verwalten](/help/sites-administering/tc-manage.md).
 
