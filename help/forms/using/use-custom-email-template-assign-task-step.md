@@ -67,12 +67,12 @@ In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen 
 
 Der Schritt „Aufgabe zuweisen“ ist standardmäßig so konfiguriert, dass die Standardvorlage „htmlEmailTemplate.txt“ verwendet wird. Sie können stattdessen eine benutzerdefinierte Vorlage zu verwenden. Vorlage ändern
 
-1. Open the **[!UICONTROL Assign Task]** step.
+1. Öffnen Sie den Schritt **[!UICONTROL Aufgabe zuweisen]**.
 
-1. Navigate to **[!UICONTROL Assignee > HTML Email Template]**.
+1. Navigieren Sie zu **[!UICONTROL Verantwortlicher > HTML-E-Mail-Vorlage]**.
 
 1. Wählen Sie die neu erstellte HTML-E-Mail-Vorlage aus. 
 
 1. Klicken Sie auf **[!UICONTROL OK]**. Die Vorlage wird geändert.
 
-In E-Mail-Benachrichtigungen werden außerdem [Metadaten](/help/forms/using/use-metadata-in-email-notifications.md) verwendet. Dies können beispielsweise Fälligkeitsdatum, Priorität, Workflow-Name und mehr sein. You can also configure the template to use [custom metadata](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
+In E-Mail-Benachrichtigungen werden außerdem [Metadaten](/help/forms/using/use-metadata-in-email-notifications.md) verwendet. Dies können beispielsweise Fälligkeitsdatum, Priorität, Workflow-Name und mehr sein. Sie können die Vorlage auch so konfigurieren, dass [benutzerdefinierte Metadaten](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) verwendet werden.
