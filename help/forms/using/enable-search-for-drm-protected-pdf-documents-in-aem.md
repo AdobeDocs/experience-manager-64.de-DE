@@ -35,12 +35,12 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
 * Wenn Sie nur den AEM Forms on JEE-Server verwenden, ist das Indexpaket bereits installiert. 
 * Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind. 
 
-   * For AEM Forms on OSGi, the bundles are listed at `https://[server]:[port]/system/console/bundles`.
-   * For AEM Forms on JEE, the bundles are listed at `https://[server]:[port]/[context-path]/system/console/bundles`. Beispiel `http://localhost:8080/lc/system/console/bundles`.
+   * Bei AEM Forms unter OSGi werden die Pakete unter `https://[server]:[port]/system/console/bundles` aufgeführt.
+   * Bei AEM Forms on JEE werden die Pakete unter `https://[server]:[port]/[context-path]/system/console/bundles` aufgeführt. Beispiel `http://localhost:8080/lc/system/console/bundles`.
 
-* Add the *sun.util.calendar* package to the allowlist. So fügen Sie das Paket der Zulassungsliste hinzu:
+* hinzufügen Sie das *sun.util.calendar*-Paket auf die Zulassungsliste. So fügen Sie das Paket der Zulassungsliste hinzu:
 
-   1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
+   1. Öffnen Sie die AEM Web-Konsole. Die URL ist `https://[server]:[port]/system/console/configMgr`.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
    1. Fügen Sie das sun.util.calendar-Paket zu den Positiv-Klassen oder dem Paketpräfixfeld hinzu und klicken Sie auf **Save**.
 
@@ -53,7 +53,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 
 ### Konfigurieren des Adobe LiveCycle Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
+1. Öffnen Sie die AEM Web-Konsole. Die URL ist `https://[server]:[port]/system/console/configMgr`.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-Paket**. Geben Sie den Wert für die folgenden Felder an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der Forms on JEE-Keystore-Datei> neu.
@@ -66,7 +66,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 ### Konfigurieren von Adobe LiveCycle Client SDK Bundle mit gegenseitiger Authentifizierung {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
-1. Öffnen Sie die AEM Web-Konsole. The URL is `https://[server]:[port]/system/console/configMgr`.
+1. Öffnen Sie die AEM Web-Konsole. Die URL ist `https://[server]:[port]/system/console/configMgr`.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-** Paket. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
@@ -79,7 +79,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
-## Indizieren eines richtliniengeschützten Beispiel-PDF-Dokuments {#index-a-sample-policy-protected-pdf-document}
+## Indizieren eines richtliniengeschützten Beispiel-PDF-Dokuments  {#index-a-sample-policy-protected-pdf-document}
 
 1. Melden Sie sich bei AEM Assets als Administrator an.
 1. Erstellen Sie einen Ordner in AEM Digital Asset Manager und laden Sie die durch Richtlinien geschützten PDF-Dokumente in den neu erstellten Ordner hoch.
