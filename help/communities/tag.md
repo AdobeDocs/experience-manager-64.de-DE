@@ -24,15 +24,15 @@ Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, kön
 
 Die zugrunde liegende Infrastruktur für Tags, die in der Umgebung &quot;Veröffentlichen&quot;angewendet werden, ist die gleiche wie für Tags, die in der Autoreninhalt-Umgebung angewendet werden, wie z. B. Seiten und Assets:
 
-* See [Administering Tags](../../help/sites-administering/tags.md) and [Tagging User Generated Content](tag-ugc.md) (UGC) for information about creating and managing tags.
+* Informationen zum Erstellen und Verwalten von Tags finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging von benutzergenerierten Inhalten](tag-ugc.md) (UGC).
 
-* See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
+* Weitere Informationen zum [Tagging-Framework](../../help/sites-developing/framework.md) sowie zum Einschließen und Erweitern von Tags in [benutzerdefinierten Anwendungen](../../help/sites-developing/building.md) finden Sie unter [Tagging für Entwickler](../../help/sites-developing/tags.md).
 
-* Unter [Verwenden der Social Tag Cloud](tagcloud.md) finden Sie Informationen für Autoren dazu, wie Sie einer Seite eine `social tag cloud` Komponente hinzufügen können, um die Tags hervorzuheben, die in der Umgebung &quot;Veröffentlichen&quot;auf UGC angewendet werden.
+* Unter [Verwenden der Social Tag Cloud](tagcloud.md) finden Sie Informationen für Autoren dazu, wie Sie einer Seite eine `social tag cloud`-Komponente hinzufügen können, um die Tags hervorzuheben, die in der Umgebung &quot;Veröffentlichen&quot;auf UGC angewendet wurden.
 
-* Informationen zum Tagging von Ressourcen für Kataloge finden Sie unter Ressourcen für die [Tagging-Aktivierung](tag-resources.md) .
+* Informationen zum Tagging von Ressourcen für Kataloge finden Sie unter [Tagging-Aktivierungsressourcen](tag-resources.md).
 
-Das Tagging von UGC kann aktiviert sein, wenn eine [Community-Site](sites-console.md#tagging) oder eine der folgenden Funktionen konfiguriert wird:
+Das Tagging von UGC kann aktiviert werden, wenn eine [Community-Site](sites-console.md#tagging) oder eine der folgenden Funktionen konfiguriert wird:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -68,7 +68,7 @@ Das Tagging von UGC kann aktiviert sein, wenn eine [Community-Site](sites-consol
   </tr>
   <tr>
    <td><strong>properties</strong></td> 
-   <td>See <a href="tagcloud.md">Using Social Tag Cloud</a></td> 
+   <td>Siehe <a href="tagcloud.md">Verwenden der Social Tag Cloud</a></td> 
   </tr>
  </tbody>
 </table>
@@ -85,6 +85,6 @@ Das Tagging von UGC kann aktiviert sein, wenn eine [Community-Site](sites-consol
 
 ## Tag-Suche {#tag-searching}
 
-Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit [Tag-Titeln](../../help/sites-developing/framework.md#tag-characteristics)durchgeführt.
+Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit [Tag-Titeln](../../help/sites-developing/framework.md#tag-characteristics) durchgeführt.
 
-Vor FP1 wurde die Suche mit [Tag-IDs](../../help/sites-developing/framework.md#tagid)durchgeführt.
+Vor FP1 wurde die Suche mit [Tag-IDs](../../help/sites-developing/framework.md#tagid) durchgeführt.
