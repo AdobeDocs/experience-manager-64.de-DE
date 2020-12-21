@@ -27,7 +27,7 @@ Für das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularm
 
 ## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
 
-AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
+AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das verwendete JSON-Schema sollte mit [v4-Spezifikationen](https://json-schema.org/draft-04/schema) konform sein.
 
 Die Haupteigenschaften bei der Verwendung eines JSON-Schemas sind wie folgt:
 
@@ -317,9 +317,9 @@ Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendb
 
 Das obige Beispiel definiert einen Kundendatensatz, bei dem jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Stadt und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
 
-## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
+## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen  {#pre-configuring-fields-in-json-schema-definition}
 
-You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom adaptive form component. Ein Beispiel wird unten angezeigt:
+Mit der Eigenschaft **aem:afProperties** können Sie das JSON-Schema vorkonfigurieren, um es einer benutzerdefinierten adaptiven Formularkomponente zuzuordnen. Ein Beispiel wird unten angezeigt:
 
 ```
 {
@@ -339,7 +339,7 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 ```
 
-## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
+## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars  {#limit-acceptable-values-for-an-adaptive-form-component}
 
 Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, um die Werte zu beschränken, die für eine Komponente eines adaptiven Formulars gültig sind:
 
