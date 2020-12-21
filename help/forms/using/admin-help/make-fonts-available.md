@@ -27,7 +27,7 @@ Weitere Informationen zu Schriftarteinstellungen finden Sie unter [Konfigurieren
 **Speicherort des „Verzeichnisses für Kundenschriftarten“ angeben.**
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
-1. Geben Sie in das Feld „Speicherort des Verzeichnisses für Systemschriftarten“ den Pfad für den Ordner für Kundenschriftarten an. Multiple directories can be added, separated by a semicolon **;**
+1. Geben Sie in das Feld „Speicherort des Verzeichnisses für Systemschriftarten“ den Pfad für den Ordner für Kundenschriftarten an. Mehrere Ordner können hinzugefügt werden, getrennt durch ein Semikolon **;**
 1. Klicken Sie auf OK.
 1. Starten Sie das System neu, auf dem AEM Forms installiert ist.
 
