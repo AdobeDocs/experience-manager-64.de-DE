@@ -26,19 +26,19 @@ Ab AEM Communities 6.1 werden benutzergenerierte Inhalte (UGC) in einem gemeinsa
 
 Im Gegensatz zu früheren Versionen gibt es keine Reverse/Forward-Replizierung von UGC über AEM Instanzen hinweg. Stattdessen macht der SRP UGC-Vorgänge für das Erstellen, Lesen, Aktualisieren und Löschen (CRUD) von allen Autoren- und Veröffentlichungsinstanzen mit Ausnahme von JSRP direkt zugänglich.
 
-Im Folgenden sind die [Merkmale jeder einzelnen SRP-Option](#characteristics-of-srp-options)aufgeführt, die für den Entscheidungsprozess bei der Auswahl des geeigneten SRP und der [zugrunde liegenden Bereitstellung](topologies.md)von entscheidender Bedeutung ist.
+Im Folgenden finden Sie die [Eigenschaften jeder SRP-Option](#characteristics-of-srp-options), die für den Entscheidungsprozess bei der Auswahl des entsprechenden SRP und [zugrunde liegenden Bereitstellung](topologies.md) entscheidende Informationen sind.
 
-Weitere Informationen zur Verwendung von SRP für UGC finden Sie unter Übersicht über [Datenspeicherung Resource Provider](srp.md).
+Weitere Informationen zur Verwendung von SRP für UGC finden Sie unter [Übersicht über den Ressourcenanbieter der Datenspeicherung](srp.md).
 
 >[!NOTE]
 >
->SRP gilt nur für Community-Inhalte. Sie hat keine Auswirkungen auf die Speicherorte von Site-Inhalten ([Knotenspeicher](../../help/sites-deploying/data-store-config.md)) und hat keine Auswirkungen auf die sichere Verarbeitung von Benutzerregistrierung, Profilen und Benutzergruppen zwischen AEM Instanzen (siehe auch [Verwalten von Benutzerdaten](#managing-user-data)).
+>SRP gilt nur für Community-Inhalte. Sie hat keine Auswirkungen auf die Speicherorte von Site-Inhalten ([node store](../../help/sites-deploying/data-store-config.md)) und hat keine Auswirkungen auf die sichere Verarbeitung von Benutzerregistrierung, Profilen und Benutzergruppen zwischen AEM Instanzen (siehe auch [Verwalten von Benutzerdaten](#managing-user-data)).
 
 >[!CAUTION]
 >
 >Ab AEM 6.1 wird [UGC nie repliziert](#ugc-never-replicated).
 >
->Wenn die Bereitstellung keinen gemeinsamen Store enthält, z. B. die standardmäßige [JSRP](topologies.md#jsrp) -Topologie, ist UGC nur in der AEM- oder Autoreninstanz sichtbar, in der sie eingegeben wurde. Nur wenn die Topologie einen Veröffentlichungscluster enthält, ist das UGC in jeder Veröffentlichungsinstanz sichtbar.
+>Wenn die Bereitstellung keinen gemeinsamen Speicher enthält, z. B. die Standardtopologie [JSRP](topologies.md#jsrp), ist UGC nur in der AEM- oder Autoreninstanz sichtbar, in der sie eingegeben wurde. Nur wenn die Topologie einen Veröffentlichungscluster enthält, ist das UGC in jeder Veröffentlichungsinstanz sichtbar.
 
 ## Merkmale der SRP-Optionen {#characteristics-of-srp-options}
 
@@ -76,7 +76,7 @@ Mit dieser Option wird der UGC direkt in einer lokalen MySQL-Datenbankinstanz be
 * Geeignet für große Mengen von Community-Inhalten
 
 [JSRP - JCR Datenspeicherung Resource Provider](jsrp.md)\
-Bei der Standardoption gibt es keinen gemeinsamen Speicher. Das UGC wird nur im selben JCR-Repository wie die AEM Instanz, in der es eingegeben wurde, beibehalten.
+Bei der Standardoption gibt es keinen gemeinsamen Speicher. Die UGC wird nur im selben JCR-Repository wie die AEM Instanz, in der sie eingegeben wurde, beibehalten.
 
 * Speichert Community-Inhalte im JCR-Repository der AEM Autoren- oder Veröffentlichungsinstanz, in der sie veröffentlicht wurden
 * Erfordert den programmatischen Zugriff auf UGC über die SRP API
@@ -86,7 +86,7 @@ Bei der Standardoption gibt es keinen gemeinsamen Speicher. Das UGC wird nur im 
 
 ## Konfigurieren von SRP {#configuring-srp}
 
-Die Standardoption für die Datenspeicherung wird basierend auf der zugrunde liegenden Bereitstellung über die [Datenspeicherung Configuration Console](srp-config.md)festgelegt.
+Die Standardoption für die Datenspeicherung wird basierend auf der zugrunde liegenden Bereitstellung über die [Datenspeicherung Configuration Console](srp-config.md) festgelegt.
 
 Konfigurationsdetails zu den einzelnen Optionen finden Sie unter:
 
@@ -111,11 +111,11 @@ Obwohl Site-Inhalte repliziert werden, wird UGC nie repliziert.
 
 ### Verwalten von Benutzerdaten {#managing-user-data}
 
-Von Interesse für Communities sind auch [*Benutzer *,* Benutzergruppen *und* Benutzergruppen *](users.md). Wenn diese benutzerbezogenen Daten in der Umgebung &quot;Veröffentlichen&quot;erstellt und aktualisiert werden, müssen sie anderen Instanzen im Veröffentlichungsmodus zur Verfügung gestellt werden, wenn die Topologie eine[Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)ist.
+Für Communities sind außerdem [*user*, *user groups* und *user Profils*](users.md) von Interesse. Wenn diese benutzerbezogenen Daten in der Umgebung &quot;Veröffentlichen&quot;erstellt und aktualisiert werden, müssen sie anderen Instanzen im Veröffentlichungsmodus zur Verfügung gestellt werden, wenn die Topologie eine [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) ist.
 
 Ab AEM Communities 6.1 werden benutzerbezogene Daten mit der Sling-Distribution und nicht mit der Replikation synchronisiert. Weitere Informationen finden Sie unter [Benutzersynchronisierung](sync.md).
 
-### Upgrading to AEM Communities 6.2 {#upgrading-to-aem-communities}
+### Upgrade auf AEM Communities 6.2 {#upgrading-to-aem-communities}
 
 Wenn bei der Aktualisierung auf AEM Communities 6.3 bereits vorhandene UGC beibehalten werden müssen, sollten Schritte unternommen werden, je nachdem, ob die AEM 5.6.1- oder AEM 6.0-Community die On-Demand-Datenspeicherung der Adobe oder die lokale Datenspeicherung von UGC verwendet hat.
 
