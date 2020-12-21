@@ -26,30 +26,30 @@ Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mi
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site
-* Configuration settings for the `File Library` component
+* Hinzufügen der Dateibibliotheksfunktion zu einer AEM
+* Konfigurationseinstellungen für die Komponente `File Library`
 
 ## Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
 
-To add a `File Library` component to a page in author mode, locate the component
+Um eine `File Library`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
 
 * `Communities / File Library`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-file-library.md#essentials-for-client-side) einbezogen werden, wird die `File Library`-Komponente wie folgt angezeigt:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ## Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `File Library` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
-### Comments tab {#comments-tab}
+### Kommentar, Registerkarte {#comments-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
@@ -66,21 +66,26 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 * **[!UICONTROL Rich-Text-Editor]** Ist diese Option aktiviert, können Kommentare mit Markup versehen werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Kommentare]** löschen Wenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Löschen von]**
+KommentarenWenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Tagging zulassen]** Ist diese Option aktiviert, können Dateien Kennzeichnungen zugewiesen werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulässige Namensraum]** Wenn &quot;Tagging zulassen&quot;aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namensraum beschränkt. Wenn keine aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
+* **[!UICONTROL Zulässige]**
+NamespacesWenn Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namensraum beschränkt. Wenn keine aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
 
 * **[!UICONTROL Empfehlungsgrenze]** Ist die Option „Tagging zulassen“ aktiviert, wird mit dieser Einstellung die Anzahl der vorgeschlagenen Tags eingegrenzt. Wurde der Wert „-1“ festgelegt, werden beliebig viele Tags eingeblendet. Der Standardwert ist -1.
 
-* **[!UICONTROL Abstimmung]** zulassen Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL &quot;]**
+Abstimmung zulassen&quot;Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulassen]** Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Zulassen von]**
+FolgendemWenn aktiviert, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Threaded Replies]** zulassen Wenn diese aktiviert sind, erlauben Sie Antworten auf gepostete Kommentare. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Threaded]**
+Replies zulassenWenn aktiviert, erlauben Sie Antworten auf gepostete Kommentare. Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
 
@@ -106,7 +111,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Ko
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [File Library Essentials](essentials-file-library.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Essentials zur Dateibibliothek](essentials-file-library.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
