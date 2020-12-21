@@ -39,22 +39,22 @@ Die Beschriftung, die von Bildschirmlesegeräten erkannt wird, muss nicht unbedi
 
 Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 
-1. Select a component and tap ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Komponente aus und tippen Sie auf ![cmppr](assets/cmppr.png).
 1. Klicken Sie in der Randleiste auf **Ein-/Ausgabehilfe**, um die gewünschte Barrierefreiheitsoption auszuwählen.
 
 ### Barrierefreiheitsoptionen in Formularkomponenten {#accessibility-options-in-form-components}
 
 ![Barrierefreiheitsoptionen in Formularkomponenten](assets/accessibility-options.png)
 
-**Autoren von benutzerdefinierten Textformularen** stellen den Inhalt in der Barrierefreiheitsoption Benutzerdefiniertes Textfeld bereit. Die Hilfstechnologie, z. B. Bildschirmlesehilfen, verwendet diesen benutzerdefinierten Text. In den meisten Szenarien ist die Verwendung der Einstellung „Titel“ die beste Option. Sie sollten nur dann benutzerdefinierten Text für Bildschirmlesegeräte erstellen, wenn die Option „Titel“ oder eine Kurzbeschreibung nicht möglich ist.
+**Autoren benutzerdefinierter** TextForm stellen den Inhalt in der Barrierefreiheitsoption Benutzerdefiniertes Textfeld bereit. Die Hilfstechnologie, z. B. Bildschirmlesehilfen, verwendet diesen benutzerdefinierten Text. In den meisten Szenarien ist die Verwendung der Einstellung „Titel“ die beste Option. Sie sollten nur dann benutzerdefinierten Text für Bildschirmlesegeräte erstellen, wenn die Option „Titel“ oder eine Kurzbeschreibung nicht möglich ist.
 
-**Kurze Beschreibung** Bei den meisten Komponenten wird die Kurzbeschreibung zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über die Komponente bewegt. Sie können diese Option im Feld „Kurzbeschreibung“ unter der Option für den Hilfeinhalt festlegen.
+**Kurze** BeschreibungBei den meisten Komponenten wird die Kurzbeschreibung zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über die Komponente bewegt. Sie können diese Option im Feld „Kurzbeschreibung“ unter der Option für den Hilfeinhalt festlegen.
 
-**Titel** Verwenden Sie diese Option, damit AEM Forms die mit dem Formularfeld verknüpfte visuelle Beschriftung als Bildschirmlesehilfen-Text verwenden kann.
+**** TitelVerwenden Sie diese Option, damit AEM Forms die mit dem Formularfeld verknüpfte visuelle Beschriftung als Bildschirmlesehilfen-Text verwenden kann.
 
-**Name** Sie können auf der Registerkarte &quot;Bindung&quot;im Feld &quot;Name&quot;einen Wert angeben. Der Name darf keine Leerzeichen enthalten.
+**** NameSie können auf der Registerkarte &quot;Bindung&quot;im Feld &quot;Name&quot;einen Wert angeben. Der Name darf keine Leerzeichen enthalten.
 
-**Wenn Sie &quot;Ohne** &quot;auswählen, hat das Formularobjekt keinen Namen im veröffentlichten Formular. Keine ist keine empfohlene Einstellung für Formularsteuerelemente.
+**Wenn Sie &quot;** Ohne&quot;auswählen, hat das Formularobjekt keinen Namen im veröffentlichten Formular. Keine ist keine empfohlene Einstellung für Formularsteuerelemente.
 
 >[!NOTE]
 >
@@ -64,13 +64,13 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 >
 >Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfo von XDP werden der Kurzbeschreibung zugeordnet, und die Beschriftung wird dem Titel zugeordnet. Die anderen Optionen bleiben gleich.
 
-## Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
+## Angabe von Textäquivalenten für Bilder  {#provide-text-equivalents-for-images}
 
 Durch Bilder können einigen Benutzern Aspekte veranschaulicht werden. Für Benutzer, die Bildschirmlesegeräte verwenden, verringern Bilder allerdings die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, sollten Sie Textbeschreibungen für alle Bilder angeben.
 
 Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Ein Bildschirmlesegerät liest den alternativen Text, wenn ein Bild auftritt. Für jedes Bild muss ein alternativer Text angegeben sein.
 
-Select an image component and tap ![cmppr](assets/cmppr.png). Geben Sie in der Randleiste unter „Eigenschaften“ alternativen Text für ein Bild ein.
+Wählen Sie eine Bildkomponente aus und tippen Sie auf ![cmppr](assets/cmppr.png). Geben Sie in der Randleiste unter „Eigenschaften“ alternativen Text für ein Bild ein.
 
 ![Alternativtext für ein Bild](assets/image-properties.png)
 
@@ -84,7 +84,7 @@ Es wird empfohlen, dass Sie die Standardschrift und -hintergrundfarben verwenden
 
 Weitere Informationen zum Ändern des Farbkontrasts und des Themas für adaptive Formulare finden Sie unter [Erstellen benutzerdefinierter Themen für adaptive Formulare](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
-## Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können {#ensure-that-form-controls-are-keyboard-accessible}
+## Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können  {#ensure-that-form-controls-are-keyboard-accessible}
 
 Ein barrierefreies Formular kann vollständig mit nur der Tastatur oder einem ähnlichen Eingabegerät ausgefüllt werden. Benutzer mit eingeschränkter Mobilität bzw. Sehfähigkeit haben möglicherweise keine andere Wahl, als die Tastatur zu nutzen, und viele Benutzer, die eine Maus verwenden könnten, ziehen es vor, Eingaben per Tastatur vorzunehmen. Indem Sie mehrere Eingabeverfahren ermöglichen, erstellen Sie Formulare, die nicht nur barrierefrei sind, sondern auch den Vorlieben aller Benutzer entgegenkommen.
 
