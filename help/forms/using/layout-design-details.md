@@ -80,7 +80,7 @@ Solange ein verknüpfungsfähiges Feld die oben genannten Kriterien erfüllt, ka
 
 Felder sind in Bezug auf ihre Layoutkonfiguration flexibler als Unterformulare, die als Zielfelder verwendet werden, allerdings sind Felder an eine einzige Wertart gebunden. Sie können ein Feld in die Breite ziehen oder es mit einer festen Breite oder Höhe einrichten usw. Das aufgelöste Modul- oder Regelergebnis wird in das Feld übernommen.
 
-## Wann sollten Unterformulare, wann Felder verwendet werden {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Wann sollten Unterformulare, wann Felder verwendet werden  {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Verwenden Sie ein Unterformular für Inhalte aus mehreren Modulen in einem von oben nach unten angeordneten Layout mit vertikalem Fluss (mehrere Absätze oder Bilder). Die Höhe eines Unterformulars nimmt zu, damit es den vorgesehenen Inhalt fassen kann: Achten Sie darauf, dass Ihr Layout diesen Umstand bewältigen kann. Wenn Sie nicht sicher sein können, dass der mit dem Unterformular/dem Zielbereich verknüpfte Inhalt niemals mehr Raum einnimmt als für das Unterformular vorgesehen ist, richten Sie das Unterformular als untergeordnetes Element eines fließenden Unterformular-Containers ein. Damit stellen Sie sicher, dass Layout-Objekte unterhalb des Unterformulars nach unten rücken, wenn die Höhe des Unterformulars zunimmt.
 
@@ -119,13 +119,13 @@ Verwenden Sie ein Feld, wenn Sie Moduldaten oder Daten aus einem Datenlexikonele
  </tbody> 
 </table>
 
-## Sich wiederholende Elemente einrichten {#setting-up-repetitive-elements}
+## Sich wiederholende Elemente einrichten  {#setting-up-repetitive-elements}
 
 Wenn Elemente wie das Logo und die Adresse Ihres Unternehmens auf allen Seiten eines Briefs/einer interaktiven Kommunikation angezeigt werden, erstellen Sie für diese Elemente Formularfelder und platzieren Sie diese auf der Masterseite. Nehmen Sie die Bindung für diese Felder über den Feldnamen vor.
 
-## Server-Renderformat festlegen {#specify-the-server-nbsp-render-format}
+## Server-Renderformat festlegen  {#specify-the-server-nbsp-render-format}
 
 Verwenden Sie das Server-Renderformat des Layouts für das dynamische XML-Formular, andernfalls können Briefe/interaktive Kommunikation, die auf diesem Layout basieren, nicht korrekt gerendert werden. Das Server-Renderformat ist in Forms Designer standardmäßig auf das dynamische XML-Formular eingestellt. Sicherstellen, dass Sie das richtige Format verwenden:
 
-* In Designer, click **[!UICONTROL File > Form Properties > Default]**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
+* Klicken Sie in Designer auf **[!UICONTROL Datei > Formulareigenschaften > Standard]** und stellen Sie sicher, dass die Einstellung &quot;PDF-Wiedergabe/Format&quot;auf &quot;Dynamisches XML-Formular&quot;eingestellt ist.
 
