@@ -15,13 +15,13 @@ ht-degree: 1%
 ---
 
 
-# What&#39;s New in AEM 6.4 Communities {#what-s-new-in-aem-communities}
+# Neue Funktionen in AEM 6.4 Communities {#what-s-new-in-aem-communities}
 
 AEM Communities Angebots bietet Unternehmen einen Rahmen für die Zusammenarbeit zwischen ihren Partnern, Kunden und Mitarbeitern. Es bietet soziale Möglichkeiten zur Website-Struktur und hilft Unternehmen, sich mit ihren Interessenvertretern zu beschäftigen und ihnen Wissen zu vermitteln, um ihren Markenwert auf ihre Weise zu verbessern.
 
 AEM 6.4 Communities bietet Funktionen, um die Benutzererfahrung in der Community zu verbessern und die Aufgaben von Administratoren, Moderatoren und Managern in der Community zu erleichtern.
 
-Lesen Sie mehr, um sich schnell mit neuen Funktionen und Verbesserungen vertraut zu machen. Also, see AEM 6.4 Communities [release notes](../release-notes/communities-release-notes.md). Die Dokumentation zu AEM 6.4 Communities finden Sie im [AEM 6.4 Communities Benutzerhandbuch](home.md).
+Lesen Sie mehr, um sich schnell mit neuen Funktionen und Verbesserungen vertraut zu machen. Siehe auch AEM 6.4 Communities [Versionshinweise](../release-notes/communities-release-notes.md). Die Dokumentation zu AEM 6.4 Communities finden Sie unter [AEM 6.4 Communities Benutzerhandbuch](home.md).
 
 ## Verwalten von Untergemeinschaften oder Community-Gruppen {#managing-sub-communities-or-community-groups}
 
@@ -29,21 +29,21 @@ AEM Communities ermöglicht es Community-Administratoren, Gruppen und Untergrupp
 
 ### Erstellen mehrsprachiger Gruppen in einem einzigen Schritt{#create-multi-locale-groups-in-single-step} 
 
-Als Teil einer Community-Site können mehrsprachige Gruppen in einem einzigen Vorgang erstellt werden. **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprache(n)]** auf der Seite &quot; **[!UICONTROL Community-Gruppenvorlage]** &quot;, die beim Erstellen einer [neuen Community-Gruppe](groups.md) auf einer Community-Site verfügbar ist, machen dies möglich.
+Als Teil einer Community-Site können mehrsprachige Gruppen in einem einzigen Vorgang erstellt werden. **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprache(n)]** Feld in der  **[!UICONTROL Community-]** Gruppenvorlage, das beim Erstellen einer  [neuen Community-](groups.md) Gruppe innerhalb einer Community-Site verfügbar ist, macht dies möglich.
 
 ![multilingualgroup-1](assets/multilingualgroup-1.png)
 
-Um solche Gruppen zu erstellen, können die Benutzer über die Site-Konsole einfach zur Gruppensammlung der gewünschten Communities navigieren. Erstellen Sie eine Gruppe und geben Sie die gewünschten Sprachen im Feld &quot; **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprache(n)]** &quot;auf der Seite &quot; **[!UICONTROL Community-Gruppenvorlage]** &quot;an.
+Um solche Gruppen zu erstellen, können die Benutzer über die Site-Konsole einfach zur Gruppensammlung der gewünschten Communities navigieren. Erstellen Sie eine Gruppe und geben Sie die gewünschten Sprachen im Feld **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprache(n)]** der Seite **[!UICONTROL Community-Gruppenvorlage]** an.
 
-### Community-Gruppen aus der Gruppenkonsole löschen {#delete-community-groups-from-groups-console}
+### Community-Gruppen aus der Gruppenkonsole {#delete-community-groups-from-groups-console} löschen
 
-AEM 6.4 Communities stellt das Symbol &quot;Gruppe löschen&quot;für die vorhandenen Community-Gruppen in der Community-Gruppensammlung in der Community-Sites-Konsole bereit. Dies ermöglicht das Löschen [von](groups.md#deleting-the-group) Gruppen mit nur einem Klick sowie das Löschen aller Elemente, die mit der Gruppe verbunden sind (z. B. Inhalte und Benutzermitgliedschaften).
+AEM 6.4 Communities stellt das Symbol &quot;Gruppe löschen&quot;für die vorhandenen Community-Gruppen in der Community-Gruppensammlung in der Community-Sites-Konsole bereit. Dies ermöglicht das Löschen der Gruppe [mit einem Klick sowie das Löschen aller Elemente, die mit der Gruppe verbunden sind (z. B. Inhalte und Benutzermitgliedschaften).](groups.md#deleting-the-group)
 
 ![deletegrp](assets/deletegrp.png)
 
-### Erstellen und Zuweisen von Ressourcen für die Aktivierung innerhalb von Gruppen {#create-and-assign-enablement-resources-within-groups}
+### Erstellen und Zuweisen von Aktivierungsressourcen innerhalb von Gruppen {#create-and-assign-enablement-resources-within-groups}
 
-Lerninhalte können jetzt für eine bestimmte Gruppe von zielgerichteten Community-Mitgliedern erstellt, verwaltet und veröffentlicht werden. Aufgrund der Verfügbarkeit von Katalog- und Zuweisungsfunktionen für Community-Gruppen (und nicht nur für die gesamte Community-Site), können Aktivierungsmanager auch einer kleinen Gruppe von Personen [Aktivierungsressourcen](resource.md) und Lernpfade zuweisen.
+Lerninhalte können jetzt für eine bestimmte Gruppe von zielgerichteten Community-Mitgliedern erstellt, verwaltet und veröffentlicht werden. Aufgrund der Verfügbarkeit von Katalog- und Zuweisungsfunktionen für Community-Gruppen (und nicht nur für die gesamte Community-Site) können Aktivierungsmanager [Aktivierungsressourcen](resource.md) und Lernpfad auch einer kleinen Gruppe von Personen zuweisen.
 
 ![zuweisungskatalog](assets/assignmentcatalog.png)
 
@@ -57,13 +57,13 @@ Die neue Spam-Erkennungs-Engine hilft beim Herausfiltern der unerwünschten und 
 
 ![spamdetect-1](assets/spamdetection-1.png)
 
-[Der Spam-Detektor](moderate-ugc.md#spam-detection) findet und kennzeichnet ein bestimmtes Stück von vom Benutzer generierten Inhalten mit 90% Genauigkeit. Diese Funktion ist jedoch nicht standardmäßig aktiviert. Um dies zu aktivieren, müssen Community-Administratoren zu configMgr auf System/Konsole navigieren und Spam Process hinzufügen.
+[Spam ](moderate-ugc.md#spam-detection) findet und kennzeichnet ein bestimmtes Stück von Benutzergenerierten Inhalten mit 90% Genauigkeit. Diese Funktion ist jedoch nicht standardmäßig aktiviert. Um dies zu aktivieren, müssen Community-Administratoren zu configMgr auf System/Konsole navigieren und Spam Process hinzufügen.
 
 ![spamprocess-1](assets/spamprocess-1.png)
 
 ### Neue Filter (beantwortet/unbeantwortet) für QnA {#new-answered-unanswered-filters-for-qna}
 
-AEM 6.4 fügt der Massen-Moderationskonsole zwei [neue Filter](moderation.md#filter-rail)mit dem Namen &quot;Beantwortet&quot;und &quot;Nicht beantwortet&quot;für QnA-Fragen hinzu. Diese Filter sind unter Status in der Filterleiste verfügbar.
+AEM 6.4 fügt zwei [neue Filter](moderation.md#filter-rail) mit dem Namen &quot;Beantwortet&quot;und &quot;Nicht beantwortet&quot;für QnA-Fragen zu Massen-Moderationskonsole hinzu. Diese Filter sind unter Status in der Filterleiste verfügbar.
 
 ![Status](assets/statuses.png)
 
@@ -71,7 +71,7 @@ Bei Auswahl des Status &quot;Beantwortet&quot;sind alle beantworteten Fragen fü
 
 ### Lesezeichen für Moderationsfilter {#bookmark-moderation-filters}
 
-AEM Communities bietet die Möglichkeit, die vordefinierten Moderations-Filter [in der Moderationskonsole mit einem](moderation.md#filter-rail) Lesezeichen zu versehen. Diese gespeicherten Lesezeichen können später erneut besucht und für andere Benutzer freigegeben werden.
+AEM Communities bietet die Möglichkeit, die vordefinierten Moderations-Filter[ in der Moderationskonsole mit einem Lesezeichen zu versehen. ](moderation.md#filter-rail) Diese gespeicherten Lesezeichen können später erneut besucht und für andere Benutzer freigegeben werden.
 
 Die Benutzer müssen einfach die gewünschten Filter aus der Filterleiste in der Moderationskonsole auswählen, um das gefilterte benutzerspezifische Benutzerkontensymbol Ansicht und die Filter mit einem Lesezeichen in ihren Browsern zu versehen. Diese Filter werden an das Ende der URL-Zeichenfolge angehängt und können daher später freigegeben, wiederverwendet und erneut aufgerufen werden.
 
@@ -79,28 +79,28 @@ Die Benutzer müssen einfach die gewünschten Filter aus der Filterleiste in der
 
 AEM 6.4 Communities bietet Site-Management-Verbesserungen, die sicherstellen, dass zahlreiche Community-Sites in verschiedenen Sprachen einfach von Site-Administratoren erstellt, verwaltet und gelöscht werden können.
 
-### Erstellen von Community-Sites mit mehreren Gebietsschemas in einem Schritt {#create-multi-locale-community-sites-in-one-step}
+### Mehrere Gebietsschema-Community-Sites in einem Schritt {#create-multi-locale-community-sites-in-one-step} erstellen
 
-AEM Communities ermöglicht die Erstellung [mehrsprachiger Community-Sites](create-site.md) in einem einzigen Vorgang. Dies ist möglich, da mehrere Sprachen verfügbar sind, die Sie im Feld **[!UICONTROL Community Site Base Language]** auf der Seite **[!UICONTROL Site-Vorlage]** auswählen können, während Sie eine neue Community-Site aus der Site-Konsole erstellen.
+AEM Communities ermöglicht die Erstellung einer [mehrsprachigen Community-Site](create-site.md) in einem einzigen Vorgang. Dies ist möglich, da mehrere Sprachen verfügbar sind, die Sie auf der Seite **[!UICONTROL Community Site Base Language]** im Feld **[!UICONTROL Site Template]** auswählen können, während Sie eine neue Community-Site aus der Site-Konsole erstellen.
 
 ![multilocalesite](assets/multilocalesite.png)
 
 Benutzer können Konfigurationsordner, Branding und viele andere Konfigurationen auf einmal für alle diese Sites auswählen.
 
-### Löschen Sie Community-Sites aus der Site-Konsole. {#delete-community-sites-from-sites-console}
+### Löschen Sie Community-Sites aus der Sitekonsole {#delete-community-sites-from-sites-console}
 
-AEM 6.4 Communities stellt auf den bestehenden Community-Sites in der Community-Sites-Konsole das Symbol zum Löschen von Sites bereit. Dies ermöglicht das [Löschen der Site](create-site.md) und der zugehörigen Elemente in einem Klick.
+AEM 6.4 Communities stellt auf den bestehenden Community-Sites in der Community-Sites-Konsole das Symbol zum Löschen von Sites bereit. Dadurch wird das Löschen der Site[ und der zugehörigen Elemente in einem Klick aktiviert.](create-site.md)
 
 ![sitteactions](assets/siteactions.png)
 
-## Managing UGC and user profiles {#managing-ugc-and-user-profiles}
+## Verwalten von UGC- und Benutzereinstellungen {#managing-ugc-and-user-profiles}-Profilen
 
-AEM Communities hält den Schutz von Benutzerdaten im Mittelpunkt der Community-Erfahrung und stellt [APIs standardmäßig](user-ugc-management-service.md) und [Beispielservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)zur Verfügung. Diese APIs helfen bei der Massenverwaltung (Massenlöschung und Massenexport) benutzergenerierter Profil und beim Löschen von Benutzerinhalten und sind bei der Bearbeitung von EU-Anforderungen zur Einhaltung der PDF-Richtlinien von entscheidender Bedeutung.
+AEM Communities bewahrt den Schutz von Benutzerdaten im Zentrum der Community-Erfahrung auf und stellt [APIs standardmäßig bereit](user-ugc-management-service.md) und [Beispiel-Servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Diese APIs helfen bei der Massenverwaltung (Massenlöschung und Massenexport) benutzergenerierter Profil und beim Löschen von Benutzerinhalten und sind bei der Bearbeitung von EU-Anforderungen zur Einhaltung der PDF-Richtlinien von entscheidender Bedeutung.
 
-## Änderungen {#what-s-changed}
+## Was wird geändert {#what-s-changed}
 
-* Die Captcha-Verifizierung beim Erstellen einer neuen Community-Site ist in AEM 6.4 Communities nicht mehr standardmäßig verfügbar. Die Communities-Site kann jedoch angepasst werden, um die [Google-Komponente reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) für mehr Sicherheit einzuschließen.
+* Die Captcha-Verifizierung beim Erstellen einer neuen Community-Site ist in AEM 6.4 Communities nicht mehr standardmäßig verfügbar. Die Communities-Site kann jedoch angepasst werden, um [Google-Komponente reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) einzuschließen, um die Sicherheit zu verbessern.
 * Die Option zum Hochladen einer benutzerdefinierten CSS wurde aus dem Design der Community-Sites und -Gruppen entfernt.
 * In der Benutzeroberfläche &quot;Massenmoderation&quot;der Filterleiste wurden Symbole für &quot;Nur Inhalt&quot;und &quot;Suche&quot;hinzugefügt.
 * Der Filter &quot;Inhaltspfad&quot;wurde in der Benutzeroberfläche &quot;Filterleiste in Massenmoderation&quot;hinzugefügt.
-* Der Wechsel zum Massenmodus und der Ausstiegsstapelmodus wurden aus der Benutzeroberfläche für die Massenmoderation entfernt. Um in den Mehrfachauswahlmodus zu wechseln, klicken Sie auf das Symbol Auswählen ( ![Auswahl](assets/selecticon.png)) in einem Beitrag, das angezeigt wird, wenn Sie den Mauszeiger über diesen Beitrag bewegen (Desktop) oder indem Sie mit dem Finger auf den Beitrag drücken (Mobil).
+* Der Wechsel zum Massenmodus und der Ausstiegsstapelmodus wurden aus der Benutzeroberfläche für die Massenmoderation entfernt. Um in den Mehrfachauswahlmodus zu wechseln, klicken Sie auf das Symbol Auswählen ( ![Auswahl](assets/selecticon.png)) in einem Beitrag, das angezeigt wird, wenn Sie mit der Maus (Desktop) darauf zeigen oder einen Finger auf dem Beitrag drücken und gedrückt halten (Mobil).
