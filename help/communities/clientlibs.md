@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Clientlibs für Communities-Komponenten {#clientlibs-for-communities-components}
+# clipplibs für Communities-Komponenten {#clientlibs-for-communities-components}
 
 ## Einführung {#introduction}
 
@@ -26,23 +26,23 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie clientseitige Biblio
 
 Grundlegende Informationen finden Sie unter:
 
-* [Verwenden clientseitiger Bibliotheken](../../help/sites-developing/clientlibs.md) , die Nutzungsdetails und Debugging-Tools bereitstellen
-* [Clientlibs für SCF](client-customize.md#clientlibs) , die beim Anpassen von SCF-Komponenten nützliche Informationen bereitstellen
+* [Verwenden clientseitiger ](../../help/sites-developing/clientlibs.md) Bibliotheken, die Nutzungsdetails sowie Debuggingwerkzeuge bereitstellen
+* [clipplibs für ](client-customize.md#clientlibs) SCF, das nützliche Informationen zum Anpassen von SCF-Komponenten bereitstellt
 * [Blog: AEM Client-Bibliotheken, erklärt durch Beispiel](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
-## Warum Clientlibs erforderlich sind {#why-clientlibs-are-required}
+## Warum clientlibs erforderlich ist {#why-clientlibs-are-required}
 
 Clientlibs sind für das ordnungsgemäße Funktionieren (JavaScript) und die Formatierung (CSS) einer Komponente erforderlich.
 
-Wenn für eine Funktion eine [Community-Funktion](functions.md) vorhanden ist, werden alle notwendigen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden sein. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche clientlibs hinzugefügt werden.
+Wenn für eine Funktion eine [Community-Funktion](functions.md) vorhanden ist, werden alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden sein. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche clientlibs hinzugefügt werden.
 
-Wenn die erforderlichen clientlibs fehlen, kann das [Hinzufügen einer Communities-Komponente zu einer Seite](author-communities.md) zu Javascript-Fehlern und unerwartetem Erscheinungsbild führen.
+Wenn die erforderlichen clientlibs fehlen, kann das Hinzufügen einer Communities-Komponente zu einer Seite[ zu JavaScript-Fehlern und zu einem unerwarteten Erscheinungsbild führen.](author-communities.md)
 
-### Beispiel: Platzierte Reviews ohne Clientlibs {#example-placed-reviews-without-clientlibs}
+### Beispiel: Platzierte Reviews ohne clientlibs {#example-placed-reviews-without-clientlibs}
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-### Beispiel: Platzierte Reviews mit Clientlibs {#example-placed-reviews-with-clientlibs}
+### Beispiel: Platzierte Reviews mit clientlibs {#example-placed-reviews-with-clientlibs}
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -50,39 +50,39 @@ Wenn die erforderlichen clientlibs fehlen, kann das [Hinzufügen einer Communiti
 
 Die wesentlichen Funktionsinformationen für Entwickler identifizieren die erforderlichen clientlibs.
 
-Darüber hinaus bietet das Durchsuchen des [Community-Komponentenhandbuchs](components-guide.md) in einer AEM-Instanz Zugriff auf eine Auflistung der für eine Komponente erforderlichen clientlib-Kategorien.
+Darüber hinaus können Sie von einer AEM Instanz aus im [Community-Komponentenleitfaden](components-guide.md) auf eine Auflistung der für eine Komponente erforderlichen clientlib-Kategorien zugreifen.
 
-Die erforderlichen clientlibs sind beispielsweise ganz oben auf der Seite [Reviews aufgeführt](http://localhost:4502/content/community-components/en/reviews.html) .
+Beispiel: Am oberen Rand der Seite [Reviews](http://localhost:4502/content/community-components/en/reviews.html) sind die erforderlichen clientlibs aufgelistet
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
-## Erforderliche Clientlibs hinzufügen {#adding-required-clientlibs}
+## Erforderliche Clientlibs {#adding-required-clientlibs} hinzufügen
 
 Wenn Sie einer Seite eine Communities-Komponente hinzufügen möchten, müssen Sie die erforderlichen clientlibs für die Komponente hinzufügen, falls diese noch nicht vorhanden ist.
 
-Verwenden Sie [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene clientlibslist für eine Community-Site-Seite zu ändern.
+Verwenden Sie [CRXDE|Lite](#using-crxde-lite), um eine vorhandene clientlibslist für eine Community-Site-Seite zu ändern.
 
-So fügen Sie mithilfe der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)eine clientlib für eine Community-Site hinzu:
+So fügen Sie mithilfe von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) eine clientlib für eine Community-Site hinzu:
 
-* Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
-* Suchen Sie die `clientlibslist` Node der Seite, auf der Sie die Komponente hinzufügen möchten
+* Gehen Sie zu [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
+* Suchen Sie den Knoten `clientlibslist` für die Seite, auf der Sie die Komponente hinzufügen möchten
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Mit `clientlibslist` ausgewählter Node
+* Bei Auswahl des Knotens `clientlibslist`
 
-   * Suchen Sie die String[] -Eigenschaft `scg:requiredClientLibs`
-   * Wählen Sie `Value` die Option zum Zugriff auf das Dialogfeld &quot;String-Array&quot;
+   * Suchen Sie die Eigenschaft String[] `scg:requiredClientLibs`
+   * Wählen Sie die zugehörige `Value`, um auf das Dialogfeld &quot;String-Array&quot;zuzugreifen
 
       * Bei Bedarf scrollen
-      * Auswählen `+` , um eine neue Client-Bibliothek einzugeben
+      * Wählen Sie `+` aus, um eine neue Client-Bibliothek einzugeben.
 
          * Wiederholen, um weitere Client-Bibliotheken hinzuzufügen
       * Wählen Sie **[!UICONTROL OK]** aus
-   * Select **[!UICONTROL Save All]**
+   * Wählen Sie **[!UICONTROL Alle speichern]**
 
 
 
@@ -90,7 +90,7 @@ So fügen Sie mithilfe der [CRXDE Lite](../../help/sites-developing/developing-w
 >
 >Wenn die Site keine Community-Site ist, muss die Existenz oder der Speicherort der Client-Bibliotheken, die für die Site verwendet werden, ermittelt werden.
 
-In dem Beispiel [Erste Schritte mit AEM Communities](getting-started.md) , in dem `site-name` Interaktion *stattfindet*, wird die clientliblist wie folgt angezeigt, wenn die Komponente Reviews hinzugefügt wird:
+Mithilfe des Beispiels [Erste Schritte mit AEM Communities](getting-started.md), bei dem `site-name` *engagement* lautet, wird die clientliblist wie folgt angezeigt, wenn die Komponente &quot;reviews&quot;hinzugefügt wird:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
