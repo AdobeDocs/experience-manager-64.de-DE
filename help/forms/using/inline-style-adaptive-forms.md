@@ -24,8 +24,8 @@ Sie können die Darstellung und das Design eines adaptiven Formulars definieren,
 
 Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. To change the mode to styling mode, in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Select a component in the page, and tap the edit button ![edit-button](assets/edit-button.png). In der Randleiste geöffnete Stileigenschaften.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. Um den Modus in den Stilmodus zu ändern, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png). In der Randleiste geöffnete Stileigenschaften.
 
    Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
 
@@ -43,7 +43,7 @@ Hinzufügen von Inline-Stilen zu einer Komponente:
    * Erweitert (hier können Sie benutzerdefinierte CSS für die Komponente verwenden)
 
 1. Ebenso können Sie Designs für andere Teile einer Komponente wie Widgets, Beschriftung und Hilfe anwenden.
-1. Tap **Done** to confirm the changes or **Cancel** to discard the changes.
+1. Tippen Sie auf **Fertig**, um die Änderungen zu bestätigen, oder auf **Abbrechen**, um die Änderungen zu verwerfen.
 
 ## Beispiel: Inline-Stile für eine Feldkomponente {#example-inline-styles-for-a-field-component}
 
@@ -96,7 +96,8 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
  </tbody> 
 </table>
 
-![Textfeldstil nach Anwendung](assets/applied-style.png)des Inline-Stils **Abbildung:** *Komponente &quot;Textfeld&quot;nach dem Anwenden der Inline-Stileigenschaften*
+![Textfeldstil nach ](assets/applied-style.png)
+**Anwendung des Inline-StilsAbbildung:** *Textfeldkomponente nach dem Anwenden der Inline-Stileigenschaften*
 
 Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereiche, Sendeschaltflächen und Optionsschaltflächen auswählen und formatieren.
 
