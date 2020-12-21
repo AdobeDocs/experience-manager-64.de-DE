@@ -21,7 +21,7 @@ ht-degree: 55%
 
 Eine Einführung in die verschiedenen Elemente der Benutzeroberfläche, mit denen Sie interaktive Kommunikation erstellen können
 
-The user interface for authoring [Interactive Communication](/help/forms/using/interactive-communications-overview.md) is intuitive and provides the following for authoring print and web channel of the Interactive Communication:
+Die Benutzeroberfläche für das Authoring [Interaktive Kommunikation](/help/forms/using/interactive-communications-overview.md) ist intuitiv intuitiv und bietet Folgendes zum Authoring von Druck- und Web-Kanal der Interaktiven Kommunikation:
 
 * WYSIWYG Drag-and-Drop-Dokumenteditor
 * Integriertes Repository für Assets - Die auf den Server hochgeladenen und erstellten Assets sind im Asset-Browser der Authoring-Oberfläche für interaktive Kommunikation verfügbar
@@ -36,7 +36,7 @@ Wenn Sie eine [neue interaktive Kommunikation](/help/forms/using/create-interact
 
 ![Benutzeroberfläche der interaktiven Kommunikation](assets/form-editor.png)
 
-**A.** Seitenleiste **B.** Seitensymbolleiste **C.** Inhaltsbereich
+**A.** Seitenleiste  **B.** Seitensymbolleiste  **C.** Inhaltsbereich
 
 ## Randleiste {#sidebar}
 
@@ -44,7 +44,7 @@ Wenn Sie eine [neue interaktive Kommunikation](/help/forms/using/create-interact
 
 [Zum Vergrößern hier klicken](assets/sidebar-comps-1.png)
 
-**A.** Kanal Browser **B.** Inhaltsbrowser **C.** Eigenschaftenbrowser **D.** Asset Browser **E.** Komponenten-Browser **F.** Datenquellen-Browser - Datenmodell **G.** Data Sources-Browser - Übergeordnet Content
+**A.** Kanal-Browser  **B.** Inhaltsbrowser  **C.** Eigenschaftenbrowser  **D.** Asset-Browser  **E.** Komponentenbrowser  ****   **** F.Datenquellen-Browser - DatenmodellG.APIData Sources-Browser - Übergeordnet Content
 
 Die Seitenleiste beinhaltet Folgendes:
 
@@ -60,7 +60,7 @@ Die Seitenleiste beinhaltet Folgendes:
 
    Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokument-Containers an:
 
-   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > **Dokument-Container** und dann auf ![cmppr](assets/cmppr.png).
+   Wählen Sie eine Komponente aus, tippen Sie dann auf ![field-level](assets/field-level.png) > **Dokument Container** und dann auf ![cmppr](assets/cmppr.png).
 
 * **Assets-Browser**
 
@@ -72,13 +72,13 @@ Die Seitenleiste beinhaltet Folgendes:
 
 | **Komponente** | **Druckkanal** | **Webkanal** | **Funktion** |
 |---|---|---|---|
-| Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
-| Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf Formulardatenmodellen oder ohne Formulardatenmodell basieren. |
-| Bild | ✓ | ✓ | Ermöglicht es Ihnen, ein Bild einzufügen. |
-| Fenster | - | ✓ | Die Bereichskomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bereichskomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. mehrere Einträge zum Ausfüllen von Bildungsnachweisen. Es empfiehlt sich außerdem, ein Bedienfeld für jede Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
-| Tabelle | &amp;ast; | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
-| Zielbereich | &amp;ast;&amp;ast; | ✓ | Fügt einen Zielbereich in einen Webkanal ein, um die webkanalspezifischen Komponenten zu organisieren. |
-| Text | - | ✓ | Fügt dem Webkanal einer interaktiven Kommunikation Text hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
+| Diagramm | ✓ | they | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
+| Dokumentfragment | they | they | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf Formulardatenmodellen oder ohne Formulardatenmodell basieren. |
+| Bild | they | they | Ermöglicht es Ihnen, ein Bild einzufügen. |
+| Fenster | - | they | Die Bereichskomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bereichskomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. mehrere Einträge zum Ausfüllen von Bildungsnachweisen. Es empfiehlt sich außerdem, ein Bedienfeld für jede Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
+| Tabelle | &amp;ast; | they | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
+| Zielbereich | &amp;ast;&amp;ast; | they | Fügt einen Zielbereich in einen Webkanal ein, um die webkanalspezifischen Komponenten zu organisieren. |
+| Text | - | they | Fügt dem Webkanal einer interaktiven Kommunikation Text hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
 
 &amp;ast; Verwenden Sie Layout-Fragmente im Kanal &quot;Drucken&quot;, um Tabellen hinzuzufügen.
 
@@ -92,12 +92,12 @@ Die Seitenleiste beinhaltet Folgendes:
 
 Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten sind:
 
-* Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. To configure the properties of a component, tap the component and tap ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
-* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. When you tap ![cmppr](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig. Der Elementname muss mit einem Buchstaben beginnen.
+* Jede Komponente verfügt über zugehörige Eigenschaften, die ihre Darstellung und Funktion steuern. Um die Eigenschaften einer Komponente zu konfigurieren, tippen Sie auf die Komponente und dann auf ![cmppr](assets/cmppr.png), um die Komponenteneigenschaften im Eigenschaftenbrowser zu öffnen.
+* Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie auf ![cmppr](assets/cmppr.png) tippen, können Sie den Namen der Komponente ändern, indem Sie den Feldwert &quot;Elementname&quot;im Eigenschaftenbrowser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig. Der Elementname muss mit einem Buchstaben beginnen.
 * Sie können die Eigenschaft &quot;Titel&quot;einer interaktiven Kommunikationskomponente inline im Editor ändern, ohne den Eigenschaftenbrowser zu öffnen, solange der Titel in der interaktiven Kommunikation sichtbar ist. Gehen Sie dazu wie folgt vor:
 
    1. Wählen Sie auf eine Komponente, in der die Eigenschaft Title vorhanden ist und deren Eigenschaft Titel ausblenden deaktiviert ist, aus, indem Sie darauf tippen.
-   1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) , um den Titel bearbeitbar zu machen.
+   1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png), um den Titel bearbeitbar zu machen.
    1. Ändern Sie den Titel und tippen Sie auf die Return-Taste oder tippen Sie auf eine beliebige Stelle außerhalb der Komponente, um die Änderungen zu speichern. Tippen Sie auf die Esc-Taste, um die Änderungen zu verwerfen.
 
 ## Komponenten-Symbolleiste {#component-toolbar}
@@ -108,23 +108,23 @@ Wenn Sie eine Komponente auswählen, sehen Sie eine Symbolleiste, die folgende F
 
 A.**Konfigurieren**: Wenn Sie auf **Konfigurieren** tippen, werden in der Seitenleiste Komponenteneingenschaften sichtbar.
 
-B. **Edit Rules**: When you tap Edit Rules, Rule Editor appears in which you can edit and create rules for the selected component. Im Regeleditor können Sie auch andere Formularobjekte (Komponenten) auswählen und Regeln für diese Formularobjekte bearbeiten/erstellen.
+B. **Regeln bearbeiten**: Wenn Sie auf Regeln bearbeiten tippen, wird der Regeleditor angezeigt, in dem Sie die Regeln für die ausgewählte Komponente bearbeiten und erstellen können. Im Regeleditor können Sie auch andere Formularobjekte (Komponenten) auswählen und Regeln für diese Formularobjekte bearbeiten/erstellen.
 
 C. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen im Formular einzufügen.
 
-D. **Cut**: You can use the cut option to move a component from one place to another in the Interactive Communication.
+D. **Ausschneiden**: Mit der Option &quot;Ausschneiden&quot;können Sie eine Komponente in der interaktiven Kommunikation von einem Ort zum anderen verschieben.
 
-E. **Delete**: Lets you delete the component from the Interactive Communication.
+E. **Löschen**: Hiermit können Sie die Komponente aus der interaktiven Kommunikation löschen.
 
-F. **Insert Component**: Lets you insert a component above the selected component.
+F. **Komponente einfügen**: Ermöglicht das Einfügen einer Komponente über der ausgewählten Komponente.
 
-G. **Paste**: Lets you paste the component you cut or copied using the options described above.
+G. **Einfügen**: Ermöglicht das Einfügen der Komponente, die Sie mithilfe der oben beschriebenen Optionen ausgeschnitten oder kopiert haben.
 
 H. **Gruppieren**: Mit dieser Funktion können Sie mehrere Komponenten auswählen, um sie zusammen auszuschneiden, zu kopieren oder einzufügen.
 
 I. **Übergeordnet**: Hier können Sie das übergeordnete Element einer Komponente auswählen.
 
-J. **More**: Provides more options to work with the selected component.
+J. **Mehr**: Bietet weitere Optionen zum Arbeiten mit der ausgewählten Komponente.
 
 * SOM-Ausdruck anzeigen (nur für Bereiche)
 * Gruppenobjekte im Bereich (nur für Bereiche)
@@ -138,9 +138,9 @@ J. **More**: Provides more options to work with the selected component.
 
 Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommunikation Vorschau und ihre Eigenschaften ändern können. Sie können die interaktive Kommunikation beim Erstellen einer Vorschau erstellen und entsprechende Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
 
-* Toggle Side Panel ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
-* Page information ![pageinformationad](assets/pageinformationad.png): Lets you view page properties.
-* Emulator ![ruler](assets/ruler.png): Lets you emulate the look of your Interactive Communication for different display sizes such as tablets and phones.
+* Seitliches Bedienfeld ![umschaltbares Bedienfeld](assets/toggle-side-panel.png) ein/aus: Hiermit können Sie die Seitenleiste ein- oder ausblenden.
+* Seiteninformationen ![pageinformationad](assets/pageinformationad.png): Ermöglicht die Ansicht von Seiteneigenschaften.
+* Emulator ![Lineal](assets/ruler.png): Hiermit können Sie das Aussehen Ihrer interaktiven Kommunikation für verschiedene Displaygrößen wie Tablets und Smartphones emulieren.
 * Bearbeiten: Hiermit können Sie andere Modi auswählen, wie etwa: Bearbeiten, Stil, Entwickler und Design.
 
    * Bearbeiten: Ermöglicht die Bearbeitung der Eigenschaften der interaktiven Kommunikation und ihrer Komponenten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.
