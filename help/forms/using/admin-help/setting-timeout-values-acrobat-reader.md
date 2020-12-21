@@ -34,4 +34,4 @@ Dieser Wert kann in Administration Console festgelegt werden. Wählen Sie „Ein
 
 Speichern Sie die Datei „config.xml“ und importieren Sie sie wieder zurück in Administration Console.
 
-**Zeitlimit für Anwendungsserver-Sitzung:** Dieser Wert kann auf dem Anwendungsserver festgelegt werden. Weitere Informationen finden Sie in der Dokumentation des entsprechenden Anwendungsservers.
+**Sitzungszeitlimit des Anwendungsservers:** Dieser Wert kann auf dem Anwendungsserver festgelegt werden. Weitere Informationen finden Sie in der Dokumentation des entsprechenden Anwendungsservers.
