@@ -50,8 +50,8 @@ Bei der Vorschau eines Briefs wird, selbst wenn ein zuvor unveröffentlichtes Te
 Setzen Sie den Brief-Cache für die Veröffentlichungs-Instanz zurück, indem Sie folgende Schritten durchführen. Versuchen Sie dann erneut den Brief anzuzeigen:
 
 1. Gehen Sie zu **`https://[server]:[port]/[contextPath]/system/console/configMgr`** und melden Sie sich als Administrator an.
-1. Select **Correspondence Management Configurations**.
+1. Wählen Sie **Correspondence Management-Konfigurationen**.
 1. Deaktivieren Sie in **Correspondence Management-Konfigurationen** die Option **Briefcache aktivieren** und klicken Sie auf **Speichern.**
-1. Enable **Enable Letter Cache** and then click **Save**.
+1. Aktivieren Sie **Brief-Cache aktivieren** und klicken Sie dann auf **Speichern**.
 1. Versuchen sie noch einmal, den Brief anzuzeigen.
 
