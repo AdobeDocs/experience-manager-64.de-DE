@@ -19,7 +19,7 @@ ht-degree: 89%
 
 # Verwalten von Formularmetadaten {#manage-form-metadata}
 
-## Übersicht  {#overview-nbsp}
+## Überblick  {#overview-nbsp}
 
 Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 
@@ -150,7 +150,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
   </tr> 
   <tr> 
    <td>Verweise</td> 
-   <td><p>Adaptives Formular</p> <p>Formularvorlage</p> <p>Resource</p> </td> 
+   <td><p>Adaptives Formular</p> <p>Formularvorlage</p> <p>Ressource</p> </td> 
    <td><p>Liste der Assets (andere Formulare oder Ressourcen), mit denen dieses Formular verwandt ist. Diese Assets können zu den folgenden zwei Kategorien gehören:</p> 
     <ul> 
      <li>Refers (Verweist): Assets, auf die das aktuelle Formular verweist.</li> 
@@ -164,7 +164,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
     <ul> 
      <li>Formularvorlage: Eine Formularvorlage wird aus den im Repository vorhandenen ausgewählt. Dieser Wert kann aktualisiert werden.</li> 
      <li>XML-Schema: Eine XSD-Datei wird hochgeladen. Dieser Wert kann aktualisiert werden.</li> 
-     <li>Keine</li> 
+     <li>Kein</li> 
     </ul> 
     <div>
       Ein ausgewähltes Formularmodell kann aktualisiert, aber nicht entfernt werden. 
@@ -181,21 +181,21 @@ Assets weisen vorhandene Eigenschaftswerte auf, die im schreibgeschützten Modus
 
 1. Öffnen Sie die Eigenschaftsseite mit einer der folgenden Methoden:
 
-   1. Klicken Sie in den Schnellaktionen auf das Symbol Ansicht Properties ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) .
+   1. Klicken Sie in den Schnellaktionen auf das Symbol für die Ansicht Eigenschaften ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png).
 
       >[!NOTE]
       >
       >Schnellaktionen sind die Aktionselemente, die über eine Miniaturansicht angezeigt werden, wenn Sie den Mauszeiger über ein Element bewegen.
 
-   1. Select the form and click the View Properties ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) icon that appears in the toolbar.
-   1. Navigieren Sie zur Seite mit den Formulardetails, indem Sie auf die Formularminiaturansicht klicken, während Sie sich nicht im Auswahlmodus befinden. Now, click the ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) eye icon on the upper right, and then click Properties in the list beneath it.
+   1. Wählen Sie das Formular aus und klicken Sie auf das Symbol für die Ansicht Eigenschaften ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png), das in der Symbolleiste angezeigt wird.
+   1. Navigieren Sie zur Seite mit den Formulardetails, indem Sie auf die Formularminiaturansicht klicken, während Sie sich nicht im Auswahlmodus befinden. Klicken Sie nun oben rechts auf das Augensymbol ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) und klicken Sie dann in der darunter liegenden Liste auf Eigenschaften.
 
 1. Auf der daraufhin geöffneten Eigenschaftsseite wird ein Schema angezeigt, das nur die Metadateneigenschaften enthält, die einen Wert enthalten.
 
    Die Eigenschaftsseite enthält eine Symbolleiste mit zwei Aktionssymbolen:
 
-   * Bearbeiten: ![aem6forms_edit](assets/aem6forms_edit.png) Bearbeiten der Metadateneigenschaftswerte
-   * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+   * Bearbeiten: ![aem6forms_edit](assets/aem6forms_edit.png) Metadateneigenschaftswerte bearbeiten
+   * Ansicht: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigieren Sie zur Seite mit den Formulardetails, auf der das Formular im Vorschau-Modus geöffnet wird.
 
    Der Inhaltsbereich ist in zwei Abschnitte unterteilt:
 
@@ -211,7 +211,7 @@ Sie können den Wert von vorhandenen Metadateneigenschaften bearbeiten oder eine
 
 1. Befolgen Sie die im vorherigen Abschnitt angegebenen Schritte, um die Eigenschaftsseite zu öffnen, auf der vorhandene Metadaten das ausgewählten Formulars angezeigt werden können.
 
-1. From the toolbar, click the edit icon ![aem6forms_edit](assets/aem6forms_edit.png) to change the mode of the page from read-only to read/write.
+1. Klicken Sie in der Symbolleiste auf das Bearbeitungssymbol ![aem6forms_edit](assets/aem6forms_edit.png), um den Modus der Seite von schreibgeschützt zu lesen/schreiben zu ändern.
 
 1. Die daraufhin geöffnete Eigenschaftsseite enthält ein Schema, das aus einer Mischung aus bearbeitbaren Eingabefelder und statischem Text enthält.
 
@@ -221,12 +221,12 @@ Sie können den Wert von vorhandenen Metadateneigenschaften bearbeiten oder eine
 
    Diese Seite enthält eine Symbolleiste mit zwei Aktionssymbolen, die sich von denen im Ansichtsmodus unterscheiden:
 
-   * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
-   * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
+   * Abbrechen: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Änderungen an den Metadateneigenschaftswerten bis jetzt abbrechen
+   * Fertig: ![aem6forms_check](assets/aem6forms_check.png) Speichern Sie alle bisher an den Metadateneigenschaftswerten vorgenommenen Änderungen
 
    Bei beiden Aktionen wird der Benutzer zurück zum schreibgeschützten Modus der Eigenschaftsseite mit den aktualisierten Werten geleitet.
 
-### Aktualisieren der Formularminiaturansicht  {#update-the-form-thumbnail-nbsp}
+### Aktualisieren der Formularminiaturansicht   {#update-the-form-thumbnail-nbsp}
 
 Im linken Bereich der Eigenschaftsseite wird die Miniaturansicht des Formulars angezeigt. Standardmäßig wird die angezeigte Miniaturansicht zum Zeitpunkt der Formularerstellung (adaptives Formular) oder des Formular-Uploads generiert.
 
@@ -247,11 +247,11 @@ Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit dene
 
 Zusätzlich zu den standardmäßig bereitgestellten Metadaten unterstützt AEM Forms auch neue benutzerdefinierte Metadaten.
 
-A tool (Metadata Schema Editor) is provided to define the schema for the metadata layout; that is, the layout of what appears in the **[!UICONTROL Properties]** page of a form. Mit dem Metadatenschema-Editor können Sie ein benutzerdefiniertes Schema für Ihre Assets hinzufügen oder ändern.
+Es wird ein Tool (Metadaten-Schema-Editor) bereitgestellt, mit dem das Schema für das Metadatenlayout definiert wird. d. h. das Layout dessen, was auf der Seite **[!UICONTROL Eigenschaften]** eines Formulars angezeigt wird. Mit dem Metadatenschema-Editor können Sie ein benutzerdefiniertes Schema für Ihre Assets hinzufügen oder ändern.
 
 AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diesem Werkzeug dar. Auf diese Weise können Sie auf diese Schemata zugreifen und die Funktion des Metadatenschema-Editors verwenden, um benutzerdefinierte Eigenschaften hinzuzufügen.
 
-### Navigieren im Metadatenschema-Editor  {#navigate-the-metadata-schema-editor-nbsp}
+### Navigieren im Metadatenschema-Editor   {#navigate-the-metadata-schema-editor-nbsp}
 
 1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemata]**.
 
@@ -265,7 +265,7 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 
 1. Wenn Sie auf einen Asset-Typ klicken, wird eine Liste mit der Option `extendedmetadata` geöffnet. Bearbeiten Sie dieses Schema.
 
-1. Select the checkbox beside `extendedmetadata` and then click the edit ![aem6forms_edit](assets/aem6forms_edit.png) icon that appears in the toolbar.
+1. Aktivieren Sie das Kontrollkästchen neben `extendedmetadata` und klicken Sie dann auf das Symbol ![aem6forms_edit](assets/aem6forms_edit.png), das in der Symbolleiste angezeigt wird.
 
 1. AEM Forms öffnet den Metadatenschema-Editor/Formularersteller des ausgewählten Asset-Typs (in diesem Fall „adaptives Formular“).
 
@@ -306,7 +306,7 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 
    1. Geben Sie je nach Bedarf weitere Einstellungen an. Beispiel: Wählen Sie die Option „Erforderlich“, um das Feld zu einem Pflichtfeld zu machen.
 
-   1. To delete a field you added, select the field and then click the delete ![delete-1](assets/delete-1.png) icon.
+   1. Um ein hinzugefügtes Feld zu löschen, wählen Sie das Feld aus und klicken Sie dann auf das Symbol ![delete-1](assets/delete-1.png).
 
 1. Bei Bedarf können Sie die Schritte 1-3, wiederholen um eine weitere Eigenschaft hinzuzufügen.
 1. Klicken Sie auf **Fertig**, nachdem Sie alle Änderungen vorgenommen haben.
