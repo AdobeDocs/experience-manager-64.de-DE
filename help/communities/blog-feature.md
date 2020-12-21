@@ -44,7 +44,7 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 >[!NOTE]
 >
->Die Komponenten `Journal`und `Journal Sidebar` sind mit `Blog` und `Blog Sidebar`.
+>Die Komponenten `Journal`und `Journal Sidebar` haben die Titel `Blog` und `Blog Sidebar`.
 >
 >Die Blogfunktion in AEM 6.0 und älteren Versionen wurde eingestellt. Sie beruhte auf einer Vorlage und beschränkte das Verfassen von Inhalten ausschließlich auf die Autorenumgebung.
 
@@ -57,43 +57,50 @@ Wenn Sie im Autorenmodus einen Blog zu einer Seite hinzufügen möchten, suchen 
 
 Ziehen Sie sie auf eine Seite, auf der der Blog erscheinen soll.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog`component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](blog-developer-basics.md#essentials-for-client-side) einbezogen werden, wird die `Blog`Komponente wie folgt angezeigt:
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-Und wie das `Blog Sidebar` aussehen wird:
+Und wie das `Blog Sidebar` angezeigt wird:
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Konfigurieren eines Blogs {#configuring-blog}
 
-Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Blog` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![Symboleinstellungen](assets/chlimage_1-149.png) für ![Blog konfigurieren](assets/Blog-configure.png)
+![configure ](assets/chlimage_1-149.png) ![iconBlog-Einstellungen](assets/Blog-configure.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
 Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden Eigenschaften des Blogs an:
 
-* **[!UICONTROL &quot;Miniaturansicht]** zulassen&quot;Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
+* **[!UICONTROL Attachment-]**
+Miniaturansicht zulassen Wenn diese aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
 
-* **[!UICONTROL Maximale Größe]** der Miniaturansicht der Anlage (in Pixel). Der Standardwert ist 800 x 800.
+* **[!UICONTROL Max.]**
+Größe der Miniaturansicht der Anlage (in Pixel). Der Standardwert ist 800 x 800.
 
-* **[!UICONTROL Min. Bildgröße für Miniaturansichten]**. Mindestgröße (in Byte) des Bildes für die Erstellung von Miniaturbildern für Inline-Bilder. Der Standardwert ist 100000 Byte (100 KB).
+* **[!UICONTROL Min. Bildgröße für]**
+MiniaturansichtenMindestgröße (in Byte) des Bilds zum Generieren von Miniaturansichten für Inline-Bilder. Der Standardwert ist 100000 Byte (100 KB).
 
-* **[!UICONTROL Maximale Größe]** der Miniaturansicht des Inline-Bildes (in Pixel). Der Standardwert ist 800 x 800.
+* **[!UICONTROL Max.]**
+Größe der MiniaturansichtMaximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
 
-* **[!UICONTROL Privilegierte Mitglieder]** zulassen Wenn diese Option aktiviert ist, dürfen nur Privilegierte Mitglieder Inhalte erstellen.
+* **[!UICONTROL Privilegierte]**
+Mitglieder zulassen Wenn diese Option aktiviert ist, dürfen nur Privilegierte Mitglieder Inhalte erstellen.
 
-* **[!UICONTROL Zulässige privilegierte Mitglieder]** Hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
+* **[!UICONTROL Zulässige privilegierte]**
+MitgliederFügen Sie die privilegierten Mitglieder hinzu, die Inhalte erstellen dürfen.
 
-* **[!UICONTROL Blockieren benutzergenerierter Inhalte im Bearbeitungsmodus]**&quot;Autor&quot;Blockieren Sie,wenn diese Option aktiviert ist, beim Bearbeiten im Autorenmodus den vom Benutzer erstellten Inhalt.
+* **[!UICONTROL Blockieren benutzergenerierter Inhalte im]**
+Bearbeitungsmodus des Autors Wenn diese Option aktiviert ist, wird der vom Benutzer erstellte Inhalt beim Bearbeiten im Autorenmodus blockiert.
 
 * **[!UICONTROL Journaltitel]** Der Blogname, der auf der Seite angezeigt werden soll.
    >Hinweis:
-   >Mit dem Protokoll-Titel wird automatisch eine URL für den Blog erstellt. Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen zur Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
+   >Mit dem Protokoll-Titel wird automatisch eine URL für den Blog erstellt. Maximal 50 Zeichen (zusätzlich 5 Zeichen für die Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
 
 * **[!UICONTROL Journalbeschreibung]** Die Beschreibung des Blogs.
 
@@ -115,7 +122,7 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Tagging zulassen]**
 
-   If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, ihrem Beitrag Tagbeschriftungen hinzuzufügen (siehe **[!UICONTROL Feld]** Registerkarte). Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
 
@@ -123,11 +130,11 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Max. Dateigröße]**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Maximale Dateigröße für Bildanhang]**
 
@@ -143,11 +150,11 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Folgende zulassen]**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge benachrichtigt werden können. [](notifications.md) Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL E-Mail-Abonnements zulassen]**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern per E-Mail ([Abonnement](subscriptions.md)) eine Benachrichtigung über neue Beiträge erlauben. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und [E-Mail-Konfiguration](email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
@@ -155,13 +162,13 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Abzeichen anzeigen]**
 
-   Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Abzeichen](implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+   Wenn aktiviert, zeigen Sie verdiente und zugewiesene [Abzeichen](implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Feature-Inhalt zulassen]**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
 Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** die Moderationseinstellungen an:
 
@@ -199,7 +206,7 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** können Sie angeben, welche Tags
 
 * **[!UICONTROL Zulässige Namespaces]**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **[!UICONTROL Empfehlungsgrenze]**
 
@@ -207,7 +214,7 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** können Sie angeben, welche Tags
 
 ### Konfigurieren einer Blog-Seitenleiste {#configuring-blog-sidebar}
 
-When you double-click the `Blog Sidebar` component, an edit dialog opens up.
+Wenn Sie mit der Dublette auf die Komponente `Blog Sidebar` klicken, wird ein Dialogfeld zum Bearbeiten geöffnet.
 
 Auf der Registerkarte **[!UICONTROL Journal-Sidebar-Einstellungen]** können Sie das Datumsformat für Archive festlegen und angeben, welche Eintragstypen in der Seitenleiste aufgeführt werden sollen:
 
@@ -235,7 +242,7 @@ Auf der Registerkarte **[!UICONTROL Journal-Sidebar-Einstellungen]** können Sie
 
 * **[!UICONTROL Journal-Komponentenpfad]**
 
-   *(Optional)* Der Speicherort der Blog-Ressource, aus der Blog-Artikel aufgelistet werden sollen. Wenn Sie das Feld leer lassen, verwenden Sie die Komponente von resourceType `social/journal/components/hbs/journal` , die auf derselben Seite angezeigt wird.
+   *(Optional)* Der Speicherort der Blog-Ressource, aus der Blog-Artikel aufgelistet werden sollen. Wenn das Feld leer gelassen wird, wird die Komponente von resourceType `social/journal/components/hbs/journal` verwendet, die auf derselben Seite angezeigt wird.
 
    * Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -253,7 +260,7 @@ Wurde ein Blogartikel ausgewählt, werden der Artikel sowie zugehörige Kommenta
 
 Die Verfügbarkeit weiterer Optionen hängt davon ab, ob der Site-Besucher Moderator, Administrator, Community-Mitglied, privilegiertes Mitglied oder anonymer Besucher ist.
 
-### Arbeiten mit Artikeln {#working-with-articles}
+### Arbeiten mit Artikeln  {#working-with-articles}
 
 Wenn Sie einen neuen Blogartikel erstellen, können Sie aus folgenden Optionen wählen:
 
@@ -263,7 +270,7 @@ Wenn Sie einen neuen Blogartikel erstellen, können Sie aus folgenden Optionen w
 
 Die Blogartikel erscheinen auf der entsprechenden Registerkarte („Veröffentlicht“, „Entwürfe“ oder „Geplant“) und können von Mitgliedern bei der Veröffentlichung bearbeitet werden.
 
-#### Moderatoren und Administratoren {#moderators-and-administrators}
+#### Moderatoren und Administratoren  {#moderators-and-administrators}
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](moderate-ugc.md) für alle Blogartikel und Komponenten des Blogs durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
 
@@ -271,7 +278,7 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 ### Mitglieder {#members}
 
-When the signed in user is a community member or [privileged member](users.md#privileged-members-group) (depending on configuration), they are able to select `New Article` to create and post a new blog article.
+Wenn der angemeldete Benutzer ein Community-Mitglied oder [ein privilegiertes Mitglied](users.md#privileged-members-group) ist (je nach Konfiguration), können sie `New Article` auswählen, um einen neuen Blog-Artikel zu erstellen und zu posten.
 
 Insbesondere können sie
 
