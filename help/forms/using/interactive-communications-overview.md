@@ -38,7 +38,7 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 
 ## Beispielanwendungsfall {#sample-use-case}
 
-The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication.
+Das [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough)-Beispielverwendungsfall zeigt die Möglichkeiten einer interaktiven Kommunikation.
 
 ## Erstellung einer interaktiven Kommunikation  {#interactive-communication-creation}
 
@@ -46,9 +46,9 @@ The [Welcome kit for a credit card customer](/help/forms/using/finance-reference
 
 ### Workflow {#workflow}
 
-To create an Interactive Communication, have the [building blocks](#buildingblocks) for Interactive Communication ready and then complete the following steps:
+Um eine interaktive Kommunikation zu erstellen, müssen Sie die [Bausteine](#buildingblocks) für die interaktive Kommunikation fertig stellen und die folgenden Schritte ausführen:
 
-1. Choose to [create an Interactive Communication](/help/forms/using/create-interactive-communication.md).
+1. Wählen Sie [Erstellen Sie eine interaktive Kommunikation](/help/forms/using/create-interactive-communication.md).
 
 1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Webkanal über den Druckkanal generieren.
 
@@ -56,7 +56,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten wie folgt:
 
    1. Bilder
-   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (einschließlich Layout-Fragmente)
+   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables)  (einschließlich Layout-Fragmente)
    1. [Diagramme](/help/forms/using/chart-component-interactive-communications.md)
    1. [Dokumentfragmente](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -71,7 +71,7 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 * [Dokumentfragmente](/help/forms/using/document-fragments.md)
 * Bilder
-* [Themen](/help/forms/using/themes.md) für den Web-Kanal
+* [](/help/forms/using/themes.md) Themen für den Web-Kanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
