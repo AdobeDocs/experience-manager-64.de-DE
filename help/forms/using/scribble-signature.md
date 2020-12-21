@@ -22,7 +22,7 @@ ht-degree: 89%
 
 HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine allgemeine Voraussetzung zur Unterstützung von Signaturen. Die Scribble-Signatur (Schreiben mit dem Eingabestift oder mit dem Finger) ist eine immer gängigere Form der Unterzeichnung von Formularen auf mobilen Geräten. HTML5 Forms und Designer bieten jetzt auf dem Formular ein Feld für die Scribble-Signatur. Wenn das Formular im Browser angezeigt wird, können Benutzer mit einem Eingabestifts, einer Maus oder mit einer Berührung in diesem Feld unterzeichnen.
 
-## Entwerfen eines Formulars mit einem Feld für Scribble-Signaturen {#how-to-design-a-form-using-scribble-signature-field}
+## Entwerfen eines Formulars mit einem Feld für Scribble-Signaturen  {#how-to-design-a-form-using-scribble-signature-field}
 
 1. Öffnen Sie ein Formular in Forms Designer.
 1. Ziehen das Scribble-Signatur-Feld auf die Seite.
@@ -42,9 +42,9 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine all
 
       >[!NOTE]
       >
-      >To open the XML Source tab, click **View** >  **XML Source**.
+      >Um die Registerkarte &quot;XML-Quelle&quot;zu öffnen, klicken Sie auf **Ansicht** > **XML-Quelle**.
 
-   1. Locate the `<ui>` tag in the `<field>` tag and modify the source code to look like the following:
+   1. Suchen Sie das `<ui>`-Tag im `<field>`-Tag und ändern Sie den Quellcode wie folgt:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -65,7 +65,7 @@ Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formu
 
 ![Geolocation](assets/geolocation.png)
 
-**A.** Pinsel **B.** Radiergummi **C.** Geolocation **D.** Geografische Informationen
+**A.** Brush  **B.** Radiergummi  **C.** Geolocation  **D.** Geolocation
 
 ### Geotagging {#geo-tagging}
 
@@ -81,11 +81,11 @@ Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern 
 * Wenn die Angabe geografischer Informationen obligatorisch ist, wird dem Benutzer ein kleinerer Bereich zum Zeichnen angezeigt. Der Geotagging-Text wird hinzugefügt, wenn der Benutzer auf dem anderen Bereich auf das Symbol **OK** klickt.
 * In anderen Fällen wird dem Benutzer der komplette Bereich angezeigt. Wenn der Benutzer sich dazu entscheidet, geografische Informationen hinzuzufügen, wird die Größe des Bereichs angepasst, um den Geotagging-Text einzufügen.
 
-### Löschen einer Signatur {#clearing-a-signature}
+### Löschen einer Signatur  {#clearing-a-signature}
 
-While using this feature, a user can click the **Eraser** icon to clear the field, and start over. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
+Bei Verwendung dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um das Feld zu löschen, und den Beginn darüber aufheben. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
 
-### Speichern einer Signatur {#saving-a-signature}
+### Speichern einer Signatur  {#saving-a-signature}
 
 Durch Klicken auf das Symbol **OK** wird die Unterschrift als ein Bild im Feld gespeichert. Das Bild und die Werte können zur weiteren Bearbeitung an den Server gesendet werden. Sobald der Benutzer auf **OK** geklickt hat, wird das Unterschriftsfeld gesperrt. Die Unterschrift kann nicht mehr mithilfe des Scribble-Widgets bearbeitet werden.
 
@@ -97,7 +97,7 @@ Durch Tippen oder Klicken auf das Unterschriftsfeld wird das Dialogfeld im schre
 
 Klicken Sie auf das Symbol **Pinsel**, um eine Liste der verfügbaren Stiftgrößen anzuzeigen. Klicken oder Tippen Sie auf eine Schriftgröße, die verwendet werden soll.
 
-### Löschen von Unterschriften aus dem Formular {#delete-signatures-from-the-form}
+### Löschen von Unterschriften aus dem Formular  {#delete-signatures-from-the-form}
 
 Löschen der Unterschriften aus dem Formular
 
