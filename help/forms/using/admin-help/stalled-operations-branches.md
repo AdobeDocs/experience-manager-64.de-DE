@@ -29,7 +29,7 @@ Wenn ein Prozess anhält, werden weitere Vorgänge erst wieder ausgeführt, wenn
 
 Für jedes angehaltene Element werden in der Liste die folgenden Informationen angezeigt:
 
-**Vorgangsname oder Zweigname:** Der Name des Vorgangs oder Zweigs.
+**Vorgangsname oder Zweigname:** Der Name des Vorgangs oder der Verzweigung.
 
 **Status:** Bei angehaltenen Elementen immer ANGEHALTEN.
 
@@ -56,17 +56,17 @@ Auf den Seiten „Angehaltene Vorgänge“ und „Angehaltene Zweige“ können 
 
 Wenn Sie einen Vorgang wiederholen, wird eine Anforderung zum erneuten Starten des Vorgangs an den Arbeitsablauf für Formulare gesendet. Wenn der Fehler, der das Anhalten des Prozesses verursacht hat, behoben und die Wiederholungsanforderung erfolgreich ausgeführt wurde, wird der Prozess von dem Punkt an erneut ausgeführt, an dem er angehalten hatte, und der Status ändert sich in WIRD AUSGEFÜHRT. Wenn der Vorgang nicht neu gestartet werden kann, bleibt er ANGEHALTEN und Sie müssen ihn möglicherweise beenden.
 
-### Einen angehaltenen Vorgang beenden {#terminate-a-stalled-operation}
+### Einen angehaltenen Vorgang beenden  {#terminate-a-stalled-operation}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Fehler - Angehaltene Vorgänge“.
 1. Wählen Sie auf der Seite „Angehaltene Vorgänge“ das Element aus, das beendet werden soll, und klicken Sie auf „Beenden“.
 
-### Einen angehaltenen Vorgang oder Zweig wiederholen {#retry-a-stalled-operation-or-branch}
+### Einen angehaltenen Vorgang oder Zweig wiederholen  {#retry-a-stalled-operation-or-branch}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ und dann auf „Fehler - Angehaltene Vorgänge“ oder „Fehler - Angehaltener Zweig“.
 1. Wählen Sie auf der Seite „Angehaltene Vorgänge“ oder „Angehaltene Zweige“ die Elemente aus, die wiederholt werden sollen, und klicken Sie auf „Erneut versuchen“.
 
-## Fehlerdetails zu angehaltenen Vorgängen oder Zweigen anzeigen {#viewing-error-details-about-stalled-operations-or-branches}
+## Fehlerdetails zu angehaltenen Vorgängen oder Zweigen anzeigen  {#viewing-error-details-about-stalled-operations-or-branches}
 
 Wenn Sie auf der Seite „Angehaltene Vorgänge“ oder „Angehaltene Zweige“ einen Fehler in der Liste angehaltener Elemente auswählen, wird die Seite „Fehlerdetails“ angezeigt, auf der Detailinformationen zu dem Fehler angezeigt werden, die Ihnen bei der Behebung des Problems helfen können.
 
@@ -74,7 +74,7 @@ Der Text der Fehlermeldung wird in dem Feld am unteren Rand der Seite angezeigt.
 
 Sie können auf der Seite „Fehlerdetails“ ebenfalls angehaltene Vorgänge beenden oder wiederholen und angehaltene Zweige wiederholen.
 
-## Bei nicht vorhandenem Eskalationsbenutzer wird der Prozess nicht angehalten {#process-does-not-stall-when-escalation-user-does-not-exist}
+## Bei nicht vorhandenem Eskalationsbenutzer wird der Prozess nicht angehalten  {#process-does-not-stall-when-escalation-user-does-not-exist}
 
 Fehler treten auf, wenn der Vorgang „Aufgabe zuweisen“ im AEM Forms-User-Dienst so konfiguriert ist, dass die Aufgabe nach einem bestimmten Zeitraum an einen anderen Benutzer eskaliert wird und der Eskalationsbenutzer gelöscht wird, nachdem der Vorgang „Aufgabe zuweisen“ ausgeführt wird, aber bevor die Eskalation eintritt.
 
