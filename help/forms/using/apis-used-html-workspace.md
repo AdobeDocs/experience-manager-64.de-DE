@@ -146,7 +146,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>consult</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>consult</td> 
+   <td>konsultieren</td> 
    <td>Bespricht eine Aufgabe mit einem anderen Benutzer.</td> 
   </tr>
   <tr>
@@ -224,7 +224,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>revokeQueueAccess</td> 
    <td>ProcessManagementQueueService</td> 
-   <td>revokeQueueAccess</td> 
+   <td>cancelQueueAccess</td> 
    <td>Entfernt einen Benutzer aus der Liste der Benutzer, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td> 
   </tr>
   <tr>
@@ -248,7 +248,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>saveOutOfOfficeSettingsJson</td> 
    <td>ProcessManagementOutOfOfficeService</td> 
-   <td>saveOutOfOfficeSettingsJson</td> 
+   <td>saveOutOfOfficeSettingsJSON</td> 
    <td>Speichert Abwesenheitseinstellungen eines Benutzers.</td> 
   </tr>
   <tr>
@@ -344,7 +344,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>rejectTaskOfDirectReport</td> 
    <td>ProcessManagementTeamTasksService</td> 
-   <td>rejectTaskOfDirectReport</td> 
+   <td>missTaskOfDirectReport</td> 
    <td>Gibt eine Aufgabe eines direkt unterstellten Mitarbeiters an den vorherigen Benutzer zurück.</td> 
   </tr>
   <tr>
