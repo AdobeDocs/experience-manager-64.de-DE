@@ -94,57 +94,57 @@ Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Out
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
-   * Create an `OutputClient` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Erstellen Sie ein `OutputClient`-Objekt, indem Sie den Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
    * Erstellen Sie ein `DocumentManagementServiceClientImpl`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
 1. Formulardaten mit dem Forms-Dienst abrufen
 
-   * Rufen Sie die `FormsServiceClient` Objektmethode `processFormSubmission` auf und übergeben Sie die folgenden Werte:
+   * Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`processFormSubmission`
 
-      * Das `com.adobe.idp.Document` Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Variable &quot; `CONTENT_TYPE` Umgebung&quot;angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
-      * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert.
+      * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
+      * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Variable `CONTENT_TYPE` &quot;Umgebung&quot;angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
+      * Ein Zeichenfolgenwert, der den Header-Wert `HTTP_USER_AGENT` angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
 
-      Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
-   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult` Objektmethode `getAction` aufrufen. Wenn diese Methode den Wert zurückgibt `0`, können die Daten verarbeitet werden.
-   * Rufen Sie Formulardaten ab, indem Sie ein `com.adobe.idp.Document` Objekt erstellen, indem Sie die `FormsResult` Objektmethode `getOutputContent` aufrufen. (Dieses Objekt enthält Formulardaten, die an den Output-Dienst gesendet werden können.)
-   * Erstellen Sie ein `java.io.InputStream` Objekt, indem Sie den `java.io.DataInputStream` Konstruktor aufrufen und das `com.adobe.idp.Document` Objekt übergeben.
-   * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory` Objekt, indem Sie die `org.w3c.dom.DocumentBuilderFactory` Methode des statischen `newInstance` Objekts aufrufen.
-   * Erstellen Sie ein `org.w3c.dom.DocumentBuilder` Objekt, indem Sie die `org.w3c.dom.DocumentBuilderFactory` Objektmethode `newDocumentBuilder` aufrufen.
-   * Create an `org.w3c.dom.Document` object by invoking the `org.w3c.dom.DocumentBuilder` object’s `parse` method and passing the `java.io.InputStream` object.
-   * Rufen Sie den Wert jeder Node im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document` Objekt und den Namen der Node, deren Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Node darstellt. Im Codebeispiel, das diesem Prozess folgt, wird diese benutzerdefinierte Methode aufgerufen `getNodeText`. Der Hauptteil dieser Methode wird angezeigt.
+   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult`-Methode des Objekts aufrufen. `getAction` Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
+   * Rufen Sie Formulardaten ab, indem Sie ein `com.adobe.idp.Document`-Objekt erstellen, indem Sie die `getOutputContent`-Methode des Objekts aufrufen. `FormsResult` (Dieses Objekt enthält Formulardaten, die an den Output-Dienst gesendet werden können.)
+   * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.DataInputStream`-Konstruktor aufrufen und das `com.adobe.idp.Document`-Objekt übergeben.
+   * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+   * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `org.w3c.dom.DocumentBuilderFactory`-Methode des Objekts `newDocumentBuilder` aufrufen.
+   * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `org.w3c.dom.DocumentBuilder`-Methode des Objekts `parse` aufrufen und das `java.io.InputStream`-Objekt übergeben.
+   * Rufen Sie den Wert jeder Node im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen der Node, deren Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Node darstellt. Im Codebeispiel, das diesem Prozess folgt, heißt diese benutzerdefinierte Methode `getNodeText`. Der Hauptteil dieser Methode wird angezeigt.
 
 
 1. Erstellen Sie ein nicht interaktives PDF-Dokument mit dem Output-Dienst.
 
-   Create a PDF document by invoking the `OutputClient` object’s `generatePDFOutput` method and passing the following values:
+   Erstellen Sie ein PDF-Dokument, indem Sie die `generatePDFOutput`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`OutputClient`
 
-   * Ein `TransformationFormat` Enumwert. Um ein PDF-Dokument zu erstellen, geben Sie `TransformationFormat.PDF`an.
+   * Ein `TransformationFormat`-Enum-Wert. Um ein PDF-Dokument zu erstellen, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt. Stellen Sie sicher, dass der Formularentwurf mit den vom Forms-Dienst abgerufenen Formulardaten kompatibel ist.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, an dem sich der Formularentwurf befindet.
-   * Ein `PDFOutputOptionsSpec` Objekt, das PDF-Laufzeitoptionen enthält.
-   * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document` Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen. Stellen Sie sicher, dass dieses Objekt von der `FormsResult` Objektmethode zurückgegeben `getOutputContent` wurde.
-   * The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
-   * Rufen Sie das nicht interaktive PDF-Dokument ab, indem Sie die `OutputResult` Objektmethode `getGeneratedDoc` aufrufen. Diese Methode gibt eine `com.adobe.idp.Document` Instanz zurück, die das nicht interaktive PDF-Dokument darstellt.
+   * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
+   * Ein `RenderOptionsSpec`-Objekt, das Rendering-Laufzeitoptionen enthält.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen. Stellen Sie sicher, dass dieses Objekt von der `FormsResult`-Methode des Objekts `getOutputContent` zurückgegeben wurde.
+   * Die `generatePDFOutput`-Methode gibt ein `OutputResult`-Objekt zurück, das die Ergebnisse des Vorgangs enthält.
+   * Rufen Sie das nicht interaktive PDF-Dokument ab, indem Sie die `getGeneratedDoc`-Methode des Objekts aufrufen. `OutputResult` Diese Methode gibt eine `com.adobe.idp.Document`-Instanz zurück, die das nicht interaktive PDF-Dokument darstellt.
 
 1. Speichern des PDF-Formulars in Content Services (nicht mehr unterstützt) mithilfe des Dokument Management-Dienstes
 
-   Hinzufügen Sie den Inhalt, indem Sie die `DocumentManagementServiceClientImpl` Methode des `storeContent` Objekts aufrufen und die folgenden Werte übergeben:
+   hinzufügen Sie den Inhalt, indem Sie die `storeContent`-Methode des `DocumentManagementServiceClientImpl`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein Zeichenfolgenwert, der den Store angibt, in dem der Inhalt hinzugefügt wird. The default store is `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der den Store angibt, in dem der Inhalt hinzugefügt wird. Der Standardspeicher ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des Bereichs angibt, in dem der Inhalt hinzugefügt wird (z. B. `/Company Home/Test Directory`). Dieser Wert ist ein obligatorischer Parameter.
    * Der Knotenname, der den neuen Inhalt darstellt (z. B. `MortgageForm.pdf`). Dieser Wert ist ein obligatorischer Parameter.
-   * Ein Zeichenfolgenwert, der den Knotentyp angibt. Um neue Inhalte hinzuzufügen, z. B. eine PDF-Datei, geben Sie an `{https://www.alfresco.org/model/content/1.0}content`. Dieser Wert ist ein obligatorischer Parameter.
-   * Ein `com.adobe.idp.Document` Objekt, das den Inhalt darstellt. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der den Knotentyp angibt. Um neuen Inhalt hinzuzufügen, z. B. eine PDF-Datei, geben Sie `{https://www.alfresco.org/model/content/1.0}content` an. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein `com.adobe.idp.Document`-Objekt, das den Inhalt darstellt. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den Kodierungswert angibt (z. B. `UTF-8`). Dieser Wert ist ein obligatorischer Parameter.
-   * Ein Wert für die `UpdateVersionType` Auflistung, der angibt, wie Versionsinformationen verarbeitet werden (z. B. `UpdateVersionType.INCREMENT_MAJOR_VERSION` um die Inhaltsversion zu erhöhen). ) Dieser Wert ist ein obligatorischer Parameter.
-   * Eine `java.util.List` Instanz, die inhaltliche Aspekte angibt. Dieser Wert ist ein optionaler Parameter und Sie können ihn angeben `null`.
-   * Ein `java.util.Map` Objekt, das Inhaltsattribute speichert.
+   * Ein `UpdateVersionType`-Auflistung-Wert, der angibt, wie Versionsinformationen verarbeitet werden (z. B. `UpdateVersionType.INCREMENT_MAJOR_VERSION`, um die Inhaltsversion zu inkrementieren). ) Dieser Wert ist ein obligatorischer Parameter.
+   * Eine `java.util.List`-Instanz, die inhaltliche Aspekte angibt. Dieser Wert ist ein optionaler Parameter und Sie können `null` angeben.
+   * Ein `java.util.Map`-Objekt, das Inhaltsattribute speichert.
 
-   Die `storeContent` Methode gibt ein `CRCResult` Objekt zurück, das den Inhalt beschreibt. Mithilfe eines `CRCResult` Objekts können Sie beispielsweise den eindeutigen Bezeichnerwert des Inhalts abrufen. Um diese Aufgabe auszuführen, rufen Sie die `CRCResult` `getNodeUuid` Objektmethode auf.
+   Die `storeContent`-Methode gibt ein `CRCResult`-Objekt zurück, das den Inhalt beschreibt. Mit einem `CRCResult`-Objekt können Sie beispielsweise den eindeutigen Bezeichnerwert des Inhalts abrufen. Um diese Aufgabe auszuführen, rufen Sie die `CRCResult`-Objektmethode `getNodeUuid` auf.
 
 **Siehe auch**
 
