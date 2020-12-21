@@ -36,9 +36,9 @@ Um sich als Administrator anmelden zu können, muss Ihnen die Rolle „Administr
 
 Zum Anmelden bei den Webseiten über einen Browser benötigen Sie die Document Security-URL sowie ein Konto. Die URL für Benutzer unterscheidet sich von der für Administratoren. Administratoren können sich auch an den Benutzerseiten anmelden, um Richtlinien zu erstellen.
 
-Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. The default URL for the user pages is https://*[host]*:*[port]*/edc. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
+Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. Die Standard-URL für die Benutzerseiten lautet https://*[host]*:*[port]*/edc. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
 
-The default URL for administrators is https://*[host]*:*[port]*/adminui.
+Die Standard-URL für Administratoren lautet https://*[host]*:*[port]*/adminui.
 
 Für Administratoren wird ein standardmäßiges Superadministratorkonto während der Installation angelegt. Sie können sich mit diesem Konto anmelden, nachdem Document Security erstmals installiert wurde.
 
@@ -48,9 +48,9 @@ Für Administratoren wird ein standardmäßiges Superadministratorkonto während
 
 1. Geben Sie die URL in den Browser ein.
 
-   Document security URL: `https://`*[host ]*`:`*[port]* `/edc`
+   Dokument-Sicherheits-URL: `https://`*[host ]*`:`*[port]* `/edc`
 
-   or Administration Console URL: `https://`*[host ]*`:`*[port]* `/adminui`
+   oder URL der Administrationskonsole: `https://`*[host ]*`:`*[port]* `/adminui`
 
 1. Geben Sie im Anmeldefenster Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf „OK“.
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“.
@@ -59,7 +59,7 @@ Für Administratoren wird ein standardmäßiges Superadministratorkonto während
 >
 >Verwenden Sie beim Arbeiten mit Webseiten nicht die Schaltflächen im Browser (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-## Auf den Webseiten navigieren {#navigating-the-web-pages}
+## Auf den Webseiten navigieren  {#navigating-the-web-pages}
 
 Wenn Sie sich an den Benutzerwebseiten anmelden, werden Hyperlinks zu den Benutzerseiten „Richtlinien“, „Dokumente“ und „Ereignisse“ angezeigt.
 
@@ -83,7 +83,7 @@ Wenn Sie sich bei Administration Console anmelden und zur Document Security-Haup
 >
 >Verwenden Sie beim Arbeiten mit Webseiten nicht die Schaltflächen im Browser (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-## Zugriff auf Document Security in Clientanwendungen einrichten {#setting-up-access-to-document-security-from-client-applications}
+## Zugriff auf Document Security in Clientanwendungen einrichten  {#setting-up-access-to-document-security-from-client-applications}
 
 Clientanwendungen müssen so eingerichtet werden, dass sie eine Verbindung mit Document Security herstellen, um Dokumente zu schützen, richtliniengeschützte Dokumente öffnen und die Verbindung mit den Document Security-Webseiten herzustellen. Einzelheiten zum Konfigurieren der Verbindung in der Client-Anwendung finden Sie in der *Acrobat-Hilfe* oder der entsprechenden *RightsManagementExtension-Hilfe*.
 
@@ -100,7 +100,7 @@ Diese Anweisungen gelten für Internet Explorer. Sie können das Zertifikat jedo
 1. Schließen Sie die Browsersitzung.
 1. Öffnen Sie ein weiteres Browser-Fenster und geben Sie die Basis-URL in das Feld „Adresse“ ein. Ein Dialogfeld mit einer Sicherheitswarnung sollte nicht angezeigt werden. Dieser Test bestätigt, dass das Zertifikat ordnungsgemäß installiert wurde.
 
-## Von den Webseiten abmelden {#log-out-of-the-web-pages}
+## Von den Webseiten abmelden  {#log-out-of-the-web-pages}
 
 Melden Sie sich ab, wenn Sie die Aufgaben auf den Webseiten erledigt haben, damit Sie den Browser sicher für andere Zwecke verwenden können. Je nach Konfiguration von Document Security müssen Sie den Browser schließen, um sich vollständig abzumelden.
 
