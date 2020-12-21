@@ -41,7 +41,7 @@ Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfung
 
 1. Klicken Sie auf Speichern.
 
-## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben  {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, können Sie die Position der Überprüfungsmeldungen angeben.
 
@@ -57,13 +57,13 @@ Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, könne
 
 1. Klicken Sie auf Speichern.
 
-## Die Rahmenstärke angeben {#specify-the-frame-border-size}
+## Die Rahmenstärke angeben  {#specify-the-frame-border-size}
 
 Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärke angeben.
 
 1. Geben Sie unter „Überprüfungsausgabe“ im Feld „Rahmenstärke“ die Stärke des Rahmens in Pixel ein.
 
-   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1.         
+   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1. 
 
 1. Klicken Sie auf Speichern.
 
