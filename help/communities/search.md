@@ -22,11 +22,11 @@ ht-degree: 29%
 
 Die Suchfunktion kann für zahlreiche andere Funktionen wie beispielsweise Foren eingesetzt werden und bietet somit die Möglichkeit, bestimmte Inhalte aufzufinden.
 
-When adding the ability to search posts entered by community members, referred to as user generated content (UGC), there are two components: [ `Search`](#search-features) and [ `Search Results`](#search-results).
+Wenn Sie die Möglichkeit hinzufügen, Beiträge von Community-Mitgliedern zu suchen, die als benutzergenerierte Inhalte (UGC) bezeichnet werden, gibt es zwei Komponenten: [ `Search`](#search-features) und [ `Search Results`](#search-results)
 
-The page that includes the `Search Results` component supports both searching and the display of results.
+Die Seite, die die Komponente `Search Results` enthält, unterstützt sowohl die Suche als auch die Anzeige der Ergebnisse.
 
-The page that includes the `Search`component provides a place to launch a search with results appearing on the `Search Results` page.
+Die Seite, die die Komponente `Search`enthält, bietet eine Stelle zum Starten einer Suche mit Ergebnissen, die auf der Seite `Search Results` angezeigt werden.
 
 Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass Site-Besucher und Mitglieder in der Lage sind, Inhalte einzusehen.
 
@@ -34,21 +34,21 @@ Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass 
 
 ### Hinzufügen einer Suche zu einer Seite {#add-search-to-a-page}
 
-Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Search` und auf eine Seite zu ziehen. Die Verwendung `Search` erfordert eine zweite Seite für die Variable `Search Results.`
+Um einer Seite im Autorenmodus eine `Search`-Komponente hinzuzufügen, suchen Sie mithilfe des Komponenten-Browsers `Communities / Search` und ziehen Sie sie an die gewünschte Position auf einer Seite. Für die Verwendung von `Search` ist eine zweite Seite für `Search Results.` erforderlich.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search` component will appear.
+Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` einbezogen wird, wird die Komponente `Search` so angezeigt.
 
 ![chlimage_1-373](assets/chlimage_1-373.png)
 
 ### Konfigurieren der hinzugefügten Suche {#configure-the-added-search}
 
-Select the placed `Search` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Search` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
-Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
+Geben Sie unter der Registerkarte **[!UICONTROL Sucheinstellungen]** an, wie Pfade gesucht werden, wenn ein Besucher eine Abfrage eingibt.
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -56,41 +56,43 @@ Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are s
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Ergebnisseite]** Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der Variablen 
+* **[!UICONTROL Ergebnisseite]**
+Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der Variablen 
 `Search Results` component.
 
 ## Search Results {#search-results}
 
 ### Hinzufügen von Suchergebnissen zu einer Seite {#add-search-results-to-a-page}
 
-To add a `Search Results` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Search Results`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Search Results`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite. Im Gegensatz zur Komponente „Suche“ wird hier keine zweite Seite benötigt, da die Suchergebnisse auf der gleichen Seite angezeigt werden können.
 
-If using Search elsewhere within the website, this one page with `Search Results` may be configured to be the `Result Page` for any or all instances of `Search`.
+Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie für eine oder alle Instanzen von `Search` `Result Page` &lt;a1/> ist.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search Result` component will appear:
+Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` einbezogen wird, wird die Komponente `Search Result` wie folgt angezeigt:
 
 ![chlimage_1-376](assets/chlimage_1-376.png)
 
 ### Konfigurieren hinzugefügter Suchergebnisse {#configure-the-added-search-result}
 
-Select the placed `Search Results` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Search Results` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-377](assets/chlimage_1-377.png)
 
-Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify what paths are included in the search when a query is entered by a visitor.
+Unter der Registerkarte **[!UICONTROL Suchergebniseinstellungen]** können Sie angeben, welche Pfade bei Eingabe einer Abfrage durch einen Besucher in die Suche einbezogen werden.
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Suchergebnisse pro Seite]** Definieren Sie die Anzahl der Themen/Beiträge, die pro Seite angezeigt werden. Der Standardwert ist 10.
+* **[!UICONTROL Suchergebnisse pro]**
+SeiteDefinieren Sie die Anzahl der pro Seite angezeigten Themen/Beiträge. Der Standardwert ist 10.
 
 * **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt.
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Search Essentials](search-implementation.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Suchbegriffe](search-implementation.md) für Entwickler.
