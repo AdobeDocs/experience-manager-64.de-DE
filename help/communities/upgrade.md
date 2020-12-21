@@ -24,33 +24,33 @@ Abhängig von der Topologie und den Funktionen der einzelnen Sites können die f
 
 Dieser Abschnitt ist spezifisch für Communities und ergänzt die Informationen unter [Upgrade auf AEM 6.4](../../help/sites-deploying/upgrade.md) (Plattform).
 
-## Upgrade von AEM 6.1 oder höher {#upgrading-from-aem-or-later}
+## Aktualisieren von AEM 6.1 oder höher {#upgrading-from-aem-or-later}
 
 ### Reindex Solr {#reindex-solr}
 
 Wenn Sie ein neues Communities Feature Pack in einer mit MSRP konfigurierten Bereitstellung installieren, müssen Sie Folgendes tun:
 
-1. Installieren Sie das [neueste Feature Pack](deploy-communities.md#latestfeaturepack)
-2. Installieren Sie die [neuesten Solr-Konfigurationsdateien](msrp.md#upgrading)
+1. [neuestes Feature Pack](deploy-communities.md#latestfeaturepack) installieren
+2. [letzte Solr-Konfigurationsdateien](msrp.md#upgrading) installieren
 3. Reindex MSRP
 
    siehe Abschnitt [MSRP Reindex Tool](msrp.md#msrp-reindex-tool)
 
-### Enablement 2.0 {#enablement}
+### Aktivierung 2.0 {#enablement}
 
 Ab AEM 6.3 werden in den Aktivierungsfunktionen keine Informationen mehr zum Berichte in MySQL gespeichert. MySQL wird nur noch für die Nachverfolgung von SCORM-Inhalten benötigt.
 
-Bitte wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) , um Hilfe bei der Migration von Inhalten aus Version 1.0 zu erhalten.
+Bitte wenden Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um Hilfe bei der Migration von Inhalten aus Version 1.0 zu erhalten.
 
-## Upgrade von AEM 6.0 {#upgrading-from-aem}
+## Aktualisieren von AEM 6.0 {#upgrading-from-aem}
 
-Wenn bereits vorhandene UGC beibehalten werden müssen, hängt die Vorgehensweise davon ab, ob die Bereitstellung UGC [lokal](#on-premise-storage) oder in der [Adobe Cloud](#adobe-cloud-storage)gespeichert hat.
+Wenn bereits vorhandene UGC beibehalten werden müssen, hängt die Vorgehensweise davon ab, ob die Bereitstellung UGC [lokal](#on-premise-storage) oder in der [Adobe Cloud](#adobe-cloud-storage) gespeichert hat.
 
 ### Adobe Cloud-Datenspeicherung {#adobe-cloud-storage}
 
 Wenn die aktualisierte Site für die Verwendung der Adobe Cloud-Datenspeicherung konfiguriert wurde, wird sie möglicherweise (falsch) so angezeigt, als wäre der gesamte UGC verloren gegangen, da die SRP-Methoden nicht in der Lage sind, die bereits vorhandene UGC am alten Speicherort zu finden.
 
-So gibt es die Möglichkeit, ASRP anzuweisen, auf UGC `AEM 6.0 compatability-mode` zuzugreifen.
+So gibt es die Möglichkeit, ASRP anzuweisen, `AEM 6.0 compatability-mode` für den Zugriff auf UGC zu verwenden.
 
 Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen
 
@@ -58,7 +58,9 @@ Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen
 2. Konfigurieren von [ASRP](asrp.md)
 3. Führen Sie die folgenden Schritte aus, um das bereits vorhandene UGC sichtbar zu machen:
 i. Navigieren Sie beispielsweise zur Webkonsole
-   [https://&lt;Host>:&lt;Anschluss>/system/console/configMgr](http://localhost:4502/system/console/configMgr)ii. Suchen Sie nach **[!UICONTROL AEM Communities Utilities]** configurationiii. Zum Erweitern des Konfigurationsbedienfelds auswählen
+   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
+configMgrii. Suchen Sie nach der Konfiguration **[!UICONTROL AEM Communities Utilities]**
+iii. Zum Erweitern des Konfigurationsbedienfelds auswählen
    * *Deaktivieren* **`Cloud Storage`**
    * Wählen Sie **[!UICONTROL Speichern]** aus
 
@@ -66,7 +68,7 @@ i. Navigieren Sie beispielsweise zur Webkonsole
 
 ### Lokale Datenspeicherung {#on-premise-storage}
 
-Wenn die aktualisierte Site keine Cloud-Datenspeicherung verwendet hat, müssen alle bereits vorhandenen UGC so konvertiert werden, dass sie der neuen Struktur entsprechen, die in AEM 6.1 Communities zur Unterstützung des gemeinsamen Speichers eingeführt wurde.
+Wenn die aktualisierte Site keine Cloud-Datenspeicherung verwendet hat, müssen alle bereits vorhandenen UGC entsprechend der neuen Struktur konvertiert werden, die in AEM 6.1 Communities eingeführt wurde, um den gemeinsamen Speicher zu unterstützen.
 
 Zu diesem Zweck ist ein Open Source-Migrationswerkzeug auf GitHub verfügbar:\
 [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
@@ -81,7 +83,7 @@ Siehe auch [Verwenden von Maven für Communities](maven.md).
 
 ### Keine JSP-Komponentenvorlagen {#no-jsp-component-templates}
 
-Das [Social-Komponenten-Framework](scf.md) (SCF) verwendet die Vorlagensprache [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
+Das [Framework für soziale Komponenten](scf.md) (SCF) verwendet die Vorlagensprache [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
 
 In AEM 6.0 blieben die JSP-Komponenten neben den neuen HBS-Framework-Komponenten am selben Ort, wobei sich die HBS-Komponenten in der Regel in Unterordnern mit dem Namen &quot;hbs&quot;befanden.
 
@@ -89,16 +91,16 @@ Ab AEM 6.1 wurden die JSP-Komponenten vollständig entfernt. Für Communities wi
 
 ## AEM Communities UGC Migration Tool {#aem-communities-ugc-migration-tool}
 
-Das [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) ist ein Open Source-Migrationswerkzeug, das auf GitHub verfügbar ist und angepasst werden kann, um UGC aus früheren Versionen AEM Social Communities zu exportieren und in AEM Communities 6.1 oder höher zu importieren.
+Das [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) ist ein Open-Source-Migrationswerkzeug, das auf GitHub verfügbar ist und angepasst werden kann, um UGC aus früheren Versionen AEM Social Communities zu exportieren und in AEM Communities 6.1 oder höher zu importieren.
 
-Zusätzlich zum Verschieben von UGC von früheren Versionen ist es auch möglich, UGC von einem [SRP](working-with-srp.md) zu einem anderen zu verschieben, z. B. von MSRP zu DSRP.
+Zusätzlich zum Verschieben von UGC von früheren Versionen ist es auch möglich, UGC von [SRP](working-with-srp.md) in eine andere zu verschieben, z. B. von MSRP zu DSRP.
 
-## Upgrade von AEM 5.6.1 oder früher {#upgrading-from-aem-or-earlier}
+## Aktualisieren von AEM 5.6.1 oder früher {#upgrading-from-aem-or-earlier}
 
 Im Prinzip gibt es drei Generationen von Komponenten für Gemeinschaften:
 
-**Gen 1**: ungefähr CQ 5.4 bis AEM 5.6.0 - dies sind die **Collab** -Komponenten, die UGC im lokalen Repository unter Verwendung der Replikation als Möglichkeit zur plattformübergreifenden Synchronisierung gespeichert haben. Weitere Unterschiede betreffen die Implementierung mit Java Server Pages (JSP) sowie die Blog-Funktion, die nur das Authoring in der Authoring-Umgebung beinhaltet.
+**Gen 1**: ungefähr CQ 5.4 bis AEM 5.6.0 - dies sind die  **** Kollaborkomponenten, die UGC im lokalen Repository unter Verwendung der Replikation als Möglichkeit zur plattformübergreifenden Synchronisierung des UGC gespeichert haben. Weitere Unterschiede betreffen die Implementierung mit Java Server Pages (JSP) sowie die Blog-Funktion, die nur das Authoring in der Authoring-Umgebung beinhaltet.
 
-**Gen 2**: von AEM 5.6.1 bis AEM 6.1 - das ist eine Mischung aus **Collab** - und **Social** -Komponenten. AEM 6.0 wurde das neue [Social-Komponenten-Framework](scf.md) (SCF) eingeführt und AEM 6.2 hat einen [gängigen UGC-Store](working-with-srp.md) eingeführt, in dem über einen [Datenspeicherung Resource Provider](srp.md) (SRP) auf UGC zugegriffen wird.
+**Gen 2**: von AEM 5.6.1 bis AEM 6.1 - das ist eine Mischung aus  **** Kollaborateuren und  **** sozialen Komponenten. AEM 6.0 wurde das neue [Social-Komponenten-Framework](scf.md) (SCF) eingeführt und AEM 6.2 hat einen [Common UGC-Speicher](working-with-srp.md) eingeführt, auf den mit einem [Datenspeicherung-Ressourcenanbieter](srp.md) (SRP) auf UGC zugegriffen wird.
 
-**Gen 3**: Ab AEM 6.2 gibt es nur noch **soziale** Komponenten, die in SCF als Handlebars (HBS)-Komponenten implementiert sind und eine Auswahl an SRP für UGC erfordern.
+**Gen 3**: Ab AEM 6.2 gibt es nur noch  **** Social-Komponenten, die in SCF als Handlebars (HBS)-Komponenten implementiert sind und eine Auswahl an SRP für UGC erfordern.
