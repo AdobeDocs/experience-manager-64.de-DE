@@ -26,7 +26,7 @@ Task Manager-Endpunkte ermöglichen es einem Workspace-Benutzer, den Dienst aufz
 
 Mithilfe der folgenden Einstellungen können Sie einen TaskManager-Endpunkt konfigurieren.
 
-**Name:** (Obligatorisch) Gibt den Endpunkt an. Der Name wird in Workspace in der Kartenansicht angezeigt. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
+**Name:**  (Obligatorisch) Gibt den Endpunkt an. Der Name wird in Workspace in der Kartenansicht angezeigt. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 
 **Beschreibung:** Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
 
@@ -34,16 +34,16 @@ Mithilfe der folgenden Einstellungen können Sie einen TaskManager-Endpunkt konf
 
 **Prozesseigentümer:** Der Name der Person, die für den Prozess verantwortlich ist.
 
-**Benutzer kann Aufgabe weiterleiten:** Ermöglicht dem Benutzer, die ursprüngliche Aufgabe weiterzuleiten.
+**Benutzer kann die Aufgabe weiterleiten:** Ermöglicht es dem Benutzer, die ursprüngliche Aufgabe weiterzuleiten.
 
 **Anlagenfenster anzeigen:** Ermöglicht dem Benutzer das Anzeigen des Anlagenfensters.
 
 **Hinzufügen von Anlagen zulassen:** Ermöglicht dem Benutzer, Anlagen und Notizen hinzuzufügen.
 
-**Aufgabe ursprünglich gesperrt:** Sperrt die ursprüngliche Aufgabe.
+**Aufgabe zunächst gesperrt:** Sperrt die ursprüngliche Aufgabe.
 
-**ACLs für freigegebene Warteschlangen Hinzufügen:** Die ursprüngliche Aufgabe wird mit ACLs für Benutzer freigegebener Warteschlangen erstellt.
+**ACLs für freigegebene Warteschlangen Hinzufügen:** Die anfängliche Aufgabe wird mit ACLs für freigegebene Warteschlangenbenutzer erstellt.
 
 **Kategorisierung:** (Obligatorisch) Die Kategorie, in der das Formular in Workspace angezeigt wird. Wählen Sie eine Kategorie aus der Liste aus oder wählen Sie „Neue Kategorie“, um eine Kategorie hinzuzufügen.
 
-**Vorgangsname:** (Obligatorisch) Eine Liste von Vorgängen, die dem Endpunkt zugewiesen werden können.
+**Vorgangsname:**  (Obligatorisch) Eine Liste von Vorgängen, die dem Endpunkt zugewiesen werden können.
