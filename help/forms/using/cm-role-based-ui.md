@@ -17,7 +17,7 @@ ht-degree: 28%
 ---
 
 
-# AUF DER Rolle basierende Benutzeroberfläche in Correspondence Management NICHT VERÖFFENTLICHEN {#do-not-publish-role-based-user-interface-in-correspondence-management}
+# AUF DER Rolle basierende Benutzeroberfläche in Correspondence Management NICHT VERÖFFENTLICHEN{#do-not-publish-role-based-user-interface-in-correspondence-management}
 
 In AEM kann der Admin rollenbasierten Zugriff auf verschiedene Benutzergruppen bereitstellen und verschiedene Aktionen für verschiedene Ressourcen ausführen. Die Funktion zum Erstellen oder Bearbeiten von Datenwörterbüchern kann beispielsweise nur Benutzern einer bestimmten Benutzergruppe zur Verfügung stehen, während andere Benutzer nur die Datenwörterbücher Ansicht und verwenden können.
 
@@ -31,13 +31,13 @@ Weitere Informationen zu Gruppen, Berechtigungen, Listen zur Zugriffskontrolle u
 
 1. Stellen Sie sicher, dass der Benutzer, für den Sie die Berechtigungen verwalten möchten, der entsprechenden Benutzergruppe hinzugefügt wird.
 
-   Beispielsweise wird der Benutzer John Doe den Gruppen `agents` und `cm-creditcard`hinzugefügt. Weitere Informationen finden Sie unter Hinzufügen von Benutzern oder Gruppen zu einer Gruppe. For more information, see [Managing Users and User Groups](/help/communities/users.md).
+   Beispielsweise wird der Benutzer John Doe den Gruppen `agents` und `cm-creditcard` hinzugefügt. Weitere Informationen finden Sie unter Hinzufügen von Benutzern oder Gruppen zu einer Gruppe. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
 
    ![]()
 
 1. Erstellen Sie die Ordner, die für das Zulassen der gewünschten Berechtigungen geeignet sind.
 
-   Wenn ein Unternehmen beispielsweise über Hypotheken-, Kreditkarten- und Versicherungsabteilungen verfügt, kann es Ordner mit Namen erstellen `HomeMortgage`und die entsprechenden Vermögenswerte behalten `CreditCard,``Insurance` und selektiv Zugriff auf Vermögenswerte gewähren, die nur für seine Abteilungen relevant sind.
+   Wenn ein Unternehmen beispielsweise über Hypotheken-, Kreditkarten- und Versicherungsabteilungen verfügt, können sie Ordner mit den Namen `HomeMortgage`, `CreditCard,`und `Insurance` erstellen, um die entsprechenden Vermögenswerte zu behalten und Agenten nur für ihre Abteilungen Zugriff zu gewähren.
 
 1. Um auf die AEM WCM-Sicherheit zuzugreifen, führen Sie einen der folgenden Schritte aus:
 
@@ -54,7 +54,7 @@ Weitere Informationen zu Gruppen, Berechtigungen, Listen zur Zugriffskontrolle u
 
    Um den Namen der Gruppe zu suchen, können Sie den Namen der Gruppe in den entsprechenden Bereich eingeben.
 
-1. Navigieren Sie auf der Registerkarte &quot;Berechtigungen&quot;zu dem Pfad, dem Sie Berechtigungen hinzufügen möchten. Die Correspondence Management-Ordner befinden sich im `content/apps/cm/` Ordner.
+1. Navigieren Sie auf der Registerkarte &quot;Berechtigungen&quot;zu dem Pfad, dem Sie Berechtigungen hinzufügen möchten. Die Correspondence Management-Ordner befinden sich im Ordner `content/apps/cm/`.
 
    Aktivieren Sie das Kontrollkästchen in der Spalte Mitglied für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für die Mitglieder, denen Berechtigungen entzogen werden sollen. In der von Ihnen geänderten Zelle wird ein rotes Dreieck angezeigt.
 
