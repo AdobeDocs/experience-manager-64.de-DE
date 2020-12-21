@@ -18,71 +18,79 @@ ht-degree: 17%
 ---
 
 
-# Leader-Funktion {#leaderboard-feature}
+# Leaderboard-Funktion {#leaderboard-feature}
 
 ## Einführung {#introduction}
 
-Die `Leaderboard` Komponente bietet die Möglichkeit, einen Eindruck davon zu erhalten, wie Mitglieder innerhalb der Gemeinschaft interagieren, indem sie Mitglieder nach Punkten (Basis-Scoring) oder ihrem Fachwissen (Advanced Scoring) einstufen.
+Die `Leaderboard`-Komponente bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder nach gewonnenen Punkten (Basissortierung) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstufen.
 
-Bevor Sie die Komponente &quot;Lederboard&quot;auf eine Seite einfügen, müssen Sie die Bewertung und Abzeichen der [Communities konfigurieren](implementing-scoring.md).
+Bevor Sie die Lederboard-Komponente auf eine Seite setzen, müssen Sie [Communities Scoring and Badges](implementing-scoring.md) konfigurieren.
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der `Leaderboard` Komponente zu einer [Community-Site](overview.md#community-sites)
+* Hinzufügen der Komponente `Leaderboard` zu einer [Community-Site](overview.md#community-sites)
 
-* Configuration settings for the `Leaderboard` component
+* Konfigurationseinstellungen für die Komponente `Leaderboard`
 
-## Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+## Hinzufügen einer Pinnwand zu einer Seite {#adding-a-leaderboard-to-a-page}
 
-To add a `Leaderboard` component to a page in author mode, locate the component
+Um eine `Leaderboard`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
 
 * `Communities / Leaderboard`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-## Leaderboard konfigurieren {#configuring-leaderboard}
+## Leaderboard {#configuring-leaderboard} konfigurieren
 
-Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Leaderboard` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ### Registerkarte „Settings“{#settings-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** an, welche Informationen zum Element angezeigt werden sollen:
+Geben Sie unter der Registerkarte **[!UICONTROL Einstellungen]** an, welche Informationen zum Element angezeigt werden sollen:
 
-* **[!UICONTROL Anzeigename]** Ein beschreibender Name, der für die Pinnwand angezeigt werden soll und den Regeln entspricht, die für die Anzeige von Abzeichen und Ergebnissen ausgewählt wurden.
+* **[!UICONTROL Anzeigename]**
+Ein beschreibender Name, der für die Pinnwand angezeigt werden soll und den Regeln entspricht, die für die Anzeige von Abzeichen und Ergebnissen ausgewählt wurden.
 
    Der Standardwert ist `Leaderboard`, wenn nichts eingegeben wurde.
 
-* **[!UICONTROL Abzeichen]** Wenn aktiviert, wird eine Spalte für Symbole mit Zeichen in die Lederboard aufgenommen.
+* ****
+BadgeWenn aktiviert, wird eine Spalte für Symbole mit Zeichen in die Lederboard aufgenommen.
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Kennzeichenname]** Wenn aktiviert, wird eine Spalte für den Kennzeichennamen in der Lederboard eingefügt.
+* **[!UICONTROL KennzeichennameWenn]**
+aktiviert, wird eine Spalte für den Kennzeichennamen in der Lederboard eingefügt.
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Verwenden Sie Avatar]** Wenn aktiviert, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds verknüpft.
+* **[!UICONTROL Verwenden Sie]**
+AvatarWenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds verknüpft.
 
    Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte &quot;Regeln&quot; {#rules-tab}
+### Registerkarte Regeln {#rules-tab}
 
-Auf der Registerkarte &quot; **[!UICONTROL Regeln]** &quot;finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln.
+Auf der Registerkarte **[!UICONTROL Regeln]** finden Sie die Community-Site und die zugehörigen Scoring- und Bading-Regeln
 
-* **[!UICONTROL Regelspeicherort]**(erforderlich) Der Speicherort, an dem die Regel für Bewertung/Abzeichen konfiguriert ist.
+* **[!UICONTROL Regelspeicherort]**
+ (erforderlich) Der Speicherort, an dem die Regel für Bewertung/Abzeichen konfiguriert ist.
 
-* **[!UICONTROL Bewertungsregel]**(erforderlich) Spezifische Regel, die die anzuzeigenden Ergebnisse generiert.
+* **[!UICONTROL Bewertungsregel]**
+ (erforderlich) Spezifische Regel, die die anzuzeigenden Ergebnisse generiert.
 
-* **[!UICONTROL Badging-Regel]**(erforderlich) Spezifische Regel, die das anzuzeigende Zeichen generiert.
+* **[!UICONTROL Badging-Regel]**
+ (erforderlich) Spezifische Regel, die das anzuzeigende Zeichen generiert.
 
-* **[!UICONTROL Zeigt die pro Seite anzuzeigende]** Anzahl der Mitglieder an.
+* **[!UICONTROL Zeigt]**
+LimitAnzahl der Mitglieder an, die pro Seite angezeigt werden.
 
    Der Standardwert ist 10.
 
@@ -92,7 +100,7 @@ Dieser Bericht des Lederboards beruht auf der Anwendung grundlegender Bewertungs
 
 Konfiguration der Leaderboard-Komponente:
 
-* **[!UICONTROL Registerkarte &quot;Einstellungen]** &quot;:
+* **** Einstellungsstab:
 
    * Anzeigename = `Participation Board`
    * `checked`:
@@ -101,7 +109,7 @@ Konfiguration der Leaderboard-Komponente:
       * Abzeichenname
       * Avatar verwenden
 
-* **[!UICONTROL Registerkarte Regeln]** :
+* **** Rulestab:
 
    * Speicherort für Regel = `/content/sites/communities/jcr:content`
    * Bewertungsregel = `/etc/community/scoring/rules/forums-scoring`
@@ -116,7 +124,7 @@ Dieser Bericht des Lederboards ist das Ergebnis der Anwendung erweiterter Bewert
 
 Konfiguration der Leaderboard-Komponente:
 
-* **[!UICONTROL Registerkarte &quot;Einstellungen]** &quot;:
+* **** Einstellungsstab:
 
    * Anzeigename = `Expertise Board`
    * `checked`:
@@ -124,7 +132,7 @@ Konfiguration der Leaderboard-Komponente:
       * Abzeichen
       * Avatar verwenden
 
-* **[!UICONTROL Registerkarte Regeln]** :
+* **** Rulestab:
 
    * Speicherort für Regel = `/content/sites/communities/jcr:content`
    * Bewertungsregel = `/etc/community/scoring/rules/adv-forums-scoring`
@@ -135,6 +143,6 @@ Konfiguration der Leaderboard-Komponente:
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Leaderboard Essentials](leaderboard.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Leaderboard Essentials](leaderboard.md) für Entwickler.
 
-Anweisungen zum Erstellen von Regeln finden Sie auf der Seite &quot;Bewertung [und Abzeichen](implementing-scoring.md) für Administratoren&quot;.
+Anweisungen zum Erstellen von Regeln finden Sie auf der Seite [Bewertung und Abzeichen](implementing-scoring.md) für Administratoren.
