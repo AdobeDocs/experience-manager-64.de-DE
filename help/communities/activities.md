@@ -22,7 +22,7 @@ ht-degree: 32%
 
 ## Einführung {#introduction}
 
-The activities of a signed in community member, such as posting to a forum or blog, are collected into a stream which may be filtered and displayed in various ways through configuration of the `Activity Streams` component.
+Die Aktivitäten eines angemeldeten Community-Mitglieds, wie z.B. das Posten in einem Forum oder Blog, werden in einem Stream gesammelt, der durch die Konfiguration der `Activity Streams`-Komponente gefiltert und angezeigt werden kann.
 
 Diese Verfolgungsmöglichkeit bietet eine zusätzliche Art der Aktivitätenansicht, mit der Community-Mitglieder interessanten Beiträgen oder den Aktivitäten anderer Mitglieder folgen können.
 
@@ -33,21 +33,21 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 ## Hinzufügen von Aktivitäts-Streams zu einer Seite {#adding-activity-streams-to-a-page}
 
-If it is desired to add an `Activity Streams` component to a page in author mode, use the component browser to locate
+Wenn Sie eine `Activity Streams`-Komponente zu einer Seite im Autorenmodus hinzufügen möchten, verwenden Sie den Komponenten-Browser, um
 
 * `Communities / Activity Streams`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf einer Seite, auf der Aktivitäts-Streams angezeigt werden sollen.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-activities.md#essentials-for-client-side) einbezogen werden, wird die `Activity Streams`-Komponente wie folgt angezeigt:
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ## Konfigurieren von Aktivitäts-Streams {#configuring-activity-streams}
 
-Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Activity Streams` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -55,23 +55,26 @@ Auf der Registerkarte **[!UICONTROL Benutzeraktivitäten]** können Sie festlege
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-* **[!UICONTROL Max. Anzahl der Aktivitäten]** Die Anzahl der anzuzeigenden Aktivitäten
+* **[!UICONTROL Max. Anzahl der]**
+AktivitätenDie Anzahl der anzuzeigenden Aktivitäten
 * **[!UICONTROL Stream-Ressourcenpfad]** Feld leer lassen, um standardmäßig auf die Community-Site oder die Community-Gruppe zu verweisen. Mit dem Stream-Ressourcenpfad wird die Aktivitätenquelle festgelegt. Standardmäßig ist das Feld leer.
 * **[!UICONTROL Ansicht der Benutzeraktivitäten anzeigen]** Ist diese Option aktiviert, findet sich auf der Aktivitätenseite eine Registerkarte, mit der Aktivitäten nach denjenigen Elementen gefiltert werden können, die vom aktuellen Mitglied innerhalb der Community generiert wurden. Diese Option ist standardmäßig aktiviert.
-* **[!UICONTROL Ansicht]**&quot;Alle Aktivitäten anzeigen&quot;Wenn diese Option aktiviert ist, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, die alle Aktivitäten enthält, die innerhalb der Community generiert wurden, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
-* **[!UICONTROL Anzeige Nach Ansicht]** Wenn aktiviert, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, auf der die Aktivitäten der Filter basierend auf denen des aktuellen Mitglieds folgen. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Alle Aktivitäten anzeigen]**
+Wenn aktiviert, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, die alle Aktivitäten enthält, die innerhalb der Community generiert wurden, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Anzeige Nach]**
+AnsichtWenn aktiviert, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, auf der die Aktivitäten der Filter basieren, denen das aktuelle Mitglied folgt. Diese Option ist standardmäßig aktiviert.
 
-## FOLGENDE Ansicht {#following-view}
+## Nach der Ansicht {#following-view}
 
-Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [Blog](blog-feature.md), [Forum](forum.md), [QnA](working-with-qna.md), [Kalender](calendar.md), [Dateibibliothek](file-library.md)[](comments.md)undKommentare.
+Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [calendar](calendar.md), [fileLibrary](file-library.md) und [comments](comments.md).
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-Über die Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, [Benachrichtigungen](notifications.md)und/oder [Abonnements](subscriptions.md)folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
+Mit der Schaltfläche **Folgen** können Sie Einstiege als Aktivitäten, [Benachrichtigungen](notifications.md) und/oder [Abonnement](subscriptions.md) folgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt ist, können Sie eine Auswahl ein- oder ausschalten. Die Auswahl `Email Subscriptions` ist nur bei der Konfiguration vorhanden.
 
-Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Folgendem** geändert. Aus praktischen Gründen ist es möglich, alle Methoden `Unfollow All` zu deaktivieren.
+Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Nach** geändert. Aus praktischen Gründen können Sie `Unfollow All` auswählen, um alle Methoden auszuschalten.
 
-Die Schaltfläche &quot; **Folgen** &quot;wird angezeigt:
+Die Schaltfläche **Folgen** wird angezeigt:
 
 * Beim Anzeigen des Profils eines anderen Mitglieds
 * Auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs
