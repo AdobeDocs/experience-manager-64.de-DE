@@ -19,9 +19,9 @@ ht-degree: 9%
 ---
 
 
-# Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments}
+# Rendern von Forms basierend auf Fragmenten {#rendering-forms-based-on-fragments}
 
-## Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments-inner}
+## Rendern von Forms basierend auf Fragmenten {#rendering-forms-based-on-fragments-inner}
 
 Der Forms-Dienst kann Formulare wiedergeben, die auf Fragmenten basieren, die Sie mit Designer erstellen. Ein *Fragment* ist ein wiederverwendbarer Teil eines Formulars und wird als separate XDP-Datei gespeichert, die in mehrere Formularentwürfe eingefügt werden kann. Beispielsweise kann ein Fragment einen Adressblock oder Copyright-Informationen enthalten.
 
@@ -29,7 +29,7 @@ Die Verwendung von Fragmenten vereinfacht und beschleunigt die Erstellung und Pf
 
 Ein Fragment kann mehrere Teilformulare enthalten, die in einen Auswahl-Teilformularsatz eingeschlossen sind. Auswahl-Teilformularsätze steuern die Anzeige von Teilformularen basierend auf dem Datenfluss aus einer Datenverbindung. Verwenden Sie bedingte Anweisungen, um festzulegen, welches Teilformular aus dem Satz im bereitgestellten Formular angezeigt wird. Beispielsweise kann jedes Teilformular in einem Satz Informationen zu einem bestimmten geografischen Standort enthalten und das angezeigte Teilformular kann anhand des Standorts des Benutzers bestimmt werden.
 
-A *script fragment* contains reusable JavaScript functions or values that are stored separately from any particular object, such as a date parser or a web service invocation. Diese Fragmente beinhalten ein Skriptobjekt, das in der Palette „Hierarchie“ als untergeordnetes Element von „Variablen“ aufgeführt wird. Fragmente können nicht aus Skripten erstellt werden, die Eigenschaften anderer Objekte sind, wie etwa Ereignisskripte zum Validieren, Berechnen oder Initialisieren.
+Ein *Skriptfragment* enthält wiederverwendbare JavaScript-Funktionen oder Werte, die getrennt von einem bestimmten Objekt wie einem Datumsparser oder einem Webdienstaufruf gespeichert werden. Diese Fragmente beinhalten ein Skriptobjekt, das in der Palette „Hierarchie“ als untergeordnetes Element von „Variablen“ aufgeführt wird. Fragmente können nicht aus Skripten erstellt werden, die Eigenschaften anderer Objekte sind, wie etwa Ereignisskripte zum Validieren, Berechnen oder Initialisieren.
 
 Die Verwendung von Fragmenten bietet folgende Vorteile:
 
@@ -41,17 +41,17 @@ Die Verwendung von Fragmenten bietet folgende Vorteile:
 
 ### Zusammenstellen eines Formularentwurfs mit Fragmenten {#assembling-a-form-design-assembled-using-fragments}
 
-Sie können einen Formularentwurf zusammenstellen, der basierend auf mehreren Fragmenten an den Forms-Dienst übergeben wird. Verwenden Sie den Assembler-Dienst, um mehrere Fragmente zusammenzustellen. Ein Beispiel für die Verwendung des Assembler-Dienstes zum Erstellen eines Formularentwurfs, der von einem anderen Forms-Dienst (dem Output-Dienst) verwendet wird, finden Sie unter PDF-Dokumente mit Fragmenten [erstellen](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Statt den Output-Dienst zu verwenden, können Sie denselben Workflow mit dem Forms-Dienst durchführen.
+Sie können einen Formularentwurf zusammenstellen, der basierend auf mehreren Fragmenten an den Forms-Dienst übergeben wird. Verwenden Sie den Assembler-Dienst, um mehrere Fragmente zusammenzustellen. Ein Beispiel für die Verwendung des Assemble-Dienstes zum Erstellen eines Formularentwurfs, der von einem anderen Forms-Dienst (dem Output-Dienst) verwendet wird, finden Sie unter [Erstellen von PDF-Dokumenten mit Fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Statt den Output-Dienst zu verwenden, können Sie denselben Workflow mit dem Forms-Dienst durchführen.
 
 Bei Verwendung des Assembler-Dienstes übergeben Sie einen Formularentwurf, der mithilfe von Fragmenten zusammengestellt wurde. Der erstellte Formularentwurf verweist nicht auf andere Fragmente. In diesem Thema wird dagegen die Übergabe eines Formularentwurfs behandelt, der andere Fragmente an den Forms-Dienst referenziert. Der Formularentwurf wurde jedoch nicht von Assembler zusammengestellt. Es wurde in Designer erstellt.
 
 >[!NOTE]
 >
->For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Forms-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Informationen zum Erstellen einer webbasierten Anwendung, mit der Formulare basierend auf Fragmenten wiedergegeben werden, finden Sie unter [Erstellen von Webanwendungen, die Forms](/help/forms/developing/creating-web-applications-renders-forms.md)rendern.
+>Informationen zum Erstellen einer webbasierten Anwendung, mit der Formulare basierend auf Fragmenten wiedergegeben werden, finden Sie unter [Erstellen von Webanwendungen, mit denen Forms](/help/forms/developing/creating-web-applications-renders-forms.md) wiedergegeben wird.
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -75,13 +75,13 @@ Bevor Sie einen Forms-Dienst-Client-API-Vorgang programmgesteuert durchführen k
 
 Um ein Formular basierend auf Fragmenten erfolgreich wiedergeben zu können, müssen Sie sicherstellen, dass der Forms-Dienst sowohl das Formular als auch die Fragmente (die XDP-Dateien) finden kann, auf die der Formularentwurf verweist. Angenommen, das Formular trägt den Namen PO.xdp und dieses Formular verwendet zwei Fragmente namens FooterUS.xdp und FooterCanada.xdp. In diesem Fall muss der Forms-Dienst alle drei XDP-Dateien suchen können.
 
-Sie können ein Formular und seine Fragmente organisieren, indem Sie das Formular an einem Speicherort und die Fragmente an einem anderen Speicherort ablegen oder Sie können alle XDP-Dateien an demselben Speicherort platzieren. Für die Zwecke dieses Abschnitts nehmen Sie an, dass sich alle XDP-Dateien im AEM Forms-Repository befinden. Weitere Informationen zum Platzieren von XDP-Dateien im AEM Forms-Repository finden Sie unter [Schreiben von Ressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).
+Sie können ein Formular und seine Fragmente organisieren, indem Sie das Formular an einem Speicherort und die Fragmente an einem anderen Speicherort ablegen oder Sie können alle XDP-Dateien an demselben Speicherort platzieren. Für die Zwecke dieses Abschnitts nehmen Sie an, dass sich alle XDP-Dateien im AEM Forms-Repository befinden. Weitere Informationen zum Platzieren von XDP-Dateien im AEM Forms-Repository finden Sie unter [Schreibressourcen](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Bei der Wiedergabe eines Formulars basierend auf Fragmenten müssen Sie nur auf das Formular selbst und nicht auf die Fragmente verweisen. Beispielsweise müssen Sie auf PO.xdp und nicht auf FooterUS.xdp oder FooterCanada.xdp verweisen. Stellen Sie sicher, dass Sie die Fragmente an einer Stelle platzieren, an der der Forms-Dienst sie finden kann.
 
 **Formular wiedergeben**
 
-Ein Formular, das auf Fragmenten basiert, kann auf dieselbe Weise wiedergegeben werden wie nicht fragmentierte Formulare. Das heißt, Sie können das Formular als PDF-, HTML- oder Formularleitfäden (nicht mehr unterstützt) wiedergeben. Im Beispiel in diesem Abschnitt wird ein Formular basierend auf Fragmenten als interaktives PDF-Formular wiedergegeben. (Siehe [Rendern von interaktiven PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Ein Formular, das auf Fragmenten basiert, kann auf dieselbe Weise wiedergegeben werden wie nicht fragmentierte Formulare. Das heißt, Sie können das Formular als PDF-, HTML- oder Formularleitfäden (nicht mehr unterstützt) wiedergeben. Im Beispiel in diesem Abschnitt wird ein Formular basierend auf Fragmenten als interaktives PDF-Formular wiedergegeben. (Siehe [Interaktive PDF forms rendern](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 **Schreiben des Formulardatenstreams in den Client-Webbrowser**
 
@@ -91,7 +91,7 @@ Wenn der Forms-Dienst ein Formular wiedergibt, gibt er einen Formulardatenstream
 
 [Wiedergeben von Formularen basierend auf Fragmenten mit der Java-API](#render-forms-based-on-fragments-using-the-java-api)
 
-[Wiedergeben von Formularen basierend auf Fragmenten mithilfe der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
+[Wiedergeben von Formularen basierend auf Fragmenten mit der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -114,36 +114,36 @@ Wiedergabe eines Formulars basierend auf Fragmenten mit der Forms API (Java):
 1. Forms Client API-Objekt erstellen
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
-   * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie den Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
 1. URI-Werte angeben
 
-   * Erstellen Sie ein `URLSpec` Objekt, das URI-Werte mithilfe des Konstruktors speichert.
-   * Rufen Sie die `URLSpec` Methode des `setApplicationWebRoot` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Webstamm der Anwendung darstellt.
-   * Rufen Sie die `URLSpec` Methode des `setContentRootURI` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im Inhaltsstamm-URI befinden. Andernfalls gibt der Forms-Dienst eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://`an.
-   * Rufen Sie die `URLSpec` `setTargetURL` Objektmethode auf und übergeben Sie einen Zeichenfolgenwert, der den Zielgruppen-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Zielgruppen-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte mithilfe seines Konstruktors speichert.
+   * Rufen Sie die `URLSpec`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Webstamm der Anwendung darstellt.`setApplicationWebRoot`
+   * Rufen Sie die `URLSpec`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Inhaltsstamm-URI-Wert angibt. `setContentRootURI` Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im Inhaltsstamm-URI befinden. Andernfalls gibt der Forms-Dienst eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://` an.
+   * Rufen Sie die `URLSpec`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URL-Wert der Zielgruppe angibt, an den die Formulardaten gesendet werden. `setTargetURL` Wenn Sie die Zielgruppen-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 
 1. Formular wiedergeben
 
-   Rufen Sie die `FormsServiceClient` Objektmethode `renderPDFForm` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderPDFForm`
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, müssen Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `com.adobe.idp.Document` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` Objekt.
-   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert.
-   * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst zum Wiedergeben eines Formulars basierend auf Fragmenten erforderlich sind.
-   * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert.
+   * Ein `URLSpec`-Objekt, das URI-Werte enthält, die vom Forms-Dienst zum Wiedergeben eines Formulars basierend auf Fragmenten erforderlich sind.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die `renderPDFForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
 
-   * Erstellen Sie ein `com.adobe.idp.Document` Objekt, indem Sie die `FormsResult` &quot;s&quot;- `getOutputContent` Methode des Objekts aufrufen.
-   * Rufen Sie den Inhaltstyp des `com.adobe.idp.Document` Objekts ab, indem Sie dessen `getContentType` Methode aufrufen.
-   * Legen Sie den Inhaltstyp des `javax.servlet.http.HttpServletResponse` Objekts fest, indem Sie seine `setContentType` Methode aufrufen und den Inhaltstyp des `com.adobe.idp.Document` Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `javax.servlet.http.HttpServletResponse` Objektmethode `getOutputStream` aufrufen.
-   * Erstellen Sie ein `java.io.InputStream` Objekt, indem Sie die `com.adobe.idp.Document` Objektmethode `getInputStream` aufrufen.
-   * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstream gefüllt wird, indem Sie die `InputStream` `read`Objektmethode aufrufen und das Bytearray als Argument übergeben.
-   * Rufen Sie die `javax.servlet.ServletOutputStream` Methode des `write` Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Bytearray an die `write` Methode.
+   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `FormsResult`-Methode &quot;s `getOutputContent`&quot;aufrufen.
+   * Rufen Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts ab, indem Sie dessen `getContentType`-Methode aufrufen.
+   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie die `setContentType`-Methode aufrufen und den Inhaltstyp des `com.adobe.idp.Document`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `getOutputStream`-Methode des Objekts aufrufen.`javax.servlet.http.HttpServletResponse`
+   * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `com.adobe.idp.Document`-Methode des Objekts `getInputStream` aufrufen.
+   * Erstellen Sie ein Bytearray, das mit dem Formulardatenstream gefüllt wird, indem Sie die `read`-Methode des Objekts aufrufen und das Bytearray als Argument übergeben.`InputStream`
+   * Rufen Sie die `write`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `javax.servlet.ServletOutputStream` Übergeben Sie das Bytearray an die `write`-Methode.
 
 **Siehe auch**
 
@@ -166,40 +166,40 @@ Wiedergabe eines Formulars basierend auf Fragmenten mit der Forms API (Webdienst
 
 1. Forms Client API-Objekt erstellen
 
-   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
 
 1. URI-Werte angeben
 
-   * Erstellen Sie ein `URLSpec` Objekt, das URI-Werte mithilfe des Konstruktors speichert.
-   * Rufen Sie die `URLSpec` Methode des `setApplicationWebRoot` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Webstamm der Anwendung darstellt.
-   * Rufen Sie die `URLSpec` Methode des `setContentRootURI` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls gibt der Forms-Dienst eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://`an.
-   * Rufen Sie die `URLSpec` `setTargetURL` Objektmethode auf und übergeben Sie einen Zeichenfolgenwert, der den Zielgruppen-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Zielgruppen-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte mithilfe seines Konstruktors speichert.
+   * Rufen Sie die `setApplicationWebRoot`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Webstamm der Anwendung darstellt.`URLSpec`
+   * Rufen Sie die `setContentRootURI`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Inhaltsstamm-URI-Wert angibt. `URLSpec` Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls gibt der Forms-Dienst eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://` an.
+   * Rufen Sie die `setTargetURL`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URL-Wert der Zielgruppe angibt, an den die Formulardaten gesendet werden. `URLSpec` Wenn Sie die Zielgruppen-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 
 1. Formular wiedergeben
 
-   Rufen Sie die `FormsService` Objektmethode `renderPDFForm` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `renderPDFForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsService`
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, müssen Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
-   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Beachten Sie, dass die Option &quot;PDF mit Tags&quot;nicht eingestellt werden kann, wenn es sich beim Eingabe-Dokument um ein PDF-Dokument handelt. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die PDF-Option mit Tags festgelegt werden.
-   * Ein `URLSpec` Objekt, das die vom Forms-Dienst erforderlichen URI-Werte enthält.
-   * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern des wiedergegebenen Formulars verwendet.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder` Objekt, das von der Methode gefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
-   * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das von der Methode gefüllt wird. Dieses Argument speichert den Gebietsschemawert.
-   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das die Ergebnisse dieses Vorgangs enthält.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Beachten Sie, dass die Option &quot;PDF mit Tags&quot;nicht eingestellt werden kann, wenn es sich beim Eingabe-Dokument um ein PDF-Dokument handelt. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die PDF-Option mit Tags festgelegt werden.
+   * Ein `URLSpec`-Objekt, das die vom Forms-Dienst erforderlichen URI-Werte enthält.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern des wiedergegebenen Formulars verwendet.
+   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
+   * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird. Dieses Argument speichert den Gebietsschemawert.
+   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
-   Die `renderPDFForm` Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFForm`-Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
 
-   * Erstellen Sie ein `FormResult` Objekt, indem Sie den Wert des `com.adobe.idp.services.holders.FormsResultHolder` Objektdatenelements abrufen `value` .
-   * Erstellen Sie ein `BLOB` Objekt, das Formulardaten enthält, indem Sie die `FormsResult` Objektmethode `getOutputContent` aufrufen.
-   * Rufen Sie den Inhaltstyp des `BLOB` Objekts ab, indem Sie dessen `getContentType` Methode aufrufen.
-   * Legen Sie den Inhaltstyp des `javax.servlet.http.HttpServletResponse` Objekts fest, indem Sie seine `setContentType` Methode aufrufen und den Inhaltstyp des `BLOB` Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `javax.servlet.http.HttpServletResponse` Objektmethode `getOutputStream` aufrufen.
-   * Erstellen Sie ein Bytearray und füllen Sie es durch Aufrufen der `BLOB` Objektmethode `getBinaryData` . Diese Aufgabe weist den Inhalt des `FormsResult` Objekts dem Bytearray zu.
-   * Rufen Sie die `javax.servlet.http.HttpServletResponse` Methode des `write` Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Bytearray an die `write` Methode.
+   * Erstellen Sie ein `FormResult`-Objekt, indem Sie den Wert des `com.adobe.idp.services.holders.FormsResultHolder`-Datenelements des Objekts `value` abrufen.
+   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die `getOutputContent`-Methode des Objekts aufrufen.`FormsResult`
+   * Rufen Sie den Inhaltstyp des `BLOB`-Objekts ab, indem Sie dessen `getContentType`-Methode aufrufen.
+   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie die `setContentType`-Methode aufrufen und den Inhaltstyp des `BLOB`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `getOutputStream`-Methode des Objekts aufrufen.`javax.servlet.http.HttpServletResponse`
+   * Erstellen Sie ein Bytearray und füllen Sie es durch Aufrufen der `BLOB`-Methode des Objekts `getBinaryData`. Diese Aufgabe weist dem Bytearray den Inhalt des Objekts `FormsResult` zu.
+   * Rufen Sie die `write`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `javax.servlet.http.HttpServletResponse` Übergeben Sie das Bytearray an die `write`-Methode.
 
 **Siehe auch**
 
