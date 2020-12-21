@@ -50,7 +50,7 @@ Beispiel: Die erste Textzeile in der folgenden Tabelle enthält ein Textfeld, ei
 
 Sie können zwei oder mehr Textzellen zusammenführen, indem Sie die gewünschten Zellen auswählen, mit der rechten Maustaste klicken, und im Kontextmenü die Option **Zusammenführen** wählen. Außerdem können Sie eine zusammengeführte Zelle teilen, indem Sie mit der rechten Maustaste darauf klicken und im Kontextmenü die Option **Zellen teilen** wählen.
 
-### Hinzufügen, Löschen und Verschieben von Zeilen und Spalten {#add-delete-move-rows-and-columns}
+### Hinzufügen, Löschen und Verschieben von Zeilen und Spalten  {#add-delete-move-rows-and-columns}
 
 Sie können eine Zeile oder Spalte hinzufügen bzw. löschen sowie eine Zeile in einer Tabelle nach oben bzw. nach unten verschieben.
 
@@ -68,11 +68,11 @@ Die Dropdownliste für die Zeile enthält auch die Option „Bearbeiten“ zum B
 >
 >Sie können zwar eine beliebige Anzahl von Zeilen einer Tabelle hinzufügen, aber nur maximal sechs Spalten. Die Überschriftzeile der Tabelle kann nicht gelöscht werden.
 
-### Fügen Sie die Tabellenbeschreibung hinzu {#add-table-description}
+### Fügen Sie die Tabellenbeschreibung hinzu  {#add-table-description}
 
 Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten aufgebaut sind, die von Bildschirmlesehilfen interpretiert und gelesen werden können. Hinzufügen der Beschreibung:
 
-1. Select the table and tap ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png), um deren Eigenschaften in der Seitenleiste anzuzeigen.
 1. Geben Sie auf der Registerkarte „Ein-/Ausgabehilfe“ die Zusammenfassung ein.
 1. Klicken Sie auf **Fertig**.
 
@@ -80,9 +80,9 @@ Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten 
 
 Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in der Seitensymbolleiste verwenden. Führen Sie die folgenden Schritte aus, um zum Stilmodus zu wechseln und den Stil der Tabelle zu bearbeiten:
 
-1. In the page toolbar, before Preview, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Tippen Sie in der Seitensymbolleiste vor der Vorschau auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. In the sidebar select table and tap the edit button ![edit-button](assets/edit-button.png).
+1. Wählen Sie in der Seitenleiste die Tabelle aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png).
 
    Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
@@ -96,11 +96,11 @@ Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in de
 
 Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen von Zeilen zur Laufzeit.
 
-1. Select a table row and tap ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Tabellenzeile und tippen Sie auf ![cmppr](assets/cmppr.png).
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
-At runtime, you will see **`+`** and *`-`* buttons to add or delete a row.
+Zur Laufzeit werden die Schaltflächen **`+`** und *`-`* angezeigt, um eine Zeile hinzuzufügen oder zu löschen.
 
 ![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
 
@@ -108,14 +108,14 @@ At runtime, you will see **`+`** and *`-`* buttons to add or delete a row.
 >
 >Das dynamische Hinzufügen und Löschen einer Zeile wird nicht unterstützt, wenn das Mobil-Layout „Kopfzeilen links“ aktiviert ist.
 
-## Ausdrücke in einer Tabelle {#expressions-in-a-table}
+## Ausdrücke in einer Tabelle  {#expressions-in-a-table}
 
 Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Funktionen (z. B. das Ein- bzw. Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren bzw. Deaktivieren einer Zelle, das Überprüfen der Benutzereingabe usw.) bereitzustellen. Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
 
 Während Tabellen und Zeilen nur Ausdrücke zum Steuern ihrer Sichtbarkeit unterstützen, unterstützen Zellen folgende Ausdrücke:
 
 * **Initialisierungsskript**: Zum Ausführen einer Aktion nach der Initialsierung eines Felds.
-* **Skript zum Bestätigen von Werten:** , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **Skript zum Bestätigen von Werten:** um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
 
 >[!NOTE]
 >
@@ -136,13 +136,15 @@ Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufg
 
 Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bearbeiten“ einer Tabelle auf der Registerkarte „Stile“ konfigurieren.
 
-### Kopfzeilen links {#headers-on-left}
+### Kopfzeilen links  {#headers-on-left}
 
 Im Layout „Kopfzeilen links“ werden die Spaltenüberschriften der Tabelle auf der linken Seite angeordnet und nur eine Zelle steht neben der Kopfzeile. Jede Zeile in diesem Layout ist ein eigenständiger Abschnitt. In den folgenden Abbildungen wird eine Tabelle auf einem Desktop mit derselben auf einem Mobilgerät verglichen.
 
-![desktopView](assets/desktopview.png)**Abbildung:** *Desktop-Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
+![Desktop-](assets/desktopview.png)
+**AnsichtAbbildung:** *Desktop-Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
 
-![headersontheleft](assets/headersontheleft.png)**Abbildung:** *Mobile Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
+![](assets/headersontheleft.png)
+**headersontheleftAbbildung:** *Mobile Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
 
 ### Layout „Reduzierbare Spalten“{#collapsible-columns-layout}
 
@@ -154,9 +156,11 @@ Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert
 
 In den folgenden Abbildungen werden Tabellen mit reduzierten und erweiterten Spalten verglichen.
 
-![Reduzierte Spalte](assets/collapsed-column.png)**Abbildung:** *Reduzierte Spalten einer Tabelle mit nur zwei Spalten auf einem Mobilgerät*
+![Reduzierte ](assets/collapsed-column.png)
+**SpalteAbbildung:** *Reduzierte Spalten einer Tabelle mit nur zwei Spalten auf einem Mobilgerät*
 
-![collapse_column](assets/collapsible_column.png)**Abbildung:** *Erweiterte Spalte einer Tabelle auf einem Mobilgerät*
+![collapse_](assets/collapsible_column.png)
+**columnAbbildung:** *Erweiterte Spalte einer Tabelle auf einem Mobilgerät*
 
 ## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
 
@@ -232,7 +236,7 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 </afData>
 ```
 
-In the sample XML, the data for a row is defined by the `<Row1>` tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
+In der XML-Musterdatei werden die Daten für eine Zeile durch die Tags `<Row1>` definiert, bei denen es sich um den Elementnamen für die Zeile in der Tabelle handelt. Innerhalb des Tags `<Row1>` werden die Daten für jede Zelle im Tag für den Elementnamen definiert, z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`.
 
 Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *http://localhost:4502/myForms/bankTransaction.html* und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* befindet, können Sie die Tabellen mit Daten unter folgender URL abrufen:
 
