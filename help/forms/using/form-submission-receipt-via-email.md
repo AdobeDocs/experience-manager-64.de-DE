@@ -23,13 +23,13 @@ ht-degree: 89%
 
 Adaptive Formulare bieten mehrere standardmäßige [Übermittlungsaktionen](/help/forms/using/configuring-submit-actions.md)-Workflows, um die Formulardaten an verschiedene Endpunkte zu senden.
 
-For example, the **Email action** submit action sends an email on successful submission of an adaptive form. Sie kann auch so konfiguriert werden, dass die Formulardaten und die PDF-Datei in der E-Mail gesendet werden.
+Beispielsweise sendet die Übermittlungsaktion **E-Mail-Aktion** eine E-Mail bei erfolgreicher Übermittlung eines adaptiven Formulars. Sie kann auch so konfiguriert werden, dass die Formulardaten und die PDF-Datei in der E-Mail gesendet werden.
 
 In diesem Artikel werden die Schritte erläutert, mit denen die E-Mail-Aktion für ein adaptives Formular aktiviert wird, sowie die verschiedenen bereitgestellten Konfigurationen.
 
 >[!NOTE]
 >
->You can also use the **Email PDF action** to send the completed form by email as a PDF attachment. Die für diese Aktion verfügbaren Konfigurationsoptionen sind mit den Optionen identisch, die für die E-Mail-Aktion verfügbar sind. Die E-Mail-PDF-Aktion ist nur für XFA-basierte adaptive Formulare verfügbar.
+>Sie können auch die Aktion **PDF-Datei per E-Mail versenden** verwenden, um das ausgefüllte Formular per E-Mail als PDF-Anhang zu senden. Die für diese Aktion verfügbaren Konfigurationsoptionen sind mit den Optionen identisch, die für die E-Mail-Aktion verfügbar sind. Die E-Mail-PDF-Aktion ist nur für XFA-basierte adaptive Formulare verfügbar.
 
 ## E-Mail-Aktion {#email-action}
 
@@ -39,7 +39,7 @@ Mit der E-Mail-Aktion kann ein Autor automatisch eine E-Mail an einen oder mehre
 >
 >Um die E-Mail-Aktion verwenden zu können, müssen Sie dem AEM-E-Mail-Dienst konfigurieren, wie in [Konfigurieren des E-Mail-Diensts](/help/sites-administering/notification.md#configuring-the-mail-service) beschrieben.
 
-### Aktivieren der E-Mail-Aktion in einem adaptiven Formular {#enabling-email-action-on-an-adaptive-form}
+### Aktivieren der E-Mail-Aktion in einem adaptiven Formular  {#enabling-email-action-on-an-adaptive-form}
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus.
 
@@ -49,7 +49,7 @@ Mit der E-Mail-Aktion kann ein Autor automatisch eine E-Mail an einen oder mehre
 
    ![Dialogfeld „Komponente bearbeiten“ für ein adaptives Formular](assets/start_of_adp_form.png)
 
-1. Select the **Submit actions** tab and choose **Email action** from the Submit action drop-down list.
+1. Wählen Sie die Registerkarte **Übermittlungsaktionen** und wählen Sie **E-Mail-Aktion** aus der Dropdown-Liste Übermittlungsaktion.
 
    Auf der Registerkarte werden die Optionen angezeigt, mit denen die E-Mail-Aktion für das aktuelle Formular konfiguriert werden.
 
@@ -75,7 +75,7 @@ Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die
 
 In der Registerkarte „E-Mail-Aktion“ können Sie Platzhalter verwenden, die verarbeitet werden, wenn die Aktion ausgeführt wird. Das bedeutet, dass die Header der E-Mail (wie Mailto, CC, BCC, Betreff) erstellt werden, wenn der Benutzer das Formular sendet.
 
-To define a placeholder, specify `${<field name>}` in a field in the Submit actions tab.
+Um einen Platzhalter zu definieren, geben Sie `${<field name>}` in ein Feld auf der Registerkarte &quot;Übermittlungsaktionen&quot;ein.
 
 Beispiel: Wenn das Formular das Feld **E-Mail-Adresse** mit dem Namen `email_addr` zur Erfassung der E-Mail-ID eines Benutzers enthält, können Sie Folgendes im Feld „Mailto“, „CC“ oder „BCC“ angeben.
 
