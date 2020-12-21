@@ -24,6 +24,6 @@ Zum Markieren einer bestehenden Domäne als veraltet verwenden Sie die Seite „
 
 Wenn Sie eine Domäne mit demselben Namen wie dem der gelöschten Domäne erstellen, wird die gelöschte Domäne zusammen mit den enthaltenen Informationen neu aktiviert. Die Domäne „DefaultDom“ kann nicht gelöscht werden.
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Domain Management]**.
-1. Select the check box for the domain to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Domänenverwaltung]**.
+1. Aktivieren Sie das Kontrollkästchen der zu löschenden Domäne, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL OK]**.
 
