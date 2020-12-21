@@ -19,7 +19,7 @@ ht-degree: 71%
 
 # Verwalten von Agentenunterschriftbildern {#manage-agent-signature-images}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In der Correspondence Management können Sie ein Bild für die Agentunterzeichnung in Briefen verwenden. Nachdem Sie das Agentsignaturbild beim Erstellen eines Briefs eingerichtet haben, können Sie das Agentsignaturbild im Brief als Signatur des Absenderagenten wiedergeben.
 
@@ -45,7 +45,7 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 
       >[!NOTE]
       >
-      >cmUserRoot ist der Standardspeicherort, unter dem AEM nach dem Agentsignaturbild sucht. You can, however, change it by editing the CM User Root property in the [Correspondence Management configuration properties](/help/forms/using/cm-configuration-properties.md).
+      >cmUserRoot ist der Standardspeicherort, unter dem AEM nach dem Agentsignaturbild sucht. Sie können sie jedoch ändern, indem Sie die Eigenschaft &quot;CM-Benutzerstamm&quot;in den Konfigurationseigenschaften [Correspondence Management](/help/forms/using/cm-configuration-properties.md) bearbeiten.
 
 1. Navigieren Sie in Content Explorer zum cmUserRoot-Ordner und fügen Sie das Agentsignaturbild hinzu.
 
@@ -61,17 +61,17 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 
       **Typ:** nt:file
 
-      Under the `cmUserRoot` folder, a new folder called `JohnDoe` (or the name you have given in the previous step) is created.
+      Unter dem Ordner `cmUserRoot` wird ein neuer Ordner mit dem Namen `JohnDoe` (oder der Name, den Sie im vorherigen Schritt angegeben haben) erstellt.
 
-   1. Click the new folder you have created (here `JohnDoe`). Der Content Explorer zeigt den Inhalt des Ordners abgeblendet an.
+   1. Klicken Sie auf den neu erstellten Ordner (hier `JohnDoe`). Der Content Explorer zeigt den Inhalt des Ordners abgeblendet an.
 
-   1. Double-click the **jcr:content** property, set its type as **nt:resource**, and then click the green check mark to save the entry.
+   1. Klicken Sie bei gedrückter Dublette auf die Eigenschaft **jcr:content**, legen Sie den Typ **nt:resource** fest und klicken Sie dann auf das grüne Häkchen, um den Eintrag zu speichern.
 
       Wenn die Eigenschaft nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“. 
 
       ![Eigenschaft „jcr:content“](assets/3_jcrcontentntresource.png)
 
-      Zu den Untereigenschaften von „jcr:content“ gehört die abgeblendet dargestellte Eigenschaft „jcr:data“. Doppelklicken Sie auf „jcr:data“. Die Eigenschaft kann bearbeitet werden, und die Schaltfläche &quot;Datei auswählen&quot;wird im Eintrag angezeigt. Click **Choose File** and select the image file you want to use as a logo. Für die Bilddatei wird keine Erweiterung benötigt.
+      Zu den Untereigenschaften von „jcr:content“ gehört die abgeblendet dargestellte Eigenschaft „jcr:data“. Doppelklicken Sie auf „jcr:data“. Die Eigenschaft kann bearbeitet werden, und die Schaltfläche &quot;Datei auswählen&quot;wird im Eintrag angezeigt. Klicken Sie auf **Datei** wählen und wählen Sie die Bilddatei aus, die Sie als Logo verwenden möchten. Für die Bilddatei wird keine Erweiterung benötigt.
 
       ![JCR-Daten](assets/5_jcrdata.png)
    Klicken Sie auf **Alle speichern**.
