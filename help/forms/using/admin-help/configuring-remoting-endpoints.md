@@ -24,4 +24,4 @@ Ein Remoting-Endpunkt aktiviert eine Anwendung, die mit Flex erstellt wurde, um 
 
 ## Remoting-Endpunkteinstellungen {#remoting-endpoint-settings}
 
-**Flex Client-Authentifizierungsmethode:** Bestimmt den Typ der Antwort, die der Server an den Client zurücksendet, wenn der aufgerufene Dienst für Sicherheit aktiviert ist, der aufgerufene Vorgang keine anonymen Aufrufe unterstützt und der Client keine oder ungültige Anmeldeinformationen übergibt.
+**Flex Client-Authentifizierungsmethode:** Bestimmt den Typ der Antwort, die der Server an den Client zurücksendet, wenn der aufgerufene Dienst sicherheitsaktiviert ist, der aufgerufene Vorgang keine anonymen Aufrufe unterstützt und der Client keine oder ungültige Anmeldeinformationen übergibt.
