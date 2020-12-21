@@ -33,7 +33,7 @@ Für adaptive Formularautoren werden Referenzfragmente im AEM Forms-Paket [AEM-F
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
 
-Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Informationen zum Installieren eines Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md).
 
 ![Alle aufgeführten  Fragmente](assets/ootb-frags.png)
 
