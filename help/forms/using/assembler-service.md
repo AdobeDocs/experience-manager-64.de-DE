@@ -27,11 +27,12 @@ Sie können den Assembler-Dienst für die folgenden Vorgänge verwenden:
 
 Mithilfe des Assembler-Dienstes können Sie mindestens zwei PDF-Dokumente in ein einziges PDF-Dokument oder PDF-Portfolio zusammenführen. Sie können dem PDF-Dokument auch Funktionen hinzufügen, die Navigation unterstützen oder die Sicherheit erhöhen. Im Folgenden finden Sie einige Möglichkeiten, wie Sie PDF-Dokumente zusammenführen können:
 
-### Assemblieren eines einzelnen PDF-Dokuments {#assemble-a-simple-pdf-document}
+### Assemblieren eines einzelnen PDF-Dokuments  {#assemble-a-simple-pdf-document}
 
 Die folgende Abbildung zeigt, wie drei Quelldokumente zu einem einzelnen Zieldokument zusammengeführt werden.
 
-![Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten](assets/as_document_assembly.png)**Abbildung:** *Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
+![Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-](assets/as_document_assembly.png)
+**DokumentenAbbildung:** *Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
 
 Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenführen des Dokuments verwendet wird. Er gibt den Namen der Quelldokumente, mit deren Hilfe das Zieldokument generiert werden soll, sowie den Namen des Zieldokuments an.
 
@@ -51,7 +52,7 @@ Merkmale:
 * Anderen aus dem Basisdokument (Doc1) übernommenen Merkmalen, einschließlich Metadaten, Seitenbeschriftungen und Seitengröße.
 * Das Zieldokument enthält ein Inhaltsordner, das aus den Lesezeichen im Quelldokument erstellt wird.
 
-### Erstellen eines PDF-Portfolios {#create-a-pdf-portfolio}
+### Erstellen eines PDF-Portfolios  {#create-a-pdf-portfolio}
 
 Der Assembler-Dienst kann PDF-Portfolios erstellen, die eine Sammlung von Dokumenten und eine in sich geschlossene Benutzeroberfläche enthalten. Die Oberfläche wird als PDF-Portfolio-Layout oder als PDF-Portfolio-Navigator (Navigator) bezeichnet. PDF-Portfolios erweitern die Funktionen von PDF-Paketen durch Hinzufügen des Navigators, von Ordnern und Begrüßungsseiten. Die Oberfläche kann die Benutzererfahrung verbessern durch Nutzung von lokalisierten Textzeichenfolgen, benutzerdefinierten Farbschemas und grafischen Ressourcen. Das PDF-Portfolio kann außerdem Ordner zum Organisieren der Dateien im Portfolio enthalten.
 
@@ -72,7 +73,7 @@ Wenn der Assembler-Dienst das folgende DDX-Dokument interpretiert, führt er ein
 </DDX>
 ```
 
-### Zusammenführen von verschlüsselten Dokumenten {#assemble-encrypted-documents}
+### Zusammenführen von verschlüsselten Dokumenten  {#assemble-encrypted-documents}
 
 Beim Zusammenführen eines Dokuments kann das PDF-Dokument auch mit einem Kennwort verschlüsselt werden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Zum Verschlüsseln eines PDF-Dokuments mit einem Kennwort muss das DDX-Dokument encryption-Elementwerte enthalten, die für die Verschlüsselung eines PDF-Dokuments erforderlich sind.
 
@@ -80,13 +81,14 @@ Der Encryption-Dienst muss nicht Bestandteil Ihrer LiveCycle-Installation sein, 
 
 Wenn mindestens eines der Eingabedokumente verschlüsselt ist, geben Sie zum Öffnen des Dokuments als Teil des DDX-Dokuments ein Kennwort an.
 
-### Zusammenführen von Dokumenten mithilfe der Bates-Nummerierung {#assemble-documents-using-bates-numbering}
+### Zusammenführen von Dokumenten mithilfe der Bates-Nummerierung  {#assemble-documents-using-bates-numbering}
 
 Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwenden, um für jede Seite einen eindeutigen Seitenbezeichner zu vergeben. Bei Verwendung der Bates-Nummerierung wird jeder Seite im Dokument (bzw. im Dokumentensatz) eine Zahl zugewiesen, die diese Seite eindeutig identifiziert. Beispielsweise Produktionsdokumente, die Materialaufstellungsinformationen enthalten und der Herstellung einer Baugruppe zugeordnet sind, können einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell erhöhten numerischen Wert sowie ein optionales Präfix und Suffix. Die Abfolge „Präfix + numerischer Wert + Suffix“ wird als Bates-Musterbezeichnet.
 
 Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet.
 
-![Ein PDF-Dokument mit einer eindeutigen Kennung im Header](do-not-localize/as_batesnumber.png)**Abbildung des Dokuments:** *Ein PDF-Dokument, das eine eindeutige ID enthält, die sich in der Kopfzeile des Dokuments befindet*
+![Ein PDF-Dokument mit einer eindeutigen Kennung im ](do-not-localize/as_batesnumber.png)
+**Header des DokumentsAbbildung:** *Ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der Kopfzeile des Dokuments befindet*
 
 ### Reduzieren und Zusammenführen von Dokumenten {#flatten-and-assemble-documents}
 
@@ -98,17 +100,18 @@ Wenn Sie ein PDF-Dokument erstellen, das aus interaktiven PDF-Dokumenten zusamme
 >
 >Der Assembler-Dienst verwendet den Output-Dienst zum Reduzieren von dynamischen XFA-Formularen. Wenn der Assembler-Dienst eine DDX-Datei verarbeitet, die die Reduzierung eines dynamischen XFA-Formulars durch den Dienst erfordert, und der Output-Dienst nicht verfügbar ist, wird eine Ausnahme erzeugt. Der Assembler-Dienst kann ein Acrobat-Formular oder ein statisches XFA-Formular reduzieren, ohne den Output-Dienst zu verwenden.
 
-## Zusammenführen von XDP-Dokumenten {#assemble-xdp-documents}
+## Zusammenführen von XDP-Dokumenten  {#assemble-xdp-documents}
 
 Mithilfe des Assembler-Dienstes können Sie mehrere XDP-Dokumente in ein einziges XDP-Dokument oder in ein PDF-Dokument zusammenführen. Bei XDP-Quelldateien, die Einfügemarken enthalten, können Sie die einzufügenden Fragmente angeben.
 
 Im Folgenden finden Sie einige Möglichkeiten, wie Sie XDP-Dokumente zusammenführen können:
 
-### Assemblieren eines einzelnen XDP-Dokuments {#assemble-a-simple-xdp-document}
+### Assemblieren eines einzelnen XDP-Dokuments  {#assemble-a-simple-xdp-document}
 
 Die folgende Abbildung zeigt, wie drei XDP-Quelldokumente zu einem einzelnen XDP-Zieldokument zusammengeführt werden. Das XDP-Zieldokument enthält drei XDP-Quelldokumente und die dazugehörigen Daten. Das Zieldokument ruft grundlegende Basisattribute von dem Basisdokument ab, bei dem es sich um das erste XDP-Quelldokument handelt.
 
-![Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten](assets/as_assembler_xdpassembly.png)**Abbildung:** *Assemblieren eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
+![Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-](assets/as_assembler_xdpassembly.png)
+**DokumentenAbbildung:** *Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
 
 Nachfolgend finden Sie ein DDX-Dokument, das das oben gezeigte Ergebnis erzeugt.
 
@@ -122,7 +125,7 @@ Nachfolgend finden Sie ein DDX-Dokument, das das oben gezeigte Ergebnis erzeugt.
 </DDX>
 ```
 
-### Auflösen von Verweisen während der Zusammenführung {#resolving-references-during-assembly}
+### Auflösen von Verweisen während der Zusammenführung  {#resolving-references-during-assembly}
 
 Normalerweise können XDP-Dokumente Bilder enthalten, auf die entweder durch absolute oder durch relative Verweise verwiesen wird. Der Assembler-Dienst behält standardmäßig die Verweise auf die referenzierten Bilder im resultierenden XDP-Dokument bei.
 
@@ -135,7 +138,7 @@ Sie können festlegen, wie der Assembler-Dienst die Bilder, auf die in den Quell
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
-   <td>none</td> 
+   <td>keine</td> 
    <td>Löst keine Verweise auf.</td> 
   </tr> 
   <tr> 
@@ -155,7 +158,7 @@ Sie können festlegen, wie der Assembler-Dienst die Bilder, auf die in den Quell
 
 Sie können den Wert des resolveAssets-Attributs entweder im XDP-Quell-Tag oder im Ergebnis-Tag des übergeordneten XDP-Elements angeben. Wenn das Attribut im XDP-Ergebnis-Tag angegeben ist, wird es von allen XDP-Quellelementen übernommen, die untergeordnete Objekte vom XDP-Ergebnis sind. Die explizite Angabe des Attributs für ein Quellelement überschreibt jedoch einzig die Einstellung des Ergebniselements für dieses Quelldokument.
 
-#### Alle Quellverweise in einem XDP-Dokument auflösen {#resolve-all-source-references-in-an-xdp-document}
+#### Alle Quellverweise in einem XDP-Dokument auflösen  {#resolve-all-source-references-in-an-xdp-document}
 
 Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die Variable\
 resultierendes Dokument für alle, wie im folgenden Beispiel:
@@ -199,7 +202,7 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### Selektives Auflösung absoluter oder relativer Verweise {#selectively-resolve-absolute-or-relative-references}
+#### Selektives Auflösung absoluter oder relativer Verweise  {#selectively-resolve-absolute-or-relative-references}
 
 Sie können die absoluten oder relativen Verweise in allen oder in einigen Quelldokumenten selektiv auflösen, wie im Beispiel unten dargestellt:
 
@@ -222,7 +225,8 @@ Formularentwickler verwenden LiveCycle Designer, um Formularfragmente zu erstell
 
 Die folgende Abbildung zeigt zwei XML-Formulare (XFA-Vorlagen). Das Formular auf der linken Seite enthält eine Einfügemarke mit dem Namen myInsertionPoint. Das Formular auf der rechten Seite enthält ein Fragment mit dem Namen myFragment.
 
-![Einfügen von Formularfragmenten in ein XFA-Formular](assets/as_assembler_fragment_assy_assembled.png)**Abbildung:** *Einfügen von Formularfragmenten in ein XFA-Formular*
+![Einfügen von Formularfragmenten in ein XFA-](assets/as_assembler_fragment_assy_assembled.png)
+**FormularAbbildung:** *Einfügen von Formularfragmenten in ein XFA-Formular*
 
 Wenn der Assembler-Dienst das folgende DDX-Dokument interpretiert, erstellt er ein XML-Formular, das ein anderes XML-Formular enthält. Das myFragment-Unterformular aus dem myFragmentSource-Dokument wird an der Einfügemarke myInsertionPoint in dem Dokument myFormSource eingefügt.
 
@@ -237,7 +241,7 @@ source="myFragmentSource"/>
 </DDX
 ```
 
-### Verpacken eines XDP-Dokuments als PDF {#package-an-xdp-document-as-pdf}
+### Verpacken eines XDP-Dokuments als PDF  {#package-an-xdp-document-as-pdf}
 
 Mithilfe des Assembler-Dienstes können Sie ein XDP-Dokument als PDF-Dokument packen, wie in diesem DDX-Dokument gezeigt.
 
@@ -252,15 +256,16 @@ Mithilfe des Assembler-Dienstes können Sie ein XDP-Dokument als PDF-Dokument pa
 </DDX>
 ```
 
-## Aufteilen von PDF-Dokumenten {#disassemble-pdf-documents}
+## Aufteilen von PDF-Dokumenten  {#disassemble-pdf-documents}
 
 Mit dem Assembler-Dienst können Sie PDF-Dokumente aufteilen. Der Dienst kann Seiten aus dem Quelldokument extrahieren oder ein Quelldokument basierend auf Lesezeichen aufteilen. Diese Aufgabe ist normalerweise hilfreich, wenn das PDF-Dokument ursprünglich aus vielen Einzeldokumenten erstellt wurde, wie z. B. einer Sammlung von Aussagen.
 
-### Extrahieren von Seiten aus einem Quelldokument {#extract-pages-from-a-source-document}
+### Extrahieren von Seiten aus einem Quelldokument  {#extract-pages-from-a-source-document}
 
 In den folgenden Abbildungen werden die Seiten 1 bis 3 aus dem Quelldokument extrahiert und in einem neuen Zieldokument abgelegt.
 
-![Extrahieren bestimmter Seiten aus einem Quell-Dokument](assets/as_intro_page_extraction.png)**Abbildung:** *Extrahieren bestimmter Seiten aus einem Quell-Dokument*
+![Extrahieren bestimmter Seiten aus einem Quelldokument ](assets/as_intro_page_extraction.png)
+**Abbildung:** *Extrahieren bestimmter Seiten aus einem Quelldokument*
 
 Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokuments verwendet wird.
 
@@ -270,11 +275,12 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 </PDF>
 ```
 
-### Aufteilen eines Quelldokuments basierend auf Lesezeichen {#divide-a-source-document-based-on-bookmarks}
+### Aufteilen eines Quelldokuments basierend auf Lesezeichen  {#divide-a-source-document-based-on-bookmarks}
 
 In der folgenden Abbildung wird DocA in mehrere Zieldokumente aufgeteilt. Dabei gibt das erste Lesezeichen auf Ebene 1 auf einer Seite den Anfang eines neuen Zieldokuments an.
 
-![Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere Dokumente](assets/as_intro_pdfsfrombookmarks.png)**Abbildung:** *Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere Dokumente*
+![Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere ](assets/as_intro_pdfsfrombookmarks.png)
+**DokumenteAbbildung:** *Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere Dokumente*
 
 Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen eines Quelldokuments Lesezeichen verwendet.
 
@@ -284,11 +290,11 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen eines Quell
 </PDFsFromBookmarks>
 ```
 
-## Bestimmen der PDF/A-Kompatibilität von Dokumenten {#determine-whether-documents-are-pdf-a-compliant}
+## Bestimmen der PDF/A-Kompatibilität von Dokumenten  {#determine-whether-documents-are-pdf-a-compliant}
 
 Mit dem Assembler-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten.  Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
-## Abrufen von Informationen zu PDF-Dokumenten {#obtain-information-about-a-pdf-document}
+## Abrufen von Informationen zu PDF-Dokumenten  {#obtain-information-about-a-pdf-document}
 
 Mit dem Assembler-Dienst können Sie die folgenden Informationen über PDF-Dokumente abrufen:
 
@@ -304,11 +310,11 @@ Mit dem Assembler-Dienst können Sie die folgenden Informationen über PDF-Dokum
 
 * Paketdateien, einschließlich Dateiinformationen, Ordner-, Paket-, Schema- und Felddaten. Sie können diese Daten aus einem PDF-Dokument exportieren und in ein PDF-Dokument importieren.
 
-## Überprüfen von DDX-Dokumenten {#validate-ddx-documents}
+## Überprüfen von DDX-Dokumenten  {#validate-ddx-documents}
 
 Mit dem Assembler-Dienst können Sie ermitteln, ob ein DDX-Dokument gültig ist. Wenn Sie beispielsweise von einer früheren Version von LiveCycle aktualisiert haben, stellt die Überprüfung sicher, dass Ihr DDX-Dokument gültig ist.
 
-## Andere Dienste aufrufen {#call-other-services}
+## Andere Dienste aufrufen  {#call-other-services}
 
 Sie können DDX-Dokumente verwenden, die dazu führen, dass der Assembler-Dienst die folgenden LiveCycle-Dienste aufruft. Der Assembler-Dienst kann nur die mit LiveCycle installierten Dienste aufrufen.
 
