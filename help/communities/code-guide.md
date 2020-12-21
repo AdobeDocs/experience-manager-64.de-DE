@@ -24,23 +24,23 @@ ht-degree: 4%
 
 Die Zusammenarbeit mit AEM Communities hat sich von der starken Abhängigkeit von Java Server Pages zur Flexibilität bei der Auswahl von Vorlagen für Skriptsprachen entwickelt, bei denen Geschäftslogik, Stil und Seiteninhalt sich voneinander unterscheiden.
 
-Die SocialResourceProvider-API bietet weitere Flexibilität bei der Arbeit mit benutzergenerierten Inhalten (UGC), sodass Sie nicht mehr wissen müssen, welche [SRP](srp.md) -Option für die Bereitstellung ausgewählt wurde.
+Eine höhere Flexibilität beim Arbeiten mit benutzergenerierten Inhalten (UGC) ist über die SocialResourceProvider-API möglich. Dadurch müssen Sie nicht mehr wissen, welche Option [SRP](srp.md) für die Bereitstellung ausgewählt wurde.
 
 Im Folgenden finden Sie verschiedene Richtlinien und Best Practices für die Codierung von AEM Communities-Entwicklern:
 
 ### Code {#code}
 
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Wie vermeiden Sie das Schreiben einer Anwendung, die nur funktioniert, wenn UGC in JCR (JSRP) gespeichert wird.
-* [SocialUtils Refactoring](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
-* [Benennungsregeln](naming-conventions.md) - Benennungskonventionen für benutzerdefinierte Java-Klassen.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Wie vermeiden Sie das Schreiben einer Anwendung, die nur funktioniert, wenn UGC in JCR (JSRP) gespeichert wird.
+* [SocialUtils Refactoring](socialutils.md)  - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
+* [Benennungsregeln](naming-conventions.md)  - Benennungskonventionen für benutzerdefinierte Java-Klassen.
 
 ### Skripte {#scripts}
 
-* [Sideloading Communities Components](sideloading.md) - Anleitung zum dynamischen Hinzufügen einer Komponente nach dem Laden der Seite.
-* [Rich Text Editor Essentials](rte.md) - Anleitung zum Anpassen der Rich-Text-Benutzeroberfläche, die Mitgliedern zum Posten von Inhalten zur Verfügung gestellt wird.
+* [Sideloading Communities Components](sideloading.md)  - Anleitung zum dynamischen Hinzufügen einer Komponente nach dem Laden der Seite.
+* [Rich Text Editor Essentials](rte.md)  - Anleitung zum Anpassen der Rich-Text-Benutzeroberfläche, die Mitgliedern zum Posten von Inhalten zur Verfügung gestellt wird.
 
 ### IDE {#ide}
 
-* [Verwenden von Maven for Communities](maven.md) - Anleitung zum Einbeziehen der Communities API-JARs.
-* [SocialUtils Refactoring](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
+* [Verwenden von Maven for Communities](maven.md)  - Anleitung zum Einbeziehen der Communities API-JARs.
+* [SocialUtils Refactoring](socialutils.md)  - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
 
