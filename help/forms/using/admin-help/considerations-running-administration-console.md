@@ -22,7 +22,7 @@ ht-degree: 89%
 
 Folgendes sollte beim Ausführen von Administration Console beachtet werden:
 
-* If you access administration console using the URL `https://*[hostname]*:*[port]*/adminui`, the specified host name cannot contain underscore characters. Andernfalls funktionieren Links zu einigen Bereichen von Administration Console eventuell nicht ordnungsgemäß.
+* Wenn Sie mithilfe der URL `https://*[hostname]*:*[port]*/adminui` auf Administration Console zugreifen, darf der angegebene Hostname keine Unterstrichzeichen enthalten. Andernfalls funktionieren Links zu einigen Bereichen von Administration Console eventuell nicht ordnungsgemäß.
 * Wenn Sie Administration Console in Windows Explorer unter einem japanischen Betriebssystem ausführen, können Sie auf folgende Probleme stoßen:
 
    * Beim Klicken auf einen Link wechseln Sie zur Anmeldeseite zurück, nicht zum erwarteten Ziel des Links.
