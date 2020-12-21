@@ -58,7 +58,7 @@ Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Edit
 
       Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. Auf der Strukturebene können Sie die Kopf- und Fußzeile hinzufügen und anpassen. Auf der Ebene &quot;Anfänglicher Inhalt&quot;können Sie den Formularinhalt anpassen.
 
-   * **Vorschau:** Ermöglicht die Vorschau, wie die Vorlage aussieht, wenn Sie sie veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
+   * **Vorschau:** Hier können Sie Vorschauen dazu erstellen, wie die Vorlage aussieht, wenn Sie sie veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 
 * **Seitenleiste:** Enthält die Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
 * **Komponenten-Symbolleiste:** Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie die Komponente anpassen können.
@@ -83,7 +83,7 @@ Wenn Sie die Strukturebene im Vorlageneditor auswählen, werden die Layout-Conta
 
 **Abbildung:** *Layout-Container in der Strukturebene*
 
-**A.** Layout Container für Kopfzeilenkomponente **B.** Layout-Container für Fußzeilenkomponente
+**A.** Layout-Container für die Kopfzeilenkomponente  **B.** Layout-Container für Fußzeilenkomponente
 
 Ziehen Sie die Kopfzeilenkomponente des adaptiven Formulars in den Layout-Container über dem Container des adaptiven Formulars. Nachdem Sie die Komponente hinzugefügt haben, können Sie seine Eigenschaften festlegen, mit denen Sie ein Logo hinzufügen und den Titel angeben können.
 
@@ -91,7 +91,7 @@ Wenn Sie die Fußzeilenkomponente in den Layout-Container unter dem Container de
 
 ![Kopf- und Fußzeile in der Strukturebene hinzugefügt](assets/header-and-footer.png)
 
-**Abbildung:** *Kopf- und Fußzeile in der Strukturebene hinzugefügt*
+**Abbildung:** *Kopf- und Fußzeile in der Strukturebene*
 
 #### Sperren/Entsperren von Komponenten in der Strukturebene {#locking-unlocking-components-in-the-structure-layer}
 
@@ -107,7 +107,7 @@ Beispiel: Sie fügen die Fußzeilenkomponente der Vorlage hinzu. Wenn Sie die Ko
 
 Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. ein Design und Übermittlungsaktionen.
 
-Autoren können sie als Grundlage verwenden, um ein Formular zu erstellen. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage festgelegt. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png)**[!UICONTROL > Initial Content ]**.
+Autoren können sie als Grundlage verwenden, um ein Formular zu erstellen. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage festgelegt. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor die Vorschau in der Seitensymbolleiste erfolgt, tippen Sie auf ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png)**[!UICONTROL  Anfänglicher Inhalt ]**.
 
 ![Ebene „Anfänglicher Inhalt“ im Vorlageneditor](assets/initial-content-layer.png)
 
@@ -121,7 +121,7 @@ Weitere Informationen finden Sie unter [Randleiste](/help/forms/using/introducti
 >
 >Wenn Sie &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;als Übermittlungsaktion auswählen, erhalten Sie eine Option zum Festlegen des Pfads für die Datenspeicherung. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
 
-#### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern   {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Beispiel: Sie erstellen eine Vorlage mit den folgenden Registerkarten:
 
@@ -137,7 +137,7 @@ Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der
 * Sie können die Bedienfeldkomponente aus dem Komponenten-Browser in der Seitenleiste ziehen.
 * Sie können ein untergeordnete Bedienfeld von `guideRootPanel` aus der Symbolleiste hinzufügen.
 
-Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Select the panels and tap ![cmppr](assets/cmppr.png) to open the properties in the sidebar. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Klicken Sie in der Randleiste auf „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Tap ![cmppr](assets/cmppr.png) in the component toolbar to open its properties. Wählen Sie im Feld „Bedienfeldlayout“ **Registerkarten oben** und tippen Sie dann auf **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
+Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und tippen Sie auf ![cmppr](assets/cmppr.png), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Klicken Sie in der Randleiste auf „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Tippen Sie in der Komponenten-Symbolleiste auf ![cmppr](assets/cmppr.png), um die Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeldlayout“ **Registerkarten oben** und tippen Sie dann auf **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
@@ -147,13 +147,13 @@ Hinzufügen von Feldern in der Vorlage
 
 Nachdem Sie Bedienfelder hinzugefügt und sie als Registerkarten strukturiert haben, können Sie Felder innerhalb der Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, sehen Sie die Option **[!UICONTROL Komponenten hierher ziehen]**. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag&amp;Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in der Seitenleiste ziehen.
 
-Jede Komponente verfügt über Eigenschaften, die die Datenerfassung und -bearbeitung verbessern. Beispielsweise können Sie die Eigenschaft **[!UICONTROL Erforderliches Feld]** einer Komponente aktivieren. Die Autoren können die Meldung festlegen, die Ihre Kunden sehen, wenn sie das Ausfüllen eines erforderlichen Felds überspringen. Specify the message in **[!UICONTROL Required Field Message]** property.
+Jede Komponente verfügt über Eigenschaften, die die Datenerfassung und -bearbeitung verbessern. Beispielsweise können Sie die Eigenschaft **[!UICONTROL Erforderliches Feld]** einer Komponente aktivieren. Die Autoren können die Meldung festlegen, die Ihre Kunden sehen, wenn sie das Ausfüllen eines erforderlichen Felds überspringen. Geben Sie die Meldung in der Eigenschaft **[!UICONTROL Erforderliche Feldmeldung]** an.
 
 In der Beispielvorlage werden die Felder „Name“, „Telefonnummer“ und „Geburtstag“ in der Registerkarte „Allgemeine Informationen“ hinzugefügt. In der Registerkarte „Berufliche Informationen“ werden die Felder „Derzeit beschäftigt“, „Beschäftigungsverhältnis“ und „Bildungsabschluss“ hinzugefügt.
 
 Nachdem Sie Felder hinzugefügt haben, können Sie Schaltflächen wie „Senden“ und „Zurücksetzen“ hinzufügen.
 
-### Aktivieren der Vorlage {#enabling-the-template}
+### Aktivieren der Vorlage  {#enabling-the-template}
 
 Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren Sie die Vorlage, um sie zum Erstellen von adaptiven Formularen zu verwenden. Aktivieren einer Vorlage:
 
@@ -166,7 +166,7 @@ Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren S
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}
 
-Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere AEM Forms-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. You can package the custom template from `/conf` node in `https://<server>:<port>/crx/packmgr`, and port it in the AEM Forms instance where you want to upload the form.
+Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere AEM Forms-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Sie können die benutzerdefinierte Vorlage vom Knoten `/conf` in `https://<server>:<port>/crx/packmgr` verpacken und in die AEM Forms-Instanz, in die Sie das Formular hochladen möchten, importieren.
 
 ## Erstellen eines adaptiven Formulars mithilfe der Vorlage {#creating-an-adaptive-form-using-the-template}
 
@@ -182,7 +182,7 @@ Führen Sie die folgenden Schritte aus, um Vorlagen anzuzeigen bzw. auszublenden
 
    >[!NOTE]
    >
-   >The URL of AEM web console is `https://[server]:[port]/system/console/configMgr`
+   >Die URL AEM Webkonsole ist `https://[server]:[port]/system/console/configMgr`
 
 1. Suchen und öffnen Sie die **[!UICONTROL FormsManager-Konfigurations]** einstellungen:
 
@@ -196,5 +196,5 @@ Führen Sie die folgenden Schritte aus, um Vorlagen anzuzeigen bzw. auszublenden
 * Wenn Sie Eigenschaften des Formulars im Vorlageneditor ändern, verwenden Sie nicht die Eigenschaft „BindReference“.
 * Wenn Sie einen Haltepunkt hinzufügen möchten, erstellen Sie ihn, wenn Sie eine Vorlage für ein adaptives Formular bearbeiten.
 
-   For more information on breakpoints, see [Responsive Layout](/help/sites-authoring/responsive-layout.md).
+   Weitere Informationen zu Haltepunkten finden Sie unter [Responsive Layout](/help/sites-authoring/responsive-layout.md).
 
