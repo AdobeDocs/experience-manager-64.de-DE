@@ -16,5 +16,5 @@ ht-degree: 8%
 ---
 
 
-# WIP NICHT VERÖFFENTLICHEN - Arbeiten noch nicht abgeschlossen {#do-not-publish-wip-work-in-progress}
+# WIP NICHT VERÖFFENTLICHEN - Arbeiten noch nicht abgeschlossen.{#do-not-publish-wip-work-in-progress}
 
