@@ -71,7 +71,7 @@ Das Widget-Element enthält das Element der Benutzeroberfläche für die Interak
 
 Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine weitere CSS-Klasse: **subtype**. Eine subtype-Klasse zeigt an, welcher Feldtyp es ist, z. B. NumericField, DateField, TextField. Sie können die subtype-Klasse außer Kraft setzen, um die Stile aller Felder des Typs „subtype“ zu ändern.
 
-## CSS-Klassen für verschiedene Komponenten {#css-classes-for-different-components}
+## CSS-Klassen für verschiedene Komponenten  {#css-classes-for-different-components}
 
 <table> 
  <tbody> 
@@ -81,7 +81,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
    <td><strong>Name</strong></td> 
   </tr> 
   <tr> 
-   <td>Seite      </td> 
+   <td>Seite</td> 
    <td>page</td> 
    <td>Benutzerdefinierter Name<br /> oder<br /> Seite&lt;Seitenzahl&gt; (Standard)</td> 
   </tr> 
@@ -123,7 +123,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
  </tbody> 
 </table>
 
-## CSS-Klassen für verschiedene Felder {#css-classes-for-different-fields}
+## CSS-Klassen für verschiedene Felder  {#css-classes-for-different-fields}
 
 Der AEM Forms Designer unterstützt unterschiedliche Typen von Feldern in einem Formular wie NumericField, DecimalField und DateField. All diese Felder enthalten in HTML die oben genannten CSS-Klassen. Je nach Typ des Feldes enthalten sie auch ein paar zusätzliche Klassen.
 
@@ -250,4 +250,4 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 
 `Styling Fields with Validation Errors`
 
-Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. This style change is done by applying a CSS class **widgetError** on the widget component. To modify the default styling, override the **widgetError** class.
+Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError**.
