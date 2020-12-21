@@ -18,9 +18,9 @@ ht-degree: 14%
 ---
 
 
-# Grundlagen der Zuweisung {#assignments-essentials}
+# Zuweisungen Essentials {#assignments-essentials}
 
-Auf dieser Seite finden Sie die wesentlichen Informationen zum Arbeiten mit der Funktion &quot;Zuweisungen&quot;von [Community](overview.md#enablement-community) -Sites, die die Aktivierung ermöglichen.
+Auf dieser Seite finden Sie die wesentlichen Informationen zum Arbeiten mit der Zuweisungsfunktion von [Aktivierungs-Community](overview.md#enablement-community)-Sites.
 
 Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und Lernpfaden zu Mitgliedern von Communities, die eine Aktivierung ermöglichen.
 
@@ -38,7 +38,7 @@ Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.myassign<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learningPath</td> 
+   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.myassign<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learn.path</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -76,8 +76,8 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
 | **Abschluss** | **Success** |
 |---|---|
-| Nicht gestartet | Unknown |
-| Wird ausgeführt | Unknown |
+| Nicht gestartet | unbekannt |
+| Wird ausgeführt | unbekannt |
 | Fertig stellen | Bestanden |
 | Fertig stellen | Fehler |
 
@@ -85,7 +85,7 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
 ### Zuweisungsfunktion {#assignments-function}
 
-Eine Community-Site-Struktur, die die [Zuweisungsfunktion](functions.md#assignments-function)enthält, enthält eine konfigurierte ` [assignments](assignments.md)` Komponente.
+Eine Community-Site-Struktur, die die Funktion [Zuweisungen](functions.md#assignments-function) enthält, enthält eine konfigurierte Komponente ` [assignments](assignments.md)`.
 
 ### Referenz-APIs {#reference-apis}
 
