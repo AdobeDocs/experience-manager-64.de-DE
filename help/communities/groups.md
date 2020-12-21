@@ -19,15 +19,15 @@ ht-degree: 2%
 ---
 
 
-# Community Groups-Konsole {#community-groups-console}
+# Community-Gruppen-Konsole {#community-groups-console}
 
-Die Konsole &quot;Gruppen&quot;bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](sites-console.md#step1) einer Community-Site die Funktion [&quot;](functions.md#groups-function)Gruppen&quot;enthält.
+Die Konsole &quot;Gruppen&quot;bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](sites-console.md#step1) einer Community-Site die [groups-Funktion](functions.md#groups-function) enthält.
 
 * Gruppen können in anderen Gruppen verschachtelt sein. Dies geschieht, wenn die [Struktur der neuen Gruppe](tools-groups.md) die Funktion groups enthält.
 * Nur für die Umgebung des Autors gibt es einen Assistenten zum Erstellen von Gruppen, der dem Assistenten zum Erstellen der Site ähnelt.
 * Ob Mitglieder Gruppen aus der Umgebung &quot;Veröffentlichen&quot;erstellen können, ist beim Hinzufügen einer Gruppenfunktion zu einer Community-Site- oder Community-Gruppenstruktur konfigurierbar.
 
-Von den drei enthaltenen Gruppenvorlagen enthält nur die `Reference Group` Vorlage eine Gruppenfunktion in ihrer Struktur.
+Von den drei enthaltenen Gruppenvorlagen enthält nur die `Reference Group`-Vorlage eine Gruppenfunktion in ihrer Struktur.
 
 Mehrere Facetten von Gemeinschaftsgruppen sind:
 
@@ -37,13 +37,13 @@ Mehrere Facetten von Gemeinschaftsgruppen sind:
 
 >[!NOTE]
 >
->Gemeinschaftsgruppen, die in der Umgebung zum Veröffentlichen vor der [Existenz der Community Groups-Konsole](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)erstellt wurden, werden nicht in der Community Groups-Konsole aufgeführt und können daher nicht in der Konsole geändert werden.
+>Gemeinschaftsgruppen, die in der Umgebung zum Veröffentlichen vor dem [Vorhandensein der Community Groups-Konsole](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1) erstellt wurden, werden nicht in der Community Groups-Konsole aufgeführt und können daher nicht mithilfe der Konsole geändert werden.
 
 >[!NOTE]
 >
->Diese Konsole &quot;Gruppen&quot;, die nur über die Konsole &quot;Communities Sites&quot;zugänglich ist, ist nicht mit der [Gruppenkonsole](members.md) für die Verwaltung von Mitgliedsgruppen zu verwechseln.
+>Diese Gruppenkonsole, die nur über die Communities Sites-Konsole zugänglich ist, ist nicht mit dem Mitglied [Groups console](members.md) für die Verwaltung von Mitgliedsgruppen zu verwechseln.
 >
->Mitgliedergruppen sind Benutzergruppen, die in der Umgebung &quot;Veröffentlichen&quot;registriert sind und von der Autorenversion aus über den [Tunneldienst](deploy-communities.md#tunnel-service-on-author)aufgerufen werden.
+>Mitgliedergruppen sind Benutzergruppen, die in der Umgebung &quot;Veröffentlichen&quot;registriert sind und von der Autorengruppe aus über den [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aufgerufen werden können.
 
 ## Gruppenerstellung {#group-creation}
 
@@ -55,11 +55,11 @@ So greifen Sie auf die Konsole &quot;Gruppen&quot;zu:
 * Wählen Sie eine Instanz einer Community-Site im Ordner aus
 
    * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten
-   * Diese Screenshots stammen aus dem Tutorial &quot;Erste Schritte&quot;, nachdem Gruppen im Veröffentlichungsmodus [erstellt wurden.](published-site.md)
+   * Diese Screenshots stammen aus dem Tutorial &quot;Erste Schritte&quot;, nach dem [Erstellen von Gruppen im Veröffentlichungsmodus](published-site.md)
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-Wählen Sie den Ordner &quot; **[!UICONTROL Gruppen&quot;]** , um ihn zu öffnen.
+Wählen Sie den Ordner **[!UICONTROL Gruppen]** aus, um ihn zu öffnen.
 
 Beim Öffnen werden alle vorhandenen Gruppen angezeigt, unabhängig davon, ob sie beim Autor oder beim Veröffentlichen erstellt wurden.
 
@@ -67,7 +67,7 @@ In dieser Konsole &quot;Gruppen&quot;können neue Gruppen erstellt werden.
 
 ![chlimage_1-134](assets/chlimage_1-134.png)
 
-* Schaltfläche &quot; **[!UICONTROL Gruppe]** erstellen&quot;
+* Schaltfläche **[!UICONTROL Gruppe erstellen]**
 
 ### Schritt 1: Community-Gruppenvorlage {#step-community-group-template}
 
@@ -82,33 +82,33 @@ In dieser Konsole &quot;Gruppen&quot;können neue Gruppen erstellt werden.
 
    Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an einen beliebigen Ort innerhalb der Website verschoben werden. Es wird nicht empfohlen, es zu ändern.
 
-* **[!UICONTROL Menü &quot;Zusätzliche verfügbare Gemeinschaftsgruppensprachen&quot;]** : Verwenden Sie das Pulldown-Menü, um die verfügbaren Gemeinschaftsgruppensprachen auszuwählen. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wurde. Benutzer können in diesem Schritt eine der folgenden Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Konsole &quot;Gruppen&quot;der jeweiligen Community-Sites erstellt.
+* **[!UICONTROL Menü &quot;Zusätzliche verfügbare Sprachen in Community-Gruppen&quot;]** : Verwenden Sie das Pulldown-Menü, um die verfügbaren Gemeinschaftsgruppensprachen auszuwählen. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wurde. Benutzer können in diesem Schritt eine der folgenden Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Konsole &quot;Gruppen&quot;der jeweiligen Community-Sites erstellt.
 
 * **[!UICONTROL Community-Gruppenname]**: Der Name der Stammseite der Gruppe, die in der URL angezeigt wird
 
    * Überprüfen Sie die Dublette, da der Name nach dem Erstellen der Gruppe nicht einfach geändert werden kann.
-   * Die Basis-URL wird unter der `Community Group Name`
+   * Die Basis-URL wird unter dem `Community Group Name` angezeigt
    * Für eine gültige URL hängen Sie &quot;.html&quot;an
 
       *Beispiel*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
-* **[!UICONTROL Menü &quot;Community-Gruppenvorlage]** &quot;: Verwenden Sie das Pulldown-Menü, um eine verfügbare [Community-Gruppenvorlage](tools.md)auszuwählen.
+* **[!UICONTROL Community-]** Gruppenvorlagen-Menü: Verwenden Sie das Pulldown-Menü, um eine verfügbare  [Community-Gruppenvorlage](tools.md) auszuwählen.
 
 ### Schritt 2: Design {#step-design}
 
-#### COMMUNITY GROUP THEME {#community-group-theme}
+#### GEMEINSCHAFTSGRUPPENTHEMEN {#community-group-theme}
 
 ![communityGrouptheme](assets/communitygrouptheme.png)
 
-Das Framework verwendet [Twitter-Bootstrap](https://twitterbootstrap.org/) , um ein reaktionsfähiges, flexibles Design auf die Site zu bringen. Es kann eines der vielen vorgeladenen Bootstrap-Themen ausgewählt werden, um die ausgewählte Community-Gruppenvorlage zu gestalten, oder ein Bootstrap-Design wird hochgeladen.
+Das Framework verwendet [Twitter-Bootstrap](https://twitterbootstrap.org/), um ein reaktionsfähiges, flexibles Design auf die Site zu bringen. Es kann eines der vielen vorgeladenen Bootstrap-Themen ausgewählt werden, um die ausgewählte Community-Gruppenvorlage zu gestalten, oder ein Bootstrap-Design wird hochgeladen.
 
 Wenn diese Option aktiviert ist, wird das Design mit einem undurchsichtigen blauen Häkchen überlagert.
 
 Es ist möglich, ein Design auszuwählen, das sich vom Design der übergeordneten Site unterscheidet.
 
-Nachdem die Community-Site veröffentlicht wurde, können Sie die Eigenschaften [](#modifying-group-properties) bearbeiten und ein anderes Design auswählen.
+Nach der Veröffentlichung der Community-Site ist es möglich, die Eigenschaften [zu bearbeiten und ein anderes Design auszuwählen.](#modifying-group-properties)
 
-#### COMMUNITY GROUP BRANDING {#community-group-branding}
+#### GEMEINSCHAFTSGRUPPENBRANCHE {#community-group-branding}
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
@@ -137,7 +137,7 @@ Es ist möglich, für die Gruppe spezifische Moderatoren hinzuzufügen:
 
 * Nach Mitgliedern suchen (aus der Umgebung der Veröffentlichung), um sie als Moderatoren hinzuzufügen
 
-#### MEMBERSHIP {#membership}
+#### MITGLIEDSCHAFT {#membership}
 
 Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichkeiten, eine Community-Gruppe zu sichern.
 
@@ -148,11 +148,11 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
    Bei Auswahl dieser Option ist die Community-Gruppe eine öffentliche Gruppe. Site-Mitglieder können an der Gruppe und an Beiträgen teilnehmen, ohne explizit der Gruppe beizutreten. Diese Option ist standardmäßig ausgewählt.
 * Erforderliche Mitgliedschaft
 
-   Wenn diese Option aktiviert ist, ist die Community-Gruppe eine offene Gruppe. Die Mitglieder der Community-Site können den Gruppeninhalt Ansichten vornehmen, müssen sich jedoch der Gruppe anschließen, bevor sie Inhalte veröffentlichen können. Mitglieder werden durch Klicken auf die `Join` Schaltfläche in der Umgebung zum Veröffentlichen hinzugefügt. &quot;Standard&quot;ist nicht ausgewählt.
+   Wenn diese Option aktiviert ist, ist die Community-Gruppe eine offene Gruppe. Die Mitglieder der Community-Site können den Gruppeninhalt Ansichten vornehmen, müssen sich jedoch der Gruppe anschließen, bevor sie Inhalte veröffentlichen können. Mitglieder werden durch Klicken auf die Schaltfläche `Join` in der Umgebung zum Veröffentlichen hinzugefügt. &quot;Standard&quot;ist nicht ausgewählt.
 
 * Eingeschränkte Mitgliedschaft
 
-   Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Die Mitglieder der Gemeinschaft müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später mit der Umgebung der [Mitglieder und Gruppen hinzugefügt werden](members.md) . &quot;Standard&quot;ist nicht ausgewählt.
+   Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Die Mitglieder der Gemeinschaft müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später mit der Umgebung [Mitglieder und Gruppen hinzugefügt werden. ](members.md) &quot;Standard&quot;ist nicht ausgewählt.
 
 #### MINIATUR {#thumbnail}
 
@@ -170,9 +170,9 @@ Wenn kein Bild hinzugefügt wird, wird ein Standardbild angezeigt.
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-Falls Anpassungen erforderlich sind, verwenden Sie die Schaltfläche &quot; **Zurück** &quot;, um sie vorzunehmen.
+Wenn Anpassungen erforderlich sind, verwenden Sie die Schaltfläche **Zurück**, um sie vorzunehmen.
 
-Nachdem **Erstellen** ausgewählt und gestartet wurde, kann der Vorgang zum Erstellen der Gruppe nicht unterbrochen werden.
+Wenn **Create** ausgewählt und gestartet wurde, kann der Vorgang zum Erstellen der Gruppe nicht unterbrochen werden.
 
 Nach Abschluss des Vorgangs wird die Karte für die neue Subcommunity-Site (Gruppe) in der Communities Sites Groups-Konsole angezeigt, von der aus Autoren Seiteninhalte hinzufügen können oder Administratoren die Eigenschaften der Site ändern können.
 
@@ -180,15 +180,15 @@ Nach Abschluss des Vorgangs wird die Karte für die neue Subcommunity-Site (Grup
 
 >[!NOTE]
 >
->Die Gruppe wird in allen Sprachen erstellt, wie in [Schritt 1 angegeben: Community-Gruppenvorlage](groups.md#step1communitygrouptemplate) in zusätzlichen verfügbaren Community-Gruppensprachen in der Community-Gruppenkonsole der jeweiligen Community-Sites.
+>Die Gruppe wird in allen Sprachen erstellt, wie in [Schritt 1 angegeben: Community-Gruppenvorlage](groups.md#step1communitygrouptemplate) in &quot;Zusätzliche verfügbare Community-Gruppensprachen&quot;in der Community-Gruppenkonsole der jeweiligen Community-Sites.
 
-## Inhalt der Authoring-Gruppe {#authoring-group-content}
+## Authoring-Gruppeninhalt {#authoring-group-content}
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
 Der Seiteninhalt einer Gruppe kann mit denselben Werkzeugen wie jede andere AEM erstellt werden. Um die Gruppe zum Authoring zu öffnen, wählen Sie das Symbol &quot;Site öffnen&quot;, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen.
 
-## Ändern von Gruppeneigenschaften {#modifying-group-properties}
+## Ändern der Gruppeneigenschaften {#modifying-group-properties}
 
 Die Eigenschaften einer bestehenden Subcommunity-Site, die während des Community-Gruppenerstellungsprozesses angegeben wurden, können geändert werden, indem Sie das Symbol &quot;Site bearbeiten&quot;auswählen, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen:
 
@@ -198,7 +198,7 @@ Die Details der folgenden Eigenschaften stimmen mit den Beschreibungen im Abschn
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-### Basic ändern {#modify-basic}
+### Basic {#modify-basic} ändern
 
 Das BASIC-Bedienfeld ermöglicht die Änderung von
 
@@ -220,7 +220,7 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
 
    * **`gear icon`**
 
-      Einstellungen bearbeiten, einschließlich Anzeigentitel und URL-Name sowie [privilegierte Mitgliedergruppen](users.md#privilegedmembersgroups)
+      Einstellungen bearbeiten, einschließlich des Anzeigentitels und des URL-Namens sowie der Gruppen [privilegierter Mitglieder](users.md#privilegedmembersgroups)
 
    * **`trashcan icon`**
 
@@ -238,11 +238,11 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
 
 >[!CAUTION]
 >
->Die Funktion groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
+>Die Funktion &quot;Gruppen&quot;darf weder die Funktion *first noch die Funktion* in der Sitestruktur sein.**
 >
->Jede andere Funktion, wie die [Seitenfunktion](functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
+>Jede andere Funktion, wie z. B. die Funktion [page](functions.md#page-function), muss eingeschlossen und zuerst aufgelistet werden.
 
-#### Beispiel: Hinzufügen einer Kalenderfunktion zu einer UnterCommunity-(Gruppen-)Struktur {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+#### Beispiel: Hinzufügen einer Kalenderfunktion zu einer SubCommunity-(Gruppen-)Struktur {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -257,21 +257,21 @@ Das DESIGN-Bedienfeld ermöglicht die Änderung des Designs:
 
 ### Einstellungen ändern {#modify-settings}
 
-Über das Bedienfeld &quot;EINSTELLUNGEN&quot;können Community- [Moderatoren](#moderation)hinzugefügt werden.
+Das Bedienfeld &quot;EINSTELLUNGEN&quot;ermöglicht es, Community [Moderatoren](#moderation) hinzuzufügen.
 
 ### Mitgliedschaft ändern {#modify-membership}
 
-Die [Mitgliedergruppe](#membership) ist nur informativ. Es ist nicht möglich, die Art der Gruppenmitgliedschaft zu ändern, unabhängig davon, ob sie freiwillig, erforderlich oder eingeschränkt ist.
+Das Fenster [MEMBERSHIP](#membership) enthält nur Informationen. Es ist nicht möglich, die Art der Gruppenmitgliedschaft zu ändern, unabhängig davon, ob sie freiwillig, erforderlich oder eingeschränkt ist.
 
 ### Miniaturansicht ändern {#modify-thumbnail}
 
-Das [THUMBNAIL](#thumbnail) -Bedienfeld ermöglicht es, ein Bild hochzuladen, das die Community-Gruppe für Site-Besucher in der Veröffentlichungs-Umgebung sowie in der Communities Site-Gruppenkonsole in der Autor-Umgebung darstellt.
+Das Bedienfeld [THUMBNAIL](#thumbnail) ermöglicht es, ein Bild hochzuladen, das die Community-Gruppe für Site-Besucher in der Veröffentlichungs-Umgebung sowie in der Communities Site-Gruppenkonsole in der Autor-Umgebung darstellt.
 
 ## Veröffentlichen der Gruppe {#publishing-the-group}
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-Nachdem eine Community-Gruppe neu erstellt oder geändert wurde, kann die Gruppe durch Auswahl des `Publish Site` Symbols veröffentlicht (aktiviert) werden.
+Nachdem eine Community-Gruppe neu erstellt oder geändert wurde, kann die Gruppe durch Auswahl des Symbols `Publish Site` veröffentlicht (aktiviert) werden.
 
 Nachdem die Gruppe erfolgreich veröffentlicht wurde, wird eine Meldung angezeigt:
 
