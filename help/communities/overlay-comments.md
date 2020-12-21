@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Komponente &quot;Überlagerungskommentare&quot; {#overlay-comments-component}
+# Komponente für Überlagerungskommentare {#overlay-comments-component}
 
-Die Absicht, eine Standardkomponente zu [überlagern](client-customize.md#overlays) , besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global für alle relativen Verweise auf die Komponente zu ändern. Es beruht auf der Natur von sling, um in den Ordner /apps aufzulösen, bevor Sie im Ordner /libs suchen. Daher ist der Pfad zur Komponente identisch mit dem Pfad zur Standardkomponente, es sei denn, er befindet sich im Ordner &quot;/apps&quot;und nicht im Ordner &quot;/libs&quot;.
+Die Absicht von [overlay](client-customize.md#overlays) einer Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global für alle relativen Verweise auf die Komponente zu ändern. Es beruht auf der Natur von sling, um in den Ordner /apps aufzulösen, bevor Sie im Ordner /libs suchen. Daher ist der Pfad zur Komponente identisch mit dem Pfad zur Standardkomponente, es sei denn, er befindet sich im Ordner &quot;/apps&quot;und nicht im Ordner &quot;/libs&quot;.
 
 ## Beispiel {#example}
 
