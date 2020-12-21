@@ -20,7 +20,7 @@ ht-degree: 81%
 
 Erstellen und Bearbeiten von Bedingungsfragmenten zur Verwendung in interaktiver Kommunikation. Bedingung ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktiver Kommunikation verwendet werden. Die anderen drei sind Texte, Listen und Layoutfragmente.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Bedingung ist ein Dokumentfragment, das Sie in eine interaktive Kommunikation einfügen können. Die anderen Dokumentfragmente sind [Text](/help/forms/using/texts-interactive-communications.md), Liste und Layout-Fragment. Mithilfe von Bedingungen können Sie ein oder mehrere kontextbezogene Elemente definieren, die basierend auf den bereitgestellten Daten und Regeln in eine interaktive Kommunikation einbezogen werden.
 
@@ -74,20 +74,20 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **`[A]`Änderung ablehnen.**Tippen Sie auf dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.
+   **`[A]`Änderung ablehnen.** Tippen Sie auf dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.
 
-   **`[B]`Änderung annehmen.**Tippen Sie auf dieses Symbol, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.
+   **`[B]`Änderung annehmen.** Tippen Sie auf dieses Symbol, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.
 
-   **`[C]`Duplikat-Asset.**Tippen Sie auf dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das duplizierte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zum Anzeigen alternativer Assets basierend auf einem bestimmten Kontext zu erstellen.
+   **`[C]`Duplikat-Asset.** Tippen Sie auf dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das duplizierte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zum Anzeigen alternativer Assets basierend auf einem bestimmten Kontext zu erstellen.
 
-   **`[D]`Vorschau anzeigen.**Tippen Sie auf dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
+   **`[D]`Vorschau anzeigen.** Tippen Sie auf dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
 
-   **`[E]`Neu anordnen.**Tippen und halten Sie dieses Symbol, um Assets per Drag &amp; Drop in einer Bedingung neu anzuordnen.
+   **`[E]`Neu anordnen.** Tippen und halten Sie dieses Symbol, um Assets per Drag &amp; Drop in einer Bedingung neu anzuordnen.
 
    Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
    * **Bewertung mehrerer Ergebnisse deaktiviert/Bewertung mehrerer Ergebnisse aktiviert**: Wenn diese Option aktiviert ist (angezeigt als „Bewertung mehrerer Ergebnisse aktiviert”), werden alle Bedingungen ausgewertet und das Ergebnis ist die Summe aller Bedingungen, die den Status „true“ haben. Wenn diese Option deaktiviert ist (angezeigt als „Bewertung mehrerer Ergebnisse deaktiviert“), wird nur die erste Bedingung, die „true“ ergibt, ausgewertet und wird zur Ausgabe der Bedingung.
-   * **Seitenumbruch**: Wählen Sie diese Option (&quot; ![Umbruch](assets/break.png)&quot;), um zwischen den Assets der Bedingungen einen Seitenumbruch hinzuzufügen. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
+   * **Seitenumbruch**: Wählen Sie diese Option (&quot; ![Umbruch](assets/break.png)&quot;), um zwischen den Assets der Bedingungen einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist ( ![nobreak](assets/nobreak.png)) und eine Bedingung in der Druckausgabe auf die nächste Seite überläuft, wird die gesamte Bedingung auf die nächste Seite verschoben, anstatt die Seite zwischen den Assets in der Bedingung zu wechseln.
 
 1. Tippen Sie auf **[!UICONTROL Regel erstellen]**, um Regeln hinzuzufügen, um die Assets nach Bedarf ein- oder auszublenden. Um Variablen in den Regeln zu verwenden, siehe [Erstellen von Variablen](#variables). Weitere Informationen finden Sie unter: [Hinzufügen von Regeln zur Bedingung](#ruleeditor).
 
@@ -128,9 +128,9 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 * Eigenschaft des zugeordneten Formulardatenmodells
 * Beliebige [Variablen](#variables), die Sie erstellt haben.
 
-### Regel in der Bedingung erstellen {#create-rule-in-condition}
+### Regel in der Bedingung erstellen  {#create-rule-in-condition}
 
-1. While creating or editing a condition, tap ![ruleeditoricon](assets/ruleeditoricon.png) (Rule Editor) icon for the relevant asset.
+1. Tippen Sie beim Erstellen oder Bearbeiten einer Bedingung auf das ![Linealeditorsymbol](assets/ruleeditoricon.png) (Regeleditor)-Symbol für das relevante Asset.
 
    Das Dialogfeld zum Erstellen der Regel wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor folgende Regeln zum Erstellen von Anweisungen der Regeln zur Verfügung:
 
@@ -152,16 +152,16 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 
    Regel, um ein Asset anzuzeigen, wenn der Richtlinientyp „Standard“ ist
 
-   * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. Der erweiterte Vollbildansichtsdialog ermöglicht das Erstellen von [Variablen](#variables) zum Erstellen von Regeln. Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Regel erstellen“ zurückzukehren.
+   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht das Erstellen von [Variablen](#variables) zum Erstellen von Regeln. Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Regel erstellen“ zurückzukehren.
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**.
 
    Die Regel wird auf das Asset angewendet.
 
-## Erstellen und Verwenden von Variablen in einer Bedingung {#variables}
+## Erstellen und Verwenden von Variablen in einer Bedingung  {#variables}
 
-While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. Der erweiterte Vollbildansichtsdialog ermöglicht Folgendes:
+Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen\Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht Folgendes:
 
 * Erstellen und Verwenden von Variablen in der Regel
 * Ziehen der Eigenschaften und Variablen des Datenmodells per Drag-and-Drop in die Regel
@@ -170,7 +170,7 @@ Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Reg
 
 ### Variablen erstellen {#create-variables}
 
-1. While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog.
+1. Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern.
 
    Der erweiterte Vollbildansichtsdialog erscheint.
 
@@ -186,7 +186,7 @@ Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Reg
 
    Bereich „Variablen erstellen“ wird angezeigt.
 
-1. Enter the following information and tap **[!UICONTROL Create]**:
+1. Geben Sie die folgenden Informationen ein und tippen Sie auf **[!UICONTROL Erstellen]**:
 
    * **[!UICONTROL Name*]**: Name der Variablen.
    * **[!UICONTROL Beschreibung]**: Geben Sie optional eine Beschreibung der Variablen ein.
