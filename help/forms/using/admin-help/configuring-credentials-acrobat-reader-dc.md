@@ -52,12 +52,12 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
    Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
-## Acrobat Reader DC Extensions-Berechtigungen entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen entfernen  {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Wählen Sie die Berechtigung und klicken Sie auf „Löschen“.
 
-## Acrobat Reader DC Extensions-Berechtigungen ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen ersetzen  {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.
