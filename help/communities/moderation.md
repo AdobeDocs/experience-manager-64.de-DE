@@ -18,13 +18,13 @@ ht-degree: 5%
 ---
 
 
-# Moderation Console {#moderation-console}
+# Moderationskonsole {#moderation-console}
 
-In AEM Communities ist eine Massenmoderation von [Community-Inhalten](moderate-ugc.md) sowohl von der Autor- als auch von der Veröffentlichungs-Umgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
+In AEM Communities ist eine Massenmoderation [von Community-Inhalten](moderate-ugc.md) sowohl von Autor- als auch von Veröffentlichungs-Umgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
 
-Administratoren und Community-Moderatoren können auch [kontextbezogene Moderationen](in-context.md) in der Veröffentlichungs-Umgebung durchführen.
+Administratoren und Community-Moderatoren können auch [kontextbezogene Moderation](in-context.md) in der Veröffentlichungs-Umgebung durchführen.
 
-Eine Funktion aller [Community-Sites](sites-console.md) ist ein `Administration`Menüpunkt, der Benutzern zur Verfügung steht, die sich mit Administratorrechten anmelden. Der `Administration`Link bietet Zugriff auf die Moderationskonsole.
+Eine Funktion aller [Community-Sites](sites-console.md) ist ein `Administration`Menüelement, das Benutzern zur Verfügung steht, die sich mit Administratorrechten anmelden. Der Link `Administration`ermöglicht den Zugriff auf die Moderationskonsole.
 
 In der Moderationskonsole haben Administratoren und Community-Moderatoren Zugriff auf alle benutzergenerierten Inhalte (UGC), für die sie über die Berechtigung zum Moderieren verfügen. Wenn es zulässig ist, mehrere Sites zu moderieren, können Beiträge auf allen Sites Ansicht oder nach ausgewählten Communities gefiltert werden.
 
@@ -36,9 +36,9 @@ Die Moderationskonsole unterstützt:
 * Ansicht von UGC-Details
 * Ansicht von UGC-Autorendetails
 
-Nur wenn Sie als Administrator angemeldet sind oder Mitglied mit ` [moderator permissions](in-context.md#identifyingtrustedmembers)`sind, können Moderations-Aufgaben durchgeführt werden.
+Nur bei der Anmeldung als Administrator oder als Mitglied mit ` [moderator permissions](in-context.md#identifyingtrustedmembers)` können Moderations-Aufgaben durchgeführt werden.
 
-## Zugriff auf Umgebung veröffentlichen {#publish-environment-access}
+## Zugriff auf die Umgebung veröffentlichen {#publish-environment-access}
 
 Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Site erfolgt über einen Link &quot;Administration&quot;, der angezeigt wird, wenn ein Community-Moderator angemeldet ist.
 
@@ -48,13 +48,13 @@ Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Sit
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-## Zugriff auf Authoring-Umgebung {#author-environment-access}
+## Zugriff auf Autorensoftware {#author-environment-access}
 
 In der Umgebung &quot;Autor&quot;zur Moderationskonsole
 
 * Aus globaler Navigation: **[!UICONTROL Navigation > Communities > Moderation]**
 
-Nur bei der Anmeldung als Administrator oder als Mitglied mit ` [moderator permissions](in-context.md#identifyingtrustedmembers)`können Moderations-Aufgaben durchgeführt werden. Der einzige Community-Inhalt, der angezeigt wird, ist der, den das angemeldete Mitglied moderieren darf.
+Nur bei der Anmeldung als Administrator oder als Mitglied mit ` [moderator permissions](in-context.md#identifyingtrustedmembers)` können Moderations-Aufgaben durchgeführt werden. Der einzige Community-Inhalt, der angezeigt wird, ist der, den das angemeldete Mitglied moderieren darf.
 
 >[!NOTE]
 >
@@ -70,15 +70,15 @@ Abgesehen von der linken Navigationsleiste (die beim Autor, aber nicht bei der V
 * **[Symbolleiste](#toolbar)**
 * **[Inhaltsbereich](#content-area)**
 
-### Top Navigation Bar {#top-navigation-bar}
+### Obere Navigationsleiste {#top-navigation-bar}
 
-Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Informationen finden Sie unter [Grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
+Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Informationen finden Sie unter [Grundlegender Umgang](../../help/sites-authoring/basic-handling.md).
 
 ### Symbolleiste {#toolbar}
 
 Die Symbolleiste, die sich unterhalb der oberen Navigationsleiste befindet, bietet den folgenden Umschalter auf der linken Seite:
 
-* [Die Filterleiste](moderation.md#filter-rail) öffnet eine Leiste, die eine Auswahl von Eigenschaften zum Filtern des Inhalts ermöglicht.
+* [Filter ](moderation.md#filter-rail) railopiert eine Leiste, die eine Auswahl von Eigenschaften zum Filtern des Inhalts ermöglicht.
 
 Die Symbolleiste, die sich unterhalb der oberen Navigationsleiste befindet, bietet den folgenden Umschalter auf der linken Seite:
 
@@ -99,7 +99,7 @@ Der Inhaltsbereich enthält Informationen für veröffentlichte UGC:
 * Speicherort des Beitrags
 * Zeitpunkt der Veröffentlichung
 * Anzahl der Antworten auf den Beitrag
-* [Mit dem Beitrag verknüpftes Sentiment](moderate-ugc.md#sentiment)
+* [Dem Beitrag ](moderate-ugc.md#sentiment) zugeordnete Sentimentwerte
 * Bei Genehmigung wird ein Häkchen angezeigt
 * Wenn eine Anlage vorhanden ist, wird eine Paperclip angezeigt
 
@@ -113,11 +113,11 @@ Der Inhaltsbereich enthält Informationen für veröffentlichte UGC:
 
 Das Seitensymbol öffnet die Filterleiste. Die Filterleiste, die links neben dem Inhaltsbereich angezeigt wird, bietet verschiedene Filter, von denen jede unmittelbar auf das referenzierte UGC im Inhaltsbereich wirkt.
 
-Die Filter innerhalb der einzelnen Kategorien werden **** ODER-zusammengeführt, und die Filter in verschiedenen Kategorien werden **** UNDzusammengeführt.
+Die Filter in jeder Kategorie sind **OR** zusammen und die Filter in verschiedenen Kategorien sind **AND** zusammen.
 
-Wenn Sie beispielsweise sowohl **Frage** als auch **Antwort** aktivieren, sehen Sie Inhalte, die entweder eine **Frage** *oder* eine **Antwort** sind.
+Wenn Sie z. B. sowohl **Frage** als auch **Antwort** aktivieren, wird Inhalt angezeigt, der entweder eine **Frage** *oder* und **Antwort** lautet.
 
-Wenn Sie jedoch **Frage** und **Ausstehend** aktivieren, werden nur Inhalte angezeigt, die eine **Frage** und **Ausstehend** sind.
+Wenn Sie jedoch **Frage** und **Ausstehend** aktivieren, wird nur Inhalt angezeigt, der eine **Frage** ist und **Ausstehend** lautet.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Site beschränkt die referenzierte UGC auf Beiträge auf ausgewählte Community-
 
 >[!NOTE]
 >
->Wenn ein Administrator auf die Massen-Moderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich Sites, die nicht mit dem [Site-Erstellungsassistenten](sites-console.md)erstellt wurden, wie z. B. die Geometrixx.
+>Wenn ein Administrator auf die Massen-Moderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich Sites, die nicht mit dem [Site-Erstellungsassistenten](sites-console.md) erstellt wurden, wie z. B. die Geometrixx.
 >
 >Wenn ein Mitglied einer vertrauenswürdigen Community auf die Massenmoderationskonsole zugreift, werden nur Verweise auf UGC angezeigt, die für Community-Sites erstellt wurden, die das Mitglied moderieren darf, und können mit dem Site-Filter gefiltert werden.
 
@@ -177,8 +177,8 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
 * Auf der Authoring-Instanz
 * Anmelden als Administrator
-* Open [Web Console](http://localhost:4502/system/console/configMgr)
-* Suchen `AEM Communities Moderation Dashboard Filters`
+* Öffnen Sie [Web-Konsole](http://localhost:4502/system/console/configMgr)
+* Suchen Sie nach `AEM Communities Moderation Dashboard Filters`
 * Wählen Sie die Konfiguration aus, die im Bearbeitungsmodus geöffnet werden soll
 * Geben Sie den ResourceType einer Komponente ein, nach der gefiltert werden soll
    * Geben Sie zum Beispiel Folgendes ein, um nach eingeschlossenen Abstimmungskomponenten zu filtern:\
@@ -189,7 +189,7 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 * Wählen Sie Speichern aus
 * Communities - Moderationskonsole aktualisieren
 
-Das Ergebnis ist ein neuer auswählbarer Filter `Voting`unter der `Content Type` Filtergruppe.
+Das Ergebnis ist ein neuer auswählbarer Filter für `Voting`unter der Filtergruppe `Content Type`.
 
 Wenn dieser Filter ausgewählt ist, zeigt der Inhalt des Dashboards UGC an, das mit einem der eingegebenen ResourceTypes übereinstimmt.
 
@@ -207,7 +207,7 @@ Der Status beschränkt die referenzierte UGC auf Beiträge mit dem ausgewählten
 
 Durch die Kennzeichnung wird die Anzeige des referenzierten UGC auf Beiträge beschränkt, die markiert oder ausgeblendet sind.
 
-Sobald ein Inhaltselement markiert ist, bleibt es gekennzeichnet, bis Sie die Markierung für dieses Inhaltselement aufheben, indem Sie erneut auf die Schaltfläche &quot; **[!UICONTROL Flag]** &quot;klicken. Beachten Sie, dass es keine Kennzeichnungsebenen gibt, wie z. B. wichtig oder nachfolgende.
+Sobald ein Inhaltselement markiert ist, bleibt es gekennzeichnet, bis Sie die Markierung für dieses Inhaltselement aufheben, indem Sie die Schaltfläche **[!UICONTROL Flag]** erneut markieren. Beachten Sie, dass es keine Kennzeichnungsebenen gibt, wie z. B. wichtig oder nachfolgende.
 
 ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -225,21 +225,21 @@ Mitglieder beschränken die referenzierte UGC, die für UGC angezeigt wird, gepo
 
 #### Empfindung {#sentiment}
 
-[Das Sentiment](moderate-ugc.md#sentiment) beschränkt die referenzierte UGC auf Beiträge mit einem Sentimentwert, der entweder positiv, negativ oder neutral ist.
+[Sentimenteinschränkung ](moderate-ugc.md#sentiment) beschränkt die referenzierte UGC auf Beiträge mit einem Sentimentwert, der entweder positiv, negativ oder neutral ist.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
 ## Moderationsaktionen {#moderation-actions}
 
-[Moderationsaktionen](moderate-ugc.md#moderation-actions) können für eine oder mehrere Auswahlen im Inhaltsbereich oder beim Anzeigen von Inhaltsdetails durchgeführt werden.
+[Moderationsaktionen ](moderate-ugc.md#moderation-actions) können für eine oder mehrere Auswahlen im Inhaltsbereich oder beim Anzeigen von Inhaltsdetails durchgeführt werden.
 
-Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen ( ![Auswahl](assets/selecticon.png)) eines Beitrags, das angezeigt wird, wenn Sie mit der Maus (Desktop) darauf zeigen oder einen Finger auf dem Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
+Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen ( ![Auswahl](assets/selecticon.png)) in einem Beitrag, das angezeigt wird, wenn Sie den Mauszeiger (Desktop) darüber bewegen oder indem Sie mit dem Finger auf den Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
 
-Um einen einzelnen Beitrag im Inhaltsbereich zu moderieren, halten Sie den Mauszeiger über ihn (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
+Wenn Sie einen einzelnen Beitrag im Inhaltsbereich moderieren möchten, halten Sie den Mauszeiger über den Beitrag (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass die Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
 
 ### Moderieren mehrerer Beiträge {#moderating-multiple-posts}
 
-Rufen Sie den Massenauswahlmodus auf, indem Sie auf das `Select` Symbol für einen Beitrag klicken:
+Geben Sie den Massenauswahlmodus ein, indem Sie auf das Symbol `Select` für einen Beitrag klicken:
 
 ![select-icon](assets/select-icon.png)
 
@@ -266,7 +266,7 @@ In einem Auswahlmodus ist es möglich,
 * [Ablehnen](#deny)
 * [Löschen](#delete)
 * [Schließen](#close)
-* Ansicht- [Moderationsverlauf](#moderation-history)
+* Ansicht [Moderationsverlauf](#moderation-history)
 * [Details anzeigen](#viewdetails)
 
 Auf der Ansicht der Karte über den Symbolen für Moderationsaktionen befindet sich der Beitragstext, und unten stehen die Daten, die auf
@@ -294,7 +294,7 @@ Wenn Sie mit einem einzelnen Beitrag arbeiten, wird das Symbol Zulassen angezeig
 
 ![chlimage_1-482](assets/chlimage_1-482.png)
 
-Die Aktion &quot;Moderation **verweigern** &quot;steht nur für moderierte Inhalte zur Verfügung und wird nur im Mehrfachauswahlmodus bei nicht moderierten Inhalten angezeigt.
+Die Moderationsaktion **Ablehnen** steht nur für moderierte Inhalte zur Verfügung und wird nur im Mehrfachauswahlmodus auf nicht moderierten Inhalten angezeigt.
 
 Nicht moderierte Inhalte werden immer genehmigt.
 
@@ -332,7 +332,7 @@ Beispiel:
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, können Sie weitere Details anzeigen, indem Sie das UGC im Detailmodus öffnen.
 
-Bewegen Sie dazu den Mauszeiger über den Beitrag, um das Symbol anzuzeigen, und wählen Sie es aus, um einen Bereich mit weiteren Details zum Beitrag anzuzeigen. `View Detail`
+Bewegen Sie dazu den Mauszeiger über den Beitrag, um das Symbol `View Detail` anzuzeigen, und wählen Sie es aus, um ein Fenster mit weiteren Details zum Beitrag anzuzeigen.
 
 Um zur Inhaltsbereichsanzeige mehrerer UGC-Beiträge zurückzukehren, wählen Sie das X oben rechts im Detailbereich &quot;Ansicht&quot;aus.
 
