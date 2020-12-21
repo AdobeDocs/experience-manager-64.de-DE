@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Erscheinungsbild ändern (HBS) {#alter-the-appearance-hbs}
+# Erscheinungsbild (HBS) {#alter-the-appearance-hbs} ändern
 
 Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsordner (/apps) vorhanden sind, wobei ein resourceSuperType auf das Standardkommentarsystem verweist und das benutzerdefinierte Modell/die benutzerdefinierte Ansicht registriert ist, kann die Implementierung geändert werden.
 
@@ -28,11 +28,11 @@ Bei einer einfachen Demonstration wird der Avatar des angemeldeten Benutzers, de
 >
 >Um die Erweiterung nutzen zu können, muss die Instanz des Kommentarsystems auf einer Website, die betroffen sein soll (/content), resourceType als benutzerdefiniertes Kommentarsystem festlegen.
 
-## Ändern der HBS-Skripten {#modify-the-hbs-scripts}
+## Ändern Sie die HBS-Skripte {#modify-the-hbs-scripts}
 
-Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Öffnen [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Öffnen Sie [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Kommentieren Sie das Tag aus, das den Avatar für einen Kommentar-Beitrag enthält (~ Zeile 21):
 
@@ -42,7 +42,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* Öffnen [/apps/custom/components/comments/comments.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Öffnen Sie [/apps/custom/components/comments/comments.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Kommentieren Sie das Tag aus, das den Avatar für den nächsten Kommentareintrag enthält (~ Zeile 44):
 
@@ -52,7 +52,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* Select **Save All**
+* Wählen Sie **Alle speichern**
 
 ## Benutzerdefinierte App replizieren {#replicate-custom-app}
 
@@ -62,19 +62,19 @@ Eine Möglichkeit dazu ist
 
 * Über das Hauptmenü
 
-   * Wählen Sie **[!UICONTROL Werkzeuge > Vorgänge > Replikation]**
+   * Wählen Sie **[!UICONTROL Tools > Vorgänge > Replikation]**
    * Wählen Sie nun eine der folgenden Optionen aus `Activate Tree`
-   * Festlegen `Start Path`: nach `/apps/custom`
-   * Deaktivieren `Only Modified`
+   * Setzen Sie `Start Path`: nach `/apps/custom`
+   * Deaktivieren Sie `Only Modified`
    * Schaltfläche `Activate` auswählen
 
-## Änderungskommentar zur Ansicht auf der Seite &quot;Veröffentlichte Beispieldatei&quot; {#view-modified-comment-on-published-sample-page}
+## Ansicht - Modifizierter Kommentar auf der Seite mit veröffentlichten Beispielen {#view-modified-comment-on-published-sample-page}
 
-[Wenn Sie das Erlebnis](extend-sample-page.md#publish-sample-page) in der Veröffentlichungsinstanz fortsetzen und weiterhin als derselbe Benutzer angemeldet sind, können Sie jetzt die Seite in der Umgebung &quot;Veröffentlichen&quot;aktualisieren, um die Änderung zum Entfernen des Avatars Ansicht:
+[Wenn Sie das ](extend-sample-page.md#publish-sample-page) Erlebnis in der Veröffentlichungsinstanz fortsetzen und sich dennoch als derselbe Benutzer angemeldet haben, können Sie jetzt die Seite in der Umgebung &quot;Veröffentlichen&quot;aktualisieren, um die Änderung zum Entfernen des Avatars Ansicht:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-## Beispielkommentar-Erweiterungspaket {#sample-comment-extension-package}
+## Beispiel für ein Kommentar-Erweiterungspaket {#sample-comment-extension-package}
 
 Angehängt ist ein Paket der Anwendung für benutzerdefinierte Kommentare, die in diesem Lernprogramm erstellt wurde.
 
