@@ -19,7 +19,7 @@ ht-degree: 84%
 
 # Formularservice {#forms-service}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Forms-Dienst ermöglicht das Erstellen interaktiver Clientanwendungen zur Datenerfassung, die in Designer erstellte Formulare überprüfen, verarbeiten, transformieren und übermitteln. Mit dem Forms-Dienst kann jeder von Ihnen entwickelte Formularentwurf als PDF-Dokument wiedergegeben werden.
 
@@ -35,7 +35,7 @@ Der Forms-Dienst bietet folgende Funktionen:
 
 Zur Erstellung von PDF-Formularen für die Datenerfassung verwenden Sie den Forms-Dienst. Als Grundlage verwenden Sie dazu in der Regel eine Adobe AEM Forms Designer-Vorlage. Mit dem Javadoc-Vorgang `renderPDFForm` des Forms-Dienstes konvertieren Sie diese Vorlage in ein PDF-Formular.
 
-Als ersten Parameter des Vorgangs `renderPDFForm` geben Sie den Namen der Vorlagendatei ein (z. B. `ExpenseClaim.xdp`). Sie können die Vorlagendatei in einem lokalen Dateisystem, im CRX-Repository oder an einem HTTP- oder FTP-Speicherort speichern. You can specify the location of the template file by setting the content root in the `PDFFormRenderOptions` parameter of the `renderPDFForm` operation. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit dem Parameter `PDFFormRenderOptions` angeben können.
+Als ersten Parameter des Vorgangs `renderPDFForm` geben Sie den Namen der Vorlagendatei ein (z. B. `ExpenseClaim.xdp`). Sie können die Vorlagendatei in einem lokalen Dateisystem, im CRX-Repository oder an einem HTTP- oder FTP-Speicherort speichern. Sie können den Speicherort der Vorlagendatei angeben, indem Sie den Inhaltsstamm im Parameter `PDFFormRenderOptions` des Vorgangs `renderPDFForm` festlegen. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit dem Parameter `PDFFormRenderOptions` angeben können.
 
 Der Vorgang `renderPDFForm` akzeptiert auch XML-Daten. Die XML-Daten werden beim Erstellen eines PDF-Formulars mit der Vorlage zusammengeführt, sodass das erstellte PDF-Formular die angegebenen Daten enthält. Der zweite Parameter des Vorgangs `renderPDFForm` akzeptiert ein Dokument- bzw. Javadoc-Objekt, das die gewünschten XML-Daten enthält.
 
@@ -43,7 +43,7 @@ Der Vorgang `renderPDFForm` akzeptiert auch XML-Daten. Die XML-Daten werden beim
 
 Zum Extrahieren von XML-Daten aus einem PDF-Formular verwenden Sie den Javadoc-Vorgang `exportData` des Forms-Dienstes. Als ersten Parameter dieses Vorgangs geben Sie ein Dokument an. Sie können die Daten als XDP-Dokument oder als XML-Datei exportieren. Beim Export der Daten als XML-Datei wird die XDP-Hülle entfernt, sodass nur die reine XML-Datei zurückgegeben wird. Das Exportformat (XDP oder XML) geben Sie mit dem zweiten Parameter an.
 
-## Importieren von Daten in PDF-Formulare {#importing-data-into-pdf-forms}
+## Importieren von Daten in PDF-Formulare  {#importing-data-into-pdf-forms}
 
 Mit dem Forms-Dienst können Sie ein mit AEM Forms Designer oder `renderPDFForm` erstelltes PDF-Formular auch mit XML-Daten zusammenführen. Der Javadoc-Vorgang `importData` des Forms-Dienstes akzeptiert als Parameter das PDF-Formular sowie die XML-Daten und gibt ein PDF-Formular mit den XML-Daten zurück.
 
