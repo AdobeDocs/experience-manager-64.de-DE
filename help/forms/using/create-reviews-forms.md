@@ -26,7 +26,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
-1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Klicken Sie auf das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Geben Sie die folgenden Informationen ein:
 
    * Überprüfungsname: obligatorisch – kann alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
@@ -36,7 +36,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 
 1. Füllen Sie alle weiteren Details und klicken Sie dann auf „Start“.
 
-### Aktionen beim Einrichten von Überprüfungen {#actions-that-occur-when-a-review-is-set-up}
+### Aktionen beim Einrichten von Überprüfungen  {#actions-that-occur-when-a-review-is-set-up}
 
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
@@ -44,7 +44,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 1. Allen Überprüfern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Überprüfer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Überprüfer können klicken, um die Überprüfungsaufgabe zu öffnen, das Formular anzuzeigen und Kommentare hinzuzufügen.
 
    ![Warnung bei Überprüferbenachrichtigungen](assets/noti.png)
-   **Abbildung:** *Benachrichtigungswarnung des Überprüfers*
+   **Abbildung: Warnung zur Benachrichtigung** *des Überprüfers*
 
 1. Das Kommentarfeld ist für den Initiator und die Überprüfer der Assets verfügbar. Andere können die Kommentare anzeigen, jedoch keine Kommentare schreiben.
 
@@ -56,9 +56,9 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
 
-1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
+1. Wenn ein Asset derzeit eine Überprüfung durchführt und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste Symbole zum Verwalten von Überprüfungen ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
 
-   Klicken Sie auf den Kommentar zum Verwalten von Review ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)kommenticon.
+   Klicken Sie auf das Symbol zum Verwalten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
    Für Benutzer, die nicht der Initiator sind, ist das Symbol zum Verwalten von Überprüfungen deaktiviert.
 
@@ -72,11 +72,11 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 1. Bearbeiten Sie die erforderlichen Felder und klicken Sie dann auf „Aktualisieren“.
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
-   **Abbildung:** *Aktualisierten Status in Aufgabe Manager überprüfen*
+   **Abbildung: Status &quot;** *Überprüfen&quot;im Aufgabe Manager*
 
 1. Zum Beenden der Überprüfung klicken auf „Ende“.
 
-### Aktionen beim Bearbeiten von Überprüfungen {#actions-that-occur-when-a-review-is-modified}
+### Aktionen beim Bearbeiten von Überprüfungen  {#actions-that-occur-when-a-review-is-modified}
 
 In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüfungen passiert:
 
@@ -86,7 +86,7 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
 1. Wenn ein Überprüfer entfernt wird:
 
    ![Entfernen von Überprüfern](assets/removeduser.png)
-   **Abbildung:** *Reviewer entfernen*
+   **Abbildung:** *Entfernen eines Prüfers*
 
    1. Falls die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
    1. Der Überprüfer kann das Asset nicht mehr kommentieren.
