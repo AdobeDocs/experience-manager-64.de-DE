@@ -30,13 +30,13 @@ Sie können das Keytool mit einem einzelnen Befehl ausführen, der alle zum Erst
 
 **SSL-Zertifikat erstellen**
 
-1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the certificate and keystore:
+1. Wechseln Sie an einer Eingabeaufforderung zum Ordner *[JAVA HOME]*/bin und geben Sie den folgenden Befehl ein, um das Zertifikat und den Keystore zu erstellen:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Hostname *`, OU=`*Gruppenname* `, O=`*Firma Name *`,L=`*Stadt*****Name* `, S=`*Bundesland *-`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`*Ländercode&quot;LC-Zertifikat&quot;*_*KennwortKeystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Hostname* `, OU=`*Gruppe* `, O=`*NameFirma* `,L=`*NameStadt*****Name*  `, S=`** `, C=`*LandCode* `" -alias`*&quot;LC-Zertifikat&quot;* `-keypass` `*key*`*_*** `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Replace *[JAVA_HOME]with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
+   >Ersetzen Sie *[JAVA_HOME] durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie den kursiv gedruckten Text durch die Werte, die mit Ihrer Umgebung übereinstimmen.*
 
-1. Type `changeit` as the password. Dies ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
+1. Geben Sie `changeit` als Kennwort ein. Dies ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
 
