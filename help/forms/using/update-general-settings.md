@@ -58,9 +58,9 @@ Sie können folgende Änderungen an den Einstellungen der App vornehmen.
 
 * **Default category**: Wählen Sie hier die Kategorie der Formulare aus, die auf dem Startbildschirm angezeigt wird. Wenn Sie „All“ auswählen, können Sie alle Formulare auf dem Startbildschirm sehen. Kategorien werden basierend auf den Formularen ausgefüllt, die in der App geladen werden. Formulare sind in der App je nach den Formulareinstellungen im AEM Forms-Server verfügbar.
 
-* **Autosave Frequency**: So legen Sie fest, wie oft Ihre [mobile App Formulardaten](/help/forms/using/autosave-data-app.md) lokal speichert.
+* **Autosave Frequency**: So legen Sie fest, wie oft die  [mobile App ](/help/forms/using/autosave-data-app.md) Formulardaten speichert.
 
-* **Synchronisierungshäufigkeit**: So legen Sie die Häufigkeit fest, mit der die [mobile App im Online-Modus mit dem AEM Forms-Server synchronisiert](/help/forms/using/sync-app.md) wird.
+* **Synchronisierungshäufigkeit**: So legen Sie die Häufigkeit fest, mit der die  [mobile App im Online-Modus mit dem AEM Forms-Server ](/help/forms/using/sync-app.md) synchronisiert wird.
 
 **Clear Local Data**: Löscht die Datenbank, einschließlich Einstellungen und lokaler Daten für alle Benutzer und Dateispeicher auf dem Gerät.
 
