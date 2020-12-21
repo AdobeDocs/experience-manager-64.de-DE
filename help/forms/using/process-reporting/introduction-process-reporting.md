@@ -27,7 +27,7 @@ Process Berichte bietet eine Reihe vordefinierter Berichte, die Ihnen das Filter
 
 Zusätzlich bietet Process Berichte eine Oberfläche zum Ausführen von Ad-hoc-Abfragen und zum Integrieren benutzerdefinierter Report Ansichten in die Benutzeroberfläche von Process Berichte.
 
-Die Liste der unterstützten Browser finden Sie unter [AEM Forms-unterstützte Plattformen](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Die Liste der unterstützten Browser finden Sie unter [AEM Forms Unterstützte Plattformen](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Process Berichte basiert auf Modulen, die:
 
@@ -35,7 +35,7 @@ Process Berichte basiert auf Modulen, die:
 * Prozessdaten in einem eingebetteten Process Berichte-Repository veröffentlichen
 * Stellt eine browserbasierte Benutzeroberfläche für Berichte zur Ansicht bereit
 
-## Key Capabilities {#key-capabilities}
+## Schlüsselfunktionen {#key-capabilities}
 
 ### Immer aktivierter Berichte {#always-on-reporting}
 
