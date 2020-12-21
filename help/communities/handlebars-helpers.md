@@ -18,7 +18,7 @@ ht-degree: 7%
 ---
 
 
-# SCF Handlebars Helfers {#scf-handlebars-helpers}
+# SCF Handlebars Helpers {#scf-handlebars-helpers}
 
 | **[⇐ Essentials](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
 |---|---|
@@ -28,7 +28,7 @@ Handlebars Helpers (Helpers) sind Methoden, die von Handlebars-Skripten aufgeruf
 
 Die Implementierung umfasst eine clientseitige und eine serverseitige Definition. Entwickler können auch benutzerdefinierte Helfer erstellen.
 
-Die mit AEM Communities gelieferten benutzerdefinierten SCF-Helfer werden in der [Client-Bibliothek](../../help/sites-developing/clientlibs.md)definiert:
+Die mit AEM Communities gelieferten benutzerdefinierten SCF-Helfer werden in der [Client-Bibliothek](../../help/sites-developing/clientlibs.md) definiert:
 
 * /etc/clientlibs/social/commons/scf/helpers.js
 
@@ -90,7 +90,7 @@ Then abbreviate would return
 */
 ```
 
-## content-loadmore {#content-loadmore}
+## Content-loadmore {#content-loadmore}
 
 Ein Helfer, um zwei Bereiche unter einem div hinzuzufügen, einer für den Volltext und der andere für den less-Text, mit der Möglichkeit, zwischen den beiden Ansichten umzuschalten.
 
@@ -158,7 +158,7 @@ Ein Helfer zum Zurückgeben einer formatierten Datums-Zeichenfolge.
 // returns "03-18-2015"
 ```
 
-## Equals {#equals}
+## Ist {#equals}
 
 Ein Helfer zum Zurückgeben von Inhalten, abhängig von einer Gleichheitsbedingung.
 
@@ -184,7 +184,7 @@ Ein Helfer zum Zurückgeben von Inhalten, abhängig von einer Gleichheitsbedingu
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Ein Blockhelfer, der den aktuellen Wert des [WCM-Modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) mit einer durch eine Zeichenfolge getrennten Liste von Modi testet.
+Ein Blockhelfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) gegen eine durch eine Zeichenfolge getrennte Liste von Modi testet.
 
 ### Parameter {#parameters-4}
 
@@ -194,7 +194,7 @@ Ein Blockhelfer, der den aktuellen Wert des [WCM-Modus](https://helpx.adobe.com/
 
 * **Modus**: Zeichenfolge
 
-   (Optional) Eine kommagetrennte Liste der [WCM-Modi](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) , die getestet werden soll, falls festgelegt.
+   (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html), um zu testen, falls festgelegt.
 
 ### Beispiel {#example-2}
 
@@ -210,7 +210,7 @@ Ein Blockhelfer, der den aktuellen Wert des [WCM-Modus](https://helpx.adobe.com/
 
 Dieser Helfer setzt den Handlebars Helper &#39;i18n&#39; außer Kraft.
 
-Siehe auch [Internationalisieren von Strings in JavaScript-Code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Siehe auch [Internationalisierende Zeichenfolgen in JavaScript-Code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parameter {#parameters-5}
 
@@ -237,11 +237,11 @@ Siehe auch [Internationalisieren von Strings in JavaScript-Code](../../help/site
 
 Ein Helfer zum Einbeziehen einer Komponente als nicht vorhandene Ressource in eine Vorlage.
 
-Dadurch kann die Ressource programmgesteuert einfacher angepasst werden, als es für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einbeziehen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
+Dadurch kann die Ressource programmgesteuert einfacher angepasst werden, als es für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einschließen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
 
-Es sind nur einige ausgewählte Communities-Komponenten inklusive. Für AEM 6.1 sind die [Kommentare](essentials-comments.md), [Rating](rating-basics.md), [Rezensionen](reviews-basics.md)und [Abstimmungen](essentials-voting.md)inbegriffen.
+Es sind nur einige ausgewählte Communities-Komponenten inklusive. Für AEM 6.1 sind die folgenden inklusiven Werte: [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md) und [stimating](essentials-voting.md).
 
-Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [cq:include](../../help/sites-developing/taglib.md) für JSP-Skripte ähneln.
+Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [cq:include](../../help/sites-developing/taglib.md) für JSP-Skripten ähneln.
 
 ### Parameter {#parameters-6}
 
@@ -249,9 +249,9 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [cq:inc
 
    (optional, sofern kein relativer Pfad angegeben wird)
 
-   Verwendung `this`zum Übergeben des aktuellen Kontexts
+   `this`verwenden, um den aktuellen Kontext zu übergeben
 
-   Verwendung `this.id` zum Abrufen der Ressource `id` zum Rendern des angeforderten resourceType
+   Verwenden Sie `this.id`, um die Ressource unter `id` für die Wiedergabe des angeforderten resourceType abzurufen.
 
 * **resourceType**: Zeichenfolge
 
@@ -281,11 +281,11 @@ Dies umfasst eine neue Kommentarkomponente unter `this.id` + /comments
 
 Ein Helfer mit einer AEM HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Designbibliothek handeln kann. Für mehrere Inklusionen verschiedener Typen, z. B. js und css, muss dieses Tag im Handlebars-Skript mehrmals verwendet werden.
 
-Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [ui:includeClientLib](../../help/sites-developing/taglib.md) für JSP-Skripten ähneln.
+Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die bei JSP-Skripten [ui:includeClientLib](../../help/sites-developing/taglib.md) ähneln.
 
 ### Parameter {#parameters-7}
 
-* **Kategorien**: Zeichenfolge
+* **kategorien**: Zeichenfolge
 
    (Optional) Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
@@ -448,7 +448,7 @@ HINWEIS: kann eine leere Zeichenfolge zurückgeben
 <a href="{{xss-validHref url}}">my link</a>
 ```
 
-## Übersicht über Handlebars.js {#handlebars-js-basic-overview}
+## Handlebars.js Grundlegende Übersicht {#handlebars-js-basic-overview}
 
 Eine kurze Übersicht über Hilfsfunktionen aus der [Handlebars.js-Dokumentation](https://handlebarsjs.com/expressions.html):
 
@@ -456,7 +456,7 @@ Eine kurze Übersicht über Hilfsfunktionen aus der [Handlebars.js-Dokumentation
 * Parameter können ein einfaches String-, number-, boolean- oder JSON-Objekt sowie eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumente) als letzte Parameter sein.
 * Die Schlüssel in Hashargumenten müssen einfache Bezeichner sein.
 * Die Werte in den Hash-Argumenten sind Handlebars-Ausdruck: einfache Bezeichner, Pfade oder Zeichenfolgen.
-* Der aktuelle Kontext steht `this`immer Handlebars Helfern zur Verfügung.
+* Der aktuelle Kontext, `this`, ist immer für Handlebars Helpers verfügbar.
 * Der Kontext kann ein String-, number-, boolean- oder JSON-Datenobjekt sein.
 * Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe folgende Beispiele von einfachen und Blockhelfern).
 
@@ -469,7 +469,7 @@ Eine kurze Übersicht über Hilfsfunktionen aus der [Handlebars.js-Dokumentation
    * Möglichkeit zum Aufrufen selbst (options.fn())
    * Möglichkeit zum Aufrufen des Umkehrs (options.inverse())
 
-* Es wird empfohlen, dass der von einem Helfer zurückgegebene HTML-String-Inhalt eine SafeString-Zeichenfolge ist.
+* Es wird empfohlen, dass der HTML-String-Inhalt, der von einem Helfer zurückgegeben wird, ein SafeString ist.
 
 ### Ein Beispiel für einen einfachen Helfer aus der Handlebars.js-Dokumentation: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -523,13 +523,13 @@ Rendering:\
 &lt;li>&lt;a href=&quot;/people/2&quot;>Yehuda&lt;/a>&lt;/li>\
 &lt;/ul>
 
-## Benutzerdefinierte SCF-Helfer {#custom-scf-helpers}
+## Benutzerspezifische SCF-Helfer {#custom-scf-helpers}
 
 Benutzerspezifische Helfer müssen auf der Server- und Clientseite implementiert werden, besonders bei der Datenübergabe. Bei SCF werden die meisten Vorlagen serverseitig kompiliert und gerendert, während der Server das HTML für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
 
-### Benutzerdefinierte Helfer auf Serverseite {#server-side-custom-helpers}
+### Benutzerspezifische Helfer auf Serverseite {#server-side-custom-helpers}
 
-Um einen benutzerdefinierten SCF-Helfer auf der Serverseite zu implementieren und zu registrieren, implementieren Sie einfach die Java-Schnittstelle [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), erstellen Sie einen [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) und installieren Sie sie als Teil eines OSGi-Bundles.
+Um einen benutzerdefinierten SCF-Helfer auf der Serverseite zu implementieren und zu registrieren, implementieren Sie einfach die Java-Schnittstelle [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), stellen Sie sie zu einem [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) ein und installieren Sie sie als Teil eines OSGi-Bundles.
 
 Beispiel:
 
@@ -575,9 +575,9 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >Die Komponente wird für den angemeldeten Benutzer clientseitig wiedergegeben. Wenn der clientseitige Helfer nicht gefunden wird, wird die Komponente ausgeblendet.
 
-### Benutzerspezifische Helfer auf Clientseite {#client-side-custom-helpers}
+### Clientseitige benutzerdefinierte Helfer {#client-side-custom-helpers}
 
-Die clientseitigen Helfer sind Handlebars-Skripte, die durch Aufrufen registriert werden `Handlebars.registerHelper()`.\
+Die clientseitigen Helfer sind Handlebars-Skripte, die durch Aufrufen von `Handlebars.registerHelper()` registriert wurden.\
 Beispiel:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -598,11 +598,11 @@ function(Handlebars, SCF, $CQ) {
 Die benutzerdefinierten clientseitigen Helfer müssen einer benutzerdefinierten Client-Bibliothek hinzugefügt werden.\
 clientlib muss:
 
-* Abhängigkeiten einschließen `cq.social.scf`
+* Eine Abhängigkeit von `cq.social.scf` einschließen
 * Laden nach dem Laden von Handlebars
-* Einbezogen [werden](clientlibs.md)
+* Sei [einschließlich](clientlibs.md)
 
-Hinweis: Die SCF-Helfer werden in `/etc/clientlibs/social/commons/scf/helpers.js`.
+Hinweis: Die SCF-Helfer sind in `/etc/clientlibs/social/commons/scf/helpers.js` definiert.
 
 | **[⇐ Essentials](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
 |---|---|
