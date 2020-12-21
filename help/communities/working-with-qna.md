@@ -35,21 +35,21 @@ Das Forum für Fragen und Antworten bietet Community-Mitgliedern einen Raum, Fra
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Funktion des QnA-Forums zu einer AEM Site
-* Configuration settings for the `QnA`component
+* Konfigurationseinstellungen für die Komponente `QnA`
 
 ## Hinzufügen eines Fragen-und-Antworten-Forums zu einer Seite {#adding-a-q-a-forum-to-a-page}
 
-Um eine `QnA` Komponente einer Seite im Autorenmodus hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / QnA` und auf eine Seite zu ziehen, auf der das QnA-Forum angezeigt werden soll.
+Um einer Seite im Autorenmodus eine `QnA`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach `Communities / QnA` und ziehen Sie sie auf eine Seite, auf der das QnA-Forum angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](qna-essentials.md#essentials-for-client-side) einbezogen werden, wird die `QnA`-Komponente wie folgt angezeigt:
 
 ![chlimage_1-280](assets/chlimage_1-280.png)
 
 ### Konfigurieren von Fragen und Antworten {#configuring-qna}
 
-Select the placed `QnA` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `QnA` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-281](assets/chlimage_1-281.png) ![chlimage_1-282](assets/chlimage_1-282.png)
 
@@ -69,19 +69,25 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die Einstellungen
 
 * **[!UICONTROL Datei-Uploads zulassen]** Ist diese Option aktiviert, können Fragen oder Kommentaren Dateien hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Max. Dateigröße]** nur relevant, wenn 
+* **[!UICONTROL Max.]**
+DateigrößeRelevant nur, wenn 
 `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
-* **[!UICONTROL Zugelassene Dateitypen]** relevant nur, wenn 
+* **[!UICONTROL Zulässige]**
+DateitypenRelevant nur, wenn 
 `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
-* **[!UICONTROL Max. Größe]** der Bilddatei anhängen ist nur relevant, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+* **[!UICONTROL Max.]**
+Größe der Bilddatei anhängenRelevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
 
-* **[!UICONTROL Zulassen]** Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Zulassen von]**
+FolgendemWenn aktiviert, fügen Sie die folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Veröffentlichen]** zulassen Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Liste der Themen eingefügt werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Pinning]**
+zulassenWenn aktiviert, können Forumsthemen an den Anfang der Liste der Themen eingefügt werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL E-Mail-Abonnements]** zulassen Wenn diese aktiviert sind, erlauben Sie den Mitgliedern, über neue Beiträge per E-Mail ([Abonnement](subscriptions.md)) benachrichtigt zu werden. Muss überprüft `Allow Following` und [E-Mail konfiguriert](email.md)werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL E-Mail-]**
+Abonnements zulassenWenn diese Option aktiviert ist, können Sie zulassen, dass Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und [E-Mail-Konfiguration](email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Antworten zulassen]** Ist diese Option aktiviert, können Kommentare zur Frage hinterlassen werden. Diese Option ist standardmäßig deaktiviert.
 
@@ -91,19 +97,22 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die Einstellungen
 
 * **[!UICONTROL Ausgewählte Antwort an den Anfang verschieben]** Ist diese Option aktiviert, ist die erste angezeigte Antwort eine ausgewählte Antwort. Diese Option ist standardmäßig aktiviert.
 
-* **[!UICONTROL Anzeigen von Abzeichen]** Wenn aktiviert, zeigen Sie verdiente und zugewiesene [Abzeichen](implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Anzeigen von]**
+KennzeichenWenn aktiviert, zeigen Sie verdiente und zugewiesene  [](implementing-scoring.md) Abzeichen mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Wenn Sie]** die Option &quot;Vorgestellte Inhalte zulassen&quot;aktivieren, kann die Idee als [speziellen Inhalt](featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Zulassen von]**
+speziellen Inhalten, kann die Idee als  [speziellen Inhalt](featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics (quetions) and answers (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Themen (Fragen) und Antworten (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
 * **[!UICONTROL Antworten verweigern]** Ist diese Option aktiviert, können moderierende Mitglieder Antworten ablehnen und so verhindern, dass diese Beiträge im Fragen-und-Antworten-Forum veröffentlicht werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Themen schließen/erneut öffnen]** Ist diese Option aktiviert, können moderierende Mitglieder Fragen (Themen) für die weitere Bearbeitung oder Beantwortung schließen oder bereits geschlossene Fragen erneut öffnen. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Themen]** verschieben Wenn diese Option aktiviert ist, können Sie Moderatoren auf Veröffentlichungsseite das Verschieben von Fragen gestatten. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Verschieben von]**
+ThemenWenn diese aktiviert sind, können Sie Moderatoren auf der Seite des Veröffentlichungsmodus das Verschieben von Fragen zulassen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Posts kennzeichnen]** Ist diese Option aktiviert, können Mitglieder Fragen oder Antworten anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
@@ -119,34 +128,38 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics (q
 
 Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert) verwendet werden können.
 
-* **[!UICONTROL Zulässige Namensraum]** relevant, wenn 
-`Allow Tagging` unter der Registerkarte **Einstellungen** markiert. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+* **[!UICONTROL Zulässige]**
+NamespacesRelevant, wenn 
+`Allow Tagging` wird unter dem  **** Einstellungsstab überprüft. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Ein Wert von 
 `-1` bedeutet keine Beschränkungen. Der Standardwert ist 0.
 
 #### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **[!UICONTROL Sortiereinstellungen]** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie unter der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
-* **[!UICONTROL Sortieren nach]** Aktivieren aller zulässigen Sortierungsoptionen: 
+* **[!UICONTROL Sortieren]**
+nachAlle zulässigen Sortierungsauswahlen markieren: 
 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Als Standard]**-Pulldown festlegen, um eine der aktivierten Sortieroptionen als Standard festzulegen. Der Standardwert ist 
+* **[!UICONTROL Legen Sie]**
+DefaultPull nach unten fest, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden soll. Der Standardwert ist 
 `Newest`.
 
-* **[!UICONTROL Wählen Sie die Zeitoptionen für die Analytics-Sortierung]**, um eine der folgenden Optionen auszuwählen: 
+* **[!UICONTROL Zeitoptionen für Analytics-]**
+SortierungZiehen Sie nach unten, um eine der folgenden Optionen auszuwählen 
 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Identifizieren von Antworten {#identifying-answers}
 
-Eine Antwort kann mit der `Select Answer` Schaltfläche als richtige oder nützliche Antwort gekennzeichnet werden. Nachdem eine Frage als &quot;Beantwortet&quot;markiert wurde, kann erst eine andere Antwort ausgewählt werden, wenn die erste mit der `Unmark Chosen Answer`Schaltfläche deaktiviert wurde.
+Eine Antwort kann mit der Schaltfläche `Select Answer` als richtige oder nützliche Antwort markiert werden. Nachdem eine Frage als &quot;Beantwortet&quot;markiert wurde, kann erst eine andere Antwort ausgewählt werden, wenn die erste mit der Schaltfläche `Unmark Chosen Answer`deaktiviert wurde.
 
-Once selected as a viable answer, it may be unselected using the `Unmark Chosen Answer` button.
+Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der Schaltfläche `Unmark Chosen Answer` aufgehoben werden.
 
-Sobald eine Antwort als praktikable Antwort ausgewählt wurde, wird auf der Hauptseite der QnA neben dem Fragethema ein Hinweis darauf angezeigt, dass die Frage angezeigt `Answered`wurde.
+Sobald eine Antwort als praktikable Antwort ausgewählt wurde, wird auf der Hauptseite der QnA neben dem Fragethema ein Hinweis darauf angezeigt, dass die Frage `Answered`lautet.
 
 ### Moderatoren und Administratoren {#moderators-and-administrators}
 
