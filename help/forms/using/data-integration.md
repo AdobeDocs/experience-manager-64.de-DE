@@ -47,7 +47,7 @@ Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiede
 * Aufrufen von Datenquellendiensten/-vorgängen mit Regeln für adaptive Formulare
 * Übermittelte Formulardaten in Datenquellen schreiben
 
-## Erste Schritte mit Datenintegration {#get-started-with-data-integration}
+## Erste Schritte mit Datenintegration  {#get-started-with-data-integration}
 
 Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen, die Informationen speichern, die Sie in Anwendungsfällen für adaptive Formulare und interaktive Kommunikation verwenden möchten, zu identifizieren und zu konfigurieren. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekt, Eigenschaften und Dienste aus einer oder mehreren Datenquellen verwendet. Sie können adaptive Formulare und interaktive Kommunikation basierend auf einem Formulardatenmodell erstellen, bei dem adaptive Formularfelder oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
 
