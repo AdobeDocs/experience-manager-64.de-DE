@@ -20,7 +20,7 @@ ht-degree: 82%
 
 Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Wiedergabe eines Formulars, sondern auch eine HTML5-Wiedergabe davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular anzuzeigen, wie es im Browser angezeigt werden wird.
 
-## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer {#html-preview-of-forms-in-forms-designer}
+## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer  {#html-preview-of-forms-in-forms-designer}
 
 Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivieren, müssen Sie folgende Konfigurationen durchführen:
 
@@ -30,7 +30,7 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 ### Apache Sling Authentifizierungsdienst konfigurieren{#configure-apache-sling-authentication-service} 
 
-1. Wechseln Sie zu `https://[server]:[port]/system/console/configMgr` AEM Forms unter OSGi oder
+1. Gehen Sie zu `https://[server]:[port]/system/console/configMgr` unter AEM Forms, das auf OSGi ausgeführt wird, oder
 
    `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, das auf JEE läuft.
 
@@ -54,41 +54,41 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 1. Geben Sie einen Benutzernamen und ein Kennwort für **[!UICONTROL Anonymer Benutzername]** und **[!UICONTROL Anonymes Benutzerkennwort]** ein. Die angegebenen Anmeldeinformationen werden verwendet, um anonyme Authentifizierung zu nutzen und Zugriff auf anonyme Benutzer zuzulassen.
 1. Klicken Sie auf **Speichern**, um die Konfiguration zu speichern.
 
-### Abgesicherten Modus deaktivieren {#disable-protected-mode}
+### Abgesicherten Modus deaktivieren  {#disable-protected-mode}
 
 Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist standardmäßig aktiviert. Behalten Sie dies in Produktionsumgebungen bei. Sie können ihn in Entwicklungsumgebungen deaktivieren, um eine HTML5-Vorschau in Designer anzuzeigen. Gehen Sie wie folgt vor, um ihn zu deaktivieren:
 
 1. Melden Sie sich bei der AEM-Web-Konsole als Administrator an.
 
-   * URL for AEM Forms on OSGi is `https://[server]:[port]/system/console/configMgr`
-   * URL für AEM Forms on JEE: `https://[server]:[port]/lc/system/console/configMgr`
+   * URL für AEM Forms unter OSGi ist `https://[server]:[port]/system/console/configMgr`
+   * URL für AEM Forms on JEE ist `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Öffnen Sie **[!UICONTROL Mobile Forms-Konfigurationen]** für die Bearbeitung.
 1. Wählen Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
-### Details zum AEM Forms-Server bereitstellen {#provide-details-of-aem-forms-server}
+### Details zum AEM Forms-Server bereitstellen  {#provide-details-of-aem-forms-server}
 
 1. Navigieren Sie in Designer zu **Werkzeuge**> **Optionen**.
-1. In the Options window, select **Server Options** page, provide the following details, and click **OK**.
+1. Wählen Sie im Fenster &quot;Optionen&quot;die Seite **Serveroptionen** aus, geben Sie die folgenden Details ein und klicken Sie auf **OK**.
 
    * **Server URL**: AEM Forms-Server URL.
-   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.         
+   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502. 
    * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
    * **Forms Manager Context:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
-      * `/aem/forms` (AEM Forms on OSGi)
-      * `/lc/forms` (AEM Forms on JEE)
+      * `/aem/forms` (AEM Forms unter OSGi)
+      * `/lc/forms` (AEM Forms zu JEE)
 
-   **Hinweis:***Stellen Sie sicher, dass AEM Forms ausgeführt wird. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Hinweis:***Stellen Sie sicher, dass AEM Forms ausgeführt wird. Die HTML-Vorschau stellt eine Verbindung zum CRX-Server mit einer Vorschau her, die* generate *enthält.*
 
    ![AEM Forms Designer-Optionen ](assets/server_options.png)
 
    AEM Forms Designer-Optionen
 
-1. To preview a form in HTML, click the **Preview HTML** tab.
+1. Um ein Formular in HTML Vorschau, klicken Sie auf die Registerkarte **Vorschau-HTML**.
 
    >[!NOTE]
    >
@@ -116,4 +116,4 @@ Durch Testen Ihres Formulars mit Hilfe von Musterdaten können Sie sicherstellen
 
 In AEM Forms können Sie die Formulare und Dokumente in einem Repository in der Vorschau anzeigen. Mithilfe der Vorschau können Sie genau sehen, wie die Formulare aussehen und wie sie von Endbenutzern verwendet werden.
 
-[**Support kontaktieren **](https://www.adobe.com/de/account/sign-in.supportportal.html)
+[**Support kontaktieren**](https://www.adobe.com/de/account/sign-in.supportportal.html)
