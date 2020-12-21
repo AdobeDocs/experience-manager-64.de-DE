@@ -28,7 +28,7 @@ Formular in der AEM Forms-App synchronisieren
 1. Wählen Sie in der Autoreninstanz ein Formular aus und klicken Sie auf **** Eigenschaften anzeigen.
 
 1. Klicken Sie auf der Eigenschaftenseite auf **Erweitert**.
-1. Under Advanced, enable option: **Sync with AEM Forms App**, and tap **Save**.
+1. Aktivieren Sie unter Erweitert die Option: **Synchronisieren Sie mit AEM Forms App** und tippen Sie auf **Speichern**.
 
 Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehrere Formulare in Forms Manager aus und tippen Sie auf **Mit AEM Forms-App synchronisieren**. Wenn das Formular veröffentlicht wird, wird die AEM Forms App mit dem Server synchronisiert und ruft das Formular ab.
 
