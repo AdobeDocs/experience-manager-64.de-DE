@@ -27,11 +27,11 @@ es auf einem Portalserver für Endbenutzer. Sie können die Benutzeroberfläche 
 
 >[!NOTE]
 >
->For detailed information about other AEM tools and options, see [Working with the Author Environment](/help/sites-authoring/home.md).
+>Ausführliche Informationen zu anderen AEM Tools und Optionen finden Sie unter [Arbeiten mit der Authoring-Umgebung](/help/sites-authoring/home.md).
 
 ## Auf AEM Forms-Komponenten zugreifen {#access-aem-forms-components}
 
-Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Asstes, zum Verwalten einer AEM-Instanz und mehr. You can click the ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM Forms. To navigate to AEM Forms, click the **Experience Manager logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **navigation** ![compass](assets/compass.png) > **Forms**. Links der folgenden Konsolen werden angezeigt:
+Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Asstes, zum Verwalten einer AEM-Instanz und mehr. Sie können auf das ![adobeexperiencemanager](assets/adobeexperiencemanager.png)-Experience Manager-Logo klicken, um zu allen verfügbaren Tools zu navigieren. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM Forms. Um zu AEM Forms zu navigieren, klicken Sie auf das **Experience Manager-Logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **navigation** ![compass](assets/compass.png) > **Forms**. Links der folgenden Konsolen werden angezeigt:
 
 * Formulare und Dokumente
 * Designs
@@ -62,7 +62,7 @@ Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung 
 
 ![Ordner](assets/folders.png)
 
-**A.** Allgemeiner Ordner **B.** Forms Workflow
+**A.** Allgemeiner Ordner  **B.** Forms Workflow
 
 Der Formular &amp; Dokumente-Bereich bietet auch Optionen für Folgendes:
 
@@ -92,30 +92,30 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 
 Detaillierte Informationen zum Erstellen und Verwenden von Datenwörterbüchern finden Sie unter [Erstellen von Datenwörterbüchern](/help/forms/using/data-dictionary.md).
 
-## Zugriff auf AEM Forms-Konfigurationen {#accessing-aem-forms-configurations}
+## Zugriff auf AEM Forms-Konfigurationen  {#accessing-aem-forms-configurations}
 
-AEM Tools-Bereich enthält Tools für verschiedene Komponenten. To navigate to AEM Forms-specific tools, click the **Experience Manager logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **tools** ![hammer](assets/hammer.png) > **Forms**. Tools zum Durchführen folgender Funktionen werden angezeigt:
+AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu AEM Forms-spezifischen Werkzeugen zu navigieren, klicken Sie auf das **Experience Manager-Logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **tools** ![hammer](assets/hammer.png) > **Forms**. Tools zum Durchführen folgender Funktionen werden angezeigt:
 
 * **Konfigurieren eines überwachten Ordners:** Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter Ordner bezeichnet wird, sodass ein vorkonfigurierter Dienstvorgang zur Verarbeitung einer Datei gestartet wird, wenn ein Benutzer eine Datei (z. B. eine PDF-Datei) in diesem überwachten Ordner ablegt. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
-* **Forms App Offline-Dienst konfigurieren:** Der AEM Forms App-Offlinedienst speichert die Pfade oder URLs der in einem Formular verwendeten Ressourcen zwischen. Durch das Zwischenspeichern der Pfa oder URLs der in einem Formular verwendeten Ressourcen wird die serverseitige Leistung verbessert. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
+* **Forms App-Offlinedienst konfigurieren:** Der AEM Forms-App-Offlinedienst speichert die Pfade oder URLs der in einem Formular verwendeten Ressourcen zwischen. Durch das Zwischenspeichern der Pfa oder URLs der in einem Formular verwendeten Ressourcen wird die serverseitige Leistung verbessert. Informationen zum Konfigurieren der serverseitigen Offlinekomponente der AEM Forms-App finden Sie unter [Arbeiten im Offlinemodus](/help/forms/using/work-offline-mode.md).
 
 ![aem-forms-tools](assets/aem-forms-tools.png)
 
 * **Konfigurieren von PDF Generator:** Ein Administrator kann AEM Forms PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren. 
-* **Correspondence Management-Assets veröffentlichen:** Mit AEM Forms können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autorinstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. For detailed information, see [Publishing and unpublishing forms &amp; documents](/help/forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Correspondence Management-Assets veröffentlichen:** Mit AEM Forms können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autorinstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. Detaillierte Informationen finden Sie unter [Veröffentlichen und Rückgängigmachen der Veröffentlichung von Formularen und Dokumenten](/help/forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exportieren von Correspondence Management-Assets:** Verwenden Sie diese Option, um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket aus einer AEM Forms-Instanz herunterzuladen. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](/help/forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Häufige Elemente der Benutzeroberfläche {#commonelements}
 
-* **Linke Leiste:** Sie können auf das linke Eisenbahnsymbol ![link](assets/railleftpng.png) klicken, um die Funktionen Timeline und References von AEM Forms anzuzeigen.
+* **Linke Leiste:** Sie können auf das linke Bahnsymbol  ![](assets/railleftpng.png) Leiste klicken, um die Funktionen Zeitschiene und Referenz von AEM Forms anzuzeigen.
 
    * **Zeitleiste:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Zeitleiste verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](/help/forms/using/create-reviews-forms.md).
    * **Referenzen:** Ein AEM Forms-Asset kann in mehreren AEM Forms-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. Referenzen sind eine Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, sowie die Liste anderer Assets, die das ausgewählte Asset verwendet.
 
 * **Breadcrumbs:** Ein Breadcrumb gibt den Titel der aktuellen Konsole oder des Ordners an. Sie können auf die Breadcrumb-Option klicken, um zwischen den Ordnerebenen, die höher in der Hierarchie sind, zu navigieren.
-* **Ansicht Switcher:** Sie können auf das Symbol &quot;Ansicht-Switcher&quot; ![viewlist](assets/viewlist.png) oder ![viewcard](assets/viewcard.png) klicken, um schnell zwischen Liste und Ansicht zu wechseln. Weitere Informationen zu häufigen Benutzeroberflächenkomponenten finden Sie unter [Arbeiten mit der Autorenumgebung](/help/sites-authoring/basic-handling.md).
-* **Suchen:** Die ![Suche](assets/search.png) mit den Suchoptionen bietet die Möglichkeit, schnell die benötigten Inhalte und Werkzeuge zu finden und zu finden. Geben Sie den Namen des Inhalts oder Produkts ein und wählen Sie aus den Vorschlägen, geben Sie z. B. „Dokumente“ ein, um Formulare und Dokumente oder Dokumentfragmente schnell zu suchen. Weitere Informationen zu  finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
+* **Ansicht Switcher:** Sie können auf das Symbol  ![](assets/viewlist.png) Viewlist oder  ![](assets/viewcard.png) viewcardds für den Ansicht-Switcher klicken, um schnell zwischen Liste- und Karten-Ansicht zu wechseln. Weitere Informationen zu häufigen Benutzeroberflächenkomponenten finden Sie unter [Arbeiten mit der Autorenumgebung](/help/sites-authoring/basic-handling.md).
+* **Suche:** Die  ![](assets/search.png) Suche mit den Suchoptionen bietet die Möglichkeit, schnell die benötigten Inhalte und Werkzeuge zu finden und zu finden. Geben Sie den Namen des Inhalts oder Produkts ein und wählen Sie aus den Vorschlägen, geben Sie z. B. „Dokumente“ ein, um Formulare und Dokumente oder Dokumentfragmente schnell zu suchen. Weitere Informationen zu  finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
 * **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt. Sie enthält alle Management-Tools für das ausgewählte Asset. Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
 
 >[!NOTE]
