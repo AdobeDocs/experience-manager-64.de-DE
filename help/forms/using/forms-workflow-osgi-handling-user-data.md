@@ -70,7 +70,7 @@ Die Standardspeicherorte des Repositorys, in denen Nutzlast, Entwürfe und der V
  </tbody> 
 </table>
 
-## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
+## Zugreifen auf und Löschen von Benutzerdaten  {#access-and-delete-user-data}
 
 Sie können auf Benutzerdaten von einer Workflow-Instanz aus im Repository zugreifen und sie löschen. Um dies zu erreichen, müssen Sie die Instanz-ID der Workflow-Instanz kennen, die dem Benutzer zugeordnet ist. Sie können die Instanz-ID einer Workflow-Instanz mithilfe des Benutzernamens des Benutzers finden, der die Workflow-Instanz initiiert hat, oder wer der aktuelle Bearbeiter der Workflow-Instanz ist.
 
@@ -79,11 +79,11 @@ In den folgenden Szenarios können Sie das jedoch nicht erkennen oder die Ergebn
 * **Workflow, der durch einen überwachten Ordner ausgelöst wurde**: Eine Workflow-Instanz kann nicht über ihren Initiator identifiziert werden, wenn der Workflow von einem überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
 * **Workflow, der von der AEM-Veröffentlichungsinstanz** initiiert wurde: Alle Workflow-Instanzen werden mithilfe eines Servicebenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername des angemeldeten Benutzers nicht in den Workflow-Instanz-Daten erfasst.
 
-### Zugreifen auf Benutzerdaten {#access}
+### Zugreifen auf Benutzerdaten  {#access}
 
 Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Instanz zu identifizieren und darauf zuzugreifen:
 
-1. On AEM author instance, go to `https://[server]:[port]/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
+1. Wechseln Sie in AEM Autoreninstanz zu `https://[server]:[port]/crx/de` und navigieren Sie zu **[!UICONTROL Tools > Abfrage]**.
 
    Wählen Sie **[!UICONTROL SQL2]** aus der Dropdownliste **[!UICONTROL Typ]**.
 
@@ -99,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
    Die Abfrage gibt den Speicherort aller Workflow-Instanzen für den angegebenen Workflow-Initiator oder den aktuellen Workflow-Empfänger zurück.
 
-   For example, the following query returns two workflow instances path from the `/var/workflow/instances` node whose workflow initiator is `srose`.
+   Beispielsweise gibt die folgende Abfrage zwei Workflow-Instanzenpfad vom `/var/workflow/instances`-Knoten zurück, dessen Workflow-Initiator `srose` ist.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -107,7 +107,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
    ![status](assets/status.png)
 
-1. In the workflow instance node, navigate to `data/payload/`. Die Eigenschaft `path` speichert den Pfad zur Nutzlast für die Workflow-Instanz. Sie können zu dem Pfad navigieren, um auf Daten zuzugreifen, die in der Nutzlast gespeichert sind.
+1. Navigieren Sie im Knoten Workflow-Instanz zu `data/payload/`. Die Eigenschaft `path` speichert den Pfad zur Nutzlast für die Workflow-Instanz. Sie können zu dem Pfad navigieren, um auf Daten zuzugreifen, die in der Nutzlast gespeichert sind.
 
    ![payload-path](assets/payload-path.png)
 
@@ -125,7 +125,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 >
 >Die AEM Forms-App speichert Daten auch im Offline-Modus. Es ist möglich, dass Daten für eine Workflow-Instanz lokal auf einzelnen Geräten gespeichert und an den Forms-Server gesendet werden, wenn die App mit dem Server synchronisiert wird.
 
-### Benutzerdaten löschen {#delete-user-data}
+### Benutzerdaten löschen  {#delete-user-data}
 
 Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen zu löschen, indem Sie die folgenden Schritte ausführen:
 
@@ -136,18 +136,18 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
    * Pfade zu Nutzlasten für die Workflow-Instanzen
    * Pfade zu Entwürfen und Verlauf für die Workflow-Instanzen
 
-1. Perform this step for workflow instances in **RUNNING**, **SUSPENDED**, or **STALE** status:
+1. Führen Sie diesen Schritt für Workflow-Instanzen im Status **AUSFÜHREN**, **AUSGESETZT** oder **STALE** aus:
 
-   1. Go to `https://[server]:[port]/aem/start.html` and log in with administrator credentials.
+   1. Wechseln Sie zu `https://[server]:[port]/aem/start.html` und melden Sie sich mit Administratorberechtigungen an.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
    1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um die laufenden Instanzen zu beenden.
 
-   For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
+   Weitere Informationen zum Arbeiten mit Workflow-Instanzen finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md).
 
 1. Wechseln Sie zur CRXDE Lite-Konsole, navigieren Sie zum Nutzlastpfad für eine Workflow-Instanz und löschen Sie den Knoten `payload`.
 1. Navigieren Sie zum Entwurfspfad für eine Workflow-Instanz und löschen Sie den Knoten `draft`.
-1. Navigate to the history path for a workflow instance, and delete the `history` node.
-1. Navigate to the workflow instance path for a workflow instance, and delete the `[workflow-instance-ID]` node for the workflow.
+1. Navigieren Sie zum Verlaufspfad für eine Workflow-Instanz und löschen Sie den Knoten `history`.
+1. Navigieren Sie zum Pfad der Workflow-Instanz für eine Workflow-Instanz und löschen Sie den Knoten `[workflow-instance-ID]` für den Workflow.
 
    >[!NOTE]
    >
