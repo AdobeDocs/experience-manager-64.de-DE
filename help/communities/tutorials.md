@@ -24,7 +24,7 @@ Dies sind Beispiele für das Lernen und Arbeiten mit AEM 6.1 Communities [social
 
 ## Clientseitige Anpassung {#client-side-customization}
 
-Siehe auch clientseitige [SCF-Anpassung](client-customize.md).
+Siehe auch [SCF clientseitige Anpassung](client-customize.md).
 
 * [Handbuch &quot;Community-Komponenten&quot;](components-guide.md)
 
@@ -36,15 +36,15 @@ Siehe auch clientseitige [SCF-Anpassung](client-customize.md).
 
 Siehe auch [SCF-serverseitige Anpassung](server-customize.md).
 
-Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) -Repository verfügbar:
+Beispielcode ist im Repository [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar:
 
-* [Beispiel für SCF-Komponenten anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Muster für SCF-Komponenten anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
 * [Beispiel einer SCF-Komponente für Überlagerung](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
 * [Beispiel für SCF-Komponenten erweitern](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
-## Anleitung {#how-to-instructions}
+## Anleitungen {#how-to-instructions}
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
@@ -58,15 +58,15 @@ Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Mark
 
 * [Beispielseite erstellen](create-sample-page.md)
 
-## Demobenutzer {#demo-users}
+## Demo-Benutzer {#demo-users}
 
-Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Unterschied zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet), und solange die Geometrixx Samplingpakete installiert bleiben, können Sie mithilfe dieser Benutzer einen angemeldeten Status simulieren, wenn Sie mit dem [Community Components-Handbuch](components-guide.md)arbeiten.
+Das Geometrixx samples-Paket enthält Demobenutzer. Es besteht oft ein Unterschied zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet). Solange die Geometrixx Samplingpakete installiert bleiben, können Sie mit diesen Benutzern einen angemeldeten Status simulieren, wenn Sie mit dem [Community Components guide](components-guide.md) arbeiten.
 
-Um eine vollständige Liste der Demobenutzer zu erhalten, navigieren Sie mit der Leiste zu **[!UICONTROL Tools > Vorgänge > Sicherheit > Benutzer]**. Oder verwenden Sie die Classic UI- [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
+Für eine vollständige Liste der Demobenutzer navigieren Sie mit der Leiste zu **[!UICONTROL Tools > Vorgänge > Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin), um Benutzer und Gruppen zu verwalten.
 
-Wenn eine [Community-Site erstellt](getting-started.md)wurde, ist es möglich, Demobenutzer den [Community-Benutzergruppen](users.md)zuzuweisen.
+Wenn eine [Community-Site erstellt wurde, ist es möglich, den [Community-Benutzergruppen](users.md) Demobenutzer zuzuweisen.](getting-started.md)
 
-***Benutzer-ID */*Kennwort:***
+***Benutzer-ID* /- *Kennwort:***
 
 * aaron.mcdonald@mailinator.com/Kennwort
 * emily.andrews@mailinator.com/Kennwort
