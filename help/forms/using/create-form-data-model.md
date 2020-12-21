@@ -40,15 +40,15 @@ Das Formulardatenmodell sieht etwa wie folgt aus:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**A.** Konfigurierte Datenquellen **B.** Datenquellen-Schema **C.** Verfügbare Dienste **D.** Datenmodellobjekte **E.** Konfigurierte Dienste
+**A.** Konfigurierte Datenquellen  **B.** Datenquellen-Schema  **C.** Verfügbare Dienste  **D.** Datenmodellobjekte  **E.** Konfigurierte Dienste
 
 ## Voraussetzungen {#prerequisites}
 
 Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 * MySQL-Datenbank mit Beispieldaten wie im Abschnitt „Voraussetzungen“ von [Erstellen Sie Ihr erstes adaptives Formular ](/help/forms/using/create-your-first-adaptive-form.md) beschrieben
-* OSGi bundle for MySQL JDBC driver as explained in [Bundling the JDBC Database Driver](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
-* Adaptive form as explained in the first tutorial [Create an adaptive form](/help/forms/using/create-adaptive-form.md)
+* OSGi-Bundle für den JDBC-Treiber für MySQL, wie unter [Bundling des JDBC-Datenbanktreibers](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver) beschrieben
+* Adaptives Formular, wie im ersten Lernprogramm [Erstellen eines adaptiven Formulars](/help/forms/using/create-adaptive-form.md) beschrieben
 
 ## Schritt 1: Konfigurieren der MySQL-Datenbank als Datenquelle {#config-database}
 
@@ -60,9 +60,9 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Webkonsolen-Paketen. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
-   1. Tap **Install/Update**. Ein Dialogfeld **Pakete hochladen/installieren** wird angezeigt.
+   1. Tippen Sie auf **Installieren/Aktualisieren**. Ein Dialogfeld **Pakete hochladen/installieren** wird angezeigt.
 
-   1. Tippen Sie auf **Datei auswählen**, um das OSBi-Paket für den MySQL-JDBC-Treiber auszuwählen. Select **Start Bundle** and **Refresh Packages**, and tap **Install or Update**. Stellen Sie sicher, dass der JDBC-Treiber der Oracle Corporation für MySQL aktiv ist. Der Treiber wird installiert.
+   1. Tippen Sie auf **Datei auswählen**, um das OSBi-Paket für den MySQL-JDBC-Treiber auszuwählen. Wählen Sie **Beginn-Bundle** und **Pakete aktualisieren** und tippen Sie auf **Installieren oder Aktualisieren**. Stellen Sie sicher, dass der JDBC-Treiber der Oracle Corporation für MySQL aktiv ist. Der Treiber wird installiert.
 
 1. Konfigurieren der MySQL-Datenbank als Datenquelle:
 
@@ -72,34 +72,34 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben, beispielsweise **WeRetailMySQL**.
       * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
-      * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. For MySQL database, specify **com.mysql.jdbc.Driver**.
-      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. Geben Sie für die MySQL-Datenbank **com.mysql.jdbc.Driver** an.
+      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für eine MySQL-Datenbank, die auf Port 3306 ausgeführt wird, und für Schema, das über Ethernet verfügt, lautet die URL: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
-      * **Test auf Borge:** Aktivieren Sie die Option **Test on Borrow** .
+      * **Test on Borrow:** Aktivieren Sie die Option  **Test on** Borrowoption.
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
-      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **Wählen Sie &amp;ast; von Kundendetails**.
+      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **Wählen Sie &amp;ast; von customerdetails**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
 
-      Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
+      Belassen Sie andere Eigenschaften mit den Standardwerten [und tippen Sie auf **Speichern**.](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html)
    Eine Konfiguration ähnlich der folgenden wird erstellt.
 
    ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#create-fdm}
 
-AEM Forms provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für unseren Anwendungsfall verwenden wir die konfigurierte MySQL-Datenquelle.
+AEM Forms bietet eine intuitive Benutzeroberfläche zum Erstellen eines Formulardatenmodells [aus konfigurierten Datenquellen. ](data-integration.md) Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für unseren Anwendungsfall verwenden wir die konfigurierte MySQL-Datenquelle.
 
 Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
-1. In AEM author instance, navigate to **Forms** >  **Data Integration** s.
+1. Navigieren Sie in AEM Autoreninstanz zu **Forms** > **Datenintegration** s.
 1. Tippen Sie auf **Erstellen** > **Formulardatenmodell**.
 1. Geben Sie im Dialogfeld „Formulardatenmodell erstellen“ einen **Namen** für das Formulardatenmodell ein. Zum Beispiel **customer-shipping-billing-details**. Tippen Sie auf **Weiter**.
-1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Select **WeRetailMySQL** data source and tap **Create**.
+1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Wählen Sie **WeRetailMySQL**-Datenquelle und tippen Sie auf **Erstellen**.
 
    ![data-source-selection](assets/data-source-selection.png)
 
-The **customer-shipping-billing-details** form data model is created.
+Das Formulardatenmodell **customer-shipping-billing-details** wird erstellt.
 
 ## Schritt 3: Konfigurieren eines Formulardatenmodells {#config-fdm}
 
@@ -111,13 +111,13 @@ Zum Konfigurieren eines Formulardatenmodells gehört Folgendes:
 Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
 1. Navigieren Sie auf dem AEM-Server zu **Formulare > Datenintegrationen**.  Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. The **customer-shipping-billing-details** form data model you created earlier is listed here. Öffnen Sie es im Bearbeitungsmodus.
+1. Das zuvor erstellte Formulardatenmodell **customer-shipping-billing-details** ist hier aufgeführt. Öffnen Sie es im Bearbeitungsmodus.
 
    Die ausgewählte Datenquelle **WeRetailMySQL** wird im Formulardatenmodell konfiguriert.
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Select the following data model objects and services from **weretail** >  **customerdetails** schema to form data model:
+1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus dem Schema **weretail** > **customerdetails** zum Formulardatenmodell aus:
 
    * **Datenmodellobjekte**:
 
@@ -155,7 +155,7 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       ![id-arg](assets/id-arg.png)
 
-   1. Tippen Sie auf **Fertig**, um die Eigenschaften des Datenmodellobjekts zu speichern. Then, tap **Save** to save the form data model.
+   1. Tippen Sie auf **Fertig**, um die Eigenschaften des Datenmodellobjekts zu speichern. Tippen Sie dann auf **Speichern**, um das Formulardatenmodell zu speichern.
 
       Die Dienste **get** und **update** werden als Standarddienste für das Datenmodellobjekt hinzugefügt.
 
@@ -163,7 +163,7 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
 1. Wechseln Sie zur Registerkarte **Dienste** und konfigurieren Sie die Dienste **get** und **update**.
 
-   1. Select the **get** service and tap **Edit Properties**. Das Dialogfeld „Eigenschaften“ wird geöffnet.
+   1. Wählen Sie den Dienst **get** und tippen Sie auf **Eigenschaften bearbeiten**. Das Dialogfeld „Eigenschaften“ wird geöffnet.
    1. Geben Sie im Dialogfeld „Eigenschaften bearbeiten“ Folgendes an:
 
       * **Titel**: Geben Sie den Titel des Dienstes an. Beispiel: Lieferadresse abrufen.
@@ -181,7 +181,7 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       ![shiiping-address-retrieve](assets/shiiping-address-retrieval.png)
 
-   1. Select the **update** service and tap **Edit Properties**. Das Dialogfeld „Eigenschaften“ wird geöffnet.
+   1. Wählen Sie den Dienst **update** und tippen Sie auf **Eigenschaften bearbeiten**. Das Dialogfeld „Eigenschaften“ wird geöffnet.
 
    1. Geben Sie im Dialogfeld „Eigenschaften bearbeiten“ Folgendes an:
 
@@ -206,7 +206,7 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
 Das Datenmodellobjekt und die Dienste im Formulardatenmodell sind konfiguriert. Sie können nun das Formulardatenmodell testen.
 
-## Schritt 4: Testen eines Formulardatenmodells {#test-fdm}
+## Schritt 4: Testen eines Formulardatenmodells  {#test-fdm}
 
 Sie können das Datenmodellobjekt und die Datendienste testen, um sicherzustellen, dass das Formulardatenmodell ordnungsgemäß konfiguriert ist.
 
