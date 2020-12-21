@@ -257,9 +257,9 @@ Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue aus AEM For
  
 ```
 
-## Quick Beginn (SOAP-Modus): Verwalten von Benutzern und Gruppen mithilfe der Java-API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Verwalten von Benutzern und Gruppen mit der Java-API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-Im folgenden Codebeispiel werden ein lokaler Benutzer und die lokale Gruppe gefunden, zu der der Benutzer gehört. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
+Im folgenden Codebeispiel werden ein lokaler Benutzer und die lokale Gruppe gefunden, zu der der Benutzer gehört. (Siehe [Verwalten von Benutzern und Gruppen](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```as3
  /* 
@@ -381,7 +381,7 @@ Im folgenden Codebeispiel werden ein lokaler Benutzer und die lokale Gruppe gefu
  
 ```
 
-## Quick Beginn (SOAP-Modus): Rollen und Berechtigungen mithilfe der Java-API verwalten {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Rollen und Berechtigungen mithilfe der Java-API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api} verwalten
 
 Im folgenden Codebeispiel wird die Rolle &quot;Dienstbenutzer&quot;einem Prinzipal zugewiesen, die Rollen des Prinzipals gedruckt und anschließend aus dem Prinzipal entfernt. Für diesen schnellen Beginn werden zwei Dienste aufgerufen: den DirectoryManager-Dienst und den AuthorizationManager-Dienst.(Siehe [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
@@ -526,7 +526,7 @@ Im folgenden Codebeispiel wird die Rolle &quot;Dienstbenutzer&quot;einem Prinzip
 
 ## Quick Beginn (SOAP-Modus): Programmierbare Synchronisierung von Benutzern mit der Java-API {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Benutzer mithilfe der User Management-APIs synchronisiert. (Siehe [Programmgesteuertes Synchronisieren von Benutzern](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+Im folgenden Java-Codebeispiel werden Benutzer mithilfe der User Management-APIs synchronisiert. (Siehe [Programmatische Synchronisierung von Benutzern](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```as3
  /* 
@@ -905,7 +905,7 @@ Im folgenden Codebeispiel wird eine Gruppe mit dem Namen AdobeGroup nach AEM For
 
 ## Quick Beginn (SOAP-Modus) Voreinstellungsknoten verwalten {#quick-start-soap-mode-managing-preferences-nodes}
 
-Die folgenden Java-Codemodelle verwalten Voreinstellungsknoten mithilfe der User Management-APIs. (Siehe [Programmgesteuertes Verwalten der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+Die folgenden Java-Codemodelle verwalten Voreinstellungsknoten mithilfe der User Management-APIs. (Siehe [Programmatische Verwaltung der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```as3
 /* 
@@ -1008,7 +1008,7 @@ public class ManagePreferences {
 
 ## Quick Beginn (SOAP-Modus): Programmgesteuertes Verwalten der Voreinstellungsknoten mithilfe der Java-API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-Die folgenden Java-Codemodelle zur Verwaltung von Voreinstellungsknoten mithilfe der User Management-APIs ( Siehe [Programmgesteuertes Verwalten der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+Die folgenden Java-Codemodelle zur Verwaltung von Voreinstellungsknoten mithilfe der User Management-APIs ( Siehe [Programmgesteuertes Verwalten der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)))
 
 ```as3
 /* 
