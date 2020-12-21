@@ -27,8 +27,8 @@ Führen Sie die folgenden Schritte aus, um AEM die Suche in sicherheitsgeschütz
 ## Bevor Sie beginnen {#before-you-start}
 
 * Installieren und konfigurieren Sie AEM Forms Document Security.
-* Add package sun.util.calendar to the allowlist of the **Deserialization Firewall Configuration.** Die Konfiguration wird unter `https://[server]:[port]/system/console/configMgr`.
-* Stellen Sie sicher, dass alle AEM-Pakete aktiv sind. Die Bundles werden unter `https://[server]:[port]/system/console/bundles`. Wenn alle Bundles nicht aktiv, warten Sie einige Minuten und überprüfen Sie den Status der Bundles.
+* hinzufügen Paket sun.util.calendar auf die Zulassungsliste der **Deserialisierungs-Firewall-Konfiguration.** Die Konfiguration wird unter  `https://[server]:[port]/system/console/configMgr`.
+* Stellen Sie sicher, dass alle AEM-Pakete aktiv sind. Die Bundles sind unter `https://[server]:[port]/system/console/bundles` aufgeführt. Wenn alle Bundles nicht aktiv, warten Sie einige Minuten und überprüfen Sie den Status der Bundles.
 
 ## Erstellen Sie eine sichere Verbindung AEM Forms Workflow (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
@@ -65,7 +65,7 @@ Eine sichere Verbindung ermöglicht den Informationsfluss zwischen AEM Forms on 
 
    Klicken Sie auf **Speichern**. AEM ist aktiviert, um PDF- und Microsoft Office-Dokumente, die durch Document Security geschützt sind zu durchsuchen.
 
-## Indexieren Sie ein Beispiel für ein richtliniengeschütztes PDF- oder Microsoft Office-Dokument. {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
+## Indexieren Sie ein Beispiel für ein richtliniengeschütztes PDF- oder Microsoft Office-Dokument.  {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 
 1. Melden Sie sich bei AEM Assets als Administrator an.
 1. Erstellen Sie einen Ordner in AEM Digital Asset Manager und laden Sie die durch Richtlinien geschützten PDF oder Microsoft Office-Dokumente in den neu erstellten Ordner hoch. Durchsuchen Sie nun die Inhalte der richtliniengeschützten Dokumente mit der AEM-Suche. Das Dokument muss zurückzugeben werden, das den gesuchten Text enthält, das Text enthält.
