@@ -22,12 +22,12 @@ ht-degree: 26%
 
 Die Komponenten „Aktivierungszuweisungen“ und [Aktivierungskatalog](catalog.md), die sich in der Communities-Gruppe des Komponenten-Browsers finden, sind Komponenten einer [Aktivierungs-Community](overview.md#enablement-community).
 
-The Enablement Assignments component allows the currently signed-in community member (learner) to access their assigned [enablement resources](resources.md).
+Mit der Komponente &quot;Zuweisungen aktivieren&quot;kann das derzeit angemeldete Community-Mitglied (Lernende) auf die zugewiesenen [Aktivierungsressourcen](resources.md) zugreifen.
 
-From the [Getting Started with AEM Communities for Enablement](getting-started-enablement.md) tutorial, see a member&#39;s view of assignments and catalogs in the [Experience the Published Site](enablement-published-site.md) section.
+Sehen Sie sich im Lehrgang [Erste Schritte mit AEM Communities für Aktivierung](getting-started-enablement.md) die Ansicht der Zuweisungen und Kataloge eines Mitglieds im Abschnitt [Erleben Sie die veröffentlichte Site](enablement-published-site.md) an.
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Assignments Essentials](essentials-assignments.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Grundlegende Zuweisungen](essentials-assignments.md) für Entwickler.
 
-The [assignments function](functions.md#assignments-function) is available when creating a [community site](sites-console.md).
+Die [Zuweisungsfunktion](functions.md#assignments-function) ist verfügbar, wenn eine [Community-Site](sites-console.md) erstellt wird.
