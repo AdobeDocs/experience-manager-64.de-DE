@@ -26,7 +26,7 @@ Wenn beispielsweise eine Krankenversicherung ein Formular veröffentlicht. In di
 
 Ein weiteres Beispiel eines Formulars, das E-Mail-IDs und Telefonnummern erfasst. Wenn ein Benutzer das Formular anonym besucht und das Formular verlässt, kann der Verfasser das Formular so konfigurieren, dass die E-Mail-ID und Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und E-Mail-ID werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
 
-## Hinzufügen von Formularelementen zu Metadaten {#adding-form-elements-to-metadata}
+## Hinzufügen von Formularelementen zu Metadaten  {#adding-form-elements-to-metadata}
 
 Führen Sie die folgenden Schritte aus, um ein Element zu den Metadaten hinzuzufügen:
 
@@ -34,17 +34,17 @@ Führen Sie die folgenden Schritte aus, um ein Element zu den Metadaten hinzuzuf
 
    Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie es im Forms Manager aus und tippen Sie auf **Öffnen**.
 
-1. In the edit mode, select a component, tap ![field-level](assets/field-level.png) > **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, tippen Sie auf ![Feldebene](assets/field-level.png) > **Container des adaptiven Formulars** und dann auf ![cmppr](assets/cmppr.png).
 1. Klicken Sie in der Randleiste auf **Metadaten**.
 1. Klicken Sie im Abschnitt „Metadaten“ auf **Hinzufügen**.
 1. Verwenden Sie das Feld „Wert“ auf der Registerkarte „Metadaten“, um Skripte hinzuzufügen. Die von Ihnen hinzugefügten Skripte erfassen Daten aus den Elementen im Formular und berechnen Werte, die den Metadaten zugeführt werden.
 
-   For example, **true** is logged in the metadata if age entered is greater than 21, and **false** is logged if it is less than 21. Sie können das folgende Skript auf der Registerkarte „Metadaten“ eingeben:
+   Beispiel: **true** wird in den Metadaten protokolliert, wenn das eingegebene Alter größer als 21 ist, und **false** wird protokolliert, wenn es kleiner als 21 ist. Sie können das folgende Skript auf der Registerkarte „Metadaten“ eingeben:
 
    `(agebox.value >= 21) ? true : false`
 
    ![Metadatenskript](assets/add-element-metadata.png)
-   **Abbildung:** *Auf der Registerkarte &quot;Metadaten&quot;eingegebenes Skript*
+   **Abbildung:** *Skript in der Registerkarte &quot;Metadaten&quot;*
 
 1. Klicken Sie auf **OK**.
 
