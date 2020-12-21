@@ -168,17 +168,17 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Antwort:
 
-   * Das Skript xfa.connectionSet wird nur eingeschränkt unterstützt. Für connectionSet wird nur der serverseitige Aufruf des Webdiensts unterstützt. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
+   * Das Skript xfa.connectionSet wird nur eingeschränkt unterstützt. Für connectionSet wird nur der serverseitige Aufruf des Webdiensts unterstützt. Ausführliche Informationen finden Sie unter [Skriptunterstützung](/help/forms/using/scripting-support.md).
    * In clientseitigen Skripten werden $record und $data nicht unterstützt. Wenn die Skripten jedoch in einen formReady-, layoutReady-Block geschrieben werden, funktionieren die Skripten weiterhin, da diese Ereignisse serverseitig ausgeführt werden.
    * XFA-Zeichnungselement-spezifische Skripte wie eine Änderung des Zeichnungstextes (oder im Falle von Feldern des Beschriftungstextes) werden nicht unterstützt.
 
 1. Gibt es Einschränkungen bei der Verwendung von formCalc?
 
-   Antwort: Derzeit ist nur eine Untergruppe der formCalc-Skripten implementiert. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
+   Antwort: Derzeit ist nur eine Untergruppe der formCalc-Skripten implementiert. Ausführliche Informationen finden Sie unter [Skriptunterstützung](/help/forms/using/scripting-support.md).
 
 1. Gibt es eine empfohlene Benennungskonvention und gibt es reservierte Schlüsselwörter, die vermieden werden sollten?
 
-   * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore, *_&lt;prefix>&lt;objectname>. *
+   * In AEM Forms Designer wird empfohlen, den Objektnamen (z. B. ein Teilformular oder ein Textfeld) nicht mit einem Unterstrich (_) zu beginnen. Wenn Sie den Unterstrich am Anfang des Namens verwenden möchten, fügen Sie nach dem Unterstrich ein Präfix (*_) hinzu. *
    * Alle HTML5-Formular-APIs sind reservierte Schlüsselwörter. Bei benutzerdefinierten APIs/Funktionen müssen Sie einen Namen verwenden, der nicht mit den [HTML5 Forms APIs](/help/forms/using/scripting-support.md) identisch ist.
 
 1. Unterstützen HTML5-Formulare schwebende Felder?
@@ -189,8 +189,8 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
    >
    >Standardmäßig werden die Felder nicht als schwebende Felder aktiviert. Sie können den Forms Designer verwenden, um die schwebenden Eigenschaften der Felder festzulegen.
 
-   1. Open CRXde lite and navigate to the `/content/xfaforms/profiles/default` node.
-   1. Add a property `mfDataDependentFloatingField` of type String and set the value of the property to `true`**.**
+   1. Öffnen Sie CRXde lite und navigieren Sie zum Knoten `/content/xfaforms/profiles/default`.
+   1. hinzufügen eine Eigenschaft des Typs String und setzen Sie den Wert der Eigenschaft auf `true`**.**.`mfDataDependentFloatingField`
    1. Klicken Sie auf **Alle speichern**. Jetzt sind die schwebenden Felder für die HTML-Formulare mit dem aktualisierten Renderprofil aktiviert.
 
       >[!NOTE]
