@@ -19,9 +19,9 @@ ht-degree: 67%
 
 # Hinzufügen von Anhängen {#adding-attachments}
 
-## Adding attachments in forms synced with AEM Forms Workflow server (AEM Forms on JEE) {#adding-annotations}
+## Hinzufügen von Anlagen in mit dem AEM Forms Workflow-Server (AEM Forms on JEE) synchronisierten Formularen {#adding-annotations}
 
-Mit der AEM Forms-App können Sie Bilder, Notizen und Kommentare zu Ihrem Formular hinzufügen, das mit dem AEM Forms JEE-Server synchronisiert wird. Wenn das Formular von einem AEM Forms Workflow-Server geladen wird, werden die Anlagen zu dem Formular hinzugefügt. You can tap the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. Die rote Benachrichtigung gibt die Anzahl von Anlagen im Formular an. Wenn keine Anlagen im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. If there are no attachments in the form, when you tap the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
+Mit der AEM Forms-App können Sie Bilder, Notizen und Kommentare zu Ihrem Formular hinzufügen, das mit dem AEM Forms JEE-Server synchronisiert wird. Wenn das Formular von einem AEM Forms Workflow-Server geladen wird, werden die Anlagen zu dem Formular hinzugefügt. Sie können auf die Schaltfläche für Anlagen ![attachments-app](assets/attachments-app.png) tippen, um alle Anlagen in einem Formular zusammen anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anlagen im Formular an. Wenn keine Anlagen im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Wenn keine Anlagen im Formular vorhanden sind und Sie auf die Schaltfläche für Anlagen ![Attch](assets/attch.png) tippen, erhalten Sie Optionen zum Anhängen von Fotos oder Scribbles.
 
 Ihre Optionen sind:
 
@@ -29,7 +29,7 @@ Ihre Optionen sind:
 
 * **[!UICONTROL Kamera]**: Hiermit können Sie ein Foto aufnehmen und es zum Formular hinzufügen. 
 
-* **[!UICONTROL Hinweise]**: Hiermit können Sie eine Notiz oder Textanmerkung hinzufügen. Use ![scribble](assets/scribble.png) to add a scribble, and ![keyboard](assets/keyboard.png) to add a text note.
+* **[!UICONTROL Hinweise]**: Hiermit können Sie eine Notiz oder Textanmerkung hinzufügen. Verwenden Sie ![scribble](assets/scribble.png), um ein Scribble hinzuzufügen, und ![tastatur](assets/keyboard.png), um eine Textanmerkung hinzuzufügen.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Ihre Optionen sind:
 
 ### Der Bildschirm „Anlagen“{#the-attachments-screen}
 
-To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). Hier können Sie Anlagen hinzufügen, umbenennen und löschen.
+Um alle Anlagen an einem Ort anzuzeigen, tippen Sie auf ![attachments-app](assets/attachments-app.png). Hier können Sie Anlagen hinzufügen, umbenennen und löschen.
 
 ![Alle Anlagen an einem Ort](assets/attachments-screen.png)
 
@@ -48,15 +48,15 @@ Verwenden Sie die Schaltfläche mit dem **Pluszeichen** (+) im Bildschirm „Anl
 
 Sie können die Kamera Ihres Mobilgeräts oder auf Ihrem Gerät gespeicherte Bilder verwenden, um ein Bild im Formular anzuhängen.
 
-1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
+1. Tippen Sie unten im Fenster auf die Schaltfläche für Anlagen ![Attch](assets/attch.png).
 1. Tippen Sie auf **[!UICONTROL Galerie]** oder **[!UICONTROL Kamera]** im Popup-Menü, das angezeigt wird.
 1. Führen Sie je nach ausgewählter Option einen der folgenden Schritte aus:
 
    1. Wenn Sie **[!UICONTROL Kamera]** auswählen:
 
-      Nehmen Sie ein Foto auf. Then tap the **[!UICONTROL Use]** ![use-pic](assets/use-pic.png) button.
+      Nehmen Sie ein Foto auf. Tippen Sie dann auf die Schaltfläche **[!UICONTROL Verwenden]** ![use-pic](assets/use-pic.png).
 
-      Or tap the **[!UICONTROL Retake]** ![retake](assets/retake.png) button to retake the photograph.
+      Oder tippen Sie auf die Schaltfläche **[!UICONTROL Wiederholen]** ![Wiederholen](assets/retake.png), um das Foto erneut aufzunehmen.
 
    1. Wenn Sie **[!UICONTROL Galerie]** auswählen:
 
@@ -66,7 +66,7 @@ Sie können die Kamera Ihres Mobilgeräts oder auf Ihrem Gerät gespeicherte Bil
 
 Mit der Option **Notizen** können Sie dem Formular Freihand-Scribbles oder Textanlagen hinzufügen.
 
-1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
+1. Tippen Sie unten im Fenster auf die Schaltfläche für Anlagen ![Attch](assets/attch.png).
 1. Tippen Sie auf **[!UICONTROL Notizen]** im Popup-Menü, das angezeigt wird.
 1. Dadurch wird die Benutzeroberfläche „Notizen“ gestartet, auf der Sie ein Freihand-Scribble erfassen können.
 
@@ -82,7 +82,7 @@ Mit der Option **Notizen** können Sie dem Formular Freihand-Scribbles oder Text
 
    ![Tastatur in AEM Forms-App-Scribble](assets/keyboard-inapp.png)
 
-## Attachments in forms synced with the AEM Forms servers without AEM Forms Workflow (AEM Forms on OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+## Anlagen in Formularen, die mit den AEM Forms-Servern ohne AEM Forms Workflow (AEM Forms unter OSGi) synchronisiert werden {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
 Anlagen für Mobile Forms, die mit AEM Forms OSGi-Servern synchronisiert werden, funktionieren ähnlich wie die AEM Forms JEE-Server.
 
