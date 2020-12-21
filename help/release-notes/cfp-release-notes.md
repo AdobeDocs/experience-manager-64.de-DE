@@ -4,9 +4,9 @@ description: Versionshinweise speziell für Adobe Experience Manager 6.4 Cumulat
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4217'
 ht-degree: 13%
 
 ---
@@ -158,6 +158,9 @@ In Adobe Experience Manager 6.4.8.2 wurden die folgenden Probleme behoben:
 * Sie können das [!DNL Live Copy] einer Seite aussetzen und die Vererbung wird, wie im Editor-Modus gesehen, unterbrochen. In den Seiteneigenschaften gibt das Symbol für Vererbung jedoch fälschlicherweise an, dass die Vererbung vorhanden ist und nicht beschädigt ist (NPR-34096).
 * Problem mit der Anzeige der zulässigen Komponenten auf der Seite &quot;Vorlage bearbeiten&quot;(CQ-4297295).
 * Nach der Aktualisierung von Chrome und Firefox funktionieren die Popupmenüs nicht wie erwartet. Beim Laden der Seiteneigenschaften wird das Bedienfeld nicht angezeigt, wenn Daten darin vorhanden sind (CQ-4292995).
+* Mehrere Site-übergreifende Skriptinstanzen in [!DNL Experience Manager Sites]-Komponenten (NPR-33926).
+* Benutzereingaben werden beim Senden von Informationen an den Client nicht ordnungsgemäß für verschiedene Komponenten kodiert (NPR-33696).
+* Eine URL, die mit `childrenlist.html` endet, zeigt eine HTML-Seite anstelle einer 404-Antwort an. Solche URLs sind anfällig für Cross-Site-Scripting (NPR-33441).
 
 #### Assets {#assets-6482}
 
@@ -234,6 +237,8 @@ In Adobe Experience Manager 6.4.8.2 wurden die folgenden Probleme behoben:
 * Die Übermittlungsaktion **[!UICONTROL An REST-Endpunkt senden]** funktioniert nicht für ein adaptives Formular (NPR-34513).
 
 * Zugänglichkeit: Wenn Sie versuchen, ein adaptives Formular zu senden, ohne eine Anlage für ein Pflichtfeld hochzuladen, wird der Fokus nicht automatisch auf das Anlagenfeld verschoben (NPR-34511).
+
+* Benutzereingaben werden für [!DNL Forms]-Komponenten nicht ordnungsgemäß kodiert, wenn Informationen an den Client gesendet werden (NPR-33611).
 
 **Arbeitsablauf**
 
@@ -431,9 +436,9 @@ Informationen zum Bestimmen der zertifizierten Plattform für die Ausführung mi
 >[!NOTE]
 >Bei erfolgreicher Installation des Pakets wird eine Informationsmeldung angezeigt, die angibt, dass das Inhaltspaket erfolgreich installiert wurde, z. B. **&quot;Content Package AEM-6.4-Service-Pack-8 erfolgreich installiert wurde&quot;**.
 
-### Aktualisieren von Viewern für dynamische Medien (5.10.1) {#update-dynamic-media-viewers}
+### Dynamic Media-Viewer aktualisieren (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.3 enthält eine neue Version der Viewer für dynamische Medien (5.10.1), mit der auf der Seite &quot;Bildvorgabe&quot;nach Duplikat gesucht werden kann. Kunden mit dynamischen Medien wird empfohlen, den folgenden Befehl auszuführen, um die standardmäßigen Viewer-Vorgaben in den aktuellen Zustand zu bringen.
+AEM 6.4.8.3 enthält eine neue Version von Dynamic Media-Viewern (5.10.1), mit der auf der Seite &quot;Bildvorgabe&quot;nach Duplikat gesucht werden kann. Dynamic Media-Kunden wird empfohlen, den folgenden Befehl auszuführen, um die standardmäßigen Viewer-Vorgaben in den aktuellen Zustand zu bringen.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
