@@ -24,7 +24,7 @@ Die Berechtigung enthält Informationen zu ihrem vorgesehenen Zweck, auf die üb
 
 1. Öffnen Sie einen Webbrowser und geben Sie diese URL ein:
 
-   http://localhost:*[port]*/ReaderExtensions (where *[port]* is your application server’s port number)
+   http://localhost:*[Anschluss]*/ReaderExtensions (wobei *[Anschluss]* die Anschlussnummer Ihres Anwendungsservers ist)
 
 1. Melden Sie sich mit dem standardmäßigen Benutzernamen und Kennwort an:
 
