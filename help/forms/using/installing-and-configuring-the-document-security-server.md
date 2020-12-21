@@ -25,7 +25,7 @@ Sie können Dokumente durch Richtlinien schützen. Die Vertraulichkeitseinstellu
 
 Die Richtlinien werden zwar auf dem Document Security-Server gespeichert, Sie wenden sie jedoch über Ihre Client-Anwendung auf Dokumente an. Wenn Sie eine Richtlinie auf ein Dokument anwenden, werden die in der Datei enthaltenen Informationen durch die in der Richtlinie angegebenen Vertraulichkeitseinstellungen geschützt. Sie können das richtliniengeschützte Dokument an Empfänger verteilen, die durch die Richtlinie autorisiert sind.
 
-Dokument Security bietet außerdem Clients, Viewer und Impulszähler zum Schutz von Dokumenten, Ansicht-geschützten Dokumenten und indexgeschützten Dokumenten. Detaillierte Informationen zur Dokument-Sicherheit finden Sie [unter Dokument-Sicherheit](/help/forms/using/admin-help/document-security.md).
+Dokument Security bietet außerdem Clients, Viewer und Impulszähler zum Schutz von Dokumenten, Ansicht-geschützten Dokumenten und indexgeschützten Dokumenten. Ausführliche Informationen zur Dokument-Sicherheit finden Sie unter [Informationen zur Dokument-Sicherheit](/help/forms/using/admin-help/document-security.md).
 
 ## Bereitstellungstopologie  {#deployment-topology}
 
@@ -44,8 +44,8 @@ Die folgende Abbildung zeigt die typische Architektur für AEM Forms Document Se
 Führen Sie die folgenden Schritte aus, um AEM Forms on JEE zu installieren und zu konfigurieren:
 
 1. Laden Sie das Installationsprogramm für AEM 6.4 Forms on JEE von der [Adobe Licensing-Website (LWS)](https://licensing.adobe.com/) herunter. Sie benötigen einen gültigen Vertrag für Wartung und Support, um das Installationsprogramm herunterzuladen.
-1. Lesen Sie das Dokument [der unterstützten Plattformen für](/help/forms/using/aem-forms-jee-supported-platforms.md) AEM Forms on JEE und stellen Sie sicher, dass die Software, Hardware, Betriebssysteme, Anwendungsserver, Datenbanken, JDKs und andere Infrastrukturen für die Installation von AEM Forms on JEE bereit sind.
-1. (Nur bei Nicht-Turnkey-Installationen) Lesen Sie den Abschnitt [Vorbereiten der Installation des AEM Forms-Einzelservers](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) oder [Vorbereiten der Installation des AEM Forms-Serverclusters](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) und bereiten Sie Ihre Umgebung für die Installation und Konfiguration von AEM Forms on JEE vor.
+1. Lesen Sie das Dokument [Unterstützte Plattformen für AEM Forms auf JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) und stellen Sie sicher, dass die Software, Hardware, Betriebssysteme, Anwendungsserver, Datenbanken, JDKs und andere Infrastrukturen für die Installation von AEM Forms on JEE bereit sind.
+1. (Nur Nicht-Turnkey-Installationen) Lesen Sie die Anweisungen unter [Vorbereiten der Installation des AEM Forms-Einzelservers](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) oder [Vorbereiten der Installation des AEM Forms-Serverclusters](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) und bereiten Sie Ihre Umgebung zur Installation und Konfiguration von AEM Forms on JEE vor.
 1. Wählen Sie je nach Umgebung und Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Installationsanweisungen, um die Installation abzuschließen.
 
    * [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
