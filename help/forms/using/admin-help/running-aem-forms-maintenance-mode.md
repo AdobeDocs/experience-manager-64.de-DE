@@ -31,7 +31,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname ]*`:`*[Port]* - `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[Administrator-Benutzername ]*-`&password=`*[Kennwort]*
+   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostname portadministrator ]*`&password=`*[usernamepassword]*
 
    Die Meldung „Jetzt angehalten“ wird im Browserfenster angezeigt.
 
@@ -43,7 +43,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]:[Port ]*-`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[Administrator-Benutzername]* - `&password=`*[Kennwort ]*
+   `https://`*[Hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
 
    Der Status wird im Browserfenster angezeigt. Der Status „true“ zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und „false“ zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
 
@@ -51,7 +51,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]:[Port ]*-`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[Administrator-Benutzername]* - `&password=`*[Kennwort ]*
+   `https://`*[Hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
 
    Die Meldung „Wird ausgeführt“ wird im Browserfenster angezeigt.
 
