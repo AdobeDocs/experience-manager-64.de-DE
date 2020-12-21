@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Nodes erstellen {#create-nodes}
+# Knoten erstellen {#create-nodes}
 
 Überlagern Sie das Kommentarsystem mit einer benutzerdefinierten Version, indem Sie die minimale Anzahl von Dateien kopieren, die von /libs in /apps benötigt werden, und sie in /apps ändern.
 
@@ -26,7 +26,7 @@ ht-degree: 6%
 >
 >Der Inhalt des Ordners &quot;/libs&quot;wird nie bearbeitet, da bei einer Neuinstallation oder Aktualisierung der Ordner &quot;/libs&quot;gelöscht oder ersetzt werden kann, während der Inhalt des Ordners &quot;/apps&quot;unverändert bleibt.
 
-Erstellen Sie zunächst mit der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz einen Pfad im Ordner &quot;/apps&quot;, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs&quot;identisch ist.
+Wenn Sie [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) für eine Autoreninstanz verwenden, erstellen Sie zunächst einen Pfad im Ordner /apps, der mit dem Pfad zu den überlagerten Komponenten im Ordner /libs identisch ist.
 
 Der duplizierte Pfad ist
 
@@ -34,8 +34,8 @@ Der duplizierte Pfad ist
 
 Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 
-1. Navigieren Sie zu [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
-1. Erstellen `/apps/social` (sofern nicht bereits vorhanden)
+1. Gehen Sie zu [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
+1. Erstellen Sie `/apps/social` (falls noch nicht vorhanden)
    * Knoten `/apps` auswählen
    * **[!UICONTROL Erstellen > Ordner ...]**
       * Namen eingeben: `social`
@@ -51,33 +51,33 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 1. Knoten `hbs` auswählen
    * **[!UICONTROL Erstellen > Komponente erstellen...]**
       * Beschriftung eingeben: `comments`
-      * Enter Title: `Comments`
-      * Enter Description: `List of comments without showing avatars`
+      * Titel eingeben: `Comments`
+      * Beschreibung eingeben: `List of comments without showing avatars`
       * Super Type: `social/commons/components/comments`
       * Gruppe eingeben: `Communities`
-      * Klicken Sie auf **[!UICONTROL Weiter]** , bis **[!UICONTROL OK]**
+      * Klicken Sie auf **[!UICONTROL Weiter]**, bis **[!UICONTROL OK]**
 1. Knoten `comments` auswählen
 
    * **[!UICONTROL Erstellen > Komponente erstellen...]**
 
       * Beschriftung eingeben: `comment`
-      * Enter Title: `Comment`
-      * Enter Description: `A comment instance without avatars`
+      * Titel eingeben: `Comment`
+      * Beschreibung eingeben: `A comment instance without avatars`
       * Super Type: `social/commons/components/comments/comment`
       * Gruppe eingeben: `.hidden`
-      * Klicken Sie auf **[!UICONTROL Weiter]** , bis **[!UICONTROL OK]**
-   * Select **[!UICONTROL Save All]**
-1. Standardeinstellung löschen `comments.jsp`
-   * Knoten auswählen `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Löschen **[!UICONTROL auswählen]**
+      * Klicken Sie auf **[!UICONTROL Weiter]**, bis **[!UICONTROL OK]**
+   * Wählen Sie **[!UICONTROL Alle speichern]**
+1. Löschen Sie den Standardwert `comments.jsp`
+   * Knoten `/apps/social/commons/components/hbs/comments/comments.jsp` auswählen
+   * Wählen Sie **[!UICONTROL Löschen]**
 1. Löschen Sie die standardmäßige Datei &quot;comment.jsp&quot;
-   * Knoten auswählen `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Löschen **[!UICONTROL auswählen]**
-   * Select **[!UICONTROL Save All]**
+   * select node `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * Wählen Sie **[!UICONTROL Löschen]**
+   * Wählen Sie **[!UICONTROL Alle speichern]**
 
 >[!NOTE]
 >
->Um die Vererbungskette beizubehalten, wird für die `Super Type` (Eigenschaft `sling:resourceSuperType`) der Überlagerungskomponenten der gleiche Wert wie `Super Type` der Wert der überlagerten Komponenten festgelegt, in diesem Fall, in diesem Fall
+>Um die Vererbungskette beizubehalten, wird die `Super Type` (Eigenschaft `sling:resourceSuperType`) der Überlagerungskomponenten auf denselben Wert wie die `Super Type` der überlagerten Komponenten gesetzt, in diesem Fall, in diesem Fall
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
@@ -86,17 +86,17 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 
 
 
-Die eigene Eigenschaft `Type`(Eigenschaft `sling:resourceType`) der Überlagerung muss eine relative Selbstreferenz sein, damit nicht in /apps gefundene Inhalte in /libs gesucht werden.
+Das eigene `Type`(property `sling:resourceType`) der Überlagerung muss ein relativer Selbstverweis sein, damit alle Inhalte, die nicht in /apps gefunden wurden, in /libs gesucht werden.
 * Name: `sling:resourceType`
 * Typ: `String`
 * Wert: `social/commons/components/hbs/comments`
 
-1. Grün auswählen `[+] Add`
+1. Wählen Sie das grüne `[+] Add`
    * Name: `sling:resourceType`
    * Typ: `String`
    * Wert: `social/commons/components/hbs/comments/comment`
-1. Grün auswählen `[+] Add`
-   * Select **[!UICONTROL Save All]**
+1. Wählen Sie das grüne `[+] Add`
+   * Wählen Sie **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
