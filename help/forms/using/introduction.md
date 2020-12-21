@@ -20,7 +20,7 @@ ht-degree: 92%
 
 „HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die das Anzeigen von XFA-Formularvorlagen im HTML5-Format ermöglicht. Diese Funktion ermöglicht das Anzeigen von Formularen auf mobilen Geräten und Desktop-Browsern, auf denen XFA-basierte PDF nicht unterstützt werden. „HTML5-Formulare“ Forms unterstützt nicht nur vorhandene Funktionen XFA-basierter Formularvorlagen, sondern bietet auch neue Funktionen für mobile Geräte wie die Scribble-Signatur.
 
-„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plugins installiert werden. For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plugins installiert werden. Weitere Informationen zu unterstützten Browsern finden Sie unter [Unterstützte Clientplattformen](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
@@ -40,10 +40,10 @@ ht-degree: 92%
 
 Formularentwickler können eine XFA-Vorlage für die Anzeige von Formularen im PDF- und HTML5-Format verwenden. Diese Funktion ist besonders nützlich, wenn Sie eine Vielzahl von XFA-Formularen haben, in denen minimale Änderungen für die Anpassung an das Design von HTML5-Formularen vorgenommen werden müssen. Sie können die vorhandenen XFA-Formulare in HTML5 wiedergeben und für verschiedene Geräte anpassen, auf denen XFA-basierte PDF noch nicht unterstützt werden.
 
-## Verwalten von HTML5-Formularen {#manage-html-forms}
+## Verwalten von HTML5-Formularen  {#manage-html-forms}
 
 AEM bietet außerdem eine einheitliche Ansicht für die Auflistung und Verwaltung aller Formularvorlagen mithilfe der AEM Forms-Benutzeroberfläche. Sie können Formulare aktivieren, deaktivieren, veröffentlichen und in der Vorschau anzeigen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](/help/forms/using/introduction-managing-forms.md).
 
 ### Anpassung von Formularen {#forms-customization}
 
-„HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. For more information about creating custom widgets and customizing existing widgets, see [Plug in custom widgets with HTML5 forms](/help/forms/using/custom-widgets.md).
+„HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. Weitere Informationen zum Erstellen benutzerdefinierter Widgets und Anpassen vorhandener Widgets finden Sie unter [Benutzerdefinierte Widgets mit HTML5-Formularen ](/help/forms/using/custom-widgets.md) hinzufügen.
