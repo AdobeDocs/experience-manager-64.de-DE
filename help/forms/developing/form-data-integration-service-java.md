@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Java-API-Quick-Beginn (SOAP) des Formulardatenintegrationsdienstes {#form-data-integration-service-javaapi-quick-start-soap}
+# Formulardatenintegrationsdienst Java API Quick Beginn (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
 Die folgenden Quick-Beginn sind für den Formulardatenintegrationsdienst verfügbar.
 
@@ -32,9 +32,9 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 >
 >Quick Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Formulardaten mit der Java-API importieren {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Formulardaten mit der Java-API {#quick-start-soap-mode-importing-form-data-using-the-java-api} importieren
 
-Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die Daten befinden sich in einer XML-Datei mit dem Namen *Loan_data.xml* und das PDF-Formular wird als PDF-Datei mit dem Namen *ResultLoanForm.pdf* gespeichert. (Siehe [Importieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die Daten befinden sich in einer XML-Datei mit dem Namen *Loan_data.xml* und das PDF-Formular wird als PDF-Datei mit dem Namen *ResultLoanForm.pdf* gespeichert. (Siehe [Formulardaten importieren](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```as3
  /* 
