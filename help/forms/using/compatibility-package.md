@@ -18,7 +18,7 @@ ht-degree: 91%
 ---
 
 
-# Install compatibility Package {#compatibility-package}
+# Kompatibilitätspaket {#compatibility-package} installieren
 
 Die Installation des Kompatibilitätspakets auf AEM Forms 6.4 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.3 sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
 
@@ -33,13 +33,13 @@ Das AEMFD-Kompatibilitätspaket ermöglicht es Ihnen, die folgenden Assets aus A
 * Datenwörterbücher
 * Veraltete Vorlagen und Seiten für adaptive Formulare
 
-For more information, see [Assets made compatible with AEM Forms 6.4 by installing the Compatibility package](/help/forms/using/compatibility-package.md#assetsmadecompatible).
+Weitere Informationen finden Sie unter [Elemente, die mit AEM Forms 6.4 kompatibel gemacht wurden, indem Sie das Kompatibilitätspaket](/help/forms/using/compatibility-package.md#assetsmadecompatible) installieren.
 
 ## Unterstützung für Assets aus AEM Forms 6.3 und 6.2 in AEM Forms 6.4 hinzufügen {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Gehen Sie nach der Aktualisierung wie folgt vor, um das AEM-Kompatibilitätspaket zu installieren und Ihre Assets mit Version 6.4 kompatibel zu machen:
 
-Ensure that you have [AEM Compatibility package](/help/sites-deploying/backward-compatibility.md) pre-installed.
+Vergewissern Sie sich, dass [AEM Compatibility Package](/help/sites-deploying/backward-compatibility.md) vorinstalliert ist.
 
 1. Installieren Sie das [Kompatibilitätspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
@@ -48,7 +48,7 @@ Ensure that you have [AEM Compatibility package](/help/sites-deploying/backward-
 1. Nachdem die Protokolle stabilisiert sind, starten Sie den Server neu.
 1. Verwenden Sie das Migrationsdienstprogramm, um Ihre Assets mit Version 6.4 kompatibel zu machen.
 
-   For more information, see [migration utility](/help/forms/using/migration-utility.md).
+   Weitere Informationen finden Sie unter [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
 
 ## Durch Installation des Kompatibilitätspakets mit AEM Forms 6.4 kompatible Assets {#assetsmadecompatible}
 
