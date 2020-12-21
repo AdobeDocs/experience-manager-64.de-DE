@@ -18,15 +18,15 @@ ht-degree: 61%
 
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](/help/forms/using/rule-editor.md).
+AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mit der API `guidelib.dataIntegrationUtils.executeOperation` im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
 
 In diesem Dokument wird das Schreiben von JavaScript im API`guidelib.dataIntegrationUtils.executeOperation` für den Aufruf eines Dienst beschrieben.
 
 ## Verwenden der API {#using-the-api}
 
-The `guidelib.dataIntegrationUtils.executeOperation` API invokes a service from within an adaptive form field. Für die API gilt die folgende Syntax:
+Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld für ein adaptives Formular auf. Für die API gilt die folgende Syntax:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ Für die API sind die folgenden Parameter erforderlich.
 | `inputs` | Struktur zum Festlegen von Formularobjekten, deren Werte für den Dienstvorgang eingegeben werden |
 | `outputs` | Struktur zur Angabe von Formularobjekten, die mit den vom Dienstvorgang zurückgegebenen Werten gefüllt werden |
 
-The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. Die Struktur weist die folgende Syntax auf.
+Die Struktur der API `guidelib.dataIntegrationUtils.executeOperation` gibt Details zum Dienstvorgang an. Die Struktur weist die folgende Syntax auf.
 
 ```
 var operationInfo = {
@@ -87,9 +87,9 @@ Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
 
 ## Beispielskript zum Erstellen eines Dienstes {#sample-script-to-invoke-a-service}
 
-The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `getAccountById` service operation configured in the `employeeAccount` form data model.
+Das folgende Beispielskript verwendet die API `guidelib.dataIntegrationUtils.executeOperation`, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
 
-The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
+Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt Mitarbeitername, Kontonummer und Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für `accountNumber` im `account`-Formularelement gefüllt.
 
 ```
 var operationInfo = {
