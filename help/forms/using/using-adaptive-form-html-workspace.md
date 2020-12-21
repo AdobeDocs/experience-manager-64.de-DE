@@ -31,11 +31,11 @@ Führen Sie folgende Schritte durch, damit adaptive Formulare im Prozessdesign v
 * Sie können im Eigenschaftenblatt „Aufgabe zuweisen/Ausgangspunkt“ die Symbolleiste der obersten Ebene/die globale Symbolleiste eines adaptiven Formulars ausblenden.
 * Sie können neue Aktionsprofile für Wiedergabe- und Sendeaktionen in adaptiven Formularen verwenden.
 
-### LiveCycle-Anwendung importieren und exportieren {#livecycle-application-export-and-import}
+### LiveCycle-Anwendung importieren und exportieren  {#livecycle-application-export-and-import}
 
 Da adaptive Formulare im AEM-Repository vorhanden sind, enthält der Export der LiveCycle-Anwendung nur die Verweise für die verwendeten adaptiven Formulare. Die Ausfuhr und Einfuhr von LiveCycle-Anträgen erfolgt daher in zwei Schritten. Die LiveCycle-Anwendung enthält Prozessdefinitionen usw. Ein separates Paket, das adaptive Formulare enthält, wird als ZIP-Datei aus AEM exportiert. Beim Importieren wird die LiveCycle-Anwendung über Workbench importiert und adaptive Formulare werden über AEM importiert.
 
-## Benutzerfreundlichkeit adaptiver Formulare in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
+## Benutzerfreundlichkeit adaptiver Formulare in HTML Workspace  {#user-experience-of-adaptive-form-in-html-workspace}
 
 HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu den Steuerelementen, die für Mobile Forms verfügbar sind. Ein Benutzer kann Anlagen hinzufügen, die adaptiven Formulare im HTML Workspace speichern, signieren, senden und navigieren, wenn der Benutzer eine Aufgabe oder einen Ausgangspunkt öffnet. Spezifikationen:
 
@@ -57,7 +57,7 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
 
 1. Öffnen Sie Adobe Experience Manager Forms Workbench.
 
-1. Go to **File > New > Application** or use the existing application to create an application.
+1. Gehen Sie zu **Datei > Neu > Anwendung** oder verwenden Sie die vorhandene Anwendung, um eine Anwendung zu erstellen.
 
    ![Neue Anwendung erstellen](assets/create_new_appl.png)
 
@@ -70,7 +70,7 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
 
    ![Use a CRX asset](assets/use_crx_asset.png)
 
-1. Select the adaptive form created through Manage Assets UI, and click **[!UICONTROL OK]**.
+1. Wählen Sie das adaptive Formular aus, das über die Benutzeroberfläche &quot;Elemente verwalten&quot;erstellt wurde, und klicken Sie auf **[!UICONTROL OK]**.
 
    ![Ein adaptives Formular auswählen](assets/selecting_form.png)
 
@@ -78,5 +78,5 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
    >
    >Weitere Informationen zur Erstellung eines adaptiven Formulars, finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
    >
-   >For details around creating a process, see [Creating and managing processes](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Weitere Informationen zum Erstellen eines Prozesses finden Sie unter [Erstellen und Verwalten von Prozessen](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
 
