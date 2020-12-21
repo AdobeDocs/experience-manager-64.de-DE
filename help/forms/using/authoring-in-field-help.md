@@ -37,7 +37,7 @@ Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hil
 >
 >Die lange Beschreibung überschreibt die Kurzbeschreibung. Wenn Sie beide Optionen angegeben haben, wird nur die lange Beschreibung angezeigt.
 
-### Kurzbeschreibung {#short-description}
+### Kurzbeschreibung  {#short-description}
 
 Das Feld „Kurzbeschreibung“ dient zum Angeben schneller und kurzer Hinweise zum Ausfüllen eines Formularfelds. Der eingegebene Text im Feld „Kurzbeschreibung“ wird als QuickInfo beim Bewegen der Maus über das Feld angezeigt.
 
