@@ -24,13 +24,13 @@ Auf der Seite „Trust Store-Verwaltung“ können Sie Benutzer- und Kennwortber
 
 ## Benutzernamen- und Kennwortberechtigung hinzufügen {#add-a-user-name-and-password-credential}
 
-1. In administration console, click **[!UICONTROL Settings >Trust Store Management > User and Password Credentials]** and then click **[!UICONTROL Add]**.
-1. In the **[!UICONTROL Profile Name]** box, type a name for the credential.
-1. In the **[!UICONTROL User Name]** box, type a unique user name.
-1. In the **[!UICONTROL Password]** box, type a password for the user and then click **[!UICONTROL OK]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Benutzer- und Kennwortberechtigungen]** und dann auf **[!UICONTROL Hinzufügen]**.
+1. Geben Sie in das Feld **[!UICONTROL Profil Name]** einen Namen für die Berechtigung ein.
+1. Geben Sie in das Feld **[!UICONTROL Benutzername]** einen eindeutigen Benutzernamen ein.
+1. Geben Sie in das Feld **[!UICONTROL Kennwort]** ein Kennwort für den Benutzer ein und klicken Sie dann auf **[!UICONTROL OK]**.
 
 ## Benutzernamen- und Kennwortberechtigung löschen {#delete-a-user-name-and-password-credential}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > User and Password Credentials]**.
-1. Select the check boxes for the credentials you want to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Benutzer- und Kennwortberechtigungen]**.
+1. Aktivieren Sie die Kontrollkästchen der Anmeldeinformationen, die Sie löschen möchten, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL OK]**.
 
