@@ -28,7 +28,7 @@ Zum Verwenden der zertifikatbasierten Authentifizierung importieren Sie eine Zer
 
 Wählen Sie beim Importieren des Zertifikats die Optionen „Trust für Zertifikatauthentifizierung“ und „Trust für Identität“ sowie weitere erforderliche Optionen aus. Einzelheiten zum Importieren von Zertifikaten finden Sie unter [Zertifikate verwalten](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
-## Zertifikatzuordnung konfigurieren {#configuring-certificate-mapping}
+## Zertifikatzuordnung konfigurieren  {#configuring-certificate-mapping}
 
 Um die zertifikatbasierte Authentifizierung für Benutzer zu aktivieren, erstellen Sie eine Zertifikatzuordnung. Eine *Zertifikatzuordnung* definiert eine Zuordnung zwischen den Attributen eines Zertifikats und den Attributen von Benutzern in einer Domäne. Sie können derselben Domäne mehr als ein Zertifikat zuordnen.
 
@@ -51,13 +51,13 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
    Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der User Management-Datenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, regex) verwenden, der mit den beiden Attributen übereinstimmen soll. Wenn beispielsweise die allgemeinen Namen der Zertifikate in etwa *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, sollten Sie einen Regex verwenden, um den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink* zu extrahieren.) Der von Ihnen angegebene reguläre Ausdruck muss mit der Java-Regex-Spezifikation übereinstimmen.
 
-   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. The custom order is used with the `java.util.regex.Matcher.replaceAll()` method. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
+   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der `java.util.regex.Matcher.replaceAll()`-Methode verwendet. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 
    Um den Regex zu testen, geben Sie einen Wert in das Feld „Parameter testen“ ein und klicken Sie auf „Testen“.
 
    Sie können folgende Zeichen in dem Regex verwenden:
 
-   * . (alle Zeichen)
+   * : (alle Zeichen)
    * &amp;ast; (0 oder mehr Vorfälle)
    * () (Geben Sie die Gruppe in Klammern an)
    * \ (Wird verwendet, um ein Regex-Zeichen durch ein reguläres Zeichen zu ersetzen)
