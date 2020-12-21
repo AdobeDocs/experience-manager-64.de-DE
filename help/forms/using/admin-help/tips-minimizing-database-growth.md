@@ -32,7 +32,7 @@ Verwenden Sie Variablen nur sparsam. Wenn Sie Prozesse mit langer Lebensdauer ve
 
 Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie es, wo immer möglich, komplexe Variablentypen zu verwenden. Speicherplatz in der Datenbank wird Variablen auch dann zugewiesen, wenn diese keinen Wert enthalten. Komplexe Variablen erfordern in der Regel mehr Speicherplatz als einfache Variablen.
 
-## Tipps zur Produktverwaltung {#product-administration-tips}
+## Tipps zur Produktverwaltung  {#product-administration-tips}
 
 Verwenden Sie den Stammordner des globalen Dokumentenspeichers (GDS) effizient. Der GDS-Stammordner auf dem Forms-Server wird unter anderem zum Speichern von Dateien, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind, verwendet. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 
