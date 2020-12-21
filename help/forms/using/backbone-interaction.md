@@ -19,17 +19,17 @@ ht-degree: 81%
 
 # Interaktion mit Backbone {#backbone-interaction}
 
-Backbone ist eine Bibliothek, die das Erstellen und Verfolgen von MVC-Architektur in Webanwendungen unterstützt. Die Grundidee von Backbone ist, Ihre Benutzeroberfläche in logischen Ansichten zu organisieren, unterstützt von Modellen, die bei Modelländerungen jeweils einzeln aktualisiert werden können, ohne dass die Seite neu gezeichnet werden muss. For more information about Backbone, see [https://backbonejs.org](https://backbonejs.org/).
+Backbone ist eine Bibliothek, die das Erstellen und Verfolgen von MVC-Architektur in Webanwendungen unterstützt. Die Grundidee von Backbone ist, Ihre Benutzeroberfläche in logischen Ansichten zu organisieren, unterstützt von Modellen, die bei Modelländerungen jeweils einzeln aktualisiert werden können, ohne dass die Seite neu gezeichnet werden muss. Weitere Informationen zu Backbone finden Sie unter [https://backbonejs.org](https://backbonejs.org/).
 
 Einige Hauptkonzepte sind die folgenden:
 
-**Backbone-Modell** Enthält Daten und den Großteil der Logik, die sich auf diese Daten bezieht.
+**Backbone-** ModellEnthält Daten und die meisten mit diesen Daten zusammenhängenden Logiken.
 
-**Backbone-Ansicht** , die zur Darstellung des Zustands des entsprechenden Modells verwendet wird. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
+**Backbone-** AnsichtWird zur Darstellung des Status des entsprechenden Modells verwendet. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
 
-**HTML-Vorlage** Eine Wrapper-Vorlage mit vom Modell ausgefüllten Platzhaltern.
+**HTML-** VorlageEine Wrapper-Vorlage mit vom Modell ausgefüllten Platzhaltern.
 
-**AEM Forms Workspace** Enthält mehrere einzelne Komponenten. Jede Komponente:
+**AEM Forms** WorkspaceEnthält mehrere einzelne Komponenten. Jede Komponente:
 
 * Stellt ein einzelnes logischen Element der Benutzeroberfläche dar.
 * Kann eine Sammlung ähnlicher Komponenten sein.
