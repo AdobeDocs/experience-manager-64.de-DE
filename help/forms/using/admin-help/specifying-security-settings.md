@@ -24,7 +24,7 @@ Mit Forms können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst 
 
 **Die Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten verhindern**
 
-1. In administration console, click **[!UICONTROL Services > Forms]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Dienste > Forms]**.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
