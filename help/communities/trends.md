@@ -22,33 +22,33 @@ ht-degree: 29%
 
 ## Einführung {#introduction}
 
-The `Community Activity List` component provides the ability to add trending information regarding posts and views by members as well as posts and views of content.
+Die Komponente `Community Activity List` bietet die Möglichkeit, Trendinformationen über Beiträge und Ansichten von Mitgliedern sowie Beiträge und Ansichten von Inhalten hinzuzufügen.
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der `Community Activity List` Komponente zu einer [Community-Site](overview.md#community-sites)
+* Hinzufügen der Komponente `Community Activity List` zu einer [Community-Site](overview.md#community-sites)
 
-* Configuration settings for the `Community Activity List` component
+* Konfigurationseinstellungen für die Komponente `Community Activity List`
 
 ## Anforderung {#requirement}
 
-Daten für die `Community Activity List` sind nur verfügbar, wenn Adobe Analytics für die Community-Site lizenziert und konfiguriert ist.
+Daten für das `Community Activity List` stehen nur zur Verfügung, wenn Adobe Analytics für die Community-Site lizenziert und konfiguriert ist.
 
 Siehe [Analytics-Konfiguration für Communities-Funktionen](analytics.md).
 
-## Adding a Community Activity List to a Page {#adding-a-community-activity-list-to-a-page}
+## Hinzufügen einer Community-Aktivität-Liste zu einer Seite {#adding-a-community-activity-list-to-a-page}
 
-Um einer Seite im Autorenmodus eine `Community Activity List` Komponente hinzuzufügen, suchen Sie die Komponente `Communities / Community Activity List` und ziehen Sie sie auf eine Seite.
+Um einer Seite im Autorenmodus eine `Community Activity List`-Komponente hinzuzufügen, suchen Sie die Komponente `Communities / Community Activity List` und ziehen Sie sie an die gewünschte Position auf einer Seite.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## Liste der Community-Aktivität konfigurieren  {#configuring-community-activity-list}
+## Konfigurieren der Community-Aktivität-Liste {#configuring-community-activity-list}
 
-Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Community Activity List` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -82,7 +82,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
    Wählen Sie eines von
    * `Views`(Seitenbesuche)
-   * `Posts`(Erstellen von UGC)
+   * `Posts`(UGC erstellen)
    * `Follows`
    * `Likes`
 
@@ -108,7 +108,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 * **[!UICONTROL Gesammelte Mitgliederzahl]**
 
-   Wenn diese Option deaktiviert ist, werden nur Beiträge der obersten Ebene gezählt. For example, if the context is the root page (the default), then an `Activity Type`of `Posts`will never show any activity as there is no ability to post content to the root page. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
+   Wenn diese Option deaktiviert ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext z. B. die Stammseite ist (Standard), zeigt `Activity Type`von `Posts`keine Aktivität an, da es nicht möglich ist, Inhalte auf der Stammeseite zu posten. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
 
    Diese Option ist standardmäßig aktiviert.
 
@@ -116,10 +116,10 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 Konfiguration **Wichtigste Besucher** (Top Visitors): Typ = Mitglieder, Aktivitätstyp = Ansichten
 
-**Konfiguration der wichtigsten Mitarbeiter** : Typ = Member, Aktivität type = Beiträge
+**Top-** Mitarbeiter-Konfiguration: Typ = Member, Aktivität type = Beiträge
 
-**Konfiguration des Hauptinhalts** : Typ = Aktivität, Typ = Ansichten,
+**Top-** ContentConfig: Typ = Aktivität, Typ = Ansichten,
 
-**Konfigurieren des Trendinhalts** : Typ = Aktivität, Typ = Beiträge
+**Trending** ContentConfig: Typ = Aktivität, Typ = Beiträge
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
