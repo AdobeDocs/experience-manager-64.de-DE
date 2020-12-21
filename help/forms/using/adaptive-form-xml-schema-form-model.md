@@ -173,7 +173,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 
 >
 >
-For example, if you add the `userFirstName` schema element, the caption generated in the adaptive form is `User First Name`.
+Wenn Sie beispielsweise das Schema `userFirstName` hinzufügen, wird im adaptiven Formular eine Beschriftung `User First Name` generiert.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -293,15 +293,15 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 
-When you double-click an element in Content Finder, a pop-up displays a field name and a property called `bindRef`. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
+Wenn Sie in der Inhaltssuche auf ein Element klicken, wird in einem Popup-Fenster ein Feldname und eine Eigenschaft mit der Bezeichnung `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
-The bindRef</code> field shows the association between a tree element and an element or attribute in a schema.
+Das Feld bindRef</code> zeigt die Verbindung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
 
 >[!NOTE]
 >
->Attributes have an `@` symbol in their `bindRef`value to distinguish them from elements. Beispiel: `/config/projectDetails/@duration`.
+>Attribute haben ein `@`-Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
 
