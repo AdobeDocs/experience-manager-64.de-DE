@@ -29,5 +29,5 @@ Ab LiveCycle ES 8.0 und höher ist die Unterstützung für PDF-Pakete im Assembl
 
 >[!NOTE]
 >
->For more information about the Assembler service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
