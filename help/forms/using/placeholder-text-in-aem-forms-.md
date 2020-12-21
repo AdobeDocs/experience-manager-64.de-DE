@@ -26,7 +26,7 @@ Der Platzhaltertext stellt ein Wort oder einen kurzen Satz dar. Er unterstützt 
 
 ![Datumskomponente mit und ohne Platzhaltertext](assets/dat-picker-place-holder-text.png)
 
-**A.** Datumskomponente mit Platzhaltertext **B.** Datumskomponente ohne Platzhaltertext
+**A.** Date-Komponente mit Platzhaltertext  **B.** Date-Komponente ohne Platzhaltertext
 
 AEM Forms unterstützt Platzhaltertext für die Felder „Kennwort“, „Datumsauswahl“, „Numerisches Feld“ und „Textfeld“.\
 Platzhaltertexte werden für das native HTML5-Datumswidget nicht unterstützt. Abgabe eines Platzhaltertexts:
