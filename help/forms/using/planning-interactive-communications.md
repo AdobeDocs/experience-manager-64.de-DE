@@ -22,7 +22,7 @@ Planen Sie Ihre interaktive Kommunikation
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Lernprogramm ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation abzuschließen. Fachexperten aus Abteilungen wie Recht, Finanzen, Support oder Marketing können Ihnen dabei helfen, die Inhalte zu finalisieren. Nachdem der Inhalt abgeschlossen ist, müssen Sie ihn analysieren, um die verschiedenen Asset-Typen zu ermitteln, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
 
@@ -34,7 +34,7 @@ Eine interaktive Kommunikation enthält die folgenden Elemente:
 * **Daten aus einem Backend-System (Formulardatenmodell)** sind kundenspezifisch und werden dynamisch mit der interaktiven Kommunikation zusammengeführt. Beispielsweise kann die Richtliniennummer oder Adresse mithilfe eines Formulardatenmodells bezogen werden.
 * **Layout oder Vorlagen** für die Print- und Webversion der interaktiven Kommunikation.
 * **Reihenfolge**, in der die verschiedenen Textabsätze in der interaktiven Kommunikation angezeigt werden .
-* **Daten, die von einem Mitarbeiter an der Frontline (Agent-Benutzeroberfläche)** eingegeben werden, der die Kommunikation vor dem Versand individuell gestaltet. Zum Beispiel das Fälligkeitsdatum der Zahlung.
+* **Daten, die von einem Mitarbeiter an der Frontline (Agent UI)**  eingegeben werden, der die Kommunikation vor dem Versenden anpasst. Zum Beispiel das Fälligkeitsdatum der Zahlung.
 
 * **Bedingte Daten**, die basierend auf vordefinierten Bedingungen befüllt werden. Beispiel: Das Datum, an dem die interaktive Kommunikation generiert wird.
 * **In einem Repository gespeicherte Bilder** wie Logos und Signaturbilder. Bilder wie das Unternehmenslogo sind in den meisten oder in jeder interaktiven Kommunikation unverändert enthalten.
@@ -52,7 +52,7 @@ Die Anatomie enthält Daten mit den folgenden Eingabemodi:
 * Bedingte Daten
 * Bilder
 
-In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank enthält Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. For more information, see [Create form data model](create-form-data-model-tutorial.md).
+In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank umfasst Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](create-form-data-model-tutorial.md).
 
 Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der interaktiven Kommunikation:
 
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Rechnungsdatum</li> 
      <li>Rechnungszeitraum</li> 
     </ul> <p> </p> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Kundendetails</td> 
@@ -94,12 +94,12 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Status-Code</li> 
      <li>Anzahl von Verbindungen</li> 
     </ul> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Rechnungszusammenfassung</td> 
    <td><p>Vorheriger Saldo</p> <p>Zahlungen</p> <p>Anpassungen</p> <p>Gebühren des aktuellen Rechnungszeitraums</p> <p>Fälliger Betrag</p> <p>Fälligkeitsdatum</p> </td> 
-   <td><p>Value for the <strong>Charges current bill period </strong> field</p> <p>Tabelle - Rechnungen</p> </td> 
+   <td><p>Wert für das Feld <strong>Aktueller Rechnungszeitraum </strong></p> <p>Tabelle - Rechnungen</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
      <li>Vorheriger Saldo</li> 
@@ -108,7 +108,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Fälliger Betrag</li> 
      <li>Fälligkeitsdatum</li> 
     </ul> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Zusammenfassung der Gebühren</td> 
@@ -126,34 +126,34 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>BEZAHLTE GESAMTSUMME (Feld "Benutzungsgebühren berechnet")</li> 
     </ul> <p>Tabelle - Rechnungen</p> </td> 
    <td>Keine Felder</td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Einzeln aufgeführte Anrufe - Ausgehend</td> 
    <td><p>Spaltennamen:</p> 
     <ul> 
-     <li>Datum          </li> 
+     <li>Datum</li> 
      <li>Zeit</li> 
-     <li>Nummer</li> 
+     <li>Zahl</li> 
      <li>Dauer</li> 
      <li>Gebühren</li> 
     </ul> </td> 
    <td><p>Alle Werte</p> <p>Tabelle - Anrufe</p> </td> 
    <td>Keine Felder</td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Jetzt zahlen</td> 
-   <td>--</td> 
-   <td>--</td> 
-   <td>--</td> 
+   <td>—</td> 
+   <td>—</td> 
+   <td>—</td> 
    <td>PayNow</td> 
   </tr>
   <tr>
    <td>Mehrwert - Service</td> 
-   <td>--</td> 
-   <td>--</td> 
-   <td>--</td> 
+   <td>—</td> 
+   <td>—</td> 
+   <td>—</td> 
    <td>Mehrwert - Service</td> 
   </tr>
  </tbody>
