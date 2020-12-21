@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
+# Grundlagen zu Scoring und Kennzeichen {#scoring-and-badges-essentials}
 
 Die AEM Communities-Funktion für Scoring und Abzeichen bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -28,19 +28,19 @@ Die Details zur Einrichtung der Funktion finden Sie unter
 
 Diese Seite enthält weitere technische Details:
 
-* So [zeigen Sie eine Markierung](#displaying-badges) als Bild oder Text an
-* So aktivieren Sie die umfassende [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
-* Wie [kann ich auf UGC](#ugc-for-scoring-and-badging) im Zusammenhang mit Scoring und Abzeichen zugreifen?
+* Anzeigen eines Kennzeichens[ als Bild oder Text](#displaying-badges)
+* So aktivieren Sie die umfassende [Debugging-Protokollierung](#debug-log-for-scoring-and-badging)
+* Wie greifen Sie auf UGC[ im Zusammenhang mit Scoring und Abzeichen zu?](#ugc-for-scoring-and-badging)
 
 >[!CAUTION]
 >
 >Die in der CRXDE Lite sichtbare Implementierungsstruktur kann sich ändern.
 
-## Anzeigen von Abzeichen {#displaying-badges}
+## Anzeigen von Kennzeichen {#displaying-badges}
 
 Ob ein Zeichen als Text oder Bild angezeigt wird, wird auf der Clientseite in der HBS-Vorlage gesteuert.
 
-Suchen Sie beispielsweise nach `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`folgenden Elementen:
+Suchen Sie beispielsweise nach `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
 
 ```
 {{#each author.badges}}
@@ -72,27 +72,27 @@ Wenn &quot;true&quot;, zeigt isAssigned an, dass das Zeichen für eine Rolle zug
 
 Wenn &quot;false&quot;festgelegt ist, zeigt Zugewiesen an, dass das Abzeichen für eine Ergebnisbewertung vergeben wurde und das Abzeichen als Bild angezeigt werden sollte.
 
-Änderungen an diesem Verhalten sollten in einem benutzerdefinierten Skript vorgenommen werden (entweder Überschreiben oder Überlagerung). Siehe [clientseitige Anpassung](client-customize.md).
+Änderungen an diesem Verhalten sollten in einem benutzerdefinierten Skript vorgenommen werden (entweder Überschreiben oder Überlagerung). Siehe [Clientseitige Anpassung](client-customize.md).
 
 ## Debug-Protokoll für Bewertung und Abzeichen {#debug-log-for-scoring-and-badging}
 
 Um das Debugging von Scoring und Abzeichen zu unterstützen, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Kundensupport zur Verfügung gestellt werden, wenn Probleme mit der Funktion auftreten.
 
-Ausführliche Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten Protokolldatei](../../help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Ausführliche Anweisungen finden Sie unter [Benutzerspezifische Protokolldatei erstellen](../../help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 So richten Sie eine Slinglog-Datei schnell ein:
 
-1. So können Sie beispielsweise auf die **[!UICONTROL Adobe Experience Manager Web-Konsolenprotokoll-Unterstützung]** zugreifen
+1. Zugriff auf die **[!UICONTROL Adobe Experience Manager Web Console Log Support]**, z. B.
 
    * http://localhost:4502/system/console/slinglog
 
-1. Neue **[!UICONTROL Hinzufügen auswählen]**
+1. Wählen Sie **[!UICONTROL Hinzufügen neue Protokollfunktion]**
 
    1. Wählen Sie `DEBUG` für **[!UICONTROL Protokollebene]**
-   1. Geben Sie beispielsweise einen Namen für die **[!UICONTROL Protokolldatei]** ein.
+   1. Geben Sie einen Namen für **[!UICONTROL Protokolldatei]** ein, z. B.
 
       * logs/scoring-debug.log
-   1. Geben Sie zwei **[!UICONTROL Protokolleinträge]** (Klasseneinträge) ein (mit `+` dem Symbol)
+   1. Geben Sie zwei **[!UICONTROL Logger]** (class)-Einträge ein (mit dem `+`-Symbol)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -106,28 +106,28 @@ So zeigen Sie Protokolleinträge an:
 
 * Über die Web-Konsole
 
-   * Im Menü &quot; **[!UICONTROL Status]** &quot;
-   * Protokolldateien auswählen ****
+   * Im Menü **[!UICONTROL Status]**
+   * Wählen Sie **[!UICONTROL Protokolldateien]**
    * Suchen Sie nach dem Namen Ihrer Protokolldatei, z. B. `scoring-debug`
 
 * Auf dem lokalen Datenträger des Servers
 
-   * Die Protokolldatei befindet sich unter &lt;*Server-Installationsdir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+   * Die Protokolldatei befindet sich unter &lt;*server-install-dir*/crx-quickstart/logs/&lt;*log-file-name*.log
    * Beispiel: `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC für Scoring und Bading {#ugc-for-scoring-and-badging}
 
-Es ist möglich, die UGC in Bezug auf die Bewertung und Abzeichen zu Ansichten, wenn die gewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community Content Datenspeicherung](working-with-srp.md) und Übersicht über [Datenspeicherung Resource Provider](srp.md).)
+Es ist möglich, die UGC in Bezug auf die Bewertung und Abzeichen zu Ansichten, wenn die gewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, lesen Sie [Community Content Datenspeicherung](working-with-srp.md) und [Übersicht über den Datenspeicherung Resource Provider](srp.md).)
 
-Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da der Zugriff auf das UGC mit der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)einfach ist.
+Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da der Zugriff auf die UGC mit [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) einfach ist.
 
 **JSRP für Autor**: Das Experimentieren in der Autorendatei führt zu einer UGC, die nur in der Autorenversion der Umgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests auf der Umgebung &quot;Veröffentlichen&quot;erforderlich, auf die CRXDE Lite mit Administratorrechten auf einer Instanz im Veröffentlichungsmodus zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](../../help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Beispielinhalt), muss die CRXDE Lite [aktiviert](../../help/sites-administering/enabling-crxde-lite.md)werden.
+**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests auf der Umgebung &quot;Veröffentlichen&quot;erforderlich, auf die CRXDE Lite mit Administratorrechten auf einer Instanz im Veröffentlichungsmodus zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im Produktionsmodus [ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss die CRXDE Lite [aktiviert werden.](../../help/sites-administering/enabling-crxde-lite.md)](../../help/sites-administering/production-ready.md)
 
-Der Basisort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
+Der Basisspeicherort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
 ### Scoring- und Badging-APIs {#scoring-and-badging-apis}
 
@@ -136,17 +136,17 @@ Die folgenden APIs stehen zur Verwendung zur Verfügung:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-Die neuesten Javadocs für die installierten [Versionen](deploy-communities.md#LatestReleases) stehen Entwicklern aus dem Adobe-Repository zur Verfügung. Siehe [Verwenden von Maven für Communities: Javadocs](maven.md#javadocs).
+Die neuesten JavaScript-Dateien für die installierten [Releases](deploy-communities.md#LatestReleases) stehen Entwicklern aus dem Adoben-Repository zur Verfügung. Siehe [Maven für Communities verwenden: Javadocs](maven.md#javadocs).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
-### Beispieleinrichtung {#example-setup}
+### Beispiel-Setup {#example-setup}
 
 Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und Abzeichen für ein Forum auf zwei verschiedenen AEM Websites:
 
 1. Eine AEM mit einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde):
 
-   * Verwenden der Website &quot;Erste Schritte&quot;-Lernprogramm (Interaktion), die während der [Übungen für die ersten Schritte erstellt wurde](getting-started.md)
+   * Verwenden der Website &quot;Erste Schritte&quot;-Lernprogramm (Interaktion), die während des [Lernprogramms &quot;Erste Schritte&quot;](getting-started.md) erstellt wurde
    * Suchen Sie den Knoten der Forumseite
 
       * `/content/sites/engage/en/forum/jcr:content`
@@ -172,9 +172,9 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 
 
 
-1. Eine AEM Site *ohne* eine eindeutige ID:
+1. Eine AEM-Site *ohne* eine eindeutige ID:
 
-   * Verwenden des Handbuchs &quot; [Community-Komponenten&quot;](components-guide.md)
+   * Verwenden des Handbuchs [Community-Komponenten](components-guide.md)
    * Suchen Sie den Knoten der Forumseite
 
       * `/content/community-components/en/forum/jcr:content`
@@ -218,7 +218,7 @@ Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen e
 >Dieses Beispiel folgt nicht den folgenden bewährten Verfahren:
 >
 >* Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.\
-   >  Ein Beispiel dafür, was *nicht* zu tun ist:\
+   >  Beispiel für die folgenden Aufgaben:**\
    >  /etc/community/scoring/rules/site1/forums-scoring\
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
@@ -231,7 +231,7 @@ Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen e
 
 ### Zugriff auf Scoring-UGC {#access-scoring-ugc}
 
-Die Verwendung der [APIs](#scoring-and-badging-apis) wird bevorzugt.
+Die Verwendung der [APIs](#scoring-and-badging-apis) wird empfohlen.
 
 Zu Ermittlungszwecken ist der Basisordner, der Ergebnisse enthält, z. B. mithilfe von JSRP
 
@@ -247,13 +247,13 @@ Auf der Guide-Site &quot;Community-Komponenten&quot;befinden sich der Benutzer u
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-Das Ergebnis wird in der Eigenschaft gespeichert, `scoreValue_tl` die direkt einen Wert enthält oder indirekt auf einen atomicCounter verweist.
+Das Ergebnis wird in der Eigenschaft `scoreValue_tl` gespeichert, die direkt nur einen Wert enthält oder indirekt auf einen atomicCounter verweist.
 
 ![chlimage_1-251](assets/chlimage_1-251.png)
 
-### UGC für Zugriffsabzeichen {#access-badging-ugc}
+### Zugriffskennzeichen-UGC {#access-badging-ugc}
 
-Die Verwendung der [APIs](#scoring-and-badging-apis) wird bevorzugt.
+Die Verwendung der [APIs](#scoring-and-badging-apis) wird empfohlen.
 
 Zu Ermittlungszwecken wird beispielsweise mithilfe von JSRP der Basisordner mit Informationen über zugewiesene oder zugewiesene Kennzeichen wie folgt angezeigt:
 
@@ -267,7 +267,7 @@ Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
-#### zugewiesene Abzeichen {#assigned-badge}
+#### zugewiesenes Zeichen {#assigned-badge}
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -275,6 +275,6 @@ Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.
 
 So zeigen Sie eine sortierte Liste der Mitglieder basierend auf Punkten an:
 
-* [Leaderboard-Funktion](functions.md#leaderboard-function) zur Einbindung in eine Community-Site- oder Gruppenvorlage.
-* [Komponente](enabling-leaderboard.md)&quot;Leaderboard&quot;, die spezielle Komponente der Funktion &quot;Leaderboard&quot;, zum Erstellen von Seiten.
+* [Leaderboard-](functions.md#leaderboard-function) Funktion zur Einbeziehung in eine Community-Site- oder Gruppenvorlage.
+* [Komponente](enabling-leaderboard.md) &quot;Leaderboard&quot;, die spezielle Komponente der Funktion &quot;Leaderboard&quot;, zum Erstellen von Seiten.
 
