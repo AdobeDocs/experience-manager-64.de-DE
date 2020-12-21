@@ -28,11 +28,11 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 ## Benutzergruppen für Zugriff auf Regel-Editor angeben {#specify-user-groups-that-can-access-rule-editor}
 
 1. Melden Sie sich bei AEM Forms als Administrator an.
-1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Operations > Web Console. Die Web-Konsole wird in einem neuen Fenster geöffnet.
+1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Vorgänge > Web-Konsole. Die Web-Konsole wird in einem neuen Fenster geöffnet.
 
    ![1](assets/1.png)
 
-1. In Web Console Window, locate and click **Adaptive Form Configuration Service**. **Dialogfeld &quot;Konfigurationsdienst** für adaptive Formulare&quot;wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **Speichern**.
+1. Suchen Sie im Fenster Web-Konsole nach **Konfigurationsdienst für adaptive Formulare** und klicken Sie darauf. **Der** Servicedialog für die Konfiguration des adaptiven Formulars wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **Speichern**.
 
    Die Datei „/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config“ im CRX-Repository wird erstellt.
 
@@ -47,7 +47,7 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 
    ![create-user](assets/create-user.png)
 
-   Now, when a user that is not a part of the specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![edit-rules1](assets/edit-rules1.png)) is not available for her in the components toolbar:
+   Wenn nun ein Benutzer, der nicht zur angegebenen Benutzergruppe (hier RuleEditorsUserGroup) gehört) auf ein Feld tippt, steht ihm das Symbol Regel bearbeiten ( ![edit-rules1](assets/edit-rules1.png)) in der Komponenten-Symbolleiste nicht zur Verfügung:
 
    ![componentStuolbarwither](assets/componentstoolbarwithre.png)
 
@@ -57,5 +57,5 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 
    Komponentensymbolleiste für Benutzer ohne Zugriff auf Regel-Editor
 
-   For instructions on adding users to groups, see [User Administration and Security](/help/sites-administering/security.md).
+   Anweisungen zum Hinzufügen von Benutzern zu Gruppen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
