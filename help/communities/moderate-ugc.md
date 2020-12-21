@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Moderieren von Community-Inhalten {#moderating-community-content}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Community-Inhalte, auch als benutzergenerierte Inhalte (UGC) bezeichnet, werden erstellt, wenn ein Mitglied (der in Site-Besucher angemeldet ist) Inhalte von einer veröffentlichten Community-Site durch Interaktion mit einer der folgenden Community-Komponenten veröffentlicht:
 
@@ -36,7 +36,7 @@ Die Moderation von UGC ist nützlich, um positive Beiträge zu erkennen und nega
 
 * [Massenmoderationskonsole](moderation.md)
 
-   Die Moderationskonsole ist sowohl für Administratoren und [Community-Moderatoren](users.md) in der öffentlichen Umgebung als auch für Administratoren in der Authoring-Umgebung zugänglich. Dies ist möglich, wenn Community-Inhalte in einem [gemeinsamen Store](working-with-srp.md)gespeichert werden.
+   Die Moderationskonsole ist sowohl für Administratoren und [Community-Moderatoren](users.md) in der öffentlichen Umgebung als auch für Administratoren in der Authoring-Umgebung verfügbar. Dies ist möglich, wenn Community-Inhalte in einem [common store](working-with-srp.md) gespeichert werden.
 
 * [Kontextbezogene Moderation](in-context.md)
 
@@ -47,9 +47,9 @@ Die Moderation von UGC ist nützlich, um positive Beiträge zu erkennen und nega
 Die Aktionen, die für gepostete Inhalte (UGC) durchgeführt werden können, hängen von der Benutzeridentität und der Umgebung ab. Die folgende Tabelle verwendet die folgende Terminologie, um die verschiedenen Rollen entsprechend der Benutzeridentität zu beschreiben:
 
 * `Admin`\
-   Ein Benutzer, der Mitglied der [Community-Administratoren](users.md) -Gruppe ist
+   Ein Benutzer, der Mitglied der Gruppe [community-administrators](users.md) ist
 * `Moderator`
-Mitglied einer Gruppe von [Moderatoren](users.md#publishenvironmentusersandgroups) in einer Community (hat [Moderatorberechtigungen](in-context.md#moderatorpermissions))
+Mitglied einer  [Community-](users.md#publishenvironmentusersandgroups) Moderatorsgruppe (hat  [Moderatorenberechtigungen](in-context.md#moderatorpermissions))
 * `Creator`\
    Der Benutzer, der den Inhalt veröffentlicht hat
 * `Member`\
@@ -66,7 +66,7 @@ Anonymer Benutzer
    <td><strong>Ersteller</strong></td> 
    <td><strong>Mitglied</strong></td> 
    <td><strong>Besucher</strong></td> 
-   <td><strong>Ereignis<br /> ausgelöst</strong></td> 
+   <td><strong>Ereignis<br /> Ausgelöst</strong></td> 
    <td><strong>Vormoderiert</strong></td> 
   </tr>
   <tr>
@@ -110,7 +110,7 @@ Anonymer Benutzer
    <td>X<br /> </td> 
   </tr>
   <tr>
-   <td><strong>Markierung/<br /> Markierung entfernen</strong></td> 
+   <td><strong>Flag/<br /> Flag entfernen</strong></td> 
    <td>X</td> 
    <td>X</td> 
    <td> </td> 
@@ -144,7 +144,7 @@ Administratoren oder Community-Moderatoren können ein oder mehrere Foren- oder 
 
 Durch Auswahl der Aktion &quot;Ausschneiden&quot;wird der Inhalt in die Zwischenablage kopiert. Es können mehrere Beiträge kopiert und als Gruppe an den neuen Speicherort verschoben werden.
 
-![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
+![](assets/cutugc.png) ![cutugcputbackugc](assets/putbackugc.png)
 
 Wenn an der anderen Stelle Inhalte in der Zwischenablage vorhanden sind, wird neben &quot;Neuer Beitrag&quot;eine Schaltfläche &quot;Einfügen&quot;angezeigt, mit der die Anzahl der eingefügten Beiträge angegeben wird. Die Schaltfläche &quot;Einfügen&quot;enthält eine Option zum Löschen der Zwischenablage, anstatt sie einzufügen.
 
@@ -158,13 +158,13 @@ Ein Moderator kann verhindern, dass UGC auf der veröffentlichten Site sichtbar 
 
 Die Aktion &quot;Schließen&quot;wirkt sich auf den gesamten Diskussionstraum aus (ein Forenthema oder der erste Kommentar) und enthält alle nachfolgenden Beiträge oder Antworten.
 
-Wenn geschlossen, sind nicht nur keine weiteren Antworten möglich, es sind auch keine Moderationsaktionen zulässig.
+Wenn geschlossen, sind nicht nur keine weiteren Antworten möglich, auch keine Moderationsaktionen sind zulässig.
 
 Um Vorgänge auszuführen, muss das Thema oder der Kommentar erneut geöffnet werden.
 
 Die Aktion &quot;Schließen/Neu öffnen&quot;kann von Administratoren oder Moderatoren der Community durchgeführt werden.
 
-### Markierung/Markierung entfernen {#flag-unflag}
+### Flag/Markierung entfernen {#flag-unflag}
 
 Die Kennzeichnung ist eine Möglichkeit für alle angemeldeten Mitglieder, mit Ausnahme des Verfassers des Inhalts, anzugeben, dass ein Problem mit dem Inhalt eines Beitrags vorliegt. Nach der Markierung wird ein Unmarkiert-Symbol angezeigt, mit dem das gleiche Mitglied die Kennzeichnung des Inhalts aufheben kann.
 
@@ -180,13 +180,13 @@ Die Aktion &quot;Zulassen&quot;ist eine Option für UGC, die in einem vormoderie
 
 ### Vormoderation {#premoderation}
 
-Wenn UGC vormoderiert ist, wird der Beitrag erst auf der veröffentlichten Site angezeigt, nachdem er durch eine Moderationsaktion genehmigt wurde. Während der Erstellung einer [Community-Site](sites-console.md)` [Content is Premoderated](sites-console.md#moderation)` wird durch Aktivieren des Kontrollkästchens die Vormoderation für die gesamte Site aktiviert. Sobald Komponenten auf einer Seite platziert wurden, können Komponenten, die Moderation unterstützen, mithilfe einer Einstellung im Bearbeitungsdialogfeld für die Vormoderation konfiguriert werden:
+Wenn UGC vormoderiert ist, wird der Beitrag erst auf der veröffentlichten Site angezeigt, nachdem er durch eine Moderationsaktion genehmigt wurde. Während der Erstellung einer [Community-Site](sites-console.md) aktivieren Sie das Kontrollkästchen ` [Content is Premoderated](sites-console.md#moderation)`, um die Vormoderation für die gesamte Site zu aktivieren. Sobald Komponenten auf einer Seite platziert wurden, können Komponenten, die Moderation unterstützen, mithilfe einer Einstellung im Bearbeitungsdialogfeld für die Vormoderation konfiguriert werden:
 
-* [Kommentare](comments.md) und [Überprüfungen](reviews.md)
+* [](comments.md) Kommentare und  [Überprüfungen](reviews.md)
 
-   Aktivieren Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** die Option **[!UICONTROL Vormoderation]**
+   Aktivieren Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** **[!UICONTROL Vormoderation]**
 
-* [Forum](forum.md), [Ideation](ideation-feature.md), [QnA](working-with-qna.md)und [Kalender](calendar.md) auf der Registerkarte **[!UICONTROL Einstellungen]** , aktivieren Sie **[!UICONTROL Moderiert]**
+* [Forum](forum.md),  [Ideation](ideation-feature.md),  [QnA](working-with-qna.md) und  [](calendar.md) Kalendereinstellungen  **** überprüfen,  **[!UICONTROL Moderiert]**
 
 ### Spam-Erkennung {#spam-detection}
 
@@ -194,7 +194,7 @@ Bei der Spam-Erkennung handelt es sich um eine Funktion der automatischen Modera
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Um die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie jedoch einen Satz Wörter im Verzeichnis /apps, die der Struktur der standardmäßigen Spam-Wörter durch [Überlagerung](overlay-comments.md)folgen.
+Um die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie jedoch einen Satz Wörter im Verzeichnis &quot;/apps&quot;entsprechend der Struktur der standardmäßigen Spam-Wörter mit [overlay](overlay-comments.md).
 
 Ein benutzergenerierter Beitrag (über alle Inhaltstypen hinweg, z. B. Blogs, Foren und Kommentare), der Spam-Wörter enthält, wird mit dem Text &quot;Dieser Beitrag wurde als Spam klassifiziert&quot;über dem Beitrag markiert.
 
@@ -204,10 +204,10 @@ Moderator können einen solchen Beitrag sehen und denselben markieren, um die An
 
 Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 
-1. Öffnen Sie [Web Console](http://localhost:4502/system/console/configMgr), indem Sie zu `/system/console/configMgr`.
+1. Öffnen Sie [Webkonsole](http://localhost:4502/system/console/configMgr), indem Sie `/system/console/configMgr` aufrufen.
 
-1. Suchen Sie die Konfiguration für die automatische Moderation **[!UICONTROL in]** AEM Communities und bearbeiten Sie sie.
-1. Hinzufügen den `SpamProcess` Eintrag.
+1. Suchen Sie nach der Konfiguration **[!UICONTROL AEM Communities Auto Moderation]** und bearbeiten Sie sie.
+1. hinzufügen Sie den Eintrag `SpamProcess`.
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -219,7 +219,7 @@ Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 
 Das Sentiment wird basierend auf der Anzahl positiver und negativer Suchbegriffe ([Watchwords](#configuringwatchwords)) in einem Beitrag (UGC) berechnet.
 
-Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment der UGC. Die Standardregeln befinden sich unter `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment des UGC. Die Standardregeln befinden sich unter `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 Der Wert, den die Regeln erzeugen, liegt zwischen 1 (alle negativen, keine positiven Wörter) und 10 (alle positiven, keine negativen Wörter). Der Sentimentwert 5 ist ein neutrales Sentiment und der Standardwert.
 
@@ -234,47 +234,51 @@ Um Regeln zu überschreiben oder hinzuzufügen, erstellen Sie einen Regelsatz im
 
 Nach der Analyse wird das Sentiment mit dem UGC gespeichert.
 
-In der [Massen-Moderationskonsole](moderation.md)ist es möglich, UGC zu filtern und zu Ansichten, je nachdem, ob das Sentiment negativ, neutral oder positiv ist.
+In der [Massenmoderationskonsole](moderation.md) ist es möglich, UGC basierend darauf zu filtern und Ansicht, ob das Sentiment negativ, neutral oder positiv ist.
 
 #### Watchwords {#watchwords}
 
-AEM Communities stellen einen *watchword Analyzer *als einen Schritt im Prozess zur Bewertung des [Sentiments](#sentiment)bereit. Der Beitrag zum Sentimentwert der Watchwords beruht auf einem Vergleich von negativen und positiven Watchwords, die im veröffentlichten Inhalt verwendet werden, sowie verbotenen Wörtern.
+AEM Communities stellen einen *watchword-Analyzer *als einen Schritt im Prozess zur Bewertung von [sentiment](#sentiment) bereit. Der Beitrag zum Sentimentwert der Watchwords beruht auf einem Vergleich von negativen und positiven Watchwords, die im veröffentlichten Inhalt verwendet werden, sowie verbotenen Wörtern.
 
-#### Sentiment und Watchwords konfigurieren {#configure-sentiment-and-watchwords}
+#### Sentiment und Watchwords {#configure-sentiment-and-watchwords} konfigurieren
 
 Die Liste positiver und negativer Suchbegriffe kann wie die Sentimentregeln angepasst werden.
 
 Die standardmäßige Liste von Watchwords kann als Eigenschaften eines Knotens in der jeweiligen Instanz eingegeben werden, ähnlich wie die Standardeinstellung oder durch Außerkraftsetzen des Standarddienstes, indem der OSGi-Dienst `sentimentprocess.name`mit der Liste von Wörtern konfiguriert wird.
 
-Die Datei **sentimentprocess.name** kann auch geändert werden, um auf den Speicherort eines benutzerdefinierten Satzes von Sentimentregeln zu verweisen.
+Die Variable **sentimentprocess.name** kann auch geändert werden, um auf den Speicherort eines benutzerdefinierten Satzes von Sentimentregeln zu verweisen.
 
 So konfigurieren Sie das Sentiment und die Watchwords:
 
 * Auf der Authoring-Instanz
 * Anmelden als Administrator
-* Open [Web Console](http://localhost:4502/system/console/configMgr)
-* Suchen `sentimentprocess.name`
+* Öffnen Sie [Web-Konsole](http://localhost:4502/system/console/configMgr)
+* Suchen Sie nach `sentimentprocess.name`
 * Wählen Sie die Konfiguration aus, die im Bearbeitungsmodus geöffnet werden soll
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
-* **Positive Watchwords** Eine kommagetrennte Liste von Wörtern, die zu einem positiven Sentiment beiträgt, das die Standardwerte außer Kraft setzt. Der Standardwert ist eine leere Liste.
+* **Positive**
+WatchwordsEine kommagetrennte Liste von Wörtern, die zu einem positiven Sentiment beiträgt, das die Standardwerte außer Kraft setzt. Der Standardwert ist eine leere Liste.
 
-* **Negative Watchwords** Eine kommagetrennte Liste von Wörtern, die zu einem negativen Sentiment beiträgt, das die Standardwerte außer Kraft setzt. Der Standardwert ist eine leere Liste.
+* **Negative**
+WatchwordsEine kommagetrennte Liste von Wörtern, die zu einem negativen Sentiment beiträgt, das die Standardwerte außer Kraft setzt. Der Standardwert ist eine leere Liste.
 
-* **Expliziter Pfad zum Watchwords-Knoten** Der Repository-Speicherort eines Knotens, der den Standard-Knoten enthält 
-`positive` und `negative` Eigenschaften, die die standardmäßigen Watchwords angeben. Der Standardwert ist `/libs/settings/community/watchwords/default`.
+* **Expliziter Pfad zum Watchwords-**
+KnotenRepository-Speicherort eines Knotens, der den Standardwert enthält 
+`positive` und  `negative` Eigenschaften, die die standardmäßigen Watchwords angeben. Der Standardwert ist `/libs/settings/community/watchwords/default`.
 
-* **Sentimentregeln** Der Speicherort der Regeln für die Berechnung des Sentiments anhand positiver und negativer Watchwords im Repository. Der Standardwert ist 
+* **Sentimentregeln**
+Der Repository-Speicherort der Regeln zur Berechnung des Sentiments anhand positiver und negativer Watchwords. Der Standardwert ist 
 `/libs/cq/workflow/components/workflow/social/sentiments/rules` (es ist jedoch kein Workflow mehr beteiligt).
 
-Im Folgenden finden Sie ein Beispiel für einen benutzerdefinierten Eintrag für die standardmäßigen Watchwords, wenn `Explicit Path to Watchwords Node` auf `/libs/settings/community/watchwords/default`.
+Im Folgenden finden Sie ein Beispiel für einen benutzerdefinierten Eintrag für die standardmäßigen Watchwords, wenn `Explicit Path to Watchwords Node` auf `/libs/settings/community/watchwords/default` eingestellt ist.
 
 ![crxde](assets/crxde.png)
 
 ### Moderatorberechtigungen {#moderator-permissions}
 
-Die folgenden Berechtigungen werden zusammen als **`moderator permissions`**:
+Die folgenden Berechtigungen werden, wenn sie derselben Ressource zugewiesen sind, kollektiv als **`moderator permissions`** bezeichnet:
 
 * `Read`
 * **`Modify`**
