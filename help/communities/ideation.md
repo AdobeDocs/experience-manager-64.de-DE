@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Grundlagen der Ideenfindung {#ideation-essentials}
+# Ideenelemente {#ideation-essentials}
 
 Diese Seite bietet die wesentlichen Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnelt, aber mit der Möglichkeit, als Entwurf zu speichern und ein stärker gemeinschaftliches Gefühl.
 
@@ -36,7 +36,7 @@ Diese Seite bietet die wesentlichen Informationen für die Arbeit mit der Ideenf
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.stimating<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
+   <td>cq.social.hbs.stimation<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -57,4 +57,4 @@ Diese Seite bietet die wesentlichen Informationen für die Arbeit mit der Ideenf
 
 ### Ideen-Funktion {#ideation-function}
 
-Eine Community-Site-Struktur, die die [Ideationsfunktion](functions.md#ideation-function)enthält, enthält eine konfigurierte `ideation` Komponente.
+Eine Community-Site-Struktur, die die [Ideationsfunktion](functions.md#ideation-function) enthält, enthält eine konfigurierte `ideation`-Komponente.
