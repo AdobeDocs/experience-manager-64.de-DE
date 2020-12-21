@@ -19,23 +19,24 @@ ht-degree: 73%
 
 # Anpassen der Benutzeroberfläche „Korrespondenz erstellen“{#customize-create-correspondence-ui}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit der Correspondence Management können Sie die dazugehörige Lösungsvorlage so umbenennen, dass Sie einen besseren Markenwert erzielen und die Markenstandards Ihres Unternehmens erfüllt werden. Die Umbenennung der Benutzeroberfläche umfasst das Ändern des Unternehmenslogo in der linken oberen Ecke der Benutzeroberfläche „Korrespondenz erstellen“.
 
 Sie können das Logo in der Benutzeroberfläche „Korrespondenz erstellen“ mit Ihrem Firmenlogo ersetzen.
 
-![Das benutzerdefinierte Symbol in der Benutzeroberfläche](assets/0_1_introscreenshot.png)&quot;Korrespondenz erstellen&quot;**Abbildung:** *Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
+![Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;](assets/0_1_introscreenshot.png)
+**im IFigure:** *Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
 
 ### Ändern des Logos in der Benutzeroberfläche „Korrespondenz erstellen“{#changing-the-logo-in-the-create-correspondence-ui}
 
 Um ein Logobild Ihrer Wahl einzurichten, führen Sie die folgenden Schritte durch:
 
-1. Create the appropriate [folder structure in CRX](#creatingfolderstructure).
-1. [Laden Sie die neue Logodatei](#uploadlogo) in den Ordner hoch, den Sie in CRX erstellt haben.
+1. Erstellen Sie die entsprechende [Ordnerstruktur in CRX](#creatingfolderstructure).
+1. [Laden Sie die neue Logodatei ](#uploadlogo) in den Ordner hoch, den Sie in CRX erstellt haben.
 
-1. [Richten Sie das CSS](#createcss) auf CRX ein, um auf das neue Logo zu verweisen.
-1. Clear the browser history and [refresh the Create Correspondence UI](#refreshccrui).
+1. [Richten Sie ](#createcss) CSS auf CRX ein, um auf das neue Logo zu verweisen.
+1. Löschen Sie den Browserverlauf und aktualisieren Sie die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;](#refreshccrui).[
 
 ## Erstellen der gewünschten Ordnerstruktur {#creatingfolderstructure}
 
@@ -51,12 +52,12 @@ Die /apps-Verzweigung (Ordnerstruktur):
 
 Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der /apps-Verzweigung zu erstellen:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen `css` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der css-Ordner (im ccrui-Ordner).
 
    Schritte zum Erstellen des css-Ordners:
 
-   1. Right-click the **css** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **css** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Überlagerungsknoten](assets/1_overlaynode_css.png)
 
@@ -83,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen `imgs` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der imgs-Ordner (im ccrui-Ordner).
 
-   1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **imgs** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
       **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
@@ -131,7 +132,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Double-click the **jcr:data** property.
+1. Klicken Sie bei gedrückter Dublette auf die Eigenschaft **jcr:data**.
 
    Das Dialogfeld „jcr:data bearbeiten“ wird angezeigt.
 
@@ -142,7 +143,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
    Die unterstützten Bildformate werden vom Browser bestimmt, den Sie verwenden, um auf AEM Forms zuzugreifen. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
 
    ![Beispiele für benutzerdefinierte Logodatei](assets/geometrixx-outdoors.png)
-   **Abbildung:** *Beispiel: CustomLogo.png als benutzerdefiniertes Logo verwenden*
+   **Abbildung:** *Beispiel - CustomLogo.png als benutzerdefiniertes Logo verwenden*
 
 1. Klicken Sie auf **Alle speichern**.
 
@@ -160,7 +161,7 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
    Schritte zum Erstellen der customcss.css-Datei:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **css** und wählen Sie **Erstellen > Ordner erstellen**.
-   1. In the New File dialog, specify the name of the CSS as `customcss.css`(you cannot use a different filename), and click **OK**.
+   1. Geben Sie im Dialogfeld &quot;Neue Datei&quot;den Namen der CSS als `customcss.css` ein (Sie können keinen anderen Dateinamen verwenden) und klicken Sie auf **OK**.
    1. Fügen Sie den folgenden Code zu der neu erstellte CSS-Datei hinzu. Geben Sie unter „content:url“ im Code den Namen des Bildes ein, das Sie in den imgs-Ordner in CRXDE hochgeladen haben.
 
       ```css
@@ -171,9 +172,10 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
 
    1. Klicken Sie auf **Alle speichern**.
 
-## Aktualisieren der Benutzeroberfläche „Korrespondenz erstellen“, um das benutzerdefinierte Logo zu sehen {#refreshccrui}
+## Aktualisieren der Benutzeroberfläche „Korrespondenz erstellen“, um das benutzerdefinierte Logo zu sehen  {#refreshccrui}
 
 Löschen Sie den Browsercache und öffnen Sie dann die Instanz der Benutzeroberfläche „Korrespondenz erstellen“ in Ihrem Browser. Sie sollten nun Ihr eigenes Logo sehen können.
 
-![Benutzeroberfläche &quot;Korrespondenz erstellen&quot;mit benutzerdefiniertem Logo](assets/0_1_introscreenshot-1.png)**Abbildung:** *Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
+![Benutzeroberfläche &quot;Korrespondenz erstellen&quot;mit benutzerdefiniertem ](assets/0_1_introscreenshot-1.png)
+**LogoAbbildung:** *Das benutzerdefinierte Symbol in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;*
 
