@@ -27,31 +27,31 @@ Mit der Kalenderfunktion können der Community Veranstaltungsdaten im Kalenderfo
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 * Hinzufügen der Kalenderfunktion zu einer AEM Site
-* Configuration settings for `Calendar`components
+* Konfigurationseinstellungen für `Calendar`Komponenten
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
 
-To add a `Calendar` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Calendar`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Calendar`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite, beispielsweise in die Nähe einer Eigenschaft, die Benutzer bewerten sollen.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](calendar-basics-for-developers.md#essentials-for-client-side) einbezogen werden, wird die `Calendar`-Komponente so angezeigt.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Konfigurieren eines Kalenders {#configuring-calendar}
 
-Select the placed `Calendar`component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die aufzurufende platzierte Komponente `Calendar`und klicken Sie auf das Symbol `Configure`, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
-Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to be applied to calendar entries.
+Geben Sie unter der Registerkarte **[!UICONTROL Einstellungen]** an, ob Tags auf Kalendereinträge angewendet werden dürfen.
 
 * **[!UICONTROL Ereignisse pro Seite]**
 
@@ -71,7 +71,7 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Tagging zulassen]**
 
-   If checked, allow members to add tag labels to the events they post (see **Tag field** tab). Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern gestatten, den von ihnen geposteten Ereignissen Tagbeschriftungen hinzuzufügen (siehe **Feld** Registerkarte). Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
 
@@ -83,11 +83,11 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Max. Dateigröße]**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Maximale Dateigröße für Bildanhang]**
 
@@ -119,11 +119,11 @@ Under the **[!UICONTROL Settings]** tab, specify whether or not to allow tags to
 
 * **[!UICONTROL Feature-Inhalt zulassen]**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics and replies (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Themen und Antworten (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
 * **[!UICONTROL Posts ablehnen]**
 
@@ -159,17 +159,17 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags
 
 * **[!UICONTROL Zulässige Namespaces]**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **[!UICONTROL Empfehlungsgrenze]**
 
-   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Default is `-1` (no limits).
+   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Standardwert ist `-1` (keine Beschränkungen).
 
 >[!NOTE]
 >
 >Unter [Verwalten von Tags](../../help/sites-administering/tags.md) finden Sie Informationen darüber, wie Sie neue Tag-Namespaces (Taxonomie) hinzufügen können.
 
-#### Registerkarte &quot;Übersetzung&quot; {#translation-tab}
+#### Registerkarte Übersetzung {#translation-tab}
 
 Auf der Registerkarte **[!UICONTROL Übersetzung]** können Sie festlegen, ob bei für die Community-Site aktivierten Übersetzungsoption anstatt bestimmter Einträge der gesamte Thread (Veranstaltung und Kommentare) übersetzt werden soll.
 
@@ -193,7 +193,7 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 ### Mitglieder {#members}
 
-When the signed in user is a community member or [privileged member](users.md#privileged-members-group) (depending on configuration), they are able to select `New Event` to create and post a new calendar event.
+Wenn der angemeldete Benutzer ein Community-Mitglied oder [ein privilegiertes Mitglied](users.md#privileged-members-group) ist (je nach Konfiguration), können sie `New Event` auswählen, um ein neues Kalendersymbol zu erstellen und zu posten.
 
 Insbesondere ist Folgendes möglich:
 
@@ -213,10 +213,10 @@ Nicht registrierte oder angemeldete Besucher können veröffentlichte Veranstalt
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Calendar Essentials](calendar-basics-for-developers.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Calendar Essentials](calendar-basics-for-developers.md) für Entwickler.
 
 Informationen zur Moderation von Kalenderereignissen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
-For tagging calendar events and comments, see [Tagging User Generated Content](tag-ugc.md).
+Informationen zum Taggen von Kalenderinhalten und -kommentaren finden Sie unter [Tagging von benutzergenerierten Ereignissen](tag-ugc.md).
 
-For translation of calendar events and comments, see [Translating User Generated Content](translate-ugc.md).
+Eine Übersetzung der Kalenderinhalte und Ereignisse finden Sie unter [Übersetzen benutzergenerierter ](translate-ugc.md).
