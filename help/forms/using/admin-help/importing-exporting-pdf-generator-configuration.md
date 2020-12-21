@@ -38,7 +38,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 
 1. Klicken Sie auf „Herunterladen“ und speichern Sie die XML-Datei am gewünschten Speicherort.
 
-## Eine Konfigurationsdatei importieren {#import-a-configuration-file}
+## Eine Konfigurationsdatei importieren  {#import-a-configuration-file}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 1. Wählen Sie „Vorhandene Konfigurationsdatei importieren“ aus.
 1. Um den Dateispeicherort im Feld „Konfigurationsdatei“ anzugeben, klicken Sie zuerst auf „Durchsuchen“, um die Datei zu lokalisieren und auszuwählen, und dann auf **Importieren**.
 
-## Alle Ebenen in der AutoCAD-Datei konvertieren {#convert-all-layers-within-autocad-files}
+## Alle Ebenen in der AutoCAD-Datei konvertieren  {#convert-all-layers-within-autocad-files}
 
 Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthaltenen Ebenen, sondern nur die Standardebene der Datei in PDF. Um alle Ebenen zu konvertieren, führen Sie folgendes Verfahren aus.
 
@@ -60,7 +60,7 @@ Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthalt
 
    Bei allen AutoCAD-Dateien, die mit der geänderten Konfigurationsdatei konvertiert werden, werden alle Ebenen konvertiert.
 
-## Konfiguration auf die ursprünglichen, mit PDF Generator installierten Einstellungen zurücksetzen {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Konfiguration auf die ursprünglichen, mit PDF Generator installierten Einstellungen zurücksetzen  {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
 1. Wählen Sie „Konfiguration auf Standardeinstellungen zurücksetzen“ und klicken Sie auf „Importieren“.
