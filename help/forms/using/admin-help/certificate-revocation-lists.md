@@ -28,14 +28,14 @@ Mithilfe der Trust Store-Verwaltung können Sie Zertifikatsperrlisten importiere
 1. Geben Sie in das Feld „Alias“ einen Bezeichner für die Zertifikatsperrliste ein.
 1. Klicken Sie auf „Durchsuchen“, um die Zertifikatsperrliste zu finden, und anschließend auf „OK“.
 
-## Zertifikatsperrliste exportieren {#export-a-crl}
+## Zertifikatsperrliste exportieren  {#export-a-crl}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Zertifikatsperrlisten“.
 1. Klicken Sie auf den Aliasnamen der Zertifikatsperrliste, die exportiert werden soll, und anschließend auf „Exportieren“.
 1. Befolgen Sie die Anweisungen zum Exportieren der Zertifikatsperrliste. Zertifikatsperrlisten werden in der Base64-Codierung exportiert.
 1. Klicken Sie auf OK.
 
-## Zertifikatsperrliste löschen {#delete-a-crl}
+## Zertifikatsperrliste löschen  {#delete-a-crl}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Zertifikatsperrlisten“.
 1. Aktivieren Sie die Kontrollkästchen der zu löschenden Zertifikatsperrliste und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
