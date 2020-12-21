@@ -20,21 +20,21 @@ ht-degree: 38%
 
 # Verwenden von Bewertungen {#using-ratings}
 
-The `Rating`component is used standalone or in conjunction with other Communities features. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
+Die Komponente `Rating`wird eigenständig oder zusammen mit anderen Communities-Funktionen verwendet. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
 
 ## Hinzufügen einer Bewertung zu einer Seite {#adding-a-rating-to-a-page}
 
-Um eine `Rating`Komponente einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente `Communities / Rating` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Mitglieder bewerten sollen.
+Um einer Seite im Autorenmodus eine `Rating`Komponente hinzuzufügen, suchen Sie die Komponente `Communities / Rating` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Mitglieder bewerten sollen.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](rating-basics.md#essentials-for-client-side) are included, this is how the `Rating` component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](rating-basics.md#essentials-for-client-side) einbezogen werden, wird die `Rating`-Komponente so angezeigt.
 
 ![chlimage_1-493](assets/chlimage_1-493.png)
 
 ## Konfigurieren einer Bewertung {#configuring-rating}
 
-Select the placed `Rating` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Rating` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
@@ -42,7 +42,8 @@ Legen Sie auf der Registerkarte **[!UICONTROL Texte &amp; Beschriftungen]** die 
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
-**[!UICONTROL Tally Name]**(*Erforderlich*) Ein einfacher Name für die Instanz, `Rating`die diese Instanz eindeutig identifiziert. Es muss sich um einen gültigen Knotennamen des Verzeichnisses handeln.
+**[!UICONTROL Tally Name]**
+(*Erforderlich*) Ein einfacher Name für die Instanz,  `Rating`die diese Instanz eindeutig identifiziert. Es muss sich um einen gültigen Knotennamen des Verzeichnisses handeln.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -50,10 +51,10 @@ Legen Sie auf der Registerkarte **[!UICONTROL Texte &amp; Beschriftungen]** die 
 
 Pro Mitglied ist nur eine Bewertung zulässig.  Das Mitglied kann seine Meinung jedoch jederzeit ändern.
 
-### Anonym {#anonymous}
+### Anonym  {#anonymous}
 
 Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um Kommentare verfassen zu können.
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Rating Essentials](rating-basics.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Rating Essentials](rating-basics.md) für Entwickler.
