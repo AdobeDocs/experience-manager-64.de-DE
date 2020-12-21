@@ -40,7 +40,7 @@ Geben Sie zum Durchführen einer allgemeinen Suche grundlegende Kriterien ein. W
 
 1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
-## Eine Detailsuche nach einem Prozess durchführen {#perform-a-detailed-search-for-a-process}
+## Eine Detailsuche nach einem Prozess durchführen  {#perform-a-detailed-search-for-a-process}
 
 Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Detailsuche eignet sich optimal, wenn zahlreiche Prozessinstanzen ausgeführt werden und Sie die möglichen Suchergebnisse durch bestimmte Kriterien einschränken müssen.
 
@@ -58,7 +58,7 @@ Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Det
 
 [Informationen zum Status von Prozessinstanzen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Eine kombinierten Suche nach einem Prozess durchführen {#perform-a-combined-search-for-a-process}
+## Eine kombinierten Suche nach einem Prozess durchführen  {#perform-a-combined-search-for-a-process}
 
 Um eine Suche zu erstellen, die sowohl auf einer allgemeinen als auch auf einer Detailsuche basiert, wobei beide Bereiche durch ein implizites UND verknüpft sind, geben Sie die Suchkriterien auf der Seite „Prozesssuche“ in die beiden Bereiche „Allgemeine Suche“ und „Detailsuche“ ein.
 
