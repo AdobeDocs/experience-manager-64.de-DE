@@ -392,7 +392,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -443,7 +443,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Beginn des Zeitplans und endDate das Enddatum des Zeitplans. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td> 
+   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Beginn des Zeitplans und endDate das Enddatum des Zeitplans. Wenn endDate im Zeitplan null ist, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -463,7 +463,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Es enthält ein Array von Objekten für prozessspezifische Vertreter für den Abwesenheitszeitraum. In each process-specific designate object, processName contains the name of the process, isNotDesignated is true if no user is assigned for corresponding process, and userDesignated is null if no user assigned else details of the user assigned for corresponding process.<br type="_moz" /> </td> 
+   <td>Es enthält ein Array von Objekten für prozessspezifische Vertreter für den Abwesenheitszeitraum. In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses, isNotDesignated ist "true", wenn keinem Benutzer der entsprechende Prozess zugewiesen ist, und userDesignated ist "null", wenn keinem Benutzer weitere Details des für den entsprechenden Prozess zugewiesenen Benutzers zugewiesen wurden.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>Prozesse<br type="_moz" /> </td> 
@@ -495,7 +495,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -542,7 +542,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Array von Objekten aus Prozessvariablen Each process variable object contains name which is name of process variable, value which is value of process variable and type which is type of process variable.<br type="_moz" /> </td> 
+   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält den Namen der Prozessvariable, den Wert der Prozessvariable und den Typ der Prozessvariable.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>tasklist<br type="_moz" /> </td> 
@@ -557,7 +557,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -596,7 +596,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -640,7 +640,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -684,7 +684,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -731,7 +731,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>Berechtigungen<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Berechtigungen, die mit einer Anlage verknüpft sind allowRead field is for read permission, allowWrite is for write permission, allowDelete is for delete permission.<br type="_moz" /> </td> 
+   <td>Berechtigungen, die mit einer Anlage verknüpft sind allowRead-Feld ist für Leseberechtigung, allowWrite für Schreibberechtigung, allowDelete für Löschberechtigung.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td> 
@@ -746,7 +746,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>Typ<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Type is attachment for files and Type is note for notes.<br type="_moz" /> </td> 
+   <td>Typ ist Anhang für Dateien und Typ Notiz für Notizen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td> 
@@ -773,7 +773,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
