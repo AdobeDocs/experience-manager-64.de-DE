@@ -36,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. In the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** window, locate and click the **[!UICONTROL AEM DS Settings]** option.
+1. Suchen Sie im Fenster **[!UICONTROL Adobe Experience Manager Web Console Configuration]** die Option **[!UICONTROL AEM DS Settings]** und klicken Sie darauf.
 
    ![ds_settings](assets/ds_settings.png)
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
    **[!UICONTROL Verarbeitungsserver-URL]**: Der Verarbeitungsserver ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM-Autoreninstanz oder der anderen Server-URL übereinstimmen (d. h. http://localhost:port/).
 
-   **[!UICONTROL Verarbeitungsserver-Benutzername]**: Benutzername des Workflow-Benutzers [basierend auf der verwendeten Server-URL]
+   **[!UICONTROL Verarbeitungsserver-Benutzername]**: Benutzername des Workflow-Benutzers  [basierend auf der verwendeten Server-URL]
 
    **[!UICONTROL Verarbeitungs-Serverkennwort]**: Das Kennwort des Workflow-Benutzers
 
