@@ -20,17 +20,17 @@ ht-degree: 8%
 
 # Berichte-Konsole {#reports-console}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die von der Autorendatei aus auf verschiedene Weise zugegriffen werden kann.
 
 Die verschiedenen Berichte sind im Allgemeinen:
 
-* [Bericht](#assignments-report) &quot;Zuweisungen&quot;- für eine [Community](overview.md#enablement-community), die die Lernenden bei ihren Zuweisungen unterstützt, bietet einen Überblick über den Fortschritt, einschließlich eines zugehörigen Ergebnisses bei der Implementierung des SCORM-Standards
-* [Ansichten-Bericht](#views-report) - enthält eine Übersicht über die Ansichten von Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site
-* [Bericht](#posts-report) zu Beiträgen - enthält ein Diagramm der verschiedenen Arten von Beiträgen von Mitgliedern der Community zu jeder Community-Site
+* [Bericht](#assignments-report)  &quot;Zuweisungen&quot;- für eine  [Community](overview.md#enablement-community), die Informationen über den Fortschritt der Lernenden bei ihren Zuweisungen enthält, einschließlich eines zugehörigen Ergebnisses bei der Implementierung des SCORM-Standards
+* [Ansichten-Bericht](#views-report)  - enthält eine Übersicht über die Ansichten von Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site
+* [Bericht](#posts-report)  &quot;Beiträge&quot;- enthält ein Diagramm der verschiedenen Arten von Beiträgen von Mitgliedern der Community zu jeder Community-Site.
 
-Wenn [Adobe Analytics aktiviert](sites-console.md#analytics)ist, enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Zeitverlauf
+Wenn [Adobe Analytics aktiviert ist](sites-console.md#analytics), enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Zeitverlauf.
 
 Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format exportiert werden.
 
@@ -52,9 +52,9 @@ Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format expor
 
 * Aus globaler Navigation: **[!UICONTROL Navigation > Communities > Ressourcen]**
 * Eine vorhandene Community-Site für die Aktivierung auswählen
-   * Wählen Sie das Symbol **[!UICONTROL Bericht]** , um Berichte zu erstellen, die alle Aktivierungsressourcen abdecken.
+   * Klicken Sie auf das Symbol **[!UICONTROL Bericht]**, um Berichte zu erstellen, die alle Aktivierungsressourcen abdecken.
    * Auswählen eines Lernpfads für die Aktivierung
-   * Symbol **[!UICONTROL Bericht]** auswählen, um Berichte zu erstellen
+   * Klicken Sie auf das Symbol **[!UICONTROL Bericht]**, um Berichte für
       * Die enthaltenen Aktivierungsressourcen
       * Dem Lernpfad zugewiesene Lernende
 * Diese Berichte bieten:
@@ -77,13 +77,16 @@ Der Bericht enthält Informationen über ihre Fortschritte sowie Kommentare und 
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **[!UICONTROL Site]** Wählen Sie eine Community-Site für die Aktivierung aus
+* ****
+SiteWählen Sie eine Community-Site für die Aktivierung aus
 * **[!UICONTROL Benutzer oder Gruppe]**
    * Benutzer auswählen, um einen Bericht für einen Lernenden zu erstellen
-   * Gruppe auswählen, um einen Bericht für eine Lerngruppe zu erstellenDer Tunneldienst greift über die Umgebung zur Veröffentlichung auf Mitglieder und Mitgliedergruppen zu
-* **[!UICONTROL Zuweisung]** Wählen Sie aus den den ausgewählten Lernenden zugewiesenen Ressourcen
+   * Gruppe auswählen, um einen Bericht für eine Gruppe Lernender zu erstellen
+Der Tunneldienst greift über die Umgebung zur Veröffentlichung auf Mitglieder und Mitgliedergruppen zu
+* **[!UICONTROL Zuweisung]**
+Wählen Sie aus den den ausgewählten Lernenden zugewiesenen Ressourcen aus
 
-Wählen Sie **[!UICONTROL Erstellen]** , um den Bericht zu erstellen:
+Wählen Sie **[!UICONTROL Generate]**, um den Bericht zu erstellen:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -95,15 +98,18 @@ Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten auf An
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **[!UICONTROL Site]** Wählen Sie eine Community-Site
-* **[!UICONTROL Inhaltstyp]** kann &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen
-* ZeitrahmenWählen Sie eine der folgenden Optionen:
+* ****
+SiteWählen Sie eine Community-Site
+* **[!UICONTROL Content]**
+Typekann &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen
+* Zeitrahmen
+Wählen Sie eine der folgenden Optionen:
    * Letzte 7 Tage
    * Letzte 30 Tage
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Erstellen]** , um den Bericht zu erstellen:
+Wählen Sie **[!UICONTROL Generate]**, um den Bericht zu erstellen:
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -115,15 +121,18 @@ In der Konsole &quot;Beiträge&quot;können Berichte für die Anzahl der Beiträ
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **[!UICONTROL Site]** Wählen Sie eine Community-Site
-* **[!UICONTROL Inhaltstyp]** kann &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen
-* ZeitrahmenWählen Sie eine der folgenden Optionen:
+* ****
+SiteWählen Sie eine Community-Site
+* **[!UICONTROL Content]**
+Typekann &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen
+* Zeitrahmen
+Wählen Sie eine der folgenden Optionen:
    * Letzte 7 Tage
    * Letzte 30 Tage
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Erstellen]** , um den Bericht zu erstellen:
+Wählen Sie **[!UICONTROL Generate]**, um den Bericht zu erstellen:
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
