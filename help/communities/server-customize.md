@@ -36,7 +36,7 @@ SocialComponents sind POJOs, die eine Ressource für eine AEM Communities-Funkti
 
 Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass in der Schnittstelle die Methoden Map&lt;String, Object> getAsMap() und String toJSONString() festgelegt sind, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
 
-Alle SocialComponent-Klassen müssen die Schnittstelle implementieren `com.adobe.cq.social.scf.SocialComponent`
+Alle SocialComponent-Klassen müssen die Schnittstelle `com.adobe.cq.social.scf.SocialComponent` implementieren
 
 ### SocialCollectionComponent-Schnittstelle {#socialcollectioncomponent-interface}
 
@@ -52,7 +52,7 @@ Eine SocialComponentFactory ist für das Erstellen einer Instanz der ausgewählt
 
 Eine SocialComponentFactory ist ein OSGi-Dienst und hat Zugriff auf andere OSGi-Dienste, die über einen Konstruktor an die SocialComponent übergeben werden können.
 
-Alle SocialComponentFactory-Klassen müssen die Schnittstelle implementieren `com.adobe.cq.social.scf.SocialComponentFactory`
+Alle SocialComponentFactory-Klassen müssen die Schnittstelle `com.adobe.cq.social.scf.SocialComponentFactory` implementieren
 
 Eine Implementierung der Methode SocialComponentFactory.getPriority() sollte den höchsten Wert zurückgeben, damit die Factory für den angegebenen resourceType verwendet wird, wie von getResourceType() zurückgegeben.
 
@@ -62,33 +62,33 @@ Der SocialComponentFactoryManager (Manager) verwaltet alle im Framework registri
 
 Ein SocialComponentFactoryManager ist ein OSGi-Dienst und hat Zugriff auf andere OSGi-Dienste, die über einen Konstruktor an die SocialComponent übergeben werden können.
 
-Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf.SocialComponentFactoryManager`
+Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf.SocialComponentFactoryManager` abgerufen
 
 ### HTTP-API - POST-Anfragen {#http-api-post-requests}
 
 #### PostOperation-Klasse {#postoperation-class}
 
-Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation`Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
+Die Endpunkte der HTTP-API-POST sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation`Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
 
-Die Implementierung `PostOperation`des Endpunkts setzt `sling.post.operation`auf einen Wert, auf den der Vorgang reagiert. Alle POST-Anfragen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
+Die `PostOperation`Endimplementierung setzt `sling.post.operation`auf einen Wert, auf den der Vorgang reagieren soll. Alle POST-Anfragen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
 
-Die `PostOperation`ruft die `SocialOperation`auf, die die für den Vorgang erforderlichen Aktionen ausführt.
+Das `PostOperation`ruft das `SocialOperation`auf, das die für den Vorgang erforderlichen Aktionen ausführt.
 
-Das Ergebnis `PostOperation`wird vom Client empfangen `SocialOperation`und die entsprechende Antwort an den Client zurückgegeben.
+`PostOperation`empfängt das Ergebnis von `SocialOperation`und gibt die entsprechende Antwort an den Client zurück.
 
 #### SocialOperation-Klasse {#socialoperation-class}
 
-Jeder `SocialOperation`Endpunkt erweitert die AbstractSocialOperation-Klasse und überschreibt die Methode `performOperation().`Diese Methode führt alle erforderlichen Aktionen aus, um den Vorgang abzuschließen und eine `SocialOperationResult`oder andere Ausgabe eines `OperationException`auszuführen. In diesem Fall wird anstelle des normalen JSON-Antwort- oder Erfolgs-HTTP-Statuscodes ein HTTP-Fehlerstatus mit einer Meldung zurückgegeben, sofern verfügbar.
+Jeder `SocialOperation`Endpunkt erweitert die AbstractSocialOperation-Klasse und überschreibt die Methode `performOperation().`Diese Methode führt alle erforderlichen Aktionen aus, um den Vorgang abzuschließen und ein `SocialOperationResult`zurückzugeben oder stattdessen ein `OperationException` zu werfen. In diesem Fall wird anstelle der normalen JSON-Antwort- oder HTTP-Statuscode ein HTTP-Fehlerstatus mit einer Meldung zurückgegeben, falls verfügbar.
 
-Die Erweiterung `AbstractSocialOperation`ermöglicht die Wiederverwendung von `SocialComponents`zum Senden von JSON-Antworten.
+Die Erweiterung von `AbstractSocialOperation`ermöglicht die Wiederverwendung von `SocialComponents`zum Senden von JSON-Antworten.
 
 #### SocialOperationResult-Klasse {#socialoperationresult-class}
 
-Die `SocialOperationResult`Klasse wird als Ergebnis der zurückgegeben `SocialOperation`und setzt sich aus einem `SocialComponent`HTTP-Statuscode und einer HTTP-Statusmeldung zusammen.
+Die `SocialOperationResult`Klasse wird als Ergebnis von `SocialOperation`zurückgegeben und besteht aus einer `SocialComponent`-, HTTP-Statuscode- und HTTP-Statusmeldung.
 
-Die Ressource `SocialComponent`stellt die Ressource dar, die von dem Vorgang betroffen war.
+`SocialComponent`stellt die Ressource dar, die von dem Vorgang betroffen war.
 
-Bei einem Create-Vorgang stellt der `SocialComponent`im `SocialOperationResult`Abschnitt enthaltene Wert die soeben erstellte Ressource und bei einem Update-Vorgang die Ressource dar, die durch den Vorgang geändert wurde. Für einen Löschvorgang `SocialComponent`wird kein Fehler zurückgegeben.
+Bei einem Create-Vorgang stellt das `SocialComponent`im `SocialOperationResult`enthaltene Element die soeben erstellte Ressource und bei einem Update-Vorgang die Ressource dar, die durch den Vorgang geändert wurde. Für einen Löschvorgang wird kein `SocialComponent`zurückgegeben.
 
 Die verwendeten Erfolgs-HTTP-Statuscodes sind
 
@@ -98,13 +98,13 @@ Die verwendeten Erfolgs-HTTP-Statuscodes sind
 
 #### OperationException-Klasse {#operationexception-class}
 
-Beim Ausführen eines Vorgangs `OperationExcepton`kann eine Fehlermeldung ausgegeben werden, wenn die Anforderung ungültig ist oder ein anderer Fehler auftritt, z. B. interne Fehler, ungültige Parameterwerte, falsche Berechtigungen usw. Eine `OperationException`besteht aus einem HTTP-Statuscode und einer Fehlermeldung, die an den Client als Antwort auf die `PostOperatoin`Nachricht zurückgegeben werden.
+Bei Ausführung eines Vorgangs kann ein `OperationExcepton`ausgegeben werden, wenn die Anforderung ungültig ist oder ein anderer Fehler auftritt, z. B. interne Fehler, ungültige Parameterwerte, falsche Berechtigungen usw. Ein `OperationException`besteht aus einem HTTP-Statuscode und einer Fehlermeldung, die als Antwort auf `PostOperatoin` an den Client zurückgegeben werden.
 
 #### OperationService-Klasse {#operationservice-class}
 
-Das Framework für soziale Komponenten empfiehlt, dass die Geschäftslogik, die für die Ausführung des Vorgangs verantwortlich ist, nicht innerhalb der `SocialOperation`Klasse implementiert, sondern stattdessen an einen OSGi-Dienst delegiert wird. Durch die Verwendung eines OSGi-Dienstes für Geschäftslogik kann ein `SocialComponent`von einem `SocialOperation`Endpunkt verwendeter Endpunkt in anderen Code integriert werden und eine andere Geschäftslogik angewendet werden.
+Das Framework für soziale Komponenten empfiehlt, dass die Geschäftslogik, die für die Ausführung des Vorgangs verantwortlich ist, nicht innerhalb der Klasse `SocialOperation`implementiert, sondern stattdessen an einen OSGi-Dienst delegiert wird. Durch die Verwendung eines OSGi-Dienstes für Geschäftslogik kann ein `SocialComponent`, der von einem `SocialOperation`Endpunkt ausgeführt wird, in anderen Code integriert werden und unterschiedliche Geschäftslogik angewendet werden.
 
-Alle `OperationService`Klassen erweitern `AbstractOperationService`und ermöglichen zusätzliche Erweiterungen, die an die auszuführende Operation angeschlossen werden können. Jeder Vorgang im Dienst wird durch eine `SocialOperation`Klasse dargestellt. Die `OperationExtensions`Klasse kann während der Ausführung des Vorgangs aufgerufen werden, indem die Methoden
+Alle `OperationService`Klassen erweitern `AbstractOperationService`, wodurch zusätzliche Erweiterungen möglich sind, die mit dem ausgeführten Vorgang verknüpft werden können. Jeder Vorgang im Dienst wird durch eine `SocialOperation`Klasse dargestellt. Die `OperationExtensions`Klasse kann während der Ausführung des Vorgangs durch Aufruf der Methoden aufgerufen werden
 
 * `performBeforeActions()`
 Ermöglicht die Vorab-/Vorverarbeitung und Überprüfung
@@ -117,13 +117,13 @@ Ermöglicht eine weitere Änderung der Ressourcen oder das Aufrufen benutzerdefi
 
 ## Beispielcode {#sample-code}
 
-Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) Repository verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
+Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud)-Repository verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
 
 ## Best Practices {#best-practices}
 
-Ansicht der [Coding-Richtlinien](code-guide.md) für verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
+Ansicht der [Coding Guidelines](code-guide.md) für verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
 
-Informationen zum Zugriff auf benutzergenerierte Inhalte finden Sie unter auch [Datenspeicherung Resource Provider (SRP) für UGC](srp.md) .
+Weitere Informationen zum Zugriff auf benutzergenerierte Datenspeicherung finden Sie unter [SRP ( Resource Provider) für UGC](srp.md).
 
 | **[⇐ Essentials](essentials.md)** | **[Clientseitige Anpassung ⇒](client-customize.md)** |
 |---|---|
