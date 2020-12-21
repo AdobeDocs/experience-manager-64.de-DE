@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ## Probleme beim Erstellen von Filtern in Internet Explorer 9 unter Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Wenn Sie Filter für vordefinierte Berichte erstellen, treten in **Internet Explorer 9** für **Microsoft Windows 7** gelegentlich die folgenden Probleme auf:
+Wenn Sie Filter für vordefinierte Berichte erstellen, treten gelegentlich folgende Probleme auf der Umgebung **Internet Explorer 9** für **Microsoft Windows 7** auf:
 
 * Die Dropdown-Liste im Wertefeld zeigt anstelle der Werte eindeutige Bezeichner an.
 * Das Kalendersteuerelement im Feld Wert zeigt japanische Zeichen an.
