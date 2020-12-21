@@ -22,7 +22,7 @@ ht-degree: 94%
 
 Der Systeminformationsdienst stellt REST-APIs zum Abrufen von Informationen bereit. Um den Systeminformationsdienst zu verwenden, aktivieren Sie den REST-Endpunkt in Administration Console. Führen Sie zum Aktivieren des REST-Endpunktes folgende Schritte durch:
 
-1. Melden Sie sich bei Administration Console an. The default URL of administration console is `https://[hostname]:[port]/adminui.`
+1. Melden Sie sich bei Administration Console an. Die Standard-URL von Administration Console lautet `https://[hostname]:[port]/adminui.`
 1. Wechseln Sie zu Dienste > Anwendungen und Dienste > Dienstverwaltung.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den Dienst **SystemInfo**.
 1. Wählen Sie auf der Registerkarte „Endpunkte“ REST und klicken Sie auf **Hinzufügen**.
