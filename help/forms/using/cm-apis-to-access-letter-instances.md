@@ -19,7 +19,7 @@ ht-degree: 59%
 
 # APIs zum Zugriff auf Briefinstanzen {#apis-to-access-letter-instances}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Durch Verwenden der Benutzeroberfläche „Korrespondenz erstellen“ von Correspondence Management können Sie Entwürfe von Briefinstanzen unter Fortschritt speichern und es gibt gesendete Briefinstanzen.
 
@@ -42,9 +42,9 @@ Correspondence Management stellt APIs bereit, um Briefinstanzen mithilfe von Let
 
 ### Verwendung von getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-Die folgende API findet die Briefinstanzen basierend auf dem Abfrageobjekt (Gesendet und Entwurf). Wenn das Objekt Abfrage null ist, werden alle Briefinstanzen zurückgegeben. This API returns list of [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objects, which can be used for extracting additional information of letter instance
+Die folgende API findet die Briefinstanzen basierend auf dem Abfrageobjekt (Gesendet und Entwurf). Wenn das Objekt Abfrage null ist, werden alle Briefinstanzen zurückgegeben. Diese API gibt die Liste von [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)-Objekten zurück, die zum Extrahieren zusätzlicher Informationen der Briefinstanz verwendet werden können
 
-**Syntax**: `List getAllLetterInstances(Query query) throws ICCException;`
+**Syntax**:  `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table> 
  <tbody> 
@@ -61,7 +61,7 @@ Die folgende API findet die Briefinstanzen basierend auf dem Abfrageobjekt (Gese
 
 #### Beispiel 1: Rufen Sie alle Briefinstanzen des Typs GESENDET ab {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Der folgende Code gibt die Liste der gesendeten Briefinstanzen zurück. To get only drafts, change the `LetterInstanceType.COMPLETE.name()` to `LetterInstanceType.DRAFT.name().`
+Der folgende Code gibt die Liste der gesendeten Briefinstanzen zurück. Um nur Entwürfe abzurufen, ändern Sie `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -122,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Prüfen Sie anhand des angegebenen Namens, ob eine Briefinstanz vorhanden ist
 
-**Syntax**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Syntax**:  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Parameter** | **Beschreibung** |
 |---|---|
@@ -135,14 +135,14 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Öffnen von Briefinstanzen {#opening-letter-instances}
+## Öffnen von Briefinstanzen  {#opening-letter-instances}
 
 Briefinstanz kann vom Typ „Gesendet“ oder „Entwurf“ sein Wenn die beiden Briefinstanztypen geöffnet werden, werden unterschiedliche Verhalten gezeigt:
 
 * Bei der Briefinstanz „Gesendet“ wird ein PDF-Dokument geöffnet, das die Briefinstanz darstellt. Briefinstanz „Gesendet“, die auf dem Server vorhanden ist, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um Anwendungsfälle wie das Erstellen einer PDF/A weiter anzupassen.
 * Bei der Briefinstanz &quot;Entwurf&quot;wird die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in den exakten vorherigen Status wie bei der Erstellung des Entwurfs neu geladen
 
-### Opening Draft Letter Instance  {#opening-draft-letter-instance-nbsp}
+### Öffnen der Briefinstanz &quot;Entwurf&quot;  {#opening-draft-letter-instance-nbsp}
 
 Die CCR-Benutzeroberfläche unterstützt den cmLetterInstanceId-Parameter, der zum Neuladen des Briefs verwendet werden kann.
 
