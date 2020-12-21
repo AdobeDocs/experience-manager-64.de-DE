@@ -37,13 +37,13 @@ Weitere Informationen finden Sie unter [Konfigurieren der Aktivierung](enablemen
 
 >[!NOTE]
 >
->Mit der Veröffentlichung von [AEM 6.3](deploy-communities.md#latestfeaturepack) und den entsprechenden Communities Feature Packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) und [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack) ist für die Aktivierung keine [MySQL-Datenbank](mysql.md)mehr erforderlich.
+>Mit der Veröffentlichung von [AEM 6.3](deploy-communities.md#latestfeaturepack) und den entsprechenden Communities Feature Packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) und [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack) ist für die Aktivierung keine [MySQL-Datenbank](mysql.md) mehr erforderlich.
 
 ## Terminologie {#terminology}
 
 ### Resource {#resource}
 
-Ressourcen sind unverzichtbar für eine [Aktivierungsgemeinschaft](overview.md#enablement-community). Sie sind die Materialien, die den Mitgliedern zugewiesen werden, damit sie ihre Fähigkeiten verbessern können.
+Ressourcen sind unverzichtbar für eine [Aktivierungs-Community](overview.md#enablement-community). Sie sind die Materialien, die den Mitgliedern zugewiesen werden, damit sie ihre Fähigkeiten verbessern können.
 
 Merkmale einer Ressource:
 
@@ -61,17 +61,17 @@ Ein Lernpfad ist ein logischer Satz an Ressourcen für die Aktivierung, die grup
 
 ### Mitgliedergruppe {#members-group}
 
-Wenn eine Community-Site erstellt wird, wird der Name, der der Site für die URL gegeben wird, bei der Erstellung der [Site-spezifischen Benutzergruppen](users.md) verwendet, die mit unterschiedlichen Berechtigungen für verschiedene Rollen konfiguriert wurden. Diesen automatisch erstellten Gruppen wird das Präfix vorangestellt `Community *<site-name>*`.
+Wenn eine Community-Site erstellt wird, wird der Name, der der Site für die URL gegeben wird, bei der Erstellung der [Site-spezifischen Benutzergruppen](users.md) verwendet, die mit verschiedenen Berechtigungen für verschiedene Rollen konfiguriert wurden. All diese automatisch erstellten Gruppen haben das Präfix `Community *<site-name>*`.
 
-Eine dieser Benutzergruppen ist die `Community *<site-name>* Members` Gruppe, die in der Umgebung zum Veröffentlichen registrierte Benutzer als Community-Mitglieder identifiziert. Ein Beispiel finden Sie im Tutorial [Erste Schritte mit AEM Communities für die Aktivierung](getting-started-enablement.md) .
+Eine dieser Benutzergruppen ist die Gruppe `Community *<site-name>* Members`, die registrierte Benutzer in der Umgebung zum Veröffentlichen als Community-Mitglieder identifiziert. Ein Beispiel finden Sie im Tutorial [Erste Schritte mit AEM Communities für Aktivierung](getting-started-enablement.md).
 
-Für [Interaktionsgemeinschaften](overview.md#egagementcommunity)ist es sinnvoll, Site-Besuchern zu erlauben, sich selbst zu registrieren oder die Anmeldung über soziale Netzwerke zu verwenden. Zu diesem Zeitpunkt werden sie automatisch der Mitgliedergruppe hinzugefügt.
+Für [Implementierungsgemeinschaften](overview.md#egagementcommunity) ist es sinnvoll, Site-Besuchern zu erlauben, sich selbst zu registrieren oder Social-Login zu verwenden. Zu diesem Zeitpunkt werden sie automatisch der Mitgliedergruppe hinzugefügt.
 
-Für [Aktivierungsgemeinschaften](overview.md#enablement-community)wird empfohlen, die Site privat zu gestalten. Danach muss ein Administrator Benutzer zur Mitgliedergruppe hinzufügen.
+Für [Aktivierungsgemeinschaften](overview.md#enablement-community) wird empfohlen, die Site privat zu gestalten. Danach muss ein Administrator Benutzer zur Mitgliedergruppe hinzufügen.
 
 ## Zugriff auf die Aktivierungsressourcen einer Community-Site {#accessing-a-community-site-s-enablement-resources}
 
-### Zu Communities-Ressourcen navigieren {#navigate-to-communities-resources}
+### Navigieren Sie zu Communities Ressourcen {#navigate-to-communities-resources}
 
 In der Umgebung &quot;author&quot;zur Konsole &quot;Resources&quot;
 
@@ -79,7 +79,7 @@ In der Umgebung &quot;author&quot;zur Konsole &quot;Resources&quot;
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### Community-Site auswählen {#select-a-community-site}
+### Community-Site {#select-a-community-site} auswählen
 
 Die Communities-Ressourcen-Konsole zeigt alle Community-Sites an.
 
@@ -97,20 +97,20 @@ Wählen Sie das Symbol zum Umschalten zwischen den Seitenbedienfeldern aus, um n
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 
-#### Selection Mode {#selection-mode}
+#### Auswahlmodus {#selection-mode}
 
 Um mehrere Aktivierungsressourcen auszuwählen, wählen Sie die erste aus, indem Sie den Mauszeiger über die Karte halten und das Häkchensymbol auswählen. Wenn Sie eine andere Karte ausgewählt haben, wird sie der Auswahlgruppe hinzugefügt. Wenn Sie ein zweites Mal auswählen, wird die Karte deaktiviert.
 
 ![chlimage_1-167](assets/chlimage_1-167.png)
 
-## Ressource erstellen {#create-a-resource}
+## Eine Ressource {#create-a-resource} erstellen
 
 ![chlimage_1-168](assets/chlimage_1-168.png)
 
 So fügen Sie der Community-Site eine neue Aktivierungsressource hinzu
 
-* Wählen Sie das `Create` Symbol
-* Wählen Sie im angezeigten Untermenü die Option `Resource`
+* Wählen Sie das Symbol `Create`
+* Wählen Sie im angezeigten Untermenü `Resource`
 
 Dadurch wird ein Schritt-für-Schritt-Prozess von
 
@@ -122,7 +122,7 @@ Dadurch wird ein Schritt-für-Schritt-Prozess von
 
 Ist die Ressource Teil eines Kurses, eines Lernpfads, sollten Mitglieder nur dem Lernpfad zugewiesen werden. Zuweisungen können hinzugefügt werden, nachdem die Aktivierungsressource erstellt wurde.
 
-### 1 Basic Info {#basic-info}
+### 1 Grundlegende Informationen {#basic-info}
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -134,51 +134,53 @@ Ist die Ressource Teil eines Kurses, eines Lernpfads, sollten Mitglieder nur dem
 
 * **[!UICONTROL Site-Name]**
 
-   (*schreibgeschützt*) Die Community-Site, der die Ressource hinzugefügt wird.
+   (*readonly*) Die Community-Site, der die Ressource hinzugefügt wird.
 
 * **[!UICONTROL Ressourcenname&amp;ast;]**
 
-   (*erforderlich*) Der Anzeigename der Ressource. Aus dem Anzeigenamen wird ein gültiger Knotenname erstellt.
+   (*Erforderlich*) Der Anzeigename für die Ressource. Aus dem Anzeigenamen wird ein gültiger Knotenname erstellt.
 
 * **[!UICONTROL Tags]**
 
-   (*optional*) Es können ein oder mehrere Tags ausgewählt werden, die die Aktivierungsressource mit einem oder mehreren Katalogen verbinden. See [Tagging Enablement Resources](tag-resources.md).
+   (*optional*) Es können ein oder mehrere Tags ausgewählt werden, die die Aktivierungsressource mit einem oder mehreren Katalogen verbinden. Siehe [Tagging-Aktivierungsressourcen](tag-resources.md).
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   Wenn diese Option deaktiviert ist, wird die Aktivierungsressource in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird die Aktivierungsressource in allen Katalogen angezeigt, es sei denn, die [vorgefilterten](catalog-developer-essentials.md#pre-filters) Filter oder die Mitglieder der Benutzeroberfläche werden vorgefiltert. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option deaktiviert ist, wird die Aktivierungsressource in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird die Aktivierungsressource in allen Katalogen angezeigt, es sei denn, [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Member-Filter aus der Benutzeroberfläche. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Beschreibung]**
 
-   (*optional*) Die für die Aktivierungsressource anzuzeigende Beschreibung.
+   (*optional*) Die Beschreibung, die für die Aktivierungsressource angezeigt werden soll.
 
 * **[!UICONTROL Kleines Asset]**
 
-   (*optional*) Aus AEM Assets ausgewählt. Ein Miniaturbild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. in einem Katalog.
+   (*optional*) Auswahl aus AEM Assets. Ein Miniaturbild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. in einem Katalog.
 
 * **[!UICONTROL Großes Asset]**
 
-   (*optional*) Aus AEM Assets ausgewählt. Ein großes Bild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. auf der Hauptseite einer Ressource.
+   (*optional*) Auswahl aus AEM Assets. Ein großes Bild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. auf der Hauptseite einer Ressource.
 
 * **[!UICONTROL Inhaltsfragment-Asset]**
 
-   (*optional*) Aus AEM Assets ausgewählt. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
+   (*optional*) Auswahl aus AEM Assets. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
-### 2 Add Content {#add-content}
+### 2 Hinzufügen Inhalt {#add-content}
 
 ![chlimage_1-170](assets/chlimage_1-170.png)
 
 Es wird zwar so angezeigt, als ob mehrere Aktivierungsressourcen ausgewählt wären, es ist jedoch nur eine zulässig.
 
-Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quelle zu beginnen.
+Wählen Sie `'+' icon` in der oberen rechten Ecke aus, um mit der Auswahl der Ressource durch Identifizieren der Quelle zu beginnen.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
-* **[!UICONTROL Beim Hochladen von lokalen Dateien]** aus dem lokalen Dateisystem wird der native Dateibrowser zum Auswählen und Hochladen einer Datei verwendet. Unterstützte Dateitypen sind SCORM.zip (HTML5 oder SWF), MP4-Video-, SWF-, PDF- und Bildtypen (JPG, PNG, GIF, BMP). Der Dateiname wird zum Namen des Assets, der der Asset-Bibliothek hinzugefügt wird.
+* **[!UICONTROL Von meinen lokalen]**
+Dateien hochladenBeim Hochladen vom lokalen Dateisystem wird der native Dateibrowser verwendet, um eine Datei auszuwählen und hochzuladen. Unterstützte Dateitypen sind SCORM.zip (HTML5 oder SWF), MP4-Video-, SWF-, PDF- und Bildtypen (JPG, PNG, GIF, BMP). Der Dateiname wird zum Namen des Assets, der der Asset-Bibliothek hinzugefügt wird.
 
-* **[!UICONTROL Asset-Bibliothek]** auswählen aus Asset-Bibliothek durchsuchen Die Auswahl ist auf diejenigen beschränkt, die auf der Community-Site sichtbar sind.
+* **[!UICONTROL Asset-]**
+Bibliothek durchsuchenAuswahl aus Asset-Bibliothek. Die Auswahl ist auf diejenigen beschränkt, die auf der Community-Site sichtbar sind.
 
 * **[!UICONTROL Externe URL hinzufügen]**
 
@@ -218,7 +220,7 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
       Der Name des Assets für die Aktivierungsressource.
 
-   * **[!UICONTROL Ort]**
+   * **[!UICONTROL Standort]**
 
       Die Lage eines physischen Standorts, z. B. eines Klassenzimmers.
 
@@ -228,13 +230,13 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
 * **[!UICONTROL Ressourcen-Titelbild]**
 
-   Das Deckblattbild ist ein Bild, das angezeigt wird, wenn die Aktivierungsressource zum ersten Mal angezeigt wird. Das Deckblattbild wird beispielsweise angezeigt, wenn eine Videoressource noch nicht abgespielt wird. Wenn kein benutzerdefiniertes Bild hochgeladen wird, wird ein Standardbild angezeigt. Bei Videoressourcen ist es möglicherweise möglich, eine Miniaturansicht [zu](enablement.md#ffmpeg)generieren, allerdings nur beim Hochladen und nicht, wenn das Video als URL referenziert wird. Für Standortressourcen kann das Bild verwendet werden, um zusätzliche Informationen bereitzustellen.
+   Das Deckblattbild ist ein Bild, das angezeigt wird, wenn die Aktivierungsressource zum ersten Mal angezeigt wird. Das Deckblattbild wird beispielsweise angezeigt, wenn eine Videoressource noch nicht abgespielt wird. Wenn kein benutzerdefiniertes Bild hochgeladen wird, wird ein Standardbild angezeigt. Bei Videoressourcen ist es möglicherweise möglich, eine Miniaturansicht von [zu erstellen, allerdings nur beim Hochladen und nicht, wenn das Video als URL referenziert wird. ](enablement.md#ffmpeg) Für Standortressourcen kann das Bild verwendet werden, um zusätzliche Informationen bereitzustellen.
 
    Die empfohlene Größe für das Deckblattbild ist 640 x 360 Pixel.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
-### 3 Settings {#settings}
+### 3 Einstellungen {#settings}
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -246,7 +248,7 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
 * **[!UICONTROL Einstellungen für Social Media]**
 
-   Diese Einstellungen steuern, ob Lernende Eingaben in Bezug auf die Aktivierungsressource bereitstellen können. Die [Moderationseinstellungen](sites-console.md#moderation) entsprechen denen der übergeordneten Community-Site.
+   Diese Einstellungen steuern, ob Lernende Eingaben in Bezug auf die Aktivierungsressource bereitstellen können. Die [Moderationseinstellungen](sites-console.md#moderation) sind die der übergeordneten Community-Site.
 
    * **[!UICONTROL Kommentieren zulassen]**
 
@@ -265,34 +267,35 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
    *(Optional)* Es kann ein Datum gewählt werden, bis zu dem die Zuweisung abgeschlossen werden soll.
 
 * **[!UICONTROL Ressourcen-Autor]**
-   *(Optional)* Der Autor der Aktivierungsressource. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)sind.
+   *(Optional)* Der Autor der Aktivierungsressource. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der Gruppe [Mitglieder](#members-group) sind.
 
 * **[!UICONTROL Resource Contact&amp;ast;]**
-   *(Erforderlich)* Eine Person, die das Mitglied bezüglich der Aktivierungsressource kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)sind.
+   *(Erforderlich)* Eine Person, die das Mitglied bezüglich der Aktivierungsressource kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der Gruppe [Mitglieder](#members-group) sind.
 
 * **[!UICONTROL Ressourcen-Experte]**
-   *(Optional)* Eine Person, die das Mitglied kontaktieren kann und die über Sachkenntnis in Bezug auf die Aktivierungsressource verfügt. Verwenden Sie das Pulldown-Menü, um Benutzer auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)sind.
+   *(Optional)* Eine Person, die mit der Aktivierungsressource in Verbindung steht. Verwenden Sie das Pulldown-Menü, um Benutzer auszuwählen, die Mitglieder der Gruppe [Mitglieder](#members-group) sind.
 
-### 4 Assignments {#assignments}
+### 4 Zuweisungen {#assignments}
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-* **[!UICONTROL HinzufügenZugewiesene]** Verwenden Sie das Pulldown-Menü, um [Mitglieder](#members-group) - die Benutzer und Benutzergruppen (fettgedruckt aufgelistet) - auszuwählen, die als Lernende eingeschrieben werden sollen. Wenn sich Mitglieder auf der Community-Site anmelden, werden die Aktivierungsressourcen (und Lernpfade), in die sie eingeschrieben sind, auf ihrer Seite &quot; [Aufgaben](functions.md#assignments-function) &quot;angezeigt.
+* **[!UICONTROL hinzufügen]**
+ZugewieseneVerwenden Sie das Pulldown-Menü, um  [Mitglieder](#members-group)  - die Benutzer und Benutzergruppen (fettgedruckt) - auszuwählen, die als Lernende eingeschrieben werden sollen. Wenn sich Mitglieder bei der Community-Site anmelden, werden die Aktivierungsressourcen (und Lernpfade), in die sie eingeschrieben sind, auf ihrer [Assignments](functions.md#assignments-function)-Seite angezeigt.
 
 * Wählen Sie **[!UICONTROL Erstellen]** aus.
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
-Bei erfolgreicher Erstellung der Ressourcen für die Aktivierung wird die Ressourcenkonsole mit der neu erstellten Ressource erneut ausgewählt. Von dieser Konsole aus können Sie die Ressource [verwalten](#managing-a-resource).
+Bei erfolgreicher Erstellung der Ressourcen für die Aktivierung wird die Ressourcenkonsole mit der neu erstellten Ressource erneut ausgewählt. In dieser Konsole ist es möglich, die Ressource [zu verwalten.](#managing-a-resource)
 
-## Create a Learning Path {#create-a-learning-path}
+## Lernpfad {#create-a-learning-path} erstellen
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
 So fügen Sie der Community-Site einen neuen Lernpfad hinzu
 
-* Wählen Sie das `Create` Symbol
-* Wählen Sie im angezeigten Untermenü die Option `Learning Path`
+* Wählen Sie das Symbol `Create`
+* Wählen Sie im angezeigten Untermenü `Learning Path`
 
 Dadurch wird ein Schritt-für-Schritt-Prozess von
 
@@ -312,41 +315,41 @@ Für die in einem Lernpfad enthaltenen Aktivierungsressourcen sollten die Zuweis
 
 * **[!UICONTROL Bild hinzufügen]**
 
-   (*optional*) Ein Bild, das auf der Karte für den Lernpfad auf der Seite &quot;Zuweisungen&quot;des Mitglieds sowie in der Konsole &quot;Ressourcen&quot;angezeigt wird. Das Bild wird aus dem lokalen Dateisystem des Servers ausgewählt. Wenn kein Bild bereitgestellt wird, wird eine Miniaturansicht für die hochgeladene Ressource generiert.
+   (*optional*) Ein Bild, das auf der Karte für den Lernpfad auf der Seite Zuweisungen des Mitglieds sowie in der Ressourcenkonsole angezeigt wird. Das Bild wird aus dem lokalen Dateisystem des Servers ausgewählt. Wenn kein Bild bereitgestellt wird, wird eine Miniaturansicht für die hochgeladene Ressource generiert.
 
    ***Hinweis***: Die empfohlene Bildgröße beträgt nicht mehr einfach 480 x 480 Pixel. Aufgrund des reaktionsfähigen Designs der Karten mit verschiedenen Browser-Abmessungen kann die Anzeigegröße von 220 x 165 Pixel bis 400 x 165 Pixel betragen.
 
 * **[!UICONTROL Site-Name]**
 
-   (*schreibgeschützt*) Die Community-Site, der die Ressource hinzugefügt wird.
+   (*readonly*) Die Community-Site, der die Ressource hinzugefügt wird.
 
 * **[!UICONTROL Lernpfad-Name]**
 
-   (*erforderlich*) Der Anzeigename für den Lernpfad. Aus dem Anzeigenamen wird ein gültiger Knotenname erstellt.
+   (*required*) Der Anzeigename für den Lernpfad. Aus dem Anzeigenamen wird ein gültiger Knotenname erstellt.
 
 * **[!UICONTROL Tags]**
 
-   (*optional*) Es können ein oder mehrere Tags ausgewählt werden, die den Lernpfad mit einem oder mehreren Katalogen verbinden. See [Tagging Enablement Resources](tag-resources.md).
+   (*optional*) Es können ein oder mehrere Tags ausgewählt werden, die den Lernpfad mit einem oder mehreren Katalogen verbinden. Siehe [Tagging-Aktivierungsressourcen](tag-resources.md).
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   Wenn diese Option deaktiviert ist, wird der Lernpfad in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird der Lernpfad in allen Katalogen angezeigt, es sei denn, die Filter der Benutzeroberfläche werden [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Mitglieder werden aus der Benutzeroberfläche entfernt. Durch die Anzeige des Lernpfads in einem Katalog erhalten Sie indirekt Zugriff auf alle darin enthaltenen Ressourcen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option deaktiviert ist, wird der Lernpfad in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird der Lernpfad in allen Katalogen angezeigt, es sei denn, [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Member-Filter aus der Benutzeroberfläche. Durch die Anzeige des Lernpfads in einem Katalog erhalten Sie indirekt Zugriff auf alle darin enthaltenen Ressourcen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Beschreibung]**
 
-   (*optional*) Die für die Aktivierungsressource anzuzeigende Beschreibung.
+   (*optional*) Die Beschreibung, die für die Aktivierungsressource angezeigt werden soll.
 
 * **[!UICONTROL Kleines Asset]**
 
-   (*optional*) Aus AEM Assets ausgewählt. Ein Miniaturbild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. in einem Katalog.
+   (*optional*) Auswahl aus AEM Assets. Ein Miniaturbild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. in einem Katalog.
 
 * **[!UICONTROL Großes Asset]**
 
-   (*optional*) Aus AEM Assets ausgewählt. Ein großes Bild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. auf der Hauptseite einer Ressource.
+   (*optional*) Auswahl aus AEM Assets. Ein großes Bild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. auf der Hauptseite einer Ressource.
 
 * **[!UICONTROL Inhaltsfragment-Asset]**
 
-   (*optional*) Aus AEM Assets ausgewählt. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
+   (*optional*) Auswahl aus AEM Assets. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
@@ -366,7 +369,7 @@ Für die in einem Lernpfad enthaltenen Aktivierungsressourcen sollten die Zuweis
 
 * **[!UICONTROL Reihenfolge im Lernpfad erzwingen]**
 
-   (*optional*) Wenn diese Option auf &quot;Ein&quot;gesetzt ist, ist die Reihenfolge, in der die Aktivierungsressourcen hinzugefügt werden, die Reihenfolge, in der die Lernenden den Lernpfad durchlaufen müssen. Die Standardeinstellung ist deaktiviert.
+   (*optional*) Wenn Sie auf &quot;Ein&quot;festgelegt haben, ist die Reihenfolge, in der die Aktivierungsressourcen hinzugefügt werden, die Reihenfolge, in der die Lernenden den Lernpfad durchlaufen müssen. Die Standardeinstellung ist deaktiviert.
 
 * **[!UICONTROL Ressourcen]**
 
@@ -384,11 +387,11 @@ Für die in einem Lernpfad enthaltenen Aktivierungsressourcen sollten die Zuweis
 
 * **[!UICONTROL Einschreibungen hinzufügen]**
 
-   Verwenden Sie das Pulldown-Menü, um aus den (fettgedruckten) Mitgliedern und Mitgliedsgruppen auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)der Community-Site sind. Es ist nicht erforderlich, Zuweisungen beim ersten Erstellen des Lernpfads hinzuzufügen. Die Eigenschaften des Lernpfads können geändert werden, um Lernende zu einem späteren Zeitpunkt hinzuzufügen.
+   Verwenden Sie das Pulldown-Menü, um aus den (fettgedruckten) Mitgliedern und Mitgliedsgruppen auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group) der Community-Site sind. Es ist nicht erforderlich, Zuweisungen beim ersten Erstellen des Lernpfads hinzuzufügen. Die Eigenschaften des Lernpfads können geändert werden, um Lernende zu einem späteren Zeitpunkt hinzuzufügen.
 
-* **[!UICONTROL Lernpfad Contact&amp;ast;]**
+* **[!UICONTROL Lernpfad Kontakt&amp;ast;]**
 
-   *(Erforderlich)* Eine Person, die das Mitglied bezüglich des Lernpfads kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)der Community-Site sind.
+   *(Erforderlich)* Eine Person, die das Mitglied bezüglich des Lernpfads kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group) der Community-Site sind.
 
 * Wählen Sie **[!UICONTROL Erstellen]**
 
@@ -411,7 +414,7 @@ Für die ausgewählte Aktivierungsressource können Sie:
 * Eigenschaften von Ansichten (Standard)
 * Eigenschaften bearbeiten
 * Löschen
-* Veröffentlichen  
+* Veröffentlichung
 * Veröffentlichung rückgängig machen
 
 Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfohlen, eine neue Ressource zu erstellen und dann die Anmeldung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version einzutragen.
@@ -428,7 +431,7 @@ Wenn die einzige Änderung darin besteht, Zuweisungen im Schritt Einstellungen z
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-Durch Auswahl des Papierkorbsymbols wird die Aktivierungsressource nach der Bestätigung `Delete`d angezeigt.
+Durch Auswahl des Papierkorbsymbols wird nach der Bestätigung `Delete`d als Aktivierungsressource festgelegt.
 
 ### Veröffentlichen   {#publish}
 
@@ -436,9 +439,9 @@ Durch Auswahl des Papierkorbsymbols wird die Aktivierungsressource nach der Best
 
 Bevor die Lernenden eine zugewiesene Aktivierungsressource sehen können, müssen sie veröffentlicht werden:
 
-* Wählen Sie das Symbol Welt aus, um `Publish`
+* Wählen Sie das Symbol Welt auf `Publish`
 * Wählen Sie im Popup-Dialogfeld **[!UICONTROL Veröffentlichen]** erneut
-* Schließen **[!UICONTROL auswählen]**
+* Wählen Sie **[!UICONTROL Schließen]**
 
 Obwohl im Dialogfeld angegeben wird, dass die Aktion in die Warteschlange gestellt ist, wird sie oft sofort veröffentlicht.
 
@@ -446,7 +449,7 @@ Obwohl im Dialogfeld angegeben wird, dass die Aktion in die Warteschlange gestel
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Wenn Sie vorübergehend verhindern möchten, dass die Aktivierungsressourcen für Mitglieder in der Umgebung &quot;Veröffentlichen&quot;zugänglich sind, ohne sie zu löschen, verwenden Sie das Symbol &quot;Welt&quot;für `Unpublish`die Ressource.
+Wenn Sie vorübergehend verhindern möchten, dass die Aktivierungsressourcen für Mitglieder in der Umgebung &quot;Veröffentlichen&quot;zugänglich sind, ohne sie zu löschen, verwenden Sie das Weltsymbol für `Unpublish`die Ressource.
 
 ### Bericht {#report}
 
@@ -454,17 +457,17 @@ Wenn Sie vorübergehend verhindern möchten, dass die Aktivierungsressourcen fü
 
 Das Berichtssymbol ermöglicht den Zugriff auf die Berichte, die generiert werden, wenn die Lernenden mit ihren zugewiesenen Aktivierungsressourcen in der Umgebung &quot;Veröffentlichen&quot;interagieren. Der Bericht hängt vom Typ der Ressource ab.
 
-Für alle Lernpfade ist es möglich, einen Bericht auf der Grundlage von Ressourcen oder Lernenden Ansicht ( `User Report`).
+Für alle Lernpfade ist es möglich, einen Bericht auf der Grundlage von Ressourcen oder Lernenden ( `User Report`) Ansicht.
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
-Dieser Bericht ist speziell für die aktuelle Aktivierungsressource oder den Lernpfad gedacht. Die Tiefe des bereitgestellten Berichte hängt davon ab, ob [Adobe Analytics](analytics.md) für die Community-Site lizenziert und aktiviert ist. Die [Berichte &quot;Zeitschiene](#timeline)&quot;, &quot; [Viewer-Interaktion](#viewer-engagement)&quot;und &quot; [Interaktion nach Gerät](#engagement-by-device) &quot;werden basierend auf dem [Abfrageintervall](analytics.md#report-importer)aus Adobe Analytics importiert.
+Dieser Bericht ist speziell für die aktuelle Aktivierungsressource oder den Lernpfad gedacht. Die angegebene Tiefe des Berichte hängt davon ab, ob [Adobe Analytics](analytics.md) für die Community-Site lizenziert und aktiviert ist. Die Berichte [Zeitschiene](#timeline), [Viewer-Interaktion](#viewer-engagement) und [Interaktion nach Gerät](#engagement-by-device) werden basierend auf dem [Abfrageintervall](analytics.md#report-importer) aus Adobe Analytics importiert.
 
-Für alle Aktivierungsressourcen gibt es Berichte zu [Status](#assignee-status) und [Bewertungen](#ratings) des Empfängers sowie eine [Berichtübersichtstabelle](#report-summary) , unabhängig davon, ob Adobe Analytics aktiviert ist oder nicht.
+Für alle Aktivierungsressourcen gibt es Berichte zu [Status des zugewiesenen Benutzers](#assignee-status) und zu [Bewertungen](#ratings) sowie zu einer [Tabelle &quot;Berichtszusammenfassung](#report-summary)&quot;.
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
-#### Timeline {#timeline}
+#### Zeitleiste {#timeline}
 
 Der Bericht zur Analytics-Timeline zeigt an, wann Ereignis im Zeitverlauf für diese Aktivierungsressource auftreten:
 
@@ -546,13 +549,13 @@ Bei einem Benutzerbericht für Lernpfade ist die Berichtszusammenfassung eine Ta
    * Anzahl der abgeschlossenen Ressourcen
    * ihr Status
 
-Sie können die Anzeige der Tabelle anpassen, indem Sie Spalten mithilfe der `Show / hide columns` Auswahl auswählen.
+Sie können die Anzeige der Tabelle anpassen, indem Sie Spalten mit der Auswahl `Show / hide columns` auswählen.
 
-#### Download Report as CSV {#download-report-as-csv}
+#### Bericht als CSV herunterladen {#download-report-as-csv}
 
 Die Tabelle &quot;Berichtzusammenfassung&quot;kann im CSV-Format mit einer Schaltfläche oben in der Konsole heruntergeladen werden.
 
-* für eine Aktivierungsressource: `Download Resource Report as CSV` button
-* für einen Lernpfad: `Download Learning Path Report as CSV` button
+* für eine Aktivierungsressource: `Download Resource Report as CSV`-Schaltfläche
+* für einen Lernpfad: `Download Learning Path Report as CSV`-Schaltfläche
 
 Die vollständige Berichtszusammenfassung wird unabhängig von den zur Anzeige ausgewählten Spalten heruntergeladen.
