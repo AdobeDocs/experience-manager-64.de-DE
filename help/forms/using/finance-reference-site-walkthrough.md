@@ -51,7 +51,7 @@ Die folgende Infografik zeigt eine Schritt-für-Schritt-Anleitung für einen Ant
 
 Schauen wir uns das Referenz-Site-Szenario im Detail an, um zu verstehen, wie die AEM-Formulare We.Finance dabei helfen, ihre Ziele zu erreichen.
 
-### Sarah erhält einen Newsletter von We.Finance und beantragt eine Kreditkarte {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
+### Sarah erhält einen Newsletter von We.Finance und beantragt eine Kreditkarte  {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
 
 Sarah Rose ist bereits eine We.Finance-Kundin. Sie erhält einen Newsletter von We.Finance über neue Kreditkartenangebote. Sie findet die Angebote spannend und beschließt, eine Kreditkarte zu beantragen. Sie klickt im Newsletter auf die Schaltfläche „Jetzt beantragen“, was sie zum Kreditkartenantrag auf dem Portal We.Finance leitet.
 
@@ -63,13 +63,13 @@ Der an Sarah gesendete Newsletter ist eine benutzerdefinierte Implementierung, d
 
 #### Sehen Sie selbst{#see-it-yourself} 
 
-Öffnen Sie die folgende URL in der Veröffentlichungsinstanz, um eine Newsletter-E-Mail auszulösen. Ensure that you replace `[emailID]` with a valid email account to receive the newsletter. Öffnen Sie den Newsletter und klicken Sie auf **[!UICONTROL Jetzt beantragen]**, um zum Kreditkartenantrag zu gelangen.
+Öffnen Sie die folgende URL in der Veröffentlichungsinstanz, um eine Newsletter-E-Mail auszulösen. Stellen Sie sicher, dass Sie `[emailID]` durch ein gültiges E-Mail-Konto ersetzen, um den Newsletter zu erhalten. Öffnen Sie den Newsletter und klicken Sie auf **[!UICONTROL Jetzt beantragen]**, um zum Kreditkartenantrag zu gelangen.
 
 `https://[publishServer]:[publsihPort]/content/campaigns/we-finance/start.html?app=cc&email=[emailID]&givenName=Sarah&familyName=Rose`
 
 ### Sarah findet das Angebot interessant und beschließt, einen Antrag zu stellen{#sarah-finds-the-offer-interesting-and-chooses-to-apply} 
 
-Sarah decides to apply for the credit card and taps **[!UICONTROL Apply Now]** button on the email. Sarah wird zum Kreditkartenantrag auf dem We.Finance-Portal geleitet.  Das Antragsformular besteht aus verschiedenen Abschnitten, wie beispielsweise dem Kartenlayout.
+Sarah beschließt, sich um die Kreditkarte zu bewerben, und tippt in der E-Mail auf **[!UICONTROL Jetzt beantragen]**. Sarah wird zum Kreditkartenantrag auf dem We.Finance-Portal geleitet.  Das Antragsformular besteht aus verschiedenen Abschnitten, wie beispielsweise dem Kartenlayout.
 
 Sarah wählt eine Kreditkarte aus den verfügbaren Optionen aus und klickt auf **[!UICONTROL Weiter]**.
 
@@ -79,7 +79,7 @@ Auf der Seite „Persönliche Daten“ erhält Sarah, da sie ihre Sozialversiche
 
 ![login-ssn](assets/login-ssn.png)
 
-Sarah ist bereits eine We.Finance-Kundin. Sie meldet sich mit ihren We.Finance-Kontoanmeldeinformationen an und ihre persönlichen Daten werden im Formular automatisch ausgefüllt. Sarah füllt das Antragsformular weiter aus, und dann erscheint eine Erinnerung für ein Meeting, an dem sie teilnehmen muss. She clicks **[!UICONTROL Save my progress]** on the application form. Es speichert alle Informationen, die Sarah bisher eingegeben hat, und es wird ein Dialogfeld angezeigt, in dem Sie bestätigen kann, ob sie eine E-Mail mit einem Link zu ihrem Entwurf anfordern möchte, den sie später ausfüllen möchte.
+Sarah ist bereits eine We.Finance-Kundin. Sie meldet sich mit ihren We.Finance-Kontoanmeldeinformationen an und ihre persönlichen Daten werden im Formular automatisch ausgefüllt. Sarah füllt das Antragsformular weiter aus, und dann erscheint eine Erinnerung für ein Meeting, an dem sie teilnehmen muss. Sie klickt im Antragsformular auf **[!UICONTROL Fortschritt speichern]**. Es speichert alle Informationen, die Sarah bisher eingegeben hat, und es wird ein Dialogfeld angezeigt, in dem Sie bestätigen kann, ob sie eine E-Mail mit einem Link zu ihrem Entwurf anfordern möchte, den sie später ausfüllen möchte.
 
 Sarah klickt auf **[!UICONTROL E-Mail senden]**. Sie erhält eine E-Mail mit einem Link, um ihren Kreditkartenantrag fortzusetzen.
 
@@ -88,7 +88,7 @@ Sarah klickt auf **[!UICONTROL E-Mail senden]**. Sie erhält eine E-Mail mit ein
 
 <!--Theses sections used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
-### Sarah greift auf den Kreditkartenantrag von ihrem Mobilgerät zu {#a-sarah-access}
+### Sarah greift auf den Kreditkartenantrag von ihrem Mobilgerät {#a-sarah-access} zu
 
 Wenn Sarah von ihrem Mobilgerät aus auf den Kreditkartenantrag zugreift, wird der interaktive Antrag in einer für mobile Geräte optimierten Ansicht geöffnet. In dieser Ansicht wird das Antragsformular als ein Abschnitt wiedergegeben. Es ermöglicht Sarah, Informationen progressiv zu sehen und zu liefern, während sie durch den Antrag navigiert.
 
@@ -96,17 +96,17 @@ Wenn Sarah von ihrem Mobilgerät aus auf den Kreditkartenantrag zugreift, wird d
 
 ### Funktionsweise {#a-how-it-works}
 
-Über die Schaltfläche **[!UICONTROL Jetzt beantragen]** wird Sarah zum Kreditkartenantrag geleitet. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+Über die Schaltfläche **[!UICONTROL Jetzt beantragen]** wird Sarah zum Kreditkartenantrag geleitet. Die Anwendung ist ein adaptives Formular, das Sie in den Authoring-Instanzen unter `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html` überprüfen können.
 
 Einige der wichtigsten Funktionen, die Sie im adaptiven Formular überprüfen können, sind:
 
 * Es basiert auf einem XSD-Schema.
-* Es wird mit dem We Finance-Design A für Stile und der We.Finance-Vorlage für Layout erstellt. Außerdem verwendet es im Formularkopfzeilenlayout für die mobile Navigation Layout ohne Bereichstitel. Es wird ein progressives Layout für Mobilgeräte angezeigt, wenn es von einem Mobilgerät aus geöffnet wird. Sie können die Vorlage unter `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` und das Design unter `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
-* Es enthält adaptive Formularregeln zum Aufrufen von Formulardatenmodelldiensten, um Benutzerdetails des angemeldeten Benutzers vorab zu befüllen. Es ruft auch Dienste auf, um Informationen anhand der im Formular angegebenen Sozialversicherungsnummer oder E-Mail-Adresse vorab zu befüllen. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Es wird mit dem We Finance-Design A für Stile und der We.Finance-Vorlage für Layout erstellt. Außerdem verwendet es im Formularkopfzeilenlayout für die mobile Navigation Layout ohne Bereichstitel. Es wird ein progressives Layout für Mobilgeräte angezeigt, wenn es von einem Mobilgerät aus geöffnet wird. Sie können die Vorlage unter `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` und das Design unter `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content` überprüfen.
+* Es enthält adaptive Formularregeln zum Aufrufen von Formulardatenmodelldiensten, um Benutzerdetails des angemeldeten Benutzers vorab zu befüllen. Es ruft auch Dienste auf, um Informationen anhand der im Formular angegebenen Sozialversicherungsnummer oder E-Mail-Adresse vorab zu befüllen. Sie können die Formulardatenmodelle und ihre Dienste unter `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm` überprüfen.
 * Es verwendet verschiedene adaptive Formularkomponenten, um Eingaben zu erfassen und sich an Benutzerreaktionen anzupassen. Es verwendet auch Komponenten wie E-Mail, die HTML5-Eingabetypen unterstützen.
 * Es verwendet die Signaturschrittkomponente, um das ausgefüllte Formular anzuzeigen, und ermöglicht die elektronische Unterschrift auf dem Formular.
 * Die Schaltfläche „Fortschritt speichern“ generiert eine eindeutige ID für den Benutzer und speichert die teilweise ausgefüllte Anwendung als Entwurf in einem Knoten im AEM-Repository. Außerdem wird ein Dialogfeld mit einer Bitte um Bestätigung angezeigt, damit eine E-Mail mit einer Verknüpfung zu dem Knoten gesendet werden kann, der den Antragsentwurf enthält. Über die im Bestätigungsdialogfeld angezeigte Schaltfläche E-Mail senden wird die Versendung einer E-Mail mit einer Verknüpfung zu dem Knoten ausgelöst, der den Entwurf enthält.
-* Es verwendet die Aktion „AEM-Workflow aufrufen“, um den Kreditkarten-Genehmigungs-Workflow auszulösen. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* Es verwendet die Aktion „AEM-Workflow aufrufen“, um den Kreditkarten-Genehmigungs-Workflow auszulösen. Sie können den in diesem Formular verwendeten Arbeitsablauf unter `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html` überprüfen.
 
 Es wird empfohlen, das Formular zu lesen, um das Schema, die Komponenten, die Regeln, die Formulardatenmodelle, den Formularworkflow und die Aktion zum Erstellen des Formulars zu verstehen.
 
@@ -120,7 +120,7 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 * [Verwenden von Adobe Sign in adaptiven Formularen](/help/forms/using/working-with-adobe-sign.md) 
 * [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md)
 
-### Sehen Sie selbst {#a-see-it-yourself}
+### Sehen Sie selbst  {#a-see-it-yourself}
 
 Wenn Sie als Sarah Rose angemeldet sind, klicken Sie im Kreditkartenantrag auf **[!UICONTROL Jetzt beantragen]**. Vervollständigen Sie Angaben, sehen Sie sich verschiedene adaptive Formularkomponenten an, und klicken Sie auf **[!UICONTROL Fortschritt speichern]**, um eine weitere E-Mail mit der Schaltfläche **[!UICONTROL Fortsetzen]** zu enthalten, die eine Verknüpfung mit dem Antragsentwurf enthält. Stellen Sie sicher, dass Sie Ihre E-Mail-ID des Antragsformulars angeben, um E-Mails zu empfangen.
 
@@ -146,11 +146,11 @@ Alternativ kann sie auf der Homepage von **[!UICONTROL Meine Formulare]** unter 
 
 Mithilfe der in der E-Mail angezeigten Schaltfläche „Fortsetzen“ gelangt Sarah zu dem Knoten, der ihren Antragsentwurf enthält.
 
-#### Sehen Sie selbst.  {#see-it-yourself-1}
+#### Sehen Sie selbst.   {#see-it-yourself-1}
 
 Sie müssen eine E-Mail mit einem Link zum Antragsentwurf in Ihrer E-Mail-ID erhalten haben, die Sie beim Ausfüllen des Antragsformulars angegeben haben. Füllen Sie die übrigen Abschnitte des Antrags aus und senden Sie ihn. 
 
-### We.Finance erhält und genehmigt den Antrag {#approving-the-application}
+### We.Finance erhält und genehmigt den Antrag  {#approving-the-application}
 
 We.Finance erhält den Kreditkartenantrag von Sarah. Eine Aufgabe wird Gloria Rios zugewiesen. Sie überprüft die Aufgabe in ihrem AEM-Posteingang und genehmigt sie.
 
@@ -160,7 +160,7 @@ We.Finance erhält den Kreditkartenantrag von Sarah. Eine Aufgabe wird Gloria Ri
 
 Wenn Sarah den Kreditkartenantrag ausfüllt und abschickt, wird ein Formularworkflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt.
 
-AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentdiensten, zur Integration mit Adobe Sign-Signatur-Workflows usw. verwendet werden. For more information, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentdiensten, zur Integration mit Adobe Sign-Signatur-Workflows usw. verwendet werden. Weitere Informationen finden Sie unter [Forms-zentrierter Arbeitsablauf unter OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Die folgende Abbildung zeigt den AEM-Workflow, der den Kreditkartenantrag verarbeitet und eine PDF-Ausgabe des Antrags generiert. 
 
@@ -168,7 +168,7 @@ Die folgende Abbildung zeigt den AEM-Workflow, der den Kreditkartenantrag verarb
 
 #### Sehen Sie selbst{#see-it-yourself-2} 
 
-Sie können AEM Posteingang für die Website we.finance unter https://&lt;*Hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html aufrufen. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als repräsentativ]** `grios/password` anmelden, melden Sie sich mit dem Benutzernamen/Kennwort für Gloria Rios beim AEM an und genehmigen Sie den Kreditkartenantrag. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Sie können AEM Posteingang für die Website we.finance unter https://&lt;*Hostname*:&lt;*PublishPort*>/content/we-finance/global/en.html aufrufen. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als Vertreter]** anmelden, melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios beim AEM an und genehmigen Sie den Kreditkartenantrag. Weitere Informationen zur Verwendung AEM Inbox für formularorientierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -190,17 +190,17 @@ Das Begrüßungspaket enthält ein weiteres Antragsformular, das Sarah ausfülle
 
 #### Funktionsweise {#how-it-works-3}
 
-The welcome kit is an interactive communication included in the `cq-we-finance-content-pkg.zip` package. Die interaktiven Karten in der Desktopversion, welche die Vorteile der Kreditkarte im Begrüßungs-Kit zeigt, haben ein benutzerdefiniertes Layout, das mithilfe des Standardkartenlayouts eines Dokumentfragments erstellt wird. 
+Das Begrüßungs-Kit ist eine interaktive Kommunikation, die im `cq-we-finance-content-pkg.zip`-Paket enthalten ist. Die interaktiven Karten in der Desktopversion, welche die Vorteile der Kreditkarte im Begrüßungs-Kit zeigt, haben ein benutzerdefiniertes Layout, das mithilfe des Standardkartenlayouts eines Dokumentfragments erstellt wird. 
 
 Der Zusatzkartenantrag ist ein eingebettetes adaptives Formular in der interaktiven Kommunikation des Begrüßungs-Kits.
 
 #### Sehen Sie selbst{#see-it-yourself-3} 
 
-Click the **[!UICONTROL Resume]** button in the email that you received in the previous step. Dadurch wird der Antragsentwurf geöffnet. Tragen Sie alle Angaben ein und senden Sie den Antrag. Dann erhalten Sie ein Begrüßungs-Kit. Prüfen Sie das Begrüßungs-Kit. 
+Klicken Sie in der E-Mail, die Sie im vorherigen Schritt erhalten haben, auf die Schaltfläche **[!UICONTROL Fortsetzen]**. Dadurch wird der Antragsentwurf geöffnet. Tragen Sie alle Angaben ein und senden Sie den Antrag. Dann erhalten Sie ein Begrüßungs-Kit. Prüfen Sie das Begrüßungs-Kit. 
 
 Sie können das Willkommenspaket auch unter der folgenden URL anzeigen:
 
-https://&lt;*Host*>:&lt;*Port*>/content/aemforms-refsite/doclink.html?Dokument=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&amp;customerId=197&amp;Kanal=web
+https://&lt;*host*:&lt;*port*>/content/aemforms-refsite/doclink.html?Dokument=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&amp;customerId=197&amp;Kanal=web
 
 Sie können auf sie in den Autor- und Veröffentlichungsinstanzen zugreifen.
 
@@ -236,11 +236,11 @@ Der Kreditkartenauszug ist eine interaktive Kommunikation. Die detaillierte Ausg
 
 Sie können den interaktiven Kreditkartenauszug unter folgender URL einsehen: 
 
-https://&lt;*Hostname*>:&lt;*Anschluss*>/content/aemforms-refsite/doclink.html?Dokument=/content/forms/af/we-finance/credit-card/credit-card-statement&amp;customerId=197&amp;Kanal=web
+https://&lt;*Hostname*:&lt;*Port*>/content/aemforms-refsite/doclink.html?Dokument=/content/forms/af/we-finance/credit-card/credit-statement&amp;customerId=197&amp;Kanal=web
 
 Sie können auf sie in den Autor- und Veröffentlichungsinstanzen zugreifen.
 
-Der Kreditkartenauszug zeigt Promo-Angebote gegen Ende des Auszugs an. Sie können Adobe Target in die interaktive AEM Forms-Kommunikation integrieren, um zielgerichtete Angebot für Werbezwecke basierend auf bestimmten Kundensegmenten bereitzustellen. Informationen zum Konfigurieren Ihrer interaktiven Kommunikation für die Verwendung von Adobe Target für benutzerdefinierte und zielgerichtete Angebot finden Sie unter [Erstellen zielgerichteter Erlebnisse](/help/forms/using/experience-targeting-forms.md).
+Der Kreditkartenauszug zeigt Promo-Angebote gegen Ende des Auszugs an. Sie können Adobe Target in die interaktive AEM Forms-Kommunikation integrieren, um zielgerichtete Angebot für Werbezwecke basierend auf bestimmten Kundensegmenten bereitzustellen. Informationen zum Konfigurieren Ihrer interaktiven Kommunikation für die Verwendung von Adobe Target für benutzerdefinierte und zielgerichtete Angebot finden Sie unter [Erstellen von zielgerichteten Erlebnissen](/help/forms/using/experience-targeting-forms.md).
 
 ![](do-not-localize/offers.png)
 
@@ -260,12 +260,12 @@ Die Leistungsmetriken für das Kreditkartenantragsformular werden mit Adobe Anal
 
 Damit Sie den Analysebericht anzeigen und prüfen können, stellen wir Seed-Daten für die Kreditkarteanwendung in der Referenz-Website bereit. Bevor Sie Seed-Daten verwenden, lesen Sie[ Konfigurieren von Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Führen Sie folgende Schritte im Autorenmodus aus, um den Bericht mit den Seed-Daten anzuzeigen: 
 
-1. Go to **[!UICONTROL Forms &amp; Documents]** UI at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Wechseln Sie zu **[!UICONTROL Forms und Dokumente]** UI unter https://&lt;*Hostname*:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klicken Sie auf den Ordner **[!UICONTROL We.Finance]**, um ihn zu öffnen.
-1. Wählen Sie das adaptive Formular **[!UICONTROL Kreditkartenantrag]** und klicken Sie dann in der Symbolleiste auf Analyse **[!UICONTROL aktivieren]**.
+1. Wählen Sie das adaptive Formular **[!UICONTROL Kreditkartenantrag]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Analyse aktivieren]**.
 
-1. Wählen Sie das adaptive Formular erneut aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Analytics-Bericht]** , um den Bericht zu erstellen. Zunächst wird ein leerer Bericht angezeigt.
+1. Wählen Sie das adaptive Formular erneut aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Analytics-Bericht]**, um den Bericht zu erstellen. Zunächst wird ein leerer Bericht angezeigt.
 
 So erstellen Sie einen Analysebericht mit Seed-Daten:
 
@@ -273,20 +273,20 @@ So erstellen Sie einen Analysebericht mit Seed-Daten:
 1. Die Testdaten werden in der linken Seitenstruktur ausgewählt.
 1. Doppelklicken Sie auf die ausgewählte Datei, um ihren Inhalt im rechten Seitenbereich zu öffnen.
 1. Kopieren Sie den gesamten Inhalt der Seed-Datendatei.
-1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
-1. In the **[!UICONTROL analyticsdata]** field under **[!UICONTROL Properties]**, paste the copied content of the seed data file.
+1. Navigieren Sie in CRXDE zu: `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
+1. Fügen Sie im Feld **[!UICONTROL analyticsData]** unter **[!UICONTROL Properties]** den kopierten Inhalt der Seed-Datendatei ein.
 
-1. Wählen Sie das adaptive Formular **Kreditkartenantrag** und klicken Sie in der Symbolleiste auf **[!UICONTROL Analysebericht]** , um den Bericht mit Seed-Daten zu erstellen.
+1. Wählen Sie **Antrag auf Kreditkarte** adaptives Formular und klicken Sie in der Symbolleiste auf **[!UICONTROL Analytics-Bericht]**, um den Bericht mit Seed-Daten zu generieren.
 
 **A/B-Tests der Kreditkarteanwendung** 
 
 Zusätzlich zur Analyse und kontinuierlichen Verbesserung der Kreditkartenanwendung nutzt We.Finance die Integration von AEM Forms mit Target, um A/B-Tests zu erstellen. Dadurch ist es möglich, auf verschiedene Erlebnisse im Zusammenhang mit der Bearbeitung des Kreditkartenantragsformulars zu reagieren und Erlebnisse zu bestimmen, die zu einer besseren Konversionsrate in Bezug auf das Ausfüllen und Übermitten von Formularen führen. 
 
-To configure Target in AEM Forms server, see [Set up and integrate Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+Informationen zum Konfigurieren der Zielgruppe auf dem AEM Forms-Server finden Sie unter [Einrichten und Integrieren der Zielgruppe in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 Führen Sie folgende Schritte aus, um die Erstellung eines A/B-Tests für das We.Finance-Kreditkartenantragsformular zu erleben: 
 
-1. Go to **[!UICONTROL Forms &amp; Documents]** at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Wechseln Sie zu **[!UICONTROL Forms &amp; Dokumente]** unter https://&lt;*Hostname*:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klicken Sie auf den Ordner **[!UICONTROL We.Finance]**, um ihn zu öffnen.
 1. Wählen Sie das adaptive Formular **[!UICONTROL Kreditkartenantrag]**.
@@ -297,7 +297,7 @@ Führen Sie folgende Schritte aus, um die Erstellung eines A/B-Tests für das We
 1. Geben Sie in den Feldern für **[!UICONTROL Erlebnisverteilung]** für die Erlebnisvarianten A und B deren Verteilung auf die Gesamtzielgruppe in Prozent an. Wenn Sie beispielsweise „40“ und „60“ für Erlebnis A bzw. B angeben, wird Erlebnis A für 40 % der Zielgruppe und Erlebnis B für die verbleibenden 60 % angezeigt.
 1. Klicken Sie auf **Konfigurieren**. Es wird ein Dialogfeld angezeigt, in dem die Erstellung des A/B-Tests bestätigt wird.
 1. Klicken Sie auf **Fertig**.
-1. Select the **Application for Credit Card** form and click **Edit**. Es bietet die Möglichkeit, eines der Erlebnisse zu öffnen. Klicken Sie auf **Erlebnis B**. Das Formular wird im Bearbeitungsmodus geöffnet. 
+1. Wählen Sie das Formular **Kreditkartenantrag** und klicken Sie auf **Bearbeiten**. Es bietet die Möglichkeit, eines der Erlebnisse zu öffnen. Klicken Sie auf **Erlebnis B**. Das Formular wird im Bearbeitungsmodus geöffnet. 
 
 1. Ändern Sie beliebig das Formular, um ein anderes Erlebnis als das Standarderlebnis A zu erstellen. 
 1. Wechseln Sie zur Benutzeroberfläche für Formulare und Dokumente, wählen Sie das Formular aus, klicken Sie auf **Mehr** und wählen Sie **A/B-Tests starten**.
@@ -325,7 +325,7 @@ Um den A/B-Test zu beenden, klicken Sie im Berichts-Dashboard auf die Schaltflä
 
 Wenn Sie Erlebnis A als Gewinner auswählen, wird der A/B-Test beendet, und in Zukunft wird nur Erlebnis A für sämtliche Zielgruppen (einschließlich Chrome-Benutzer) angezeigt.
 
-## Haushypothekantrag - Anleitung {#home-mortgage-application-walkthrough}
+## Haushypothekantrag - Anleitung  {#home-mortgage-application-walkthrough}
 
 Das Szenario der Hypothek von We.Finance umfasst folgende Personen:
 
@@ -339,27 +339,29 @@ Die folgende Infografik zeigt eine Schritt-für-Schritt-Anleitung für einen Ant
 
 Schauen wir uns nun an, wie die Schritte des Referenz-Website-Szenarios im Einzelnen aussehen, um Aufschluss zu erhalten, wie AEM Forms dem Unternehmen We.Finance hilft, das Ziel zu erreichen. 
 
-### Sarah besucht die Website von We.Finance und beantragt eine Hypothek {#sarah-visits-we-finance-website-and-applies-for-home-mortgage}
+### Sarah besucht die Website von We.Finance und beantragt eine Hypothek  {#sarah-visits-we-finance-website-and-applies-for-home-mortgage}
 
 Sarah Rose plant, ein Haus zu kaufen und nach einem Hypotheksplan zu suchen. Sie ist eine We.Finance-Kundin und besucht daher das We.Finance-Portal, um Hypothekenangebote zu erkunden. Sie geht in den Bereich „Kredite“ und findet einen Hypothekenrechner auf dem Portal. Sie füllt die Details aus und klickt auf „Meine Hypothek berechnen“, die einen Hypothekenplan zurückgibt.
 
-![Darlehen1](assets/loans1.png) ![Darlehen2](assets/loans2.png)**Abbildung:** *Hypothekenrechner*
+![Kredite1](assets/loans1.png) ![Kredite2](assets/loans2.png)
+**Abbildung:** *Hypothekenrechner*
 
-![darlehen3](assets/loans3.png)**Abbildung:** *Hypothekenrechner*
+![Darlehen3](assets/loans3.png)
+**Abbildung: Ergebnis des** *Hypothekenrechners*
 
 #### Funktionsweise {#how-it-works-6}
 
-Der Hypothekenrechner auf der Seite „Darlehen“ ist ein eingebettetes adaptives Formular in der AEM-Seite. You can review the Loans page in edit mode at `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
+Der Hypothekenrechner auf der Seite „Darlehen“ ist ein eingebettetes adaptives Formular in der AEM-Seite. Sie können die Darlehensseite im Bearbeitungsmodus unter `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html` überprüfen.
 
-Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html`.
+Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html` überprüfen.
 
 #### Sehen Sie selbst{#see-it-yourself-5} 
 
-Go to We.Finance portal at `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` and click **[!UICONTROL Loans]**. Geben Sie Details in den Hypothekenrechner ein und sehen Sie sich die Ergebnisse an.
+Wechseln Sie zum Web.Finance-Portal unter `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` und klicken Sie auf **[!UICONTROL Kredite]**. Geben Sie Details in den Hypothekenrechner ein und sehen Sie sich die Ergebnisse an.
 
-### Sarah findet das Angebot interessant und beschließt, einen Antrag zu stellen  {#sarah-finds-the-offer-interesting-and-chooses-to-apply-1}
+### Sarah findet das Angebot interessant und beschließt, einen Antrag zu stellen   {#sarah-finds-the-offer-interesting-and-chooses-to-apply-1}
 
-Sarah chooses to apply for home mortgage and clicks **[!UICONTROL Apply Now]** on home mortgage calculator results. Es wird der Antrag für Hypotheken geöffnet.
+Sarah beschließt, sich um eine Hypothek zu bewerben, und klickt auf **[!UICONTROL Jetzt anwenden]** auf die Ergebnisse des Hypothekenrechners. Es wird der Antrag für Hypotheken geöffnet.
 
 Wenn Sarah von ihrem Mobilgerät aus auf den Antrag für die Hypothek zugreift, wird das Antragsformular in einer Ansicht geöffnet, die für die Anzeige auf einem mobilen Gerät optimiert ist. In dieser Ansicht rendert das Antragsformular jeweils einen Abschnitt. Es ermöglicht Sarah, Informationen progressiv zu sehen und zu liefern, während sie durch das Antragsformular navigiert.
 
@@ -379,7 +381,7 @@ Der eingereichte Antrag geht an We.Finance zur Genehmigung.
 
 #### Funktionsweise {#how-it-works-7}
 
-Die Schaltfläche **Jetzt beantragen** leitet Sarah zum Hypothekenantrag weiter. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/hm-app.html`.
+Die Schaltfläche **Jetzt beantragen** leitet Sarah zum Hypothekenantrag weiter. Die Anwendung ist ein adaptives Formular, das Sie in den Authoring-Instanzen unter `https://[host]:[Port]/editor.html/content/forms/af/we-finance/hm-app.html` überprüfen können.
 
 Einige der wichtigsten Funktionen, die Sie im adaptiven Formular überprüfen können, sind:
 
@@ -389,10 +391,10 @@ Einige der wichtigsten Funktionen, die Sie im adaptiven Formular überprüfen k�
    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* Die erste Registerkarte „Erste Schritte“ im Antrag ist ein dynamischer Hypothekenrechner, der Optionen basierend auf der Benutzerauswahl anzeigt. Zum Beispiel sind die Felder und Werte für Kauf- und Refinanzierungsoptionen unterschiedlich. Diese Funktionalität wird mithilfe von Regeln zum Ein- bzw. Ausblenden erreicht. Wenn Sie auf „Weiter“ klicken und die Registerkarte „Pläne“ initialisiert wird, ruft sie außerdem einen Web-Dienst auf, der in einem Formulardatenmodell zum Abrufen und Anzeigen von Hypothekenplänen konfiguriert ist. You can review the Form Data Models and configured services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Die erste Registerkarte „Erste Schritte“ im Antrag ist ein dynamischer Hypothekenrechner, der Optionen basierend auf der Benutzerauswahl anzeigt. Zum Beispiel sind die Felder und Werte für Kauf- und Refinanzierungsoptionen unterschiedlich. Diese Funktionalität wird mithilfe von Regeln zum Ein- bzw. Ausblenden erreicht. Wenn Sie auf „Weiter“ klicken und die Registerkarte „Pläne“ initialisiert wird, ruft sie außerdem einen Web-Dienst auf, der in einem Formulardatenmodell zum Abrufen und Anzeigen von Hypothekenplänen konfiguriert ist. Sie können die Formulardatenmodelle und die konfigurierten Dienste unter `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm` überprüfen.
 * Es verwendet verschiedene adaptive Formularkomponenten, um Eingaben zu erfassen und sich an Benutzerreaktionen anzupassen. Es verwendet auch Komponenten wie E-Mail, die HTML5-Eingabetypen unterstützen.
 * Es verwendet die Signaturschrittkomponente, um das ausgefüllte Formular anzuzeigen, und ermöglicht die elektronische Unterschrift auf dem Formular.
-* Es verwendet die Aktion „AEM Workflow senden“, um den We.Finance AEM-Workflow zur Hypothek auszulösen. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* Es verwendet die Aktion „AEM Workflow senden“, um den We.Finance AEM-Workflow zur Hypothek auszulösen. Sie können den in diesem Formular verwendeten Arbeitsablauf unter `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html` überprüfen.
 
 Es wird empfohlen, das Formular zu lesen, um das Schema, die Komponenten, die Regeln, die Formulardatenmodelle, den Formularworkflow und die Aktion zum Erstellen des Formulars zu verstehen.
 
@@ -406,13 +408,13 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 * [Verwenden von Adobe Sign in adaptiven Formularen](/help/forms/using/working-with-adobe-sign.md) 
 * [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md)
 
-#### Sehen Sie selbst {#see-it-yourself-6}
+#### Sehen Sie selbst  {#see-it-yourself-6}
 
-Go to `https://[server]:[port]/content/we-finance/global/en/all-forms.html` and click the **Apply now** button on Home Mortgage Application. Füllen Sie die Details auf der Registerkarte „Erste Schritte“ aus, probieren Sie verschiedene Optionen aus und senden Sie den Antrag.
+Gehen Sie zu `https://[server]:[port]/content/we-finance/global/en/all-forms.html` und klicken Sie auf die Schaltfläche **Jetzt anwenden** im Hypothekenantrag. Füllen Sie die Details auf der Registerkarte „Erste Schritte“ aus, probieren Sie verschiedene Optionen aus und senden Sie den Antrag.
 
 Stellen Sie sicher, dass Sie im Antrag eine gültige E-Mail-ID angeben, um eine Bestätigungsnachricht in Ihrem Posteingang zu empfangen.
 
-### We.Finance erhält den Antrag {#approving_the_application-1}
+### We.Finance erhält den Antrag  {#approving_the_application-1}
 
 We.Finance empfängt den von Sarah gesendeten Hypothekenantrag. Die Aufgabe, den Antrag zu genehmigen oder abzulehnen, wird Gloria Rios zugewiesen. Sie überprüft den Antrag und stellt fest, dass Sarahs Regierungs-ID fehlt.
 
@@ -432,7 +434,7 @@ Die Aufgabe wird Gloria wieder zugewiesen. Sie überprüft die beigefügte ID un
 
 Wenn Sarah den Hypothekenantrag ausfüllt und einreicht, wird ein Formular-Workflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt. Während Gloria den Antrag prüft und weitere Informationen anfordert, wird die Aufgabe John Doe zugewiesen. Wenn John Doe die ID anfügt und den Antrag erneut absendet, wird sie Gloria zugewiesen. Dies ist in dem mit dem Hypothekenantrag verknüpften AEM-Workflow definiert.
 
-AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentdiensten, zur Integration mit Adobe Sign-Signatur-Workflows usw. verwendet werden. For more information, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentdiensten, zur Integration mit Adobe Sign-Signatur-Workflows usw. verwendet werden. Weitere Informationen finden Sie unter [Forms-zentrierter Arbeitsablauf unter OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Das folgende Bild zeigt den AEM-Workflow, der mit dem Hypothekenantrag verknüpft ist.
 
@@ -440,9 +442,9 @@ Das folgende Bild zeigt den AEM-Workflow, der mit dem Hypothekenantrag verknüpf
 
 #### Sehen Sie selbst{#see-it-yourself-7} 
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***AuthorPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios and `jdoe/jdoe` for John Doe, and explore the home mortgage application workflow.
+Sie können auf den AEM-Posteingang unter https://&lt;***hostname***:&lt;***AuthorPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios und `jdoe/jdoe` für John Doe beim AEM-Posteingang an und prüfen Sie den Arbeitsablauf für den Hypothekenantrag.
 
-For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Weitere Informationen zur Verwendung AEM Inbox für formularorientierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ### Sarah erhält das Begrüßungs-Kit {#sarah-receives-the-welcome-kit}
 
@@ -454,11 +456,11 @@ Das Begrüßungs-Kit ist für Sarah personalisiert und zeigt Informationen, die 
 
 #### Funktionsweise {#how-it-works-9}
 
-The welcome kit is an interactive communication included in the `cq-we-finance-content-pkg.zip` package. Die Werbeangebote im Begrüßungs-Kit werden vom Adobe Target-Server bereitgestellt. Die angepassten Angebote sind auf bestimmte Kundensegmente ausgerichtet. Das Begrüßungs-Kit ruft von einem vorkonfigurierten Adobe Target-Server Angebote für ein Zielgruppensegment mit weiblichen Kunden ab.
+Das Begrüßungs-Kit ist eine interaktive Kommunikation, die im `cq-we-finance-content-pkg.zip`-Paket enthalten ist. Die Werbeangebote im Begrüßungs-Kit werden vom Adobe Target-Server bereitgestellt. Die angepassten Angebote sind auf bestimmte Kundensegmente ausgerichtet. Das Begrüßungs-Kit ruft von einem vorkonfigurierten Adobe Target-Server Angebote für ein Zielgruppensegment mit weiblichen Kunden ab.
 
 Die interaktiven Karten in der Desktopversion des Begrüßgungs-Kits haben ein benutzerdefiniertes Layout, das mithilfe des Standardkartenlayouts eines Dokumentfragments erstellt wird.
 
-#### Sehen Sie selbst.  {#see-it-yourself-8}
+#### Sehen Sie selbst.   {#see-it-yourself-8}
 
 Wenn Sie beim Ausfüllen des Hypothekenantrags Ihre E-Mail-ID angegeben haben, sollten Sie eine E-Mail mit einem Link zum Willkommenspaket erhalten haben. Überprüfen Sie Ihren Posteingang und schauen Sie sich das Willkommenspaket an.
 
@@ -491,7 +493,7 @@ Der Hypothekenauszug ist eine interaktive Kommunikation. Es wird mithilfe des JS
 
 Sie können den interaktiven Hypothekenkontoauszug unter folgender URL einsehen:
 
-https://&lt;*hostname*>:&lt;*port*>/content/forms/af/we-finance/mortgage-account-statement.html?wcmmode=disabled
+https://&lt;*Hostname*:&lt;*Anschluss*>/content/forms/af/we-finance/mortgage-account-statement.html?wcmmode=disabled
 
 Sie können auf sie in den Autor- und Veröffentlichungsinstanzen zugreifen.
 
@@ -511,20 +513,20 @@ Die Leistungsmetriken für das Hypothekenantragsformular werden mit Adobe Analyt
 
 Damit Sie den Analysebericht anzeigen und prüfen können, stellen wir Seed-Daten für die Hypothekenanwendung in der Referenz-Website bereit. Bevor Sie Seed-Daten verwenden, lesen Sie[ Konfigurieren von Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Führen Sie folgende Schritte im Autorenmodus aus, um den Bericht mit den Seed-Daten anzuzeigen: 
 
-1. Go to **Forms &amp; Documents** UI at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Wechseln Sie zu **Forms und Dokumente** UI unter https://&lt;*Hostname*:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klicken Sie auf „Öffnen“, um den **We-Finance**-Ordner zu öffnen.
-1. Wählen Sie das adaptive Formular **[!UICONTROL Anwendung für Hypothekendarlehen]** aus und klicken Sie dann in der Symbolleiste auf Analyse **[!UICONTROL aktivieren]**.
+1. Wählen Sie das adaptive Formular **[!UICONTROL Anwendung auf Hypothek]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Analyse aktivieren]**.
 
-1. Wählen Sie das Formular erneut aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Analytics-Bericht]** , um den Bericht zu erstellen. Zunächst wird ein leerer Bericht angezeigt.
+1. Wählen Sie das Formular erneut aus und klicken Sie auf **[!UICONTROL Analytics-Bericht]** in der Symbolleiste, um den Bericht zu erstellen. Zunächst wird ein leerer Bericht angezeigt.
 
 So erstellen Sie einen Analysebericht mit Seed-Daten:
 
-1. In the address browser of CRXDE lite, type the following: `/apps/we-finance/demo-artifacts/analyticsTestData/HomeMortgageAnalyticsTestData`
+1. Geben Sie im Adressbrowser von CRXDE Lite Folgendes ein: `/apps/we-finance/demo-artifacts/analyticsTestData/HomeMortgageAnalyticsTestData`
 1. Die Testdaten werden in der linken Seitenstruktur ausgewählt.
 1. Doppelklicken Sie auf die ausgewählte Datei, um ihren Inhalt im rechten Seitenbereich zu öffnen.
 1. Kopieren Sie den gesamten Inhalt der Seed-Datendatei.
-1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
+1. Navigieren Sie in CRXDE zu: `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
 1. Fügen Sie den kopierten Inhalt der Seed-Datendatei im Feld &quot;analyticsData&quot;unter &quot;Eigenschaften&quot;ein.
 1. Erstellen Sie jetzt erneut den Analysebericht für das Hypothekenantragsformular. Der Bericht wird mit Seed-Daten angezeigt.
 
@@ -532,14 +534,14 @@ So erstellen Sie einen Analysebericht mit Seed-Daten:
 
 Zusätzlich zur Analyse und kontinuierlichen Verbesserung der Hypothekenanwendung nutzt We.Finance die Integration von AEM Forms mit Target, um A/B-Tests zu erstellen. Dadurch ist es möglich, auf verschiedene Erlebnisse im Zusammenhang mit der Bearbeitung des Antragsformulars zu reagieren und Erlebnisse zu bestimmen, die zu einer besseren Konversionsrate in Bezug auf das Ausfüllen und Übermitteln von Formularen führen. 
 
-To configure Target in AEM Forms server, see [Set up and integrate Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+Informationen zum Konfigurieren der Zielgruppe auf dem AEM Forms-Server finden Sie unter [Einrichten und Integrieren der Zielgruppe in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 Führen Sie folgende Schritte im Autorenmodus aus, um A/B-Tests für das We.Finance-Hypothekenantragsformular zu erstellen:
 
-1. Go to **Forms &amp; Documents** at https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Wechseln Sie zu **Forms &amp; Dokumente** unter https://&lt;*Hostname*:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klicken Sie auf den Ordner **We.Finance**, um ihn zu öffnen.
-1. Wählen Sie das adaptive Formular **für den Hypothekenantrag** .
+1. Wählen Sie das adaptive Formular **Anwendung für Hypothekendarlehen** aus.
 1. Klicken Sie in der Symbolleiste auf **Mehr** und wählen Sie **A/B-Tests konfigurieren**. Die Seite „A/B-Tests konfigurieren“ wird geöffnet.
 
 1. Geben Sie eine **Aktivitätsbezeichnung** an.
@@ -547,7 +549,7 @@ Führen Sie folgende Schritte im Autorenmodus aus, um A/B-Tests für das We.Fina
 1. Geben Sie in den Feldern für **Erlebnisverteilung** für die Erlebnisvarianten A und B deren Verteilung auf die Gesamtzielgruppe in Prozent an. Wenn Sie beispielsweise „40“ und „60“ für Erlebnis A bzw. B angeben, wird Erlebnis A für 40 % der Zielgruppe und Erlebnis B für die verbleibenden 60 % angezeigt.
 1. Klicken Sie auf **Konfigurieren**. Es wird ein Dialogfeld angezeigt, in dem die Erstellung des A/B-Tests bestätigt wird.
 1. Klicken Sie auf **Fertig**.
-1. Wählen Sie das adaptive Formular **für den Hypothekenantrag** aus und klicken Sie auf **Bearbeiten**. Es bietet die Möglichkeit, eines der Erlebnisse zu öffnen. Klicken Sie auf **Erlebnis B**. Das Formular wird im Bearbeitungsmodus geöffnet. 
+1. Wählen Sie das adaptive Formular **Anwendung für Hypothekendarlehen** und klicken Sie auf **Bearbeiten**. Es bietet die Möglichkeit, eines der Erlebnisse zu öffnen. Klicken Sie auf **Erlebnis B**. Das Formular wird im Bearbeitungsmodus geöffnet. 
 
 1. Ändern Sie beliebig das Formular, um ein anderes Erlebnis als das Standarderlebnis A zu erstellen. 
 1. Wechseln Sie zur Benutzeroberfläche für Formulare und Dokumente, wählen Sie das Formular aus, klicken Sie auf **Mehr** und wählen Sie **A/B-Tests starten**.
@@ -563,7 +565,7 @@ Führen Sie folgende Schritte im Autorenmodus aus, um A/B-Tests für das We.Fina
 1. Wählen Sie das Formular aus, klicken Sie auf **Mehr**, und klicken Sie dann auf **A/B-Testbericht**. Sie werden nicht viele Daten im Bericht finden, da Sie gerade erst mit dem Testen begonnen haben. Jetzt werden wir einige Seed-Daten bereitstellen, um zu sehen, wie der A/B-Testbericht aussehen wird. 
 
 1. Öffnen Sie CRXDE Lite und erstellen Sie eine Sicherungskopie der folgenden Datei: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
-1. Ersetzen Sie die Definition der `onReportLoadSuccess` Funktion in der oben genannten Datei durch die Funktionsdefinition in der folgenden Datei: /apps/we-finance/demo-artifacts/targetreport.js
+1. Ersetzen Sie die Definition der Funktion `onReportLoadSuccess` in der oben genannten Datei durch die Funktionsdefinition in der folgenden Datei: /apps/we-finance/demo-artifacts/targetreport.js
 
    >[!NOTE]
    >
@@ -577,36 +579,38 @@ Um den A/B-Test zu beenden, klicken Sie im Berichts-Dashboard auf die Schaltflä
 
 Wenn Sie Erlebnis A als Gewinner auswählen, wird der A/B-Test beendet, und in Zukunft wird nur Erlebnis A für sämtliche Zielgruppen (einschließlich Chrome-Benutzer) angezeigt.
 
-## Hypothekenantrag - Anleitung mit Microsoft Dynamics {#home-mortgage-application-walkthrough-with-microsoft-dynamics}
+## Hypothekenantrag - Anleitung mit Microsoft Dynamics  {#home-mortgage-application-walkthrough-with-microsoft-dynamics}
 
 Die Hypothek von We.Finance mit Microsoft Dynamics umfasst die folgenden Personen:
 
 * Sarah Rose, einen We.Finance-Kunden
 * Den Administrator der We.Finance Microsoft Dynamics-Instanz
 
-Die exemplarische Vorgehensweise bei der Hypothekenanwendung mit Microsoft Dynamics zeigt, wie ein We.Finance-Kunde die Website nutzen kann, um eine Hypothek zu beantragen, wenn die Referenz-Website die Microsoft Dynamics für die Datenintegration verwendet. Die Anleitung endet mit den Daten, die vom Benutzer ausgefüllt wurden und von Microsoft Dynamics empfangen wurden. Before you proceed with this scenario, you need to complete the [Microsoft Dynamics 365 configuration for the home mortgage workflow of the We.Finance reference site](/help/forms/using/ms-dynamics-configuration-home-mortgage.md).
+Die exemplarische Vorgehensweise bei der Hypothekenanwendung mit Microsoft Dynamics zeigt, wie ein We.Finance-Kunde die Website nutzen kann, um eine Hypothek zu beantragen, wenn die Referenz-Website die Microsoft Dynamics für die Datenintegration verwendet. Die Anleitung endet mit den Daten, die vom Benutzer ausgefüllt wurden und von Microsoft Dynamics empfangen wurden. Bevor Sie mit diesem Szenario fortfahren, müssen Sie die [Microsoft Dynamics 365-Konfiguration für den Hypothekenarbeitsablauf der Web.Finance-Referenz-Website](/help/forms/using/ms-dynamics-configuration-home-mortgage.md) durchführen.
 
 ### Sarah besucht die Website von We.Finance und beantragt eine Hypothek {#sarah-visits-we-finance-website-and-applies-for-home-mortgage-1}
 
 Sarah Rose plant, ein Haus zu kaufen und nach einem Hypotheksplan zu suchen. Sie ist eine We.Finance-Kundin und besucht daher das We.Finance-Portal, um Hypothekenangebote zu erkunden. Sie geht in den Bereich „Kredite“ und findet einen Hypothekenrechner auf dem Portal. Sie füllt die Details aus und klickt auf „Meine Hypothek berechnen“, die einen Hypothekenplan zurückgibt.
 
-![Darlehen1](assets/loans1.png) ![Darlehen2](assets/loans2.png)**Abbildung:** *Hypothekenrechner*
+![Kredite1](assets/loans1.png) ![Kredite2](assets/loans2.png)
+**Abbildung:** *Hypothekenrechner*
 
-![darlehen3](assets/loans3.png)**Abbildung:** *Hypothekenrechner*
+![Darlehen3](assets/loans3.png)
+**Abbildung: Ergebnis des** *Hypothekenrechners*
 
 #### Funktionsweise {#how-it-works-12}
 
-Der Hypothekenrechner auf der Seite „Darlehen“ ist ein eingebettetes adaptives Formular in der AEM-Seite. You can review the Loans page in edit mode at `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
+Der Hypothekenrechner auf der Seite „Darlehen“ ist ein eingebettetes adaptives Formular in der AEM-Seite. Sie können die Darlehensseite im Bearbeitungsmodus unter `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html` überprüfen.
 
-Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html`.
+Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html` überprüfen.
 
 #### Sehen Sie selbst{#see-it-yourself-10} 
 
-Go to We.Finance portal at `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` and click **[!UICONTROL Loans]**. Geben Sie Details in den Hypothekenrechner ein und sehen Sie sich die Ergebnisse an.
+Wechseln Sie zum Web.Finance-Portal unter `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` und klicken Sie auf **[!UICONTROL Kredite]**. Geben Sie Details in den Hypothekenrechner ein und sehen Sie sich die Ergebnisse an.
 
-### Sarah findet das Angebot interessant und beschließt, einen Antrag zu stellen  {#sarah-finds-the-offer-interesting-and-chooses-to-apply-2}
+### Sarah findet das Angebot interessant und beschließt, einen Antrag zu stellen   {#sarah-finds-the-offer-interesting-and-chooses-to-apply-2}
 
-Sarah chooses to apply for home mortgage and clicks **[!UICONTROL Apply Now]** on home mortgage calculator results. Es wird der Antrag für Hypotheken geöffnet.
+Sarah beschließt, sich um eine Hypothek zu bewerben, und klickt auf **[!UICONTROL Jetzt anwenden]** auf die Ergebnisse des Hypothekenrechners. Es wird der Antrag für Hypotheken geöffnet.
 
 Wenn Sarah von ihrem Mobilgerät aus auf den Antrag für die Hypothek zugreift, wird das Antragsformular in einer Ansicht geöffnet, die für die Anzeige auf einem mobilen Gerät optimiert ist. In dieser Ansicht rendert das Antragsformular jeweils einen Abschnitt. Es ermöglicht Sarah, Informationen progressiv zu sehen und zu liefern, während sie durch das Antragsformular navigiert.
 
@@ -626,7 +630,7 @@ Der eingereichte Antrag geht an We.Finance zur Genehmigung.
 
 #### Funktionsweise {#how-it-works-13}
 
-Die Schaltfläche **Jetzt beantragen** leitet Sarah zum Hypothekenantrag weiter. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
+Die Schaltfläche **Jetzt beantragen** leitet Sarah zum Hypothekenantrag weiter. Die Anwendung ist ein adaptives Formular, das Sie in den Authoring-Instanzen unter `https://[host]:[Port]/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html` überprüfen können.
 
 Einige der wichtigsten Funktionen, die Sie im adaptiven Formular überprüfen können, sind:
 
@@ -636,13 +640,13 @@ Einige der wichtigsten Funktionen, die Sie im adaptiven Formular überprüfen k�
    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* Die erste Registerkarte „Erste Schritte“ im Antrag ist ein dynamischer Hypothekenrechner, der Optionen basierend auf der Benutzerauswahl anzeigt. Zum Beispiel sind die Felder und Werte für Kauf- und Refinanzierungsoptionen unterschiedlich. Diese Funktionalität wird mithilfe von Regeln zum Ein- bzw. Ausblenden erreicht. Wenn Sie auf „Weiter“ klicken und die Registerkarte „Pläne“ initialisiert wird, ruft sie außerdem einen Web-Dienst auf, der in einem Formulardatenmodell zum Abrufen und Anzeigen von Hypothekenplänen konfiguriert ist. You can review the Form Data Models and configured services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Die erste Registerkarte „Erste Schritte“ im Antrag ist ein dynamischer Hypothekenrechner, der Optionen basierend auf der Benutzerauswahl anzeigt. Zum Beispiel sind die Felder und Werte für Kauf- und Refinanzierungsoptionen unterschiedlich. Diese Funktionalität wird mithilfe von Regeln zum Ein- bzw. Ausblenden erreicht. Wenn Sie auf „Weiter“ klicken und die Registerkarte „Pläne“ initialisiert wird, ruft sie außerdem einen Web-Dienst auf, der in einem Formulardatenmodell zum Abrufen und Anzeigen von Hypothekenplänen konfiguriert ist. Sie können die Formulardatenmodelle und die konfigurierten Dienste unter `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm` überprüfen.
 * Es verwendet verschiedene adaptive Formularkomponenten, um Eingaben zu erfassen und sich an Benutzerreaktionen anzupassen. Es verwendet auch Komponenten wie E-Mail, die HTML5-Eingabetypen unterstützen.
 * Es verwendet die Signaturschrittkomponente, um das ausgefüllte Formular anzuzeigen, und ermöglicht die elektronische Unterschrift auf dem Formular.
 
 Es wird empfohlen, das Formular zu lesen, um das Schema, die Komponenten, die Regeln, die Formulardatenmodelle, den Formularworkflow und die Aktion zum Erstellen des Formulars zu verstehen.
 
-### Der Administrator zeigt die übermittelten Daten in der Microsoft Dynamics-Instanz an {#the-administrator-views-the-submitted-data-in-the-microsoft-dynamics-instance}
+### Der Administrator zeigt die übermittelten Daten in der Microsoft Dynamics-Instanz an  {#the-administrator-views-the-submitted-data-in-the-microsoft-dynamics-instance}
 
 We.Finance erhält den von Sarah gestellten Hypothekenantrag auf der Microsoft Dynamics-Instanz. Der Administrator tippt auf den Eintrag in der Hauptspalte, um zu dem für Sarah Rose erstellten Führungsdatensatz zu gelangen.
 
@@ -662,7 +666,7 @@ Die folgende Infografik zeigt eine Schritt-für-Schritt-Anleitung für einen Ant
 
 Schauen wir uns nun an, wie die Schritte des Referenz-Website-Szenarios im Einzelnen aussehen, um Aufschluss zu erhalten, wie AEM Forms dem Unternehmen We.Finance hilft, das Ziel zu erreichen. 
 
-### Sarah erhält einen Newsletter von We.Finance und beantragt eine Hausversicherung  {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-home-insurance}
+### Sarah erhält einen Newsletter von We.Finance und beantragt eine Hausversicherung   {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-home-insurance}
 
 Sarah Rose ist eine Haushypothekenkundin von We.Finance und auf der Suche nach einem guten Angebot für eine Hausversicherung. Sie besucht das We.Finance-Portal und sucht nach Hausversicherungsplänen. We.Finance identifizierte sie als bestehende Kundin und schickt ihr einen gezielten Newsletter per E-Mail. Der Newsletter enthält Hausversicherungen.
 
@@ -674,7 +678,7 @@ Der an Sarah gesendete Newsletter ist eine benutzerdefinierte Implementierung, d
 
 #### Sehen Sie selbst{#see-it-yourself-11} 
 
-Öffnen Sie die folgende URL, um eine Newsletter-E-Mail auszulösen. Ensure that you replace `[emailID]` with a valid email account to receive the newsletter. Open the newsletter and click **[!UICONTROL Apply Now]** to go to the home insurance application.
+Öffnen Sie die folgende URL, um eine Newsletter-E-Mail auszulösen. Stellen Sie sicher, dass Sie `[emailID]` durch ein gültiges E-Mail-Konto ersetzen, um den Newsletter zu erhalten. Öffnen Sie den Newsletter und klicken Sie auf **[!UICONTROL Jetzt beantragen]**, um zur Anwendung für die private Versicherung zu wechseln.
 
 `https://[authorServer]:[authorPort]/content/campaigns/we-finance/start.html?app=ins&email=[emailID]&givenName=Sarah&familyName=Rose`
 
@@ -694,17 +698,17 @@ Wenn Sarah den Antrag auf einem mobilen Gerät eingereicht hat, sieht sie die fo
 
 #### Funktionsweise {#how-it-works-15}
 
-Über die Schaltfläche **Jetzt beantragen“ im Newsletter wird Sarah zum Hausversicherungsantrag auf dem We.Finance-Portal weitergeleitet.** The application is an adaptive form, which you can review in the authoring instance at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
+Über die Schaltfläche **Jetzt beantragen“ im Newsletter wird Sarah zum Hausversicherungsantrag auf dem We.Finance-Portal weitergeleitet.** Die Anwendung ist ein adaptives Formular, das Sie in der Authoring-Instanz unter `https://[host]:[Port]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html` überprüfen können.
 
 Einige der wichtigsten Funktionen, die Sie im adaptiven Formular überprüfen können, sind:
 
 * Es basiert auf einem XSD-Schema, `insurance.xsd`.
-* Er wird unter Verwendung von „Versicherung“ für das Design erstellt und verwendet Layout ohne Bereichstitel im Formularüberschriften-Layout für die mobile Navigation. Es wird ein progressives Layout für Mobilgeräte angezeigt, wenn es von einem Mobilgerät aus geöffnet wird. Sie können die Vorlage unter `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` und das Design unter `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
+* Er wird unter Verwendung von „Versicherung“ für das Design erstellt und verwendet Layout ohne Bereichstitel im Formularüberschriften-Layout für die mobile Navigation. Es wird ein progressives Layout für Mobilgeräte angezeigt, wenn es von einem Mobilgerät aus geöffnet wird. Sie können die Vorlage unter `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` und das Design unter `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content` überprüfen.
 
-* Es enthält adaptive Formularregeln zum Aufrufen von Formulardatenmodelldiensten, um Benutzerdetails des angemeldeten Benutzers vorab zu befüllen. Es ruft auch Dienste auf, um Informationen anhand der im Formular angegebenen Sozialversicherungsnummer oder E-Mail-Adresse vorab zu befüllen. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Es enthält adaptive Formularregeln zum Aufrufen von Formulardatenmodelldiensten, um Benutzerdetails des angemeldeten Benutzers vorab zu befüllen. Es ruft auch Dienste auf, um Informationen anhand der im Formular angegebenen Sozialversicherungsnummer oder E-Mail-Adresse vorab zu befüllen. Sie können die Formulardatenmodelle und ihre Dienste unter `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm` überprüfen.
 * Es verwendet verschiedene adaptive Formularkomponenten, um Eingaben zu erfassen und sich an Benutzerreaktionen anzupassen. Es verwendet auch Komponenten wie E-Mail, die HTML5-Eingabetypen unterstützen.
 * Die Schaltfläche „Fortschritt speichern“ generiert eine eindeutige ID für den Benutzer und speichert die teilweise ausgefüllte Anwendung als Entwurf in einem Knoten im AEM-Repository. Außerdem wird ein Dialogfeld mit einer Bitte um Bestätigung angezeigt, damit eine E-Mail mit einer Verknüpfung zu dem Knoten gesendet werden kann, der den Antragsentwurf enthält. Über die im Bestätigungsdialogfeld angezeigte Schaltfläche E-Mail senden wird die Versendung einer E-Mail mit einer Verknüpfung zu dem Knoten ausgelöst, der den Entwurf enthält.
-* Es verwendet die Aktion „AEM-Workflow aufrufen“, um den Hausversicherungs-Genehmigungs-Workflow auszulösen. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* Es verwendet die Aktion „AEM-Workflow aufrufen“, um den Hausversicherungs-Genehmigungs-Workflow auszulösen. Sie können den in diesem Formular verwendeten Arbeitsablauf unter `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html` überprüfen.
 
 Es wird empfohlen, das Formular zu lesen, um das Schema, die Komponenten, die Regeln, die Formulardatenmodelle, den Formularworkflow und die Aktion zum Erstellen des Formulars zu verstehen.
 
@@ -718,11 +722,11 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 * [Verwenden von Adobe Sign in adaptiven Formularen](/help/forms/using/working-with-adobe-sign.md) 
 * [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md)
 
-#### Sehen Sie selbst {#see-it-yourself-12}
+#### Sehen Sie selbst  {#see-it-yourself-12}
 
-Klicken Sie auf die Schaltfläche **Jetzt beantragen** im Newsletter, den Sie in Ihrer E-Mail erhalten haben. Alternatively, go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/all-forms.html` and click **[!UICONTROL Apply]** on the insurance application. Geben Sie`123456789`   im Feld „Sozialversicherungsnummer“ ein. Wenn Sie dazu aufgefordert werden, melden Sie sich mit `srose/srose` als Benutzername/Passwort an.
+Klicken Sie auf die Schaltfläche **Jetzt beantragen** im Newsletter, den Sie in Ihrer E-Mail erhalten haben. Alternativ können Sie `https://[publishHost]:[publishPort]/content/we-finance/global/en/all-forms.html` aufrufen und auf **[!UICONTROL Anwenden]** in der Versicherungsanwendung klicken. Geben Sie`123456789`   im Feld „Sozialversicherungsnummer“ ein. Wenn Sie dazu aufgefordert werden, melden Sie sich mit `srose/srose` als Benutzername/Passwort an.
 
-Füllen Sie die Details aus, untersuchen Sie verschiedene adaptive Formularkomponenten und senden Sie den Antrag. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
+Füllen Sie die Details aus, untersuchen Sie verschiedene adaptive Formularkomponenten und senden Sie den Antrag. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html` überprüfen.
 
 ### We.Finance genehmigt den Antrag und ein Vertrag wird unterschrieben {#we-finance-approves-the-application-and-a-contract-is-signed}
 
@@ -740,7 +744,7 @@ Sarah erhält eine E-Mail mit einem Link zum Vertrag mit der Hausversicherung zu
 
 #### Funktionsweise {#how-it-works-16}
 
-Wenn Sarah den Hausversicherungsantrag einreicht, wird ein Formular-Workflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt. Wenn Gloria den Antrag prüft und genehmigt, wird die Aufgabe Frank De Costa zugewiesen. Der Fluss der Aufgaben von einer Person zur anderen wird im AEM Arbeitsablauf definiert, der mit der Versicherungsanwendung verknüpft ist. For more information about workflows, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md).
+Wenn Sarah den Hausversicherungsantrag einreicht, wird ein Formular-Workflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt. Wenn Gloria den Antrag prüft und genehmigt, wird die Aufgabe Frank De Costa zugewiesen. Der Fluss der Aufgaben von einer Person zur anderen wird im AEM Arbeitsablauf definiert, der mit der Versicherungsanwendung verknüpft ist. Weitere Informationen zu Workflows finden Sie unter [Forms-zentrierter Arbeitsablauf unter OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Das folgende Bild zeigt den AEM-Workflow, der mit dem Hausversicherungsantrag verknüpft ist.
 
@@ -748,14 +752,14 @@ Das folgende Bild zeigt den AEM-Workflow, der mit dem Hausversicherungsantrag ve
 
 Frank verwendet das Correspondence Management, um einen Vertrag für eine Hausversicherung zu erstellen. Er lädt das Vertrags-PDF herunter und hängt es an die Anwendung von Sarah an und klickt auf „Vertrag senden“. Der Workflow löst eine E-Mail an Sarah aus, die den Vertrag mit der Hausversicherung zum Unterzeichnen unterzeichnet.
 
-#### Sehen Sie selbst {#see-it-yourself-13}
+#### Sehen Sie selbst  {#see-it-yourself-13}
 
 Gehen Sie folgendermaßen vor:
 
-1. Go to AEM Inbox, `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`, and log in with `grios/grios` as username password for Gloria&#39;s persona. Genehmigen Sie die Aufgabe für Sarahs Hausversicherungsantrag.
+1. Gehen Sie zu AEM Posteingang, `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/grios` als Benutzername für Glorias Persona an. Genehmigen Sie die Aufgabe für Sarahs Hausversicherungsantrag.
 
 1. Melden Sie sich dann beim AEM-Posteingang mit `fdcosta/password` als Benutzername für Franks Person an. Sehen Sie sich die Aufgabe an.
-1. Gehen Sie nun zur `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` und Vorschau der Briefvorlage für HomeInsuranceWelcomeKit.
+1. Wechseln Sie nun zu `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` und Vorschau der Briefvorlage für HomeInsuranceWelcomeKit.
 1. Geben Sie Informationen im Datenbereich an. Klicken Sie auf **[!UICONTROL Vorschau]** und laden Sie dann die PDF-Datei auf Ihr lokales Dateisystem herunter. Stellen Sie sicher, dass die PDF-Datei mit dem Dateinamen „contract.pdf“ gespeichert wird.
 1. Gehen Sie zu Franks AEM-Posteingang, öffnen Sie die Aufgabe, hängen Sie die heruntergeladene Vertrags-PDF an und klicken Sie auf **[!UICONTROL Vertrag senden]**.
 1. Öffnen Sie die E-Mail mit Vertrag und unterschreiben Sie das Dokument.
@@ -776,7 +780,7 @@ Wenn Sie Ihre E-Mail-ID im Antrag angegeben haben, haben Sie eine E-Mail mit ein
 
 ![Insurance-welcome-kit-email](assets/insurance-welcome-kit-email.png)
 
-## Prospekt zum Vermögensmanagement - exemplarische Vorgehensweise {#wealth-management-prospectus-walkthrough}
+## Prospekt zum Vermögensmanagement - Umgehungslösung {#wealth-management-prospectus-walkthrough}
 
 Das Web.Finance-Szenario &quot;Vermögensverwaltung&quot;umfasst die folgende Person:
 
@@ -792,19 +796,19 @@ Die folgende Abbildung zeigt den Arbeitsablauf der exemplarischen Vorgehensweise
 
 Sarah Rose plant, in einen Fonds auf Gegenseitigkeit zu investieren. Sie ist ein bestehender Wir.Finance-Kunde und besucht daher das Web.Finance-Portal, um verfügbare Investmentfonds zu erkunden. Sie geht in den Bereich Vermögensverwaltung und öffnet die Seite We.Finance Blue Chip Growth Fund. Die Seite enthält Links zum Prospekt, die Details zu aktuellen und historischen Preisen, zur monatlichen Performance, zur sektorspezifischen Diversifizierung, zu Ausgaben, Gebühren, Steuern und weiteren Informationen über die Fonds enthalten.
 
-![slide1](assets/slide1.png)
+![Slide1](assets/slide1.png)
 
 #### Funktionsweise {#how-it-works-17}
 
-Der Blue Chip Growth Fund Prospekt ist eine interaktive Kommunikation. Es verwendet Texte, Bilder, Diagramme und Tabellenkomponenten (Dokument-Fragmente), um die Produktzusammenfassung, den Aktienstil, die Fondsleistung, Fondsdetails und andere zugehörige Informationen anzuzeigen. Sie können die interaktive Kommunikation im Bearbeitungsmodus unter https://[authorHost]überprüfen:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Der Blue Chip Growth Fund Prospekt ist eine interaktive Kommunikation. Es verwendet Texte, Bilder, Diagramme und Tabellenkomponenten (Dokument-Fragmente), um die Produktzusammenfassung, den Aktienstil, die Fondsleistung, Fondsdetails und andere zugehörige Informationen anzuzeigen. Sie können die interaktive Kommunikation im Bearbeitungsmodus unter https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
 
 Die Diagramme und Tabellen rufen Daten aus einem Formulardatenmodell ab. Das Formulardatenmodell stellt eine Verbindung zu konfigurierten Datenquellen her, einer Datenbank in dieser exemplarischen Vorgehensweise, um fondsspezifische Informationen abzurufen. Sie können das Formulardatenmodell unter https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management überprüfen.
 
 #### Sehen Sie selbst{#see-it-yourself-15} 
 
-Gehen Sie zum Web.Finance-Portal unter https://[publishHost]:[publishPort]/wefinance, tippen Sie auf Wealth Management, erweitern Sie die Fonds nach Asset-Klasse und tippen Sie auf We.Finance Blue Chip Growth Fund. Der Prospekt des Blue Chip Growth Fund wird eröffnet.
+Wechseln Sie zum Web.Finance-Portal unter https://[publishHost]:[publishPort]/wefinance, tippen Sie auf Wealth Management, erweitern Sie die Fonds nach Asset-Klasse und tippen Sie auf We.Finance Blue Chip Growth Fund. Der Prospekt des Blue Chip Growth Fund wird eröffnet.
 
-### Sarah erkundet den Prospekt des Blue Chip Growth Fund, um mehr über den Fonds zu erfahren {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
+### Sarah untersucht den Blue Chip Growth Fund Prospekt, um mehr über den Fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund} zu erfahren
 
 Sarah erkundet die Registerkarten Überblick, Preis und Leistung, Portfolio-Management, Gebühren und Minimum sowie Steuern und Zahlungen des Prospekts, um aktuelle und historische Preise, historisches Wachstum, Vergleich mit S&amp;P 500 Index, sektorbezogene Diversifizierung, Fondsverwalter und Fondskosten zu erfassen. Die zugehörigen Informationen sind in verschiedene Registerkarten unterteilt. Der Prospekt ist eine interaktive Kommunikation. Die interaktiven Kommunikationen haben ein reaktionsfähiges Design. Sie kann die interaktive Kommunikation auf einem Gerät beliebiger Bildschirmgröße öffnen und die interaktive Kommunikation passt sich an das zugrunde liegende Gerät an.
 
@@ -812,15 +816,15 @@ Sarah erkundet die Registerkarten Überblick, Preis und Leistung, Portfolio-Mana
 
 #### Funktionsweise {#how-it-works-18}
 
-Die interaktive Kommunikation des Blue Chip Growth Fund nutzt die Bereiche Eltern und Kinder, um damit zusammenhängende Informationen in verschiedene Abschnitte zu unterteilen. Im übergeordneten Bedienfeld werden alle untergeordneten Bedienfelder in Registerkarten organisiert.
+Die interaktive Kommunikation des Blue Chip Growth Fund nutzt die Bereiche Eltern und Kinder, um damit zusammenhängende Informationen in verschiedene Abschnitte zu unterteilen. Im übergeordneten Bereich werden alle untergeordneten Bereiche in Registerkarten organisiert.
 
-Das Layout der übergeordneten Registerkarte ist auf &quot;Registerkarten oben&quot;eingestellt, um alle untergeordneten Bereiche in Registerkarten zu konvertieren. Sie können die Bereiche der interaktiven Kommunikation im Bearbeitungsmodus unter https://[authorHost]überprüfen:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+Das Layout der übergeordneten Registerkarte ist auf &quot;Registerkarten oben&quot;eingestellt, um alle untergeordneten Bereiche in Registerkarten zu konvertieren. Sie können die Bereiche der interaktiven Kommunikation im Bearbeitungsmodus unter https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html überprüfen.
 
 #### Sehen Sie selbst{#see-it-yourself-16} 
 
-Interaktive Kommunikation zum Blue Chip Growth Fund unter https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Entdecken Sie alle Registerkarten.
+Wechseln Sie zur interaktiven Kommunikation des Blue Chip Growth Fund unter https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Entdecken Sie alle Registerkarten.
 
-### Sarah Ansichten und E-Mails an die PDF-Version der Seite &quot;Blue Chip Growth Fund&quot; {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
+### Sarah Ansichten und E-Mails an die PDF-Version der Seite &quot;Blue Chip Growth Fund&quot;{#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
 Sarah reist am Wochenende auf das Land. Sie plant, den Blue Chip Growth Fund mit ihrem älteren Bruder zu diskutieren. Ihr älterer Bruder arbeitet mit einer Bank und hilft ihr bei Entscheidungen im Zusammenhang mit der Finanzierung. Sarah lädt eine Kopie der PDF-Version der Seite &quot;Blue Chip Growth Fund&quot;auf ihren Laptop herunter, um sie offline zu lesen. Sie sendet ihrem Bruder auch eine Kopie der PDF-Version per E-Mail.
 
@@ -828,17 +832,17 @@ Sarah reist am Wochenende auf das Land. Sie plant, den Blue Chip Growth Fund mit
 
 #### Funktionsweise {#how-it-works-19}
 
-Der Blue Chip Growth Fund Prospekt ist eine interaktive Kommunikation. Es verfügt über einen Web- und PDF-Kanal. Die interaktive Kommunikation wird mit AEM Workflows integriert, um die PDF-Version per E-Mail zu senden. Sie können das Workflow-Modell unter https://[authorHost]überprüfen:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Der Blue Chip Growth Fund Prospekt ist eine interaktive Kommunikation. Es verfügt über einen Web- und PDF-Kanal. Die interaktive Kommunikation wird mit AEM Workflows integriert, um die PDF-Version per E-Mail zu senden. Sie können das Workflow-Modell unter https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html überprüfen.
 
 ![Vermögensverwaltung](assets/wealth-management.png)
 
 #### Sehen Sie selbst{#see-it-yourself-17} 
 
-Um die PDF-Version herunterzuladen, rufen Sie die interaktive Kommunikation zum Blue Chip Growth Fund auf https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, tippen Sie auf PDF herunterladen.
+Um die PDF-Version herunterzuladen, wechseln Sie zur interaktiven Kommunikation des Blue Chip Growth Fund https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html und tippen Sie auf PDF herunterladen.
 
-Um PDF per E-Mail zu senden, rufen Sie die interaktive Kommunikation des Blue Chip Growth Fund auf https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, tippen Sie auf EMAIL PDF. Geben Sie den **vollständigen Namen** und die **E-Mail-Adresse** an. Klicken Sie auf E-Mail **senden**.
+Um PDF per E-Mail zu senden, rufen Sie die interaktive Kommunikation des Blue Chip Growth Fund auf https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html und tippen Sie auf EMAIL PDF. Geben Sie **Vollständiger Name** und **E-Mail-Adresse** an. Klicken Sie auf **E-Mail senden**.
 
-## Anleitung zur Auto-Versicherung {#auto-insurance-application-walkthrough}
+## Umgehungslösung für die automatische Versicherungsanwendung {#auto-insurance-application-walkthrough}
 
 Das Szenario der automatischen Versicherungsanwendung für We.Finance umfasst die folgende Person:
 
@@ -847,23 +851,23 @@ Das Szenario der automatischen Versicherungsanwendung für We.Finance umfasst di
 
 Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice erworben. Jetzt wird es Zeit für die Erneuerung ihrer Versicherungspolice. Conrad Simms, Versicherungs-Agent, We.Finance sendet eine Erinnerung an Sarah über ihre Verlängerung ihrer Politik. Die E-Mail-Erinnerung enthält eine PDF-Datei mit Details zur Richtlinienverlängerung und einen Link zur Webversion der interaktiven Kommunikation. Die interaktive Kommunikation hat ein mobiles, benutzerfreundliches und reaktionsfähiges Design. Sie kann die interaktive Kommunikation auf jedem Gerät öffnen und die interaktive Kommunikation wird an die Bildschirmgröße des zugrunde liegenden Geräts angepasst. Die PDF-Version der interaktiven Kommunikation, die an E-Mail angehängt ist, ist beim Offline-Lesen hilfreich.
 
-Sarah befolgt die Anweisungen in der E-Mail und erneuert den Prozess erfolgreich. Die folgende Abbildung zeigt den Arbeitsablauf der exemplarischen Vorgehensweise der Anwendung für die automatische Versicherung:  ![autoversicherung-application-walkthrough](assets/auto-insurance-application-walkthrough.png)
+Sarah befolgt die Anweisungen in der E-Mail und erneuert den Prozess erfolgreich. Die folgende Abbildung zeigt den Arbeitsablauf der exemplarischen Vorgehensweise der Anwendung für die automatische Versicherung:  ![auto-Insurance-application-walkthrough](assets/auto-insurance-application-walkthrough.png)
 
-### Conrad sends an insurance policy renewal communication from We.Finance {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Conrad sendet eine Mitteilung zur Erneuerung der Versicherungspolice von We.Finance {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Conrad meldet sich bei AEM Instanz an, öffnet das Auto Insurance-Dashboard, gibt Sarahs **Kunden-ID** an und klickt auf **Verlängerungsrichtlinien**. Die **Agent-Benutzeroberfläche** wird mit den Richtliniendetails von Sarah Rose geöffnet, die bereits ausgefüllt sind. Conrad hat die E-Mail-Adresse von Sarah angegeben und klickt auf **Senden**. Sarah receives an email with the subject **Your Auto Insurance Renewal**.
+Conrad meldet sich bei AEM Instanz an, öffnet das Auto Insurance-Dashboard, gibt Sarahs **Kunden-ID** an und klickt auf **Erneuerungsrichtlinie**. Die **Agent-Benutzeroberfläche** wird mit den Richtliniendetails von Sarah Rose geöffnet, die bereits ausgefüllt sind. Conrad angegebene E-Mail-Adresse von Sarah und klickt auf **Senden**. Sarah erhält eine E-Mail mit dem Betreff **Ihre Auto-Versicherung Verlängerung**.
 
 ![cc-Dashboard](assets/cc-dashboard.png)
 
 #### Funktionsweise {#how-it-works-20}
 
-Die Kommunikation zur Erneuerung der Versicherungspolice ist eine interaktive Kommunikation. Conrad Simms verwendet die Agent-Benutzeroberfläche, um die Mitteilung zur Verlängerung der Versicherungspolice an Sarah zu senden. Die Kommunikation beinhaltet Print (PDF) und einen Link zum Web-Kanal der interaktiven Kommunikation. Die interaktive Kommunikation verwendet AEM Arbeitsablauf, um die E-Mail zu senden. Der Workflow finden Sie unter https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+Die Kommunikation zur Erneuerung der Versicherungspolice ist eine interaktive Kommunikation. Conrad Simms verwendet die Agent-Benutzeroberfläche, um die Mitteilung zur Verlängerung der Versicherungspolice an Sarah zu senden. Die Kommunikation beinhaltet Print (PDF) und einen Link zum Web-Kanal der interaktiven Kommunikation. Die interaktive Kommunikation verwendet AEM Arbeitsablauf, um die E-Mail zu senden. Den Workflow finden Sie unter https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
 
 ![Arbeitsablauf für automatische Versicherung](assets/auto-insurance-workflow.png)
 
 #### Sehen Sie selbst{#see-it-yourself-18} 
 
-Melden Sie sich bei **We.Finance Auto Insurance Dashboard** als Conrad Simms (csimms/password) an. Die URL lautet https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geben Sie die **Kunden-ID** an. Kunden-ID von Sarah Rose ist 900001. Klicken Sie auf Richtlinie **verlängern**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie in der Benutzeroberfläche des Agenten eine gültige E-Mail-Adresse ein, um die E-Mail mit dem angehängten Dokument zu senden, und klicken Sie auf **Senden**. Eine Meldung, &quot;Sendung initiiert&quot;, wird auf dem Bildschirm angezeigt und in wenigen Sekunden wird eine weitere Meldung angezeigt, &quot;erfolgreich gesendet&quot;. Eine E-Mail mit dem Betreff **Ihre Auto-Versicherung Verlängerung** und wird an die angegebene E-Mail-Adresse gesendet. Die Politik, die Sarah Rose angeboten wird, ist eine Premiumpolitik.
+Melden Sie sich bei **We.Finance Auto Insurance Dashboard** als Conrad Simms (csimms/password) an. Die URL lautet https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geben Sie die **Kunden-ID** an. Kunden-ID von Sarah Rose ist 900001. Klicken Sie auf **Richtlinie verlängern**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie in der Agent-Benutzeroberfläche eine gültige E-Mail-Adresse ein, an die die E-Mail mit dem angehängten Policy-Dokument gesendet werden soll, und klicken Sie auf **Submit**. Eine Meldung, &quot;Sendung initiiert&quot;, wird auf dem Bildschirm angezeigt und in wenigen Sekunden wird eine weitere Meldung angezeigt, &quot;erfolgreich gesendet&quot;. Eine E-Mail mit dem Betreff **Ihre Autoversicherungsverlängerung** wird an die angegebene E-Mail-Adresse gesendet. Die Politik, die Sarah Rose angeboten wird, ist eine Premiumpolitik.
 
 Die exemplarische Vorgehensweise für die automatische Versicherung enthält auch einen anderen Kunden, Alison Jones. Die Kunden-ID von Alison Jones lautet 900002. Wenn Sie die interaktive Kommunikation an Alison Jones senden, wird eine Standardrichtlinie gesendet. Der Unterschied zwischen der Standard- und der Prämienpolitik ist:
 
@@ -871,18 +875,18 @@ Die exemplarische Vorgehensweise für die automatische Versicherung enthält auc
 * Die Standardpolitik kostet weniger als die Prämienpolitik.
 * Die Prämienpolitik hat eine Belohnung gegen Diebstahl und die Standardpolitik hat eine intelligente Prämie
 
-Beide Richtlinien verwenden dieselbe interaktive Kommunikation. Die Abschnitte in der Richtlinie werden je nach der Bedingung des Richtlinientyps geändert oder ausgeblendet. You can access and review the auto insurance renewal interactive communication directly from `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
+Beide Richtlinien verwenden dieselbe interaktive Kommunikation. Die Abschnitte in der Richtlinie werden je nach der Bedingung des Richtlinientyps geändert oder ausgeblendet. Sie können direkt von `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal` aus auf die interaktive Kommunikation zur Erneuerung der automatischen Versicherung zugreifen und sie überprüfen.
 
 **Verwenden von Microsoft Dynamics als Datenquelle**
 
 Die Referenz-Website bietet auch eine interaktive Kommunikation, die Microsoft Dynamics als Datenquelle für das Formulardatenmodell verwendet. Führen Sie die folgenden Schritte aus, um die interaktive Kommunikation für die exemplarische Anleitung zur automatischen Versicherung zu konfigurieren:
 
 1. Melden Sie sich bei https://[author]:[port]/crx/de als Administrator an.
-1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
-1. Legen Sie den Wert von `FormFieldRequestParameter`auf `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
+1. Öffnen Sie die Datei `/apps/we-finance/components/ccrui/ccrui.jsp`.
+1. Legen Sie den Wert von `FormFieldRequestParameter`auf `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics` fest.
 1. Tippen Sie auf **Alle speichern**. Die Referenz-Website ist so konfiguriert, dass sie interaktive Kommunikation nutzt, die MS Dynamics als Datenquelle verwendet.
 
-Melden Sie sich jetzt bei **We.Finance Auto Insurance Dashboard** als Conrad Simms (csimms/password) an. Die URL lautet https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geben Sie die **Kunden-ID** an. Kunden-ID von Sarah Rose ist 900001. Klicken Sie auf Richtlinie **verlängern**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie in der Benutzeroberfläche des Agenten eine gültige E-Mail-Adresse ein, um die E-Mail mit dem angehängten Dokument zu senden, und klicken Sie auf **Senden**. Eine Meldung, &quot;Sendung initiiert&quot;, wird auf dem Bildschirm angezeigt und in wenigen Sekunden wird eine weitere Meldung angezeigt, &quot;erfolgreich gesendet&quot;. An die angegebene E-Mail-Adresse wird eine E-Mail mit dem Betreff **Ihre Autoversicherungsverlängerung** gesendet.
+Melden Sie sich jetzt bei **We.Finance Auto Insurance Dashboard** als Conrad Simms (csimms/password) an. Die URL lautet https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geben Sie die **Kunden-ID** an. Kunden-ID von Sarah Rose ist 900001. Klicken Sie auf **Richtlinie verlängern**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie in der Agent-Benutzeroberfläche eine gültige E-Mail-Adresse ein, an die die E-Mail mit dem angehängten Policy-Dokument gesendet werden soll, und klicken Sie auf **Submit**. Eine Meldung, &quot;Sendung initiiert&quot;, wird auf dem Bildschirm angezeigt und in wenigen Sekunden wird eine weitere Meldung angezeigt, &quot;erfolgreich gesendet&quot;. An die angegebene E-Mail-Adresse wird eine E-Mail mit dem Betreff **Ihre automatische Versicherungsverlängerung** gesendet.
 
 >[!NOTE]
 >
@@ -894,29 +898,29 @@ Melden Sie sich jetzt bei **We.Finance Auto Insurance Dashboard** als Conrad Sim
 
 Sarah erhält eine E-Mail mit einer Anlage von We.Finance, die sie daran erinnert, dass ihre Kfz-Versicherung bald abläuft. Die Anlage ist die Druckversion ihrer Details zur Erneuerung ihrer Auto-Versicherung.
 
-Sarah clicks **Renew Now** and is directed to the web version of her auto insurance letter. Über diesem Brief hinaus findet Sarah noch einige Tage, bis ihre Richtlinie abläuft. Die Seite bietet Sarah einen Überblick über ihre Versicherungsrichtlinien wie Versicherungsnummer, Fälligkeitsbetrag und andere Informationen wie Rabatt-Angebot und Treuebelohnungen. Sarah again clicks **Renew Now** at the bottom of the policy.
+Sarah klickt auf **Jetzt verlängern** und wird zur Webversion ihres Autoversicherungsbriefs weitergeleitet. Über diesem Brief hinaus findet Sarah noch einige Tage, bis ihre Richtlinie abläuft. Die Seite bietet Sarah einen Überblick über ihre Versicherungsrichtlinien wie Versicherungsnummer, Fälligkeitsbetrag und andere Informationen wie Rabatt-Angebot und Treuebelohnungen. Sarah klickt erneut auf **Jetzt verlängern** unten in der Richtlinie.
 
 ![auto-Insurance-reneed-email](assets/auto-insurance-renewal-email.png)
 
 #### Funktionsweise  {#how-it-works-21}
 
-Die Web- und Druckausgabe Ihres Autoversicherungsanschreibens werden mit den Funktionen von Interactive Communications (mit mehreren Kanälen) erstellt. The **Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
+Die Web- und Druckausgabe Ihres Autoversicherungsanschreibens werden mit den Funktionen von Interactive Communications (mit mehreren Kanälen) erstellt. Die Schaltfläche **Jetzt verlängern** in der E-Mail ist mit der Anwendung zur Verlängerung der automatischen Versicherung verknüpft, bei der es sich um eine interaktive Kommunikation auf einer Veröffentlichungsinstanz handelt.
 
 ![ic-web-version](assets/ic-web-version.png)
 
 #### Sehen Sie selbst{#see-it-yourself-19} 
 
-Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF ist eine Druckversion Ihres Autoversicherungsantrags. Click **Renew Now** to reach to the web version of the policy. Überprüfen Sie Ihre persönlichen Daten und Richtliniendetails und klicken Sie auf **Jetzt** verlängern. Es führt Sie zur Zahlung zu einem adaptiven Formular.
+Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF ist eine Druckversion Ihres Autoversicherungsantrags. Klicken Sie auf **Jetzt verlängern**, um zur Webversion der Richtlinie zu gelangen. Überprüfen Sie Ihre persönlichen Daten und Richtliniendetails und klicken Sie auf **Jetzt verlängern**. Es führt Sie zur Zahlung zu einem adaptiven Formular.
 
-The **Renew Now** button in the email directs Sarah to the web version of the policy. Sie können folgende URL aufrufen:
+Die Schaltfläche **Jetzt verlängern** in der E-Mail leitet Sarah zur Webversion der Richtlinie. Sie können folgende URL aufrufen:
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
+https://[publishServer]:[publishPort]/content/document.html?Schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
 
-You can check the detailed summary of your auto insurance renewal and click **Renew Now** at the bottom of the page.
+Sie können die detaillierte Zusammenfassung der Erneuerung Ihrer automatischen Versicherung überprüfen und unten auf der Seite auf **Jetzt verlängern** klicken.
 
-### Sarah öffnet die Zahlungsseite, leistet die Zahlung und schließt den Prozess ab {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
+### Sarah öffnet die Zahlungsseite, nimmt die Zahlung vor und schließt den Vorgang ab{#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
-Wenn Sarah in der Webversion der interaktiven Kommunikation auf **Jetzt** verlängern klickt, wird die Zahlungsseite geöffnet. Sarah überprüft ihre Richtliniennummer und ihr Ablaufdatum mit ihren Aufzeichnungen. Auf der rechten Seite der Seite prüft sie die Zahlungszusammenfassung ihrer Verlängerung mit 10% Premium Rabatt auf den Gesamtbetrag. Sarah gibt ihre Kreditkartendetails ein und klickt auf **Zahlung ausführen**.
+Wenn Sarah in der Webversion der interaktiven Kommunikation auf **Jetzt verlängern** klickt, wird die Zahlungsseite geöffnet. Sarah überprüft ihre Richtliniennummer und ihr Ablaufdatum mit ihren Aufzeichnungen. Auf der rechten Seite der Seite prüft sie die Zahlungszusammenfassung ihrer Verlängerung mit 10% Premium Rabatt auf den Gesamtbetrag. Sarah gibt ihre Kreditkartendetails ein und klickt auf **Zahlung ausführen**.
 
 ![payment-adaptive-form](assets/payment-adaptive-form.png)
 
@@ -926,8 +930,8 @@ Wenn Sarah in der Webversion der interaktiven Kommunikation auf **Jetzt** verlä
 
 #### Sehen Sie selbst{#see-it-yourself-20} 
 
-Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Fill in your Credit Card information, and click **Make Payment.** Sie können die Zahlungsseite in der Authoring-Instanz aufrufen unter:
+Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Geben Sie Ihre Kreditkarteninformationen ein und klicken Sie auf **Zahlung vornehmen.** Sie können die Zahlungsseite in der Authoring-Instanz aufrufen unter:
 
-https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=900001
+https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;Schema=fdm&amp;customerId=900001
 
 Die Dankesmeldung wird angezeigt, nachdem auf die Schaltfläche &quot;Zahlung vornehmen&quot;geklickt wurde.
