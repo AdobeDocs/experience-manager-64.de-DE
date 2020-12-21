@@ -35,13 +35,13 @@ Wenn das Paket installiert ist, werden die folgenden Entitäten und Dienste in I
 * MS Dynamics OData Cloud-Dienst (OData Service)
 * Formulardatenmodell mit vorkonfigurierten Microsoft Dynamics-Entitäten und -Diensten.
 
-The OData Cloud Service and form data model with preconfigured Microsoft Dynamics entities and services are available on your AEM Forms instance only if the run mode for the AEM instance is set as `samplecontent`(default). Weitere Informationen zum Konfigurieren von Ausführungsmodi für eine AEM-Instanz finden Sie unter [Ausführungsmodi](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
+Der OData-Cloud Service und das Formulardatenmodell mit vorkonfigurierten Microsoft Dynamics-Entitäten und -Diensten stehen auf Ihrer AEM Forms-Instanz nur zur Verfügung, wenn der Ausführungsmodus für die AEM Instanz auf `samplecontent` (Standard) eingestellt ist. Weitere Informationen zum Konfigurieren von Ausführungsmodi für eine AEM-Instanz finden Sie unter [Ausführungsmodi](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
 
 ## Voraussetzungen {#prerequisites}
 
 Bevor Sie mit dem Einrichten und Konfigurieren von Microsoft Dynamics beginnen, stellen Sie sicher, dass folgende Bedingungen erfüllt sind:
 
-* Installed the [AEM 6.4 Forms add-on package](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)
+* [AEM 6.4 Forms Add-On-Paket](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html) installiert
 * Microsoft Dynamics 365 online wurde konfiguriert oder eine Instanz einer der folgenden Microsoft Dynamics-Versionen wurde installiert:
 
    * Microsoft Dynamics 365 lokal
@@ -57,7 +57,7 @@ Gehen Sie folgendermaßen vor, um die Antwort-URL für eine registrierte Microso
 >
 >Verwenden Sie dieses Verfahren nur, wenn Sie AEM Forms in einen Microsoft Dynamics-Online-Server integrieren.
 
-1. Go to Microsoft Azure Active Directory account and add the following cloud service configuration URL in **[!UICONTROL Reply URLs]** settings for your registered application:
+1. Wechseln Sie zum Microsoft Azurblase Active Directory-Konto und fügen Sie die folgende Cloud-Dienst-Konfigurations-URL in den Einstellungen **[!UICONTROL URLs beantworten]** für Ihre registrierte Anwendung hinzu:
 
    `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
@@ -65,7 +65,7 @@ Gehen Sie folgendermaßen vor, um die Antwort-URL für eine registrierte Microso
 
 1. Speichern Sie die Konfiguration.
 
-## Konfigurieren Sie Microsoft Dynamics für IFD {#configure-microsoft-dynamics-for-ifd}
+## Konfigurieren Sie Microsoft Dynamics für IFD  {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics verwendet die anspruchsbasierte Authentifizierung, um externen Benutzern den Zugriff auf Daten auf dem Microsoft Dynamics CRM-Server zu ermöglichen. Führen Sie die folgenden Schritte aus, um Microsoft Dynamics für Bereitstellung mit Internetzugriff (IFD) zu konfigurieren und Schadenseinstellungen zu konfigurieren.
 
@@ -73,7 +73,7 @@ Microsoft Dynamics verwendet die anspruchsbasierte Authentifizierung, um externe
 >
 >Verwenden Sie dieses Verfahren nur, wenn Sie AEM Forms in einen Microsoft Dynamics-Server vor Ort integrieren.
 
-1. Configure Microsoft Dynamics on-premises instance for IFD as described in [Configure IFD for Microsoft Dynamics](https://technet.microsoft.com/en-us/library/dn609803.aspx).
+1. Konfigurieren Sie die Microsoft Dynamics-lokale Instanz für IFD wie unter [Konfigurieren von IFD für Microsoft Dynamics](https://technet.microsoft.com/en-us/library/dn609803.aspx) beschrieben.
 1. Führen Sie die folgenden Befehle mit Windows PowerShell aus, um die Anspruchseinstellungen für IFD-aktiviertes Microsoft Dynamics zu konfigurieren:
 
    ```
@@ -83,7 +83,7 @@ Microsoft Dynamics verwendet die anspruchsbasierte Authentifizierung, um externe
     Set-CrmSetting -Setting $ClaimsSettings
    ```
 
-   See [App registration for CRM on-premises (IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd) for details.
+   Weitere Informationen finden Sie unter [App-Registrierung für CRM-lokale (IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd).
 
 ## Konfigurieren des OAuth-Clients auf dem AD FS-Computer {#configure-oauth-client-on-ad-fs-machine}
 
@@ -118,16 +118,16 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem Active D
 
 ## Konfigurieren Sie den Cloud-Dienst für Ihren Microsoft Dynamics-Dienst {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. Gehen Sie wie folgt vor, um ihn für die Verbindung mit Ihrem Microsoft Dynamics -Dienst zu konfigurieren.
+Der **MS Dynamics OData Cloud Service (OData Service)** wird mit der Standardkonfiguration von OData geliefert. Gehen Sie wie folgt vor, um ihn für die Verbindung mit Ihrem Microsoft Dynamics -Dienst zu konfigurieren.
 
-1. Navigate to **[!UICONTROL Tools > Cloud Services > Data Sources]**, and tap the `global` configuration folder.
+1. Navigieren Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]** und tippen Sie auf den Konfigurationsordner `global`.
 1. Wählen Sie die **[!UICONTROL MS Dynamics OData Cloud-Dienst (OData Service)]**-Konfiguration und tippen Sie auf **[!UICONTROL Eigenschaften]**. Das Dialogfeld „Eigenschaften der Cloud-Dienstkonfiguration“ wird geöffnet.
 
    Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
 
-   1. Geben Sie den Wert für das Feld **[!UICONTROL Dienststamm]** ein. Go to the Dynamics instance and navigate to **[!UICONTROL Developer Resources]** to view the value for the Service Root field. Beispiel: https://
-   1. Ersetzen Sie die Standardwerte in der **[!UICONTROL Client ID]** (auch als **[!UICONTROL Application ID]** bezeichnet), die Felder **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]** und **[!UICONTROL Resource]** mit Werten aus Ihrer Microsoft Dynamics-Dienstkonfiguration. It is mandatory to specify the dynamics instance URL in the **[!UICONTROL Resource]** field to configure Microsoft Dynamics with a form data model. Verwenden Sie die Dienststamm-URL, um die URL der dynamischen Instanz abzuleiten. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
-   1. Specify **[!UICONTROL openid]** in the **[!UICONTROL Authorization Scope]** field for authorization process on Microsoft Dynamics.
+   1. Geben Sie den Wert für das Feld **[!UICONTROL Dienststamm]** ein. Wechseln Sie zur Dynamics-Instanz und navigieren Sie zu **[!UICONTROL Developer Resources]**, um den Wert für das Dienststammfeld Ansicht. Beispiel: https://
+   1. Ersetzen Sie die Standardwerte in der **[!UICONTROL Client ID]** (auch als **[!UICONTROL Application ID]** bezeichnet), die Felder **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]** und **[!UICONTROL Resource]** mit Werten aus Ihrer Microsoft Dynamics-Dienstkonfiguration. Die URL der dynamischen Instanz muss im Feld **[!UICONTROL Ressource]** angegeben werden, um Microsoft Dynamics mit einem Formulardatenmodell zu konfigurieren. Verwenden Sie die Dienststamm-URL, um die URL der dynamischen Instanz abzuleiten. Beispiel: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Geben Sie **[!UICONTROL openid]** im Feld **[!UICONTROL Autorisierungsbereich]** für den Autorisierungsprozess unter Microsoft Dynamics ein.
 
    ![dynamik_authentication_settings](assets/dynamics_authentication_settings.png)
 
@@ -140,7 +140,7 @@ Der MS Dynamics OData Cloud-Dienst (OData Service) ist konfiguriert und mit Ihre
 
 ## Formulardatenmodell erstellen {#create-form-data-model}
 
-When you install the AEM Forms package, a form data model,**Microsoft Dynamics FDM**, is deployed on your AEM instance. Standardmäßig verwendet das Formulardatenmodell den Microsoft Dynamics-Dienst, der im MS Dynamics OData Cloud Service (OData Service) als Datenquelle konfiguriert ist.
+Wenn Sie das AEM Forms-Paket installieren, wird auf Ihrer AEM ein Formulardatenmodell,**Microsoft Dynamics FDM**, bereitgestellt. Standardmäßig verwendet das Formulardatenmodell den Microsoft Dynamics-Dienst, der im MS Dynamics OData Cloud Service (OData Service) als Datenquelle konfiguriert ist.
 
 Beim ersten Öffnen des Formulardatenmodells verbindet es sich mit dem konfigurierten Microsoft Dynamics-Dienst und ruft Entitäten von Ihrer Microsoft Dynamics-Instanz auf. Die Entitäten „contact“ und „lead“ von Microsoft Dynamics sind bereits im Datenmodell des Formulars enthalten.
 
