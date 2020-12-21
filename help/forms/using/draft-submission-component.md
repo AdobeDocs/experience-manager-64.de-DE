@@ -21,18 +21,18 @@ ht-degree: 63%
 
 Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Die Benutzer können lediglich ihre eigenen Entwürfe und gesendeten Formulare anzeigen.
 
-## Komponente konfigurieren {#configuring-the-component}
+## Komponente konfigurieren  {#configuring-the-component}
 
 In der Komponente „Drafts and Submissions“ stehen die beiden Registerkarten „Drafts“ und „Submissions“ zur Verfügung.
 
-To enable submission of an adaptive form to appear in the submissions tab, set the **Submit action** to **[Forms Portal Submit Action](/help/forms/using/configuring-submit-actions.md).**Alternativ können Sie die Option &quot;Forms Portal-Senden&quot;aktivieren. Wenn ein Benutzer das Formular übermittelt, wird dieses der Registerkarte „Submissions“ hinzugefügt.
+Damit die Übermittlung eines adaptiven Formulars auf der Registerkarte &quot;Übermittlungen&quot;angezeigt werden kann, setzen Sie die Übermittlungsaktion **Übermittlungsaktion** auf **[Forms Portal-Übermittlungsaktion](/help/forms/using/configuring-submit-actions.md).** Alternativ können Sie die Option &quot;Forms Portal-Senden&quot;aktivieren. Wenn ein Benutzer das Formular übermittelt, wird dieses der Registerkarte „Submissions“ hinzugefügt.
 
 Die Entwurfsfunktion ist standardmäßig aktiviert. Wenn der Benutzer in einem adaptiven Formular auf **Speichern** klickt, wird dieses der Registerkarte „Drafts“ hinzugefügt.
 
 Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submissions“ hinzuzufügen:
 
 1. Ziehen Sie die Komponente **Drafts &amp; Submissions** unter Document Services-Kategorie im Komponenten-Browser zu Ihrer Seite per Drag &amp; Drop.
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component.
+1. Tippen Sie auf die Komponente und dann auf ![settings_icon](assets/settings_icon.png), um das Dialogfeld &quot;Bearbeiten&quot;für die Komponente zu öffnen.
 
    ![Komponente „Drafts &amp; Submissions“](assets/drafts-submissions-edit.png)
 
@@ -48,17 +48,17 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
   <tr>
    <td>Allgemein</td>
    <td>Gesamtergebnis</td>
-   <td>Gibt die maximal mögliche Anzahl anzuzeigender Ergebnisse an. Sind mehr Ergebnisse vorhanden, als für Gesamtergebnis angegeben wurde, wird am unteren Ende der Komponente der Link <strong>Mehr</strong> angezeigt. Clicking <strong>More </strong>shows all the forms. </td>
+   <td>Gibt die maximal mögliche Anzahl anzuzeigender Ergebnisse an. Sind mehr Ergebnisse vorhanden, als für Gesamtergebnis angegeben wurde, wird am unteren Ende der Komponente der Link <strong>Mehr</strong> angezeigt. Wenn Sie auf <strong>Mehr </strong>klicken, werden alle Formulare angezeigt. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Style Type (Stiltyp)</td>
-   <td>Legt den Stil der Komponente fest. You can specify <strong>No Style</strong>, <strong>Default Style</strong>, or <strong>Custom Style</strong> for listing the forms. Für die Option „Custom Style“ können Sie den Pfad zu Ihrem benutzerdefinierten CSS im Feld <strong>Custom Style Path</strong> angeben<strong>.</strong></td>
+   <td>Legt den Stil der Komponente fest. Sie können <strong>Kein Stil</strong>, <strong>Standardstil</strong> oder <strong>Benutzerdefinierter Stil</strong> für die Auflistung der Formulare angeben. Für die Option „Custom Style“ können Sie den Pfad zu Ihrem benutzerdefinierten CSS im Feld <strong>Custom Style Path</strong> angeben<strong>.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Custom Style Path (Pfad für benutzerdefinierten Stil)</td>
-   <td>If you choose <strong>Custom Style</strong> option in the <strong>Style Type</strong> field, use the <strong>Custom Style Path</strong> field to specify the path of custom CSS file. </td>
+   <td>Wenn Sie die Option <strong>Benutzerdefinierter Stil</strong> im Feld <strong>Stiltyp</strong> wählen, geben Sie im Feld <strong>Benutzerdefinierter Stilpfad</strong> den Pfad der benutzerdefinierten CSS-Datei an. </td>
   </tr>
   <tr>
    <td> </td>
@@ -88,7 +88,7 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
   <tr>
    <td> </td>
    <td>Layout-Vorlage</td>
-   <td>Specifies the layout to use for Submitted Forms<strong> </strong>list. </td>
+   <td>Gibt das Layout an, das für die Liste Submitted Forms<strong> </strong>verwendet werden soll. </td>
   </tr>
  </tbody>
 </table>
@@ -99,7 +99,7 @@ Wenn Sie die Forms Portal Aktion-Übermittlungsaktion verwenden oder die Store-D
 
 Mit dem Forms Portal können Sie Daten im lokalen AEM Repository, im Remote AEM Repository oder in einer Datenbank speichern. Mit AEM Forms können Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen. Sie können Standardmethoden außer Kraft setzen, um anzugeben, wie Entwurfs- und Übermittlungsdaten in einer Datenspeicherung Ihrer Wahl gespeichert werden. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
-Forms Portal bietet Out-of-the-Box-Dienste (APIs) zum Speichern von Daten im CRX-Repository von lokalen und Remote-AEM Forms-Veröffentlichungsinstanzen. Sie können die Standardimplementierungen, die im Artikel zum [Konfigurieren von Datenspeicherung für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschrieben sind, durch benutzerdefinierte Implementierungen ersetzen, um die Standardfunktion zu ersetzen. Detaillierte Informationen zu den Methoden, die in einer benutzerdefinierten Implementierung zum Speichern von Inhalten an einem gesicherten Speicherort erforderlich sind, finden Sie unter [Anpassen von Entwurfs- und Übermittlungsdatendiensten](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerspezifische Datenspeicherung für die Komponente &quot;Drafts and Submissions&quot;.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms Portal bietet Out-of-the-Box-Dienste (APIs) zum Speichern von Daten im CRX-Repository von lokalen und Remote-AEM Forms-Veröffentlichungsinstanzen. Sie können die im Artikel [Konfigurieren von Datenspeicherung für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschriebenen Standardimplementierungen durch benutzerdefinierte Implementierungen ersetzen, um Standardfunktionen zu ersetzen. Ausführliche Informationen zu den Methoden, die in einer benutzerdefinierten Implementierung zum Speichern von Inhalten an einem geschützten Speicherort erforderlich sind, finden Sie unter [Anpassen der Entwurfs- und Übermittlungsdatendienste](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerdefinierte Datenspeicherung für die Komponente &quot;Drafts and Submissions&quot;.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
 Die AEM Forms-Dokumentation enthält ein [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Sie können die Beispielimplementierung verwenden, um Ihre eigene benutzerdefinierte Implementierung zu entwickeln.
 
