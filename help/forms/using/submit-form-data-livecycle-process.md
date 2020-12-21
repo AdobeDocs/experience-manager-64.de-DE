@@ -25,7 +25,7 @@ Adaptive Formulare unterstützen die Übermittlung von Daten an einen AEM Forms 
 
 Führen Sie die folgenden Schritte aus, damit Ihr AEM Forms-Server Daten an einen AEM Forms on JEE-Server senden kann:
 
-1. Go to AEM web configuration console at https://[*host*]:[*port*]/system/console/configMgr.
+1. Wechseln Sie zu AEM Webkonfigurationskonsole unter https://[*host*]:[*port*]/system/console/configMgr.
 
 1. Klicken Sie auf die **Adobe LiveCycle Client SDK-Konfigurationskomponente.**
 1. Klicken Sie auf die Komponente, um URL, Benutzernamen und das Kennwort des AEM Forms on JEE-Servers zu bearbeiten.
@@ -40,7 +40,7 @@ Nachdem der AEM Forms konfiguriert ist, ordnen Sie die Daten-XML und Anhänge vo
 1. In der AEM-Web-Konfigurationskonsole klicken Sie auf **Guide LiveCycle Process Locator and Invoker**, um die Konfiguration zu bearbeiten.
 1. Geben Sie die folgenden Parameter an:
 
-   * **Name des data xml-Parameters** (obligatorisch): Geben Sie die XML-Eigenschaftendatei des AEM Forms on JEE-Prozesses an, der die gesendeten Daten verarbeiten soll. Der Standardwert lautet **dataxml**.
+   * **Name des data xml-Parameters**  (obligatorisch): Geben Sie die XML-Eigenschaftendatei des AEM Forms on JEE-Prozesses an, der die gesendeten Daten verarbeiten soll. Der Standardwert lautet **dataxml**.
    * **Name des Dateianlagenparameters**(optional): Geben Sie die Liste der Dokumentobjekte an, die der AEM Forms on JEE-Prozess verarbeiten muss. Der Standardwert lautet **fileAttachmentsList**.
 
 1. Überprüfen Sie die Einstellungen und klicken Sie auf **Speichern**.
