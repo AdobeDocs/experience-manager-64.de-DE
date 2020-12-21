@@ -33,7 +33,7 @@ Um eine Reviewer-Gruppe mit einem Formular zu verknüpfen, bearbeiten Sie das Me
 Bearbeiten des Metadatenschemas:
 
 1. Klicken Sie im Autorenmodus unter Experience Manager auf **[!UICONTROL Extras > Assets > Metadatenschemas]**.
-1. In the Schema Forms page, navigate to **[!UICONTROL Forms > Forms Authored in AEM]**.
+1. Navigieren Sie auf der Seite &quot;Schema Forms&quot;zu **[!UICONTROL Forms > Forms, das in AEM]** verfasst wurde.
 
    Die URL der Seite lautet:
 
@@ -43,12 +43,12 @@ Bearbeiten des Metadatenschemas:
     aem-authored
    ```
 
-1. Select **[!UICONTROL Adaptive Form]** and click **[!UICONTROL Edit]**.
+1. Wählen Sie **[!UICONTROL Adaptives Formular]** und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie auf der Seite „Formular bearbeiten“ **[!UICONTROL Erweitert]**.
-1. In the Advanced tab, drag-and-drop the **[!UICONTROL Single Line Text]** component available under Build Form.
+1. Ziehen Sie auf der Registerkarte &quot;Erweitert&quot;die Komponente **[!UICONTROL Einzelzeilentext]**, die unter &quot;Formular erstellen&quot;verfügbar ist.
 1. Wählen Sie die hinzugefügte Textkomponente aus, um die Einstellungen zu überprüfen.
 
-   Geben Sie unter &quot;Einstellungen&quot; `./jcr:content/metadata/form-submission-reviewer-group` im Feld &quot;Zuordnung zu Eigenschaft&quot;ein.
+   Geben Sie unter &quot;Einstellungen&quot;im Feld &quot;Zu Eigenschaft zuordnen&quot;`./jcr:content/metadata/form-submission-reviewer-group` ein.
 
    Das Feld für die Reviewer-Gruppe-Gruppenfeld in den erweiterten Eigenschaften des adaptiven Formulars wird mit dem Namen aktiviert, den Sie unter „Feldbezeichnung“ angeben.
 
@@ -59,9 +59,9 @@ Mit Benutzergruppen können Sie verschiedene Sätze von Reviewern für Übermitt
 
 Bevor Sie die folgenden Schritte ausführen, lesen Sie die [ Voraussetzungen](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
-To create a group and add members to it, navigate to **[!UICONTROL Tools > Operations > Security > Groups]**.\
-For more information, see [User Administration and Services](/help/sites-administering/security.md).\
-Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms ausgeliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
+Um eine Gruppe zu erstellen und ihr Mitglieder hinzuzufügen, navigieren Sie zu **[!UICONTROL Tools > Vorgänge > Sicherheit > Gruppen]**.\
+Weitere Informationen finden Sie unter [Benutzerverwaltung und Dienste](/help/sites-administering/security.md).\
+Stellen Sie sicher, dass Sie die erstellte Gruppe als Mitglied der vordefinierten Benutzergruppe hinzufügen: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms ausgeliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
 
 Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 
