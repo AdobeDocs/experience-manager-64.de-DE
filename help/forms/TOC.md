@@ -27,20 +27,20 @@ ht-degree: 73%
    + [Einführung in das Bearbeiten adaptiver Formulare](using/introduction-forms-authoring.md)
    + [Einführung in die interaktive Kommunikation](using/interactive-communications-overview.md)
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
-   + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
+   + Übung: Erstes adaptives Formular {#create-first-adaptive-form} erstellen
       + [Übung: Erstellen des ersten adaptiven Formulars](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
       + [Schulung: Formulardatenmodell erstellen](using/create-form-data-model.md)
       + [Übung: Regeln auf Felder in adaptiven Formularen anwenden](using/apply-rules-to-adaptive-form-fields.md)
       + [Übung: Gestalten Sie Ihr adaptives Formular](using/style-your-adaptive-form.md)
-   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
+   + Übung: Erste interaktive Kommunikation erstellen {#create-first-interactive-communication}
       + [Tutorial: Erstellen Sie Ihre erste interaktive Kommunikation](using/create-your-first-interactive-communication.md)
       + [Tutorial: Interaktive Kommunikation planen](using/planning-interactive-communications.md)
       + [Schulung: Formulardatenmodell erstellen](using/create-form-data-model-tutorial.md)
       + [Tutorial: Erstellen Sie Dokumentfragmente](using/create-document-fragments.md)
       + [Tutorial: Erstellen Sie Vorlagen](using/create-templates-print-web.md)
       + [Tutorial: Erstellen einer interaktiven Kommunikation](using/create-interactive-communication-tutorial.md)
-   + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
+   + AEM Forms-Referenzsicherheiten {#aem-forms-reference-collaterals}
       + [Einrichten und Konfigurieren von AEM Forms-Referenzwebsites](using/setup-reference-sites.md)
       + [Schrittweise Anleitung zur We.Finance-Referenz-Site](using/finance-reference-site-walkthrough.md)
       + [Schrittweise Anleitung zur We.Gov-Referenz-Site](using/gov-reference-site-walkthrough.md)
@@ -61,7 +61,7 @@ ht-degree: 73%
       + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](using/installing-configuring-aem-forms-osgi.md)
       + [Forms-zentrierten Arbeitsablauf unter OSGi installieren und konfigurieren](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installieren und konfigurieren Sie Interaktive Kommunikationen](using/installing-configuring-intreactive-communication-correspondence-management.md)
-   + Install AEM Forms on JEE {#jee-installation}
+   + Installieren von AEM Forms on JEE {#jee-installation}
       + [Unterstützte Plattformen für AEM Forms on JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_de)
       + [Nur Dokument-Sicherheitsserver installieren und konfigurieren](using/installing-and-configuring-the-document-security-server.md)
@@ -84,9 +84,9 @@ ht-degree: 73%
       + [Verbinden von AEM Forms mit Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Konfigurieren von AEM Forms zum Senden von Formulardaten an einen AEM Forms on JEE-Prozess](using/submit-form-data-livecycle-process.md)
       + [AEM Desktop-App für AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ Upgrade AEM Forms {#upgrade-aem-forms}
++ AEM Forms {#upgrade-aem-forms} aktualisieren
    + [Verfügbare Aktualisierungspfade](using/upgrade.md)
-   + AEM Forms auf OSGi aktualisieren {#aem-forms-osgi-upgrade}
+   + AEM Forms auf OSGi aktualisieren{#aem-forms-osgi-upgrade}
       + [Aktualisierung auf AEM 6.4 Forms unter OSGi](using/upgrade-forms-osgi.md)
       + [Installieren Sie das Kompatibilitäts-Paket](using/compatibility-package.md)
       + [Migration der Assets und Dokumente von AEM Forms](using/migration-utility.md)
@@ -112,7 +112,7 @@ ht-degree: 73%
    + [XDP- und PDF-Dokumente in AEM Forms übernehmen](using/get-xdp-pdf-documents-aem.md)
    + [Importieren und Exportieren von Assets in AEM Forms](using/import-export-forms-templates.md)
    + [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](using/supporting-new-language-localization.md)
-   + Handling user data {#handling-user-data}
+   + Umgang mit Benutzerdaten {#handling-user-data}
       + [Forms-zentrierte Workflows auf OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Forms-Benutzerverwaltung](using/user-management-handling-user-data.md)
       + [Forms JEE Workflows](using/forms-workflow-jee-handling-user-data.md)
@@ -120,7 +120,7 @@ ht-degree: 73%
       + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
       + [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
-   + Hardening AEM Forms Environment {#hardening-aem-forms-environment}
+   + Härtung der AEM Forms-Umgebung {#hardening-aem-forms-environment}
       + [Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen](using/hardening-securing-aem-forms-environment.md)
       + [Allgemeine Sicherheitsaspekte für AEM Forms auf JEE](using/general-security-considerations.md)
       + [Härtung Ihrer AEM Forms auf JEE-Umgebung](using/hardening-aem-forms-jee-environment.md)
@@ -323,13 +323,13 @@ ht-degree: 73%
    + [Inline-Bedingung und Wiederholung in der interaktiven Kommunikation und in Briefen](using/cm-inline-condition.md)
    + [Dokumentfragmente](using/lists.md)
    + [Eogenschaften der Correspondence Management-Konfiguration](using/cm-configuration-properties.md)
-+ Integrate AEM Forms with Experience Cloud solutions {#integrate-aem-forms-with-experience-cloud-solutions}
++ AEM Forms mit Experience Cloud-Lösungen {#integrate-aem-forms-with-experience-cloud-solutions} integrieren
    + [Erstellen zielgerichteter Erlebnisse in AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Messen und Verbessern der Effektivität und Konvertierung von Formularen](using/measure-improve-performance-forms-documents.md)
    + [Konfigurieren von Analysen und Berichten](using/configure-analytics-forms-documents.md)
    + [Anzeigen und Verstehen der Analytics-Berichte in AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Erstellen und Verwalten von A/B-Test für adaptive Formulare](using/ab-testing-adaptive-forms.md)
-+ Publish and process AEM Forms {#publish-process-aem-forms}
++ Veröffentlichen und Verarbeiten von AEM Forms {#publish-process-aem-forms}
    + [Einführung in das Veröffentlichen von Formularen in einem Portal](using/introduction-publishing-forms.md)
    + [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](using/integrate-draft-submission-database.md)
    + [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](using/configuring-draft-submission-storage.md)
@@ -573,7 +573,7 @@ ht-degree: 73%
    + [Fehlerbehebung für Process Berichte](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Entwicklerreferenz {#developer-reference}
    + [Entwicklergrundlagen](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML-Vorlagensprache](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
+   + [HTML-Vorlagensprache](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
    + [AEM-Plug-In, um adaptive Formulare zu debuggen](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API-Referenz](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API-Referenz](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
@@ -581,7 +581,7 @@ ht-degree: 73%
    + [Referenz für JavaScript-Bibliotheks-API für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-4/forms/javascript-api/index.html)
    + [Assembler Service und DDX-Referenz](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Workbench-Hilfe](http://www.adobe.com/go/learn_aemforms_workbench_64)
-   + Programmierung mit AEM Forms on JEE {#programming-aem-forms-jee}
+   + Programmieren mit AEM Forms on JEE {#programming-aem-forms-jee}
       + Einführung in die Programmierung mit AEM Forms on JEE {#introduction-programming-aem-forms-jee}
          + [Einführung in Java API QuickStart](developing/introducing-java-api-soap-quick.md)
          + [Aufrufen von AEM Forms mithilfe von APIs](developing/invoking-aem-forms-using-apis.md)
