@@ -31,7 +31,7 @@ Mit Transaktionsberichten in AEM Forms können Sie alle Transaktionen zählen, d
 
 Weitere Informationen zu einer Transaktion finden Sie unter [Billable APIs](/help/forms/using/transaction-reports-billable-apis.md).
 
-Die Transaktionsaufzeichnung ist standardmäßig deaktiviert. Sie können die Transaktionsaufzeichnung über AEM Web Console [aktivieren](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) . Sie können Transaktionsberichte zu Autoren-, Verarbeitungs- oder Veröffentlichungsinstanzen Ansicht geben. Ansicht-Transaktionsberichte zu Autoren- oder Verarbeitungsinstanzen für eine aggregierte Summe aller Transaktionen. Ansicht-Transaktionsberichte zu den Instanzen im Veröffentlichungsmodus für eine Zählung aller Transaktionen, die nur in der Veröffentlichungsinstanz stattfinden, von der aus der Bericht ausgeführt wird.
+Die Transaktionsaufzeichnung ist standardmäßig deaktiviert. Sie können [die Transaktionsaufzeichnung](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) in AEM Web-Konsole aktivieren. Sie können Transaktionsberichte zu Autoren-, Verarbeitungs- oder Veröffentlichungsinstanzen Ansicht geben. Ansicht-Transaktionsberichte zu Autoren- oder Verarbeitungsinstanzen für eine aggregierte Summe aller Transaktionen. Ansicht-Transaktionsberichte zu den Instanzen im Veröffentlichungsmodus für eine Zählung aller Transaktionen, die nur in der Veröffentlichungsinstanz stattfinden, von der aus der Bericht ausgeführt wird.
 
 Erstellen Sie keine Inhalte (Erstellen Sie adaptive Formulare, interaktive Kommunikation, Themen und andere Authoring-Aktivitäten) und verarbeiten Sie Dokumente (Verwenden Sie Workflows, Dokument-Dienste und andere Aktivitäten zur Verarbeitung) auf derselben AEM Instanz. Halten Sie die Transaktionsaufzeichnung für AEM Forms-Server, die zum Erstellen von Inhalten verwendet werden, deaktiviert. Lassen Sie die Transaktionsaufzeichnung für AEM Forms-Server aktiviert, die zur Verarbeitung von Dokumenten verwendet werden.
 
@@ -43,7 +43,7 @@ Aktionen wie das Senden eines PDF-Formulars, die Verwendung der Agent-Benutzerob
 
 ## Unterstützte Topologie {#supported-topology}
 
-Transaktionsberichte sind nur unter AEM Forms auf OSGi-Umgebung verfügbar. Es unterstützt Autoren-, Veröffentlichungs-, Authoring- und Veröffentlichungstopologien sowie ausschließlich Verarbeitungstopologien. For example topologies, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/transaction-reports-overview.md).
+Transaktionsberichte sind nur unter AEM Forms auf OSGi-Umgebung verfügbar. Es unterstützt Autoren-, Veröffentlichungs-, Authoring- und Veröffentlichungstopologien sowie ausschließlich Verarbeitungstopologien. Beispielsweise finden Sie unter [Architektur- und Bereitstellungstopologien für AEM Forms](/help/forms/using/transaction-reports-overview.md).
 
 Die Transaktionsanzahl wird umgekehrt von Veröffentlichungsinstanzen zu Autoren- oder Verarbeitungsinstanzen repliziert. Eine indikative Autor-Veröffentlichungstopologie wird unten angezeigt:
 
@@ -56,12 +56,12 @@ Die Transaktionsanzahl wird umgekehrt von Veröffentlichungsinstanzen zu Autoren
 ### Richtlinien für die Verwendung von Transaktionsberichten {#guidelines-for-using-transaction-reports}
 
 * Deaktivieren Sie Transaktionsberichte für alle Autoreninstanzen, da Berichte zu Autoreninstanzen Transaktionen enthalten, die während der Authoring-Aktivitäten registriert wurden.
-* Aktivieren Sie die Option **Transaktionen nur** im Autorenmodus anzeigen, um kumulative Transaktionen aus allen Instanzen im Veröffentlichungsmodus Ansicht. Sie können auch Transaktionsberichte für jede Instanz im Veröffentlichungsmodus nur für Transaktionen in dieser bestimmten Instanz im Veröffentlichungsmodus Ansicht geben.
+* Aktivieren Sie die Option **Nur Transaktionen von Veröffentlichungsinstanz anzeigen**, um kumulative Transaktionen von allen Veröffentlichungsinstanzen Ansicht. Sie können auch Transaktionsberichte für jede Instanz im Veröffentlichungsmodus nur für Transaktionen in dieser bestimmten Instanz im Veröffentlichungsmodus Ansicht geben.
 * Verwenden Sie keine Autoreninstanzen, um Workflows auszuführen und Dokumente zu verarbeiten.
 * Wenn Sie über eine Toplogie mit Veröffentlichungsservern verfügen, stellen Sie vor der Verwendung von transaction Berichte sicher, dass die umgekehrte Replizierung für alle Veröffentlichungsinstanzen aktiviert ist.
-* Transaktionsdaten werden von einer Veröffentlichungsinstanz in nur die entsprechende Autoren- oder Verarbeitungsinstanz umgekehrt repliziert. Die Autor- oder Verarbeitungsinstanz kann Daten nicht weiter in eine andere Instanz replizieren. Wenn Sie z. B. über eine Topologie zum Verarbeiten des Autors und Veröffentlichen verfügen, werden aggregierte Transaktionsdaten nur in die Verarbeitungsinstanz repliziert.
+* Transaktionsdaten werden von einer Veröffentlichungsinstanz in nur die entsprechende Autoren- oder Verarbeitungsinstanz umgekehrt repliziert. Der Autor oder die Verarbeitungsinstanz können Daten nicht weiter in eine andere Instanz replizieren. Wenn Sie z. B. über eine Topologie zum Verarbeiten des Autors und Veröffentlichen verfügen, werden aggregierte Transaktionsdaten nur in die Verarbeitungsinstanz repliziert.
 
-## Related Articles {#related-articles}
+## Verwandte Artikel {#related-articles}
 
 * [Anzeigen und Verstehen von Transaktionsberichten](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Transaktionsberichte Abrechnungsfähige APIs](/help/forms/using/transaction-reports-billable-apis.md)
