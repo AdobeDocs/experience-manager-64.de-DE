@@ -20,9 +20,9 @@ ht-degree: 4%
 
 # Bewertungsgrundlagen {#rating-essentials}
 
-Die Bewertungskomponente, eine [tally](tally.md) -Unterklasse, ermöglicht es den angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
+Die Bewertungskomponente, eine [tally](tally.md)-Unterklasse, ermöglicht es den angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
 
-Die Platzierung mehrerer Instanzen einer stimmberechtigten Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` Eigenschaft konfiguriert werden.
+Die Platzierung mehrerer Instanzen einer stimmberechtigten Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
 
 Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilzunehmen. Der in Besucher (Mitglied) unterzeichnete Vertrag kann seine Berechtigung jederzeit ändern.
 
@@ -36,7 +36,7 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
   </tr> 
   <tr> 
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td> 
-   <td>Ja - Eigenschaften können im <i>Designmodus bearbeitet </i>werden</td> 
+   <td>Ja - Eigenschaften können im <i>design </i>mode bearbeitet werden</td> 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
@@ -52,7 +52,7 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
   </tr> 
   <tr> 
    <td><strong>properties</strong></td> 
-   <td><p>Siehe <a href="rating.md">Verwenden von Bewertung</a></p> </td> 
+   <td><p>Siehe <a href="rating.md">Rating</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -72,14 +72,14 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
 UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.\
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
