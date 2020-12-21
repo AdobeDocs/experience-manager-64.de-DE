@@ -25,13 +25,13 @@ Sie können die AEM Forms-App nicht bearbeiten, indem Sie die App mit dem AEM Fo
 
 Ausführliche Informationen zum Synchronisieren der App finden Sie unter [Synchronisieren der App](/help/forms/using/sync-app.md).
 
-## Offline-Verfügbarkeit von Formularen {#making-forms-available-offline}
+## Offline-Verfügbarkeit von Formularen  {#making-forms-available-offline}
 
 Wenn Sie die App mit dem AEM Forms-Server synchronisieren, werden die Formulare auf Ihr mobiles Gerät heruntergeladen. Die mit der Aufgabe verknüpften Anhänge werden jedoch standardmäßig nicht heruntergeladen. Dies bedeutet, dass Sie die Anhänge anzeigen können, wenn Sie online sind. Um jedoch sicherzustellen, dass Sie die Anhänge im Offline-Modus anzeigen können, ändern Sie die Standardeinstellungen der App.
 
 Damit die verknüpften Anlagen mit jedem Formular heruntergeladen werden, müssen Sie die Option zum Abrufen der Anhänge auf „ON“ setzen. Ausführliche Informationen finden Sie unter [Aktualisieren von allgemeinen Einstellungen](/help/forms/using/update-general-settings.md).
 
-Da das Herunterladen von Daten die Leistung des mobilen Geräts beeinträchtigen kann, ist die Option „Fetch attachments“ standardmäßig auf „OFF“ gesetzt. Wenn diese Einstellung auf „ON“ gesetzt wird, werden die Anlagen für alle Aufgaben, die danach vom Server heruntergeladen werden, auf das mobile Gerät geladen. In the offline mode, a user can then work on all tasks that are downloaded to device after setting the **Fetch attachments** options to ON.
+Da das Herunterladen von Daten die Leistung des mobilen Geräts beeinträchtigen kann, ist die Option „Fetch attachments“ standardmäßig auf „OFF“ gesetzt. Wenn diese Einstellung auf „ON“ gesetzt wird, werden die Anlagen für alle Aufgaben, die danach vom Server heruntergeladen werden, auf das mobile Gerät geladen. Im Offlinemodus kann ein Benutzer dann an allen Aufgaben arbeiten, die auf das Gerät heruntergeladen werden, nachdem die Optionen **Fetch attachments** auf ON gesetzt wurden.
 
 ## Konfiguration des Offlinedienstes für die AEM Forms-App {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -39,7 +39,7 @@ Der Dienst für die AEM Forms Offline-App identifiziert die in einem Formular ve
 
 Serverseitige Offlinekomponente der AEM Forms-App konfigurieren:
 
-1. In the author instance, navigate to **Adobe Experience Manager** >**Tools** > **Forms** > **Configure Forms App Offline Service**.
+1. Navigieren Sie in der Autoreninstanz zu **Adobe Experience Manager** >**Tools** > **Forms** > **Forms App Offline-Dienst konfigurieren**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
