@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Generate PDF Service Java API Quick Beginn (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
+# Generieren des Java-API-Quick-Beginns für den PDF-Dienst (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
 Java API Quick Beginn (SOAP) ist für den Generate PDF-Dienst verfügbar.
 
@@ -34,9 +34,9 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 >
 >Quick Beginn im Verzeichnis &quot;Programmieren mit AEM Forms&quot;basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Start (SOAP mode): Converting a Microsoft Word document to a PDF document using the Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mit der Java-API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-Im folgenden Codebeispiel wird eine Word-Datei mit dem Namen *Loan.doc* in ein PDF-Dokument mit dem Namen *Loan.pdf* konvertiert. (Siehe [Konvertieren von Word-Dokumenten in PDF-Dokumente](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
+Im folgenden Codebeispiel wird eine Word-Datei mit dem Namen *Loan.doc* in ein PDF-Dokument mit dem Namen *Loan.pdf* konvertiert. (Siehe [Word-Dokumente in PDF-Dokumente konvertieren](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
 ```as3
  /* 
