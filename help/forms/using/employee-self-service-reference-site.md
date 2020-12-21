@@ -16,13 +16,13 @@ ht-degree: 84%
 ---
 
 
-# Mitarbeiter-Self-Service exemplarische Vorgehensweise für Referenz-Website {#employee-self-service-reference-site-walkthrough}
+# Mitarbeiter-Self-Service Referenz-Website-Umgehungslösung {#employee-self-service-reference-site-walkthrough}
 
 ## Voraussetzung {#prerequisite}
 
 Richten Sie die Referenz-Websites ein wie in [Einrichten und Konfigurieren von AEM Forms-Referenz-Websites](/help/forms/using/setup-reference-sites.md) beschrieben.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mitarbeiter-Self-Service-Systeme, die in der Regel im firmeneigenen Intranet gehostet werden, bieten Mitarbeitern Zugang zu einer Vielzahl von Informationen und Diensten, die sie von ihrem Schreibtisch aus nutzen können. Es gibt den Mitarbeitern die vollständige Kontrolle über die Durchführung von Maßnahmen wie den Zugang zu ihren Mitarbeiterdaten, die Beantragung von Urlaub und das Einreichen von Spesenabrechnungen. Umgekehrt hilft es Organisationen, die Prozesseffizienz zu verbessern und Kosten zu senken, während die Mitarbeiter informiert und engagiert bleiben.
 
@@ -42,9 +42,11 @@ Die Compliance Abteilung der Sarah hat Mitarbeiter gebeten, den Fragebogen zu In
 
 Sarah geht zum Portal ihrer Organisation, meldet sich an und klickt auf „Mitarbeiter“, um auf das Mitarbeiter-Dashboard zuzugreifen. Sie findet den Fragebogen zu Interessenkonflikten auf dem Mitarbeiter-Dashboard und klickt auf **[!UICONTROL Beantragen.]**
 
-![we-finance-home](assets/we-finance-home.png)**Abbildung:** *Organisationsportal*
+![we-finance-](assets/we-finance-home.png)
+**homeAbbildung:** *Organisationsportal*
 
-![employee-Dashboard](assets/employee-dashboard.png)**Abbildung:** *Dashboard der Beschäftigten*
+![employee-](assets/employee-dashboard.png)
+**dashboardAbbildung:** *Employee-Dashboard*
 
 Sarah navigiert durch das Formular mit der Schaltfläche „Weiter“ und liest die Abschnitte „Einführung“ und „Definition“. Sie beantwortet die Fragen im Abschnitt „Fragen“. Schließlich unterschreibt sie den Fragebogen und reicht ihn ein.
 
@@ -60,15 +62,17 @@ Das adaptive Formular verwendet Regeln, um Informationen basierend auf der Antwo
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie anschließend auf **[!UICONTROL Beantragen]** im Fragebogen zu Interessenkonflikten. Überprüfen und übermitteln Sie den Fragebogen.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah an. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie anschließend auf **[!UICONTROL Beantragen]** im Fragebogen zu Interessenkonflikten. Überprüfen und übermitteln Sie den Fragebogen.
 
-### Gloria prüft und genehmigt die Übermittlung des Fragebogens zu Interessenkonflikten {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
+### Gloria prüft und genehmigt die Übermittlung des Fragebogens zu Interessenkonflikten  {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
 
 Der von Sarah eingereichte Fragebogen zum Interessenkonflikt wird Gloria Rios zur Überprüfung übergeben. Gloria arbeitet als Compliance Officer in dem Unternehmen. Gloria meldet sich bei ihrem AEM-Posteingang an und überprüft die ihr zugewiesenen Aufgaben. Sie genehmigt den von Sarah eingereichten Fragebogen und schließt die Aufgabe ab.
 
-![konflikt-inbox](assets/conflict-inbox.png)**Abbildung:** *Glorias Posteingang*
+![konflikt-](assets/conflict-inbox.png)
+**inboxAbbildung:** *Glorias Posteingang*
 
-![konfliktbestätigte](assets/conflict-approved.png)**Abbildung:** *Aufgabe öffnen*
+![konfliktgenehmigt ](assets/conflict-approved.png)
+**Abbildung:Aufgabe** *öffnen*
 
 **Funktionsweise**
 
@@ -78,19 +82,21 @@ Die Übermittlungsaktion im Fragebogen „Interessenkonflikt“ löst einen Work
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Öffnen Sie die für den Fragebogen zu Interessenkonflikten erstellte Aufgabe und genehmigen Sie diese.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios an. Öffnen Sie die für den Fragebogen zu Interessenkonflikten erstellte Aufgabe und genehmigen Sie diese.
 
 ## Antrag auf Unternehmenskarte - Anleitung {#corporate-card-application-walkthrough}
 
 Sarah reist viel geschäftlich und benötigt eine Unternehmenskreditkarte, um ihre Rechnungen unterwegs zu bezahlen. Sie beantragt eine Firmenkarte über das Mitarbeiterportal ihres Unternehmens.
 
-### Sarah reicht den Antrag für die Unternehmenskarte ein {#sarah-submits-the-corporate-card-application}
+### Sarah reicht den Antrag für die Unternehmenskarte ein  {#sarah-submits-the-corporate-card-application}
 
 Sarah geht zum Portal ihres Unternehmens, meldet sich an und klickt auf **[!UICONTROL Mitarbeiter]**, um auf das Mitarbeiter-Dashboard zuzugreifen. Sie findet den Antrag für die Unternehmenskarte auf dem Mitarbeiter-Dashboard und klickt auf **[!UICONTROL Übernehmen]**.
 
-![we-finance-home-1](assets/we-finance-home-1.png)**Abbildung:** *Organisationsportal*
+![we-finance-home-1](assets/we-finance-home-1.png)
+**Abbildung:** *Organisationsportal*
 
-![employee-Dashboard-1](assets/employee-dashboard-1.png)**Abbildung:** *Dashboard der Beschäftigten*
+![employee-Dashboard-1](assets/employee-dashboard-1.png)
+**Abbildung:** *Employee Dashboard*
 
 Sie klickt auf **[!UICONTROL Übernehmen]** im Antrag für die Unternehmenskarte. Ein Antrag auf einer einzelnen Seite wird geöffnet. Sie füllt alle Details aus und klickt auf **[!UICONTROL Übernehmen]**, um die Anwendung zu senden.
 
@@ -105,15 +111,17 @@ Das adaptive Formular für einen Antrag auf eine Unternehmenskarte ist ein einfa
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Übernehmen]** im Antrag auf die Unternehmenskarte. Geben Sie die Details ein und senden Sie den Antrag ab.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah an. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Übernehmen]** im Antrag auf die Unternehmenskarte. Geben Sie die Details ein und senden Sie den Antrag ab.
 
-### Gloria prüft und genehmigt die Anwendung der Unternehmenskarte {#gloria-reviews-and-approves-the-corporate-card-application}
+### Gloria prüft und genehmigt die Anwendung der Unternehmenskarte  {#gloria-reviews-and-approves-the-corporate-card-application}
 
 Der von Sarah eingereichte Antrag auf eine Unternehmenskarte wird zur Prüfung an Gloria Rios weitergeleitet. Gloria meldet sich bei ihrem AEM-Posteingang an und überprüft die ihr zugewiesenen Aufgaben. Sie genehmigt den von Sarah eingereichten Antrag und schließt die Aufgabe ab.
 
-![Corporate-Card-Inbox](assets/corporate-card-inbox.png)**Abbildung:** *Glorias Posteingang*
+![Corporate-card-](assets/corporate-card-inbox.png)
+**inboxAbbildung:** *Glorias Posteingang*
 
-![Für eine Unternehmenskarte genehmigte](assets/corporate-card-approved.png)**Abbildung:** *Aufgabe öffnen*
+![](assets/corporate-card-approved.png)
+**Abb.: Aufgabe** *öffnen*
 
 **Funktionsweise**
 
@@ -123,7 +131,7 @@ Der Workflow für die Einreichung auf dem Antrag auf eine Unternehmenskarte lös
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Öffnen Sie die Aufgabe, die für den Antrag auf eine Unternehmenskarte erstellt wurde, und genehmigen Sie sie.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios an. Öffnen Sie die Aufgabe, die für den Antrag auf eine Unternehmenskarte erstellt wurde, und genehmigen Sie sie.
 
 ## Einreichung von Spesenberichten - Anleitung {#expense-report-submission-walkthrough}
 
@@ -133,9 +141,11 @@ Da Sarah während Geschäftsreisen Ausgaben hat, muss sie Spesenberichte zur Gen
 
 Sarah geht zum Portal ihres Unternehmens, meldet sich an und klickt auf **[!UICONTROL Mitarbeiter]**, um auf das Mitarbeiter-Dashboard zuzugreifen. Sie findet den Antrag für den Spesenbericht auf dem Mitarbeiter-Dashboard und klickt auf **[!UICONTROL Beantragen]**.
 
-![we-finance-home-2](assets/we-finance-home-2.png)**Abbildung:** *Organisationsportal*
+![we-finance-home-2](assets/we-finance-home-2.png)
+**Abbildung:** *Organisationsportal*
 
-![employee-Dashboard-2](assets/employee-dashboard-2.png)**Abbildung:** *Dashboard der Beschäftigten*
+![employee-Dashboard-2](assets/employee-dashboard-2.png)
+**Abbildung:** *Employee Dashboard*
 
 Sie klickt auf **[!UICONTROL Beantragen]** im Antrag für den Spesenbericht. Ein Antragsformular wird geöffnet, das zwei Registerkarten enthält: Berichtsname und Berichtsdetails. Mit dem **+**-Symbol auf der Registerkarte „Berichtsdetails“ kann sie mehr als nur Spesen in einem Bericht hinzufügen.
 
@@ -151,15 +161,17 @@ Die Registerkarten „Berichtsname“ und „Berichtsdetails“ im adaptiven For
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Beantragen]** im Spesenbericht. Geben Sie die Details ein und übermitteln Sie den Antrag.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah an. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Beantragen]** im Spesenbericht. Geben Sie die Details ein und übermitteln Sie den Antrag.
 
-### Gloria überprüft und genehmigt die Spesenabrechnung {#gloria-reviews-and-approves-the-expense-report}
+### Gloria überprüft und genehmigt die Spesenabrechnung  {#gloria-reviews-and-approves-the-expense-report}
 
 Der von Sarah eingereichte Spesenbericht wird Gloria Rios zur Prüfung übergeben. Gloria meldet sich bei ihrem AEM-Posteingang an und überprüft die ihr zugewiesenen Aufgaben. Sie genehmigt den von Sarah eingereichten Antrag und schließt die Aufgabe ab.
 
-![Spesen-Bericht-Posteingang](assets/expense-report-inbox.png)**Abbildung:** *Glorias Posteingang*
+![Spesenbericht-](assets/expense-report-inbox.png)
+**inboxAbbildung:** *Glorias Posteingang*
 
-![vom Ausgabenbericht genehmigte](assets/expense-report-approved.png)**Abbildung:** *Aufgabe öffnen*
+![Spesenbericht-](assets/expense-report-approved.png)
+**genehmigtAbbildung:Aufgabe** *öffnen*
 
 **Funktionsweise**
 
@@ -169,19 +181,21 @@ Der Übermittlungs-Workflow Antrag für den Spesenbericht löst einen Formular-W
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Öffnen Sie die Aufgabe, die für den Antrag für den Spesenbericht erstellt wurde, und genehmigen Sie sie.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios an. Öffnen Sie die Aufgabe, die für den Antrag für den Spesenbericht erstellt wurde, und genehmigen Sie sie.
 
 ## Antrag auf Urlaub - Anleitung {#leave-application-walkthrough}
 
 Sarah plant nächsten Monat einen Familienurlaub und will einen Antrag auf eine Woche Urlaub stellen.
 
-### Sarah reicht den Urlaubsantrag ein {#sarah-submits-the-leave-application}
+### Sarah reicht den Urlaubsantrag ein  {#sarah-submits-the-leave-application}
 
 Sarah geht zum Portal ihres Unternehmens, meldet sich an und klickt auf **[!UICONTROL Mitarbeiter]**, um auf das Mitarbeiter-Dashboard zuzugreifen. Sie findet den Antrag auf Urlaub auf dem Mitarbeiter-Dashboard und klickt auf **[!UICONTROL Beantragen]**.
 
-![we-finance-home-3](assets/we-finance-home-3.png)**Abbildung:** *Organisationsportal*
+![we-finance-home-3](assets/we-finance-home-3.png)
+**Abbildung:** *Organisationsportal*
 
-![employee-Dashboard-3](assets/employee-dashboard-3.png)**Abbildung:** *Dashboard der Beschäftigten*
+![employee-Dashboard-3](assets/employee-dashboard-3.png)
+**Abbildung:** *Employee Dashboard*
 
 Der Antrag auf Urlaub wird mit dem Namen und der Angestellten-ID von Sarah geöffnet, die im Formular bereits ausgefüllt sind. Es zeigt auch ihr Urlaubsguthaben und den Verlauf. Sie füllt die Urlaubsdaten aus und reicht den Antrag zur Genehmigung ein.
 
@@ -203,15 +217,17 @@ Sie können das adaptive Formular und das Formulardatenmodell an folgenden Stell
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Beantragen]** im Urlaubsantrag. Geben Sie die Details ein und übermitteln Sie den Antrag.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah an. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Beantragen]** im Urlaubsantrag. Geben Sie die Details ein und übermitteln Sie den Antrag.
 
-### Gloria geprüft und genehmigt den Urlaubsantrag {#gloria-reviews-and-approves-the-leave-application}
+### Gloria geprüft und genehmigt den Urlaubsantrag  {#gloria-reviews-and-approves-the-leave-application}
 
 Der von Sarah eingereichte Urlaubsantrag wird Gloria Rios zur Überprüfung übergeben. Gloria meldet sich bei ihrem AEM-Posteingang an und überprüft die ihr zugewiesenen Aufgaben. Sie genehmigt den von Sarah eingereichten Antrag und schließt die Aufgabe ab.
 
-![leave-inbox](assets/leave-inbox.png)**Abbildung:** *Glorias Posteingang*
+![leave-](assets/leave-inbox.png)
+**inboxAbbildung:** *Glorias Posteingang*
 
-![Genehmigung](assets/leave-approved.png)für den **Urlaub:** *Aufgabe öffnen*
+![leave-](assets/leave-approved.png)
+**authorisedAbbildung: Aufgabe** *öffnen*
 
 **Funktionsweise**
 
@@ -221,4 +237,4 @@ Der Übermittlungs-Workflow im Urlaubsantrag löst einen Formular-Workflow aus, 
 
 **Sehen Sie selbst** 
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Öffnen Sie die Aufgabe, die für den Antrag auf Urlaub erstellt wurde, und genehmigen Sie sie.
+Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios an. Öffnen Sie die Aufgabe, die für den Antrag auf Urlaub erstellt wurde, und genehmigen Sie sie.
