@@ -18,9 +18,9 @@ ht-degree: 6%
 ---
 
 
-# Verwenden von Maven für Communities {#using-maven-for-communities}
+# Verwenden von Maven for Communities {#using-maven-for-communities}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Dieser Abschnitt der AEM Communities-Dokumentation ergänzt:
 
@@ -28,10 +28,10 @@ Dieser Abschnitt der AEM Communities-Dokumentation ergänzt:
 
 Es gibt jetzt zwei &quot;Uber&quot;-Artefakte, die einzelne Artefakte ersetzen:
 
-* API-JAR [für AEM](#communities-api-jar-artifact)
+* AEM [Communities API jar](#communities-api-jar-artifact)
 * AEM [Uber-API-JAR](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
-## Communities API JAR Artefakt {#communities-api-jar-artifact}
+## Communities API Jar Artifact {#communities-api-jar-artifact}
 
 Im Folgenden finden Sie ein Beispiel für eine GAV für die AEM Communities API-JAR:
 
@@ -47,9 +47,9 @@ Im Folgenden finden Sie ein Beispiel für eine GAV für die AEM Communities API-
 Stellen Sie sicher, dass die angegebene Version der Communities-Paketversion entspricht, die für AEM Communities installiert wurde. So überprüfen Sie die installierte Versionsnummer:
 
 1. Melden Sie sich mit Administratorrechten an.
-2. Navigieren Sie zu [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+2. Gehen Sie zu [Package Manager](../../help/sites-administering/package-manager.md). Beispiel: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. Suchen Sie das Paket *cq-socialgroups-pkg-1.x.xxx.*
+3. Suchen Sie das Paket *cq-socialgroups-pkg-1.x.xxx*
 4. Version aus dem Paketnamen extrahieren
    * Die erste Version für AEM 6.3 ist Version 1.11.170
    * Feature Packs sind die Versionen 1.12.xxx
@@ -58,9 +58,9 @@ Stellen Sie sicher, dass die angegebene Version der Communities-Paketversion ent
 >
 >Es wird empfohlen, mit der neuesten Version von Communities auf dem Laufenden zu bleiben.
 >
->Im Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) finden Sie die neueste Version.
+>Rufen Sie den Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) auf, um die neueste Version zu ermitteln.
 
-## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
+## Beispiel für eine bestimmte Abhängigkeit {#maven-dependency-example}
 
 Die Communities API-JAR-Datei muss vor der Uber API-JAR-Datei angegeben werden.
 
