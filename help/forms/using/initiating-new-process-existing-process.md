@@ -29,7 +29,7 @@ Zum Starten eines neuen Prozesses aus bestehenden Prozessdaten sind die folgende
    * Wählen Sie in der Verfolgung eine Suchvorlage aus, um eine Liste von Prozessinstanzen anzuzeigen. Wählen Sie die Instanz aus, deren Daten Sie verwenden möchten.
    * Wählen Sie auf der Registerkarte **[!UICONTROL Aufgabenliste]** die Aufgabe aus. Klicken Sie auf die Registerkarte **[!UICONTROL Verlauf]** und wählen Sie die Aufgabe aus, die die Prozessinstanz initiiert hat.
 
-   ![Beginn3](assets/start3.png) ![Beginn1](assets/start1.png)
+   ![beginn3](assets/start3.png) ![Beginn1](assets/start1.png)
 
 1. In der Aufgabenaktionssymbolleiste klicken Sie auf **[!UICONTROL Start]**. Ein adaptives Formular für die neue Prozessinstanz wird mit automatischer Vorbefüllung angezeigt.
 
