@@ -22,7 +22,7 @@ ht-degree: 93%
 
 AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
 
-Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout **-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus ](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -41,15 +41,16 @@ Der Benutzer kann sich mit dem Emulator ansehen, wie der Inhalt für bestimmte G
 
 Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
 
-* [**Layout-Container-Komponente **](#adding-a-layout-container-and-its-content-edit-mode)
+* [**Layout-Container-Komponente**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Diese Komponente ist im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) verfügbar. Sie bietet ein Raster-Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses kann auf Ihrer Seite auch als Standardabsatzsystem festgelegt werden.
 
-* [**Layout-Modus **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Layout-Modus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
 
-* [**Emulator **](#selecting-a-device-to-emulate)Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich dann mit dem Emulator ansehen, wie der Inhalt für bestimmte Geräte gerendert wird.
+* [**Emulator**](#selecting-a-device-to-emulate)
+Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich dann mit dem Emulator ansehen, wie der Inhalt für bestimmte Geräte gerendert wird.
 
 Dieser responsive Rastermechanismus bietet folgende Möglichkeiten:
 
@@ -63,11 +64,11 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 >[!NOTE]
 >
->Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwicklern zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM-Sites zu erstellen.
+>Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwicklern zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
 
 >[!NOTE]
 >
->Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Weitere Informationen finden Sie unter [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md).
 
 ## Layout-Definitionen, Geräteemulation und Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +154,7 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 
 >[!NOTE]
 >
->Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit [für ein Absatzsystem/eine Seite aktiviert werden](/help/sites-administering/configuring-responsive-layout.md) (z. B. über den [**Designmodus **](/help/sites-authoring/default-components-designmode.md)).
+>Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit [für ein Absatzsystem/eine Seite aktiviert werden](/help/sites-administering/configuring-responsive-layout.md) (z. B. über den [**Designmodus**](/help/sites-authoring/default-components-designmode.md)).
 
 1. Der **Layout-Container** ist als Standardkomponente im [Komponentenbrowser](/help/sites-authoring/author-environment-tools.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen, nach der der Platzhalter **Komponenten hierher ziehen** angezeigt wird.
 1. Anschließend können Sie Komponenten zum Layout-Container hinzufügen. Diese Komponenten enthalten dann den eigentlichen Inhalt:
@@ -263,8 +264,9 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
    >
    >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Aufheben der Komponenten** Wählen Sie die übergeordneten Komponenten aus, um die Aktionsleiste mit der 
-**Option &quot;Ausgeblendete Komponenten** anzeigen&quot;. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+   * **Aufhebung der**
+KomponentenWählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
+**Option** für ausgeblendete Komponenten anzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
