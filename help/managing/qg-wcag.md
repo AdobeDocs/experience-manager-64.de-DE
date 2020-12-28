@@ -36,7 +36,7 @@ Daher ist das Verständnis der Ziele von WCAG 2.0 und der Struktur der Richtlini
 
 Absicht von WCAG 2.0 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen:
 
-* Sind **technologieunabhängig:**
+* Sind **technologie-agnostisch:**
 
    Mit anderen Worten, Richtlinien, die auf eine Reihe von Webinhalt-Formaten angewendet werden können, nicht nur HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
 
