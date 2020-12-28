@@ -54,7 +54,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
-1. Create a folder called `crx-quickstart\install` in the installation directory.
+1. Erstellen Sie im Installationsverzeichnis einen Ordner mit dem Namen `crx-quickstart\install`.
 1. Konfigurieren Sie den Document-Knotenspeicher, indem Sie eine Konfigurationsdatei mit dem folgenden Namen im Verzeichnis `crx-quickstart\install` erstellen:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
@@ -70,14 +70,14 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
    1. ZIP-Archiv von https://dev.mysql.com/downloads/connector/j/ herunterladen
       * Version muss >= 5.1.38 sein
-   1. Extrahieren Sie das `mysql-connector-java-version-bin.jar` (Bundle) aus dem Archiv
+   1. Extrahieren Sie das `mysql-connector-java-version-bin.jar` (bundle) aus dem Archiv
    1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und Beginn:
-      * Go to *http://serveraddress:serverport/system/console/bundles*
+      * Gehen Sie zu *http://serveraddress:serverport/system/console/bundles*
       * Wählen Sie **Installieren/Aktualisieren**
       * Navigieren Sie zum ausgewählten Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde
-      * Vergewissern Sie sich, dass der JDBC-Treiber der **Oracle Corporation für MySQLcom.mysql.jdbc** aktiv ist, und Beginn ihn.
+      * Vergewissern Sie sich, dass der JDBC-Treiber der Oracle Corporation für MySQLcom.mysql.jdbc **aktiv ist, und Beginn.**
 
-1. Finally, start AEM with the `crx3` and `crx3rdb` runmodes:
+1. Schließlich AEM Beginn mit den Ausführungsmodi `crx3` und `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
