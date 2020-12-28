@@ -37,7 +37,7 @@ Workflow-Modelle beinhalten eine Reihe von Schritten unterschiedlichen Typs. Je 
 
 ## Schritt-Eigenschaften {#step-properties}
 
-Each step component has a **[!UICONTROL Step Properties]** dialog that lets you define and edit the required properties.
+Jede Schritt-Komponente verfügt über ein Dialogfeld **[!UICONTROL Schritt-Eigenschaften]**, in dem Sie die erforderlichen Eigenschaften definieren und bearbeiten können.
 
 ### Schritt-Eigenschaften – Registerkarte „Allgemein“{#step-properties-common-tab}
 
@@ -53,13 +53,13 @@ Eine Kombination der folgenden Eigenschaften ist für die meisten Workflow-Schri
 
 * **[!UICONTROL Workflow-Status]**
 
-   Eine Dropdown-Auswahl, um eine [Phase](/help/sites-developing/workflows.md#workflow-stages) auf den Schritt anzuwenden.
+   Eine Dropdown-Auswahl, um eine [Stufe](/help/sites-developing/workflows.md#workflow-stages) auf den Schritt anzuwenden.
 
 * **[!UICONTROL Zeitüberschreitung]**
 
    Der Zeitraum, nach dem der Schritt mit der Zeitüberschreitung abgeschlossen wird.
 
-   You can select between: **[!UICONTROL Off]**, **[!UICONTROL Immediate]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
+   Sie können zwischen folgenden Optionen auswählen: **[!UICONTROL Aus]**, **[!UICONTROL Sofort]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
 
 * **[!UICONTROL Zeitüberschreitungs-Handler]**
 
@@ -84,18 +84,18 @@ Die folgenden Eigenschaften sind für viele Workflow-Schrittkomponenten im Eigen
 
    * Sie können einen Benutzer oder eine Gruppe aus einem Dropdown-Menü auswählen.
    * Falls Sie den Schritt einem bestimmten Benutzer zuweisen, kann nur dieser Benutzer Aktionen für den Schritt durchführen.
-   * If you assign the step to an entire group, then when the workflow reaches this step all users in this group will have the action in their **[!UICONTROL Workflow Inbox]**.
+   * Wenn Sie den Schritt einer gesamten Gruppe zuweisen, haben alle Benutzer dieser Gruppe die Aktion in ihrem **[!UICONTROL Workflow-Posteingang]**, wenn der Workflow diesen Schritt erreicht.
    * Weitere Informationen finden Sie unter [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md).
 
-## UND-Teilung {#and-split}
+## UND-Teilung  {#and-split}
 
-The **[!UICONTROL AND Split]** creates a split in the workflow, after which both branches will be active. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu. Mit diesem Schritt können Sie mehrere Prozesspfade in einem Workflow einrichten. Sie können z. B. mehrere Bewertungsschritte parallel zulassen, sodass Sie Zeit sparen.
+Die Variable **[!UICONTROL AND Split]** erstellt eine Teilung im Workflow, nach der beide Zweige aktiv sein werden. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu. Mit diesem Schritt können Sie mehrere Prozesspfade in einem Workflow einrichten. Sie können z. B. mehrere Bewertungsschritte parallel zulassen, sodass Sie Zeit sparen.
 
 ![wf-26](assets/wf-26.png)
 
 ### UND-Teilung – Konfiguration {#and-split-configuration}
 
-* Edit the **[!UICONTROL AND Split]** properties:
+* Bearbeiten Sie die Eigenschaften **[!UICONTROL AND Split]**:
 
    * **[!UICONTROL Teilungsname]**: einen Namen für erläuternde Zwecke zuweisen.
    * Wählen Sie die Anzahl der erforderlichen Verzweigungen aus: 2, 3, 4 oder 5.
@@ -106,9 +106,9 @@ The **[!UICONTROL AND Split]** creates a split in the workflow, after which both
 
 ## Container-Schritt {#container-step}
 
-A **[!UICONTROL Container]** step starts another workflow model that runs as a child workflow.
+Ein **[!UICONTROL Container]**-Schritt Beginn ein anderes Workflow-Modell, das als untergeordneter Workflow ausgeführt wird.
 
-This **[!UICONTROL Container]** lets you reuse workflow models to implement common sequences of steps. Beispielsweise kann ein Übersetzungs-Workflow-Modell in mehreren Bearbeitungs-Workflows verwendet werden.
+Mit diesem **[!UICONTROL Container]** können Sie Workflow-Modelle wiederverwenden, um gängige Schrittfolgen zu implementieren. Beispielsweise kann ein Übersetzungs-Workflow-Modell in mehreren Bearbeitungs-Workflows verwendet werden.
 
 ![wf-28](assets/wf-28.png)
 
@@ -121,7 +121,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
    * **[!UICONTROL Untergeordneter Workflow]**: Wählen Sie den zu startenden Workflow aus.
 
-## Zum Schritt wechseln {#goto-step}
+## Zum Schritt wechseln  {#goto-step}
 
 Mit der Option **[!UICONTROL Zum Schritt wechseln]** können Sie den nächsten auszuführenden Schritt im Workflow-Modell angeben, je nach Ergebnis des ECMA-Skripts:
 
@@ -129,7 +129,7 @@ Mit der Option **[!UICONTROL Zum Schritt wechseln]** können Sie den nächsten a
 
 * `false`: **[!UICONTROL Zum Schritt wechseln]** wird abgeschlossen und der nächste auszuführende Schritt wird von der normalen Routinglogik bestimmt.
 
-Mit **[!UICONTROL Zum Schritt wechseln]** können Sie erweiterte Routingstrukturen im Workflow-Modell implementieren. For example, to implement a loop, the **[!UICONTROL Goto Step]** can be defined to execute a prior step in the workflow, with the script evaluating a loop condition.
+Mit **[!UICONTROL Zum Schritt wechseln]** können Sie erweiterte Routingstrukturen im Workflow-Modell implementieren. Um beispielsweise eine Schleife zu implementieren, kann der **[!UICONTROL Goto-Schritt]** definiert werden, um einen vorherigen Schritt im Workflow auszuführen, wobei das Skript eine Schleifenbedingung auswertet.
 
 ### Zum Schritt wechseln – Konfiguration {#goto-step-configuration}
 
@@ -139,8 +139,8 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * **[!UICONTROL Prozess]**
 
    * **[!UICONTROL Der Schritt, zu dem]** Sie gehen müssen: Wählen Sie den auszuführenden Schritt aus.
-   * **[!UICONTROL Skriptpfad]**: Der Pfad zum ECMAScript, der bestimmt, ob der **[!UICONTROL Goto-Schritt]** ausgeführt werden soll.
-   * **[!UICONTROL Skript]**: Das ECMAScript, das bestimmt, ob der **[!UICONTROL Goto-Schritt]** ausgeführt werden soll.
+   * **[!UICONTROL Skriptpfad]**: Der Pfad zum ECMAScript, der bestimmt, ob der  **[!UICONTROL Goto-Schritt]** ausgeführt werden soll.
+   * **[!UICONTROL Skript]**: Das ECMAScript, das bestimmt, ob der  **[!UICONTROL Goto-Schritt]** ausgeführt werden soll.
 
 >[!CAUTION]
 >
@@ -153,7 +153,7 @@ Um eine for-Schleife zu simulieren, müssen Sie die Zahl der erfolgten Schleifen
 * Die Zahl steht in der Regel für einen Index der Elemente, für die im Workflow Aktionen erfolgen.
 * Die Zahl wird als Beendigungskriterium der Schleife ausgewertet.
 
-Um beispielsweise einen Workflow zu implementieren, der eine Aktion für mehrere JCR-Knoten durchführt, können Sie eine Schleifenzahl als Index für die Knoten verwenden. To persist the count, store an `integer` value in the data map of the workflow instance. Verwenden Sie das Skript für **[!UICONTROL Zum Schritt wechseln]**, um die Zahl zu erhöhen und mit den Beendigungskriterien zu vergleichen.
+Um beispielsweise einen Workflow zu implementieren, der eine Aktion für mehrere JCR-Knoten durchführt, können Sie eine Schleifenzahl als Index für die Knoten verwenden. Um die Anzahl beizubehalten, speichern Sie einen `integer`-Wert in der Datenzuordnung der Workflow-Instanz. Verwenden Sie das Skript für **[!UICONTROL Zum Schritt wechseln]**, um die Zahl zu erhöhen und mit den Beendigungskriterien zu vergleichen.
 
 ```
 function check(){
@@ -179,7 +179,7 @@ function check(){
 }
 ```
 
-## ODER-Teilung {#or-split}
+## ODER-Teilung  {#or-split}
 
 Mit der **[!UICONTROL ODER-Teilung]** wird der Workflow so geteilt, dass nur eine Verzweigung aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
@@ -191,12 +191,12 @@ Mit der **[!UICONTROL ODER-Teilung]** wird der Workflow so geteilt, dass nur ein
 
 ### ODER-Teilung – Konfiguration {#or-split-configuration}
 
-* Edit the **[!UICONTROL OR Split]** properties:
+* Bearbeiten Sie die Eigenschaften **[!UICONTROL ODER Split]**:
 
    * **[!UICONTROL Allgemein]**
 
       * Wählen Sie die Anzahl der erforderlichen Verzweigungen aus: 2, 3, 4 oder 5.
-   * **[!UICONTROL Zweig:*x*>]**
+   * **[!UICONTROL Zweig:  *x*>]**
 
       * **[!UICONTROL Skriptpfad]**: Der Pfad zu einer Datei, die das Skript enthält.
       * **[!UICONTROL Skript]**: Fügen Sie das Skript im Feld hinzu.
@@ -222,7 +222,7 @@ Mit der **[!UICONTROL ODER-Teilung]** wird der Workflow so geteilt, dass nur ein
 
 * Fügen Sie bei Bedarf Workflow-Schritte zu den Verzweigungen hinzu.
 
-## Teilnehmer-Schritte und -Auswahl {#participant-steps-and-choosers}
+## Teilnehmer-Schritte und -Auswahl  {#participant-steps-and-choosers}
 
 ### Teilnehmer-Schritt {#participant-step}
 
@@ -230,7 +230,7 @@ Mit der Option **[!UICONTROL Teilnehmer-Schritt]** können Sie einer bestimmten 
 
 Obwohl sie nicht direkt damit im Zusammenhang steht, muss die Benutzerautorisierung beim Zuweisen einer Aktion berücksichtigt werden. Der Benutzer muss Zugriff auf die Seite mit der Workflow-Nutzlast haben.
 
-#### Teilnehmer-Schritt – Konfiguration {#participant-step-configuration}
+#### Teilnehmer-Schritt – Konfiguration  {#participant-step-configuration}
 
 Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu konfigurieren:
 
@@ -250,7 +250,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 >[!NOTE]
 >
->Einige Eigenschaften müssen konfiguriert werden, um E-Mail-Benachrichtigungen zu aktivieren. Sie können die E-Mail-Vorlage auch anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. See [Configuring Email Notification](/help/sites-administering/notification.md) to configure email notifications in AEM.
+>Einige Eigenschaften müssen konfiguriert werden, um E-Mail-Benachrichtigungen zu aktivieren. Sie können die E-Mail-Vorlage auch anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. Siehe [Konfigurieren der E-Mail-Benachrichtigung](/help/sites-administering/notification.md), um E-Mail-Benachrichtigungen in AEM zu konfigurieren.
 
 ### Dialogfeld „Teilnehmer-Schritt“{#dialog-participant-step}
 
@@ -260,7 +260,7 @@ Nach Abschluss des Schritts enthält das Dialogfeld **[!UICONTROL Arbeits-Elemen
 
 Um den Schritt zu konfigurieren, geben Sie die Gruppe oder den Benutzer, der bzw. dem das Arbeitselement zugewiesen werden soll, sowie den Pfad zum Dialogfeld an.
 
-#### Dialogfeld „Teilnehmer-Schritt“ – Konfiguration {#dialog-participant-step-configuration}
+#### Dialogfeld „Teilnehmer-Schritt“ – Konfiguration  {#dialog-participant-step-configuration}
 
 Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu konfigurieren:
 
@@ -268,14 +268,14 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [**[!UICONTROL Benutzer/Gruppe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Dialogfeld]**
 
-   * **[!UICONTROL Dialog Path**]: The path to the dialog node of the [dialog you create](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Dialogpfad**]: Der Pfad zum Knoten &quot;dialog&quot;im [Dialogfeld, das Sie erstellen](#dialog-participant-step-creating-a-dialog).
 
-#### Dialog Participant Step – Creating a dialog{#dialog-participant-step-creating-a-dialog}
+#### Schritt &quot;Dialogteilnehmer&quot;- Erstellen eines Dialogfelds{#dialog-participant-step-creating-a-dialog}
 
 So erstellen Sie ein Dialogfeld:
 
 * Entscheiden Sie, wo die erfassten Daten [in der Nutzlast gespeichert werden](#dialog-participant-step-storing-data-in-the-payload).
-* [Definieren des Dialogs; Hierzu gehört auch die Definition der Felder, die zum Erfassen (und Speichern) der Daten](#dialog-participant-step-dialog-definition)verwendet werden.
+* [Definieren des Dialogs; Hierzu gehört auch die Definition der Felder, die zum Erfassen (und Speichern) der Daten](#dialog-participant-step-dialog-definition) verwendet werden.
 
 #### Dialogfeld „Teilnehmer-Schritt“ – Speichern von Daten in der Nutzlast {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -296,9 +296,9 @@ Sie können Widget-Daten in der Workflow-Nutzlast oder in den Metadaten des Arbe
 
       `nodename`
 
-   * The data is stored in the `nodename` property of the work item `metadata`. Die Daten werden beibehalten, wenn das Dialogfeld anschließend von derselben Nutzlast verwendet wird.
+   * Die Daten werden in der Eigenschaft `nodename` des Arbeitselements `metadata` gespeichert. Die Daten werden beibehalten, wenn das Dialogfeld anschließend von derselben Nutzlast verwendet wird.
 
-#### Dialogfeld „Teilnehmer-Schritt“ – Definieren des Dialogfelds {#dialog-participant-step-dialog-definition}
+#### Dialogfeld „Teilnehmer-Schritt“ – Definieren des Dialogfelds  {#dialog-participant-step-dialog-definition}
 
 1. **[!UICONTROL Dialogfeldstruktur]**
 
@@ -327,7 +327,7 @@ Sie können Widget-Daten in der Workflow-Nutzlast oder in den Metadaten des Arbe
 
 1. **[!UICONTROL Eigenschaft „Dialogpfad“]**
 
-   The **[!UICONTROL Dialog Participant Step]** has the **[!UICONTROL Dialog Path]** property (together with the properties of a [Participant Step](#participant-step)). Der Wert der Eigenschaft **[!UICONTROL Dialogpfad]** entspricht dem Pfad zum Knoten `dialog` im Dialogfeld.
+   Der Schritt **[!UICONTROL Dialogfeld-Teilnehmer]** verfügt über die Eigenschaft **[!UICONTROL Dialogpfad]** (zusammen mit den Eigenschaften eines [Teilnehmerschritts](#participant-step)). Der Wert der Eigenschaft **[!UICONTROL Dialogpfad]** entspricht dem Pfad zum Knoten `dialog` im Dialogfeld.
 
    Das Dialogfeld kann sich beispielsweise in einer Komponente mit dem Namen `EmailWatch` befindet, die im Knoten gespeichert ist:
 
@@ -379,7 +379,7 @@ Die Komponente **[!UICONTROL Dynamischer Teilnehmer – Schritt]** ähnelt der K
 
 Um diesen Schritt zu konfigurieren, wählen Sie eine **[!UICONTROL Teilnehmerauswahl]** zum Identifizieren des Teilnehmers, dem das Arbeitselement zugewiesen werden soll, und ein Dialogfeld aus.
 
-#### Dynamischer Teilnehmer – Schritt – Konfiguration {#dynamic-participant-step-configuration}
+#### Dynamischer Teilnehmer – Schritt – Konfiguration  {#dynamic-participant-step-configuration}
 
 Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu konfigurieren:
 
@@ -394,7 +394,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
    * **[!UICONTROL Dialogpfad]**: Der Pfad zum Dialogfeldknoten des [Dialogfelds, das Sie erstellen (wie beim **Dialogfeld „Teilnehmer-Schritt“**)](#dialog-participant-step-creating-a-dialog).
 
-#### Dynamischer Teilnehmer – Schritt – Entwickeln der Teilnehmerauswahl {#dynamic-participant-step-developing-the-participant-chooser}
+#### Dynamischer Teilnehmer – Schritt – Entwickeln der Teilnehmerauswahl  {#dynamic-participant-step-developing-the-participant-chooser}
 
 Sie erstellen die Teilnehmerauswahl. Dabei können Sie beliebige Logik oder Kriterien für die Auswahl verwenden. Beispielsweise kann die Teilnehmerauswahl den Benutzer (innerhalb einer Gruppe) auswählen, dem die wenigsten Arbeitselemente zugewiesen sind. Sie können eine beliebige Anzahl von Teilnehmerauswahlen für die Verwendung mit verschiedenen Instanzen der Komponente **Dynamischer Teilnehmer – Schritt** in Ihren Workflow-Modellen erstellen.
 
@@ -402,7 +402,7 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
 
 * **[!UICONTROL ECMA-Skript]**
 
-   Skripte müssen eine getParticipant-Funktion enthalten, mit der eine Benutzer-ID als `String`-Wert zurückgegeben wird. Store your custom scripts in, for example, the `/apps/myapp/workflow/scripts` folder, or a subfolder.
+   Skripte müssen eine getParticipant-Funktion enthalten, mit der eine Benutzer-ID als `String`-Wert zurückgegeben wird. Speichern Sie Ihre benutzerdefinierten Skripten beispielsweise im Ordner `/apps/myapp/workflow/scripts` oder in einem Unterordner.
 
    Ein Beispielskript ist in einer Standard-AEM-Instanz enthalten:
 
@@ -413,7 +413,7 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
    >Sie dürfen *keinerlei* Änderungen im Pfad `/libs` vornehmen.
    >
    >
-   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+   >Der Grund dafür ist, dass der Inhalt von `/libs` beim nächsten Aktualisieren der Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
    Mit diesem Skript wird der Workflow-Initiator als Teilnehmer ausgewählt:
 
@@ -425,33 +425,33 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Workflow Initiator Participant Chooser]** component extends the **[!UICONTROL Dynamic Participant Step]** and uses this script as the step implementation.
+   >Die Komponente **[!UICONTROL Workflow Initiator Participant Chooser]** erweitert den **[!UICONTROL Dynamic Participant Step]** und verwendet dieses Skript als Schrittimplementierung.
 
 * **[!UICONTROL OSGi-Dienst]**
 
-   Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. Die Schnittstelle definiert die folgenden Mitglieder:
+   Dienste müssen die [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)-Schnittstelle implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
 
    * `SERVICE_PROPERTY_LABEL` Feld: Verwenden Sie dieses Feld, um den Namen der Teilnehmerauswahl anzugeben. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **[!UICONTROL Dynamischer Teilnehmer – Schritt]** angezeigt.
-   * `getParticipant` Methode: Gibt die dynamisch aufgelöste Principal-ID als `String` Wert zurück.
+   * `getParticipant` Methode: Gibt die dynamisch aufgelöste Principal-ID als  `String` Wert zurück.
 
    >[!CAUTION]
    >
-   >The `getParticipant` method returns the dynamically resolved Principal id. Dies kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
+   >Die `getParticipant`-Methode gibt die dynamisch aufgelöste Principal-ID zurück. Dies kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
    >
    >
-   >Eine Gruppen-ID kann jedoch nur für eine Komponente **[!UICONTROL Teilnehmer-Schritt]** verwendet werden, wenn eine Liste der Teilnehmer zurückgegeben wird. For a **[!UICONTROL Dynamic Participant Step]** an empty list is returned and this cannot be used for delegation.
+   >Eine Gruppen-ID kann jedoch nur für eine Komponente **[!UICONTROL Teilnehmer-Schritt]** verwendet werden, wenn eine Liste der Teilnehmer zurückgegeben wird. Bei einem **[!UICONTROL Schritt des dynamischen Teilnehmers]** wird eine leere Liste zurückgegeben, die nicht für die Übertragung verwendet werden kann.
 
    Um die Implementierung für Komponenten **[!UICONTROL Dynamischer Teilnehmer – Schritt]** verfügbar zu machen, fügen Sie die Java-Klasse zum OSGi-Bundle hinzu, das den Dienst exportiert, und stellen Sie das Bundle auf dem AEM-Server bereit.
 
    >[!NOTE]
    >
-   >Die **[!UICONTROL zufallsbasierte Teilnehmerauswahl]** ist ein Sampling-Dienst, der willkürlich einen Benutzer auswählt ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). The **[!UICONTROL Random Participant Chooser]** step component sample extends the **[!UICONTROL Dynamic Participant Step]** and uses this service as the step implementation.
+   >Die **[!UICONTROL zufallsbasierte Teilnehmerauswahl]** ist ein Sampling-Dienst, der willkürlich einen Benutzer auswählt ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Das Beispiel für die Schritt-Komponente **[!UICONTROL Zufallsteilnehmerauswahl]** erweitert den **[!UICONTROL Schritt des dynamischen Teilnehmers]** und verwendet diesen Dienst als Schritt-Implementierung.
 
 #### Dynamischer Teilnehmer – Schritt – Beispiel für Teilnehmerauswahldienst {#dynamic-participant-step-example-participant-chooser-service}
 
-Die folgende Java-Klasse implementiert die `ParticipantStepChooser`-Oberfläche. Die Klasse gibt den Namen des Teilnehmers zurück, der den Workflow initiiert hat. The code uses the same logic that the sample script ( `initator-participant-chooser.ecma`) uses.
+Die folgende Java-Klasse implementiert die `ParticipantStepChooser`-Oberfläche. Die Klasse gibt den Namen des Teilnehmers zurück, der den Workflow initiiert hat. Der Code verwendet dieselbe Logik wie das Beispielskript ( `initator-participant-chooser.ecma`).
 
-Die `@Property` Anmerkung setzt den Wert des `SERVICE_PROPERTY_LABEL` Felds auf `Workflow Initiator Participant Chooser`.
+Die Anmerkung `@Property` setzt den Wert des Felds `SERVICE_PROPERTY_LABEL` auf `Workflow Initiator Participant Chooser`.
 
 ```java
 package com.adobe.example;
@@ -490,7 +490,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 }
 ```
 
-In the **[!UICONTROL Dynamic Participant Step]** properties dialog, the **[!UICONTROL Participant Chooser]** list includes the item `Workflow Initiator Participant Chooser (script)`, which represents this service.
+Im Dialogfeld **[!UICONTROL Eigenschaften des dynamischen Teilnehmerschritts]** enthält die **[!UICONTROL Teilnehmerauswahl]**-Liste das Element `Workflow Initiator Participant Chooser (script)`, das diesen Dienst darstellt.
 
 ``Wenn das Workflow-Modell gestartet wird, wird in der Protokolldatei die ID des Benutzers angegeben, der den Workflow initiiert hat und dem das Arbeitselement zugewiesen ist. In diesem Beispiel hat der Benutzer `admin` den Workflow gestartet.
 
@@ -504,7 +504,7 @@ Um diesen Schritt zu konfigurieren, geben Sie die Gruppe oder den Benutzer, der/
 
 >[!CAUTION]
 >
->This section deals with the [Forms section of Foundation Components for Page Authoring](/help/sites-authoring/default-components-foundation.md#form).
+>Dieser Abschnitt behandelt den Abschnitt [Forms von Foundation Components for Page Authoring](/help/sites-authoring/default-components-foundation.md#form).
 
 #### Formular „Teilnehmer – Schritt“ – Konfiguration {#form-participant-step-configuration}
 
@@ -514,23 +514,23 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [**[!UICONTROL Benutzer/Gruppe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formular]**
 
-   * **[!UICONTROL Formularpfad]**: Der Pfad zum erstellten [Formular](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Formularpfad]**: Der Pfad zum erstellten  [Formular](#form-participant-step-creating-the-form).
 
 #### Formular „Teilnehmer – Schritt“ - Erstellen des Formulars {#form-participant-step-creating-the-form}
 
 Erstellen Sie wie gewohnt ein Formular mit einem **[!UICONTROL Formular „Teilnehmer – Schritt“]**. Formulare für Formular „Teilnehmer – Schritt“ müssen wie folgt konfiguriert werden:
 
-* Für den **[!UICONTROL Beginn der Formularkomponente]** muss die **[!UICONTROL Eigenschaft Aktionstyp]** auf `Edit Workflow Controlled Resource(s)`eingestellt sein.
+* Für den **[!UICONTROL Beginn der Form]**-Komponente muss die Eigenschaft **[!UICONTROL Aktionstyp]** auf `Edit Workflow Controlled Resource(s)` eingestellt sein.
 
-* The **[!UICONTROL Start of Form]** component must have a value for the `Form Identifier` property.
+* Die Komponente **[!UICONTROL Beginn von Form]** muss einen Wert für die Eigenschaft `Form Identifier` haben.
 
 * Für die Formularkomponenten muss die Eigenschaft **Elementname** auf den Pfad des Knotens verweisen, in dem die Felddaten gespeichert werden. Der Pfad muss auf einen Knoten im Nutzlastinhalt des Workflows verweisen. Der Wert verwendet das folgende Format:
 
    `./jcr:content/path_to_node`
 
-* The form must include a **[!UICONTROL Workflow Submit Button(s)]** component. Sie konfigurieren keine Eigenschaften für die Komponente.
+* Das Formular muss eine Komponente **[!UICONTROL Workflow-Senden-Schaltfläche(n)]** enthalten. Sie konfigurieren keine Eigenschaften für die Komponente.
 
-Die Workflow-Anforderungen bestimmen, wo Felddaten gespeichert werden sollen. Beispielsweise können Felddaten verwendet werden, um die Eigenschaften von Seiteninhalten zu konfigurieren. The following value of an **[!UICONTROL Element Name]** property stores field data as the value of the `redirectTarget` property of the `jcr:content` node:
+Die Workflow-Anforderungen bestimmen, wo Felddaten gespeichert werden sollen. Beispielsweise können Felddaten verwendet werden, um die Eigenschaften von Seiteninhalten zu konfigurieren. Der folgende Wert einer **[!UICONTROL Elementname]**-Eigenschaft speichert Felddaten als Wert der `redirectTarget`-Eigenschaft des `jcr:content`-Knotens:
 
 `./jcr:content/redirectTarget`
 
@@ -542,7 +542,7 @@ Im folgenden Beispiel werden die Felddaten als Inhalt einer **[!UICONTROL Text]*
 
 Das Formular kann sich an einer beliebigen Stelle im Repository befinden, Workflow-Benutzer müssen jedoch berechtigt sein, das Formular zu lesen.
 
-### Zufallsbasierte Teilnehmerauswahl {#random-participant-chooser}
+### Zufallsbasierte Teilnehmerauswahl  {#random-participant-chooser}
 
 Der Schritt **[!UICONTROL Zufallsbasierte Teilnehmerauswahl]** bezieht sich auf eine Teilnehmerauswahl, die das erzeugte Arbeitselement einem willkürlich aus einer Liste ausgewählten Benutzer zuweist.
 
@@ -557,19 +557,19 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
    * **[!UICONTROL Teilnehmer]**: Gibt die Liste der zur Auswahl stehenden Benutzer an. Um einen Benutzer zur Liste hinzuzufügen, klicken Sie auf **[!UICONTROL Element hinzufügen]** und geben Sie den Stammpfad des Benutzerknotens oder die Benutzer-ID an. Die Reihenfolge der Benutzer hat keine Auswirkungen auf die Wahrscheinlichkeit, mit der diesen ein Arbeitselement zugeordnet wird.
 
-### Workflow-Initiator-Teilnehmerauswahl {#workflow-initiator-participant-chooser}
+### Workflow-Initiator-Teilnehmerauswahl  {#workflow-initiator-participant-chooser}
 
 Der Schritt **[!UICONTROL Workflow-Initiator-Teilnehmerauswahl]** bezieht sich auf eine Teilnehmerauswahl, bei der das erzeugte Arbeitselement dem Benutzer zugewiesen wird, der den Workflow gestartet hat. Bei diesem Schritt muss nur die Eigenschaft **[!UICONTROL Allgemein]** konfiguriert werden.
 
-#### Workflow-Initiator-Teilnehmerauswahl – Konfiguration {#workflow-initiator-participant-chooser-configuration}
+#### Workflow-Initiator-Teilnehmerauswahl – Konfiguration  {#workflow-initiator-participant-chooser-configuration}
 
 Um diesen Schritt zu konfigurieren, bearbeiten Sie die folgenden Registerkarten:
 
 * [**[!UICONTROL Allgemein]**](#step-properties-common-tab)
 
-## Prozessschritt {#process-step}
+## Prozessschritt  {#process-step}
 
-A **[!UICONTROL Process Step]** runs an ECMAScript or calls an OSGi service to perform automatic processing.
+Ein **[!UICONTROL Prozessschritt]** führt ein ECMAScript aus oder ruft einen OSGi-Dienst auf, um eine automatische Verarbeitung durchzuführen.
 
 ![wf-32](assets/wf-32.png)
 
@@ -583,8 +583,8 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
    * **[!UICONTROL Prozess]**: Die Implementierung des Prozesses, die durchgeführt werden soll. Wählen Sie im Dropdown-Menü den Dienst ECMAScript oder OSGi aus. Informationen:
 
       * zu den standardmäßigen ECMA-Skripten und OSGi-Diensten finden Sie unter [Integrierte Prozesse für Prozessschritte](/help/sites-developing/workflows-process-ref.md).
-      * Creating ECMAScripts for a **[!UICONTROL Process]** step, see [Implementing a Process Step with an ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Creating OSGi services for a **[!UICONTROL Process]** step, see [Implementing a Process Step with a Java Class](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+      * Erstellen von ECMAScripts für einen Schritt **[!UICONTROL Prozess]**, siehe [Implementieren eines Prozessschritts mit einem ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+      * Erstellen von OSGi-Diensten für einen Schritt **[!UICONTROL Prozess]** finden Sie unter [Implementieren eines Prozessschritts mit einer Java-Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
    * **[!UICONTROL Handler-Modus]**: Wählen Sie diese Option aus, um den Workflow nach der Ausführung automatisch an den nächsten Schritt weiterzuleiten. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow weiterleiten.
    * **[!UICONTROL Argumente]**: An den Prozess zu übergebende Argumente.
 
