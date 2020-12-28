@@ -49,7 +49,7 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 Jedes Benutzeroberflächenmodul verfügt über eigene Funktionen, es stehen jedoch auch folgende gemeinsam genutzte Funktionen zur Verfügung. Da sich die Benutzeroberflächenmodule erweitern lassen, können Entwickler je nach Wunsch weitere Funktionen einbauen.
 
-### Inhalt der Symbolleiste   {#toolbar-content}
+### Inhalt der Symbolleiste  {#toolbar-content}
 
 Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub-Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
 
