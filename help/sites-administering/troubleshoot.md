@@ -71,17 +71,17 @@ Weitere Informationen zu den folgenden Fehlerbehebungsszenarien finden Sie in [A
 * In CRX ausgeführte Anwendungen führen zu Fehlern aufgrund unzureichendem Speicherplatz.
 * Der AEM-Willkommensbildschirm wird nach einem Doppelklick auf den AEM-Schnellstart nicht im Browser angezeigt.
 
-## Methoden für die Fehlerbehebungsanalyse {#methods-for-troubleshooting-analysis}
+## Methoden für die Fehlerbehebungsanalyse  {#methods-for-troubleshooting-analysis}
 
 ### Erstellen von Thread-Sicherungskopien {#making-a-thread-dump}
 
 Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv sind. Wenn AEM nicht richtig reagiert, kann die Thread-Sicherungskopie helfen, Deadlocks oder andere Probleme zu identifizieren.
 
-### Verwenden des Sling Thread Dumper {#using-sling-thread-dumper}
+### Verwenden des Sling Thread Dumper  {#using-sling-thread-dumper}
 
-1. Open the **AEM Web Console**; for example at `http://localhost:4502/system/console/`.
+1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `http://localhost:4502/system/console/`.
 
-1. Select the **Threads** under **Status** tab.
+1. Wählen Sie die Registerkarte **Threads** unter **Status**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -89,7 +89,7 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 1. Suchen Sie die PID (Prozess-ID) der AEM-Java-Instanz.
 
-   For example, you can use `ps -ef` or `jps`.
+   Sie können beispielsweise `ps -ef` oder `jps` verwenden.
 
 1. Ausführen:
 
@@ -99,7 +99,7 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 >[!NOTE]
 >
->You can append the thread dumps to a log file by using the `>>` output redirection:
+>Sie können die Thread-Dumps mithilfe der Ausgabeumleitung `>>` an eine Protokolldatei anhängen:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -115,13 +115,13 @@ Wenn Funktionen für AEM WCM entwickelt werden, werden möglicherweise JCR-Sitzu
 
 Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html), um nicht beendete Sitzungen zu analysieren und festzustellen, welcher Code dazu führt, dass eine Sitzung nicht beendet wird.
 
-### Verwenden der Adobe Experience Manager-Web-Konsole {#using-the-adobe-experience-manager-web-console}
+### Verwenden der Adobe Experience Manager-Web-Konsole  {#using-the-adobe-experience-manager-web-console}
 
 Der Status der OSGi-Bundles kann auch frühzeitig auf mögliche Probleme hinweisen.
 
-1. Open the **AEM Web Console**; for example at `http://localhost:4502/system/console/`.
+1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `http://localhost:4502/system/console/`.
 
-1. Select **Bundles** under **OSGI** tab.
+1. Wählen Sie **Pakete** unter **OSGI**.
 
 1. Überprüfen Sie Folgendes:
 
