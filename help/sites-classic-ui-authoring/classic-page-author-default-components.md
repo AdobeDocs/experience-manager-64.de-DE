@@ -1,6 +1,6 @@
 ---
-title: Komponenten
-seo-title: Komponenten
+title: 'Komponenten '
+seo-title: 'Komponenten '
 description: 'AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. '
 seo-description: 'AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. '
 page-status-flag: de-activated
@@ -35,7 +35,7 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
 * [Komponenten für die Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind in erster Linie in den Gruppen **Allgemein**, **Spalten** und **Forms** enthalten.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
