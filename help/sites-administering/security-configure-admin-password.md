@@ -50,9 +50,9 @@ Wenn Sie die Instanz über die Befehlszeile ausführen, haben Sie während des I
 >
 >Die Aufforderung zum Ändern des Administratorkennworts wird nur während der Installation einer neuen AEM-Instanz angezeigt.
 
-## Verwenden des Flags „-nointeractive“ {#using-the-nointeractive-flag}
+## Verwenden des Flags „-nointeractive“  {#using-the-nointeractive-flag}
 
-Das Kennwort kann auch über eine Eigenschaftendatei angegeben werden. This is done by using the `-nointeractive` flag combined with the `-Dadmin.password.file` system property.
+Das Kennwort kann auch über eine Eigenschaftendatei angegeben werden. Dazu wird das `-nointeractive`-Flag zusammen mit der `-Dadmin.password.file`-Systemeigenschaft verwendet.
 
 Beispiel:
 
@@ -68,5 +68,5 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->If you simply use the `-nointeractive` parameter without the `-Dadmin.password.file` system property, AEM will use the default admin password without asking you to change it, essentially replicating behaviour from earlier versions. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.
+>Wenn Sie einfach den Parameter `-nointeractive` ohne die Systemeigenschaft `-Dadmin.password.file` verwenden, verwendet AEM das Standardkennwort des Administrators, ohne dass Sie dazu aufgefordert werden, es zu ändern, und repliziert im Grunde das Verhalten früherer Versionen. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.
 
