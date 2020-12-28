@@ -81,7 +81,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
    * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
 
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+   Klicken Sie auf **Vorschau** Listen, in denen der Begriff gefunden wurde. Sie können bestimmte zu ersetzende Instanzen auswählen/löschen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +94,7 @@ Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgend
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `http://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` und konfigurieren Sie den Bereich nach Bedarf.
 
 >[!NOTE]
 >
