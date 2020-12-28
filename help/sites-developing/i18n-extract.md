@@ -69,7 +69,7 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
 | &amp;ast; | Gibt eine normale Datei im Dateisystem an. |
-| none | Kein Präfix oder ein Muster, das mit einem Ordner- oder Dateinamen beginnt, zeigt eine normale Datei im Dateisystem an. |
+| keine | Kein Präfix oder ein Muster, das mit einem Ordner- oder Dateinamen beginnt, zeigt eine normale Datei im Dateisystem an. |
 
 Bei Verwendung innerhalb eines Musters gibt das /-Zeichen einen Unterordner und den &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
@@ -137,7 +137,7 @@ mvn xgettext:extract
 ### Ausgabedateien {#output-files}
 
 * `raw.xliff`: extrahierte Zeichenfolgen
-* `warn.log`: (sofern vorhanden), wenn die `CQ.I18n.getMessage()` API nicht korrekt verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
+* `warn.log`: (sofern vorhanden), wenn die  `CQ.I18n.getMessage()` API nicht korrekt verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
 
 * `parserwarn.log`: Parser-Warnungen (falls vorhanden), z. B. js-Parserprobleme
 * `potentials.xliff`: „potenzielle“ Kandidaten, die nicht extrahiert werden, aber möglicherweise von Menschen lesbare Zeichenfolgen sind, die übersetzt werden müssen (kann ignoriert werden, da es noch eine große Menge an falsch positiven Ergebnissen findet)
