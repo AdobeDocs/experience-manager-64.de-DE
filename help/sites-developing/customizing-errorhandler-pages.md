@@ -24,14 +24,14 @@ AEM enthält einen Standard-Fehlerhandler für die Verarbeitung von HTTP-Fehlern
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-System provided scripts exist (under `/libs/sling/servlet/errorhandler`) to respond to error codes, by default the following are available with a standard CQ instance:
+Systembereitgestellte Skripten existieren (unter `/libs/sling/servlet/errorhandler`), um auf Fehlercodes zu reagieren. Standardmäßig sind bei einer Standard-CQ-Instanz folgende Skripten verfügbar:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM is based on Apache Sling, so see [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) for detailed information about Sling Error Handling.
+>AEM basiert auf Apache Sling, daher finden Sie unter [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) detaillierte Informationen zum Sling Error Handling.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ System provided scripts exist (under `/libs/sling/servlet/errorhandler`) to resp
 
 ## Anpassung der vom Fehler-Handler angezeigten Seiten {#how-to-customize-pages-shown-by-the-error-handler}
 
-Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Your customized pages will be created under `/apps` and overlay the default pages (that are under `/libs`).
+Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Ihre benutzerdefinierten Seiten werden unter `/apps` erstellt und überlagern die Standardseiten (die unter `/libs` stehen).
 
 >[!NOTE]
 >
@@ -67,11 +67,11 @@ Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fe
 >
 >Daher sollten Sie diese Handler nur mit größter Vorsicht ersetzen.
 
-### Anpassung der Reaktion auf HTTP 500-Fehler {#customizing-the-response-to-http-errors}
+### Anpassung der Reaktion auf HTTP 500-Fehler  {#customizing-the-response-to-http-errors}
 
 HTTP 500-Fehler werden von serverseitigen Ausnahmefehlern verursacht.
 
-* **[500 Interner Serverfehler](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**Der Server hat einen unerwarteten Zustand entdeckt und kann daher die Anfrage nicht erfüllen.
+* **[500 Interner Serverfehler](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)** Der Server hat einen unerwarteten Zustand entdeckt und kann daher die Anfrage nicht erfüllen.
 
 Wenn die Verarbeitung von Anforderungen eine Ausnahme ergibt, wird das Apache Sling-Framework (das auf AEM basiert) wie folgt ausgeführt:
 
@@ -83,11 +83,11 @@ Wenn die Verarbeitung von Anforderungen eine Ausnahme ergibt, wird das Apache Sl
 
    im Haupttext der Antwort.
 
-Indem Sie [die Seiten anpassen, die der Fehler-Handler zeigt](#how-to-customize-pages-shown-by-the-error-handler), können Sie ein `500.jsp`-Skript erstellen. However, it is only used if `HttpServletResponse.sendError(500)` is executed explicitly; i.e. from an exception catcher.
+Indem Sie [die Seiten anpassen, die der Fehler-Handler zeigt](#how-to-customize-pages-shown-by-the-error-handler), können Sie ein `500.jsp`-Skript erstellen. Sie wird jedoch nur verwendet, wenn `HttpServletResponse.sendError(500)` explizit ausgeführt wird. d. h. von einem Ausnahmenfänger.
 
 Andernfalls wird der Antwortcode auf gesetzt, aber das Skript `500.jsp`500.  wird nicht ausgeführt.
 
-Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle derartigen Ausnahmen zu bearbeiten, können Sie ein Skript `/apps/sling/servlet/errorhandler/Throwable.js`p oder `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle derartigen Ausnahmen zu bearbeiten, können Sie ein Skript `/apps/sling/servlet/errorhandler/Throwable.js`p oder `/apps/sling/servlet/errorhandler/Exception.jsp` erstellen.
 
 >[!CAUTION]
 >
