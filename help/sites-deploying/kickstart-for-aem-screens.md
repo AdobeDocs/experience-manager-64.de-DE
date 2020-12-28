@@ -17,5 +17,5 @@ ht-degree: 18%
 ---
 
 
-# (Umleitung) Anleitung zu Kickstart{#redirect-kickstart-guide}
+# (Umleitung)Kickstart-Handbuch{#redirect-kickstart-guide}
 
