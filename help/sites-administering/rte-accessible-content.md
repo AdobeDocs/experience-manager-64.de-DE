@@ -33,13 +33,13 @@ AEM unterstützt beides:
 
 Inhaltsautoren können Funktionen von RTE verwenden, um beim Hinzufügen von Inhalten zu einer Seite Informationen zur Barrierefreiheit bereitzustellen. Dies kann das Hinzufügen struktureller Informationen durch Überschriften und Absatzelemente umfassen.
 
-Sie können [diese Funktionen durch die Konfiguration von RTE-Plug-ins zur Komponente konfigurieren und anpassen](#configuring-the-plugin-features). For example, the `paraformat` plugin allows you to add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2` and `H3` provided by default.
+Sie können [diese Funktionen durch die Konfiguration von RTE-Plug-ins zur Komponente konfigurieren und anpassen](#configuring-the-plugin-features). Beispielsweise können Sie mit dem Plugin `paraformat` zusätzliche semantische Elemente auf Blockebene hinzufügen, einschließlich der Erweiterung der Anzahl der unterstützten Überschriftenebenen, die standardmäßig über die grundlegenden `H1`-, `H2`- und `H3`-Elemente hinausgehen.
 
 Die RTE ist in verschiedenen Komponenten der touchfähigen und der klassischen Benutzeroberfläche verfügbar. Die primäre Komponente zur Verwendung von RTE ist die **Textkomponente**.
 
-The **Text** component in AEM is available for both the touch-enabled and the classic UIs. Auf den folgenden Bildern wird der Rich-Text-Editor mit einer Reihe von Plug-ins aktiviert, einschließlich `paraformat`:
+Die Komponente **Text** in AEM ist sowohl für die touchfähige als auch für die klassische Benutzeroberfläche verfügbar. Auf den folgenden Bildern wird der Rich-Text-Editor mit einer Reihe von Plug-ins aktiviert, einschließlich `paraformat`:
 
-* The **Text** component in the touch-enabled UI:
+* Die Komponente **Text** in der touchfähigen Benutzeroberfläche:
 
    ![Textkomponente (RTE) im Vollbildmodus in der touchfähigen Benutzeroberfläche.](assets/chlimage_1-206.png)
 
@@ -80,7 +80,7 @@ Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt we
 1. [Geben Sie die Formate an, die Sie im Absatzauswahlfeld zur Verfügung haben möchten](/help/sites-administering/rich-text-editor.md).
 1. Die Absatzformate sind dann für den Autor der Inhalte aus den Auswahlfeldern im RTE verfügbar. Auf sie kann wie folgt zugegriffen werden:
 
-   * Using the paragraph ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) icon in the touch-enabled UI:
+   * Verwenden des Absatzsymbols ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) in der touchaktivierten Benutzeroberfläche:
 
    ![Absatzsymbol (Pilcrow-Zeichen)](do-not-localize/chlimage_1-7.png)
 
@@ -89,7 +89,7 @@ Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt we
 
 Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt AEM eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen müssen sie entsprechende Strukturelemente wie Überschriften auswählen und über die Option „Arten“ ausgewählte globale Formatarten verwenden. Dies sorgt für ein sauberes Markup, mehr Optionen für Benutzer, die die Suche mit ihren eigenen Formatvorlagen durchführen, sowie korrekt strukturierte Inhalte.
 
-## Verwenden der Funktion „Quellenbearbeitung“   {#use-of-the-source-edit-feature}
+## Verwenden der Funktion „Quellenbearbeitung“    {#use-of-the-source-edit-feature}
 
 In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt ein zusätzliches Markup erfordern, um Compliance mit WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
@@ -101,11 +101,11 @@ In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des 
 
 Um die Barrierefreiheitsfunktionen von AEM weiter auszubauen, ist es möglich, die vorhandenen Komponenten basierend auf dem RTE (wie die Komponenten **Text** und **Tabelle**) um zusätzliche Elemente und Attribute zu erweitern.
 
-The following procedure illustrates how to extend the **Table** component with a **Caption** element that provides information about a data table to assistive technology users:
+Das folgende Verfahren veranschaulicht, wie die Komponente **Tabelle** durch ein **Caption**-Element erweitert wird, das Benutzern der Hilfstechnologie Informationen über eine Datentabelle bereitstellt:
 
 ### Beispiel – Hinzufügen der Beschriftung zum Dialogfeld „Tabelleneigenschaften“{#example-adding-the-caption-to-the-table-properties-dialog}
 
-Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Note that `itemId` must be set to `caption` (i.e. the DOM attribute’s name) to automatically handle its content.
+Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Beachten Sie, dass `itemId` auf `caption` (d. h. den Namen des DOM-Attributs) gesetzt werden muss, um den Inhalt automatisch zu verarbeiten.
 
 Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlegen/entfernen. Der Wert wird vom Dialogfeld im `config`-Objekt weitergegeben. Beachten Sie, dass DOM-Attribute mithilfe der entsprechenden `CQ.form.rte.Common`-Methoden (`com` ist kurz für `CQ.form.rte.Common`) festgelegt/entfernt werden sollten, um die üblichen Fallstricke bei Browserimplementierungen zu vermeiden.
 
@@ -113,7 +113,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 >
 >Dieses Verfahren eignet sich nur für die klassische Benutzeroberfläche.
 
-### Schritt-für-Schritt-Anweisungen {#step-by-step-instructions}
+### Schritt-für-Schritt-Anweisungen  {#step-by-step-instructions}
 
 1. Starten Sie CRXDE Lite. Zum Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopieren:
@@ -162,7 +162,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Add the following code at the end of the `transferConfigToTable` method:
+1. hinzufügen Sie den folgenden Code am Ende der `transferConfigToTable`-Methode:
 
    ```
    /**
@@ -201,10 +201,10 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 
 >[!NOTE]
 >
->Ein „Nur Text“-Feld ist die einzige zulässige Eingabeart für den Wert des „caption“-Elements. Any ExtJS widget, that provides the caption’s value through its `getValue()` method, could be used.
+>Ein „Nur Text“-Feld ist die einzige zulässige Eingabeart für den Wert des „caption“-Elements. Es können alle ExtJS-Widgets verwendet werden, die den Wert der Beschriftung über ihre `getValue()`-Methode bereitstellen.
 >
 >Um Bearbeitungsfunktionen für weitere Elemente und Attribute hinzuzufügen, stellen Sie sicher, dass sowohl:
 >
->* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
+>* Die `itemId`-Eigenschaft für jedes entsprechende Feld wird auf den Namen des entsprechenden DOM-Attributs (`TablePropertiesDialog`) eingestellt.
 >* Das Attribut explizit für das DOM-Element festgelegt und/oder entfernt wird (`Table`).
 
