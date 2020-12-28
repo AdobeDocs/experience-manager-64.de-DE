@@ -63,13 +63,13 @@ Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreff
 
 Beispiel:
 
-* To restrict access to **Tools**, remove read access from
+* Um den Zugriff auf **Tools** einzuschränken, entfernen Sie den Lesezugriff von
 
    `/libs/wcm/core/content/misc`
 
 Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
-### Links in der Seitenleiste (rechter Bereich) {#links-in-sidebar-right-pane}
+### Links in der Seitenleiste (rechter Bereich)  {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
@@ -90,7 +90,7 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td> 
   </tr> 
   <tr> 
-   <td> Workflows  </td> 
+   <td> Workflows</td> 
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td> 
   </tr> 
   <tr> 
@@ -178,21 +178,21 @@ Sie können einen Link für bestimmte Benutzer oder Gruppen ausblenden, indem Si
 
 Beispiel:
 
-* To remove the link to **Reports**, remove read access from
+* Um den Link zu **Berichten** zu entfernen, entfernen Sie den Lesezugriff von
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* To remove the link to **Packages**, remove read access from
+* Um den Link zu **Paketen** zu entfernen, entfernen Sie den Lesezugriff von
 
    `/libs/cq/core/content/welcome/features/packages`
 
 Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
-### Link-Auswahlmechanismus {#link-selection-mechanism}
+### Link-Auswahlmechanismus  {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` use is made of [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), which executes a query on nodes that have the property:
+In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html) verwendet, das eine Abfrage auf Knoten ausführt, die die Eigenschaft haben:
 
-* `jcr:mixinTypes` mit dem Wert: `cq:Console`
+* `jcr:mixinTypes` mit dem Wert:  `cq:Console`
 
 >[!NOTE]
 >
@@ -210,7 +210,7 @@ Wenn ein Benutzer oder eine Gruppe keine Leseberechtigungen für einen Knoten mi
 
 Mit dem [Link-Auswahlmechanismus](#link-selection-mechanism) können Sie Ihr selbst definiertes Element zur Linkliste hinzufügen.
 
-Add your custom item to the list by adding the `cq:Console` mixin to your widget or resource. Definieren Sie dazu die Eigenschaft:
+hinzufügen Sie Ihr benutzerdefiniertes Element zur Liste, indem Sie die `cq:Console`-Mischung zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
 
-* `jcr:mixinTypes` mit dem Wert: `cq:Console`
+* `jcr:mixinTypes` mit dem Wert:  `cq:Console`
 
