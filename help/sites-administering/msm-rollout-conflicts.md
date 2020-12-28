@@ -42,15 +42,15 @@ Neben den Standardfunktionen können benutzerdefinierte Konflikt-Handler hinzuge
 
 In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen Verfahren zur Konfliktbewältigung das Beispiel einer neuen Seite `b` verwenden, die sowohl im Blueprint- als auch im Live Copy-Zweig (manuell) erstellt wurde:
 
-* blueprint: `/b`
+* Blueprint: `/b`
 
    Übergeordnet; mit 1 untergeordneter Seite, bp-level-1.
 
-* live copy: `/b`
+* Live Copy: `/b`
 
-   A page manually created in the live copy branch; with 1 child page, `lc-level-1`.
+   Eine Seite, die manuell in der Live Copy-Verzweigung erstellt wurde; mit 1 untergeordneter Seite, `lc-level-1`.
 
-   * Activated on publish as `/b`, together with the child page.
+   * Aktiviert beim Veröffentlichen als `/b` zusammen mit der untergeordneten Seite.
 
 **Vor dem Rollout**
 
@@ -69,7 +69,7 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
   <tr> 
    <td><code> /bp-level-1</code></td> 
    <td><code> /lc-level-1</code> <br /> (manuell in einer Live-Kopie-Verzweigung erstellt)<br /> </td> 
-   <td><code> /lc-level-1</code> <br /> (enthält den Inhalt der untergeordneten Seite<br /> -Ebene-1, die manuell in der Live Copy-Verzweigung erstellt wurde)</td> 
+   <td><code> /lc-level-1</code> <br /> (enthält den Inhalt der Seite<br /> untergeordneter Ebene-1, die manuell in der Live Copy-Verzweigung erstellt wurde)</td> 
   </tr> 
  </tbody> 
 </table>
@@ -105,22 +105,22 @@ AEM stellt Folgendes bereit:
 
 Der Standard-Konflikt-Handler:
 
-* Wird aufgerufen `ResourceNameRolloutConflictHandler`
+* Wird als `ResourceNameRolloutConflictHandler` bezeichnet
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* The service ranking for this handler is set low ( ``i.e. below the default value for the `service.ranking` property) as the assumption is that customized handlers will need a higher ranking. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Die Dienstrangliste für diesen Handler ist niedrig (&quot;d.h. unter dem Standardwert für die `service.ranking`-Eigenschaft), da davon ausgegangen wird, dass benutzerdefinierte Handler eine höhere Rangfolge benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler gibt dem Blueprint Vorrang. The live copy page `/b` is moved (within the live copy branch) to `/b_msm_moved`.
+Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird (innerhalb der Live Copy-Verzweigung) nach `/b_msm_moved` verschoben.
 
-* live copy: `/b`
+* Live Copy: `/b`
 
-   Is moved (within the live copy) to `/b_msm_moved`. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
+   Wird (innerhalb der Live-Kopie) nach `/b_msm_moved` verschoben. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
 
    * `lc-level-1` nicht verschoben.
 
-* blueprint: `/b`
+* Blueprint: `/b`
 
-   Is rolled out to the live copy page `/b`.
+   Wird auf die Live-Kopierseite `/b` Rollout ausgeführt.
 
    * `bp-level-1` wird beim Rollout auf die Live Copy-Seite verschoben.
 
@@ -129,7 +129,7 @@ Dieser Konflikt-Handler gibt dem Blueprint Vorrang. The live copy page `/b` is m
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Blueprint nach Rollout</strong></td> 
+   <td><strong>Blueprint nach dem Rollout</strong></td> 
    <td><strong>Live Copy nach der Aktualisierung</strong><br /> </td> 
    <td></td>
    <td><strong>Live Copy nach der Aktualisierung</strong><br /> <br /> <br /> </td> 
@@ -158,7 +158,7 @@ Mit angepassten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren
 
 Benutzerdefinierte Konflikt-Handler können:
 
-* gemäß Ihren Anforderungen benannt werden; ``
+* gemäß Ihren Anforderungen benannt werden; &quot;
 * gemäß Ihren Anforderungen entwickelt/konfiguriert werden. Beispiel: Sie können einen Handler entwickeln, sodass die Live Copy-Seite Vorrang erhält.
 * so konzipiert sein, dass die Konfiguration unter Verwendung der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) erfolgt; insbesondere gilt:
 
@@ -176,13 +176,13 @@ Wenn Sie [die Konfliktbehebung manuell deaktivieren](#rollout-manager-and-confli
 >
 >AEM zeigt nicht an, dass Konflikte ignoriert werden, da dieses Verhalten explizit konfiguriert werden muss. Daher wird davon ausgegangen, dass dies das erforderliche Verhalten ist.
 
-In diesem Fall hat die Live Copy effektiv Vorrang. The blueprint page `/b` is not copied and the live copy page `/b` is left untouched.
+In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird nicht kopiert und die Live Copy-Seite `/b` bleibt unberührt.
 
-* blueprint: `/b`
+* Blueprint: `/b`
 
    Wird überhaupt nicht kopiert, wird aber ignoriert.
 
-* live copy: `/b`
+* Live Copy: `/b`
 
    Steht gleich.
 
@@ -192,7 +192,7 @@ In diesem Fall hat die Live Copy effektiv Vorrang. The blueprint page `/b` is no
  </caption> 
  <tbody> 
   <tr> 
-   <td><strong>Blueprint nach Rollout</strong></td> 
+   <td><strong>Blueprint nach dem Rollout</strong></td> 
    <td><strong>Live Copy nach der Aktualisierung</strong><br /> <br /> <br /> </td> 
    <td><strong>nach der Veröffentlichung veröffentlichen</strong><br /> <br /> </td> 
   </tr> 
