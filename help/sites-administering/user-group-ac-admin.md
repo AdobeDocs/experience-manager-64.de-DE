@@ -29,7 +29,7 @@ Die Aktivierung des Zugriffs auf ein CRX-Repository umfasst mehrere Themen:
 
 Nachfolgend sind die grundlegenden Elemente aufgeführt:
 
-**Benutzerkonten** CRX authentifiziert den Zugriff, indem ein Benutzer (von einer Person oder einer anderen Anwendung) anhand der im Benutzerkonto gespeicherten Details identifiziert und überprüft wird.
+**Benutzerkonten** CRX authentifiziert den Zugriff durch Identifizieren und Überprüfen eines Benutzers (durch die betreffende Person oder eine andere Anwendung) gemäß den im Benutzerkonto gespeicherten Details.
 
 In CRX stellt jedes Benutzerkonto einen Knoten im Workspace dar. Ein CRX-Benutzerkonto weist die folgenden Eigenschaften auf:
 
@@ -53,7 +53,7 @@ In CRX verfügt eine Gruppe über die folgenden Eigenschaften:
 
 * Sie können die Zugriffsrechte für alle Gruppenmitglieder definieren.
 
-**Zugriffsrechte** CRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
+**Zugriff** RightsCRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
 
 Dies erfolgt über die Zuweisung von Berechtigungen, um den Zugriff auf eine Ressource (Knoten oder Pfad) im Repository zuzulassen oder abzulehnen. Da zahlreiche Berechtigungen zugewiesen werden können, müssen sie ausgewertet werden, um festzustellen, welche Kombination für die aktuelle Anfrage relevant ist.
 
@@ -91,7 +91,7 @@ CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
       Alle Rechte, die einer der Gruppen zugewiesen sind, denen der Benutzer angehört.
    Das Ergebnis wird anschließend verwendet, um den Zugriff auf die angeforderte Ressource zuzulassen oder abzulehnen.
 
-#### Kompilieren der Liste der Zugriffsrechte für ein Objekt {#compiling-the-list-of-access-rights-for-a-subject}
+#### Kompilieren der Liste der Zugriffsrechte für ein Objekt  {#compiling-the-list-of-access-rights-for-a-subject}
 
 In CRX ist das Objekt abhängig von:
 
@@ -115,11 +115,11 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 
 
 
-### Auflösen von Anfragen und Zugriffsrechten {#resolving-request-and-access-rights}
+### Auflösen von Anfragen und Zugriffsrechten  {#resolving-request-and-access-rights}
 
 Wenn CRX die Anfrage verarbeitet, vergleicht es die Zugriffsanfrage des Objekts mit der Liste der Zugriffssteuerung im Repository-Knoten:
 
-So if Linda requests to update the `/features` node in the following repository structure:
+Wenn Linda also den Knoten `/features` in der folgenden Repository-Struktur aktualisieren möchte:
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -152,7 +152,7 @@ Nachfolgend sehen Sie zwei Beispiele, in denen der Benutzer `aUser` Mitglied der
 
 Im obigen Fall:
 
-* `aUser` keine Schreibberechtigung für `grandChildNode`.
+* `aUser` keine Schreibberechtigung für  `grandChildNode`.
 
 ```xml
    + parentNode
@@ -167,7 +167,7 @@ Im obigen Fall:
 
 In diesem Fall:
 
-* `aUser` keine Schreibberechtigung für `grandChildNode`.
+* `aUser` keine Schreibberechtigung für  `grandChildNode`.
 
 * Der zweite ACE-Eintrag für den Benutzer `aUser` ist redundant.
 
@@ -235,11 +235,11 @@ Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt a
 
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für jede neue Eigenschaft.
 
-**Gruppenmitgliedschaft** : Zeigt alle Gruppen an, denen das Konto angehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+**Gruppenmitgliedschaft** Zeigt alle Gruppen an, denen das Konto angehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 Durch Klicken auf eine Gruppen-ID (falls verfügbar) wird die [Gruppenverwaltung](#group-administration) für diese Gruppe geöffnet.
 
-**Impersonators** Mit der Funktion Impersonate kann ein Benutzer für einen anderen Benutzer arbeiten.
+**** ImpersonatorsMit der Funktion Impersonate kann ein Benutzer für einen anderen Benutzer arbeiten.
 
 Dies bedeutet, dass über ein Benutzerkonto andere Konten (Benutzer oder Gruppe) festgelegt werden können, die mit ihrem Konto arbeiten können. Anders ausgedrückt: Wenn Benutzer B stellvertretend für Benutzer A agieren darf, kann Benutzer B Aktionen unter Verwendung aller Kontodetails des Benutzers A (einschließlich ID, Name und Zugriffsrechte) ausführen.
 
@@ -276,7 +276,7 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 
 
 
-### Aktualisieren von Benutzerkonten {#updating-a-user-account}
+### Aktualisieren von Benutzerkonten  {#updating-a-user-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Benutzerverwaltung** die Listenansicht aller Konten.
 
@@ -285,7 +285,7 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 1. Nehmen Sie eine Änderung vor und klicken Sie anschließend auf „Speichern“ (grünes Häkchen-Symbol) für diesen Eintrag.
 1. Klicken Sie zum Fertigstellen auf **Schließen** oder auf **Liste…**, um zur Liste aller Benutzerkonten zurückzukehren.
 
-### Entfernen von Benutzerkonten {#removing-a-user-account}
+### Entfernen von Benutzerkonten  {#removing-a-user-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Benutzerverwaltung** die Listenansicht aller Konten.
 
@@ -312,13 +312,13 @@ Vorhandene Eigenschaften können mit dem Papierkorb-Symbol gelöscht werden.
 
 Mit Ausnahme des Kennworts können Eigenschaften nicht bearbeitet werden, sie müssen gelöscht und neu erstellt werden.
 
-#### Ändern von Kennwörtern {#changing-the-password}
+#### Ändern von Kennwörtern  {#changing-the-password}
 
 Das **Kennwort** ist eine spezielle Eigenschaft, die durch Klicken auf den Link **Kennwort ändern** geändert werden kann.
 
 Sie können über das Menü **Sicherheit** im CRX Explorer auch das Kennwort für Ihr eigenes Benutzerkonto ändern.
 
-### Definieren von Darstellern {#defining-an-impersonator}
+### Definieren von Darstellern  {#defining-an-impersonator}
 
 Sie können Darsteller für neue oder vorhandene Konten definieren:
 
@@ -349,17 +349,17 @@ Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt a
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für jede neue Eigenschaft.
 * **Mitglieder** Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
 
-**Gruppenmitgliedschaft** : Zeigt alle Gruppen an, denen das aktuelle Gruppenkonto angehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+**Gruppenmitgliedschaft** Diese Funktion zeigt alle Gruppen an, zu denen das aktuelle Gruppenkonto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 Wenn Sie auf eine Gruppen-ID klicken, wird das Dialogfeld für diese Gruppe geöffnet.
 
-**Mitglieder** Listen alle Konten (Benutzer und/oder Gruppen), die Mitglieder der aktuellen Gruppe sind.
+**** MemberListet alle Konten (Benutzer und/oder Gruppen) auf, die Mitglieder der aktuellen Gruppe sind.
 
 Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 >[!NOTE]
 >
->Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. The group name is of the format `mac-default-<foldername>` for each folder on which the roles are defined.
+>Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname hat das Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
 
 ### Erstellen von Gruppenkonten {#creating-a-group-account}
 
@@ -377,7 +377,7 @@ Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedsch
    1. Zeigen Sie die **Gruppenmitgliedschaft** an.
    1. Verwalten Sie die **Mitglieder**.
 
-### Aktualisieren von Gruppenkonten {#updating-a-group-account}
+### Aktualisieren von Gruppenkonten  {#updating-a-group-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Gruppenverwaltung** die Listenansicht aller Konten.
 
@@ -386,7 +386,7 @@ Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedsch
 1. Nehmen Sie eine Änderung vor und klicken Sie anschließend auf „Speichern“ (grünes Häkchen-Symbol) für diesen Eintrag.
 1. Klicken Sie zum Fertigstellen auf **Schließen** oder auf **Liste…**, um zur Liste aller Gruppenkonten zurückzukehren.
 
-### Entfernen von Gruppenkonten {#removing-a-group-account}
+### Entfernen von Gruppenkonten  {#removing-a-group-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Gruppenverwaltung** die Listenansicht aller Konten.
 
@@ -411,7 +411,7 @@ Sie können Eigenschaften für neue oder vorhandene Konten definieren:
 
 Vorhandene Eigenschaften können mit dem Papierkorb-Symbol gelöscht werden.
 
-### Mitglieder {#members}
+### Mitglieder  {#members}
 
 Sie können der aktuellen Gruppe Mitglieder hinzufügen:
 
@@ -425,9 +425,9 @@ Sie können der aktuellen Gruppe Mitglieder hinzufügen:
 
 Alternativ können Sie ein vorhandenes Mitglied über das Papierkorb-Symbol löschen.
 
-## Verwalten von Zugriffsrechten {#access-right-management}
+## Verwalten von Zugriffsrechten  {#access-right-management}
 
-With the **Access Control** tab of CRXDE Lite you can define the access control policies and assign the related privileges.
+Mit dem Register **Zugriffskontrolle** der CRXDE Lite können Sie die Richtlinien für die Zugriffskontrolle definieren und die entsprechenden Berechtigungen zuweisen.
 
 Wählen Sie beispielsweise auf der Registerkarte „Zugangssteuerung“ im unteren rechten Bereich für die Option **Aktueller Pfad** die gewünschte Ressource im linken Bereich aus:
 
@@ -468,7 +468,7 @@ Sie können Richtlinien für Folgendes auswählen:
 >
 >Es ist einfacher, einige wenige Gruppen anstatt vieler Benutzerkonten zu verwalten. 
 
-### Berechtigungen {#privileges}
+### Berechtigungen  {#privileges}
 
 Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungseintrags ausgewählt werden (umfassende Details finden Sie in [Sicherheits-API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)).
 
@@ -528,7 +528,7 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:nodeTypeManagement</code></td> 
-   <td>Hinzufügen und entfernen Sie mixin-Knotentypen und ändern Sie den primären Knotentyp einer Node. Dies schließt auch alle Aufrufe der Node.addNode- und XML-Importmethoden ein, bei denen der Mixin-Typ oder primäre Typ des neuen Knotens explizit festgelegt ist.</td> 
+   <td>hinzufügen und entfernen Sie mixin-Knotentypen und ändern Sie den primären Knotentyp einer Node. Dies schließt auch alle Aufrufe der Node.addNode- und XML-Importmethoden ein, bei denen der Mixin-Typ oder primäre Typ des neuen Knotens explizit festgelegt ist.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:readAccessControl</code></td> 
@@ -608,7 +608,7 @@ Sie können auch neue Berechtigungen registrieren:
 
 CRX überprüft Ihre Auswahl. Bei einem gegebenen Prinzipal ist (maximal) 1 Ablehnungs- und 1 Zulassungseintrag in einem gegebenen Knoten vorhanden. Die Implementierung löscht immer redundante Einträge und stellt sicher, dass dieselbe Berechtigung nicht sowohl in den Zulassungs- als auch in den Ablehnungseinträgen aufgeführt wird.
 
-### Sortieren von Richtlinien zur lokalen Zugriffssteuerung {#ordering-local-access-control-policies}
+### Sortieren von Richtlinien zur lokalen Zugriffssteuerung  {#ordering-local-access-control-policies}
 
 Die Reihenfolge in der Liste zeigt die Reihenfolge an, in der die Richtlinien angewendet werden.
 
