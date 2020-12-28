@@ -24,13 +24,13 @@ ht-degree: 11%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Ein ***AEM Administrator*** ist dafür verantwortlich, dem AEM Mobile-Katalog eine neue Anwendung hinzuzufügen, entweder durch Erstellen einer neuen App mit dem Erstellungsassistenten oder durch Importieren einer vorhandenen Anwendung. AEM Administratoren, die eine neue App mit dem *Erstellungsassistenten* von AEM Mobile erstellen, wählen in der Regel eine der gewünschten App-Vorlagen entweder aus unseren vordefinierten Referenzbeispielen oder (in den meisten Fällen) aus einer benutzerdefinierten App-Vorlage, die von *AEM Entwicklern erstellt wurde.*
+Ein ***AEM Administrator*** ist dafür verantwortlich, dem AEM Mobile-Katalog eine neue Anwendung hinzuzufügen, entweder durch Erstellen einer neuen App mit dem Erstellungsassistenten oder durch Importieren einer vorhandenen Anwendung. AEM Administratoren, die eine neue App mit dem AEM Mobile *Erstellungsassistenten* erstellen, wählen in der Regel eine der gewünschten App-Vorlagen aus unseren vordefinierten Referenzbeispielen oder (in den meisten Fällen) aus einer benutzerdefinierten App-Vorlage, die von *AEM-Entwicklern erstellt wurde.*
 
 Nachdem Sie Ihre Mobilanwendung mit HTML5 und PhoneGap erstellt haben, können Sie sie im Command Center verwalten. Natürlich können Sie auch die HTML5-Inhalte für eine native App im Command Center verwalten, indem Sie Cordova-Webansichten verwenden (damit PhoneGap-Plug-Ins auf native Funktionen zugreifen können).
 
 Das AEM Apps Control Center ermöglicht Ihnen, Ihre mobile Anwendung zu erstellen und bereitzustellen, Anwendungsmetadaten zu erstellen und zu bearbeiten, bevor Sie Ihre mobile Anwendung veröffentlichen. Außerdem können Sie gemeinsame Kuratieren und Veröffentlichungen von neuen und entspannenden Inhalten durchführen, ohne dass die Antragsabsenprozesse erneut besucht werden müssen. Außerdem können Sie den Lebenszyklus und die Nutzungsmetriken der Anwendung analysieren, um die Kundenkonvertierung und die Markenloyalität zu verbessern.
 
-To build your AEM Mobile Application, see the [Building Mobile Applications](/help/mobile/building-app-mobile-phonegap.md) page, in Developers section.
+Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf der Seite [Erstellen von Mobilanwendungen](/help/mobile/building-app-mobile-phonegap.md) im Abschnitt &quot;Entwickler&quot;.
 
 Um Ihre Umgebung einzurichten und mit dem Control Center zu beginnen,
 
@@ -39,11 +39,11 @@ Um Ihre Umgebung einzurichten und mit dem Control Center zu beginnen,
 1. [Konfigurieren des Adobe PhoneGap Build-Cloud-Service](/help/mobile/configure-phonegap-build-cloud.md) 
 1. [Konfigurieren des Adobe Analytics-Cloud-Service](/help/mobile/configure-adobe-mobile-cloud-service.md) 
 
-Weitere Informationen zu Content Services Content Services finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md).
+Weitere Informationen zu Content Services Content Services finden Sie unter [Content Services verwalten](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >
->Die *AEM Verifizierung* ist eine schnelle und einfache Möglichkeit, Ihre AEM Mobilanwendungen auf jedem iOS- oder Android-Mobilgerät auszuführen. Die *AEM Verifizierung* ist eine mobile App auf Ihrem Gerät und Sie stellen eine Verbindung zu dem Server her, auf dem der Schnellstart ausgeführt wird, um eine Liste von Apps zur Ansicht zu erhalten. Klicken Sie [hier](/help/mobile/phonegap-mobile-quickstart.md) , um die Details Ansicht.
+>*AEM Verifizierung* ist eine schnelle und einfache Möglichkeit, Ihre AEM Mobilanwendungen auf jedem iOS- oder Android-Mobilgerät auszuführen. *AEM Verifizierung* ist eine mobile App auf Ihrem Gerät und Sie stellen eine Verbindung zu dem Server her, auf dem der Schnellstart ausgeführt wird, um eine Liste von Apps zur Ansicht zu erhalten. Klicken Sie [hier](/help/mobile/phonegap-mobile-quickstart.md), um die Details Ansicht.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
