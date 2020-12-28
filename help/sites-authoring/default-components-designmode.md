@@ -34,9 +34,9 @@ Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe 
 
 >[!NOTE]
 >
->Design mode is only available for design configurations stored as content under ( `/etc`).
+>Der Designmodus ist nur für Designkonfigurationen verfügbar, die als Inhalt unter ( `/etc`) gespeichert werden.
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>Ab AEM 6.4 wird empfohlen, Entwürfe als Konfigurationsdaten unter `/apps` zu speichern, um kontinuierliche Bereitstellungsszenarien zu unterstützen. Entwürfe, die unter `/apps` gespeichert werden, können zur Laufzeit nicht bearbeitet werden, und der Designmodus steht Nichtadministratoren für solche Vorlagen nicht zur Verfügung.
 
 Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Mit dem Absatzsystem können Autoren Komponenten unterschiedlicher Typen zu einer Seite hinzufügen, da es alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
 
@@ -69,7 +69,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. Klicken Sie auf das Symbol **Übergeordnetes Element** oder tippen Sie darauf.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +92,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Zugelassene Komponenten**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   Auf der Registerkarte **Zulässige Komponenten** legen Sie fest, welche Komponenten für die Parsen verfügbar sind.
 
    * Die Komponenten werden anhand ihrer Komponentengruppen gruppiert, die sich ein- und ausblenden lassen.
    * Eine gesamte Gruppe kann durch Aktivieren des Gruppennamens ausgewählt werden und die Auswahl kann durch Deaktivieren aufgehoben werden.
