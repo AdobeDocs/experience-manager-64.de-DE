@@ -18,9 +18,9 @@ ht-degree: 64%
 ---
 
 
-# Adding Search&amp;Promote features to your page {#adding-search-promote-features-to-your-page}
+# Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite {#adding-search-promote-features-to-your-page}
 
-To integrate Search&amp;Promote capabilities in your web site, use the [!UICONTROL Search&amp;Promote] components to add the following features to your pages:
+Verwenden Sie zum Integrieren von Search&amp;Promote in Ihre Website die Komponenten [!UICONTROL Search&amp;Promote], um die folgenden Funktionen zu Ihren Seiten hinzuzufügen:
 
 * Keyword-Suche
 * Seite mit Suchergebnissen
@@ -84,20 +84,20 @@ Die Komponente **[!UICONTROL Seitenumbruch]** ermöglicht Benutzern die Navigati
 
 ![srchpaginierung](assets/srchpagination.png)
 
-You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
+Sie können die folgenden Komponenteneigenschaften im Modus [!UICONTROL Bearbeiten] konfigurieren, um das Laufzeitverhalten zu steuern:
 
-* **[!UICONTROL Einzelne Ergebnisseite]** ausblenden: Wählen Sie diese Option, um die Seitennavigationssteuerelemente auszublenden, wenn die Suche eine einzelne Ergebnisseite zurückgibt.
-* **[!UICONTROL &quot;Erste/Letzte]** ausblenden&quot;- Wählen Sie diese Option, um zu verhindern, dass Benutzer zur ersten oder letzten Ergebnisseite springen.
-* **[!UICONTROL Vorherige/Nächste]** ausblenden - Bestimmt, ob Benutzer relativ zur aktuellen Seite navigieren können.
-* **[!UICONTROL Alle]** Ansichten ausblenden - Bestimmt, ob der Benutzer alle Suchergebnisse auf einer Seite konsolidieren kann. In der Regel erfolgt die Nutzung von Serverressourcen bei Daten mit Seitenaufteilung effizienter. Wählen Sie diese Option aus, um die Übertragung großer Datenmengen in einer einzelnen Antwortmeldung zu verhindern.
+* **[!UICONTROL Einzelne Ergebnisseite]**  ausblenden: Wählen Sie diese Option, um die Seitennavigationssteuerelemente auszublenden, wenn die Suche eine einzelne Ergebnisseite zurückgibt.
+* **[!UICONTROL &quot;Erste/Letzte]**  ausblenden&quot;- Wählen Sie diese Option, um zu verhindern, dass Benutzer zur ersten oder letzten Ergebnisseite springen.
+* **[!UICONTROL Vorherige/Nächste]**  ausblenden: Legt fest, ob Benutzer relativ zur aktuellen Seite durch die Ergebnisseiten navigieren können.
+* **[!UICONTROL Alle]**  Ansichten ausblenden - Bestimmt, ob der Benutzer alle Suchergebnisse auf einer Seite konsolidieren kann. In der Regel erfolgt die Nutzung von Serverressourcen bei Daten mit Seitenaufteilung effizienter. Wählen Sie diese Option aus, um die Übertragung großer Datenmengen in einer einzelnen Antwortmeldung zu verhindern.
 
-## Aktivieren der Filterung von Ergebnissen durch Facetten {#enabling-the-filtering-of-results-by-facets}
+## Aktivieren der Filterung von Ergebnissen durch Facetten  {#enabling-the-filtering-of-results-by-facets}
 
-Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **[!UICONTROL Breadcrumbs]** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
+Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. Die Komponenten **[!UICONTROL Facette für die Liste des Kontrollkästchens]**, **[!UICONTROL Dropdown-Facette]** und **[!UICONTROL Facet der Liste verknüpfen]** ermöglichen es dem Benutzer, eine oder mehrere Facetten zum Filtern auszuwählen. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **[!UICONTROL Breadcrumbs]** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
 
-The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+Die Komponenten **[!UICONTROL Checkbox-Liste]**, **[!UICONTROL Dropdown-Facet]** und **[!UICONTROL Link-Liste-Facet]** verfügen jeweils über die folgenden Eigenschaften, die Sie im Modus **[!UICONTROL Bearbeiten]** konfigurieren:
 
-* **[!UICONTROL Facet Name]** - Der Name der Facette, die für Filter verwendet wird.
+* **[!UICONTROL Facet Name]** : Der Name der Facette, die für Filter verwendet wird.
 
 Die Komponente **[!UICONTROL Facette als Kontrollkästchen-Liste]** zeigt eine Liste von Facetten an, die jeweils ein Kontrollkästchen aufweisen. Verwenden Sie **[!UICONTROL Facette als Kontrollkästchen-Liste]**, damit Benutzer eine Untergruppe von Ergebnissen anzeigen können, die Elemente aus mehreren Facetten enthalten. Beispielsweise ist dieMarken-Facette geeignet, da mehrere Marken dieselbe Art von Produkt anbieten.
 
@@ -117,7 +117,7 @@ Facettenmitglieder werden als Liste von Links angezeigt. Der Text eines Links en
 
 ![Sandplinklistcomp](assets/sandplinklistcomp.png)
 
-The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. Durch die Verwendung von Filterkomponenten mehrerer Typen sind effektive Filterkombinationen möglich.
+Die Links in der Liste ändern sich auch, wenn ein Filter aus einem anderen Typ von [!UICONTROL Search&amp;Promote]-Komponente angewendet wird. Durch die Verwendung von Filterkomponenten mehrerer Typen sind effektive Filterkombinationen möglich.
 
 Die Komponente **[!UICONTROL Breadcrumbs]** ermöglicht es Kunden, die aktuell auf Suchergebnisse angewendeten Filter in der Reihenfolge, in der sie angewendet wurden, einzusehen. Kunden können auf die Elemente im Breadcrumb klicken, um die entsprechende Filterkombination wiederherzustellen.
 
@@ -126,24 +126,24 @@ Die Komponente **[!UICONTROL Breadcrumbs]** ermöglicht es Kunden, die aktuell a
 Sie können die folgenden Eigenschaften für Breadcrumbs im Bearbeitungsmodus konfigurieren, um das Erscheinungsbild der Komponente anzupassen:
 
 * **[!UICONTROL Trennzeichen]** : Definieren Sie die Zeichen- oder Zeichenzeichenfolge, die als Trennzeichen zwischen den einzelnen Breadcrumbs dienen soll. Das Trennzeichen-Feld akzeptiert alle Zeichenfolgen als Eingabe. Die Standardeinstellung ist: „>“ (ohne die Anführungszeichen)
-* **[!UICONTROL Trennzeichen]** nach dem Komma: Definieren Sie eine Zeichen- oder Zeichenzeichenfolge, die am Ende der Breadcrumbs angezeigt werden soll. Das Feld &quot;Trennzeichen nach&quot;akzeptiert alle Zeichenfolgen als Eingabe. Die Standardeinstellung für diese Einstellung ist &quot;leer&quot;(d. h., am Ende der Breadcrumb-Linie wird nichts angezeigt)
+* **[!UICONTROL Trennzeichen]**  nach dem Komma: Definieren Sie eine Zeichen- oder Zeichenzeichenfolge, die am Ende der Breadcrumbs angezeigt werden soll. Das Feld &quot;Trennzeichen nach&quot;akzeptiert alle Zeichenfolgen als Eingabe. Die Standardeinstellung für diese Einstellung ist &quot;leer&quot;(d. h., am Ende der Breadcrumb-Linie wird nichts angezeigt)
 
 ## Hinzufügen von Suchfeldern {#adding-search-boxes}
 
-The **[!UICONTROL Search]** component enables customers to perform keyword searches. Fügen Sie Suchkomponenten zu jeder Seite hinzu, auf der die Suchfunktion verfügbar sein soll.
+Die Komponente **[!UICONTROL Suche]** ermöglicht Kunden die Durchführung von Suchbegriffsuchen. Fügen Sie Suchkomponenten zu jeder Seite hinzu, auf der die Suchfunktion verfügbar sein soll.
 
-Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
+Konfigurieren Sie die folgenden Eigenschaften im Modus **[!UICONTROL Bearbeiten]**, um das Laufzeitverhalten zu steuern:
 
-* **[!UICONTROL Pfad]** der Ergebnisseite - Der Pfad zur Seite, auf der die Suchergebnisse angezeigt werden.
-* **[!UICONTROL Autom. Ausfüllen]** aktivieren: Wählen Sie diese Option, um vorzuschlagende Suchbegriffe anzuzeigen, wenn der Kunde beginnt, in das Suchfeld einzugeben.
+* **[!UICONTROL Pfad]**  der Ergebnisseite: Der Pfad zur Seite, auf der die Suchergebnisse angezeigt werden.
+* **[!UICONTROL Autom. Ausfüllen]**  aktivieren: Wählen Sie diese Option aus, damit vorgeschlagene Suchbegriffe angezeigt werden, wenn der Kunde mit der Eingabe in das Suchfeld beginnt.
 
 ![sandpsearcomp](assets/sandpsearchcomp.png)
 
 ## Hinzufügen von Bannern {#adding-banners}
 
-The **[!UICONTROL Banners]** component displays banner advertisements according to the customer&#39;s Search&amp;Promote searches. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
+Die Komponente **[!UICONTROL Banner]** zeigt Bannerwerbung entsprechend den Search&amp;Promote des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
 
-The **[!UICONTROL Banners]** component provides one configurable property named **[!UICONTROL Banner Area]**. In **[!UICONTROL Edit]** mode, select one of the property values to specify how the banner appears. Der Search&amp;Promote-Service legt die Liste der Werte fest, aus denen Sie auswählen können.
+Die Komponente **[!UICONTROL Banner]** bietet eine konfigurierbare Eigenschaft mit dem Namen **[!UICONTROL Bannerbereich]**. Wählen Sie im Modus **[!UICONTROL Bearbeiten]** einen der Eigenschaftswerte aus, um anzugeben, wie das Banner angezeigt wird. Der Search&amp;Promote-Service legt die Liste der Werte fest, aus denen Sie auswählen können.
 
 ## Beispiel für Search&amp;Promote-Suchseite {#example-search-promote-search-page}
 
