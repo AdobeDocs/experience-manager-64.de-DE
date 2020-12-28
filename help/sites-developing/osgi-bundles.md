@@ -22,7 +22,7 @@ ht-degree: 89%
 
 ## Verwenden von semantischer Versionierung {#use-semantic-versioning}
 
-Agreed upon best practices for semantic version numbering can be found at [https://semver.org/](https://semver.org/).
+Die vereinbarten Best Practices für die semantische Versionsnummerierung finden Sie unter [https://semver.org/](https://semver.org/).
 
 ## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Bundles {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
@@ -38,10 +38,10 @@ Unmittelbar nach dem Exportieren eines Pakets wird eine API erstellt, von der an
 
 Implementierungen müssen immer in einem separaten *impl*-Paket erfolgen. Standardmäßig exportiert das *maven-bundle*-Plug-in alle Komponenten eines Projekts, die kein *impl* im Namen enthalten.
 
-## Ausdrückliches Definieren einer semantischen Version für jedes exportierte Paket {#always-explicitly-define-a-semantic-version-for-each-package-exported}
+## Ausdrückliches Definieren einer semantischen Version für jedes exportierte Paket  {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
 Dadurch können sich Nutzer der API an Ihr Entwicklungstempo anpassen. Folgen Sie dabei immer den Best Practices für die semantische Versionierung. Verbraucher der API sind dann immer darüber informiert, mit welchen Änderungen in einer neuen Version zu rechnen ist.
 
 ## Angeben von angezeigten Metatyp-Informationen {#include-metatype-information-where-exposed}
 
-Durch Angabe aussagekräftiger Metatyp-Informationen sind Ihre Services und Komponenten in der Felix-Konsole verständlicher. A list of SCR annotations and attributes can be found at: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Durch Angabe aussagekräftiger Metatyp-Informationen sind Ihre Services und Komponenten in der Felix-Konsole verständlicher. Eine Liste der SCR-Anmerkungen und -Attribute finden Sie unter: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
