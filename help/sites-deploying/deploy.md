@@ -84,7 +84,7 @@ Auf dieser Grundlage bietet AEM einige Funktionen auf Anwendungsebene für die V
 
 Benutzer können diese Bausteine auf Infrastruktur- und Anwendungsebene schließlich dazu verwenden, um angepasste Lösungen zu erstellen, indem sie ihre eigenen Anwendungen erstellen.
 
-The AEM server is **Java-based** and runs on most operating systems that support that platform. All client interaction with AEM is done through a **web browser**.
+Der AEM Server ist **Java-basiert** und wird auf den meisten Betriebssystemen ausgeführt, die diese Plattform unterstützen. Die gesamte Interaktion mit AEM erfolgt über einen **Webbrowser**.
 
 ### Typische Bereitstellungsszenarien {#typical-deployment-scenarios}
 
@@ -111,7 +111,7 @@ Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische
 
 Weitere Informationen zu typischen On-Premise-Bereitstellungen erhalten Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
-### Managed Services mit Cloud Manager {#managed-services-using-cloud-manager}
+### Managed Services mit Cloud Manager  {#managed-services-using-cloud-manager}
 
 AEM Managed Services ist eine Komplettlösung für das Management digitaler Erlebnisse. Sie bietet die Vorteile einer Lösung zur Erlebnisbereitstellung in der Cloud unter Beibehaltung aller Vorteile hinsichtlich Kontrolle, Sicherheit und Personalisierung einer On-Premise-Bereitstellung. AEM Managed Services ermöglicht Kunden schnellere Launches, indem sie in der Cloud bereitstellen und dabei auf die Best Practices und die Unterstützung von Adobe vertrauen können. Organisationen und Geschäftskunden können so in kürzester Zeit Kunden ansprechen, den Marktanteil steigern und sich auf innovative Marketing-Kampagnen konzentrieren, wobei die Belastung auf die IT reduziert wird.
 
@@ -127,35 +127,35 @@ Mit AEM Managed Services können Kunden die folgenden Vorteile nutzen:
 
 **Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Adobe Managed Service-Kunden verfügbar.
 
-To learn more about Cloud Manager and its resources, please refer to [**Cloud Manager User Guide**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+Weitere Informationen zu Cloud Manager und seinen Ressourcen finden Sie im [**Cloud Manager-Benutzerhandbuch**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## Erste Schritte {#getting-started}
 
 ### Voraussetzungen {#prerequisites}
 
-While production instances are usually run on dedicated machines running an officially supported OS (see [Technical Requirements](/help/sites-deploying/technical-requirements.md)), the Experience Manager server will actually run on any system that supports [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Während Produktionsinstanzen in der Regel auf dedizierten Computern mit einem offiziell unterstützten Betriebssystem ausgeführt werden (siehe [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)), wird der Experience Manager-Server tatsächlich auf allen Systemen ausgeführt, die [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) unterstützen.
 
 Um sich mit AEM vertraut zu machen bzw. um die Entwicklung auf AEM vorzunehmen, wird häufig eine auf Ihrem lokalen Computer installierte Instanz verwendet, auf der Apple OS X oder Desktopcomputerversionen von Microsoft Windows oder Linux ausgeführt werden.
 
-On the client-side, AEM works with all modern browsers (**Microsoft Edge**, **Internet Explorer** 11, **Chrome** 51+ , **Firefox** 47+, **Safari** 8+) on both desktop and tablet operating systems. See [Supported Client Platforms](/help/sites-deploying/technical-requirements.md#supported-client-platforms) for details.
+Auf der Clientseite funktioniert AEM mit allen modernen Browsern (**Microsoft Edge**, **Internet Explorer** 11, **Chrome** 51+, **Firefox** 47+, **Safari** 8+) auf Desktop- und Tablet-Computern. Systeme. Weitere Informationen finden Sie unter [Unterstützte Client-Plattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Abrufen der Software {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Kunden mit einem gültigen Wartungs- und Supportvertrag sollten eine E-Mail-Benachrichtigung mit einem Code erhalten und AEM von der [**Adobe Licensing Website**](https://licensing.adobe.com/) herunterladen können. Geschäftspartner können Download-Zugriff von [**spphelp@adobe.com**](mailto:spphelp@adobe.com) anfordern.
 
 Das AEM-Softwarepaket steht in zwei Formen zur Verfügung:
 
-* **cq-quickstart-6.4.0.jar:** Eine eigenständige ausführbare *JAR* -Datei, die alles enthält, was für die Inbetriebnahme erforderlich ist.
+* **cq-quickstart-6.4.0.jar:** Eine eigenständige ausführbare  ** Jardatei, die alles enthält, was zum Aufstehen und Ausführen erforderlich ist.
 
-* **cq-quickstart-6.4.0.war:** Eine *Kriegsdatei* zur Bereitstellung auf einem Anwendungsserver eines Drittanbieters.
+* **cq-quickstart-6.4.0.war:** Eine  ** Warnungsdatei zur Bereitstellung auf einem Anwendungsserver eines Drittanbieters.
 
-In the following section we describe the **standalone installation**. Details über das Installieren von AEM auf einem Anwendungsserver finden Sie unter [Applikationsserver-Installation](/help/sites-deploying/application-server-install.md).
+Im folgenden Abschnitt beschreiben wir die **eigenständige Installation**. Details über das Installieren von AEM auf einem Anwendungsserver finden Sie unter [Applikationsserver-Installation](/help/sites-deploying/application-server-install.md).
 
-### Standardmäßige lokale Installation {#default-local-install}
+### Standardmäßige lokale Installation  {#default-local-install}
 
 1. Erstellen Sie ein Installationsverzeichnis auf Ihrem lokalen Computer. Beispiel:
 
-   UNIX install location: **/opt/aem**
+   UNIX-Installationsspeicherort: **/opt/aem**
 
    Installationsordner für Windows: **`C:\Program Files\aem`**
 
@@ -165,7 +165,7 @@ In the following section we describe the **standalone installation**. Details ü
 
    *Beachten Sie, dass der Pfad des Dateiverzeichnisses nur aus US ASCII-Zeichen bestehen darf.*
 
-1. Place the **jar** and **license** files in this directory:
+1. Legen Sie die Dateien **jar** und **license** in diesem Ordner ab:
 
    ```shell
    <aem-install>/
@@ -173,9 +173,9 @@ In the following section we describe the **standalone installation**. Details ü
        license.properties
    ```
 
-   If you do not provide a `license.properties` file, AEM will redirect your browser to a **Welcome** screen on startup, where you can enter a license key. Sie müssen einen gültigen Lizenzschlüssel von Adobe anfordern, wenn Sie noch nicht über einen verfügen.
+   Wenn Sie keine `license.properties`-Datei angeben, leitet AEM Ihren Browser beim Start zu einem **Begrüßungsbildschirm** um, in den Sie einen Lizenzschlüssel eingeben können. Sie müssen einen gültigen Lizenzschlüssel von Adobe anfordern, wenn Sie noch nicht über einen verfügen.
 
-1. To start up the instance in a GUI environment, just double-click the **`cq-quickstart-6.4.0.jar`** file.
+1. Um die Instanz in einer GUI-Umgebung Beginn, klicken Sie einfach mit der Dublette auf die Datei **`cq-quickstart-6.4.0.jar`**.
 
    Alternativ können Sie AEM an der Befehlszeile starten. Geben Sie bei einem virtuellen 32-Bit-Java-Computer Folgendes ein:
 
@@ -230,9 +230,9 @@ Weitere Informationen über das Anpassen Ihrer Installation finden Sie unter:
 * [Benutzerdefinierte Standalone-Installation](/help/sites-deploying/custom-standalone-install.md)
 * [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md)
 
-### Entpacktes Installationsverzeichnis {#unpacked-install-directory}
+### Entpacktes Installationsverzeichnis  {#unpacked-install-directory}
 
-When the quickstart jar is launched for the first time it will unpack itself into the same directory under a new sub-directory called `crx-quickstart`. Sie sollten Folgendes erhalten:
+Wenn die Schnellstart-JARs zum ersten Mal gestartet werden, entpackt sie sich im selben Verzeichnis unter einem neuen Unterverzeichnis namens `crx-quickstart`. Sie sollten Folgendes erhalten:
 
 ```xml
 <aem-install>/
@@ -270,7 +270,7 @@ Nachdem sich AEM selbst entpackt und erstmals gestartet hat, wird die Instanz du
 
 Um die Instanz von der GUI anzuhalten, müssen Sie einfach im Desktopanwendungsfenster auf den **Ein-/Aus**-Schalter klicken.
 
-Sie können AEM auch an der Befehlszeile anhalten und starten. Assuming you have already installed the instance for the first time, the **command-line scripts** are located here:
+Sie können AEM auch an der Befehlszeile anhalten und starten. Wenn Sie die Instanz bereits zum ersten Mal installiert haben, befinden sich die **Befehlszeilenskripte** hier:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
@@ -319,5 +319,5 @@ Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Was ist AEM Screens?](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Was ist AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
