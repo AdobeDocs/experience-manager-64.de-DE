@@ -42,7 +42,7 @@ Erstellen Sie mithilfe der Angebotskonsole eine Marke, wird diese ebenfalls in d
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Angebote“ und „Aktivitäten“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**.
 
-## Hinzufügen von Ordnern zu Angebotsbibliotheken  {#add-a-folder-to-an-offer-library}
+## Hinzufügen von Ordnern zu Angebotsbibliotheken   {#add-a-folder-to-an-offer-library}
 
 Fügen Sie der Angebotsbibliothek einer Marke Ordner hinzu, um Angebote zu ordnen und zu speichern. Sie können Ordner erstellen, die direkt der Marke oder anderen Ordnern untergeordnet werden.
 
@@ -58,7 +58,7 @@ Fügen Sie der Angebotsbibliothek einer Marke Ordner hinzu, um Angebote zu ordne
 
 1. Klicken oder tippen Sie auf **Erstellen**.
 
-## Hinzufügen von Angeboten zu Angebotsbibliotheken   {#add-an-offer-to-an-offer-library}
+## Hinzufügen von Angeboten zu Angebotsbibliotheken    {#add-an-offer-to-an-offer-library}
 
 Fügen Sie ein Angebot zur Angebotsbibliothek einer Marke hinzu, damit dieses für Markenerlebnisse genutzt werden kann. Geben Sie beim Hinzufügen eines Angebots dessen Titel ein. Sie können das Angebot auch mit einem oder mehreren Tags verknüpfen, damit es sich leichter auffinden lässt.
 
@@ -82,7 +82,7 @@ Sie können Angebote über den Ordner in der Angebotsbibliothek oder direkt übe
 1. Klicken oder tippen Sie in der Angebotskonsole auf das Symbol neben dem Angebot und wählen Sie **Bearbeiten** aus.
 1. Fügen Sie dem Angebot Komponenten hinzu und bearbeiten Sie den Komponenteninhalt wie üblich.
 
-## Löschen von Angeboten   {#deleting-an-offer}
+## Löschen von Angeboten    {#deleting-an-offer}
 
 Wird ein Angebot nicht länger benötigt, können Sie es löschen. Sollten Sie versuchen, ein Angebot zu löschen, das von einem Erlebnis verwendet wird, werden Sie zur Bestätigung des Löschvorgangs aufgefordert. Bestätigen Sie, dass das Angebot gelöscht werden soll, wird es aus den entsprechenden Erlebnissen entfernt.
 
@@ -98,7 +98,7 @@ Sie können Angebote löschen, wenn Sie entweder Ordnerinhalte der Angebotsbibli
    * Soll das Angebot gelöscht und aus den Erlebnissen entfernt werden, klicken oder tippen Sie auf **Löschen erzwingen**.
    * Soll das Angebot nicht gelöscht werden, klicken oder tippen Sie auf **Abbrechen**.
 
-## Suchen nach Angeboten   {#searching-for-offers}
+## Suchen nach Angeboten    {#searching-for-offers}
 
 Suchen Sie in den Angeboten Ihrer Marken mithilfe von Keywords nach passenden Titeln.
 
