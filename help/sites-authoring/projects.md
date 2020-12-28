@@ -24,7 +24,7 @@ Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine 
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+>Damit Projektbenutzer andere Benutzer/Gruppen sehen können, während sie die Projektfunktion verwenden, z. B. Projekte erstellen, Aufgaben/Workflows erstellen, das Team anzeigen und verwalten, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
 
 Als Benutzer haben Sie folgende Möglichkeiten:
 
@@ -46,26 +46,26 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
-* Wählen Sie **Timeline** und dann ein Projekt, um seine Timeline anzuzeigen.
+* Wählen Sie **Zeitleiste** und dann ein Projekt, um seine Zeitleiste anzuzeigen.
 * Klicken/tippen Sie auf **Auswählen**, um den Auswahlmodus zu aktivieren.
 * Klicken Sie auf **Erstellen**, um Projekte hinzuzufügen.
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
 
-## Projektkacheln   {#project-tiles}
+## Projektkacheln  {#project-tiles}
 
 Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
 
 Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in den folgenden Abschnitten beschrieben:
 
 * Assets und Asset-Sammlungen
-* Erlebnisse  
+* Erlebnisse
 * Links
 * Projektinformationen
 * Team
-* Einstiegsseiten
+* Landing Pages
 * E-Mails
-* Workflows  
+* Workflows
 * Launches
 * Aufgaben
 
@@ -75,13 +75,13 @@ In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für e
 
 ![chlimage_1-170](assets/chlimage_1-170.png)
 
-Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für dynamische Medien verfügen.
+Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für Dynamic Media verfügen.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
 ### Asset-Sammlungen {#asset-collections}
 
-[Asset-Sammlungen](/help/assets/managing-collections-touch-ui.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“. 
+[Asset-Sammlungen](/help/assets/managing-collections-touch-ui.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“.
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -131,7 +131,7 @@ Klicken Sie auf die Auslassungszeichen unten auf der Karte **Übersetzungsauftra
 
 ### Team {#team}
 
-In dieser Kachel können Sie die Mitglieder des Projektteams angeben. Geben Sie die Namen der Team-Mitglieder ein und weisen Sie Benutzerrollen zu.
+In dieser Kachel können Sie die Mitglieder des Projekt-Teams angeben. Geben Sie die Namen der Team-Mitglieder ein und weisen Sie Benutzerrollen zu.
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
@@ -139,7 +139,7 @@ Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber 
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-### Einstiegsseiten {#landing-pages}
+### Landing Pages {#landing-pages}
 
 Über die Kachel **Einstiegsseiten** können Sie eine neue Einstiegsseite anfordern.
 
@@ -147,7 +147,7 @@ Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber 
 
 Dieser Workflow wird in [Erstellen eines Einstiegsseiten-Workflows](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow) beschrieben.
 
-### E-Mails {#emails}
+### E-Mails  {#emails}
 
 In der Kachel **E-Mails** können Sie E-Mail-Anforderungen verwalten. Hierüber lässt sich der auch der Workflow zum Anfordern einer E-Mail starten.
 
@@ -167,7 +167,7 @@ Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projec
 
 ### Launches {#launches}
 
-Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anforderung](/help/sites-authoring/projects-with-workflows.md) angefordert wurden.
+Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-authoring/projects-with-workflows.md) angefordert wurden.
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
@@ -183,7 +183,7 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
 * Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* [Produktfoto-Projekt](/help/sites-authoring/managing-product-information.md) - Ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
+* [Produktfoto-Projekt](/help/sites-authoring/managing-product-information.md)  - Ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
 * [Ein Übersetzungsprojekt](/help/sites-administering/translation.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
