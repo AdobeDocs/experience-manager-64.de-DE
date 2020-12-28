@@ -22,7 +22,7 @@ ht-degree: 97%
 
 Als Teil von Adobe Marketing Cloud ermöglicht [Adobe Target](http://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Online-Erlebnisse zu automatisieren. AEM hat den Targeting-Workflow übernommen, der in Adobe Target Standard verwendet wird. Wenn Sie Target verwenden, sind Sie mit der Targeting-Bearbeitungsumgebung in AEM vertraut.
 
-Integrieren Sie Ihre AEM-Sites in Adobe Target, um den Inhalt auf Ihren Seiten zu personalisieren:
+Integrieren Sie Ihre AEM Sites in Adobe Target, um den Inhalt auf Ihren Seiten zu personalisieren:
 
 * Implementieren Sie das Inhalts-Targeting.
 * Verwenden Sie Target-Zielgruppen, um personalisierte Erlebnisse zu erstellen.
