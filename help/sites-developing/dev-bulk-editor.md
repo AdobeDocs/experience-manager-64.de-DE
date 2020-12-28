@@ -56,14 +56,14 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
    <td> Suchstammpfad</td> 
   </tr> 
   <tr> 
-   <td> queryParams/qp<br /> </td> 
+   <td> queryParams / qp<br /> </td> 
    <td> Zeichenfolge</td> 
-   <td> Abfrage suchen</td> 
+   <td> abfrage suchen</td> 
   </tr> 
   <tr> 
    <td> contentMode / cm<br /> </td> 
    <td> Boolesch</td> 
-   <td> Wenn true, ist der Inhaltsmodus aktiviert<br /> </td> 
+   <td> Wenn "true", ist der Inhaltsmodus aktiviert<br /> </td> 
   </tr> 
   <tr> 
    <td> colValue / cv<br /> </td> 
@@ -81,14 +81,14 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
    <td> Wenn true, wird die Abfrage beim Laden der Seite ausgeführt<br /> </td> 
   </tr> 
   <tr> 
-   <td> colsSelection/cs<br /> </td> 
+   <td> colSelection / cs<br /> </td> 
    <td> Zeichenfolge[]</td> 
    <td> Auswahl der gesuchten Eigenschaften (als Kontrollkästchen angezeigt)</td> 
   </tr> 
   <tr> 
-   <td> showGridOnly/sgo<br /> </td> 
+   <td> showGridOnly / sgo<br /> </td> 
    <td> Boolesch</td> 
-   <td> Wenn "true", wird nur das Raster und nicht das Suchfeld angezeigt <br /> </td> 
+   <td> Wenn true, wird nur das Raster und nicht das Suchfeld <br /> angezeigt </td> 
   </tr> 
   <tr> 
    <td> searchPanelCollapsed/spc</td> 
@@ -267,7 +267,7 @@ Hier sehen Sie eine XML-Darstellung der untergeordneten Knoten des Dialogfelds:
         </editor>
 ```
 
-### Konfigurationseigenschaften des Bulk Editors {#bulk-editor-configuration-properties}
+### Konfigurationseigenschaften des Bulk Editors  {#bulk-editor-configuration-properties}
 
 Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle sind alle Konfigurationseigenschaften für den Bulk Editor aufgeführt.
 
@@ -523,9 +523,9 @@ Mit forcedPosition, den Metadaten für die erzwungene Position, können Sie fest
 
 Im vorhergehenden Beispiel ist die Auswahlspalte die erste Spalte mit forcedPosition = &quot;0&quot;.
 
-### Abfrage-Servlet {#query-servlet}
+### Abfrage-Servlet  {#query-servlet}
 
-By default, the Query servlet can be found at `/libs/wcm/core/components/bulkeditor/json.java`. Sie können einen anderen Pfad konfigurieren, um die Daten abzurufen.
+Standardmäßig befindet sich das Abfrage-Servlet unter `/libs/wcm/core/components/bulkeditor/json.java`. Sie können einen anderen Pfad konfigurieren, um die Daten abzurufen.
 
 Das Abfrage-Servlet funktioniert wie folgt: Es erhält eine GQL-Abfrage und die zurückzugebenden Spalten, berechnet die Ergebnisse und sendet sie als JSON-Stream zurück an den Bulk Editor.
 
