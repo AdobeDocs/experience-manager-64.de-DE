@@ -20,7 +20,7 @@ ht-degree: 94%
 
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
-Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launchs oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
+Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
 Der Inhalt wird mit mithilfe von (zum Inhaltstyp passenden) [Komponenten](/help/sites-authoring/default-components-console.md) hinzugefügt, die auf die Seite gezogen werden können. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
 
@@ -106,9 +106,9 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-auth
 
 In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn der Benutzer am aktuellen Workflow-Schritt beteiligt ist, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weitere Informationen zum Workflow liefern, darunter:
 
-* **Complete** - Öffnet das Dialogfeld **Complete Workitem**
+* **Complete**  - Öffnet den  **Dialog** zum Abschluss der Arbeit
 
-* **Delegate** - Öffnet das Dialogfeld &quot; **Complete** &quot;
+* **Delegate**  - Öffnet den  **Dialog** zum Abschluss
 
 * **Details anzeigen**: Öffnet das Fenster **Details** des entsprechenden Workflows.
 
@@ -136,7 +136,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Si
 
 Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) hinzufügen. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Ziehen Sie die benötigte Komponente an die [passende Position](#component-placeholder).
 
@@ -148,9 +148,9 @@ Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-autho
 
 ### Einfügen einer Komponente aus dem Absatzsystem {#inserting-a-component-from-the-paragraph-system}
 
-Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** des Absatzsystems hinzufügen. 
+Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** des Absatzsystems hinzufügen.
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Neue Komponenten können auf zwei Arten aus dem Absatzsystem ausgewählt und hinzugefügt werden:
 
    * Wählen Sie die Option **Komponente einfügen** (+) in der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierher ziehen**.
@@ -165,7 +165,7 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
 1. Die ausgewählte Komponente wird am Ende der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie die Komponente.
 
-### Einfügen einer Komponente mit dem Assets-Browser   {#inserting-a-component-using-the-assets-browser}
+### Einfügen einer Komponente mit dem Assets-Browser  {#inserting-a-component-using-the-assets-browser}
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
@@ -206,7 +206,7 @@ Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem 
 
 So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Öffnen Sie den [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Ziehen Sie das benötigte Asset an die passende Position. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird.
 
@@ -313,7 +313,7 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 
 ### Dialogfeld „Komponente bearbeiten“   {#component-edit-dialog}
 
-Über das [Symbol „Bearbeiten“ (Bleistift) in der Symbolleiste](#edit-configure-copy-cut-delete-paste) können Sie eine Komponente öffnen, um deren Inhalt zu bearbeiten.
+Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) der Komponenten-Symbolleiste](#edit-configure-copy-cut-delete-paste) verwenden.
 
 Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar)](#edit-content-full-screen-mode). Beispiel:
 
@@ -334,7 +334,7 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 * Bildkomponente – Vollbild
 
-   Wenn Sie den [Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bilds und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+   Wenn Sie den [Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bildes und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
    ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
@@ -349,12 +349,12 @@ Für bestimmte Komponententypen können Sie Assets aus dem Asset-Browser direkt 
 | Asset-Typ | Komponententyp |
 |---|---|
 | Bild | Bild |
-| Dokument | Download |
+| Dokument | Herunterladen |
 | Produkt | Produkt |
 | Video | Flash |
 | Inhaltsfragment | Inhaltsfragmente |
 
-## Bearbeiten (Inhalt) Vollbildmodus {#edit-content-full-screen-mode}
+## Bearbeiten (Inhalt) Vollbildmodus  {#edit-content-full-screen-mode}
 
 Für alle Komponenten kann der Vollbildmodus über das folgende Symbol gestartet und beendet werden:
 
@@ -453,7 +453,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 Wenn die Seite auf einer [bearbeitbaren Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie schnell und einfach zum [Vorlagen-Editor](/help/sites-authoring/templates.md#editing-templates-template-authors) wechseln, indem Sie im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) die Option **Vorlage bearbeiten** auswählen.
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+Wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie mithilfe der [Seitenmodusauswahl](/help/sites-authoring/author-environment-tools.md#page-modes) auf der Symbolleiste zum [Designmodus wechseln, um Komponenten zur Verwendung auf der Seite zu aktivieren/deaktivieren.](/help/sites-authoring/default-components-designmode.md)
 
 Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) oder [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) können Sie schnell und einfach feststellen, auf welcher Vorlage die Seite basiert.
 
@@ -502,7 +502,7 @@ Beim Bearbeiten von Inhalt können Sie mithilfe des [Vorschaumodus](/help/sites-
 * Ermöglicht es Ihnen, mit Links zu navigieren.
 * Aktualisiert den Seiteninhalt **nicht**.
 
-Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiten-Editor aufrufen:
+Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiteneditor aufrufen:
 
 ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -523,7 +523,7 @@ Eine Seite kann wie folgt gesperrt werden:
 
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
-* **Seiten-Editor**
+* **Seiteneditor**
 
    1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen:
    1. Wählen Sie die Option **Seite sperren** aus.
@@ -560,9 +560,9 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 
 >[!NOTE]
 >
->The [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` is also availalbe to undo page edit actions.
+>Der [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` ist auch verfügbar, um Seitenbearbeitungsaktionen rückgängig zu machen.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>Der Tastaturbefehl `Ctrl-Y` ist auch verfügbar, um Seitenbearbeitungsaktionen erneut durchzuführen.
 
 >[!NOTE]
 >
