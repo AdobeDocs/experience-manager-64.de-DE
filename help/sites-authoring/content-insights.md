@@ -51,7 +51,7 @@ Weitere Informationen finden Sie unter [Ändern des Berichtszeitraums](/help/sit
 
 >[!NOTE]
 >
->Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration in SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration in Adobe Target](/help/sites-administering/target.md) und [Integration in BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Der Ansichtsbericht {#the-views-report}
 
