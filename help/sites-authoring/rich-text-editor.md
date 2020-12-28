@@ -18,7 +18,7 @@ ht-degree: 33%
 ---
 
 
-# Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
+# Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#using-the-rich-text-editor-to-author-content}
 
 Der Rich Text Editor (RTE) ist ein einfacher Baustein für das Authoring von Text in AEM Seiten. Viele Komponenten wie Text, Text und Bild sowie Tabelle basieren auf RTE.
 
@@ -28,7 +28,7 @@ Der Rich Text Editor (RTE) ist ein einfacher Baustein für das Authoring von Tex
 
 ## Bearbeitung im Kontext {#in-place-editing}
 
-Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klick auswählen, wird die [Komponentensymbolleiste](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)eingeblendet.
+Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klick auswählen, wird die [Komponenten-Symbolleiste](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) eingeblendet.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -58,7 +58,7 @@ Bei textbasierten Komponenten wird durch Auswahl des Vollbildmodus in der Symbol
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-Im Vollbildmodus werden alle Optionen Ihres Rich-Text-Editors angezeigt, die von Ihrem Administrator konfiguriert wurden. Diese können je nach [Konfiguration](../sites-administering/rich-text-editor.md) der Administratoren oder AEM Entwickler von AEM Instanzen variieren. Wenn eine Option fehlt, bitten Sie Ihren Administrator, sie zur Verfügung zu stellen.
+Im Vollbildmodus werden alle Optionen Ihres Rich-Text-Editors angezeigt, die von Ihrem Administrator konfiguriert wurden. Diese können je nach der von den Administratoren oder AEM Entwicklern bereitgestellten Konfiguration von AEM Instanzen [abweichen. ](../sites-administering/rich-text-editor.md) Wenn eine Option fehlt, bitten Sie Ihren Administrator, sie zur Verfügung zu stellen.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
