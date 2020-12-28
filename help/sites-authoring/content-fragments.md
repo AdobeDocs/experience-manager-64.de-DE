@@ -22,7 +22,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragment-Funktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
 
 Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments.md).
 
@@ -32,7 +32,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 
 >[!NOTE]
 >
->**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)**sind unterschiedliche Funktionen in AEM:
+>**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
@@ -136,7 +136,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 
 * **[!UICONTROL Überschriften als separate Absätze behandeln]**
 
-## Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
+## Schnelle Verbindung zum Fragmenteditor      {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **[!UICONTROL Bearbeiten]** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments.md).
 
@@ -144,7 +144,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 >
 >Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
-## Hinzufügen von Zwischeninhalten         {#adding-in-between-content}
+## Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment der Seite hinzugefügt wird, wird der Platzhalter **[!UICONTROL Komponenten hierher ziehen]** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
@@ -182,7 +182,7 @@ Bei Zwischeninhalten können Sie:
 
 
 
-## Verwenden von zugehörigen Inhalten         {#using-associated-content}
+## Verwenden von zugehörigen Inhalten          {#using-associated-content}
 
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
 
