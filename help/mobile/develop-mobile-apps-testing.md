@@ -24,7 +24,7 @@ ht-degree: 2%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Angesichts der breiten Palette von Geräten auf dem Markt und von Geräten, die veröffentlicht werden, ist das Testen Ihrer Apps äußerst wichtig geworden. Dies ist ein Bereich, in dem Funktionen und Benutzerfreundlichkeit zu niedrigen Reviews in einem App Store führen können, aber ein Fehler kann dazu führen, dass Ihre App deinstalliert wird. Bei Ihren Testplänen und der Qualitätssicherung muss sorgfältig darauf geachtet werden. Der folgende Link behandelt viele Themen, die allgemein behandelt werden müssen, wie z.B. die Identifizierung Ihrer Umgebung, die Definition von Testfällen, Testtypen, Annahmen, Kundenbeteiligung usw. Darüber hinaus werden Tools zur Unterstützung des Testens besprochen. Interne Tools wie [Hobbes](/help/sites-developing/hobbes.md)können beim webbasierten Testen der Benutzeroberfläche helfen. [Tough Day](/help/sites-developing/tough-day.md) kann Ihre Instanzen mit einer simulierten Last bedienen. Wenn Ihre Test-Umgebung bereits Erfahrung mit Drittanbieter-Tools wie Selen hat, können auch diese verwendet werden.
+Angesichts der breiten Palette von Geräten auf dem Markt und von Geräten, die veröffentlicht werden, ist das Testen Ihrer Apps äußerst wichtig geworden. Dies ist ein Bereich, in dem Funktionen und Benutzerfreundlichkeit zu niedrigen Reviews in einem App Store führen können, aber ein Fehler kann dazu führen, dass Ihre App deinstalliert wird. Bei Ihren Testplänen und der Qualitätssicherung muss sorgfältig darauf geachtet werden. Der folgende Link behandelt viele Themen, die allgemein behandelt werden müssen, wie z.B. die Identifizierung Ihrer Umgebung, die Definition von Testfällen, Testtypen, Annahmen, Kundenbeteiligung usw. Darüber hinaus werden Tools zur Unterstützung des Testens besprochen. Interne Tools wie [Hobbes](/help/sites-developing/hobbes.md) können beim webbasierten Testen der Benutzeroberfläche helfen. [Die ](/help/sites-developing/tough-day.md) Tage können Ihre Instanzen mit einer simulierten Last bedienen. Wenn Ihre Test-Umgebung bereits Erfahrung mit Drittanbieter-Tools wie Selen hat, können auch diese verwendet werden.
 
 Bei der Entwicklung einer mobilen App gibt es viele neue Probleme, die speziell für Geräte gelten, die zusammen mit denen herkömmlicher Tests behandelt werden müssen.
 
@@ -45,9 +45,9 @@ Es sollte ein gewisses Maß an automatisiertem Test durchgeführt werden, um die
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-## Manuelle Prüfung {#manual-testing}
+## Manuelle Tests {#manual-testing}
 
-Zusätzlich zu automatisierten Tests sollte Ihre App einen manuellen Testzyklus durchlaufen. Kunden, die die App auf einem echten Gerät ausführen, können nicht durch ein Skript dupliziert werden. Auch hier haben Sie viele Möglichkeiten. Sie können eine Plattform wie HockeyApp verwenden, um zu definieren, wer Zugriff hat und Feedback zu sammeln. Oder Sie können den gesamten Prozess an einen Dienst wie UTest, ElusiveStars oder Test auslagern. Wenn Sie eine Gruppe interner Tester haben, aber keine unterschiedlichen Geräte haben, gibt es Cloud-Dienste, bei denen Sie manuelle Tests auf ihren Gerätepools durchführen können. Ein solcher Dienst, der dies bietet, ist SauceLabs. Sie können Apps auch remote für PhoneGap Enterprise erstellen und auf lokalen Geräten installieren, um Akzeptanztests oder Demos durchzuführen. Die neuesten Funktionen und Dokumentation finden Sie auf der [PhoneGap](https://phonegap.com/) -Website. Unabhängig vom Ansatz sollten manuelle Prüfungen durchgeführt werden.
+Zusätzlich zu automatisierten Tests sollte Ihre App einen manuellen Testzyklus durchlaufen. Kunden, die die App auf einem echten Gerät ausführen, können nicht durch ein Skript dupliziert werden. Auch hier haben Sie viele Möglichkeiten. Sie können eine Plattform wie HockeyApp verwenden, um zu definieren, wer Zugriff hat und Feedback zu sammeln. Oder Sie können den gesamten Prozess an einen Dienst wie UTest, ElusiveStars oder Test auslagern. Wenn Sie eine Gruppe interner Tester haben, aber keine unterschiedlichen Geräte haben, gibt es Cloud-Dienste, bei denen Sie manuelle Tests auf ihren Gerätepools durchführen können. Ein solcher Dienst, der dies bietet, ist SauceLabs. Sie können Apps auch remote für PhoneGap Enterprise erstellen und auf lokalen Geräten installieren, um Akzeptanztests oder Demos durchzuführen. Die neuesten Funktionen und Dokumentation finden Sie auf der Website [PhoneGap](https://phonegap.com/). Unabhängig vom Ansatz sollten manuelle Prüfungen durchgeführt werden.
 
 * eine große Zielgruppe von Tester getroffen hat,
 * Testen mit einem großen Pool von Geräten (im Idealfall echte Geräte, aber Simulatoren/Emulatoren, wenn keine echten Geräte verfügbar sind),
@@ -71,7 +71,7 @@ Zum Testen von mobilen Apps stehen eine breite Palette von Tools zur Verfügung.
 * SeleniumGrid leitet Tests zum parallelen Testen über Knoten hinweg.
 * Selenium IDE hilft, die Schreibweise von Testfällen zu reduzieren.
 
-For more information see [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Weitere Informationen finden Sie unter [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **Testdroid**
 
