@@ -38,6 +38,6 @@ Entwickeln Sie Seitenvorlagen und -komponenten, die für die Anzeige auf mobilen
 * [Erstellen von Websites für Mobilgeräte](/help/sites-developing/mobile.md)
 * [Emulatoren](/help/sites-developing/emulators.md)
 
-## Entwickeln von Anwendungen für Mobilgeräte {#developing-mobile-apps}
+## Entwickeln von Anwendungen für Mobilgeräte  {#developing-mobile-apps}
 
 Entwickeln Sie Mobilanwendungen, die AEM-Seiten als die Anwendungsoberfläche verwenden. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. „Content Sync“ ermöglicht Ihnen, versionierte Archive der Seiten für das Bundling mit Apps zu erstellen. Klicken Sie [hier](/help/mobile/phonegap-contentsync.md), um mehr über „Content Sync“ zu erfahren.
