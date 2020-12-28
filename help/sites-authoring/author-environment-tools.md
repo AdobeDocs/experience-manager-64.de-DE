@@ -32,7 +32,7 @@ Beispiel Kartenansicht:
 
 ## Bearbeiten des Seiteninhalts {#editing-page-content}
 
-Sie können eine Seite mit dem Seiten-Editor bearbeiten. Beispiel:
+Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 
 `http://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -48,12 +48,12 @@ Sie können eine Seite mit dem Seiten-Editor bearbeiten. Beispiel:
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
-* über den Selektor [**Seiteninformationen **](/help/sites-authoring/editing-page-properties.md#page-properties), der die Einführungsfolien (wie beim erstmaligen Zugriff auf den Editor) anzeigt.
+* über den Selektor [**Seiteninformationen**](/help/sites-authoring/editing-page-properties.md#page-properties), der die Einführungsfolien (wie beim erstmaligen Zugriff auf den Editor) anzeigt.
 * über das [Konfigurationsdialogfeld](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) für bestimmte Komponenten (mithilfe des Symbols „?“ in der Symbolleiste des Dialogfelds), das die kontextsensitive Hilfe anzeigt.
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Komponenten-Browser   {#components-browser}
+## Komponenten-Browser  {#components-browser}
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
@@ -133,7 +133,7 @@ Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an
 
 >[!NOTE]
 >
->Dies ist für spezielle Assets und Komponententypen verfügbar. Weitere Einzelheiten finden Sie unter [Einfügen einer Komponente mit dem Asset-Browser ](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser).
+>Dies ist für spezielle Assets und Komponententypen verfügbar. Weitere Einzelheiten finden Sie unter [Einfügen einer Komponente mit dem Asset-Browser](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser).
 
 In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriterien filtern:
 
@@ -170,7 +170,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur       {#content-tree}
+## Inhaltsstruktur   {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -190,7 +190,7 @@ Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechen
 
 ![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
-Durch Klicken auf die Komponente wird diese im Seiten-Editor markiert.
+Durch Klicken auf die Komponente wird diese im Seiteneditor markiert.
 
 ![screen_shot_2018-03-22at142647](assets/screen_shot_2018-03-22at142647.png)
 
@@ -204,7 +204,7 @@ Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird 
 
 ## Fragmente: Browser für zugehörige Inhalte {#fragments-associated-content-browser}
 
-Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte](/help/sites-authoring/content-fragments.md#using-associated-content). 
+Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Verweise {#references}
 
@@ -238,11 +238,11 @@ Sie können beispielsweise einen beschädigten Verweis innerhalb einer Verweisko
 
 ![chlimage_1-292](assets/chlimage_1-292.png)
 
-## Ereignisse: Timeline {#events-timeline}
+## Ereignisse: Zeitleiste {#events-timeline}
 
-Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
+Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Zeitleiste dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
 
-Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Timeline** wie folgt:
+Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
 
 ![screen_shot_2018-03-22at153952](assets/screen_shot_2018-03-22at153952.png)
 
@@ -269,9 +269,9 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
 
 * [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
-* [Vorlage](/help/sites-authoring/templates.md) bearbeiten, wenn die Seite auf einer [bearbeitbaren Vorlage basiert](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Vorlage ](/help/sites-authoring/templates.md) bearbeiten, wenn die Seite auf einer  [bearbeitbaren Vorlage basiert](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [In der klassischen Benutzeroberfläche](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) öffnen, wenn diese Optionen von einem Administrator [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
+* [In der klassischen ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
