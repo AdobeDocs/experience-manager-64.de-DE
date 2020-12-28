@@ -39,7 +39,7 @@ Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
 
-* Page property to be available in the edit view (e.g. **View**/**Edit**) **Properties** option):
+* Seiteneigenschaft, die in der Ansicht zum Bearbeiten verfügbar sein soll (z. **Ansicht**/**Bearbeiten**) **Eigenschaften**-Option):
 
    * Name: `cq:hideOnEdit`
    * Typ: `Boolean`
@@ -52,16 +52,16 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 >[!TIP]
 >
->Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im Tutorial [](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) zum Erweitern der Seiteneigenschaften.
+>Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im Tutorial [Seiteneigenschaften erweitern](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
 Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
 
-Beispiel: Der [**Seitenerstellungsassistent **](/help/sites-authoring/managing-pages.md#creating-a-new-page)zeigt standardmäßig die Felder an, die unter** Weitere Titel und Beschreibungen **gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
+Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
 1. Erstellen Sie Ihre Seitenkomponente unter `/apps`.
-1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) for the `basic` section of your page component; for example:
+1. Erstellen Sie eine Außerkraftsetzung (mit *dialog diff*, bereitgestellt von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) für den Abschnitt `basic` Ihrer Seitenkomponente; Beispiel:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -76,23 +76,23 @@ Beispiel: Der [**Seitenerstellungsassistent **](/help/sites-authoring/managing-p
    >/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog
    >```
    >
-   >However, you ***must*** not change anything in the `/libs` path.
+   >Sie dürfen jedoch ***keine Änderungen am `/libs`-Pfad vornehmen.***
    >
    >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
-   >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
    >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
-1. Legen Sie die `path` Eigenschaft auf fest, `basic` um auf die Außerkraftsetzung der Registerkarte &quot;Einfach&quot;zu zeigen (siehe auch nächsten Schritt). Beispiel:
+1. Legen Sie die `path`-Eigenschaft auf `basic` fest, um auf die Außerkraftsetzung der Basisregisterkarte zu verweisen (siehe auch den nächsten Schritt). Beispiel:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Erstellen Sie eine Außerkraftsetzung des `basic` - `moretitles` Abschnitts am entsprechenden Pfad; Beispiel:
+1. Erstellen Sie eine Außerkraftsetzung des Abschnitts `basic` - `moretitles` am entsprechenden Pfad; Beispiel:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -112,7 +112,7 @@ Beispiel: Der [**Seitenerstellungsassistent **](/help/sites-authoring/managing-p
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 
-Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). It also illustrates use of both `cq:showOnCreate` and `cq:hideOnEdit`.
+Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Außerdem wird die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit` veranschaulicht.
 
 CODE AUF GITHUB
 
