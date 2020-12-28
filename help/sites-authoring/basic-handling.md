@@ -54,7 +54,7 @@ Wenn ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zu
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!**, um zur nächsten Seite der Übersicht zu gelangen. Click or tap **Close** or click or tap outside of the overview dialogue to close.
+Klicken oder tippen Sie auf **Verlangen Sie es!**, um zur nächsten Seite der Übersicht zu gelangen. Klicken Sie auf oder tippen Sie auf **Schließen** oder klicken Sie auf oder tippen Sie außerhalb des Übersichtsdialogfelds, um das Dialogfeld zu schließen.
 
 Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, sofern Sie nicht die Option **Nicht mehr zeigen** aktivieren.
 
@@ -107,10 +107,10 @@ Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
   </tr>
   <tr>
    <td>Formulare</td> 
-   <td>This console allows you to create, manage, and process your <a href="/help/forms/using/introduction-aem-forms.md">forms and documents</a>&gt;.</td> 
+   <td>Mit dieser Konsole können Sie Ihre <a href="/help/forms/using/introduction-aem-forms.md">Formulare und Dokumente</a> erstellen, verwalten und verarbeiten.</td> 
   </tr>
   <tr>
-   <td>Personalisierung     </td> 
+   <td>Personalisierung </td> 
    <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td> 
   </tr>
   <tr>
@@ -190,7 +190,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. See [list view](#list-view) for more information.
+   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen finden Sie unter [Ansicht der Liste](#list-view).
 
 * Schaltfläche **Erstellen**
 
@@ -228,7 +228,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
    Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](/help/sites-authoring/basic-handling.md#product-navigation) beim erstmaligen Öffnen einer Konsole.
 
-   Im Menü [**Seiteninformationen **können Sie die Option** Hilfe **](/help/sites-authoring/author-environment-tools.md#accessing-help)auswählen, um diese Folien jederzeit erneut anzuzeigen.
+   Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-authoring/author-environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
 
 * **Tools-Konsole**
 
@@ -292,7 +292,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 >
 >Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen     {#selecting-resources}
+### Auswählen von Ressourcen      {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -320,13 +320,13 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
+     <li>Desktop:<br /> Maus über und verwenden Sie dann die Schnellaktion mit dem Häkchen</li> 
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
+     <li>Desktop:<br /> Klicken Sie auf die Karte</li> 
+     <li>Mobilgerät:<br /> Tippen Sie auf die Karte</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +363,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 1. Nach Auswahl einer Ressource wird die obere Kopfzeile von der [Aktionssymbolleiste](#actions-toolbar) überdeckt, die Zugriff auf die Aktionen bietet, die für die ausgewählte Ressource verfügbar sind.
 
-   To exit selection mode select the **X** to the top-right.
+   Um den Auswahlmodus zu beenden, wählen Sie **X** oben rechts aus.
 
 ### Spaltenansicht {#column-view}
 
@@ -537,7 +537,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-authoring/author-environment-tools.md#references) für Seiten Folgendes angezeigt:
 
-* [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+* [Starts](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md)
 * [Sprachkopien](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise (z. B. von der Verweiskomponente geliehener bzw. verliehener Inhalt)
