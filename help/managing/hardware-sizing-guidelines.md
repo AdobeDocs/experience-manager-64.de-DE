@@ -52,13 +52,14 @@ Die folgenden Faktoren sind zu berücksichtigen:
 
 ## Architektur {#architecture}
 
-Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detailed considerations for both environments are described in the [author environment](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) and [publish environment](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) sections.
+Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Hinweise zu beiden Umgebung finden Sie in den Abschnitten [Autorenversion](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungs-Umgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations).
 
 In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung, in denen Sie Projektphasen inszenieren können:
 
 * **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Am besten arbeitet man mit einer Entwicklungsumgebung pro Entwickler (in der Regel lokale Installationen auf dem individuellen System).
 
-* **Author-Test-Umgebung**, um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+* **Authoring-Testumgebung**
+zum Überprüfen von Änderungen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
@@ -68,7 +69,7 @@ In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung,
 
 Die Umgebungen variieren zudem, von einem Single-Server-System mit AEM und einem Anwendungsserver bis hin zu einem hochskalierten Satz von Multi-Server- und Multi-CPU-Clustern. Es wird empfohlen, je einen separaten Computer für ein Produktionssystem zu verwenden und keine anderen Anwendungen auf diesen Rechnern auszuführen.
 
-## Hinweise zur Skalierung generischer Hardware {#generic-hardware-sizing-considerations}
+## Hinweise zur Skalierung generischer Hardware  {#generic-hardware-sizing-considerations}
 
 Die folgenden Abschnitte enthalten Hinweise zur Berechnung der Hardwareanforderungen unter Berücksichtigung verschiedener Überlegungen. Für große Systeme empfehlen wir Ihnen, einen einfachen Satz von internen Benchmarktests an einer Referenzkonfiguration durchzuführen.
 
@@ -80,7 +81,7 @@ Hardware-Skalierung für fortgeschrittene Anwendungsfälle sollte auf einer deta
 * umfangreicher Einsatz von kundenspezifischem Code, eigenen Workflows oder Softwarebibliotheken von Drittanbietern
 * Integration mit nicht unterstützten externen Systemen
 
-### Festplattenspeicher/Festplatte {#disk-space-hard-drive}
+### Festplattenspeicher/Festplatte  {#disk-space-hard-drive}
 
 Der benötigte Speicherplatz hängt stark vom Volumen und vom Typ Ihrer Web-Anwendung ab. Die Berechnungen sollten berücksichtigen:
 
@@ -97,19 +98,19 @@ Für die Datenredundanz sind redundante Arrays unabhängiger Festplatten (RAID, 
 >
 >Das temporäre Verzeichnis einer Produktionsinstanz sollte mindestens 6 GB freien Speicherplatz vorhalten.
 
-### Virtualisierung {#virtualization}
+### Virtualisierung  {#virtualization}
 
 AEM läuft gut in virtualisierten Umgebungen, aber es kann Faktoren wie CPU oder E/A geben, die nicht direkt mit physischer Hardware gleichgesetzt werden können. Allgemein empfehlenswert ist die Wahl einer höheren E/A-Geschwindigkeit, da dies in den meisten Fällen ein kritischer Faktor ist. Vergleichswerte für Ihre Umgebung sind erforderlich, um ein genaues Verständnis dafür zu erhalten, welche Ressourcen erforderlich sind.
 
-### Parallelisierung von AEM-Instanzen {#parallelization-of-aem-instances}
+### Parallelisierung von AEM-Instanzen  {#parallelization-of-aem-instances}
 
-#### Fail Safeness {#fail-safeness}
+#### Ausfallsicherheit {#fail-safeness}
 
 Eine ausfallsichere Website wird auf mindestens zwei getrennten Systemen eingesetzt. Fällt ein System aus, kann ein anderes System übernehmen und so den Systemausfall kompensieren.
 
 #### Skalierbarkeit der Systemressourcen {#system-resources-scalability}
 
-Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. That additional performance is not necessarily linear with the number of cluster nodes as the relationship is highly dependent on the technical environment; please see the [Cluster documentation](/help/sites-deploying/recommended-deploys.md) for more information.
+Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung ist nicht unbedingt linear mit der Anzahl der Clusterknoten, da die Beziehung in hohem Maße von der technischen Umgebung abhängig ist; Weitere Informationen finden Sie in der [Clusterdokumentation](/help/sites-deploying/recommended-deploys.md).
 
 Die Abschätzung, wie viele Cluster-Knoten notwendig sind, basiert auf den grundlegenden Anforderungen und spezifischen Anwendungsfällen des jeweiligen Webprojektes:
 
@@ -183,7 +184,7 @@ Sie können die für die Authoring-Umgebung erforderliche Anzahl von Computern (
 
 Diese Formel kann als allgemeine Richtlinie für die Skalierung von CPUs dienen, wenn Autoren grundlegende Operationen mit AEM durchführen. Es wird davon ausgegangen, dass das System und die Anwendung optimiert sind. Die Formel gilt jedoch nicht für erweiterte Funktionen wie MSM oder Assets (siehe unten).
 
-Please also see the additional comments on [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) and [Performance Optimization](/help/sites-deploying/configuring-performance.md).
+Sehen Sie sich auch die zusätzlichen Kommentare zu [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) an.
 
 ### Hardware-Empfehlungen {#hardware-recommendations}
 
@@ -200,7 +201,7 @@ Die Benchmark-Tests zur Adobe wurden unter Verwendung des Betriebssystems RedHat
 
 AEM-Instanzen liefen mit einer minimalen Heap-Größe von 256M und einer maximalen Heap-Größe von 1024M.
 
-## Veröffentlichung von umgebungsspezifischen Berechnungen {#publish-environment-specific-calculations}
+## Veröffentlichung von umgebungsspezifischen Berechnungen  {#publish-environment-specific-calculations}
 
 ### Effizienz der Zwischenspeicherung und Traffic {#caching-efficiency-and-traffic}
 
@@ -221,11 +222,11 @@ Die Effizienz der Zwischenspeicherung ist entscheidend für die Geschwindigkeit 
 
 Die Zwischenspeicher-Quote gibt den Prozentsatz an Seiten an, die der Dispatcher zurückgeben kann, ohne auf AEM zuzugreifen. 100 % bedeutet, dass der Dispatcher alle Anfragen beantwortet, 0 % bedeutet, dass AEM jede einzelne Seite berechnet.
 
-### Komplexität von Vorlagen und Anwendungen {#complexity-of-templates-and-applications}
+### Komplexität von Vorlagen und Anwendungen  {#complexity-of-templates-and-applications}
 
 Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu rendern. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann leicht zehnmal länger dauern als das Rendern einer einfachen Seite.
 
-### Formel {#formula}
+### Formel  {#formula}
 
 Mithilfe der folgenden Formel können Sie eine Schätzung der Gesamtkomplexität Ihrer AEM Lösung berechnen:
 
@@ -263,7 +264,7 @@ Die Variablen in der Gleichung lauten wie folgt:
    <td>Verwenden Sie einen Wert zwischen 1 und 10, um die Komplexität Ihrer Vorlagen anzuzeigen. Höhere Zahlen zeigen komplexere Vorlagen an, wobei der Wert 1 für Sites mit durchschnittlich 10 Komponenten pro Seite, der Wert 5 für einen Seitendurchschnitt von 40 Komponenten und 10 für einen Durchschnitt von über 100 Komponenten verwendet wird.</td>
   </tr>
   <tr>
-   <td>Aktivierungen</td>
+   <td>aktivierungen</td>
    <td>Anzahl der durchschnittlichen Aktivierungen (Replizierung von Seiten mit mittlerer Größe und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde geteilt durch x, wobei x die Anzahl der Aktivierungen ist, die auf einem System durchgeführt werden, ohne dass Auswirkungen auf die Leistung auf andere vom System verarbeitete Aufgaben auftreten. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
   </tr>
  </tbody>
@@ -291,7 +292,7 @@ Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere W
 
 Neben der Berechnung für eine Standard-Webanwendung müssen Sie ggf. spezifische Faktoren für die folgenden Anwendungsfälle berücksichtigen. Die berechneten Werte sind der Standardberechnung hinzuzufügen.
 
-### Asset-spezifische Hinweise {#assets-specific-considerations}
+### Asset-spezifische Hinweise  {#assets-specific-considerations}
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
@@ -307,7 +308,7 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow „DAM-U
 >
 >Siehe auch [Richtlinien zur Asset-Leistung](/help/sites-deploying/assets-performance-sizing.md).
 
-### Multi-Site-Manager {#multi-site-manager}
+### Multi-Site-Manager  {#multi-site-manager}
 
 Der Ressourcenverbrauch beim Einsatz von MSM in AEM in einer Autorenumgebung hängt stark von den spezifischen Anwendungsfällen ab. Grundlegende Faktoren sind:
 
@@ -320,9 +321,9 @@ Das Testen des geplanten Anwendungsfalles mit einem repräsentativen Inhaltsausz
 
 Bitte beachten Sie auch, dass parallel arbeitende Autoren Performance-Nebenwirkungen wahrnehmen, wenn MSM-Anwendungsfälle für AEM mehr Ressourcen verbrauchen, als geplant.
 
-### Überlegungen zur Dimensionierung von AEM Communities {#aem-communities-sizing-considerations}
+### Überlegungen zur Dimensionierung von AEM Communities  {#aem-communities-sizing-considerations}
 
-AEM-Sites, die Funktionen von AEM Communities (Community-Sites) enthalten, erleben ein hohes Maß an Interaktion von Seitenbesuchern (Mitgliedern) in der Veröffentlichungsumgebung.
+AEM Sites, die Funktionen von AEM Communities (Community-Sites) enthalten, erleben ein hohes Maß an Interaktion von Seitenbesuchern (Mitgliedern) in der Veröffentlichungsumgebung.
 
 Die Größenüberlegungen für eine Community-Site hängen von der zu erwartenden Interaktion der Community-Mitglieder ab und davon, ob eine optimale Leistung für den Seiteninhalt von höherer Bedeutung ist.
 
