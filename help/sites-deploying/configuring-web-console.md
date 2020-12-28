@@ -35,7 +35,7 @@ Die Web-Konsole umfasst eine Reihe von Registerkarten für die Verwaltung der OS
 
 Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Ein Neustart ist nicht erforderlich.
 
-The console can be accessed from `../system/console`; for example:
+Die Konsole kann von `../system/console` aus aufgerufen werden. Beispiel:
 
 `http://localhost:4502/system/console/components`
 
@@ -106,7 +106,7 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 ## Bundles {#bundles}
 
-The **Bundles** tab is the mechanism for installing the OSGi bundles required for AEM. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die Registerkarte **Pakete** ist der Mechanismus zum Installieren der OSGi-Pakete, die für AEM erforderlich sind. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * Das Dropdown-Menü:
 
@@ -124,7 +124,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Installieren oder Aktualisieren**
 
-   You can **Browse** to find the file containing your bundle and specify whether it should **Start** immediately and at which **Start Level**.
+   Sie können **Browse** suchen, um die Datei mit Ihrem Bundle zu suchen und anzugeben, ob **Beginn** sofort angezeigt werden soll und auf welcher **Beginn-Ebene**.
 
 * **Neu laden**
 
@@ -158,11 +158,11 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 ## Komponenten {#components}
 
-The **Components** tab allows you to Enable and/or Disable the various components. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Auf der Registerkarte **Komponenten** können Sie die verschiedenen Komponenten aktivieren und/oder deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * Das Dropdown-Menü:
 
-   **Allgemein >**
+   **Main >**
 
 * die URL; Beispiel:
 
