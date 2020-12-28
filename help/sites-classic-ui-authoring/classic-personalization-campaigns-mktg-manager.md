@@ -34,7 +34,7 @@ Beispiel:
 
 Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
-* **[Dashboard](#dashboard)**Dieses ist in vier Bereiche unterteilt:
+* **[Dashboard](#dashboard)** Dieses ist in vier Bereiche unterteilt:
 
    * [Listen](#lists)
 
@@ -55,7 +55,7 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
    * [Kampagnen](#campaigns)
 
-      This pane lists your campaign experiences such as [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) and [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+      In diesem Bereich werden die Erlebnisse Ihrer Kampagne wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) Liste.
 
 * **[Leads](#leads)**
 
@@ -69,7 +69,7 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
     Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-* **[Kampagnen](#campaigns)**Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
+* **[Kampagnen](#campaigns)** Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
 
 ## Dashboard {#dashboard}
 
@@ -154,7 +154,7 @@ Hier können Sie folgende Aktionen durchführen:
 
 * Öffnen der Kampagnenübersicht (doppelklicken Sie im rechten Bereich auf eine Kampagne oder klicken Sie im linken Bereich einmal).
 
-#### Kampagnenübersicht {#campaign-overview}
+#### Kampagnenübersicht  {#campaign-overview}
 
 Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
@@ -186,7 +186,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
+   * Erstellen Sie eine **Neu...** Erlebnis; zum Beispiel Adobe Target-Angebote, Teaser und Newsletter.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
@@ -198,7 +198,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
    * **Suchen** nach Text (das Feld „Titel“ des Erlebnisses wird durchsucht).
    * Verwenden der **erweiterten** Suche, um Filter auf die Suche anzuwenden.
 
-### Simulieren von Kampagnen-Erlebnissen {#simulating-your-campaign-experiences}
+### Simulieren von Kampagnen-Erlebnissen  {#simulating-your-campaign-experiences}
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet und das gewählte Erlebnis wird angezeigt (so, wie der Besucher es sieht).
 
@@ -206,7 +206,7 @@ Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie si
 
 Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um zum Bearbeitungsmodus zu wechseln und die Seite zu aktualisieren.
 
-### Analysieren von Kampagnen-Erlebnissen {#analyzing-your-campaign-experiences}
+### Analysieren von Kampagnen-Erlebnissen  {#analyzing-your-campaign-experiences}
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
 
