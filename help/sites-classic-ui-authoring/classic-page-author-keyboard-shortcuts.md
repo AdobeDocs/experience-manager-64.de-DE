@@ -24,7 +24,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->In the following tables, for the key combinations in the **Shortcut** column, both Ctrl and Command keys work on macOS.
+>In den folgenden Tabellen funktionieren für die Tastenkombinationen in der Spalte **Shortcut** sowohl die Strg- als auch die Befehlstaste unter macOS.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 <table> 
  <tbody> 
   <tr> 
-   <th>Ort</th> 
+   <th>Standort</th> 
    <th>Kürzel</th> 
    <th>Beschreibung</th> 
   </tr> 
@@ -164,13 +164,13 @@ Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastatu
 <table> 
  <tbody> 
   <tr> 
-   <th>Ort</th> 
+   <th>Standort</th> 
    <th>Kürzel</th> 
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
    <td>Modus Bearbeiten</td> 
-   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Legen Sie das folgende Suffix in der URL fest:<br /> <code>?debugClientLibs=true</code><br /> Dann verwenden Sie:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Anzeige von zeitlichen Statistiken zum Laden von Seiten.</td> 
   </tr> 
  </tbody> 
