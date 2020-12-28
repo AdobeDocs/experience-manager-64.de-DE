@@ -36,8 +36,8 @@ So erstellen Sie die neue Version einer Seite:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Geben Sie einen **Kommentar** ein (optional).
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
+1. Um eine Beschriftung auf die Version festzulegen (optional), klicken Sie auf die Schaltfläche **Mehr >>** und setzen Sie **Beschriftung**, um der Version einen Namen zu geben. Wenn die Beschriftung nicht eingestellt ist, handelt es sich bei der Version um eine automatisch inkrementierte Zahl.
+1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
 
    Version 1.2 erstellt für: Hemden.
 
@@ -45,7 +45,7 @@ So erstellen Sie die neue Version einer Seite:
 >
 >Eine Version wird automatisch bei Aktivierung einer Seite erstellt.
 
-## Wiederherstellen einer Seitenversion über den Sidekick {#restoring-a-page-version-from-sidekick}
+## Wiederherstellen einer Seitenversion über den Sidekick  {#restoring-a-page-version-from-sidekick}
 
 So stellen Sie die frühere Version einer Seite wieder her:
 
@@ -71,7 +71,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
 1. Wählen Sie die Version, die Sie wiederherstellen möchten, und wählen Sie **Wiederherstellen**. AEM stellt die Version(en) bzw. den Baum/die Bäume wieder her, die Sie ausgewählt haben.
 
-### Wiederherstellen einer Baumstruktur über die Konsole {#restoring-a-tree-from-the-console}
+### Wiederherstellen einer Baumstruktur über die Konsole  {#restoring-a-tree-from-the-console}
 
 Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. Sie können sie außerdem verwenden, um Seiten wiederherzustellen, die gelöscht wurden.
 
@@ -88,7 +88,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Öffnen Sie im Browser die Seite, die mit einer früheren Version verglichen werden soll.
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. Wählen Sie im Sidekick die Registerkarte **Version** und dann die Unterregisterkarte **Version wiederherstellen** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -120,7 +120,7 @@ Gehen Sie hierfür wie folgt vor:
 >
 >Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen. Außerdem unterscheidet sich die Ansicht von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
-### Verwenden des Timewarp-Kalenders {#using-the-timewarp-calendar}
+### Verwenden des Timewarp-Kalenders  {#using-the-timewarp-calendar}
 
 Timewarp ist im Sidekick verfügbar.
 
@@ -187,7 +187,7 @@ Wenn Sie die Timeline im Dokument anzeigen möchten:
 Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Bearbeitung von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
 
 * **Timewarp funktioniert auf veröffentlichten Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
-* **Timewarp verwendet Seitenversionen** : Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
+* **Timewarp verwendet Seitenversionen**: Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
 * **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
 * **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über Wiederherstellen manuell ausführen.
 * **Timewarp basiert nur auf dem Seiteninhalt**: Die Ansicht unterscheidet sich von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Assets/Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
