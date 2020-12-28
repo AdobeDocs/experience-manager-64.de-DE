@@ -20,11 +20,11 @@ ht-degree: 80%
 
 # Bearbeiten in der klassischen Benutzeroberfläche{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## Klassische Benutzeroberfläche und Touch-fähige Benutzeroberfläche {#classic-ui-and-touch-enabled-ui}
 
 Die klassische Benutzeroberfläche ist die Desktop-orientierte Benutzeroberfläche, die seit CQ5 verfügbar ist (dem Vorgänger der AEM). Die folgende Dokumentation zur Bearbeitung bezieht sich auf diese Benutzeroberfläche.
 
-Die Touch-optimierte Benutzeroberfläche ist die neue Standardoberfläche für AEM, die sowohl auf Touch- als auch Desktop-Geräten verwendet werden kann. Please see the [standard authoring documentation](/help/sites-authoring/author.md) for further information.
+Die Touch-optimierte Benutzeroberfläche ist die neue Standardoberfläche für AEM, die sowohl auf Touch- als auch Desktop-Geräten verwendet werden kann. Weitere Informationen finden Sie in der [Standard-Authoring-Dokumentation](/help/sites-authoring/author.md).
 
 >[!NOTE]
 >
