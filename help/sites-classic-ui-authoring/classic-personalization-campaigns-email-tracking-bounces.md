@@ -24,7 +24,7 @@ ht-degree: 90%
 >
 >Die Adobe plant nicht, die Verfolgung von E-Mails, die von AEM SMTP-Dienst geöffnet/abgeschnitten werden, weiter zu verbessern.
 >
->Es wird empfohlen, Adobe Campaign und seine AEM [zu nutzen](/help/sites-administering/campaign.md).
+>Die Empfehlung lautet: [Leverage-Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md).
 
 Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird. Der Standardwert für fehlgeschlagene Zustellversuche beträgt 3, er kann jedoch angepasst werden.
 
@@ -68,7 +68,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    `imap.flag.SEEN`:Wählen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten
 
-   See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
+   Die vollständige Liste der Flags finden Sie unter [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
 
    **IMAP-Beispiele:**
 
@@ -79,13 +79,13 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
 1. Speichern Sie die Konfiguration.
 
-## Konfigurieren der Newsletter-Dienstkomponente {#configuring-the-newsletter-service-component}
+## Konfigurieren der Newsletter-Dienstkomponente  {#configuring-the-newsletter-service-component}
 
 Nachdem Sie den Feed Importer konfiguriert haben, müssen Sie die Absenderadresse und den Zähler für nicht erfolgreiche Zustellversuche konfigurieren.
 
 So konfigurieren Sie den Newsletter-Dienst:
 
-1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.
+1. Navigieren Sie in der OSGi-Konsole unter `<host>:<port>/system/console/configMgr` zu **MCM-Newsletter**.
 
 1. Konfigurieren Sie den Dienst und speichern Sie anschließend die Änderungen.
 
