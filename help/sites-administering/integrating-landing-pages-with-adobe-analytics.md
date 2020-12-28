@@ -20,7 +20,7 @@ ht-degree: 48%
 
 # Integrieren von Einstiegsseiten in Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM has integrated the landing pages solution with [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) by using the following call-to-action (CTA) components:
+AEM hat die Landingpages-Lösung mit [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mithilfe der folgenden Aktionsaufruf-Komponenten (CTA) integriert:
 
 1. Click Through-Komponente
 1. Grafischer Link
@@ -29,11 +29,11 @@ Diese Komponenten stellen bestimmte Attribute zur Verfügung, die über Adobe An
 
 ## Voraussetzungen {#prerequisites}
 
-Adobe recommends that you go through the [existing AEM-Adobe Analytics integration](/help/sites-administering/adobeanalytics.md) to understand how this integration works.
+Adobe empfiehlt, die [bestehende AEM-Adobe Analytics-Integration](/help/sites-administering/adobeanalytics.md) zu durchlaufen, um zu verstehen, wie diese Integration funktioniert.
 
 ## Verfügbare Komponenten für die Zuordnung {#components-available-for-mapping}
 
-In AEM, the **Call to Action** components - **ClickThroughLink** and **GraphicalLink** - displayed here in the sidekick, can be mapped to Adobe Analytics variables.
+In AEM können die Komponenten **Aktionsaufruf** - **ClickThroughLink** und **GraphicalLink** -, die hier im Sidekick angezeigt werden, Adobe Analytics-Variablen zugeordnet werden.
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
@@ -90,7 +90,7 @@ Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
 </table>
 
 1. Weisen Sie diese offengelegten Attribute beliebigen Adobe Analytics-Variablen aus der Inhaltssuche zu. Das Framework ist nun einsatzbereit.
-1. You can now create a new landing page or open an existing landing page with existing CTA components and click **Cloud Services** tab in **Page Properties** from the sidekick (in the touch-optimized UI, select **Open Properties** and click **Cloud Services**) and configure the framework to use with landing page. Wählen Sie das Framework aus der Dropdown-Liste aus.
+1. Sie können jetzt eine neue Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und im Sidekick auf die Registerkarte **Cloud Services** unter &lt;a2/>Seiteneigenschaften&lt;a3/> klicken (in der touchoptimierten Benutzeroberfläche wählen Sie **Eigenschaften öffnen** und klicken Sie auf **Cloud Services**) und konfigurieren Sie das Framework für die Verwendung mit Landingpage. **** Wählen Sie das Framework aus der Dropdown-Liste aus.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
