@@ -38,7 +38,7 @@ Beim Aktualisieren auf AEM 6.4 wird eine große Teilmenge des Inhalts unter /etc
 * Mit der Aktualisierung auf 6.4: Einige der Neustrukturierungsänderungen für /etc sind nicht abwärtskompatibel und entsprechend sollten Änderungen im Rahmen der Aktualisierung auf AEM 6.4 geplant und umgesetzt werden.
 * Vor der Aktualisierung auf 6.5: Die überwiegende Mehrheit der Neustrukturierungsänderungen für /etc kann auf einen späteren Zeitpunkt nach der Aktualisierung verschoben werden. Wie bereits erwähnt, verweist der AEM 6.4-Code weiterhin auf die alten Speicherorte, bis die Änderungen im Rahmen eines Kundenrelease implementiert werden. Es gibt zwar keinen erforderlichen Zeitrahmen für die Änderungen, es wird jedoch empfohlen, sie vor der Aktualisierung auf 6.5 durchzuführen, da zukünftige Funktionen davon abhängen können, dass die neuen Speicherorte referenziert werden. Auch veweist die Dokumentation für ein bestimmtes Merkmal standardmäßig auf die neuen Speicherorte, weswegen die Verwendung alter Speicherorte verwirrend sein könnte.
 
-### Restructuring Guidance {#restructuring-guidance}
+### Umstrukturierungsleitlinien {#restructuring-guidance}
 
 Bei der Planung einer Aktualisierung auf AEM 6.4 sollten die folgenden Seiten zur Abschätzung des Arbeitsaufwands herangezogen werden:
 
