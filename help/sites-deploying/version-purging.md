@@ -32,11 +32,11 @@ Diese Versionen werden nie bereinigt. Daher wächst die Größe des Repositorys 
 
 AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfügung:
 
-* den [Version Manager](#version-manager)
+* [Version Manager](#version-manager)
 
    Dies kann so konfiguriert werden, dass alte Versionen beim Erstellen neuer Versionen bereinigt werden.
 
-* das Werkzeug [Versionen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) bereinigen
+* Tool [Versionen entfernen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
    Dies wird zur Überwachung und Wartung Ihres Repositorys verwendet.
 
@@ -50,7 +50,7 @@ AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfü
 
       Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
-* the [Version Purge maintenance task](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die manuelle Verwendung der Werkzeuge zum Bereinigen der Version minimiert.
+* die [Aufgabe Versionsbereinigung (Maintenance)](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die manuelle Verwendung der Werkzeuge zum Bereinigen der Version minimiert.
 
 >[!CAUTION]
 >
@@ -104,7 +104,7 @@ Die folgenden Optionen sind verfügbar:
 
 ### Kombinieren von Aufbewahrungsoptionen {#combining-retention-options}
 
-The options defining how which versions should be retained ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), can be combined depending on your requirements.
+Die Optionen, mit denen festgelegt wird, welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können je nach Ihren Anforderungen kombiniert werden.
 
 Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
 
