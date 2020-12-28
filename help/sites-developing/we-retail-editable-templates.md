@@ -31,7 +31,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Beachten Sie, dass die Modusauswahl keinen Designmodus mehr aufweist. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design bearbeitbarer Vorlagen zu ändern, müssen diese im Vorlagen-Editor bearbeitet werden.
-1. From the **Page information** menu select **Edit Template**.
+1. Wählen Sie im Menü **Seiteninformationen** **Vorlage bearbeiten** aus.
 1. Sie bearbeiten nun die Vorlage der Hero-Seite.
 
    Der Strukturmodus der Seite ermöglicht es Ihnen, die Struktur der Vorlage zu ändern. Dazu gehören beispielsweise die Komponenten, die im Layout-Container zulässig sind.
@@ -72,9 +72,9 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
 
    Der **Layout-Modus** kann wie auf einer normalen Seite verwendet werden, um das Layout für die Vorlage zu definieren.
 
-## Weitere Informationen {#more-information}
+## Weitere Informationen  {#more-information}
 
-For further information please refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete technical details on editable templates.
+Weitere Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder auf der Developer Dokument-Seite [Vorlagen - Bearbeitbar](/help/sites-developing/page-templates-editable.md).
 
-Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. See the authoring document [Core Components](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for a technical overview.
+Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Eine technische Übersicht über die Funktionen der Kernkomponenten und des Developer-Dokuments [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) finden Sie im Authoring-Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html).
 
