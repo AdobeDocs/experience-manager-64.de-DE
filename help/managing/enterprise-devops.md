@@ -63,7 +63,7 @@ Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren
 
 ### Qualitätssicherung {#quality-assurance}
 
-This environment is used by the quality assurance team to comprehensively [test](/help/sites-developing/test-plan.md) your new system; both design and function. Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
+Diese Umgebung wird vom Qualitätssicherungsteam verwendet, um Ihr neues System umfassend zu testen. Design und Funktion. ](/help/sites-developing/test-plan.md)[ Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
 
 ### Staging   {#staging}
 
@@ -73,7 +73,7 @@ Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein - Konfi
 * Sie kann für abschließende Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung für die Produktionsumgebungen verwendet werden.
 * Obwohl es nicht immer möglich ist, die Staging-Umgebung völlig identisch mit der Produktionsumgebung zu gestalten, sollten die beiden so ähnlich wie möglich sein, um Leistungs- und Belastungstests zu ermöglichen.
 
-### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
+### Produktion - Autoren- und Veröffentlichungsumgebung    {#production-author-and-publish}
 
 Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) der Implementierung notwendigen Umgebungen.
 
@@ -97,7 +97,7 @@ Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Au
 
 Um die in der Veröffentlichungsumgebung erstellten Daten umgekehrt zu replizieren, durchsucht ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung und fragt solche Inhalte aus dem Postausgang für die umgekehrte Replikation der Veröffentlichungsumgebung ab.
 
-#### Veröffentlichen   {#publish}
+#### Veröffentlichen    {#publish}
 
 Die Veröffentlichungsumgebung befindet sich normalerweise innerhalb der demilitarisierten Zone (DMZ). Dies ist die Umgebung, in der die Besucher auf Ihren Inhalt zugreifen (beispielsweise über die Website oder über eine App) und damit interagieren, sei es öffentlich oder innerhalb Ihres Intranets. Die Veröffentlichungsumgebung:
 
@@ -108,7 +108,7 @@ Die Veröffentlichungsumgebung befindet sich normalerweise innerhalb der demilit
 
 Die Veröffentlichungsumgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und ermöglicht die Personalisierung des Inhalts für jeden einzelnen Benutzer.
 
-## Code-Verschiebung   {#code-movement}
+## Code-Verschiebung    {#code-movement}
 
 Der Code sollte immer von unten nach oben propagiert werden:
 
