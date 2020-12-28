@@ -40,7 +40,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![chlimage_1-50](assets/chlimage_1-50.jpeg)
 
-1. The **Next** button brings you to the **Configure** step of the wizard. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
+1. Mit der Schaltfläche **Weiter** gelangen Sie zum Schritt **Konfigurieren** des Assistenten. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
 
    ![chlimage_1-51](assets/chlimage_1-51.jpeg)
 
@@ -48,7 +48,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](/help/sites-administering/tc-tic.md).
 
-1. The **Next** button brings you to the **Translate** step of the wizard. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
+1. Mit der Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
 
    >[!NOTE]
    >
