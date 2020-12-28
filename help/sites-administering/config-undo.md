@@ -24,7 +24,7 @@ Der [OSGi-Dienst](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo C
 
 ## Standardkonfiguration {#default-configuration}
 
-In a standard installation the default settings are defined as properties on the `sling:OsgiConfig`node:
+In einer Standardinstallation werden die Standardeinstellungen als Eigenschaften auf dem Knoten `sling:OsgiConfig`definiert:
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
@@ -64,7 +64,7 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 
    >[!NOTE]
    >
-   >By default, only administrators can access the `/var/undo` node. Autoren können nur Rückgängig- und Wiederherstellen-Vorgänge für Binärdaten durchführen, wenn ihnen Zugriffsberechtigungen für die Rückgängig-Binärdaten gewährt wurden.
+   >Standardmäßig können nur Administratoren auf den Knoten `/var/undo` zugreifen. Autoren können nur Rückgängig- und Wiederherstellen-Vorgänge für Binärdaten durchführen, wenn ihnen Zugriffsberechtigungen für die Rückgängig-Binärdaten gewährt wurden.
 
 * **Min. validity**
 ( 
@@ -94,7 +94,8 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
    * **Typ**: `String`
 
 
-* **Persistenzmodus**( 
+* **Persistenzmodus**
+( 
 `cq.wcm.undo.persistence.mode`)
 
    * **Beschreibung**: Bestimmt, wann der Rückgängig-Verlauf beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (wenn der Benutzer z. B. zu einer anderen Seite navigiert).
@@ -104,7 +105,8 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
    * **Standard**: `Selected`
    * **Typ**: `Boolean`
 
-* **Markierungsmodus**( 
+* **Markierungsmodus**
+( 
 `cq.wcm.undo.markermode`)
 
    * **Beschreibung**: Gibt den visuellen Hinweis an, der verwendet werden soll, um anzugeben, welche Absätze bei einem Rückgängigmachen oder Wiederholen betroffen sind. Die folgenden Werte sind gültig:
@@ -115,7 +117,8 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
    * **Typ**: `String`
 
 
-* **Gute Komponenten**( 
+* **Gute Komponenten**
+( 
 `cq.wcm.undo.whitelist`)
 
    * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“/„Wiederherstellen“ funktionieren. Fügen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
@@ -133,13 +136,14 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
    * **Typ**: `String[]`
 
 
-* **Unangemessene Komponenten**( 
+* **Unangemessene Komponenten**
+( 
 `cq.wcm.undo.blacklist`)
 
    * **Beschreibung**: Eine Liste von Komponenten- und/oder Komponentenoperationen, die vom Rückgängig-Befehl nicht betroffen sein sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
 
       * Fügen Sie einen Komponentenpfad hinzu, wenn keiner der Komponentenvorgänge im Verlauf der Rückgängigmachungen angezeigt werden soll, z. B. `collab/forum/components/post`.
-      * Append a colon (:) and an operation to the path when you want that specific operation to be omitted from the undo history (other operations function correctly), for example `collab/forum/components/post:insertParagraph.`
+      * Fügen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn Sie möchten, dass dieser bestimmte Vorgang aus dem Rückgängig-Verlauf ausgelassen wird (andere Vorgänge funktionieren korrekt), z. B. `collab/forum/components/post:insertParagraph.`
 
    >[!NOTE]
    >
