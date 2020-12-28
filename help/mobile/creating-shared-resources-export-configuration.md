@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Erstellen der Exportkonfiguration für gemeinsame Ressourcen{#creating-shared-resources-export-configuration}
+# Erstellen der Exportkonfiguration für freigegebene Ressourcen{#creating-shared-resources-export-configuration}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 6%
 >
 >**Voraussetzung**:
 >
->Bevor Sie mehr über das Erstellen und Bearbeiten freigegebener Ressourcen erfahren, lesen Sie die [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) , um die grundlegenden Konzepte zu verstehen.
+>Bevor Sie mehr über das Erstellen und Bearbeiten freigegebener Ressourcen erfahren, lesen Sie [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md), um die grundlegenden Konzepte zu verstehen.
 
 AEM Mobile-Benutzer verwenden Content Sync, um Live-Inhalte für die Verwendung in mobilen Apps in statische Inhalte zu exportieren. Dieser Export erfolgt, wenn Inhalte von AEM Mobile in Mobile On-Demand Services hochgeladen werden.
 
@@ -38,14 +38,14 @@ In den folgenden Ressourcen wird beschrieben, wie Sie freigegebene Ressourcen au
 
 Freigegebene HTML-Ressourcen ermöglichen es Artikeln, HTML-Ressourcen freizugeben, die andernfalls für alle Artikel dupliziert werden müssten, und können Symbole, Schriftarten, JavaScript und CSS enthalten.
 
-Die unter **&lt;dps-exportTemplate>/dps-HTMLResources>** gefundene Inhaltssynchronisierungskonfiguration sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendern der Eigenschaft auf dem Gerät erforderlich sind.
+Die unter **&lt;dps-exportTemplate>/dps-HTMLResources>** gefundene Konfiguration für die Inhaltssynchronisierung sollte so konfiguriert werden, dass der gesamte Inhalt eines Artikels exportiert wird, der für das statische Rendern der Eigenschaft auf dem Gerät erforderlich ist.
 
 >[!CAUTION]
 >
 >Sie können die folgenden Schritte ausführen, um gemeinsam genutzte Ressourcen als Beispiel Ansicht, sofern Sie über Folgendes verfügen:
 >
 >* Beispielinhalt installiert
->* AEM
+>* aem
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Anschluss
 
 >
