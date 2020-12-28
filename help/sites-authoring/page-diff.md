@@ -1,6 +1,6 @@
 ---
-title: 'Seitenvergleich  '
-seo-title: 'Seitenvergleich  '
+title: Seitenvergleich
+seo-title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 seo-description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
@@ -18,7 +18,7 @@ ht-degree: 96%
 ---
 
 
-# Seitenvergleich  {#page-diff}
+# Seitenvergleich {#page-diff}
 
 ## Einführung {#introduction}
 
@@ -28,7 +28,7 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 
 >[!CAUTION]
 >
->Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die Berechtigung **Ändern/Erstellen/Löschen** auf dem Knoten verfügen, `/content/versionhistory` um die Funktion verwenden zu können.
+>Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die Berechtigung **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
 >
 >Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/sites-developing/pagediff.md#operation-details).
 
@@ -43,7 +43,7 @@ Folgendes kann verglichen werden:
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden   {#presentation-of-differences}
+### Darstellung von Unterschieden  {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -52,7 +52,7 @@ Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede glei
 
 Wenn Sie z. B. Versionen vergleichen, wird die aktuelle Version auf der linken Seite und die Vorversion auf der rechten Seite angezeigt.
 
-Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browserfensters angezeigt.
+Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -67,7 +67,7 @@ Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Ge
 
 Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 
-**HTML-Änderungen** 
+**HTML-Änderungen**
 
 * Dunkelgrün – HTML hinzugefügt
 * Rot – HTML entfernt
@@ -102,7 +102,7 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 * Der Seitenvergleich erkennt keine Bilddrehung.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
 
-   * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
+   * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 >[!NOTE]
 >
@@ -110,5 +110,5 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 
 >[!NOTE]
 >
->Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/sites-developing/pagediff.md) zu dieser Funktion. 
+>Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/sites-developing/pagediff.md) zu dieser Funktion.
 
