@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments
-seo-title: Experience Fragments
+seo-title: Erlebnisfragmente
 description: 'null'
 seo-description: 'null'
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
@@ -90,7 +90,7 @@ Mit dem Erstellen von Ordnern können Sie:
    >
    >Verwenden Sie den [Vorlagen-Editor](/help/sites-authoring/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
 
-Das folgende Beispiel zeigt Erlebnisfragmente, die entsprechend strukturiert `Contributors`sind. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
+Das folgende Beispiel zeigt Erlebnisfragmente, die nach `Contributors` strukturiert sind. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>Es ist auch möglich, die [Zulässige Vorlagen für Ihre Instanz](#configure-allowed-templates-instance) zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung überschrieben werden können.
 
 ### Konfigurieren zulässiger Vorlagen für Ihren Ordner {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>Es wird nicht empfohlen, die **[!UICONTROL Zulässige Vorlagen]** durch diese Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
 >
 >Verwenden Sie diesen Dialog nur zu Informationszwecken.
 
@@ -157,7 +157,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigate to the required folder and select **[!UICONTROL Create]**.
+1. Navigieren Sie zum gewünschten Ordner und wählen Sie **[!UICONTROL Erstellen]**.
 
 1. Wählen Sie **[!UICONTROL Experience Fragment]** aus, um den Assistenten zum **[!UICONTROL Erstellen von Experience Fragments]** zu öffnen.
 
@@ -181,7 +181,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 ## Bearbeiten eines Experience Fragment {#editing-your-experience-fragment}
 
-Der Editor für Erlebnisfragmente bietet ähnliche Funktionen wie der normale Seiten-Editor. See [Editing Page Content](/help/sites-authoring/editing-content.md) for more information on how to use it.
+Der Editor für Erlebnisfragmente bietet ähnliche Funktionen wie der normale Seiten-Editor. Weitere Informationen zur Verwendung finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
 
 Die folgende Beispielvorgehensweise veranschaulicht, wie Sie Teaser für Produkte erstellen:
 
@@ -309,7 +309,7 @@ Beispiel:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportieren von Experience Fragments   {#exporting-experience-fragments}
+## Exportieren von Experience Fragments    {#exporting-experience-fragments}
 
 Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann von AEM und Drittkanalanbietern gleichermaßen verwendet werden.
 
