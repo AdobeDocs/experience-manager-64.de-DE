@@ -22,7 +22,7 @@ ht-degree: 81%
 
 Verwenden Sie Standardverfahren zum Hochladen oder Synchronisieren, um 3D-Assets und ihre zugehörigen referenzierten Dateien in AEM Assets zu übertragen.
 
-Siehe [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
 Adobe empfiehlt, dass Sie alle referenzierten Dateien hochladen, bevor Sie die primäre 3D-Modelldatei hochladen oder gleichzeitig hochladen. Diese Vorgehensweise ist jedoch nicht obligatorisch.
 
@@ -53,11 +53,11 @@ Wenn der Ladevorgang abgeschlossen ist, werden Ihre 3D-Dateien konvertiert und w
 
 In der Regel werden für die Konvertierung und Verarbeitung von 3D-Dateien erhebliche CPU- und Speicherressourcen auf einem Server verbraucht. Außerdem ist der Zeitaufwand beträchtlich. Die Verarbeitungszeiten variieren abhängig von der Größe des Modells und den Fähigkeiten des Servers beträchtlich. Beispiel: Ein typisches kleines Modell mit weniger als 100.000 Flächen kann in der Regel in weniger als einer Minute angezeigt und in 2–3 Minuten vollständig verarbeitet werden. Die Verarbeitung eines größeren Modells mit mehr als einer Million Flächen kann hingegen mehrere Dutzend Minuten in Anspruch nehmen.
 
-Aufträge für Konvertieren, Verarbeiten und Rendern werden so in die Warteschlange gestellt, dass eine übermäßige Verlangsamung des Servers vermieden wird. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Dieser Status zeigt, dass andere Verarbeitungs- oder Renderaufträge abgeschlossen werden müssen, bevor das aktuelle Asset verarbeitet wird.
+Aufträge für Konvertieren, Verarbeiten und Rendern werden so in die Warteschlange gestellt, dass eine übermäßige Verlangsamung des Servers vermieden wird. Die Meldung &quot;Warten auf Verarbeitung...&quot; manchmal in der **[!UICONTROL Ansicht]** angezeigt wird, wenn Sie Assets hochgeladen haben. Dieser Status zeigt, dass andere Verarbeitungs- oder Renderaufträge abgeschlossen werden müssen, bevor das aktuelle Asset verarbeitet wird.
 
 ## Überwachen des Verarbeitungsstatus Ihrer hochgeladenen 3D-Dateien {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Jedes geladene 3D-Modell durchläuft in der Regel die folgenden 4–6 geordneten Verarbeitungsphasen:
+Nur in **[!UICONTROL Ansicht]** werden der Verarbeitungsstatus und der Fortschritt als Fortschrittsbanner auf der Asset-Karte angezeigt. Jedes geladene 3D-Modell durchläuft in der Regel die folgenden 4–6 geordneten Verarbeitungsphasen:
 
 <table> 
  <tbody> 
@@ -101,5 +101,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. Sie müssen nicht warten, bis alle Verarbeitungsphasen abgeschlossen sind.
+>Sie können ein 3D-Asset in der Ansicht **[!UICONTROL Detail]** oder nach Abschluss der Phase &quot;Erstellen der Vorschau&quot;rendern. Sie müssen nicht warten, bis alle Verarbeitungsphasen abgeschlossen sind.
 
