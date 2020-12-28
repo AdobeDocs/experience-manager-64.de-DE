@@ -38,7 +38,7 @@ In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projek
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+>Damit Projektbenutzer andere Benutzer/Gruppen sehen können, während sie die Projektfunktion verwenden, z. B. Projekte erstellen, Aufgaben/Workflows erstellen, das Team anzeigen und verwalten, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
 
 ## Erstellen eines Projekts {#creating-a-project}
 
@@ -52,7 +52,7 @@ Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
 Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-authoring/projects.md) und [Workflows](/help/sites-authoring/projects-with-workflows.md).  So erstellen Sie ein neues Projekt:
 
 1. Tippen Sie in **Projekte** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen:
-1. Wählen Sie eine Vorlage aus. Out of the box, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md), and [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) are available and click **Next**.
+1. Wählen Sie eine Vorlage aus. Standardmäßig sind Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md) und [Product Foto Shoot Product](/help/sites-authoring/managing-product-information.md) verfügbar und klicken Sie auf **Next**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
