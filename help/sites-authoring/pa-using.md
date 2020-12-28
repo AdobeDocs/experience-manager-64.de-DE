@@ -76,17 +76,17 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Öffnen Sie [Content Insight](/help/sites-authoring/content-insights.md) in der Sites-Konsole, um die Effektivität der Seite weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Im Seiteneditor sichtbare Analysedaten (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiteneditor sichtbare Analysedaten (Activity Map)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>Das [Activity Map-Plugin, das von Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bereitgestellt wird, sollte jetzt verwendet werden.
