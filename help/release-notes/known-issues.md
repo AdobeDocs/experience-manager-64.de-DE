@@ -20,7 +20,7 @@ ht-degree: 44%
 
 # Bekannte Probleme {#known-issues}
 
-Auf dieser Seite finden Sie eine Liste der bekannten Probleme, die am April 2018 in Adobe Experience Manager 6.4 veröffentlicht wurden. Weitere Informationen zu bekannten Problemen erhalten Sie vom [Support](https://helpx.adobe.com/de/marketing-cloud/experience-manager.html).
+Auf dieser Seite finden Sie eine Liste bekannter Probleme, die Adobe Experience Manager 6.4 am April 2018 veröffentlicht hat. Weitere Informationen zu bekannten Problemen finden Sie unter [Support kontaktieren](https://helpx.adobe.com/de/marketing-cloud/experience-manager.html).
 
 ## Hybrid-Geräte {#hybrid-devices}
 
@@ -28,53 +28,53 @@ Hybrid-Geräte werden nicht unterstützt. Bei der Verwendung dieser Art von Ger�
 
 Wenn Sie Google Chrome als Browser verwenden:
 
-* Type `chrome://flags/` in the address bar and press Enter.
+* Geben Sie `chrome://flags/` in die Adressleiste ein und drücken Sie die Eingabetaste.
 * Klicken Sie auf Touch-Ereignis aktivieren > Deaktiviert.
 * Starten Sie den Browser (alle Registerkarten und Fenster) neu.
 
 Wenn Sie Mozilla Firefox als Browser verwenden:
 
-* Type `about:config` in the address bar and press Enter.
-* Filter the settings to `dom.w3c`.
-* Vergewissern Sie sich, dass die Einstellungen `0` und `false`.
+* Geben Sie `about:config` in die Adressleiste ein und drücken Sie die Eingabetaste.
+* Filtern Sie die Einstellungen nach `dom.w3c`.
+* Stellen Sie sicher, dass die Einstellungen `0` und `false` sind.
 * Starten Sie den Browser neu.
 
 Wenn Sie Microsoft Edge als Browser verwenden:
 
-* Type `about:flags` in the address bar and press Return.
-* Scroll to Experimental features then **[!UICONTROL Touch]**.
-* Klicken Sie auf Touch-Ereignis **[!UICONTROL aktivieren]**.
-* Select **[!UICONTROL Always Off]**.
+* Geben Sie `about:flags` in die Adressleiste ein und drücken Sie die Eingabetaste.
+* Blättern Sie zu Experimentellen Funktionen und dann **[!UICONTROL Touch]**.
+* Klicken Sie auf **[!UICONTROL Touch-Ereignis aktivieren]**.
+* Wählen Sie **[!UICONTROL Immer aus]**.
 * Starten Sie den Browser neu.
 
 ## Plattform {#platform}
 
 * **Vorgangs-Dashboard:** Bei einer Sicherungsdatei ohne die Erweiterung „.zip“ wird die Fortschrittsleiste nicht angezeigt. (GRANITE-10713)
-* **HTL:** Java Use-Objekt mit nachgestellten Leerzeichen in der Paketdeklaration friert den SightlyJavaCompilerService (GRANITE-20836) ein
-* **Apache Felix/Sling:** Konfigurationsdatei, die auch nach der Konfiguration.delete() noch im Repository vorhanden ist (GRANITE-20618)
+* **HTL:** Java Use-Objekt mit nachfolgendem Leerzeichen in der Paketdeklaration friert den SightlyJavaCompilerService (GRANITE-20836) ein
+* **Apache Felix/Sling:** Config-Datei auch nach der Konfiguration.delete() noch im Repository vorhanden (GRANITE-20618)
 * **Cloud-Einstellungen:** Die Konsole wird nach der Bearbeitung des Containers &quot;Configuration&quot;beschädigt (GRANITE-20726)
-* **Sicherheit:** Die IMS-Integration schlägt mit dem benutzerdefinierten Kontextpfad fehl (GRANITE-20639)
+* **Sicherheit:** IMS-Integration schlägt mit benutzerdefiniertem Kontextpfad fehl (GRANITE-20639)
 * **Sicherheit:** Verbessern Sie die standardmäßige JAAS-Rangfolge von SSO-, externen und Standard-Anmeldemodulen (GRANITE-20590)
-* **Tooling - CRX DE Lite:** Die Ansicht der Eigenschaften steigt immer weiter an (GRANITE-12040)
-* **Tooling - CRX DE Lite:** Änderungen an &quot;Long&quot;-Werttypen können nicht gespeichert werden, wenn Sie nicht mit der Dublette auf den Eigenschaftsnamen klicken (GRANITE-12351)
+* **Tooling - CRX DE Lite:** Ridge of properties Ansicht fährt weiter nach oben (GRANITE-12040)
+* **Tooling - CRX DE Lite: Änderungen an &quot;Long&quot;-Werttypen** können nur gespeichert werden, wenn Sie mit der Dublette auf den Eigenschaftsnamen klicken (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** Strg+F-Suche in geöffneten Textdateien bleibt bei der RegExp-Suche hängen (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F Suche in geöffneten Textdateien bleibt bei der RegExp Suche hängen (GRANITE-5996)
 
-* **Tooling - CRX DE Lite:** Knoteneigenschaft wird nach dem Umbenennen des Knotens nicht angezeigt (GRANITE-7160)
-* **Benutzeroberfläche:** Pulldown &quot;Mehr...&quot; zeigt nicht alle Elemente an, wenn sie in einem Popup-Element in IE und Firefox geöffnet werden (GRANITE-16326)
+* **Tooling - CRX DE Lite:** Node-Eigenschaft wird nach dem Umbenennen des Knotens nicht angezeigt (GRANITE-7160)
+* **UI:** Pulldown &quot;more...&quot; zeigt nicht alle Elemente an, wenn sie in einem Popup-Element in IE und Firefox geöffnet werden (GRANITE-16326)
 * **Benutzeroberfläche:** Info-QuickInfo wird ausgeblendet, wenn ein Layout mit festen Spalten mit zwei nebeneinander liegenden Spalten verwendet wird (GRANITE-16869)
 * **Benutzeroberfläche:** Es tritt ein unbehandelter Fehler auf, wenn stellvertretend für einen Benutzer agiert wird, der nicht vorhanden ist (GRANITE-23228). Dies kann durch [Implementieren eines Fehlerhandlers](/help/sites-developing/customizing-errorhandler-pages.md) zum Anpassen der Fehlermeldung umgangen werden.
 
-* **Omnese:** Suchvorgänge mit umgekehrtem Schrägstrich verursachen eine Ausnahme (GRANITE-11769)
-* **Omnese:** Öffnen Sie &quot;Einstellungen für Ansichten&quot;in der Ansicht Liste, wodurch sich der Suchfilter ändert (GRANITE-16524)
-* **Omnese:** Falsche Liste von Spaltenkonfigurationen bei der Asset-Suche von Sites (GRANITE-16527)
+* **Omniture:** Suchen mit umgekehrtem Schrägstrich verursachen Ausnahmefehler (GRANITE-11769)
+* **OmnitureSearch:** Open &quot;Ansicht Settings&quot; in Liste Ansicht führt dazu, dass Suchfilter geändert werden (GRANITE-16524)
+* **OmnitureSearch:** Falsche Liste der Spaltenkonfigurationen, die angezeigt werden, wenn Assets von Sites gesucht werden (GRANITE-16527)
 
 * **Omnisearch**: Eigenschaften von linker Seitenleiste stehen in Zusammenhang mit der Omnisearch-Serveranforderung. (GRANITE-20524)
-* **Omnese:** Omniture Search unterstützt keine Kontextpfade (GRANITE-16044)
+* **OmnitureSearch:** Omniture unterstützt keine Kontextpfade (GRANITE-16044)
 
 ## Assets {#assets}
 
-* **Suchen**: Die Suche gibt keine Ergebnisse zurück, wenn die Suchzeichenfolge mit einem Leerzeichen [OAK-4786 Beginn](https://issues.apache.org/jira/browse/OAK-4786)
+* **Suchen**: Die Suche gibt keine Ergebnisse zurück, wenn die Suchzeichenfolge mit einem Leerzeichen  [OAK-4786 Beginn](https://issues.apache.org/jira/browse/OAK-4786)
 
 * **Suchen**: In der klassischen Benutzeroberfläche sind Tags in der Suche nicht sichtbar (CQ-4235239)
 
@@ -96,19 +96,19 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 
 * **Moderation**: Es ist nicht möglich, den übergeordneten Beitrag in einem einzelnen Löschvorgang aus der Massenmoderationsoberfläche zu löschen. (CQ-4236797)
 
-* **Konsole** - Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort&quot;führt zur Anmeldeseite statt zum entsprechenden Formular zum Abrufen des Kennworts (CQ-4237682).
+* **Konsole** : Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort&quot;führt statt des entsprechenden Kennwortabfrageformulars zur Anmeldeseite (CQ-4237682)
 
 ## Formulare {#forms}
 
 ### Installation und Entwicklung
 
 * (Nur AEM Forms JEE) Beim Bootstrapping von JBoss Application Server während der Ausführung von Configuration Manager werden EJB-Aufruf- und Bootstrap-Fehler zurückgegeben. Diese können jedoch ignoriert werden. (Referenznummer CQ-4229793)
-* Beim Starten der AEM Forms wird die `SAX Security Manager could not be setup` Warnung angezeigt. (CQ-4297403)
+* Wenn AEM Forms gestartet wird, wird die Warnung `SAX Security Manager could not be setup` angezeigt. (CQ-4297403)
 
 ### Interaktive Kommunikation
 
 * Beim Laden der interaktiven Kommunikation mit Diagramm- oder Bildelementen über die Agenten-Benutzeroberfläche treten Verzögerungen auf. (CQ-4236630)
-* The data display format in print preview is dd-mm-yyyy while in the web preview is `dd-mmm-yy` (CQ-4237045)
+* Das Datenanzeigeformat in gedruckter Vorschau ist TT-MM-JJJJ, während in der Web-Vorschau `dd-mmm-yy` (CQ-4237045)
 * Der Webkanal „Interaktive Kommunikation“ unterstützt nur sortierte und unsortierte Listen. In Listen-Dokumentfragmenten werden ebenenübergreifende Listen und Einzüge für den Webkanal der interaktiven Kommunikation nicht unterstützt. (CQ-4233672)
 * Beim Synchronisieren des Web-Kanals mit dem Print-Kanal können die folgenden Probleme auftreten:
 
@@ -136,7 +136,7 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 
 ### Adobe Sign-Integration
 
-* Der Adobe Sign-Planer setzt zwischenzeitlich aus, deshalb werden noch zu unterzeichnende Formulare nicht zur Übermittlung weitergeleitet. To resolve the issue, restart the **Apache Sling Scheduler Support** bundle from AEM web console at https://[*server*]:[*port*]/system/console/bundles.
+* Der Adobe Sign-Planer setzt zwischenzeitlich aus, deshalb werden noch zu unterzeichnende Formulare nicht zur Übermittlung weitergeleitet. Um das Problem zu beheben, starten Sie das Bundle **Apache Sling Planung Support** von AEM Webkonsole unter https://[*server*]:[*port*]/system/console/bundles neu.
 
 ### Bearbeitung adaptiver Formulare
 
