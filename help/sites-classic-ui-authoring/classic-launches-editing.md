@@ -58,7 +58,7 @@ Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des La
 
 1. Klicken Sie auf **Speichern**.
 
-## Ermitteln des Launch-Status einer Seite   {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite    {#discovering-the-launch-status-of-a-page}
 
 Wenn Sie den Launch einer Seite bearbeiten, werden unten auf der Registerkarte **Versionierung** des Sidekicks Informationen zum Launch angezeigt:
 
