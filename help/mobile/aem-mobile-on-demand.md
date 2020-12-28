@@ -25,15 +25,15 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Wenn Sie AEM nicht als Inhaltsverwaltungsquelle verwenden, lesen Sie die [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Wenn Sie AEM nicht als Inhaltsverwaltungsquelle verwenden, finden Sie weitere Informationen unter [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
->Bevor Sie mit AEM Mobile arbeiten und den Schritten in diesem Handbuch folgen, sollten Sie mit [AEM](/help/sites-deploying/deploy.md)vertraut sein.
+>Bevor Sie mit AEM Mobile arbeiten und den Schritten in diesem Handbuch für die ersten Schritte folgen, sollten Sie mit [AEM](/help/sites-deploying/deploy.md) vertraut sein.
 >
->Informationen zum Einrichten Ihrer Umgebung für AEM Mobile On-demand Services finden Sie im [AEM Mobile Application Dashboard oder im Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Informationen zum Einrichten Ihrer Umgebung für AEM Mobile On-demand Services finden Sie unter [AEM Mobile Application Dashboard oder im Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Ein **AEM Entwickler** erweitert und erstellt benutzerdefinierte Webvorlagen und Komponenten, damit der *AEM-Autor* schöne und ansprechende mobile Erlebnisse erstellen kann. Diese Vorlagen und Komponenten sind nicht nur für die mobile App-Welt optimiert. Sie können jedoch sowohl mit dem Gerät als auch mit dem AEM Server (einem beliebigen Remote-Server) kommunizieren, um Endpunkte des Omniture Kanal-Dienstes zu erreichen. AEM Editor für integrierte Inhalte wird von *AEM-Autoren* verwendet, um umfangreiche und relevante Erlebnisse in der App zu erstellen, einschließlich der Integration in das übrige Adobe Marketing Cloud.
+Ein **AEM-Entwickler** erweitert und erstellt benutzerdefinierte Webvorlagen und Komponenten, damit der *AEM-Autor* schöne und ansprechende mobile Erlebnisse erstellen kann. Diese Vorlagen und Komponenten sind nicht nur für die mobile App-Welt optimiert. Sie können jedoch sowohl mit dem Gerät als auch mit dem AEM Server (einem beliebigen Remote-Server) kommunizieren, um Endpunkte des Omniture Kanal-Dienstes zu erreichen. AEM Editor für integrierte Inhalte wird von *AEM-Autoren* verwendet, um umfangreiche und relevante Erlebnisse in der App zu erstellen, einschließlich der Integration mit dem Rest des Adobe Marketing Cloud.
 
 Ein AEM-Entwickler ist beim Erstellen einer App mit AEM Mobile On-demand Services für die folgenden Aufgaben verantwortlich:
 
@@ -41,11 +41,11 @@ Ein AEM-Entwickler ist beim Erstellen einer App mit AEM Mobile On-demand Service
 * [Mobil mit Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md)
 * [Inhaltseigenschaften und Inhaltsexport](/help/mobile/on-demand-content-properties-exporting.md)
 
-Informationen zum Entwickeln von Content Services finden Sie unter [Entwickeln von AEM Mobile Content Services](/help/mobile/developing-content-services.md) .
+Informationen zum Entwickeln von Content Services finden Sie unter [Entwickeln von AEM Mobile Content Services](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >
->Die Rolle eines *AEM Entwicklers* wird nicht mit der Entwicklung von Vorlagen und Komponenten Beginn und endet damit. Ein *AEM Entwickler* kann eine komplett neue App erstellen, anstatt einfach das standardmäßige Beispiel für die Implementierung der Referenz zu erweitern.
+>Eine *AEM Developer&#39;s*-Rolle wird nicht mit der Entwicklung von Vorlagen und Komponenten Beginn und endet damit. Ein *AEM-Entwickler* kann eine komplett neue App erstellen, anstatt einfach das standardmäßige Beispiel für die Implementierung der Referenz zu erweitern.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
