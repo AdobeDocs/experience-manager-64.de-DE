@@ -41,9 +41,9 @@ Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Ers
 
 * Vorlagen, die Plugin-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser immer noch autoritär sind, ohne dass die Plugin-Brücke vorhanden ist.
 
-   * Achten Sie beispielsweise darauf, auf die Funktion &quot; *deviceready* &quot;zu warten, bevor Sie versuchen, auf die API eines Plugins zuzugreifen.
+   * Warten Sie beispielsweise auf die Funktion *deviceready*, bevor Sie versuchen, auf die API eines Plug-Ins zuzugreifen.
 
-## Richtlinien für AEM {#guidelines-for-aem-developers}
+## Richtlinien für AEM-Entwickler {#guidelines-for-aem-developers}
 
 Die folgenden Richtlinien helfen erfahrenen AEM Entwicklern von Sites, die Vorlagen und Komponenten für mobile Apps erstellen möchten:
 
@@ -51,7 +51,7 @@ Die folgenden Richtlinien helfen erfahrenen AEM Entwicklern von Sites, die Vorla
 
 * Mehrere Komponentenskriptdateien über eine einzige monolithische
 
-   * Es stehen eine Reihe leerer Erweiterungspunkte zur Verfügung, z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen Entwickler die Seitenvorlage ändern und dabei möglichst wenig Kerncode duplizieren können
+   * Es stehen eine Reihe leere Erweiterungspunkte zur Verfügung, wie z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen Entwickler die Seitenvorlage ändern können, während möglichst wenig Kerncode dupliziert wird.
    * Vorlagen können dann über den Sling-Mechanismus *sling:resourceSuperType* erweitert und angepasst werden
 
 * Sightly/HTL über JSP als Vorlagensprache bevorzugen
@@ -66,7 +66,7 @@ Die folgenden Richtlinien helfen erfahrenen AEM Entwicklern von Sites, die Vorla
 
 >[!NOTE]
 >
->Ausführlichere Informationen zum Render-Blockieren externer Skripte finden Sie [hier](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Ausführlichere Informationen zum Render-Blockieren externer Skripte [finden Sie hier](https://developers.google.com/speed/docs/insights/BlockingJS).
 
 **Stellen Sie anwendungsspezifische clientseitige JS- und CSS-Bibliotheken über webspezifische**
 
@@ -75,13 +75,13 @@ Die folgenden Richtlinien helfen erfahrenen AEM Entwicklern von Sites, die Vorla
 
 >[!NOTE]
 >
->Weitere Informationen zu jQuery Mobile erhalten Sie [hier](https://jquerymobile.com/browser-support/1.4/).
+>Um mehr über jQuery Mobile zu erfahren, klicken Sie [hier](https://jquerymobile.com/browser-support/1.4/).
 
 **Mikrobibliotheken über Vollstapel bevorzugen**
 
 * Die Zeit, die benötigt wird, um Ihre Inhalte auf das Glas des Geräts zu bringen, wird durch jede Bibliothek, von der Ihre Artikel abhängen, verlangsamt. Diese Verlangsamung wird noch verstärkt, wenn ein neuer Webview zum Rendern jedes Artikels verwendet wird. Daher muss jede Bibliothek erneut von Grund auf initialisiert werden
-* Wenn Ihre Artikel nicht als SPAs (Einzelseitenanwendungen) erstellt wurden, müssen Sie wahrscheinlich keine vollständige Stapelbibliothek wie Angular einschließen
-* Verwenden Sie kleinere Bibliotheken mit einem Verwendungszweck, um die Interaktivität hinzuzufügen, die Ihre Seite benötigt, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
+* Wenn Ihre Artikel nicht als SPA (Einzelseitenanwendungen) erstellt wurden, müssen Sie wahrscheinlich keine vollständige Stapelbibliothek wie Angular einschließen
+* Verwenden Sie kleinere, einzweckige Bibliotheken, um die Interaktivität hinzuzufügen, die Ihre Seite benötigt, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
 
 **Größe der Artikelnutzlast minimieren**
 
