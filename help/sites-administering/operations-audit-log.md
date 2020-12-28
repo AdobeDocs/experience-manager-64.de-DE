@@ -40,9 +40,9 @@ Jede der Optionen kann durch Erstellen von Regeln in der Web-Konsole von AEM kon
 
 Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte aus:
 
-1. Go to the Web Console Admin by pointing your browser to `http://localhost:4502/system/console/configMgr/`
+1. Gehen Sie zum Web-Konsolenadministrator, indem Sie Ihren Browser auf `http://localhost:4502/system/console/configMgr/` zeigen.
 
-1. Search for an item called **Pages audit Log Purge rule** and click it.
+1. Suchen Sie nach einem Element mit dem Namen **Seitenaudit-Protokollbereinigungsregel** und klicken Sie darauf.
 
    ![chlimage_1-365](assets/chlimage_1-365.png)
 
@@ -55,14 +55,14 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
 
    >[!NOTE]
    >
-   >The content path only applies to children of the `/var/audit/com.day.cq.wcm.core.page` node in the repository.
+   >Der Inhaltspfad gilt nur für untergeordnete Elemente des `/var/audit/com.day.cq.wcm.core.page`-Knotens im Repository.
 
 1. Speichern Sie die Regel.
 1. Die gerade von Ihnen erstellte Regel muss im Vorgangs-Dashboard vorhanden sein, um ausgeführt werden zu können. Gehen Sie hierzu über den AEM-Begrüßungsbildschirm zu **Tools > Vorgänge > Wartung**.
 
 1. Klicken Sie auf die Karte **Wöchentliches Wartungsfenster**.
 
-1. You will find the maintenance task already present under the **AuditLog Maintenance Task** card.
+1. Die bereits vorhandene Aufgabe zur Wartung finden Sie unter der Aufgabe **AuditLog Maintenance**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -70,7 +70,7 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
 
 Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe zur Bereinigung des Prüfprotokolls abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
 
-**Mit AEM 6.4** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das Symbol zum **Anhalten** klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
+**Mit AEM 6.4** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das  **** Stopsymbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe
 
 ## Konfigurieren der DAM-Auditprotokolllöschung {#configure-dam-audit-log-purging}
 
-1. Navigate to the System Console at *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Navigieren Sie zur Systemkonsole unter *https://&lt;server-address>:&lt;server-port>/system/console/configMgr*
 1. Suchen Sie nach **DAM audit Log Purge rule** und klicken Sie auf das Ergebnis.
 1. Konfigurieren Sie im nächsten Fenster Ihre Regel entsprechend: Die Optionen sind:
 
@@ -91,7 +91,7 @@ Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe
 
 ## Konfigurieren der Replizierungs-Auditprotokolllöschung  {#configure-replication-audit-log-purging}
 
-1. Navigate to the System Console at *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Navigieren Sie zur Systemkonsole unter *https://&lt;server-address>:&lt;server-port>/system/console/configMgr*
 1. Suchen Sie nach **Replication audit Log Purge Scheduler** und klicken Sie auf das Ergebnis.
 1. Konfigurieren Sie im nächsten Fenster Ihre Regel entsprechend: Die Optionen sind:
 
