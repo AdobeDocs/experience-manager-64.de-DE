@@ -26,7 +26,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Wenn Sie AEM nicht als Quelle für Ihr Content-Management verwenden, lesen Sie die [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Wenn Sie AEM nicht als Quelle für Ihr Content-Management verwenden, finden Sie weitere Informationen unter [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## AEM-Administrator {#aem-administrator}
 
@@ -34,13 +34,13 @@ ht-degree: 7%
 >
 >**Voraussetzung:**
 >
->Bevor Sie mit dem Einrichten Ihrer Umgebung für AEM Mobile On-demand Services beginnen, lesen Sie das [AEM Mobile Application Dashboard oder das Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Bevor Sie mit dem Einrichten Ihrer Umgebung für AEM Mobile On-demand Services beginnen, lesen Sie [AEM Mobile Application Dashboard oder das Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Ein ***AEM Administrator*** ist dafür verantwortlich, dem AEM Mobile-Katalog eine neue Anwendung hinzuzufügen, entweder durch Erstellen einer neuen App mit dem Erstellungsassistenten oder durch Importieren einer vorhandenen Anwendung. AEM Administratoren, die eine neue App mit dem *Erstellungsassistenten* von AEM Mobile erstellen, wählen in der Regel eine der gewünschten App-Vorlagen entweder aus unseren vordefinierten Referenzbeispielen oder (in den meisten Fällen) aus einer benutzerdefinierten App-Vorlage, die von *AEM Entwicklern erstellt wurde.*
+Ein ***AEM Administrator*** ist dafür verantwortlich, dem AEM Mobile-Katalog eine neue Anwendung hinzuzufügen, entweder durch Erstellen einer neuen App mit dem Erstellungsassistenten oder durch Importieren einer vorhandenen Anwendung. AEM Administratoren, die eine neue App mit dem AEM Mobile *Erstellungsassistenten* erstellen, wählen in der Regel eine der gewünschten App-Vorlagen aus unseren vordefinierten Referenzbeispielen oder (in den meisten Fällen) aus einer benutzerdefinierten App-Vorlage, die von *AEM-Entwicklern erstellt wurde.*
 
 >[!NOTE]
 >
->Weitere Informationen zum Einrichten AEM Gruppen und Berechtigungen erhalten Sie, wenn Sie in der Online-Hilfe auf Benutzerrollen [erstellen und Zugriff](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) gewähren klicken.
+>Weitere Informationen zum Einrichten AEM Gruppen und Berechtigungen erhalten Sie, wenn Sie in der Online-Hilfe auf [Erstellen von Benutzerrollen und Zuweisen von Zugriff](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) klicken.
 
 Ein AEM Administrator ist beim Erstellen einer App mit AEM Mobile On-demand Services für die folgenden Aufgaben verantwortlich:
 
