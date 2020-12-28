@@ -45,9 +45,9 @@ Installations-Ausführungsmodi sind vordefiniert:
 
 Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie können beispielsweise:
 
-* define either `author` or `publish`, not both at the same time
+* entweder `author` oder `publish` definieren, nicht beide gleichzeitig
 
-* combine `author` with either `samplecontent` or `nosamplecontent` (but not both)
+* `author` entweder mit `samplecontent` oder `nosamplecontent` kombinieren (aber nicht mit beiden)
 
 >[!CAUTION]
 >
@@ -61,11 +61,11 @@ Sie können auch Ihre eigenen, benutzerdefinierten Ausführungsmodi erstellen. D
 
 * `author` + `development`
 
-* `publish` + `test`
+* `publish` +  `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` + `intranet`
+* `publish` +  `intranet`
 
 * nach Bedarf ...
 
@@ -81,7 +81,7 @@ Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Beispie
 
 Der nosamplecontent-Ausführungsmodus ist für Produktionsinstallationen bestimmt.
 
-## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus {#defining-configuration-properties-for-a-run-mode}
+## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus  {#defining-configuration-properties-for-a-run-mode}
 
 Die Werte der Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, können im Repository gespeichert werden.
 
@@ -109,7 +109,7 @@ Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.
 >
 >Für [Installations-Ausführungsmodi](#installation-run-modes) (z. B. author) kann der Ausführungsmodus nach der Installation nicht mehr geändert werden. Doch Änderungen an einzelnen Konfigurationseigenschaften werden bei einem Neustart wirksam.
 
-## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles  {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
 Zusätzliche Bundles, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner zum Speichern der Pakete verwendet. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
 
@@ -138,13 +138,13 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Hinzufügen die folgenden Eigenschaften; das folgende Beispiel ist für den Autor bestimmt:
+1. hinzufügen die folgenden Eigenschaften; das folgende Beispiel ist für den Autor bestimmt:
 
    `sling.run.modes=author`
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-A custom run mode can be activated by using the `-r` option when launching the quickstart. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus zu starten, für die &quot;dev&quot;festgelegt ist. &quot;
+Ein benutzerdefinierter Ausführungsmodus kann beim Starten des Schnellstarts mit der Option `-r` aktiviert werden. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus zu starten, für die &quot;dev&quot;festgelegt ist. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
