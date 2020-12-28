@@ -31,7 +31,7 @@ Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kr
 
 Bei unseren gebrauchsfertigen Commerce-Integrationen bildet AEM die Ebene für das Kundenerlebnis, auf der Dienste genutzt und Daten zurück an die an Kunden gerichtete Commerce-Plattform übermittelt werden, die in einem Headless-Modus ausgeführt wird.
 
-For some commerce platforms, we store profile information ( `/home/users`) and commerce tokens (to login in the commerce platform) in AEM. Informationen zu diesen Nutzungsszenarien finden Sie unter [Handhabung von DSGVO-bezogenen Anfragen mit der AEM-Plattform](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Bei einigen Commerce-Plattformen speichern wir Profil-Informationen ( `/home/users`) und Commerce-Token (um sich auf der Commerce-Plattform anzumelden) in AEM. Informationen zu diesen Nutzungsszenarien finden Sie unter [Handhabung von DSGVO-bezogenen Anfragen mit der AEM-Plattform](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ![screen_shot_2018-03-22at11621](assets/screen_shot_2018-03-22at111621.jpg)
 
