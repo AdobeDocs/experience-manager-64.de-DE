@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte bei der Entwicklung von AEM-Websites – WKND-Tutorial
-seo-title: Erste Schritte bei der Entwicklung von AEM-Websites – WKND-Tutorial
+title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
+seo-title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
 description: Steigen Sie gerade in die Entwicklung mit AEM ein? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! In diesem mehrteiligen Tutorial lernen Entwickler, die gerade mit AEM beginnen, wie sie eine Website in AEM mit den neuesten Standards und Technologien implementieren.
 seo-description: Steigen Sie gerade in die Entwicklung mit AEM ein? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! In diesem mehrteiligen Tutorial lernen Entwickler, die gerade mit AEM beginnen, wie sie eine Website in AEM mit den neuesten Standards und Technologien implementieren.
 uuid: 42db7bc5-5818-40e4-83b4-0cafc1acac42
@@ -18,9 +18,9 @@ ht-degree: 84%
 ---
 
 
-# Erste Schritte bei der Entwicklung von AEM-Websites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Steigen Sie gerade in die Entwicklung mit AEM ein? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig!
 
@@ -28,7 +28,7 @@ In diesem mehrteiligen Tutorial lernen Entwickler, die gerade mit AEM beginnen, 
 
 ## WKND-Entwickler-Tutorial {#wknd-developer-tutorial}
 
-Das Tutorial steht [hier](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) zur Verfügung oder klicken Sie auf das folgende Bild.
+Das Tutorial steht [hier](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) zur Verfügung oder klicken Sie auf das folgende Bild.
 
 [![Bild klicken](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -39,11 +39,11 @@ Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von
 * [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html)
 * [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch-optimierte Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
 * [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
 
 Wir empfehlen Ihnen, das Tutorial durchzugehen, bevor Sie sich mit diesen Konzepten ausführlicher beschäftigen.
 
 ## Nächste Schritte {#next-steps}
 
-Once you have completed the [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), consider reviewing the document [AEM Core Concepts](/help/sites-developing/the-basics.md) to get a better understanding of some of the underlying technologies and development paradigms of AEM.
+Wenn Sie das [Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) abgeschlossen haben, sollten Sie das Dokument [AEM Kernkonzepte](/help/sites-developing/the-basics.md) überprüfen, um ein besseres Verständnis einiger der zugrunde liegenden Technologien und Entwicklungsparadigmen von AEM zu erhalten.
