@@ -26,12 +26,12 @@ Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Ä
 
 >[!NOTE]
 >
->The theory behind launches is described in detail under [Launches](/help/sites-authoring/launches.md) in the standard authoring documentation.
+>Die Theorie hinter Startvorgängen wird in der Standarddokumentation zur Inhaltserstellung unter [Launches](/help/sites-authoring/launches.md) ausführlich beschrieben.
 >
->Information specific to using launches in the classic UI can be found in the following documentation together with [Creating Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md), and [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Spezifische Informationen zur Verwendung von Launches in der klassischen Benutzeroberfläche finden Sie in der folgenden Dokumentation zusammen mit [Erstellen von Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md) und [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Mehrere Quellseiten für einen Launch sind in der klassischen Benutzeroberfläche nicht möglich.
 
-The Launches console can be directly accessed with [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+Die Startkonsole kann direkt mit [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html) aufgerufen werden.
