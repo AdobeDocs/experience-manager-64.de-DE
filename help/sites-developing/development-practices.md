@@ -47,7 +47,7 @@ Entwickler sollten TDD praktizieren und fehlschlagende Einheitstests vor dem Pro
 
 Es gibt benutzerdefinierte Frameworks, z. B. Jackalope und Prosper, um die Imitation von JCR-APIs zu vereinfachen und so die Produktivität der Entwickler beim Schreiben von Einheitstests zu gewährleisten.
 
-### Immer bereit für Demos sein {#stay-demo-ready}
+### Immer bereit für Demos sein  {#stay-demo-ready}
 
 Das System sollte am Ende jeder Iteration für Demos im Unternehmen zur Verfügung stehen. Indem das System immer bereit für Demos gehalten wird, ist das Team immer nur eine Iteration von Produktionsbereitschaft entfernt und technische Rückstände werden auf ein vertretbares Maß beschränkt.
 
