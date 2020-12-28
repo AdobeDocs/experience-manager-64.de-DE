@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3f592c5a-4e59-436e-b67b-3ed575c6afc3
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Dieser Abschnitt enthält die wichtigsten Punkte zu AEM 6.4 Forms. Eine detaill
 * Möglichkeit, Elemente des Formulardatenmodells in Dokumentfragmenten zu verwenden
 * Kompatibilitätspaket zur Unterstützung des Upgrades von Kunden mit Briefen und Datenwörterbüchern
 
-## Verbesserungen bei der Datenintegration {#data-integration-enhancements}
+## Verbesserungen bei der Datenintegration  {#data-integration-enhancements}
 
 * Möglichkeit zur Erstellung von Formulardatenmodellen ohne Datenquelle
 * Späteres Binden von Datenquellen an das Formulardatenmodell, um die Abhängigkeit von Datenquellen von Formularen und interaktiven Kommunikationsautoren zu vermeiden
@@ -43,7 +46,7 @@ Dieser Abschnitt enthält die wichtigsten Punkte zu AEM 6.4 Forms. Eine detaill
 * Aktualisierung der Datenquellendefinitionen des Formulardatenmodells, um Änderungen an der Back-End-Datenquelle widerzuspiegeln
 * Nutzung der Touch-optimierten Benutzeroberfläche für die Datenquellenkonfiguration
 
-## Modernisierung von Workflows und Unterstützung mobiler Arbeitskräfte {#workflow-modernization-and-mobile-worker-support}
+## Modernisierung von Workflows und Unterstützung mobiler Arbeitskräfte  {#workflow-modernization-and-mobile-worker-support}
 
 * Touch-optimierte Benutzeroberfläche zum Entwerfen von Workflow-Modellen
 * Möglichkeit, Formulardatenmodell-Vorgänge über den Workflow-Schritt aufzurufen
@@ -51,11 +54,11 @@ Dieser Abschnitt enthält die wichtigsten Punkte zu AEM 6.4 Forms. Eine detaill
 * Unterstützung für adaptive Formulare mit Formulardatenmodell in der AEM Forms-App
 * Verwendung adaptiver Formulare mit Lazy-Loading-Fragmenten in der AEM Forms-App
 
-## Erweiterte Unterstützung für Lazy-Loading-Fragmente {#enhanced-support-of-lazy-loading-fragments}
+## Erweiterte Unterstützung für Lazy-Loading-Fragmente  {#enhanced-support-of-lazy-loading-fragments}
 
 * In Lazy-Loading-Formularfragmente können Dateianhang- und AGB-Komponenten verwendet werden
 * Unterstützung für adaptive Lazy-Loading-Formularfragmente in wiederholbaren Fenstern
 
-## Einfaches Upgrade von LiveCycle auf Experience Manager Forms 6.4 {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
+## Einfaches Upgrade von LiveCycle auf Experience Manager Forms 6.4  {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
 
 * Direktes Aktualisieren von LiveCycle ES4 auf Experience Manager Forms 6.4
