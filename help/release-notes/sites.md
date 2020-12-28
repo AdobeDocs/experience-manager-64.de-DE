@@ -33,7 +33,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Möglichkeit zum Deaktivieren von Tastaturbefehlen (diese können unter „Voreinstellungen“ aktiviert bzw. deaktiviert werden).
 * Keine weitere Anzeige von Zeitstempeln in der gesamten Benutzeroberfläche nach sieben Tagen (als Standardeinstellung in den Voreinstellungen festgelegt).
 
-### Seiten-Editor {#page-editor}
+### Seiteneditor {#page-editor}
 
 * Aktualisierte Geräteliste für eine responsive Site-Vorschau – umfasst nun auch Apple iPhone 8, 8 Plus und X und Samsung S7
 * Der Standardspeicherort für Vorlagendesigninformationen wurde aus „/etc/design“ entfernt, um die spezifischen Einstellungen in „/conf“ zu unterstützen. Kunden, die ein Upgrade von früheren AEM-Versionen durchführen, können weiterhin „/etc/design“ verwenden.
@@ -60,7 +60,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 >
 >AEM enthält Version 1.12.4 der jQuery-Bibliothek, um eine maximale Kompatibilität mit vorhandenem benutzerdefiniertem Code zu gewährleisten. Adobe hat Änderungen vorgenommen, um bekannte Sicherheitsprobleme zu beheben.
 
-### Inhaltsfragmente und Editor {#content-fragments-amp-editor}
+### Inhaltsfragmente und Editor  {#content-fragments-amp-editor}
 
 * Strukturierte Inhaltsmodelle als Grundlage für Inhaltsfragmente eingeführt
 
@@ -89,7 +89,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Einmalige Anmeldung für soziale Netzwerke hinzugefügt, wenn Erlebnisfragmente nach Pinterest oder Facebook exportiert werden.
 * AEM-Erlebnisfragmente mit Adobe Target integriert. Durch das Synchronisieren von Erlebnisfragmenten mit Target werden Angebote in Adobe Target erstellt, die mit dem Visual Experience Composer von Target verwendet werden können, um sie in jedes für Target aktivierte Erlebnis zu integrieren.
 
-### Übersetzung {#translation}
+### Übersetzung  {#translation}
 
 * Verbesserte Benutzerfreundlichkeit von AEM-Übersetzungsprojekten:
 
@@ -104,7 +104,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Updates für intelligente Übersetzungen erkennen jetzt neue Seiten, die zu einer Übergeordnet-Verzweigung hinzugefügt wurden.
 * Übersetzungsstatusberichte in der Sites-Admin-Listenansicht eingeführt.
 
-### Verwaltung mehrerer Websites {#multi-site-management-msm}
+### Verwaltung mehrerer Websites  {#multi-site-management-msm}
 
 * Verbesserte Skalierbarkeit der Verwaltung mehrerer Websites durch Verwendung eines Oak-basierten Index statt des speicherinternen Index (LiveCopyIndex)
 
@@ -119,22 +119,22 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Unterstützungsordner zum Organisieren von Segmenten je nach Site/Kontext (CQ-94620)
 * Der standardmäßige Speicherort für Segmente wurde in „/conf“ verschoben, um standort- bzw. kontextspezifische Segmentlisten zu erhalten.
 
-### AEM und Adobe Target  {#aem-amp-adobe-target-nbsp}
+### AEM und Adobe Target   {#aem-amp-adobe-target-nbsp}
 
 * AEM-Erlebnisfragmente mit Adobe Target integriert. Durch das Synchronisieren von Erlebnisfragmenten mit Target werden Angebote in Adobe Target erstellt, die mit dem Visual Experience Composer von Target verwendet werden können, um sie in jedes für Target aktivierte Erlebnis zu integrieren.
 * Adobe Target mbox.js Version 63 ist jetzt enthalten. Adobe empfiehlt, die Implementierung auf „at.js“ umzustellen.
-* „at.js“ Version 1.2.2 ist nun integriert. Adobe recommends to use either Dynamic Tag Management (DTM) or [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) to provision at.js into the site.
+* „at.js“ Version 1.2.2 ist nun integriert. Adobe empfiehlt, entweder das dynamische Tag-Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) zu verwenden, um at.js für die Site bereitzustellen.
 
 ### AEM und Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5 jetzt enthalten. Adobe empfiehlt den Umstieg auf AppMeasurement.js
-* AppMeasurement.js 1.8.0 ist jetzt enthalten. Adobe recommends to use either Dynamic Tag Management (DTM) or [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) to provision AppMeasurement.js into the site.
+* AppMeasurement.js 1.8.0 ist jetzt enthalten. Adobe empfiehlt, entweder das dynamische Tag-Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) zu verwenden, um AppMeasurement.js auf der Site bereitzustellen.
 
 ## Communities-Add-on {#communities-add-on}
 
 Weitere Informationen hierzu finden Sie auf der [Seite mit Versionshinweisen für AEM Communities](/help/release-notes/communities-release-notes.md).
 
-## Screens-Add-on {#screens-add-on}
+## Screens-Add-on  {#screens-add-on}
 
 * Unterstützung für Screens-Player zur Verbindung mit AEM-Veröffentlichungsservern für Befehle und Steuerungen sowie den Download von Kanälen hinzugefügt (anstelle eines direkten Downloads in die Autoreninstanz von AEM).
 * Möglichkeit zum Gruppieren von Kanalzuweisungen in Zeitplänen hinzugefügt.
