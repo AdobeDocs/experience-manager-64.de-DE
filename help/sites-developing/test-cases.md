@@ -22,7 +22,7 @@ ht-degree: 77%
 
 Ihre Testfälle sollten auf Folgendem basieren:
 
-**Nutzungsszenarien**
+**Anwendungsfälle**
 
 * Diese definieren die erforderliche Funktionalität in Bezug auf die Interaktion zwischen Akteuren (Rollen, die bestimmte Aktionen auslösen) und dem System.
 * Die Nutzungsszenarios sollten vom Kunden definiert werden.
@@ -49,17 +49,18 @@ Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, dahe
 * Nur tatsächlich praktikabel für große Projekte.
 * Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Freigabeplan generiert werden.
 
-## Testen spezifischer Aspekte {#testing-specific-aspects}
+## Testen bestimmter Aspekte {#testing-specific-aspects}
 
 Beim Testen AEM einige spezifische Details von besonderem Interesse sind:
 
 Autor- und Veröffentlichungsumgebung
 
-Although, covered in [Environments](/help/sites-developing/the-basics.md#environments) it is worth highlighting a deciding factor of AEM with regard to testing.
+Obwohl in [Umgebung](/help/sites-developing/the-basics.md#environments) behandelt, lohnt es sich, einen entscheidenden Faktor für AEM in Bezug auf Tests hervorzuheben.
 
 Sie müssen AEM als zwei Anwendungen betrachten:
 
-* die **Authoring** -UmgebungDiese Instanz ermöglicht Autoren die Eingabe und Veröffentlichung von Inhalten.
+* die Umgebung **Autor**
+Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
 Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
 * die **Veröffentlichungsumgebung**
 Diese Instanz stellt die Website in veröffentlichter Form dar, auf die Besucher zugreifen können.
@@ -89,9 +90,11 @@ Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in vers
 
 * **Genauigkeit**; stellen Sie sicher, dass Inhaltsaktualisierungen vom Besucher der Website gesehen werden.
 * **Kontinuität**; stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
-* **Cluster** -Cluster werden verwendet, um Folgendes bereitzustellen:
-   * **Failover** Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
-   * **Performance**-Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
+* **** ClusterCluster werden verwendet, um Folgendes bereitzustellen:
+   * ****
+FailoverWenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
+   * **Der**
+PerformanceLoad-Balancing mit vollständigem Failover erhöht die Leistung eines Clusters.
 
 Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werden, um den korrekten Ablauf der Konfiguration zu bestätigen.
 
