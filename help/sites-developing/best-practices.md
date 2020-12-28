@@ -73,7 +73,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
    <td>Beschreibt, wie Sie die Seiteninhaltserstellung für die Touch-optimierte Benutzeroberfläche erweitern.</td> 
   </tr>
   <tr>
-   <td>Workflows  </td> 
+   <td>Workflows</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Entwickeln und Erweitern von Workflows</a></td> 
    <td><p>Mit Workflows können Sie Adobe Experience Manager (AEM)-Aktivitäten automatisieren und einen größeren Umfang der Verarbeitung repräsentieren, die in einer AEM-Umgebung stattfindet. Daher empfiehlt es sich, die Workflow-Implementierungen sorgfältig zu planen.</p> </td> 
   </tr>
@@ -82,13 +82,13 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) vereinfacht die Gründung und Verwaltung von Kommunen vor Ort.
+[AEM ](/help/communities/overview.md) Community vereinfacht die Gründung und Verwaltung von lokalen Gemeinschaften.
 
 Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung flexibler, portabler Codes für das [Social-Komponenten-Framework](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablen Code für das [Framework für soziale Komponenten](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Communities-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungstool. |
 
 ## Tools/HTL {#tooling-htl}
