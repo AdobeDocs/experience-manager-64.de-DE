@@ -41,7 +41,7 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| parallel | [Gleichzeitig](#concurrent) (öffentlich) |
+| parallel | [Concurrent](#concurrent)  (Öffentliche Domäne) |
 | geronimo-Aktivierung_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -98,7 +98,7 @@ In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken 
   </tr> 
   <tr> 
    <td>concurrent-1.3.4.jar</td> 
-   <td><a href="#concurrent">Concurrent</a></td> 
+   <td><a href="#concurrent">Gleichzeitig</a></td> 
   </tr> 
   <tr> 
    <td>derby-10.1.2.1.jar</td> 
