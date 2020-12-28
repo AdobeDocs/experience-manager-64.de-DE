@@ -25,7 +25,7 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
 * **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, zeigt Ihnen 
-**Schaltflächen &quot;Kopieren**&quot;, &quot; **Ausschneiden**&quot;, &quot; **Einfügen**&quot;und &quot; **Löschen** &quot;für die Verwendung mit den Absatzkomponenten auf dieser Seite:
+**Kopieren**,  **Ausschneiden**,  **Einfügen** und  **** Löschen für die Verwendung mit den Absatzkomponenten auf dieser Seite:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
@@ -34,7 +34,8 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 * **Identität annehmen als**
 Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
-* **Sprache** Die für die Benutzeroberfläche der Authoring-Umgebung zu verwendende Sprache. Wählen Sie in der verfügbaren Liste die gewünschte Sprache aus.
+* ****
+SpracheDie für die Benutzeroberfläche der Authoring-Umgebung zu verwendende Sprache. Wählen Sie in der verfügbaren Liste die gewünschte Sprache aus.
 
 * **Fensterverwaltung**
 Wählen Sie entweder:
@@ -47,7 +48,7 @@ Wählen Sie entweder:
 Über das Benutzersymbol haben Sie Zugang zu den folgenden Optionen:
 
 * Abmelden
-* [Stellvertretend agieren](/help/sites-administering/security.md#impersonating-another-user)
+* [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user)
 * [Benutzereinstellungen](#user-preferences)
 * [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
