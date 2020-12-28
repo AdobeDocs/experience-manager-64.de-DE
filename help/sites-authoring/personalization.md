@@ -28,7 +28,7 @@ AEM stellt eine Reihe von Werkzeugen zur Bearbeitung von Inhalten für eine best
 
 [Verfassen Sie zielgerichtete Inhalte](/help/sites-authoring/content-targeting-touch.md) im Targeting-Modus von AEM. Der Targeting-Modus und die Targeting-Komponente sind wichtige Werkzeuge für die Erstellung von Erlebnisinhalten für Ihre Marketingaktivitäten.
 
-## Aktivitäten  {#activities}
+## Aktivitäten   {#activities}
 
 Mit Aktivitäten lassen sich Ihre Marketingprojekte definieren und organisieren. Teil der Aktivitäten sind die gewünschten Zielgruppen sowie der Zeitraum, in dem das Targeting durchgeführt wird.
 
@@ -48,7 +48,7 @@ Mit einer Aktivität können beispielsweise Erlebnisse für zwei verschiedene Zi
 
 Die Erlebnisse der Aktivitäten werden von Ihnen festgelegt. Sie können hierzu die [Aktivitätskonsole](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) oder den [Targeting-Modus](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) verwenden und Aktivitäten Erlebnisse hinzufügen.
 
-## Angebote   {#offers}
+## Angebote    {#offers}
 
 Angebote sind Inhalte, die an einem Ort auf einer Seite angezeigt werden, die für ein Erlebnis festgelegt wurde. Verwenden Sie für verschiedene Erlebnisse verschiedene Angebote, um Inhalte optimal auf Ihre Zielgruppen zuzuschneiden.
 
@@ -56,7 +56,7 @@ Beispielsweise kann auf der Website &quot;We.Retail&quot;die Seite &quot;Damen&q
 
 Mit der [Angebotskonsole](/help/sites-authoring/offerlib.md) lassen sich Angebote erstellen, die für mehrere Erlebnisse eingesetzt werden sollen. Erstellen Sie Einmal-Angebote oder fügen Sie Angebote aus einer Angebotsbibliothek hinzu, wenn Sie [zielgerichtete Inhalte erstellen](/help/sites-authoring/content-targeting-touch.md).
 
-## Targeting-Engine   {#targeting-engine}
+## Targeting-Engine    {#targeting-engine}
 
 Die Targeting-Engine ist der Mechanismus, der die Logik hinter zielgerichteten Inhalten darstellt. [Aktivitäten](/help/sites-authoring/activitylib.md) sind so konfiguriert, dass eine von zwei verfügbaren Targeting-Engines verwendet wird: AEM oder Adobe Target.
 
@@ -71,4 +71,4 @@ Mit der Adobe Target-Targeting-Engine werden von Seitenbesuchen gesammelte Info
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren und die die Zielgruppen Ihrer Erlebnisse bestimmen.
 * Aktivitäten, die mit der Adobe Target-Engine bereitgestellt werden, werden [mit Target synchronisiert](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).
+Sie können diese Engine verwenden, wenn [in Adobe Target](/help/sites-administering/opt-in.md) integriert ist.
