@@ -28,7 +28,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Klicken Sie auf **Neu ...**
-1. You can specify the **Title**, **Name** and type of experience to be created; in this case, Test&amp;Target Offer.
+1. Sie können die Variablen **Title**, **Name** und den Typ des zu erstellenden Erlebnisses angeben. in diesem Fall Test&amp;Zielgruppe Angebot.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -40,4 +40,4 @@ ht-degree: 71%
 
 ## Integrieren mit Adobe Target {#integrating-with-adobe-target}
 
-See [Integrate with Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) for full details.
+Ausführliche Informationen finden Sie unter [In Adobe integrieren](/help/sites-administering/target.md) [Zielgruppe](/help/sites-administering/target.md).
