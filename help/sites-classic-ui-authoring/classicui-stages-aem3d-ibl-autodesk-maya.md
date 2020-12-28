@@ -26,11 +26,11 @@ ht-degree: 85%
 1. Richten Sie eine bildbasierte Beleuchtung ein.
 
    1. Wählen Sie in den Rendereinstellungen die Option **[!UICONTROL Render Using: mental ray]** und öffnen Sie die Registerkarte „Scene“.****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
+   1. Öffnen Sie das Akkordeon **[!UICONTROL Umgebung]** und klicken Sie dann auf **[!UICONTROL Bildbasierte Beleuchtung erstellen]**.
    1. Klicken Sie auf das Feldsymbol mit dem rechten Pfeil auf der linken Seite des Feldes und wählen Sie den IBL-Knoten `mentalRayIblShape1`[!UICONTROL . Beenden Sie dann die Rendereinstellungen].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. Wählen Sie im **[!UICONTROL Attribut-Editor]** den Transformationsknoten `mentalRayIbl1` und benennen Sie dann den Transformationsknoten in `AdobeIbl` um.
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. Stellen Sie die Node [!UICONTROL Skalierung] so ein, dass die Umgebung-Kugel deutlich größer ist als das größte 3D-Objekt, das mit dieser Phase angezeigt werden soll (z. B. `10000,10000,10000`).
    1. Wählen Sie den Knoten `AdobeIblShape` aus und konfigurieren Sie ihn wie folgt:
 
       * **[!UICONTROL Mapping]** – Spherical
@@ -50,17 +50,17 @@ ht-degree: 85%
 
 1. Richten Sie das Rendern mit Mental Ray ein.
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   Konfigurieren Sie die [!UICONTROL Rendereinstellungen] mit den folgenden Vorschlägen.
 
-   * **[!UICONTROL Häufige]** Registerkarte
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Alpha-Kanal (maske)]** für alle renderbaren Kameras.
 
    * **[!UICONTROL Registerkarte „Quality“]**
 
       * **[!UICONTROL Overall quality]** – `0.5` oder weniger
-      * **[!UICONTROL Indirekter Diffuse-Modus]** - `Final Gather`
-      * **[!UICONTROL Filtergröße]** - `2.0`, `2.0`
+      * **[!UICONTROL Indirekter Diffuse-Modus]**  -  `Final Gather`
+      * **[!UICONTROL Filtergröße]** -  `2.0`,  `2.0`
    * Rendern Sie die Szene mit den typischen Bildgrößen, die Sie gewohnt sind. Verfeinern Sie gegebenenfalls die Licht- und/oder Rendereinstellung, um die gewünschten Ergebnisse zu erzielen.
 
       Beachten Sie, dass das Rendern mit Mental Ray und bildbasierter Beleuchtung sehr langsam und rechenintensiv ist. Adobe empfiehlt die Einrichtung der niedrigsten Qualitätseinstellungen, mit denen noch die gewünschte Renderqualität erzielt werden kann.
@@ -72,7 +72,7 @@ ht-degree: 85%
 
 1. Laden Sie die Szene und das IBL-PTIFF-Bild in AEM hoch und warten Sie, bis der Ladevorgang abgeschlossen ist.
 
-   Siehe [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
 1. Lösen Sie eventuelle Dateiabhängigkeiten auf.
 
