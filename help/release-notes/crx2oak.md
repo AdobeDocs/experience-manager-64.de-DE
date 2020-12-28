@@ -22,7 +22,7 @@ ht-degree: 66%
 
 ## Liste der Änderungen und Fehlerbehebungen {#list-of-changes-and-fixes}
 
-### 1.8.6 (June 2018) {#june}
+### 1.8.6 (Juni 2018) {#june}
 
 * OAK-7339 Korrigieren Sie alle mit UnsupportedOperationException umgebrochenen Nebenabstände bei MissingBlobStore durch Einführung von LoopbackBlobStore
 * Oak 1.8.4 verwenden
