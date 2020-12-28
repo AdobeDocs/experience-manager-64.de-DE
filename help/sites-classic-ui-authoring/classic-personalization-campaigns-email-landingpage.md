@@ -32,7 +32,7 @@ Gehen Sie folgendermaßen vor, um eine effektive Startseite zu erstellen:
 >[!NOTE]
 >
 >Die Adobe plant nicht, diese Funktion weiter zu verbessern (Verwaltung von Interessenten und Listen).\
->Es wird empfohlen, [Adobe Campaign und seine AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird empfohlen, [Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md) zu nutzen.
 
 ## Erstellen einer Liste für einen Newsletter {#creating-a-list-for-the-newsletter}
 
