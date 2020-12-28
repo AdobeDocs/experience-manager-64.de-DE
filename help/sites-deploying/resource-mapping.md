@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -24,8 +24,8 @@ Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und vir
 
 Diese Zuordnungen können Sie beispielsweise folgendermaßen verwenden:
 
-* Prefix all requests with `/content` so that the internal structure is hidden from the visitors to your website.
-* Define a redirect so that all requests to the `/content/en/gateway` page of your website are redirected to `https://gbiv.com/`.
+* Präfix aller Anforderungen mit `/content`, damit die interne Struktur von den Besuchern Ihrer Website ausgeblendet wird.
+* Definieren Sie eine Umleitung, damit alle Anforderungen an die `/content/en/gateway`-Seite Ihrer Website an `https://gbiv.com/` umgeleitet werden.
 
 Bei einer möglichen HTTP-Zuordnung wird [allen Anforderungen an localhost:4503 das Präfix /content](#configuring-an-internal-redirect-to-content) vorangestellt. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
 
@@ -35,7 +35,7 @@ mithilfe von:
 
 `localhost:4503/geometrixx/en/products.html`
 
-da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.html`.
+da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.html` hinzufügt.
 
 >[!CAUTION]
 >
@@ -49,11 +49,11 @@ da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.
 
 Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
-These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<host>:<port>/system/console/jcrresolver`:
+Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel:`https://<host>:<port>/system/console/jcrresolver`
 
 * Konfiguration
 
-   Shows the current configuration (as defined for the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md).
+   Zeigt die aktuelle Konfiguration an (wie für den Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md) definiert).[
 
 * Konfigurationstest
 
@@ -87,7 +87,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->There are many resources available that help explain how to define regular expressions; for example [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es stehen viele Ressourcen zur Verfügung, die erklären, wie reguläre Ausdrücke definiert werden können. zum Beispiel [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ## Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
@@ -95,13 +95,13 @@ Eine Standardinstallation von AEM umfasst folgenden Ordner:
 
 `/etc/map/http`
 
-Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Other folders ( `sling:Folder`) can be created under `/etc/map` for any other protocols that you want to map.
+Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Andere Ordner ( `sling:Folder`) können für alle anderen Protokolle, die Sie zuordnen möchten, unter `/etc/map` erstellt werden.
 
 ### Konfigurieren einer internen Umleitung an „/content“{#configuring-an-internal-redirect-to-content}
 
-To create the mapping that prefixes any request to http://localhost:4503/ with `/content`:
+So erstellen Sie die Zuordnung, die jeder Anforderung an http://localhost:4503/ mit `/content` vorangestellt wird:
 
-1. Using CRXDE navigate to `/etc/map/http`.
+1. Navigieren Sie mit CRXDE zu `/etc/map/http`.
 
 1. Erstellen Sie einen neuen Knoten:
 
@@ -138,5 +138,5 @@ wurden beantragt.
 
 >[!NOTE]
 >
->You can use `/etc/map.publish` to hold the configurations for the publish environment. These must then be replicated, and the new location ( `/etc/map.publish`) configured for the **Mapping Location** of the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) of the publish environment.
+>Sie können `/etc/map.publish` verwenden, um die Konfigurationen für die Veröffentlichungs-Umgebung aufzunehmen. Diese müssen dann repliziert werden, und der neue Speicherort ( `/etc/map.publish`) muss für den **Zuordnungsort** des [Apache Sling-Ressourcen-Resolvers](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungs-Umgebung konfiguriert sein.
 
