@@ -62,7 +62,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td>DAM – Konsistenzprüfer<br /> </td> 
    <td> </td> 
-   <td>Compares <code>/var/dam</code> and <code>/content/dam</code> and checks for<br /> any inconsistencies. Alle aufgeführten Dateien/Ordner können dann synchronisiert oder gelöscht werden. Die Knotentypen für den Ordnervergleich können Sie über die Web-Konsole konfigurieren.</td> 
+   <td>Vergleicht <code>/var/dam</code> und <code>/content/dam</code> und sucht nach Inkonsistenzen. <br /> Alle aufgeführten Dateien/Ordner können dann synchronisiert oder gelöscht werden. Die Knotentypen für den Ordnervergleich können Sie über die Web-Konsole konfigurieren.</td> 
   </tr> 
   <tr> 
    <td>DAM – Adobe InDesign<br /> </td> 
@@ -155,7 +155,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Ermöglicht Ihnen die Konfiguration der E-Mails, die Benutzer automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen und ein zurückgesetztes Kennwort bestätigen müssen</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentierung</a></td> 
+   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentierung </a></td> 
    <td> </td> 
    <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung unterstützt Sie durch die Analyse und Charakterisierung der Benutzerdetails dabei.<br /> </td> 
   </tr> 
@@ -197,7 +197,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
  </tbody> 
 </table>
 
-## Tools – Touch-optimierte Benutzeroberfläche {#tools-touch-optimized-ui}
+## Tools – Touch-optimierte Benutzeroberfläche  {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -253,7 +253,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/workflows.md">Workflows  </a></td> 
+   <td><a href="/help/sites-administering/workflows.md">Workflows</a></td> 
    <td>Workflows modellieren und verwalten.</td> 
   </tr> 
   <tr> 
