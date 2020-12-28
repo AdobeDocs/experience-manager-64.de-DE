@@ -24,7 +24,7 @@ ht-degree: 99%
 
 Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen. Er stellt Differenzierungsmechanismen bereit für:
 
-* **[Überlagerungen](/help/sites-developing/overlays.md)**von Ressourcen unter Verwendung der[konfigurierten Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Überlagerungen](/help/sites-developing/overlays.md)** von Ressourcen unter Verwendung der [konfigurierten Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Überschreibungen** von Komponentendialogfeldern für die Touch-optimierte Benutzeroberfläche (`cq:dialog`) unter Verwendung der Ressourcentyphierarchie (anhand der Eigenschaft `sling:resourceSuperType`).
 
@@ -63,7 +63,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
    >
    >
 1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
@@ -92,7 +92,7 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
    Der Platzhalter `*` blendet alles aus.
 
-* `sling:orderBefore` ( `String`)
+* `sling:orderBefore` (  `String`)
 
    Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
