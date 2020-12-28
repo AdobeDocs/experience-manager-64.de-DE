@@ -23,7 +23,7 @@ ht-degree: 94%
 >[!NOTE]
 >
 >Adobe plant nicht, die offenen/abgeschnittenen E-Mails, die vom AEM SMTP-Dienst gesendet werden, weiter zu verbessern.\
->Es wird empfohlen, Adobe Campaign und seine AEM [zu nutzen](/help/sites-administering/campaign.md).
+>Die Empfehlung lautet: [Leverage-Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md).
 
 E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue für die Newsletter spezifische Inhalte hinzufügen.
 
@@ -146,7 +146,7 @@ So personalisieren Sie einen Newsletter und simulieren das Erscheinungsbild:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `http://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -229,7 +229,7 @@ Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Lis
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `http://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -263,7 +263,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
    >
    >Stellen Sie sicher, dass Sie einer der Empfänger sind, um auf diese Weise sicherzustellen, dass der Newsletter versandt wurde.
 
-### Senden von Newslettern aus einer Liste heraus {#sending-newsletters-from-a-list}
+### Senden von Newslettern aus einer Liste heraus  {#sending-newsletters-from-a-list}
 
 So versenden Sie einen Newsletter aus einer Liste:
 
@@ -293,7 +293,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Newsletter abonnieren können.
 
-### Abonnieren von Newslettern {#subscribing-to-a-newsletter-1}
+### Abonnieren von Newslettern  {#subscribing-to-a-newsletter-1}
 
 Gehen Sie folgendermaßen vor, um einen Newsletter zu abonnieren (als Beispiel wird die Geometrixx-Website verwendet):
 
