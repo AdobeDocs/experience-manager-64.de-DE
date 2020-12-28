@@ -1,6 +1,6 @@
 ---
-title: Integrieren mit Adobe Analytics
-seo-title: Integrieren mit Adobe Analytics
+title: Integration mit Adobe Analytics
+seo-title: Integration mit Adobe Analytics
 description: Hier erfahren Sie, wie Sie AEM mit Adobe Analytics integrieren.
 seo-description: Hier erfahren Sie, wie Sie AEM mit Adobe Analytics integrieren.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
@@ -18,7 +18,7 @@ ht-degree: 94%
 ---
 
 
-# Integrieren mit Adobe Analytics{#integrating-with-adobe-analytics}
+# Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
 
 Die Integration von Adobe Analytics und AEM ermöglicht es Ihnen, Webseitenaktivität zu erfassen:
 
@@ -35,7 +35,7 @@ Die Daten umfassen Seiten- und Benutzerdaten, z. B.:
 Die folgenden Seiten helfen Ihnen beim Konfigurieren der Integration:
 
 * [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](/help/sites-administering/adobeanalytics-connect.md)
-* [Konfigurieren der Link-Überwachung für Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Konfigurieren des Linktrackings für Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Zuordnen von Komponentendaten mit Adobe Analytics-Eigenschaften](/help/sites-administering/adobeanalytics-mapping.md)
 * [Konfigurieren von Videotracking für Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
@@ -57,11 +57,11 @@ Siehe:
 >Wenn Sie Adobe Analytics mit einer benutzerdefinierten Proxykonfiguration verwenden, müssen Sie zwei OSGi-Pakete[ (z. B. mit der Web Console) ](/help/sites-deploying/configuring-osgi.md)konfigurieren, die für die **Apache HTTP Client**-Proxykonfigurationen erforderlich sind. Beide sind erforderlich, da einige Funktionen von AEM die 3.x-APIs verwenden, während andere die 4.x-APIs verwenden. Konfigurieren:
 >
 >* **Day Commons HTTP Client 3.1** zum Konfigurieren der 3.x-API;\
-   >  for example, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+   >  zum Beispiel [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
 * **Apache HTTP Components Proxy Configuration** zum Konfigurieren der 4.x-API;
 >
 >  
-for example, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+zum Beispiel [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
