@@ -31,7 +31,7 @@ In diesem Abschnitt werden Themen zur Entwicklung von Komponenten zur Verwendung
 
 ## Aktivieren von Targeting mit Adobe Target auf Ihren Seiten {#enabling-targeting-with-adobe-target-on-your-pages}
 
-To use targeted components in your pages that interact with Adobe Target, include specific client-side code in the `<head>` element.
+Um zielgerichtete Komponenten auf Ihren Seiten zu verwenden, die mit Adobe Target interagieren, fügen Sie im Element `<head>` spezifischen clientseitigen Code ein.
 
 ### Der head-Bereich {#the-head-section}
 
@@ -46,7 +46,7 @@ Fügen Sie die folgenden Codeblöcke in den &lt;head>-Bereich Ihrer Seite ein:
 <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
 ```
 
-Dieser Code fügt die erforderlichen JavaScript-Analyseobjekte hinzu und lädt die Cloud-Service-Bibliotheken, die mit der Website verbunden sind. For Target service, the libraries are loaded via `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
+Dieser Code fügt die erforderlichen JavaScript-Analyseobjekte hinzu und lädt die Cloud-Service-Bibliotheken, die mit der Website verbunden sind. Für den Zielgruppe-Dienst werden die Bibliotheken über `/libs/cq/analytics/components/testandtarget/headlibs.jsp` geladen
 
 Die geladenen Bibliotheken hängen von der Art der Ziel-Client-Bibliothek (mbox.js oder at.js) ab, die in der Target-Konfiguration verwendet wird:
 
@@ -80,7 +80,7 @@ Die geladenen Bibliotheken hängen von der Art der Ziel-Client-Bibliothek (mbox.
 
 >[!NOTE]
 >
->Es wird nur die mit dem Produkt `at.js` gelieferte Version unterstützt. Die mit dem Produkt `at.js` gelieferte Version kann abgerufen werden, indem Sie sich die `at.js` Datei an einem Speicherort ansehen `/etc/clientlibs/foundation/testandtarget/atjs/source/at.js`.
+>Es wird nur die Version von `at.js` unterstützt, die im Lieferumfang des Produkts enthalten ist. Die mit dem Produkt ausgelieferte Version von `at.js` kann abgerufen werden, indem Sie die `at.js`-Datei am Speicherort `/etc/clientlibs/foundation/testandtarget/atjs/source/at.js` ansehen.
 
 **Für benutzerdefinierte at.js**
 
@@ -90,7 +90,7 @@ Die geladenen Bibliotheken hängen von der Art der Ziel-Client-Bibliothek (mbox.
  <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/atjs-integration.js"></script>
 ```
 
-The Target functionality on the client side is managed by the `CQ_Analytics.TestTarget` object. Daher enthält die Seite Initialisierungscode wie im folgenden Beispiel:
+Die Funktionalität der Zielgruppe auf Clientseite wird vom `CQ_Analytics.TestTarget`-Objekt verwaltet. Daher enthält die Seite Initialisierungscode wie im folgenden Beispiel:
 
 ```
 <script type="text/javascript">
@@ -124,7 +124,7 @@ The Target functionality on the client side is managed by the `CQ_Analytics.Test
  </div>
 ```
 
-Das JSP fügt die erforderlichen JavaScript-Objekte für Analysen und Verweise auf clientseitige JavaScript-Bibliotheken hinzu. Die `testandtarget.js` Datei enthält die `mbox.js` Funktionen. Der HTML-Code, den das Skript generiert, ähnelt dem folgenden Beispiel:
+Das JSP fügt die erforderlichen JavaScript-Objekte für Analysen und Verweise auf clientseitige JavaScript-Bibliotheken hinzu. Die Datei `testandtarget.js` enthält die Funktionen `mbox.js`. Der HTML-Code, den das Skript generiert, ähnelt dem folgenden Beispiel:
 
 ```xml
 <script type="text/javascript">
@@ -141,17 +141,17 @@ Das JSP fügt die erforderlichen JavaScript-Objekte für Analysen und Verweise a
 <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/init.js"></script>
 ```
 
-#### Die Textabteilung (Beginn) {#the-body-section-start}
+#### Der Hauptteil (Beginn) {#the-body-section-start}
 
-Hinzufügen Sie den folgenden Code unmittelbar nach dem `<body>` -Tag, um der Seite die Clientkontextfunktionen hinzuzufügen:
+hinzufügen Sie den folgenden Code unmittelbar nach dem `<body>`-Tag, um die Clientkontextfunktionen zur Seite hinzuzufügen:
 
 ```xml
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
 ```
 
-#### Der Abschnitt &quot;Textkörper&quot;(Ende) {#the-body-section-end}
+#### Der Hauptabschnitt (Ende) {#the-body-section-end}
 
-Hinzufügen Sie den folgenden Code unmittelbar vor dem `</body>` end-Tag:
+hinzufügen Sie den folgenden Code unmittelbar vor dem End-Tag `</body>` an:
 
 ```xml
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -195,15 +195,15 @@ Das JSP-Skript dieser Komponente generiert Aufrufe an die JavaScript-API der Zie
 >
 >Standardmäßig werden Mboxes ausgeblendet. Die mboxDefault-Klasse bestimmt dieses Verhalten. Durch das Ausblenden von Mboxes wird sichergestellt, dass Besucher den Standardinhalt nicht sehen, bevor er ausgetauscht wird. Das Ausblenden von Mboxes wirkt sich jedoch auf die wahrgenommene Leistung aus.
 
-The default mbox.js file that is used to create mboxes is located at `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Um eine individuelle mbox.js-Datei zu verwenden, fügen Sie sie zur Target-Cloud-Konfiguration hinzu. To add the file, the `mbox.js` file must be available on the file system.
+Die Standard-Datei &quot;mbox.js&quot;, die zum Erstellen von Mboxes verwendet wird, befindet sich unter `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Um eine individuelle mbox.js-Datei zu verwenden, fügen Sie sie zur Target-Cloud-Konfiguration hinzu. Um die Datei hinzuzufügen, muss die Datei `mbox.js` im Dateisystem verfügbar sein.
 
-For example, if you want to use the [Marketing Cloud ID service](https://docs.adobe.com/content/help/en/id-service/using/home.html) you need to download mbox.js so that it contains the correct value for the `imsOrgID` variable, which is based on your tenant. Diese Variable ist für die Integration mit den Marketing Cloud-ID-Service erforderlich. For information, see [Adobe Analytics as the Reporting Source for Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) and [Before You Implement](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
+Wenn Sie beispielsweise den [Marketing Cloud-ID-Dienst](https://docs.adobe.com/content/help/en/id-service/using/home.html) verwenden möchten, müssen Sie mbox.js herunterladen, damit er den richtigen Wert für die `imsOrgID`-Variable enthält, die auf Ihrem Mandanten basiert. Diese Variable ist für die Integration mit den Marketing Cloud-ID-Service erforderlich. Weitere Informationen finden Sie unter [Adobe Analytics als Berichte-Quelle für Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) und [Bevor Sie ](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html) implementieren.
 
 >[!NOTE]
 >
 >Wenn eine benutzerdefinierte Mbox in einer Target-Konfiguration definiert ist, müssen alle Benutzer auf Veröffentlichungsservern Lesezugriff auf **/etc/cloudservices** haben. Ohne diesen Zugriff führt das Laden von mbox.js-Dateien auf der Veröffentlichungs-Website zu einem 404-Fehler.
 
-1. Go to the CQ **Tools** page and select **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Gehen Sie zur Seite &quot;CQ **Tools**&quot;und wählen Sie **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Wählen Sie in der Baumstruktur „Adobe Target“ aus und doppelklicken Sie in der Liste der Konfigurationen auf Ihre Target-Konfiguration.
 1. Klicken Sie auf der Seite „Konfiguration“ auf „Bearbeiten“.
 1. Klicken Sie für die benutzerdefinierte mbox.js-Eigenschaft auf „Durchsuchen“ und wählen Sie die Datei aus.
@@ -211,7 +211,7 @@ For example, if you want to use the [Marketing Cloud ID service](https://docs.ad
 
 Ihre Target-Konfiguration umfasst eine benutzerdefinierte mbox.js-Datei. [Der erforderliche Code im head-Abschnitt](/help/sites-developing/target.md#the-head-section) Ihrer Seite fügt die Datei anstatt einer Referenz zur testandtarget.js-Bibliothek zum Client-Bibliotheks-Framework hinzu.
 
-## Deaktivieren des Ziel-Befehls für Komponenten {#disabling-the-target-command-for-components}
+## Deaktivieren des Ziel-Befehls für Komponenten  {#disabling-the-target-command-for-components}
 
 Die meisten Komponenten können mit dem Target-Befehl im Kontextmenü in zielgerichtete Komponenten umgewandelt werden.
 
@@ -223,7 +223,7 @@ Um den Target-Befehl aus dem Kontextmenü zu entfernen, fügen Sie die folgende 
 * Typ: `Boolean`
 * Wert: `True`
 
-For example, to disable targeting for the title components of the Geometrixx Demo Site pages, add the property to the `/apps/geometrixx/components/title/cq:editConfig` node.
+Um beispielsweise das Targeting für die Titelkomponenten der Geometrixx Demo-Site-Seiten zu deaktivieren, fügen Sie die Eigenschaft dem Knoten `/apps/geometrixx/components/title/cq:editConfig` hinzu.
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
@@ -315,14 +315,14 @@ Wenn die Komponente in der Kaufbestätigungsseite im vorherigen Beispiel enthalt
 </script>
 ```
 
-## Grundlagen der Target-Komponente {#understanding-the-target-component}
+## Grundlagen der Target-Komponente  {#understanding-the-target-component}
 
 Die Target-Komponente ermöglicht es Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. (Siehe [Content-Targeting](/help/sites-authoring/content-targeting-touch.md).) Die Komponente &quot;Zielgruppe&quot;befindet sich unter /libs/cq/personalization/components/Zielgruppe.
 
 Das target.jsp-Skript greift auf die Seiteneigenschaften zu, um die Targeting-Engine zu bestimmen, die für die Komponente verwendet werden soll, und führt dann das entsprechende Skript aus:
 
 * Adobe Target: `/libs/cq/personalization/components/target/engine_tnt.jsp`
-* [Adobe Target mit AT.JS](/help/sites-administering/target.md): `/libs/cq/personalization/components/target/engine_atjs.jsp`
+* [Adobe Target mit AT.JS](/help/sites-administering/target.md):  `/libs/cq/personalization/components/target/engine_atjs.jsp`
 * [Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md): `/libs/cq/personalization/components/target/engine_cq_campaign.jsp`
 * Clientseitige Regeln/ContextHub: `/libs/cq/personalization/components/target/engine_cq.jsp`
 
@@ -334,7 +334,7 @@ Das target.jsp-Skript greift auf die Seiteneigenschaften zu, um die Targeting-En
 
 Wenn Adobe Target das Content-Targeting ausführt, erstellt das engine_tnt.jsp-Skript Mboxes, die den Inhalt des zielgerichteten Erlebnisses enthalten:
 
-* Adds a `div` element with the class of `mboxDefault`, as required by the Adobe Target API.
+* Fügt ein `div`-Element mit der Klasse `mboxDefault` hinzu, wie es von der Adobe Target-API benötigt wird.
 
 * Fügt den Mbox-Inhalt (den Inhalt des zielgerichteten Erlebnisses) im `div`-Element hinzu.
 
