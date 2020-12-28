@@ -24,7 +24,7 @@ ht-degree: 94%
 
 Sling-Bindungen sind in 90 Prozent der Fälle keine gute Möglichkeit, auf einen Dienst zuzugreifen. Verwenden Sie stattdessen die Anmerkungen *@Reference* oder *@Inject*.
 
-## Avoid Thread.interrupt in Java code {#avoid-thread-interrupt-in-java-code}
+## Vermeiden Sie Thread.interrupt im Java-Code {#avoid-thread-interrupt-in-java-code}
 
 *Thread.interrupt* ist riskant, da es Dateien (darunter auch Lucene-Dateien und persistente Cache-Dateien) schließen kann, wenn es zum falschen Zeitpunkt aufgerufen wird.
 
