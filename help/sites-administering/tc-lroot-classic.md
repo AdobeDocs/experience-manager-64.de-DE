@@ -26,7 +26,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 1. Fügt eine neue untergeordnete Seite hinzu, welche die Sprachversion der Website darstellt:
 
    1. Klicken Sie auf „Neu“ > „Neue Seite“.
-   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. The Name needs to be in the format of `<language-code>` or `<language-code>_<country-code>`, for example en, en_US, en_us, en_GB, en_gb.
+   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss das Format `<language-code>` oder `<language-code>_<country-code>` haben, z. B. en, en_US, en_us, en_GB, en_gb.
 
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Klein- oder Großbuchstaben gemäß ISO-3166
