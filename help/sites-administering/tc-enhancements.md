@@ -49,7 +49,7 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
    ![screen_shot_2018-04-19at22622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Wechseln Sie zur Registerkarte **Erweitert**. You can add multiple languages under **Target Language**.
+1. Wechseln Sie zur Registerkarte **Erweitert**. Unter **Zielgruppe** können Sie mehrere Sprachen hinzufügen.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -65,11 +65,11 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
 Für manuelle Bearbeitungen von übersetzten Inhalten kann wieder eine Synchronisierung mit dem System für die Übersetzungsverwaltung (Translation Management System, TMS) durchgeführt werden, um das Translation Memory zu trainieren.
 
-1. From the Sites console, after updating text content in a translated page, select **Update Translation Memory**.
+1. Wählen Sie in der Site-Konsole nach dem Aktualisieren des Textinhalts auf einer übersetzten Seite **Translation Memory** aktualisieren.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Select which translation updates should be synchronized to Translation Memory, and select **Update Memory**.
+1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit dem Translation Memory synchronisiert werden sollen, und wählen Sie **Speicher aktualisieren**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
