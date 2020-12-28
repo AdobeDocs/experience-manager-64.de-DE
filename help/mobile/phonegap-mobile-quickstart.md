@@ -18,13 +18,13 @@ ht-degree: 17%
 ---
 
 
-# Mobile Schnellstart {#mobile-quickstart}
+# Mobile Quickstart {#mobile-quickstart}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-## AEM {#aem-verify-app}
+## AEM Überprüfen der App {#aem-verify-app}
 
 >[!CAUTION]
 >
