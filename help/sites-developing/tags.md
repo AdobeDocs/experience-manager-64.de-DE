@@ -22,11 +22,11 @@ ht-degree: 40%
 
 Tagging ermöglicht die Kategorisierung und Organisation von Inhalten. Tags können anhand eines Namespace und einer Taxonomie klassifiziert werden.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Using Tags](/help/sites-authoring/tags.md) for information about tagging content.
+* Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
+* Informationen zum Tagging von Inhalten finden Sie unter [Tags verwenden](/help/sites-authoring/tags.md).
 
 Die folgenden Informationen sind für Entwickler verfügbar:
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md) - Eine Beschreibung der für das Tagging verwendeten Knoten und Eigenschaften
+* [AEM Tagging Framework](/help/sites-developing/framework.md)  - Eine Beschreibung der für das Tagging verwendeten Knoten und Eigenschaften
 
-* [Erstellen von Tagging in einer AEM-Anwendung](/help/sites-developing/building.md) - Eine Beschreibung der APIs, die mit dem Tagging-Framework vom clientseitigen und serverseitigen Code funktionieren
+* [Erstellen von Tagging in einer AEM-Anwendung](/help/sites-developing/building.md)  - Eine Beschreibung der APIs, die mit dem Tagging-Framework vom clientseitigen und serverseitigen Code funktionieren
