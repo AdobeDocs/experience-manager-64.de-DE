@@ -28,7 +28,7 @@ Sie haben für die Konfiguration der Integration folgende Optionen:
 
 * Konfigurieren Sie die Integration über die Aufgabe.
 
-   Sie können dies sofort oder später erledigen. Die Aufgabe verbleibt im Posteingang, bis eine Aktion durchgeführt wird. In either case the configuration can be done directly in the UI, or with the use of a pre-defined `.properties` file.
+   Sie können dies sofort oder später erledigen. Die Aufgabe verbleibt im Posteingang, bis eine Aktion durchgeführt wird. In beiden Fällen kann die Konfiguration direkt in der Benutzeroberfläche oder mit der Verwendung einer vordefinierten `.properties`-Datei durchgeführt werden.
 
 * Lehnen Sie die Integration ab.
 
@@ -117,7 +117,7 @@ Die Eigenschaftendatei ist eine Textdatei mit dem Namen „marketingcloud.proper
 
 Eigenschaften und Werte sind jeweils durch ein Gleichheitszeichen (=) voneinander getrennt. Die Analytics-Eigenschaften haben das Präfix `analytics` und die Target-Eigenschaften das Präfix `target`. Geben Sie zum Konfigurieren eines Diensts Werte für alle Eigenschaften des Diensts an. Falls Sie keinen Dienst konfigurieren möchten, geben Sie einfach keine Werte für den Dienst an.
 
-The following example `.properties` file includes the property values for creating a cloud configuration for Analytics:
+Im folgenden Beispiel enthält die Datei `.properties` die Eigenschaftenwerte zum Erstellen einer Cloud-Konfiguration für Analytics:
 
 ```xml
 analytics.server=https://test.omniture.com/login/
@@ -144,7 +144,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie den Opt-in für die Integration
 
 1. Fügen Sie die Eigenschaftswerte gemäß Ihren Analytics- bzw. Target-Konten hinzu.
 1. Starten Sie den Server bzw. starten Sie ihn neu und melden Sie sich dann mit einem Administratorkonto an.
-1. Öffnen Sie die Aufgabe „Analytics &amp; Targeting konfigurieren“, wie unter [Konfigurieren der Integration](/help/sites-administering/opt-in.md#configuring-the-integration) beschrieben. Instead of requesting your account information, the wizard uses the values from the `.properties` file.
+1. Öffnen Sie die Aufgabe „Analytics &amp; Targeting konfigurieren“, wie unter [Konfigurieren der Integration](/help/sites-administering/opt-in.md#configuring-the-integration) beschrieben. Anstatt Ihre Kontoinformationen anzufordern, verwendet der Assistent die Werte aus der Datei `.properties`.
 
    Wählen Sie **Hinzufügen** für den entsprechenden Dienst und fahren Sie anschließend mit dem Assistenten fort.
 
@@ -154,7 +154,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie den Opt-in für die Integration
 
 Wenn Sie die Integration mit Analytics und Target konfigurieren, erstellt AEM automatisch die erforderlichen Cloud-Konfigurationen und Frameworks. Die Analytics-Cloud-Konfiguration wird beispielsweise als bereitgestelltes Analytics-Konto bezeichnet.
 
-Es ist nicht notwendig, die Cloud-Konfigurationen zu ändern. Sie können aber die Frameworks wie gewünscht konfigurieren. (See [Mapping Component Data with Adobe Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md) and [Add a Target Framework](/help/sites-administering/target.md).)
+Es ist nicht notwendig, die Cloud-Konfigurationen zu ändern. Sie können aber die Frameworks wie gewünscht konfigurieren. (Siehe [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](/help/sites-administering/adobeanalytics-mapping.md) und [Hinzufügen einem Zielgruppe-Framework](/help/sites-administering/target.md).)
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Es hängt von Folgendem ab, welche Parameter Sie senden müssen:
 * Wenn Sie die Datei **marketingcloud.properties** verwenden möchten, in die alle erforderlichen Anmeldeinformationen eingefügt sind, müssen Sie die folgenden Parameter senden:
 
    * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
+   * `servicename`=  `analytics|target`
    * `path`=Pfad zu einer AEM-Seite, um die erstellten Cloud Service-Konfigurationen anzufügen
 
    Eine Curl-Anforderung, mit der sowohl die Analytics- als auch die Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, lautet beispielsweise wie folgt:
@@ -192,9 +192,9 @@ Es hängt von Folgendem ab, welche Parameter Sie senden müssen:
    curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
    ```
 
-* If you do not want to use the **marketingcloud.properties** file then you will have to send the credentials as well as parameters; for example:
+* Wenn Sie die Datei **marketingcloud.properties** nicht verwenden möchten, müssen Sie die Anmeldeinformationen sowie die Parameter senden. Beispiel:
 
-   * automaticProvisioning= `true`
+   * automateProvisioning= `true`
    * servicename= `analytics|target`
    * path=Pfad zu einer AEM-Seite, um die erstellten Cloud Service-Konfigurationen anzufügen; es können mehrere Pfade definiert werden
    * analytics.server= `https://servername`
@@ -202,9 +202,9 @@ Es hängt von Folgendem ab, welche Parameter Sie senden müssen:
    * analytics.username= `me`
    * analytics.secret= `secret`
    * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+   * zielgruppe.clientcode= `mycompany`
+   * zielgruppe.email= `me@adobe.com`
+   * zielgruppe.password= `password`
 
    In diesem Fall würde die Curl-Anforderung, mit der die Analytics- und Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, wie folgt lauten:
 
