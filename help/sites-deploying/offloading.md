@@ -52,7 +52,7 @@ Das Abladungs-Framework unterstützt Auftrags-Payloads, die Aufträge mit Ressou
 
 Bei der Erstellung eines Auftrags befindet sich die Payload nur auf der Instanz, die den Auftrag erstellt. Beim Abladen des Auftrags stellen Replikationsagenten sicher, dass die Payload auf der Instanz erstellt wird, die den Auftrag schließlich verarbeitet. Nach Ausführung des Auftrags sorgt die Rückwärtsreplikation dafür, dass die Payload wieder auf die Instanz zurück kopiert wird, die den Auftrag erstellt hat.
 
-## Verwalten von Topologien {#administering-topologies}
+## Verwalten von Topologien  {#administering-topologies}
 
 Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Serverinstanzen (eine einzelne Instanz wird als Cluster betrachtet).
 
@@ -67,7 +67,7 @@ Der Discovery-Dienst aller Topologiemitglieder verweist auf den Topologie-Connec
 
 Jeder Cluster in der Topologie enthält eine Instanz, die als Leader erkannt wird. Der Cluster-Leader interagiert für die anderen Cluster-Mitglieder mit der Topologie. Wenn der Leader den Cluster verlässt, wird automatisch ein neuer Leader ausgewählt.
 
-### Anzeigen der Topologie {#viewing-the-topology}
+### Anzeigen der Topologie  {#viewing-the-topology}
 
 Mit dem Topologie-Browser können Sie den Status der Topologie überprüfen, zu der die Experience Manager-Instanz gehört. Der Topologie-Browser zeigt die Cluster und Instanzen der Topologie.
 
@@ -203,7 +203,7 @@ Aufgaben werden mithilfe der Round-Robin-Logik auf die Instanzen verteilt, auf d
 
    **Hinweis:** Wenn Sie die Option „Exklusiv“ für ein Thema auswählen, werden alle anderen Themen automatisch auf „Deaktiviert“ gesetzt.
 
-### Installierte JobConsumer-Dienste {#installed-job-consumers}
+### Installierte JobConsumer-Dienste  {#installed-job-consumers}
 
 Die Installation von Experience Manager umfasst mehrere implementierte JobConsumer-Dienste. Die Themen, für die diese JobConsumer-Dienste registriert sind, werden in der Browser-Abladung angezeigt. Bei den weiteren angezeigten Themen handelt es sich um von benutzerdefinierten JobConsumer-Diensten registrierte Themen. Die nachfolgende Tabelle beschreibt die Standard-JobConsumer-Dienste.
 
@@ -219,7 +219,7 @@ Der Dienst „Apache Sling Job Consumer Manager“ stellt Eigenschaften für The
 
 **Hinweis:** Wenn die Instanz zu einer Topologie gehört, können Sie den Offload-Browser auch auf einem beliebigen Computer in der Topologie verwenden, um Themen zu aktivieren oder zu deaktivieren.
 
-The logic that creates the list of enabled topics first allows all of the topics that are in the allow list, and then removes topics that are on the block list.By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
+Die Logik, mit der die Liste der aktivierten Themen erstellt wird, erlaubt zunächst alle Themen, die sich in der Zulassungsliste befinden, und entfernt dann Themen, die sich auf der Blockierungsliste befinden. Standardmäßig sind alle Themen aktiviert (die Zulassungsliste ist `*`) und keine Themen sind deaktiviert (die Blockierungsliste hat keinen Wert).
 
 Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folgenden Eigenschaften zu konfigurieren. Für `sling:OsgiConfig`-Knoten lautet die PID des JobConsumerManager-Dienstes „org.apache.sling.event.impl.jobs.JobConsumerManager“.
 
@@ -254,17 +254,17 @@ Dieses Replikationsschema gleicht dem für Autoren- und Veröffentlichungsinstan
 
 ### Benennen der Replikationsagenten für die Abladung {#naming-the-replication-agents-for-offloading}
 
-Use a specific format for the ***Name*** property of the replication agents so that the offloading framework automatically uses the correct agent for specific worker instances.
+Verwenden Sie ein bestimmtes Format für die Eigenschaft ***Name*** der Replizierungsagenten, damit das Ablade-Framework automatisch den richtigen Agenten für bestimmte Workerinstanzen verwendet.
 
 **Benennung des ausgehenden Agenten auf der Autoreninstanz:**
 
-`offloading_<slingid>`, wobei `<slingid>` die Sling-ID der Worker-Instanz steht.
+`offloading_<slingid>`, wobei  `<slingid>` die Sling-ID der Worker-Instanz steht.
 
 Beispiel: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Benennung des Rückwärtsagenten auf der Autoreninstanz:**
 
-`offloading_reverse_<slingid>`, wobei `<slingid>` die Sling-ID der Worker-Instanz steht.
+`offloading_reverse_<slingid>`, wobei  `<slingid>` die Sling-ID der Worker-Instanz steht.
 
 Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -274,7 +274,7 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des ausgehenden Agenten {#creating-the-outgoing-agent}
 
-1. Erstellen Sie einen **Replikationsagenten** auf der Autoreninstanz. (Weitere Informationen finden Sie in der [Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. The **Name** must follow the naming convention.
+1. Erstellen Sie einen **Replikationsagenten** auf der Autoreninstanz. (Weitere Informationen finden Sie in der [Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. **Name** muss der Benennungsregel entsprechen.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften:
 
    | Eigenschaft | Wert |
@@ -288,12 +288,12 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des Rückwärtsagenten {#creating-the-reverse-agent}
 
-1. Create a **Reverse Replication Agent** on author. (See the [documention for replication agents](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. The **Name** must follow the naming convention.
+1. Erstellen Sie einen **Agenten für Rückwärtsreplikation** beim Autor. (Siehe [Dokumentation für Replizierungsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. **Name** muss der Benennungsregel entsprechen.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften:
 
    | Eigenschaft | Wert |
    |---|---|
-   | Einstellungen > Serialisierungstyp | Default |
+   | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
    | Transport > Transportpass | Replizieren des Benutzerkennworts auf der Zielgruppe |
@@ -301,31 +301,31 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des Postausgangs-Agenten {#creating-the-outbox-agent}
 
-1. Create a **Replication Agent** on the worker instance. (See the [documention for replication agents](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. The **Name** must be `offloading_outbox`.
+1. Erstellen Sie einen **Replizierungsagenten** auf der Worker-Instanz. (Siehe [Dokumentation für Replizierungsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. **Name** muss `offloading_outbox` sein.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften.
 
    | Eigenschaft | Wert |
    |---|---|
-   | Einstellungen > Serialisierungstyp | Default |
+   | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | repo://var/replication/outbox |
-   | Auslöser > Standard ignorieren | True |
+   | Auslöser > Standard ignorieren | true |
 
 ### Suche nach der Sling-ID {#finding-the-sling-id}
 
 Sie können die Sling-ID einer Experience Manager-Instanz mit einer der beiden folgenden Methoden abrufen:
 
-* Open the Web Console and, in the Sling Settings, find the value of the Sling ID property ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Diese Methode ist hilfreich, wenn die Instanz noch nicht zur Topologie gehört.
+* Öffnen Sie die Web-Konsole und suchen Sie in den Sling-Einstellungen den Wert der Sling-ID-Eigenschaft ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Diese Methode ist hilfreich, wenn die Instanz noch nicht zur Topologie gehört.
 * Ist sie bereits Teil der Topologie, verwenden Sie den Topologie-Browser.
 
-## Abladen der Verarbeitung von DAM-Assets {#offloading-the-processing-of-dam-assets}
+## Abladen der Verarbeitung von DAM-Assets  {#offloading-the-processing-of-dam-assets}
 
 Konfigurieren Sie die Instanzen einer Topologie so, dass bestimmte Instanzen die Hintergrundverarbeitung von Assets durchführen, welche zu DAM hinzugefügt oder in DAM aktualisiert werden.
 
-Standardmäßig führt Experience Manager den Workflow „DAM-Update-Asset“ aus, wenn ein DAM-Asset geändert oder ein Asset zu DAM hinzugefügt wird. Ändern Sie das Standardverhalten so, dass Experience Manager stattdessen den Workflow „Asset-Abladung für DAM-Update“ ausführt. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Konfigurieren Sie dann die Topologie so, dass der Auftrag an eine dedizierte Worker-Instanz abgeladen wird.
+Standardmäßig führt Experience Manager den Workflow „DAM-Update-Asset“ aus, wenn ein DAM-Asset geändert oder ein Asset zu DAM hinzugefügt wird. Ändern Sie das Standardverhalten so, dass Experience Manager stattdessen den Workflow „Asset-Abladung für DAM-Update“ ausführt. Dieser Workflow generiert einen JobManager-Auftrag mit dem Thema `com/adobe/granite/workflow/offloading`. Konfigurieren Sie dann die Topologie so, dass der Auftrag an eine dedizierte Worker-Instanz abgeladen wird.
 
 >[!CAUTION]
 >
->Bei Verwendung mit Workflow-Ableitungen sollte kein Workflow vorübergehend sein. Beispielsweise darf sich der Workflow „DAM-Update-Asset“ nicht im Übergangsstatus befinden, wenn er für die Asset-Abladung verwendet wird. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
+>Bei Verwendung mit Workflow-Ableitungen sollte kein Workflow vorübergehend sein. Beispielsweise darf sich der Workflow „DAM-Update-Asset“ nicht im Übergangsstatus befinden, wenn er für die Asset-Abladung verwendet wird. Informationen zum Festlegen/Entfernen des transienten Flag in einem Workflow finden Sie unter [Übergangsweises Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
 Beim nachfolgenden Verfahren wird von den folgenden Merkmalen für die Abladungs-Topologie ausgegangen:
 
@@ -334,7 +334,7 @@ Beim nachfolgenden Verfahren wird von den folgenden Merkmalen für die Abladungs
 
 1. Konfigurieren Sie den Discovery-Dienst auf allen Experience Manager-Instanzen so, dass er auf den Stamm-Topologie-Connector verweist. (Weitere Informationen finden Sie unter [Konfigurieren der Topologie-Mitgliedschaft](#title4).)
 1. Konfigurieren Sie den Stamm-Topologie-Connector so, dass die damit verbundenen Instanzen auf der Zulassungsliste aufgeführt sind.
-1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
+1. Öffnen Sie den Offload-Browser und deaktivieren Sie das Thema `com/adobe/granite/workflow/offloading` in den Instanzen, mit denen Benutzer interagieren, um DAM-Assets hochzuladen oder zu ändern.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -351,7 +351,7 @@ Beim nachfolgenden Verfahren wird von den folgenden Merkmalen für die Abladungs
 
 Neben den auf dieser Seite bereitgestellten, detaillierten Informationen können Sie auch folgende Abschnitte lesen:
 
-* For information about using Java APIs to create jobs and job consumers, see [Creating and Consuming Jobs for Offloading](/help/sites-developing/dev-offloading.md).
+* Weitere Informationen zur Verwendung von Java-APIs zum Erstellen von Aufträgen und zum Erstellen von Auftraggebern finden Sie unter [Erstellen und Verarbeiten von Aufträgen für das Verladen](/help/sites-developing/dev-offloading.md).
 * Allgemeine Richtlinien und Best Practices für die Asset-Abladung finden Sie unter [Allgemeine Richtlinien und Best Practices für die Asset-Abladung](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading).
 * Weitere Informationen zum Deaktivieren der automatischen Erstellung von Abladungs-Agenten finden Sie unter [Deaktivieren der automatischen Agentenverwaltung](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management).
 
