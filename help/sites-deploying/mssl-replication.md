@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um einen privaten Schlüssel und ein selbstsigniertes Z
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Option | Autor | Veröffentlichen   |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -alias | author | publish |
    | -keystore | author.keystore | publish.keystore |
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um einen privaten Schlüssel und ein selbstsigniertes Z
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Option | Autor | Veröffentlichen   |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -alias | author | publish |
    | -file | author.cer | publish.cer |
@@ -94,7 +94,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Option | Autor | Veröffentlichen   |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -104,7 +104,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Option | Autor | Veröffentlichen   |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -117,7 +117,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Option | Autor | Veröffentlichen   |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -129,7 +129,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Option | Autor | Veröffentlichen   |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
@@ -145,7 +145,7 @@ Installieren Sie Folgendes auf der Autoreninstanz:
 
 Um folgende Schritte ausführen, müssen Sie als Administrator der Autoreninstanz angemeldet sein.
 
-### Installieren des privaten Schlüssels der Autoreninstanz {#install-the-author-private-key}
+### Installieren des privaten Schlüssels der Autoreninstanz  {#install-the-author-private-key}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ für die Autoreninstanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Klicken oder tippen Sie auf Ihren Benutzernamen, um die Eigenschaften Ihres Benutzerkontos zu öffnen.
@@ -188,7 +188,7 @@ Installieren Sie Folgendes auf der Veröffentlichungsinstanz:
 
 Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröffentlichungsinstanz angemeldet sein.
 
-### Installieren des privaten Schlüssels der Veröffentlichungsinstanz {#install-the-publish-private-key}
+### Installieren des privaten Schlüssels der Veröffentlichungsinstanz  {#install-the-publish-private-key}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ für die Veröffentlichungsinstanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Klicken oder tippen Sie auf Ihren Benutzernamen, um die Eigenschaften Ihres Benutzerkontos zu öffnen.
@@ -199,7 +199,7 @@ Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröf
 1. Geben Sie einen Alias und das Kennwort für den KeyStore ein. Geben Sie den Alias und das Kennwort für den privaten Schlüssel ein. Klicken Sie anschließend auf „Übermitteln“.
 1. Schließen Sie das Dialogfeld „KeyStore-Verwaltung“.
 
-### Installieren des Autorenzertifikats {#install-the-author-certificate}
+### Installieren des Autorenzertifikats  {#install-the-author-certificate}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ für die Veröffentlichungsinstanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Suchen Sie nach dem Benutzerkonto, das zum Ausführen von Replikationsanforderungen verwendet wird, und klicken oder tippen Sie auf den Benutzernahmen.
@@ -209,7 +209,7 @@ Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröf
 1. Stellen Sie sicher, dass die Option „Benutzer Zertifikat zuordnen“ ausgewählt ist. Klicken Sie auf „Zertifikatsdatei auswählen“ und wählen Sie „author.cer“ aus. Klicken Sie auf „Öffnen“.
 1. Klicken Sie auf „Übermitteln“ und schließen Sie dann das Dialogeld „TrustStore-Verwaltung“.
 
-## Konfigurieren des HTTP-Dienstes auf der Veröffentlichungsinstanz {#configure-the-http-service-on-publish}
+## Konfigurieren des HTTP-Dienstes auf der Veröffentlichungsinstanz  {#configure-the-http-service-on-publish}
 
 Konfigurieren Sie die Eigenschaften des Apache Felix Jetty-basierten HTTP-Dienstes auf der Veröffentlichungsinstanz so, dass beim Zugriff auf Granite KeyStore HTTPS verwendet wird. Die PID des Dienstes ist `org.apache.felix.http`.
 
@@ -243,7 +243,7 @@ Um MSSL zu aktivieren, konfigurieren Sie die Eigenschaften auf der Registerkarte
    <td>Kein Wert</td> 
   </tr> 
   <tr> 
-   <td>Kennwort</td> 
+   <td>Passwort</td> 
    <td>Kein Wert</td> 
   </tr> 
   <tr> 
