@@ -26,7 +26,7 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->Bestehende AEM Mobile-Apps-Kunden, die von AEM 6.2 oder 6.3 auf AEM 6.4 migrieren, können weiterhin AEM Mobile-Apps verwenden, indem sie ein [Paket von PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package)herunterladen. Neue Installationen von AEM 6.4 unterstützen jedoch keine AEM Mobile Apps-Funktionen.
+>Bestehende AEM Mobile-Apps-Kunden, die von AEM 6.2 oder 6.3 auf AEM 6.4 migrieren, können weiterhin AEM Mobile-Apps verwenden, indem sie ein [Paket von PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package) herunterladen. Neue Installationen von AEM 6.4 unterstützen jedoch keine AEM Mobile Apps-Funktionen.
 
 Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Adobe Experience Manager-Plattform für mehrere Kanal, die auch AEM Assets, Sites, Bildschirme, Arbeitsabläufe, User Manager, Commerce und Forms nutzt. AEM Mobile Angebots bietet eine bemerkenswerte Flexibilität bei der Bereitstellung, sodass Unternehmen eine Vielzahl von Inhaltsquellen nutzen können.
 
@@ -38,4 +38,4 @@ AEM Mobile Angebots bietet mehrere Methoden zum Erstellen von Apps. Sie haben dr
 
 >[!NOTE]
 >
->Wenn Sie neu in Adobe Experience Manager sind, sollten Sie [Erste Schritte mit AEM](/help/sites-deploying/deploy.md)durchführen.
+>Wenn Sie neu bei Adobe Experience Manager sind, sollten Sie [Erste Schritte mit AEM](/help/sites-deploying/deploy.md) durchführen.
