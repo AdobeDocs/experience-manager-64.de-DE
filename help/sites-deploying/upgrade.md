@@ -42,7 +42,7 @@ Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instan
 
 >[!NOTE]
 >
->Im Rahmen der Bemühungen zur Verbesserung der Zuverlässigkeit von Upgrades wurde AEM 6.4 einer umfassenden Repository-Umstrukturierung unterzogen. For more information on how to align with the new structure, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
+>Im Rahmen der Bemühungen zur Verbesserung der Zuverlässigkeit von Upgrades wurde AEM 6.4 einer umfassenden Repository-Umstrukturierung unterzogen. Weitere Informationen zum Ausrichten mit der neuen Struktur finden Sie unter [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
 ## Was wurde geändert? {#what-has-changed}
 
@@ -52,7 +52,7 @@ In AEM 6.0 wurde das neue Jackrabbit-Oak-Repository eingeführt. Persistenz-Man
 
 Wenn Asset Insights verwendet werden soll und Sie eine Aktualisierung von einer Version vor AEM 6.2 durchführen, müssen Assets migriert und IDs für diese über ein JMX-Bean generiert werden. In internen Tests wurden 125.000 Assets in einer TarMK-Umgebung innerhalb einer Stunde migriert. Ihre Ergebnisse können jedoch möglicherweise abweichen.
 
-AEM 6.3 introduced a new format for the `SegmentNodeStore`, which is the basis of the TarMK implementation. Wenn Sie eine Version vor AEM 6.3 aktualisieren, muss bei der Aktualisierung eine Migration des Repositorys durchgeführt werden, während der das System nicht verfügbar ist.
+AEM 6.3 hat ein neues Format für das `SegmentNodeStore` eingeführt, das die Grundlage der TarMK-Implementierung bildet. Wenn Sie eine Version vor AEM 6.3 aktualisieren, muss bei der Aktualisierung eine Migration des Repositorys durchgeführt werden, während der das System nicht verfügbar ist.
 
 Adobe Engineering schätzt, dass diese Ausfallzeit ca. 20 Minuten beträgt. Beachten Sie, dass keine Neuindizierung erforderlich ist. Darüber hinaus wurde eine neue Version des CRX2OAK-Tools für das neue Repository-Format veröffentlicht.
 
@@ -82,11 +82,11 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 ## Flussdiagramm der Aktualisierung mit Aktualisierungsverbesserungen in 6.4 {#upgrade-overview-1}
 
-Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. The upgrade should start with the Pattern Detector(see [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)) which should let you decide the path you want to take for compatibility with AEM 6.4 based on the patterns in the generated report.
+Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Die Aktualisierung sollte mit dem Musterdetektor (siehe [Beurteilung der Aktualisierungskomplexität mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)) Beginn haben. Anhand dieser Informationen können Sie anhand der Muster im erstellten Bericht festlegen, welchen Pfad Sie zur Kompatibilität mit AEM 6.4 verwenden möchten.
 
-There was a big focus in 6.4 to keep all the new features backward compatible, but in cases where you still see some backward compatibility issues, the compatibility mode allows you to temporarily defer development to keep your custom code compliant with 6.4. This approach helps you avoid development effort immediately after the upgrade(see [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
+In 6.4 wurde der Fokus auf die Abwärtskompatibilität aller neuen Funktionen gelegt. In Fällen, in denen jedoch noch Kompatibilitätsprobleme mit dem Abwärtsmodus auftreten, können Sie die Entwicklung vorübergehend verschieben, um den benutzerdefinierten Code mit 6.4 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 
-Finally, in your 6.4 development cycle, features introduced under Sustainable Upgrades(see [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)) help you follow best practices to make future upgrades even more efficient and seamless.
+In Ihrem 6.4-Entwicklungszyklus schließlich unterstützen Funktionen, die unter Nachhaltige Upgrades eingeführt wurden (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Sie bei der Befolgung bewährter Verfahren, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
 
 ![6_4_upgrade_overviewflow chart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
 
