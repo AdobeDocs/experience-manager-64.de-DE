@@ -46,11 +46,11 @@ Die Tests sind ohne eine Umgebung, die möglichst genau den Produktionsbedingung
 
 Viele Leistungsprobleme treten erst dann zum Vorschein, wenn das System eine hohe Auslastung aufweist. Gute Leistungstests sollten die Auslastung der Produktionssysteme zu Stoßzeiten simulieren.
 
-### Festlegen von Zielen {#setting-goals}
+### Festlegen von Zielen  {#setting-goals}
 
 Vor Leistungstests müssen nicht funktionsbezogene Anforderungen zur Angabe der Last und Antwortzeiten festgelegt werden. Achten Sie beim Migrieren von einem vorhandenen System darauf, dass Antwortzeiten mit denen Ihrer aktuellen Produktionswerte vergleichbar sind. Was die Auslastung angeht, sollte am besten die Spitzenlast verdoppelt werden. Auf diese Weise wird sichergestellt, dass die Website auch bei Wachstum weiterhin leistungsfähig ist.
 
-### Tools {#tools}
+### Tools  {#tools}
 
 Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stellen Sie beim Ausführen eines Lastgenerators sicher, dass die Computer, die die Tests durchführen, über ausreichend Netzwerkbrandbreite verfügen. Andernfalls wird, sobald der Testrechner an seine Verbindungsgrenzen stößt, keine zusätzliche Last in der getesteten Umgebung erzeugt.
 
@@ -59,15 +59,15 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 * Mit dem **Tough Day**-Tool von Adobe können Lasten auf AEM-Instanzen erzeugt und Leistungsdaten erfasst werden. Das Entwicklungsteam von Adobe setzt dieses Tool für Auslastungstests beim eigentlichen AEM-Produkt ein. Die in Tough Day ausgeführten Skripts werden über Eigenschaftendateien und JMX-XML-Dateien konfiguriert. Weitere Informationen finden Sie in der [Tough Day-Dokumentation](/help/sites-developing/tough-day.md).
 
 * AEM stellt sofort einsatzfähige Tools bereit, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell erkennen zu können. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) des Dokuments zu Vorgangs-Dashboards.
-* Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Auslastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um kostenlose Open-Source-Software, die im Vergleich zu Enterprise-Produkten zwar einen geringeren Funktionsumfang hat, dafür aber eine steilere Lernkurve. JMeter can be found on Apache’s website at [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Auslastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um kostenlose Open-Source-Software, die im Vergleich zu Enterprise-Produkten zwar einen geringeren Funktionsumfang hat, dafür aber eine steilere Lernkurve. JMeter kann auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** ist ein Produkt zum Testen von Lastenwerten für Unternehmen. Eine kostenlose Testversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load** Runner ist ein Produkt zum Testen von Lastenwerten für Unternehmen. Eine kostenlose Testversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
 * Cloudbasierte Tools für Auslastungstests wie [Neustar](https://www.neustar.biz/services/web-performance/load-testing) können ebenfalls verwendet werden.
 * Zum Testen von mobilen Websites oder responsiven Webdesigns sind andere Tools erforderlich. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigsten Tools gehören:
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)**mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles **](https://www.charlesproxy.com/), eine Webdebugging-Proxyanwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Windows-, OS X- und Linux-Versionen verfügbar.[](https://www.charlesproxy.com/)
+   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.[](https://nshipster.com/network-link-conditioner/)
+   * [**Charles**](https://www.charlesproxy.com/), eine Webdebugging-Proxyanwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Windows-, OS X- und Linux-Versionen verfügbar. [](https://www.charlesproxy.com/)
 
 #### Optimierungstools {#optimization-tools}
 
@@ -81,7 +81,7 @@ Eine der neuen Funktionen in der Touch-Benutzeroberfläche von AEM 6 ist der En
 
 **Lesen von Anforderungsprotokollen mit rlog.jar**
 
-Für eine eingehendere Analyse der Anforderungsprotokolle auf einem AEM-System können die von AEM erzeugten `rlog.jar`-Dateien mit `request.log` durchsucht und sortiert werden. This jar file is included with an AEM installation in the `/crx-quickstart/opt/helpers` folder. Weitere Informationen zum rlog-Tool und Anforderungsprotokoll im Allgemeinen finden Sie im Dokument [Überwachen und Verwalten](/help/sites-deploying/monitoring-and-maintaining.md).
+Für eine eingehendere Analyse der Anforderungsprotokolle auf einem AEM-System können die von AEM erzeugten `rlog.jar`-Dateien mit `request.log` durchsucht und sortiert werden. Diese JAR-Datei ist in einer AEM Installation im Ordner `/crx-quickstart/opt/helpers` enthalten. Weitere Informationen zum rlog-Tool und Anforderungsprotokoll im Allgemeinen finden Sie im Dokument [Überwachen und Verwalten](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Tool „Abfrage erläutern“**
 
@@ -109,7 +109,7 @@ Auf Systemen mit MongoDB-Backends stellt AEM mehrere [JMX](/help/sites-administe
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-For the cache named **Document-Diff**, the hit rate should be over `.90`. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die `DocumentNodeStoreService`-Konfiguration ändern. Der Produktsupport von Adobe kann Ihnen optimale Einstellungen für Ihre Umgebung empfehlen.
+Für den Cache mit dem Namen **Dokument-Diff** sollte die Trefferrate über `.90` liegen. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die `DocumentNodeStoreService`-Konfiguration ändern. Der Produktsupport von Adobe kann Ihnen optimale Einstellungen für Ihre Umgebung empfehlen.
 
 * MBean **Oak Repository Statistics**. Sie können direkt unter folgender Adresse aufgerufen werden:
 
@@ -131,7 +131,7 @@ Auf einem System ohne hohen Personalisierungsbedarf sollte der Dispatcher die me
 
 Für grundlegende Tests können mit Apache Bench die Antwortzeit der Webserver gemessen und Lasten für Messungen, etwa von Speicherverlusten, generiert werden. Weitere Informationen liefert Ihnen das Beispiel in der [Dokumentation zur Überwachung](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Fehlerbehebung von Leistungsproblemen {#troubleshooting-performance-issues}
+## Fehlerbehebung von Leistungsproblemen  {#troubleshooting-performance-issues}
 
 Im Anschluss an die Leistungstests der Autoreninstanz müssen alle festgestellten Probleme untersucht, diagnostiziert und behoben werden. Zur Analyse und Behandlung dieser Probleme können Sie verschiedene Tools und Verfahren anwenden:
 
