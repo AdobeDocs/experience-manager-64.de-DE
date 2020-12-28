@@ -32,15 +32,15 @@ Das Anpassungs-Framework besteht aus zwei Komponenten: **API-Oberfläche** und *
 
 In früheren Versionen von AEM wurden viele APIs über das Uber JAR verfügbar gemacht. Einige dieser APIs sollten nicht von Kunden verwendet werden, wurden jedoch verfügbar gemacht, um AEM-Funktionen der Pakete zu unterstützen. In Zukunft werden Java-APIs als „Öffentlich“ oder „Privat“ gekennzeichnet, damit Kunden erkennen, welche APIs im Hinblick auf Aktualisierungen sicher verwendet werden können. Weitere Besonderheiten:
 
-* Java APIs marked as `Public` can be used and referenced by custom implementation bundles.
+* Als `Public` markierte Java-APIs können von benutzerdefinierten Implementierungspaketen verwendet und referenziert werden.
 
 * Die öffentlichen APIs werden durch die Installation eines Kompatibilitätspakets abwärtskompatibel sein. 
 * Das Kompatibilitätspaket wird ein Kompatibilitäts-Uber JAR enthalten, um die Abwärtskompatibilität sicherzustellen. 
-* Java APIs marked as `Private` are intended to only be used by AEM internal bundles and should not be used by custom bundles.
+* Als `Private` markierte Java-APIs sind nur für die Verwendung AEM internen Bundles vorgesehen und sollten nicht von benutzerdefinierten Bundles verwendet werden.
 
 >[!NOTE]
 >
->The concept of `Private` and `Public` in this context should not be confused with Java notions of public and private classes.
+>Das Konzept von `Private` und `Public` in diesem Kontext sollte nicht mit Java-Vorstellungen öffentlicher und privater Klassen verwechselt werden.
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
@@ -52,9 +52,9 @@ Um dies sicherer zu machen und für Kunden deutlicher zu kennzeichnen, welche Be
 
 * **Öffentlich (granite:PublicArea)** - Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter /libs können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind. 
 
-* **Abstrakt (granite:AbstractArea)** - Definiert einen Knoten als „Abstrakt“. Nodes can be overlaid or inherited ( `sling:resourceSupertype`) but must not be used directly ( `sling:resourceType`).
+* **Abstrakt (granite:AbstractArea)** - Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder geerbt werden ( `sling:resourceSupertype`), dürfen jedoch nicht direkt ( `sling:resourceType`) verwendet werden.
 
-* **Endgültig (granite:FinalArea)** - Definiert einen Knoten als „Endgültig“. Knoten, die als „Endgültig“ klassifiziert sind, können nicht überlagert oder vererbt werden. Final nodes can be used directly via `sling:resourceType`. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft 
+* **Endgültig (granite:FinalArea)** - Definiert einen Knoten als „Endgültig“. Knoten, die als „Endgültig“ klassifiziert sind, können nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType` verwendet werden. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft 
 
 * **Intern (granite:InternalArea)** - Definiert einen Knoten als „Intern“. Als „Intern“ klassifizierte Knoten können nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind ausschließlich für interne Funktionen von AEM vorgesehen.
 
@@ -62,11 +62,11 @@ Um dies sicherer zu machen und für Kunden deutlicher zu kennzeichnen, welche Be
 
 >[!NOTE]
 >
->Diese Richtlinien werden nur für Mechanismen erzwungen, die auf dem Sling-Suchpfad basieren. Other areas of **/libs** like a client-side library may be marked as `Internal`, but could still be used with standard clientlib inclusion. Es ist wichtig, dass Kunden in diesen Fällen die Klassifizierung „Intern“ beachten.
+>Diese Richtlinien werden nur für Mechanismen erzwungen, die auf dem Sling-Suchpfad basieren. Andere Bereiche von **/libs** wie eine clientseitige Bibliothek können als `Internal` markiert werden, können aber dennoch mit standardmäßiger clientlib-Einbindung verwendet werden. Es ist wichtig, dass Kunden in diesen Fällen die Klassifizierung „Intern“ beachten.
 
-#### CRXDE Lite-Inhaltstypindikatoren  {#crxde-lite-content-type-indicators}
+#### CRXDE Lite-Inhaltstypindikatoren   {#crxde-lite-content-type-indicators}
 
-Mixins applied in CRXDE Lite will show content nodes and trees that are marked as `INTERNAL` as being greyed out. For `FINAL` only the icon is greyed out. Die untergeordneten Elemente dieser Knoten werden ebenfalls grau angezeigt. Die Überlagerungsknotenfunktion ist in beiden Fällen deaktiviert.
+In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume an, die als `INTERNAL` ausgegraut markiert sind. Bei `FINAL` ist nur das Symbol grau ausgeblendet. Die untergeordneten Elemente dieser Knoten werden ebenfalls grau angezeigt. Die Überlagerungsknotenfunktion ist in beiden Fällen deaktiviert.
 
 **Öffentlich**
 
