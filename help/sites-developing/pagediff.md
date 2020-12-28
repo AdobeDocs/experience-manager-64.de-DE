@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 46%
+ht-degree: 73%
 
 ---
 
@@ -26,17 +26,17 @@ Inhaltserstellung ist ein iterativer Vorgang. Damit ein Autor effizient arbeiten
 
 Mit dem Seitenvergleich können Benutzer die aktuelle Seite mit Launches, früheren Versionen usw. vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-authoring/page-diff.md).
 
-## Vorgangsdetails {#operation-details}
+## Details zum Vorgang {#operation-details}
 
-Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich](/help/sites-authoring/page-diff.md#presentation-of-differences)nebeneinander gerendert werden kann.
+Beim Vergleichen von Versionen einer Seite wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Dies ist erforderlich, um den Inhalt für einen [direkten parallelen Vergleich](/help/sites-authoring/page-diff.md#presentation-of-differences) rendern zu können.
 
-Dieser Erholungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert kein Eingreifen. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
+Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert keinen Eingriff. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
 
 Je nach AEM Patch-Level ist das Verhalten unterschiedlich und erfordert möglicherweise bestimmte Berechtigungen, um ordnungsgemäß funktionieren zu können.
 
 ### Vor AEM 6.4.3 {#prior-to-aem}
 
-Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
+Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
 
 `/content/versionhistory/<userId>/<site structure>`
 
@@ -44,21 +44,21 @@ Wenn Sie den Mechanismus zum Abweichen von Seiten verwenden, erstellt AEM die vo
 
 >[!CAUTION]
 >
->Um die Funktion zum Trennen von Seiten verwenden zu können, muss der Benutzer über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten verfügen `/content/versionhistory`.
+>Um die Funktion &quot;page diff&quot;verwenden zu können, muss der Benutzer über die Berechtigung **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen.
 
 ### Ab AEM 6.4.3 {#as-of-aem}
 
-Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
+Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
 
 `/tmp/versionhistory/`
 
 Dieser Inhalt wird von einem Dienstbenutzer erstellt, der über die Berechtigung verfügt, die Sichtbarkeit auf den aktuellen Benutzer zu beschränken. Aus diesem Grund sind keine speziellen Berechtigungen erforderlich.
 
-Eine Bereinigungs-Aufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
+Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären Inhalt zu bereinigen.
 
 ## Entwicklerbeschränkungen {#developer-limitations}
 
-Previously, in Classic UI, special development consideration had to be made to facilitate AEM diffing (such as using `cq:text` tag lib, or custom integrating the `DiffService` OSGi service into components). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+In der klassischen Benutzeroberfläche mussten bisher besondere Entwicklungsabwägungen vorgenommen werden, um die AEM zu vereinfachen (z. B. `cq:text` tag lib oder benutzerspezifische Integration des `DiffService` OSGi-Dienstes in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 
@@ -71,9 +71,9 @@ Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Da der Vergleich clientseitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der clientseitige Vergleichsdienst ausgeführt wurde. Dies kann Folgendes beeinflussen:
+* Da der Vergleich Client-seitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der Cient-seitige Vergleichs-Service ausgeführt wurde. Dies kann Folgendes beeinflussen:
 
    * Komponenten, die AJAX verwenden, um Inhalte einzubeziehen
-   * Einzelseiten-Webanwendungen
+   * Single Page Applications
    * JavaScript-basierte Komponenten, die den DOM bei Benutzerinteraktionen manipulieren.
 
