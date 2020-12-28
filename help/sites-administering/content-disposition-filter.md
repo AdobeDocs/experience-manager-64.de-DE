@@ -26,7 +26,7 @@ Nach der Installation blockiert der Filter den Zugriff auf alle Assets. Sie kön
 
 ## Konfigurieren des Content-Disposition-Filters {#configure-content-disposition-filter}
 
-You can view the [Apache Sling Content Disposition Filter in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Sie können den Filter [Apache Sling Content Disposition in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java) Ansicht haben.
 
 Die Optionen für den Content-Disposition-Filter bieten die folgenden Funktionen:
 
