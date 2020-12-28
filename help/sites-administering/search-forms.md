@@ -140,7 +140,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Datum           </td> 
+   <td>Datum            </td> 
    <td>Slider-basierte Suche von Assets basierend auf einer Datumseigenschaft.</td> 
    <td> 
     <ul> 
@@ -150,7 +150,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Datum           Bereich </td> 
+   <td>Datum            Bereich </td> 
    <td>Suchen Sie Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td> 
    <td> 
     <ul> 
@@ -241,19 +241,19 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Pfad          </td> 
+   <td>Pfad           </td> 
    <td>Suchen Sie Assets, die sich unter einem bestimmten Pfad befinden.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
-     <li>Hinzufügen Suchpfad</li> 
+     <li>hinzufügen Suchpfad</li> 
      <li>Beschreibung</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Eigenschaft </td> 
    <td>Suche nach einer angegebenen Eigenschaft.</td> 
-   <td>none</td> 
+   <td>keine</td> 
   </tr> 
   <tr> 
    <td>Veröffentlichungsstatus </td> 
@@ -299,7 +299,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Relatives Datum </td> 
-   <td>Search assets based on the relative date of their creation<br /> </td> 
+   <td>Suchen nach Assets anhand des relativen Datums ihrer Erstellung<br /> </td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -410,7 +410,7 @@ Identisch mit dem
 
 * **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
 
-* The &amp;ast; on the field labels in the **Settings** tab means the fields are required and if left blank an error message will appear
+* &amp;ast; auf der Registerkarte &quot;**Einstellungen**&quot;die Feldbeschriftungen angezeigt werden, bedeutet dies, dass die Felder erforderlich sind und bei leerem Feld eine Fehlermeldung angezeigt wird
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -494,7 +494,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten       {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten        {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
