@@ -32,11 +32,11 @@ Wählen Sie in der Liste die Warnung **HTTPS konfigurieren** aus und öffnen Sie
 
 >[HINWEIS!]
 >
->If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Wenn die Warnung **HTTPS konfigurieren** nicht im Posteingang vorhanden ist, können Sie direkt zum HTTPS-Assistenten navigieren, indem Sie *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* aufrufen.
 
 Ein Dienstbenutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nachdem Sie die Warnung geöffnet haben, werden Sie durch den folgenden Konfigurationsassistenten geleitet:
 
-1. Richten Sie als Erstes die Store-Anmeldedaten ein. These are the credentials for the **ssl-service** system user&#39;s key store that will contain the private key and trust store for the HTTPS listener.
+1. Richten Sie als Erstes die Store-Anmeldedaten ein. Dies sind die Anmeldeinformationen für den Hauptspeicher des Systembenutzers **ssl-service**, der den privaten Schlüssel und den Trust Store für den HTTPS-Listener enthält.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -56,7 +56,7 @@ Ein Dienstbenutzer mit dem Namen **ssl-service** wurde für diese Funktion erste
 
 Die Funktion „SSL By Default“ (SSL als Standard) kann auf drei Arten automatisiert werden.
 
-### Über HTTP POST {#via-http-post}
+### Über HTTP POST  {#via-http-post}
 
 Bei der ersten Methode wird ein Post an den SSLSetup-Server gesendet, der vom Konfigurationsassistenten verwendet wird:
 
@@ -97,7 +97,7 @@ Das Servlet antwortet wie jedes Sling-POST-Servlet mit „200 OK“ oder einem H
 
 Nachstehend finden Sie Beispiele für eine erfolgreiche Antwort und einen Fehler.
 
-**ERFOLGSBEISPIEL** (Status = 200):
+**ERFOLGSBEISPIEL**  (Status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -128,7 +128,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**FEHLERBEISPIEL** (Status = 500):
+**FEHLERBEISPIEL**  (Status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -155,7 +155,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 Alternativ können Sie das SSL-Setup auch automatisieren, indem Sie ein Paket hochladen, das bereits diese erforderlichen Elemente enthält:
 
 * Den KeyStore des Benutzers „ssl-service“. Dieser befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
-* Die `GraniteSslConnectorFactory` Konfiguration
+* Die `GraniteSslConnectorFactory`-Konfiguration
 
 ### Generieren eines Paares aus privatem Schlüssel/Zertifikat für die Verwendung im Assistenten {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -192,15 +192,15 @@ openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out loca
 
 Abschließend laden Sie **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-Zertifikat, wie in Schritt 2 des grafischen SSL-Assistenten am Anfang dieser Seite beschrieben, hoch.
 
-### Aktualisieren der SSL-Konfiguration über cURL {#updating-the-ssl-configuration-via-curl}
+### Aktualisieren der SSL-Konfiguration über cURL  {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->See [Using cURL with AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) for a centralized list of useful cURL commands in AEM.
+>Eine zentralisierte Liste mit hilfreichen cURL-Befehlen in AEM finden Sie unter [Verwenden von cURL mit AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
 
 Sie können die SSL-Konfiguration auch automatisieren, indem Sie das cURL-Tool verwenden. Posten Sie dazu die Konfigurationsparameter an diese URL:
 
-*https://&lt;serveradresse>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
 Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einstellungen im Konfigurationsassistenten ändern können:
 
@@ -223,7 +223,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 >
 >Die schnellste Art, cURL auszuführen, um die SSL-Konfiguration zu automatisieren, ist über den Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
 >
->You also need to be authenticated in order to perform the update, so make sure you append the cURL command with the `-u user:passeword` parameter.
+>Sie müssen auch authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie daher sicher, dass Sie den Befehl cURL mit dem Parameter `-u user:passeword` anhängen.
 >
 >Ein richtiger cURL-Post-Befehl sieht wie folgt aus:
 
@@ -231,7 +231,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
 ```
 
-#### Mehrere Zertifikate mit cURL {#multiple-certificates-using-curl}
+#### Mehrere Zertifikate mit cURL  {#multiple-certificates-using-curl}
 
 Sie können eine Kette von Zertifikaten an das Servlet senden, indem Sie den Parameter „certificateFile“ wie folgt wiederholen:
 
