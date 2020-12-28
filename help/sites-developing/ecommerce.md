@@ -32,11 +32,11 @@ Weitere Informationen finden Sie unter:
 
 >[!NOTE]
 >
->Since the eCommerce framework can be used with any eCommerce solution, see [Developing (generic)](/help/sites-developing/generic.md) for more information about developing possibilities with Intershop, Elastic Path or IBM Websphere Commerce.
+>Da das eCommerce-Framework mit jeder eCommerce-Lösung verwendet werden kann, finden Sie unter [Entwickeln (generisch)](/help/sites-developing/generic.md) weitere Informationen zur Entwicklung von Möglichkeiten mit Intershop, Elastic Path oder IBM Websphere Commerce.
 
 >[!NOTE]
 >
->Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/sites-deploying/ecommerce.md).
 >
 >Weitere Informationen zu den Konzepten und zur Verwaltung von eCommerce-Implementierungen finden Sie unter [Verwaltung von eCommerce](/help/sites-administering/ecommerce.md).
 
@@ -50,5 +50,5 @@ Weitere Informationen finden Sie in der [API-Dokumentation](https://helpx.adobe.
 
 >[!NOTE]
 >
->For a complete article detailing all the steps to build an eCommerce provider see [Creating custom Adobe Experience Manager 6.2 eCommerce providers](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
+>Einen vollständigen Artikel mit allen Schritten zum Erstellen eines eCommerce-Providers finden Sie unter [Erstellen von benutzerdefinierten Adobe Experience Manager 6.2 eCommerce-Providern](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
 
