@@ -35,7 +35,7 @@ Nutzen Sie die folgenden logischen Schritte, um Ihre benutzerdefinierte Komponen
 
    * Bei der TagHandlerFactory handelt es sich um eine OSGi-Komponente (Singleton), die dafür verantwortlich ist, Instanzen des Taghandlers zu erzeugen.
    * Ihre TagHandlerFactory muss eine OSGi-Eigenschaft mit dem Namen „tagpattern.name“ bereitstellen, deren Wert mit dem Eingabe-HTML-Tag abgeglichen wird.
-   * Wenn mehrere Taghandler mit dem Eingabe-HTML-Tag übereinstimmen, wird jener mit dem höheren Rang gewählt. The ranking itself is exposed as an OSGi property **service.ranking**.
+   * Wenn mehrere Taghandler mit dem Eingabe-HTML-Tag übereinstimmen, wird jener mit dem höheren Rang gewählt. Die Rangordnung selbst wird als OSGi-Eigenschaft **service.ranking** offen gelegt.
    * Die TagHandlerFactory ist eine OSGi-Komponente. Sämtliche Verweise auf den Taghandler müssen über diese Factory erfolgen.
 
 1. Stellen Sie sicher, dass Ihre TagHandlerFactory einen höheren Rang hat, wenn Sie den Standard überschreiben möchten.
@@ -63,7 +63,7 @@ Unten sehen Sie ein Beispiellayout einer Zip-Datei:
 * /img -> alle Bilder und Assets
 * /js -> für das Hinzufügen zur JS-clientlib
 
-Das Layout basiert auf dem Boilerplate-Layout für HTML5. Read more at [https://html5boilerplate.com/](https://html5boilerplate.com/)
+Das Layout basiert auf dem Boilerplate-Layout für HTML5. Mehr darüber unter [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Das Layout basiert auf dem Boilerplate-Layout für HTML5. Read more at [https://
 
 Um das HTML importieren zu können, benötigen Sie ein Leinwand-div zum Einstiegsseiten-HTML.
 
-The canvas div is an html **div** with `id="cqcanvas"` that must be inserted within the HTML `<body>` tag and must wrap the content intended for conversion.
+Die Leinwanddiv ist ein HTML **div** mit `id="cqcanvas"`, das in das HTML `<body>`-Tag eingefügt werden muss und den für die Konvertierung vorgesehenen Inhalt umschließen muss.
 
 Ein Beispiel-Snippet des Einstiegsseiten-HTML nach dem Hinzufügen des Leinwand-div sieht wie folgt aus:
 
@@ -111,9 +111,9 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, 
 
 Beachten Sie vor dem Import die folgenden Beschränkungen:
 
-### Sämtliche Attribute wie „class“ oder „id“, die auf das   &amp;lt;body>-Tag angewendet werden, werden nicht beibehalten. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Sämtliche Attribute wie „class“ oder „id“, die auf das   &amp;lt;body>-Tag angewendet werden, werden nicht beibehalten.  {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-If any attribute like id or class is applied on the body tag for example `<body id="container">` then it is not preserved after the import. So the design being imported should not have any dependencies on the attributes applied on the `<body>` tag.
+Wenn ein Attribut wie id oder class auf das Body-Tag angewendet wird, z. B. `<body id="container">`, wird es nach dem Import nicht beibehalten. Daher sollte das importierte Design keine Abhängigkeit von den Attributen haben, die auf das `<body>`-Tag angewendet werden.
 
 ### Drag-and-Drop-Zip {#drag-and-drop-zip}
 
@@ -129,7 +129,7 @@ Unterstützt wird der Drag-and-Drop-Upload der Design-Zip von folgenden Browsern
 
 Jede Seiteneigenschaft (z. B. „Benutzerdefinierte Domäne“, „HTTPS erzwingen“ usw.), die für eine (mit der Vorlage „Leere Startseite“ erstellte) Seite vor dem Import des Designpakets festgelegt wurde, geht verloren, nachdem das Design importiert wurde. Aus diesem Grund wird empfohlen, die Seiteneigenschaften nach dem Import des Designpakets festzulegen.
 
-### Nur HTML-Markup angenommen {#html-only-markup-assumed}
+### Nur HTML-Markup angenommen  {#html-only-markup-assumed}
 
 Nach dem Importieren wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu verhindern. Dabei wird davon ausgegangen, dass sämtliches reines HTML-Markup und alle anderen Elemente Wie Inline-SVG oder Webkomponenten herausgefiltert werden.
 
@@ -143,7 +143,7 @@ HTML-Markup zum Einfügen einer text-Komponente (`foundation/components/text`) i
 
 Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
-* Creates an editable AEM text component ( `sling:resourceType=foundation/components/text`) in the landing page created after importing the design package.
+* Erstellt eine bearbeitbare AEM Textkomponente ( `sling:resourceType=foundation/components/text`) in der Landingpage, die nach dem Importieren des Designpakets erstellt wurde.
 * Die Eigenschaft `text` der erstellten Komponente „text“ wird auf das im `div` eingeschlossene HTML gesetzt.
 
 **Kurze Komponenten-Tag-Deklaration**:
@@ -175,7 +175,7 @@ So fügen Sie Text mit Farbe (pink) hinzu, der im RTE-Editor bearbeitet werden k
 
 ### Titel {#title}
 
-HTML markup to insert a title component ( `wcm/landingpage/components/title`) in the HTML within design package:
+HTML-Markup, um eine Titelkomponente ( `wcm/landingpage/components/title`) in das HTML-Paket innerhalb des Designpakets einzufügen:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -183,11 +183,11 @@ HTML markup to insert a title component ( `wcm/landingpage/components/title`) in
 
 Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
-* Creates an editable AEM title component ( `sling:resourceType=wcm/landingpage/components/title`) in the landing page created after importing the design package.
+* Erstellt eine bearbeitbare AEM Titellomponente ( `sling:resourceType=wcm/landingpage/components/title`) in der Landingpage, die nach dem Importieren des Designpakets erstellt wurde.
 * Stellt die Eigenschaft `jcr:title`   der erstellten title-Komponente auf den Text ein, der im div in das Überschriften-Tag eingeschlossen ist.
 * Stellt die Eigenschaft `type` des Überschriften-Tags ein, in diesem Fall `h1`.
 
-Die Komponente title unterstützt 7 Typen - `h1, h2, h3, h4, h5, h6` und `default`.
+Die Titelkomponente unterstützt 7 Typen - `h1, h2, h3, h4, h5, h6` und `default`.
 
 **Kurze Komponenten-Tag-Deklaration**:
 
@@ -207,12 +207,12 @@ HTML-Markup zum Einfügen einer image-Komponente (foundation/components/image) i
 
 Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
-* Creates an editable AEM image component ( `sling:resourceType=foundation/components/image`) in the landing page created after importing the design package.
+* Erstellt eine bearbeitbare AEM Bildkomponente ( `sling:resourceType=foundation/components/image`) in der Landingpage, die nach dem Importieren des Designpakets erstellt wurde.
 * Stellt die Eigenschaft `fileReference` der erstellten image-Komponente auf den Pfad ein, in den das im src-Attribut angegebene Bild importiert wird.
-* Sets the `alt` property to the value of alt attribute in the img tag.
-* Sets the `title` property to the value of title attribute in the img tag.
-* Sets the `width` property to the value of width attribute in the img tag.
-* Sets the `height` property to the value of height attribute in the img tag.
+* Legt für die Eigenschaft `alt` den Wert des Attributs &quot;alt&quot;im img-Tag fest.
+* Legt für die Eigenschaft `title` den Wert des Attributs title im img-Tag fest.
+* Legt für die Eigenschaft `width` den Wert des Attributs width im img-Tag fest.
+* Legt für die Eigenschaft `height` den Wert des Attributs height im img-Tag fest.
 
 **Kurze Komponenten-Tag-Deklaration**:
 
@@ -220,9 +220,9 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
 ```
 
-#### Absoluter URL „img src“ wird im div der image-Komponente nicht unterstützt {#absolute-url-img-src-not-supported-within-image-component-div}
+#### Absoluter URL „img src“ wird im div der image-Komponente nicht unterstützt  {#absolute-url-img-src-not-supported-within-image-component-div}
 
-If an `<img>` tag with an absolute url src is attempted for component conversion, an appropriate **UnsupportedTagContentException** is raised. So wird das folgende Beispiel nicht unterstützt:
+Wenn ein `<img>`-Tag mit einer absoluten URL src zur Komponentenkonvertierung versucht wird, wird eine geeignete **UnsupportedTagContentException** ausgelöst. So wird das folgende Beispiel nicht unterstützt:
 
 `<div data-cq-component="image">`
 
@@ -232,14 +232,14 @@ If an `<img>` tag with an absolute url src is attempted for component conversion
 
 Andernfalls werden absolute URL-Bilder für img-Tags unterstützt, die nicht Teil des Bildkomponenten-div sind.
 
-### Aktionsaufruf-Komponenten (CTA) {#call-to-action-components}
+### Aktionsaufruf-Komponenten (CTA)  {#call-to-action-components}
 
 Sie können einen Teil einer zu importierenden Einstiegsseite als „bearbeitbare Aktionsaufruf-Komponente“ markieren. Solche importierten Aktionsaufruf-Komponenten können nach dem Import der Einstiegsseite bearbeitet werden. AEM enthält die folgenden CTA-Komponenten:
 
 * Click Through-Link - Sie können einen Textlink hinzufügen. Wenn der Besucher auf diesen klickt, wird er zu einer Ziel-URL weitergeleitet.
 * Grafischer Link – Sie können ein Bild hinzufügen. Wenn der Besucher darauf klickt, wird er zu einer Ziel-URL weitergeleitet.
 
-#### Click Through-Link {#click-through-link}
+#### Click Through-Link  {#click-through-link}
 
 Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textlink hinzuzufügen.
 
@@ -298,7 +298,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 
 >[!NOTE]
 >
->To create a clickthroughgraphical link, you need to wrap an anchor tag and the image tag inside a div with `data-cq-component="clickthroughgraphicallink"` attribute.
+>Um einen Clickthrough-grafischen Link zu erstellen, müssen Sie ein Anker-Tag und das Image-Tag in ein div mit dem Attribut `data-cq-component="clickthroughgraphicallink"` einschließen.
 >
 >Beispiel:`<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
@@ -310,7 +310,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 >
 >`</div>`
 >
->mit `css .hasbackground { background-image: pathtoimage }`
+>mit einem verknüpften `css .hasbackground { background-image: pathtoimage }`
 
 
 ### Lead-Formular {#lead-form}
@@ -326,9 +326,9 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 * Benutzer können den Titel mit dem Tag „label“ und Stile mit dem Stilattribut „class“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Liste der Danksagungsseite und des Abonnements kann als ausgeblendeter Parameter des Formulars bereitgestellt werden (in der Datei &quot;index.htm&quot;vorhanden) oder über die Bearbeitungsleiste von &quot;Beginn des Interessentenformulars&quot;hinzugefügt/bearbeitet werden.
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/de/user/register/danke_you&quot;/>
+   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot; />
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot; />
 
 * Einschränkungen wie - erforderlich können aus der Bearbeitungskonfiguration jeder Komponente bereitgestellt werden.
 
@@ -414,7 +414,7 @@ Sie können nicht nur angeben, ob es sich bei importierten Komponenten um bearbe
 * Angeben der charset-Kodierung im HTML
 * Überlagern der Importer-Seitenvorlage
 
-### Einrichten von Seiteneigenschaften durch Extrahieren der im importierten HTML definierten Metadaten {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
+### Einrichten von Seiteneigenschaften durch Extrahieren der im importierten HTML definierten Metadaten  {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
 Die folgenden im Kopf des importierten HTML deklarierten Metadaten werden vom Design Importer als Eigenschaft „jcr:description“ extrahiert und beibehalten:
 
@@ -436,15 +436,15 @@ Der Design Importer liest die im importierten HTML festgelegte Kodierung. Die Ko
 
 Wenn im importierten HTML keine Kodierung festgelegt ist, wird vom Design Importer UTF-8 als Standardkodierung festgelegt.
 
-### Überlagern von Vorlagen {#overlaying-template}
+### Überlagern von Vorlagen  {#overlaying-template}
 
-The Blank Landing Page template can be overlayed by creating a new one at: `/apps/<appName>/designimporter/templates/<templateName>`
+Die Vorlage &quot;Leere Landingpage&quot;kann überlagert werden, indem Sie eine neue Vorlage erstellen unter: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Steps for creating a new template in AEM are explained [here](/help/sites-developing/templates.md).
+Die Schritte zum Erstellen einer neuen Vorlage in AEM werden [hier](/help/sites-developing/templates.md) beschrieben.
 
 ### Verweisen auf eine Komponente von der Einstiegsseite {#referring-a-component-from-landing-page}
 
-Angenommen, Sie verfügen über eine Komponente, auf die Sie in Ihrem HTML mit dem data-cq-component-Attribut verweisen möchten, sodass der Design Importer an dieser Stelle eine Komponente rendert. e.g., you want to reference the table component ( `resourceType = /libs/foundation/components/table`). Sie müssen das HTML wie folgt ergänzen:
+Angenommen, Sie verfügen über eine Komponente, auf die Sie in Ihrem HTML mit dem data-cq-component-Attribut verweisen möchten, sodass der Design Importer an dieser Stelle eine Komponente rendert. Beispiel: Sie möchten auf die Tabellenkomponente verweisen ( `resourceType = /libs/foundation/components/table`). Sie müssen das HTML wie folgt ergänzen:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -468,7 +468,7 @@ Dies liegt daran, dass dem generierten HTML nach dem Import zusätzliche HTML-El
 
 * Skripts, die auf einer ähnlichen Struktur basieren, werden ebenfalls nicht für die Verwendung mit Elementen empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
 * Die Verwendung von Stilen für die Markup-Tags zur Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
-* Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Read more on: [https://html5boilerplate.com/](https://html5boilerplate.com/).
+* Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Mehr darüber: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
 
@@ -530,7 +530,7 @@ In der folgenden Tabelle finden Sie eine Kurzbeschreibung der Eigenschaften:
 >
 >`/\&ast *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->And you need to replace `CQ_DESIGN_PATH` with `VIPURL` in the search pattern, then your search pattern should look like this:
+>Und Sie müssen `CQ_DESIGN_PATH` durch `VIPURL` im Suchmuster ersetzen, dann sollte Ihr Suchmuster wie folgt aussehen:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -538,7 +538,7 @@ In der folgenden Tabelle finden Sie eine Kurzbeschreibung der Eigenschaften:
 
 Beim Import des Designpakets können verschiedene Fehler auftreten, die in diesem Abschnitt beschrieben werden.
 
-### Initialisierung des Sidekicks mit für Einstiegsseiten relevanten Komponenten {#initialization-of-sidekick-with-landing-page-relevant-components}
+### Initialisierung des Sidekicks mit für Einstiegsseiten relevanten Komponenten  {#initialization-of-sidekick-with-landing-page-relevant-components}
 
 Wenn das Designpaket ein parsys-Komponenten-Markup enthält, werden nach dem Import im Sidekick für Einstiegsseiten relevante Komponenten angezeigt. Sie können neue Komponenten per Drag-and-Drop auf die parsys-Komponente in der Einstiegsseite ziehen. Sie können auch den Designmodus aufrufen und dem Sidekick neue Komponenten hinzufügen.
 
@@ -598,5 +598,5 @@ wird `box img` im Design Importer verwendet. Die daraus resultierende Einstiegss
 
 >[!NOTE]
 >
->Also, designers should be aware that only code inside the **id=cqcanvas** tag is recognized by the importer, otherwise design is not preserved.
+>Designer sollten außerdem beachten, dass nur Code innerhalb des Tags **id=cqcanvas** vom Importeur erkannt wird, da andernfalls Design nicht beibehalten wird.
 
