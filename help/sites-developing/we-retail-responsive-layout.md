@@ -20,7 +20,7 @@ ht-degree: 74%
 
 # Ausprobieren von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Alle Web.Retail-Seiten verwenden die Komponente Layout Container, um reaktionsfähiges Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+Alle Web.Retail-Seiten verwenden die Komponente Layout Container, um reaktionsfähiges Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem Modus **Layout** im Seiteneditor verwendet, mit dem Sie Ihr reaktionsfähiges Layout je nach Gerät erstellen und bearbeiten können.
 
 ## Testen {#trying-it-out}
 
@@ -48,4 +48,4 @@ Alle Web.Retail-Seiten verwenden die Komponente Layout Container, um reaktionsf�
 
 ## Weiterführende Informationen {#further-information}
 
-For further information, refer to the authoring document [Responsive Layout](/help/sites-authoring/responsive-layout.md) or the administrator document [Configuring Layout Container and Layout Mode](/help/sites-administering/configuring-responsive-layout.md) for complete technical details.
+Weitere Informationen finden Sie im Authoring-Dokument [Responsive Layout](/help/sites-authoring/responsive-layout.md) oder im Administrator-Dokument [Konfigurieren des Layout-Containers und des Layoutmodus](/help/sites-administering/configuring-responsive-layout.md).
