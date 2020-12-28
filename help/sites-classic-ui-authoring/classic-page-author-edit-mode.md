@@ -30,9 +30,9 @@ Einige sind direkt im Sidekick verfügbar, viele andere können außerdem im [De
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
+Die Komponenten stehen zur Verfügung, wenn Sie eine Seite [auf der Registerkarte **Komponenten** des Sidekick bearbeiten und die Auswahl **Neue Komponente einfügen** auswählen (wenn Sie mit der Dublette in den Bereich **Komponenten oder Elemente hierher ziehen** klicken).](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)
 
-You can select a component and drag it to the required location on your page and then [Edit Content and Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+Sie können eine Komponente auswählen und an die gewünschte Position auf Ihrer Seite ziehen und dann [Inhalt und Eigenschaften bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 Komponenten werden nach verschiedenen Kategorien (Komponentengruppen) sortiert, einschließlich (für die Bearbeitung der Seite):
 
@@ -50,7 +50,7 @@ Sie können einen Link mit Titel und Beschreibung definieren.
 
 ![](do-not-localize/chlimage_1-4.png)
 
-### Adaptives Bild {#adaptive-image}
+### Adaptives Bild  {#adaptive-image}
 
 Die Komponente der Adaptive Image Foundation erzeugt Bilder, die in das Fenster eingepasst werden, in dem die Webseite geöffnet wird. Um die Komponente zu verwenden, geben Sie eine Bildressource entweder im Dateisystem oder im DAM an. Wenn die Webseite geöffnet wird, lädt der Webbrowser eine Kopie des Bildes herunter, die so in der Größe angepasst wurde, dass sie in das aktuelle Fenster passt.
 
@@ -185,7 +185,7 @@ Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
          * **Seiten**
 
-            Wählen Sie eine Liste von Seiten aus. Use `+` to add more entries and the up/down buttons to adjust the order.
+            Wählen Sie eine Liste von Seiten aus. Verwenden Sie `+`, um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -203,7 +203,7 @@ Sie können eine Textsuchanfrage eingeben.
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
    * **Sortieren nach**
 
-      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü.
+      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü.
 
    * **Beschränkung**
 
@@ -217,7 +217,7 @@ Sie können eine Textsuchanfrage eingeben.
 >
 >Sie können eine individuelle Karussell-Komponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Erstellen von benutzerdefinierten Karussellkomponenten für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
-### Diagramm {#chart}
+### Diagramm  {#chart}
 
 Mit der Komponente „Diagramm“ können Sie ein Balken-, Linien- oder Tortendiagramm hinzufügen. AEM erstellt aus den von Ihnen zur Verfügung gestellten Daten ein Diagramm. Die Daten geben Sie direkt auf der Registerkarte „Daten“ ein oder fügen sie durch Kopieren aus einer Tabelle ein.
 
@@ -315,7 +315,7 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 >
 >Abhängig von Ihrem Nutzungsszenario sind weitere Optionen für die Integration externer Anwendungen verfügbar, z. B.: die [Integration von Portlets](/help/sites-administering/aem-as-portal.md).
 
-### Flash  {#flash}
+### Flash   {#flash}
 
 Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ein Flash-Asset aus dem Content Finder auf die Komponente ziehen oder das folgende Dialogfeld verwenden:
 
@@ -371,7 +371,7 @@ Sie können ein Bild aus dem [Content Finder](/help/sites-classic-ui-authoring/c
 >
 >Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
 >
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+>Weitere Informationen zu den von AEM verwendeten HTML5-Funktionen finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms).
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -439,20 +439,20 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
       * **Optionen für untergeordnete Seiten**
 
-         * **Untergeordnete Elemente** (übergeordnete Seite)
+         * **Untergeordnete Elemente**  (übergeordnete Seite)
 
             Geben Sie einen Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten** - Wählen Sie eine Liste von Seiten aus. Verwenden Sie +, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten** : Wählen Sie eine Liste von Seiten aus. Verwenden Sie +, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
-         * **Beginn in** - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe der Auswahl. Suchanfrage
+         * **Beginn in**  - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe der Auswahl. Suchanfrage
 Sie können eine Textsuchanfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
-         * **Querybuilder-Vorhersage** - Sie können eine Abfrage mit Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine ausführliche Erläuterung der Ausdrücke und weitere Beispiele finden Sie unter [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) .
-      * **Tags** - Geben Sie die **übergeordnete Seite**, **Tags/Suchbegriffe** und Ihre erforderlichen Übereinstimmungskriterien an.
+         * **Querybuilder-Vorhersage**  - Sie können eine Suchbegriffs-Abfrage mit Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine ausführliche Erläuterung der Ausdrücke und weitere Beispiele finden Sie unter  [QueryBuilder ](/help/sites-developing/querybuilder-api.md) API.
+      * **Tags** : Geben Sie die  **übergeordnete Seite**,  **Tags/** Suchbegriffe und Ihre erforderlichen Übereinstimmungskriterien an.
    * **Anzeigen als**
 
       Angabe, wie die Elemente aufgeführt werden sollen; umfasst Links, Teaser und Nachrichten.
@@ -577,7 +577,7 @@ Sie können Folgendes konfigurieren:
 
    * **Knotentypen**
 
-      If the search is to be restricted to specific node type list them here; for example, `cq:Page`.
+      Wenn die Suche auf eine bestimmte Node-Typ-Liste beschränkt werden soll, können sie hier erfolgen. zum Beispiel `cq:Page`.
 
    * **Suchpfad**
 
@@ -656,7 +656,7 @@ Sie können Folgendes konfigurieren:
 
    * **Neue Folie**
 
-      You can specify a selection of slides using the **Add** (and **Remove**) buttons.
+      Sie können eine Auswahl von Folien mit den Schaltflächen **Hinzufügen** (und **Entfernen**) angeben.
 
    * **Titel**
 
@@ -820,7 +820,7 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 * Video
 
    * **Video-Asset** : Laden Sie das Video-Asset hoch oder legen Sie es ab.
-   * **Größe** - Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier die Abmessungen für Breite und Höhe manuell ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+   * **Größe** : Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier die Abmessungen für Breite und Höhe manuell ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Klicken Sie auf  **** OK, um das Dialogfeld zu schließen.
 
 >[!NOTE]
 >
@@ -846,7 +846,7 @@ Das folgende Beispiel zeigt die Komponenten für zwei und drei Spalten im Einsat
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 2 gleich großen Spalten.
 
-### 3 Spalten {#columns-2}
+### 3 Spalten  {#columns-2}
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 3 gleich großen Spalten.
 
@@ -860,7 +860,7 @@ Mit der Spalten-Steuerung-Komponente können Benutzer auswählen, wie sie den In
 
       Wählen Sie die Anzahl der Spalten aus, die dargestellt werden sollen. Nach der Erstellung verfügt jede Spalte über einen eigenen Link, um Inhalt hinzuzufügen, indem Komponenten oder Assets dorthin gezogen werden.
 
-## Formular {#form}
+## Formular  {#form}
 
 Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingaben vornehmen können. Formulare und Formular-Komponenten können dazu genutzt werden, Informationen, einschließlich Benutzer-Feedback (z. B. ein Fragebogen zur Kundenzufriedenheit), und Benutzerinformationen (z. B. Benutzerregistrierung) zu sammeln.
 
@@ -953,7 +953,7 @@ Diese Registerkarten stellen die erforderlichen Parameter bereit. Diese können 
 
       Dies hängt vom Formularkomponententyp ab, stellt jedoch ein oder mehrere Klickfelder bereit, um anzugeben, dass dieses Feld oder bestimmte Teile dieses Felds erforderlich sind/sind.
 
-   * **Erforderliche Meldung** : Eine Meldung, die die Benutzer darüber informiert, dass dieses Feld erforderlich ist. Ein erforderliches Feld wird auch mit und mit Sternchen gekennzeichnet.
+   * **Erforderliche Meldung** : Eine Meldung, die die Benutzer darüber informiert, dass dieses Feld erforderlich ist; Ein erforderliches Feld wird auch mit und mit Sternchen gekennzeichnet.
    * **Einschränkung** : Die zur Auswahl verfügbaren Einschränkungen hängen vom Formularkomponententyp ab.
    * **Beschränkungsmeldung**
 Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
@@ -970,7 +970,7 @@ Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
 
    * **CSS**
 
-### Formular (Komponente) {#form-component}
+### Formular (Komponente)  {#form-component}
 
 Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese treten immer gemeinsam auf, damit das Formular ordnungsgemäß definiert wird.
 
@@ -978,7 +978,7 @@ Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithil
 
 Zwischen dem Start und dem Ende eines Formulars können Sie Formular-Komponenten hinzufügen, die die eigentlichen Eingabefelder für die Benutzer definieren.
 
-#### Beginn des Formulars {#start-of-form}
+#### Beginn des Formulars  {#start-of-form}
 
 Diese Komponente ist erforderlich, um den Beginn eines neuen Formulars auf einer Seite zu definieren. Sie können Folgendes konfigurieren:
 
@@ -1049,7 +1049,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Aktionskonfiguration**
 
-      The options available in **Action Configuration** are dependent on the **Action Type** selected:
+      Die unter **Aktionskonfiguration** verfügbaren Optionen hängen von der ausgewählten **Aktionstyp** ab:
 
       * **Kontoabfrage**
 
@@ -1059,7 +1059,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * Inhalts-Pfad
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Enter a path that ends with a slash `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
 
             `/forms/feedback/`
 
@@ -1077,7 +1077,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Ressourcentyp**
 
-            Wenn diese Einstellung festgelegt ist, wird dies jedem Kommentar als `sling:resourceType`
+            Wenn festgelegt, wird dies jedem Kommentar als `sling:resourceType` hinzugefügt
 
          * **Ansichtselektor**
       * **Lead erstellen**
@@ -1101,7 +1101,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Daten anzeigen...**
 
-            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
+            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv`-Datei (tabulatorgetrennt) exportieren (z. B. in eine Excel-Tabelle).
       * **E-Mail**
 
          * **From**
@@ -1132,7 +1132,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Inhalts-Pfad**
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Enter a path that ends with a slash `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
 
             `/forms/feedback/`
 
@@ -1141,7 +1141,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
             Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine TSV-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
       * **Inhalt mit Uploads speichern**
 
-         Diese Option hat die gleichen Optionen wie **Inhalt** speichern.
+         Diese Option hat die gleichen Optionen wie **Inhalt speichern**.
 
       * **Abonnenten löschen**
 
@@ -1202,7 +1202,7 @@ Hiermit können Sie ein Feld für internationale Adressen im folgenden Format hi
 
 Die Komponente ist für den unmittelbaren Einsatz konfiguriert, Sie können die Konfiguration jedoch bei Bedarf ändern. Es können z. B. Beschränkungen für die einzelnen Elemente der Adresse hinzugefügt werden. Wenn Sie die Felder leer lassen, werden die Standardeinstellungen verwendet.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge eingeben, die am Bildschirm angezeigt wird. Die Zeichenfolge ändert sich bei jeder Aktualisierung.
 
@@ -1210,7 +1210,7 @@ Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge e
 
 Sie können verschiedene Parameter für diese Komponente konfigurieren, darunter eine Meldung, die bei einer ungültigen Captcha-Zeichenfolge angezeigt wird.
 
-### Kontrollkästchen-Gruppe {#checkbox-group}
+### Kontrollkästchen-Gruppe  {#checkbox-group}
 
 Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
