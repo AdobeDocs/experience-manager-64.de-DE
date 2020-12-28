@@ -20,7 +20,7 @@ ht-degree: 57%
 
 # Externalisieren von URLs{#externalizing-urls}
 
-In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
+In AEM ist der **Externalizer** ein OSGI-Dienst, mit dem Sie einen Ressourcenpfad (z. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) hinein, indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
@@ -28,16 +28,16 @@ Auf dieser Seite wird beschrieben, wie Sie den **Externalizer**-Dienst konfiguri
 
 ## Konfigurieren des Externalizer-Diensts {#configuring-the-externalizer-service}
 
-The **Externalizer** service allows you to centrally define multiple domains that can be used to programmatically prefix resource paths. Alle Domänen werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domäne identifiziert.
+Mit dem Dienst **Externalizer** können Sie mehrere Domänen zentral definieren, die zum programmatischen Präfix von Ressourcenpfaden verwendet werden können. Alle Domänen werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domäne identifiziert.
 
 Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folgt:
 
-1. Navigate to the configuration manager via **Tools**, then **Web Console**, or enter `https://<host>:<port>/system/console/configMgr.`
-1. Click **Day CQ Link Externalizer** to open the configuration dialog box.
+1. Navigieren Sie zum Konfigurationsmanager über **Tools**, dann **Web Console** oder geben Sie `https://<host>:<port>/system/console/configMgr.` ein.
+1. Klicken Sie auf **Day CQ Link Externalizer**, um das Konfigurationsdialogfeld zu öffnen.
 
    >[!NOTE]
    >
-   >The direct link to the configuration is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
+   >Der direkte Link zur Konfiguration ist `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -45,18 +45,18 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, wohin gehört:
 
-   * **-Schema** ist normalerweise http oder https, kann aber auch ftp usw. sein.Verwenden Sie https, um https-Verknüpfungen zu erzwingen, falls gewünscht. Es wird verwendet, wenn der Clientcode das Schema beim Anfordern der Externalisierung einer URL nicht außer Kraft setzt.
-   * **server** ist der Hostname (kann ein Domänenname oder eine IP-Adresse sein).
-   * **port** (optional) ist die Anschlussnummer.
+   * **Ein** Schema ist normalerweise http oder https, kann aber auch ftp usw. sein.Verwenden Sie https, um https-Verknüpfungen zu erzwingen, falls gewünscht. Es wird verwendet, wenn der Clientcode das Schema beim Anfordern der Externalisierung einer URL nicht außer Kraft setzt.
+   * **Der** Server ist der Hostname (kann ein Domänenname oder eine IP-Adresse sein).
+   * **port**  (optional) ist die Anschlussnummer.
    * **contextpath** (optional) wird nur festgelegt, wenn AEM als Webapp unter einem anderen Kontextpfad installiert wird.
 
    Beispiel: `production https://my.production.instance`
 
    Die folgenden Zuordnungsnamen sind vordefiniert und müssen immer so eingestellt werden, wie AEM davon abhängt:
 
-   * **lokal** - lokale Instanz
-   * **author** - das Authoring-System DNS
-   * **publish** - die öffentlich zugängliche Website-DNS
+   * **lokal**  - lokale Instanz
+   * **author**  - das Authoring-System-DNS
+   * **publish**  - das für die Öffentlichkeit zugängliche Website-DNS
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
 
 >[!NOTE]
 >
->Adobe recommends that you [add the configuration to the repository](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+>Adobe empfiehlt, die Konfiguration dem Repository](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) hinzuzufügen.[
 
 ## Verwenden des Externalizer-Diensts {#using-the-externalizer-service}
 
@@ -80,18 +80,18 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der **Externalizer**-Dienst 
 
 `String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";`
 
-Unter der Voraussetzung, dass die Domänenzuordnung &quot; `publish https://www.website.com`&quot;verwendet wird, erhält myExternalizedUrl den Wert &quot; `https://www.website.com/contextpath/my/page.html`&quot;.
+Unter der Annahme der Domänenzuordnung &quot; `publish https://www.website.com`&quot;endet myExternalizedUrl mit dem Wert &quot; `https://www.website.com/contextpath/my/page.html`&quot;.
 
 **Einen Pfad mit der author-Domäne externalisieren Sie wie folgt:**
 
 `String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";`
 
-Unter der Voraussetzung, dass die Domänenzuordnung &quot; `author https://author.website.com`&quot;verwendet wird, erhält myExternalizedUrl den Wert &quot; `https://author.website.com/contextpath/my/page.html`&quot;.
+Unter der Annahme der Domänenzuordnung &quot; `author https://author.website.com`&quot;endet myExternalizedUrl mit dem Wert &quot; `https://author.website.com/contextpath/my/page.html`&quot;.
 
 **Einen Pfad mit der local-Domäne externalisieren Sie wie folgt:**
 
 `String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";`
 
-Unter der Voraussetzung, dass die Domänenzuordnung &quot; `local https://publish-3.internal`&quot;verwendet wird, erhält myExternalizedUrl den Wert &quot; `https://publish-3.internal/contextpath/my/page.html`&quot;.
+Unter der Annahme der Domänenzuordnung &quot; `local https://publish-3.internal`&quot;endet myExternalizedUrl mit dem Wert &quot; `https://publish-3.internal/contextpath/my/page.html`&quot;.
 
 Weitere Beispiele finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
