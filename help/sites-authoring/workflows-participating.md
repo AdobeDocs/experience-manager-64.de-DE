@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Die Durchführung eines Teilnehmerschritts ist möglich:
 
 * [im Posteingang](#completing-a-participant-step-inbox) 
 * [im Seiten-Editor](#completing-a-participant-step-page-editor) 
-* [Timeline](#completing-a-participant-step-timeline)
+* [Zeitleistensegment](#completing-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions)
 
 #### Durchführen eines Teilnehmerschritts: Posteingang {#completing-a-participant-step-inbox}
@@ -116,7 +116,7 @@ Sie können auch die Timeline verwenden, um einen Schritt abzuschließen und zum
 
 1. Wählen Sie **Voranbringen**, um die Aktion zu bestätigen.
 
-### Delegieren eines Teilnehmerschritts   {#delegating-a-participant-step}
+### Delegieren eines Teilnehmerschritts    {#delegating-a-participant-step}
 
 Wenn Ihnen ein Schritt zugewiesen wurde, Sie aber aus irgendeinem Grund keine entsprechende Maßnahme ergreifen können, können Sie den Schritt an einen anderen Benutzer oder eine Gruppe delegieren.
 
@@ -135,7 +135,7 @@ Das Delegieren eines Teilnehmerschritts ist möglich:
 
 * [im Posteingang](#delegating-a-participant-step-inbox)
 * [im Seiten-Editor](#delegating-a-participant-step-page-editor) 
-* [Timeline](#delegating-a-participant-step-timeline)
+* [Zeitleistensegment](#delegating-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions)
 
 #### Delegieren eines Teilnehmerschritts: Posteingang {#delegating-a-participant-step-inbox}
@@ -185,7 +185,7 @@ Das Wechseln zu einem vorherigen Teilnehmerschritt ist möglich:
 
 * [im Posteingang](#performing-step-back-on-a-participant-step-inbox)
 * [im Seiten-Editor](#performing-step-back-on-a-participant-step-page-editor) 
-* [Timeline](#performing-step-back-on-a-participant-step-timeline)
+* [Zeitleistensegment](#performing-step-back-on-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions)
 
 #### Wechseln zu einem vorherigen Teilnehmerschritt: Posteingang {#performing-step-back-on-a-participant-step-inbox}
