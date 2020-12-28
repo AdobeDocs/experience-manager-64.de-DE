@@ -1,6 +1,6 @@
 ---
 title: Komponenten
-seo-title: Komponenten
+seo-title: 'Komponenten '
 description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten
 seo-description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
@@ -54,15 +54,15 @@ Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert
 
 Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md) bietet einen Überblick über die Komponentengruppen und Komponenten, die von Ihrer AEM-Installation bereitgestellt werden. Sie können wichtige Informationen über die einzelnen Komponenten und deren Verwendung anzeigen.
 
-## Komponenten - Hauptbereiche {#components-major-areas}
+## Komponenten - Hauptbereiche  {#components-major-areas}
 
 Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informationen zu Komponenten:
 
 * [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) – Die Kernkomponenten bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen. 
 
-* [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
+* [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn eine [Community-Site](/help/communities/overview.md) erstellt wird.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - Die eCommerce-Funktionalität in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
+* [eCommerce](/help/sites-administering/ecommerce.md)  - Die eCommerce-Funktionalität in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
