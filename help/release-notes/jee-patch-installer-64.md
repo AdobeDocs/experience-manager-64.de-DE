@@ -17,11 +17,11 @@ ht-degree: 44%
 
 >[!NOTE]
 >
->[Wenden Sie sich an den Support](https://www.adobe.com/de/account/sign-in.supportportal.html) , um weitere Informationen zu erhalten oder den Patch zu erhalten.
+>[Wenden Sie sich an ](https://www.adobe.com/de/account/sign-in.supportportal.html) den Support, um weitere Informationen zu erhalten oder den Patch zu erhalten.
 
 ## Informationen zum Patch-Installationsprogramm {#about-the-patch-installer}
 
-Das AEM 6.4 Forms JEE Patch-Installationsprogramm enthält alle behobenen Probleme für alle Komponenten von AEM 6.4 Forms JEE, die bis zur Veröffentlichung dieses Patches verfügbar sind. Eine vollständige Liste der behobenen Probleme finden Sie in den aktuellen Versionshinweisen [zum](cfp-release-notes.md) Cumulative Fix Pack.
+Das AEM 6.4 Forms JEE Patch-Installationsprogramm enthält alle behobenen Probleme für alle Komponenten von AEM 6.4 Forms JEE, die bis zur Veröffentlichung dieses Patches verfügbar sind. Eine vollständige Liste der behobenen Probleme finden Sie in den neuesten [Versionshinweisen zu den kumulativen Fix Packs](cfp-release-notes.md).
 
 ## Voraussetzungen für die Installation des Patches {#prerequisites-to-installing-the-patch}
 
@@ -34,12 +34,14 @@ Das AEM 6.4 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Extrahieren Sie die Patch-Installationsarchivdatei auf Ihre Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
-   * **Windows** Navigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Installationsordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie mit der Dublette auf das 
+   * ****
+WindowsNavigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Installationsordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie bei Dublette auf das 
 `aemforms64_cfp_install.exe` file.
 
-      * (Windows 32-bit) `Windows\Disk1\InstData\VM`
-      * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * **Linux, Solaris, AIX** Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforderung 
+      * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
+      * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+   * **Linux, Solaris,**
+AIXNavigate zum entsprechenden Ordner und geben Sie an einer Eingabeaufforderung 
 `./aem64_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -56,18 +58,18 @@ Das AEM 6.4 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 
 1. Lesen Sie die Schnellkorrekturzusammenfassung und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Lesen Sie die Informationen zur „Zusammenfassung vor der Installation“ und klicken Sie auf **[!UICONTROL Installieren]**.
-1. When the installation is complete, click **[!UICONTROL Next]**to apply the quick fix updates to your installed files.
-1. [Nur] Windows Führen Sie einen der folgenden Schritte aus:
+1. Wenn die Installation abgeschlossen ist, klicken Sie auf **[!UICONTROL Weiter]**und wenden Sie die Schnellkorrektur-Aktualisierungen auf die installierten Dateien an.
+1. [Nur WindowsFühren Sie ] einen der folgenden Schritte aus:
 
-   * Deaktivieren Sie die Option „LiveCycle Configuration Manager“ starten, bevor Sie auf „Fertig“ klicken. Führen Sie Configuration Manager zu einem späteren Zeitpunkt mithilfe der `ConfigurationManager.bat` Datei unter `[aem-forms root]\configurationManager\bin`. Mithilfe dieser `ConfigurationManager.bat` Hilfe vermeiden Sie die manuelle Aktualisierung des Namens axis.jar in .lax-Dateien
-   * Deaktivieren Sie die Option „LiveCycle Configuration Manager“ starten, bevor Sie auf „Fertig“ klicken. Bevor Sie Configuration Manager mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** ausführen, navigieren Sie zum Ordner *&lt;AEMForms_Install_Dir>\configurationManager\bin* und aktualisieren Sie **axis.jar** in den folgenden Dateien auf **axis-1.4.1.1.jar** :
+   * Deaktivieren Sie die Option „LiveCycle Configuration Manager“ starten, bevor Sie auf „Fertig“ klicken. Führen Sie Configuration Manager später mit der Datei `ConfigurationManager.bat` unter `[aem-forms root]\configurationManager\bin` aus. Mithilfe von `ConfigurationManager.bat` können Sie die manuelle Aktualisierung des Namens von axis.jar in .lax-Dateien vermeiden
+   * Deaktivieren Sie die Option „LiveCycle Configuration Manager“ starten, bevor Sie auf „Fertig“ klicken. Bevor Sie Configuration Manager mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** ausführen, navigieren Sie zum Ordner *&lt;AEMForms_Install_Dir>\configurationManager\bin* und aktualisieren Sie **axis.jar** auf **axis-1.4.1.1.1..jar** in den folgenden Dateien:
 
       * ConfigurationManager.lax
       * ConfigurationManager_IPv6.lax
 
 1. (Nur Unix-basiert) Das Kontrollkästchen Beginn Configuration Manager ist standardmäßig aktiviert. Klicken Sie auf **[!UICONTROL Fertig]**, um Configuration Manager auszuführen.
 
-   Um Configuration Manager später auszuführen, deaktivieren Sie die Option Configuration Manager starten, bevor Sie auf Fertig klicken. You can start Configuration Manager later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
+   Um Configuration Manager später auszuführen, deaktivieren Sie die Option Configuration Manager starten, bevor Sie auf Fertig klicken. Sie können Configuration Manager später mit dem entsprechenden Beginn im Ordner `[AEM_forms_root]/configurationManager/bin` ausführen.
 
 1. Wählen Sie je nach Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
@@ -96,4 +98,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Foundation JEE
 * PDFG Service
 
-[Support kontaktieren](https://www.adobe.com/de/account/sign-in.supportportal.html)
+[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
