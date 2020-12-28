@@ -23,7 +23,7 @@ ht-degree: 96%
 
 Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
 
-* The title appears in the **Sidekick**, from where authors can access them to work on them.
+* Der Titel wird im Ordner **Sidekick** angezeigt, von wo aus Autoren auf sie zugreifen können, um sie bearbeiten zu können.
 * Die untergeordneten Seiten der Quellseiten werden standardmäßig in den Launch eingeschlossen. Sie können bei Bedarf nur die Quellseite verwenden.
 * Standardmäßig aktualisiert [Live Copy](/help/sites-administering/msm.md) automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird.
 
