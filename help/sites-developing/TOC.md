@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 81%
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 81%
    + [Struktur der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-structure.md)
    + [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-concepts.md)
    + [AEM-Entwicklung – Richtlinien und Best Practices](dev-guidelines-bestpractices.md)
-   + [Verwendung clientseitiger Bibliotheken](clientlibs.md)
+   + [Verwendung Client-seitiger Bibliotheken](clientlibs.md)
    + [Entwicklung und Seitenvergleich](pagediff.md)
    + [Editor-Einschränkungen](editor-limitations.md)
    + [Das CSRF Protection Framework](csrf-protection.md)
@@ -80,8 +80,8 @@ ht-degree: 81%
    + [Entwickeln von AEM-Komponenten – Codebeispiele](developing-components-samples.md)
    + [JSON-Exporter für Content Services](json-exporter.md)
    + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
-   + [Bild-Editor](image-editor.md)
-   + [Decoration-Tag](decoration-tag.md)
+   + [Bildeditor](image-editor.md)
+   + [Decoration-Tag ](decoration-tag.md)
    + [Verwenden von Bedingungen zum Ausblenden](hide-conditions.md)
    + [Konfigurieren mehrerer Editoren für Bearbeitung im Kontext](multiple-inplace-editors.md)
    + [Entwicklermodus](developer-mode.md)
@@ -93,30 +93,30 @@ ht-degree: 81%
       + [Internationalisierung von UI-Zeichenfolgen](i18n-dev.md)
       + [Verwalten von Wörterbüchern mithilfe des Übersetzers](i18n-translator.md)
       + [Extrahieren von Zeichenfolgen zur Übersetzung](i18n-extract.md)
-   + Classic-Komponenten der Benutzeroberfläche{#classic-ui-components}
+   + Komponenten der klassischen Benutzeroberfläche{#classic-ui-components}
       + [Entwickeln von AEM-Komponenten (klassische Benutzeroberfläche)](developing-components-classic.md)
       + [Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)](widgets.md)
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
 + Headless-Experience-Management{#headless}
-   + [Kopflos und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Headless und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
    + Einzelseiten-Webanwendungen{#spas}
-      + [SPA Einführung und exemplarische Vorgehensweise](spa-walkthrough.md)
-      + [SPA WKND-Tutorial](spa-wknd.md)
+      + [Einführung in SPAs und exemplarische Anleitung](spa-walkthrough.md)
+      + [SPA-WKND-Tutorial](spa-wknd.md)
       + [Erste Schritte mit SPA in AEM - React](spa-getting-started-react.md)
       + [Erste Schritte mit SPA in AEM - Angular](spa-getting-started-angular.md)
       + [Implementieren einer Reaktionskomponente für SPA](spa-implementing-react-component.md)
-      + [SPA Tauchgänge](spa-deep-dives.md)
+      + [Genaue Informationen zu SPAs](spa-deep-dives.md)
       + [SPA-Editor – Überblick](spa-overview.md)
-      + [Entwicklung von SPA für AEM](spa-architecture.md)
+      + [Entwickeln von SPAs für AEM](spa-architecture.md)
       + [SPA-Blueprint](spa-blueprint.md)
-      + [SPA](spa-page-component.md)
-      + [Zuordnung dynamischer Modelle zu Komponenten für SPA](spa-dynamic-model-to-component-mapping.md)
-      + [Routing SPA](spa-routing.md)
-      + [SPA und Adobe Experience Platform Launch-Integration](spa-launch.md)
-      + [SPA und serverseitiges Rendering](spa-ssr.md)
-      + [SPA](spa-reference-materials.md)
+      + [SPA-Seitenkomponente](spa-page-component.md)
+      + [Zuordnung dynamischer Modelle zu Komponenten für SPAs](spa-dynamic-model-to-component-mapping.md)
+      + [SPA-Modell-Routing](spa-routing.md)
+      + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
+      + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
+      + [SPA-Referenzmaterial](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
    + [Inhaltsfragmente](/help/assets/content-fragments.md)
    + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
@@ -136,13 +136,13 @@ ht-degree: 81%
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung  {#personlization}
++ Personalisierung {#personlization}
    + [ContextHub](contexthub.md)
    + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
-   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
-   + [Beispiele für ContextHub-Store-Kandidaten](ch-samplestores.md)
-   + [Mustertypen von ContextHub-Benutzeroberflächenmodulen](ch-samplemodules.md)
+   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher ](ch-adding.md)
+   + [Beispiele für ContextHub-Store-Kandidaten ](ch-samplestores.md)
+   + [Mustertypen von ContextHub-UI-Modulen ](ch-samplemodules.md)
    + [ContextHub-Diagnosen](ch-diagnostics.md)
    + [Entwicklung für zielgerichtete Inhalte](target.md)
    + ClientContext{#client-context}
@@ -154,7 +154,7 @@ ht-degree: 81%
    + [Anpassen von Ansichten von Seiteneigenschaften](page-properties-views.md)
    + [Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften](bulk-editing.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](customizing-content-fragments.md)
-   + Workflows erweitern{#extending-workflows}
+   + Erweitern von Workflows{#extending-workflows}
       + [Entwickeln und Erweitern von Workflows](workflows.md)
       + [Erstellen von Workflow-Modellen](workflows-models.md)
       + [Erweitern der Workflow-Funktionen](workflows-customizing-extending.md)
@@ -163,7 +163,7 @@ ht-degree: 81%
       + [Best Practices für Workflows](workflows-best-practices.md)
       + [Referenz für Workflow-Prozesse](workflows-process-ref.md)
    + [Erweitern des Multi-Site-Managers](extending-msm.md)
-   + Verfolgung und Analyse{#extending-analytics}
+   + Tracking und Analytics{#extending-analytics}
       + [Erweitern der Ereignisverfolgung](extending-analytics.md)
       + [Hinzufügen der Adobe Analytics-Verfolgung zu Komponenten](extending-analytics-components.md)
       + [Anpassen des Adobe Analytics-Rahmens](extending-analytics-framework.md)
