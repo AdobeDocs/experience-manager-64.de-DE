@@ -26,7 +26,7 @@ Bühnen sind platzsparende 3D-Szenendateien, die die grundlegende Anzeigeumgebun
 >
 >Das Format OBJ 3D unterstützt kein Licht. Deshalb kann es nicht verwendet werden, um Bühnen für AEM 3D bereitzustellen.
 
-Das Dateiformat der Bühne bestimmt, welchen Renderer Sie für diese Bühne verwenden können. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Wenn Sie beabsichtigen, den standardmäßigen Rapid Refine™-Renderer zu verwenden, ist jedes unterstützte Bühnen-Dateiformat akzeptabel.
+Das Dateiformat der Bühne bestimmt, welchen Renderer Sie für diese Bühne verwenden können. Wenn z. B. Autodesk® Maya® für eine hochwertige Wiedergabe verwendet wird, muss die Bühne im Format `.ma` oder `.mb` vorliegen. Wenn Sie beabsichtigen, den standardmäßigen Rapid Refine™-Renderer zu verwenden, ist jedes unterstützte Bühnen-Dateiformat akzeptabel.
 
 Alle Rendereinstellungen in AEM 3D, mit Ausnahme des Ausgabebildtyps und der -größe, müssen vor dem Hochladen in AEM vorkonfiguriert und in der Bühnendatei gespeichert werden.
 
