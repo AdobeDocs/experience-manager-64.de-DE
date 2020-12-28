@@ -33,15 +33,15 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten bereit, die Sie verwenden 
 
 >[!NOTE]
 >
->Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Informationen zum Entwickeln Ihrer AEM Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Eine Vorlage ist die Basis einer Seite.
 
-To create a page, the template must be copied (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) to the corresponding position in the site-tree: this is what happens if a page is created using the **Websites** tab.
+Um eine Seite zu erstellen, muss die Vorlage kopiert werden (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) an die entsprechende Position in der Site-Struktur: Dies geschieht, wenn eine Seite mit der Registerkarte **Websites** erstellt wird.
 
 Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite genutzt wird (alles im untergeordneten Knoten jcr:content).
 
-## Structure of a Template {#structure-of-a-template}
+## Struktur einer Vorlage {#structure-of-a-template}
 
 Zwei Aspekte müssen berücksichtigt werden:
 
@@ -55,7 +55,7 @@ Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 * **jcr:title** – Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt
 * **jcr:description** – Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt
 
-This node contains *a jcr:content (cq:PageContent)* node which be used as the basis for the content node of resulting pages; this references, using *sling:resourceType*, the component to be used for rendering the actual content of a new page.
+Dieser Knoten enthält den Knoten *a jcr:content (cq:PageContent)*, der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. referenziert dieser Parameter mithilfe von *sling:resourceType* die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet wird.
 
 >[!NOTE]
 >
