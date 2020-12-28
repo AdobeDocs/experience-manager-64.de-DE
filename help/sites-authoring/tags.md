@@ -22,8 +22,8 @@ ht-degree: 82%
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
+* Informationen zum Tagging-Framework sowie zum Einschließen und Erweitern von Tags in benutzerdefinierten Anwendungen finden Sie unter [Tagging für Entwickler](/help/sites-developing/tags.md).
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
 
@@ -53,7 +53,7 @@ Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Ass
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
+Um [vordefinierte Tags](/help/sites-administering/tags.md) anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften** das Feld **Tags** und das Fenster **Tags auswählen**. Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -81,13 +81,13 @@ Tag-Clouds zeigen eine Cloud von Tags, entweder für die aktuelle Seite, die ges
 
 Die [Tag-Cloud](/help/sites-authoring/default-components-foundation.md#tag-cloud)-Komponente (allgemeine Komponentengruppe) wird verwendet, um der Seite eine Tag-Cloud hinzuzufügen.
 
-## Suchen nach Tags {#searching-on-tags}
+## Suchen nach Tags  {#searching-on-tags}
 
 Sie können sowohl in der Autoren- als auch in der Veröffentlichungsumgebung nach Tags suchen.
 
-### Verwenden der Suchkomponente {#using-search-component}
+### Verwenden der Suchkomponente  {#using-search-component}
 
-Adding a [Search component](/help/sites-authoring/default-components-foundation.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+Das Hinzufügen einer [Suchkomponente](/help/sites-authoring/default-components-foundation.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung verwendet werden kann.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
