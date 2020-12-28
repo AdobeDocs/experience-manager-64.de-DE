@@ -23,13 +23,13 @@ ht-degree: 3%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Mobile Apps sollten nach Bedarf alle Inhalte in AEM verwenden können, um das zielgerichtete App-Erlebnis bereitzustellen.
+Mobile Apps sollten nach Bedarf alle Inhalte in AEM verwenden können, um das Targeting-App-Erlebnis bereitzustellen.
 
 Dazu gehören die Verwendung von Assets, Site-Inhalten, CaaS-Inhalten (über die Luft) und benutzerspezifischen Inhalten, die möglicherweise eine eigene Struktur haben.
 
 >[!NOTE]
 >
->**Über ContentSync-Handler können Überstunden** aus den oben genannten Elementen stammen. Es kann zum Batch-Paket und Versand über Zips verwendet werden, sowie zum Verwalten von Updates oder solchen Paketen.
+>**Over-the-Air** Content kann über ContentSync Handler aus einem der oben genannten stammen. Es kann zum Batch-Paket und Versand über Zips verwendet werden, sowie zum Verwalten von Updates oder solchen Paketen.
 
 Content Services bietet drei Hauptmaterialtypen:
 
@@ -109,7 +109,7 @@ Das JSON stellt für jedes Bild eine URL bereit, die von Content Services für d
 
 Um die Binärdatei für das Bild &quot;Einkaufswagen&quot;zu erhalten, wird die Client-Bibliothek erneut verwendet.
 
-## Verpackter HTML-Inhalt {#packaged-html-content}
+## HTML-Inhalt im Paket {#packaged-html-content}
 
 HTML-Inhalte werden für Kunden benötigt, die das Layout der Inhalte beibehalten müssen. Dies ist nützlich für native Anwendungen, die einen Web-Container (z. B. eine Cordova-Webansicht) verwenden, um den Inhalt anzuzeigen.
 
@@ -117,12 +117,12 @@ AEM Content Services kann HTML-Inhalte über die API für die mobile App bereits
 
 Die folgenden Optionen werden in Betracht gezogen:
 
-* **Zip-Datei:** Damit das gesamte auf der Seite referenzierte Material - CSS, JavaScript, Assets usw. - am besten auf dem Gerät korrekt angezeigt werden kann. - wird in einer einzelnen komprimierten Datei mit der Antwort enthalten. Die Verweise auf der HTML-Seite werden angepasst, um einen relativen Pfad zu diesen Dateien zu verwenden.
-* **Streaming:** Abrufen eines Manifests der erforderlichen Dateien von AEM. Verwenden Sie dieses Manifest dann, um alle Dateien (HTML, CSS, JS usw.) anzufordern. mit nachfolgenden Anforderungen.
+* **Zip-Datei:** Damit alle referenzierten Elemente der Seite am besten auf dem Gerät korrekt angezeigt werden können - CSS, JavaScript, Assets usw. - wird in einer einzelnen komprimierten Datei mit der Antwort enthalten. Die Verweise auf der HTML-Seite werden angepasst, um einen relativen Pfad zu diesen Dateien zu verwenden.
+* **Streaming:** Abrufen eines Manifests der erforderlichen Dateien aus AEM. Verwenden Sie dieses Manifest dann, um alle Dateien (HTML, CSS, JS usw.) anzufordern. mit nachfolgenden Anforderungen.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-## Unabhängige Kanal {#channel-independent-content}
+## Unabhängiger Kanal {#channel-independent-content}
 
 Kanal-unabhängige Inhalte sind eine Möglichkeit, AEM Inhaltskonstrukte - wie z. B. Seiten - offen zu legen, ohne sich um Layout-, Komponenten- oder andere Kanal-spezifische Informationen zu sorgen.
 
