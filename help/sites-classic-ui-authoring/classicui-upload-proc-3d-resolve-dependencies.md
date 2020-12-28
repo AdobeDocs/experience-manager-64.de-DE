@@ -20,13 +20,13 @@ ht-degree: 61%
 
 # Auflösen von Dateiabhängigkeiten{#resolving-file-dependencies}
 
-Abhängigkeiten von primären 3D-Modelldateien wie Texturmap-Dateien werden bei Möglichkeit automatisch aufgelöst. Dies ist möglich, weil AEM nahe gelegene Asset-Ordner nach Dateien mit den Namen durchsucht, die auch in den 3D-Dateien vorkommen. If one or more dependencies are unresolvable during the Creating preview processing stage, the asset&#39;s card displays the following red banner message in the [!UICONTROL Card View]:
+Abhängigkeiten von primären 3D-Modelldateien wie Texturmap-Dateien werden bei Möglichkeit automatisch aufgelöst. Dies ist möglich, weil AEM nahe gelegene Asset-Ordner nach Dateien mit den Namen durchsucht, die auch in den 3D-Dateien vorkommen. Wenn eine oder mehrere Abhängigkeiten während der Verarbeitung der Vorschau &quot;Erstellen&quot;nicht aufgelöst werden können, zeigt die Elementkarte in der [!UICONTROL Card-Ansicht] die folgende rote Bannermeldung an:
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
 **So lösen Sie Dateiabhängigkeiten auf**:
 
-1. In the **[!UICONTROL Card View]**, hover the pointer over the **[!UICONTROL Unresolved Dependencies]** banner message on the card, then tap the exclamation point icon.
+1. Bewegen Sie den Mauszeiger in der Ansicht **[!UICONTROL Card]** über die Meldung **[!UICONTROL Ungelöste Abhängigkeiten]** auf der Karte und tippen Sie dann auf das Symbol zum Ausrufezeichen.
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -38,23 +38,23 @@ Abhängigkeiten von primären 3D-Modelldateien wie Texturmap-Dateien werden bei 
 
    * **[!UICONTROL Abhängigkeiten suchen und auswählen]**. (Bei dieser Option wird davon ausgegangen, dass Sie die Abhängigkeitsdateien bereits hochgeladen haben.)
 
-      1. Tap the **[!UICONTROL File Browse]** icon to the left of the red path.
-      1. On the **[!UICONTROL Select Content]** page, navigate to the missing file, then tap on the file&#39;s card to select it.
-      1. In the upper-left corner of the **[!UICONTROL Select Content]** page, tap **[!UICONTROL Close]** (X icon) to return to the **[!UICONTROL View Properties]** page.
+      1. Tippen Sie auf das Symbol **[!UICONTROL Dateisuche]** links neben dem roten Pfad.
+      1. Navigieren Sie auf der Seite **[!UICONTROL Inhalt auswählen]** zur fehlenden Datei und tippen Sie dann auf die Karte der Datei, um sie auszuwählen.
+      1. Tippen Sie in der oberen linken Ecke der Seite **[!UICONTROL Inhalt auswählen]** auf **[!UICONTROL Schließen]** (X-Symbol), um zur Seite **[!UICONTROL Eigenschaften der Ansicht]** zurückzukehren.
    * **[!UICONTROL Abhängigkeiten hochladen]**. (Bei dieser Option wird davon ausgegangen, dass Sie die fehlenden Dateien noch nicht hochgeladen haben.)
 
       1. Beachten Sie die fehlenden Pfade und Dateinamen.
       1. Tippen Sie in der rechten oberen Ecke auf **[!UICONTROL Schließen]**.
 
-   After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. Das neu hochgeladene Asset wird nun korrekt als referenziertes Asset aufgeführt.
+   Nach dem Hochladen kehren Sie zur Seite **[!UICONTROL Eigenschaften der Ansicht > Abhängigkeiten]** zurück. Das neu hochgeladene Asset wird nun korrekt als referenziertes Asset aufgeführt.
 
    * **[!UICONTROL Abhängigkeiten ignorieren]**.
 
-      If a missing dependency is no longer needed, under the **[!UICONTROL Referenced Asset]** column, in the text field to the left of the missing file, type `n/a` so that AEM 3D ignores the file.
+      Wenn keine fehlende Abhängigkeit mehr benötigt wird, geben Sie unter der Spalte **[!UICONTROL Verweisender Asset]** im Textfeld links neben der fehlenden Datei `n/a` ein, damit AEM 3D die Datei ignoriert.
 
 
 
-1. Near the upper-right corner of the **[!UICONTROL View Properties]** page, tap **[!UICONTROL Save]**.
+1. Tippen Sie rechts oben auf der Seite **[!UICONTROL Eigenschaften von Ansichten]** auf **[!UICONTROL Speichern]**.
 1. Tippen Sie auf **[!UICONTROL Schließen]****[!UICONTROL , um zur Kartenansicht zurückzukehren]**.
 
    Das Asset wird mit den neu aufgelösten Abhängigkeiten automatisch neu verarbeitet.
