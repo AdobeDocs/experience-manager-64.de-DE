@@ -38,7 +38,7 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
 
-   * Timeline
+   * Zeitleiste
    * Verweise
    * Filter
 
@@ -78,7 +78,7 @@ Die Grundprinzipien der Touch-optimierten Benutzeroberfläche lauten:
 * Einbettung von Tests
 * Bottom-Up-Design zur Sicherstellung, dass diese Prinzipien auf alle Elemente und Komponenten angewendet werden
 
-Eine weitere Übersicht über die Struktur der touchfähigen Benutzeroberfläche finden Sie in der [Artikelstruktur der AEM Touch-Enabled-Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
+Eine weitere Übersicht über die touchfähige UI-Struktur finden Sie im Artikel [Struktur der AEM Touch-Enabled-UI](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM-Technologiestapel {#aem-technology-stack}
 
@@ -186,7 +186,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td><strong>Granite-Benutzeroberfläche</strong></td> 
   </tr> 
   <tr> 
-   <td>Remote-Prozessaufruf<br /> </td> 
+   <td>Remote-Prozeduraufruf<br /> </td> 
    <td>Staatliche Übergänge</td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ Implementierung:
 * Vordefinierte Komponenten, die die Foundation-Komponenten verwenden
 * Anpassung von Komponenten
 
-## Coral-Benutzeroberfläche {#coral-ui}
+## Coral-Benutzeroberfläche  {#coral-ui}
 
 Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils von Adobe für die Touch-optimierte Benutzeroberfläche. Sie wurde entworfen, um produktübergreifend die Einheitlichkeit des Anwendererlebnisses sicherzustellen. Mit der Coral-Benutzeroberfläche werden alle Elemente bereitgestellt, die Sie zur Übernahme des visuellen Stils der Autorenumgebung benötigen.
 
@@ -319,7 +319,7 @@ Sie ist vollständig modular konzipiert und jedes Modul stellt basierend auf sei
 
 Für die Coral-Benutzeroberfläche muss kein bestimmtes Entwicklungsmodell bzw. keine bestimmte Plattform verwendet werden. Hauptziel von Coral ist es, einheitlichen und sauberen HTML5-Markup-Code bereitzustellen, und zwar unabhängig von der eigentlichen Methode, die zum Ausgeben des Markup-Codes verwendet wird. Er kann für client- oder serverseitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
 
-### HTML-Elemente – Markup-Ebene {#html-elements-the-markup-layer}
+### HTML-Elemente – Markup-Ebene  {#html-elements-the-markup-layer}
 
 Über die HTML-Elemente wird ein einheitliches Erscheinungsbild für alle Basiselemente der Benutzeroberfläche (z. B. Navigationsleiste, Schaltfläche, Menü, Leiste usw.) erzielt.
 
@@ -375,20 +375,20 @@ Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, 
 
 Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Es ist für ein spezifisches DOM-Element ausgelegt. For example, a dialog plugin expects to find `DIV class=dialog`
+* Es ist für ein spezifisches DOM-Element ausgelegt. Beispiel: Ein Dialogfeld-Plugin erwartet, `DIV class=dialog` zu finden
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
 Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 * Übergeben der Parameter per JavaScript-Aufruf
-* Using dedicated `data-*` attributes tied to the HTML markup
+* Verwenden dedizierter `data-*`-Attribute, die mit dem HTML-Markup verknüpft sind
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
 * `data-*` Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
 * API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen.
 
-Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. For an element that you want validated, you must specify the required input form as a custom `data-*` attribute. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabefeld als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -404,7 +404,7 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-in, an ein spezifisches DOM-Element (auch mehrere) gebunden
-* Using `data-*` attributes to customize behavior
+* Verwenden von Attributen `data-*` zum Anpassen des Verhaltens
 
 Ein Auszug aus Beispielmarkup (beachten Sie die als data&amp;ast; Attribute):
 
