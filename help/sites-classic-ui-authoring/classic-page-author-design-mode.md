@@ -50,7 +50,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. Klicken Sie im Absatzsystem (**Design von par**) auf **Bearbeiten**.
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -74,7 +74,7 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 
 1. Sie können das Design von Komponenten konfigurieren.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   Wenn Sie beispielsweise auf **Bearbeiten** in der Image-Komponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
