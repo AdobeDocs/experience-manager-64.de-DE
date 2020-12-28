@@ -29,10 +29,10 @@ So konfigurieren Sie den Referrer-Filterdienst:
 * Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) unter:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Melden Sie sich als admin an.
-* In the **Configurations** menu, select: *Apache Sling Referrer Filter*
+* Wählen Sie im Menü **Konfigurationen** Folgendes aus: *Apache Sling Werber Filter*
 * Markieren Sie das Feld Leeres Feld zulassen, um leere/fehlende Werber-Kopfzeilen zuzulassen.
 * Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-See the [OSGI Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) and [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) for further details.
+Weitere Informationen finden Sie unter [OSGI-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) und [Sicherheits-Checkliste - Probleme mit der Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).
