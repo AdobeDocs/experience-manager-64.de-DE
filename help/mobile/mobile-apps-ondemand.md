@@ -26,28 +26,28 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Wenn Sie Adobe Experience Manager (AEM) nicht als Quelle für Ihr Content-Management verwenden, lesen Sie die [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Wenn Sie Adobe Experience Manager (AEM) nicht als Quelle für Ihr Content-Management verwenden, finden Sie weitere Informationen unter [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >**Voraussetzung:**
 >
->Bevor Sie mit AEM Mobile On-demand Services arbeiten und den Schritten in diesem Handbuch folgen, sollten Sie mit [AEM](/help/sites-deploying/deploy.md)vertraut sein.
+>Bevor Sie mit AEM Mobile On-demand Services arbeiten und den Schritten in diesem Handbuch für die ersten Schritte folgen, sollten Sie mit [AEM](/help/sites-deploying/deploy.md) vertraut sein.
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-Ein ***AEM-Autor *(oder*Marketer *)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag &amp; Drop hinzuzufügen und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bilder, Videos und Textfragmente (Inhaltsfragmente). AEM Editor für integrierte Inhalte wird dann von*AEM-Autoren *verwendet, um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration mit dem Rest des Adobe Marketing Cloud.
+Ein ***AEM-Autor* (oder *Marketer*)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten zu ziehen und abzulegen und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bilder, Videos und Textfragmente (Inhaltsfragmente). AEM Editor für integrierte Inhalte wird dann von *AEM-Autoren* verwendet, um umfangreiche und relevante Erlebnisse in der App zu erstellen, einschließlich der Integration mit dem Rest des Adobe Marketing Cloud.
 
 Ein AEM Autor ist beim Erstellen einer App mit den AEM Mobile On Demand Services für die folgenden Aufgaben verantwortlich.
 
-**Das Authoring AEM Content für die AEM Mobile On-demand Services App** umfasst die folgenden Aktionen:
+**Das Authoring AEM Content for AEM Mobile On-demand Services** Apps umfasst die folgenden Aktionen:
 
 * [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Erstellen und Konfigurieren von Anwendungen](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Verwalten von Inhalten](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Weitere Informationen zu **Content Services** finden Sie unter Übersicht über [Content Services](/help/mobile/develop-content-as-a-service.md) .
+Weitere Informationen zu **Content Services** finden Sie unter [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md).
 
 >[!NOTE]
 >
