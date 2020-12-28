@@ -33,7 +33,7 @@ Im Folgenden werden zwei Open-Source-Test-Tools vorgestellt:
 
 Selenium wird für Funktionstests im Browser mit einem Benutzer pro Aktivität verwendet. Das Tool zeichnet Prüfungsschritte (Klicks) entweder als HTML-Tabellen oder Java-Klassen auf.
 
-For more information see [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Weitere Informationen finden Sie unter [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
