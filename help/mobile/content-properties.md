@@ -37,11 +37,11 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 | dps-id | Zeichenfolge |  | von AEM Mobile zugewiesen und von AEM nach dem Hochladen in AEM Mobile oder Import aus AEM Mobile gespeichert |
 | dps-resourceType | Zeichenfolge | dps:Artikel | dps:Banner | dps:Sammlung | entity type-Eigenschaft |
 | dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (auch in der vollständigen aemm-id enthalten) |
-| dps-lastSynced | Datum           |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
-| dps-lastUploaded | Datum           |  | Datum des letzten Uploads von AEM nach AEM Mobile |
+| dps-lastSynced | Datum |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
+| dps-lastUploaded | Datum |  | Datum des letzten Uploads von AEM nach AEM Mobile |
 | dps-lastUploadedBy | Zeichenfolge:userid |  | ID-Benutzer, der die letzte Upload-Anforderung von AEM nach AEM Mobile ausgeführt hat |
 
-## Eigenschaften der Hauptmetadaten {#core-metadata-properties}
+## Core-Metadateneigenschaften {#core-metadata-properties}
 
 | Eigenschaftsname | Typ | Standardwerte oder erwartete Werte |
 |--- |--- |--- |
@@ -88,7 +88,7 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 
 ## Inhaltsknoten {#content-nodes}
 
-### Häufige Knoten {#common-nodes}
+### Allgemeine Knoten {#common-nodes}
 
 | Knotenname | Typ | Standardwerte oder erwartete Werte | Beschreibung |
 |--- |--- |--- |--- |
