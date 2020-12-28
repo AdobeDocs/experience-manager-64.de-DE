@@ -90,7 +90,7 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
    vm.get("value, String.class"); 
    ```
 
-   For more details, please refer to the implementation of out-ot-the-box Granite UI fields; for example, `/libs/granite/ui/components/foundation/form/textfield`.
+   Weitere Informationen finden Sie in der Implementierung der vordefinierten Granite-UI-Felder. zum Beispiel `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
@@ -101,9 +101,9 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
 Gehen Sie wie folgt vor, um der Komponente ein bestimmtes clientseitiges Verhalten hinzuzufügen:
 
 1. Erstellen Sie eine Client-Bibliothek der Kategorie `cq.authoring.dialog`.
-1. Create a clientlib of category `cq.authoring.dialog` and define your `JS`/ `CSS` inside it.
+1. Erstellen Sie eine clientlib der Kategorie `cq.authoring.dialog` und definieren Sie `JS`/ `CSS` darin.
 
-   Define your `JS`/ `CSS` inside the clientlib.
+   Definieren Sie `JS`/ `CSS` innerhalb der clientlib.
 
    >[!NOTE]
    >
