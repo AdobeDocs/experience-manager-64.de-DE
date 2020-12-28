@@ -22,7 +22,7 @@ ht-degree: 88%
 
 Der Dialogfeldeditor bietet eine grafische Oberfläche zur einfachen Erstellung und Bearbeitung von Dialogfeldern und Gerüsten.
 
-To see how it works, go to CRXDE Lite, open the explorer tree to `/libs/foundation/components/chart` and double click on the node `dialog`:
+Um zu sehen, wie es funktioniert, gehen Sie zur CRXDE Lite, öffnen Sie die Explorer-Struktur zu `/libs/foundation/components/chart` und klicken Sie mit der Dublette auf den Knoten `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -36,7 +36,7 @@ Die Oberfläche des Dialogfeldeditors besteht aus vier Bereichen:
 
 * **Palette** links oben In diesem Bereich befinden sich die zum Erstellen eines Dialogfelds erforderlichen Widgets, etwa Registerkartenfelder, Textfelder, Auswahllisten und Schaltflächen. Sie können die verschiedenen Kategorien in der Palette maximieren, indem Sie auf die gewünschte Trennleiste klicken.
 * **Struktur** links unten In diesem Bereich wird die hierarchische Struktur der Knoten angezeigt, aus der die Dialogfelddefinition besteht. Dieselbe Struktur können Sie sehen, wenn Sie den Dialogknoten in CRXDE Lite oder CRX Content Explorer maximieren.
-* The **render** pane, in the center of the window. Darin ist zu sehen, wie die im Strukturfenster definierte Dialogfelddefinition als tatsächliches Dialogfeld gerendert wird.
+* Der Bereich **render** in der Mitte des Fensters. Darin ist zu sehen, wie die im Strukturfenster definierte Dialogfelddefinition als tatsächliches Dialogfeld gerendert wird.
 * **Eigenschaften** In diesem Bereich werden die Eigenschaften des aktuell im Bereich „Struktur“ markierten Knotens angezeigt.
 
 ### Verwenden des Dialogfeldeditors {#using-the-dialog-editor}
@@ -49,7 +49,7 @@ Wenn Sie die gewünschte Struktur abgeschlossen haben, klicken Sie ganz oben im 
 >
 >Beachten Sie, dass der Dialogfeldeditor für die Erstellung relativ einfacher Dialogfelder vorgesehen ist und Sie damit möglicherweise keine komplexen Dialogfelddefinitionen bearbeiten können. In Fällen, in denen der Editor die Bearbeitung einer Dialogfeldstruktur nicht zulässt, muss die Dialogfelddefinition manuell erstellt und/oder bearbeitet werden, indem die Knotenstruktur anhand von CRXDE Lite, CRX Content Explorer oder eines anderen Tools direkt bearbeitet wird.
 
-### Erstellen eines neuen Dialogfelds {#creating-a-new-dialog}
+### Erstellen eines neuen Dialogfelds  {#creating-a-new-dialog}
 
 Erstellen Sie ein neues Dialogfeld, indem Sie die erforderliche Komponente auswählen, auf **Erstellen...** klicken und anschließend **Dialogfeld erstellen...** auswählen.
 
