@@ -37,13 +37,13 @@ CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server h
 >
 >Während der Projektentwicklung wird empfohlen, die [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) und die [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) zu verwenden.
 
-## Erste Schritte mit CRXDE Lite {#getting-started-with-crxde-lite}
+## Erste Schritte mit CRXDE Lite  {#getting-started-with-crxde-lite}
 
 Um mit CRXDE Lite zu beginnen, gehen Sie wie folgt vor:
 
 1. Installieren Sie AEM.
-1. Geben Sie in Ihren Browser https://`<host>`:`<port>`/crx/de ein. Standardmäßig ist dies `http://localhost:4502/crx/de`der Fall.
-1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein. By default it is `admin` and `admin`.
+1. Geben Sie in Ihren Browser https://`<host>`:`<port>`/crx/de ein. Standardmäßig ist es `http://localhost:4502/crx/de`.
+1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein. Standardmäßig sind es `admin` und `admin`.
 
 1. Klicken Sie auf **OK**.
 
@@ -53,7 +53,7 @@ Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
 
 Jetzt können Sie CRXDE Lite verwenden, um Ihre Anwendung zu entwickeln.
 
-### Überblick über die Benutzeroberfläche {#overview-of-the-user-interface}
+### Überblick über die Benutzeroberfläche  {#overview-of-the-user-interface}
 
 CRXDE Lite bietet folgende Funktionen:
 
@@ -105,7 +105,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr> 
   <tr> 
    <td>Erstellen ...<br /> </td> 
-   <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>File</strong>: nt:file node and its nt:resource subnode</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td> 
+   <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>Datei</strong>: nt:file-Knoten und zugehörige nt:resource-Unterknoten</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td> 
   </tr> 
   <tr> 
    <td>Löschen<br /> </td> 
@@ -117,7 +117,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr> 
   <tr> 
    <td>Einfügen<br /> </td> 
-   <td>Pastes the copied node under the selected node.<br /> </td> 
+   <td>Fügt den kopierten Knoten unter dem ausgewählten Knoten ein.<br /> </td> 
   </tr> 
   <tr> 
    <td>Verschieben ...<br /> </td> 
@@ -147,13 +147,13 @@ CRXDE Lite bietet folgende Funktionen:
 So erstellen Sie einen Ordner mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
+1. Klicken Sie im Navigationsbereich mit der rechten Maustaste auf den Ordner, unter dem Sie den neuen Ordner erstellen möchten, und wählen Sie **Erstellen ...**, dann **Ordner erstellen ...**.
 
 1. Geben Sie den **Namen** des Ordners ein und klicken Sie auf **OK**.
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
-### Erstellen einer Vorlage {#creating-a-template}
+### Erstellen einer Vorlage  {#creating-a-template}
 
 So erstellen Sie eine Vorlage mit CRXDE Lite:
 
@@ -164,23 +164,23 @@ So erstellen Sie eine Vorlage mit CRXDE Lite:
 
 1. Dieser Schritt ist optional: Legen Sie die **zugelassenen Pfade** fest. Klicken Sie auf **Weiter**
 
-1. This step is optional: set the **Allowed Parents**. Klicken Sie auf **Weiter**.
+1. Dieser Schritt ist optional: Legen Sie **Zulässige Eltern** fest. Klicken Sie auf **Weiter**.
 
-1. This step is optional: set the **Allowed Children**. Klicken Sie auf **OK**.
+1. Dieser Schritt ist optional: Legen Sie **Zulässige Kinder** fest. Klicken Sie auf **OK**.
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
 Folgendes wird erstellt:
 
-* A node of type `cq:Template` with Template properties
+* Eine Node des Typs `cq:Template` mit Vorlageneigenschaften
 
 * Ein untergeordneter Knoten vom Typ `cq:PageContent` mit Seiteninhaltseigenschaften
 
 Sie können Ihrer Vorlage Eigenschaften hinzufügen: weitere Informationen finden Sie unter [Erstellen einer Eigenschaft](#creating-a-property).
 
-### Erstellen einer Komponente {#creating-a-component}
+### Erstellen einer Komponente  {#creating-a-component}
 
-Die hier beschriebene Funktion ist nur verfügbar, wenn der Knotentyp im Repository verfügbar `cq:Component` ist.
+Die hier beschriebene Funktion ist nur verfügbar, wenn der Knotentyp `cq:Component` im Repository verfügbar ist.
 
 So erstellen Sie eine Komponente mit CRXDE Lite:
 
@@ -199,16 +199,16 @@ So erstellen Sie eine Komponente mit CRXDE Lite:
 
 Folgendes wird erstellt:
 
-* A node of type `cq:Component`
+* Ein Knoten des Typs `cq:Component`
 * Komponenteneigenschaften
 * Ein Komponenten-.jsp-Skript
 
-### Erstellen eines Dialogfelds {#creating-a-dialog}
+### Erstellen eines Dialogfelds  {#creating-a-dialog}
 
 So erstellen Sie ein Dialogfeld mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the Navigation pane, right-click the component where you want to create the dialog, select **Create ...**, then **Create Dialog ...**.
+1. Klicken Sie im Navigationsbereich mit der rechten Maustaste auf die Komponente, in der Sie das Dialogfeld erstellen möchten, und wählen Sie **Erstellen ...**, dann **Dialogfeld erstellen ...**.
 
 1. Geben Sie **Beschriftung** und **Titel** ein. Klicken Sie auf **OK**.
 
@@ -222,7 +222,7 @@ Sie können das Dialogfeld jetzt Ihren Anforderungen anpassen, indem Sie die Eig
 
 Sie können den Dialogfeld-Editor auch verwenden, um ein Dialogfeld zu bearbeiten. Mit einem Doppelklick auf den Dialogfeldknoten in CRXDE Lite wird der Editor geöffnet. Weitere Informationen über den Dialogfeld-Editor finden Sie [hier](/help/sites-developing/dialog-editor.md).
 
-### Erstellen eines Knotens {#creating-a-node}
+### Erstellen eines Knotens  {#creating-a-node}
 
 So erstellen Sie einen Knoten mit CRXDE Lite:
 
@@ -251,7 +251,7 @@ So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
-### Erstellen eines Skripts {#creating-a-script}
+### Erstellen eines Skripts  {#creating-a-script}
 
 So erstellen Sie ein neues Skript:
 
@@ -266,7 +266,7 @@ So erstellen Sie ein neues Skript:
 
 ### Exportieren und Importieren von Knotentypen {#exporting-and-importing-node-types}
 
-With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](http://jackrabbit.apache.org/jcr/node-type-notation.html).
+Mit der CRXDE Lite können Sie Knotentypdefinitionen in [CND (Compact Namensraum and Node Type Definition) Notation](http://jackrabbit.apache.org/jcr/node-type-notation.html) importieren und/oder exportieren.
 
 So exportieren Sie eine Knotentypdefinition:
 
@@ -287,7 +287,7 @@ So importieren Sie eine Knotentypdefinition:
 
 ### Protokollierung {#logging}
 
-With CRXDE Lite you can display the file `error.log` that is located on the file system at `<crx-install-dir>/crx-quickstart/server/logs` and filter it with the appropriate log level. Gehen Sie wie folgt vor:
+Mit der CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisystem unter `<crx-install-dir>/crx-quickstart/server/logs` befindet, und sie mit der entsprechenden Protokollierungsstufe filtern. Gehen Sie wie folgt vor:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie auf der Registerkarte **Konsole** am unteren Rand des Fensters im Dropdown-Menü auf der rechten Seite **Serverprotokolle** aus.
@@ -296,7 +296,7 @@ With CRXDE Lite you can display the file `error.log` that is located on the file
 
 Sie haben folgende Möglichkeiten:
 
-* Adjust the log parameters in the Felix Console by clicking the **Logging Configurations** icon.
+* Passen Sie die Protokollparameter in der Felix-Konsole an, indem Sie auf das Symbol **Protokollierungskonfigurationen** klicken.
 * Löschen Sie die Meldungen, indem Sie auf das **Pinselsymbol** klicken.
 * Heften Sie die Nachricht an der aktuellen Auswahl an, indem Sie auf das **Pin-Symbol** klicken.
 * Aktivieren oder deaktivieren Sie die Anzeige von Meldungen, indem Sie auf das **Stopp-Symbol** klicken.
