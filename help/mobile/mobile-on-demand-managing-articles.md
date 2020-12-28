@@ -47,13 +47,13 @@ Artikel stellen den Text dar, der zusammen mit Kunst zur Informationsübermittlu
 
 Der allgemeine Arbeitsablauf zum Erstellen eines Artikels lautet wie folgt:
 
-1. Wählen Sie in der Seitenleiste &quot; **Mobil** &quot;aus.
+1. Wählen Sie **Mobil** aus der Seitenleiste.
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Klicken Sie auf den Pfeil nach unten rechts oben in der Kachel **Artikel** verwalten.
+1. Klicken Sie auf den Pfeil nach unten rechts oben in der Kachel **Artikel verwalten**.
 1. Wählen Sie eine Artikelvorlage und klicken Sie auf **Weiter**.
 1. Gehen Sie durch jeden Schritt des Assistenten, um mit der Erstellung des neuen Artikels fortzufahren.
-1. Klicken Sie, sobald sie bereit sind, auf **Erstellen**.
-1. Ihr neuer Artikel wird in der Kachel &quot;Artikel **verwalten** &quot;angezeigt.
+1. Klicken Sie nach Abschluss der Vorbereitungen auf **Erstellen**.
+1. Ihr neuer Artikel wird in der Kachel **Artikel verwalten** angezeigt.
 
 ## Importieren eines neuen Artikels {#importing-a-new-article}
 
@@ -66,9 +66,9 @@ Vorhandene Mobile On-Demand-Inhalte können von Mobile On-Demand heruntergeladen
 Der Workflow zum Importieren eines neuen Artikels
 
 1. Wählen Sie in Mobile die mobile On-Demand-App aus dem Katalog.
-1. Klicken Sie auf den Pfeil nach unten rechts oben in der Kachel &quot;Artikel **verwalten** &quot;und wählen Sie &quot;Artikel importieren&quot;.
-1. Klicken Sie im Dialogfeld auf Artikel **importieren** und schließen.
-1. Ihre Mobile On-Demand-Artikel werden jetzt auf der Kachel &quot;Artikel **verwalten&quot;angezeigt** .
+1. Klicken Sie auf den Pfeil nach unten rechts oben in der Kachel **Artikel verwalten** und wählen Sie Artikel importieren.
+1. Klicken Sie im Dialogfeld auf **Artikel importieren** und schließen Sie dann.
+1. Ihre Mobile On-Demand-Artikel werden jetzt in der Kachel **Artikel verwalten** angezeigt.
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ Verwenden Sie den integrierten AEM Drag &amp; Drop-Editor, um einen Artikel hinz
 Der Workflow zum Bearbeiten eines Artikels:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie einen AEM Artikel aus der Kachel &quot;Artikel **verwalten** &quot;aus.
+1. Wählen Sie in der Kachel **Artikel verwalten** einen AEM Artikel aus.
 1. Klicken Sie in der Ansicht Liste auf den markierten Artikel, um ihn im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Artikelinhalte (Manuskripte, Bilder, Text usw.) zu ziehen.
 
@@ -98,11 +98,11 @@ Inhalte wie Artikel, Banner usw. haben zahlreiche Eigenschaften wie Titel, Besch
 Der allgemeine Arbeitsablauf zum Ansichten/Bearbeiten eines Artikels:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie einen Artikel aus der Kachel &quot;Artikel **verwalten** &quot;aus.
+1. Wählen Sie einen Artikel aus der Kachel **Artikel verwalten**.
 
-1. Wählen Sie in der Aktionsleiste die Option &quot; **Ansichten-Eigenschaften** &quot;aus.
+1. Wählen Sie in der Aktionsleiste **Eigenschaften von Ansichten** aus.
 1. Ansicht aller für diesen Artikel verfügbaren Metadaten.
-1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie nach Abschluss des Vorgangs auf **Speichern** .
+1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
 ## Hochladen eines Artikels {#uploading-an-article}
@@ -111,10 +111,10 @@ Mit der Upload-Aktion wird der ausgewählte Inhalt kopiert und einem Mobile On-D
 
 Der allgemeine Arbeitsablauf zum Hochladen eines Artikels:
 
-1. Wählen Sie in **Mobile** Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie in der Kachel &quot;Artikel **** verwalten&quot;einen Artikel zum Hochladen in Mobile On-Demand aus.
-1. Hinzufügen Sie bei Bedarf weitere Artikel aus der Ansicht Liste.
-1. Wählen Sie **Hochladen** in der Aktionsleiste und klicken Sie dann im Dialogfeld auf Hochladen.
+1. Wählen Sie unter **Mobil** Ihre Mobile On-Demand-App aus dem Katalog.
+1. Wählen Sie in der Kachel **Artikel verwalten** einen Artikel zum Hochladen in Mobile On-Demand aus.
+1. hinzufügen Sie bei Bedarf weitere Artikel aus der Ansicht Liste.
+1. Wählen Sie **Upload** in der Aktionsleiste aus und klicken Sie dann im Dialogfeld auf Hochladen.
 1. Ihre Artikel werden jetzt in Mobile On-Demand hochgeladen.
 
 ![chlimage_1-4](assets/chlimage_1-4.gif)
@@ -126,9 +126,9 @@ Durch diesen Vorgang werden die ausgewählten Inhalte aus Mobile On-Demand und o
 Der allgemeine Arbeitsablauf zum Löschen eines Artikels:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Wählen Sie den zu löschenden Artikel in der Kachel &quot;Artikel **verwalten** &quot;aus.
+1. Wählen Sie den zu löschenden Artikel in der Kachel **Artikel verwalten** aus.
 1. Vergewissern Sie sich, dass sie in der Liste ausgewählt ist (wählen Sie nach Bedarf andere zum Löschen aus).
-1. Click **Delete** from the action bar.
+1. Klicken Sie in der Aktionsleiste auf **Löschen**.
 1. Überprüfen Sie, ob Sie sowohl AEM als auch Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
 1. Ihr Artikel wurde jetzt aus der Liste entfernt.
