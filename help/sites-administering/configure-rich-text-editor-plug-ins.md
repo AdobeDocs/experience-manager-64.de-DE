@@ -1,5 +1,5 @@
 ---
-title: 'Konfigurieren der Rich-Text-Editor-Plug-ins    '
+title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 translation-type: tm+mt
@@ -29,7 +29,7 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
 
 >[!NOTE]
 >
->The respective rtePlugins node is referred to as &lt;*rtePlugins-node*> to avoid duplication in this article.
+>Der entsprechende Knoten &quot;rtePlugins&quot;wird als &lt;*rtePlugins-node*> bezeichnet, um Duplizierungen in diesem Artikel zu vermeiden.
 
 1. Suchen Sie mithilfe von CRXDE Lite nach der Textkomponente für Ihr Projekt.
 1. Falls noch nicht vorhanden, erstellen Sie den übergeordneten Knoten von `<rtePlugins-node>`, bevor Sie mit dem Konfigurieren von RTE-Plug-ins beginnen:
@@ -354,7 +354,7 @@ Wenn das paraformat-Plug-in zum ersten Mal aktiviert wird, sind keine Standabsat
 
 Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Formate hinzuzufügen, folgen Sie nur dem entsprechenden Teil der Anweisungen.
 
-### Aktivieren der Dropdown-Auswahl „Format“.   {#formatselectorlist}
+### Aktivieren der Dropdown-Auswahl „Format“.    {#formatselectorlist}
 
 Aktivieren Sie zunächst das paraformat-Plug-in:
 
@@ -422,7 +422,7 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 >[!CAUTION]
 Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie diese Zeichen bei Bedarf in Ihrer eigenen Auswahl (neu).
 
-### Definieren einzelner Zeichen   {#definesinglechar}
+### Definieren einzelner Zeichen    {#definesinglechar}
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/misctools`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `misctools`:
@@ -488,11 +488,11 @@ Fügen Sie in CRXDE ein einzelnes Zeichen hinzu, um es in der RTE-Symbolleiste v
 
    ![Definieren Sie in CRXDE einen Zeichenbereich, um ihn in der RTE-Symbolleiste verfügbar zu machen.](assets/chlimage_1-413.png)
 
-         *In CRXDE, define a range of characters to be made available in RTE*
+         *Definieren Sie in CRXDE einen Zeichenbereich, der in RTE* verfügbar gemacht werden soll.
 
    ![Im RTE verfügbare Sonderzeichen werden den Autoren in einem Popup-Fenster angezeigt.](assets/rtepencil.png)
 
-         *Special characters available in RTE are displayed to authors in a pop-up window*
+         *In RTE verfügbare Sonderzeichen werden Autoren in einem Popup-Fenster* angezeigt
 
 ## Konfigurieren von Tabellenstilen {#tablestyles}
 
@@ -556,7 +556,7 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
 
 Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern     {#hiddenheader}
+### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern   {#hiddenheader}
 
 Manchmal kann es sein, dass Sie Datentabellen ohne visuellen Text in einer Spaltenkopfzeile erstellen, da Sie voraussetzen, dass sich der Zweck der Kopfzeile durch die visuelle Beziehung der Spalte mit anderen Spalten ergibt. In diesem Fall ist es erforderlich, dass Sie ausgeblendeten inneren Text innerhalb der Zelle in der Kopfzeilenzelle bereitstellen, damit Bildschirmlesehilfen und andere unterstützende Technologien Benutzern mit unterschiedlichen Bedürfnissen helfen können, den Zweck der Spalte zu verstehen.
 
@@ -574,14 +574,14 @@ Um Autoren bei der Anwendung von CSS auf ausgeblendete Kopfzeilen im Vorschaumod
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung     {#adddict}
+## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung   {#adddict}
 
 Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
 >[!NOTE]
-The message `Spell checking failed` is seen if a check is tried for a language that is not installed. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden README-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
+Die Meldung `Spell checking failed` wird angezeigt, wenn eine Prüfung für eine Sprache durchgeführt wird, die nicht installiert ist. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden README-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
-Eine AEM Installation beinhaltet die Wörterbücher für Englisch (`en_us`) und Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
+Eine Standardinstallation AEM die Wörterbücher für amerikanisches Englisch (`en_us`) und Britisches Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
 
 1. Navigieren Sie zur Seite [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -599,7 +599,7 @@ Eine AEM Installation beinhaltet die Wörterbücher für Englisch (`en_us`) und 
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE überprüft die Rechtschreibung von Wörtern und hebt die falsch geschriebenen Wörter hervor.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Um die Rechtschreibprüfung auszuführen, klicken Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung]. RTE überprüft die Rechtschreibung von Wörtern und hebt die falsch geschriebenen Wörter hervor.
 Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden die Textänderungen und falsch geschriebenen Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
@@ -618,7 +618,7 @@ Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschr
 
 1. Speichern Sie die Änderungen.
 
-## Konfigurieren der Tabulator-Schrittweite     {#tabsize}
+## Konfigurieren der Tabulator-Schrittweite   {#tabsize}
 
 Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig werden drei geschützte Leerzeichen und ein normales Leerzeichen eingefügt. So definieren Sie die Tabulator-Schrittweite:
 
@@ -631,7 +631,7 @@ Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird 
 
 1. Speichern Sie die Änderungen.
 
-## Festlegen des Einzugsrands     {#indentmargin}
+## Festlegen des Einzugsrands   {#indentmargin}
 
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
@@ -706,7 +706,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
       * **Name** `cssExternal`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
-   * Array mit gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://`und `mailto:`.
+   * Array mit gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://` und `mailto:`.
 
       * **Name** `protocols`
       * **Typ** `String[]`
@@ -733,8 +733,8 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
                (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
 
-            * `manual` : In diesem Kontext unzulässig
-            * `blank` : In diesem Kontext unzulässig
+            * `manual`: In diesem Kontext unzulässig
+            * `blank`: In diesem Kontext unzulässig
       * Das Ziel für interne Links:
 
          * **Name** `targetInternal`
