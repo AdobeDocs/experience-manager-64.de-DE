@@ -87,7 +87,7 @@ Siehe auch [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-may
 | FBX | Autodesk FBX (Kaydara Filmbox) | Alle | Das Autodesk FBX SDK muss auf dem Autorknoten installiert sein. |
 | MA, MB | Native Autodesk Maya-Dateien | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
 | JT | Open CAD-Dateien von Siemens PLM | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
-| * | Es können zusätzliche, von Autodesk Maya unterstützte 3D-Eingabeformate aktiviert werden. See [Enabling Additional Formats Supported by Maya](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya). | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
+| * | Es können zusätzliche, von Autodesk Maya unterstützte 3D-Eingabeformate aktiviert werden. Siehe [Aktivieren zusätzlicher Formate, die von Maya](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya) unterstützt werden. | Nur Windows | Autodesk Maya ist auf dem Autorknoten erforderlich, um diese Dateiformate zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk Maya](/help/assets/integrate-maya-with-3d.md). |
 | MAX | Native Autodesk 3ds Max | Nur Windows | Autodesk 3ds Max ist auf dem Autorenknoten erforderlich, um dieses Dateiformat zu aktivieren. Siehe [Integration von AEM 3D mit Autodesk 3ds Max](/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md). |
 
 ## Verbesserungen und neue Funktionen {#enhancements-and-new-features}
@@ -96,7 +96,7 @@ Version 3.0
 
 * Unterstützung für Autodesk 3ds Max natives Dateiformat.
 * Verschiedene Änderungen und Fehlerkorrekturen zur Verbesserung von Stabilität, Qualität und Benutzerfreundlichkeit.
-* Konfigurationseinstellungen verschoben auf `/libs/settings/dam/v3d/`
+* Konfigurationseinstellungen nach `/libs/settings/dam/v3d/` verschoben
 
 Version 3.1
 
@@ -106,10 +106,10 @@ Version 3.1
 
 ## Einschränkungen und bekannte Probleme {#restrictions-and-known-issues}
 
-### Adobe Dimension-Support {#adobe-dimension-support}
+### Adobe Dimension-Unterstützung {#adobe-dimension-support}
 
 * Diese Version von AEM3D bietet eingeschränkte Unterstützung für .dn-Dateien, die mit Adobe Dimension erstellt wurden.
-* Während der Upload-Verarbeitung AEM einen Cloud-basierten Konvertierungsdienst, der von der Adobe gehostet wird, nutzen, um eine glTF-Darstellung aus der nativen .dn-Datei zu erstellen. Der Zugriff auf den Konvertierungsdienst und die Auswahl der Amazon AWS-Endpunkte sind erforderlich.
+* Während der Upload-Verarbeitung AEM einen Cloud-basierten Konvertierungsdienst, der von der Adobe gehostet wird, nutzen, um eine glTF-Darstellung aus der nativen .dn-Datei zu erstellen. Der Zugriff auf den Konvertierungsdienst und die Auswahl von Amazon AWS-Endpunkten sind erforderlich.
 * Es wird ein neuer glTF-Viewer bereitgestellt, der die Anzeige von Dn-Assets in AEM Assets und in Sites/Bildschirmen unterstützt. Die Unterstützung für Phasen im Viewer ist noch nicht verfügbar.
 * Dn-Modelle können IBL-Lichter und -Hintergründe einbetten, die angezeigt werden, sofern vorhanden. Alternativ dazu wendet der Viewer eine Standardbeleuchtung oder eine standardmäßige Hintergrundfarbe oder beides an.
 * Das hochwertige Rendering für DN-Assets ist noch nicht verfügbar.
@@ -118,7 +118,7 @@ Version 3.1
 ### Kompatibilität {#compatibility}
 
 * **Das Ausführen als Windows-Dienst wird nicht unterstützt (nur Windows)** – Ggf. funktioniert dies, es wurde jedoch nicht getestet.
-* **Dynamische Medien** ( `dynamicmedia-scene7` Modus) - Die Kompatibilität von AEM3D mit der neuen Dynamic Media-Lösung, die mit AEM 6.4 veröffentlicht wurde, wurde noch nicht vollständig überprüft. Wenn dynamische Medien und AEM3D zusammen bereitgestellt werden, sollten Sie 3D-Elemente und deren Abhängigkeiten nur in einem Bereich des AEM Assets-Repositorys platzieren, der nicht dynamischen Medien zugewiesen ist. Diese Empfehlung ist besonders wichtig für 32-Bit-TIFF-Dateien, die für 3D-Phasen erforderlich sind, aber nicht von dynamischen Medien unterstützt werden.
+* **Dynamic Media** (  `dynamicmedia-scene7` mode) - Die Kompatibilität von AEM3D mit der neuen Dynamic Media-Lösung, die mit AEM 6.4 veröffentlicht wurde, wurde noch nicht vollständig überprüft. Wenn Dynamic Media und AEM3D zusammen bereitgestellt werden, sollten Sie 3D-Elemente und deren Abhängigkeiten nur in einem Bereich des AEM Assets-Repositorys platzieren, der Dynamic Media nicht zugewiesen ist. Diese Empfehlung ist besonders wichtig für 32-Bit-TIFF-Dateien, die für 3D-Phasen erforderlich sind, aber von Dynamic Media nicht unterstützt werden.
 
 ### Allgemein {#general}
 
@@ -128,7 +128,7 @@ Version 3.1
 
 * **3D-Assets mit abhängigen Elementen und Darstellungen herunterladen** – Beim Herunterladen von 3D-Assets von AEM mit aktivierten Optionen **Abhängigkeiten** und **Darstellungen** enthält der Download nicht nur die Ausgaben des primären 3D-Assets, sondern auch die Ausgaben aller abhängigen Elemente.
 
-* **Autodesk 3ds Max. Integration** - Rendering mit 3ds Max wird derzeit nicht unterstützt.
+* **Autodesk 3ds Max. Integration**  - Rendering mit 3ds Max wird derzeit nicht unterstützt.
 
 ### Dateitypbeschränkungen {#file-type-restrictions}
 
@@ -137,36 +137,36 @@ Version 3.1
 * **Targa-Bilddateien (.tga)** – Ältere 3D-Modelldateien enthalten möglicherweise Verweise auf TGA-Dateien. Dieses Format wird nicht von AEM unterstützt. Adobe empfiehlt, dass Sie diese Dateien in ein anderes Format konvertieren, bevor Sie die 3D-Elemente in AEM hochladen.
 * **HDR-Bilder** – HDR-Bilder werden für Bühnen mit Image-based Lighting (IBL) verwendet. Derzeit werden nur 32-Bit-TIFF-Bilder zu diesem Zweck unterstützt.
 * **32-Bit-TIFF-Bilder** – 32-Bit-TIFF-Bilder werden für Bühnen mit Image-based Lighting (IBL) verwendet. AEM unterstützt nicht die Erstellung von Darstellungen für diese Assets, was zu leeren Miniaturbildern führt. Eine Vorschau ist nicht möglich. Das Asset funktioniert dennoch ordnungsgemäß, wenn es mit einer IBL-Bühne verwendet wird.
-* **Autodesk 3ds Max (.max)-Dateien** - Wenn Autodesk 3ds Max auf den Autorknoten installiert und konfiguriert ist, unterstützt AEM die Erfassung und Konvertierung von .max-Dateien. Die Verwendung von .max-Dateien als Phasen wird derzeit nicht unterstützt.
+* **Autodesk 3ds Max (.max)-Dateien** : Wenn Autodesk 3ds Max auf den Autorknoten installiert und konfiguriert ist, unterstützt AEM die Erfassung und Konvertierung von .max-Dateien. Die Verwendung von .max-Dateien als Phasen wird derzeit nicht unterstützt.
 
 ### Automatische Auflösung der Abhängigkeiten {#automatic-dependency-resolution}
 
 * **Nicht aufgelöste Dateiabhängigkeiten beim Hochladen** – Wenn 3D-Assets und ihre abhängigen Elemente im selben Upload-Vorgang hochgeladen werden, ist es möglich, dass einige abhängige Elemente nicht automatisch behoben werden. Dieses Problem kann auftreten, wenn es sich um große abhängige Dateien handelt. Um dieses Problem zu beheben, greifen Sie auf die **Eigenschaften-/Abhängigkeitsseite** des Assets zu, auf der die nicht aufgelösten abhängigen Elemente nach dem Hochladen angezeigt werden. Die zuvor nicht aufgelösten abhängigen Elemente sollten jetzt angezeigt werden. Klicken Sie auf **Speichern**, um das Asset fertigzustellen. Um dieses Problem in Zukunft zu vermeiden, können Sie vor dem Hochladen der 3D-Objekte alle abhängigen Elemente in einer separaten Transaktion hochladen.
 
-* **Groß-/Kleinschreibung** – Bei der automatischen Auflösung der Abhängigkeiten wird versucht, die Dateinamen unter Berücksichtigung der Groß-/Kleinschreibung zuzuordnen. For example, if the original dependency found in the 3D asset is `image.jpg`, the dependency resolves to an asset named `Image.jpg`, `image.JPG`, or any other case variation.
+* **Groß-/Kleinschreibung** – Bei der automatischen Auflösung der Abhängigkeiten wird versucht, die Dateinamen unter Berücksichtigung der Groß-/Kleinschreibung zuzuordnen. Wenn die ursprüngliche Abhängigkeit im 3D-Asset beispielsweise `image.jpg` lautet, wird die Abhängigkeit zu einem Asset mit dem Namen `Image.jpg`, `image.JPG` oder einer anderen Fallvariation aufgelöst.
 
 ### 3D-Bühnen {#d-stages}
 
-* **Miniaturansichten für Phasen** - Die automatisch generierten Miniaturansichten für Phasen stellen die Bühne möglicherweise nicht genau dar.
+* **Miniaturansichten für Phasen**  - Die automatisch generierten Miniaturansichten für Phasen stellen die Bühne möglicherweise nicht genau dar.
 * **Bühnengeometrie für Bühnen mit anderer Beleuchtung als IBL** – Der Rapid Refine Renderer rendert die Geometrie von Bühnen mit einer anderen Beleuchtung als IBL nicht – auch nicht die der Hintergründe und Bodenflächen. Diese Geometrie wird in der Asset-Detail-Ansicht (3D-Vorschau) weiterhin angemessen angezeigt.
 
-* **FBX-Bühnen mit IBL** – Sie können FBX-Bühnen mit IBL hochladen. Allerdings gibt es beim FBX-Format keine Vorkehrungen zum Übertragen des IBL-Bildnamens. Daher schlägt die Auflösung der Dateiabhängigkeiten fehl. Das IBL-Bild muss der Bühne nach dem Hochladen manuell zugewiesen werden. You can assign the same 32-bit TIFF image to the three dependencies which are **Diffuse Lighting Environment Image**, **Reflection Environment Image**, and **Background Environment Image**, or different images may be assigned.
+* **FBX-Bühnen mit IBL** – Sie können FBX-Bühnen mit IBL hochladen. Allerdings gibt es beim FBX-Format keine Vorkehrungen zum Übertragen des IBL-Bildnamens. Daher schlägt die Auflösung der Dateiabhängigkeiten fehl. Das IBL-Bild muss der Bühne nach dem Hochladen manuell zugewiesen werden. Sie können das gleiche 32-Bit-TIFF-Bild den drei Abhängigkeiten zuweisen, die **Bild für diffuse Umgebung**, **Bild für Reflektion** und **Bild für Hintergrundbeleuchtung** sind. Anderes kann auch für Umgebung verwendet werden.
 
 * **Hintergrund von IBL-Stadien** – Bei manchen IBL-Szenen ist das Hintergrundbild ggf. von schlechter Qualität, also zum Beispiel zu hell oder zu verschwommen. Um die visuelle Qualität des Bildhintergrunds von IBL-Bühnen zu maximieren, empfiehlt Adobe, dass Sie ein separates 8-Bit-JPEG-Bild vorbereiten und der IBL-Bühne als **Bild mit dem Hintergrund der Umgebung hinzufügen**.
 
 * **Schwarzes Bild beim Rendern mit Maya mithilfe einer IBL-Bühne** – Dieses Problem wird wahrscheinlich durch Maya verursacht, das die IBL-Bildabhängigkeit nicht findet, da das durch die Bühne referenzierte IBL-Originalbild durch ein Bild mit einem anderen Namen ersetzt wurde. Um dieses Problem zu vermeiden, stellen Sie sicher, dass mindestens eine der drei Abhängigkeiten, auf die im Maya IBL-Stadium verwiesen wird, denselben Namen wie die ursprüngliche IBL-Dateireferenz in der Maya-Datei hat.
 * **Reservierter Hintergrund für IBL-Bühne** – Die Bilder zu IBL-Bühnen werden absichtlich horizontal gespiegelt, um dem Verhalten des NVIDIA Mental Ray Renderers zu entsprechen, der mit Autodesk Maya bereitgestellt wird. Problemumgehung: Spiegeln Sie die für IBL-Bühnen in Photoshop verwendeten Bilder, bevor Sie sie hochladen.
-* **Helligkeit von IBL-Bühnen** – Die automatische Analyse des IBL-Bildes kann zu einer Szene führen, die zu dunkel oder zu hell ist. To adjust the lighting brightness of IBL stages, navigate to **Basic Properties** and adjust the **bright** value of **Environment Lighting** as needed.
+* **Helligkeit von IBL-Bühnen** – Die automatische Analyse des IBL-Bildes kann zu einer Szene führen, die zu dunkel oder zu hell ist. Um die Helligkeit der IBL-Stufen anzupassen, navigieren Sie zu **Grundlegende Eigenschaften** und passen Sie den Wert **hell** von **Umgebung Lighting** nach Bedarf an.
 
 ### AEM Sites-3D-Komponente {#aem-sites-d-component}
 
-* **Eine 3D-Komponente pro Seite** - Derzeit ist auf jeder Webseite nur eine Instanz der 3D-Komponente zulässig. Wenn mehr als eine 3D-Komponente zur gleichen Seite hinzugefügt wird, funktioniert keine der 3D-Komponenten korrekt.
-* **3D-Ansicht fehlt bei der Vorschau in Sites** - Wenn Sie die **Vorschau** in Sites verwenden, muss die Seite im Browser neu geladen werden, damit der 3D-Viewer vollständig initialisiert werden kann. Dies ist kein Problem, wenn Sie die Webseite direkt (d. h., wenn sie aus dem Pfad entfernt `edit.html` wird) auf den Knoten &quot;Autor&quot;oder &quot;Veröffentlichen&quot;Ansicht haben.
+* **Eine 3D-Komponente pro Seite**  - Derzeit ist auf jeder Webseite nur eine Instanz der 3D-Komponente zulässig. Wenn mehr als eine 3D-Komponente zur gleichen Seite hinzugefügt wird, funktioniert keine der 3D-Komponenten korrekt.
+* **3D-Ansicht fehlt bei der Vorschau in Sites**  - Wenn Sie  **** Vorschau-Sites verwenden, muss die Seite im Browser neu geladen werden, damit der 3D-Viewer vollständig initialisiert werden kann. Dies ist kein Problem, wenn Sie die Webseite direkt (d. h. `edit.html` wird aus dem Pfad entfernt) auf den Knoten &quot;Autor&quot;oder &quot;Veröffentlichen&quot;Ansicht haben.
 
-* **Vollbildmodus auf iOS-Geräten** nicht verfügbar - Die Vollbildschaltfläche ist auf iOS-Geräten unabhängig vom verwendeten Browser nicht verfügbar.
+* **Vollbildmodus auf iOS-Geräten**  nicht verfügbar - Die Schaltfläche im Vollbildmodus ist auf iOS-Geräten unabhängig vom verwendeten Browser nicht verfügbar.
 
 ### Veröffentlichen von 3D-Inhalten {#publishing-d-content}
 
-* **Konfiguration** der 3D-Komponenten: Sie müssen das 3D-Feature Pack auf allen aktiven Veröffentlichungsknoten installieren und jeder Knoten muss mit **CRXDE Lite** zu den gleichen Konfigurationsoptionen am `/libs/settings/dam/v3D/WebGLSites`.
+* **Konfiguration**  der 3D-Komponenten: Sie müssen das 3D-Feature Pack auf allen aktiven Veröffentlichungsknoten installieren und jeder Knoten muss mit  **CRXDE** Liteto mit denselben Konfigurationsoptionen konfiguriert werden  `/libs/settings/dam/v3D/WebGLSites`.
 
-* **Fehlende Texturen, Hintergrund oder Beleuchtung nach der Veröffentlichung** - Der Mechanismus &quot; **Veröffentlichen** &quot;in AEM Sites veröffentlicht automatisch die primären Abhängigkeiten der Seite, einschließlich des 3D-Modells und der 3D-Phase, auf die die 3D-Komponente verweist. 3D-Bühnen und 3D-Modelle sind üblicherweise auf sekundäre Assets für IBL-Bilder und Texturzuodnungen angewiesen, die der Veröffentlichungsmechanismus von Sites nicht automatisch veröffentlicht. Problemumgehung: alle 3D-Assets aus Assets veröffentlichen, bevor die Webseite von Sites veröffentlicht wird. Dadurch wird sichergestellt, dass alle Abhängigkeiten für 3D-Assets auf den Veröffentlichungsknoten verfügbar sind.
+* **Fehlende Texturen, Hintergrund oder Beleuchtung nach der Veröffentlichung** : Der  **** Veröffentlichungsmechanismus in AEM Sites veröffentlicht automatisch die primären Abhängigkeiten der Seite, einschließlich des 3D-Modells und der 3D-Phase, auf die die 3D-Komponente verweist. 3D-Bühnen und 3D-Modelle sind üblicherweise auf sekundäre Assets für IBL-Bilder und Texturzuodnungen angewiesen, die der Veröffentlichungsmechanismus von Sites nicht automatisch veröffentlicht. Problemumgehung: alle 3D-Assets aus Assets veröffentlichen, bevor die Webseite von Sites veröffentlicht wird. Dadurch wird sichergestellt, dass alle Abhängigkeiten für 3D-Assets auf den Veröffentlichungsknoten verfügbar sind.
