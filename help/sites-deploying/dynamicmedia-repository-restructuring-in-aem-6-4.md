@@ -1,6 +1,6 @@
 ---
-title: Umstrukturierung des dynamischen Medienspeichers in AEM 6.4
-seo-title: Umstrukturierung des dynamischen Medienspeichers in AEM 6.4
+title: Umstrukturierung des Dynamic Media-Repositorys in AEM 6.4
+seo-title: Umstrukturierung des Dynamic Media-Repositorys in AEM 6.4
 description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in AEM 6.4 für Dynamic Media zu migrieren.
 seo-description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in AEM 6.4 für Dynamic Media zu migrieren.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
@@ -17,9 +17,9 @@ ht-degree: 68%
 ---
 
 
-# Dynamic Media repository restructuring in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
+# Dynamic Media-Repository-Restrukturierung in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes impacting the Dynamic Media Solution. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die die Dynamic Media-Lösung beeinträchtigen. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
 
 **Vor der Aktualisierung auf 6.5**
 
@@ -31,7 +31,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 
 ## Vor der Aktualisierung auf 6.5 {#prior-to-upgrade}
 
-### Custom Adaptive Video encoding configurations  {#custom-adaptive-video-encoding-configurations}
+### Benutzerdefinierte Konfigurationen für die adaptive Videokodierung {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -54,7 +54,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
  </tbody>
 </table>
 
-### Dynamic Media (DMS7) Cloud configuration {#dynamic-media-dms-cloud-configuration}
+### Dynamic Media (DMS7) Cloud-Konfiguration {#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -81,7 +81,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
  </tbody>
 </table>
 
-### Dynamic Media (DM Hybrid) Cloud Service configuration {#cloudserviceconfiguration}
+### Dynamic Media (DM Hybrid) Cloud Service-Konfiguration {#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -104,7 +104,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
  </tbody>
 </table>
 
-### Dynamic Media - YouTube Cloud Service configuration  {#youtubecloudserviceconfiguration}
+### Dynamic Media - YouTube-Cloud Service-Konfiguration {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -118,7 +118,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>1. Rückgängigmachen der Veröffentlichung aller Videos von YouTube<br /> 2. Create the YouTube Configuration using the new TouchUI (from <code>/conf</code>) including copying all the Channels from the old location<br /> 3. Veröffentlichen Sie alle Videos neu auf YouTube.</p> <p>Dieser Workflow führt zu neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer neuen YouTube-Konfiguration mit der Touch-optimierten Benutzeroberfläche aufheben, werden unter „Eigenschaften“ mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle bei Gelegenheit erneut veröffentlicht werden. Dies bedeutet, dass Sie unbrauchbar gewordene URLs haben, die unter „Eigenschaften“ aufgelistet sind.</p> </td> 
+   <td><p>1. Rückgängigmachen der Veröffentlichung aller Videos von YouTube<br /> 2. Erstellen Sie die YouTube-Konfiguration mit der neuen TouchUI (von <code>/conf</code>), einschließlich Kopieren aller Kanal vom alten Speicherort<br /> 3. Veröffentlichen Sie alle Videos neu auf YouTube.</p> <p>Dieser Workflow führt zu neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer neuen YouTube-Konfiguration mit der Touch-optimierten Benutzeroberfläche aufheben, werden unter „Eigenschaften“ mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle bei Gelegenheit erneut veröffentlicht werden. Dies bedeutet, dass Sie unbrauchbar gewordene URLs haben, die unter „Eigenschaften“ aufgelistet sind.</p> </td> 
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td> 
@@ -127,7 +127,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
  </tbody>
 </table>
 
-### Verschiedenes {#misc}
+### Verschiedenes  {#misc}
 
 <table> 
  <tbody>
