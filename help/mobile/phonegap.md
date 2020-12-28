@@ -31,9 +31,9 @@ Das Starten einer neuen AEM Mobile-App erfordert einen Zusammenhalt von Rollen, 
 * **Entwickler**
 * **Autor**
 
-## Erstellen von PhoneGap-Anwendungen {#authoring-phonegap-applications}
+## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-Autor *(oder*Marketer *)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag &amp; Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bilder, Videos und Textfragmente (Inhaltsfragmente).
+Ein ***AEM-Autor* (oder *Marketer*)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag &amp; Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bilder, Videos und Textfragmente (Inhaltsfragmente).
 
 Sehen Sie sich die folgenden Ressourcen an, um zu beginnen:
 
@@ -45,7 +45,7 @@ Sehen Sie sich die folgenden Ressourcen an, um zu beginnen:
 * [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)
 * [Eine vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Weitere Informationen zu **Content Services** finden Sie unter Übersicht über [Content Services](/help/mobile/develop-content-as-a-service.md) .
+Weitere Informationen zu **Content Services** finden Sie unter [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
