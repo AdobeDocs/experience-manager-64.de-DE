@@ -22,13 +22,13 @@ ht-degree: 47%
 
 ## Download {#download}
 
-This script is made to ease the analysis of the `access.log` files producing a readable report for later processing.
+Dieses Skript wurde erstellt, um die Analyse der `access.log`-Dateien zu vereinfachen, die einen lesbaren Bericht zur späteren Verarbeitung erstellen.
 
 [Datei laden](assets/analyse-access.sh)
 
 ## Beschreibung {#description}
 
-This script is made to ease the analysis of the `access.log` files producing a readable report for later processing.
+Dieses Skript wurde erstellt, um die Analyse der `access.log`-Dateien zu vereinfachen, die einen lesbaren Bericht zur späteren Verarbeitung erstellen.
 
 Es liefert die Gesamtzahl an Anfragen, einen Vergleich zwischen GET und POST, die Anfrageverteilung über einen Zeitraum hinweg usw.
 
@@ -38,7 +38,7 @@ Er kann einen benutzerdefinierten Pfad analysieren, der in der Befehlszeile ange
 
 Ausgehend von dem Kommentar in der Datei, mit dem Sie erfahren, wie Sie sie ausführen:
 
-Analyse CQ `access.log` extrapolating various informations and producing a Markdown output on `stdout`.
+Analysieren Sie CQ `access.log`, indem Sie verschiedene Informationen extrapolieren und eine Markdown-Ausgabe auf `stdout` erzeugen.
 
 ## Verwendung {#usage}
 
