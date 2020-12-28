@@ -17,13 +17,13 @@ ht-degree: 2%
 ---
 
 
-# NICHT VERÖFFENTLICHEN, SONDERN KEIN DELETE ZUM Anpassen der Datentypen für Inhaltsfragmentmodelle{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+# KEINE VERÖFFENTLICHUNG, ABER KEIN DELETE ZUM Anpassen von Datentypen für Inhaltsfragmentmodelle{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
-[Inhaltsfragmente](/help/assets/content-fragments.md) basieren auf [Inhaltsfragmentmodellen](/help/assets/content-fragments-models.md). Diese Modelle basieren auf [Elementen](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) unterschiedlicher Datentypen.
+[Inhaltsfragmente ](/help/assets/content-fragments.md) basieren auf  [Inhaltsfragmentmodellen](/help/assets/content-fragments-models.md). Diese Modelle werden aus [Elementen](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) verschiedener Datentypen aufgebaut.
 
 Es stehen verschiedene Datentypen zur Verfügung, darunter einzeiliger Text, mehrzeiliger Rich-Text, numerische Felder, boolesche Selektoren, Dropdown-Menüoptionen, Datum und Uhrzeit usw. AEM Benutzer können Datentypen auf der Grundlage der redaktionellen Absicht der entsprechenden Fragmente auswählen. Auf diese Weise können Sie einfache Textmodelle bis hin zu komplexen Modellen mit verschiedenen Inhaltsarten und dem damit verbundenen Erlebnis zum Erstellen von Fragmenten abdecken.
 
-Datentypen werden durch eine [Kombination von Knoteneigenschaften](#properties) definiert, die an [bestimmten Positionen im Repository](#locations-in-the-repository)gespeichert werden. Sie können auch eigene [Datentypen](#creating-your-data-type) und [fieldProperties](#creating-your-own-fieldproperties-property)erstellen.
+Datentypen werden durch eine [Kombination von Knoteneigenschaften](#properties) definiert, die an [bestimmten Stellen im Repository](#locations-in-the-repository) vorhanden sind. Sie können auch eigene [Datentypen](#creating-your-data-type) und [fieldProperties](#creating-your-own-fieldproperties-property) erstellen.
 
 <!-- Please uncomment when files are used>
 >[!NOTE]
@@ -37,7 +37,7 @@ Alle vordefinierten Datentypen werden wie folgt deklariert:
 
 `/libs/settings`
 
-Sie können neue Datentypen hinzufügen, indem Sie die Knotenstruktur wie folgt überlagern `/apps`:
+Sie können neue Datentypen hinzufügen, indem Sie die Knotenstruktur wie folgt unter `/apps` überlagern:
 
 `/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items`
 
@@ -60,13 +60,13 @@ Alle Datentypen werden in einer Knotenstruktur wie folgt dargestellt:
 
 `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes/items`
 
-Jede Node unter `/items` verfügt über Eigenschaften, die definieren, wie dieser Datentyp im Modelleditor dargestellt werden soll.
+Jeder Knoten unter `/items` verfügt über Eigenschaften, die definieren, wie dieser Datentyp im Modelleditor dargestellt werden soll.
 
 Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Modelleditor vorhanden ist:
 
 * `fieldIcon`
 
-   [CoralUI-Symbol](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) zur Darstellung des Datentyps in der Benutzeroberfläche des Modelleditors.
+   [Das CoralUI-](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) Symbol stellt den Datentyp in der Benutzeroberfläche des Modelleditors dar.
 
 * ` [fieldProperties](#fieldproperties)`
 
@@ -74,7 +74,7 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
 
 * `fieldResourceType`
 
-   Der Sling-Ressourcentyp, der zum Rendern des Datentyps in einem Inhaltsfragment verwendet wird. Bei Datentypen, die auf unterschiedliche Weise wiedergegeben werden können (z. B. einfache Texteingabe und/oder mehrzeilige Texteingabe), muss diese Eigenschaft als Array erstellt werden, das alle Ressourcentypen enthält. Die `renderasfield` Eigenschaft wird automatisch hinzugefügt, `fieldProperties` damit der Benutzer den Ressourcentyp auswählen kann, den er dem Modell hinzufügen muss.
+   Der Sling-Ressourcentyp, der zum Rendern des Datentyps in einem Inhaltsfragment verwendet wird. Bei Datentypen, die auf unterschiedliche Weise wiedergegeben werden können (z. B. einfache Texteingabe und/oder mehrzeilige Texteingabe), muss diese Eigenschaft als Array erstellt werden, das alle Ressourcentypen enthält. Die `renderasfield`-Eigenschaft wird automatisch zu `fieldProperties` hinzugefügt, damit der Benutzer den Ressourcentyp auswählen kann, den er dem Modell hinzufügen muss.
 
 * `fieldPropResourceType`
 
@@ -82,16 +82,16 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
 
    Beispiel für den Datentyp:
 
-   * Einzelzeilentext `fieldPropResourceType` wäre eine `textfield` Komponente
-   * Boolescher Wert, `fieldPropResourceType` der eine `checkbox` Komponente ist
+   * Einzelzeilentext: Die Komponente `fieldPropResourceType` ist eine `textfield`
+   * Boolescher Wert; `fieldPropResourceType` wäre eine `checkbox`-Komponente
 
 * `fieldViewResourceType`
 
-   Der Sling-Ressourcentyp, der zum Rendern des Datentyps in der Vorschau beim Erstellen des Modells verwendet wird. Wenn der Benutzer den Datentyp auf die linke Seite des Modelleditors zieht, stellt die `fieldViewResourceType` Eigenschaft die Komponente dar, die dort wiedergegeben wird. Dies wird für Fälle verwendet, in denen Sie nicht die vollständige Komponente wiedergeben möchten, sondern nur einen Ersatz, der den Aufwand für den Modelleditor minimiert.
+   Der Sling-Ressourcentyp, der zum Rendern des Datentyps in der Vorschau beim Erstellen des Modells verwendet wird. Wenn der Benutzer den Datentyp auf die linke Seite des Modelleditors zieht, stellt die `fieldViewResourceType`-Eigenschaft die Komponente dar, die dort wiedergegeben wird. Dies wird für Fälle verwendet, in denen Sie nicht die vollständige Komponente wiedergeben möchten, sondern nur einen Ersatz, der den Aufwand für den Modelleditor minimiert.
 
 * `fieldTitle`
 
-   Eigenschaft, die den Titel dieses Datentyps definiert. Beispiel: **Einzeiliger Text** für eine `textfield` Komponente, **Mehrzeiliger Text** für eine Komponente mit mehreren Feldern.
+   Eigenschaft, die den Titel dieses Datentyps definiert. Beispiel: **Einzelzeilentext** für eine `textfield`-Komponente, **Mehrzeiliger Text** für eine Multifeldkomponente.
 
 * `valueType`
 
@@ -99,11 +99,11 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
 
 * `renderType`
 
-   Dies ist eine interne Darstellung des Datentyps. Es verbindet die Komponente `valueType` mit einer UI-Komponente. Siehe [Zuordnungen](#mappings).
+   Dies ist eine interne Darstellung des Datentyps. Es verbindet das `valueType` mit einer UI-Komponente. Siehe [Zuordnungen](#mappings).
 
 * `listOrder`
 
-   Jeder Datentyp benötigt einen Wert, der seine Reihenfolge in der Liste darstellt. Dadurch wird beim Speichern des Modelleditors die richtige Reihenfolge der verschiedenen Felder gewährleistet (per Drag &amp; Drop hinzugefügt/verschoben). Dieser Wert muss eine Ganzzahl sein, und es wird empfohlen, die Zahl in aufsteigender Reihenfolge zuzuweisen. Beim Erstellen eines neuen Datentyps ist es am besten, den Wert basierend auf dem letzten Datentyp in der Liste zuzuweisen (dem höchsten in den Datentypen vorhandenen `listOrder` Wertwert).
+   Jeder Datentyp benötigt einen Wert, der seine Reihenfolge in der Liste darstellt. Dadurch wird beim Speichern des Modelleditors die richtige Reihenfolge der verschiedenen Felder gewährleistet (per Drag &amp; Drop hinzugefügt/verschoben). Dieser Wert muss eine Ganzzahl sein, und es wird empfohlen, die Zahl in aufsteigender Reihenfolge zuzuweisen. Beim Erstellen eines neuen Datentyps ist es am besten, den Wert basierend auf dem letzten Datentyp in der Liste zuzuweisen (der höchste Wert von `listOrder`, der in den Datentypen vorhanden ist).
 
 #### Zuweisungen {#mappings}
 
@@ -121,11 +121,11 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
   </tr> 
   <tr> 
    <td>Mehrzeilentext</td> 
-   <td>Zeichenfolge mit Inhaltstyp<br /> </td> 
+   <td>Zeichenfolge mit dem Inhaltstyp<br /> </td> 
    <td>text-multi</td> 
   </tr> 
   <tr> 
-   <td>Zahl (Ganzzahl/lang)<br /> </td> 
+   <td>Number (integer/long)<br /> </td> 
    <td>long</td> 
    <td>number</td> 
   </tr> 
@@ -147,7 +147,7 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
   <tr> 
    <td>Aufzählung</td> 
    <td>string/long</td> 
-   <td>Auflistung</td> 
+   <td>auflistung</td> 
   </tr> 
   <tr> 
    <td>Tags</td> 
@@ -159,7 +159,7 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
 
 >[!NOTE]
 >
->Einige Typen (z. B. `string``long`u. a.) können mit mehreren Werten versehen sein. In diesem Fall wird die Komponente, die zum Rendern und Bearbeiten verwendet wird, normalerweise durch eine Multifield-Komponente ( `granite/ui/components/coral/foundation/form/multifield`) umschlossen. Die Ausnahme sind Tags, bei denen die Bearbeitungskomponente für die korrekte Wiedergabe verantwortlich ist.
+>Einige Typen (z. B. `string`, `long` usw.) können mehrere Werte haben. In diesem Fall wird die Komponente, die zum Rendern und Bearbeiten verwendet wird, normalerweise durch eine Multifield-Komponente ( `granite/ui/components/coral/foundation/form/multifield`) umschlossen. Die Ausnahme sind Tags, bei denen die Bearbeitungskomponente für die korrekte Wiedergabe verantwortlich ist.
 
 ### fieldProperties {#fieldproperties}
 
@@ -167,27 +167,27 @@ Die Konfigurationseigenschaften für jeden Datentyp. Werte für `fieldProperties
 
 * `base`
 
-   Dies ist die Grundlage für alle `fieldProperties` Komponenten. Die Definition liegt unter `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
+   Dies ist die Grundlage für alle `fieldProperties`-Komponenten. Die Definition befindet sich unter `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
 
-   Es enthält die Variable `fieldRoot`, die anschließend beim Erstellen von Eingaben zum Abrufen des richtigen Pfads verwendet werden `fieldProperties` kann.
+   Es enthält die Variable `fieldRoot`, die nachfolgende `fieldProperties` beim Erstellen von Eingaben verwenden kann, um den richtigen Pfad abzurufen.
 
-   Beispiel: Um den richtigen Pfad für eine **Feldbeschriftung** zu erhalten, müssen Sie die Komponente, zu der diese gehört, mit der Eingabetaste für dieses Feld `fieldRoot` + `<*fieldLabel*>`
+   Beispiel: Um den richtigen Pfad für eine **Feldbeschriftung** abzurufen, müssen Sie die Komponente, zu der diese gehört, mit dem Schlüssel identifizieren. Die Eingabe für dieses Feld sollte `fieldRoot` + `<*fieldLabel*>` sein.
 
 * `checkboxfields`
 
-   Diese Komponente fügt das Kontrollkästchen &quot;Standard&quot;für den `Boolean` Datentyp sowie die Sling-Parameter `checked@Delete` und -Parameter hinzu `checked@TypeHint`.
+   Diese Komponente fügt das Kontrollkästchen default für den Datentyp `Boolean` sowie die Sling-Parameter `checked@Delete` und `checked@TypeHint` hinzu.
 
 * `datepickerfields`
 
-   Komponente, die die ausgeblendeten Eingaben hinzufügt, die für die Funktion der Datumsauswahl-Komponente erforderlich sind. Umfasst das Erstellen der Eigenschaften `defaultDateField`, `displayedFormat`, `emptyText`, `valueFormat`und `minDate` `maxDate`.
+   Komponente, die die ausgeblendeten Eingaben hinzufügt, die für die Funktion der Datumsauswahl-Komponente erforderlich sind. Umfasst das Erstellen der Eigenschaften `defaultDateField`, `displayedFormat`, `emptyText`, `valueFormat`, `minDate` und `maxDate`.
 
 * `datetimepickerfields`
 
-   Dadurch wird ein Auswahlfeld für den `Date&Time` Datentyp hinzugefügt, um zwischen `Date` und `Date&Time` Optionen zu unterscheiden.
+   Hierdurch wird ein Auswahlfeld für den Datentyp `Date&Time` hinzugefügt, um zwischen den Optionen `Date` und `Date&Time` zu unterscheiden.
 
 * `datevaluefield`
 
-   Dadurch wird den Eigenschaften ein Datumsbereich hinzugefügt, sodass ein Benutzer einen Standarddatentyp für den `Date&Time` Datentyp auswählen kann.
+   Dadurch wird den Eigenschaften ein Datumsbereich hinzugefügt, sodass ein Benutzer einen Standarddatentyp für den Datentyp `Date&Time` auswählen kann.
 
 * `descriptionfield`
 
@@ -195,74 +195,74 @@ Die Konfigurationseigenschaften für jeden Datentyp. Werte für `fieldProperties
 
 * `labelfield`
 
-   Komponente, die eine `textfield` Eingabe hinzufügt, mit der die Feldbeschriftung für einen Datentyp hinzugefügt wird, der Feldbeschriftungen enthalten kann.
+   Komponente, die eine `textfield`-Eingabe hinzufügt, die die Feldbeschriftung für einen Datentyp mit Feldbeschriftungen hinzufügt.
 
 * `maptopropertyfield`
 
-   Diese Komponente fügt das `Name` Feld in den Eigenschaften hinzu und gibt der ausgewählten Komponente eines Datentyps einen Bezeichner. Es sollte in allen Datentypen vorhanden sein.
+   Diese Komponente fügt das Feld `Name` in den Eigenschaften hinzu und gibt der ausgewählten Komponente eines Datentyps einen Bezeichner. Es sollte in allen Datentypen vorhanden sein.
 
 * `maxlengthfield`
 
-   Sie wird verwendet, um die `maxLength` Eigenschaft für die Verwendung mit Datentypen hinzuzufügen, die diese Eigenschaft akzeptieren. Beispiel: **Einzelzeilentext**, **Nummer** usw.
+   Es wird verwendet, um die `maxLength`-Eigenschaft für die Verwendung mit Datentypen hinzuzufügen, die diese Eigenschaft akzeptieren. Beispiel: mit **Einzelzeilentext**, **Zahl** usw.
 
 * `multieditorfield`
 
-   Dadurch wird das gesamte verborgene Feld hinzugefügt, das für die Arbeit des mehrzeiligen Editors erforderlich ist, der vom Datentyp **Mehrzeiliger Text** dargestellt wird.
+   Dadurch wird das gesamte verborgene Feld hinzugefügt, das für die Arbeit des mehrzeiligen Editors erforderlich ist, der durch den Datentyp **Mehrzeiliger Text** dargestellt wird.
 
 * `mvfields`
 
-   Komponente, die alle ausgeblendeten Felder hinzufügt, die für die Arbeit mit einer Multifield-Komponente erforderlich sind. Beispielsweise für die zweite Option eines **einzeiligen Texttyps** . Dies sollte für jede Komponente hinzugefügt werden, die als Multifeld gerendert wird.
+   Komponente, die alle ausgeblendeten Felder hinzufügt, die für die Arbeit mit einer Multifield-Komponente erforderlich sind. Beispielsweise für die zweite Option eines Datentyps **Einzelzeilentext**. Dies sollte für jede Komponente hinzugefügt werden, die als Multifeld gerendert wird.
 
 * `numbertypefield`
 
-   Wählen Sie die Option für den Datentyp &quot; **Zahl** &quot;, der für den Datentyp &quot; **Zahl** &quot;zwischen **Integer** oder **Fraction** ausgewählt wird.
+   Wählen Sie die Option für den Datentyp **Number**, der zwischen **Integer** oder **Fraction** für den Datentyp **Number** auswählt.
 
 * `numbervaluefield`
 
-   Eine `numberfield` Standardwertauswahl für die **Zahl** `type.options` Hiermit werden die Optionseingaben für den Datentyp &quot; **Auflistung** &quot;hinzugefügt, mit dem die Werte für die Komponente &quot;Auswahlfeld&quot;bestimmt werden.
+   Eine `numberfield`-Standardwertauswahl für **Number** `type.options` fügt die Optionseingabe für den Datentyp **Auflistung** hinzu, mit dem die Werte für die Komponente &quot;select box&quot;bestimmt werden.
 
 * `placeholderfield`
 
-   Dies ist ein Textfeld, das als Eingabe für die `emptyText` Eigenschaft einer Komponente dient. Dies sollte von allen Datentypen verwendet werden, die einen Platzhalter akzeptieren (was nicht sehr kompliziert ist). z. B. **Einzelzeilentext**, **Nummer** usw.).
+   Dies ist ein Textfeld, das als Eingabe für die `emptyText`-Eigenschaft einer Komponente dient. Dies sollte von allen Datentypen verwendet werden, die einen Platzhalter akzeptieren (was nicht sehr kompliziert ist). z. B. **Einzelzeilentext**, **Zahl** usw.).
 
 * `renderasfield`
 
-   Dies ist die Komponente, die automatisch wiedergegeben wird, wenn mehrere Komponenten in der Eigenschaft des Datentypknotens vorhanden `fieldResourceTypes` sind.
+   Diese Komponente wird automatisch gerendert, wenn mehrere `fieldResourceTypes` in der Eigenschaft des Datentypknotens vorhanden sind.
 
 * `requiredfield`
 
-   Dieses Kontrollkästchen stellt die `required` Eigenschaft einer Komponente dar. Da die meisten Komponenten das `required` Feld akzeptieren, kann dieses Feld für die meisten Datentypen verwendet werden.
+   Dies ist ein Kontrollkästchen, das die `required`-Eigenschaft für eine Komponente darstellt. Da die meisten Komponenten das Feld `required` akzeptieren, kann dieses Feld für die meisten Datentypen verwendet werden.
 
 * `tagsfields`
 
-   Komponenten, die die für die Wiedergabe einer `tagfield` Komponente erforderlichen Eingaben hinzufügen, die vom Datentyp &quot; **Tags** &quot;verwendet werden.
+   Komponenten, die die Eingaben hinzufügen, die erforderlich sind, damit eine `tagfield`-Komponente gerendert werden kann, und die vom Datentyp **Tags** verwendet werden.
 
 * `tagsroot`
 
-   Eine Pfadauswahl, die vom **Tags** -Datentyp verwendet wird, um den Stammpfad für die `tagsfield` Komponente festzulegen.
+   Eine Pfadauswahl, die vom Datentyp **Tags** verwendet wird, um den Stammpfad für `tagsfield`-Komponente festzulegen.
 
 * `textfield`
 
-   Wird vom `Boolean` Datentyp verwendet, um die Feldbeschriftung des von diesem Datentyp definierten Kontrollkästchens einzustellen.
+   Wird vom Datentyp `Boolean` verwendet, um die Feldbeschriftung des von diesem Datentyp definierten Kontrollkästchens einzustellen.
 
 * `textvaluefield`
 
-   Die Standardwerteigenschaft für den Datentyp &quot; **Einzelzeilentext** &quot;.
+   Die Standardwerteigenschaft für den Datentyp **Einzelzeilentext**.
 
-## Datentyp erstellen {#creating-your-data-type}
+## Erstellen des Datentyps {#creating-your-data-type}
 
 Um einen eigenen Datentyp zu erstellen, müssen Sie:
 
 * [Knotenstruktur erstellen](#creating-the-node-structure)
 * [Definieren der Eigenschaften für Ihren Datentyp](#defining-the-properties-for-your-data-type)
 
-Anschließend können Sie Ihren Datentyp [verwenden](#using-your-data-type).
+Anschließend können Sie [Ihren Datentyp](#using-your-data-type) verwenden.
 
-You can also [create your own `fieldProperties`](#creating-your-own-fieldproperties-property).
+Sie können auch [Ihre eigene `fieldProperties`](#creating-your-own-fieldproperties-property) erstellen.
 
-### Creating the Node Structure {#creating-the-node-structure}
+### Node Structure {#creating-the-node-structure} erstellen
 
-Die Knotenstruktur muss unter erstellt werden, `/apps` um die Datentypen zu überlagern. Wenn es nicht bereits vorhanden ist, müssen Sie Folgendes erstellen:
+Die Knotenstruktur muss unter `/apps` erstellt werden, um die Datentypen zu überlagern. Wenn es nicht bereits vorhanden ist, müssen Sie Folgendes erstellen:
 
 1. Wenn es nicht bereits vorhanden ist, müssen Sie Folgendes erstellen:
 
@@ -283,10 +283,10 @@ Die Knotenstruktur muss unter erstellt werden, `/apps` um die Datentypen zu übe
    >
    >`/cfm/models/formbuilderconfig/datatypes/items` möglicherweise mit den angegebenen Nodetypen erstellt werden.
 
-1. Unter können `/items` Sie neue Nodes hinzufügen, um Ihre neuen Datentypen zu repräsentieren:
+1. Unter `/items` können Sie neue Nodes hinzufügen, um Ihren neuen Datentyp(en) zu repräsentieren:
 
-   * Node Type: `nt:unstructured`
-   * &quot;Eigenschaften: siehe [Definieren der Eigenschaften für Ihren Datentyp](#defining-the-properties-for-your-data-type)
+   * Knotentyp: `nt:unstructured`
+   * &quot;Eigenschaften: Siehe [Definieren der Eigenschaften für Ihren Datentyp](#defining-the-properties-for-your-data-type)
 
 ### Definieren der Eigenschaften für Ihren Datentyp {#defining-the-properties-for-your-data-type}
 
@@ -296,19 +296,19 @@ Die Knotenstruktur muss unter erstellt werden, `/apps` um die Datentypen zu übe
    * `fieldPropResourceType`
    * `fieldViewResourceType`
 
-   Diese legen fest, wie die Komponenten für Ihren Datentyp wiedergegeben werden. Sie können beliebige Komponenten sein. einschließlich Ihrer eigenen benutzerdefinierten Komponenten (benötigen Sie einen passenden Satz ` [fieldProperties](#fieldproperties)`).
+   Diese legen fest, wie die Komponenten für Ihren Datentyp wiedergegeben werden. Sie können beliebige Komponenten sein. einschließlich Ihrer eigenen benutzerdefinierten Komponenten (benötigen Sie einen passenden Satz von ` [fieldProperties](#fieldproperties)`).
 
    Definieren Sie diese Eigenschaften mit den entsprechenden Werten auf der Node für Ihren Datentyp.
 
-1. Bestimmen Sie die ` [fieldProperties](#fieldproperties)` zu verwendende. Dies hängt von den Attributen oder Eigenschaften ab, die Sie `fieldResourceType` benötigen.
+1. Bestimmen Sie die zu verwendende ` [fieldProperties](#fieldproperties)`. Dies hängt von den Attributen oder Eigenschaften ab, die Ihre `fieldResourceType` benötigt.
 
-   Beispielsweise `granite/ui/components/coral/foundation/form/textfield`sollte ein Objekt über einen **Beschriftungsnamen**, eine **maximale Länge**, einen Platzhaltertext **und eine Eigenschaft** Standardwert **** verfügen.
+   Beispiel: a `granite/ui/components/coral/foundation/form/textfield`sollte eine **Beschriftung**, eine **Maximale Länge**, einen **Platzhaltertext** und eine **Standardwert**-Eigenschaft haben.
 
-   Sie können aus den vordefinierten [fieldProperties](#fieldproperties)wählen oder eigene Eigenschaften [erstellen](#creating-your-own-fieldproperties-property).
+   Sie können aus dem vordefinierten Feld [fieldProperties](#fieldproperties) oder [Ihre eigenen Eigenschaften](#creating-your-own-fieldproperties-property) erstellen.
 
    Definieren Sie diese Eigenschaften mit den entsprechenden Werten auf der Node für Ihren Datentyp.
 
-1. Legen Sie Werte für die folgenden [Datentypeigenschaften](#data-type-properties)fest:
+1. Legen Sie Werte für die folgenden [Datentypeigenschaften](#data-type-properties) fest:
 
    * `fieldIcon`
    * `fieldTitle`
@@ -324,13 +324,13 @@ Nachdem Sie diese Knotenstruktur mit allen angewendeten Eigenschaften gespeicher
 
 ## Erstellen einer eigenen fieldProperties-Eigenschaft {#creating-your-own-fieldproperties-property}
 
-Sie können aus den vordefinierten [fieldProperties](#fieldproperties)wählen oder eigene erstellen:
+Sie können aus dem vordefinierten Feld [fieldProperties](#fieldproperties) wählen oder eigene erstellen:
 
 1. Komponente erstellen unter:
 
    `/apps/dam/cfm/models/editor/components/datatypeproperties/`
 
-   Wenn der Pfad nicht vorhanden ist, können Sie ihn mithilfe von `nt:folder` Knoten erstellen.
+   Wenn der Pfad nicht vorhanden ist, können Sie ihn mit `nt:folder`-Knoten erstellen.
 
    1. Um Zugriff auf die Variablen zu haben, sollte diese Komponente wie folgt erweitert werden:
 
@@ -342,6 +342,6 @@ Sie können aus den vordefinierten [fieldProperties](#fieldproperties)wählen od
 
    1. Diese Komponente sollte entweder ein Feld (wenn ein Benutzer Daten eingeben muss) oder eine ausgeblendete Eingabe mit den für den Datentyp erforderlichen Eigenschaften rendern. Eine Multifield-Komponente benötigt beispielsweise einen untergeordneten Knoten mit dem Feldtyp, den sie Duplikat haben soll. Daher sollte eine Eingabe vorhanden sein, die (durch Sling-POST-Mechanik) einen untergeordneten Knoten eines bestimmten Typs erstellen kann.
 
-1. Der Basisname dieser Komponente sollte hinzugefügt werden `fieldProperties`.
+1. Der Basisname dieser Komponente sollte `fieldProperties` hinzugefügt werden.
 1. Wiederholen Sie diese Schritte für alle gewünschten Eigenschaften.
 
