@@ -120,8 +120,8 @@ Wenn Sie das Repository einfach vorkonfigurieren möchten (ohne seine Position z
 
 * `repository.xml` am erforderlichen Speicherort extrahieren
 
-* update `repository.xml` as required
+* Aktualisieren Sie `repository.xml` nach Bedarf
 
-* erstellen `bootstrap.properties` und definieren `repository.config`
+* `bootstrap.properties` erstellen und `repository.config` definieren
 
 Zur Erinnerung: Führen Sie diese Aktionen vor der tatsächlichen Installation aus.
