@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 workflow-type: tm+mt
 source-wordcount: '2307'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -43,13 +43,13 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+Die folgende Abbildung zeigt ein Beispiel auf der Website We.Retail, auf der auf eine Seite mit Wanderkursen ( `desert-sky-shorts`) zugegriffen wird:
 
-* Author environment: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Autor-Umgebung: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Veröffentlichungsumgebung: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` auf der Umgebung zum Veröffentlichen optional sein.
 
 ```xml
  /content
@@ -95,13 +95,13 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 * **[Name](#name)**:
 
    * Mit diesem Wert wird der URI generiert.
-   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices). 
+   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
 #### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
-* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich.  Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung).  Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
+* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
 
 * Wenn ein Seitenname manuell vom Autor angegeben wird, gilt die Beschränkung von 64 Zeichen nicht, aber andere technische Einschränkungen gelten unter Umständen für die Länge des Seitennamens.
 
@@ -111,7 +111,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md).
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -129,7 +129,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen**[ für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -138,7 +138,7 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![screen_shot_2018-03-22at104817](assets/screen_shot_2018-03-22at104817.png)
 
@@ -171,7 +171,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 
 ### Komponenten {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [Out-of-the-Box-Komponenten](/help/sites-authoring/default-components-console.md), die eine umfassende Funktionalität bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -263,9 +263,9 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
 >[!NOTE]
 >
->Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
+>Das Navigieren zu anderen Seiten ist im Seiteneditor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiteneditors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite       {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -302,7 +302,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
 >[!NOTE]
 >
->Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. Weitere Informationen finden Sie unter [Formularverfügbarkeit](/help/sites-developing/templates.md#template-availability).
 
 Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen und Ganzen gleich und wird von demselben Assistenten unterstützt. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
 
@@ -341,7 +341,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) verwenden, um zum neuen Speicherort der Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken. 
+      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
 
