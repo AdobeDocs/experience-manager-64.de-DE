@@ -15,7 +15,7 @@ ht-degree: 85%
 ---
 
 
-# AEM 6.4 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.4 Benutzerhandbuch zur Erstellung der klassischen Benutzeroberfläche {#classic-ui}
 
 + [Überblick über das Authoring der klassischen Benutzeroberfläche](home.md)
 + Einführung in das Authoring der klassischen Benutzeroberfläche {#introduction}
@@ -60,11 +60,11 @@ ht-degree: 85%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung   {#personalization}
++ Personalisierung  {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
-   + [Einstiegsseiten](classic-personalization-campaigns-landingpage.md)
+   + [Landing Pages](classic-personalization-campaigns-landingpage.md)
    + [Adobe Target-Angebote](classic-personalization-campaigns-target-offers.md)
    + [Arbeiten mit dem Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [E-Mail-Marketing](classic-personalization-campaigns-email.md)
@@ -78,7 +78,7 @@ ht-degree: 85%
    + [Arbeiten mit Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign-Komponenten](classic-personalization-ac-components.md)
    + [Targeting von Adobe Campaign](classic-personalization-ac-target.md)
-+ Assets-Authoring in der klassischen Benutzeroberfläche {#assets}
++ Assets Authoring in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
    + [Arbeiten mit IBL-Bühnen](classicui-stages-aem3d-ibl.md)
    + [Rendern von 3D-Assets](classicui-rendering-3d.md)
