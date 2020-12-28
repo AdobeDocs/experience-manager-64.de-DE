@@ -22,7 +22,7 @@ ht-degree: 95%
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen. 
 
-It can be accessed from **Tools** -> **General** -> **Components**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
+Sie können von **Tools** -> **Allgemein** -> **Komponenten** aus aufgerufen werden. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
