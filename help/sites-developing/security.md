@@ -42,7 +42,7 @@ Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforder
 >
 >Wir empfehlen Ihnen dringend, immer mit der [von AEM bereitgestellten XSSAPI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
 
-Additionally, a web application firewall, such as [mod_security for Apache](https://www.modsecurity.org), can provide reliable, central control over the security of the deployment environment and protect against previously undetected cross-site scripting attacks.
+Darüber hinaus kann eine Web-Anwendungs-Firewall, wie z. B. [mod_security for Apache](https://www.modsecurity.org), eine zuverlässige und zentrale Kontrolle über die Sicherheit der Bereitstellungs-Umgebung bieten und vor zuvor unentdeckten Cross-Site-Scripting-Angriffen schützen.
 
 ## Zugriff auf Cloud-Service-Informationen {#access-to-cloud-service-information}
 
@@ -58,9 +58,9 @@ Das webservicesupport-Modul schreibt Statistiken und Konfigurationsinformationen
 
 Mit den Standardberechtigungen:
 
-* Autor-Umgebung: `read` for `contributors`
+* Autor-Umgebung: `read` für `contributors`
 
-* Umgebung veröffentlichen: `read` for `everyone`
+* Umgebung veröffentlichen: `read` für `everyone`
 
 ## Schützen Sie sich vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery-attacks}
 
