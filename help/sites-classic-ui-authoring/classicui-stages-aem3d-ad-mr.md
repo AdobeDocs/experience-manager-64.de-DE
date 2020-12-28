@@ -41,18 +41,18 @@ ht-degree: 88%
 
 1. Richten Sie das Rendern mit Mental Ray ein.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions:
+   Konfigurieren Sie die **[!UICONTROL Rendereinstellungen]** mit den folgenden Vorschlägen:
 
-   * **[!UICONTROL Häufige]** Registerkarte
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
+      Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Alpha-Kanal (maske)]** für alle [!UICONTROL Renderbare Kameras].
 
    * **[!UICONTROL Registerkarte „Quality“]**
 
-      * **[!UICONTROL Gesamtqualität]** `- 0.5` oder weniger
-      * **[!UICONTROL Indirekter Diffuse-Modus]** - `Final Gather`
-      * **[!UICONTROL Filtergröße]** - `2.0`, `2.0`
-   * Rendern Sie die Szene mit den typischen Bildgrößen, die Sie gewohnt sind. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+      * **[!UICONTROL Allgemeine]** `- 0.5` Qualität oder weniger
+      * **[!UICONTROL Indirekter Diffuse-Modus]**  -  `Final Gather`
+      * **[!UICONTROL Filtergröße]** -  `2.0`,  `2.0`
+   * Rendern Sie die Szene mit den typischen Bildgrößen, die Sie gewohnt sind. Passen Sie bei Bedarf die Lichter bzw. [!UICONTROL Render-Einstellungen] oder beide an, um die gewünschten Ergebnisse zu erzielen.
 
       Beachten Sie, dass das Rendern mit Mental Ray und bildbasierter Beleuchtung sehr langsam und rechenintensiv ist. Adobe empfiehlt die Einrichtung der niedrigsten Qualitätseinstellungen, mit denen noch die gewünschte Renderqualität erzielt werden kann.
 
@@ -61,7 +61,7 @@ ht-degree: 88%
 1. Speichern Sie die Szene und beenden Sie Autodesk Maya.
 1. Laden Sie die Szene in AEM hoch und warten Sie, bis der Ladevorgang abgeschlossen ist.
 
-   Siehe [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
    Wenn Autodesk® Maya® nicht auf dem AEM-Server konfiguriert ist, exportieren Sie eine FBX von Maya und laden Sie sie in AEM hoch.
 
