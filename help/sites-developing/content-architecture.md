@@ -26,13 +26,13 @@ ht-degree: 59%
 
 * Die Daten werden zuerst angezeigt, die Struktur später. Zumindest gegebenenfalls.
 * Steuern Sie die Content-Hierarchie, anstatt sie dem Zufall zu überlassen.
-* Arbeitsbereiche sind für `clone()`, `merge()`und `update()`.
+* Arbeitsflächen sind für `clone()`, `merge()` und `update()` verfügbar.
 * Bei gleichgeordneten Elementen mit identischem Namen ist Vorsicht geboten.
 * Verweise richten mehr Schaden an, als sie nutzen.
 * Dateien sind Dateien.
 * IDs sind böse.
 
-David’s Model can be found on the Jackrabbit wiki at [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+David’s Model kann im Jackrabbit Wiki unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel) gefunden werden.
 
 ### Alles ist Inhalt {#everything-is-content}
 
