@@ -1,5 +1,5 @@
 ---
-title: Anwenden von Workflows auf Seiten
+title: 'Anwenden von Workflows auf Seiten  '
 seo-title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 seo-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Anwenden von Workflows auf Seiten {#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten  {#applying-workflows-to-pages}
 
 Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
 
@@ -34,7 +34,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 Workflows können wie folgt gestartet werden:
 
 * die Konsole **[Sites.](#starting-a-workflow-from-the-sites-console)**
-* beim Bearbeiten einer Seite von den **[Seiteninformationen](#starting-a-workflow-from-the-page-editor)**aus.
+* beim Bearbeiten einer Seite von den **[Seiteninformationen](#starting-a-workflow-from-the-page-editor)** aus.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Workflows können wie folgt gestartet werden:
 
 Sie können einen Workflow wie folgt starten:
 
-* die Option **[Erstellen](#starting-a-workflow-from-the-sites-toolbar)**der Sites-Symbolleiste.
+* die Option **[Erstellen](#starting-a-workflow-from-the-sites-toolbar)** der Sites-Symbolleiste.
 *  die **[Timeline](#starting-a-workflow-from-the-timeline)**-Leiste der Sites-Konsole.
 
 In beiden Fällen ist Folgendes zu tun:
@@ -74,7 +74,7 @@ Sie können einen Workflow von der Symbolleiste der **Sites**-Konsole aus starte
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Starten eines Workflows aus der Timeline     {#starting-a-workflow-from-the-timeline}
+### Starten eines Workflows aus der Timeline      {#starting-a-workflow-from-the-timeline}
 
 Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
 
@@ -85,13 +85,13 @@ Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewähl
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Angeben von Workflow-Details im Assistenten „Workflow erstellen“     {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Angeben von Workflow-Details im Assistenten „Workflow erstellen“       {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und die erforderlichen Details anzugeben.
 
 Öffnen Sie den Assistenten **Workflow erstellen** über
 
-* die Option **[Erstellen](#starting-a-workflow-from-the-sites-toolbar)**der Sites-Symbolleiste.
+* die Option **[Erstellen](#starting-a-workflow-from-the-sites-toolbar)** der Sites-Symbolleiste.
 *  die **[Timeline](#starting-a-workflow-from-the-timeline)**-Leiste der Sites-Konsole.
 
 Anschließend können Sie Details angeben:
