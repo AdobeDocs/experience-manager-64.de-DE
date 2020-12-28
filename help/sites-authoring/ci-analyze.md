@@ -62,7 +62,7 @@ So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
 1. Um das Enddatum des Berichtszeitraums zu ändern, ziehen Sie den Kreis an der rechten Seite des schattierten Bereichs zum gewünschten Enddatum.
 
-### Ändern der Granularität des Berichtszeitraums {#changing-the-granularity-of-the-reporting-period}
+### Ändern der Granularität des Berichtszeitraums  {#changing-the-granularity-of-the-reporting-period}
 
 Ändern Sie die Zeitdauer für jeden Datenpunkt in einem Bericht. Beispiel: Wenn die Wochengranularität ausgewählt ist, stellt jeder Datenpunkt im Bericht „Ansichten“ die Anzahl der Ansichten für eine Woche dar.
 
@@ -76,7 +76,7 @@ Die Granularität wirkt sich auf die Berichte aus, die Daten in Bezug auf die Ze
 
 1. Klicken oder tippen Sie auf die gewünschte Granularität. Nach Auswahl wird der Bericht automatisch aktualisiert, um die Granularität widerzuspiegeln.
 
-## Zuweisen von Aufgaben für SEO-Empfehlungen {#assigning-tasks-for-seo-recommendations}
+## Zuweisen von Aufgaben für SEO-Empfehlungen  {#assigning-tasks-for-seo-recommendations}
 
 Verwenden Sie den Bericht „SEO-Empfehlungen“, um Aufgaben zur Verbesserung der Seitensichtbarkeit für Suchmaschinen zu erstellen. Für jede Empfehlung im Bericht ohne Häkchen können Sie eine Aufgabe erstellen, die Sie einem Benutzer zuweisen, um die erforderliche Arbeit auszuführen.
 
