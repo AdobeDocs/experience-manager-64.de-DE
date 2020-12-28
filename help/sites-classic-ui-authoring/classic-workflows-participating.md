@@ -71,7 +71,7 @@ Nachdem Sie die angegebene Aktion abgeschlossen haben, können Sie das Arbeitsel
 
 1. Klicken Sie auf **OK**, um die Aktion zu bestätigen.
 
-### Delegieren eines Teilnehmerschritts   {#delegating-a-participant-step}
+### Delegieren eines Teilnehmerschritts    {#delegating-a-participant-step}
 
 Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren.
 
