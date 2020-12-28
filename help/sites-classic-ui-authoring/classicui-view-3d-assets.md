@@ -58,9 +58,9 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
 
    * Testen Sie mit der Palette der Kamerasteuerung in der rechten unteren Ecke der Seite „Asset-Details“ verschiedene Ansichten des Assets.
 
-      Der Zoomfaktor und die Perspektive eines 3D-Assets lassen sich auch auf Eingabegeräten ohne Touchfunktion oder Mausrad ändern, beispielsweise mit der klassischen Apple-Maustaste. You accomplish the action by pressing and holding down the `SHIFT`key while depressing the mouse button and dragging up or down.
+      Der Zoomfaktor und die Perspektive eines 3D-Assets lassen sich auch auf Eingabegeräten ohne Touchfunktion oder Mausrad ändern, beispielsweise mit der klassischen Apple-Maustaste. Sie können die Aktion ausführen, indem Sie die `SHIFT`Taste drücken und gedrückt halten, während Sie die Maustaste drücken und nach oben oder unten ziehen.
 
-      Wenn Sie ein Touchpad auf einem typischen Notebook verwenden, lässt sich das Zoom- oder Perspektiveverhalten mit zwei Fingern häufig schwer steuern. In such cases, you can press and hold down `SHIFT`during the action. Dadurch wird die Geschwindigkeit der Pinch-Geste reduziert und es ist einfacher, den exakten Zoomfaktor oder die exakte Perspektive einzustellen. Alternately, you can use a one finger drag up or down while the `SHIFT`key is pressed to affect zoom or perspective behaviors.
+      Wenn Sie ein Touchpad auf einem typischen Notebook verwenden, lässt sich das Zoom- oder Perspektiveverhalten mit zwei Fingern häufig schwer steuern. In solchen Fällen können Sie die Taste `SHIFT`während der Aktion gedrückt halten. Dadurch wird die Geschwindigkeit der Pinch-Geste reduziert und es ist einfacher, den exakten Zoomfaktor oder die exakte Perspektive einzustellen. Alternativ können Sie einen Finger nach oben oder unten ziehen, während die `SHIFT`Taste gedrückt wird, um das Zoom- oder Perspektivverhalten zu beeinflussen.
    <table> 
     <tbody> 
       <tr> 
@@ -68,23 +68,23 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
       <td><strong>Beschreibung</strong></td> 
       </tr> 
       <tr> 
-      <td><p>Zoom</p> <p> oder</p> <p>Persp</p> </td> 
-      <td><p>Tippen oder klicken Sie auf , um zwischen den Modi "Zoom"und "Perspektive"zu wechseln.</p> <p>Oder halten Sie die <code>ALT/OPTION</code> Taste während der Aktion gedrückt, um vorübergehend in den Perspektivmodus<br /> zu wechseln. Lassen Sie die Taste los, um in den Zoom-Modus zurückzukehren.</p> 
+      <td><p>Zoom</p> <p>oder</p> <p>Persp</p> </td> 
+      <td><p>Tippen oder klicken Sie auf , um zwischen den Modi "Zoom"und "Perspektive"zu wechseln.</p> <p>Oder drücken Sie während der Aktion die <code>ALT/OPTION</code>-Taste und halten Sie sie gedrückt, um vorübergehend in den perspektivischen Modus zu wechseln. <br /> Lassen Sie die Taste los, um in den Zoom-Modus zurückzukehren.</p> 
         <ul> 
-        <li><strong>Zoom</strong>-Dolly-Ein- und Auszoomen-Verhalten, das die Kamera näher oder weiter weg von dem Asset<br /> bewegt, das Sie sehen. Zoom ist das Standardverhalten für das Mausrad (falls verfügbar), für Pinch-Gesten mit zwei Fingern auf Mobilgeräten oder dann, wenn Sie bei gedrückter Umschalttaste mit der linken Maustaste nach oben oder unten ziehen.</li> 
+        <li><strong>Zoom</strong>-Dolly-Ein- und Auszoomen-Verhalten, das die Kamera näher oder weiter weg von dem <br /> angesehenen Asset bewegt. Zoom ist das Standardverhalten für das Mausrad (falls verfügbar), für Pinch-Gesten mit zwei Fingern auf Mobilgeräten oder dann, wenn Sie bei gedrückter Umschalttaste mit der linken Maustaste nach oben oder unten ziehen.</li> 
         <li><strong>Perspektive</strong>-Ändert die Brennweite (auch als "Ansicht-Feld"bezeichnet) der Kamera, wobei die relative Größe des Assets in der Ansicht beibehalten wird. Perspektive ist ein alternatives Verhalten für das Mausrad (falls verfügbar), für Pinch-Gesten mit zwei Fingern auf Mobilgeräten oder dann, wenn Sie bei gedrückter Umschalttaste mit der linken Maustaste nach oben oder unten ziehen.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
-      <td><p>Orbit</p> <p> oder</p> <p>Schwenken</p> </td> 
-      <td><p>Tippen oder klicken Sie auf , um zwischen dem Umlaufmodus und dem Schwenken zu wechseln.</p> <p>Oder halten Sie während der Aktion die <code>ALT/OPTION</code> Taste gedrückt, um vorübergehend in den Schwenk-Modus zu wechseln. Lassen Sie die Taste los, um in den Orbit-Modus zurückzukehren.</p> 
+      <td><p>Orbit</p> <p>oder</p> <p>Schwenken</p> </td> 
+      <td><p>Tippen oder klicken Sie auf , um zwischen dem Umlaufmodus und dem Schwenken zu wechseln.</p> <p>Oder halten Sie die <code>ALT/OPTION</code>-Taste während der Aktion gedrückt, um vorübergehend zum Schwenken-Modus zu wechseln. Lassen Sie die Taste los, um in den Orbit-Modus zurückzukehren.</p> 
         <ul> 
         <li><strong>Orbit</strong>: Verschiebt die Betrachtungskamera auf eine Kugel, die auf einem Punkt der Zielgruppe zentriert ist, der sich in der Mitte des 3D-Assets befindet, ist standardmäßig eingestellt. Orbit ist das Standardverhalten beim Ziehen mit der linken Maustaste oder dem Ziehen mit Touch auf Mobilgeräten.</li> 
         <li><strong>Schwenken</strong>-Verschiebt die Kamera in der Betrachtungsebene. Der Zielpunkt wird entsprechend verschoben, sodass die Kamera in nachfolgenden Orbit-Vorgängen um einen neuen Zielpunkt bewegt wird. Schwenken ist ein alternatives Verhalten für das Ziehen mit der linken Maustaste und das Ziehen mit einem Touch.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
-      <td><p>Untersuchen</p> <p> oder</p> <p>Target</p> </td> 
+      <td><p>Untersuchen</p> <p>oder</p> <p>Target</p> </td> 
       <td><p>Tippen oder klicken Sie auf , um zwischen dem Prüfungs- und dem Zielgruppe-Modus zu wechseln.</p> 
         <ul> 
         <li><strong>Überprüfen Sie</strong>, ob Sie auf tippen oder klicken, um in den Zielgruppe-Modus zu wechseln.</li> 
@@ -93,12 +93,12 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
       </tr> 
       <tr> 
       <td>Zurücksetzen</td> 
-      <td>Tippen oder klicken Sie auf , um die Zielgruppe der Ansicht in der Mitte des Modells wiederherzustellen. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Tippen oder klicken Sie auf , um die Zielgruppe der Ansicht in der Mitte des Modells wiederherzustellen. Mit Zurücksetzen wird die Kamera auch näher oder weiter weg verschoben, um das Asset in seiner Gesamtheit und in einer angemessenen Anzeigegröße anzuzeigen.<br /></td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Wählen Sie eine Bühne mit dem Hintergrund und der Beleuchtung, die Sie auf das 3D-Asset anwenden möchten.
+1. Tippen Sie in der rechten oberen Ecke der Seite mit den Asset-Details auf das Symbol **[!UICONTROL Stage Selector]**. Wählen Sie eine Bühne mit dem Hintergrund und der Beleuchtung, die Sie auf das 3D-Asset anwenden möchten.
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -106,7 +106,7 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
 
    Siehe [Informationen zu Bühnen in AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+1. Tippen Sie rechts oben auf der Seite mit den Asset-Details auf das Symbol **[!UICONTROL Kameraselektor]** und wählen Sie dann eine Ansicht aus, die Sie auf das 3D-Asset anwenden möchten.
 
    ![](do-not-localize/chlimage_1-3.png)
 
