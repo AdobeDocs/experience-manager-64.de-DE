@@ -26,75 +26,75 @@ Mit dem Offloader für Assets-Workflows können Sie es ermöglichen, dass mehrer
 
 Verwenden Sie Configuration Manager, um die URL für die Füllzeicheninstanz und die Hostnamen von offloader-Instanzen für Verbindungsanforderungen in der Füllzeicheninstanz hinzuzufügen.
 
-1. Tap/click the AEM logo, and choose **Tools** > **Operations** > **Web Console** to open Configuration Manager.
-1. From the Web Console, select **Sling** >  **Topology Management**.
+1. Tippen/klicken Sie auf das AEM Logo und wählen Sie **Tools** > **Vorgänge** > **Webkonsole**, um Configuration Manager zu öffnen.
+1. Wählen Sie in der Web-Konsole **Sling** > **Topologieverwaltung**.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. In the Topology Management page, tap/click the **Configure Discovery.Oak Service** link.
+1. Tippen Sie auf der Seite &quot;Topologieverwaltung&quot;auf den Link **Discovery.Oak-Dienst konfigurieren**.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. In the Discovery Service Configuration page, specify the connector URL for the leader instance in the **Topology Connector URLs** field.
+1. Geben Sie auf der Seite &quot;Konfiguration des Discovery-Dienstes&quot;im Feld **Topology Connector-URLs** die Connector-URL für die Füllzeicheninstanz an.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. In the **Topology Connector Whitelist** field, specify IP address or host names of offloader instances that are allowed to connect with the leader instance. Tippen/Klicken Sie auf **Speichern**.
+1. Geben Sie im Feld **Topology Connector Whitelist** die IP-Adresse oder Hostnamen von offloader-Instanzen an, die eine Verbindung zur Füllzeicheninstanz herstellen dürfen. Tippen/Klicken Sie auf **Speichern**.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
 1. Um die Offloader-Instanzen anzuzeigen, die mit der führenden Instanz verbunden sind, gehen Sie zu **Tools** > **Bereitstellung** > **Topologie** und tippen oder klicken Sie auf die Cluster-Ansicht.
 
-## Deaktivieren des Abladens {#disable-offloading}
+## Deaktivieren des Abladens  {#disable-offloading}
 
-1. Tap/click the AEM logo, and choose **Tools** > **Deployment** > **Offloading**. The **Offloading Browser** page displays topics and the server instances that can consume the topics.
+1. Tippen/klicken Sie auf das AEM Logo und wählen Sie **Tools** > **Bereitstellung** > **Verladen**. Auf der Seite **Offload-Browser** werden Themen und die Serverinstanzen angezeigt, die die Themen konsumieren können.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-1. Disable the *com/adobe/granite/workflow/offloading* topic on the leader instances with which users interact to upload or change AEM assets.
+1. Deaktivieren Sie das Thema *com/adobe/granite/workflow/offloading* für die Füllzeicheninstanzen, mit denen Benutzer interagieren, um AEM Assets hochzuladen oder zu ändern.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 ## Konfigurieren von Workflow-Startern auf der führenden Instanz {#configure-workflow-launchers-on-the-leader-instance}
 
-Configure workflow launchers to use the **DAM Update Asset Offloading** workflow on the leader instance instead of the **Dam Update Asset** workflow.
+Konfigurieren Sie Workflow-Starter, um den Arbeitsablauf **DAM Update Asset Offloading** für die Füllzeicheninstanz anstelle des Arbeitsablaufs **DAM Update Asset** zu verwenden.
 
-1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Launchers** to open the **Workflow Launchers** console.
+1. Tippen/klicken Sie auf das AEM Logo und wählen Sie **Tools** > **Workflow** > **Launchers**, um die Konsole **Workflow Launchers** zu öffnen.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Locate the two Launcher configurations with event type **Node Created** and **Node Modified** respectively, which run the **DAM Update Asset** workflow.
-1. For each configuration, select the checkbox before it and tap/click the **View Properties** icon from the toolbar to display the **Launcher Properties** dialog.
+1. Suchen Sie die beiden Starter-Konfigurationen mit Ereignistyp **Knoten erstellt** bzw. **Node Modified**, die den Arbeitsablauf **DAM Update Asset** ausführen.
+1. Aktivieren Sie für jede Konfiguration das Kontrollkästchen vor der Konfiguration und tippen/klicken Sie auf das Symbol **Eigenschaften von Ansichten** in der Symbolleiste, um das Dialogfeld **Startereigenschaften** anzuzeigen.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-1. From the **Workflow** list, choose **DAM Update Asset Offloading** and tap/click **Save**.
+1. Wählen Sie in der Liste **Workflow** **DAM-Update-Asset-Offloading** und tippen/klicken Sie auf **Speichern**.
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Models** to open the **Workflow Models** page.
-1. Select the **DAM Update Asset Offloading** workflow, and tap/click **Edit** from the toolbar to display its details.
+1. Tippen/klicken Sie auf das AEM Logo und wählen Sie **Tools** > **Workflow** > **Modelle**, um die Seite **Workflow-Modelle** zu öffnen.
+1. Wählen Sie den Arbeitsablauf **DAM-Aktualisierung Asset-Offloading** und tippen/klicken Sie auf **Bearbeiten** in der Symbolleiste, um die Details anzuzeigen.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Display the context menu for the **DAM Workflow Offloading** step, and choose **Edit**. Überprüfen Sie den Eintrag im Feld **Auftragsthema** auf der Registerkarte **Generische Argumente** des Konfigurationsdialogfelds.
+1. Zeigen Sie das Kontextmenü für den Schritt **DAM Workflow Offloading** an und wählen Sie **Bearbeiten**. Überprüfen Sie den Eintrag im Feld **Auftragsthema** auf der Registerkarte **Generische Argumente** des Konfigurationsdialogfelds.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
 ## Deaktivieren der Workflow-Starter auf den Offloader-Instanzen {#disable-the-workflow-launchers-on-the-offloader-instances}
 
-Disable the workflow launchers that run the **DAM Update Asset** workflow on the leader instance.
+Deaktivieren Sie die Workflow-Starter, die den Workflow **DAM Update Asset** auf der Leader-Instanz ausführen.
 
-1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Launchers** to open the **Workflow Launchers** console.
+1. Tippen/klicken Sie auf das AEM Logo und wählen Sie **Tools** > **Workflow** > **Launchers**, um die Konsole **Workflow Launchers** zu öffnen.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-1. Locate the two Launcher configurations with event type **Node Created** and **Node Modified** respectively, which run the **DAM Update Asset** workflow.
-1. For each configuration, select the checkbox before it and tap/click the **View Properties** icon from the toolbar to display the **Launcher Properties** dialog.
+1. Suchen Sie die beiden Starter-Konfigurationen mit Ereignistyp **Knoten erstellt** bzw. **Node Modified**, die den Arbeitsablauf **DAM Update Asset** ausführen.
+1. Aktivieren Sie für jede Konfiguration das Kontrollkästchen vor der Konfiguration und tippen/klicken Sie auf das Symbol **Eigenschaften von Ansichten** in der Symbolleiste, um das Dialogfeld **Startereigenschaften** anzuzeigen.
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
 
-1. In the **Activate **section, drag the slider to disable the workflow launcher and tap/click **Save** to disable it.
+1. Ziehen Sie im Abschnitt **Aktivieren **den Schieberegler, um den Workflow-Starter zu deaktivieren, und tippen/klicken Sie auf **Speichern**, um ihn zu deaktivieren.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
