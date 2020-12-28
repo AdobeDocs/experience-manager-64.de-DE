@@ -48,7 +48,7 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
 1. Klicken Sie auf den Namen der Konfiguration, die Sie bearbeiten möchten.
 1. Klicken Sie auf „Bearbeiten“, bearbeiten Sie die Eigenschaftswerte und klicken Sie anschließend auf „OK“.
 
-## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration {#associating-pages-with-a-brightedge-configuration}
+## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration  {#associating-pages-with-a-brightedge-configuration}
 
 Verknüpfen Sie Seiten mit einer BrightEdge-Konfiguration, um Seitendaten zur Analyse an den BrightEdge-Service zu übermitteln. Wenn Sie eine Seite mit einer Konfiguration verknüpfen, erben die untergeordneten Seiten diese Verknüpfung. In der Regel wird die Startseite einer Website verknüpft, damit die Daten aller Seiten an BrightEdge übermittelt werden.
 
