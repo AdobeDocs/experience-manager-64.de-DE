@@ -61,12 +61,12 @@ Moderation:
 
 Allgemeine Kompatibilität mit grundlegenden Änderungen in AEM 6.4.
 
-Note: all these features are also available for AEM 6.3. Please check the AEM Communities release notes for [6.3](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html).
+Hinweis: alle diese Funktionen sind auch für AEM 6.3 verfügbar. Bitte lesen Sie die AEM Communities Versionshinweise für [6.3](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html).
 
 ## Bekannte Probleme {#known-issues}
 
 * **Moderation**: Es ist nicht möglich, den übergeordneten Beitrag in einem einzelnen Löschvorgang aus der Massenmoderationsoberfläche zu löschen. (CQ-4236797)
-* **Konsole** - Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort&quot;führt zur Anmeldeseite statt zum entsprechenden Formular zum Abrufen des Kennworts (CQ-4237682).
+* **Konsole** : Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort&quot;führt statt des entsprechenden Kennwortabfrageformulars zur Anmeldeseite (CQ-4237682)
 
 ## Ausgewählte Funktionen {#select-features}
 
