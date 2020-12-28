@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-seo-title: Admin Consoles
+seo-title: Admin Consolen
 description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
 seo-description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
@@ -18,13 +18,13 @@ ht-degree: 72%
 ---
 
 
-# Admin Consoles{#admin-consoles}
+# Admin Consolen{#admin-consoles}
 
 In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzeroberfläche über die Admin Consoles nun deaktiviert. Aus diesem Grund werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers auf bestimmte Konsolensymbole angezeigt wurden, um den Zugriff auf die klassische Benutzeroberfläche zu ermöglichen, nicht mehr eingeblendet.
 
 ![screen_shot_2018-03-23at11956](assets/screen_shot_2018-03-23at111956.png)
 
-Every console that has a Classic UI version in `/libs/cq/core/content/nav` can be re-enabled individually so that the **Classic UI** option once again pops up over the console icon when it is moused over.
+Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln erneut aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darüber bewegt wird.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
@@ -40,7 +40,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Create an overlay using the **Overlay Node** option; for example:
+1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten**. Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`
