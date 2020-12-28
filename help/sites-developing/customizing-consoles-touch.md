@@ -26,13 +26,13 @@ ht-degree: 76%
 
 AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
-* Clientlibs
+* Clientlibs 
 
-   Mit clientlibs können Sie die Standardimplementierung erweitern, um neue Funktionen zu realisieren, während Sie die Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen können Sie Ihre eigene clientlib erstellen, `/apps.` z. B. unter dem Code, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+   Mit clientlibs können Sie die Standardimplementierung erweitern, um neue Funktionen zu realisieren, während Sie die Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen können Sie Ihre eigene clientlib unter `/apps.` erstellen. Sie können beispielsweise den für Ihre benutzerdefinierte Komponente erforderlichen Code speichern.
 
 * Überlagerungen
 
-   Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+   Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die Standardfunktionalität (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
 Überlagerungen können vielseitig zum Erweitern von AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
 
@@ -56,7 +56,7 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
    >
    >
 1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
@@ -65,7 +65,7 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 
 
 
-For example, the following locations within the `/libs` structure can be overlaid:
+Beispielsweise können die folgenden Stellen innerhalb der `/libs`-Struktur überlagert werden:
 
 * Konsolen (alle Konsolen basierend auf Seiten der Granite-Benutzeroberfläche); zum Beispiel:
 
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Using properties on this node you can define the `groups` allowed to perform the specific action; for example, `administrators`
+   Mithilfe der Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die für die Ausführung der spezifischen Aktion zulässig ist. zum Beispiel `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -368,7 +368,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->This feature is optimized for columns of text fields; for other data types it is possible to overlay `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` zu überlagern.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -393,7 +393,7 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * If you want to plug additional data, you need to write a ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` with a
+   * Wenn Sie zusätzliche Daten einfügen möchten, müssen Sie eine ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` mit einer
 
       `pageInfoProviderType`.
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
