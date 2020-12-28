@@ -85,7 +85,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren einen Sinn ergeben.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Mit dieser Option wird dies erreicht, indem der Launch eine [Live-Kopie](/help/sites-administering/msm.md) erstellt wird.
 
       Standardmäßig ist diese Option aktiviert.
 
@@ -97,8 +97,8 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    Wenn Sie zur Konsole zurückkehren (über **Fertig**), können Sie den Launch wie folgt einsehen (und darauf zugreifen):
 
-   * in der [**Launch-Konsole **](/help/sites-authoring/launches.md#the-launches-console)
-   * unter [**Verweise **in der Konsole** Sites **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * in der [**Launch-Konsole**](/help/sites-authoring/launches.md#the-launches-console)
+   * unter [**Verweise** in der Konsole **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Erstellen von Launches mit einer neuen Vorlage {#create-launch-with-new-template}
 
