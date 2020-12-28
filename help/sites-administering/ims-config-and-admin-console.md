@@ -26,7 +26,7 @@ ht-degree: 84%
 
 ## Einführung {#introduction}
 
-AEM 6.4.3.0 introduces Admin Console support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.
+AEM 6.4.3.0 bietet Admin Console-Support für AEM Instanzen und Adobe IMS(Identity Management System)-basierte Authentifizierung für **AEM Managed Services**-Kunden.
 
 Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzer und Gruppen können Produktinstanzen zugeordnet werden, die AEM Instanzen zugeordnet sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
 
@@ -114,7 +114,7 @@ Das zur Benutzersynchronisierung steht über das Adobe Github-Repository an dies
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-Note that a pre-release version 2.4RC1 is available with dynamic group creation support and can be found here: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+Beachten Sie, dass die Vorabversion 2.4RC1 mit Unterstützung der dynamischen Gruppenbildung verfügbar ist und finden Sie hier: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der Admin Console dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
@@ -132,7 +132,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 >Die Dokumentation zur Adobe I/O-Konsole finden Sie [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->The User Management API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>Die User Management-API, die vom User Sync Tool verwendet wird, wird unter [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html) behandelt.
 
 >[!NOTE]
 >
@@ -198,13 +198,13 @@ Vorhandene Benutzer im AEM Repository (lokal über LDAP oder SAML bezogen) könn
 
 Dieses Dienstprogramm wird von Ihrem AMS-Team im Rahmen der IMS-Bereitstellung ausgeführt.
 
-### Verwalten von Berechtigungen und ACLs in AEM {#managing-permissions-and-acls-in-aem}
+### Verwalten von Berechtigungen und ACLs in AEM  {#managing-permissions-and-acls-in-aem}
 
 Zugriffssteuerung und Zugriffsberechtigungen werden weiterhin in AEM verwaltet. Dies kann mithilfe separater Benutzergruppen aus IMS erreicht werden (z. B. AEM-GRP-008 im Beispiel unten), sowie durch lokale Gruppen, in denen die Berechtigungen und Zugriffsrechte definiert sind. Die von IMS synchronisierten Benutzergruppen können lokalen Gruppen zugewiesen werden und die Berechtigungen erben.
 
 Im Beispiel unten werden der lokalen Gruppe *Dam_Users* synchronisierte Gruppen hinzugefügt.
 
-Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the Admin Console** above).
+Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. (Bitte beachten Sie, dass die Benutzer und Gruppen mit dem Benutzersynchronisierungstool aus LDAP synchronisiert oder lokal erstellt werden können. Lesen Sie hierzu den Abschnitt **Einstiegsbenutzer mit der oben stehenden Admin Console**).
 
 &amp;ast;Beachten Sie, dass Benutzergruppen nur synchronisiert werden, wenn sich die Benutzer bei der Instanz anmelden. Für Kunden mit einer großen Anzahl von Benutzern und Gruppen kann ein Dienstprogramm zur Gruppensynchronisierung von AMS ausgeführt werden, um Gruppen für die oben beschriebene Zugriffskontrolle- und Berechtigungsverwaltung vorab abzurufen.
 
