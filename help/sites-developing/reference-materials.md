@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: de04a6c205e4379c7f8a9ab5574985259d6541c3
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 73%
+ht-degree: 84%
 
 ---
 
@@ -35,14 +35,14 @@ AEM stellt mehrere APIs für die Entwicklung von Anwendungen bereit. Die folgend
 
 * [Javascript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
 
-* [Javascript-API-Referenz zu Editor Core](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Javascript-API-Referenz zu Editor Core](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Referenzen:
 
 * [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Angular bearbeitbare Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Bearbeitbare Angular-Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 APIs für AEM-Bereitstellung und Content Management:
 
