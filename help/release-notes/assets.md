@@ -26,9 +26,9 @@ Die wichtigsten Funktionen, Highlights und Erweiterungen in AEM 6.4 Assets werde
 
 Mit Adobe Asset Link in Creative Cloud für Unternehmen lässt sich die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Erstellung von Inhalten optimieren. Es handelt sich um eine neue native Funktion im Creative Cloud für Unternehmen, die eine Verbindung zu AEM Assets direkt von Adobe Photoshop, Adobe Illustrator oder Adobe InDesign herstellt — ohne diese Werkzeuge zu verlassen.
 
-To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) page.
+Weitere Informationen zu Funktionen, Voraussetzungen und zum Zugriff auf diese Funktionen finden Sie auf der Seite [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html).
 
-## Enhanced Smart Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
+## Erweiterte Smart-Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
 AEM 6.4 bietet zusätzlich zu Smart-Tags, die in AEM 6.3 eingeführt wurden, Funktionen für erweiterte Smart-Tags mit künstlicher Intelligenz.
 
@@ -75,7 +75,7 @@ Verbesserungen an den Admin Tools
 
 Kataloge
 
-* Verbesserte Benutzerfreundlichkeit, Ausrichtung an der Benutzeroberfläche &quot;Vorlagen&quot;. For more information, see [Catalog Producer](../sites-administering/catalog-producer.md).
+* Verbesserte Benutzerfreundlichkeit, Ausrichtung an der Benutzeroberfläche &quot;Vorlagen&quot;. Weitere Informationen finden Sie unter [Catalog Producer](../sites-administering/catalog-producer.md).
 
 ## Metadaten {#metadata}
 
@@ -106,7 +106,7 @@ AEM 6.4 bietet wesentliche Verbesserungen am Asset Berichte:
 
 ## AEM-Desktop-Programm {#aem-desktop-app}
 
-AEM desktop app is updated to version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) document.\
+AEM Desktop-App wird auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-App finden Sie in einem dedizierten Dokument [AEM Versionshinweise zur Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).\
 Hier finden Sie eine Liste AEM Highlights der Desktop-App seit der Veröffentlichung von AEM 6.3:
 
 * Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen.
@@ -118,8 +118,8 @@ Hier finden Sie eine Liste AEM Highlights der Desktop-App seit der Veröffentlic
 
 Um den Zugriff auf die Dokumentation und Best Practices zu erleichtern, stehen die folgenden Dokumentationen zur Verfügung:
 
-* [Benutzerhandbuch](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)für Endbenutzer, die mit der Anwendung arbeiten.
-* [Installationshandbuch](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)für Administratoren, die AEM und AEM Desktop-App für die Zusammenarbeit einrichten
+* [Benutzerhandbuch](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html) für Endbenutzer, die mit der Anwendung arbeiten.
+* [Installationshandbuch](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) für Administratoren, die AEM und AEM Desktop-App für die Zusammenarbeit einrichten
 
 ## Mehrstufiger Speicher {#tiered-storage}
 
@@ -135,11 +135,11 @@ Eine Übersicht der unterstützten Plattformen finden Sie in der [Dokumentation 
 * In AEM 6.4 bietet die Option &quot;Geschlossene Benutzergruppe&quot;oder &quot;CUG&quot;eine Möglichkeit, den Ordnerzugriff in der Veröffentlichungsinstanz einzuschränken. Es handelt sich um eine Touch-UI-Option, um Prinzipale über die Ordnereigenschaften auf Ordnerebene hinzuzufügen und sie auf alle Ordner- und Unterordner/Assets innerhalb von Ordnern anzuwenden.
 * Wenn im Veröffentlichungsmodus ein CUG konfiguriert ist und die Autorisierung für einen Ordner aktiviert ist, werden Benutzer zu einer Anmeldeseite weitergeleitet, wenn sie versuchen, auf den Ordner zuzugreifen. Daher können autorisierte Benutzer erst nach erfolgreicher Anmeldung auf den Ordner und seine Assets zugreifen. Entsprechend beschränkt die geschlossene Benutzergruppe den Lesezugriff auf eine bestimmte Struktur im Content-Repository für alle Benutzer außer ausgewählten Prinzipalen.
 
-## Dynamic Media add-on {#dynamic-media-add-on}
+## Dynamic Media-Add-on {#dynamic-media-add-on}
 
 Dynamic Media in 6.4 unterstützt einen neuen Modus, in dem Master-Assets über die Web-Benutzeroberfläche von AEM Assets hochgeladen und verwaltet werden und dynamische Ausgabeformate und andere Funktionen für dynamische Medien im Hintergrund vom Cloud-Bereitstellungservice für dynamische Medien verwaltet werden.
 
-In this mode (introduced first with the release of [AEM 6.3 Feature Packs 14410 and 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), users benefit from end-to-end asset management and dynamic media features using the modern AEM Assets web UI, and still leverage the delivery services that are backwards compatible with Dynamic Media Classic (Scene7)—including delivery URLs, which are unchanged.
+In diesem Modus (der mit der Veröffentlichung von [AEM 6.3 Feature Packs 14410 und 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) eingeführt wurde) profitieren Benutzer von End-to-End-Asset-Management- und dynamischen Medienfunktionen, die die moderne AEM Assets Web UI verwenden, und nutzen weiterhin die Versand-Services, die abwärtskompatibel mit Dynamic Media Classic (Scene7) sind, einschließlich der Versand-URLs, die unverändert bleiben.
 
 Darüber hinaus werden mit AEM 6.4 neue, auf Adobe Sensei basierende Funktionen, Erweiterungen für neue Medien wie VR und 3D, Dynamic Media-Viewer und Unterstützung für Erlebnisfragmente in interaktiven Bildern und Karussellbannern eingeführt.
 
@@ -160,7 +160,7 @@ Weitere Informationen zum smarten Zuschneiden in der Komponente Dynamic Media fi
 
 Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbearbeitung](../assets/imaging-faq.md).
 
-### Emerging Media and Viewer Enhancements {#emerging-media-amp-viewer-enhancements}
+### Neue Erweiterungen für Medien und Viewer {#emerging-media-amp-viewer-enhancements}
 
 * Es werden neue Viewer unterstützt, die den Benutzern bessere, immersive Erlebnisse bieten.
 * Mit dem Panorama-Viewer können Sie die Interaktion mit dem Benutzer verbessern und Szenen, Objekte, Orte und Landschaften im Raum besser erleben. Weitere Informationen finden Sie in der Dokumentation zu [Panoramabildern](../assets/panoramic-images.md).
@@ -169,6 +169,6 @@ Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbea
 * Vertikaler Bilder-Viewer wurde für Produktbilder optimiert.
 * Verbesserte Möglichkeit zum Zugriff auf die Tastatur.
 
-### 3D and integration with Dimension CC {#d-and-integration-with-dimension-cc}
+### 3D und Integration mit Dimension CC {#d-and-integration-with-dimension-cc}
 
-Integration with [Adobe Dimension CC](https://www.adobe.com/de/products/dimension.html) for more seamless 3D workflow has been introduced. Weitere Informationen finden Sie in der Dokumentation zum [Arbeiten mit 3D-Assets](../assets/assets-3d.md) .
+Die Integration mit [Adobe Dimension CC](https://www.adobe.com/de/products/dimension.html) für einen nahtlosen 3D-Arbeitsablauf wurde eingeführt. Weitere Informationen finden Sie in der Dokumentation [Arbeiten mit 3D-Assets](../assets/assets-3d.md).
