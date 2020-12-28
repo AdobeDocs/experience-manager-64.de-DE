@@ -14,7 +14,7 @@ ht-degree: 43%
 ---
 
 
-# Adobe Experience Manager 6.4 Release Notes {#release-notes}
+# Adobe Experience Manager 6.4 Versionshinweise {#release-notes}
 
 + [Übersicht über AEM 6.4](home.md)
 + [Allgemeine Versionshinweise](release-notes.md)
