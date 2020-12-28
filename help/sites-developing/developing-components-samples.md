@@ -48,7 +48,7 @@ CODE AUF GITHUB
 Den Code dieser Seite finden Sie auf GitHub
 
 * [Open aem-authoring-dialog-fields-customization project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter.
 
 >[!NOTE]
 >
