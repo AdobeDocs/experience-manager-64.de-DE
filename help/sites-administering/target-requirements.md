@@ -37,7 +37,7 @@ Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe 
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
-The Test and Target [replication agent](/help/sites-deploying/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. Weitere Informationen zum Speichern Ihrer Produktionsumgebung finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
+Der Test und die Zielgruppe [Replizierungsagenten](/help/sites-deploying/replication.md) müssen in der Autoreninstanz aktiviert sein. Beachten Sie, dass dieser Replizierungsagenten nicht standardmäßig aktiviert ist, wenn Sie den Ausführungsmodus [nosampleContent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) zum Installieren von AEM verwendet haben. Weitere Informationen zum Speichern Ihrer Produktionsumgebung finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
 
 1. Klicken oder tippen Sie auf der AEM-Homepage auf **Tools** > **Bereitstellung** > **Replikation**.
 1. Klicken oder tippen Sie auf **Agenten für Autor**.
@@ -46,23 +46,23 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
    >[!NOTE]
    >
-   >Bei der Konfiguration des Test &amp; Target-Replikationsagenten wird auf der Registerkarte **Transport** für den URI standardmäßig **tnt:///** festgelegt. Do not replace this URI with **https://admin.testandtarget.omniture.com**.
+   >Bei der Konfiguration des Test &amp; Target-Replikationsagenten wird auf der Registerkarte **Transport** für den URI standardmäßig **tnt:///** festgelegt. Ersetzen Sie diesen URI nicht durch **https://admin.testandtarget.omniture.com**.
    >
-   >Beim Testen der Verbindung mit **tnt:///** wird ein Fehler ausgegeben. This is expected behavior as this URI is for internal use only and should not be used with **Test Connection**.
+   >Beim Testen der Verbindung mit **tnt:///** wird ein Fehler ausgegeben. Dieses Verhalten wird erwartet, da dieser URI nur für interne Zwecke verwendet werden soll und nicht mit **Testverbindung** verwendet werden sollte.
 
 ## Sichern des Aktivitätseinstellungsknotens {#securing-the-activity-settings-node}
 
 Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
-The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
+Der Knoten **cq:ActivitySettings** ist in CRXDE Lite unter `/content/campaigns/*nameofbrand*`* *unter dem Knoten &quot;Aktivitäten jcr:content&quot;verfügbar;* *z. B. `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
-The **cq:ActivitySettings** node under the activity&#39;s jcr:content is protected by the following ACLs:
+Die Node **cq:ActivitySettings** unter der Aktivität jcr:content wird durch die folgenden ACLs geschützt:
 
 * Alles für jeden verweigern
 * „jcr:read,rep:write“ für „target-activity-authors“ zulassen („author“ ist standardmäßig ein Mitglied dieser Gruppe)
 * „jcr:read,rep:write“ für „targetservice“ zulassen
 
-Diese Einstellungen gewährleisten, dass normale Benutzer keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. See [User Administration and Security](/help/sites-administering/security.md) for more information.
+Diese Einstellungen gewährleisten, dass normale Benutzer keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
 ## Konfigurieren des AEM-Externalizer {#configuring-the-aem-externalizer}
 
@@ -70,7 +70,7 @@ Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localho
 
 Konfigurieren Sie den AEM-Externalizer wie folgt:
 
-1. Navigate to the OSGi web console at **https://&lt;server>:&lt;port>/system/console/configMgr.**
+1. Navigieren Sie zur OSGi-Webkonsole unter **https://&lt;server>:&lt;port>/system/console/configMgr.**
 1. Suchen Sie nach **Day CQ Link Externalizer** und geben Sie die Domäne des Autorenknotens an.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
