@@ -1,20 +1,20 @@
 ---
-title: AEM 6.4 Entwicklerhandbuch
-seo-title: AEM 6.4 Entwicklerhandbuch
-description: In diesem Handbuch wird beschrieben, wie Sie Ihre AEM Instanz erstellen.
+title: AEM 6.4-Entwickleranleitung
+seo-title: AEM 6.4-Entwickleranleitung
+description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 seo-description: Behandelt das Erstellen Ihrer AEM Instanz.
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 31%
+ht-degree: 45%
 
 ---
 
 
-# AEM 6.4 Entwicklerhandbuch
+# AEM 6.4-Entwickleranleitung
 
-In diesem Handbuch wird beschrieben, wie Sie Ihre AEM Instanz erstellen.
+In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 
 ## Wichtige AEM
 
@@ -30,8 +30,8 @@ In diesem Handbuch wird beschrieben, wie Sie Ihre AEM Instanz erstellen.
 | [Versionshinweise](/help/release-notes/home.md) | Bietet wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
-| [Communities-Benutzerhandbuch](/help/communities/home.md) | Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
-| [Administratorhandbuch](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
+| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
+| [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
 | [Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
@@ -45,9 +45,9 @@ In diesem Handbuch wird beschrieben, wie Sie Ihre AEM Instanz erstellen.
 
 * [AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
-* [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+* [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
