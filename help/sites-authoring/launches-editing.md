@@ -49,7 +49,7 @@ Siehe [Ändern des Live-Copy-Inhalts](/help/sites-administering/msm-livecopy.md#
 Um die vorgenommenen Änderungen zu verfolgen, können Sie den Launch in **Referenzen** anzeigen und die Launch- mit der Quellseite vergleichen:
 
 1. Navigieren Sie in der **Sites-Konsole** [zur Quellseite Ihres Launches und wählen Sie sie aus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie das Fenster **[Verweise](/help/sites-authoring/basic-handling.md#references)**und wählen Sie **Launches**aus.
+1. Öffnen Sie das Fenster **[Verweise](/help/sites-authoring/basic-handling.md#references)** und wählen Sie **Launches** aus.
 1. Wählen Sie dann Ihren spezifischen Launch und **Mit Quelle vergleichen** aus:
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
@@ -79,7 +79,7 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
    >
    >Damit Seiten zu einem Launch hinzugefügt werden können, müssen sich diese unter einem gemeinsamen Sprachstamm befinden, d. h. innerhalb einer einzelnen Website.
 
-## Bearbeiten einer Launch-Konfiguration   {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration    {#editing-a-launch-configuration}
 
 Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
@@ -98,7 +98,7 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
    Unter [Launches – Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie Informationen zum Zweck und zur Interaktion der Felder **Launch-Datum** und **Bereit für Produktion**.
 
-## Ermitteln des Launch-Status einer Seite   {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite    {#discovering-the-launch-status-of-a-page}
 
 Der Status wird angezeigt, wenn Sie einen bestimmten Launch auf der Registerkarte „Verweise“ auswählen (siehe [Launches in Verweisen (Sites-Konsole))](/help/sites-authoring/launches.md#launches-in-references-sites-console).
 
