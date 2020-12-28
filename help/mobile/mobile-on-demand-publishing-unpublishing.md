@@ -18,7 +18,7 @@ ht-degree: 7%
 ---
 
 
-# Veröffentlichung von Inhalten aufheben{#publish-unpublish-content}
+# Publish UnPublish Content{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Sobald Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen v
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter Überlegungen zum [Design von AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
+>Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Überlegungen zum Design von AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
 ## Veröffentlichen/Rückgängigmachen der Veröffentlichung des Inhalts {#publishing-unpublishing-the-content}
 
@@ -42,7 +42,7 @@ Der allgemeine Arbeitsablauf zum Veröffentlichen/Rückgängigmachen der Veröff
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
 1. Wählen Sie einen Artikel aus.
-1. Hinzufügen Sie bei Bedarf weitere Artikel aus der Ansicht Liste.
+1. hinzufügen Sie bei Bedarf weitere Artikel aus der Ansicht Liste.
 1. Wählen Sie in der Aktionsleiste &quot;Veröffentlichen&quot;aus. Nach einigen Augenblicken werden Ihre Artikel nun öffentlich sein.
 1. Gehen Sie wie oben beschrieben vor, um die Veröffentlichung von Artikeln rückgängig zu machen.
 
