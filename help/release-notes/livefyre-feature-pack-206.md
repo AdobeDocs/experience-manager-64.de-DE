@@ -16,7 +16,7 @@ ht-degree: 5%
 ---
 
 
-# Livefyre Feature Pack 2.0.6 Release Notes {#livefyre-feature-pack-release-notes}
+# Livefyre Feature Pack 2.0.6 - Versionshinweise {#livefyre-feature-pack-release-notes}
 
 ## Versionshinweise {#release-information}
 
@@ -29,18 +29,18 @@ ht-degree: 5%
 | Kompatibilität (*) | AEM 6.4 SP1, 6.4, 6.3 GA und 6.2 SP1 |
 | Beschreibung | Mit diesem Paket können Sie Livefyres branchenführende Kurationsfunktionen in Ihre AEM-Instanz integrieren. So können Sie innerhalb weniger Minuten wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken auf Ihrer Site veröffentlichen. |
 
-## What is included in Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}
+## Was ist in Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack} enthalten
 
 Dieses Paket integriert die branchenführenden Kurationsfunktionen von Livefyre in Ihre AEM-Instanz, sodass Sie innerhalb weniger Minuten wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken auf Ihrer Site veröffentlichen können. Es gibt drei verschiedene Komponenten dieses Pakets:
 
 **UGC-Inhalte in AEM Assets importieren**
 
-* Importieren Sie mithilfe des UGC Importers Twitter- und Instagram-Inhalte (UGC) aus Livefyre Studio in AEM Assets.
+* Importieren Sie mit dem UGC Importer Twitter- und Instagram-Inhalte (UGC) aus Livefyre Studio nach AEM Assets.
 * Greifen Sie auf Ihre Livefyre-Bibliothek zu.
 * Suchen Sie mithilfe der Livefyre Social-Suche in Echtzeit nach Twitter und Instagram.
 * Verwaltung von Rechten auf dem UGC.
 
-**Hinzufügen von Livefyre-Komponenten für AEM Sites oder Communities**
+**hinzufügen von Livefyre-Komponenten für AEM Sites oder Communities**
 
 * Erstellen und passen Sie dynamische und ansprechende Erlebnisse sofort mit einer Suite aus Social-Komponenten wie Karten, Galerien und Media Walls an.
 * Veröffentlichen Sie UGC in AEM Sites oder Communities.
@@ -63,16 +63,16 @@ Aufgrund von Aktualisierungen, die sich auf die Aggregation von Inhalten von Ins
 #### Neue Funktion oder Verbesserung {#new-feature-or-improvement}
 
 * Es wurde die Möglichkeit hinzugefügt, UGC zu durchsuchen, bevor Sie Rechte einrichten und soziale Konten in Livefyre anfordern. Sie müssen soziale Konten einrichten, um Rechte anzufordern, oder die Berechtigungsanforderung überschreiben, wenn Sie Eigentümer des Inhalts sind.
-* Der Arbeitsablauf [für Anfragen zu Instagram- und Twitter-](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) UGC-Rechten wurde aktualisiert, um die neuesten APIs zu erfüllen.
+* Instagram und Twitter [UGC-Anforderungs-Workflow](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) wurden aktualisiert, um die neuesten APIs zu erfüllen.
 * Der Rights-Status und entsprechende Aktionen werden jetzt im Bildschirm &quot;Rights Request&quot;angezeigt.
 
-#### Bug fixes {#bug-fixes}
+#### Fehlerbehebungen {#bug-fixes}
 
 * Es wurde ein Problem behoben, bei dem das Löschen eines Social-Kontos in Livefyre Studio, das für die Berechtigungsanforderung verwendet wurde, einen Fehler verursachte, wenn die UGC-Bibliothek in AEM geladen wurde.
 * Es wurde ein Problem behoben, bei dem die Asset-Anzahl im Livefyre-Studio nicht mit der Asset-Anzahl in der AEM-UGC-Bibliothek übereinstimmte.
 * Es wurde ein Problem in der UGC-Bibliothek behoben, bei dem gefilterte Ergebnisse angezeigt wurden, nachdem die Filteroptionen zurückgesetzt wurden.
 * Es wurde ein Problem mit AEM Commerce behoben, bei dem Aktionsaufruf-Schaltflächen Benutzer zur falschen URL weiterleiteten.
-* Es wurde ein Problem in AEM Sites behoben, bei denen das Ziehen und Ablegen mehrerer Komponenten in den parsys-Platzhalter dazu führte, dass diese nicht mehr angezeigt wurden.
+* Es wurde ein Problem in AEM Sites behoben, durch das beim Ziehen und Ablegen mehrerer Komponenten in den Platzhalter für parsys das Entfernen der Komponente verhindert wurde.
 * Es wurde ein Problem behoben, durch das deaktivierte soziale Konten beim Senden einer Berechtigungsanfrage zur Auswahl verfügbar waren.
 * Es wurde ein Problem behoben, bei dem beim Ziehen und Ablegen von UGC aus Assets in Sites ein Fehler auftrat.
 * Es wurde ein Problem behoben, bei dem durch Ziehen und Ablegen von Chat- und Liveblog-Komponenten in Sites die App nicht erstellt wurde.
