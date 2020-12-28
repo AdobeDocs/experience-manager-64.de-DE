@@ -1,18 +1,18 @@
 ---
-title: Decoration-Tag
-description: Wenn eine Komponente einer Webseite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
+title: 'Decoration-Tag '
+description: Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 translation-type: tm+mt
 source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 79%
+ht-degree: 93%
 
 ---
 
 
-# Decoration-Tag {#decoration-tag}
+# Decoration-Tag  {#decoration-tag}
 
-Wenn eine Komponente einer Webseite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Dies dient in erster Linie zwei Zwecken:
+Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Dies hat zwei Hauptgründe:
 
 * Eine Komponente kann nur bearbeitet werden, wenn sie in einem HTML-Element eingeschlossen ist.
 * Das einschließende Element wird verwendet, um HTML-Klassen anzuwenden, die Folgendes bieten:
@@ -30,38 +30,38 @@ Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von 
 Es folgen einige allgemeine Empfehlungen, wann Sie ein einschließendes Element verwenden sollten, um unerwartete Probleme zu vermeiden:
 
 * Das einschließende Element sollte unabhängig von WCMModes (Bearbeitungs- oder Vorschaumodus), Instanzen (Autor oder Veröffentlichung) oder Umgebung (Staging oder Produktion) vorhanden bzw. nicht vorhanden sein, damit der CSS- und JavaScript-Code der Seite stets gleich funktionieren.
-* Das einschließende Element sollte allen bearbeitbaren Komponenten hinzugefügt werden, sodass der Seiten-Editor sie korrekt initialisieren und aktualisieren kann.
+* Das einschließende Element sollte allen bearbeitbaren Komponenten hinzugefügt werden, sodass der Seiteneditor sie korrekt initialisieren und aktualisieren kann.
 * Bei nicht bearbeitbaren Komponenten kann das einschließende Element weggelassen werden, wenn es keinen bestimmten Zweck erfüllt, um das Markup nicht unnötig zu vergrößern.
 
-## Komponentensteuerung {#component-controls}
+## Komponentensteuerungen {#component-controls}
 
 Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden, um das Verhalten ihrer Decoration-Tags zu steuern:
 
-* **`cq:noDecoration {boolean}`:**Diese Eigenschaft kann einer Komponente hinzugefügt werden. Wenn der Wert „true“ lautet, darf AEM keine einschließenden Elemente für die Komponente generieren.
-* **`cq:htmlTag`node :**Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
-   * **`cq:tagName {String}`:**Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
-   * **`class {String}`:**Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
+* **`cq:noDecoration {boolean}`:** Diese Eigenschaft kann einer Komponente hinzugefügt werden. Wenn der Wert „true“ lautet, darf AEM keine einschließenden Elemente für die Komponente generieren.
+* **`cq:htmlTag`node :** Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
+   * **`cq:tagName {String}`:** Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
+   * **`class {String}`:** Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
    * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen String-Wert hinzugefügt.
 
-## Skript-Steuerung {#script-controls}
+## Skript-Steuerung   {#script-controls}
 
-The wrapper behavior does differ however depending on if [HTL](/help/sites-developing/decoration-tag.md#htl) or [JSP](/help/sites-developing/decoration-tag.md#jsp) is used to include the element.
+Das Wrapper-Verhalten unterscheidet sich jedoch je nachdem, ob [HTL](/help/sites-developing/decoration-tag.md#htl) oder [JSP](/help/sites-developing/decoration-tag.md#jsp) zum Einbeziehen des Elements verwendet wird.
 
 ### HTL {#htl}
 
 Im Allgemeinen lässt sich das Wrapper-Verhalten in HTL wie folgt beschreiben:
 
-* No wrapper DIV is rendered by default (when just doing `data-sly-resource="foo"`).
+* Standardmäßig wird kein Wrapper-DIV gerendert (wenn nur `data-sly-resource="foo"` ausgeführt wird).
 * Alle wcm-Modi (deaktiviert, Vorschau, Bearbeiten für Autor oder Veröffentlichung) werden identisch dargestellt.
 
 Das Verhalten des Wrappers kann auch vollständig kontrolliert werden.
 
 * Das HTL-Skript hat die vollständige Kontrolle über das resultierende Verhalten des Wrapper-Tags.
-* Component properties (like `cq:noDecoration` and `cq:tagName`) can also define the wrapper tag.
+* Komponenteneigenschaften (wie `cq:noDecoration` und `cq:tagName`) können ebenfalls das Wrapper-Tag definieren.
 
 Sie können das Verhalten der Wrapper-Tags von HTL-Skripten und der zugehörigen Logik vollständig kontrollieren.
 
-For further information about developing in HTL see the [HTL documentation](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html).
+Weitere Informationen zur Entwicklung in HTL finden Sie in der [HTL-Dokumentation](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html).
 
 #### Entscheidungsbaum {#decision-tree}
 
@@ -69,7 +69,7 @@ Dieser Entscheidungsbaum fasst die Logik zusammen, die das Verhalten der Wrapper
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
-#### Nutzungsszenarien {#use-cases}
+#### Anwendungsfälle {#use-cases}
 
 Die folgenden drei Anwendungsfälle stellen Beispiele dafür dar, wie die Wrapper-Tags behandelt werden, und zeigen außerdem, wie einfach es ist, das gewünschte Verhalten der Wrapper-Tags zu steuern.
 
@@ -101,23 +101,23 @@ Der häufigste Anwendungsfall besteht darin, dass eine Komponente eine andere Ko
 
 `two.html: Hello World!`
 
-Ergebnisausgabe am `/content/test.html`:
+Dies ergibt die Ausgabe auf `/content/test.html`:
 
 **`Hello World!`**
 
-Ein Beispiel wäre eine Komponente, die eine Core-Image-Komponente enthält, um ein Bild anzuzeigen. In diesem Fall wird in der Regel eine synthetische Ressource verwendet, die darin besteht, eine virtuelle untergeordnete Komponente einzuschließen, indem ein Map-Objekt, das alle Eigenschaften darstellt, die die Komponente hätte.
+Ein Beispiel wäre etwa eine Komponente, die eine grundlegende Bildkomponente enthält, um ein Bild anzuzeigen. Dazu verwendet sie normalerweise eine künstliche Ressource, für die eine virtuelle untergeordnete Komponente eingefügt wird, indem ein Map-Objekt an data-sly-resource weitergegeben wird, das alle Eigenschaften enthält, die die Komponente aufweisen würde.
 
-#### Anwendungsfall 2: Eine bearbeitbare Komponente einfügen {#use-case-include-an-editable-component}
+#### Anwendungsfall 2: Einfügen einer bearbeitbaren Komponente {#use-case-include-an-editable-component}
 
-Bei einem weiteren häufigen Anwendungsfall enthalten Containerkomponenten bearbeitbare untergeordnete Komponenten z. B. einen Layout-Container. In diesem Fall benötigt jedes enthaltene untergeordnete Element einen Wrapper, damit der Editor funktioniert (es sei denn, dies ist explizit mit der Eigenschaft `cq:noDecoration` deaktiviert).
+Bei einem weiteren häufigen Anwendungsfall enthalten Container-Komponenten bearbeitbare untergeordnete Komponenten z. B. einen Layout-Container. In diesem Fall benötigt jedes enthaltene untergeordnete Element einen Wrapper, damit der Editor funktioniert (es sei denn, dies ist explizit mit der Eigenschaft `cq:noDecoration` deaktiviert).
 
-Da die eingefügte Komponente in diesem Fall eine unabhängige Komponente ist, benötigt sie ein Wrapper-Element, damit der Editor funktioniert und um Layout und Style anzuwenden. To trigger this behavior, there&#39;s the `decoration=true` option.
+Da die eingefügte Komponente in diesem Fall eine unabhängige Komponente ist, benötigt sie ein Wrapper-Element, damit der Editor funktioniert und um Layout und Stil anzuwenden. Die Option `decoration=true` löst dieses Verhalten aus.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-Ergebnisausgabe am `/content/test.html`:
+Dies ergibt die Ausgabe auf `/content/test.html`:
 
 **`<article class="component-two">Hello World!</article>`**
 
@@ -125,27 +125,27 @@ Ergebnisausgabe am `/content/test.html`:
 
 Es sind unendlich viele komplexe Anwendungsfälle möglich, die einfach umgesetzt werden können, indem HTL Folgendes explizit angibt:
 
-* **`decorationTagName='ELEMENT_NAME'`** So definieren Sie den Elementnamen des Wrapper.
-* **`cssClassName='CLASS_NAME'`** So definieren Sie die CSS-Klassennamen, die darauf eingestellt werden sollen.
+* **`decorationTagName='ELEMENT_NAME'`** Definiert den Elementnamen des Wrappers.
+* **`cssClassName='CLASS_NAME'`** Definiert die CSS-Klassennamen, die darauf festgelegt werden sollen.
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`
 
 `two.html: Hello World!`
 
-Ergebnis `/content/test.html`:
+Dies ergibt die Ausgabe auf `/content/test.html`:
 
 **`<aside class="child">Hello World!</aside>`**
 
 ## JSP {#jsp}
 
-When including a component using `cq:includ`e or `sling:include`, the default behavior in AEM is to use a DIV to wrap the element. Sie können dieses Verhalten jedoch auf zwei Arten anpassen:
+Wenn Sie eine Komponente mit `cq:includ`e oder `sling:include` einschließen, wird in AEM standardmäßig ein DIV verwendet, um das Element einzuschließen. Sie können dieses Verhalten jedoch auf zwei Arten anpassen:
 
 * Geben Sie mit `cq:noDecoration` explizit an, dass AEM die Komponente nicht einschließen soll.
-* Use a custom HTML tag to wrap the component using `cq:htmlTag`/ `cq:tagName` or `decorationTagName`.
+* Verwenden Sie ein benutzerdefiniertes HTML-Tag, um die Komponente mit `cq:htmlTag`/ `cq:tagName` oder `decorationTagName` einzuschließen.
 
 ### Entscheidungsbaum {#decision-tree-1}
 
-The following decision tree illustrates how `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, and `decorationTagName` affect the wrapper behavior.
+Die folgende Entscheidungsstruktur zeigt, wie `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` und `decorationTagName` das Wrapper-Verhalten beeinflussen.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
