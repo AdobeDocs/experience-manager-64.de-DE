@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Adobe Analytics zur Mobilanwendung
-seo-title: Hinzufügen von Adobe Analytics zur Mobilanwendung
+title: hinzufügen von Adobe Analytics zur Mobilanwendung
+seo-title: hinzufügen von Adobe Analytics zur Mobilanwendung
 description: Auf dieser Seite erfahren Sie, wie Sie Mobile App Analytics in Ihren AEM-Apps verwenden können, indem Sie sie in Adobe Mobile Services integrieren.
 seo-description: Auf dieser Seite erfahren Sie, wie Sie Mobile App Analytics in Ihren AEM-Apps verwenden können, indem Sie sie in Adobe Mobile Services integrieren.
 uuid: d3ff6f9b-0467-4abe-9a59-b3495a6af0f8
@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Hinzufügen von Adobe Analytics zur Mobilanwendung{#add-adobe-analytics-to-your-mobile-application}
+# hinzufügen von Adobe Analytics in Ihre Mobilanwendung{#add-adobe-analytics-to-your-mobile-application}
 
 >[!NOTE]
 >
@@ -28,11 +28,11 @@ Möchten Sie ansprechende und relevante Erlebnisse für Ihre Benutzer mobiler An
 
 Haben Ihre Benutzer Zugriff auf den gesamten Inhalt? Verlassen sie die App, und wenn ja, wo? Wie oft bleiben sie in der App und wie oft kommen sie zurück, um die App zu verwenden? Welche Änderungen können Sie einführen und dann messen, dass die Retention erhöht wird? Was ist mit den Absturzraten, stürzt Ihre App für Ihre Benutzer ab?
 
-Nutzen Sie [Mobile App Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) in Ihren AEM-Apps, indem Sie sie in die [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html)integrieren.
+Nutzen Sie die Vorteile von [Mobile App Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) in Ihren AEM-Apps, indem Sie [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html) integrieren.
 
 Instrumentieren Sie Ihre AEM-Apps, um zu verfolgen, Berichte darüber zu erstellen und zu verstehen, wie Sie mit Ihrer mobilen App und Ihren Inhalten interagieren, und um wichtige Lebenszyklusmetriken wie Starts, Besuchszeit in der App und Absturzrate zu messen.
 
-In diesem Abschnitt wird beschrieben, wie AEM *Entwickler* :
+In diesem Abschnitt wird beschrieben, wie AEM *Entwickler*:
 
 * Mobile Analytics in Ihre mobile Anwendung integrieren
 * Testen Sie Ihre Analysenachverfolgung mit Bloodhound.
@@ -46,11 +46,11 @@ AEM Mobile benötigt ein Adobe Analytics-Konto, um Verfolgungsdaten in Ihrer App
 
 ## Für Entwickler - Integration von Mobile Analytics in Ihre App {#for-developers-integrate-mobile-analytics-into-your-app}
 
-### ContentSync zum Einziehen der Konfigurationsdatei konfigurieren {#configure-contentsync-to-pull-in-configuration-file}
+### ContentSync zum Ziehen der Konfigurationsdatei {#configure-contentsync-to-pull-in-configuration-file} konfigurieren
 
 Nachdem Sie das Analytics-Konto eingerichtet haben, müssen Sie eine Inhaltssynchronisierungskonfiguration erstellen, um den Inhalt in Ihre Mobile-Anwendung zu übernehmen.
 
-Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung. Die Konfiguration muss Content Sync anweisen, ADBMobileConfig in den Ordner /www zu verschieben. In der Geometrixx Outdoors-App befindet sich die Content Sync-Konfiguration beispielsweise unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Konfiguration für die Entwicklung. es ist jedoch bei Geometrixx Outdoors identisch mit der Nicht-Entwicklungskonfiguration.
+Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung. Die Konfiguration muss Content Sync anweisen, ADBMobileConfig in den Ordner /www zu verschieben. In der Geometrixx Outdoors-App befindet sich beispielsweise die Content Sync-Konfiguration unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Konfiguration für die Entwicklung. es ist jedoch bei Geometrixx Outdoors identisch mit der Nicht-Entwicklungskonfiguration.
 
 Weitere Informationen zum Herunterladen von ADBMobileConfig aus Ihrem Mobile Application AEM Apps-Dashboard finden Sie unter Analytics - Mobile Services - Adobe Mobile Services SDK-Konfigurationsdatei.
 
@@ -66,9 +66,9 @@ Weitere Informationen zum Herunterladen von ADBMobileConfig aus Ihrem Mobile App
 
 Für jede Plattform muss ADBMobileConfig an einen bestimmten Speicherort kopiert werden.
 
-Wenn Sie mit der PhoneGap-CLI erstellen, können Sie dies mit einem Cordova-Build-Hook-Skript tun. Dies ist in der Geometrixx Outdoors-App unter folgender Adresse zu sehen:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
+Wenn Sie mit der PhoneGap-CLI erstellen, können Sie dies mit einem Cordova-Build-Hook-Skript tun. Dies ist in der Geometrixx Outdoors zu finden unter:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Für iOS muss die Datei in den **Ressourcenordner** des XCode-Projekts kopiert werden (z. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Wenn die App auf Android ausgerichtet ist, lautet der Pfad, in den kopiert werden soll, &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Weitere Informationen zur Verwendung von Haken beim PhoneGap-CLI-Build finden Sie unter [Drei Haken, die Ihr Cordova/PhoneGap-Projekt benötigt](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+Für iOS muss die Datei in den Ordner **Resources** des XCode-Projekts kopiert werden (z.B. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Wenn die App auf Android ausgerichtet ist, lautet der Pfad, in den kopiert werden soll, &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Weitere Informationen zur Verwendung von Haken während des PhoneGap-CLI-Builds finden Sie unter [Drei Haken, die Ihr Cordova/PhoneGap-Projekt benötigt](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
 
 ```xml
 ///////////////////////////
@@ -89,7 +89,7 @@ Für iOS muss die Datei in den **Ressourcenordner** des XCode-Projekts kopiert w
     ]
 ```
 
-### Hinzufügen des AMS-Zusatzmoduls in der App {#add-the-ams-plugin-in-the-app}
+### hinzufügen Sie das AMS-Plugin in der App {#add-the-ams-plugin-in-the-app}
 
 Damit die App die Daten erfassen kann, muss das AMS-Zusatzmodul (Adobe Mobile Services) als Teil der App enthalten sein. Indem das Plugin als Funktion in die Datei &quot;config.xml&quot;der App aufgenommen wird, kann ein weiterer Cordova-Haken verwendet werden, um das Plugin während des PhoneGap-Build-Prozesses automatisch hinzuzufügen.
 
@@ -103,9 +103,9 @@ Die Geometrixx Outdoors App config.xml befindet sich unter */content/phonegap/ge
 
 Nachdem Sie diese Schritte ausgeführt haben, wird Ihre App in die Lage versetzt, alle von Adobe Analytics bereitgestellten Lebenszyklusmetriken zu melden. Dazu gehören Daten wie Starts, Abstürze und Installationen. Wenn das die einzigen Daten sind, die Ihnen wichtig sind, dann sind Sie fertig. Wenn Sie benutzerdefinierte Daten erfassen möchten, müssen Sie Ihren Code instrumentieren.
 
-### Geben Sie Ihren Code für die vollständige App-Verfolgung ein. {#instrument-your-code-for-full-app-tracking}
+### Geben Sie Ihren Code für die vollständige App-Verfolgung ein {#instrument-your-code-for-full-app-tracking}
 
-Es gibt mehrere Tracking-APIs in der [AMS PhoneGap-Plugin-API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Die API für das AMS PhoneGap-Plugin enthält mehrere Tracking-APIs.[](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 Auf diese Weise können Sie Status und Aktionen verfolgen, z. B., zu welchen Seiten Ihre Benutzer in Ihrer App navigieren, welche Steuerelemente am häufigsten verwendet werden. Die einfachste Möglichkeit, Ihre App für die Verfolgung zu instrumentieren, besteht darin, die Analytics-APIs zu verwenden, die vom AMS-Plugin bereitgestellt werden.
 
@@ -116,7 +116,7 @@ Als Referenz können Sie sich den Code in der Geometrixx Outdoors-App ansehen. I
 
 Indem Sie Ihren Quellcode mit diesen Methodenaufrufen instrumentieren, können Sie vollständige Metriken für Ihre Anwendung erfassen.
 
-### Testen der Analytics-Verfolgung mit Bloodhound  {#testing-analytics-tracking-with-bloodhound}
+### Testen der Analytics-Verfolgung mit Bloodhound {#testing-analytics-tracking-with-bloodhound}
 
 ![](do-not-localize/chlimage_1.jpeg)
 
