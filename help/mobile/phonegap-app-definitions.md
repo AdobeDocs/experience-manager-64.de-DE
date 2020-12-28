@@ -30,15 +30,15 @@ Mit App-Definitionen können Sie identifizieren, welche Bereiche und anderen Kon
 >
 >App-Definitionen sind an eine App gebunden. Daher ist die Erstellung einer App in der AEM Mobile App-Konsole erforderlich.
 
-## Erstellen einer Definition für eine neue App {#creating-a-new-app-definition}
+## Erstellen einer neuen App-Definition {#creating-a-new-app-definition}
 
-1. Wählen Sie in der AEM Navigationskonsole die Option **Mobil** .
+1. Wählen Sie **Mobil** aus der AEM Navigationskonsole.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
 1. Wählen Sie **Apps** aus **Mobile** und klicken Sie auf **Erstellen.**
 
-   Wählen Sie &quot; **App** zu&quot;und geben Sie Details ein, um Ihre neue App zu erstellen.
+   Wählen Sie **App** und geben Sie Details ein, um Ihre neue App zu erstellen.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
