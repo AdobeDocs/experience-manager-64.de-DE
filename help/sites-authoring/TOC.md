@@ -18,7 +18,7 @@ ht-degree: 92%
 # AEM 6.4 Authoring-Benutzeranleitung {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Wichtige Aufgaben, Werkzeuge und Konzepte für AEM Authoring {#essentials}
++ Grundlegende Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
@@ -46,7 +46,7 @@ ht-degree: 92%
    + [Best Practices](best-practices.md)
 + Site- und Seitenfunktionen {#siteandpage}
    + [Verwenden von Tags](tags.md)
-   + [Erstellen von Seitenvorlagen  ](templates.md)
+   + [Erstellen von Seitenvorlagen ](templates.md)
    + [Stilsystem](style-system.md)
    + [Arbeiten mit Seitenversionen](working-with-page-versions.md)
    + [Seitenvergleich](page-diff.md)
@@ -79,7 +79,7 @@ ht-degree: 92%
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
 + Personalisierung   {#personalization}
-   + [Personalisierung  ](personalization.md)
+   + [Personalisierung ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
