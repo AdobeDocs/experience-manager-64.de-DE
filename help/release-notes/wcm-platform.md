@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 83%
 
 ---
 
 
 # AEM Foundation und Repository {#aem-foundation-repository}
 
-## Liste der Änderungen   {#list-of-changes}
+## Liste der Änderungen  {#list-of-changes}
 
 ### Repository {#repository}
 
@@ -33,11 +36,12 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
    * Fortlaufende Revisionsbereinigung für MongoMK ersetzt geplante Revisionsbereinigung.
 
 * Verbesserte Effizienz bei der Revisionsbereinigung von Dokument-Knotenspeichern.
-* Please see [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) and [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) for a full overview of fixed issues.
+* Eine vollständige Übersicht der behobenen Probleme finden Sie unter [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) und [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
 >* Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Migration auf Oak-Segment-TAR – Häufig gestellte Fragen (FAQ)](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+
 >
 
 
@@ -68,7 +72,8 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 
 >[!CAUTION]
 >
->* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Note that Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, während [Lesen Sie mehr](/help/sites-deploying/ui-recommendations.md).
+
 >
 
 
@@ -103,18 +108,18 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 * Versionsbereinigungskonfiguration ermöglicht das Vorhalten einer minimalen Anzahl von Versionen.
 * Versionsbereinigung stoppt bei Ende eines Wartungsfensters. Sie kann auch manuell gestartet und gestoppt werden und wird beim nächsten Start inkrementell fortgesetzt.
 
-### Aktualisierung {#upgrade}
+### Aktualisierung  {#upgrade}
 
 * Abwärtskompatibilität: Durch die Abwärtskompatibilität von Version 6.4 bleibt Ihr benutzerdefinierter Code in den meisten Fällen kompatibel. Außerdem verringert sich dadurch der mit dem Upgrade verbundene Aufwand.
 * Analyse der Upgrade-Komplexität: Ein neues Mustererkennungstool analysiert die Komplexität von Upgrades.
 * Nachhaltige Upgrades: Die eingeführte API-Oberfläche und Inhaltsklassifizierung erleichtert Ihnen die Umsetzung von Best Practices für effiziente und nahtlose Upgrades auf die nächste Version während Ihres gesamten Entwicklungszyklus.
 * Repository-Umstrukturierung: Umfassende Umstrukturierung (vor allem /etc) zur Erleichterung von Upgrades und zur Förderung bewährter Verfahren bei der Implementierung. [Weitere Informationen.](/help/sites-deploying/repository-restructuring.md)
-* Please see the [Upgrade documentation](/help/sites-deploying/upgrade.md) for more details on these features.
+* Weitere Informationen zu diesen Funktionen finden Sie in der [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md).
 
-### Cloud-Services {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* Viele Cloud-Services können jetzt über die Touch-Benutzeroberfläche konfiguriert werden. die restlichen Daten können unter der Karte Legacy Cloud-Dienste konfiguriert werden.
-* Sites und Assets-Ordner können mit Cloud-Services konfiguriert werden, die auf kontextabhängige Weise geladen werden.
+* Viele Cloud Services können jetzt über die Touch-Benutzeroberfläche konfiguriert werden. Die restlichen Cloud Services können unter der Karte &quot;Legacy&quot;konfiguriert werden.
+* Sites und Assets-Ordner können mit Cloud Services konfiguriert werden, die kontextabhängig geladen werden.
 
 ### Sicherheit {#security}
 
