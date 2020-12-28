@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
 
-# Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten{#using-content-properties-to-export-content}
+# Verwenden von Inhaltseigenschaften zum Exportieren von Inhalt{#using-content-properties-to-export-content}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 10%
 
 Apps werden in AEM als *cq:Pages* dargestellt.
 
-Sie verwenden dieselben allgemeinen Eigenschaften, die in jedem *cq:Page* -Objekt enthalten sind, sowie andere, die unten angezeigt werden und die integrationsunterstützende Eigenschaften darstellen.
+Sie verwenden dieselben allgemeinen Eigenschaften, die in jedem *cq:Page* zusätzlich zu den anderen unten aufgeführten, die integrationsunterstützende Eigenschaften darstellen.
 
 ## App-Eigenschaften {#app-properties}
 
@@ -66,7 +66,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Datum          </td>
+   <td>Datum</td>
    <td>Datum des letzten Uploads freigegebener Ressourcen von AEM nach AEM Mobile.</td>
   </tr>
   <tr>
@@ -87,7 +87,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
  </tbody>
 </table>
 
-Sie können zum Erstellen von Inhalten ***Inhaltseigenschaften*** verwenden. Siehe die folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
+Sie können ***Inhaltseigenschaften*** verwenden, um Inhalte zu erstellen. Siehe die folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
 
 * [Inhaltseigenschaften](/help/mobile/content-properties.md)
 * [Artikelexportkonfiguration erstellen](/help/mobile/creating-article-export-configuration.md)
