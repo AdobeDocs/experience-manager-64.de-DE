@@ -16,13 +16,13 @@ ht-degree: 17%
 ---
 
 
-# Versionshinweise zum Smart Content Service {#smart-content-service-release-notes}
+# Versionshinweise zu Smart Content Service {#smart-content-service-release-notes}
 
 Überblick über den Smart Content Service und bekannte Probleme im Zusammenhang mit dem Dienst.
 
 Unternehmen verlangen, dass ihre digitalen Assets entsprechend der Taxonomie getaggt werden, mit der Mitarbeiter, Partner und Kunden auf digitale Assets verweisen und diese suchen. Im Vergleich zu generischen Tags lassen sich Elemente, die auf der Grundlage der Geschäftstaxonomie getaggt werden, leichter identifizieren und durch tagbasierte Suchen abrufen.
 
-Der Smart Content Service nutzt Ihre geschäftliche Taxonomie von AEM Assets, um digitale Assets automatisch zu taggen, wodurch sichergestellt wird, dass die relevantesten Assets in Suchvorgängen angezeigt werden.
+Der Smart Content Service nutzt Ihre Geschäftstaxonomie von AEM Assets, um digitale Assets automatisch zu taggen, wodurch sichergestellt wird, dass die relevantesten Assets in Suchvorgängen angezeigt werden.
 
 Sie müssen den Smart Content Service mit einem kuratierten Satz von AEM Assets und Tags ausbilden, um Ihre Geschäftstaxonomie zu erkennen. Nach der Schulung kann der Dienst diese Tags auf ähnliche Assets anwenden.
 
@@ -94,5 +94,5 @@ Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff ben
 
 * [Produktzugriff](https://login.marketing.adobe.com)
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).
-* Produktupdates, Patches und Pakete für zusätzliche Funktionen bei der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Kundenservice per Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neue Adobe - Kundendiensterfahrung](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* Produktupdates, Patches und Pakete für zusätzliche Funktionen bei [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Kundenservice per Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Erlebnis des Kundensupports für neue Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
