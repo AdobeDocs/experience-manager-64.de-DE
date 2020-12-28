@@ -71,9 +71,9 @@ Adobe verfügt nur über sehr wenige Informationen, die direkt mit einem bestimm
 
 **Welche personenbezogenen Daten werden mit Analytics verfolgt?**
 
-Keine. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
+Kein. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
 
-**Der Endbenutzer hat Informationen bereitgestellt, es wurde jedoch nichts gefunden. Why not?**
+**Der Endbenutzer hat Informationen bereitgestellt, es wurde jedoch nichts gefunden. Warum nicht?**
 
 Während der Weiterentwicklung von Digital Publishing Suite wurden Veränderungen an Dienstimplementierungen vorgenommen und mehr und mehr Daten wurden verschleiert. Wenn keine Daten anhand der vom Benutzer bereitgestellten Daten gefunden wurden, können die Daten des Benutzers nicht zu diesem zurückverfolgt werden.
 
