@@ -189,7 +189,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
    >
    >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
-## Bearbeiten der Seiteneigenschaften   {#editing-the-page-properties}
+## Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
 
 Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md):
 
@@ -241,7 +241,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
    Weitere Informationen finden Sie unter [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-## Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite   {#move-copy-and-paste-or-delete-your-page}
+## Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite    {#move-copy-and-paste-or-delete-your-page}
 
 1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie verschieben, kopieren und einfügen oder löschen möchten.
 1. Wählen Sie das Symbol zum Kopieren (und dann Einfügen), Verschieben oder Löschen nach Bedarf aus, indem Sie eine der folgenden Aktionen durchführen:
@@ -288,9 +288,9 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
 
-## Erstellen einer Seitenversion   {#creating-a-version-of-your-page}
+## Erstellen einer Seitenversion    {#creating-a-version-of-your-page}
 
-1. Wählen Sie zum Öffnen der Timeline-Leiste die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)**mithilfe des Symbolleistensymbols (vor oder nach dem[Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
+1. Wählen Sie zum Öffnen der Timeline-Leiste die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** mithilfe des Symbolleistensymbols (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -304,7 +304,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe grundlegende Verfahren eingesetzt:
 
-1. Wählen Sie mithilfe des Symbolleistensymbols die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)**(vor oder nach dem[Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
+1. Wählen Sie mithilfe des Symbolleistensymbols die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
@@ -312,7 +312,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
 1. Tippen/klicken Sie auf die wiederherzustellende Version. Dadurch werden weitere Aktionsschaltflächen angezeigt:
 
-   * **Auf diese Version zurücksetzen**
+   * **Auf diese Version zurück**
 
       * Die Version wird wiederhergestellt.
    * **Unterschiede anzeigen**
