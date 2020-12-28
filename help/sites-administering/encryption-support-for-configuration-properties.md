@@ -20,7 +20,7 @@ ht-degree: 87%
 
 # Verschlüsselungsunterstützung für Konfigurationseigenschaften{#encryption-support-for-configuration-properties}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole wird verwendet, um mithilfe des systemweiten Verschlüsselungsschlüssels verschlüsselten Übergeordnete aus Klartext zu erstellen.
 
@@ -34,7 +34,7 @@ Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um d
 
 Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt wird. Sie können diese Schritte für eine OSGI-Eigenschaft ausführen, die verschlüsselt werden soll.
 
-1. Go to the AEM Web Console at *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Wechseln Sie zur AEM Web Console unter *https://&lt;server-Adresse>:&lt;server-Anschluss>/system/console/configMgr*
 1. Gehen Sie in der oberen linken Ecke zu **Main - Crypto-Unterstützung.**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -54,6 +54,6 @@ Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt
 
 1. Speichern Sie die Eigenschaften von „Day CQ Mail Service“. Das SMTP-Kennwort wird jetzt als verschlüsselter Wert gesendet.
 
-## Entschlüsselungsunterstützung {#decryption-support}
+## Entschlüsselungsunterstützung  {#decryption-support}
 
 AEM bietet jetzt ein Konfigurations-Plug-in zur Entschlüsselung von Konfigurationseigenschaften. Dieses AEM-Plug-in entschlüsselt automatisch und ruft die Klartext-Eigenschaften ab.
