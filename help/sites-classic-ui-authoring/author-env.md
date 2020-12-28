@@ -22,11 +22,11 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. For information about authoring in the modern, touch-enabled UI, see the [standard Authoring documentation](/help/assets/assets.md).
+>Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zum Authoring in der modernen, berührungsempfindlichen Benutzeroberfläche finden Sie in der [Standard-Authoring-Dokumentation](/help/assets/assets.md).
 
 In der Autorenumgebung können Sie folgende Aufgaben ausführen:
 
-* [Authoring](/help/sites-authoring/author.md) (einschließlich [Seiten-Authoring](/help/sites-authoring/qg-page-authoring.md) und [Verwaltung von Assets](/help/assets/assets.md))
+* [Authoring](/help/sites-authoring/author.md) (einschließlich  [Seitenberechnung und ](/help/sites-authoring/qg-page-authoring.md) Verwaltung von  [Assets](/help/assets/assets.md))
 
 * [Verwaltungsaufgaben](/help/sites-administering/administer-best-practices.md), die Sie für die Erstellung und Verwaltung des Inhalts auf Ihrer Website benötigen
 
@@ -47,7 +47,7 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * Dies ist die moderne standardmäßige Benutzeroberfläche von AEM.
    * Sie ist überwiegend in Grau gehalten und zeichnet sich durch ihre klare und minimalistische Gestaltung aus.
    * Sie wurde sowohl für Touch- als auch für Desktop-Geräte entwickelt (für Touch optimiert). Das Erscheinungsbild ist auf allen Geräten identisch, obwohl das [Anzeigen und Auswählen Ihrer Ressourcen](/help/sites-authoring/basic-handling.md) etwas unterschiedlich aussehen kann (Tippen bzw. Klicken).  
-   * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
+   * Weitere Informationen zum Authoring mit der touchbasierten Benutzeroberfläche finden Sie in der [Standard-Authoring-Dokumentation](/help/sites-authoring/author.md). Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
 
    * Desktop:
 
