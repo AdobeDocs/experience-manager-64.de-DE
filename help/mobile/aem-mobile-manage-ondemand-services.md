@@ -37,18 +37,18 @@ Mit der Preflight-App &quot;Mobile On Demand&quot;können Sie alle Projekte, auf
 ## Vorschau mit Preflight {#previewing-with-preflight-1}
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog.
-1. Klicken Sie auf das Auslassungszeichen (...) aus der Kachel &quot;Artikel **** verwalten&quot;(oder &quot;Banner/Sammlungen&quot;).
-1. Wählen Sie in der Aktionsleiste **Preflight** aus.
-1. Klicken Sie im Dialogfeld auf Preflight **aktivieren** .
+1. Klicken Sie auf das Auslassungszeichen (...) aus der Kachel **Artikel verwalten** (oder Banner/Sammlungen).
+1. Wählen Sie **Preflight** aus der Aktionsleiste.
+1. Klicken Sie im Dialogfeld auf **Preflight aktivieren**.
 1. Ihre App steht jetzt für die Vorschau mit der Mobile On-Demand Preflight-App bereit.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->Die AEM Preflight-App dient zum Anzeigen einer Vorschau von Inhalten und Durchsuchen-Seiten. Um sich ausführlich über die Preflight-App zu informieren, klicken Sie [hier](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
+>Die AEM Preflight-App dient zum Anzeigen einer Vorschau von Inhalten und Durchsuchen-Seiten. Um ausführliche Informationen zur Preflight-App zu erhalten, klicken Sie [hier](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
 >
->Die AEM Preflight-App ist im [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), im [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)und im [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)verfügbar.
+>Die AEM Preflight-App ist im [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en) und [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq) verfügbar.
 
 ### Vorwärts {#getting-ahead}
 
