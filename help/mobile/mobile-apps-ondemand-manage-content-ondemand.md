@@ -18,7 +18,7 @@ ht-degree: 11%
 ---
 
 
-# Managing Content{#managing-content}
+# Verwalten von Inhalten{#managing-content}
 
 >[!NOTE]
 >
@@ -31,16 +31,16 @@ Content-Management-Aktionen sind die Bausteine, die beim Erstellen und Verwalten
 Wenn Sie an eine Online-Zeitschrift denken, umfasst der Hauptinhalt Artikel, Anzeigen und Deckblätter. Innerhalb von AEM können drei Haupttypen von Mobile On-Demand-Inhalten erstellt werden:
 
 * **Artikel**: Text, der zusammen mit Kunst zur Informationsübermittlung verwendet wird
-* **Banner:** typischerweise grafische Werbeinhalte
-* **Sammlungen:** einen klar definierten *Behälter* darstellen, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titeldesign entsprechen
+* **Banner:** normalerweise grafische Werbeinhalte
+* **Sammlungen:** stellen ein klar definiertes  ** Buckett dar, das mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titeldesign entsprechen
 
-* **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
+* **Freigegebene Ressourcen:** Ermöglicht die Wiederverwendung oder gemeinsame Nutzung gemeinsamer Artikel über mehrere Artikel hinweg
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter Überlegungen zum [Design von AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
+>Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Überlegungen zum Design von AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
-## Creating and Managing Content {#creating-and-managing-content}
+## Erstellen und Verwalten von Inhalten {#creating-and-managing-content}
 
 Die folgenden Themen beschreiben die Erstellung und Verwaltung von Inhalten, insbesondere von Artikeln, Bannern und Sammlungen. Sobald Sie wissen, wie Sie den Inhalt erstellen und verwalten, werden Ihnen weitere Themen angezeigt, wie das Hochladen freigegebener Ressourcen, das Veröffentlichen/Rückgängigmachen der Veröffentlichung und die Vorschau mit Preflight.
 
@@ -52,7 +52,7 @@ Die folgenden Themen beschreiben die Erstellung und Verwaltung von Inhalten, ins
 
 >[!NOTE]
 >
->Im Allgemeinen sollten Sie Preflight vor dem Veröffentlichen von Inhalten verwenden. Weitere Informationen finden Sie unter [Vorschau mit Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) anzeigen.
+>Im Allgemeinen sollten Sie Preflight vor dem Veröffentlichen von Inhalten verwenden. Weitere Informationen finden Sie unter [Vorschau mit Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md).
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
