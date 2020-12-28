@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1459'
-ht-degree: 75%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überl
 
 Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte bereitzustellen. Dieser Inhalt wird im Abschnitt [Personalisierung](/help/sites-authoring/personalization.md) der Website verwaltet. Hier festgelegte [Aktivitäten](/help/sites-authoring/activitylib.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
+Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Personalisierung](/help/sites-authoring/personalization.md) der Website verwaltet. Hier festgelegte [Aktivitäten](/help/sites-authoring/activitylib.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
 AEM ermöglicht Ihnen die einfache Personalisierung Ihres Benutzererlebnisses. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
@@ -41,33 +41,33 @@ Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optione
 
 ![chlimage_1-310](assets/chlimage_1-310.png)
 
-## Segment-Editor {#segment-editor}
+## Segmenteditor {#segment-editor}
 
-The **Segment Editor** allows you to easily modify a segment. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der [Liste von Segmenten](/help/sites-administering/segmentation.md#accessing-segments) aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der [Liste von Segmenten](/help/sites-administering/segmentation.md#accessing-segments) aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
-Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
+Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Verstärkungsfaktor [finden Sie unter Erstellen eines neuen Segments](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)[
 
 >[!CAUTION]
 >
->Der Segment-Editor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine Zirkelbezüge enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine Zirkelbezüge enthalten.
 
 ### Container {#containers}
 
-Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. See the following section [Using AND and OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) for more information.
+Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. Im folgenden Abschnitt [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) erhalten Sie weitere Informationen.
 
 <table> 
  <tbody> 
   <tr> 
    <td>UND-Container<br /> </td> 
-   <td>Der boolesche AND-Operator<br /> </td> 
+   <td>Der boolesche UND-Operator<br /> </td> 
   </tr> 
   <tr> 
    <td>ODER-Container<br /> </td> 
-   <td>Der boolesche OR-Operator</td> 
+   <td>Der boolesche ODER-Operator</td> 
   </tr> 
  </tbody> 
 </table>
@@ -79,23 +79,23 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 <table> 
  <tbody> 
   <tr> 
-   <td>property-value<br /> </td> 
-   <td>Vergleicht eine Eigenschaft eines Stores mit einem definierten Wert<br /> </td> 
+   <td>Eigenschaft-Wert<br /> </td> 
+   <td>Vergleicht eine Eigenschaft eines Geschäfts mit einem definierten Wert<br /> </td> 
   </tr> 
   <tr> 
-   <td>property-property</td> 
-   <td>Vergleicht eine Eigenschaft eines Stores mit einer anderen Eigenschaft<br /> </td> 
+   <td>Eigenschaft-Eigenschaft</td> 
+   <td>Vergleicht eine Eigenschaft eines Geschäfts mit einer anderen Eigenschaft<br /> </td> 
   </tr> 
   <tr> 
-   <td>Eigenschafts-/Segmentreferenz</td> 
-   <td>Vergleicht eine Eigenschaft eines Stores mit einem anderen referenzierten Segment<br /> </td> 
+   <td>Eigenschaft-Segment-Referenz</td> 
+   <td>Vergleicht eine Eigenschaft eines Geschäfts mit einem anderen referenzierten Segment<br /> </td> 
   </tr> 
   <tr> 
-   <td>PropertyScript-Referenz</td> 
-   <td>Vergleicht eine Eigenschaft eines Stores mit den Ergebnissen eines Skripts<br /> </td> 
+   <td>Eigenschaft-Skript-Referenz</td> 
+   <td>Vergleicht eine Eigenschaft eines Geschäfts mit den Ergebnissen eines Skripts<br /> </td> 
   </tr> 
   <tr> 
-   <td>Segmentreferenz - Skriptreferenz</td> 
+   <td>Segment-Referenz-Skript-Referenz</td> 
    <td>Vergleicht ein referenziertes Segment mit den Ergebnissen eines Skripts<br /> </td> 
   </tr> 
  </tbody> 
@@ -103,13 +103,13 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 
 >[!NOTE]
 >
->Wenn beim Vergleich von Werten der Datentyp des Vergleichs nicht festgelegt ist (d. h. automatisch erkannt wird), vergleicht die ContextHub-Segmentierungsengine die Werte einfach wie JavaScript. Sie verteilt keine Werte an die erwarteten Typen, was zu irreführenden Ergebnissen führen kann. Beispiel:
+>Ist der Datentyp beim Vergleich von Werten nicht festgesetzt (d. h. auf „auto detect“ eingestellt), vergleicht die Segmentierungs-Engine von ContextHub die Werte einfach auf die Art und Weise, wie auch JavaScript es tun würde. Sie verteilt keine Werte an die erwarteten Typen, was zu irreführenden Ergebnissen führen kann. Beispiel:
 >
 >`null < 30 // will return true`
 >
->Therefore when [creating a segment](/help/sites-administering/segmentation.md#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. Beispiel:
+>Daher sollten Sie beim [Erstellen eines Segments](/help/sites-administering/segmentation.md#creating-a-new-segment) immer einen **Datentyp** auswählen, wenn die Typen der verglichenen Werte bekannt sind. Beispiel:
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>Beim Vergleich der Eigenschaft `profile/age` wissen Sie bereits, dass der verglichene Typ **number** sein wird. Selbst wenn `profile/age` nicht festgelegt ist, wird ein Vergleich von `profile/age` unter 30 wie erwartet **false** ergeben.
 
 ### Verweise {#references}
 
@@ -118,12 +118,12 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 <table> 
  <tbody> 
   <tr> 
-   <td>Segment-Verweis<br /> </td> 
-   <td>Bewerten Sie das referenzierte Segment</td> 
+   <td>Segment-Referenz<br /> </td> 
+   <td>Bewerten Sie das referenzierte Segment.</td> 
   </tr> 
   <tr> 
    <td>Skript-Referenz</td> 
-   <td>Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt <a href="/help/sites-administering/segmentation.md#using-script-references">Verwenden von Skriptverweisen</a> .</td> 
+   <td>Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt <a href="/help/sites-administering/segmentation.md#using-script-references">Verwenden von Skript-Referenzen</a>.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,12 +140,12 @@ So legen Sie Ihr neues Segment fest:
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-   Jedes Segment verfügt über einen Boost-Parameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
+   Jedes Segment verfügt über einen Verstärkungsparameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
 
    * Mindestwert: `0`
    * Höchstwert: `1000000`
 
-1. Ziehen Sie einen Vergleich oder Verweis in den Segment-Editor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
+1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
 1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in San José.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135am.png)
@@ -153,13 +153,13 @@ So legen Sie Ihr neues Segment fest:
    Legen Sie möglichst immer einen **Datentyp** fest, um die ordnungsgemäße Bewertung Ihrer Vergleiche sicherzustellen. Weitere Informationen finden Sie unter [Vergleiche](/help/sites-administering/segmentation.md#comparisons).
 
 1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
-1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) weiter unten). Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
+1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
-* Die oberste Ebene der Definition ist immer der UND-Container, der ursprünglich erstellt wurde. Dies kann nicht geändert werden, hat aber keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
+* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihrer Container Sinn ergibt. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
 Das folgende Beispiel wird zur Auswahl von Besuchern verwendet, die zu unserer wichtigsten Alterszielgruppe gehören:
@@ -170,7 +170,7 @@ ODER
 
 Weiblich und zwischen 30 und 59
 
-Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers fügen Sie zwei UND-Container hinzu. In beiden können Sie die Eigenschaften- oder Referenzkomponenten hinzufügen.
+Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers fügen Sie zwei UND-Container hinzu. In beiden können Sie die Eigenschaften- oder Referenzkomponenten hinzufügen.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
 
@@ -178,9 +178,9 @@ Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßige
 
 Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
 
-#### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
+#### Definieren eines Skripts für einen Verweis   {#defining-a-script-to-reference}
 
-1. Add file to `contexthub.segment-engine.scripts` clientlib.
+1. Fügen Sie die Datei zur clientlib `contexthub.segment-engine.scripts` hinzu.
 1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
 
    ```
@@ -212,9 +212,9 @@ Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segm
    })();
    ```
 
-1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
+1. Registrieren Sie das Skript bei `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` () abrufen. For example if the script depends on `profile/age`:
+Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` abrufen. Wenn das Skript beispielsweise von `profile/age` abhängt:
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -226,9 +226,9 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Fügen Sie eine **Skript-Referenz**-Komponente an der gewünschten Stelle des Segments hinzu.
 1. Öffnen Sie das Dialogfeld der **Skript-Referenz**-Komponente. Ist das Skript [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte es im Dropdown-Menü **Skriptname** verfügbar sein.
 
-## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments   {#testing-the-application-of-a-segment}
 
-Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](/help/sites-authoring/ch-previewing.md)getestet werden.**
+Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](/help/sites-authoring/ch-previewing.md) getestet werden.**
 
 1. Vorschau einer Seite
 1. Klicken Sie auf das ContextHub-Symbol, damit die ContextHub-Symbolleiste angezeigt wird.
@@ -263,6 +263,6 @@ Wenn Sie mithilfe des obigen Beispiels zum Segment zur wichtigsten Alterszielgru
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## Verwenden Ihres Segments {#using-your-segment}
+## Verwenden Ihres Segments   {#using-your-segment}
 
-Segmente werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. See [Managing Audiences](/help/sites-authoring/managing-audiences.md) for more information about audiences and segments and [Authoring Targeted Content](/help/sites-authoring/content-targeting-touch.md) about using audiences and segments to target content.
+Segmente werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie weitere Informationen zu Zielgruppen und Segmenten; unter [Bearbeiten gezielter Inhalte](/help/sites-authoring/content-targeting-touch.md) finden Sie weitere Informationen zur Nutzung von Zielgruppen und Segmenten zur gezielten Platzierung von Inhalten.
