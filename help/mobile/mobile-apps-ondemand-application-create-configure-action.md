@@ -18,7 +18,7 @@ ht-degree: 8%
 ---
 
 
-# Erstellen und Konfigurieren von Anwendungen{#application-create-and-configuration-actions}
+# Anwendungserstellungs- und Konfigurationsaktionen{#application-create-and-configuration-actions}
 
 >[!NOTE]
 >
@@ -34,18 +34,18 @@ Die Details zu Ihrer App können im Dashboard oder im AEM Mobile Control Center 
 >
 >Das Dashboard ist eine Reihe nützlicher Kacheln, die einen Überblick über den Inhalt der App, die Metadaten und den AEM Mobile-On-Demand-Verbindungsstatus geben.
 >
->Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
+>Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 **So erstellen Sie eine On-Demand-App:**
 
-1. Wählen Sie in der Seitenleiste &quot; **Mobil** &quot;aus.
+1. Wählen Sie **Mobil** aus der Seitenleiste.
 1. Wählen Sie **Apps** aus der Navigation.
 1. Klicken Sie auf **Erstellen** und wählen Sie **App** aus der Dropdownliste.
 1. Wählen Sie die Vorlage für die mobile App und klicken Sie auf **Weiter**.
-1. Geben Sie App-Eigenschaften wie **Titel**, **Name**, **Beschreibung** ein.
+1. Geben Sie App-Eigenschaften wie **Title**, **Name**, **Beschreibung** ein.
 1. Klicken Sie auf **Weiter**.
-1. Geben Sie, falls bekannt, Cloud-Konfigurationsdetails ein, andernfalls klicken Sie auf **Erstellen**.
-1. Klicken Sie auf **Fertig** , um Ihre neue AEM Mobile-App im Katalog Ansicht.
+1. Falls bekannt, geben Sie Cloud-Konfigurationsdetails ein, klicken Sie andernfalls auf **Erstellen**.
+1. Klicken Sie auf **Fertig**, um die neue AEM Mobile-App im Katalog Ansicht.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -66,13 +66,13 @@ Sie müssen über eine vorhandene mobile App-Vorlage verfügen (oder eine App mi
 
 Nachdem Sie eine On-Demand-App aus dem Application Dashboard erstellt haben, müssen Sie die App mit der Cloud-Konfiguration verknüpfen.
 
-Weitere Informationen finden Sie unter [Verknüpfen der App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
+Weitere Informationen finden Sie unter [Verbinden der App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md).
 
 ### Vorwärts {#getting-ahead}
 
-Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, finden Sie weitere Informationen unter [Content-Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, lesen Sie [Content-Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Content-Management-Aktionen** umfassen die Erstellung und Verwaltung folgender Inhalte:
+**Content-Management** Actionsinvestitionen erfordert die Erstellung und Verwaltung folgender Inhalte:
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
