@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 65%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 
 >[!CAUTION]
 >
->Ab Version 6.4 von AEM wird die [klassische Benutzeroberfläche nicht mehr unterstützt](/help/release-notes/deprecated-removed-features.md).  Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche, und Benutzer sollten die leistungsstarken neuen Funktionen nutzen, die in der touchfähigen Benutzeroberfläche verfügbar sind.
+>Ab Version 6.4 von AEM wird die klassische Benutzeroberfläche [nicht mehr unterstützt. ](/help/release-notes/deprecated-removed-features.md) Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche, und Benutzer sollten die leistungsstarken neuen Funktionen der touchfähigen Benutzeroberfläche nutzen.
 
 Seit Einführung von Version 6.0 verfügt AEM über eine neue, Touch-optimierte Benutzeroberfläche, die auf Adobe Marketing Cloud und die allgemeinen Richtlinien für Adobe-Benutzeroberflächen abgestimmt ist. Da sich die Funktionalitäten der beiden Benutzeroberflächen inzwischen nahezu entsprechen, ist dies nun die Standardbenutzeroberfläche von AEM. Die alte, Desktop-artige Benutzeroberfläche wird hingegen als „klassische Benutzeroberfläche“ bezeichnet.
 
@@ -27,7 +30,7 @@ Die meisten Funktionen sind zwar in der Touch-optimierten Benutzeroberfläche vo
 
 Die folgende Liste zeigt den aktuellen Status der in AEM 6.4 implementierten Funktionen.
 
-For recommendations for customers that upgrade to AEM 6.4, please see [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for details.
+Empfehlungen für Kunden, die auf AEM 6.4 aktualisieren, finden Sie unter [Benutzeroberfläche Recommendations für Kunden](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ For recommendations for customers that upgrade to AEM 6.4, please see [User Inte
 >
 >Diese Liste erhebt keinen Anspruch auf Vollständigkeit.
 
-## Legende {#legend}
+## Legende  {#legend}
 
 * **Umfassend**: Die Funktion ist in vollem Umfang in der Touch-optimierten Benutzeroberfläche verfügbar.
 * **Meistens**: Die Funktion ist hauptsächlich in der touchfähigen Benutzeroberfläche verfügbar.
@@ -49,7 +52,7 @@ For recommendations for customers that upgrade to AEM 6.4, please see [User Inte
 
 ## Funktionsstatus: Sites Admin {#feature-status-sites-admin}
 
-This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and the status in the touch-enabled UI ( `/sites.html`).
+Dies ist eine Liste von Funktionen, die der klassische Site-Admin der Benutzeroberfläche ( `/siteadmin`) hat und den Status in der touchfähigen Benutzeroberfläche ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -61,7 +64,7 @@ This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and
   <tr>
    <td>Site-Hierarchie navigieren</td> 
    <td>Umfassend<br /> </td> 
-   <td>AEM 6.4 hat eine <a href="/help/sites-authoring/basic-handling.md#content-tree">Inhaltsbaumansicht</a>eingeführt.</td> 
+   <td>AEM 6.4 wurde eine <a href="/help/sites-authoring/basic-handling.md#content-tree">Content Tree-Ansicht</a> eingeführt.</td> 
   </tr>
   <tr>
    <td>Workflow starten</td> 
@@ -211,14 +214,14 @@ This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and
   <tr>
    <td>Verweise</td> 
    <td>Nahezu umfassend</td> 
-   <td>Die Anzeige von Links zu eingehenden Seiten wird in der Version 2019 von AEM hinzugefügt.</td> 
+   <td>Die Anzeige von Links zu eingehenden Seiten wird in der Version 2019 der AEM hinzugefügt.</td> 
   </tr>
  </tbody>
 </table>
 
 ## Funktionsstatus: Seiten-Editor {#feature-status-page-editor}
 
-This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the status in the touch-enabled ( `/editor.html`).
+Dies ist eine Liste von Funktionen, die der klassische UI-Seiten-Editor ( `/cf#`) hat und den Status in der touchfähigen ( `/editor.html`).
 
 <table> 
  <tbody>
@@ -273,7 +276,7 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
    <td> </td> 
   </tr>
   <tr>
-   <td>Responsive Preview<br /> </td> 
+   <td>Responsive Vorschau<br /> </td> 
    <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
@@ -315,7 +318,7 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
   <tr>
    <td>Workflow-Paket-Handling</td> 
    <td>Nahezu umfassend</td> 
-   <td>Vollständig verfügbar in der touchfähigen Benutzeroberfläche. Mehrere Workflow-Nutzdaten werden weiterhin in der klassischen Benutzeroberfläche angezeigt.<br /> </td> 
+   <td>Vollständig verfügbar in der touchfähigen Benutzeroberfläche. Die Nutzlast mehrerer Arbeitsabläufe wird weiterhin in der klassischen Benutzeroberfläche angezeigt.<br /> </td> 
   </tr>
   <tr>
    <td>Seite sperren/entsperren</td> 
@@ -432,7 +435,7 @@ This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the 
 
 ## Funktionsstatus: Text-, Tabellen- und Bild-Editoren {#feature-status-text-table-and-image-editors}
 
-Dies ist eine Liste der Funktionen, die die klassische Benutzeroberfläche &quot;Text&quot;, &quot;Tabelle&quot;und &quot;Bild-Editor&quot;haben, sowie der Status in der touchfähigen Benutzeroberfläche.
+Dies ist eine Liste von Funktionen, die die klassischen Benutzeroberflächentext-, Tabellen- und Bild-Editor haben und den Status in der touchfähigen Benutzeroberfläche.
 
 <table> 
  <tbody>
@@ -449,7 +452,7 @@ Dies ist eine Liste der Funktionen, die die klassische Benutzeroberfläche &quot
   <tr>
    <td>RTE-Plug-ins aktivieren/deaktivieren</td> 
    <td>Umfassend<br /> </td> 
-   <td>Kann mit dem <a href="/help/sites-authoring/templates.md">Vorlageneditor</a>ausgeführt werden.</td> 
+   <td>Kann mit dem <a href="/help/sites-authoring/templates.md">Vorlagen-Editor</a> ausgeführt werden.</td> 
   </tr>
   <tr>
    <td>RTE für Text verwenden</td> 
@@ -517,7 +520,7 @@ Dies ist eine Liste der Funktionen, die die klassische Benutzeroberfläche &quot
    <td>Nur im Dialog und Vollbild verfügbar.<br /> </td> 
   </tr>
   <tr>
-   <td>RTE-Plug-in:Rechtschreibprüfung</td> 
+   <td>RTE-Plug-in: Rechtschreibprüfung</td> 
    <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
@@ -539,22 +542,22 @@ Dies ist eine Liste der Funktionen, die die klassische Benutzeroberfläche &quot
   <tr>
    <td>Tabelleneditor</td> 
    <td>Fertig stellen</td> 
-   <td>Einsetzbar, im Dialog und im Vollbildmodus.<br /> </td> 
+   <td>Ersetzbar, im Dialog und im Vollbildmodus.<br /> </td> 
   </tr>
   <tr>
-   <td>Bild in Tabellenzelle ziehen und ablegen<br /> </td> 
+   <td>Ziehen und Ablegen des Bilds in die Tabellenzelle<br /> </td> 
    <td>Fertig stellen</td> 
    <td>In-line-fähig</td> 
   </tr>
   <tr>
-   <td>Bild-Editor<br /> </td> 
+   <td>Bildeditor<br /> </td> 
    <td>Fertig stellen</td> 
-   <td>Einsetzbar, im Dialog und im Vollbildmodus.<br /> </td> 
+   <td>Ersetzbar, im Dialog und im Vollbildmodus.<br /> </td> 
   </tr>
   <tr>
    <td>IPE-Plug-ins aktivieren/deaktivieren</td> 
    <td>Fertig stellen</td> 
-   <td>Es gibt jetzt eine Benutzeroberfläche im <a href="/help/sites-authoring/templates.md">Vorlageneditor</a>.</td> 
+   <td>Es gibt jetzt eine Benutzeroberfläche im <a href="/help/sites-authoring/templates.md">Vorlagen-Editor</a>.</td> 
   </tr>
   <tr>
    <td>IPE-Plug-in: Beschneiden</td> 
@@ -582,7 +585,7 @@ Dies ist eine Liste der Funktionen, die die klassische Benutzeroberfläche &quot
    <td> </td> 
   </tr>
   <tr>
-   <td>IPE-Plug-in:Zoom</td> 
+   <td>IPE-Plug-in: Zoom</td> 
    <td>Umfassend<br /> </td> 
    <td> </td> 
   </tr>
@@ -603,7 +606,7 @@ Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberflä
   <tr>
    <td>Aufgabenverwaltung</td> 
    <td>Ersetzt</td> 
-   <td>6.0 Einführung in <a href="/help/sites-authoring/projects.md">Projekte und Aufgaben</a>.<br /> </td> 
+   <td>6.0 eingeführt <a href="/help/sites-authoring/projects.md">Projekte und Aufgaben</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Workflow-Posteingang<br /> </td> 
@@ -611,12 +614,12 @@ Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberflä
    <td> </td> 
   </tr>
   <tr>
-   <td>Konfiguration von Workflow zu Seitenvorlage (<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>Workflow zur Konfiguration von Seitenvorlagen (<code>/etc/workflow/wcm/templates.html</code>)</td> 
    <td>Fehlt<br /> </td> 
    <td>Verwenden Sie die klassische Benutzeroberfläche.</td> 
   </tr>
   <tr>
-   <td>Tagging-Admin-Benutzeroberfläche<br /> </td> 
+   <td>Tagging der Admin-Benutzeroberfläche<br /> </td> 
    <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
@@ -636,8 +639,8 @@ Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberflä
    <td>Verwenden Sie die klassische Benutzeroberfläche.</td> 
   </tr>
   <tr>
-   <td>Benutzeroberfläche "Benutzer, Gruppen und Berechtigungen"<br /> </td> 
-   <td>Meist abgeschlossen<br /> </td> 
+   <td>Benutzeroberfläche für Benutzer, Gruppen und Berechtigungen<br /> </td> 
+   <td>Meist Complete<br /> </td> 
    <td>Für erweiterte Bearbeitung von Berechtigungen verwenden Sie die klassische Benutzeroberfläche.<br /> </td> 
   </tr>
   <tr>
