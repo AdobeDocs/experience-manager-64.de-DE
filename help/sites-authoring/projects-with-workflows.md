@@ -80,7 +80,7 @@ Die Workflows „Produkt-Fotoshooting“ (mit oder ohne Commerce) werden in [Kre
 
 Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
 
-1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. Wählen Sie im Projekt &quot;Einfach&quot;in der Kachel **Workflows** das Symbol ****+** und wählen Sie **Arbeitsablauf für die Projektgenehmigung**.
 1. Geben Sie einen Titel ein und wählen Sie aus, welchem Mitglied der Teamliste Sie den Workflow zuweisen möchten. Geben Sie bei Bedarf eine Beschreibung, einen Inhaltspfad, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -111,7 +111,7 @@ Mit diesem Workflow können Sie eine Einstiegsseite anfordern.
 
 1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgabe** angezeigt.
 
-## Workflow „E-Mail anfordern“ {#request-email-workflow}
+## Workflow „E-Mail anfordern“  {#request-email-workflow}
 
 Mit diesem Workflow können Sie eine E-Mail anfordern. Es ist der derselbe Workflow, der in der Kachel **E-Mails** angezeigt wird.
 
