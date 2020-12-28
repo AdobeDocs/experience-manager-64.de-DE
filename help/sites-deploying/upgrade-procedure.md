@@ -44,7 +44,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 1. Deaktivieren Sie Replikationsagenten auf der Autoreninstanz.
 1. Führen Sie die [Wartungsaufgaben vor der Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) aus.
 
-### Ausführen der Aktualisierung {#upgrade-execution-1}
+### Ausführen der Aktualisierung  {#upgrade-execution-1}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
@@ -84,7 +84,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 1. Erstellen Sie einen Klon des Datenspeichers als Backup.
 1. Beenden Sie alle AEM-Autoreninstanzen bis auf eine, die als primäre Autoreninstanz fungiert.
 1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus dem Replikationssatz, Ihrer primären Mongo-Instanz
-1. Update the `DocumentNodeStoreService.cfg` file on the primary Author to reflect your single member replica set
+1. Aktualisieren Sie die `DocumentNodeStoreService.cfg`-Datei im primären Autor, um den Replikationssatz Ihres einzelnen Mitglieds wiederzugeben.
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass diese richtig ausgeführt wird.
 1. Deaktivieren Sie die Replikationsagenten auf der primären Autoreninstanz.
 1. Führen Sie die [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) auf der primären Autoreninstanz aus.
@@ -120,7 +120,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 1. Starten Sie die sekundären Autoreninstanzen.
 1. Bereinigen Sie die aktualisierten Autoreninstanzen, den Mongo-Knoten und den Datenspeicher.
 
-## TarMK-Veröffentlichungsfarm {#tarmk-publish-farm}
+## TarMK-Veröffentlichungsfarm  {#tarmk-publish-farm}
 
 ### TarMK-Veröffentlichungsfarm {#publish-farm}
 
