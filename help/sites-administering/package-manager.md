@@ -61,7 +61,7 @@ Sie können die folgenden Aktionen hinsichtlich der Pakete ausführen:
 * Pakete wie Hotfixes aus der Package Share-Bibliothek herunterladen
 * Pakete in den firmeninternen Bereich der Package Share-Bibliothek hochladen
 
-## Paketinformationen {#package-information}
+## Paketinformationen  {#package-information}
 
 Eine Paketdefinition umfasst verschiedene Arten von Informationen:
 
@@ -70,7 +70,7 @@ Eine Paketdefinition umfasst verschiedene Arten von Informationen:
 * [Paket-Screenshots](#package-screenshots)
 * [Paketsymbole](#package-icons)
 
-### Paketeinstellungen {#package-settings}
+### Paketeinstellungen  {#package-settings}
 
 Sie können eine Vielzahl von Paketeinstellungen bearbeiten, um Aspekte wie die Paketbeschreibung, verwandte Fehler, Abhängigkeiten und Anbieterinformationen zu definieren.
 
@@ -84,7 +84,7 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 | Gruppe | Der Name der Gruppe, der das Paket hinzugefügt werden soll, um Pakete zu organisieren. Geben Sie den Namen für eine neue Gruppe ein oder wählen Sie eine vorhandene Gruppe aus. |
 | Version | Für die benutzerdefinierte Version zu verwendender Text. |
 | Beschreibung | Eine kurze Beschreibung des Pakets. HTML-Markup kann zum Formatieren verwendet werden. |
-| Miniaturansicht       | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
+| Miniaturansicht  | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
 
 ![chlimage_1-344](assets/chlimage_1-344.png)
 
@@ -155,7 +155,7 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 Filter identifizieren die Repository-Knoten, die in das Paket eingeschlossen werden sollen. Eine **Filterdefinition** legt die folgenden Informationen fest:
 
 * Den **Stammpfad** der einzufügenden Inhalte
-* **Regeln** , die bestimmte Knoten unterhalb des Stammpfads einschließen oder ausschließen.
+* **Regeln,** die bestimmte Knoten unterhalb des Stammpfads einschließen oder ausschließen.
 
 Filter können keine oder mehrere Regeln enthalten. Wenn keine Regeln definiert sind, enthält das Paket alle Inhalte unter dem Stammpfad.
 
@@ -199,7 +199,7 @@ Paketfilter werden in den meisten Fällen bei der [Erstellung des Pakets](#creat
 
 Sie können Screenshots an das Paket anhängen, um eine visuelle Darstellung vom Erscheinungsbild der Inhalte bereitzustellen. So können Sie beispielsweise Screenshots von neuen Funktionen bereitstellen.
 
-### Paketsymbole {#package-icons}
+### Paketsymbole  {#package-icons}
 
 Sie können auch ein Symbol an das Paket anhängen, um eine schnelle visuelle Darstellung von dem bereitzustellen, was im Paket enthalten ist. Dieses wird dann in der Paketliste angezeigt und ermöglicht Ihnen, das Paket oder die Klasse des Pakets auf einfache Weise zu identifizieren.
 
@@ -219,14 +219,14 @@ Offizielle Funktionspakete:
 
 ![](do-not-localize/chlimage_1-29.png)
 
-## Package Manager {#package-manager}
+## Package Manager  {#package-manager}
 
 Der Package Manager verwaltet die Pakete auf der lokalen AEM-Installation. Nachdem Sie [die erforderlichen Berechtigungen zugewiesen haben,](#permissions-needed-for-using-the-package-manager) können Sie den Package Manager für verschiedene Aktionen, u. a. zum Konfigurieren, Erstellen, Herunterladen und Installieren von Paketen, verwenden. Folgende wichtige Elemente sind zu konfigurieren:
 
 * [Paketeinstellungen](#package-settings)
 * [Paketfilter](#package-filters)
 
-### Für die Verwendung des Package Manager erforderlichen Berechtigungen {#permissions-needed-for-using-the-package-manager}
+### Für die Verwendung des Package Manager erforderlichen Berechtigungen  {#permissions-needed-for-using-the-package-manager}
 
 Wenn Sie Benutzern das Recht zum Erstellen, Ändern, Hochladen und Installieren von Paketen gewähren wollen, müssen Sie ihnen die entsprechenden Berechtigungen für die folgenden Orte zuweisen:
 
@@ -235,11 +235,11 @@ Wenn Sie Benutzern das Recht zum Erstellen, Ändern, Hochladen und Installieren 
 
 Weitere Informationen zum Ändern von Berechtigungen finden Sie in [Festlegen von Berechtigungen](/help/sites-administering/security.md).
 
-### Erstellen eines neuen Pakets {#creating-a-new-package}
+### Erstellen eines neuen Pakets  {#creating-a-new-package}
 
 So erstellen Sie eine neue Paketdefinition:
 
-1. On the AEM Welcome screen, click **Packages** (or from the **Tools** console double-click on **Packages**).
+1. Klicken Sie im AEM Begrüßungsbildschirm auf **Pakete** (oder auf **Tools** Konsolen-Dublette **Pakete**).
 
 1. Wählen Sie dann **Package Manager** aus.
 1. Klicken Sie auf **Paket erstellen**.
@@ -287,11 +287,11 @@ So erstellen Sie eine neue Paketdefinition:
 
    Klicken Sie auf **OK**, wenn Sie mit der Bearbeitung der Einstellungen fertig sind.
 
-1. Fügen Sie dem Paket bei Bedarf **[Screenshots](#package-screenshots)**hinzu. Eine Instanz ist verfügbar, wenn das Paket erstellt wurde. Fügen Sie weitere hinzu, falls dies erforderlich sein sollte, indem Sie die Option **Paket-Screenshot**im Sidekick verwenden.
+1. Fügen Sie dem Paket bei Bedarf **[Screenshots](#package-screenshots)** hinzu. Eine Instanz ist verfügbar, wenn das Paket erstellt wurde. Fügen Sie weitere hinzu, falls dies erforderlich sein sollte, indem Sie die Option **Paket-Screenshot** im Sidekick verwenden.
 
    Fügen Sie das Ist-Bild hinzu, indem Sie auf die Bildkomponente im Bereich **Screenshots** doppelklicken, ein Bild hinzufügen und auf **OK** klicken.
 
-1. Definieren Sie die **[Paketfilter](#package-filters)**, indem Sie die Instanzen der **Filterdefinition**aus dem Sidekick ziehen und dann darauf doppelklicken, um sie zur Bearbeitung zu öffnen:
+1. Definieren Sie die **[Paketfilter](#package-filters)**, indem Sie die Instanzen der **Filterdefinition** aus dem Sidekick ziehen und dann darauf doppelklicken, um sie zur Bearbeitung zu öffnen:
 
    ![packagesfilter](assets/packagesfilter.png)
 
@@ -300,7 +300,7 @@ So erstellen Sie eine neue Paketdefinition:
    * **Stammpfad** Die zu packenden Inhalte. Dabei kann es sich um den Stamm einer Unterstruktur handeln.
    * **Regeln** Regeln sind optional. Bei einfachen Paketdefinitionen ist es nicht notwendig, Regeln zum Ein- oder Ausschließen festzulegen.
 
-      Bei Bedarf können Sie Regeln zum [**Einschließen **oder** Ausschließen **](#package-filters)definieren, um die Paketinhalte genau festzulegen.
+      Bei Bedarf können Sie Regeln zum [**Einschließen** oder **Ausschließen**](#package-filters) definieren, um die Paketinhalte genau festzulegen.
 
       Fügen Sie Regeln mithilfe des **+**-Symbols hinzu und entfernen Sie Regeln mithilfe des **-**-Symbols. Regeln werden entsprechend ihrer Reihenfolge angewendet. Positionieren Sie sie daher mit den Schaltflächen **Nach oben** und **Nach unten** wie gewünscht.
    Klicken Sie dann auf **OK**, um den Filter zu speichern.
@@ -344,7 +344,7 @@ Hauptsächlich wird die Neueingliederungsfunktion bei der Vorbereitung eines Pak
 
 1. Öffnen Sie die Paketdefinition im **Package Manager** (klicken Sie auf das Paketsymbol oder den Paketnamen).
 
-1. Klicken Sie auf **Bearbeiten** und aktualisieren Sie die **[Paketeinstellungen](#package-settings)**nach Bedarf. Klicken Sie zum Speichern auf **OK**.
+1. Klicken Sie auf **Bearbeiten** und aktualisieren Sie die **[Paketeinstellungen](#package-settings)** nach Bedarf. Klicken Sie zum Speichern auf **OK**.
 
 1. Klicken Sie auf **Erneut verpacken**. Daraufhin wird ein Bestätigungsdialogfeld angezeigt.
 
@@ -400,7 +400,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit dem **Package Manager** ein Pa
 
 
 
-1. On the AEM Welcome screen, click **Packages**, then select **Package Manager**.
+1. Klicken Sie im AEM Begrüßungsbildschirm auf **Pakete** und wählen Sie **Package Manager**.
 1. Navigieren Sie zum Paket, das Sie herunterladen möchten.
 
    ![packagesdownload](assets/packagesdownload.png)
@@ -415,7 +415,7 @@ Beim Hochladen eines Pakets können Sie ein Paket aus Ihrem Dateisystem in den A
 
 >[!NOTE]
 >
->See [Uploading packages to the company-internal Package Share](#uploading-a-package) to upload a package to your company&#39;s private area of Package Share.
+>Siehe [Hochladen von Paketen in die Firma-interne Paketfreigabe](#uploading-a-package), um ein Paket in den privaten Bereich Ihrer Firma Package Share hochzuladen.
 
 So laden Sie ein Paket hoch:
 
@@ -429,7 +429,7 @@ So laden Sie ein Paket hoch:
 
    * **File**
 
-      You can either type the file name directly, or use the **Browse...** dialog to select the required package from your local file system (after selection click **OK**).
+      Sie können entweder den Dateinamen direkt eingeben oder **Durchsuchen...**, um das gewünschte Paket aus Ihrem lokalen Dateisystem auszuwählen (nach Auswahl klicken Sie auf **OK**).
 
    * **Hochladen erzwingen**
 
@@ -440,9 +440,9 @@ So laden Sie ein Paket hoch:
    >
    >Denken Sie daran, [das Paket zu installieren](#installing-packages), damit die Inhalte in AEM verfügbar sind.
 
-### Validieren von Paketen {#validating-packages}
+### Validieren von Paketen  {#validating-packages}
 
-Vor der Installation eines Pakets sollten Sie seinen Inhalt überprüfen. Because packages can modify overlaid files under `/apps` and/or add, modify, and remove ACLs, it is often useful to validate these changes before installing.
+Vor der Installation eines Pakets sollten Sie seinen Inhalt überprüfen. Da Pakete überlagerte Dateien unter `/apps` ändern und/oder ACLs hinzufügen, ändern und entfernen können, ist es oft sinnvoll, diese Änderungen vor der Installation zu validieren.
 
 #### Validierungsoptionen {#validation-options}
 
@@ -462,7 +462,7 @@ Diese Optionen werden nachfolgend beschrieben.
 
    **Berichterstellung**
 
-   Any versioned dependencies that cannot be satisfied by the AEM instance are listed in the **Activity Log** of the Package Manager.
+   Abhängigkeiten von Versionen, die von der AEM nicht erfüllt werden können, werden im Paket-Manager im **Aktivität-Protokoll** aufgelistet.
 
    **Fehlerstatus**
 
@@ -478,7 +478,7 @@ Diese Optionen werden nachfolgend beschrieben.
 
    Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der AEM-Zielinstanz überlagert ist.
 
-   For example, given an existing overlay at `/apps/sling/servlet/errorhandler/404.jsp`, a package that contains `/libs/sling/servlet/errorhandler/404.jsp`, such that it will change the existing file at `/libs/sling/servlet/errorhandler/404.jsp`.
+   Beispiel: Bei einer vorhandenen Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, wird die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp` geändert.
 
    **Berichterstellung**
 
@@ -490,7 +490,7 @@ Diese Optionen werden nachfolgend beschrieben.
 
    **Fehlerbehebung**
 
-   To resolve this issue, the maintainer of the of the overlay file in `/apps` must review the changes to the overlaid file in `/libs` and incorporate the changes as needed into the overlay ( `/apps`), and redeploy the overlaid file.
+   Um dieses Problem zu beheben, muss der Betreuer der Überlagerungsdatei in `/apps` die Änderungen an der überlagerten Datei in `/libs` überprüfen und die erforderlichen Änderungen in die Überlagerung ( `/apps`) übernehmen und die überlagerte Datei erneut bereitstellen.
 
    >[!NOTE]
    >
@@ -518,7 +518,7 @@ Diese Optionen werden nachfolgend beschrieben.
    >
    >Als Best Practice wird empfohlen, dass Pakete keine Auswirkungen auf von AEM bereitgestellte ACLs haben sollten, da dies möglicherweise zu unerwartetem Produktverhalten führen kann.
 
-#### Durchführen der Validierung {#performing-validation}
+#### Durchführen der Validierung  {#performing-validation}
 
 Die Validierung von Paketen kann auf zweierlei Weise erfolgen:
 
@@ -531,8 +531,8 @@ Die Validierung von Paketen kann auf zweierlei Weise erfolgen:
 
 **Paketvalidierung über Package Manager**
 
-1. Open the Package Manager at `https://<server>:<port>/crx/packmgr`
-1. Select the package in the list and then select **More** dropdown from the heading and then **Validate** from the drop-down menu.
+1. Öffnen Sie Package Manager unter `https://<server>:<port>/crx/packmgr`
+1. Wählen Sie das Paket in der Liste aus und wählen Sie dann **Mehr** aus der Überschrift und dann **Validate** aus dem Dropdownmenü.
 
    >[!NOTE]
    >
@@ -560,7 +560,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >
 >
-The value of `type` defaults to `osgiPackageImports` if not passed.
+Der Wert von `type` ist standardmäßig `osgiPackageImports`, wenn er nicht weitergegeben wird.
 
 Im Folgenden finden Sie ein Beispiel für die Verwendung von cURL zur Ausführung einer Paketvalidierung.
 
@@ -580,7 +580,7 @@ Im Folgenden finden Sie ein Beispiel für die Verwendung von cURL zur Ausführun
 
 Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren. Damit die Paketinhalte installiert und verwendet werden können, müssen sie:
 
-* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or [downloaded from package share](#downloading-and-installing-packages-from-package-share))
+* in AEM geladen (entweder [aus Ihrem Dateisystem hochgeladen](#uploading-packages-from-your-file-system) oder [heruntergeladen von Package Share](#downloading-and-installing-packages-from-package-share))
 
 * installiert werden.
 
@@ -591,7 +591,7 @@ Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren
 >Um die Inhalte oder Auswirkungen eines Pakets anzuzeigen, können Sie:
 >
 >* Führen Sie eine Testinstallation des Pakets durch, ohne den Inhalt zu ändern:\
-   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Installation** testen.
+   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Installation testen**.
    >
    >
 * Siehe Liste der Paketinhalte:\
@@ -632,9 +632,9 @@ Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der 
 
    Das Wort **Installiert** wird neben dem Paket angezeigt, nachdem es installiert wurde.
 
-### Dateisystem-basierte(r) Upload und Installation {#file-system-based-upload-and-installation}
+### Dateisystem-basierte(r) Upload und Installation  {#file-system-based-upload-and-installation}
 
-Es gibt eine alternative Methode, um Pakete auf Ihre Instanz hochzuladen und dort zu installieren. In your file system, you have a `crx-quicksart` folder alongside with your jar and `license.properties` file. You need to create a folder named `install` under `crx-quickstart`. Dann haben Sie so etwas: `<aem_home>/crx-quickstart/install`
+Es gibt eine alternative Methode, um Pakete auf Ihre Instanz hochzuladen und dort zu installieren. In Ihrem Dateisystem befindet sich neben der Datei &quot;jar&quot;und &quot;`license.properties`&quot;ein Ordner. `crx-quicksart` Sie müssen einen Ordner mit dem Namen `install` unter `crx-quickstart` erstellen. Dann haben Sie so etwas: `<aem_home>/crx-quickstart/install`
 
 In diesem „install“-Ordner können Sie die Pakete direkt hinzufügen. Sie werden automatisch auf Ihre Instanz hochgeladen und dort installiert. Anschließend können Sie die Pakete im Package Manager sehen.
 
@@ -644,7 +644,7 @@ Wird Ihre Instanz ausgeführt und Sie fügen dem `install`-Ordner ein Paket hinz
 >
 >Sie können dies auch tun, bevor Sie die Instanz das erste Mal starten. Dazu müssen Sie zunächst den Ordner `crx-quickstart` manuell erstellen, dann unter diesem Ordner den Ordner `install` erstellen und die Pakete dort speichern. Wenn Sie dann Ihre Instanz das erste Mal starten, werden die Pakete in alphabetischer Reihenfolge installiert.
 
-### Deinstallieren von Paketen {#uninstalling-packages}
+### Deinstallieren von Paketen  {#uninstalling-packages}
 
 AEM ermöglicht die Deinstallation von Paketen. Durch diese Aktion werden die Inhalte des Repositorys zurückgesetzt, die im Snapshot enthalten sind, der unmittelbar vor der Paketinstallation erstellt wurde.
 
@@ -666,11 +666,11 @@ So löschen Sie ein Paket aus der/den Package Manager-Liste(n):
 >
 >Die installierten Dateien/Knoten aus dem Paket werden **nicht** gelöscht.
 
-1. In the **Tools** console, expand the **Packages** folder to show your package in the right-hand pane.
+1. Erweitern Sie in der Konsole **Tools** den Ordner **Pakete**, um Ihr Paket im rechten Bereich anzuzeigen.
 
 1. Klicken Sie auf das zu löschende Paket, um es zu markieren, und:
 
-   * Click **Delete** in the toolbar menu.
+   * Klicken Sie im Symbolleistenmenü auf **Löschen**.
    * Klicken Sie mit der rechten Maustaste und wählen Sie **Löschen** aus.
 
    ![packagesdelete](assets/packagesdelete.png)
@@ -698,7 +698,7 @@ Mithilfe von Package Share können Sie diese Pakete herunterladen, die offiziell
 
 Sie können auch Pakete hochladen und innerhalb Ihres Unternehmens austauschen.
 
-### Zugreifen auf Package Share {#access-to-package-share}
+### Zugreifen auf Package Share  {#access-to-package-share}
 
 Ein anonymer Zugriff auf Package Share ist nicht möglich, d. h. nur registrierte Benutzer können Pakete anzeigen, herunterladen und hochladen.
 
@@ -718,7 +718,7 @@ So erhalten Sie Zugriff auf Package Share:
 
 #### Anmelden bei Package Share {#signing-in-to-package-share}
 
-1. On the AEM Welcome screen, click **Tools** -> **Deployment**
+1. Klicken Sie im AEM Begrüßungsbildschirm auf **Tools** -> **Bereitstellung**
 1. Wählen Sie dann **Package Share** aus. Sie werden aufgefordert, entweder:
 
    * sich mit Ihrer Adobe ID anzumelden oder
@@ -730,7 +730,7 @@ So erhalten Sie Zugriff auf Package Share:
 
    >[!NOTE]
    >
-   >Wenn Sie Ihr Passwort vergessen haben, verwenden Sie bitte das **Problem bei der Anmeldung?** im Anmeldedialogfeld.
+   >Wenn Sie Ihr Passwort vergessen haben, verwenden Sie bitte **Probleme bei der Anmeldung?** im Anmeldedialogfeld.
 
 #### Validieren der Adobe ID {#validating-your-adobe-id}
 
@@ -749,7 +749,7 @@ Bei der ersten Anmeldung bei Package Share mit Ihrer Adobe ID wird Ihre E-Mail-A
 1. Daraufhin wird eine Webseite geöffnet. Durch das Öffnen der Webseite haben Sie die E-Mail validiert.
 1. Der Anmeldevorgang wird fortgesetzt.
 
-#### Registrieren für Package Share {#registering-for-package-share}
+#### Registrieren für Package Share  {#registering-for-package-share}
 
 Wenn Sie auf Package Share zugreifen wollen, müssen Sie sich für eine Adobe ID registrieren:
 
@@ -774,7 +774,7 @@ Die Gültigkeit Ihrer Anwendung wird überprüft, bevor:
 >
 >Ein Benutzer von einem unserer Partnerunternehmen kann auch ein Mitglied seiner Kundengruppen sein.
 
-#### Netzwerkhinweise {#network-considerations}
+#### Netzwerkhinweise  {#network-considerations}
 
 **IPv6**
 
@@ -840,7 +840,7 @@ Zum Herunterladen von Paketen von Package Share und Installieren dieser Pakete a
    >[!CAUTION]
    Durch die Installation eines Pakets können vorhandene Inhalte im Repository überschrieben werden. Daher empfehlen wir, zunächst die Option **Installation testen** auszuführen. So können Sie überprüfen, ob die Inhalte im Paket mit den vorhandenen Inhalten in Konflikt stehen.
 
-### Herunterladen von Paketen in Ihr Dateisystem von Package Share {#downloading-packages-to-your-file-system-from-package-share}
+### Herunterladen von Paketen in Ihr Dateisystem von Package Share  {#downloading-packages-to-your-file-system-from-package-share}
 
 [Herunterladen und Installieren](#downloading-and-installing-packages-from-package-share) ist sehr bequem, aber Sie können das Paket bei Bedarf auch herunterladen und in Ihrem lokalen Dateisystem speichern:
 
@@ -848,7 +848,7 @@ Zum Herunterladen von Paketen von Package Share und Installieren dieser Pakete a
 1. Klicken Sie auf die Registerkarte **Assets**.
 1. Klicken Sie auf **Auf Festplatte herunterladen**.
 
-### Hochladen von Paketen {#uploading-a-package}
+### Hochladen von Paketen  {#uploading-a-package}
 
 Mithilfe von Package Share können Sie Pakete in den unternehmensinternen Bereich von Package Share hochladen. Dadurch können sie innerhalb des Unternehmens geteilt werden.
 
@@ -879,7 +879,7 @@ Pakete in der Package Manager-Startseitenliste oder in anderen Ordnern können n
 >[!NOTE]
 Zum Ändern eines in Package Share verfügbaren Pakets müssen Sie es herunterladen, neu erstellen und dann erneut in Package Share hochladen.
 
-### Löschen eines Pakets {#deleting-a-package}
+### Löschen eines Pakets  {#deleting-a-package}
 
 Sie können Pakete, die Sie hochgeladen haben, nur wie folgt löschen:
 
@@ -889,7 +889,7 @@ Sie können Pakete, die Sie hochgeladen haben, nur wie folgt löschen:
 
    ![](do-not-localize/chlimage_1-30.png)
 
-1. Click **Delete** to confirm you want to delete the package.
+1. Klicken Sie auf **Löschen**, um zu bestätigen, dass Sie das Paket löschen möchten.
 
 ### Erstellen von halbprivaten Paketen {#making-packages-semi-private}
 
