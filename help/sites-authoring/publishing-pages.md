@@ -60,7 +60,7 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 
 Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
 
-* [Im Seiten-Editor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
+* [Im Seiteneditor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [In der Sites-Konsole](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
 ### Veröffentlichungen im Editor {#publishing-from-the-editor}
@@ -81,7 +81,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiten-Editor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
+1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -100,17 +100,17 @@ In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 * [Quick Publish](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Quick Publish     {#quick-publish}
+#### Quick Publish  {#quick-publish}
 
 **Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
-So veröffentlichen Sie eine Seite mit der Funktion „Schnell veröffentlichen“:
+So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 1. Wählen Sie die gewünschten Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Quick Publish**.
 
    ![screen_shot_2018-03-21at153115](assets/screen_shot_2018-03-21at153115.png)
 
-1. In the Quick Publish dialogue, confirm the publication by clicking on **Publish** or cancel by clicking on **Cancel**. Beachten Sie, dass auch alle unveröffentlichten Verweise ebenfalls automatisch veröffentlicht werden.
+1. Bestätigen Sie die Veröffentlichung im Dialogfeld &quot;Schnellveröffentlichung&quot;, indem Sie auf **Veröffentlichen** klicken oder indem Sie auf **Abbrechen** klicken. Beachten Sie, dass auch alle unveröffentlichten Verweise ebenfalls automatisch veröffentlicht werden.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -118,9 +118,9 @@ So veröffentlichen Sie eine Seite mit der Funktion „Schnell veröffentlichen�
 
 >[!NOTE]
 >
->Die Option „Schnell veröffentlichen“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+>Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
-#### Veröffentlichung verwalten     {#manage-publication}
+#### Veröffentlichung verwalten   {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
@@ -143,7 +143,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    Klicken Sie auf **Weiter**, um fortzufahren.
 
-1. In the next step of the Manage Publication wizard, **Scope**, you can define the scope of the publication/unpublication such as including to include child pages and/or including references.
+1. Im nächsten Schritt des Assistenten zum Verwalten von Veröffentlichungen können Sie den Umfang der Veröffentlichung bzw. der Aufhebung der Veröffentlichung festlegen, z. B. einschließlich untergeordneter Seiten und/oder einschließlich Verweise.****
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -177,9 +177,9 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    ![screen_shot_2018-03-21at153801](assets/screen_shot_2018-03-21at153801.png)
 
-   The **Published References** dialogue displayes the references for the selected content. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. die Veröffentlichung wird rückgängig gemacht. Sie können sie aber auch deaktivieren, um die Auswahl aufzuheben, sodass sie nicht in die Aktion einbezogen werden.
+   Im Dialogfeld **Veröffentlichte Referenzen** werden die Referenzen für den ausgewählten Inhalt angezeigt. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. die Veröffentlichung wird rückgängig gemacht. Sie können sie aber auch deaktivieren, um die Auswahl aufzuheben, sodass sie nicht in die Aktion einbezogen werden.
 
-   Click **Done** to save your changes or **Cancel** to cancel the selction and return to the wizard.
+   Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern, oder auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
    ![screen_shot_2018-03-21at153824](assets/screen_shot_2018-03-21at153824.png)
 
@@ -197,7 +197,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    >[!NOTE]
    >
-   >Der gezeigte **Workflow**-Schritt hängt von den Rechten des jeweiligen Benutzers ab. See the [previous note on this page](/help/sites-authoring/publishing-pages.md) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md) for details.
+   >Der gezeigte **Workflow**-Schritt hängt von den Rechten des jeweiligen Benutzers ab. Weitere Informationen finden Sie unter [vorheriger Hinweis auf dieser Seite](/help/sites-authoring/publishing-pages.md) zu Veröffentlichungsberechtigungen sowie [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md).
 
    Die Ressourcen werden gemäß den ausgelösten Workflows gruppiert, wobei Sie für jede Ressource folgende Möglichkeiten haben:
 
@@ -205,7 +205,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
    * Beibehalten des Workflow-Pakets, vorausgesetzt der Workflow [unterstützt mehrere Ressourcen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
    * Definieren des Titels des Workflow-Pakets, sofern die Option zum Beibehalten des Workflow-Pakets ausgewählt wurde
 
-   Click **Publish** or **Publish Later **to complete the publication.
+   Klicken Sie auf **Veröffentlichen** oder **Später veröffentlichen **um die Veröffentlichung abzuschließen.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -215,14 +215,14 @@ Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der
 
 [Ähnlich wie beim Veröffentlichen](/help/sites-authoring/publishing-pages.md#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten rückgängig machen:
 
-* [Im Seiten-Editor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
+* [Im Seiteneditor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [In der Sites-Konsole](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Rückgängigmachen der Veröffentlichung im Editor     {#unpublishing-from-the-editor}
+### Rückgängigmachen der Veröffentlichung im Editor   {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
-### Rückgängigmachen der Veröffentlichung in der Konsole     {#unpublishing-from-the-console}
+### Rückgängigmachen der Veröffentlichung in der Konsole   {#unpublishing-from-the-console}
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](/help/sites-authoring/publishing-pages.md#manage-publication), können Sie damit auch eine Veröffentlichung rückgängig machen.
 
@@ -264,7 +264,7 @@ Dazu können Sie in der Sites-Konsole die Option [Veröffentlichung verwalten](/
 
    Sie können die zu veröffentlichenden Verweise auch in der Option **Veröffentlichte Verweise** überprüfen.
 
-1. [Fahren Sie mit dem Assistenten zum Verwalten von Veröffentlichungen normal](#manage-publication) fort, um die Veröffentlichung der Struktur abzuschließen oder die Veröffentlichung rückgängig zu machen.
+1. [Fahren Sie mit dem Assistenten zum Verwalten von Veröffentlichungen ](#manage-publication) normal fort, um die Veröffentlichung der Struktur abzuschließen oder die Veröffentlichung rückgängig zu machen.
 
 ## Bestimmen des Veröffentlichungsstatus {#determining-publication-status}
 
@@ -276,7 +276,7 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
    Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-authoring/basic-handling.md#card-view), [Spalte](/help/sites-authoring/basic-handling.md#column-view) und [Liste](/help/sites-authoring/basic-handling.md#list-view) angezeigt.
 
-* in der [Timeline](/help/sites-authoring/basic-handling.md#timeline)
+* in der [Zeitleistensegment](/help/sites-authoring/basic-handling.md#timeline)
 
    ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
