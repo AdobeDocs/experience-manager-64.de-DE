@@ -34,7 +34,7 @@ Führen Sie beim Bearbeiten der weiterzuleitenden Launch-Seite die folgenden Sch
 1. Klicken Sie im Sidekick auf der Registerkarte **Seite** auf **Launch bewerben**.
 1. Geben Sie die Seiten an, die weitergeleitet werden sollen:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
+   * (Standard) Um nur die aktuelle Seite zu bewerben, wählen Sie **Seitenänderungen an Produktionsversion fördern**.
    * Um auch die untergeordneten Seiten der aktuellen Seite weiterzuleiten, wählen Sie **Unterseiten einschließen**.
    * Um alle Seiten im Launch weiterzuleiten, wählen Sie **Vollständigen Launch in Produktionsversion weiterleiten**.
 
