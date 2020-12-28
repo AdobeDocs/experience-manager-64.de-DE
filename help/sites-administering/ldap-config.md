@@ -240,13 +240,13 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Testen Sie die Verbindung zum LDAP-Server.
 
-### Erstellen von SSL-Zertifikaten {#creating-ssl-certificates}
+### Erstellen von SSL-Zertifikaten  {#creating-ssl-certificates}
 
 Über selbstsignierte Zertifikate kann AEM so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL erfolgt. Im Folgenden finden Sie ein Beispielverfahren zum Generieren von Zertifikaten für AEM.
 
 1. Vergewissern Sie sich, dass eine funktionstüchtige SSL-Bibliothek installiert ist. Bei dieser Vorgehensweise wird beispielhaft OpenSSL verwendet.
 
-1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Dies kann durch Kopieren der standardmäßigen **openssl.cnf **Konfigurationsdatei und Anpassen geschehen. On UNIX systems, it is usually located at `/usr/lib/ssl/openssl.cnf`
+1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Dies kann durch Kopieren der standardmäßigen **openssl.cnf **Konfigurationsdatei und Anpassen geschehen. Auf UNIX-Systemen befindet es sich normalerweise unter `/usr/lib/ssl/openssl.cnf`
 
 1. Erstellen Sie dann den Zertifizierungsstellen-Stammschlüssel, indem Sie den nachfolgenden Befehl an einem Terminal ausführen:
 
@@ -271,7 +271,7 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Fügen Sie schließlich dem Java-Keystore das Zertifikat hinzu.
 
-## Aktivieren der Debug-Protokollierung {#enabling-debug-logging}
+## Aktivieren der Debug-Protokollierung  {#enabling-debug-logging}
 
 Die Debug-Protokollierung kann sowohl für den LDAP-Identitäts-Provider als auch das externe Anmeldemodul aktiviert werden, um Verbindungsprobleme zu beheben.
 
