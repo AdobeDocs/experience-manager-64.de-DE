@@ -39,7 +39,7 @@ Strukturvorlagen sind über die **Tools-Konsole** des SiteAdmin-Bereichs verfüg
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
+Die Grundlage besteht aus einem Formular mit einem Feld für jedes Inhaltselement, aus dem die zu erstellende Seite besteht, und vier wichtigen Parametern, die über die **Seiteneigenschaften** der Gerüst-Seite aufgerufen werden.
 
 ![pageprops](assets/pageprops.png)
 
@@ -49,7 +49,7 @@ Es handelt sich dabei um die folgenden Eigenschaften:
 * **Beschreibung**: Dieser Text wird unterhalb des Titels der Stukturvorlagen-Seite angezeigt.
 * **Target-Vorlage**: Diese Vorlage wird von der Grundlage für die Erstellung einer neuen Seite verwendet. In diesem Beispiel ist das die Vorlage *Geometrixx-Inhaltsseite*.
 
-* **Zielpfad**: Dies ist der Pfad der übergeordneten Seite, unterhalb derer die Grundlage neue Seiten anlegt. In this example the path is */content/geometrixx/en/news*.
+* **Zielpfad**: Dies ist der Pfad der übergeordneten Seite, unterhalb derer die Grundlage neue Seiten anlegt. In diesem Beispiel lautet der Pfad */content/geometrixx/en/news*.
 
 Der Textkörper der Grundlage ist das Formular. Wenn ein Benutzer eine Seite mithilfe der Grundlage erstellen möchte, füllt er das Formular aus und klickt unten auf *Erstellen.* In der Beispielgrundlage **Nachrichten** weist das Formular die folgenden Felder auf:
 
@@ -60,7 +60,7 @@ Der Textkörper der Grundlage ist das Formular. Wenn ein Benutzer eine Seite mit
 
 * **Bild/erweitert**: **ALT-Text**: Der Alt-Text des Bildes.
 
-* **Bild/Erweitert**: **Beschreibung**: Die Beschreibung des Bildes.
+* **Bild/Erweitert**:  **Beschreibung**: Die Beschreibung des Bildes.
 
 * **Bild/erweitert**: **Größe**: Die Größe des Bildes.
 
@@ -68,9 +68,9 @@ Der Textkörper der Grundlage ist das Formular. Wenn ein Benutzer eine Seite mit
 
 ## Erstellen von Grundlagen {#creating-a-scaffold}
 
-To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
+Um eine neue Grundlage zu erstellen, gehen Sie zur Konsole **Tools**, dann **Standardmäßige Seitensatzung** und erstellen Sie eine neue Seite. Es ist ein einseitiger Vorlagentyp verfügbar, die *Gerüst-Vorlage.*
 
-*Gehen Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielgruppe-Vorlage *und den* Zielgruppen-Pfad *wie oben beschrieben fest.*
+*Gehen Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielgruppe-*Vorlage und den* Zielgruppen-Pfad *wie oben beschrieben fest.*
 
 *Als Nächstes müssen Sie die Struktur der Seite definieren, die dieses Gerüst erstellen wird. Gehen Sie dazu in den Designmodus auf der Gerüst-Seite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Grundlage im **Dialog-Editor** bearbeiten können.
 
@@ -86,13 +86,13 @@ Die Dialogdefinition einer Strukturvorlage wird ähnlich wie bei einer Komponent
 
 Ein Blick auf das für **Nachrichten** im Dialog-Editor hilft bei der Erläuterung dieser Vorgehensweise. Wechseln Sie auf der Grundlagenseite in den Designmodus und klicken Sie auf den Link für den Dialog-Editor.
 
-Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
+Klicken Sie nun auf das Dialogfeld **Dialog > Registerkartenbedienfeld > Text > Text**, wie folgt:
 
 ![textedit](assets/textedit.png)
 
 Daraufhin wird die Eigenschaftenliste für dieses Feld auf der rechten Seite des Dialog-Editors wie folgt angezeigt:
 
-![Liste_der_Eigenschaften](assets/list_of_properties.png)
+![liste_der_Eigenschaften](assets/list_of_properties.png)
 
 Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie weist folgenden Wert auf:
 
@@ -107,7 +107,7 @@ Dadurch wird der Speicherort für den Inhalt festgelegt, der in dieses Feld eing
 
 Beachten Sie, dass Sie diese Informationen in einem normalen Komponentendialogfeld nicht angeben müssen, weil sie durch die Tatsache, dass das Dialogfeld an eine bestimmte Komponente gebunden ist, bereits vorgegeben sind.
 
-Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Click on the first hidden field **Dialog > Tab Panel > Text > Hidden**, like this:
+Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialog > Registerkartenbedienfeld > Text > Ausgeblendet**, wie folgt:
 
 ![hidden](assets/hidden.png)
 
@@ -119,13 +119,13 @@ Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
 `./jcr:content/par/text/textIsRich`
 
-This is a boolean property used to interpret the text string stored at `./jcr:content/par/text/text.`
+Dies ist eine boolesche Eigenschaft, mit der die unter `./jcr:content/par/text/text.` gespeicherte Textzeichenfolge interpretiert wird.
 
 Da wir wissen, dass der Text als Rich-Text ausgewertet werden soll, setzen wir die Eigenschaft `value` dieses Felds auf `true`.
 
 >[!CAUTION]
 >
->The dialog editor allows the user to change the values of *existing* properties in the dialog definition. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
+>Der Dialog-Editor ermöglicht es dem Benutzer, die Werte der *vorhandenen*-Eigenschaften in der Dialogfelddefinition zu ändern. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
 
 Das zweite ausgeblendete Feld kann angezeigt werden, indem Sie wie folgt darauf klicken:
 
@@ -143,7 +143,7 @@ Der feste Wert für diese Eigenschaft lautet:
 
 `foundation/components/textimage`
 
-``This specifies that component to be used to render the text content of this paragraph is the *Text Image* component. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
+&quot;Hiermit wird festgelegt, dass die Komponente, die zum Rendern des Textinhalts dieses Absatzes verwendet wird, die Komponente *Textsbild* ist. Mit dem im anderen ausgeblendeten Feld angegebenen booleschen `isRichText` kann die Komponente die unter `./jcr:content/par/text/text` gespeicherte eigentliche Textzeichenfolge auf die gewünschte Weise wiedergeben.
 
 ## Scaffolding with MSM Inheritance {#scaffolding-with-msm-inheritance}
 
@@ -173,5 +173,5 @@ Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf da
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>Wenn die Vererbung auf Seitenebene (von der Registerkarte &quot;Livecopy&quot;der Seiteneigenschaften) abgebrochen wird, sind alle Komponenten im Modus **Gerüst** bearbeitbar (sie werden im nicht gesperrten Zustand angezeigt).
 
