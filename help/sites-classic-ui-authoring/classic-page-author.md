@@ -41,9 +41,11 @@ Nach der Positionierung auf der Seite können Sie ein komponentenspezifisches Di
 * **Bearbeitung im Kontext**
 Text- und Bildkomponenten können direkt auf der Webseite bearbeitet werden, ohne dass dafür ein Dialogfeld geöffnet oder ein expliziter Speichervorgang durchgeführt werden muss.
 
-* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**Ein unverankertes „Inspektor“-Fenster, das auf der bearbeitbaren Seite angezeigt wird. Von hier können Sie neue Komponenten auf die Seite ziehen und seitenspezifische Aktionen ausführen.
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+Ein unverankertes „Inspektor“-Fenster, das auf der bearbeitbaren Seite angezeigt wird. Von hier können Sie neue Komponenten auf die Seite ziehen und seitenspezifische Aktionen ausführen.
 
-* **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**Der Content Finder, der sich links auf jeder bearbeitbaren Seite befindet, bietet schnellen Zugriff auf eine Reihe von Assets, einschließlich digitaler Assets (z. B. Bilder, Flash-Elemente und Dokumente), anderer Seiten und Absätze. Diese Elemente können auf die Seite gezogen werden, z. B. um Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
+* **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** 
+Der Content Finder, der sich links auf jeder bearbeitbaren Seite befindet, bietet schnellen Zugriff auf eine Reihe von Assets, einschließlich digitaler Assets (z. B. Bilder, Flash-Elemente und Dokumente), anderer Seiten und Absätze. Diese Elemente können auf die Seite gezogen werden, z. B. um Assets zu positionieren oder Links zu anderen Seiten zu erstellen.
 
 * **Kontextmenü**
 Mit einem Rechtsklick auf die meisten Bildschirmelemente (z. B. Absätze auf der Seite) wird ein Kontextmenü mit entsprechenden Optionen angezeigt.
