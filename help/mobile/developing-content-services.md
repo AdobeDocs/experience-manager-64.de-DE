@@ -43,9 +43,9 @@ Content Services kann die Inhalte als Assets, verpacktes HTML (HTML/CSS/JS) oder
 >
 >Bevor Sie mit Content Services beginnen, müssen Sie das Flag &quot;Content Services&quot;aktivieren. Um die Erstellung und Verwaltung von Modellen in Ihrer App zu aktivieren, müssen Sie Datenmodelle im Konfigurationsbrowser aktivieren.
 >
->Weitere Informationen finden Sie unter **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** .
+>Weitere Informationen finden Sie unter **[Verwaltung von Content Services](/help/mobile/developing-content-services.md)**.
 >
->See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+>Weitere Informationen finden Sie in der Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md).[
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
