@@ -30,7 +30,7 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
 
    `/apps/<your-project>/`
 
-1. Under `/apps/<your-project>/` create a new node:
+1. Erstellen Sie unter `/apps/<your-project>/` einen neuen Knoten:
 
    * **Name**: `fonts`
    * **Typ**: `sling:Folder`
@@ -41,11 +41,11 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
 
    >[!NOTE]
    >
-   >Font files in the repository must have the suffix `*.ttf` or `*.TTF`.
+   >Schriftartdateien im Repository müssen das Suffix `*.ttf` oder `*.TTF` haben.
 
-1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Add the path to your fonts folder; i.e. `/apps/<your-project>/fonts`.
+1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). hinzufügen Sie den Pfad zum Schriftartenordner an. d.h. `/apps/<your-project>/fonts`.
 
-1. Kehren Sie zu CRXDE Lite zurück. You should now see a `.fontlist` node in your folder containing the name of the imported fonts.
+1. Kehren Sie zu CRXDE Lite zurück. Es sollte nun ein `.fontlist`-Knoten in Ihrem Ordner angezeigt werden, der den Namen der importierten Schriftarten enthält.
 
    Diese Schriftarten stehen jetzt für die Verwendung in der Java-API zur Verfügung.
 
