@@ -22,13 +22,13 @@ ht-degree: 95%
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+Mithilfe der Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) im Dialogfeld [header](/help/sites-authoring/basic-handling.md#the-header) und der zugehörigen [Meine Voreinstellungen](#my-preferences) können Sie Ihre Benutzeroptionen ändern.
 
 ## Benutzereinstellungen {#user-settings}
 
 Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
-* Stellvertretend agieren
+* Identität annehmen als
 
    * Mit der Funktion [Stellvertretend agieren](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
@@ -36,15 +36,15 @@ Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
    * Über das Profil kann bequem über einen Link auf [Benutzereinstellungen](/help/sites-administering/security.md) zugegriffen werden.
 
-* [Eigene Voreinstellungen](/help/sites-authoring/user-properties.md#my-preferences)
+* [Benutzereinstellungen](/help/sites-authoring/user-properties.md#my-preferences)
 
    * Hier können verschiedene auf den jeweiligen Benutzer zugeschnittene Einstellungen festgelegt werden.
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
-## Eigene Voreinstellungen {#my-preferences}
+## Benutzereinstellungen{#my-preferences}
 
-Auf das Dialogfeld **Eigene Voreinstellungen** kann über die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der Kopfzeile zugegriffen werden.
+Auf das Dialogfeld **Benutzereinstellungen** kann über die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der Kopfzeile zugegriffen werden.
 
 Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
