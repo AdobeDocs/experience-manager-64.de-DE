@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Entwickeln von Apps mit der PhoneGap-CLI{#developing-apps-with-phonegap-cli}
+# Entwickeln von Apps mit PhoneGap CLI{#developing-apps-with-phonegap-cli}
 
 >[!NOTE]
 >
@@ -28,18 +28,18 @@ Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emu
 
 Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OSx (Mac) mit Xcode oder ein Mac/Win/Linux-System mit installiertem Android SDK ausführt.
 
-## Bootstrap Ihrer Umgebung bei der Entwicklung {#bootstrap-your-development-environment}
+## Bootstrap Ihrer Umgebung für Entwicklung {#bootstrap-your-development-environment}
 
 [Setup PhoneGap CLI](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
 Für iOS: Zur Entwicklung für iPhones und iPads benötigen Sie die Xcode-IDE von Apple.
 
-* Laden Sie es [hier](https://developer.apple.com/xcode/downloads/)kostenlos herunter.
+* Laden Sie es kostenlos [hier](https://developer.apple.com/xcode/downloads/) herunter.
 * [Handbuch zur PhoneGap iOS-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
 Für Android: Für die Entwicklung für iPhones und iPads benötigen Sie die Google Android Stuido IDE.
 
-* Laden Sie es [hier](https://developer.android.com/sdk/index.html)kostenlos herunter.
+* Laden Sie es kostenlos [hier](https://developer.android.com/sdk/index.html) herunter.
 * [Handbuch zur PhoneGap Android-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## Quelle herunterladen {#download-the-source}
@@ -64,7 +64,7 @@ Laden Sie die Umgebung nach dem erfolgreichen Hochladen der App-Entwicklung aus 
 * Klicken Sie auf Herunterladen und speichern Sie die ZIP auf Ihrem Computer.
 * Extrahieren Sie die heruntergeladene ZIP-Datei in Ihren Arbeitsbereich.
 
-## App erstellen und laden (aus Quelle) {#build-and-load-the-app-from-source}
+## Erstellen und laden Sie die App (aus der Quelle) {#build-and-load-the-app-from-source}
 
 PhoneGap CLI kann ein Plattformprojekt erstellen, die Quelle kompilieren und die App in einem einzigen Befehl bereitstellen.
 
@@ -103,7 +103,7 @@ Dadurch wird sichergestellt, dass die PhoneGap-Umgebung für die CLI-Entwicklung
 
 Sie können die JavaScripts Ihrer App mit den Entwicklerwerkzeugen von Safari debuggen, genau wie bei einer Webanwendung.
 
-## Safari Developer Tools aktivieren {#enable-safari-developer-tools}
+## Safari Developer Tools {#enable-safari-developer-tools} aktivieren
 
 So aktivieren Sie die Entwicklerwerkzeuge:
 
@@ -119,7 +119,7 @@ So aktivieren Sie die Entwicklerwerkzeuge:
 * Aktivieren Sie &quot;Entwicklungsmenü in der Menüleiste anzeigen&quot;.
 * Fenster &quot;Voreinstellungen&quot;schließen
 
-## Verbindung von Safari mit iOS {#connect-safari-to-ios}
+## Verbinden von Safari mit iOS {#connect-safari-to-ios}
 
 Sie können Safari entweder mit einem iOS-Gerät oder Emulator verbinden.
 
@@ -141,7 +141,7 @@ phonegap run <platform> --emulator
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-## JavaScript mit dem Web Inspector von Safari debuggen {#debug-javascript-with-safari-s-web-inspector}
+## Debuggen von JavaScript mit dem Webinspektor von Safari {#debug-javascript-with-safari-s-web-inspector}
 
 Sie können Haltepunkte an einer beliebigen Stelle in der Quelle festlegen. Wenn Sie mit Ihrem Emulator oder Gerät interagieren, wird die Ausführung der App an diesen Haltepunkten beendet. Sie können die Ausführung schrittweise durchführen und die Werte in Variablen überprüfen.
 
@@ -162,4 +162,4 @@ Sie können Haltepunkte an einer beliebigen Stelle in der Quelle festlegen. Wenn
 
 ## Die nächsten Schritte {#the-next-steps}
 
-Nachdem Sie Informationen zum Entwickeln von Apps mit der PhoneGap-CLI erhalten haben, lesen Sie [Zugriff auf Gerätefunktionen](/help/mobile/phonegap-access-device-features.md).
+Sobald Sie Informationen zum Entwickeln von Apps mit der PhoneGap-CLI erhalten haben, finden Sie unter [Zugreifen auf Gerätefunktionen](/help/mobile/phonegap-access-device-features.md).
