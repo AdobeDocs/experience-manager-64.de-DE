@@ -54,7 +54,7 @@ So erstellen Sie eine geschlossene Benutzergruppe:
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Klicken Sie auf die Schaltfläche **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
-1. Name your new group; for example, `cug_access`.
+1. Benennen Sie Ihre neue Gruppe; zum Beispiel `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -77,7 +77,7 @@ So wenden Sie die CUG auf eine Seite an:
 1. Rufen Sie im folgenden Fenster die Registerkarte **Erweitert** auf.
 1. Blättern Sie nach unten und aktivieren Sie das Kontrollkästchen im Bereich **Authentifizierungsanforderungen**.
 
-1. Hinzufügen Sie unten Ihren Konfigurationspfad und drücken Sie dann auf Speichern.
+1. hinzufügen Sie unten Ihren Konfigurationspfad und drücken Sie dann auf Speichern.
 1. Rufen Sie dann die Registerkarte **Berechtigungen** auf und klicken Sie auf die Schaltfläche **Geschlossene Benutzergruppe bearbeiten**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
@@ -90,7 +90,7 @@ So wenden Sie die CUG auf eine Seite an:
 
 1. Suchen Sie nach Ihrer CUG im folgenden Fenster und fügen Sie in diesem Fenster die Gruppe **cug_access** hinzu. Klicken Sie abschließend **Speichern**.
 1. Klicken Sie auf **Aktiviert**, um festzulegen, dass diese Seite (und alle untergeordneten Seiten) zu einer CUG gehören.
-1. Geben Sie die **Anmeldeseite** an, die von Mitgliedern der Gruppe verwendet werden soll. Beispiel:
+1. Geben Sie die **Anmeldeseite** an, die Mitglieder der Gruppe verwenden; Beispiel:
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -102,13 +102,13 @@ So wenden Sie die CUG auf eine Seite an:
 
 Informationen zu Profilen in der Publishing-Umgebung und der Bereitstellung von Formularen zum An- und Abmelden finden Sie in [Identitätsmanagement](/help/sites-administering/identity-management.md).
 
-## Erstellen eines Links zum Bereich {#linking-to-the-realm}
+## Erstellen eines Links zum Bereich  {#linking-to-the-realm}
 
 Da das Ziel von Links zum CUG-Bereich für anonyme Benutzer nicht sichtbar ist, entfernt der Linkchecker solche Links.
 
 Um dies zu vermeiden, empfiehlt es sich, nicht-geschützte Umleitungsseiten zu erstellen, die auf Seiten innerhalb des CUG-Bereichs verweisen. Die Navigationseinträge werden gerendert, ohne dass der Linkchecker Probleme verursacht. Nur wenn tatsächlich auf die Umleitungsseiten zugegriffen wird, wird der Benutzer in den CUG-Bereich umgeleitet – nachdem er seine Anmeldedaten erfolgreich bereitgestellt hat.
 
-## Konfigurieren des Dispatchers für CUGs {#configure-dispatcher-for-cugs}
+## Konfigurieren des Dispatchers für CUGs  {#configure-dispatcher-for-cugs}
 
 Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
 
@@ -116,9 +116,9 @@ Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den fol
 * \sessionmanagement: siehe unten
 * [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
 
-### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs {#configuring-dispatcher-session-management-for-cugs}
+### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs  {#configuring-dispatcher-session-management-for-cugs}
 
-Configure [session management in the dispatcher.any file](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) for the CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, legt fest, wie Sie die Sitzungsverwaltung konfigurieren.
+Konfigurieren Sie [die Sitzungsverwaltung in der Datei dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für das CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, legt fest, wie Sie die Sitzungsverwaltung konfigurieren.
 
 ```xml
 /sessionmanagement
@@ -132,7 +132,7 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
 >Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten, die sich außerhalb von CUG befinden, zwischenzuspeichern, erstellen Sie eine zweite Farm in dispatcher.any\
 >, der die Nicht-CUG-Seiten verarbeitet.
 
-1. Configure [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) by defining `/directory`; for example:
+1. Konfigurieren Sie [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) durch Definieren von `/directory`. Beispiel:
 
    ```xml
    /sessionmanagement
