@@ -19,7 +19,7 @@ ht-degree: 88%
 
 # Forms-Repository-Neustrukturierung in AEM 6.4{#forms-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes impacting the AEM Forms Solution. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die die AEM Forms-Lösung beeinträchtigen. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
 
 **Mit der Aktualisierung auf 6.4**
 
@@ -90,7 +90,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Das Ändern dieser Client-Bibliotheken wurde nie empfohlen oder unterstützt. Wenn Änderungen an diesen Client-Bibliotheken vorgenommen wurden, sollten diese auf den von AEM bereitgestellten Code zurückgesetzt werden. |
 | **Hinweise** | Nicht zutreffend |
 
-## Vor der Aktualisierung auf 6.5 {#prior-to-upgrade}
+## Vor der Aktualisierung auf 6.5  {#prior-to-upgrade}
 
 ### Echosign-Cloud-Service-Konfiguration {#echosign-cloud-service-configuration}
 
@@ -100,7 +100,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Das Dienstprogramm [Erleichterte Inhaltsmigration](/help/sites-deploying/lazy-content-migration.md) wird von der Migrationsoberfläche von Forms ausgelöst. |
 | **Hinweise** | Nicht zutreffend |
 
-### Recaptcha-Cloud-Service-Konfigurationen {#recaptcha-cloud-service-configurations}
+### Recaptcha-Cloud-Service-Konfigurationen  {#recaptcha-cloud-service-configurations}
 
 | **Vorheriger Speicherort** | `/etc/cloudservices/recaptcha` |
 |---|---|
@@ -108,7 +108,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Das Dienstprogramm [Erleichterte Inhaltsmigration](/help/sites-deploying/lazy-content-migration.md) wird von der Migrationsoberfläche von Forms ausgelöst. |
 | **Hinweise** | Nicht zutreffend |
 
-### Typekit-Cloud-Service-Konfigurationen {#typekit-cloud-service-configurations}
+### Typekit-Cloud-Service-Konfigurationen  {#typekit-cloud-service-configurations}
 
 | **Vorheriger Speicherort** | `/etc/cloudservices/typekit` |
 |---|---|
@@ -116,7 +116,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Das Dienstprogramm [Erleichterte Inhaltsmigration](/help/sites-deploying/lazy-content-migration.md) wird von der Migrationsoberfläche von Forms ausgelöst. |
 | **Hinweise** | Nicht zutreffend |
 
-### Verschiedenes {#misc-1}
+### Verschiedenes  {#misc-1}
 
 | **Vorheriger Speicherort** | `/etc/cloudservices/fdm` |
 |---|---|
@@ -127,6 +127,6 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 | **Vorheriger Speicherort** | `/etc/designs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp` |
-| **Leitfaden für die Neustrukturierung** | Any references to the /etc templates should eventually be updated to point to their `/libs` counterparts. |
+| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen sollten irgendwann aktualisiert werden, um auf ihre `/libs`-Entsprechungen zu verweisen. |
 | **Hinweise** | Nicht zutreffend |
 
