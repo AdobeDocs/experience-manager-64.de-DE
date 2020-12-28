@@ -26,9 +26,9 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live-Kopie für verschiedene Kanal](/help/sites-administering/msm-livecopy.md).)
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
+>AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Filtern für Gerätegruppen.](/help/sites-developing/groupfilters.md))
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
