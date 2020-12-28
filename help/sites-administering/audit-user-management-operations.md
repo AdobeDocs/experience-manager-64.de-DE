@@ -36,7 +36,7 @@ Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um di
 
 Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger**-Konfiguration erstellen. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
-1. Go to the Web Console by browsing to `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Gehen Sie zur Web-Konsole, indem Sie zu `https://<serveraddress>:<serverport>/system/console/configMgr` navigieren.
 1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine neue Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
