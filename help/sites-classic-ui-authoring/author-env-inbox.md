@@ -25,7 +25,7 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, bei
 Diese Benachrichtigungen werden je nach Benachrichtigungstyp in zwei verschiedene Posteingänge zugestellt:
 
 * Ein Posteingang, in dem die Benachrichtigungen empfangen werden, die Sie im Rahmen von Abonnements erhalten. Dieser wird im folgenden Abschnitt beschrieben.
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Ein spezieller Posteingang für Workflow-Elemente wird im Dokument [An Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) teilnehmen beschrieben.
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
