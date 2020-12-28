@@ -40,7 +40,7 @@ Schließlich veröffentlichen Administratoren den aktualisierten App-Inhalt stra
 
 ## Bereich „App verwalten“{#the-manage-app-tile}
 
-Die **App** -Kachel verwalten enthält verfügbare Anwendungsinformationen:
+Die Kachel **App verwalten** enthält verfügbare Anwendungsinformationen:
 
 * Titel
 * Beschreibung
@@ -52,7 +52,7 @@ Die **App** -Kachel verwalten enthält verfügbare Anwendungsinformationen:
 
 ## Die Kachel &quot;Verbindung verwalten&quot; {#the-manage-connection-tile}
 
-Auf der Kachel Verbindung **verwalten** werden die AEM Mobile On-demand Services-Verbindungsinformationen angezeigt:
+Die Kachel **Verbindung verwalten** enthält die AEM Mobile On-demand Services-Verbindungsinformationen:
 
 * Name der Coupkonfiguration
 * Projektname und ID
@@ -62,13 +62,13 @@ Auf der Kachel Verbindung **verwalten** werden die AEM Mobile On-demand Services
 >
 >Klicken Sie auf das entsprechende Gerät oben rechts, um eine Mobile On-Demand Cloud-Konfiguration einzurichten.
 >
->Weitere Informationen finden Sie unter Mobile On-Demand-Dienste [konfigurieren](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
+>Weitere Informationen finden Sie unter [Mobile On-Demand-Dienste konfigurieren](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md).
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
 ## Verwalten von Entitäten {#managing-entities}
 
-Diese 3 Kacheln bieten einen Überblick über den Status des Inhalts einer App:
+Diese 3 Kacheln bieten eine Übersicht über den Status des Inhalts einer App:
 
 * **Banner**
 * **Artikel**
@@ -76,62 +76,62 @@ Diese 3 Kacheln bieten einen Überblick über den Status des Inhalts einer App:
 
 Jede Kachel kann erweitert werden, um eine detailliertere Ansicht der Liste zu erhalten, indem Sie auf die Auslassungspunkte (...) in der unteren rechten Ecke klicken. Diese Liste-Ansichten bieten eine alternative Möglichkeit zum Zugriff auf gängige Mobile On-Demand-Aktionen wie Löschen, Hochladen und Bearbeiten von Eigenschaften.
 
-### Die Kachel &quot;Banner verwalten&quot; {#the-manage-banners-tile}
+### Die Kachel Banner verwalten {#the-manage-banners-tile}
 
-Mit der Kachel &quot;Banner **verwalten** &quot;können Sie den Inhalt für ein Banner verwalten. Für ein Banner werden die folgenden Informationen angezeigt:
+Mit der Kachel **Banner verwalten** können Sie den Inhalt für ein Banner verwalten. Für ein Banner werden die folgenden Informationen angezeigt:
 
 * image
 * **TITEL**: Name des Banners
 * **GEÄNDERT**: zuletzt geändert in AEM
 * **HOCHGELADEN**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: AEM zuletzt veröffentlichte Anforderungsformular
+* **VERÖFFENTLICHT**: aem zuletzt veröffentlichte Anforderungsformular
 * **QUELLE**: source (AEM lokal oder remote von Mobile On Demand)
 
-Die folgende Abbildung zeigt die Kachel **&quot;Banner** verwalten&quot;im AEM Mobile Application Dashboard:
+Die folgende Abbildung zeigt die Kachel **Banner verwalten** im AEM Mobile Application Dashboard:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->Siehe **[Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)**zum Erstellen, Löschen oder Aktualisieren der Banner.
+>Siehe **[Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)** zum Erstellen, Löschen oder Aktualisieren der Banner.
 
-### Die Artikelkachel verwalten {#the-manage-articles-tile}
+### Die Artikeltabelle verwalten {#the-manage-articles-tile}
 
-In der Kachel &quot;Artikel **** verwalten&quot;können Sie den Inhalt eines Artikels verwalten. Die folgenden Informationen werden für einen Artikel angezeigt:
+Mit der Kachel **Artikel verwalten** können Sie den Inhalt für einen Artikel verwalten. Die folgenden Informationen werden für einen Artikel angezeigt:
 
 * image
 * **TITEL**: Name des Artikels
 * **GEÄNDERT**: zuletzt geändert in AEM
 * **HOCHGELADEN**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: AEM zuletzt veröffentlichte Anforderungsformular
+* **VERÖFFENTLICHT**: aem zuletzt veröffentlichte Anforderungsformular
 * **QUELLE**: source (AEM lokal oder remote von Mobile On-Demand)
 
-Die folgende Abbildung zeigt die Kachel &quot;Artikel **** verwalten&quot;im AEM Mobile Application Dashboard:
+Die folgende Abbildung zeigt die Kachel **Artikel verwalten** im AEM Mobile Application Dashboard:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Siehe [**Verwalten von Artikeln **](/help/mobile/mobile-on-demand-managing-articles.md)zum Erstellen, Löschen oder Aktualisieren von Artikeln.
+>Siehe [**Verwalten von Artikeln**](/help/mobile/mobile-on-demand-managing-articles.md) zum Erstellen, Löschen oder Aktualisieren der Artikel.
 
-### Die Kachel &quot;Sammlungen verwalten&quot; {#the-manage-collections-tile}
+### Die Kachel zum Verwalten von Sammlungen {#the-manage-collections-tile}
 
-Mit der Kachel &quot;Sammlungen **verwalten** &quot;können Sie den Inhalt für eine Sammlung verwalten. Die folgenden Informationen werden für eine Sammlung angezeigt:
+Mit der Kachel **Sammlungen verwalten** können Sie den Inhalt für eine Sammlung verwalten. Die folgenden Informationen werden für eine Sammlung angezeigt:
 
 * image
 * **TITEL**: Name der Sammlung
 * **GEÄNDERT**: zuletzt geändert in AEM
 * **HOCHGELADEN**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: AEM zuletzt veröffentlichte Anforderungsformular
+* **VERÖFFENTLICHT**: aem zuletzt veröffentlichte Anforderungsformular
 * **QUELLE**: source (AEM lokal oder remote von Mobile On-Demand)
 
-Die folgende Abbildung zeigt die Kachel **&quot;Sammlungen** verwalten&quot;im AEM Mobile Application Dashboard:
+Die folgende Abbildung zeigt die Kachel **Sammlungen verwalten** im AEM Mobile Application Dashboard:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Siehe **[Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)**zum Erstellen, Löschen oder Aktualisieren der Sammlungen.
+>Siehe **[Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)** zum Erstellen, Löschen oder Aktualisieren der Sammlungen.
 
 ### Die nächsten Schritte {#the-next-steps}
 
