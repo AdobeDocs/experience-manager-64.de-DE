@@ -35,10 +35,10 @@ Idealerweise sollte ein anderer Programmierer kein Modul öffnen müssen, um zu 
 Für AEM-Codes gelten die folgenden Konventionen:
 
 
-* A single implementation of an interface is named `<Interface>Impl`, i.e. `ReaderImpl`.
-* Multiple implementations of an interface are named `<Variant><Interface>`, i.e. `JcrReader` and `FileSystemReader`.
-* Abstrakte Basisklassen werden benannt `Abstract<Interface>` oder `Abstract<Variant><Interface>`.
-* Packages are named `com.adobe.product.module`.  Jedes Maven Artefakt- oder OSGi-Bundle muss ein eigenes Paket haben.
+* Eine einzelne Implementierung einer Schnittstelle trägt den Namen `<Interface>Impl`, d.h. `ReaderImpl`.
+* Mehrere Implementierungen einer Schnittstelle haben den Namen `<Variant><Interface>`, d.h. `JcrReader` und `FileSystemReader`.
+* Abstrakte Basisklassen werden mit `Abstract<Interface>` oder `Abstract<Variant><Interface>` benannt.
+* Pakete haben den Namen `com.adobe.product.module`.  Jedes Maven Artefakt- oder OSGi-Bundle muss ein eigenes Paket haben.
 * Java-Implementierungen werden in einem impl-Paket unter ihrer API platziert.
 
 
@@ -69,7 +69,7 @@ Dieses Prinzip sieht vor, dass derselbe Codesatz niemals dupliziert werden sollt
 
 ### Blanke CSS-Regeln vermeiden {#avoid-naked-css-rules}
 
-CSS-Regeln sollten speziell auf das Zielelement im Kontext Ihrer Anwendung ausgerichtet sein. For example, a CSS rule applied to *.content .center* would be overly broad and could potentially end up impacting lots of content across your system, requiring others to override this style in the future. *.myapp-centerText* wäre eine spezifischere Regel, da es zentrierten *Text* im Kontext Ihrer Anwendung angibt.
+CSS-Regeln sollten speziell auf das Zielelement im Kontext Ihrer Anwendung ausgerichtet sein. Eine CSS-Regel, die auf *.content.center* angewendet wird, wäre beispielsweise übermäßig breit gefasst und könnte letztendlich viele Inhalte auf Ihrem System beeinträchtigen, sodass andere diesen Stil in Zukunft überschreiben müssen. *.myapp-* centerText wäre eine spezifischere Regel, da im Kontext Ihrer Anwendung zentrierter  ** Text angegeben wird.
 
 ### Verwendung veralteter APIs vermeiden {#eliminate-usage-of-deprecated-apis}
 
@@ -81,18 +81,18 @@ Alle Strings, die nicht von einem Autor bereitgestellt werden, sollten in einem 
 
 ### Ressourcenpfade zur Sicherheit maskieren {#escape-resource-paths-for-safety}
 
-Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. For JSPs, Granite UI exposes a *granite:encodeURIPath() EL* function.
+Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Bei JSPs stellt die Granite-Benutzeroberfläche eine *granite:encodeURIPath() EL*-Funktion bereit.
 
 ### Zur Absicherung vor Cross-Site-Scripting-Angriffen die XSS-API und/oder HTL nutzen {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM stellt eine XSS-API bereit, mit der Sie Parameter einfach bereinigen und die Absicherung vor Cross-Site-Scripting-Angriffen gewährleisten können. Zusätzlich hat HTL diese Schutzmechanismen direkt in die Vorlagensprache integriert. An API cheat sheet is available for download at [Development - Guidelines and Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM stellt eine XSS-API bereit, mit der Sie Parameter einfach bereinigen und die Absicherung vor Cross-Site-Scripting-Angriffen gewährleisten können. Zusätzlich hat HTL diese Schutzmechanismen direkt in die Vorlagensprache integriert. Unter [Entwicklung - Richtlinien und Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md) kann ein API-Datenblatt heruntergeladen werden.
 
 ### Angemessene Protokollierung implementieren {#implement-appropriate-logging}
 
 Für Java-Code unterstützt AEM slf4j als Standard-API für die Protokollierung von Meldungen. Für eine konsistente Administration sollte die API in Verbindung mit den Konfigurationen genutzt werden, die über die OSGi-Konsole verfügbar sind. Slf4j umfasst fünf verschiedene Protokollierungsebenen. Wir empfehlen, bei der Auswahl der Ebene, auf der eine Meldung protokolliert werden soll, die folgenden Richtlinien anzuwenden:
 
 * ERROR: Wenn etwas im Code nicht funktioniert und die Verarbeitung nicht fortgesetzt werden kann. Dies geschieht oft aufgrund einer unerwarteten Ausnahme. In der Regel ist es hilfreich, Stapelspuren in diese Szenarien einzubeziehen.
-* WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. This will often be the result of an exception that we expected, such as a *PathNotFoundException*.
+* WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. Dies ist häufig das Ergebnis einer erwarteten Ausnahme, z. B. einer *PathNotFoundException*.
 * INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Denken Sie daran, dass dies der Standard ist und dass die meisten Kunden dies auf ihren Umgebung beibehalten werden. Verwenden Sie diese Ebene daher nicht zu häufig.
 * DEBUG: Informationen der unteren Ebene zur Verarbeitung. Hilfreich, wenn ein Problem zusammen mit dem Support behoben wird.
 * TRACE: Die niedrigste Ebene von Informationen, z. B. das Aufrufen/Beenden von Methoden. Dies wird in der Regel nur von Entwicklern verwendet.
