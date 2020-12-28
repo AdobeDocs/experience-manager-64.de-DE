@@ -20,15 +20,15 @@ ht-degree: 56%
 
 # Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften{#mapping-component-data-with-adobe-analytics-properties}
 
-Fügen Sie Komponenten zum Framework hinzu, die Daten sammeln, um sie an Adobe Analytics zu senden. Komponenten zur Sammlung von Analysedaten speichern die Daten in der entsprechenden **CQ-Variablen**. When you add such a component to a framework, the framework displays the list of CQ variables so that you can each to the appropriate **Analytics variable**.
+Fügen Sie Komponenten zum Framework hinzu, die Daten sammeln, um sie an Adobe Analytics zu senden. Komponenten zur Sammlung von Analysedaten speichern die Daten in der entsprechenden **CQ-Variablen**. Wenn Sie eine solche Komponente zu einem Framework hinzufügen, zeigt das Framework die Liste der CQ-Variablen an, sodass Sie jede der entsprechenden **Analytics-Variablen** hinzufügen können.
 
 ![aa-11](assets/aa-11.png)
 
-When the **AEM view** is open the Analytics variables appear in the content finder.
+Wenn die **AEM Ansicht** geöffnet ist, werden die Analytics-Variablen in der Inhaltssuche angezeigt.
 
 ![aa-12](assets/aa-12.png)
 
-You can map multiple Analytics variables with the same **CQ variable**.
+Sie können mehrere Analytics-Variablen mit derselben **CQ-Variable** zuordnen.
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -39,13 +39,13 @@ Die zugeordneten Daten werden an Adobe Analytics gesendet, wenn die Seite gelade
 
 Verwenden Sie das folgende Verfahren, um CQ-Komponentenvariablen den Adobe Analytics-Berichtseigenschaften zuzuordnen.
 
-1. In the **AEM view**, drag a tracking component from sidekick onto the framework. Wählen Sie z. B. die Komponente **Seite** aus der Kategorie **Allgemein.**
+1. Ziehen Sie in der Ansicht **AEM** eine Verfolgungskomponente aus dem Sidekick in das Framework. Wählen Sie z. B. die Komponente **Seite** aus der Kategorie **Allgemein.**
 
    ![aa-13](assets/aa-13.png)
 
    Es gibt mehrere standardmäßige Komponentengruppen: **Allgemein**, **Commerce**, **Communities**, **Search&amp;Promote** und **Sonstige**. Je nach Konfiguration zeigt Ihre AEM-Instanz möglicherweise andere Gruppen und Komponenten an.
 
-1. To map Adobe Analytics variables with variables that are defined in the component, drag an **Analytics variable** from the content finder onto a field on the tracking component. Ziehen Sie beispielsweise `Page Name (pageName)` nach `pagedata.title`.
+1. Um Adobe Analytics-Variablen Variablen Variablen zuzuordnen, die in der Komponente definiert sind, ziehen Sie eine **Analytics-Variable** aus der Inhaltssuche auf ein Feld in der Verfolgungskomponente. Ziehen Sie beispielsweise `Page Name (pageName)` nach `pagedata.title`.
 
    ![aa-14](assets/aa-14.png)
 
@@ -57,21 +57,21 @@ Verwenden Sie das folgende Verfahren, um CQ-Komponentenvariablen den Adobe Analy
 
    >[!NOTE]
    >
-   >You can map multiple Analytics variables (e.g. `props`, `eVars`, `events`) to the same CQ variable (e.g. `pagedata.title`)
+   >Sie können mehrere Analytics-Variablen zuordnen (z. `props`, `eVars`, `events`) auf dieselbe CQ-Variable (z. B. `pagedata.title`)
 
    >[!CAUTION]
    >
    >Wir empfehlen Ihnen dringend Folgendes:
    >
-   >* `eVars` und `props` werden CQ-Variablen zugeordnet, die mit einem der beiden `pagedata.X` oder `eventdata.X`
+   >* `eVars` und  `props` werden CQ-Variablen zugeordnet, die entweder mit   `pagedata.X` oder  `eventdata.X`
    >* Ereignisse werden dagegen Variablen zugeordnet, die mit `eventdata.events.X` beginnen.
 
 
-1. To make the framework available on the publish instance of your site, open the **Page **tab of sidekick, and click **Activate Framework.**
+1. Um das Framework auf der Veröffentlichungsinstanz Ihrer Site verfügbar zu machen, öffnen Sie die Registerkarte **Seite **des Sidekick und klicken Sie auf **Framework aktivieren.**
 
 ## Zuordnen produktbezogener Variablen {#mapping-product-related-variables}
 
-AEM verwendet eine Konvention zum Benennen produktbezogener Variablen und Ereignis, die Adobe Analytics-produktbezogenen Eigenschaften zugeordnet werden sollen:
+AEM verwendet eine Konvention zum Benennen produktbezogener Variablen und Ereignis, die den produktbezogenen Eigenschaften von Adobe Analytics zugeordnet werden sollen:
 
 | CQ-Variable | Analytics-Variable | Beschreibung |
 |---|---|---|
@@ -107,7 +107,7 @@ Wenn Sie ein Adobe Analytics-Framework öffnen, enthält die Inhaltssuche vordef
 * Ereignisse
 
 Wenn Sie eine RSID auswählen, werden alle zu dieser RSID gehörenden Variablen zur Liste hinzugefügt.\
-The `cf#` is needed in order to map Analytics variables to the CQ variables present on the different tracking components. Siehe „Einrichten eines Frameworks für das grundlegende Tracking“.
+Das `cf#` ist erforderlich, um Analytics-Variablen den CQ-Variablen zuzuordnen, die in den verschiedenen Verfolgungskomponenten vorhanden sind. Siehe „Einrichten eines Frameworks für das grundlegende Tracking“.
 
 Je nach der für das Framework ausgewählten Ansicht wird die Inhaltssuche entweder mit Analytics-Variablen (in AEM Ansicht) oder mit CQ-Variablen (in der Analytics-Ansicht) gefüllt.
 
@@ -117,7 +117,7 @@ Sie können mit der Liste wie folgt arbeiten:
 
    * Wenn die *Schaltfläche „Nein“* ausgewählt ist, wird die komplette Liste angezeigt.
    * Wenn die **** Schaltfläche „Traffic“ ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Traffic“ gehören.
-   * If the **Conversion** button is selected, the list will only show the variables belonging to the Conversion section.
+   * Wenn die Schaltfläche **Umrechnung** ausgewählt ist, zeigt die Liste nur die Variablen an, die zum Umrechnungsabschnitt gehören.
    * Wenn die Schaltfläche **Ereignisse** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Ereignisse“ gehören.
 
    >[!NOTE]
@@ -136,11 +136,11 @@ Sie können mit der Liste wie folgt arbeiten:
 
 1. In der Adobe Analytics-Ansicht zeigt die Inhaltssuche alle CQ-Variablen an, die zu den Verfolgungskomponenten gehören, die in die CQ-Ansicht gezogen wurden.
 
-   * e.g. in case the **Download component **is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
+   * Beispiel: Wenn die **Download-Komponente **nur die *in CQ-Ansicht gezogen wird (die zwei zuordnbare Variablen* eventData.downloadLink *und* eventData.Ereignisses.startDownload *enthält), sieht die Inhaltssuche beim Wechsel zur Adobe Analytics-Ansicht wie folgt aus:*
 
    ![aa-22](assets/aa-22.png)
 
-   * The variables can be dragged&amp;dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion** and **Events**).
+   * Die Variablen können auf eine beliebige Adobe Analytics-Variable gezogen und abgelegt werden, die zu einem der drei Variablenabschnitte (**Traffic**, **Konversion** und **Ereignis**) gehört.
    * Beim Ziehen einer neuen Verfolgungskomponente in das Framework in der CQ-Ansicht werden die CQ-Variablen, die zur Komponente gehören, automatisch zur Inhaltssuche (cf#) in der Adobe Analytics-Ansicht hinzugefügt.
 
    >[!NOTE]
@@ -188,15 +188,15 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 
    * **Traffic**:
 
-      * Traffic variable ( `prop1`) mapped to a CQ variable ( `eventdata.downloadLink`)
+      * Traffic-Variable ( `prop1`), die einer CQ-Variablen ( `eventdata.downloadLink`) zugeordnet ist
       * Wenn neben der Komponente ein Schlosssymbol angezeigt wird, weist dies darauf hin, dass die Komponente von einem übergeordneten Framework geerbt wurde und daher nicht bearbeitet werden kann.
    * **Konversion**:
 
-      * Conversion variable ( `eVar1`) mapped to a CQ variable ( `pagedata.title`)
+      * Konversionsvariable ( `eVar1`), die einer CQ-Variablen ( `pagedata.title`) zugeordnet ist
       * Konversionsvariable (`eVar3`), die einem JavaScript-Ausdruck zugeordnet ist, der inline hinzugefügt wurde (durch Doppelklicken auf das CQ-Variablen-Feld und manuelles Eingeben des Codes)
    * **Ereignis**:
 
-      * Event variable ( `event1`) mapped to a CQ event ( `eventdata.events.pageView`)
+      * Ereignis-Variable ( `event1`), die einem CQ-Ereignis ( `eventdata.events.pageView`) zugeordnet ist
 
 
 
@@ -204,9 +204,9 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 >
 >Die Spalte der CQ-Variablen in jeder Tabelle kann auch inline ausgefüllt werden, indem auf das Feld doppelgeklickt und dann der gewünschte Text eingegeben wird. Diese Felder akzeptieren JavaScript als Eingabe.
 >
->* z. B. neben `prop3` können Sie
+>* Sie können z.B. neben `prop3`
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-   >  zum Senden des *Titels* einer mit ihrer *Site* verketteten Seite *:* (Doppelpunkt) und mit Präfix *Adobe* als `prop3`
+   >  , um den *title* einer mit *sitesection* verketteten Seite mit *:* (Doppelpunkt) zu senden und mit dem Präfix *Adobe* als `prop3`
 
 
 >[!CAUTION]
