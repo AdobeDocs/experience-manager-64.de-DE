@@ -22,7 +22,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->This functionality requires the application of [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) or later.
+>Diese Funktion erfordert die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
 
 Sie können in Adobe Experience Manager (AEM) erstellte [Experience Fragments](/help/sites-authoring/experience-fragments.md) in Adobe Target exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren. Auf diese Weise können Sie die Benutzerfreundlichkeit und den Funktionsumfang von AEM mit den leistungsstarken Funktionen für künstliche Intelligenz (KI) und maschinelles Lernen (ML) in Target kombinieren.
 
@@ -30,10 +30,10 @@ Sie können in Adobe Experience Manager (AEM) erstellte [Experience Fragments](/
 
 Verschiedene Aktionen sind erforderlich:
 
-1. Sie müssen AEM mit Target integrieren. See [Integrating with Adobe Target](/help/sites-administering/target.md) for more information.
+1. Sie müssen AEM mit Target integrieren. Weitere Informationen finden Sie unter [Integration mit Adobe Target](/help/sites-administering/target.md).
 1. Experience Fragments werden aus der Autoreninstanz exportiert. Daher müssen Sie in der Autoreninstanz den [Link Externalizer konfigurieren](/help/sites-developing/externalizer.md), um sicherzustellen, dass alle Links für die Veröffentlichungsinstanz externalisiert sind.
 
-## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
+## hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
 
 Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen:
 
@@ -82,7 +82,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
    >
    >Durch Auswahl von** Veröffentlichen** wird das Erlebnisfragment sofort veröffentlicht und an die Zielgruppe gesendet.
 
-1. Tap/click **OK** in the confirmation dialog.
+1. Tippen/klicken Sie im Bestätigungsdialogfeld auf **OK**.
 
    Ihr Experience Fragment sollte jetzt in Target enthalten sein.
 
@@ -90,7 +90,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
 >
 >Alternativ können Sie den Export aus dem Seiteneditor mithilfe ähnlicher Befehle im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) durchführen.
 
-## Verwenden Ihrer Experience Fragments in Target {#using-your-experience-fragments-in-target}
+## Verwenden Ihrer Experience Fragments in Target  {#using-your-experience-fragments-in-target}
 
 Nach Durchführung der vorherigen Aufgaben wird das Erlebnisfragment auf der Seite &quot;Angebot&quot;in der Zielgruppe angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
 
