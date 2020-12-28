@@ -33,10 +33,10 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 | Unterstützte AEM-Versionen | AEM On-Premise oder AMS 6.x | AEM AMS 6.4 und 6.5 |
 | Back-End | - AEM, Java <br> - Monolithische Integration, vorgefertigte Zuordnung (Vorlage)<br> - JCR-Repository | - Magento <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
 | Front-End | Server-seitig wiedergegebene AEM-Seiten | Gemischte Seitenanwendung (hybrides Rendering) |
-| Produktkatalog | - Produktimporteur, Editor, Zwischenspeicherung in AEM <br>- Regelmäßige Kataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Generische Vorlagen <br>- On-Demand-Daten über Connector |
-| Skalierbarkeit | - Kann bis zu einigen Millionen Produkte unterstützen (je nach Anwendungsfall) <br> - Zwischenspeicherung unter Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung auf Dispatcher oder CDN |
+| Produktkatalog | - Product Importer, Editor, Zwischenspeicherung in AEM <br>- Regelmäßige Kataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Allgemeine Vorlagen <br>- On-Demand-Daten über Connector |
+| Skalierbarkeit | - Kann bis zu wenigen Millionen Produkte unterstützen (abhängig vom Anwendungsfall) <br> - Zwischenspeicherung unter Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung auf Dispatcher oder CDN |
 | Standardisiertes Datenmodell | Nein | Ja, Magento GraphQL-Schema |
-| Verfügbarkeit | Ja:<br> - SAP-Commerce Cloud (Erweiterung aktualisiert auf AEM 6.4 und Hybris 5 (Standard) und Kompatibilität mit Hybris 4 <br>- Salesforce-Commerce Cloud (Connector offen für Unterstützung von AEM 6.4) | Ja, über Open Source von GitHub. <br> Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel). |
+| Verfügbarkeit | Ja:<br> - SAP-Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 zu unterstützen (Standard) und Kompatibilität mit Hybris 4 <br>- Salesforce-Commerce Cloud (Connector offen für Unterstützung von AEM 6.4) | Ja, über Open Source von GitHub. <br> Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel). |
 | Wann ist sie einzusetzen? | Eingeschränkte Anwendungsfälle: In Szenarien, in denen kleine statische Kataloge möglicherweise importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
 
 Zusammen mit der Produktdatenverwaltung (PIM) verarbeitet eCommerce die Aktivitäten auf einer Website mit Schwerpunkt auf dem Verkauf von Produkten über einen Online-Shop:
@@ -63,15 +63,15 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 
 >[!NOTE]
 >
->Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/sites-deploying/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>Informationen zum Erweitern der eCommerce-Funktionen finden Sie unter [Entwickeln von eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Zentrale Funktionen {#main-features}
 
 AEM eCommerce bietet Folgendes:
 
-* A number of **out-of-the-box AEM components** to illustrate what can be achieved for your project:
+* Eine Reihe von **vordefinierten AEM Komponenten** veranschaulichen, was für Ihr Projekt erreicht werden kann:
 
    * Produktanzeige
    * Warenkorb
@@ -95,11 +95,11 @@ AEM eCommerce bietet Folgendes:
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
+* Verwendet die AEM Möglichkeit, **Ihre Inhalte auf mehreren Kanälen** anzuzeigen, sei es in diesem vollständigen Browserfenster oder Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* Funktion zur **Entwicklung Ihrer eigenen Integrationsimplementierung basierend auf dem[AEM eCommerce-Framework](#the-framework)**.
+* Funktion zur **Entwicklung Ihrer eigenen Integrationsimplementierung basierend auf dem [AEM eCommerce-Framework](#the-framework)**.
 
    Die beiden aktuell verfügbaren Implementierungen setzen auf derselben Basis auf und nutzen die allgemeine API (das Framework). Bei der Implementierung einer neuen Integration müssen Sie nur die Funktionen implementieren, die für Ihre Implementierung erforderlich sind. Frontendkomponenten können von jeder neuen Implementierung genutzt werden, da sie Schnittstellen verwenden (und somit unabhängig von der Implementierung sind).
 
@@ -126,14 +126,14 @@ AEM eCommerce bietet Folgendes:
 
 Im Abschnitt [Konzepte](/help/sites-administering/concepts.md) finden Sie detailliertere Informationen zum Framework. Nachfolgend erhalten Sie einen groben Überblick über das Framework:
 
-### Eigenschaften des Frameworks {#what}
+### Eigenschaften des Frameworks  {#what}
 
 * Das Integrationsframework stellt die API, mehrere Komponenten zur Veranschaulichung der Funktionalität und einige Erweiterungen für Beispiele für Anbindungsmethoden bereit.
 * Das Framework stellt die grundlegende Struktur bereit, die für eine Projektimplementierung erforderlich ist.
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Why? {#why}
+### Warum? {#why}
 
 * Bereitstellung der grundlegenden Mechanismen, um schnell eine benutzerdefinierte eCommerce-Website zu erstellen
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist
