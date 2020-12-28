@@ -65,15 +65,15 @@ aem-screens-player-ios-3.3.0.ipa.zip
   </tr>
   <tr>
    <td><strong>AEM 6.3+SP1+Screens FP1 (1.0.64_B002)</strong></td> 
-   <td><strong>1.0.12</strong><br /> </td> 
+   <td><strong>1,0,12</strong><br /> </td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2 (1.0.298)</strong></strong></td> 
-   <td><strong>1.0.48 </strong></td> 
+   <td><strong>1,0,48 </strong></td> 
   </tr>
   <tr>
    <td><strong>AEM 6.4</strong></td> 
-   <td><p><strong>1.0.48 </strong></p> </td> 
+   <td><p><strong>1,0,48 </strong></p> </td> 
   </tr>
  </tbody>
 </table>
