@@ -63,16 +63,16 @@ Mit Adobe Experience Manager können Autoren von Inhalten und/oder Betreiber von
 
 Spezifische Aspekte der WCAG 2.0-Richtlinien werden in unserer [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md) hervorgehoben.
 
-### WCAG 2.0-Konformitätslevel {#wcag-accessibility-conformance-levels}
+### WCAG 2.0-Konformitätslevel  {#wcag-accessibility-conformance-levels}
 
 Die WCAG 2.0 bietet [Richtlinien (mit entsprechenden Erfolgskriterien), welche die verschiedenen Level der Barrierefreiheit abdecken](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
-These, as they relate to AEM, are covered under [Level A and AA Conformance](/help/sites-authoring/creating-accessible-content.md). Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
+Diese werden in Bezug auf AEM unter [Level A und AA Conformance](/help/sites-authoring/creating-accessible-content.md) behandelt. Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
 >[!NOTE]
 >
 >Da es nicht möglich ist, sämtliche Erfolgskriterien des Konformitätslevel AAA für bestimmte Inhaltstypen zu erfüllen, wird dieser nicht als vorgeschriebener Konformitätslevel empfohlen.
 
-## Barrierefreiheit bei Adobe     {#accessibility-at-adobe}
+## Barrierefreiheit bei Adobe      {#accessibility-at-adobe}
 
 Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
