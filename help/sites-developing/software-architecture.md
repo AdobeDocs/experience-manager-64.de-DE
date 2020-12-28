@@ -54,8 +54,8 @@ Sammlungen und Testcode sind ein integraler Bestandteil jeder agilen Software-Im
 
 ### Implementieren von Datenmigrationsskripten in ihrem eigenen Modul {#implement-data-migration-scripts-in-their-own-module}
 
-Bei Datenmigrationsskripten handelt es sich zwar um Produktionscode, doch diese werden in der Regel nur einmal beim ersten Start einer Site ausgeführt. Sobald die Site also live ist, wird dies zu totem Code. Um sicherzustellen, dass wir keinen Implementierungscode erstellen, der von den Migrationsskripten abhängt, sollten sie in ihrem eigenen Modul implementiert werden. Dies ermöglicht uns auch, diesen Code sofort nach dem Start zu entfernen und zurückzuziehen, wodurch Code ohne Ende aus dem System entfernt wird.
+Bei Datenmigrationsskripten handelt es sich zwar um Produktionscode, doch diese werden in der Regel nur einmal beim ersten Start einer Site ausgeführt. Sobald die Site also live ist, wird dies zu totem Code. Um sicherzustellen, dass wir keinen Implementierungscode erstellen, der von den Migrationsskripten abhängt, sollten sie in ihrem eigenen Modul implementiert werden. Dies ermöglicht uns auch, diesen Code unmittelbar nach dem Start zu entfernen und zurückzuziehen, wodurch Code ohne Ende aus dem System entfernt wird.
 
 ### Befolgen veröffentlichter Maven-Konventionen in POM-Dateien {#follow-published-maven-conventions-in-pom-files}
 
-Apache has published style conventions at [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Es ist am besten, sich an diese Konventionen zu halten, da dadurch die schnelle Bereitstellung neuer Ressourcen erleichtert wird.
+Apache hat Stilkonventionen unter [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html) veröffentlicht. Es ist am besten, sich an diese Konventionen zu halten, da dadurch die schnelle Bereitstellung neuer Ressourcen erleichtert wird.
