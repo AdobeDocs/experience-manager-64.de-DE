@@ -20,7 +20,7 @@ ht-degree: 99%
 
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
-Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launchs oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
+Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
 Der Inhalt wird mit mithilfe von (zum Inhaltstyp passenden) Komponenten hinzugefügt, die auf die Seite gezogen werden können. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
 
@@ -36,8 +36,8 @@ Beim Sidekick handelt es sich um ein wichtiges Tool für die Bearbeitung von Sei
 
 Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
-* Komponenten
-* Seite      
+* Komponenten 
+* Seite
 * Informationen
 * Versionierung
 * Workflow
@@ -86,7 +86,7 @@ So fügen Sie eine neue Komponente ein:
 
 1. Fügen Sie die gewünschte Komponente in die Seite ein. Doppelklicken Sie dann auf den Absatz, und ein Fenster wird geöffnet, in dem Sie den Absatz konfigurieren und Inhalte einfügen können.
 
-### Einfügen einer Komponente mit dem Content Finder {#inserting-a-component-using-the-content-finder}
+### Einfügen einer Komponente mit dem Content Finder  {#inserting-a-component-using-the-content-finder}
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
@@ -105,7 +105,7 @@ Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem 
 
 So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Öffnen Sie den [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Ziehen Sie das gewünschte Asset an die passende Position. Der [Komponenten-Platzhalter](#componentplaceholder) zeigt an, wo die Komponente platziert wird.
 
@@ -113,7 +113,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
 1. [Bearbeiten](#editmovecopypastedelete) Sie die Komponente.
 
-## Bearbeiten einer Komponente (Inhalt und Eigenschaften) {#editing-a-component-content-and-properties}
+## Bearbeiten einer Komponente (Inhalt und Eigenschaften)  {#editing-a-component-content-and-properties}
 
 Um einen bestehenden Absatz zu bearbeiten, führen Sie eine der folgenden Aktionen aus:
 
@@ -223,7 +223,7 @@ Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von
 
 ## Suchen und Ersetzen {#find-replace}
 
-Bei umfangreicheren Bearbeitungen desselben Begriffs ermöglicht die Menüoption **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**die Suche nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website und deren Ersetzung.
+Bei umfangreicheren Bearbeitungen desselben Begriffs ermöglicht die Menüoption **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** die Suche nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website und deren Ersetzung.
 
 ## Sperren einer Seite {#locking-a-page}
 
