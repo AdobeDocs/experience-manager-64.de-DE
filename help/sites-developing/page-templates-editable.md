@@ -1,5 +1,5 @@
 ---
-title: 'Bearbeitbare Seitenvorlagen '
+title: 'Seitenvorlagen - Kann bearbeitet werden '
 seo-title: 'Bearbeitbare Seitenvorlagen '
 description: Bearbeitbare Vorlagen wurden eingeführt, um es Benutzern, die keine Entwickler sind, zu ermöglichen, Vorlagen zu erstellen und zu bearbeiten, Vorlagen bereitzustellen, die eine dynamische Verbindung zu allen mit ihnen erstellten Seiten beibehalten, und die Seitenkomponente allgemeiner zu gestalten.
 seo-description: Bearbeitbare Vorlagen wurden eingeführt, um es Benutzern, die keine Entwickler sind, zu ermöglichen, Vorlagen zu erstellen und zu bearbeiten, Vorlagen bereitzustellen, die eine dynamische Verbindung zu allen mit ihnen erstellten Seiten beibehalten, und die Seitenkomponente allgemeiner zu gestalten.
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '3231'
-ht-degree: 72%
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,7 @@ Mit bearbeitbaren Vorlagen werden die Aspekte, die eine Seite bilden, innerhalb 
 
 >[!NOTE]
 >
->AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA Editor](/help/sites-developing/spa-overview.md)zu verwenden.
+>AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA Editor](/help/sites-developing/spa-overview.md) zu verwenden.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Dieses Dokument:
 
 * bietet einen Überblick über die Erstellung bearbeitbarer Vorlagen.
 
-   * For details see [Creating Page Templates](/help/sites-authoring/templates.md)
+   * Weitere Informationen finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md)
 
 * beschreibt die Administrator- bzw. Entwickleraufgaben, die zur Erstellung bearbeitbarer Vorlagen erforderlich sind.
 * beschreibt die technischen Grundlagen bearbeitbarer Vorlagen.
@@ -65,7 +65,7 @@ Informationen zum Verwenden bearbeitbarer Vorlagen in AEM-Projekten finden Sie u
 Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dies ist zwar nicht unbedingt erforderlich, wird aber empfohlen.
-1. Wählen Sie einen [Vorlagentyp](#template-type) aus. This is copied to create the [template definition](#template-definitions).
+1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    **Richtlinien**
 
-   * Die Richtlinien für Inhalte definieren die Designeigenschaften einer Komponente.
+   * Die Richtlinien für Inhalte definieren die Design-Eigenschaften einer Komponente.
 
       * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
    * Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
@@ -129,17 +129,17 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
    * Wenn Sie eine Vorlage zum Erstellen einer neuen Seite verwenden, ist kein Unterschied zwischen den statischen und bearbeitbaren Vorlagen ersichtlich.
    * Für die Seitenautoren ist der Prozess transparent.
 
-   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md#templates).
+   Einzelheiten dazu, wie Seitenautoren Vorlagen zum Erstellen von Seiten verwenden können, finden Sie unter [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md#templates).
 
    Technische Details zu den Richtlinien werden in diesem Dokument unter [Resultierende Inhaltsseiten](/help/sites-developing/page-templates-editable.md#resultant-content-pages) erläutert.
 
 >[!NOTE]
 >
->The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
+>Die Client-Bibliothek des Editors setzt voraus, dass der Namespace `cq.shared` in den Inhaltsseiten vorhanden ist. Wenn er nicht vorhanden ist, wird der JavaScript-Fehler `Uncaught TypeError: Cannot read property 'shared' of undefined` gemeldet.
 >
->Alle Beispielinhaltsseiten enthalten `cq.shared`, sodass jeglicher darauf basierender Inhalt automatisch `cq.shared` umfasst. Wenn Sie sich jedoch ganz neue eigene Inhaltsseiten erstellen möchten, die nicht auf Beispielinhalt basieren, müssen Sie sicherstellen, dass Sie den `cq.shared`-Namespace einbinden.
+>Alle Beispielinhaltsseiten enthalten `cq.shared`, sodass jeglicher darauf basierender Inhalt automatisch `cq.shared` umfasst. Wenn Sie sich jedoch ganz neue eigene Inhaltsseiten erstellen möchten, die nicht auf Beispielinhalt basieren, müssen Sie sicherstellen, dass Sie den Namespace `cq.shared` einbinden.
 >
->Weitere Informationen finden Sie unter [Verwendung clientseitiger Bibliotheken](/help/sites-developing/clientlibs.md).
+>Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
 
 >[!CAUTION]
 >
@@ -166,26 +166,26 @@ In einer Standard-AEM-Instanz ist der Ordner **Global** bereits in der Vorlagenk
 
 >[!CAUTION]
 >
->Folders must be created by a user with `admin` rights.
+>Ordner müssen von einem Benutzer mit `admin`-Rechten erstellt werden.
 
 Arten von Vorlagen und Richtlinien werden gemäß der folgenden Rangordnung in allen Ordnern übernommen:
 
-1. der aktuelle Ordner
-1. dem aktuellen Ordner übergeordnete Elemente
+1. der aktuelle Ordner.
+1. dem aktuellen Ordner übergeordnete Elemente.
 1. `/conf/global`
 1. `/apps`
 1. `/libs`
 
-Eine Liste aller zulässigen Einträge wird erstellt. If any configurations overlap ( `path`/ `label`), only the instance closest to the current folder is presented to the user.
+Eine Liste aller zulässigen Einträge wird erstellt. Wenn sich Konfigurationen (`label`/`path`) überschneiden, wird den Benutzern nur die Instanz angezeigt, die dem aktuellen Ordner am nächsten ist.
 
 Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
 
 * Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
-* Verwenden des Konfigurationsbrowsers
+* Verwenden des Konfigurations-Browsers
 
-### Verwenden von CRXDE Lite {#using-crxde-lite}
+### Verwenden von CRXDE Lite  {#using-crxde-lite}
 
-1. Ein neuer Ordner (unter /conf) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
+1. Ein neuer Ordner (unter „/conf“) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
    Nur die folgende Struktur darf verwendet werden:
 
@@ -205,70 +205,70 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
    Name: `jcr:title`
 
    * Typ: `String`
-   * Wert: Der Titel (für den Ordner), der Ihnen in der **Vorlagen**-Konsole angezeigt werden soll
+   * Wert: Der Titel (für den Ordner), der in der **Vorlagen**-Konsole angezeigt werden soll
 
 1. *Zusätzlich* zu den standardmäßigen Autorenprivilegien und -berechtigungen (z. B. `content-authors`), müssen Sie jetzt eine oder mehrere Gruppen zuweisen und die erforderlichen Zugriffsrechte (ACLs) definieren, damit Ihre Autoren in der Lage sind, Vorlagen im neuen Ordner zu erstellen.
 
    Die Gruppe `template-authors` ist die Standardgruppe, die zugewiesen werden muss. Weitere Informationen finden Sie im folgenden Abschnitt [ACLs und Gruppen](/help/sites-developing/page-templates-editable.md#acls-and-groups).
 
-   See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
+   Ausführliche Informationen zum Verwalten und Zuweisen von Zugriffsrechten finden Sie unter [Verwaltung von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Verwenden des Konfigurationsbrowsers {#using-the-configuration-browser}
+### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
-1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurationsbrowser**.
+1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurations-Browser**.
 
    Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners **global**.
 
 1. Klicken Sie auf **Erstellen**.
-1. In the **Create Configuration** dialog the following fields need to be configured:
+1. Im Dialogfeld **Konfiguration erstellen** müssen die folgenden Felder konfiguriert werden:
 
    * **Titel**: Geben Sie einen Titel für den Konfigurationsordner ein.
    * **Bearbeitbare Vorlagen**: Aktivieren Sie dieses Kontrollkästchen, um bearbeitbare Vorlagen in diesem Ordner zuzulassen.
 
-1. Klicken Sie auf **Erstellen**
+1. Klicken Sie auf **Erstellen**.
 
 >[!NOTE]
 >
->Im Konfigurationsbrowser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
+>Im Konfigurations-Browser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
 >
->See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+>Weitere Informationen finden Sie in der Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md).[
 
-### ACLs und Gruppen {#acls-and-groups}
+### ACLs und Gruppen   {#acls-and-groups}
 
-Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder mit dem Konfigurationsbrowser), müssen ACLs für die entsprechenden Gruppen für die Vorlagenordner definiert werden, um ein angemessenes Maß an Sicherheit zu gewährleisten.
+Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigurations-Browser), müssen ACLs für die entsprechenden Gruppen für die Vorlagenordner definiert werden, um ein angemessenes Maß an Sicherheit zu gewährleisten.
 
 Die Vorlagenordner für die [We.Retail-Referenzimplementierung ](/help/sites-developing/we-retail.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“ {#the-template-authors-group}
+#### Die Gruppe „template-authors“{#the-template-authors-group}
 
-Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und ist standardmäßig in AEM integriert, diese ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
+Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
 >[!CAUTION]
 >
->Die Gruppe `template-authors` ist *nur* für Benutzer, die die Möglichkeit haben müssen, neue Vorlagen zu erstellen.
+>Die Gruppe `template-authors` ist nur für Benutzer, die die Möglichkeit haben müssen, neue Vorlagen zu erstellen.**
 >
->Die Bearbeitung von Vorlagen ist sehr leistungsstark und wenn nicht richtig ausgeführt, können vorhandene Vorlagen beschädigt werden. Daher sollte diese Rolle zielgerichtet und nur qualifizierten Benutzer zugewiesen werden.
+>Das Bearbeiten von Vorlagen hat weitreichende Auswirkungen und bei nicht ordnungsgemäßem Vorgehen können vorhandene Vorlagen beschädigt werden. Daher sollte diese Rolle zielgerichtet und nur qualifizierten Benutzer zugewiesen werden.
 
 In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbeitung von Vorlagen aufgeführt.
 
 <table> 
  <tbody> 
   <tr> 
-   <th>Pfad          </th> 
+   <th>Pfad</th> 
    <th>Rolle/Gruppe</th> 
    <th>Berechtigungen<br /> </th> 
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td> 
-   <td>Template Authors<br /> </td> 
-   <td>Lesen, Schreiben, Replizieren</td> 
-   <td>Vorlagenautoren, die Vorlagen im Site-spezifischen <code>/conf</code> Raum erstellen, lesen, aktualisieren, löschen und replizieren</td> 
+   <td>Vorlagenautoren<br /> </td> 
+   <td>lesen, schreiben, replizieren</td> 
+   <td>Vorlagenautoren, die Vorlagen im Site-spezifischen <code>/conf</code>-Raum erstellen, lesen, aktualisieren, löschen und replizieren</td> 
   </tr> 
   <tr> 
-   <td>Anonymer Webbenutzer</td> 
+   <td>Anonymer Web-Anwender</td> 
    <td>lesen</td> 
-   <td>Anonymer Webbenutzer muss Vorlagen beim Rendern einer Seite lesen</td> 
+   <td>Anonymer Web-Anwender muss Vorlagen beim Rendern einer Seite lesen</td> 
   </tr> 
   <tr> 
    <td>Autoren von Inhalten</td> 
@@ -278,18 +278,18 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
   <tr> 
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td> 
    <td><code>Template Author</code></td> 
-   <td>Lesen, Schreiben, Replizieren</td> 
-   <td>Vorlagenautoren, die Vorlagen im Site-spezifischen <code>/conf</code> Raum erstellen, lesen, aktualisieren, löschen und replizieren</td> 
+   <td>lesen, schreiben, replizieren</td> 
+   <td>Vorlagenautoren, die Vorlagen im Site-spezifischen <code>/conf</code>-Raum erstellen, lesen, aktualisieren, löschen und replizieren</td> 
   </tr> 
   <tr> 
-   <td>Anonymer Webbenutzer</td> 
+   <td>Anonymer Web-Anwender</td> 
    <td>lesen</td> 
-   <td>Anonymer Webbenutzer muss beim Rendern einer Seite Richtlinien lesen</td> 
+   <td>Anonymer Web-Anwender muss beim Rendern einer Seite Richtlinien lesen</td> 
   </tr> 
   <tr> 
    <td>Autoren von Inhalten</td> 
    <td>replizieren</td> 
-   <td>Inhaltsersteller müssen beim Aktivieren einer Seite die Richtlinien einer Vorlage aktivieren</td> 
+   <td>Inhaltsautoren müssen beim Aktivieren einer Seite die Richtlinien einer Vorlage aktivieren</td> 
   </tr> 
   <tr> 
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td> 
@@ -298,23 +298,23 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
    <td>Der Vorlagenautor erstellt eine neue Vorlage basierend auf einem der vordefinierten Vorlagentypen.</td> 
   </tr> 
   <tr> 
-   <td>Anonymer Webbenutzer</td> 
-   <td>none</td> 
-   <td>Anonymer Webbenutzer darf nicht auf die Vorlagentypen zugreifen</td> 
+   <td>Anonymer Web-Anwender</td> 
+   <td>keine</td> 
+   <td>Anonymer Web-Anwender darf nicht auf die Vorlagentypen zugreifen</td> 
   </tr> 
  </tbody> 
 </table>
 
-This default `template-authors` group only covers the project setups, where all `template-authors` members are allowed to access and author all templates. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen bleiben dabei jedoch dieselben.
+Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstellungen, bei denen alle Mitglieder von `template-authors` auf alle Vorlagen zugreifen und diese erstellen dürfen. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen bleiben dabei jedoch dieselben.
 
-#### Alte Vorlagen unter /conf/global {#legacy-templates-under-conf-global}
+#### Alte Vorlagen unter /conf/global  {#legacy-templates-under-conf-global}
 
-Templates should no longer be stored in `/conf/global`, however for some legacy installations there may still be templates in this location. ONLY in such legacy situations should the following `/conf/global` paths be explicitly configured.
+Vorlagen sollten nicht mehr in `/conf/global` gespeichert werden. Bei einigen älteren Installationen gibt es jedoch möglicherweise noch Vorlagen an diesem Speicherort. NUR in solchen Legacy-Situationen sollten die folgenden `/conf/global`-Pfade explizit konfiguriert werden.
 
 <table> 
  <tbody> 
   <tr> 
-   <th>Pfad          </th> 
+   <th>Pfad</th> 
    <th>Rolle/Gruppe</th> 
    <th>Berechtigungen<br /> </th> 
    <th>Beschreibung</th> 
@@ -322,13 +322,13 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
   <tr> 
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td> 
    <td>Vorlagenautoren</td> 
-   <td>Lesen, Schreiben, Replizieren</td> 
+   <td>lesen, schreiben, replizieren</td> 
    <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren in <code>/conf/global</code></td> 
   </tr> 
   <tr> 
-   <td>Anonymer Webbenutzer</td> 
+   <td>Anonymer Web-Anwender</td> 
    <td>lesen</td> 
-   <td>Anonymer Webbenutzer muss Vorlagen beim Rendern einer Seite lesen</td> 
+   <td>Anonymer Web-Anwender muss Vorlagen beim Rendern einer Seite lesen</td> 
   </tr> 
   <tr> 
    <td>Autoren von Inhalten</td> 
@@ -338,29 +338,29 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
   <tr> 
    <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td> 
    <td><code>Template Author</code></td> 
-   <td>Lesen, Schreiben, Replizieren</td> 
+   <td>lesen, schreiben, replizieren</td> 
    <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren in <code>/conf/global</code></td> 
   </tr> 
   <tr> 
-   <td>Anonymer Webbenutzer</td> 
+   <td>Anonymer Web-Anwender</td> 
    <td>lesen</td> 
-   <td>Anonymer Webbenutzer muss beim Rendern einer Seite Richtlinien lesen</td> 
+   <td>Anonymer Web-Anwender muss beim Rendern einer Seite Richtlinien lesen</td> 
   </tr> 
   <tr> 
    <td>Autoren von Inhalten</td> 
    <td>replizieren</td> 
-   <td>Inhaltsersteller müssen beim Aktivieren einer Seite die Richtlinien einer Vorlage aktivieren</td> 
+   <td>Inhaltsautoren müssen beim Aktivieren einer Seite die Richtlinien einer Vorlage aktivieren</td> 
   </tr> 
   <tr> 
    <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td> 
    <td>Vorlagenautor</td> 
    <td>lesen</td> 
-   <td>Vorlagenautor erstellt eine neue Vorlage basierend auf einem der vordefinierten Vorlagentypen</td> 
+   <td>Der Vorlagenautor erstellt eine neue Vorlage basierend auf einem der vordefinierten Vorlagentypen</td> 
   </tr> 
   <tr> 
-   <td>Anonymer Webbenutzer</td> 
-   <td>none</td> 
-   <td>Anonymer Webbenutzer darf nicht auf die Vorlagentypen zugreifen</td> 
+   <td>Anonymer Web-Anwender</td> 
+   <td>keine</td> 
+   <td>Anonymer Web-Anwender darf nicht auf die Vorlagentypen zugreifen</td> 
   </tr> 
  </tbody> 
 </table>
@@ -377,7 +377,7 @@ Beim Erstellen einer neuen Vorlage müssen Sie einen Vorlagentyp angeben:
 * Vorlagentypen ermöglichen es Ihnen, Folgendes zu definieren:
 
    * Den Ressourcentyp der Seitenkomponente.
-   * Die Richtlinie des Stammknotens, die die im Vorlagen-Editor zulässigen Komponenten definiert.
+   * Die Richtlinie des Stammknotens, die die im Vorlageneditor zulässigen Komponenten definiert.
    * Es wird empfohlen, die Haltepunkte für das responsive Raster und das Setup des Emulators für mobile Geräte über den Vorlagentyp zu definieren. Dies ist optional, da die Konfiguration auch für eine einzelne Vorlage definiert werden kann (siehe [Vorlagentyp und Mobilgerätegruppen](/help/sites-developing/page-templates-editable.md#template-type-and-mobile-device-groups)).
 
 * AEM stellt einige vordefinierte Vorlagentypen wie HTML5-Seiten und Seiten mit adaptivem Formular bereit.
@@ -392,13 +392,13 @@ Die vordefinierten Vorlagentypen werden unter dem folgenden Pfad gespeichert:
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Der Grund dafür ist, dass der Inhalt von `/libs` beim nächsten Aktualisieren der Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
 Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad vergleichbaren Stelle gespeichert werden:
 
 * `/apps/settings/wcm/template-types`
 
-Definitions for your customized templates types should be stored in user-defined folders (recommended) or alternatively in `global`. Beispiel:
+Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefinierten Ordnern (empfohlen) oder alternativ im Ordner `global` gespeichert werden. Beispiel:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -406,7 +406,7 @@ Definitions for your customized templates types should be stored in user-defined
 
 >[!CAUTION]
 >
->The template types have to respect the correct folder structure (i.e. `/settings/wcm/...`), otherwise the template types will not be found.
+>Die Vorlagentypen müssen die korrekte Ordnerstruktur aufweisen (also `/settings/wcm/...`), sonst werden die Vorlagentypen nicht gefunden.
 
 ### Vorlagentyp und Mobilgerätegruppen {#template-type-and-mobile-device-groups}
 
@@ -419,7 +419,7 @@ Beim Erstellen einer neuen bearbeitbaren Vorlage wird der Wert aus dem Vorlagent
 
 >[!CAUTION]
 >
->The value of `cq:deviceGroups` must be set as a relative path such as `mobile/groups/responsive` and not as an absolute path such as `/etc/mobile/groups/responsive`.
+>Der Wert von `cq:deviceGroups` muss als relativer Pfad wie `mobile/groups/responsive` und nicht als absoluter Pfad wie `/etc/mobile/groups/responsive` festgelegt werden.
 
 >[!NOTE]
 >
@@ -431,10 +431,10 @@ Beim Erstellen einer neuen bearbeitbaren Vorlage wird der Wert aus dem Vorlagent
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Create a template as you would any editable template [as documented here](/help/sites-authoring/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
+1. Erstellen Sie eine Vorlage wie jede bearbeitbare Vorlage [wie hier beschrieben](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als Grundlage für Ihren Vorlagentyp dient.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Delete the template from the `templates` node under the [template folder](/help/sites-developing/page-templates-editable.md#template-folders).
-1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` `jcr:content` properties.
+1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
+1. Löschen Sie in der Kopie der Vorlage, die sich unter dem Knoten `template-types` befindet, alle `cq:template`-, `cq:templateType`- und `jcr:content`-Eigenschaften.
 
 Sie können auch Ihren eigenen Vorlagentyp entwickeln, indem Sie eine bearbeitbare Beispielvorlage von GitHub als Grundlage verwenden.
 
@@ -442,8 +442,8 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub
 
-* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip) herunter
+* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip) herunter.
 
 ## Vorlagendefinitionen {#template-definitions}
 
@@ -495,13 +495,13 @@ Die Hauptelemente sind:
    * [`policies`](#policies)
    * `thumbnail.png`
 
-### jcr:content{#jcr-content} gespeichert 
+### jcr:content {#jcr-content}
 
 Dieser Knoten enthält Eigenschaften für die Vorlage:
 
 * **Name**: `jcr:title`
 
-* **Name**: `status`
+* **Name**:  `status`
 
    * **Typ**: `String`
    * **Wert**: `draft`, `enabled` oder `disabled`
@@ -510,41 +510,41 @@ Dieser Knoten enthält Eigenschaften für die Vorlage:
 
 Definiert die Struktur der resultierenden Seite:
 
-* Is merged with the initial content ( `/initial`) when creating a new page.
-* Änderungen an der Struktur werden auf allen mit der Vorlage erstellten Seiten berücksichtigt.
-* The `root` ( `structure/jcr:content/root`) node defines the list of components that will be available in the resulting page.
+* Sie wird beim Erstellen einer neuen Seite mit dem anfänglichen Inhalt (`/initial`) zusammengeführt.
+* Änderungen an der Struktur werden bei allen mit der Vorlage erstellten Seiten berücksichtigt.
+* Der Knoten `root` (`structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sein werden.
 
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können auf resultierenden Seiten nicht verschoben oder gelöscht werden.
+   * Komponenten, die in der Vorlagenstruktur definiert sind, können in resultierenden Seiten nicht verschoben oder gelöscht werden.
    * Sobald eine Komponente entsperrt ist, wird die Eigenschaft `editable` auf `true` festgelegt.
    * Sobald eine Komponente, die bereits Inhalt enthält, entsperrt ist, wird dieser Inhalt in die Verzweigung `initial` verschoben.
 
-* The `cq:responsive` node holds definitions for the responsive layout.
+* Der Knoten `cq:responsive` enthält Definitionen für das responsive Layout.
 
 ### Anfänglicher Inhalt {#initial-content}
 
 Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 * Er enthält einen Knoten `jcr:content`, der auf alle neue Seiten kopiert wird.
-* Is merged with the structure ( `/structure`) when creating a new page.
+* Er wird beim Erstellen einer neuen Seite mit der Struktur (`/structure`) zusammengeführt.
 * Vorhandene Seiten werden nicht aktualisiert, wenn der anfängliche Inhalt nach der Erstellung geändert wird.
 * Der Knoten `root` enthält eine Liste von Komponenten, mit denen festgelegt wird, was auf der resultierenden Seite verfügbar sein soll.
 * Wird einer Komponente im Strukturmodus Inhalt hinzugefügt und wird diese Komponente anschließend entsperrt (oder umgekehrt), so wird dieser Inhalt als anfänglicher Inhalt verwendet.
 
 ### Layout {#layout}
 
-When [editing a template you can define the layout](/help/sites-authoring/templates.md), this uses [standard responsive layout](/help/sites-authoring/responsive-layout.md) that can also be [configured](/help/sites-administering/configuring-responsive-layout.md).
+Beim Bearbeiten einer Vorlage können Sie das Layout](/help/sites-authoring/templates.md) definieren. Dabei wird [responsives Standardlayout](/help/sites-authoring/responsive-layout.md) verwendet, das auch [konfiguriert werden kann.[](/help/sites-administering/configuring-responsive-layout.md)
 
 ### Inhaltsrichtlinien {#content-policies}
 
-Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlagen-Editor erstellt und ausgewählt werden.
+Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
 
-* The property `cq:policy`, on the `root` node
+* Die Eigenschaft `cq:policy` im Knoten `root`
 
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 
    Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem der Seite bereit.
 
-* The property `cq:policy`, on the component-explicit nodes under `root`, provide links to the policies for the individual components.
+* Die Eigenschaft `cq:policy` der komponentenexpliziten Knoten unter `root` stellt Links zu den Richtlinien für die einzelnen Komponenten bereit.
 
 * Die tatsächlichen Richtliniendefinitionen werden gespeichert unter:
 
@@ -558,7 +558,7 @@ Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften e
 >
 >Für Seiten, die anhand bearbeitbarer Vorlagen erstellt wurden, steht der Designmodus im Seiten-Editor nicht zur Verfügung.
 >
->The `policies` tree of an editable template has the same hierarchy as the design mode configuration of a static template under:
+>Die `policies`-Struktur einer bearbeitbaren Vorlage hat dieselbe Hierarchie wie die Designmoduskonfiguration einer statischen Vorlage unter:
 >
 >`/etc/designs/<my-site>/jcr:content/<component-name>`
 >
@@ -568,16 +568,16 @@ Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften e
 
 Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) für die Seite (Hauptabsatzsystem) entweder in der Vorlage oder den resultierenden Seiten zu definieren.
 
-### Aktivieren und Zulassen einer Vorlage {#enabling-and-allowing-a-template-for-use}
+### Aktivieren und Zulassen einer Vorlage   {#enabling-and-allowing-a-template-for-use}
 
 1. **Aktivieren Sie die Vorlage.**
 
    Bevor eine Vorlage verwendet werden kann, muss sie auf eine der folgenden Weisen aktiviert werden:
 
    * [Durch Aktivieren der Vorlage](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author) über die **Vorlagenkonsole**
-   * Setting the status property on the `jcr:content` node.
+   * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
-      * Beispiel: on:
+      * Zum Beispiel unter:
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
       * die Eigenschaft:
 
@@ -588,11 +588,11 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 1. **Zugelassene Vorlagen**
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
-   * Legen Sie die Eigenschaft fest:
+   * Legen Sie die folgende Eigenschaft fest:
 
       `cq:allowedTemplates`
 
-      Auf dem `jcr:content` Knoten der erforderlichen Verzweigung.
+      Auf dem Knoten `jcr:content` der erforderlichen Verzweigung.
    Beispielsweise mit dem Wert:
 
    `/conf/<your-folder>/settings/wcm/templates/.*;`
@@ -623,28 +623,28 @@ Das obige Diagramm veranschaulicht, wie Vorlagen, Inhalte und Komponenten zusamm
 
 * Konfiguration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
 
-   Die Seitenkonfiguration wird durch die [Vorlage und die entsprechenden Inhaltsrichtlinien](#template-definitions) definiert.
+   Die [Vorlage und zugehörige Inhaltsrichtlinien](#template-definitions) definieren die Seitenkonfiguration.
 
 * Modell - OSGi-Pakete
 
-   Die [OSGI-Pakete](/help/sites-deploying/osgi-configuration-settings.md) implementieren die Funktionalität.
+   Die [OSGI-Bundles](/help/sites-deploying/osgi-configuration-settings.md) implementieren die Funktionalität.
 
 * Anzeigen - `/apps/<my-site>/components`
 
-   On both the author and publish environments the content is rendered by [components](/help/sites-developing/components.md).
+   Sowohl auf der Autor- als auch auf der Veröffentlichungs-Umgebung wird der Inhalt von [components](/help/sites-developing/components.md) gerendert.
 
 Beim Rendern einer Seite:
 
 * **Vorlagen**:
 
-   * The `cq:template` property of its `jcr:content` node will be referenced to access the template that corresponds to that page.
+   * Es wird ein Verweis auf die Eigenschaft `cq:template` ihres Knotens `jcr:content` erstellt, um auf die Vorlage zuzugreifen, die dieser Seite entspricht.
 
 * **Komponenten**:
 
-   * The page component will merge the `structure/jcr:content` tree of the template with the `jcr:content` tree of the page.
+   * Die Seitenkomponente führt den Baum `structure/jcr:content` der Vorlage mit dem Baum `jcr:content` der Seite zusammen.
    * Die Seitenkomponente gestattet es dem Autor, nur die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet sind (sowie jegliche untergeordneten Elemente).
    * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente vom Knoten `jcr:content` übernommen. Derselbe Pfad unter dem Knoten `policies/jcr:content` der Vorlage wird dann durchsucht.
 
-      * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
-      * Auf diese Weise können Sie mehrere Vorlagen verwenden, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
+      * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
+      * Auf diese Weise können Sie mehrere Vorlagen nutzen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
 
