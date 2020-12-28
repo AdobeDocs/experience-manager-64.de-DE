@@ -1,6 +1,6 @@
 ---
-title: Einzelseiten-Webanwendungen
-seo-title: Einzelseiten-Webanwendungen
+title: Single Page Applications
+seo-title: Einzelseitenanwendungen
 description: Auf dieser Seite erfahren Sie mehr über Einzelseitenanwendungen, d. h. Sie können eine Anwendung erstellen, die genauso wie eine Desktop- oder Mobilanwendung funktioniert.
 seo-description: Auf dieser Seite erfahren Sie mehr über Einzelseitenanwendungen, d. h. Sie können eine Anwendung erstellen, die genauso wie eine Desktop- oder Mobilanwendung funktioniert.
 uuid: d1865e79-6e7c-4149-95c0-556e61478b01
@@ -24,11 +24,11 @@ ht-degree: 3%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-[Einzelseitenanwendungen](https://en.wikipedia.org/wiki/Single-page_application) (SPA) haben eine kritische Masse erreicht, die weithin als das effektivste Muster für die Erstellung nahtloser Erlebnisse mit Webtechnologie angesehen wird. Indem Sie ein SPA-Muster befolgen, können Sie eine Anwendung erstellen, die genauso funktioniert wie eine Desktop- oder Mobilanwendung, aber aufgrund ihrer Grundlage in offenen Webstandards eine Vielzahl von Geräteplattformen und -formen erreicht.
+[Einzelseitenanwendungen](https://en.wikipedia.org/wiki/Single-page_application)  (SPA) haben eine kritische Masse erreicht, die weithin als das effektivste Muster für die Erstellung nahtloser Erlebnisse mit Webtechnologie angesehen wird. Indem Sie ein SPA Muster befolgen, können Sie eine Anwendung erstellen, die genauso wie eine Desktop- oder Mobilanwendung funktioniert, aber aufgrund ihrer Grundlage in offenen Webstandards eine Vielzahl von Geräteplattformen und Formularfaktoren erreicht.
 
-Im Allgemeinen werden SPAs leistungsfähiger als herkömmliche seitenbasierte Websites, da sie in der Regel eine vollständige HTML-Seite **nur einmal** laden (einschließlich CSS, JS und unterstützender Schriftartinhalte) und dann nur genau das laden, was bei jeder Statusänderung in der App erforderlich ist. Was für diese Statusänderung erforderlich ist, kann je nach ausgewählter Technologie variieren, enthält jedoch in der Regel ein einzelnes HTML-Fragment, um die vorhandene &quot;Ansicht&quot;zu ersetzen, und die Ausführung eines JS-Codeblocks, um die neue Ansicht zu verkabeln und gegebenenfalls eine clientseitige Vorlagendarstellung durchzuführen. Die Geschwindigkeit dieser Statusänderung kann durch die Unterstützung von Vorlagenzwischenspeicherungsmechanismen noch weiter verbessert werden, oder sogar durch den Offline-Zugriff auf Vorlageninhalte, wenn Adobe PhoneGap verwendet wird.
+Im Allgemeinen werden SPA leistungsfähiger als herkömmliche seitenbasierte Websites, da sie in der Regel eine vollständige HTML-Seite **nur einmal laden (einschließlich CSS, JS und unterstützender Schriftartinhalte) und dann nur genau das laden, was bei jeder Statusänderung in der App erforderlich ist.** Was für diese Statusänderung erforderlich ist, kann je nach ausgewählter Technologie variieren, enthält jedoch in der Regel ein einzelnes HTML-Fragment, um die vorhandene &quot;Ansicht&quot;zu ersetzen, und die Ausführung eines JS-Codeblocks, um die neue Ansicht zu verkabeln und gegebenenfalls eine clientseitige Vorlagendarstellung durchzuführen. Die Geschwindigkeit dieser Statusänderung kann durch die Unterstützung von Vorlagenzwischenspeicherungsmechanismen noch weiter verbessert werden, oder sogar durch den Offline-Zugriff auf Vorlageninhalte, wenn Adobe PhoneGap verwendet wird.
 
-AEM 6.1 unterstützt den Aufbau und die Verwaltung von SPAs über AEM Apps. Dieser Artikel enthält eine Einführung in die Konzepte hinter der SPA und wie sie [AngularJS](https://angularjs.org/) nutzen, um Ihre Marke in den App Store und Google Play zu bringen.
+AEM 6.1 unterstützt das Erstellen und Verwalten von SPA über AEM Apps. Dieser Artikel enthält eine Einführung in die Konzepte hinter der SPA und wie sie [AngularJS](https://angularjs.org/) nutzen, um Ihre Marke in den App Store und Google Play zu bringen.
 
 ## SPA in AEM Apps {#spa-in-aem-apps}
 
@@ -58,7 +58,7 @@ Die Vorlage, die geladen werden soll, wenn diese Route angefordert wird, wird vo
 
 ## Seitencontroller {#page-controllers}
 
-In Angulas eigenen Worten: &quot;Ein Controller ist eine JavaScript-Konstruktorfunktion, mit der der Angular-Umfang erweitert wird.&quot; ([Quelle](https://docs.angularjs.org/guide/controller)) Jede Seite in einer AEM App wird automatisch an einen Controller angeschlossen, der von jedem Controller, der eine `frameworkType` von `angular`angibt, erweitert werden kann. Sehen Sie sich die ng-text-Komponente als Beispiel an (/libs/mobileapps/components/angular/ng-text), einschließlich des cq:template-Knotens, der sicherstellt, dass jede Komponente, die einer Seite hinzugefügt wird, diese wichtige Eigenschaft enthält.
+In Angulas eigenen Worten: &quot;Ein Controller ist eine JavaScript-Konstruktorfunktion, mit der der Angular-Umfang erweitert wird.&quot; ([source](https://docs.angularjs.org/guide/controller)) Jede Seite in einer AEM App wird automatisch an einen Controller verdrahtet, der von jedem Controller, der einen `frameworkType` von `angular` angibt, erweitert werden kann. Sehen Sie sich die ng-text-Komponente als Beispiel an (/libs/mobileapps/components/angular/ng-text), einschließlich des cq:template-Knotens, der sicherstellt, dass jede Komponente, die einer Seite hinzugefügt wird, diese wichtige Eigenschaft enthält.
 
 Für ein komplexeres Beispiel für einen Controller öffnen Sie das Skript &quot;ng-template-page controller.jsp&quot;(unter /apps/geometrixx-outdoors-app/components/angular/ng-template-page). Von besonderem Interesse ist der JavaScript-Code, den er bei Ausführung generiert, der wie folgt rendert:
 
@@ -83,10 +83,10 @@ Für ein komplexeres Beispiel für einen Controller öffnen Sie das Skript &quot
 ])
 ```
 
-Im obigen Beispiel werden Sie bemerken, dass wir einen Parameter aus dem `$routeParams` Dienst nehmen und ihn dann in die Verzeichnisstruktur massieren, in der unsere JSON-Daten gespeichert sind. Durch den Umgang mit dem Sku `id` auf diese Weise sind wir in der Lage, eine einzige Produktvorlage zu liefern, die die Produktdaten für potenziell Tausende von einzelnen Produkten wiedergeben kann. Dies ist ein weitaus skalierbareres Modell, das eine individuelle Route für jeden Artikel in einer (potenziell) umfangreichen Produktdatenbank erfordert.
+Im obigen Beispiel werden Sie bemerken, dass wir einen Parameter aus dem `$routeParams`-Dienst nehmen und ihn dann in die Verzeichnisstruktur massieren, in der unsere JSON-Daten gespeichert sind. Indem wir uns mit dem sku `id` auf diese Weise befassen, sind wir in der Lage, eine einzige Produktvorlage zu liefern, die die Produktdaten für potenziell Tausende von verschiedenen Produkten wiedergeben kann. Dies ist ein weitaus skalierbareres Modell, das eine individuelle Route für jeden Artikel in einer (potenziell) umfangreichen Produktdatenbank erfordert.
 
-Es gibt auch zwei Komponenten: ng-product erweitert den Umfang mit den Daten, die er aus dem oben genannten `$http` Aufruf extrahiert. Es gibt auch ein ng-Bild auf dieser Seite, das wiederum den Umfang mit dem Wert, den es aus der Antwort abruft, erweitert. Aufgrund von Angular&#39;s `$http` Dienst wird jede Komponente geduldig warten, bis die Anforderung abgeschlossen ist und das von ihr erstellte Versprechen erfüllt wird.
+Es gibt auch zwei Komponenten: ng-product erweitert den Bereich mit den Daten, die es aus dem oben stehenden `$http`-Aufruf extrahiert. Es gibt auch ein ng-Bild auf dieser Seite, das wiederum den Umfang mit dem Wert, den es aus der Antwort abruft, erweitert. Aufgrund des Angular-Dienstes `$http` wartet jede Komponente geduldig, bis die Anforderung abgeschlossen ist und das erstellte Versprechen erfüllt wird.
 
 ## Die nächsten Schritte {#the-next-steps}
 
-Sobald Sie Informationen zu Einzelseitenanwendungen erhalten haben, finden Sie weitere Informationen unter [Entwickeln von Apps mit der PhoneGap-CLI](/help/mobile/phonegap-apps-pg-cli.md).
+Sobald Sie Informationen zu Einzelseitenanwendungen erhalten haben, finden Sie unter [Entwickeln von Apps mit PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).
