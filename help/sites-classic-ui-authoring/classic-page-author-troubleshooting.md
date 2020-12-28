@@ -71,7 +71,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Bei Verwendung der Option **Suchen &amp; Ersetzen** kann es vorkommen, dass nicht alle Instanzen des Begriffs `find` auf einer Seite ersetzt werden.
 
 * **Grund**:
 
