@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Artikelexportkonfiguration erstellen{#creating-article-export-configuration}
+# Erstellen der Artikelexportkonfiguration{#creating-article-export-configuration}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 6%
 >
 >**Voraussetzung**:
 >
->Bevor Sie mehr über das Erstellen und Bearbeiten freigegebener Ressourcen erfahren, lesen Sie die [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) , um die grundlegenden Konzepte zu verstehen.
+>Bevor Sie mehr über das Erstellen und Bearbeiten freigegebener Ressourcen erfahren, lesen Sie [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md), um die grundlegenden Konzepte zu verstehen.
 
 AEM Mobile-Benutzer verwenden Content Sync, um Live-Inhalte für die Verwendung in mobilen Apps in statische Inhalte zu exportieren. Dieser Export erfolgt, wenn Inhalte von AEM Mobile in Mobile On-Demand Services hochgeladen werden.
 
@@ -38,16 +38,16 @@ Die folgenden Ressourcen beschreiben den Export von Inhalten aus Adobe Experienc
 
 Artikel enthalten Inhalte, die exportiert und hochgeladen werden müssen. Einige dieser Inhalte können für Artikel freigegeben werden.
 
-Verwenden Sie [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) , um den Inhalt zusammenzutragen und ein ***Shared Resources*** -Paket zu erstellen.
+Verwenden Sie [ContentSync](/help/mobile/mobile-ondemand-contentsync.md), um den Inhalt zusammenzutragen und ein ***Freigegebene Ressourcen***-Paket zu erstellen.
 
-Die unter **&lt;dps-exportTemplate>/dps-article>** gefundene ContentSync-Konfiguration sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendern der Eigenschaft auf dem Gerät erforderlich sind.
+Die unter **&lt;dps-exportTemplate>/dps-article>** gefundene ContentSync-Konfiguration sollte so konfiguriert werden, dass der gesamte Inhalt eines Artikels exportiert wird, der für das statische Rendern der Eigenschaft auf dem Gerät erforderlich ist.
 
 >[!CAUTION]
 >
 >Sie können die folgenden Schritte ausführen, um gemeinsam genutzte Ressourcen als Beispiel Ansicht, sofern Sie über Folgendes verfügen:
 >
 >* Beispielinhalt installiert
->* AEM
+>* aem
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Anschluss
 
 >
