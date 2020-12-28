@@ -73,4 +73,4 @@ We.Retail verfügt über eine globalisierte Site-Struktur, die Sprach-Master auf
 
 ## Weiterführende Informationen {#further-information}
 
-For further information, refer to the authoring document [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for complete technical details.
+Weitere Informationen finden Sie im Authoring-Dokument [Übersetzung von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
