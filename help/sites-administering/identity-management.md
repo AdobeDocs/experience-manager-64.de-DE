@@ -1,6 +1,6 @@
 ---
-title: Identitätsmanagement
-seo-title: Identitätsmanagement
+title: Identitäts-Management
+seo-title: Identitäts-Management
 description: Erfahren Sie mehr über Identitätsverwaltung in AEM.
 seo-description: Erfahren Sie mehr über Identitätsverwaltung in AEM.
 uuid: 719601d2-b850-4114-8ece-1b11708a5078
@@ -18,7 +18,7 @@ ht-degree: 78%
 ---
 
 
-# Identitätsmanagement{#identity-management}
+# Identitäts-Management{#identity-management}
 
 Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie ihnen die Möglichkeit zum Anmelden bieten. Es gibt verschiedene Gründe, warum Sie eine Anmeldemöglichkeit bieten sollten:
 
@@ -27,13 +27,13 @@ Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie 
 
    Möglicherweise müssen Sie den Zugriff auf Ihre Website (oder deren Bereiche) auf bestimmte Besucher beschränken.
 
-* [Personalisierung](/help/sites-administering/personalization.md) Ermöglicht es Besuchern, bestimmte Aspekte des Zugriffs auf Ihre Website zu konfigurieren.
+* [](/help/sites-administering/personalization.md) PersonalisierungBesucher können bestimmte Aspekte des Zugriffs auf Ihre Website konfigurieren.
 
-Die Anmelde (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil **](#profiles-and-user-accounts)bereitgestellt, das zusätzliche Informationen über den registrierten Besucher (Benutzer) enthält. Die tatsächlichen Prozesse für die Registrierung und Autorisierung können abweichen:
+Die Anmelde (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil**](#profiles-and-user-accounts) bereitgestellt, das zusätzliche Informationen über den registrierten Besucher (Benutzer) enthält. Die tatsächlichen Prozesse für die Registrierung und Autorisierung können abweichen:
 
 * Selbstregistrierung auf der Website
 
-   A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.
+   Eine [Community-Site](/help/communities/sites-console.md) kann so konfiguriert sein, dass Besucher sich selbst registrieren oder sich mit ihren Facebook- oder Twitter-Konten anmelden können.
 
 * Antrag auf Registrierung auf der Website
 
@@ -85,7 +85,7 @@ Benutzer können sich beispielsweise entweder anmelden oder mithilfe der Option 
 
 Da ein Anmeldemechanismus vorhanden ist, ist auch ein Abmeldemechanismus erforderlich. Dieser ist als Option **Abmelden** in Geometrixx verfügbar.
 
-## Anzeigen und Aktualisieren eines Profils {#viewing-and-updating-a-profile}
+## Anzeigen und Aktualisieren eines Profils  {#viewing-and-updating-a-profile}
 
 Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mit einem ähnlichen Formular erfolgen. zum Beispiel in Geometrixx:
 
@@ -93,7 +93,7 @@ Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informa
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:\
+Um die Details Ihres Profils anzuzeigen, klicken Sie auf **Mein Profil** oben rechts auf einer Seite. zum Beispiel mit dem Konto `admin`:\
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Autorenumgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
@@ -116,7 +116,7 @@ Sie können mit dem [ClientContext](/help/sites-administering/client-context.md)
 
 1. Sie können die Daten nun mit der Option **Profil bearbeiten** oder **Kennwort ändern** aktualisieren.
 
-## Hinzufügen von Feldern zur Profildefinition {#adding-fields-to-the-profile-definition}
+## Hinzufügen von Feldern zur Profildefinition  {#adding-fields-to-the-profile-definition}
 
 Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufügen eines Felds „Lieblingsfarbe“ zum Geometrixx-Profil:
 
@@ -148,7 +148,7 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
 
 ## Profilstatus {#profile-states}
 
-There are a number of use cases that require knowing whether a user (or rather their profile) is in a *specific state* or not.
+Es gibt eine Reihe von Anwendungsfällen, die wissen müssen, ob sich ein Benutzer (oder vielmehr sein Profil) in einem *spezifischen Status* befindet.
 
 Dazu müssen Sie eine geeignete Eigenschaft im Benutzerprofil in einer Weise definieren, die:
 
@@ -188,9 +188,9 @@ Ein Workflow ist erforderlich, um die statusbezogenen Aktionen zu implementieren
 
 ## Profile und Benutzerkonten {#profiles-and-user-accounts}
 
-Profiles are stored in the Content Repository as part of the [user account](/help/sites-administering/user-group-ac-admin.md).
+Profil werden im Content Repository als Teil des [Benutzerkontos](/help/sites-administering/user-group-ac-admin.md) gespeichert.
 
-The profile can be found under `/home/users/geometrixx`:
+Das Profil befindet sich unter `/home/users/geometrixx`:
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
@@ -207,7 +207,7 @@ Dadurch ist Folgendes möglich:
 
 Wenn ein solcher Zugriff für Ihre Installation nicht geeignet ist, können Sie diese Standardeinstellungen ändern.
 
-This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)**tab:
+Dies kann mithilfe der Registerkarte **[Zugriffskontrolle](/help/sites-administering/user-group-ac-admin.md#access-right-management)** durchgeführt werden:
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -215,7 +215,7 @@ This can be done using the **[Access Control](/help/sites-administering/user-gro
 
 Ein Bereich von Profilkomponenten zum Definieren der Profilanforderungen für Ihre Website ist ebenfalls vorhanden.
 
-### Geprüftes Kennwort-Feld {#checked-password-field}
+### Geprüftes Kennwort-Feld  {#checked-password-field}
 
 Diese Komponente bietet Ihnen zwei Felder für:
 
