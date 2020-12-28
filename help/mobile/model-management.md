@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Die Modellverwaltung umfasst die Erstellung und Verwaltung von Modellen zum Zweck der Verknüpfung mit Datenobjekten. Jedes Modell enthält alle Eigenschaften und Felddefinitionen, die zur Erleichterung der Erstellung und Wiedergabe von Objekten erforderlich sind.
 
-Die Modellverwaltung umfasst die Erstellung von **Modellen**, **Entitäten** und **Räumen**. Das folgende Diagramm zeigt die Beziehung zwischen dem AEM Content und den Modellen.
+Die Modellverwaltung umfasst die Erstellung von **Modellen**, **Entitäten** und **Leerzeichen**. Das folgende Diagramm zeigt die Beziehung zwischen dem AEM Content und den Modellen.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -52,7 +52,7 @@ Modelle werden verwendet, um zu bestimmen, wie Entitäten erstellt werden. Sie d
 >Ein Modell existiert außerhalb einer App, da es von mehr als einer App verwendet werden kann.
 
 
-Siehe **[Modelle](/help/mobile/administer-mobile-apps.md)**zum Erstellen und Verwalten von Modellen im Dashboard und Repository.
+Siehe **[Modelle](/help/mobile/administer-mobile-apps.md)**, um Modelle im Dashboard und Repository zu erstellen und zu verwalten.
 
 ### Entitäten im Inhaltsmodell {#entities-in-content-model}
 
@@ -60,7 +60,7 @@ Eine Entität ist eine Instanz eines Inhaltsmodells. Eine Entität wird über di
 
 Bei vorhandenen AEM wird eine Entität mithilfe eines Modells und der AEM Inhaltsquelle generiert. Eine Seitenentität ist beispielsweise ein vom Kanal und Layout unabhängiges Objekt, das von einer AEM und dem Seitenmodell generiert wird.
 
-Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Wenn beispielsweise eine *cq:page* aktualisiert wird, werden auch alle Entitäten, die auf dieser Seite basieren, aktualisiert.
+Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Wenn beispielsweise *cq:page* aktualisiert wird, werden auch alle Entitäten, die auf dieser Seite basieren, aktualisiert.
 
 Siehe **[Arbeiten mit Entitäten](/help/mobile/spaces-and-entities.md)**, um benutzerdefinierte Entitäten aus Modellen zu erstellen.
 
@@ -77,7 +77,7 @@ Auf der AEM Seite ist ein Leerzeichen eine bequeme Möglichkeit, damit verbunden
 
 *Beispiel*:
 
-Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Eine ist nur für den internen Gebrauch bestimmt, eine andere für den öffentlichen Gebrauch und eine dritte für allgemeine Entitäten, die von vielen Apps verwendet werden. Um eine einfache Verwaltung zu ermöglichen, erstellt der Benutzer drei Räume: *interne*, *öffentliche* (mit englischen und französischen Inhalten) und *gemeinsame* Räume für die Verwaltung der entsprechenden Entitäten, wie unten erwähnt:
+Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Eine ist nur für den internen Gebrauch bestimmt, eine andere für den öffentlichen Gebrauch und eine dritte für allgemeine Entitäten, die von vielen Apps verwendet werden. Um eine einfache Verwaltung zu ermöglichen, erstellt der Benutzer drei Leerzeichen: *internal*, *public* (mit sowohl englischem als auch französischem Inhalt) und *common* für die Verwaltung der entsprechenden Entitäten, wie unten erwähnt:
 
 * /content/instances/internal
 * /content/entity/public/de
@@ -86,7 +86,7 @@ Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Ei
 
 Dem Bereich wird ein Dienstendpunkt bereitgestellt, damit die native Client-Bibliothek eine Liste des Inhalts eines Bereichs anfordern kann. Diese &quot;Auflistung&quot;wird als JSON-Objekt zurückgegeben.
 
-Siehe **[Bereiche und Entitäten](/help/mobile/spaces-and-entities.md)**zum Erstellen und Veröffentlichen von Bereichen.
+Siehe **[Bereiche und Entitäten](/help/mobile/spaces-and-entities.md)** zum Erstellen und Veröffentlichen von Bereichen.
 
 >[!NOTE]
 >
