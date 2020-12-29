@@ -52,7 +52,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 * **logfile &lt;Dateiname> (In Protokolldatei schreiben):** Verwenden Sie diese Option, um die Konversation zwischen Client und Server in eine Protokolldatei zu schreiben. Dieser Parameter kann auch im stillen Modus genutzt werden.
 * **i &lt;numIndentions> (Einzug hinzufügen)**: Verwenden Sie diese Option, um jede aktive Verbindung der Lesbarkeit halber einzurücken. Der Standardwert beträgt 16 Ebenen. (Neu in der proxy.jar-Version 1.16).
 
-## Einsatzzwecke für das Proxyserver-Tool {#uses-of-the-proxy-server-tool}
+## Einsatzzwecke für das Proxyserver-Tool  {#uses-of-the-proxy-server-tool}
 
 In den folgenden Szenarien werden ein paar Einsatzzwecke demonstriert, für die das Proxyserver-Tool eingesetzt werden können:
 
@@ -100,7 +100,7 @@ Gehen Sie wie folgt vor, wenn gelegentlich hängende Anforderungen auftreten:
 1. Warten Sie oder schreiben Sie das Zugriffsprotokoll in eine Datei, in der jeder Eintrag einen Zeitstempel aufweist.
 1. Wenn hängende Anforderungen auftreten, können Sie sehen, wie viele Verbindungen offen waren und welche Anforderung dafür verantwortlich ist.
 
-## Das Format von Protokollmeldungen {#the-format-of-log-messages}
+## Das Format von Protokollmeldungen  {#the-format-of-log-messages}
 
 Die von proxy.jar erstellten Protokolleinträge haben das folgende Format:
 
@@ -128,7 +128,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Hier werden die Anzahl der Bytes, die zwischen dem Client und dem Server bei der 6. Verbindung übertragen wurden, und die durchschnittliche Geschwindigkeit angegeben.
 
-## Beispiel für eine Protokollausgabe {#an-example-of-log-output}
+## Beispiel für eine Protokollausgabe  {#an-example-of-log-output}
 
 Lassen Sie uns eine einfache Vorlage durchgehen, die bei Anforderung folgenden Code erzeugt:
 
