@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Webanwendungen, die Forms rendern
 seo-title: Erstellen von Webanwendungen, die Forms rendern
-description: 'null'
-seo-description: 'null'
+description: Erstellen Sie eine webbasierte Anwendung, die Java-Servlets verwendet, um den Forms-Dienst aufzurufen und Formulare wiederzugeben. Das Java-Servlet dient als Verknüpfung zwischen dem Forms-Dienst, der ein Formular zurückgibt, und einem Client-Webbrowser.
+seo-description: Erstellen Sie eine webbasierte Anwendung, die Java-Servlets verwendet, um den Forms-Dienst aufzurufen und Formulare wiederzugeben. Das Java-Servlet dient als Verknüpfung zwischen dem Forms-Dienst, der ein Formular zurückgibt, und einem Client-Webbrowser.
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1912'
 ht-degree: 1%
 
 ---
