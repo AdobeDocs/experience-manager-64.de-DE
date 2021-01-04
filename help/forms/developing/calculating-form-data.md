@@ -1,8 +1,8 @@
 ---
 title: Formulardaten berechnen
 seo-title: Formulardaten berechnen
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Forms-Dienst, um die Werte zu berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzuzeigen. Der Forms-Dienst berechnet die Werte mithilfe der Java-API und der Web-Service-API.
+seo-description: Verwenden Sie den Forms-Dienst, um die Werte zu berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzuzeigen. Der Forms-Dienst berechnet die Werte mithilfe der Java-API und der Web-Service-API.
 uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1887'
 ht-degree: 2%
 
 ---
