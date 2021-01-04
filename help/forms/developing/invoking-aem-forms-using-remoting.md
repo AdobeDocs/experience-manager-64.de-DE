@@ -1,8 +1,8 @@
 ---
 title: Aufrufen von AEM Forms mit Remoting
 seo-title: Aufrufen von AEM Forms mit Remoting
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie Remoting, um einen AEM Forms-Prozess aufzurufen, um in Workbench erstellte Prozesse aufzurufen. Sie können einen AEM Forms-Prozess aus einer mit Flex erstellten Clientanwendung aufrufen.
+seo-description: Verwenden Sie Remoting, um einen AEM Forms-Prozess aufzurufen, um in Workbench erstellte Prozesse aufzurufen. Sie können einen AEM Forms-Prozess aus einer mit Flex erstellten Clientanwendung aufrufen.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4654'
 ht-degree: 1%
 
 ---
@@ -286,7 +286,7 @@ Sie können den `MyApplication/EncryptDocument`-Prozess aufrufen, indem Sie die 
 1. Richten Sie eine `ChannelSet`-Instanz für die Kommunikation mit AEM Forms ein und verknüpfen Sie sie mit der `mx:RemoteObject`-Instanz. Siehe Erstellen eines Kanals für AEM Forms.
 1. Rufen Sie die `login`-Methode des ChannelSet oder die `setCredentials`-Methode des Dienstes auf, um den Wert und das Kennwort des Benutzers anzugeben. (Siehe [Single Sign-On](invoking-aem-forms-using-remoting.md#using-single-sign-on) verwenden.)
 1. Füllen Sie eine `mx.rpc.livecycle.DocumentReference`-Instanz mit einem ungesicherten PDF-Dokument, das an den `MyApplication/EncryptDocument`-Prozess übergeben wird. (Siehe [Übergeben eines Dokuments als Eingabeparameter](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Verschlüsseln Sie das PDF-Dokument, indem Sie die `mx:RemoteObject`-Instanz-Methode `invoke` aufrufen. Übergeben Sie die `Object`-Variable, die den Eingabeparameter enthält (das ungeschützte PDF-Dokument). Siehe Übergeben von Eingabewerten.
+1. Verschlüsseln Sie das PDF-Dokument, indem Sie die `mx:RemoteObject`-Instanz-Methode `invoke` aufrufen. Übergeben Sie das `Object`-Zeichen, das den Eingabeparameter enthält (das ungeschützte PDF-Dokument). Siehe Übergeben von Eingabewerten.
 1. Rufen Sie das kennwortverschlüsselte PDF-Dokument ab, das vom Prozess zurückgegeben wird. Siehe Umgang mit Rückgabewerten.
 
 [Quick Beginn: Aufrufen eines Prozesses mit kurzer Lebensdauer durch Übergeben eines unsicheren Dokuments mithilfe von (für AEM Formulare nicht mehr unterstützt) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
