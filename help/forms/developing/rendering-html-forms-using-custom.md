@@ -1,8 +1,8 @@
 ---
 title: Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien
 seo-title: Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Forms-Dienst, um auf benutzerdefinierte CSS-Dateien zu verweisen, um HTML-Formulare als Antwort auf eine HTTP-Anforderung eines Webbrowsers wiederzugeben. Sie können ein HTML-Formular wiedergeben, das eine CSS-Datei verwendet, indem Sie die Java-API und die Web-Service-API verwenden.
+seo-description: Verwenden Sie den Forms-Dienst, um auf benutzerdefinierte CSS-Dateien zu verweisen, um HTML-Formulare als Antwort auf eine HTTP-Anforderung eines Webbrowsers wiederzugeben. Sie können ein HTML-Formular wiedergeben, das eine CSS-Datei verwendet, indem Sie die Java-API und die Web-Service-API verwenden.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: e2a6f76d8fa34b2b97713aaef094a2df8164e746
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1724'
 ht-degree: 2%
 
 ---
