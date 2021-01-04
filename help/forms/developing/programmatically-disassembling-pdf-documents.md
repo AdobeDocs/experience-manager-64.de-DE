@@ -1,8 +1,8 @@
 ---
 title: Programmatische Demontage von PDF-Dokumenten
 seo-title: Programmatische Demontage von PDF-Dokumenten
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Assembler-Dienst, um ein einzelnes PDF-Dokument mithilfe der Java-API und der Web-Service-API in mehrere PDF-Dokumente aufzunehmen.
+seo-description: Verwenden Sie den Assembler-Dienst, um ein einzelnes PDF-Dokument mithilfe der Java-API und der Web-Service-API in mehrere PDF-Dokumente aufzunehmen.
 uuid: d71cc044-e948-4b7a-b598-b041723b69e9
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1774'
 ht-degree: 3%
 
 ---
