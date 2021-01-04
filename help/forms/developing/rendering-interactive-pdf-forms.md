@@ -1,8 +1,8 @@
 ---
 title: Interaktive PDF forms wiedergeben
 seo-title: Interaktive PDF forms wiedergeben
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Forms-Dienst, um interaktive PDF forms auf Clientgeräten, üblicherweise Webbrowsern, zu rendern, um Benutzerdaten zu erfassen. Sie können den Forms-Dienst verwenden, um interaktive Formulare mit der Java-API und der Webdienst-API zu rendern.
+seo-description: Verwenden Sie den Forms-Dienst, um interaktive PDF forms auf Clientgeräten, üblicherweise Webbrowsern, zu rendern, um Benutzerdaten zu erfassen. Sie können den Forms-Dienst verwenden, um interaktive Formulare mit der Java-API und der Webdienst-API zu rendern.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: d52f9f91f70410e6b09e26967b90fd8c47c4f1d4
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
