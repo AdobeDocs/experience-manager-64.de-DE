@@ -1,8 +1,8 @@
 ---
 title: Zusammenstellen von Dokumenten mit Bates-Nummerierung
 seo-title: Zusammenstellen von Dokumenten mit Bates-Nummerierung
-description: 'null'
-seo-description: 'null'
+description: 'Verwenden Sie die Bates-Nummerierung, um PDF-Dokumente mit der Java- und Web Service API zusammenzustellen. '
+seo-description: 'Verwenden Sie die Bates-Nummerierung, um PDF-Dokumente mit der Java- und Web Service API zusammenzustellen. '
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1927'
 ht-degree: 5%
 
 ---
