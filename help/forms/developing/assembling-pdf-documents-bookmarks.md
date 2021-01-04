@@ -1,8 +1,8 @@
 ---
 title: Zusammenstellen von PDF-Dokumenten mit Lesezeichen
 seo-title: Zusammenstellen von PDF-Dokumenten mit Lesezeichen
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Assembler-Dienst, um ein PDF-Dokument, das Lesezeichen enthält, mithilfe der Java-API und der Web-Service-API zu ändern.
+seo-description: Verwenden Sie den Assembler-Dienst, um ein PDF-Dokument, das Lesezeichen enthält, mithilfe der Java-API und der Web-Service-API zu ändern.
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 3%
+source-wordcount: '2574'
+ht-degree: 2%
 
 ---
 
