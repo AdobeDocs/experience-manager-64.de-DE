@@ -1,8 +1,8 @@
 ---
 title: AEM Forms mit der JavaAPI aufrufen
 seo-title: AEM Forms mit der JavaAPI aufrufen
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie die AEM Forms Java API für das RMI-Transportprotokoll für Remote-Aufrufe, VM-Transport für lokalen Aufruf, SOAP für Remote-Aufruf, verschiedene Authentifizierungen wie Benutzername und Kennwort sowie synchrone und asynchrone Aufrufanforderungen.
+seo-description: Verwenden Sie die AEM Forms Java API für das RMI-Transportprotokoll für Remote-Aufrufe, VM-Transport für lokalen Aufruf, SOAP für Remote-Aufruf, verschiedene Authentifizierungen wie Benutzername und Kennwort sowie synchrone und asynchrone Aufrufanforderungen.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 89%
+source-wordcount: '5479'
+ht-degree: 88%
 
 ---
 
