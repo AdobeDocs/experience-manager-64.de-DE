@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit PDF Utilities
 seo-title: Arbeiten mit PDF Utilities
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den PDF Utilities-Dienst, um zwischen PDF- und XDP-Dateiformaten zu konvertieren, PDF-Dokument-Eigenschaften festzulegen und abzurufen sowie XMP Metadaten zu bearbeiten.
+seo-description: Verwenden Sie den PDF Utilities-Dienst, um zwischen PDF- und XDP-Dateiformaten zu konvertieren, PDF-Dokument-Eigenschaften festzulegen und abzurufen sowie XMP Metadaten zu bearbeiten.
 uuid: a2ea2359-c547-4f1b-b6ca-f276f816e36a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2592'
 ht-degree: 5%
 
 ---
