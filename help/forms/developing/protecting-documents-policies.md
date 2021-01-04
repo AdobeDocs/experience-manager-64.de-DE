@@ -1,8 +1,8 @@
 ---
 title: Schutz von Dokumenten mit Richtlinien
 seo-title: Schutz von Dokumenten mit Richtlinien
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Dokument Security-Dienst, um Vertraulichkeitseinstellungen dynamisch auf Adobe PDF-Dokumente anzuwenden und die Kontrolle über die Dokumente zu behalten. Der Dokument Security-Dienst ermöglicht es den Benutzern außerdem, die Kontrolle darüber zu behalten, wie Empfänger das richtliniengeschützte PDF-Dokument verwenden.
+seo-description: Verwenden Sie den Dokument Security-Dienst, um Vertraulichkeitseinstellungen dynamisch auf Adobe PDF-Dokumente anzuwenden und die Kontrolle über die Dokumente zu behalten. Der Dokument Security-Dienst ermöglicht es den Benutzern außerdem, die Kontrolle darüber zu behalten, wie Empfänger das richtliniengeschützte PDF-Dokument verwenden.
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '15466'
+source-wordcount: '15544'
 ht-degree: 4%
 
 ---
