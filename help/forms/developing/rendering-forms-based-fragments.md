@@ -1,8 +1,8 @@
 ---
 title: Rendern von Forms auf Grundlage von Fragmenten
 seo-title: Rendern von Forms auf Grundlage von Fragmenten
-description: 'null'
-seo-description: 'null'
+description: Mit dem Forms-Dienst können Sie Formulare wiedergeben, die auf mit Designer erstellten Fragmenten basieren.
+seo-description: Mit dem Forms-Dienst können Sie Formulare wiedergeben, die auf mit Designer erstellten Fragmenten basieren.
 uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2215'
 ht-degree: 9%
 
 ---
@@ -91,7 +91,7 @@ Wenn der Forms-Dienst ein Formular wiedergibt, gibt er einen Formulardatenstream
 
 [Wiedergeben von Formularen basierend auf Fragmenten mit der Java-API](#render-forms-based-on-fragments-using-the-java-api)
 
-[Wiedergeben von Formularen basierend auf Fragmenten mit der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
+[Wiedergeben von Formularen basierend auf Fragmenten mithilfe der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
