@@ -1,8 +1,8 @@
 ---
 title: Rendern von Forms als HTML
 seo-title: Rendern von Forms als HTML
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Forms-Dienst, um Formulare als HTML-Antwort auf eine HTTP-Anforderung eines Webbrowsers wiederzugeben. Sie können die Java-API und die Web-Service-API verwenden, um Formulare als HTML wiederzugeben.
+seo-description: Verwenden Sie den Forms-Dienst, um Formulare als HTML-Antwort auf eine HTTP-Anforderung eines Webbrowsers wiederzugeben. Sie können die Java-API und die Web-Service-API verwenden, um Formulare als HTML wiederzugeben.
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '4109'
+source-wordcount: '4175'
 ht-degree: 1%
 
 ---
