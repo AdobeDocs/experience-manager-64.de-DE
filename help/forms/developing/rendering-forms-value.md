@@ -1,8 +1,8 @@
 ---
 title: Rendern von Forms nach Wert
 seo-title: Rendern von Forms nach Wert
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie die Forms API (Java), um ein Formular mit der Java API und der Web Service API wertmäßig zu rendern.
+seo-description: Verwenden Sie die Forms API (Java), um ein Formular mit der Java API und der Web Service API wertmäßig zu rendern.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: 1790238e4733ca67c59234641d228e44a3d3ac3b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1848'
 ht-degree: 3%
 
 ---
