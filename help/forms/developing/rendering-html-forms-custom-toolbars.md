@@ -1,8 +1,8 @@
 ---
 title: Rendern von HTML Forms mit CustomToolbars
 seo-title: Rendern von HTML Forms mit CustomToolbars
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Forms-Dienst, um eine Symbolleiste anzupassen, die mit einem HTML-Formular wiedergegeben wird. Sie können ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API und einer Webdienst-API wiedergeben.
+seo-description: Verwenden Sie den Forms-Dienst, um eine Symbolleiste anzupassen, die mit einem HTML-Formular wiedergegeben wird. Sie können ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API und einer Webdienst-API wiedergeben.
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -224,7 +224,7 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt mit dem Konstruktor.
    * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec`-Methode des Objekts `setHTMLToolbar` auf und übergeben Sie einen `HTMLToolbar`-Enum-Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
-   * Geben Sie den Speicherort der XML-Datei &quot;fscmenu&quot;an, indem Sie die `setToolbarURI`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt.`HTMLRenderSpec`
+   * Geben Sie den Speicherort der XML-Datei &quot;fscmenu&quot;an, indem Sie die `HTMLRenderSpec`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt.`setToolbarURI`
    * Legen Sie ggf. den Gebietsschemawert fest, indem Sie die `HTMLRenderSpec`-Methode des Objekts und einen Zeichenfolgenwert, der den Gebietsschemawert angibt, aufrufen. `setLocale` Der Standardwert ist Englisch.
 
    >[!NOTE]
@@ -233,7 +233,7 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
 
 1. HTML-Formular wiedergeben
 
-   Rufen Sie die `renderHTMLForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
+   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderHTMLForm`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
@@ -252,8 +252,8 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
    * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie die `setContentType`-Methode aufrufen und den Inhaltstyp des `com.adobe.idp.Document`-Objekts übergeben.
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `javax.servlet.http.HttpServletResponse`-Methode des Objekts `getOutputStream` aufrufen.
    * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `com.adobe.idp.Document`-Methode des Objekts `getInputStream` aufrufen.
-   * Erstellen Sie ein Bytearray und füllen Sie es mit dem Formulardatenstream, indem Sie die `read`-Methode des Objekts aufrufen und das Bytearray als Argument übergeben.`InputStream`
-   * Rufen Sie die `write`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `javax.servlet.ServletOutputStream` Übergeben Sie das Bytearray an die `write`-Methode.
+   * Erstellen Sie ein Bytearray und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream`-Methode des Objekts aufrufen und das Bytearray als Argument übergeben.`read`
+   * Rufen Sie die `javax.servlet.ServletOutputStream`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `write` Übergeben Sie das Bytearray an die `write`-Methode.
 
 **Siehe auch**
 
@@ -280,7 +280,7 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt mit dem Konstruktor.
    * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec`-Methode des Objekts `setHTMLToolbar` auf und übergeben Sie einen `HTMLToolbar`-Enum-Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
-   * Geben Sie den Speicherort der XML-Datei &quot;fscmenu&quot;an, indem Sie die `setToolbarURI`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt.`HTMLRenderSpec`
+   * Geben Sie den Speicherort der XML-Datei &quot;fscmenu&quot;an, indem Sie die `HTMLRenderSpec`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt.`setToolbarURI`
    * Legen Sie ggf. den Gebietsschemawert fest, indem Sie die `HTMLRenderSpec`-Methode des Objekts und einen Zeichenfolgenwert, der den Gebietsschemawert angibt, aufrufen. `setLocale` Der Standardwert ist Englisch.
 
    >[!NOTE]
@@ -289,7 +289,7 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
 
 1. HTML-Formular wiedergeben
 
-   Rufen Sie die `renderHTMLForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsService`
+   Rufen Sie die `FormsService`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderHTMLForm`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
