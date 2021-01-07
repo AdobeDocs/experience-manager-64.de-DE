@@ -3,10 +3,10 @@ title: AEM Assets mit Adobe InDesign Server integrieren
 description: Erfahren Sie mehr über die Integration von AEM Assets mit InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 71%
+source-wordcount: '1702'
+ht-degree: 65%
 
 ---
 
@@ -142,7 +142,7 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 >
 >Ändern Sie nicht die ExtendScript-Bibliothek. Die Bibliothek bietet die HTTP-Funktionalität, die für die Kommunikation mit Sling erforderlich ist. Diese Einstellung gibt die Bibliothek an, die dort zur Verwendung an das Adobe InDesign Server gesendet werden soll.
 
-Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Dieses Ausgabeformat wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für AEM erforderlichen statischen Ausgabeformate zu rendern.
+Das vom Workflow-Schritt für die Media-Extraktion ausgeführte `ThumbnailExport.jsx`-Skript generiert eine Miniaturansicht im JPG-Format. Dieses Ausgabeformat wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für AEM erforderlichen statischen Ausgabeformate zu rendern.
 
 Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Voreinstellungen nicht entfernen, da sie für die AEM Assets-Benutzeroberfläche erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
@@ -186,15 +186,15 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 ### Konfigurieren von Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-Wenn InDesign Server und AEM auf unterschiedlichen Hosts ausgeführt werden oder eine bzw. beide Anwendungen nicht die Standardanschlüsse nutzen, konfigurieren Sie in **Day CQ Link Externalizer** den Host, Port und Inhaltspfad für InDesign Server.
+Wenn sich die InDesign Server und AEM auf verschiedenen Hosts befinden oder eine oder beide Anwendungen nicht an Standardanschlüssen funktionieren, konfigurieren Sie **Day CQ Link Externalizer**, um Hostnamen, Anschluss und Inhaltspfad für die InDesign Server festzulegen.
 
 1. Greifen Sie auf Configuration Manager über die URL `https://[AEM_server]:[port]/system/console/configMgr` zu.
-1. Suchen Sie die Konfiguration für **[!UICONTROL Day CQ Link Externalizer]** und klicken Sie zum Öffnen auf das Symbol **[!UICONTROL Bearbeiten]**.
-1. Geben Sie den Host-Namen und Kontextpfad für InDesign Server an und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Suchen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um zu öffnen.
+1. Mithilfe der Einstellungen für Link-Externalisierer können Sie absolute URLs für die [!DNL Experience Manager]-Bereitstellung und für [!DNL InDesign Server] erstellen. Verwenden Sie das Feld **[!UICONTROL Domänen]**, um den Hostnamen und den Kontextpfad für [!DNL Adobe InDesign Server] anzugeben. Befolgen Sie die Anweisungen auf dem Bildschirm. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-   ![chlimage_1-290](assets/chlimage_1-290.png)
+   ![Einstellungen für externe Verknüpfungen](assets/link-externalizer-config.png)
 
-### Aktivieren der parallelen Auftragsverarbeitung für InDesign Server {#enabling-parallel-job-processing-for-indesign-server-s}
+### Aktivieren der parallelen Auftragsverarbeitung für InDesign Server {#enabling-parallel-job-processing-for-indesign-server}
 
 Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren.
 
