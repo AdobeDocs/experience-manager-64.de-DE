@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 93%
+source-wordcount: '543'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Best Practices rund um Assets, einschließlich der Funktion für dynamische Medien und Scene7-Integration, werden in den folgenden Themen beschrieben:
+Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalität und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table> 
  <tbody>
