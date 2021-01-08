@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 0fe74ef5483cf1f577be51c200ab2820d7ed64e5
 workflow-type: tm+mt
 source-wordcount: '3150'
 ht-degree: 82%
@@ -64,7 +64,7 @@ So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
    >[!NOTE]
    >
-   >Das OData-Dienst-Metadatendokument enthält außer den Datenmodellobjekten und Diensten Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Diensten](#navigation-properties-odata).
+   >Das OData-Dienst-Metadatendokument enthält außer den Datenmodellobjekten und Diensten Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Diensten](#work-with-navigation-properties-of-odata-services).
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um das Formularmodellobjekt zu speichern.
 
@@ -140,7 +140,7 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
    >
    >Das OData-Dienst-Metadatendokument enthält außer den Datenmodellobjekten und Diensten Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Wenn Sie eine OData-Dienst-Datenquelle zu einem Formulardatenmodell hinzufügen, steht im Formulardatenmodell ein Dienst für alle Navigationseigenschaften in einem Datenmodellobjekt zur Verfügung. Mithilfe dieses Dienstes können Sie die Navigationseigenschaften des entsprechenden Datenmodellobjekts lesen.
    >
-   >Weitere Informationen zur Verwendung des Dienstes finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Diensten.](#navigation-properties-odata)
+   >Weitere Informationen zur Verwendung des Dienstes finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Diensten.](#work-with-navigation-properties-of-odata-services)
 
 1. Durch Aktivieren oder Deaktivieren von **[!UICONTROL Top Level Object]** legen Sie fest, ob das Datenmodellobjekt ein Modellobjekt der obersten Ebene ist.
 
@@ -182,7 +182,7 @@ So fügen Sie eine Verknüpfung hinzu:
 
    >[!NOTE]
    >
-   >Das OData-Dienst-Metadatendokument enthält außer den Datenmodellobjekten und Diensten Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Sie können diese Navigationsfunktionen verwenden, wenn Sie Verknüpfungen im Formulardatenmodell hinzufügen. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Diensten](#navigation-properties-odata).
+   >Das OData-Dienst-Metadatendokument enthält außer den Datenmodellobjekten und Diensten Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Sie können diese Navigationsfunktionen verwenden, wenn Sie Verknüpfungen im Formulardatenmodell hinzufügen. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Diensten](#work-with-navigation-properties-of-odata-services).
 
    Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
