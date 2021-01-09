@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 88%
+source-wordcount: '2170'
+ht-degree: 83%
 
 ---
 
@@ -68,7 +68,15 @@ Die Dropdownliste für die Zeile enthält auch die Option „Bearbeiten“ zum B
 >
 >Sie können zwar eine beliebige Anzahl von Zeilen einer Tabelle hinzufügen, aber nur maximal sechs Spalten. Die Überschriftzeile der Tabelle kann nicht gelöscht werden.
 
-### Fügen Sie die Tabellenbeschreibung hinzu  {#add-table-description}
+### Spaltenbreite für eine Tabelle {#set-column-width} festlegen
+
+Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle festzulegen:
+
+1. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Komponente **[!UICONTROL Tabelle]** und dann auf das Symbol Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
+
+1. Geben Sie die kommagetrennte Liste der Werte in das Feld **[!UICONTROL Spaltenbreite]** ein, um die proportionale Breite der einzelnen Tabellenspalten anzugeben. Beispiel: Bei einer Tabelle mit 3 Spalten, bei der 2,4,6 als Wert im Feld **[!UICONTROL Spaltenbreite]** angegeben wird, wird die Spaltenbreite für die erste Spalte auf 2/12, für die zweite Spalte auf 4/12 und für die dritte Spalte auf 6/12 eingestellt. 2/12, da sich die Breite der ersten Spalte auf ein Sechstel der Tabellenbreite bezieht. In ähnlicher Weise setzt 4/12 die zweite Spaltenbreite auf ein Drittel der Tabellenbreite und 6/12 legt die dritte Spaltenbreite auf die Hälfte der Tabellenbreite fest.
+
+### Fügen Sie die Tabellenbeschreibung hinzu {#add-table-description}
 
 Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten aufgebaut sind, die von Bildschirmlesehilfen interpretiert und gelesen werden können. Hinzufügen der Beschreibung:
 
