@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 39%
+source-wordcount: '435'
+ht-degree: 38%
 
 ---
 
@@ -24,7 +24,11 @@ Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md
 
 Damit eine ordnungsgemäße Transkodierung erfolgt, muss Ihr Administrator [FFmpeg installieren und AEM](#install-ffmpeg) separat konfigurieren. Ihr Administrator kann auch [Ihre Videoprofile für die Verwendung mit HTML5-Elementen konfigurieren](#configure-video-profiles).
 
-## Videoprofile konfigurieren  {#configure-video-profiles}
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
+
+## Videoprofile konfigurieren {#configure-video-profiles}
 
 Es empfiehlt sich, Videoprofile für die Verwendung von HTML5-Elementen zu definieren. Die hier getroffene Auswahl wird der Reihenfolge nach verwendet. Um zuzugreifen, verwenden Sie [Designmodus](/help/sites-authoring/default-components-designmode.md) (nur in der klassischen Benutzeroberfläche) und wählen Sie die Registerkarte **[!UICONTROL Profile]** aus:
 
