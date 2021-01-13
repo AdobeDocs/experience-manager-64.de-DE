@@ -12,10 +12,10 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
-ht-degree: 86%
+source-wordcount: '6670'
+ht-degree: 85%
 
 ---
 
@@ -337,6 +337,10 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 >[!CAUTION]
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
 
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
+
 Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ein Flash-Asset aus dem Content Finder auf die Komponente ziehen oder das folgende Dialogfeld verwenden:
 
 * **Flash**
@@ -538,6 +542,10 @@ Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wi
 >[!CAUTION]
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
 
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
+
 Stellt die Felder für den Benutzernamen und das Kennwort bereit.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -573,6 +581,10 @@ Sie können Folgendes konfigurieren:
       Text, der angibt, dass der Benutzer bereits angemeldet ist.
 
 ### Auftragsstatus {#order-status}
+
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
 
 * **Titel**
 
@@ -711,6 +723,10 @@ Sie können bei Bedarf Folgendes konfigurieren:
 
 >[!CAUTION]
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html). 
+
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
 
 Mit dieser Komponente können Sie mehrere Fotos laden, sodass sie als Diashow auf Ihrer Seite angezeigt werden. Sie können Bilder hinzufügen oder entfernen und jedem einen Titel zuweisen. Unter „Erweitert“ können Sie auch die Größe des Anzeigebereichs festlegen.
 
@@ -879,6 +895,10 @@ Das folgende Beispiel zeigt eine angezeigte **Titel-Komponente.** Das Design wir
 ![dc_title_use](assets/dc_title_use.png)
 
 ### Video {#video}
+
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
 
 Mit der **Video-Komponente** können Sie ein vordefiniertes und vorgefertigtes Videoelement auf einer Seite platzieren.
 
@@ -1296,6 +1316,10 @@ Die Komponente ist für den unmittelbaren Einsatz konfiguriert, Sie können die 
 >[!CAUTION]
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). 
 
+>[!CAUTION]
+>
+>Es wird nicht mehr erwartet, dass diese Komponente ohne umfangreiche Anpassungen auf Projektebene standardmäßig funktioniert.
+
 Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge eingeben, die am Bildschirm angezeigt wird. Die Zeichenfolge ändert sich bei jeder Aktualisierung.
 
 ![dc_form_captcha](assets/dc_form_captcha.png)
@@ -1361,7 +1385,7 @@ Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld ka
 >
 >Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bild-Schaltfläche {#image-button}
+### Bild-Schaltfläche  {#image-button}
 
 Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
 
