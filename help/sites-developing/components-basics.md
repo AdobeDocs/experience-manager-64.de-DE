@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0959d86c28ee6de7347922af706338f83fe400ef
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 64%
@@ -243,7 +243,7 @@ Das Symbol oder die Abkürzung für die Komponente wird über die JCR-Eigenschaf
    * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
    * Es werden nur die Dateien `.png` und `.svg` unterstützt.
-   * Beim Import aus dem Dateisystem über das Eclipse-Plugin müssen Dateinamen beispielsweise mit `_cq_icon.png` oder `_cq_icon.svg` versehen werden.
+   * Beim Import aus dem Dateisystem über das Eclipse-Plugin müssen Dateinamen beispielsweise mit `_cq_icon.png` oder `_cq_icon.svg` gekennzeichnet werden.
    * `.png` hat Vorrang,  `.svg` wenn beide vorhanden sind
 
 
