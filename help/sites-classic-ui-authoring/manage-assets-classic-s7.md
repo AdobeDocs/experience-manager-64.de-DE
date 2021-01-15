@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 33%
@@ -97,7 +97,7 @@ Sie können ein Asset manuell veröffentlichen, solange sich dieses Asset im syn
 
 Adobe empfiehlt, dass Sie Assets in Dynamic Media Classic nur aus Assets im Ordner &quot;Dynamic Media Classic Zielgruppe&quot;veröffentlichen. Wenn Sie jedoch Assets aus einem Ordner außerhalb des Ordners &quot;Zielgruppe&quot;hochladen müssen, können Sie dies dennoch tun, indem Sie sie in den Ordner *ad-hoc* unter Dynamic Media Classic hochladen.
 
-Hierzu konfigurieren Sie die Cloud-Konfiguration für die Seite, auf der das Asset angezeigt werden soll. Anschließend fügen Sie der Seite eine Dynamic Media Classic-Komponente hinzu und ziehen ein Asset per Drag &amp; Drop in die Komponente. Nachdem die Seiteneigenschaften für diese Seite festgelegt wurden, wird ein Link **[!UICONTROL In Dynamic Media Classic veröffentlichen]** angezeigt, der das Hochladen nach Dynamic Media Classic auslöst, wenn ausgewählt.
+Hierzu konfigurieren Sie die Cloud-Konfiguration für die Seite, auf der das Asset angezeigt werden soll. Anschließend fügen Sie der Seite eine Dynamic Media Classic-Komponente hinzu und ziehen ein Asset per Drag &amp; Drop in die Komponente. Nachdem die Seiteneigenschaften für diese Seite festgelegt wurden, wird ein Link **[!UICONTROL In Dynamic Media Classic veröffentlichen]** angezeigt, der beim Hochladen in Dynamic Media Classic durch ausgewählte Trigger angezeigt wird.
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ Mit der Komponente &quot;Dynamic Media Classic Image&quot;können Sie Ihren Bild
 
 **[!UICONTROL Ausgabeformat]** : Wählen Sie das Ausgabeformat des Bilds, z. B. jpeg, aus. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen möglicherweise zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Scharfzeichnen]** : Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices*](/help/assets/assets/s7_sharpening_images.pdf) ausführlich erläutert.
+**[!UICONTROL Scharfzeichnen]** : Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices*](/help/assets/assets/sharpening_images.pdf) ausführlich erläutert.
 
 **[!UICONTROL URL-Modifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md) und [Befehlsreferenz](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
 
