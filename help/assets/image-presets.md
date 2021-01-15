@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 90%
 
 ---
@@ -55,5 +55,5 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
    >
    >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RES]**, falls zutreffend) nicht verfügbar.
    >
-   >Beachten Sie auch, dass Bildvorgaben automatisch auf einem S7-Server für Dynamic Media veröffentlicht werden.
+   >Beachten Sie auch, dass Bildvorgaben automatisch auf einem -Server für Dynamic Media veröffentlicht werden.
 
