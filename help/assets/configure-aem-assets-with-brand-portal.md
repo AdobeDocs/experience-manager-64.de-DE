@@ -3,21 +3,21 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal konfigurieren, um Assets und Sammlungen im Markenportal zu veröffentlichen. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 61%
+source-wordcount: '1647'
+ht-degree: 54%
 
 ---
 
 
 # Konfigurieren von AEM Assets mit Brand Portal {#configure-integration-64}
 
-Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konfiguriert. Dadurch wird ein IMS-Token zur Autorisierung Ihres Brand Portal-Mandanten abgerufen.
+Adobe Experience Manager (AEM) Assets werden mit dem Markenportal über [!DNL Adobe I/O] konfiguriert, das ein IMS-Token zur Autorisierung Ihres Markenportals-Mandanten erhält.
 
 >[!NOTE]
 >
->Die Konfiguration von AEM Assets mit Brand Portal über Adobe I/O wird auf AEM 6.4.8.0 und höher unterstützt.
+>Die Konfiguration von AEM Assets mit Markenportal über [!DNL Adobe I/O] wird auf AEM 6.4.8.0 und höher unterstützt.
 >
 >Zuvor wurde Brand Portal über das alte OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
 
@@ -25,12 +25,12 @@ Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konf
 >
 >***Nur für Bestandskunden***
 >
->Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe I/O.
+>Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über [!DNL Adobe I/O].
 
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
 
-* [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal konfigurieren möchten, können Sie eine neue Konfiguration auf Adobe I/O erstellen.
-* [Upgrade-Konfiguration](#upgrade-integration-64): Wenn Sie ein bestehender Brand Portal-Benutzer mit Ihrer AEM Assets-Autoreninstanz sind, die mit Brand Portal auf dem alten OAuth Gateway konfiguriert wurde, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf Adobe I/O erstellen.
+* [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal konfigurieren möchten, können Sie eine neue Konfiguration für erstellen  [!DNL Adobe I/O].
+* [Upgrade-Konfiguration](#upgrade-integration-64): Wenn Sie ein bestehender Brand Portal-Benutzer mit Ihrer AEM Assets-Autoreninstanz sind, die mit Brand Portal auf älterem OAuth Gateway konfiguriert wurde, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration erstellen  [!DNL Adobe I/O].
 
 Benutzer dieser Hilfe sollten mit den folgenden Technologien vertraut sein:
 
@@ -73,7 +73,7 @@ Ausführliche Anweisungen finden Sie unter
 Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch, wenn Sie AEM Assets zum ersten Mal mit dem Markenportal konfigurieren:
 
 1. [Abrufen eines öffentlichen Zertifikats](#public-certificate)
-1. [Erstellen der Adobe I/O-Integration](#createnewintegration)
+1. [Integration  [!DNL Adobe I/O] von](#createnewintegration)
 1. [Erstellen der Konfiguration des IMS-Kontos](#create-ims-account-configuration)
 1. [Konfigurieren von Cloud Service](#configure-the-cloud-service)
 1. [Testen der Konfiguration](#test-integration)
@@ -93,7 +93,7 @@ Die IMS-Konfiguration umfasst zwei Schritte:
 
 ### Abrufen eines öffentlichen Zertifikats {#public-certificate}
 
-Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profils in Adobe I/O.
+Mit dem öffentlichen Zertifikat können Sie Ihr Profil auf [!DNL Adobe I/O] authentifizieren.
 
 1. Bei Ihrer AEM Assets-Autoreninstanz anmelden
 Standard-URL: http:// localhost:4502/aem/start.html
@@ -117,7 +117,7 @@ Standard-URL: http:// localhost:4502/aem/start.html
 
    ![Zertifikat erstellen](assets/ims-config2.png)
 
-1. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Zertifikatdatei *AEM-Adobe-IMS.crt* auf Ihrem Computer. Die Zertifikatdatei wird verwendet, um die [Adobe I/O-Integration zu erstellen](#createnewintegration).
+1. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Zertifikatdatei *AEM-Adobe-IMS.crt* auf Ihrem Computer. Die Zertifikatdatei wird für [create [!DNL Adobe I/O] integration](#createnewintegration) verwendet.
 
    ![Zertifikat herunterladen](assets/ims-config3.png)
 
@@ -125,13 +125,13 @@ Standard-URL: http:// localhost:4502/aem/start.html
 
    Um auf der Registerkarte **Konto** das Adobe IMS-Konto zu erstellen, benötigen Sie die Integrationsdetails. Lassen Sie diese Seite vorerst offen.
 
-   Öffnen Sie eine neue Registerkarte und [Adobe I/O-Integration erstellen](#createnewintegration), um die Integrationsdetails für IMS-Kontokonfigurationen abzurufen.
+   Öffnen Sie eine neue Registerkarte und [Create [!DNL Adobe I/O] integration](#createnewintegration), um die Integrationsdetails für IMS-Kontokonfigurationen abzurufen.
 
-### Erstellen der Adobe I/O-Integration {#createnewintegration}
+### [!DNL Adobe I/O] Integration {#createnewintegration} erstellen
 
-Die Adobe-I/O-Integration generiert API-Schlüssel, Client-Geheimnis und Payload (JWT), die zum Einrichten der IMS-Kontokonfigurationen erforderlich sind.
+[!DNL Adobe I/O] Integration generiert API Key, Client Secret und Payload (JWT), was für die Einrichtung der IMS-Kontokonfigurationen erforderlich ist.
 
-1. Melden Sie sich bei der Adobe I/O-Konsole mit Systemadministrator-Berechtigungen für die IMS-Organisation des Brand Portal-Mandanten an.
+1. Melden Sie sich bei der [!DNL Adobe I/O]-Konsole mit Systemadministratorberechtigungen bei der IMS-Organisation des Markenportal-Mieters an.
 
    Standard-URL: [https://console.adobe.io/](https://console.adobe.io/)
 
@@ -174,7 +174,7 @@ Die Adobe-I/O-Integration generiert API-Schlüssel, Client-Geheimnis und Payload
 Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 * [Abrufen eines öffentlichen Zertifikats](#public-certificate)
-* [Erstellen der Adobe I/O-Integration](#createnewintegration)
+* [Integration  [!DNL Adobe I/O] von](#createnewintegration)
 
 **Schritte zum Erstellen der Konfiguration des IMS-Kontos:**
 
@@ -184,7 +184,7 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
    Geben Sie in **[!UICONTROL Autorisierungsserver]** die URL ein: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   Fügen Sie den API-Schlüssel, den Client-Geheimnisschlüssel und die JWT-Payload ein, die Sie am Ende von [Erstellen der Adobe I/O-Integration](#createnewintegration) kopiert haben.
+   Fügen Sie den API-Schlüssel, den geheimen Clientschlüssel und die JWT-Nutzlast ein, die Sie am Ende von [Create [!DNL Adobe I/O] integration](#createnewintegration) kopiert haben.
 
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -335,7 +335,7 @@ Führen Sie die folgenden Schritte aus, um die vorhandene Konfiguration zu lösc
    ![](assets/delete-mac-user.png)
 
 
-Sie können jetzt [Konfiguration](#configure-new-integration-64) in Ihrer AEM 6.4 Autoreninstanz auf Adobe I/O erstellen.
+Sie können jetzt [Konfiguration](#configure-new-integration-64) in Ihrer AEM 6.4 Autoreninstanz unter [!DNL Adobe I/O] erstellen.
 
 
 
