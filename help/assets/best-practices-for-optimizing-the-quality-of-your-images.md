@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 99%
+source-wordcount: '1493'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in AEM vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
-Das Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/assets/s7_sharpening_images.pdf) gilt auch für AEM.
+Das Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/assets/sharpening_images.pdf) gilt auch für AEM.
 
 Siehe auch [Scharfzeichnen eines Bildes mit einer Unschärfemaske](https://helpx.adobe.com/de/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,19 +64,18 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
       * **[!UICONTROL amount]** (0-5, Stärke des Effekts)
       * **[!UICONTROL radius]** (0-250, Breite der „Scharfzeichnungslinien“ um das scharfgezeichnete Objekt, in Pixel gemessen)
 
-         Denken Sie daran, dass die Parameter „radius“und „amount“ sich gegenseitig beeinflussen. Wenn Sie „radius“ reduzieren, können Sie dies durch eine Erhöhung von „amount“ kompensieren. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
+             Denken Sie daran, dass die Parameter „radius“und „amount“ sich gegenseitig beeinflussen. Wenn Sie „radius“ reduzieren, können Sie dies durch eine Erhöhung von „amount“ kompensieren. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
+         * **[!UICONTROL threshold]** (0-255, Sensitivität des Effekts)
 
-      * **[!UICONTROL threshold]** (0-255, Sensitivität des Effekts)
+             Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL Schwellenwert]** können Sie übermäßiges Scharfzeichnen von Bereichen mit ähnlichen Farben, z. B. Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
+         
+         Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
 
-         Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL threshold]** können Sie die übermäßige Scharfzeichnung von Bereichen mit ähnlichen Farben, wie Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
-      Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
+         AEM-Hilfethema zum Scharfzeichnen von Bildern.
 
-      AEM-Hilfethema zum Scharfzeichnen von Bildern.
+         Best Practices-Whitepaper [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/assets/sharpening_images.pdf).
 
-      Best Practices-Whitepaper [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/assets/s7_sharpening_images.pdf).
-
-   * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
-
+      * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 Es wird empfohlen, mit dem Unschärfemasken-Parameter für den Radius zu beginnen. Sie können zu Beginn die folgenden Radiuseinstellungen verwenden:
 
@@ -125,7 +124,6 @@ Wenn die Scharfzeichnungsergebnisse noch immer nicht den Erwartungen entsprechen
 
 Beim Experimentieren können auch die folgenden allgemeinen Empfehlungen nützlich sein, um Ihren Workflow zu optimieren:
 
-* Testen Sie verschiedene Parameter in Echtzeit, entweder direkt in einer URL oder mit der Bildanpassungsfunktion von Scene7 Publishing System, die eine Echtzeitvorschau für Anpassungsvorgänge bereitstellt.
+* Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
 * Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerspezifische Vorgabename in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
 * AEM bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Bei erweiterten Anwendungsfällen, bei denen dies eine Option sein könnte, um die angezeigten Ergebnisse abzustimmen und zu optimieren, kann [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) Ihnen mit kundenspezifischen Einblicken und Best Practices behilflich sein.
-
