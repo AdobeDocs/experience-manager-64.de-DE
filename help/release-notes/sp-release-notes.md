@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 25%
 
 ---
@@ -48,7 +48,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Integration von Formulardatenmodellen mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
-* AEM Assets ist jetzt mit Brand Portal über Adobe I/O konfiguriert.
+* AEM Assets ist jetzt mit Brand Portal über [!DNL Adobe I/O] konfiguriert.
 
 * Die in ContextHub enthaltene jQuery-Version wurde auf 3.2.1 aktualisiert.
 
@@ -227,7 +227,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * DAM Ereignis Purge löscht die neuesten (maxSavedActivities) Ereignis-Daten und speichert die zuvor erstellten Daten (NPR-30870).
 
-* Asset-Titel und Namensänderung bleiben nach dem Verschieben in einen Zielordner nicht erhalten, der beim Auswählen unendlichen Bildlaufs auslöst (NPR-30647).
+* Asset-Titel und Namensänderung wurden nach dem Verschieben in einen Zielordner, in dem Trigger unendliches Scrollen durchführen, während sie ausgewählt wurden, nicht beibehalten (NPR-30647).
 
 * Sammlungen werden aus der Ansicht entfernt, wenn Sie einen Filter in AEM Assets anwenden, der über Adobe Asset Link aufgerufen wird (CQ-4280534).
 
@@ -635,7 +635,7 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 
 * Die Paginierungsgrenze des Suchergebnisses wurde für die Ansicht der Karte auf 100 Seiten und für die Ansicht der Liste auf 200 Seiten erhöht. NPR-29332: Hotfix für GRANITE-24644
 * Aufgrund des verzögerten Ladens von Tags wird auf der Sammlungsseite nichts angezeigt. NPR-29267: Hotfix für GRANITE-24902
-* Wenn Sie die Paginierungsgrenze auf 100 statt auf 40 ändern, wird eine zusätzliche verzögerte Ladezeit ohne Paginierungsanforderung ausgelöst. NPR-29246: Hotfix für GRANITE-25027
+* Die Änderung der Paginierungsgrenze auf 100 statt auf 40 Trigger bedeutet eine zusätzliche verzögerte Ladezeit ohne Seitenumbruchanforderung. NPR-29246: Hotfix für GRANITE-25027
 * AEM Kennwortfeld für Granite wird nach der Verschlüsselung nicht ausgefüllt. NPR-29245: Hotfix für GRANITE-24908
 
 **Integration**
@@ -1459,7 +1459,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 
 **Arbeitsablauf**
 
-* Die Benutzeroberfläche des Workflow-Starters zeigt keine vorherigen 41 Starter-Konfigurationen an und löst einen JavaScript-Fehler in der Konsole aus. NPR-25028: Hotfix für CQ-4247604
+* Die Benutzeroberfläche des Workflow-Starters zeigt keine vorherigen 41 Startkonfigurationen an und Trigger einen JavaScript-Fehler in der Konsole. NPR-25028: Hotfix für CQ-4247604
 * Wenn Sie einen alten Workflow bearbeiten, ohne dessen Starter zu bearbeiten, werden mehrere Workflows für jeden Workflow erstellt, der einen Schritt zum Aktivieren der Seite/des Assets enthält. NPR-25870: Hotfix für CQ-4250896
 * Falscher Link in der Workflow-Nutzlast, wenn die Seite über einen Metadaten-Knoten verfügt. NPR-25916: Hotfix für CQ-4250733
 
@@ -1721,7 +1721,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * Wenn wir die Seite umbenennen, während wir sie verschieben, ist die Bewegung der Seite erfolgreich, aber die Funktion zum Umbenennen funktioniert nicht. NPR-22923: Hotfix für CQ-4235907
 * Fehler beim Veröffentlichen einer Live Copy-Seite, die auf eine Importer-Seite in Adobe Campaignen verweist. NPR-23053: Hotfix für CQ-4237164
 * &quot;Verschieben/Umbenennen&quot;in der klassischen Benutzeroberfläche schlägt fehl und die Fehlermeldung &quot;Fehler beim Verschieben der Seite&quot;wird nicht umbenannt. NPR-23051: Hotfix für CQ-4235907
-* Beim Wechsel von der Ansicht &quot;Spalteninhalt&quot;zur Ansicht &quot;Liste&quot;wird eine leere Seite gerendert und eine Null-Zeiger-Ausnahme für Seiten mit OffTime- und OnTime-Einstellung als leer ausgelöst. NPR-22968, NPR-23052: Hotfix für CQ-4238940
+* Beim Wechsel von der Ansicht Spalteninhalt zur Ansicht Liste wird eine leere Seite und Trigger eine Null-Zeiger-Ausnahme für Seiten mit OffTime- und OnTime-Einstellung als leer gerendert. NPR-22968, NPR-23052: Hotfix für CQ-4238940
 
 **Commerce**
 
@@ -1796,7 +1796,7 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 
 **Arbeitsablauf**
 
-* Der Day CQ Workflow E-Mail-Benachrichtigungsdienst löst eine E-Mail pro Mongo-Knoten für Benachrichtigungen zu WorkflowComplete und WorkflowAborted aus. NPR-22515: Hotfix für CQ-4238172
+* Der Day CQ Workflow E-Mail-Benachrichtigungsdienst Trigger eine E-Mail pro Mongo-Knoten für WorkflowComplete- und WorkflowAborted-Benachrichtigungen. NPR-22515: Hotfix für CQ-4238172
 * Beim Ausführen des Arbeitsablaufs für DAM-Update-Assets wird eine NullPointerException ausgelöst. NPR-23010: Hotfix für Granite-21096
 * Im Schritt Workflow-Prozess werden keine Skripten aus /etc/workflow/scripts angezeigt. NPR-23263: Hotfix für Granite-20775
 * Workflow Dynamic Participant Step zeigt keine Skripten aus /apps/workflow/scripts an. NPR-23464: Hotfix für Granite-21276
