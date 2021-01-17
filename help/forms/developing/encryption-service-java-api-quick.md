@@ -1,8 +1,8 @@
 ---
 title: Encryption Service Java API QuickStart(SOAP)
 seo-title: Encryption Service Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie die Java-API des Encryption-Dienstes, um ein PDF-Dokument zu verschlüsseln, kennwortbasierte Verschlüsselung zu entfernen, ein PDF-Dokument mit einem Zertifikat zu verschlüsseln, zertifikatbasierte Verschlüsselung zu entfernen, ein verschlüsseltes PDF-Dokument zu entsperren und den Verschlüsselungstyp zu bestimmen.
+seo-description: Verwenden Sie die Java-API des Encryption-Dienstes, um ein PDF-Dokument zu verschlüsseln, kennwortbasierte Verschlüsselung zu entfernen, ein PDF-Dokument mit einem Zertifikat zu verschlüsseln, zertifikatbasierte Verschlüsselung zu entfernen, ein verschlüsseltes PDF-Dokument zu entsperren und den Verschlüsselungstyp zu bestimmen.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
