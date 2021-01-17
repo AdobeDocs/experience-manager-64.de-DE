@@ -1,8 +1,8 @@
 ---
 title: Assembler Service Java API QuickStart(SOAP)
 seo-title: Assembler Service Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Assembler-Dienst, um ein PDF-Dokument zu assemblieren, ein PDF-Dokument zu disassemblieren, ein verschlüsseltes PDF-Dokument zu assemblieren, ein PDF-Dokument mit Bates-Nummerierung zu assemblieren, ein nicht interaktives PDF-Dokument zu assemblieren, festzustellen, ob ein Dokument PDF/A-konform ist, DDDX-Dokumente zu validieren, PDF-Dokumente mit Lesezeichen zu assemblieren, ein DDDDX-Dokument zu erstellen, dynamisch zusammenzuführen, PDF-Portfolios einbinden und mehrere XDP-Fragmente zusammenführen.
+seo-description: Verwenden Sie den Assembler-Dienst, um ein PDF-Dokument zu assemblieren, ein PDF-Dokument zu disassemblieren, ein verschlüsseltes PDF-Dokument zu assemblieren, ein PDF-Dokument mit Bates-Nummerierung zu assemblieren, ein nicht interaktives PDF-Dokument zu assemblieren, festzustellen, ob ein Dokument PDF/A-konform ist, DDDX-Dokumente zu validieren, PDF-Dokumente mit Lesezeichen zu assemblieren, ein DDDDX-Dokument zu erstellen, dynamisch zusammenzuführen, PDF-Portfolios einbinden und mehrere XDP-Fragmente zusammenführen.
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -1535,7 +1535,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Portfolio erstellt. Das PDF-Portfoli
 
 ## Quick Beginn (SOAP-Modus): Assemblieren mehrerer XDP-Fragmente mit der Java-API {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden XDP-Fragmente zusammengestellt, die auf den folgenden XDP-Dateien basieren: *tuc018_template_flow.xdp*, *tuc018_contact.xdp* und* tuc018_patient.xdp*. Das assemblierte XDP-Dokument, das alle Fragmente enthält, wird als XDP-Datei mit dem Namen *AssemblerResultXDP.xdp* gespeichert. (Siehe [Zusammenstellen mehrerer XDP-Fragmente](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+Im folgenden Java-Codebeispiel werden XDP-Fragmente zusammengeführt, die auf den folgenden XDP-Dateien basieren: *tuc018_template_flow.xdp*, *tuc018_contact.xdp* und* tuc018_patient.xdp*. Das assemblierte XDP-Dokument, das alle Fragmente enthält, wird als XDP-Datei mit dem Namen *AssemblerResultXDP.xdp* gespeichert. (Siehe [Zusammenstellen mehrerer XDP-Fragmente](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 ```as3
  /* 
