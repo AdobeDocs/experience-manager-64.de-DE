@@ -1,8 +1,8 @@
 ---
 title: Die AEM Forms-Prozesse
 seo-title: Die AEM Forms-Prozesse
-description: 'null'
-seo-description: 'null'
+description: Erfahren Sie, wie Sie AEM Forms-Geschäftsprozesse zur Automatisierung von Vorgängen einsetzen. Aktivieren Sie die Prozesse, um einen Dienst zu erstellen, damit Sie ihn wie andere Dienste aufrufen können. Prozesse können kurz oder lang dauern.
+seo-description: Erfahren Sie, wie Sie AEM Forms-Geschäftsprozesse zur Automatisierung von Vorgängen einsetzen. Aktivieren Sie die Prozesse, um einen Dienst zu erstellen, damit Sie ihn wie andere Dienste aufrufen können. Prozesse können kurz oder lang dauern.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 3%
+source-wordcount: '855'
+ht-degree: 2%
 
 ---
 
