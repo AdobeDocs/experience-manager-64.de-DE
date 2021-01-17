@@ -1,17 +1,17 @@
 ---
 title: 'Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows '
 seo-title: 'Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows '
-description: 'null'
-seo-description: 'null'
+description: Erfahren Sie mehr über die Unterschiede bei Aktionen, die von AEM Inbox und HTML Workspace unterstützt werden, Unterschiede bei den Funktionen, die von formularbasierten AEM unterstützt werden, Workflows auf OSGi und AEM Forms JEE Workflows und Unterschiede zwischen AEM Inbox- und AEM Forms-App-Funktionen.
+seo-description: Erfahren Sie mehr über die Unterschiede bei Aktionen, die von AEM Inbox und HTML Workspace unterstützt werden, Unterschiede bei den Funktionen, die von formularbasierten AEM unterstützt werden, Workflows auf OSGi und AEM Forms JEE Workflows und Unterschiede zwischen AEM Inbox- und AEM Forms-App-Funktionen.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 79%
+source-wordcount: '931'
+ht-degree: 72%
 
 ---
 
