@@ -10,10 +10,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -137,7 +137,7 @@ In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen
 | Ansatz | HTML5 hat Priorität. Flash dient nur zum Ausweichen bei Nicht-HTML5-Inhalten. | Flash auf den meisten Desktopgeräten HTML5 kommt auf Mobilgeräten und Tablets zum Einsatz. |
 | Bereitstellung | Progressiv | Adaptives Streaming |
 | Nachverfolgung | Ja | Ja |
-| Erweiterbarkeit | Ja | Ja (mit Scene7-Viewer-SDK) |
+| Erweiterbarkeit | Ja | Ja (mit [HTML5 Viewer SDK API-Dokumentation](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Mobile Videos | Ja | Ja |
 
 ### Einrichtung  {#setting-up}
