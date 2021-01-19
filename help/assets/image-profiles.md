@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
+source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2713'
+ht-degree: 91%
 
 ---
 
@@ -105,7 +105,7 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
  </tbody> 
 </table>
 
-<!-- Sharpening is described in [Sharpening Images](/help/assets/assets/sharpening_images.pdf). -->
+Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Image-Profilen {#creating-image-profiles}
 
