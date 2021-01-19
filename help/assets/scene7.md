@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -189,8 +189,8 @@ Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü. Wenn die gewüns
 * **[!UICONTROL Ausgabeformat]**
 Wählen Sie das Ausgabeformat des Bilds, z. B. jpeg. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen möglicherweise zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options).
 
-<!-- * **[!UICONTROL Sharpening]**
-Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf). -->
+* **[!UICONTROL Scharfzeichnen]**
+Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options) und in den [Best Practices für das Scharfzeichnen](/help/assets/assets/sharpening_images.pdf) detailliert beschrieben.
 
 * **[!UICONTROL URL-]**
 ModifikatorenSie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und in der [Befehlsreferenz](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
