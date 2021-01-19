@@ -1,19 +1,15 @@
 ---
 title: Best Practices für die Optimierung der Bildqualität
-seo-title: Best Practices für die Optimierung der Bildqualität
 description: Erfahren Sie mehr über die Best Practices für die Optimierung der Bildqualität in dynamischen Medien.
-seo-description: Erfahren Sie mehr über die Best Practices für die Optimierung der Bildqualität in dynamischen Medien.
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -46,9 +42,7 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 ## Best Practices für Bild-Scharfzeichnung {#best-practices-for-image-sharpening}
 
-Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in AEM vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
-
-Das Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/assets/sharpening_images.pdf) gilt auch für AEM.
+<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
 
 Siehe auch [Scharfzeichnen eines Bildes mit einer Unschärfemaske](https://helpx.adobe.com/de/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,17 +59,14 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
       * **[!UICONTROL radius]** (0-250, Breite der „Scharfzeichnungslinien“ um das scharfgezeichnete Objekt, in Pixel gemessen)
 
              Denken Sie daran, dass die Parameter „radius“und „amount“ sich gegenseitig beeinflussen. Wenn Sie „radius“ reduzieren, können Sie dies durch eine Erhöhung von „amount“ kompensieren. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
-         * **[!UICONTROL threshold]** (0-255, Sensitivität des Effekts)
+         
+      * **[!UICONTROL threshold]** (0-255, Sensitivität des Effekts)
 
              Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL Schwellenwert]** können Sie übermäßiges Scharfzeichnen von Bereichen mit ähnlichen Farben, z. B. Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
          
-         Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
+         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+   * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
-         AEM-Hilfethema zum Scharfzeichnen von Bildern.
-
-         Best Practices-Whitepaper [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/assets/sharpening_images.pdf).
-
-      * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 Es wird empfohlen, mit dem Unschärfemasken-Parameter für den Radius zu beginnen. Sie können zu Beginn die folgenden Radiuseinstellungen verwenden:
 
