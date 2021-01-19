@@ -10,10 +10,10 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
-ht-degree: 80%
+source-wordcount: '10456'
+ht-degree: 78%
 
 ---
 
@@ -414,7 +414,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
    <td><p>Quelle</p> </td> 
    <td><p>1920 x 1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Kodiert</p> </td> 
@@ -426,7 +426,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
    <td><p>Kodiert</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Kodiert</p> </td> 
@@ -665,7 +665,7 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
    * Tippen Sie rechts auf der Seite auf die Registerkarte **[!UICONTROL Formular erstellen]**.
    * Ziehen Sie die Komponente mit der Beschriftung **[!UICONTROL Bereichs-Kopfzeile]** nach links und legen Sie sie im Formularbereich ab.
    * Tippen Sie auf **[!UICONTROL Feldbeschriftung]**, um die Komponente auszuwählen.
-   * Geben Sie auf der rechten Seite der Seite unter der Registerkarte **[!UICONTROL Einstellungen]** im Textfeld **[!UICONTROL Feldbeschriftung]** `YouTube Publishing` &lt;a4/> ein.
+   * Geben Sie auf der rechten Seite der Seite unter der Registerkarte **[!UICONTROL Einstellungen]** im Textfeld **[!UICONTROL Feldbeschriftung]** `YouTube Publishing`  ein.
    * Tippen Sie auf die Registerkarte **[!UICONTROL Formular erstellen]** und ziehen Sie dann die Komponente **[!UICONTROL Einzelzeilentext]** und legen Sie sie unter der Überschrift **[!UICONTROL YouTube Publishing]** ab, die Sie gerade erstellt haben.
    * Tippen Sie auf **[!UICONTROL Feldbeschriftung]**, um die Komponente auszuwählen.
    * Fügen Sie auf der rechten Seite der Seite unter der Registerkarte **[!UICONTROL Einstellungen]** die Werte **[!UICONTROL YouTube Publishing]** (**[!UICONTROL Feldbeschriftung]** und **[!UICONTROL Zu Eigenschaft]** zuordnen), die Sie zuvor kopiert haben, in die entsprechenden Felder des Formulars ein. Fügen Sie den Wert **[!UICONTROL Choices]** in das Feld **[!UICONTROL Standardwert]** ein.
@@ -770,7 +770,7 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
 
       ![chlimage_1-430](assets/chlimage_1-430.png)
 
-      Diese Spalte wird standardmäßig nicht angezeigt. Um die Ansicht zu aktivieren, wählen Sie im Dropdownmenü **[!UICONTROL Ansichten]** die Option **[!UICONTROL Anwendungseinstellungen]** und fügen Sie die Spalte &lt;a4/>Verarbeitungsstatus ]**hinzu und tippen Sie auf**[!UICONTROL  Aktualisieren ]**.**[!UICONTROL 
+      Diese Spalte wird standardmäßig nicht angezeigt. Um die Ansicht zu aktivieren, wählen Sie im Dropdownmenü **[!UICONTROL Ansichten]** die Option **[!UICONTROL Anwendungseinstellungen]** und fügen Sie die Spalte **[!UICONTROL Verarbeitungsstatus]** hinzu und tippen Sie auf **[!UICONTROL Aktualisieren]**.
 
       ![chlimage_1-431](assets/chlimage_1-431.png)
 
@@ -903,19 +903,13 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Scene7 HTML5 Viewer SDK erstellt haben   {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} erstellt haben
 
-Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer verwenden oder anhand eines Standardvideo-Viewers eine benutzerdefinierte Viewer-Vorgabe erstellt haben, müssen Sie keine zusätzlichen Schritte ausführen, um Videoberichte anzuzeigen. Wenn Sie aber anhand des Scene7 HTML5 Viewer SDK einen eigenen Video-Viewer erstellt haben, gehen Sie wie folgt vor, um sicherzustellen, dass der Video-Viewer Tracking-Ereignisse an die Funktion „Videoberichte“ von Dynamic Media sendet.
+Wenn Sie einen vordefinierten Video-Viewer verwenden, der von Dynamic Media bereitgestellt wird, oder wenn Sie eine benutzerdefinierte Viewer-Vorgabe basierend auf einem vordefinierten Video-Viewer erstellt haben, sind keine weiteren Schritte zur Ansicht von Videoberichten erforderlich. Wenn Sie jedoch einen eigenen Video-Viewer auf Grundlage der HTML5 Viewer SDK API erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Verfolgungsdaten an Dynamic Media-Videoberichte sendet.
 
-Erstellen Sie Ihre eigenen Video-Viewer anhand der Referenz für Scene7 Viewer und mit dem Scene7 HTML5 Viewers SDK.
+Verwenden Sie zum Erstellen Ihrer eigenen Video-Viewer das Referenzhandbuch für Dynamic Media-Viewer ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) und die [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) für die Adobe.[
 
-Siehe [Referenzanleitung für Scene7 Viewer](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
-
-Laden Sie das Scene7 HTML Viewer SDK von Adobe Developer Connection herunter.
-
-Siehe [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
-
-So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem Scene7 HTML5 Viewer SDK erstellt haben:
+So erstellen Sie Videoberichte basierend auf einem Video-Viewer, den Sie mit der HTML5 Viewer SDK API erstellt haben:
 
 1. Navigieren Sie zu einem veröffentlichten Video-Asset.
 1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
@@ -942,7 +936,7 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem
 
 1. Erstellen Sie die TrackingManager-Komponente wie folgt:
 
-   * Erstellen Sie nach dem Aufruf von `s7sdk.Utils.init();` eine TrackingManager-Instanz, um Ereignisse zu verfolgen. Fügen Sie dazu Folgendes hinzu:
+   * Erstellen Sie nach dem Aufruf von `s7sdk.Util.init();` eine TrackingManager-Instanz, um Ereignisse zu verfolgen. Fügen Sie dazu Folgendes hinzu:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -970,7 +964,7 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem
       ```
    Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
-   Weitere Informationen dazu finden Sie im Abschnitt *Verwenden der TrackingManager-Komponente* im *Benutzerhandbuch für Scene7 HTML5 Viewer SDK*, das Sie von [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) herunterladen können.
+   Weitere Informationen dazu finden Sie im Abschnitt *Verwenden der TrackingManager-Komponente* im *Benutzerhandbuch für Scene7 HTML5 Viewer SDK*, das Sie von [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) herunterladen können.
 
 ## Hinzufügen von Untertiteln zu Videos {#adding-captions-to-video}
 
@@ -1039,7 +1033,7 @@ Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, kön
 >
 >Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Video-Player von Dynamic Media unterstützten Kapitelmarken, die Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
-Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie im Handbuch „Adobe Scene7 Viewer-SDK für HTML5“ unter dem Abschnitt „Anpassen von Verhaltensweisen mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Das Adobe Scene7 Viewer-SDK ist als Download von [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) verfügbar.
+Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eines eigenen HTML5-Viewers mit Kapitelnavigation finden Sie in der Adobe HTML5 Viewer SDK API unter der Überschrift &quot;Anpassen des Verhaltens mit Modifikatoren&quot; unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Weitere Informationen finden Sie in der Dokumentation zur [HTML5 Viewer SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
 
 Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Diese Datei muss jedoch getrennt von der WebVTT-Untertiteldatei erstellt werden. Untertitel und Kapitel dürfen nicht in derselben WebVTT-Datei enthalten sein.
 
