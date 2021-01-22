@@ -1,18 +1,14 @@
 ---
 title: Programmgesteuerte Interaktion mit Workflows
-seo-title: Programmgesteuerte Interaktion mit Workflows
-description: 'null'
-seo-description: 'null'
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
+description: Erfahren Sie, wie Sie mit APIs und Skripten Workflows verwalten und programmatisch mit Workflows interagieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 1e7dae08d9f7a4c06c678e33446a1bcb7c2db5f5
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2015'
 ht-degree: 53%
 
 ---
