@@ -1,19 +1,15 @@
 ---
 title: Best Practices für E-Mail-Vorlagen
-seo-title: Best Practices für E-Mail-Vorlagen
-description: Finden Sie Best Practices zur Erstellung von E-Mail-Vorlagen in AEM.
-seo-description: Finden Sie Best Practices zur Erstellung von E-Mail-Vorlagen in AEM.
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: Finden Sie Best Practices zum E-Mail-Design, die zu einer gut entwickelten E-Mail-Kampagnenvorlage in Adobe Experience Manager führen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 48%
+source-wordcount: '1053'
+ht-degree: 45%
 
 ---
 
@@ -150,7 +146,7 @@ Es stehen aktuell [sieben Komponenten zur Verfügung, die innerhalb von Kampagne
 | Text und Personalisierung | /libs/mcm/Kampagne/components/personalization |
 | Textimage | /libs/mcm/Kampagne/components/textimage |
 | Verknüpfung | /libs/mcm/Kampagne/components/reference |
-| Scene7-Bildvorlage | /libs/mcm/Kampagne/s7image |
+| Dynamic Media Classic (früher Scene7)-Bildvorlage | /libs/mcm/Kampagne/s7image |
 | Targeting-Referenz | /libs/mcm/Kampagne/components/reference |
 
 >[!NOTE]
