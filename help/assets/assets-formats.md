@@ -3,9 +3,9 @@ title: In AEM Assets unterstützte Dateiformate
 description: Liste von Dateiformaten und MIME-Typen, die von AEM Assets unterstützt werden, und der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 62%
 
 ---
@@ -307,6 +307,6 @@ Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/s
 
 >[!MORELIKETHIS]
 >
->* [Aktivieren der Unterstützung von MIME-Typen-basierten Assets/Scene7-Upload-Auftragsparametern](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [Aktivieren Sie die Unterstützung](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern.
 >* [MIME-typbasiert für die Unterstützung](config-dynamic.md) von Upload-Auftragsparametern konfigurieren.
 
