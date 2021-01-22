@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c86c84efeb25673490373273a9f4720381e46454
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10031'
+source-wordcount: '10030'
 ht-degree: 66%
 
 ---
@@ -161,7 +161,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 
    >[!NOTE]
    >
-   >Wenn Sie Assets über FTP hochladen, haben die in Dynamic Media Classic (Scene7) festgelegten Upload-Auftragsoptionen Vorrang vor den in AEM festgelegten Asset-Verarbeitungsparametern.
+   >Wenn Sie Assets über FTP hochladen, haben die in Dynamic Media Classic festgelegten Upload-Auftragsoptionen Vorrang vor den in AEM festgelegten Asset-Verarbeitungsparametern.
 
 1. Tippen Sie in der rechten unteren Ecke des Dialogfelds **[!UICONTROL Upload-Auftragsoptionen]** auf **[!UICONTROL Speichern]**.
 1. Tippen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Hochladen]** auf **[!UICONTROL Hochladen senden]**.
@@ -703,7 +703,7 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
 1. Wählen Sie den Bereich aus, der beschnitten werden soll, und passen Sie die Größe oder Position des Bereichs auf dem Bild an.
-1. Verwenden Sie die Option **[!UICONTROL Fertig stellen]** in der oberen rechten Ecke, um das Bild zu beschneiden. Durch Tippen auf **[!UICONTROL Fertig stellen]** wird auch die Wiederherstellung von Darstellungen ausgelöst.
+1. Verwenden Sie die Option **[!UICONTROL Fertig stellen]** in der oberen rechten Ecke, um das Bild zu beschneiden. Durch Tippen auf **[!UICONTROL Fertig stellen]** wird auch die Wiederherstellung von Darstellungen Trigger.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
