@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Benutzerhandbuch für die Benutzeroberfläche
 breadcrumb-title: Handbuch zur Erstellung der klassischen Benutzeroberfläche
 user-guide-description: Dieses Handbuch behandelt die Konzepte des Authoring in AEM in der klassischen Benutzeroberfläche.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 85%
+source-wordcount: '319'
+ht-degree: 83%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 85%
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
    + [Einrichten einer Standardbühne mit Autodesk Maya und Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
-   + [Hinzufügen von Scene7-Features zu Ihrer Seite](manage-assets-classic-s7.md)
+   + [Hinzufügen von Dynamic Media Classic (Scene7)-Funktionen zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
    + [Arbeiten mit 3D-Assets](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
