@@ -3,9 +3,9 @@ title: Assets stapelweise in Adobe Experience Manager Assets migrieren
 description: So können Sie Assets in AEM einbinden, Metadaten anwenden, Darstellungen generieren und sie für Veröffentlichungsinstanzen aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 67%
 
 ---
@@ -79,7 +79,7 @@ Wenn Assets nicht über ein Netzwerk übertragen werden, verbessert sich die Ges
 
 ### Verarbeiten von Wiedergaben {#process-renditions}
 
-Nachdem Sie die Assets in das System geladen haben, müssen Sie sie über den Workflow „DAM-Update-Asset“ verarbeiten, um Metadaten zu extrahieren und Wiedergaben zu generieren. Vor diesem Schritt müssen Sie den DAM-Update-Asset-Workflow duplizieren und an Ihre Anforderungen anpassen. Einige Schritte im Standardarbeitsablauf sind für Sie möglicherweise nicht erforderlich, wie z. B. Scene7 PTIFF-Generierung oder InDesign-Serverintegration.
+Nachdem Sie die Assets in das System geladen haben, müssen Sie sie über den Workflow „DAM-Update-Asset“ verarbeiten, um Metadaten zu extrahieren und Wiedergaben zu generieren. Vor diesem Schritt müssen Sie den DAM-Update-Asset-Workflow duplizieren und an Ihre Anforderungen anpassen. Einige Schritte im Standardarbeitsablauf sind für Sie möglicherweise nicht erforderlich, wie z. B. Dynamic Media Classic PTIFF-Generierung oder InDesign-Serverintegration.
 
 Nachdem Sie den Workflow Ihren Anforderungen entsprechend konfiguriert haben, haben Sie zwei Optionen, um ihn auszuführen:
 
