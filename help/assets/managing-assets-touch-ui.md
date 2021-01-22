@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 66%
 
 ---
@@ -151,8 +151,8 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 **So laden Sie Assets per FTP hoch**
 
 1. Verwenden Sie den FTP-Client Ihrer Wahl und melden Sie sich beim FTP-Server mit dem FTP-Benutzernamen und -Kennwort aus der Bereitstellungs-E-Mail an. Laden Sie die Dateien und/oder Ordner über den FTP-Client auf den FTP-Server hoch.
-1. [Melden Sie sich bei Dynamic Media Classic an](https://www.adobe.com/de/marketing-cloud/experience-manager/scene7-login.html), indem Sie die Anmeldeinformationen verwenden, die Sie in der Bereitstellungs-E-Mail erhalten haben. Tippen oder klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
-
+1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann mit den Anmeldeinformationen an, die Sie aus der Bereitstellungs-E-Mail erhalten haben.
+1. Tippen oder klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
 1. Tippen Sie auf der Seite **[!UICONTROL Upload]** in der oberen linken Ecke auf die Registerkarte **[!UICONTROL Über FTP]**.
 1. Wählen Sie im linken Bereich der Seite einen FTP-Ordner aus, aus dem Sie Dateien hochladen. Auf der rechten Seite der Seite wählen Sie einen Zielordner aus.
 1. Tippen Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Auftragsoptionen]** und legen Sie dann die gewünschten Optionen basierend auf den Assets im ausgewählten Ordner fest.
