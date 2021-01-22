@@ -1,19 +1,15 @@
 ---
 title: Gemischte Mediensets
-seo-title: Gemischte Mediensets
-description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden.
-seo-description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden.
-uuid: e37fa648-74e2-42e3-8611-8509c92ec00d
+description: Erfahren Sie, wie Sie mit gemischten Mediensets (Bilder, Bildsätze, Rotationssets und Videos) in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 77%
+source-wordcount: '1469'
+ht-degree: 76%
 
 ---
 
