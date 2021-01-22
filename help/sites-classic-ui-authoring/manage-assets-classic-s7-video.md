@@ -1,19 +1,15 @@
 ---
 title: Video
-seo-title: Video
 description: Assets bietet zentralisierte Video-Asset-Verwaltung, mit der Sie Videos direkt in Assets zur automatischen Kodierung in Scene7 hochladen und für die Seitenerstellung direkt in Assets auf Scene7-Videos zugreifen können.
-seo-description: Assets bietet zentralisierte Video-Asset-Verwaltung, mit der Sie Videos direkt in Assets zur automatischen Kodierung in Scene7 hochladen und für die Seitenerstellung direkt in Assets auf Scene7-Videos zugreifen können.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 49%
+source-wordcount: '1707'
+ht-degree: 48%
 
 ---
 
