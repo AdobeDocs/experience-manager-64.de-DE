@@ -7,9 +7,9 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '723'
 ht-degree: 77%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 77%
    + [Bildprofile für Dynamic Media](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Hinzufügen von Scene7-Funktionen zu einer Seite](scene7.md)
+   + [Hinzufügen von Dynamic Media Classic-Funktionen zu einer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
