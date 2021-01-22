@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '7833'
+source-wordcount: '7831'
 ht-degree: 55%
 
 ---
@@ -140,7 +140,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
 
 Durch die Aktivierung von Dynamic Media sind die dynamischen Medienfunktionen in der Benutzeroberfläche verfügbar. Jedes hochgeladene Bild-Asset erhält eine `cqdam.pyramid.tiff`-Darstellung, die für den schnellen Versand dynamischer Bilddarstellungen verwendet wird. Diese PTIFF-Dateien bieten erhebliche Vorteile, beispielsweise 1) die Möglichkeit, nur ein einzelnes Übergeordnet erstelltes Bild zu verwalten und ohne zusätzliche Datenspeicherung unendliche Darstellungen zu erstellen und 2) interaktive Visualisierungen wie Zoomen, Schwenken, Drehen usw. zu verwenden.
 
-Wenn Sie Dynamic Media Classic (Scene7) in AEM verwenden möchten, sollten Sie Dynamic Media nur aktivieren, wenn Sie ein [spezifisches Szenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) verwenden. Dynamic Media ist deaktiviert, sofern Sie Dynamic Media nicht per Ausführungsmodus aktivieren.
+Wenn Sie Dynamic Media Classic in AEM verwenden möchten, sollten Sie Dynamic Media nur aktivieren, wenn Sie ein [spezifisches Szenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) verwenden. Dynamic Media ist deaktiviert, es sei denn, Sie aktivieren Dynamic Media über den Runmode.
 
 Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic Media entweder über die Befehlszeile oder den Schnellstart-Dateinamen aktivieren.
 
@@ -676,7 +676,7 @@ Wenn Sie Dynamic Media für 1) Bildbearbeitung in der Produktion _oder_ 2) Bildb
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Integration von Dynamic Media Classic (Scene7)</td> 
+   <td>Dynamic Media Classic-Integration</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p>filter-video</p> </td> 
    <td><p>Beginn mit <strong>image/</strong></p> <p>Enthält <strong>application/</strong> und endet mit <strong>set</strong>.</p> <p>Beginn mit <strong>video/</strong></p> </td> 
    <td><p>Sie konfigurieren den Transport-URI so, dass er anstelle der Adobe Dynamic Media Cloud Replication Service-URL auf den AEM Veröffentlichungsserver verweist. Durch das Einrichten dieses Filters können Assets mit Dynamic Media Classic bereitgestellt werden, anstatt mit der AEM-Veröffentlichungsinstanz.</p> <p>Die vordefinierten "Filter-Bilder", "Filter-Sets"und "Filter-Video"werden wie folgt ausgeführt:</p> 
@@ -752,7 +752,7 @@ Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupasse
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
-   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg` &lt;a2/> lautet.
+   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg`  lautet.
 
    Damit dieser Filter für alle Bilder unabhängig von ihrem Format gilt, setzen Sie den Wert auf `image/*`, wobei `*` ein regulärer Ausdruck ist, der auf alle Bilder eines beliebigen Formats angewendet wird.
 
@@ -992,7 +992,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
 
    Die Farbkorrektureigenschaften werden in der Tabelle **[!UICONTROL Farbkorrektureigenschaften]** beschrieben. Werte, die Sie Farbkorrektureigenschaften zuweisen können, sind in der Tabelle **[!UICONTROL Farbprofil]** angegeben.
 
-   Fügen Sie beispielsweise in **[!UICONTROL Name]** `iccprofilecmyk` **[!UICONTROL hinzu, wählen Sie &lt;a3/>Typ]** `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert]** hinzu. Tippen Sie auf **[!UICONTROL Hinzufügen]** und dann auf **[!UICONTROL Alle speichern]**, um Ihre Werte zu speichern.
+   Fügen Sie beispielsweise in **[!UICONTROL Name]** `iccprofilecmyk` **[!UICONTROL hinzu, wählen Sie Typ]** `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert]** hinzu. Tippen Sie auf **[!UICONTROL Hinzufügen]** und dann auf **[!UICONTROL Alle speichern]**, um Ihre Werte zu speichern.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
