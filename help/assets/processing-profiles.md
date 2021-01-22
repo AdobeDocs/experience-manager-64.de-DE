@@ -1,19 +1,15 @@
 ---
 title: Profile für die Verarbeitung von Metadaten, Bildern und Videos
-seo-title: Profile für die Verarbeitung von Metadaten, Bildern und Videos
 description: Profile enthalten eine Reihe von Regeln rund um die Optionen, die auf in einen Ordner hochgeladene Assets angewendet werden. Geben Sie an, welches Metadaten- und welches Videokodierungsprofil auf Video-Assets angewendet werden soll, die Sie hochladen. Bei Bild-Assets können Sie auch angeben, welches Bildprofil auf Bild-Assets angewendet werden soll, um sie zuzuschneiden.
-seo-description: Profile enthalten eine Reihe von Regeln rund um die Optionen, die auf in einen Ordner hochgeladene Assets angewendet werden. Geben Sie an, welches Metadaten- und welches Videokodierungsprofil auf Video-Assets angewendet werden soll, die Sie hochladen. Bei Bild-Assets können Sie auch angeben, welches Bildprofil auf Bild-Assets angewendet werden soll, um sie zuzuschneiden.
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 96%
+source-wordcount: '1378'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +102,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 – Schritt-Eigenschaften]** Folgendes fest:
+1. Legen Sie im Dialogfeld **[!UICONTROL Batch-Upload zu Scene7-Step-Eigenschaften]** Folgendes fest:
    * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
    * Wählen Sie **[!UICONTROL Handler-Modus]** aus, wenn der Handler mit dem nächsten Schritt fortfahren soll.
    * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.
