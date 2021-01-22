@@ -4,9 +4,9 @@ description: Versionshinweise speziell für Adobe Experience Manager 6.4 Cumulat
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4219'
 ht-degree: 13%
 
 ---
@@ -65,7 +65,7 @@ In Adobe Experience Manager 6.4.8.3 wurden die folgenden Probleme behoben:
 
 * Wenn in den Bildvorgabeeinstellungen die Option [!UICONTROL JPG-Chrominanz-Downsampling aktivieren] in [!DNL Experience Manager] deaktiviert ist, wird die Änderung nicht mit [!DNL Dynamic Media] (NPR-34284) synchronisiert.
 * Im [!UICONTROL Viewer-Vorgaben-Editor] ist bei der Bearbeitung der Vorgabe [!UICONTROL PanoramicImage/PanoramicImage_VR] in der Komponente `PanoramicView` die Modifikator-Beschriftung `PANORAMICVIEW_AUTOROTATE` nicht verfügbar (CQ-4302043).
-* Beim Rückgängigmachen der Veröffentlichung eines Videos von [!DNL Experience Manager] wird die Veröffentlichung des adaptiven Videosets auf dem konfigurierten Scene7 nicht rückgängig gemacht. (CQ-4304405).
+* Beim Rückgängigmachen der Veröffentlichung eines Videos von [!DNL Experience Manager] wird die Veröffentlichung des adaptiven Videosets in konfigurierter Dynamic Media Classic nicht rückgängig gemacht. (CQ-4304405).
 
 ### Plattform {#platform-6483}
 
@@ -187,7 +187,7 @@ In Adobe Experience Manager 6.4.8.2 wurden die folgenden Probleme behoben:
 
 * Die Funktion &quot;Intelligentes Beschneiden&quot;schlägt fehl, wenn einem Profil mit mehreren Seitenverhältnissen (z. B. 11) (NPR-34083) ein Bild hinzugefügt wird.
 
-* Änderungen an Bildvorgaben in [!UICONTROL Adobe Experience Manager] werden nicht mit dem Scene7 Publishing System (NPR-34284, CQ-4299713) synchronisiert.
+* Änderungen an Bildvorgaben in [!UICONTROL Adobe Experience Manager] werden nicht mit Dynamic Media Classic synchronisiert (NPR-34284, CQ-4299713).
 
 * Die Modifikatorbeschriftung [!UICONTROL PANORAMICVIEW_AUTOROTATE] fehlt auf der Registerkarte [!UICONTROL Verhalten] auf der Seite [!UICONTROL Viewer-Vorgabeneditor] (CQ-4302043).
 
