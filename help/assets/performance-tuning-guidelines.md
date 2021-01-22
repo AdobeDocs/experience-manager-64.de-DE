@@ -3,10 +3,10 @@ title: Handbuch zur Leistungsoptimierung von Assets
 description: Wichtige Bereiche der AEM-Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Performance von AEM Assets zu optimieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
-ht-degree: 83%
+source-wordcount: '3206'
+ht-degree: 82%
 
 ---
 
@@ -165,7 +165,7 @@ Ab der Version AEM 6.2 und dem Feature Pack für AEM 6.1 können Sie Abladung 
 
 ### Konfiguration von DAM-Update-Asset {#dam-update-asset-configuration}
 
-Der DAM-Update-Asset-Workflow enthält eine vollständige Suite an für Aufgaben konfigurierten Schritten, beispielsweise Scene7 PTIFF-Generierung und InDesign Server-Integration. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt die Erstellung einer benutzerdefinierten Kopie des DAM-Update-Asset-Workflow-Modells, in der alle unnötigen Schritte entfernt wurden. Aktualisieren Sie dann die Launcher für DAM-Update-Asset so, dass sie auf das neue Modell zeigen.
+Der Arbeitsablauf für DAM-Aktualisierung von Assets enthält eine vollständige Reihe von Schritten, die für Aufgaben wie die Generierung und Integration von Dynamic Media Classic PTIFF und InDesign Server konfiguriert sind. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt die Erstellung einer benutzerdefinierten Kopie des DAM-Update-Asset-Workflow-Modells, in der alle unnötigen Schritte entfernt wurden. Aktualisieren Sie dann die Launcher für DAM-Update-Asset so, dass sie auf das neue Modell zeigen.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Kunden verwenden Bilder unterschiedlicher Größen und Formate auf ihrer Website
 
 Viele Kunden der Website implementieren ein Bild-Servlet, das Bilder zum Zeitpunkt ihrer Anforderung skaliert und beschneidet und der Veröffentlichungsinstanz damit eine zusätzliche Belastung auferlegt. Wenn diese Bilder zwischengespeichert werden können, lässt sich dieses Problem abmildern.
 
-Ein alternativer Ansatz ist die Scene7-Technologie, mit der sich die Bildbearbeitung vollständig abgeben lässt. Darüber hinaus können Sie Brand Portal bereitstellen, das nicht nur Verantwortung für die Generierung von Darstellungen aus der AEM-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsstufe.
+Eine Alternative besteht darin, die Dynamic Media Classic-Technologie zu nutzen, um die Bildbearbeitung vollständig abzugeben. Darüber hinaus können Sie Brand Portal bereitstellen, das nicht nur Verantwortung für die Generierung von Darstellungen aus der AEM-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsstufe.
 
 #### ImageMagick {#imagemagick}
 
@@ -292,7 +292,7 @@ Wenn Sie Assets in einer große Menge an veröffentlichten Instanzen replizieren
 
 1. Wählen Sie die Veröffentlichungsinstanz, mit der Sie die Replikationen verketten möchten.
 1. Fügen Sie dieser Veröffentlichungsinstanz Agenten hinzu, die auf die anderen Veröffentlichungsinstanzen verweisen.
-1. Aktivieren Sie auf jedem dieser Replizierungsagenten auf der Registerkarte **[!UICONTROL Auslöser]** beim Empfang ]****[!UICONTROL 
+1. Aktivieren Sie auf jedem dieser Replizierungsagenten auf der Registerkarte **[!UICONTROL Trigger]** beim Empfang ]****[!UICONTROL 
 
 >[!NOTE]
 >
