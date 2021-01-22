@@ -1,19 +1,15 @@
 ---
 title: Panoramabilder
-seo-title: Panoramabilder
-description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dynamic Media.
-seo-description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dynamic Media.
-uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
+Description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 44%
+source-wordcount: '573'
+ht-degree: 38%
 
 ---
 
@@ -46,7 +42,7 @@ Weitere Informationen über den Upload von Assets für die Verwendung mit dem Vi
 
 Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Panorama-Bild-Viewer-Vorgaben mit Dynamic Media Classic- und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Dynamic Media ](https://www.adobe.com/de/marketing-cloud/experience-manager/scene7-login.html) Classic-Instanz an.
+1. [Melden Sie sich bei Ihrer Dynamic Media Classic Desktop-](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) Anwendung für jedes Firmen-Konto an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Image-Server-Veröffentlichung]** aus dem Dropdownmenü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Server]**.
@@ -75,7 +71,7 @@ Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie 
 
 Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramaische Medien]** in Ihrem WCM abgelegt haben und der Komponentenplatzhalter ausgeblendet ist, können Sie die folgenden Fehler beheben:
 
-* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für *Maximale Größe des Antwortbildes* in [Konfigurieren von Dynamic Media Classic (Scene7)](#configuring-dynamic-media-classic-scene).
+* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für *Maximale Antwortbildgröße* in [Konfigurieren von Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 * Aktivieren Sie für ein *Ungültiges Sperren* für das Asset oder *Analysefehler*, der auf der Seite angezeigt wird, **[!UICONTROL Abfrageverdeckungsmodus]** und **[!UICONTROL Anforderungssperrmodus]**, um sicherzustellen, dass sie deaktiviert sind.
 * Bei einem Fehler mit beschädigter Arbeitsfläche richten Sie für die vorherigen Anforderungen für das Bild-Asset einen **[!UICONTROL Pfad der Regeldefinitionsdatei und Ungültiges CTN]** ein.
