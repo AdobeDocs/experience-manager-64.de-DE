@@ -1,19 +1,15 @@
 ---
 title: Rotationssets
-seo-title: Rotationssets
-description: Erfahren Sie, wie Sie in dynamischen Medien mit Rotationssets arbeiten können.
-seo-description: Erfahren Sie, wie Sie in dynamischen Medien mit Rotationssets arbeiten können.
-uuid: a80a0491-6500-463a-83c4-ff4b90a88182
+description: Erfahren Sie, wie Sie mit Rotationssets in Dynamic Media arbeiten. Ein Rotationsset simuliert den realen Vorgang, ein Objekt zu drehen, um es aus einem beliebigen Blickwinkel zu betrachten.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1838'
-ht-degree: 69%
+source-wordcount: '1843'
+ht-degree: 68%
 
 ---
 
