@@ -1,19 +1,15 @@
 ---
 title: Anwenden von Dynamic Media-Viewer-Vorgaben
-seo-title: Anwenden von Dynamic Media-Viewer-Vorgaben
-description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden.
-seo-description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden.
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+description: Erfahren Sie, wie Sie von Ihrem Administrator erstellte Viewer-Vorgaben auf ein Asset in Dynamic Media anwenden.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '224'
+ht-degree: 92%
 
 ---
 
