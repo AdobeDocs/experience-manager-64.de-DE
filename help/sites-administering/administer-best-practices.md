@@ -1,19 +1,15 @@
 ---
 title: Best Practices
-seo-title: Best Practices
-description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungsteams von Adobe zusammengestellt wurden, um Administratoren einen schnellen Einstieg zu ermöglichen.
-seo-description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungsteams von Adobe zusammengestellt wurden, um Administratoren einen schnellen Einstieg zu ermöglichen.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: Erfahren Sie mehr über die Best Practices von Adobe Experience Manager, die von Adobe Engineering- und Consulting-Teams zusammengestellt wurden, um Administratoren bei der Arbeit zu unterstützen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 89%
+source-wordcount: '537'
+ht-degree: 79%
 
 ---
 
@@ -52,8 +48,8 @@ Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalitä
    <td>Ein Großteil der Verarbeitung von Profilen ist ordnerbasiert, da die Video-, Metadaten- und Bildverarbeitung immer auf Ordner angewendet wird. In diesem Dokument mit Best Practices wird beschrieben, wie Sie Ihre Ordnerhierarchie definieren und einrichten, da sich die Ordnerhierarchie erheblich darauf auswirkt, wie Inhalt verarbeitet wird. </td> 
   </tr>
   <tr>
-   <td>Integrieren von Scene7 und AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Best Practices für das Integrieren von Scene7 in AEM</a></td> 
+   <td>Integration von Dynamic Media Classic und AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Best Practices für die Integration von Dynamic Media Classic in AEM</a></td> 
    <td><p>Beschreibt, wann das Abfrage-Importtool aktiviert, wie Ihre Integration getestet und wann der Inhalts-Browser im Vergleich zu direktem Uploads zu Assets verwendet werden soll.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalitä
    <td>In diesen Themen wird als Bestandteil der Dokumentation über das <a href="/help/assets/managing-image-presets.md">Verwalten von Bildvorgaben</a> beschrieben, was Bildvorgaben sind. Zudem enthalten sie Best Practices hinsichtlich der Auswahl von Bildvorgabenoptionen.</td> 
   </tr>
   <tr>
-   <td>Dynamische Medien im Vergleich zur direkten Integration in Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7-/AEM-Integration im Vergleich zu Dynamische Medien</a></td> 
+   <td>Dynamic Media versus direkte Integration mit Dynamic Media Classic</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integration von Dynamic Media Classic/AEM mit Dynamic Media</a></td> 
    <td>Beschreibt, wann sich die Verwendung der Lösung „Dynamische Medien“ am ehesten empfiehlt, wann S7 in AEM integriert wird und wann beide Lösungen verwendet werden.</td> 
   </tr>
  </tbody>
