@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 90%
+source-wordcount: '300'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
   <tr>
    <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best Practices für Dynamic Imaging </a></td> 
-   <td><p>Beschreibt, wie Sie ein Bild für optimale Ergebnisse schärfer machen, sowie die beste Möglichkeit, um die Qualität Ihrer Bilder zu verbessern, wenn Sie die Funktion für dynamische Medien oder die Integration mit Scene7 verwenden. </p> </td> 
+   <td><p>Beschreibt, wie Sie ein Bild scharfzeichnen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität optimieren können, wenn Sie die Dynamic Media-Funktionalität verwenden oder mit Dynamic Media integrieren.</p> </td> 
   </tr>
   <tr>
    <td>Mehrsprachige Assets</td> 
