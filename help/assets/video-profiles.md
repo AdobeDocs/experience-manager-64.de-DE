@@ -1,19 +1,15 @@
 ---
 title: Dynamic Media-Video-Profile
-seo-title: Dynamic Media-Video-Profile
-description: 'Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. '
-seo-description: 'Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind optimiert, um Ihren Kunden Ansichten in bestmöglicher Qualität bieten zu können. '
-uuid: cfb498f8-44a0-4d94-99b0-fed7c27f575b
+description: 'Dynamic Media verfügt über ein vordefiniertes Profil zur adaptiven Videokodierung. Die Einstellungen in diesem vordefinierten Profil wurden optimiert, um Ihren Kunden das bestmögliche Videoerlebnis zu bieten. '
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b893f366-279a-4872-9413-77626d3387ea
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3100'
-ht-degree: 74%
+source-wordcount: '3068'
+ht-degree: 73%
 
 ---
 
