@@ -1,24 +1,20 @@
 ---
 title: Fehlerbehebung in Dynamic Media – Scene7-Modus
-seo-title: Fehlerbehebung in Dynamic Media – Scene7-Modus
-description: Fehlerbehebung in Dynamic Media im Ausführungsmodus „Scene7“.
-seo-description: Fehlerbehebung in Dynamic Media im Ausführungsmodus „Scene7“.
-uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
+description: Fehlerbehebung beim Dynamic Media - Scene7-Ausführungsmodus.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 88%
+source-wordcount: '1295'
+ht-degree: 86%
 
 ---
 
 
-# Fehlerbehebung in Dynamic Media – Scene7-Modus {#troubleshooting-dynamic-media-scene-mode}
+# Fehlerbehebung in Dynamic Media – Scene7-Modus {#troubleshooting-dynamic-media-scene-mode}
 
 Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Ausführungsmodus **dynamicmedia_scene7**.
 
@@ -30,7 +26,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
-   Dieses optionale Feature Pack bietet FTP-Unterstützung und Hilfe bei der Migration von Assets aus Dynamic Media Classic (Scene7) in Dynamic Media.
+   Dieses optionale Feature Pack dient zum FTP-Support oder wenn Sie Assets von Dynamic Media Classic nach Dynamic Media migrieren.
 
 * Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
 * Stellen Sie sicher, dass der Replizierungsagenten **[!UICONTROL Dynamic Media Asset Aktivierung (scene7)]** aktiviert ist.
@@ -72,7 +68,7 @@ Beim Ersetzen eines vorhandenen Dynamic Media-Assets (gleicher Name und Speicher
 
 * Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in Versand.
 
-## Bilder und Sets   {#images-and-sets}
+## Bilder und Sets  {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
