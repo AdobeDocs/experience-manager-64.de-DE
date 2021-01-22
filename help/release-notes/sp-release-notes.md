@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21618'
+source-wordcount: '21617'
 ht-degree: 25%
 
 ---
@@ -71,7 +71,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 ### Assets {#assets}
 
-* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Dynamic Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
+* Ein Ordner ohne Namen wird in Dynamic Media Classic erstellt, während ein Asset in Experience Manager mit Dynamic Media Classic-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
 * Die Detailseite &quot;Assets&quot;von PDF-Dateien zeigt keine Aktionsschaltflächen in Experience Manager an, der im Dynamic Media Scene7-Modus ausgeführt wird (NPR-32316).
 
