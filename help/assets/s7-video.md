@@ -1,31 +1,27 @@
 ---
 title: Video
-seo-title: Video
-description: Erfahren Sie mehr über das zentralisierte AEM Assets für die Videomanagement, mit dem Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt von AEM Assets aus auf Dynamic Media Classic-Videos zugreifen können. Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme.
-seo-description: Erfahren Sie mehr über das zentralisierte AEM Assets für die Videomanagement, mit dem Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt von AEM Assets aus auf Dynamic Media Classic-Videos zugreifen können. Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Erfahren Sie mehr über das zentralisierte AEM Assets für die Videomanagement, mit dem Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt von AEM Assets aus auf Dynamic Media Classic-Videos zugreifen können. Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme mit automatischer Geräte- und Bandbreitenerkennung.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1617'
+ht-degree: 64%
 
 ---
 
 
 # Video {#video}
 
-Assets bieten eine zentralisierte Verwaltung von Video-Assets, bei der Sie Videos direkt in Assets hochladen können, um sie automatisch nach Dynamic Media Classic (Scene7) zu kodieren, und auf Dynamic Media Classic-Videos direkt aus Assets zum Erstellen von Seiten zugreifen können.
+Assets bieten eine zentralisierte Verwaltung von Video-Assets, bei der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic zu kodieren, und auf Dynamic Media Classic-Videos direkt aus Assets zum Erstellen von Seiten zugreifen können.
 
 Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung).
 
 * Die Komponente **[!UICONTROL Scene7 Video]** führt automatisch eine Geräte- und Bandbreitenerkennung durch, um das richtige Format und die richtige Videoqualität auf Desktop-, Tablet- und Mobilgeräten wiederzugeben.
-* Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset ist ein Container für alle Videoausgabeformate, die zur nahtlosen Wiedergabe von Videos auf verschiedenen Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Videostreaming auf mehreren Bildschirmen verwendet, einschließlich Desktopgeräten und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. Weitere Informationen finden Sie in der [Scene7-Dokumentation zu adaptiven Videosets](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset ist ein Container für alle Videoausgabeformate, die zur nahtlosen Wiedergabe von Videos auf verschiedenen Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Videostreaming auf mehreren Bildschirmen verwendet, einschließlich Desktopgeräten und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Über FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
