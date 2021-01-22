@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 76%
 
 ---
@@ -31,7 +31,7 @@ Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best P
 * Überschrift (Kampagne)
 * Bild (Kampagne)
 * Link (Kampagne)
-* Scene7-Bildvorlage (Kampagne)
+* Dynamic Media-Bildvorlage (Kampagne)
 * Zielgerichteter Verweis (Kampagne)
 * Text und Bild (Kampagne)
 * Text und Personalisierung (Kampagne)
@@ -77,7 +77,7 @@ Sie können ein Bild entweder aus dem [Asset-Browser](/help/sites-authoring/auth
 >
 >Sie müssen Informationen in das Feld **Alt Text** eingeben, damit das Bild nicht gespeichert werden kann.
 
-Nach dem Hochladen des Bilds (und nicht zuvor) können Sie [Bearbeitung ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) anstelle von &lt;a0/> verwenden, um das Bild nach Bedarf zu beschneiden/zu drehen:
+Nach dem Hochladen des Bilds (und nicht zuvor) können Sie [Bearbeitung ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) anstelle von  verwenden, um das Bild nach Bedarf zu beschneiden/zu drehen:
 
 ![](do-not-localize/chlimage_1-10.png)
 
