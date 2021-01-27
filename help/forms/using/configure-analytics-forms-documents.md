@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd7f971cf26f60acc121d194d5251e87e0403718
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1544'
 ht-degree: 85%
 
 ---
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 Bei einer Cloud-Service-Konfiguration handelt es sich um Informationen zu Ihrem Adobe Analytics-Konto. Anhand der Konfiguration kann Adobe Experience Manager (AEM) eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie für jedes verwendete Analytics-Konto eine separate Konfiguration.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz als Administrator an.
-1. Klicken Sie in der oberen linken Ecke auf **Adobe Experience Manager** > **Tools** ![Tools](assets/tools.png) **Bereitstellung** > **Cloud Services**.
+1. Klicken Sie oben links auf **Adobe Experience Manager** > **Tools** ![Tools](assets/tools.png) **Cloud Services** > **Alte Cloud Services**.
 1. Suchen Sie das Symbol **Adobe Analytics**. Klicken Sie auf **Konfigurationen anzeigen** und dann auf **[+]**, um eine neue Konfiguration hinzuzufügen.
 
    Wenn Sie ein Erstbenutzer sind, klicken Sie auf **Jetzt konfigurieren**.
