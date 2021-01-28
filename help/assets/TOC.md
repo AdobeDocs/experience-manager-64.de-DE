@@ -7,10 +7,10 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 1c853b441845997fbb3086ca93d7020ed02d88c4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 77%
+source-wordcount: '731'
+ht-degree: 76%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 77%
    + [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
 + 3D-Assets {#three-d}
-   + [AEM 3D-Versionshinweise](../release-notes/aem3d-release-notes.md)
+   + [AEM 3D-Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/assets/three-d/assets-3d.html)
    + [Arbeiten mit 3D-Assets](assets-3d.md)
    + [Installieren und Konfigurieren von AEM 3D](install-config-3d.md)
    + [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md)
