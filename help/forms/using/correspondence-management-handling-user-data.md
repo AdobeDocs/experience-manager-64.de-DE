@@ -1,17 +1,17 @@
 ---
 title: Correspondence Management | Umgang mit Benutzerdaten
 seo-title: Correspondence Management | Umgang mit Benutzerdaten
-description: 'null'
-seo-description: 'null'
+description: Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Erfahren Sie, wie Sie das Speichern von Daten für Entwurfs- und gesendete Briefe im AEM Repository konfigurieren, auf gespeicherte Daten zugreifen und gespeicherte Daten löschen können.
+seo-description: Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Erfahren Sie, wie Sie das Speichern von Daten für Entwurfs- und gesendete Briefe im AEM Repository konfigurieren, auf gespeicherte Daten zugreifen und gespeicherte Daten löschen können.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 89%
+source-wordcount: '614'
+ht-degree: 83%
 
 ---
 
