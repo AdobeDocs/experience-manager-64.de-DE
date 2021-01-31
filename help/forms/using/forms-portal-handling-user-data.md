@@ -1,18 +1,18 @@
 ---
 title: Forms-Portal | Umgang mit Benutzerdaten
 seo-title: Forms-Portal | Umgang mit Benutzerdaten
-description: 'null'
-seo-description: 'null'
+description: Das AEM Forms-Portal stellt Komponenten bereit, mit denen Sie adaptive Formulare, HTML5-Formulare und andere Forms-Assets auf der AEM Sites-Seite auflisten können. Erfahren Sie, wie Forms Portal Daten für Entwurfs- und gesendete Formulare speichert. Erfahren Sie mehr darüber, wie Sie auf Entwurfs- und gesendete Formulardaten für angemeldete und anonyme Benutzer in den konfigurierten Datenspeichern zugreifen können, und löschen Sie sie bei Bedarf.
+seo-description: Das AEM Forms-Portal stellt Komponenten bereit, mit denen Sie adaptive Formulare, HTML5-Formulare und andere Forms-Assets auf der AEM Sites-Seite auflisten können. Erfahren Sie, wie Forms Portal Daten für Entwurfs- und gesendete Formulare speichert. Erfahren Sie mehr darüber, wie Sie auf Entwurfs- und gesendete Formulardaten für angemeldete und anonyme Benutzer in den konfigurierten Datenspeichern zugreifen können, und löschen Sie sie bei Bedarf.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 68%
+source-wordcount: '980'
+ht-degree: 64%
 
 ---
 
