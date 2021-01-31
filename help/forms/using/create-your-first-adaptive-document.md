@@ -1,15 +1,15 @@
 ---
 title: ERSTELLEN SIE NICHT DAS erste adaptive Dokument.
 seo-title: ERSTELLEN SIE NICHT DAS erste adaptive Dokument.
-description: 'null'
-seo-description: 'null'
+description: NICHT VERÖFFENTLICHEN
+seo-description: NICHT VERÖFFENTLICHEN
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '795'
 ht-degree: 15%
 
 ---
@@ -85,12 +85,12 @@ Ziele:
 
 ## Schritt 3: Anwenden von Regeln auf Felder mit adaptiven Dokumenten (nur Web-Kanal) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-Adaptives Dokument bietet einen Editor zum Schreiben von Regeln für adaptive Dokument-Objekte. Diese Regeln definieren Aktionen, die auf Dokument-Objekten basierend auf vorgegebenen Bedingungen und Benutzeraktionen auf dem Dokument ausgelöst werden. Dadurch wird die Genauigkeit und Benutzerfreundlichkeit in der Webversion des adaptiven Dokuments gewährleistet. Weitere Informationen zu Regeln und Regeln-Editoren für adaptive Dokument finden Sie unter [Regeleditor](/help/forms/using/rule-editor.md).
+Adaptives Dokument bietet einen Editor zum Schreiben von Regeln für adaptive Dokument-Objekte. Diese Regeln definieren Aktionen zum Trigger auf Dokument-Objekten basierend auf vorgegebenen Bedingungen und Benutzeraktionen auf dem Dokument. Dadurch wird die Genauigkeit und Benutzerfreundlichkeit in der Webversion des adaptiven Dokuments gewährleistet. Weitere Informationen zu Regeln und Regeln-Editoren für adaptive Dokument finden Sie unter [Regeleditor](/help/forms/using/rule-editor.md).
 
 Ziele:
 
 * Erstellen und Anwenden von Regeln auf die Web-Kanal-Felder des adaptiven Dokuments
-* Verwenden Sie Regeln, um Dokument-Datenmodelldienste im Web-Kanal auszulösen
+* Verwenden von Regeln zum Trigger von Dokument-Datenmodelldiensten in Web Kanal
 
 ## Schritt 4: Formatieren Sie das adaptive Dokument (nur Web-Kanal) {#step-style-the-adaptive-document-web-channel-only}
 
