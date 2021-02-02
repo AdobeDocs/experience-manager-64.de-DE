@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '3428'
+source-wordcount: '3426'
 ht-degree: 33%
 
 ---
@@ -32,7 +32,7 @@ In Dynamic Media Classic veröffentlichte Assets können in verschiedenen Viewer
 
 Sie können digitale Assets direkt von AEM nach Dynamic Media Classic veröffentlichen und digitale Assets von Dynamic Media Classic nach AEM veröffentlichen.
 
-In diesem Abschnitt wird beschrieben, wie digitale Assets von AEM nach Dynamic Media Classic und umgekehrt veröffentlicht werden. Die Viewer werden auch detailliert beschrieben. Informationen zum Konfigurieren von AEM für Dynamic Media Classic finden Sie unter [Integrieren von Dynamic Media Classic mit AEM](/help/sites-administering/scene7.md).
+In diesem Abschnitt wird beschrieben, wie digitale Assets von AEM nach Dynamic Media Classic und umgekehrt veröffentlicht werden. Die Viewer werden auch detailliert beschrieben. Weitere Informationen zum Konfigurieren von AEM für Dynamic Media Classic finden Sie unter [Integrieren von Dynamic Media Classic mit AEM](/help/sites-administering/scene7.md).
 
 Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
 
@@ -242,7 +242,7 @@ Mit der Komponente &quot;Dynamic Media Classic Image&quot;können Sie Ihren Bild
 
 **[!UICONTROL Scharfzeichnen]** : Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices*](/help/assets/assets/sharpening_images.pdf) ausführlich erläutert.
 
-**[!UICONTROL URL-Modifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md) und [Befehlsreferenz](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
+**[!UICONTROL URL-Modifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md) und [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
 
 **[!UICONTROL Haltepunkte]** : Wenn Ihre Website responsiv ist, sollten Sie die Haltepunkte anpassen. Haltepunkte müssen durch Kommas `,` getrennt werden.
 
