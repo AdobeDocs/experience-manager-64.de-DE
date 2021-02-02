@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 88%
+source-wordcount: '885'
+ht-degree: 81%
 
 ---
 
@@ -72,14 +72,14 @@ ht-degree: 88%
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-   + [Stilsystem](/help/sites-authoring/style-system.md)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+   + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
    + [Entwickeln von AEM-Komponenten](developing-components.md)
    + [Entwickeln von AEM-Komponenten – Codebeispiele](developing-components-samples.md)
    + [JSON-Exporter für Content Services](json-exporter.md)
-   + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
+   + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + [Bildeditor](image-editor.md)
    + [Decoration-Tag ](decoration-tag.md)
    + [Verwenden von Bedingungen zum Ausblenden](hide-conditions.md)
@@ -117,9 +117,9 @@ ht-degree: 88%
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
       + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
-   + [HTTP-API](/help/assets/mac-api-assets.md)
-   + [Inhaltsfragmente](/help/assets/content-fragments.md)
-   + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
+   + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
+   + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
+   + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
    + [Inhaltsfragmente und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Entwicklungstools{#devtools}
    + [Entwicklungstools](dev-tools.md)
@@ -176,12 +176,12 @@ ht-degree: 88%
       + [Erstellen benutzerspezifischer Formular-Zuordnungen](extending-campaign-form-mapping.md)
       + [Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten](extending-campaign-custom-template.md)
       + [Anfragenanalyse-Skript](analyze-request.md)
-   + [Integrieren von Diensten mit der JMX-Konsole](jmx-integration.md)
-   + [Entwickeln des Bulk Editors](dev-bulk-editor.md)
+   + [Integrieren von Diensten mit der JMX-Konsole](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/jmx-integration.html)
+   + [Entwickeln des Bulk Editors](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-bulk-editor.html)
    + Erweitern der klassischen Benutzeroberfläche{#extending-classic-ui}
       + [Anpassen der Websites-Konsole (klassische Benutzeroberfläche)](customizing-siteadmin.md)
       + [Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche)](customizing-the-welcome-console.md)
-      + [Entwickeln von Berichten](dev-reports.md)
+      + [Entwickeln von Berichten](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-reports.html)
 + Testen{#testing}
    + [Planung](planning.md)
    + [Welche Testumgebung benötigen Sie?](test-environments.md)
@@ -194,10 +194,10 @@ ht-degree: 88%
    + [Die nächste Version …](the-next-release.md)
    + [Checklisten](checklists.md)
    + [Tough Day](tough-day.md)
-   + [Testen der Benutzeroberfläche](hobbes.md)
+   + [Testen der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Best Practices{#bestpractices}
    + [Übersicht über bewährte Verfahren](best-practices.md)
-   + [AEM und Best Practices für die Entwicklung](dev-guidelines-bestpractices.md)
+   + [AEM und Best Practices für die Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html)
    + [Best Practices für die Entwicklung](development-practices.md)
    + [Inhaltsarchitektur](content-architecture.md)
    + [Software-Architektur](software-architecture.md)
