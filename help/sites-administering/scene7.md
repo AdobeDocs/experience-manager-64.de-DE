@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5456'
+source-wordcount: '5454'
 ht-degree: 21%
 
 ---
@@ -556,7 +556,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 
 1. Tippen Sie in der rechten unteren Ecke des Konfigurationsfensters auf **[!UICONTROL Speichern]**.
 1. Kehren Sie über die linke Leiste zu AEM zurück und tippen Sie auf „CRXDE Lite“.
-1. Navigieren Sie auf der Seite &quot;CRXDE Lite&quot;in der linken Leiste zu `/etc/cloudservices/scene7/<environment>` (ersetzen Sie `<environment>` für den tatsächlichen Namen).
+1. Navigieren Sie auf der Seite &quot;CRXDE Lite&quot;in der linken Leiste zu `/etc/cloudservices/scene7/<environment>` (ersetzen Sie `<environment>` durch den tatsächlichen Namen).
 1. Erweitern Sie `<environment>` (ersetzen Sie `<environment>` für den tatsächlichen Namen), um den Knoten `mimeTypes` anzuzeigen.
 1. Tippen Sie auf den soeben hinzugefügten mimeType.
 
@@ -567,7 +567,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 
    Beispiel, `psprocess="rasterize"&psresolution=120` .
 
-   Weitere Upload-Auftragsparameter, die Sie verwenden können, finden Sie unter [Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html).
+   Weitere Upload-Auftragsparameter, die Sie verwenden können, finden Sie unter [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html).
 
    >[!NOTE]
    >
