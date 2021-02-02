@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 62%
+source-wordcount: '2825'
+ht-degree: 61%
 
 ---
 
@@ -188,8 +188,8 @@ ModifikatorenViewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Pa
 
    Mit Viewer-Modifikatoren können Sie beispielsweise Folgendes ausführen:
 
-   * Verknüpfen Sie eine Untertiteldatei mit einem Video [caption.](https://docs.adobe.com/content/help/de/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Verknüpfen Sie eine Navigationsdatei mit einem Video [Navigation.](https://docs.adobe.com/content/help/de/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Verknüpfen Sie eine Untertiteldatei mit einem Video [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Verknüpfen Sie eine Navigationsdatei mit einem Video [Navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 Sie können die folgenden [!UICONTROL Erweiterte Einstellungen] bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
