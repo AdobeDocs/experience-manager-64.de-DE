@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 96%
+source-wordcount: '658'
+ht-degree: 91%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 96%
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
    + [Benutzersynchronisierung](sync.md)
    + [Unterstützung von Encapsulated Tokens](encapsulated-token.md)
-   + [Single Sign-On](/help/sites-deploying/single-sign-on.md)
+   + [Single Sign-On](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
    + [Prüfen von Benutzerverwaltungsvorgängen in AEM](audit-user-management-operations.md)
    + [Die Funktion „SSL By Default“ (SSL als Standard)](ssl-by-default.md)
    + [SAML 2.0-Authentifizierungs-Handler](saml-2-0-authenticationhandler.md)
@@ -155,11 +155,11 @@ ht-degree: 96%
    + [Target-Integration mit Experience Fragments](experience-fragments-target.md)
 + Best Practices {#bestpractices}
    + [Best Practices](administer-best-practices.md)
-   + [Best Practices für die Übersetzung](tc-bp.md)
-   + [Best Practices für MSM](msm-best-practices.md)
+   + [Best Practices für die Übersetzung](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
+   + [Best Practices für MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [AEM Sites – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-sites.md)
-   + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-commerce.md)
+   + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + Content Management {#contentmanagement}
    + [Arbeiten mit Paketen](package-manager.md)
    + [Offloader für Assets-Workflows](workflow-offloader.md)
