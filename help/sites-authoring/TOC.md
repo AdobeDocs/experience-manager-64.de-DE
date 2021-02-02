@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Authoring-Benutzeranleitung
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 92%
+source-wordcount: '292'
+ht-degree: 88%
 
 ---
 
@@ -72,9 +72,9 @@ ht-degree: 92%
    + [Arbeiten mit Workflows](workflows.md)
    + [Anwenden von Workflows auf Seiten ](workflows-applying.md)
    + [Teilnehmen an Workflows](workflows-participating.md)
-   + [Arbeiten mit Projekt-Workflows](projects-with-workflows.md)
+   + [Arbeiten mit Projekt-Workflows](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Seitenleistung {#page-performance}
-   + [Inhaltseinblick ](content-insights.md)
+   + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
