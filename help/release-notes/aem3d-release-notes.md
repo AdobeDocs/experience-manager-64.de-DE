@@ -1,18 +1,14 @@
 ---
 title: AEM 3D – Versionshinweise
-seo-title: AEM 3D – Versionshinweise
 description: Spezifische Versionshinweise für 3D-Inhalt in Adobe Experience Manager Assets.
-seo-description: Spezifische Versionshinweise für 3D-Inhalt in Adobe Experience Manager Assets.
-uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes, 3D
 content-type: reference
-discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1966'
 ht-degree: 44%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 44%
 
 >[!IMPORTANT]
 >
->Das AEM 3D Feature Pack in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>Das AEM 3D Feature Pack in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) oder [AEM 6.5.3 oder höher zu verwenden.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM-6.4-DynamicMedia-3D Version 3.1.0 (10. Oktober 2018)
 
