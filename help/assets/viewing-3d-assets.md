@@ -1,19 +1,15 @@
 ---
 title: Anzeigen von 3D-Assets
-seo-title: Anzeigen von 3D-Assets
 description: In diesem Abschnitt erhalten Sie Informationen zum interaktiven 3D-Viewer, der in AEM auf der Seite „Asset-Details“ verfügbar ist. Sie lernen, wie 3D-Assets im Viewer angezeigt werden.
-seo-description: In diesem Abschnitt erhalten Sie Informationen zum interaktiven 3D-Viewer, der in AEM auf der Seite „Asset-Details“ verfügbar ist. Sie lernen, wie 3D-Assets im Viewer angezeigt werden.
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 63%
+source-wordcount: '1778'
+ht-degree: 62%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 63%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) oder [AEM 6.5.3 oder höher zu verwenden.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) zur Ansicht von 3D-Assets.
+>AEM 3D in AEM 6.4 wird nicht mehr unterstützt. Adobe empfiehlt, die Funktion für 3D-Elemente in [AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) oder [AEM 6.5.3 oder höher zu verwenden.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) zur Ansicht von 3D-Assets.
 
 In diesem Dokument wird beschrieben, wie Sie 3D-Assets in den Asset-Details anzeigen können. Außerdem wird beschrieben, wie Sie Assets anzeigen können, die sich in der 3D-Komponente in Sites befinden.
 
