@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 21%
 
 ---
@@ -422,7 +422,7 @@ Wenn Sie jedoch nicht möchten, dass Assets, die zur automatischen Veröffentlic
 Bevor Sie Assets in Dynamic Media Classic verschieben können, ohne sie zu veröffentlichen, müssen Sie Folgendes einrichten:
 
 1. [Verwenden Sie die Admin Console, um einen Supportfall zu erstellen.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In Ihrem Support-Fall fordern Sie die Aktivierung der sicheren Vorschau für Ihr Dynamic Media Classic-Konto an.
-1. Folgen Sie den Anweisungen zum Einrichten der sicheren Vorschau für Ihr Dynamic Media Classic-Konto.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)[
+1. Folgen Sie den Anweisungen zum Einrichten der sicheren Vorschau für Ihr Dynamic Media Classic-Konto.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)[
 
 Dies sind dieselben Schritte, die Sie ausführen würden, um eine sichere Testeinrichtung in Dynamic Media Classic zu erstellen.
 
@@ -452,7 +452,7 @@ So legen Sie den Status der an Dynamic Media Classic gesendeten Assets als unver
 1. Tippen Sie auf das Symbol &quot;AEM&quot;, navigieren Sie zu **[!UICONTROL Bereitstellung > Cloud Services]**, tippen Sie auf **[!UICONTROL Dynamic Media Classic]** und wählen Sie Ihre Konfiguration in Dynamic Media Classic aus.
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Erweitert.]** Wählen Sie im Dropdownmenü **[!UICONTROL Sichere Ansicht aktivieren]** die Option **[!UICONTROL Bei AEM-Aktivierung für Veröffentlichungen]**, um Assets ohne Veröffentlichung in Dynamic Media Classic zu verschieben. (Standardmäßig ist dieser Wert auf **[!UICONTROL Sofort]** festgelegt, wobei Dynamic Media Classic-Assets sofort veröffentlicht werden.)
 
-   Weitere Informationen zum Testen von Assets, bevor sie veröffentlicht werden, finden Sie in der [Dynamic Media Classic-Dokumentation](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
+   Weitere Informationen zum Testen von Assets, bevor sie veröffentlicht werden, finden Sie in der [Dynamic Media Classic-Dokumentation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish).
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
