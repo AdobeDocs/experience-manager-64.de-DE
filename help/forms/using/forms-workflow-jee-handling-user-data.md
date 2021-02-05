@@ -1,17 +1,17 @@
 ---
 title: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
 seo-title: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
-description: 'null'
-seo-description: 'null'
+description: AEM Forms JEE Workflows bietet Tools zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Erfahren Sie mehr darüber, wie Sie auf Benutzerdaten zugreifen und diese löschen, Prozessinstanz-IDs identifizieren, wenn Workflow-Initiator oder Teilnehmer bekannt sind, Prozessinstanz-IDs identifizieren, wenn Benutzerdaten in Primitive-Variablen gespeichert werden, Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs löschen und mit verwaisten Aufgaben arbeiten.
+seo-description: AEM Forms JEE Workflows bietet Tools zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Erfahren Sie mehr darüber, wie Sie auf Benutzerdaten zugreifen und diese löschen, Prozessinstanz-IDs identifizieren, wenn Workflow-Initiator oder Teilnehmer bekannt sind, Prozessinstanz-IDs identifizieren, wenn Benutzerdaten in Primitive-Variablen gespeichert werden, Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs löschen und mit verwaisten Aufgaben arbeiten.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 70%
+source-wordcount: '1493'
+ht-degree: 64%
 
 ---
 
