@@ -99,7 +99,7 @@ Diese Konfiguration sollte nicht geändert werden.
 * Wählen Sie das Bearbeitungssymbol
 * Stellen Sie sicher, dass **Name** `email`
 
-* Stellen Sie sicher, dass **Beitrag aus E-Mail-Antwort erstellen** `unchecked` &lt;a2/> ist.
+* Stellen Sie sicher, dass **Beitrag aus E-Mail-Antwort erstellen** `unchecked`  ist.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
