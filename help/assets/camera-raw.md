@@ -13,7 +13,7 @@ ht-degree: 45%
 
 # Verwenden Sie Camera Raw, um Bilder zu verarbeiten {#camera-raw-support}
 
-Sie können die Camera Raw unterstützte Verarbeitung von Rohdateiformaten wie CR2, NEF und RAF aktivieren und die Bilder im JPEG-Format wiedergeben. Die Funktion wird in Adobe Experience Manager Assets mit dem unter Softwareverteilung verfügbaren Camera Raw-Paket[ unterstützt.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)
+Sie können die Camera Raw unterstützte Verarbeitung von Rohdateiformaten wie CR2, NEF und RAF aktivieren und die Bilder im JPEG-Format wiedergeben. Die Funktion wird in Adobe Experience Manager Assets mit dem unter Softwareverteilung verfügbaren Camera Raw-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt.[
 
 >[!NOTE]
 >
