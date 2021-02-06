@@ -28,7 +28,7 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 |--- |---|
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erstellen, verwalten, liefern und optimieren Sie digitale Assets. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
-| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
+| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
