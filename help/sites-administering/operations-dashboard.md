@@ -702,7 +702,7 @@ Das Dashboard **Systemübersicht** zeigt einen Überblick über die Konfiguratio
 
 >[!NOTE]
 >
->Sehen Sie sich dieses Video [für eine Einführung in das Dashboard &quot;Systemübersicht&quot;an.](https://video.tv.adobe.com/v/21340?captions=ger)
+>Sehen Sie sich dieses Video [für eine Einführung in das Dashboard &quot;Systemübersicht&quot;an.](https://video.tv.adobe.com/v/21340)
 
 ### Zugriff {#how-to-access}
 
