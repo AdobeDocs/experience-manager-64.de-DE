@@ -350,7 +350,7 @@ Zur Erstellung eines Berichts werden Seed-Daten mit den Referenz-Sites gebündel
 1. Navigieren Sie zum Forms Manager unter https://&lt;Host>:&lt;Anschluss>/aem/forms und führen Sie die folgenden Schritte aus:
 
    * Öffnen Sie den Ordner &quot;We.Finance&quot;oder &quot;We.Gov&quot;und wählen Sie das Formular aus, für das Sie den Bericht anzeigen möchten.
-   * Klicken Sie in der Aktions-Symbolleiste auf Analyse aktivieren. Nachdem Sie die Analyse für das Formular aktiviert haben, klicken Sie auf Analysebericht. Sie können sehen, dass ein leerer Bericht generiert wurde. Nachdem ein leerer Bericht generiert wurde, müssen Sie Seed-Daten bereitstellen, die mit refsite-Paket versandt wurden, um einen Analysebericht für Demozwecke zu erstellen.
+   * Klicken Sie in der Aktions-Symbolleiste auf Analyse aktivieren. Nachdem Sie die Analyse für das Formular aktiviert haben, klicken Sie auf Analysebericht. Sie können sehen, dass ein leerer Bericht generiert wurde. Nachdem ein leerer Bericht generiert wurde, müssen Sie Seed-Daten bereitstellen, die mit refsite-Paket versandt werden, um einen Analysebericht für Demozwecke zu erstellen.
 
    Referenz-Websites bieten dem Analytics-Berichte Startdaten für Kreditkarten-, Hypotheken- und Kindergeld-Anwendungsfälle. Informationen zur Konfiguration der Seed-Daten finden Sie unter Umgehung der Website [We.Finance-Referenz](/help/forms/using/finance-reference-site-walkthrough.md)- und [We.Gov-Referenz-Website - Umgehungslösung](/help/forms/using/gov-reference-site-walkthrough.md).
 
