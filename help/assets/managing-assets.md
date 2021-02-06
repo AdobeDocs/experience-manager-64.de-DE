@@ -8,8 +8,8 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 100%
 
 ---
 
