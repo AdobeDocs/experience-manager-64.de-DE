@@ -25,7 +25,7 @@ Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ d
 
 Um die nicht autorisierte Verwendung dieser Daten zu verhindern, können Unternehmen der PDF-Vorschau ein Wasserzeichen hinzufügen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
 
-Um das Wasserzeichen in der PDF-Vorschau zu aktivieren, wählen Sie unter **[!UICONTROL Correspondence Management-Konfigurationen]** die Option &quot;Wasserzeichen ]**während der Vorschau anwenden&quot;.`https://[server]:[port]/system/console/configMgr`**[!UICONTROL 
+Um das Wasserzeichen in der PDF-Vorschau zu aktivieren, wählen Sie unter **[!UICONTROL Correspondence Management-Konfigurationen]** die Option &quot;Wasserzeichen ]**während der Vorschau anwenden&quot;.**[!UICONTROL `https://[server]:[port]/system/console/configMgr`
 
 ![default-watermark](assets/default-watermark.png)
 
