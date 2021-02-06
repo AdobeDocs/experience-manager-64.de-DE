@@ -117,7 +117,7 @@ ht-degree: 81%
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
       + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
-   + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
+   + [-HTTP-API ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
    + [Inhaltsfragmente und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
