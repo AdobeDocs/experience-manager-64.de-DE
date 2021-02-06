@@ -63,7 +63,7 @@ Der an Sarah gesendete Newsletter ist eine benutzerdefinierte Implementierung, d
 
 #### Sehen Sie selbst{#see-it-yourself} 
 
-Öffnen Sie die folgende URL in der Veröffentlichungsinstanz, um eine Newsletter-E-Mail auszulösen. Stellen Sie sicher, dass Sie `[emailID]` durch ein gültiges E-Mail-Konto ersetzen, um den Newsletter zu erhalten. Öffnen Sie den Newsletter und klicken Sie auf **[!UICONTROL Jetzt beantragen]**, um zum Kreditkartenantrag zu gelangen.
+Öffnen Sie die folgende URL in der Veröffentlichungsinstanz, um eine Newsletter-E-Mail Trigger. Stellen Sie sicher, dass Sie `[emailID]` durch ein gültiges E-Mail-Konto ersetzen, um den Newsletter zu erhalten. Öffnen Sie den Newsletter und klicken Sie auf **[!UICONTROL Jetzt beantragen]**, um zum Kreditkartenantrag zu gelangen.
 
 `https://[publishServer]:[publsihPort]/content/campaigns/we-finance/start.html?app=cc&email=[emailID]&givenName=Sarah&familyName=Rose`
 
