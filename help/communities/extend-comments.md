@@ -34,7 +34,7 @@ Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Seite der 
 
 Um diese Lösung zu implementieren, erstellen Sie eine neue Komponente, die die vorhandene Komponente erweitert (überschreibt) und das Handlebars-Skript ändert. Der Bereich der Site, der die neuen Kommentare verwendet, kann den erweiterten verwenden, während die Sites, die das Standardbild verwenden, unverändert bleiben.
 
-Die Kommentarkomponente ist eigentlich eine von zwei Komponenten, die das Kommentarsystem umfassen. Es gibt also zwei Komponenten, die erweitert werden müssen: *Kommentare* und *Kommentar*. Das zu bearbeitende Skript befindet sich in der Datei &quot; *comment *component&quot;und die übergeordnete Komponente `header.hbs`comments *&quot;(das Kommentarsystem) ist das, was ein Autor der Seite tatsächlich hinzufügt.*
+Die Kommentarkomponente ist eigentlich eine von zwei Komponenten, die das Kommentarsystem umfassen. Es gibt also zwei Komponenten, die erweitert werden müssen: *Kommentare* und *Kommentar*. Das zu bearbeitende Skript befindet sich in der Datei &quot; *comment *component&quot;und die übergeordnete Komponente *comments*&quot;(das Kommentarsystem) ist das, was ein Autor der Seite tatsächlich hinzufügt.`header.hbs`
 
 Um Kommentare zu erweitern, müssen Sie:
 
