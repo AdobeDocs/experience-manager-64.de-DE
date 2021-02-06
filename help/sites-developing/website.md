@@ -478,7 +478,7 @@ Die Komponente **[!UICONTROL Seite]** definiert Eigenschaften, mit denen Sie Unt
 
 1. Öffnen Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]**.
 1. Klicken Sie auf der Registerkarte &quot;Sidekick **[!UICONTROL Seite]**&quot;auf **[!UICONTROL Seiteneigenschaften]**.
-1. Erweitern Sie auf der Registerkarte **[!UICONTROL Einfach]** des Dialogfelds **[!UICONTROL Mehr Titel und Beschreibung]** und für die Eigenschaft **[!UICONTROL Untertitel]** `what we do` &lt;a6/>. Klicken Sie auf **[!UICONTROL OK]**.
+1. Erweitern Sie auf der Registerkarte **[!UICONTROL Einfach]** des Dialogfelds **[!UICONTROL Mehr Titel und Beschreibung]** und für die Eigenschaft **[!UICONTROL Untertitel]** `what we do` . Klicken Sie auf **[!UICONTROL OK]**.
 1. Wiederholen Sie die vorherigen Schritte, um der Seite **[!UICONTROL Dienste]** den Untertitel **über unsere Dienste** hinzuzufügen.
 1. Wiederholen Sie die vorherigen Schritte, um der Seite **[!UICONTROL Customers]** die Vertrauenswürdigkeit hinzuzufügen, die wir verdienen **.**
 
@@ -500,7 +500,7 @@ Die Quelle für den Bildlink zur Seite „Products“ könnte beispielsweise htt
 
 Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/components/contentpage/navimage.png.java zu, das Sie erstellen.
 
-1. Öffnen Sie in CRXDE Lite unter `topnav.jsp`Suchen Sie den Inhalt des Ankerelements (Zeile 14):`/apps/mywebsite/components/topnav.`
+1. Öffnen Sie in CRXDE Lite unter `/apps/mywebsite/components/topnav.`Suchen Sie den Inhalt des Ankerelements (Zeile 14):`topnav.jsp`
 
    ```xml
    <%=child.getTitle() %>
