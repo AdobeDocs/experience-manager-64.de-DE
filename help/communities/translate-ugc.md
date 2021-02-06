@@ -27,7 +27,7 @@ Die Übersetzung von UGC ermöglicht es Site-Besuchern und -Mitgliedern, eine gl
 Beispiel:
 
 * Ein französisches Mitglied stellt ein französisches Rezept in das Gemeinschaftsforum einer multinationalen Kochwebsite ein
-* Ein anderes japanisches Mitglied verwendet die Übersetzungsfunktion, um die Übersetzung des Rezeptes vom Französischen ins Japanische auszulösen
+* Ein anderes japanisches Mitglied verwendet die Übersetzungsfunktion, um die Übersetzung des Rezeptes aus dem Französischen ins Japanische Trigger zu übernehmen
 * Nachdem das Rezept auf Japanisch gelesen wurde, postet das japanische Mitglied einen Kommentar auf Japanisch
 * Das Mitglied aus Frankreich verwendet die Übersetzungsfunktion, um den japanischen Kommentar ins Französische zu übersetzen
 * Globale Kommunikation!
