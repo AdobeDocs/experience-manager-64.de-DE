@@ -141,7 +141,7 @@ Wenn Sie eine **vorhandene Report Suite** verwenden, müssen Sie möglicherweise
 
 Wenn Video Heartbeat Analytics lizenziert ist, wird ein `Marketing Cloud Org Id` zugewiesen.
 
-So aktivieren Sie Video Heartbeat Berichte nach der Konfiguration der Analytics Report Suite für Video Berichte[:](#adobe-analytics-report-suite-for-video-reporting)
+So aktivieren Sie Video Heartbeat Berichte nach der Konfiguration der Analytics Report Suite für Video Berichte](#adobe-analytics-report-suite-for-video-reporting):[
 
 * Erstellen eines [Analytics-Cloud-Dienstes](#aem-analytics-cloud-service-configuration)
 * [Analytics für eine Community-Site](#enable-analytics-for-a-community-site) aktivieren
