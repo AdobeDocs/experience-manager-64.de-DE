@@ -464,7 +464,7 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine bestimmte 
 
    Verwenden Sie die Option **[!UICONTROL Dimension und Position]** in der Seitenleiste, um die Komponentengröße anzupassen. Stellen Sie sicher, dass der Status **[!UICONTROL Default]** ist.
 
-Wählen Sie in der Komponenten-Symbolleiste **[!UICONTROL Widget &quot;Numerisches Feld&quot;, anstatt**[!UICONTROL  Widget &quot;Feld ]**&quot;auszuwählen, &lt;a2/>und führen Sie die obigen Schritte aus.]** Wenn Sie Dimensionen für die Option **[!UICONTROL Feld-Widget]** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
+Wählen Sie in der Komponenten-Symbolleiste **[!UICONTROL Widget &quot;Numerisches Feld&quot;, anstatt**[!UICONTROL  Widget &quot;Feld ]**&quot;auszuwählen,]** und führen Sie die obigen Schritte aus. Wenn Sie Dimensionen für die Option **[!UICONTROL Feld-Widget]** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
 
 ### Formatieren von Feldern für einen bestimmten Status {#styling-fields-given-state}
 
