@@ -36,7 +36,7 @@ Clientlibs sind für das ordnungsgemäße Funktionieren (JavaScript) und die For
 
 Wenn für eine Funktion eine [Community-Funktion](functions.md) vorhanden ist, werden alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden sein. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche clientlibs hinzugefügt werden.
 
-Wenn die erforderlichen clientlibs fehlen, kann das Hinzufügen einer Communities-Komponente zu einer Seite[ zu JavaScript-Fehlern und zu einem unerwarteten Erscheinungsbild führen.](author-communities.md)
+Wenn die erforderlichen clientlibs fehlen, kann das Hinzufügen einer Communities-Komponente zu einer Seite](author-communities.md) zu JavaScript-Fehlern und zu einem unerwarteten Erscheinungsbild führen.[
 
 ### Beispiel: Platzierte Reviews ohne clientlibs {#example-placed-reviews-without-clientlibs}
 
