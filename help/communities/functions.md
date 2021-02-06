@@ -59,7 +59,7 @@ Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder h
 *Erforderlich*) Der Text, der im Menü der Funktionen für die Site angezeigt wird
 
 * **[!UICONTROL URL]**
- (*erforderlich*) Der Name, mit dem der URI generiert wird. Der Name muss den von AEM und JCR festgelegten Benennungskonventionen[ entsprechen.](../../help/sites-developing/naming-conventions.md)
+ (*erforderlich*) Der Name, mit dem der URI generiert wird. Der Name muss den von AEM und JCR festgelegten Benennungskonventionen](../../help/sites-developing/naming-conventions.md) entsprechen.[
 
 Verwenden Sie zum Beispiel die Site, die nach dem Tutorial [Erste Schritte](getting-started.md) erstellt wurde, wenn
 
