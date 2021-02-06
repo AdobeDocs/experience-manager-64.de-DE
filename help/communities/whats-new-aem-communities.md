@@ -71,7 +71,7 @@ Bei Auswahl des Status &quot;Beantwortet&quot;sind alle beantworteten Fragen fü
 
 ### Lesezeichen für Moderationsfilter {#bookmark-moderation-filters}
 
-AEM Communities bietet die Möglichkeit, die vordefinierten Moderations-Filter[ in der Moderationskonsole mit einem Lesezeichen zu versehen. ](moderation.md#filter-rail) Diese gespeicherten Lesezeichen können später erneut besucht und für andere Benutzer freigegeben werden.
+AEM Communities bietet die Möglichkeit, die vordefinierten Moderations-Filter](moderation.md#filter-rail) in der Moderationskonsole mit einem Lesezeichen zu versehen. [ Diese gespeicherten Lesezeichen können später erneut besucht und für andere Benutzer freigegeben werden.
 
 Die Benutzer müssen einfach die gewünschten Filter aus der Filterleiste in der Moderationskonsole auswählen, um das gefilterte benutzerspezifische Benutzerkontensymbol Ansicht und die Filter mit einem Lesezeichen in ihren Browsern zu versehen. Diese Filter werden an das Ende der URL-Zeichenfolge angehängt und können daher später freigegeben, wiederverwendet und erneut aufgerufen werden.
 
@@ -89,7 +89,7 @@ Benutzer können Konfigurationsordner, Branding und viele andere Konfigurationen
 
 ### Löschen Sie Community-Sites aus der Sitekonsole {#delete-community-sites-from-sites-console}
 
-AEM 6.4 Communities stellt auf den bestehenden Community-Sites in der Community-Sites-Konsole das Symbol zum Löschen von Sites bereit. Dadurch wird das Löschen der Site[ und der zugehörigen Elemente in einem Klick aktiviert.](create-site.md)
+AEM 6.4 Communities stellt auf den bestehenden Community-Sites in der Community-Sites-Konsole das Symbol zum Löschen von Sites bereit. Dadurch wird das Löschen der Site](create-site.md) und der zugehörigen Elemente in einem Klick aktiviert.[
 
 ![sitteactions](assets/siteactions.png)
 
