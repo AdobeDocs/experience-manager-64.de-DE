@@ -48,7 +48,7 @@ Diese Konsolen sind der Communities Sites-Konsole sehr ähnlich.
 * `1 Community Group Template`:
    * Community-Gruppentitel: Kunst
    * Community-Gruppenbeschreibung: Eine übergeordnete Gruppe für verschiedene Kunstgruppen.
-   * Community-Gruppenstamm: *Als Standard* beibehalten
+   * Community-Gruppenstamm: *Als Standard*
    * Zusätzliche verfügbare Community-Gruppensprache(n): Wählen Sie im Pulldown-Menü die verfügbaren Gemeinschaftsgruppensprachen aus. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wurde. Benutzer können in diesem Schritt eine der folgenden Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Konsole &quot;Gruppen&quot;der jeweiligen Community-Sites erstellt.
    * Community-Gruppenname: Kunst
    * Vorlage: nach unten ziehen, um `Reference Group` auszuwählen
