@@ -52,7 +52,7 @@ Die Anatomie enthält Daten mit den folgenden Eingabemodi:
 * Bedingte Daten
 * Bilder
 
-In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank umfasst Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](create-form-data-model-tutorial.md).
+In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank enthält Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](create-form-data-model-tutorial.md).
 
 Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der interaktiven Kommunikation:
 
