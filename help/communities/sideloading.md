@@ -78,7 +78,7 @@ Die dynamische Integration verwendet eine Bootstrap-Anforderung, die dazu führt
 
 Um SCF-Komponenten nach dem Laden der Seite zu initialisieren, starten Sie einfach ein JQuery-Ereignis wie folgt:
 
-$(Dokument).trigger(SCF.Ereignisses.BOOTSTRAP_REQUEST);
+$(Dokument).Trigger(SCF.Ereignisses.BOOTSTRAP_REQUEST);
 
 ### Dynamisches Laden {#dynamic-loading}
 
