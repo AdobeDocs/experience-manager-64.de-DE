@@ -36,13 +36,13 @@ ht-degree: 52%
 
 [Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.](/help/forms/home.md)
 
-## AEM Screens {#aem-screens}
+## Handbuch mit Best Practices für {#aem-screens}
 
 [Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-[Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen.](/help/communities/home.md)
+[Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.](/help/communities/home.md)
 
 ## AEM Livefyre {#aem-livefyre}
 
@@ -50,4 +50,4 @@ ht-degree: 52%
 
 ## AEM Mobile {#aem-mobile}
 
-[Erstellen und verwalten Sie Inhalte für mobile Apps.](/help/mobile/home.md)
+[Erstellen und verwalten Sie Inhalte für Mobile Apps.](/help/mobile/home.md)
