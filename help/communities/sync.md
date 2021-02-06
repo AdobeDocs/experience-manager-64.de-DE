@@ -222,17 +222,17 @@ AEM Autoreninstanz:
 
 1. Melden Sie sich mit Administratorrechten an.
 1. Rufen Sie die [Webkonsole](../../help/sites-deploying/configuring-osgi.md) auf, z. B. [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-1. Suchen Sie nach **[!UICONTROL Apache Sling Distribution Trigger - Scheduled Triggers Factory]**
+1. Suchen Sie nach **[!UICONTROL Apache Sling Distribution Trigger - Geplante Trigger Factory]**
 
    * Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol)
-   * `Name:` **`socialpubsync`\-geplante Auslöser**
+   * `Name:` **`socialpubsync`\-geplanten-Trigger**
    * Legen Sie das Intervall in Sekunden auf das gewünschte Intervall fest und speichern Sie es.
 
    ![scheduled-trigger](assets/scheduled-trigger.png)
 
 ### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
-Bei Problemen mit der Sling-Distribution, bei denen es zu einer Diskrepanz bei Abonnements und folgenden kommt, prüfen Sie, ob die folgenden Eigenschaften in den Konfigurationen für den AEM Communities-Benutzersynchronisierungs-Listener **[!UICONTROL festgelegt sind:]**
+Bei Problemen mit der Sling-Distribution, bei denen es zu einer Diskrepanz bei Abonnements und folgenden kommt, prüfen Sie, ob die folgenden Eigenschaften in den Konfigurationen für den AEM Communities-Benutzersynchronisierungs-Listener ]**festgelegt sind:**[!UICONTROL 
 
 * NodeTypes
 * IgnorableProperties
@@ -250,7 +250,7 @@ Auf jeder AEM Veröffentlichungsinstanz:
 1. Suchen Sie nach **[!UICONTROL AEM Communities User Sync Listener]**.
 1. Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
-   Überprüfungsname: **`socialpubsync`\-schedule-trigger**
+   Überprüfungsname: **`socialpubsync`\-geplanten-Trigger**
 1. Legen Sie folgende **`NodeTypes`** fest:
 
    rep:User
