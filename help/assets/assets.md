@@ -3,9 +3,9 @@ title: Einführung in [!DNL Adobe Experience Manager Assets]
 description: 'Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das Angebot. [!DNL Adobe Experience Manager Asset] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
+source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '851'
 ht-degree: 37%
 
 ---
@@ -93,3 +93,8 @@ Sie können Workflows natürlich auch manuell anwenden. Eine Liste der Standard-
 ## [!DNL Experience Manager Assets] und [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 Informationen zu den Unterschieden finden Sie unter [Assets und Medienbibliothek](medialibrary.md).
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets als moderner DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+
