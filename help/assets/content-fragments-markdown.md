@@ -10,9 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
-source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+source-git-commit: 11b5f915797faa691834d4286437e9e698af187d
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '552'
 ht-degree: 97%
 
 ---
@@ -198,24 +198,25 @@ Sie können umgekehrte Schrägstriche als Escape-Zeichen verwenden, um tatsächl
 
 Umgekehrte Schrägstriche als Escape-Zeichen sind für die folgenden Zeichen verfügbar:
 
-    `\ backslash`
+    ` \ backslash`
 
-    ` Einfaches Anführungszeichen (Backtick)
+    `` ` backtick``
 
-    `* asterisk`
+    ` * asterisk`
 
-    `_ underscore`
+    ` _ underscore`
 
-    `{} curly braces`
+    ` {} curly braces`
 
-    `[] square brackets`
+    ` [] square brackets`
 
-    `() parentheses`
+    ` () parentheses`
 
-    `# hash mark`
+    ` # hash mark`
 
-    `+ plus sign`
+    ` + plus sign`
 
-    `- minus sign (hyphen)`
+    ` - minus sign (hyphen)`
 
-    `. dot`
+    ` . dot`
+
