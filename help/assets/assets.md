@@ -3,9 +3,9 @@ title: Einführung in [!DNL Adobe Experience Manager Assets]
 description: 'Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das Angebot. [!DNL Adobe Experience Manager Asset] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
+source-git-commit: 91fbe9d3368feb7ecae73c56b2484c305cfb94b8
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '854'
 ht-degree: 37%
 
 ---
@@ -96,5 +96,5 @@ Informationen zu den Unterschieden finden Sie unter [Assets und Medienbibliothek
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets als moderner DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [Videoeinführung - Experience Manager Assets als moderner DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 
