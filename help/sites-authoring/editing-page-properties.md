@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 89%
+source-wordcount: '1774'
+ht-degree: 84%
 
 ---
 
@@ -51,6 +51,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 * **In Navigation ausblenden**
 
    Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
+
+* **Branding**
+
+   Wenden Sie eine konsistente Markenidentität über mehrere Seiten hinweg an, indem Sie an jeden Seitentitel ein Markenmuster anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+
+   * **Außerkraftsetzen**  - Markenslug auf dieser Seite definieren.
+      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, sie haben auch ihre **Override**-Werte eingestellt.
+   * **Wert**  außer Kraft setzen: Der Text der Markenfolie, der an den Seitentitel angehängt wird.
+      * Der Wert wird nach einem Pipe-Zeichen wie &quot;Radfahren in der Toskana&quot;an den Seitentitel angehängt | Immer bereit für die WKND&quot;
 
 * **Seitentitel**
 
