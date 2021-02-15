@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
-ht-degree: 92%
+source-wordcount: '4019'
+ht-degree: 90%
 
 ---
 
@@ -337,7 +337,11 @@ Sie können die Live Copy-Vererbung für eine Live Copy-Seite aussetzen, damit
 >
 >Sie können auch [eine Live Copy von ihrem Blueprint trennen](#detaching-a-live-copy), um alle Verbindungen zu entfernen. Die Trennaktion ist dauerhaft und kann nicht rückgängig gemacht werden.
 
-#### Aussetzen der Vererbung über Seiteneigenschaften  {#suspending-inheritance-from-page-properties}
+>[!NOTE]
+>
+>Wenn die Komponente als Container markiert ist, gelten die Aktionen zum Abbrechen und Aussetzen nicht für die untergeordneten Komponenten. Weitere Informationen finden Sie unter [MSM Best Practices](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
+
+#### Aussetzen der Vererbung über Seiteneigenschaften {#suspending-inheritance-from-page-properties}
 
 So setzen Sie die Vererbung auf einer Seite aus:
 
@@ -440,6 +444,10 @@ So geben Sie die Tiefe an oder ändern diese:
 ### Abbrechen der Vererbung für Komponenten  {#cancelling-inheritance-for-a-component}
 
 Brechen Sie die Live Copy-Vererbung für eine Komponente ab, sodass die Komponente nicht länger mit der Quellkomponente synchronisiert wird. Sie können die Vererbung ggf. zu einem späteren Zeitpunkt aktivieren.
+
+>[!NOTE]
+>
+>Wenn die Komponente als Container markiert ist, gelten die Aktionen zum Abbrechen und Aussetzen nicht für die untergeordneten Komponenten. Weitere Informationen finden Sie unter [MSM Best Practices](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
 
 >[!NOTE]
 >
