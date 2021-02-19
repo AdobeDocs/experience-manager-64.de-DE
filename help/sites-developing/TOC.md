@@ -7,7 +7,7 @@ user-guide-title: AEM 6.4-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 81%
@@ -51,7 +51,7 @@ ht-degree: 81%
    + Query Builder{#query-builder}
       + [Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder](implementing-custom-predicate-evaluator.md)
       + [Query Builder-Eigenschaftsverweis](querybuilder-predicate-reference.md)
-      + [Query-Builder-API](querybuilder-api.md)
+      + [Query Builder-API](querybuilder-api.md)
    + Tagging{#tagging}
       + [Tagging](tags.md)
       + [AEM-Tagging-Framework](framework.md)
@@ -72,14 +72,14 @@ ht-degree: 81%
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
    + [Entwickeln von AEM-Komponenten](developing-components.md)
    + [Entwickeln von AEM-Komponenten – Codebeispiele](developing-components-samples.md)
    + [JSON-Exporter für Content Services](json-exporter.md)
-   + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
    + [Bildeditor](image-editor.md)
    + [Decoration-Tag ](decoration-tag.md)
    + [Verwenden von Bedingungen zum Ausblenden](hide-conditions.md)
@@ -100,7 +100,7 @@ ht-degree: 81%
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
 + Headless-Experience-Management{#headless}
    + [Headless und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
+   + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Einzelseiten-Webanwendungen{#spas}
       + [Einführung in SPAs und exemplarische Anleitung](spa-walkthrough.md)
       + [SPA-WKND-Tutorial](spa-wknd.md)
@@ -113,11 +113,11 @@ ht-degree: 81%
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)
       + [Zuordnung dynamischer Modelle zu Komponenten für SPAs](spa-dynamic-model-to-component-mapping.md)
-      + [SPA-Modell-Routing](spa-routing.md)
+      + [SPA-Modell-Routing ](spa-routing.md)
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
-      + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
+      + [Single Page Applications (SPAs) und Server-seitiges Rendering ](spa-ssr.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
-   + [-HTTP-API ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
+   + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
    + [Inhaltsfragmente und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
