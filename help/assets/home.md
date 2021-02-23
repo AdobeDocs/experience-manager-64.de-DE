@@ -3,10 +3,10 @@ title: Assets-Anleitung
 description: In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 user-guide-title: Assets-Anleitung
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 24%
+source-wordcount: '317'
+ht-degree: 29%
 
 ---
 
@@ -17,10 +17,9 @@ In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Versionshinweise zu AEM 6.4](/help/release-notes/home.md)
-* [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
+* [Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de)
+* [Checkliste für die Sicherheit AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 Benutzerhandbücher
 
@@ -41,11 +40,11 @@ In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale
 
 ## Wichtige AEM
 
-* [AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [Benutzerhandbuch zu Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
+* [Benutzerhandbuch zu Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
