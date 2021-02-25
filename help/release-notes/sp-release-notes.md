@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
+source-wordcount: '21579'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 |---|---|
 | Version | 6.4.8.0 |
 | Typ | Service Pack-Version |
-| Datum | 05. März 2020 |
+| Datum  | 05. März 2020 |
 | Download-URL | AEM 6.4.8.0 auf [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
@@ -237,7 +237,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 
 * Der Arbeitsablauf für die Neuverarbeitung in Scene7 wird angehalten, wenn einem Asset der Metadaten-Knoten fehlt (CQ-4281170).
 
-* Der Schritt &quot;BatchUpload&quot;im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit dem Video-Asset (CQ-4280630).
+* Der Schritt BatchUpload im Arbeitsablauf für die Neuverarbeitung funktioniert nicht für den Ordner mit dem Video-Asset (CQ-4280630).
 
 * Für an DM gesendete PDF-Optionen ist &quot;extractKeywords&quot;standardmäßig auf &quot;true&quot;gesetzt (CQ-4280101).
 
@@ -587,7 +587,7 @@ Einige der wichtigsten Highlights von AEM 6.4.5.0 sind:
 * cq:dropTargets-Bereich deckt die gesamte Komponente statt der Bildgröße ab, wodurch das Targeting mit eingebetteten Komponenten schwierig wird. NPR-29738: Hotfix für CQ-4268912
 * Die Bildkomponente ruft nach der Verwendung des ersetzenden Bildeditors nicht den Listener &quot;after edit&quot;auf. NPR-29616 Hotfix für CQ-4268065
 * Problem beim Einrichten der Social-Veröffentlichung für Facebook. NPR-29212: Hotfix für CQ-4266630
-* Bei Promotions von Launches für geänderte Seiten werden Anpassungen sowohl im Quell- als auch im Launch-Zweig berücksichtigt. NPR-29308: Hotfix für CQ-4266746
+* Beim Weiterleiten von Launches für geänderte Seiten werden Anpassungen sowohl im Quell- als auch im Launch-Zweig berücksichtigt. NPR-29308: Hotfix für CQ-4266746
 * Die gerenderte Miniaturansicht im Inhaltsfragment zeigt eine interne Kalenderdarstellung für das Datums- und Uhrzeitfeld an. NPR-29531: Hotfix für CQ-4269362
 * Es kann kein Tag per Massen zu Seiten mit verschiedenen Tags hinzugefügt werden. NPR-28729: Hotfix für CQ-4262922
 * Das Symbol &quot;Geplante Aktivierung&quot;wird im Site-Administrator nicht angezeigt. NPR-28725: Hotfix für CQ-4263917
@@ -959,7 +959,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.4.0 Forms gehören:
 * Adaptives Formular verwendet keinen Rich-Text-Editor, lädt aber seine Bibliotheken.  NPR-28001: Hotfix für CQ-4259703, CQ-4259193
 * Scribble-Signatur funktioniert nicht für AEM Forms-Apps, die unter Apple iOS 12.1 ausgeführt werden. NPR-28497: Hotfix für CQ-4261765
 * Übermittlungsaktion unter Verwendung von &quot;Forms Workflow&quot;-Classic-Authoring-Problemen in 6.4. Hotfix für CQ-4252740
-* Entfernen von Blockierungen und TMP-Datenspeicherung. NPR-28806: Hotfix für CQ-4264441
+* Entfernen von Blockierungen und tmp-Datenspeicherung. NPR-28806: Hotfix für CQ-4264441
 
 **Forms – Correspondence Management**
 
@@ -1284,7 +1284,7 @@ Liste der in AEM 6.4.3.0 enthaltenen Inhaltspakete
 
 #### AEM 6.4.2.0 {#experience-manager-6420}
 
-AEM 6.4.2.0 ist ein wichtiges Update, das Leistung, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen von Kunden umfasst, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im April 2018 veröffentlicht wurden.****
+AEM 6.4.2.0 ist ein wichtiges Update, das Funktionen für Leistung, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen umfasst, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im April 2018 veröffentlicht wurden.****
 Es ist auch kumulativ, was bedeutet, dass 6.4.2.0 alle AEM 6.4 Service Packs vor der Veröffentlichung beinhaltet.
 
 Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
@@ -1292,7 +1292,7 @@ Einige der wichtigsten Highlights von AEM 6.4.2.0 sind:
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.7 aktualisiert.
 * Neue Unterstützung für HTML-Vorlagensprache (HTL) Spezification 1.4-Funktionen
 * Unterstützung für MongoDB Enterprise 3.6 hinzugefügt.
-* Der Seiten-Editor für Sites unterstützt jetzt die Bearbeitung und Komposition im Kontext mit clientseitigen Komponenten, die in React oder Angular in Kombination mit <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a> erstellt wurden.
+* Der Seiten-Editor für Sites unterstützt jetzt die kontextbezogene Bearbeitung und Komposition mit clientseitigen Komponenten, die in React oder Angular in Kombination mit <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a> erstellt wurden.
 * Verbesserungen bei Inhaltsfragmenten: Die Funktion zum Kommentieren in Textfeldern wurde hinzugefügt. Außerdem können Versionen nebeneinander verglichen werden.
 * Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, damit die Benutzer Adobe Stock-Assets direkt über AEM Benutzeroberfläche suchen, Vorschau, speichern und lizenzieren können. Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Assets unterstützen jetzt das dynamische bedingte Metasystem und die Möglichkeit, ein Metadaten-Schema für Asset-Ordner festzulegen.
@@ -2200,7 +2200,7 @@ Die Anzahl freigegebener Warteschlangen wird für andere Benutzer nicht standard
 1. Gehen Sie zu Admin-Benutzeroberfläche -> Dienste -> Arbeitsbereich -> Globale Verwaltung.
 1. Globale Einstellungen exportieren.
 1. Fügen Sie in der heruntergeladenen XML-Datei den Tag &lt;client_tasksPollingInterval>10&lt;/client_tasksPollingInterval> hier ist 10 der Beispielwert in Sekunden. Sie können sie entsprechend ändern.
-1. Speichern Sie die Datei .
+1. Speichern Sie die Datei.
 1. Gehen Sie zurück zur Admin-Benutzeroberfläche -> Dienste -> Arbeitsbereich -> Globale Verwaltung.
 1. Importieren Sie die XML-Datei im Abschnitt &quot;Globale Einstellungen importieren&quot;.
 1. Sie können sich jetzt vom System abmelden und sich erneut anmelden.
@@ -2236,15 +2236,10 @@ Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfern
 
 * Die folgenden Fehler und Warnungen werden möglicherweise während der Installation angezeigt:
 
-   * Fehler beim Erstellen der Komponenteninstanz und beim Zurückgeben des Dienstfaktors null treten auf, nachdem das Repository neu gestartet wurde:
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\] Komponenteninstanz kann nicht erstellt werden, weil die Bindung von reference profileManager nicht möglich ist
-      * org.apache.sling.commons.Planung FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service Factory gab null zurück. (Komponente: com.day.cq.tagging.impl.TagGarbageCollector (1687))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout wartet auf reg change, um unregistered abzuschließen.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` Keine Wartungsfenster unter granite/operations/maintenance gefunden
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: Die unbindAmendment-Methode hat eine Ausnahme ausgelöst (java.lang.IllegalStateException: Dienst ist bereits nicht registriert).
 Diese Fehler erfordern keine Aktion, da sie Ihre AEM nicht beeinflussen.
-
 
 ### Behobene Probleme {#resolved-issues}
 
