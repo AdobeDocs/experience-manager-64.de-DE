@@ -29,7 +29,7 @@ ht-degree: 76%
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Verwenden von Adobe Stock-Assets in AEM Assets](aem-assets-adobe-stock.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
-   + [Aktivitäts-Stream in der Timeline](activity-stream.md)
+   + [Aktivitäts-Stream in der Zeitleiste](activity-stream.md)
    + [Assets verarbeiten](assets-workflow.md)
    + [Hinzufügen von Imagemaps](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
