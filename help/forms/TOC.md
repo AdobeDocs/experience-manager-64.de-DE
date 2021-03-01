@@ -367,7 +367,7 @@ ht-degree: 75%
    + [AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Schützen von Dokumenten im Auftrag eines anderen Benutzers](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
-   + [Verwenden des Designers](http://www.adobe.com/go/learn_aemforms_designer_64_de)
+   + [Verwenden des Designers](http://www.adobe.com/go/learn_aemforms_designer_64)
    + [Kurzanleitung zu Designer-Lernprogrammen](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64_de)
    + [Designer -Beispieldateien](http://www.adobe.com/go/learn_aemforms_designer_samples_64_de)
    + [Designer-Grundlagen zur Skripterstellung](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64_de)
@@ -573,7 +573,7 @@ ht-degree: 75%
    + [Fehlerbehebung für Process Berichte](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Entwicklerreferenz {#developer-reference}
    + [Entwicklergrundlagen](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML-Vorlagensprache](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+   + [HTML-Vorlagensprache](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
    + [AEM-Plug-In, um adaptive Formulare zu debuggen](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API-Referenz](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API-Referenz](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
