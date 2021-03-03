@@ -1,6 +1,6 @@
 ---
-title: Anpassungsfähige Formulare in externe Webseiten einbetten
-seo-title: Anpassungsfähige Formulare in externe Webseiten einbetten
+title: Anpassungsfähige Formulare in externe Web-Seiten einbetten
+seo-title: Anpassungsfähige Formulare in externe Web-Seiten einbetten
 description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe Webseite einbetten
 seo-description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe HTML-Seite einbetten
 uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 6b5c051a2487ca9aa66d110e5b792a55eae8e97d
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 64%
@@ -16,7 +16,7 @@ ht-degree: 64%
 ---
 
 
-# Anpassungsfähige Formulare in externe Webseiten einbetten{#embed-adaptive-form-in-external-web-page}
+# Anpassungsfähige Formulare in externe Web-Seiten einbetten{#embed-adaptive-form-in-external-web-page}
 
 Erfahren Sie, wie Sie ein adaptives Formular in eine externe Webseite einbetten
 
@@ -28,7 +28,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie ein adaptives Formular in eine
 
 * Veröffentlichen Sie das adaptive Formular in einer AEM-Veröffentlichungsinstanz.
 * Erstellen Sie auf Ihrer Website eine Webseite oder legen Sie sie fest, um das adaptive Formular zu hosten. Stellen Sie sicher, dass die Webseite jQuery-Dateien aus einem CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) lesen kann oder eine lokale Kopie der jQuery-Datei eingebettet ist. [ jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* Wenn sich AEM Server und die Webseite auf unterschiedlichen Domänen befinden, führen Sie die Schritte im Abschnitt [Aktivieren Sie AEM Forms, um adaptive Formulare für eine domänenübergreifende Site](#cross-domain-sites) bereitzustellen.
+* Wenn sich AEM Server und die Webseite auf verschiedenen Domänen befinden, führen Sie die Schritte im Abschnitt [Aktivieren Sie AEM Forms, um adaptive Formulare für eine domänenübergreifende Site](#cross-domain-sites) bereitzustellen.
 * [Richten Sie Reverse ](#reveseproxy) Proxys ein, um die Kommunikation zwischen der externen Seite und dem AEM Forms-Server zu aktivieren.
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
@@ -166,6 +166,6 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms  {#cross-domain-sites}
 
-1. Wechseln Sie auf AEM Autoreninstanz zu AEM Web Console Configuration Manager unter `http://[server]:[port]/system/console/configMgr`.
+1. Wechseln Sie auf AEM Veröffentlichungsinstanz zu AEM Web Console Configuration Manager unter `http://[server]:[port]/system/console/configMgr`.
 1. Suchen und öffnen Sie die Filterkonfiguration **Apache Sling Werber**.
 1. Geben Sie im Feld **Zulässige Hosts** die Domäne an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungsdomänen anzugeben.
