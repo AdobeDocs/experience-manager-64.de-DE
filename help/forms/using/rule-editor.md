@@ -9,9 +9,9 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '6348'
+source-wordcount: '6352'
 ht-degree: 80%
 
 ---
@@ -330,7 +330,7 @@ Benutzer können in der Gruppe der Formular-Hauptbenutzer auf den Code-Editor zu
 AEM Forms zeichnet den zuletzt von Ihnen zum Erstellen einer Regel verwendeten Modus des Regeleditors auf. Wenn Sie den Regeleditor das nächste Mal starten, wird er in diesem Modus geöffnet. Sie können jedoch auch einen Standardmodus konfigurieren, sodass der Regeleditor immer in diesem Modus geöffnet wird. Gehen Sie dazu wie folgt vor:
 
 1. Wechseln Sie zu AEM Webkonsole unter https://[host]:[port]/system/console/configMgr.
-1. Klicken Sie auf , um **[!UICONTROL Konfigurationsdienst für adaptive Formulare]** zu bearbeiten.
+1. Klicken Sie auf , um **[!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals]** zu bearbeiten.
 1. Wählen Sie **[!UICONTROL Visual Editor]** oder **[!UICONTROL Codeeditor]** aus der Dropdownliste für den **[!UICONTROL Standardmodus für den Regeleditor]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -653,7 +653,7 @@ var c = {
 
 Alle vorhandenen Regeln für ein Formularobjekt werden angezeigt, wenn Sie auf das Objekt tippen und auf ![edit-rules1](assets/edit-rules1.png) tippen. Sie können den Titel und eine Vorschau der Regelübersicht anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![listen](assets/list-rules.png)
+![Listen](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln durchführen:
 
