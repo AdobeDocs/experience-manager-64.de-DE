@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
+source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3316'
 ht-degree: 85%
 
 ---
@@ -637,7 +637,6 @@ Für zusätzliche Anforderungen siehe:
 * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
 * Grafikspeicher - 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
-* DVD-ROM-Laufwerk
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Grafik-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
