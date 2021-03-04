@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 94%
+source-wordcount: '2094'
+ht-degree: 93%
 
 ---
 
@@ -112,7 +112,7 @@ Alle Fragmente, die Sie in adaptive Formulare einfügen, werden als Platzhalterb
 Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen anzuzeigen:
 
 1. Wechseln Sie zu AEM Web-Konsolenkonfigurationsseite unter https:[*host*]:[*port*]/system/console/configMgr.
-1. Suchen Sie nach **[!UICONTROL Konfigurationsdienst für adaptive Formulare]** und klicken Sie darauf, um die Funktion im Bearbeitungsmodus zu öffnen.
+1. Suchen Sie nach und klicken Sie auf **[!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals]**, um es im Bearbeitungsmodus zu öffnen.
 1. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Platzhalter anstelle von Fragment aktivieren]**, um das vollständige Fragment anstelle des Platzhalterbildes anzuzeigen.
 
 ### Einfügen eines Formularfragments in ein adaptives Formular  {#insert-a-fragment-in-an-adaptive-form}
@@ -175,7 +175,7 @@ Sie können mehrere Vorgänge auf adaptive Formularfragmente mithilfe von AEM Fo
    <td><p><strong>Beschreibung</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Öffnen Sie</p> </td> 
+   <td><p>Öffnen</p> </td> 
    <td><p>Öffnet das Dialogfeld adaptive Formularfragment im Bearbeitungsmodus.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
