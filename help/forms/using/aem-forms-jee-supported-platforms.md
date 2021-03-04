@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ee38d0ebde12a70e3af04254b0c0b4995c45519b
+source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3318'
 ht-degree: 85%
 
 ---
@@ -631,21 +631,17 @@ Für zusätzliche Anforderungen siehe:
 
 ### Designer {#designer}
 
-**Hinweis:** Führen Sie das Installationsprogramm mit Administratorrechten aus, um Designer unter Windows zu installieren.
-
-* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
-   * 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
-   * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
-
+* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
+* Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
+* 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
+* 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
 * Grafikspeicher - 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * DVD-ROM-Laufwerk
-* Internet Explorer 10 oder 11; Firefox 45.x
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Grafik-Hardware (optional)
-* Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
+* Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
+* Administratorrechte für die Installation von Designer
 
 ### Adobe Acrobat und Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -809,4 +805,4 @@ Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unt
 
 Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der Adobe Enterprise-Supportseite, indem Sie nach Knowledgebase-Artikeln für Ihr jeweiliges Produkt suchen.
 
-[**Support kontaktieren**](https://www.adobe.com/de/account/sign-in.supportportal.html)
+[**Support kontaktieren**](https://www.adobe.com/account/sign-in.supportportal.html)
