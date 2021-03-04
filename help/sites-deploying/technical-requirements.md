@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
+source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3274'
 ht-degree: 83%
 
 ---
@@ -474,19 +474,19 @@ Wenn eine IP-Adresse angegeben werden muss, können Sie (je nach Bedarf) aus den
 
 * eine IPv6-Adresse
 
-   zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+   Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-   zum Beispiel `https://123.1.1.4:4502`
+   Beispiel `https://123.1.1.4:4502`
 
 * einen Servernamen
 
-   zum Beispiel `https://www.yourserver.com:4502`
+   Beispiel, `https://www.yourserver.com:4502`
 
 * Der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert.
 
-   zum Beispiel `http://localhost:4502`
+   Beispiel, `http://localhost:4502`
 
 ### Anforderungen für das Add-on AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
@@ -523,7 +523,7 @@ Die Verwendung von Dynamic Media unter Linux erfordert folgende Voraussetzungen:
 >
 >**Deaktivieren von SELinux:** Image-Serving funktioniert nicht, wenn SELinux aktiviert ist. Diese Option ist standardmäßig aktiviert. Bearbeiten Sie zum Beheben dieses Problems die Datei **/etc/selinux/config** und ändern Sie den SELinux-Wert von:
 >
->`SELINUX=enforcing` nach  `SELINUX=disabled`
+>`SELINUX=enforcing` in  `SELINUX=disabled`
 
 >[!NOTE]
 >
@@ -627,6 +627,20 @@ x86
 >
 
 
+
+### Anforderungen für AEM Forms Designer {#requirements-for-aem-forms-designer}
+
+* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
+* Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
+* 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
+* 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
+* Grafikspeicher - 128 MB GPU (256 MB empfohlen)
+* 2,35 GB verfügbarer Festplattenspeicher
+* DVD-ROM-Laufwerk
+* Bildschirmauflösung 1024 x 768 Pixel oder höher
+* Beschleuniger für Grafik-Hardware (optional)
+* Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
+* Administratorrechte für die Installation von Designer
 
 ### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM-Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
