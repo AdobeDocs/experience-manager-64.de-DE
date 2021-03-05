@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 226cd6688a579409371cb17f6ba31548bee312b3
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 65%
@@ -18,7 +18,7 @@ ht-degree: 65%
 ---
 
 
-# Single Page Applications (SPAs) und Server-seitiges Rendering{#spa-and-server-side-rendering}
+# Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
 
 >[!NOTE]
 >Für die Funktion &quot;SPA-Editor&quot;für Einzelseitenanwendungen ist [AEM 6.4 Service Pack 2](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/sp-release-notes.html) oder höher erforderlich.
@@ -60,7 +60,7 @@ Weitere Informationen zu Adobe I/O Runtime finden Sie unter
 In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR für Ihre SPA in zwei verschiedenen Modellen implementieren können:
 
 * [AEM-gesteuerter Kommunikationsfluss](#aem-driven-communication-flow)
-* [Adobe I/O-Laufzeitgesteuerter Kommunikationsfluss](#adobe-io-driven-communication-flow)
+* [Adobe I/O-Runtime-Driven Communication Flow](#adobe-io-driven-communication-flow)
 
 >[!NOTE]
 >
@@ -144,7 +144,7 @@ Ein einfaches Beispiel finden Sie in der [We.Retail-Protokoll-App](https://githu
 >Die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) dient nur zu Demonstrationszwecken und verwendet daher Node.js als einfaches Beispiel anstelle des empfohlenen Adobe I/O Runtime. Dieses Beispiel sollte für keine Projektarbeit verwendet werden.
 
 >[!NOTE]
->Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK nutzt.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## Verwenden von Node.js {#using-node-js}
 
