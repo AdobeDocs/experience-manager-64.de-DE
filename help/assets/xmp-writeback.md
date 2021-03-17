@@ -1,23 +1,21 @@
 ---
-title: XMP-Writeback in Ausgabeformaten
+title: XMP-Writeback in Ausgabedarstellungen
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: debf372e6a0b8f00bbfce16325908a5806c062d5
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 66%
+source-wordcount: '778'
+ht-degree: 61%
 
 ---
 
 
-# XMP-Writeback in Ausgabeformaten {#xmp-writeback-to-renditions}
+# XMP-Writeback in Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
-Die XMP-Writeback-Funktion in Adobe Experience Manager (AEM) Assets repliziert Änderungen von Asset-Metadaten in den Ausgabeformaten des Assets.
+Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets. Wenn Sie die Metadaten für ein Asset aus Assets ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
 
-Wenn Sie die Metadaten für ein Asset aus AEM Assets oder beim Hochladen des Assets ändern, werden Änderungen zunächst innerhalb des Asset-Knotens in CRX-De gespeichert.
-
-Mit der Funktion &quot;XMP Writeback&quot;werden die Änderungen an den Metadaten an alle oder bestimmte Darstellungen des Assets übertragen.
+Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namensraum `jcr` verwenden, d. h., eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -27,9 +25,7 @@ In diesem Fall speichert AEM Assets die Änderungen an der Eigenschaft **[!UICO
 
 ![metadata_stored](assets/metadata_stored.png)
 
-AEM Assets propagiert die Metadatenänderungen jedoch nicht automatisch in die Ausgabeformate eines Assets.
-
-Mit der Funktion zum XMP Schriftwechsel können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
+[!DNL Experience Manager Assets] propagiert jedoch nicht automatisch Änderungen der Metadaten an den Darstellungen eines Assets. Siehe [Aktivieren XMP Schreibens](#enabling-xmp-writeback).
 
 ## Aktivieren XMP Schreibback {#enabling-xmp-writeback}
 
