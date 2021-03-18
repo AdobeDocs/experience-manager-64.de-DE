@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6352'
+source-wordcount: '6354'
 ht-degree: 80%
 
 ---
@@ -695,7 +696,7 @@ Gehen Sie zum Kopieren und Einfügen von Regeln wie folgt vor:
 
 1. Tippen Sie auf **Fertig**, um die Regel zu speichern.
 
-## Eingebettete Ausdrücke  {#nestedexpressions}
+## Eingebettete Ausdrücke {#nestedexpressions}
 
 Im Regeleditor können Sie mehrere UND- und ODER-Operatoren verwenden, um eingebettete Regeln zu erstellen. Sie können mehrere UND- und ODER-Operatoren in Regeln kombinieren.
 
