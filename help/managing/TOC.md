@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: AEM 6.4-Verwaltungsanleitung
 breadcrumb-title: Bedieneranleitung
 user-guide-description: Erfahren Sie, wie Sie ein AEM-Projekt verwalten können.
+feature-set: Experience Manager Sites
+feature: Bereitstellen
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 93%
+source-wordcount: '75'
+ht-degree: 90%
 
 ---
 
