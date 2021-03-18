@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '19030'
+source-wordcount: '19031'
 ht-degree: 4%
 
 ---
@@ -1403,7 +1404,7 @@ Um ein Dokument mit Daten zu drucken, müssen Sie auf eine XML-Datenquelle verwe
 
 Sie können die Laufzeitoptionen beim Senden eines Druckstreams an einen Drucker festlegen, einschließlich der folgenden Optionen:
 
-* **Kopien**: Gibt die Anzahl der Exemplare an, die an den Drucker gesendet werden sollen. Der Standardwert ist 1. 
+* **Kopien**: Gibt die Anzahl der Exemplare an, die an den Drucker gesendet werden sollen. Der Standardwert ist 1.
 * **Stapel**: Eine XCI-Option wird festgelegt, wenn ein Heftklammer verwendet wird. Diese Option kann im Konfigurationsmodell vom Grundelement angegeben werden und wird nur für PS- und PCL-Drucker verwendet.
 * **OutputJog**: Eine XCI-Option wird eingestellt, wenn Ausgabeseiten joggt werden sollen (physisch in der Ausgabenablage verschoben). Diese Option ist nur für PS- und PCL-Drucker verfügbar.
 * **OutputBin**: XCI-Wert, der verwendet wird, um dem Druckertreiber die Auswahl der entsprechenden Ausgabenablage zu ermöglichen.
@@ -1940,7 +1941,7 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Output API (Webdienst):
 
 Sie können Suchregeln erstellen, die dazu führen, dass der Output-Dienst Eingabedaten prüft und verschiedene Formularentwürfe verwendet, die auf dem Dateninhalt basieren, um Ausgabe zu generieren. Wenn sich beispielsweise der Text *mortgage* in den Eingabedaten befindet, kann der Output-Dienst einen Formularentwurf mit dem Namen Mortgage.xdp verwenden. Wenn sich der Text *automobile* in den Eingabedaten befindet, kann der Output-Dienst einen Formularentwurf verwenden, der als &quot;AutomobileLoan.xdp&quot;gespeichert wird. Obwohl der Output-Dienst verschiedene Ausgabetypen generieren kann, geht dieser Abschnitt davon aus, dass der Output-Dienst eine PDF-Datei generiert. Das folgende Diagramm zeigt den Output-Dienst, der eine PDF-Datei durch Verarbeitung einer XML-Datendatei und Verwendung eines von vielen Formularentwürfen generiert.
 
-Darüber hinaus kann der Output-Dienst Dokument-Pakete generieren, bei denen mehrere Datensätze im Datensatz bereitgestellt werden und jeder Datensatz mit einem Formularentwurf übereinstimmt und ein einziges Dokument aus mehreren Formularentwürfen erstellt wird.
+Darüber hinaus kann der Output-Dienst Dokument-Pakete generieren, bei denen mehrere Datensätze im Datensatz bereitgestellt werden und jeder Datensatz mit einem Formularentwurf übereinstimmt und ein einzelnes Dokument aus mehreren Formularentwürfen erstellt wird.
 
 ![cs_outputbatchmanyformdesigns2](assets/cs_outputbatchmanyformdesigns2.png)
 
