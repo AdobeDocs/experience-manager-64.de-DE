@@ -8,10 +8,11 @@ contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1284'
 ht-degree: 81%
 
 ---
@@ -166,7 +167,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
    | **Eigenschaft** | **Typ** | **Wert** |
    |---|---|---|
-   | kategorien | Zeichenfolge[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | Kategorien | Zeichenfolge[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
    | Abhängigkeiten | Zeichenfolge[] | granite.testing.calvin.tests |
 
    >[!NOTE]
@@ -310,7 +311,7 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
 * Anzeigen von Test-Suites
 * Ausführen mehrerer Tests
 
-## Glossar     {#glossary}
+## Glossar  {#glossary}
 
 <table> 
  <tbody> 
@@ -327,7 +328,7 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
    <td><p>Ein Testfall stellt eine Aufgabe dar, die ein Benutzer mithilfe der Benutzeroberfläche ausführt. Fügen Sie Testfälle zu Ihrer Testsuite hinzu, um die Aktivitäten zu testen, die Benutzer ausführen.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Aktionen   </p> </td> 
+   <td><p>Aktionen </p> </td> 
    <td><p>Aktionen sind Methoden, die eine Geste auf der Benutzeroberfläche ausführen, wie z. B. das Klicken auf eine Schaltfläche oder das Füllen eines Eingabefeldes mit einem Wert.</p> <p>Die Methoden der Klassen hobs.actions.Assets, hobs.actions.Core und hobs.utils.af sind Aktionen, die Sie in Ihren Tests verwenden können. Alle Aktionen werden synchron ausgeführt.</p> </td> 
   </tr> 
   <tr> 
