@@ -7,10 +7,11 @@ uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '926'
 ht-degree: 86%
 
 ---
