@@ -6,10 +6,11 @@ seo-description: Lernen Sie, ein adaptives Formular zu erstellen, zu gestalten u
 page-status-flag: de-activated
 uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1418'
 ht-degree: 78%
 
 ---
@@ -154,7 +155,7 @@ Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM Forms 
  </tbody> 
 </table>
 
-1. Ziehen Sie eine **Sendeschaltfläche**-Komponente in das adaptive Formular. Platzieren Sie sie vor der Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente, ändern Sie den Elementnamen in **address_additional_update_submit** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Das Layout des Formulars ist vollständig und das Formular sieht wie folgt aus:
+1. Ziehen Sie eine **Sendeschaltfläche**-Komponente in das adaptive Formular. Platzieren Sie sie vor der Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente, ändern Sie den Elementnamen in **address_additional_update_submit**, tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Das Layout des Formulars ist vollständig und das Formular sieht wie folgt aus:
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 
