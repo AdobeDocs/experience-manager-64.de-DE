@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 67%
 
 ---
@@ -31,7 +32,7 @@ Sie können mit Mobile Forms benutzerdefinierte Widgets einsetzen. Sie können m
 
 Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil, um ein benutzerdefiniertes Widget hinzuzufügen. Weitere Informationen zum Erstellen von Profilen finden Sie unter [Erstellen benutzerdefinierter Profile](/help/forms/using/custom-profile.md).
 
-### Widget erstellen  {#create-a-widget}
+### Widget erstellen {#create-a-widget}
 
 HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, das erweitert werden kann, um neue Widgets zu erstellen. Die Implementierung ist ein jQuery-Widget *abstractWidget*, dass zum Schreiben eines neuen Widgets erweitert werden kann. Das neue Widget kann nur durch Erweitern bzw. Überschreiben der unten erwähnten Funktionen ordnungsgemäß laufen.
 
