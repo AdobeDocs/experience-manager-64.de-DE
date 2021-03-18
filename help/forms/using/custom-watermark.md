@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
+feature: Korrespondenzverwaltung
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 58%
+source-wordcount: '353'
+ht-degree: 59%
 
 ---
 
@@ -31,7 +32,7 @@ Um das Wasserzeichen in der PDF-Vorschau zu aktivieren, wählen Sie unter **[!UI
 
 Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
 
-## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an  {#customizewatermark-}
+## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an {#customizewatermark-}
 
 1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen **[!UICONTROL previewwatermark]** mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner previewwatermark im Ordner libs:
