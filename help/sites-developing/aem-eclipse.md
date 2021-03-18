@@ -1,7 +1,7 @@
 ---
 title: AEM Developer Tools for Eclipse
 seo-title: AEM Developer Tools für Eclipse
-description: 'null'
+description: AEM Developer Tools für Eclipse
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 81%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
@@ -36,26 +36,26 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 ## Voraussetzungen {#requirements}
 
-Bevor Sie die AEM Developer Tools verwenden, müssen Sie:
+Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 * Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools unterstützen derzeit Eclipse Kepler oder höher
 
 * Kann mit AEM Version 5.6.1 oder neuer verwendet werden
-* Konfigurieren Sie Ihre eclipse-Installation, um sicherzustellen, dass Sie über mindestens 1 Gigabyte Heap-Speicher verfügen, indem Sie die Konfigurationsdatei `eclipse.ini` bearbeiten, wie in der [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB an Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [Eclipse-FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
 
 >[!NOTE]
 >
->Unter macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
+>Unter Mac OS X müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
 
 ## So installieren Sie die AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Nachdem Sie die obigen [Anforderungen](#requirements) erfüllt haben, können Sie das Plugin wie folgt installieren:
+Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, können Sie das Plug-in wie folgt installieren:
 
 1. Durchsuchen Sie die [**AEM** Developer Tools-Website](https://eclipse.adobe.com/aem/dev-tools/).
 
-1. Kopieren Sie den **Installationslink**.
+1. Kopieren Sie den **Installations-Link**.
 
-   Beachten Sie, dass Sie alternativ ein Archiv herunterladen können, anstatt den Installationslink zu verwenden. Dies ermöglicht Offlineinstallation, aber Sie werden auf diese Weise automatische Update-Benachrichtigungen verpassen.
+   Beachten Sie, dass Sie alternativ ein Archiv herunterladen können, anstatt den Installations-Link zu verwenden. Dies ermöglicht Offlineinstallation, aber Sie werden auf diese Weise automatische Update-Benachrichtigungen verpassen.
 
 1. Öffnen Sie in Eclipse das Menü **Hilfe**.
 1. Klicken Sie auf **Neue Software installieren**.
@@ -130,7 +130,7 @@ Führen Sie folgende Schritte aus, um das Beispielprojekt zu erstellen:
 Um ungültige Abhängigkeiten und Projektdefinitionen aufzulösen, gehen Sie wie folgt vor:
 
 1. Wählen Sie alle erstellten Projekte.
-1. Kicken Sie mit der rechten Maustaste. Im Menü **Maven** wählen Sie **Projekte aktualisieren**.
+1. Klicken Sie mit der rechten Maustaste. Im Menü **Maven** wählen Sie **Projekte aktualisieren**.
 1. Aktivieren Sie **Aktualisierungen von Snapshots/Releases erzwingen**.
 1. Klicken Sie auf **OK**. Eclipse versucht, die erforderlichen Abhängigkeiten herunterzuladen.
 
