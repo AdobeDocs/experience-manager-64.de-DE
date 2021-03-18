@@ -7,10 +7,11 @@ uuid: d7b0d9a5-f5f0-4c21-a6f8-622bf94f4491
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1834'
 ht-degree: 66%
 
 ---
@@ -237,7 +238,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
    | Name | Titel | Spaltenanzahl |
    |---|---|---|
    | customerdetails | Kundendetails | 1 |
-   | billsummary | Rechnungszusammenfassung | 1 |
+   | billsummary | Rechnungszusammenfassung | 3 |
    | summarycharges | Zusammenfassung der Gebühren | 2 |
    | itemisedcalls | Einzeln aufgeführte Anrufe | 1 |
    | paynow | Jetzt zahlen | 2 |
