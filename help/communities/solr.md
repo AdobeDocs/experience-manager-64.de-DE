@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 2%
 
 ---
@@ -152,7 +153,7 @@ Die folgenden 33 Sprachen werden in Advanced MLS unterstützt.
 
 Für die SRP-Sammlung (entweder MSRP oder DSRP) muss zur Unterstützung der standardmäßigen mehrsprachigen Suche (MLS) zwei der Solr-Konfigurationsdateien geändert werden:
 
-* **schema.xml**
+* **Schema.xml**
 * **solrconfig.xml**
 
 Standard-MLS-Dateien (Schema.xml, solrconfig.xml) für Solaris 4.10
@@ -234,10 +235,10 @@ Installationsanweisungen - Beachten Sie die folgenden Unterschiede für Solr4 un
 1. Installieren und Konfigurieren von Solr im SolrCloud-Modus
 1. Extrahieren Sie den Inhalt des erweiterten MLS-Pakets auf die Festplatte. Der Inhalt sollte Folgendes umfassen:
 
-   * **schema.xml**
+   * **Schema.xml**
    * **solrconfig.xml**
    * **stopwords/** folder
-   * **profile/** Ordner
+   * **Profile/** Ordner
    * **extra-libs/** folder
 
 1. Vorbereitung einer neuen Konfiguration:
