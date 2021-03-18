@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Die folgenden Quick-Beginn sind für den Forms-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als PDF mit der Java-API gesendet wurden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Umgang mit HTML-Formularen, die als XML mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
 [Quick Beginn (SOAP-Modus): Erstellen von PDF-Dokumenten mit gesendeten XML-Daten mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
