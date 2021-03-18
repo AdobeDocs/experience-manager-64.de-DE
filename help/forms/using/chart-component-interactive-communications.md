@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2425'
 ht-degree: 53%
 
 ---
@@ -152,7 +153,7 @@ Auf der Registerkarte „Standard“ können Sie die folgenden Eigenschaften kon
 
 **Y-Achse >** FunktionGibt die statistische/benutzerdefinierte Funktion an, die zur Berechnung der Werte auf der y-Achse verwendet werden soll. Weitere Informationen zu Funktionen finden Sie unter Funktionen in Diagramm und Beispiel 2: Anwendung der Mittel- und Summenfunktionen in einem Liniendiagramm.
 
-**Legende** anzeigenZeigt eine Legende für das Kreisdiagramm oder Ringdiagramm an, wenn diese aktiviert ist.
+**Legende anzeigen** Zeigt eine Legende für das Kreisdiagramm oder Ringdiagramm an, wenn diese aktiviert ist.
 
 **Legende** positionGibt die Position der Legende in Bezug auf das Diagramm an. Die verfügbaren Optionen sind rechts, links, oben und unten.
 
