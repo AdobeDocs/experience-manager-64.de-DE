@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '830'
 ht-degree: 2%
 
 ---
@@ -148,7 +149,7 @@ Es wird empfohlen, ein Tool wie das [Network Time Protocol (NTP)](https://www.nt
 
 ### Neuer Inhalt wird nicht in Suchvorgängen {#new-content-does-not-appear-in-searches} angezeigt
 
-Die Infrastruktur für die Adobe Cloud-Datenspeicherung verwendet *letztendlich Konsistenz*, um ihre Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es kann einige Sekunden dauern, bis sie in den Suchergebnissen angezeigt werden.
+Die Infrastruktur für die Adobe Cloud-Datenspeicherung verwendet *letztendlich Konsistenz*, um die Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es kann einige Sekunden dauern, bis sie in den Suchergebnissen angezeigt werden.
 
 Während das Intervall, das sich auf die spätere Konsistenz auswirkt, überwacht wird, wenden Sie sich an Ihren Kundenbetreuer, wenn es länger als ein paar Sekunden dauert, bis neue Inhalte in Suchvorgängen angezeigt werden.
 
