@@ -1,7 +1,7 @@
 ---
 title: AEM Brackets-Erweiterung
 seo-title: AEM Brackets-Erweiterung
-description: 'null'
+description: AEM Brackets-Erweiterung
 seo-description: 'null'
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '928'
 ht-degree: 55%
 
 ---
@@ -78,7 +78,7 @@ Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Si
 
 >[!NOTE]
 >
->Wenn Sie kein eigenes Projekt mit einem Inhaltspaket haben, können Sie das [HTL TodoMVC Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **ZIP herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie, wie oben beschrieben, den Ordner `jcr_root` in Brackets. Gehen Sie dann wie folgt vor, um **Projekteinstellungen** einzurichten, und laden Sie dann das gesamte Paket in Ihre AEM Entwicklungsinstanz hoch, indem Sie ein **Inhaltspaket exportieren** ausführen, wie im Abschnitt &quot;Synchronisierung des vollständigen Inhalts-Pakets&quot;weiter unten beschrieben.
+>Wenn Sie kein eigenes Projekt mit einem Inhaltspaket haben, können Sie das [HTL TodoMVC Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **ZIP herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie, wie oben beschrieben, den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um **Projekteinstellungen** einzurichten, und laden Sie dann das gesamte Paket in Ihre AEM Entwicklungsinstanz hoch, indem Sie ein **Inhaltspaket exportieren** ausführen, wie im Abschnitt &quot;Synchronisierung des vollständigen Inhalts-Pakets&quot;weiter unten beschrieben.
 >
 >Nach diesen Schritten sollten Sie auf die `/content/todo.html`-URL in Ihrer AEM-Entwicklungsinstanz zugreifen können. Sie können Beginn mit Codeänderungen in Klammern ausführen und sehen, wie die Änderungen nach einer Aktualisierung im Webbrowser sofort mit dem AEM synchronisiert wurden.
 
