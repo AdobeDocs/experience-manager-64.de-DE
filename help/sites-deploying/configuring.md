@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 4f36f2368a373918902304b5167fe1cb4b899611
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2153'
 ht-degree: 89%
 
 ---
@@ -143,7 +144,7 @@ Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer 
 
 Weitere Informationen finden Sie unter [Single Sign-On](/help/sites-deploying/single-sign-on.md).
 
-### Ressourcenzuordnung  {#resource-mapping}
+### Ressourcenzuordnung {#resource-mapping}
 
 Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
 
