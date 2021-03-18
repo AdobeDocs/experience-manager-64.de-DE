@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '10849'
+source-wordcount: '10850'
 ht-degree: 6%
 
 ---
@@ -317,7 +318,7 @@ Geben Sie die folgenden Werte an, um einen Endpunkt des Typs &quot;Überwachter 
 
 **Konfigurationswerte angeben**
 
-Sie müssen Konfigurationswerte für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;angeben, wenn Sie einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen. Diese Konfigurationswerte werden von einem Administrator angegeben, wenn mithilfe von Administration Console ein Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzugefügt wird.
+Sie müssen Konfigurationswerte für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;angeben, wenn Sie einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen. Diese Konfigurationswerte werden von einem Administrator festgelegt, wenn mithilfe von Administration Console ein Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzugefügt wird.
 
 Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn einem Dienst programmgesteuert ein Endpunkt des Typs &quot;überwachter Ordner&quot;hinzugefügt wird:
 
