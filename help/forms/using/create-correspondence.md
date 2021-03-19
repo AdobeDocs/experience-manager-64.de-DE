@@ -7,10 +7,11 @@ uuid: 72c06a81-65c8-4ddd-964d-91f0256a8f79
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
+feature: Korrespondenzverwaltung
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3728'
 ht-degree: 67%
 
 ---
@@ -68,7 +69,7 @@ Füllen Sie auf der Registerkarte „Daten“ die verfügbaren Layout-Felder und
 
    Tippen Sie auf einen Datenfeldwert in der HTML-Briefvorschau, um das entsprechende Datenfeld in der Registerkarte „Daten“ zu markieren.
 
-   ![Daten in den Brief](assets/2_enterdata.png) ![2_1_enterdata eingeben](assets/2_1_enterdata.png)
+   ![Geben Sie Daten in den Brief](assets/2_enterdata.png) ![2_1_enterdata ein](assets/2_1_enterdata.png)
 
 ### Inhalt verwalten {#managecontent}
 
@@ -127,7 +128,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 1. Falls erforderlich, fügen Sie Sonderzeichen in die Korrespondenz ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie z. B. □, □ und ^
+   * Mathematische Symbole wie z. B. □, , ^ und ^
    * Interpunktionssymbole wie ‟ und&quot;
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
