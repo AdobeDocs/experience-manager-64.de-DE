@@ -6,10 +6,13 @@ audience: end-user
 user-guide-title: AEM 6.4-Implementierungsanleitung
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
+feature-set: Experience Manager Sites
+feature: Bereitstellen
+role: Architekt
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '358'
 ht-degree: 93%
 
 ---
@@ -89,7 +92,7 @@ ht-degree: 93%
    + [Forms-Repository-Neustrukturierung in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [E-Commerce-Repository-Neustrukturierung in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Repository-Neustrukturierung für AEM Communities in 6.4](communities-repository-restructuring-in-aem-6-4.md)
-+ eCommerce {#ecommerce}
++ E-Commerce {#ecommerce}
    + [E-Commerce-Übersicht](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
