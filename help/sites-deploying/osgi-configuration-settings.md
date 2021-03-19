@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 61%
+source-wordcount: '3806'
+ht-degree: 62%
 
 ---
 
@@ -365,7 +366,7 @@ Verschiedene Eigenschaften können konfiguriert werden:
 * **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Wenn der Benutzername 
 `admin` auf beiden Seiten der Map angezeigt wird, wird die Zuordnung ignoriert. Beachten Sie, dass das Zeichen „=“ durch ein führendes „\“ geschützt werden muss.
 
-* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden:
+* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 
    * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
    * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
