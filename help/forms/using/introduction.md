@@ -7,10 +7,11 @@ uuid: a68f1ca1-32dd-48f9-9359-8f09abd1c3de
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 92%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 92%
 
 Formularentwickler können eine XFA-Vorlage für die Anzeige von Formularen im PDF- und HTML5-Format verwenden. Diese Funktion ist besonders nützlich, wenn Sie eine Vielzahl von XFA-Formularen haben, in denen minimale Änderungen für die Anpassung an das Design von HTML5-Formularen vorgenommen werden müssen. Sie können die vorhandenen XFA-Formulare in HTML5 wiedergeben und für verschiedene Geräte anpassen, auf denen XFA-basierte PDF noch nicht unterstützt werden.
 
-## Verwalten von HTML5-Formularen  {#manage-html-forms}
+## Verwalten von HTML5-Formularen {#manage-html-forms}
 
 AEM bietet außerdem eine einheitliche Ansicht für die Auflistung und Verwaltung aller Formularvorlagen mithilfe der AEM Forms-Benutzeroberfläche. Sie können Formulare aktivieren, deaktivieren, veröffentlichen und in der Vorschau anzeigen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](/help/forms/using/introduction-managing-forms.md).
 
