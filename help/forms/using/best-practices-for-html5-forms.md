@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 content-type: reference
 discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: ecfac782540ac6712e11bed9148199561b7e7f79
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1444'
 ht-degree: 87%
 
 ---
@@ -61,7 +62,7 @@ Ein HTML5-Formular kann hunderte von Seiten umfassen. Ein Formular mit vielen Fe
 
 HTML5-Formulare können datenbasierte Felder enthalten (Tabellen und Unterformulare). Diese Felder erweitern die Größe des Formulars in der Laufzeitumgebung. So kann zum Beispiel eine datenbasierte Tabelle in einem HTML5-Formular tausende von Zeilen umfassen. Diese Tabellen können zu Layout- und Leistungsverringerung führen. Mit unten vorgeschlagenen Optimierungen können Sie die Ladezeiten von HTML5-Formularen mit datengesteuerten Felder verringern:
 
-* Verwenden Sie XFA-Skipt zur ausgelagerten Navigation, um dynamische datengesteuerte Felder anzuzeigen (Tabellen und Unterformulare). In ausgelagerter Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Browser-Malvorgang auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Darüber hinaus interessieren sich die Nutzer der Mobilgeräte nur für eine Untergruppe von Daten. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie auch, dass die seitenweise Navigation nicht standardmäßig verfügbar ist. Sie können XFA-Skripterstellung verwenden, um die ausgelagerte Navigation zu entwickeln.
+* Verwenden Sie XFA-Skipt zur ausgelagerten Navigation, um dynamische datengesteuerte Felder anzuzeigen (Tabellen und Unterformulare). In ausgelagerter Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Browser-Malvorgang auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem interessieren sich die Nutzer der Mobilgeräte nur für eine Untergruppe von Daten. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie auch, dass die seitenweise Navigation nicht standardmäßig verfügbar ist. Sie können XFA-Skripterstellung verwenden, um die ausgelagerte Navigation zu entwickeln.
 
 * Bewerten Sie das Zusammenführen mehrerer schreibgeschützter Spalten zu einer einzelnen Spalte. Außerdem wird der Arbeitsspeicher, der benötigt wird, um das Formular anzuzeigen, reduziert. Vermeiden Sie es, die Spalten anzuzeigen, die keine Eingaben von den Benutzern erfordern.
 * Bewerten Sie das Teilen des datengesteuerten Formulars in einen [Formularsatz](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), wenn die obigen Vorschläge nicht viele Verbesserungen bringen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jede 100. Zeile zu ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie außerdem, dass ein Formularsatz eine konsolidierte Senden-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
@@ -84,4 +85,4 @@ Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in e
 ## Schnellnachweiskarte {#quick-reference-card}
 
 Sie können folgende Karte drucken (klicken Sie auf eine Karte, um eine hochauflösende Version herunterzuladen) und diese auf Ihrem Schreibtisch aufbewahren, um eine kurze Referenz zu erhalten:
-[ ![Bewährte Verfahren für HTML5-Forms-Schnellverweiskarten](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[ ![Best Practices für HTML5 Forms Quick Reference Card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
