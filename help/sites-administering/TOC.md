@@ -6,10 +6,13 @@ audience: admin-user
 user-guide-title: AEM 6.4-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
+feature-set: Experience Manager Sites
+feature: Verwalten
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '660'
 ht-degree: 93%
 
 ---
@@ -63,7 +66,7 @@ ht-degree: 93%
    + [Konfigurieren von Suchformularen](search-forms.md)
    + [Die Tools-Konsolen](tools-consoles.md)
    + [Berichterstellung](reporting.md)
-   + [Verwalten der Workflow-Instanzen](workflows-administering.md)
+   + [Verwalten von Workflow-Instanzen](workflows-administering.md)
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
    + [Starten von Workflows](workflows-starting.md)
@@ -94,7 +97,7 @@ ht-degree: 93%
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung   {#personalization}
++ Personalisierung  {#personalization}
    + [Personalisierung ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
@@ -103,15 +106,15 @@ ht-degree: 93%
    + [Konfigurieren der Segmentierung](campaign-segmentation.md)
    + [Erweitern und Konfigurieren des Design-Importtools für Einstiegsseiten](extending-the-design-importer-for-landingpages.md)
    + [Integrieren von Einstiegsseiten in Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ eCommerce {#ecommerce}
-   + [eCommerce](ecommerce.md)
++ E-Commerce {#ecommerce}
+   + [E-Commerce](ecommerce.md)
    + [Konzepte ](concepts.md)
    + [Verwaltung des generischen E-Commerce](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-commerce.md)
-+ Integrationen {#integration}
++ Integration {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
    + [Integration mit Adobe Target](target.md)
