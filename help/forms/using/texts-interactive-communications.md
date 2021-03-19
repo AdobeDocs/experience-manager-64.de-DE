@@ -7,10 +7,11 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2251'
 ht-degree: 71%
 
 ---
@@ -242,7 +243,7 @@ Sie können den Text direkt aus dem Microsoft® Word-Dokument in ein bearbeitbar
 Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, □ und ^
+* Mathematische Symbole wie z. B. □, , ^ und ^
 * Interpunktionssymbole wie ‟ und&quot;
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
