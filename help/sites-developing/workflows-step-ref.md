@@ -1,7 +1,7 @@
 ---
 title: Referenz für Workflow-Schritte
 seo-title: Referenz für Workflow-Schritte
-description: 'null'
+description: Referenz für Workflow-Schritte
 seo-description: 'null'
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2833'
 ht-degree: 73%
 
 ---
@@ -179,7 +179,7 @@ function check(){
 }
 ```
 
-## ODER-Teilung  {#or-split}
+## ODER-Teilung {#or-split}
 
 Mit der **[!UICONTROL ODER-Teilung]** wird der Workflow so geteilt, dass nur eine Verzweigung aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
@@ -268,7 +268,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [**[!UICONTROL Benutzer/Gruppe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Dialogfeld]**
 
-   * **[!UICONTROL Dialogpfad**]: Der Pfad zum Knoten &quot;dialog&quot;im [Dialogfeld, das Sie erstellen](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Dialogpfad**]: Der Pfad zum Knoten &quot;dialog&quot;im Dialogfeld [das Sie erstellen](#dialog-participant-step-creating-a-dialog).
 
 #### Schritt &quot;Dialogteilnehmer&quot;- Erstellen eines Dialogfelds{#dialog-participant-step-creating-a-dialog}
 
