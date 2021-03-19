@@ -2,10 +2,12 @@
 title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit dem Markenportal konfigurieren, um Assets und Sammlungen im Markenportal zu veröffentlichen. '
 contentOwner: VG
+feature: Brand Portal
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1650'
 ht-degree: 54%
 
 ---
@@ -278,7 +280,7 @@ Markenportal wurde erfolgreich mit Ihrer AEM Assets-Autoreninstanz konfiguriert.
 * [Veröffentlichen von Assets aus AEM Assets in Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Konfigurieren Sie Asset ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) Sourcingening, damit die Benutzer des Markenportals Elemente in AEM Assets hinzufügen und veröffentlichen können.
+* [Konfigurieren Sie Asset ](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) Sourcingening, damit die Benutzer des Markenportals Elemente in AEM Assets hinzufügen und veröffentlichen können.
 
 ## Upgrade der Konfiguration {#upgrade-integration-64}
 
