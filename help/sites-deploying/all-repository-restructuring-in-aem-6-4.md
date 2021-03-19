@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: f6121ad762c4a983d21fa9b6fdd3aa38f80ec0f5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2719'
 ht-degree: 80%
 
 ---
@@ -640,7 +641,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
  </tbody>
 </table>
 
-### Übersetzungssprachen  {#translation-languages}
+### Übersetzungssprachen {#translation-languages}
 
 <table> 
  <tbody>
@@ -671,7 +672,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
  </tbody>
 </table>
 
-### Übersetzungsregeln  {#translation-rules}
+### Übersetzungsregeln {#translation-rules}
 
 <table> 
  <tbody>
