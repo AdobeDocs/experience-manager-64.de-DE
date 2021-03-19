@@ -1,6 +1,6 @@
 ---
-title: eCommerce
-seo-title: eCommerce
+title: E-Commerce
+seo-title: E-Commerce
 description: 'Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen. '
 seo-description: 'Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen. '
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: eb1ae2b4910e7adef48865996db4837175f588d9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '779'
 ht-degree: 79%
 
 ---
 
 
-# eCommerce{#ecommerce}
+# E-Commerce{#ecommerce}
 
 * [Konzepte ](/help/sites-administering/concepts.md)
 * [Verwaltung (generisch)](/help/sites-administering/generic.md)
@@ -126,7 +127,7 @@ AEM eCommerce bietet Folgendes:
 
 Im Abschnitt [Konzepte](/help/sites-administering/concepts.md) finden Sie detailliertere Informationen zum Framework. Nachfolgend erhalten Sie einen groben Überblick über das Framework:
 
-### Eigenschaften des Frameworks  {#what}
+### Eigenschaften des Frameworks {#what}
 
 * Das Integrationsframework stellt die API, mehrere Komponenten zur Veranschaulichung der Funktionalität und einige Erweiterungen für Beispiele für Anbindungsmethoden bereit.
 * Das Framework stellt die grundlegende Struktur bereit, die für eine Projektimplementierung erforderlich ist.
