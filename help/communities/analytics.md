@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 6%
 
 ---
@@ -54,7 +55,7 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics-R
 
 1. [Replizieren Sie den kryptographischen ](#replicate-the-crypto-key) Schlüssel, um sicherzustellen, dass Verschlüsselung/Entschlüsselung in allen AEM korrekt ausgeführt wird.
 1. Vorbereitung einer Adobe Analytics [Report Suite](#adobe-analytics-report-suite-for-video-reporting)
-1. Erstellen Sie einen AEM Analytics [Cloud-Dienst](#aem-analytics-cloud-service-configuration) und [Framework](#aem-analytics-framework-configuration)
+1. Erstellen eines AEM Analytics [Cloud-Dienstes](#aem-analytics-cloud-service-configuration) und [Framework](#aem-analytics-framework-configuration)
 1. [Aktivieren von ](#enable-analytics-for-a-community-site) Analytics für eine Community-Site
 1. [](#verify-analytics-to-aem-variable-mapping) VerifyAnalytics zu AEM Variablenzuordnung
 1. Identifizieren Sie [den primären Herausgeber](#primary-publisher).
@@ -65,7 +66,7 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics-R
 
 Zur Konfiguration der Funktionen von Analytics für Communities müssen Sie mit Ihrem Kundenbetreuer zusammenarbeiten, um ein Adobe Analytics-Konto und [Report Suite](#adobe-analytics-report-suite-for-video-reporting) einzurichten. Nach der Festlegung sollten folgende Informationen verfügbar sein:
 
-* Name der Firma
+* Unternehmensname
 
    Die Firma, die mit dem Adobe Analytics-Konto verknüpft ist
 * Benutzername
@@ -393,13 +394,13 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
 |  | Aktivierungsressource-Typ | Site-Titel | Funktionstyp | Gruppentitel | Gruppenpfad | UGC-Typ | UGC-Titel | Benutzer (Mitglied) | UGC-Pfad | Site-Pfad |
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
 |  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
-| ereignis1Ressourcenwiedergabe | (eine) | - | - | - | - | - | - | - | (i) | - |
-| ereignis2SCFView | (eine) | (b) | (c) | (d) | (E) | (f) | (g) | (h) | i) | j) |
-| ereignis3SCFCreate (Post) | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| ereignis4SCFFollow | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| ereignis5SCFVoteUp | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| ereignis6SCFVoteDown | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| ereignis7SCFRate | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
+| Ereignis1Ressourcenwiedergabe | (eine) | - | - | - | - | - | - | - | (i) | - |
+| Ereignis2SCFView | (eine) | (b) | (c) | (d) | (E) | (f) | (g) | (h) | i) | j) |
+| Ereignis3SCFCreate (Post) | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
+| Ereignis4SCFFollow | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
+| Ereignis5SCFVoteUp | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
+| Ereignis6SCFVoteDown | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
+| Ereignis7SCFRate | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
 
 **Beispiele für eVar:**
 
@@ -470,7 +471,7 @@ Wenn die gewählte Bereitstellung eine [Veröffentlichungsfarm](topologies.md#ta
 
 Standardmäßig identifiziert die OSGi-Konfiguration die Veröffentlichungsinstanz als primären Herausgeber, sodass alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm sich selbst als Primär identifizieren.`AEM Communities Publisher Configuration`
 
-Daher müssen Sie die Konfiguration in allen sekundären Veröffentlichungsinstanzen bearbeiten, um das Kontrollkästchen **Primär Publisher** zu deaktivieren.
+Daher müssen Sie die Konfiguration für alle sekundären Veröffentlichungsinstanzen bearbeiten, um das Kontrollkästchen **Primär Publisher** zu deaktivieren.
 
 Spezifische Anweisungen finden Sie im Abschnitt zum primären Herausgeber von [Bereitstellen von Communities](deploy-communities.md#primary-publisher).
 
@@ -506,7 +507,7 @@ Nachdem eine für Analytics aktivierte Community-Site veröffentlicht wurde, kan
 
 Das Abfrageintervall steuert die Häufigkeit von Anfragen an Adobe Analytics, nach denen Daten abgerufen und in [SRP](working-with-srp.md) gespeichert werden sollen.
 
-Wenn die Daten als &quot;Big Data&quot;kategorisiert werden können, kann eine häufigere Abfrage zu einer hohen Belastung der Community-Site führen.
+Wenn die Daten als &quot;Big Data&quot;kategorisiert werden können, kann eine häufigere Abfrage eine große Belastung für die Community-Site bedeuten.
 
 Die Standardabfrage **Importintervall** ist auf 12 Stunden eingestellt.
 
