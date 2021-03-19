@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 83%
+source-wordcount: '850'
+ht-degree: 86%
 
 ---
 
@@ -31,8 +32,8 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
    1. Installieren Sie das aktuelle Service Pack und Patches für AEM 6.2 Forms bzw. AEM 6.3 Forms. Weitere Details finden Sie unter:
 
       * [AEM 6.2 – Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
-      * [AEM 6.3 – Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html)
-      * [AEM Sustenance Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)
+      * [AEM 6.3 – Versionshinweise](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
+      * [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
    1. Bereiten Sie die Quellinstanz für die Aktualisierung vor. Ausführliche Anweisungen finden Sie im Artikel [Aktualisieren auf AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
    1. Laden Sie [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software) herunter.
    1. **(Nur Unix/Linux-basierte Installationen)** Wenn Sie UNIX oder Linux als Betriebssystem verwenden, öffnen Sie das Terminalfenster, um zu dem Ordner mit „crx-quickstart“ zu navigieren, und führen Sie den folgenden Befehl aus:
@@ -50,7 +51,7 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
 
-   1. Öffnen Sie [Software-Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
+   1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
    1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
    1. Im Abschnitt **[!UICONTROL Filter]**:
       1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
