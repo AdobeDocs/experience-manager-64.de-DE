@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 79%
 
 ---
@@ -64,7 +65,7 @@ Die folgenden Anforderungsparameter werden beim Rendern von Formularen als HTML 
  </tbody> 
 </table>
 
-### Zusammenführen von Daten mit einer Formularvorlage  {#merge-data-with-form-template}
+### Zusammenführen von Daten mit einer Formularvorlage {#merge-data-with-form-template}
 
 | Parameter | Beschreibung |
 |---|---|
