@@ -8,18 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 85%
 
 ---
 
 
-# Erstellen und Verwalten von Überprüfungen für Assets in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
+# Erstellen und Verwalten von Überprüfungen von Assets in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
 
-## Überprüfen {#review}
+## Überprüfung {#review}
 
 Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder mehrere Überprüfer zu einem Asset, das in einem Formular verfügbar ist, Kommentare abgeben können.
 
@@ -36,7 +37,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 
 1. Füllen Sie alle weiteren Details und klicken Sie dann auf „Start“.
 
-### Aktionen beim Einrichten von Überprüfungen  {#actions-that-occur-when-a-review-is-set-up}
+### Aktionen beim Einrichten von Überprüfungen {#actions-that-occur-when-a-review-is-set-up}
 
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
