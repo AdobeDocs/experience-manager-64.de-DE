@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '719'
 ht-degree: 74%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 74%
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
@@ -75,7 +76,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
       * Gehen Sie zu *http://serveraddress:serverport/system/console/bundles*
       * Wählen Sie **Installieren/Aktualisieren**
       * Navigieren Sie zum ausgewählten Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde
-      * Vergewissern Sie sich, dass der JDBC-Treiber der Oracle Corporation für MySQLcom.mysql.jdbc **aktiv ist, und Beginn.**
+      * Vergewissern Sie sich, dass der JDBC-Treiber für MySQLcom.mysql.jdbc **von der Oracle Corporation aktiv ist, und Beginn.**
 
 1. Schließlich AEM Beginn mit den Ausführungsmodi `crx3` und `crx3rdb`:
 
