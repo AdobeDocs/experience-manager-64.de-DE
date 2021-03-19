@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -123,7 +124,7 @@ Wählen Sie eine Kategorie aus, die den zu übersetzenden Inhalt beschreibt. Der
 `General.`
 
    * **[!UICONTROL Gebietsschema auswählen...]**
-(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Wenn Sie `No Common Store` wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
+(Optional) Wenn Sie ein Gebietsschema zum Speichern von UGC auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Wenn Sie `No Common Store` wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **** Assetstab: kann als Standard beibehalten werden
 * Wählen Sie **[!UICONTROL OK]** aus
@@ -146,7 +147,7 @@ Der neue Cloud-Dienst für die Integration von Übersetzungen muss in der Umgebu
 
 ### Benutzereinstellungen {#user-preference}
 
-#### Benutzerprofil {#user-profile}
+#### Anwenderprofil {#user-profile}
 
 Alle Communities-Sites bieten ein Profil, das von den angemeldeten Mitgliedern bearbeitet werden kann, um sich in der Community zu identifizieren und ihre Voreinstellungen festzulegen.
 
