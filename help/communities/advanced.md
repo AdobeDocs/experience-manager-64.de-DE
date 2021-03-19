@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1142'
 ht-degree: 1%
 
 ---
@@ -94,7 +95,7 @@ In der Grundbewertung ist die Menge, die benötigt wird, um ein Zeichen zu verdi
 
 Bei der erweiterten Bewertung wird die benötigte Menge ständig an die Menge der Qualitätsdaten innerhalb des Systems angepasst. Die Bewertung wird kontinuierlich auf eine Weise berechnet, die einer Glockenkurve ähnlich ist.
 
-Wenn ein Mitglied ein Expertenabzeichen zu einem Thema erhält, das nicht mehr aktiv ist, besteht die Möglichkeit, dass es sein Abzeichen aufgrund des Verfalls mit der Zeit verliert.
+Wenn ein Mitglied ein Expertenabzeichen für ein Thema erhält, das nicht mehr aktiv ist, besteht die Möglichkeit, dass es sein Abzeichen aufgrund des Verfalls mit der Zeit verliert.
 
 ### ScoringType {#scoringtype}
 
