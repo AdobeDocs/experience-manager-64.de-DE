@@ -7,10 +7,11 @@ uuid: 05d74a59-3950-4513-bfce-6ff3d9d5318c
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 80%
 
 ---
@@ -149,7 +150,7 @@ Bei Feldern, deren Modell XML-Schema ist, werden die Daten im Tag `afBoundData` 
 Für adaptive Formulare, die auf dem JSON-Schema basieren, wird im Folgenden die Struktur von vorbefüllten JSON und gesendeten JSON beschrieben. Weitere Informationen finden Sie unter[ Erstellen von adaptiven Formularen mit dem JSON-Schema](/help/forms/using/adaptive-form-json-schema-form-model.md).
 
 * **Prefill-JSON-Struktur**: Das Prefill-JSON muss mit dem verknüpften JSON-Schema konform sein. Optional kann es in das /afData/afBoundData-Objekt eingeschlossen werden, wenn Sie auch ungebundene Felder im Voraus ausfüllen möchten.
-* **Gesendete JSON-Struktur**: Wenn keine JSON zum Vorausfüllen verwendet wird, enthält die gesendete JSON Daten für gebundene und ungebundene Felder im afData-Wrapper-Tag. Wenn die JSON zum Vorausfüllen verwendet wird, hat die gesendete JSON dieselbe Struktur wie die JSON zum Vorausfüllen. Wenn der JSON-Beginn zum Vorausfüllen mit dem afData-Stammobjekt gefüllt wird, hat die Ausgabe-JSON dasselbe Format. Wenn die JSON zum Vorausfüllen nicht über den afData/afBoundData-Wrapper verfügt und stattdessen Beginn direkt vom Schema-Stammobjekt wie user, wird die gesendete JSON auch mit dem user-Objekt Beginn.
+* **Gesendete JSON-Struktur**: Wenn keine JSON zum Vorausfüllen verwendet wird, enthält die gesendete JSON Daten für gebundene und ungebundene Felder im afData-Wrapper-Tag. Wenn die JSON zum Vorausfüllen verwendet wird, hat die gesendete JSON dieselbe Struktur wie die JSON zum Vorausfüllen. Wenn die JSON-Beginn zum Vorausfüllen mit dem afData-Stammobjekt verwendet werden, hat die Ausgabe-JSON dasselbe Format. Wenn die JSON zum Vorausfüllen nicht über den afData/afBoundData-Wrapper verfügt und stattdessen Beginn direkt vom Schema-Stammobjekt wie user, wird die gesendete JSON auch mit dem user-Objekt Beginn.
 
 ```
 {
