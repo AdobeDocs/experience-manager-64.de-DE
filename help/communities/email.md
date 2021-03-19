@@ -10,11 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 4%
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 4%
 AEM Communities verwendet E-Mail für
 
 * [Communities-Benachrichtigungen](notifications.md)
-* [Communities Abonnements](subscriptions.md)
+* [Communities-Abonnements](subscriptions.md)
 
 Standardmäßig funktioniert die E-Mail-Funktion nicht, da sie die Angabe eines SMTP-Servers und SMTP-Benutzers erfordert.
 
