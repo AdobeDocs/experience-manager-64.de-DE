@@ -1,7 +1,7 @@
 ---
 title: Foundation-Komponenten
 seo-title: Foundation-Komponenten
-description: 'null'
+description: Foundation-Komponenten
 seo-description: 'null'
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6670'
+source-wordcount: '6671'
 ht-degree: 85%
 
 ---
@@ -61,7 +61,7 @@ Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie In
 ### Kontoelement {#account-item}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Sie können einen Link mit Titel und Beschreibung definieren.
 
@@ -70,7 +70,7 @@ Sie können einen Link mit Titel und Beschreibung definieren.
 ### Adaptives Bild {#adaptive-image}
 
 >[!CAUTION]
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Hauptkomponenten-Bildkomponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/image.html).
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Hauptkomponenten-Bildkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html).
 
 Die Komponente der Adaptive Image Foundation erzeugt Bilder, die in das Fenster eingepasst werden, in dem die Webseite geöffnet wird. Um die Komponente zu verwenden, geben Sie eine Bildressource entweder im Dateisystem oder im DAM an. Wenn die Webseite geöffnet wird, lädt der Webbrowser eine Kopie des Bildes herunter, die so in der Größe angepasst wurde, dass sie in das aktuelle Fenster passt.
 
