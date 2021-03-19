@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '540'
 ht-degree: 63%
 
 ---
@@ -79,7 +80,7 @@ aus, um die Anforderung
 
 `http://localhost:4503/welcome`
 
-wie folgt umzuleiten:
+in:
 
 `http://localhost:4503/libs/cq/core/content/welcome.html`
 
