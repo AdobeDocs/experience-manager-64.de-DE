@@ -1,14 +1,14 @@
 ---
 title: AEM Forms JEE Patch Installer
-description: 'null'
+description: AEM Forms JEE Patch Installer
 uuid: e709871b-c04c-43bb-a7d0-45e89fbd3d44
 content-type: reference
 discoiquuid: 83bace08-1d4f-4192-a634-c7c4879963d8
 translation-type: tm+mt
-source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 44%
+source-wordcount: '544'
+ht-degree: 46%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 44%
 
 >[!NOTE]
 >
->[Wenden Sie sich an ](https://www.adobe.com/de/account/sign-in.supportportal.html) den Support, um weitere Informationen zu erhalten oder den Patch zu erhalten.
+>[Wenden Sie sich an ](https://www.adobe.com/account/sign-in.supportportal.html) den Support, um weitere Informationen zu erhalten oder den Patch zu erhalten.
 
 ## Informationen zum Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -30,12 +30,12 @@ Das AEM 6.4 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 ## Installieren und Konfigurieren des Patches {#installing-and-configuring-the-patch}
 
 1. Erstellen Sie eine Sicherungskopie des Ordners *aem-forms_root*. Das ist erforderlich, wenn Sie die Schnellkorrektur deinstallieren.
-1. Stoppen Sie den Anwendungsserver.
-1. Extrahieren Sie die Patch-Installationsarchivdatei auf Ihre Festplatte.
+1. Stoppen Sie den Programm-Server.
+1. Extrahieren Sie die Archivdatei des Patch-Installationsprogramms auf Ihrer Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
-   * ****
-WindowsNavigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Installationsordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie bei Dublette auf das 
+   * **Windows**
+Navigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Installationsordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie bei Dublette auf die Schaltfläche 
 `aemforms64_cfp_install.exe` file.
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
@@ -73,9 +73,9 @@ AIXNavigate zum entsprechenden Ordner und geben Sie an einer Eingabeaufforderung
 
 1. Wählen Sie je nach Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
-   * [Installieren und Bereitstellen von AEM Forms für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_de) 
-   * [Installieren und Bereitstellen von AEM Forms für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_de)
-   * [Installieren und Bereitstellen von AEM Forms für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_de)
+   * [Installieren und Bereitstellen von AEM Forms für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64) 
+   * [Installieren und Bereitstellen von AEM Forms für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+   * [Installieren und Bereitstellen von AEM Forms für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
 
 1. (Nur JBoss) Löschen Sie nach der Installation des Patches und Konfiguration des Servers die Ordner &quot;tmp&quot;und &quot;work&quot;des JBoss-Anwendungsservers.
 
@@ -94,7 +94,7 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 ## Betroffene Module {#impacted-modules}
 
 * Document Services
-* Document Security
+* Dokumentensicherheit
 * Foundation JEE
 * PDFG Service
 
