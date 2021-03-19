@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6041'
+source-wordcount: '6043'
 ht-degree: 78%
 
 ---
@@ -316,7 +317,7 @@ Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil a
 
 ### Design mit einem anderen adaptiven Formular oder interaktiver Kommunikation {#theme-with-another-adaptive-form-or-interactive-communication}
 
-Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das im Lieferumfang des Design-Editors enthalten ist, können Sie ein Formular oder eine interaktive Kommunikation Ihrer Wahl auswählen, um die Formatierung und Vorschau der Ergebnisse zu gewährleisten.
+Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das im Lieferumfang des Design-Editors enthalten ist, können Sie ein Formular oder eine interaktive Kommunikation Ihrer Wahl auswählen, um den Stil und die Vorschau der Ergebnisse zu gewährleisten.
 
 So ersetzen Sie das aktuelle Formular oder die interaktive Kommunikation auf der Arbeitsfläche des Design-Editors:
 
@@ -398,7 +399,7 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
-   <td><strong>Verwenden</strong></td> 
+   <td><strong>Verwenden Sie</strong></td> 
   </tr> 
   <tr> 
    <td><p>Abmessungen und Position</p> </td> 
@@ -464,7 +465,7 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine bestimmte 
 
    Verwenden Sie die Option **[!UICONTROL Dimension und Position]** in der Seitenleiste, um die Komponentengröße anzupassen. Stellen Sie sicher, dass der Status **[!UICONTROL Default]** ist.
 
-Wählen Sie in der Komponenten-Symbolleiste **[!UICONTROL Widget &quot;Numerisches Feld&quot;, anstatt**[!UICONTROL  Widget &quot;Feld ]**&quot;auszuwählen,]** und führen Sie die obigen Schritte aus. Wenn Sie Dimensionen für die Option **[!UICONTROL Feld-Widget]** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
+Wählen Sie anstelle von **[!UICONTROL Widget &quot;Numerisches Feld]**&quot;in der Komponenten-Symbolleiste **[!UICONTROL Widget &quot;Feld]**&quot;aus und führen Sie die oben genannten Schritte aus. Wenn Sie Dimensionen für die Option **[!UICONTROL Feld-Widget]** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
 
 ### Formatieren von Feldern für einen bestimmten Status {#styling-fields-given-state}
 
