@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 82%
 
 ---
 
 
-# Einführung in das Authoring adaptiver Formulare  {#introduction-to-authoring-adaptive-forms}
+# Einführung in das Bearbeiten adaptiver Formulare  {#introduction-to-authoring-adaptive-forms}
 
 ## Überblick {#overview}
 
