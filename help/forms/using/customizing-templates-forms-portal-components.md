@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
+feature: Formularportal
 translation-type: tm+mt
-source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1249'
 ht-degree: 72%
 
 ---
@@ -33,7 +34,7 @@ In Forms Portal können Sie benutzerdefinierte Metadaten in den Formularlisten v
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für verschiedene Forms Portal-Komponenten zu erstellen.
 
-## Erstellen einer benutzerdefinierten Vorlage  {#creating-a-nbsp-custom-template}
+## Erstellen einer benutzerdefinierten Vorlage {#creating-a-nbsp-custom-template}
 
 1. Erstellen Sie einen Knoten sling:Folder unter */apps *
 
@@ -110,7 +111,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 
 Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationseigenschaften in der Benutzeroberfläche (nur Search &amp; Lister):
 
-1. **Lokale Anpassung-Support**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut  **${localize-***YOUR_TEXT***}** und stellen Sie den lokalisierten Wert bereit, falls er nicht bereits vorhanden ist.
+1. **lokale Anpassung-Support**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut  **${localize-***YOUR_TEXT***}** und stellen Sie den lokalisierten Wert bereit, falls er nicht bereits vorhanden ist.
 
    *Im genannten Beispiel werden die Attribute „${localize-Apply}“ und „${localize-Download}“ verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
@@ -157,7 +158,7 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.** So lokalisieren Sie die Zeichenfolge &quot;Apply&quot;
+**D.Zeichenfolge &quot;Anwenden&quot;** lokalisieren
 
 **E.** Verwenden der Konfigurationseigenschaft pdfLinkText
 
