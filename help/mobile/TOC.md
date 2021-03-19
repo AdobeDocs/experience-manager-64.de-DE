@@ -5,10 +5,13 @@ audience: end-user
 user-guide-title: AEM 6.4-Mobilbenutzeranleitung
 breadcrumb-title: Mobilanleitung
 user-guide-description: Erstellen und verwalten Sie Inhalte für Mobile Apps.
+feature-set: Experience Manager Sites
+feature: Mobilgerät
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '334'
 ht-degree: 29%
 
 ---
