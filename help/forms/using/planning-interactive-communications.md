@@ -7,10 +7,11 @@ uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 88%
 
 ---
@@ -52,7 +53,7 @@ Die Anatomie enthält Daten mit den folgenden Eingabemodi:
 * Bedingte Daten
 * Bilder
 
-In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank enthält Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](create-form-data-model-tutorial.md).
+In jedem Abschnitt steht der fettgedruckte Text für statischen Text. Die Datenbank umfasst Tabellen für Kunden, Rechnungen und Aufrufe. Ein Formulardatenmodell kann Daten aus jeder dieser Tabellen empfangen. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](create-form-data-model-tutorial.md).
 
 Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der interaktiven Kommunikation:
 
