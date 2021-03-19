@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
+feature: Korrespondenzverwaltung
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '657'
 ht-degree: 69%
 
 ---
@@ -26,7 +27,7 @@ Correspondence Management umfasst einen integrierten Standard-Support für 210 S
 Sie können beispielsweise die folgenden Sonderzeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, □ und ^
+* Mathematische Symbole wie z. B. □, , ^ und ^
 * Interpunktionssymbole ‟ und&quot;
 
 Sie können Sonderzeichen in Briefe einfügen:
