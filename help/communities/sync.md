@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2508'
 ht-degree: 13%
 
 ---
@@ -96,7 +97,7 @@ Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die V
 
 1. Stellen Sie sicher, dass der neueste Code installiert wurde:
 
-   * [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM-Plattformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
    * [AEM Communities-Updates](deploy-communities.md#latestfeaturepack)
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung auf AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, damit die Verteilung von Sling-Inhalten nicht fehlschlägt.
