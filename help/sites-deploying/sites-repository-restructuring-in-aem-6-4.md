@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1598'
 ht-degree: 78%
 
 ---
