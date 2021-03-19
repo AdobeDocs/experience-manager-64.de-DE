@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '714'
 ht-degree: 91%
 
 ---
@@ -102,7 +103,7 @@ Sie können beliebig viele Assettypen auswählen. Bei der Suche werden alle ausg
    <td>Durchsuchen Sie alle adaptiven Formulare.</td> 
   </tr>
   <tr>
-   <td>Resource</td> 
+   <td>Ressource</td> 
    <td>Durchsuchen Sie alle Ressourcen.<br /> </td> 
   </tr>
  </tbody>
