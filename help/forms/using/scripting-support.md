@@ -2,17 +2,18 @@
 title: Skriptunterstützung für HTML5-Formulare
 seo-title: Skriptunterstützung für HTML5-Formulare
 description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5-Formularen unterstützt werden.
-seo-description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML-Formularen unterstützt werden.
+seo-description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5-Formularen unterstützt werden.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3913'
 ht-degree: 98%
 
 ---
@@ -493,7 +494,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 |---|---|
 | Ziel | Die URL, an die die Daten gesendet werden. Bei Auslassung dieses Attributs ruft die XFA-Verarbeitungsanwendung die URI mithilfe einer produktspezifischen Technik ab, z. B. durch Zugreifen auf produktspezifische Informationen im config-Objekt. |
 
-## tree  {#tree}
+## tree {#tree}
 
 <table> 
  <tbody> 
