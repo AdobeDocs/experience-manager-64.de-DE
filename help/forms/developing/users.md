@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6244'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ Unter [Hinzufügen von Benutzern](users.md#adding-users) erfahren Sie, wie Sie B
 
 Unter [Löschen von Benutzern](users.md#deleting-users) erfahren Sie, wie Sie Benutzer programmatisch löschen. In diesem Abschnitt wird die Directory Manager-Dienst-API verwendet.
 
-Unter [Verwalten von Benutzern und Gruppen](users.md#managing-users-and-groups) verstehen Sie den Unterschied zwischen einem lokalen Benutzer und einem Ordnerbenutzer und finden Beispiele dafür, wie Sie mit den Java- und Webdienst-APIs Benutzer und Gruppen programmgesteuert verwalten. In diesem Abschnitt wird die Directory Manager-Dienst-API verwendet.
+Unter [Verwalten von Benutzern und Gruppen](users.md#managing-users-and-groups) verstehen Sie den Unterschied zwischen einem lokalen Benutzer und einem Ordnerbenutzer und sehen Beispiele für die Verwendung der Java- und Webdienst-APIs zum programmgesteuerten Verwalten von Benutzern und Gruppen. In diesem Abschnitt wird die Directory Manager-Dienst-API verwendet.
 
 Unter [Verwalten von Rollen und Berechtigungen](users.md#managing-roles-and-permissions) erfahren Sie mehr über die Systemrollen und -berechtigungen und was Sie programmgesteuert tun können, um sie zu erweitern. Außerdem finden Sie Beispiele für die Verwendung der Java- und Webdienst-APIs zum programmgesteuerten Verwalten von Rollen und Berechtigungen. In diesem Abschnitt werden sowohl die Directory Manager-Dienst-API als auch die Authorization Manager-Dienst-API verwendet.
 
@@ -604,7 +605,7 @@ In diesem Thema wird beschrieben, wie Sie mit der Autorisierungs-Manager-Dienst-
 
 Unter AEM Forms ist eine *role* eine Gruppe von Berechtigungen für den Zugriff auf eine oder mehrere Ressourcen auf Systemebene. Diese Berechtigungen werden über User Management erstellt und von den Dienstkomponenten erzwungen. Beispielsweise könnte ein Administrator einer Benutzergruppe die Rolle &quot;Richtliniensatzautor&quot;zuweisen. Rights Management würde es dann den Benutzern dieser Gruppe mit dieser Rolle ermöglichen, Richtliniensätze über Administration Console zu erstellen.
 
-Es gibt zwei Arten von Rollen: *Standardrollen* und *benutzerdefinierte Rollen*. Standardrollen (*Systemrollen)* befinden sich bereits in AEM Forms. Es wird davon ausgegangen, dass Standardrollen vom Administrator möglicherweise nicht gelöscht oder geändert werden und daher unveränderlich sind. Benutzerdefinierte Rollen, die vom Administrator erstellt wurden und die dann geändert oder gelöscht werden können, sind somit veränderlich.
+Es gibt zwei Arten von Rollen: *Standardrollen* und *benutzerdefinierte Rollen*. Standardrollen (*Systemrollen)* befinden sich bereits in AEM Forms. Es wird davon ausgegangen, dass Standardrollen vom Administrator möglicherweise nicht gelöscht oder geändert werden und daher unveränderlich sind. Benutzerdefinierte Rollen, die vom Administrator erstellt wurden und die dann geändert oder gelöscht werden können, sind somit veränderbar.
 
 Rollen erleichtern die Verwaltung von Berechtigungen. Wenn einem Prinzipal eine Rolle zugewiesen wird, wird diesem Prinzipal automatisch eine Reihe von Berechtigungen zugewiesen, und alle spezifischen Entscheidungen zum Zugriff für den Prinzipal basieren auf dieser Gesamtzahl zugewiesener Berechtigungen.
 
@@ -870,7 +871,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Eine Clientanwendung fordert von AEM Forms einen Synchronisierungsvorgang an.</p></td> 
   </tr> 
   <tr> 
