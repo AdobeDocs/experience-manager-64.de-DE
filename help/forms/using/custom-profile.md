@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 65%
 
 ---
@@ -41,7 +42,7 @@ Das config.jsp-Modul enthält verschiedene Konfigurationen wie Protokollierung, 
 
 Die toolbar.jsp enthält Code zum Erstellen einer farbigen Symbolleiste. Um die Symbolleiste zu entfernen, müssen Sie toolbar.jsp aus der html.jsp entfernen.
 
-## formBody.jsp  {#formbody-jsp}
+## formBody.jsp {#formbody-jsp}
 
 Das Modul formBody.jsp dient zur HTML-Darstellung des XFA-Formulars.
 
