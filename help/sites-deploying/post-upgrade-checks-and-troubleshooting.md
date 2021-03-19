@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1888'
 ht-degree: 89%
 
 ---
@@ -78,7 +79,7 @@ Navigieren Sie zur OSGi-Konsole `/system/console/bundles` und prüfen Sie, ob ke
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.8.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentteer.
+Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.8.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentter.
 
 ### Überprüfen des Ordners „PreUpgradeBackup“{#inspect-preupgradebackup-folder}
 
