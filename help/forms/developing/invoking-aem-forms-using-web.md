@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '10008'
+source-wordcount: '10009'
 ht-degree: 6%
 
 ---
@@ -564,7 +565,7 @@ Sie können die Java-Bibliotheksdateien von Axis wie folgt generieren:
    * xbean.jar
    * xercesImpl.jar
 
-   Diese JAR-Dateien befinden sich im Ordner *[install]*/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty.
+   Diese JAR-Dateien befinden sich im Ordner *[install directory]*/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty.
 
 **Siehe auch**
 
@@ -1113,11 +1114,11 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Berücksichtigen Sie den `MyAp
 
    * Ein Zeichenfolgenwert, der einen GUID-Wert angibt. Sie können einen GUID-Wert abrufen, indem Sie die `System.Guid.NewGuid.ToString`-Methode aufrufen.
    * Ein Zeichenfolgenwert, der den Inhaltstyp angibt. Da für diesen Vorgang ein PDF-Dokument erforderlich ist, geben Sie `application/pdf` an.
-   * Ein `TypeFormat`-Auflistung-Wert. Geben Sie Folgendes an `TypeFormat.MediaType`.
+   * Ein `TypeFormat`-Auflistung-Wert. Geben Sie `TypeFormat.MediaType`.
    * Ein Zeichenfolgenwert, der den Speicherort des PDF-Dokuments angibt, das an den AEM Forms-Prozess übergeben wird.
 
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden.
-1. hinzufügen Sie die DIME-Anlage zum `BLOB`-Objekt, indem Sie den `Microsoft.Web.Services2.Dime.DimeAttachment`-Datenelementwert des `Id`-Objekts dem `BLOB`-Datenmember des Objekts `attachmentID` zuweisen.
+1. hinzufügen Sie die DIME-Anlage zum `BLOB`-Objekt, indem Sie dem `BLOB`-Datenelementwert des `Microsoft.Web.Services2.Dime.DimeAttachment`-Objekts den `attachmentID`-Datenmember-Wert des `Id`-Objekts zuweisen.
 1. Rufen Sie die `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add`-Methode auf und übergeben Sie das `Microsoft.Web.Services2.Dime.DimeAttachment`-Objekt.
 1. Rufen Sie den Prozess `MyApplication/EncryptDocument` auf, indem Sie die `EncryptDocumentServiceWse`-Methode des Objekts `invoke` aufrufen und das `BLOB`-Objekt übergeben, das die DIME-Anlage enthält. Dieser Vorgang gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Rufen Sie den Wert für den Anlagenbezeichner ab, indem Sie den Wert des `BLOB`-Datenelements des zurückgegebenen `attachmentID`-Objekts abrufen.
