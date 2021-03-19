@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
+feature: Formularportal
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1624'
 ht-degree: 73%
 
 ---
@@ -226,7 +227,7 @@ Um einen Link zu einem Formular an einer beliebigen Stelle auf der Seite anzuzei
 
 Um Formulare mit dem Status „Entwurf“ sowie bereits gesendete Formulare aufzulisten, verwenden Sie die Komponente **[!UICONTROL Drafts and Submissions]**. Weitere Informationen finden Sie unter [Anpassen der Komponente „Drafts and Submissions](/help/forms/using/draft-submission-component.md).
 
-## Eignung für Mobilgeräte  {#mobile-device-friendliness}
+## Eignung für Mobilgeräte {#mobile-device-friendliness}
 
 Die Forms-Portal-Komponente „Search &amp; Lister“ ist für Mobilgeräte geeignet und passt sich entsprechend an. Alle drei Standardeinstellungen: Raster-, Karten-, Bedienfeld-Layouts entsprechend dem Gerät, auf dem die Site geöffnet wird, vorausgesetzt, dass sich die Webseite auch anpasst. Die simple Tatsache besteht darin, dass „Search &amp; Lister“ nur eine Komponente ist und nicht den Seitenstil steuert.
 
