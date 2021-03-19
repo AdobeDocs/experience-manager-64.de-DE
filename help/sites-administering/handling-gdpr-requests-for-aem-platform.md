@@ -1,15 +1,15 @@
 ---
 title: Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation
 seo-title: Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation
-description: 'null'
+description: Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation
 seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '443'
 ht-degree: 57%
 
 ---
@@ -41,7 +41,7 @@ Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das User
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### -HTTP-API {#http-api}
+### HTTP-API {#http-api}
 
 Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerdaten automatisiert werden kann. Es stehen verschiedene Arten von APIs zur Verfügung:
 
@@ -51,7 +51,7 @@ Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerda
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
 ```
 
-**Sling API**
+**Sling-API**
 
 *Ermitteln der Benutzerstartseite:*
 
@@ -108,7 +108,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### -HTTP-API {#http-api-1}
+### HTTP-API {#http-api-1}
 
 Die folgenden Verfahren verwenden das `curl` Befehlszeilenwerkzeug, um zu veranschaulichen, wie Benutzer mit der **[!UICONTROL Aufnahme]** deaktiviert und die entsprechenden Profile am Standardspeicherort gelöscht werden können `userId`.
 
