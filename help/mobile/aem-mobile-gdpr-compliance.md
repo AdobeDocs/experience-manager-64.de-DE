@@ -1,15 +1,15 @@
 ---
 title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
 seo-title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
-description: 'null'
+description: '"AEM Mobile – Einhaltung der Datenschutz-Grundverordnung"'
 seo-description: 'null'
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '697'
 ht-degree: 89%
 
 ---
