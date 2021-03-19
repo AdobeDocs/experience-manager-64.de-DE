@@ -7,10 +7,11 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1055'
 ht-degree: 60%
 
 ---
@@ -127,7 +128,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Um Daten aus der Tabelle `EdcAuditEntity` zu exportieren, verwenden Sie die API [EventManager.exportEvents](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html), die [EventSearchFilter](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als Parameter zum Exportieren von Prüfdaten auf Basis von `principalId`, `policyId` oder `licenseId` verwendet.
+>Um Daten aus der Tabelle `EdcAuditEntity` zu exportieren, verwenden Sie die API [EventManager.exportEvents](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html), die [EventSearchFilter](https://helpx.adobe.com/de/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als Parameter zum Exportieren von Prüfdaten basierend auf `principalId`, `policyId` oder `licenseId` verwendet.
 
 Um vollständige Daten über einen Benutzer im System zu erhalten, müssen Sie auf Daten aus der Benutzerverwaltungsdatenbank zugreifen und diese exportieren. Weitere Informationen finden Sie unter [Forms-Benutzerverwaltung: Umgang mit Benutzerdaten](/help/forms/using/user-management-handling-user-data.md).
 
@@ -162,7 +163,7 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
 
    >[!NOTE]
    >
-   >Sie müssen den vollständigen Block innerhalb des `Principal`-Tags für eine Prinzipal-ID entfernen. Andernfalls kann die Richtlinien-XML beschädigt oder unbrauchbar werden.
+   >Sie müssen den vollständigen Block im `Principal`-Tag für eine Haupt-ID entfernen, sonst wird die Richtlinien-XML beschädigt oder unbrauchbar.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
