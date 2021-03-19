@@ -1,7 +1,7 @@
 ---
 title: Testen von Kernkomponenten in We.Retail
 seo-title: Testen von Kernkomponenten in We.Retail
-description: 'null'
+description: Testen von Kernkomponenten in We.Retail
 seo-description: 'null'
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 82%
+source-wordcount: '544'
+ht-degree: 83%
 
 ---
 
@@ -88,6 +88,6 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
+Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
 
 Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Ausführliche Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder auf der Developer Dokument-Seite [Templates - Editable](/help/sites-developing/page-templates-editable.md).
