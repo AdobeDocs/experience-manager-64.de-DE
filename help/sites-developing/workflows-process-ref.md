@@ -1,7 +1,7 @@
 ---
 title: Prozessreferenz für Workflows
 seo-title: Prozessreferenz für Workflows
-description: 'null'
+description: Prozessreferenz für Workflows
 seo-description: 'null'
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
@@ -10,15 +10,15 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
-source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1143'
 ht-degree: 84%
 
 ---
 
 
-# Referenz für Workflow-Prozesse{#workflow-process-reference}
+# Prozessreferenz für Workflows{#workflow-process-reference}
 
 AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modellen. Darüber hinaus können auch benutzerdefinierte Prozessschritte für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (vergleiche [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
 
