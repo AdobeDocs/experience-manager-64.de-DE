@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 8a8e38bc9f34d6a81aa91ba83cf35caa4b03ee3f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3439'
+source-wordcount: '3440'
 ht-degree: 72%
 
 ---
@@ -145,7 +146,7 @@ Die folgenden Konfigurationsoptionen sind verfügbar:
 
 AEM kann so konfiguriert werden, dass Daten in Amazon Simple Storage Service (S3) gespeichert werden. Es verwendet die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` für die Konfiguration.
 
-Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.8.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.8.0.zip). Außerdem müssen Sie das neueste AEM Service Pack herunterladen und installieren, wie auf der Seite [AEM 6.4 Service Pack Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/feature-packs-release-notes.html) aufgeführt.
+Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.8.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.8.0.zip). Außerdem müssen Sie das neueste AEM Service Pack herunterladen und installieren, wie auf der Seite [AEM 6.4 Service Pack Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=de) aufgeführt.
 
 >[!NOTE]
 >
@@ -413,7 +414,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
-* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1. 
+* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1.
 * maxErrorRetry=&quot;&quot;: Anzahl der weitere Zustellversuche pro Anforderung. Der Standardwert ist 3. 
 * socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall in Millisekunden, das für die Anforderung verwendet wird. Der Standardwert ist 5 Minuten.
 
