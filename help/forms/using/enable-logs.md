@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '648'
 ht-degree: 71%
 
 ---
@@ -49,7 +50,7 @@ Um die clientseitige Protokollierung in HTML5-Formularen zu aktivieren, können 
 * Mithilfe des Anforderungsparameters `log`
 * Mithilfe des CQ Configuration Managers
 
-### Aktivieren der Protokollierung mithilfe des Anforderungsparameters  {#enabling-logging-using-request-parameter}
+### Aktivieren der Protokollierung mithilfe des Anforderungsparameters {#enabling-logging-using-request-parameter}
 
 Mit dieser Methode können Sie Protokolle für eine bestimmte Anforderung generieren. Der Name des Anforderungsparameters ist **log**. Die Protokoll-URL lautet wie folgt:
 
@@ -90,10 +91,10 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr> 
   <tr> 
    <td>0</td> 
-   <td>OFF<br type="_moz" /> </td> 
+   <td>AUS<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>FATAL<br type="_moz" /> </td> 
   </tr> 
   <tr> 
