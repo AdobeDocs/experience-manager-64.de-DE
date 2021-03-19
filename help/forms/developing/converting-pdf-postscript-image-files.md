@@ -1,19 +1,20 @@
 ---
 title: Konvertieren von PDF-Dateien in PostScript- und Bilddateien
 seo-title: Konvertieren von PDF-Dateien in PostScript- und Bilddateien
-description: Verwenden Sie den Convert PDF-Dienst, um PDF-Dokumente mithilfe der Java API und der Web Service API in PostScript und in eine Reihe von Bildformaten (JPEG, JPEG 2000, PNG und TIFF) zu konvertieren.
-seo-description: Verwenden Sie den Convert PDF-Dienst, um PDF-Dokumente mithilfe der Java API und der Web Service API in PostScript und in eine Reihe von Bildformaten (JPEG, JPEG 2000, PNG und TIFF) zu konvertieren.
+description: Verwenden Sie den Convert PDF-Dienst, um PDF-Dokumente mithilfe der Java API und der Web Service API in PostScript und eine Reihe von Bildformaten (JPEG, JPEG 2000, PNG und TIFF) zu konvertieren.
+seo-description: Verwenden Sie den Convert PDF-Dienst, um PDF-Dokumente mithilfe der Java API und der Web Service API in PostScript und eine Reihe von Bildformaten (JPEG, JPEG 2000, PNG und TIFF) zu konvertieren.
 uuid: 07da0391-7180-4197-aaa6-ae753d753b84
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2832'
-ht-degree: 5%
+source-wordcount: '2833'
+ht-degree: 6%
 
 ---
 
