@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1710'
 ht-degree: 62%
 
 ---
@@ -364,7 +365,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 
 **Aktion:** Passen Sie die  `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
-## Asset-Admin-Suchleiste {#assets-admin-search-rail}
+## Asset-Admin-Suchschiene {#assets-admin-search-rail}
 
 Die folgenden Knoten verweisen auf die Namen in `/conf/global/settings/dam/search/facets/assets/items`
 
