@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2227'
 ht-degree: 79%
 
 ---
@@ -30,7 +31,7 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 
 ## Überblick {#overview}
 
-1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Aktualisierungsplanung und detailliert auf [dieser Seite](/help/sites-deploying/pattern-detector.md) beschrieben, um einen Musterdetektorbericht zu erhalten, der weitere Informationen über Bereiche enthält, in denen zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM Probleme behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.4-kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.4-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.4-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md).
+1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Aktualisierungsplanung und detailliert auf [dieser Seite](/help/sites-deploying/pattern-detector.md) beschrieben, um einen Musterdetektorbericht zu erhalten, der weitere Informationen über Bereiche enthält, in denen zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM Probleme behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.4-kompatibel ist, können Sie dennoch eine neue Entwicklung zur Verwendung der 6.4-Funktionalität durchführen, sie ist jedoch nicht nur zur Aufrechterhaltung der Kompatibilität erforderlich. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.4-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md).
 
 1. **Entwicklung der Codebasis für 6.4**  - Erstellen Sie eine dedizierte Verzweigung oder ein Repository für die Codebasis für die Zielgruppe. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
 1. **Kompilieren Sie mit 6.4 Uber-JARs**  - Aktualisieren Sie Code-Basis-POMs auf 6.4 uber-JARs und kompilieren Sie Code dagegen.
