@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.4 - Versionshinweise
 breadcrumb-title: Versionshinweise
 user-guide-description: Erfahren Sie mehr über die neuesten neuen Funktionen in AEM 6.4 in den Versionshinweisen.
+feature-set: Experience Manager
+feature: Versionshinweise
+role: Leiter, Architekt, Entwickler, Datenarchitektin, Dateningenieur, Administrator, Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 43%
+source-wordcount: '103'
+ht-degree: 45%
 
 ---
 
@@ -19,7 +22,7 @@ ht-degree: 43%
 + [Übersicht über AEM 6.4](home.md)
 + [Allgemeine Versionshinweise](release-notes.md)
 + [Service Pack  – Versionshinweise](sp-release-notes.md)
-+ [Versionshinweise zur kumulativen Fehlerbehebung](cfp-release-notes.md)
++ [Versionshinweise zum Cumulative Fix Pack](cfp-release-notes.md)
 + [Versionshinweise zu AEM Sites](sites.md)
 + [Versionshinweise zu AEM Assets](assets.md)
 + [Versionshinweise zu AEM Forms](forms.md)
