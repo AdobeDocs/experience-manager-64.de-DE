@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2840'
+source-wordcount: '2841'
 ht-degree: 1%
 
 ---
@@ -129,7 +130,7 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
    >Gruppen können jederzeit hinzugefügt oder entfernt werden. Die Mitgliedschaft bestehender Benutzer wird jedoch nicht beeinträchtigt. Die automatische Mitgliedschaft gilt nur für neue Benutzer, die nach dieser Feldaktualisierung erstellt werden. Wählen Sie für Sites, bei denen anonyme Benutzer deaktiviert sind, Benutzer zu der entsprechenden Community-Mitglieder-Gruppe für diese geschlossene Community-Site hinzuzufügen.
 
    * Wählen Sie **[!UICONTROL SAVE]**.
-   * **[!UICONTROL Veröffentlichung]**.
+   * **[!UICONTROL Veröffentlichen]**.
 
 
 
@@ -336,7 +337,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 Nachdem ein Cloud-Dienst konfiguriert wurde, kann er für die entsprechende Social-Anmeldeeinstellung für eine Community-Site aktiviert werden. Verwenden Sie dazu das Unterfeld [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Einstellungen während der Community-Site [Erstellung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [Verwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
-1. Wählen Sie den Kontext Ihrer Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
+1. Wählen Sie den Kontext für die Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
 
 1. Legen Sie auf der Registerkarte Allgemein die Cloud-Konfigurationen fest.
 
@@ -463,7 +464,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindex]**: true
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL reindexCount]**: 3
 
 1. Unter Knoten /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
