@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: AEM 6.4 Communities-Benutzeranleitung
 breadcrumb-title: Communities-Anleitung
 user-guide-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.
+feature-set: Experience Manager
+feature: Communities
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 29%
+source-wordcount: '509'
+ht-degree: 30%
 
 ---
 
@@ -47,10 +50,10 @@ ht-degree: 29%
    + [Moderieren von Community-Inhalten](moderate-ugc.md)
    + [Konfigurieren der E-Mail](email.md)
    + [Communities-Benachrichtigungen](notifications.md)
-   + [Communities Abonnements](subscriptions.md)
+   + [Communities-Abonnements](subscriptions.md)
    + [Communities - Bewertung und Abzeichen](implementing-scoring.md)
    + [Verwalten von Benutzern und Benutzergruppen](users.md)
-   + [Community Groups-Konsole](groups.md)
+   + [Konsole für Community-Gruppen](groups.md)
    + [Social-Anmeldung bei Facebook und Twitter](social-login.md)
    + [SRP - Community Content Datenspeicherung](working-with-srp.md)
    + [Communities-Sites-Konsole](sites-console.md)
@@ -85,7 +88,7 @@ ht-degree: 29%
    + [Social Component Framework](scf.md)
    + [Handbuch der Community-Komponenten](components-guide.md)
    + [Komponenten, Funktionen und Funktionen](essentials.md)
-   + [Tutorials](tutorials.md)
+   + Tutorials zu [](tutorials.md)
    + [Fehlerbehebung](troubleshooting.md)
    + [Kodierungsrichtlinien ](code-guide.md)
    + [Serverseitige Anpassung](server-customize.md)
