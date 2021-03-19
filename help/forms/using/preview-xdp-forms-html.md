@@ -7,10 +7,11 @@ uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 82%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 82%
 
 Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Wiedergabe eines Formulars, sondern auch eine HTML5-Wiedergabe davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular anzuzeigen, wie es im Browser angezeigt werden wird.
 
-## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer  {#html-preview-of-forms-in-forms-designer}
+## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer {#html-preview-of-forms-in-forms-designer}
 
 Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivieren, müssen Sie folgende Konfigurationen durchführen:
 
@@ -116,4 +117,4 @@ Durch Testen Ihres Formulars mit Hilfe von Musterdaten können Sie sicherstellen
 
 In AEM Forms können Sie die Formulare und Dokumente in einem Repository in der Vorschau anzeigen. Mithilfe der Vorschau können Sie genau sehen, wie die Formulare aussehen und wie sie von Endbenutzern verwendet werden.
 
-[**Support kontaktieren**](https://www.adobe.com/de/account/sign-in.supportportal.html)
+[**Support kontaktieren**](https://www.adobe.com/account/sign-in.supportportal.html)
