@@ -7,10 +7,11 @@ uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1547'
 ht-degree: 78%
 
 ---
@@ -100,7 +101,7 @@ Bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** wird nach erfolgreic
 >[!NOTE]
 Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn sie in verschiedene Fenster platziert werden, um in eine E-Mail Formulardaten einzubinden.
 
-## PDF mittels E-Mail senden  {#send-pdf-via-email}
+## PDF mittels E-Mail senden {#send-pdf-via-email}
 
 Bei der Übermittlungsaktion **[!UICONTROL PDF mittels E-Mail senden]** wird bei erfolgreicher Übermittlung des Formulars an einen oder mehrere Empfänger eine mit einer PDF-Datei gesendet, die Formulardaten enthält.
 
