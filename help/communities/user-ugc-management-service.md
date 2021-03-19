@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 77cca35f74db2ced556b71c3192058b7c352ab4d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '608'
 ht-degree: 38%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 38%
 >
 >GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
 
-AEM Communities stellt bereits verfügbare APIs zur Verwaltung von Profilen und Massenverwaltung benutzergenerierter Inhalte (UGC) bereit. Nach der Aktivierung ermöglicht der Dienst **UserUgcManagement** den privilegierten Benutzern (Community-Administratoren und -Moderatoren), Benutzerkonten zu deaktivieren und benutzerspezifische Profil für Massenlöschen oder Massenexport-UGC für bestimmte Benutzer zu verwenden. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzvorschriften der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
+AEM Communities stellt bereits verfügbare APIs zur Verwaltung von Profilen und Massenverwaltung benutzergenerierter Inhalte (UGC) bereit. Nach der Aktivierung ermöglicht der Dienst **UserUgcManagement** den privilegierten Benutzern (Community-Administratoren und -Moderatoren), Benutzerkonten zu deaktivieren und benutzerspezifische Profil für Massenlöschen oder Massenexport-UGC für bestimmte Benutzer zu verwenden. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzbestimmungen der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
 
 Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
@@ -40,7 +41,7 @@ Alternativ dazu können Sie auch eine grafische Benutzeroberfläche erstellen, �
 
 Mit diesen APIs können die folgenden Funktionen ausgeführt werden:
 
-## Benutzergenerierte Inhalte abrufen  {#retrieve-the-ugc-of-a-user}
+## Benutzergenerierte Inhalte abrufen {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` unterstützt den Export des gesamten UGC eines Benutzers aus dem System.
 
