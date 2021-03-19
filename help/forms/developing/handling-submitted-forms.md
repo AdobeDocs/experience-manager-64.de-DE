@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2922'
 ht-degree: 2%
 
 ---
@@ -88,7 +89,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Eine Webseite enthält einen Link, der auf ein Java-Servlet zugreift, das den Forms-Dienst aufruft.</p></td>
   </tr>
   <tr>
@@ -257,7 +258,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
 [Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als XML mit der Java-API gesendet werden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Umgang mit HTML-Formularen, die als XML mit der Java-API gesendet werden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
 [Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als PDF mit der Java-API gesendet wurden](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
