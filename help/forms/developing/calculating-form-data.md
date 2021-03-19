@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1888'
 ht-degree: 2%
 
 ---
@@ -25,7 +26,7 @@ Der Forms-Dienst kann die Werte berechnen, die ein Benutzer in ein Formular eing
 
 Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripten verwenden, um eine bessere Benutzerfreundlichkeit zu gewährleisten. Berechnungen und Skripten können den meisten Formularfeldern und -objekten hinzugefügt werden. Sie müssen ein Formularentwurfsskript erstellen, um Berechnungsvorgänge für Daten durchzuführen, die ein Benutzer in ein interaktives Formular eingibt.
 
-Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche Berechnen, um die Ergebnisse Ansicht. Der folgende Vorgang beschreibt eine Beispielanwendung, mit der ein Benutzer Daten berechnen kann:
+Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche &quot;Berechnen&quot;, um die Ergebnisse Ansicht. Der folgende Vorgang beschreibt eine Beispielanwendung, mit der ein Benutzer Daten berechnen kann:
 
 * Der Benutzer greift auf eine HTML-Seite mit dem Namen StartLoan.html zu, die als Beginn der Webanwendung fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm` auf.
 * Das Servlet `GetLoanForm` rendert ein Darlehensformular. Dieses Formular enthält ein Skript, interaktive Felder, eine Berechnungsschaltfläche und eine Senden-Schaltfläche.
