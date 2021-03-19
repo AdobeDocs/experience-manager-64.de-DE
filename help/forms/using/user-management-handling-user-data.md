@@ -7,10 +7,11 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 79%
 
 ---
@@ -87,7 +88,7 @@ Benutzerverwaltung speichert Benutzerdaten in den folgenden Datenbanktabellen:
  </tbody> 
 </table>
 
-### AEM-Repository {#aem-repository}
+### AEM-Repository  {#aem-repository}
 
 Benutzerverwaltungsdaten für Benutzer, die mindestens einmal unter `https://[*server*]:[*host*]/lc` auf die Forms-Anwendungen zugegriffen haben, werden ebenfalls im AEM Repository gespeichert.
 
@@ -176,7 +177,7 @@ Führen Sie folgende Schritte aus, um Benutzerverwaltungsdaten für eine Prinzip
 
 1. Starten Sie den AEM Forms-Server.
 
-### AEM-Repository {#aem-repository-1}
+### AEM-Repository  {#aem-repository-1}
 
 Forms JEE-Benutzer haben ihre Daten im AEM-Repository, wenn sie mindestens eine der AEM Forms-Author-Instanzen aufgerufen haben. Sie können auf ihre Benutzerdaten zugreifen und diese aus dem AEM-Repository löschen.
 
