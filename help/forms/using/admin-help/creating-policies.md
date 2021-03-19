@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
+feature: Dokumentensicherheit
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4755'
+source-wordcount: '4757'
 ht-degree: 85%
 
 ---
@@ -206,7 +207,7 @@ Der Bereich „Allgemeine Einstellungen“ enthält folgende Einstellungen:
 
 **Gültigkeitsdauer:** Der Zeitraum, in dem autorisierte Empfänger auf das richtliniengeschützte Dokument zugreifen können. Sie können aus den folgenden Optionen für die Gültigkeitsdauer auswählen:
 
-**Dokument ist nach:** Das Dokument ist für die angegebene Anzahl von Tagen ab dem Zeitpunkt des Dokuments verfügbar.
+**Dokument ist nicht gültig nach:** Das Dokument ist für die angegebene Anzahl von Tagen ab dem Zeitpunkt, zu dem das Dokument gesichert wurde, verfügbar.
 
 **Dokument ist nach diesem Datum nicht mehr gültig:** Das Dokument ist ab dem Datum gültig, an dem die Richtlinie auf das Dokument angewendet wird, bis zum angegebenen Enddatum.
 
