@@ -7,13 +7,16 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.4, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
+feature-set: Experience Manager Forms
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e7603d481720b368c6976674205bb523ac0df3d0
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3732'
 ht-degree: 75%
 
 ---
+
 
 # Adobe Experience Manager 6.4, Forms-Anleitung {#forms}
 
@@ -66,9 +69,9 @@ ht-degree: 75%
       + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_64_de)
       + [Installieren und Konfigurieren des AEM Forms Dokument Security-Servers](using/installing-and-configuring-the-document-security-server.md)
       + [Vorbereiten der Installation von AEM Forms (Einzelserver)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_de)
-      + [Installieren und Bereitstellen von Adobe Experience Manager Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_de)
-      + [Installieren und Bereitstellen von AEM Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_de)
-      + [Installieren und Bereitstellen von Adobe Experience Manager Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_de)
+      + [Installieren und Bereitstellen von Adobe Experience Manager Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
+      + [Installieren und Bereitstellen von AEM Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+      + [Installieren und Bereitstellen von Adobe Experience Manager Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
       + [AEM Forms Workbench installieren](http://help.adobe.com/de/AEMForms/6.1/InstallWorkbench/index.html)
       + [Installieren und Konfigurieren von Designer](using/installing-configuring-designer.md)
       + [Vorbereiten der Installation von AEM Forms (Servercluster)](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_de)
@@ -119,7 +122,7 @@ ht-degree: 75%
       + [Formularportal](using/forms-portal-handling-user-data.md)
       + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
       + [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-      + [Document Security](/help/forms/using/document-security-handling-user-data.md)
+      + [Dokumentensicherheit](/help/forms/using/document-security-handling-user-data.md)
    + Härtung der AEM Forms-Umgebung {#hardening-aem-forms-environment}
       + [Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen](using/hardening-securing-aem-forms-environment.md)
       + [Allgemeine Sicherheitsaspekte für AEM Forms auf JEE](using/general-security-considerations.md)
@@ -145,7 +148,7 @@ ht-degree: 75%
    + [Zugreifbare adaptive Formulare erstellen](using/creating-accessible-adaptive-forms.md)
    + [Erstellen von Formularen mit wiederholbaren Abschnitten](using/creating-forms-repeatable-sections.md)
    + [Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM-Sites-Seite ein.](using/embed-adaptive-form-aem-sites.md)
-   + [Anpassungsfähige Formulare in externe Webseiten einbetten](using/embed-adaptive-form-external-web-page.md)
+   + [Anpassungsfähige Formulare in externe Web-Seiten einbetten](using/embed-adaptive-form-external-web-page.md)
    + [Inline-Stile für Komponenten adaptiver Formulare](using/inline-style-adaptive-forms.md)
    + [Einführung in die mehrteilige Formularsequenz](using/introduction-form-sequence.md)
    + [Layout-Möglichkeiten für adaptive Formulare](using/layout-capabilities-adaptive-forms.md)
@@ -352,15 +355,15 @@ ht-degree: 75%
    + [Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“](using/adding-custom-storage-provider-forms.md)
 + Document Services {#use-document-services}
    + [Übersicht über AEM Document Services](using/overview-aem-document-services.md)
-   + [Formularservice](using/forms-service.md)
-   + [Output-Dienst](using/output-service.md)
+   + [Formular-Service](using/forms-service.md)
+   + [Ausgabe-Service](using/output-service.md)
    + [ConvertPDF-Dienst](using/using-convertpdf-service.md)
    + [Barcoded Forms-Dienst](using/using-barcoded-forms-service.md)
    + [Assembler-Dienst verwenden](using/assembler-service.md)
    + [Verwenden von HSM, um Dokumente digital zu signieren oder zertifizieren](using/hsm-certify-esign-docs.md)
    + [AEM Document Services programmgesteuert verwenden](using/aem-document-services-programmatically.md)
    + [Verwenden der SendToPrinter-API](using/using-sendtoprinter-api.md)
-+ Document Security {#use-document-security}
++ Dokumentensicherheit {#use-document-security}
    + [Document Security-Angebote](using/document-security-offerings.md)
    + [AEM zum Durchsuchen von durch Document Security geschützten PDF-Dokumenten aktivieren](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
