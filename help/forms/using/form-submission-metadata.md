@@ -7,11 +7,12 @@ uuid: b33ad1c8-d6c9-421d-8a3a-a29d17acfb18
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 90%
+source-wordcount: '712'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +27,7 @@ Wenn beispielsweise eine Krankenversicherung ein Formular veröffentlicht. In di
 
 Ein weiteres Beispiel eines Formulars, das E-Mail-IDs und Telefonnummern erfasst. Wenn ein Benutzer das Formular anonym besucht und das Formular verlässt, kann der Verfasser das Formular so konfigurieren, dass die E-Mail-ID und Telefonnummer automatisch gespeichert werden. Dieses Formular wird automatisch gespeichert und die Telefonnummer und E-Mail-ID werden im Metadatenknoten des Entwurfs gespeichert. Ein Anwendungsfall dieser Konfiguration ist das Lead-Management-Dashboard.
 
-## Hinzufügen von Formularelementen zu Metadaten  {#adding-form-elements-to-metadata}
+## Hinzufügen von Formularelementen zu Metadaten {#adding-form-elements-to-metadata}
 
 Führen Sie die folgenden Schritte aus, um ein Element zu den Metadaten hinzuzufügen:
 
