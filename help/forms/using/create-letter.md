@@ -7,10 +7,11 @@ uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
+feature: Korrespondenzverwaltung
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4015'
 ht-degree: 80%
 
 ---
@@ -344,7 +345,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 ### Richten Sie die Anlagen ein {#set-up-the-attachments}
 
 1. Wählen Sie **Hinzufügen Asset**.
-1. Tippen Sie im Bildschirm &quot;Asset auswählen&quot;auf die Assets, die mit dem Brief verbunden werden sollen, und tippen Sie auf **Fertig**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber auch Bilder anzuhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/managing-assets-touch-ui.md).
+1. Tippen Sie im Bildschirm &quot;Asset auswählen&quot;auf die Assets, die mit dem Brief verbunden werden sollen, und tippen Sie auf **Fertig**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber Sie können auch Bilder anhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/managing-assets-touch-ui.md).
 1. Um die Reihenfolge der Assets in der Liste zu sperren, sodass der Schadensregulierer die Reihenfolge nicht ändern kann, tippen Sie auf **Reihenfolge sperren**. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
 1. Um die Reihenfolge der Assets zu ändern, ziehen Sie per Drag &amp; Drop ein Asset, indem Sie das Symbol &quot;Neu anordnen&quot;für ein Asset gedrückt halten ( ![dragndrop](assets/dragndrop.png)).
 1. Tippen Sie auf **Bearbeiten** vor einer Anlage und geben Sie eine Anlage als obligatorisch an, wenn Sie nicht möchten, dass der Autor sie löschen kann. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
