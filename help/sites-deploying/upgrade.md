@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 75%
 
 ---
@@ -70,8 +71,8 @@ Mit **AEM 6.4** wird der [Musterdetektor](/help/sites-deploying/pattern-detector
 
 Einzelheiten zu weiteren Änderungen in den neuen AEM-Versionen finden Sie in den vollständigen Versionshinweisen:
 
-* [https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
 * [https://helpx.adobe.com/de/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-4/release-notes.html)
 
 ## Überblick über die Aktualisierung {#upgrade-overview}
@@ -86,7 +87,7 @@ Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beac
 
 In 6.4 wurde der Fokus auf die Abwärtskompatibilität aller neuen Funktionen gelegt. In Fällen, in denen jedoch noch Kompatibilitätsprobleme mit dem Abwärtsmodus auftreten, können Sie die Entwicklung vorübergehend verschieben, um den benutzerdefinierten Code mit 6.4 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 
-In Ihrem 6.4-Entwicklungszyklus schließlich unterstützen Funktionen, die unter Nachhaltige Upgrades eingeführt wurden (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Sie bei der Befolgung bewährter Verfahren, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
+In Ihrem 6.4-Entwicklungszyklus schließlich helfen Ihnen Funktionen, die unter Nachhaltige Upgrades eingeführt wurden (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Best Practices zu befolgen, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
 
 ![6_4_upgrade_overviewflow chart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
 
