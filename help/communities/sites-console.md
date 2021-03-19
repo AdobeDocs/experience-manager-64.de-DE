@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3242'
 ht-degree: 5%
 
 ---
@@ -159,7 +160,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die ko
 >
 >Mehrere Unterbereiche unter &quot;Einstellungen&quot;ermöglichen es einem vertrauenswürdigen Mitglied, UGC zu moderieren, Gruppen zu verwalten oder Kontaktpersonen für die Aktivierung von Ressourcen in der Umgebung &quot;Veröffentlichen&quot;zu sein.
 >
->Die Regel besteht darin, dass auf der Seite der Veröffentlichung [Benutzer und Benutzergruppen](users.md) (Mitglieder und Mitgliedsgruppen) nicht in der Umgebung &quot;Autor&quot;dupliziert werden darf.
+>Die Regel besteht darin, dass auf der Seite der Veröffentlichung [Benutzer und Benutzergruppen](users.md) (Mitglieder und Mitgliedergruppen) nicht in der Umgebung &quot;Autor&quot;dupliziert werden darf.
 >
 >Daher ist es beim Erstellen der Community-Site in der Autorenrolle und beim Zuweisen von vertrauenswürdigen Mitgliedern zu verschiedenen Rollen erforderlich, Mitgliedsdaten aus der Veröffentlichungs-Umgebung abzurufen.
 >
@@ -478,7 +479,7 @@ Das Bedienfeld &quot;EINSTELLUNGEN&quot;ermöglicht den Zugriff auf die meisten 
 * [Tags](#tagging)
 * [Moderation](#moderation)
 * [Mitgliederrollen](#roles)
-* [Analyse](#analytics)
+* [Analytics](#analytics)
 * [Übersetzung](#translation)
 
 ### Miniaturansicht ändern {#modify-thumbnail}
