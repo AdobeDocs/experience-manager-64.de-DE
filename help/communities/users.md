@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2184'
 ht-degree: 1%
 
 ---
@@ -31,7 +32,7 @@ In AEM Communities können sich Benutzer in der Umgebung zum Veröffentlichen se
 
 Benutzer, die in der Veröffentlichungs-Umgebung registriert sind, werden allgemein als *Community-Mitglieder (Mitglieder)* bezeichnet, um sie von *users *in der Authoring-Umgebung zu unterscheiden.
 
-Berechtigungen werden gewährt, indem Mitglieder einer der [Mitglieds-(Benutzer-)Gruppen](#publish-group-roles) zugewiesen werden, die dynamisch erstellt wird, wenn die Community-Site [erstellt](sites-console.md) oder [modifiziert](sites-console.md#modifying-site-properties) aus der Authoring-Umgebung ist. Bei der Arbeit mit der Autorenfunktion sind die Mitglieder über den [Tunneldienst](#tunnel-service) in der Veröffentlichungs-Umgebung sichtbar.
+Berechtigungen werden gewährt, indem Mitglieder einer der [Mitglieds-(Benutzer-)Gruppen](#publish-group-roles) zugewiesen werden, die dynamisch erstellt wird, wenn die Community-Site [erstellt](sites-console.md) oder [modifiziert](sites-console.md#modifying-site-properties) aus der Autorenversion Umgebung ist. Bei der Arbeit mit der Autorenfunktion sind die Mitglieder über den [Tunneldienst](#tunnel-service) in der Veröffentlichungs-Umgebung sichtbar.
 
 Standardmäßig sollten in der Umgebung &quot;Veröffentlichen&quot;erstellte Mitglieder und Mitgliedsgruppen nicht in der Umgebung &quot;Autor&quot;angezeigt werden. Benutzer und Benutzergruppen, die in der Autor-Umgebung erstellt wurden, sollen in ähnlicher Weise in der Autorendatei verbleiben.
 
