@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2216'
 ht-degree: 9%
 
 ---
@@ -91,7 +92,7 @@ Wenn der Forms-Dienst ein Formular wiedergibt, gibt er einen Formulardatenstream
 
 [Wiedergeben von Formularen basierend auf Fragmenten mit der Java-API](#render-forms-based-on-fragments-using-the-java-api)
 
-[Wiedergeben von Formularen basierend auf Fragmenten mithilfe der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
+[Wiedergeben von Formularen basierend auf Fragmenten mit der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
