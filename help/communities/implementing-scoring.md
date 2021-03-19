@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2886'
 ht-degree: 3%
 
 ---
@@ -185,7 +186,7 @@ Scores werden in SRP gespeichert.
 >
 >Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.
 >
->Beispiel für die folgenden Aufgaben:**\
+>Beispiel für die folgenden Schritte:**\
 >/etc/community/scoring/rules/site1/forums-scoring\
 >/etc/community/scoring/rules/site2/forums-scoring
 
@@ -215,7 +216,7 @@ Unter-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:con
   <tr> 
    <th>Eigenschaft</th> 
    <th>Typ</th> 
-   <th> Wert Beschreibung</th> 
+   <th> Wertbeschreibung</th> 
   </tr> 
   <tr> 
    <td><i><code>VERB</code></i></td> 
@@ -354,7 +355,7 @@ Die `scoringRules`Eigenschaft einer Kennzeichnungsregel schränkt einfach ein, w
   <tr> 
    <th>Eigenschaft</th> 
    <th>Typ</th> 
-   <th>Wert Beschreibung</th> 
+   <th>Wertbeschreibung</th> 
   </tr> 
   <tr> 
    <td>Schwellenwerte</td> 
@@ -474,8 +475,8 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Mitglied erstellt ein Ereignis im Kalender |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalendertool |
-| UPDATE | ereignis oder Kommentar des Mitglieds wird bearbeitet |
-| DELETE | ereignis oder Kommentar des Mitglieds wird gelöscht |
+| UPDATE | Ereignis oder Kommentar des Mitglieds wird bearbeitet |
+| DELETE | Ereignis oder Kommentar des Mitglieds wird gelöscht |
 
 **[Kommentare](comments.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
@@ -644,7 +645,7 @@ Stellen Sie dann sicher, dass die Forum- und Kommentarkomponenten die Anzeige vo
 
 Als Nächstes veröffentlichen Sie [die Community-Site erneut.](sites-console.md#publishing-the-site)
 
-Schließlich
+Abschließend,
 
 * Zur Komponente in der Veröffentlichungsinstanz navigieren
 * Melden Sie sich als Community-Mitglied an (z. B. weston.mccall@dodgit.com)
