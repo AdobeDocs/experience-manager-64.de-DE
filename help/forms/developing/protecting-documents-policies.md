@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '15544'
+source-wordcount: '15545'
 ht-degree: 4%
 
 ---
@@ -890,7 +891,7 @@ Um ein richtliniengeschütztes Dokument zu sperren, geben Sie die Lizenzkennung 
 
 >[!NOTE]
 >
->Wenn Sie versuchen, ein bereits gesperrtes Dokument zu sperren, wird eine Ausnahme ausgelöst.
+>Wenn Sie versuchen, ein Dokument zu sperren, das bereits gesperrt ist, wird eine Ausnahme ausgelöst.
 
 **Siehe auch**
 
@@ -1650,7 +1651,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Rights Management Client API-Objekt erstellen**
 
-Bevor Sie einen Rights Management-Dienstvorgang programmgesteuert durchführen können, müssen Sie ein Rights Management-Dienst-Client-Objekt erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Rights Management-Webdienst-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
+Bevor Sie einen Rights Management-Dienstvorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Rights Management-Dienst erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Rights Management-Webdienst-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
 
 **Geben Sie die zu suchenden Ereignis an**
 
