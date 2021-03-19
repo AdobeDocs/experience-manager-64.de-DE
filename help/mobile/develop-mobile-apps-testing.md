@@ -1,7 +1,7 @@
 ---
 title: Testen von mobilen Apps
 seo-title: Testen von mobilen Apps
-description: 'null'
+description: Testen von mobilen Apps
 seo-description: 'null'
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 translation-type: tm+mt
-source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1029'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Bei der Entwicklung einer mobilen App gibt es viele neue Probleme, die speziell 
 * Fehler oder Unterbrechungen: Was passiert, wenn während der Ausführung der App ein eingehender Aufruf oder eine eingehende Benachrichtigung erfolgt? Was passiert, wenn ein Netzwerkausfall vorliegt oder der Netzschalter ausgeschaltet ist?
 * Installation und Updates - Wie wird die Installation durchgeführt? Wie werden Updates herausgegeben?
 * Technisch - Verbraucht Ihre App zu viel Strom von einem Gerät?
-* Lokale Anpassung - Werden alle Bereiche in Ihrer App übersetzt?
+* lokale Anpassung - Werden alle Bereiche in Ihrer App übersetzt?
 * Zertifizierung - Wurde Ihre App zertifiziert? Können Kunden darauf vertrauen, dass alle datenschutzrechtlichen Anforderungen eingehalten werden?
 
 Diese Fragen sollten während Ihres automatisierten und manuellen Tests beantwortet werden.
