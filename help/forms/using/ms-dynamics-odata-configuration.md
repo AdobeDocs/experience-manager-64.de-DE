@@ -7,10 +7,11 @@ uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
+feature: Formulardatenmodell
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1248'
 ht-degree: 62%
 
 ---
@@ -132,7 +133,7 @@ Der **MS Dynamics OData Cloud Service (OData Service)** wird mit der Standardkon
    ![dynamik_authentication_settings](assets/dynamics_authentication_settings.png)
 
 1. Klicken Sie auf **[!UICONTROL Verbindung zu OAuth herstellen]**. Sie werden zur Anmeldungsseite von Microsoft Dynamics umgeleitet.
-1. Melden Sie sich mit Ihren Microsoft Dynamics-Anmeldedaten an und akzeptieren Sie, dass die Konfiguration des Cloud-Dienstes eine Verbindung zum Microsoft Dynamics-Dienst herstellen kann. Es ist eine einmalige Aufgabe, die Verbindung zwischen dem Cloud-Dienst und dem Dienst herzustellen.
+1. Melden Sie sich mit Ihren Microsoft Dynamics-Anmeldedaten an und akzeptieren Sie, dass die Cloud-Dienstkonfiguration eine Verbindung zum Microsoft Dynamics-Dienst herstellen kann. Es ist eine einmalige Aufgabe, die Verbindung zwischen dem Cloud-Dienst und dem Dienst herzustellen.
 
    Sie werden dann auf die Cloud-Dienstkonfigurationsseite weitergeleitet, auf der eine Meldung angezeigt wird, dass die OData-Konfiguration erfolgreich gespeichert wurde.
 
