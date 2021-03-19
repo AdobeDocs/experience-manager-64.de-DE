@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
+feature: Korrespondenzverwaltung
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1717'
 ht-degree: 92%
 
 ---
@@ -33,7 +34,7 @@ Weitere Informationen finden Sie unter:
 * [Correspondence Management – Zusammenfassung](/help/forms/using/cm-overview.md)
 * [Text in interaktiven Kommunikationen](/help/forms/using/texts-interactive-communications.md)
 
-### Beispiel: Verwenden von Regeln, um Inline-Text in der interaktiven Kommunikation Bedingungen festzulegen  {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### Beispiel: Verwenden von Regeln, um Inline-Text in der interaktiven Kommunikation Bedingungen festzulegen {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
 Um einen Satz, einen Absatz oder eine Textzeichenfolge in einer interaktiven Kommunikation mit Bedingungen zu versehen, können Sie im entsprechenden Textdokumentfragment eine Regel erstellen. Im folgenden Beispiel wird eine Regel verwendet, um eine gebührenfreie Nummer nur für die US-Empfänger der interaktiven Kommunikation anzuzeigen.
 
