@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '399'
 ht-degree: 94%
 
 ---
@@ -23,7 +24,7 @@ Sie können Formulare und Assets löschen, um diese Assets aus dem Repository zu
 
 Wenn Sie ein Asset aus der Authoring-Instanz löschen, wird das Asset auch aus der Veröffentlichungsinstanz gelöscht. Der AEM Forms-Server besteht aus der Authoring- und der Veröffentlichungsinstanz. Die Authoring-Instanz dient zum Erstellen und Verwalten von Formular-Assets und Ressourcen. Die Veröffentlichungsinstanz enthält die veröffentlichten Formular-Assets und zugehörigen Ressourcen, die für Endbenutzer verfügbar sind.
 
-## Löschen eines Formulars  {#how-to-delete-a-form}
+## Löschen eines Formulars {#how-to-delete-a-form}
 
 1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche an, indem Sie auf `https://[hostname]:[portport]/aem/forms.html.` zugreifen
 1. Navigieren Sie zum Formular, das Sie löschen möchten, und wählen Sie es aus. Klicken Sie in der Symbolleiste auf ![aem6forms_delete2](assets/aem6forms_delete2.png) löschen und bestätigen Sie den Löschvorgang.
