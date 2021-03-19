@@ -2,10 +2,12 @@
 title: Veröffentlichen von Sammlungen in Brand Portal
 description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und Veröffentlichungen rückgängig machen können.
 contentOwner: VG
+feature: Brand Portal
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '342'
 ht-degree: 63%
 
 ---
