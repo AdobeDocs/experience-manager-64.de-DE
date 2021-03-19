@@ -6,8 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: c3eeb3d4fc4b6ce7548c6385c21c6e4ed7b2f0e6
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 76%
@@ -86,7 +87,7 @@ ht-degree: 76%
    + [Von Assets unterstützte Formate](assets-formats.md)
    + [Suchfacetten](search-facets.md)
    + [Verwalten von Metadaten für Assets](metadata.md)
-   + [XMP-Writeback in Ausgabeformaten](xmp-writeback.md)
+   + [XMP-Writeback in Ausgabedarstellungen](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
    + [Optimierte Smart-Tags](enhanced-smart-tags.md)
