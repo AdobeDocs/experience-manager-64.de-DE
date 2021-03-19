@@ -9,16 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2040'
 ht-degree: 80%
 
 ---
 
 
-# Architektur von HTML5-Formularen {#architecture-of-html-forms}
+# Architektur von HTML5-Formulare {#architecture-of-html-forms}
 
 ## Architektur {#architecture}
 
@@ -109,7 +110,7 @@ HTML5-Formulare führt eine Zwischenspeicherung im Arbeitsspeicher durch und ver
 
 Der Konfigurationsdienst ermöglicht die Einstellung der Konfigurationsparameter und der Cacheeinstellungen für HTML5-Formulare.
 
-Um diese Einstellungen zu aktualisieren, gehen Sie zur Admin Console CQ Felix (verfügbar unter `https://[server]:[port]/system/console/configMgr`), suchen Sie nach der Option Mobile Forms Configuration und wählen Sie sie aus.
+Um diese Einstellungen zu aktualisieren, rufen Sie die Admin Console &quot;CQ Felix&quot;(verfügbar unter `https://[server]:[port]/system/console/configMgr`) auf, suchen Sie die Option &quot;Mobile Forms Configuration&quot;(Mobile Configuration) und wählen Sie sie aus.
 
 Mit dem Konfigurationsdienst können Sie die Cachegröße konfigurieren oder den Cache deaktivieren. Sie können auch mithilfe des Parameters „Debug Options“ das Debugging aktivieren. Weitere Informationen zum Debugging von Formularen finden Sie unter [Debugging von HTML5-Formularen](/help/forms/using/debug.md).
 
