@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2535'
 ht-degree: 78%
 
 ---
@@ -37,7 +38,7 @@ Exportieren und Importieren über die AEM Forms-Benutzeroberfläche wird für al
 
 Sie müssen AEM Package Manager verwenden, um ein CRX-Paket dieser Elemente auf dem AEM-Quellserver zu erstellen und das Paket auf dem Zielserver zu installieren. Weitere Informationen zum Erstellen und Installieren von Paketen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
-### Assets für Formulare und Dokumente herunterladen  {#download-forms-amp-documents-assets}
+### Assets für Formulare und Dokumente herunterladen {#download-forms-amp-documents-assets}
 
 So laden Sie Forms- und Dokumente-Assets herunter:
 
