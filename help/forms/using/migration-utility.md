@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1873'
 ht-degree: 73%
 
 ---
@@ -32,7 +33,7 @@ Das Migrationsdienstprogramm konvertiert die [Adaptiven Forms-Assets](/help/form
 >
 >Bei einem fehlgeschlagenen Upgrade können Sie für den Fall von Correspondence Management-Assets die Migration jedes Mal ausführen, wenn Sie die Assets importieren. Für die Correspondence Management-Migration muss das Forms-Kompatibilitätspaket installiert sein.
 
-## Verfahren zur Migration  {#approach-to-migration}
+## Verfahren zur Migration {#approach-to-migration}
 
 Sie können [ein Upgrade](/help/forms/using/upgrade.md) auf die neueste Version von AEM Forms 6.4 von AEM Forms 6.3 oder 6.2 durchführen oder eine Neuinstallation durchführen. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
 
