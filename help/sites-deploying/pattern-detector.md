@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 93%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 93%
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
