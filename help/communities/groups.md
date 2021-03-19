@@ -1,6 +1,6 @@
 ---
-title: Community Groups-Konsole
-seo-title: Community Groups-Konsole
+title: Konsole für Community-Gruppen
+seo-title: Konsole für Community-Gruppen
 description: In der Gruppenkonsole können Sie Community-Gruppen erstellen
 seo-description: In der Gruppenkonsole können Sie Community-Gruppen erstellen
 uuid: 7dac2d1b-78fc-4b39-a2cb-100f1e220c23
@@ -10,16 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 2%
+source-wordcount: '1643'
+ht-degree: 3%
 
 ---
 
 
-# Community-Gruppen-Konsole {#community-groups-console}
+# Konsole für Community-Gruppen {#community-groups-console}
 
 Die Konsole &quot;Gruppen&quot;bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](sites-console.md#step1) einer Community-Site die [groups-Funktion](functions.md#groups-function) enthält.
 
