@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 92%
 
 ---
@@ -33,7 +34,7 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 >
 >Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, damit Sie XDP-Dateien hochladen können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
 
-## Hochladen von Formularen  {#uploading-forms}
+## Hochladen von Formularen {#uploading-forms}
 
 1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche an, indem Sie auf `https://[server]:[port]/aem/forms.html` zugreifen.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
