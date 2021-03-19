@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 6%
 
 ---
@@ -41,7 +42,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Aktivierung](enablemen
 
 ## Terminologie {#terminology}
 
-### Resource {#resource}
+### Ressource {#resource}
 
 Ressourcen sind unverzichtbar für eine [Aktivierungs-Community](overview.md#enablement-community). Sie sind die Materialien, die den Mitgliedern zugewiesen werden, damit sie ihre Fähigkeiten verbessern können.
 
@@ -414,7 +415,7 @@ Für die ausgewählte Aktivierungsressource können Sie:
 * Eigenschaften von Ansichten (Standard)
 * Eigenschaften bearbeiten
 * Löschen
-* Veröffentlichung
+* Veröffentlichen
 * Veröffentlichung rückgängig machen
 
 Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfohlen, eine neue Ressource zu erstellen und dann die Anmeldung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version einzutragen.
