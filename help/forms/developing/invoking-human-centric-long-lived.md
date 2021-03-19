@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3753'
 ht-degree: 4%
 
 ---
@@ -30,7 +31,7 @@ Der Prozess mit langer Lebensdauer, der aufgerufen wird, trägt den Namen *First
 
 Ein menschlich orientierter Prozess umfasst eine Aufgabe, auf die ein Benutzer mithilfe von Workspace reagieren kann. Beispielsweise können Sie mit Workbench einen Prozess erstellen, mit dem ein Bankmanager einen Kreditantrag genehmigen oder ablehnen kann. Die folgende Abbildung zeigt den Prozess *FirstAppSolution/PreLoanProcess*.
 
-Der* FirstAppSolution/PreLoanProcess*-Prozess akzeptiert einen Eingabeparameter namens* formData*, dessen Datentyp XML ist. Die XML-Daten werden mit einem Formularentwurf mit dem Namen *PreLoanForm.xdp* zusammengeführt. Die folgende Abbildung zeigt ein Formular, das eine Aufgabe darstellt, die einem Benutzer zum Genehmigen oder Ablehnen eines Kreditantrags zugewiesen wurde. Der Benutzer genehmigt oder verweigert die Anwendung mithilfe von Workspace. Der Workspace-Benutzer kann die Kreditanforderung genehmigen, indem er auf die Schaltfläche Genehmigen klickt, die in der folgenden Abbildung gezeigt wird. Ebenso kann der Benutzer die Kreditanforderung durch Klicken auf die Schaltfläche Ablehnen ablehnen.
+Der* FirstAppSolution/PreLoanProcess*-Prozess akzeptiert einen Eingabeparameter namens* formData*, dessen Datentyp XML ist. Die XML-Daten werden mit dem Formularentwurf *PreLoanForm.xdp* zusammengeführt. Die folgende Abbildung zeigt ein Formular, das eine Aufgabe darstellt, die einem Benutzer zum Genehmigen oder Ablehnen eines Kreditantrags zugewiesen wurde. Der Benutzer genehmigt oder verweigert die Anwendung mithilfe von Workspace. Der Workspace-Benutzer kann die Kreditanforderung genehmigen, indem er auf die Schaltfläche Genehmigen klickt, die in der folgenden Abbildung gezeigt wird. Ebenso kann der Benutzer die Kreditanforderung durch Klicken auf die Schaltfläche Ablehnen ablehnen.
 
 Ein Prozess mit langer Lebensdauer wird asynchron aufgerufen und kann aufgrund der folgenden Faktoren nicht synchron aufgerufen werden:
 
