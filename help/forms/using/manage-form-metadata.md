@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1996'
 ht-degree: 89%
 
 ---
@@ -72,7 +73,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>PDF-Formular, PDF-Formular (Acroform) oder PDF-Formular (Signiert)</li> 
      <li>Dokument, Dokument (Signiert)</li> 
      <li>Adaptives Formular</li> 
-     <li>Resource</li> 
+     <li>Ressource</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -226,7 +227,7 @@ Sie können den Wert von vorhandenen Metadateneigenschaften bearbeiten oder eine
 
    Bei beiden Aktionen wird der Benutzer zurück zum schreibgeschützten Modus der Eigenschaftsseite mit den aktualisierten Werten geleitet.
 
-### Aktualisieren der Formularminiaturansicht   {#update-the-form-thumbnail-nbsp}
+### Aktualisieren der Formularminiaturansicht  {#update-the-form-thumbnail-nbsp}
 
 Im linken Bereich der Eigenschaftsseite wird die Miniaturansicht des Formulars angezeigt. Standardmäßig wird die angezeigte Miniaturansicht zum Zeitpunkt der Formularerstellung (adaptives Formular) oder des Formular-Uploads generiert.
 
