@@ -2,7 +2,7 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.4.
 translation-type: tm+mt
-source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 47%
@@ -152,7 +152,7 @@ nicht mehr unterstützt.
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Das [Activity Map-Plugin, das von Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bereitgestellt wird, sollte jetzt verwendet werden. |
+| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Das [Activity Map-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird, sollte jetzt verwendet werden. |
 | Components-Forms | Captcha-Formularkomponente (foundation/components/form/captcha) | Verwenden Sie stattdessen reCAPTCHA von Google. |
 | Komponenten  | Bildschirmpräsentation (foundation/components/slideshow) | Kein Ersatz |
 | Komponenten  | Flash (foundation/components/flash) | Kein Ersatz |
@@ -179,4 +179,4 @@ Die nachstehende Tabelle enthält eine Liste der Änderungen für zukünftige Ve
 | Bereich | Funktion | Mitteilung |
 |---|---|---|
 | Browserunterstützung | Microsoft Internet Explorer | AEM 6.4 ist die letzte Version, die Microsoft Internet Explorer 11 unterstützt. |
-| Foundation | UI-Framework | Adobe stellt die Coral UI 2-Komponenten im Jahr 2019 ein. AEM 6.4 basiert vollständig auf Coral UI 3 (eingeführt mit AEM 6.2). Adobe empfiehlt seinen Kunden und Partnern, die benutzerdefinierte UIs mit Coral 2 erstellt haben, diese in Coral 3 umzuwandeln. Adobe Angebot ein Tool zum Konvertieren von Coral 2 Dialogen in Coral 3 - [Lesen Sie mehr](/help/sites-developing/dialog-conversion.md). |
+| Foundation | UI-Framework | Adobe stellt die Coral UI 2-Komponenten im Jahr 2019 ein. AEM 6.4 basiert vollständig auf Coral UI 3 (eingeführt mit AEM 6.2). Adobe empfiehlt seinen Kunden und Partnern, die benutzerdefinierte UIs mit Coral 2 erstellt haben, diese in Coral 3 umzuwandeln. Adobe Angebot ein Tool zum Konvertieren von Coral 2-Dialogen in Coral 3 - [Weitere Informationen.](/help/sites-developing/modernization-tools.md) |
