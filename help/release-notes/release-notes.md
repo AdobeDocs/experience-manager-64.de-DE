@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 80%
@@ -26,8 +26,8 @@ ht-degree: 80%
 |---|---|
 | Version | 6.4 |
 | Typ | Hauptversion |
-| Datum der allgemeinen Verfügbarkeit | 4. April 2018 |
-| Empfohlene Updates | Siehe [AEM Versionen und Updates](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
+| Datum der allgemeinen Verfügbarkeit | 4. April 2018 |
+| Empfohlene Updates | Informationen hierzu finden Sie unter [AEM-Versionen und -Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de) |
 
 ### Wissenswertes {#trivia}
 
@@ -196,7 +196,7 @@ Weitere Informationen zu dieser Funktion, den damit verbundenen Systemanforderun
 
 **AEM-Desktop-Programm**
 
-AEM Desktop-App wurde auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-App finden Sie in einem dedizierten Dokument [AEM Versionshinweise zur Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+AEM Desktop-App wurde auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-App finden Sie in einem dedizierten Dokument [AEM Versionshinweise zur Desktop-App](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html).
 
 Zu den Verbesserungen, die seit Veröffentlichung von AEM 6.3 eingeführt wurden, gehören die Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen, eine neue Benutzeroberfläche zur Überwachung von Asset-Vorgängen im Hintergrund, Verbesserungen beim Caching, Arbeiten im Netzwerk und bei der Anmeldung sowie allgemeine Verbesserungen hinsichtlich der Stabilität. Die Dokumentation umfasst außerdem ein [Handbuch mit Best Practices](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html).
 
@@ -220,7 +220,7 @@ Es wurden zahlreiche Verbesserungen eingeführt, um das Durchsuchen, Suchen und 
 
 **Brand Portal**
 
-Es wurden verschiedene Verbesserungen in den Bereichen Metadaten, Berichterstellung, digitale Rechte, Anmeldung und Veröffentlichungsleistung bei der Asset-Verteilung eingeführt. Informationen zu den neuen Verbesserungen und Funktionen finden Sie unter [Neue Funktionen im AEM Assets Markenportal](https://docs.adobe.com/content/help/de/experience-manager-brand-portal/using/introduction/whats-new.html).
+Es wurden verschiedene Verbesserungen in den Bereichen Metadaten, Berichterstellung, digitale Rechte, Anmeldung und Veröffentlichungsleistung bei der Asset-Verteilung eingeführt. Informationen zu den neuen Verbesserungen und Funktionen finden Sie unter [Neue Funktionen im AEM Assets Markenportal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Dynamic Media-Add-on {#dynamic-media-add-on}
 
@@ -234,7 +234,7 @@ Weitere Informationen zum smarten Zuschneiden finden Sie in der Dokumentation zu
 
 Weitere Informationen zum smarten Zuschneiden in der Komponente „Dynamic Media“ finden Sie unter [Hinzufügen von Assets mit dynamischen Medien zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-**Smart Imaging**
+**Intelligente Bildbearbeitung**
 
 Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der einzelnen Benutzer, um automatisch Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt.
 
@@ -307,7 +307,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
    * [Italienisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Französisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [Dialogkonvertierungstool](/help/sites-developing/dialog-conversion.md) zum Migrieren von Komponenten der klassischen Benutzeroberfläche nach Coral 3
+* [AEM ](/help/sites-developing/modernization-tools.md) Modernisierungstools zur Migration von Komponenten der klassischen Benutzeroberfläche zu Coral 3
 
 **Assets**
 
@@ -317,7 +317,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 * Paket zum Hinzufügen von erweiterter Rohbildunterstützung ([weitere Informationen](/help/assets/camera-raw.md))
 
-**Formulare**
+**Forms**
 
 * Pakete für Funktionen in AEM Forms:
 
