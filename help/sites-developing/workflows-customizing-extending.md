@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 69%
 
 ---
@@ -1039,7 +1039,7 @@ Das `_cq_dialog/.content.xml`-Beispiel, das in diesem Beispiel verwendet wird:
 >
 >Die Modell-Editor-Dialogfelder der klassischen Benutzeroberfläche funktionieren auch weiterhin mit dem standardmäßigen Editor für die Touch-optimierte Benutzeroberfläche.
 >
->AEM verfügt allerdings über ein Tool zur [Dialogfeldumwandlung](/help/sites-developing/dialog-conversion.md), wenn Sie die Schrittdialogfelder der klassischen Benutzeroberfläche für die Standard-Benutzeroberfläche konvertieren möchten. Nach der Umwandlung können Sie das Dialogfeld für bestimmte Fälle noch manuell verbessern.
+>AEM verfügt über [Modernisierungstools](/help/sites-developing/modernization-tools.md), wenn Sie Ihre klassischen UI-Schritt-Dialoge auf Standard-UI-Dialoge aktualisieren möchten. Nach der Umwandlung können Sie das Dialogfeld für bestimmte Fälle noch manuell verbessern.
 >
 >* In Fällen, in denen ein aktualisiertes Dialogfeld leer ist, können Sie sich die Dialoge in `/libs` ansehen, die ähnliche Funktionen haben wie Beispiele für die Bereitstellung einer Lösung. Beispiel:
    >
