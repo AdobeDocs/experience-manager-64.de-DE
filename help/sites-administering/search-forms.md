@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: ea5b226756711489aaf316022adb746d7f1be696
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 79%
+source-wordcount: '2044'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 Mit **Suchformularen** können Sie die Auswahl der Suchprädikate anpassen, die in den Suchbereichen der verschiedenen AEM-Konsolen und/oder in den Suchbereichen der Autorenumgebung verwendet werden. Auf diese Weise können Sie die Suchfunktion genau auf Ihre speziellen Anforderungen ausrichten.
 
-Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter das Volltextprädikat für Volltextsuchen, das Eigenschaftsprädikat für die Suche nach Assets, die mit einer einzigen von Ihnen festgelegten Eigenschaft übereinstimmen, oder das Optionsprädikat für die Suche nach Assets, die mit mindestens einem Wert übereinstimmen, den Sie für eine bestimmte Eigenschaft festgelegt haben.
+Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Prädikate hinzufügen, darunter (unter anderem) die Eigenschaftsvorgabe, um nach Assets zu suchen, die einer von Ihnen angegebenen Eigenschaft entsprechen, oder die Optionen prognostizieren die Suche nach Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
 
 Sie können die [Suchformulare konfigurieren](#configuring-your-search-forms), die in den unterschiedlichen Konsolen und im Asset-Browser (bei der Bearbeitung von Seiten) genutzt werden. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
@@ -136,7 +136,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Datum            </td> 
+   <td>Datum  </td> 
    <td>Slider-basierte Suche von Assets basierend auf einer Datumseigenschaft.</td> 
    <td> 
     <ul> 
@@ -146,7 +146,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Datum            Bereich </td> 
+   <td>Datum  Bereich </td> 
    <td>Suchen Sie Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td> 
    <td> 
     <ul> 
@@ -180,18 +180,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Volltext </td> 
-   <td>Suchprädikat für Volltextsuchen.</td> 
-   <td> 
-    <ul> 
-     <li>Feldbezeichnung</li> 
-     <li>Platzhalter</li> 
-     <li>Eigenschaftsname</li> 
-     <li>Beschreibung</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Ausgeblendet       Filter</td> 
+   <td>Ausgeblendet  Filter</td> 
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td> 
    <td> 
     <ul> 
@@ -201,7 +190,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Optionen      </td> 
+   <td>Optionen </td> 
    <td><p>Die Optionen sind vom Benutzer erstellte Inhaltsknoten.</p> <p>Weitere Informationen finden Sie unter <a href="#addinganoptionspredicate">Hinzufügen eines Optionsprädikats</a>.</p> </td> 
    <td> 
     <ul> 
@@ -214,7 +203,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Optionen      Eigenschaft </td> 
+   <td>Optionen  Eigenschaft </td> 
    <td>Suchen Sie nach einer Eigenschaft der Option.</td> 
    <td> 
     <ul> 
@@ -226,7 +215,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Seite       Status </td> 
+   <td>Seite  Status </td> 
    <td>Suchseiten nach ihrem Status.</td> 
    <td> 
     <ul> 
@@ -237,7 +226,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Pfad           </td> 
+   <td>Pfad </td> 
    <td>Suchen Sie Assets, die sich unter einem bestimmten Pfad befinden.</td> 
    <td> 
     <ul> 
@@ -272,7 +261,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Bereich Optionen      </td> 
+   <td>Bereich Optionen </td> 
    <td>Eine bestimmte Suche sagt für Assets voraus und entspricht der allgemeinen Slider Predicate. Ist aufgrund von Problemen mit der Abwärtskompatibilität noch verfügbar.</td> 
    <td> 
     <ul> 
@@ -432,7 +421,7 @@ Identisch mit dem
 Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren/aktualisieren:
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Eigenschaft auswählen** und ziehen Sie das benötigte Prädikat an den erforderlichen Ort. Beispiel: das **Datumsbereichsprädikat**:
+1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Eigenschaft auswählen** und ziehen Sie das benötigte Prädikat an den erforderlichen Ort. Beispiel: die **Datumsbereich-Eigenschaft**:
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -445,7 +434,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
    * Sie aktualisieren ein vorhandenes Prädikat:
 
       Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
-   Beispiel: die Einstellungen für das **Datumsbereichsprädikat**:
+   Beispiel: die Einstellungen für die **Datumsbereich-Eigenschaft**:
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
@@ -463,7 +452,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-### Löschen eines Prädikatfelds       {#deleting-a-predicate-field}
+### Löschen eines Prädikatfelds  {#deleting-a-predicate-field}
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
@@ -490,7 +479,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten        {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten   {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
@@ -502,7 +491,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 
-   * `jcr:title` – die Feldbezeichnung, die in der Suchleiste angezeigt werden soll
+   * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
@@ -520,7 +509,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    >1. Nehmen Sie die gewünschten Änderungen in `/apps.` vor.
 
 
-1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**.
+1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**.
 
    Klicken/tippen Sie anschließend auf das Symbol **Suchformulare bearbeiten**.
 
