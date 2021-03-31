@@ -2,11 +2,13 @@
 title: Verwenden des Demopakets für Asset Insights
 description: Mithilfe des Demopakets können Sie Adobe Asset Insights aktivieren, um Daten aus einer Webseite zu erfassen und daraus Statistiken zu erstellen.
 contentOwner: AG
+feature: Asset Insights,Asset-Berichte
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 93%
+source-wordcount: '172'
+ht-degree: 91%
 
 ---
 
