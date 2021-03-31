@@ -2,11 +2,13 @@
 title: Assets-Anleitung
 description: In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 user-guide-title: Assets-Anleitung
+feature: Asset-Verwaltung
+role: Geschäftspraktiker,Architekt,Administrator
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 29%
+source-wordcount: '323'
+ht-degree: 33%
 
 ---
 
@@ -17,8 +19,8 @@ In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale
 
 ## Wichtige AEM
 
-* [Versionshinweise zu AEM 6.4](/help/release-notes/home.md)
-* [Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de)
+* [AEM 6.4 – Versionshinweise](/help/release-notes/home.md)
+* [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de)
 * [Checkliste für die Sicherheit AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 Benutzerhandbücher
@@ -40,8 +42,8 @@ In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale
 
 ## Wichtige AEM
 
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=de)
+* [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
 * [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Benutzerhandbuch zu Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)
