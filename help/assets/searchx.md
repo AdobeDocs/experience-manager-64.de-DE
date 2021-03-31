@@ -2,10 +2,12 @@
 title: Erweitern der Asset-Suche
 description: Erweitern Sie die Suchfunktionen von AEM Assets über die vorkonfigurierten Suchläufe für Assets nach Zeichenfolgen hinaus.
 contentOwner: AG
+feature: Suchen
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 90%
 
 ---
@@ -55,7 +57,7 @@ Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundla
 
 Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprognosen befinden sich unter `/libs/cq/search/components/predicates`.
 
-### Beispiel: Einfaches Eigenschaftsprädikat erstellen    {#example-build-a-simple-property-predicate}
+### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
