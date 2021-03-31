@@ -2,10 +2,12 @@
 title: Metadatenschemata
 description: 'Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.  '
 contentOwner: AG
+feature: 'Metadaten  '
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2539'
 ht-degree: 79%
 
 ---
@@ -222,7 +224,7 @@ AEM Assets ordnet die folgenden MIME-Typen und Schemaformulare zu:
 
 ## Zugriff auf Metadatenschemata gewähren {#granting-access-to-metadata-schemas}
 
-Die Metadaten-Schema-Funktion steht nur Administratoren zur Verfügung. Administratoren können jedoch Benutzern ohne Administratorrechte Zugriff gewähren, indem sie die Berechtigungen **[!UICONTROL Create]**, **[!UICONTROL Modify]** und **[!UICONTROL Delete]** für den Ordner `/conf` bereitstellen.
+Die Metadaten-Schema-Funktion steht nur Administratoren zur Verfügung. Administratoren können Benutzern ohne Administratorrechte jedoch Zugriff gewähren, indem sie die Berechtigungen **[!UICONTROL Create]**, **[!UICONTROL Modify]** und **[!UICONTROL Delete]** für den Ordner `/conf` bereitstellen.
 
 ## Anwenden von ordnerspezifischen Metadaten {#applying-folder-specific-metadata}
 
@@ -294,4 +296,4 @@ Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in 
 
 >[!CAUTION]
 >
->Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn bei der AEM Implementierung Leistungsprobleme auftreten, versuchen Sie, diesen Auftrag zu deaktivieren.
+>Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn bei der AEM-Bereitstellung Leistungsprobleme auftreten, versuchen Sie, diesen Auftrag zu deaktivieren.
