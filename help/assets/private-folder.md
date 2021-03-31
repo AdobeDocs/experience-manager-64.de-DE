@@ -2,10 +2,12 @@
 title: Freigeben privater Ordner
 description: Erfahren Sie, wie Sie in Adobe Experience Manager (AEM) Assets einen privaten Ordner erstellen, ihn mit anderen Benutzern teilen und ihnen verschiedene Berechtigungen zuweisen können.
 contentOwner: AG
+feature: Zusammenarbeit
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '452'
 ht-degree: 100%
 
 ---
