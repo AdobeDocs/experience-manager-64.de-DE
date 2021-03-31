@@ -2,10 +2,12 @@
 title: Verwalten Sie zusammengesetzte Assets und erstellen Sie Teilassets.
 description: Erfahren Sie, wie Sie Verweise auf AEM Assets aus InDesign-, Adobe Illustrator- und Photoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
+source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1415'
 ht-degree: 47%
 
 ---
