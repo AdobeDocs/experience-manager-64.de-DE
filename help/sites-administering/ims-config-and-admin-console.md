@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 84%
+source-wordcount: '1769'
+ht-degree: 85%
 
 ---
 
@@ -206,7 +206,9 @@ Im Beispiel unten werden der lokalen Gruppe *Dam_Users* synchronisierte Gruppen 
 
 Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. (Bitte beachten Sie, dass die Benutzer und Gruppen mit dem Benutzersynchronisierungstool aus LDAP synchronisiert oder lokal erstellt werden können. Lesen Sie hierzu den Abschnitt **Einstiegsbenutzer mit der oben stehenden Admin Console**).
 
-&amp;ast;Beachten Sie, dass Benutzergruppen nur synchronisiert werden, wenn sich die Benutzer bei der Instanz anmelden. Für Kunden mit einer großen Anzahl von Benutzern und Gruppen kann ein Dienstprogramm zur Gruppensynchronisierung von AMS ausgeführt werden, um Gruppen für die oben beschriebene Zugriffskontrolle- und Berechtigungsverwaltung vorab abzurufen.
+>[!NOTE]
+>
+>Benutzergruppen werden nur synchronisiert, wenn sich die Benutzer bei der Instanz anmelden.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
