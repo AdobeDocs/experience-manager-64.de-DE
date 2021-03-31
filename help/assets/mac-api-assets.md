@@ -2,11 +2,13 @@
 title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+feature: APIs,Assets HTTP API, Developer Tools
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 87%
+source-wordcount: '1559'
+ht-degree: 86%
 
 ---
 
