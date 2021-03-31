@@ -2,10 +2,12 @@
 title: Erstellen von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM erstellen können.
 contentOwner: AG
+feature: Übersetzung
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1937'
 ht-degree: 97%
 
 ---
@@ -41,7 +43,7 @@ Den Workflow zum Erstellen und Übersetzen verwenden Sie, um erstmals Sprachkopi
 
 ### Nur Struktur erstellen  {#create-structure-only}
 
-Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
+Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
 1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
 1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
