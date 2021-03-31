@@ -6,11 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
+feature: Smart-Tags,Suche
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 82%
+source-wordcount: '1572'
+ht-degree: 83%
 
 ---
 
@@ -35,7 +37,7 @@ Smart Content Service ist ein Cloud-Dienst, der auf [!DNL Adobe I/O] gehostet wi
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
-* Einstieg
+* Einstieg 
 * Überprüfung von Assets und Tags (Taxonomiedefinition)
 * Training des Smart Content Service
 * Automatisches Tagging
@@ -187,6 +189,6 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
 >
 >In zukünftigen Tagging-Zyklen werden nur geänderte Assets mit neu trainierten Tags versehen.
 >
->Selbst unveränderte Assets werden jedoch mit Tags versehen, wenn die Lücke zwischen der letzten und der aktuellen Tagging-Zykluszeit für den Tag-Arbeitsablauf 24 Stunden überschreitet.
+>Allerdings werden auch unveränderte Assets mit Tags versehen, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus für den Tagging-Workflow 24 Stunden überschreitet.
 >
 >Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn die Lücke 6 Monate überschreitet.
