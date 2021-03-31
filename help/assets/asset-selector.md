@@ -2,11 +2,13 @@
 title: Asset-Wähler
 description: Erfahren Sie, wie Sie mit dem Asset-Wähler Metadaten für Assets in Adobe Experience Manager (AEM) suchen, filtern, durchsuchen und abrufen. Erfahren Sie außerdem mehr über das benutzerdefinierte Anpassen der Oberfläche des Asset-Wählers.
 contentOwner: AG
+feature: Asset-Verwaltung, Metadaten, Suche
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 1de8efce9cd5cf47163cba8f0c962a9e2fc5116c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 66%
+source-wordcount: '498'
+ht-degree: 65%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 66%
 
 Mit der Asset-Auswahl können Sie Assets in [!DNL Adobe Experience Manager] Assets durchsuchen, suchen und filtern. Außerdem können Sie die Metadaten der Assets abrufen, die Sie über den Asset-Wähler auswählen. Sie können die Benutzeroberfläche des Asset-Wählers mit unterstützten Anforderungsparametern starten, um sie anzupassen. Mit diesen Parametern wird der Kontext des Asset-Wählers für ein bestimmtes Szenario festgelegt.
 
-Zurzeit können Sie die Anforderungsparameter `assettype` (*Bild/Video/Text*) und `mode` (*Einfach/Mehrere*) als Kontextinformationen für die Asset-Auswahl übergeben, die während der gesamten Auswahl intakt bleiben.
+Derzeit können Sie die Anforderungsparameter `assettype` (*Bild/Video/Text*) und die Auswahl `mode` (*Einfach/Mehrere*) als Kontextinformationen für die Asset-Auswahl übergeben, die während der gesamten Auswahl intakt bleibt.
 
 Die Asset-Auswahl verwendet die HTML5-Meldung **Window.postMessage**, um Daten für das ausgewählte Asset an den Empfänger zu senden.
 
