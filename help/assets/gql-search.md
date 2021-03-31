@@ -2,10 +2,12 @@
 title: GQL-Volltextsuche
 description: Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
 contentOwner: AG
+feature: Suche,Metadaten
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '889'
 ht-degree: 73%
 
 ---
