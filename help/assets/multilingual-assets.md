@@ -1,12 +1,14 @@
 ---
 title: Mehrsprachige Assets
-description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren.
+description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 85%
+source-wordcount: '177'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +21,7 @@ Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsdiens
 
 Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in AEM importiert. Wenn Ihr Übersetzungsanbieter mit AEM integriert ist, werden die Assets automatisch zwischen AEM und dem Übersetzungsanbieter gesendet.
 
-Maschinelle Übersetzung: Der Dienst für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
+Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
 Das Übersetzen von Assets umfasst Folgendes:
 
