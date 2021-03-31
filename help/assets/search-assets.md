@@ -2,11 +2,13 @@
 title: 'Suchen nach Assets in AEM '
 description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
+feature: Suche,Metadaten
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 94%
+source-wordcount: '556'
+ht-degree: 93%
 
 ---
 
@@ -39,7 +41,7 @@ Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchf
 
 1. Tippen/klicken Sie auf das GlobalNav-Symbol. Das Bedienfeld „Filter“ wird angezeigt.
 
-   ![filters_panel-1](assets/filters_panel-1.png)
+   ![Filters_panel-1](assets/filters_panel-1.png)
 
    Abhängig von der Art der Elemente, nach denen Sie suchen, wird die Anzahl der Übereinstimmungen oben in den Suchergebnissen angezeigt.
 
