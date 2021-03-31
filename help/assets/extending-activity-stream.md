@@ -2,11 +2,13 @@
 title: Integrieren von Assets in den Aktivitäts-Stream
 description: Beschreibt die Aufzeichnungsfunktionen von AEM und wie Sie AEM zum Aufzeichnen bestimmter Ereignisse konfigurieren.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 77%
+source-wordcount: '287'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +41,7 @@ Die folgenden Ereignisse können zur Aufzeichnung konfiguriert werden:
 * Unter-Asset aktualisiert (SUBASSET_UPDATED)
 * Unter-Asset entfernt (SUBASSET_REMOVED)
 
-## Konfigurieren der AEM Assets-Ereignisaufzeichnung  {#configuring-aem-assets-events-recording}
+## Konfigurieren der AEM Assets-Ereignisaufzeichnung {#configuring-aem-assets-events-recording}
 
 Die [Webkonsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf die AEM Assets-Ereignis-Recorder-Abstimmung. Gehen Sie wie folgt vor, um den AEM Assets Ereignis-Recorder zu konfigurieren:
 
