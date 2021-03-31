@@ -2,10 +2,12 @@
 title: Verwenden von Metadaten-Profilen zum Anwenden von Standardmetadaten auf alle Assets in einem Ordner
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
+feature: 'Metadaten  '
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1236'
 ht-degree: 65%
 
 ---
