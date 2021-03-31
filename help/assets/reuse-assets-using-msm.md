@@ -3,10 +3,12 @@ title: Wiederverwenden von Assets mit MSM
 description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus übergeordneten Assets abgeleitet und mit diesen verknüpft sind. Die Assets bleiben mit einer primären Kopie synchron und erhalten mit wenigen Klicks die Aktualisierungen der übergeordneten Assets.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Asset-Verwaltung, Multi-Site-Manager
+role: Geschäftspraktiker,Administrator,Architekt
 translation-type: tm+mt
-source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3167'
+source-wordcount: '3176'
 ht-degree: 79%
 
 ---
@@ -181,7 +183,7 @@ Alternativ können Sie eine Rollout-Aktion über die Leiste [!UICONTROL Referenc
 
 Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur an die ausgewählte Live Copy übertragen. Die Aktion „Synchronisieren“ respektiert und bewahrt die lokalen Änderungen, die nach dem Abbrechen der Vererbung vorgenommen wurden. Die lokalen Änderungen werden nicht überschrieben und die abgebrochene Vererbung wird nicht wiederhergestellt. Sie haben drei Möglichkeiten, um eine Aktion „Synchronisieren“ zu initiieren.
 
-| Wohin in der [!DNL Experience Manager]-Schnittstelle | Zeitpunkt und Grund für die Verwendung | Verwendung |
+| Wohin in der [!DNL Experience Manager]-Schnittstelle | Zeitpunkt und Grund für die Verwendung | Informationen zur Verwendung |
 |---|---|---|
 | [!UICONTROL Leiste „Verweise“] | Schnelles Synchronisieren bei bereits ausgewählter Quelle | Siehe [Schnellaktionen in der Leiste „Verweise“ für Quellen](#quick-actions-from-references-rail-for-source) |
 | Symbolleiste auf der Seite [!UICONTROL Eigenschaften] | Initiieren von Synchronisationen bei bereits öffneten Live Copy-Eigenschaften | Siehe [Synchronisieren von Live Copies](#synchronize-live-copy) |
