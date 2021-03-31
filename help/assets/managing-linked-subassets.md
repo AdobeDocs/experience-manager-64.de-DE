@@ -3,10 +3,10 @@ title: Verwalten Sie zusammengesetzte Assets und erstellen Sie Teilassets.
 description: Erfahren Sie, wie Sie Verweise auf AEM Assets aus InDesign-, Adobe Illustrator- und Photoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 51%
+source-wordcount: '1410'
+ht-degree: 47%
 
 ---
 
@@ -21,14 +21,14 @@ AEM Assets unterstützt die **bidirektionale Referenzierung**. Referenzierte Ass
 
 Referenzen werden auf der Grundlage von Pfad, Dokument-ID und Instanz-ID der referenzierten Assets aufgelöst.
 
-## Hinzufügen von AEM-Assets als Referenzen in Adobe Illustrator  {#refai}
+## Adobe Illustrator: hinzufügen von Assets als Verweise {#refai}
 
 Sie können vorhandene AEM-Assets aus einer Adobe Illustrator-Datei referenzieren.
 
-1. Verwenden Sie das [AEM-Desktop-Programm](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html), um das AEM Asset-Repository als Laufwerk auf Ihrem lokalen Rechner einzubinden. Navigieren Sie im bereitgestellten Laufwerk zum Speicherort des Assets, das Sie referenzieren möchten.
+1. Verwenden Sie das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de), um das AEM Asset-Repository als Laufwerk auf Ihrem lokalen Rechner einzubinden. Navigieren Sie im bereitgestellten Laufwerk zum Speicherort des Assets, das Sie referenzieren möchten.
 1. Ziehen Sie das Asset vom bereitgestellten Laufwerk auf die Illustrator-Datei.
 1. Speichern Sie die Illustrator-Datei im bereitgestellten Laufwerk oder [laden](managing-assets-touch-ui.md#uploading-assets) Sie sie in das AEM-Repository hoch.
-1. Wenn der Workflow abgeschlossen ist, navigieren Sie zur Detailseite für das Asset. Die Referenzen zu vorhandenen AEM-Assets werden unter **[!UICONTROL Abhängigkeiten]** in der Spalte **[!UICONTROL Verweise]** aufgeführt.
+1. Nachdem der Workflow abgeschlossen ist, navigieren Sie zur Detailseite für das Asset. Die Referenzen zu vorhandenen AEM-Assets werden unter **[!UICONTROL Abhängigkeiten]** in der Spalte **[!UICONTROL Verweise]** aufgeführt.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -40,7 +40,7 @@ Sie können vorhandene AEM-Assets aus einer Adobe Illustrator-Datei referenziere
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-## Hinzufügen von AEM-Assets als Referenzen in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
+## Adobe InDesign: hinzufügen von Assets als Verweise {#add-aem-assets-as-references-in-adobe-indesign}
 
 Um AEM-Assets aus einer InDesign-Datei zu referenzieren, ziehen Sie die AEM-Assets auf die InDesign-Datei oder exportieren Sie die InDesign-Datei als ZIP-Datei.
 
@@ -50,27 +50,28 @@ Referenzierte Assets sind bereits in AEM Assets enthalten. Sie können Teilasset
 >
 >Wenn der InDesign-Server als Proxyserver dient, wird die Vorschau der InDesign-Dateien innerhalb der XMP-Metadaten eingebettet. In diesem Fall ist die Extraktion von Miniaturen nicht explizit erforderlich. Wenn der InDesign-Server nicht als Proxyserver fungiert, müssen Miniaturen für InDesign-Dateien explizit extrahiert werden.
 
-### Erstellen von Referenzen durch Ziehen von AEM-Assets    {#create-references-by-dragging-aem-assets}
+Beim Hochladen einer INDD-Datei werden die Verweise abgerufen, indem Assets mit der Eigenschaft `xmpMM:InstanceID` und `xmpMM:DocumentID` im Repository abgefragt werden.
 
-Dieses Verfahren weist Ähnlichkeiten zur in [Hinzufügen von AEM-Assets als Referenzen in Adobe Illustrator](#refai) beschriebenen Prozedur auf.
+### Erstellen von Verweisen durch Ziehen von Assets {#create-references-by-dragging-aem-assets}
 
-### Erstellen von Referenzen zu AEM-Assets durch Exportieren einer ZIP-Datei {#create-references-to-aem-assets-by-exporting-a-zip-file}
+Dieses Verfahren ist ähnlich wie [Hinzufügen Assets als Referenzen in Adobe Illustrator](#refai).
+
+### Erstellen von Referenzen zu Assets durch Exportieren einer ZIP-Datei {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Führen Sie die Schritte unter [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md) aus, um einen neuen Workflow zu erstellen.
-1. Verwenden Sie die Paketfunktion von Adobe InDesign, um das Dokument zu exportieren.
-Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner den Ordner &quot;Links&quot;, der die Teilassets in der InDesign-Datei enthält.
+1. Verwenden Sie die Paketfunktion von Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html), um das Dokument zu exportieren. Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. [ In diesem Fall enthält der exportierte Ordner den Ordner `Links`, der Unterelemente in der InDesign-Datei enthält. Der Ordner `Links` befindet sich im selben Ordner wie die INDD-Datei.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das AEM-Repository hoch.
 1. Starten Sie den Unarchiver-Workflow.
 1. Wenn der Workflow abgeschlossen ist, werden die Referenzen im Link-Ordner automatisch als Teil-Assets referenziert. Um eine Liste der referenzierten Assets anzuzeigen, navigieren Sie zur Asset-Detailseite des InDesign-Assets und schließen Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Hinzufügen von AEM-Assets als Referenzen in Adobe Photoshop {#refps}
+## Adobe Photoshop: hinzufügen von Assets als Verweise {#refps}
 
 1. Mit einem WebDAV-Client installieren Sie AEM Assets als Laufwerk.
 1. Um Referenzen zu AEM-Assets in einer Photoshop-Datei zu erstellen, navigieren Sie im bereitgestellten Laufwerk zu den entsprechenden Assets mit der Funktion „Verknüpftes Smartobjekt platzieren“ in Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Speichern Sie die Photoshop-Datei auf dem eingebundenen Laufwerk oder [laden](managing-assets-touch-ui.md#uploading-assets) Sie sie in das AEM-Repository hoch.
+1. Speichern Sie die Datei in Photoshop auf dem gemounteten Laufwerk oder [upload](managing-assets-touch-ui.md#uploading-assets) in das AEM Repository.
 1. Nach Abschluss des Workflows werden die Referenzen zu vorhandenen AEM-Assets auf der Asset-Detailseite aufgeführt.
 
    Rufen Sie die referenzierten Assets auf, indem Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector) auf der Asset-Detailseite schließen.
@@ -107,7 +108,7 @@ Die Teilassets werden nur angezeigt, wenn die Teilassets generiert wurden und f�
 
 ![Ansichten-Teilassets für ein mehrseitiges Asset](assets/view_subassets_simulation.gif)
 
-## Anzeigen von Seiten einer mehrseitigen Datei   {#view-pages-of-a-multi-page-file}
+## Anzeigen von Seiten einer mehrseitigen Datei  {#view-pages-of-a-multi-page-file}
 
 Sie können eine mehrseitige Datei, wie z. B. PDF, INDD, PPT, PPTX und AI, mit der Seitenanzeigefunktion von AEM Assets Ansicht werden. Öffnen Sie ein mehrseitiges Asset und klicken Sie auf **[!UICONTROL Ansichten]** oben links auf der Seite. Der daraufhin geöffnete Seiten-Viewer zeigt die Seiten des Assets und die Steuerelemente zum Durchsuchen und Zoomen der einzelnen Seiten an.
 
@@ -133,5 +134,5 @@ Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in d
 
 >[!MORELIKETHIS]
 >
->* [Verwenden des Adobe Experience Manager-Desktop-Programms](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Verwenden des Adobe Experience Manager-Desktop-Programms](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de)
 
