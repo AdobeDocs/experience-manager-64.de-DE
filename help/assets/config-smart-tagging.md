@@ -2,10 +2,12 @@
 title: Konfigurieren Sie das Asset-Tagging mit dem Smart Content Service.
 description: Erfahren Sie, wie Sie intelligentes Tagging und verbessertes intelligentes Tagging mit dem Smart Content Service in [!DNL Adobe Experience Manager] konfigurieren.
 contentOwner: AG
+feature: Smart-Tags,Tagging
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1216'
 ht-degree: 48%
 
 ---
@@ -35,7 +37,7 @@ Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher, um 
 
 * Der Smart Content ist für Ihre Organisation aktiviert.
 
-Um erweiterte Smart-Tags zu aktivieren, installieren Sie zusätzlich zu den oben stehenden auch das neueste [Experience Manager-Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Um erweiterte Smart-Tags zu aktivieren, installieren Sie zusätzlich zu den oben stehenden auch das neueste [Experience Manager-Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
 
 ## Konfiguration des Smart Content Service erstellen, um das öffentliche Zertifikat {#obtain-public-certificate} zu erhalten
 
@@ -49,7 +51,7 @@ Mit einem öffentlichen Zertifikat können Sie Ihr Profil auf [!DNL Adobe Develo
 
 1. Verwenden Sie im Dialogfeld **[!UICONTROL AEM Smart Content Service]** die folgenden Werte:
 
-   **[!UICONTROL Dienst-URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL Service-URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Autorisierungsserver]**: `https://ims-na1.adobelogin.com`
 
@@ -93,7 +95,7 @@ Nach Ablauf eines Zertifikats wird es nicht mehr als vertrauenswürdig eingestuf
 
 ## Adobe Developer Console-Integration {#create-adobe-i-o-integration} erstellen
 
-Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in Adobe Developer Console, um [!UICONTROL API-Schlüssel] (generiert im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL Organisations-ID] und [!UICONTROL und  zu erhalten. CLIENT SECRET] für [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager].
+Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um [!UICONTROL API-Schlüssel] (generiert im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE ACCOUNT-ID], [!UICONTROL ORGANISATION-ID] und [!UICONTROL  zu erhalten. CLIENT SECRET] für [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager].
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle „Systemadministrator“ ist.
 
@@ -117,7 +119,7 @@ Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in Ad
 
 ## Konfigurieren des Smart Content Service {#configure-smart-content-service}
 
-Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANISATIONS-ID], [!UICONTROL CLIENT-SECRET] und [!UICONTROL CLIENT-ID] aus der Adobe Developer Console. Das Erstellen einer Smart-Tags-Cloud-Konfiguration ermöglicht die Authentifizierung von API-Anforderungen aus der [!DNL Experience Manager]-Bereitstellung.
+Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANISATIONS-ID], [!UICONTROL CLIENT SECRET] und [!UICONTROL CLIENT-ID] aus der Adobe Developer Console. Das Erstellen einer Smart-Tags-Cloud-Konfiguration ermöglicht die Authentifizierung von API-Anforderungen aus der [!DNL Experience Manager]-Bereitstellung.
 
 1. Navigieren Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools > Cloud Service > Ältere Cloud Services]**, um die Konsole [!UICONTROL Cloud Services] zu öffnen.
 
