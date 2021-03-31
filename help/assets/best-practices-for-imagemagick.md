@@ -2,16 +2,18 @@
 title: Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
+feature: Darstellungen,Entwicklerwerkzeuge
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '783'
 ht-degree: 59%
 
 ---
 
 
-# Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können. {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.{#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick ist ein Software-Plug-in zum Erstellen, Bearbeiten, Erstellen oder Konvertieren von Bitmapbildern. Es kann Bilder in verschiedenen Formaten (über 200) lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe von Bildern zu ändern, Bilder zu kippen, zu spiegeln, zu drehen, zu verzerren, zuzuschneiden und umzuwandeln. Darüber hinaus können Sie mit ImageMagick die Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
 
