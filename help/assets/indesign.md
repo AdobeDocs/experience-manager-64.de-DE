@@ -2,10 +2,12 @@
 title: AEM Assets mit Adobe InDesign Server integrieren
 description: Erfahren Sie mehr über die Integration von AEM Assets mit InDesign Server.
 contentOwner: AG
+feature: Veröffentlichung
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 65%
 
 ---
