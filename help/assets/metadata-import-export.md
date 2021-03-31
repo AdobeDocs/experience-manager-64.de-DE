@@ -2,11 +2,13 @@
 title: Massenimport und -export von Metadaten
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Batches importieren und exportieren können.
 contentOwner: AG
+feature: 'Metadaten  '
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 75%
+source-wordcount: '645'
+ht-degree: 77%
 
 ---
 
@@ -15,9 +17,9 @@ ht-degree: 75%
 
 Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-## Importieren von Metadaten     {#import-metadata}
+## Importieren von Metadaten  {#import-metadata}
 
-Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während der schlanken Servernutzung, um Leistungseinbußen für andere Benutzer zu vermeiden.
+Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während der schlanken Servernutzung, um Leistungseinbußen für andere Benutzer zu vermeiden.
 
 >[!NOTE]
 >
@@ -55,7 +57,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 * Testen oder prüfen Sie die Metadaten auf Ihre Konformität.
 * Externalisieren Sie die Metadaten für eine separate Lokalisierung.
 
-Sie können Metadaten für mehrere Assets in ein CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Wenn Sie Metadaten exportieren, durchsucht AEM die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
+Sie können Metadaten für mehrere Assets in einem CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Wenn Sie Metadaten exportieren, durchsucht AEM die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
 
 Gehen Sie wie folgt vor, um Metadaten mehrerer Assets stapelweise zu exportieren:
 
