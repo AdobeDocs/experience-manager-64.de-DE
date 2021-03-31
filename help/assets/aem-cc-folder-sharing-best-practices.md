@@ -2,10 +2,12 @@
 title: Freigeben von AEM Assets-Ordnern mit Creative Cloud
 description: Konfiguration und Best Practices, damit Adobe Experience Manager Assets-Benutzer Asset-Ordner mit Adobe Creative Cloud-Benutzern austauschen können.
 contentOwner: AG
+feature: Zusammenarbeit
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1065'
 ht-degree: 44%
 
 ---
