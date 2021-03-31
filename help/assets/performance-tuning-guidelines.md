@@ -2,10 +2,12 @@
 title: Handbuch zur Leistungsoptimierung von Assets
 description: Wichtige Bereiche der AEM-Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Performance von AEM Assets zu optimieren.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3210'
 ht-degree: 82%
 
 ---
@@ -157,7 +159,7 @@ Standardmäßig kann AEM maximal so viele Aufträge parallel ausführen wie Proz
 
 Diese Einstellung des Werts auf die Hälfte der verfügbaren Prozesse ist für den Anfang eine praktikable Lösung. Unter Umständen müssen Sie diese Zahl jedoch nach oben oder unten anpassen, um den maximalen Durchsatz zu erreichen, und auch an die spezifische Umgebung anpassen. Es gibt separate Warteschlangen für Verlaufs- und Nicht-Verlaufs-Workflows sowie für andere Prozesse wie beispielsweise externe Workflows. Sind mehrere Warteschlangen, die auf 50 % der Prozessoren gesetzt sind, gleichzeitig aktiv, kann es schnell zu einer Überlastung des Systems kommen. Welche Warteschlangen stark ausgelastet sind, hängt in hohem Maße von den Benutzerimplementierungen ab. Sie müssen daher sorgfältig und mit Bedacht konfiguriert werden, um maximale Effizienz zu erreichen, die nicht zu Lasten der Serverstabilität geht.
 
-### Abladung  {#offloading}
+### Entladen {#offloading}
 
 Bei großen Mengen an Workflows oder Workflows, die ressourcenintensiv sind, wie z. B. Videotranskodierung, können Sie DAM Update Asset Workflows eine zweite Autoreninstanz laden. Das Problem mit der Abladung liegt häufig darin, dass die Auslastung, die durch Abladung der Workflow-Verarbeitung eingespart wird, durch die Kosten aufgewogen wird, die bei der Replikation von Inhalten zwischen den Instanzen anfallen.
 
@@ -214,7 +216,7 @@ Stellen Sie darüber hinaus in der Datei *configure.xml* (alternativ in der Umge
 >
 >Die Dateien ImageMagick `policy.xml` und `configure.xml` befinden sich unter `/usr/lib64/ImageMagick-*/config/` anstelle von `/etc/ImageMagick/`. Weitere Informationen zu den Speicherorten der Konfigurationsdatei finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php).
 
-Wenn Sie AEM für Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie planen, viele große PSD- oder PSB-Dateien zu verarbeiten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
+Wenn Sie AEM für Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie planen, viele große PSD- oder PSB-Dateien zu verarbeiten. Experience Manager verarbeitet möglicherweise keine sehr hochauflösenden PSB-Dateien mit einer Auflösung von mehr als 30000 x 23000 Pixeln.
 
 <!-- 
 
