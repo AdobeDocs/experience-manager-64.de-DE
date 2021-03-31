@@ -2,10 +2,12 @@
 title: Asset-Überwachung – Best Practices
 description: Best Practices für die Überwachung der Umgebung und Leistung Ihrer AEM-Instanz nach der Bereitstellung.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: Administrator, Architekt
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1769'
 ht-degree: 88%
 
 ---
