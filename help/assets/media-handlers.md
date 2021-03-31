@@ -2,10 +2,12 @@
 title: Prozesselemente mit Medien-Handlern und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
+feature: Workflow,Darstellungen
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: b6342b79e964daf1a05bb9ccfad06d8edaca4312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2232'
 ht-degree: 45%
 
 ---
