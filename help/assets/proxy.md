@@ -2,10 +2,12 @@
 title: Entwicklung von Asset-Proxys
 description: 'Ein Proxy ist eine AEM-Instanz, die Proxy Workers verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen AEM-Proxy konfigurieren und einen benutzerdefinierten Proxy Worker entwickeln können, und erhalten Sie Informationen zu unterstützten Vorgängen und Proxy-Komponenten. '
 contentOwner: AG
+feature: Asset-Verarbeitung
+role: Administrator, Architekt
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '904'
 ht-degree: 75%
 
 ---
