@@ -2,10 +2,12 @@
 title: Suchfacetten
 description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
 contentOwner: AG
+feature: Suchen
+role: Administrator, Entwickler
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2540'
 ht-degree: 94%
 
 ---
@@ -172,7 +174,7 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AE
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen anderer Eigenschaften       {#adding-other-predicates}
+## Hinzufügen anderer Eigenschaften   {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
