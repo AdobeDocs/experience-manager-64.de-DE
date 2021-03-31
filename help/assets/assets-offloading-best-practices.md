@@ -2,10 +2,12 @@
 title: Best Practices für die Assets-Abladung
 description: Empfohlene Anwendungsfälle und Best Practices für die Abladung der Workflows zur Asset-Aufnahme und -Replikation in AEM Assets.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1823'
 ht-degree: 78%
 
 ---
@@ -43,11 +45,11 @@ Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Ver
 
 Das Abladeframework identifiziert Aufträge zur Workflow-Abladung, die Worker-Instanzen zugewiesen sind, und transportiert diese physisch, einschließlich Nutzlast (etwa aufzunehmende Bilder), an Worker. 
 
-### Job Consumer „Workflow-Abladung“  {#workflow-offloading-job-consumer}
+### Job Consumer „Workflow-Abladung“ {#workflow-offloading-job-consumer}
 
 Sobald ein Auftrag über den Arbeiter geschrieben wurde, ruft der Auftragsmanager den Auftragsbenutzer auf, der für das *com/adobe/granite/workflow/offloading*-Thema verantwortlich ist. Der Job Consumer führt dann den Workflow „DAM-Update-Asset“ auf dem Asset aus.
 
-## Sling-Topologie  {#sling-topology}
+## Sling-Topologie {#sling-topology}
 
 Die Sling-Topologie gruppiert AEM-Instanzen und ermöglicht deren gegenseitige Erkennung, und zwar unabhängig von der zugrundeliegenden Persistenz. Dank dieser Eigenschaft der Sling-Topologie können Sie Topologien für Nicht-Cluster-, Cluster- und Mischszenarien erstellen. Eine Instanz kann Eigenschaften gegenüber der gesamten Topologie offenlegen. Das Framework bietet Callbacks für das Listening auf Änderungen in der Topologie (Instanzen und Eigenschaften). Die Sling-Topologie bildet die Grundlage für Sling-verteilte Aufträge.
 
