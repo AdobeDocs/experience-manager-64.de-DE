@@ -2,11 +2,13 @@
 title: Best Practices für Dateiformate in Assets
 description: Best Practices für die Dateiunterstützung in AEM Assets.
 contentOwner: AG
+feature: Asset-Verwaltung,Entwicklerwerkzeuge
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 92%
+source-wordcount: '438'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +19,7 @@ AEM Assets unterstützt viele proprietäre und Drittanbieter-Dateiformatbiblioth
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
-## Adobe Camera Raw-Bibliothek  {#adobe-camera-raw-library}
+## Adobe Camera Raw-Bibliothek {#adobe-camera-raw-library}
 
 Für optimale Leistung empfiehlt Adobe die Verwendung der Adobe Camera Raw-Bibliothek für:
 
