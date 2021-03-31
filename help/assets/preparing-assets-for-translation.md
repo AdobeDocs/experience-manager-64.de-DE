@@ -2,10 +2,12 @@
 title: Vorbereiten von Assets für die Übersetzung
 description: Erstellen Sie Stammordner für Sprachen, um die Übersetzung mehrsprachiger Assets vorzubereiten.
 contentOwner: AG
+feature: Projekte, Übersetzung
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '455'
 ht-degree: 92%
 
 ---
@@ -44,15 +46,15 @@ Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vor
 
 ## Erstellen eines Sprachstamms {#creating-a-language-root}
 
-Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprachcode als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder beliebigen Ebene im Sprachstamm erstellen.
+Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprach-Code als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder beliebigen Ebene im Sprachstamm erstellen.
 
-Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Assetknotens im Repository verwendet und bestimmt daher den Pfad des Assets. (`https://[AEM_server]:[port]/assets.html/content/dam/it/*`)
+Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Asset-Knotens im Repository verwendet und bestimmt daher den Pfad des Assets. (`https://[AEM_server]:[port]/assets.html/content/dam/it/*`)
 
 1. Tippen/klicken Sie in der Assets-Konsole auf **[!UICONTROL Erstellen]** und wählen Sie im Menü die Option **[!UICONTROL Ordner]** aus.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-1. Geben Sie in den Namensfeldtyp den Ländercode im Format `<language-code>` ein.
+1. Geben Sie in den Namensfeldtyp den Länder-Code im Format `<language-code>` ein.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
