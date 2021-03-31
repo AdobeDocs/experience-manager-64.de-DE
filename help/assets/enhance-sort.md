@@ -2,10 +2,12 @@
 title: Optimierte Sortierung von Assets in AEM
 description: Erfahren Sie, wie AEM Assets mit der serverseitigen Sortierung Ordner-Assets oder Suchanfragen in einem Durchgang sortiert, anstatt sie in Batches auf Clientseite zu verarbeiten.
 contentOwner: AG
+feature: Suchen
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '444'
 ht-degree: 93%
 
 ---
