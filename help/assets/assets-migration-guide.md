@@ -2,10 +2,12 @@
 title: Assets stapelweise in Adobe Experience Manager Assets migrieren
 description: So können Sie Assets in AEM einbinden, Metadaten anwenden, Darstellungen generieren und sie für Veröffentlichungsinstanzen aktivieren.
 contentOwner: AG
+feature: Migration, Darstellungen, Asset Management
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 67%
 
 ---
@@ -56,7 +58,7 @@ Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Mit 
 
 ### Aufnehmen von Assets {#ingest-assets}
 
-Leistung und Stabilität sind wichtige Faktoren bei der Aufnahme von Assets in das System. Stellen Sie beim Laden einer Menge Daten in Experience Manager sicher, dass das System gut läuft. Auf diese Weise konnte die zum Hinzufügen der Daten erforderliche Zeit minimiert und ein Überladen des Systems vermieden werden. Dadurch wird ein Systemabsturz verhindert, insbesondere bei Systemen, die bereits in Produktion sind.
+Leistung und Stabilität sind wichtige Faktoren bei der Aufnahme von Assets in das System. Stellen Sie beim Laden einer Menge Daten in Experience Manager sicher, dass das System gut läuft. Auf diese Weise wurde die zum Hinzufügen der Daten benötigte Zeit minimiert und das Überladen des Systems vermieden. Dadurch wird ein Systemabsturz verhindert, insbesondere bei Systemen, die bereits in Produktion sind.
 
 Es gibt zwei Herangehensweisen zum Laden von Assets in das System: ein Push-basierter Ansatz mit HTTP oder ein Pull-basierter Ansatz mit JCR-APIs.
 
