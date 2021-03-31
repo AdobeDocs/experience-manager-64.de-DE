@@ -2,10 +2,12 @@
 title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen durchzuführen, Compliance zu erzielen und die Grundanforderungen zu erfüllen.
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
+feature: Workflow,Darstellungen
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 73d440198028bfa6b47e9fde13f3a354a1b8445f
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1052'
 ht-degree: 28%
 
 ---
