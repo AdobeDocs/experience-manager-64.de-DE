@@ -1,11 +1,13 @@
 ---
-title: Verwalten Sie  [!DNL Adobe Stock] -Assets in  [!DNL Adobe Experience Manager Assets].
-description: Suchen, lizenzieren, verwalten und rufen Sie  [!DNL Adobe Stock] -Assets in  [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
+title: Verwalten Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manager Assets].
+description: Suchen, lizenzieren, verwalten und rufen Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
+feature: Search, Adobe Stock
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1120'
 ht-degree: 85%
 
 ---
@@ -58,7 +60,7 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 
 Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit [!DNL Adobe Stock]-Assets in [!DNL Experience Manager Assets] ermöglichen. Benutzer können aus der [!DNL Experience Manager]-Benutzeroberfläche heraus nach [!DNL Adobe Stock]-Assets suchen und die erforderlichen Assets lizenzieren.
 
-Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können Assets in [!DNL Experience Manager] suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, Assets in [!DNL Brand Portal] teilen, Assets per [!DNL Experience Manager] Desktop App aufrufen und verwenden und vieles mehr.
+Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können Assets in [!DNL Experience Manager] suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, Assets in [!DNL Brand Portal] teilen, Assets per [!DNL Experience Manager]-Desktop-Programm aufrufen und verwenden und vieles mehr.
 
 ![Suchen Sie nach Adobe Stock-Assets und filtern Sie die Ergebnisse aus Ihrem Adobe Experience Manager Workspace.](assets/adobe-stock-search-results-workspace.png)
 
