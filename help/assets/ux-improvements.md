@@ -2,10 +2,12 @@
 title: Verbesserungen beim Benutzererlebnis von Assets
 description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis von AEM 6.4 Assets beschrieben.
 contentOwner: AG
+feature: Versionshinweise
+role: Leader, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '651'
 ht-degree: 79%
 
 ---
@@ -19,7 +21,7 @@ Die Oberfläche reagiert flexibler und hilft Ihnen bei der effizienten Verwaltun
 
 Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und Spaltenansicht. Beispielsweise können Sie die Größe der Miniaturen konfigurieren, die in der Kartenansicht angezeigt werden sollen. In der Listenansicht können Sie konfigurieren, wie detailgenau die Assets in der Liste angezeigt werden sollen. AEM 6.4 Assets enthält eine neue Baumansicht, mit der Sie einfach durch das Asset-Repository navigieren und Ihre Assets finden können.
 
-## Lazy Loading (langsames Laden)  {#lazy-loading}
+## Lazy Loading (langsames Laden) {#lazy-loading}
 
 Wenn Sie in AEM 6.4 Assets nach Assets suchen bzw. die Assets durchsuchen, werden gleichzeitig bis zu 200 Assets angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
 
@@ -33,11 +35,11 @@ Gehen Sie wie folgt vor, um die Größe von Miniaturen in der Kartenansicht anzu
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie dann die Option **[!UICONTROL Ansicht Settings]**.
 
-   ![ansicht_settings](assets/view_settings.png)
+   ![Ansicht_settings](assets/view_settings.png)
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Ansicht Settings]** die gewünschte Miniaturgröße aus und tippen/klicken Sie dann auf **[!UICONTROL Aktualisieren]**.
 
-   ![ansicht_settings_dialog](assets/view_settings_dialog.png)
+   ![Ansicht_settings_dialog](assets/view_settings_dialog.png)
 
 1. Überprüfen Sie die Miniaturen, die in der gewählten Größe angezeigt werden.
 
@@ -51,11 +53,11 @@ In der Kachel in der Kartenansicht werden jetzt zusätzliche Informationen wie d
 
 In der Listenansicht werden in der ersten Spalte jetzt standardmäßig die Asset-Namen angezeigt. Außerdem werden zusätzliche Informationen wie der Veröffentlichungs- und Verarbeitungsstatus, die Sprachvariante usw. angezeigt.
 
-![liste_Ansicht](assets/list_view.png)
+![Liste_Ansicht](assets/list_view.png)
 
 Sie können die anzuzeigende Detailtiefe konfigurieren. Tippen/klicken Sie auf das Layout-Symbol, wählen Sie die Option **[!UICONTROL Anzeigeeinstellungen]** aus und geben Sie die Spalten an, die im Dialogfeld **[!UICONTROL Anzeigeeinstellungen]** angezeigt werden sollen.
 
-![ansicht_settings_dialoglistview](assets/view_settings_dialoglistview.png)
+![Ansicht_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Verbesserungen an der Spaltenansicht {#column-view-improvements}
 
