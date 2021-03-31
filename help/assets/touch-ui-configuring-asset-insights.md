@@ -2,11 +2,13 @@
 title: Konfigurieren von Asset Insights
 description: Erfahren Sie, wie Sie Asset Insights in AEM Assets konfigurieren können.
 contentOwner: AG
+feature: Asset Insights,Asset-Berichte
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 97%
+source-wordcount: '244'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +19,7 @@ Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von 
 
 >[!NOTE]
 >
->Einblicke werden nur für Bilder unterstützt und bereitgestellt.
+>Insights werden nur für Bilder unterstützt und bereitgestellt.
 
 1. Klicken Sie in AEM auf **[!UICONTROL Tools > Assets]**.
 
