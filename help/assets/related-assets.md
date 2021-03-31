@@ -2,11 +2,13 @@
 title: Zugehörige Assets
 description: Erfahren Sie, wie Sie Assets mit bestimmten gemeinsamen Attributen verknüpfen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen.
 contentOwner: AG
+feature: Asset-Verwaltung, Zusammenarbeit
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 100%
+source-wordcount: '618'
+ht-degree: 99%
 
 ---
 
