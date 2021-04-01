@@ -1,46 +1,40 @@
 ---
-title: AEM Assets-Integration mit Experience Cloud und Creative Cloud konfigurieren
-description: Erfahren Sie, wie Sie die AEM Assets-Integration mit Experience Cloud und Creative Cloud konfigurieren können
-uuid: 73f90846-71d0-4f72-8784-dc877e0e9c41
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
+title: AEM Assets-Integration mit Experience Cloud konfigurieren
+description: Erfahren Sie, wie Sie die AEM Assets-Integration mit Experience Cloud konfigurieren.
+feature: Asset-Verwaltung
+role: Geschäftspraktiker, Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: bf48918e9a549cb35dcbb32afa82ff1dd686402a
 workflow-type: tm+mt
-source-wordcount: '1361'
-ht-degree: 68%
+source-wordcount: '1021'
+ht-degree: 44%
 
 ---
 
 
-# AEM Assets-Integration mit Experience Cloud und Creative Cloud konfigurieren {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# AEM Assets-Integration mit Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud} konfigurieren
 
-Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets innerhalb von Adobe Experience Manager (AEM) Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud synchronisieren und umgekehrt. Sie können diese Synchronisierung über [!DNL Adobe I/O] einrichten.
+Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets innerhalb von Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud synchronisieren und umgekehrt. Sie können diese Synchronisierung über [!DNL Adobe I/O] einrichten. Der aktualisierte Name von [!DNL Adobe Marketing Cloud] ist [!DNL Adobe Experience Cloud].
 
 Der Workflow zur Einrichtung dieser Integration ist:
 
 1. Erstellen Sie eine Authentifizierung in [!DNL Adobe I/O] mithilfe eines öffentlichen Gateways und erhalten Sie eine Anwendungs-ID.
 1. Erstellen Sie mit der Anwendungs-ID ein Profil auf Ihrer AEM Assets-Instanz.
-1. Verwenden Sie diese Konfiguration zum Synchronisieren Ihrer Assets in AEM Assets mit Creative Cloud.
+1. Verwenden Sie diese Konfiguration, um Ihre Assets zu synchronisieren.
 
-Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und synchronisiert dann die Daten zwischen AEM Assets und Experience Cloud.
-
->[!NOTE]
->
->Die Funktion zum Freigeben von AEM Adobe Creative Cloud-Ordnern wird nicht mehr unterstützt. Weitere Informationen und eine bessere Methode finden Sie unter [Best Practices für die AEM- und Creative Cloud-Integration](../assets/aem-cc-integration-best-practices.md). Die Konfiguration der Replikation von AEM zu Marketing Cloud und zum Austausch von Assets zwischen AEM Assets und Marketing Cloud wird weiterhin unterstützt.
-
-![Datenfluss, wenn AEM Assets und Creative Cloud integriert werden](assets/chlimage_1-287.png)
-
-Datenfluss, wenn AEM Assets und Creative Cloud integriert werden
+Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und synchronisiert dann die Daten zwischen Assets und Experience Cloud.
 
 >[!NOTE]
 >
->Das Freigeben von Assets zwischen Adobe Experience Cloud und Adobe Creative Cloud erfordert Administratorrechte für die AEM-Instanz.
+>Diese Funktion wird in AEM Assets nicht mehr unterstützt. Suchen Sie nach Ersetzungen in [Best Practices zur AEM- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). Wenn Sie Abfragen haben, wenden Sie sich an die Adobe [Kundenunterstützung](https://www.adobe.com/account/sign-in.supportportal.html).
 
->[!CAUTION]
+<!-- Hiding this for now via cqdoc-16834.
+![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)
+
+>[!NOTE]
 >
->Adobe Marketing Cloud wurde in Adobe Experience Cloud umbenannt. Die folgenden Verfahren erwähnen noch Marketing Cloud, um die aktuelle Oberfläche widerzuspiegeln.
+>Sharing assets between Adobe Experience Cloud and Adobe Creative Cloud requires administrator privileges on the AEM instance.
+-->
 
 ## Erstellen einer Anwendung {#create-an-application}
 
@@ -69,11 +63,11 @@ Datenfluss, wenn AEM Assets und Creative Cloud integriert werden
    >
    >Achten Sie darauf, dass Sie nicht versehentlich das **[!UICONTROL Anwendungsgeheimnis]** anstelle der **[!UICONTROL Anwendungs-ID]** kopieren.
 
-## Hinzufügen einer neuen Konfiguration zu Marketing Cloud {#add-a-new-configuration-to-marketing-cloud}
+## Neue Konfiguration für Experience Cloud {#add-a-new-configuration} Hinzufügen
 
 1. Klicken Sie auf das AEM-Logo in der Benutzeroberfläche in Ihrer lokalen AEM Assets-Instanz und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Legacy-Cloud-Services]**.
 
-1. Suchen Sie den Dienst **[!UICONTROL Adobe Marketing Cloud]**. Wenn keine Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Jetzt konfigurieren]**. Wenn Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]** und klicken Sie auf **[!UICONTROL [+]]**, um eine neue Konfiguration hinzuzufügen.
+1. Suchen Sie den Dienst **[!UICONTROL Adobe Experience Cloud]**. Wenn keine Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Jetzt konfigurieren]**. Wenn Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]** und klicken Sie auf `+`, um eine neue Konfiguration hinzuzufügen.
 
    >[!NOTE]
    >
@@ -83,37 +77,25 @@ Datenfluss, wenn AEM Assets und Creative Cloud integriert werden
 
    ![Benennen neuer Konfigurationen für die Integration mit AEM Assets und CC](assets/cloudservices_configure_mc.png)
 
-1. Geben Sie im Feld **[!UICONTROL Mandanten-URL]** die URL für AEM Assets ein.
+1. Geben Sie im Feld **[!UICONTROL Mandanten-URL]** die URL für AEM Assets ein. Wenn die URL in der Vergangenheit als `https://<tenant_id>.marketing.adobe.com` definiert wurde, ändern Sie sie in `https://<tenant_id>.experiencecloud.adobe.com`.
 
-   >[!CAUTION]
-   >
-   >Wenn Sie die Tenant-URL als **https://&lt;tenant_id>.marketing.adobe.com** eingegeben haben, müssen Sie sie in **https://&lt;tenant_id>.experiencecloud.adobe.com ändern.** Um dies zu erreichen, gehen Sie wie folgt vor:
-   1. Navigieren Sie zu **Werkzeuge > Cloud Services > Legacy-Cloud Services**.
-   1. Unter „Adobe Marketing Cloud“ klicken Sie auf **Konfigurationen anzeigen**.
-   1. Wählen Sie die Konfiguration, die während der Einrichtung der AEM-MAC-CC-Synchronisation erstellt wurde.
-   1. Bearbeiten Sie die Cloudservice-Konfiguration und ersetzen Sie **marketing.adobe.com** im Feld &quot;Tenant-URL&quot;durch **experiencecloud.adobe.com**.
-   1. Speichern Sie die Konfiguration.
-   1. Testen Sie die Mac-Sync-Replikationsagenten.
+   1. Navigieren Sie zu **Werkzeuge > Cloud Services > Legacy-Cloud Services**. Klicken Sie unter Adobe Experience Cloud auf **Konfigurationen anzeigen**.
+   1. Wählen Sie die zu bearbeitende vorhandene Konfiguration aus. Bearbeiten Sie die Konfiguration und ersetzen Sie `marketing.adobe.com` durch `experiencecloud.adobe.com`.
+   1. Speichern Sie die Konfiguration. Testen Sie die Agenten für die MAC-Synchronisierung.
 
-
-1. Fügen Sie im Dialogfeld **[!UICONTROL Client-ID]** die Anwendungs-ID ein, die Sie am Ende des Vorgangs zum [Erstellen einer Anwendung](/help/sites-administering/configure-assets-cc-integration.md#create-an-application) kopiert haben.
+1. Fügen Sie im Feld **[!UICONTROL Client-ID]** die kopierte Anwendungs-ID am Ende des Verfahrens [eine Anwendung ](#create-an-application) ein.
 
    ![Angeben der erforderlichen Anwendungs-ID-Werte für die Integration von AEM Assets und Creative Cloud](assets/cloudservices_tenant_info.png)
 
-1. Wählen Sie unter **[!UICONTROL Synchronisierung]** die Option **[!UICONTROL Aktiviert]** aus, um die Synchronisierung zu aktivieren, und klicken Sie auf **[!UICONTROL OK]**.
-
-   >[!NOTE]
-   Wenn Sie **Deaktiviert** auswählen, erfolgt die Synchronisierung in eine einzige Richtung.
+1. Wählen Sie unter **[!UICONTROL Synchronisierung]** die Option **[!UICONTROL Aktiviert]** aus, um die Synchronisierung zu aktivieren, und klicken Sie auf **[!UICONTROL OK]**. Wenn Sie **disabled** auswählen, funktioniert die Synchronisierung in einer Richtung.
 
 1. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**, um den für Ihre Instanz generierten öffentlichen Schlüssel anzuzeigen. Alternativ können Sie auf **[!UICONTROL Öffentlichen Schlüssel für OAuth Gateway herunterladen]** klicken, um die Datei mit dem öffentlichen Schlüssel herunterzuladen. Öffnen Sie dann die Datei, um den öffentlichen Schlüssel anzuzeigen.
 
 ## Aktivieren der Synchronisierung {#enable-synchronization}
 
-1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Hinzufügen eine neue Konfiguration auf Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud) erwähnt werden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
+1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Neue Konfiguration zu Experience Cloud](#add-a-new-configuration) hinzugefügt werden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
 
-   ![chlimage_1-292](assets/chlimage_1-292.png)
-
-1. Kopieren Sie den öffentlichen Schlüssel und fügen Sie ihn in das Feld **[!UICONTROL Öffentlicher Schlüssel]** der Konfigurationsoberfläche der Anwendung ein, die Sie unter [Anwendung erstellen](/help/sites-administering/configure-assets-cc-integration.md#create-an-application) erstellt haben.
+1. Kopieren Sie den öffentlichen Schlüssel und fügen Sie ihn in das Feld **[!UICONTROL Öffentlicher Schlüssel]** der Konfigurationsoberfläche der Anwendung ein, die Sie unter [Anwendung erstellen](#create-an-application) erstellt haben.
 
    ![chlimage_1-293](assets/chlimage_1-293.png)
 
@@ -130,52 +112,58 @@ Datenfluss, wenn AEM Assets und Creative Cloud integriert werden
 
 1. Sehen Sie sich den unteren Bereich der Testergebnisse an, um zu prüfen, ob die Replikation erfolgreich war.
 
-## Benutzer zu Marketing Cloud hinzufügen {#add-users-to-marketing-cloud}
+## hinzufügen von Benutzern auf Experience Cloud {#add-users-to-experience-cloud}
 
-1. Melden Sie sich mithilfe der Anmeldeinformationen des Administrators bei Marketing Cloud an.
-1. Wechseln Sie in den Leisten zu **[!UICONTROL Administration]**und klicken Sie dann auf **[!UICONTROL Enterprise Dashboard starten]**.
+1. Melden Sie sich mit Administratorberechtigungen bei Experience Cloud an.
+1. Wechseln Sie in den Leisten zu **[!UICONTROL Administration]** und klicken Sie dann auf **[!UICONTROL Enterprise Dashboard starten]**.
 1. Klicken Sie in der Leiste auf **[!UICONTROL Benutzer]**, um die Seite **[!UICONTROL Benutzerverwaltung]** zu öffnen.
-1. Klicken Sie in der Symbolleiste auf/tippen Sie auf **Hinzufügen** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
+1. Klicken Sie in der Symbolleiste auf **Hinzufügen** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Fügen Sie einen oder mehr Benutzer hinzu, denen Sie die Möglichkeit zur Freigabe von Assets für Creative Cloud bereitstellen möchten.
 
    >[!NOTE]
-   Nur die Benutzer, die Sie zu Marketing Cloud hinzufügen, können Assets von AEM Assets für Creative Cloud freigeben.
+   >
+   >Nur die Benutzer, die Sie zu Experience Cloud hinzufügen, können Assets von AEM Assets nach Creative Cloud freigeben.
 
-## Austauschen von Assets zwischen AEM Assets und Marketing Cloud  {#exchange-assets-between-aem-assets-and-marketing-cloud}
+## Austausch von Assets zwischen AEM Assets und Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Melden Sie sich bei AEM Assets an.
 1. Erstellen Sie in der Assets-Konsole einen Ordner und laden Sie einige Assets dort hoch. Erstellen Sie zum Beispiel einen Ordner **mc-demo** und laden Sie ein Asset dort hoch.
 1. Wählen Sie den Ordner aus und klicken Sie auf **Freigeben** ![assets_share](assets/assets_share.png).
-1. Wählen Sie im Menü **[!UICONTROL Adobe Marketing Cloud]** aus und klicken Sie dann auf **[!UICONTROL Freigeben]**. Eine Meldung benachrichtigt Sie, dass der Ordner für Marketing Cloud freigegeben wird.
+1. Wählen Sie im Menü **[!UICONTROL Adobe Experience Cloud]** und klicken Sie auf **[!UICONTROL Freigeben]**. In einer Meldung wird angezeigt, dass der Ordner für Experience Cloud freigegeben wurde.
 
    ![chlimage_1-295](assets/chlimage_1-295.png)
 
    >[!NOTE]
-   Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird im Rahmen der Freigabe in Adobe Marketing Cloud nicht unterstützt. Wenn Sie einen Ordner bei seiner Erstellung in AEM Assets freigeben möchten, wählen Sie nicht die Option **[!UICONTROL Geordnet]** aus.
+   >
+   >Die Freigabe eines Assets-Ordners des Typs `sling:OrderedFolder` wird im Zusammenhang mit der Freigabe in Adobe Experience Cloud nicht unterstützt. Wenn Sie einen Ordner bei seiner Erstellung in AEM Assets freigeben möchten, wählen Sie nicht die Option **[!UICONTROL Geordnet]** aus.
 
-1. Aktualisieren Sie die AEM Assets-Benutzeroberfläche. Der Ordner, den Sie in der Asset-Konsole Ihrer lokalen AEM Assets-Instanz erstellt haben, wird in die Marketing Cloud-Benutzeroberfläche kopiert. Das Asset, das Sie in den Ordner in AEM Assets hochladen, wird in der Ordnerkopie in Marketing Cloud angezeigt, nachdem es vom AEM verarbeitet wurde.
-1. Sie können in der replizierten Kopie des Ordners in Marketing Cloud auch ein Asset hochladen. Nach der Verarbeitung wird das Asset im freigegebenen Ordner in AEM Assets angezeigt.
+1. Aktualisieren Sie die AEM Assets-Benutzeroberfläche. Der Ordner, den Sie in der Asset-Konsole Ihrer lokalen AEM Assets-Instanz erstellt haben, wird in die Experience Cloud-Benutzeroberfläche kopiert. Das Asset, das Sie in den Ordner in AEM Assets hochladen, wird in der Ordnerkopie in Experience Cloud angezeigt, nachdem es vom AEM verarbeitet wurde.
+1. Sie können auch ein Asset in die replizierte Kopie des Ordners in Experience Cloud hochladen. Nach der Verarbeitung wird das Asset im freigegebenen Ordner in AEM Assets angezeigt.
 
-## Austauschen von Assets zwischen AEM Assets und Creative Cloud  {#exchange-assets-between-aem-assets-and-creative-cloud}
+<!-- Removing as per PM guidance via https://jira.corp.adobe.com/browse/CQDOC-16834?focusedCommentId=22881523&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-22881523.
+## Exchange assets between AEM Assets and Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
 
-Mit AEM Assets können Sie Ordner mit Assets für Benutzer von Adobe Creative Cloud freigeben.
+AEM Assets lets you share folders containing assets with Adobe Creative Cloud users.
 
-1. Wählen Sie in der Assets-Konsole den für Creative Cloud freizugebenden Ordner aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Freigeben]** ![assets_share](assets/assets_share.png).
-1. Wählen Sie in der Liste die Option **[!UICONTROL Adobe Creative Cloud]**.
+1. In the Assets console, select the folder to share with Creative Cloud.
+1. From the toolbar, click **[!UICONTROL Share]** ![assets_share](assets/assets_share.png).
+1. From the list, select the **[!UICONTROL Adobe Creative Cloud]** option.
 
    >[!NOTE]
-   Die Optionen sind für Benutzer mit Leseberechtigungen für das Stammverzeichnis verfügbar. Die Benutzer müssen die erforderlichen Berechtigungen verfügen, um auf die Informationen zum Replikationsagenten von Marketing Cloud zuzugreifen.
+   >
+   >The options are available for users with read permissions on the root. Users must have the required permission to access the replication agent information of Marketing Cloud.
 
-1. Fügen Sie auf der Seite **[!UICONTROL Freigeben von Creative Clouden]** den Benutzer hinzu, für den der Ordner freigegeben werden soll, und wählen Sie eine Rolle für den Benutzer aus. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**.
+1. In the **[!UICONTROL Creative Cloud Sharing]** page, add the user to share the folder with and choose a role for the user. Click **[!UICONTROL Save]** and click **[!UICONTROL OK]**.
 
-1. Melden Sie sich mit den Anmeldeinformationen des Benutzers, für den Sie den Ordner freigegeben haben, bei Creative Cloud an. Der freigegebene Ordner ist in Creative Cloud verfügbar.
+1. Log on to Creative Cloud with the credentials of the user you shared the folder with. The shared folder is available in Creative Cloud.
 
-Die Synchronisierung zwischen AEM Assets und Marketing Cloud ist so gestaltet, dass die Benutzercomputerinstanz, von der das Asset hochgeladen wird, das Recht zur Änderung des Assets behält. Nur diese Änderungen werden in der anderen Instanz eingefügt. 
+The AEM Assets-Marketing Cloud synchronization is designed in a way that the user machine instance from where the asset is uploaded retains the right to modify the asset. Only these changes are propagated to the other instance.
 
-Wenn zum Beispiel ein Asset von einer AEM Assets-Instanz (vor Ort) hochgeladen wird, werden die von dieser Instanz vorgenommenen Änderungen am Asset in der Marketing Cloud-Instanz aufgefüllt. Die von der Marketing Cloud-Instanz zu demselben Asset vorgenommenen Änderungen werden jedoch nicht an die AEM-Instanz übertragen und umgekehrt, wenn ein Asset aus Marketing Cloud hochgeladen wird.
+For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and vice versa for asset uploaded from Marketing Cloud.
+-->
 
 >[!MORELIKETHIS]
-* [Best Practices für die Integration von AEM und Creative Cloud](../assets/aem-cc-integration-best-practices.md)
-* [Best Practices für die Ordnerfreigabe aus AEM in Creative Cloud](../assets/aem-cc-folder-sharing-best-practices.md)
+>
+>* [Best Practices zur Asset- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md)
+>* [Best Practices für den Austausch von Assets im Creative Cloud-Ordner](/help/assets/aem-cc-folder-sharing-best-practices.md)
 
