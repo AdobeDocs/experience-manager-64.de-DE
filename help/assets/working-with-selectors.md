@@ -9,16 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
+exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
+feature: Selektoren
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '740'
 ht-degree: 99%
 
 ---
 
-
-# Arbeiten mit Selektoren  {#working-with-selectors}
+# Arbeiten mit Selektoren {#working-with-selectors}
 
 Beim Arbeiten mit einem interaktiven Bild, interaktiven Videos oder Karussellbannern wählen Sie Assets sowie Sites und Produkte für Hotspots und Imagemaps zum Verknüpfen aus. Wenn Sie mit Bildsets, Rotationssets und Multimediasets arbeiten, wählen Sie mit dem Asset-Selektor Assets aus.
 
@@ -118,4 +120,3 @@ Weitere Informationen finden Sie unter [Asset-Auswahl](asset-selector.md).
 1. Tippen Sie auf das Häkchen, um das Asset auszuwählen. Das Asset wird angezeigt.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
