@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
+exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
+feature: Inhaltsfragmente,Metadaten
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 89%
+source-wordcount: '129'
+ht-degree: 87%
 
 ---
-
 
 # Metadaten – Fragmenteigenschaften {#metadata-fragment-properties}
 
@@ -36,13 +38,11 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. Auf der Registerkarte **[!UICONTROL Einfach]** können Sie die folgenden Optionen anzeigen oder bearbeiten:
+1. Auf der Registerkarte **[!UICONTROL Allgemein]** können Sie die folgenden Optionen anzeigen oder bearbeiten:
 
    * Miniaturansicht, für die Sie ein **Bild hochladen** können
    * **Titel**
    * **Beschreibung**
    * **Tags**
    * Erstellt (nur Anzeige)
-
    ![cfm-6420-07](assets/cfm-6420-07.png)
-
