@@ -2,6 +2,7 @@
 title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 seo-title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
+feature: Sicherheit
 seo-description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
+exl-id: bd29e81d-eb4a-4764-96f2-84e091836a8a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 84%
 
 ---
-
 
 # Granite-Vorgänge – Benutzer- und Gruppenverwaltung{#granite-operations-user-and-group-administration}
 
@@ -83,7 +84,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Berufsbezeichnung**
    * **Straße**
    * **Mobilgerät**
-   * **Ort**
+   * **Stadt**
    * **PLZ**
    * **Land**
    * **Bundesland/Kanton**
@@ -234,4 +235,3 @@ StatusSie können das Konto entweder als
    ![](do-not-localize/chlimage_1-6.png)
 
 1. Sie werden zum Bestätigen des Löschvorgangs aufgefordert. Daraufhin wird über eine Meldung bestätigt, dass der Löschvorgang tatsächlich durchgeführt wurde.
-
