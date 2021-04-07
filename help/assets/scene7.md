@@ -5,14 +5,16 @@ contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
+exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
+feature: Dynamic Media Classic
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2829'
 ht-degree: 32%
 
 ---
-
 
 # Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite {#adding-scene-features-to-your-page}
 
@@ -364,4 +366,3 @@ TypIm Dynamic Media Classic-Browser können Sie die Ergebnisse filtern, um Folge
 Sie können nach Assets basierend auf dem Veröffentlichungsstatus filtern:  **[!UICONTROL Veröffentlichung]** rückgängig machen oder  **[!UICONTROL Veröffentlicht]**. Wenn Sie keinen **[!UICONTROL Veröffentlichungsstatus]** auswählen, durchsucht AEM standardmäßig alle Veröffentlichungsstatus.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
-
