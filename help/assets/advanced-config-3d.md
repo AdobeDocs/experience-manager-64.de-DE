@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
+exl-id: fdc82bca-e676-4052-b3e9-a198c685df96
+feature: 3D-Assets
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1385'
 ht-degree: 61%
 
 ---
-
 
 # Erweiterte Konfigurationseinstellungen {#advanced-configuration-settings}
 
@@ -34,7 +36,7 @@ Auf alle Einstellungen wird mithilfe von **CRXDE Lite** in AEM (**[!UICONTROL To
 >
 >Die Bearbeitung von Einstellungen, die nicht in der folgenden Tabelle aufgeführt sind, kann zu unerwartetem oder unerwünschtem Programmverhalten führen.
 
-## Assettypen – Konfiguration  {#asset-types-configuration}
+## Assettypen – Konfiguration {#asset-types-configuration}
 
 Greifen Sie in **CRXDE Lite** in AEM (**[!UICONTROL Tools > Allgemein > CRXDE Lite]**) auf die folgenden Konfigurationen zu:
 
@@ -149,4 +151,3 @@ Greifen Sie in **CRXDE Lite** in AEM (**[!UICONTROL Tools > Allgemein > CRXDE Li
 | `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Bei Festlegung auf **[!UICONTROL true]** wird der Ladeluftvorhang während der letzten Ladevorgänge und Initialisierungen allmählich ausgeblendet. Bei Festlegung auf **[!UICONTROL false]** bleibt der Vorhang undurchsichtig, bis das Laden und die Initialisierung abgeschlossen sind. |
 | `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Auf **[!UICONTROL true]** oder **[!UICONTROL false]** setzen, um den Ladevorhang für die Komponente &quot;3D-Sites&quot;zu aktivieren oder zu deaktivieren. |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Wenn die automatische Rotation aktiviert wurde, wird die vertikale Position der Kamera automatisch relativ zur Höhe des 3D-Objekts angepasst. Wenn dieser Wert auf 0,5 gesetzt wird, wird die Kamera auf halber Höhe vertikal zum Objekt platziert. Dadurch wird der Horizont vertikal zum Viewport zentriert. Höhere Werte führen dazu, dass die Kamera auf das Objekt herabblickt und der gerenderte Horizont angehoben wird. Niedrigere Werte hingegen führen dazu, dass die Kamera zum Objekt aufblickt und der Horizont gesenkt wird. |
-
