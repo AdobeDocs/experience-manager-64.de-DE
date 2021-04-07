@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
+feature: Fehlerbehebung
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1296'
 ht-degree: 86%
 
 ---
-
 
 # Fehlerbehebung in Dynamic Media – Scene7-Modus {#troubleshooting-dynamic-media-scene-mode}
 
@@ -172,7 +174,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td> 
     <ol> 
      <li>Überprüfen Sie Ihre AEM-Instanz mit <span class="kbd">-r dynamicmedia_scene7</span></li> 
-     <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud-Services ordnungsgemäß eingerichtet ist.</li> 
+     <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li> 
      <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li> 
     </ol> </td> 
   </tr> 
@@ -258,4 +260,3 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
   </tr> 
  </tbody> 
 </table>
-
