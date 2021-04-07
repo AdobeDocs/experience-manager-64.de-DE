@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
+exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
+feature: Bildsets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 81%
 
 ---
-
 
 # Bildsets {#image-sets}
 
@@ -142,7 +144,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
    >[!NOTE]
    >
-   >Beim Erstellen des Bildsets können Sie die Miniaturansicht des Bildsets ändern oder zulassen, dass AEM die Miniaturansicht anhand der Assets im Bildset automatisch auswählt. Um eine Miniaturansicht auszuwählen, tippen Sie auf **[!UICONTROL Miniaturansicht ändern]** und wählen Sie ein beliebiges Bild aus (Sie können auch zu anderen Ordnern navigieren, um nach Bildern zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und dann festlegen möchten, dass AEM eine aus dem Bildset generiert, wählen Sie **[!UICONTROL Zu automatischer Miniatur wechseln]**.
+   >Beim Erstellen des Bildsets können Sie die Miniaturansicht des Bildsets ändern oder zulassen, dass AEM die Miniaturansicht anhand der Assets im Bildset automatisch auswählt. Um eine Miniaturansicht auszuwählen, tippen Sie auf **[!UICONTROL Miniaturansicht ändern]** und wählen Sie ein beliebiges Bild aus (Sie können auch zu anderen Ordnern navigieren, um nach Bildern zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und dann festlegen möchten, dass AEM eine aus dem Bildset generiert, **[!UICONTROL wählen Sie  Zu automatischer Miniatur wechseln]**.
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
