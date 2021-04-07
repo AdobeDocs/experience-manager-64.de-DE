@@ -13,10 +13,10 @@ exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Intelligente Dienste
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: 331aca21069a0325da499279de5480c3f8536335
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 96%
+source-wordcount: '1915'
+ht-degree: 54%
 
 ---
 
@@ -24,11 +24,15 @@ ht-degree: 96%
 
 ## Was ist die intelligente Bildbearbeitung? {#what-is-smart-imaging}
 
-Die Technologie der intelligenten Bildbearbeitung nutzt die KI-Funktionen von Adobe Sensei und arbeitet mit vorhandenen „Bildvorgaben“ zusammen, um die Bereitstellung von Bildern zu verbessern, indem Bildformat, Größe und Qualität basierend auf den Funktionen des Client-Browsers automatisch optimiert werden.
+Die Smart-Imaging-Technologie nutzt die AI-Funktionen von Adobe Sensei und arbeitet mit vorhandenen &quot;Bildvorgaben&quot;zusammen, um die Leistung von Image-Versänden zu verbessern, indem Bildformat, -größe und -qualität automatisch auf der Grundlage der Browserfunktionen des Kunden optimiert werden.
 
-Die intelligente Bildbearbeitung profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigem Premium-CDN-Dienst von Adobe. Dieser Dienst ermittelt die optimale Internet-Route zwischen Servern, Netzwerken und Austauschpunkten mit niedrigster Latenz und/oder Paketverlustrate im Vergleich zur Standardroute im Internet.
+>[!NOTE]
+>
+>Für diese Funktion ist es erforderlich, dass Sie das vordefinierte CDN (Content Versand Network) verwenden, das zum Lieferumfang von Adobe Experience Manager Dynamic Media gehört. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
-Die folgenden Beispiele für Bild-Asset-Beispiele zeigen die hinzugefügte Optimierung der intelligenten Bildbearbeitung:
+Die intelligente Bildbearbeitung profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigem Premium-CDN-Dienst von Adobe. Dieser Service findet die optimale Internetverbindung zwischen Servern, Netzwerken und Peering Points. Es findet eine Route mit der niedrigsten Latenz und der niedrigsten Paketverlustrate statt der Standardroute im Internet.
+
+Die folgenden Beispiele für Bild-Assets veranschaulichen die Optimierungen durch die intelligente Bildbearbeitung:
 
 | Bild<br>(URL) | Miniaturansicht | Größe<br> (JPEG) | Größe (WebP)<br> (mit intelligenter Bildbearbeitung) | Reduzierung in % |
 |---|---|---|---|---|
@@ -38,37 +42,51 @@ Die folgenden Beispiele für Bild-Asset-Beispiele zeigen die hinzugefügte Optim
 | [Bild 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](assets-dm/picture4.png) | 315,80 KB | 178,19 KB | 44 % |
 |  |  |  |  | Durchschnitt = 51 % |
 
-Ähnlich wie oben führte Adobe auch einen Test mit 7009 URLs von Live-Kundenseiten durch und konnte aufgrund der intelligenten Bildbearbeitungsfunktion eine durchschnittliche Dateigrößenoptimierung von 38 % für JPEG und von 31 % für PNG mit WebP-Format erzielen.
+Ähnlich wie oben führte Adobe auch einen Test mit 7009 URLs von Live-Kunden-Sites durch. Sie konnten im Durchschnitt 38 % mehr Dateigrößenoptimierung für JPEG erzielen. Für PNG mit WebP-Format konnten sie eine weitere Optimierung der Dateigröße um durchschnittlich 31 % erzielen. Diese Optimierung ist möglich, weil Smart Imaging in der Lage ist.
 
 ## Was sind die Hauptvorteile der intelligenten Bildbearbeitung? {#what-are-the-key-benefits-of-smart-imaging}
 
-Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs wie höhere Konversionsraten, auf der Site verbrachte Zeit und niedrigere Website-Absprungraten haben.
+Da Bilder den größten Teil der Ladezeit einer Seite ausmachen, kann die Leistungsverbesserung tief greifende Auswirkungen auf ein Geschäft haben, z. B. eine höhere Umrechnung, Besuchszeit auf der Site und eine niedrigere Absprungrate auf der Site.
 
 Verbesserungen der neuesten Version der intelligenten Bildbearbeitung:
 
+* Verbessertes Google SEO Ranking für Webseiten mit der neuesten Smart Imaging.
 * Stellt optimierte Inhalte sofort (zur Laufzeit) bereit.
 * Verwendet Adobe Sensei-Technologie zur Konvertierung gemäß der in der Bildanforderung angegebenen Qualität (qlt).
 * Die intelligente Bildbearbeitung kann mithilfe des URL-Parameters „bfc“ deaktiviert werden.
 * TTL (Time To Live)-unabhängig. Zuvor war eine TTL von mindestens 12 Stunden erforderlich, damit die intelligente Bildbearbeitung funktioniert.
-* Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
-* Kunden, die in ihrem Regelsatz benutzerdefinierte Kopfzeilen verwenden (z. B. „Timing Allow Origin“, „X-Robot“, wie in [Einen benutzerdefinierten Kopfzeilenwert zu Bildantworten hinzufügen|Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen), profitieren von der neuesten Version der intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version nicht mehr blockiert.
+* Zuvor wurden sowohl die Original- als auch die abgeleiteten Bilder zwischengespeichert, und es war ein zweistufiger Prozess, um den Cache zu ungültigen. Bei der neuesten Smart Imaging-Version werden nur die Derivate zwischengespeichert, was eine einmalige Cache-Ungültigmachung ermöglicht.
+* Kunden, die benutzerdefinierte Header in ihrem Regelsatz verwenden, profitieren von der neuesten Smart Imaging-Version, da diese Header nicht blockiert werden, anders als die vorherige Version von Smart Imaging. Beispiel: &quot;Zeitliche Herkunft zulassen&quot;, &quot;X-Roboter&quot;, wie unter [Hinzufügen eines benutzerdefinierten Header-Werts zu Bildantworten|Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) empfohlen.
 
 ## Ist intelligente Bildbearbeitung mit irgendwelchen Lizenzierungskosten verbunden? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Nein. Smart Imaging ist in Ihrer bestehenden Lizenz von Dynamic Media Classic oder AEM Dynamic Media (On Prem, AMS und AEM als Cloud Service) enthalten.
+Nein. Smart Imaging ist im Lieferumfang Ihrer bestehenden Lizenz von Dynamic Media Classic oder Adobe Experience Manager - Dynamic Media (On-Prem, AMS und Experience Manager als Cloud Service) enthalten.
 
 >[!NOTE]
 >
->Die intelligente Bildbearbeitung ist nicht für Dynamic Media – Hybrid-Kunden verfügbar.
-
+>Smart Imaging ist für Dynamic Media - Hybrid-Kunden nicht verfügbar.
 
 ## Wie funktioniert die intelligente Bildbearbeitung? {#how-does-smart-imaging-work}
 
-Die intelligente Bildbearbeitung verwendet Adobe Sensei, um Bilder basierend auf den Browser-Funktionen automatisch in das optimale Format, die optimale Größe und die optimale Qualität zu konvertieren:
+Wenn ein Bild von einem Kunden angefordert wird, prüft Smart Imaging die Benutzereigenschaften und konvertiert es je nach verwendetem Browser in das entsprechende Bildformat. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
 
-* Automatische Konvertierung in WebP für Browser wie Chrome, Firefox, Microsoft Edge, Android und Opera.
-* Automatische Konvertierung in JPEG2000 für Browser wie Safari.
-* Automatische Konvertierung in JPEG für Browser wie Internet Explorer 9+
+<!--   * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
+
+* Automatische Konvertierung in WebP für die folgenden Browser:
+   * Chrome
+   * Firefox
+   * Microsoft® Edge
+   * Safari (unter iOS, macOS, iPadOS), bereitgestellte Browser- und Betriebssystemversion-Unterstützung für WebP
+   * Android™
+   * Opera
+* Unterstützung älterer Browser:
+
+   | Browser | Browser/OS-Version | Format |
+   | --- | --- | --- |
+   | Safari | Früher als iOS/iPad 14.0 oder macOS BigSur | JPEG2000 |
+   | Edge | Früher als 18 | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * Bereitstellung des ursprünglich angeforderten Bildformats für Browser, die diese Formate nicht unterstützen.
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
@@ -76,6 +94,7 @@ Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbe
 ## Welche Bildformate werden unterstützt?  {#what-image-formats-are-supported}
 
 Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstützt:
+
 * JPEG
 * PNG
 
@@ -87,27 +106,29 @@ Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstü
 Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 
-## Wie funktioniert die intelligente Bildbearbeitung bei vorhandenen und bereits verwendeten Bildvorgaben? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
+## Wie funktioniert Smart Imaging mit Ihren bereits verwendeten Bildvorgaben? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Die intelligente Bildbearbeitung funktioniert mit Ihren vorhandenen „Bildvorgaben“ und beachtet alle Bildeinstellungen mit Ausnahme von Qualität (qlt) und Format (fmt), wenn das angeforderte Dateiformat JPEG oder PNG ist. Bei der Formatkonvertierung bleibt die Wiedergabetreue vollständig erhalten, und zwar gemäß den von Ihnen für die Bildvorgabe gewählten Einstellungen – jedoch bei kleinerer Dateigröße. Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
+Smart Imaging funktioniert mit Ihren vorhandenen &quot;Bildvorgaben&quot;und beachtet alle Bildeinstellungen mit Ausnahme der Qualität (`qlt`) und des Formats (`fmt`), wenn das angeforderte Dateiformat JPEG oder PNG ist. Bei der Formatkonvertierung behält die Adobe die volle visuelle Genauigkeit bei, die durch Ihre Bildvorgabeeinstellungen definiert wird, jedoch bei einer kleineren Dateigröße. Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
 
 <!-- CQDOC-15846 In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
-## Muss ich für die intelligente Bildbearbeitung URLs und Bildvorgaben ändern oder neuen Code auf Websites bereitstellen? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
+## Muss ich URLs, Bildvorgaben oder neuen Code für Smart Imaging auf meiner Site ändern? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Die intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben. Darüber hinaus müssen Sie bei der intelligenten Bildbearbeitung keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. All dies wird automatisch erledigt.
+Intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben, wenn Sie die intelligente Bildbearbeitung für Ihre vorhandenen benutzerdefinierten Domain konfigurieren. Darüber hinaus müssen Sie bei der intelligenten Bildbearbeitung keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. Es wird alles automatisch verarbeitet.
+
+Wenn Sie eine neue benutzerdefinierte Domäne für die Verwendung von Smart Imaging konfigurieren müssen, müssen die URLs aktualisiert werden, um diese benutzerdefinierte Domäne widerzuspiegeln.
 
 <!-- CQDOC-15846 As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?](#am-i-eligible-to-use-smart-imaging), um die Voraussetzungen für die intelligente Bildbearbeitung zu verstehen.
+Informationen zu den Voraussetzungen für Smart Imaging finden Sie unter [Bin ich berechtigt, Smart Imaging zu verwenden?](#am-i-eligible-to-use-smart-imaging)
 
-## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?       {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?   {#does-smart-imaging-working-with-https-how-about-http}
 
 Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
 
 ## Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt? {#am-i-eligible-to-use-smart-imaging}
 
-Um die intelligente Bildbearbeitung nutzen zu können, muss das Dynamic Media Classic- bzw. Dynamic Media-Konto Ihres Unternehmens die folgenden Voraussetzungen erfüllen:
+Um Smart Imaging verwenden zu können, müssen die Dynamic Media Classic oder Dynamic Media Ihrer Firma auf dem Experience Manager-Konto die folgenden Anforderungen erfüllen:
 
 * Sie verwenden das im Adobe-Bundle enthaltene CDN (Content Delivery Network) im Rahmen Ihrer Lizenz.
 * Sie verwenden eine dedizierte Domain (z. B. `images.company.com` oder `mycompany.scene7.com`), keine generische Domain (z. B. `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com`).
@@ -120,15 +141,15 @@ Für Ihre erste benutzerdefinierte Domain fallen mit einer Dynamic Media-Lizenz 
 
 ## Wie kann ich die intelligente Bildbearbeitung für mein Konto aktivieren? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine entsprechende Anfrage stellen.
+Sie initiieren die Anforderung, intelligente Bildbearbeitung zu verwenden. nicht automatisch aktiviert ist.
 
 1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen.](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
-   1. Geben Sie alle Domänen an, für die intelligente Bildbearbeitung aktiviert werden soll (also bilder.unternehmen.com oder meinunternehmen.scene7.com).
+   1. Alle Domänen, die für die intelligente Bildbearbeitung aktiviert werden sollen (d. h. i`mages.company.com` oder `mycompany.scene7.com`).
 
-       Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
+      Um Ihre Domänen zu finden, öffnen Sie die [Dynamic Media Classic Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich dann bei Ihrem Firmen-Konto oder Ihren Konten an.
 
       Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**.
 
@@ -136,16 +157,16 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
    1. Vergewissern Sie sich, dass Sie CDN über Adobe und nicht verwaltet mit einer direkten Beziehung nutzen.
    1. Vergewissern Sie sich, dass Sie eine dedizierte Domain wie `images.company.com` oder `mycompany.scene7.com` und nicht eine generische Domain wie `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com` verwenden.
 
-      Um Ihre Domains zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
+      Um Ihre Domänen zu finden, öffnen Sie die [Dynamic Media Classic Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Firmen-Konto oder Ihren Konten an.
 
       Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**.
 
       Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media Classic-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
-   1. Geben Sie an, ob Sie auch auf eine Nutzung über HTTP/2 angewiesen sind.
+   1. Geben Sie an, ob Smart Imaging auch über HTTP/2 funktioniert.
 
-1. Der technische Support nimmt Sie in die Kunden-Warteliste für die intelligente Bildbearbeitung auf. Dies geschieht in der Reihenfolge der eingehenden Anfragen.
-1. Wenn Adobe Ihre Anfrage bearbeiten kann, setzt sich der Support mit Ihnen zwecks Koordinierung und Vereinbarung eines Zieldatums in Verbindung.
-1. **Optional**: Sie haben die Möglichkeit, die intelligente Bildbearbeitung in der Staging-Phase zu testen, bevor Adobe die neue Funktion auf das Produktionssystem überträgt.
+1. Der Kundendienst von Adobe fügt Sie basierend auf der Reihenfolge, in der Anfragen eingereicht wurden, zur Liste Smart Imaging Customer Wait hinzu.
+1. Wenn die Adobe für die Bearbeitung Ihrer Anfrage bereit ist, kontaktieren Sie den Support, um das Datum der Zielgruppe zu koordinieren und festzulegen.
+1. **Optional**: Sie können die intelligente Bildbearbeitung optional in Staging testen, bevor die Adobe die neue Funktion in die Produktion schiebt.
 1. Sie werden nach Abschluss durch den Support benachrichtigt.
 1. Zur maximalen Leistungsverbesserung der intelligenten Bildbearbeitung empfiehlt Adobe eine Time-to-Live (TTL)-Einstellung von mindestens 24 Stunden. Die TTL-Einstellung definiert, wie lange Assets vom CDN-Dienst im Cache gespeichert werden. So ändern Sie diese Einstellung:
 
@@ -157,29 +178,31 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
 Die Anfragen werden in der Reihenfolge ihres Eingangs beim technischen Support gemäß Warteliste bearbeitet.
 
 >[!NOTE]
-Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden.
+>
+>Es kann eine lange Vorlaufzeit geben, da die Aktivierung von Smart Imaging eine Adobe beinhaltet, die den Cache löscht. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden.
 
 ## Welche Risiken bestehen bei der Umstellung auf die intelligente Bildbearbeitung? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-Es besteht kein Risiko für eine Kunden-Web-Seite. Sie sollten sich jedoch bewusst sein, dass beim Umstellen auf die intelligente Bildbearbeitung der CDN-Cache gelöscht wird, da auf eine neue Konfiguration von Dynamic Media Classic oder Dynamic Media in AEM umgestellt werden muss.
+Es besteht kein Risiko für eine Kunden-Web-Seite. Die Transition zu Smart Imaging löscht jedoch Ihren Cache im CDN, weil es darum geht, auf dem Experience Manager zu einer neuen Konfiguration von Dynamic Media Classic oder Dynamic Media zu wechseln.
 
-Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder direkt auf die Adobe-Ursprungsserver, bis der Cache neu erstellt wurde. Aus diesem Grund führt Adobe nur wenige Umstellungen zugleich durch, wodurch eine akzeptable Leistung aufrechterhalten werden kann, wenn Anforderungen aus unserer Quelle abgerufen werden. Bei den meisten Kunden ist der CDN-Cache innerhalb von 1 bis 2 Tagen vollständig neu aufgebaut.
+Während der ersten Transition treffen die nicht zwischengespeicherten Bilder direkt auf die Adoben-Server, bis der Cache erneut aufgebaut wird. Daher plant Adobe, einige Kundenanforderungen gleichzeitig zu bearbeiten, damit eine akzeptable Transition beim Abrufen von Anforderungen aus der Herkunft der Adobe erhalten bleibt. Für die meisten Kunden wird der Cache innerhalb von etwa 1-2 Tagen erneut im CDN aufgebaut.
 
 ## Wie kann ich feststellen, ob die intelligente Bildbearbeitung erwartungsgemäß funktioniert? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Laden Sie nach der Konfiguration Ihres Kontos mit Smart Imaging eine Dynamic Media Classic/Dynamic Media Bild-URL in den Browser.
 1. Öffnen Sie den Chrome-Entwicklerbereich, indem Sie im Browser auf **[!UICONTROL Anzeigen > Entwickler > Entwickler-Tools]** klicken. Selbstverständlich können Sie auch ein anderes Browser-Entwickler-Tool Ihrer Wahl verwenden.
 
-1. Stellen Sie sicher, dass der Cache deaktiviert ist, wenn die Entwickler-Tools geöffnet sind.
+1. Stellen Sie sicher, dass der Cache deaktiviert ist, wenn Entwicklerwerkzeuge geöffnet sind.
 
-   * Navigieren Sie unter Windows in den Bereich mit den Entwickler-Tools und aktivieren Sie dann das Kontrollkästchen **[!UICONTROL Cache deaktivieren]** (während DevTools geöffnet ist).
-   * Navigieren Sie unter Mac im Entwicklerbereich zur Registerkarte **[!UICONTROL Netzwerk]** und wählen Sie die Option **[!UICONTROL Cache deaktivieren]** aus.
+   * Navigieren Sie unter Windows® zu den Einstellungen im Tool-Bereich für Entwickler und aktivieren Sie dann das Kontrollkästchen **[!UICONTROL Cache deaktivieren (während devtools geöffnet ist)]**.
+   * Wählen Sie unter macOS im Entwicklerbereich unter der Registerkarte **[!UICONTROL Netzwerk]** **[!UICONTROL Cache deaktivieren]**.
 
 1. Sie werden feststellen, dass der Content-Typ in das entsprechende Format umgewandelt wird. Der folgende Screenshot zeigt ein PNG-Bild, das in Chrome dynamisch ins WebP-Format konvertiert wird.
 1. Wiederholen Sie diesen Test auf verschiedenen Browsern und bei unterschiedlichen Benutzerbedingungen.
 
 >[!NOTE]
-Nicht alle Bilder werden konvertiert. Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
+>
+>Nicht alle Bilder werden konvertiert. Smart Imaging entscheidet, ob die Konvertierung die Leistung verbessert. In Fällen, in denen keine Leistungssteigerung erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
@@ -191,10 +214,10 @@ Ja. Sie können die intelligente Bildbearbeitung deaktivieren, indem Sie den Mod
 
 Derzeit können Sie die intelligente Bildbearbeitung optional aktivieren oder deaktivieren. Es stehen keine weiteren Optimierungen zur Verfügung.
 
-## Wenn die intelligente Bildbearbeitung die Qualitätseinstellungen verwaltet, können wir dann Mindest- und Höchstwerte festlegen? Ist es zum Beispiel möglich, eine Qualität „nicht kleiner als 60“ und „nicht größer als 80“ festzulegen? (#minimum-maximum)
+## Wenn Smart Imaging die Qualitätseinstellungen verwaltet, gibt es dann noch minimale und maximale Einstellungen? Ist es zum Beispiel möglich, eine Qualität „nicht kleiner als 60“ und „nicht größer als 80“ festzulegen? (#minimum-maximum)
 
 Diese Funktionalität gibt es in der aktuellen intelligenten Bildbearbeitung nicht.
 
-## In einigen Fällen wird ein JPEG-Bild anstelle eines WebP-Bildes an Chrome zurückgegeben. Was ist der Grund dafür? (#jpeg-webp)
+## Manchmal wird ein JPEG-Bild anstelle eines WebP-Bildes an Chrome zurückgegeben. Vorteile (#jpeg-webp)
 
 Die intelligente Bildbearbeitung entscheidet, ob die Konvertierung vorteilhaft ist. Das neue Bild wird nur dann zurückgegeben, wenn die Konvertierung zu einer kleineren Dateigröße mit vergleichbarer Qualität führt.
