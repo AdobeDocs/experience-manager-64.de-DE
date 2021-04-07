@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
+feature: Mix-Mediensets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 76%
+source-wordcount: '1472'
+ht-degree: 78%
 
 ---
-
 
 # Gemischte Mediensets {#mixed-media-sets}
 
@@ -146,7 +148,7 @@ Sie können direkt auf der Benutzeroberfläche eine Vielzahl an Bearbeitungsaufg
    >[!NOTE]
    >
    >* Um ein ganzes gemischtes Medienset aus einem beliebigen Ansichtsmodus zu löschen (z. B. **[!UICONTROL Ansicht]** oder **[!UICONTROL Spalte]** Ansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Asset und tippen Sie auf das Häkchen, um es auszuwählen. Drücken Sie auf der Tastatur die Taste **[!UICONTROL Rücktaste]** oder tippen Sie auf der Symbolleiste auf **[!UICONTROL Mehr]** (drei Punkte) und dann auf **[!UICONTROL Löschen]**.
-   >* Sie können die Assets in einem gemischten Medienset bearbeiten, indem Sie zum Set navigieren, auf **[!UICONTROL Mitglieder setzen]** in der linken Leiste tippen und dann auf das Symbol **[!UICONTROL Bleistift]** auf einem einzelnen Asset tippen, um das Bearbeitungsfenster zu öffnen.
+   >* Sie können die Bilder in einem gemischten Medienset bearbeiten, indem Sie zu ihm navigieren, in der linken Seitenleiste auf **[!UICONTROL Mitglieder des Sets]** tippen und dann auf das **[!UICONTROL Stiftsymbol]** eines einzelnen Assets tippen, um das Bearbeitungsfenster zu öffnen.
 
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie die Bearbeitung abgeschlossen haben.
@@ -168,4 +170,3 @@ Weitere Informationen zum Veröffentlichen von Sets für gemischte Medien finden
 >[!NOTE]
 >
 >Wenn das gemischte Mediensets beim ersten Veröffentlichen nicht vollständig im Versand-Dienst landet, müssen Sie den gemischten Mediensatz möglicherweise ein zweites Mal veröffentlichen.
-
