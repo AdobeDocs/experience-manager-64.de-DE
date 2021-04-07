@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
+feature: Asset-Verwaltung, Darstellungen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1466'
 ht-degree: 93%
 
 ---
-
 
 # Best Practices für die Optimierung der Bildqualität {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -44,7 +46,7 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit, um mehr darüber zu erfahren, wie Scharfzeichnen und Unschärfemaske in AEM funktionieren, indem Sie auf das Handbuch [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) verweisen, das auch für AEM gilt.
 
-Siehe auch [Scharfzeichnen eines Bildes mit einer Unschärfemaske](https://helpx.adobe.com/de/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Siehe auch [Scharfzeichnen eines Bildes mit einer Unschärfemaske](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
 In AEM können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder an beiden Zeitpunkten scharfzeichnen. In den meisten Fällen sollten Sie Bilder aber nur mit einer Methode, nicht mit beiden scharfzeichnen. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
