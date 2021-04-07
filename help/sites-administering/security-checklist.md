@@ -2,6 +2,7 @@
 title: Sicherheitscheckliste
 seo-title: Sicherheitscheckliste
 description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
+feature: Sicherheit
 seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
+exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2844'
 ht-degree: 88%
 
 ---
-
 
 # Sicherheitscheckliste{#security-checklist}
 
@@ -109,7 +110,7 @@ Adobe empfiehlt die Definition von benutzerdefinierten Fehler-Handler-Seiten, in
 
 ### Durchgehen der Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
 
-Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html) durchgehen.
+Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=de#getting-started) durchgehen.
 
 >[!CAUTION]
 >
@@ -269,9 +270,9 @@ Es gibt viele Konfigurationspunkte zum Verhindern solcher Angriffe. In diesem Do
 
 **Konfigurieren von Sling zum Verhindern von DoS-Angriffen**
 
-Sling ist *inhaltsorientiert*. Das bedeutet, dass die Verarbeitung auf den Inhalt ausgerichtet ist, während die einzelnen (HTTP-)Anfragen den Inhalten in Form einer JCR-Ressource (Repository-Knoten) zugeordnet werden:
+Sling ist *inhaltsorientiert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
 
-* Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält.
+* Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält..
 * Als Zweites wird der Renderer oder das Skript aus den Ressourceneigenschaften ausgelesen – zusammen mit bestimmten Teilen der Anfrage (z. B. Selektoren und/oder die Erweiterung).
 
 >[!NOTE]
