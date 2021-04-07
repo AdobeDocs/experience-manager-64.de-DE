@@ -5,20 +5,22 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
+exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
+feature: Panoramabilder
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '575'
 ht-degree: 38%
 
 ---
-
 
 # Panoramabilder {#panoramic-images}
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein immersives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
-Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md).
+Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
@@ -81,6 +83,6 @@ Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramaische Medien]** in Ihr
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern  {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
