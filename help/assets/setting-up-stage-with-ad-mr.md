@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: 3D-Assets
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 91%
 
 ---
-
 
 # Einrichten einer Standardbühne mit Autodesk Maya und Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -68,4 +70,3 @@ ht-degree: 91%
 
 1. Öffnen Sie die Asset-Eigenschaften in AEM. Stellen Sie **[!UICONTROL title]** auf eine geeignete Zeichenfolge ein, die in der Dropdown-Liste **[!UICONTROL Stage Selector]** angezeigt wird. Prüfen Sie, ob **[!UICONTROL Klasse]** auf **[!UICONTROL 3D-Bühne]** eingestellt ist. Speichern und beenden Sie.
 1. Öffnen Sie ein 3D-Asset, wählen Sie eine neue Bühnendatei und prüfen Sie, ob sie wie erwartet in der Vorschau angezeigt und gerendert wird.
-
