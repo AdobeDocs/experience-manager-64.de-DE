@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
+exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
+feature: Interaktive Bilder
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4298'
 ht-degree: 79%
 
 ---
-
 
 # Interaktive Bilder {#interactive-images}
 
@@ -28,7 +30,7 @@ Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnella
 
 Zeigen Sie die interaktiven Bilder in Aktion auf der oben gezeigten Webseite an, indem Sie Folgendes aufrufen:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## Sehen Sie sich an, wie interaktive Bildbanner erstellt werden {#watch-how-interactive-image-banners-are-created}
 
@@ -40,7 +42,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
 Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden Beispielwebseite basiert, der noch keine interaktiven Bilder hinzugefügt wurden:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
 Das Tutorial veranschaulicht die Schritte zur Integration von interaktiven Bildern auf Ihrer eigenen Website.
 
@@ -123,7 +125,7 @@ Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit versc
 
 Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der SKU-Wert das einzige Datenteil, das Sie benötigen, um dem Bannerbild Hotspots hinzuzufügen.
 
-In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farbcode, Größen-Code usw. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot-Datendefinition der Funktion für interaktive Bilder mit Shopping-Funktion in AEM Assets.
+In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farb-Code, Größen-Code usw. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot-Datendefinition der Funktion für interaktive Bilder mit Shopping-Funktion in AEM Assets.
 
 Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resultierenden Hotspot-Variablen:
 
@@ -161,7 +163,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die Demo-Web-Seite anwenden:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
 Die Demo-Webseite enthält mehrere Produktminiaturen, von denen jede eine Quickview-Schaltfläche mit der Bezeichnung **[!UICONTROL Siehe Mehr]** hat. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
 
@@ -183,7 +185,7 @@ Auf Grundlage einer solchen Analyse würden Sie `categoryId` und `SKU` für Hots
 
 Jetzt können Sie ein Bildbanner hochladen und diesem Hotspots mit der Funktion für interaktive Bilder mit Shopping-Funktion in AEM Assets hinzufügen.
 
-## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder  {#optional-creating-an-interactive-image-viewer-preset}
+## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder   {#optional-creating-an-interactive-image-viewer-preset}
 
 Sie können die im Lieferumfang von AEM Assets enthaltene standardmäßige interaktive Bild-Viewer-Vorgabe mit dem Namen **[!UICONTROL Shoppable_Banner]** verwenden. Sie können auch eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Bilder erstellen.
 
@@ -357,7 +359,7 @@ Wenn Sie nur AEM Assets verwenden, können Sie das interaktive Bild Ihrer Websit
 
 Verwenden der Demowebsite als ein Beispiel:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
 Beachten Sie, dass es sich beim Bild der drei Männer um ein statisches `IMG`-Tag handelt:
 
@@ -367,7 +369,7 @@ Beachten Sie, dass es sich beim Bild der drei Männer um ein statisches `IMG`-Ta
 
 Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsprechende Ersetzung durch den kopierten Integrations-Code aus AEM Assets. Sie können das Ergebnis in der folgenden URL anzeigen, die ein interaktives Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-1.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -375,9 +377,9 @@ Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsp
 
 Um eine Beschneidung auf ein interaktives Bild für eine interaktive Umgebung anzuwenden, können Sie das Konfigurationsattribut Interaktives Bild `ZoomView.iscommand` auf den Pfad setzen. `ZoomView` ist dabei die aufzurufende Komponente und `iscommand` der zugeschnittene Bildbereitungsbefehl, den Sie anwenden.
 
-Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=de).
 
-Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=de).
 
 Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
@@ -409,7 +411,7 @@ In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 * Er erstellt anhand der Hotspot-Daten eine Schnellansichts-URL.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
-Der von AEM Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignishandler, der auskommentiert ist, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
+Der von AEM Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler, der auskommentiert ist, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -516,8 +518,8 @@ Im Folgenden finden Sie den vollständigen Quell-Code:
 
 Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Bild hat folgendes Aussehen:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-3.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
 
-## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups}
+## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
 
 Siehe [Popups mithilfe von benutzerspezifischen Schnellansichten erstellen](custom-pop-ups.md).
