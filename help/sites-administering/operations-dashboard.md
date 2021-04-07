@@ -2,6 +2,7 @@
 title: Vorgangs-Dashboard
 seo-title: Vorgangs-Dashboard
 description: Erfahren Sie, wie Sie das Vorgangs-Dashboard verwenden.
+feature: Betrieb
 seo-description: Erfahren Sie, wie Sie das Vorgangs-Dashboard verwenden.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
+exl-id: a0cb6a30-fdd4-4806-a5fa-45c98ad15d11
 translation-type: tm+mt
-source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6201'
 ht-degree: 79%
 
 ---
-
 
 # Vorgangs-Dashboard {#operations-dashboard}
 
@@ -206,7 +207,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
   </tr> 
   <tr> 
    <td>Abfrage-Ausnahmelimits</td> 
-   <td><p>Abfrage Traversal Limits prüft die <code>QueryEngineSettings</code> MBean, genauer gesagt die <code>LimitInMemory</code>- und <code>LimitReads</code>-Attribute, und gibt den folgenden Status zurück:</p> 
+   <td><p>Abfrage Traversal Limits überprüft die <code>QueryEngineSettings</code> MBean, genauer gesagt die <code>LimitInMemory</code>- und <code>LimitReads</code>-Attribute, und gibt den folgenden Status zurück:</p> 
     <ul> 
      <li>gibt den Warn-Status zurück, wenn einer der Beschränkungen gleich oder höher als der Wert <code>Integer.MAX_VALUE</code></li> 
      <li>den Warnungsstatus, wenn eines der Limits kleiner als 10.000 (die empfohlene Einstellung von Oak) ist</li> 
@@ -586,7 +587,7 @@ Sie können auf die Aufgabe &quot;Bereinigung der Lucene-Binärdateien&quot;zugr
 
 Detaillierte Informationen zur Datenspeicherbereinigung finden Sie auf der entsprechenden [Dokumentationsseite](/help/sites-administering/data-store-garbage-collection.md).
 
-### Workflow-Bereinigung {#workflow-purge}
+### Workflow-Bereinigung  {#workflow-purge}
 
 Sie können Workflows auch über das Wartungs-Dashboard bereinigen. Führen Sie dazu folgende Schritte durch:
 
@@ -910,4 +911,3 @@ Sie können auch eine `JSON`-Datei herunterladen, die die Informationen zum Dash
   </tr> 
  </tbody> 
 </table>
-
