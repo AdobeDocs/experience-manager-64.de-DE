@@ -2,6 +2,7 @@
 title: Auditprotokollwartung in AEM 6
 seo-title: Auditprotokollwartung in AEM 6
 description: Erfahren Sie mehr über die Auditprotokollwartung in AEM.
+feature: Betrieb
 seo-description: Erfahren Sie mehr über die Auditprotokollwartung in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
+exl-id: bcbdab55-4871-4c7f-b82a-b7d8280e82e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '616'
 ht-degree: 81%
 
 ---
-
 
 # Auditprotokollwartung in AEM 6{#audit-log-maintenance-in-aem}
 
@@ -70,7 +71,7 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
 
 Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe zur Bereinigung des Prüfprotokolls abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
 
-**Mit AEM 6.4** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das  **** Stopsymbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
+**Mit AEM 6.4** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das  **** Stoppsymbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
 
 >[!NOTE]
 >
@@ -101,4 +102,3 @@ Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe
    * **Audit log Replication event types:** der Typ der zu löschenden Replikationsprüfereignisse
 
 1. Klicken Sie auf **Speichern**, um Ihre Konfiguration zu speichern.
-
