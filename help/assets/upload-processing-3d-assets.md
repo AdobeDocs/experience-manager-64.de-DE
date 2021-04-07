@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: 3D-Assets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 75%
 
 ---
-
 
 # Informationen zum Hochladen und Verarbeiten von 3D-Assets in AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
@@ -61,7 +63,7 @@ Aufträge für Konvertieren, Verarbeiten und Rendern werden so in die Warteschla
 
 Mit den verfügbaren Verfahren lässt sich die Nutzung der CPU auf die Erfassungsverarbeitung und das Rendern beschränken. Informationen zur Konfiguration der CPU-Grenzwerte finden Sie unter [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md).
 
-## Überwachen des Verarbeitungsstatus Ihrer hochgeladenen 3D-Dateien  {#monitoring-the-processing-status-of-your-uploaded-d-files}
+## Überwachen des Verarbeitungsstatus Ihrer hochgeladenen 3D-Dateien {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
 Nur in **[!UICONTROL Ansicht]** werden der Verarbeitungsstatus und der Fortschritt als Fortschrittsbanner auf der Asset-Karte angezeigt. Jedes geladene 3D-Modell durchläuft in der Regel die folgenden 4–6 geordneten Verarbeitungsphasen:
 
@@ -113,4 +115,3 @@ Nur in **[!UICONTROL Ansicht]** werden der Verarbeitungsstatus und der Fortschri
 >[!NOTE]
 >
 >Sie können ein 3D-Asset in der Ansicht **[!UICONTROL Detail]** oder nach Abschluss der Phase &quot;Erstellen der Vorschau&quot;rendern. Sie müssen nicht warten, bis alle Verarbeitungsphasen abgeschlossen sind.
-
