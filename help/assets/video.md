@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
+exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
+feature: Video
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '10392'
-ht-degree: 77%
+source-wordcount: '10393'
+ht-degree: 78%
 
 ---
-
 
 # Video {#video}
 
@@ -144,7 +146,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
 * Bereitstellen von adaptiven Videosets im Internet sowie auf Desktops und Mobilgeräten, einschließlich iPhone, iPad, Android™, Blackberry und Windows Phone.
 
-Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe Referenzhandbuch [Adobe Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe Referenzhandbuch [Adobe Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
 
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -156,7 +158,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
    * Viewer für gemischte Medien, die sowohl Video- als auch Bildinhalte kombinieren
 
 * Konfigurieren von Video-Playern entsprechend Ihren Branding-Anforderungen
-* Integrieren von Videos in Websites, mobile Sites oder mobile Anwendungen mit einer einfachen URL oder mit Integrations-Code
+* Integrieren von Videos in Websites, mobile Sites oder Mobile Apps mit einer einfachen URL oder mit Integrations-Code
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
@@ -166,7 +168,7 @@ Siehe auch [Informationen zu HTML5-Viewern](https://experienceleague.adobe.com/d
 
 Die HTML5-Video-Viewer-Vorgaben aus „Dynamic Media“ stellen robuste Video-Player dar. Damit können Sie viele gängige Probleme im Zusammenhang mit der HTML5-Videowiedergabe sowie Probleme mit Mobilgeräten vermeiden, wie fehlende Bereitstellung von adaptivem Streaming und eingeschränkte Reichweite in Bezug auf Desktop-Browser.
 
-In Bezug auf die Entwicklung des Players können Sie alle Funktionen des Video-Players mit standardmäßigen Webentwicklungstools entwerfen. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Posterhintergrund mit HTML5 und CSS entwerfen, um Ihre Kunden mit einem angepassten Erscheinungsbild anzusprechen.
+In Bezug auf die Entwicklung des Players können Sie alle Funktionen des Video-Players mit standardmäßigen Web-Entwicklungs-Tools entwerfen. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Posterhintergrund mit HTML5 und CSS entwerfen, um Ihre Kunden mit einem angepassten Erscheinungsbild anzusprechen.
 
 Auf der Wiedergabeseite des Viewers wird die Videofähigkeit des Browsers automatisch erkannt. Das Video wird dann per HLS-Streaming (adaptives Video-Streaming) bereitgestellt. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
 
@@ -189,7 +191,7 @@ HLS (HTTP Live Streaming) ist ein Apple-Standard für adaptives Videostreaming, 
 
 Progressives Video wird übermittelt, indem das Video lokal auf den Desktop-Bildschirm oder das Mobilgerät hochgeladen und gespeichert wird.
 
-In der folgenden Tabelle sind das Gerät, der Browser und die Wiedergabe von Videos auf Desktopcomputern und Mobilgeräten mit dem Dynamic Media Video Viewer aufgeführt.
+Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethode für Videos auf Desktop-Computern und Mobilgeräten mit Dynamic Media Video Viewer.
 
 <table> 
  <tbody> 
@@ -221,7 +223,7 @@ In der folgenden Tabelle sind das Gerät, der Browser und die Wiedergabe von Vid
   <tr> 
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS Video-Streaming.</td>
+   <td>HLS-Videostreaming.</td>
   </tr>
   <tr> 
    <td>Desktop</td>
@@ -296,7 +298,7 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
-Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobearbeitungstool anzeigen oder eine Anwendung verwenden, die zum Abrufen von Metadaten entwickelt wurde. Im Folgenden wird die Nutzung von MediaInfo, einer Drittanbieteranwendung, zum Abrufen der Metadaten einer Videodatei beschrieben:
+Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobearbeitungs-Tool anzeigen oder ein Programm verwenden, das zum Abrufen von Metadaten entwickelt wurde. Im Folgenden wird die Nutzung von MediaInfo, einer Drittanbieteranwendung, zum Abrufen der Metadaten einer Videodatei beschrieben:
 
 1. Gehen Sie zu dieser Webseite: [https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo).
 1. Wählen Sie das Installationsprogramm für die verwendete GUI-Version aus und laden Sie es herunter. Befolgen Sie die Installationsanweisungen.
@@ -488,9 +490,9 @@ Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wen
 1. Tippen Sie auf der Seite **[!UICONTROL Bibliothek]** unter YouTube-APIs auf **[!UICONTROL YouTube-Daten-API]**.
 1. Tippen Sie oben auf der Seite **[!UICONTROL YouTube Data API v3]** auf **[!UICONTROL Aktivieren]**, um sie zu aktivieren.
 1. Um die API zu verwenden, benötigen Sie Berechtigungen. Falls erforderlich, tippen Sie auf **[!UICONTROL Anmeldeinformationen erstellen]**.
-1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Von wo rufen Sie die API auf?]** die Option **[!UICONTROL Webserver (z. B. node.js, Tomcat)]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Über welche Plattform wir die API abgerufen?]** die Option **[!UICONTROL Webserver (z. B. Node.js, Tomcat)]**.
 1. Wählen Sie unter **[!UICONTROL Auf welche Daten greifen Sie zu?]** die Option **[!UICONTROL Benutzerdaten]**.
-1. Tippen Sie auf **[!UICONTROL Welche Anmeldedaten benötige ich?]**.
+1. Tippen Sie auf **[!UICONTROL Welche Anmeldedaten brauche ich?]**.
 1. Geben Sie unter der Überschrift **[!UICONTROL OAuth 2.0-Client-ID erstellen]** einen eindeutigen Namen ein.
 1. Geben Sie im Textfeld unter der Überschrift **[!UICONTROL Autorisierte JavaScript-Herkünfte]** den folgenden Pfad ein, ersetzen Sie Ihre eigene Domäne und Anschlussnummer im Pfad und drücken Sie dann **[!UICONTROL die Eingabetaste]**, um den Pfad zur Liste hinzuzufügen:
 
@@ -598,7 +600,7 @@ Falls Sie die Standard-Tags in AEM verwenden möchten, können Sie diese Aufgabe
    Richten Sie nun Tags für die Veröffentlichung ein.
 
 1. **Einrichten von Tags für die Veröffentlichung** : Tippen Sie auf der Seite  **[!UICONTROL Cloud Services >]** YouTube auf den  **** Knopf, um die Liste der Tags zu bearbeiten, die Sie verwenden möchten.
-1. Tippen Sie auf das Dropdownlisten-Symbol (umgekehrtes Caret-Zeichen), um die Liste der verfügbaren Tags in AEM anzuzeigen.
+1. Tippen Sie auf das Dropdown-Listen-Symbol (umgekehrtes Caret-Zeichen), um die Liste der verfügbaren Tags in AEM anzuzeigen.
 1. Tippen Sie auf mindestens ein Tag, um es hinzuzufügen.
 
    Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und tippen Sie auf **[!UICONTROL X]**.
@@ -716,11 +718,11 @@ Wenn nach acht Stunden noch immer die Statusmeldung **[!UICONTROL Hochgeladen (V
 
 ### Verknüpfen von YouTube-URLs mit Ihrer Web-Anwendung {#linking-youtube-urls-to-your-web-application}
 
-Sie können nach dem Veröffentlichen des Videos eine YouTube-URL-Zeichenfolge abrufen, die durch Dynamic Media generiert wird. Wenn Sie die YouTube-URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder Anwendung einfügen können.
+Sie können nach dem Veröffentlichen des Videos eine YouTube-URL-Zeichenfolge abrufen, die durch Dynamic Media generiert wird. Wenn Sie die YouTube-URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder einem Programm einfügen können.
 
 Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube veröffentlicht haben.
 
-**So verknüpfen Sie YouTube-URLs mit einer Webanwendung**:
+**So verknüpfen Sie YouTube-URLs mit einer Web-Anwendung**:
 
 1. Navigieren Sie zum YouTube *published*-Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
 
@@ -835,7 +837,7 @@ Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTR
 
 Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigungen für Kodierungs- oder YouTube-Veröffentlichungsaufträge benötigen:
 
-* Für Kodierungsaufträge können Sie auf die Konfigurationsseite für alle E-Mail-Benachrichtigungen zu AEM Workflows unter **[!UICONTROL Tools > Vorgänge > Web-Konsole]** zugreifen und nach **[!UICONTROL Day CQ Workflow Email Notification Service]** suchen. Siehe [Konfigurieren der E-Mail-Benachrichtigung in AEM](/help/sites-administering/notification.md). Sie können die Kontrollkästchen für **[!UICONTROL Bei Abbruch benachrichtigen]** oder **[!UICONTROL Bei Abbruch benachrichtigen]** entsprechend aktivieren oder deaktivieren.
+* Für Kodierungsaufträge können Sie auf die Konfigurationsseite für alle E-Mail-Benachrichtigungen zu AEM Workflows unter **[!UICONTROL Tools > Vorgänge > Web-Konsole]** zugreifen und nach **[!UICONTROL Day CQ Workflow E-Mail-Benachrichtigungsdienst]** suchen. Siehe [Konfigurieren der E-Mail-Benachrichtigung in AEM](/help/sites-administering/notification.md). Sie können die Kontrollkästchen für **[!UICONTROL Bei Abbruch benachrichtigen]** oder **[!UICONTROL Bei Abbruch benachrichtigen]** entsprechend aktivieren oder deaktivieren.
 
 * Gehen Sie bei YouTube-Veröffentlichungsaufträgen wie folgt vor:
 
@@ -899,9 +901,9 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} erstellt haben
+### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer-SDK erstellt haben {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Wenn Sie einen vordefinierten Video-Viewer verwenden, der von Dynamic Media bereitgestellt wird, oder wenn Sie eine benutzerdefinierte Viewer-Vorgabe basierend auf einem vordefinierten Video-Viewer erstellt haben, sind keine weiteren Schritte zur Ansicht von Videoberichten erforderlich. Wenn Sie jedoch einen eigenen Video-Viewer auf Grundlage der HTML5 Viewer SDK API erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Verfolgungsdaten an Dynamic Media-Videoberichte sendet.
+Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer verwenden oder eine benutzerdefinierte Viewer-Vorgabe anhand eines Standardvideo-Viewers erstellt haben, müssen Sie keine zusätzlichen Schritte ausführen, um Videoberichte anzuzeigen. Wenn Sie jedoch einen eigenen Video-Viewer auf Grundlage der HTML5 Viewer SDK API erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Verfolgungsdaten an Dynamic Media-Videoberichte sendet.
 
 Verwenden Sie zum Erstellen Ihrer eigenen Video-Viewer das Referenzhandbuch für Dynamic Media-Viewer ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) und die [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) für die Adobe.[
 
@@ -922,7 +924,7 @@ So erstellen Sie Videoberichte basierend auf einem Video-Viewer, den Sie mit der
 
    * Bestimmen Sie zunächst, ob Sie den Parameter `&preset` benötigen.
 
-      Wenn der Parameter `config2` `companypreset` lautet, müssen Sie *nicht* `&preset=parameter` verwenden.
+      Wenn der Parameter `config2` `companypreset` lautet, müssen Sie *nicht* `&preset=parameter`.
 
       Wenn `config2` irgendeinen anderen Wert aufweist, setzen Sie den preset-Parameter auf denselben Wert wie den Parameter `config2`. Beispiel: Wenn `config2=companypreset-2` lautet, fügen Sie `&param2=companypreset-2` zur AppMeasurmentBridge.jsp-URL hinzu.
 
@@ -974,11 +976,11 @@ Untertitel bieten zudem eine größere Barrierefreiheit, indem optional zuschalt
 
 Mit Dynamic Media können Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertiert werden. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kunden die Videos leichter finden können und zusätzliche Details zum Videoinhalt erhalten.
 
-Weitere Informationen zur Verwendung der JSON-Funktion in einer URL finden Sie unter [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in der *Dynamic Media Image Serving and Rendering API Help*.
+Weitere Informationen zur Verwendung der JSON-Funktion in einer URL finden Sie unter [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=de#image-serving-api) in der *Dynamic Media Image Serving and Rendering API Help*.
 
 **So fügen Sie einem Video Untertitel hinzu**:
 
-1. Verwenden Sie eine Drittanbieteranwendung bzw. einen Service, um Ihre Untertiteldatei für ein Video zu erstellen.
+1. Verwenden Sie ein Drittanbieterprogramm bzw. einen Service, um Ihre Untertiteldatei für ein Video zu erstellen.
 
    Stellen Sie sicher, dass die erstellte Datei dem WebVTT-Standard (Web Video Text Tracks) entspricht. Die Erweiterung der Untertiteldatei lautet .vtt. Weitere Informationen zum WebVTT-Untertitelstandard erhalten Sie auf der folgenden Seite.
 
