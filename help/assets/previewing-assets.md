@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
+exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
+feature: Asset-Verwaltung, Darstellungen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1031'
 ht-degree: 90%
 
 ---
-
 
 # Anzeigen von Dynamic Media-Assets in der Vorschau {#previewing-assets}
 
@@ -110,4 +112,3 @@ Neben der dedizierten Vorschau für Videos, Rotationssets und Bildsätze können
   </tr>
  </tbody>
 </table>
-
