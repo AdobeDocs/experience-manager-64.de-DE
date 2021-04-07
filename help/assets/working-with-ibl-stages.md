@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
+exl-id: 074ab20f-02df-4f9e-9512-93a76f5d234f
+feature: 3D-Assets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '850'
 ht-degree: 58%
 
 ---
-
 
 # Arbeiten mit IBL-Bühnen {#about-working-with-ibl-stages}
 
@@ -36,14 +38,14 @@ Derzeit unterstützt AEM 3D nur 32-Bit-TIFF-Dateien. Verwenden Sie gegebenenfal
 Häufig ist ein einziges HDR-Bild für IBL-Bühnen ausreichend. AEM 3D lässt jedoch bis zu drei separate Bilder zu und bietet so zusätzliche Steuerungsmöglichkeiten der IBL-Effekte:
 
 * **Lichtbild**  - Dieser Bildtyp sollte ein HDR-Umgebung sein, kann aber relativ klein sein, da das Bild stark gefiltert wird, bevor es für diffuse Beleuchtung verwendet wird.
-* **Reflektionsbild**  - Dieser Bildtyp wird verwendet, um Reflexionen in Objektflächen zu erstellen. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe und Auflösung sind geeignet, um die Anforderungen an Qualität und Schärfe der Reflexionen zu erfüllen. Bei Angabe eines HDR-Bildes wandelt AEM 3D das Bild in 8-Bit-RGB um, bevor ein proprietärer Algorithmus verwendet wird.
+* **Reflektionsbild**  - Dieser Bildtyp wird verwendet, um Reflexionen in Objektoberflächen zu erstellen. Es kann sich um ein Standard-8-Bit-RGB-Bild handeln. Größe und Auflösung sind geeignet, um die Anforderungen an Qualität und Schärfe der Reflexionen zu erfüllen. Bei Angabe eines HDR-Bildes wandelt AEM 3D das Bild in 8-Bit-RGB um, bevor ein proprietärer Algorithmus verwendet wird.
 * **Hintergrundbild**  - Dieser Bildtyp wird als Hintergrund verwendet. Es kann sich um ein standardmäßiges 8-Bit-RGB-Bild handeln, das die gewünschte Größe/Auflösung/Detailebene für den Bühnenhintergrund aufweist. Wenn ein HDR-Bild angegeben ist, konvertiert AEM 3D dieses mithilfe eines proprietären Algorithmus in ein 8-Bit-RGB-Bild.
 
 >[!NOTE]
 >
 >Der Umwandlungsalgorithmus kann bei bestimmten IBL-Bildern Probleme bereiten. Diese Probleme können dazu führen, dass Hintergrundbilder in der Vorschau oder beim Rendern mit Rapid Refine zu hell oder zu stark gesättigt sind. In solchen Fällen empfiehlt Adobe die Verwendung von Photoshop oder einem vergleichbaren Tool zur manuellen Umwandlung des IBL-Bildes in ein 8-Bit-RGB-Bild. Laden Sie dieses Bild separat hoch und fügen Sie es der Bühne als Hintergrundumgebungsbild hinzu. Die Umgebungsbilder für diffuse Beleuchtung und Reflexion müssen immer TIFF-Dateien von 32-Bit sein.
 
-## Anpassen des Erscheinungsbildes der IBL-Bühnen  {#adjusting-the-ibl-stage-appearance}
+## Anpassen des Erscheinungsbildes der IBL-Bühnen {#adjusting-the-ibl-stage-appearance}
 
 Sie können das Erscheinungsbild der IBL-Bühne mithilfe der folgenden Eigenschaften festlegen:
 
@@ -95,4 +97,3 @@ IBL-Stufen verwenden standardmäßig kugelförmige Hintergrundbilder mit einem D
    Beispielsweise wird ein 20 Meter langes Jet-plane-Modell gut angezeigt, wenn `dam:gPlaneRadius=20000`.
 
 1. Tippen Sie links oben auf der Seite &quot;CRXDE Lite&quot;auf **[!UICONTROL Alle speichern]**.
-
