@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+exl-id: 71f89564-a413-49f6-8d6e-c5305bf92c75
+feature: 3D-Assets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1780'
 ht-degree: 62%
 
 ---
-
 
 # Anzeigen von 3D-Assets {#viewing-d-assets}
 
@@ -22,7 +24,7 @@ ht-degree: 62%
 
 In diesem Dokument wird beschrieben, wie Sie 3D-Assets in den Asset-Details anzeigen können. Außerdem wird beschrieben, wie Sie Assets anzeigen können, die sich in der 3D-Komponente in Sites befinden.
 
-## Anzeigen von 3D-Assets in der Asset-Detailseite  {#viewing-d-assets-in-the-asset-details-page}
+## Anzeigen von 3D-Assets in der Asset-Detailseite {#viewing-d-assets-in-the-asset-details-page}
 
 Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in AEM verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
@@ -183,4 +185,3 @@ So arbeiten Sie auf Maus- und Trackball-Geräten mit 3D-Komponenten:
 1. Ziehen Sie, während Sie die **ALT/option**-Taste und die linke Maustaste gedrückt halten, um die Kamera zu schwenken. Dadurch wird die Kamera seitlich versetzt und ermöglicht es Ihnen, sich im eingezoomten Modus verschiedene Teile des Objekts anzusehen. Alternativ können Sie auch auf die Schaltfläche **[!UICONTROL Umschalten/Schwenken]** klicken, um in den Modus **[!UICONTROL Schwenken]** umzuschalten, und dann mit der linken Maustaste ziehen, um die Kamera zu schwenken. Klicken Sie erneut auf **[!UICONTROL Umschalten/Schwenken]**, um zum Modus **[!UICONTROL Umlaufbahn]** zurückzukehren.
 1. Klicken Sie auf **[!UICONTROL Viewer zurücksetzen]**, um die Kamera zurückzusetzen. Mit dieser Aktion wird das Objekt erneut in der Vollansicht angezeigt und die automatische Drehung fortgesetzt, sofern sie aktiviert ist.
 1. Klicken Sie auf **[!UICONTROL Vollbild]**, um in den Vollbildmodus zu wechseln. Verwenden Sie die Taste **[!UICONTROL Escape]** auf Ihrer Tastatur oder klicken Sie erneut auf **[!UICONTROL Vollbild]**, um den 3D-Viewer im seiteneingebetteten Modus wiederherzustellen.
-
