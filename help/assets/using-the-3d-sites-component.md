@@ -9,14 +9,16 @@ topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
+exl-id: bf87b470-08c8-44b4-95d9-1251586b0610
+feature: 3D-Assets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 36%
+source-wordcount: '1043'
+ht-degree: 37%
 
 ---
-
 
 # Arbeiten mit der 3D-Sitekomponente {#working-with-the-d-sites-component}
 
@@ -87,7 +89,7 @@ Sie müssen die 3D-Komponente auf der Seite aktivieren, bevor Sie sie auf einer 
     <td> </td> 
     </tr> 
     <tr> 
-    <td>Name der Phase</td> 
+    <td>Bühne Name</td> 
     <td><p>Wählen Sie eine 3D-Bühne aus der Liste verfügbarer Bühnen aus. Die Bühne bietet Hintergrund und Beleuchtung.</p> <p>Siehe <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">Informationen zur Verwendung von Phasen in AEM 3D-Sites</a>.</p> </td> 
     <td>Wird für Adobe Dimension-Assets ignoriert.</td> 
     </tr> 
@@ -172,4 +174,3 @@ Weitere Informationen zum Veröffentlichen von Assets finden Sie unter [Veröffe
 >Mit dem Menüelement **[!UICONTROL Seite veröffentlichen]** im Menü **[!UICONTROL Seiteninformationen]** veröffentlichen Sie die Seite und alle Abhängigkeiten der primären Seite. Sekundäre Abhängigkeiten, die möglicherweise vom 3D-Modell und/oder der 3D-Bühne verwendet werden, wie z. B. Texturmaps oder IBL-Bilder, werden auf diese Weise nicht veröffentlicht.
 >
 >Adobe empfiehlt, dass Sie alle 3D-Assets und ihre Abhängigkeiten direkt von AEM Assets veröffentlichen, bevor Sie die Webseite veröffentlichen, die auf diese Assets verweist.
-
