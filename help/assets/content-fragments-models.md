@@ -8,14 +8,16 @@ content-type: reference
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
+exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
+feature: Inhaltsfragmente
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '706'
 ht-degree: 91%
 
 ---
-
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
@@ -34,7 +36,7 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
 * Aktivieren Sie die Verwendung von Inhaltsfragmentmodellen im Konfigurations-Manager
-* Wenden Sie die Konfiguration auf Ihren Assets-Ordner an
+* Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
 ### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager    {#enable-content-fragment-models-in-configuration-manager}
 
@@ -68,13 +70,13 @@ Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbare
    >
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](#enable-content-fragment-models), ist die Option **Erstellen** nicht verfügbar.
 
-1. Geben Sie den **[!UICONTROL Modelltitel]** an. Sie können bei Bedarf auch eine **[!UICONTROL Beschreibung]** hinzufügen.
+1. Geben Sie den **[!UICONTROL Modell-Titel]** an. Sie können bei Bedarf auch eine **[!UICONTROL Beschreibung]** hinzufügen.
 
    ![cfm-6420-10](assets/cfm-6420-10.png)
 
 1. Speichern Sie das leere Modell über **[!UICONTROL Erstellen]**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **[!UICONTROL Öffnen]** direkt bearbeiten oder über **[!UICONTROL Fertig]** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells    {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells   {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehenden Inhaltsmodells. Mit dem Modell-Editor können Sie die erforderlichen Felder hinzufügen und konfigurieren:
 
@@ -85,7 +87,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** und öffnen Sie dann **[!UICONTROL Inhaltsfragmentmodelle]**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Öffnen Sie das zu **[!UICONTROL bearbeitende]** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Anwendungssymbolleiste aus.
+1. Öffnen Sie das zu **[!UICONTROL bearbeitende]** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Symbolleiste aus.
 
    Wenn das Modell geöffnet ist, finden Sie Folgendes im Editor:
 
@@ -129,13 +131,13 @@ So löschen Sie ein Inhaltsfragmentmodell:
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** und öffnen Sie dann **[!UICONTROL Inhaltsfragmentmodelle]**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Wählen Sie Ihr Modell und anschließend die Option **[!UICONTROL Löschen]** aus der Anwendungssymbolleiste aus.
+1. Wählen Sie Ihr Modell und anschließend die Option **[!UICONTROL Löschen]** aus der Symbolleiste aus.
 
    >[!NOTE]
    >
    >Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells    {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
@@ -144,9 +146,8 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** und öffnen Sie dann **[!UICONTROL Inhaltsfragmentmodelle]**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Wählen Sie Ihr Modell und anschließen die Option **[!UICONTROL Löschen]** aus der Anwendungssymbolleiste aus.
+1. Wählen Sie Ihr Modell und anschließen die Option **[!UICONTROL Veröffentlichen]** aus der Symbolleiste aus.
 
    >[!NOTE]
    >
    >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
-
