@@ -9,22 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
+exl-id: e076349d-8b1a-487f-b982-9440d7de13b9
+feature: Konfiguration
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1290'
 ht-degree: 96%
 
 ---
 
-
 # Verknüpfen von URLs mit einer Web-Anwendung {#linking-urls-to-your-web-application}
 
-Ihre Websites und Anwendungen greifen über URL-Aufrufe auf Dynamic Media-Dienste zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
+Ihre Websites und Programme greifen über URL-Aufrufe auf Dynamic Media-Services zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
 
 Sie verknüpfen nur dann zu URLs, wenn Sie AEM *nicht* als Ihren WCM verwenden. Die Verknüpfung (im Gegensatz zur Einbettung) wird verwendet, wenn Sie einen Video-Player als Popup oder modales Fenster übermitteln möchten. Wenn Sie AEM als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
 
-Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Anwendungen zu platzieren, müssen Sie sie aus Dynamic Media kopieren.
+Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platzieren, müssen Sie sie aus Dynamic Media kopieren.
 
 >[!NOTE]
 >
@@ -40,7 +42,7 @@ Informationen hierzu finden Sie auch unter [Hochladen von Assets.](managing-asse
 
 ## Abrufen einer URL für ein Asset     {#obtaining-a-url-for-an-asset}
 
-Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorgabe generiert wird. Wenn Sie die URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder Anwendung einfügen können.
+Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorgabe generiert wird. Wenn Sie die URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder einem Programm einfügen können.
 
 >[!NOTE]
 >
@@ -95,7 +97,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 * Animiertes GIF
 * Audiodateien
 * CSS
-* JavaScript (wenn das Unternehmen mit einer eigenen Domäne konfiguriert wurde)
+* JavaScript (wenn das Unternehmen mit einer eigenen Domain konfiguriert wurde)
 * PDF
 * SVG
 * XML
