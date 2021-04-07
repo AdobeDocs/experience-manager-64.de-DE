@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
+exl-id: 3eecec53-0b39-4783-8730-f08705183941
+feature: 3D-Assets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 78%
 
 ---
-
 
 # Rendern von 3D-Assets {#rendering-d-assets}
 
@@ -90,4 +92,3 @@ Umrechnungs-, Verarbeitungs- und Renderaufträge werden in die Warteschlange des
 1. Tippen Sie auf **[!UICONTROL Renderer starten]**, um den Renderprozess zu starten.
 
    In der vorübergehend angezeigten Meldung wird Ihnen mitgeteilt, dass die Wiedergabe begonnen hat. Aus praktischen Gründen enthält diese Meldung auch eine Verknüpfung zum ausgewählten Ausgabeordner, damit Sie direkt darauf zugreifen können.
-
