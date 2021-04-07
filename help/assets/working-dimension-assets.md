@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
+exl-id: be8f6361-607d-4529-aef0-e8978dfd04b4
+feature: 3D-Assets
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
-
 
 # Arbeiten mit Adobe Dimension-Assets {#working-with-adobe-dimension-assets}
 
@@ -52,4 +54,3 @@ Beachten Sie, dass sich die Benutzeroberfläche des glTF-Viewers etwas von dem S
 * [AEM 3D-Version ](/help/release-notes/aem3d-release-notes.md) enthält Einschränkungen und Einschränkungen für Dn-Assets und den glTF-Viewer.
 * [Arbeiten mit der ](using-the-3d-sites-component.md) Komponente &quot;3D-Sites&quot;für Komponenteneigenschaften, die für Adobe Dimension-Assets spezifisch sind.
 * [Installieren und Konfigurieren AEM 3](install-config-3d.md) DPS zum Konfigurieren des Cloud-basierten Konvertierungsdiensts.
-
