@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
+exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
+feature: Inhaltsfragmente
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '984'
 ht-degree: 87%
 
 ---
-
 
 # Erstellen von Übersetzungsprojekten für Inhaltsfragmente {#creating-translation-projects-for-content-fragments}
 
@@ -163,4 +165,3 @@ Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten S
    >[!NOTE]
    >
    >Die Verfahren zum Hinzufügen eines Inhaltsfragments zu einem vorhandenen Projekt oder zum Durchführen von Update-Workflows ähneln den entsprechenden Verfahren für Assets. Weitere Informationen zu diesen Verfahren finden Sie in den Prozeduren für Assets.
-
