@@ -7,14 +7,16 @@ uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
+exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
+feature: Konfiguration, Hybridmodus
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '7793'
+source-wordcount: '7796'
 ht-degree: 55%
 
 ---
-
 
 # Konfigurieren von Dynamic Media – Hybridmodus {#configuring-dynamic-media-hybrid-mode}
 
@@ -284,7 +286,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
    Als Nächstes müssen Sie den [Replikationsagenten konfigurieren](#configuring-the-replication-agent).
 
-### Konfigurieren des Replikationsagenten  {#configuring-the-replication-agent}
+### Konfigurieren des Replikationsagenten {#configuring-the-replication-agent}
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools >  Bereitstellung >  Replikation > Agenten für Autor]**.
 1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Hybride Bildreplikation für dynamische Medien (s7delivery)]**.
@@ -333,7 +335,7 @@ Sie können die Überprüfung auch durchführen, indem Sie einen der folgenden S
 
 Hier sind einige Probleme, die beim Einrichten der Authentifizierung auftreten können, und die dazugehörigen Lösungen angegeben. Achten Sie darauf, dass Sie die Replikation eingerichtet haben, bevor Sie diese Angaben prüfen.
 
-#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich)  {#problem-http-status-code-with-message-authorization-required}
+#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich) {#problem-http-status-code-with-message-authorization-required}
 
 Dieses Problem kann auftreten, wenn der KeyStore für den Benutzer `dynamic-media-replication` nicht eingerichtet wurde.
 
