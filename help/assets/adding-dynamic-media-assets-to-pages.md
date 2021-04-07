@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
+exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
+feature: 'Komponenten '
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2825'
-ht-degree: 61%
+source-wordcount: '2826'
+ht-degree: 62%
 
 ---
-
 
 # Hinzufügen von Dynamic Media-Assets zu Seiten {#adding-dynamic-media-assets-to-pages}
 
@@ -62,7 +64,7 @@ Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar s
    ![Richtlinie](/help/assets/assets-dm/structure-mode.png)
 
 1. Tippen Sie unten auf der Seite auf **[!UICONTROL Layout-Container]**, um die Symbolleiste zu öffnen. Tippen Sie anschließend auf das Symbol „Richtlinie“.
-1. Stellen Sie auf der Seite **[!UICONTROL Layout-Container]** unter der Überschrift **[!UICONTROL Eigenschaften]** sicher, dass die Registerkarte **[!UICONTROL Zulässige Komponenten]** ausgewählt ist.
+1. Stellen Sie auf der Seite **[!UICONTROL Layout-Container]** unter der Überschrift **[!UICONTROL Eigenschaften]** sicher, dass die Registerkarte **[!UICONTROL Zugelassene Komponenten]** ausgewählt ist.
 
    ![Zugelassene Komponenten](/help/assets/assets-dm/allowed-components.png)
 
@@ -188,8 +190,8 @@ ModifikatorenViewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Pa
 
    Mit Viewer-Modifikatoren können Sie beispielsweise Folgendes ausführen:
 
-   * Verknüpfen Sie eine Untertiteldatei mit einem Video [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Verknüpfen Sie eine Navigationsdatei mit einem Video [Navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Verknüpfen Sie eine Untertiteldatei mit einem Video [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=de)
+   * Verknüpfen Sie eine Navigationsdatei mit einem Video [Navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=de)
 
 Sie können die folgenden [!UICONTROL Erweiterte Einstellungen] bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
@@ -220,7 +222,7 @@ Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemisc
 Sie können die folgenden **[!UICONTROL Erweitert]** Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * ****
-TitelÄndern Sie den Titel des Smart-Zuschneidebilds.
+TitelÄndern Sie den Titel des Smart-Schnittbilds.
 
 * **[!UICONTROL Alt-]**
 TextFügen Sie dem Bild für intelligente Beschneidung einen Titel für Benutzer hinzu, die Grafiken deaktiviert haben.
@@ -289,7 +291,7 @@ Wenn die gesuchte Viewer-Vorgabe nicht angezeigt wird, stellen Sie sicher, dass 
 
 ### Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
+HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
 Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2.md).
 
