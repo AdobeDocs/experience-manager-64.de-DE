@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
+exl-id: 3cee9b4f-c4be-4ffc-970c-5680c8ebba47
+feature: 3D-Assets
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1177'
 ht-degree: 74%
 
 ---
-
 
 # Arbeiten mit AEM 3D-Assets {#working-with-d-assets}
 
@@ -162,4 +164,3 @@ Weitere Informationen finden Sie unter [Rendern von 3D-Assets](rendering-3d-asse
 ## Benennen von Materialien in einer primären 3D-Modelldatei {#naming-materials-in-a-primary-d-model-file}
 
 Eine *Oberfläche* ist als der Oberflächenbereich eines 3D-Modells definiert, der von demselben Material bedeckt ist. Dieses Material gibt der Oberfläche auch ihren Namen. Daher empfiehlt Adobe, die in primären 3D-Modelldateien enthaltenen Materialien entsprechend zu benennen. Beispielsweise wird die Verwendung bestimmter Namen wie &quot;Körper&quot;, &quot;Windows&quot;, &quot;Reifen&quot;oder &quot;Rims&quot;der Verwendung vager Namen wie &quot;Rot&quot;, &quot;Glas&quot;, &quot;Gummi&quot;oder &quot;Aluminium&quot;vorgezogen.
-
