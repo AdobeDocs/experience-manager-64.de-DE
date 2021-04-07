@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
+exl-id: 52ecbf81-0953-4c44-bc2c-d40e507b8d98
+feature: 3D-Assets
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 36%
+source-wordcount: '876'
+ht-degree: 37%
 
 ---
-
 
 # Integration von AEM 3D mit Autodesk Maya {#integrating-aem-d-with-autodesk-maya}
 
@@ -108,7 +110,7 @@ Siehe auch [Integration von AEM 3D mit AutoDesk 3ds Max](integrating-aem-3d-with
 
 (Optional) Maya unterstützt eine Reihe von 3D-Eingabeformaten, von denen jedes aktiviert werden kann, damit AEM den Dateityp erkennt. Wenn diese Option aktiviert ist, sendet AEM die Datei an Maya, um sie in ein Zwischenformat zu konvertieren, das direkt von AEM aufgenommen werden kann.
 
-Je nach Format kann die Unterstützung für Funktionen eingeschränkt sein (z. B. werden Materialien nicht weitergegeben) und Qualität/Treue kann eingeschränkt sein (z. B. umgekehrte Gesichter). Adobe unterstützt nur den allgemeinen Mechanismus, jedoch keine bestimmte Formatkonversion.
+Je nach Format kann die Unterstützung für Funktionen eingeschränkt sein (z. B. werden Materialien nicht weitergegeben), und Qualität/Treue kann eingeschränkt sein (z. B. umgekehrte Gesichter). Adobe unterstützt nur den allgemeinen Mechanismus, jedoch keine bestimmte Formatkonversion.
 
 Siehe [Unterstützte Datenimportformate | Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-69BC066D-D4D8-4B12-900C-CF42E798A5D6-htm.html) für Informationen über die von Maya unterstützten Formate.
 
@@ -128,4 +130,3 @@ Siehe [Unterstützte Datenimportformate | Maya](https://knowledge.autodesk.com/s
 Im folgenden Screenshot wird ein hinzugefügtes Dateiformat veranschaulicht, wobei COLLADA DAE als Beispiel verwendet wird:
 
 ![image2018-6-22_12-50-39](assets/image2018-6-22_12-50-39.png)
-
