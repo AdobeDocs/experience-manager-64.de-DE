@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
+exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
+feature: Inhaltsfragmente
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 11b5f915797faa691834d4286437e9e698af187d
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 97%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -30,7 +32,7 @@ Wenn Sie [Inhalt erstellen oder bearbeiten](content-fragments-variations.md#auth
 
 Sie können Folgendes definieren:
 
-* [Überschriftsnotation ](/help/assets/content-fragments-markdown.md#heading-notation) 
+* [Überschriftsnotation ](/help/assets/content-fragments-markdown.md#heading-notation)
 * [Absätze und Zeilenumbrüche](/help/assets/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Links](/help/assets/content-fragments-markdown.md#links)
 * [Bilder](/help/assets/content-fragments-markdown.md#images)
@@ -40,7 +42,7 @@ Sie können Folgendes definieren:
 * [Code-Blöcke](/help/assets/content-fragments-markdown.md#code-blocks)
 * [Umgekehrter Schrägstrich als Escape-Zeichen](/help/assets/content-fragments-markdown.md#backslash-escapes)
 
-## Überschriftsnotation {#heading-notation} 
+## Überschriftsnotation {#heading-notation}
 
 Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Rautezeichen (#) wird für Ü1, zwei Rautezeichen (# #) werden für Ü2 usw. verwendet. Sie können bis zu 6 Rautezeichen verwenden. Beispiel:
 
@@ -184,7 +186,7 @@ Beispiel:
 
 ## Code-Blöcke {#code-blocks}
 
-Codeblöcke werden in der Regel verwendet, um den Quellcode zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
+Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
 
     `This is a normal paragraph.`
 
@@ -219,4 +221,3 @@ Umgekehrte Schrägstriche als Escape-Zeichen sind für die folgenden Zeichen ver
     ` - minus sign (hyphen)`
 
     ` . dot`
-
