@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
+exl-id: 895103c8-df58-40f0-85d6-e29637edce53
+feature: Bildprofile
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2715'
 ht-degree: 91%
 
 ---
-
 
 # Dynamic Media Image Profils {#image-profiles}
 
@@ -105,7 +107,8 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
  </tbody> 
 </table>
 
-Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
+Das Scharfzeichnen wird unter
+     [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Image-Profilen {#creating-image-profiles}
 
