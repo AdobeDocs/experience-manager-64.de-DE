@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
+exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
+feature: Inhaltsfragmente
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1511'
 ht-degree: 97%
 
 ---
-
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
@@ -120,7 +122,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder die [Desktop-App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html).
+>Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder die [Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -133,7 +135,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 1. Navigieren Sie in der Konsole **[!UICONTROL Assets]** zum Speicherort des gewünschten Inhaltsfragments.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
-   * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
+   * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **[!UICONTROL Bearbeiten]** aus.
 
    Der Fragmenteditor wird geöffnet:
@@ -338,4 +340,3 @@ So löschen Sie ein Fragment:
    >[!CAUTION]
    >
    >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **[!UICONTROL erzwungenen Löschens]** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
-
