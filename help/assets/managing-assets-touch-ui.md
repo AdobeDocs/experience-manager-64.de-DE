@@ -4,15 +4,15 @@ description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbei
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset-Verwaltung, Suche, Darstellungen, Zusammenarbeit
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
 workflow-type: tm+mt
-source-wordcount: '10046'
-ht-degree: 66%
+source-wordcount: '10083'
+ht-degree: 65%
 
 ---
-
 
 # Digitale Assets {#managing-assets-with-the-touch-optimized-ui} verwalten
 
@@ -571,48 +571,33 @@ Sie benötigen eine Löschberechtigung für DAM/Asset, um ein Asset löschen zu 
 
 Siehe [Herunterladen von Assets aus AEM](download-assets-from-aem.md)
 
-## Veröffentlichen von Assets {#publishing-assets}
+## Veröffentlichen und Rückgängigmachen der Veröffentlichung von Assets {#publish-assets}
 
-Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen oder veröffentlichen Sie das Asset nach Abschluss der Verarbeitung erneut.
+Nach dem Hochladen, Verarbeiten oder Bearbeiten Ihrer Assets auf dem [!DNL Experience Manager]-Autor veröffentlichen Sie das Asset auf dem Veröffentlichungsserver. Durch Veröffentlichen wird das Asset öffentlich verfügbar gemacht. Beim Rückgängigmachen der Veröffentlichung wurde das Asset vom Veröffentlichungsserver, jedoch nicht vom Authoring-Server entfernt.
 
-Wenn der Ordner, den Sie veröffentlichen möchten, einen leeren Ordner enthält, wird der leere Ordner nicht veröffentlicht.
+Spezifische Informationen zu [!DNL Dynamic Media] finden Sie unter [publishing [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md).
 
-Weitere Informationen speziell zu dynamischen Medien finden Sie unter [Veröffentlichen von Assets mit dynamischen Medien](publishing-dynamicmedia-assets.md).
+1. Navigieren Sie zum Speicherort des Assets oder Asset-Ordners, den Sie veröffentlichen möchten oder den Sie aus der Umgebung &quot;Veröffentlichung rückgängig machen&quot;entfernen möchten.
 
-**So veröffentlichen Sie Assets**:
+1. Wählen Sie das Asset oder den Ordner aus, dessen Veröffentlichung rückgängig gemacht werden soll, und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Veröffentlichung verwalten]** ![Veröffentlichungsoption verwalten](assets/do-not-localize/globe-publication.png). Um eine schnelle Veröffentlichung zu ermöglichen, wählen Sie in der Symbolleiste die Option **[!UICONTROL Schnellveröffentlichung]**. Wenn der Ordner, den Sie veröffentlichen möchten, einen leeren Ordner enthält, wird der leere Ordner nicht veröffentlicht.
 
-1. Navigieren Sie zum Speicherort der Assets/Ordner, die Sie veröffentlichen möchten
+1. Wählen Sie nach Bedarf die Option **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Veröffentlichung rückgängig machen]**.
 
-1. Wählen Sie entweder die Schnellaktion **[!UICONTROL Veröffentlichen]** auf der Asset-Karte aus oder wählen Sie das Asset aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Schnellveröffentlichung]**.
-1. Wenn das Asset andere Assets referenziert, werden die Verweise im Assistenten aufgelistet. Es werden nur Verweise angezeigt, die seit der letzten Veröffentlichung oder Veröffentlichung unveröffentlicht oder geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
+   ![Aktion rückgängig machen](assets/unpublish_action.png)
+   *Abbildung: Optionen zum Veröffentlichen und Rückgängigmachen der Veröffentlichung und die Planungsoption.*
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+1. Wählen Sie **[!UICONTROL Jetzt]** aus, um sofort auf das Asset zu reagieren, oder wählen Sie **[!UICONTROL Später]**, um die Aktion zu planen. Wählen Sie ein Datum und eine Uhrzeit aus, wenn Sie die Option **[!UICONTROL Später]** wählen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Tippen Sie auf **[!UICONTROL Veröffentlichen]**, um die Aktivierung für die Assets zu bestätigen.
+1. Wenn beim Veröffentlichen ein Asset auf andere Assets verweist, werden seine Verweise im Assistenten aufgeführt. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung nicht veröffentlicht oder geändert wurden. Wählen Sie die Verweise aus, die Sie veröffentlichen möchten.
 
-## Rückgängigmachen der Veröffentlichung von Assets {#unpublishing-assets}
+1. Wenn Sie die Veröffentlichung rückgängig machen und ein Asset auf andere Assets verweist, wählen Sie die Referenzen aus, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Abbrechen]**, um die Aktion zu beenden, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
 
-Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
+Verstehen Sie die folgenden Einschränkungen und Tipps zum Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern:
 
-**So machen Sie die Veröffentlichung von Assets rückgängig**:
-
-1. Navigieren Sie zum Speicherort des Assets oder Asset-Ordners, den Sie aus der Umgebung &quot;Veröffentlichung rückgängig machen&quot;entfernen möchten.
-
-1. Wählen Sie das Asset oder den Ordner aus, dessen Veröffentlichung rückgängig gemacht werden soll, und klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichung verwalten]**.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. Wählen Sie die Aktion **[!UICONTROL Veröffentlichung rückgängig machen]** aus der Liste aus.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. Um die Veröffentlichung des Assets später rückgängig zu machen, wählen Sie **[!UICONTROL Veröffentlichung später rückgängig machen]** und anschließend ein Datum aus, an dem die Veröffentlichung des Assets rückgängig gemacht werden soll.
-1. Legen Sie ein Datum fest, an dem die Assets aus der Veröffentlichungsumgebung entfernt werden sollen.
-1. Wenn das Asset andere Assets referenziert, wählen Sie die Verweise aus, deren Veröffentlichung Sie rückgängig machen möchten. Tippen Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
-1. Führen Sie im Bestätigungsdialogfeld einen der folgenden Schritte aus:
-
-   * Tippen Sie auf **[!UICONTROL Abbrechen]**, um die Aktion zu beenden.
-   * Tippen Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Assets am angegebenen Umgebung nicht mehr veröffentlicht wurden (nicht mehr verfügbar auf der Veröffentlichungsseite).
+* Die Option [!UICONTROL Veröffentlichung verwalten] steht nur für Benutzerkonten mit Replizierungsberechtigungen zur Verfügung.
+* Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen, machen Sie die Veröffentlichung nur des Assets rückgängig. Vermeiden Sie es, die Veröffentlichung der Verweise rückgängig zu machen, da diese möglicherweise von anderen veröffentlichten Assets referenziert werden.
+* Leere Ordner werden nicht veröffentlicht.
+* Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
 ## Eine geschlossene Benutzergruppe {#closed-user-group} erstellen
 
