@@ -2,16 +2,16 @@
 title: Best Practices für die Integration von AEM und Creative Cloud
 description: Best Practices zur Integration einer AEM-Bereitstellung mit Adobe Creative Cloud, um die Workflows der Asset-Übertragung zu optimieren und eine maximale Effizienz zu erzielen
 contentOwner: AG
-feature: Zusammenarbeit,Adobe Asset Link,Experience Manager Desktop-App
-role: Geschäftspraktiker, Administrator
+feature: Zusammenarbeit,Adobe Asset Link,Desktop-App
+role: Business Practitioner,Administrator
+exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 257355371068cdb47f75a0a17ea4831e10dc6a69
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3578'
 ht-degree: 85%
 
 ---
-
 
 # Best Practices für die Integration von AEM und Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
