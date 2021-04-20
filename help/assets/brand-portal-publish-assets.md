@@ -3,7 +3,7 @@ title: Veröffentlichen von Ordnern in Brand Portal
 description: Erfahren Sie, wie Sie Assets im Markenportal veröffentlichen und die Veröffentlichung rückgängig machen.
 contentOwner: VG
 feature: Brand Portal
-role: Geschäftspraktiker
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

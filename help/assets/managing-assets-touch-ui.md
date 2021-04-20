@@ -3,7 +3,7 @@ title: Digitale Assets mit AEM Assets verwalten
 description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Verwaltung, Suche, Darstellungen, Zusammenarbeit
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

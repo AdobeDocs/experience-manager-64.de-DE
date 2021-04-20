@@ -2,7 +2,7 @@
 title: Prüfen von Benutzerverwaltungsvorgängen in AEM
 seo-title: Prüfen von Benutzerverwaltungsvorgängen in AEM
 description: Erfahren Sie, wie Sie Benutzerverwaltungsvorgänge in AEM prüfen.
-feature: Betrieb
+feature: Operations
 seo-description: Erfahren Sie, wie Sie Benutzerverwaltungsvorgänge in AEM prüfen.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

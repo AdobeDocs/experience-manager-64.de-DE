@@ -2,8 +2,8 @@
 title: Assets stapelweise in Adobe Experience Manager Assets migrieren
 description: So können Sie Assets in AEM einbinden, Metadaten anwenden, Darstellungen generieren und sie für Veröffentlichungsinstanzen aktivieren.
 contentOwner: AG
-feature: Migration, Darstellungen, Asset Management
-role: Architekt, Administrator
+feature: Migration,Renditions,Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

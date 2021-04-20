@@ -2,8 +2,8 @@
 title: Erweitern der Asset-Suche
 description: Erweitern Sie die Suchfunktionen von AEM Assets über die vorkonfigurierten Suchläufe für Assets nach Zeichenfolgen hinaus.
 contentOwner: AG
-feature: Suchen
-role: Entwickler
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

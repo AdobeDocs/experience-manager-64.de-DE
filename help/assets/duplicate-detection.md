@@ -2,8 +2,8 @@
 title: Aktivieren der Duplikatserkennung
 description: Erfahren Sie, wie Sie die Erkennung von Asset-Duplikaten in AEM aktivieren.
 contentOwner: AG
-feature: Asset-Verwaltung, Asset-Berichte
-role: Geschäftspraktiker, Administrator
+feature: Asset Management,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

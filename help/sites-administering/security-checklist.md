@@ -2,7 +2,7 @@
 title: Sicherheitscheckliste
 seo-title: Sicherheitscheckliste
 description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
-feature: Sicherheit
+feature: Security
 seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

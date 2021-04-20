@@ -2,8 +2,8 @@
 title: Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
-feature: Darstellungen,Entwicklerwerkzeuge
-role: 'Administrator  '
+feature: Renditions,Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

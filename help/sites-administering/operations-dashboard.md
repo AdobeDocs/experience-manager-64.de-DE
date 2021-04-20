@@ -2,7 +2,7 @@
 title: Vorgangs-Dashboard
 seo-title: Vorgangs-Dashboard
 description: Erfahren Sie, wie Sie das Vorgangs-Dashboard verwenden.
-feature: Betrieb
+feature: Operations
 seo-description: Erfahren Sie, wie Sie das Vorgangs-Dashboard verwenden.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

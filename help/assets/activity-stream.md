@@ -2,8 +2,8 @@
 title: Aktivitäts-Stream in der Zeitleiste
 description: 'Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Zeitleiste anzeigen können. '
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Geschäftspraktiker, Administrator
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

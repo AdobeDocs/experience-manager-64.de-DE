@@ -2,8 +2,8 @@
 title: Best Practices zur Verwaltung von Assets mit AEM
 description: Identifizieren Sie die Best Practices, die die Systemstabilität und Leistung bei Belastung verbessern, und halten Sie diese ein, je nach AEM Assets-Bereitstellung und den zum Erfassen und Verarbeiten von Assets verwendeten Funktionen.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Architekt, Administrator
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

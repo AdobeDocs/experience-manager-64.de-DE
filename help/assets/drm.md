@@ -2,8 +2,8 @@
 title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in  [!DNL Experience Manager]  verwalten.
 contentOwner: AG
-feature: DRM, Asset Management
-role: Geschäftspraktiker, Administrator
+feature: DRM,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

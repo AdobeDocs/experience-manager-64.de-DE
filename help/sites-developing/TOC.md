@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature-set: Experience Manager Sites
-feature: Entwickeln
-role: Entwickler
+feature: Developing
+role: Developer
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

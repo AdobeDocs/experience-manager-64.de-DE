@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Benutzerhandbuch für die Benutzeroberfläche
 breadcrumb-title: Handbuch zur Erstellung der klassischen Benutzeroberfläche
 user-guide-description: Dieses Handbuch behandelt die Konzepte des Authoring in AEM in der klassischen Benutzeroberfläche.
 feature-set: Experience Manager Sites
-feature: 'Authoring – '
-role: Geschäftspraktiker
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

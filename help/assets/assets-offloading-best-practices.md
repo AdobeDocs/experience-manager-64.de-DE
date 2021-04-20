@@ -2,8 +2,8 @@
 title: Best Practices für die Assets-Abladung
 description: Empfohlene Anwendungsfälle und Best Practices für die Abladung der Workflows zur Asset-Aufnahme und -Replikation in AEM Assets.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Geschäftspraktiker, Administrator
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

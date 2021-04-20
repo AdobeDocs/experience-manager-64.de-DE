@@ -2,7 +2,7 @@
 title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 seo-title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
-feature: Sicherheit
+feature: Security
 seo-description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino

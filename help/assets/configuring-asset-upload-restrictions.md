@@ -2,7 +2,7 @@
 title: Einschränkungen beim Hochladen von Assets konfigurieren
 description: Erfahren Sie mehr darüber, wie Sie Adobe Experience Manager (AEM) Assets so konfigurieren können, dass der von den Benutzern hochladbare Typ von Assets (Dateien) eingeschränkt ist.
 contentOwner: AG
-feature: Hochladen, Asset-Ingestion, Asset-Management
+feature: Upload,Asset Ingestion,Asset Management
 role: Administrator,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt

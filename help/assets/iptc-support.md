@@ -2,8 +2,8 @@
 title: Unterstützung für IPTC-Metadaten
 description: Erfahren Sie mehr darüber, wie Adobe Experience Manager (AEM) Assets IPTC-Metadaten, kreative Bewertungen und Keywords unterstützt, die über Adobe Bridge und andere Kreativanwendungen zu Assets hinzugefügt werden.
 contentOwner: AG
-feature: 'Metadaten  '
-role: Geschäftspraktiker, Administrator, Führungskraft
+feature: Metadata
+role: Business Practitioner,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

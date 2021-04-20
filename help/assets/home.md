@@ -2,8 +2,8 @@
 title: Assets-Anleitung
 description: In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 user-guide-title: Assets-Anleitung
-feature: Asset-Verwaltung
-role: Geschäftspraktiker,Architekt,Administrator
+feature: Asset Management
+role: Business Practitioner,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

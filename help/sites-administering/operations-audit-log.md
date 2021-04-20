@@ -2,7 +2,7 @@
 title: Auditprotokollwartung in AEM 6
 seo-title: Auditprotokollwartung in AEM 6
 description: Erfahren Sie mehr über die Auditprotokollwartung in AEM.
-feature: Betrieb
+feature: Operations
 seo-description: Erfahren Sie mehr über die Auditprotokollwartung in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

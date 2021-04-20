@@ -2,7 +2,7 @@
 title: Verwaltung von Benutzern, Gruppen und Zugriffsrechten
 seo-title: Verwaltung von Benutzern, Gruppen und Zugriffsrechten
 description: Erfahren Sie mehr über die Verwaltung von Benutzern, Gruppen und Zugriffsrechten in AEM.
-feature: Sicherheit
+feature: Security
 seo-description: Erfahren Sie mehr über die Verwaltung von Benutzern, Gruppen und Zugriffsrechten in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES

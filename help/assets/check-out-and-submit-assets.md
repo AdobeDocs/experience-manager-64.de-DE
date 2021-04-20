@@ -2,8 +2,8 @@
 title: Einchecken und Auschecken Ihrer digitalen Assets zur Bearbeitung
 description: Erfahren Sie, wie Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken können.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Geschäftspraktiker
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Mehrere Mandanten für Sammlungen, Snippets und Snippet-Vorlagen
 description: Trennen Sie Inhalte im CRX-Repository nach Kundenorganisation, um unbefugten Zugriff zu verhindern.
 contentOwner: AG
-feature: Sammlungen
-role: Architektur,Administrator,Leiter
+feature: Collections
+role: Architect,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Überlegungen zum Assets-Netzwerk
 description: Enthält Netzwerküberlegungen für die Implementierung von AEM Assets.
 contentOwner: AG
-feature: Entwicklertools
-role: Architekt, Administrator
+feature: Developer Tools
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

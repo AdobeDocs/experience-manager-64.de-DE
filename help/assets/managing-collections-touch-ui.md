@@ -3,8 +3,8 @@ title: Verwalten von Asset-Sammlungen
 description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. Sammlungen erstellen, Ansicht, löschen, bearbeiten und herunterladen.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Sammlungen
-role: Geschäftspraktiker
+feature: Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

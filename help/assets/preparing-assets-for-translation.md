@@ -2,8 +2,8 @@
 title: Vorbereiten von Assets für die Übersetzung
 description: Erstellen Sie Stammordner für Sprachen, um die Übersetzung mehrsprachiger Assets vorzubereiten.
 contentOwner: AG
-feature: Projekte, Übersetzung
-role: Geschäftspraktiker, Administrator
+feature: Projects,Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

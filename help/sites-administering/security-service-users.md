@@ -2,7 +2,7 @@
 title: Dienstbenutzer in AEM
 seo-title: Dienstbenutzer in AEM
 description: Hier erfahren Sie mehr über Dienstbenutzer in AEM.
-feature: Sicherheit
+feature: Security
 seo-description: Hier erfahren Sie mehr über Dienstbenutzer in AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User

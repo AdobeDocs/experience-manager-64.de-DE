@@ -2,8 +2,8 @@
 title: Integrieren von Assets in den Aktivitäts-Stream
 description: Beschreibt die Aufzeichnungsfunktionen von AEM und wie Sie AEM zum Aufzeichnen bestimmter Ereignisse konfigurieren.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Entwickler
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

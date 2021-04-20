@@ -2,8 +2,8 @@
 title: Massenbearbeitungsmetadaten mehrerer Assets und Sammlungen
 description: Hier erfahren Sie, wie Sie die Metadaten vieler Assets und Sammlungen gleichzeitig bearbeiten, um häufig vorkommende Metadatenänderungen schnell zu übertragen.
 contentOwner: AG
-feature: Asset-Verwaltung, Metadaten, Sammlungen
-role: Geschäftspraktiker
+feature: Asset Management,Metadata,Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
