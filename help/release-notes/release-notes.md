@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
+exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2813'
 ht-degree: 80%
 
 ---
-
 
 # Allgemeine Versionshinweise zu Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
 
@@ -247,14 +247,6 @@ Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbea
 Neue Viewer, darunter Panorama- und VR-Viewer, ermöglichen es Ihnen, noch intensivere Erlebnisse bereitzustellen.
 
 Weitere Informationen finden Sie in der Dokumentation zu [Panoramabildern](/help/assets/panoramic-images.md).
-
-**3D-Assets**
-
-Neue Integration mit [Adobe Dimension CC](https://www.adobe.com/de/products/dimension.html), einer Creative Cloud-Anwendung zum Authoring von 3D-Erlebnissen.
-
-Weitere Informationen finden Sie in der Dokumentation zum [Arbeiten mit 3D-Assets](/help/assets/assets-3d.md).
-
-![do-not-localize/3d](assets/do-not-localize/3d.png)
 
 ### Experience Manager Forms {#experience-manager-forms}
 
