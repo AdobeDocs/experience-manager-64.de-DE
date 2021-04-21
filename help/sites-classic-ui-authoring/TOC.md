@@ -9,10 +9,10 @@ user-guide-description: Dieses Handbuch behandelt die Konzepte des Authoring in 
 feature: 'Authoring – '
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 83%
+source-wordcount: '273'
+ht-degree: 80%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 83%
    + [Targeting von Adobe Campaign](classic-personalization-ac-target.md)
 + Assets Authoring in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
-   + [Arbeiten mit IBL-Bühnen](classicui-stages-aem3d-ibl.md)
-   + [Rendern von 3D-Assets](classicui-rendering-3d.md)
-   + [Anzeigen von 3D-Assets](classicui-view-3d-assets.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
-   + [Einrichten einer Standardbühne mit Autodesk Maya und Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Dynamic Media Classic (Scene7)-Funktionen zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
-   + [Arbeiten mit 3D-Assets](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Benennungskonventionen für Assets-Tests](asset-naming-conventions.md)
-   + [Informationen zum Hochladen und Verarbeiten von 3D-Assets in AEM](classicui-upload-proc-3d.md)
-   + [Informationen zur Verwendung von Bühnen in AEM 3D](classicui-stages-aem3d.md)
-   + [Auflösen von Dateiabhängigkeiten](classicui-upload-proc-3d-resolve-dependencies.md)
