@@ -7,10 +7,10 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 76%
+source-wordcount: '627'
+ht-degree: 78%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 76%
    + [Freigeben privater Ordner](private-folder.md)
    + [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
-+ 3D-Assets {#three-d}
-   + [AEM 3D-Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Arbeiten mit 3D-Assets](assets-3d.md)
-   + [Installieren und Konfigurieren von AEM 3D](install-config-3d.md)
-   + [Erweiterte Konfigurationseinstellungen](advanced-config-3d.md)
-   + [Arbeiten mit Adobe Dimension-Assets](working-dimension-assets.md)
-   + [Informationen zum Hochladen und Verarbeiten von 3D-Assets in AEM](upload-processing-3d-assets.md)
-   + [Auflösen von Dateiabhängigkeiten](resolve-file-dependencies.md)
-   + [Anzeigen von 3D-Assets](viewing-3d-assets.md)
-   + [Rendern von 3D-Assets](rendering-3d-assets.md)
-   + [Informationen zur Verwendung von Bühnen in AEM 3D](about-the-use-of-stages-in-aem-3d.md)
-   + [Einrichten einer Standardbühne mit Autodesk Maya und Mental Ray](setting-up-stage-with-ad-mr.md)
-   + [Arbeiten mit der Komponente &quot;3D-Sites&quot;](using-the-3d-sites-component.md)
-   + [Integration von AEM 3D mit Autodesk Maya](integrate-maya-with-3d.md)
-   + [Arbeiten mit IBL-Bühnen](working-with-ibl-stages.md)
-   + [Integration von AEM 3D mit Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Einrichten einer IBL-Bühne mit Autodesk Maya und Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
