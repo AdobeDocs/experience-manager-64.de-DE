@@ -6,13 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4-Implementierungsanleitung
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
-feature-set: Experience Manager Sites
-feature: Deploying
+feature: Bereitstellen
 role: Architect
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '357'
 ht-degree: 93%
 
 ---
