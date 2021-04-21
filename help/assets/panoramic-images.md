@@ -1,18 +1,18 @@
 ---
 title: Panoramabilder
-Description: Learn how to work with panoramic images in Dynamic Media.
+description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: Panoramic Images
+feature: Panoramabilder
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 38%
+source-wordcount: '585'
+ht-degree: 39%
 
 ---
 
