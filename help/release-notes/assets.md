@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
+exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 59%
+source-wordcount: '1657'
+ht-degree: 60%
 
 ---
-
 
 # AEM Assets Versionshinweise {#aem-assets-release-notes}
 
@@ -35,7 +35,7 @@ AEM 6.4 bietet zusätzlich zu Smart-Tags, die in AEM 6.3 eingeführt wurden, Fun
 * Der Smart Content Service erfährt die geschäftliche Taxonomie des Kunden und verwendet sie, um digitale Assets automatisch mit kundenrelevanten Tags zu taggen, zusätzlich zu generischen Tags. Dadurch lassen sich Asset erheblich schneller auffinden, wodurch die Markteinführungszeit verkürzt wird.
 * Adobe Sensei unterstützt den Smart Content Service, der Ihnen die Schulung des Bilderkennungsalgorithmus in Ihrer Geschäftstaxonomie ermöglicht. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf ähnliche Assets anzuwenden.
 
-Um AEM Assets Enhanced Smart Tags zu verwenden, installieren Sie das [neueste Service Pack von AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Um AEM Assets Enhanced Smart Tags zu verwenden, installieren Sie das [neueste Service Pack von AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
 
 ## Smart Translation Search (powered by Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -106,7 +106,7 @@ AEM 6.4 bietet wesentliche Verbesserungen am Asset Berichte:
 
 ## AEM-Desktop-Programm {#aem-desktop-app}
 
-AEM Desktop-App wird auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-App finden Sie in einem dedizierten Dokument [AEM Versionshinweise zur Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).\
+AEM Desktop-App wird auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-App finden Sie in einem dedizierten Dokument [AEM Versionshinweise zur Desktop-App](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html).\
 Hier finden Sie eine Liste AEM Highlights der Desktop-App seit der Veröffentlichung von AEM 6.3:
 
 * Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen.
@@ -119,7 +119,7 @@ Hier finden Sie eine Liste AEM Highlights der Desktop-App seit der Veröffentlic
 Um den Zugriff auf die Dokumentation und Best Practices zu erleichtern, stehen die folgenden Dokumentationen zur Verfügung:
 
 * [Benutzerhandbuch](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html) für Endbenutzer, die mit der Anwendung arbeiten.
-* [Installationshandbuch](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) für Administratoren, die AEM und AEM Desktop-App für die Zusammenarbeit einrichten
+* [Installationshandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/install-upgrade.html) für Administratoren, die AEM und AEM Desktop-App für die Zusammenarbeit einrichten
 
 ## Mehrstufiger Speicher {#tiered-storage}
 
@@ -139,7 +139,7 @@ Eine Übersicht der unterstützten Plattformen finden Sie in der [Dokumentation 
 
 Dynamic Media in 6.4 unterstützt einen neuen Modus, in dem Master-Assets über die Web-Benutzeroberfläche von AEM Assets hochgeladen und verwaltet werden und dynamische Ausgabeformate und andere Funktionen für dynamische Medien im Hintergrund vom Cloud-Bereitstellungservice für dynamische Medien verwaltet werden.
 
-In diesem Modus (der mit der Veröffentlichung von [AEM 6.3 Feature Packs 14410 und 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) eingeführt wurde) profitieren Benutzer von End-to-End-Asset-Management- und dynamischen Medienfunktionen, die die moderne AEM Assets Web UI verwenden, und nutzen weiterhin die Versand-Services, die abwärtskompatibel mit Dynamic Media Classic (Scene7) sind, einschließlich der Versand-URLs, die unverändert bleiben.
+In diesem Modus (der mit der Veröffentlichung von [AEM 6.3 Feature Packs 14410 und 18912](https://helpx.adobe.com/de/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) eingeführt wurde) profitieren Benutzer von End-to-End-Asset-Management- und dynamischen Medienfunktionen, die die moderne AEM Assets Web UI verwenden, und nutzen weiterhin die Versand-Services, die abwärtskompatibel mit Dynamic Media Classic (Scene7) sind, einschließlich der Versand-URLs, die unverändert bleiben.
 
 Darüber hinaus werden mit AEM 6.4 neue, auf Adobe Sensei basierende Funktionen, Erweiterungen für neue Medien wie VR und 3D, Dynamic Media-Viewer und Unterstützung für Erlebnisfragmente in interaktiven Bildern und Karussellbannern eingeführt.
 
@@ -168,7 +168,3 @@ Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbea
 * Der VR Viewer bietet umfassende Funktionen für Objekte, Standorte und Landschaften.
 * Vertikaler Bilder-Viewer wurde für Produktbilder optimiert.
 * Verbesserte Möglichkeit zum Zugriff auf die Tastatur.
-
-### 3D und Integration mit Dimension CC {#d-and-integration-with-dimension-cc}
-
-Die Integration mit [Adobe Dimension CC](https://www.adobe.com/de/products/dimension.html) für einen nahtlosen 3D-Arbeitsablauf wurde eingeführt. Weitere Informationen finden Sie in der Dokumentation [Arbeiten mit 3D-Assets](../assets/assets-3d.md).
