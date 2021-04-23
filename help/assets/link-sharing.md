@@ -2,16 +2,16 @@
 title: Freigeben von Assets über einen Link
 description: Freigeben von Assets, Ordnern und Sammlungen als URL.
 contentOwner: AG
-feature: Link Sharing,Asset Management
+feature: Linkfreigabe, Asset-Verwaltung
 role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 340061de4dc6d99e9d960613202a869ba50ed6a5
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 40%
+source-wordcount: '1024'
+ht-degree: 38%
 
 ---
-
 
 # Asset über einen Link {#asset-link-sharing} freigeben
 
@@ -28,26 +28,11 @@ ht-degree: 40%
 Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, verwenden Sie das Dialogfeld &quot;Linkfreigabe&quot;. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind.
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
-1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]** ![Assets freigeben](assets/assets_share.png).
-
-   Der Link, der nach dem Klicken auf [!UICONTROL Freigeben] erstellt wird, wird vorab im Feld [!UICONTROL Link freigeben] angezeigt. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
+1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]** ![Assets freigeben](assets/assets_share.png). Der Link, der nach dem Klicken auf **[!UICONTROL Freigeben]** erstellt wird, wird vorab im Feld [!UICONTROL Link freigeben] angezeigt. Der Link wird erst erstellt, wenn Sie auf **[!UICONTROL Senden]** klicken.
 
    ![Dialogfeld zur Linkfreigabe](assets/chlimage_1-542.png)
 
    *Abbildung: Das Dialogfeld zum Freigeben von Assets als Link.*
-
-   >[!NOTE]
-   >
-   >Wenn Sie Links von Ihrer [!DNL Experience Manager] Autorenbereitstellung für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs (die für die Linkfreigabe verwendet werden) für `GET`-Anforderungen bereitstellen. Blockieren Sie andere URLs aus Sicherheitsgründen.
-   >
-   >* `http://[aem_server]:[port]/linkshare.html`
-   >* `http://[aem_server]:[port]/linksharepreview.html`
-   >* `http://[aem_server]:[port]/linkexpired.html`
-
-
-1. Rufen Sie in der [!DNL Experience Manager]-Schnittstelle **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]** auf.
-
-1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]** und ändern Sie die folgenden Eigenschaften im Feld **[!UICONTROL Domänen]** mit den Werten, die gegen `local`, `author` und `publish` erwähnt werden. Geben Sie für die Eigenschaften `local` und `author` die URL für die lokale und die Autoreninstanz an. Die Eigenschaften `local` und `author` haben denselben Wert, wenn Sie eine einzelne [!DNL Experience Manager] Autoreninstanz ausführen. Geben Sie für Veröffentlichungsinstanzen die URL für die Instanz im Veröffentlichungsmodus ein.[!DNL Experience Manager]
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Linkfreigabe]** in das Feld „E-Mail-Adresse“ die E-Mail-ID des Benutzers ein, für den Sie den Link freigeben möchten. Sie können einen oder mehrere Benutzer hinzufügen.
 
@@ -62,7 +47,7 @@ Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, v
 1. Geben Sie in das Feld **[!UICONTROL Betreff]** einen Betreff für das freizugebende Asset ein.
 1. Geben Sie im Feld **[!UICONTROL Meldung]** eine optionale Meldung ein.
 
-1. Geben Sie im Feld **[!UICONTROL Ablauf]** ein Ablaufdatum und eine Uhrzeit ein, damit der Link nicht mehr funktioniert. Standardmäßig ist das Ablaufdatum auf eine Woche nach dem Datum der Linkfreigabe gesetzt.
+1. Geben Sie im Feld **[!UICONTROL Ablauf]** ein Ablaufdatum und eine Uhrzeit ein, damit der Link nicht mehr funktioniert. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
    ![Ablaufdatum des freigegebenen Links festlegen](assets/chlimage_1-544.png)
 
@@ -70,11 +55,7 @@ Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, v
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link per E-Mail an die Benutzer weitergegeben wird.
 
-1. Um das freigegebene Asset Ansicht, klicken Sie auf den Link in der E-Mail, die an den Benutzer gesendet wird. Das freigegebene Asset wird auf der Seite [!UICONTROL Adobe Marketing Cloud] angezeigt.
-
-   ![Freigegebene Assets stehen in Adobe Marketing Cloud zur Verfügung](assets/chlimage_1-545.png)
-
-1. Um eine Vorschau des Assets zu erstellen, klicken Sie auf das freigegebene Asset. Um die Vorschau zu schließen und zur Seite **[!UICONTROL Marketing Cloud]** zurückzukehren, klicken Sie in der Symbolleiste auf **[!UICONTROL Zurück]**. Wenn Sie einen Ordner freigegeben haben, klicken Sie auf **[!UICONTROL Übergeordneter Ordner]**, um zum übergeordneten Ordner zurückzukehren.
+1. Um das freigegebene Asset Ansicht, klicken Sie auf den Link in der E-Mail, die an den Benutzer gesendet wird. Um eine Vorschau des Assets zu erstellen, klicken Sie auf das freigegebene Asset. Um die Vorschau zu schließen, klicken Sie auf **[!UICONTROL Zurück]**. Wenn Sie einen Ordner freigegeben haben, klicken Sie auf **[!UICONTROL Übergeordneter Ordner]**, um zum übergeordneten Ordner zurückzukehren.
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
@@ -103,9 +84,9 @@ Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, v
 
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
-1. Klicken oder tippen Sie auf **[!UICONTROL Speichern]**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Konfigurieren der maximal zulässigen Datengröße   {#configure-maximum-data-size}
+## Konfigurieren der maximal zulässigen Datengröße  {#configure-maximum-data-size}
 
 Wenn Sie Assets von der mit der Funktion &quot;Linkfreigabe&quot;freigegebenen Verknüpfung herunterladen, komprimiert [!DNL Experience Manager] die Asset-Hierarchie aus dem Repository und gibt das Asset dann in einer ZIP-Datei zurück. Da jedoch die Datenmenge, die in einer ZIP-Datei komprimiert werden kann, nicht begrenzt wird, kann es bei großen komprimierten Datenmengen zu Speicherfehlern in JVM kommen. Um das System vor einem damit zusammenhängenden potenziellen DoS-Angriff zu schützen, konfigurieren Sie die Maximalgröße mithilfe des Parameters **[!UICONTROL Maximale Größe von Inhalten (unkomprimiert)]** für das Day CQ DAM Adhoc Asset Share Proxy Servlet in Configuration Manager. **** Wenn die unkomprimierte Größe des Assets den konfigurierten Wert überschreitet, werden Asset-Download-Anfragen abgelehnt. Der Standardwert lautet 100 MB.
 
@@ -124,3 +105,10 @@ Wenn Sie Assets von der mit der Funktion &quot;Linkfreigabe&quot;freigegebenen V
 * Wenn Sie keine E-Mail mit Links zu freigegebenen Assets senden können oder wenn andere Benutzer Ihre E-Mail nicht empfangen können, wenden Sie sich an Ihren [!DNL Experience Manager]-Administrator, wenn der [E-Mail-Dienst](#configure-day-cq-mail-service) konfiguriert ist oder nicht.
 * Wenn Sie Assets nicht mit der Funktion zum Freigeben von Links freigeben können, stellen Sie sicher, dass Sie über die entsprechenden Berechtigungen verfügen. Siehe [Freigeben von Assets](#share-assets).
 * Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
+
+* Wenn Sie Links von Ihrer [!DNL Experience Manager] Autorenbereitstellung für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs verfügbar machen, die für die Linkfreigabe verwendet werden, nur für `GET`-Anforderungen. Blockieren Sie andere URLs aus Sicherheitsgründen.
+
+   * `http://[aem_server]:[port]/linkshare.html`
+   * `http://[aem_server]:[port]/linksharepreview.html`
+   * `http://[aem_server]:[port]/linkexpired.html`
+   Rufen Sie in der [!DNL Experience Manager]-Schnittstelle **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]** auf. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]** und ändern Sie die folgenden Eigenschaften im Feld **[!UICONTROL Domänen]** mit den Werten, die gegen `local`, `author` und `publish` erwähnt werden. Geben Sie für die Eigenschaften `local` und `author` die URL für die lokale und die Autoreninstanz an. Wenn Sie eine einzelne [!DNL Experience Manager] Autoreninstanz ausführen, verwenden Sie denselben Wert für `local`- und `author`-Eigenschaften. Geben Sie für Veröffentlichungsinstanzen die URL der Instanz im Veröffentlichungsmodus an.[!DNL Experience Manager]
