@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
+exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 44%
+source-wordcount: '622'
+ht-degree: 41%
 
 ---
-
 
 # Software-Architektur{#software-architecture}
 
@@ -36,13 +36,19 @@ Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf de
 
 SOLID ist ein Akronym, das fünf architektonische Prinzipien beschreibt, die Sie einhalten sollten:
 
-* **Grundsatz der** Einzelverantwortung - jedes Modul, jede Klasse, jede Methode usw. sollte nur eines tun.
+* **Grundsatz der** einheitlichen Verantwortung - jedes Modul, jede Klasse, jede Methode usw. sollte nur eine Verantwortung haben.
 * **** Open/Closed Principle - Module sollten zur Erweiterung geöffnet und zur Änderung geschlossen werden.
 * **Substitutionsprinzip für** Liskov - Typen sollten durch ihre Subtypen ersetzt werden können.
-* **Prinzip der** Schnittstellensegmentierung - kein Client sollte gezwungen sein, von Methoden abhängig zu sein, die er nicht verwendet.
+* **Prinzip der** Schnittstellensegregation - kein Client sollte gezwungen sein, von Methoden abhängig zu sein, die er nicht verwendet.
 * **Prinzip der** Abhängigkeitskonvertierung - Module auf hoher Ebene sollten nicht von Modulen auf niedriger Ebene abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.
 
 Durch die Berücksichtigung dieser fünf Prinzipien lässt sich ein System erzielen, in dem eine strikte Trennung der Anliegen gegeben ist.
+
+>[!TIP]
+>
+>SOLID ist ein häufig verwendetes Konzept in der objektorientierten Programmierung und jedes Element wird in der Fachliteratur ausführlich diskutiert.
+>
+>Dies ist nur eine kurze Zusammenfassung, die für das Bewusstsein präsentiert wird, und Sie werden ermutigt, sich mit diesen Konzepten näher vertraut zu machen.
 
 ### Befolgen des Robustheitsgrundsatzes {#follow-the-robustness-principle}
 
