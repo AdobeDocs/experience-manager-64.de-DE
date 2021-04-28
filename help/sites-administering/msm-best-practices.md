@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: Multi Site Manager
+feature: Multi-Site-Manager
+exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1552'
 ht-degree: 65%
 
 ---
-
 
 # Best Practices für MSM{#msm-best-practices}
 
@@ -67,6 +67,10 @@ Die Verwendung einer Blueprint-Konfiguration hat allerdings folgende Vorteile:
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
 
 Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit sämtlicher MSM-Features sicherzustellen.
+
+>[!NOTE]
+>
+>CUG-Gruppen können nicht in Live Copies von Blueprints ausgeführt werden. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
 ## Komponenten- und Containersynchronisierung {#components-and-container-synchronization}
 
@@ -206,4 +210,3 @@ Die entsprechenden Themen werden auf dieser Seite sowie auf den folgenden Seiten
 * [Konsole „Live Copy-Übersicht“](/help/sites-administering/msm-livecopy-overview.md)
 * [Konfigurieren der Synchronisierung von Live Copies](/help/sites-administering/msm-sync.md)
 * [MSM-Rollout-Konflikte](/help/sites-administering/msm-rollout-conflicts.md)
-
