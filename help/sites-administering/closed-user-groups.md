@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
+exl-id: 71dfaea7-2fae-4feb-bb1d-ad0da573f910
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '6889'
-ht-degree: 66%
+source-wordcount: '6884'
+ht-degree: 65%
 
 ---
-
 
 # Geschlossene Benutzergruppen in AEM{#closed-user-groups-in-aem}
 
@@ -337,7 +337,7 @@ Das Erstellen, Ändern oder Entfernen neuer Authentifizierungsanforderungen wird
 >
 >Die oben erwähnten Änderungen an einem bestimmten Zielgruppen-Knoten werden nur dann auf dem Apache Sling Authenticator angezeigt, wenn das `RequirementHandler` konfiguriert wurde und die Zielgruppe in den von den unterstützten Pfaden definierten Bäumen enthalten ist (siehe Konfigurationsoptionen).
 >
->Weitere Informationen finden Sie unter [Zuweisen von Mischknoten-Typen](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Zuweisen von Mischknoten-Typen) und [Hinzufügen von Knoten und Festlegen von Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 von Knoten und Festlegen von Eigenschaften)
+>Weitere Informationen finden Sie unter [Zuweisen von Mixin-Knotentypen](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Zuweisen von Mixin-Knotentypen) und [Hinzufügen von Knoten und Festlegen von Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 Hinzufügen von Knoten und Festlegen von Eigenschaften)
 
 #### Hinzufügen einer neuen Authentifizierungspflicht {#adding-a-new-auth-requirement}
 
@@ -423,7 +423,7 @@ session.save();
 
 #### Effektive Authentifizierungspflichten abrufen {#retrieve-effective-auth-requirements}
 
-Es gibt keine dedizierte öffentliche API zum Lesen aller wirksamen Authentifizierungsanforderungen, die beim Apache Sling Authenticator registriert sind. Die Liste wird jedoch in der Systemkonsole unter `https://<serveraddress>:<serverport>/system/console/slingauth` unter &quot;**Konfiguration der Authentifizierungsanforderungen**&quot;angezeigt.
+Es gibt keine dedizierte öffentliche API zum Lesen aller wirksamen Authentifizierungsanforderungen, die beim Apache Sling Authenticator registriert sind. Die Liste wird jedoch in der Systemkonsole unter `https://<serveraddress>:<serverport>/system/console/slingauth` unter &quot;**Konfiguration der Authentifizierungsanforderung**&quot;angezeigt.
 
 Die folgende Abbildung zeigt die Authentifizierungspflichten einer AEM -Veröffentlichungsinstanz mit Demoinhalten an. Der hervorgehobene Pfad der Community-Seite zeigt, wie eine von der in diesem Dokument beschriebenen Implementierung hinzugefügte Anforderung im Sling Apache Authenticator dargestellt wird.
 
@@ -764,14 +764,14 @@ Dies wurde angepasst, um den Verweis auf `CugSupport` optional zu machen, um die
 
 ### AEM-Live Copy {#aem-livecopy}
 
-Die Konfiguration von CUGs in Verbindung mit Live Copy wird im Repository durch das Hinzufügen eines zusätzlichen Knotens und einer zusätzlichen Eigenschaft wie folgt dargestellt:
+Die Konfiguration von CUGs in Verbindung mit LiveCopy wird im Repository durch den Zusatz eines zusätzlichen Knotens und einer zusätzlichen Eigenschaft wie folgt dargestellt:
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
 
 Beide Elemente werden unter `cq:Page` erstellt. Beim aktuellen Entwurf verarbeitet MSM nur Knoten und Eigenschaften, die sich unter dem Knoten `cq:PageContent` (`jcr:content`) befinden.
 
-Daher können CUG-Gruppen nicht aus einem Blueprint in eine Live Copy zurückgesetzt werden. Planen Sie entsprechend, wenn Sie eine Live Copy einrichten.
+Deshalb können CUG-Gruppen nicht in Live Copies von Blueprints ausgeführt werden. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
 ## Änderungen mit der neuen CUG-Implementierung {#changes-with-the-new-cug-implementation}
 
@@ -882,4 +882,3 @@ Adobe stellt ein Tool für die Migration zur neuen CUG-Implementierung zur Verf�
 >[!NOTE]
 >
 >Wenn Probleme auftreten, ist es möglich, eine bestimmte Protokollfunktion auf **DEBUG**-Ebene auf `com.day.cq.auth.impl.cug` einzurichten, um die Ausgabe des Migrationswerkzeugs abzurufen. Weitere Informationen dazu finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
-
