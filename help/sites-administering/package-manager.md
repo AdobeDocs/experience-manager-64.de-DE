@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
+exl-id: eebc10fa-1d49-4797-a9e6-b6615bfe0173
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 9b2cf8887f799aff316f720ab173087e14692120
 workflow-type: tm+mt
-source-wordcount: '5365'
-ht-degree: 86%
+source-wordcount: '4037'
+ht-degree: 82%
 
 ---
-
 
 # Arbeiten mit Paketen{#how-to-work-with-packages}
 
@@ -145,7 +145,7 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 
 | **Feld** | **Beschreibung** | **Format/Beispiel** |
 |---|---|---|
-| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
+| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM6* |
 | Behobene Fehler/Probleme | Ein Textfeld, das die Liste von Details zu Fehlern ermöglicht, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr-Zusammenfassung |
 | Abhängig von | Abhängigkeitsinformationen von Listen, die beachtet werden müssen, wenn andere Pakete benötigt werden, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
 | Ersetzungen | Eine Liste veralteter Pakete, die dieses Paket ersetzt. Überprüfen Sie vor der Installation, ob dieses Paket alle erforderlichen Inhalte von den veralteten Paketen beinhaltet, sodass keine Inhalte überschrieben werden. | groupId:name:version |
@@ -219,7 +219,7 @@ Offizielle Funktionspakete:
 
 ![](do-not-localize/chlimage_1-29.png)
 
-## Package Manager  {#package-manager}
+## Package Manager {#package-manager}
 
 Der Package Manager verwaltet die Pakete auf der lokalen AEM-Installation. Nachdem Sie [die erforderlichen Berechtigungen zugewiesen haben,](#permissions-needed-for-using-the-package-manager) können Sie den Package Manager für verschiedene Aktionen, u. a. zum Konfigurieren, Erstellen, Herunterladen und Installieren von Paketen, verwenden. Folgende wichtige Elemente sind zu konfigurieren:
 
@@ -591,7 +591,7 @@ Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren
 >Um die Inhalte oder Auswirkungen eines Pakets anzuzeigen, können Sie:
 >
 >* Führen Sie eine Testinstallation des Pakets durch, ohne den Inhalt zu ändern:\
-   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Installation testen**.
+   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Test Install**.
    >
    >
 * Siehe Liste der Paketinhalte:\
@@ -692,206 +692,16 @@ Replizieren Sie die Inhalte eines Pakets, um sie auf der veröffentlichten Insta
 
 ## Package Share {#package-share}
 
-Package Share ist ein zentraler Server, der öffentlich zugänglich ist, um Inhaltspakete auszutauschen.
+Package Share war ein zentralisierter Server, der öffentlich zur Freigabe von Content-Packages zur Verfügung gestellt wurde.
 
-Mithilfe von Package Share können Sie diese Pakete herunterladen, die offizielle Hotfixes, Funktionen, Updates oder von anderen Benutzern erstellte Beispielinhalte enthalten können.
+Sie wurde durch [Software-Distribution ersetzt.](#software-distribution)
 
-Sie können auch Pakete hochladen und innerhalb Ihres Unternehmens austauschen.
+## Softwareverteilung {#software-distribution}
 
-### Zugreifen auf Package Share  {#access-to-package-share}
+[Software ](https://downloads.experiencecloud.adobe.com) Distribution ist die neue Benutzeroberfläche, die die Suche und den Download von AEM Packages vereinfacht.
 
-Ein anonymer Zugriff auf Package Share ist nicht möglich, d. h. nur registrierte Benutzer können Pakete anzeigen, herunterladen und hochladen.
-
-Unsere Partner und Kunden können auf Package Share zugreifen. Dazu müssen Registrierungsdetails übermittelt werden, damit Zugriffsrechte zugewiesen werden können.
-
-So erhalten Sie Zugriff auf Package Share:
-
-* Verwenden Sie die [Anmeldeseite](#signing-in-to-package-share).
-* Beim erstmaligen Aufruf der Anmeldeseite müssen Sie:
-
-   * [sich registrieren, um eine Adobe ID zu erhalten,](#registering-for-package-share) und/oder [Ihre vorhandene Adobe ID validieren,](#validating-your-adobe-id)
-   * damit Ihr [Package Share-Konto](#package-share-account) erstellt werden kann.
-
->[!NOTE]
->
->Jeder Package Share-Benutzer, der noch keinem Kunden zugewiesen wurde, muss Mitglied einer Community werden, um diese Ressourcen sehen zu können, indem er auf **Beitreten** neben der Package Share-Anmeldung klickt.
-
-#### Anmelden bei Package Share {#signing-in-to-package-share}
-
-1. Klicken Sie im AEM Begrüßungsbildschirm auf **Tools** -> **Bereitstellung**
-1. Wählen Sie dann **Package Share** aus. Sie werden aufgefordert, entweder:
-
-   * sich mit Ihrer Adobe ID anzumelden oder
-   * [eine Adobe ID zu erstellen](#registering-for-package-share).
-
-   >[!NOTE]
-   >
-   >Bei der ersten Anmeldung mit Ihrer Adobe ID müssen Sie [Ihre E-Mail-Adresse validieren](#validating-your-adobe-id).
-
-   >[!NOTE]
-   >
-   >Wenn Sie Ihr Passwort vergessen haben, verwenden Sie bitte **Probleme bei der Anmeldung?** im Anmeldedialogfeld.
-
-#### Validieren der Adobe ID {#validating-your-adobe-id}
-
-Bei der ersten Anmeldung bei Package Share mit Ihrer Adobe ID wird Ihre E-Mail-Adresse validiert.
-
-1. Sie erhalten eine E-Mail mit einem Link.
-1. Sie müssen auf diesen Link klicken.
-1. Daraufhin wird eine Webseite geöffnet.
-
-   Durch das Öffnen der Webseite haben Sie die E-Mail validiert.
-
-1. Der Anmeldevorgang wird fortgesetzt.
-
-1. Sie erhalten eine E-Mail mit einem Link.
-1. Sie müssen auf diesen Link klicken.
-1. Daraufhin wird eine Webseite geöffnet. Durch das Öffnen der Webseite haben Sie die E-Mail validiert.
-1. Der Anmeldevorgang wird fortgesetzt.
-
-#### Registrieren für Package Share  {#registering-for-package-share}
-
-Wenn Sie auf Package Share zugreifen wollen, müssen Sie sich für eine Adobe ID registrieren:
-
-* Auf der [Package Share-Anmeldeseite](#signing-in-to-package-share) befindet sich ein Link zur Registrierung einer Adobe ID.
-* Sie können sich auch über bestimmte Adobe-Desktop-Softwareprogramme für eine Adobe ID registrieren.
-* Alternativ können Sie sich online auf der [Adobe-Anmeldeseite](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1) registrieren.
-
-Eine Adobe ID kann erstellt werden, wenn Sie Folgendes bereitstellen:
-
-* Ihre E-Mail-Adresse
-* ein Kennwort Ihrer Wahl
-* einige weitere Informationen wie beispielsweise Ihren Namen und das Land Ihres Wohnsitzes
-
-#### Package Share-Konto {#package-share-account}
-
-Die Gültigkeit Ihrer Anwendung wird überprüft, bevor:
-
-* Ihr Benutzerkonto mit den erforderlichen/gestatteten Berechtigungen erstellt wird;
-* Ihr Konto zur Gruppe Ihres Unternehmens hinzugefügt wird.
-
->[!NOTE]
->
->Ein Benutzer von einem unserer Partnerunternehmen kann auch ein Mitglied seiner Kundengruppen sein.
-
-#### Netzwerkhinweise  {#network-considerations}
-
-**IPv6**
-
-Möglicherweise kann es zu Problemen kommen, wenn Sie versuchen, von einer reinen IPv6-Umgebung aus auf Package Share zuzugreifen.
-
-Der Grund dafür ist, dass Package Share ein auf einem Server gehosteter Service ist. Dies bedeutet, dass Ihre Verbindung über zahlreiche Netzwerke im Internet hergestellt wird. Dadurch kann nicht sichergestellt werden, dass alle angeschlossenen Netzwerke IPv6 unterstützen. Ist dies nicht der Fall, schlägt der Verbindungsaufbau fehl.
-
-Zur Vermeidung dieses Problems können Sie über ein IPv4-Netzwerk auf Package Share zugreifen, das Paket herunterladen und es dann in die IPv6-Umgebung hochladen.
-
-**HTTP-Proxy**
-
-Package Share ist derzeit nicht verfügbar, wenn Ihr Unternehmen einen HTTP-Proxy verwendet, der eine Authentifizierung erfordert.
-
-Package Share ist nur verfügbar, wenn Ihr AEM-Server ohne Authentifizierung auf das Internet zugreifen kann. Verwenden Sie zur Konfiguration des Proxys für alle Dienste, die den HTTP-Client verwenden (einschließlich Package Share), die [OSGi-Konfiguration des Day Commons HTTP Client 3.1-Bundles](/help/sites-deploying/osgi-configuration-settings.md).
-
-### Innerhalb von Package Share {#inside-package-share}
-
-Pakete werden in Package Share in einer Struktur mit Unterstrukturen angeordnet:
-
-* Von Adobe bereitgestellte Adobe-Pakete
-* Freigegebene Pakete, die von anderen Unternehmen bereitgestellt und von Adobe veröffentlicht wurden
-* Ihre privaten Unternehmenspakte
-
-![chlimage_1-346](assets/chlimage_1-346.png)
-
-### Suchen nach und Filtern von Paketen {#searching-and-filtering-packages}
-
-Package Share verfügt über eine Suchleiste, über die Sie nach bestimmten Keywords (Suchbegriffen) oder/und Tags suchen können. Keywords und Tags unterstützen mehrere Werte.
-
-* Wenn Sie nach mehreren Keywords suchen wollen, müssen Sie die einzelnen Keywords durch ein Leerzeichen trennen.
-* Um nach mehreren Tags zu suchen, müssen Sie jedes Tag in den Paketstrukturen auswählen.
-
-Sie können auf der rechten Seite der Filterübersichtsleiste auch den Konditionaloperator von ODER in UND ändern.
-
-### Herunterladen und Installieren von Paketen von Package Share {#downloading-and-installing-packages-from-package-share}
-
-Zum Herunterladen von Paketen von Package Share und Installieren dieser Pakete auf der lokalen Instanz ist es einfacher, von Ihrer AEM-Instanz aus auf Package Share zuzugreifen. Auf diese Weise wird das Paket heruntergeladen und sofort im Package Manager registriert, von wo aus es installiert werden kann.
-
-1. Klicken Sie im AEM-Willkommensbildschirm auf **Tools** und wählen Sie dann **Package Share**, um die Package Share-Seite zu öffnen.
-1. Melden Sie sich mithilfe Ihrer Kontodetails bei Package Share an. Die Einstiegsseite (Landingpage) wird mit dem Ordner „Adobe“, dem Ordner „Freigegeben“ und einem unternehmensspezifischen Ordner angezeigt.
-
-   >[!NOTE]
-   >
-   >Vergewissern Sie sich vor dem Herunterladen von Paketen von Package Share, dass Sie über die [erforderlichen Zugriffsrechte](#access-to-package-share) verfügen.
-
-1. Navigieren Sie zum Paket, das Sie herunterladen möchten, und klicken Sie auf **Herunterladen**.
-
-1. Kehren Sie zurück oder navigieren Sie zum **Package Manager** auf Ihrer AEM-Instanz. Navigieren Sie dann zu dem gerade heruntergeladenen Paket.
-
-   >[!NOTE]
-   >
-   >Folgen Sie demselben Pfad wie in Package Share, um die heruntergeladene Datei zu finden. Wenn Sie beispielsweise ein Paket unter dem folgenden Pfad in Package Share heruntergeladen haben:
-   >
-   >**Pakete** > **Öffentlich** > **Hotfixes**
-   Dann wird das Paket im Package Manager auf Ihrer lokalen Instanz auch unter folgendem Pfad angezeigt:
-   **Pakete** > **Öffentlich** > **Hotfixes**
-
-1. Klicken Sie auf **Installieren**, um das Paket auf der lokalen AEM-Installation zu installieren.
-
-   >[!NOTE]
-   Falls das Paket bereits auf der Instanz installiert wurde, wird anstatt der Schaltfläche **Installieren** die Anzeige **Installiert** neben dem Paket angezeigt.
-
-   >[!CAUTION]
-   Durch die Installation eines Pakets können vorhandene Inhalte im Repository überschrieben werden. Daher empfehlen wir, zunächst die Option **Installation testen** auszuführen. So können Sie überprüfen, ob die Inhalte im Paket mit den vorhandenen Inhalten in Konflikt stehen.
-
-### Herunterladen von Paketen in Ihr Dateisystem von Package Share  {#downloading-packages-to-your-file-system-from-package-share}
-
-[Herunterladen und Installieren](#downloading-and-installing-packages-from-package-share) ist sehr bequem, aber Sie können das Paket bei Bedarf auch herunterladen und in Ihrem lokalen Dateisystem speichern:
-
-1. Klicken Sie in Package Share auf das Paketsymbol oder den Paketnamen.
-1. Klicken Sie auf die Registerkarte **Assets**.
-1. Klicken Sie auf **Auf Festplatte herunterladen**.
-
-### Hochladen von Paketen  {#uploading-a-package}
-
-Mithilfe von Package Share können Sie Pakete in den unternehmensinternen Bereich von Package Share hochladen. Dadurch können sie innerhalb des Unternehmens geteilt werden.
-
-Diese Pakete sind *nicht* der allgemeinen AEM-Community zugänglich, aber sie sind für alle bei Ihrem Unternehmen registrierten Benutzer verfügbar.
-
-So laden Sie Pakete in den unternehmensinternen Bereich von Package Share hoch:
+Weitere Informationen finden Sie in der [Dokumentation zur Softwareverteilung.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!CAUTION]
-Zum Hochladen eines Pakets in Package Share müssen Sie zuerst einen nach Ihrem Unternehmen benannten Gruppenordner im lokalen Package Manager erstellen. Beispielsweise „geometrixx“. Alle Pakete, die zum Freigeben hochgeladen werden sollen, müssen in diesem Gruppenordner platziert werden.
-Pakete in der Package Manager-Startseitenliste oder in anderen Ordnern können nicht freigegeben werden.
-
-1. Öffnen Sie den **Package Manager** und navigieren Sie zu dem Paket, das Sie hochladen wollen.
-
-1. Klicken Sie zum Öffnen auf das Paketsymbol.
-1. Klicken Sie auf **Freigeben**, um das Dialogfeld zum Hochladen des Pakets in Package Share zu öffnen.
-1. Wenn Sie noch nicht bei Package Share angemeldet sind, müssen Sie Ihre Anmeldedaten eingeben.
-
-   Sind Sie bereits angemeldet, zeigt AEM die Details des hochzuladenden Pakets an:
-
-   ![chlimage_1-347](assets/chlimage_1-347.png)
-
-1. Klicken Sie auf **Freigeben**, um das Paket in den unternehmensinternen Bereich von Package Share hochzuladen.
-
-   AEM zeigt den Status und den Zeitpunkt an, an dem das Hochladen des Pakets abgeschlossen ist. Anschließend können Sie auf das **x** (oben rechts) klicken, um das Fenster **Paket freigeben** zu verlassen.
-
-1. Nachdem der Hochladevorgang abgeschlossen ist, können Sie zum internen Ordner Ihres Unternehmens navigieren, um das gerade von Ihnen freigegebene Paket anzuzeigen.
-
->[!NOTE]
-Zum Ändern eines in Package Share verfügbaren Pakets müssen Sie es herunterladen, neu erstellen und dann erneut in Package Share hochladen.
-
-### Löschen eines Pakets  {#deleting-a-package}
-
-Sie können Pakete, die Sie hochgeladen haben, nur wie folgt löschen:
-
-1. Markieren Sie in der Unternehmensstruktur die Paketgruppe, die das Paket enthält.
-1. Klicken Sie auf das Paket.
-1. Klicken Sie auf die Schaltfläche „Löschen“.
-
-   ![](do-not-localize/chlimage_1-30.png)
-
-1. Klicken Sie auf **Löschen**, um zu bestätigen, dass Sie das Paket löschen möchten.
-
-### Erstellen von halbprivaten Paketen {#making-packages-semi-private}
-
-Sie können Pakete freigeben, sodass sie außerhalb Ihrer Organisation, aber nicht öffentlich zugänglich sind. Diese Pakete sind halbprivate Pakete. Um diese halbprivaten Pakete freizugeben, benötigen Sie Hilfe vom Adobe-Support. Erstellen Sie daher ein Ticket für den Adobe Support mit der Aufforderung, ein Paket außerhalb Ihrer Organisation zugänglich zu machen. Sie werden Sie um eine Liste von Adobe ID bitten, die Sie den Zugriff auf Ihre Pakete gewähren möchten.
-
+>
+>AEM Package Manager ist derzeit nicht mit Software Distribution einsetzbar. Sie laden Ihre Pakete auf Ihre lokale Festplatte herunter.
