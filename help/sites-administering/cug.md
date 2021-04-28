@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
+exl-id: 3a052270-b3ea-4d17-915c-be2b51cdc482
 translation-type: tm+mt
-source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 82%
+ht-degree: 80%
 
 ---
-
 
 # Erstellen von geschlossenen Benutzergruppen{#creating-a-closed-user-group}
 
@@ -84,7 +84,7 @@ So wenden Sie die CUG auf eine Seite an:
 
    >[HINWEIS!]
    >
-   > Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ nicht von Blueprints in Live Copies zurückgesetzt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+   > Beachten Sie, dass CUGs auf der Registerkarte &quot;Berechtigungen&quot;nicht in Live Copies von Blueprints ausgeführt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
    >
    > Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
@@ -143,4 +143,3 @@ Konfigurieren Sie [die Sitzungsverwaltung in der Datei dispatcher.any](https://h
    ```
 
 1. Legen Sie [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) auf `0` fest.
-
