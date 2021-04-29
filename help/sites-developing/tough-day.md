@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
+exl-id: 80442184-212a-424d-b320-5b301a54f974
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
-
 
 # Tag{#tough-day}
 
@@ -221,7 +221,7 @@ tests:
 
 ### Arbeiten mit vordefinierten Test-Suites  {#working-with-predefined-test-suites}
 
-Die folgenden Beispiele zeigen, wie Sie einen Test zu einer vordefinierten Suite hinzufügen und einen vorhandenen Test neu konfigurieren und aus einer vordefinierten Suite ausschließen.
+Die folgenden Beispiele zeigen, wie ein Test zu einer vordefinierten Suite hinzugefügt und ein vorhandener Test aus einer vordefinierten Suite neu konfiguriert und ausgeschlossen wird.
 
 Um einen neuen Test zu einer vordefinierten Suite hinzuzufügen, verwenden Sie den Parameter `add` und geben die gewünschte Suite an.
 
