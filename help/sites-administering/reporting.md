@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
+exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
 workflow-type: tm+mt
-source-wordcount: '2793'
-ht-degree: 84%
+source-wordcount: '2815'
+ht-degree: 83%
 
 ---
-
 
 # Berichterstellung {#reporting}
 
@@ -30,6 +30,10 @@ Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, st
 * [Benutzerbericht](#user-report)
 * [Bericht der Workflow-Instanz](#workflow-instance-report)
 * [Workflow-Bericht](#workflow-report)
+
+>[!NOTE]
+>
+>Diese Berichte stehen nur in der klassischen Benutzeroberfläche zur Verfügung. Informationen zur Systemüberwachung und zum Berichte in der modernen Benutzeroberfläche finden Sie im Dashboard [Vorgänge.](/help/sites-administering/operations-dashboard.md)
 
 Über die Konsole **Tools** kann auf alle Berichte zugegriffen werden. Wählen Sie im linken Bereich **Berichte** aus und doppelklicken Sie dann im rechten Bereich auf den benötigten Bericht, um ihn zur Anzeige und/oder Konfiguration zu öffnen.
 
@@ -173,7 +177,7 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
    Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
    * Wenn das Intervall auf `Day` eingestellt ist, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
-   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Snapshots für Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner Punkt angezeigt wird).
+   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Snapshots für Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner &quot;Punkt&quot;angezeigt wird).
 
 Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf den Bericht anzuwenden. Um die Anzeige nach der Anfertigung weiterer Momentaufnahmen zu aktualisieren, klicken Sie erneut auf **Los**.
 
@@ -198,7 +202,7 @@ Wenn die Momentaufnahmen erfasst werden, können Sie:
 
 >[!NOTE]
 >
->Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, zu einer Produktionsumgebung tägliche Momentaufnahmen aufzunehmen. Führen Sie diese täglichen Schnappschüsse nach Möglichkeit zu einer Tageszeit aus, zu der Ihre Website nicht viel Aktivität aufweist; dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Berichte Configuration** definiert werden; Weitere Informationen zum Konfigurieren finden Sie unter [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md).
+>Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch empfohlen, tägliche Snapshots auf einer Produktions-Umgebung zu verwenden. Führen Sie diese täglichen Schnappschüsse nach Möglichkeit zu einer Tageszeit aus, zu der Ihre Website nicht viel Aktivität aufweist; dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Berichte Configuration** definiert werden; Weitere Informationen zum Konfigurieren finden Sie unter [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md).
 
 #### Anzeigelimits {#display-limits}
 
@@ -303,7 +307,7 @@ Der Komponentenbericht stellt Informationen dazu bereit, wie Ihre Website die Ko
 * Komponentenpfad
 * Komponententyp
 * Letzte Änderung
-* Seite
+* Seite 
 
 Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
@@ -377,7 +381,7 @@ Im Seitenaktivitätsbericht werden die Seiten und die auf ihnen vorgenommenen Ak
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Seite
+* Seite 
 * Zeit
 * Typ
 * User
@@ -402,7 +406,7 @@ Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – s
 
 * Datum
 * IP-Adresse
-* Seite
+* Seite 
 * Referrer
 * Typ
 * Benutzerkennung
@@ -423,7 +427,7 @@ Dieser Bericht bietet Informationen zu allen Benutzern, die sich mit einem Konto
 
 * Alter
 * Land
-* Domäne
+* Domain
 * E-Mail
 * Familienname
 * Geschlecht
