@@ -8,14 +8,14 @@ contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Administrator
+exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 88%
 
 ---
-
 
 # Installieren und konfigurieren Sie Datenerfassungsfunktionen {#install-and-configure-data-capture-capabilities}
 
@@ -213,4 +213,3 @@ Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktio
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
 * [Erstellen Sie Ihr erstes PDF Formular](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-4/forms/pdf/designer-quickstart.pdf)
 * [Einführung in HTML5-Formulare](/help/forms/using/introduction.md)
-
