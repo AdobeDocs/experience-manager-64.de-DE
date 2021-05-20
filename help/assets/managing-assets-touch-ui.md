@@ -3,11 +3,10 @@ title: Digitale Assets mit AEM Assets verwalten
 description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: Asset-Verwaltung, Suche, Darstellungen, Zusammenarbeit
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 65%
@@ -368,7 +367,7 @@ Die Funktion hat einige Einschränkungen:
 
 1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und drücken Sie **[!UICONTROL die Eingabetaste]**. Das neue Tag wird in AEM gespeichert.
 
-   YouTube erfordert Tags, um zu veröffentlichen und einen Link zu YouTube (wenn ein geeigneter Link gefunden werden kann).
+   YouTube benötigt Tags, um zu veröffentlichen und einen Link zu YouTube zu haben (wenn ein geeigneter Link gefunden werden kann).
 Zum Erstellen von Tags benötigen Sie Schreibberechtigung für `/content/cq:tags/default` im CRX-Repository.
 
 1. Um eine Bewertung für das Asset bereitzustellen, tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]** und dann auf den Stern an der entsprechenden Position, um die gewünschte Bewertung zuzuweisen.
@@ -385,7 +384,7 @@ Zum Erstellen von Tags benötigen Sie Schreibberechtigung für `/content/cq:tags
    * Kanäle/Geräte, über die das Asset genutzt wurde.
    * Kreativlösungen, in denen das Asset kürzlich verwendet wurde.
 
-   Weitere Informationen finden Sie unter [Asset Insights](touch-ui-asset-insights.md).
+   Weitere Informationen finden Sie unter [Assets Insights](touch-ui-asset-insights.md).
 
 1. Tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
 1. Navigieren Sie zur Assets-Benutzeroberfläche. Die bearbeiteten Metadateneigenschaften, einschließlich Titel, Beschreibung, Bewertungen usw., werden auf der Asset-Ansicht in der Karten-Ansicht und unter den entsprechenden Spalten in der Liste angezeigt.
@@ -710,7 +709,7 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## Verwenden Sie die Zeitleiste {#timeline}
+## Verwenden der Zeitschiene {#timeline}
 
 Mit der Zeitleiste **[!UICONTROL können Sie verschiedene Ereignis für ein bestimmtes Element, z. B. aktive Workflows für ein Asset, Kommentare, Anmerkungen, Aktivitäten und Versionen, Ansicht werden.]**
 
