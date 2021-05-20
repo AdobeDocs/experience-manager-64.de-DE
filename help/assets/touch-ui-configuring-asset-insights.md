@@ -1,21 +1,20 @@
 ---
 title: Konfigurieren von Asset Insights
-description: Erfahren Sie, wie Sie Asset Insights in AEM Assets konfigurieren können.
+description: Erfahren Sie, wie Sie Assets Insights in AEM Assets konfigurieren.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Asset Insights,Asset-Berichte
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 95%
+source-wordcount: '241'
+ht-degree: 70%
 
 ---
 
+# Konfigurieren von Assets Insights {#configuring-asset-insights}
 
-# Konfigurieren von Asset Insights {#configuring-asset-insights}
-
-Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von Websites von Drittanbietern aus Adobe Analytics ab. Um Asset Insights zu aktivieren und diese Daten abzurufen und Statistiken zu erzeugen, konfigurieren Sie zuerst die Funktion zur Integration mit Adobe Analytics.
+Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von Websites von Drittanbietern aus Adobe Analytics ab. Damit Assets Insights diese Daten abrufen und Einblicke generieren kann, konfigurieren Sie zunächst die Funktion zur Integration mit Adobe Analytics.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von 
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Klicken/tippen Sie auf **[!UICONTROL Authentifizieren]**.
-1. Nachdem AEM Ihre Anmeldedaten authentifiziert hat, wählen Sie aus der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite aus, aus der Asset Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Nachdem AEM Ihre Anmeldedaten authentifiziert hat, wählen Sie in der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite, aus der Assets Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
 1. Nach der Report Suite-Einrichtung durch AEM klicken/tippen Sie auf **[!UICONTROL Fertig]**.
 
 ## Seitenverfolgung {#page-tracker}
