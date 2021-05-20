@@ -10,29 +10,28 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
-
 
 # Aktualisieren auf AEM 6.4{#upgrading-to-aem}
 
 In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.4 beschrieben:
 
 * [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md)
-* [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md) 
-* [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md) 
+* [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor ](/help/sites-deploying/pattern-detector.md)
+* [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md)
 * [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md)
 * [Aktualisierung von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
 * [Durchführen einer In-Place-Aktualisierung](/help/sites-deploying/in-place-upgrade.md)
 * [Prüfungen und Fehlerbehebung nach einer Aktualisierung](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
-* [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md) 
+* [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md)
 * [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md)
 * [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
@@ -51,7 +50,7 @@ Nachfolgend sind die wichtigsten Änderungen im Vergleich zu den letzten AEM-Ver
 
 In AEM 6.0 wurde das neue Jackrabbit-Oak-Repository eingeführt. Persistenz-Manager wurden durch [Mikrokernel](/help/sites-deploying/recommended-deploys.md) ersetzt. Ab Version 6.1 wird CRX2 nicht mehr unterstützt. Ein Migrationstool mit der Bezeichnung CRX2OAK muss ausgeführt werden, um CRX2-Repositorys von 5.6.1-Instanzen zu migrieren. Weitere Informationen finden Sie unter [Verwenden des CRX2OAK-Migrationstools](/help/sites-deploying/using-crx2oak.md).
 
-Wenn Asset Insights verwendet werden soll und Sie eine Aktualisierung von einer Version vor AEM 6.2 durchführen, müssen Assets migriert und IDs für diese über ein JMX-Bean generiert werden. In internen Tests wurden 125.000 Assets in einer TarMK-Umgebung innerhalb einer Stunde migriert. Ihre Ergebnisse können jedoch möglicherweise abweichen.
+Wenn Assets Insights verwendet werden soll und Sie von einer Version aktualisieren, die älter als AEM 6.2 ist, müssen Assets migriert werden und IDs über eine JMX-Bean generiert werden. In internen Tests wurden 125.000 Assets in einer TarMK-Umgebung innerhalb einer Stunde migriert. Ihre Ergebnisse können jedoch möglicherweise abweichen.
 
 AEM 6.3 hat ein neues Format für das `SegmentNodeStore` eingeführt, das die Grundlage der TarMK-Implementierung bildet. Wenn Sie eine Version vor AEM 6.3 aktualisieren, muss bei der Aktualisierung eine Migration des Repositorys durchgeführt werden, während der das System nicht verfügbar ist.
 
@@ -90,4 +89,3 @@ In 6.4 wurde der Fokus auf die Abwärtskompatibilität aller neuen Funktionen ge
 In Ihrem 6.4-Entwicklungszyklus schließlich helfen Ihnen Funktionen, die unter Nachhaltige Upgrades eingeführt wurden (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Best Practices zu befolgen, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
 
 ![6_4_upgrade_overviewflow chart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
