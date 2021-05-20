@@ -1,32 +1,31 @@
 ---
-title: Aktivieren von Asset Insights über DTM
-description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
+title: Aktivieren von Assets Insights über DTM
+description: Erfahren Sie, wie Sie das dynamische Tag-Management (DTM) der Adobe zur Aktivierung von Assets Insights verwenden.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Asset Insights,Asset-Berichte
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 50%
+source-wordcount: '682'
+ht-degree: 38%
 
 ---
 
+# Aktivieren von Assets Insights über DTM {#enabling-asset-insights-through-dtm}
 
-# Aktivieren von Asset Insights über DTM {#enabling-asset-insights-through-dtm}
-
-Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingtools aktivieren können. Es wird Adobe Analytics-Kunden kostenlos bereitgestellt. Sie können Ihren Rückverfolgungscode entweder so anpassen, dass CMS-Lösungen von Drittanbietern Asset Insights verwenden können, oder Sie können DTM verwenden, um Asset Insights-Tags einzufügen. Insights werden nur für Bilder unterstützt und bereitgestellt.
+Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingtools aktivieren können. Es wird Adobe Analytics-Kunden kostenlos bereitgestellt. Sie können Ihren Rückverfolgungscode entweder so anpassen, dass CMS-Lösungen von Drittanbietern Assets Insights verwenden können, oder Sie können DTM verwenden, um Assets Insights-Tags einzufügen. Insights werden nur für Bilder unterstützt und bereitgestellt.
 
 >[!CAUTION]
 >
 >Adobe DTM wird zugunsten von Adobe Experience Platform Launch eingestellt und wird bald [Ende des Lebenszyklus](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) erreichen. Adobe empfiehlt, dass Sie [Launch für Elementeinblicke](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) verwenden.
 
-Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
+Führen Sie die folgenden Schritte aus, um Assets Insights über DTM zu aktivieren:
 
 1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Insights-Konfiguration]**.
 1. [Konfigurieren Sie die AEM-Instanz mit dem DTM Cloud-Dienst.](../sites-administering/dtm.md)
 
-   Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) anmelden und **[!UICONTROL Kontoeinstellungen]** über das Symbol Profil aufrufen. Dieser Schritt ist aus der Sicht von Asset Insights nicht erforderlich, weil die Integration von AEM Sites mit Asset Insights noch in Arbeit ist.
+   Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) anmelden und **[!UICONTROL Kontoeinstellungen]** über das Symbol Profil aufrufen. Dieser Schritt ist aus Sicht von Assets Insights nicht erforderlich, da die Integration von AEM Sites mit Assets Insights noch in Arbeit ist.
 
 1. Melden Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) an und wählen Sie ggf. ein Unternehmen aus.
 1. Erstellen/Öffnen einer vorhandenen Webeigenschaft
@@ -51,7 +50,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
    >
    >* `AppMeasurement.js` wurde entfernt. Es wird erwartet, dass es über das Adobe Analytics-Tool von DTM verfügbar ist.
    >* Der Aufruf von `assetAnalytics.dispatcher.init()` wird entfernt. Es wird erwartet, dass die Funktion erneut aufgerufen wird, sobald das Adobe Analytics-Tool von DTM vollständig geladen ist.
-   >* In Abhängigkeit davon, wo die Asset Insights-Seitenverfolgung gehostet wird (z. B. AEM, CDN usw.), muss der Ursprung der Skriptquelle möglicherweise geändert werden.
+   >* Je nachdem, wo Assets Insights Page Tracker gehostet wird (z. B. AEM, CDN usw.), muss die Herkunft der Skriptquelle möglicherweise geändert werden.
    >* Bei AEM-gehosteten Seiten-Tracker sollte die Quelle mit dem Hostnamen der Dispatcher-Instanz auf eine Veröffentlichungsinstanz verweisen.
 
 
