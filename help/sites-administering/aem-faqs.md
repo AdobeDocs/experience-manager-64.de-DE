@@ -6,14 +6,13 @@ seo-description: Ziehen Sie diese FAQ heran, um allgemeine Workflows oder Proble
 uuid: af197bcc-2c61-4c64-b781-f24d83c27c82
 contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
-translation-type: tm+mt
-source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+exl-id: 76110cf4-0fd8-4203-b256-c0818a1b64d2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 56%
 
 ---
-
 
 # Häufig gestellte Fragen (FAQ) zu AEM{#aem-faqs}
 
@@ -27,7 +26,7 @@ Eine Binary-Less-Verteilung wird für Bereitstellungen über einen freigegebenen
 
 Bei aktiviertem Binary-Less-Modus enthalten die verteilten Inhaltspakete Verweise auf Binärdaten und nicht die Bindärdaten selbst.
 
-### Wie aktiviere ich die Binary-Less-Verteilung? {#how-do-i-enable-binary-less-distribution}
+### Wie aktiviere ich die Binary-Less-Verteilung?  {#how-do-i-enable-binary-less-distribution}
 
 Stellen Sie zur Aktivierung der Binary-Less-Verteilung einen freigegebenen Blob-Speicher bereit.\
 Überprüfen Sie die Eigenschaft `useBinaryReferences` in der OSGI-Konfiguration mit der Factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*, die Ihr Agent verwendet.
@@ -56,7 +55,7 @@ Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
 * [Vorbereiten von Inhalten für die Übersetzung](/help/sites-administering/tc-prep.md)
 * [Verwalten von Übersetzungsprojekten](/help/sites-administering/tc-manage.md)
 
-### Wie lassen sich AEM-Funktionen im Zusammenhang mit Anmeldeversuchen und ACL- oder Berechtigungsänderungen prüfen?  {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
+### Wie lassen sich AEM-Funktionen im Zusammenhang mit Anmeldeversuchen und ACL- oder Berechtigungsänderungen prüfen? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM bietet nun die Möglichkeit, administrative Änderungen zu protokollieren, um Fehlerbehebungen und Audits zu erleichtern. Standardmäßig werden die Informationen in der Datei `error.log` protokolliert. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern.\
 Informationen dazu, wie Sie Einträge in einer separaten Protokolldatei speichern, finden Sie unter [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
@@ -105,7 +104,7 @@ Sie müssen die Standardkonfigurationseigenschaft des JS-Prozessors des Adobe Gr
 
 ## Assets {#assets}
 
-### Warum wiederholt sich der Assets-Workflow beim Hochladen von MP4-Dateien (z. B. bei Verwendung der Drag-and-Drop-Methode)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
+### Warum wiederholt sich der Assets-Workflow beim Hochladen von MP4-Dateien (z. B. bei Verwendung der Drag-and-Drop-Methode)?  {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
 Wenn der Benutzer, der die Filmdateien hochlädt, nicht über die Berechtigungen zum Löschen für den Asset-Knoten verfügt, schlägt die Löschung von Chunk-Knoten fehl und der Upload wird neu gestartet.
 
@@ -132,7 +131,7 @@ Als Problemumgehung können Sie die Komponente auch manuell deaktivieren und zwa
 
 `curl -u admin:$(pass CQ_Admin) 'http://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
-### Wie lässt sich Asset Insights mit AEM 6.4-Instanzen konfigurieren? {#how-to-configure-asset-insights-with-aem-instance}
+### Wie konfigurieren Sie Assets Insights mit AEM 6.4-Instanz? {#how-to-configure-asset-insights-with-aem-instance}
 
 Informationen zum Einrichten und Konfigurieren von Asset Insights für Experience Manager, der über die Adobe Aktivierung (DTM) bereitgestellt wird, finden Sie unter [Einrichten von Asset Insights mit AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
 
