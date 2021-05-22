@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
-translation-type: tm+mt
-source-git-commit: 08e0b5c1cbb05a110bfbec72ce0f89986a0fcf74
+exl-id: 1ee7ccbd-8654-4d03-8a67-2c41863ae951
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
-
 
 # Lösungsintegration{#solutions-integration}
 
@@ -24,7 +23,6 @@ ht-degree: 100%
 * [Integrieren mit Services von Dritten](/help/sites-administering/third-party-services.md)
 * [Analyse mit externen Anbietern](/help/sites-administering/external-providers.md)
 * [Catalog Producer](/help/sites-administering/catalog-producer.md)
-* [Konfigurieren der AEM Assets-Integration mit Marketing Cloud und Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md)
 * [SharePoint-Connector](/help/sites-administering/sharepoint-connector.md)
 
 Informationen zur Integration von AEM mit anderen Lösungen von Adobe oder mit Services von Dritten:
@@ -35,7 +33,7 @@ Informationen zur Integration von AEM mit anderen Lösungen von Adobe oder mit S
 >
 >* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
 >* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
->
 
+>
 
 
