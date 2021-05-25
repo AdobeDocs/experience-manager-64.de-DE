@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
-translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
 
-
-# Seitenvergleich {#page-diff}
+# Seitenvergleich{#page-diff}
 
 ## Einführung {#introduction}
 
@@ -37,9 +36,9 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 Folgendes kann verglichen werden:
 
 * [Versionen](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) – frühere Version einer Seite mit ihrem aktuellen Status
-* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies – Live Copy mit ihrer Blueprint
+* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) – Live Copy mit ihrer Blueprint
 * [Launches](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) – Launch mit seiner Quelle
-* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Sprachkopien – eine Seite vor und nach der (erneuten) Übersetzung
+* [Sprachkopien](/help/sites-administering/tc-manage.md#comparing-language-copies) – eine Seite vor und nach der (erneuten) Übersetzung
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
@@ -76,7 +75,7 @@ Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden   {#fullscreen-and-exiting}
+### Vollbild und Beenden  {#fullscreen-and-exiting}
 
 Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
@@ -111,4 +110,3 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 >[!NOTE]
 >
 >Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/sites-developing/pagediff.md) zu dieser Funktion.
-
