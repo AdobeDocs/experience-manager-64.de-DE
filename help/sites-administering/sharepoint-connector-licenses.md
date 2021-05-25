@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
-translation-type: tm+mt
-source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 74%
 
 ---
 
-
 # SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 Dieser Abschnitt umfasst alle Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse, die in Zusammenhang mit dem Day JCR Connector für Microsoft SharePoint explizit aufgeführt sein müssen.
 
-## Überblick über die Bibliotheken von Connector-Drittanbietern {#overview-of-connector-rd-party-libraries}
+## Überblick über die Bibliotheken von Connector-Drittanbietern  {#overview-of-connector-rd-party-libraries}
 
 In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePoint Connector-Core-Bibliotheken genutzt werden, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
 
@@ -30,7 +29,7 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 |---|---|
 | annogen | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
-| axiom-dom | [Apache](#apache) |
+| Axiom-dom | [Apache](#apache) |
 | axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
@@ -41,8 +40,8 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| parallel | [Concurrent](#concurrent)  (Öffentliche Domäne) |
-| geronimo-Aktivierung_1.1_spec | [Apache](#apache) |
+| parallel | [Gleichzeitig](#concurrent)  (öffentlich) |
+| geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
@@ -60,7 +59,7 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (enthält Teile, die von Public Domain- und W3C-Softwarelizenzen abgedeckt werden) |
+| xml-apis | [Apache](#apache)  (enthält Teile, die von Public Domain- und W3C-Softwarelizenzen abgedeckt werden) |
 | XmlSchema | [Apache](#apache) |
 
 ## Überblick über die Bibliotheken von CRX-Drittanbietern {#overview-of-crx-rd-party-libraries}
@@ -426,7 +425,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      limitations under the License.
 ```
 
-## Concurrent {#concurrent}
+## Gleichzeitig {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -438,7 +437,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## Day JCR {#day-jcr}
+## Day JCR  {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this 
@@ -744,7 +743,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      2000-05-05
 ```
 
-## SLF4J.ORG {#slf-j-org}
+## SLF4J.ORG  {#slf-j-org}
 
 ```xml
      Copyright (c) 2004-2007 QOS.ch
@@ -1290,4 +1289,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and 
 LICENSEE agrees to preserve same.
 ```
-
