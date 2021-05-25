@@ -8,24 +8,23 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
-translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+exl-id: b9d2c63c-1777-4c13-a39f-6891f0ff52b2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 93%
 
 ---
 
-
 # Überwachter Ordner in AEM Forms {#watched-folder-in-aem-forms}
 
 Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter Ordner bezeichnet wird, sodass ein vorkonfigurierter Workflow-, Dienst- oder Skriptvorgang zur Verarbeitung der Datei aufgerufen wird, wenn ein Benutzer eine Datei (z. B. eine PDF-Datei) in diesem überwachten Ordner ablegt. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die Ergebnisdatei in einem angegebenen Ausgabeordner gespeichert. Weitere Informationen zu Workflows, Diensten und Skripts finden Sie unter [Verschiedene Methoden zur Verarbeitung von Dateien](#variousmethodsforprocessingfiles).
 
-## Überwachten Ordner erstellen {#create-a-watched-folder}
+## Überwachten Ordner erstellen  {#create-a-watched-folder}
 
 Sie können überwachte Ordner im Dateisystem mit einer der folgenden Methoden erstellen:
 
-* Geben Sie beim Konfigurieren der Eigenschaften eines Konfigurationsknotens des Typs &quot;Überwachter Ordner&quot;den vollständigen Pfad des übergeordneten Ordners in die Eigenschaft &quot;folderPath&quot;ein und hängen Sie den Namen des zu erstellenden überwachten Ordners an, wie im folgenden Beispiel gezeigt: `C:/MyPDFs/MyWatchedFolder`
+* Geben Sie beim Konfigurieren der Eigenschaften eines Konfigurationsknotens für den überwachten Ordner den vollständigen Pfad des übergeordneten Ordners in die Eigenschaft &quot;folderPath&quot;ein und hängen Sie den Namen des zu erstellenden überwachten Ordners an, wie im folgenden Beispiel gezeigt: `C:/MyPDFs/MyWatchedFolder`
 
    Der Ordner `MyWatchedFolder`ist nicht vorhanden. AEM Forms versucht, den Ordner unter dem angegebenen Pfad zu erstellen.
 
@@ -78,7 +77,7 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
    * veröffentlichen
 
-   * author, publish
+   * author, Veröffentlichungsinstanz
 
    * publish, author
    >[!NOTE]
@@ -95,35 +94,35 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Zeitüberschreitungsfunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Die Funktion ist für gedrosselte überwachte Ordner relevanter, da eine geringe Anzahl von noch unformatiert gebliebenen Dateien (aufgrund der zeitweisen Fehlfunktion des Auftrags/Arbeitsablaufs) das Potenzial hat, die Verarbeitung des gesamten Stapels zu unterbinden, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als „true“ beibehalten wird (Standardeinstellung), tritt für überwachte Ordner, die nicht gedrosselt werden, keine Zeitüberschreitung ein. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
 
 * **pollInterval (Lang)**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße. Der Wert für „pollInterval“ muss größer als oder gleich eins sein.
-* **excludeFilePattern (String)**: Eine durch Semikolon  **;** getrennte Liste von Mustern, die von einem überwachten Ordner verwendet werden, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
+* **excludeFilePattern (String)**: Eine durch Semikolon  **getrennte** Liste von Mustern, die von einem überwachten Ordner verwendet werden, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
 
    Sie können Dateimuster verwenden, um Folgendes auszuschließen:[](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
    * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
-   * Dateien mit bestimmten Namen; zum Beispiel data&amp;ast; schließen Dateien und Ordner mit den Namen data1, data2 usw. aus.
+   * Dateien mit bestimmten Namen; Beispiel: data&amp;ast; würde Dateien und Ordner mit den Namen data1, data2 usw. ausschließen.
    * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
       * Data[0-9][0-9][0-9].[dD][aA][tT]
       * &amp;ast;.[dD][Aa][Tt]
-      * &amp;ast;.[XX][Mm][Ll]
+      * &amp;ast;.[Xx][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (String)**: Eine durch Semikolon  **;** getrennte Liste von Mustern, die vom überwachten Ordner verwendet werden, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das IncludeFilePattern &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit input&amp;ast; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
+* **includeFilePattern (String)**: Eine durch Semikolon  **getrennte** Liste von Mustern, mit denen der überwachte Ordner bestimmt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn das IncludeFilePattern beispielsweise input&amp;ast; lautet, werden alle Dateien und Ordner angezeigt, die mit input&amp;ast übereinstimmen. abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
    * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
-   * Dateien mit bestimmten Namen, z. B. data.&amp;ast; enthält Dateien und Ordner mit den Namen data1, data2 usw.
+   * Dateien mit bestimmten Namen, z. B. data.&amp;ast; würde Dateien und Ordner namens data1, data2 usw. enthalten.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA][tT]
 
       * &amp;ast;.[dD][Aa][Tt]
-      * &amp;ast;.[XX][Mm][Ll]
+      * &amp;ast;.[Xx][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime (Lang)**: Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0. Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Dies verhindert, dass der überwachte Ordner die Datei bereits vor Ablauf der zehn Minuten überprüft.
+* **waitTime (Lang)**: Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0. Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei zehn Minuten dauert, legen Sie die Wartezeit auf 10&amp;ast;60 &amp;ast;1000 Millisekunden fest. Dies verhindert, dass der überwachte Ordner die Datei bereits vor Ablauf der zehn Minuten überprüft.
 * **purgeDuration (Lang)**: Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung hilft dafür zu sorgen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **resultFolderName (Zeichenfolge)**: Der Ordner, in dem die Ergebnisse gespeichert werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgendem Dateimuster sein:
 
@@ -152,7 +151,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/
 
 * **failureFolderName (Zeichenfolge)**: Der Ordner, in dem Dateien mit Fehlern gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist „failure/%Y/%M/%D/“.
 * **preserveFolderName (Zeichenfolge):** Der Speicherort, an dem Dateien nach erfolgreicher Verarbeitung gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
-* **batchSize (Lang)**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2. 
+* **batchSize (Lang)**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
 
      Die Einstellungen für Abrufintervall und Stapelgröße bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der Watched Folder-Dienst verwendet einen Quartz-Threadpool, um den Eingabeordner zu überprüfen. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können.
 
@@ -172,9 +171,9 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/
 >Die Workflows sind standardmäßig asynchron. Sie werden selbst dann im asynchronen Modus gestartet, wenn Sie das Flag auf „false“ setzen.
 
 * **enabled (Boolescher Wert)**: Deaktiviert und aktiviert die Überprüfung des überwachten Ordners. Legen Sie für „enabled“ den Wert „true“ fest, um die Überprüfung des überwachten Ordners zu starten. Der Standardwert lautet true.
-* **payloadMapperFilter**: Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird innerhalb des überwachten Ordners eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als eine Nutzlast für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie die Struktur einer Nutzlast definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. Wenn Sie beispielsweise die Standardzuordnung verwenden, ordnet sie den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei Standard-Mapper-Implementierungen sind verfügbar. Wenn Sie keine[ benutzerdefinierte Implementierung](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter) haben, verwenden Sie eine Standard-Implementierung:
+* **payloadMapperFilter**: Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird eine Ordnerstruktur im überwachten Ordner erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als eine Nutzlast für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie die Struktur einer Nutzlast definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. Wenn Sie beispielsweise den Standard-Mapper verwenden, ordnet er den Inhalt des überwachten Ordners dem Ordner [payload]\input und dem Ordner [payload]\output zu. Zwei Standard-Mapper-Implementierungen sind verfügbar. Wenn Sie keine[ benutzerdefinierte Implementierung](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter) haben, verwenden Sie eine Standard-Implementierung:
 
-   * **Standard-Mapper:** Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie außerdem im Nutzlastanschluss eines Workflows die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
+   * **Standard-Mapper:** Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie außerdem im Payload-Pfad eines Workflows die Pfade [payload]/input/ und [payload]/output , um Inhalte abzurufen und zu speichern.
    * **Einfacher dateibasierter Payload-Mapper:** Verwenden Sie den einfachen dateibasierten Payload-Mapper, um Eingabe- und Ausgabe-Inhalte direkt im Nutzdatenordner zu beizubehalten. Er erstellt keine zusätzliche Hierarchie, wie Standard-Mapper.
 
 ### Benutzerdefinierte Konfigurationsparameter {#custom-configuration-parameters}
@@ -184,7 +183,7 @@ Sie können außer den oben aufgeführten Konfigurationseigenschaften für über
 1. Melden Sie sich bei CRXDE-Lite an und navigieren Sie zum Konfigurationsknoten für den überwachten Ordner.
 1. Fügen Sie eine Eigenschaft „param.&lt;property_name>“ zum Konfigurationsknoten für den überwachten Ordner hinzu. Es können nur Eigenschaften der Typen Boolescher Wert, Datum, Dezimalzahl, Double, Lang und Zeichenfolge verwendet werden. Sie können Eigenschaften mit einem einzelnen oder mit mehreren Werten angeben.
 
-**Hinweis:** *Wenn der Datentyp der Eigenschaft Dublette ist, geben Sie im Wert dieser Eigenschaften einen Dezimalpunkt an. Für alle Eigenschaften, deren Datentyp Double lautet und bei deren Wert kein Dezimalpunkt angegeben ist, wird der Typ in Long umgewandelt. *
+**Hinweis:** *Wenn der Datentyp der Eigenschaft Double lautet, geben Sie einen Dezimalpunkt im Wert dieser Eigenschaften an. Für alle Eigenschaften, deren Datentyp Double lautet und bei deren Wert kein Dezimalpunkt angegeben ist, wird der Typ in Long umgewandelt. *
 
 Diese Eigenschaften werden als unveränderliche Zuordnung des Typs „Map&lt;String, Object>“ an den Verarbeitungscode übergeben. Dieser Code kann ein ECMAScript, ein Workflow oder ein Dienst sein. Die für die Eigenschaften angegebenen Werte stehen als Schlüssel-Wert-Paare in der Zuordnung zur Verfügung. Der Schlüssel ist der Name der Eigenschaft, der Wert ihr Wert. Weitere Informationen zu benutzerdefinierten Konfigurationsparametern finden Sie in der folgenden Abbildung:
 
@@ -286,10 +285,10 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 
 Standardmäßig wird ein Containerordner (/etc/fd/watchfolder/scripts) bereitgestellt, in dem Kunden ihre Skripts ablegen können und der vom watch-folder-Framework verwendete standardmäßige service-user verfügt über die zum Lesen von Skripten unter diesem Speicherort erforderlichen Berechtigungen.
 
-Wenn Sie Ihre Skripten an einem benutzerdefinierten Speicherort ablegen möchten, hat der Standarddienstbenutzer möglicherweise keine Leserechte für den benutzerdefinierten Speicherort. Führen Sie in einem solchen Fall die folgenden Schritte durch, um die benötigten Berechtigungen für den benutzerdefinierten Speicherort bereitzustellen:
+Wenn Sie Ihre Skripte an einem benutzerdefinierten Speicherort platzieren möchten, hat der standardmäßige service-user möglicherweise keine Leseberechtigungen für den benutzerdefinierten Speicherort. Führen Sie in einem solchen Fall die folgenden Schritte durch, um die benötigten Berechtigungen für den benutzerdefinierten Speicherort bereitzustellen:
 
 1. Erstellen Sie einen Systembenutzer programmgesteuert oder über die Konsole `https://[server]:[port]/crx/explorer`. Sie können auch einen bestehenden Systembenutzer verwenden. Für diesen Zweck ist es wichtig, nicht mit normalen, sondern mit Systembenutzern zu arbeiten.
-1. Weisen Sie dem neu erstellten oder bestehenden Systembenutzer für den benutzerdefinierten Speicherort, unter dem die Skripte gespeichert sind, Leserechte zu. Sie können mehrere benutzerdefinierte Speicherorte verwenden. Gewähren Sie mindestens Leserechte für alle benutzerdefinierten Speicherorte.
+1. Weisen Sie dem neu erstellten oder bestehenden Systembenutzer für den benutzerdefinierten Speicherort, unter dem die Skripte gespeichert sind, Leserechte zu. Sie können mehrere benutzerdefinierte Speicherorte verwenden. Gewähren Sie mindestens Leseberechtigungen für alle benutzerdefinierten Speicherorte.
 1. Suchen Sie in der Felix-Konfigurationskonsole (/system/console/configMgr) die Dienstbenutzer-Zuordnung für die watch-folders. Diese Zuordnung lautet ähnlich wie &#39;Mapping: adobe-aemds-core-watch-folder=...&#39;.
 1. Klicken Sie auf die Zuordnung. Ändern Sie für den Eintrag &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; die Angabe „fd-service“ in die ID des benutzerdefinierten Systembenutzers. Klicken Sie auf Speichern.
 
@@ -566,7 +565,7 @@ Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werd
 
    * Data[0-9][0-9][0-9].[dD][aA][tT]
    * &amp;ast;.[dD][Aa][Tt]
-   * &amp;ast;.[XX][Mm][Ll]
+   * &amp;ast;.[Xx][Mm][Ll]
 
 * Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
 * %Y = Jahr (vollständig)
@@ -599,11 +598,11 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 1. [Workflow erstellen](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Überwachten Ordner konfigurieren](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### ECMAScript erstellen  {#create-an-ecmascript}
+### ECMAScript erstellen {#create-an-ecmascript}
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL ist `https://[server]:[port]/crx/de`.
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL lautet `https://[server]:[port]/crx/de`.
 
 1. Navigieren Sie zu „/etc/workflow/scripts“ und erstellen Sie einen Ordner namens „PDFG“. 
 
@@ -638,7 +637,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.
 
-   https://[Servername]:[Anschluss]/Workflow
+   https://[servername]:[port]/workflow
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
 
@@ -652,7 +651,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Klicken Sie mit der rechten Maustaste auf den Prozessschritt und wählen Sie **Bearbeiten**. Das Fenster „Schritt-Eigenschaften“ wird angezeigt.
 
-1. Wählen Sie auf der Registerkarte „Prozess“ das ECMAScript aus. Beispielsweise das Skript pdfg-openOffice-sample.ecma, das in [Erstellen eines ECMAScripts](#p-create-an-ecmascript-p) erstellt wurde. Aktivieren Sie die Option **Handler-Modus** und klicken Sie auf **OK**.
+1. Wählen Sie auf der Registerkarte „Prozess“ das ECMAScript aus. Beispielsweise das Skript pdfg-openOffice-sample.ecma , das in [Erstellen eines ECMAScripts](#p-create-an-ecmascript-p) erstellt wurde. Aktivieren Sie die Option **Handler-Modus** und klicken Sie auf **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
@@ -685,11 +684,11 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 1. [Workflow erstellen](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Überwachten Ordner konfigurieren](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### ECMAScript erstellen  {#create-an-ecmascript-1}
+### ECMAScript erstellen {#create-an-ecmascript-1}
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL ist `https://[server]:[port]/crx/de`.
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL lautet `https://[server]:[port]/crx/de`.
 
 1. Navigieren Sie zu „/etc/workflow/scripts“ und erstellen Sie einen Ordner namens **CMB**.
 
@@ -748,7 +747,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
    * **folderPath (Zeichenfolge)**: Der Pfad des Ordners, der regelmäßig mit dem angegebenen Zeitintervall überprüft werden soll. Der Ordner muss sich an einem freigegebenen Speicherort befinden und alle Server müssen uneingeschränkten Zugriff auf diesen Server haben.
    * **inputProcessorType (Zeichenfolge)**: Der Typ des zu startenden Prozesses. Geben Sie für dieses Tutorial „Workflow“ an.
-   * **inputProcessorId (Zeichenfolge)**: Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. In diesem Beispiel hat die Eigenschaft „inputProcessorType“ den Wert „workflow“. Geben Sie daher für die Eigenschaft &quot;inputProcessorId&quot;den folgenden Pfad des PDFG-Arbeitsablaufs an:
+   * **inputProcessorId (Zeichenfolge)**: Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. In diesem Beispiel hat die Eigenschaft „inputProcessorType“ den Wert „workflow“. Geben Sie daher für die Eigenschaft &quot;inputProcessorId&quot;den folgenden Pfad des PDFG-Workflows an:
 
       `/etc/workflow/models/cmb/jcr:content/model`
 
