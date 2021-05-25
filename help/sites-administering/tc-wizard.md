@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Sprachkopie
+exl-id: a3ac6b7e-8a18-4432-9e56-1f9bd7cf0548
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 81%
 
 ---
-
 
 # Assistent „Sprachkopie erstellen“{#language-copy-wizard}
 
@@ -25,7 +24,7 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!NOTE]
 >
->Der Benutzer muss Mitglied der Gruppe der Projektadministratoren sein, um die Sprachkopie einer Site zu erstellen.
+>Der Benutzer muss Mitglied der Gruppe &quot;project-administrators&quot;sein, um die Sprachkopie einer Site zu erstellen.
 
 Sie können wie folgt auf diesen Assistenten zugreifen:
 
@@ -60,4 +59,3 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 1. Mit der Schaltfläche **Erstellen** wird der Assistent beendet.
 
    ![chlimage_1-53](assets/chlimage_1-53.jpeg)
-
