@@ -2,16 +2,15 @@
 title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-feature: APIs,Assets HTTP API,Developer Tools
+feature: APIs,Assets-HTTP-API,Entwicklertools
 role: Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1558'
 ht-degree: 86%
 
 ---
-
 
 # Assets-HTTP-API {#assets-http-api}
 
@@ -28,7 +27,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namensraum. Die Benutzeroberfläche des Experience Managers aktualisiert jedoch die Metadateneigenschaften im Namensraum `dc`.
+>[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im Namespace `dc` .
 
 ## Datenmodell {#data-model}
 
@@ -129,9 +128,9 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens `*` ein  angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
 
-**Parameter**: Die Parameter beziehen sich  `name` auf den Asset-Namen und  `file` auf die Dateireferenz.
+**Parameter**: Die Parameter sind  `name` für den Asset-Namen und  `file` für die Dateireferenz.
 
 **Anfrage**
 
@@ -140,14 +139,14 @@ Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DA
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - ERSTELLT - wenn Asset erfolgreich erstellt wurde.
-* 409 - KONFLIKT - wenn Asset bereits vorhanden.
+* 201 - ERSTELLT - wenn das Asset erfolgreich erstellt wurde.
+* 409 - KONFLIKT - wenn Asset bereits vorhanden ist.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). Bei einer Aktualisierung wird der standardmäßige Arbeitsablauf für die Verarbeitung von Assets ausgeführt, sofern er konfiguriert ist.
+Aktualisiert die Binärdatei eines Assets (Ausgabedarstellung mit dem ursprünglichen Namen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -171,9 +170,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Synchronisieren Sie Metadaten-Update zwischen `dc` und `jcr` Namensraum {#sync-metadata-between-namespaces}
+### Synchronisieren von Metadaten-Updates zwischen `dc` und `jcr` Namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im Namensraum `jcr`. Die mithilfe von Touch-UI vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namensraum `dc`. Um die Metadatenwerte zwischen dem Namensraum `dc` und dem `jcr` zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der den Workflow beim Bearbeiten von Assets ausführt. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im Namespace `jcr` . Die mithilfe der Touch-optimierten Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namespace `dc` . Um die Metadatenwerte zwischen `dc` und dem `jcr`-Namespace zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
