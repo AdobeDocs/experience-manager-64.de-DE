@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 41727155-2a67-44b6-b925-22001891a348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 98%
 
 ---
-
 
 # Konzeption einer Kampagne{#setting-up-your-campaign}
 
@@ -46,7 +45,7 @@ Anschließend müssen Sie, abhängig vom Typ des Erlebnisses, das Sie erstellen,
 * Bei Erstellung eines Adobe Target-Angebots (ehemals Test&amp;Target):
 
    1. [Erstellen Sie ein Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Integrieren Sie es mit Adobe Target.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+   1. [Integrieren Sie es mit Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -64,7 +63,7 @@ So erstellen Sie einen neue Marke:
 
 1. Klicken Sie auf **Erstellen**. Ihre neue Marke wird im MCM angezeigt (mit einem Standardsymbol).
 
-### Definieren der Eigenschaften für die neue Marke {#defining-the-properties-for-your-new-brand}
+### Definieren der Eigenschaften für die neue Marke  {#defining-the-properties-for-your-new-brand}
 
 1. Wählen Sie im linken Bereich **Kampagnen**, wählen Sie im rechten Bereich das Symbol der neuen Marke und klicken Sie auf **Eigenschaften...**
 
@@ -139,7 +138,7 @@ Nachdem Sie das Grundgerüst für Ihr Erlebnis erstellt haben, müssen Sie jetzt
 
 * [Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Integrieren Sie es mit Adobe Target.](/help/sites-administering/target.md)
+   * [Integrieren Sie es mit Adobe Target](/help/sites-administering/target.md)
 
 ### Hinzufügen eines neuen Touchpoints {#adding-a-new-touchpoint}
 
@@ -187,7 +186,7 @@ So erstellen Sie einen neuen Lead manuell:
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Geben Sie die Adressinformationen ein. Klicken Sie auf **Speichern**, um den Lead zu speichern. Wenn Sie weitere Interessenten hinzufügen müssen, klicken Sie auf** Speichern und Neu**.
+1. Geben Sie die Adressinformationen ein. Klicken Sie auf **Speichern**, um den Lead zu speichern. Wenn Sie weitere Leads hinzufügen müssen, klicken Sie auf &quot;Speichern und Neu&quot;.
 
    Der neue Lead wird im Bereich „Leads“ angezeigt. Wenn Sie auf den Eintrag klicken, werden alle eingegebenen Informationen im rechten Bereich angezeigt. Sobald Sie den Lead erstellt haben, können Sie ihn einer Liste hinzufügen.
 
@@ -232,7 +231,7 @@ So importieren Sie Leads aus einer kommagetrennten Liste:
    >
    >Bei der ersten Zeile in der CSV-Liste handelt es sich um vordefinierte Etiketten, die genau wie im Beispiel angegeben geschrieben werden müssen:
    >
-   >`email,givenName,familyName` - wenn sie als  `givenname`Beispiel geschrieben wurde, wird das System es nicht erkennen.
+   >`email,givenName,familyName` - wenn es beispielsweise als  `givenname`Beispiel geschrieben wurde, wird das System es nicht erkennen.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -256,7 +255,7 @@ So fügen Sie schon bestehenden Listen Leads hinzu:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...** Das Fenster **Hinzufügen in Liste **wird geöffnet.
+1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...** Das Fenster &quot;Zur Liste hinzufügen&quot;wird geöffnet.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -400,4 +399,3 @@ So zeigen Sie Leads an, die einer Liste angehören:
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
 1. Klicken Sie auf **Schließen**, um zum MCM zurückzukehren.
-
