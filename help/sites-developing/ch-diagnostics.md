@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6aa88583-5d34-4f77-a932-d47d84785eca
-translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+exl-id: 31926737-1a06-4fb9-b851-665095954875
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 72%
 
 ---
-
 
 # ContextHub-Diagnosen {#contexthub-diagnostics}
 
@@ -32,7 +31,7 @@ Die „Seite ContextHub-Diagnose“ enthält Informationen zu den erstellten Sto
 
 >[!NOTE]
 >
->Bei ContextHub-Konfigurationen, die sich noch unter ihren alten Pfaden befinden, ist der Speicherort der Diagnoseseite `http://<host>:<port>/libs/settings/cloudsettings/legacy/contexthub.diagnostics.html`.
+>Für ContextHub-Konfigurationen, die sich noch unter ihren alten Pfaden befinden, befindet sich der Speicherort der Diagnoseseite `http://<host>:<port>/libs/settings/cloudsettings/legacy/contexthub.diagnostics.html`.
 
 ## Stores  {#stores}
 
@@ -43,7 +42,7 @@ Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert w
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Storetyp definiert ist.
 * **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Storetyp implementieren.
 
-## Modules   {#modules}
+## Modules  {#modules}
 
 Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule auf, die konfiguriert wurden. Jedes Element in der Liste besteht aus folgenden Informationen:
 
@@ -52,7 +51,7 @@ Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule au
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Benutzeroberflächenmodultyp definiert ist.
 * **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Benutzeroberflächenmodultyp implementieren.
 
-## Clientlibs   {#clientlibs}
+## Clientlibs  {#clientlibs}
 
 Der Abschnitt „Clientlibs“ listet alle Ordner der Client-Bibliothek auf, die ContextHub geladen hat. Die Client-Bibliotheken sind kategorisiert:
 
@@ -60,14 +59,14 @@ Der Abschnitt „Clientlibs“ listet alle Ordner der Client-Bibliothek auf, die
 * **ui.js:** Client-Bibliotheken, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
 * **style.css:** CSS-Dateien, die aus Client-Bibliotheken geladen werden.
 
-## URLs   {#urls}
+## URLs  {#urls}
 
 Der Abschnitt „URLs“ enthält Links zu ContextHub-Features:
 
 * **Konfigurationseditor:** Öffnet die [ContextHub-Konfigurationsseite](/help/sites-administering/contexthub-config.md), wo Sie Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule konfigurieren können.
 
-* **Konfiguration der ContextHub-Module:** Öffnet die Datei /etc/cloudsettings/default/contexthub.config.kernel.js, die die Javascript-Objektdarstellung der ContextHub-Speicherkonfigurationen enthält.
-* **Konfiguration der ContextHub-Benutzeroberfläche:** Öffnet die Datei /etc/cloudsettings/default/contexthub.config.ui.js, die die Javascript-Objektdarstellung der ContextHub-UI-Moduskonfigurationen enthält.
-* **kernel.js:** Öffnet die Datei /etc/cloudsettings/default/contexthub.kernel.js, die den Quellcode der Client-Bibliotheken enthält, die das ContextHub-Framework, die Segment-Engine und die Store-Typen implementieren.
-* **ui.js:** Öffnet die Datei &quot;/etc/cloudsettings/default/contexthub.ui.js&quot;, die den Quellcode der Clientbibliotheken enthält, die die ContextHub-UI- und UI-Modultypen implementieren.
-* **style.css:** Öffnet die Datei /etc/cloudsettings/default/contexthub.styles.css, die die CSS-Stile für die ContextHub-UI- und UI-Module enthält.
+* **Konfiguration von ContextHub-Modulen:**  Öffnet die Datei /etc/cloudsettings/default/contexthub.config.kernel.js, die die JavaScript-Objektdarstellung der ContextHub-Store-Konfigurationen enthält.
+* **Konfiguration der ContextHub-Benutzeroberfläche:**  Öffnet die Datei /etc/cloudsettings/default/contexthub.config.ui.js, die die JavaScript-Objektdarstellung der ContextHub-Benutzeroberflächenmoduskonfigurationen enthält.
+* **kernel.js:**  Öffnet die Datei /etc/cloudsettings/default/contexthub.kernel.js, die den Quellcode der Client-Bibliotheken enthält, die das ContextHub-Framework, die Segment-Engine und die Speichertypen implementieren.
+* **ui.js:**  Öffnet die Datei /etc/cloudsettings/default/contexthub.ui.js, die den Quellcode der Client-Bibliotheken enthält, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
+* **style.css:**  Öffnet die Datei /etc/cloudsettings/default/contexthub.styles.css, die die CSS-Stile für die ContextHub-Benutzeroberfläche und die UI-Module enthält.
