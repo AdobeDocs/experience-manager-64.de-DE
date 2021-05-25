@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
-translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+exl-id: 033db49a-3a8b-46cf-92b3-c0a04d7c820d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 91%
 
 ---
 
-
 # Fehlerbehebung{#troubleshooting}
 
 Dieser Abschnitt enthält detaillierte Informationen zu Protokollen, die Ihnen bei der Fehlerbehebung helfen. Darüber hinaus finden Sie Informationen zu einigen der Probleme, auf die Sie bei AEM stoßen können.
 
-## Beheben von Leistungsproblemen auf der Autoreninstanz {#troubleshoot-author-performance}
+## Beheben von Leistungsproblemen auf der Autoreninstanz  {#troubleshoot-author-performance}
 
 Das Analysieren von schlechter Leistung auf der Autoreninstanz kann sehr aufwendig sein. Zuerst sollten Sie herausfinden, auf welcher Stufe im Technologie-Stack die Leistung abnimmt.
 
@@ -40,7 +39,7 @@ AEM speichert detaillierte Protokolle, die Sie konfigurieren können, um Install
 
 ## Verwenden der Option „verbose“ (ausführlich){#using-the-verbose-option}
 
-Beim Beginn AEM WCM können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
+Wenn Sie AEM WCM starten, können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
 Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls in der Konsole an und kann somit für die Fehlerbehebung verwendet werden.
 
@@ -50,7 +49,7 @@ Im folgenden Abschnitt werden einige Installationsprobleme und zugehörige Lösu
 
 ### Beim Doppelklicken auf die JAR-Datei für den Schnellstart passiert entweder gar nichts oder die Datei wird mit einem anderen Programm (z. B. der Archivverwaltung) geöffnet  {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Dies weist in der Regel auf ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems zum Öffnen von Dateien mit der Erweiterung .jar hin. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
+Dies weist normalerweise auf ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems zum Öffnen von Dateien mit der Erweiterung .jar hin. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
 
 Da JAR-Dateien das weit verbreitete ZIP-Format nutzen, wird der Desktop von manchen Archivierungsprogrammen automatisch so konfiguriert, dass JAR-Dateien als Archive geöffnet werden.
 
@@ -74,7 +73,7 @@ Beheben Sie dieses Problem wie folgt:
 
 CRX selbst benötigt sehr wenig Arbeitsspeicher. Wenn die Anwendung, die in CRX ausgeführt wird, größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit entsprechenden Speichereinstellungen gestartet werden.
 
-Verwenden Sie Java-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. java -Xmx512m -jar crx&amp;ast;.jar, um die Heapsize-Größe auf 512MB festzulegen).
+Verwenden Sie Java-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. java -Xmx512m -jar crx&amp;ast;.jar , um die Heapgröße auf 512 MB festzulegen).
 
 Legen Sie die Option für die Speichereinstellung fest, wenn AEM WCM über die Befehlszeile gestartet wird. Die Start-/Stoppskripts für AEM WCM oder benutzerdefinierte Skripts zur Verwaltung des Starts von AEM WCM können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
 
@@ -129,4 +128,4 @@ Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver,
 ### JSP-Dateien werden von JBoss nicht kompiliert  {#jsp-files-are-not-compiled-on-jboss}
 
 Wenn Sie JSP-Dateien über JBoss im Experience Manager installieren oder aktualisieren und die entsprechenden Servlets nicht kompiliert werden, überprüfen Sie, ob der JBoss-JSP-Compiler richtig konfiguriert ist. Weitere Informationen finden Sie unter\
-[Probleme mit der JSP-Kompilierung in ](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) JBossArtikel.
+[JSP-Kompilierungsprobleme im ](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) JBoss-Artikel.
