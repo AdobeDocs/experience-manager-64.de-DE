@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 077a940d-19de-4d19-ad99-61f465e68205
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 87%
 
 ---
 
-
 # Verschlüsselungsunterstützung für Konfigurationseigenschaften{#encryption-support-for-configuration-properties}
 
 ## Überblick {#overview}
 
-Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole wird verwendet, um mithilfe des systemweiten Verschlüsselungsschlüssels verschlüsselten Übergeordnete aus Klartext zu erstellen.
+Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web Console-Benutzeroberfläche wird verwendet, um verschlüsselten Text aus Klartext mithilfe des systemweiten Übergeordneten Verschlüsselungsschlüssels zu erstellen.
 
 Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um die Eigenschaft zu entschlüsseln, bevor sie von einem Dienst verwendet wird.
 
@@ -30,11 +29,11 @@ Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um d
 >
 >Dienste, die einen verschlüsselten Wert erwarten, müssen die isProtected-Prüfung verwenden, um zu sehen, ob der Wert verschlüsselt ist, bevor die Entschlüsselung begonnen werden kann, da dieser bereits zuvor entschlüsselt worden sein könnte.
 
-## Aktivieren von Verschlüsselungsunterstützung {#enabling-encryption-support}
+## Aktivieren von Verschlüsselungsunterstützung  {#enabling-encryption-support}
 
 Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt wird. Sie können diese Schritte für eine OSGI-Eigenschaft ausführen, die verschlüsselt werden soll.
 
-1. Wechseln Sie zur AEM Web Console unter *https://&lt;server-Adresse>:&lt;server-Anschluss>/system/console/configMgr*
+1. Wechseln Sie zur AEM Web-Konsole unter *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Gehen Sie in der oberen linken Ecke zu **Main - Crypto-Unterstützung.**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
