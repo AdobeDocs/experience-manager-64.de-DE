@@ -5,29 +5,28 @@ description: Beheben von Fehlern in AEM
 seo-description: Beheben von Fehlern in AEM
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
+exl-id: fef17396-eed2-4c0b-a962-c1f2ae2c5d1d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 25%
 
 ---
 
-
 # Beheben von Fehlern in AEM {#troubleshooting-aem}
 
 ## Fehlerbehebung bei der Leistung der Authoring-Instanz {#performance}
 
-[Weitere Informationen zur Fehlerbehebung in der AEM Autoreninstanz finden Sie in diesem Handbuch und in den Tipps.](/help/sites-authoring/troubleshooting.md)
+[Weitere Informationen finden Sie in diesem Handbuch und Tipps zur Fehlerbehebung bei der AEM-Autoreninstanz.](/help/sites-authoring/troubleshooting.md)
 
 ## Fehlerbehebung bei Administrationsproblemen {#administering}
 
-[Weitere Informationen zur Fehlerbehebung bei Verwaltungsproblemen finden Sie in diesem Handbuch und in AEM.](/help/sites-administering/troubleshoot.md)
+[Weitere Informationen finden Sie in diesem Handbuch und in Tipps zur Fehlerbehebung bei Verwaltungsproblemen in AEM.](/help/sites-administering/troubleshoot.md)
 
-## Fehlerbehebung AEM Protokolle {#logs}
+## Fehlerbehebung bei AEM Protokollen {#logs}
 
-[Weitere Informationen zur Fehlerbehebung in AEM Protokollen finden Sie in diesem Handbuch und in den Tipps.](/help/sites-administering/troubleshooting.md)
+[Informationen zur Fehlerbehebung in AEM Protokollen finden Sie in diesem Handbuch und in Tipps .](/help/sites-administering/troubleshooting.md)
 
 ## Fehlerbehebung bei Replikationsproblemen {#replication}
 
-[Weitere Informationen zur Fehlerbehebung bei der Replikation in AEM finden Sie in diesem Handbuch und in den entsprechenden Tipps.](/help/sites-deploying/troubleshoot-rep.md)
+[Weitere Informationen finden Sie in diesem Handbuch und Tipps zur Fehlerbehebung bei der Replikation in AEM.](/help/sites-deploying/troubleshoot-rep.md)
