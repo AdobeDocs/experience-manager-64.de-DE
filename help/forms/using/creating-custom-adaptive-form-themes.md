@@ -8,28 +8,27 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
-translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+exl-id: e6aa866f-3483-4db1-abaa-01ee585928dc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 82%
 
 ---
 
-
 # Erstellen benutzerdefinierter Themen für adaptive Formulare {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
->AEM Forms bietet die Funktion [Design-Editor](/help/forms/using/themes.md) zum Erstellen und Ändern adaptiver Formulare [Themen](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgelisteten Schritte nur dann aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die nicht über [Design-Editor](/help/forms/using/themes.md) verfügt, und wenn Sie bereits über eine Investition in Themen verfügen, die mit &quot;Less-/CSS-Dateien&quot;erstellt wurden (Bearbeitungsmethode vor dem Thema).
+>AEM Forms bietet die Funktion [Design-Editor](/help/forms/using/themes.md) zum Erstellen und Ändern adaptiver Formulare [Designs](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgelisteten Schritte nur aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die nicht über [Design-Editor](/help/forms/using/themes.md) verfügt, und Sie eine vorhandene Investition in Designs haben, die mit Less-/CSS-Dateien erstellt wurden (Pre-Design-Editor-Methode).
 
 ## Voraussetzungen {#prerequisites}
 
-* Kenntnisse des LESS-Frameworks (Leaner CSS)
+* Kenntnisse über das LESS-Framework (Leaner CSS)
 * Erstellen einer Client-Bibliothek in Adobe Experience Manager
 * [Erstellen einer adaptiven Formularvorlage](/help/forms/using/custom-adaptive-forms-templates.md) zur Verwendung des Designs, das Sie erstellen
 
-## Design für adaptives Formular {#adaptive-form-theme}
+## Design für adaptives Formular  {#adaptive-form-theme}
 
 Ein **Design für adaptives Formular** ist eine AEM-Clientbibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren.
 
@@ -45,10 +44,10 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![Snapshot ](assets/thumbnail.png)
-**zum adaptiven Formular für WälderAbbildung: Beispiel für** *Walddesign*
+![Beispiel für ein adaptives Formular für Wälder - ](assets/thumbnail.png)
+**MomentaufnahmeAbbildung** *: Beispiel für Waldthemen*
 
-1. Erstellen Sie eine Node des Typs `cq:ClientLibraryFolder` unter der Node `/apps`.
+1. Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter dem Knoten `/apps`.
 
    Erstellen Sie beispielsweise den folgenden Knoten:
 
@@ -60,9 +59,9 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 
    ![Snapshot zum CRX-Repository](assets/3-2.png)
 
-1. hinzufügen zwei Ordner `less` und `css` und eine Datei `css.txt` auf den in Schritt 1 erstellten Knoten:
+1. Fügen Sie dem in Schritt 1 erstellten Knoten zwei Ordner `less` und `css` sowie eine Datei `css.txt` hinzu:
 
-   * `less` folder: Enthält die  `less` Variablendateien, in denen Sie die  `less` Variablen definieren und  `less mixins` die zur Verwaltung der .css-Stile verwendet werden.
+   * `less` Ordner: Enthält die  `less` Variablendateien, in denen Sie die  `less` Variablen definieren und  `less mixins` die zur Verwaltung der CSS-Stile verwendet werden.
 
       Dieser Ordner besteht aus den Variablendateien `less`, mixin-Dateien `less` und den Dateien `less`, mit deren Hilfe Stile mit mit Mixins und Variablen definiert werden. Diese Dateien werden dann alle in „styles.less“ importiert.
 
@@ -95,9 +94,9 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
    @button-font-color: #ffffff;
    ```
 
-   So überschreiben Sie die Variablen `less`
+   So überschreiben Sie die `less`Variablen:
 
-   1. Adaptive Standardformularvariablen importieren:
+   1. Importieren Sie standardmäßige adaptive Formularvariablen:
 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
@@ -213,7 +212,7 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    Beispiel: `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. hinzufügen Sie eine `sling:resourceSuperType`-Eigenschaft und legen Sie als Wert `fd/af/components/page/base` fest.
+   1. Fügen Sie eine `sling:resourceSuperType` -Eigenschaft hinzu und legen Sie den Wert auf `fd/af/components/page/base` fest.
 
       ![Snapshot zum CRX-Repository](assets/1-2.png)
 
@@ -235,4 +234,3 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
    ![Snapshot zum CRX-Repository](assets/2-1.png)
 
 1. Erstellen Sie ein adaptives Formular mithilfe der im vorherigen Schritt erstellten Vorlage. Das Erscheinungsbild des adaptiven Formulars wird durch das Thema definiert, das im Abschnitt „So erstellen Sie ein Thema für ein adaptives Formular“ dieses Artikels erstellt wurde.
-
