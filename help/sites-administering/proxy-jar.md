@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
-translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+exl-id: fb96ed26-b5b6-4afc-a820-3ef45a9f3abd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 95%
 
 ---
-
 
 # Proxyserver-Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
@@ -36,7 +35,7 @@ Sie können den Proxyserver verwenden, um alle Interaktionen zwischen Client und
 
 Sie können den Proxyserver zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine AEM-Seite anfordern.
 
-## Starten des Proxyservertools {#starting-the-proxy-server-tool}
+## Starten des Proxyservertools  {#starting-the-proxy-server-tool}
 
 Das Tool befindet sich im Ordner /opt/helpers Ihrer AEM Installation. Geben Sie Folgendes ein, um es zu starten:
 
@@ -117,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
 * # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
-* [GET  &lt;?>] ist der Inhalt der Anforderung, im Beispiel einer der HTTP-Header (URL).
+* [GET  &lt;?>] ist der Inhalt der Anfrage, im Beispiel einer der HTTP-Header (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
 
@@ -150,7 +149,7 @@ Wenn AEM auf dem „localhost:4303“ ausgeführt wird, starten Sie den Server w
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Sie können auf den Server ( ) ohne den Proxy-Server zugreifen, aber wenn Sie ihn über aufrufen, protokolliert der Proxy-Server die Kommunikation. Öffnen Sie einen Browser und rufen Sie eine Seite auf, die mit der vorherigen Vorlage erstellt wurde. Betrachten Sie anschließend die Protokolldatei.
+Sie können auf den Server ( ) ohne den Proxy-Server zugreifen, aber wenn Sie über darauf zugreifen, protokolliert der Proxy-Server die Kommunikation. Öffnen Sie einen Browser und rufen Sie eine Seite auf, die mit der vorherigen Vorlage erstellt wurde. Betrachten Sie anschließend die Protokolldatei.
 
 >[!NOTE]
 >
