@@ -2,21 +2,20 @@
 title: Layout-Design
 seo-title: Layout-Design
 description: Layout-Designdetails erklären, wie Sie Layouts für Ihre Briefe oder interaktive Kommunikation in Correspondence Management erstellen können.
-seo-description: Layout-Design Details erläutern, wie Sie Layouts für Ihre Briefe oder interaktive Kommunikation erstellen können.
+seo-description: Layout-Design In Details wird erläutert, wie Sie Layouts erstellen können, die für Ihre Briefe oder interaktive Kommunikation verwendet werden.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Korrespondenzverwaltung
+exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 93%
 
 ---
-
 
 # Layout-Design {#layout-design}
 
@@ -27,7 +26,7 @@ XFA-Formularvorlagen oder XDPs sind die Vorlagen für:
 
 * Layout-Fragmente
 
-Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Entwerfen Ihrer XDPs zum Erstellen effektiver Korrespondenz/Interaktive Kommunikation, z. B. wo Formularfelder oder Zielgruppen verwendet werden und wann Layout-Fragmente verwendet werden.
+Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Details zum Entwerfen Ihrer XDPs für die Erstellung effektiver Korrespondenzen/interaktiver Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden.
 
 ## Erstellen eines Layouts für Briefe oder für den Druckkanal von interaktiver Kommunikation {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -57,13 +56,13 @@ Sie können ein Schema in einem Layout oder Fragment-Layout verwenden, was aber 
 1. Das Layout und alle Fragment-Layouts, die in einem Brief verwendet werden, verwenden das gleiche Schema wie der Brief/die interaktive Kommunikation.
 1. Alle Felder, die mit Daten gefüllt werden müssen, sind an das Schema gebunden.
 
-## Verknüpfungsfähige Felder erstellen {#creating-relatable-fields}
+## Verknüpfungsfähige Felder erstellen  {#creating-relatable-fields}
 
 Standardmäßig werden alle Felder als verknüpfungsfähig mit vielen anderen Datenquellen betrachtet. Wenn das Layout Felder enthält, die nicht mit einer Datenquelle verknüpfungsfähig sind, fügen Sie den Namen dieser Felder das Suffix „_int“ (intern) hinzu. Beispiel: pageCount_int.
 
 Ein verknüpfungsfähiges Feld muss folgende Voraussetzungen erfüllen:
 
-* eine XFA- oder &lt;exclGroup>-Variable sein.
+* ein XFA &lt;field> oder &lt;exclGroup> sein.
 * Es muss einen XFA-Bindungsverweis haben.
 * Wenn es sich um &lt;exclGroup> handelt, muss es über mindestens ein untergeordnetes Feld für ein Optionsfeld verfügen, andernfalls kann die Art des Wertes nicht ermittelt werden.
 
@@ -75,7 +74,7 @@ Auf ein verknüpfungsfähiges Feld darf Folgendes NICHT zutreffen:
 
 * An den Namen ist das Suffix „_int“ angehängt.
 * Das Feld „binding“ ist auf „none“ eingestellt.
-* ein untergeordnetes Element eines &lt;exclGroup>-Elements sein
+* ein untergeordnetes Element eines &lt;exclGroup> -Elements sein.
 
 Solange ein verknüpfungsfähiges Feld die oben genannten Kriterien erfüllt, kann es sich im Layout an jeder beliebigen Position und in jeder Verschachtelungstiefe befinden. Verknüpfungsfähige Felder lassen sich auf Masterseiten verwenden.
 
@@ -128,5 +127,4 @@ Wenn Elemente wie das Logo und die Adresse Ihres Unternehmens auf allen Seiten e
 
 Verwenden Sie das Server-Renderformat des Layouts für das dynamische XML-Formular, andernfalls können Briefe/interaktive Kommunikation, die auf diesem Layout basieren, nicht korrekt gerendert werden. Das Server-Renderformat ist in Forms Designer standardmäßig auf das dynamische XML-Formular eingestellt. Sicherstellen, dass Sie das richtige Format verwenden:
 
-* Klicken Sie in Designer auf **[!UICONTROL Datei > Formulareigenschaften > Standard]** und stellen Sie sicher, dass die Einstellung &quot;PDF-Wiedergabe/Format&quot;auf &quot;Dynamisches XML-Formular&quot;eingestellt ist.
-
+* Klicken Sie in Designer auf **[!UICONTROL Datei > Formulareigenschaften > Standard]** und stellen Sie sicher, dass die Einstellung &quot;PDF Render/Format&quot;auf &quot;Dynamisches XML-Formular&quot;eingestellt ist.
