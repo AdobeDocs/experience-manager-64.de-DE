@@ -1,24 +1,23 @@
 ---
-title: AEM 6.4 Funktions-Benutzerhandbuch
-seo-title: AEM 6.4 Funktions-Benutzerhandbuch
-description: Überblick über die wesentlichen Funktionen von AEM 6.4
-seo-description: Überblick über die wesentlichen Funktionen von AEM 6.4
+title: Benutzerhandbuch zu AEM 6.4 Funktionen
+seo-title: Benutzerhandbuch zu AEM 6.4 Funktionen
+description: Überblick über die wichtigsten Funktionen von AEM 6.4
+seo-description: Überblick über die wichtigsten Funktionen von AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 52%
 
 ---
 
-
-# AEM 6.4 Funktionen Benutzerhandbücher {#aem-64-capabilities-user-guides}
+# AEM 6.4 Benutzerhandbücher für Funktionen {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Bereitstellung.
+[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Implementierung.
 
 [Erfahren Sie, wie Sie ein AEM-Projekt verwalten können](/help/managing/home.md).
 
@@ -36,9 +35,9 @@ ht-degree: 52%
 
 [Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.](/help/forms/home.md)
 
-## Handbuch mit Best Practices für {#aem-screens}
+## AEM Screens {#aem-screens}
 
-[Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Erfahren Sie mehr über die Lösung für digitale Beschilderung zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
@@ -46,8 +45,8 @@ ht-degree: 52%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Freigeben von benutzergenerierten Inhalten mit AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
+[Geben Sie benutzergenerierte Inhalte für AEM Livefyre frei.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
-## AEM Mobile {#aem-mobile}
+## AEM  Mobile {#aem-mobile}
 
 [Erstellen und verwalten Sie Inhalte für Mobile Apps.](/help/mobile/home.md)
