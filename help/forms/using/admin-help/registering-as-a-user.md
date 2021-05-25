@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Dokumentensicherheit
+exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 100%
 
 ---
-
 
 # Benutzer registrieren {#registering-as-a-user}
 
@@ -37,7 +36,7 @@ Sie können richtliniengeschützte Dokumente, die Sie von einem Document Securit
 >
 >Falls Sie ein richtliniengeschütztes Dokument ohne zugehörige E-Mail-Einladung zur Registrierung erhalten, wenden Sie sich an den Absender des Dokuments.
 
-## Als eingeladener Benutzer registrieren {#register-as-an-invited-user}
+## Als eingeladener Benutzer registrieren  {#register-as-an-invited-user}
 
 Wenn Sie ein eingeladener Benutzer sind und per E-Mail eine Registrierungsnachricht von Document Securit erhalten, registrieren Sie sich, indem Sie die Seite für die Onlineregistrierung mithilfe der in der Nachricht enthaltenen URL öffnen. Nach der Registrierung erhalten Sie eine weitere Benachrichtigung zur Aktivierung Ihres Kontos.
 
@@ -70,4 +69,3 @@ Informationen dazu, wie Sie einen Document Security-Administrator kontaktieren, 
 1. Klicken Sie in der rechten oberen Ecke der Seite auf „Optionen“. Die Seite „Externe Benutzer“ wird angezeigt.
 1. Wählen Sie „Kennwort ändern“ aus und geben Sie das temporäre Kennwort in das Feld „Altes Kennwort“ ein.
 1. Geben Sie zuerst in das Feld „Neues Kennwort“ ein neues Kennwort ein und geben Sie dann dieses erneut in das Feld „Kennwort bestätigen“ ein.
-
