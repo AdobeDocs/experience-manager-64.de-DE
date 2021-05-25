@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 68fe3f97-ded8-4223-b4b9-02704077e37e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 94%
 
 ---
 
-
-# Aktualisieren des Links zur Dokumentation {#updating-the-link-to-the-documentation}
+# Aktualisieren des Links zur Dokumentation  {#updating-the-link-to-the-documentation}
 
 Sie können auf den Standardhilfeinhalt für HTML Workspace zugreifen, indem Sie **Hilfe > Workspace-Hilfe** auswählen. Dies verweist auf die Onlinedokumentation auf der Website von Adobe. Sie können den Verweis jedoch in jede andere URL ändern.
 
@@ -29,7 +28,7 @@ Berücksichtigen Sie die folgenden Anwendungsfälle, wenn Sie die Standardhilfe-
 
 Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte unter [Generische Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) und dann die folgenden Schritte aus.
 
-1. Kopieren Sie die Datei `userinfo.html` von `/libs/ws/js/runtime/templates` nach `/apps/ws/js/runtime/templates`.
+1. Kopieren Sie die Datei `userinfo.html` von `/libs/ws/js/runtime/templates` in `/apps/ws/js/runtime/templates`.
 1. Änderung:
 
    ```
