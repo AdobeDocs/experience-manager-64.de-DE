@@ -9,7 +9,6 @@ topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Administrator
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-translation-type: tm+mt
 source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
 workflow-type: tm+mt
 source-wordcount: '1836'
@@ -37,7 +36,7 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse und die Daten
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur ein Minimum einer AEM Autor- oder Veröffentlichungsinstanz, um AEM Forms-Datenerfassungsfunktionen auszuführen. Die folgende Topologie wird zum Ausführen von AEM Forms-Datenerfassungsfunktionen von AEM Forms empfohlen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![recommendations-topology](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 ## Systemanforderungen {#system-requirements}
 
@@ -96,14 +95,14 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads suchen]** filtern.
-1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie **[!UICONTROL EULA-Begriffe akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
+1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms Releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;nicht mehr in der Datei &quot; [AEM-Installation-Directory]/crx-quickstart/logs/error.log&quot;angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei  [AEM-Installation-Directory]/crx-quickstart/logs/error.log angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -117,9 +116,9 @@ AEM Forms verfügt über einige obligatorische und optionale Konfigurationen. Zu
 Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz folgende Schritte zum Boot-Delegate der Bibliotheken aus:
 
 1. Beenden Sie die zugrunde liegenden AEM-Instanz.
-1. Öffnen Sie die Datei [AEM Installationsordner]\crx-quickstart\conf\sling.properties zur Bearbeitung.
+1. Öffnen Sie die Datei [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties zur Bearbeitung.
 
-   Wenn Sie [AEM Installationsordner]\crx-quickstart\bin\start.bat zum Beginn AEM, bearbeiten Sie die Datei &quot;sling.properties&quot;unter [AEM_root]\crx-quickstart\.
+   Wenn Sie [AEM Installationsordner]\crx-quickstart\bin\start.bat zum Starten von AEM verwendet haben, bearbeiten Sie die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
 
 1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:
 
@@ -128,7 +127,7 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
 
-1. (Nur AIX) Hinzufügen die folgenden Eigenschaften in der Datei &quot;sling.properties&quot;:
+1. (Nur AIX) Fügen Sie der Datei sling.properties die folgenden Eigenschaften hinzu:
 
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
@@ -139,11 +138,11 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
-Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket der Zulassungsliste &quot;&quot;hinzuzufügen:
+Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinstanzen aus, um das Paket zur Zulassungsliste hinzuzufügen:
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://[server]:[port]/system/console/configMgr`.
 1. Suchen und öffnen Sie die **[!UICONTROL Deserialisierungs-Firewallkonfiguration]**.
-1. hinzufügen Sie das Paket **[!UICONTROL sun.util.calendar]** in das Feld **[!UICONTROL Zulassungsliste]**. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Fügen Sie das Paket **[!UICONTROL sun.util.calendar]** zum Feld **[!UICONTROL Zulassungsliste]** hinzu. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Wiederholen Sie Schritte 1-3 für alle Autor- und Veröffentlichungsinstanzen.
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
@@ -162,7 +161,7 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
 1. Konfigurieren des Referrer-Filterservice:
 
-   Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. Die Standard-URL des Configuration Managers ist `https://[server]:[port_number]/system/console/configMgr`. Wählen Sie im Menü **[!UICONTROL Configurations]** die Option **[!UICONTROL Apache Sling Referrer Filter.]** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **[!UICONTROL Speichern]**. Das Format des Eintrags ist `https://[server]:[port]`.
+   Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. Die Standard-URL des Konfigurationsmanagers lautet `https://[server]:[port_number]/system/console/configMgr`. Wählen Sie im Menü **[!UICONTROL Configurations]** die Option **[!UICONTROL Apache Sling Referrer Filter.]** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **[!UICONTROL Speichern]**. Das Format des Eintrags ist `https://[server]:[port]`.
 
 #### Konfigurieren des Cache {#configure-cache}
 
@@ -173,8 +172,8 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Gehen Sie zu AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
-1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **[!UICONTROL Anzahl der adaptiven Forms]** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Gehen Sie zu AEM Konfigurationsmanager der Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
+1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **[!UICONTROL Anzahl adaptiver Forms]** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
@@ -194,7 +193,7 @@ In einem typischen Szenario mit Adobe Sign und adaptiven Formularen füllt der B
 
 Um Adobe Sign mit AEM Forms zu verwenden, [integrieren Sie Adobe Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Konfigurieren Sie Analytics {#configure-adobe-analytics}
+#### Konfigurieren Sie Analytics  {#configure-adobe-analytics}
 
 AEM Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
