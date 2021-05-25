@@ -2,16 +2,15 @@
 title: Erweitern der Asset-Suche
 description: Erweitern Sie die Suchfunktionen von AEM Assets über die vorkonfigurierten Suchläufe für Assets nach Zeichenfolgen hinaus.
 contentOwner: AG
-feature: Search
+feature: Suchen
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '831'
 ht-degree: 90%
 
 ---
-
 
 # Erweitern der Asset-Suche {#extending-assets-search}
 
@@ -45,7 +44,7 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im Admin-
 
    >[!NOTE]
    >
-   >Wenn Sie ein zweites Siteadminsearch-Bedienfeld erstellen, stellen Sie sicher, dass Sie eine `id`-Eigenschaft festlegen, um Formularkonflikte zu vermeiden.
+   >Wenn Sie ein zweites siteadminsearchpanel erstellen, stellen Sie sicher, dass Sie eine `id` -Eigenschaft festlegen, um Formularkonflikte zu vermeiden.
 
 ## Erstellen benutzerdefinierter Eigenschaften {#creating-custom-predicates}
 
@@ -55,13 +54,13 @@ AEM-Entwickler können neben den bereits vorhandenen Eigenschaften auch eigene P
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
-Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprognosen befinden sich unter `/libs/cq/search/components/predicates`.
+Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprädikate befinden sich unter `/libs/cq/search/components/predicates`.
 
-### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
+### Beispiel: Einfaches Eigenschaftsprädikat erstellen    {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
-1. Erstellen Sie einen Komponentenordner im Projektverzeichnis, z. B. `/apps/geometrixx/components/titlepredicate`.
+1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. `/apps/geometrixx/components/titlepredicate`.
 1. Fügen Sie `content.xml`:
 
    ```xml
@@ -144,7 +143,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
    </script>
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE einen Knoten `cq:editConfig` des primären Typs `cq:EditConfig` hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft `cq:actions` mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE den Knoten `cq:editConfig` des primären Typs `cq:EditConfig` hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft `cq:actions` mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. `press.html`) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
@@ -157,7 +156,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
 
 So erstellen Sie eine Gruppeneigenschaft:
 
-1. Erstellen Sie einen Komponentenordner im Projektverzeichnis, z. B. `/apps/geometrixx/components/picspredicate`.
+1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. `/apps/geometrixx/components/picspredicate`.
 1. Fügen Sie `content.xml`:
 
    ```xml
@@ -251,7 +250,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        });
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE einen Knoten `cq:editConfig` des primären Typs `cq:EditConfig` hinzu. Um Absätze entfernen zu können, fügen Sie eine `cq:actions`-Mehrwerteigenschaft mit `DELETE` als einzigem Wert hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE den Knoten `cq:editConfig` des primären Typs `cq:EditConfig` hinzu. Um Absätze entfernen zu können, fügen Sie eine `cq:actions`-Mehrwerteigenschaft mit `DELETE` als einzigem Wert hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. `press.html`) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 
@@ -259,18 +258,18 @@ So erstellen Sie eine Gruppeneigenschaft:
 
 Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
-### FulltextPredicate    {#fulltextpredicate}
+### FulltextPredicate   {#fulltextpredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
 | predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `fulltext` |
-| searchCallback | Funktion | Rückruf zum Auslösen der Suche auf Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Funktion | Callback zum Auslösen der Suche bei Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `property` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `property` |
 | propertyName | Zeichenfolge | Name der JCR-Eigenschaft. Standardwert ist `jcr:title` |
 | defaultValue | Zeichenfolge | Vorgegebener Standardwert. |
 
@@ -278,16 +277,16 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `path` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `path` |
 | rootPath | Zeichenfolge | Stammpfad der Eigenschaft. Standardwert ist `/content/dam` |
 | pathFieldPredicateName | Zeichenfolge | Standardwert ist `folder` |
-| showFlatOption | Boolesch | Markieren, um Kontrollkästchen `search in subfolders` anzuzeigen. Standardwert ist „true“. |
+| showFlatOption | Boolesch | Markierung zum Anzeigen des Kontrollkästchens `search in subfolders`. Standardwert ist „true“. |
 
 ### DatePredicate {#datepredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `daterange` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `daterange` |
 | propertyname | Zeichenfolge | Name der JCR-Eigenschaft. Standardwert ist `jcr:content/jcr:lastModified` |
 | defaultValue | Zeichenfolge | Vorgegebener Standardwert |
 
@@ -296,7 +295,7 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
 | title | Zeichenfolge | Fügt einen zusätzlichen oberen Titel hinzu |
-| calculateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `daterange` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `daterange` |
 | propertyname | Zeichenfolge | Name der JCR-Eigenschaft. Standardwert ist `jcr:content/metadata/cq:tags` |
 | collapse | Zeichenfolge | Ebene der Reduzierung. Standardwert ist `level1` |
 | triggerSearch | Boolesch | Markierung zum Auslösen der Suche nach Aktivierung. Standardwert ist „false“ |
