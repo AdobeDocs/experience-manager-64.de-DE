@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 66%
 
 ---
-
 
 # CRX2OAK-Migrations-Tool {#crx-oak-migration-tool}
 
@@ -24,26 +23,26 @@ ht-degree: 66%
 
 ### 1.8.6 (Juni 2018) {#june}
 
-* OAK-7339 Korrigieren Sie alle mit UnsupportedOperationException umgebrochenen Nebenabstände bei MissingBlobStore durch Einführung von LoopbackBlobStore
-* Oak 1.8.4 verwenden
+* OAK-7339 Korrigieren Sie alle mit UnsupportedOperationException unterbrochenen Seitenabbrüche bei MissingBlobStore durch Einführung von LoopbackBlobStore.
+* Verwenden von Oak 1.8.4
 
 ### 1.8.4 (April 2018) {#april}
 
-* Oak Version 1.8.2 verwenden
-* GRANITE-18104 Der Fehler bei der Repo-Migration von 6.3 auf 6.4 sollte aussagekräftiger sein
-* GRANITE-16571 Ersetzen Sie die Verwendung von SHA-1.
+* Verwenden von Oak Version 1.8.2
+* GRANITE-18104 Repo Migration Error von 6.3 zu 6.4 sollte aussagekräftiger sein
+* GRANITE-16571 Nutzung von SHA-1 ersetzen
 
-   * Die Tool-Prüfsumme ist jetzt SHA-512 bei Verwendung der Option —version
+   * Die Tool-Prüfsumme ist jetzt SHA-512 bei Verwendung der Option —version .
 
-* GRANITE-17601 Eichenaufrüstung in CRX2Oak mit Eichenblüte-Cloud einbetten
-* GRANITE-18553 crx2oak lässt Versionseigenschaften auf dem Knoten, auch wenn Versionen nicht migriert werden
+* GRANITE-17601 Embed oak-upgrade in CRX2Oak mit oak-blob-cloud
+* GRANITE-18553 crx2oak hinterlässt Versionseigenschaften auf dem Knoten, selbst wenn Versionen nicht migriert werden
 
 ### Version 1.6.8 (März 2017) {#version-march}
 
 * Oak wurde auf Version 1.6.1 aktualisiert
-* CQ-61847 Merge crx2oak-quickstart-extension with crx2oak (added migration Profils)
+* CQ-61847 Zusammenführen von crx2oak-quickstart-extension mit crx2oak (hinzugefügte Migrationsprofile)
 * CQ-97488 Es wurden AEM-Ausführungsmodi hinzugefügt und entfernt (indem sling.options.file neu geschrieben wurde)
-* GRANITE-12798/OAK-4260 Möglichkeit, die Klassifizierung vom Oak-Segment zum Oak-Segment-Tar zu verschieben
+* GRANITE-12798/OAK-4260 Fähigkeit, eine Nebenstufe vom Oak-Segment zum Oak-Segment-Tar zu erstellen
 
 ### Version 1.4.2 (März 2016) {#version-march-1}
 
@@ -58,7 +57,7 @@ ht-degree: 66%
 * OAK-3844/GRANITE-10730 Bessere Unterstützung für versionierbare Knoten ohne Versionsverläufe
 * OAK-3846 SNS-Knoten umbenennen, wenn sie gegen Knotentypbeschränkungen verstoßen
 
-### Version 1.3.2 (Dezember 2015) {#version-december}
+### Version 1.3.2 (Dezember 2015)  {#version-december}
 
 * Oak-Version auf 1.3.12 aktualisieren
 * Datenspeicherverzeichnis sollte nach der Migration nicht verschoben werden (GRANITE-10447)
