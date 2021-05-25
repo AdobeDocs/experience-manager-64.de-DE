@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
-translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+exl-id: f39910cf-1875-43fc-bfb5-259b9d8f135d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 94%
 
 ---
-
 
 # Fallstricke beim Programmieren{#code-pitfalls}
 
@@ -24,10 +23,10 @@ ht-degree: 94%
 
 Sling-Bindungen sind in 90 Prozent der Fälle keine gute Möglichkeit, auf einen Dienst zuzugreifen. Verwenden Sie stattdessen die Anmerkungen *@Reference* oder *@Inject*.
 
-## Vermeiden Sie Thread.interrupt im Java-Code {#avoid-thread-interrupt-in-java-code}
+## Vermeiden Sie Thread.interrupt in Java-Code {#avoid-thread-interrupt-in-java-code}
 
 *Thread.interrupt* ist riskant, da es Dateien (darunter auch Lucene-Dateien und persistente Cache-Dateien) schließen kann, wenn es zum falschen Zeitpunkt aufgerufen wird.
 
-## Mischen von Java-Synchronisierung mit ReadWriteLocks vermeiden {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Mischen von Java-Synchronisierung mit ReadWriteLocks vermeiden  {#avoid-mixing-java-synchronization-with-readwritelocks}
 
 Dies kann zu Überschneidungen führen, bei denen der Code irgendwann zum Stillstand kommt.
