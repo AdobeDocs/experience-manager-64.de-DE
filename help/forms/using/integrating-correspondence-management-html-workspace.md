@@ -7,16 +7,15 @@ uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
-translation-type: tm+mt
-source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+exl-id: 4df9a16c-0853-4bbf-81bb-1856ab55c5ee
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 86%
 
 ---
 
-
-# Integrieren von Anwendungen von Drittanbietern in AEM Forms Workspace {#integrating-third-party-applications-in-aem-forms-workspace}
+# Integrieren von Anwendungen von Drittanbietern in AEM Forms Workspace  {#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms Workspace unterstützt die Verwaltung von Aufgabenzuweisungen und Abschlussaktivitäten für Formulare und Dokumente. Diese Formulare und Dokumente können XDP-Formulare, Flex®-Formulare oder Guides (nicht mehr unterstützt) sein, die im XDP-, PDF-, HTML- oder Flex-Format wiedergegeben werden.
 
@@ -26,9 +25,9 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Beginn durch Erstellen einer Correspondence Management-Beispielvorlage, die in AEM Forms Workspace wiedergegeben wird. Weitere Informationen finden Sie unter [Erstellen einer Briefvorlage](/help/forms/using/create-letter.md).
+Erstellen Sie zunächst eine Beispielvorlage für Correspondence Management, die in AEM Forms Workspace gerendert wird. Weitere Informationen finden Sie unter [Erstellen einer Briefvorlage](/help/forms/using/create-letter.md).
 
-Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Greifen Sie über die URL auf die Correspondence Management-Vorlage zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 Dabei ist `encodedLetterId` die URL-kodierte Brief-ID. Verwenden Sie die gleiche Brief-ID, wenn Sie den Wiedergabeprozess für eine Workspace-Aufgabe in der Workbench definieren.
 
@@ -101,8 +100,8 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
    }
    ```
 
-   [DSC ](assets/dscsample.zip)
-herunterladen: Eine DSC-Beispieldatei ist in der oben angehängten  `DSCSample.zip` Datei verfügbar. Laden Sie die Datei `DSCSample.zip` herunter und dekomprimieren Sie sie. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Abrufen ](assets/dscsample.zip)
+von FileDownload DSC: Ein Beispiel-DSC ist in der oben angehängten  `DSCSample.zip` Datei verfügbar. Laden Sie die Datei `DSCSample.zip` herunter und entpacken Sie sie. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Wählen Sie im Dialogfeld „Aktivität definieren“ die entsprechende Aktivität wie getLetterInstanceInfo aus und klicken Sie auf **OK**.
 
@@ -117,4 +116,3 @@ herunterladen: Eine DSC-Beispieldatei ist in der oben angehängten  `DSCSample.z
    >[!NOTE]
    >
    >Die Sendeschaltfläche wird erst aktiviert, nachdem alle erforderlichen Variablen im Brief ausgefüllt sind.
-
