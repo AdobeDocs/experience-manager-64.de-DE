@@ -8,7 +8,6 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
 feature: Bereitstellen
 role: Architect
-translation-type: tm+mt
 source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
 source-wordcount: '357'
@@ -64,21 +63,21 @@ ht-degree: 93%
    + [Handbuch zur Leistung von Assets](assets-performance-sizing.md)
    + [Artikel mit Anleitungen für die Konfiguration](ht-deploy.md)
    + [Entfernen der Geometrixx-Websites](removing-the-geometrixx-sites.md)
-   + [Web-Konsole konfigurieren](configuring-web-console.md)
+   + [Konfigurieren der Web-Konsole](configuring-web-console.md)
 + Aktualisieren auf AEM 6.4 {#upgrading}
    + [Aktualisieren auf AEM 6.4](upgrade.md)
    + [Planung der Aktualisierung](upgrade-planning.md)
    + [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor ](pattern-detector.md)
-   + [Abwärtskompatibilität in AEM 6.4](backward-compatibility.md) 
+   + [Abwärtskompatibilität in AEM 6.4](backward-compatibility.md)
    + [Aktualisierungsverfahren](upgrade-procedure.md)
-   + [Verwenden der Offline-Neudezierung, um Ausfallzeiten während einer Aktualisierung zu reduzieren](upgrade-offline-reindexing.md)
+   + [Verwenden der Offline-Neuindizierung, um Ausfallzeiten während eines Upgrades zu reduzieren](upgrade-offline-reindexing.md)
    + [Durchführen einer In-Place-Aktualisierung](in-place-upgrade.md)
    + [Lazy-Content-Migration](lazy-content-migration.md)
-   + [Verwendung des CRX2OAK-Migrationstools](using-crx2oak.md)
+   + [Verwendung des CRX2Oak-Migrationstools](using-crx2oak.md)
    + [Wartungsaufgaben vor einer Aktualisierung](pre-upgrade-maintenance-tasks.md)
    + [Prüfungen und Fehlerbehebung nach einer Aktualisierung](post-upgrade-checks-and-troubleshooting.md)
    + [Aktualisieren von benutzerdefinierten Suchformularen](upgrading-custom-search-forms.md)
-   + [Nachhaltige Aktualisierungen](sustainable-upgrades.md) 
+   + [Nachhaltige Aktualisierungen](sustainable-upgrades.md)
    + [Aktualisierung von Code und Anpassungen](upgrading-code-and-customizations.md)
    + [Schritte zur Aktualisierung von Installationen auf Anwendungsservern](app-server-upgrade.md)
    + [Liste der nach dem Upgrade deinstallierten veralteten Bundles](obsolete-bundles.md)
@@ -99,7 +98,7 @@ ht-degree: 93%
 + Best Practices {#practices}
    + [Best Practices für die Bereitstellung](best-practices.md)
    + [Leistungsübersicht](performance-tree.md)
-   + [Best Practices für Leistungstests](best-practices-for-performance-testing.md) 
+   + [Best Practices für Leistungstests](best-practices-for-performance-testing.md)
    + [Best Practices für Abfragen und Indizierung](best-practices-for-queries-and-indexing.md)
    + [Empfehlungen für Kunden zur Benutzeroberfläche](ui-recommendations.md)
    + [Leistung und Skalierbarkeit](performance.md)
