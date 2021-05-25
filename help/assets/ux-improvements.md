@@ -2,26 +2,25 @@
 title: Verbesserungen beim Benutzererlebnis von Assets
 description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis von AEM 6.4 Assets beschrieben.
 contentOwner: AG
-feature: Release Information
+feature: Versionshinweise
 role: Leader,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 65029113-987e-46eb-86eb-8028233031f9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '648'
 ht-degree: 79%
 
 ---
 
-
 # Verbesserungen beim Benutzererlebnis von Assets {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets bieten eine Reihe von Verbesserungen der Benutzerfreundlichkeit, die eine nahtlose Benutzererfahrung ermöglichen und die Produktivität steigern. Das beschleunigte Erstellen und Verwalten Ihres Go-to-Market-Inhalts verbessert die Content Velocity in Ihrem Unternehmen.
+AEM 6.4 Assets umfasst verschiedene Verbesserungen der Benutzerfreundlichkeit, die ein nahtloses Benutzererlebnis bieten und die Produktivität steigern. Das beschleunigte Erstellen und Verwalten Ihres Go-to-Market-Inhalts verbessert die Content Velocity in Ihrem Unternehmen.
 
-Die Oberfläche reagiert flexibler und hilft Ihnen bei der effizienten Verwaltung eines großen Assets. Sie können schnell eine lange Liste von Elementen durchsuchen, anzeigen, sortieren und reibungslos darin scrollen.
+Die Benutzeroberfläche ist responsiver und hilft Ihnen, ein großes Asset-Portfolio effizient zu verwalten. Sie können schnell eine lange Liste von Elementen durchsuchen, anzeigen, sortieren und reibungslos darin scrollen.
 
 Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und Spaltenansicht. Beispielsweise können Sie die Größe der Miniaturen konfigurieren, die in der Kartenansicht angezeigt werden sollen. In der Listenansicht können Sie konfigurieren, wie detailgenau die Assets in der Liste angezeigt werden sollen. AEM 6.4 Assets enthält eine neue Baumansicht, mit der Sie einfach durch das Asset-Repository navigieren und Ihre Assets finden können.
 
-## Lazy Loading (langsames Laden) {#lazy-loading}
+## Lazy Loading (langsames Laden)  {#lazy-loading}
 
 Wenn Sie in AEM 6.4 Assets nach Assets suchen bzw. die Assets durchsuchen, werden gleichzeitig bis zu 200 Assets angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
 
@@ -33,13 +32,13 @@ Je nach dem verwendeten Gerät und der erforderlichen Dateitiefe können Sie die
 
 Gehen Sie wie folgt vor, um die Größe von Miniaturen in der Kartenansicht anzupassen:
 
-1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie dann die Option **[!UICONTROL Ansicht Settings]**.
+1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie dann die Option **[!UICONTROL Anzeigeeinstellungen]** aus.
 
-   ![Ansicht_settings](assets/view_settings.png)
+   ![view_settings](assets/view_settings.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Ansicht Settings]** die gewünschte Miniaturgröße aus und tippen/klicken Sie dann auf **[!UICONTROL Aktualisieren]**.
+1. Wählen Sie im Dialogfeld **[!UICONTROL Anzeigeeinstellungen]** die gewünschte Größe der Miniaturansicht aus und tippen/klicken Sie dann auf **[!UICONTROL Aktualisieren]**.
 
-   ![Ansicht_settings_dialog](assets/view_settings_dialog.png)
+   ![view_settings_dialog](assets/view_settings_dialog.png)
 
 1. Überprüfen Sie die Miniaturen, die in der gewählten Größe angezeigt werden.
 
@@ -53,11 +52,11 @@ In der Kachel in der Kartenansicht werden jetzt zusätzliche Informationen wie d
 
 In der Listenansicht werden in der ersten Spalte jetzt standardmäßig die Asset-Namen angezeigt. Außerdem werden zusätzliche Informationen wie der Veröffentlichungs- und Verarbeitungsstatus, die Sprachvariante usw. angezeigt.
 
-![Liste_Ansicht](assets/list_view.png)
+![list_view](assets/list_view.png)
 
 Sie können die anzuzeigende Detailtiefe konfigurieren. Tippen/klicken Sie auf das Layout-Symbol, wählen Sie die Option **[!UICONTROL Anzeigeeinstellungen]** aus und geben Sie die Spalten an, die im Dialogfeld **[!UICONTROL Anzeigeeinstellungen]** angezeigt werden sollen.
 
-![Ansicht_settings_dialoglistview](assets/view_settings_dialoglistview.png)
+![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Verbesserungen an der Spaltenansicht {#column-view-improvements}
 
@@ -69,7 +68,7 @@ Zusätzlich zur Karten- und Listenansicht können Sie jetzt über die Spaltenans
 
 AEM 6.4 Assets enthält eine Baumansicht, mit der Sie schnell und einfach Ihre Asset-Hierarchie durchsuchen und zum gewünschten Asset oder Ordner navigieren können.
 
-Um die Tree-Ansicht zu öffnen, tippen/klicken Sie auf das GlobalNav-Symbol in `Assets UI` und wählen Sie **[!UICONTROL Content tree]** aus dem Menü.
+Um die Baumansicht zu öffnen, tippen/klicken Sie auf das GlobalNav-Symbol in `Assets UI` und wählen Sie **[!UICONTROL Inhaltsstruktur]** aus dem Menü aus.
 
 ![content_tree](assets/content_tree.png)
 
@@ -79,7 +78,7 @@ Navigieren Sie in der Inhaltshierarchie zum gewünschten Asset.
 
 ## Navigation durch Asset-Details.{#navigating-asset-details}
 
-Auf der Seite mit den Asset-Details befinden sich jetzt die Schaltflächen &quot;Zurück&quot;und &quot;Weiter&quot;in der Symbolleiste, damit Sie alle Bilder in einem Ordner nacheinander Ansicht werden können.
+Die Asset-Detailseite enthält jetzt die Schaltflächen Zurück und Weiter in der Symbolleiste, damit Sie alle Bilder in einem Ordner nacheinander anzeigen können.
 
 Abhängig vom verwendeten Gerät können Sie auch wischen oder die Pfeiltasten auf der Tastatur verwenden, um zwischen den Bildern hin- und herzuwechseln.
 
@@ -93,4 +92,4 @@ Abhängig vom ausgewählten Layout gibt es folgende Möglichkeiten, die Detailse
 
 Verwenden Sie die Schaltflächen „Zurück“ bzw. „Weiter“, um zwischen den Assets hin- und herzuwechseln.
 
-![prev_next_buttons](assets/prev_next_buttons.png)
+![prev_next_button](assets/prev_next_buttons.png)
