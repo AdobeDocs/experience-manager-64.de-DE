@@ -2,16 +2,15 @@
 title: Lightbox
 description: Erfahren Sie mehr über Lightbox in AEM Assets.
 contentOwner: AG
-feature: Developer Tools,Renditions
+feature: Entwicklertools,Ausgabedarstellungen
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 98%
 
 ---
-
 
 # Lightbox {#lightbox}
 
@@ -21,7 +20,7 @@ Lightbox ist ein spezieller Sammlungstyp, der den einfachen Zugriff auf Assets e
 
 Wenn Sie Adobe Experience Manager (AEM) Assets verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
 
-## Hinzufügen von Assets zu Lightbox {#adding-assets-to-lightbox}
+## Hinzufügen von Assets zu Lightbox  {#adding-assets-to-lightbox}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche die Assets aus, die zu Lightbox hinzugefügt werden sollen.
 1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Lightbox ablegen]**. Lassen Sie die Maustaste los, wenn die Dropzone aktiv wird und sich die Bezeichnung in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
@@ -42,4 +41,3 @@ Wenn Sie Adobe Experience Manager (AEM) Assets verwenden, wird Lightbox bei I
 1. Wählen Sie die Assets aus, die Sie entfernen möchten.
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Entfernen]**.
 1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Entfernen]**, um den Löschvorgang zu bestätigen. Die Assets werden aus Lightbox gelöscht.
-
