@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 90%
 
 ---
-
 
 # Rich-Text-Editor{#rich-text-editor}
 
@@ -58,9 +57,9 @@ Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch d
 >
 >Die **Titel**-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im kontextbasierten Bearbeitungsmodus bearbeiten, wird durch Einfügen eines Zeilenumbruchs eine neue **Text**-Komponente unter dem Titel geöffnet.
 
-## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
+## Funktionen des Rich-Text-Editors  {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, die von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente abhängen. Die Funktionen sind sowohl für die touchoptimierte als auch für die klassische Benutzeroberfläche verfügbar.[
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, diese [hängen von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente ab. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -80,7 +79,7 @@ Alle Funktionen arbeiten als Schalter, wenn Sie also erneut darauf klicken, wird
 
 ### Vordefinierte Stile und Formate  {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraf](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 Ihre Installation kann außerdem vordefinierte Stile und Formate aufweisen, die in den Dropdownlisten **Art** (also Stil) und **Format** zur Verfügung stehen und auf von Ihnen ausgewählten Text angewendet werden können.
 
@@ -90,7 +89,7 @@ Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CS
 
 Ein Format hingegen wird auf einen gesamt Textabsatz angewendet (Format sind HTML-basiert):
 
-![cq55_rte_paragraphen_use](assets/cq55_rte_paragraph_use.png)
+![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
 Ein spezifisches Format kann nur geändert werden (der Standardwert lautet **Absatz**).
 
@@ -160,7 +159,7 @@ Verschachtelte Listen lassen sich durch Einrücken eines oder mehrerer Listenpun
 
 Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor innerhalb der Liste platzieren und einen anderen Stil wählen. Außerdem kann eine Unterliste einen anderen Stil aufweisen als die übergeordnete Liste. Dieser Stil kann angewendet werden, sobald Sie die Unterliste (durch Einrücken) erstellt haben.
 
-![cq55_rte_Listen_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
@@ -184,14 +183,14 @@ Sie haben folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
 
 Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol **Verknüpfung aufheben**:
 
 ![](do-not-localize/chlimage_1-13.png)
 
-### Anker  {#anchors}
+### Anker {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -259,7 +258,7 @@ Tabellen können auf zwei Arten eingefügt werden:
 
    >[!NOTE]
    >
-   >Obwohl Tabellen in der RTE verfügbar sind, wird empfohlen, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
+   >Obwohl Tabellen im RTE verfügbar sind, wird empfohlen, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
 
 Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind die Tabellenoptionen über das Kontextmenü verfügbar, das in der Regel durch Klicken mit der rechten Maustaste auf die Tabelle aufgerufen wird. Beispiel:
 
@@ -353,8 +352,8 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung**  - links, zentriert oder rechts
-* **Vertikale Ausrichtung** : oben, Mitte, unten oder Grundlinie
+* **Horizontale Ausrichtung**  - Links, Mitte oder Rechts
+* **Vertikale Ausrichtung**  - oben, Mitte, unten oder Grundlinie
 * **Zellentyp**  - Daten oder Kopfzeile
 * **Anwenden auf:**
    * Einzelne Zelle
@@ -449,4 +448,3 @@ Im Quellmodus hat nimmt dieser Text folgende Gestalt an (oft ist der HTML-Quellt
 >[!CAUTION]
 >
 >Beim Verlassen des Quellmodus führt AEM bestimmte Prüfungen durch (z. B. ob der Text ordnungsgemäß in Blöcken enthalten bzw. verschachtelt ist). Dies kann zu Änderungen an den Bearbeitungen führen.
-
