@@ -5,7 +5,6 @@ contentOwner: AG
 feature: Search,Adobe Stock
 role: Business Practitioner,Administrator
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-translation-type: tm+mt
 source-git-commit: 6025d91dfaaf51f42a9594987a62d23507e1e8a9
 workflow-type: tm+mt
 source-wordcount: '1126'
@@ -21,7 +20,7 @@ Der [!DNL Adobe Stock]-Service bietet Designern und Unternehmen Zugang zu Millio
 
 ## Voraussetzungen {#prerequisites}
 
-Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://stockenterprise.adobe.com/) sowie  6.4 mit Service Pack 2 oder höher. [!DNL Experience Manager] Weitere Informationen zu [!DNL Experience Manager] 6.4 Service Pack finden Sie unter [Versionshinweise](/help/release-notes/sp-release-notes.md).
+Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://stockenterprise.adobe.com/) sowie  6.4 mit Service Pack 2 oder höher. [!DNL Experience Manager] Weitere Informationen zu [!DNL Experience Manager] 6.4 Service Pack finden Sie in den [Versionshinweisen](/help/release-notes/sp-release-notes.md).
 
 ## Integrieren von [!DNL Experience Manager] und [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -31,22 +30,22 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 >
 >Nur [!DNL Experience Manager]- und [!DNL Admin Console]-Administratoren einer Organisation können die Integration durchführen, da hierfür Administratorrechte erforderlich sind.
 
-### Erstellen einer IMS-Konfiguration  {#create-an-ims-configuration}
+### Erstellen einer IMS-Konfiguration   {#create-an-ims-configuration}
 
 1. Navigieren Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloud-Lösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
-1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] geöffnet, um die erforderlichen Werte in Kürze bereitzustellen.
+1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] geöffnet, um die erforderlichen Werte in Kürze anzugeben.
 1. Greifen Sie auf die [Adobe Developer Console](https://console.adobe.io) zu. Stellen Sie sicher, dass Ihr Konto über Administratorrechte für die Organisation verfügt, für die die Integration benötigt wird.
 1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL API hinzufügen]**. Wählen Sie **[!UICONTROL Adobe Stock]** aus der Liste der zur Verfügung stehenden APIs. Wählen Sie [!UICONTROL OAUTH 2.0 Web].
 1. Geben Sie die Werte **[!UICONTROL Standard-Umleitungs-URI]** und **[!UICONTROL Umleitungs-URI-Muster]** an. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Kopieren Sie die generierte ID und den geheimen Schlüssel.
-1. Geben Sie im Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] die Werte in den Feldern **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** und **[!UICONTROL Payload]** ein>. Ausführliche Informationen zu diesen Werten finden Sie unter [Schnellauthentifizierung mit JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+1. Geben Sie im Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] die Werte in den Feldern **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** und **[!UICONTROL Payload&lt;a11/ an.>.]** Detaillierte Informationen zu diesen Werten finden Sie unter [Schnellstart zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 ### Erstellen der [!DNL Adobe Stock]-Konfiguration in [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. Navigieren Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Navigieren Sie in der [!DNL Experience Manager] -Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um eine Konfiguration zu erstellen und sie Ihrer bestehenden IMS-Konfiguration zuzuordnen. Wählen Sie `PROD` als Umgebungsparameter aus.
 1. Lassen Sie den Speicherort im Feld **[!UICONTROL Pfad lizenzierter Assets]** unverändert. Ändern Sie den Speicherort nicht in den Pfad, in dem Sie die [!DNL Adobe Stock]-Assets speichern möchten.
 1. Schließen Sie die Erstellung ab, indem Sie alle erforderlichen Eigenschaften hinzufügen. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
@@ -54,7 +53,7 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 
 >[!NOTE]
 >
->Wenn mehrere Konfigurationen vorhanden sind, wählen Sie die gewünschte Konfiguration im Bedienfeld &quot;Benutzereinstellungen&quot;(**[!UICONTROL AEM]** > **[!UICONTROL Benutzersymbol]** > **[!UICONTROL Benutzereinstellungen]** > **[!UICONTROL Lagerkonfiguration]**).[!DNL Adobe Stock]
+>Wenn mehrere [!DNL Adobe Stock] -Konfigurationen vorhanden sind, wählen Sie die gewünschte Konfiguration im Bedienfeld Benutzereinstellungen (**[!UICONTROL AEM]** > **[!UICONTROL Benutzersymbol]** > **[!UICONTROL Benutzereinstellungen]** > **[!UICONTROL Stock-Konfiguration]**) aus.
 
 ## Verwenden und Verwalten von [!DNL Adobe Stock]-Assets in [!DNL Experience Manager] {#usemanage}
 
@@ -62,11 +61,11 @@ Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit [!DNL 
 
 Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können Assets in [!DNL Experience Manager] suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, Assets in [!DNL Brand Portal] teilen, Assets per [!DNL Experience Manager]-Desktop-Programm aufrufen und verwenden und vieles mehr.
 
-![Suchen Sie nach Adobe Stock-Assets und filtern Sie die Ergebnisse aus Ihrem Adobe Experience Manager Workspace.](assets/adobe-stock-search-results-workspace.png)
+![Suchen nach Adobe Stock-Assets und Filtern von Ergebnissen aus Ihrem Adobe Experience Manager Workspace](assets/adobe-stock-search-results-workspace.png)
 
-*Abbildung: Suchen Sie nach  [!DNL Adobe Stock] Assets und filtern Sie die Ergebnisse aus Ihrer  [!DNL Experience Manager] Oberfläche.*
+*Abbildung: Suchen Sie nach  [!DNL Adobe Stock] Assets und filtern Sie die Ergebnisse über Ihre  [!DNL Experience Manager] Benutzeroberfläche.*
 
-**A.**[!DNL Adobe Stock] Suchen Sie Assets, die den Assets ähneln, deren ID bereitgestellt wird. **B.** Nach Assets suchen, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Suchen Sie nach einem der unterstützten Asset-Typen  **D.** Öffnen Sie den Bereich &quot;Filter&quot; **E.** Lizenz und speichern Sie das ausgewählte Asset in  [!DNL Experience Manager] **F.** Speichern Sie das Asset  [!DNL Experience Manager] mit dem Wasserzeichen  **G.**   [!DNL Adobe Stock]   ****   [!DNL Adobe Stock]   ****   **** Untersuchen Sie Assets auf der Website, die dem ausgewählten Asset ähnlich sind.Ansicht der ausgewählten Assets auf der SeiteI.AnsichtAnzahl der ausgewählten Assets SuchergebnisseAnsicht der  zwischen Karte und Liste
+**A.**[!DNL Adobe Stock] Suchen Sie Assets, die den Assets ähneln, deren ID bereitgestellt wird. **B.** Nach Assets suchen, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Suchen Sie nach einem oder mehreren unterstützten Asset-Typen  **D.** Öffnen oder reduzieren Sie den Filterbereich  **E.** Lizenzieren und speichern Sie das ausgewählte Asset in  [!DNL Experience Manager] **F.** Speichern Sie das Asset  [!DNL Experience Manager] mit Wasserzeichen  **G.** Durchsuchen Sie Assets auf der  [!DNL Adobe Stock] Website, die dem ausgewählten Asset ähnlich sind  **H.** Anzeigen der ausgewählten Assets auf der  [!DNL Adobe Stock] Website  **I.** Anzahl ausgewählter Assets aus den Suchergebnissen  **J.** Zwischen Karten- und Listenansicht wechseln
 
 ### Suchen von Assets {#find-assets}
 
@@ -74,7 +73,7 @@ Ihre [!DNL Experience Manager]-Benutzer können in [!DNL Experience Manager] und
 
 * Um nach [!DNL Adobe Stock]-Assets zu suchen, klicken Sie auf **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock durchsuchen]**.
 
-* Um nach Assets in [!DNL Adobe Stock] und [!DNL Experience Manager Assets] zu suchen, klicken Sie auf Suchen ![search_icon](assets/search_icon.png).
+* Um in [!DNL Adobe Stock] und [!DNL Experience Manager Assets] nach Assets zu suchen, klicken Sie auf &quot;Suchen&quot;![search_icon](assets/search_icon.png).
 
 Geben Sie alternativ `Location: Adobe Stock` in die Suchleiste ein, um [!DNL Adobe Stock]-Assets auszuwählen. [!DNL Experience Manager] bietet erweiterte Filterfunktionen, mit denen Benutzer schnell die gewünschten Assets finden können. Hierzu stehen Filter, wie z. B. unterstützte Asset-Typen, Bildausrichtung und Lizenzstatus, zur Verfügung.
 
