@@ -7,15 +7,14 @@ uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 88%
 
 ---
-
 
 # Inline-Stile für Komponenten adaptiver Formulare {#inline-styling-of-adaptive-form-components}
 
@@ -25,7 +24,7 @@ Sie können die Darstellung und das Design eines adaptiven Formulars definieren,
 
 Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. Um den Modus in den Stilmodus zu ändern, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. Um den Modus in den Formatierungsmodus zu ändern, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
 1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png). In der Randleiste geöffnete Stileigenschaften.
 
    Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
@@ -44,7 +43,7 @@ Hinzufügen von Inline-Stilen zu einer Komponente:
    * Erweitert (hier können Sie benutzerdefinierte CSS für die Komponente verwenden)
 
 1. Ebenso können Sie Designs für andere Teile einer Komponente wie Widgets, Beschriftung und Hilfe anwenden.
-1. Tippen Sie auf **Fertig**, um die Änderungen zu bestätigen, oder auf **Abbrechen**, um die Änderungen zu verwerfen.
+1. Tippen Sie auf **Fertig** , um die Änderungen zu bestätigen, oder auf **Abbrechen** , um die Änderungen zu verwerfen.
 
 ## Beispiel: Inline-Stile für eine Feldkomponente {#example-inline-styles-for-a-field-component}
 
@@ -97,12 +96,11 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
  </tbody> 
 </table>
 
-![Textfeldstil nach ](assets/applied-style.png)
-**Anwendung des Inline-StilsAbbildung:** *Textfeldkomponente nach dem Anwenden der Inline-Stileigenschaften*
+![Textfeldstil nach der Inline-Formatierung ](assets/applied-style.png)
+**angewendetAbbildung:** *Textfeldkomponente nach der Anwendung der Inline-Stileigenschaften*
 
 Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereiche, Sendeschaltflächen und Optionsschaltflächen auswählen und formatieren.
 
 >[!NOTE]
 >
 >Designeigenschaften variieren je nach ausgewählter Komponente.
-
