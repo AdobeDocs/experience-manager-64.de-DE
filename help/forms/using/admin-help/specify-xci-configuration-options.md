@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 5156bb1c-8ad6-498c-aaf7-6474ffa8c83c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 100%
 
 ---
-
 
 # XCI-Konfigurationsoptionen angeben {#specify-xci-configuration-options}
 
@@ -32,4 +31,3 @@ Sie können Optionen auswählen, die das Außerkraftsetzen der oben angegebenen 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Output“.
 1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option ausgewählt ist, verwendet Output seine Standardwerte für die packets-, creator-, producer- und compressObjectStream-Einstellungen. Bei deaktivierter Option verwendet Output die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 1. Klicken Sie auf Speichern.
-
