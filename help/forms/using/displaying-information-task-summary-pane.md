@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: cb9de2d7-04ad-4221-8db7-403464c9888b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 68%
 
 ---
 
-
-# Anzeigen von Informationen in der Aufgabenzusammenfassung {#displaying-information-in-the-task-summary-pane}
+# Anzeigen von Informationen in der Aufgabenzusammenfassung  {#displaying-information-in-the-task-summary-pane}
 
 Wenn Sie eine Aufgabe in AEM Forms Workspace öffnen, kann eine Zusammenfassung der Aufgabe in einem entsprechenden Fenster angezeigt werden. Diese zusätzlichen und wichtigen Informationen zu einer Aufgabe sind nützlich für den Endbenutzer von AEM Forms Workspace.
 
-Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich Aufgabe Summary anzeigen. Es kann ein Vorgang erstellt werden, um eine Aufgabenzusammenfassung mithilfe von Workbench anzuzeigen.
+Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich &quot;Aufgabenzusammenfassung&quot;anzeigen. Es kann ein Vorgang erstellt werden, um eine Aufgabenzusammenfassung mithilfe von Workbench anzuzeigen.
 
 1. Erstellen Sie in Workbench einen Assign Task-Prozess. Weitere Informationen zum Prozess „Assign Task“ finden Sie im Dienstreferenzthema der [Workbench-Hilfe](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
@@ -33,9 +32,9 @@ Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich Aufgabe 
 1. Konfigurieren Sie das URL-Feld für die Aufgabenzusammenfassung. Sie können einen Literalwert, eine Vorlage, eine Variable oder einen XPath-Ausdruck angeben.
 1. Nachfolgend finden Sie ein Beispiel für die Anzeige von Informationen auf der Aufgabenzusammenfassungsseite.
 
-   * Melden Sie sich bei CRXDE Lite Umgebung bei `https://[server]:[port]/lc/crx/de` an.
-   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for ` ` allowing `resourceTypeSampleSummaryPERM_WORKSPACE_USERjcr:read` privileges.`
-   * `Create a folder`**** SampleSummaryunder  `/apps`. Fügen Sie in der Liste &quot;Zugriffskontrolle&quot;von `/apps/SampleSummary` einen Eintrag für `PERM_WORKSPACE_USER` hinzu, um `jcr:readprivileges` zuzulassen.
+   * Melden Sie sich bei der CRXDE Lite-Umgebung unter `https://[server]:[port]/lc/crx/de` an.
+   * `Create a node`**SampleSummary** ` under `/` with type `contentnt:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
+   * `Create a folder`**** SampleSummaryunder  `/apps`. Fügen Sie in der Zugriffssteuerungsliste von `/apps/SampleSummary` einen Eintrag für `PERM_WORKSPACE_USER` hinzu, der `jcr:readprivileges` zulässt.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
    ```
@@ -51,5 +50,5 @@ Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich Aufgabe 
    </html>
    ```
 
-   * Legen Sie im Schritt Aufgabe zuweisen den Wert der Zusammenfassungs-URL der Aufgabe auf `/lc/content/SampleSummary.html` fest.
-   * Wenn die mit diesem Schritt verknüpfte Aufgabe in AEM Forms Workspace geöffnet wird, wird `html.esp` bei `/apps/SampleSummary` im Zusammenfassungsbereich der Aufgabe gerendert.
+   * Legen Sie den Wert der Aufgabenzusammenfassungs-URL im Schritt &quot;Aufgabe zuweisen&quot;auf `/lc/content/SampleSummary.html` fest.
+   * Wenn die mit diesem Schritt &quot;Aufgabe zuweisen&quot;verknüpfte Aufgabe in AEM Forms Workspace geöffnet wird, wird `html.esp` unter `/apps/SampleSummary` in der Aufgabenzusammenfassung gerendert.
