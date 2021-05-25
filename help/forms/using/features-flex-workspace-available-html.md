@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: d3125110-1098-413b-ba09-50c182797d27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 96%
 
 ---
 
-
-# In AEM Forms nicht verfügbare Funktionen von Flex Workspace {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+# In AEM Forms nicht verfügbare Funktionen von Flex Workspace  {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 AEM Forms Workspace ist der brandneue Arbeitsbereich. Im Folgenden werden einige Funktionen des Flex-basierten Arbeitsbereichs beschrieben, die nicht in AEM Forms Workspace verfügbar sind.
 
@@ -29,4 +28,3 @@ AEM Forms Workspace ist der brandneue Arbeitsbereich. Im Folgenden werden einige
 * Die Option zur Verwaltung von Spaltenüberschriften für die Seite „Verfolgung“ ist in AEM Forms Workspace nicht verfügbar.
 * Das Festlegen eines Approval-Containers oder benutzerdefinierten Containers für eine Benutzeraufgabe wird in AEM Forms Workspace nicht berücksichtigt.
 * Eine Option zur Vorlagensuche ist auf der Registerkarte „Verfolgung“ verfügbar, jedoch nicht auf der Registerkarte „Aufgaben“.
-
