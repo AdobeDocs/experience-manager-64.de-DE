@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: b6c8c2b8-78d1-43a3-80b5-3535183ebf20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6177'
 ht-degree: 86%
 
 ---
-
 
 # Komponenten für die Seitenbearbeitung{#components-for-page-authoring}
 
@@ -30,7 +29,7 @@ Einige sind direkt im Sidekick verfügbar, viele andere können außerdem im [De
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-Die Komponenten stehen zur Verfügung, wenn Sie eine Seite [auf der Registerkarte **Komponenten** des Sidekick bearbeiten und die Auswahl **Neue Komponente einfügen** auswählen (wenn Sie mit der Dublette in den Bereich **Komponenten oder Elemente hierher ziehen** klicken).](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)
+Die Komponenten sind verfügbar, wenn Sie [eine Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) auf der Registerkarte **Komponenten** des Sidekicks und der Auswahl **Neue Komponente einfügen** bearbeiten (wenn Sie auf den Bereich **Komponenten oder Assets hierher ziehen** doppelklicken).
 
 Sie können eine Komponente auswählen und an die gewünschte Position auf Ihrer Seite ziehen und dann [Inhalt und Eigenschaften bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
@@ -44,7 +43,7 @@ Komponenten werden nach verschiedenen Kategorien (Komponentengruppen) sortiert, 
 
 Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie Inhalte erstellen.
 
-### Kontoelement {#account-item}
+### Kontoelement  {#account-item}
 
 Sie können einen Link mit Titel und Beschreibung definieren.
 
@@ -68,11 +67,11 @@ Sie können Bilddateien mit den folgenden Dateinamenerweiterungen mit der Adapti
 * .jpg
 * .jpeg
 * .png
-* .gif&amp;ast;&amp;ast;
+* .gif &amp;ast;&amp;ast;
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; Animierte .gif-Dateien werden in AEM für adaptive Darstellungen nicht unterstützt.
+>&amp;ast;&amp;ast; Animierte .gif-Dateien werden in AEM für adaptive Ausgabedarstellungen nicht unterstützt.
 
 #### Bildgrößen und Qualität {#images-sizes-and-quality}
 
@@ -160,17 +159,17 @@ Hier geben Sie an wie das Karussell arbeitet:
       Die Zeit in Millisekunden vor der nächsten Folie wird angezeigt.
    * Übergangszeit
 
-      Zeit in Millisekunden für die Transition zwischen zwei Dias.
+      Zeit in Millisekunden für den Übergang zwischen zwei Folien.
    * Steuerelemente-Stil
 
-      Über ein Pulldown-Menü stehen verschiedene Optionen zur Verfügung. zum Beispiel die Schaltflächen &quot;Zurück&quot;/&quot;Weiter&quot;, &quot;Rechts oben&quot;.
+      In einem Pulldown-Menü stehen verschiedene Optionen zur Verfügung. z. B. Vorwärts-/Nächste-Schaltflächen, Rechtsanschläge oben.
 
 * **Liste**
 Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
    * **Liste erstellen mittels**
 
-      Es gibt mehrere Möglichkeiten, eine Liste zu erstellen: Untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
+      Es gibt verschiedene Möglichkeiten, eine Seitenliste zu erstellen: untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
 
       Beachten Sie, dass, unabhängig von der ausgewählten Methode, den Seiten, die Sie Ihrer Liste hinzufügen, bereits ein Bild zugeordnet worden sein muss. Dieses Bild wird dann im Karussell angezeigt. Wenn in den Seiteneigenschaften einer bestimmten Seite kein Bild vorhanden ist, sollten Sie der Seite ein Bild zuordnen, bevor Sie anfangen. Anderenfalls wird im Karussell eine leere (oder fast leere) Seite angezeigt Siehe [Bearbeiten der Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -180,17 +179,17 @@ Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
          * **Übergeordnete Seite**
 
-            Geben Sie einen Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
+            Geben Sie einen Pfad entweder manuell oder mithilfe des Selektors an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
          * **Seiten**
 
-            Wählen Sie eine Liste von Seiten aus. Verwenden Sie `+`, um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
+            Wählen Sie eine Liste von Seiten aus. Verwenden Sie `+`, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
          * **Starten in**
 
-            Geben Sie einen Startpfad ein, entweder manuell oder mithilfe der Auswahl.
+            Geben Sie einen Startpfad ein, entweder manuell oder mithilfe des Selektors.
 
          * **Suchanfrage**
 Sie können eine Textsuchanfrage eingeben.
@@ -198,12 +197,12 @@ Sie können eine Textsuchanfrage eingeben.
 
          * **Querybuilder-Eigenschafts-Notation**
 
-            Sie können eine Abfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
+            Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
    * **Sortieren nach**
 
-      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü.
+      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Beschränkung**
 
@@ -217,7 +216,7 @@ Sie können eine Textsuchanfrage eingeben.
 >
 >Sie können eine individuelle Karussell-Komponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Erstellen von benutzerdefinierten Karussellkomponenten für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
-### Diagramm  {#chart}
+### Diagramm {#chart}
 
 Mit der Komponente „Diagramm“ können Sie ein Balken-, Linien- oder Tortendiagramm hinzufügen. AEM erstellt aus den von Ihnen zur Verfügung gestellten Daten ein Diagramm. Die Daten geben Sie direkt auf der Registerkarte „Daten“ ein oder fügen sie durch Kopieren aus einer Tabelle ein.
 
@@ -257,7 +256,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Die vollständige Funktionalität von Content Fragment Management ist nur mit der touchfähigen Benutzeroberfläche verfügbar.
+>Die vollständige Funktionalität der Inhaltsfragmentverwaltung ist nur in der Touch-optimierten Benutzeroberfläche verfügbar.
 >
 >Die Inhaltsfragment-Komponente wird im Sidekick der klassischen Benutzeroberfläche angezeigt, weitere Funktionen sind jedoch nicht verfügbar.
 
@@ -315,7 +314,7 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 >
 >Abhängig von Ihrem Nutzungsszenario sind weitere Optionen für die Integration externer Anwendungen verfügbar, z. B.: die [Integration von Portlets](/help/sites-administering/aem-as-portal.md).
 
-### Flash   {#flash}
+### Flash  {#flash}
 
 Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ein Flash-Asset aus dem Content Finder auf die Komponente ziehen oder das folgende Dialogfeld verwenden:
 
@@ -371,7 +370,7 @@ Sie können ein Bild aus dem [Content Finder](/help/sites-classic-ui-authoring/c
 >
 >Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
 >
->Weitere Informationen zu den von AEM verwendeten HTML5-Funktionen finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms).
+>Weitere Informationen zu den von AEM verwendeten HTML5-Funktionen finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) .
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -381,7 +380,7 @@ Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werde
 
 * **Zuschneiden**
 
-   Wählen Sie &quot;Beschneiden&quot;, um ein Bild zu beschneiden. Verwenden Sie die Maus, um das Bild zuzuschneiden.
+   Wählen Sie Zuschneiden aus, um ein Bild zuzuschneiden. Verwenden Sie die Maus, um das Bild zuzuschneiden.
 
 * **Drehen**
 
@@ -401,11 +400,11 @@ Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werde
 
 * **ALT-Text**
 
-   Ein alternativer Text, der beim Erstellen barrierefreier Inhalte verwendet wird.
+   Ein alternativer Text zur Verwendung beim Erstellen barrierefreier Inhalte.
 
 * **Verknüpfung zu**
 
-   Erstellen Sie einen Link zu Assets oder anderen Seiten Ihrer Website.
+   Erstellen Sie einen Link zu Assets oder anderen Seiten auf Ihrer Website.
 
 * **Beschreibung**
 
@@ -439,20 +438,20 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
       * **Optionen für untergeordnete Seiten**
 
-         * **Untergeordnete Elemente**  (übergeordnete Seite)
+         * **Untergeordnete Elemente von**  (übergeordnete Seite)
 
-            Geben Sie einen Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
+            Geben Sie einen Pfad entweder manuell oder mithilfe des Selektors an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten** : Wählen Sie eine Liste von Seiten aus. Verwenden Sie +, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten**  - Wählen Sie eine Liste von Seiten aus. Verwenden Sie + , um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
-         * **Beginn in**  - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe der Auswahl. Suchanfrage
+         * **Starten in**  - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe des Selektors. Suchanfrage
 Sie können eine Textsuchanfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
-         * **Querybuilder-Vorhersage**  - Sie können eine Suchbegriffs-Abfrage mit Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine ausführliche Erläuterung der Ausdrücke und weitere Beispiele finden Sie unter  [QueryBuilder ](/help/sites-developing/querybuilder-api.md) API.
-      * **Tags** : Geben Sie die  **übergeordnete Seite**,  **Tags/** Suchbegriffe und Ihre erforderlichen Übereinstimmungskriterien an.
+         * **Querybuilder-Eigenschafts-Notation**  - Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine vollständige Erläuterung der Abfrageausdrücke und weitere Beispiele finden Sie unter  [QueryBuilder-](/help/sites-developing/querybuilder-api.md) API .
+      * **Tags**  - Geben Sie die  **übergeordnete Seite**,  **Tags/** Keywords und Ihre erforderlichen Übereinstimmungskriterien an.
    * **Anzeigen als**
 
       Angabe, wie die Elemente aufgeführt werden sollen; umfasst Links, Teaser und Nachrichten.
@@ -480,7 +479,7 @@ Sie können eine Textsuchanfrage eingeben.
 
 Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wie eine Liste mit untergeordneten Seiten angezeigt werden würde, wobei das Layout durch die benutzerdefinierten CSS-Definitionen eines Site-Designs gesteuert wird.
 
-![dc_Liste_use](assets/dc_list_use.png)
+![dc_list_use](assets/dc_list_use.png)
 
 ### Anmeldung {#login}
 
@@ -494,11 +493,11 @@ Sie können Folgendes konfigurieren:
 
    * Bereichsbeschriftung
 
-      Interessententext für die Eingabefelder.
+      Lead-in-Text für die Eingabefelder.
 
    * Benutzername-Beschriftung
 
-      Text zur Beschriftung des Felds &quot;Benutzername&quot;.
+      Text zur Beschriftung des Benutzernamenfelds.
 
    * Kennwortaufschrift
 
@@ -510,7 +509,7 @@ Sie können Folgendes konfigurieren:
 
    * Umleiten zu
 
-      Sie können die Seite auf Ihrer Website angeben, die geöffnet werden soll, sobald sich der Benutzer angemeldet hat.
+      Sie können die Seite auf Ihrer Website angeben, die geöffnet werden soll, nachdem sich der Benutzer angemeldet hat.
 
 * Bereits angemeldet
 
@@ -524,7 +523,7 @@ Sie können Folgendes konfigurieren:
 
    * **Titel**
 
-      Geben Sie den Titel an, der angezeigt werden soll.
+      Geben Sie den Titeltext an, der angezeigt werden soll.
 
    * **Verknüpfung**
 
@@ -537,7 +536,7 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-### Verweis   {#reference}
+### Verweis  {#reference}
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -545,7 +544,7 @@ Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer 
 
    * **Verweis**
 
-      Geben Sie den Pfad zur Seite und zum Absatz an, auf den Sie verweisen möchten (einschließlich Inhalt).
+      Geben Sie den Pfad zur Seite und zum Absatz an, auf die Sie verweisen möchten (einschließlich Inhalt).
 
 Für den Pfad zu der Seite mit dem Absatz muss das folgende Suffix angegeben werden:
 
@@ -577,7 +576,7 @@ Sie können Folgendes konfigurieren:
 
    * **Knotentypen**
 
-      Wenn die Suche auf eine bestimmte Node-Typ-Liste beschränkt werden soll, können sie hier erfolgen. zum Beispiel `cq:Page`.
+      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. z. B. `cq:Page`.
 
    * **Suchpfad**
 
@@ -656,7 +655,7 @@ Sie können Folgendes konfigurieren:
 
    * **Neue Folie**
 
-      Sie können eine Auswahl von Folien mit den Schaltflächen **Hinzufügen** (und **Entfernen**) angeben.
+      Mithilfe der Schaltflächen **Hinzufügen** (und **Entfernen**) können Sie eine Auswahl an Folien angeben.
 
    * **Titel**
 
@@ -748,11 +747,11 @@ Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzuge
 
 Sie können Folgendes konfigurieren:
 
-* **Komponentenstile** (**Stile**)
+* **Komponentenstile**  (**Stile**)
 
    Mit dieser Option können Sie das Bild rechts- oder linksbündig ausrichten. Standardmäßig wird das Bild **linksbündig** ausgerichtet.
 
-* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
+* **Bildeigenschaften**  (**Erweiterte Bildeigenschaften**)
 
    Dies ermöglicht die Festlegung des Folgenden:
 
@@ -770,7 +769,7 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung zu**
 
-      Geben Sie einen Pfad zur Zielgruppe an.
+      Geben Sie einen Zielpfad an.
 
    * **Beschreibung**
 
@@ -819,8 +818,8 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 
 * Video
 
-   * **Video-Asset** : Laden Sie das Video-Asset hoch oder legen Sie es ab.
-   * **Größe** : Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier die Abmessungen für Breite und Höhe manuell ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Klicken Sie auf  **** OK, um das Dialogfeld zu schließen.
+   * **Video-Asset**  - Laden Sie Ihr Video-Asset hoch oder legen Sie es ab.
+   * **Größe**  - Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier manuell Breite und Höhe-Dimensionen ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Klicken Sie auf  **** OK , um das Dialogfeld zu schließen.
 
 >[!NOTE]
 >
@@ -828,13 +827,13 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Flash-Video)
+>* `FLV` (Flash video)
 
 >
 
 
 
-## Columns {#columns}
+## Spalten {#columns}
 
 Das Layout des Inhalts in AEM wird über Spalten gesteuert. In einer Standardinstallation stehen Komponenten zum Erstellen von zwei und/oder drei Spalten bereit.
 
@@ -860,7 +859,7 @@ Mit der Spalten-Steuerung-Komponente können Benutzer auswählen, wie sie den In
 
       Wählen Sie die Anzahl der Spalten aus, die dargestellt werden sollen. Nach der Erstellung verfügt jede Spalte über einen eigenen Link, um Inhalt hinzuzufügen, indem Komponenten oder Assets dorthin gezogen werden.
 
-## Formular  {#form}
+## Formular {#form}
 
 Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingaben vornehmen können. Formulare und Formular-Komponenten können dazu genutzt werden, Informationen, einschließlich Benutzer-Feedback (z. B. ein Fragebogen zur Kundenzufriedenheit), und Benutzerinformationen (z. B. Benutzerregistrierung) zu sammeln.
 
@@ -904,7 +903,7 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
 
    Ermöglicht Ihnen das Festlegen eines Standardwerts.
 
-* **Einschränkungen**
+* **Beschränkungen**
 
    Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z.&amp;nbsp;B. ob nur numerische Werte zulässig sind).
 
@@ -947,14 +946,14 @@ Diese Registerkarten stellen die erforderlichen Parameter bereit. Diese können 
 
       Die beim Öffnen des Formulars im Feld angezeigten Werte, also bevor der Benutzer seine Eingabe vornimmt.
 
-* **Einschränkungen**
+* **Beschränkungen**
 
    * **Erforderlich**
 
-      Dies hängt vom Formularkomponententyp ab, stellt jedoch ein oder mehrere Klickfelder bereit, um anzugeben, dass dieses Feld oder bestimmte Teile dieses Felds erforderlich sind/sind.
+      Dies hängt vom Typ der Formularkomponente ab, bietet jedoch ein oder mehrere Klickfelder, um anzuzeigen, dass dieses Feld oder bestimmte Teile dieses Felds erforderlich sind.
 
-   * **Erforderliche Meldung** : Eine Meldung, die die Benutzer darüber informiert, dass dieses Feld erforderlich ist; Ein erforderliches Feld wird auch mit und mit Sternchen gekennzeichnet.
-   * **Einschränkung** : Die zur Auswahl verfügbaren Einschränkungen hängen vom Formularkomponententyp ab.
+   * **Erforderliche Nachricht**  - Eine Meldung, die Benutzer darüber informiert, dass dieses Feld erforderlich ist. Ein erforderliches Feld wird ebenfalls mit und mit einem Sternchen gekennzeichnet.
+   * **Einschränkung**  - Die zur Auswahl verfügbaren Begrenzungen hängen vom FormularKomponententyp ab.
    * **Beschränkungsmeldung**
 Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
 
@@ -1017,7 +1016,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
          Dies ist der Standard-Aktionstyp.
 
       * **Inhalt mit Uploads speichern**
-      * **Bestellung absenden**
+      * **Bestellung übermitteln**
       * **Abonnenten löschen**
       * **Auftrag aktualisieren**
    * **Formular-ID**
@@ -1026,7 +1025,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
 
    * **Ladepfad**
 
-      Der Pfad zu den Knoteneigenschaften, mit denen vordefinierte Werte in die Formularfelder geladen werden.
+      Der Pfad zu den Knoteneigenschaften, die zum Laden vordefinierter Werte in die Formularfelder verwendet werden.
 
       Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
 
@@ -1049,7 +1048,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Aktionskonfiguration**
 
-      Die unter **Aktionskonfiguration** verfügbaren Optionen hängen von der ausgewählten **Aktionstyp** ab:
+      Die in **Aktionskonfiguration** verfügbaren Optionen hängen vom ausgewählten **Aktionstyp** ab:
 
       * **Kontoabfrage**
 
@@ -1065,7 +1064,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Typ**
 
-            Wählen Sie den erforderlichen Typ aus.
+            Wählen Sie den gewünschten Typ aus.
 
          * **Formular**
 
@@ -1073,18 +1072,18 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Wiedergeben mit**
 
-            Wählen Sie in der Liste die gewünschte Option aus.
+            Wählen Sie die gewünschte Option aus der Liste aus.
 
          * **Ressourcentyp**
 
-            Wenn festgelegt, wird dies jedem Kommentar als `sling:resourceType` hinzugefügt
+            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType` hinzugefügt.
 
          * **Ansichtselektor**
       * **Lead erstellen**
 
          * **Lead wird dieser Liste hinzugefügt**
 
-            Geben Sie die erforderliche Liste für den Interessenten an.
+            Geben Sie die erforderliche Lead-Liste an.
       * **Konto erstellen und aktualisieren**
 
          * **Anfangsgruppe**
@@ -1101,7 +1100,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Daten anzeigen...**
 
-            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv`-Datei (tabulatorgetrennt) exportieren (z. B. in eine Excel-Tabelle).
+            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei exportieren (z. B. in eine Excel-Tabelle).
       * **E-Mail**
 
          * **From**
@@ -1141,13 +1140,13 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
             Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine TSV-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
       * **Inhalt mit Uploads speichern**
 
-         Diese Option hat die gleichen Optionen wie **Inhalt speichern**.
+         Dies hat dieselben Optionen wie **Inhalt speichern**.
 
       * **Abonnenten löschen**
 
          * **Lead wird aus dieser Liste gelöscht**
 
-            Geben Sie die erforderliche Liste für den Interessenten an.
+            Geben Sie die erforderliche Lead-Liste an.
 
 
 
@@ -1198,11 +1197,11 @@ Hiermit kann der Benutzer einen Kontonamen eingeben:
 
 Hiermit können Sie ein Feld für internationale Adressen im folgenden Format hinzufügen:
 
-![dc_form_addressField](assets/dc_form_addressfield.png)
+![dc_form_address_field](assets/dc_form_addressfield.png)
 
 Die Komponente ist für den unmittelbaren Einsatz konfiguriert, Sie können die Konfiguration jedoch bei Bedarf ändern. Es können z. B. Beschränkungen für die einzelnen Elemente der Adresse hinzugefügt werden. Wenn Sie die Felder leer lassen, werden die Standardeinstellungen verwendet.
 
-### Captcha  {#captcha}
+### Captcha {#captcha}
 
 Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge eingeben, die am Bildschirm angezeigt wird. Die Zeichenfolge ändert sich bei jeder Aktualisierung.
 
@@ -1258,7 +1257,7 @@ Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei 
 
 Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld kann zu unterschiedlichen Zwecken verwendet werden. Wenn Sie z. B. nach dem Senden des Formulars eine Aktion durchführen müssen oder wenn für die Nachverarbeitung ausgeblendete Daten benötigt werden.
 
-![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
+![dc_form_hidenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
 >
@@ -1325,7 +1324,7 @@ Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Stan
 
 Oder Sie können Ihren eigenen Text eingeben:
 
-![dc_form_submitbuttonuse](assets/dc_form_submitbuttonuse.png)
+![dc_form_submit_buttonuse](assets/dc_form_submitbuttonuse.png)
 
 ### Feld „Tags“{#tags-field}
 
@@ -1362,4 +1361,3 @@ Das Standardtextfeld kann an die erforderliche Größe angepasst werden und kann
 Damit können Sie eine Senden-Schaltfläche für die Verwendung in einem Workflow erstellen.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
-
