@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7b97fc27-30de-4ef9-9efe-673aec50cff2
-feature: Context Hub
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Context-Hub
+exl-id: fb613a57-d064-45eb-be15-c4f7e06bb0ee
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2994'
 ht-degree: 83%
 
 ---
-
 
 # ClientContext im Detail{#client-context-in-detail}
 
@@ -35,7 +34,7 @@ ClientContext besteht hauptsächlich aus folgenden Elementen:
 
 Um einen eigenständigen Sitzungsspeicher zu erstellen und zu ClientContext hinzuzufügen oder einen Sitzungsspeicher zu erstellen, der mit einer Kontextspeicherkomponente verknüpft ist, installiert AEM verschiedene Kontextspeicherkomponenten, die Sie sofort verwenden können. Nutzen Sie diese Komponenten einfach als Grundlage für Ihre eigenen Komponenten.
 
-Informationen zum Öffnen des Client-Kontexts, zum Konfigurieren der angezeigten Informationen und zum Simulieren des Benutzererlebnisses finden Sie unter [Client-Kontext](/help/sites-administering/client-context.md).
+Informationen zum Öffnen von ClientContext, Konfigurieren der angezeigten Informationen und Simulieren des Benutzererlebnisses finden Sie unter [ClientContext](/help/sites-administering/client-context.md).
 
 ## Sitzungsspeicher {#session-stores}
 
@@ -48,7 +47,7 @@ Das ClientContext-Framework stellt eine [JavaScript-API](/help/sites-developing/
 
 Sitzungsspeicherdaten verbleiben auf dem Client. ClientContext schreibt die Daten nicht wieder auf den Server. Verwenden Sie zum Übermitteln von Daten an den Server ein Formular oder schreiben Sie einen benutzerdefinierten JavaScript-Code.
 
-Jeder Sitzungsspeicher ist eine Sammlung von Paaren aus Eigenschaft und Wert. Der Sitzungsspeicher stellt eine Zusammenstellung verschiedener Daten dar, deren kontextspezifische Bedeutung vom Designer oder Entwickler festgelegt werden kann. Der folgende JavaScript-Beispielcode definiert ein Objekt, das die Profildaten darstellt, die der Sitzungsspeicher unter Umständen enthält:
+Jeder Sitzungsspeicher ist eine Sammlung von Eigenschafts-Wert-Paaren. Der Sitzungsspeicher stellt eine Zusammenstellung verschiedener Daten dar, deren kontextspezifische Bedeutung vom Designer oder Entwickler festgelegt werden kann. Der folgende JavaScript-Beispielcode definiert ein Objekt, das die Profildaten darstellt, die der Sitzungsspeicher unter Umständen enthält:
 
 ```
 {
@@ -72,7 +71,7 @@ Ein Sitzungsspeicher kann über mehrere Browsersitzungen hinweg oder nur für di
 
 ### Kontextspeicherkomponenten {#context-store-components}
 
-Eine Kontextspeicherkomponente ist eine AEM Komponente, die dem Client-Kontext hinzugefügt werden kann. In der Regel zeigen Kontextspeicherkomponenten Daten aus dem Sitzungsspeicher an, dem sie zugeordnet sind. Die Kontextspeicherkomponenten zeigen jedoch nicht nur Informationen aus dem Sitzungsspeicher an.
+Eine Kontextspeicherkomponente ist eine AEM Komponente, die ClientContext hinzugefügt werden kann. In der Regel zeigen Kontextspeicherkomponenten Daten aus dem Sitzungsspeicher an, dem sie zugeordnet sind. Die Kontextspeicherkomponenten zeigen jedoch nicht nur Informationen aus dem Sitzungsspeicher an.
 
 Mögliche Elemente von Kontextspeicherkomponenten:
 
@@ -91,11 +90,11 @@ Eine Beschreibung der installierten Komponenten, die Sie dem Kontextspeicher hin
 
 Profilinformationen werden ebenfalls zur Bereitstellung [zielgerichteter Inhalte ](/help/sites-authoring/content-targeting-touch.md) verwendet.
 
-![clientcontext_](assets/clientcontext_targetedcontentdelivery.png) ![targetedcontentzustellyclientcontext_targetedcontentdeliveryDetail](assets/clientcontext_targetedcontentdeliverydetail.png)
+![clientcontext_](assets/clientcontext_targetedcontentdelivery.png) ![targetedcontentdeliveryclientcontext_targetedcontentdeliverydetail](assets/clientcontext_targetedcontentdeliverydetail.png)
 
 ## Hinzufügen von ClientContext zu einer Seite {#adding-client-context-to-a-page}
 
-Fügen Sie die ClientContext-Komponente dem Hauptteil Ihrer Webseiten hinzu, um ClientContext zu aktivieren. Der Pfad des Client Context-Komponentenknotens ist `/libs/cq/personalization/components/clientcontext`. Um die Komponente einzuschließen, fügen Sie den folgenden Code zur JSP-Datei Ihrer Seitenkomponente hinzu, die sich direkt unterhalb des Elements `body` auf Ihrer Seite befindet:
+Fügen Sie die ClientContext-Komponente dem Hauptteil Ihrer Webseiten hinzu, um ClientContext zu aktivieren. Der Pfad des ClientContext-Komponentenknotens ist `/libs/cq/personalization/components/clientcontext`. Um die Komponente einzubeziehen, fügen Sie den folgenden Code zur JSP-Datei Ihrer Seitenkomponente hinzu, der sich direkt unterhalb des Elements `body` auf Ihrer Seite befindet:
 
 ```java
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -111,7 +110,7 @@ Durch die ClientContext-Komponente lädt die Seite die Client-Bibliotheken, die 
 
 Die ClientContext-Benutzeroberfläche ist nur auf der Autoreninstanz verfügbar.
 
-## Erweitern von ClientContext {#extending-client-context}
+## Erweitern von ClientContext  {#extending-client-context}
 
 Erstellen Sie für die Erweiterung von ClientContext einen Sitzungsspeicher und zeigen Sie optional die Speicherdaten an:
 
@@ -145,15 +144,15 @@ Sitzungsspeicher werden entweder bei einer Browsersitzung erstellt und sind auch
 * [`CQ_Analytics.SessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore): Diese Objekte befinden sich nur im Seiten-DOM. Die Daten werden erstellt und während der gesamten Lebensdauer der Seite beibehalten.
 * [`CQ_Analytics.PerstistedSessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore): Diese Objekte befinden sich im Seiten-DOM und werden entweder im Browserspeicher oder in Cookies gespeichert. Die Daten sind seiten- und sitzungsübergreifend verfügbar.
 
-Die API bietet außerdem Erweiterungen dieser Klassen, die auf das Speichern von JSON- oder JSONP-Daten spezialisiert sind:
+Die API stellt außerdem Erweiterungen dieser Klassen bereit, die auf die Speicherung von JSON-Daten oder JSONP-Daten spezialisiert sind:
 
-* Nur Sitzungsobjekte: [`CQ_Analytics.JSONStore`](/help/sites-developing/ccjsapi.md#cq-analytics-jsonstore) und [`CQ-Analytics.JSONPStore`](/help/sites-developing/ccjsapi.md#cq-analytics-jsonpstore).
+* Schreibgeschützte Objekte: [`CQ_Analytics.JSONStore`](/help/sites-developing/ccjsapi.md#cq-analytics-jsonstore) und [`CQ-Analytics.JSONPStore`](/help/sites-developing/ccjsapi.md#cq-analytics-jsonpstore).
 
 * Beständige Objekte: [`CQ_Analytics.PersistedJSONStore`](/help/sites-developing/ccjsapi.md#cq-analytics-persistedjsonstore) und [`CQ-Analytics.PersistedJSONPStore`](/help/sites-developing/ccjsapi.md#cq-analyics-persistedjsonpstore).
 
 #### Erstellen des Sitzungsspeicher-Objekts {#creating-the-session-store-object}
 
-Das JavaScript Ihres Client-Bibliotheksordners erstellt und initialisiert den Sitzungsspeicher. Der Sitzungsspeicher muss dann mithilfe des Kontextspeicher-Managers registriert werden. Im folgenden Beispiel wird ein [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)-Objekt erstellt und registriert.
+Das JavaScript Ihres Client-Bibliotheksordners erstellt und initialisiert den Sitzungsspeicher. Der Sitzungsspeicher muss dann mithilfe des Kontextspeicher-Managers registriert werden. Im folgenden Beispiel wird ein [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) -Objekt erstellt und registriert.
 
 ```
 //Create the session store
@@ -169,7 +168,7 @@ if (CQ_Analytics.ClientContextMgr){
 }
 ```
 
-Zum Speichern von JSON-Daten wird im folgenden Beispiel ein [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)-Objekt erstellt und registriert.
+Zum Speichern von JSON-Daten erstellt und registriert das folgende Beispiel ein [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) -Objekt.
 
 ```
 if (!CQ_Analytics.myJSONStore) {
@@ -202,21 +201,21 @@ AEM bietet die erweiterbaren Kontextspeicherkomponenten genericstore und generic
 
    * `@param {String} divId`
 
-      ID des div-Tags, in das der Store gerendert werden muss.
+      ID des div-Elements, in das der Store gerendert werden muss.
 
 >[!NOTE]
 >
->Alle ClientContext-Komponenten sind Erweiterungen der Komponenten „Generischer Store“ oder „Generische Store-Eigenschaften“. Im Ordner `/libs/cq/personalization/components/contextstores` sind verschiedene Beispiele installiert.
+>Alle ClientContext-Komponenten sind Erweiterungen der Komponenten „Generischer Store“ oder „Generische Store-Eigenschaften“. Im Ordner `/libs/cq/personalization/components/contextstores` werden verschiedene Beispiele installiert.
 
 #### Konfigurieren der Darstellung im Sidekick {#configuring-the-appearance-in-sidekick}
 
 Beim Bearbeiten von ClientContext werden Kontextspeicherkomponenten im Sidekick angezeigt. Wie bei allen Komponenten bestimmen die Eigenschaften `componentGroup` und `jcr:title` der ClientContext-Komponente Gruppe und Namen der Komponente.
 
-Alle Komponenten mit dem Wert `componentGroup` der Eigenschaft `Client Context` werden standardmäßig im Sidekick angezeigt. Wenn Sie einen anderen Eigenschaftswert für `componentGroup` verwenden, muss die entsprechende Komponente im Designmodus manuell zum Sidekick hinzugefügt werden.
+Alle Komponenten mit dem Eigenschaftswert `componentGroup` `Client Context` werden standardmäßig im Sidekick angezeigt. Wenn Sie einen anderen Eigenschaftswert für `componentGroup` verwenden, muss die entsprechende Komponente im Designmodus manuell zum Sidekick hinzugefügt werden.
 
 #### Instanzen der Kontextspeicherkomponenten {#context-store-component-instances}
 
-Wenn Sie eine Kontextspeicherkomponente zum Client Context hinzufügen, wird unter `/etc/clientcontext/default/content/jcr:content/stores` ein Knoten erstellt, der die Komponenteninstanz darstellt. Dieser Knoten enthält die Eigenschaftswerte, die im Bearbeitungsdialogfeld der Komponente konfiguriert werden.
+Wenn Sie ClientContext eine Kontextspeicherkomponente hinzufügen, wird ein Knoten, der die Komponenteninstanz darstellt, unter `/etc/clientcontext/default/content/jcr:content/stores` erstellt. Dieser Knoten enthält die Eigenschaftswerte, die im Bearbeitungsdialogfeld der Komponente konfiguriert werden.
 
 Bei der Initialisierung von ClientContext werden diese Knoten verarbeitet.
 
@@ -226,7 +225,7 @@ Fügen Sie Ihrer Komponente eine init.js.jsp-Datei hinzu, um JavaScript-Code zu 
 
 Das generierte JavaScript wird der Seite beim Laden sowohl in der Autoren- als auch in der Veröffentlichungsinstanz hinzugefügt, wenn ClientContext initialisiert wird. Dieses JSP wird ausgeführt, bevor die Instanz der Kontextspeicherkomponente geladen und gerendert wird.
 
-Der Code muss den Mime-Typ der Datei auf `text/javascript` setzen, andernfalls wird er nicht ausgeführt.
+Der Code muss den MIME-Typ der Datei auf `text/javascript` setzen oder er wird nicht ausgeführt.
 
 >[!CAUTION]
 >
@@ -295,7 +294,7 @@ Im Client-Bibliotheksordner personalization.ui (/etc/clientlibs/foundation/perso
 </div>
 ```
 
-Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores/profiledata` verwendet diese Struktur, um Daten aus dem Profil-Sitzungsspeicher anzuzeigen. Die Klasse `cq-cc-thumbnail` platziert das Miniaturbild. Die `cq-cc-store-property-level*x*`-Klassen formatieren die alphanumerischen Daten:
+Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores/profiledata` verwendet diese Struktur, um Daten aus dem Profilsitzungsspeicher anzuzeigen. Die Klasse `cq-cc-thumbnail` platziert das Miniaturbild. Die `cq-cc-store-property-level*x*`-Klassen formatieren die alphanumerischen Daten:
 
 * „level0“, „level1“ und „level2“ werden vertikal verteilt und weiß geschrieben.
 * „level3“ und alle weiteren Ebenen werden horizontal verteilt und verwenden weiße Schrift mit dunklerem Hintergrund.
@@ -306,7 +305,7 @@ Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores
 
 Um Speicherdaten mithilfe einer genericstore-Komponente zu rendern, müssen Sie:
 
-* hinzufügen Sie das Tag personalization:storeRendererTag an das JSP-Skript der Komponente, um den Namen des Sitzungsspeichers zu identifizieren.
+* Fügen Sie das Tag personalization:storeRendererTag zum Komponenten-JSP-Skript hinzu, um den Namen des Sitzungsspeichers zu identifizieren.
 * eine Rendering-Methode für die Sitzungsspeicherklasse implementieren.
 
 #### Bestimmen des genericstore-Sitzungsspeichers  {#identifying-the-genericstore-session-store}
@@ -333,7 +332,7 @@ Für Ihren Sitzungsspeicher ist eine Rendering-Methode erforderlich, die immer d
 
 * `@param {String} divId`
 
-   ID des div-Tags, in das der Store gerendert werden muss.
+   ID des div-Elements, in das der Store gerendert werden muss.
 
 ## Interagieren mit Sitzungsspeichern {#interacting-with-session-stores}
 
@@ -341,7 +340,7 @@ Interagieren Sie über JavaScript mit den Sitzungsspeichern.
 
 ### Zugreifen auf Sitzungsspeicher  {#accessing-session-stores}
 
-Rufen Sie ein Sitzungsspeicherobjekt ab, um Daten im Sitzungsspeicher zu lesen oder darauf zu schreiben. [`CQ_Analytics.ClientContextMgr`](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextmgr) bietet basierend auf den Speichernamen Speicherzugriff. Verwenden Sie nach dem Abrufen die Methoden von [`CQ-Analytics.SessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) oder [`CQ-Analytics.PersistedSessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore), um mit Speicherdaten zu interagieren.
+Rufen Sie ein Sitzungsspeicherobjekt ab, um Daten im Sitzungsspeicher zu lesen oder darauf zu schreiben. [`CQ_Analytics.ClientContextMgr`](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextmgr) bietet basierend auf den Speichernamen Speicherzugriff. Verwenden Sie nach dem Abrufen die Methoden [`CQ-Analytics.SessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) oder [`CQ-Analytics.PersistedSessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore), um mit Store-Daten zu interagieren.
 
 Im folgenden Beispiel wird der Speicher `profile` und anschließend die Eigenschaft `formattedName` daraus abgerufen.
 
@@ -360,7 +359,7 @@ function getName(){
 
 Sitzungsspeicher lösen Ereignisse aus. Daher können Sie Listener hinzufügen und basierend auf diesen Ereignissen Reaktionen triggern.
 
-Die Session Stores basieren auf dem `Observable` Muster. Sie erweitern [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable), die die [`addListener`](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)-Methode bereitstellt.
+Die Sitzungsspeicher basieren auf dem Muster `Observable` . Sie erweitern [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) , das die [`addListener`](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)-Methode bereitstellt.
 
 Im folgenden Beispiel wird dem Ereignis `update` ein Listener des Sitzungsspeichers `profile` hinzugefügt.
 
@@ -388,13 +387,13 @@ Sitzungsspeicher sind erst dann verfügbar, wenn sie geladen und mit Daten initi
 * Reaktionszeiten auf XHR-Anfragen
 * Dynamische Änderungen am Sitzungsspeicher
 
-Verwenden Sie die Methoden [`onStoreRegistered`](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) und [`onStoreInitialized`](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) des Objekts, um auf Session Stores nur zuzugreifen, wenn diese verfügbar sind. [`CQ_Analytics.ClientContextUtils`](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) Mit diesen Methoden können Sie Ereignis-Listener hinzufügen, die auf Sitzungsregistrierungen und Initialisierungsereignisse reagieren.
+Verwenden Sie die Methoden [`onStoreRegistered`](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) und [`onStoreInitialized`](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) des Objekts, um nur auf Sitzungsspeicher zuzugreifen, wenn diese verfügbar sind. [`CQ_Analytics.ClientContextUtils`](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) Mit diesen Methoden können Sie Ereignis-Listener hinzufügen, die auf Sitzungsregistrierungen und Initialisierungsereignisse reagieren.
 
 >[!CAUTION]
 >
 >Wenn Sie einen anderen Speicher verwenden, müssen Sie sich auch auf den Fall einrichten, dass der Speicher nie registriert wird.
 
-Im folgenden Beispiel wird das Ereignis `onStoreRegistered` des Sitzungsspeichers `profile` verwendet. Wenn der Speicher registriert ist, wird dem Ereignis `update` des Sitzungsspeichers ein Listener hinzugefügt. Wenn der Store aktualisiert wird, wird der Inhalt des `<div class="welcome">`-Elements auf der Seite mit dem Namen aus dem `profile`-Store aktualisiert.
+Im folgenden Beispiel wird das Ereignis `onStoreRegistered` des Sitzungsspeichers `profile` verwendet. Wenn der Speicher registriert ist, wird dem Ereignis `update` des Sitzungsspeichers ein Listener hinzugefügt. Wenn der Store aktualisiert wird, wird der Inhalt des Elements `<div class="welcome">` auf der Seite mit dem Namen des Stores `profile` aktualisiert.
 
 ```
 //listen for the store registration
@@ -426,7 +425,7 @@ function getName(){
 
 Um zu verhindern, dass eine Eigenschaft eines `PersistedSessionStore` beibehalten wird (d. h. um sie aus dem Cookie `sessionpersistence` auszuschließen), fügen Sie die Eigenschaft der Liste der nicht permanenten Eigenschaften des permanenten Sitzungsspeichers hinzu.
 
-Siehe [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/sites-developing/ccjsapi.md#setnonpersisted-name)
+Weitere Informationen finden Sie unter [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/sites-developing/ccjsapi.md#setnonpersisted-name)
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
@@ -498,14 +497,14 @@ In diesem Beispiel erstellen Sie eine Kontextspeicherkomponente, die Daten aus e
 Erstellen Sie eine CQ-Anwendung und fügen Sie die geoloc-Komponente hinzu.
 
 1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf Erstellen > Ordner erstellen. Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf Erstellen > Ordner erstellen . Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
 1. Erstellen Sie auf ähnliche Weise unter `myapp` einen Ordner mit dem Namen `contextstores`. &quot;
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf Erstellen > Komponente erstellen. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf Erstellen > Komponente erstellen . Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
 
-   * Beschriftung: **geoloc**
+   * Titel: **geoloc**
    * Titel: **Location Store**
    * Super Type: **`cq/personalization/components/contextstores/genericstoreproperties`**
-   * Gruppe: **Client-Kontext**
+   * Gruppe: **ClientContext**
 
 1. Klicken Sie auf jeder Seite im Dialogfeld „Komponente erstellen“ auf „Weiter“ und betätigen Sie die Schaltfläche „OK“, sobald diese aktiviert ist. 
 1. Klicken Sie auf „Alle speichern“.
@@ -514,15 +513,15 @@ Erstellen Sie eine CQ-Anwendung und fügen Sie die geoloc-Komponente hinzu.
 
 Für die Kontextspeicherkomponente ist ein Bearbeitungsdialogfeld erforderlich. Das Dialogfeld zur geoloc-Bearbeitung enthält die statische Meldung, dass keine Eigenschaften zur Konfiguration verfügbar sind.
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` und klicken Sie auf Kopieren.
-1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc` und klicken Sie auf Einfügen.
-1. Löschen Sie alle untergeordneten Knoten unter dem Knoten /apps/myapp/contextstore/geoloc/dialog/items/items/tab1/items:
+1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` und klicken Sie auf &quot;Kopieren&quot;.
+1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc` und klicken Sie auf &quot;Einfügen&quot;.
+1. Löschen Sie alle untergeordneten Knoten unter dem Knoten /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
 
    * store
    * properties
    * thumbnail
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` und klicken Sie auf Erstellen > Knoten erstellen. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „OK“:
+1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` und klicken Sie auf Erstellen > Knoten erstellen . Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „OK“:
 
    * Name: **static**
    * Typ: **cq:Widget**
@@ -532,7 +531,7 @@ Für die Kontextspeicherkomponente ist ein Bearbeitungsdialogfeld erforderlich. 
    | Name | Typ | Wert |
    |---|---|---|
    | cls | Zeichenfolge | x-form-fieldset-description |
-   | text | Zeichenfolge | Die geologische Komponente erfordert keine Konfiguration. |
+   | text | Zeichenfolge | Die geoloc-Komponente erfordert keine Konfiguration. |
    | xtype | Zeichenfolge | static |
 
 1. Klicken Sie auf Alle speichern.
@@ -569,7 +568,7 @@ Fügen Sie der JSP-Datei der geoloc-Komponente den Code hinzu, um die Speicherda
 
 ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Öffnen Sie in CRXDE Lite die Datei `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
+1. Öffnen Sie in CRXDE Lite die Datei `/apps/myapp/contextstores/geoloc/geoloc.jsp` .
 1. Fügen Sie folgenden HTML-Code unterhalb des Stub-Codes ein:
 
    ```xml
@@ -603,7 +602,7 @@ Fügen Sie der JSP-Datei der geoloc-Komponente den Code hinzu, um die Speicherda
 Fügen Sie ClientContext die Standortspeicher-Komponente hinzu, damit diese beim Laden der Seite initialisiert wird.
 
 1. Öffnen Sie die Geometrixx Outdoors-Homepage auf der Autoreninstanz ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Klicken Sie auf Strg-Alt-c (Fenster) oder control-option-c (Mac), um den Client-Kontext zu öffnen.
+1. Klicken Sie auf Strg-Alt-c (Fenster) oder Strg-Wahltaste-c (Mac), um ClientContext zu öffnen.
 1. Klicken Sie oben in ClientContext auf das Symbol zum Bearbeiten, um den ClientContext-Designer zu öffnen.
 
    ![](do-not-localize/chlimage_1-11.png)
@@ -615,7 +614,7 @@ Fügen Sie ClientContext die Standortspeicher-Komponente hinzu, damit diese beim
 Rufen Sie die Geometrixx Outdoors-Homepage im Bearbeitungsmodus auf und öffnen Sie dann ClientContext, um die Daten aus der Standortspeicher-Komponente anzuzeigen.
 
 1. Öffnen Sie die englische Version der Geometrixx Outdoors-Site. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
-1. Um den Client-Kontext zu öffnen, drücken Sie Strg-Alt-c (Fenster) oder Strg-Option-c (Mac).
+1. Um ClientContext zu öffnen, drücken Sie Strg-Alt-c (Windows) oder Strg-Wahltaste-c (Mac).
 
 ## Erstellen eines benutzerdefinierten ClientContext {#creating-a-customized-client-context}
 
@@ -627,7 +626,7 @@ Zum Erstellen eines zweiten ClientContext müssen Sie die Verzweigung dupliziere
 
    `/content`
 
-   enthält den Inhalt des benutzerdefinierten Clientkontexts.
+   enthält den Inhalt des angepassten Client-Kontexts.
 
 * Der -Ordner:
 
@@ -635,7 +634,7 @@ Zum Erstellen eines zweiten ClientContext müssen Sie die Verzweigung dupliziere
 
    ermöglicht Ihnen, verschiedene Konfigurationen für die Kontextspeicher zu definieren.
 
-Bearbeiten Sie die Eigenschaft, um Ihren benutzerdefinierten Clientkontext zu verwenden\
+Um Ihren benutzerdefinierten Client-Kontext zu verwenden, bearbeiten Sie die -Eigenschaft\
 `path`\
-im Designstil der Client-Kontextkomponente, wie in der Seitenvorlage enthalten. Beispiel als Standardspeicherort von:\
+im Designstil der ClientContext-Komponente, wie in der Seitenvorlage enthalten. Beispielsweise als Standardspeicherort von:\
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`
