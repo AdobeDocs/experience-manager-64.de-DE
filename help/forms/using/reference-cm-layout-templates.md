@@ -8,20 +8,19 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
-translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+exl-id: 319db420-3318-4ef7-be2b-1ff2b1c08563
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 91%
 
 ---
 
-
 # Vorlagen für Empfehlungsschreiben {#reference-letter-templates}
 
 In Correspondence Management enthält eine Briefvorlage typische typische Formularfelder, Layoutmerkmale wie Kopf- und Fußzeilen sowie leere „Zielbereiche“ zum Einfügen des Inhalts.
 
-Correspondence Management stellt Briefvorlagen im AEM Forms-Paket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES) bereit. Informationen zum Installieren eines Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer an Ihre Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
+Correspondence Management stellt Briefvorlagen im AEM Forms-Package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES) bereit. Informationen zum Installieren eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer entsprechend Ihren Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
 
 * Klassisch
 * Klassisch einfach
@@ -62,11 +61,11 @@ Enthält Felder, zum Erfassen der Telefonnummer und E-Mail-Adresse. Eine klassis
 
 PDF-Vorschau eines Briefs erstellt mithilfe der klassischen einfachen Vorlage
 
-## Symmetrisch links {#balanced-left}
+## Symmetrisch links  {#balanced-left}
 
 Die Symmetrisch links-Vorlage beinhaltet das Logo links neben dem Brief.
 
-![ausgeglichene Linke](assets/balancedleft.png)
+![balancedleft](assets/balancedleft.png)
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Symmetrisch links-Vorlage
 
@@ -101,4 +100,3 @@ Die Vorlage „Sichtbar oben - klassisch“ hat eine Kopfzeile oben auf der Seit
 ![visualtopclassic](assets/visualtopclassic.png)
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Vorlage „Sichtbar oben - klassisch“
-
