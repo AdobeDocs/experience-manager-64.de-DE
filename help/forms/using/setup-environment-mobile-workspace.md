@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 5c60d1a6-a4a2-4131-81e6-e39a5ab07dcf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 66%
 
 ---
 
-
-# Einrichten einer Umgebung für die AEM Forms-App {#set-up-environment-for-aem-forms-app}
+# Einrichten einer Umgebung für die AEM Forms-App  {#set-up-environment-for-aem-forms-app}
 
 Sie benötigen folgende Hardware, Software und Lizenzen, um die AEM Forms-App erstellen und bereitstellen zu können:
 
@@ -39,9 +38,9 @@ Sie benötigen folgende Hardware, Software und Lizenzen, um die AEM Forms-App er
 
 ## Für Android-Geräte  {#for-android-devices}
 
-* Android Development Toolkit (ADT bundle), das von [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html) heruntergeladen werden kann
+* Android Development Toolkit (ADT bundle), das heruntergeladen werden kann von [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Wenn diese Umgebung auf einem MAC-System eingerichtet wird, sollte die ADT im Anwendungsordner installiert werden.
-* Wenn ADT an einem anderen Speicherort auf einem MAC installiert ist oder die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in der Datei `local.properties` aktualisiert werden, die im Ordner `src\android` im extrahierten Quellarchiv `mobileworkspace-src.zip` verfügbar ist. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
+* Wenn die ADT an einem anderen Speicherort auf dem MAC installiert ist oder die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in der Datei `local.properties` aktualisiert werden, die im Ordner `src\android` im extrahierten Quellarchiv `mobileworkspace-src.zip` verfügbar ist. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
 
 >[!NOTE]
 >
