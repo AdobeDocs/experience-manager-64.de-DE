@@ -1,22 +1,21 @@
 ---
 title: Integration mit Adobe Sign | Umgang mit Benutzerdaten
 seo-title: Integration mit Adobe Sign | Umgang mit Benutzerdaten
-description: AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. Näheres zu Benutzerdaten, Datenspeichern und dem Zugriff auf und Löschen von Benutzerdaten.
-seo-description: AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. Näheres zu Benutzerdaten, Datenspeichern und dem Zugriff auf und Löschen von Benutzerdaten.
+description: AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. Detailliertere Informationen zu Benutzerdaten und Datenspeichern sowie zum Zugriff auf und Löschen von Benutzerdaten.
+seo-description: AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. Detailliertere Informationen zu Benutzerdaten und Datenspeichern sowie zum Zugriff auf und Löschen von Benutzerdaten.
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Adobe Sign
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 84%
 
 ---
-
 
 # Integration mit Adobe Sign | Umgang mit Benutzerdaten {#integration-with-adobe-sign-handling-user-data}
 
@@ -24,13 +23,13 @@ AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adap
 
 Wenn ein Unterzeichner oder mehrere Unterzeichner ein adaptives Formular signieren und übermitteln, wird eine Adobe Sign-Vereinbarung generiert, die Informationen zu den Unterzeichnern enthält.
 
-Weitere Informationen zur AEM Forms-Integration mit Adobe Sign finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
+Weitere Informationen zur Integration von AEM Forms mit Adobe Sign finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
 
 ## Benutzerdaten und Datenspeicher {#data}
 
 Das für Adobe Sign aktiviertes adaptives Formular enthält Informationen zu den Unterzeichnern und kann andere Benutzerdaten enthalten, die vom adaptiven Formular erfasst wurden. Der Adobe Sign-Dienst speichert Benutzerdaten mit der Signatur innerhalb der Vereinbarung. Die Vereinbarung wird auf dem Adobe Sign-Server gespeichert, der in den Cloud-Diensten von AEM Forms konfiguriert ist. Wenn das adaptive Formular für die Sendeaktion konfiguriert ist, werden die Vertragsdaten außerdem zusammen mit den Formulardaten im Datenspeicher des Forms-Portals gespeichert.
 
-## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
+## Zugreifen auf und Löschen von Benutzerdaten  {#access-and-delete-user-data}
 
 Benutzerdaten werden innerhalb der Vereinbarung gesammelt, aber nicht in einer der Servicetabellen gespeichert. Mit Adobe Sign können Administratoren ihre eigenen Entscheidungen bei der Verwaltung von Daten treffen, die sie im Dienst steuern. Datenschutzadministratoren im Adobe Sign-Dienst können Vereinbarungen basierend auf der E-Mail-Adresse eines Anforderers auflisten oder entfernen.
 
