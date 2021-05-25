@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b63758f1-b375-4c05-bd53-69e0346733c6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 96%
 
 ---
-
 
 # Unterstützung der Picture-Klausel für HTML5-Formulare {#picture-clause-support-for-html-forms}
 
@@ -28,7 +27,7 @@ HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und form
 
 >[!NOTE]
 >
->Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Symbole der DateTime- und Time-Picture-Klausel nicht unterstützt.
+>Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Symbole der Datums- und Uhrzeit-Picture-Klausel nicht unterstützt.
 
 ## Unterstützte Datumsfeldsymbole {#supported-date-field-symbols}
 
@@ -94,7 +93,7 @@ Unterstützter Ausdruck für Datums-Picture-Klausel:
  </tbody>
 </table>
 
-## Numerische Picture-Klausel {#numeric-picture-clause}
+## Numerische Picture-Klausel  {#numeric-picture-clause}
 
 HTML5-Formulare unterstützen numerische Picture-Symbole. Bei dieser Unterstützung besteht allerdings ein Unterschied zwischen PDF-Formularen und HTML-Formularen.
 
@@ -108,7 +107,7 @@ Die Zahl **10000** wird sowohl in HTML- als auch in PDF-Formularen als **10.000*
 
 Die Zahl 1000000 wird in PDF-Formularen als 1.000.000 formatiert. In HTML-Formularen bleibt diese Zahl jedoch unformatiert im Format 1000000.
 
-Unterstützte Ausdruck für die Numeric Picture-Klausel in **HTML Forms** sind:
+Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML Forms** sind:
 
 * num.integer{}
 * num.decimal{}
@@ -120,7 +119,7 @@ Unterstützte Ausdruck für die Numeric Picture-Klausel in **HTML Forms** sind:
  <tbody>
   <tr>
    <th><strong>Symbol</strong></th> 
-   <th><strong>Dolmetschen</strong></th> 
+   <th><strong>Interpretation</strong></th> 
    <th>Eingabeanalyse</th> 
   </tr>
   <tr>
@@ -214,4 +213,3 @@ HTML5-Formulare unterstützen die folgenden Text-Picture-Klausel-Ausdrücke:
 | O | Einzelnes alphanumerisches Zeichen. |
 | 0 (Null) | Einzelnes alphanumerisches Zeichen. |
 | 9 | Einzelne Ziffer. |
-
