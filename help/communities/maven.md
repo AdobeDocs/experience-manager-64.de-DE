@@ -9,36 +9,35 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
-translation-type: tm+mt
-source-git-commit: 5affffac6f953bcf1d436d8492ad6dd2a041b3b4
+exl-id: d86411b9-6ed1-4091-bf5c-d46b4e518da4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
 
 ---
 
-
-# Verwenden von Maven for Communities {#using-maven-for-communities}
+# Verwenden von Maven für Communities {#using-maven-for-communities}
 
 ## Überblick {#overview}
 
-Dieser Abschnitt der AEM Communities-Dokumentation ergänzt:
+Dieser Abschnitt der AEM Communities-Dokumentation umfasst zusätzlich:
 
-* [Erstellen AEM Projekte mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Erstellen AEM Projekts mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Es gibt nur ein &quot;Uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
+Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 
-* AEM [Uber-API-JAR](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->Ab AEM 6.4 werden die Communities APIs nicht explizit veröffentlicht. Alle Communities APIs sind jetzt in der Uber-JAR selbst enthalten.
+>Ab AEM 6.4 werden die Communities-APIs nicht explizit veröffentlicht. Alle Communities-APIs sind jetzt in der UberJar selbst enthalten.
 >
 >Es wird empfohlen, mit der neuesten Version von Communities auf dem Laufenden zu bleiben.
 >
->Die neueste Version finden Sie im Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases).
+>Siehe Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) , um die neueste Version zu ermitteln.
 
-## Beispiel für eine bestimmte Abhängigkeit {#maven-dependency-example}
+## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -51,7 +50,7 @@ Es gibt nur ein &quot;Uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 
 >[!NOTE]
 >
->Siehe [AEM Uber-JAR-Repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar), um das neueste Uber-JAR-Artefakt zu identifizieren.
+>Siehe [AEM UberJar-Repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar), um das neueste UberJar-Artefakt zu identifizieren.
 
 <!--
 # Using Maven for Communities {#using-maven-for-communities}
