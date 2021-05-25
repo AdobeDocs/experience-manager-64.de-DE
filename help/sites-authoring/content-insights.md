@@ -1,22 +1,21 @@
 ---
 title: Inhaltseinblick
 seo-title: 'Inhaltseinblick '
-description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen
-seo-description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen
+description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen.
+seo-description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen.
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 54ec1b84-bee2-4c1f-acbc-8e6bd0d76c87
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 89%
 
 ---
-
 
 # Inhaltseinblick {#content-insight}
 
@@ -51,7 +50,7 @@ Weitere Informationen finden Sie unter [Ändern des Berichtszeitraums](/help/sit
 
 >[!NOTE]
 >
->Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration in SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration in Adobe Target](/help/sites-administering/target.md) und [Integration in BrightEdge](/help/sites-administering/brightedge.md).
+>Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration in SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration in Adobe Target](/help/sites-administering/target.md) und [Integration mit BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Der Ansichtsbericht {#the-views-report}
 
@@ -99,4 +98,3 @@ Der SEO-Empfehlungsbericht enthält die Ergebnisse der BrightEdge-Analyse für d
 Mit dem Bericht können Sie Aufgaben erstellen, die zu einer Verbesserung der Auffindbarkeit der Seite führen. Empfehlungen weisen darauf hin, dass Aufgaben zur Implementierung der Empfehlung erstellt wurden. Weitere Informationen finden Sie unter [Zuweisen von Aufgaben für SEO-Empfehlungen](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-
