@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
 source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
 source-wordcount: '310'
@@ -30,9 +29,9 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md) 
-* [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md) 
-* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
+* [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
+* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
 
 Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
@@ -55,7 +54,7 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
   <tr>
    <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best Practices für Dynamic Imaging </a></td> 
-   <td><p>Beschreibt, wie Sie ein Bild scharfzeichnen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität optimieren können, wenn Sie die Dynamic Media-Funktionalität verwenden oder mit Dynamic Media integrieren. </p> </td> 
+   <td><p>Beschreibt, wie Sie ein Bild schärfen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität am besten optimieren können, wenn Sie die Dynamic Media-Funktion verwenden oder mit Dynamic Media integrieren. </p> </td> 
   </tr>
   <tr>
    <td>Mehrsprachige Assets</td> 
@@ -69,10 +68,10 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
 
 Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
 
-Authoring: [Author-Umgebung und -Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Bietet eine Übersicht zum Erstellen von Seiten.
+Authoring: [Autorenumgebung und Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Bietet einen Überblick über das Erstellen von Seiten.
 
 ## Formulare {#forms}
 
-Adaptive Formulare: [Bewährte Verfahren für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt bewährte Verfahren zum Einrichten, Erstellen und Anpassen adaptiver Formulare.
+Adaptive Formulare: [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt Best Practices für die Einrichtung, Bearbeitung und Anpassung adaptiver Formulare.
 
-HTML5-Formulare: [Bewährte Verfahren zum Entwerfen von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) - Beschreibt bewährte Verfahren für die Arbeit am Layout und Design von HTML5-Formularen.
+HTML5-Formulare: [Best Practices zum Entwerfen von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) - Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen.
