@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8469b063-ea22-4706-ad02-1477d5f9d6c5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 95%
 
 ---
-
 
 # Wiederherstellen der AEM Forms-Daten {#recovering-the-aem-forms-data}
 
@@ -50,7 +49,7 @@ Beim Wiederherstellen aus einer Sicherung auf ein neues System können die folge
 
 Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, die verbliebenen Clusterknoten aber ordnungsgemäß weiter funktionieren, führen Sie das Wiederherstellungsverfahren für einen einzelnen Clusterknoten durch.
 
-## Wiederherstellen der AEM Forms-Daten {#recover-the-aem-forms-data}
+## Wiederherstellen der AEM Forms-Daten  {#recover-the-aem-forms-data}
 
 1. Beenden Sie die AEM Forms-Dienste und den Anwendungsserver, falls er ausgeführt wird.
 1. Erstellen Sie bei Bedarf das physische System aus einem Systemabbild neu. Dieses Schritt ist ggf. nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbankserver ist.
@@ -109,11 +108,11 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
       Für die Wiederherstellung in einer Clusterumgebung finden Sie weitere Informationen unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Löschen Sie alle temporären AEM Forms-Dateien, die im Ordner „java.io.temp“ oder im temporären Adobe-Ordner erstellt wurden.
-1. Beginn AEM Formulare (siehe [Dienste starten und beenden](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Starten Sie AEM Formulare (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern {#changing-the-gds-location-during-recovery}
 
-Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Das Skript akzeptiert zwei Parameter: `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
+Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` . Das Skript akzeptiert zwei Parameter: `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
 
 >[!NOTE]
 >
@@ -134,4 +133,3 @@ Fahren Sie zum Ändern des Speicherortes des globalen Dokumentenspeichers den ge
 >[!NOTE]
 >
 >Wenn der vollständige Abschluss des Starts eines einzelnen Knotens vor dem Starten anderer Knoten nicht sichergestellt werden kann, müssen Sie das Skript LCSetGDS auf allen Knoten im Cluster ausführen, bevor Sie den Cluster starten.
-
