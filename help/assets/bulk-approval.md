@@ -2,16 +2,15 @@
 title: Überprüfen von Ordner-Assets und Sammlungen
 description: Richten Sie Prüfungsworkflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
-feature: Collaboration, Collections
+feature: Zusammenarbeit, Sammlungen
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 98%
 
 ---
-
 
 # Überprüfen von Ordner-Assets und Sammlungen {#review-folder-assets-and-collections}
 
@@ -25,7 +24,7 @@ Wenn Sie die Assets freigeben, können Prüfer sie genehmigen oder ablehnen. Ben
 
 Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehnt), erhalten Sie eine Benachrichtigung über den Abschluss der Prüfung.
 
-## Erstellen einer Review-Aufgabe für Ordner {#creating-a-review-task-for-folders}
+## Erstellen einer Prüfungsaufgabe für Ordner {#creating-a-review-task-for-folders}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, für den Sie eine Prüfungsaufgabe erstellen möchten.
 1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Prüfungsaufgabe erstellen]**, um die Seite **[!UICONTROL Prüfungsaufgabe]** zu öffnen. Wenn Sie das Symbol in der Symbolleiste nicht sehen können, tippen/klicken Sie auf **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
@@ -73,7 +72,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 
    ![Listenansicht des Prüfungsstatus](assets/review_status_listview.png)
 
-## Erstellen einer Review-Aufgabe für Sammlungen {#creating-a-review-task-for-collections}
+## Erstellen einer Prüfungsaufgabe für Sammlungen {#creating-a-review-task-for-collections}
 
 1. Wählen Sie auf der Seite „Sammlungen“ die Sammlung aus, für die Sie eine Prüfungsaufgabe erstellen möchten.
 1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Prüfungsaufgabe erstellen]**, um die Seite **[!UICONTROL Prüfungsaufgabe]** zu öffnen. Wenn Sie das Symbol in der Symbolleiste nicht sehen können, tippen/klicken Sie auf **[!UICONTROL Mehr]** und wählen Sie dann das Symbol aus.
