@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
-translation-type: tm+mt
-source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+exl-id: 3c9d856e-4f94-4295-9f30-d675110016b7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 14%
 
 ---
-
 
 # Erste Schritte mit AEM Mobile{#getting-started-with-aem-mobile}
 
@@ -26,11 +25,11 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->Bestehende AEM Mobile-Apps-Kunden, die von AEM 6.2 oder 6.3 auf AEM 6.4 migrieren, können weiterhin AEM Mobile-Apps verwenden, indem sie ein [Paket von PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package) herunterladen. Neue Installationen von AEM 6.4 unterstützen jedoch keine AEM Mobile Apps-Funktionen.
+>Bestandskunden von AEM Mobile Apps, die von AEM 6.2 oder 6.3 auf AEM 6.4 migrieren, können weiterhin AEM Mobile-Apps verwenden, indem sie ein [Paket von PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package) herunterladen. Neue Installationen von AEM 6.4 unterstützen jedoch nicht die Funktionalität von AEM Mobile Apps.
 
-Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Adobe Experience Manager-Plattform für mehrere Kanal, die auch AEM Assets, Sites, Bildschirme, Arbeitsabläufe, User Manager, Commerce und Forms nutzt. AEM Mobile Angebots bietet eine bemerkenswerte Flexibilität bei der Bereitstellung, sodass Unternehmen eine Vielzahl von Inhaltsquellen nutzen können.
+Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Adobe Experience Manager-Multichannel-Plattform, die auch AEM Assets, Sites, Screens, Workflow, User Manager, Commerce und Forms nutzt. AEM Mobile bietet eine bemerkenswerte Flexibilität bei der Implementierung und ermöglicht es Unternehmen, eine Vielzahl von Inhaltsquellen zu verwenden.
 
-AEM Mobile Angebots bietet mehrere Methoden zum Erstellen von Apps. Sie haben drei verschiedene Möglichkeiten, Apps zu erstellen:
+AEM Mobile bietet mehrere Methoden zum Erstellen von Apps. Sie können Apps auf drei verschiedene Arten erstellen:
 
 * **[Verwenden von On-Demand-Diensten mit AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
 * **[Verwenden von On-Demand-Diensten ohne AEM](https://helpx.adobe.com/digital-publishing-solution/topics.html)**
@@ -38,4 +37,4 @@ AEM Mobile Angebots bietet mehrere Methoden zum Erstellen von Apps. Sie haben dr
 
 >[!NOTE]
 >
->Wenn Sie neu bei Adobe Experience Manager sind, sollten Sie [Erste Schritte mit AEM](/help/sites-deploying/deploy.md) durchführen.
+>Wenn Sie neu bei Adobe Experience Manager sind, können Sie [Erste Schritte mit AEM](/help/sites-deploying/deploy.md) durchgehen.
