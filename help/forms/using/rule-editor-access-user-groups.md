@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 5e2960f2-b172-48a7-bba3-4561a5f9c7bc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 74%
 
 ---
-
 
 # Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren {#grant-rule-editor-access-to-select-user-groups}
 
@@ -29,11 +28,11 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 ## Benutzergruppen für Zugriff auf Regel-Editor angeben {#specify-user-groups-that-can-access-rule-editor}
 
 1. Melden Sie sich bei AEM Forms als Administrator an.
-1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Vorgänge > Web-Konsole. Die Web-Konsole wird in einem neuen Fenster geöffnet.
+1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![Hammer](assets/hammer.png) > Vorgänge > Web-Konsole. Die Web-Konsole wird in einem neuen Fenster geöffnet.
 
    ![1](assets/1.png)
 
-1. Suchen Sie im Fenster Web-Konsole nach **[!UICONTROL Adaptives Formular und Interaktive Kommunikation Web Kanal Configuration]** und klicken Sie darauf. **[!UICONTROL Das]** Dialogfeld &quot;Konfiguration des adaptiven Formulars und der interaktiven Kommunikation im Web Kanal&quot;wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Suchen Sie im Web Console-Fenster **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** und klicken Sie darauf. **[!UICONTROL Das Dialogfeld Webkanal-]** Konfiguration für adaptives Formular und interaktive Kommunikation wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **[!UICONTROL Speichern]**.
 
    Die Datei „/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config“ im CRX-Repository wird erstellt.
 
@@ -48,15 +47,14 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 
    ![create-user](assets/create-user.png)
 
-   Wenn nun ein Benutzer, der nicht zur angegebenen Benutzergruppe (hier RuleEditorsUserGroup) gehört) auf ein Feld tippt, steht ihm das Symbol Regel bearbeiten ( ![edit-rules1](assets/edit-rules1.png)) in der Komponenten-Symbolleiste nicht zur Verfügung:
+   Wenn nun ein Benutzer, der nicht zur angegebenen Benutzergruppe (hier RuleEditorsUserGroup) gehört, auf ein Feld tippt, ist das Symbol &quot;Regel bearbeiten&quot;( ![edit-rules1](assets/edit-rules1.png)) nicht für ihn in der Komponenten-Symbolleiste verfügbar:
 
-   ![componentStuolbarwither](assets/componentstoolbarwithre.png)
+   ![componentstoolbarwith](assets/componentstoolbarwithre.png)
 
    Komponentensymbolleiste für Benutzer mit Zugriff auf Regel-Editor
 
-   ![componentStuolbarwithouter](assets/componentstoolbarwithoutre.png)
+   ![componentstoolbarwithouver](assets/componentstoolbarwithoutre.png)
 
    Komponentensymbolleiste für Benutzer ohne Zugriff auf Regel-Editor
 
    Anweisungen zum Hinzufügen von Benutzern zu Gruppen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
-
