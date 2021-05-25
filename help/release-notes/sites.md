@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 80%
 
 ---
-
 
 # Versionshinweise zu AEM Sites {#aem-sites-release-notes}
 
@@ -24,7 +23,7 @@ ht-degree: 80%
 
 Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt:
 
-### Site-Administration {#site-administration}
+### Site-Administration  {#site-administration}
 
 * Neue Inhaltsstrukturleiste zur schnellen Navigation in Site-Hierarchien. In Verbindung mit der Listenansicht steht damit wieder das Interaktionsmodell der klassischen Benutzeroberfläche zum Durchsuchen einer Site zur Verfügung.
 * Verbesserte Funktion zum Scrollen in der Karten- und Listenansicht großer Ordner.
@@ -60,14 +59,14 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 >
 >AEM enthält Version 1.12.4 der jQuery-Bibliothek, um eine maximale Kompatibilität mit vorhandenem benutzerdefiniertem Code zu gewährleisten. Adobe hat Änderungen vorgenommen, um bekannte Sicherheitsprobleme zu beheben.
 
-### Inhaltsfragmente und Editor  {#content-fragments-amp-editor}
+### Inhaltsfragmente und Editor {#content-fragments-amp-editor}
 
 * Strukturierte Inhaltsmodelle als Grundlage für Inhaltsfragmente eingeführt
 
    * Modell-Editor-Benutzeroberfläche
    * Vorkonfigurierte Datenelemente für Inhaltsfragmentmodelle (einzeiliger Text, mehrzeiliger Text, Zahl, boolesch, Datum und Uhrzeit, Aufzählung, Inhaltsreferenz, Tags)
 
-* Verbesserte Benutzerfreundlichkeit des Editors AEM Inhaltsfragment
+* Verbesserte Benutzerfreundlichkeit des AEM Inhaltsfragment-Editors
 
    * Übersicht zum Anzeigen aller Elemente
    * Bearbeiten im Vollbildmodus für einzelne Elemente
@@ -82,14 +81,14 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 
 * Erlebnisfragment-Bausteine eingeführt, um die Wiederverwendung von Inhalten zwischen den Varianten von Erlebnisfragmenten zu vereinfachen, indem Komponenten gruppiert und einfache Verweise innerhalb von Varianten ermöglicht werden.
 * Möglichkeit zum Hinzufügen von Erlebnisfragmenten zu Übersetzungsprojekten über die Verweisleiste hinzugefügt.
-* Die Möglichkeit zum Beginn von Workflows mit Erlebnisfragmenten über die Zeitschienenleiste wurde hinzugefügt
-* Die Referenzleiste zeigt jetzt, wo ein Erlebnisfragment in AEM verwendet wird
-* Die Konfiguration von Vorlagenspeicherorten ermöglicht es Autoren jetzt, auf globaler Ebene oder auf Ordnerebene zu definieren, welche Erlebnisfragment-Vorlagen verwendet werden dürfen
+* Es wurde die Möglichkeit hinzugefügt, Workflows mit Experience Fragments über die Timeline-Leiste zu starten.
+* Die Referenzleiste zeigt jetzt an, wo ein Experience Fragment in AEM verwendet wird
+* Die Konfiguration von Vorlagenspeicherorten ermöglicht es Autoren jetzt, auf globaler oder Ordnerebene zu definieren, welche Experience Fragment-Vorlagen verwendet werden dürfen
 * Die Facettensuche unterstützt nun erweiterte Filterfunktionen, beispielsweise für veröffentlichte/nicht veröffentlichte oder in soziale Netzwerke und Adobe Target exportierte Elemente.
 * Einmalige Anmeldung für soziale Netzwerke hinzugefügt, wenn Erlebnisfragmente nach Pinterest oder Facebook exportiert werden.
 * AEM-Erlebnisfragmente mit Adobe Target integriert. Durch das Synchronisieren von Erlebnisfragmenten mit Target werden Angebote in Adobe Target erstellt, die mit dem Visual Experience Composer von Target verwendet werden können, um sie in jedes für Target aktivierte Erlebnis zu integrieren.
 
-### Übersetzung  {#translation}
+### Übersetzung {#translation}
 
 * Verbesserte Benutzerfreundlichkeit von AEM-Übersetzungsprojekten:
 
@@ -101,7 +100,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Umgekehrte Translation-Memory-Aktualisierung eingeführt, um Translation Memorys in Übersetzungsmanagementsystemen von Drittanbietern nach der Bearbeitung von lokalen Inhalten in AEM zu aktualisieren.
 * Übersetzungs-Workflows unterstützen gruppierte Sprachstämme.
 * Möglichkeit hinzugefügt, Sprachstämmen beliebige Namen zuzuweisen und die Eigenschaft „jcr“ für die Zuordnung zum ISO-Code zu verwenden.
-* Updates für intelligente Übersetzungen erkennen jetzt neue Seiten, die zu einer Übergeordnet-Verzweigung hinzugefügt wurden.
+* Aktualisierungen der intelligenten Übersetzung erkennen jetzt neue Seiten, die zu einem Übergeordneten Zweig der Sprache hinzugefügt wurden.
 * Übersetzungsstatusberichte in der Sites-Admin-Listenansicht eingeführt.
 
 ### Verwaltung mehrerer Websites  {#multi-site-management-msm}
@@ -112,23 +111,23 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 
 * Verbesserte Leistung von Launches, die eine große Site-Struktur enthalten sowie wenn viele Launches aktiv sind
 * Verbesserte automatische Promotion und Veröffentlichung von Launches mit mehreren Stammseiten
-* Es wurde ein Fehler behoben, der verhinderte, dass die Vorschau des reaktionsfähigen Geräts mit Seiten funktionierte, die im Kontext eines Starts bearbeitet wurden.
+* Fehlerkorrektur - Die responsive Gerätevorschau funktioniert jetzt mit Seiten, die im Kontext eines Launches bearbeitet werden.
 
 ### Content-Targeting und Simulation {#content-targeting-simulation}
 
-* Unterstützungsordner zum Organisieren von Segmenten je nach Site/Kontext (CQ-94620)
+* Unterstützung von Ordnern zum Organisieren von Segmenten basierend auf Site/Kontext (CQ-94620)
 * Der standardmäßige Speicherort für Segmente wurde in „/conf“ verschoben, um standort- bzw. kontextspezifische Segmentlisten zu erhalten.
 
 ### AEM und Adobe Target   {#aem-amp-adobe-target-nbsp}
 
 * AEM-Erlebnisfragmente mit Adobe Target integriert. Durch das Synchronisieren von Erlebnisfragmenten mit Target werden Angebote in Adobe Target erstellt, die mit dem Visual Experience Composer von Target verwendet werden können, um sie in jedes für Target aktivierte Erlebnis zu integrieren.
-* Adobe Target mbox.js Version 63 ist jetzt enthalten. Adobe empfiehlt, die Implementierung auf „at.js“ umzustellen.
-* „at.js“ Version 1.2.2 ist nun integriert. Adobe empfiehlt, entweder das dynamische Tag-Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) zu verwenden, um at.js für die Site bereitzustellen.
+* Adobe Target mbox.js , Version 63 ist jetzt enthalten. Adobe empfiehlt, die Implementierung auf „at.js“ umzustellen.
+* „at.js“ Version 1.2.2 ist nun integriert. Adobe empfiehlt, entweder Dynamic Tag Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) zu verwenden, um at.js für die Site bereitzustellen.
 
 ### AEM und Adobe Analytics {#aem-amp-adobe-analytics}
 
-* s_code.js H.27.5 jetzt enthalten. Adobe empfiehlt den Umstieg auf AppMeasurement.js
-* AppMeasurement.js 1.8.0 ist jetzt enthalten. Adobe empfiehlt, entweder das dynamische Tag-Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) zu verwenden, um AppMeasurement.js auf der Site bereitzustellen.
+* s_code.js H.27.5 ist jetzt enthalten. Adobe empfiehlt, die Implementierung auf AppMeasurement.js umzustellen
+* AppMeasurement.js 1.8.0 ist jetzt enthalten. Adobe empfiehlt, entweder das Dynamic Tag Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) zu verwenden, um AppMeasurement.js auf der Site bereitzustellen.
 
 ## Communities-Add-on {#communities-add-on}
 
