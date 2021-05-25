@@ -2,24 +2,23 @@
 title: Massenimport und -export von Metadaten
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Batches importieren und exportieren können.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 77%
 
 ---
 
-
-# Massenmetadaten importieren und exportieren {#bulk-metadata-import-and-export}
+# Massenimport und -export von Metadaten {#bulk-metadata-import-and-export}
 
 Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-## Importieren von Metadaten  {#import-metadata}
+## Importieren von Metadaten   {#import-metadata}
 
-Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während der schlanken Servernutzung, um Leistungseinbußen für andere Benutzer zu vermeiden.
+Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während der schlanken Server-Nutzung, um Auswirkungen auf die Leistung anderer Benutzer zu vermeiden.
 
 >[!NOTE]
 >
@@ -29,15 +28,15 @@ Gehen Sie wie folgt vor, um Metadaten stapelweise zu importieren:
 
 1. Navigieren Sie zur Benutzeroberfläche „Assets“ und tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
-1. Tippen Sie auf der Seite **[!UICONTROL Metadatenimport]** auf **[!UICONTROL Datei]** auswählen/klicken.  Wählen Sie die CSV-Datei mit den Metadaten aus.
+1. Tippen/klicken Sie auf der Seite **[!UICONTROL Metadatenimport]** auf **[!UICONTROL Datei]** auswählen.  Wählen Sie die CSV-Datei mit den Metadaten aus.
 1. Stellen Sie sicher, dass die CSV-Datei die folgenden Parameter enthält:
 
    | Metadaten-Importparameter | Beschreibung |
    |:---|:---|
    | [!UICONTROL Batch-Größe] | Anzahl der Assets in einem Batch, für die Metadaten importiert werden sollen. Der Standardwert ist 50. Der Wert darf maximal 100 betragen. |
    | [!UICONTROL Feldtrennzeichen] | Der Standardwert ist `,` - ein Komma. Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
-   | [!UICONTROL Mehrfachtrennzeichen] | Trennzeichen für Metadatenwerte. Der Standardwert ist `|` - ein Rohr. |
-   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Bei Festlegung auf &quot;true&quot;sind die standardmäßigen Launcher-Einstellungen für `DAM Metadata WriteBack Workflow` (das Metadaten in die binären XMP schreibt) in Kraft. Die Aktivierung der Workflows hat Auswirkungen auf die Leistung des Systems. |
+   | [!UICONTROL Mehrfachtrennzeichen] | Trennzeichen für Metadatenwerte. Der Standardwert ist `|` - ein senkrechter Strich. |
+   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Wenn auf &quot;true&quot;gesetzt, sind die standardmäßigen Launcher-Einstellungen für `DAM Metadata WriteBack Workflow` aktiv (die Metadaten in die binären XMP-Daten schreiben). Die Aktivierung von Start-Workflows hat Auswirkungen auf die Leistung des Systems. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
@@ -68,7 +67,7 @@ Gehen Sie wie folgt vor, um Metadaten mehrerer Assets stapelweise zu exportieren
    ![export_metadata_page](assets/export_metadata_page.png)
 
 1. Wählen Sie die gewünschten Optionen aus. Geben Sie einen Dateinamen und ggf. ein Datum an.
-1. Geben Sie unter **[!UICONTROL Zu exportierende Eigenschaften]** an, ob Sie alle oder bestimmte Eigenschaften exportieren möchten. Wenn Sie die zu exportierenden **[!UICONTROL Selektive]**-Eigenschaften auswählen, fügen Sie die gewünschten Eigenschaften hinzu.
+1. Geben Sie unter **[!UICONTROL Zu exportierende Eigenschaften]** an, ob Sie alle oder nur bestimmte Eigenschaften exportieren möchten. Wenn Sie die Eigenschaften auswählen, die exportiert werden sollen, fügen Sie die gewünschten Eigenschaften hinzu.****
 
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Exportieren]**. Sie erhalten eine Meldung, die bestätigt, dass die Metadaten exportiert wurden. Schließen Sie die Meldung.
 
