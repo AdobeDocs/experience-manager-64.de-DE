@@ -2,16 +2,15 @@
 title: Anpassen und Erweitern von Assets
 description: Informieren Sie sich, wie Sie die Asset-Freigabe und den Asset-Editor anpassen und erweitern können, um Benutzern eine maßgeschneiderte Oberfläche und passende Funktionen zur Verfügung zu stellen.
 contentOwner: AG
-feature: Developer Tools
+feature: Entwickler-Tools
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 100%
 
 ---
-
 
 # Anpassen und Erweitern von Assets {#customizing-and-extending-assets}
 
@@ -26,7 +25,7 @@ Die folgenden Funktionen können angepasst bzw. verbessert werden:
 * [Verarbeitung von Assets mithilfe von Medien-Handlern und Workflows](media-handlers.md)
 * [Integrieren von Assets in den Aktivitäts-Stream](extending-activity-stream.md)
 * [Entwicklung von Asset-Proxys](proxy.md)
-* [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md) 
+* [Best Practices für das Konfigurieren von ImageMagick](best-practices-for-imagemagick.md)
 
 ## Anpassen des Erscheinungsbilds {#customizing-the-look-and-feel}
 
