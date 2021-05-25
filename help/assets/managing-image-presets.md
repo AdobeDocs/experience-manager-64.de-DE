@@ -1,15 +1,14 @@
 ---
 title: Verwalten von Dynamic Media-Bildvorgaben
-description: Verstehen Sie Dynamic Media-Bildvorgaben und lernen Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten.
+description: Grundlegendes zu Dynamic Media-Bildvorgaben und Erfahren Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
-feature: Image Presets
+feature: Bildvorgaben
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '3839'
@@ -31,11 +30,11 @@ In diesem Abschnitt wird beschrieben, wie Bildvorgaben erstellt, geändert und a
 >
 >Die intelligente Bildbearbeitung arbeitet mit bestehenden Bildvorgaben und reduziert im letzten Moment abhängig vom Browser oder der Geschwindigkeit der Netzverbindung die Größe der Bilddatei intelligent noch weiter. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](imaging-faq.md).
 
-## Die Dynamic Media-Bildvorgaben {#understanding-image-presets}
+## Grundlegendes zu Dynamic Media-Bildvorgaben {#understanding-image-presets}
 
-Wie bei einem Softwaremakro ist eine Bildvorgabe eine vordefinierte Sammlung von Größen- und Formatierungsbefehlen, die unter einem Namen gespeichert werden. Stellen Sie sich folgendes Szenario vor, um ein besseres Verständnis von Bildvorgaben zu erlangen: Für Ihre Website muss jedes Produktbild in unterschiedlichen Größen, Formaten und Kompressionsraten auf Desktop- und Mobilgeräten angezeigt werden.
+Wie ein Softwaremakro ist eine Bildvorgabe eine vordefinierte Sammlung von Größenangaben und Formatierungsbefehlen, die unter einem Namen gespeichert wird. Stellen Sie sich folgendes Szenario vor, um ein besseres Verständnis von Bildvorgaben zu erlangen: Für Ihre Website muss jedes Produktbild in unterschiedlichen Größen, Formaten und Kompressionsraten auf Desktop- und Mobilgeräten angezeigt werden.
 
-Sie können zwei Bildvorgaben erstellen: eine mit 500 x 500 Pixel für die Desktop-Version und 150 x 150 Pixel für die mobile Version. Sie erstellen zwei Bildvorgaben, eine mit dem Namen *Vergrößern*, um Bilder mit 500 x 500 Pixel anzuzeigen, und eine mit dem Namen *Miniaturansicht*, um Bilder mit 150 x 150 Pixel anzuzeigen. Um Bilder in der Größe &quot;Vergrößern&quot;und &quot;Miniaturansicht&quot;bereitzustellen, sucht AEM die Definition der Bildvorgabe &quot;Vergrößern&quot;und &quot;Miniaturansicht&quot;. AEM generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
+Sie können zwei Bildvorgaben erstellen: eine mit 500 x 500 Pixel für die Desktop-Version und 150 x 150 Pixel für die mobile Version. Sie erstellen zwei Bildvorgaben, eine mit dem Namen *Vergrößern*, um Bilder mit 500 x 500 Pixel anzuzeigen, und eine mit dem Namen *Miniaturansicht*, um Bilder mit 150 x 150 Pixel anzuzeigen. Um Bilder in der Größe &quot;Vergrößern&quot;und &quot;Miniatur&quot;bereitzustellen, sucht AEM nach der Definition der Bildvorgabe &quot;Vergrößern&quot;und der Bildvorgabe &quot;Miniatur&quot;. AEM generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
 
 Bilder, die bei der dynamischen Bereitstellung verkleinert werden, können an Schärfe und Detailgenauigkeit verlieren. Aus diesem Grund umfasst jede Bildvorgabe Formatierungssteuerelemente für die Optimierung eines Bildes, wenn es mit einer bestimmten Größe bereitgestellt wird. Dadurch wird sichergestellt, dass die Bilder scharf und deutlich auf der Website oder im Programm angezeigt werden.
 
@@ -43,7 +42,7 @@ Administratoren können Bildvorgaben erstellen. Sie können völlig neue Bildvor
 
 ## Verwalten von Dynamic Media-Bildvorgaben {#managing-image-presets-1}
 
-Sie verwalten Ihre Bildvorgaben in AEM, indem Sie auf das AEM Logo tippen, um auf die globale Navigationskonsole zuzugreifen, dann auf das Symbol &quot;Werkzeuge&quot;tippen und zu **[!UICONTROL Assets > Bildvorgaben]** navigieren.
+Sie verwalten Ihre Bildvorgaben in AEM, indem Sie auf das AEM Logo tippen, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf das Werkzeugsymbol und navigieren Sie zu **[!UICONTROL Assets > Bildvorgaben]**.
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
@@ -61,7 +60,7 @@ Sie verwalten Ihre Bildvorgaben in AEM, indem Sie auf das AEM Logo tippen, um au
 >
 >Das System zeigt mehrere Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. **** Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF  {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF   {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 Wenn Sie AI-, EPS- und PDF-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
@@ -78,15 +77,15 @@ Sie können die Teil-Assets oder die Seiten anzeigen, wenn Sie das Asset öffnen
 
 Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS- oder PDF-Dateien als Vorschau anzuzeigen oder zu generieren, sind folgende Verarbeitungsschritte erforderlich:
 
-1. Im Arbeitsablauf **[!UICONTROL DAM-Update-Asset]** wird die Prozesskomponente **[!UICONTROL PDF/AI-Image-Vorschau-Darstellung]** rastern mithilfe der konfigurierten Auflösung in eine `cqdam.preview.png`-Darstellung gerastert.
+1. Im Workflow **[!UICONTROL DAM-Update-Asset]** wird die Prozesskomponente **[!UICONTROL PDF/AI-Bildvorschau-Wiedergabe rastern]** die erste Seite des ursprünglichen Assets mit der konfigurierten Auflösung in eine `cqdam.preview.png`-Ausgabedarstellung gerastert.
 
 1. Das Ausgabeformat `cqdam.preview.png` wird dann im Workflow durch die Prozesskomponente **[!UICONTROL Dynamic Media Process Image-Assets]** zu einer PTIFF-Datei optimiert.
 
 >[!NOTE]
 >
->Im Arbeitsablauf **[!UICONTROL DAM-Update-Asset]** generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
+>Im Workflow **[!UICONTROL DAM Update Asset]** generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
 
-### Metadateneigenschaften von PDF-/AI-/EPS-Assets   {#pdf-ai-eps-asset-metadata-properties}
+### Metadateneigenschaften von PDF-/AI-/EPS-Assets  {#pdf-ai-eps-asset-metadata-properties}
 
 | **Metadateneigenschaft** | **Beschreibung** |
 |---|---|
@@ -95,9 +94,9 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 Der Zugriff auf die Optionen der Prozesskomponente **[!UICONTROL PDF-/AI-Bildvorschau-Wiedergabe rastern]** erfolgt über den Workflow **[!UICONTROL DAM-Update-Asset]**.
 
-Tippen Sie links oben auf Adobe Experience Manager und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** **[!UICONTROL DAM-Update-Asset]** und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Tippen Sie auf der Seite **[!UICONTROL DAM-Update-Asset-Workflow]** Dublette-Tippen Sie auf die Prozesskomponente **[!UICONTROL PDF/AI-Bildwiedergabe]**, um das Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** zu öffnen.
+Tippen Sie links oben auf Adobe Experience Manager und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** die Option **[!UICONTROL DAM-Update-Asset]** und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Doppeltippen Sie auf der Seite **[!UICONTROL DAM-Update-Asset-Workflow]** auf die Prozesskomponente **[!UICONTROL PDF/AI-Bildvorschau-Wiedergabe rastern]** , um das Dialogfeld **[!UICONTROL Schritteigenschaften]** zu öffnen.
 
-### Darstellungsoptionen für PDF/AI-Vorschauen rastern {#rasterize-pdf-ai-image-preview-rendition-options}
+### PDF-/AI-Bildvorschau-Ausgabeoptionen rastern {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumente zum Rastern von PDF- oder AI-Workflows](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -139,7 +138,7 @@ Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines
 
 Für die Prozesskomponente **[!UICONTROL PDF-/AI-Bildvorschau-Wiedergabe rastern]** ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Zu große Bilder können zu einem Überlauf des für die JVM (Java Virtual Machine) bereitgestellten Speichers führen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
 
-### InDesign-Dateiformat (INDD)   {#indesign-indd-file-format}
+### InDesign-Dateiformat (INDD)  {#indesign-indd-file-format}
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
@@ -149,9 +148,9 @@ Siehe [Integrieren von AEM Assets in InDesign Server](indesign.md).
 
 Die Prozesskomponente zum Extrahieren von Medien im Workflow **[!UICONTROL DAM-Update-Asset]****** führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
 
-![Die Pfade zum Erweitern von Skripten in den Argumenten des Media Extraktion-Prozesses](assets/media_extraction_arguments.png)
+![Die ExtendScript-Pfade in den Argumenten des Prozesses zum Extrahieren von Medien](assets/media_extraction_arguments.png)
 
-Die Pfade **[!UICONTROL Skript]** in den Argumenten der Prozesskomponente **[!UICONTROL Media Extraktion]** im Arbeitsablauf **[!UICONTROL DAM-Update-Asset]**.
+Die Pfade **[!UICONTROL Skript]** in den Argumenten der Prozesskomponente **[!UICONTROL Medienextrahierung]** im Workflow **[!UICONTROL DAM-Update-Asset]** .
 
 Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
@@ -202,11 +201,11 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **width:he
 **Konfigurieren der Größe von Miniaturansichten**:
 
 1. Tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten]**.
-1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image Assets]** und dann auf die Registerkarte **[!UICONTROL Thumbnails]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image Assets]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]** . Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
 
    ![step_properties_thumbnailarguments](assets/step_properties_thumbnailarguments.png)
 
-1. Tippen Sie auf den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansicht und tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
@@ -214,7 +213,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **width:he
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
 
-### Anzahl der Dynamic Media-Bildvorgaben erhöhen oder verringern, die {#increasing-or-decreasing-the-number-of-image-presets-that-display} anzeigen
+### Erhöhen oder Verringern der Anzahl der Dynamic Media-Bildvorgaben, die {#increasing-or-decreasing-the-number-of-image-presets-that-display} anzeigen
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen. AEM zeigt verschiedene dynamische Ausgabedarstellungen an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Ausgabedarstellung]** anzeigen. Sie können die Anzahl der angezeigten Ausgabedarstellungen erhöhen oder verringern.
 
@@ -225,7 +224,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. Ändern Sie in der Eigenschaft **[!UICONTROL limit]** den Wert **[!UICONTROL value]**, der standardmäßig auf 15 eingestellt ist, in die gewünschte Zahl.
+1. Ändern Sie in der Eigenschaft **[!UICONTROL limit]** den Wert **[!UICONTROL value]**, der standardmäßig auf 15 festgelegt ist, in die gewünschte Zahl.
 1. Navigieren Sie zur Datenquelle der Bildvorgabe unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -239,7 +238,7 @@ Wenn Sie eine Dynamic Media-Bildvorgabe erstellen, können Sie diese Einstellung
 
 >[!NOTE]
 >
->Wenn Sie Internet Explorer 9 verwenden, wird das Erstellen einer Vorgabe nicht unmittelbar nach dem Speichern in der Liste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
+>Wenn Sie Internet Explorer 9 verwenden, wird das Erstellen einer Vorgabe nicht sofort nach dem Speichern in der Vorgabenliste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
 
 Wenn Sie AI-, PDF-, und EPS-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.\
 Siehe [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
@@ -248,12 +247,12 @@ Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dat
 
 >[!NOTE]
 >
->Zum Erstellen von Dynamic Media-Bildvorgaben müssen Sie über Administratorrechte als AEM Administrator oder Admin Console-Administrator verfügen.
+>Um Dynamic Media-Bildvorgaben zu erstellen, müssen Sie über Administratorberechtigungen als AEM- oder Admin Console-Administrator verfügen.
 
 **So erstellen Sie eine Dynamic Media-Bildvorgabe**:
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
+1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -262,13 +261,13 @@ Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dat
    >
    >Damit diese Bildvoreinstellung responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
 
-1. Geben Sie auf der Seite **[!UICONTROL Bildvorgabe bearbeiten]** Werte in die Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** ein, einschließlich eines Namens. Die Optionen werden unter [Bildvoreinstellungsoptionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
+1. Geben Sie auf der Seite **[!UICONTROL Bildvorgabe bearbeiten]** Werte auf den Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** ein, einschließlich eines Namens. Die Optionen werden unter [Bildvoreinstellungsoptionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
 
    ![chlimage_1-497](assets/chlimage_1-497.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-### Erstellen einer reaktionsfähigen Bildvorgabe {#creating-a-responsive-image-preset}
+### Erstellen einer responsiven Bildvorgabe {#creating-a-responsive-image-preset}
 
 Um eine responsive Bildvorgabe zu erstellen, führen Sie die im Abschnitt [Erstellen von Bildvorgaben](#creating-image-presets) beschriebenen Schritte durch. Löschen Sie die Werte für Höhe und Breite im Fenster **[!UICONTROL Bildvorgabe bearbeiten]** und lassen Sie sie leer.
 
@@ -286,11 +285,11 @@ Dadurch wird diese Vorgabe in AEM als responsiv erkannt. Sie können die anderen
 
 ### Optionen für Bildvorgaben {#image-preset-options}
 
-Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeiten von Bildvorgaben verfügbar. Darüber hinaus empfiehlt Adobe die folgenden drei Optionen für Beginn:**
+Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeiten von Bildvorgaben verfügbar. Darüber hinaus empfiehlt Adobe die folgenden drei Optionen *Best Practice*:
 
-* **[!UICONTROL Format]** (**** Registerkarte &quot;Grundlagen&quot;) - Wählen Sie  **** JPEG oder ein anderes Format, das Ihren Anforderungen entspricht. Alle Webbrowser unterstützen das JPEG-Bildformat. Es Angebot ein gutes Gleichgewicht zwischen kleinen Dateigrößen und Bildqualität. Bilder im JPEG-Format verwenden jedoch ein verlustbehaftetes Komprimierungsschema, das unerwünschte Bildartefakte hervorrufen kann, wenn die Komprimierungseinstellung zu niedrig ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
-* **[!UICONTROL Einfaches Scharfzeichnen]**  aktivieren: Wählen Sie &quot;Einfaches Scharfzeichnen **** aktivieren&quot;nicht aus (diese Scharfzeichnungsfilter-Angebot haben weniger Kontrolle als die Unschärfemaske-Einstellungen).
-* **[!UICONTROL Scharfzeichnen: Resampling Mode]**  - Wählen Sie  **[!UICONTROL Bi-Cubic]**.
+* **[!UICONTROL Format]**  (**** Registerkarte &quot;Grundlagen&quot;) - Wählen Sie  **** JPEG oder ein anderes Format, das Ihren Anforderungen entspricht. Alle Webbrowser unterstützen das JPEG-Bildformat. Es bietet ein gutes Gleichgewicht zwischen kleinen Dateigrößen und Bildqualität. Bilder im JPEG-Format verwenden jedoch ein verlustbehaftetes Komprimierungsschema, das unerwünschte Bildartefakte hervorrufen kann, wenn die Komprimierungseinstellung zu niedrig ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
+* **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**  - Wählen Sie  **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**  nicht aus (dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für &quot;Unschärfemaske&quot;).
+* **[!UICONTROL Scharfzeichnen: Resampling Mode]**  - Wählen Sie  **[!UICONTROL Bikubisch]** aus.
 
 #### Optionen auf der Registerkarte „Basis“ {#basic-tab-options}
 
@@ -390,8 +389,8 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>Anwenden auf</strong>: Bestimmt, ob die Unscharfzeichnung für jede Farbe oder Helligkeit gilt.</li>
     </ul>
     <div>
-      Scharfzeichnen wird beschrieben unter  
-     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>.
+      Das Scharfzeichnen wird unter  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Adobe Dynamic Media Classic - Best Practices für Bildqualität und Scharfzeichnen</a>.
     </div> </td>
   </tr>
   <tr>
@@ -426,9 +425,9 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
  </tbody>
 </table>
 
-## Definieren von Bildvorgabeoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
+## Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
 
-Neben den Optionen, die auf den Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** verfügbar sind, können Sie Bildmodifikatoren definieren, um beim Definieren von Bildvorgaben weitere Optionen bereitzustellen. Das Rendern von Bildern basiert auf der Dynamic Media Image Rendering API. Die API wird im Detail in der [HTTP-Protokollreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html) definiert.
+Neben den Optionen, die auf den Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** verfügbar sind, können Sie Bildmodifikatoren definieren, mit denen Sie beim Definieren von Bildvorgaben mehr Optionen erhalten. Das Rendern von Bildern basiert auf der Dynamic Media Image Rendering API. Die API wird ausführlich in der [HTTP-Protokollreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html) definiert.
 
 Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modifikatoren.
 
@@ -481,11 +480,11 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 **So bearbeiten Sie Bildvorgaben**:
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
+1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
 
    ![chlimage_1-504](assets/chlimage_1-504.png)
 
-1. Wählen Sie eine Vorgabe und tippen Sie dann auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie eine Vorgabe aus und tippen Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Nehmen Sie auf der Seite **[!UICONTROL Bildvorgaben bearbeiten]** die gewünschten Änderungen vor und tippen Sie dann auf **[!UICONTROL Speichern]**.
 
 ## Veröffentlichen von Dynamic Media-Bildvorgaben {#publishing-image-presets}
@@ -497,8 +496,8 @@ Wenn Sie den Modus „Dynamic Media – Scene7“ ausführen, werden Bildvorgab
 **So veröffentlichen Sie Bildvorgaben im Dynamic Media-Hybridmodus**:
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
-1. Wählen Sie die Bildvorgabe oder mehrere Bildvorgaben aus der Liste der Bildvorgaben und tippen Sie dann auf **[!UICONTROL Veröffentlichen]**.
+1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
+1. Wählen Sie die Bildvorgabe oder mehrere Bildvorgaben aus der Liste der Bildvorgaben aus und tippen Sie dann auf **[!UICONTROL Veröffentlichen]**.
 1. Nachdem die Bildvorgabe veröffentlicht wurde, ändert sich der Status von „Nicht veröffentlicht“ in „Veröffentlicht“.
 
    ![chlimage_1-505](assets/chlimage_1-505.png)
@@ -506,5 +505,5 @@ Wenn Sie den Modus „Dynamic Media – Scene7“ ausführen, werden Bildvorgab
 ## Löschen von Dynamic Media-Bildvorgaben {#deleting-image-presets}
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
-1. Wählen Sie eine Vorgabe und tippen Sie dann auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**.
+1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
+1. Wählen Sie eine Vorgabe aus und tippen Sie dann auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**.
