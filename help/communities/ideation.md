@@ -1,28 +1,27 @@
 ---
-title: Grundlagen der Ideenfindung
-seo-title: Grundlagen der Ideenfindung
-description: Übersicht über die Ideenfunktion
-seo-description: Übersicht über die Ideenfunktion
+title: Ideengrundlagen
+seo-title: Ideengrundlagen
+description: Übersicht über die Ideen-Funktion
+seo-description: Übersicht über die Ideen-Funktion
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 7fb68293-c6e3-4793-b433-205bcfc23e20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 6%
 
 ---
 
+# Ideengrundlagen {#ideation-essentials}
 
-# Ideenelemente {#ideation-essentials}
+Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnlich ist, jedoch mit der Möglichkeit, als Entwurf zu speichern und ein kollaboratives Gefühl zu entwickeln.
 
-Diese Seite bietet die wesentlichen Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnelt, aber mit der Möglichkeit, als Entwurf zu speichern und ein stärker gemeinschaftliches Gefühl.
-
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -31,12 +30,12 @@ Diese Seite bietet die wesentlichen Informationen für die Arbeit mit der Ideenf
    <td>social/ideation/components/hbs/ideation</td> 
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td> 
    <td>Nein</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.stimation<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
+   <td>cq.social.hbs.stimating<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
