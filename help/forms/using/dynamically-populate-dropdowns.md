@@ -8,21 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
-translation-type: tm+mt
-source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 82%
 
 ---
 
-
-# Dynamisches Füllen von Dropdownlisten  {#dynamically-populating-drop-down-lists}
+# Dynamisches Füllen von Dropdownlisten   {#dynamically-populating-drop-down-lists}
 
 ## Voraussetzungen {#prerequisites}
 
 * [Erstellung von OSGI-Bundles](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md) 
+* [Entwickeln von AEM-Komponenten ](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](/help/forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md)
 
@@ -155,7 +154,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
 
-   ![Hinzufügen ](assets/country-dropdown.png) ![von LändernamenHinzufügen von Skripten zum Ausfüllen von ](assets/state-dropdown.png) ![StatusnamenDropdown-Listen &quot;Land&quot;und &quot;Bundesland&quot;zum Zusammenstellen](assets/2dropdowns.png)
+   ![Hinzufügen ](assets/country-dropdown.png) ![von LändernamenHinzufügen von Skripten zum Ausfüllen von ](assets/state-dropdown.png) ![StatusnamenDropdown-Listen &quot;Land&quot;und &quot;Bundesland&quot;](assets/2dropdowns.png)
 
    ```
    JSON.parse(
