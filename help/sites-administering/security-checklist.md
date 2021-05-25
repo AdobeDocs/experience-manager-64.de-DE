@@ -2,7 +2,7 @@
 title: Sicherheitscheckliste
 seo-title: Sicherheitscheckliste
 description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
-feature: Security
+feature: Sicherheit
 seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
@@ -11,7 +11,6 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
-translation-type: tm+mt
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
 source-wordcount: '2844'
@@ -49,7 +48,7 @@ Die Aktivierung der HTTPS-Transportschicht (Transport Layer) in den Autoren- und
 
 Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-Hotfixes](https://helpx.adobe.com/de/experience-manager/kb/aem63-available-hotfixes.html) installiert sind.
 
-### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole  {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 Adobe empfiehlt dringend, dass Sie das Kennwort für die mit allen Berechtigungen ausgestatteten [**-Konten von** AEM`admin` nach der Installation ändern (in allen Instanzen).](#changing-the-aem-admin-password)
 
@@ -57,9 +56,9 @@ Diese Konten beinhalten:
 
 * AEM `admin`-Konto
 
-   Nachdem Sie das Kennwort für das AEM Admin-Konto geändert haben, müssen Sie beim Zugriff auf CRX das neue Kennwort verwenden.
+   Nachdem Sie das Kennwort für das AEM-Administratorkonto geändert haben, müssen Sie beim Zugriff auf CRX das neue Kennwort verwenden.
 
-* Das `admin`-Kennwort für die OSGi-Webkonsole
+* Das `admin`-Kennwort für die OSGi-Web-Konsole
 
    Diese Änderung wird auch auf das Administratorkonto angewendet, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie beim Zugriff darauf dasselbe Kennwort verwenden.
 
@@ -86,15 +85,15 @@ Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie 
 
 #### Ändern des Admin-Kennworts für die OSGi-Web-Konsole  {#changing-the-osgi-web-console-admin-password}
 
-Sie müssen auch das Kennwort ändern, das für den Zugriff auf die Web-Konsole verwendet wird. Dies erfolgt durch Konfiguration der folgenden Eigenschaften der Verwaltungskonsole [Apache Felix OSGi ](/help/sites-deploying/osgi-configuration-settings.md):
+Sie müssen auch das Kennwort ändern, das für den Zugriff auf die Web-Konsole verwendet wird. Konfigurieren Sie dazu die folgenden Eigenschaften der [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
 
 **Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.\
 Das Kennwort muss nach der ersten Installation geändert werden, damit die Sicherheit Ihrer Instanz gewährleistet ist.
 
 Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Webkonsole unter `<server>:<port>/system/console/configMgr`.
-1. Navigieren Sie zu** Apache Felix OSGi Management Console** und ändern Sie die **Benutzernamen** und **Kennwort**.
+1. Navigieren Sie zur Web-Konsole unter `<server>:<port>/system/console/configMgr`.
+1. Navigieren Sie zu &quot;Apache Felix OSGi Management Console&quot;und ändern Sie den **Benutzernamen** und das **Kennwort**.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -172,7 +171,7 @@ Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurie
 
 * Welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
-* und eine Liste von Servern, die zusätzlich zum Server-Host zulässig sind.
+* und eine Liste der Server, die zusätzlich zum Server-Host zulässig sein sollen.
 
    Standardmäßig befinden sich alle Varianten von localhost und die aktuellen Hostnamen, an die der Server gebunden ist, in der Liste.
 
@@ -187,7 +186,7 @@ So konfigurieren Sie den Referrer-Filterdienst:
 
    `Apache Sling Referrer Filter`
 
-1. Geben Sie im Feld `Allow Hosts` alle Hosts ein, die als Werber zulässig sind. Jeder Eintrag muss vom Formular sein
+1. Geben Sie im Feld `Allow Hosts` alle Hosts ein, die als Referrer zulässig sind. Jeder Eintrag muss vom Formular sein
 
    &lt;protocol>://&lt;server>:&lt;port>
 
@@ -197,13 +196,13 @@ So konfigurieren Sie den Referrer-Filterdienst:
    * Wenn Sie auch HTTPS-Anfragen zulassen wollen, müssen Sie eine zweite Zeile eingeben.
    * Falls Sie alle Ports dieses Servers zulassen wollen, können Sie als Portnummer eine `0` eingeben.
 
-1. Markieren Sie das Feld `Allow Empty`, wenn Sie leere/fehlende Werber-Kopfzeilen zulassen möchten.
+1. Überprüfen Sie das Feld `Allow Empty` , wenn Sie leere/fehlende Referrer-Header zulassen möchten.
 
    >[!CAUTION]
    >
    >Es wird empfohlen, einen Referrer bereitzustellen, wenn Sie Befehlszeilen-Tools wie `cURL` verwenden, anstatt einen leeren Wert zuzulassen, da andernfalls das Risiko besteht, dass Ihr System CSRF-Angriffen ausgesetzt ist.
 
-1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen mit dem Feld `Filter Methods` verwenden soll.
+1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen verwenden soll, mit dem Feld `Filter Methods` .
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
@@ -258,7 +257,7 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computerressource für
 
 * Wenn eine Seite mit einer unbegrenzten Anzahl an URLs angefordert wird, kann die URL einen Handler, einige Selektoren, eine Erweiterung und einen Suffix enthalten. Diese Elemente können alle geändert werden.
 
-   `.../en.html` kann beispielsweise auch wie folgt angefordert werden:
+   Beispielsweise kann `.../en.html` auch wie folgt angefordert werden:
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
@@ -294,15 +293,15 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
    * Dies gilt insbesondere für den JSON-Renderer, der sich über mehrere Ebenen der hierarchischen Struktur erstrecken kann.
 
-      Beispielsweise die Anforderung:
+      Beispielsweise die Anfrage:
 
       `http://localhost:4502/.json`
 
-      könnte das gesamte Repository in einer JSON-Darstellung ablegen. Dies würde zu erheblichen Serverproblemen führen. Aus diesem Grund beschränkt Sling die Anzahl an maximalen Ergebnissen. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für Folgendes festlegen:
+      könnte das gesamte Repository in einer JSON-Darstellung ablegen. Dies würde zu erheblichen Serverproblemen führen. Aus diesem Grund beschränkt Sling die Anzahl an maximalen Ergebnissen. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für festlegen:
 
-      **JSON Max. Ergebnisse** (  `json.maximumresults`)
+      **Max. JSON-Ergebnisse**  (  `json.maximumresults`)
 
-      in der Konfiguration für den Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). [ Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
+      in der Konfiguration für das Apache Sling GET Servlet ](/help/sites-deploying/osgi-configuration-settings.md). [ Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
 
    * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -319,11 +318,11 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahlen können durch das Vorhandensein von **&amp;ast;.form erkannt werden.&amp;ast;**-Zeichenfolge in Abfragen.
+Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahl kann durch das Vorhandensein von **&amp;ast;.form erkannt werden.&amp;ast;** Zeichenfolge in Abfragen.
 
 Führen Sie zum Beheben dieses Problems die folgenden Schritte aus:
 
-1. Gehen Sie zur Web-Konsole, indem Sie Ihren Browser auf *https://&lt;server-Adresse>:&lt;server-Anschluss>/system/console/configMgr* zeigen.
+1. Wechseln Sie zur Web-Konsole, indem Sie Ihren Browser auf *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr* verweisen.
 
 1. Suchen nach **Day CQ WCM Form Chooser Servlet**
 1. Klicken Sie auf den Eintrag, deaktivieren Sie im folgenden Fenster die Option **Advanced Search Require** (Erweiterte Suche erforderlich).
@@ -374,7 +373,7 @@ Es ist keine Konfiguration erforderlich, um sie zu aktivieren, da dies nun die S
 
 Obwohl dies nicht empfohlen wird, können Sie sie deaktivieren, wenn Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit vorhandenen Anwendungen benötigen. Gehen Sie dazu wie folgt vor:
 
-1. Gehen Sie zur Web-Konsole und entfernen Sie den Eintrag** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Wechseln Sie zur Web-Konsole und entfernen Sie den Eintrag &quot;org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**&quot;aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
    Sie können den Oak Security Provider auch finden, indem Sie in den OSGi-Konfigurationen nach der PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** suchen.
 
@@ -440,7 +439,7 @@ In AEM 6.2 und älteren Versionen werden die Schlüssel im Repository unter dem 
 
 Für eine sichere Replikation der Schlüssel auf Ihren Instanzen wird empfohlen, nur diesen Knoten zu replizieren. Sie können Knoten in CRXDE Lite selektiv replizieren:
 
-1. Öffnen Sie die CRXDE Lite unter *https://&lt;serverAddress>:4502/crx/de/index.jsp*
+1. Öffnen Sie die CRXDE Lite, indem Sie zu *https://&lt;serverAddress>:4502/crx/de/index.jsp* navigieren.
 1. Wählen Sie den Knoten `/etc/key` aus.
 1. Wechseln Sie zur Registerkarte **Replikation**.
 1. Klicken Sie auf die Schaltfläche **Replikation**.
