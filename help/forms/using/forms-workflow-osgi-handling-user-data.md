@@ -1,21 +1,20 @@
 ---
 title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
 seo-title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
-description: Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen. Näheres zu Benutzerdaten und Datenspeichern. Erfahren Sie, wie Sie Benutzerdaten aufrufen und löschen können.
-seo-description: Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen. Näheres zu Benutzerdaten und Datenspeichern. Erfahren Sie, wie Sie Benutzerdaten aufrufen und löschen können.
+description: Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen. Weitere Informationen zu Benutzerdaten und Datenspeichern. Erfahren Sie, wie Sie auf Benutzerdaten zugreifen und diese löschen können.
+seo-description: Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen. Weitere Informationen zu Benutzerdaten und Datenspeichern. Erfahren Sie, wie Sie auf Benutzerdaten zugreifen und diese löschen können.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 85%
 
 ---
-
 
 # Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten {#forms-centric-workflows-on-osgi-handling-user-data}
 
@@ -31,7 +30,7 @@ Ein formularzentrierter Workflow kann über eine der folgenden Methoden ausgelö
 
 Weitere Informationen über die formularzentrierten Workflows AEM und Funktionen finden Sie unter [Formularzentrierter Workflow auf OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
+## Benutzerdaten und Datenspeicher  {#user-data-and-data-stores}
 
 Wenn ein Workflow ausgelöst wird, wird automatisch eine Nutzlast für die Workflow-Instanz generiert. Jede Workflow-Instanz erhält eine eindeutige Instanz-ID und eine zugehörige Nutzlast-ID. Die Nutzlast enthält die Repository-Speicherorte für Benutzer- und Formulardaten, die einer Workflow-Instanz zugeordnet sind. Darüber hinaus werden Entwürfe und Protokolldaten für eine Workflow-Instanz ebenfalls im AEM-Repository gespeichert.
 
@@ -80,11 +79,11 @@ In den folgenden Szenarios können Sie das jedoch nicht erkennen oder die Ergebn
 * **Workflow, der durch einen überwachten Ordner ausgelöst wurde**: Eine Workflow-Instanz kann nicht über ihren Initiator identifiziert werden, wenn der Workflow von einem überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
 * **Workflow, der von der AEM-Veröffentlichungsinstanz** initiiert wurde: Alle Workflow-Instanzen werden mithilfe eines Servicebenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername des angemeldeten Benutzers nicht in den Workflow-Instanz-Daten erfasst.
 
-### Zugreifen auf Benutzerdaten  {#access}
+### Zugreifen auf Benutzerdaten {#access}
 
 Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Instanz zu identifizieren und darauf zuzugreifen:
 
-1. Wechseln Sie in AEM Autoreninstanz zu `https://[server]:[port]/crx/de` und navigieren Sie zu **[!UICONTROL Tools > Abfrage]**.
+1. Navigieren Sie in AEM Autoreninstanz zu `https://[server]:[port]/crx/de` und navigieren Sie zu **[!UICONTROL Tools > Abfrage]**.
 
    Wählen Sie **[!UICONTROL SQL2]** aus der Dropdownliste **[!UICONTROL Typ]**.
 
@@ -100,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
    Die Abfrage gibt den Speicherort aller Workflow-Instanzen für den angegebenen Workflow-Initiator oder den aktuellen Workflow-Empfänger zurück.
 
-   Beispielsweise gibt die folgende Abfrage zwei Workflow-Instanzenpfad vom `/var/workflow/instances`-Knoten zurück, dessen Workflow-Initiator `srose` ist.
+   Beispielsweise gibt die folgende Abfrage zwei Workflow-Instanzenpfad vom Knoten `/var/workflow/instances` zurück, dessen Workflow-Initiator `srose` ist.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -108,7 +107,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
    ![status](assets/status.png)
 
-1. Navigieren Sie im Knoten Workflow-Instanz zu `data/payload/`. Die Eigenschaft `path` speichert den Pfad zur Nutzlast für die Workflow-Instanz. Sie können zu dem Pfad navigieren, um auf Daten zuzugreifen, die in der Nutzlast gespeichert sind.
+1. Navigieren Sie im Workflow-Instanzknoten zu `data/payload/`. Die Eigenschaft `path` speichert den Pfad zur Nutzlast für die Workflow-Instanz. Sie können zu dem Pfad navigieren, um auf Daten zuzugreifen, die in der Nutzlast gespeichert sind.
 
    ![payload-path](assets/payload-path.png)
 
@@ -137,9 +136,9 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
    * Pfade zu Nutzlasten für die Workflow-Instanzen
    * Pfade zu Entwürfen und Verlauf für die Workflow-Instanzen
 
-1. Führen Sie diesen Schritt für Workflow-Instanzen im Status **AUSFÜHREN**, **AUSGESETZT** oder **STALE** aus:
+1. Führen Sie diesen Schritt für Workflow-Instanzen im Status **RUNNING**, **SUSPENDED** oder **STALE** aus:
 
-   1. Wechseln Sie zu `https://[server]:[port]/aem/start.html` und melden Sie sich mit Administratorberechtigungen an.
+   1. Gehen Sie zu `https://[server]:[port]/aem/start.html` und melden Sie sich mit Administratorberechtigungen an.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
    1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um die laufenden Instanzen zu beenden.
 
@@ -147,7 +146,7 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
 
 1. Wechseln Sie zur CRXDE Lite-Konsole, navigieren Sie zum Nutzlastpfad für eine Workflow-Instanz und löschen Sie den Knoten `payload`.
 1. Navigieren Sie zum Entwurfspfad für eine Workflow-Instanz und löschen Sie den Knoten `draft`.
-1. Navigieren Sie zum Verlaufspfad für eine Workflow-Instanz und löschen Sie den Knoten `history`.
+1. Navigieren Sie zum Verlaufspfad für eine Workflow-Instanz und löschen Sie den Knoten `history` .
 1. Navigieren Sie zum Pfad der Workflow-Instanz für eine Workflow-Instanz und löschen Sie den Knoten `[workflow-instance-ID]` für den Workflow.
 
    >[!NOTE]
@@ -162,4 +161,3 @@ Sie können auch APIs verwenden, um auf Knoten und Eigenschaften zuzugreifen und
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](/help/sites-developing/access-jcr.md)
 * [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/de/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API-Referenz](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
-
