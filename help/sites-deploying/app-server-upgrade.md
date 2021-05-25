@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 96%
 
 ---
-
 
 # Schritte zur Aktualisierung von Installationen auf Anwendungsservern{#upgrade-steps-for-application-server-installations}
 
@@ -57,7 +56,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
-   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties`
+   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties` .
    1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
 
       1. `sling.installer.dir`
@@ -99,7 +98,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
 
 1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
 
-   * hinzufügen Sie die folgende Zeile in **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Fügen Sie **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config** die folgende Zeile hinzu:
 
       `customBlobStore=true`
 
@@ -150,4 +149,3 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
    ```
-
