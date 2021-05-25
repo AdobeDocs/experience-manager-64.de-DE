@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
-translation-type: tm+mt
-source-git-commit: 088961dd5457f2136a5eea6f6811455105a8dd1f
+exl-id: 16b4088d-13b4-47b9-b89d-0c4a13676f12
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 76%
 
 ---
 
-
 # Testen der Benutzeroberfläche{#testing-your-ui}
 
 AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt eine JavaScript-API zum Erstellen von Tests bereit.
 
-Das AEM Testframework verwendet Hobbes.js, eine in Javascript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
+Das AEM-Test-Framework verwendet Hobbes.js, eine in JavaScript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
 
 >[!NOTE]
 >
->Ausführliche Informationen zur API finden Sie in der Dokumentation zu Hobbes.js [.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
+>Ausführliche Informationen zur API finden Sie in der Dokumentation zu Hobbes.js [Dokumentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) .
 
 ## Die Struktur von Tests {#structure-of-tests}
 
@@ -34,9 +33,9 @@ Wenn Sie automatisierte Tests in AEM verwenden, sollten Sie die folgenden Begrif
 
 |  |  |
 |---|---|
-| Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. durch Klicken auf einen Link oder eine Schaltfläche. |
-| Test Case | Ein **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen** bestehen kann. |
-| Testsuite | Eine **Test Suite** ist eine Gruppe verwandter **Testfälle**, die zusammen einen bestimmten Anwendungsfall testen. |
+| Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
+| Testfall | Ein **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen** bestehen kann. |
+| Testsuite | Eine **Test Suite** ist eine Gruppe verwandter **Testfälle**, die gemeinsam einen bestimmten Anwendungsfall testen. |
 
 ## Ausführen von Tests {#executing-tests}
 
@@ -92,13 +91,13 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
    ![](do-not-localize/chlimage_1-8.png)
 
-1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Durch Tippen auf den Namen Ihres Tests im Bereich **Ergebnis** werden alle Details angezeigt.
+1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Durch Tippen oder Klicken auf den Namen Ihres Tests im Bedienfeld **Ergebnis** werden alle Details angezeigt.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 ## Erstellen und Verwenden einer einfachen Test-Suite {#creating-and-using-a-simple-test-suite}
 
-Das folgende Verfahren führt Sie durch die Erstellung und Ausführung einer Test Suite mit [We.Retail-Inhalt](/help/sites-developing/we-retail.md). Sie können den Test jedoch einfach so ändern, dass eine andere Webseite verwendet wird.
+Das folgende Verfahren führt Sie durch die Erstellung und Ausführung einer Test Suite mit [We.Retail-Inhalt](/help/sites-developing/we-retail.md). Sie können den Test jedoch einfach ändern, um eine andere Webseite zu verwenden.
 
 Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html).
 
@@ -122,9 +121,9 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
    >
    >Um adaptive Formulare zu testen, fügen Sie die folgenden Werte den Kategorien (categories) und Abhängigkeiten (dependencies) hinzu. Beispiel:
    >
-   >**kategorien**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categories**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
-   >**Abhängigkeiten**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**dependencies**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. Klicken Sie auf **Alle speichern**.
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `myFirstTest` und klicken Sie auf **Erstellen > Datei erstellen**. Nennen Sie die Datei `js.txt` und klicken Sie auf **OK**.
@@ -153,4 +152,3 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
    ```
 
 1. Navigieren Sie zur **Testkonsole**, um die Test-Suite zu testen.
-
