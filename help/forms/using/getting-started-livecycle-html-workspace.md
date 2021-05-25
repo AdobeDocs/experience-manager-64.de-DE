@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 8c45f145-1729-4e5c-b391-6b1bbd50494b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 82%
 
 ---
 
-
-# Erste Schritte mit AEM Forms Workspace {#getting-started-with-aem-forms-workspace}
+# Erste Schritte mit AEM Forms Workspace  {#getting-started-with-aem-forms-workspace}
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
@@ -30,7 +29,7 @@ Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
 Je nach dem Prozess und der Aufgabe, an der Sie arbeiten, werden in der Benutzeroberfläche von AEM Forms Workspace verschiedene Elemente angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
 
-Sie können mithilfe einer der folgenden Methoden durch die AEM Forms Workspace-Hauptbenutzeroberfläche navigieren:
+Sie können mit einer der folgenden Methoden durch die Hauptbenutzeroberfläche von AEM Forms Workspace navigieren:
 
 * Klicken Sie auf die Elemente in der oberen Navigationsleiste, um auf den Startprozess, die Aufgabenliste, Voreinstellungen, Verfolgung, Hilfe und die Option zum Abmelden zuzugreifen.
 * Klicken Sie auf die Registerkarte „Prozess starten“, „Aufgaben“ oder „Verfolgung“, um auf die drei Hauptarbeitsbereiche zuzugreifen.
@@ -42,17 +41,17 @@ Sie können mithilfe einer der folgenden Methoden durch die AEM Forms Workspace-
 
 ## Verwenden von AEM Forms Workspace mit einer Bildschirmlesehilfe {#using-html-workspace-with-screen-readers}
 
-AEM Forms Workspace ist eine webbasierte HTML-Anwendung und mit Bildschirmlesehilfen kompatibel. Sie können über die Tastatur durch die Oberfläche des AEM Forms Workspace navigieren.
+AEM Forms Workspace ist eine webbasierte HTML-Anwendung und mit Bildschirmlesehilfen kompatibel. Sie können über die Tastatur durch die Benutzeroberfläche von AEM Forms Workspace navigieren.
 
-Um AEM Forms Workspace mit einer Bildschirmlesehilfe zu verwenden, beachten Sie folgende Punkte:
+Beachten Sie die folgenden Punkte, um AEM Forms Workspace mit einer Bildschirmlesehilfe zu verwenden:
 
-* AEM Forms Workspace ist eine Standard-HTML-Anwendung, die mit jedem standardmäßigen Bildschirmlesehilfen-Tool kompatibel ist. Sie benötigen kein bestimmtes Skript, um ein Bildschirmlesehilfe-Werkzeug auszuführen.
-* Die gesamte Navigation in AEM Forms Workspace erfolgt über Anker-Tags, auf die über Registerkarten leicht zugegriffen werden kann.
+* AEM Forms Workspace ist eine standardmäßige HTML-Anwendung, die mit jedem standardmäßigen Bildschirmlesehilfen-Tool kompatibel ist. Sie benötigen kein bestimmtes Skript, um ein Bildschirmlesehilfe-Werkzeug auszuführen.
+* Die gesamte Navigation in AEM Forms Workspace erfolgt über Anker-Tags, auf die über Registerkarten einfach zugegriffen werden kann.
 * Das Laden von Formularen kann einige Sekunden dauern. Die Bildschirmlesehilfe zeigt nicht akustisch an, dass das Formular lädt und der Benutzer warten muss.
 
 ## Navigieren in AEM Forms Workspace über die Tastatur  {#navigating-html-workspace-using-a-keyboard}
 
-Wenn Sie mit einer Tastatur im AEM Forms Workspace navigieren, entspricht die Navigation den Konventionen für die Barrierefreiheit von HTML. Unter bestimmten Umständen entspricht die Aktivierreihenfolge von Schaltflächen nicht den herkömmlichen Konventionen. Die folgenden Tipps erleichtern Ihnen die Navigation in der Benutzeroberfläche:
+Wenn Sie mit einer Tastatur in AEM Forms Workspace navigieren, entspricht die Navigation den HTML-Richtlinien für Barrierefreiheit. Unter bestimmten Umständen entspricht die Aktivierreihenfolge von Schaltflächen nicht den herkömmlichen Konventionen. Die folgenden Tipps erleichtern Ihnen die Navigation in der Benutzeroberfläche:
 
 * Wenn Sie Probleme haben, die Symbolleisten oben im Browser durch Drücken der Tabulatortaste zu verlassen, drücken Sie Strg+Tabulatortaste, um in den Inhalt des Browserfensters zu gelangen.
 * Die AEM Forms Workspace-Hilfe wird in einem separaten Browserfenster geöffnet. Verschieben Sie nach dem Anzeigen der Hilfe den Fokus wieder in das Browserfenster, das AEM Forms Workspace enthält. Das Hilfemenü behält den Fokus, wenn der Fokus zurückgegeben wird.
@@ -81,4 +80,3 @@ Legen Sie die Benutzeroberflächenvoreinstellungen auf der Registerkarte „UI-E
 * **Über Aufgabenereignisse per E-Mail benachrichtigen:** Gibt an, ob Sie E-Mail-Benachrichtigungen für Aufgabenereignisse erhalten, einschließlich Aufgabenzuweisungen, Erinnerungen und Terminen in Ihrer persönlichen Aufgabenliste oder in Gruppenaufgabenlisten, denen Sie zugewiesen sind.
 * **Formulare in E-Mail anfügen:** Gibt an, ob eine Kopie des Formulars in E-Mail-Benachrichtigungen angefügt wird. Anlagen werden nur für PDF- und XDP-Formulare unterstützt.
 * **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Um Ihre Entwürfe in regelmäßigen Abständen zu speichern, aktivieren Sie diese Option und legen Sie die Dauer der automatischen Speicherung von 1 bis 30 Minuten fest. Wenn die automatische Speicherung aktiviert ist und ein Benutzer an einem Entwurf arbeitet, wird der Entwurf regelmäßig nach einer bestimmten Anzahl von Minuten gespeichert. Der Entwurf wird nur automatisch gespeichert, wenn er seit der letzten Speicherung oder automatischen Speicher geändert wurde. Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.
-
