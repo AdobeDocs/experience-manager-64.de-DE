@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: e57b7a69-6e25-4066-ad7a-917969cebbe8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 93%
 
 ---
-
 
 # Verwalten von Workflows{#administering-workflows}
 
@@ -32,14 +31,14 @@ Workflows ermöglichen Ihnen die Automatisierung von Adobe Experience Manager (A
 Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows dargestellt werden. Der Prozess der Veröffentlichung von Website-Inhalten umfasst z. B. in der Regel Schritte wie die Genehmigung und Abnahme durch verschiedene beteiligte Personen. Diese Prozesse können als AEM-Workflows implementiert und auf Inhaltsseiten und Assets angewandt werden.
 
 * [Starten von Workflows](/help/sites-administering/workflows-starting.md)
-* [Verwalten der Workflow-Instanzen](/help/sites-administering/workflows-administering.md)
+* [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md)
 * [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter:
 >
->* Beantragung und Teilnahme an Workflows: [Arbeiten mit Workflows](/help/sites-authoring/workflows.md).
+>* Anwenden und Teilnehmen an Workflows: [Arbeiten mit Workflows](/help/sites-authoring/workflows.md).
 >* Das Erstellen von Workflow-Modellen und die Erweiterung der Workflow-Funktionalität: [Entwickeln und Erweitern von Workflows](/help/sites-developing/workflows.md).
 >* Verbesserung der Leistung von Workflows, die bedeutende Serverressourcen nutzen: [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
@@ -47,7 +46,7 @@ Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows 
 
 
 
-## Workflow-Modelle und -Instanzen {#workflow-models-and-instances}
+## Workflow-Modelle und -Instanzen  {#workflow-models-and-instances}
 
 [Workflow-Modelle](/help/sites-developing/workflows.md#model) in AEM sind die Darstellung und Implementierung von Geschäftsprozessen:
 
@@ -60,9 +59,9 @@ Wenn ein Workflow-Modell gestartet (ausgeführt) wird, wird eine Workflow-Instan
 
 >[!CAUTION]
 >
->Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln Workflows](/help/sites-developing/workflows.md#model).
+>Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln von Workflows](/help/sites-developing/workflows.md#model) .
 
-Workflow-Instanzen werden über den folgenden Lebenszyklus fortgeführt:
+Workflow-Instanzen durchlaufen den folgenden Lebenszyklus:
 
 1. Das Workflow-Modell wird gestartet und eine Workflow-Instanz wird erstellt und ausgeführt.
 
@@ -108,6 +107,5 @@ Ein Workflow kann einen der folgenden Status aufweisen:
 Je nach dem aktuellen Status können Sie Aktionen zur Ausführung von Workflow-Instanzen durchführen, wenn Sie beim normalen Fortschritt einer Workflow-Instanz eingreifen müssen:
 
 * **Aussetzen**: Hält die Ausführung des Workflows vorübergehend an. Das Aussetzen ist in Ausnahmefällen nützlich, wenn Sie nicht möchten, dass der Workflow fortgeführt wird – so zum Beispiel bei der Wartung. Durch das Aussetzen ändert sich der Workflow-Status zu „Unterbrochen“.
-* **Fortsetzen**: Startet einen unterbrochenen Workflow an demselben Punkt der Ausführung, an dem er ausgesetzt wurde, und verwendet dieselbe Konfiguration.
-* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABORTED**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
-
+* **Fortsetzen**: Startet einen ausgesetzten Workflow an der Stelle der Ausführung neu, an der er ausgesetzt wurde, und verwendet dabei dieselbe Konfiguration.
+* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABGEBROCHEN**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
