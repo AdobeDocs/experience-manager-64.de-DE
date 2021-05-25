@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Sprachkopie
+exl-id: 316903a8-22cf-45e6-a9f3-ac1d75beddec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 80%
 
 ---
-
 
 # Erstellen eines Sprach-Stamms mithilfe der klassischen Benutzeroberfläche{#creating-a-language-root-using-the-classic-ui}
 
@@ -27,7 +26,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 1. Fügt eine neue untergeordnete Seite hinzu, welche die Sprachversion der Website darstellt:
 
    1. Klicken Sie auf „Neu“ > „Neue Seite“.
-   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss das Format `<language-code>` oder `<language-code>_<country-code>` haben, z. B. en, en_US, en_us, en_GB, en_gb.
+   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>` sein, z. B. en, en_US, en_us, en_GB, en_gb.
 
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Klein- oder Großbuchstaben gemäß ISO-3166
@@ -48,7 +47,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 
    Im folgenden Beispiel wird die Seite „Ausrüstung“/„Sonnenbrille“/„Irian“ in die französische Sprachversion kopiert.
 
-   ![languagesCopydilogdropdown](assets/languagecopydilogdropdown.png)
+   ![languageCopyDilogdown](assets/languagecopydilogdropdown.png)
 
    | Art der Sprachkopie | Beschreibung |
    |---|---|
@@ -59,4 +58,3 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 
 1. Klicken Sie auf „OK“, um das Dialogfeld zu schließen.
 1. Klicken Sie im nächsten Dialogfeld auf „Ja“, um die Kopie zu bestätigen.
-
