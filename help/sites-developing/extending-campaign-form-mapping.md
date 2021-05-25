@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
-translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+exl-id: 3270a279-13ef-4bbf-aafe-539df388c652
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 93%
 
 ---
-
 
 # Erstellen benutzerdefinierter Formularzuordnungen{#creating-custom-form-mappings}
 
@@ -31,7 +30,7 @@ Sie müssen Folgendes installiert haben:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Weitere Informationen finden Sie unter [AEM mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) integrieren.
+Weitere Informationen finden Sie unter [AEM mit Adobe Campaign Classic integrieren](/help/sites-administering/campaignonpremise.md) .
 
 ## Erstellen benutzerdefinierter Formularzuordnungen {#creating-custom-form-mappings-2}
 
@@ -44,9 +43,9 @@ Zur Erstellung benutzerdefinierter Formularzuordnungen führen Sie die folgenden
 1. Das Formular, das die erstellte Bereitstellung verwendet, in AEM erstellen
 1. Das Formular zum Testen übermitteln
 
-### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
+### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign  {#creating-the-custom-table-in-adobe-campaign}
 
-Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition, um eine Ereignis-Tabelle zu erstellen:
+Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition, um eine Ereignistabelle zu erstellen:
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -65,7 +64,7 @@ Klicken/tippen Sie in Adobe Campaign auf **Hinzufügen**, um eine neue Erweiter
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Verwenden Sie jetzt die Felder aus der Tabelle **Ereignis**, um die Tabelle **samen** zu erweitern:
+Verwenden Sie nun die Felder aus der Tabelle **event** , um die Tabelle **seed** zu erweitern:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -129,4 +128,3 @@ Sie können das Formular nun übermitteln, um in Adobe Campaign zu überprüfen
 Beim Übermitteln des Formulars wird dieser Fehler in der Datei **error.log** von AEM protokolliert.
 
 Dies ist auf ein ungültiges Format für das Datumsfeld zurückzuführen. Die Lösung besteht darin, einen Wert im Format **JJJJ-MM-TT** anzugeben.
-
