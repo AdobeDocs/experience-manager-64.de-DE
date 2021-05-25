@@ -2,16 +2,15 @@
 title: AEM Assets-Startseitenerlebnis
 description: Passen Sie die AEM Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
 contentOwner: AG
-feature: Developer Tools,Asset Management
+feature: Entwicklertools,Asset Management
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '578'
 ht-degree: 56%
 
 ---
-
 
 # AEM Assets-Startseitenerlebnis {#aem-assets-home-page-experience}
 
@@ -21,32 +20,32 @@ Die Adobe Experience Manager (AEM) Assets-Startseite bietet ein ansprechendes un
 
 Die Assets-Startseite ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
 
-1. Um auf AEM Configuration Manager zuzugreifen, klicken Sie auf **[!UICONTROL Tools > Vorgang > Web-Konsole]**.
-1. Öffnen Sie den Dienst **Day CQ DAM Ereignis Recorder**.
-1. Wählen Sie **[!UICONTROL Aktivieren Sie diesen Dienst]**, um die Aufzeichnung der Aktivität zu aktivieren.
+1. Um auf AEM Configuration Manager zuzugreifen, klicken Sie auf **[!UICONTROL Tools > Vorgang > Web Console]**.
+1. Öffnen Sie den Dienst **Day CQ DAM Event Recorder** .
+1. Wählen Sie **[!UICONTROL Aktivieren Sie diesen Dienst]**, um die Aktivitätsaufzeichnung zu aktivieren.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Wählen Sie in der Liste **Ereignistyp** die aufzuzeichnenden Ereignis aus und speichern Sie die Änderungen.
+1. Wählen Sie in der Liste **Ereignistypen** die Ereignisse aus, die aufgezeichnet werden sollen, und speichern Sie die Änderungen.
 
    >[!CAUTION]
    >
    >Die Aktivierung der Optionen „Angezeigte Assets“, „Angezeigte Projekte“ und „Angezeigte Sammlungen“ erhöht die Anzahl der aufgezeichneten Ereignisse erheblich.
 
-1. Öffnen Sie den Dienst **[!UICONTROL DAM Asset Startseite Feature Flag]** in Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Wählen Sie die Option **[!UICONTROL isEnabled.name]**, um die Funktion &quot;Asset-Startseite&quot;zu aktivieren. Speichern Sie die Änderungen.
+1. Öffnen Sie den Dienst **[!UICONTROL DAM Asset Home Page Feature Flag]** im Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Wählen Sie die Option **[!UICONTROL isEnabled.name]** aus, um die Funktion &quot;Assets-Homepage&quot;zu aktivieren. Speichern Sie die Änderungen.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Öffnen Sie das Dialogfeld **[!UICONTROL Benutzereinstellungen]** und wählen Sie **[!UICONTROL Startseite &quot;Elemente aktivieren]**&quot;aus. Speichern Sie die Änderungen.
+1. Öffnen Sie das Dialogfeld **[!UICONTROL Benutzereinstellungen]** und wählen Sie **[!UICONTROL Asset-Homepage aktivieren]** aus. Speichern Sie die Änderungen.
 
-   ![user_preferences](assets/user_preferences.png)
+   ![user_Preferences](assets/user_preferences.png)
 
-Nachdem Sie die Assets-Startseite aktiviert haben, navigieren Sie auf der Navigationsseite zur Benutzeroberfläche &quot;Assets&quot;.
+Navigieren Sie nach Aktivierung der Assets-Startseite von der Navigationsseite zur Assets-Benutzeroberfläche.
 
 ![home_page](assets/home_page.png)
 
-Tippen/klicken Sie auf **[!UICONTROL Klicken Sie hier, um Ihren Erlebnislink]** zu konfigurieren, um Ihren Benutzernamen, Ihr Hintergrundbild und Ihr Profil hinzuzufügen.
+Tippen/klicken Sie auf **[!UICONTROL Klicken Sie hier , um Ihren Erlebnislink]** zu konfigurieren und Ihren Benutzernamen, Ihr Hintergrundbild und Ihr Profilbild hinzuzufügen.
 
 Die Assets-Startseite enthält die folgenden Abschnitte:
 
@@ -55,7 +54,7 @@ Die Assets-Startseite enthält die folgenden Abschnitte:
 
 **Begrüßungsabschnitt** 
 
-Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Außerdem werden Ihr Profil und ein Begrüßungsbild angezeigt (falls bereits konfiguriert).
+Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Darüber hinaus werden Ihr Profilbild und ein Willkommensbild angezeigt (sofern bereits konfiguriert).
 
 Wenn Ihr Profil unvollständig ist, zeigt der Begrüßungsabschnitt eine generische Begrüßungsnachricht und einen Platzhalter für Ihr Profilbild an.
 
@@ -67,19 +66,19 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 * Aktuell
 * Entdecken
 
-**Aktivität**: Unter diesem Abschnitt zeigt das  **My** Activity Widget die letzten Aktivitäten an, die der angemeldete Benutzer mit Assets (einschließlich Assets ohne Ausgabeformate) durchgeführt hat, z. B. Asset-Uploads, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und Teilen-Vorgänge.
+**Aktivität**: Unter diesem Abschnitt zeigt das Widget  **Meine** Aktivität die letzten Aktivitäten an, die der angemeldete Benutzer mit Assets ausgeführt hat (einschließlich Assets ohne Ausgabedarstellungen), z. B. Asset-Uploads, -Downloads, Asset-Erstellung, -Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
 
-**Zuletzt**: Das  **Widget &quot;Zuletzt** angezeigt&quot;unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
+**Zuletzt**: Das Widget  **Kürzlich** angezeigte Anzeigen unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten, auf die der angemeldete Benutzer zugegriffen hat, einschließlich Ordnern, Sammlungen und Projekten.
 
-**Discover**: Das  **** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die AEM Assets-Instanz hochgeladen wurden.
+**Discover**: Das  **** Newwidget unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die kürzlich in die AEM Assets-Instanz hochgeladen wurden.
 
-Um das Bereinigen von Benutzerdaten zu aktivieren, aktivieren Sie den Dienst **DAM Ereignis Purge Service** in Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
+Um die Bereinigung der Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **DAM-Ereignisbereinigungsdienst** in Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
 Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in der Symbolleiste für das Zugreifen auf Ordner, Sammlungen und Kataloge.
 
 >[!NOTE]
 >
->Die Aktivierung der Day CQ DAM Ereignis Recorder- und DAM Ereignis Purge-Dienste erhöht die Schreibvorgänge in JCR und die Suchindizierung, wodurch die Belastung auf dem AEM erheblich erhöht wird. Die zusätzliche Last auf dem AEM-Server kann dessen Leistung beeinträchtigen.
+>Durch die Aktivierung der Day CQ DAM Event Recorder- und DAM Event Purge-Dienste werden Schreibvorgänge in JCR und die Suchindizierung erhöht, wodurch die Belastung des AEM-Servers deutlich erhöht wird. Die zusätzliche Last auf dem AEM-Server kann dessen Leistung beeinträchtigen.
 
 >[!CAUTION]
 >
