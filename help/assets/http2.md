@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '733'
@@ -20,7 +19,7 @@ ht-degree: 99%
 
 ---
 
-# Bereitstellung von Inhalt über HTTP/2  {#http-delivery-of-content}
+# Bereitstellung von Inhalt über HTTP/2   {#http-delivery-of-content}
 
 Adobe freut sich, die Bereitstellung von Inhalt über HTTP/2 zu präsentieren, die eine Verbesserung der Leistung mit sich bringt.
 
@@ -45,7 +44,7 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Bin ich berechtigt, auf HTTP/2 umzustellen?   {#am-i-eligible-to-switch-over-to-http}
+## Bin ich berechtigt, auf HTTP/2 umzustellen?  {#am-i-eligible-to-switch-over-to-http}
 
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
@@ -87,7 +86,7 @@ Anfragen werden in der Reihenfolge verarbeitet, in der sie beim technischen Supp
 >
 >Die Vorlaufzeit kann lang sein, da die Umstellung auf HTTP/2 die Löschung des Cache erfordert. Es können daher nur wenige Umstellungen zugleich durchgeführt werden.
 
-## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?   {#what-are-the-risks-with-moving-to-http}
+## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?  {#what-are-the-risks-with-moving-to-http}
 
 Durch die Umstellung auf HTTP/2 wird Ihr Cache im CDN gelöscht, da eine neue CDN-Konfiguration erforderlich ist.
 
