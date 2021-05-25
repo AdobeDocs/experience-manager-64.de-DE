@@ -9,22 +9,21 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
 
-
 # Konfigurieren von Abwesenheitseinstellungen {#configuring-out-of-office-settings}
 
-Die Abwesenheitsfunktion ermöglicht es Ihnen, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für Formulare zugewiesene Aufgaben auszuführen. Während ein Benutzer auf „Abwesenheit“ festgelegt ist, werden dessen Aufgaben einem oder mehreren anderen festgelegten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern oder Administratoren können die Einstellungen für einen Benutzer im Arbeitsablauf für Formulare ändern.
+Die Abwesenheitsfunktion ermöglicht es Ihnen, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für Formulare zugewiesene Aufgaben auszuführen. Während ein Benutzer auf „Abwesenheit“ festgelegt ist, werden dessen Aufgaben einem oder mehreren anderen festgelegten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern oder Administratoren können die Einstellungen im Namen eines Benutzers im Arbeitsablauf für Formulare ändern.
 
 Beim Erstellen eines Prozesses kann der Workbench-Benutzer festlegen, ob eine Aufgabe aufgrund von Abwesenheitseinstellungen weitergeleitet werden darf.
 
-## Die Abwesenheitsinformationen eines Benutzers anzeigen {#view-a-user-s-out-of-office-information}
+## Die Abwesenheitsinformationen eines Benutzers anzeigen  {#view-a-user-s-out-of-office-information}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Abwesenheit“.
 1. Sie haben auf der Seite „Abwesenheit“ im Feld am oberen Rand folgende Möglichkeiten:
@@ -71,4 +70,3 @@ Während ein Benutzer nicht im Hause ist, können Sie einen oder mehrere Benutze
 
    1. Wenn Prozesse vorhanden sind, die nicht an den Standardbenutzer gesendet werden sollen, klicken Sie auf „Ausnahme hinzufügen“, wählen Sie den Prozess aus und wählen Sie dann einen anderen Benutzer aus der Liste aus. Darüber hinaus können Sie „Nicht zuweisen“ auswählen, damit die Aufgabe dem abwesenden Benutzer zugewiesen bleibt.
    1. Klicken Sie auf Speichern.
-
