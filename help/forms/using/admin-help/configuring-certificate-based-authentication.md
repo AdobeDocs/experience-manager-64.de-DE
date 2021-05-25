@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 94%
 
 ---
-
 
 # Zertifikatbasierte Authentifizierung konfigurieren {#configuring-certificate-based-authentication}
 
@@ -24,7 +23,7 @@ User Management führt in der Regel die Authentifizierung mithilfe eines Benutze
 
 Zum Verwenden der zertifikatbasierten Authentifizierung importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA), der Sie vertrauen, in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung.
 
-## CA-Zertifikat importieren {#import-the-ca-certificate}
+## CA-Zertifikat importieren  {#import-the-ca-certificate}
 
 Wählen Sie beim Importieren des Zertifikats die Optionen „Trust für Zertifikatauthentifizierung“ und „Trust für Identität“ sowie weitere erforderliche Optionen aus. Einzelheiten zum Importieren von Zertifikaten finden Sie unter [Zertifikate verwalten](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
@@ -57,8 +56,8 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
    Sie können folgende Zeichen in dem Regex verwenden:
 
-   * : (alle Zeichen)
-   * &amp;ast; (0 oder mehr Vorfälle)
+   * . (alle Zeichen)
+   * &amp;ast; (0 oder mehr Vorkommen)
    * () (Geben Sie die Gruppe in Klammern an)
    * \ (Wird verwendet, um ein Regex-Zeichen durch ein reguläres Zeichen zu ersetzen)
    * $n (Wird verwendet, um auf die n-te Gruppe zu verweisen)
@@ -98,4 +97,3 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Zertifikatzuordnung“.
 1. Aktivieren Sie das Kontrollkästchen der zu löschenden Zertifikatzuordnung und klicken Sie auf „Löschen“ und anschließend auf „OK“.
-
