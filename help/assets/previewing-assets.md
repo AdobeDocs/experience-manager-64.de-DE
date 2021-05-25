@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
 exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
-feature: Asset Management,Renditions
+feature: Asset-Management,Ausgabeformate
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '1031'
@@ -22,11 +21,11 @@ ht-degree: 90%
 
 # Anzeigen von Dynamic Media-Assets in der Vorschau {#previewing-assets}
 
-Sie können **[!UICONTROL Vorschau]** verwenden, um zu sehen, wie ein digitales Dynamic Media-Asset aussieht, wenn es von einem Kunden in seinem eigenen Webbrowser angezeigt wird. Der dem Asset zugeordnete standardmäßige, eingebettete, geräteübergreifende Viewer wird für die **[!UICONTROL Vorschau]** verwendet.
+Sie können **[!UICONTROL Vorschau]** verwenden, um zu sehen, wie ein digitales Dynamic Media-Asset aussieht, wenn es von einem Kunden in seinem eigenen Webbrowser angezeigt wird. Der dem Asset zugewiesene standardmäßige eingebettete, geräteübergreifende Viewer wird für die **[!UICONTROL Vorschau]** verwendet.
 
 Ein Viewer ist eine Sammlung aus verschiedenen Einstellungen oder „Vorgaben“, wie die Viewer-Anzeigegröße, das Zoom-Verhalten, die Farbschemata, Rahmen, Schriftarten usw., die bestimmen, wie Rich-Media-Assets auf den Computerbildschirmen und Mobilgeräten der Benutzer angezeigt werden.
 
-Neben der dedizierten Vorschau für Videos, Rotationssets und Bildsätze können Sie ein Asset auch mithilfe von von von Ihnen erstellten Viewer-Vorgaben Vorschauen durchführen. Sie können auch Bildvorgaben zur Vorschau von Bilddarstellungen verwenden.
+Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bildsets verwenden und außerdem mithilfe der von Ihnen erstellten Viewer-Vorgaben eine Vorschau eines Assets anzeigen. Alternativ können Sie Bildvorgaben verwenden, um Ausgabeformate von Bildern in der Vorschau anzuzeigen.
 
 * [Anwenden von Bildvorgaben](image-presets.md)
 * [Anwenden von Viewer-Vorgaben](viewer-presets.md)
@@ -37,7 +36,7 @@ Neben der dedizierten Vorschau für Videos, Rotationssets und Bildsätze können
 
 **So zeigen Sie die Asset-Vorschau an**:
 
-1. Tippen Sie auf der Seite **Adobe Experience Manager** auf **[!UICONTROL Navigation]** auf **[!UICONTROL Asset]s** und dann **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
+1. Tippen Sie in **Adobe Experience Manager** auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Asset]s** und dann auf **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
 1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht]**.
 1. (Optional) Sortieren Sie in der Spalte **[!UICONTROL Typ]** die Assets nach dem Typ, den Sie in einer Vorschau anzeigen möchten.
 1. Klicken Sie in der Spalte **[!UICONTROL Titel]** auf den Namen des Titels (nicht auf die Miniaturansicht) des Assets, das Sie in der Vorschau anzeigen möchten.
@@ -46,7 +45,7 @@ Neben der dedizierten Vorschau für Videos, Rotationssets und Bildsätze können
 <table> 
  <tbody>
   <tr>
-   <td><strong>Asset-Typ, auf den Sie getippt haben</strong><br /> </td> 
+   <td><strong>Asset-Typ, auf den Sie tippt haben</strong><br /> </td> 
    <td><strong>Asset-Vorschau in bestimmter Ausgabedarstellung möglich?</strong></td> 
    <td><strong>Asset-Vorschau in bestimmtem Viewer möglich?</strong></td> 
   </tr>
