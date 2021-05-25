@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
-translation-type: tm+mt
-source-git-commit: 043634cb2e93ca7f94c61a6a073746174a638424
+exl-id: 7f80d46e-4ecd-4c29-abb5-949e2d429841
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 98%
 
 ---
-
 
 # SAML-Dienstanbietereinstellungen konfigurieren{#configure-saml-service-provider-settings}
 
@@ -63,4 +62,3 @@ Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language 
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Klicken Sie auf Speichern.
-
