@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 24f94dd5-62a4-4ac3-9a1b-a8e189da9958
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 96%
 
 ---
-
 
 # Vorschau von Seiten mit ContextHub-Daten {#previewing-pages-using-contexthub-data}
 
@@ -49,7 +48,7 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 Jedes Benutzeroberflächenmodul verfügt über eigene Funktionen, es stehen jedoch auch folgende gemeinsam genutzte Funktionen zur Verfügung. Da sich die Benutzeroberflächenmodule erweitern lassen, können Entwickler je nach Wunsch weitere Funktionen einbauen.
 
-### Inhalt der Symbolleiste  {#toolbar-content}
+### Inhalt der Symbolleiste   {#toolbar-content}
 
 Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub-Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
 
@@ -70,4 +69,3 @@ In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formulare
 Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
 
 ![](do-not-localize/chlimage_1-18.png)
-
