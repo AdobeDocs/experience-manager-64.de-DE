@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 78%
 
 ---
 
-
 # Analyse mit externen Anbietern{#analytics-with-external-providers}
 
 Analysen können Ihnen wichtige und interessante Informationen darüber liefern, wie Ihre Website verwendet wird.
 
-Für die Integration mit dem entsprechenden Dienst stehen verschiedene vordefinierte Konfigurationen zur Verfügung, z. B.:
+Zur Integration mit dem entsprechenden Dienst stehen verschiedene vordefinierte Konfigurationen zur Verfügung, z. B.:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
@@ -56,10 +55,10 @@ Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichte
 
 >[!CAUTION]
 >
->Die Demo-Site &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode (direkt über dem Endtag `</html>`) im entsprechenden Skript `js` angehängt werden.
+>Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode (direkt über dem Endtag `</html>`) im entsprechenden Skript `js` angehängt werden.
 >
 >
->Wenn Sie Ihre eigenen `/apps` nicht von der Standardseitenkomponente ( `/libs/foundation/components/page`) übernehmen, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte eingeschlossen sind, z. B. indem Sie `cq/cloudserviceconfigs/components/servicescomponents` einschließen oder einen ähnlichen Mechanismus verwenden.
+>Wenn Ihr eigenes `/apps` nicht von der standardmäßigen Seitenkomponente ( `/libs/foundation/components/page`) erbt, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte enthalten sind, z. B. durch Einschließen von `cq/cloudserviceconfigs/components/servicescomponents` oder durch Verwendung eines ähnlichen Mechanismus.
 >
 >
 >Ohne diese Komponente funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
@@ -74,7 +73,7 @@ Für die Grundkonfiguration:
 
 1. Doppelklicken Sie auf **Generisches Analyse-Snippet**, um die Seite zu öffnen:
 
-   ![analytics_generiverview](assets/analytics_genericoverview.png)
+   ![analytics_genericoverview](assets/analytics_genericoverview.png)
 
 1. Klicken Sie auf das Plussymbol (+), um eine neue Konfiguration mithilfe des Dialogfelds hinzuzufügen. Sie müssen mindestens einen Namen, z. B. Google Analytics, zuweisen:
 
@@ -100,7 +99,7 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Das **Generic Analytics Snippet** wird jetzt mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
+1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Das **generische Analytics-Snippet** wird jetzt mit der Meldung `Configuration reference missing` aufgeführt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
 
    ![analytics_selectspecificservice](assets/analytics_selectspecificservice.png)
 
@@ -113,4 +112,3 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
    >[!NOTE]
    >
    >Wenn die Konfiguration an eine Seite mit untergeordneten Seiten angehängt wird, wird der Dienst von diesen ebenfalls übernommen.
-
