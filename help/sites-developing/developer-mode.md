@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
-translation-type: tm+mt
-source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 86%
 
 ---
-
 
 # Entwicklermodus{#developer-mode}
 
@@ -39,7 +38,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >* Der Modus ist nur in der Touch-optimierten Oberfläche (beim Bearbeiten von Seiten) verfügbar.
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
    >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
->* Ist nur Benutzern verfügbar, die Mitglieder der `administrators`-Gruppe sind.
+>* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
 
 
 >[!CAUTION]
@@ -48,7 +47,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
 >
->* auf einer Autoreninstanz mit dem Ausführungsmodus nosampleContent
+>* auf einer Autoreninstanz im Ausführungsmodus nosamplecontent
 >* auf einer Veröffentlichungsinstanz
 
 >
@@ -63,7 +62,7 @@ Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 >* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 
-## Öffnen des Entwicklermodus {#opening-developer-mode}
+## Öffnen des Entwicklermodus  {#opening-developer-mode}
 
 Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den Bereich zu öffnen, wählen Sie in der Symbolleiste des Seiten-Editors aus der Modusauswahl die Option **Entwickler** aus:
 
@@ -71,11 +70,11 @@ Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den
 
 Der Bereich ist in zwei Registerkarten unterteilt:
 
-* **[Komponenten](/help/sites-developing/developer-mode.md#components)** : Zeigt eine Komponentenstruktur, ähnlich der  [Inhaltsstruktur ](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren
+* **[Komponenten](/help/sites-developing/developer-mode.md#components)**  - Zeigt eine Komponentenstruktur an, ähnlich der  [Inhaltsstruktur ](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren
 
 * **[Fehler](/help/sites-developing/developer-mode.md#errors)** – Wenn ein Problem auftritt, werden hier die Details für die jeweilige Komponente angezeigt.
 
-### Komponenten {#components}
+### Komponenten  {#components}
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
@@ -120,7 +119,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Sie dürfen jedoch unter **nichts unter** bearbeiten, da Ihre Änderungen möglicherweise verloren gehen. `/libs` Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` vorgenommen werden, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da Ihre Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` vorgenommen werden, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 
@@ -137,7 +136,7 @@ Wird beispielsweise eine nicht definierte Methode aufgerufen, wird der daraus re
 
 Der Komponenteneintrag in der Struktur auf der Registerkarte „Komponenten“ wird ebenfalls entsprechend markiert, wenn ein Fehler auftritt.
 
-### Tests  {#tests}
+### Tests {#tests}
 
 >[!CAUTION]
 >
