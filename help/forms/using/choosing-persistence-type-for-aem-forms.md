@@ -10,14 +10,13 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: ef486673-30fe-410a-83cf-c55be6064ce4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 100%
 
 ---
-
 
 # Wählen eines Persistenztyps für eine AEM Forms-Installation {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
@@ -64,7 +63,7 @@ TarMK ist auf Leistung ausgerichtet, während bei MongoMK und RDBMK die Skalierb
 
 Die Liste der unterstützten Microkernel finden Sie in den Artikeln [Technische Anforderungen für AEM Forms on OSGi](/help/sites-deploying/technical-requirements.md) oder [Unterstützte Plattformkombinationen für AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
-## Wählen eines Microkernel des Typs Mongo oder relationale Datenbank über TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
+## Wählen eines Microkernel des Typs Mongo oder relationale Datenbank über TarMK  {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Eine skalierbare (geclusterte) AEM Forms-Umgebung besteht aus einem Satz von zwei oder mehr horizontal konfigurierten aktiven Autoreninstanzen. Sie können mehr als eine Autoreninstanz ausführen, wenn ein einzelner Server zur Unterstützung aller gleichzeitigen Authoring-Aktivitäten nicht mehr ausreicht.
 
