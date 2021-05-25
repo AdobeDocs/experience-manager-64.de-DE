@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 2980ec6d-cdd4-4fbd-b4a4-5e45e4508903
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 92%
 
 ---
-
 
 # Kampagnen-Management{#campaign-management}
 
@@ -37,11 +36,11 @@ In diesem Dokument werden die verschiedenen Elemente beschrieben, aus denen Kamp
 Das Kampagnenmanagement umfasst verschiedene Elemente:
 
 * **Marken**
-In AEM sind Marken die oberste Ebene und bilden eine Sammlung von 
+In AEM bilden Marken die oberste Ebene und bilden eine Sammlung von 
 **Kampagnen**.
 
 * ****
-KampagnenEine Kampagne ist eine Sammlung von 
+KampagnenEine Kampagne ist eine Kollektion einzelner Kampagnen 
 **Erlebnisse**.
 
 * ****
@@ -60,7 +59,7 @@ ErlebnisseDer fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Be
 
    * **Newsletter**
 
-      [Mithilfe von E-Mail-](#emailmarketing) Mitteilungen werden Benutzer dazu angeregt, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+      [E-Mail-](#emailmarketing) Kommunikation wird verwendet, um Benutzer dazu anzuregen, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -96,4 +95,3 @@ ErlebnisseDer fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Be
    Sie können von verschiedenen (als **Kampagnen** gekennzeichneten) Positionen oder z. B. über folgende URL darauf zugreifen:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
-
