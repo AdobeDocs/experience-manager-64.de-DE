@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
-translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+exl-id: c8ebd18b-fa24-4264-bd17-f553a2a784d9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 76%
 
 ---
-
 
 # Schrittweise Anleitung zur We.Gov-Referenz-Site {#we-gov-reference-site-walkthrough}
 
@@ -31,7 +30,7 @@ We.Gov ist ein vom Staat geleitetes Unternehmen, bei dem sich Adoptiveltern für
 * Details zur Person und zum Beruf des Antragstellers (wenn der Antragsteller für Kindergeld berechtigt ist)
 * Persönliche Angaben zum adoptierten Kind
 
-   Der Antragsteller kann Details zu mehr als einem Kind angeben
+   Der Antragsteller kann Details für mehr als ein Kind angeben
 * Informationen zum Bankkonto des Antragstellers, auf dem der Antragsteller Kindergeld erhalten kann.
 * Einhebung der Anmeldegebühr
 * Überprüfung des Antrags
@@ -42,7 +41,7 @@ Sobald der Antrag gesendet und die Gebühren bezahlt wurden, erhält der Antrags
 
 We.Gov-Organisation erhält die Anmeldung. Das Unternehmen prüft den Antrag und genehmigt die Anträge, die authentisch sind.
 
-Nachdem der Antrag genehmigt wurde, erhält der Antragsteller eine E-Mail von der We.Gov-Website. Die Option **Ansicht Dokument** in der E-Mail verweist auf ein Dokument mit den Registrierungsdetails des Antragstellers.
+Nachdem der Antrag genehmigt wurde, erhält der Antragsteller eine E-Mail von der We.Gov-Website. Die Option **Dokument anzeigen** in der E-Mail verlinkt zu einem Dokument mit den Registrierungsdetails des Antragstellers.
 
 Die nachfolgende Infografik zeigt den Schritt-für-Schritt-Arbeitsablauf der We.Gov-Referenzwebsite.
 
@@ -55,11 +54,11 @@ Das Szenario schließt folgende Personen ein:
 * Gloria Rios, Leiter der Genehmigungsabteilung, We.Gov
 * Conard Simms, Mitarbeiter, der den Antrag prüft
 
-## Sarah beginnt mit der Berechtigungsüberprüfung {#sarah-initiates-her-eligibility-check}
+## Sarah beginnt mit der Berechtigungsüberprüfung  {#sarah-initiates-her-eligibility-check}
 
-Ein Antragsteller kann die Berechtigung auf Kindergeld prüfen. Auf der We.Gov-Website können Benutzer Fragen beantworten, um festzustellen, ob Ihr Antrag für Kindergeld bewilligt werden kann. Sarah, eine Adoptivmutter ist eine künftige Antragstellerin. Das Antragsformular ist Teil des Antrags auf Kindergeld-Services auf der Website We.Gov. Um ihre Berechtigung zu überprüfen, klickt Sarah auf der Website We.Gov auf **[!UICONTROL Kindergeld]**. Auf dieser Seite klickt Sarah dann auf **[!UICONTROL Berechtigung überprüfen]**.
+Ein Antragsteller kann die Berechtigung auf Kindergeld prüfen. Auf der We.Gov-Website können Benutzer Fragen beantworten, um festzustellen, ob Ihr Antrag für Kindergeld bewilligt werden kann. Sarah, eine Adoptivmutter ist eine künftige Antragstellerin. Das Berechtigungsformular ist Teil des Antrags für Kindergeld auf der We.Gov-Website. Um ihre Berechtigung zu überprüfen, klickt Sarah auf der We.Gov-Website auf **[!UICONTROL Kindergeld]**. Auf dieser Seite klickt Sarah dann auf **[!UICONTROL Berechtigung überprüfen]**.
 
-Zusätzlich zur oben beschriebenen Vorgehensweise kann Sarah auf der Startseite auf **[!UICONTROL Erste Schritte]** klicken. Sarah wird auf die Seite „Alle Anträge“ geleitet, wo sie unter **[!UICONTROL Antrag für Kindergeldservices]** auf „Beantragen“ klicken kann. Sarah wird dann zur Berechtigungsüberprüfung weitergeleitet.
+Zusätzlich zur oben beschriebenen Vorgehensweise kann Sarah auf der Startseite auf **[!UICONTROL Erste Schritte]** klicken. Sarah wird auf die Seite „Alle Anträge“ geleitet, wo sie unter **[!UICONTROL Antrag für Kindergeldservices]** auf „Beantragen“ klicken kann. Sarah wird dann zur Berechtigungsprüfung geleitet.
 
 Auf der Seite „Berechtigung für Kindergeld überprüfen“ werden Sarah einige Fragen gestellt, um ihre Berechtigung für Kindergeld festzustellen. Sie wird beispielsweise Folgendes gefragt:
 
@@ -89,7 +88,7 @@ Die Berechtigungsüberprüfung ist Teil des adaptiven Antragsformulars für Kind
 Regeln ansehen:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus im Autorenmodus. URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. Wählen Sie eine Komponente aus und klicken Sie auf ![Bearbeitungsregeln](assets/edit-rules.png).
+1. Wählen Sie eine Komponente aus und klicken Sie auf ![edit-rules](assets/edit-rules.png).
 
    Der Regeleditor öffnet die Auflistung aller Regeln, die im Formular angewendet werden.
 
@@ -102,7 +101,7 @@ Auf der Seite „Antrag auf Kindergeld“ gibt Sarah Informationen zu folgenden 
 
 * **[!UICONTROL Über Antragsteller:]** Ermöglicht Sarah ihre Details in diesem Abschnitt anzugeben. 
 
-* **[!UICONTROL Informationen]** zum Kind: Hiermit kann Sarah die Informationen des Kindes angeben, die unter die Unterstützungsdienste fallen.
+* **[!UICONTROL Untergeordnete Informationen]**: Ermöglicht Sarah die Angabe von Kinderinformationen, die unter die Unterstützungsdienste fallen.
 
 * **[!UICONTROL Zahlung:]** Ermöglicht Sarah ihr Bankkonto anzugeben, auf das We.Gov jeden Monat das Kindergeld überweisen kann.
 
@@ -112,15 +111,15 @@ Standardmäßig wird Sarah zum Bereich **[!UICONTROL Informationen zum Antragste
 
 ![Kindergeldantrag auf dem Desktop](assets/desktop.png)
 
-Sarah kann jederzeit auf **[!UICONTROL Später zurückkehren]** klicken und mit ihrem Antrag fortfahren. Wenn sie auf **[!UICONTROL Später zurückkehren]** klickt, wird ihr Fortschritt als Entwurf gespeichert und sie erhält eine Option zum Versenden des Entwurfs per E-Mail.
+Sarah kann jederzeit auf **[!UICONTROL Später zurückkehren]** klicken und mit ihrem Antrag fortfahren. Wenn sie auf **[!UICONTROL Später zurückkehren]** klickt, wird ihr Fortschritt als Entwurf gespeichert und sie erhält eine Option, den Entwurf per E-Mail zu versenden.
 
-Wenn sie auf **[!UICONTROL E-Mail senden]** klickt, erhält sie eine E-Mail mit einem Link zum Formularentwurf.
+Wenn sie auf **[!UICONTROL E-Mail senden]** klickt, erhält sie eine E-Mail mit einer Verknüpfung zum Formularentwurf.
 
 Das Formular für Kindergeld auf der We.Gov-Website verwendet adaptive Formulare. Sie kann den Link zur E-Mail verwenden und das Formular auf einem mobilen Gerät ausfüllen.
 
 >[!NOTE]
 >
->Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldeangaben sind `srose/password`.
+>Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldedaten sind `srose/password`.
 
 ![mob1](assets/mob1.png)
 
@@ -134,7 +133,7 @@ Im Bereich „Informationen zum Antragsteller“ muss sie Angaben auf folgenden 
 
 * **[!UICONTROL Grundlegende Informationen]**
 
-Unter &quot;Grundlegende Informationen&quot;gibt Sarah ihren ID-Testversand und ihre persönlichen Informationen ein. Zu Sarahs persönlichen Informationen gehören Name, E-Mail-ID und Sozialversicherungsnummer.
+Unter &quot;Grundlegende Informationen&quot;stellt Sarah ihren ID-Nachweis und ihre personenbezogenen Daten bereit. Sarahs persönliche Informationen umfassen ihren Namen, ihre E-Mail-Adresse und ihre Sozialversicherungsnummer.
 
 * **[!UICONTROL Beziehung]**
 
@@ -142,7 +141,7 @@ Unter &quot;Grundlegende Informationen&quot;gibt Sarah ihren ID-Testversand und 
 
 * **[!UICONTROL Zusätzliche Informationen]**
 
-   Unter &quot;Zusätzliche Informationen&quot;gibt Sarah eine ID, ihr Geburtsdatum sowie die aktuelle Adresse und Telefonnummer ein.
+   Unter &quot;Zusätzliche Informationen&quot;gibt Sarah eine ID-Nummer, ihr Geburtsdatum sowie die aktuelle Adresse und Telefonnummer ein.
 
 ### Sarah stellt Informationen zum Kind bereit {#sarah-provides-child-information}
 
@@ -197,9 +196,9 @@ Die Überprüfung der Anspruchsberechtigung verwendet die Regeln, die in dem For
 
 ### Sehen Sie selbst{#see-it-yourself-1} 
 
-Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` und geben Sie die erforderlichen Informationen ein. Wenn Sie nach dem Ausfüllen der erforderlichen Informationen, dem Bezahlen der Gebühr und dem Signieren das Dokument senden, erhalten Sie eine Bestätigungs-E-Mail.
+Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` und füllen Sie die erforderlichen Informationen aus. Wenn Sie nach dem Ausfüllen der erforderlichen Informationen, dem Bezahlen der Gebühr und dem Signieren das Dokument senden, erhalten Sie eine Bestätigungs-E-Mail.
 
-Die Kindervorlage We.Gov finden Sie hier: `https://<hostname>:<AuthorPort>/editor.html/conf/we-gov/settings/wcm/templates/we-gov-child-template/structure.html`
+Die We.Gov-untergeordnete Vorlage finden Sie hier: `https://<hostname>:<AuthorPort>/editor.html/conf/we-gov/settings/wcm/templates/we-gov-child-template/structure.html`
 
 Das Thema finden Sie hier: `https://<hostname>:<AuthorPort>/editor.html/content/dam/formsanddocuments-themes/we-gov/we-gov-theme-A/jcr:content`
 
@@ -209,7 +208,7 @@ Um alle Regeln anzuzeigen, führen Sie die folgenden Schritte aus:
 
    URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`
 
-1. Wählen Sie eine Komponente aus und tippen Sie auf ![Bearbeitungsregeln](assets/edit-rules.png). Alle Regeln werden im Regeleditor angezeigt, einschließlich der oben aufgelisteten Regeln.
+1. Wählen Sie eine Komponente aus und tippen Sie auf ![edit-rules](assets/edit-rules.png). Alle Regeln werden im Regeleditor angezeigt, einschließlich der oben aufgelisteten Regeln.
 
 ## Gloria erhält den Antrag {#gloria-receives-the-application}
 
@@ -221,7 +220,7 @@ Wenn Sarah den Kindergeldantrag einreicht, wird ein PDF-Dokument oder ein Datens
 
 ### Sehen Sie selbst{#see-it-yourself-2} 
 
-Seite öffnen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als Vertreter]** anmelden und melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM an. Die Kindergeld-Anwendung wird angezeigt. Weitere Informationen zur Verwendung AEM Inbox für formularorientierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Seite öffnen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als Vertreter anmelden]** und melden Sie sich beim AEM-Posteingang mit grios/password als Benutzernamen/Kennwort für Gloria Rios an. Die Kindergeld-Anwendung wird angezeigt. Informationen zur Verwendung AEM Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Posteingang](/help/forms/using/manage-applications-inbox.md).
 
 ![Glorias Posteingang auf der We.Gov-Referenzwebsite](assets/gloria-inbox.png)
 
@@ -229,10 +228,10 @@ Gloria kann den Antrag vom Antrags-Dashboard aus anzeigen, genehmigen oder ableh
 
 ### Funktionsweise {#how-it-works-3}
 
-Gloria, Leiterin für Genehmigungen bei We.Gov, öffnet den AEM-Posteingang. Es wird eine Überprüfungsaufgabe in der Aufgabenliste angezeigt. Sie öffnet und Ansicht die Review-Aufgabe.
+Gloria, Leiterin für Genehmigungen bei We.Gov, öffnet den AEM-Posteingang. Es wird eine Überprüfungsaufgabe in der Aufgabenliste angezeigt. Sie öffnet und sieht sich die Prüfungsaufgabe an.
 
 Sie sieht eine PDF-Datei des Formulars mit allen von Sarah eingegebenen Details sowie die Dokumente, die Sarah hochgeladen hat.\
-Gloria kann den Antrag genehmigen oder ablehnen. Gloria klickt jedoch auf **[!UICONTROL Bewertung erforderlich]**, um den Antrag zu prüfen.
+Gloria kann den Antrag genehmigen oder ablehnen. Gloria klickt jedoch auf **[!UICONTROL Überprüfung erforderlich]** , um den Antrag zu prüfen.
 
 ![gloria-send-assessment](assets/gloria-sends-assessment.png)
 
@@ -242,7 +241,7 @@ Sarahs Antrag ist ein Startpunkt im AEM-Arbeitsablauf. Er initiiert den AEM-Arbe
 
 Wenn die Konfiguration abgeschlossen ist, beginnt der AEM-Arbeitsablauf sofort, nachdem das Formular gesendet wurde. Melden Sie sich mit Glorias Anmeldedaten an.
 
-Greifen Sie auf den Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-gov/en.html zu. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Als Vertreter anmelden]**, verwenden Sie Glorias Standardanmeldeinformationen:
+Greifen Sie auf den Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-gov/en.html zu. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, aktivieren Sie das Kontrollkästchen **[!UICONTROL Als Vertreter anmelden]** und verwenden Sie Glorias Standardanmeldeinformationen:
 
 * Benutzername: grios
 * Kennwort: password
@@ -255,13 +254,13 @@ Wenn Gloria auf **[!UICONTROL Überprüfung erforderlich]** klickt, erhält Cona
 
 Conard erhält die Antragsteller-Überprüfungsaufgabe wie unten dargestellt.
 
-![conrad-inbox](assets/conrad-inbox.png)
+![Posteingang](assets/conrad-inbox.png)
 
 Die Überprüfung für das Kindergeld ist ein Formular, das mit der Aufgabe verknüpft ist. Er ruft Sarahs Details zusammen mit den verknüpften unterstützenden Dokumenten, die unter „Aufgabendetails angehängt sind, auf. Conard füllt das Überprüfungsformular vor Ort auf einem Gerät aus und sendet es zur erneuten Bewertung.
 
 Conard überprüft und bestätigt alle Details, die Sarah bereitgestellt hat, und Sarah unterschreibt die Überprüfung. AEM Forms kann den Ort und den Zeitstempel erfassen und diese der Signatur hinzufügen.
 
-![submit-for-re-evaluation](assets/submit-for-re-evaluation.png)
+![submit-for-re-evaluate](assets/submit-for-re-evaluation.png)
 
 Conard klickt auf **[!UICONTROL Zur erneuten Bewertung senden]** und der AEM-Arbeitsablauf sendet die Überprüfung an We.Gov.
 
@@ -284,17 +283,17 @@ Sie sehen, dass dem Posteingang eine neue Überprüfungsaufgabe hinzugefügt wur
 
 ### Gloria prüft das Dokument und genehmigt den Antrag  {#gloria-reviews-the-assessment-and-approves-the-application}
 
-Nachdem Conard die Überprüfung gesendet hat, wird die Überprüfungsaufgabe in Glorias Posteingang angezeigt. Sie wählt und öffnet **[!UICONTROL Review]**.
+Nachdem Conard die Überprüfung gesendet hat, wird die Überprüfungsaufgabe in Glorias Posteingang angezeigt. Sie wählt **[!UICONTROL Review]** aus und öffnet diese.
 
 ![gloriainbox-1](assets/gloriainbox-1.png)
 
-Unter &quot;Details zur Aufgabe&quot;sieht Gloria die letzte Aktion als &quot;Zur Neubewertung einreichen&quot;(von Conard). Gloria sieht, dass der Antrag von Conard Simms überprüft wurde.
+Unter &quot;Aufgabendetails&quot;sieht Gloria die letzte Aktion, die als &quot;Senden zur Neubewertung&quot;durchgeführt wurde (von Conard). Gloria sieht, dass der Antrag von Conard Simms überprüft wurde.
 
-![gloriaapproval](assets/gloriaapproves.png)
+![gloriaapproves](assets/gloriaapproves.png)
 
 ### Funktionsweise {#how-it-works-5}
 
-Nachdem Conard die Überprüfung gesendet hat, wird die Überprüfungsaufgabe in Glorias Posteingang angezeigt. Sie wählt und öffnet Review. Bei den Aufgabendetails sieht Gloria den von Conard hinzugefügten Überprüfungskommentar, nämlich „Alles in Ordnung“.
+Nachdem Conard die Überprüfung gesendet hat, wird die Überprüfungsaufgabe in Glorias Posteingang angezeigt. Sie wählt Review aus und öffnet ihn. Bei den Aufgabendetails sieht Gloria den von Conard hinzugefügten Überprüfungskommentar, nämlich „Alles in Ordnung“.
 
 Gloria genehmigt den Antrag.
 
@@ -302,13 +301,13 @@ Gloria genehmigt den Antrag.
 
 Öffnen Sie den Posteingang und melden Sie sich mit den Anmeldedaten von Gloria an. Eine neue Aufgabe namens Überprüfung befindet sich im Posteingang.
 
-Öffnen Sie die Aufgabe, um den Status der letzten Aktion zu sehen. Genehmigen Sie den Antrag auf der Grundlage der Bewertung.
+Öffnen Sie die Aufgabe, um den Status der letzten Aktion zu sehen. Genehmigen Sie den Antrag anhand der Beurteilung.
 
 ## Sarah erhält eine Genehmigungs-E-Mail {#sarah-receives-an-approval-email}
 
 Nachdem Gloria den Antrag genehmigt hat, erhält Sarah eine E-Mail von We.Gov, dass ihr Antrag genehmigt wurde.
 
-Die Schaltfläche **[!UICONTROL Ansicht Dokument]** in der E-Mail verlinkt zu den Registrierungsdetails. Sarah klickt auf **[!UICONTROL Ansicht Dokument.]**
+Die Schaltfläche **[!UICONTROL Dokument anzeigen]** in der E-Mail verlinkt zu ihren Registrierungsdetails. Sarah klickt auf **[!UICONTROL Dokument anzeigen.]**
 
 ![approval-enrolment-kit-email](assets/approval-enrolment-kit-email.png)
 
@@ -318,25 +317,25 @@ Das Registrierungsdokument enthält Details, z. B. die Referenz-ID, unterstützt
 
 Sarah kann die Dokumente, die sie auf derselben Seite hochgeladen hat, sehen.
 
-![uploaded-Dokumente](assets/uploaded-documents.png)
+![uploaded-documents](assets/uploaded-documents.png)
 
 ### Funktionsweise {#how-it-works-6}
 
 Wenn Gloria den Antrag genehmigt, erhält Sarah eine automatische E-Mail mit einem Link zum Registrierungsdokument.
 
-Das Dokument für die Anmeldung ist eine interaktive Kommunikation, die auf jedem Gerät angezeigt werden kann. Es enthält die Details zum Kindergeld und die von Sarah bereitgestellten Informationen.
+Das Registrierungsdokument ist eine interaktive Kommunikation, die auf jedem Gerät angezeigt werden kann. Es enthält die Details zum Kindergeld und die von Sarah bereitgestellten Informationen.
 
 ### Sehen Sie selbst{#see-it-yourself-6} 
 
 Überprüfen Sie den E-Mail-Client, den Sie für die automatische E-Mail mit einem Link zum Registrierungsdokument konfiguriert haben.
 
-Alternativ können Sie das Dokument in Ihrem Browser anzeigen: `https://<hostname>:<PublishPort>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-gov/child-support/enrollment-document&referenceId=[reference-id]&channel=web`
+Alternativ können Sie das Dokument in Ihrem Browser öffnen: `https://<hostname>:<PublishPort>/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-gov/child-support/enrollment-document&referenceId=[reference-id]&channel=web`
 
 ## We.Gov analysiert die Leistung der Anwendung {#we-gov-analyzes-the-performance-of-the-application}
 
-Wir.Gov prüft von Zeit zu Zeit die Leistung der Anwendung für Kindergeld, um festzustellen, ob Probleme auftreten, mit denen Kunden konfrontiert werden könnten. Sie verwenden diese Analyse, um fundierte Entscheidungen über die Änderungen zu treffen, die in der Kindergeld-Services-Anwendung erforderlich sind, um die Benutzerfreundlichkeit zu verbessern, die Abbruchrate von Formularen zu reduzieren und damit die Konvertierung zu verbessern. Zur Analyse nutzt das Unternehmen die Integration von AEM Forms mit Adobe Analytics. Die folgende Abbildung zeigt das Analyse-Dashboard des Unternehmens.
+We.Gov überprüft von Zeit zu Zeit die Leistung ihrer Kindergeld-Service-Anwendung, um nach Problemen zu suchen, mit denen Kunden konfrontiert sein könnten. Sie verwenden diese Analyse, um fundierte Entscheidungen über die Änderungen zu treffen, die in der Anwendung für Kindergeld-Services erforderlich sind, um das Benutzererlebnis zu verbessern, die Abbruchrate von Formularen zu reduzieren und damit die Konvertierung zu verbessern. Zur Analyse nutzt das Unternehmen die Integration von AEM Forms mit Adobe Analytics. Die folgende Abbildung zeigt das Analyse-Dashboard des Unternehmens.
 
-![child-support-analytics-Dashboard](assets/child-support-analytics-dashboard.png)
+![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
 
 ### Funktionsweise {#how-it-works-7}
 
@@ -344,22 +343,21 @@ Die Leistungsmetriken für das Antragsformular für Kindergeld werden mit Adobe 
 
 ### Sehen Sie selbst{#see-it-yourself-7} 
 
-Damit Sie den Analysebericht Ansicht und Untersuchung erhalten, stellen wir Seed-Daten für die Kindergeld-Services-Anwendung auf der Referenz-Website bereit. Bevor Sie Seed-Daten verwenden, lesen Sie[ Konfigurieren von Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Führen Sie folgende Schritte im Autorenmodus aus, um den Bericht mit den Seed-Daten anzuzeigen: 
+Damit Sie den Analysebericht anzeigen und untersuchen können, stellen wir Seed-Daten für die Anwendung der Kindergeld-Services auf der Referenz-Website bereit. Bevor Sie Seed-Daten verwenden, lesen Sie[ Konfigurieren von Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Führen Sie folgende Schritte im Autorenmodus aus, um den Bericht mit den Seed-Daten anzuzeigen: 
 
-1. Wechseln Sie zu **[!UICONTROL Forms und Dokumente]** UI unter https://&lt;*Hostname*:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Navigieren Sie zur Benutzeroberfläche **[!UICONTROL Forms &amp; Documents]** unter https://&lt;*Hostname*:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klicken Sie auf , um den Ordner **We.Gov** zu öffnen.
-1. Wählen Sie das adaptive Formular **[!UICONTROL Antrag auf Kindergeld]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Analyse aktivieren]**.
+1. Wählen Sie das adaptive Formular **[!UICONTROL Anwendung für Kindergeld]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Analytics]** aktivieren .
 
-1. Wählen Sie das Formular erneut aus und klicken Sie auf **[!UICONTROL Analytics-Bericht]** in der Symbolleiste, um den Bericht zu erstellen. Zunächst wird ein leerer Bericht angezeigt.
+1. Wählen Sie das Formular erneut aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Analytics-Bericht]** , um den Bericht zu generieren. Zunächst wird ein leerer Bericht angezeigt.
 
-So erstellen Sie einen Analysebericht mit Seed-Daten:
+So generieren Sie einen Analysebericht mit Seed-Daten:
 
 1. Geben Sie im Adressbrowser von CRXDE Lite Folgendes ein: **/apps/we-gov/demo-artifacts/analyticsTestData/Child support service Analytics Test Data**
-1. Die Seed-Daten werden in der Verzeichnisstruktur auf der linken Seite ausgewählt.
+1. Die Seed-Daten werden in der linken Ordnerstruktur ausgewählt.
 1. Doppelklicken Sie auf die ausgewählte Datei, um ihren Inhalt im rechten Seitenbereich zu öffnen.
 1. Kopieren Sie den gesamten Inhalt in die Testdatendatei.
-1. Navigieren Sie in CRXDE zu: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatode/lastsevendays**
+1. Navigieren Sie in CRXDE zu: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
 1. Geben Sie im Feld „Analyticsdata“ unter „Eigenschaften“ den kopierten Inhalt der Testdatendatei ein.
-1. Erstellen Sie jetzt erneut einen Analysebericht für **[!UICONTROL Anwendung für Kindergeld]**. Sie können die Seed-Daten im erstellten Bericht anzeigen.
-
+1. Erstellen Sie nun erneut einen Analysebericht für **[!UICONTROL Anwendung für Kindergeld]**. Die Seed-Daten werden im erstellten Bericht angezeigt.
