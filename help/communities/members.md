@@ -1,8 +1,8 @@
 ---
-title: Mitglieder und Gruppenverwaltungskonsolen
-seo-title: Mitglieder und Gruppenverwaltungskonsolen
-description: Zugriff auf Mitglieder- und Gruppenverwaltungskonsolen
-seo-description: Zugriff auf Mitglieder- und Gruppenverwaltungskonsolen
+title: Verwaltungskonsolen für Mitglieder und Gruppen
+seo-title: Verwaltungskonsolen für Mitglieder und Gruppen
+description: Zugriff auf die Verwaltungskonsolen für Mitglieder und Gruppen
+seo-description: Zugriff auf die Verwaltungskonsolen für Mitglieder und Gruppen
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,63 +10,62 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
 
-
-# Mitglieder und Gruppen-Management-Konsolen {#members-groups-management-consoles}
+# Mitglieder und Gruppenverwaltungskonsolen {#members-groups-management-consoles}
 
 ## Überblick {#overview}
 
-Für AEM Communities-Funktionen müssen Site-Besucher oft registriert und angemeldet sein, bevor sie an einer Community in der Umgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Member* bezeichnet, um sie von *Benutzern, die in der Authoring-Umgebung registriert sind, zu unterscheiden.*
+AEM Communities-Funktionen erfordern häufig, dass Besucher der Site registriert und angemeldet sind, bevor sie an einer Community in der Veröffentlichungsumgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungsumgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von *Benutzern* zu unterscheiden, die in der Autorenumgebung registriert sind.
 
-### Mitglieder (Benutzer) bei Veröffentlichung {#members-users-on-publish}
+### Mitglieder (Benutzer) auf Publish {#members-users-on-publish}
 
-Mithilfe der Communities-Mitglieder- und -Gruppenkonsolen können Mitglieder und Mitgliedsgruppen, die in der *publish*-Umgebung registriert sind, aus der *author*-Umgebung erstellt und verwaltet werden. Dies ist nur möglich, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aktiviert ist.
+Mithilfe der Communities Mitglieder und Gruppen-Konsolen können Mitglieder und Mitgliedergruppen, die in der Umgebung *publish* registriert sind, aus der Umgebung *author* erstellt und verwaltet werden. Dies ist nur möglich, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aktiviert ist.
 
-### Benutzer unter Autor {#users-on-author}
+### Benutzer in der Autoreninstanz {#users-on-author}
 
-Für die Verwaltung von Benutzern und Gruppen, die in der *author*-Umgebung registriert sind, ist die Sicherheitskonsole der Plattform erforderlich:
+Für die Verwaltung von Benutzern und Gruppen, die in der Umgebung *author* registriert sind, ist die Verwendung der Sicherheitskonsole der Plattform erforderlich:
 
-* Wählen Sie in der globalen Navigation `Tools, Security, Users`
-* Wählen Sie in der globalen Navigation `Tools, Security, Groups`
+* Wählen Sie in der globalen Navigation `Tools, Security, Users` aus.
+* Wählen Sie in der globalen Navigation `Tools, Security, Groups` aus.
 
 >[!NOTE]
 >
->Wenn Beispielinhalte bereitgestellt und aktiviert sind, gibt es viele Beispielbenutzer sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung. Diese Benutzer sind nicht vorhanden, wenn sie mit [nosampleContent runmode](../../help/sites-administering/production-ready.md) ausgeführt werden.
+>Wenn Beispielinhalte bereitgestellt und aktiviert sind, gibt es viele Beispielbenutzer sowohl in der Autoren- als auch in der Veröffentlichungsumgebung. Diese Benutzer sind nicht vorhanden, wenn sie mit [nosamplecontent-Ausführungsmodus](../../help/sites-administering/production-ready.md) ausgeführt werden.
 
 ## Mitgliederkonsole {#members-console}
 
-In der Umgebung &quot;Autor&quot;erreichen Sie die Mitgliederkonsole, um in der Umgebung &quot;Veröffentlichen&quot;registrierte Mitglieder zu verwalten:
+Um in der Autorenumgebung zur Mitgliederkonsole für die Verwaltung von in der Veröffentlichungsumgebung registrierten Mitgliedern zu gelangen, gehen Sie folgendermaßen vor:
 
-* Aus globaler Navigation: **[!UICONTROL Navigation > Communities > Members]**
+* Über die globale Navigation: **[!UICONTROL Navigation > Communities > Mitglieder]**
 
 >[!CAUTION]
 >
->Die Mitgliederkonsole kann nicht verwendet werden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
+>Es ist nicht möglich, die Mitgliederkonsole zu verwenden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
 ### Suche {#search-features}
 
-Wählen Sie das Seitensymbol auf der linken Seite der `Members`-Kopfzeile aus, um das Suchseitenbedienfeld zu öffnen.
+Wählen Sie auf der linken Seite der Kopfzeile `Members` das Symbol für das seitliche Bedienfeld aus, um das Bedienfeld für die Suchseite zu öffnen.
 
 ![chlimage_1-120](assets/chlimage_1-120.png) ![chlimage_1-121](assets/chlimage_1-121.png)
 
-Wählen Sie das Suchsymbol auf der linken Seite der `Members`-Kopfzeile aus, um das Suchseitenbedienfeld zu schließen.
+Wählen Sie das Suchsymbol auf der linken Seite der Kopfzeile `Members` aus, um den Bereich für die Suchseite zu schließen.
 
 ### Mitgliederstatistiken {#member-statistics}
 
-Die Spalten `Views`, `Posts`, `Follows`und `Likes` werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites mit aktiviertem Adobe Analytics [ist.](sites-console.md#analytics)
+Die Spalten, die `Views`, `Posts`, `Follows`und `Likes` anzeigen, werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites mit Adobe Analytics [enabled](sites-console.md#analytics) ist.
 
 ### CSV exportieren {#export-csv}
 
-Wenn Sie den Link `Export CSV` auswählen, werden alle Mitglieder als Liste mit kommagetrennten Werten heruntergeladen, die für den Import in eine Tabelle geeignet sind.
+Wenn Sie den Link `Export CSV` auswählen, werden alle Mitglieder als Liste kommagetrennter Werte heruntergeladen, die für den Import in eine Tabelle geeignet sind.
 
 Die Spaltenüberschriften sind
 
@@ -74,25 +73,25 @@ Die Spaltenüberschriften sind
 
 ## Neues Mitglied erstellen {#create-new-member}
 
-Wählen Sie `Create Member` aus, um einen Benutzer in der Umgebung &quot;Veröffentlichen&quot;zu erstellen.
+Wählen Sie `Create Member` aus, um einen Benutzer in der Veröffentlichungsumgebung zu erstellen.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### ALLGEMEINE - Mitgliederdetails {#general-member-details}
+### ALLGEMEIN - Mitgliederdetails {#general-member-details}
 
-Bei den meisten Feldern handelt es sich um optionale Felder, die das Mitglied später auf seinem Profil ausfüllen kann.
+Die meisten Felder sind optionale Felder, die das Mitglied später in seinem Profil ausfüllen kann.
 
 * **[!UICONTROL ID]**
 (
 *erforderlich*) Die autorisierbare ID ist die Anmelde-ID des Mitglieds.
-Standardmäßig wird die ID auf den Wert der erforderlichen E-Mail-Adresse eingestellt.
+Standardmäßig ist die ID auf den Wert der erforderlichen E-Mail-Adresse gesetzt.
    *Nach der Erstellung kann die ID nicht mehr geändert werden.*
 
 * **[!UICONTROL E-Mail-Adresse]**
 (
 *erforderlich*) Die E-Mail-Adresse des Mitglieds.
-Das Mitglied kann seine E-Mail-Adresse ändern, wenn es sein Profil aktualisiert.I
-Wenn die ID standardmäßig auf die E-Mail-Adresse festgelegt ist, ändert sich die ID bei Änderung der E-Mail-Adresse.**
+Das Mitglied kann seine E-Mail-Adresse bei der Profilaktualisierung ändern.I
+Wenn die Standard-ID die E-Mail-Adresse ist, ändert sich die Kennung *nicht*, wenn die E-Mail-Adresse geändert wird.
 
 * **[!UICONTROL Kennwort]**
 (
@@ -108,7 +107,7 @@ Wenn die ID standardmäßig auf die E-Mail-Adresse festgelegt ist, ändert sich 
 
 * **[!UICONTROL Mitglieder zu Gruppen hinzufügen]**
 (
-*optional*) Wählen Sie aus vorhandenen Mitgliedsgruppen aus, um das Mitglied dieser Gruppe hinzuzufügen.
+*optional*) Wählen Sie aus vorhandenen Mitgliedergruppen aus, um das Mitglied zu dieser Gruppe hinzuzufügen.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 
@@ -118,7 +117,7 @@ Unter &quot;Kontoeinstellungen&quot;kann ein Community-Administrator
 
 * **[!UICONTROL Status]**
    * Verboten\
-      Ein Mitglied kann sich nicht anmelden, was verhindert, dass es Seiten anzeigt oder an Aktivitäten teilnimmt, für die eine Anmeldung erforderlich ist. Sie können immer noch anonym eine offene Community-Site besuchen.
+      Ein Mitglied kann sich nicht anmelden, was es daran hindert, Seiten anzuzeigen oder an Aktivitäten teilzunehmen, bei denen eine Anmeldung erforderlich ist. Sie können weiterhin anonym eine offene Community-Site besuchen.
 
    * Nicht verboten
 Ein Mitglied hat vollen Zugriff auf die Community-Site.
@@ -126,63 +125,63 @@ Ein Mitglied hat vollen Zugriff auf die Community-Site.
    Der Standardwert ist `Not Banned`.
 
 * **[!UICONTROL Beitragsbeschränkungen]**
-Wenn diese aktiviert sind, ist die Fähigkeit des Mitglieds zum Posten von Inhalten eingeschränkt.
-Der Standardwert hängt von der Konfiguration der Beitragsgrenzen ab.
+Ist diese Option aktiviert, können Mitglieder Inhalte nur begrenzt posten.
+Der Standardwert hängt von der Konfiguration der Beitragsbeschränkungen ab.
 Siehe [Mitgliederbeitragsbeschränkungen](limits.md).
 
-* **[!UICONTROL Ändern von]**
-PasswordEin Link, der beim Ändern eines vorhandenen Mitglieds vorhanden ist. Bietet einem Community-Administrator die Möglichkeit, ein Kennwort für ein Mitglied zurückzusetzen.
+* **[!UICONTROL Kennwort ändern]**
+Ein Link, der beim Ändern eines vorhandenen Mitglieds vorhanden ist. Bietet die Möglichkeit für einen Community-Administrator, ein Kennwort für ein Mitglied zurückzusetzen.
 
 ### ALLGEMEIN - Foto {#general-photo}
 
-Um einen Avatar für das Mitglied bereitzustellen, wählen Sie zunächst **[!UICONTROL Bild hochladen]** und wählen Sie dann ein Bild vom Typ .jpg, .png, .tif oder .gif. Die bevorzugte Größe eines Bildes ist 240 x 240 Pixel bei 72 dpi.
+Um einen Avatar für das Mitglied bereitzustellen, wählen Sie zunächst **[!UICONTROL Bild hochladen]** und wählen Sie ein Bild vom Typ .jpg, .png, .tif oder .gif. Die bevorzugte Größe für ein Bild ist 240 x 240 Pixel bei 72 dpi.
 
-### ALLGEMEIN - Hinzufügen Mitglied bei Sites {#general-add-member-to-sites}
+### ALLGEMEIN - Mitglieder zu Sites hinzufügen {#general-add-member-to-sites}
 
-Das Mitglied kann einer oder mehreren Mitgliedergruppen der Community-Sites hinzugefügt werden. Beginnen Sie mit der Eingabe von Text in das Textfeld.
+Das Mitglied kann zu einer oder mehreren Mitgliedergruppen der Community-Sites hinzugefügt werden. Geben Sie zunächst Text in das Textfeld ein.
 
-### ALLGEMEIN - Hinzufügen Mitglied bei Gruppen {#general-add-member-to-groups}
+### ALLGEMEIN - Mitglieder zu Gruppen hinzufügen {#general-add-member-to-groups}
 
-Das Mitglied kann einer oder mehreren Mitgliedergruppen hinzugefügt werden. Beginnen Sie mit der Eingabe von Text in das Textfeld.
+Das Mitglied kann einer oder mehreren Mitgliedergruppen hinzugefügt werden. Geben Sie zunächst Text in das Textfeld ein.
 
 ### Registerkarte BADGES {#badges-tab}
 
-Das Bedienfeld `BADGES` bietet die Möglichkeit, Kennzeichen manuell zuzuweisen und zu sperren. Die Abzeichen können für zugewiesene Rollen sowie für gewöhnlich verdiente Abzeichen verwendet werden.
+Das Bedienfeld `BADGES` bietet die Möglichkeit, Abzeichen manuell zuzuweisen und zu widerrufen. Die Abzeichen können für zugewiesene Rollen sowie für gewöhnlich verdiente Abzeichen verwendet werden.
 
-Siehe auch [Scoring and Badges](implementing-scoring.md).
+Siehe auch [Scoring und Abzeichen](implementing-scoring.md).
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
-* **[!UICONTROL hinzufügen]**
-   * Geben Sie mit der Auswahl unter [Verfügbare Abzeichen](badges.md) an. Wählen Sie nach Auswahl eines Kennzeichens jede Website oder alle Sites aus, auf denen das Kennzeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
+* **[!UICONTROL Hinzufügen von Abzeichen]**
+   * Beginnen Sie mit der Eingabe, um [verfügbare Badges](badges.md) auszuwählen. Nachdem ein Badge ausgewählt wurde, wählen Sie jede Website oder alle Sites aus, auf denen das Badge zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
    * Es können mehrere Abzeichen und Sites ausgewählt werden.
-* **[!UICONTROL Entfernen von Markierungen]**
-   * Wählen Sie das Papierkorbsymbol neben einer Markierung aus, um sie zu entfernen
+* **[!UICONTROL Entfernen von Abzeichen]**
+   * Wählen Sie das Papierkorbsymbol neben einem Zeichen aus, um es zu entfernen
 
 ## Gruppenkonsole {#groups-console}
 
-Die in der Umgebung &quot;Autor&quot;verfügbare Gruppenkonsole ermöglicht die Erstellung und Verwaltung von in der Umgebung &quot;Veröffentlichen&quot;registrierten Mitgliedsgruppen. Sie ist besonders nützlich für:
+Die in der Autorenumgebung verfügbare Gruppenkonsole ermöglicht die Erstellung und Verwaltung von in der Veröffentlichungsumgebung registrierten Mitgliedergruppen. Dies ist besonders nützlich für:
 * [Privilegierte Mitgliedergruppen](users.md#privilegedmembersgroups)
 * Gruppenbasierte Zuweisung von [Aktivierungsressourcen](resources.md)
 
-So greifen Sie auf die Konsole &quot;Gruppen&quot;zu:
-* Aus globaler Navigation: **[!UICONTROL Navigation > Communities > Groups]**
+So greifen Sie auf die Gruppenkonsole zu:
+* Über die globale Navigation: **[!UICONTROL Navigation > Communities > Gruppen]**
 
 >[!CAUTION]
 >
->Die Konsole Gruppen kann nicht verwendet werden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
+>Die Gruppenkonsole kann nicht verwendet werden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
 
 ### Neue Gruppe erstellen {#create-new-group}
 
-Wählen Sie `Add Group` aus, um eine Gruppe in der Umgebung &quot;Veröffentlichen&quot;zu erstellen.
+Wählen Sie `Add Group` aus, um eine Gruppe in der Veröffentlichungsumgebung zu erstellen.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-Die folgenden Felder sind zum Erstellen einer neuen Gruppe von Mitgliedern auf der Seite der Veröffentlichung erforderlich:
+Die erforderlichen Felder zum Erstellen einer neuen veröffentlichungsseitigen Mitgliedergruppe sind:
 
 * **[!UICONTROL ID]**
 (
-*erforderlich*) Die eindeutige ID der Gruppe.
+*erforderlich*) Die eindeutige Kennung der Gruppe.
    *Nach der Erstellung kann die ID nicht mehr geändert werden.*
 
 * **[!UICONTROL Name]**
@@ -197,14 +196,14 @@ Die folgenden Felder sind zum Erstellen einer neuen Gruppe von Mitgliedern auf d
 
 * **[!UICONTROL Mitglieder zu Gruppe hinzufügen]**
 (
-*optional*) Wählen Sie Mitglieder auf der Seite des Veröffentlichungsmodus aus, die als erste Mitglieder der Gruppe aufgenommen werden sollen.
+*optional*) Wählen Sie veröffentlichungsseitige Mitglieder aus, die als anfängliche Mitglieder der Gruppe aufgenommen werden sollen.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 
 ## Autorisierte Administratoren {#authorized-administrators}
 
-Bei der Arbeit mit Mitgliedern in der Communities-Mitgliederkonsole ist es erforderlich, als Benutzer mit entsprechenden Berechtigungen angemeldet zu sein und den Replizierungsagenten, der vom [tunnel-Dienst](deploy-communities.md#tunnel-service-on-author) verwendet wird, korrekt zu konfigurieren.
+Bei der Arbeit mit Mitgliedern in der Mitgliederkonsole von Communities muss als Benutzer mit entsprechenden Berechtigungen angemeldet werden und der Replikationsagent, der vom [Tunneldienst](deploy-communities.md#tunnel-service-on-author) verwendet wird, muss ordnungsgemäß konfiguriert werden.
 
 Wenn der angemeldete Benutzer nicht als `admin` angemeldet ist, muss er Mitglied der Benutzergruppe `administrators` sein.
 
-Siehe auch [Replizierungsagenten bei Autor](deploy-communities.md#replication-agents-on-author).
+Siehe auch [Replikationsagenten auf der Autoreninstanz](deploy-communities.md#replication-agents-on-author).
