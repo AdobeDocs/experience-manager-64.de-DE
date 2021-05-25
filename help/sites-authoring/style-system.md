@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
-source-git-commit: bdc44635cfb874c5f5f4033debb15799cbafcd5a
+exl-id: 8d7282dd-1e21-4862-af04-0daaea431e2c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 98%
 
 ---
-
 
 # Stilsystem{#style-system}
 
@@ -23,7 +22,7 @@ Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für
 
 So muss nicht eigens für jeden Stil eine benutzerdefinierte Komponente entwickelt oder der Komponentendialog angepasst werden, um eine derartige Stilfunktionalität zu ermöglichen. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
 
-## Nutzungsszenario  {#use-case}
+## Nutzungsszenario   {#use-case}
 
 Vorlagenautoren müssen nicht nur die Funktionsweise der Komponenten für die Inhaltsautoren konfigurieren können, sondern auch eine Reihe alternativer visueller Varianten einer Komponente.
 
@@ -36,7 +35,7 @@ Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorla
 
 Die Stilklasse wird daraufhin in das Decoration-Wrapper-Element der Komponente eingefügt, sodass sich der Komponentenentwickler nicht mit der Handhabung der Stile über die Bereitstellung der CSS-Regeln hinaus befassen muss.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die allgemeine Verwendung des Stilsystems sieht wie folgt aus.
 
@@ -62,7 +61,7 @@ Das folgende Diagramm veranschaulicht die Architektur des Stilsystems.
 
 ![aem-style-system](assets/aem-style-system.png)
 
-## Verwenden {#use}
+## Verwenden Sie {#use}
 
 Zur Veranschaulichung der Funktion werden wir die [WKND](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-Implementierung der Komponente [Titel](https://www.adobe.com/go/aem_cmp_title_v2_de) der Kernkomponente als Beispiel verwenden.
 
