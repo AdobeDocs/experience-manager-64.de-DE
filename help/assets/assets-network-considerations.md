@@ -2,16 +2,15 @@
 title: Überlegungen zum Assets-Netzwerk
 description: Enthält Netzwerküberlegungen für die Implementierung von AEM Assets.
 contentOwner: AG
-feature: Developer Tools
+feature: Entwickler-Tools
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 99%
+source-wordcount: '1017'
+ht-degree: 100%
 
 ---
-
 
 # Überlegungen zum Assets-Netzwerk {#assets-network-considerations}
 
@@ -42,7 +41,7 @@ Unten links im Diagramm sind zwei Geräte dargestellt, die mit dem Unternehmensn
 
 Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzwerk über eine VPN-Verbindung mit einer Geschwindigkeit von 1 MBit/s. Das Benutzererlebnis bei der 1 MBit/s schnellen Verbindung unterscheidet sich erheblich vom Benutzererlebnis bei der 1 GBit/s schnellen Verbindung. Je nach Größe der Assets, mit denen Benutzer interagieren, kann ihr VPN-Uplink für die Aufgabe nicht ausreichend sein.
 
-## Topologie des Unternehmensnetzwerks  {#topology-of-the-corporate-network}
+## Topologie des Unternehmensnetzwerks   {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
@@ -101,4 +100,3 @@ Es folgen einige Punkte, die zu berücksichtigen sind:
 Es folgt ein Kundenbeispiel für die Definition eines Asset-Workflows.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
