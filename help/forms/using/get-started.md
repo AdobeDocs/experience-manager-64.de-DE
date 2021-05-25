@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b947d376-cde4-4fe4-9444-bcb03968dbf6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 85%
 
 ---
 
-
 # Erste Schritte mit HTML5-Formularen {#getting-started-with-html-forms}
 
 HTML5-Formulare bieten zahlreiche für Mobilgeräte geeignete Funktionen. Dies hilft Ihnen, Ihre aktuellen Lösungen und Arbeitsabläufe auf Tablets oder Smartphones mit HTML5-Browsern zu erweitern. Einige der Funktionen:
 
-* **HTML5-basierte Wiedergabe von XFA-Formularvorlagen:** Zusätzlich zu den regulären PDF forms können Sie Ihre vorhandenen XFA-basierten Formulare jetzt im HTML5-Format wiedergeben. Diese Funktion ermöglicht Ihnen, Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablets und -Smartphones usw.) auszuweiten, die HTML5 unterstützen und Adobe Reader mit XFA-Formularen nicht unterstützen. Weitere Informationen zur HTML5-basierten Renderfunktion finden Sie unter [Einführung in HTML5-Formulare](/help/forms/using/introduction.md).
+* **HTML5-basierte Wiedergabe von XFA-Formularvorlagen:** Zusätzlich zu den normalen PDF forms können Sie Ihre vorhandenen XFA-basierten Formulare jetzt im HTML5-Format wiedergeben. Diese Funktion ermöglicht Ihnen, Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablets und -Smartphones usw.) auszuweiten, die HTML5 unterstützen und Adobe Reader mit XFA-Formularen nicht unterstützen. Weitere Informationen zur HTML5-basierten Rendering-Funktion finden Sie unter [Einführung in HTML5-Formulare](/help/forms/using/introduction.md).
 
 * **Verwaltung von Formularen:** AEM bietet außerdem neue Funktionen, um das Organisieren und Verwalten von Formularen zu vereinfachen. Sie können Formulare aktivieren, deaktivieren, veröffentlichen und in der Vorschau anzeigen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](/help/forms/using/introduction-managing-forms.md).
 
@@ -33,4 +32,3 @@ Nachdem Sie AEM installiert haben, führen Sie die folgenden Schritte durch, um 
 * **Add-On-Paket für AEM Forms einrichten und bereitstellen:** Installieren Sie das Add-On-Paket für AEM Forms, um Mobile Forms zu aktivieren. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 * **Mobile Forms importieren:** Importieren Sie Ihre Formulare aus dem lokalen Dateisystem in das CRX-Repository. Detaillierte Informationen finden Sie unter [XDP- und PDF-Dokumente in AEM Forms übernehmen](/help/forms/using/get-xdp-pdf-documents-aem.md).
-
