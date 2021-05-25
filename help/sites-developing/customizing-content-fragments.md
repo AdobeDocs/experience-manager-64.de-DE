@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: af95c6c7-0475-4f55-88a8-ec5e39a9ddcd
-translation-type: tm+mt
-source-git-commit: c93c1754a44a2f18c27caf4b50888bdd09d26f7c
+exl-id: 540391a8-b846-4e5e-bf77-ab20726f06d0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2759'
 ht-degree: 81%
 
 ---
 
-
-# Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
+# Anpassen und Erweitern von Inhaltsfragmenten {#customizing-and-extending-content-fragments}
 
 >[!CAUTION]
 >
@@ -35,8 +34,8 @@ Ein Inhaltsfragment erweitert ein Standard-Asset. Weitere Informationen zu Inhal
 Ein Inhaltsfragment umfasst die folgenden grundlegenden [Bestandteile](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment):
 
 * Ein *Inhaltsfragment,*
-* bestehend aus einem oder mehreren *Inhaltselement* s,
-* und die eine oder mehrere *Inhaltsvariationen* s haben können.
+* aus einem oder mehreren *Inhaltselement* s besteht,
+* und eine oder mehrere *Inhaltsvarianten* s aufweisen kann.
 
 Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
 
@@ -64,10 +63,10 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * Vorlagen definieren die (grundlegende, texbasierte) Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
    * Die Vorlage wird beim Erstellen des Fragments zu diesem kopiert. Weitere Änderungen an der Vorlage werden nicht für bereits vorhandene Fragmente übernommen.
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
-   * [Inhaltsfragmentvorlagen ](/help/sites-developing/content-fragment-templates.md) funktionieren anders als andere Vorlagen innerhalb des AEM Ökosystems (z. B. Seitenvorlagen usw.). Daher sollten sie separat berücksichtigt werden.
+   * [Inhaltsfragmentvorlagen ](/help/sites-developing/content-fragment-templates.md) funktionieren anders als andere Vorlagenmechanismen innerhalb des AEM Ökosystems (z. B. Seitenvorlagen usw.). Daher sollten sie separat berücksichtigt werden.
    * Wenn der MIME-Typ eines Inhalts auf einer Vorlage basiert, wird er für den jeweiligen Inhalt verwaltet. Folglich kann jedes Element und jede Variante einen anderen MIME-Typ aufweisen.
 
-## Integration mit Assets {#integration-with-assets}
+## Integration mit Assets  {#integration-with-assets}
 
 Die Inhaltsfragmentverwaltung (Content Fragment Management, CFM) ist Teil von AEM Assets:
 
@@ -87,17 +86,17 @@ Inhaltsfragmente mit strukturierten Inhalten (d. h. basierend auf einem Inhalts
 
       `jcr:content/data/master`
 
-   * Variationen werden unter einem Unterknoten gespeichert, der den Namen der Variation trägt:
+   * Varianten werden unter einem Unterknoten gespeichert, der den Namen der Variante trägt:
 
       Beispiel: `jcr:content/data/myvariation`
 
-   * Die Daten der einzelnen Elemente werden im jeweiligen Unterknoten als Eigenschaft mit dem Elementnamen gespeichert:
+   * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert:
 
-      Beispiel: Der Inhalt des Elements `text` wird als Eigenschaft `text` auf `jcr:content/data/master` gespeichert
+      Beispielsweise wird der Inhalt des Elements `text` als Eigenschaft `text` auf `jcr:content/data/master` gespeichert.
 
-* Metadaten und zugehörige Inhalte werden unter `jcr:content/metadata` gespeichert
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert.
 
-   Mit Ausnahme des Titels und der Beschreibung, die nicht als herkömmliche Metadaten gelten und auf `jcr:content` gespeichert werden
+   Mit Ausnahme des Titels und der Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden
 
 ### Zuordnen von einfachen Inhaltsfragmenten zu Assets {#mapping-simple-content-fragments-to-assets}
 
@@ -185,19 +184,19 @@ Die erforderlichen Parameter können in der [Web-Konsole](/help/sites-deploying/
 
 Es gibt noch einige weitere Richtlinien, die Sie befolgen müssen, um sicherzustellen, dass die Komponente mit der Hintergrundverarbeitung des Inhaltsfragments kompatibel ist:
 
-* Der Name der Eigenschaft, in der/denen das/die zu rendernde(n) Element(e) definiert ist, muss entweder `element` oder `elementNames` lauten.
+* Der Name der Eigenschaft, in der die Elemente definiert sind, die gerendert werden sollen, muss entweder `element` oder `elementNames` lauten.
 
 * Der Name der Eigenschaft, die das Rendern der Variante definiert, muss `variation` oder `variationName` lauten.
 
 * Wenn die Ausgabe mehrerer Elemente unterstützt wird (durch Verwendung von `elementNames` zur Angabe mehrerer Elemente), wird der tatsächliche Anzeigemodus durch die Eigenschaft `displayMode` definiert:
 
-   * Wenn der Wert `singleText` ist (und nur ein Element konfiguriert ist), wird das Element als Text mit Inzwischen-Inhalt, Layout-Unterstützung usw. gerendert. Dies ist die Standardeinstellung für Fragmente, für die nur ein einzelnes Element gerendert wird.
+   * Wenn der Wert `singleText` ist (und nur ein Element konfiguriert ist), wird das Element als Text mit Zwischeninhalt, Layout-Unterstützung usw. gerendert. Dies ist die Standardeinstellung für Fragmente, für die nur ein einzelnes Element gerendert wird.
    * In allen anderen Fällen wird ein weitaus einfacherer Ansatz (eine Art „Formularansicht“) verwendet, bei dem kein Zwischeninhalt unterstützt, sondern das Fragment im Ist-Zustand gerendert wird.
 
-* Wenn das Fragment für `displayMode` == `singleText` (implizit oder explizit) gerendert wird, werden die folgenden zusätzlichen Eigenschaften abgespielt:
+* Wenn das Fragment für `displayMode` == `singleText` (implizit oder explizit) gerendert wird, kommen die folgenden zusätzlichen Eigenschaften zum Tragen:
 
-   * `paragraphScope` definiert, ob alle Absätze oder nur ein Bereich von Absätzen gerendert werden sollen (Werte:  `all` vs.  `range`)
-   * if `paragraphScope` == `range` then the property `paragraphRange` definiert den Bereich der zu renderenden Absätze
+   * `paragraphScope` definiert, ob alle Absätze oder nur ein Absatzbereich gerendert werden sollen (Werte:  `all` vs.  `range`)
+   * if `paragraphScope` == `range` then the property `paragraphRange` defined the range of paragraph to render
 
 ### Integration mit anderen Frameworks {#integration-with-other-frameworks}
 
@@ -209,7 +208,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Die einzelnen Übersetzungen eines Inhaltsfragments sind separate Fragmente, z. B.:
 
-      * sie liegen unter verschiedenen Sprachwurzeln:
+      * sie befinden sich unter verschiedenen Sprachstämmen:
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
@@ -217,7 +216,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
          `/content/dam/<path>/de/<to>/<fragment>`
 
-      * Sie haben jedoch genau denselben relativen Pfad unterhalb des Sprachstamms:
+      * Sie verwenden jedoch genau denselben relativen Pfad unterhalb des Sprachstamms:
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
@@ -285,7 +284,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
    * Zugriff auf Vorlagen für die Varianten des Fragments:
 
       * Auflisten von Variantenvorlagen
-      * Strukturinformationen für eine bestimmte Variante abrufen
+      * Abrufen von Strukturinformationen für eine bestimmte Variante
       * Zugriff auf die Variantenvorlage (siehe `VariationTemplate`)
    * Abrufen anfänglich zugeordneter Inhalte
 
@@ -375,8 +374,8 @@ Folgendes kann angepasst werden:
 
 * `ContentFragment` kann angepasst werden an:
 
-   * `Resource` - die zugrunde liegende Sling - Ressource; Beachten Sie, dass die Aktualisierung des zugrunde liegenden Objekts  `Resource` direkt eine erneute Erstellung des  `ContentFragment` Objekts erfordert.
-   * `Asset` - die DAM- `Asset` Abstraktion, die das Inhaltsfragment darstellt; Beachten Sie, dass die  `Asset` direkte Aktualisierung des  `ContentFragment` Objekts eine erneute Erstellung erfordert.
+   * `Resource` - die zugrunde liegende Sling-Ressource; Beachten Sie, dass eine  `Resource` direkte Aktualisierung des zugrunde liegenden Objekts die Neuerstellung des  `ContentFragment` Objekts erfordert.
+   * `Asset` - die DAM- `Asset` Abstraktion, die das Inhaltsfragment darstellt; Beachten Sie, dass die  `Asset` direkte Aktualisierung das  `ContentFragment` Objekt neu erstellen muss.
 
 * `ContentElement` kann angepasst werden an:
 
@@ -384,7 +383,7 @@ Folgendes kann angepasst werden:
 
 * `FragmentTemplate` kann angepasst werden an:
 
-   * `Resource` - die  `Resource` Bestimmung des referenzierten Modells oder der ursprünglichen Vorlage, die kopiert wurde;
+   * `Resource` - die  `Resource` Bestimmung des referenzierten Modells oder der kopierten Originalvorlage;
 
       * über `Resource` vorgenommene Änderungen werden nicht automatisch in `FragmentTemplate` übernommen.
 
@@ -433,7 +432,7 @@ Für das Steuern einer Bearbeitungssitzung gelten folgende Voraussetzungen:
 * Eine regelmäßige automatische Speicherung (alle x Minuten) sollte verfügbar sein, um den Verlust von Daten zu vermeiden.
 * Falls ein Inhaltsfragment von zwei Benutzern gleichzeitig bearbeitet wird, sollten diese die jeweiligen Änderungen nicht gegenseitig überschreiben.
 
-### Prozesse  {#processes}
+### Prozesse {#processes}
 
 Folgende Prozesse sind involviert:
 
@@ -446,7 +445,7 @@ Folgende Prozesse sind involviert:
 * Beenden einer Sitzung
 
    * Das automatische Speichern wird beendet.
-   * Bei der Übertragung:
+   * Bei Bestätigung:
 
       * Die Daten zur letzten Änderung werden aktualisiert.
       * Cookies werden entfernt.
@@ -461,7 +460,7 @@ Folgende Prozesse sind involviert:
    * Alle Änderungen (die automatische Speicherung eingeschlossen) werden am aktiven Inhaltsfragment vorgenommen, nicht in einem separaten, geschützten Bereich.
    * Daher werden diese Änderungen sofort auf den AEM-Seiten übernommen, die auf das entsprechende Inhaltsfragment verweisen.
 
-### Aktionen     {#actions}
+### Aktionen  {#actions}
 
 Folgende Aktionen sind möglich:
 
