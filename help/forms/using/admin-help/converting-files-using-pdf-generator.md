@@ -10,20 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 98%
 
 ---
 
-
 # Dateien mithilfe von PDF Generator konvertieren{#converting-files-using-pdf-generator}
 
 Sie können die PDF Generator-Webseiten verwenden, um Dateien zu konvertieren.
 
-## PDF-Datei erstellen {#create-a-pdf-file}
+## PDF-Datei erstellen  {#create-a-pdf-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „PDF erstellen“.
 1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen.
@@ -126,4 +125,3 @@ PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Date
    * Um eine vorhandene Einstellungsdatei zu verwenden, wählen Sie „Einstellungsdatei hochladen“ aus und klicken Sie auf „Durchsuchen“, um zum Speicherort der Datei zu wechseln.
 
 1. Klicken Sie auf Erstellen.
-
