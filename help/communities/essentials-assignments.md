@@ -1,44 +1,43 @@
 ---
-title: Grundlagen der Zuweisung
-seo-title: Grundlagen der Zuweisung
-description: Übersicht über Zuweisungsfunktionen für Communities
-seo-description: Übersicht über Zuweisungsfunktionen für Communities
+title: Zuweisungsgrundlagen
+seo-title: Zuweisungsgrundlagen
+description: Übersicht über Zuweisungsfunktionen für Aktivierungs-Communities
+seo-description: Übersicht über Zuweisungsfunktionen für Aktivierungs-Communities
 uuid: 8310decf-174d-4e93-8c92-4a9583077b7a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 310d9086-36b6-42ea-835f-c77d75e880cb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 14%
 
 ---
 
+# Zuweisungsgrundlagen {#assignments-essentials}
 
-# Zuweisungen Essentials {#assignments-essentials}
+Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Zuweisungsfunktion von [Aktivierungs-Community](overview.md#enablement-community)-Sites.
 
-Auf dieser Seite finden Sie die wesentlichen Informationen zum Arbeiten mit der Zuweisungsfunktion von [Aktivierungs-Community](overview.md#enablement-community)-Sites.
+Die Zuweisungsfunktion ist die Möglichkeit, Aktivierungsressourcen und Lernpfade Mitgliedern von Aktivierungsgemeinschaften zuzuweisen.
 
-Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und Lernpfaden zu Mitgliedern von Communities, die eine Aktivierung ermöglichen.
-
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table> 
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 
-   <td>social/enable/components/hbs/myassign</td> 
+   <td>social/enable/components/hbs/myassigned</td> 
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td> 
    <td>Nein</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.myassign<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learn.path</td> 
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learning.path</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -55,9 +54,9 @@ Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und
  </tbody>
 </table>
 
-### Abschluss- und Erfolgsstatus {#completion-and-success-status}
+### Abschluss und Erfolgsstatus {#completion-and-success-status}
 
-Der Status &quot;Abschluss&quot;und &quot;Erfolg&quot;werden in Berichten sowie in Statusbannern für Zuweisungen verwendet.
+&quot;Abschluss&quot;und &quot;Erfolgsstatus&quot;werden in Berichten sowie in Statusbannern für Zuweisungen verwendet.
 
 Abschlussstatus:
 
@@ -85,12 +84,12 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
 ### Zuweisungsfunktion {#assignments-function}
 
-Eine Community-Site-Struktur, die die Funktion [Zuweisungen](functions.md#assignments-function) enthält, enthält eine konfigurierte Komponente ` [assignments](assignments.md)`.
+Eine Community-Site-Struktur, die die [Zuweisungsfunktion](functions.md#assignments-function) enthält, enthält eine konfigurierte ` [assignments](assignments.md)`-Komponente.
 
 ### Referenz-APIs {#reference-apis}
 
 * [Aktivierungs-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [Berichte-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [Reporting-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Reporting-Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
