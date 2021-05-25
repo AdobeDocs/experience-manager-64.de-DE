@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Interaktive Kommunikation
+exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 70%
 
 ---
-
 
 # Konfigurationseigenschaften für interaktive Kommunikation {#interactive-communications-configuration-properties}
 
@@ -25,9 +24,9 @@ Bearbeiten Sie die Standardkonfigurationseigenschaften für interaktive Kommunik
 
 Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des Pakets [AEM Forms Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) automatisch konfiguriert werden. Autoren der interaktiven Kommunikation können diese Standardkonfigurationseigenschaften mit Hilfe der Seite **Konfiguration von Adobe Experience Manager Web Console** bearbeiten.
 
-Öffnen Sie die Seite **Adobe Experience Manager Web Console Configuration** unter Verwendung der folgenden URL:
+Öffnen Sie die Seite **Adobe Experience Manager Web Console Configuration** mithilfe der folgenden URL:
 
-https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
+https://&lt;Server>:&lt;Port>/&lt;contextPath>/system/console/configMgr
 
 Die Konfigurationseigenschaften umfassen Folgendes:
 
@@ -38,7 +37,7 @@ Die Konfigurationseigenschaften umfassen Folgendes:
 
 ## Konfiguration für Dokumentfragment {#document-fragments-configuration}
 
-Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** auf **, um die Konfigurationseigenschaften für Dokument-Fragmente Ansicht.**
+Tippen Sie auf **Document Fragments Configuration** auf der Seite **Adobe Experience Manager Web Console Configuration** , um die Konfigurationseigenschaften für Dokumentfragmente anzuzeigen.
 
 <table> 
  <tbody> 
@@ -50,7 +49,7 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** 
   </tr> 
   <tr> 
    <td>Datenanzeigeformate</td> 
-   <td>Gebietsschemaspezifisches Anzeigeformat für Felder, Variablen und Formulardatenmodellelemente, das beim Erstellen einer interaktiven Kommunikation für Print- und Web-Kanal verfügbar ist.</td> 
+   <td>Gebietsschemaspezifisches Anzeigeformat für Felder, Variablen und Formulardatenmodellelemente, die beim Erstellen einer interaktiven Kommunikation für Druck- und Webkanäle verfügbar sind.</td> 
    <td> 
     <ul> 
      <li>locale = en_US, de_DE, fr_FR und ja_JP</li> 
@@ -84,7 +83,7 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** 
 
 ## Korrespondenzkonfiguration erstellen  {#create-correspondence-configuration}
 
-Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** auf Korrespondenzkonfiguration erstellen **, um die Konfigurationseigenschaften für die Agent-Benutzeroberfläche Ansicht.**
+Tippen Sie auf **Korrespondenzkonfiguration erstellen** auf der Seite **Adobe Experience Manager Web Console Configuration** , um die Konfigurationseigenschaften für die Agent-Benutzeroberfläche anzuzeigen.
 
 | Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
@@ -93,7 +92,7 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** 
 
 ## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** auf **, um die Konfigurationseigenschaften für den Web-Kanal Adaptive Forms und Interactive Communications Ansicht.** Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
+Tippen Sie auf **Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation** auf der Seite **Adobe Experience Manager Web Console Configuration** , um die Konfigurationseigenschaften für den Webkanal für adaptive Forms und interaktive Kommunikation anzuzeigen. Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
 
 | Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
@@ -103,7 +102,7 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** 
 
 ## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** auf **Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation**, um die Konfigurationseigenschaften für Themen des adaptiven Forms und des interaktiven Kommunikations-Web-Kanals Ansicht.
+Tippen Sie auf der Seite **Web-Kanal-Designkonfiguration für adaptive Formulare und interaktive Kommunikation** auf der Seite **Adobe Experience Manager Web Console Configuration** , um die Konfigurationseigenschaften für Webkanalthemen für adaptive Forms und interaktive Kommunikation anzuzeigen.
 
 <table> 
  <tbody> 
@@ -121,4 +120,3 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** 
   </tr> 
  </tbody> 
 </table>
-
