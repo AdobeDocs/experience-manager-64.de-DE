@@ -7,15 +7,14 @@ uuid: cd123d42-f7cf-489d-8182-f3a01a2a4799
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
-feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formulardatenmodell
+exl-id: 2dcbc459-5fa3-4712-a72e-159bdbad0a61
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3153'
 ht-degree: 82%
 
 ---
-
 
 # Arbeiten mit einem Formulardatenmodell {#work-with-form-data-model}
 
@@ -37,16 +36,16 @@ Erfahren Sie weitere Details zu verschiedenen Aufgaben und Konfigurationen, die 
 >
 >Sie müssen Mitglied der Gruppen **fdm-author** und **forms-user** sein, um Formulardatenmodell erstellen und verwenden zu können. Wenden Sie sich an Ihren AEM-Administrator, um Mitglied der Gruppe zu werden.
 
-## Datenmodellobjekte und Dienste hinzufügen {#add-data-model-objects-and-services}
+## Datenmodellobjekte und Dienste hinzufügen  {#add-data-model-objects-and-services}
 
-Wenn Sie ein Formulardatenmodell mit Datenquellen erstellt haben, können Sie den Formulardatenmodelleditor verwenden, um Datenmodellobjekte und -dienste hinzuzufügen, deren Eigenschaften zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten zu erstellen und das Formulardatenmodell und die Formulardienste zu testen.
+Wenn Sie ein Formulardatenmodell mit Datenquellen erstellt haben, können Sie den Formulardatenmodell-Editor verwenden, um Datenmodellobjekte und -dienste hinzuzufügen, deren Eigenschaften zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten zu erstellen und das Formulardatenmodell und die Formulardienste zu testen.
 
 Sie können Datenmodellobjekte und Dienste aus verfügbaren Datenquellen im Formulardatenmodell hinzufügen. Dabei werden hinzugefügte Datenmodellobjekte auf der Registerkarte „Modell“ und hinzugefügte Dienste auf der Registerkarte „Dienste“ angezeigt.
 
-So fügen Sie Datenmodellobjekte und -dienste hinzu:
+So fügen Sie Datenmodellobjekte und Dienste hinzu:
 
 1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
-1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und -dienste Ansicht.
+1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und Dienste anzuzeigen.
 1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell hinzufügen möchten, und tippen Sie auf **[!UICONTROL Ausgewählte hinzufügen]**.
 
    ![selected-object](assets/selected-objects.png)
@@ -104,11 +103,11 @@ Erstellen einer untergeordneten Eigenschaft:
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikation mit dem Formulardatenmodell finden Sie unter [Formulardatenmodell verwenden](/help/forms/using/using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikation mithilfe des Formulardatenmodells finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md).
 
 ### Datenmodellobjekte und -eigenschaften binden {#bind-data-model-objects-and-properties}
 
-Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, verfügbar sind, können Sie sie dem Formulardatenmodell hinzufügen, wie unter [Datenquellen aktualisieren](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
+Wenn die Datenquellen verfügbar sind, die Sie in das Formulardatenmodell integrieren möchten, können Sie sie dem Formulardatenmodell hinzufügen, wie unter [Datenquellen aktualisieren](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie mit einer Datenquelle binden möchten.
 1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
@@ -153,9 +152,9 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
    Für die Mitarbeiterdatenquelle konfigurierte Lese- und Schreibdienste
 
-1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png), um das read-Dienstargument an ein User Profil-Attribut, ein Request-Attribut oder einen Literalwert zu binden, und geben Sie den Bindungswert an. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
+1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) für das Argument des Lesedienstes, um das Argument an ein Benutzerprofilattribut, ein Anforderungsattribut oder einen Literalwert zu binden, und geben Sie den Bindungswert an. Er bindet das Dienstargument an das angegebene Bindungsattribut oder den angegebenen Literalwert, der an den Dienst als Argument übergeben wird, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
 
-   In diesem Beispiel nimmt das Argument `id` den Wert des Attributs `empid` des Benutzerprofils an und übergibt ihn als Argument an den Lesedienst. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt `employee` für die angegebene `empid` und gibt sie zurück. Wenn Sie also 00250 im Feld `empid` im Formular angeben, liest der Lesedienst Details des Mitarbeiters mit der Mitarbeiter-ID 00250.
+   In diesem Beispiel nimmt das Argument `id` den Wert des Attributs `empid` des Benutzerprofils an und übergibt ihn als Argument an den Lesedienst. Dieser liest Werte aus zugeordneten Eigenschaften aus dem Datenmodellobjekt `employee` für die angegebene `empid` und gibt sie zurück. Wenn Sie also 00250 im Feld `empid` im Formular angeben, liest der Lesedienst Details zum Mitarbeiter mit der Mitarbeiter-ID 00250.
 
    Darüber hinaus können Sie ein Argument als obligatorisch oder optional definieren.
 
@@ -169,7 +168,7 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
 In der Regel werden Verknüpfungen zwischen Datenmodellobjekten in einer Datenquelle erstellt. Dies können Eins-zu-Eins- oder Eins-zu-Viele-Verknüpfungen sein. So könnten mehrere Angehörige mit einem Mitarbeiter verknüpft sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
 
-Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell hinzufügen, werden deren Verknüpfungen beibehalten und als durch Pfeilzeilen verbundene Elemente angezeigt. Sie können in einem Formulardatenmodell Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
+Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell hinzufügen, werden deren Verknüpfungen beibehalten und über Pfeillinien als verbunden angezeigt. Sie können in einem Formulardatenmodell Verknüpfungen zwischen Datenmodellobjekten über verschiedene Datenquellen hinweg hinzufügen.
 
 >[!NOTE]
 >
@@ -179,7 +178,7 @@ So fügen Sie eine Verknüpfung hinzu:
 
 1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt, um dieses auszuwählen, und tippen Sie auf **[!UICONTROL Verknüpfung hinzufügen]**. Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
-   ![add-associated](assets/add-association.png)
+   ![add-relation](assets/add-association.png)
 
    >[!NOTE]
    >
@@ -187,26 +186,26 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
-   ![add-associated-2](assets/add-association-2.png)
+   ![add-relation-2](assets/add-association-2.png)
 
    Dialogfeld „Verknüpfung hinzufügen“
 
 1. Im Bereich „Verknüpfung hinzufügen“:
 
    * Geben Sie einen Titel für die Verknüpfung an.
-   * Wählen Sie den Assoziierungstyp aus — Ein zu eins oder eins zu viele.
+   * Wählen Sie den Assoziierungstyp aus: Eins zu Eins oder Eins zu Viele.
    * Wählen Sie das Datenmodellobjekt aus, zu dem Sie die Verknüpfung erstellen möchten.
    * Wählen Sie den Lesedienst, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument für den Lesedienst wird angezeigt. Bearbeiten Sie das Argument gegebenenfalls mit den nötigen Änderungen, und binden Sie es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts.
 
    Im folgenden Beispiel ist `dependentid`das Standardargument für den Lesedienst des Datenmodellobjekts „Angehörige“.
 
-   ![add-associated-example](assets/add-association-example.png)
+   ![add-relation-example](assets/add-association-example.png)
 
    Standardargument für den Lesedienst für „Angehörige“ ist „dependentid“
 
-   Das Argument muss allerdings eine mit dem verknüpfenden Datenmodellobjekt gemeinsame Eigenschaft sein, in diesem Beispiel `Employeeid`. Daher muss das `Employeeid`-Argument an die `id`-Eigenschaft des Employee-Datenmodellobjekts gebunden sein, um die zugehörigen Abhängigkeitsdetails vom Datenmodellobjekt &quot;Abhängige&quot;abzurufen.
+   Das Argument muss allerdings eine mit dem verknüpfenden Datenmodellobjekt gemeinsame Eigenschaft sein, in diesem Beispiel `Employeeid`. Daher muss das `Employeeid`-Argument an die `id`-Eigenschaft des Employee-Datenmodellobjekts gebunden sein, um die zugehörigen Abhängigkeitsdetails aus dem Datenmodellobjekt &quot;Abhängige Elemente&quot;abzurufen.
 
-   ![add-associated-example-2](assets/add-association-example-2.png)
+   ![add-relation-example-2](assets/add-association-example-2.png)
 
    Aktualisiertes Argument und Bindung
 
@@ -219,9 +218,9 @@ So fügen Sie eine Verknüpfung hinzu:
 >
 >Die hinzugefügte Verknüpfung wird der Box für das Datenmodellobjekt mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
->Sie können eine Zuordnung bearbeiten, indem Sie das Kontrollkästchen dazugehörige Verbindung markieren und auf **[!UICONTROL Zuordnung bearbeiten]** tippen.
+>Sie können eine Zuordnung bearbeiten, indem Sie das entsprechende Kontrollkästchen aktivieren und auf **[!UICONTROL Verknüpfung bearbeiten]** tippen.
 
-![added-association](assets/added-association.png)
+![Added-Association](assets/added-association.png)
 
 ## Eigenschaften bearbeiten {#properties}
 
@@ -242,20 +241,20 @@ Eigenschaften bearbeiten
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
-### Berechnete Eigenschaften erstellen  {#computed}
+### Berechnete Eigenschaften erstellen {#computed}
 
 Eine berechnete Eigenschaft ist diejenige, deren Wert basierend auf einer Regel oder einem Ausdruck berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf eine Literalzeichenfolge, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
 
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie eine neue Eigenschaft mit dem Namen `FullName`, dessen Datentyp String ist.
+1. Erstellen Sie eine neue Eigenschaft mit dem Namen `FullName`, deren Datentyp &quot;String&quot;ist.
 1. Aktivieren Sie **[!UICONTROL Berechnet]** und tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaft zu erstellen.
 
    ![berechnet](assets/computed.png)
 
    Die berechnete FullName-Eigenschaft wird erstellt. Beachten Sie das Symbol neben der Eigenschaft, um eine berechnete Eigenschaft darzustellen.
 
-   ![calculate-prop](assets/computed-prop.png)
+   ![computed-prop](assets/computed-prop.png)
 
 1. Wählen Sie die FullName-Eigenschaft und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Das Fenster „Regeleditor“ wird geöffnet.
 1. Im Fenster des Regeleditors tippen Sie auf **[!UICONTROL Erstellen]**. Ein Regelfenster **[!UICONTROL Wert festlegen]** wird geöffnet.
@@ -264,7 +263,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
 1. Wählen Sie im mathematischen Ausdruck **[!UICONTROL FirstName]** und **[!UICONTROL LastName]** im ersten bzw. zweiten Objekt aus. Wählen Sie **[!UICONTROL plus]** als Bediener.
 
-   Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]**, um das Fenster des Regeleditors zu schließen. Die Regel sieht ähnlich der Folgenden aus:
+   Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]** , um das Fenster des Regeleditors zu schließen. Die Regel sieht ähnlich der Folgenden aus:
 
    ![rule](assets/rule.png)
 
@@ -272,7 +271,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
 ## Arbeiten mit Navigationseigenschaften von OData-Diensten  {#work-with-navigation-properties-of-odata-services}
 
-In OData-Diensten werden Navigationseigenschaften verwendet, um Zuordnungen zwischen zwei Datenmodellobjekten zu definieren. Diese Eigenschaften werden für einen Entitätstyp oder einen komplexen Typ definiert. Beispiel: In der folgenden Extraktion aus der Metadatendatei der Musterdienste [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData enthält die Entität der Person drei Navigationseigenschaften: Friends, BestFriend und Trips.
+In OData-Diensten werden Navigationseigenschaften verwendet, um Zuordnungen zwischen zwei Datenmodellobjekten zu definieren. Diese Eigenschaften werden für einen Entitätstyp oder einen komplexen Typ definiert. Im folgenden Auszug aus der Metadatendatei der Beispieldienste [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData enthält die Entität der Person beispielsweise drei Navigationseigenschaften: Friends, BestFriend und Trips.
 
 Weitere Informationen finden Sie in der [OData-Dokumentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
 
@@ -302,27 +301,27 @@ Weitere Informationen finden Sie in der [OData-Dokumentation](https://docs.oasis
 </EntityType>
 ```
 
-Wenn Sie einen OData-Dienst in einem Formulardatenmodell konfigurieren, werden alle Navigationseigenschaften in einem Entitätencontainer über einen Dienst im Formulardatenmodell bereitgestellt. In diesem Beispiel des TripPin OData-Dienstes können die drei Navigationseigenschaften im `Person`-Entitäts-Container mit einem `GET LINK`-Dienst im Formulardatenmodell gelesen werden.
+Wenn Sie einen OData-Dienst in einem Formulardatenmodell konfigurieren, werden alle Navigationseigenschaften in einem Entitätencontainer über einen Dienst im Formulardatenmodell bereitgestellt. In diesem Beispiel des OData-Dienstes &quot;TripPin&quot;können die drei Navigationseigenschaften im Entitäts-Container `Person` mit einem `GET LINK`-Dienst im Formulardatenmodell gelesen werden.
 
-Im Folgenden wird der Dienst `GET LINK of Person /People` im Formulardatenmodell hervorgehoben, bei dem es sich um einen kombinierten Dienst für die drei Navigationseigenschaften im `Person`-Element des TripPin OData-Dienstes handelt.
+Im Folgenden wird der Dienst `GET LINK of Person /People` im Formulardatenmodell beschrieben, der ein kombinierter Dienst für die drei Navigationseigenschaften in der `Person`-Entität des OData-Dienstes &quot;TripPin&quot;ist.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. Beispielsweise verwendet der folgende `GET LINK of Person /People`-Dienst im folgenden Beispiel &quot;Trip&quot;als Ausgabemodellobjekt und die Navigationseigenschaft als &quot;Trips&quot;.
+Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. Der folgende `GET LINK of Person /People`-Dienst im folgenden Beispiel verwendet beispielsweise &quot;Trip&quot;als Ausgabemodellobjekt und die Navigationseigenschaft als &quot;Trips&quot;.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
 >[!NOTE]
 >
->Die im Feld **[!UICONTROL Standardwert]** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des **[!UICONTROL Rückkehrarray ab?]** ab. Wenn diese Funktion aktiviert ist, zeigt sie Navigationsfunktionen des Typs Sammlung an.
+>Die im Feld **[!UICONTROL Standardwert]** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des **[!UICONTROL Rückgabe-Arrays ab?]** ab. Wenn diese Funktion aktiviert ist, zeigt sie Navigationsfunktionen des Typs Sammlung an.
 
-In diesem Beispiel können Sie auch das Ausgabemodellobjekt als &quot;Person&quot;und das Argument der Navigationseigenschaft als &quot;Freunde&quot;oder &quot;BestFriend&quot;auswählen (je nachdem, ob **[!UICONTROL Rückgaberarray?]** aktiviert oder deaktiviert ist).
+In diesem Beispiel können Sie das Ausgabemodellobjekt auch als Personen- und Navigations-Eigenschaftsargument als Freunde oder BestFriend auswählen (je nachdem, ob **[!UICONTROL Array zurückgeben?]** aktiviert oder deaktiviert ist).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
 Darüber hinaus können Sie beim Hinzufügen von Verknüpfungen im Formulardatenmodell einen `GET LINK`-Dienst wählen und seine Navigationseigenschaften konfigurieren. Damit eine Navigationseigenschaft gewählt werden kann, müssen Sie jedoch darauf achten, dass im Feld **** Bindung an der Wert **[!UICONTROL Literal]** eingestellt ist.
 
-![add-associated-nav-prop](assets/add-association-nav-prop.png)
+![add-relation-nav-prop](assets/add-association-nav-prop.png)
 
 ## Generieren und Bearbeiten von Beispieldaten {#sample}
 
