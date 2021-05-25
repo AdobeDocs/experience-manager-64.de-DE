@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
-translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 76%
 
 ---
 
-
 # Anzeigen von Komponenten basierend auf der verwendeten Vorlage {#displaying-components-based-on-the-template-used}
 
 Wenn ein Formularersteller ein adaptives Formular anhand einer [Vorlage](/help/forms/using/template-editor.md) erstellt, kann der Formularersteller basierend auf der Vorlagenrichtlinie bestimmte Komponenten sehen und verwenden. Sie können eine Content-Richtlinie für Vorlagen angeben, mit der Sie eine Gruppe von Komponenten auswählen können, die Formularverfassern beim Formular-Authoring angezeigt wird.
 
-## Ändern der Content-Richtlinie einer Vorlage {#changing-the-content-policy-of-a-template}
+## Ändern der Content-Richtlinie einer Vorlage  {#changing-the-content-policy-of-a-template}
 
-Wenn Sie eine Vorlage erstellen, wird sie unter `/conf` im Inhalts-Repository erstellt. Auf der Grundlage der Ordner, die Sie im Ordner `/conf` erstellt haben, lautet der Pfad zu Ihrer Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Wenn Sie eine Vorlage erstellen, wird sie unter `/conf` im Inhalts-Repository erstellt. Basierend auf den Ordnern, die Sie im Verzeichnis `/conf` erstellt haben, lautet der Pfad zu Ihrer Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Content-Richtlinie einer Vorlage in der Seitenleiste anzuzeigen:
 
@@ -40,13 +39,13 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    Zum Auswählen einer Komponentengruppe ist eine neue Content-Richtlinie erforderlich. Kopieren Sie zum Erstellen einer neuen Richtlinie die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um.
 
-   Pfad zur Standard-Inhaltsrichtlinie: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
+   Pfad zur standardmäßigen Inhaltsrichtlinie: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
    Kopieren Sie im Ordner `gridFluidLayout` die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um. Beispiel: `myPolicy`.
 
    ![Kopieren von Standardrichtlinien](assets/crx-default1.png)
 
-1. Wählen Sie die neu erstellte Richtlinie und dann die Eigenschaft **components** im rechten Bereich mit dem Typ `string[]`.
+1. Wählen Sie die neue Richtlinie aus, die Sie erstellen, und wählen Sie die Eigenschaft **components** im rechten Bereich mit dem Typ `string[]` aus.
 
    Wenn Sie die Komponenteneigenschaft auswählen und öffnen, erscheint das Dialogfeld „Komponenten bearbeiten“. Im Dialogfeld „Komponenten bearbeiten“ können Sie Komponentengruppen mit den Tasten **+** und **-** hinzufügen oder entfernen. Sie können Komponentengruppen hinzufügen, die Komponenten enthalten, die von Autoren verwendet werden sollen.
 
@@ -54,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    Nachdem Sie eine Komponentengruppe hinzugefügt haben, klicken Sie auf **„OK“**, um die Liste zu aktualisieren, und klicken Sie dann auf **Alle speichern** über der CRXDE-Adressleiste und aktualisieren Sie.
 
-1. Ändern Sie die Content-Richtlinie in der Vorlage vom Standard zu der neu erstellten Richtlinie. ( `myPolicy` in diesem Beispiel.)
+1. Ändern Sie die Content-Richtlinie in der Vorlage vom Standard zu der neu erstellten Richtlinie. ( `myPolicy` in diesem Beispiel)
 
    Um die Richtlinie zu ändern, navigieren Sie in CRXDE zu `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
@@ -63,4 +62,3 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
    ![Aktualisierte Content-Richtlinie für Vorlagen](assets/updated-policy.png)
 
    Wenn Sie ein Formular mit der Vorlage erstellen, werden die hinzugefügten Komponenten in der Seitenleiste angezeigt.
-
