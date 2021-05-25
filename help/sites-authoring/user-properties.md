@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
-translation-type: tm+mt
-source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 95%
 
 ---
 
-
 # Konfigurieren der Kontoumgebung{#configuring-your-account-environment}
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
-Mithilfe der Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) im Dialogfeld [header](/help/sites-authoring/basic-handling.md#the-header) und der zugehörigen [Meine Voreinstellungen](#my-preferences) können Sie Ihre Benutzeroptionen ändern.
+Mit der Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) im [Header](/help/sites-authoring/basic-handling.md#the-header) und dem zugehörigen Dialogfeld [Meine Voreinstellungen](#my-preferences) können Sie Ihre Benutzeroptionen ändern.
 
 ## Benutzereinstellungen {#user-settings}
 
@@ -108,4 +107,3 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 * **Asset-Homepage aktivieren**
 
    Diese Option ist nur verfügbar, wenn der Systemadministrator die Asset-Homepage-Nutzung für das gesamte Unternehmen aktiviert hat.
-
