@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 6969dc5e-f7fa-495e-8ddf-8123ca2bc9a6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 96%
 
 ---
-
 
 # Bearbeiten der Seiteneigenschaften{#editing-page-properties}
 
@@ -26,7 +25,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
-### Allgemein {#basic}
+### Einfach {#basic}
 
 * **Titel**
 
@@ -82,7 +81,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    Ermöglicht die Eingabe einer Vanity-URL für diese Seite. Dadurch können Sie eine kürzere, ausdrucksstärkere URL verwenden.
 
-   Beispiel: Wenn die Vanity-URL auf w `elcome`auf die Seite gesetzt ist, die durch den Pfad / `v1.0/startpage`für die Website h `ttp://example.com,` identifiziert wird, wäre h `ttp://example.com/welcome`die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
+   Wenn die Vanity-URL beispielsweise auf w `elcome`auf die Seite gesetzt ist, die durch den Pfad / `v1.0/startpage`für die Website h `ttp://example.com,` identifiziert wird, wäre h `ttp://example.com/welcome`die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -154,7 +153,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung   {#personalization}
+### Personalisierung {#personalization}
 
 * **Personalisierung**
 
@@ -162,7 +161,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 ### Berechtigungen {#permissions}
 
-* **Berechtigungen** (touchoptimierte Benutzeroberfläche)
+* **Berechtigungen** (Touch-optimierte Benutzeroberfläche)
 
    Zeigen Sie die [effektiven Berechtigungen an und fügen Sie neue Berechtigungen hinzu](/help/sites-administering/user-group-ac-admin.md).
 
@@ -195,4 +194,3 @@ Durch Seiteneigenschaften werden verschiedene Parameter einer Seite festgelegt, 
    Ein Dialogfeld mit mehreren Registerkarten wird geöffnet.
 
 1. Nehmen Sie die erforderlichen Änderungen vor und klicken Sie dann auf **OK**, um zu speichern.
-
