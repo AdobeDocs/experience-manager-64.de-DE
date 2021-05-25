@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 97%
 
 ---
 
-
-# Konfigurieren der Segmentierung mit ContextHub{#configuring-segmentation-with-contexthub}
+# Konfigurieren der Segmentierung mit ContextHub {#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
@@ -49,7 +48,7 @@ Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segment
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Verstärkungsfaktor [finden Sie unter Erstellen eines neuen Segments](#creating-a-new-segment).[](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Faktor [Verstärken finden Sie unter ](/help/sites-administering/campaign-segmentation.md#boost-factor) unter Erstellen eines neuen Segments](#creating-a-new-segment) .[
 
 >[!CAUTION]
 >
@@ -155,7 +154,7 @@ So legen Sie Ihr neues Segment fest:
 1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern   {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
