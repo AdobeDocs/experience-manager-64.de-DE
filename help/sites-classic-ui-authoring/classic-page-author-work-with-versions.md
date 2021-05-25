@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 407287cf-8096-40ee-971c-006d876ba4e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 91%
 
 ---
-
 
 # Arbeiten mit Seitenversionen{#working-with-page-versions}
 
@@ -26,7 +25,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version   {#creating-a-new-version}
+## Erstellen einer neuen Version    {#creating-a-new-version}
 
 So erstellen Sie die neue Version einer Seite:
 
@@ -36,7 +35,7 @@ So erstellen Sie die neue Version einer Seite:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Geben Sie einen **Kommentar** ein (optional).
-1. Um eine Beschriftung auf die Version festzulegen (optional), klicken Sie auf die Schaltfläche **Mehr >>** und setzen Sie **Beschriftung**, um der Version einen Namen zu geben. Wenn die Beschriftung nicht eingestellt ist, handelt es sich bei der Version um eine automatisch inkrementierte Zahl.
+1. Um eine Bezeichnung für die Version festzulegen (optional), klicken Sie auf die Schaltfläche **Mehr >>** und legen Sie die **Beschriftung** fest, um die Version zu benennen. Wenn der Titel nicht festgelegt ist, ist die Version eine automatisch inkrementierte Zahl.
 1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
 
    Version 1.2 erstellt für: Hemden.
@@ -65,7 +64,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Auswahl von** Version wiederherstellen...** Listen von Dokumenten im aktuellen Ordner. Auch wenn eine Seite gelöscht wurde, wird die letzte Version aufgelistet:
+1. Auswählen von &quot;Version wiederherstellen&quot;...** listet Versionen von Dokumenten im aktuellen Ordner auf. Selbst wenn eine Seite gelöscht wurde, wird die letzte Version aufgelistet:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -88,7 +87,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Öffnen Sie im Browser die Seite, die mit einer früheren Version verglichen werden soll.
-1. Wählen Sie im Sidekick die Registerkarte **Version** und dann die Unterregisterkarte **Version wiederherstellen** n.
+1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version wiederherstellen** n aus.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -103,7 +102,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Wählen Sie im Sidekick die Unter-Registerkarte **Version wiederherstellen** aus und klicken Sie auf **&lt;&lt;Zurück**, um die aktuelle Version anzuzeigen.
 
-## Timewarp   {#timewarp}
+## Timewarp  {#timewarp}
 
 Timewarp ist eine Funktion, die den ***Veröffentlichungsstatus*** einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -194,4 +193,4 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
