@@ -10,7 +10,6 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-translation-type: tm+mt
 source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
 source-wordcount: '2813'
@@ -41,9 +40,9 @@ Adobe Experience Manager 6.4 ist seit dem 4. April 2018 allgemein verfügbar.
 
 ## Neuerungen {#what-s-new}
 
-Adobe Experience Manager 6.4 ist eine Upgrade-Version für die Codebasis von Adobe Experience Manager 6.3. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Es umfasst auch die meisten Adobe Experience Manager 6.3 Feature Packs, Hotfix und Service Packs.
+Adobe Experience Manager 6.4 ist eine Upgrade-Version für die Codebasis von Adobe Experience Manager 6.3. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Sie umfasst auch die meisten aller Adobe Experience Manager 6.3 Feature Packs, Hotfixes und Service Packs.
 
-Die nachstehende Liste gibt einen Überblick - während die nachfolgenden Seiten die vollständigen Details Liste.
+Die nachstehende Liste bietet eine Übersicht, während die nachfolgenden Seiten die vollständigen Details auflisten.
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
@@ -83,7 +82,7 @@ Weitere Informationen zu diesen Funktionen finden Sie in der [Dokumentation für
 
    * Indexkonsistenzüberprüfung
    * Indizierungsstatistiken
-   * Import oder Export der Indexkonfiguration
+   * Import oder Export von Indexkonfigurationen
    * Neuindizierung
 
 * Verringertes Repository-Wachstum im Zusammenhang mit Lucene für eine verbesserte Gesamtleistung des Systems
@@ -92,10 +91,10 @@ Weitere Informationen finden Sie auf [dieser Dokumentationsseite](/help/sites-de
 
 #### Überwachung {#monitoring}
 
-* Eine neue [Systemübersicht](/help/sites-administering/operations-dashboard.md#system-overview) bietet eine Snapshot-Ansicht zu allen leistungsbezogenen Systemstatus und Aktivitäten.
+* Eine neue [Systemübersicht](/help/sites-administering/operations-dashboard.md#system-overview) bietet eine Momentaufnahme aller leistungsbezogenen Systemstatus und -aktivitäten.
 * Neue [Konsistenzprüfungen](/help/sites-administering/operations-dashboard.md#health-checks) für Indizierung, Abfragen und Wartung
 
-#### Projekte und Workflows {#projects-and-workflows}
+#### Projekte und Workflows  {#projects-and-workflows}
 
 * Neuer [Workflow-Editor zum Erstellen und Bearbeiten von Workflow-Modellen](/help/sites-developing/workflows-models.md)
 
@@ -105,7 +104,7 @@ Weitere Informationen finden Sie auf [dieser Dokumentationsseite](/help/sites-de
 
 * [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md): Durch die Abwärtskompatibilität von Version 6.4 bleibt Ihr benutzerdefinierter Code in den meisten Fällen kompatibel. Außerdem verringert sich dadurch der mit dem Upgrade verbundene Aufwand.
 * [Analyse der Upgrade-Komplexität](/help/sites-deploying/pattern-detector.md): Ein neues Mustererkennungstool analysiert vorab die Komplexität von Upgrades.
-* [Repository-Umstrukturierung](/help/sites-deploying/repository-restructuring.md): erhebliche Umstrukturierungen (vor allem /etc) zur Erleichterung von Upgrades und zur Förderung bewährter Verfahren bei der Umsetzung
+* [Repository-Neustrukturierung](/help/sites-deploying/repository-restructuring.md): erhebliche Umstrukturierung (in erster Linie /etc), um einfachere Upgrades zu erleichtern und Best Practices für die Implementierung zu fördern
 * Weitere Informationen zu Upgrades finden Sie auf [dieser Seite](/help/sites-deploying/upgrade.md).
 
 ### Experience Manager Sites  {#experience-manager-sites}
@@ -122,13 +121,13 @@ Neu in 6.4 sind ein Visual Editor für [Inhaltsmodelle](/help/assets/content-fra
 
 **Experience Fragments**
 
-Das Erstellen von Varianten in einem Fragment mit identischem Inhalt, aber unterschiedlichem Layout gestaltet sich jetzt dank Baukastenprinzip effizienter. Neben dem Senden von Erlebnisfragmenten an Facebook und Pinterest ist es jetzt möglich, diese als Angebot nach Adobe Target zu senden.
+Das Erstellen von Varianten in einem Fragment mit identischem Inhalt, aber unterschiedlichem Layout gestaltet sich jetzt dank Baukastenprinzip effizienter. Zusätzlich zum Senden von Experience Fragments an Facebook und Pinterest ist es jetzt möglich, sie als Angebot an Adobe Target zu senden.
 
 **Content Services**
 
-Verschiedene Verbesserungen am Sling Model Exporter und den Core-Komponenten sind enthalten, um eine robuste JSON-Ausgabe zum Einbetten von Inhalten in mobile Apps und Erlebnisse, die mit einseitigen Apps erstellt wurden, bereitzustellen.
+Es wurden verschiedene Verbesserungen am Sling Model Exporter und den Kernkomponenten vorgenommen, um eine robuste JSON-Ausgabe zur Einbettung von Inhalten in mobile Apps und Erlebnisse bereitzustellen, die mit Einzelseitenanwendungen erstellt wurden.
 
-#### Schneller Erstellen von Sites {#gettings-sites-built-quicker}
+#### Schnellere Erstellung von Sites {#gettings-sites-built-quicker}
 
 Mit AEM 6.4 ist die Transformation zum Komponentenmodell der nächsten Generation abgeschlossen. Das mit Version 6.3 eingeführte und nun durch das Stilsystem ergänzte Kernkomponentenkonzept ermöglicht das effiziente Erstellen neuer bzw. Erweitern vorhandener Sites.
 
@@ -136,9 +135,9 @@ Empfohlenes Tutorial zur optimalen Nutzung des neuen Komponentenmodells: [Erste 
 
 #### Screens-Add-on  {#screens-add-on}
 
-AEM Screens steht für eine einheitliche Botschaft in allen Marketing-Kanälen, einschließlich Digital Signage und Kiosk-Netzwerken. Mit Einführung von AEM 6.4 wird die Ausführung des Signage Player unter Microsoft Windows und Google Chrome OS unterstützt. Darüber hinaus sind Erweiterungen für die Geräteverwaltung per Fernzugriff und Zeitpläne (Gruppen von Kanälen) verfügbar.
+AEM Screens steht für die Bereitstellung einer konsistenten Botschaft über alle Marketingkanäle, einschließlich Digital Signage- und Kiosk-Netzwerken. Mit Einführung von AEM 6.4 wird die Ausführung des Signage Player unter Microsoft Windows und Google Chrome OS unterstützt. Darüber hinaus sind Erweiterungen für die Geräteverwaltung per Fernzugriff und Zeitpläne (Gruppen von Kanälen) verfügbar.
 
-Weitere Informationen zu den Bildschirmaktualisierungen finden Sie unter [AEM Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Weitere Informationen zu den Screens-Aktualisierungen finden Sie im [AEM Screens-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -166,7 +165,7 @@ AEM 6.4 Communities stellt [vorkonfigurierte APIs](/help/communities/user-ugc-ma
 
 #### Verbesserte Site- und Gruppenverwaltung  {#enhancements-to-site-and-group-management}
 
-**Erstellen von Gruppen mit mehreren Gebietsschemas in einem Schritt**
+**Erstellen von Gruppen mit mehreren Gebietsschemas in einem einzigen Schritt**
 
 Es ist nun möglich, mehrsprachige Gruppen in einem Arbeitsgang zu erstellen. Um derartige Gruppen zu erstellen, können Benutzer über die Sites-Konsole zur Gruppensammlung der gewünschten Community-Site navigieren. Erstellen Sie eine Gruppe und geben Sie die gewünschten Sprachen auf der Seite „Community-Gruppenvorlage“ an. Weitere Informationen zu dieser Funktion finden Sie unter [Community-Gruppen-Konsole](/help/communities/groups.md).
 
@@ -180,7 +179,7 @@ Beim Zugriff über die globale Navigation ist für die betreffenden Sites und Gr
 
 In Gruppen sind nun Katalog- und Zuweisungsfunktionen verfügbar. Dies ermöglicht die gezielte Erstellung, Verwaltung und Veröffentlichung von Schulungsinhalten für bestimmte Community-Mitglieder. Weitere Informationen zum Aktivieren von Community-Gruppen finden Sie unter [Verwalten von Aktivierungsressourcen](/help/communities/resource.md).
 
-![zuweisungskatalog](assets/assignmentcatalog.png)
+![assignmentcatalog](assets/assignmentcatalog.png)
 
 ### Experience Manager Assets {#experience-manager-assets}
 
@@ -196,7 +195,7 @@ Weitere Informationen zu dieser Funktion, den damit verbundenen Systemanforderun
 
 **AEM-Desktop-Programm**
 
-AEM Desktop-App wurde auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-App finden Sie in einem dedizierten Dokument [AEM Versionshinweise zur Desktop-App](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html).
+AEM Desktop-Programm wurde auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-Programm finden Sie in einem dedizierten Dokument [AEM Versionshinweise für das Desktop-Programm](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html).
 
 Zu den Verbesserungen, die seit Veröffentlichung von AEM 6.3 eingeführt wurden, gehören die Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen, eine neue Benutzeroberfläche zur Überwachung von Asset-Vorgängen im Hintergrund, Verbesserungen beim Caching, Arbeiten im Netzwerk und bei der Anmeldung sowie allgemeine Verbesserungen hinsichtlich der Stabilität. Die Dokumentation umfasst außerdem ein [Handbuch mit Best Practices](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html).
 
@@ -204,7 +203,7 @@ Zu den Verbesserungen, die seit Veröffentlichung von AEM 6.3 eingeführt wurden
 
 Zu den neuen Funktionen gehören optimierte Smart-Tags, mit denen die Taxonomien der jeweiligen Unternehmen erfasst werden und digitale Assets automatisch mit unternehmensspezifischen Tags versehen werden können, sowie die intelligente mehrsprachige Suche, die die Auffindbarkeit von Inhalten in mehreren Sprachen durch die unmittelbare Übersetzung von Suchbegriffen verbessert. Weitere Informationen zu dieser Funktion finden Sie unter [Optimierte Smart-Tags](/help/assets/enhanced-smart-tags.md).
 
-![advanced_smart_tags2](assets/enhanced_smart_tags2.png)
+![extended_smart_tags2](assets/enhanced_smart_tags2.png)
 
 **Metadaten**
 
@@ -212,19 +211,19 @@ Zu den zahlreichen Verbesserungen, die mit dieser Version eingeführt wurden, ge
 
 **Berichte**
 
-Asset Berichte wurde in AEM 6.4 mit dem neuen Berichte-Framework, der Benutzerfreundlichkeit und weiteren OOTB-Berichten für Kundenverwendungsfälle überarbeitet. Weitere Informationen zum Erstellen unterschiedlicher Berichte finden Sie unter [Asset-Berichte](/help/assets/asset-reports.md).
+Die Asset-Berichterstellung wurde in AEM 6.4 grundlegend überarbeitet und enthält jetzt ein neues Reporting-Framework, ein neues Benutzererlebnis und mehr OOTB-Berichte für Anwendungsfälle von Kunden. Weitere Informationen zum Erstellen unterschiedlicher Berichte finden Sie unter [Asset-Berichte](/help/assets/asset-reports.md).
 
 **Benutzererlebnis**
 
-Es wurden zahlreiche Verbesserungen eingeführt, um das Durchsuchen, Suchen und Verwalten von Assets zu verbessern, u. a. verbesserte Scrollfunktionen, eine Schaltfläche, mit der zu den letzten Suchergebnissen zurückgekehrt werden kann, und verbesserte Suchfilter. Die vollständige Liste verfügbar unter [AEM Assets](assets.md).
+Es wurden zahlreiche Verbesserungen eingeführt, um das Durchsuchen, Suchen und Verwalten von Assets zu verbessern, u. a. verbesserte Scrollfunktionen, eine Schaltfläche, mit der zu den letzten Suchergebnissen zurückgekehrt werden kann, und verbesserte Suchfilter. Die vollständige Liste ist in [AEM Assets](assets.md) verfügbar.
 
 **Brand Portal**
 
-Es wurden verschiedene Verbesserungen in den Bereichen Metadaten, Berichterstellung, digitale Rechte, Anmeldung und Veröffentlichungsleistung bei der Asset-Verteilung eingeführt. Informationen zu den neuen Verbesserungen und Funktionen finden Sie unter [Neue Funktionen im AEM Assets Markenportal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/introduction/whats-new.html).
+Es wurden verschiedene Verbesserungen in den Bereichen Metadaten, Berichterstellung, digitale Rechte, Anmeldung und Veröffentlichungsleistung bei der Asset-Verteilung eingeführt. Weitere Informationen zu den neuen Verbesserungen und Funktionen finden Sie unter [Neue Funktionen in AEM Assets Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Dynamic Media-Add-on {#dynamic-media-add-on}
 
-AEM 6.4 umfasst zahlreiche neue Funktionen und Verbesserungen für dynamische Medien. Die vollständige Liste ist unter [AEM Assets](assets.md) verfügbar. Hier einige der wichtigsten Highlights:
+AEM 6.4 umfasst zahlreiche neue Funktionen und Verbesserungen für dynamische Medien. Die vollständige Liste finden Sie unter [AEM Assets](assets.md). Hier einige der wichtigsten Highlights:
 
 **Smartes Zuschneiden**
 
@@ -236,11 +235,11 @@ Weitere Informationen zum smarten Zuschneiden in der Komponente „Dynamic Media
 
 **Intelligente Bildbearbeitung**
 
-Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der einzelnen Benutzer, um automatisch Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt.
+Intelligente Bildbearbeitung nutzt die individuellen anzeigebezogenen Eigenschaften jedes Benutzers, um automatisch für sein Erlebnis optimierte Bilder bereitzustellen, was zu einer besseren Leistung und Interaktion führt.
 
 Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
 
-![smart_cut](assets/smart_crop.png)
+![smart_crop](assets/smart_crop.png)
 
 **Neue Mediensegmente und Viewer-Verbesserungen**
 
@@ -258,7 +257,7 @@ AEM 6.4 Forms wurde um zahlreiche neue Funktionen und Erweiterungen ergänzt. Hi
 * Lazy-Loading-Fragmente
 * Einfaches Upgrade von LiveCycle auf Experience Manager Forms 6.4
 
-Weitere Informationen hierzu finden Sie auf der Seite mit Versionshinweisen zu [AEM Forms](forms.md). Weitere Informationen zu neuen und verbesserten Funktionen und Dokumentationsressourcen finden Sie unter [Zusammenfassung der neuen Funktionen und Verbesserungen in AEM 6.4 Forms](/help/forms/using/whats-new.md).
+Weitere Informationen hierzu finden Sie auf der Seite mit Versionshinweisen zu [AEM Forms](forms.md). Weitere Informationen zu neuen und verbesserten Funktionen und Dokumentationsressourcen finden Sie in der [Zusammenfassung der neuen Funktionen und Verbesserungen in AEM 6.4 Forms](/help/forms/using/whats-new.md) .
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
@@ -280,11 +279,11 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 * Standalone-Schnellstart: cq-quickstart-6.4.0.jar
 * Anwendungsserver-Schnellstart: cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 oder neuer für verschiedene Webserver und Plattformen. Siehe [Download-Link](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
-* Plug-in für Eclipse IDE. [Lesen Sie mehr und laden Sie](/help/sites-developing/aem-eclipse.md) herunter.
+* Dispatcher 4.3.1 oder höher für verschiedene Webserver und Plattformen. Siehe [Downloadlink](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* Plug-in für Eclipse IDE. [mehr dazu und Download](/help/sites-developing/aem-eclipse.md).
 
-* Erweiterung für den Code-Editor für Klammern. [Lesen Sie mehr und laden Sie](/help/sites-developing/aem-brackets.md) herunter.
-* Abhängigkeiten von Maven/Gradle. Siehe [Download-Link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
+* Erweiterung für den Brackets-Code-Editor. [Mehr lesen und herunterladen](/help/sites-developing/aem-brackets.md).
+* Maven-/Gradle-Abhängigkeiten. Siehe [Downloadlink](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
 
 **Sites**
 
@@ -299,11 +298,11 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
    * [Italienisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Französisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [AEM ](/help/sites-developing/modernization-tools.md) Modernisierungstools zur Migration von Komponenten der klassischen Benutzeroberfläche zu Coral 3
+* [AEM Modernisierungs-](/help/sites-developing/modernization-tools.md) Tools für die Migration von Komponenten der klassischen Benutzeroberfläche zu Coral 3
 
 **Assets**
 
-* Adobe Experience Manager Desktop-App ([Lesen Sie mehr](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) und [download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Adobe Experience Manager-Desktop-Programm ([mehr dazu](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) und [Download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
 * Paket zum Hinzufügen eines erweiterten PDF-Rasterizers ([weitere Informationen](/help/assets/aem-pdf-rasterizer.md) und [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -348,7 +347,7 @@ Sie finden die gesamte Matrix für unterstützte Plattformen einschließlich Su
 
 >[!NOTE]
 >
->Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9 und 10 sind Nicht-LTS-Versionen von Oracle (siehe [Oracle Java SE Support Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe unterstützt nur LTS-Releases von Java beim Ausführen von AEM in einer Produktionsumgebung. Daher ist Java 8 die empfohlene Version für die Verwendung mit AEM 6.4.
+>Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9 und 10 sind Nicht-LTS-Versionen von Oracle (siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe unterstützt nur LTS-Releases von Java beim Ausführen von AEM in einer Produktionsumgebung. Daher ist Java 8 die empfohlene Version für die Verwendung mit AEM 6.4.
 
 ## Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
@@ -377,5 +376,5 @@ Lesen Sie die Liste veralteter und entfernter Funktionen in [Adobe Experience Ma
 Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe-Kundenbetreuer.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).
-* Produktupdates, Patches und Pakete für zusätzliche Funktionen bei [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Kundenservice per Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Erlebnis des Kundensupports für neue Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* Produktaktualisierungen, Patches und Pakete für zusätzliche Funktionen auf [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Kundensupport über Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neues Kundenunterstützungs-Erlebnis für Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
