@@ -2,16 +2,15 @@
 title: Verwalten von Metadaten für digitale Assets in  [!DNL Adobe Experience Manager].
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
-feature: Tagging, Metadata
+feature: Tagging, Metadaten
 role: Architect, Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1397'
 ht-degree: 99%
 
 ---
-
 
 # Verwalten von Metadaten für digitale Assets {#managing-metadata-for-digital-assets}
 
@@ -19,7 +18,7 @@ ht-degree: 99%
 
 * [XMP-Metadaten](xmp.md).
 * [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md).
-* [Metadaten-Schemata-Referenz](meta-ref.md).
+* [Metadatenschema-Referenz](meta-ref.md).
 
 ## Die Bedeutung von Metadaten {#why-we-need-metadata}
 
@@ -57,14 +56,14 @@ Aus diesen Gründen erhalten Sie mit [!DNL Assets] die richtigen Mittel, um Meta
 
 Die beiden grundlegenden Metadatentypen sind technische Metadaten und beschreibende Metadaten.
 
-Technische Metadaten eignen sich für Software-Anwendungen, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. [!DNL Experience Manager Assets] und andere Software ermitteln technische Metadaten automatisch. Die Metadaten können sich ändern, wenn das Asset geändert wird. Die verfügbaren technischen Metadaten für ein Asset hängen größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
+Technische Metadaten eignen sich für Software-Programme, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. [!DNL Experience Manager Assets] und andere Software ermitteln technische Metadaten automatisch. Die Metadaten können sich ändern, wenn das Asset geändert wird. Die verfügbaren technischen Metadaten für ein Asset hängen größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
 
 * Größe einer Datei.
 * Abmessungen (Höhe und Breite) eines Bildes.
 * Bitrate einer Audio- oder Videodatei.
 * Auflösung (Detaillierungsgrad) eines Bildes.
 
-Beschreibende Metadaten sind solche, die sich auf die Anwendungsdomäne beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie werden manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Längen- und Breitengrad verfolgen und das Bild mit einem Geotag versehen.
+Beschreibende Metadaten sind solche, die sich auf die Programm-Domain beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie werden manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Längen- und Breitengrad verfolgen und das Bild mit einem Geotag versehen.
 
 Die Kosten für die manuelle Erstellung beschreibender Metadateninformationen sind hoch. Daher werden Standards festgelegt, um den Austausch von Metadaten zwischen Software-Systemen und Organisationen zu erleichtern. [!DNL Experience Manager Assets] unterstützt alle relevanten Standards für die Metadatenverwaltung.
 
@@ -122,9 +121,9 @@ Die unterstützten Metadatenschemata sind unten aufgeführt.
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpBJ` – Einfaches Job-Ticketing.
 
-### Anwendungsspezifische Metadaten {#application-specific-metadata}
+### Programmspezifische Metadaten {#application-specific-metadata}
 
-Die anwendungsspezifischen Metadaten umfassen technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Anwendungen verwendet werden. Beispielsweise kann eine andere Anwendung zum Rendern von Bildern möglicherweise nicht auf [!DNL Adobe Photoshop]-Metadaten zugreifen. Sie können einen Workflow-Schritt erstellen, der eine anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
+Die programmspezifischen Metadaten umfassen technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Programmen verwendet werden. Beispielsweise kann ein anderes Programm zum Rendern von Bildern möglicherweise nicht auf [!DNL Adobe Photoshop]-Metadaten zugreifen. Sie können einen Workflow-Schritt erstellen, der eine programmspezifische Eigenschaft in eine Standardeigenschaft ändert.
 
 * ACDSee – Vom [!DNL ACDSee]-Programm verwaltete Metadaten. Siehe [www.acdsee.com/](https://www.acdsee.com/).
 * Album – [!DNL Adobe Photoshop Album].
@@ -157,7 +156,7 @@ Die anwendungsspezifischen Metadaten umfassen technische und beschreibende Metad
 
 ### Druckspezifische Metadaten {#print-specific-metadata}
 
-* PDF und PDF/X – Adobe PDF und Drittanbieteranwendungen.
+* PDF und PDF/X – Adobe PDF und Drittanbieterprogramme.
 * PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – XMP-Metadaten für Seitentext.
