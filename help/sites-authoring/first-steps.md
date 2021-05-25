@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
-translation-type: tm+mt
-source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+exl-id: c4b0211f-aaaf-44e5-89bb-6b951dbdb98f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 93%
 
 ---
-
 
 # Erste Schritte für Autoren{#first-steps-for-authors}
 
@@ -24,9 +23,9 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 
 Er deckt folgende Themen ab:
 
-* [Erste Schritte](#getting-started)  - Eine detaillierte Übersicht der Ereignis, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
+* [Erste Schritte](#getting-started)  - Erläuterung der grundlegenden Ereignisabfolge für die Erstellung und Veröffentlichung Ihrer ersten Seite.
 
-* [Weitere Aktionen](#further-actions) : Folgen Sie den vielen anderen Aktionen, die Sie beim Authoring verwenden können.
+* [Weitere Aktionen](#further-actions)  - Hier finden Sie die vielen weiteren Aktionen, die Sie beim Authoring verwenden können.
 
 ## Überblick {#overview}
 
@@ -44,7 +43,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Wenn Sie eine Se
 
 Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
-### Öffnen einer Seite {#opening-a-page}
+### Öffnen einer Seite  {#opening-a-page}
 
 Bei vielen Aktionen, wie beim Bearbeiten, müssen Sie [eine Seite öffnen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
@@ -59,9 +58,9 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 
 * [Rückgängigmachen und Wiederholen von Seitenbearbeitungen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Verwenden des Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode) (um die Darstellung der Seite bei der Veröffentlichung zu prüfen)
-* [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Sperren einer Seite  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Veröffentlichen einer Seite  {#publishing-a-page}
+### Veröffentlichen einer Seite {#publishing-a-page}
 
 Wenn Sie die Bearbeitung der Seite abgeschlossen haben, möchten Sie [den Inhalt sicherlich veröffentlichen (bzw. aktivieren)](/help/sites-authoring/publishing-pages.md), damit er für Besucher Ihrer Website verfügbar ist.
 
