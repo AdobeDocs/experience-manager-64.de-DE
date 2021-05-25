@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
-translation-type: tm+mt
-source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
+exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 85%
 
 ---
-
 
 # Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
@@ -26,9 +25,9 @@ ht-degree: 85%
 
 ## Einführung {#introduction}
 
-AEM 6.4.3.0 bietet Admin Console-Support für AEM Instanzen und Adobe IMS(Identity Management System)-basierte Authentifizierung für **AEM Managed Services**-Kunden.
+AEM 6.4.3.0 führt Admin Console-Unterstützung für AEM-Instanzen und Adobe IMS(Identity Management System)-basierte Authentifizierung für **AEM Managed Services**-Kunden ein.
 
-Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzer und Gruppen können Produktinstanzen zugeordnet werden, die AEM Instanzen zugeordnet sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
+Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzer und Gruppen können Produktprofilen zugewiesen werden, die mit AEM Instanzen verknüpft sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
 
 ## Wichtige Highlights {#key-highlights}
 
@@ -38,7 +37,7 @@ Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed S
 * Produktprofile in der Admin Console legen fest, auf welche Instanzen ein Benutzer zugreifen kann.
 * Federated Authentication über den SAML 2-konformen Identitäts-Provider des Kunden wird unterstützt.
 * Nur Enterprise IDs oder Federated IDs (für Single Sign-On beim Kunden) werden unterstützt, jedoch keine persönlichen Adobe IDs.
-* User Management (in Adobe Admin Console) befindet sich weiterhin im Eigentum der Kundenadministratoren.
+* Die Benutzerverwaltung (in Adobe Admin Console) wird weiterhin den Kundenadministratoren gehören.
 
 ## Architektur {#architecture}
 
@@ -56,7 +55,7 @@ Das Onboarding von Kunden zur Admin Console ist eine Voraussetzung für die Verw
 
 Als ersten Schritt sollten Kunden eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden in der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) als IMS-Organisationen angezeigt.
 
-AEM Managed Services-Kunden sollten bereits über eine Organisation verfügen, und im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in der Admin Console zur Verwaltung von Benutzerberechtigungen und zum Zugriff bereitgestellt.
+AEM Managed Services-Kunden bereits über eine Organisation verfügen sollten. Im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in der Admin Console für die Verwaltung von Benutzerberechtigungen und -zugriff zur Verfügung gestellt.
 
 Der Wechsel zu IMS zur Benutzerauthentifizierung ist eine gemeinsame Maßnahme zwischen AMS und Kunden, wobei jede Seite eigene Workflows abschließen muss.
 
@@ -68,7 +67,7 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 1. Die Systemadministrator beansprucht die Domäne, um die Eigentümerschaft der Domäne zu bestätigen (in diesem Beispiel acme.com).
 1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator konfiguriert den Identitätsanbieter (IDP) in der Admin Console, um SSO einzurichten.
-1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt. Siehe Benutzer- und Gruppensynchronisierung
+1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt. Siehe Benutzer- und Gruppensynchronisierung .
 
 >[!NOTE]
 >
@@ -76,7 +75,7 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 >
 >Weitere Informationen zur Verwaltung für Unternehmen und zur Admin Console finden Sie [auf dieser Seite](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
 
-### Onboarding von Benutzern in der Admin Console {#onboarding-users-to-the-admin-console}
+### Onboarding von Benutzern in der Admin Console  {#onboarding-users-to-the-admin-console}
 
 Je nach der Größe des Kunden und den bevorzugten Einstellungen gibt es drei Möglichkeiten, Benutzer hinzuzufügen:
 
@@ -114,7 +113,7 @@ Das zur Benutzersynchronisierung steht über das Adobe Github-Repository an dies
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-Beachten Sie, dass die Vorabversion 2.4RC1 mit Unterstützung der dynamischen Gruppenbildung verfügbar ist und finden Sie hier: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+Beachten Sie, dass eine Vorabversion 2.4RC1 mit Unterstützung für die dynamische Gruppenerstellung verfügbar ist und hier zu finden ist: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der Admin Console dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
@@ -132,7 +131,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 >Die Dokumentation zur Adobe I/O-Konsole finden Sie [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->Die User Management-API, die vom User Sync Tool verwendet wird, wird unter [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html) behandelt.
+>Die User Management-API, die vom Tool zur Benutzersynchronisierung verwendet wird, finden Sie unter [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -194,7 +193,7 @@ Sobald die Authentifizierung abgeschlossen ist, wird der Benutzer zurück zu AEM
 
 Für vorhandene AEM-Instanzen, die eine andere Authentifizierungsmethode verwenden und jetzt zu IMS migriert werden, muss ein Migrationsschritt durchgeführt werden.
 
-Vorhandene Benutzer im AEM Repository (lokal über LDAP oder SAML bezogen) können migriert werden, um mithilfe des Benutzermigrationsprogramms auf IMS als IDP zu verweisen.
+Vorhandene Benutzer im AEM-Repository (lokal über LDAP oder SAML bezogen) können migriert werden, um mithilfe des User Migration Utility auf IMS als IDP zu verweisen.
 
 Dieses Dienstprogramm wird von Ihrem AMS-Team im Rahmen der IMS-Bereitstellung ausgeführt.
 
@@ -204,7 +203,7 @@ Zugriffssteuerung und Zugriffsberechtigungen werden weiterhin in AEM verwaltet. 
 
 Im Beispiel unten werden der lokalen Gruppe *Dam_Users* synchronisierte Gruppen hinzugefügt.
 
-Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. (Bitte beachten Sie, dass die Benutzer und Gruppen mit dem Benutzersynchronisierungstool aus LDAP synchronisiert oder lokal erstellt werden können. Lesen Sie hierzu den Abschnitt **Einstiegsbenutzer mit der oben stehenden Admin Console**).
+Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. ( Beachten Sie, dass die Benutzer und Gruppen mit dem Benutzersynchronisierungstool aus LDAP synchronisiert oder lokal erstellt werden können. Weitere Informationen finden Sie im Abschnitt **Onboarding von Benutzern zur Admin Console** oben).
 
 >[!NOTE]
 >
@@ -227,4 +226,3 @@ In AEM können die aus IMS synchronisierten Benutzergruppen vorhandenen lokalen 
 Wie unten gezeigt, erbt die Gruppe *AEM-GRP_008* die Berechtigungen und Zugriffsrechte von DAM-Benutzern. Dies ist eine effektive Möglichkeit zur Verwaltung von Berechtigungen für synchronisierte Gruppen und wird häufig auch in LDAP-basierten Authentifizierungsmethoden verwendet.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)
-
