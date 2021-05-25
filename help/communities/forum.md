@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
-translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+exl-id: fa6f28b4-3217-4b6a-b223-506da0ecca9e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 63%
 
 ---
-
 
 # Funktion „Forum“{#forum-feature}
 
@@ -25,34 +24,34 @@ ht-degree: 63%
 Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung Folgendes tun können:
 
 * Erstellen neuer Themen
-* Ansicht und Beantwortung von Themen
-* Thema
-* Forum suchen
-* Hilfe beim Moderieren des Foruminhalts
+* Themen anzeigen und beantworten
+* Thema folgen
+* Forum durchsuchen
+* Moderieren von Forumsinhalten
 * Verschieben von Forumthemen von einer Seite auf eine andere
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Forumsfunktion zu einer AEM Site
+* Hinzufügen der Forumsfunktion zu einer AEM
 * Konfigurationseinstellungen für die Komponente `Forum`
 
 ## Hinzufügen eines Forums zu einer Seite {#adding-a-forum-to-a-page}
 
-Um einer Seite im Autorenmodus eine `Forum`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
+Um eine Komponente `Forum` im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Forum`
 
-Ziehen Sie es auf eine Seite, auf der das Forum erscheinen soll.
+Ziehen Sie es an die gewünschte Stelle auf einer Seite, auf der das Forum erscheinen soll.
 
-Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-forum.md#essentials-for-client-side) einbezogen werden, wird die `Forum`Komponente wie folgt angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-forum.md#essentials-for-client-side) enthalten sind, wird die `Forum`Komponente wie folgt angezeigt:
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
 ## Konfigurieren eines Forums {#configuring-a-forum}
 
-Wählen Sie die platzierte Komponente `Forum` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte Komponente `Forum` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-61](assets/chlimage_1-61.png) ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -72,28 +71,28 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die Einstellungen
 
 * **[!UICONTROL Datei-Uploads zulassen]** Ist diese Option aktiviert, können Themen oder Kommentaren Dateien hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulassen von]**
-FolgendemWenn aktiviert, fügen Sie die folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
-
-* **[!UICONTROL Pinning]**
-zulassenWenn aktiviert, können Forumsthemen an den Anfang der Liste der Themen eingefügt werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Zulassen]**
+Folgende Funktion ist aktiviert. Fügen Sie für Forumsbeiträge die folgende Funktion hinzu, damit Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Zulassen von]**
-speziellen Inhalten, kann die Idee als  [speziellen Inhalt](featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+PinningIst diese Option aktiviert, können Forumsthemen an den Anfang der Themenliste verschoben werden. Diese Option ist standardmäßig deaktiviert.
+
+* **[!UICONTROL Zulassen]**
+von speziellen Inhalten Ist diese Option aktiviert, kann die Idee als  [spezieller Inhalt](featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL E-Mail-]**
-Abonnements zulassenWenn diese Option aktiviert ist, können Sie zulassen, dass Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und [E-Mail-Konfiguration](email.md). Diese Option ist standardmäßig deaktiviert.
+Abonnements zulassenIst diese Option aktiviert, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([Abonnement](subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und die Konfiguration von [E-Mail](email.md). Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Max.]**
-DateigrößeRelevant nur, wenn 
+* **[!UICONTROL Max File]**
+SizeRelevant nur, wenn 
 `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **[!UICONTROL Zulässige]**
-DateitypenRelevant nur, wenn 
-`Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+DateitypenNur relevant, wenn 
+`Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
-* **[!UICONTROL Max.]**
-Größe der Bilddatei anhängenRelevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+* **[!UICONTROL Maximale Größe der Bilddatei anhängenNur relevant, wenn]**
+die Option &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
 
 * **[!UICONTROL Antworten mit Diskussionsfaden zulassen]** Ist diese Option aktiviert, können Kommentare zum Thema hinterlassen werden. Diese Option ist standardmäßig deaktiviert.
 
@@ -103,23 +102,23 @@ Größe der Bilddatei anhängenRelevant nur, wenn &quot;Datei-Uploads zulassen&q
 
 * **[!UICONTROL Breadcrumbs anzeigen]** Ist diese Option aktiviert, werden Breadcrumbs für die Navigation auf den Themenseiten eingeblendet. Diese Option ist standardmäßig aktiviert.
 
-* **[!UICONTROL Anzeigen von]**
-KennzeichenWenn aktiviert, zeigen Sie verdiente und zugewiesene  [](implementing-scoring.md) Abzeichen mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Display]**
+BadgesWenn diese Option aktiviert ist, zeigen Sie mit dem Blogeintrag eines Mitglieds verdiente und zugewiesene  [](implementing-scoring.md) Abzeichen an. Diese Option ist standardmäßig deaktiviert.
 
 >[!NOTE]
 >
 >Es kann erforderlich sein, sowohl `AllowThreaded Replies` als auch `Allow users to Delete Comments and Topics` zu überprüfen, um Kommentare zu einem Thema zu aktivieren.
 
-### Benutzermoderation, Registerkarte {#user-moderation-tab}
+### Registerkarte Benutzermoderation {#user-moderation-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Themen und Antworten (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
 * **[!UICONTROL Posts ablehnen]** Ist diese Option aktiviert, können moderierende Mitglieder Beiträge ablehnen und so verhindern, dass diese im Forum veröffentlicht werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Themen schließen/erneut öffnen]** Ist diese Option aktiviert, können moderierende Mitglieder Themen für die weitere Bearbeitung oder Kommentare schließen oder bereits geschlossene Themen erneut öffnen. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Themen verschiebenWenn]**
-diese Option aktiviert ist, können Sie Moderatoren auf der Seite des Veröffentlichungsmodus das Verschieben von Themen gestatten. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Themen verschiebenWenn diese Option aktiviert ist, können Moderatoren auf Veröffentlichungsseite Themen verschieben.]**
+Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Posts kennzeichnen]** Ist diese Option aktiviert, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
@@ -127,40 +126,40 @@ diese Option aktiviert ist, können Sie Moderatoren auf der Seite des Veröffent
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]** Ist diese Option aktiviert, können Mitglieder einen eigenen Grund dafür eingeben, warum sie Themen oder Kommentare als unangemessen kennzeichnen möchten. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Schwellenwert für Moderation]** Geben Sie an, wie oft ein Thema oder ein Kommentar von Mitgliedern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 (einmal).
+* **[!UICONTROL Schwellenwert für Moderation]** Geben Sie an, wie oft ein Thema oder ein Kommentar von Mitgliedern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 ( einmal).
 
 * **[!UICONTROL Kennzeichnungslimit]** Geben Sie an, wie oft ein Thema oder ein Kommentar als unangemessen gekennzeichnet werden muss, bevor es oder er aus dem öffentlichen Bereich ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
 
-### Tag-Feld, Registerkarte {#tag-field-tab}
+### Registerkarte &quot;Tag-Feld&quot;{#tag-field-tab}
 
 Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert) verwendet werden können.
 
 * **[!UICONTROL Zulässige]**
-NamespacesRelevant, wenn  `Allow Tagging` diese unter der  **** Einstellungsstab markiert sind. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+NamespacesRelevant , wenn  `Allow Tagging` unter der Registerkarte  **** Einstellungen aktiviert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Der Standardwert ist 
 **-** 1 (keine Beschränkungen).
 
-### Registerkarte Übersetzung {#translation-tab}
+### Registerkarte &quot;Übersetzung&quot;{#translation-tab}
 
 Auf der Registerkarte **[!UICONTROL Übersetzung]** können Sie festlegen, ob bei für die Community-Site aktivierter Übersetzungsoption der gesamte Thread oder nur bestimmte Posts übersetzt werden sollen.
 
 * **[!UICONTROL Alles übersetzen]** Ist diese Option aktiviert, wird der Forums-Thread in die Sprache des Benutzers übersetzt. Diese Option ist standardmäßig deaktiviert.
 
-### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
+### Registerkarte &quot;Sortiereinstellungen&quot;{#sort-settings-tab}
 
-Geben Sie unter der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie auf der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden sollen, wenn sie angezeigt werden.
 
 * **[!UICONTROL Sortieren]**
-nachAlle zulässigen Sortierungsauswahlen markieren: 
+nach Alle zulässigen Sortieroptionen aktivieren: 
 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Legen Sie]**
-DefaultPull nach unten fest, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden soll. Der Standardwert ist 
+* **[!UICONTROL Als]**
+DefaultPull festlegen, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden soll. Der Standardwert ist 
 `Newest`.
 
 * **[!UICONTROL Zeitoptionen für Analytics-]**
-SortierungZiehen Sie nach unten, um eine der folgenden Optionen auszuwählen 
+Sortierung auswählen Pulldown zum Auswählen einer der folgenden Optionen 
 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
 
 ## Zusätzliche Informationen {#additional-information}
