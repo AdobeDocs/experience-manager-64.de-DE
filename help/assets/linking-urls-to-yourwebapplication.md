@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 exl-id: e076349d-8b1a-487f-b982-9440d7de13b9
-feature: Configuration
+feature: Konfiguration
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '1290'
@@ -40,7 +39,7 @@ Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site.](re
 
 Informationen hierzu finden Sie auch unter [Hochladen von Assets.](managing-assets-touch-ui.md#uploading-assets)
 
-## Abrufen einer URL für ein Asset     {#obtaining-a-url-for-an-asset}
+## Abrufen einer URL für ein Asset      {#obtaining-a-url-for-an-asset}
 
 Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorgabe generiert wird. Wenn Sie die URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder einem Programm einfügen können.
 
@@ -141,7 +140,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Tippen Sie links oben auf der Seite auf **[!UICONTROL Cloud Service]s**, dann auf das Symbol AEM und navigieren Sie zu **[!UICONTROL Allgemein > CRXDE Lite]**.
+1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Cloud Service]s**, tippen Sie dann auf das AEM-Symbol und navigieren Sie zu **[!UICONTROL Allgemein > CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java Content Repository).
 
    Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
@@ -182,7 +181,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    | Von Ihnen verwendetes Videobereitstellungsprotokoll | Zu verwendender Protokollselektor |
    |---|---|
-   | HTTP  <br> Wenn Sie HTTP (nicht sicherer Video-Versand) verwenden, stellen Sie sicher, dass Sie in dem zuvor kopierten URL-Wert für den Videodienst HTTPS in HTTP ändern. | `public/` |
+   | HTTP  <br> Wenn Sie HTTP (nicht sichere Videobereitstellung) verwenden, stellen Sie sicher, dass Sie in der Videodienst-URL, die Sie zuvor kopiert haben, HTTPS in HTTP ändern. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Kopieren Sie den vollständigen Video-Asset-Pfad in AEM, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.
@@ -205,6 +204,6 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
+HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
 Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2.md).
