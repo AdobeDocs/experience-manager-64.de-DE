@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8c205d1d-d17e-4810-8ef9-a8bdcd9aa1c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 95%
 
 ---
 
-
 # Just-in-time-Benutzerbereitstellung {#just-in-time-user-provisioning}
 
 AEM Forms unterstützt die Just-in-time-Bereitstellung von Benutzern, die noch nicht in User Management vorhanden sind. Mit der Just-in-time-Bereitstellung werden Benutzer automatisch User Management hinzugefügt, nachdem die Benutzeranmeldeinformationen erfolgreich authentifiziert wurden. Darüber hinaus werden relevante Rollen und Gruppen dynamisch dem neuen Benutzer zugewiesen.
 
-## Bedarf an Just-in-time-Benutzerbereitstellung {#need-for-just-in-time-user-provisioning}
+## Bedarf an Just-in-time-Benutzerbereitstellung  {#need-for-just-in-time-user-provisioning}
 
 So funktioniert die herkömmliche Authentifizierung:
 
@@ -112,4 +111,3 @@ Angenommen, ein Benutzer versucht, sich bei AEM Forms anzumelden und ein Authent
 >[!NOTE]
 >
 >Bei der Just-in-time-Bereitstellung ist `IdentityCreator` standardmäßig implementiert. Damit können Sie Benutzer dynamisch erstellen. Benutzer werden mit den Daten erstellt, die mit den Ordnern in der Domäne verknüpft sind.
-
