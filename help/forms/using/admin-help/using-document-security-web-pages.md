@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Dokumentensicherheit
+exl-id: f93d496e-6bd3-462a-b57a-80085647a636
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 96%
 
 ---
-
 
 # Verwenden der Document Security-Webseiten {#using-the-document-security-webpages}
 
@@ -33,13 +32,13 @@ Da Document Security die vorhandenen Ordner Ihres Unternehmens für Benutzerinfo
 
 Um sich als Administrator anmelden zu können, muss Ihnen die Rolle „Administrator“ zugewiesen worden sein. Sie können das standardmäßige Superadministratorkonto verwenden, das während der Installation angelegt wird.
 
-## Anmelden an den Webseiten {#log-in-to-the-web-pages}
+## Anmelden an den Webseiten  {#log-in-to-the-web-pages}
 
 Zum Anmelden bei den Webseiten über einen Browser benötigen Sie die Document Security-URL sowie ein Konto. Die URL für Benutzer unterscheidet sich von der für Administratoren. Administratoren können sich auch an den Benutzerseiten anmelden, um Richtlinien zu erstellen.
 
-Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. Die Standard-URL für die Benutzerseiten lautet https://*[host]*:*[port]*/edc. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
+Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. Die Standard-URL für die Benutzerseiten ist https://*[host]*:*[port]*/edc. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
 
-Die Standard-URL für Administratoren lautet https://*[host]*:*[port]*/adminui.
+Die Standard-URL für Administratoren ist https://*[host]*:*[port]*/adminui.
 
 Für Administratoren wird ein standardmäßiges Superadministratorkonto während der Installation angelegt. Sie können sich mit diesem Konto anmelden, nachdem Document Security erstmals installiert wurde.
 
@@ -49,9 +48,9 @@ Für Administratoren wird ein standardmäßiges Superadministratorkonto während
 
 1. Geben Sie die URL in den Browser ein.
 
-   Dokument-Sicherheits-URL: `https://`*[host ]*`:`*[port]* `/edc`
+   Document Security-URL: `https://`*[host ]*`:`*[port]* `/edc`
 
-   oder URL der Administrationskonsole: `https://`*[host ]*`:`*[port]* `/adminui`
+   oder Administration Console-URL: `https://`*[host ]*`:`*[port]* `/adminui`
 
 1. Geben Sie im Anmeldefenster Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf „OK“.
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“.
@@ -107,4 +106,3 @@ Melden Sie sich ab, wenn Sie die Aufgaben auf den Webseiten erledigt haben, dami
 
 1. Klicken Sie oben rechts auf der Seite auf „Abmelden“.
 1. Wenn eine Meldung auf der Seite „Abmelden“ angezeigt wird, schließen Sie das Browserfenster, um sich vollständig abzumelden. Ansonsten können Sie den Browser für andere Zwecke weiter verwenden.
-
