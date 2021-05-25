@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 91%
 
 ---
 
-
 # AEM Sites – Einhaltung der Datenschutz-Grundverordnung{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Informationen gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen. wie DSGVO, CCPA usw.
 
 Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kraft.
 
@@ -42,11 +41,11 @@ Auf dem Autorenserver gespeicherte Benutzerkonten und benutzergenerierte Inhalte
 
 Die für die Authentifizierung von Besuchern verwendeten Benutzerkonten und die UGC-Inhalte, die auf dem Publish-Server gespeichert werden, werden in der [DSGVO-Dokumentation für die Plattform](/help/managing/data-protection-and-privacy.md) erläutert.
 
-Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern eingegebenen Daten auf dem  Veröffentlichungsserver. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
+Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern eingegebenen Daten auf dem  Veröffentlichungs-Server. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
-AEM verfügt über einen [Cookie-Ausschluss-Dienst](/help/sites-developing/cookie-optout.md), der für die Verwaltung der Ausschluss-/Abmeldeoption für Benutzer verwendet werden kann.
+AEM verfügt über einen [Cookie-Opt-out-Dienst](/help/sites-developing/cookie-optout.md) , der für die Verwaltung des Opt-in/Opt-outs für Benutzer verwendet werden kann.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -54,7 +53,7 @@ AEM Sites bietet eine optionale Integration mit Enhanced Insights by Analytics, 
 
 Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
+## Verbesserte Personalisierung durch Target  {#enhanced-personalization-by-target}
 
 AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
@@ -226,4 +225,3 @@ So löschen Sie die ContextHub-Persistenz:
    * ContextHub.Utils.Persistence.Modes.SESSION
    * ContextHub.Utils.Persistence.Modes.COOKIE
    * ContextHub.Utils.Persistence.Modes.WINDOW
-
