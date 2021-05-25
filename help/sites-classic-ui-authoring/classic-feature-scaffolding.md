@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9f57087f-895d-43b9-9b6a-9cfb4c794c7b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 78%
 
 ---
-
 
 # Strukturvorlage{#scaffolding}
 
@@ -39,7 +38,7 @@ Strukturvorlagen sind über die **Tools-Konsole** des SiteAdmin-Bereichs verfüg
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-Die Grundlage besteht aus einem Formular mit einem Feld für jedes Inhaltselement, aus dem die zu erstellende Seite besteht, und vier wichtigen Parametern, die über die **Seiteneigenschaften** der Gerüst-Seite aufgerufen werden.
+Die Grundlage besteht aus einem Formular mit einem Feld für jedes Inhaltselement, aus dem die zu erstellende Seite besteht, und vier wichtigen Parametern, auf die über die Seite **Seiteneigenschaften** der Strukturseite zugegriffen wird.
 
 ![pageprops](assets/pageprops.png)
 
@@ -66,17 +65,17 @@ Der Textkörper der Grundlage ist das Formular. Wenn ein Benutzer eine Seite mit
 
 * **Tags/Keywords**: Metadaten, die der jeweiligen Seite zugeordnet werden sollen. Dieses Feld ist für jede Grundlage vorhanden.
 
-## Erstellen von Grundlagen {#creating-a-scaffold}
+## Erstellen von Grundlagen  {#creating-a-scaffold}
 
-Um eine neue Grundlage zu erstellen, gehen Sie zur Konsole **Tools**, dann **Standardmäßige Seitensatzung** und erstellen Sie eine neue Seite. Es ist ein einseitiger Vorlagentyp verfügbar, die *Gerüst-Vorlage.*
+Um eine neue Grundlage zu erstellen, wechseln Sie zur Konsole **Tools**, dann zu **Standardseiten-Strukturvorlage** und erstellen Sie eine neue Seite. Ein einseitiger Vorlagentyp ist verfügbar, die *Strukturvorlagen-Vorlage.*
 
-*Gehen Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielgruppe-*Vorlage und den* Zielgruppen-Pfad *wie oben beschrieben fest.*
+*Wechseln Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielvorlage *und den* Zielpfad *wie oben beschrieben fest.*
 
-*Als Nächstes müssen Sie die Struktur der Seite definieren, die dieses Gerüst erstellen wird. Gehen Sie dazu in den Designmodus auf der Gerüst-Seite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Grundlage im **Dialog-Editor** bearbeiten können.
+*Als Nächstes müssen Sie die Struktur der Seite definieren, die von dieser Grundlage erstellt wird. Gehen Sie dazu in den Designmodus auf der Strukturvorlagenseite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Grundlage im **Dialog-Editor** bearbeiten können.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-Mit dem Dialog-Editor geben Sie die Eigenschaften an, die jedes Mal erstellt werden, wenn eine neue Seite mit diesem Gerüst erstellt wird.
+Im Dialog-Editor legen Sie die Eigenschaften fest, die bei jeder Erstellung einer neuen Seite mithilfe dieser Grundlage erstellt werden.
 
 Die Dialogdefinition einer Strukturvorlage wird ähnlich wie bei einer Komponente durchgeführt (siehe [Komponenten](/help/sites-developing/components.md)). Es gibt allerdings einige wichtige Unterschiede:
 
@@ -86,13 +85,13 @@ Die Dialogdefinition einer Strukturvorlage wird ähnlich wie bei einer Komponent
 
 Ein Blick auf das für **Nachrichten** im Dialog-Editor hilft bei der Erläuterung dieser Vorgehensweise. Wechseln Sie auf der Grundlagenseite in den Designmodus und klicken Sie auf den Link für den Dialog-Editor.
 
-Klicken Sie nun auf das Dialogfeld **Dialog > Registerkartenbedienfeld > Text > Text**, wie folgt:
+Klicken Sie nun auf das Dialogfeld **Dialogfeld > Registerkartenfeld > Text > Text**, wie in diesem Beispiel:
 
 ![textedit](assets/textedit.png)
 
 Daraufhin wird die Eigenschaftenliste für dieses Feld auf der rechten Seite des Dialog-Editors wie folgt angezeigt:
 
-![liste_der_Eigenschaften](assets/list_of_properties.png)
+![list_of_properties](assets/list_of_properties.png)
 
 Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie weist folgenden Wert auf:
 
@@ -107,13 +106,13 @@ Dadurch wird der Speicherort für den Inhalt festgelegt, der in dieses Feld eing
 
 Beachten Sie, dass Sie diese Informationen in einem normalen Komponentendialogfeld nicht angeben müssen, weil sie durch die Tatsache, dass das Dialogfeld an eine bestimmte Komponente gebunden ist, bereits vorgegeben sind.
 
-Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialog > Registerkartenbedienfeld > Text > Ausgeblendet**, wie folgt:
+Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialogfeld > Registerkartenfeld > Text > Ausgeblendet** wie folgt:
 
 ![hidden](assets/hidden.png)
 
 Dieses ausgeblendete Feld weist folgende Eigenschaften auf:
 
-![hidden_Liste_props](assets/hidden_list_props.png)
+![hidden_list_props](assets/hidden_list_props.png)
 
 Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
@@ -125,7 +124,7 @@ Da wir wissen, dass der Text als Rich-Text ausgewertet werden soll, setzen wir d
 
 >[!CAUTION]
 >
->Der Dialog-Editor ermöglicht es dem Benutzer, die Werte der *vorhandenen*-Eigenschaften in der Dialogfelddefinition zu ändern. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
+>Der Dialog-Editor ermöglicht es dem Benutzer, die Werte von *vorhandenen* Eigenschaften in der Dialogfelddefinition zu ändern. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
 
 Das zweite ausgeblendete Feld kann angezeigt werden, indem Sie wie folgt darauf klicken:
 
@@ -133,7 +132,7 @@ Das zweite ausgeblendete Feld kann angezeigt werden, indem Sie wie folgt darauf 
 
 Dieses ausgeblendete Feld weist folgende Eigenschaften auf:
 
-![hidden_Liste_props2](assets/hidden_list_props2.png)
+![hidden_list_props2](assets/hidden_list_props2.png)
 
 Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
@@ -143,7 +142,7 @@ Der feste Wert für diese Eigenschaft lautet:
 
 `foundation/components/textimage`
 
-&quot;Hiermit wird festgelegt, dass die Komponente, die zum Rendern des Textinhalts dieses Absatzes verwendet wird, die Komponente *Textsbild* ist. Mit dem im anderen ausgeblendeten Feld angegebenen booleschen `isRichText` kann die Komponente die unter `./jcr:content/par/text/text` gespeicherte eigentliche Textzeichenfolge auf die gewünschte Weise wiedergeben.
+&quot;Dies gibt an, dass die zum Rendern des Textinhalts dieses Absatzes zu verwendende Komponente die Komponente *Textbild* ist. Mit dem booleschen Wert `isRichText`, der im anderen ausgeblendeten Feld angegeben ist, kann die Komponente die unter `./jcr:content/par/text/text` gespeicherte tatsächliche Textzeichenfolge auf die gewünschte Weise rendern.
 
 ## Scaffolding with MSM Inheritance {#scaffolding-with-msm-inheritance}
 
@@ -154,7 +153,7 @@ Wenn Sie eine Seite im **Strukturvorlagenmodus** öffnen (über das Symbol im un
 * ein Vorhängeschloss-Symbol (für die meisten Komponenten, z. B. Text und Titel)
 * eine Maske mit dem Text **Klicken Sie, um die Vererbung abzubrechen** (für Bildkomponenten)
 
-Diese zeigen, dass die Komponente nicht bearbeitet werden kann - bis die Vererbung abgebrochen wird.
+Diese zeigen, dass die Komponente erst bearbeitet werden kann, wenn die Vererbung abgebrochen wurde.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -173,5 +172,4 @@ Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf da
 
 >[!NOTE]
 >
->Wenn die Vererbung auf Seitenebene (von der Registerkarte &quot;Livecopy&quot;der Seiteneigenschaften) abgebrochen wird, sind alle Komponenten im Modus **Gerüst** bearbeitbar (sie werden im nicht gesperrten Zustand angezeigt).
-
+>Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten im Modus **Strukturvorlage** bearbeitbar (sie werden im entsperrten Status angezeigt).
