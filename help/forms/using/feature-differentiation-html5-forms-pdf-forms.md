@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2b82e68c-ec11-417d-a8e2-769da9b35140
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 84%
 
 ---
-
 
 # Funktionsunterschiede zwischen HTML5- und PDF-Formularen {#feature-differentiation-between-html-forms-and-pdf-forms}
 
@@ -53,7 +52,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   <tr>
    <td>Seitenumbruch<br /> </td> 
    <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es wie ein PDF-Formular wirkt. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet und es wird kein Leerraum zwischen den Seiten angezeigt, die der leeren Seite vorangehen und folgen.</p> <p>Wird einer Seite durch Datenzusammenführung oder Skripte Inhalt hinzugefügt, wird die Seite verlängert, damit der neu hinzukommende Inhalt Platz findet. Dem Formular werden keine neuen Seiten für den neuen Inhalt hinzugefügt. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td> 
-   <td>Die Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder vom Benutzerinhalt ab und die Seitenanzahl wird je nach Inhalt erhöht/verringert.</td> 
+   <td>Die Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab und die Seitenzahl wird je nach Inhalt erhöht/reduziert.</td> 
   </tr>
   <tr>
    <td>Kopf- und Fußzeilen </td> 
@@ -67,7 +66,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   </tr>
   <tr>
    <td>XFA-Skript-API</td> 
-   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Weitere Informationen zur Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td> 
+   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td> 
    <td>Unterstützt alle XFA-Skriptkonstrukte.</td> 
   </tr>
   <tr>
@@ -83,5 +82,4 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
  </tbody>
 </table>
 
-Befolgen Sie die Best Practices, um eine Formularvorlage für HTML5-Darstellungen zu aktivieren und sicherzustellen, dass das Verhalten und Erscheinungsbild von HTML5-Formularen und XFA-basierten PDF-Dateien einheitlich ist. Eine detaillierte Liste bewährter Verfahren finden Sie unter [Empfohlene Vorgehensweisen für den Entwurf eines HTML5-Formulars](/help/forms/using/best-practices-for-html5-forms.md).
-
+Befolgen Sie die Best Practices, um eine Formularvorlage für HTML5-Ausgabeformate zu aktivieren und sicherzustellen, dass das Verhalten und das Erscheinungsbild von HTML5-Formularen und XFA-basierten PDF-Dateien konsistent ist. Eine detaillierte Liste bewährter Verfahren finden Sie unter [Empfohlene Vorgehensweisen für den Entwurf eines HTML5-Formulars](/help/forms/using/best-practices-for-html5-forms.md).
