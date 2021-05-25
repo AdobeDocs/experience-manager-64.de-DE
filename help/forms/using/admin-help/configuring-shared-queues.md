@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
-translation-type: tm+mt
-source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+exl-id: 40890db3-240c-4021-967a-b6b3eb1d4b7c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 97%
 
 ---
-
 
 # Freigegebene Warteschlangen konfigurieren{#configuring-shared-queues}
 
@@ -30,7 +29,7 @@ Sie können Zugriff auf eine ausgewählte Benutzerwarteschlange mit dieser Optio
 
 Sie können freigegebene Warteschlangen, die einem ausgewählten Benutzer zugewiesen sind, mit dieser Option verwalten.
 
-## Zugriff auf ausgewählte Benutzerwarteschlangen verwalten {#managing-access-to-a-selected-user-queue}
+## Zugriff auf ausgewählte Benutzerwarteschlangen verwalten  {#managing-access-to-a-selected-user-queue}
 
 Mit der Funktion „Zugriff auf einen Benutzer verwalten“ können Sie den Zugriff auf eine ausgewählte Benutzerwarteschlange verwalten. Sie können Zugriff auf eine ausgewählte Benutzerwarteschlange für andere Benutzer in Ihrem Unternehmen gewähren oder sperren. Z. B. Kara Bowman ist außer Haus. Mit der Funktion „Zugriff auf einen Benutzer verwalten“ kann ihre Warteschlange zur Fertigstellung für Akira Tanaka und John Jacobs freigegeben werden. Wenn sich Kara Bowman später wieder im Büro befindet, können Sie den Zugriff auf ihre Warteschlage für Akira Tanaka und John Jacobs wieder sperren.
 
@@ -85,4 +84,3 @@ Nachdem diese Aufgaben zugewiesen wurden, können sie vom Benutzer, der Workspac
 1. Wählen Sie auf der Registerkarte „Zugriff von einem Benutzer verwalten“ den Benutzer aus, dessen Warteschlange sie verwalten möchten.
 1. Das untere rechte Fenster zeigt die Liste von Benutzerwarteschlangen an, die dem ausgewählten Benutzer zugewiesen sind. Wählen Sie die Benutzerwarteschlange und klicken Sie auf „Sperren“.
 1. Klicken Sie dann auf „Speichern“.
-
