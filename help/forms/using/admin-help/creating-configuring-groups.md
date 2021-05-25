@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: 21f5cca3-46e2-4aa2-9703-ac51e8eecd40
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 97%
 
 ---
-
 
 # Gruppen konfigurieren und erstellen{#creating-and-configuring-groups}
 
@@ -26,7 +25,7 @@ Es gibt zwei verschiedene Typen von Gruppen. Sie können eine Gruppe manuell ers
 
 Für Benutzer kann es zu langsameren Reaktionszeiten kommen, wenn sie vielen Gruppen (z. B. 500 oder mehr) angehören oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domänen vorher abgerufen werden. (Siehe [AEM Forms zum vorherigen Abrufen von Domäneninformationen konfigurieren](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
 
-## Gruppen manuell erstellen {#create-a-group-manually}
+## Gruppen manuell erstellen  {#create-a-group-manually}
 
 Wenn Sie eine Gruppe manuell erstellen, können Sie dieser Gruppe Benutzer und andere Gruppen hinzufügen und der Gruppe Rollen zuweisen. Sie können die Gruppe auch mit einer übergeordneten Gruppe verknüpfen.
 
@@ -76,7 +75,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Geben Sie an, wann User Manager auf neue E-Mail-Domänen prüfen soll. Diese Zeit sollte nach der Domänensynchronisierungszeit liegen, da die Erstellung dynamischer Gruppen nur sinnvoll ist, wenn die Domänensynchronisierung abgeschlossen ist.
 
    * Um die automatische tägliche Synchronisierung zu aktivieren, geben die Uhrzeit im 24-Stunden-Format in das Feld „Täglich um“ ein. Wenn Sie die Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck konvertiert, der im Feld unten angezeigt wird.
-   * Um die Synchronisierung an einem bestimmten Tag der Woche bzw. des Monats oder an einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben den entsprechenden Ausdruck in das Feld ein. Der Standardwert ist `0 00 4 ? * *`(d. h. Prüfung bei 4 A.M. jeden Tag).
+   * Um die Synchronisierung an einem bestimmten Tag der Woche bzw. des Monats oder an einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben den entsprechenden Ausdruck in das Feld ein. Der Standardwert ist `0 00 4 ? * *` (d. h. jeden Tag um 4 Uhr morgens überprüfen).
 
       Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
@@ -93,11 +92,11 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
    >
    >Wenn das Gleichheitszeichen mit den Attributen „E-Mail“, „Beschreibung“ oder „Kanonischer Name“ verwendet wird, muss bei den Attributen die Groß- und Kleinschreibung beachtet werden. Bei den Operatoren „Beginnt mit“, „Endet mit“ oder „Enthält“ muss die Groß- und Kleinschreibung nicht beachtet werden.
 
-   **E-Mail:** E-Mail-Domäne des Benutzers, z. B.  `@adobe.com`.
+   **E-Mail:** Die E-Mail-Domäne des Benutzers, z. B.  `@adobe.com`.
 
    **Beschreibung**: Beschreibung des Benutzers, z. B. „Informatiker“.
 
-   **Kanonischer Name:kanonischer Name des** Benutzers, z. B.  `ou=adobe.com`
+   **Kanonischer Name:** kanonischer Name des Benutzers, z. B.  `ou=adobe.com`
 
    **Domänenname**: Der Name der Domäne, zu der der Benutzer gehört, z. B. `DefaultDom`. Bei dem Attribut „Domänenname“ muss die Groß- und Kleinschreibung beachtet werden, wenn der Operator „Enthält“ verwendet wird. Bei den Operatoren „Beginnt mit“, „Endet mit“ oder „Enthält“ muss die Groß- und Kleinschreibung nicht beachtet werden.
 
@@ -155,4 +154,3 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
 1. Wählen Sie in der Liste „In“ die Option „Gruppen“ aus und klicken Sie dann auf „Suchen“.
 1. Aktivieren Sie das Kontrollkästchen der zu löschenden Gruppe und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
-
