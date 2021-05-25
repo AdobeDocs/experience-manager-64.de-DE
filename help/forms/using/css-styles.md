@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 9e381e71-63ff-41ab-a6ec-9f92447b65a0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 90%
 
 ---
-
 
 # Erstellen von CSS-Stilen für HTML5-Formulare {#creating-css-styles-for-html-forms}
 
@@ -27,7 +26,7 @@ HTML5-Wiedergabe eines XFA-basierten Formularvorlage besteht aus mehreren HTML-E
 >
 >In den CSS-Klassen dürfen die Werte der Attribute für Breite, Höhe, Rahmenstärke, oberen Bereich, linken Bereich, rechten Bereich, unteren Bereich, Abstand und Rand nicht geändert werden. Änderungen an der Position und den Größenattributen ziehen Änderungen am Layout des Formulars nach sich.
 
-## CSS-Klassen für Elemente  {#css-classes-nbsp-for-elements-nbsp}
+## CSS-Klassen für Elemente   {#css-classes-nbsp-for-elements-nbsp}
 
 Jedes Element enthält klar definierte CSS-Klassen. Die Klassen können geändert werden, um das Aussehen eines Elements zu ändern. Mit Ausnahme des Feld- und Zeichenelements hat jedes Element zwei CSS-Klassen: Type-Klasse und Name-Klasse.
 
@@ -50,8 +49,8 @@ Das Feldelement enthält zwei verschachtelte Elemente: Widget und Beschriftung.
 Das Widget-Element enthält das Element der Benutzeroberfläche für die Interaktion mit dem Benutzer. Es enthält drei CSS-Klassen:
 
 * **Widget**: Jedes Widget hat diese Klasse.
-* **name**: Alle mit AEM ausgelieferten Widgets enthalten die Widget-Namensklasse. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
-* **type**: Jedes Widget hat ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
+* **name**: Alle Widgets, die mit AEM ausgeliefert werden, enthalten die name-Klasse des Widgets. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
+* **Typ**: Jedes Widget verfügt über ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
 
 ```xml
 <!--field with caption-->
@@ -239,7 +238,7 @@ Mithilfe des AEM Forms Designer können Sie statische Zeichenelemente wie Text u
 
 ## Gestalten des Stils anderer Formularteile {#styling-other-parts-of-the-form}
 
-Neben dem Erscheinungsbild der Komponenten der Benutzeroberfläche im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
+Neben dem Erscheinungsbild von Benutzeroberflächen-Komponenten im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
 
 `Styling Inline Errors`
 
@@ -251,4 +250,4 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 
 `Styling Fields with Validation Errors`
 
-Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError**.
+Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError** .
