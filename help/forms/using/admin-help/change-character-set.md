@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 811b31f8-5465-4fb2-b1f9-513936041771
-translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+exl-id: 7961efc6-4b11-423a-871d-7b37e3f36781
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 96%
 
 ---
-
 
 # Den Zeichensatz ändern {#change-the-character-set}
 
@@ -30,4 +29,3 @@ Sie können den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird.
    Der Zeichensatz muss ein gültiger kanonischer Name sein. Der Standardwert ist „ISO-8859-1“.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-
