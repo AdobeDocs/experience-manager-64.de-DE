@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
-translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+exl-id: 0483b6ed-676a-4272-a00e-23d53a979b07
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 87%
 
 ---
 
-
-# Anzeigen und Verstehen der Analytics-Berichte in AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Anzeigen und Verstehen der Analytics-Berichte in AEM Forms  {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
@@ -51,7 +50,7 @@ Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgeze
 
 Führen Sie die folgenden Schritte aus, um Analytics-Berichte anzuzeigen:
 
-1. Melden Sie sich beim AEM Portal unter `https://[hostname]:[port]` an
+1. Melden Sie sich beim AEM Portal unter `https://[hostname]:[port]` an.
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**.
 
 1. Wählen Sie das Formular aus, für das Sie die Analytics-Berichte anzeigen möchten.
@@ -65,7 +64,7 @@ AEM Forms zeigt Analytics-Berichte für das Formular und für jeden Bereich im F
 
 ![Zusammenfassungsbericht eines adaptiven Formulars](assets/analyticsdashboard_callout.png)
 
-**A.** Konvertierungen  **B.** Zusammenfassung auf Formularebene  **C.** Bereichszusammenfassung  **D.** Browser der Besucher - Filter  **E.** OS der Besucher - Filter  **** F.Sprache der Besucher - Filter
+**A.** Konversionen  **B.** Zusammenfassung auf Formularebene  **C.** Zusammenfassung auf Bereichsebene  **D.** Browser der Besucher - Filter  **E.** OS der Besucher - Filter  **F.** Sprache der Besucher - Filter
 
 Standardmäßig wird der Analytics-Bericht für die letzten sieben Tage angezeigt. Sie können Berichte für die letzten 15 Tage, den letzten Monat usw. anzeigen oder einen Datumsbereich angeben.
 
@@ -73,7 +72,7 @@ Standardmäßig wird der Analytics-Bericht für die letzten sieben Tage angezeig
 >
 >Die Optionen wie Letzte 7 Tage und Letzte 15 Tage enthalten keine Daten für den Tag, an dem Sie den Analytics-Bericht erstellen. Damit die Daten des aktuellen Tages erfasst werden, müssen Sie den Datumsbereich einschließlich des aktuellen Tages festlegen und dann den Analysebericht ausführen.
 
-![Datumsbereich](assets/date-range.png)
+![date-range](assets/date-range.png)
 
 ## Umrechnungswert für adaptive und HTML5-Formulare {#conversions-graph-for-adaptive-and-html-forms}
 
@@ -83,7 +82,7 @@ Mit dem Umrechnungswert auf Formularebene erhalten Sie einen Einblick in die Lei
 * **Besucher**: Die Anzahl der Besucher des Formulars
 * **Übermittlungen**: Angabe, wie oft ein Formular übermittelt wird
 
-![Conversion-graph](assets/conversion-graph.png)
+![Konversionsdiagramm](assets/conversion-graph.png)
 
 ## Analysebericht für adaptive und HTML5-Formulare {#analytics-report-for-adaptive-and-html-forms}
 
@@ -95,7 +94,7 @@ Mit der Zusammenfassung auf Formularebene erhalten Sie einen Einblick in die Lei
 * **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde 
 * **Übermittlungen**: Gibt an, wie oft das Formular gesendet wurde
 * **Abbruch**: Gibt an, wie oft Benutzer das Ausfüllen des Formulars begonnen und dann abgebrochen haben
-* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch eindeutige Besucher. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Unique Visitors**: Anzahl der Wiedergaben des Formulars durch Unique Visitors. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
 
@@ -105,9 +104,9 @@ Die Zusammenfassung auf Bereichsebene bietet die folgenden Informationen zu jede
 
 * **Durchschnittliche Füllzeit**: Durchschnittlich aufgewandte Zeit im Bereich, egal ob das Formular übermittelt wurde oder nicht 
 
-* **Aufgetretene Fehler**: Durchschnittliche Anzahl der Fehler, auf die die Benutzer in Feldern eines Bereichs gestoßen sind. Die aufgetretenen Fehler werden durch Division der Gesamtfehler in einem Feld durch die Anzahl der Darstellungen des Formulars ermittelt.
+* **Aufgetretene Fehler**: Durchschnittliche Anzahl der Fehler, auf die die Benutzer in Feldern eines Bereichs gestoßen sind. Aufgetretene Fehler treten auf, indem die Gesamtzahl der Fehler in einem Feld durch die Anzahl der Ausgabeformate des Formulars dividiert wird.
 
-* **Zugriff auf Hilfe**: Durchschnittliche Anzahl der Aufrufe der kontextbezogenen Hilfe für die Felder im Bereich. Zugriff auf Hilfe wird erreicht, indem die Gesamtanzahl der Hilfeaufrufe für ein Feld durch die Anzahl der Formularwiedergaben dividiert wird.
+* **Zugriff auf Hilfe**: Durchschnittliche Anzahl der Aufrufe der kontextbezogenen Hilfe für die Felder im Bereich. Zugriff auf Hilfe wird erreicht, indem die Gesamtanzahl der Hilfeaufrufe für ein Feld durch die Anzahl der Ausgabeformate des Formulars dividiert wird.
 
 ### Detaillierter Bereichsbericht {#detailed-panel-report}
 
@@ -119,7 +118,7 @@ Der detaillierte Bericht zeigt Werte für alle Felder im Bereich an.
 
 Der Bereichsbericht enthält drei Registerkarten:
 
-* **Zeitbericht**  (Standard): Zeigt die Zeit in Sekunden an, die mit dem Ausfüllen der einzelnen Felder im Bereich verbracht wurde
+* **Zeitbericht**  (Standard): Zeigt die Zeit (in Sekunden) an, die mit dem Ausfüllen der einzelnen Felder im Bereich verbracht wurde
 * **Fehlerbericht**: Zeigt die Anzahl der Fehler, die von den Benutzern beim Ausfüllen der Felder gefunden wurden
 * **Hilfebericht**: Anzahl der Hilfeaufrufe für ein bestimmtes Feld
 
@@ -145,6 +144,6 @@ Wenn Sie den Bereichsbericht anzeigen, nachdem Sie einen Filter angewendet haben
 
 ## A/B-Tests {#a-b-testing}
 
-Wenn Sie A/B-Tests aktiviert und für das Formular eingerichtet haben, enthält die Berichtseite eine Dropdown-Liste, die Sie verwenden können, um den A/B-Testbericht anzuzeigen. Der A/B-Testbericht zeigt die vergleichende Leistung von zwei Versionen des Formulars an, die Sie eingerichtet haben.
+Wenn Sie A/B-Tests aktiviert und für das Formular eingerichtet haben, enthält die Berichtseite eine Dropdown-Liste, die Sie verwenden können, um den A/B-Testbericht anzuzeigen. Der A/B-Testbericht zeigt die vergleichende Leistung zweier Formularversionen an, die Sie eingerichtet haben.
 
 Weitere Informationen zu A/B-Tests finden Sie unter [ Erstellen und Verwalten von A/B-Test für adaptive Formulare](/help/forms/using/ab-testing-adaptive-forms.md).
