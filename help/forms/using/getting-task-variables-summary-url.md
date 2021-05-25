@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 88%
 
 ---
 
-
-# Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL {#getting-task-variables-in-summary-url}
+# Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL  {#getting-task-variables-in-summary-url}
 
 Auf der Zusammenfassungsseite werden aufgabenbezogene Informationen angezeigt. Dieser Artikel beschreibt, wie Sie aufgabenbezogene Informationen auf der Zusammenfassungssseite wiederverwenden können.
 
@@ -34,7 +33,7 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
 
    >[!NOTE]
    >
-   >Dieser Renderer ist die Vorlage für die Zusammenfassungsseite.
+   >Dieser Renderer ist die Zusammenfassungsseitenvorlage.
 
    Der folgende Beispielcode für diesen Renderer ist enthalten in:
 
@@ -64,9 +63,9 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
    1. Erstellen Sie einen Prozess **create PTO summary** und verwenden Sie diesen als Teilprozess vor dem **Assign Task**-Vorgang in der Orchestrierung.
    1. Definieren Sie **employeeName**, **employeeID**, **ptoReason**, **totalDays** und **nodeName** als Eingabevariablen in dem neuen Prozess. Diese Variablen werden als gesendete Formulardaten übergeben.
 
-      Definieren Sie auch eine Ausgabevariable **ptoNodePath **die beim Festlegen der Zusammenfassungs-URL verwendet wird.
+      Definieren Sie außerdem eine Ausgabevariable **ptoNodePath**, die beim Festlegen der Zusammenfassungs-URL verwendet wird.
 
-   1. Verwenden Sie im Prozess **create PTO summary** die Komponente **set value**, um die Eingabedaten in einer Zuordnung **nodeProperty **(**nodeProps**) festzulegen.
+   1. Verwenden Sie im Prozess **create PTO summary** die Komponente **set value** , um die Eingabedetails in einer Zuordnung **nodeProperty **(**nodeProps**) festzulegen.
 
       Die Schlüssel in dieser Zuordnung müssen identisch mit den Schlüsseln sein, die in Ihrem HTML-Renderer im vorherigen Schritt definiert wurden.
 
@@ -89,4 +88,3 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
 Wenn Sie in AEM Forms Workspace eine Aufgabe öffnen, greift die Zusammenfassungs-URL auf den CRX-Knoten zu und der HTML-Renderer zeigt die Zusammenfassung an.
 
 Das Zusammenfassungs-Layout kann geändert werden, ohne den Prozess zu ändern. Der HTML-Renderer zeigt die Zusammenfassung entsprechend an.
-
