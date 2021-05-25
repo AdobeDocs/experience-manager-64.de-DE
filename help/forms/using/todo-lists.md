@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 0111d1f6-1780-40a2-b7d7-43930c4b96f7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4026'
 ht-degree: 91%
 
 ---
 
-
-# Arbeiten mit Aufgabenlisten {#working-with-to-do-lists}
+# Arbeiten mit Aufgabenlisten  {#working-with-to-do-lists}
 
 Wenn Sie Ihre Aufgabenlisten anzeigen, sehen Sie möglicherweise Aufgaben aus einem Geschäftsprozess, die Ihnen oder Gruppen, denen Sie angehören, zugewiesen sind oder die freigegebene Aufgaben anderer Benutzer sind. Indem Sie beispielsweise eine Anforderung genehmigen bzw. ablehnen oder neue Informationen hinzufügen, können Sie die Aufgaben je nach Bedarf öffnen, bearbeiten oder abschließen. Wenn Sie eine Aufgabe abgeschlossen haben, wird sie an die nächste Person im Geschäftsprozess gesendet.
 
@@ -64,7 +63,7 @@ Weitere Werkzeuge, die bei den oben angegebenen Aufgaben verfügbar sind:
 
 Sie können Aufgaben aus Ihrer Aufgabenliste öffnen und sperren oder Aufgaben von einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anfordern und öffnen. Wenn Sie eine Aufgabe öffnen, wird diese im Hauptbereich angezeigt. Die anderen Aufgaben werden neben der Aufgabenliste angezeigt.
 
-Wenn eine URL für die Aufgabe-Zusammenfassung vorhanden ist, wird standardmäßig die Ansicht &quot;Aufgabe-Zusammenfassung&quot;anstelle des Formulars geöffnet, das einer Aufgabe zugeordnet ist. Auch wenn ein Benutzer in Assign Task die Option „Open the form in maximized mode“ aktiviert, wird das Formular nicht im maximierten Modus geöffnet.
+Wenn eine Aufgabenzusammenfassungs-URL vorhanden ist, wird standardmäßig die Ansicht &quot;Aufgabenzusammenfassung&quot;anstelle des mit einer Aufgabe verknüpften Formulars geöffnet. Auch wenn ein Benutzer in Assign Task die Option „Open the form in maximized mode“ aktiviert, wird das Formular nicht im maximierten Modus geöffnet.
 
 >[!NOTE]
 >
@@ -86,7 +85,7 @@ Wenn Sie eine Aufgabe aus Ihrer Aufgabenliste öffnen und Ihre Liste freigegeben
    >
    >Geöffnete Aufgaben können auch auf jeder Registerkarte gesperrt oder entsperrt werden.
 
-   ![lock_Aufgabe](assets/lock_task.png)
+   ![lock_task](assets/lock_task.png)
 
    Menü „Alle Optionen“ einer Aufgabe
 
@@ -96,10 +95,10 @@ Wenn Sie eine Aufgabe aus Ihrer Aufgabenliste öffnen und Ihre Liste freigegeben
 
 Wenn Sie eine Aufgabe von einer Gruppenliste oder freigegebenen Liste anfordern, wird die Aufgabe aus der Gruppenliste bzw. freigegebenen Liste in Ihre persönliche Aufgabenliste verschoben. Die Aufgabe wird für andere Benutzer mit Zugriff auf die Liste für die Bearbeitung gesperrt.
 
-1. Wählen Sie auf der Seite &quot;Aufgaben&quot;im linken Bereich eine Gruppenaufgabe oder freigegebene Aufgaben-Liste aus. Alle Aufgaben werden im mittleren Bereich angezeigt.
+1. Wählen Sie auf der Seite &quot;Aufgaben&quot;im linken Bereich eine Gruppenaufgabenliste oder eine freigegebene Aufgabenliste aus. Alle Aufgaben werden im mittleren Bereich angezeigt.
 1. Führen Sie einen der folgenden Schritte durch:
 
-   * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern, ohne sie zu öffnen, klicken Sie auf **Anfordern**, indem Sie den Zeiger über der Aufgabe bewegen. Wenn die Aufgabe geöffnet ist, steht die Schaltfläche &quot;Anfordern&quot;auch in der Aktionsleiste unter dem Bereich &quot;Aufgabe&quot;zur Verfügung. Beim Anfordern wird eine Aufgabe aus der Gruppenaufgabenliste bzw. freigegebenen Aufgabenliste in Ihre Liste verschoben.
+   * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern, ohne sie zu öffnen, klicken Sie auf **Anfordern**, indem Sie den Zeiger über der Aufgabe bewegen. Wenn die Aufgabe geöffnet ist, ist die Schaltfläche Anfordern in der Aktionsleiste unter dem Aufgabenbereich verfügbar. Beim Anfordern wird eine Aufgabe aus der Gruppenaufgabenliste bzw. freigegebenen Aufgabenliste in Ihre Liste verschoben.
    * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern und zu öffnen, klicken Sie auf **Anfordern und öffnen**.
 
 ## Mit Aufgaben arbeiten  {#working-with-tasks}
@@ -196,7 +195,7 @@ Sie haben die Möglichkeit, alle Notizen oder Anlagen lokal hinzuzufügen, zu ak
    >
    >Sie können Workspace so konfigurieren, dass Informationen, die von einem Benutzer als Entwurf eingegeben wurden, von Zeit zu Zeit automatisch gespeichert werden. Wenn die automatische Speicherung aktiviert ist und ein Benutzer an einem Entwurf arbeitet, wird der Entwurf regelmäßig gespeichert. Bei der automatischen Speicherung wird der Standardname der Aufgabe automatisch übernommen.
    >
-   >Weitere Informationen finden Sie unter Entwurf regelmäßig speichern unter [Voreinstellungen verwalten](/help/forms/using/getting-started-livecycle-html-workspace.md).
+   >Weitere Informationen finden Sie unter Entwurf regelmäßig speichern unter [Verwalten von Voreinstellungen](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 1. Geben Sie im Dialogfeld „Als Entwurf speichern“ einen eindeutigen Namen für die Aufgabe ein und tippen Sie **OK**.
 
@@ -204,7 +203,7 @@ Sie haben die Möglichkeit, alle Notizen oder Anlagen lokal hinzuzufügen, zu ak
 
    Der Entwurf wird mit dem eingegebenen Namen gespeichert. Die Aufgabe bleibt in Ihrer Aufgabenliste und alle Änderungen, die Sie im Formular vorgenommen haben, werden im Ordner „Entwürfe“ gespeichert. In der Aufgabenliste können Sie mit dem Namen nach dem Entwurf suchen, um diesen weiterzubearbeiten.
 
-   ![searchfortask](assets/searchfortask.png)
+   ![searchfestask](assets/searchfortask.png)
 
 ## Aufgaben abschließen {#completing-tasks}
 
@@ -231,10 +230,10 @@ Wenn Sie eine Aufgabe abschließen, wird je nach Aufgabe möglicherweise ein Dia
 1. Führen Sie einen der folgenden Schritte durch:
 
    * Wählen Sie die Aufgabe aus und klicken Sie im unteren Teil der Liste auf die entsprechende Schaltfläche, um den nächsten im Prozess erforderlichen Schritt einzuleiten.
-   * Wenn das Formular keine Schaltflächen enthält und die Schaltfläche &quot;Abschließen&quot;im AEM Forms Workspace verfügbar ist, klicken Sie auf **Abschließen**.
-   * Wenn das Formular Schaltflächen enthält und die Schaltfläche &quot;Abschließen&quot;in AEM Forms Workspace nicht verfügbar ist, klicken Sie auf die entsprechende Schaltfläche im Formular, um den nächsten für den Vorgang erforderlichen Schritt auszuführen.
+   * Wenn das Formular keine Schaltflächen aufweist und die Schaltfläche &quot;Complete&quot;in AEM Forms Workspace verfügbar ist, klicken Sie auf **Complete**.
+   * Wenn das Formular Schaltflächen enthält und die Schaltfläche zum Vervollständigen in AEM Forms Workspace nicht verfügbar ist, klicken Sie auf die entsprechende Schaltfläche im Formular, um den nächsten im Prozess erforderlichen Schritt auszuführen.
 
-   Wenn das Formular keine Schaltflächen enthält und die Schaltfläche &quot;Abschließen&quot;in AEM Forms Workspace nicht verfügbar ist, wird eine Meldung angezeigt, die darauf hinweist, dass das Formular nicht gesendet werden kann.
+   Wenn das Formular keine Schaltflächen aufweist und die Schaltfläche zum Vervollständigen in AEM Forms Workspace nicht verfügbar ist, wird eine Meldung angezeigt, die angibt, dass das Formular nicht gesendet werden kann.
 
 1. Wenn ein Dialogfeld zur Bestätigung angezeigt wird, führen Sie eine der folgenden Aktionen aus:
 
@@ -251,16 +250,16 @@ Sie können mehrere Aufgaben aus Ihrer Aufgabenliste auf einmal senden. Es könn
 
 >[!NOTE]
 >
->Diese Option ist verfügbar, wenn beim Entwerfen eines Prozesses das Feld isMustOpenToComplete nicht im Schritt Aufgabe zuweisen in Workbench ausgewählt ist.
+>Diese Option ist verfügbar, wenn beim Entwerfen eines Prozesses das Feld isMustOpenToComplete im Schritt &quot;Aufgabe zuweisen&quot;in Workbench nicht ausgewählt ist.
 
 1. Wählen Sie auf der Aufgabenseite im linken Fensterbereich Ihre persönliche Aufgabenliste aus. Alle Ihre Aufgaben werden im mittleren Bereich angezeigt.
 1. Wählen Sie die Option **Massenmodus aktivieren**. Kontrollkästchen erscheinen vor den Aufgaben in der Liste.
 
    >[!NOTE]
    >
-   >Diese Option steht nicht für Aufgaben zur Verfügung, für die beim Entwerfen eines Prozesses im Schritt Aufgabe zuweisen in Workbench das Feld isMustOpenToComplete ausgewählt wurde. Kontrollkästchen solcher Aufgaben in der Aufgabenliste sind immer deaktiviert.
+   >Diese Option ist nicht für Aufgaben verfügbar, für die beim Entwerfen eines Prozesses im Schritt &quot;Aufgabe zuweisen&quot;in Workbench das Feld isMustOpenToComplete ausgewählt ist. Kontrollkästchen solcher Aufgaben in der Aufgabenliste sind immer deaktiviert.
 
-1. Wählen Sie die Aufgaben aus, die Sie gleichzeitig genehmigen möchten. Es können mehrere Aufgaben desselben Prozesses mit denselben Aufgabennamen und denselben Routenoptionen ausgewählt werden. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgaben und denselben Routenoptionen aktiviert. Die anderen Aufgaben werden deaktiviert.
+1. Wählen Sie die Aufgaben aus, die Sie gleichzeitig genehmigen möchten. Es können mehrere Aufgaben desselben Prozesses mit denselben Aufgabennamen und denselben Routenoptionen ausgewählt werden. Nachdem Sie eine Aufgabe zur Genehmigung ausgewählt haben, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgabennamen und denselben Routenoptionen aktiviert. Die anderen Aufgaben werden deaktiviert.
 
    ![1_bulkapproval](assets/1_bulkapproval.png)
 
@@ -272,7 +271,7 @@ Sie können mehrere Aufgaben aus Ihrer Aufgabenliste auf einmal senden. Es könn
 
 Sie können Aufgaben per E-Mail empfangen und abschließen. Durch das Teilnehmen an Aufgaben per E-Mail erübrigt sich das routinemäßige Prüfen Ihrer Aufgabenliste auf neue Aufgaben bzw. das Prüfen des Status einer Aufgabe auf der Seite „Verfolgung“.
 
-Legen Sie zuerst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Benachrichtigungen zu erhalten. AEM Forms Workspace kann E-Mail-Benachrichtigungen für Aufgaben in Ihrer Aufgabenzuweisung oder einer beliebigen Gruppenaufgabenzuordnung, der Sie angehören, senden. Der Administrator legt fest, wann und an wen E-Mail-Benachrichtigungen gesendet werden.
+Legen Sie zunächst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Benachrichtigungen zu erhalten. AEM Forms Workspace kann E-Mail-Benachrichtigungen für Aufgaben in Ihrer Aufgabenliste oder in Gruppenaufgabenlisten versenden, zu denen Sie gehören. Der Administrator legt fest, wann und an wen E-Mail-Benachrichtigungen gesendet werden.
 
 Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AEM Forms Workspace geöffnet wird, eine Anlage mit dem Formular, das für die Aufgabe verwendet wird, oder Aktionen zum Abschließen der Aufgabe per E-Mail. Wenn die E-Mail-Nachricht ein Formular mit integrierten Schaltflächen zum Abschließen der Aufgabe enthält, können Sie das Formular öffnen und die Aufgabe abschließen. Wenn die E-Mail-Nachricht Aktionen zum Abschließen der Aufgabe enthält, können Sie die Aufgabe abschließen, indem Sie auf die Aktionen in der E-Mail klicken oder die E-Mail beantworten und die entsprechende Aktion als erste Zeile des E-Mail-Textes eingeben.
 
@@ -284,7 +283,7 @@ Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgab
 
 >[!NOTE]
 >
->Wenn der Benutzer nicht in AEM Forms Workspace im Browser angemeldet ist und einen Link zu einer Aufgaben-Aufgabe öffnet, kann der direkte Aufgabenlink nicht geöffnet werden und es wird eine Ausnahme angezeigt. Melden Sie sich bei AEM Forms Workspace an, bevor Sie auf Links in den E-Mails klicken.
+>Wenn der Benutzer im Browser nicht in AEM Forms Workspace angemeldet ist und einen Link zu einer Aufgabe öffnet, kann der direkte Link zum Ausführen nicht geöffnet werden und es wird eine Ausnahme angezeigt. Melden Sie sich im AEM Forms-Arbeitsbereich an, bevor Sie auf Links in den E-Mails klicken.
 
 >[!NOTE]
 >
@@ -318,7 +317,7 @@ Einer Aufgabenliste können mehrere Mitglieder zugewiesen sein. Aufgabenlisten w
 
 Angenommen, alle Mitglieder Ihres Teams bearbeiten Kreditantragsformulare. Alle diese Aufgaben werden an eine Aufgabenliste gesendet, auf die alle Mitglieder Ihrer Gruppe zugreifen können. Jedes Mitglied Ihrer Gruppe kann auf die Aufgaben in dieser Aufgabenliste zugreifen.
 
-Eine freigegebene Aufgaben-Liste wird angezeigt, wenn ein anderer Benutzer seine Aufgaben-Liste mit Ihnen teilt oder eine Aufgabe explizit für Sie freigegeben hat. Sie können die Aufgaben in der Aufgabenliste dieses Benutzers anzeigen und sie in seinem Auftrag erledigen. Wenn Sie beispielsweise Urlaub nehmen, können Sie Ihre Aufgabenliste für einen Kollegen freigeben, der Ihre Aufgaben erledigt, solange Sie abwesend sind.
+Eine freigegebene Aufgabenliste wird angezeigt, wenn ein anderer Benutzer seine Aufgabenliste für Sie freigegeben oder eine Aufgabe explizit für Sie freigegeben hat. Sie können die Aufgaben in der Aufgabenliste dieses Benutzers anzeigen und sie in seinem Auftrag erledigen. Wenn Sie beispielsweise Urlaub nehmen, können Sie Ihre Aufgabenliste für einen Kollegen freigeben, der Ihre Aufgaben erledigt, solange Sie abwesend sind.
 
 >[!NOTE]
 >
@@ -397,4 +396,3 @@ Sie können eine Person festlegen, an die Ihre Aufgaben standardmäßig gesendet
    >Der Prozessentwickler kann festlegen, dass Aufgaben aus bestimmten Prozessen immer privat sind und nicht an andere Benutzer weitergeleitet werden. Diese Einstellung setzt Ihre Einstellungen außer Kraft.
 
 1. Wenn Sie die gewünschten Voreinstellungen festgelegt haben, klicken Sie auf **Speichern**. Wenn die Einstellungen angeben, dass Sie zurzeit abwesend sind, treten die Änderungen sofort in Kraft. Anderenfalls treten sie am angegebenen Anfangsdatum zur festgelegten Uhrzeit in Kraft. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
-
