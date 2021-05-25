@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
-feature: Image Sets
+feature: Bildsets
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '2066'
@@ -42,7 +41,7 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 So schaffen Sie einen schnellen Einstieg:
 
-1. [Laden Sie Ihre Primärbilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
+1. [Laden Sie die Primärbilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
 
    Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat, um optimale Zoom-Details zu erzielen. Mit Dynamic Media können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixel gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixel oder eine beliebige andere Größenkombination mit bis zu 25 Megapixel verwenden.
 
@@ -52,11 +51,11 @@ So schaffen Sie einen schnellen Einstieg:
 
    In Bildsets klicken Benutzer im Bildset-Viewer auf Miniaturansichten.
 
-   Um einen Bildsatz in Assets zu erstellen, tippen Sie auf **[!UICONTROL Erstellen > Bildsätze]**. Fügen Sie dann Bilder hinzu und tippen Sie auf **[!UICONTROL Speichern]**.
+   Um ein Bildset in Assets zu erstellen, tippen Sie auf **[!UICONTROL Erstellen > Bildsets]**. Fügen Sie dann Bilder hinzu und tippen Sie auf **[!UICONTROL Speichern]**.
 
    Sie können Bildsets auch automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
 
-   **Wichtig** — Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Erfassung erstellt und sind nur im Dynamic Media - Scene7-Modus verfügbar.
+   **Wichtig** : Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt und sind nur im Dynamic Media-Scene7-Modus verfügbar.
 
    Siehe [Vorbereiten von Bildset-Assets auf das Hochladen und Hochladen von Dateien](#uploading-assets-in-image-sets).
 
@@ -71,7 +70,7 @@ So schaffen Sie einen schnellen Einstieg:
 1. (Optional) [Anzeigen von Bildsets](image-sets.md#viewing-image-sets), die mit Stapelsatzvorgaben erstellt wurden.
 1. [Zeigen Sie Bildsets in einer Vorschau an.](previewing-assets.md)
 
-   Wählen Sie das Bildset aus, um dessen Vorschau anzuzeigen. Tippen Sie auf die Miniaturansicht-Symbole, um den Bildsatz im ausgewählten Viewer zu überprüfen. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
+   Wählen Sie das Bildset aus, um dessen Vorschau anzuzeigen. Tippen Sie auf die Miniaturansichtssymbole, um das Bildset im ausgewählten Viewer zu untersuchen. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
 1. [Veröffentlichen Sie Bildsets.](publishing-dynamicmedia-assets.md)
 
@@ -89,7 +88,7 @@ Informationen zum Bearbeiten von Bildsets finden Sie unter [Bearbeiten von Bilds
 
 Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie den Abschnitt zu Bildern und Sets unter [Problembehandlung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md#images-and-sets).
 
-## Hochladen von Assets in Bildsätzen {#uploading-assets-in-image-sets}
+## Hochladen von Assets in Bildsets {#uploading-assets-in-image-sets}
 
 Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. Bildsets unterstützen zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
@@ -116,9 +115,9 @@ Stellen Sie sicher, dass die Bilder in Bildsets mindestens 2.000 Pixel in der gr
 
 
 
-## Erstellen von Bildsets   {#creating-image-sets}
+## Erstellen von Bildsets  {#creating-image-sets}
 
-Sie können Bildsätze über die Benutzeroberfläche oder über die API erstellen. In diesem Abschnitt wird das Erstellen von Bildsätzen in der Benutzeroberfläche beschrieben.
+Sie können Bildsets über die Benutzeroberfläche oder die API erstellen. In diesem Abschnitt wird beschrieben, wie Sie Bildsets in der Benutzeroberfläche erstellen.
 
 >[!NOTE]
 >
@@ -130,30 +129,30 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 >[!NOTE]
 >
->Bildsätze werden nicht für Assets unterstützt, deren Dateiname `,` (Komma) enthält.
+>Bildsets werden für Assets mit `,` (Komma) im Dateinamen nicht unterstützt.
 
 **So erstellen Sie ein Bildset**:
 
-1. Navigieren Sie unter **Assets** zu der Stelle, an der Sie einen Bildsatz erstellen möchten, tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Bildsatz]**. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält.
+1. Navigieren Sie unter **Assets** an die Stelle, an der Sie ein Bildset erstellen möchten, tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Bildset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält.
 
    ![chlimage_1-340](assets/chlimage_1-340.png)
 
-1. Geben Sie auf der Seite &quot;Bildsatz-Editor&quot;im Feld **[!UICONTROL Titel]** einen Namen für den Bildsatz ein. Der Name wird im Banner über dem Bildset angezeigt. Geben Sie optional eine Beschreibung ein.
+1. Geben Sie auf der Seite &quot;Bildset-Editor&quot;im Feld **[!UICONTROL Titel]** einen Namen für das Bildset ein. Der Name wird im Banner über dem Bildset angezeigt. Geben Sie optional eine Beschreibung ein.
 
    ![chlimage_1-341](assets/chlimage_1-341.png)
 
    >[!NOTE]
    >
-   >Beim Erstellen des Bildsets können Sie die Miniaturansicht des Bildsets ändern oder zulassen, dass AEM die Miniaturansicht anhand der Assets im Bildset automatisch auswählt. Um eine Miniaturansicht auszuwählen, tippen Sie auf **[!UICONTROL Miniaturansicht ändern]** und wählen Sie ein beliebiges Bild aus (Sie können auch zu anderen Ordnern navigieren, um nach Bildern zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und dann festlegen möchten, dass AEM eine aus dem Bildset generiert, **[!UICONTROL wählen Sie  Zu automatischer Miniatur wechseln]**.
+   >Beim Erstellen des Bildsets können Sie die Miniaturansicht des Bildsets ändern oder zulassen, dass AEM die Miniaturansicht anhand der Assets im Bildset automatisch auswählt. Um eine Miniaturansicht auszuwählen, tippen Sie auf **[!UICONTROL Miniatur ändern]** und wählen Sie ein beliebiges Bild aus (Sie können auch zu anderen Ordnern navigieren, um Bilder zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und dann festlegen möchten, dass AEM eine aus dem Bildset generiert, **[!UICONTROL wählen Sie  Zu automatischer Miniatur wechseln]**.
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
-   * Tippen Sie in der linken oberen Ecke der Seite **[!UICONTROL Bildsatz-Editor]** auf **[!UICONTROL Hinzufügen Asset]**.
-   * Tippen Sie in der Mitte der Seite **[!UICONTROL Bildsatzeditor]** auf **[!UICONTROL Tippen, um die Asset-Auswahl]** zu öffnen.
+   * Tippen Sie in der linken oberen Ecke der Seite **[!UICONTROL Bildset-Editor]** auf **[!UICONTROL Asset hinzufügen]**.
+   * Tippen Sie in der Mitte der Seite **[!UICONTROL Bildset-Editor]** auf **[!UICONTROL Tippen, um die Asset-Auswahl]** zu öffnen.
 
-   Tippen Sie auf , um Assets auszuwählen, die Sie in Ihren Bildsatz aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
+   Tippen Sie, um Assets auszuwählen, die Sie in das Bildset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol **[!UICONTROL Ansicht]** tippen und **[!UICONTROL Ansicht]**, **[!UICONTROL Ansicht]** oder **[!UICONTROL Liste-Ansicht]** auswählen.
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol **[!UICONTROL Ansicht]** tippen und **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]** auswählen.
 
    Siehe [Arbeiten mit Selektoren](working-with-selectors.md).
 
@@ -161,24 +160,24 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets nach dem Hinzufügen manuell neu anordnen oder sortieren.
 
-   Ziehen Sie bei Bedarf das Symbol **[!UICONTROL Neu anordnen]** eines Assets nach rechts neben den Dateinamen des Assets, um die Liste neu anzuordnen.
+   Ziehen Sie bei Bedarf das Symbol **[!UICONTROL Neu anordnen]** eines Assets rechts vom Dateinamen des Assets, um die Bilder in der Setliste nach oben oder unten anzuordnen.
 
    ![spin_set_assets](assets/spin_set_assets.png)
 
-   Wenn Sie eine Miniaturansicht oder ein Farbfeld ändern möchten, tippen Sie neben dem Bild auf das Symbol **[!UICONTROL Miniaturansicht]** und navigieren Sie zur gewünschten Miniaturansicht bzw. zum gewünschten Farbfeld. Wenn Sie alle Bilder ausgewählt haben, tippen Sie auf **[!UICONTROL Speichern]**.
+   Wenn Sie eine Miniaturansicht oder ein Muster ändern möchten, tippen Sie auf das Symbol **[!UICONTROL Miniaturansicht]** neben dem Bild und navigieren Sie zur gewünschten Miniaturansicht oder zum gewünschten Muster. Wenn Sie alle Bilder ausgewählt haben, tippen Sie auf **[!UICONTROL Speichern]**.
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Um ein Bild zu löschen, wählen Sie das Bild aus und tippen Sie dann auf **[!UICONTROL Asset]** löschen.
+   * Um ein Bild zu löschen, wählen Sie das Bild aus und tippen Sie dann auf **[!UICONTROL Asset löschen]**.
    * Wenn Sie eine Vorgabe anwenden möchten, tippen Sie oben rechts auf **[!UICONTROL Voreingestellt]**. Wählen Sie anschließend eine Vorgabe aus, um sie auf alle Elemente gleichzeitig anzuwenden.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Bildset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Anzeigen von Bildsets   {#viewing-image-sets}
+## Anzeigen von Bildsets  {#viewing-image-sets}
 
 Sie können Bildsets entweder in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
 
-**Wichtig** — Stapelsätze werden vom IPS  [Image Production ] System als Teil der Asset-Erfassung erstellt und sind nur im Dynamic Media - Scene7-Modus verfügbar.)
+**Wichtig** : Stapelsätze werden vom IPS- [Bildproduktionssystem ] bei der Asset-Erfassung erstellt und sind nur im Dynamic Media-Scene7-Modus verfügbar.)
 
 Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Sie können diese Sets auf drei verschiedene Arten anzeigen. (Diese Methoden sind auch verfügbar, wenn Sie die Bildsets in der Benutzeroberfläche erstellt haben.)
 
@@ -190,7 +189,7 @@ Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberf
 
    ![chlimage_1-344](assets/chlimage_1-344.png)
 
-* In der Suche können Sie **[!UICONTROL Filter]** auswählen, dann **[!UICONTROL Dynamic Media]** erweitern und **[!UICONTROL Sätze]** auswählen.
+* Über die Suche können Sie **[!UICONTROL Filter]** auswählen, dann **[!UICONTROL Dynamic Media]** erweitern und **[!UICONTROL Sets]** auswählen.
 
    Die Suche gibt als Ergebnis Sets zurück, die in der Benutzeroberfläche manuell oder mit Stapelsatzvorgaben automatisch erstellt wurden. Im Gegensatz zu AEM-Suchen, die mit dem Suchkriterium „Enthält“ durchgeführt werden, wird die Suchabfrage für automatisierte Sets mithilfe des Suchkriteriums „Beginnt mit“ durchgeführt. Automatisierte Sets können nur durchsucht werden, wenn der Filter auf **[!UICONTROL Sets]** eingestellt ist.
 
@@ -200,7 +199,7 @@ Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberf
 >
 >Sets können über die Benutzeroberfläche angezeigt werden, wie unter [Bearbeiten von Bildsets](#editing-image-sets) beschrieben.
 
-## Bearbeiten von Bildsets   {#editing-image-sets}
+## Bearbeiten von Bildsets  {#editing-image-sets}
 
 Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die folgenden:
 
@@ -222,12 +221,12 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 
    * Ziehen Sie ein Bild, wenn Sie ein Asset an einer neuen Position anordnen möchten (zum Verschieben von Elementen wählen Sie das Symbol zum Neuanordnen).
    * Um Elemente in auf- oder absteigender Reihenfolge zu sortieren, tippen Sie auf die Spaltenüberschrift.
-   * Um ein Asset hinzuzufügen oder ein vorhandenes Asset zu aktualisieren, tippen Sie auf das Element **[!UICONTROL Hinzufügen]**. Navigieren Sie zu einem Asset, wählen Sie es aus und tippen Sie oben rechts auf **[!UICONTROL Auswählen]**.
+   * Um ein Asset hinzuzufügen oder ein vorhandenes Asset zu aktualisieren, tippen Sie auf **[!UICONTROL Asset hinzufügen]**. Navigieren Sie zu einem Asset, wählen Sie es aus und tippen Sie oben rechts auf **[!UICONTROL Auswählen]**.
 
    >[!NOTE]
    >Wenn Sie das in AEM als Miniaturansicht verwendete Bild löschen und durch ein anderes ersetzen, wird das Original-Asset weiterhin angezeigt.
 
-   * Um ein Asset zu löschen, wählen Sie es aus und tippen Sie dann auf **[!UICONTROL Asset]** löschen.
+   * Um ein Asset zu löschen, wählen Sie es aus und tippen Sie dann auf **[!UICONTROL Asset löschen]**.
    * Um eine Vorgabe anzuwenden, tippen Sie oben rechts auf der Seite auf **[!UICONTROL Vorgabe]** und wählen Sie eine Viewer-Vorgabe aus.
    * Um eine Miniaturansicht hinzuzufügen oder zu ändern, wählen Sie die Miniaturansicht rechts neben dem Asset. Navigieren Sie zur neuen Miniaturansicht oder zum neuen Farbmuster-Asset, wählen Sie es aus und tippen Sie dann auf **[!UICONTROL Auswählen]**.
    * Um ein ganzes Bildset zu löschen, navigieren Sie zum Bildset, wählen Sie es aus und klicken Sie auf **[!UICONTROL Löschen]**.
@@ -238,10 +237,10 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie die Bearbeitung abgeschlossen haben.
 
-## Anzeigen von Bildsets in einer Vorschau   {#previewing-image-sets}
+## Anzeigen von Bildsets in einer Vorschau  {#previewing-image-sets}
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
 
-## Veröffentlichen von Bildsets   {#publishing-image-sets}
+## Veröffentlichen von Bildsets  {#publishing-image-sets}
 
 Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
