@@ -9,25 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 78%
 
 ---
 
-
 # Repository-Neustrukturierung in AEM 6.4{#repository-restructuring-in-aem}
 
 ## Einführung {#introduction}
 
-Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen der JCR bereitgestellt, die bei Aktualisierungen geändert werden mussten. Aus diesem Grund wurde in formellen AEM Versionen häufig der benutzerdefinierte Code, die Konfiguration oder der Inhalt überschrieben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
+Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen des JCR bereitgestellt, die bei Upgrades geändert werden konnten. Aus diesem Grund wurde es häufig bei offiziellen AEM-Versionen verwendet, benutzerdefinierten Code, Konfigurationen oder Inhalt zu überschreiben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
 
 Durch klare Abgrenzungshierarchien für AEM-Produktcode und Kundencode können diese Konflikte vermieden werden.
 
-Zu diesem Zweck werden ab AEM 6.4 und um in zukünftigen Versionen fortgeführt zu werden, Inhalte aus /etc in andere Ordner im Repository umstrukturiert, zusammen mit Richtlinien darüber, welche Inhalte wohin geleitet werden, wobei die folgenden Regeln auf hoher Ebene beachtet werden:
+Zu diesem Zweck werden ab AEM 6.4 und in zukünftigen Versionen Inhalte aus /etc in andere Ordner im Repository umstrukturiert und Richtlinien dazu festgelegt, welche Inhalte wohin gelangen. Dabei gelten die folgenden allgemeinen Regeln:
 
 * AEM-Produktcode wird immer im Ordner /libs abgelegt, der nicht durch benutzerdefinierten Code überschrieben werden darf.
 * Benutzerdefinierter Code sollte in /apps, /content und /conf platziert werden
@@ -45,12 +44,12 @@ Bei der Planung einer Aktualisierung auf AEM 6.4 sollten die folgenden Seiten zu
 
 * [Repository-Neustrukturierung für alle AEM-Lösungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets-Repository-Umstrukturierung](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [Repository-Neustrukturierung AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
-* [AEM Forms-Repository-Umstrukturierung](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
-* [AEM Communities-Repository-Umstrukturierung](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
+* [Repository-Neustrukturierung AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
+* [Repository-Neustrukturierung AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
 
 Jede Seite enthält zwei Bereiche entsprechend der Dringlichkeit der erforderlichen Änderungen. Alle Punkte im Abschnitt „Mit der Aktualisierung auf 6.4“ sollten im Rahmen des AEM 6.4-Aktualisierungsprojekts behandelt werden. Alles, was unter „Vor der Aktualisierung auf 6.5“ steht, kann optional auf nach der Aktualisierung verschoben werden.
 
-Jeder Eintrag auf der Seite enthält ein Feld „Leitfaden für die Neustrukturierung“, in dem die empfohlene technische Strategie für die Anpassung an die neue 6.4 beschrieben ist.  respository-Modell, sodass auf die neuen Speicherorte für Inhalte verwiesen wird, die sich zuvor im Ordner &quot;/etc&quot;befanden. Ein zusätzliches Feld „Hinweise“ bietet zusätzlichen nützlichen Kontext.
+Jeder Eintrag auf der Seite enthält ein Feld „Leitfaden für die Neustrukturierung“, in dem die empfohlene technische Strategie für die Anpassung an die neue 6.4 beschrieben ist.  Repository-Modell, sodass die neuen Speicherorte für Inhalte referenziert werden, die sich zuvor im Ordner /etc befinden. Ein zusätzliches Feld „Hinweise“ bietet zusätzlichen nützlichen Kontext.
