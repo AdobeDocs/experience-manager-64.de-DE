@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9eeb3203-e27a-4960-a4ec-58dd9dd098a2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 96%
 
 ---
-
 
 # Struktur der Touch-optimierten Benutzeroberfläche von AEM{#structure-of-the-aem-touch-enabled-ui}
 
@@ -149,7 +148,7 @@ AEM enthält verschiedene vorab implementierte Ebenen für die Seitenbearbeitung
 >
 >Ebenen sind ein Konzept mit hohem Potenzial; sie beeinflussen die Ansicht und die Interaktion des Nutzers mit dem Seiteninhalt. Wenn Sie Ihre eigenen Ebenen entwickeln, stellen Sie sicher, dass die Ebene beim Verlassen eine Bereinigung durchführt.
 
-### Ebenenschalter  {#layer-switcher}
+### Ebenenschalter   {#layer-switcher}
 
 Mit dem Ebenenschalter können Sie die Ebene auswählen, die Sie verwenden möchten. Wenn er geschlossen ist, zeigt er die aktuell verwendete Ebene an.
 
@@ -167,7 +166,6 @@ Je nach verfügbarem Platz werden die Komponenten-Symbolleisten in der oberen od
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Konzepten der touchfähigen Benutzeroberfläche finden Sie im Artikel [Konzepte der AEM Touch-Enabled-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
+Weitere Informationen zu den Konzepten der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Konzepte der Touch-optimierten AEM-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
 
-Weitere technische Informationen finden Sie im [JS Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-aktivierten Seiten-Editor.
-
+Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-optimierten Seiteneditor.
