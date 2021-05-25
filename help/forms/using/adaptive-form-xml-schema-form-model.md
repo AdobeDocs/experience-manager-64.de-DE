@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 92%
 
 ---
-
 
 # Adaptive Formulare mithilfe des XML-Schemas erstellen {#creating-adaptive-forms-using-xml-schema}
 
@@ -174,7 +173,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 
 >
 >
-Wenn Sie beispielsweise das Schema `userFirstName` hinzufügen, wird im adaptiven Formular eine Beschriftung `User First Name` generiert.
+Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, lautet die im adaptiven Formular generierte Beschriftung `User First Name`.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -275,7 +274,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
    <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. fractionDigits muss größer oder gleich null sein.</p> </td> 
    <td> 
     <ul> 
-     <li> Numerisches Feld mit Datentyp float oder decimal</li> 
+     <li> Numerisches Feld mit Datentyp "float"oder "decimal"</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -294,15 +293,15 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 
-Wenn Sie in der Inhaltssuche auf ein Element klicken, wird in einem Popup-Fenster ein Feldname und eine Eigenschaft mit der Bezeichnung `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
+Wenn Sie in der Inhaltssuche auf ein Element doppelklicken, zeigt ein Popup-Fenster einen Feldnamen und eine Eigenschaft mit der Bezeichnung `bindRef` an. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
-Das Feld bindRef</code> zeigt die Verbindung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
+Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
 
 >[!NOTE]
 >
->Attribute haben ein `@`-Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
+>Attribute haben ein `@` -Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
 
