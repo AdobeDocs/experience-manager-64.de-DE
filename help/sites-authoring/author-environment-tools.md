@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 93%
 
 ---
-
 
 # Autorenumgebung und Tools{#authoring-the-environment-and-tools}
 
@@ -73,13 +72,13 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
    Der Komponenten-Browser deckt die bearbeitete Seite vollständig ab.
 
-   Um eine Komponente zu Ihrer Seite hinzuzufügen, halten Sie die gewünschte Komponente gedrückt und verschieben Sie sie nach rechts - der Komponenten-Browser schließt die Seite wieder, um sie anzuzeigen - wo Sie die Komponente positionieren können.
+   Um Ihrer Seite Komponenten hinzuzufügen, berühren und halten Sie die gewünschte Komponente und verschieben Sie sie nach rechts - der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt - wo Sie die Komponente platzieren können.
 
    ![screen_shot_2018-03-22at141752](assets/screen_shot_2018-03-22at141752.png)
 
 * **Desktop-Gerät**
 
-   Der Komponenten-Browser wird links im Fenster geöffnet.
+   Der Komponenten-Browser wird auf der linken Seite des Fensters geöffnet.
 
    Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
 
@@ -140,7 +139,7 @@ In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriteri
 * Name
 * Pfad
 * Asset-Typ (d. h. Bilder, Manuskripte, Dokumente, Videos, Seiten, Absätze oder Produkte)
-* Asset-Eigenschaften wie Ausrichtung (Hochformat, Querformat, Quadrat) und Stil (Farbe, Monochrom, Graustufen)
+* Asset-Eigenschaften wie Ausrichtung (Hochformat, Querformat, Quadrat) und Stil (Farbe, Schwarzweiß, Graustufen)
 
    * Nur für bestimmte Asset-Typen verfügbar
 
@@ -170,7 +169,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur   {#content-tree}
+## Inhaltsstruktur  {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -229,8 +228,8 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 
 * Verwendung der Verweiskomponente (z. B. Navigieren zur referenzierenden bzw. referenzierten Seite)
 * [Verweise auf Produktseiten](/help/sites-administering/generic.md#showing-product-references) (verfügbar in der Konsole „E-Commerce - Produkte“)
-* [Launches](/help/sites-authoring/launches.md)
-* [](/help/sites-administering/msm.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
+* [Starts](/help/sites-authoring/launches.md)
+* [Live Copies](/help/sites-administering/msm.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 * [Sprachkopien](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)
 
@@ -259,7 +258,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [Eigenschaften öffnen](/help/sites-authoring/editing-page-properties.md)
 * [Seiten-Rollout](/help/sites-administering/msm.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
-* [Seite sperren](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Seite veröffentlichen](/help/sites-authoring/publishing-pages.md#publishing-pages)
 * [Veröffentlichen einer Seite rückgängig machen](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
 * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
@@ -269,13 +268,13 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
 
 * [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
-* [Vorlage ](/help/sites-authoring/templates.md) bearbeiten, wenn die Seite auf einer  [bearbeitbaren Vorlage basiert](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Vorlage bearbeiten ](/help/sites-authoring/templates.md) , wenn die Seite auf einer  [bearbeitbaren Vorlage basiert](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [In der klassischen ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
+* [In klassischer ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi   {#page-modes}
+## Seitenmodi  {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
@@ -313,7 +312,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 
 ## Pfadauswahl {#path-selection}
 
-Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfadbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
+Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
 
 ### Pfadfelder {#path-fields}
 
