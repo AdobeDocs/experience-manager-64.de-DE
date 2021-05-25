@@ -4,16 +4,15 @@ description: Dieser Artikel beschreibt, wie Sie in AEM Assets ein Metadatensche
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1086'
 ht-degree: 100%
 
 ---
-
 
 # Ordner-Metadatenschema {#folder-metadata-schema}
 
@@ -25,7 +24,7 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Metadatenschemata für Ass
 >
 >Diese Funktion erfordert AEM 6.4 mit mindestens Service Pack 2. Informationen zum AEM 6.4 Service Pack finden Sie in den [Versionshinweisen](/help/release-notes/sp-release-notes.md).
 
-## Hinzufügen von Ordner-Metadatenschema-Formularen  {#add-a-folder-metadata-schema-form}
+## Hinzufügen von Ordner-Metadatenschema-Formularen   {#add-a-folder-metadata-schema-form}
 
 Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata für Ordner zu erstellen und zu bearbeiten.
 
