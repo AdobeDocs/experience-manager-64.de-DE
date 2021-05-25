@@ -7,15 +7,14 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 6ae70f02-a86d-4514-abc5-1ed08e484852
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 81%
 
 ---
-
 
 # Erstellen von Formularen mit wiederholbaren Abschnitten {#creating-forms-with-repeatable-sections}
 
@@ -25,7 +24,7 @@ Beispiel: Bei der Bewerbung auf eine Stelle gibt der Arbeitssuchende Details zur
 
 Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
-## Verwenden des Instanzmanagers über Skripte  {#using-instance-manager-via-scripts-nbsp}
+## Verwenden des Instanzmanagers über Skripte   {#using-instance-manager-via-scripts-nbsp}
 
 1. Wählen Sie im Bearbeitungsmodus ein Bedienfeld aus und tippen Sie dann auf ![cmppr](assets/cmppr.png). Aktivieren Sie in der Randleiste unter „Eigenschaften“ **Bereich wiederholbar machen**. Geben Sie Werte für die Felder **[!UICONTROL Maximum]** und **[!UICONTROL Minimum]** an.
 
@@ -39,7 +38,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 1. Das übergeordnete Element des Bereichs, der wiederholt werden soll, muss Schalter zum Hinzufügen und Löschen enthalten, um Instanzen der wiederholbaren Bereiche zu verwalten. Führen Sie die folgenden Schritte aus, um Schaltflächen in das übergeordnete Element einzufügen und Skripte auf den Schaltflächen zu aktivieren:
 
-   1. Ziehen Sie eine Schaltflächenkomponente per Drag &amp; Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und tippen Sie auf ![Bearbeitungsregeln](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
+   1. Ziehen Sie eine Schaltflächenkomponente per Drag &amp; Drop aus der Randleiste in das übergeordnete Element des Bereichs. Wählen Sie die Komponente aus und tippen Sie auf ![edit-rules](assets/edit-rules.png). Die Regeln der Schaltfläche werden im Regeleditor geöffnet.
    1. Im Fenster des Regeleditors klicken Sie auf **Erstellen**.
 
       Wählen Sie in der Zeile „Formularobjekte“ und „Funktionen“ **Visual Editor.**
@@ -47,8 +46,8 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
       1. Wählen Sie im Regelbereich unter „WANN“ den Status **Angeklickt**.
       1. Unter „DAN“:
 
-         * Um eine Schaltfläche zum Hinzufügen eines Bedienfelds zu erstellen, wählen Sie **Hinzufügen Instanz** und ziehen Sie das Bedienfeld mit ![umschaltbarem Seitenbedienfeld](assets/toggle-side-panel.png) oder wählen Sie es mit **Objekt ablegen oder hier auswählen.**
-         * Um eine Schaltfläche zum Löschen eines Bedienfelds zu erstellen, wählen Sie **Instanz entfernen** und ziehen Sie den Bereich mit ![umschaltbaren Bereich](assets/toggle-side-panel.png) oder wählen Sie ihn mit **Objekt ablegen oder hier auswählen.**
+         * Um eine Schaltfläche zum Hinzufügen eines Bedienfelds zu erstellen, wählen Sie **Instanz hinzufügen** aus und ziehen Sie den Bereich mit ![Umschalter-Seitenbereich](assets/toggle-side-panel.png) oder wählen Sie ihn mithilfe von **Objekt ablegen oder hier auswählen.**
+         * Um eine Schaltfläche zum Löschen eines Bedienfelds zu erstellen, wählen Sie **Instanz entfernen** aus und ziehen Sie den Bereich mit ![Umschalter-Seitenbedienfeld](assets/toggle-side-panel.png) oder wählen Sie ihn mit **Legen Sie das Objekt ab oder wählen Sie hier aus.**
 
       Wählen Sie in der Zeile „Formularobjekte und Funktionen“ **Code-Editor** aus. Klicken Sie auf **Regeln bearbeiten** und in den Codebereich:
 
@@ -59,7 +58,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
       >[!NOTE]
       >
-      >Wenn ein Feld zu einem wiederholbaren Bereich gehört, können Sie mithilfe des Namens in Ihren Skripts nicht direkt darauf zugreifen. Um auf das Feld zuzugreifen, geben Sie die wiederholbare Instanz an, zu der das Feld gehört. Verwenden Sie dazu die API `instances` in `InstanceManager`. Die Syntax für die Verwendung der `instances`-API in `InstanceManager` lautet:
+      >Wenn ein Feld zu einem wiederholbaren Bereich gehört, können Sie mithilfe des Namens in Ihren Skripts nicht direkt darauf zugreifen. Um auf das Feld zuzugreifen, geben Sie mithilfe der `instances`-API in `InstanceManager` die wiederholbare Instanz an, zu der das Feld gehört. Die Syntax für die Verwendung der `instances`-API in `InstanceManager` lautet:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -93,7 +92,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
       >[!NOTE]
       >
-      >Wenn alle Instanzen eines Bedienfelds aus einem adaptiven Formular entfernt werden, verwenden Sie zum Hinzufügen einer Instanz des entfernten Bedienfelds die Syntax _panelName, um den Instanzmanager des Bedienfelds zu erfassen, und verwenden Sie die addInstance-API des Instanzmanagers, um die gelöschte Instanz hinzuzufügen. Beispiel: _panelName.addInstance(). Es fügt eine Instanz der entfernten Bereichshinzu.
+      >Wenn alle Instanzen eines Bedienfelds aus einem adaptiven Formular entfernt werden, verwenden Sie zum Hinzufügen einer Instanz des entfernten Bedienfelds die Syntax _panelName , um den Instanzmanager des Bedienfelds zu erfassen, und verwenden Sie die API addInstance des Instanzmanagers, um die gelöschte Instanz hinzuzufügen. Beispiel: _panelName.addInstance(). Es fügt eine Instanz der entfernten Bereichshinzu.
 
 
 
@@ -116,7 +115,7 @@ Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für d
 1. Tippen Sie im übergeordneten Element des zu wiederholenden Bereichs auf ![cmppr](assets/cmppr.png). Sie können die Eigenschaften in der Randleiste anzeigen. Wählen Sie in der Dropdownliste **Layout** die Option **Akkordeon**.
 1. Tippen Sie in einem Bereich, der wiederholt werden soll, auf ![cmppr](assets/cmppr.png). Sie können die Eigenschaften des Bereichs in der Randleiste anzeigen. Aktivieren Sie die Registerkarte **Bereich wiederholbar machen** und geben Sie den Wert für die Felder **Maximum** und **Minimum** ein.
 
-   Jetzt können Sie die Schaltflächen mit dem Pluszeichen (+) und Löschen ( ![delete-panel](assets/delete-panel.png)) verwenden, um die Bedienfelder hinzuzufügen und zu entfernen.
+   Jetzt können Sie die Schaltflächen mit dem Pluszeichen (+) und zum Löschen ( ![delete-panel](assets/delete-panel.png)) verwenden, um die Bedienfelder hinzuzufügen und zu entfernen.
 
 ## Verwenden von wiederholten Teilformularen aus der Formularvorlage (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
