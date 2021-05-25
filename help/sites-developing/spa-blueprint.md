@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
-translation-type: tm+mt
-source-git-commit: 67712638f9e35b8a6b4b3b9cdd5c507a91222dfd
+exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
-
 
 # SPA-Blueprint{#spa-blueprint}
 
@@ -23,9 +22,9 @@ Damit der Autor den AEM SPA Editor zum Bearbeiten des Inhalts eines SPA verwende
 
 >[!NOTE]
 >
->Für die Funktion zum Editor für Einzelseitenanwendungen (SPA) ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Single Page Application (SPA) Editor&quot;ist AEM Service Pack 2 (oder höher) 6.4 erforderlich.
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Einführung {#introduction}
 
@@ -41,7 +40,7 @@ In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework 
 >
 >Obwohl die SPA Funktionen von AEM Framework-unabhängig sind, werden derzeit nur die React- und Angular-Frameworks unterstützt.
 
-Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework bereitgestellten Daten verwenden kann, muss ein Projekt die Struktur des Modells interpretieren können, das die Semantik der für eine Anwendung im AEM-Repository gespeicherten Daten darstellt. Dafür stehen zwei Framework-agnostische Bibliotheken zur Verfügung: `PageModelManager` und `ComponentMapping`.
+Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework bereitgestellten Daten verwenden kann, muss ein Projekt die Struktur des Modells interpretieren können, das die Semantik der für ein Programm im AEM-Repository gespeicherten Daten darstellt. Dafür stehen zwei Framework-agnostische Bibliotheken zur Verfügung: `PageModelManager` und `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
@@ -49,15 +48,15 @@ Die `PageModelManager`-Bibliothek wird als NPM-Paket bereitgestellt, das von ein
 
 Im Namen der SPA abstrahiert sie den Abruf und die Verwaltung der JSON-Struktur, die die eigentliche Inhaltsstruktur darstellt. Sie ist auch für die Synchronisation mit der SPA verantwortlich und informiert sie darüber, wenn ihre Komponenten neu gerendert werden müssen.
 
-Siehe NPM-Paket [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+Siehe NPM-Paket [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) .
 
 Beim Initialisieren des `PageModelManager` lädt die Bibliothek zunächst das bereitgestellte Stammmodell der App (über Parameter, Meta-Eigenschaft oder aktuelle URL). Wenn die Bibliothek erkennt, dass das Modell der aktuellen Seite nicht Teil des Stammmodells ist, wird es als Modell einer untergeordneten Seite abgerufen und eingefügt.
 
-![page_model_configuration](assets/page_model_consolidation.png)
+![page_model_coding](assets/page_model_consolidation.png)
 
 ### ComponentMapping {#componentmapping}
 
-Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet eine Möglichkeit für die SPA, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dies ermöglicht beim Parsen des JSON-Modells der Anwendung eine dynamische Auflösung von Komponenten.
+Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet eine Möglichkeit für die SPA, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dies ermöglicht beim Parsen des JSON-Modells des Programms eine dynamische Auflösung von Komponenten.
 
 Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente mit dem Fragment des Modells, das sie von den zugrunde liegenden Bibliotheken erhalten hat, selbst rendern.
 
@@ -77,9 +76,9 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
-Die SPA Komponenten müssen mit dem Seitenmodell synchronisiert sein und entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
+Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
-### Meta-Felder  {#meta-fields}
+### Meta-Felder   {#meta-fields}
 
 Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Model](https://sling.apache.org/documentation/bundles/models.html)-API basiert. Die exportierbaren Sling-Modelle machen die folgende Liste von Feldern verfügbar, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
 
@@ -110,7 +109,7 @@ NPM-Modul: [@adobe/aem-response-editable-components](https://www.npmjs.com/packa
 
 #### Angular {#angular}
 
-npm-Modul: demnächst
+npm-Modul: bald
 
 ## Hauptdienste und -komponenten {#main-services-and-components}
 
@@ -154,7 +153,7 @@ Ein Container ist eine Komponente, die untergeordnete Komponenten enthält und r
 
 Der Container ruft die untergeordneten Komponenten dynamisch aus dem Speicher der [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping)-Bibliothek ab. Der Container erweitert dann die untergeordnete Komponente mit den Modellanbieterfunktionen und instanziiert sie schließlich.
 
-### Seite {#page}
+### Seite  {#page}
 
 Die `Page`-Komponente erweitert die `Container`-Komponente. Ein Container ist eine Komponente, die untergeordnete Komponenten wie untergeordnete Seiten enthält und rendert. Dazu durchläuft der Container die `:itemsOrder`-, `:items`- und `:children`-Eigenschaften seines Modells. Die Komponente `Page` ruft die untergeordneten Komponenten dynamisch aus dem Speicher der Bibliothek [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) ab. Die `Page` ist für die Instanziierung untergeordneter Komponenten verantwortlich.
 
@@ -169,9 +168,9 @@ Die Komponente „Responsives Raster“ sollte vorab ihrem AEM-Gegenstück zugeo
 * `gridClassNames:` stellt Klassennamen für das responsive Raster bereit
 * `columnClassNames:` stellt Klassennamen für die responsive Spalte bereit
 
-Siehe auch die npm-Ressource [@adobe/aem-response-editable-components#srccomponents-responsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
+Siehe auch npm resource [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
-#### Platzhalter des Reponsiv-Rasters {#placeholder-of-the-reponsive-grid}
+#### Platzhalter des responsiven Rasters {#placeholder-of-the-reponsive-grid}
 
 Die SPA-Komponente ist einem grafischen Container wie dem responsiven Raster zugeordnet und muss einen virtuellen untergeordneten Platzhalter hinzufügen, wenn der Inhalt bearbeitet wird. Wenn der Inhalt der SPA im Seiteneditor bearbeitet wird, wird dieser Inhalt mit einem iFrame in den Editor eingebettet und das Attribut `data-cq-editor` wird dem document-Knoten des Inhalts hinzugefügt. Wenn das `data-cq-editor`-Attribut vorhanden ist, muss der Container ein HTML-Element enthalten, das den Bereich darstellt, mit dem der Autor beim Einfügen einer neuen Komponente in die Seite interagiert.
 
@@ -258,7 +257,7 @@ Das folgende Fragment zeigt die typische HTML-Darstellung einer Seiteninhaltsstr
 * Das responsive Rasterelement überträgt Klassennamen mit dem Präfix `aem-Grid--`
 * Das responsive Spaltenelement überträgt Klassennamen mit dem Präfix `aem-GridColumn--`
 * Ein responsives Raster, das auch die Spalte eines übergeordneten Rasters ist, ist so eingeschlossen, dass die beiden oben genannten Präfixe nicht im demselben Element vorkommen
-* Elemente, die bearbeitbaren Ressourcen entsprechen, haben die Eigenschaft `data-cq-data-path`. Weitere Informationen finden Sie im Abschnitt [Vertrag mit dem Seiteneditor](#contract-wtih-the-page-editor) dieses Dokuments.
+* Elemente, die bearbeitbaren Ressourcen entsprechen, haben die Eigenschaft `data-cq-data-path`. Weitere Informationen finden Sie im Abschnitt [Vertrag mit dem Seiten-Editor](#contract-wtih-the-page-editor) dieses Dokuments.
 
 ```
 <div data-cq-data-path="/content/page">
@@ -280,7 +279,7 @@ Die App ist für das Routing verantwortlich. Der Frontend-Entwickler muss zunäc
 
 Die zugrunde liegende [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)-Bibliothek und ihr (standardmäßig aktiviertes) [`ModelRouter`](/help/sites-developing/spa-routing.md)-Modul sind für den Vorababruf und das Gewähren von Zugriff auf das mit einem bestimmten Ressourcenpfad verknüpfte Modell verantwortlich.
 
-Die beiden Entitäten beziehen sich auf den Begriff Routing, aber [`ModelRouter`](/help/sites-developing/spa-routing.md) ist nur dafür verantwortlich, dass [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) mit einem Datenmodell geladen wird, das synchron mit dem aktuellen Anwendungsstatus strukturiert ist.
+Die beiden Entitäten beziehen sich auf den Begriff Routing, aber [`ModelRouter`](/help/sites-developing/spa-routing.md) ist nur dafür verantwortlich, dass der [&quot;PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) mit einem Datenmodell geladen wird, das synchron mit dem aktuellen Anwendungsstatus strukturiert ist.
 
 Weitere Informationen dazu finden Sie im Artikel [SPA-Modell-Routing](/help/sites-developing/spa-routing.md).
 
