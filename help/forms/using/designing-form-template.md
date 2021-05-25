@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e135fa01-fede-4285-b4dd-2d23acbb4d26
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 248e56c7-51b7-41d3-8bc9-a5d737bf178b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 65%
 
 ---
 
-
 # Entwerfen von Formularvorlagen für HTML5-Formulare {#designing-form-templates-for-html-forms}
 
 Die HTML5-Formularkomponente in AEM ermöglicht, XFA-Formularvorlagen im HTML5-Format zu rendern. Formularentwickler können Formularvorlagen mit [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) entwerfen und die HTML5-Renderfunktion nutzen. Diese Formularvorlagen können sich zusammen mit ihren Assets im AEM Repository-Dateisystem befinden oder über HTTP bereitgestellt werden. Wenn Sie Ihre Formulare jedoch mit Forms Manager verwalten möchten, sollten sich die Vorlagen und Assets im AEM Repository befinden.
 
-Obwohl das Verhalten von HTML5-Formularen und PDF-Formularen sich stark ähnelt, gibt es mehrere Funktionen in beiden Formaten, die nicht im anderen Format verfügbar sind. So unterscheidet sich beispielsweise die Art und Weise, wie Barcodes auf ein PDF-Formular in Adobe Reader angewendet werden, von einem Mobile-Formular oder wie ein Formular digital signiert wird, je nach Format. Weitere Informationen zu diesen Varianten finden Sie unter [Funktionsunterschiede zwischen HTML5-Formularen und PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+Obwohl das Verhalten von HTML5-Formularen und PDF-Formularen sich stark ähnelt, gibt es mehrere Funktionen in beiden Formaten, die nicht im anderen Format verfügbar sind. Beispielsweise variiert die Anwendung von Barcodes auf ein PDF-Formular in Adobe Reader von einem Mobile-Formular aus oder die digitale Unterzeichnung eines Formulars variiert auch zwischen den Formaten. Weitere Informationen zu diesen Varianten finden Sie unter [Funktionsunterschiede zwischen HTML5-Formularen und PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 Allgemeine XFA-Funktionen finden Sie in den folgenden empfohlenen Verfahrensweisen und Richtlinien zum Entwerfen eines Formulars, das in beiden Formaten funktioniert.
 
@@ -34,6 +33,6 @@ Die HTML-Vorschau-Registerkarte wurde im Designmodus für Formularentwickler hin
 
 ### Scribble-Signatur {#scribble-signature}
 
-Das Hauptziel für HTML5-Formulare sind Touch-Geräte. Daher wurde ein neues Scribble-Signatur-Steuerelement in AEM Forms Designer hinzugefügt. Sie können auf das Scribble-Signatur-Steuerelement klicken oder es in Ihre Formularvorlage ziehen und es konfigurieren. Es wird in der HTML5-Darstellung als Scribble-Feld gerendert und kann für Scribble-Signaturen auf Touch-Geräten verwendet werden. Auf Desktop-Rechnern kann es per Maussteuerung als Scribble-Feld verwendet werden. Weitere Informationen zur Verwendung dieser Funktion finden Sie unter [XFA-Scribble-Feld](/help/forms/using/scribble-signature.md).
+Das Hauptziel für HTML5-Formulare sind Touch-Geräte. Daher wurde ein neues Scribble-Signatur-Steuerelement in AEM Forms Designer hinzugefügt. Sie können auf das Scribble-Signatur-Steuerelement klicken oder es per Drag-and-Drop auf Ihre Formularvorlage ziehen und konfigurieren. Sie wird in der HTML5-Ausgabe als Scribble-Feld gerendert und kann für die Scribble-Signatur auf Touch-Geräten verwendet werden. Auf Desktop-Rechnern kann es per Maussteuerung als Scribble-Feld verwendet werden. Weitere Informationen zur Verwendung dieser Funktion finden Sie unter [XFA Scribble Field](/help/forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
