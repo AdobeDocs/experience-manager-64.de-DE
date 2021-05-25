@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Seitenvorlagen
+title: 'Erstellen von Seitenvorlagen '
 seo-title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 seo-description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 2af8eaed-3963-4016-9efa-a630d16a982b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 97%
 
 ---
 
-
-# Erstellen von Seitenvorlagen  {#creating-page-templates}
+# Erstellen von Seitenvorlagen   {#creating-page-templates}
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können.
 
@@ -41,7 +40,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!NOTE]
 >
->AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA Editor](/help/sites-developing/spa-overview.md) zu verwenden.
+>AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA-Editor](/help/sites-developing/spa-overview.md) zu verwenden.
 
 >[!NOTE]
 >
@@ -49,7 +48,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!CAUTION]
 >
->Seiten und Vorlagen, die mit der **Vorlagenkonsole** erstellt wurden, sind nicht für die Verwendung mit der klassischen Benutzeroberfläche vorgesehen und werden nicht unterstützt.
+>Seiten und Vorlagen, die mit der **Vorlagenkonsole** erstellt wurden, sind nicht für die Verwendung mit der klassischen Benutzeroberfläche vorgesehen und eine solche Verwendung wird nicht unterstützt.
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -112,7 +111,7 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
    * Sie werden [von Ihren Entwicklern bereitgestellt](/help/sites-developing/page-templates-static.md) und können somit nicht von Autoren erstellt oder bearbeitet werden.
    * Sie werden kopiert, um die neue Seite zu erstellen, wobei danach keine dynamische Verbindung besteht (obwohl der Name der Vorlage zu Informationszwecken registriert ist).
    * Verwenden Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-   * Da die Bearbeitung statischer Vorlagen die exklusive Aufgabe eines Entwicklers ist, finden Sie weitere Informationen im Developer Dokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md).
+   * Da die Bearbeitung statischer Vorlagen die ausschließliche Aufgabe eines Entwicklers ist, finden Sie im Entwicklerdokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md) weitere Informationen.
 
 Laut Definition ermöglichen die Vorlagenkonsole und der Vorlagen-Editor nur das Erstellen und Bearbeiten von bearbeitbaren Vorlagen. Das vorliegende Dokument beschäftigt sich daher nur mit bearbeitbaren Vorlagen.
 
@@ -126,7 +125,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 * Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Werkzeuge** verfügbar ist.
 
-   * Oder direkt unter: [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * oder direkt unter: [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen Sie eine neue Vorlage](#creating-a-new-template-template-author), die anfangs leer ist.
@@ -466,7 +465,7 @@ Im Modus **Struktur** des Vorlagen-Editors:
 
    Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche **Löschen**, die sich rechts neben der Konfiguration befindet.
 
-   Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche** Löschen*.
+   Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche &quot;Löschen&quot;.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
@@ -613,7 +612,7 @@ Der Seitenentwurf, einschließlich der erforderlichen Client-seitigen Bibliothek
 
 So greifen Sie auf das Dialogfeld **Seitendesign** zu:
 
-1. Wählen Sie in der Symbolleiste **Vorlageneditor** **Seiteninformationen** und dann **Seitendesign** aus, um das Dialogfeld zu öffnen.
+1. Wählen Sie im **Vorlagen-Editor** **Seiteninformationen** aus der Symbolleiste und dann **Seitendesign** aus, um das Dialogfeld zu öffnen.
 1. Das Dialogfeld **Seitendesign** wird geöffnet. Es ist in zwei Abschnitte unterteilt:
 
    * Die linke Hälfte definiert die [Seitenrichtlinien](/help/sites-authoring/templates.md#page-policies).
@@ -654,7 +653,7 @@ Mithilfe der Seiteneigenschaften können Sie die erforderlichen Client-seitigen 
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-* Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliothekn**.
+* Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliotheken**.
 
    ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -724,4 +723,3 @@ Beim Erstellen von Vorlagen sollten Sie Folgendes berücksichtigen:
 
 1. [Erstellen Sie Ihre eigenen Ordner](#creating-a-template-folder-admin) für Ihre sitespezifischen Vorlagen.
 1. [Veröffentlichen Sie Ihre Vorlagen](#publishing-a-template-template-author) über die **Vorlagenkonsole**.
-
