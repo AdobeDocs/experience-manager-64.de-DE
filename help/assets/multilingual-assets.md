@@ -2,16 +2,15 @@
 title: Mehrsprachige Assets
 description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 84%
 
 ---
-
 
 # Mehrsprachige Assets {#multilingual-assets}
 
@@ -25,12 +24,12 @@ Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt d
 
 Das Übersetzen von Assets umfasst Folgendes:
 
-1. [Verbinden von AEM mit dem Übersetzungsdienstleister](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) 
-1. [Erstellen von Framework-Konfigurationen für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) 
+1. [Verbinden von AEM mit dem Übersetzungsdienstleister ](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Erstellen von Framework-Konfigurationen für die Übersetzungsintegration ](/help/sites-administering/tc-tic.md)
 1. [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
 1. [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
 1. [Erstellen von Übersetzungsprojekten](translation-projects.md)
 
-Wenn Ihr Übersetzungs-Dienstleister keinen Connector zur Integration in AEM bereitstellt, verwenden Sie einen [Alternativprozess](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Wenn Ihr Übersetzungsanbieter keinen Connector zur Integration mit AEM bereitstellt, verwenden Sie einen [alternativen Prozess](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Siehe auch [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md).
