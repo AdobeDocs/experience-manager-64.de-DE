@@ -1,20 +1,19 @@
 ---
 title: Richtlinien für das Trainieren des Smart Content Service
-description: Schulung des AI-Dienstes zum Anwenden intelligenter Tags auf Assets
+description: Trainieren des AI-Dienstes zum Anwenden von Smart-Tags auf Assets
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Tagging,Metadata,Smart Tags
+feature: Tagging, Metadaten, Smart-Tags
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 90%
 
 ---
-
 
 # Richtlinien für das Trainieren des Smart Content Service {#smart-content-service-training-guidelines}
 
@@ -63,4 +62,3 @@ Verwenden Sie die Asset-OmniSearch, um nach Assets mit Smart-Tags (normal oder e
 >Die Fähigkeit des Smart Content Service, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.
 >
 >Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
-
