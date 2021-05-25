@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: a063d1ba-712a-49e1-8844-75bfa6e98977
-translation-type: tm+mt
-source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+exl-id: 5e2b4930-c030-4abe-9b81-6e6729fe3ad4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '7050'
 ht-degree: 97%
 
 ---
 
+# Glossar {#glossary}
 
-# Glossar    {#glossary}
-
-In dieser Glossar-Liste (alphabetisch) werden alle auslieferbaren Dokumente aus der [Projektprüfliste](/help/managing/best-practices-checklist.md) aufgeführt.
+Dieses Glossar listet (alphabetisch) alle lieferbaren Dokumente aus der [Projekt-Checkliste](/help/managing/best-practices-checklist.md) auf.
 
 ## Akzeptanz der Projektbeteiligten aus den Geschäftsbereichen {#acceptance-from-business-stakeholders}
 
@@ -67,13 +66,13 @@ Schulung für Mitarbeiter, die Inhalte für die Lösung erstellen. Unter [Adobe 
 
 Stellen Sie sicher, dass die gewünschten Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) registriert sind.
 
-## AEM-zertifiziert {#aem-certified}
+## AEM-zertifiziert  {#aem-certified}
 
 Stellen Sie sicher, dass die gewünschten Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) bestanden haben.
 
 ## Technische Schulung zu AEM  {#aem-technical-training}
 
-technische Ausbildung der entsprechenden Person; zum Beispiel Entwickler, Architekten, Ingenieure und Geschäftsleute.
+Ausbildung der entsprechenden Person; z. B. Entwickler, Architekten, Ingenieure und Geschäftsleute.
 
 ## Vereinbarung zu den KPIs, die als Projektziele definiert sind {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -108,11 +107,11 @@ Neben den standardmäßigen Wartungsaufgaben für Adobe Experience Manager (AEM)
 
 Stellen Sie sicher, dass Ihr Team aus Mitarbeitern mit entsprechender Qualifikation besteht. Zu Projektteams müssen die folgenden Mitglieder zählen:
 
-* mindestens ein AEM zertifizierter Interessentenentwickler
+* mindestens ein AEM zertifizierter Lead-Entwickler
 * mindestens ein AEM zertifizierter Architekt
-* mindestens 75 % Ihrer Entwickler AEM zertifiziert;
+* mindestens 75 % Ihrer Entwickler AEM zertifiziert sind;
 
-   Dies ermöglicht es zertifizierten Entwicklern, Junior-Entwickler zu betreuen und sorgt für Wissensaustausch und Transparenz
+   Dies ermöglicht es den zertifizierten Entwicklern, Nachwuchsentwickler zu betreuen und sorgt für Wissensaustausch und Transparenz
 
 ## Architekturdiagramm {#architecture-diagram}
 
@@ -122,7 +121,7 @@ Das Architekturdiagramm ist eine grafische Darstellung der Architektur. Es zeigt
 * Ihre Prinzipien
 * Elemente und Komponenten, die Teil der Architektur sind
 
-## Architekturentwurf  {#architecture-draft}
+## Architekturentwurf {#architecture-draft}
 
 Hierbei handelt es sich um einen allgemeinen Überblick über die System- und Lösungsarchitektur. In dieser Phase ist dies ein Entwurf, der zu einem späteren Zeitpunkt überprüft und präzisiert wird.
 
@@ -209,7 +208,7 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen des Kunden. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Geschäftslösung sollte die Richtlinie die Frage beantworten: &quot;Was will das Unternehmen tun?&quot;
+Bei der Prüfung der Geschäftslösung sollte die BRD die Frage beantworten: &quot;Was will das Unternehmen tun?&quot;
 
 ## Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -534,7 +533,7 @@ Anfangsschätzungen der folgenden Elemente:
 
 ## Verfügbarkeit der Hardware zum Erfüllen der Anforderungen  {#hardware-will-be-available-to-fulfill-requirements}
 
-Bestätigung, dass alle Umgebung über die erforderliche Mindesthardware verfügen.
+Bestätigung, dass alle Umgebungen über die erforderliche Mindesthardware verfügen.
 
 ## Allgemeine Anforderungen {#high-level-requirements}
 
@@ -642,7 +641,7 @@ Wenden Sie sich an den Adobe Support, um sicherzustellen, dass der benötigte Su
 
 Vorläufige Konzepte für Entwürfe der Anwendererlebnisse.
 
-## Integrationstests  {#integration-testing}
+## Integrationstests {#integration-testing}
 
 Testen aller internen und externen Integrationen und Prüfen der Ergebnisse.
 
@@ -806,7 +805,7 @@ Stellen Sie sicher, dass die Systemtechniker und das Betriebspersonal alle Über
 
 Definieren Sie Folgendes:
 
-* bei der Erstellung von Überwachungsberichten
+* wann Überwachungsberichte erstellt werden sollten
 * An wen sollen sie übermittelt werden?
 
 ## Dokumentation der Betriebsaufgaben  {#operational-tasks-documentation}
@@ -850,7 +849,7 @@ Konzeptdokument, wie Sie sicherstellen können, dass Ihre Implementierung die Le
 
 ## Leistungsbenchmarktest  {#performance-benchmark}
 
-Der Leistungsbenchmarktest dient zur Definition von Leistungstests, Stabilitätstests und Überwachung. Dies erfolgt durch Bewertung der Leistungsmerkmale der Lösung und der Systemhardware.
+Der Leistungsbenchmarktest dient zur Definition von Leistungstests, Stabilitätstests und Überwachung. Dies geschieht durch Bewertung der Leistungsmerkmale der Lösung und der Systemhardware.
 
 ## Leistungs-KPIs {#performance-kpis}
 
@@ -952,7 +951,7 @@ AEM verwaltet mehrere Versionen von Objekten und Inhalten. Bereinigungsregeln si
 
 Definieren Sie den gewünschten Inhalt und das Format des Qualitätsberichts sowie die Häufigkeit seiner Bereitstellung.
 
-## Freigabekoordination  {#release-coordinated}
+## Freigabekoordination {#release-coordinated}
 
 Der Projektleiter koordiniert alle für die Freigabe in der Produktion notwendigen Rollen.
 
@@ -993,7 +992,7 @@ Um der immer weiter zunehmenden Größe des Repositorys entgegenzuwirken, wird e
 
 Die offizielle Anforderung, Ihr Projekt im Adobe Support-Portal einzurichten.
 
-## Dokumentation der Anforderungen {#requirements-documentation}
+## Dokumentation der Anforderungen  {#requirements-documentation}
 
 Diese Dokumentation deckt die funktionalen und nicht funktionalen Anforderungen sowie den geschätzten Aufwand ab.
 
@@ -1139,7 +1138,7 @@ Interne Mitarbeiter, die für die Verwaltung der Lösung geschult werden müssen
 
 Interne Mitarbeiter, die für die Erstellung von Inhalten in der Lösung geschult werden müssen.
 
-## Projektbeteiligte  {#stakeholders}
+## Projektbeteiligte {#stakeholders}
 
 Projektbeteiligte sind die Schlüsselpersonen und/oder Rollen, die ein erhebliches Interesse am Projekt haben. Einige von ihnen wirken am Projektbudget mit.
 
@@ -1247,7 +1246,7 @@ Die technische Spezifikation deckt (u. a.) Folgendes ab:
 
 Die Spezifikationen der erforderlichen Vorlagen. Diese sollten u. a. Details wie z. B. zu parsys, Blueprint und Vererbungszuordnung bieten.
 
-Die Spezifikationen basieren auf den Geschäftsanforderungen und Erfahrungsanforderungen.
+Die Spezifikationen basieren auf den Geschäftsanforderungen und Erlebnisanforderungen.
 
 ## Testfälle {#test-cases}
 
@@ -1322,7 +1321,7 @@ Die erforderlichen Zugriffsrechte müssen den jeweiligen Rollen gewährt werden,
 
 Definiert Folgendes:
 
-* Anwendungsfälle zum Testen der Integrationen
+* Anwendungsbeispiele zum Testen der Integrationen
 * Funktionalität im Zusammenhang mit Anwendungen von Drittanbietern
 
 ## Festlegung von Schwellenwerten  {#threshold-definition}
