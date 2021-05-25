@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: 8dc2dfb8-037f-40ae-a962-ced89dd3fdd0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 96%
 
 ---
-
 
 # Lazy-Content-Migration{#lazy-content-migration}
 
@@ -60,4 +59,4 @@ Nachfolgend finden Sie eine vollständige Liste aller in Version 6.4 eingeführt
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6=&quot;&quot;> | Verzögert | Verschiebt SRP-Cloudkonfigurationen, Community-Schlagwortkonfigurationen, bereinigt **/etc/social** und **/etc/enablement** (alle Verweise und Daten müssen angepasst werden, wenn die Lazy-Migration ausgeführt wird – es dürfen keine Anwendungsteile weiterhin von dieser Struktur abhängig sein). |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Verzögert | Bereinigt **/etc/cloudsettings** (enthält die ContextHub-Konfiguration). Die Konfiguration wird beim ersten Zugriff automatisch migriert. Für den Fall, dass die Lazy-Content-Migration zusammen mit der Aktualisierung gestartet wird, muss vor der Aktualisierung der Inhalt in **/etc/cloudsettings** über ein Paket gesichert und dann erneut installiert werden, damit die implizite Umwandlung stattfindet und das Paket nach Abschluss deinstalliert wird. |
 | `CQ64UsersTitleFixTask` | &lt; 6=&quot;&quot;> | Verzögert | Passt die alte Titelstruktur an den Titel im Benutzerprofilknoten an. |
-| `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Verzögert | Migrieren Sie Commerce-Inhalte von **/etc/commerce** zu **/var/commerce**. Während der Migration werden Inhalte verschoben und Verweise auf verschobene Inhalte aktualisiert, um den neuen Speicherort widerzuspiegeln. |
+| `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Verzögert | Migrieren Sie Commerce-Inhalte von **/etc/commerce** zu **/var/commerce**. Während der Migration werden Inhalte verschoben und Verweise auf verschobene Inhalte werden aktualisiert, um den neuen Speicherort widerzuspiegeln. |
