@@ -2,16 +2,15 @@
 title: Kaskadierende Metadaten
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '981'
 ht-degree: 95%
 
 ---
-
 
 # Kaskadierende Metadaten {#cascading-metadata}
 
@@ -19,7 +18,7 @@ In diesem Artikel wird die Definition kaskadierender Metadaten für Assets besch
 
 >[!CAUTION]
 >
->Das Kaskadieren von Metadaten wird für Inhaltsfragmente nicht unterstützt.
+>Kaskadierende Metadaten werden für Inhaltsfragmente nicht unterstützt.
 
 Beim Erfassen der Metadateninformationen eines Assets geben Benutzer Informationen in den verschiedenen verfügbaren Feldern an. Sie können bestimmte Metadatenfelder oder Feldwerte anzeigen, die von den in anderen Feldern ausgewählten Optionen abhängig sind. Solche bedingt angezeigten Metadaten werden als „kaskadierende Metadaten“ bezeichnet. Anders ausgedrückt können Sie eine Abhängigkeit zwischen einem bestimmten Metadatenfeld/-wert und einem oder mehreren Feldern und/oder dessen/deren Werten schaffen.
 
@@ -34,7 +33,7 @@ Nachfolgend finden Sie einige Anwendungsfälle, für die Sie kaskadierende Metad
 * Ändern Sie die für ein bestimmtes Feld angezeigten Optionen basierend auf dem in einem anderen Wert angegebenen Wert.
 * Legen Sie den standardmäßigen Metadatenwert in einem bestimmten Feld basierend auf dem in einem anderen Feld angegebenen Wert fest.
 
-## Erstellen kaskadierender Metadaten in AEM   {#configure-cascading-metadata-in-aem}
+## Erstellen kaskadierender Metadaten in AEM    {#configure-cascading-metadata-in-aem}
 
 Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen möchten, die auf dem ausgewählten Assettyp basieren. Beispiele
 
@@ -50,7 +49,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. (Optional) Erstellen Sie im Metadatenschema-Editor ein neues bedingtes Feld. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und den Eigenschaftenpfad an.
 
-   Um eine neue Registerkarte zu erstellen, tippen/klicken Sie auf **[!UICONTROL +]**, um eine Registerkarte hinzuzufügen, und fügen Sie dann ein Metadatenfeld hinzu.
+   Um eine neue Registerkarte zu erstellen, tippen/klicken Sie auf **[!UICONTROL +]** , um eine Registerkarte hinzuzufügen und dann ein Metadatenfeld hinzuzufügen.
 
    ![Registerkarte hinzufügen](assets/add_tab.png)
 
@@ -73,7 +72,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    >[!NOTE]
    >
-   >Wenn Sie Auswahlmöglichkeiten hinzufügen, wird beim Klicken auf das Dropdown-Feld die Benutzeroberfläche verzerrt dargestellt und das Löschsymbol für die Auswahlmöglichkeiten funktioniert nicht mehr. Klicken Sie beim Hinzufügen der Auswahlmöglichkeiten zum Dropdown-Menü nicht auf die Dropdown-Liste zurück, bevor Sie die Änderungen speichern. Wenn dieses Problem auftritt, speichern Sie das Schema und öffnen Sie es erneut, um die Bearbeitung fortzusetzen.
+   >Wenn Sie Auswahlmöglichkeiten hinzufügen, wird beim Klicken auf das Dropdown-Feld die Benutzeroberfläche verzerrt dargestellt und das Löschsymbol für die Auswahlmöglichkeiten funktioniert nicht mehr. Wenn Sie die Optionen zum Dropdown-Menü hinzufügen, klicken Sie erst wieder in das Dropdown-Menü, wenn Sie die Änderungen speichern. Wenn dieses Problem auftritt, speichern Sie das Schema und öffnen Sie es erneut, um die Bearbeitung fortzusetzen.
 
 1. (Optional) Fügen Sie die anderen erforderlichen Felder hinzu, wie z. B. Format, Codec und Dauer für Assets vom Typ „Video“.
 
