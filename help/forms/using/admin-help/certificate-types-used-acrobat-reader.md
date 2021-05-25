@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
-translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+exl-id: 8a65d9cc-33d0-4176-97e1-70ad67cbb982
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 89%
 
 ---
-
 
 # Von Acrobat Reader DC Extensions verwendete Zertifikatstypen {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
@@ -27,7 +26,7 @@ Die Zertifikatsanzeige enthält die folgenden Informationen zum Zertifikat:
 * Gültigkeitsdauer
 * Acrobat Reader DC Extensions-Verwendungsrechte
 
-## Anzeigenamen des Zertifikats {#certificate-friendly-name}
+## Anzeigenamen des Zertifikats  {#certificate-friendly-name}
 
 Der Anzeigename eines Acrobat Reader DC Extensions-Zertifikats ist eine Zeichenfolge mit den Eigenschaften des Zertifikats (siehe folgendes Beispiel):
 
@@ -35,13 +34,13 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 Die Zeichenfolge enthält folgende Elemente:
 
-**Zertifikatstyp:** Beschreibt die AEM Formularmodule, die vom Zertifikat aktiviert werden, und die Aktivierung, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
+**Zertifikatstyp:** Beschreibt die AEM Formularmodule, die vom Zertifikat aktiviert werden, und den Aktivierungsgrad, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
 
-**Bereitstellungstyp:** Gibt die vorgesehene Verwendung des Zertifikats an, z. B. &quot;Produktion&quot;. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
+**Bereitstellungstyp:** Gibt die vorgesehene Verwendung des Zertifikats an, z. B. Produktion. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
 
-**Version der Verwendungsrechte:** Beschreibt die Version des Algorithmus für Verwendungsrechte, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version steht nicht für die Version von Acrobat oder Acrobat Reader DC Extensions.
+**Version der Verwendungsrechte:** Beschreibt die Version des Verwendungsrechtealgorithmus, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version gibt nicht die Version der Acrobat- oder Acrobat Reader DC-Erweiterungen an.
 
-**Profil-Code:** Der Profil-Code ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften, z. B. P8. Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
+**Profilcode:** Der Profilcode ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften, z. B. P8. Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
 
 **Seriennummer:** Jedem von der Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen, z. B. 0002054. Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
 
@@ -226,4 +225,3 @@ Die zulässigen Acrobat Reader DC Extensions-Verwendungsrechte umfassen mindeste
 >[!NOTE]
 >
 >Acrobat Reader DC Extensions-Verwendungsrechte können von Adobe nur in bestimmten Kombinationen lizenziert werden, die zusammen funktionieren. Es ist nicht möglich, diese Funktionen einzeln zu lizenzieren. Informationen zu den möglichen Kombinationen von Verwendungsrechten erhalten Sie von Ihrem AEM Forms-Kundenbetreuer.
-
