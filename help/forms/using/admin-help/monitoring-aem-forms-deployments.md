@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: d2cd532b-4086-4553-ac26-f311da6d5ca9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 75%
 
 ---
-
 
 # Überwachung der AEM Forms-Bereitstellung {#monitoring-aem-forms-deployments}
 
@@ -24,7 +23,7 @@ Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf inter
 
 Weitere Informationen zum Überwachen von AEM Forms-Bereitstellungen finden Sie im [technischen Handbuch zur AEM Forms-Bereitstellung](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
 
-## Überwachung mithilfe von MBeans {#monitoring-using-mbeans}
+## Überwachung mithilfe von MBeans  {#monitoring-using-mbeans}
 
 AEM Forms stellt zwei registrierte MBeans bereit, die Informationen zur Navigation und statistische Informationen enthalten. Die folgenden MBeans sind die einzigen, die für die Integration und Inspektion unterstützt werden:
 
@@ -75,9 +74,9 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **MBean-Struktur**
 
-**Domänenname der Adobe:** Abhängig vom Anwendungsserver. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Domänenname der Adobe:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
 
-**ServiceType:** AdobeService ist der Name, der zur Liste aller Dienste verwendet wird.
+**ServiceType:** AdobeService ist der Name, der zum Auflisten aller Dienste verwendet wird.
 
 **AdobeServiceName:** Dienstname oder Dienst-ID.
 
@@ -89,19 +88,19 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
 
-**Durchschnittliche Aufrufzeit:** Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
+**Durchschnittliche Aufrufzeit:**  Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
 
 **Max. Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
 **Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**Anzahl der Ausnahmen:** Anzahl der Aufrufe, die zu Fehlern geführt haben.
+**Ausnahmeanzahl:** Anzahl der Aufrufe, die zu Fehlern geführt haben.
 
 **Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
 
-**Letztes Sampling Date Time:** Das Datum des letzten Aufrufs.
+**Datum des letzten Samplings:** Das Datum des letzten Aufrufs.
 
-**Zeiteinheit: Der** Standardwert ist Millisekunde.
+**Zeiteinheit:** Der Standardwert ist Millisekunde.
 
 Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
 
@@ -120,7 +119,7 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 
 **WebLogic 9.2 /10 – JVM-Start konfigurieren**
 
-1. Bearbeiten Sie die Datei &quot;startWebLogic.bat&quot;, die sich unter* [WebLogic home]*/user_projects/domains/Adobe_Live_Cycle/bin befindet.
+1. Bearbeiten Sie die Datei &quot;startWebLogic.bat&quot;, die sich unter &quot;[WebLogic home]*/user_projects/domains/Adobe_Live_Cycle/bin&quot;befindet.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
 
    ```as3
@@ -155,4 +154,3 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
    ```
 
 1. Starten Sie WebSphere neu.
-
