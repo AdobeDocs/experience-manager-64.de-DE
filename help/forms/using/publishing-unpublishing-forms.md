@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 1afef311-c1e6-48ec-ae23-dbd553a99ac6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 77%
 
 ---
-
 
 # Veröffentlichung von Formularen und Dokumenten und Veröffentlichungen rückgängig machen {#publishing-and-unpublishing-forms-and-documents}
 
@@ -51,8 +50,8 @@ Ihre adaptiven Formulare können möglicherweise einige Konfigurationen, Einstel
 
    * Benutzerdefinierte Layouts
    * Benutzerdefiniertes Erscheinungsbild
-   * CSS-Datei - als Eingabe im Dialogfeld Eigenschaften des Containers für adaptive Formulare genommen
-   * Client Library-Kategorie - wird als Eingabe im Dialogfeld Eigenschaften des Containers für adaptive Formulare verwendet
+   * CSS-Datei - wird als Eingabe im Dialogfeld &quot;Eigenschaften des Containers für adaptive Formulare&quot;verwendet
+   * Client-Bibliothekskategorie - wird als Eingabe im Dialogfeld Eigenschaften des Containers für adaptive Formulare verwendet
    * Andere Client-Bibliothek, die als Teil der adaptiven Formularvorlage enthalten sein kann.
    * Entwurfspfade
 
@@ -72,17 +71,17 @@ Ein Asset kann über folgende Status verfügen:
    1. Bewegen Sie den Mauszeiger über ein Asset und tippen Sie auf **[!UICONTROL Veröffentlichen]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Führen Sie einen der folgenden Schritte aus und tippen Sie dann auf „Veröffentlichen“:
 
-      * Wenn Sie sich in der Ansicht befinden, tippen Sie auf **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und tippen Sie auf das Asset. Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Kartenansicht befinden, tippen Sie auf **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und tippen Sie auf das Asset. Das Asset wird ausgewählt.
       * Wenn Sie sich in der Listenansicht befinden, aktivieren Sie das Kontrollkästchen eines Assets. Das Asset wird ausgewählt.
       * Tippen Sie auf ein Asset, um dessen Details anzuzeigen.
-      * Zeigen Sie die Eigenschaften eines Assets an, indem Sie auf Eigenschaften der Ansicht ![viewproperties](assets/viewproperties.png) tippen.
+      * Zeigen Sie die Eigenschaften eines Assets an, indem Sie auf Eigenschaften anzeigen ![viewproperties](assets/viewproperties.png) tippen.
 
       >[!NOTE]
       >
-      >Wählen Sie nicht mehrere Assets aus. Das Veröffentlichen mehrerer Assets auf einmal wird nicht unterstützt.
+      >Wählen Sie nicht mehrere Assets aus. Das gleichzeitige Veröffentlichen mehrerer Assets wird nicht unterstützt.
 
 
-1. Wenn der Veröffentlichungsprozess beginnt, wird ein Bestätigungsdialogfeld angezeigt, in dem alle zugehörigen Assets und Ressourcen aufgelistet sind. Tippen Sie im Dialogfeld mit zugehörigen Assets auf **[!UICONTROL Veröffentlichen]**. Das Asset wird veröffentlicht und das Dialogfeld zum Erfolg von Assets veröffentlichen wird angezeigt.
+1. Wenn der Veröffentlichungsprozess beginnt, wird ein Bestätigungsdialogfeld angezeigt, in dem alle zugehörigen Assets und Ressourcen aufgelistet sind. Tippen Sie im Dialogfeld mit den zugehörigen Assets auf **[!UICONTROL Veröffentlichen]**. Das Asset wird veröffentlicht und das Dialogfeld Asset-Erfolg veröffentlichen wird angezeigt.
 
    >[!NOTE]
    >
@@ -100,7 +99,7 @@ Ein Asset kann über folgende Status verfügen:
 
    Nach dem Veröffentlichen eines Assets können Sie Forms Portal nutzen, um alle Assets auf einer Webseite anzuzeigen. Weitere Informationen finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md).
 
-## Alle Correspondence Management-Assets veröffentlichen {#publish-all-the-correspondence-management-assets}
+## Alle Correspondence Management-Assets veröffentlichen  {#publish-all-the-correspondence-management-assets}
 
 Mit AEM Forms können Sie alle Correspondence Management-Assets auf einem Server in ein und demselben Vorgang veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten.
 
@@ -123,7 +122,7 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
 
    >[!NOTE]
    >
-   >Nachdem der Veröffentlichungsvorgang ausgelöst wurde, kann er nicht abgebrochen werden. Erstellen, löschen, ändern oder veröffentlichen Sie während des Veröffentlichungsvorgangs keine Assets oder starten Sie den Vorgang &quot;Alle Correspondence Management-Assets exportieren&quot;.
+   >Nachdem der Veröffentlichungsvorgang ausgelöst wurde, kann er nicht abgebrochen werden. Außerdem sollten Sie während des Veröffentlichungsvorgangs keine Assets erstellen, löschen, ändern oder veröffentlichen oder den Vorgang &quot;Alle Correspondence Management-Assets exportieren&quot;starten.
 
 ## Formulare und Dokumente veröffentlichen und Veröffentlichung rückgängig machen {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -131,7 +130,7 @@ Mit AEM Forms können Sie die Veröffentlichung von Formularen und Dokumenten un
 
 Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröffentlichung bzw. das Rückgängigmachen der Veröffentlichung bei Formular- und Dokument-Assets zu planen:
 
-1. Wählen Sie ein Asset aus und tippen Sie auf **[!UICONTROL Eigenschaften der Ansicht]**. Die Seite mit den Metadateneigenschaften wird geöffnet.
+1. Wählen Sie ein Asset aus und tippen Sie auf **[!UICONTROL Eigenschaften anzeigen]**. Die Seite mit den Metadateneigenschaften wird geöffnet.
 1. Tippen Sie auf der Seite &quot;Metadateneigenschaften&quot;auf **[!UICONTROL Erweitert]** und dann auf **[!UICONTROL Bearbeiten]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Wählen Sie in den Feldern **[!UICONTROL Veröffentlichungszeit]** und **[!UICONTROL Zeit für Rückgängigmachen der Veröffentlichung]** das Datum und die Uhrzeit aus.
 
@@ -145,10 +144,10 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
    1. Bewegen Sie den Mauszeiger über ein Asset und tippen Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]** ![Veröffentlichung rückgängig machen](assets/unpublish.png).
    1. Führen Sie einen der folgenden Schritte aus und tippen Sie dann auf „Veröffentlichung aufheben“:
 
-      * Wenn Sie sich in der Ansicht befinden, tippen Sie auf **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und tippen Sie auf das Asset. Das Asset wird ausgewählt.
-      * Wenn Sie sich in der Ansicht &quot;Liste&quot;befinden, halten Sie den Mauszeiger über ein Asset und tippen Sie auf ![Auswahlfeld](assets/selectassetcheckmark.png). Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Kartenansicht befinden, tippen Sie auf **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und tippen Sie auf das Asset. Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Listenansicht befinden, bewegen Sie den Mauszeiger über ein Asset und tippen Sie auf ![selectAssetcheckmark](assets/selectassetcheckmark.png) . Das Asset wird ausgewählt.
       * Tippen Sie auf ein Asset, um dessen Details anzuzeigen.
-      * Zeigen Sie die Eigenschaften eines Assets an, indem Sie auf Eigenschaften der Ansicht ![viewproperties](assets/viewproperties.png) tippen.
+      * Zeigen Sie die Eigenschaften eines Assets an, indem Sie auf Eigenschaften anzeigen ![viewproperties](assets/viewproperties.png) tippen.
 
 1. Wenn Sie der Prozess zum Rückgängigmachen der Veröffentlichung startet, wird ein Bestätigungsdialogfeld angezeigt. Tippen Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 
@@ -164,7 +163,7 @@ Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie sie
 >
 >Setzen Sie einen Brief nicht auf einen zuletzt veröffentlichten Status zurück, wenn ein abhängiges Asset, das in diesem veröffentlichten Brief verwendet wird, aus dem System gelöscht wird.
 
-1. Wählen Sie ein Asset aus und tippen Sie auf **[!UICONTROL Zurück zu zuvor veröffentlichter Version]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Wählen Sie ein Asset aus und tippen Sie auf **[!UICONTROL Zurück zur zuvor veröffentlichten Version]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
 1. Bevor das Asset wiederhergestellt wird, wird ein Bestätigungsdialogfeld angezeigt. Tippen Sie auf **[!UICONTROL Revert]**.
 
    Das Asset bzw. der Brief wird auf seine zuvor veröffentlichte Version zurückgesetzt.
@@ -179,13 +178,13 @@ Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie sie
 
    >[!NOTE]
    >
-   >Die Option &quot;Löschen&quot;ist auch verfügbar, wenn Sie auf ein Asset tippen, um die Details anzuzeigen, oder wenn Sie die Eigenschaften eines Assets durch Tippen auf die Ansicht Eigenschaften ![viewproperties](assets/viewproperties.png) anzeigen.
+   >Die Option Löschen ist auch verfügbar, wenn Sie Asset-Details durch Tippen auf ein Asset anzeigen oder die Eigenschaften eines Assets durch Tippen auf Eigenschaften anzeigen ![Darstellungseigenschaften](assets/viewproperties.png) anzeigen.
 
 1. Bevor das Asset gelöscht wird, wird ein Bestätigungsdialogfeld angezeigt. Tippen Sie auf **[!UICONTROL Löschen]**.
 
    >[!NOTE]
    >
-   >Nur das ausgewählte Asset wird gelöscht, nicht jedoch die von ihm abhängigen Assets. Um Verweise auf ein Asset zu überprüfen, tippen Sie auf ![Verweise](assets/references.png) und wählen Sie dann ein Asset aus.
+   >Nur das ausgewählte Asset wird gelöscht, nicht jedoch die von ihm abhängigen Assets. Um die Verweise eines Assets zu überprüfen, tippen Sie auf ![Verweise](assets/references.png) und wählen Sie dann ein Asset aus.
    >
    >Wenn Sie versuchen, ein Asset zu löschen, das einem anderen Asset untergeordnet ist, kann es nicht gelöscht werden. Um ein solches Asset löschen, entfernen Sie seine Verweise aus anderen Asset und wiederholen Sie den Vorgang.
 
@@ -203,4 +202,3 @@ Authentifizierung für Ihre Formulare aktivieren
 1. Fügen Sie im daraufhin angezeigten Dialogfeld „Authentifizierungsdienst“ mithilfe der Schaltfläche **+** die gewünschten Pfade hinzu.
 
    Wenn Sie einen Pfad hinzufügen, wird der Authentifizierungsdienst für Formulare unterdiesem Pfad aktiviert.
-
