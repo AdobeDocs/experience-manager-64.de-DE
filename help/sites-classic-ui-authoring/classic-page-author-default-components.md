@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 92%
 
 ---
 
-
-# Komponenten{#components}
+# Komponenten {#components}
 
 Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
@@ -35,9 +34,9 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
 * [Komponenten für die Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind in erster Linie in den Gruppen **Allgemein**, **Spalten** und **Forms** enthalten.
+   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind hauptsächlich in den Gruppen **Allgemein**, **Spalten** und **Forms** enthalten.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)
+* [E-Commerce](/help/sites-administering/ecommerce.md)
 
    
 Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten, die in der Gruppe **Commerce** enthalten sind. Die tatsächliche Nutzung kann von der verwendeten Commerce-Engine abhängig sein.
@@ -45,4 +44,3 @@ Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten, die in der 
 ## Konfigurieren von Komponenten mit dem Designmodus {#using-design-mode-to-configure-components}
 
 Neben den Komponenten, auf die Autoren in einer Standardinstallation über den Sidekick zugreifen können, sind auch verschiedene andere Komponenten verfügbar. Mit dem [Designmodus](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) können Sie diese Komponenten aktivieren/deaktivieren und Parameter für spezielle Komponenten bearbeiten.
-
