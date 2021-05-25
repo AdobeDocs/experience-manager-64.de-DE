@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 
 ---
 
-
-# Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister {#adding-custom-action-on-form-lister-items}
+# Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister  {#adding-custom-action-on-form-lister-items}
 
 In AEM Forms können Sie eine Portalseite erstellen, in der die verfügbaren Formulare aufgelistet werden. Standardmäßig können Sie auf einer Portalseite nach Formularen suchen und sie auflisten. Sie können Formulare öffnen, um ihre Daten einzutragen und zu versenden. Bei Formularen, die auf einer Portalseite gelistet sind, stehen für den sofortigen Einsatz nur Render-Aktionen zur Verfügung. Weitere Informationen über die verfügbaren Aktionen auf einer Portalseite finden Sie unter [Erstellen einer Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md).
 
@@ -51,4 +50,3 @@ Sie können Ihrer benutzerdefinierten Vorlage ähnliche Aktionen hinzufügen. We
 Nachdem Sie die Änderungen an der Vorlage vorgenommen haben, enthält die Portal-Beispielseite, wie nachfolgend in der Abbildung dargestellt, eine Schaltfläche, um die Verknüpfung des Formulars per E-Mail zu senden.
 
 ![email](assets/email.png)
-
