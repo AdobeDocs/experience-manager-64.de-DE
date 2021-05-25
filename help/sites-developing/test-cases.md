@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
-translation-type: tm+mt
-source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 77%
 
 ---
-
 
 # Definieren von Testfällen{#defining-your-test-cases}
 
@@ -40,7 +39,7 @@ Die Tests sollten eindeutig definieren:
 
 Die Aussicht, Testfälle zu automatisieren, ist offensichtlich attraktiv, da dadurch repetititve Aufgaben eliminiert werden können.
 
-## Manuelle und automatisierte Tests {#manual-versus-automated-tests}
+## Manuelle und automatisierte Tests  {#manual-versus-automated-tests}
 
 Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, daher sollten bestimmte Aspekte berücksichtigt werden:
 
@@ -49,17 +48,17 @@ Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, dahe
 * Nur tatsächlich praktikabel für große Projekte.
 * Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Freigabeplan generiert werden.
 
-## Testen bestimmter Aspekte {#testing-specific-aspects}
+## Testen spezifischer Aspekte {#testing-specific-aspects}
 
 Beim Testen AEM einige spezifische Details von besonderem Interesse sind:
 
 Autor- und Veröffentlichungsumgebung
 
-Obwohl in [Umgebung](/help/sites-developing/the-basics.md#environments) behandelt, lohnt es sich, einen entscheidenden Faktor für AEM in Bezug auf Tests hervorzuheben.
+Obwohl dies unter [Umgebungen](/help/sites-developing/the-basics.md#environments) behandelt wird, ist es sinnvoll, einen entscheidenden AEM in Bezug auf Tests hervorzuheben.
 
 Sie müssen AEM als zwei Anwendungen betrachten:
 
-* die Umgebung **Autor**
+* die Umgebung **Author**
 Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
 Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
 * die **Veröffentlichungsumgebung**
@@ -88,13 +87,13 @@ Bei den meisten Projekte installieren Sie den Dispatcher für Caching und Lasten
 
 Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackboxbasis vorgenommen werden. Die zu prüfenden Hauptaspekte sind:
 
-* **Genauigkeit**; stellen Sie sicher, dass Inhaltsaktualisierungen vom Besucher der Website gesehen werden.
-* **Kontinuität**; stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
-* **** ClusterCluster werden verwendet, um Folgendes bereitzustellen:
+* **Genauigkeit**; stellen sicher, dass der Besucher der Website Inhaltsaktualisierungen sieht.
+* **Kontinuität**; Stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
+* **** ClusterClusters werden verwendet, um Folgendes bereitzustellen:
    * ****
-FailoverWenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
-   * **Der**
-PerformanceLoad-Balancing mit vollständigem Failover erhöht die Leistung eines Clusters.
+FailoverWenn ein Server fehlschlägt, übernehmen andere Server im Cluster die Verarbeitung.
+   * ****
+Leistungs-Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
 
 Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werden, um den korrekten Ablauf der Konfiguration zu bestätigen.
 
