@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 6911c8e3-b12c-466e-8255-5dcd09557d35
-translation-type: tm+mt
-source-git-commit: 4e5d3c0ae71f601bcf39fa768c8b5ac86decc1eb
+exl-id: dbde3cb6-4132-4462-bd4c-0e4439110e2e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 78%
 
 ---
-
 
 # Target-Integration mit Experience Fragments{#target-integration-with-experience-fragments}
 
@@ -30,10 +29,10 @@ Sie können in Adobe Experience Manager (AEM) erstellte [Experience Fragments](/
 
 Verschiedene Aktionen sind erforderlich:
 
-1. Sie müssen AEM mit Target integrieren. Weitere Informationen finden Sie unter [Integration mit Adobe Target](/help/sites-administering/target.md).
+1. Sie müssen AEM mit Target integrieren. Weitere Informationen finden Sie unter [Integration mit Adobe Target](/help/sites-administering/target.md) .
 1. Experience Fragments werden aus der Autoreninstanz exportiert. Daher müssen Sie in der Autoreninstanz den [Link Externalizer konfigurieren](/help/sites-developing/externalizer.md), um sicherzustellen, dass alle Links für die Veröffentlichungsinstanz externalisiert sind.
 
-## hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
+## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
 
 Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen:
 
@@ -53,7 +52,7 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 
 1. Klicken Sie auf **Speichern und schließen**.
 
-## Exportieren eines Experience Fragments in Target {#exporting-an-experience-fragment-to-target}
+## Exportieren eines Experience Fragments in Target  {#exporting-an-experience-fragment-to-target}
 
 >[!NOTE]
 >
@@ -80,7 +79,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
 
    >[!NOTE]
    >
-   >Durch Auswahl von** Veröffentlichen** wird das Erlebnisfragment sofort veröffentlicht und an die Zielgruppe gesendet.
+   >Wenn Sie &quot;Veröffentlichen&quot;auswählen, wird das Experience Fragment sofort veröffentlicht und an Target gesendet.
 
 1. Tippen/klicken Sie im Bestätigungsdialogfeld auf **OK**.
 
@@ -92,7 +91,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
 
 ## Verwenden Ihrer Experience Fragments in Target  {#using-your-experience-fragments-in-target}
 
-Nach Durchführung der vorherigen Aufgaben wird das Erlebnisfragment auf der Seite &quot;Angebot&quot;in der Zielgruppe angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
+Nach dem Ausführen der vorherigen Aufgaben wird das Experience Fragment auf der Seite Angebote in Target angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
 
 ## Löschen eines bereits nach Target exportierten Experience Fragments {#deleting-an-experience-fragment-already-exported-to-target}
 
@@ -103,12 +102,10 @@ So vermeiden Sie solche Situationen:
 * Wenn das Experience Fragment derzeit nicht in einer Aktivität verwendet wird, kann der Benutzer das Fragment ohne Warnmeldung in AEM löschen.
 * Wenn das Experience Fragment derzeit von einer Aktivität in Target verwendet wird, warnt eine Fehlermeldung den AEM-Benutzer vor möglichen Konsequenzen, die das Löschen des Fragments für die Aktivität nach sich zieht.
 
-   Die Fehlermeldung in AEM verbietet dem Benutzer nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Erlebnisfragment gelöscht wird:
+   Die Fehlermeldung in AEM verbietet dem Benutzer nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Experience Fragment gelöscht wird:
 
-   * Das Angebot Zielgruppe mit AEM Erlebnisfragment zeigt möglicherweise unerwünschtes Verhalten
+   * Das Target-Angebot mit AEM Experience Fragment kann unerwünschtes Verhalten zeigen
 
-      * Das Angebot wird wahrscheinlich weiterhin gerendert, da der Erlebnisfragment-HTML in die Zielgruppe verschoben wurde
-      * Verweise im Erlebnisfragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
-   * Selbstverständlich sind keine weiteren Änderungen am Erlebnisfragment möglich, da das Erlebnisfragment nicht mehr in AEM existiert.
-
-
+      * Das Angebot wird wahrscheinlich weiterhin gerendert, da die Experience Fragment-HTML an Target gesendet wurde
+      * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
+   * Natürlich sind alle weiteren Änderungen am Experience Fragment nicht möglich, da das Experience Fragment nicht mehr in AEM vorhanden ist.
