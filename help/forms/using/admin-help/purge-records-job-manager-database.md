@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: be2e2a4b-5aac-4612-81b6-b4bbb3036d77
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 100%
 
 ---
-
 
 # Job Manager-Datenbank um Aufzeichnungen bereinigen {#purge-records-from-the-job-manager-database}
 
@@ -68,4 +67,3 @@ Weitere Informationen zu aktuell geplanten Bereinigungen werden im Informationsf
    >Wenn Sie ein Startdatum festlegen, das in der Vergangenheit liegt, wird anhand des angegebenen Datums von AEM Forms das nächste logische Startdatum errechnet. Wenn Sie beispielsweise planen, dass die Auftragsbereinigung ab dem 7. April wöchentlich ausgeführt werden soll und heute der 9. April ist, wird die erste Bereinigung am 14. April ausgeführt.
 
 1. Klicken Sie auf „Zeitplaner starten“. Alle vorherigen geplanten Einstellungen des Zeitplaners werden durch die neuen Einstellungen ersetzt.
-
