@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: af6c383b-f8fd-442c-8fc5-3cdd40657c6a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 94%
 
 ---
-
 
 # Konfigurieren von Komponenten im Designmodus{#configuring-components-in-design-mode}
 
@@ -64,7 +63,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Konfigurieren des Designs von Komponenten {#configuring-the-design-of-a-component}
+## Konfigurieren des Designs von Komponenten  {#configuring-the-design-of-a-component}
 
 Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Im folgenden Beispiel wird die **Bildkomponente** gezeigt:
 
@@ -74,7 +73,7 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 
 1. Sie können das Design von Komponenten konfigurieren.
 
-   Wenn Sie beispielsweise auf **Bearbeiten** in der Image-Komponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
+   Wenn Sie beispielsweise auf **Bearbeiten** in der Bildkomponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -83,4 +82,3 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 1. Der Sidekick wird im Designmodus minimiert. Durch Klicken auf den Pfeil wird der Sidekick maximiert, und die Ansicht kehrt zum Bearbeitungsmodus zurück.
 
    ![](do-not-localize/sidekick-collapsed-1.png)
-
