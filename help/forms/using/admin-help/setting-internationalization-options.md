@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: 1fb51e4a-e0e8-4a58-8877-98337fe29fac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
-
 
 # Internationalisierungsoptionen festlegen{#setting-internationalization-options}
 
@@ -28,11 +27,10 @@ Sie können das Gebietsschema angeben, dass beim Wiedergeben eines PDF-Formulars
 1. Wählen Sie unter „Internationalisierung“ in der Liste „Sprachen“ das Gebietsschema, das zum Wiedergeben eines Formulars verwendet wird. Der Standardwert ist „Deutsch (Deutschland)“.
 1. Klicken Sie auf Speichern.
 
-## Den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird {#specify-the-character-set-used-to-encode-the-output-stream}
+## Den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird  {#specify-the-character-set-used-to-encode-the-output-stream}
 
 1. Wählen Sie unter „Internationalisierung“ in der Liste „Zeichensatz“ einen Zeichensatz aus. Diese Einstellung hängt von der verwendeten API ab, entweder „renderHTMLForm“ oder „renderPDFForm“. Um einen anderen Zeichensatz als die aufgelisteten anzugeben, wählen Sie „Benutzerdefiniert“ aus und geben Sie in dem angezeigten Feld einen kodierten Wert ein.
 
    Bei HTML-Transformationen unterstützt AEM Forms Zeichenkodierungswerte, die vom Paket `java.nio.charset` definiert werden. Wenn sFormPreference auf PDFForm festgelegt ist, werden nur bestimmte Zeichensätze unterstützt. Der Zeichensatz muss ein gültiger kanonischer Name sein. Der Standardwert ist „ISO-8859-1“.
 
 1. Klicken Sie auf Speichern.
-
