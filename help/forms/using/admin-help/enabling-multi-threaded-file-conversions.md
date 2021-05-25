@@ -10,20 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f0441588-7c16-40ab-841f-e89576a0d292
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
 
-
 # Mehrprozessgestützte Dateikonvertierungen aktivieren {#enabling-multi-threaded-file-conversions}
 
 In PDF Generator haben Sie die Möglichkeit, mehrprozessgestützte Dateikonvertierungen für bestimmte Dateitypen zu aktivieren. Mehrprozessgestützte Dateikonvertierungen verbessern die Leistung von PDF Generator, indem sie es ermöglichen, mehrere Konvertierungen gleichzeitig auszuführen.
 
-## Mehrprozessgestützte Dateikonvertierungen für OpenOffice-, Word- und PowerPoint-Dokumente aktivieren {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
+## Mehrprozessgestützte Dateikonvertierungen für OpenOffice-, Word- und PowerPoint-Dokumente aktivieren  {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
 
 Standardmäßig kann PDF Generator nur ein OpenOffice-, Microsoft Word- oder PowerPoint-Dokument gleichzeitig konvertieren. Wenn Sie mehrprozessgestützte Konvertierungen aktivieren, kann PDF Generator mehr als ein Dokument gleichzeitig konvertieren. PDF Generator startet mehrere Instanzen von OpenOffice oder von PDFMaker (wird verwendet, um die Word- und PowerPoint-Konvertierungen auszuführen).
 
@@ -117,4 +116,3 @@ Wenn Sie OpenOffice, Microsoft Word oder Microsoft PowerPoint auf einem System u
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Benutzerkonten“.
 1. Klicken Sie auf den Benutzernamen, geben Sie das neue Kennwort ein und bestätigen Sie es. Dieses Kennwort muss mit dem Systemkennwort des Benutzers übereinstimmen.
-
