@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Konfiguration
+exl-id: 98f7a6b1-8b16-410c-872c-4af7bc4bcc64
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 85%
 
 ---
-
 
 # Artikel mit Anleitungen für die Konfiguration{#configuration-how-to-articles}
 
@@ -29,4 +28,3 @@ In den folgenden Abschnitten erfahren Sie, wie Sie bestimmte Bereitstellungsaufg
 * [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 
 * [Anleitung zum Entfernen von Funktionen vom Startbildschirm](/help/sites-developing/customizing-the-welcome-console.md)
 * [Anleitung zur Deaktivierung der Standortverfolgung](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html) 
-
