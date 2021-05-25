@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Korrespondenzverwaltung
+exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 78%
 
 ---
-
 
 # Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal {#integrating-create-correspondence-ui-with-your-custom-portal}
 
@@ -24,7 +23,7 @@ ht-degree: 78%
 
 In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
-## URL-basierter Aufruf {#url-based-invocation}
+## URL-basierter Aufruf  {#url-based-invocation}
 
 Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Clusterportal aufzurufen, ist die URL mit folgenden Anforderungsparametern vorzubereiten:
 
@@ -33,8 +32,8 @@ Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Cluster
 * die URL für die XML-Datei, die aus der gewünschten Datenquelle (unter Verwendung des cmDataUrl-Parameters) erfasst wurde
 
 Beispielsweise würde das benutzerdefinierte Portal die URL als\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, was die href eines Links im Portal sein könnte.\
-Wenn im Portal der Name der Briefvorlage vorhanden ist, kann die URL\
+`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, das die href eines Links im Portal sein könnte.\
+Wenn das Portal den Namen der Briefvorlage enthält, kann die URL\
 `https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
 
 >[!NOTE]
@@ -47,7 +46,7 @@ Wenn im Portal der Name der Briefvorlage vorhanden ist, kann die URL\
 
 ## Auf Daten basierter Inline-Aufruf  {#inline-data-based-invocation}
 
-Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;aufzurufen, besteht darin, einfach die URL unter `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html` zu drücken und gleichzeitig die Parameter und Daten zu senden, um die Anwendung &quot;Korrespondenz erstellen&quot;als Anforderung einer POST aufzurufen (diese werden vom Endbenutzer ausgeblendet). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
+Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;aufzurufen, besteht darin, einfach die URL unter `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html` zu drücken und gleichzeitig die Parameter und Daten zu senden, um die Anwendung &quot;Korrespondenz erstellen&quot;als POST-Anfrage aufzurufen (diese werden vom Endbenutzer ausgeblendet). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
 
 ### Parameter für das Festlegen des Briefs  {#parameters-for-specifying-letter}
 
@@ -61,12 +60,12 @@ Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz ers
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Zeichenfolge</td> 
-   <td>Der Bezeichner für die Briefinstanz.</td> 
+   <td>Die Kennung für die Briefinstanz.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
    <td>Zeichenfolge</td> 
-   <td><p>Der Bezeichner für die Briefvorlage. </p> <p>Wenn mehrere CM-Briefe mit demselben Namen auf einem Server vorhanden sind, wird bei Verwendung des Parameters „cmLetterName“ in einer URL der Fehler „Mehrere Buchstaben mit dem Namen vorhanden“ ausgegeben. Verwenden Sie in diesem Fall den Parameter „cmLetterId“ anstelle von „cmLetterName“ in der URL.</p> </td> 
+   <td><p>Die Kennung für die Briefvorlage. </p> <p>Wenn mehrere CM-Briefe mit demselben Namen auf einem Server vorhanden sind, wird bei Verwendung des Parameters „cmLetterName“ in einer URL der Fehler „Mehrere Buchstaben mit dem Namen vorhanden“ ausgegeben. Verwenden Sie in diesem Fall den Parameter „cmLetterId“ anstelle von „cmLetterName“ in der URL.</p> </td> 
   </tr>
   <tr>
    <td>cmLetterId</td> 
@@ -129,4 +128,4 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
  </tbody>
 </table>
 
-Wenn Sie das HTTP- oder cq-Protokoll für cmDataURL verwenden, sollte die URL von http/cq anonym zugänglich sein.
+Wenn Sie das HTTP- oder CQ-Protokoll für cmDataURL verwenden, sollte die URL von http/cq anonym zugänglich sein.
