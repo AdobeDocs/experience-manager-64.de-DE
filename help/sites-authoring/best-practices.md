@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 80%
 
 ---
-
 
 # Best Practices{#best-practices}
 
@@ -30,9 +29,9 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md) 
-* [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md) 
-* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
+* [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
+* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
 
 Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
@@ -55,7 +54,7 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
   <tr>
    <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best Practices für Dynamic Imaging </a></td> 
-   <td><p>Beschreibt, wie Sie ein Bild scharfzeichnen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität optimieren können, wenn Sie die Dynamic Media-Funktionalität verwenden oder mit Dynamic Media integrieren.</p> </td> 
+   <td><p>Beschreibt, wie Sie ein Bild schärfen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität am besten optimieren können, wenn Sie die Dynamic Media-Funktion verwenden oder mit Dynamic Media integrieren.</p> </td> 
   </tr>
   <tr>
    <td>Mehrsprachige Assets</td> 
@@ -71,8 +70,8 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 |  |  |  |
 |---|---|---|
-| Authoring-Werkzeuge | [Autorenumgebung und Tools](/help/sites-authoring/author-environment-tools.md)  | Bietet eine Übersicht über die Werkzeuge zum Erstellen von Seiten. |
-| Seiten organisieren | [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md) | Bietet eine Übersicht darüber, wie Sie Ihre Seiten am besten organisieren können, einschließlich Benennungskonventionen. |
+| Authoring-Tools | [Autorenumgebung und Tools](/help/sites-authoring/author-environment-tools.md)  | Bietet einen Überblick über die Tools, die zum Erstellen von Seiten verwendet werden. |
+| Organisieren von Seiten | [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md) | Bietet einen Überblick darüber, wie Sie Ihre Seiten am besten organisieren können, einschließlich Namenskonventionen. |
 
 ## Formulare {#forms}
 
