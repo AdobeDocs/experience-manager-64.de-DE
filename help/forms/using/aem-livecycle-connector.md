@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 95%
 
 ---
 
-
-# Verbinden von AEM Forms mit Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
+# Verbinden von AEM Forms mit Adobe LiveCycle  {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector ermöglicht unterbrechungsfreies Abrufen von Adobe LiveCycle ES4 Document Services aus AEM-Web-Apps und -Workflows. LiveCycle stellt einen Rich-Client-SDK bereit, der es Clientanwendungen ermöglicht, die Dienste von LiveCycle mit Java-APIs zu starten. AEM LiveCycle Connector vereinfacht die Verwendung dieser APIs innerhalb der OSGi-Umgebung.
 
@@ -32,7 +31,7 @@ AEM LiveCycle Connector ist Teil des [AEM Forms-Add-On-Pakets](/help/forms/using
 
 Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigsten erläutert:
 
-* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, AEM Beginn mit folgender JVM
+* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn Sie möchten, dass LiveCycle und AEM über HTTPS kommunizieren, starten Sie AEM mit der folgenden JVM
 
    ```
    argument 
@@ -45,7 +44,7 @@ Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigs
 * **Kennwort** – gibt das Kennwort an.
 * **Dienstname** – gibt die Dienste an, die mit den Benutzeranmeldedaten aus den Feldern für Benutzernamen und Kennwort gestartet werden. Standardmäßig werden beim Starten von LiveCycle-Diensten keine Benutzerinformationen weitergegeben.
 
-## Starten von Document Services {#starting-document-services}
+## Starten von Document Services  {#starting-document-services}
 
 Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java API, Webdienste, Remoting und REST starten. Bei Java-Clients kann die Anwendung LiveCycle SDK verwenden. Das LiveCycle SDK stellt eine Java-API für den ferngesteuerten Start dieser Dienste zur Verfügung. Um beispielsweise ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, startet der Client GeneratePDFService. Der Aufruf wird mittels folgender Schritte ausgeführt:
 
@@ -55,7 +54,7 @@ Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java AP
 
 AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als OSGi-Dienste offengelegt werden, auf die über standardmäßige OSGi-Methoden zugegriffen werden kann. LiveCycle Connector umfasst die folgenden Funktionen:
 
-* Client-Instanzen als OSGi-Dienst: Die als OSGI-Pakete verpackten Clients werden im Abschnitt [Dokument Services-Liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
+* Client-Instanzen als OSGi-Dienst: Die als OSGI-Bundles verpackten Clients sind im Abschnitt [Document Services list](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
 * Weitergabe von Benutzerinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
@@ -117,7 +116,7 @@ Um einen angezeigten Dienst aus AEM zu starten, führen Sie folgende Schritte au
                );
    ```
 
-   Im obigen Code-Fragment wird die createPDF-API von GeneratePdfServiceClient gestartet, um ein Dokument das PDF-Format zu konvertieren. Auf einer JSP-Seite können Sie einen ähnlichen Aufruf mithilfe des folgenden Codes durchführen. Der Hauptunterschied ist der folgende Code, der Sling ScriptHelper verwendet, um auf GeneratePdfServiceClient zuzugreifen.
+   Im obigen Code-Fragment wird die createPDF-API von GeneratePdfServiceClient gestartet, um ein Dokument das PDF-Format zu konvertieren. Auf einer JSP-Seite können Sie einen ähnlichen Aufruf mithilfe des folgenden Codes durchführen. Der Hauptunterschied besteht darin, dass der folgende Code Sling ScriptHelper verwendet, um auf den GeneratePdfServiceClient zuzugreifen.
 
    ```java
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
@@ -161,7 +160,7 @@ Für nahezu jeden Document Service in LiveCycle ist eine Authentifizierung erfor
 
 Die LiveCycle Client SDK-Konfiguration enthält eine Einstellung für Dienstnamen. Diese Konfiguration ist eine Liste der Dienste, für die die Aufruflogik Administratorberechtigungen für den sofortigen Einsatz verwendet. Wenn Sie beispielsweise DirectoryManager-Dienste (Teil der User Management-API) zur Liste hinzufügen, kann jeder Client-Code den Dienst direkt verwenden und die Aufrufebene gibt die konfigurierten Benutzerdaten automatisch im Rahmen der an den LiveCycle-Server gesendeten Anfrage weiter.
 
-### RunAsManager  {#runasmanager}
+### RunAsManager {#runasmanager}
 
 Als Teil der Integration wird ein neuer RunAsManager-Dienst zur Verfügung gestellt. Dieser ermöglicht es Ihnen, die zu verwendenden Anmeldedaten programmgesteuert zu kontrollieren, wenn ein Aufruf zum LiveCycle-Server erfolgt.
 
