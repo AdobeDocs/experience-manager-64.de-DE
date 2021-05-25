@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 95%
 
 ---
-
 
 # Anmerkungen beim Bearbeiten einer Seite{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!NOTE]
 >
->Je nach Ihren Anforderungen können Sie auch einen Arbeitsablauf entwickeln, um Benachrichtigungen beim Hinzufügen, Aktualisieren oder Löschen von Anmerkungen zu senden.
+>Je nach Ihren Anforderungen können Sie auch einen Workflow entwickeln, um Benachrichtigungen zu senden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
 
 ## Anmerkungen {#annotations}
 
@@ -53,7 +52,7 @@ Sie können die Anmerkung an eine neue Position auf der Seite verschieben. Klick
 
 Anmerkungen (einschließlich zugehöriger Zeichnungen) sind auch in allen Kopier-, Ausschneide- oder Löschvorgängen enthalten, die in dem Absatz ausgeführt werden, mit dem sie verbunden sind. Bei Kopier- oder Ausschneidevorgängen wird die Position der Anmerkung (und der zugehörigen Zeichnungen) in Relation zu dem ursprünglichen Absatz beibehalten.
 
-Die Größe der Anmerkung kann auch durch Ziehen der unteren rechten Ecke erhöht oder verringert werden.
+Die Größe der Anmerkung kann auch erhöht oder verringert werden, indem Sie die untere rechte Ecke ziehen.
 
 Aus Gründen der Nachverfolgung werden in der Fußzeile der Benutzer, der die Anmerkung erstellt hat, sowie das Datum angegeben. Nachfolgende Autoren können dieselbe Anmerkung bearbeiten (die Fußzeile wird dann aktualisiert) oder eine neue Anmerkung für denselben Absatz erstellen.
 
@@ -107,4 +106,3 @@ Zeichnungen sind eine Funktion von Anmerkungen, über die Sie einfache Liniengra
 
 * Wenn Sie einen Absatz verschieben oder kopieren, werden auch alle damit verbundenen Anmerkungen und deren Zeichnungen verschoben oder kopiert; ihre Position in Relation zu dem Absatz bleibt gleich.
 * Wenn Sie eine Anmerkung löschen, werden auch alle Zeichnungen gelöscht, die mit dieser Anmerkung verbunden sind.
-
