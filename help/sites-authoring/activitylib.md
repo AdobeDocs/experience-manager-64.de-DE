@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
-translation-type: tm+mt
-source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
-
 
 # Verwalten von Aktivitäten {#managing-activities}
 
@@ -75,7 +74,7 @@ Wenn Sie mithilfe der Aktivitätskonsole eine Marke erstellen, erscheint diese e
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Aktivitäten“ und „Angebote“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**. Die Marke erscheint nun in der Aktivitätskonsole.
 
-## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole     {#adding-editing-an-activity-using-the-activities-console}
+## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole      {#adding-editing-an-activity-using-the-activities-console}
 
 Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität, um Ihre Marketinganstrengungen auf bestimmte Zielgruppen abzustimmen. Beim Erstellen oder Bearbeiten von Aktivitäten werden folgende Daten festgelegt:
 
@@ -83,7 +82,7 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität,
 * **Targeting-Engine:** Entweder [AEM](/help/sites-authoring/personalization.md#aem) oder [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) als Engine für zielgerichtete Inhalte.
 
 * **Auswählen einer Target-Konfiguration:** (Nur Adobe Target) Die Cloud-Konfiguration, mit der diese Aktivität eine Verbindung zu Adobe Target herstellen soll. Diese Option wird nur angezeigt, wenn Adobe Target für die Targeting-Engine ausgewählt wurde.
-* **Aktivität-Typ:** Der Aktivitäten-Typ - A/B-Test oder Erlebnis-Targeting
+* **Aktivitätstyp:** Der Aktivitätstyp - A/B-Test oder Erlebnis-Targeting
 * **Zielsetzung:** (Optional) Eine Beschreibung der Aktivität.
 * **Erlebnisse:** Zuordnungen zwischen Zielgruppennamen und den Marketingsegmenten, die Sie als Ziel auswählen.
 * **Traffic-Anteile**: wurde A/B-Test ausgewählt, können Sie festlegen, welcher Anteil des Traffics (in Prozent) an die verschiedenen Erlebnisse weitergeleitet wird.
@@ -111,7 +110,7 @@ So fügen Sie eine Aktivität hinzu:
 1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Tippen/Klicken Sie auf **Erlebnis hinzufügen**.
 1. Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden:
 
-   1. Klicken Sie auf oder tippen Sie auf **Audience auswählen **und wählen Sie das Segment aus, das von Ihrem Erlebnis Zielgruppe wird.
+   1. Klicken oder tippen Sie auf &quot;Zielgruppe auswählen&quot;und wählen Sie das Segment aus, auf das Ihr Erlebnis ausgerichtet ist.
    1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
    1. Klicken oder tippen Sie auf **Weiter**.
 
@@ -147,7 +146,7 @@ Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht wer
 
 >[!NOTE]
 >
->Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen,   ändert sich der Status der Aktivität nur, wenn Sie die Seite aktualisieren.
+>Beim Rückgängigmachen der Veröffentlichung einer Aktivität ändert sich der Status der Aktivität nur, wenn Sie die Seite aktualisieren.
 
 So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückgängig:
 
@@ -173,7 +172,7 @@ So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
 1. Klicken Sie unter **Personalisierung** auf **Aktivitäten**, um zur **Aktivitätskonsole** zu navigieren.
 1. Klicken oder tippen Sie auf die Marke, deren Aktivitäten Sie anzeigen möchten.
-1. Wählen Sie die Aktivität aus und klicken Sie auf die Registerkarte **Ansichten-Eigenschaften **und klicken Sie auf die Registerkarte **Berichte** und wählen Sie die Aktivität aus, für die Sie die Ansicht der Leistung für/die erfolgreichsten Erlebnisse durchführen möchten. Die Leistungsdaten werden nun angezeigt.
+1. Wählen Sie die Aktivität aus, klicken oder tippen Sie auf **Eigenschaften anzeigen*, klicken Sie auf die Registerkarte **Berichte** und wählen Sie die Aktivität aus, für die Sie die Leistung anzeigen/die Gewinnererlebnisse konvertieren möchten. Die Leistungsdaten werden nun angezeigt.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -234,4 +233,3 @@ Möchten Sie Probleme bei der Synchronisierung vermeiden, geben Sie Aktivitäten
 >Wenn Sie denselben Namen im selben Kampagnentyp verwenden, wird die vorhandene Kampagne überschrieben.
 >
 >Sollte Ihnen beim Synchronisieren die Fehlermeldung „Anforderung fehlgeschlagen. `thirdPartyId` ist bereits vorhanden“ angezeigt werden, ändern Sie den Kampagnennamen und synchronisieren Sie erneut.
-
