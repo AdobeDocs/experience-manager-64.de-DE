@@ -9,33 +9,32 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
 
 ---
 
-
 # Fehlerbehebung {#troubleshooting}
 
-Dieser Abschnitt enthält allgemeine Bedenken und bekannte Probleme.
+Dieser Abschnitt enthält allgemeine Probleme und bekannte Probleme.
 
 ## Bekannte Probleme {#known-issues}
 
-### Dispatcher-Refetch ist fehlgeschlagen {#dispatcher-refetch-fails}
+### Dispatcher-Neuabruf schlägt fehl {#dispatcher-refetch-fails}
 
-Wenn Sie Dispatcher 4.1.5 mit einer neueren Version von Jetty verwenden, kann eine Reflektion dazu führen, dass &quot;Antwort von Remote-Server kann nicht empfangen werden&quot;angezeigt wird, nachdem auf die Anfrage zum Timeout gewartet wurde.
+Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann eine Refektion dazu führen, dass &quot;Antwort vom Remote-Server kann nicht empfangen&quot;angezeigt wird, nachdem auf die Anfrage zum Timeout gewartet wurde.
 
-Dieses Problem kann durch die Verwendung von Dispatcher 4.1.6 oder höher behoben werden.
+Durch die Verwendung von Dispatcher 4.1.6 oder höher wird dieses Problem behoben.
 
-### Kein Zugriff auf Forumsbeiträge nach einem Upgrade von CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### Zugriff auf Forumpost nach der Aktualisierung von CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq} nicht möglich
 
-Wenn ein Forum für CQ 5.4 und veröffentlichte Themen erstellt wurde und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge Ansicht, zu einem Fehler auf der Seite führen:
+Wenn ein Forum in CQ 5.4 erstellt wurde und Themen veröffentlicht wurden und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge anzuzeigen, zu einem Fehler auf der Seite führen:
 
-Ungültiges Musterzeichen &#39;a&#39;\
-Anfrage an /content/demoforums/forum-test.html auf diesem Server kann nicht gesendet werden
+unzulässiges Musterzeichen &#39;a&#39;\
+Anfrage an /content/demoforums/forum-test.html auf diesem Server kann nicht bereitgestellt werden
 
 Die Protokolle enthalten Folgendes:
 
@@ -48,30 +47,30 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 Das Problem besteht darin, dass die Formatzeichenfolge für com.day.cq.commons.date.RelativeTimeFormat zwischen 5.4 und 5.5 geändert wurde, sodass das &quot;a&quot;für &quot;ago&quot;nicht mehr akzeptiert wird.
 
-Daher muss jeder Code mit der RelativeTimeFormat()-API
+Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet,
 
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-Der Fehler ist beim Erstellen und Veröffentlichen anders. Beim Autor schlägt er leise fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
+Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Beim Autor schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 
-Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
+Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
 
 ## Häufige Bedenken {#common-concerns}
 
-### Warnung in Protokollen: Handlebars nicht mehr unterstützt{#warning-in-logs-handlebars-deprecated}
+### Warnung in Protokollen: Handlebars Veraltet {#warning-in-logs-handlebars-deprecated}
 
-Während des Starts (nicht der 1., sondern danach alle) kann die folgende Warnung in den Protokollen angezeigt werden:
+Während des Starts (nicht der 1., sondern alle darauf folgenden) kann die folgende Warnung in den Protokollen angezeigt werden:
 
 * 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; wurde durch &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39; ersetzt.
 
-Diese Warnung kann unbedenklich ignoriert werden, da jknack.handlebars.Handlebars, die von [SCF](scf.md#handlebarsjavascripttemplatinglanguage) verwendet werden, mit einem eigenen i18n-Hilfsprogramm geliefert werden. Beim Beginn wird er durch einen AEM spezifischen Helfer [i18n](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Drittanbieter-Bibliothek generiert, um die Außerkraftsetzung eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann sicher ignoriert werden, da jknack.handlebars.Handlebars, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Start wird er durch einen AEM spezifischen [i18n-Helfer](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-Das Posten einer Reihe von Forumsthemen zu Social Communities kann zu einer enormen Menge an Warn- und Info-Protokollen aus OakResourceListener processOsgiEventQueue führen.
+Das Posten einer Reihe von Forumsthemen in Social Communities kann zu einer großen Menge an Warn- und Infoprotokollen aus OakResourceListener processOsgiEventQueue führen.
 
-Diese Warnungen können unbedenklich ignoriert werden.
+Diese Warnungen können ignoriert werden.
 
 ```xml
 23.04.2014 14:21:18.900 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/search-collections/ugc-sc/_m.frq/jcr:content not found, which is not expected for an added or modified node
@@ -84,7 +83,7 @@ Diese Warnungen können unbedenklich ignoriert werden.
 
 ### Fehler in Protokollen: NoClassDefFoundError für IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialgroups-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich selbst löst, wie der Fehler, der beim Neustart nicht erkannt wird, zeigt.
+Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialcommunities-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich löst, wie der Fehler zeigt, der beim Neustart nicht erkannt wird.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
