@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
-translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+exl-id: 843cf933-d8a1-407d-9468-1a6409110f81
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Workflows{#working-with-workflows}
 
@@ -33,6 +32,5 @@ In der Regel gilt:
 
 Die folgenden Seiten behandeln:
 
-* [Anwenden von Workflows auf Seiten ](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
+* [Anwenden von Workflows auf Seiten](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
 * [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
-
