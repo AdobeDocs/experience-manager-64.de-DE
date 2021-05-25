@@ -1,29 +1,28 @@
 ---
-title: Einchecken und Auschecken Ihrer digitalen Assets zur Bearbeitung
-description: Erfahren Sie, wie Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken können.
+title: Einchecken und Auschecken digitaler Assets zur Bearbeitung
+description: Erfahren Sie, wie Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 66%
 
 ---
 
-
 # Ein- und Auschecken von Dateien in Assets {#check-in-and-check-out-files-in-assets}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken. Nachdem Sie ein Asset ausgecheckt haben, können Sie es nur bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder bei AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+Mit Adobe Experience Manager (AEM) Assets können Sie Assets zur Bearbeitung auschecken und wieder einchecken, nachdem Sie die Änderungen vorgenommen haben. Nachdem Sie ein Asset ausgecheckt haben, können nur Sie es bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
-Damit Sie Assets auschecken oder einchecken können, benötigen Sie Schreibzugriff auf diese Assets.
+Um Assets ein- oder auschecken zu können, benötigen Sie Schreibzugriff auf sie.
 
 Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Autor vorgenommenen Änderungen überschreiben, wenn mehrere Benutzer Team-übergreifend im Rahmen von Bearbeitungs-Workflows zusammenarbeiten.
 
-## Checkout-Assets {#checking-out-assets}
+## Auschecken von Assets {#checking-out-assets}
 
-1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus, das Sie auschecken möchten. Sie können auch mehrere Assets zum Auschecken auswählen.
+1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das Sie auschecken möchten. Sie können auch mehrere Assets zum Auschecken auswählen.
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
