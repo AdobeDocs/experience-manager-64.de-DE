@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: bd5a247f-cd4b-41c8-b5f6-8def4f5c93ef
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 90%
 
 ---
 
-
-# Starten von Prozessen {#starting-processes}
+# Starten von Prozessen  {#starting-processes}
 
 In AEM Forms Workspace werden Prozesse aufgrund der vom Administrator oder Prozessentwickler festgelegten Kategorien organisiert. Sie können häufig verwendete Prozesse auch in der Kategorie „Favoriten“ platzieren, um den Zugriff zu erleichtern.
 
@@ -48,9 +47,9 @@ Wenn Sie einen Prozess auswählen, werden die Registerkarten „Formular“ und 
 
 1. Wählen Sie einen Prozess aus, indem Sie auf eine Aufgabe klicken. Auf der Registerkarte „Formulare“ wird das Formular geöffnet, das dem Prozess zugeordnet ist.
 
-   Jedes Formular in einem Prozess hat eine eindeutige URL. Sie können die eindeutige URL verwenden, um HTML Workspace mit dem jeweiligen Prozess und Formular direkt zu starten. Das Format der URL lautet https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/%2F&lt;processName>. Die Zeichenfolge &lt;ApplicationName>%2F&lt;ProcessName> ist immer URL-kodiert. Eine Beispiel-URL ist http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. Die Zeichenfolge ApplicationName%2FPprocessName im Beispiel ist URL-kodiert.
+   Jedes Formular in einem Prozess hat eine eindeutige URL. Sie können die eindeutige URL verwenden, um den HTML-Arbeitsbereich direkt mit dem spezifischen Prozess und Formular zu starten. Das Format der URL lautet https://&lt;Server>:&lt;Port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. Die Zeichenfolge &lt;ApplicationName>%2F&lt;ProcessName> ist immer URL-kodiert. Eine Beispiel-URL ist http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. Die Zeichenfolge ApplicationName%2FPprocessName im Beispiel ist URL-kodiert.
 
-1. Füllen Sie das Formular entsprechend den zugehörigen Anweisungen aus. Klicken Sie bei Bedarf auf **Maximieren**, um den sichtbaren Bereich des Formulars zu vergrößern.
+1. Füllen Sie das Formular entsprechend den zugehörigen Anweisungen aus. Klicken Sie bei Bedarf auf **Maximieren** , um den sichtbaren Bereich des Formulars zu vergrößern.
 1. Wenn die Registerkarte „Anlagen“ verfügbar ist, fügen Sie nach Bedarf Anlagen hinzu.
 1. Wenn die Registerkarte „Notizen“ verfügbar ist, geben Sie nach Bedarf Notizen an.
 1. Führen Sie einen der folgenden Schritte durch:
@@ -98,7 +97,7 @@ Sie können auch eigene Kommentare über die Anlage hinzufügen. Sie können ein
 1. Klicken Sie auf die Registerkarte **Anlagen** und wählen Sie **Anlage**.
 1. Klicken Sie auf **Durchsuchen**, um die anzuhängende Datei auszuwählen.
 1. Wählen Sie für andere am Prozess teilnehmende Benutzer die Ebene **Berechtigungen** für die Anlage aus. Wenn Sie die **Leseberechtigung** aktivieren, können andere Benutzer die Datei lokal speichern. Wenn Sie eine der Bearbeitungsberechtigungen auswählen, können andere Benutzer auch eine neue Datei hochladen, um Ihre Anlage durch sie zu ersetzen.
-1. Klicken Sie auf **OK**. Die Datei wird an das Formular angehängt. Sie können eine Datei löschen, indem Sie auf die Schaltfläche **Löschen** ![Bild eines Papierkorbs](assets/icondelete.png) neben der Anlage klicken.
+1. Klicken Sie auf **OK**. Die Datei wird an das Formular angehängt. Sie können eine Datei löschen, indem Sie neben der Anlage auf die Schaltfläche **Löschen** ![Bild eines Papierkorbs](assets/icondelete.png) klicken.
 
 ## Entwurfskopien von Formularen speichern {#saving-draft-copies-of-forms}
 
@@ -131,4 +130,3 @@ Sie können Prozesse zu Ihrer Kategorie „Favoriten“ hinzufügen. Durch das F
 >Wenn Sie Prozesse meist beim Arbeiten mit AEM Forms Workspace starten, können Sie die Voreinstellung „Startposition“ so einstellen, dass beim Starten von AEM Forms Workspace automatisch die Kategorie „Favoriten“ angezeigt wird. Weitere Informationen finden Sie unter „Voreinstellungen verwalten“ in [Erste Schritte mit AEM Forms Workspace](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Um einen Prozess als Favoriten zu markieren, wählen Sie die Aufgabe in der Kategorie aus und klicken Sie auf den ungefüllten Stern. Der Stern wird golden. Um die Markierung eines Prozesses als Favorit zu entfernen, klicken Sie erneut auf den goldenen Stern.
-
