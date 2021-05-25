@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
-translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+exl-id: 4b663228-9cb6-45c0-99dd-8dd7fc2aa4a6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 48%
 
 ---
 
-
 # Community-Gruppen {#community-groups}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenversion der Umgebung erstellt zu werden.
+Mit der Funktion &quot;Community-Gruppen&quot;kann eine Unter-Community von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenumgebung dynamisch auf einer Community-Site erstellt werden.
 
-Diese Fähigkeit ist vorhanden, wenn die Funktion [Gruppen](functions.md#groups-function) in der Struktur [Community-Site](sites-console.md) vorhanden ist.
+Diese Möglichkeit besteht, wenn die [Gruppenfunktion](functions.md#groups-function) in der [Community-Site](sites-console.md)-Struktur vorhanden ist.
 
 Eine [Community-Gruppenvorlage](tools-groups.md) stellt das Design der Community-Gruppenseite bereit, wenn eine Community-Gruppe dynamisch erstellt wird.
 
@@ -30,11 +29,11 @@ Beim Hinzufügen der Gruppenfunktion zur Struktur oder Vorlage einer Community-S
 
 ## Neue Gruppe erstellen {#creating-a-new-group}
 
-Die Möglichkeit, eine neue Community-Gruppe zu erstellen, hängt von der Existenz einer Community-Site ab, die die Gruppen-Funktion enthält, z. B. eine aus dem ` [Reference Site Template](sites.md)` erstellte.
+Die Möglichkeit, eine neue Community-Gruppe zu erstellen, hängt von der Existenz einer Community-Site ab, die die Gruppenfunktion enthält, z. B. eine, die über die Funktion ` [Reference Site Template](sites.md)` erstellt wurde.
 
-Die folgenden Beispiele verwenden die Community-Site, die mit `Reference Site Template` erstellt wurde, wie im Lehrgang [Erste Schritte mit AEM Communities](getting-started.md) beschrieben.
+Die folgenden Beispiele verwenden die Community-Site, die aus `Reference Site Template` erstellt wurde, wie im Tutorial [Erste Schritte mit AEM Communities](getting-started.md) beschrieben.
 
-Diese Seite wird beim Veröffentlichen geladen, wenn das Menüelement **[!UICONTROL Gruppen]** ausgewählt ist:
+Dies ist die Seite, die bei der Veröffentlichung geladen wird, wenn das Menüelement **[!UICONTROL Gruppen]** ausgewählt wird:
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -54,13 +53,13 @@ Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden
 
 * **[!UICONTROL Open]**
 GroupSelecting 
-`Open Group` gibt an, dass ein anonymer Site-Besucher den Inhalt Ansicht und die Auswahl aufhebt  `Member Only Group`.
+`Open Group` gibt an, dass ein anonymer Site-Besucher den Inhalt anzeigen kann, und hebt die Auswahl  `Member Only Group`auf.
 
-* **[!UICONTROL Auswahl nur]**
-für Mitglieder 
-`Member Only Group` gibt an, dass nur Gruppenmitglieder den Inhalt Ansicht haben und die Auswahl aufheben  `Open Group`können.
+* **[!UICONTROL Nur Mitglied]**
+GruppeAuswahl 
+`Member Only Group` gibt an, dass nur Mitglieder der Gruppe den Inhalt anzeigen können, und hebt die Auswahl  `Open Group`auf.
 
-Auf der Registerkarte **[!UICONTROL Vorlage]** können Sie aus der Liste der Community-Gruppenvorlagen auswählen, die angegeben wurden, als die Gruppenfunktion in der Community-Site-Struktur oder in einer Community-Site-Vorlage enthalten war.
+Unter dem Tab **[!UICONTROL Vorlage]** können Sie aus der Liste der Community-Gruppenvorlagen auswählen, die angegeben wurden, als die Gruppenfunktion in der Struktur der Community-Site oder in einer Community-Site-Vorlage enthalten war.
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -74,16 +73,16 @@ Die Seite „Gruppen“ mit einer neuen Unter-Community mit dem Namen „Focus G
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-Wenn Sie den Link `Focus Group` auswählen, wird die Seite &quot;Fokusgruppe&quot;im Browser geöffnet, deren Erscheinungsbild auf der ausgewählten Vorlage basiert und ein Untermenü unterhalb des Menüs der Haupt-Community-Site enthält:
+Wenn Sie den Link `Focus Group` auswählen, wird die Seite &quot;Fokusgruppe&quot;im Browser geöffnet, die basierend auf der ausgewählten Vorlage ein erstes Erscheinungsbild aufweist und ein Untermenü unter dem Menü der Haupt-Community-Site enthält:
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
 ## Komponente „Community-Gruppenmitgliederliste“{#community-group-member-list-component}
 
-Die Komponente `Community Group Member List` ist für die Verwendung durch Entwickler von Gruppenvorlagen vorgesehen.
+Die Komponente `Community Group Member List` ist für Entwickler von Gruppenvorlagen vorgesehen.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Community Group Essentials](essentials-groups.md) für Entwickler.
+Weitere Informationen finden Sie auf der Seite [Community-Gruppengrundlagen](essentials-groups.md) für Entwickler.
 
 Weitere Informationen zu Community-Gruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
