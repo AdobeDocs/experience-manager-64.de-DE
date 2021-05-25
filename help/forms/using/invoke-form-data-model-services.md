@@ -7,27 +7,26 @@ uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 61%
 
 ---
 
-
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Überblick {#overview}
 
-AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mit der API `guidelib.dataIntegrationUtils.executeOperation` im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
+AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mithilfe der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regel-Editors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
 
 In diesem Dokument wird das Schreiben von JavaScript im API`guidelib.dataIntegrationUtils.executeOperation` für den Aufruf eines Dienst beschrieben.
 
 ## Verwenden der API {#using-the-api}
 
-Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld für ein adaptives Formular auf. Für die API gilt die folgende Syntax:
+Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld in einem adaptiven Formular auf. Für die API gilt die folgende Syntax:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -38,8 +37,8 @@ Für die API sind die folgenden Parameter erforderlich.
 | Parameter | Beschreibung |
 |---|---|
 | `operationInfo` | Struktur zur Angabe von Formulardatenmodellkennung, Operationstitel und Operationsname |
-| `inputs` | Struktur zum Festlegen von Formularobjekten, deren Werte für den Dienstvorgang eingegeben werden |
-| `outputs` | Struktur zur Angabe von Formularobjekten, die mit den vom Dienstvorgang zurückgegebenen Werten gefüllt werden |
+| `inputs` | Struktur zum Angeben von Formularobjekten, deren Werte in den Dienstvorgang eingegeben werden |
+| `outputs` | Struktur zum Angeben von Formularobjekten, die mit den vom Dienstvorgang zurückgegebenen Werten gefüllt werden |
 
 Die Struktur der API `guidelib.dataIntegrationUtils.executeOperation` gibt Details zum Dienstvorgang an. Die Struktur weist die folgende Syntax auf.
 
@@ -86,11 +85,11 @@ Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
  </tbody> 
 </table>
 
-## Beispielskript zum Erstellen eines Dienstes {#sample-script-to-invoke-a-service}
+## Beispielskript zum Erstellen eines Dienstes  {#sample-script-to-invoke-a-service}
 
-Das folgende Beispielskript verwendet die API `guidelib.dataIntegrationUtils.executeOperation`, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
+Das folgende Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
 
-Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt Mitarbeitername, Kontonummer und Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für `accountNumber` im `account`-Formularelement gefüllt.
+Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt den Mitarbeiternamen, die Kontonummer und den Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für das Argument `accountNumber` im Formularelement `account` eingetragen.
 
 ```
 var operationInfo = {
@@ -107,4 +106,3 @@ var outputs = {
 };
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
-
