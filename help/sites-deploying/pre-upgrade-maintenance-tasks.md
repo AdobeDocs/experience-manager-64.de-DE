@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: f146cb2f-ee77-4c99-8dff-446cdb3a7797
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2179'
 ht-degree: 78%
 
 ---
-
 
 # Wartungsaufgaben vor einer Aktualisierung{#pre-upgrade-maintenance-tasks}
 
@@ -32,12 +31,12 @@ Bevor Sie mit der Aktualisierung beginnen, ist es wichtig, die folgenden Wartung
 * [Deaktivieren von benutzerdefinierten Anmeldemodulen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Entfernen von Updates aus dem /install-Verzeichnis](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Beenden aller Cold-Standby-Instanzen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
-* [Deaktivieren von benutzerdefinierten geplanten Aufträgen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs) 
-* [Durchführen der Offline-Revisionsbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup) 
-* [Durchführen der Datenspeicherbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection) 
-* [Aktualisieren Sie bei Bedarf das Schema Database.](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
-* [Benutzer löschen, die die Aktualisierung behindern könnten](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-* [Rotieren von Protokolldateien](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files) 
+* [Deaktivieren von benutzerdefinierten geplanten Aufträgen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
+* [Durchführen der Offline-Revisionsbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
+* [Durchführen der Datenspeicherbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
+* [Aktualisieren Sie bei Bedarf das Datenbankschema.](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
+* [Löschen von Benutzern, die die Aktualisierung behindern könnten](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
+* [Rotieren von Protokolldateien](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Überprüfung auf ausreichenden Festplattenspeicher {#ensure-sufficient-disk-space}
 
@@ -49,7 +48,7 @@ Bevor Sie mit der Aktualisierung beginnen, sollten Sie eine vollständige Sicher
 
 ## Sicherung von Änderungen unter /etc  {#backup-changes-etc}
 
-Der Aktualisierungsprozess bietet eine gute Funktion zum Verwalten und Zusammenführen vorhandener Inhalte und Konfigurationen unter den Pfaden `/apps` und `/libs` im Repository. Für Änderungen am `/etc`-Pfad, einschließlich Context Hub-Konfigurationen, ist es häufig erforderlich, diese Änderungen nach der Aktualisierung erneut anzuwenden. Während die Aktualisierung eine Sicherungskopie aller Änderungen erstellt, die unter `/var` nicht zusammengeführt werden können, empfehlen wir, diese Änderungen manuell zu sichern, bevor die Aktualisierung beginnt.
+Der Aktualisierungsprozess bietet eine gute Möglichkeit, vorhandenen Inhalt und Konfigurationen unter den Pfaden `/apps` und `/libs` im Repository zu verwalten und zusammenzuführen. Für Änderungen am Pfad `/etc`, einschließlich ContextHub-Konfigurationen, ist es häufig erforderlich, diese Änderungen nach der Aktualisierung erneut anzuwenden. Während das Upgrade eine Sicherungskopie aller Änderungen erstellt, die unter `/var` nicht zusammengeführt werden können, empfehlen wir, diese Änderungen vor Beginn des Upgrades manuell zu sichern.
 
 ## Erstellen der quickstart.properties-Datei {#generate-quickstart-properties}
 
@@ -89,7 +88,7 @@ Sie finden die Pakete hier:
 
 Die OSGi-Komponente `PreUpgradeTasksMBean` ist mit einer Liste von Wartungsaufgaben vor der Aktualisierung vorkonfiguriert, die gleichzeitig ausgeführt werden können. Sie können die Aufgaben mit den nachfolgenden Schritten konfigurieren:
 
-1. Gehen Sie zur Web-Konsole, indem Sie zu `https://serveraddress:serverport/system/console/configMgr` navigieren.
+1. Navigieren Sie zur Web-Konsole, indem Sie zu `https://serveraddress:serverport/system/console/configMgr` navigieren.
 
 1. Suchen Sie nach **preupgradetasks** und klicken Sie auf die erste übereinstimmende Komponente. Der vollständige Name der Komponenten lautet `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -221,7 +220,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
    <td>AKTION</td> 
-   <td><p>Führt alle Gesundheitsüberprüfungen vor der Aktualisierung aus und speichert ihren Status in einer Datei mit dem Namen <code>preUpgradeHCStatus.properties</code>, die sich im sling-Homepad befindet. Wenn der Parameter <code>shutDownOnSuccess</code> auf <code>true</code> eingestellt ist, wird die AEM Instanz heruntergefahren, jedoch nur, wenn alle Statusprüfungen vor der Aktualisierung den Status OK haben.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Aktualisierungen verwendet<br /> und der Aktualisierungsvorgang wird angehalten, wenn die Konsistenzprüfungen vor einer Aktualisierung<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einer Aktualisierung ignorieren und die Aktualisierung trotzdem starten möchten, können Sie die Datei löschen.</p> </td> 
+   <td><p>Führt alle Konsistenzprüfungen vor der Aktualisierung aus und speichert ihren Status in einer Datei mit dem Namen <code>preUpgradeHCStatus.properties</code>, die sich im Sling-Startpfad befindet. Wenn der Parameter <code>shutDownOnSuccess</code> auf <code>true</code> gesetzt ist, wird die AEM-Instanz heruntergefahren, jedoch nur, wenn alle Konsistenzprüfungen vor der Aktualisierung den Status "OK"aufweisen.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Aktualisierungen verwendet<br /> und der Aktualisierungsvorgang wird angehalten, wenn die Konsistenzprüfungen vor einer Aktualisierung<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einer Aktualisierung ignorieren und die Aktualisierung trotzdem starten möchten, können Sie die Datei löschen.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
@@ -312,49 +311,49 @@ Falls Sie TarMK verwenden, sollten Sie vor der Aktualisierung eine Offline-Revis
 
 Nach der Revisionsbereinigung auf CRX3-Instanzen sollten Sie die Datenspeicherbereinigung ausführen, um nicht referenzierte BLOB-Objekte aus dem Datenspeicher zu löschen. Eine Anleitung finden Sie in der Dokumentation zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
-## Löschen Sie Benutzer, die die Aktualisierung {#delete-users-that-might-hinder-the-upgrade} behindern könnten.
+## Löschen Sie Benutzer, die die Aktualisierung behindern {#delete-users-that-might-hinder-the-upgrade}
 
 >[!NOTE]
 >
->Diese Aufgabe zur Wartung vor der Aktualisierung ist nur erforderlich, wenn:
+>Diese Wartungsaufgabe vor der Aktualisierung ist nur erforderlich, wenn:
 >
->* Sie aktualisieren von AEM älteren Versionen als AEM 6.3
->* Während der Aktualisierung werden die folgenden Fehler angezeigt.
+>* Sie aktualisieren von AEM Versionen, die älter als AEM 6.3 sind
+>* Während des Upgrades werden alle unten aufgeführten Fehler angezeigt.
 
 
-Es gibt Ausnahmefälle, in denen Dienstbenutzer in älteren AEM Versionen falsch getaggt werden können.
+Es gibt Ausnahmefälle, in denen Dienstbenutzer in älteren AEM-Versionen landen, die nicht ordnungsgemäß als normale Benutzer getaggt sind.
 
-In diesem Fall schlägt die Aktualisierung fehl mit einer Meldung wie der folgenden:
+In diesem Fall schlägt die Aktualisierung mit einer Meldung wie der folgenden fehl:
 
 `ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
 java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.`
 
-Um dieses Problem zu umgehen, gehen Sie wie folgt vor:
+Um dieses Problem zu umgehen, gehen Sie folgendermaßen vor:
 
-Um dieses Problem zu umgehen, gehen Sie wie folgt vor:
+Um dieses Problem zu umgehen, gehen Sie folgendermaßen vor:
 
-* Die Instanz vom Produktions-Traffic trennen
-* Erstellen Sie eine Sicherung der Benutzer, die das Problem verursachen. Sie können dies über Package Manager tun. Weitere Informationen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
-* Löschen Sie die Benutzer, die das Problem verursachen. Nachfolgend finden Sie eine Liste von Benutzern, die unter diese Kategorie fallen könnten:
-   * dynamic-media-Replication
-   * community-ugc-writer
-   * community-utility-reader
-   * community-user-admin
+* Trennen der Instanz vom Produktions-Traffic
+* Erstellen Sie eine Sicherung der Benutzer, die das Problem verursachen. Dies ist über Package Manager möglich. Weitere Informationen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
+* Löschen Sie die Benutzer, die das Problem verursachen. Nachfolgend finden Sie eine Liste der Benutzer, die unter diese Kategorie fallen können:
+   * dynamic-media-replication
+   * communities-ugc-writer
+   * communities-utility-reader
+   * communities-user-admin
    * oauthservice
    * sling-Skripterstellung
 
-## Aktualisieren Sie bei Bedarf das Database Schema.{#upgrade-the-database-schema-if-needed}
+## Aktualisieren Sie bei Bedarf {#upgrade-the-database-schema-if-needed} das Datenbankschema.
 
-Normalerweise übernimmt der zugrunde liegende Apache Oak-Stapel, der AEM für Persistenz verwendet, bei Bedarf die Aktualisierung des Schemas.
+Normalerweise übernimmt der zugrunde liegende Apache Oak-Stapel, den AEM für die Persistenz verwendet, bei Bedarf die Aktualisierung des Datenbankschemas.
 
-Es kann jedoch vorkommen, dass das Schema nicht automatisch aktualisiert werden kann. Dies sind meist Umgebung mit hoher Sicherheit, bei denen die Datenbank unter einem Benutzer mit sehr begrenzten Berechtigungen ausgeführt wird. In diesem Fall wird AEM weiterhin das alte Schema verwenden.
+Es kann jedoch vorkommen, dass das Schema nicht automatisch aktualisiert werden kann. Dabei handelt es sich hauptsächlich um Sicherheitsumgebungen, in denen die Datenbank unter einem Benutzer mit sehr eingeschränkten Berechtigungen ausgeführt wird. In diesem Fall wird AEM weiterhin das alte Schema verwenden.
 
 Um dies zu verhindern, müssen Sie das Schema wie folgt aktualisieren:
 
-1. Fahren Sie die AEM Instanz herunter, die aktualisiert werden muss.
-1. Aktualisieren Sie das Schema der Datenbank. Bitte lesen Sie die Dokumentation für Ihren Datenbanktyp, um zu sehen, welche Werkzeuge Sie dazu benötigen.
+1. Beenden Sie die AEM Instanz, die aktualisiert werden muss.
+1. Aktualisieren Sie das Datenbankschema. Lesen Sie die Dokumentation für Ihren Datenbanktyp , um zu erfahren, welche Tools Sie dazu benötigen.
 
-   Weitere Informationen dazu, wie Oak mit Schema-Upgrades umgeht, finden Sie auf dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).[
+   Weitere Informationen dazu, wie Oak mit Schemaaktualisierungen umgeht, finden Sie auf dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).[
 
 1. Fahren Sie mit der AEM fort.
 
