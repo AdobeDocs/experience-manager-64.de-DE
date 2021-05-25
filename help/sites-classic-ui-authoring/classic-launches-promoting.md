@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 793c44fa-9dd1-45f2-b1ab-219b436fcb54
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 96%
 
 ---
-
 
 # Weiterleiten von Launches{#promoting-launches}
 
@@ -34,7 +33,7 @@ Führen Sie beim Bearbeiten der weiterzuleitenden Launch-Seite die folgenden Sch
 1. Klicken Sie im Sidekick auf der Registerkarte **Seite** auf **Launch bewerben**.
 1. Geben Sie die Seiten an, die weitergeleitet werden sollen:
 
-   * (Standard) Um nur die aktuelle Seite zu bewerben, wählen Sie **Seitenänderungen an Produktionsversion fördern**.
+   * (Standard) Um nur die aktuelle Seite weiterzuleiten, wählen Sie **Seitenänderungen in Produktionsversion weiterleiten**.
    * Um auch die untergeordneten Seiten der aktuellen Seite weiterzuleiten, wählen Sie **Unterseiten einschließen**.
    * Um alle Seiten im Launch weiterzuleiten, wählen Sie **Vollständigen Launch in Produktionsversion weiterleiten**.
 
@@ -54,4 +53,3 @@ Um einen Workflow automatisch zu starten, wenn Seiten weitergeleitet werden, [ko
 Sie können z. B. automatisch Seitenaktivierungsanfragen generieren, wenn Autoren Launches-Seiten weiterleiten. Konfigurieren Sie einen Workflow-Starter, um den Workflow zur Anfrageaktivierung zu starten, wenn der Paketknoten geändert wird.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-
