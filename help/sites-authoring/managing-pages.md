@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
-translation-type: tm+mt
-source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 95%
 
 ---
-
 
 # Erstellen und Organisieren von Seiten{#creating-and-organizing-pages}
 
@@ -43,13 +42,13 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Die folgende Abbildung zeigt ein Beispiel auf der Website We.Retail, auf der auf eine Seite mit Wanderkursen ( `desert-sky-shorts`) zugegriffen wird:
+Im folgenden Beispiel sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, auf die eine Shortseite für Wanderungen ( `desert-sky-shorts`) aufgerufen wird:
 
-* Autor-Umgebung: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Autorenumgebung: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Veröffentlichungsumgebung: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` auf der Umgebung zum Veröffentlichen optional sein.
+Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
 
 ```xml
  /content
@@ -169,9 +168,9 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 >
 >Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-authoring/templates.md).
 
-### Komponenten {#components}
+### Komponenten  {#components}
 
-Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [Out-of-the-Box-Komponenten](/help/sites-authoring/default-components-console.md), die eine umfassende Funktionalität bieten. Dazu gehören:
+Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierten Komponenten](/help/sites-authoring/default-components-console.md), die umfassende Funktionen bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -383,7 +382,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
       * Diese Option ist nur ab AEM Version 6.4.7.0 verfügbar.
    * Mit **Abbrechen** können Sie den Vorgang abbrechen.
-   * **Löschen** bestätigen Sie die Aktion.
+   * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Referenzen aufweist, wird die Seite gelöscht.
       * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **eine oder mehrere Seiten über einen Verweis verfügen**. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
@@ -423,4 +422,3 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 1. Wählen Sie **Erstellen**, um den Ordner zu erstellen.
-
