@@ -7,23 +7,22 @@ uuid: 4f33c10f-e862-4113-9d5a-67e6208e1e66
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9f3ba207-b5a3-43a2-b59c-0d74d62c03fc
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: ce6fa21c-aa83-4c5e-be7f-ad4f6e0811f8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2761'
 ht-degree: 77%
 
 ---
 
-
 # Adaptive Formularausdrücke {#adaptive-form-expressions}
 
-Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit Kenntnissen in der dynamischen Skripterstellung. Dadurch können Sie Ausdruck schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Ein-/Ausblenden-Felder und -Bedienfelder. Außerdem können Sie berechnete Felder hinzufügen, Felder schreibgeschützt machen, Überprüfungslogik hinzufügen und vieles mehr. Das dynamische Verhalten basiert auf der Benutzereingabe oder vorausgefüllten Daten.
+Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit Kenntnissen in der dynamischen Skripterstellung. Dadurch können Sie Ausdrücke schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Ein-/Ausblendfelder und Bedienfelder. Außerdem können Sie damit berechnete Felder hinzufügen, Felder schreibgeschützt machen, Überprüfungslogik hinzufügen und vieles mehr. Das dynamische Verhalten basiert auf der Benutzereingabe oder vorausgefüllten Daten.
 
 JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
-## Empfohlene Vorgehensweisen zum Schreiben von Ausdrücken {#best-practices-for-writing-expressions}
+## Empfohlene Vorgehensweisen zum Schreiben von Ausdrücken  {#best-practices-for-writing-expressions}
 
 * Beim Schreiben von Ausdrücken können Sie für den Zugriff auf Felder und Fenster den Feld- oder den Fensternamen verwenden. Für den Zugriff auf den Wert eines Felds können Sie die Werteigenschaft verwenden. Beispiel: `field1.value`
 * Verwenden Sie im gesamten Formular eindeutige Namen für Felder und Fenster. Auf diese Weise können Sie mögliche Konflikte mit beim Schreiben von Ausdrücken verwendeten Feldnamen vermeiden.
@@ -39,14 +38,14 @@ Wiederholungsfelder sind Instanzen eines Fensters, das mithilfe einer Skripterst
 * Adaptive Formulare bieten einige spezifische Funktionen zum Vereinfachen der Berechnungen für die wiederholbaren Felder wie etwa „sum“, „count“, „min“, „max“, „filter“ und viele mehr. Eine vollständige Liste der Funktionen finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * Es gibt folgende APIs zum Manipulieren von Instanzen von Wiederholungsfeldern:
 
-   * So fügen Sie eine Bereichsinstanz hinzu: `panel1.instanceManager.addInstance()`
-   * Abrufen eines Wiederholungsindex für ein Bedienfeld: `panel1.instanceIndex`
-   * Abrufen des instanceManager eines Bedienfelds: `_panel1 or panel1.instanceManager`
+   * So fügen Sie eine Bedienfeldinstanz hinzu: `panel1.instanceManager.addInstance()`
+   * So rufen Sie einen Wiederholungsindex für Bedienfelder ab: `panel1.instanceIndex`
+   * So rufen Sie den instanceManager eines Bedienfelds ab: `_panel1 or panel1.instanceManager`
    * So entfernen Sie eine Instanz eines Bedienfelds: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Ausdruckstypen {#expression-types}
 
-In adaptiven Formularen können Sie Ausdruck schreiben, um Verhaltensweisen wie dynamische Ein-/Ausblenden-Felder und -Bereiche hinzuzufügen. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder schreibgeschützt, Überprüfungslogik zu gestalten und vieles mehr. Adaptive Formulare unterstützen folgende Ausdrücke:
+In adaptiven Formularen können Sie Ausdrücke schreiben, um Verhaltensweisen wie dynamische Ein-/Ausblendfelder und Bereiche hinzuzufügen. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder schreibgeschützt zu machen, Überprüfungslogik zu verwenden und vieles mehr. Adaptive Formulare unterstützen folgende Ausdrücke:
 
 * **[Ausdrücke für den Zugriff](#access-expression-enablement-expression)**: Zum Aktivieren/Deaktivieren eines Felds.
 * **[Ausdrücke für die Berechnung](/help/forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: Zum automatischen Berechnen des Werts eines Felds.
@@ -56,7 +55,7 @@ In adaptiven Formularen können Sie Ausdruck schreiben, um Verhaltensweisen wie 
 * **[Ausdruck für Optionen](/help/forms/using/adaptive-form-expressions.md#p-options-expression-p)**: Zum dynamischen Ausfüllen einer Dropdown-Liste.
 * [**Zusammenfassungsausdruck**](#summary): Zum dynamischen Berechnen des Titels eines Akkordeons.
 * **[Ausdrücke für die Überprüfung](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: Zum Überprüfen eines Felds.
-* **[Skript](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p) zum Bestätigen des Werts:** Zum Ändern der Komponenten eines Formulars nach einer Feldänderung.
+* **[Skript zum Bestätigen von Werten](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p):**  Zum Ändern der Komponenten eines Formulars, nachdem der Wert eines Felds geändert wurde.
 
 * **[Ausdruck für die Sichtbarkeit](/help/forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: Zum Steuern der Sichtbarkeit eines Felds oder Bereichs.
 * **[Ausdruck zum Abschluss von Schritten](/help/forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**: Um zu vermeiden, dass ein Benutzer zum nächsten Schritt eines Assistenten geht.
@@ -69,7 +68,7 @@ Sie können den Ausdruck für den Zugriff zum Aktivieren oder Deaktivieren eines
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Aktivierungsstatus des Felds wiedergibt. **true** bedeutet, dass das Feld aktiviert ist, und **false** bedeutet, dass das Feld deaktiviert ist.
 
-**Beispiel**: Um ein Feld nur dann zu aktivieren, wenn der Wert von  **field1**  auf  **X** festgelegt ist, lautet der Ausdruck access wie folgt:  `field1.value == "X"`
+**Beispiel**: Um ein Feld nur zu aktivieren, wenn der Wert von  **field1**  auf  **X** gesetzt ist, lautet der Zugriffsausdruck:  `field1.value == "X"`
 
 ### Ausdruck für die Berechnung {#calculate-expression}
 
@@ -79,7 +78,7 @@ Der Ausdruck für die Berechnung wird verwendet, um den Wert eines Felds unter V
 
 **Rückgabetyp**: Der Ausdruck gibt einen Wert zurück, der mit dem Feld kompatibel ist, in dem das Ergebnis des Ausdrucks angezeigt wird (z. B. dezimal).
 
-**Beispiel**: Der Ausdruck calculate, der die Summe zweier Felder in  **field1** anzeigt, lautet:\
+**Beispiel**: Der Berechnungsausdruck, der die Summe zweier Felder in  **field1**  anzeigt, lautet:\
 `field2.value + field3.value`
 
 ### Ausdruck für ein Klickereignis {#click-expression}
@@ -90,21 +89,21 @@ Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken a
 
 **Rückgabetyp:** Der Ausdruck für ein Klickereignis gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Wenn Sie ein Textfeld  **textbox1** auf eine Schaltfläche mit dem Wert  **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche  `textbox1.value="AEM Forms"` &quot;
+**Beispiel**: Um ein Textfeld  **textbox1** mit dem Wert  **AEM Forms** auszufüllen, lautet der Ausdruck für das Klicken der Schaltfläche  `textbox1.value="AEM Forms"` &quot;
 
 ### Initialisierungsskript {#initialization-script}
 
-Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initialisiert wird. Je nach Szenario verhält sich das Initialisierungsskript wie folgt:
+Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initialisiert wird. Je nach Szenario verhält sich das Initialisierungsscript wie folgt:
 
 * Wenn ein adaptives Formular ohne vorausgefüllte Daten wiedergegeben wird, wird das Initialisierungsskript nach der Initialisierung des Formulars ausgeführt.
-* Wenn ein adaptives Formular mit einer Datenvorfüllung wiedergegeben wird, wird das Skript nach Abschluss des Vorfüllvorgangs ausgeführt.
+* Wenn ein adaptives Formular mit vorausgefüllten Daten wiedergegeben wird, wird das Skript nach Abschluss des Vorab-Ausfüllvorgangs ausgeführt.
 * Wenn eine erneute serverseitige Überprüfung eines adaptiven Formulars ausgelöst wird, wird das Initialisierungsskript ausgeführt.
 
 **Gilt für:** Felder und Fenster
 
 **Rückgabetyp:** Der Ausdruck für das Initialisierungsskript gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel:** Wenn Felder mit Standardwert gefüllt werden sollen,  `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck des Initialisierungsskripts:\
+**Beispiel:** Um in einem Szenario mit vorausgefüllten Daten Felder mit dem Standardwert auszufüllen,  `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Initialisierungsscript-Ausdruck:\
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Ausdruck für Optionen {#options-expression}
@@ -121,25 +120,25 @@ Der Ausdruck für Optionen wird zum dynamischen Ausfüllen von Optionen in einem
 
 Sobald sich der Wert des Felds **marital_status** ändert, wird der Ausdruck erneut ausgelöst. Sie können das Dropdown-Menü auch von einem REST-Dienst aus auffüllen. Ausführliche Informationen finden Sie unter [Dynamisches Auffüllen von Dropdown-Listen](/help/forms/using/dynamically-populate-dropdowns.md).
 
-### Zusammenfassungsausdruck  {#summary}
+### Zusammenfassungsausdruck {#summary}
 
-Der Zusammenfassungsausdruck berechnet dynamisch den Titel eines untergeordneten Bedienfelds eines Akkordeon-Layout-Bedienfelds. Sie können den Zusammenfassungsausdruck in einer Regel festlegen, die ein Formularfeld oder eine benutzerdefinierte Logik verwendet, um den Titel zu bewerten. Der Ausdruck wird ausgeführt, wenn das Formular initialisiert wird. Wenn Sie ein Formular im Voraus ausfüllen, wird der Ausdruck ausgeführt, nachdem die Daten vorausgefüllt wurden oder sich der Wert der im Ausdruck verwendeten abhängigen Felder ändert.
+Der Zusammenfassungsausdruck berechnet dynamisch den Titel eines untergeordneten Bedienfelds eines Akkordeon-Layout-Bedienfelds. Sie können den Zusammenfassungsausdruck in einer Regel festlegen, die ein Formularfeld oder eine benutzerdefinierte Logik verwendet, um den Titel zu bewerten. Der Ausdruck wird ausgeführt, wenn das Formular initialisiert wird. Wenn Sie ein Formular im Voraus ausfüllen, wird der Ausdruck ausgeführt, nachdem die Daten vorausgefüllt wurden oder sich der Wert der abhängigen Felder ändert, die im Ausdruck verwendet werden.
 
 Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeordneten Elementen eines Akkordeon-Layout-Bedienfelds verwendet, um einen aussagekräftigen Titel für jedes untergeordnete Bedienfeld zur Verfügung zu stellen.
 
 **Gilt für:** Bedienfelder, die direkt untergeordnete Elemente eines Bedienfelds sind, dessen Layout als Akkordeon konfiguriert ist.
 
-**Rückgabetyp:** Der Ausdruck gibt eine Zeichenfolge zurück, die zum Titel des Akkordeons wird.
+**Rückgabetyp:** Der Ausdruck gibt eine Zeichenfolge zurück, die zum Titel des Accordions wird.
 
-**Beispiel:** &quot;Kontonummer: &quot;+ textbox1.value
+**Beispiel:** &quot;Kontonummer : &quot;+ textbox1.value
 
 ### Ausdruck für die Überprüfung {#validate-expression}
 
-Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verwendung des entsprechenden Ausdrucks verwendet. Normalerweise verwenden solche Ausdruck reguläre Ausdruck zusammen mit dem Feldwert, um ein Feld zu validieren. Der Ausdruck wird bei jeder Änderung am Wert des Feldes erneut ausgelöst und der Überprüfungsstatus des Felds wird erneut berechnet.
+Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verwendung des entsprechenden Ausdrucks verwendet. Normalerweise verwenden solche Ausdrücke reguläre Ausdrücke zusammen mit dem Feldwert, um ein Feld zu validieren. Der Ausdruck wird bei jeder Änderung am Wert des Feldes erneut ausgelöst und der Überprüfungsstatus des Felds wird erneut berechnet.
 
 **Gilt für**: Felder
 
-**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds darstellt. Der Wert **false** bedeutet, dass das Feld ungültig ist und **true** angibt, dass das Feld gültig ist.
+**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds darstellt. Der Wert **false** bedeutet, dass das Feld ungültig ist, und **true** bedeutet, dass das Feld gültig ist.
 
 **Beispiel**: Für ein Feld, das eine britische Postleitzahl enthalten soll, lautet der Ausdruck für die Überprüfung wie folgt:
 
@@ -167,7 +166,7 @@ Das Skript zum Bestätigen von Werten wird ausgelöst, wenn
 
 >[!NOTE]
 >
->Sie können die Ausführung des Skripts zum Bestätigen von Werten deaktivieren, wenn der Wert eines Felds programmgesteuert geändert wird. Gehen Sie dazu zu `https://[server]:[port]/system/console/configMgr and change` **Adaptive Forms-Version für Kompatibilität** nach **AEM Forms 6.1**. Dann wird das Skript zum Bestätigen von Werten nur ausgeführt, wenn der Benutzer den Wert des Felds in der Benutzeroberfläche ändert.
+>Sie können die Ausführung des Skripts zum Bestätigen von Werten deaktivieren, wenn der Wert eines Felds programmgesteuert geändert wird. Gehen Sie dazu zu `https://[server]:[port]/system/console/configMgr and change` **Adaptive Forms-Version für Kompatibilität** zu **AEM Forms 6.1**. Dann wird das Skript zum Bestätigen von Werten nur ausgeführt, wenn der Benutzer den Wert des Felds in der Benutzeroberfläche ändert.
 
 ### Ausdruck für die Sichtbarkeit  {#visibility-expression}
 
@@ -187,7 +186,7 @@ Der Ausdruck zum Abschluss von Schritten dient der Vermeidung, dass ein Benutzer
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Gültigkeitsstatus des aktuellen Fensters wiedergibt. **True** bedeutet, dass das aktuelle Fenster gültig ist und der Benutzer zum nächsten Fenster navigieren kann.
 
-**Beispiel**: In einem in mehrere Fenster organisierten Formular wird vor dem Navigieren zum nächsten Fenster das aktuelle Fenster überprüft. In diesen Fällen werden Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die Überprüfungs-API GuideBridge. Ein Beispiel für den Ausdruck zum Abschluss von Schritten:\
+**Beispiel**: In einem in mehrere Fenster organisierten Formular wird vor dem Navigieren zum nächsten Fenster das aktuelle Fenster überprüft. In diesen Fällen werden Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die Überprüfungs-API GuideBridge. Ein Beispiel für einen Ausdruck zum Abschluss von Schritten ist:\
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Überprüfungen in adaptiven Formularen {#validations-in-adaptive-form}
@@ -206,7 +205,7 @@ Für ein Feld stehen mehrere Überprüfungsmuster für den sofortigen Einsatz zu
 
 ### Ausdrücke für die Überprüfung {#validation-expressions}
 
-Die Überprüfung eines Felds kann auch mithilfe von Ausdrücken für verschiedene Felder berechnet werden. Diese Ausdrücke werden in das Feld **[!UICONTROL Gültigkeitsprüfungsskript]** der Registerkarte **[!UICONTROL Skript]** des Dialogfelds **[!UICONTROL Bearbeiten]** der Komponente geschrieben. Der Überprüfungsstatus eines Felds hängt von dem vom Ausdruck zurückgegebenen Wert ab. Informationen zum Schreiben solcher Ausdrücke finden Sie unter [Ausdruck für die Überprüfung](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+Die Überprüfung eines Felds kann auch mithilfe von Ausdrücken für verschiedene Felder berechnet werden. Diese Ausdrücke werden in das Feld **[!UICONTROL Gültigkeitsprüfungsskript]** der Registerkarte **[!UICONTROL Skript]** des Dialogfelds **[!UICONTROL Bearbeiten]** der Komponente geschrieben. Der Validierungsstatus eines Felds hängt von dem Wert ab, den der Ausdruck zurückgibt. Informationen zum Schreiben solcher Ausdrücke finden Sie unter [Ausdruck für die Überprüfung](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Zusätzliche Informationen {#additional-information}
 
@@ -224,15 +223,15 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 
 #### GuideBridge-Verwendung in verschiedenen Ausdrücken  {#guidebridge-usage-in-various-expressions}
 
-* Um Formularfelder zurückzusetzen, können Sie die API mit dem Trigger `guideBridge.reset()` auf dem Ausdruck einer Schaltfläche klicken. Ebenso gibt es eine Sende-API, die als Klick-Ausdruck `guideBridge.submit()`**aufgerufen werden kann.**
+* Um Formularfelder zurückzusetzen, können Sie die API `guideBridge.reset()` auf dem Ausdruck für ein Klickereignis einer Schaltfläche Trigger haben. Ebenso gibt es eine Sende-API, die als Ausdruck für ein Klickereignis aufgerufen werden kann `guideBridge.submit()`**.**
 
-* Sie können die API `setFocus()` verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus wird automatisch auf das erste Feld eingestellt). `setFocus()`bietet eine breite Palette von Optionen zum Navigieren, z. B. Navigation über Fenster, vorherige/nächste Durchreise, Fokussierung auf ein bestimmtes Feld und vieles mehr. Um zum nächsten Fenster zu wechseln, können Sie beispielsweise Folgendes verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Sie können die `setFocus()`-API verwenden, um den Fokus über verschiedene Felder oder Bereiche hinweg festzulegen (der Bereichsfokus wird automatisch auf das erste Feld gesetzt). `setFocus()`bietet eine breite Palette von Optionen zum Navigieren, z. B. Navigation über Bedienfelder hinweg, vorheriger/nächster Durchlauf, Fokus auf ein bestimmtes Feld legen und vieles mehr. Um beispielsweise zum nächsten Bereich zu wechseln, können Sie Folgendes verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
-* Verwenden Sie zum Überprüfen eines adaptiven Formulars oder seiner spezifischen Bereiche `guideBridge.validate(errorList, somExpression).`
+* Um ein adaptives Formular oder seine spezifischen Bedienfelder zu überprüfen, verwenden Sie `guideBridge.validate(errorList, somExpression).`
 
 #### GuideBridge außerhalb von Ausdrücken verwenden  {#using-guidebridge-outside-expressions-nbsp}
 
-Sie können die GuideBridge-APIs auch außerhalb von Ausdrücken verwenden. Sie können die GuideBridge-API beispielsweise dazu verwenden, die Kommunikation zwischen Seiten-HTML, in der das adaptive Formular integriert ist, und dem Formularmodell festzulegen. Darüber hinaus können Sie den Wert festlegen, der von dem übergeordneten Element von Iframe stammt, auf dem das Formular gehostet wird.
+Sie können die GuideBridge-APIs auch außerhalb von Ausdrücken verwenden. Sie können die GuideBridge-API beispielsweise dazu verwenden, die Kommunikation zwischen Seiten-HTML, in der das adaptive Formular integriert ist, und dem Formularmodell festzulegen. Darüber hinaus können Sie den Wert festlegen, der aus dem übergeordneten Element von Iframe stammt, in dem das Formular gehostet wird.
 
 Zum Verwenden der GuideBridge-API im oben erwähnten Beispiel erfassen Sie eine Instanz von GuideBridge. Um die Instanz zu erfassen, überwachen Sie das `bridgeInitializeStart`Ereignis eines `window`Objekts:
 
@@ -262,7 +261,7 @@ Um GuideBridge nach der Initialisierung des Formulars zu verwenden (das `bridgeI
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Weitere Informationen zu diesen Ereignissen finden Sie unter [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Weitere Informationen zu solchen Ereignissen finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 
@@ -276,16 +275,15 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Benutzerdefinierte Muster für ein Feld erstellen  {#creating-custom-patterns-for-a-field}
 
-Wie oben erwähnt lassen adaptive Formulare das Bereitstellen von Überprüfungsmustern oder Anzeigeformaten durch den Autor zu. Über die Verwendung von Mustern für den sofortigen Einsatz können Sie wiederverwendbare benutzerdefinierte Muster für eine Komponente eines adaptiven Formulars verwenden. Beispiel: Sie können ein Textfeld oder ein numerisches Feld definieren. Sobald die Definition abgeschlossen ist, können Sie diese Muster in allen Formularen für einen bestimmten Komponententyp verwenden. Sie können beispielsweise ein benutzerdefiniertes Muster für ein Textfeld erstellen und es in den Textfeldern in ihren adaptiven Formularen verwenden. Sie können das benutzerdefinierte Muster auswählen, indem Sie auf den Musterabschnitt im Dialogfeld „Bearbeiten“ einer Komponente zugreifen. Ausführliche Informationen zu Musterdefinitionen oder -formaten finden Sie unter [Unterstützung für HTML5 Forms](/help/forms/using/picture-clause-support.md). 
+Wie oben erwähnt lassen adaptive Formulare das Bereitstellen von Überprüfungsmustern oder Anzeigeformaten durch den Autor zu. Über die Verwendung von Mustern für den sofortigen Einsatz können Sie wiederverwendbare benutzerdefinierte Muster für eine Komponente eines adaptiven Formulars verwenden. Beispiel: Sie können ein Textfeld oder ein numerisches Feld definieren. Sobald die Definition abgeschlossen ist, können Sie diese Muster in allen Formularen für einen bestimmten Komponententyp verwenden. Sie können beispielsweise ein benutzerdefiniertes Muster für ein Textfeld erstellen und es in den Textfeldern in den adaptiven Formularen verwenden. Sie können das benutzerdefinierte Muster auswählen, indem Sie auf den Musterabschnitt im Dialogfeld „Bearbeiten“ einer Komponente zugreifen. Ausführliche Informationen zu Musterdefinitionen oder -formaten finden Sie unter [Unterstützung für HTML5 Forms](/help/forms/using/picture-clause-support.md). 
 
 Führen Sie die folgenden Schritte durch, um ein benutzerdefiniertes Muster für einen bestimmten Feldtyp zu erstellen und ihn für alle Felder desselben Typs wiederzuverwenden:
 
 1. Navigieren Sie auf Ihrer Authoring-Instanz zu CRXDE Lite.
-1. Erstellen Sie einen Ordner zum Aufbewahren Ihrer benutzerdefinierten Muster. Erstellen Sie im Ordner „/apps“ einen Knoten des Typs „sling:folder“. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und geben Sie ihm den Namen `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
+1. Erstellen Sie einen Ordner zum Aufbewahren Ihrer benutzerdefinierten Muster. Erstellen Sie im Ordner „/apps“ einen Knoten des Typs „sling:folder“. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und nennen Sie ihn `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox*.
 1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert von `guideComponentType` *fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
 1. Sie können ein benutzerdefiniertes Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das hinzuzufügende Muster fest. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![In CrxDe benutzerdefinierte Muster für Felder erstellen](assets/creating-custom-patterns.png)
-   **Abbildung:** *Erstellen von benutzerdefinierten Mustern*
-
+   **Abbildung:** *Erstellen benutzerdefinierter Muster*
