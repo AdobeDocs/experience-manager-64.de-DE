@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 70%
 
 ---
 
-
 # Auswahl der Benutzeroberfläche{#selecting-your-ui}
 
-## Die Benutzeroberfläche
+## Grundlegendes zu den Benutzeroberflächen
 
 Die Autorenumgebung ermöglicht Folgendes:
 
@@ -53,9 +52,9 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
-## Wechseln der Benutzeroberfläche
+## Wechseln von Benutzeroberflächen
 
-Obwohl die touchfähige Benutzeroberfläche jetzt die Standard-Benutzeroberfläche ist und [Funktionsparität](../release-notes/touch-ui-features-status.md) bei der Verwaltung und Bearbeitung von Sites fast erreicht wurde, kann es manchmal vorkommen, dass der Benutzer zur [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md) wechseln möchte. Dazu stehen mehrere Optionen zur Verfügung.
+Obwohl die Touch-optimierte Benutzeroberfläche jetzt die Standard-Benutzeroberfläche ist und [Funktionsparität](../release-notes/touch-ui-features-status.md) bei der Verwaltung und Bearbeitung von Sites fast erreicht wurde, kann es vorkommen, dass der Benutzer zur [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md) wechseln möchte. Dazu stehen mehrere Optionen zur Verfügung.
 
 >[!NOTE]
 >
@@ -63,11 +62,11 @@ Obwohl die touchfähige Benutzeroberfläche jetzt die Standard-Benutzeroberfläc
 
 Sie können an verschiedenen Stellen definieren, welche Benutzeroberfläche verwendet werden soll:
 
-* [Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz](#configuring-the-default-ui-for-your-instance)  - Hiermit wird die Standard-Benutzeroberfläche festgelegt, die bei der Benutzeranmeldung angezeigt wird. Der Benutzer kann dies jedoch überschreiben und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen.
+* [Konfigurieren der Standardbenutzeroberfläche für Ihre Instanz](#configuring-the-default-ui-for-your-instance)  - Dadurch wird die Standardbenutzeroberfläche festgelegt, die bei der Benutzeranmeldung angezeigt wird. Der Benutzer kann dies jedoch außer Kraft setzen und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen.
 
-* [Einrichten des Authoring der klassischen Benutzeroberfläche für Ihr Konto](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) : Hiermit wird festgelegt, dass die Benutzeroberfläche beim Bearbeiten von Seiten standardmäßig verwendet wird. Der Benutzer kann dies jedoch überschreiben und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen.
+* [Festlegen der klassischen Benutzeroberflächen-Bearbeitung für Ihr Konto](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  - Dadurch wird die Benutzeroberfläche festgelegt, die beim Bearbeiten von Seiten als Standard verwendet wird. Der Benutzer kann dies jedoch außer Kraft setzen und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen.
 
-* [Wechsel zur klassischen Benutzeroberfläche für die aktuelle Sitzung](#switching-to-classic-ui-for-the-current-session) : Diese Option wechselt zur klassischen Benutzeroberfläche für die aktuelle Sitzung.
+* [Wechseln zur klassischen Benutzeroberfläche für die aktuelle Sitzung](#switching-to-classic-ui-for-the-current-session)  - Wechsel zur klassischen Benutzeroberfläche für die aktuelle Sitzung.
 
 * Bei der [Seitenbearbeitung überschreibt das System einige Einstellungen bezüglicher der Benutzeroberfläche](#ui-overrides-for-the-editor).
 
@@ -75,13 +74,13 @@ Sie können an verschiedenen Stellen definieren, welche Benutzeroberfläche verw
 >
 >Verschiedene Optionen für den Wechsel zur klassischen Benutzeroberfläche sind nicht vorkonfiguriert. Sie müssen speziell für Ihre Instanz konfiguriert werden.
 >
->Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
+>Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md) .
 
 >[!NOTE]
 >
 >Instanzen, bei denen ein Upgrade von einer früheren Version durchgeführt wurde, behalten die klassische Benutzeroberfläche für die Seitenbearbeitung bei.
 >
->Nach der Aktualisierung wird das Seiten-Authoring nicht automatisch auf die touchfähige Benutzeroberfläche umgestellt. Sie können dies jedoch mithilfe der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) des **WCM Authoring UI Mode Service** ( `AuthoringUIMode`-Dienst) konfigurieren. Weitere Informationen dazu finden Sie unter [Benutzeroberflächenüberschreibung für den Editor](#ui-overrides-for-the-editor).
+>Nach der Aktualisierung wird die Seitenbearbeitung nicht automatisch auf die Touch-optimierte Benutzeroberfläche umgestellt. Sie können dies jedoch mit der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) des **WCM Authoring UI Mode Service** ( `AuthoringUIMode`-Dienst) konfigurieren. Weitere Informationen dazu finden Sie unter [Benutzeroberflächenüberschreibung für den Editor](#ui-overrides-for-the-editor).
 
 ## Configuring the Default UI for Your Instance {#configuring-the-default-ui-for-your-instance}
 
@@ -89,7 +88,7 @@ Ein Systemadministrator kann die bei Start und Anmeldung angezeigte Benutzerober
 
 Diese Einstellungen kann durch Benutzerstandards oder Sitzungseinstellungen überschrieben werden.
 
-## Festlegen der klassischen Autorenbenutzeroberfläche für Ihr Konto {#setting-classic-ui-authoring-for-your-account}
+## Festlegen der klassischen Autorenbenutzeroberfläche für Ihr Konto  {#setting-classic-ui-authoring-for-your-account}
 
 Jeder Benutzer kann über seine [Benutzereinstellungen](/help/sites-authoring/user-properties.md) definieren, ob die klassische Benutzeroberfläche (statt der Standard-Benutzeroberfläche) zur Seitenbearbeitung verwendet werden soll.
 
@@ -106,17 +105,17 @@ Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Benutzer viell
    >Die Option für den Wechsel zur klassischen Benutzeroberfläche ist nicht vorkonfiguriert. Sie muss speziell für Ihre Instanz konfiguriert werden.
    >
    >
-   >Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
+   >Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md) .
 
    Wenn diese Funktion aktiviert ist, erscheint immer, wenn Sie die Maus über eine entsprechende Konsole bewegen, ein Symbol (eines Bildschirms). Wenn Sie darauf tippen/klicken, öffnet sich der entsprechende Bereich in der klassischen Benutzeroberfläche.
 
    Zum Beispiel die Verknüpfungen von **Sites** zu **siteadmin**: 
 
-   ![screen_shot_2018-03-23at11924](assets/screen_shot_2018-03-23at111924.png)
+   ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
 * **URL**
 
-   Der Zugriff auf die klassische Benutzeroberfläche erfolgt über die URL für den Startbildschirm unter `welcome.html`. Beispiel:
+   Der Zugriff auf die klassische Benutzeroberfläche erfolgt über die URL für den Begrüßungsbildschirm unter `welcome.html`. Beispiel:
 
    `http://localhost:4502/welcome.html`
 
@@ -133,7 +132,7 @@ Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Benutzer viell
 >
 >Die Option für den Wechsel zur klassischen Benutzeroberfläche ist nicht vorkonfiguriert. Sie muss speziell für Ihre Instanz konfiguriert werden.
 >
->Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
+>Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md) .
 
 Sofern aktiviert, ist die Option **Klassische Benutzeroberfläche öffnen** im Dialogfeld **Seiteninformationen** verfügbar: 
 
@@ -145,17 +144,17 @@ Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen könn
 
 * Beim Bearbeiten von Seiten:
 
-   * Die Verwendung des klassischen Editors ist beim Zugriff auf die Seite mit `cf#` in der URL erzwungen. Beispiel:
+   * Die Verwendung des klassischen Editors wird erzwungen, wenn auf die Seite über `cf#` in der URL zugegriffen wird. Beispiel:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Die Verwendung des touchfähigen Editors ist erzwungen, wenn `/editor.html` in der URL oder bei der Verwendung eines Touch-Geräts verwendet wird. Beispiel:
+   * Die Verwendung des Touch-optimierten Editors wird erzwungen, wenn `/editor.html` in der URL verwendet oder ein Touch-Gerät verwendet wird. Beispiel:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Jede erzwungene Einstellung ist temporär und nur für die aktuelle Browsersitzung gültig.
 
-   * Ein Cookie-Satz wird je nachdem eingestellt, ob eine Touch-aktivierte ( `editor.html`) oder eine klassische ( `cf#`) verwendet wird.
+   * Ein festgelegtes Cookie hängt davon ab, ob Touch-optimierte ( `editor.html`) oder klassische ( `cf#`) Cookies verwendet werden.
 
 * Beim Öffnen von Seiten über `siteadmin` wird nach Folgendem gesucht:
 
@@ -175,6 +174,5 @@ Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen könn
 >* Verwendung beider Editoren zur selben Zeit, z. B. in separaten Fenstern
 
 >
-
 
 
