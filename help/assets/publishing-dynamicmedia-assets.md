@@ -1,14 +1,13 @@
 ---
 title: Veröffentlichen von Dynamic Media-Assets
-description: So veröffentlichen Sie Dynamic Media-Assets einschließlich HTTP/2-Versand dieser Assets.
+description: Veröffentlichen von Dynamic Media-Assets einschließlich der HTTP/2-Bereitstellung dieser Assets.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: ebe30c07-1d76-4338-b301-49591f981688
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '411'
@@ -16,7 +15,7 @@ ht-degree: 95%
 
 ---
 
-# Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
+# Veröffentlichen von Dynamic Media-Assets   {#publishing-dynamic-media-assets}
 
 Sie veröffentlichen Dynamic Media-Assets, indem Sie die Assets auswählen und auf das Symbol **[!UICONTROL Veröffentlichen]** tippen. Nachdem Dynamic Media-Assets veröffentlicht wurden, können Sie sie per URL oder Einbetten in eine Web-Seite aufnehmen.
 
