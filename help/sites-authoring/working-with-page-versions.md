@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 96%
 
 ---
-
 
 # Arbeiten mit Seitenversionen{#working-with-page-versions}
 
@@ -26,7 +25,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version   {#creating-a-new-version}
+## Erstellen einer neuen Version    {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
@@ -127,7 +126,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-authoring/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp   {#timewarp}
+## Timewarp  {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -168,4 +167,4 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
