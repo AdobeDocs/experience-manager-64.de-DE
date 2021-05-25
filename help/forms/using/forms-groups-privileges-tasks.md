@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 98%
 
 ---
 
-
-# AEM Forms für OSGi-Gruppen und -Berechtigungen {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms für OSGi-Gruppen und -Berechtigungen  {#aem-forms-on-osgi-groups-and-privileges}
 
 Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
 
@@ -114,4 +113,3 @@ Sobald Sie [AEM Forms Add-On-Paket](/help/forms/using/installing-configuring-aem
 
 1. Der Benutzer mit Berechtigungen für Formularbenutzergruppen kann keine Skripte für adaptive Formulare schreiben.
 1. Der Benutzer mit Gruppenberechtigungen für Vorlagenautoren kann keine Skripte für Vorlagen schreiben.
-
