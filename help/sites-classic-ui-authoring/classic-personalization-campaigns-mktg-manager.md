@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 63bf891c-572a-40e0-945f-d20a0a029224
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 95%
 
 ---
-
 
 # Arbeiten mit dem Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
@@ -49,13 +48,13 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
       Wenn Sie ein bestimmtes Segment auswählen, wird die Segment-Definitionsseite geöffnet.
 
    * [Berichte](/help/sites-administering/reporting.md)\
-      AEM stellt verschiedene Berichte bereit, mit denen Sie den Status Ihrer Instanz analysieren und überwachen können. In diesem MCM-Bereich werden die Berichte angezeigt.
+      AEM bietet verschiedene Berichte, mit denen Sie den Status Ihrer Instanz analysieren und überwachen können. In diesem MCM-Bereich werden die Berichte angezeigt.
 
       Wenn Sie einen Bericht auswählen, wird die Berichtseite geöffnet.
 
    * [Kampagnen](#campaigns)
 
-      In diesem Bereich werden die Erlebnisse Ihrer Kampagne wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) Liste.
+      In diesem Bereich werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) aufgelistet.
 
 * **[Leads](#leads)**
 
@@ -75,7 +74,7 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
 Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead-)Listen, Segmente, Berichte und Kampagnen bieten. Hier können Sie ebenfalls auf die entsprechenden Grundfunktionen zugreifen.
 
-![mcm_Dashboard](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ## Leads {#leads}
 
@@ -136,7 +135,7 @@ Klicken Sie im MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreif
 
    Sie können darauf doppelklicken, um die Markenübersicht anzuzeigen.
 
-#### Markenübersicht {#brand-overview}
+#### Markenübersicht  {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
@@ -186,7 +185,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * Erstellen Sie eine **Neu...** Erlebnis; zum Beispiel Adobe Target-Angebote, Teaser und Newsletter.
+   * Erstellen Sie eine **Neu...** Erlebnis; z. B. Adobe Target-Angebote, Teaser und Newsletter.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
@@ -202,7 +201,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet und das gewählte Erlebnis wird angezeigt (so, wie der Besucher es sieht).
 
-![mcm_simulateexperience](assets/mcm_simulateexperience.png)
+![mcm_simateexperience](assets/mcm_simulateexperience.png)
 
 Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um zum Bearbeitungsmodus zu wechseln und die Seite zu aktualisieren.
 
@@ -210,5 +209,4 @@ Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen 
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
 
-![mcm_campaign analyze](assets/mcm_campaignanalyze.png)
-
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
