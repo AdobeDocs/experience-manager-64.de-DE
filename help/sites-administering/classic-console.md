@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 66%
 
 ---
-
 
 # Tagging-Konsole der klassischen Benutzeroberfläche{#classic-ui-tagging-console}
 
@@ -28,11 +27,11 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 * In der Autoreninstanz:
 * Melden Sie sich mit Administratorrechten an.
-* zur Konsole navigieren
+* Zur Konsole navigieren
 
-   zum Beispiel [http://localhost:4502/tagging](http://localhost:4502/tagging)
+   Beispiel: [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
-![managing_tags_usingThetagasadministrationConsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
+![managing_tags_using_thetagasadministrationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
 ## Erstellen von Tags und Namespaces {#creating-tags-and-namespaces}
 
@@ -50,12 +49,12 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
    * **Titel**
 (
-*Erforderlich*) Der Anzeigentitel des Tags. Jedes Zeichen kann eingegeben werden,
+*Erforderlich*) Der Anzeigetitel für das Tag. Auch wenn beliebige Zeichen eingegeben werden können,
 
       Es wird empfohlen, diese Sonderzeichen nicht zu verwenden:
 
-      * `colon (:)` - Namensraum-Trennzeichen
-      * `forward slash (/)` - Trennzeichen für Untertags
+      * `colon (:)` - Namespace-Trennzeichen
+      * `forward slash (/)` - Trennzeichen für untergeordnete Tags
 
       Diese Zeichen werden möglicherweise nicht angezeigt, wenn sie eingegeben werden.
 
@@ -70,14 +69,14 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
    * Wählen Sie **Erstellen** aus.
 
 
-## Bearbeiten von Tags {#editing-tags}
+## Bearbeiten von Tags  {#editing-tags}
 
 1. Wählen Sie im rechten Fenster das zu bearbeitende Tag aus.
 1. Klicken Sie auf **Bearbeiten**.
 1. Sie können **Titel** und **Beschreibung** ändern.
 1. Klicken Sie auf **Speichern**, um das Dialogfeld zu schließen.
 
-## Löschen von Tags  {#deleting-tags}
+## Löschen von Tags {#deleting-tags}
 
 1. Wählen Sie im rechten Bedienfeld das zu löschende Tag aus.
 1. Klicken Sie auf **Löschen**.
@@ -94,7 +93,7 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 **Liste** öffnet ein neues Fenster, das die Pfade zu allen Seiten enthält, die das markierte Tag verwenden:
 
-![liste_show_wortagsarreferences](assets/list_showing_wheretagsarereferenced.png)
+![list_show_whetagsarreferenziert](assets/list_showing_wheretagsarereferenced.png)
 
 ## Verschieben von Tags {#moving-tags}
 
@@ -115,7 +114,7 @@ Das Dialogfeld **Tag verschieben** hat folgende Gestalt:
 
 >[!NOTE]
 >
->Autoren sollten Tags nicht verschieben und auch keine Tag-ID ändern. Bei Bedarf sollten Autoren die Tag-Titel nur [ändern.](#editing-tags)
+>Autoren sollten Tags nicht verschieben und auch keine Tag-ID ändern. Bei Bedarf sollten Autoren nur [die Tag-Titel](#editing-tags) ändern.
 
 ## Zusammenführen von Tags {#merging-tags}
 
@@ -131,7 +130,7 @@ So führen Sie Tags zusammen:
 
 1. Klicken Sie auf **Zusammenführen**.
 
-Das Dialogfeld **Tag zusammenführen** sieht wie folgt aus:
+Das Dialogfeld **Tag** zusammenführen sieht wie folgt aus:
 
 ![mergetag](assets/mergetag.png)
 
@@ -148,10 +147,10 @@ Die optionale Eigenschaft `title` eines Tags kann in mehrere Sprachen übersetzt
 
 ### Festlegen von Tag-Titeln in verschiedenen Sprachen {#defining-tag-titles-in-multiple-languages}
 
-Das folgende Verfahren zeigt, wie die `title`des Tags **Tiere** in Englisch, Deutsch und Französisch übersetzt werden kann:
+Das folgende Verfahren zeigt, wie die `title`des Tags **Animals** in Englisch, Deutsch und Französisch übersetzt werden:
 
-1. Gehen Sie zur Konsole **Tagging**.
-1. Bearbeiten Sie das Tag **Tiere** unter **Tags** > **Lagerfotografie**.
+1. Wechseln Sie zur Konsole **Tagging** .
+1. Bearbeiten Sie das Tag **Animals** unter **Tags** > **Bildarchiv**.
 1. Fügen Sie Übersetzungen in den folgenden Sprachen hinzu:
 
    * **Englisch**: Animals
@@ -170,22 +169,21 @@ Wie Sie dem Dialogfeld eine neue Sprache hinzufügen, erfahren Sie im Abschnitt 
 
 ### Anzeigen von Tag-Titeln in Seiteneigenschaften in der angegebenen Sprache {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Standardmäßig wird das Tag `titles`in den Seiteneigenschaften in der Seitensprache angezeigt. Das Tag-Dialogfeld in den Seiteneigenschaften verfügt über ein Sprachfeld, das die Anzeige des Tags `titles`in einer anderen Sprache ermöglicht. Das folgende Verfahren beschreibt, wie das Tag `titles`auf Französisch angezeigt wird:
+Standardmäßig wird das Tag `titles`in den Seiteneigenschaften in der Seitensprache angezeigt. Das Tag-Dialogfeld in den Seiteneigenschaften verfügt über ein Sprachfeld, das die Anzeige des Tags `titles`in einer anderen Sprache ermöglicht. Im folgenden Verfahren wird beschrieben, wie Sie das Tag `titles`auf Französisch anzeigen:
 
-1. Im vorherigen Abschnitt können Sie die französische Übersetzung zu **Tiere** unter **Tags** > **Lagerfotografie** hinzufügen.
+1. Gehen Sie wie im vorherigen Abschnitt beschrieben vor, um die französische Übersetzung zu **Animals** unter **Tags** > **Stock Fotografy** hinzuzufügen.
 1. Öffnen Sie die Seiteneigenschaften der Seite **Products** in der englischsprachigen Verzweigung der **Geometrixx**-Website.
-1. Öffnen Sie das Dialogfeld **Tags/Suchbegriffe** (durch Auswahl des Pulldown-Menüs rechts neben dem Anzeigebereich &quot;Tags/Suchbegriffe&quot;) und wählen Sie die Sprache **Französisch** aus dem Pulldown-Menü in der unteren rechten Ecke aus.
-1. Blättern Sie mit den Pfeiltasten nach links rechts, bis Sie die Registerkarte **Lagerfotografie** auswählen können.
+1. Öffnen Sie das Dialogfeld **Tags/Keywords** (indem Sie das Pulldown-Menü rechts neben dem Anzeigebereich Tags/Keywords auswählen) und wählen Sie die Sprache **Französisch** aus dem Pulldown-Menü in der unteren rechten Ecke aus.
+1. Scrollen Sie mit den Nach-links-Rechts-Pfeilen, bis Sie die Registerkarte **Stock Fotografy** auswählen können.
 
-   Wählen Sie das Tag **Tiere** (**Animaux**) und wählen Sie außerhalb des Dialogfelds aus, um es zu schließen und das Tag den Seiteneigenschaften hinzuzufügen.
+   Wählen Sie das Tag **Animals** (**Animaux**) und wählen Sie außerhalb des Dialogfelds aus, um es zu schließen und das Tag den Seiteneigenschaften hinzuzufügen.
 
-   ![fbeispielsweise_tag](assets/french_tag.png)
+   ![fschlüssel_tag](assets/french_tag.png)
 
-Standardmäßig wird im Dialogfeld &quot;Seiteneigenschaften&quot;das Tag `titles`entsprechend der Sprache der Seite angezeigt.
+Standardmäßig zeigt das Dialogfeld Seiteneigenschaften das Tag `titles`entsprechend der Seitensprache an.
 
 Die Sprache für das Tag wird im Allgemeinen von der Seitensprache übernommen, falls diese eingestellt ist. Wird das Widget [tag in anderen Fällen verwendet (z. B. in Formularen oder Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
 >[!NOTE]
 >
->Die Tag-Cloud und die Meta-Suchbegriffe in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, sofern verfügbar.
-
+>Die Tag-Cloud und die Meta-Schlüsselwörter in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, sofern verfügbar.
