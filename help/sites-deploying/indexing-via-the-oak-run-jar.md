@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 98%
 
 ---
-
 
 # Indizieren mit dem Oak-run JAR{#indexing-via-the-oak-run-jar}
 
@@ -51,7 +50,7 @@ Nachstehend finden Sie eine Liste von Anwendungsfällen, die Sie bei der Durchf�
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
-## Neuindizierung der Entscheidungsstruktur des Ansatzes {#reindexingapproachdecisiontree}
+## Entscheidungsbaum für Neuindizierungsansätze {#reindexingapproachdecisiontree}
 
 Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen Neuindizierungsansätze.
 
@@ -63,7 +62,7 @@ Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen 
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Anwendungsfall 3 - Neuindizierung](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
-### Textvorextraktion für SegmentNodeStore und DocumentNodeStore {#textpre-extraction}
+### Textvorextraktion für SegmentNodeStore und DocumentNodeStore  {#textpre-extraction}
 
 Die [Textvorextraktion](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (eine Funktion, die mit AEM 6.3 eingeführt wurde) kann genutzt werden, um die Zeit für die Neuindizierung zu verkürzen. Die Textvorextraktion kann mit allen Neuindizierungsansätzen verwendet werden.
 
@@ -182,4 +181,3 @@ Wenn die Dauer der Neuindizierung oder die Auswirkung auf die Performance bei Ni
 Wenn die Dauer der Neuindizierung oder die Auswirkung auf die Performance bei Nicht-`oak-run.jar`-Methoden zu hoch ist, kann der folgende auf `oak-run.jar` basierende Ansatz genutzt werden, um Lucene-Indexdefinitionen in eine MongoMK-basierte AEM-Installation zu importieren und neu zu indizieren.
 
 ![11](assets/11.png)
-
