@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 92%
 
 ---
 
-
-# XDP- und PDF-Dokumente in AEM Forms übernehmen {#getting-xdp-and-pdf-documents-in-aem-forms}
+# XDP- und PDF-Dokumente in AEM Forms übernehmen  {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Überblick {#overview}
 
@@ -28,15 +27,15 @@ Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository import
 * PDF-Formulare
 * Dokumente (reduzierte PDF-Dokumente)
 
-Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset des Typs `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
+Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset vom Typ `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, damit Sie XDP-Dateien hochladen können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
+>Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, um XDP-Dateien hochladen zu können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
 
-## Hochladen von Formularen {#uploading-forms}
+## Hochladen von Formularen  {#uploading-forms}
 
-1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche an, indem Sie auf `https://[server]:[port]/aem/forms.html` zugreifen.
+1. Melden Sie sich über `https://[server]:[port]/aem/forms.html` bei der AEM Forms-Benutzeroberfläche an.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
 1. Auf der Aktionensymbolleiste klicken Sie auf **Erstellen > Datei hochladen**.
 
@@ -68,7 +67,7 @@ AEM Forms-Server ermöglicht es Ihnen, JavaScript-Code auszuführen. Ein schadha
 
 Der abgesicherte Modus ist standardmäßig aktiviert. Bei Bedarf können Sie den abgesicherten Modus deaktivieren:
 
-1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. Die URL lautet `https://[server]:[port]/system/console/configMgr`
+1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. Die URL lautet `https://[server]:[port]/system/console/configMgr` .
 1. Öffnen Sie Mobile Forms Konfigurationen für die Bearbeitung.
 1. Wählen Sie die Option „Abgesicherter Modus“ und klicken Sie auf **Speichern**. Der abgesicherte Modus ist deaktiviert.
 
@@ -89,4 +88,3 @@ Wenn eine Formularvorlage entfernt wird, wird das abhängige adaptive Formular b
 Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Nur bei schmutzigen adaptiven Formularen zeigt die Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
 
 ![Kennzeichnung eines adaptiven Formular, das mit dem XFA-Modell nicht synchronisiert ist](assets/model-refresh.png)
-
