@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Korrespondenzverwaltung
+exl-id: 5e9f8e0f-209e-4613-b230-2b826b46ba6b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
-
 
 # Texteditor anpassen {#customize-text-editor}
 
@@ -33,15 +32,15 @@ Sie können die Folgendes in den Einstellungen für die Schriftart ändern:
 
 Wenn Sie so verfahren, müssen Sie folgende Schritte durchführen:
 
-1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten](#customizefonts) 
+1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten ](#customizefonts)
 1. [Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu](#addcustomfonts)
 
 ## Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten  {#customizefonts}
 
-Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxeditor-config.xml&quot;anzupassen:
+Anpassen von Schriften durch Bearbeiten der Datei tbxeditor-config.xml führen Sie folgende Schritte durch:
 
 1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, und führen Sie dabei die folgenden Schritte aus:
+1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur zum config-Ordner, der sich unter libs/fd/cm/config befindet, indem Sie die folgenden Schritte ausführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner items im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -53,7 +52,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
       **Pfad:** /libs/fd/cm/config
 
-      **Ort:** /Apps/
+      **Speicherort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -70,11 +69,11 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
       `apps/fd/cm/config`
 
-   1. Der Name der eingefügten Datei lautet standardmäßig `copy of tbxeditor-config.xml.` Benennen Sie die Datei in `tbxeditor-config.xml` um und klicken Sie auf **Alle speichern**.
+   1. Der Name der eingefügten Datei ist standardmäßig `copy of tbxeditor-config.xml.` Benennen Sie die Datei in `tbxeditor-config.xml` um und klicken Sie auf **Alle speichern**.
 
-1. Öffnen Sie die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config und nehmen Sie dann die erforderlichen Änderungen vor.
+1. Öffnen Sie die Datei tbxeditor-config.xml unter apps/fd/cm/config und nehmen Sie dann die erforderlichen Änderungen vor.
 
-   1. Klicken Sie bei gedrückter Dublette auf die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config. Die Datei wird geöffnet.
+   1. Doppelklicken Sie auf die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config. Die Datei wird geöffnet.
 
       ```xml
       <editorConfig>
@@ -168,14 +167,14 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
       * Standardwerte von Schriftfamilie und -grad, Höhe, Zeichenabstand und Datumsformat
       * Einzüge für Aufzählungszeichen 
 
-      Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes eintragen in der  XML-Datei: `<font>Sazanami Mincho Medium</font>`. Sie müssen diese Schriftart auch auf dem Clientcomputer installieren, der zum Zugriff auf die Schriftartanpassung und zum Arbeiten mit ihr verwendet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
+      Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes eintragen in der  XML-Datei: `<font>Sazanami Mincho Medium</font>`. Sie müssen diese Schriftart auch auf dem Clientcomputer installieren, der für den Zugriff auf die Schriftartanpassung und die Bearbeitung dieser Schriftart verwendet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
 
-      Sie können auch die Standardeinstellungen für verschiedene Aspekte des Textes ändern und durch Entfernen der Einträge die Schriftarten aus dem Texteditor entfernen.
+      Sie können auch die Standardeinstellungen für verschiedene Aspekte des Textes ändern und die Schriftarten aus dem Texteditor entfernen, indem Sie die Einträge entfernen.
 
    1. Klicken Sie auf **Alle speichern**.
 
 
-## Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu  {#addcustomfonts}
+## Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
 
 Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, muss sie auf dem Client-Computer vorhanden sein, den Sie für den Zugriff auf Correspondence Management verwenden. Um eine benutzerdefinierte Schriftart im Texteditor verwenden zu können, müssen Sie diese zunächst auf dem Clientcomputer installieren.
 
@@ -186,13 +185,12 @@ Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
 ## Zugriff auf Schriftartanpassungen {#access-font-customizations}
 
-Nachdem Sie Änderungen an den Schriftarten in der Datei &quot;tbxeditor-config.xml&quot;in CRX vorgenommen und die erforderlichen Schriftarten auf dem Clientcomputer installiert haben, der für den Zugriff auf AEM Forms verwendet wird, werden die Änderungen im Texteditor angezeigt.
+Nachdem Sie in der Datei tbxeditor-config.xml in CRX Änderungen an Schriftarten vorgenommen und die erforderlichen Schriftarten auf dem Clientcomputer installiert haben, der für den Zugriff auf AEM Forms verwendet wird, werden die Änderungen im Texteditor angezeigt.
 
-Beispielsweise wird die Schriftart Sazanami Mincho Medium, die im Verfahren [Schriftarten durch Bearbeiten der Datei &quot;tbxeditor-config.xml&quot;in CRX](#customizefonts) hinzugefügt wurde, in der Benutzeroberfläche des Texteditors wie folgt angezeigt:
+Beispielsweise wird die Schriftart Sazanami Mincho Medium, die im Verfahren [Schriftarten anpassen hinzugefügt wurde, indem die Datei tbxeditor-config.xml in CRX](#customizefonts) bearbeitet wird, in der Benutzeroberfläche des Texteditors wie folgt angezeigt:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >
 >Damit Text auf Japanisch angezeigt wird, müssen Sie zuerst den Text mit japanischen Zeichen eingeben. Die Anwendung einer benutzerdefinierten japanischen Schriftart formatiert nur den Text auf eine bestimmte Art. Die Anwendung einer benutzerdefinierten japanischen Schriftart ändert englische oder andere Zeichen nicht in japanische Schriftzeichen.
-
