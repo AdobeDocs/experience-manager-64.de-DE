@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 70%
 
 ---
-
 
 # AEM DS-Einstellungen konfigurieren {#configuring-aem-ds-settings}
 
@@ -31,7 +30,7 @@ Dieser Artikel beschreibt, wie Sie den **AEM DS-Einstellungen-Dienst** konfiguri
 
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellungen]** zu konfigurieren:
 
-1. Öffnen Sie Configuration Manager mithilfe der URL in der Veröffentlichungsinstanz:
+1. Öffnen Sie Configuration Manager mithilfe der URL auf der Veröffentlichungsinstanz:
 
    *http://localhost:port/system/console/configMgr*.
 
