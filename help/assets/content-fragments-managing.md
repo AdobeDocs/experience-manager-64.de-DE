@@ -10,9 +10,8 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '1511'
@@ -32,7 +31,7 @@ Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher haupts
 >
 >Inhaltsfragmente werden dann für erstellte Seiten verwendet. Weitere Informationen finden Sie unter [Seitenerstellung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
+## Erstellen von Inhaltsfragmenten   {#creating-content-fragments}
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
@@ -122,7 +121,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder die [Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
+>Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder das [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -155,7 +154,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    * Varianten: [Bearbeiten des Inhalts](#editing-the-content-of-your-fragment) und [Verwalten Ihrer Varianten](#creating-and-managing-variations-within-your-fragment)
    * [Anmerkungen](content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
-   * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Metadaten  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
