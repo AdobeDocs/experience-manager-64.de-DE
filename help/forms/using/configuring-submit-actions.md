@@ -7,28 +7,27 @@ uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 78%
 
 ---
 
-
 # Konfigurieren der Sendeaktion {#configuring-the-submit-action}
 
-## Einführung in die Übermittlungsaktionen {#introduction-to-submit-actions}
+## Einführung in Übermittlungsaktionen {#introduction-to-submit-actions}
 
 Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßige Übermittlungsaktion kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten.
 
-Wenn ein Formular vorausgefüllt oder gesendet wird, werden die gesendeten Daten AEM für die Datenmassage in Zwischenformate weitergeleitet. Daten werden nicht auf einer AEM gespeichert, es sei denn, das adaptive Formular verwendet Adobe Sign, verifizieren, Formularportalentwurf oder Senden oder AEM Workflows
+Wenn ein Formular vorausgefüllt oder übermittelt wird, werden die gesendeten Daten durch AEM zur Datenmassage in Zwischenformate weitergeleitet. Daten werden nicht in einer AEM-Instanz gespeichert, es sei denn, das adaptive Formular verwendet Adobe Sign, überprüft, Formularportalentwürfe, -übermittlungen oder AEM Workflows.
 
 Sie können eine Sendeaktion in der Seitenleiste im Bereich **[!UICONTROL Senden]** des „Container für adaptive Formulare“ konfigurieren.
 
 ![Konfigurieren der ](assets/thank-you-setting.png)
-**ÜbermittlungsaktionAbbildung:Übermittlungsaktion** *konfigurieren*
+**SendeaktionAbbildung:** *Konfigurieren der Sendeaktion*
 
 Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmäßig zur Verfügung:
 
@@ -46,11 +45,11 @@ Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmä�
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [AEM_Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM folder exists. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
+>Stellen Sie sicher, dass [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder exists. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
 
 >[!CAUTION]
 >
->Wenn Sie eine Formularvorlage, ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mit XML- oder JSON-Daten an ein Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) ausfüllen, das keine Daten enthält, die die Tags &lt;afData>, &lt;afBoundData> und &lt;/afUnboundData> enthalten, dann die Daten ungebundene Felder (Nicht gebundene Felder sind adaptive Formularfelder ohne [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md)-Eigenschaft) des adaptiven Formulars gehen verloren.[](/help/forms/using/prepopulate-adaptive-form-fields.md)
+>Wenn Sie eine Formularvorlage, ein Formulardatenmodell oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten-Reklamation an ein Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) ausfüllen, das keine Daten enthält, die die Tags &lt;afData>, &lt;afBoundData> und &lt;/afUnboundData> enthalten, dann die Daten von unbegrenzten Feldern (Ungebundene Felder sind adaptive Formularfelder ohne die Eigenschaft [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md)) des adaptiven Formulars.[](/help/forms/using/prepopulate-adaptive-form-fields.md)
 
 Sie können eine benutzerdefinierte Übermittlungsaktion für adaptive Formulare entsprechend des Anwendungsfalls schreiben. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
 
@@ -77,15 +76,15 @@ Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die 
 
 Stellen Sie den Pfad der Ressource bereit, um Daten an einen internen Server zu veröffentlichen. Die Daten werden an den Pfad der Ressource veröffentlicht. Beispiel: /content/restEndPoint. Für diese POST-Anforderungen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
-Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentlichen. Das Format der URL lautet https:// host:port/path_to_rest_end_point. Stellen Sie sicher, dass Sie den Pfad zum Konfigurieren der POST-Anforderung anonym bearbeiten.
+Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentlichen. Das Format der URL ist https:// host:port/path_to_rest_end_point. Stellen Sie sicher, dass Sie den Pfad zum Konfigurieren der POST-Anforderung anonym bearbeiten.
 
 ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Danksagungsseite](assets/post-enabled-actionconfig.png)
 
-Im obigen Beispiel wird der in `textbox` eingegebene Benutzer mithilfe des Parameters `param1` erfasst. Die Syntax zum Posten von mit `param1` erfassten Daten lautet:
+Im obigen Beispiel werden vom Benutzer Informationen in `textbox` mithilfe des Parameters `param1` erfasst. Die Syntax zum Posten von Daten, die mit `param1` erfasst wurden, lautet:
 
 `String data=request.getParameter("param1");`
 
-Gleichermaßen sind die Parameter `dataXml` und `attachments`, die Sie zum Veröffentlichen von XML-Daten und -Anlagen verwenden.
+Gleichermaßen werden für das Posten von XML-Daten und -Anhängen `dataXml` und `attachments` Parameter verwendet.
 
 Beispielsweise können Sie diese beiden Parameter in Ihrem Skript verwenden, um Daten an einem Restendpunkt zu analysieren. Verwenden Sie die folgende Syntax, um Daten zu speichern und zu analysieren: 
 
@@ -96,12 +95,12 @@ In diesem Beispiel speichert `data` die XML-Daten und `att` speichert Anlagendat
 
 ## E-Mail senden {#send-email}
 
-Bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** wird nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet. Die generierte E-Mail kann Formulardaten in einem vordefinierten Formaten enthalten.
+Bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** wird bei erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet. Die generierte E-Mail kann Formulardaten in einem vordefinierten Formaten enthalten.
 
 >[!NOTE]
 Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn sie in verschiedene Fenster platziert werden, um in eine E-Mail Formulardaten einzubinden.
 
-## PDF mittels E-Mail senden {#send-pdf-via-email}
+## PDF mittels E-Mail senden  {#send-pdf-via-email}
 
 Bei der Übermittlungsaktion **[!UICONTROL PDF mittels E-Mail senden]** wird bei erfolgreicher Übermittlung des Formulars an einen oder mehrere Empfänger eine mit einer PDF-Datei gesendet, die Formulardaten enthält.
 
@@ -115,7 +114,7 @@ Weitere Informationen zum Konfigurieren der Sendeaktion „An Formular-Workflow 
 
 ## Senden mit Formulardatenmodell  {#submit-using-form-data-model}
 
-Die Übermittlungsaktion **[!UICONTROL Mit Formulardatenmodell senden]** schreibt gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
+Die Übermittlungsaktion **[!UICONTROL Senden mit Formulardatenmodell]** schreibt gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
 
 Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell und einem Datensatzdokument (Document of Record) an die Datenquelle senden.
 
@@ -135,7 +134,7 @@ Vor der Verwendung von **[!UICONTROL AEM-Workflow aufrufen]** [konfigurieren Sie
 
 ## Serverseitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
-Normalerweise platzieren Entwickler in jedem Online-Datenerfassungssystem einige JavaScript-Überprüfungen auf Clientseite, um einige Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Solche Techniken sind auch für adaptive Formulare gültig. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber Endbenutzer können diese Validierungslogiken technisch umgehen und ungültige Daten an den Server leiten. Ungültige Daten verstoßen gegen die Geschäftsregeln, die der Formularautor durchgesetzt hat.
+In der Regel platzieren Entwickler in jedem Online-Datenerfassungssystem einige JavaScript-Validierungen auf Client-Seite, um einige Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Solche Techniken gelten auch für adaptive Formulare. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber Endbenutzer können diese Validierungslogiken technisch umgehen und ungültige Daten an den Server leiten. Ungültige Daten verstoßen gegen die Geschäftsregeln, die der Formularautor durchgesetzt hat.
 
 Die Funktion für erneute serverseitige Überprüfung enthält die Möglichkeit, auch Validierungen durchzuführen, die von einem Autor für adaptive Formulare beim Entwerfen eines adaptiven Formulars auf dem Server bereitgestellt wurden. Sie verhindert jede mögliche Beeinträchtigung von Datenübertragungen und Verstöße gegen Geschäftsregeln, die in Form von Formularvalidierungen auftreten können.
 
@@ -158,10 +157,10 @@ Wenn der Endbenutzer diese Validierungen umgeht und die Formulare übermittelt, 
 
 ### Unterstützende benutzerdefinierte Funktionen in Überprüfungsausdrücken {#supporting-custom-functions-in-validation-expressions-br}
 
-Bisweilen befindet sich bei komplexen **Validierungsregeln** das exakte Validierungsskript in den benutzerdefinierten Funktionen. Der Autor kann diese benutzerdefinierten Funktionen über den Ausdrück für die Feldvalidierung abrufen. Um diese benutzerdefinierte Funktionsbibliothek bei serverseitigen Überprüfungen bekannt und verfügbar zu machen, kann der Formularverfasser den Namen AEM Client-Bibliothek auf der Registerkarte **[!UICONTROL Einfach]** der Eigenschaften des adaptiven Formular-Containers konfigurieren, wie unten dargestellt.
+Bisweilen befindet sich bei komplexen **Validierungsregeln** das exakte Validierungsskript in den benutzerdefinierten Funktionen. Der Autor kann diese benutzerdefinierten Funktionen über den Ausdrück für die Feldvalidierung abrufen. Um diese benutzerdefinierte Funktionsbibliothek bei serverseitigen Validierungen bekannt und verfügbar zu machen, kann der Formularverfasser den Namen AEM Client-Bibliothek auf der Registerkarte **[!UICONTROL Einfach]** der Eigenschaften des Containers für adaptive Formulare wie unten dargestellt konfigurieren.
 
-![Unterstützung benutzerdefinierter Funktionen in ](assets/clientlib-cat.png)
-**ÜberprüfungsausdrückenAbbildung:** *Unterstützung benutzerdefinierter Funktionen in Ausdrücken*
+![Unterstützende benutzerdefinierte Funktionen in ](assets/clientlib-cat.png)
+**ÜberprüfungsausdrückenAbbildung:** *Unterstützende benutzerdefinierte Funktionen in Überprüfungsausdrücken*
 
 Autor kann benutzerdefinierte JavaScript-Bibliothek pro adaptivem Formular konfigurieren. Bewahren Sie in der Bibliothek nur die wiederverwendbaren Funktionen, die von den Drittanbieter-Bibliotheken „jquery“ und „underscore“ abhängen.
 
