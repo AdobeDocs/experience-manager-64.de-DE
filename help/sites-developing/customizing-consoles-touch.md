@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
-translation-type: tm+mt
-source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 76%
 
 ---
-
 
 # Anpassen der Konsolen{#customizing-the-consoles}
 
@@ -28,7 +27,7 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 
 * Clientlibs 
 
-   Mit clientlibs können Sie die Standardimplementierung erweitern, um neue Funktionen zu realisieren, während Sie die Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen können Sie Ihre eigene clientlib unter `/apps.` erstellen. Sie können beispielsweise den für Ihre benutzerdefinierte Komponente erforderlichen Code speichern.
+   Clientlibs ermöglichen es Ihnen, die Standardimplementierung zu erweitern, um neue Funktionen zu realisieren und gleichzeitig die Standardfunktionen, -objekte und -methoden wiederzuverwenden. Bei der Anpassung können Sie Ihre eigene Client-Bibliothek unter `/apps.` erstellen. Beispielsweise kann sie den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
 * Überlagerungen
 
@@ -42,7 +41,7 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >
 >* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >
 >
@@ -56,7 +55,7 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
    >
    >
 1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
@@ -197,7 +196,7 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    Der erste Eintrag ist die Standardeinstellung.
 
-   Die verfügbaren Nodes korrelieren mit den verfügbaren Optionen für die Ansicht:
+   Die verfügbaren Knoten korrelieren mit den verfügbaren Anzeigeoptionen:
 
    * `column`
    * `card`
@@ -295,7 +294,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Mithilfe der Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die für die Ausführung der spezifischen Aktion zulässig ist. zum Beispiel `administrators`
+   Mithilfe der Eigenschaften dieses Knotens können Sie die `groups` definieren, die für die Ausführung der spezifischen Aktion zulässig ist. Beispiel: `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -393,14 +392,14 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * Wenn Sie zusätzliche Daten einfügen möchten, müssen Sie eine ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` mit einer
+   * Wenn Sie zusätzliche Daten einbinden möchten, müssen Sie einen ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` mit einer
 
-      `pageInfoProviderType`.
+      `pageInfoProviderType` property.
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
 
 1. Sie können jetzt die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
 
-## Filtern von Ressourcen {#filtering-resources}
+## Filtern von Ressourcen  {#filtering-resources}
 
 Ein häufiges Nutzungsszenario beim Verwenden der Konsole ist die Auswahl von Ressourcen (z. B. Seiten, Komponenten, Assets usw.) durch den Benutzer. Dabei kann beispielsweise eine Liste verwendet werden, aus der der Autor ein Element auswählen muss.
 
