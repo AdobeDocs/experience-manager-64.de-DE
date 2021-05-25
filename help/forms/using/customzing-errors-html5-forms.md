@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e8a53976-e9bd-459d-92f5-88527c72428b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 84%
 
 ---
-
 
 # Anpassen von Fehlermeldungen für HTML5-Formulare {#customizing-error-messages-for-html-forms}
 
@@ -39,7 +38,7 @@ Nachdem Sie das Paket entpackt haben, öffnen Sie den Ordner CustomErrorManager-
 
 Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfeld den Tag &lt;div> hinzu. Positionieren Sie den Tag &lt;div> auf der linken oder rechten Seite und wenden Sie auf den Tag &lt;div> CSS-Stile an. Ausführliche Anweisungen finden Sie in unten aufgeführtem Verfahren:
 
-1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT`und öffnen Sie den Ordner `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT`und öffnen Sie den Ordner `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` .
 1. Öffnen Sie die Datei `customErrorManager.js` zur Bearbeitung. Die Funktion `markError` in der Datei akzeptiert die folgenden Parameter:
 
    |  |  |
@@ -121,11 +120,10 @@ Verwenden Sie das angehängte Paket, um die Fehlermeldungen für alle Felder gle
 
 ## Geben Sie das Formular mit dem neuen Profil wieder.  {#render-the-form-with-the-new-profile-nbsp}
 
-Standardmäßig verwenden HTML5-Formulare ein Standard-Profil: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+Standardmäßig verwenden HTML5-Formulare ein Standardprofil: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
 
-Um ein Formular mit den benutzerdefinierten Fehlermeldungen Ansicht, rendern Sie das Formular mit dem Profil error: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+Um ein Formular mit den benutzerdefinierten Fehlermeldungen anzuzeigen, rendern Sie das Formular mit dem Fehlerprofil: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
 
 >[!NOTE]
 >
 >Mit dem angehängten Paket wird das Fehlerprofil installiert.
-
