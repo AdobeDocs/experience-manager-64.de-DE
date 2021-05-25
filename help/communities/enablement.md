@@ -10,46 +10,45 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 9%
 
 ---
-
 
 # Konfiguration von Aktivierungsfunktionen {#configuring-enablement-features}
 
 ## Überblick {#overview}
 
-Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgemeinschaften](overview.md#enablement-community) zu erstellen.
+Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgruppen](overview.md#enablement-community) zu erstellen.
 
-* Für diese Funktion sind zusätzliche Lizenzen für die Verwendung in einer Produktions-Umgebung erforderlich.
+* Diese Funktion erfordert zusätzliche Lizenzen für die Verwendung in einer Produktionsumgebung.
 
 Die Verwendung der Aktivierungsfunktionen erfordert Folgendes:
 
 Installation von:
 
-* **Das**
-SCORMSharable Content Object Reference Model (SCORM) ist eine Sammlung von Standards und Spezifikationen für e-Learning. SCORM definiert auch, wie Inhalte in eine übertragbare ZIP-Datei verpackt werden können.
+* ****
+SCORMSharable Content Object Reference Model (SCORM) ist eine Sammlung von Standards und Spezifikationen für E-Learning. SCORM definiert auch, wie Inhalte in eine übertragbare ZIP-Datei gepackt werden können.
 
 * ****
-MySQLMySQL ist eine relationale Datenbank, die in erster Linie für die SCORM-Verfolgung und die Berichte-Daten für die Aktivierung sowie Tabellen zur Verfolgung des Videofortschritts verwendet wird. Für das SCORM for enable feature pack ist der JDBC-Treiber für MySQL erforderlich.
+MySQLMySQL ist eine relationale Datenbank, die hauptsächlich für SCORM-Tracking- und Reporting-Daten zur Aktivierung sowie Tabellen zur Verfolgung des Videofortschritts verwendet wird. Für das SCORM zur Aktivierung des Feature Packs ist der MySQL JDBC-Treiber erforderlich.
 
-* **FFmpegFFmpeg**
-ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird, falls installiert, für die ordnungsgemäße Transkodierung von  [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) verwendet. Bei Aktivierungs-Communities wird sie in der Autorenressource verwendet, um Metadaten für hochgeladene Umgebung abzurufen und eine Miniaturansicht zu generieren, die bei der Auflistung der Ressource angezeigt werden soll.
+* ****
+FFmpegFFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird, wenn sie installiert ist, für die ordnungsgemäße Transkodierung von  [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) verwendet. Für Aktivierungs-Communities wird sie in der Autorenumgebung verwendet, um Metadaten für hochgeladene Ressourcen abzurufen und eine Miniaturansicht zu generieren, die bei der Auflistung der Ressource angezeigt wird.
 
 Einrichtung von:
 
 * **Community-**
-ManagerFür Communities, die für die Aktivierung gedacht sind, nur Mitglieder der 
-`Community Enablement Managers` Benutzergruppen kann die Rolle zugewiesen werden, zu  `*Community Site* Enablement Manager`deren Berechtigungen die Inhaltserstellung, Zuweisungen und Mitgliederverwaltung in der Umgebung &quot;Veröffentlichen&quot;gehören können.
+ManagerFür Aktivierungsgemeinschaften, nur Mitglieder der 
+`Community Enablement Managers` Benutzergruppen kann die Rolle von zugewiesen werden,  `*Community Site* Enablement Manager`deren Berechtigungen die Erstellung von Inhalten, Zuweisungen und Mitgliederverwaltung in der Veröffentlichungsumgebung umfassen können.
 
 Optionale Konfiguration von:
 
 * **Adobe**
-AnalyticsIntegration mit Adobe Analytics bietet umfassende Funktionen für Berichte und unterstützt die Video Heartbeat-Ergänzung zu Analytics.
+Analytics-Integration mit Adobe Analytics bietet umfassende Berichterstellungsfunktionen und unterstützt die Video Heartbeat-Erweiterung zu Analytics.
 
 * **Dispatcher**
 
@@ -57,66 +56,66 @@ AnalyticsIntegration mit Adobe Analytics bietet umfassende Funktionen für Beric
 
 Im Folgenden werden die Schritte beschrieben, die für die Aktivierung von Communities erforderlich sind.
 
-Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Details enthält.
+Jeder Schritt verlinkt zu einer Dokumentation, die die erforderlichen Details enthält.
 
 **In allen Autoren-/Veröffentlichungsinstanzen:**
 
-1. **[JDBC-Treiber für](deploy-communities.md#jdbc-driver-for-mysql)**
-MySQLUse Web Console (Pakete) installieren: Installieren Sie  *http://localhost:4502/system/console/*
-von PaketenInstallieren Sie  ** vor der Installation des SCORM-Pakets
+1. **[Installieren Sie den JDBC-Treiber für](deploy-communities.md#jdbc-driver-for-mysql)**
+MySQLUse Web Console (Bundles): Installieren Sie  *http://localhost:4502/system/console/*
+bundlesInstallieren Sie  ** vor der Installation des SCORM-Pakets.
 
 1. **[SCORM-](deploy-communities.md#scorm-package)**
-Paket installierenPackage Manager verwenden: 
+Paket installieren Verwenden Sie Package Manager: 
 *http://localhost:4502/crx/packmgr/*
 
 **Auf jedem Server:**
 
 1. **[MySQL, MySQL Workbench installieren](mysql.md)**
 
-1. **[MySQL-](mysql.md#database-setup)**
-Datenbanken installierenSQL-Skripten ausführen, die von der Autoreninstanz heruntergeladen wurden
+1. **[Installieren von MySQL-](mysql.md#database-setup)**
+DatenbankenAusführen von SQL-Skripten, die von der Autoreninstanz heruntergeladen wurden
 \
    MySQL Workbench verwenden
 
-**Auf demselben Server, auf dem die Autoreninstanz gehostet wird:**
+**Auf derselben Server-Hosting-Autoreninstanz:**
 
 1. **[install FFmpeg](ffmpeg.md)**
 
 **In allen Autoren-/Veröffentlichungsinstanzen:**
 
-1. **[JDBC Connections](mysql.md#configure-jdbc-connections)**
-poolVerwenden Sie Web Console (configMgr): 
+1. **[Konfigurieren von JDBC-Verbindungen](mysql.md#configure-jdbc-connections)**
+poolUse Web Console (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[SCORM-Engine-](mysql.md#aem-communities-scormengine-service)**
-Dienst konfigurierenWeb-Konsole verwenden (configMgr): 
+1. **[Konfigurieren des SCORM-Engine-](mysql.md#aem-communities-scormengine-service)**
+ServiceVerwenden der Web-Konsole (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
 1. **[CSRF-](mysql.md#adobe-granite-csrf-filter)**
-Filter konfigurierenWeb-Konsole verwenden (configMgr): 
+Filter konfigurierenWebkonsole verwenden (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-**Auf Autoreninstanz:**
+**In der Autoreninstanz:**
 
 1. (*optional*) **[Konfigurieren des Analytics-Dienstes](analytics.md)**
 Verwenden Sie Tools, Bereitstellung, Cloud Services-Konsole: 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[configure](ffmpeg.md#configure-ffmpeg-transcoding-service)**
-FFmpegVerwenden der Konsole &quot;Arbeitsablauf/Modelle&quot;
+1. **[Konfigurieren der](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+FFmpegVerwenden der Workflow-/Models-Konsole
 
-1. **[Tunnel-](deploy-communities.md#tunnel-service-on-author)**
-DienstWeb-Konsole verwenden (configMgr): 
+1. **[Aktivieren Sie Tunnel](deploy-communities.md#tunnel-service-on-author)**
+ServiceVerwenden Sie die Web-Konsole (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[Community-](users.md#creating-community-members)** Administratoren erstellenFür die Authoring-Umgebung verwenden Sie die Classic-UI-Sicherheitskonsole:  *http://localhost:4502/*
-useradmincreate-Benutzer mit Pfad = /home/users/community
+1. **[Erstellen von Community-](users.md#creating-community-members)** AdministratorenVerwenden Sie für die Autorenumgebung die Sicherheitskonsole der klassischen Benutzeroberfläche:  *http://localhost:4502/*
+useradmincreate user(s) with path = /home/users/community
 
-   * hinzufügen Mitglieder zu folgenden Gruppen:
+   * Fügen Sie den folgenden Gruppen Mitglieder hinzu:
 
       * Community-Aktivierungsmanager
-      * Communities Administratoren
+      * Communities-Administratoren
 
 ## Dispatcher {#dispatcher}
 
-Wenn die Bereitstellung [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) enthält, müssen die Abschnitte `clientheader`und `filter`geändert werden, damit die Aktivierungsfunktionen ordnungsgemäß funktionieren. Siehe [Konfigurieren von Dispatcher für Communities](dispatcher.md#enablement).
+Wenn die Bereitstellung [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) enthält, müssen die Abschnitte `clientheader`und `filter`geändert werden, damit die Aktivierungsfunktionen ordnungsgemäß funktionieren. Siehe [Konfigurieren des Dispatchers für Communities](dispatcher.md#enablement).
