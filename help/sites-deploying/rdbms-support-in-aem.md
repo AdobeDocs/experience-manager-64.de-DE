@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Konfiguration
+exl-id: 89523bb4-e4c4-469c-802b-6fe27c816a2e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 74%
 
 ---
-
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
@@ -47,7 +46,7 @@ Weitere Informationen über die Schritte zum Erstellen von OSGi-Bundles für JDB
 
 >[!NOTE]
 >
->Einige der SQL-Treiber werden bereits als OSGi-Pakete verpackt.
+>Einige der SQL-Treiber sind bereits als OSGi-Bundles gepackt.
 >
 >Wenn dies der Fall ist, kopieren Sie einfach die JAR-Datei in install-path/crx-quickstart/install/9.
 
@@ -69,16 +68,16 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Bereiten Sie dann die JDBC-OSGi-Bundles für die Verwendung mit AEM vor:
 
-   1. ZIP-Archiv von https://dev.mysql.com/downloads/connector/j/ herunterladen
-      * Version muss >= 5.1.38 sein
-   1. Extrahieren Sie das `mysql-connector-java-version-bin.jar` (bundle) aus dem Archiv
-   1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und Beginn:
+   1. Laden Sie das ZIP-Archiv von https://dev.mysql.com/downloads/connector/j/ herunter.
+      * Version muss >= 5.1.38 sein.
+   1. Extrahieren Sie `mysql-connector-java-version-bin.jar` (Bundle) aus dem Archiv
+   1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
       * Gehen Sie zu *http://serveraddress:serverport/system/console/bundles*
       * Wählen Sie **Installieren/Aktualisieren**
-      * Navigieren Sie zum ausgewählten Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde
-      * Vergewissern Sie sich, dass der JDBC-Treiber für MySQLcom.mysql.jdbc **von der Oracle Corporation aktiv ist, und Beginn.**
+      * Navigieren Sie zum Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde.
+      * Überprüfen Sie, ob der JDBC-Treiber der Oracle Corporation für MySQLcom.mysql.jdbc **aktiv ist, und starten Sie ihn.**
 
-1. Schließlich AEM Beginn mit den Ausführungsmodi `crx3` und `crx3rdb`:
+1. Beginnen Sie AEM mit den Ausführungsmodi `crx3` und `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -116,11 +115,10 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 * `jdbc:oracle:thin:localhost:port:SID` für Oracle;
 * `jdbc:mysql://localhost:3306/databasename` für MySQL und MariaDB (experimentell)
 
-* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimental).
+* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimentell).
 
 ## Bekannte Einschränkungen {#known-limitations}
 
 Obwohl die RDBMS-Persistenz die gleichzeitige Verwendung mehrerer AEM-Instanzen mit einer einzigen Datenbank unterstützt, trifft dies nicht auf gleichzeitige Installationen zu.
 
 Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer Instanz aus und fügen Sie dann nach Abschluss derselben weitere hinzu.
-
