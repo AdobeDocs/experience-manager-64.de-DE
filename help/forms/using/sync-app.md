@@ -9,16 +9,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 96%
 
 ---
 
-
-# Synchronisieren der App {#synchronizing-the-app}
+# Synchronisieren der App  {#synchronizing-the-app}
 
 ## Synchronisieren der App {#synchronizing-the-app-1}
 
@@ -48,4 +47,3 @@ Tippen Sie auf die Schaltfläche Synchronisieren ![sync-app](assets/sync-app.png
 * In der .js sendet ein Aufruf der Funktion „processOfflineSubmittedSavedTasks(...)“ die gespeicherten bzw. übermittelten Aufgaben an den Server. Darüber hinaus werden Fehler bei der Synchronisierung behandelt. Wenn bei der Übermittlung einer Aufgabe ein Fehler auftritt, wird die Aufgabe in der App als fehlerhaft markiert. Darüber hinaus verbleibt die Aufgabe in der Outbox.
 * Die Funktionen „syncSubmittedTask()“ und „syncSavedTask()“ führen Vorgänge für einzelne Aufgaben durch.
 * Der Aufruf der Funktion „processOfflineSubmittedSavedTasks()“ wird durch die Aufgabenlistenkomponente ausgelöst, nachdem ein Benutzer die Synchronisierung des Offline-Status mit dem Server oder eine automatische Synchronisierung über den Hintergrund-Thread ausgewählt hat.
-
