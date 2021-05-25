@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '470'
@@ -92,9 +91,9 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
-Diese `remove`-Berechtigungen müssen [mit Zugriffskontrolle-Listen innerhalb der CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management) verwaltet werden.
+Diese `remove` -Berechtigungen müssen [über Zugriffssteuerungslisten in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management) verwaltet werden.
 
-Die Berechtigungen `add` und `modify` können auch in CRXDE Lite oder mithilfe der User Management Console verwaltet werden.
+Die Berechtigungen `add` und `modify` können auch in CRXDE Lite oder über die User Management Console verwaltet werden.
 
 Beispielsweise die Definition der `remove`-Berechtigungen für eine Gruppe `content-authors-no-delete`:
 
