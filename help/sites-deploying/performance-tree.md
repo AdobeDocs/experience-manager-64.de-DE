@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 92%
 
 ---
-
 
 # Leistungsübersicht{#performance-tree}
 
@@ -289,7 +288,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr> 
    <td><strong>Schritte 45<br /> und 47</strong><br /> </td> 
    <td>Verwendung von HTTP/2</td> 
-   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 Sehen Sie sich auch <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">diesen </a> Forumsbeitrag zur HTTP/2-Unterstützung an.<br /> </td> 
+   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 Sehen Sie sich auch <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">diesen </a> Forumsbeitrag auf HTTP/2-Unterstützung an.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Schritt 49</strong></td> 
@@ -314,7 +313,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
      <li>Verketten Sie Ressourcen (Bilder, CSS-Sprites, JSON usw.)<br /> </li> 
      <li>Einbetten von clientlibs: 
       <ol> 
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Clientbibliotheksordnern</a>  - siehe Abschnitt Verwenden der Einbettung, um Anforderungen zu minimieren</li> 
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Client-Bibliotheksordnern</a>  - siehe Abschnitt Verwenden der Einbettung zum Minimieren von Anforderungen</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -330,4 +329,3 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr> 
  </tbody> 
 </table>
-
