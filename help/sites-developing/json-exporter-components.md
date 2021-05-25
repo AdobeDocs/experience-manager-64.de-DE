@@ -9,14 +9,13 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
-translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 98%
 
 ---
-
 
 # Aktivieren eines JSON-Exports für eine Komponente{#enabling-json-export-for-a-component}
 
@@ -31,7 +30,7 @@ Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn JS
 * [Definieren eines Sling-Modells für die Komponente](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Kommentieren der Sling-Modell-Oberfläche](#annotate-the-sling-model-interface)
 
-## Definieren eines Sling-Modells für die Komponente  {#define-a-sling-model-for-the-component}
+## Definieren eines Sling-Modells für die Komponente   {#define-a-sling-model-for-the-component}
 
 Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
@@ -85,7 +84,7 @@ Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und de
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen Sie das Projekt aem-core-wcm-components auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip) herunter
@@ -98,6 +97,5 @@ Weitere Informationen finden Sie unter:
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
-* [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md)
+* [JSON-Exporter für Content Services ](/help/sites-developing/json-exporter.md)
 * [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
