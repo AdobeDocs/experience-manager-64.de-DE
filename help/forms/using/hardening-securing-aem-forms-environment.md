@@ -7,14 +7,13 @@ uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: ba3b380a-b391-44a0-884b-e57c3cb14013
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 99%
 
 ---
-
 
 # Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen {#hardening-and-securing-aem-forms-on-osgi-environment}
 
@@ -39,7 +38,7 @@ AEM Forms kann in hohem Maß angepasst und in vielen verschiedenen Umgebungen ei
 
 Sicherheitslücken in der Transportschicht gehören zu den Hauptbedrohungen für Internet- oder Intranet-orientierte Anwendungsserver. In diesem Abschnitt wird der Prozess zum Absichern von Hostrechnern im Netzwerk gegen diese Schwachstellen beschrieben. Zu den behandelten Themen gehören die Netzwerksegmentierung, das Absichern des TCP/IP-Stacks (Transmission Control Protocol/Internet Protocol) und die Verwendung von Firewalls für den Hostschutz.
 
-### Offene Endpunkte begrenzen  {#limit-open-endpoints}
+### Offene Endpunkte begrenzen   {#limit-open-endpoints}
 
 In einem Unternehmen kann eine externe Firewall vorhanden sein, um den Zugriff zwischen den Endbenutzern und der AEM Forms-Veröffentlichungsfarm zu begrenzen. Das Unternehmen kann außerdem eine interne Firewall verwenden, um den Zugriff zwischen einer Veröffentlichungsfarm und anderen unternehmensinternen Elementen (z. B. Authoring-Instanz, Verarbeitungsinstanz usw.) zu begrenzen. Lassen Sie mithilfe von Firewalls den Zugriff auf eine begrenzte Anzahl von AEM Forms-URLs für Endbenutzer und zwischen den Elementen innerhalb des Unternehmens zu:
 
@@ -122,7 +121,7 @@ Sie können die interne Firewall konfigurieren, um bestimmten Komponenten von AE
  </tbody>
 </table>
 
-#### Repository-Berechtigungen und Zugriffskontrolllisten (ACLs) einrichten {#setup-repository-permissions-and-access-control-lists-acls}
+#### Repository-Berechtigungen und Zugriffskontrolllisten (ACLs) einrichten  {#setup-repository-permissions-and-access-control-lists-acls}
 
 Standardmäßig sind Assets auf den Veröffentlichungsknote für alle Benutzer zugänglich. Für alle Assets ist der Lesezugriff aktiviert. Dies ist erforderlich, um anonymen Zugriff zuzulassen. Wenn Sie die Formularansicht einschränken und nur authentifizierten Benutzern Zugriff gewähren möchten, verwenden Sie eine gemeinsame Gruppe, um nur authentifizierten Benutzern schreibgeschützten Zugriff auf die auf den Veröffentlichungsknoten verfügbaren Assets zu gewähren. Die folgenden Speicherorte/Verzeichnisse enthalten Formularkomponenten, die durch Beschränken des Lesezugriffs auf authentifizierte Benutzer abgesichert („gehärtet“) werden müssen:
 
