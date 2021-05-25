@@ -1,17 +1,16 @@
 ---
-title: Asset-Editor erweitern
+title: Erweitern des Asset-Editors
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
-feature: Developer Tools
+feature: Entwickler-Tools
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '703'
 ht-degree: 98%
 
 ---
-
 
 # Erweitern des Asset-Editors {#extending-asset-editor}
 
@@ -21,7 +20,7 @@ Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wir
 
 Zusätzlich zur Verwendung von vorhandenen Editor-Komponenten können Adobe Experience Manager (AEM)-Entwickler ihre eigenen Komponenten erstellen.
 
-## Erstellen einer Asset-Editor-Vorlage     {#creating-an-asset-editor-template}
+## Erstellen einer Asset-Editor-Vorlage      {#creating-an-asset-editor-template}
 
 Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
