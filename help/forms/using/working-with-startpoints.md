@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 81%
 
 ---
-
 
 # Arbeiten mit Startpunkten {#working-with-startpoints}
 
@@ -25,7 +24,7 @@ Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit e
 >
 >Die Begriffe „Startpunkte“, „Startprozess“ und „Formular“ werden wechselweise verwendet, wenn von diesem Konzept die Rede ist.
 
-Um einen Prozess von der AEM Forms-App aus zu starten, müssen Sie einen Startpunkt des Typs **Workspace** in Ihrem Prozess haben. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
+Um einen Prozess über die AEM Forms-App zu initiieren, muss Ihr Prozess einen Startpunkt vom Typ **Workspace** enthalten. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
@@ -34,7 +33,7 @@ Um einen Prozess von der AEM Forms-App aus zu starten, müssen Sie einen Startpu
 1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, gehen Sie zum [Startbildschirm](/help/forms/using/home-screen.md).
 1. Auf dem Bildschirm **[!UICONTROL Home]** wird standardmäßig die Liste **[!UICONTROL Alle Forms]** angezeigt.
 
-   Der Startpunkt ist mit einem Formular verknüpft. Tippen Sie auf das mit dem Startpunkt verknüpfte Formular in der Liste, um es zu öffnen.
+   Der Startpunkt ist mit einem Formular verknüpft. Tippen Sie in der Liste auf das mit dem Startpunkt verknüpfte Formular, um es zu öffnen.
 
    Das mit dem Startpunkt verknüpfte Formular wird geöffnet.
 
