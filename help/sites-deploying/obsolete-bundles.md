@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 100%
 
 ---
-
 
 # Liste der nach dem Upgrade deinstallierten veralteten Bundles{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
@@ -69,4 +68,3 @@ Version 1.0.0, aktiv
 * com.day.cq.cq- pinauthhandler, Version 1.0.0, aktiv
 * com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
 * com.day.crx.crxde-support, Version 2.3.14, installiert
-
