@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 86f8d51c-a479-4940-b3c2-4b54a67f7450
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 86%
 
 ---
-
 
 # Informationen zur Administrations- und Prozessterminologie {#about-administration-and-process-terminology}
 
