@@ -7,15 +7,14 @@ uuid: 1629dd9e-b04e-4baa-ae87-c18d4550ac0f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: f63478c5-1798-428e-a662-f3db692b27fc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2096'
 ht-degree: 93%
 
 ---
-
 
 # Adaptive Formularfragmente {#adaptive-form-fragments}
 
@@ -27,9 +26,9 @@ Adaptive Formulare bieten einen praktischen Mechanismus, um Formularsegmente wie
 
 Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Fenster in einem vorhandenen adaptiven Formular als Fragment speichern.
 
-### Erstellen Sie Fragmente von Grund auf neu {#create-fragment-from-scratch}
+### Erstellen Sie Fragmente von Grund auf neu  {#create-fragment-from-scratch}
 
-1. Melden Sie sich bei der AEM Forms-Autoreninstanz unter https://[*Hostname*]:[*Anschluss*]/aem/forms.html an.
+1. Melden Sie sich bei der AEM Forms-Autoreninstanz unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
 1. Klicken Sie auf **[!UICONTROL Erstellen > Adaptives Formularfragment]**.
 1. Geben Sie Titel, Name, Beschreibung und Tags für das Fragment an.
 
@@ -94,7 +93,7 @@ Wenn Sie ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für da
    * **[!UICONTROL XDP-REF]**: Diese Option ist nur in den XDP-basierten adaptiven Formularen verfügbar. Es wird der Speicherort der XDP-Vorlage angezeigt.
 
    ![save-fragment](assets/save-fragment.png)
-   **Abbildung: Dialogfeld &quot;Als Fragment** *speichern&quot;*
+   **Abbildung:** *Dialogfeld &quot;Als Fragment speichern&quot;*
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 
@@ -112,8 +111,8 @@ Alle Fragmente, die Sie in adaptive Formulare einfügen, werden als Platzhalterb
 
 Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen anzuzeigen:
 
-1. Wechseln Sie zu AEM Web-Konsolenkonfigurationsseite unter https:[*host*]:[*port*]/system/console/configMgr.
-1. Suchen Sie nach und klicken Sie auf **[!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals]**, um es im Bearbeitungsmodus zu öffnen.
+1. Rufen Sie AEM Web Console-Konfigurationsseite unter https:[*host*]:[*port*]/system/console/configMgr auf.
+1. Suchen Sie nach **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** und klicken Sie darauf, um sie im Bearbeitungsmodus zu öffnen.
 1. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Platzhalter anstelle von Fragment aktivieren]**, um das vollständige Fragment anstelle des Platzhalterbildes anzuzeigen.
 
 ### Einfügen eines Formularfragments in ein adaptives Formular  {#insert-a-fragment-in-an-adaptive-form}
@@ -121,7 +120,7 @@ Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen
 Die adaptive Formularfragmente, die Sie erstellen, werden auf der Registerkarte „Adaptive Formularfragmente“ der AEM Inhaltssuche angezeigt. Einfügen eines adaptiven Formularfragments in ein adaptives Formular
 
 1. Öffnen Sie das adaptive Formular im Erstellungsmodus, in das Sie ein adaptives Formularfragment einfügen möchten.
-1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Assets]** ![assets-browser](assets/assets-browser.png). Wählen Sie im Assets-Browser **[!UICONTROL Adaptive Formularfragmente]** aus der Dropdownliste.
+1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Assets]** ![assets-browser](assets/assets-browser.png) . Wählen Sie im Asset-Browser **[!UICONTROL Adaptive Formularfragmente]** aus der Dropdown-Liste aus.
 
    Sie können auch festlegen, dass alle adaptiven Formularfragmente angezeigt oder nach Formularmodell (Formularvorlage, XML-Schema oder Allgemein) gefiltert werden.
 
@@ -135,7 +134,7 @@ Das adaptive Formularfragment wird als Verweis in das adaptive Formular eingefü
 
 ### Einbetten eines Formularfragments in ein adaptives Formular  {#embed-a-fragment-in-adaptive-form}
 
-Sie können ein adaptives Formularfragment in ein adaptives Formular einbetten, indem Sie auf **[!UICONTROL Element einbetten klicken: *fragmentName *]**in der Bereichssymbolleiste des hinzugefügten Fragments, wie im folgenden Beispielbild dargestellt.
+Sie können ein adaptives Formularfragment in ein adaptives Formular einbetten, indem Sie auf **[!UICONTROL Asset einbetten klicken: *fragmentName *]**in der Symbolleiste des Bedienfelds des hinzugefügten Fragments, wie im folgenden Beispielbild dargestellt.
 
 ![Einbetten eines Formularfragments in ein adaptives Formular](assets/embed-fragment.png)
 
@@ -234,7 +233,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 * Wenn Sie ein adaptives Formular veröffentlichen, müssen Sie das eigenständige adaptive Formularfragment veröffentlichen, das als Verweis im adaptiven Formular eingefügt wurde.
 * Wenn Sie ein aktualisiertes adaptives Formularfragment veröffentlichen, werden die Änderungen in den veröffentlichten Instanzen des adaptiven Formulars vorgenommen, in denen das Fragment verwendet wird.
 * Adaptive Formulare, die die Verify-Komponente enthalten, unterstützen keine anonymen Benutzer. Außerdem wird nicht empfohlen, die Verify-Komponente in einem adaptiven Formularfragment zu verwenden.
-* (**Nur Mac**) Um sicherzustellen, dass die Formularfragmentfunktionalität in allen Szenarien einwandfrei funktioniert, fügen Sie den folgenden Eintrag zur Datei &quot;/private/etc/hosts&quot;hinzu:
+* (**Nur Mac**) Um sicherzustellen, dass die Formularfragmentfunktionalität in allen Szenarien perfekt funktioniert, fügen Sie den folgenden Eintrag zur Datei /private/etc/hosts hinzu:
 
    `127.0.0.1 <Host machine>`
 
