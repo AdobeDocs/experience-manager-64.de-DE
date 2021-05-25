@@ -6,14 +6,13 @@ seo-description: 'Benutzerdefinierte E-Mail-Vorlagen für E-Mail-Benachrichtigun
 uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
-translation-type: tm+mt
-source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+exl-id: 5af73823-2c32-41b3-9ab8-a7ad9fd9532f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 96%
 
 ---
-
 
 # Benutzerdefinierte E-Mail-Vorlagen im Schritt „Aufgabe zuweisen“ verwenden {#use-custom-email-templates-in-an-assign-task-step}
 
@@ -45,7 +44,7 @@ In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen 
 
    Eine E-Mail-Benachrichtigungsvorlage ist eine [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). Sie können den vorhandenen HTML-Code durch Ihren benutzerdefinierten Code ersetzen, um das Aussehen der Vorlage zu ändern.
 
-1. Speichern Sie die Datei . Damit ist die benutzerdefinierte Vorlage einsatzbereit.
+1. Speichern Sie die Datei. Damit ist die benutzerdefinierte Vorlage einsatzbereit.
 
 ## Erstellen einer E-Mail-Vorlage {#create-an-email-template}
 
@@ -61,15 +60,15 @@ In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen 
 
    Eine E-Mail-Benachrichtigungsvorlage ist eine [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). Sie können der Datei benutzerdefinierten HTML-Code hinzufügen, um eine neue Vorlage zu erstellen. 
 
-1. Speichern Sie die Datei . Damit ist die Vorlage zur Verwendung im Schritt „Aufgabe zuweisen“ bereit.
+1. Speichern Sie die Datei. Damit ist die Vorlage zur Verwendung im Schritt „Aufgabe zuweisen“ bereit.
 
 ## E-Mail-Vorlage im Schritt „Aufgabe zuweisen“ verwenden {#use-an-email-template-in-an-assign-task-step}
 
 Der Schritt „Aufgabe zuweisen“ ist standardmäßig so konfiguriert, dass die Standardvorlage „htmlEmailTemplate.txt“ verwendet wird. Sie können stattdessen eine benutzerdefinierte Vorlage zu verwenden. Vorlage ändern
 
-1. Öffnen Sie den Schritt **[!UICONTROL Aufgabe zuweisen]**.
+1. Öffnen Sie den Schritt **[!UICONTROL Aufgabe zuweisen]** .
 
-1. Navigieren Sie zu **[!UICONTROL Verantwortlicher > HTML-E-Mail-Vorlage]**.
+1. Navigieren Sie zu **[!UICONTROL Zuweisung > HTML-E-Mail-Vorlage]**.
 
 1. Wählen Sie die neu erstellte HTML-E-Mail-Vorlage aus. 
 
