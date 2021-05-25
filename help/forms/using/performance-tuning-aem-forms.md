@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '900'
 ht-degree: 81%
 
 ---
-
 
 # Leistungsoptimierung für AEM Forms-Server {#performance-tuning-of-aem-forms-server}
 
@@ -47,9 +46,9 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 >
 >Wenn Sie AEM Dispatcher zum Zwischenspeichern adaptiver Formulare verwenden, werden dabei auch adaptive Formulare im Cache abgelegt, die Formulare mit vorausgefüllten Daten enthalten. Werden solche Formulare aus dem AEM Dispatcher-Cache bereitgestellt, erhalten die Benutzer eventuell vorausgefüllte oder veraltete Daten. Verwenden Sie AEM Dispatcher daher zum Zwischenspeichern von Formularen, die keine vorausgefüllten Daten enthalten. Darüber hinaus werden im Dispatcher-Cache abgelegte Fragmente nicht automatisch ungültig gemacht. Verwenden Sie dies daher nicht zum Zwischenspeichern von Formularfragmenten. Verwenden Sie für solche Formulare und Fragmente vielmehr den [Adaptive Forms-Cache](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## JVM-Parameter   {#jvm-parameters}
+## JVM-Parameter    {#jvm-parameters}
 
-Für eine optimale Leistung wird empfohlen, die folgenden JVM `init`-Argumente zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
+Für eine optimale Leistung wird empfohlen, die folgenden JVM-Argumente `init` zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -60,7 +59,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64-Bit) JDK und sollten gemäß Ihrer Systemkonfiguration hoch- oder herunterskaliert werden.
+>Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64 Bit) JDK und sollten gemäß Ihrer Systemkonfiguration skaliert werden.
 
 ## Verwenden eines Webservers {#using-a-web-server}
 
@@ -70,7 +69,7 @@ Führen Sie beispielsweise die folgenden Schritte durch, um die Komprimierung au
 
 >[!NOTE]
 >
->Die folgenden Anweisungen gelten nicht für andere Server als den 32-Bit-Apache Web Server 2.0. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
+>Die folgenden Anweisungen gelten nicht für andere Server als den 32-Bit-Apache-Webserver 2.0. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
 
 Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um die Komprimierung mit Apache Web Server zu aktivieren
 
@@ -96,14 +95,14 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
 
 1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
 
-   hinzufügen folgende Konfiguration in der Konfigurationsdatei `APACHE_HOME/conf/httpd.conf`.
+   Fügen Sie die folgende Konfiguration in die Konfigurationsdatei `APACHE_HOME/conf/httpd.conf` ein.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Aktivieren Sie die Komprimierung. hinzufügen folgende Konfiguration in der Konfigurationsdatei `APACHE_HOME/conf/httpd.conf`.
+1. Aktivieren Sie die Komprimierung. Fügen Sie die folgende Konfiguration in die Konfigurationsdatei `APACHE_HOME/conf/httpd.conf` ein.
 
    **Für HTML5-Formulare**
 
@@ -149,9 +148,9 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM Installationsordner] \crx-repository\temp
-   * [AEM Installationsordner] \crx-repository\repository
-   * [AEM Installationsordner] \crx-repository\launchpad
+   * [AEM Installationsordner]\crx-repository\temp
+   * [AEM Installationsordner]\crx-repository\repository
+   * [AEM Installationsordner]\crx-repository\launchpad
 
 * Temporärer Ordner des Anwendungsservers. Der Standardspeicherort lautet:
 
@@ -174,7 +173,6 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 >
 >* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie die AdminUI unter `https://[server]:[port]/adminui)`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
 
-* Wenn der AEM Forms-Server selbst nach dem Ausschluss der vorgeschlagenen Ordner langsam arbeitet, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
-
+* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Verzeichnisse langsam funktioniert, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
 
 
