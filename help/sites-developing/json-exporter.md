@@ -9,14 +9,13 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: ead4306a-6337-4dae-8839-14fada0ae0e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 95%
 
 ---
-
 
 # JSON-Exporter für Content Services {#json-exporter-for-content-services}
 
@@ -32,9 +31,9 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 >[!NOTE]
 >
->Die hier beschriebene Funktionalität steht für alle Kernkomponenten seit der [Version 1.1.0 der Kernkomponenten](https://docs.adobe.com/content/docs/de/core-components/v1.html) zur Verfügung.
+>Die hier beschriebene Funktion ist für alle Kernkomponenten seit [Version 1.1.0 der Kernkomponenten](https://docs.adobe.com/content/docs/de/core-components/v1.html) verfügbar.
 
-## JSON Exporter mit Inhaltsfragment-Kernkomponenten  {#json-exporter-with-content-fragment-core-components}
+## JSON Exporter mit Inhaltsfragment-Kernkomponenten   {#json-exporter-with-content-fragment-core-components}
 
 Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
@@ -104,5 +103,4 @@ Weitere Informationen finden Sie unter:
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
