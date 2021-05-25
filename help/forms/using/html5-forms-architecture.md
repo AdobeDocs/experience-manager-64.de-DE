@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5bb8b307-93f0-4ccd-89ac-de82d65021e6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2040'
 ht-degree: 80%
 
 ---
 
-
 # Architektur von HTML5-Formulare {#architecture-of-html-forms}
 
 ## Architektur {#architecture}
 
-Die Funktionalität von HTML5-Formularen wird als Paket innerhalb der eingebetteten AEM bereitgestellt und als REST-Endpunkt über HTTP/S bereitgestellt, wobei RESTful [Apache Sling Architecture](https://sling.apache.org/) verwendet wird.
+Die HTML5-Formularfunktionalität wird als Paket innerhalb der eingebetteten AEM-Instanz bereitgestellt und mithilfe von RESTful [Apache Sling Architecture](https://sling.apache.org/) als REST-Endpunkt über HTTP/S bereitgestellt.
 
 ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
@@ -31,39 +30,39 @@ Die Funktionalität von HTML5-Formularen wird als Paket innerhalb der eingebette
 
 [Apache Sling](https://sling.apache.org/) ist ressourcenzentriert. Es verwendet zunächst eine Anforderungs-URL, um die Ressource aufzulösen. Jede Ressource hat eine **sling:resourceType** (oder **sling:resourceSuperType**)-Eigenschaft. Anhand dieser Eigenschaft, der Anforderungsmethode und der Eigenschaften der Anforderungs-URL wird ein Sling-Skript ausgewählt, um die Anforderung zu bearbeiten. Dieses Sling-Skript kann ein JSP oder ein Servlet sein. Im Falle von HTML5-Formulare dienen **Profil**-Knoten als Sling-Ressourcen, und der **Profil-Renderer** dient als Sling-Skript, das die Anforderung bearbeitet, das mobile Formular mit einem bestimmten Profil zu rendern. Ein **Profil-Renderer** ist ein JSP, das Parameter aus einer Anforderung ausliest und den Forms OSGi-Dienst aufruft.
 
-Weitere Informationen zum REST-Endpunkt und den unterstützten Anforderungsparametern finden Sie unter [Formularvorlage wird wiedergegeben](/help/forms/using/rendering-form-template.md).
+Weitere Informationen zum REST-Endpunkt und zu den unterstützten Anforderungsparametern finden Sie unter [Rendern einer Formularvorlage](/help/forms/using/rendering-form-template.md).
 
-Wenn ein Benutzer eine Anforderung von einem Client-Gerät wie einem iOS- oder Android-Browser abgibt, löst Sling zuerst den Profil-Knoten basierend auf der Anforderungs-URL auf. Aus diesem Profilknoten liest es **sling:resourceSuperType** und **sling:resourceType** aus, um alle verfügbaren Skripten zu ermitteln, die diese Anforderung, ein Formular zu rendern, bearbeiten können. Abschließend verwendet es Sling-Anforderungsselektoren zusammen mit der Anforderungsmethode, um das Skript zu identifizieren, das am besten für die Bearbeitung dieser Anforderung geeignet ist. Wenn die Anforderung ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
+Wenn ein Benutzer eine Anfrage von einem Client-Gerät wie einem iOS- oder Android-Browser sendet, löst Sling zunächst den Profilknoten basierend auf der Anforderungs-URL auf. Aus diesem Profilknoten liest es **sling:resourceSuperType** und **sling:resourceType** aus, um alle verfügbaren Skripten zu ermitteln, die diese Anforderung, ein Formular zu rendern, bearbeiten können. Abschließend verwendet es Sling-Anforderungsselektoren zusammen mit der Anforderungsmethode, um das Skript zu identifizieren, das am besten für die Bearbeitung dieser Anforderung geeignet ist. Wenn die Anforderung ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
 
 Weitere Informationen zur Auflösung von Sling-Skripten finden Sie unter [AEM Sling-Spickzettel](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) oder [Apache Sling-URL-Auflösung](https://sling.apache.org/site/url-decomposition.html).
 
-### Typisches Formular zur Verarbeitung von Call-Flows {#typical-form-processing-call-flow}
+### Typisches Formular zur Verarbeitung von Call-Flows  {#typical-form-processing-call-flow}
 
 HTML5-Formulare speichert alle Zwischenobjekte zwischen, die für die Verarbeitung (Rendering oder Senden) eines Formulars bei der ersten Anforderung nötig sind. Objekte, die von Daten abhängig sind, werden nicht zwischengespeichert, da diese wahrscheinlich geändert werden.
 
 Mobile Forms bietet zwei unterschiedliche Zwischenspeicher-Ebenen: den PreRender-Cache und den Render-Cache. Der PreRender-Cache enthält alle Fragmente und Bilder einer gelösten Vorlage und Render-Cache enthält gerenderten Inhalt wie HTML.
 
-![HTML5-](assets/cacheworkflow.png)
-**Arbeitsablauf für FormulareAbbildung: Arbeitsablauf für** *HTML5-Formulare*
+![HTML5-Formular-](assets/cacheworkflow.png)
+**WorkflowAbbildung:** *HTML5-Formular-Workflow*
 
 HTML5-Formulare speichert Vorlagen nicht zwischen, die fehlende Verweise auf Fragmente und Bilder aufweisen. Wenn HTML5-Formulare länger als gewöhnlich lädt, prüfen Sie die Server-Protokolle auf fehlende Verweise und Warnungen. Stellen Sie auch sicher, dass die maximale Größe des Objekts nicht erreicht wurde.
 
 Der Forms OSGi-Dienst verarbeitet eine Anforderung in zwei Schritten:
 
 * **Generierung eines Layouts und des anfänglichen Formularstatus**: Der Forms OSGi-Renderdienst ruft die Formular-Cachekomponente auf, um zu bestimmen, ob das Formular bereits zwischengespeichert wurde und ob es noch gültig ist. Wenn das Formular zwischengespeichert und gültig ist, liefert es das generierte HTML aus dem Cache. Wenn das Formular ungültig ist, generiert der Forms OSGi-Render-Dienst das anfängliche Formularlayout und den Formularstatus im XML-Format. Diese XML-Datei wird vom Forms OSGi-Dienst in HTML-Layout und in den anfänglichen JSON-Formularstatus umgewandelt sowie für folgende Anforderungen zwischengespeichert.
-* **Vorausgefülltes Forms**: Beim Rendern ruft der Forms OSGi-Renderdienst den Forms-Dienst auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
+* **Vorausgefüllter Forms**: Wenn ein Benutzer beim Rendern Formulare mit vorausgefüllten Daten anfordert, ruft der Forms OSGi-Renderdienst den Forms-Dienstcontainer auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
 
-Wenn ein Formular aktualisiert wurde oder Elemente in einem Formular verwendet wurden, erkennt die Formular-Cache-Komponente es und der Cache für dieses bestimmte Formular wird ungültig. Wenn die Verarbeitung durch den Forms OSGi-Dienst abgeschlossen ist, fügt das Profil-Renderer-JSP JavaScript-Bibliotheksverweise in das Formular ein und gibt die Antwort an den Client zurück. Hierfür kann ein typischer Webserver wie [Apache](https://httpd.apache.org/) mit aktivierter HTML-Komprimierung verwendet werden. Ein Webserver würde die Antwortgröße, den Netzwerkverkehr und die für das Streaming der Daten zwischen Server und Clientcomputer erforderliche Zeit erheblich verringern.
+Wenn ein Formular aktualisiert wird oder Assets innerhalb des Formulars verwendet werden, erkennt die Formular-Cache-Komponente es und der Cache für dieses bestimmte Formular wird ungültig. Wenn die Verarbeitung durch den Forms OSGi-Dienst abgeschlossen ist, fügt das Profil-Renderer-JSP JavaScript-Bibliotheksverweise in das Formular ein und gibt die Antwort an den Client zurück. Hierfür kann ein typischer Webserver wie [Apache](https://httpd.apache.org/) mit aktivierter HTML-Komprimierung verwendet werden. Ein Webserver würde die Antwortgröße, den Netzwerk-Traffic und die für das Streamen der Daten zwischen dem Server und dem Clientcomputer erforderliche Zeit erheblich verringern.
 
-Wenn ein Benutzer das Formular sendet, sendet der Browser den Formularstatus im JSON-Format an den [Sendedienst-Proxy](/help/forms/using/service-proxy.md); generiert der Sendedienst-Proxy eine Daten-XML mit JSON-Daten und sendet diese Daten-XML an den Sende-Endpunkt.
+Wenn ein Benutzer das Formular sendet, sendet der Browser den Formularstatus im JSON-Format an den [Sendedienst-Proxy](/help/forms/using/service-proxy.md). dann generiert der Sendedienst-Proxy eine Daten-XML mithilfe von JSON-Daten und sendet diese Daten-XML an den Senden-Endpunkt.
 
-## Komponenten {#components}
+## Komponenten  {#components}
 
 Sie benötigen das AEM Forms-Add-On-Paket, um HTML5-Formulare zu aktivieren. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 ### OSGi-Komponenten (adobe-lc-forms-core.jar)  {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er aus der Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)**  ist der Anzeigename des HTML5 forms OSGi-Bundles, wenn er über die Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[host]: [port]/system/console/bundles).
 
 Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und Konfigurationseinstellungen.
 
@@ -71,7 +70,7 @@ Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und K
 
 Dieser OSGi-Dienst enthält die Logik zum Rendern einer XDP als HTML und verarbeitet Sendungen von Formularen zur Generierung einer Daten-XML. Dieser Dienst verwendet Forms-Dienstcontainer. Der Forms-Dienstcontainer ruft intern die native Komponente`XMLFormService.exe` auf, die anschließend die Verarbeitung durchführt.
 
-Wenn eine Renderanforderung empfangen wird, ruft diese Komponente den Forms-Dienst-Container auf, um Layout- und Statusinformationen zu generieren, die weiter verarbeitet werden, um HTML- und JSON-Formular-DOM-Status zu generieren.
+Wenn eine Render-Anforderung empfangen wird, ruft diese Komponente den Forms-Dienstcontainer auf, um Layout- und Statusinformationen zu generieren, die weiter verarbeitet werden, um HTML- und JSON-Formular-DOM-Status zu generieren.
 
 Diese Komponente ist auch für die Generierung der Daten-XML aus dem Status-JSON des gesendeten Formulars zuständig.
 
@@ -110,7 +109,7 @@ HTML5-Formulare führt eine Zwischenspeicherung im Arbeitsspeicher durch und ver
 
 Der Konfigurationsdienst ermöglicht die Einstellung der Konfigurationsparameter und der Cacheeinstellungen für HTML5-Formulare.
 
-Um diese Einstellungen zu aktualisieren, rufen Sie die Admin Console &quot;CQ Felix&quot;(verfügbar unter `https://[server]:[port]/system/console/configMgr`) auf, suchen Sie die Option &quot;Mobile Forms Configuration&quot;(Mobile Configuration) und wählen Sie sie aus.
+Um diese Einstellungen zu aktualisieren, gehen Sie zur Admin Console CQ Felix (verfügbar unter `https://[server]:[port]/system/console/configMgr`), suchen Sie nach Mobile Forms Configuration und wählen Sie sie aus.
 
 Mit dem Konfigurationsdienst können Sie die Cachegröße konfigurieren oder den Cache deaktivieren. Sie können auch mithilfe des Parameters „Debug Options“ das Debugging aktivieren. Weitere Informationen zum Debugging von Formularen finden Sie unter [Debugging von HTML5-Formularen](/help/forms/using/debug.md).
 
@@ -142,7 +141,7 @@ Weitere Informationen über Widgets und die entsprechenden Kontrakte finden Sie 
 
 #### Stile {#styling}
 
-Der Stil, der den HTML-Elementen zugeordnet ist, wird entweder inline oder basierend auf dem eingebetteten CSS-Block hinzugefügt. Einige allgemeine Formatierungselemente, die nicht vom Formular abhängig sind, sind Teil der CQ-Client-Bibliothek mit dem Kategorienamen xfaforms.profile.
+Der mit den HTML-Elementen verknüpfte Stil wird entweder inline oder basierend auf einem eingebetteten CSS-Block hinzugefügt. Einige allgemeine Formatierungselemente, die nicht vom Formular abhängig sind, sind Teil der CQ-Client-Bibliothek mit dem Kategorienamen xfaforms.profile.
 
 Zusätzlich zu den Standardformatierungseigenschaften enthält jedes Formularelement auch bestimmte CSS-Klassen, die auf dem Elementtyp, dem Namen und anderen Eigenschaften basieren. Mithilfe dieser Klassen können Sie Elemente durch Festlegen von deren eigener CSS umformatieren.
 
@@ -173,7 +172,7 @@ Profile sind die Ressourcenknoten im Sling, die ein Formular oder eine Familie v
 
 #### Profil-Renderer {#profile-renderers}
 
-Der Profilknoten hat ein Eigenschafts-**Sling: resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profil-Knoten im Ordner **/libs/xfaforms/Profil**. Diese Skripten sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
+Der Profilknoten hat ein Eigenschafts-**Sling: resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profilknoten im Ordner **/libs/xfaforms/profile** . Diese Skripten sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
 
 * **xfaforms.I18N.&lt;locale>**: Diese Bibliothek enthält lokalisierte Daten.
 * **xfaforms.profile**: Diese Bibliothek enthält die Implementierung für XFA Scripting und für die Layout-Engine.
@@ -185,4 +184,3 @@ Wie oben beschrieben ruft der Profil-Renderer JSP den Formulardienst über einen
 
 HTML5-Formulare ermöglicht Entwicklern, Profile und Profil-Renderer zu erstellen, um das Erscheinungsbild der Formulare anzupassen. Beispielsweise können Entwickler HTML-Formulare in ein Bedienfeld oder einen &lt;div>-Abschnitt eines vorhandenen HTML-Portals integrieren.\
 Weitere Informationen über das Erstellen benutzerdefinierter Profile finden Sie unter [Erstellen eines benutzerfreundlichen Profils](/help/forms/using/custom-profile.md).
-
