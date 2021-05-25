@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
-translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 89%
 
 ---
-
 
 # We.Retail-Referenzimplementierung{#we-retail-reference-implementation}
 
@@ -40,7 +39,7 @@ Als standardmäßige AEM-Referenzimplementierung demonstriert We.Retail einige d
 | [HTML-Vorlagensprache](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html) | Alle Komponenten basieren auf HTL. |  |
 | [eCommerce-Funktionen](/help/sites-developing/ecommerce.md) | Umfassen einen Produktkatalog. |  |
 | [Communities-Sites](/help/communities/overview.md) | Besucher können an Community-Diskussionen teilnehmen, Blogs lesen und vieles mehr. |  |
-| [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
+| [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
 | [Inhaltsfragmente](/help/assets/content-fragments.md) | Der Abschnitt „We.Retail Experiences“ veranschaulicht, wie sich über Inhalte mithilfe von Inhaltfragmenten wirkungsvoll wiederverwenden lassen. | [Jetzt testen!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) | Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. | [Jetzt testen!](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -58,7 +57,7 @@ We.Retail wird als AEM-Beispielinhalte bereitgestellt. Um die Inhalte zu verwend
 
 ### Neueste Version {#latest-version}
 
-Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte und ihre Funktionen ggf. nach deren Veröffentlichung aktualisiert. Daher ist es möglich, [die neueste Version von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) und [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [install](/help/sites-administering/package-manager.md#installing-packages) als Paket auf Ihrer AEM Instanz herunterzuladen.
+Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte und ihre Funktionen ggf. nach deren Veröffentlichung aktualisiert. Daher ist es möglich, [die neueste Version von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) herunterzuladen und [Upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [Installation](/help/sites-administering/package-manager.md#installing-packages) als Paket auf Ihrer AEM-Instanz herunterzuladen.
 
 ### Erste Schritte {#first-steps}
 
@@ -73,7 +72,7 @@ Geometrixx und seine vielen Varianten dienten als Beispielinhalte in früheren V
 
 We.Retail ist technisch robuster und nutzt die neueste AEM-Technologie, um mehr Flexibilität und Skalierbarkeit zu bieten und gleichzeitig die neuesten Funktionen des Produkts zu demonstrieren.
 
-### Funktionsvergleich {#feature-comparison}
+### Funktionsvergleich  {#feature-comparison}
 
 Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen bereit, die in We.Retail im Vergleich zu Geometrixx verfügbar sind.
 
@@ -82,7 +81,7 @@ Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen be
 
 | **Funktion** | **We.Retail** | **Geometrixx** |
 |---|---|---|
-| Globalisierte Site-Struktur | Sprachmaster live kopiert in länderspezifische Sites | Nicht verfügbar |
+| Globalisierte Site-Struktur | Sprach-Master werden live in länderspezifische Sites kopiert | Nicht verfügbar |
 | Inhaltsfragmente | Verfügbar | Nicht verfügbar |
 | Experience Fragments | Verfügbar | Nicht verfügbar |
 | Responsives Layout   | Für alle Seiten | Nur Geometrixx Media |
@@ -107,14 +106,14 @@ We.Retail wurde als Open-Source-Projekt veröffentlicht und die neueste Version 
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-sample-we-trading project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [Öffnen Sie das Projekt aem-sample-we-retail auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip) herunter.
 
 Die neueste Version kann auch [direkt als installierbares Paket heruntergeladen](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) werden.
 
-Sollten Sie Probleme haben, schreiben Sie bitte [GitHub-Probleme](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Falls Probleme auftreten, führen Sie bitte [GitHub-Probleme](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues) aus.
 
 Mit [Pull-Requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls) können Sie weiter ins Detail gehen und eigene Beiträge veröffentlichen.
 
@@ -122,5 +121,4 @@ Mit [Pull-Requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retai
 
 Vorschau der We.Retail-Begrüßungsseite:
 
-![screencapture-localhost-4502-editor-html-content-we-retail-us-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
-
+![screenCapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
