@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 94%
 
 ---
-
 
 # Connector für IBM FileNet konfigurieren {#configuring-connector-for-ibm-filenet}
 
@@ -26,7 +25,7 @@ Connector für IBM FileNet aktiviert die Kommunikation zwischen AEM Forms und IB
 >
 >In früheren Versionen konnten Elemente in einem ECM-Repository gespeichert werden. In dieser Version werden Elemente im systemeigenen AEM Forms-Repository gespeichert und die Repository Provider-Dienste werden nicht mehr unterstützt. Die Migration von Elementen aus einem ECM-Repository zum AEM Forms-Repository erfolgt, wenn Sie eine Aktualisierung auf AEM Forms vornehmen. Weitere Informationen hierzu finden Sie im AEM Forms-Aktualisierungshandbuch für Ihren Anwendungsserver.
 
-## Verbindung zu Content Engine konfigurieren {#configure-the-connection-to-the-content-engine}
+## Verbindung zu Content Engine konfigurieren  {#configure-the-connection-to-the-content-engine}
 
 Die IBM FileNet P8 Content Engine bietet Softwaredienste zum Verwalten von Unternehmensinhalten und kundendefinierten Geschäftsobjekten in FileNet-Inhalts-Repositorys.
 
@@ -81,11 +80,11 @@ Sie können konfigurieren, welcher Repository Service Provider mit FileNet verwe
 
 Die folgenden Optionen sind verfügbar:
 
-**Name des aktuellen Repository Provider:** Name des aktuellen Repository Dienstleisters
+**Aktueller Repository Provider-Name:** Der Name des aktuellen Repository Service Providers
 
-**IBM FileNet Repository Provider:** Legt den FileNet Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**IBM FileNet Repository Provider:** Stellt den FileNet Repository Provider zum Provider des Repositorys dar. Diese Option ist veraltet.
 
-**Repository-Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository-Anbieter:** Legt den nativen Repository-Provider als Provider für das Repository fest.
 
 >[!NOTE]
 >
