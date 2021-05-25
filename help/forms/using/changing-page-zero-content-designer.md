@@ -7,21 +7,20 @@ uuid: 5697f203-bb24-437d-a692-bc4bc2609b88
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 0ae34ddd-9a8d-48df-af2d-80c3fe6abd62
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 83%
 
 ---
 
-
 # Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
 
 Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, z. B. der standardmäßige PDF-Viewer in Chrome oder Firefox, den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 
-![defaultPage0message](assets/defaultpage0message.png)
+![defaultpage0message](assets/defaultpage0message.png)
 
 Mit AEM Forms Feature Pack 1 von Designer können Sie die auf Seite Null angezeigte Meldung ändern. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
@@ -42,9 +41,8 @@ Mit AEM Forms Feature Pack 1 von Designer können Sie die auf Seite Null angezei
 
 1. Zeigen Sie das PDF-Formular im Browser an, um sicherzustellen, dass die Meldung aktualisiert wurde. Der obige Beispielwert wird wie folgt angezeigt:
 
-   ![changdmessage](assets/changedmessage.png)
+   ![changeMessage](assets/changedmessage.png)
 
 >[!NOTE]
 >
 >Die gerade von Ihnen erstellte benutzerdefinierte Eigenschaft wird möglicherweise nicht korrekt im Dialogfenster „Formulareigenschaften“ angezeigt, wenn Sie das Formular erneut öffnen. Sie funktioniert jedoch problemlos und das Formular zeigt die aktualisierte Meldung auf Seite Null an.
-
