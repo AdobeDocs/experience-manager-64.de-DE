@@ -4,16 +4,15 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 feature: Search,Metadata
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '554'
 ht-degree: 93%
 
 ---
 
-
-# Suchen nach Assets in AEM  {#search-assets-in-aem}
+# Suchen nach Assets in AEM   {#search-assets-in-aem}
 
 Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 
@@ -36,12 +35,12 @@ Sie können eine Suche basierend auf folgenden Optionen (Prädikaten) durchführ
 
 Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](search-facets.md) hinzufügen/entfernen. Führen Sie folgende Schritte aus, um das Bedienfeld „Filter“ anzuzeigen:
 
-1. Tippen/klicken Sie in der Benutzeroberfläche &quot;Assets&quot;in der Symbolleiste auf ![search_icon](assets/search_icon.png), um das Feld &quot;Omniture&quot;anzuzeigen.
+1. Tippen/klicken Sie in der Assets-Benutzeroberfläche in der Symbolleiste auf ![search_icon](assets/search_icon.png) , um das Omnisearch-Feld anzuzeigen.
 1. Geben Sie Ihren Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie einfach die Eingabetaste drücken, ohne einen Suchbegriff einzugeben. Geben Sie keine vorangestellten Leerzeichen ein, da die Suche sonst nicht funktioniert.
 
 1. Tippen/klicken Sie auf das GlobalNav-Symbol. Das Bedienfeld „Filter“ wird angezeigt.
 
-   ![Filters_panel-1](assets/filters_panel-1.png)
+   ![filters_panel-1](assets/filters_panel-1.png)
 
    Abhängig von der Art der Elemente, nach denen Sie suchen, wird die Anzahl der Übereinstimmungen oben in den Suchergebnissen angezeigt.
 
@@ -73,7 +72,7 @@ Verwenden Sie das Prädikat **Dateigröße**, um basierend auf der Größe nach 
 
 Wenn Sie unfertige Assets verwalten oder einen Prüfungs-Workflow überwachen, können Sie die Suche danach ausrichten, wann ein Asset zuletzt bearbeitet wurde. Die Suche basiert dabei auf akkuraten Zeitstempeln. Geben Sie beispielsweise Daten ein, vor oder nach denen Assets bearbeitet wurden.
 
-![last_changed_dates](assets/last_modified_dates.png)
+![last_modified_dates](assets/last_modified_dates.png)
 
 Sie können auch die folgenden Optionen nutzen, um eine höhere Granularität bei Ihrer Suche zu erreichen:
 
