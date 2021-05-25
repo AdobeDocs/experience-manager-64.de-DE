@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
-translation-type: tm+mt
-source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+exl-id: 308cd31b-3974-49d2-8629-6ede58f3200d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 80%
 
 ---
 
-
 # Bearbeiten in der klassischen Benutzeroberfläche{#authoring-in-the-classic-ui}
 
-## Klassische Benutzeroberfläche und Touch-fähige Benutzeroberfläche {#classic-ui-and-touch-enabled-ui}
+## Klassische Benutzeroberfläche und Touch-optimierte Benutzeroberfläche {#classic-ui-and-touch-enabled-ui}
 
-Die klassische Benutzeroberfläche ist die Desktop-orientierte Benutzeroberfläche, die seit CQ5 verfügbar ist (dem Vorgänger der AEM). Die folgende Dokumentation zur Bearbeitung bezieht sich auf diese Benutzeroberfläche.
+Die klassische Benutzeroberfläche ist die Desktop-orientierte Benutzeroberfläche, die seit CQ5 (dem Vorgänger von AEM) verfügbar ist. Die folgende Dokumentation zur Bearbeitung bezieht sich auf diese Benutzeroberfläche.
 
-Die Touch-optimierte Benutzeroberfläche ist die neue Standardoberfläche für AEM, die sowohl auf Touch- als auch Desktop-Geräten verwendet werden kann. Weitere Informationen finden Sie in der [Standard-Authoring-Dokumentation](/help/sites-authoring/author.md).
+Die Touch-optimierte Benutzeroberfläche ist die neue Standardoberfläche für AEM, die sowohl auf Touch- als auch Desktop-Geräten verwendet werden kann. Weitere Informationen finden Sie in der [Standarddokumentation für die Bearbeitung](/help/sites-authoring/author.md).
 
 >[!NOTE]
 >
->Da die Touch-optimierte Benutzeroberfläche mittlerweile die Standardbenutzeroberfläche von AEM ist, wird die klassische Benutzeroberfläche nicht weiterentwickelt. Das bedeutet, dass es bestimmte Funktionen gibt, die in der klassischen Benutzeroberfläche nicht verfügbar sind.
+>Da die Touch-optimierte Benutzeroberfläche mittlerweile die Standardbenutzeroberfläche von AEM ist, wird die klassische Benutzeroberfläche nicht weiterentwickelt. Dies bedeutet, dass bestimmte Funktionen in der klassischen Benutzeroberfläche nicht verfügbar sind.
 
 ## Das Konzept der Bearbeitung (und Veröffentlichung) {#concept-of-authoring-and-publishing}
 
