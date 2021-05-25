@@ -8,21 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 99%
 
 ---
 
-
 # Einführung in AEM Forms {#introduction-to-aem-forms}
 
 Informationen zu neuesten Funktionen und Verbesserungen in AEM Forms finden Sie unter [Neue Funktionen in AEM Forms](/help/forms/using/whats-new.md).
 
-## Info zu AEM Forms {#about-aem-forms}
+## Info zu AEM Forms  {#about-aem-forms}
 
 Adobe Experience Manager (AEM) ist eine benutzerfreundliche Lösung, mit der Sie komplexe digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren und dabei in Back-End-Prozesse, Geschäftsregeln und Daten integrieren können.
 
@@ -118,5 +117,4 @@ Personalisierte Dokumente, wie Empfangsbestätigungen, Willkommens-Kits und Anwe
 * Document Security-Add-On für AEM Forms mit Funktionen für Verschlüsselung, Nutzungsrichtlinien, Verfolgung und Prüfung
 
 ![](do-not-localize/layout-02.png)
-**Abbildung:** *Optimierter Arbeitsablauf für die personalisierte Kommunikation*
-
+**Abbildung:** *Optimierter Workflow für personalisierte Kommunikation*
