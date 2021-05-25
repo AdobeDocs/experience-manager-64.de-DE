@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: 45741270-2d57-4d6d-92ef-65b6c1deb448
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 
 ---
 
-
 # Verwalten von Zertifikaten revocationlists{#managing-certificate-revocationlists}
 
 Mithilfe der Trust Store-Verwaltung können Sie Zertifikatsperrlisten importieren, bearbeiten und löschen. Unterstützt werden Base64- und DER-kodierte Zertifikatsperrlisten.
 
-## Zertifikatsperrliste importieren {#import-a-crl}
+## Zertifikatsperrliste importieren  {#import-a-crl}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Zertifikatsperrliste“ und dann auf „Importieren“.
 1. Geben Sie in das Feld „Alias“ einen Bezeichner für die Zertifikatsperrliste ein.
@@ -39,4 +38,3 @@ Mithilfe der Trust Store-Verwaltung können Sie Zertifikatsperrlisten importiere
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Zertifikatsperrlisten“.
 1. Aktivieren Sie die Kontrollkästchen der zu löschenden Zertifikatsperrliste und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
-
