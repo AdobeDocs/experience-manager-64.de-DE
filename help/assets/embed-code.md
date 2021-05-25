@@ -2,7 +2,7 @@
 title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 seo-title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
-seo-description: Erfahren Sie, wie Sie Videos oder Bilder mit dynamischen Medien auf einer Webseite einbetten
+seo-description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Components
+feature: 'Komponenten '
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '395'
@@ -60,6 +59,6 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
 ## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
+HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
 Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2.md).
