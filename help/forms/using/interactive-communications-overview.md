@@ -8,14 +8,13 @@ contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 77%
 
 ---
-
 
 # Interaktive Kommunikation - Übersicht {#interactive-communications-overview}
 
@@ -23,7 +22,7 @@ Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen 
 
 ![](do-not-localize/correspondence-management.png)
 
-Interactive Communications zentralisiert und verwaltet die Erstellung, Zusammenstellung und den Versand sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Aussagen, Vorteilsmitteilungen, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits.
+Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Kontoauszüge, Hinweise zu Vorteilen, Marketing-E-Mails, Rechnungen und Willkommenskits.
 
 ## Schlüsselfunktionen {#key-capabilities}
 
@@ -33,12 +32,12 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 * Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
 * Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
 * Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
-* Die Benutzeroberfläche des Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation an
+* Benutzeroberfläche für Agenten zeigt Druck- und Webvorschau der interaktiven Kommunikation an
 * Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
-## Beispielanwendungsfall {#sample-use-case}
+## Beispielanwendungsfall  {#sample-use-case}
 
-Das [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough)-Beispielverwendungsfall zeigt die Möglichkeiten einer interaktiven Kommunikation.
+Das [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) Beispielanwendungsfall zeigt die Funktionen einer interaktiven Kommunikation.
 
 ## Erstellung einer interaktiven Kommunikation  {#interactive-communication-creation}
 
@@ -46,7 +45,7 @@ Das [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-r
 
 ### Workflow {#workflow}
 
-Um eine interaktive Kommunikation zu erstellen, müssen Sie die [Bausteine](#buildingblocks) für die interaktive Kommunikation fertig stellen und die folgenden Schritte ausführen:
+Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit und führen Sie dann die folgenden Schritte aus:
 
 1. Wählen Sie [Erstellen Sie eine interaktive Kommunikation](/help/forms/using/create-interactive-communication.md).
 
@@ -71,11 +70,11 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 * [Dokumentfragmente](/help/forms/using/document-fragments.md)
 * Bilder
-* [](/help/forms/using/themes.md) Themen für den Web-Kanal
+* [](/help/forms/using/themes.md) Designs für den Webkanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
-Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur Erstellung von Kundenkommunikation. Um die Briefe, die in AEM 6.3 Forms und AEM 6.2 Forms erstellt wurden, weiterhin zu verwenden, müssen Sie ein [Kompatibilitätspaket installieren](/help/forms/using/compatibility-package.md). Im Folgenden finden Sie einen Vergleich zwischen den Funktionen der interaktiven Kommunikation und des Briefs.
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation. Um die Briefe, die in AEM 6.3 Forms und AEM 6.2 Forms erstellt wurden, weiterhin zu verwenden, müssen Sie ein [Kompatibilitätspaket installieren](/help/forms/using/compatibility-package.md). Im Folgenden finden Sie einen Vergleich zwischen den Funktionen der interaktiven Kommunikation und des Briefs.
 
 <table> 
  <tbody>
@@ -150,4 +149,3 @@ Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur E
   </tr>
  </tbody>
 </table>
-
