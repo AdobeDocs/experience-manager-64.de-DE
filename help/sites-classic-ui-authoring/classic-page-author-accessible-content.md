@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 980c9f64-7972-499d-b0e4-63a1a1d49e49
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '9195'
 ht-degree: 96%
 
 ---
 
-
-# Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien) {#creating-accessible-content-wcag-conformance}
+# Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien){#creating-accessible-content-wcag-conformance}
 
 WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind.
 
@@ -59,7 +58,7 @@ Im folgenden Abschnitt finden Sie die [WCAG 2.0-Richtlinien](https://www.w3.org/
 
 
 
-## Grundsatz 1: Erkennbar     {#principle-perceivable}
+## Grundsatz 1: Erkennbar      {#principle-perceivable}
 
 [Grundsatz 1: Erkennbar – Informationen und Komponenten der Benutzeroberfläche müssen für die Benutzer so dargestellt sein, dass sie sie erkennen können.](https://www.w3.org/TR/WCAG20/#perceivable)
 
@@ -95,7 +94,7 @@ AEM fügt Ihren Bildern standardmäßig einen **ALT-Text** hinzu. Bei der klassi
 
 * File:
 
-   Ein Bild wird von der Festplatte des Benutzers hochgeladen. Wenn Sie einer Seite eine Bildkomponente hinzufügen und dann ein Bild von Ihrer Festplatte oder einer anderen Quelle auswählen, ist der Standardwert für **Alt-Text** `file` . Dies muss auf der Registerkarte **Erweitert** für die Bildeigenschaften geändert werden. Dieser Wert wird wiederum nicht im Feld **ALT-Text** angezeigt, doch wenn der Wert geändert wird, ist der neue Wert im Feld zu sehen.
+   Ein Bild wird von der Festplatte des Benutzers hochgeladen. Wenn Sie einer Seite eine Bildkomponente hinzufügen und dann ein Bild von Ihrer Festplatte oder einer anderen Quelle auswählen, lautet der Standardwert für **ALT-Text** `file`. Dies muss auf der Registerkarte **Erweitert** für die Bildeigenschaften geändert werden. Dieser Wert wird wiederum nicht im Feld **ALT-Text** angezeigt, doch wenn der Wert geändert wird, ist der neue Wert im Feld zu sehen.
 
 * Asset:
 
@@ -103,7 +102,7 @@ AEM fügt Ihren Bildern standardmäßig einen **ALT-Text** hinzu. Bei der klassi
 
 >[!NOTE]
 >
->In beiden oben genannten Szenarien ist der Standardwert **Alt Text** auf der Registerkarte **Erweiterte Bildeigenschaften** nicht sichtbar. Um den Standardwert zu ändern, geben Sie einfach einen neuen Wert in das Feld **Alt-Text** ein.
+>In beiden obigen Szenarien ist der Standardwert **ALT-Text** auf der Registerkarte **Erweiterte Bildeigenschaften** nicht sichtbar. Um den Standardwert zu ändern, geben Sie einfach einen neuen Wert in das Feld **Alt-Text** ein.
 
 >[!NOTE]
 >
@@ -117,7 +116,7 @@ Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der
 * Übermäßig lange Beschreibungen (mit mehr als 100 Zeichen) sollten vermieden werden. Wenn für eine Textalternative mehr Details erforderlich sind:
 
    * Geben Sie im Alternativtext eine kurze Beschreibung an
-   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie auf diese separate Beschreibung, indem Sie das Bild mit einem Link unterlegen oder indem Sie neben das Bild einen Textlink platzieren.
+   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie auf diese separate Beschreibung, indem Sie das Bild mit einem Link unterlegen oder indem Sie neben das Bild einen Text-Link platzieren.
 
 * Alternativtext sollte keinen Inhalt replizieren, der bereits in Textform auf derselben Seite vorhanden ist. Denken Sie daran, dass viele Bilder Darstellungen von Punkten sind, die bereits der Text einer Seite abdeckt. Somit ist möglicherweise bereits eine Textalternative vorhanden.
 * Wenn es sich bei dem nichttextlichen Inhalt um einen Link zu einer anderen Seite oder einem anderen Dokument handelt und kein anderer Text vorhanden ist, der Teil desselben Links ist, dann muss der Alternativtext für das Bild das Ziel des Links angeben und braucht das Bild nicht zu beschreiben.
@@ -128,17 +127,17 @@ Der [W3C-Entwurf: HTML5-Techniken zur Bereitstellung nützlicher Textalternative
 
 Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderlich sind:
 
-* Illustrative Fotos:
+* Veranschaulichende Fotos:
 
-   Das sind Bilder von Menschen, Objekten oder Orten. Denken Sie an die Rolle des Fotos auf der Seite; Ein entsprechendes Textequivalent ist wahrscheinlich *Foto von [object]*, kann aber vom umgebenden Text abhängig sein.
+   Das sind Bilder von Menschen, Objekten oder Orten. Denken Sie an die Rolle des Fotos auf der Seite. Eine entsprechende Textäquivalenz ist wahrscheinlich *Foto von [Objekt]*, kann jedoch vom umliegenden Text abhängig sein.
 
 * Symbole:
 
-   Es handelt sich dabei um kleine Piktogramme (Grafiken), die spezifische Informationen übermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
+   Dies sind kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
 
-* Diagramme und Grafiken:
+* Diagramme:
 
-   Diese stellen in der Regel numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Geben Sie bei Bedarf auch eine detailliertere Beschreibung im Text ein, indem Sie das Feld **Beschreibung** auf der Registerkarte **Erweiterte**-Bildeigenschaften verwenden. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
+   Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Geben Sie bei Bedarf auch mithilfe des Felds **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** eine detailliertere Textbeschreibung ein. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 
    ![Beispiel eines Diagramms: Nachfolgend sehen Sie einen bewährten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2.jpeg)
 
@@ -158,7 +157,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 * Karten, Diagramme, Flussdiagramme:
 
-   Für Grafiken, die räumliche Daten bereitstellen (z. B. um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Karte bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Kartenbildes kurz *Karte von X* angeben und dann Anweisungen für diese Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** geben.
+   Für Grafiken mit räumlichen Daten (z. B. um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Karte bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Kartenbildes kurz *Karte von X* angeben und dann Anweisungen für diese Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** geben.
 
 * CAPTCHAs:
 
@@ -172,7 +171,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 * Hintergrundbilder:
 
-   Diese werden mithilfe von CSS (Cascading Stylesheets) anstelle von HTML erreicht. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen Textinformationen liefern - wenn dies der Fall ist, müssen diese Informationen auch im Text der Seite angegeben werden.
+   Diese werden mithilfe von Cascading Style Sheets (CSS) statt in HTML erreicht. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen enthalten. Wenn sie dies tun, müssen diese Informationen auch im Text der Seite angegeben werden.
 
    Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
@@ -267,7 +266,7 @@ Verwenden Sie möglichst geschlossene Untertitel, da Benutzer so wählen können
 
 Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem entsprechenden Format (wie [SMIL](https://www.w3.org/AudioVideo/)) erstellen und zusammen mit der Videodatei bereitstellen (Details dazu, wie dieser Vorgang ausgeführt wird, sind im Rahmen dieses Leitfadens nicht möglich, doch wir haben Ihnen Links zu einigen Lernprogrammen unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-pre-recorded) zusammengestellt). Geben Sie Benutzern auf jeden Fall einen Hinweis, dass Untertitel für das Video verfügbar sind.
 
-Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Anwendungen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
+Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Programmen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
 
 #### Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)      {#more-information-captions-pre-recorded}
 
@@ -310,7 +309,7 @@ Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rah
 * [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
 * [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
 
-### Untertitel (live) (1.2.4)          {#captions-live}
+### Untertitel (live) (1.2.4)           {#captions-live}
 
 * Erfolgskriterium 1.2.4
 * Level AA
@@ -337,7 +336,7 @@ Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch
 ### Audiobeschreibung (aufgezeichnet) (1.2.5)           {#audio-description-pre-recorded}
 
 * Erfolgskriterium 1.2.5
-* Stufe AA
+* Level AA
 * Audiobeschreibung (aufgezeichnet): Audiobeschreibungen werden für alle aufgezeichneten Videoinhalte in synchronisierten Medien bereitgestellt.
 
 #### Zweck: Audiobeschreibung (aufgezeichnet) (1.2.5)      {#purpose-audio-description-pre-recorded}
@@ -353,7 +352,7 @@ Befolgen Sie die Anweisungen für [Audiobeschreibung oder Medienalternative (auf
 * [Erfolgskriterien 1.2.5 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
 * [Erfolgskriterien 1.2.5 erfüllen](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
 
-### Anpassbar (1.3)   {#adaptable}
+### Anpassbar (1.3)  {#adaptable}
 
 [Richtlinie 1.3 Anpassbar: Erstellen von Inhalten, die auf verschiedene Arten präsentiert werden können (zum Beispiel mit einfacherem Layout) ohne Informationen oder die Struktur zu verlieren.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
@@ -387,7 +386,7 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 * **Verwendung von Überschriften:**
 
-   Solange Sie die Zugänglichkeitsfunktionen der RTE aktiviert haben (siehe [AEM und Ein-/Ausgabehilfe](/help/sites-administering/rte-accessible-content.md)), AEM Angebot 3 Stufen der Seitenüberschrift. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Rubrik 1 ist die höchste Ebene der Überschrift, Rubrik 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenebenen verwendet werden können.
+   Solange die Barrierefreiheitsfunktionen des RTE aktiviert sind (siehe [AEM und Barrierefreiheit](/help/sites-administering/rte-accessible-content.md)), bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenebene, Überschrift 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenebenen verwendet werden können.
 
    Im folgenden Bild ist ein Beispiel der verschiedenen Überschriftentypen zu sehen.
 
@@ -398,7 +397,7 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
    Verwenden Sie das Element &lt;strong> oder &lt;em>, um eine Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
 
    * Markieren Sie den Text, den Sie hervorheben möchten.
-   * Klicken Sie auf das Symbol **B** (für &lt;strong>) oder auf das Symbol **I** (für &lt;em>), das im Bedienfeld **Eigenschaften** angezeigt wird (vergewissern Sie sich, dass HTML ausgewählt ist).
+   * Klicken Sie auf das Symbol **B** (für &lt;strong>) oder das Symbol **I** (für &lt;em>), das im Bedienfeld **Eigenschaften** angezeigt wird (vergewissern Sie sich, dass HTML ausgewählt ist).
 
    >[!NOTE]
    >
@@ -411,9 +410,9 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 * **Listen verwenden**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
 
-   * Das Element `<ul>` wird für Listen mit Aufzählungszeichen *ungeordnet* verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
+   * Das Element `<ul>` wird für *ungeordnete* Listen (mit Aufzählungszeichen) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
-      Verwenden Sie im RTE das Symbol **Liste mit Aufzählungszeichen**.
+      Verwenden Sie im RTE das Symbol **Aufzählungsliste** .
 
    * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
@@ -492,7 +491,7 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
      </table>
    ```
 
-   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quellcodes verwenden.
+   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
 
    >[!NOTE]
    Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Dazu ist die Konfiguration des RTE, der HTML-Regeln und des Serialisierungsprogramms erforderlich.
@@ -532,7 +531,7 @@ Die Verwendung beschreibender Begriffe ist dann akzeptabel, wenn diese auch in e
 * [Erfolgskriterien 1.3.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
 * [Erfolgskriterien 1.3.3 erfüllen](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
 
-### Unterscheidbar (1.4)   {#distinguishable}
+### Unterscheidbar (1.4)  {#distinguishable}
 
 [Richtlinie 1.4 Unterscheidbar: Erleichtern Sie den Benutzern das Sehen und Hören von Inhalt einschließlich der Unterscheidung von Vorder- und Hintergrund.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
@@ -591,7 +590,7 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 ### Kontrast (Minimum) (1.4.3)      {#contrast-minimum}
 
 * Erfolgskriterium 1.4.3
-* Stufe AA
+* Level AA
 * Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit folgenden Ausnahmen:
 
    * Großer Text: Großer Text und Bilder von großem Text haben ein Kontrastverhältnis von mindestens 3:1.
@@ -616,7 +615,7 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 * Für Text mit einer Größe von mindestens 18 Punkt (oder 14 Punkt bei Fettschrift) sollte das Kontrastverhältnis mindestens 3:1 betragen.
 * Falls der Hintergrund gemustert ist, sollte der Hintergrund um alle Texte abgestuft sein, damit das Verhältnis von 4,5:1 oder 3:1 beibehalten wird.
 
-Verwenden Sie ein Farbkontrasttool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
+Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
 Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Dann brauchen Sie den Kontrast nicht zu prüfen, weil der Browser des Benutzers die Farbe für den Text und den Hintergrund ermittelt.
 
@@ -630,7 +629,7 @@ Falls es nicht möglich ist, die geforderten Kontraststufen zu erfüllen, müsse
 ### Bilder von Text (1.4.5)      {#images-of-text}
 
 * Erfolgskriterium 1.4.5
-* Stufe AA
+* Level AA
 * Bilder von Text: Falls die verwendeten Technologien die visuelle Präsentation realisieren können, wird für die Vermittlung von Informationen Text verwendet – keine Bilder von Text. Dabei gelten folgende Ausnahmen:
 
    * Anpassbar: Das Bild des Texts kann visuell an die Anforderungen des Benutzers angepasst werden.
@@ -691,7 +690,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 * [Erfolgskriterium 2.2.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
 * [Erfolgskriterium 2.2.2 erfüllen](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
 
-### Anfälle (2.3)      {#seizures}
+### Anfälle (2.3)     {#seizures}
 
 [Richtlinie 2.3 Anfälle: Gestalten Sie Inhalt nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen.](https://www.w3.org/TR/WCAG20/#seizure)
 
@@ -734,7 +733,7 @@ Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwai
 
 Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt der Seite so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
 
-Sie können den Seitentitel auch beim Bearbeiten einer Seite bearbeiten, auf die über die Registerkarte **Sidekick** - **Seite** - **Seiteneigenschaften zugegriffen werden kann...**
+Sie können den Seitentitel auch beim Bearbeiten einer Seite bearbeiten. Öffnen Sie dazu die Registerkarte **Sidekick** - **Seite** - **Seiteneigenschaften..**
 
 #### Weitere Informationen – Seite mit Titel versehen (2.4.2) {#more-information-page-titled}
 
@@ -848,7 +847,7 @@ In AEM wird die Standardsprache einer Seite bei ihrer Erstellung festgelegt, kan
 ### Sprache von Teilen (3.1.2)     {#language-of-parts}
 
 * Erfolgskriterium 3.1.2
-* Stufe AA
+* Level AA
 * Sprache von Teilen: Die menschliche Sprache aller Abschnitte und Sätze im Inhalt kann programmatisch bestimmt werden. Ausgenommen sind Eigennamen, technische Fachbegriffe, Wörter einer unbestimmten Sprache und Wörter oder Wendungen, die Teil des Jargons des direkt umliegenden Textes sind.
 
 #### Zweck - Sprache von Teilen (3.1.2)   {#purpose-language-of-parts}
@@ -938,11 +937,11 @@ Auch die Positionierung von Beschriftungen ist wichtig, da sie das Auffinden der
 
 * Kontrollkästchen oder Optionsfelder:
 
-   Bezeichnungen werden direkt rechts neben dem Feld positioniert.
+   Beschriftungen werden direkt rechts neben dem Feld positioniert.
 
 * Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder):
 
-   Die Beschriftungen werden entweder direkt über oder unmittelbar links vom Feld positioniert.
+   Beschriftungen werden entweder direkt über dem Feld oder direkt links vom Feld positioniert.
 
 In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schaltfläche mit `Submit` als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 
@@ -950,4 +949,3 @@ In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schal
 
 * [Erfolgskriterium 3.3.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [Erfolgskriterium 3.3.2 erfüllen](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-
