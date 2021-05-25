@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
-translation-type: tm+mt
-source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+exl-id: 7118dbca-e9b4-4b69-b4c3-34bb52008168
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 67%
 
 ---
-
 
 # Communities-Komponenten {#communities-components}
 
@@ -32,17 +31,17 @@ Weitere Informationen zum Erstellen eines Community-Site-Besuchs finden Sie unte
 
 >[!NOTE]
 >
->Wenn Sie mit der Authoring-Umgebung nicht vertraut sind, erstellen Sie eine Ansicht der Dokumentation zu [basic handling](../../help/sites-authoring/basic-handling.md) und einer [Quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>Wenn Sie nicht mit der Authoring-Umgebung vertraut sind, lesen Sie die Dokumentation zu [Grundlegender Umgang](../../help/sites-authoring/basic-handling.md) und eine [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Verfügbare Communities-Komponenten {#available-communities-components}
 
 In der folgenden Tabelle sind diejenigen Communities-Komponenten aufgeführt, die Autoren angezeigt werden, wenn sie im Komponenten-Browser (Sidekick) aktiviert sind.
 
-Siehe auch interaktives [Handbuch zu Community-Komponenten](components-guide.md).
+Siehe auch das interaktive [Handbuch zu Community-Komponenten](components-guide.md).
 
 >[!NOTE]
 >
->Lesen Sie die Grundlagen zu Communities-Komponenten](basics.md), da sie Informationen enthalten, die zum Authoring mit Communities-Komponenten erforderlich sind.[
+>Lesen Sie [Communities Components Basics](basics.md) , da es Informationen enthält, die für das Authoring mit Communities-Komponenten erforderlich sind.
 
 | **Komponentenname** | **Funktion** |
 |---|---|
@@ -62,7 +61,7 @@ Siehe auch interaktives [Handbuch zu Community-Komponenten](components-guide.md)
 | Folgende | [Sozialdiagramm](socialgraph.md) |
 | Forum | [Forum](forum.md) |
 | Ideen | [Ideen](ideation-feature.md) |
-| Leaderboard | [Bewertung und Abzeichen](enabling-leaderboard.md) |
+| Leaderboard | [Scoring und Abzeichen](enabling-leaderboard.md) |
 | Likes | [Likes](liking.md) |
 | Nachricht | [Messaging](configure-messaging.md) |
 | Nachrichtenliste | [Messaging](configure-messaging.md) |
@@ -79,13 +78,12 @@ Siehe auch interaktives [Handbuch zu Community-Komponenten](components-guide.md)
 
 >[!NOTE]
 >
->Die Umfragekomponente ist nicht mehr verfügbar und wird in Experience Manager Communities unterstützt.
+>Die Umfragekomponente ist nicht mehr verfügbar und wird in Experience Manager Communities nicht mehr unterstützt.
 
 ## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
 
-* Weitere Informationen zu empfohlenen Bereitstellungen finden Sie unter [Bereitstellen von Communities](deploy-communities.md).
+* Besuchen Sie [Communities bereitstellen](deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
 
 * Unter [Communities-Sites verwalten](administer-landing.md) erfahren Sie mehr darüber, wie Sie Community-Sites erstellen, Community-Site-Vorlagen bearbeiten, Community-Inhalte moderieren, Mitglieder verwalten und Messaging-Systeme konfigurieren können.
 
-* Besuchen Sie [Developing Communities](communities.md), um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
-
+* Besuchen Sie [Communities entwickeln](communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
