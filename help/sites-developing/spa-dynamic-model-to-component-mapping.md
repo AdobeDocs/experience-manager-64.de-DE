@@ -9,23 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
-translation-type: tm+mt
-source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
+exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 83%
 
 ---
 
-
 # Zuordnung dynamischer Modelle zu Komponenten für SPAs{#dynamic-model-to-component-mapping-for-spas}
 
 In diesem Dokument wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
 
 >[!NOTE]
->Für die Funktion zum Editor für Einzelseitenanwendungen (SPA) ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Single Page Application (SPA) Editor&quot;ist AEM Service Pack 2 (oder höher) 6.4 erforderlich.
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## ComponentMapping-Modul {#componentmapping-module}
 
@@ -51,11 +50,10 @@ Single Page Applications, die das JavaScript SPA SDK für AEM nutzen, sind model
 Jede Komponente wird mit den Funktionen von [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher die folgende allgemeine Form:
 
 1. Jeder Modellanbieter initialisiert sich selbst und wartet auf Änderungen, die an dem Modell vorgenommen wurden, das seiner inneren Komponente entspricht.
-1. [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss initialisiert werden, wie durch den [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) dargestellt.
+1. Der [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss entsprechend dem [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) initialisiert werden.
 
 1. Nach dem Speichern gibt der Seitenmodell-Manager das vollständige Modell der App zurück.
 1. Dieses Modell wird dann an die Frontend-Stamm-[Container](/help/sites-developing/spa-blueprint.md#container)-Komponente der App übergeben.
 1. Teile des Modells werden schließlich auf jede einzelne untergeordnete Komponente übertragen.
 
 ![app_model_initialization](assets/app_model_initialization.png)
-
