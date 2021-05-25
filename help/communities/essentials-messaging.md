@@ -1,28 +1,27 @@
 ---
-title: Messaging Essentials
-seo-title: Messaging Essentials
-description: Übersicht über die Messaging-Komponente
-seo-description: Übersicht über die Messaging-Komponente
+title: Grundlagen zu Messaging
+seo-title: Grundlagen zu Messaging
+description: Übersicht über Messaging-Komponenten
+seo-description: Übersicht über Messaging-Komponenten
 uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 5%
 
 ---
 
-
 # Messaging Essentials {#messaging-essentials}
 
-Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente Dokumente, um eine Messaging-Funktion auf einer Website einzuschließen.
+Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente beschrieben, um eine Messaging-Funktion auf einer Website einzubinden.
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 **Nachricht erstellen**
 
@@ -46,7 +45,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente Do
   </tr> 
   <tr> 
    <td><strong>properties</strong></td> 
-   <td>siehe <a href="configure-messaging.md">Konfigurieren von Messaging</a></td> 
+   <td>Siehe <a href="configure-messaging.md">Konfigurieren von Messaging</a></td> 
   </tr> 
   <tr> 
    <td><strong>Admin-Konfiguration</strong></td> 
@@ -55,7 +54,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente Do
  </tbody> 
 </table>
 
-**Liste**  der Nachricht (für &quot;Posteingang&quot;, &quot;Gesendet&quot;und &quot;Papierkorb&quot;)
+**Nachrichtenliste**  (für Posteingang, Gesendet und Papierkorb)
 
 <table> 
  <tbody> 
@@ -76,7 +75,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente Do
    <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td> 
   </tr> 
   <tr> 
-   <td><strong>Eigenschaften</strong></td> 
+   <td><strong>properties</strong></td> 
    <td>Siehe <a href="configure-messaging.md">Konfigurieren von Messaging</a></td> 
   </tr> 
   <tr> 
@@ -102,7 +101,7 @@ Siehe auch [Clientseitige Anpassungen](client-customize.md)
 
 >[!CAUTION]
 >
->Der String-Parameter darf für die folgenden MessageBuilder-Methoden *keinen *folgenden Schrägstrich (/) enthalten:
+>Der String-Parameter darf für die folgenden MessageBuilder-Methoden *keinen Schrägstrich &quot;/&quot;enthalten:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -119,35 +118,35 @@ Beispiel:
 
 ### Community-Site {#community-site}
 
-Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Nachrichtenfunktion, wenn diese ausgewählt ist. Siehe `User Management`-Einstellungen von [Community-Sites-Konsole](sites-console.md#user-management).
+Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wird, enthält die Messaging-Funktion, falls ausgewählt. Siehe `User Management` Einstellungen von [Community-Sites-Konsole](sites-console.md#user-management).
 
-### Beispielcode: Benachrichtigung erhalten {#sample-code-message-received-notification}
+### Beispielcode: Nachricht erhalten Benachrichtigung {#sample-code-message-received-notification}
 
-Die Social Messaging-Funktion gibt Ereignis für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignis können abgefangen und anhand der im Ereignis enthaltenen Daten ausgeführt werden.
+Die Funktion Social Messaging löst Ereignisse für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignisse können erfasst und Aktionen für die im Ereignis enthaltenen Daten durchgeführt werden.
 
-Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent`-Ereignis überwacht und mit dem `Day CQ Mail Service` eine E-Mail an alle Empfänger der Nachricht sendet.
+Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent`-Ereignis wartet und mit `Day CQ Mail Service` eine E-Mail an alle Nachrichtenempfänger sendet.
 
-Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungs-Umgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen.
+Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungsumgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen.
 
-1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](http://localhost:4502/crx/de)` an
+1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](http://localhost:4502/crx/de)` an.
 1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen, z. B.
 
-   * **[!UICONTROL Symbolischer Name]**: com.engagement.media.social.messaging.MessagingNotification
-   * **[!UICONTROL Name]**: Erste Schritte - Benachrichtigung über Tutorialmeldungen
-   * **[!UICONTROL Beschreibung]**: ein Beispieldienst zum Senden einer E-Mail-Benachrichtigung an Benutzer, die eine Nachricht erhalten
+   * **[!UICONTROL Symbolischer Name]**: com.engage.media.social.messaging.MessagingNotification
+   * **[!UICONTROL Name]**: Erste Schritte - Tutorial-Nachrichten-Benachrichtigung
+   * **[!UICONTROL Beschreibung]**: einen Beispieldienst zum Senden einer E-Mail-Benachrichtigung an Benutzer beim Empfang einer Nachricht
    * **[!UICONTROL Paket]**: `com.engage.media.social.messaging.notification`
 
 1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
-   1. Klasse `Activator.java` automatisch erstellt löschen
-   1. Create class `MessageEventHandler.java`
-   1. Kopieren/fügen Sie den unten stehenden Code in `MessageEventHandler.java` ein
+   1. Löschen Sie die automatisch erstellte Klasse `Activator.java` .
+   1. Klasse erstellen `MessageEventHandler.java`
+   1. Kopieren/fügen Sie den unten stehenden Code in `MessageEventHandler.java` ein.
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen wie im `MessageEventHandler.java`-Code geschrieben hinzu.
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen hinzu, wie im Code `MessageEventHandler.java` geschrieben.
 1. Erstellen Sie das Bundle
-1. Stellen Sie sicher, dass der Dienst `Day CQ Mail Service`OSGi konfiguriert ist.
-1. Melden Sie sich als ein Demo-Benutzer an und senden Sie eine E-Mail an einen anderen
+1. Stellen Sie sicher, dass der OSGi-Dienst `Day CQ Mail Service`konfiguriert ist.
+1. Melden Sie sich als ein Demobenutzer an und senden Sie eine E-Mail an einen anderen
 1. Der Empfänger sollte eine E-Mail bezüglich einer neuen Nachricht erhalten
 
 #### MessageEventHandler.java {#messageeventhandler-java}
@@ -241,4 +240,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-
