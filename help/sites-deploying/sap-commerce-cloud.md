@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 71d0a249-8ad1-416e-ad78-d651b413e5c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 89%
 
 ---
-
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
@@ -36,18 +35,18 @@ ht-degree: 89%
 
 Durch die Implementierung der [erforderlichen eCommerce-Pakete](#packages-needed-for-ecommerce-with-hybris) wird der volle Funktionsumfang des eCommerce-Frameworks zusammen mit einer Referenzimplementierung der eCommerce-Funktionen bereitgestellt, die im Rahmen einer Demandware Commerce-Implementierung (einschließlich Demo-Katalog) verfügbar sind.
 
-Diese ist unter der englischen (US) Niederlassung ( `/content/geometrixx-outdoors/en_US`) der Geometrixx Outdoors-Website verfügbar:
+Dies ist unter der englischen (US-) Niederlassung ( `/content/geometrixx-outdoors/en_US`) der Geometrixx Outdoors-Website verfügbar:
 
 * [Produktinformationen](#productinformationwithcolorvariants) (mit Farbvarianten sofern zutreffend) 
 
-* [Übersicht über den Warenkorbinhalt](#shoppingcartcontentoverview) 
+* [Übersicht über den Warenkorbinhalt ](#shoppingcartcontentoverview)
 * [Kundenregistrierung](#customersignup) und [Kundenanmeldung](#customersignin) 
 
-* [Zugriff auf die hybris-Verwaltungskonsole](#accesstothehybrismanagementconsole) 
+* [Zugriff auf die hybris-Verwaltungskonsole ](#accesstothehybrismanagementconsole)
 
 ### Technische Anforderungen – hybris-Server {#technical-requirements-hybris-server}
 
-Die hybris Erweiterung des eCommerce Integration Framework wurde aktualisiert, um Hybris 5 (als Standard) zu unterstützen und gleichzeitig die Abwärtskompatibilität mit [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris) zu gewährleisten.
+Die hybris-Erweiterung des eCommerce Integration Framework wurde aktualisiert, um Hybris 5 (standardmäßig) zu unterstützen und gleichzeitig die Abwärtskompatibilität mit [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris) zu gewährleisten.
 
 >[!NOTE]
 >
@@ -63,7 +62,7 @@ Die hybris Erweiterung des eCommerce Integration Framework wurde aktualisiert, u
 
 Zur Installation der eCommerce-Funktionalität benötigen Sie:
 
-* Ihr Hybrid-Server
+* Ihr hybris-Server
 * AEM eCommerce-Framework:
 
    * Dies ist Teil einer standardmäßigen AEM-Installation. 
@@ -77,7 +76,7 @@ Zur Installation der eCommerce-Funktionalität benötigen Sie:
    * `cq-hybris-content-6.3.2`
    * hybris-spezifische API-Implementierung
    * `cq-geometrixx-hybris-content-6.3.2`
-   * eine Referenzimplementierung zur Veranschaulichung der Verwendung von Hybris ( `geometrixx-outdoors/en_US`)
+   * eine Referenzimplementierung zur Veranschaulichung der Verwendung von hybris ( `geometrixx-outdoors/en_US`)
 
 ### Installation von eCommerce mit hybris {#installation-of-ecommerce-with-hybris}
 
@@ -144,14 +143,14 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
    >
    >Drücken Sie bei Bedarf `Return`.
 
-1. Laden Sie die folgenden Dateien in den Stammordner Ihrer extrahierten Hybris-Distribution herunter,
+1. Laden Sie die folgenden Dateien in den Stammordner Ihrer extrahierten hybris-Distribution herunter,
 
    ```
        <hybris-root-directory>
    ```
 
 
-   [Datei laden](assets/setup.groovy)
+[Datei laden](assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -159,7 +158,7 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
 
    5.6.0 und höher
 
-   [Datei laden](assets/setup-1.groovy)
+[Datei laden](assets/setup-1.groovy)
 
 1. Geben Sie in der Befehlszeile Folgendes ein, um:
 
@@ -208,7 +207,7 @@ Mit diesem Verfahren wird das Demonstrationsgeschäft Geometrixx Online hochgela
 1. Erweitern Sie in der Sidebar **System** und **Tools**. Wählen Sie dann **Import** aus, um das Fenster **Wizard: CSV Import** zu öffnen.
 1. Wählen Sie auf der Registerkarte **Configuration** die Option **Upload** für die folgende **Importdatei**:
 
-   [Datei laden](assets/geometrixx-outdoors-export.csv)
+[Datei laden](assets/geometrixx-outdoors-export.csv)
 
 1. Definieren Sie die **Locale Setting** folgendermaßen:
 
@@ -217,7 +216,7 @@ Mit diesem Verfahren wird das Demonstrationsgeschäft Geometrixx Online hochgela
 1. Öffnen Sie die Registerkarte **Resources**.
 1. **Laden** Sie die folgende **Media-Zip**-Datei hoch:
 
-   [Datei laden](assets/geometrixx-outdoors-images.zip)
+[Datei laden](assets/geometrixx-outdoors-images.zip)
 
 1. Klicken Sie auf **Start**, um die angegebenen Dateien zu importieren. Auf der Registerkarte **Result** werden etwaige Protokolleinträge angezeigt.
 
@@ -227,11 +226,11 @@ Mit diesem Verfahren wird das Demonstrationsgeschäft Geometrixx Online hochgela
 
 1. **Laden** Sie die folgende **Importdatei** hoch:
 
-   [Datei laden](assets/base-store.csv)
+[Datei laden](assets/base-store.csv)
 
    Verwenden Sie für hybris 5.7 folgende Datei:
 
-   [Datei laden](assets/base-store-5_7.csv)
+[Datei laden](assets/base-store-5_7.csv)
 
 1. Definieren Sie die **Locale Setting** folgendermaßen:
 
@@ -244,4 +243,3 @@ Mit diesem Verfahren wird das Demonstrationsgeschäft Geometrixx Online hochgela
 1. Im Produkt-Cockpit können Sie sich jetzt die importierten Kataloge und Produkte ansehen:
 
    [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
-
