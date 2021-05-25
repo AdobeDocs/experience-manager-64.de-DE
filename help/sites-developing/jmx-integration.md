@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
-translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+exl-id: d56fa6ba-6ac7-4d4f-968b-075f4f13957c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 90%
 
 ---
-
 
 # Integrieren von Diensten mit der JMX-Konsole{#integrating-services-with-the-jmx-console}
 
@@ -24,9 +23,9 @@ Erstellen Sie mit der JMX-Konsole MBeans für die Verwaltung von Diensten und st
 
 Weitere Informationen zur Nutzung der JMX-Konsole finden Sie unter [Überwachen von Serverressourcen mit der JMX-Konsole](/help/sites-administering/jmx-console.md).
 
-## Das JMX-Framework bei Felix und CQ5 {#the-jmx-framework-in-felix-and-cq}
+## Das JMX-Framework bei Felix und CQ5  {#the-jmx-framework-in-felix-and-cq}
 
-Auf der Apache Felix-Plattform stellen Sie MBeans als OSGi-Dienste bereit. Wenn ein MBean-Dienst in der OSGi-Dienstregistrierung registriert ist, registriert das Aries JMX Whiteboard-Modul die MBean automatisch beim MBean-Server. Das MBean ist dann für die JMX-Konsole verfügbar, die die öffentlichen Attribute und Vorgänge veröffentlicht.
+Auf der Apache Felix-Plattform stellen Sie MBeans als OSGi-Dienste bereit. Wenn ein MBean-Dienst in der OSGi Service Registry registriert ist, registriert das Aries JMX Whiteboard-Modul das MBean automatisch beim MBean-Server. Das MBean ist dann für die JMX-Konsole verfügbar, die die öffentlichen Attribute und Vorgänge veröffentlicht.
 
 ![jmxwhiteboard](assets/jmxwhiteboard.png)
 
@@ -60,7 +59,7 @@ Fügen Sie Anmerkungen zur Verwaltungsschnittstelle hinzu, um MBean-Metadaten an
 Klassen werden für die Erstellung von Dynamic MBeans bereitgestellt, die die Anmerkungen nutzen, die Sie zu ihren Schnittstellen hinzufügen:
 
 * **AnnotatedStandardMBean:** eine Unterklasse der Klasse javax.management.StandardMBean, die der JMX-Konsole die Anmerkungs-Metadaten automatisch bereitstellt.
-* **OpenAnnotatedStandardMBean:** Eine Unterklasse der AnnotatedStandardMBean-Klasse zum Erstellen von Open Mbeans, die die OpenTypeInfo-Ankündigung nutzen.
+* **OpenAnnotatedStandardMBean:** Eine Unterklasse der Klasse AnnotatedStandardMBean zum Erstellen von Open MBean, die die OpenTypeInfo-Ankündigung nutzen.
 
 ### Entwickeln von MBeans {#developing-mbeans}
 
@@ -139,9 +138,9 @@ Wenn Sie MBeans als OSGi-Dienst registrieren, werden sie automatisch beim MBean-
 
 Neben den zu OSGi gehörenden Metadaten müssen Sie auch die Metadaten angeben, die das Aries JMX Whiteboard-Modul für die Registrierung des MBean beim MBean-Server benötigt:
 
-* **Name der DynamicMBean-Schnittstelle:** Erklären Sie, dass der MBean-Dienst die  `javax.management.DynamicMBea`n-Schnittstelle implementiert. Diese Deklaration informiert das Aries JMX Whiteboard-Modul darüber, dass es sich bei dem Dienst um einen MBean-Dienst handelt.
+* **Name der DynamicMBean-Schnittstelle:** Deklarieren Sie, dass der MBean-Dienst die  `javax.management.DynamicMBea`n-Schnittstelle implementiert. Diese Deklaration informiert das Aries JMX Whiteboard-Modul darüber, dass es sich bei dem Dienst um einen MBean-Dienst handelt.
 
-* **MBean-Domäne und Schlüsseleigenschaften:** Unter Felix geben Sie diese Informationen als Eigenschaft des OSGi-Dienstes von MBean an. Dabei handelt es sich um dieselben Daten, die Sie für gewöhnlich dem MBean-Server in einem `javax.management.ObjectName`-Objekt bereitstellen.
+* **MBean-Domäne und Schlüsseleigenschaften:** In Felix geben Sie diese Informationen als Eigenschaft des OSGi-Dienstes des MBean an. Dabei handelt es sich um dieselben Daten, die Sie für gewöhnlich dem MBean-Server in einem `javax.management.ObjectName`-Objekt bereitstellen.
 
 Wenn Ihr MBean das Abbild eines einzelnen Dienstes ist, ist nur eine einzige Instanz des MBean-Dienstes erforderlich. In diesem Fall können Sie, wenn Sie das Felix SCR Maven-Plug-in verwenden, mit den Apache Felix Service Component Runtime (SCR)-Anmerkungen auf der MBean-Implementierungsklasse die JMX-Metadaten festlegen. Um mehrere MBean-Instanzen zu initiieren, könnten Sie eine weitere Klasse erstellen, die die Registrierung des OSGi-Dienstes des MBean durchführt. In diesem Fall werden die JMX-Metadaten bei Laufzeit erzeugt.
 
@@ -220,7 +219,7 @@ In diesem Beispiel stellt das MBean Daten zu den CQ5-Workflow-Modellen bereit, d
 
 >[!NOTE]
 >
->Aus Gründen der Einfachheit führt der Code in diesem Beispiel keine Protokollierung durch oder reagiert nicht auf ausgelöste Ausnahmen.
+>Der Einfachheit halber führt der Code in diesem Beispiel keine Protokollierung durch oder reagiert nicht auf ausgelöste Ausnahmen.
 
 WorkflowMBeanManagerImpl enthält eine Komponenten-Aktivierungsmethode. Wenn die Komponente aktiviert wird, führt die Methode die folgenden Aufgaben durch:
 
@@ -231,7 +230,7 @@ WorkflowMBeanManagerImpl enthält eine Komponenten-Aktivierungsmethode. Wenn die
 
 Die MBean-Metadaten werden in der JMX-Konsole mit der Domäne com.adobe.example und dem workflow_model-Typ angezeigt. Als Eigenschaft ist der Pfad des Workflow-Modellkonfigurationsknotens angegeben.
 
-![jmxworkflow mbean](assets/jmxworkflowmbean.png)
+![jmxworkflowmbean](assets/jmxworkflowmbean.png)
 
 ### Das Beispiel-MBean {#the-example-mbean}
 
@@ -279,7 +278,7 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 }
 ```
 
-### Der Beispiel-MBean-Manager {#the-example-mbean-manager}
+### Der Beispiel-MBean-Manager  {#the-example-mbean-manager}
 
 Der WorkflowMBeanManager-Dienst umfasst die Komponenten-Aktivierungsmethode, die WorkflowMBean-Dienste erstellt. Die Dienstimplementierung beinhaltet die folgenden Methoden:
 
@@ -427,7 +426,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 }
 ```
 
-### Die POM-Datei für das Beispiel-MBean {#the-pom-file-for-the-example-mbean}
+### Die POM-Datei für das Beispiel-MBean  {#the-pom-file-for-the-example-mbean}
 
 Der Einfachheit halber können Sie den folgenden XML-Code in Ihre Projektdatei pom.xml kopieren, um das Komponenten-Bundle zu erstellen. Das POM verweist auf mehrere erforderliche Plug-ins und Abhängigkeiten.
 
@@ -595,4 +594,3 @@ Fügen Sie das folgende Profil zu Ihren Maven-Einstellungen hinzu, um das öffen
      </pluginRepositories>
 </profile>
 ```
-
