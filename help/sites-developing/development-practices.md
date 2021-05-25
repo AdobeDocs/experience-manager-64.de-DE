@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 32fb6479-ae53-4bb3-8827-db15d7f5705e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
 ---
-
 
 # Entwicklungspraktiken{#development-practices}
 
@@ -35,7 +34,7 @@ Einige häufig von Teams angegebene Kriterien sind:
 
 Ohne eine entsprechende Definition treten häufig Situationen auf, in denen vieles halbfertig, aber nichts abgeschlossen ist.
 
-### Programmier- und Formatierungskonventionen definieren und einhalten {#define-and-adhere-to-coding-and-formatting-conventions}
+### Programmier- und Formatierungskonventionen definieren und einhalten  {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber korrekt formatierter Code trägt erheblich zur Lesbarkeit und Pflegeleichtigkeit bei. Konventionen sollten im Team abgesprochen und beim Programmieren befolgt werden.
 
