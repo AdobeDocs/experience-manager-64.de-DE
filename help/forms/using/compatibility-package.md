@@ -10,16 +10,15 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '387'
 ht-degree: 91%
 
 ---
 
-
-# Kompatibilitätspaket {#compatibility-package} installieren
+# Kompatibilitätspaket installieren {#compatibility-package}
 
 Die Installation des Kompatibilitätspakets auf AEM Forms 6.4 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.3 sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
 
@@ -34,13 +33,13 @@ Das AEMFD-Kompatibilitätspaket ermöglicht es Ihnen, die folgenden Assets aus A
 * Datenwörterbücher
 * Veraltete Vorlagen und Seiten für adaptive Formulare
 
-Weitere Informationen finden Sie unter [Elemente, die mit AEM Forms 6.4 kompatibel gemacht wurden, indem Sie das Kompatibilitätspaket](/help/forms/using/compatibility-package.md#assetsmadecompatible) installieren.
+Weitere Informationen finden Sie unter [Assets, die mit AEM Forms 6.4 kompatibel sind, indem Sie das Kompatibilitätspaket](/help/forms/using/compatibility-package.md#assetsmadecompatible) installieren.
 
 ## Unterstützung für Assets aus AEM Forms 6.3 und 6.2 in AEM Forms 6.4 hinzufügen {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Gehen Sie nach der Aktualisierung wie folgt vor, um das AEM-Kompatibilitätspaket zu installieren und Ihre Assets mit Version 6.4 kompatibel zu machen:
 
-Vergewissern Sie sich, dass [AEM Compatibility Package](/help/sites-deploying/backward-compatibility.md) vorinstalliert ist.
+Stellen Sie sicher, dass das [AEM Kompatibilitätspaket](/help/sites-deploying/backward-compatibility.md) vorinstalliert ist.
 
 1. Installieren Sie das [Kompatibilitätspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
@@ -78,4 +77,3 @@ Durch Installation des Kompatibilitätspakets können Sie die folgenden Assets u
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedenrollment
-
