@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Erfahren Sie mehr über die zentralisierte Verwaltung von Video-Assets, mit denen Sie Videos für Experience Manager Assets zur automatischen Kodierung in Dynamic Media Classic hochladen können. Sie können auch direkt von Experience Manager Assets aus auf Dynamic Media Classic-Videos zugreifen. Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme mit automatischer Geräte- und Bandbreitenerkennung.
+description: Erfahren Sie mehr über die zentrale Verwaltung von Video-Assets, in die Sie Videos für Experience Manager-Assets zur automatischen Kodierung in Dynamic Media Classic hochladen können. Sie können auch direkt aus Experience Manager Assets auf Dynamic Media Classic-Videos zugreifen. Die Videointegration von Dynamic Media Classic erweitert die Reichweite optimierter Videos auf alle Bildschirme mit automatischer Geräte- und Bandbreitenerkennung.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
@@ -8,7 +8,6 @@ content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: Video
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '1604'
@@ -18,15 +17,15 @@ ht-degree: 32%
 
 # Video {#video}
 
-Assets bieten eine zentralisierte Verwaltung von Video-Assets, bei der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic zu kodieren. Sie können auch direkt von Assets aus auf Dynamic Media Classic-Videos zugreifen, um Seiten zu erstellen.
+Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic zu kodieren. Sie können auch direkt aus Assets auf Dynamic Media Classic-Videos für die Seitenbearbeitung zugreifen.
 
 Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung).
 
-Die Komponente **[!UICONTROL Scene7 Video]** führt automatisch eine Geräte- und Bandbreitenerkennung durch, um das richtige Format und die richtige Videoqualität auf Desktop-, Tablet- und Mobilgeräten wiederzugeben.
+Die Komponente **[!UICONTROL Scene7 Video]** führt automatisch eine Geräte- und Bandbreitenerkennung durch, um auf Desktop-, Tablet- und Mobilgeräten das richtige Format und die richtige Qualität für Videos wiederzugeben.
 
-Sie können adaptive Videosets statt nur einzelne Video-Assets einschließen. Ein adaptives Videoset ist ein Container für alle Videowiedergaben, die für die nahtlose Wiedergabe von Videos auf mehreren Bildschirmen erforderlich sind. Ein adaptives Video-Set fasst Versionen desselben Videos zusammen, die mit unterschiedlichen Bitraten und Formaten kodiert wurden. Beispiel: 400 Kbit/s, 800 Kbit/s und 1000 Kbit/s. Sie verwenden ein adaptives Video-Set zusammen mit der S7-Videokomponente für das adaptive Video-Streaming über mehrere Bildschirmtypen hinweg. Beispielsweise Desktop-, iOS-, Android-, BlackBerry- und Windows-Mobilgeräte.
+Sie können adaptive Videosets anstelle nur einzelner Video-Assets einschließen. Ein adaptives Videoset ist ein Container für alle Videoausgabedarstellungen, die für die nahtlose Wiedergabe des Videos über mehrere Bildschirme hinweg erforderlich sind. Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden. Beispiel: 400 kBit/s, 800 kBit/s und 1000 kBit/s. Sie verwenden ein adaptives Videoset zusammen mit der S7-Videokomponente für adaptives Video-Streaming über mehrere Bildschirmtypen hinweg. Zum Beispiel Desktop-, iOS-, Android-, BlackBerry- und Windows-Mobilgeräte.
 
-Weitere Informationen zu adaptiven Videosets finden Sie unter [Dynamic Media Classic-Dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/video-profiles.html#dynamicmedia)
+Weitere Informationen finden Sie in der [Dynamic Media Classic-Dokumentation zu adaptiven Videosets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/video-profiles.html#dynamicmedia).
 
 ## Über FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -35,9 +34,9 @@ Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung 
 * FFMPEG-Miniaturen
 * FFMPEG-Kodierung
 
-Durch Aktivieren und Konfigurieren der Dynamic Media Classic-Integration werden diese beiden Workflow-Schritte nicht automatisch aus dem vordefinierten DAM-Erfassungsarbeitsablauf entfernt oder deaktiviert. Wenn Sie in Experience Manager bereits eine FFMPEG-basierte Videokodierung verwenden, ist es wahrscheinlich, dass FFMPEG auf Ihren Authoring-Umgebung installiert ist. In diesem Fall würde ein neues Video, das mit DAM erfasst wird, zweimal kodiert werden: Einmal vom FFMPEG-Encoder und einmal von der Dynamic Media Classic-Integration.
+Durch die Aktivierung und Konfiguration der Dynamic Media Classic-Integration werden diese beiden Workflow-Schritte nicht automatisch aus dem vordefinierten Workflow zur DAM-Erfassung entfernt oder deaktiviert. Wenn Sie bereits FFMPEG-basierte Videokodierung in Experience Manager verwenden, ist es wahrscheinlich, dass FFMPEG in Ihren Authoring-Umgebungen installiert ist. In diesem Fall wird ein neues Video, das mit DAM erfasst wird, zweimal kodiert: einmal vom FFMPEG-Kodierer und einmal von der Dynamic Media Classic-Integration.
 
-Wenn Sie die FFMPEG-basierte Videokodierung in AEM und FFMPEG konfiguriert haben, können Sie die beiden FFMPEG-Workflows aus Ihrer DAM-ErfassungsWorkflows entfernen.
+Wenn Sie die FFMPEG-basierte Videokodierung in AEM konfiguriert und FFMPEG installiert haben, können Sie die beiden FFMPEG-Workflows aus Ihren DAM-Aufnahme-Workflows entfernen.
 
 ## Unterstützte Formate {#supported-formats}
 
@@ -46,30 +45,30 @@ Die folgenden Formate werden für die Scene7-Videokomponente unterstützt:
 * F4V H.264
 * H.264 (.mp4)
 
-## Festlegen eines Speicherorts für hochgeladene Videos {#deciding-where-to-upload-your-video}
+## Festlegen eines Speicherorts für hochgeladene Videos  {#deciding-where-to-upload-your-video}
 
 Der Speicherort für hochgeladene Videos hängt von folgenden Faktoren ab:
 
 * Benötigen Sie für das Video-Asset einen Workflow?
 * Benötigen Sie für das Video-Asset eine Versionskontrolle?
 
-Falls Sie eine der Fragen mit „ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Wenn beide Fragen mit &quot;Nein&quot;beantwortet werden, laden Sie Ihr Video direkt in Dynamic Media Classic hoch. Der Arbeitsablauf für jedes Szenario wird in den nächsten Abschnitten beschrieben.
+Falls Sie eine der Fragen mit „ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Wenn die Antwort auf beide Fragen &quot;Nein&quot;lautet, laden Sie Ihr Video direkt in Dynamic Media Classic hoch. Der Workflow für jedes Szenario wird in den nächsten Abschnitten beschrieben.
 
 ### Wenn Sie Ihr Video direkt in Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, laden Sie zuerst in die DAM-Adobe hoch. Der folgende Workflow wird empfohlen:
+Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, laden Sie zuerst in Adobe DAM hoch. Der folgende Workflow wird empfohlen:
 
 1. Laden Sie das Video-Asset in Adobe DAM hoch und kodieren und veröffentlichen Sie es automatisch in Dynamic Media Classic.
-1. Greifen Sie in Experience Manager auf die Video-Assets in WCM auf der Registerkarte **[!UICONTROL Filme]** der Inhaltssuche zu.
-1. Autor mit der Komponente **[!UICONTROL Scene7 Video]** oder **[!UICONTROL Foundation Video]**.
+1. Greifen Sie in Experience Manager auf die Video-Assets in WCM auf der Registerkarte **[!UICONTROL Filme]** in der Inhaltssuche zu.
+1. Autor mit der Komponente **[!UICONTROL Scene7-Video]** oder **[!UICONTROL Foundation-Video]** .
 
 ### Wenn Sie Ihr Video in Scene7 hochladen {#if-you-are-uploading-your-video-to-scene}
 
-Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, laden Sie Ihre Assets nach Scene7 hoch. Der folgende Workflow wird empfohlen:
+Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, laden Sie Ihre Assets in Scene7 hoch. Der folgende Workflow wird empfohlen:
 
-1. Richten Sie in Dynamic Media Classic [ein geplantes FTP-Hochladen und -Kodieren auf Scene7 (systemautomatisiert)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#preparing-your-assets-and-folders-for-uploading) ein.
-1. Greifen Sie in Experience Manager auf die Video-Assets in WCM auf der Registerkarte **[!UICONTROL Scene7]** der Inhaltssuche zu.
-1. Autor mit der Komponente **[!UICONTROL Scene7 Video]**.
+1. Richten Sie in Dynamic Media Classic [einen geplanten FTP-Upload und eine geplante Kodierung auf Scene7 (systemautomatisiert)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#preparing-your-assets-and-folders-for-uploading) ein.
+1. Greifen Sie in Experience Manager auf die Video-Assets in WCM auf der Registerkarte **[!UICONTROL Scene7]** in der Inhaltssuche zu.
+1. Erstellen Sie mit der Komponente **[!UICONTROL Scene7 Video]** .
 
 ## Konfigurieren der Integration mit Scene7-Videos {#configuring-integration-with-scene-video}
 
@@ -88,7 +87,7 @@ So konfigurieren Sie universelle Vorlagen:
 
    >[!NOTE]
    >
-   >Weitere Informationen über die Bedeutung der Video-Vorgaben finden Sie in der [Dynamic Media Classic-Dokumentation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Weitere Informationen dazu, was die Videovorgaben bedeuten, finden Sie in der [Dynamic Media Classic-Dokumentation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorlagen oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
@@ -96,64 +95,64 @@ So konfigurieren Sie universelle Vorlagen:
 
 ## Aktualisieren von Viewer- und Kodierungsvorlagen  {#updating-viewer-and-encoding-presets}
 
-Die Viewer- und Kodierungsvorgaben für Videos müssen in Experience Manager aktualisiert werden, wenn die Vorgaben in Scene7 aktualisiert wurden. Navigieren Sie in diesen Fällen zur Scene7-Konfiguration in der Cloud-Konfiguration und klicken Sie auf **[!UICONTROL Aktualisieren Sie den Viewer und die Kodierungsvorgaben]**.
+Es ist erforderlich, die Viewer- und Kodierungsvorgaben für Videos in Experience Manager zu aktualisieren, wenn die Vorgaben in Scene7 aktualisiert wurden. Navigieren Sie in diesen Fällen zur Scene7-Konfiguration in der Cloud-Konfiguration und klicken Sie auf **[!UICONTROL Aktualisieren Sie die Viewer- und Kodierungsvorgaben]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Hochladen Ihres Übergeordnet Videos von Adobe DAM nach Scene7{#uploading-your-master-video}
+## Hochladen Ihres Übergeordneten Videos von Adobe DAM {#uploading-your-master-video} in Scene7
 
 1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit Scene7-Kodierungsprofilen eingerichtet haben.
-1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Mastervideo hochzuladen. Das Hochladen und Kodieren von Videos ist nach Abschluss des Arbeitsablaufs für DAM-Aktualisierung des Assets abgeschlossen und **[!UICONTROL Auf Scene7 veröffentlichen]** hat ein Häkchen.
+1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Mastervideo hochzuladen. Das Hochladen und die Kodierung von Videos sind abgeschlossen, nachdem der Workflow &quot;DAM-Update-Asset&quot;abgeschlossen ist und **[!UICONTROL In Scene7 veröffentlichen]** ein Häkchen aufweist.
 
    >[!NOTE]
    >
-   >Die Erstellung der Videominiaturen dauert einige Zeit.
+   >Es dauert einige Zeit, bis die Videominiaturen generiert werden.
 
-   Wenn Sie das DAM-Übergeordnet-Video auf die Videokomponente ziehen, werden alle *alle*-Scene7-kodierten Proxydarstellungen für den Versand aufgerufen.
+   Wenn Sie das Übergeordnete DAM-Video auf die Videokomponente ziehen, wird auf *alle* die Scene7-kodierten Proxy-Ausgabeformate für die Bereitstellung zugegriffen.
 
 ## Foundation-Videokomponente im Vergleich zur Scene7-Videokomponente {#foundation-video-component-versus-scene-video-component}
 
-Bei Verwendung von Experience Manager haben Sie Zugriff auf die Videokomponente, die in Sites und der Scene7-Videokomponente verfügbar ist. Diese Komponenten sind nicht austauschbar.
+Bei Verwendung von Experience Manager haben Sie Zugriff auf die Videokomponente, die in Sites verfügbar ist, und auf die Scene7-Videokomponente. Diese Komponenten sind nicht austauschbar.
 
-Die Scene7-Videokomponente funktioniert nur für Scene7-Videos. Die Stiftungskomponente funktioniert mit Videos, die in Experience Manager (mithilfe von ffmpeg) und Scene7-Videos gespeichert wurden.
+Die Scene7-Videokomponente funktioniert nur für Scene7-Videos. Die Foundation-Komponente funktioniert mit Videos, die aus Experience Manager (mithilfe von ffmpeg) und Scene7-Videos gespeichert werden.
 
-In der folgenden Tabelle wird erläutert, wann welche Komponente verwendet wird:
+In der folgenden Matrix wird erläutert, wann welche Komponente verwendet werden soll:
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
 >[!NOTE]
 >
->Standardmäßig verwendet die S7-Videokomponente das universelle Video-Profil. Sie können jedoch den HTML5-basierten Videoplayer in Experience Manager abrufen. Kopieren Sie einfach den Einbettungscode des vordefinierten HTML5-Videoplayers und fügen Sie ihn auf Ihre Experience Manager-Seite ein.
+>Standardmäßig verwendet die S7-Videokomponente das universelle Videoprofil. Sie können jedoch den HTML5-basierten Videoplayer in Experience Manager abrufen. Kopieren Sie einfach den Einbettungscode des vordefinierten HTML5-Videoplayers und fügen Sie ihn in Ihre Experience Manager-Seite ein.
 
 ## Experience Manager-Videokomponente {#aem-video-component}
 
-Auch wenn die Verwendung der Scene7-Videokomponente für die Anzeige von Scene7-Videos empfohlen wird, verwenden Sie aus Gründen der Vollständigkeit Scene7-Videos mit der Foundation-Videokomponente.
+Selbst wenn die Verwendung der Scene7-Videokomponente für die Anzeige von Scene7-Videos empfohlen wird, sollten Sie Scene7-Videos mit der Foundation-Videokomponente verwenden, um die Vollständigkeit zu gewährleisten.
 
-### Experience Manager Video- und Scene7-Videovergleich {#aem-video-and-scene-video-comparison}
+### Vergleich von Experience Manager-Videos und Scene7-Videos {#aem-video-and-scene-video-comparison}
 
-Die folgende Tabelle bietet einen umfassenden Vergleich der unterstützten Funktionen zwischen der Videokomponente von Experience Manager Foundation und der Scene7-Videokomponente:
+Die folgende Tabelle bietet einen allgemeinen Vergleich der unterstützten Funktionen zwischen der Experience Manager Foundation-Videokomponente und der Scene7-Videokomponente:
 
 |  | Experience Manager Foundation-Video | Scene7 Video |
 |---|---|---|
 | Ansatz | HTML5 hat Priorität. Flash dient nur zum Ausweichen bei Nicht-HTML5-Inhalten. | Flash auf den meisten Desktopgeräten HTML5 kommt auf Mobilgeräten und Tablets zum Einsatz. |
 | Bereitstellung | Progressiv | Adaptives Streaming |
 | Nachverfolgung | Ja | Ja |
-| Erweiterbarkeit | Ja | Ja (mit [HTML5 Viewer SDK API-Dokumentation](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
+| Erweiterbarkeit | Ja | Ja (mit [HTML5 Viewer SDK API Documentation](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Mobile Videos | Ja | Ja |
 
 ### Einrichtung  {#setting-up}
 
 #### Erstellen von Videoprofilen {#creating-video-profiles}
 
-Die verschiedenen Videokodierungen werden entsprechend den in Ihrer Scene7 Cloud-Konfiguration ausgewählten Scene7-Kodierungsvorgaben erstellt. Damit die Foundation-Videokomponente diese verwenden kann, muss für jede ausgewählte Scene7-Kodierungsvorgabe ein Profil erstellt werden. Mit dieser Methode kann die Videokomponente die DAM-Darstellungen entsprechend auswählen.
+Die verschiedenen Videokodierungen werden entsprechend den in der Scene7-Cloud-Konfiguration ausgewählten Scene7-Kodierungsvorgaben erstellt. Damit die Foundation-Videokomponente sie verwendet, muss für jede ausgewählte Scene7-Kodierungsvorgabe ein Videoprofil erstellt werden. Diese Methode ermöglicht es der Videokomponente, die DAM-Ausgabeformate entsprechend auszuwählen.
 
 >[!NOTE]
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
 1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools] > [!UICONTROL Konfigurationskonsole]**.
-1. Navigieren Sie in der Navigationsstruktur von **[!UICONTROL Konfigurationskonsole]** zu **[!UICONTROL Tools > DAM > Video-Profil]**.
-1. Erstellen Sie ein Scene7 Video-Profil. Im Ordner **[!UICONTROL Neu...]** Dropdown-Liste, wählen Sie **[!UICONTROL Seite erstellen]** und wählen Sie dann die Scene7 Video-Profil-Vorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Navigieren Sie in der Navigationsstruktur von **[!UICONTROL Configuration Console]** zu **[!UICONTROL Tools > DAM > Videoprofile]** .
+1. Erstellen Sie ein Scene7-Videoprofil. Im **[!UICONTROL Neu..]** Dropdownliste, wählen Sie **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Scene7-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -165,29 +164,29 @@ Die verschiedenen Videokodierungen werden entsprechend den in Ihrer Scene7 Cloud
    |---|---|
    | Scene7-Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Kodierungsvorlagen verwendet werden soll |
    | Scene7-Kodierungsvorlage | Die Kodierungsvorlage, die diesem Videoprofil zugeordnet werden soll |
-   | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der type-Eigenschaft des HTML5-Videoquellelements festlegen. Diese Information wird nicht von den S7-Kodierungsvorlagen bereitgestellt, sie ist jedoch erforderlich, um die Videos anhand des HTML5-Videoelements richtig zu rendern. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
+   | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der Eigenschaft type des HTML5-Videoquellenelements festlegen. Diese Information wird nicht von den S7-Kodierungsvorlagen bereitgestellt, sie ist jedoch erforderlich, um die Videos anhand des HTML5-Videoelements richtig zu rendern. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
 
    Wiederholen Sie diesen Schritt für alle in der Cloud-Konfiguration ausgewählten Kodierungsvorlagen, die Sie in der Videokomponente verwenden möchten.
 
-#### Konfigurieren von Design {#configuring-design}
+#### Konfigurieren des Designs {#configuring-design}
 
-Die Komponente **[!UICONTROL Foundation Video]** muss wissen, welche Video-Profil zum Erstellen der Liste der Videoquellen verwendet werden sollen. Öffnen Sie das Dialogfeld für den Entwurf von Videokomponenten und konfigurieren Sie den Komponentenentwurf für die Verwendung der neuen Video-Profil.
-
->[!NOTE]
->
->Wenn Sie die Komponente **[!UICONTROL Foundation Video]** auf einer mobilen Seite verwenden, wiederholen Sie diese Schritte im Design der mobilen Seite.
+Die Komponente **[!UICONTROL Foundation-Video]** muss wissen, welche Videoprofile zum Erstellen der Videoquellenliste verwendet werden sollen. Öffnen Sie das Dialogfeld &quot;Design&quot;der Videokomponenten und konfigurieren Sie das Komponentendesign für die Verwendung der neuen Videoprofile.
 
 >[!NOTE]
 >
->Änderungen am Entwurf erfordern eine Aktivierung des Entwurfs, damit sie bei der Veröffentlichung wirksam werden können.
+>Wenn Sie die Komponente **[!UICONTROL Foundation-Video]** auf einer mobilen Seite verwenden, wiederholen Sie diese Schritte im Design der mobilen Seite.
 
-1. Öffnen Sie das Designdialogfeld der Komponente **[!UICONTROL Foundation Video]** und wechseln Sie zur Registerkarte **[!UICONTROL Profile]**. Löschen Sie dann die vordefinierten Profil und fügen Sie die neuen S7-Profil hinzu. Die Reihenfolge der Profil-Liste im Dialogfeld &quot;Entwurf&quot;definiert die Reihenfolge des Videoquellen-Elements beim Rendern.
-1. Bei Browsern, die HTML5 nicht unterstützen, können Sie mit der Videokomponente einen Flash-Fallback konfigurieren. Öffnen Sie das Dialogfeld für den Entwurf von Videokomponenten und wechseln Sie zur Registerkarte **[!UICONTROL Flash]**. Konfigurieren Sie die Einstellungen des Flash Players und weisen Sie dem Flash Player ein Fallback-Profil zu.
+>[!NOTE]
+>
+>Änderungen am Design erfordern die Aktivierung des Designs, damit sie bei der Veröffentlichung wirksam werden können.
+
+1. Öffnen Sie das Dialogfeld &quot;Design&quot;der Komponente **[!UICONTROL Foundation-Video]** und wechseln Sie zur Registerkarte **[!UICONTROL Profile]** . Löschen Sie dann die nativen Profile und fügen Sie die neuen S7-Videoprofile hinzu. Die Reihenfolge der Profilliste im Dialogfeld &quot;Design&quot;definiert die Reihenfolge des Videoquellenelements beim Rendern.
+1. Bei Browsern, die HTML5 nicht unterstützen, können Sie mit der Videokomponente einen Flash-Fallback konfigurieren. Öffnen Sie das Dialogfeld &quot;Design&quot;der Videokomponenten und wechseln Sie zur Registerkarte **[!UICONTROL Flash]** . Konfigurieren Sie die Flash Player-Einstellungen und weisen Sie dem Flash Player ein Fallback-Profil zu.
 
 #### Checkliste {#checklist}
 
-1. Erstellen Sie eine S7 Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorgaben festgelegt sind und der Importeur ausgeführt wird.
+1. Erstellen Sie eine S7-Cloud-Konfiguration. Stellen Sie sicher, dass die Vorgaben für die Videokodierung festgelegt sind und das Importtool ausgeführt wird.
 1. Erstellen Sie ein S7-Videoprofil für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorlage.
 1. Die Videoprofile müssen aktiviert sein.
-1. Konfigurieren Sie das Design der Komponente **[!UICONTROL Foundation Video]** auf Ihrer Seite.
+1. Konfigurieren Sie das Design der Komponente **[!UICONTROL Foundation-Video]** auf Ihrer Seite.
 1. Aktivieren Sie das Design, nachdem Sie mit Ihren Designänderungen fertig sind.
