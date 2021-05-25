@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 98%
 
 ---
-
 
 # DevOp-Strategien für Unternehmen{#enterprise-devops}
 
@@ -63,7 +62,7 @@ Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren
 
 ### Qualitätssicherung {#quality-assurance}
 
-Diese Umgebung wird vom Qualitätssicherungsteam verwendet, um Ihr neues System umfassend zu testen. Design und Funktion. [](/help/sites-developing/test-plan.md) Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
+Diese Umgebung wird vom Qualitätssicherungsteam verwendet, um [test](/help/sites-developing/test-plan.md) Ihr neues System umfassend zu testen. Design und Funktion. Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
 
 ### Staging   {#staging}
 
@@ -97,7 +96,7 @@ Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Au
 
 Um die in der Veröffentlichungsumgebung erstellten Daten umgekehrt zu replizieren, durchsucht ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung und fragt solche Inhalte aus dem Postausgang für die umgekehrte Replikation der Veröffentlichungsumgebung ab.
 
-#### Veröffentlichen    {#publish}
+#### Veröffentlichen   {#publish}
 
 Die Veröffentlichungsumgebung befindet sich normalerweise innerhalb der demilitarisierten Zone (DMZ). Dies ist die Umgebung, in der die Besucher auf Ihren Inhalt zugreifen (beispielsweise über die Website oder über eine App) und damit interagieren, sei es öffentlich oder innerhalb Ihres Intranets. Die Veröffentlichungsumgebung:
 
