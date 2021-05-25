@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
-
 
 # Entwickeln von AEM-Komponenten – Codebeispiele{#developing-aem-components-code-samples}
 
@@ -35,9 +34,7 @@ Informationen zur klassischen Benutzeroberfläche finden Sie unter [AEM-Komponen
 >Um Ihnen das Analysieren, Testen und Debuggen Ihrer Komponenten zu erleichtern, stellt AEM Folgendes bereit:
 >
 >* [Entwicklermodus](/help/sites-developing/developer-mode.md)
->* ein [Framework zum Automatisieren von Tests, basierend auf der Hobbes.js-Bibliothek](/help/sites-developing/hobbes.md)
-
->
+* ein [Framework zum Automatisieren von Tests, basierend auf der Hobbes.js-Bibliothek](/help/sites-developing/hobbes.md)
 
 
 
@@ -45,14 +42,13 @@ Informationen zur klassischen Benutzeroberfläche finden Sie unter [AEM-Komponen
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-authoring-dialog-fields-customization project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Öffnen Sie das Projekt aem-authoring-dialog-fields-customization auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter.
 
 >[!NOTE]
->
->Dieses Codebeispiel bezieht sich auf die AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+Dieses Codebeispiel bezieht sich auf die AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Verwandte Ressourcen {#related-resources}
 
@@ -67,4 +63,3 @@ Weitere Informationen und Links zum Codebeispiel finden Sie unter [Hinzufügen n
 Gegebenenfalls empfiehlt es sich, die standardmäßigen Inhaltsfragmentkomponente zu erweitern, um Funktionen hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Anpassen und Erweitern von Inhaltsfragmenten](/help/sites-developing/customizing-content-fragments.md).
-
