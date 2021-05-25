@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
-translation-type: tm+mt
-source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 95%
 
 ---
 
-
 # Analysieren der Seitenleistung{#analyzing-page-performance}
 
 Öffnen Sie die Seite [Inhaltseinblick](/help/sites-authoring/content-insights.md), um die Leistung der Seite zu analysieren, die Sie bearbeiten. Konfigurieren Sie den Berichtszeitraum, um Ihre Analyse zu fokussieren.
 
-## Öffnen von Analytics und Empfehlungen für eine Seite {#opening-analytics-and-recommendations-for-a-page}
+## Öffnen von Analytics und Empfehlungen für eine Seite  {#opening-analytics-and-recommendations-for-a-page}
 
 Führen Sie die folgenden Schritte aus, um Analysen und Empfehlungen für eine Seite anzuzeigen:
 
@@ -111,4 +110,4 @@ Führen Sie die folgenden Schritte aus, um eine Aufgabe für eine SEO-Empfehlung
 
 >[!NOTE]
 >
->Die erstellte Aufgabe enthält auch den Pfad zur Seite, auf die die SEO-Empfehlung angewendet wird.
+>Die erstellte Aufgabe enthält auch den Pfad zu der Seite, für die die SEO-Empfehlung gilt.
