@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 57673410-b8f1-494e-b4a0-c6724bab643c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 98%
 
 ---
-
 
 # PDF Generator-Konfigurationsdateien importieren und exportieren {#importing-and-exporting-pdf-generator-configuration-files}
 
@@ -27,7 +26,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 >
 >Sie können die Zeitlimiteinstellung für PDF Generator nicht durch Importieren einer benutzerdefinierten Datei „native2pdfconfig.xml“ ändern. Die Zeitlimiteinstellung in dieser Datei dient nur zu Informationszwecken und zeigt die aktuelle Einstellung in PDF Generator an. Informationen zum Ändern der Zeitlimiteinstellung finden Sie unter „Festlegen von Leistungsparametern für überwachte Ordner in PDF Generator“ unter [deInstallieren und Bereitstellen von AEM Forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
-## Eine aktuelle Konfigurationsdatei exportieren {#export-your-current-configuration-file}
+## Eine aktuelle Konfigurationsdatei exportieren  {#export-your-current-configuration-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
 1. Wählen Sie zum Exportieren von Einstellungen die passende Option aus:
@@ -65,4 +64,3 @@ Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthalt
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
 1. Wählen Sie „Konfiguration auf Standardeinstellungen zurücksetzen“ und klicken Sie auf „Importieren“.
-
