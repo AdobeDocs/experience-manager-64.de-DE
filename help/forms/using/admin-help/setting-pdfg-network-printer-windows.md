@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0b7642c3-d616-44e8-a5d9-3cdd362fedb5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 97%
 
 ---
-
 
 # Einrichten eines PDFG-Netzwerkdruckers (nur Windows) {#setting-up-a-pdfg-network-printer-windows-only}
 
@@ -33,7 +32,7 @@ Zum Einrichten eines PDFG-Netzwerkdruckers sind folgende Schritte erforderlich:
 1. Stellen Sie sicher, dass 32-Bit-JRE6 auf den Computern der Benutzer installiert ist.
 1. Installieren Sie den Drucker auf den Computern der Benutzer. (Siehe [PDFG-Netzwerkdrucker auf dem Computer des Benutzers installieren](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
-## E-Mail-Einstellungen für den PDFG-Netzwerkdrucker konfigurieren {#configure-email-settings-for-pdfg-network-printer}
+## E-Mail-Einstellungen für den PDFG-Netzwerkdrucker konfigurieren  {#configure-email-settings-for-pdfg-network-printer}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf „provider.email_sendmail_service“, geben Sie die SMTP-Einstellungen an und klicken Sie auf „Speichern“.
@@ -64,11 +63,10 @@ Benutzer, die entweder über die Rolle „PDFG-Administrator“ oder über die R
 
 1. (PDFG-Administratoren) Klicken Sie in Administration Console auf „Dienste“ > „ PDF Generator “ > „PDFG-Netzwerkdrucker“.
 
-   (PDFG-Benutzer) Gehen Sie zu `http(s)://[host]:[port]/pdfgui` und klicken Sie auf den Link unter Installation des PDFG-Netzwerkdruckers.
+   (PDFG-Benutzer) Wechseln Sie zu `http(s)://[host]:[port]/pdfgui` und klicken Sie auf den Link unter &quot;Installation des PDFG-Netzwerkdruckers&quot;.
 
 1. Klicken Sie unter „Installation des PDFG-Netzwerkdruckers“ auf den Link. Wenn Sie zur Eingabe der Benutzerkontoinformationen aufgefordert werden, geben Sie den Benutzernamen und das Kennwort an, das Sie in Schritt 1 bei der Anmeldung verwendet haben. Es wird eine Nachricht angezeigt, dass der Drucker erfolgreich installiert wurde.
 
    ***Hinweis **Wenn sich das Kennwort des Benutzers ändert, muss der PDFG-Netzwerkdrucker erneut auf dessen Computer installiert werden. Es ist nicht möglich, das Kennwort mithilfe von Administration Console zu aktualisieren.*
 
 1. Klicken Sie auf OK.
-
