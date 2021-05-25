@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Zielgruppen
 seo-title: Verwalten von Zielgruppen
-description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub oder Client-Kontext
+description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub oder ClientContext
 seo-description: Die Zielgruppen-Konsole ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub oder ClientContext
 uuid: 7112a192-5f58-47ce-95fa-90638c7cdb18
 contentOwner: msm-service
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: dcd54a52-f610-4c68-8547-39562c062d84
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 94%
 
 ---
-
 
 # Verwalten von Zielgruppen{#managing-audiences}
 
@@ -25,7 +24,7 @@ Mithilfe der Zielgruppenkonsole können Sie Zielgruppen für Ihr Adobe Target-K
 * Fügen Sie Zielgruppen hinzu – entweder Adobe Target-Zielgruppen oder ContextHub-Segmente.
 * Verwalten Sie Zielgruppen.
 
-Eine Audience mit der Bezeichnung *segment* in ContextHub und Client Context ist eine Besucher-Klasse, die durch spezifische Kriterien definiert wird, die dann bestimmen, wer eine zielgerichtete Aktivität sieht. Beim Targeting von Aktivitäten können Zielgruppen entweder direkt während des Targeting-Verfahrens ausgewählt oder neue Zielgruppen in der Konsole „Zielgruppen“ erstellt werden.
+Zielgruppen, in ContextHub und ClientContext als *Segment* bezeichnet, sind Besuchergruppen, die durch bestimmte Kriterien definiert werden und mit denen bestimmt wird, wer welche zielgerichteten Aktivitäten sieht. Beim Targeting von Aktivitäten können Zielgruppen entweder direkt während des Targeting-Verfahrens ausgewählt oder neue Zielgruppen in der Konsole „Zielgruppen“ erstellt werden.
 
 In der Konsole „Zielgruppen“ werden Zielgruppen nach Marken geordnet.
 
@@ -37,7 +36,7 @@ Zielgruppen werden mit einer Beschriftung versehen, die beschreibt, um welche Zi
 * CC – Client Context-Segment
 * AT – Adobe Target-Zielgruppe
 
-## Erstellen von ContextHub-Segmenten mit der Konsole „Zielgruppen“  {#creating-a-contexthub-segment-in-the-audiences-console}
+## Erstellen von ContextHub-Segmenten mit der Konsole „Zielgruppen“   {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Sie können ContextHub-Segmente entweder in der Konsole „Zielgruppen“ oder während des Targeting-Verfahrens erstellen.
 
@@ -66,7 +65,7 @@ Arbeiten Sie mit mehr als einer Regel, werden diese Regeln durch den booleschen 
 
 >[!NOTE]
 >
->Wird Ihnen die Option **Target-Zielgruppe erstellen** unter **Erstellen** nicht angezeigt, verfügen Sie nicht über die nötigen Berechtigungen zur Erstellung von Zielgruppen. Sie benötigen Schreibberechtigungen unter **/etc/segmentation**, um Audiencen erstellen zu können. Inhaltsautoren der Gruppe verfügen standardmäßig über Schreibrechte.
+>Wird Ihnen die Option **Target-Zielgruppe erstellen** unter **Erstellen** nicht angezeigt, verfügen Sie nicht über die nötigen Berechtigungen zur Erstellung von Zielgruppen. Sie benötigen Schreibberechtigungen unter **/etc/segmentation** , um Zielgruppen erstellen zu können. Inhaltsautoren der Gruppe verfügen standardmäßig über Schreibrechte.
 
 So erstellen Sie eine Adobe Target-Zielgruppe:
 
@@ -110,4 +109,3 @@ ContextHub- oder Client Context-Zielgruppen lassen sich beliebig mit der Zielgr
 1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung**. Klicken oder tippen Sie auf **Zielgruppen**.
 1. Klicken oder tippen Sie auf das Symbol neben dem zu bearbeitenden ContextHub- oder Client Context-Segment und tippen oder klicken Sie auf **Bearbeiten**.
 1. Bearbeiten Sie die gewünschten Einstellungen im Editor. Weitere Informationen finden Sie in der Dokumentation für [Client Context](/help/sites-administering/campaign-segmentation.md) oder [ContextHub](/help/sites-administering/contexthub-config.md).
-
