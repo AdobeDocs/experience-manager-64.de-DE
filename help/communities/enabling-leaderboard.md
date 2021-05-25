@@ -1,6 +1,6 @@
 ---
-title: Leader-Funktion
-seo-title: Leader-Funktion
+title: Leaderboard-Funktion
+seo-title: Leaderboard-Funktion
 description: Hinzufügen einer Leaderboard-Komponente zu einer Seite
 seo-description: Hinzufügen einer Leaderboard-Komponente zu einer Seite
 uuid: 2a766b63-3ab4-44cd-8a26-629a71b837ea
@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
-translation-type: tm+mt
-source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+exl-id: 1ebe0cbb-33be-4101-92e3-64253a7f7f31
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 17%
 
 ---
 
-
 # Leaderboard-Funktion {#leaderboard-feature}
 
 ## Einführung {#introduction}
 
-Die `Leaderboard`-Komponente bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder nach gewonnenen Punkten (Basissortierung) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstufen.
+Die Komponente `Leaderboard` bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder anhand der erworbenen Punkte (Basis-Scoring) oder ihres Fachwissens (erweiterte Scoring) in eine Rangfolge einordnet.
 
-Bevor Sie die Lederboard-Komponente auf eine Seite setzen, müssen Sie [Communities Scoring and Badges](implementing-scoring.md) konfigurieren.
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Badges](implementing-scoring.md) konfigurieren.
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
@@ -32,7 +31,7 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Konfigurationseinstellungen für die Komponente `Leaderboard`
 
-## Hinzufügen einer Pinnwand zu einer Seite {#adding-a-leaderboard-to-a-page}
+## Hinzufügen eines Leaderboards zu einer Seite {#adding-a-leaderboard-to-a-page}
 
 Um eine `Leaderboard`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
 
@@ -40,65 +39,65 @@ Um eine `Leaderboard`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, s
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-## Leaderboard {#configuring-leaderboard} konfigurieren
+## Leaderboard konfigurieren {#configuring-leaderboard}
 
-Wählen Sie die platzierte Komponente `Leaderboard` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte Komponente `Leaderboard` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ### Registerkarte „Settings“{#settings-tab}
 
-Geben Sie unter der Registerkarte **[!UICONTROL Einstellungen]** an, welche Informationen zum Element angezeigt werden sollen:
+Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** an, welche Informationen zum Mitglied angezeigt werden sollen:
 
 * **[!UICONTROL Anzeigename]**
-Ein beschreibender Name, der für die Pinnwand angezeigt werden soll und den Regeln entspricht, die für die Anzeige von Abzeichen und Ergebnissen ausgewählt wurden.
+Ein beschreibender Name, der für die Pinnwand angezeigt wird und die für die Anzeige von Abzeichen und Bewertungen ausgewählten Regeln widerspiegelt.
 
    Der Standardwert ist `Leaderboard`, wenn nichts eingegeben wurde.
 
 * ****
-BadgeWenn aktiviert, wird eine Spalte für Symbole mit Zeichen in die Lederboard aufgenommen.
+BadgeIst diese Option aktiviert, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL KennzeichennameWenn]**
-aktiviert, wird eine Spalte für den Kennzeichennamen in der Lederboard eingefügt.
+* **[!UICONTROL Badge-]**
+NameIst diese Option aktiviert, wird eine Spalte für den Badge-Namen in die Leaderboard aufgenommen.
 
    Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Verwenden Sie]**
-AvatarWenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds verknüpft.
+AvatarWenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in der Leaderboard neben dem Namen des Mitglieds mit seinem Mitgliederprofil verknüpft.
 
    Diese Option ist standardmäßig deaktiviert.
 
 ### Registerkarte Regeln {#rules-tab}
 
-Auf der Registerkarte **[!UICONTROL Regeln]** finden Sie die Community-Site und die zugehörigen Scoring- und Bading-Regeln
+Auf der Registerkarte **[!UICONTROL Regeln]** finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln.
 
 * **[!UICONTROL Regelspeicherort]**
- (erforderlich) Der Speicherort, an dem die Regel für Bewertung/Abzeichen konfiguriert ist.
+ (erforderlich) Der Speicherort, an dem die Scoring-/Badging-Regel konfiguriert ist.
 
-* **[!UICONTROL Bewertungsregel]**
- (erforderlich) Spezifische Regel, die die anzuzeigenden Ergebnisse generiert.
+* **[!UICONTROL Scoring Rule]**
+ (erforderlich) Bestimmte Regel, die die anzuzeigenden Werte generiert.
 
 * **[!UICONTROL Badging-Regel]**
- (erforderlich) Spezifische Regel, die das anzuzeigende Zeichen generiert.
+ (erforderlich) Spezifische Regel, die das anzuzeigende Badge generiert.
 
-* **[!UICONTROL Zeigt]**
-LimitAnzahl der Mitglieder an, die pro Seite angezeigt werden.
+* **[!UICONTROL Display]**
+LimitAnzahl der Mitglieder, die pro Seite angezeigt werden sollen.
 
    Der Standardwert ist 10.
 
-## Beispiel: Hauptplatine der Teilnehmer {#example-participants-leaderboard}
+## Beispiel: Teilnehmer-Leaderboard {#example-participants-leaderboard}
 
-Dieser Bericht des Lederboards beruht auf der Anwendung grundlegender Bewertungsregeln.
+Diese Leaderboard-Berichte resultieren aus der Anwendung grundlegender Scoring-Regeln.
 
-Konfiguration der Leaderboard-Komponente:
+Leaderboard-Komponentenkonfiguration:
 
 * **** Einstellungsstab:
 
@@ -118,11 +117,11 @@ Konfiguration der Leaderboard-Komponente:
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-## Beispiel: Expert Leaderboard {#example-experts-leaderboard}
+## Beispiel: Expertenvorstand {#example-experts-leaderboard}
 
-Dieser Bericht des Lederboards ist das Ergebnis der Anwendung erweiterter Bewertungsregeln.
+Diese Leaderboard-Berichte resultieren aus der Anwendung erweiterter Scoring-Regeln.
 
-Konfiguration der Leaderboard-Komponente:
+Leaderboard-Komponentenkonfiguration:
 
 * **** Einstellungsstab:
 
@@ -145,4 +144,4 @@ Konfiguration der Leaderboard-Komponente:
 
 Weitere Informationen finden Sie auf der Seite [Leaderboard Essentials](leaderboard.md) für Entwickler.
 
-Anweisungen zum Erstellen von Regeln finden Sie auf der Seite [Bewertung und Abzeichen](implementing-scoring.md) für Administratoren.
+Anweisungen zum Erstellen von Regeln finden Sie auf der Seite [Communities-Scoring und -Abzeichen](implementing-scoring.md) für Administratoren.
