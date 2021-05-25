@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
 ---
 
-
 # Überprüfungsmeldungen konfigurieren {#configuring-validation-messages}
 
 Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfungsfehler für den Benutzer angezeigt. Sie können die Darstellung von Überprüfungsmeldungen anpassen. In Abhängigkeit davon, wo die Überprüfungsmeldungen angezeigt werden, können Sie auch die Position der Meldung im Formular sowie die Rahmenstärke steuern.
 
-## Angeben, wie Überprüfungsmeldungen angezeigt werden {#specify-how-validation-messages-are-displayed}
+## Angeben, wie Überprüfungsmeldungen angezeigt werden  {#specify-how-validation-messages-are-displayed}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Wählen Sie unter „Überprüfungsausgabe“ in der Liste „Berichte“ eine der folgenden Optionen aus:
@@ -63,7 +62,6 @@ Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärk
 
 1. Geben Sie unter „Überprüfungsausgabe“ im Feld „Rahmenstärke“ die Stärke des Rahmens in Pixel ein.
 
-   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1. 
+   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1.
 
 1. Klicken Sie auf Speichern.
-
