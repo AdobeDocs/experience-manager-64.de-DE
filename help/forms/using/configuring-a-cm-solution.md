@@ -1,22 +1,21 @@
 ---
 title: Konfigurieren einer Correspondence Management-Lösung
 seo-title: Konfigurieren einer Correspondence Management-Lösung
-description: Erfahren Sie, wie Sie eine Instanz im Autorenmodus-URL für die Wiederherstellung der Autorinstanz definieren und die URL der Instanz im Veröffentlichungsmodus für den Aktivierungen-Manager definieren.
-seo-description: Erfahren Sie, wie Sie eine Instanz im Autorenmodus-URL für die Wiederherstellung der Autorinstanz definieren und die URL der Instanz im Veröffentlichungsmodus für den Aktivierungen-Manager definieren.
+description: Erfahren Sie, wie Sie eine URL der Autoreninstanz für die Wiederherstellung der Autoreninstanz-Version definieren und die URL der Veröffentlichungsinstanz für den Aktivierungsmanager der öffentlichen Instanz definieren.
+seo-description: Erfahren Sie, wie Sie eine URL der Autoreninstanz für die Wiederherstellung der Autoreninstanz-Version definieren und die URL der Veröffentlichungsinstanz für den Aktivierungsmanager der öffentlichen Instanz definieren.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Korrespondenzverwaltung
+exl-id: a062957d-a526-4c4b-bbc5-0cda8ab007a3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 66%
 
 ---
-
 
 # Konfigurieren einer Correspondence Management-Lösung {#configuring-a-correspondence-management-solution}
 
@@ -26,7 +25,7 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
 1. Gehen Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager-Autor-URL]** die URL der Autoreninstanz von VersionRestoreManager an.
+1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager Author URL]** die URL der Autoreninstanz von VersionRestoreManager an.
 
    **URL-Zeichenfolge**:
 
@@ -34,11 +33,11 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
    >[!NOTE]
    >
-   >Wenn mehrere Instanzen im Autorenmodus (gruppiert) mit der Frontierung eines Lastenausgleichs vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL VersionRestoreManager-Autor-URL]** an.
+   >Wenn mehrere Autoreninstanzen (geclustert) von einem Lastenausgleich vorgestellt werden, geben Sie die URL zum Lastenausgleich im Feld **[!UICONTROL VersionRestoreManager-Autoren-URL]** an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## URL der Instanz im Veröffentlichungsmodus für ActivationManagerImpl festlegen (Aktivierungsmanager der öffentlichen Instanz) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## URL der Instanz im Veröffentlichungsmodus für ActivationManagerImpl festlegen (Aktivierungsmanager der öffentlichen Instanz)  {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
 Folgen Sie diesen Schritten, um die „URL-Instanz veröffentlichen“ für den Aktivierungsmanager der Veröffentlichungsinstanz zu definieren:
 
