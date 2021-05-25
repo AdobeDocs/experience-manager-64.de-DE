@@ -2,16 +2,15 @@
 title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform), der von AEM Assets zur Metadatenverwaltung verwendet wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '816'
 ht-degree: 93%
 
 ---
-
 
 # XMP-Metadaten {#xmp-metadata}
 
@@ -32,7 +31,7 @@ XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet we
 Alle Legacy-Metadaten aus EXIF, ID3 oder Microsoft Office werden automatisch in XMP übersetzt. Dies kann erweitert werden, um kundenspezifische Metadatenschemata wie Produktkataloge zu unterstützen.
 
 Metadaten in XMP bestehen aus einer Reihe von Eigenschaften. Diese Eigenschaften sind immer mit einer\
-eine bestimmte Einrichtung, die als Ressource bezeichnet wird; Das heißt, die Eigenschaften beziehen sich auf die Ressource. Bei XMP ist die Ressource stets das Asset.
+bestimmte als Ressource bezeichnete Stelle; Das heißt, die Eigenschaften beziehen sich auf die Ressource. Bei XMP ist die Ressource stets das Asset.
 
 ### Adobe {#adobe}
 
@@ -67,7 +66,7 @@ In den folgenden Abschnitten werden die wesentlichen Grundlagen von XMP beschrie
 
 ### Namespaces und Schemata {#namespaces-and-schemata}
 
-Ein XMP-Schema ist eine Reihe von Eigenschaftsnamen in einem allgemeinen XML-Namensraum, der\
+Ein XMP-Schema ist ein Satz von Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der Folgendes enthält:\
 Datentyp und beschreibende Informationen. Ein XMP-Schema wird durch die zugehörige XML-Namespace-URI identifiziert. Durch Verwendung von Namespaces werden Konflikte zwischen Eigenschaften in verschiedenen Schemata verhindert, die denselben Namen, aber eine andere Bedeutung haben.
 
 Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für die Anwendung, von der das Asset erstellt wurde (z. B. Adobe Photoshop).
