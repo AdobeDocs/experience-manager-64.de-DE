@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
-translation-type: tm+mt
-source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+exl-id: 1d74fdb9-c118-45f7-93c6-116cacb2f1c4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
 
-
-# APIs im AEM-Formulararbeitsbereich {#apis-used-in-aem-forms-workspace}
+# APIs im AEM-Formulararbeitsbereich  {#apis-used-in-aem-forms-workspace}
 
 Die folgenden APIs werden in AEM FormsWorkspace verwendet.
 
@@ -176,7 +175,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>abandon</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>abandon</td> 
+   <td>Abbruch</td> 
    <td>Löscht eine Aufgabe.</td> 
   </tr>
   <tr>
@@ -248,7 +247,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>saveOutOfOfficeSettingsJson</td> 
    <td>ProcessManagementOutOfOfficeService</td> 
-   <td>saveOutOfOfficeSettingsJSON</td> 
+   <td>saveOutOfOfficeSettingsJson</td> 
    <td>Speichert Abwesenheitseinstellungen eines Benutzers.</td> 
   </tr>
   <tr>
@@ -344,7 +343,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>rejectTaskOfDirectReport</td> 
    <td>ProcessManagementTeamTasksService</td> 
-   <td>missTaskOfDirectReport</td> 
+   <td>rejectTaskOfDirectReport</td> 
    <td>Gibt eine Aufgabe eines direkt unterstellten Mitarbeiters an den vorherigen Benutzer zurück.</td> 
   </tr>
   <tr>
@@ -403,6 +402,3 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   </tr>
  </tbody>
 </table>
-
-
-
