@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
-translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '783'
@@ -24,9 +23,9 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 >[!NOTE]
 >
->Für die Funktion zum Editor für Einzelseitenanwendungen (SPA) ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Single Page Application (SPA) Editor&quot;ist AEM Service Pack 2 (oder höher) 6.4 erforderlich.
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Einführung {#introduction}
 
@@ -93,9 +92,9 @@ Die Meta-Ressourceneigenschaften, die den SPA-Inhalt beschreiben:
 
 >[!CAUTION]
 >
->Dieses Dokument verwendet die App &quot;We.Retail Protokoll&quot;nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
+>In diesem Dokument wird die App &quot;We.Retail Journal&quot;nur zu Demonstrationszwecken verwendet. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte das [AEM Projekt Archetype](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, das SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt.Alle SPA Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
+>Jedes AEM Projekt sollte den [AEM Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, der SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt. Alle SPA Projekte auf AEM sollten auf dem Maven-Archetyp für SPA Starter Kit basieren.
 
 ## Synchronisation von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
