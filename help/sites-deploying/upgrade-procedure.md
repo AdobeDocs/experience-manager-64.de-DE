@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: e6092e80-3a39-4fde-8a94-084eee5fa8a9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 94%
 
 ---
-
 
 # Aktualisierungsverfahren{#upgrade-procedure}
 
@@ -28,7 +27,7 @@ ht-degree: 94%
 
 Wenn Sie die AEM-Umgebungen aktualisieren, müssen Sie sich die Unterschiede beim Aktualisieren von Autorenumgebungen und Veröffentlichungsumgebungen bewusst machen, um Ausfallzeiten für Autoren und Endbenutzer zu minimieren. Auf dieser Seite finden Sie einen Überblick über die Aktualisierung einer AEM-Topologie, die auf einer AEM 6.x-Version ausgeführt wird. Da sich der Vorgang für die Autoren- und Veröffentlichungsschicht und ebenfalls für Bereitstellungen mit Mongo und TarMK unterscheidet, werden die einzelnen Schichten und Mikrokernel in separaten Abschnitten behandelt. Beim Ausführen der Bereitstellung wird empfohlen, zuerst die Autorenumgebung zu aktualisieren und, wenn dies erfolgreich war, mit den Veröffentlichungsumgebungen fortzufahren.
 
-## Autorenschicht auf TarMK {#tarmk-author-tier}
+## Autorenschicht auf TarMK  {#tarmk-author-tier}
 
 ### Starten der Topologie {#starting-topology}
 
@@ -64,7 +63,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 ### Bei fehlgeschlagener Aktualisierung (Rollback) {#if-unsuccessful-rollback}
 
-![rollback](assets/rollback.jpg)
+![Rollback](assets/rollback.jpg)
 
 1. Starten Sie die Cold-Standby-Instanz als neue Primärinstanz.
 1. Erstellen Sie die Autorenumgebung aus der Cold-Standby-Instanz neu.
@@ -84,8 +83,8 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 1. Beenden Sie das Verfassen von Inhalten.
 1. Erstellen Sie einen Klon des Datenspeichers als Backup.
 1. Beenden Sie alle AEM-Autoreninstanzen bis auf eine, die als primäre Autoreninstanz fungiert.
-1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus dem Replikationssatz, Ihrer primären Mongo-Instanz
-1. Aktualisieren Sie die `DocumentNodeStoreService.cfg`-Datei im primären Autor, um den Replikationssatz Ihres einzelnen Mitglieds wiederzugeben.
+1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus der Replikatgruppe, Ihrer primären Mongo-Instanz.
+1. Aktualisieren Sie die Datei `DocumentNodeStoreService.cfg` auf der primären Autoreninstanz, um die Replikatgruppe Ihrer einzelnen Mitglieder widerzuspiegeln.
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass diese richtig ausgeführt wird.
 1. Deaktivieren Sie die Replikationsagenten auf der primären Autoreninstanz.
 1. Führen Sie die [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) auf der primären Autoreninstanz aus.
@@ -93,7 +92,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ### Ausführen der Aktualisierung {#execution}
 
-![Mongo-Ausführung](assets/mongo-execution.jpg)
+![mongo-execution](assets/mongo-execution.jpg)
 
 1. Führen Sie [„Ersetzende Aktualisierung“](/help/sites-deploying/in-place-upgrade.md) auf der primären Autoreninstanz aus.
 1. Aktualisieren Sie das Dispatcher- oder Web-Modul, *falls erforderlich*.
@@ -101,7 +100,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ### Bei erfolgreicher Aktualisierung {#successful-1}
 
-![Mongo-Sekondarien](assets/mongo-secondaries.jpg)
+![mongo-secondaries](assets/mongo-secondaries.jpg)
 
 1. Erstellen Sie neue 6.3-Autoreninstanzen, die mit der aktualisierten Mongo-Instanz verbunden sind.
 1. Erstellen Sie die MongoDB-Knoten, die aus dem Cluster entfernt wurden.
