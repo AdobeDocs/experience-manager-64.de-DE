@@ -7,15 +7,14 @@ uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 86%
 
 ---
-
 
 # Zugreifbare adaptive Formulare erstellen {#creating-accessible-adaptive-forms}
 
@@ -32,7 +31,7 @@ Beim Verfassen eines adaptiven Formulars muss der Autor die folgenden Punkte ber
 * Bereitstellung von ausreichendem Farbkontrast
 * Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können
 
-## Angabe von angemessenen Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
+## Angabe von angemessenen Beschriftungen für Formularsteuerelemente  {#provide-proper-labels-for-form-controls}
 
 Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Beispiel: Der Text „Vorname“ weist darauf hin, dass der Benutzer seinen Vornamen in ein Textfeld eingeben muss. Damit die Beschriftung von Bildschirmlesegeräten erkannt werden kann, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
@@ -47,15 +46,15 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 
 ![Barrierefreiheitsoptionen in Formularkomponenten](assets/accessibility-options.png)
 
-**Autoren benutzerdefinierter** TextForm stellen den Inhalt in der Barrierefreiheitsoption Benutzerdefiniertes Textfeld bereit. Die Hilfstechnologie, z. B. Bildschirmlesehilfen, verwendet diesen benutzerdefinierten Text. In den meisten Szenarien ist die Verwendung der Einstellung „Titel“ die beste Option. Sie sollten nur dann benutzerdefinierten Text für Bildschirmlesegeräte erstellen, wenn die Option „Titel“ oder eine Kurzbeschreibung nicht möglich ist.
+**Benutzerdefinierte** TextForm-Autoren stellen den Inhalt im Feld für die Barrierefreiheitsoption Benutzerdefinierter Text bereit. Die Hilfstechnologie, wie Bildschirmlesehilfen, verwendet diesen benutzerdefinierten Text. In den meisten Szenarien ist die Verwendung der Einstellung „Titel“ die beste Option. Sie sollten nur dann benutzerdefinierten Text für Bildschirmlesegeräte erstellen, wenn die Option „Titel“ oder eine Kurzbeschreibung nicht möglich ist.
 
-**Kurze** BeschreibungBei den meisten Komponenten wird die Kurzbeschreibung zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über die Komponente bewegt. Sie können diese Option im Feld „Kurzbeschreibung“ unter der Option für den Hilfeinhalt festlegen.
+**Kurze** Beschreibung: Für die meisten Komponenten wird die kurze Beschreibung zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über die Komponente bewegt. Sie können diese Option im Feld „Kurzbeschreibung“ unter der Option für den Hilfeinhalt festlegen.
 
-**** TitelVerwenden Sie diese Option, damit AEM Forms die mit dem Formularfeld verknüpfte visuelle Beschriftung als Bildschirmlesehilfen-Text verwenden kann.
+**** TitelVerwenden Sie diese Option, damit AEM Forms die visuelle Bezeichnung, die dem Formularfeld zugeordnet ist, als Text für die Bildschirmlesehilfe verwenden kann.
 
 **** NameSie können auf der Registerkarte &quot;Bindung&quot;im Feld &quot;Name&quot;einen Wert angeben. Der Name darf keine Leerzeichen enthalten.
 
-**Wenn Sie &quot;** Ohne&quot;auswählen, hat das Formularobjekt keinen Namen im veröffentlichten Formular. Keine ist keine empfohlene Einstellung für Formularsteuerelemente.
+**** Keine Auswahl Keine bewirkt, dass das Formularobjekt keinen Namen im veröffentlichten Formular hat. &quot;Keine&quot;ist keine empfohlene Einstellung für Formularsteuerelemente.
 
 >[!NOTE]
 >
