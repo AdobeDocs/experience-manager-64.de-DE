@@ -2,7 +2,7 @@
 title: Prüfen von Benutzerverwaltungsvorgängen in AEM
 seo-title: Prüfen von Benutzerverwaltungsvorgängen in AEM
 description: Erfahren Sie, wie Sie Benutzerverwaltungsvorgänge in AEM prüfen.
-feature: Operations
+feature: Betrieb
 seo-description: Erfahren Sie, wie Sie Benutzerverwaltungsvorgänge in AEM prüfen.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
@@ -11,7 +11,6 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-translation-type: tm+mt
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
 source-wordcount: '320'
@@ -33,11 +32,11 @@ Das Upgrade ermöglicht das Prüfen von Erstellungs-, Lese-, Aktualisierungs- un
 
 Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Abschnitt.
 
-## Umleiten der Ausgabe in eine separate Protokolldatei {#redirecting-the-output-to-a-separate-log-file}
+## Umleiten der Ausgabe in eine separate Protokolldatei  {#redirecting-the-output-to-a-separate-log-file}
 
 Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger**-Konfiguration erstellen. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
-1. Gehen Sie zur Web-Konsole, indem Sie zu `https://<serveraddress>:<serverport>/system/console/configMgr` navigieren.
+1. Navigieren Sie zur Web-Konsole, indem Sie zu `https://<serveraddress>:<serverport>/system/console/configMgr` navigieren.
 1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine neue Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
