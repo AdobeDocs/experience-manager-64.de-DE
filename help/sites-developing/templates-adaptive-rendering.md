@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a2adc825-2a18-42b8-a639-c48243b2279c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 86%
 
 ---
-
 
 # Rendering von adaptiven Vorlagen{#adaptive-template-rendering}
 
@@ -45,7 +44,7 @@ Selektoren für das adaptive Rendering können Sie für vorhandene Gerätegruppe
 
 Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones** so, dass sie einen Selektor für das adaptive Rendering als Teil der Vorlage **Erlebnisseite** in We.Retail aufweisen.
 
-1. Bearbeiten Sie die Gerätegruppe, die einen adaptiven Selektor in `http://localhost:4502/miscadmin#/etc/mobile/groups` erfordert
+1. Bearbeiten Sie die Gerätegruppe, die einen adaptiven Selektor in `http://localhost:4502/miscadmin#/etc/mobile/groups` erfordert.
 
    Aktivieren Sie die Option **Emulator deaktivieren** und speichern Sie diese Einstellung.
 
@@ -65,7 +64,7 @@ Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Lassen Sie die Gerätegruppe mithilfe von CRX DE Lite auf Ihrer Site zu, indem Sie sie der Zeichenfolgeneigenschaft mit mehreren Werten `cq:deviceGroups` in der Struktur Ihrer Site hinzufügen.
+1. Lassen Sie mithilfe von CRX DE Lite zu, dass die Gerätegruppe auf Ihrer Site verwendet wird, indem Sie sie zur String-Eigenschaft mit mehreren Werten `cq:deviceGroups` in der Struktur Ihrer Site hinzufügen.
 
    `/content/<your-site>/jcr:content`
 
@@ -77,9 +76,8 @@ Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones
 
 Wenn Sie nun den [Emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) im Seiten-Editor verwenden (z. B. beim [Bearbeiten des Layouts](/help/sites-authoring/responsive-layout.md)) und ein Gerät der konfigurierten Gerätegruppe auswählen, wird die Seite mit einem Selektor als Teil der URL gerendert.
 
-In unserem Beispiel wird die Seite beim Bearbeiten einer Seite, die auf der Vorlage **Erlebnisseite** basiert, und beim Auswählen von iPhone 4 im Emulator mit der Auswahl als `arctic-surfing-in-lofoten.smart.html` anstelle von `arctic-surfing-in-lofoten.html` gerendert.
+In unserem Beispiel wird beim Bearbeiten einer Seite basierend auf der Vorlage **Erlebnisseite** und Auswählen von iPhone 4 im Emulator die Seite gerendert, wobei der Selektor als `arctic-surfing-in-lofoten.smart.html` anstelle von `arctic-surfing-in-lofoten.html` angegeben wird.
 
 Die Seite lässt sich auch direkt über diesen Selektor auswählen.
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
-
