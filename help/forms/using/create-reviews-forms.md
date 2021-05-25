@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: ff113288-a69a-4083-82a6-4c65c5062411
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 85%
 
 ---
-
 
 # Erstellen und Verwalten von Überprüfungen von Assets in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
 
@@ -27,17 +26,17 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
-1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Starten einer Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol Überprüfung starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
 1. Geben Sie die folgenden Informationen ein:
 
    * Überprüfungsname: obligatorisch – kann alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
    * Überprüfungsbeschreibung: optional – Beschreibung des Zwecks/des Inhalts der Überprüfung.
    * Überprüfungstermin: optional – Datum, an dem die Überprüfung beendet wird. Wenn der Termin bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
-   * Überprüfer: Es muss mindestens ein Wert angegeben werden. Verwenden Sie das Kombinationsfeld, um Überprüfer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
+   * Überprüfer: Es ist mindestens 1 erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
 
 1. Füllen Sie alle weiteren Details und klicken Sie dann auf „Start“.
 
-### Aktionen beim Einrichten von Überprüfungen {#actions-that-occur-when-a-review-is-set-up}
+### Aktionen beim Einrichten von Überprüfungen  {#actions-that-occur-when-a-review-is-set-up}
 
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
@@ -45,7 +44,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 1. Allen Überprüfern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Überprüfer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Überprüfer können klicken, um die Überprüfungsaufgabe zu öffnen, das Formular anzuzeigen und Kommentare hinzuzufügen.
 
    ![Warnung bei Überprüferbenachrichtigungen](assets/noti.png)
-   **Abbildung: Warnung zur Benachrichtigung** *des Überprüfers*
+   **Abbildung: Warnung zur** *Benachrichtigung über Prüfer*
 
 1. Das Kommentarfeld ist für den Initiator und die Überprüfer der Assets verfügbar. Andere können die Kommentare anzeigen, jedoch keine Kommentare schreiben.
 
@@ -57,7 +56,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
 
-1. Wenn ein Asset derzeit eine Überprüfung durchführt und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste Symbole zum Verwalten von Überprüfungen ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
+1. Wenn für ein Asset eine Überprüfung ausgeführt wird und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste die Symbole Überprüfung verwalten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
 
    Klicken Sie auf das Symbol zum Verwalten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
@@ -73,7 +72,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 1. Bearbeiten Sie die erforderlichen Felder und klicken Sie dann auf „Aktualisieren“.
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
-   **Abbildung: Status &quot;** *Überprüfen&quot;im Aufgabe Manager*
+   **Abbildung:** *Überprüfen des aktualisierten Status im Task Manager*
 
 1. Zum Beenden der Überprüfung klicken auf „Ende“.
 
@@ -87,7 +86,7 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
 1. Wenn ein Überprüfer entfernt wird:
 
    ![Entfernen von Überprüfern](assets/removeduser.png)
-   **Abbildung:** *Entfernen eines Prüfers*
+   **Abbildung:** *Entfernen eines Validierers*
 
    1. Falls die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
    1. Der Überprüfer kann das Asset nicht mehr kommentieren.
@@ -95,7 +94,7 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
 1. Wenn ein Überprüfer hinzugefügt wird:
 
    ![Hinzufügen von Überprüfern](assets/addedreviewer.png)
-   **Abbildung:** *Hinzufügen eines Prüfers*
+   **Abbildung:** *Hinzufügen eines Validierers*
 
    1. Eine Überprüfungsaufgabe wird erstellt und dem neu hinzugefügten Überprüfer zugewiesen.
    1. Der neu hinzugefügte Überprüfer kann Kommentare zu Assets hinzufügen.
@@ -105,4 +104,3 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
    1. **Überprüfer**: Bei allen Überprüfern werden zugewiesene Aufgaben, die unvollständig sind, beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Überprüfers nicht mehr als „Ausstehend“ angezeigt.
    1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe wird als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators von Überprüfungen entfernt.
    1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
-
