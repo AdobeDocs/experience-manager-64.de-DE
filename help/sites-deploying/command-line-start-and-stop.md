@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
-translation-type: tm+mt
-source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+exl-id: 9d2682c2-6360-402e-a020-0021f5051a2d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 93%
 
 ---
-
 
 # Start und Stopp über die Befehlszeile{#command-line-start-and-stop}
 
@@ -24,7 +23,7 @@ ht-degree: 93%
 
 Das Skript `start` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl die Unix- als auch die Windows-Version wird bereitgestellt. Das Skript startet die im Verzeichnis *&lt;cq-installation>* installierte Instanz.
 
-Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum Beginn und zur Abstimmung der AEM verwendet werden können.
+Diese beiden Versionen unterstützen eine Liste von Umgebungsvariablen, die zum Starten und Optimieren der AEM-Instanz verwendet werden können.
 
 <table> 
  <tbody> 
@@ -71,7 +70,7 @@ Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum 
 >
 >Beachten Sie, dass einige Ausführungsmodi, wie „author“ und „publish“, vor dem ersten Starten von AEM eingerichtet werden müssen und im Nachhinein nicht mehr geändert werden können. Lesen Sie vor dem Einrichten einer AEM-Instanz, die in der Produktion verwendet werden soll, die [Dokumentation für die Ausführungsmodi](/help/sites-deploying/configure-runmodes.md), um weitere Informationen zu erhalten.
 
-### „start.bat“-Skriptbeispiel für Windows-Plattform {#windows-platform-start-bat-script-example}
+### „start.bat“-Skriptbeispiel für Windows-Plattform  {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
