@@ -9,32 +9,31 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 2c0dab68-d77e-46fb-832d-90edea510750
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 52%
 
 ---
 
-
-# Generische Schritte zur Anpassung von AEM Forms Workspace {#generic-steps-for-aem-forms-workspace-customization}
+# Generische Schritte zur Anpassung von AEM Forms Workspace  {#generic-steps-for-aem-forms-workspace-customization}
 
 Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://[server]:[port]/lc/crx/de/index.jsp` zugreifen.
-1. Erstellen Sie einen Ordner mit dem Namen `ws`unter `/apps`, falls dieser nicht vorhanden ist. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Navigieren Sie zu `/apps/ws` und navigieren Sie zur Registerkarte **[!UICONTROL Zugriffskontrolle]**.
-1. Klicken Sie in der Liste **[!UICONTROL Zugriffskontrolle]** auf **[!UICONTROL +]**, um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
-1. Suchen und wählen Sie den Prinzipal **[!UICONTROL PERM_WORKSPACE_USER]**.
+1. Erstellen Sie einen Ordner mit dem Namen `ws`unter `/apps`, falls noch nicht vorhanden. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Navigieren Sie zu `/apps/ws` und navigieren Sie zur Registerkarte **[!UICONTROL Zugriffssteuerung]** .
+1. Klicken Sie in der Liste **[!UICONTROL Zugriffssteuerung]** auf **[!UICONTROL +]** , um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
+1. Suchen und wählen Sie den Prinzipal **[!UICONTROL PERM_WORKSPACE_USER]** aus.
 
    ![Wählen Sie PERM_WORKSPACE_USER als Teil von allgemeinen Schritten, um HTML Workspace anzupassen](assets/perm_workspace_user.png)
 
-1. Weisen Sie dem Prinzipal die `jcr:read`-Berechtigung zu.
+1. Weisen Sie dem Prinzipal die Berechtigung `jcr:read` zu.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Kopieren Sie die Dateien `GET.jsp` und `html.jsp`aus dem Ordner `/libs/ws`in den Ordner `/apps/ws`.
-1. Kopieren Sie den Ordner `/libs/ws/locales` im Ordner `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Aktualisieren Sie die Verweise und relativen Pfade in der Datei `GET.jsp` wie unten dargestellt und klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Kopieren Sie die Dateien `GET.jsp` und `html.jsp`aus dem Ordner `/libs/ws`in den Ordner `/apps/ws` .
+1. Kopieren Sie den Ordner `/libs/ws/locales` im Ordner `/apps/ws` . Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Aktualisieren Sie die Verweise und relativen Pfade in der Datei `GET.jsp` wie unten gezeigt und klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    ```
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -91,5 +90,4 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**, löschen Sie den Cache und aktualisieren Sie AEM Forms Workspace.
 
-   Greifen Sie auf die URL `https://[server]:[port]/lc/ws` zu und melden Sie sich mit Administrator-/Kennwort-Anmeldeinformationen an. Der Browser leitet Sie zu `https://[server]:[port]/lc/apps/ws/index.html` um.
-
+   Greifen Sie auf die URL `https://[server]:[port]/lc/ws` zu und melden Sie sich mit Administrator-/Passwort-Anmeldeinformationen an. Der Browser leitet zu `https://[server]:[port]/lc/apps/ws/index.html` um.
