@@ -1,14 +1,13 @@
 ---
 title: Fehlerbehebung in Dynamic Media – Scene7-Modus
-description: Fehlerbehebung beim Dynamic Media - Scene7-Ausführungsmodus.
+description: Fehlerbehebung für den Dynamic Media - Scene7-Ausführungsmodus.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Troubleshooting
+feature: Fehlerbehebung
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '1296'
@@ -24,22 +23,22 @@ Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Au
 
 Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie folgende Schritte ausführen:
 
-* Beginn-up-Befehl enthält das Argument `-r dynamicmedia_scene7` runmode.
+* Der Befehl &quot;Start&quot;enthält das Argument `-r dynamicmedia_scene7` runmode .
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
-   Dieses optionale Feature Pack dient zum FTP-Support oder wenn Sie Assets von Dynamic Media Classic nach Dynamic Media migrieren.
+   Dieses optionale Feature Pack ist für die FTP-Unterstützung oder für die Migration von Assets von Dynamic Media Classic zu Dynamic Media vorgesehen.
 
 * Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
-* Stellen Sie sicher, dass der Replizierungsagenten **[!UICONTROL Dynamic Media Asset Aktivierung (scene7)]** aktiviert ist.
+* Stellen Sie sicher, dass der Replikationsagent **[!UICONTROL Dynamic Media Asset Activation (scene7)]** aktiviert ist.
 
-   Dieser Replizierungsagenten befindet sich unter **[!UICONTROL Agenten]** im Autor.
+   Dieser Replikationsagent befindet sich unter **[!UICONTROL Agenten]** in der Autoreninstanz.
 
 ## Allgemein (alle Assets) {#general-all-assets}
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Eigenschaften des Synchronisierungsstatus von Elementen {#asset-synchronization-status-properties}
+### Eigenschaften für den Asset-Synchronisierungsstatus {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
@@ -52,7 +51,7 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
-Synchronisierungsfehler und -probleme werden in der Datei `error.log` (AEM-Server-Verzeichnis`/crx-quickstart/logs/`) protokolliert. Es ist eine ausreichende Protokollierung verfügbar, um die Hauptursache der meisten Probleme zu ermitteln. Sie können jedoch die Protokollierung für DEBUG im `com.adobe.cq.dam.ips`-Paket über die Sling-Konsole ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) erhöhen, um weitere Informationen zu erfassen.
+Synchronisierungsfehler und -probleme werden in der Datei `error.log` (AEM-Server-Verzeichnis`/crx-quickstart/logs/`) protokolliert. Die Protokollierung ist ausreichend, um die Hauptursache der meisten Probleme zu ermitteln. Sie können die Protokollierung jedoch auf DEBUG im Paket `com.adobe.cq.dam.ips` über die Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) erhöhen, um weitere Informationen zu erfassen.
 
 ### Verschieben, Kopieren oder Löschen {#move-copy-delete}
 
@@ -66,11 +65,11 @@ Führen Sie folgende Schritte aus, bevor Sie einen Verschiebe-, Kopier- oder Lö
 
 Beim Ersetzen eines vorhandenen Dynamic Media-Assets (gleicher Name und Speicherort) haben Sie die Möglichkeit, beide Assets beizubehalten oder eine Version zu ersetzen oder zu erstellen:
 
-* Durch Beibehalten beider Werte wird ein neues Asset mit einem eindeutigen Namen für die URL des veröffentlichten Assets erstellt. Beispiel: **[!UICONTROL image.jpg]** ist das ursprüngliche Asset und **[!UICONTROL image1.jpg]** ist das neu hochgeladene Asset.
+* Wenn Sie beide beibehalten, wird ein neues Asset mit einem eindeutigen Namen für die veröffentlichte Asset-URL erstellt. **[!UICONTROL image.jpg]** ist beispielsweise das ursprüngliche Asset und **[!UICONTROL image1.jpg]** ist das neu hochgeladene Asset.
 
-* Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in Versand.
+* Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
 
-## Bilder und Sets  {#images-and-sets}
+## Bilder und Sets   {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
