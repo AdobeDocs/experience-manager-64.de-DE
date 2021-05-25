@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
-translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+exl-id: 9a3857fd-4f62-4293-950b-75626e4dcf50
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 93%
 
 ---
-
 
 # Integrieren mit Services von Dritten{#integrating-with-third-party-services}
 
@@ -34,7 +33,7 @@ Mit AEM können Sie standardmäßig eine Integration in die folgenden Adobe-frem
 * Twitter – Social Networking
 * YouTube – Videofreigabe
 
-Darüber hinaus können Sie AEM mit dem [Marketing Cloud](/help/sites-administering/marketing-cloud.md) und mit dem [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) integrieren.
+Darüber hinaus können Sie AEM mit dem [Marketing Cloud](/help/sites-administering/marketing-cloud.md) und dem [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) integrieren.
 
 ## Integration mit Salesforce {#integrating-with-salesforce}
 
@@ -42,7 +41,7 @@ Salesforce.com ist das führende Cloud-Computing-Unternehmen beim Wechsel hin zu
 
 Informationen zur Integration Ihrer AEM-Site in Salesforce finden Sie unter [Integrieren in Salesforce](/help/sites-administering/salesforce.md).
 
-## Integrieren mit Silverpop Engage {#integrating-with-silverpop-engage}
+## Integrieren mit Silverpop Engage  {#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
@@ -62,7 +61,7 @@ Informationen zur Integration Ihrer AEM-Site in ExactTarget finden Sie unter [Ko
 
 Facebook und Twitter sind beliebte Social-Networking-Dienste. Die Integration von AEM in Facebook und Twitter ermöglicht Unternehmen die Bereitstellung einer Facebook- oder Twitter-Anmeldeoption zu eigenen digitalen Präsenzen und die anschließende Personalisierung des Benutzererlebnisses auf Grundlage der Profilinformationen. Marketingexperten können Profilinformationen mit Daten aus zusätzlichen Quellen wie einem CRM-System oder Websiteprofil kombinieren, um eine einheitliche Sicht auf den Kunden zu ermöglichen.
 
-Weitere Informationen finden Sie unter [Social-Anmeldung](/help/communities/social-login.md).
+Weitere Informationen finden Sie unter [Social Login](/help/communities/social-login.md) .
 
 ## Integrieren mit sonstigen Anbietern {#integrating-with-other-providers}
 
