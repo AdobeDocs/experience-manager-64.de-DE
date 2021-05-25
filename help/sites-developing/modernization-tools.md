@@ -1,27 +1,26 @@
 ---
 title: AEM-Modernisierungs-Tools
 seo-title: AEM-Modernisierungs-Tools
-description: AEM Modernisierungstools helfen Ihnen, Ihre alten AEM Funktionen in die neueste Technologie umzuwandeln
-seo-description: AEM Modernisierungstools helfen Ihnen, Ihre alten AEM Funktionen einfach in die neueste Technologie umzuwandeln
+description: AEM-Modernisierungs-Tools hilft Ihnen beim Konvertieren Ihrer alten AEM-Funktionen in die neueste Technologie
+seo-description: Mit den AEM-Modernisierungs-Tools können Sie Ihre alten AEM-Funktionen einfach in die neueste Technologie konvertieren
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 55bd3036bd793a5e3b468b8b6ad595a857311865
+exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 72%
+ht-degree: 75%
 
 ---
-
 
 # AEM-Modernisierungs-Tools {#modernization-tools}
 
 [Die AEM-Modernisierungs-Tools ermöglichen eine einfache Konvertierung von:](http://opensource.adobe.com/aem-modernize-tools/)
 
-* [](page-templates-static.md)Statischen Vorlagen in bearbeitbare Vorlagen[](page-templates-editable.md)
-* [](page-templates-static.md)Designkonfigurationen in Richtlinien[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Foundation-Komponenten in Kernkomponenten[](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
-* [](website.md)Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche[](touch-ui-concepts.md)
+* [](page-templates-static.md)[Statischen Vorlagen in bearbeitbare Vorlagen](page-templates-editable.md)
+* [](page-templates-static.md)[Design-Konfigurationen in Richtlinien](page-templates-editable.md)
+* [](/help/sites-authoring/default-components-foundation.md)Basiskomponenten zu Kernkomponenten[](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [](website.md)[Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche](touch-ui-concepts.md)
 
 Weitere Informationen zur Verwendung dieser Werkzeuge finden Sie [in der entsprechenden Dokumentation](http://opensource.adobe.com/aem-modernize-tools/).
 
