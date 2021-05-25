@@ -9,59 +9,58 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
-translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+exl-id: e03cf05c-2469-4883-ae7b-9d7e6660b71f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 29%
 
 ---
 
-
 # Messaging-Funktion {#messaging-feature}
 
-Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren auftreten, ermöglicht die Messaging-Funktion von AEM Communities es Community-Mitgliedern, privat miteinander zu interagieren.
+Zusätzlich zu den öffentlich sichtbaren Interaktionen in Foren und Kommentaren ermöglicht die Messaging-Funktion von AEM Communities es Community-Mitgliedern, privat miteinander zu interagieren.
 
-Diese Funktion kann eingeschlossen werden, wenn eine [Community-Site](overview.md#communitiessites) erstellt wird.
+Diese Funktion kann enthalten sein, wenn eine [Community-Site](overview.md#communitiessites) erstellt wird.
 
 Die Messaging-Funktion bietet Folgendes:
 
-* Senden einer Nachricht an ein oder mehrere Community-Mitglieder
-* Eine Nachricht an eine Community-Mitgliedsgruppe senden
-* Eine Nachricht mit Anlagen senden
+* Nachricht an ein oder mehrere Community-Mitglieder senden
+* Nachricht an eine Community-Mitgliedergruppe senden
+* Nachricht mit Anhängen senden
 * Weiterleiten einer Nachricht
-* Antwort auf eine Nachricht
-* Eine Nachricht löschen
-* Wiederherstellen einer gelöschten Meldung
+* Auf eine Nachricht antworten
+* Nachricht löschen
+* Gelöschte Nachricht wiederherstellen
 
 Um die Messaging-Funktion zu aktivieren und zu ändern, besuchen Sie
 
-* [Konfigurieren von ](messaging.md) Nachrichten für Administratoren
-* [Messaging ](essentials-messaging.md) Essentials für Entwickler
+* [Konfigurieren der ](messaging.md) Nachrichten für Administratoren
+* [Messaging-](essentials-messaging.md) Grundlagen für Entwickler
 
 >[!NOTE]
 >
->Es wird nicht unterstützt, `Compose Message, Message, or Message List`-Komponenten (in `Communities`Komponentengruppe gefunden) zu einer Seite im Autorenbearbeitungsmodus hinzuzufügen.
+>Es wird nicht unterstützt, `Compose Message, Message, or Message List`-Komponenten (in `Communities`Komponentengruppe) zu einer Seite im Bearbeitungsmodus für Autoren hinzuzufügen.
 
 ## Konfigurieren von Messaging-Komponenten {#configuring-messaging-components}
 
 Wenn Messaging für eine Community-Site aktiviert ist, ist es vollständig eingerichtet, ohne dass eine weitere Konfiguration erforderlich ist. Diese Informationen werden bereitgestellt, wenn die Standardkonfiguration geändert werden muss.
 
-### Konfigurieren der Message-Liste (messagebox) {#configuring-message-list-messagebox}
+### Nachrichtenliste konfigurieren (messageBox) {#configuring-message-list-messagebox}
 
-Um die Liste der Nachrichten für **Inbox**-, **Gesendete Elemente**- und **Papierkorb**-Seiten der Nachrichtenfunktion zu ändern, öffnen Sie die Site im Bearbeitungsmodus [Autor](sites-console.md#authoring-site-content).
+Um die Konfiguration der Nachrichtenliste für die Seiten **Inbox**, **Gesendete Elemente** und **Papierkorb** zu ändern, öffnen Sie die Site im Bearbeitungsmodus [Autor](sites-console.md#authoring-site-content).
 
-Wählen Sie im Modus `Preview` den Link **[!UICONTROL Nachrichten]**, um die Hauptseite der Nachrichten zu öffnen. Wählen Sie dann entweder **[!UICONTROL Posteingang, Gesendete Elemente oder Papierkorb]** aus, um die Liste für diese Nachricht zu konfigurieren.
+Wählen Sie im Modus `Preview` den Link **[!UICONTROL Nachrichten]** aus, um die Hauptnachrichten-Seite zu öffnen. Wählen Sie dann **[!UICONTROL Posteingang, Gesendete Elemente oder Papierkorb]** aus, um die Komponente für diese Nachrichtenliste zu konfigurieren.
 
 Wählen Sie im Modus `Edit` die Komponente auf der Seite aus.
 
-Um auf das Konfigurationsdialogfeld zugreifen zu können, müssen Sie die Vererbung abbrechen, indem Sie das Symbol `link`auswählen.
+Um auf das Konfigurationsdialogfeld zugreifen zu können, muss die Vererbung durch Auswahl des Symbols `link`abgebrochen werden.
 
 Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des Symbols `broken link` wiederhergestellt werden.
 
 ![chlimage_1-396](assets/chlimage_1-396.png)
 
-Nach dem Abbrechen der Vererbung können Sie das Symbol `configure` auswählen, um das Konfigurationsdialogfeld zu öffnen.
+Nachdem die Vererbung abgebrochen wurde, können Sie das Symbol `configure` auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 ![chlimage_1-397](assets/chlimage_1-397.png)
 
@@ -70,10 +69,10 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol `configure` auswählen, 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
 * **[!UICONTROL Dienstauswahl]**
-(*Erforderlich*) Legen Sie diesen Wert auf den Wert der Eigenschaft  `serviceSelector.name` aus dem  [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service) fest.
+ (*erforderlich*) Legen Sie dies auf den Wert der Eigenschaft  `serviceSelector.name` aus dem  [AEM Communities Messaging Operations-Dienst](messaging.md#messaging-operations-service) fest.
 
-* **[!UICONTROL Seite]**
- erstellen (*Erforderlich*) Die Seite, die geöffnet werden soll, wenn ein Mitglied auf die  `Reply` Schaltfläche klickt. Die Zielseite sollte das Formular **[!UICONTROL Nachricht erstellen]** enthalten.
+* **[!UICONTROL Seite erstellen]**
+ (*Erforderlich*) Die Seite, die geöffnet werden soll, wenn ein Mitglied auf die  `Reply` Schaltfläche klickt. Die Zielseite sollte das Formular **[!UICONTROL Nachricht erstellen]** enthalten.
 
 * **[!UICONTROL Als Ressource antworten/anzeigen]** Ist diese Option aktiviert, verweisen die Antwort- und Ansichts-URL auf eine Ressource. Ist sie nicht aktiviert, werden Daten als Abfrageparameter in der URL übermittelt. 
 
@@ -82,27 +81,27 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol `configure` auswählen, 
 * **[!UICONTROL Papierkorb-Ordner]** Ist die Option aktiviert, zeigt diese Nachrichtenlisten-Komponente lediglich Nachrichten an, die als gelöscht markiert wurden (Papierkorb).
 
 * **[!UICONTROL Ordnerpfade]**
-(*Erforderlich*) Verweis auf die Werte, die für  `inbox.path.name` und  `sentitems.path.name` im  [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service) festgelegt wurden. Bei der Konfiguration für ein `Inbox` fügen Sie einen Eintrag mit dem Wert `inbox.path.name` hinzu. Bei der Konfiguration für ein `Outbox` fügen Sie einen Eintrag mit dem Wert `sentitems.path.name` hinzu. Fügen Sie bei der Konfiguration für `Trash` zwei Einträge mit beiden Werten hinzu.
+ (*erforderlich*) Referenzieren der Werte, die für  `inbox.path.name` und  `sentitems.path.name` im  [AEM Communities Messaging Operations-Dienst](messaging.md#messaging-operations-service) festgelegt sind. Fügen Sie bei der Konfiguration für `Inbox` einen Eintrag mit dem Wert `inbox.path.name` hinzu. Fügen Sie bei der Konfiguration für `Outbox` einen Eintrag mit dem Wert `sentitems.path.name` hinzu. Fügen Sie bei der Konfiguration für `Trash` zwei Einträge mit beiden Werten hinzu.
 
-#### Display tab {#display-tab}
+#### Registerkarte Anzeige {#display-tab}
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-* **[!UICONTROL Schaltfläche &quot;Gelesen]**
-markieren&quot;Wenn aktiviert, wird eine 
-`Read`-Schaltfläche, mit der eine Nachricht als gelesen markiert werden kann.
+* **[!UICONTROL Markieren]**
+Schaltfläche LesenIst diese Option aktiviert, wird eine 
+`Read`-Schaltfläche, über die eine Nachricht als gelesen gekennzeichnet werden kann.
 
-* **[!UICONTROL Markieren Sie die ungelesene]**
-SchaltflächeWenn aktiviert, wird eine 
-`Mark Unread` -Schaltfläche, mit der eine Nachricht als gelesen markiert werden kann.
+* **[!UICONTROL Markieren ungelesene]**
+SchaltflächeIst diese Option aktiviert, wird eine 
+`Mark Unread` -Schaltfläche, über die eine Nachricht als gelesen gekennzeichnet werden kann.
 
-* **[!UICONTROL Schaltfläche]**
-löschenWenn aktiviert, wird eine 
-`Delete`-Schaltfläche, mit der eine Nachricht als gelesen markiert werden kann. Wird die Funktion zum Löschen Duplikat, wenn **`Message Options`** ebenfalls aktiviert ist.
+* **[!UICONTROL Delete]**
+ButtonIst diese Option aktiviert, zeigt eine 
+`Delete`-Schaltfläche, über die eine Nachricht als gelesen gekennzeichnet werden kann. Dupliziert die Löschfunktion, wenn auch **`Message Options`** aktiviert ist.
 
-* **[!UICONTROL Nachrichtenoptionen]**
-Wenn aktiviert, wird angezeigt 
-**`Reply`**,  **`Reply All`** und  **`Forward`**   **`Delete`** Schaltflächen, mit denen eine Nachricht erneut gesendet oder gelöscht werden kann. Wird die Funktion zum Löschen Duplikat, wenn **`Delete Button`** ebenfalls aktiviert ist.
+* **[!UICONTROL Message]**
+OptionsIst diese Option aktiviert, wird angezeigt 
+**`Reply`**,  **`Reply All`**  **`Forward`** und  **`Delete`** Schaltflächen, mit denen eine Nachricht erneut gesendet oder gelöscht werden kann. Dupliziert die Löschfunktion, wenn auch **`Delete Button`** aktiviert ist.
 
 * **[!UICONTROL Nachrichten pro Seite]** Die angegebene Zahl entspricht der maximalen Anzahl von Nachrichten, die bei einer Aufteilung in Seiten pro Seite angezeigt wird. Ist keine Anzahl festgelegt (leeres Feld), werden alle Nachrichten auf einer Seite angezeigt.
 
@@ -110,23 +109,23 @@ Wenn aktiviert, wird angezeigt
 
 * **[!UICONTROL Display]**
 UserChoose 
-**`Sender`** oder  **`Recipients`** um festzulegen, ob der Absender oder die Empfänger angezeigt werden sollen.
+**`Sender`** oder  **`Recipients`** um zu bestimmen, ob der Absender oder die Empfänger angezeigt werden sollen.
 
 ### Konfigurieren der Nachricht erstellen {#configuring-compose-message}
 
-Um die Konfiguration der Seite mit der Nachricht zum Erstellen zu ändern, öffnen Sie die Site im Bearbeitungsmodus [Autor](sites-console.md#authoring-site-content).
+Um die Konfiguration der Seite mit der Komprimierungsnachricht zu ändern, öffnen Sie die Site im Bearbeitungsmodus [Autor](sites-console.md#authoring-site-content).
 
-Wählen Sie im Modus `Preview`den Link **[!UICONTROL Nachrichten]** aus, um die Hauptseite der Nachrichten zu öffnen. Klicken Sie dann auf &quot;Neue Nachricht&quot;, um die Seite `Compose Message` zu öffnen.
+Wählen Sie im Modus `Preview`den Link **[!UICONTROL Nachrichten]** aus, um die Hauptnachrichten-Seite zu öffnen. Wählen Sie dann die Schaltfläche Neue Nachricht aus, um die Seite `Compose Message` zu öffnen.
 
 Wählen Sie im Modus `Edit` die Hauptkomponente auf der Seite aus, die den Nachrichtentext enthält.
 
-Um auf das Konfigurationsdialogfeld zugreifen zu können, müssen Sie die Vererbung abbrechen, indem Sie das Symbol `link`auswählen.
+Um auf das Konfigurationsdialogfeld zugreifen zu können, muss die Vererbung durch Auswahl des Symbols `link`abgebrochen werden.
 
 Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des Symbols `broken link` wiederhergestellt werden.
 
 ![chlimage_1-400](assets/chlimage_1-400.png)
 
-Nach dem Abbrechen der Vererbung können Sie das Symbol `configure` auswählen, um das Konfigurationsdialogfeld zu öffnen.
+Nachdem die Vererbung abgebrochen wurde, können Sie das Symbol `configure` auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
@@ -140,42 +139,41 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol `configure` auswählen, 
 * **[!UICONTROL URL abbrechen]** Geben Sie die URL der Seite ein, die angezeigt werden soll, wenn der Sender das Verfassen einer Nachricht abbricht. Beispiel: 
 `../messaging.html`.
 
-* **[!UICONTROL Maximale Länge des Nachrichtenbetreffs]** Die maximal zulässige Anzahl der Zeichen im Feld „Betreff“. Beispiel: 500. Der Standardwert ist nicht begrenzt.
+* **[!UICONTROL Maximale Länge des Nachrichtenbetreffs]** Die maximal zulässige Anzahl der Zeichen im Feld „Betreff“. Beispiel: 500. Der Standardwert ist keine Begrenzung.
 
-* **[!UICONTROL Maximale Länge des Nachrichtentextes]** Die maximal zulässige Anzahl der Zeichen im Feld „Inhalt“. Beispielsweise 10000. Der Standardwert ist nicht begrenzt.
+* **[!UICONTROL Maximale Länge des Nachrichtentextes]** Die maximal zulässige Anzahl der Zeichen im Feld „Inhalt“. Beispielsweise 10000. Der Standardwert ist keine Begrenzung.
 
 * **[!UICONTROL Dienstauswahl]**
-(*Erforderlich*) Legen Sie diesen Wert auf den Wert der Eigenschaft  **`serviceSelector.name`** aus dem  [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service) fest.
+ (*erforderlich*) Legen Sie dies auf den Wert der Eigenschaft  **`serviceSelector.name`** aus dem  [AEM Communities Messaging Operations-Dienst](messaging.md#messaging-operations-service) fest.
 
-#### Display tab {#display-tab-1}
+#### Registerkarte Anzeige {#display-tab-1}
 
 ![chlimage_1-403](assets/chlimage_1-403.png)
 
-* **[!UICONTROL Feld]**
-für Betreff anzeigen Wenn aktiviert, zeigen Sie die 
-`Subject` und aktivieren Sie das Hinzufügen eines Betreffs zur Nachricht. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Objekt-]**
+Feld anzeigen Ist diese Option aktiviert, wird die 
+`Subject` und aktivieren Sie die Option Betreff zur Nachricht hinzufügen. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Subject]**
-LabelGeben Sie den Text ein, der neben dem 
+* **[!UICONTROL Betreffbezeichnung]**
+Geben Sie den Text ein, der neben dem 
 `Subject` field. Der Standardwert ist `Subject`.
 
-* **[!UICONTROL Dateinamenfeld]**
-anzeigen Wenn aktiviert, zeigen Sie die 
+* **[!UICONTROL Dateifeld anhängen anzeigen]**
+Ist diese Option aktiviert, zeigen Sie die 
 `Attachment` und aktivieren Sie das Hinzufügen von Dateianlagen zur Nachricht. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Dateinamenbeschriftung anhängenGeben Sie den]**
-Text ein, der neben dem 
-`Attachment` Feld. Der Standardwert ist **`Attach File`**.
+* **[!UICONTROL Dateibezeichnung anhängenGeben Sie]**
+den Text ein, der neben dem 
+`Attachment` -Feld. Der Standardwert ist **`Attach File`**.
 
 * **[!UICONTROL Inhaltsfeld anzeigen]**
-Wenn aktiviert, zeigen Sie die 
+Ist diese Option aktiviert, wird die 
 `Content` und aktivieren Sie das Hinzufügen eines Nachrichtentextes. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Inhaltsbeschriftung]**
-Geben Sie den Text ein, der neben dem 
-`Content` Feld. Der Standardwert ist **`Body`**.
+* **[!UICONTROL Inhaltsbeschriftung Geben Sie]**
+den Text ein, der neben dem 
+`Content` -Feld. Der Standardwert ist **`Body`**.
 
 * **[!UICONTROL Mit Rich-Text-Editor]** Ist diese Option aktiviert, kann ein benutzerdefiniertes „Inhalt“-Textfeld verwendet werden, das über einen eigenen Rich-Text-Editor verfügt. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Zeitstempelmuster]** Stellen Sie für eine oder mehrere Sprachen Zeitstempelmuster bereit. Standardmäßig sind diese für die Sprachen en, de, fr, it, ja, zh_CN und ko_KR verfügbar.
-
