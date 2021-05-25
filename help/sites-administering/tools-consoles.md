@@ -1,18 +1,17 @@
 ---
 title: Die Tools-Konsolen
-description: Erfahren Sie mehr über die verschiedenen Werkzeugkonsolen in Adobe Experience Manager.
+description: Erfahren Sie mehr über die verschiedenen Tools-Konsolen in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 95%
 
 ---
-
 
 # Die Tools-Konsolen{#tools-consoles}
 
@@ -58,7 +57,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td>DAM – Konsistenzprüfer<br /> </td> 
    <td> </td> 
-   <td>Vergleicht <code>/var/dam</code> und <code>/content/dam</code> und sucht nach Inkonsistenzen. <br /> Alle aufgeführten Dateien/Ordner können dann synchronisiert oder gelöscht werden. Die Knotentypen für den Ordnervergleich können Sie über die Web-Konsole konfigurieren.</td> 
+   <td>Vergleicht <code>/var/dam</code> und <code>/content/dam</code> und sucht nach<br /> Inkonsistenzen. Alle aufgeführten Dateien/Ordner können dann synchronisiert oder gelöscht werden. Die Knotentypen für den Ordnervergleich können Sie über die Web-Konsole konfigurieren.</td> 
   </tr> 
   <tr> 
    <td>DAM – Adobe InDesign<br /> </td> 
@@ -295,7 +294,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/offloading.md">Browser-Abladung</a></td> 
-   <td>Verwalten des Abladens.</td> 
+   <td>Verwalten der Abladung</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -310,7 +309,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td> </td> 
    <td>Sicherungskopie der Web-Konsolen-Konfiguration<br /> </td> 
-   <td>Laden Sie den Konfigurationsstatus von der Webkonsole herunter.<br /> </td> 
+   <td>Laden Sie den Konfigurationsstatus von der Web-Konsole herunter.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -343,4 +342,3 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
 >[!NOTE]
 >
 >Einige der oben aufgeführten Optionen sind mit der klassischen Oberfläche verknüpft.
-
