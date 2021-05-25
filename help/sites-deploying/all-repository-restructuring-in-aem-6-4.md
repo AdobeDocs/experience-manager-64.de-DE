@@ -9,19 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: df03f65b-9951-4fd4-abf7-1672618fc1df
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2719'
 ht-degree: 80%
 
 ---
 
-
 # Repository-Neustrukturierung für alle Lösungen in AEM 6.4{#common-repository-restructuring-in-aem}
 
-Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die möglicherweise alle Lösungen beeinträchtigen. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen abzuschätzen, die sich möglicherweise auf alle Lösungen auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
 
 **Mit der Aktualisierung auf 6.4**
 
@@ -57,13 +56,13 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.4](/help
 
 ### ContextHub-Konfigurationen {#contexthub-6.4}
 
-Ab AEM 6.4 gibt es keine ContextHub-Standardkonfiguration mehr. Daher sollte auf der Stammebene der Site ein `cq:contextHubPathproperty` eingestellt werden, um anzugeben, welche Konfiguration verwendet werden soll.
+Ab AEM 6.4 gibt es keine ContextHub-Standardkonfiguration mehr. Daher sollte auf der Stammebene der Site ein `cq:contextHubPathproperty` festgelegt werden, um anzugeben, welche Konfiguration verwendet werden soll.
 
 1. Navigieren Sie zum Stammverzeichnis der Site. 
 1. Öffnen Sie die Seiteneigenschaften der Stammseite und wählen Sie die Registerkarte Personalisierung aus. 
 1. Geben Sie im Feld ContextHub-Pfad Ihren Pfad zur ContextHub-Konfiguration ein.
 
-Zusätzlich muss bei der ContextHub-Konfiguration das `sling:resourceType` aktualisiert werden, um relativ und nicht absolut zu sein.
+Darüber hinaus muss in der ContextHub-Konfiguration das `sling:resourceType` aktualisiert werden, um relativ und nicht absolut zu sein.
 
 1. Öffnen Sie die Eigenschaften des ContextHub-Konfigurationsknotens in CRX DE Lite, z. B. `/apps/settings/cloudsettings/legacy/contexthub`
 1. Ändern Sie `sling:resourceType` von `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` in `granite/contexthub/cloudsettings/components/baseconfiguration`
@@ -141,7 +140,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
    <td>Alle expliziten Pfadverweise in 
     <code>
      custom
-    </code>-Code zum vorherigen Speicherort sollte auch den neuen Speicherort berücksichtigen. Dies ist zu empfehlen, denn dieser Code wurde für die Verwendung in Verbindung mit AEM-Workflow-APIs überarbeitet.</td> 
+    </code> -Code zum vorherigen Speicherort sollte auch den neuen Speicherort berücksichtigen. Dies ist zu empfehlen, denn dieser Code wurde für die Verwendung in Verbindung mit AEM-Workflow-APIs überarbeitet.</td> 
   </tr>
  </tbody>
 </table>
@@ -160,7 +159,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen oder geänderten Workflow-Starter müssen zu <code>/conf/global/workflow/launcher/config</code> migriert werden.</p> 
+   <td><p>Alle neuen oder modifizierten Workflow-Starter müssen nach <code>/conf/global/workflow/launcher/config</code> migriert werden.</p> 
     <ol> 
      <li>Kopieren Sie alle neuen oder geänderten Workflow-Starter Konfigurationen vom bisherigen Speicherort an den neuen Speicherort (<code>/conf/global</code>).</li> 
     </ol> </td> 
@@ -172,7 +171,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
      <li><code>/conf/global/settings/workflow/launcher</code></li> 
      <li><code>/libs/settings/workflow/launcher</code></li> 
      <li><code>/etc/workflow/launcher</code></li> 
-    </ol> <p>Daher müssen alle Anpassungen AEM bereitgestellten Workflow-Starters, die im vorherigen Speicherort beibehalten werden, an den neuen Speicherort (<code>/conf/global/settings/workflow/launcher</code>, wenn sie beibehalten werden sollen, verschoben werden. Andernfalls werden sie durch die AEM bereitgestellte Workflow-Starter-Definition in <code>/libs/settings/workflow/launcher</code> ersetzt.</p> </td> 
+    </ol> <p>Daher müssen alle Anpassungen von AEM bereitgestellten Workflow-Starter, die am vorherigen Speicherort beibehalten werden, an den neuen Speicherort (<code>/conf/global/settings/workflow/launcher</code> verschoben werden, wenn sie beibehalten werden sollen. Andernfalls werden sie durch die AEM bereitgestellte Workflow-Starter-Definition in <code>/libs/settings/workflow/launcher</code> ersetzt.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -195,14 +194,14 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
     <ol> 
      <li>Kopieren Sie jedes neue oder modifizierte Workflow-Skript vom vorherigen Speicherort zum neuen Speicherort.<br /> 
       <ul> 
-       <li><code>/apps/workflow/scripts</code> sollten in SCM beibehalten werden.</li> 
+       <li><code>/apps/workflow/scripts</code> sollte in SCM beibehalten werden.</li> 
       </ul> </li> 
      <li>Aktualisieren Sie alle Verweise auf die Workflow-Skripte in den Workflow-Modellen am vorherigen Speicherort, sodass sie auf die neuen Speicherorte verweisen.</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td> 
-   <td><p>AEM 6.4 SP1 macht es nach der Freigabe so, dass diese Umstrukturierung bis 6.5 verschoben werden kann 
+   <td><p>AEM 6.4 SP1 macht es nach der Veröffentlichung so, dass diese Umstrukturierung auf 6.5 verschoben werden kann 
      <code>
       upgrade
      </code>.</p> <p>Wenn Sie auf AEM 6.4 aktualisieren möchten, bevor AEM 6.4 SP1 veröffentlicht wurde, sollte diese Neustrukturierung als Teil der Aktualisierung ausgeführt werden. Ohne das Bearbeiten und Abspeichern von Workflow-Schritten werden die Referenz-Skripte vom vorherigen Speicherort vollständig aus den Workflow-Schritten entfernt und nur die Workflow-Schritte vom neuen Speicherort sind in der Dropdown-Liste „Skriptauswahl“ verfügbar.</p> </td> 
@@ -267,7 +266,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
        </code>:
        <code>
         designPath
-       </code></span>-Eigenschaft.</li> 
+       </code></span> -Eigenschaft.</li> 
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li> 
      <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet /etc.clientlibs/... zuzulassen .</li> 
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden.</p> 
@@ -306,7 +305,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
       </code>:
       <code>
        designPath
-      </code>-Eigenschaft.</li> 
+      </code> Eigenschaft.</li> 
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li> 
      <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet /etc.clientlibs/... zuzulassen .</li> 
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden.</p> 
@@ -345,7 +344,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
       </code>:
       <code>
        designPath
-      </code>-Eigenschaft.</li> 
+      </code> Eigenschaft.</li> 
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li> 
      <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet /etc.clientlibs/... zuzulassen .</li> 
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden.</p> 
@@ -384,7 +383,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
       </code>:
       <code>
        designPath
-      </code>-Eigenschaft.</li> 
+      </code> Eigenschaft.</li> 
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li> 
      <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet /etc.clientlibs/... zuzulassen .</li> 
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden.</p> 
@@ -488,7 +487,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
    <td>
     <ol> 
-     <li>Kopieren Sie benutzerdefinierte Konfigurationen von <code>/etc/blueprints</code> nach <code>/apps/msm</code>.</li> 
+     <li>Kopieren Sie benutzerdefinierte Konfigurationen von <code>/etc/blueprints</code> in <code>/apps/msm</code>.</li> 
      <li>Remove <code>/etc/blueprints</code>.</li> 
     </ol> </td> 
   </tr>
@@ -513,11 +512,11 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen oder geänderten AEM Project Dashboard Gadget-Konfigurationen müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p> 
+   <td><p>Alle neuen oder modifizierten AEM Dashboard-Gadget-Konfigurationen für Projekte müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p> 
     <ol> 
      <li>Kopieren Sie alle neuen oder modifizierten Dashboard-Gadget-Konfigurationen für AEM-Projekte vom vorherigen an den neuen Speicherort (<code>/apps</code>).
       <ol> 
-       <li>Kopieren Sie nicht die nicht geänderten AEM Dashboard Gadget-Konfigurationen von Projekten, da diese nun am neuen Speicherort (<code>/libs</code>) vorhanden sind.</li> 
+       <li>Kopieren Sie nicht AEM Dashboard-Gadget-Konfigurationen für Projekte , da diese jetzt am neuen Speicherort (<code>/libs</code>) vorhanden sind.</li> 
       </ol> </li> 
      <li>Aktualisieren Sie alle AEM-Projektvorlagen, die auf den vorherigen Speicherort verweisen, sodass sie auf den neuen Speicherort verweisen.</li> 
     </ol> </td> 
@@ -543,7 +542,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen oder geänderten E-Mail-Vorlagen für Replikationsbenachrichtigungen müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p> 
+   <td><p>Alle neuen oder modifizierten E-Mail-Vorlagen für Replikationsbenachrichtigungen müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p> 
     <ol> 
      <li>Kopieren Sie alle neuen oder modifizierten E-Mail-Vorlagen für die Replikationsbenachrichtigung vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li> 
      <li>Entfernen Sie alle migrierten E-Mail-Vorlagen für die Replikationsbenachrichtigung vom vorherigen Speicherort.</li> 
@@ -576,11 +575,11 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle Tags müssen zu <code>/content/cq:tags</code> migriert werden.</p> 
+   <td><p>Alle Tags müssen nach <code>/content/cq:tags</code> migriert werden.</p> 
     <ol> 
      <li>Kopieren Sie alle Tags vom vorherigen Speicherort an den neuen Speicherort.</li> 
      <li>Entfernen Sie alle Tags aus dem vorherigen Speicherort.</li> 
-     <li>Starten Sie über die AEM Web-Konsole das Day Communique 5 Tagging OSGi-Bundle unter <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> neu, damit AEM erkennen kann, dass die neue Position Inhalte enthält und verwendet werden sollte.</li> 
+     <li>Starten Sie über die AEM Web-Konsole das Day Communique 5 Tagging OSGi-Bundle unter <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> neu, damit AEM erkennen kann, dass der neue Speicherort Inhalte enthält und verwendet werden sollte.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -610,20 +609,20 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Neue Cloud Services für Übersetzungen müssen an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden.</p> 
+   <td><p>Alle neuen Übersetzungs-Cloud Services müssen an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden.</p> 
     <ol> 
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
       <ul> 
        <li>Erstellen Sie manuell neue Konfigurationen der Cloud-basierten Übersetzungsdienste über die AEM-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Dienste &gt; Übersetzungs-Cloud-Services</strong>.<br /> ODER </li> 
-       <li>Kopieren Sie alle neuen Konfigurationen von Translation Cloud Services vom vorherigen Speicherort zum neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>).</li> 
+       <li>Kopieren Sie alle neuen Konfigurationen für Übersetzungs-Cloud Services vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>).</li> 
       </ul> </li> 
      <li>Verknüpfen Sie die entsprechenden AEM-Konfigurationen mit den AEM-Inhaltshierarchien.
       <ol> 
        <li>Die Seitenhierarchien von AEM Sites über <strong>AEM Sites &gt; Seite &gt; Seiteneigenschaften &gt; Erweitert &gt; Cloud-Konfiguration</strong>.</li> 
        <li>Hierarchien von AEM-Experience-Fragments über <strong>AEM-Experience-Fragments &gt; Experience Fragments &gt; Eigenschaften &gt; Cloud-Services &gt; Cloud-Konfiguration</strong>.</li> 
        <li>Ordnerhierarchien von AEM-Experience-Fragments über <strong>AEM-Experience-Fragments &gt; Ordner &gt; Eigenschaften &gt; Cloud-Services &gt; Cloud-Konfiguration</strong>.<br /> </li> 
-       <li>AEM Assets-Ordnerhierarchien über <strong>AEM Assets &gt; Ordner &gt; Ordnereigenschaften &gt; Registerkarte "Cloud Services"&gt; "Konfiguration</strong>".</li> 
-       <li>AEM Projekte über <strong>AEM Projekte &gt; Projekt &gt; Projekteigenschaften &gt; Erweiterte Registerkarte &gt; Cloud-Konfiguration</strong>.</li> 
+       <li>Ordnerhierarchien von AEM Assets über <strong>AEM Assets &gt; Ordner &gt; Ordnereigenschaften &gt; Registerkarte Cloud Services &gt; Konfiguration</strong>.</li> 
+       <li>AEM Sie Projekte über <strong>AEM Projekte &gt; Projekt &gt; Projekteigenschaften &gt; Erweitert &gt; Cloud-Konfiguration</strong>.</li> 
       </ol> </li> 
      <li>Trennen Sie alle migrierten alten Cloud-basierten Übersetzungsdienste von den oben genannten AEM-Inhaltshierarchien.</li> 
     </ol> </td> 
@@ -657,7 +656,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
    <td><p>Alle neuen oder modifizierten Definitionen für Übersetzungssprachen erfordern eine Migration der Definitionen für Übersetzungssprachen an den neuen Speicherort (<code>/apps</code>).</p> 
     <ol> 
-     <li>Wenn an den Definitionen für die Übersetzungssprache Ergänzungen oder Änderungen vorgenommen wurden, kopieren Sie alle Übersetzungssprachdefinitionen vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li> 
+     <li>Wenn Ergänzungen oder Änderungen an den Definitionen für Übersetzungssprachen vorgenommen wurden, kopieren Sie alle Definitionen für Übersetzungssprachen vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -727,7 +726,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
       </code>:
       <code>
        designPath
-      </code>-Eigenschaft.</li> 
+      </code> Eigenschaft.</li> 
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li> 
      <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet /etc.clientlibs/... zuzulassen .</li> 
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden.</p> 
@@ -766,20 +765,20 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen Cloud Services des Übersetzungs-Connectors müssen an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden.</p> 
+   <td><p>Alle neuen Connector-Cloud Services für Übersetzungsanbieter müssen an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden.</p> 
     <ol> 
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
       <ul> 
        <li>Erstellen Sie manuell neue Konfigurationen der Connector-Cloud-Services für Übersetzungsanbieter über die AEM-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Dienste &gt; Übersetzungs-Cloud-Services</strong>.<br /> ODER </li> 
-       <li>Kopieren Sie alle neuen Konfigurationen des Übersetzungs-Connector-Cloud Services vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>, <code>/conf/global </code>oder <code>/conf/&lt;tenant&gt;</code>).</li> 
+       <li>Kopieren Sie alle neuen Konfigurationen des Connector-Cloud Services für Übersetzungsanbieter vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>, <code>/conf/global </code>oder <code>/conf/&lt;tenant&gt;</code>).</li> 
       </ul> </li> 
      <li>Verknüpfen Sie die entsprechenden AEM-Konfigurationen mit den AEM-Inhaltshierarchien.
       <ol> 
        <li>Die Seitenhierarchien von AEM Sites über <strong>AEM Sites &gt; Seite &gt; Seiteneigenschaften &gt; Erweitert &gt; Cloud-Konfiguration</strong>.</li> 
        <li>Hierarchien von AEM-Experience-Fragments über <strong>AEM-Experience-Fragments &gt; Experience Fragments &gt; Eigenschaften &gt; Cloud-Services &gt; Cloud-Konfiguration</strong>.</li> 
        <li>Ordnerhierarchien von AEM-Experience-Fragments über <strong>AEM-Experience-Fragments &gt; Ordner &gt; Eigenschaften &gt; Cloud-Services &gt; Cloud-Konfiguration</strong>.</li> 
-       <li>AEM Assets-Ordnerhierarchien über <strong>AEM Assets &gt; Ordner &gt; Ordnereigenschaften &gt; Registerkarte "Cloud Services"&gt; "Konfiguration</strong>".</li> 
-       <li>AEM Projekte über <strong>AEM Projekte &gt; Projekt &gt; Projekteigenschaften &gt; Erweiterte Registerkarte &gt; Cloud-Konfiguration</strong>.</li> 
+       <li>Ordnerhierarchien von AEM Assets über <strong>AEM Assets &gt; Ordner &gt; Ordnereigenschaften &gt; Registerkarte Cloud Services &gt; Konfiguration</strong>.</li> 
+       <li>AEM Sie Projekte über <strong>AEM Projekte &gt; Projekt &gt; Projekteigenschaften &gt; Erweitert &gt; Cloud-Konfiguration</strong>.</li> 
       </ol> </li> 
      <li>Trennen Sie alle migrierten alten Cloud-basierten Übersetzungsdienste von den oben genannten AEM-Inhaltshierarchien.</li> 
     </ol> </td> 
@@ -856,4 +855,3 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
   </tr>
  </tbody>
 </table>
-
