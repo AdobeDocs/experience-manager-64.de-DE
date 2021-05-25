@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: 07ca7715-f7b3-40e0-95bc-e05f0662ed08
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-
 # Bestehende Domänen bearbeiten und konvertieren{#editing-and-converting-existing-domains}
 
 Sie können auf der Seite „Domänenverwaltung“ die Einstellungen für bestehende Domänen ändern. Sie können auch eine bestehende Unternehmensdomäne in eine Hybriddomäne umwandeln.
 
-## Eine vorhandene Domäne bearbeiten {#edit-an-existing-domain}
+## Eine vorhandene Domäne bearbeiten  {#edit-an-existing-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf den Namen der Domäne, die bearbeitet werden soll.
@@ -50,4 +49,3 @@ Sie können auf der Seite „Domänenverwaltung“ die Einstellungen für besteh
 1. Klicken Sie auf In Unternehmensdomäne konvertieren.
 1. Überprüfen Sie die zu Benutzern und Gruppen und zur Benutzerauthentifizierung angezeigten Informationen und klicken Sie auf „OK“.
 1. Klicken Sie auf „Verzeichnis hinzufügen“ und konfigurieren Sie die erforderlichen Ordnerinformationen. (Siehe [Ordner oder benutzerdefinierten SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
-
