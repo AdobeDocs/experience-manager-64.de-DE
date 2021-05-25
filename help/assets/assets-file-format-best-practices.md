@@ -2,16 +2,15 @@
 title: Best Practices für Dateiformate in Assets
 description: Best Practices für die Dateiunterstützung in AEM Assets.
 contentOwner: AG
-feature: Asset Management,Developer Tools
+feature: Asset Management,Entwicklertools
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 91%
 
 ---
-
 
 # Best Practices für Dateiformate in Assets {#assets-file-format-best-practices}
 
@@ -19,7 +18,7 @@ AEM Assets unterstützt viele proprietäre und Drittanbieter-Dateiformatbiblioth
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
-## Adobe Camera Raw-Bibliothek {#adobe-camera-raw-library}
+## Adobe Camera Raw-Bibliothek  {#adobe-camera-raw-library}
 
 Für optimale Leistung empfiehlt Adobe die Verwendung der Adobe Camera Raw-Bibliothek für:
 
@@ -42,7 +41,7 @@ Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, habe
 
 ## Adobe InDesign Server  {#adobe-indesign-cc-server}
 
-Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen AEM Assets als Verweise in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen AEM Assets als Referenzen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
