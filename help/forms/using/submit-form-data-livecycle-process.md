@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 260e405e-f59c-4aea-b83f-53ee103df94e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 89%
 
 ---
-
 
 # Konfigurieren von AEM Forms zum Senden von Formulardaten an einen AEM Forms on JEE-Prozess {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
@@ -26,7 +25,7 @@ Adaptive Formulare unterstützen die Übermittlung von Daten an einen AEM Forms 
 
 Führen Sie die folgenden Schritte aus, damit Ihr AEM Forms-Server Daten an einen AEM Forms on JEE-Server senden kann:
 
-1. Wechseln Sie zu AEM Webkonfigurationskonsole unter https://[*host*]:[*port*]/system/console/configMgr.
+1. Rufen Sie AEM Web-Konfigurationskonsole unter https://[*host*]:[*port*]/system/console/configMgr auf.
 
 1. Klicken Sie auf die **Adobe LiveCycle Client SDK-Konfigurationskomponente.**
 1. Klicken Sie auf die Komponente, um URL, Benutzernamen und das Kennwort des AEM Forms on JEE-Servers zu bearbeiten.
@@ -41,7 +40,7 @@ Nachdem der AEM Forms konfiguriert ist, ordnen Sie die Daten-XML und Anhänge vo
 1. In der AEM-Web-Konfigurationskonsole klicken Sie auf **Guide LiveCycle Process Locator and Invoker**, um die Konfiguration zu bearbeiten.
 1. Geben Sie die folgenden Parameter an:
 
-   * **Name des data xml-Parameters**  (obligatorisch): Geben Sie die XML-Eigenschaftendatei des AEM Forms on JEE-Prozesses an, der die gesendeten Daten verarbeiten soll. Der Standardwert lautet **dataxml**.
+   * **Name des Daten-XML-Parameters**  (erforderlich): Geben Sie die XML-Eigenschaftendatei des AEM Forms on JEE-Prozesses an, der die gesendeten Daten verarbeiten soll. Der Standardwert lautet **dataxml**.
    * **Name des Dateianlagenparameters**(optional): Geben Sie die Liste der Dokumentobjekte an, die der AEM Forms on JEE-Prozess verarbeiten muss. Der Standardwert lautet **fileAttachmentsList**.
 
 1. Überprüfen Sie die Einstellungen und klicken Sie auf **Speichern**.
