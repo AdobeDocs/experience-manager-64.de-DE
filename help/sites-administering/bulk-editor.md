@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 61d85393-2764-447d-afcc-3af1d99e8dbb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 79%
 
 ---
-
 
 # Der Bulk Editor{#the-bulk-editor}
 
@@ -46,7 +45,7 @@ Ein Beispiel, das einen solchen Anwendungsfall veranschaulicht, ist auf der Geom
 1. Navigieren Sie zur Seite **Support** und dann zur Umfrage **Zufriedenheit mit dem Kundenservice**.
 1. **Bearbeiten Sie** den Absatz **Beginn des Formulars**. Klicken Sie im Dialogfeld auf die Registerkarte **Erweitert**, erweitern Sie die **Aktionskonfiguration** und klicken Sie dann auf **Daten anzeigen...**.
 
-   ![customSurvey](assets/custsatsurvey.png)
+   ![benutzerdefinierte Umfrage](assets/custsatsurvey.png)
 
 1. Der Bulk Editor ist vollständig anpassbar, auch wenn in diesem Beispiel die Benutzer keine Inhalte bearbeiten, sondern nur die Daten in eine Tabelle exportieren können.
 
@@ -77,19 +76,19 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr> 
   <tr> 
    <td>Stammverzeichnis</td> 
-   <td>Gibt den Stammpfad an, den der Masseneditor durchsucht.<br /> Beispiel, <code>/content/geometrixx/en</code>. Der Bulk Editor durchsucht alle untergeordneten Knoten.</td> 
+   <td>Gibt den Stammpfad an, den der Bulk Editor durchsucht.<br /> Beispiel, <code>/content/geometrixx/en</code>. Der Bulk Editor durchsucht alle untergeordneten Knoten.</td> 
   </tr> 
   <tr> 
    <td>Abfrage-Parameter</td> 
-   <td>Geben Sie mithilfe der GQL-Parameter die Suchzeichenfolge ein, nach der der Masseneditor im Repository suchen soll. <code>type:Page</code> sucht beispielsweise nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td> 
+   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. <code>type:Page</code> sucht beispielsweise nach allen Seiten im Stammverzeichnis, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td> 
   </tr> 
   <tr> 
    <td>Kontrollkästchen "Inhaltsmodus"</td> 
-   <td>Aktivieren Sie dieses Kontrollkästchen, um Eigenschaften innerhalb des Unterknotens <code>jcr:content</code> der Suchergebnisse zu lesen, falls vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td> 
+   <td>Aktivieren Sie dieses Kontrollkästchen, um Eigenschaften im Unterknoten <code>jcr:content</code> der Suchergebnisse zu lesen, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td> 
   </tr> 
   <tr> 
    <td>Eigenschaften/Spalten</td> 
-   <td>Aktivieren Sie die Kontrollkästchen der Eigenschaften, die vom Masseneditor zurückgegeben werden sollen. Die ausgewählten Eigenschaften stellen die Spaltenüberschriften im Ergebnisbereich dar. Standardmäßig wird der Knotenpfad in den Ergebnissen angezeigt.</td> 
+   <td>Aktivieren Sie die Kontrollkästchen für die Eigenschaften, die der Bulk Editor zurückgeben soll. Die ausgewählten Eigenschaften stellen die Spaltenüberschriften im Ergebnisbereich dar. Standardmäßig wird der Knotenpfad in den Ergebnissen angezeigt.</td> 
   </tr> 
   <tr> 
    <td>Benutzerdefinierte Eigenschaften/Spalten</td> 
@@ -100,7 +99,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
 
 Beispiel:
 
-![searchFilter](assets/searchfilter.png)
+![searchfilter](assets/searchfilter.png)
 
 1. Klicken Sie auf **Suchen**. Der Bulk Editor zeigt die Suchergebnisse an.
 
@@ -110,7 +109,7 @@ Beispiel:
 
 1. Um ggf. Änderungen vorzunehmen, doppelklicken Sie in eine Zelle.
 
-   ![srchesultedit](assets/srchresultedit.png)
+   ![srchresult tedit](assets/srchresultedit.png)
 
 1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern. (Die Schaltfläche **Speichern** wird aktiviert, sobald Sie eine Zelle bearbeitet haben).
 
@@ -120,10 +119,10 @@ Beispiel:
 
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
-* **path:** Nur Suchknoten unterhalb dieses Pfades. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
-* **type:** Nur zurückgegebene Nodes der angegebenen Node-Typen. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **order:** Ordnen Sie das Ergebnis nach den angegebenen Eigenschaften an. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
-* **limit:** begrenzt die Anzahl der Ergebnisse mit einem Intervall. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv und das Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL maximal diese Anzahl von Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
+* **path:** sucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
+* **type:** gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
+* **order:** sortiert das Ergebnis nach den angegebenen Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
+* **limit:** begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv ist und das Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
 
 ### Exportieren von Inhalten {#exporting-content}
 
@@ -156,10 +155,9 @@ Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor ö
 So importieren Sie Inhalte:
 
 1. Öffnen Sie den Bulk Editor.
-1. hinzufügen `?hib=false` zur URL, z. B.:
+1. Fügen Sie `?hib=false` zur URL hinzu, z. B.:
 
    `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 
 1. Wählen Sie **Importieren**.
 1. Wählen Sie die Datei `.tsv` aus. Die Daten werden in das Repository importiert.
-
