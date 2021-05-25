@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
-translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+exl-id: 1b273437-8d71-4224-bdcd-0ae522ae8913
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 83%
 
 ---
 
-
-# Erstellen eines benutzerdefinierten Symbolleistenlayouts {#creating-custom-toolbar-layout}
+# Erstellen eines benutzerdefinierten Symbolleistenlayouts  {#creating-custom-toolbar-layout}
 
 ## Symbolleistenlayouts {#layout}
 
@@ -30,14 +29,14 @@ Die Verwendungen des Symbolleistenlayouts hängen stark von der clientseitigen V
 
 Adaptive Formulare enthalten einen standardmäßigen Satz mit Layouts:
 
-![Standardmäßig verfügbare Symbolleistenlayouts  ](assets/toolbar1.png)
-**Abbildung:** *Standardmäßig verfügbare Symbolleistenlayouts*
+![Standardmäßige Symbolleistenlayouts  ](assets/toolbar1.png)
+**Abbildung:** *Standardmäßige Symbolleistenlayouts*
 
 Darüber hinaus können Sie ein benutzerdefiniertes Symbolleistenlayout erstellen.
 
 Im Folgenden werden die Schritte erläutert, um eine benutzerdefinierte Symbolleiste zu erstellen, die drei Aktionen in der Symbolleiste und die anderen Aktionen in einer Dropdown-Liste in der Symbolleiste anzeigt.
 
-Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. Öffnen Sie nach der Installation des Inhaltspakets `/content/forms/af/CustomLayoutDemo.html`, um die Demo zum benutzerdefinierten Symbolleistenlayout Ansicht.
+Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. Öffnen Sie nach der Installation des Inhaltspakets `/content/forms/af/CustomLayoutDemo.html` , um das benutzerdefinierte Symbolleistenlayout-Demo anzuzeigen.
 
 CustomToolbarLayoutDemo.zip
 
@@ -54,15 +53,15 @@ FileDemo-Symbolleistenlayout abrufen
 
    `/libs/fd/af/layouts/toolbar`
 
-   Kopieren Sie beispielsweise den Knoten `mobileFixedToolbarLayout` aus dem Ordner `/libs/fd/af/layouts/toolbar` in den Ordner `/apps/customlayout/toolbar`.
+   Kopieren Sie beispielsweise den Knoten `mobileFixedToolbarLayout` aus dem Ordner `/libs/fd/af/layouts/toolbar` in den Ordner `/apps/customlayout/toolbar` .
 
-   Kopieren Sie außerdem toolbarCommon.jsp in den Ordner `/apps/customlayout/toolbar`.
+   Kopieren Sie außerdem toolbarCommon.jsp in den Ordner `/apps/customlayout/toolbar` .
 
    >[!NOTE]
    >
    >Der Ordner, den Sie für die benutzerdefinierten Layouts erstellen, muss mit dem Ordner `apps` erstellt werden.
 
-1. Benennen Sie den kopierten Knoten `mobileFixedToolbarLayout` in `customToolbarLayout.` um
+1. Benennen Sie den kopierten Knoten `mobileFixedToolbarLayout` in `customToolbarLayout.` um.
 
    Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Beispiel: Ändern Sie jcr:description des Knotens in **Benutzerdefiniertes Layout für Symbolleiste**.
 
@@ -84,7 +83,7 @@ FileDemo-Symbolleistenlayout abrufen
 
 1. Wählen Sie dieses benutzerdefinierte Symbolleistenlayout und klicken Sie auf „OK“.
 
-   hinzufügen clientlib (javascript und css) im Knoten `/etc/customlayout` und fügen Sie den Verweis der clientlib in das `customToolbarLayout.jsp` ein.
+   Fügen Sie clientlib (javascript und css) im Knoten `/etc/customlayout` hinzu und fügen Sie den Verweis der clientlib in den Knoten `customToolbarLayout.jsp` ein.
 
    ![Pfad der Datei customToolbarLayout.css](assets/toolbar_3.png)
 
@@ -229,5 +228,5 @@ FileDemo-Symbolleistenlayout abrufen
 >
 >Die Beschreibung, die im vorherigen Schritt aktualisiert wurde, wird in der Dropdown-Liste „Layout“ angezeigt.
 
-![Desktop-Ansicht der ](assets/toolbar_1.png)
-**Symbolleiste für das benutzerdefinierte LayoutAbbildung:** *Desktop-Ansicht der Symbolleiste für das benutzerdefinierte Layout*
+![Desktop-Ansicht der benutzerdefinierten Layout-](assets/toolbar_1.png)
+**SymbolleisteAbbildung:** *Desktop-Ansicht der Symbolleiste mit benutzerdefiniertem Layout*
