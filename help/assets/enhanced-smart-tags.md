@@ -6,16 +6,15 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Smart Tags,Search
+feature: Smart-Tags,Suche
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 83%
 
 ---
-
 
 # Optimierte Smart-Tags {#enhanced-smart-tags}
 
@@ -31,13 +30,13 @@ Damit der Smart Content Service die richtigen Tags anwendet, müssen Sie ihn dar
 
 Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über einen Tagging-Workflow auf Assets anwenden.
 
-Im Hintergrund verwendet der Smart Content Service das AI-Framework von Adobe Sensei, um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Geschäftstaxonomie auszubilden. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet der Smart Content Service das KI-Framework von Adobe Sensei, um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
-Smart Content Service ist ein Cloud-Dienst, der auf [!DNL Adobe I/O] gehostet wird. Zur Verwendung in Adobe Experience Manager (AEM) muss der Systemadministrator Ihre AEM Instanz mit [!DNL Adobe I/O] integrieren.
+Smart Content Service ist ein Cloud-Service, der auf [!DNL Adobe I/O] gehostet wird. Um sie in Adobe Experience Manager (AEM) zu verwenden, muss der Systemadministrator Ihre AEM-Instanz mit [!DNL Adobe I/O] integrieren.
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
-* Einstieg 
+* Einstieg
 * Überprüfung von Assets und Tags (Taxonomiedefinition)
 * Training des Smart Content Service
 * Automatisches Tagging
@@ -46,14 +45,14 @@ Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration auf [!DNL Adobe I/O] zu erstellen:
+Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration in [!DNL Adobe I/O] zu erstellen:
 
 * Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
 * Der Smart Content Service ist für Ihre Organisation aktiviert.
 
 ## Einstieg {#onboarding}
 
-Der Dienst für intelligente Inhalte steht als Zusatzlösung zu AEM zum Kauf zur Verfügung. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an den Administrator Ihres Unternehmens gesendet.
+Der Smart Content Service kann als Add-on zu AEM erworben werden. Nach dem Kauf wird eine E-Mail an den Administrator Ihres Unternehmens mit einem Link zu [!DNL Adobe I/O] gesendet.
 
 Der Administrator kann über diesen Link den Smart Content Service in AEM integrieren. Weitere Informationen zum Integrieren des Dienstes mit AEM Assets finden Sie im Abschnitt [Konfigurieren von Smart-Tags](config-smart-tagging.md).
 
@@ -61,7 +60,7 @@ Der Einstieg ist abgeschlossen, wenn der Administrator den Dienst konfiguriert u
 
 >[!NOTE]
 >
->Wenn Sie AEM Version 6.3 oder früher verwenden und einen automatischen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart-Tags verwenden nicht die AI-Funktionen und sind weniger genau als die erweiterte Funktion für intelligentes Tagging.
+>Wenn Sie AEM 6.3 oder frühere Version verwenden und einen automatischen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart-Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart-Tags verwenden nicht die KI-Funktionen und sind weniger genau als die Funktion für optimiertes Smart-Tagging.
 
 ## Überprüfen von Assets und Tags {#reviewing-assets-and-tags}
 
@@ -74,14 +73,14 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 >[!NOTE]
 >
 >1. Das Training ist ein unwiderruflicher Vorgang. Adobe empfiehlt Ihnen, die Tags im Asset-Satz zu überprüfen, bevor Sie den Smart Content Service mit den Tags trainieren.
->1. Bitte lesen Sie die [Richtlinien für Smart Content Service-Schulungen](smart-tags-training-guidelines.md), bevor Sie mit der Schulung für ein Tag beginnen.
+>1. Lesen Sie die [Trainings-Richtlinien für Smart Content Service](smart-tags-training-guidelines.md) , bevor Sie mit dem Training für ein Tag beginnen.
 >1. Adobe empfiehlt Ihnen, mindestens zwei unterschiedliche Tags zu verwenden, wenn Sie den Smart Content Service zum ersten Mal trainieren.
 
 >
 
 
 
-## Training des Smart Content Service {#training-the-smart-content-service}
+## Training des Smart Content Service  {#training-the-smart-content-service}
 
 Damit der Smart Content Service die Taxonomie Ihres Unternehmens erkennen kann, sollten Sie den Dienst auf einen Asset-Satz ausführen, der bereits für Ihr Unternehmen relevante Tags enthält. Nach dem Training kann der Dienst dieselbe Taxonomie auf einen ähnlichen Satz von Assets anwenden.
 
@@ -95,7 +94,7 @@ Sie können den Smart Content Service regelmäßig oder je nach Anforderung trai
 
 ### Regelmäßiges Trainieren  {#periodic-training}
 
-Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart Tags aktivieren]** unter der Registerkarte **[!UICONTROL Details]** und speichern Sie die Änderungen.
+Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Eigenschaftenseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** auf der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
@@ -114,7 +113,7 @@ Sie können den Smart Content Service über die Workflow-Konsole trainieren, wan
 
 >[!NOTE]
 >
->Nachdem die Assets in einem Ordner für die Schulung verarbeitet wurden, werden in den nachfolgenden Schulungszyklen nur die geänderten Assets verarbeitet.
+>Sobald die Assets in einem Ordner für die Schulung verarbeitet wurden, werden nur die geänderten Assets in nachfolgenden Schulungszyklen verarbeitet.
 
 ### Anzeigen von Trainingsberichten {#viewing-training-reports}
 
@@ -145,9 +144,9 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 
 ### Periodisches Tagging  {#periodic-tagging}
 
-Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart Tags aktivieren]** unter der Registerkarte **[!UICONTROL Details]** und speichern Sie die Änderungen.
+Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Öffnen Sie die Eigenschaftenseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** auf der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
-Wenn diese Option für einen Ordner ausgewählt ist, werden die Assets im Ordner vom Smart Content Service automatisch mit Tags versehen. Standardmäßig wird der Tag-Tag um 12:00 Uhr ausgeführt.
+Sobald diese Option für einen Ordner ausgewählt ist, markiert der Smart Content Service die Assets automatisch im Ordner. Standardmäßig wird der Tagging-Workflow täglich um 12:00 Uhr ausgeführt.
 
 ### Tagging bei Bedarf {#on-demand-tagging}
 
