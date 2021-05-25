@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 27537d62-f032-4fb5-b2cf-003579b61ea8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 89%
 
 ---
-
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
@@ -32,7 +31,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 1. [Konfigurieren Sie das Katalog-Importtool](#configure-the-catalog-importer).
 1. [Importieren Sie den Katalog mit dem Importtool](#catalog-import) zu einem bestimmten Ort in AEM.
 
-## Konfigurieren der Facettensuche für Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Konfigurieren der Facettensuche für Geometrixx Outdoors  {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -57,9 +56,9 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 
    >[!NOTE]
    >
-   >Verwenden Sie das Kontextmenü (normalerweise Rechtsklick), um `Create Solr sort` auszuwählen.
+   >Verwenden Sie das Kontextmenü (in der Regel Rechtsklick), um `Create Solr sort` auszuwählen.
    >
-   >Bei Hybris 5.0.0 öffnen Sie die Registerkarte `Indexed Types`, klicken Sie mit der Dublette auf `ClothesVariantProduct` und dann auf die Registerkarte `SOLR Sort`.
+   >Öffnen Sie für Hybris 5.0.0 die Registerkarte `Indexed Types`, doppelklicken Sie auf `ClothesVariantProduct` und dann auf die Registerkarte `SOLR Sort`.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -206,7 +205,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit hybris an:
 
 >[!NOTE]
 >
->Die hybris Implementierung (d.h. `geometrixx-outdoors/en_US`) speichert nur Produkt-IDs und andere grundlegende Informationen unter `/etc/commerce`.
+>Die hybris-Implementierung (d. h. `geometrixx-outdoors/en_US`) speichert nur Produkt-IDs und andere grundlegende Informationen unter `/etc/commerce`.
 >
 >Immer, wenn Daten zu einem Produkt angefordert werden, wird auf den hybris-Server verwiesen.
 
@@ -272,7 +271,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit hybris an:
 1. Aktivieren Sie das Kontrollkästchen **Inkrementeller Import**.
 1. Klicken Sie auf **Katalog importieren**, um den Import zu starten.
 
-   Wenn abgeschlossen, können Sie die in AEM aktualisierten Daten überprüfen unter:
+   Nach Abschluss des Vorgangs können Sie die in AEM aktualisierten Daten überprüfen unter:
 
    ```
        /etc/commerce/products
@@ -308,7 +307,7 @@ Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung
 1. Aktivieren Sie das Kontrollkästchen **Express-Aktualisierung**.
 1. Klicken Sie auf **Katalog importieren**, um den Import zu starten.
 
-   Wenn abgeschlossen, können Sie die in AEM aktualisierten Daten überprüfen unter:
+   Nach Abschluss des Vorgangs können Sie die in AEM aktualisierten Daten überprüfen unter:
 
    ```
        /etc/commerce/products
@@ -375,14 +374,14 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Entfernen Sie das Produkt in der hybris-Konsole. Verwenden Sie die Option **Genehmigungsstatus** ändern, um den Status auf `unapproved` festzulegen. Das Produkt wird aus dem Live-Feed entfernt.
+1. Entfernen Sie das Produkt in der hybris-Konsole. Verwenden Sie die Option **Genehmigungsstatus ändern** , um den Status auf `unapproved` festzulegen. Das Produkt wird aus dem Live-Feed entfernt.
 
    Beispiel:
 
    * Öffnen Sie die Seite [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
-   * Wählen Sie den Katalog `Outdoors Staged`
+   * Wählen Sie den Katalog `Outdoors Staged` aus.
    * Suchen Sie nach `Cajamara`
-   * Wählen Sie dieses Produkt und ändern Sie den Genehmigungsstatus in `unapproved`
+   * Wählen Sie dieses Produkt aus und ändern Sie den Genehmigungsstatus in `unapproved`
 
 1. Führen Sie eine weitere inkrementelle Aktualisierung durch (siehe [Katalogimport](#catalog-import)). Im Protokoll wird das gelöschte Produkt aufgeführt.
 1. Führen Sie den [Rollout](/help/sites-administering/generic.md#rolling-out-a-catalog) für den entsprechenden Katalog durch. Das Produkt und die Produktseite wurden in AEM entfernt.
@@ -400,7 +399,7 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    * Das Produkt `Cajamara` wurde aus der Kategorie `Bike` entfernt
 
-1. So installieren Sie das Produkt erneut:
+1. So instanziieren Sie das Produkt:
 
    1. Ändern Sie in hybris den Genehmigungsstatus zurück in **Genehmigt**.
    1. In AEM:
@@ -415,7 +414,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
 
 1. Öffnen Sie die [Client Context-Designseite](/help/sites-administering/client-context.md) auf eine der folgenden Arten:
 
-   * Öffnen Sie eine Seite zur Bearbeitung und öffnen Sie dann den Clientkontext mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Designseite zu öffnen**.
+   * Öffnen Sie eine Seite zur Bearbeitung und öffnen Sie dann den Client-Kontext mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Designseite zu öffnen**.
    * Navigieren Sie direkt zu [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
 
 1. [Fügen Sie die Komponente **Auftragsverlauf** zur](/help/sites-administering/client-context.md#adding-a-property-component) Komponente **Warenkorb** von Client Context hinzu.
@@ -439,7 +438,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
    >
    >  Die Kampagne besteht aus einem Erlebnis.
    >
-   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
+   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html)).
       >
       >
    * Das Segment basiert auf der Eigenschaft **Order History Property**.
