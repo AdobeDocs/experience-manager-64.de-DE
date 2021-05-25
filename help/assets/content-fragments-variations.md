@@ -10,9 +10,8 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '1764'
@@ -78,7 +77,7 @@ Beispiel:
 
 Wenn Sie ein mehrzeiliges Textfeld bearbeiten, können Sie den Vollbild-Editor öffnen: 
 
-![cf-fullscreen-editor-icon](assets/cf-fullscreeneditor-icon.png)
+![cf-fullscreeneditor-icon](assets/cf-fullscreeneditor-icon.png)
 
 Der Vollbild-Editor bietet Folgendes:
 
@@ -89,7 +88,7 @@ Der Vollbild-Editor bietet Folgendes:
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
-* Wählen Sie das [Format](#formats) ([Rich Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown)).
+* Wählen Sie das [Format](#formats) ([Rich Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown)) aus.
 * [Textstatistiken anzeigen](#viewing-key-statistics)
 * [Inhalt hochladen](#uploading-content)
 * [Mit primärer Version synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
@@ -197,10 +196,10 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >
 >Andere Sprachen sind als Sprachmodellpakete über Software Distribution verfügbar:
 >
->* [Französisch (fr) aus Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Deutsch (de) aus Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Französisch (fr) von Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Deutsch (de) von Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Italienisch (it) von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spanisch (es) aus Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Spanisch (es) von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 >
 
@@ -275,7 +274,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 1. Positionieren Sie den Cursor über der Position, an der Sie das Bild hinzufügen möchten.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **[!UICONTROL Asset einfügen]**.
 
-   ![cf-insertAsset-icon](assets/cf-insertasset-icon.png)
+   ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
 
 1. In diesem Dialogfeld haben Sie folgende Möglichkeiten:
 
