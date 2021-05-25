@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 86cc01f0-b6c0-4beb-a203-96dc1989d8f0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 95%
 
 ---
-
 
 # Connector für EMC Documentum konfigurieren {#configuring-connector-for-emc-documentum}
 
@@ -28,7 +27,7 @@ Das Einrichten von Connector für EMC Documentum umfasst das Konfigurieren der S
 >
 >In früheren Versionen konnten Elemente in einem ECM-Repository gespeichert werden. In der aktuellen Version werden Elemente im systemeigenen AEM Forms-Repository gespeichert und die Repository Provider-Dienste werden nicht mehr unterstützt. Die Migration von Elementen aus einem ECM-Repository zum AEM Forms-Repository erfolgt, wenn Sie eine Aktualisierung auf AEM Forms vornehmen. Weitere Informationen hierzu finden Sie im AEM Forms-Aktualisierungshandbuch für Ihren Anwendungsserver.
 
-## Serververbindung konfigurieren {#configuring-the-server-connection}
+## Serververbindung konfigurieren  {#configuring-the-server-connection}
 
 In diesem Abschnitt werden die Aufgaben für Connector für EMC Documentum, den Sie auf der Seite „Konfigurationseinstellungen“ ausführen können, beschrieben.
 
@@ -62,11 +61,11 @@ Wenn Sie einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhal
 
 Sie können festlegen, welcher Repository Service Provider mit Documentum verwendet werden soll. Aufrufe des Repository-Dienstes werden an den konfigurierten Provider delegiert. Die folgenden Optionen sind verfügbar:
 
-**Name des aktuellen Repository Dienstleister:** Name des aktuellen Repository-Dienstleisters
+**Aktueller Repository Service Provider-Name:** Der Name des aktuellen Repository Service Providers
 
 **ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
 
-**Repository-Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository-Anbieter:** Legt den nativen Repository-Provider als Provider für das Repository fest.
 
 >[!NOTE]
 >
@@ -117,4 +116,3 @@ In Workspace sind einige manuelle Schritte erforderlich, um sicherzustellen, das
 1. Öffnen Sie in der Ansicht „Variablen“ die Eigenschaften der Variablen „theForm“ und ändern Sie den URI in den Pfad, in dem Sie die Datei „QueueSharing.swf“ in Schritt 5 abgelegt haben.
 1. Speichern Sie den Prozess.
 1. Migrieren Sie den Prozess gemäß den Richtlinien Ihres Unternehmens zur Produktionsumgebung.
-
