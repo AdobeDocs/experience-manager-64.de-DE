@@ -2,18 +2,17 @@
 title: Best Practices für effizientes Übersetzen von Assets
 description: Best Practices für die effiziente Verwaltung von Assets zur Synchronisation verschiedener übersetzter Versionen und zur Optimierung von Übersetzungs-Workflows.
 contentOwner: AG
-feature: Translation
+feature: Übersetzung
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '502'
 ht-degree: 98%
 
 ---
 
-
-# Bewährte Verfahren zur effizienten Übersetzung von Assets{#best-practices-for-translating-assets-efficiently}
+# Best Practices zur effizienten Übersetzung von Assets {#best-practices-for-translating-assets-efficiently}
 
 Adobe Experience Manager (AEM) Assets unterstützt mehrsprachige Workflows, um Binärdateien, Metadaten und Tags für digitale Assets in verschiedene Gebietsschemas zu übertragen und die übersetzten Assets zu verwalten. Details finden Sie unter [Mehrsprachige Assets](multilingual-assets.md).
 
@@ -48,4 +47,3 @@ Mittels gewisser Änderungen an Workflows und am Framework für die Übersetzung
 
 1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Deaktivieren Sie auf der Registerkarte „Assets“ die Option „Assets übersetzen“, um eine Übersetzung von Asset-Binärdateien auszuschließen. 
 1. Übersetzen Sie Asset-Metadaten/-Tags mithilfe [mehrsprachiger Asset-Workflows](multilingual-assets.md).
-
