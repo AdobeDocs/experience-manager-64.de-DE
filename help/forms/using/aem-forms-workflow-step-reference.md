@@ -6,14 +6,13 @@ seo-description: Der formularzentrierte Workflow in OSGi-Schritten ermöglicht d
 uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
-translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4561'
 ht-degree: 87%
 
 ---
-
 
 # Formularzentrierte Workflows in OSGi - Schritt-Referenz {#forms-centric-workflow-on-osgi-step-reference}
 
@@ -21,7 +20,7 @@ ht-degree: 87%
 
 Schritte für den Forms-Workflow führen AEM Forms-spezifische Vorgänge in einem AEM-Workflow durch. Diese Schritte ermöglichen das schnelle Erstellen adaptiver formularzentrierter Workflows auf OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- oder Genehmigungs-Workflows, interner und „across-the-firewall“-Geschäftsprozesse verwendet werden. Sie können die Forms-Workflow-Schritte außerdem verwenden, um Document Services zu starten, Adobe Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge auszuführen. Sie benötigen das [AEM Forms Add-On](https://www.adobe.com/go/learn_aemforms_documentation_63), um diese Schritte in einem Workflow zu verwenden.
 
-## Schritt „Aufgaben zuweisen“ {#assign-task-step}
+## Schritt „Aufgaben zuweisen“  {#assign-task-step}
 
 Der Schritt „Aufgaben zuweisen“ erstellt eine Aufgabe und weist sie einem Benutzer oder einer Gruppe zu. Zusammen mit der Zuweisung der Aufgabe gibt die Komponente außerdem das adaptive Formular oder die nicht interaktive PDF-Datei für die Aufgabe an. Das adaptive Formular ist erforderlich, damit die Benutzer Eingaben vornehmen können, und die nicht interaktive PDF-Datei oder ein schreibgeschütztes adaptives Formular wird in Workflows verwendet, die nur zur Prüfung dienen.
 
@@ -38,11 +37,11 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **Tage:** Die Anzahl der Tage, nach denen die Aufgabe abgeschlossen werden soll. Die Anzahl der Tage wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Tage im Feld „Tage“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Tagen ein Zeitüberschreitungshandler ausgelöst.
 * **Stunden:** Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Anzahl der Stunden wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Stunden im Feld „Stunden“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Stunden ein Zeitüberschreitungshandler ausgelöst.
 * **Zeitüberschreitung nach Fälligkeitsdatum:** Wählen Sie diese Option, um das Auswahlfeld „Zeitüberschreitungshandler“ zu aktivieren.
-* **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripten, die im CRX-Repository unter [apps]/fd/Dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl zur Verfügung. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
+* **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripte, die im CRX-Repository unter [apps]/fd/dashboard/scripts/timeoutHandler platziert wurden, stehen zur Auswahl zur Verfügung. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
 * **Markieren Sie Aktion und Kommentar aus der letzten Aufgabe in „Aufgabendetails“:** Wählen Sie diese Option, um die letzte ausgeführte Aktion und den Kommentar, der im Abschnitt „Aufgabendetail“ einer Aufgabe erhalten wurde, anzuzeigen.
 * **Typ:** Wählen Sie den Typ des Dokuments, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular oder ein nicht interaktives PDF-Dokument auswählen.
-* **Adaptives Formular verwenden:** Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das unter einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben.
-* **Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie im Feld &quot;Typ&quot;ein adaptives Formular oder eine schreibgeschützte Option für ein adaptives Formular in Verbindung mit der Option &quot;Absoluter Pfad&quot;im Feld &quot;Adaptives Formular verwenden&quot;verwenden.
+* **Adaptives Formular verwenden:** Geben Sie die Methode zum Suchen des adaptiven Formulars an. Sie können das adaptive Formular verwenden, das in einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable vom Typ String verwenden, um den Pfad anzugeben.
+* **Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie im Feld Typ ein adaptives Formular oder eine schreibgeschützte Option für ein adaptives Formular verwenden und im Feld Adaptives Formular verwenden die Option absoluter Pfad verwenden.
 * **PDF-Pfad:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Der Pfad ist immer relativ zur Payload. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
 * **Für abgeschlossene Aufgaben rendern Sie das adaptive Formular wie folgt**: Wenn eine Aufgabe als abgeschlossen markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument ausgeben. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **Vorab auszufüllende Angaben:** Die folgenden unten aufgeführten Felder dienen als Eingaben für die Aufgabe: 
@@ -52,7 +51,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 * **Gesendete Informationen:** Die folgenden Felder dienen als Ausgabespeicherorte für die Aufgabe:
 
-   * **Datendateipfad:** Pfad der Datendatei (.json oder .xml). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Der Pfad ist immer relativ zur Payload. Beispiel: [Payload_Directory]/Workflow/data, wobei data eine Datei ist.
+   * **Datendateipfad:** Pfad der Datendatei (.json oder .xml). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Der Pfad ist immer relativ zur Payload. Beispiel: [Payload_Directory]/Workflow/data, wobei Daten eine Datei sind.
    * **Anlagenpfad:** Pfad zum Speichern der Formularanlagen in einer Aufgabe.
    * **Datensatzdokumentpfad:** Pfad zum Speichern einer Datensatzdokumentdatei. Beispiel: [Payload_Directory]/DocumentofRecord/credit-card.pdf. Das Datensatzdokument wird nicht generiert, wenn das Feld „Pfad“ leer ist. Der Pfad ist immer relativ zur Payload.
 
@@ -99,19 +98,19 @@ Der E-Mail-Schritt verwendet den Day CQ Mail-Dienst Bevor Sie den E-Mail-Schritt
 
 **HTML-E-Mail-Vorlage**: HTML-Vorlage für die E-Mail. Sie können diese Variablen in einer E-Mail-Vorlage verwenden. Der E-Mail-Schritt extrahiert und zeigt alle Variablen an, die in einer Vorlage für Eingaben enthalten sind. 
 
-**Metadaten für E-Mail-Vorlagen: Der** Wert der Variablen für E-Mail-Vorlagen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Eigenschaft für Workflow-Metadaten sein.
+**E-Mail-Vorlagenmetadaten:** Der Wert der E-Mail-Vorlagenvariablen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor- oder Veröffentlichungs-Server, Bild oder eine Workflow-Metadateneigenschaft sein.
 
 * **Literal:** Verwenden Sie die Option, wenn Sie den genauen, zu spezifizierenden Wert kennen. Beispiel: [example@example.com](mailto:example@example.com).
 
 * **Workflow-Metadaten:** Verwenden Sie die Option, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird. Nachdem Sie die Option ausgewählt haben, geben Sie den Namen der Metadateneigenschaft in das leere Textfeld unter der Option „Workflow-Metadaten“ ein. Zum Beispiel emailAddress.
-* **Asset-URL:** Verwenden Sie die Option, um einen Weblink einer interaktiven Kommunikation mit der E-Mail einzubetten. Wählen Sie nach Auswahl der Option die einzubettende interaktive Kommunikation aus. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
+* **Asset-URL:** Mit der Option können Sie einen Web-Link einer interaktiven Kommunikation in die E-Mail einbetten. Nachdem Sie die Option ausgewählt haben, durchsuchen Sie die einzubettende interaktive Kommunikation und wählen Sie sie aus. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
 * **Bild:** Verwenden Sie die Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&amp;ast;&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.
 
-**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die  **** Literaloption aus, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abruf aus Workflow-** Metadaten&quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
+**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die  **** Literaloption aus, um eine E-Mail-Adresse manuell anzugeben, oder wählen Sie die Option  **Aus Workflow-** Metadaten abrufen , um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
 
 **Pfad für Dateianhang:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/
 
-**Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den ursprünglichen Dateinamen der Anlage in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **Von Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird.
+**Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den ursprünglichen Dateinamen des Anhangs in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **Von Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird.
 
 ## Schritt „Generieren von Datensatzdokument“{#generate-document-of-record-step}
 
@@ -119,9 +118,9 @@ Wenn ein Formular ausgefüllt oder eingereicht wird, können Sie das Formular in
 
 Der Schritt „Nachweisdokument“ hat die folgenden Eigenschaften:
 
-**Adaptives Formular** verwenden: Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das unter einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben.
+**Adaptives Formular verwenden**: Geben Sie die Methode an, um das adaptive Formular für die Eingabe zu suchen. Sie können das adaptive Formular verwenden, das in einem absoluten Pfad verfügbar ist, als Nutzlast an den Workflow übermittelt wird oder in einem Pfad verfügbar ist, der mithilfe einer Variablen berechnet wurde. Sie können eine Variable vom Typ String verwenden, um den Pfad anzugeben.
 
-**Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie im Feld &quot;Typ&quot;ein adaptives Formular oder eine schreibgeschützte Option für ein adaptives Formular in Verbindung mit der Option &quot;Absoluter Pfad&quot;im Feld &quot;Adaptives Formular verwenden&quot;verwenden.
+**Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie im Feld Typ ein adaptives Formular oder eine schreibgeschützte Option für ein adaptives Formular verwenden und im Feld Adaptives Formular verwenden die Option absoluter Pfad verwenden.
 
 **Pfad für Eingabedaten:** Pfad der Eingabedaten für das adaptive Formular. Sie können die Daten relativ zur Payload an einem Speicherort belassen oder einen absoluten Pfad für die Daten angeben. Die Eingabedaten werden mit dem adaptiven Formular zusammengeführt, um ein Datensatzdokument zu erstellen.
 
@@ -233,7 +232,7 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 * **Skript oder Dienst zur Auswahl von Unterzeichnern:** Die Option ist nur verfügbar, wenn die Option „Dynamisch“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Sie können ein ECMAScript oder einen Dienst angeben, um Unterzeichner und Überprüfungsoptionen für ein Dokument auszuwählen.
 
 * **Unterzeichnerdetails:** Die Option ist nur verfügbar, wenn die Option „Manuell“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Bestätigungsmechanismus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist.
-* **Statusvariable:** Ein Adobe Sign-aktiviertes Dokument speichert den Signaturstatus des Dokuments in einer Variablen. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData enthält den Status einer Variablen verfügbar.
+* **Statusvariable:** Ein Adobe Sign-aktiviertes Dokument speichert den Signaturstatus des Dokuments in einer Variablen. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData contains status of a variable verfügbar.
 * **Pfad für signiertes Dokument:** Geben Sie den Speicherort für die unterzeichneten Dokumente an. Sie können die Nutzdatendatei (Payload file) überschreiben oder das signierte Dokument an einem Speicherort innerhalb des Nutzdatenordners platzieren.
 
 ## Schritt „Document Services“{#document-services-steps}
@@ -261,7 +260,7 @@ Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScrip
 
 ### Schritt „PDF vom angegebenen Typ erstellen“  {#create-pdf-from-specified-type-step}
 
-Generiert ein PDF-Dokument aus einer Eingabedatei. Das Eingabe-Dokument kann relativ zur Nutzlast sein, einen absoluten Pfad haben oder selbst Nutzlast sein.
+Generiert ein PDF-Dokument aus einer Eingabedatei. Das Eingabedokument kann relativ zur Payload sein, einen absoluten Pfad haben oder selbst Payload sein.
 
 ### Schritt „PDF aus URL/HTML/ZIP erstellen“{#create-pdf-from-url-html-zip-step}
 
@@ -291,15 +290,15 @@ Führt die DDX-Datei in der angegebenen Zuordnung von Eingabedokumenten aus und 
 
 Optimiert PDF-Dateien durch Reduzierung ihrer Größe. Das Ergebnis dieser Konvertierung sind PDF-Dateien, die kleiner als ihre Originalversionen sein können. Bei diesem Vorgang werden außerdem PDF-Dokumente in die in den Optimierungsparametern angegebene PDF-Version konvertiert.
 
-Die Optimierungseinstellungen geben an, wie Dateien optimiert werden. Hier sind Beispieleinstellungen:
+In den Optimierungseinstellungen wird festgelegt, wie Dateien optimiert werden. Im Folgenden finden Sie Beispieleinstellungen:
 
-* Zielgruppe PDF-Version
-* Objekte wie JavaScript-Aktionen und eingebettete Seitenminiaturen verwerfen
+* Target PDF Version
+* Verwerfen von Objekten wie JavaScript-Aktionen und eingebetteten Seitenminiaturen
 * Verwerfen von Benutzerdaten wie Kommentaren und Dateianlagen
-* Ungültige oder nicht verwendete Einstellungen verwerfen
+* Verwerfen ungültiger oder nicht verwendeter Einstellungen
 * Komprimieren unkomprimierter Daten oder Verwenden effizienterer Komprimierungsalgorithmen
-* Entfernen von eingebetteten Schriftarten
-* Festlegen von Transparenzwerten
+* Entfernen eingebetteter Schriftarten
+* Transparenzwerte festlegen
 
 ### Schritt „PDF-Formular ausgeben“  {#render-pdf-form-step}
 
@@ -314,5 +313,4 @@ Verschlüsseln, signieren und zertifizieren Sie ein Dokument. AEM Forms unterst�
 Senden Sie ein Dokument direkt an einen Drucker. Der Dienst unterstützt die folgenden Druckerzugriffsmechanismen:
 
 * **Drucker mit direktem Zugriff**: Ein Drucker, der auf demselben Computer installiert ist, wird als Drucker mit direktem Zugriff und der Computer als Druckerhost bezeichnet. Dieser Druckertyp kann ein lokaler Drucker sein, der direkt an den Computer angeschlossen ist.
-* **Drucker mit indirektem Zugriff**: Der Drucker, der auf einem Druckserver installiert ist, steht für den Zugriff von anderen Computern zur Verfügung. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LDP-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP- oder Hostnamen des Druckservers an. Bei Verwendung dieses Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn im Netzwerk ein LP-Daemon ausgeführt wird. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, in dem ein LP-Daemon ausgeführt wird.
-
+* **Drucker mit indirektem Zugriff**: Der Drucker, der auf einem Druckserver installiert ist, steht für den Zugriff von anderen Computern zur Verfügung. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LDP-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP-Adresse oder den Hostnamen des Druckservers an. Bei Verwendung dieses Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn im Netzwerk ein LP-Daemon ausgeführt wird. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, in dem ein LP-Daemon ausgeführt wird.
