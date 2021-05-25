@@ -7,22 +7,21 @@ uuid: d51c3797-8227-41ed-88cd-c56cc129eb86
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: ba674a2d-7c78-430e-8e17-1a18619e71cb
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 7e37401a-8c63-4711-8a33-61e6bd4b419f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 89%
 
 ---
 
-
 # Trennzeichenkomponenten in adaptiven Formularen {#separator-component-in-adaptive-forms}
 
 Sie können die Trennzeichenkomponente verwenden, um Bereiche eines Formulars visuell zu trennen. Sie können die Gesamtdarstellung und den Stil einer Trennzeichenkomponente definieren, indem Sie die folgenden Eigenschaften einer Trennzeichenkomponente angeben:
 
 * **Elementname:** Gibt den Namen der Komponente an. Die SOM-Ausdrücke richten sich an die Komponenten mit dem Wert, der im Feld „Elementname“ angegeben ist.
-* **Stärke:** Gibt die Stärke der Trennzeichenkomponente in Pixel an.
+* **Stärke:** Gibt die Dicke der Trennzeichenkomponente in Pixel an.
 * **Colspan:** Gibt die Anzahl der Spalten an, die eine Trennzeichenkomponente umfasst.
 * **CSS-Klasse:** Gibt die benutzerdefinierte CSS-Klasse für die Trennzeichenkomponente an
 * **Inline-Stile:** Mit AEM Forms können Sie jetzt CSS-Inline-Stile auf individuelle adaptive Formularkomponenten anwenden und eine Vorschau der Änderungen in Echtzeit anzeigen.
@@ -35,5 +34,4 @@ Angeben der Eigenschaften einer Trennzeichenkomponente:
 1. Geben Sie im angrenzenden Feld einen gültigen Wert für die angegebene CSS3-Eigenschaft an. Beispielsweise **3px solid black**.
 1. Klicken Sie auf **Element hinzufügen**, um eine andere Eigenschaft und deren Wert anzugeben.
 1. Klicken Sie auf **Vorschau**, um eine Vorschau der Änderungen im Formular anzuzeigen.
-1. Klicken Sie auf **OK**, um die Änderungen zu bestätigen, oder auf **Abbrechen **Schließen, um das Dialogfeld ohne Änderungen zu verlassen.
-
+1. Klicken Sie auf **OK**, um die Änderungen zu bestätigen, oder auf **Abbrechen **um das Dialogfeld ohne Änderungen zu verlassen.
