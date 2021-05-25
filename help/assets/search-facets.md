@@ -2,16 +2,15 @@
 title: Suchfacetten
 description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
 contentOwner: AG
-feature: Search
+feature: Suchen
 role: Administrator,Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2538'
 ht-degree: 94%
 
 ---
-
 
 # Suchfacetten {#search-facets}
 
@@ -25,7 +24,7 @@ Zusammengefasst bieten Suchfacetten Ihnen die Möglichkeit, auf verschiedene Art
 
 Wenn Sie beispielsweise nach einem Bild suchen, können Sie auswählen, ob Sie ein Bitmap- oder ein Vektorbild möchten. Sie können die Suchergebnisse weiter eingrenzen, indem Sie den MIME-Typ für das Bild festlegen. Wenn Sie nach Dokumenten suchen, können Sie auf ähnliche Weise das gewünschte Format festlegen, z. B. PDF oder MS Word.
 
-## Hinzufügen einer Eigenschaft {#adding-a-predicate}
+## Hinzufügen einer Eigenschaft  {#adding-a-predicate}
 
 Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zugrunde liegenden Suchformular mithilfe von Prädikaten definiert. Um weitere oder andere Facetten anzuzeigen, fügen Sie dem standardmäßigen Formular Prädikate hinzu oder verwenden Sie ein benutzerdefiniertes Formular, das Facetten Ihrer Wahl enthält.
 
@@ -40,10 +39,10 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „V
 
    >[!NOTE]
    >
-   >So verwenden Sie die Ordnersuchfunktion aus der vorkonfigurierten **Asset Admin Search Rail** aus einer früheren AEM Version:
+   >Führen Sie die folgenden Schritte aus, um die Ordnersuchfunktion aus der vorkonfigurierten **Asset-Admin-Suchschiene** aus einer früheren AEM zu verwenden:
    > 
    >1. Navigieren Sie in CRX-DE zu */conf/global/settings/dam/search/facets/assets/jcr:content/items*.
-   >1. Löschen Sie den Knoten **type**.
+   >1. Löschen Sie den Knoten **type** .
    >1. Kopieren Sie aus dem Pfad */libs/settings/dam/search/facets/assets/jcr:content/items* die Knoten **asset, directory, typeor, excludepaths** und **searchtype** in den in Schritt 1 erwähnten Pfad.
    >1. Speichern Sie die Änderungen.
 
@@ -125,7 +124,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** den Pfad der JSON-Datei an, in der Sie die Knoten für die Optionen und entsprechende Schlüssel-Wert-Paare definiert haben.
-   * Tippen Sie auf ![Hinzufügen neben dem Feld Optionen, um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld Filter bereitstellen möchten. ](assets/do-not-localize/aem_assets_add_icon.png) Um eine weitere Option hinzuzufügen, tippen/klicken Sie auf das Symbol ![Hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
+   * Tippen Sie auf ![Symbol](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld &quot;Optionen&quot;, um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld &quot;Filter&quot;bereitstellen möchten. Um eine weitere Option hinzuzufügen, tippen/klicken Sie auf ![Symbol hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
@@ -151,7 +150,7 @@ Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Asset
 
 ## Hinzufügen eines Tag-Prädikats  {#adding-a-tags-predicate}
 
-Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AEM Assets sucht standardmäßig nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. AEM Assets sucht standardmäßig nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
 1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
@@ -168,9 +167,9 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AE
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 
-   ![AEM Vorschlag beim Eingeben des Namens des Tags](assets/chlimage_1-419.png)
+   ![AEM Vorschlag bei der Eingabe des Namens des Tags](assets/chlimage_1-419.png)
 
-   AEM Vorschlag beim Eingeben des Namens des Tags
+   AEM Vorschlag bei der Eingabe des Namens des Tags
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
@@ -206,7 +205,7 @@ Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass
 Führen Sie die folgenden Schritte aus, um die standardmäßige Suchfacette wiederherzustellen:
 
 1. Wählen Sie **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** aus.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]** ![deleteinnerhalb](assets/deleteoutline.png).
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]** ![Löschen-Umriss](assets/deleteoutline.png) .
 1. Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Löschen]**, um die benutzerdefinierten Änderungen zu entfernen.
 
    Nach dem Löschen der benutzerdefinierten Anpassungen der Suchfacetten wird das Sperrsymbol vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** erneut angezeigt.
@@ -218,12 +217,12 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 | Aktion | Berechtigungen |
 |---|---|
 | [!UICONTROL Bearbeiten] | Lese- und Schreibberechtigungen für den Knoten /apps in CRX |
-| [!UICONTROL Löschen] | Berechtigungen zum Lesen, Schreiben und Löschen auf dem Knoten /apps in CRX |
-| [!UICONTROL Vorschau] | Berechtigungen zum Lesen, Schreiben und Löschen auf dem Knoten /var/dam/content in CRX. Lesen und Schreiben von Berechtigungen auf dem Knoten /apps. |
+| [!UICONTROL Löschen] | Lese-, Schreib- und Löschberechtigungen für den Knoten /apps in CRX |
+| [!UICONTROL Vorschau] | Lese-, Schreib- und Löschberechtigungen für den Knoten /var/dam/content in CRX. Außerdem Lese- und Schreibberechtigungen für den Knoten /apps . |
 
 >[!MORELIKETHIS]
 >
->* [Assets-Suche erweitern](searchx.md)
->* [Suchen nach Assets](search-assets.md)
->* [Suchen nach Video-Assets](search-video-assets.md)
+>* [Erweitern der Asset-Suche](searchx.md)
+* [Suchen nach Assets](search-assets.md)
+* [Suchen nach Video-Assets](search-video-assets.md)
 
