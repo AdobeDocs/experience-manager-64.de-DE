@@ -1,26 +1,25 @@
 ---
 title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
 seo-title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
-description: Verwenden des Rich-Text-Editors zum Erstellen von Text in AEM.
-seo-description: Verwenden des Rich-Text-Editors zum Erstellen von Text in AEM.
+description: Verwenden des Rich-Text-Editors, um Text in AEM zu erstellen.
+seo-description: Verwenden des Rich-Text-Editors, um Text in AEM zu erstellen.
 uuid: d8dc5989-7a1c-4bab-88fd-040c2c9aa69f
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
-translation-type: tm+mt
-source-git-commit: f1026e4dc9e12f760509a706a92888b90c9af395
+exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 33%
 
 ---
 
-
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#using-the-rich-text-editor-to-author-content}
 
-Der Rich Text Editor (RTE) ist ein einfacher Baustein für das Authoring von Text in AEM Seiten. Viele Komponenten wie Text, Text und Bild sowie Tabelle basieren auf RTE.
+Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Textbearbeitung in AEM Seiten. Viele Komponenten wie Text, Text und Bild sowie Tabelle basieren auf dem RTE.
 
 >[!NOTE]
 >
@@ -28,17 +27,17 @@ Der Rich Text Editor (RTE) ist ein einfacher Baustein für das Authoring von Tex
 
 ## Bearbeitung im Kontext {#in-place-editing}
 
-Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klick auswählen, wird die [Komponenten-Symbolleiste](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) eingeblendet.
+Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klicken auswählen, wird die [Komponenten-Symbolleiste](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) angezeigt.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Durch erneutes Tippen/Klicken oder durch Auswahl der Komponente mit einem langsamen Tippen/Klicken auf wird die ersetzende Bearbeitung geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und die Formatierung ändern.
+Durch erneutes Tippen/Klicken oder erstmaliges Auswählen der Komponente mit langsamem Doppeltippen/Klicken wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und die Formatierung ändern.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
 Diese Symbolleiste beinhaltet die folgenden Optionen:
 
-* **Format**: Legen Sie die Formatierung &quot;Fett&quot;, &quot;Kursiv&quot;und &quot;Unterstrichen&quot;fest.
+* **Format**: Formatierung &quot;Fett&quot;, &quot;Kursiv&quot;und &quot;Unterstrichen&quot;festlegen.
 
 * **Listen**: Erstellen Sie Listen mit Aufzählungszeichen oder Nummerierungen oder legen Sie den Einzug fest.
 
@@ -54,11 +53,11 @@ Diese Symbolleiste beinhaltet die folgenden Optionen:
 
 ## Vollbildbearbeitung {#full-screen-editing}
 
-Bei textbasierten Komponenten wird durch Auswahl des Vollbildmodus in der Symbolleiste der Rich-Text-Editor geöffnet und der Rest des Seiteninhalts ausgeblendet.
+Bei textbasierten Komponenten wird durch Auswahl des Vollbildmodus in der Symbolleiste der Rich-Text-Editor geöffnet und der restliche Seiteninhalt ausgeblendet.
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-Im Vollbildmodus werden alle Optionen Ihres Rich-Text-Editors angezeigt, die von Ihrem Administrator konfiguriert wurden. Diese können je nach der von den Administratoren oder AEM Entwicklern bereitgestellten Konfiguration von AEM Instanzen [abweichen. ](../sites-administering/rich-text-editor.md) Wenn eine Option fehlt, bitten Sie Ihren Administrator, sie zur Verfügung zu stellen.
+Der Vollbildmodus zeigt alle Optionen Ihres Rich-Text-Editors an, die von Ihrem Administrator konfiguriert wurden. Diese können je nach AEM von Instanzen [abhängig von der Konfiguration](../sites-administering/rich-text-editor.md) variieren, die von den Administratoren oder AEM Entwicklern bereitgestellt wird. Wenn eine Option fehlt, bitten Sie Ihren Administrator, sie verfügbar zu machen.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -69,6 +68,6 @@ Zusätzliche Optionen für den Rich-Text-Editor sind:
 * **Text zentrieren**
 * **Text rechts ausrichten**
 
-Klicken Sie auf das Symbol &quot;Minimieren&quot;, um den Vollbildmodus zu schließen.
+Um den Vollbildmodus zu schließen, klicken Sie auf das Symbol &quot;Minimieren&quot;.
 
 ![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
