@@ -8,19 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Korrespondenzverwaltung
+exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 96%
 
 ---
 
-
 # Eogenschaften der Correspondence Management-Konfiguration {#correspondence-management-configuration-properties}
 
-Um diese Eigenschaften zu konfigurieren, öffnen Sie die folgende URL in einem Browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` und wählen Sie **Correspondence Management-Konfigurationen**.
+Um diese Eigenschaften zu konfigurieren, öffnen Sie die folgende URL in einem Browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` und wählen Sie **Correspondence Management-Konfigurationen** aus.
 
 Correspondence Management verfügt über die folgenden Konfigurationseigenschaften:
 
@@ -244,7 +243,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr> 
   <tr> 
    <td><p>URL für CM-Benutzerelemente</p> </td> 
-   <td><p>URL des Ordners mit allen Correspondence Management-Benutzerelementen</p> </td> 
+   <td><p>URL des Ordners, der alle Correspondence Management-Benutzer-Assets enthält</p> </td> 
    <td><p>—</p> </td> 
    <td><p>Zulässiger Ordnerpfad</p> </td> 
   </tr> 
@@ -256,7 +255,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr> 
   <tr> 
    <td><p>Briefcache aktivieren</p> </td> 
-   <td><p>Briefcache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung   <code>in-memory </code> Cache.</p> </td> 
+   <td><p>Briefcache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung   <code>in-memory </code> zwischenspeichern.</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
