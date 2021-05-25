@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
-translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+exl-id: 637ec80e-320f-4cf7-b09a-9f3cbf47bb63
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 91%
 
 ---
 
-
-# Mustertypen von ContextHub-UI-Modulen  {#sample-contexthub-ui-module-types}
+# Mustertypen von ContextHub-UI-Modulen   {#sample-contexthub-ui-module-types}
 
 ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden bereitgestellt:
 
@@ -116,7 +115,7 @@ Das Benutzeroberflächenmodul contexthub.datetime zeigt das Datum und die Uhrzei
 
 Das Modul enthält ein Popover-Formular, mit dem Sie Datum und Uhrzeit im Store ändern können.
 
-Die Quelle des Moduls &quot;contexthub.datetime&quot;befindet sich unter /libs/granite/contexthub/components/modules/datetime.
+Die Quelle des Benutzeroberflächenmoduls contexthub.datetime befindet sich unter /libs/granite/contexthub/components/modules/datetime.
 
 ### Konfiguration {#configuration-2}
 
@@ -230,7 +229,7 @@ Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen 
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Die Quelle des UI-Moduls befindet sich unter /libs/granite/contexthub/components/modules/Profil.
+Die Quelle des UI-Moduls befindet sich unter /libs/granite/contexthub/components/modules/profile.
 
 ### Konfiguration {#configuration-7}
 
