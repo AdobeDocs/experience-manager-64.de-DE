@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2a790f7d-03a1-4f60-a59e-0a5f15c44fa5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 98%
 
 ---
-
 
 # Weiterleiten von Launches{#promoting-launches}
 
@@ -37,7 +36,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 
 >[!CAUTION]
 >
->Bei Promotions von Launches für *geänderte* Seiten werden Anpassungen sowohl im Quell- als auch im Launch-Zweig berücksichtigt.
+>Beim Weiterleiten von Launches für *geänderte* Seiten werden Anpassungen sowohl im Quell- als auch im Launch-Zweig berücksichtigt.
 
 ## Weiterleiten von Launch-Seiten {#promoting-launch-pages}
 
@@ -66,7 +65,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
    * die Konsole **Launches**:
 
       1. Wählen Sie den Launch aus (indem Sie auf die Miniatur tippen/klicken).
-      1. Wählen Sie **Bewerben**.
+      1. Wählen Sie **Bewerben** aus.
 
 
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
@@ -89,7 +88,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. Wählen Sie **Bewerben**.
+1. Wählen Sie **Bewerben** aus.
 
 ## Weiterleiten von Launch-Seiten bei der Bearbeitung   {#promoting-launch-pages-when-editing}
 
@@ -101,7 +100,7 @@ Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch
 >
 >Diese Option steht für einzelne und [verschachtelte Launches](#promoting-a-nested-launch) zur Verfügung.
 
-## Weiterleiten eines verschachtelten Launches    {#promoting-a-nested-launch}
+## Weiterleiten eines verschachtelten Launches   {#promoting-a-nested-launch}
 
 Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an jede der Quellen weiterleiten, auch an die Stammquelle (Produktion).
 
@@ -114,7 +113,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
    * **Ziel der Promotion**
 
-      Sie können für eine beliebige Quelle werben.
+      Sie können an eine beliebige Quelle weiterleiten.
 
    * **Bereich** Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. In der Standardkonfiguration werden nur Seitenänderungen für die aktuelle Seite weitergeleitet:
 
@@ -151,4 +150,3 @@ Um einen Workflow automatisch zu starten, wenn Seiten weitergeleitet werden, [ko
 Sie können z. B. automatisch Seitenaktivierungsanfragen generieren, wenn Autoren Launches-Seiten weiterleiten. Konfigurieren Sie einen Workflow-Starter, um den Workflow zur Anfrageaktivierung zu starten, wenn der Paketknoten geändert wird.
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
-
