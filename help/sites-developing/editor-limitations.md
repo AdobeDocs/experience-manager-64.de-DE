@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
-translation-type: tm+mt
-source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
+exl-id: ce860880-5954-4f72-8ec6-60209c1ec659
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 94%
 
 ---
 
-
 # Editor-Einschränkungen{#editor-limitations}
 
 Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
 
-## Funktionale Einschränkungen  {#functional-limitations}
+## Funktionale Einschränkungen   {#functional-limitations}
 
 Autoren sehen sich bei der Arbeit mit dem Editor zur Bearbeitung von Seiten möglicherweise mit den folgenden funktionalen Einschränkungen konfrontiert.
 
@@ -60,7 +59,7 @@ Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie 
 
 100 % Höhe wird im Hauptteilelement einer Seite nicht unterstützt.
 
-* Eine Umgehung ist möglich, um einen Vollbildkörper zu implementieren, indem das Textelement wie folgt &quot;gestreckt&quot;wird:
+* Eine Umgehung ist möglich, um einen Vollbildtext zu implementieren, indem das Hauptteilelement wie folgt &quot;gestreckt&quot;wird:
 
 ```xml
 body {
@@ -84,4 +83,3 @@ body:before, body:after{
     display: table;
 }
 ```
-
