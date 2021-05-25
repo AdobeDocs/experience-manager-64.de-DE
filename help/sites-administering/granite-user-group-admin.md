@@ -2,7 +2,7 @@
 title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 seo-title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
-feature: Security
+feature: Sicherheit
 seo-description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
@@ -11,7 +11,6 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: bd29e81d-eb4a-4764-96f2-84e091836a8a
-translation-type: tm+mt
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
 source-wordcount: '937'
@@ -23,7 +22,7 @@ ht-degree: 84%
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation umfasst, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-Diese Konten bilden die Basis der [AEM Konten](/help/sites-administering/security.md) und alle mit der Granite-Verwaltung vorgenommenen Kontoänderungen werden angezeigt, wenn/wenn auf die Konten über die [AEM Konsole Benutzer](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) zugegriffen wird (z.B. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
+Diese Konten bilden die Grundlage für die [AEM Konten](/help/sites-administering/security.md) und alle mit der Granite-Verwaltung vorgenommenen Kontoänderungen werden angezeigt, wenn/wenn auf die Konten über die [AEM Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) zugegriffen wird (z. B. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
 
 Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools-Konsole](/help/sites-administering/tools-consoles.md)** der Touch-optimierten Benutzeroberfläche verfügbar:
 
@@ -76,7 +75,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Kennwortwdh.**
 
-      Dies ist obligatorisch, da es für die Bestätigung des Passworts erforderlich ist.
+      Dies ist obligatorisch, da dies für die Bestätigung des Kennworts erforderlich ist.
 
    * **Vorname**
    * **Nachname**
@@ -106,11 +105,11 @@ StatusSie können das Konto entweder als
 
    * **Benutzer zu Gruppen hinzufügen**
 
-      Verwenden Sie das Dropdownmenü Auswahl, um Gruppen auszuwählen, denen der Benutzer angehören soll. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Verwenden Sie das Dropdown-Menü Auswahl , um Gruppen auszuwählen, denen der Benutzer angehören soll. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
    * **Gruppen**
 
-      Eine Liste von Gruppen, zu denen der Benutzer zurzeit gehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste der Gruppen, denen der Benutzer derzeit angehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie das Benutzerkonto definiert haben:
@@ -197,11 +196,11 @@ StatusSie können das Konto entweder als
 
    * **Mitglieder zu Gruppe hinzufügen**
 
-      Verwenden Sie das Dropdownmenü Auswahl, um Benutzer auszuwählen, die der Gruppe hinzugefügt werden sollen. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Verwenden Sie das Dropdown-Menü Auswahl , um Benutzer auszuwählen, die der Gruppe hinzugefügt werden sollen. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
    * **Gruppenmitglieder**
 
-      Eine Liste von Benutzern in der Gruppe. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste der Benutzer in der Gruppe. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie die Gruppe definiert haben:
 
@@ -223,7 +222,7 @@ StatusSie können das Konto entweder als
 
 1. Das Formular **Gruppeneinstellungen bearbeiten** wird geöffnet.
 
-   Die Gruppen-ID ist mit der ursprünglichen ID identisch, mit dem Präfix `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
+   Die Gruppen-ID entspricht der ursprünglichen, jedoch mit dem Präfix `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
 
    Sie können nun die Details wie unter [Hinzufügen neuer Gruppen](#adding-a-new-group) bearbeiten.
 
