@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
 
 ---
 
-
 # E-Mail-Marketing{#e-mail-marketing}
 
 >[!NOTE]
 >
->Adobe plant nicht, die offenen/abgeschnittenen E-Mails, die vom AEM SMTP-Dienst gesendet werden, weiter zu verbessern.\
->Die Empfehlung lautet: [Leverage-Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md).
+>Adobe plant keine weitere Verbesserung von offenen/nicht zugestellten E-Mails, die vom AEM SMTP-Dienst gesendet werden.\
+>Es wird empfohlen, [Adobe Campaign und seine AEM-Integration](/help/sites-administering/campaign.md) zu nutzen.
 
 E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue für die Newsletter spezifische Inhalte hinzufügen.
 
@@ -46,7 +45,7 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 >
 >Sollten Sie E-Mail-Dienste aktualisieren, einen Testlauf durchführen oder einen Newsletter verschicken wollen, schlagen diese Aktionen fehl, wenn der Newsletter nicht zunächst in der Veröffentlichungsinstanz veröffentlicht wurde oder wenn diese Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
-## Erstellen eines Newsletter-Erlebnisses {#creating-a-newsletter-experience}
+## Erstellen eines Newsletter-Erlebnisses  {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -98,7 +97,7 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 
    * **Standard-Empfängerliste**
 
-      Standardmäßige Liste, die den Newsletter erhalten soll.
+      Standardliste, die den Newsletter erhalten soll.
    Sie können in größerem Umfang im Dialogfeld **Eigenschaften...** aktualisiert werden.
 
 1. Klicken Sie zum Speichern auf **OK**.
@@ -146,7 +145,7 @@ So personalisieren Sie einen Newsletter und simulieren das Erscheinungsbild:
 
 >[!NOTE]
 >
->Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `http://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand von Newslettern die OSGi-Konfiguration für Day CQ Link Externalizer unter `http://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -229,7 +228,7 @@ Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Lis
 
 >[!NOTE]
 >
->Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `http://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand von Newslettern die OSGi-Konfiguration für Day CQ Link Externalizer unter `http://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -257,7 +256,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
 
 1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken Sie auf **Senden**, um den Newsletter dann tatsächlich zu versenden.
 
-   ![mcm_newslettersendverify](assets/mcm_newslettersendconfirm.png)
+   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -285,7 +284,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken Sie auf **Senden**, um den ausgewählten Newsletter an die angegebene Liste der Leads zu senden.
 
-   ![mcm_newslettersenddialog_firm](assets/mcm_newslettersenddialog_confirmation.png)
+   ![mcm_newslettersenddialog_validation](assets/mcm_newslettersenddialog_confirmation.png)
 
    Ihr Newsletter wird an die angegebenen Empfänger gesendet.
 
@@ -302,4 +301,3 @@ Gehen Sie folgendermaßen vor, um einen Newsletter zu abonnieren (als Beispiel w
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. Geben Sie in dem Feld **Registrieren** in dem Geometrixx-Newsletter Ihre E-Mail-Adresse ein und klicken Sie auf **Registrieren**. Sie haben nun den Newsletter abonniert.
-
