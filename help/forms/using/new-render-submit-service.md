@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 24ece56a-fc59-410f-b38a-46637c4dc45e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 83%
 
 ---
 
-
-# Neuer Wiedergabe- und Sendedienst {#new-render-and-submit-service}
+# Neuer Wiedergabe- und Sendedienst  {#new-render-and-submit-service}
 
 ## Einführung {#introduction}
 
@@ -87,7 +86,7 @@ Ausgabe - `runtimeMap`
 
 Ausgabe - `outputDocument`
 
-Der Prozess setzt `outputDocument`auf das `inputDocument`aus `taskContext` abgerufene Element.
+Der Prozess setzt `outputDocument`auf den `inputDocument`aus `taskContext` abgerufenen Wert.
 
 ## Standardmäßige Wiedergabe- oder Sendeprozesse und Aktionsprofile {#default-render-or-submit-processes-and-action-profiles}
 
@@ -110,7 +109,7 @@ Dieser Prozess sendet ein XDP-Formular nahtlos auf mehreren Plattformen. Er ruft
 Browser nehmen allmählich die Unterstützung für NPAPI-basierte Plug-ins zurück. Das betrifft auch Zusatzmodule für Adobe Acrobat und Adobe Reader. Sie können die Wiedergabe mobiler Formulare von PDF in HTML folgendermaßen ändern:
 
 1. Melden Sie sich bei Workbench mit gültigen Benutzerdaten an.
-1. Wählen Sie **Datei** > **Anwendungen abrufen**.
+1. Wählen Sie **File** > **Get Applications**.
 
    Das Dialogfeld „Anwendungen abrufen“ wird angezeigt.
 
@@ -118,8 +117,8 @@ Browser nehmen allmählich die Unterstützung für NPAPI-basierte Plug-ins zurü
 1. Öffnen Sie den Prozess, für den Sie die Wiedergabe ändern möchten.
 1. Öffnen Sie den/die zielgerichtete/n Startpunkt/Aufgabe, navigieren Sie zum Abschnitt für Präsentation und Daten und klicken Sie auf **Aktionsprofile verwalten**.
 
-   Das Dialogfeld &quot;Profil verwalten&quot;wird angezeigt.
-1. Ändern Sie die standardmäßigen Render-Profil-Konfigurationen von PDF in HTML und klicken Sie auf **OK**.
+   Das Dialogfeld &quot;Aktionsprofile verwalten&quot;wird angezeigt.
+1. Ändern Sie die standardmäßigen Render-Profilkonfigurationen von PDF in HTML und klicken Sie auf **OK**.
 1. Checken Sie den Prozess ein.
 1. Wiederholen Sie diese Schritte, um die Wiedergabe für andere Prozesse zu ändern.
 1. Stellen Sie die Anwendung für die geänderten Prozesse.
@@ -141,23 +140,23 @@ Einige häufig gestellte Fragen zu Aktionsprofilen lauten wie folgt:
 
 Sowie entsprechende Sendeprozesse.
 
-![gen_Frage_b_20](assets/gen_question_b_20.png) **Welche Profile stehen standardmäßig zur Verfügung?**
+![gen_Frage_b_20](assets/gen_question_b_20.png) **Welche Aktionsprofile sind standardmäßig verfügbar?**
 
 Für XDP-Formulare:
 
 * Standard (Wiedergabe/Senden mithilfe der neuen &quot;Default Render/Submit&quot;-Prozesse)
 
-![gen_Question_b_20](assets/gen_question_b_20.png) **Was muss der Prozessentwickler tun, damit das Formular auf einem Gerät in HTML und auf einem Desktop in PDF wiedergegeben werden kann?**
+![gen_Frage_b_20](assets/gen_question_b_20.png) **Was muss der Prozessentwickler tun, damit das Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?**
 
 Nichts. Das Standardaktionsprofil wird automatisch ausgewählt und der Renderingmodus wird ebenfalls automatisch berücksichtigt.
 
-![gen_Question_b_20](assets/gen_question_b_20.png) **Was muss getan werden, damit das Formular auf einem Desktop in HTML wiedergegeben werden kann?**
+![gen_Frage_b_20](assets/gen_question_b_20.png) **Was muss getan werden, um die Wiedergabe des Formulars in HTML auf einem Desktop zu ermöglichen?**
 
 Der Benutzer muss das HTML-Optionsfeld für das Standardprofil auswählen.
 
-![gen_Question_b_20](assets/gen_question_b_20.png) **Wird sich eine Aktualisierung auf die Änderung des Verhaltens des Profils der Standardaktion auswirken?**
+![gen_Frage_b_20](assets/gen_question_b_20.png) **Wird sich ein Upgrade auf die Änderung des Verhaltens des Standard-Aktionsprofils auswirken?**
 
-Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sendedienste unterschiedlich waren, werden sie als Anpassung der vorhandenen Formulare behandelt. Wenn Sie auf **[!UICONTROL Standardwerte wiederherstellen]** klicken, werden stattdessen die standardmäßigen Wiedergabe- und Sendedienste festgelegt.
+Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sendedienste unterschiedlich waren, werden sie als Anpassung der vorhandenen Formulare behandelt. Beim Klicken auf **[!UICONTROL Standardangaben wiederherstellen]** werden stattdessen die standardmäßigen Wiedergabe- und Sendedienste festgelegt.
 
 Wenn Sie die vorhandenen Wiedergabe- oder Sendedienste für PDF-Formulare geändert oder benutzerdefinierte Dienste (z. B. custom1) erstellt haben und nun dieselbe Funktion für die HTML-Wiedergabe verwenden möchten. Sie müssen den neuen Wiedergabe- oder Sendedienst (z. B. custom2) replizieren und ähnliche Anpassungen anwenden. Ändern Sie nun das Aktionsprofil für Ihre XDP, um custom2-Dienste anstelle von custom1-Diensten zum Wiedergeben oder Senden zu verwenden.
 
