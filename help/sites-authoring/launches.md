@@ -1,6 +1,6 @@
 ---
-title: Übersicht über Starts
-seo-title: Übersicht über Starts
+title: Launches - Übersicht
+seo-title: Launches - Übersicht
 description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 seo-description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 99%
 
 ---
 
-
-# Starts - Übersicht{#launches}
+# Launches - Übersicht{#launches}
 
 Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln.
 
@@ -124,4 +123,3 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 1. Tippen/klicken Sie auf den entsprechenden Launch. Die Liste der möglichen Aktionen wird angezeigt:
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
