@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 8421a092-6e99-4c05-9647-c0cc76667c85
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 87%
 
 ---
 
-
 # Arbeiten mit der Autorenumgebung{#working-with-the-author-environment}
 
 >[!NOTE]
 >
->Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zum Authoring in der modernen, berührungsempfindlichen Benutzeroberfläche finden Sie in der [Standard-Authoring-Dokumentation](/help/assets/assets.md).
+>Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zum Authoring in der modernen, Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/assets/assets.md).
 
 In der Autorenumgebung können Sie folgende Aufgaben ausführen:
 
-* [Authoring](/help/sites-authoring/author.md) (einschließlich  [Seitenberechnung und ](/help/sites-authoring/qg-page-authoring.md) Verwaltung von  [Assets](/help/assets/assets.md))
+* [Authoring](/help/sites-authoring/author.md)  (einschließlich  [Seitenbearbeitung ](/help/sites-authoring/qg-page-authoring.md) und  [Asset-Verwaltung](/help/assets/assets.md))
 
 * [Verwaltungsaufgaben](/help/sites-administering/administer-best-practices.md), die Sie für die Erstellung und Verwaltung des Inhalts auf Ihrer Website benötigen
 
@@ -39,7 +38,6 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * Sie wurde für die Nutzung auf Desktop-Geräten entwickelt.
    * Sie wird nicht weiterentwickelt.
    * Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zu Bearbeitungsmöglichkeiten in der neueren, Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md).
-
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Touch-optimierte Benutzeroberfläche
@@ -47,13 +45,10 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * Dies ist die moderne standardmäßige Benutzeroberfläche von AEM.
    * Sie ist überwiegend in Grau gehalten und zeichnet sich durch ihre klare und minimalistische Gestaltung aus.
    * Sie wurde sowohl für Touch- als auch für Desktop-Geräte entwickelt (für Touch optimiert). Das Erscheinungsbild ist auf allen Geräten identisch, obwohl das [Anzeigen und Auswählen Ihrer Ressourcen](/help/sites-authoring/basic-handling.md) etwas unterschiedlich aussehen kann (Tippen bzw. Klicken).  
-   * Weitere Informationen zum Authoring mit der touchbasierten Benutzeroberfläche finden Sie in der [Standard-Authoring-Dokumentation](/help/sites-authoring/author.md). Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
+   * Weitere Informationen zum Erstellen mithilfe der Touch-basierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung von Inhalten](/help/sites-authoring/author.md). Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
 
    * Desktop:
-
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Tablets (oder Desktop mit einer Breite von weniger als 1024 Pixeln):
-
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
-
