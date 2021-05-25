@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 98%
 
 ---
-
 
 # Nach Prozessinstanzen suchen{#searching-for-process-instances}
 
@@ -24,7 +23,7 @@ Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer
 
 Sie können grundlegende Kriterien zur Durchführung einer allgemeinen Suche eingeben, spezifische Attribute zur Durchführung einer Detailsuche oder eine Kombination aus grundlegenden Kriterien und spezifischen Attributen zur Durchführung einer kombinierten Suche.
 
-## Eine allgemeine Suche durchführen {#perform-a-general-search}
+## Eine allgemeine Suche durchführen  {#perform-a-general-search}
 
 Eine allgemeine Suche nach einem Prozess eignet sich optimal, wenn Sie die Prozess-ID der Prozessinstanz kennen, wenn Sie versuchen, eine Gruppe verwandter Prozessinstanzen zu finden oder wenn nur wenige Prozessinstanzen ausgeführt werden.
 
@@ -52,13 +51,13 @@ Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Det
    * Geben Sie in das Feld „Wert“ einen dem ausgewählten Attribut entsprechenden Wert ein.
 
 1. Klicken Sie zum Hinzufügen einer weiteren Zeile auf „Mehr Filter“. Ein weiterer Satz von „Attribut“-, „Filter“- und „Wert“-Listen sowie die Liste „Bedingung“ werden angezeigt.
-1. Wählen Sie unter „Bedingung“ UND oder ODER. Wiederholen Sie die Schritte 1 bis 3, um die Suche weiter einzuschränken.
+1. Wählen Sie unter „Bedingung“ UND oder ODER. Wiederholen Sie die Schritte 1 bis 3 nach Bedarf, um die Suche weiter einzuschränken.
 1. Klicken Sie zum Hinzufügen oder Löschen von Zeilen auf „Mehr Filter“ oder „Weniger Filter“. Es können eine bis vier Zeilen verwendet werden.
 1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
 [Informationen zum Status von Prozessinstanzen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Eine kombinierten Suche nach einem Prozess durchführen  {#perform-a-combined-search-for-a-process}
+## Eine kombinierten Suche nach einem Prozess durchführen {#perform-a-combined-search-for-a-process}
 
 Um eine Suche zu erstellen, die sowohl auf einer allgemeinen als auch auf einer Detailsuche basiert, wobei beide Bereiche durch ein implizites UND verknüpft sind, geben Sie die Suchkriterien auf der Seite „Prozesssuche“ in die beiden Bereiche „Allgemeine Suche“ und „Detailsuche“ ein.
 
