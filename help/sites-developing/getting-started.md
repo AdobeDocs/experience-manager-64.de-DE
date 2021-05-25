@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
-translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+exl-id: 82554eb8-34a0-4877-b92c-56ee662dda97
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 84%
 
 ---
 
-
-# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial {#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Überblick {#overview}
 
@@ -28,9 +27,9 @@ In diesem mehrteiligen Tutorial lernen Entwickler, die gerade mit AEM beginnen, 
 
 ## WKND-Entwickler-Tutorial {#wknd-developer-tutorial}
 
-Das Tutorial steht [hier](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) zur Verfügung oder klicken Sie auf das folgende Bild.
+Das Tutorial ist [hier](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) verfügbar, oder klicken Sie auf das folgende Bild.
 
-[![Bild klicken](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+[![Klickbild](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ## Grundlegende Konzepte {#core-concepts}
 
@@ -39,11 +38,11 @@ Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von
 * [HTL](https://helpx.adobe.com/de/experience-manager/htl/user-guide.html)
 * [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch-optimierte Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
 
 Wir empfehlen Ihnen, das Tutorial durchzugehen, bevor Sie sich mit diesen Konzepten ausführlicher beschäftigen.
 
 ## Nächste Schritte {#next-steps}
 
-Wenn Sie das [Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) abgeschlossen haben, sollten Sie das Dokument [AEM Kernkonzepte](/help/sites-developing/the-basics.md) überprüfen, um ein besseres Verständnis einiger der zugrunde liegenden Technologien und Entwicklungsparadigmen von AEM zu erhalten.
+Wenn Sie das [Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) abgeschlossen haben, sollten Sie das Dokument [AEM Core Concepts](/help/sites-developing/the-basics.md) lesen, um ein besseres Verständnis der zugrunde liegenden Technologien und Entwicklungsparadigmen von AEM zu erhalten.
