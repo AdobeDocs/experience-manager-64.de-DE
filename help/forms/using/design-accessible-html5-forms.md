@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: ccc59dd5-c0cf-415a-b71a-5bc0cf452ede
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 64d8cf2c-8180-49ce-a725-48cd03476fb8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 89%
 
 ---
 
-
 # Entwerfen barrierefreier HTML5-Formulare {#designing-accessible-html-forms}
 
-Für HTML5-Formulare wird der ARIA-HTML5-Standard für Barrierefreiheit verwendet, um die HTML-Formulare barrierefrei zu gestalten. Diese Formulare unterstützen Registerkartennavigation (außer Mozilla Firefox) und sind zertifiziert für ihre Kompatibilität mit üblichen Bildschirmlesehilfen. Um ein HTML5-Formular mit guten Barrierefreiheitsfunktionen zu erstellen, entwerfen Sie die XFA-Formularvorlage basierend auf einigen [grundlegenden Entwurfsrichtlinien](/help/forms/using/best-practices-for-html5-forms.md). Die Entwurfsrichtlinien umfassen das Konfigurieren der richtigen Registerkartenreihenfolge und die Bereitstellung des Sprechtext-Inhalts für jedes Formularsteuerelement. AEM Forms Designer unterstützt die Einstellung dieser Formularsteuerelementattribute zum Generieren eines barrierefreien PDF- und HTML5-Formulars.
+Für HTML5-Formulare wird der ARIA-HTML5-Standard für Barrierefreiheit verwendet, um die HTML-Formulare barrierefrei zu gestalten. Diese Formulare unterstützen Registerkartennavigation (außer Mozilla Firefox) und sind zertifiziert für ihre Kompatibilität mit üblichen Bildschirmlesehilfen. Um ein HTML5-Formular mit Barrierefreiheitsfunktionen zu generieren, entwerfen Sie die XFA-Formularvorlage anhand einiger [grundlegender Richtlinien für die Entwicklung](/help/forms/using/best-practices-for-html5-forms.md). Die Entwurfsrichtlinien umfassen das Konfigurieren der richtigen Registerkartenreihenfolge und die Bereitstellung des Sprechtext-Inhalts für jedes Formularsteuerelement. AEM Forms Designer unterstützt die Einstellung dieser Formularsteuerelementattribute zum Generieren eines barrierefreien PDF- und HTML5-Formulars.
 
 *Hinweis: Die Registerkartennavigation deckt keine geschützten Felder ab, wie etwa Berechnungsfelder, die Wertesummen anzeigen. Damit die Bildschirmlesehilfe den Wert eines geschützten Felds liest, platzieren Sie ein leeres schreibgeschütztes Feld entweder auf oder neben dem geschützten Feld. Weisen Sie den Wert des geschützten Feldes dem neuen schreibgeschützten Feld zu. Die Bildschirmlesehilfe oder die Registerkartennavigation können dieses schreibgeschützte Feld erfassen und als Wert des geschützten Felds wiedergeben.*
 
