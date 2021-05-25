@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 99%
 
 ---
 
-
-# Bearbeiten des Seiteninhalts{#editing-page-content}
+# Bearbeiten des Seiteninhalts {#editing-page-content}
 
 Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
@@ -37,7 +36,7 @@ Beim Sidekick handelt es sich um ein wichtiges Tool für die Bearbeitung von Sei
 Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
 * Komponenten 
-* Seite
+* Seite 
 * Informationen
 * Versionierung
 * Workflow
@@ -62,7 +61,7 @@ Diese bieten Zugriff auf eine Vielzahl von Funktionen, zu denen unter anderem fo
 
 * [Strukturvorlagen](/help/sites-authoring/scaffolding.md)
 
-* [Client-Kontext](/help/sites-administering/client-context.md)
+* [ClientContext](/help/sites-administering/client-context.md)
 
 ## Einfügen einer Komponente {#inserting-a-component}
 
@@ -174,7 +173,7 @@ Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kont
 
 Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
-* [Multi-Site-Management](/help/sites-administering/msm.md); auch in Verbindung mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance)
+* [Multi-Site-Management](/help/sites-administering/msm.md); auch in Kombination mit [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launch](/help/sites-classic-ui-authoring/classic-launches.md) (wenn er auf Live Copy basiert).
 * Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
@@ -203,7 +202,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 [Anmerkungen](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) bieten anderen Autoren die Möglichkeit Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau   {#previewing-pages}
+## Anzeigen einer Seitenvorschau  {#previewing-pages}
 
 Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von Bedeutung:
 
@@ -295,7 +294,7 @@ Die können die folgenden Arten von Seitenbearbeitungen rückgängig machen bzw.
 * Hinzufügen, Bearbeiten, Entfernen und Verschieben von Absätzen
 * Bearbeitung von Absatzinhalten im Kontext
 * Kopieren, Ausschneiden und Einfügen von Elementen innerhalb einer Seite
-* Kopieren, Ausschneiden und Einfügen von Elementen über Seiten hinweg
+* Kopieren, Ausschneiden und Einfügen von Elementen auf Seiten
 * Hinzufügen, Entfernen und Ändern von Bildern
 * Hinzufügen, Entfernen und Ändern von Anmerkungen und Zeichnungen
 * Änderungen an Grundlage
@@ -307,4 +306,3 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 >[!NOTE]
 >
 >Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der zuständige Administrator kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.
-
