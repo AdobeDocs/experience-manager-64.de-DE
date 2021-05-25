@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
-translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+exl-id: 42d8472d-0eab-4cf9-a7c3-bf2775ee6bec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 90%
 
 ---
 
-
-# Anzeigen zusätzlicher Daten in der ToDo-Liste {#displaying-additional-data-in-todo-list}
+# Anzeigen zusätzlicher Daten in der ToDo-Liste  {#displaying-additional-data-in-todo-list}
 
 Standardmäßig zeigt die ToDo-Liste von A AEM Forms Workspace den Anzeigenamen und die Beschreibung von Aufgaben an. Sie können jedoch andere Informationen wie Erstellungsdatum und Termin hinzufügen. Sie können auch Symbole hinzufügen und den Stil der Anzeige ändern.
 
@@ -123,7 +122,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
 
 ## Definieren von CSS für die neue Eigenschaft  {#defining-css-for-the-new-property}
 
-1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wird.
+1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die zu `/apps/ws/css/newStyle.css` hinzugefügt wird.
 
    Fügen Sie beispielsweise ein:
 
@@ -144,7 +143,7 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
    * von: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
-1. hinzufügen Sie die neuen Informationen auf `/apps/ws/js/runtime/templates/task.html`.
+1. Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/task.html` hinzu.
 
    Fügen Sie beispielsweise unter `div class="taskProperties"` hinzu:
 
