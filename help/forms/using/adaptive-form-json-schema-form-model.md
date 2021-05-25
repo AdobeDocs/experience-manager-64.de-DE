@@ -7,15 +7,14 @@ uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 81%
 
 ---
-
 
 # Erstellen adaptiver Formulare mithilfe des JSON-Schemas {#creating-adaptive-forms-using-json-schema}
 
@@ -26,9 +25,9 @@ Für das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularm
 * [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md)
 * [JSON-Schema](https://json-schema.org/) 
 
-## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
+## Verwenden eines JSON-Schemas als Formularmodell   {#using-a-json-schema-as-form-model}
 
-AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das verwendete JSON-Schema sollte mit [v4-Spezifikationen](https://json-schema.org/draft-04/schema) konform sein.
+AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte [v4-Spezifikationen](https://json-schema.org/draft-04/schema) entsprechen.
 
 Die Haupteigenschaften bei der Verwendung eines JSON-Schemas sind wie folgt:
 
@@ -47,7 +46,7 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <th><strong>Komponente des adaptiven Formulars</strong></th> 
   </tr> 
   <tr> 
-   <td><p>Zeichenfolgeneigenschaften mit Einschränkungen für enum und enumNames.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
+   <td><p>Zeichenfolgeneigenschaften mit Enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td><p>Dropdown-Komponente:</p> 
     <ul> 
      <li>Die in enumNames aufgeführten Werte werden im Dropdown-Feld angezeigt.</li> 
@@ -93,17 +92,17 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
 
 Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfügbare Informationen zugeordnet. Führen Sie insbesondere die folgenden Aufgaben aus:
 
-* Die Eigenschaft title dient als Bezeichnung für die Komponenten des adaptiven Formulars.
-* Die Eigenschaft description wird als lange Beschreibung für eine Komponente des adaptiven Formulars festgelegt.
-* Die Standardeigenschaft dient als Ausgangswert eines adaptiven Formularfelds.
-* Die maxLength-Eigenschaft wird als maxlength-Attribut der Textfeldkomponente festgelegt.
-* Die Eigenschaften &quot;minimum&quot;, &quot;maximum&quot;, &quot;excludeMinimum&quot;und &quot;exclusiveMaximum&quot;werden für die Komponente &quot;Numeric box&quot;verwendet.
-* Zur Unterstützung des Bereichs für die DatePicker-Komponente werden zusätzliche JSON-Schema-Eigenschaften minDate und maxDate bereitgestellt.
-* Die Eigenschaften minItems und maxItems beschränken die Anzahl der Elemente/Felder, die einer Bereichskomponente hinzugefügt oder daraus entfernt werden können.
-* Die Eigenschaft readOnly legt das Attribut readonly einer Komponente des adaptiven Formulars fest.
-* Die erforderliche Eigenschaft kennzeichnet das Feld für das adaptive Formular als obligatorisch, während im Falle des Bereichs (bei dem der Typ ein Objekt ist) die endgültigen gesendeten JSON-Daten Felder mit leerem Wert haben, die diesem Objekt entsprechen.
+* Die Eigenschaft title dient als Beschriftung für die Komponenten des adaptiven Formulars.
+* Die Eigenschaft &quot;description&quot;wird als lange Beschreibung für eine Komponente eines adaptiven Formulars festgelegt.
+* Die Standardeigenschaft dient als Anfangswert eines adaptiven Formularfelds.
+* Die Eigenschaft maxLength wird als Attribut maxLength der Textfeldkomponente festgelegt.
+* Die Eigenschaften &quot;minimum&quot;, &quot;maximum&quot;, &quot;exclusiveMinimum&quot;und &quot;exclusiveMaximum&quot;werden für die Komponente &quot;Numeric box&quot;verwendet.
+* Um den Bereich für die DatePicker-Komponente zu unterstützen, werden zusätzliche JSON-Schema-Eigenschaften minDate und maxDate bereitgestellt.
+* Mit den Eigenschaften minItems und maxItems wird die Anzahl der Elemente/Felder beschränkt, die zu einer Bedienfeldkomponente hinzugefügt oder daraus entfernt werden können.
+* Die Eigenschaft readOnly legt das schreibgeschützte Attribut einer adaptiven Formularkomponente fest.
+* Die erforderliche Eigenschaft markiert das Feld im adaptiven Formular als obligatorisch, während im Falle eines Bedienfelds (wobei der Typ &quot;Objekt&quot;ist) die endgültigen gesendeten JSON-Daten Felder mit leerem Wert aufweisen, die diesem Objekt entsprechen.
 * Die pattern-Eigenschaft wird als Überprüfungsmuster (regulärer Ausdruck) im adaptiven Formular festgelegt.
-* Die Erweiterung der JSON-Schema-Datei muss .Schema.json beibehalten werden. Beispiel: &lt;filename>.Schema.json.
+* Die Erweiterung der JSON-Schemadatei muss .schema.json beibehalten werden. Beispiel: &lt;filename>.schema.json.
 
 ## JSON-Beispielschema {#sample-json-schema}
 
@@ -287,9 +286,9 @@ Im Folgenden finden Sie ein Beispiel eines JSON-Schemas.
 }
 ```
 
-### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
+### Wiederverwendbare Schemadefinitionen  {#reusable-schema-definitions}
 
-Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schema-Definitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
+Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
 
 ```
 {
@@ -320,7 +319,7 @@ Das obige Beispiel definiert einen Kundendatensatz, bei dem jeder Kunde über ei
 
 ## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen  {#pre-configuring-fields-in-json-schema-definition}
 
-Mit der Eigenschaft **aem:afProperties** können Sie das JSON-Schema vorkonfigurieren, um es einer benutzerdefinierten adaptiven Formularkomponente zuzuordnen. Ein Beispiel wird unten angezeigt:
+Sie können die Eigenschaft **aem:afProperties** verwenden, um das JSON-Schema-Feld so zu konfigurieren, dass es einer benutzerdefinierten adaptiven Formularkomponente zugeordnet wird. Ein Beispiel wird unten angezeigt:
 
 ```
 {
@@ -459,4 +458,3 @@ Es gibt zwei Optionen:
 
 * Blättern Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden
-
