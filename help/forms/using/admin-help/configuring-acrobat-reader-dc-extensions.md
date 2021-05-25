@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 3609ad29-f5b4-4426-8bbc-7c2e38f9b140
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
 
 ---
-
 
 # Konfigurieren von Acrobat Reader DC Extensions für die Datenerfassung {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
@@ -26,7 +25,7 @@ Wenn Benutzer Ihrer AEM Forms-Installation die Datenerfassungsfunktion von Conte
 
 Für die Datenerfassung ist es erforderlich, dass eine Benutzerrolle für den Zugriff auf „SampleReaderExtensionsCredential“ zugewiesen wird. Sie können die Standardrolle „Vertrauensadministrator“ zuweisen, sollten dabei allerdings bedenken, dass diese Rolle allgemeinen, nicht administrativen Benutzern die umfassenden Administratorberechtigungen gewährt, mit denen die PKI-Vertrauenseinstellungen gesteuert und PKI-Berechtigungen verwaltet werden, wodurch die Sicherheit Ihrer AEM Forms-Installation in einer Produktionsumgebung gefährdet werden kann. Es empfiehlt sich, dass der AEM Forms-Systemadministrator eine Rolle erstellt, die nur schreibgeschützten Zugriff auf den Trust Store gewährt, und diese neue Rolle nicht administrativen Benutzern zuweist, die die Datenerfassung verwenden.
 
-## Neue Rolle für Datenerfassungsbenutzer erstellen {#create-a-role-for-data-capture-users}
+## Neue Rolle für Datenerfassungsbenutzer erstellen  {#create-a-role-for-data-capture-users}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Rollenverwaltung“ und dann auf „Neue Rolle“.
 1. Geben Sie in den entsprechenden Feldern den Rollennamen (z. B. „Datenerfassungsbenutzer“) und eine Beschreibung ein und klicken Sie dann auf „Weiter“.
@@ -40,4 +39,3 @@ Für die Datenerfassung ist es erforderlich, dass eine Benutzerrolle für den Zu
 1. Klicken Sie auf der Registerkarte „Rollenbenutzer/-gruppen“ auf „Benutzer/Gruppen suchen“.
 1. Klicken Sie im Bildschirm „Benutzer/Gruppen suchen“ auf „Suchen“, wählen Sie die Benutzer aus, die die Datenerfassungsbenutzerrolle benötigen, und klicken Sie auf „OK“.
 1. Klicken Sie im Bildschirm „Rolle bearbeiten“ auf „Speichern“.
-
