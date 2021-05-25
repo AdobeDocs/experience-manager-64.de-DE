@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 8aed1439-aa39-4f75-909b-6a7ad7840a08
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
 
 ---
-
 
 # Endpunkte hinzufügen aktivieren, ändern oder entfernen {#adding-enabling-modifying-or-removing-endpoints}
 
@@ -33,17 +32,17 @@ Endpunkte können nur Diensten hinzugefügt werden. Ein Endpunkt kann nicht selb
 1. Wählen Sie auf der Registerkarte „Endpunkte“ in der Liste den hinzuzufügenden Endpunkttyp und klicken Sie auf „Hinzufügen“.
 1. Je nach Endpunkttyp müssen weitere Endpunkteinstellungen konfiguriert werden.
 
-   [Einstellungen für Endpunkte des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+[Einstellungen für Endpunkte des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-   [E-Mail-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+[E-Mail-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-   [Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+[Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-   [Remoting-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+[Remoting-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Klicken Sie auf „Hinzufügen“.
 
-## Endpunkt aktivieren oder deaktivieren {#enable-or-disable-an-endpoint}
+## Endpunkt aktivieren oder deaktivieren  {#enable-or-disable-an-endpoint}
 
 Standardmäßig sind neue Endpunkte automatisch aktiviert. Wenn Sie aber einen Endpunkt deaktiviert haben, müssen Sie ihn aktivieren, damit er funktionsfähig ist.
 
@@ -74,4 +73,3 @@ Diese Aufgabe kann auch auf der Seite „Dienstverwaltung“ durchgeführt werde
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
 1. Aktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu entfernenden Endpunkt und klicken Sie auf „Entfernen“. Der Endpunkt wird nicht mehr angezeigt.
-
