@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
-translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+exl-id: d7617d8a-b9b1-4a55-a8b7-4bdf90fd6905
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
-
 
 # Anpassung des Seiten-Authorings{#customizing-page-authoring}
 
@@ -28,7 +27,7 @@ AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seite
 
 * Clientlibs 
 
-   Mit clientlibs können Sie die Standardimplementierung erweitern, um neue Funktionen zu realisieren, während Sie die Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen können Sie Ihre eigene clientlib unter `/apps.` erstellen. Die neue clientlib muss:
+   Clientlibs ermöglichen es Ihnen, die Standardimplementierung zu erweitern, um neue Funktionen zu realisieren und gleichzeitig die Standardfunktionen, -objekte und -methoden wiederzuverwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter `/apps.` erstellen. Die neue clientlib muss:
 
    * die Authoring-clientlib`cq.authoring.editor.sites.page`   als Abhängigkeit aufweisen
    * der entsprechenden `cq.authoring.editor.sites.page.hook`-Kategorie angehören
@@ -49,7 +48,7 @@ Diese Funktionen können auf verschiedene Arten verwendet werden, um die Seiten-
 >
 >* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md) für Details zu den strukturellen Bereichen, die beim Seiten-Authoring verwendet werden.
 
 >
@@ -64,7 +63,7 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
@@ -72,11 +71,11 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 
 Wenn Sie eine Seite bearbeiten, gibt es verschiedene verfügbare [Modi](/help/sites-authoring/author-environment-tools.md#page-modes). Diese Modi werden mithilfe von [Ebenen](/help/sites-developing/touch-ui-structure.md#layer) implementiert. Sie ermöglichen Zugriff auf verschiedene Funktionen für denselben Seiteninhalt. Die Standardebenen sind: Bearbeiten, Vorschau, Anmerken, Entwickler und Targeting.
 
-### Ebenenbeispiel: Live Copy-Status {#layer-example-live-copy-status}
+### Ebenenbeispiel: Live Copy-Status  {#layer-example-live-copy-status}
 
 Eine Standard-AEM-Instanz stellt die MSM-Ebene bereit. Diese Ebene greift auf Daten für [Multi-Site-Management](/help/sites-administering/msm.md) zu und hebt sie in der Ebene hervor.
 
-Um es in Aktion zu sehen, können Sie jede [We.Retail-Sprachkopie](/help/sites-developing/we-retail-globalized-site-structure.md) Seite (oder jede andere Live-Kopierseite) bearbeiten und den Modus **Live-Kopierstatus** auswählen.
+Um es in Aktion zu sehen, können Sie jede [We.Retail-Sprachkopie](/help/sites-developing/we-retail-globalized-site-structure.md)-Seite (oder jede andere Live Copy-Seite) bearbeiten und den Modus **Live Copy-Status** auswählen.
 
 Sie finden die MSM-Ebenendefinition (als Referenz) in:
 
@@ -88,9 +87,9 @@ Dies ist ein Beispielpaket, das die Erstellung einer neuen Ebene (Modus) zeigt. 
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-authoring-new-layer-mode project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+* [Öffnen Sie das Projekt aem-authoring-new-layer-mode auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip) herunter.
 
 ## Hinzufügen einer neuen Auswahl-Kategorie zum Asset-Browser {#add-new-selection-category-to-asset-browser}
@@ -103,18 +102,18 @@ Der Asset-Browser zeigt Assets verschiedener Arten und Kategorien (z. B. Bilder
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-authoring-extension-assetfinder-flickr project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+* [Öffnen Sie das Projekt aem-authoring-extension-assetfinder-flickr auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip) herunter.
 
 ## Filtern von Ressourcen {#filtering-resources}
 
 Beim Authoring von Seiten muss der Benutzer oft aus verschiedenen Ressourcen (z. B. Seiten, Komponenten, Assets usw.) auswählen. Dabei kann beispielsweise eine Liste verwendet werden, aus der der Autor ein Element auswählen muss.
 
-Um die Größe der Liste (auf die relevanten Einsatzszenarios) zu beschränken, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
+Um die Größe der Liste (auf die relevanten Einsatzszenarios) zu beschränken, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
 
-* Implementieren Sie die benutzerdefinierte Prognose durch Implementierung der [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html)-Schnittstelle.
+* Implementieren Sie das benutzerdefinierte Prädikat durch Implementierung der [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html)-Schnittstelle.
 * Geben Sie einen Namen für die Eigenschaft an und verwenden Sie diesen Namen, wenn Sie `pathbrowser` verwenden.
 
 Weitere Details zum Erstellen einer benutzerdefinierten Eigenschaft finden Sie in [diesem Artikel](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -135,7 +134,7 @@ Jede Komponente hat (in der Regel) eine Symbolleiste, die Zugriff auf eine Reihe
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen Sie das Projekt aem-authoring-extension-toolbar-screenshot auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip) herunter.
@@ -161,7 +160,7 @@ Bei der Standardinstallation von AEM:
 
          * property: `editorType`
 
-            Definiert den Typ des Inline-Editors, der verwendet wird, wenn die ersetzende Bearbeitung für diese Komponente ausgelöst wird; z. B. `text`, `textimage`, `image`, `title`.
+            Definiert den Typ des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird; z. B. `text`, `textimage`, `image`, `title`.
 
 1. Weitere Einstellungen des Editors können mit einem `config`-Knoten, der Konfigurationen enthält, sowie einem weiteren `plugin`-Knoten mit notwendigen Plug-in-Konfigurationsdetails konfiguriert werden.
 
@@ -213,18 +212,18 @@ So erstellen Sie einen neuen integrierten Editor (innerhalb Ihrer clientlib):
 
 #### Codebeispiel zum Erstellen eines neuen integrierten Editors  {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` ist ein Beispielpaket, das zeigt, wie Sie einen neuen ersetzenden Editor in AEM erstellen.
+`aem-authoring-extension-inplace-editor` ist ein Beispielpaket, das zeigt, wie ein neuer Editor für die Bearbeitung im Kontext in AEM erstellt wird.
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-authoring-extension-place-editor project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* [Öffnen Sie das Projekt aem-authoring-extension-inplace-editor auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip) herunter.
 
 #### Konfigurieren mehrerer Editoren für Bearbeitung im Kontext {#configuring-multiple-in-place-editors}
 
-Es ist möglich, eine Komponente so zu konfigurieren, dass sie über mehrere integrierte Editoren verfügt. Wenn mehrere integrierte Editoren konfiguriert sind, können Sie den entsprechenden Inhalt auswählen und den entsprechenden Editor öffnen. Weitere Informationen finden Sie in der Dokumentation [Mehrere ersetzende Editoren konfigurieren](/help/sites-developing/multiple-inplace-editors.md).
+Es ist möglich, eine Komponente so zu konfigurieren, dass sie über mehrere integrierte Editoren verfügt. Wenn mehrere integrierte Editoren konfiguriert sind, können Sie den entsprechenden Inhalt auswählen und den entsprechenden Editor öffnen. Weitere Informationen finden Sie in der Dokumentation [Konfigurieren mehrerer Editoren für Bearbeitung im Kontext](/help/sites-developing/multiple-inplace-editors.md) .
 
 ## Hinzufügen einer neuen Seitenaktion {#add-a-new-page-action}
 
@@ -236,18 +235,18 @@ So fügen Sie eine neue Aktion zur Seitensymbolleiste hinzu, z. B. eine Aktion 
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-authoring-extension-header-backtosites project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+* [Öffnen Sie das Projekt aem-authoring-extension-header-backtosites auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip) herunter.
 
 ## Anpassen des Aktivierungsanfrage-Workflows {#customizing-the-request-for-activation-workflow}
 
 Der standardmäßige Workflow **Aktivierungsanfrage** wird automatisch ausgelöst, wenn ein Inhaltsautor nicht über die erforderlichen Replikationsrechte verfügt.
 
-Um bei einer solchen Aktivierung ein benutzerdefiniertes Verhalten zu haben, können Sie den Arbeitsablauf **Anforderung auf Aktivierung** überlagern:
+Um bei dieser Aktivierung ein benutzerdefiniertes Verhalten zu erzielen, können Sie den Workflow **Aktivierungsanfrage** überlagern:
 
-1. In der `/apps`-Überlagerung wird der Assistent **Sites** ausgeführt:
+1. Überlagern Sie in `/apps` den Assistenten **Sites**:
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -257,6 +256,5 @@ Um bei einer solchen Aktivierung ein benutzerdefiniertes Verhalten zu haben, kö
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. Aktualisieren Sie nach Bedarf das [Workflow-Modell](/help/sites-developing/workflows-models.md) und die zugehörigen Konfigurationen/Skripten.
-1. Entfernen Sie die Rechte an der [ `replicate`-Aktion](/help/sites-administering/security.md#actions) von allen entsprechenden Benutzern für alle relevanten Seiten. , damit dieser Workflow als Standardaktion ausgelöst wird, wenn ein Benutzer versucht, eine Seite zu veröffentlichen (oder zu replizieren).
-
+1. Aktualisieren Sie das [Workflow-Modell](/help/sites-developing/workflows-models.md) und die zugehörigen Konfigurationen/Skripte nach Bedarf.
+1. Entfernen Sie das Recht auf die Aktion [ `replicate` ](/help/sites-administering/security.md#actions) von allen entsprechenden Benutzern für alle relevanten Seiten. , damit dieser Workflow als Standardaktion ausgelöst wird, wenn ein Benutzer versucht, eine Seite zu veröffentlichen (oder zu replizieren).
