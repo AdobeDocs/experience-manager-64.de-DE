@@ -7,16 +7,15 @@ uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: f07e3786-d396-47de-83cb-fc7afc423d09
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1452'
 ht-degree: 90%
 
 ---
 
-
-# Mitarbeiterrekrutierung Referenz-Website-Umgehungslösung {#employee-recruitment-reference-site-walkthrough}
+# Mitarbeiterrekrutierung Referenz-Website-Umgehung {#employee-recruitment-reference-site-walkthrough}
 
 ## Voraussetzung {#prerequisite}
 
@@ -24,7 +23,7 @@ Richten Sie die Referenz-Websites ein wie in [Einrichten und Konfigurieren von 
 
 ## Überblick {#overview}
 
-We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Referenz-Website-Portal ermöglicht. Die Organisation nutzt das Portal auch zur Verwaltung der Terminplanung, der Kurzliste und der internen Kommunikation der Kandidaten. Die Website verwaltet Folgendes:
+We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Referenz-Website-Portal ermöglicht. Die Organisation nutzt das Portal auch zur Verwaltung der Terminplanung, der Kursauswahl und der internen Kommunikation der Kandidaten. Die Website verwaltet Folgendes:
 
 * Personen, die nach Arbeit suchen und sich bewerben
 * Vorauswahl und engere Auswahl von Bewerbern
@@ -37,12 +36,12 @@ We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Refe
 >
 >Anwendungsfälle für Mitarbeiterrekrutierung sind sowohl auf We.Finance- als auch auf We.Gov-Referenz-Websites verfügbar. Die in den Anleitungen verwendeten Beispiele, Bilder und Beschreibungen beziehen sich auf die We.Finance-Referenz-Website. Sie können diese Anwendungsfälle jedoch auch mit We.Gov ausführen und dort Artefakte überprüfen. Ersetzen Sie dazu in den genannten URLs **we-finance** durch **we-gov**.
 
-### Enthaltene Workflow-Modelle {#workflow-models-involved}
+### Enthaltene Workflow-Modelle  {#workflow-models-involved}
 
 Der Anwendungsfall für die Mitarbeiterrekrutierung enthält zwei Workflows:
 
-* Vor dem Interview - Wir finanzieren den Arbeitsablauf für die Einstellung von Mitarbeitern
-* Nach dem Interview - Wir finanzieren den Arbeitsablauf für die Einstellung von Mitarbeitern nach dem Interview
+* Vor dem Vorstellungsgespräch - Workflow für die Mitarbeiterrekrutierung in We Finance
+* Nach dem Vorstellungsgespräch - Workflow &quot;We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch&quot;
 
 Diese Workflows werden in AEM erstellt und sind verfügbar unter:
 
@@ -52,13 +51,13 @@ Diese Workflows werden in AEM erstellt und sind verfügbar unter:
 
 Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung“ in diesem Dokument dargestellt.
 
-![we-finance-employee-werbung-workflow](assets/we-finance-employee-recruiting-workflow.png)
+![we-finance-employee-rekruting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
 #### Workflow „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“{#we-finance-employee-recruiting-post-interview-workflow}
 
 Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“ in diesem Dokument dargestellt.
 
-![we-finance-employee-rekruting-post-interviewworkflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-rekruting-post-interview-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personen {#personas}
 
@@ -73,11 +72,11 @@ Das Szenario schließt folgende Personen ein:
 
 Sarah Rose sucht nach einem Stellenangebot im Unternehmen. Sie besucht sein Webportal und schaut sich die Stellenangebote an, die auf der Jobseite aufgeführt sind. Sie findet eine passende Ausschreibung und bewirbt sich.
 
-![home-page](assets/home-page.png)
+![Homepage](assets/home-page.png)
 
 Startseite von We.Finance
 
-![laufbahn-page](assets/career-page.png)
+![Berufsseite](assets/career-page.png)
 
 Jobseite von We.Finance
 
@@ -123,7 +122,7 @@ Gloria, die Personalverantwortliche, erhält das vorausgewählte Profil als Aufg
 
 Glorias AEM-Posteingang
 
-![gloriaschedulesinterview](assets/gloriaschedulesinterview.png)
+![gloriaschedulesview](assets/gloriaschedulesinterview.png)
 
 Gloria genehmigt Sarah Rose für ein Vorstellungsgespräch
 
@@ -145,7 +144,7 @@ John Doe erhält die Aufgabe der Planung eines Gesprächs in seinem Posteingang.
 
 John Does AEM-Posteingang
 
-![johndoeschedulinterview](assets/johndoescheduleinterview.png)
+![johndoescheduleinterview](assets/johndoescheduleinterview.png)
 
 John Doe plant das Gespräch und sendet die Details an Sarah Rose
 
@@ -153,7 +152,7 @@ John Doe plant das Gespräch und sendet die Details an Sarah Rose
 
 Sarah Rose erhält die E-Mail mit zeitlichen Angaben, Ort und weiteren Details. Sie klickt auf „Accept“ (Akzeptieren), um ihr Einverständnis mit Zeit und Ort für das Gespräch zu geben. Anhand dieser genauen Informationen kommt Sarah zum Vorstellungsgespräch.
 
-![sarahroadenterviewemail](assets/sarahroseinterviewemail.png)
+![sarahrowterviewemail](assets/sarahroseinterviewemail.png)
 
 Sarah Rosé erhält den Zeitplan für das Vorstellungsgespräch
 
@@ -165,7 +164,7 @@ Nachdem Sarah Rose erfolgreich in den Vorstellungsgesprächen war, öffnet die P
 
 Glorias AEM-Posteingang
 
-![Gloriarioselektor](assets/gloriariosselectcandidate.png)
+![gloriarioselektierender Kandidat](assets/gloriariosselectcandidate.png)
 
 Gloria Rios wählt Sarah Rose nach den Gesprächen aus
 
@@ -187,11 +186,11 @@ Sarah Rose erhält eine E-Mail mit der Benachrichtigung, dass zur Bearbeitung ih
 
 Sarah klickt auf den Link „Provide Details“ (Details hinzufügen) in der E-Mail. Ein Formular wird angezeigt. Sarah füllt die fehlenden Angaben zu bisheriger Tätigkeit und Ausbildung wie von John Doe gefordert aus und klickt auf „Submit“ (Senden).
 
-![additionalinformationen1](assets/additionalinformation1.png)
+![additionalinformation1](assets/additionalinformation1.png)
 
 Sarah öffnet das Formular für zusätzliche Informationen, indem sie auf den Link in der E-Mail klickt.
 
-![Zusätzliche Informationen2](assets/additionalinformation2.png)
+![additionalinformation2](assets/additionalinformation2.png)
 
 Sarah füllt die fehlenden Angaben wie von John Doe gefordert aus und klickt auf „Submit“ (Senden)
 
@@ -227,19 +226,19 @@ John Doe erhält in seinem AEM-Postfach eine Anforderung zum Senden des Anstellu
 
 John Does AEM-Posteingang
 
-![johndoejoiningletterattachandsend](assets/johndoejoiningletterattachandsend.png)
+![johndoejoiningletterattachments und send](assets/johndoejoiningletterattachandsend.png)
 
 John Doe sendet das Anstellungsschreiben zur Unterschrift
 
 ## Sarah Rose erhält und unterschreibt das Anstellungsschreiben  {#sarah-rose-receives-and-signs-the-joining-letter}
 
-Sarah Rose erhält das Anstellungsschreiben zur Unterschrift. Sarah klickt hier, um den beiliegenden Brief zu überprüfen und zu unterschreiben. Die PDF-Datei mit dem Anstellungsschreiben wird geöffnet und enthält ein Feld für die Unterschrift.
+Sarah Rose erhält das Anstellungsschreiben zur Unterschrift. Sarah klickt auf &quot;Click Here&quot;, um den Abschlussbrief zu überprüfen und zu unterschreiben. Die PDF-Datei mit dem Anstellungsschreiben wird geöffnet und enthält ein Feld für die Unterschrift.
 
 ![sarahrosejoiningletteremail](assets/sarahrosejoiningletteremail.png)
 
 Sarah Rose erhält das Anstellungsschreiben zur Unterschrift
 
-Sarah kann wählen, ob sie ihre Unterschrift über die Tastatur oder mit der Zeichnenfunktion eingibt, ein Bild der Unterschrift einfügt oder den Touchscreen ihres Handys verwendet, um ihre Unterschrift zu zeichnen. Sarah gibt in ihren Namen ein, klickt auf &quot;Zum Unterschreiben klicken&quot;und lädt die signierte Kopie des zusammenführenden Briefs herunter.
+Sarah kann wählen, ob sie ihre Unterschrift über die Tastatur oder mit der Zeichnenfunktion eingibt, ein Bild der Unterschrift einfügt oder den Touchscreen ihres Handys verwendet, um ihre Unterschrift zu zeichnen. Sarah gibt ihren Namen ein, klickt auf &quot;Click To Sign&quot;und lädt die signierte Kopie des Anstellungsschreibens herunter.
 
 ![sarahrosejoininglettersign](assets/sarahrosejoininglettersign.png)
 
@@ -248,4 +247,3 @@ Sarah tippt ihren Namen ein, um das Anstellungsschreiben zu unterzeichnen
 ![sarahrosejoininglettersign2](assets/sarahrosejoininglettersign2.png)
 
 Sarah klickt auf &quot;Click To Sign&quot;, um die Unterzeichnung des Anstellungsschreibens abzuschließen
-
