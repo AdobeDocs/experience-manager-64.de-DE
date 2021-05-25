@@ -6,9 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
-feature: Viewer Presets
+feature: Viewer-Vorgaben
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '226'
