@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c27eb771-d390-4534-8e67-f1277550e760
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 84%
 
 ---
-
 
 # Bildschirmlesehilfen für HTML5-Formulare {#screen-readers-for-html-forms}
 
@@ -28,12 +27,12 @@ HTML5-Formulare verwenden standardmäßige HTML-Konstrukte, sodass für diese Fo
 
 HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html).
 
-## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare {#certified-screen-readers-for-html-forms}
+## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare  {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 unter Microsoft Windows
 * VoiceOver unter Mac OS X und auf iPad
 
-### JAWS  {#jaws}
+### JAWS {#jaws}
 
 In HTML5-Formularen funktionieren alle standardmäßigen Tasteneingaben und Tastaturbefehle. Weitere Informationen zur Verwendung von JAWS finden Sie unter [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
