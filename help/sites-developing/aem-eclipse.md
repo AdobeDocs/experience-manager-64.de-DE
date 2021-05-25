@@ -1,7 +1,7 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Developer Tools für Eclipse
-description: AEM Developer Tools für Eclipse
+seo-title: AEM Entwicklertools für Eclipse
+description: AEM Entwicklertools für Eclipse
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 9cdd09f6-bfc2-48c3-af40-a54f98833a38
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 92%
 
 ---
-
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
@@ -30,7 +29,7 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 * Nahtlose Integration mit AEM-Instanzen über Eclipse Server Connector.
 * Synchronisierung für Inhalte und OSGI-Pakete.
-* Debugging-Unterstützung mit Funktionen zum Hot-Swap-Code.
+* Debugging-Unterstützung mit der Funktion zum Hot-Swap-Code.
 * Einfacher Bootstrap von AEM-Projekten über einen speziellen Projekterstellungsassistenten.
 * Einfache Bearbeitung von JCR-Eigenschaften.
 
@@ -38,7 +37,7 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
-* Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools unterstützen derzeit Eclipse Kepler oder höher
+* Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Entwicklertools unterstützen derzeit Eclipse Kepler oder höher
 
 * Kann mit AEM Version 5.6.1 oder neuer verwendet werden
 * Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB an Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [Eclipse-FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
@@ -163,4 +162,3 @@ Die folgende offizielle [Eclipse](https://eclipse.org/)-Dokumentation kann dabei
 * [Erste Schritte mit Eclipse](https://eclipse.org/users/)
 * [Eclipse Luna-Hilfesystem](https://help.eclipse.org/luna/index.jsp)
 * [Maven-Integration (m2eclipse)](https://www.eclipse.org/m2e/)
-
