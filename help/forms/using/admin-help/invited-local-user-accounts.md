@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Dokumentensicherheit
+exl-id: b83e1059-aada-4b89-b587-288d525ab0c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
 
 ---
-
 
 # Konten eingeladener und lokaler Benutzer verwalten {#managing-invited-and-local-user-accounts}
 
@@ -34,7 +33,7 @@ Sie können auch Registrierungs-E-Mails manuell an eingeladene Benutzer senden. 
 >
 >Eingeladene Benutzer können auch direkt über den LDAP-Ordner hinzugefügt werden, auf den Document Security verweist. Dies ist auch möglich, wenn ein Benutzer oder Administrator beim Erstellen oder Bearbeiten einer Richtlinie einen neuen Benutzer einlädt, wodurch eine Einladungs-E-Mail zur Registrierung ausgelöst wird. Benutzer können neue eingeladene Benutzer zu Richtlinien hinzufügen, wenn Sie auf der Seite „Registrierung für eingeladene Benutzer“ die Option „Registrierung für eingeladene Benutzer aktivieren“ aktivieren.
 
-## Einen eingeladenen Benutzer hinzufügen {#add-an-invited-user}
+## Einen eingeladenen Benutzer hinzufügen  {#add-an-invited-user}
 
 Sie können Document Security ein oder mehrere Konten für eingeladene Benutzer gleichzeitig hinzufügen. Um das Konto eines eingeladenen Benutzers hinzuzufügen, benötigen Sie die E-Mail-Adresse des Benutzers. Wenn Sie einen Benutzer hinzufügen, sendet Document Security eine Registrierungs-E-Mail, die den Benutzer zur Registrierung einlädt.
 
@@ -134,4 +133,3 @@ Sie können Benutzer einfacher finden, indem Sie die Benutzerliste nach Spalten�
    1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Eingeladene und lokale Benutzer“.
    1. Um eingeladene Benutzer zu sortieren, klicken Sie auf die Registerkarte „Eingeladene Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
    1. Um lokale Benutzer zu sortieren, klicken Sie auf die Registerkarte „Lokale Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
-
