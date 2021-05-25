@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: eb816a35-0773-4eda-95b2-1d351c71be8b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 92%
 
 ---
-
 
 # Einbetten einer Komponente „Link“ in eine Seite{#embedding-link-component-in-a-page}
 
@@ -43,7 +42,7 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
 
    * **Asset Path**: Pfad für das Repository, in dem das Asset gespeichert ist.
    * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Wiedergabetyp „Auto“ erkennt die Benutzerumgebung und gibt das Formular entsprechend im HTML- oder PDF-Format wieder. Wenn das Formular beispielsweise auf einem Mobilgerät aufgerufen wird, gibt der Wiedergabetyp „Auto“ das Formular im HTML-Format wieder.
-   * **Sende-URL:**  URL zu dem Servlet, an das die Formulardaten gesendet werden.
+   * **Sende-URL:**  URL zum Servlet, an das die Formulardaten gesendet werden.
    * **HTML Profile**: Profil für die Wiedergabe des Formulars im HTML-Format.
    * **PDF Profile**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
 
@@ -59,4 +58,3 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
    1. Die Sende-URL, die in das Formular eingebettet ist (in der Senden-Schaltfläche), hat die höchste Priorität.
    1. Die Sende-URL, die in Forms Manager erwähnt wird, hat die mittlere Priorität.
    1. Die Sende-URL, die im Forms Portal erwähnt wird, hat die niedrigste Priorität.
-
