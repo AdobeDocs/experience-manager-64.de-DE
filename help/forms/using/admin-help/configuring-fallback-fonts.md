@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6942b6fc-8d04-429f-8433-1ab74c68fcc1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 70%
 
 ---
-
 
 # Ersatzschriftarten konfigurieren {#configuring-fallback-fonts}
 
@@ -27,12 +26,12 @@ Sie können die Datei „FontManagerResources.properties“ zum Zuordnen der AEM
 >
 >Die Konfiguration der Ersatzschriftarten gilt auch für den Assembler-Dienst.
 
-1. Navigieren Sie zur Datei &quot;adobe-livecycle-*[appserver]*.ear&quot;im Ordner &quot;*[aem-forms root]*/configurationManager/export&quot;, erstellen Sie eine Sicherungskopie und dekomprimieren Sie das Original.
+1. Navigieren Sie zur Datei &quot;adobe-livecycle-*[appserver]*.ear&quot;im Ordner &quot;*[aem-forms root]*/configurationManager/export&quot;, erstellen Sie eine Sicherungskopie und entpacken Sie die Originaldatei.
 1. Suchen Sie die Datei „adobe-fontmanager.jar“ und dekomprimieren Sie sie.
 1. Suchen Sie die Datei „FontManagerResources.properties“ und öffnen Sie sie in einem Texteditor.
 1. Ändern Sie die Speicherorte und Namen der Standard- und Ersatzschriftarten den Anforderungen entsprechend und speichern Sie die Datei.
 
-   Die Schriftarteinträge in der Datei &quot;FontManagerResources.properties&quot;beziehen sich auf den Ordner *[aem-forms root]*/fonts. Wenn Sie Schriftarten angeben, die keine AEM Forms-Standardschriftarten sind, müssen Sie diese in dieser Ordnerstruktur installieren (entweder in einem vorhandenen oder einem neu erstelltem Ordner).
+   Die Schrifteinträge in der Datei &quot;FontManagerResources.properties&quot;sind relativ zum Ordner *[aem-forms root]*/fonts . Wenn Sie Schriftarten angeben, die keine AEM Forms-Standardschriftarten sind, müssen Sie diese in dieser Ordnerstruktur installieren (entweder in einem vorhandenen oder einem neu erstelltem Ordner).
 
    >[!NOTE]
    >
@@ -43,9 +42,8 @@ Sie können die Datei „FontManagerResources.properties“ zum Zuordnen der AEM
    * Allgemeine Schriftart, die gemäß der in der Tabelle mit den Ersatzschriftarten festgelegten Reihenfolge gesucht wird
 
 1. Komprimieren Sie die Datei „adobe-fontmanager.jar“ neu.
-1. Komprimieren Sie die Datei &quot;adobe-livecycle-*[appserver]*.ear&quot;neu und stellen Sie sie dann manuell oder durch Ausführen von Configuration Manager erneut bereit.
+1. Komprimieren Sie die Datei &quot;adobe-livecycle-*[appserver]*.ear&quot;neu und stellen Sie sie dann entweder manuell oder durch Ausführen von Configuration Manager erneut bereit.
 
 >[!NOTE]
 >
->Verwenden Sie Configuration Manager nicht, um die Datei &quot;adobe-livecycle-[appserver].ear&quot;neu zu verpacken, da dadurch Ihre Änderungen mit den Standardwerten für AEM Formulare überschrieben werden.
-
+>Komprimieren Sie die Datei &quot;adobe-livecycle-[appserver].ear&quot;nicht mit Configuration Manager, da dadurch Ihre Änderungen mit den Standardwerten für AEM Formulare überschrieben werden.
