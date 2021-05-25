@@ -1,6 +1,6 @@
 ---
 title: Markdown
-seo-title: Markup
+seo-title: Markdown
 description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
 seo-description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
@@ -10,9 +10,8 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '554'
@@ -32,7 +31,7 @@ Wenn Sie [Inhalt erstellen oder bearbeiten](content-fragments-variations.md#auth
 
 Sie können Folgendes definieren:
 
-* [Überschriftsnotation ](/help/assets/content-fragments-markdown.md#heading-notation)
+* [Überschriftsnotation](/help/assets/content-fragments-markdown.md#heading-notation)
 * [Absätze und Zeilenumbrüche](/help/assets/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Links](/help/assets/content-fragments-markdown.md#links)
 * [Bilder](/help/assets/content-fragments-markdown.md#images)
