@@ -8,15 +8,14 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 8bb350f2-a160-4943-bd6a-00f87f4e6cbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 89%
 
 ---
-
 
 # Adaptive Formularvorlagen {#adaptive-form-templates}
 
@@ -28,11 +27,11 @@ Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestim
 * Den anfänglichen Inhalt für das Formular angeben.
 * Ein Design und Übermittlungsaktionen festlegen.
 
-## Arbeiten mit Vorlagen {#working-with-templates}
+## Arbeiten mit Vorlagen  {#working-with-templates}
 
 Sie können über das Menü „Werkzeuge“ auf den Vorlagen-Editor zugreifen: Navigieren Sie zu **[!UICONTROL Adobe Experience Manager > Werkzeuge > Vorlagen]**. Hier befinden sich die Vorlagen in Ordnern für bearbeitbare Vorlagen. In AEM steht ein globaler Ordner zum Organisieren von Vorlagen zur Verfügung. Diese ist jedoch nicht standardmäßig aktiviert. Sie können Ihren Administrator bitten, den globalen Ordner zu aktivieren oder einen neuen Ordner für Vorlagen zu erstellen. Weitere Informationen zum Erstellen von Ordnern finden Sie unter [Vorlagenordner](/help/sites-developing/page-templates-editable.md).
 
-Wenn Sie auf tippen, um einen Ordner zu öffnen, finden Sie die Schaltfläche &quot;Erstellen&quot;, mit der Sie eine neue Vorlage für adaptive Formulare erstellen können.
+Wenn Sie auf tippen, um einen Ordner zu öffnen, finden Sie die Schaltfläche Erstellen , mit der Sie eine neue Vorlage für adaptive Formulare erstellen können.
 
 ### Erstellen einer Vorlage {#create-template}
 
@@ -57,9 +56,9 @@ Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Edit
    * **Emulator**: Hier können Sie das Erscheinungsbild für verschiedene Geräte simulieren und anpassen.
    * **Ebenenauswahl:** Hiermit können Sie die Ebene ändern.
 
-      Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. Auf der Strukturebene können Sie die Kopf- und Fußzeile hinzufügen und anpassen. Auf der Ebene &quot;Anfänglicher Inhalt&quot;können Sie den Formularinhalt anpassen.
+      Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. Mit der Strukturebene können Sie Kopf- und Fußzeilen hinzufügen und anpassen. Mit der Ebene &quot;Anfänglicher Inhalt&quot;können Sie den Formularinhalt anpassen.
 
-   * **Vorschau:** Hier können Sie Vorschauen dazu erstellen, wie die Vorlage aussieht, wenn Sie sie veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
+   * **Vorschau:** Hier können Sie das Erscheinungsbild der Vorlage beim Veröffentlichen anzeigen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 
 * **Seitenleiste:** Enthält die Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
 * **Komponenten-Symbolleiste:** Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie die Komponente anpassen können.
@@ -84,7 +83,7 @@ Wenn Sie die Strukturebene im Vorlageneditor auswählen, werden die Layout-Conta
 
 **Abbildung:** *Layout-Container in der Strukturebene*
 
-**A.** Layout-Container für die Kopfzeilenkomponente  **B.** Layout-Container für Fußzeilenkomponente
+**A.** Layout-Container für die Kopfzeilenkomponente  **B.** Layout-Container für die Fußzeilenkomponente
 
 Ziehen Sie die Kopfzeilenkomponente des adaptiven Formulars in den Layout-Container über dem Container des adaptiven Formulars. Nachdem Sie die Komponente hinzugefügt haben, können Sie seine Eigenschaften festlegen, mit denen Sie ein Logo hinzufügen und den Titel angeben können.
 
@@ -92,7 +91,7 @@ Wenn Sie die Fußzeilenkomponente in den Layout-Container unter dem Container de
 
 ![Kopf- und Fußzeile in der Strukturebene hinzugefügt](assets/header-and-footer.png)
 
-**Abbildung:** *Kopf- und Fußzeile in der Strukturebene*
+**Abbildung:** *Kopf- und Fußzeile in der Strukturebene hinzugefügt*
 
 #### Sperren/Entsperren von Komponenten in der Strukturebene {#locking-unlocking-components-in-the-structure-layer}
 
@@ -108,7 +107,7 @@ Beispiel: Sie fügen die Fußzeilenkomponente der Vorlage hinzu. Wenn Sie die Ko
 
 Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. ein Design und Übermittlungsaktionen.
 
-Autoren können sie als Grundlage verwenden, um ein Formular zu erstellen. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage festgelegt. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor die Vorschau in der Seitensymbolleiste erfolgt, tippen Sie auf ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png)**[!UICONTROL  Anfänglicher Inhalt ]**.
+Autoren können sie als Grundlage verwenden, um ein Formular zu erstellen. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage festgelegt. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, tippen Sie vor der Vorschau in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png)**[!UICONTROL  Anfänglicher Inhalt ]**.
 
 ![Ebene „Anfänglicher Inhalt“ im Vorlageneditor](assets/initial-content-layer.png)
 
@@ -120,7 +119,7 @@ Weitere Informationen finden Sie unter [Randleiste](/help/forms/using/introducti
 
 >[!NOTE]
 >
->Wenn Sie &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;als Übermittlungsaktion auswählen, erhalten Sie eine Option zum Festlegen des Pfads für die Datenspeicherung. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
+>Wenn Sie als Übermittlungsaktion &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;auswählen, erhalten Sie eine Option, den Speicherpfad anzugeben. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
 
 #### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern   {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
@@ -138,7 +137,7 @@ Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der
 * Sie können die Bedienfeldkomponente aus dem Komponenten-Browser in der Seitenleiste ziehen.
 * Sie können ein untergeordnete Bedienfeld von `guideRootPanel` aus der Symbolleiste hinzufügen.
 
-Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und tippen Sie auf ![cmppr](assets/cmppr.png), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Klicken Sie in der Randleiste auf „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Tippen Sie in der Komponenten-Symbolleiste auf ![cmppr](assets/cmppr.png), um die Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeldlayout“ **Registerkarten oben** und tippen Sie dann auf **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
+Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informationen“ zu erstellen, fügen Sie zwei Bedienfelder im untergeordneten Bedienfeld von `guideRootPanel` hinzu. Wählen Sie die Bedienfelder aus und tippen Sie auf ![cmppr](assets/cmppr.png), um die Eigenschaften in der Seitenleiste zu öffnen. Ändern Sie die Elementnamen in `general-info` und `professional-info` und die Titel in „Allgemeine Informationen“ bzw. „Berufliche Informationen“. Klicken Sie in der Randleiste auf „Inhalt“, um den Inhalts-Browser zu öffnen. Wählen Sie in der Registerkarte „Formularobjekte“ `guideRootPanel` aus. Im Editor ist „guideRootPanel“ ausgewählt. Tippen Sie in der Komponentensymbolleiste auf ![cmppr](assets/cmppr.png) , um die Eigenschaften zu öffnen. Wählen Sie im Feld „Bedienfeldlayout“ **Registerkarten oben** und tippen Sie dann auf **Fertig**. Die Vorlagenstruktur mit Registerkarten wird angewendet.
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
@@ -167,13 +166,13 @@ Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren S
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}
 
-Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere AEM Forms-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Sie können die benutzerdefinierte Vorlage vom Knoten `/conf` in `https://<server>:<port>/crx/packmgr` verpacken und in die AEM Forms-Instanz, in die Sie das Formular hochladen möchten, importieren.
+Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere AEM Forms-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Sie können die benutzerdefinierte Vorlage aus dem Knoten `/conf` in `https://<server>:<port>/crx/packmgr` verpacken und in die AEM Forms-Instanz portieren, in die Sie das Formular hochladen möchten.
 
 ## Erstellen eines adaptiven Formulars mithilfe der Vorlage {#creating-an-adaptive-form-using-the-template}
 
 Nachdem Sie eine Vorlage erstellt und aktiviert haben, wird sie im Forms Manager verfügbar, wenn Sie ein adaptives Formular erstellen. Um eine Vorlage zu verwenden und ein adaptives Formular zu erstellen, finden Sie weitere Informationen unter[ Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
 
-## Ändern von Anzeigeoptionen von Standardvorlagen  {#change-display-option-of-out-of-the-box-templates}
+## Ändern von Anzeigeoptionen von Standardvorlagen   {#change-display-option-of-out-of-the-box-templates}
 
 Sie können benutzerdefinierte Vorlagen für adaptive Formulare erstellen, um die grundlegende Struktur und Anfangsinhalte zu definieren. AEM Forms bietet außerdem eine Reihe von Standardvorlagen für adaptive Formulare. Sie können wählen, ob Sie die Vorlagen anzeigen oder ausblenden möchten.
 
@@ -183,7 +182,7 @@ Führen Sie die folgenden Schritte aus, um Vorlagen anzuzeigen bzw. auszublenden
 
    >[!NOTE]
    >
-   >Die URL AEM Webkonsole ist `https://[server]:[port]/system/console/configMgr`
+   >Die URL AEM Webkonsole lautet `https://[server]:[port]/system/console/configMgr` .
 
 1. Suchen und öffnen Sie die **[!UICONTROL FormsManager-Konfigurations]** einstellungen:
 
@@ -197,5 +196,4 @@ Führen Sie die folgenden Schritte aus, um Vorlagen anzuzeigen bzw. auszublenden
 * Wenn Sie Eigenschaften des Formulars im Vorlageneditor ändern, verwenden Sie nicht die Eigenschaft „BindReference“.
 * Wenn Sie einen Haltepunkt hinzufügen möchten, erstellen Sie ihn, wenn Sie eine Vorlage für ein adaptives Formular bearbeiten.
 
-   Weitere Informationen zu Haltepunkten finden Sie unter [Responsive Layout](/help/sites-authoring/responsive-layout.md).
-
+   Weitere Informationen zu Haltepunkten finden Sie unter [Responsives Layout](/help/sites-authoring/responsive-layout.md).
