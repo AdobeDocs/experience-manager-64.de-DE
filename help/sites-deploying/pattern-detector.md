@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aktualisieren
+exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 93%
 
 ---
-
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
@@ -49,18 +48,18 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über die Felix Inventory-Konsole:** 
 
-1. Rufen Sie die AEM Web Console auf, indem Sie: https://<i></i>serveraddress:serverport/system/console/configMgr
+1. Navigieren Sie zur AEM Web-Konsole, indem Sie zu: https://<i></i>serveraddress:serverport/system/console/configMgr
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
-   ![screenshot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
+   ![screen-shot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
 
-* **Über eine reaktive JSON-Leitungsschnittstelle**, die in jeder Zeile ein separates JSON-Dokument generiert.
+* **Über eine reaktive JSON-Line-Oberfläche**, die in jeder Zeile ein separates JSON-Dokument generiert.
 
 Beide Methoden werden im Folgenden erläutert:
 
-## Reaktive Schnittstelle {#reactive-interface}
+## Reaktive Schnittstelle  {#reactive-interface}
 
 Mit einer reaktiven Schnittstelle kann der Bericht zu den Verstößen verarbeitet werden, sobald ein Problem erkannt wird.
 
@@ -222,4 +221,3 @@ Aktuell bietet der Musterdetektor folgende Überprüfungen:
 * Definitionen der Oak-Indizes (Kompatibilität)
 * VLT-Pakete (Überverwendung)
 * Kompatibilität von rep:User-Knoten (im Kontext der OAuth-Konfiguration)
-
