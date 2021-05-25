@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
-translation-type: tm+mt
-source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2218'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
-
 
 # Konzepte der Touch-optimierten Benutzeroberfläche von AEM{#concepts-of-the-aem-touch-enabled-ui}
 
@@ -26,7 +25,7 @@ Diese Touch-optimierte Benutzeroberfläche ist jetzt die Standardbenutzeroberfl�
 
 >[!NOTE]
 >
->Die touchfähige Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM, obwohl die klassische Benutzeroberfläche weiterhin unterstützt wird.
+>Die Touch-optimierte Benutzeroberfläche ist die Standardbenutzeroberfläche für AEM, obwohl die klassische Benutzeroberfläche weiterhin unterstützt wird.
 
 Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 
@@ -78,7 +77,7 @@ Die Grundprinzipien der Touch-optimierten Benutzeroberfläche lauten:
 * Einbettung von Tests
 * Bottom-Up-Design zur Sicherstellung, dass diese Prinzipien auf alle Elemente und Komponenten angewendet werden
 
-Eine weitere Übersicht über die touchfähige UI-Struktur finden Sie im Artikel [Struktur der AEM Touch-Enabled-UI](/help/sites-developing/touch-ui-structure.md).
+Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Struktur der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM-Technologiestapel {#aem-technology-stack}
 
@@ -186,7 +185,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td><strong>Granite-Benutzeroberfläche</strong></td> 
   </tr> 
   <tr> 
-   <td>Remote-Prozeduraufruf<br /> </td> 
+   <td>Remoteprozeduraufruf<br /> </td> 
    <td>Staatliche Übergänge</td> 
   </tr> 
   <tr> 
@@ -194,8 +193,8 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td>Hypermedia</td> 
   </tr> 
   <tr> 
-   <td>Client kennt Serverinternals</td> 
-   <td>Kunde kennt keine Internale</td> 
+   <td>Client kennt interne Server</td> 
+   <td>Der Kunde kennt keine Internalen</td> 
   </tr> 
   <tr> 
    <td>"FAT-Client"</td> 
@@ -203,14 +202,14 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
   </tr> 
   <tr> 
    <td>Spezialisierte Client-Bibliotheken</td> 
-   <td>Universelle Clientbibliotheken</td> 
+   <td>Universelle Client-Bibliotheken</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Granite-Benutzeroberflächen-Foundation-Komponenten {#granite-ui-foundation-components}
 
-Mit den [Granite-Benutzeroberflächen-Foundation-Komponenten](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden. Dies sind beispielsweise:
+Mit den [Granite-Benutzeroberflächen-Foundation-Komponenten](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden. Dies sind beispielsweise:
 
 * Schaltfläche
 * Hyperlink
@@ -375,7 +374,7 @@ Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, 
 
 Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Es ist für ein spezifisches DOM-Element ausgelegt. Beispiel: Ein Dialogfeld-Plugin erwartet, `DIV class=dialog` zu finden
+* Es ist für ein spezifisches DOM-Element ausgelegt. Beispielsweise erwartet ein Dialog-Plugin, `DIV class=dialog` zu finden
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
 Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
@@ -385,10 +384,10 @@ Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
-* `data-*` Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
+* `data-*` -Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
 * API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen.
 
-Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabefeld als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -404,9 +403,9 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-in, an ein spezifisches DOM-Element (auch mehrere) gebunden
-* Verwenden von Attributen `data-*` zum Anpassen des Verhaltens
+* Verwenden von `data-*`-Attributen zum Anpassen des Verhaltens
 
-Ein Auszug aus Beispielmarkup (beachten Sie die als data&amp;ast; Attribute):
+Ein Auszug aus Beispielmarkup (beachten Sie die Optionen, die als data-&amp;ast angegeben sind); -Attribute):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -512,4 +511,3 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-ins oder AMD-konforme JavaScript-Module
-
