@@ -9,32 +9,31 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
-translation-type: tm+mt
-source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
+exl-id: 210cb5f2-cc5c-4664-b324-5c6f70f7b593
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 81%
 
 ---
 
-
-# Fehlerbehebung bei Richtlinien für AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Fehlerbehebung bei Richtlinien für AEM Forms Workspace  {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die Protokollierung aktivieren und den Debugger in einem Browser verwenden. Darüber hinaus werden einige allgemeine Fragen, die bei der Verwendung von AEM Forms Workspace auftreten können, und ihre Umgehungslösungen behandelt.
 
 ## AEM Forms Workspace-Paket kann nicht installiert werden  {#unable-to-install-aem-forms-workspace-package}
 
-Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. Wenn der Fehler &quot;Keine Ressource gefunden&quot;auftritt, öffnen Sie den CRX Package Manager und installieren Sie das `adobe-lc-workspace-pkg-<version>.zip`-Paket neu.
+Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. Wenn der Fehler &quot;Keine Ressource gefunden&quot;auftritt, öffnen Sie den CRX Package Manager und installieren Sie das Paket `adobe-lc-workspace-pkg-<version>.zip` erneut.
 
 Wenn beim Installieren des Pakets ein Fehler `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` auftritt, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich bei CRX DE Lite an. Die Standard-URL ist `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Melden Sie sich bei CRX DE Lite an. Die Standard-URL lautet `https://[localhost]:[port]/lc/crx/de/index.jsp` .
 1. Löschen Sie den folgenden Knoten:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
-1. Suchen und installieren Sie das `adobe-lc-workspace-pkg-[version].zip`-Paket.
+1. Suchen und installieren Sie das Paket `adobe-lc-workspace-pkg-[version].zip` .
 1. Starten Sie den Anwendungsserver neu.
 
 ## Protokollierung für AEM Forms Workspace  {#aem-forms-workspace-nbsp-logging}
@@ -43,9 +42,9 @@ Sie können Protokolle auf verschiedenen Ebenen generieren, um eine optimale Feh
 
 In AEM Forms Workspace:
 
-* Um die Protokollinformationen zu einer bestimmten Komponentendatei abzurufen, hängen Sie `/log/<ComponentFile>/<LogLevel>` an die URL an und drücken Sie `Enter`. Alle Protokollinformationen für die Komponentendatei auf der angegebenen Protokollebene werden in der Konsole ausgegeben.
+* Um die Protokollinformationen zu einer bestimmten Komponentendatei zu erhalten, hängen Sie `/log/<ComponentFile>/<LogLevel>` an die URL an und drücken Sie die Taste `Enter`. Alle Protokollinformationen für die Komponentendatei auf der angegebenen Protokollebene werden in der Konsole ausgegeben.
 
-* Um Protokollinformationen zu allen Komponentendateien abzurufen, hängen Sie `/log/all/trace` an die URL an und drücken Sie `Enter`.
+* Um Protokollinformationen zu allen Komponentendateien zu erhalten, hängen Sie `/log/all/trace` an die URL an und drücken Sie `Enter`.
 
 * Protokollformat: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -150,7 +149,7 @@ In AEM Forms Workspace:
 * INFO
 * DEBUG
 * TRACE
-* OFF
+* AUS
 
 ## Debugging-Information für Browser {#debugging-information-for-browsers}
 
@@ -160,7 +159,7 @@ Skripten und Stile können in verschiedenen Browsern debuggt werden.
 
 * **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl: Strg+Umschalt+I. Weitere Informationen finden Sie unter:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. Firebug ist beispielsweise ein solches Debugging-Dienstprogramm ([https://getfirebug.com](https://getfirebug.com)).
+* **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. Firebug ist beispielsweise eines dieser Debugging-Hilfsprogramme ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Häufig gestellte Fragen {#faqs}
 
