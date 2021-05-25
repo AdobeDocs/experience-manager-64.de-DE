@@ -2,16 +2,15 @@
 title: Erstellen von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM erstellen können.
 contentOwner: AG
-feature: Translation
+feature: Übersetzung
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1935'
 ht-degree: 97%
 
 ---
-
 
 # Erstellen von Übersetzungsprojekten {#creating-translation-projects}
 
@@ -41,7 +40,7 @@ Den Workflow zum Erstellen und Übersetzen verwenden Sie, um erstmals Sprachkopi
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Nur Struktur erstellen  {#create-structure-only}
+### Nur Struktur erstellen   {#create-structure-only}
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
@@ -204,7 +203,7 @@ Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetze
 
 ### Erstellen eines neuen Übersetzungsprojekts {#create-a-new-translation-project-1}
 
-Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von Assets erstellt, für die Sie eine Sprachkopie aktualisieren möchten.
+Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von Assets erstellt, für den Sie eine Sprachkopie aktualisieren möchten.
 
 1. Wählen Sie in der Benutzeroberfläche „Assets“ den Quellordner, dem Sie einen Asset-Ordner hinzugefügt haben.
 1. Öffnen Sie den Bereich **[!UICONTROL Referenzen]** und tippen/klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Liste der Sprachkopien anzuzeigen.
@@ -314,4 +313,4 @@ Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbe
 
 1. Navigieren Sie zur Konsole „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-Tipps zum effizienten Übersetzen von Metadaten für Assets finden Sie unter [5 Schritte zum effizienten Übersetzen von Metadaten](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Tipps zur effizienten Übersetzung von Metadaten finden Sie unter [5 Steps for Efficiently Translating Metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
