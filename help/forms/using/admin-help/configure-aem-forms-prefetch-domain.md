@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
-translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+exl-id: 6b431cbd-2cea-4ae2-ad26-587ba524d2f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 72%
 
 ---
-
 
 # Konfigurieren Sie AEM Forms auf prefetchdomain-Informationen {#configure-aem-forms-to-prefetchdomain-information}
 
@@ -44,5 +43,4 @@ Für Benutzer kann es zu langsameren Reaktionszeiten kommen, wenn sie vielen Gru
    In diesem Beispiel werden mehrere Domänen zum vorherigen Abrufen konfiguriert. Die Domänennamen werden durch ein „/“ getrennt. Dies wird im oben stehenden Beispiel mit *Domain_Name1*, *Domain_Name2* und *Domain_Name3* gezeigt.
 
 1. Um die aktualisierte Datei zu importieren, klicken Sie in User Management auf **[!UICONTROL Konfiguration > Konfigurationsdateien importieren und exportieren]**.
-1. Klicken Sie auf **[!UICONTROL Durchsuchen]**, um die Datei zu suchen, klicken Sie auf Importieren und dann auf **[!UICONTROL OK]**.
-
+1. Klicken Sie auf **[!UICONTROL Browse]**, um die Datei zu suchen, klicken Sie auf &quot;Importieren&quot;und dann auf **[!UICONTROL OK]**.
