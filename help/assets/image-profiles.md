@@ -1,8 +1,8 @@
 ---
-title: Dynamic Media Image Profils
-seo-title: Dynamic Media Image Profils
-description: Erstellen Sie Profile mit Einstellungen für Unschärfemaske und/oder intelligentes Beschneiden oder Muster und wenden Sie das Profil dann auf einen Ordner mit Bild-Assets an.
-seo-description: Erstellen Sie Profile mit Einstellungen für Unschärfemaske und/oder intelligentes Beschneiden oder Muster und wenden Sie das Profil dann auf einen Ordner mit Bild-Assets an.
+title: Dynamic Media-Bildprofile
+seo-title: Dynamic Media-Bildprofile
+description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
+seo-description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
-feature: Image Profiles
+feature: Bildprofile
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '2715'
@@ -20,7 +19,7 @@ ht-degree: 91%
 
 ---
 
-# Dynamic Media Image Profils {#image-profiles}
+# Dynamic Media-Bildprofile {#image-profiles}
 
 Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch zuschneiden, indem Sie ein neues Bildprofil auf den Ordner anwenden.
 
@@ -78,11 +77,11 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Außerdem können Sie 
 
 ## Unschärfemaske {#unsharp-mask}
 
-Verwenden Sie **Unscharf maskieren**, um einen Scharfzeichnungsfiltereffekt auf das endgültige neu berechnete Bild anzupassen. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert wird. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter &quot;Unschärfemaske&quot;.
+Sie verwenden **Unschärfemaske**, um einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Kontrastschwellenwert festlegen, der ignoriert wird. Bei diesem Effekt werden dieselben Optionen wie im Adobe Photoshop-Filter &quot;Unschärfemaske&quot;verwendet.
 
 >[!NOTE]
 >
->Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Das bedeutet, dass die größtmöglichen Darstellungen im PTIFF nicht von einer Unschärfemaske betroffen sind, während kleinere Darstellungen wie Miniaturbilder geändert werden (und die Unschärfemaske anzeigen).
+>Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Das bedeutet, dass die größten Ausgabedarstellungen im PTIFF nicht von der Unschärfemaske betroffen sind, während kleinere Ausgabedarstellungen wie Miniaturansichten geändert werden (und die Unschärfemaske anzeigen).
 
 In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
 
@@ -98,7 +97,7 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
   </tr> 
   <tr> 
    <td>Radius</td> 
-   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.  Bereich: 0-250.</td> 
+   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2. Bereich: 0-250.</td> 
   </tr> 
   <tr> 
    <td>Schwelle</td> 
@@ -110,11 +109,11 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
 Das Scharfzeichnen wird unter
      [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
 
-## Erstellen von Dynamic Media-Image-Profilen {#creating-image-profiles}
+## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-**So erstellen Sie Dynamic Media-Profile**:
+**So erstellen Sie Dynamic Media-Bildprofile**:
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Bildprofil hinzuzufügen.
@@ -128,10 +127,10 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Profil wird in der Liste der verfügbaren Profile angezeigt.
 
-## Bearbeiten oder Löschen von Dynamic Media-Image-Profilen {#editing-or-deleting-image-profiles}
+## Bearbeiten oder Löschen von Dynamic Media-Bildprofilen {#editing-or-deleting-image-profiles}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
-1. Wählen Sie das Profil aus, das Sie bearbeiten oder entfernen möchten. Um es zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungs-Profil bearbeiten]**. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil löschen]** aus, um es zu entfernen.
+1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Um sie zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten]** aus. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil löschen]** aus, um es zu entfernen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -180,7 +179,7 @@ Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet we
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Navigieren Sie zu **https://&lt;AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** und wenden Sie das entsprechende Profil an und tippen Sie auf **Speichern**.
+   * Navigieren Sie zu **https://&lt;AEM-Server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam**, wenden Sie das entsprechende Profil an und tippen Sie auf **Speichern**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
@@ -258,7 +257,7 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
    * Verschieben Sie das smarte Zuschnittsfeld. Führen Sie einen der folgenden Schritte aus:
 
       * Wenn das Bild nur über einen smarten Zuschnitt oder ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Zuschnittsfeld im Bild an eine neue Position.
-      * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Zuschnittsfeld im Bild an eine neue Position. Tippen Sie alternativ auf das intelligente Farbfeld unter dem Bild (Farbfelder sind statisch) und ziehen Sie dann das Feld für die intelligente Musterzuordnung an eine neue Position.
+      * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Zuschnittsfeld im Bild an eine neue Position. Tippen Sie alternativ auf das smarte Bildmuster unter dem Bild (Farbmuster sind statisch) und ziehen Sie dann das smarte Zuschnittsfeld an eine neue Position.
 
       ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
 
