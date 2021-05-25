@@ -7,16 +7,15 @@ uuid: ecc98e0d-c964-44dc-b219-9ebe92632d22
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
-translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+exl-id: 7fbdd976-5a70-4af4-b449-7c2d6bcfd915
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 84%
 
 ---
 
-
-# Mitarbeiter-Self-Service Referenz-Website-Umgehungslösung {#employee-self-service-reference-site-walkthrough}
+# Mitarbeiter-Self-Service Referenz-Website-Umgehung {#employee-self-service-reference-site-walkthrough}
 
 ## Voraussetzung {#prerequisite}
 
@@ -32,11 +31,11 @@ Die Mitarbeiter-Self-Service-Referenzseite zeigt, wie Sie mit AEM Forms das Self
 >
 >Anwendungsfälle für Mitarbeiter-Self-Service sind sowohl auf We.Finance- als auch auf We.Gov-Referenz-Websites verfügbar. Die in den Anleitungen verwendeten Beispiele, Bilder und Beschreibungen beziehen sich auf die We.Finance-Referenz-Website. Sie können diese Anwendungsfälle jedoch auch mit We.Gov ausführen und dort Artefakte überprüfen. Ersetzen Sie dazu in den genannten URLs **we-finance** durch **we-gov**.
 
-## Interessenkonflikt- Schrittweiser Fragebogen {#conflict-of-interest-questionnaire-walkthrough}
+## Interessenkonflikt- Schrittweiser Fragebogen  {#conflict-of-interest-questionnaire-walkthrough}
 
-Von Zeit zu Zeit bitten Unternehmen ihre Mitarbeiter, einen Fragebogen zu Interessenskonflikten zu übermitteln, um externe Aktivitäten oder persönliche Beziehungen ihrer Mitarbeiter zu identifizieren, die möglicherweise mit ihrer Organisation kollidieren.
+Unternehmen fordern von Zeit zu Zeit ihre Mitarbeiter auf, einen Fragebogen zu Interessenkonflikten zu übermitteln, um externe Aktivitäten oder persönliche Beziehungen ihrer Mitarbeiter zu identifizieren, die möglicherweise in Konflikt mit ihrer Organisation stehen.
 
-Die Compliance Abteilung der Sarah hat Mitarbeiter gebeten, den Fragebogen zu Interessenskonflikten einzureichen.
+Die Compliance-Abteilung von Sarahs Organisation hat Mitarbeiter gebeten, den Fragebogen zu Interessenkonflikten einzureichen.
 
 ### Sarah reicht den Fragebogen zu Interessenkonflikten ein {#sarah-submits-the-conflict-of-interest-questionnaire}
 
@@ -46,13 +45,13 @@ Sarah geht zum Portal ihrer Organisation, meldet sich an und klickt auf „Mitar
 **homeAbbildung:** *Organisationsportal*
 
 ![employee-](assets/employee-dashboard.png)
-**dashboardAbbildung:** *Employee-Dashboard*
+**dashboardAbbildung:** *Mitarbeiter-Dashboard*
 
 Sarah navigiert durch das Formular mit der Schaltfläche „Weiter“ und liest die Abschnitte „Einführung“ und „Definition“. Sie beantwortet die Fragen im Abschnitt „Fragen“. Schließlich unterschreibt sie den Fragebogen und reicht ihn ein.
 
 Das Unternehmensportal und der Fragebogen sind interaktiv und kann auf mobilen Geräten genutzt werden. Der folgende Workflow zeigt, wie Sarah den Fragebogen auf ihrem Mobilgerät durchsucht und übermittelt.
 
-![konfliktform-on-mobile](assets/conflict-form-on-mobile.png)
+![conflict-form-on-mobile](assets/conflict-form-on-mobile.png)
 
 **Funktionsweise**
 
@@ -68,15 +67,15 @@ Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/s
 
 Der von Sarah eingereichte Fragebogen zum Interessenkonflikt wird Gloria Rios zur Überprüfung übergeben. Gloria arbeitet als Compliance Officer in dem Unternehmen. Gloria meldet sich bei ihrem AEM-Posteingang an und überprüft die ihr zugewiesenen Aufgaben. Sie genehmigt den von Sarah eingereichten Fragebogen und schließt die Aufgabe ab.
 
-![konflikt-](assets/conflict-inbox.png)
+![conflict-](assets/conflict-inbox.png)
 **inboxAbbildung:** *Glorias Posteingang*
 
-![konfliktgenehmigt ](assets/conflict-approved.png)
-**Abbildung:Aufgabe** *öffnen*
+![conflict-](assets/conflict-approved.png)
+**authorisedAbbildung:** *Aufgabe öffnen*
 
 **Funktionsweise**
 
-Die Übermittlungsaktion im Fragebogen „Interessenkonflikt“ löst einen Workflow aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+Die Übermittlungsaktion im Fragebogen „Interessenkonflikt“ löst einen Workflow aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html` .
 
 ![employee-self-service-reference-site](assets/employee-self-service-reference-site.png)
 
@@ -95,12 +94,12 @@ Sarah geht zum Portal ihres Unternehmens, meldet sich an und klickt auf **[!UICO
 ![we-finance-home-1](assets/we-finance-home-1.png)
 **Abbildung:** *Organisationsportal*
 
-![employee-Dashboard-1](assets/employee-dashboard-1.png)
-**Abbildung:** *Employee Dashboard*
+![employee-dashboard-1](assets/employee-dashboard-1.png)
+**Abbildung:** *Mitarbeiter-Dashboard*
 
 Sie klickt auf **[!UICONTROL Übernehmen]** im Antrag für die Unternehmenskarte. Ein Antrag auf einer einzelnen Seite wird geöffnet. Sie füllt alle Details aus und klickt auf **[!UICONTROL Übernehmen]**, um die Anwendung zu senden.
 
-![card-form](assets/card-form.png)
+![Kartenformular](assets/card-form.png)
 
 **Funktionsweise**
 
@@ -117,15 +116,15 @@ Gehen Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/s
 
 Der von Sarah eingereichte Antrag auf eine Unternehmenskarte wird zur Prüfung an Gloria Rios weitergeleitet. Gloria meldet sich bei ihrem AEM-Posteingang an und überprüft die ihr zugewiesenen Aufgaben. Sie genehmigt den von Sarah eingereichten Antrag und schließt die Aufgabe ab.
 
-![Corporate-card-](assets/corporate-card-inbox.png)
+![corporate-card-](assets/corporate-card-inbox.png)
 **inboxAbbildung:** *Glorias Posteingang*
 
-![](assets/corporate-card-approved.png)
-**Abb.: Aufgabe** *öffnen*
+![corporate-card-](assets/corporate-card-approved.png)
+**authorisedAbbildung:** *Aufgabe öffnen*
 
 **Funktionsweise**
 
-Der Workflow für die Einreichung auf dem Antrag auf eine Unternehmenskarte löst einen Workflow für Formulare aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+Der Workflow für die Einreichung auf dem Antrag auf eine Unternehmenskarte löst einen Workflow für Formulare aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html` .
 
 ![corporate-card-workflow-model](assets/corporate-card-workflow-model.png)
 
@@ -144,8 +143,8 @@ Sarah geht zum Portal ihres Unternehmens, meldet sich an und klickt auf **[!UICO
 ![we-finance-home-2](assets/we-finance-home-2.png)
 **Abbildung:** *Organisationsportal*
 
-![employee-Dashboard-2](assets/employee-dashboard-2.png)
-**Abbildung:** *Employee Dashboard*
+![employee-dashboard-2](assets/employee-dashboard-2.png)
+**Abbildung:** *Mitarbeiter-Dashboard*
 
 Sie klickt auf **[!UICONTROL Beantragen]** im Antrag für den Spesenbericht. Ein Antragsformular wird geöffnet, das zwei Registerkarten enthält: Berichtsname und Berichtsdetails. Mit dem **+**-Symbol auf der Registerkarte „Berichtsdetails“ kann sie mehr als nur Spesen in einem Bericht hinzufügen.
 
@@ -171,11 +170,11 @@ Der von Sarah eingereichte Spesenbericht wird Gloria Rios zur Prüfung übergebe
 **inboxAbbildung:** *Glorias Posteingang*
 
 ![Spesenbericht-](assets/expense-report-approved.png)
-**genehmigtAbbildung:Aufgabe** *öffnen*
+**authorisedAbbildung:** *Aufgabe öffnen*
 
 **Funktionsweise**
 
-Der Übermittlungs-Workflow Antrag für den Spesenbericht löst einen Formular-Workflow aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+Der Übermittlungs-Workflow Antrag für den Spesenbericht löst einen Formular-Workflow aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html` .
 
 ![corporate-card-cost-report-workflow-model](assets/corporate-card-expense-report-workflow-model.png)
 
@@ -194,8 +193,8 @@ Sarah geht zum Portal ihres Unternehmens, meldet sich an und klickt auf **[!UICO
 ![we-finance-home-3](assets/we-finance-home-3.png)
 **Abbildung:** *Organisationsportal*
 
-![employee-Dashboard-3](assets/employee-dashboard-3.png)
-**Abbildung:** *Employee Dashboard*
+![employee-dashboard-3](assets/employee-dashboard-3.png)
+**Abbildung:** *Mitarbeiter-Dashboard*
 
 Der Antrag auf Urlaub wird mit dem Namen und der Angestellten-ID von Sarah geöffnet, die im Formular bereits ausgefüllt sind. Es zeigt auch ihr Urlaubsguthaben und den Verlauf. Sie füllt die Urlaubsdaten aus und reicht den Antrag zur Genehmigung ein.
 
@@ -227,11 +226,11 @@ Der von Sarah eingereichte Urlaubsantrag wird Gloria Rios zur Überprüfung übe
 **inboxAbbildung:** *Glorias Posteingang*
 
 ![leave-](assets/leave-approved.png)
-**authorisedAbbildung: Aufgabe** *öffnen*
+**authorisedAbbildung:** *Aufgabe öffnen*
 
 **Funktionsweise**
 
-Der Übermittlungs-Workflow im Urlaubsantrag löst einen Formular-Workflow aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+Der Übermittlungs-Workflow im Urlaubsantrag löst einen Formular-Workflow aus, der eine Aufgabe in Glorias Posteingang zur Genehmigung erstellt. Überprüfen Sie den Forms Workflow unter `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html` .
 
 ![corporate-card-leave-application-workflow-model](assets/corporate-card-leave-application-workflow-model.png)
 
