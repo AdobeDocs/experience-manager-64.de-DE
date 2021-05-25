@@ -9,24 +9,23 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: ac56a1db-593e-4996-84ec-c9e6d1256059
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 95%
 
 ---
 
-
 # Aktivieren der einmaligen Anmeldung in AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM Forms bietet zwei Möglichkeiten, Single Sign-On (SSO) zu aktivieren: HTTP-Kopfzeilen und SPNEGO.
+AEM forms bietet zwei Möglichkeiten, Single Sign-On (SSO) zu aktivieren: HTTP-Header und SPNEGO.
 
 Wenn die einmalige Anmeldung implementiert ist, sind die AEM Forms-Anmeldeseiten nicht erforderlich und werden nicht angezeigt, sofern der Benutzer bereits durch sein Firmenportal authentifiziert wurde.
 
 Wenn AEM Forms einen Benutzer mithilfe keiner der Methoden authentifizieren kann, wird der Benutzer zu einer Anmeldungsseite umgeleitet.
 
-## Einmalige Anmeldung (Single Sign-On, SSO) über HTTP-Kopfzeilen aktivieren {#enable-sso-using-http-headers}
+## Einmalige Anmeldung (Single Sign-On, SSO) über HTTP-Kopfzeilen aktivieren  {#enable-sso-using-http-headers}
 
 Auf der Seite „Portalkonfiguration“ können Sie die einmalige Anmeldung (SSO) zwischen Anwendungen und jeder Anwendung aktivieren, die die Identitätsübermittlung per HTTP-Kopfzeile unterstützt. Wenn die einmalige Anmeldung implementiert ist, sind die AEM Forms-Anmeldeseiten nicht erforderlich und werden nicht angezeigt, sofern der Benutzer bereits durch sein Firmenportal authentifiziert wurde.
 
@@ -145,7 +144,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domäne gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Clientbrowser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
-Wenn der Zugriff auf den Server über den Computernamen, z. B. https://lcserver:8080*,*, erfolgt, sind keine Einstellungen für Internet Explorer erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranetsite behandelt. Bei Verwendung eines voll qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
+Wenn der Zugriff auf den Server über den Computernamen erfolgt (z. B. https://lcserver:8080*,*), sind für Internet Explorer keine Einstellungen erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranetsite behandelt. Bei Verwendung eines voll qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
 
 **Internet Explorer 6.x konfigurieren**
 
@@ -153,20 +152,19 @@ Wenn der Zugriff auf den Server über den Computernamen, z. B. https://lcserver:
 1. Klicken Sie auf das Symbol „Lokales Intranet“ und klicken Sie auf „Websites“.
 1. Klicken Sie auf „Erweitert“ und geben Sie in das Feld „Diese Website zur Zone hinzufügen“ die URL Ihres Formularservers ein. Geben Sie beispielsweise `https://lcserver.um.lc.com`
 1. Klicken Sie wiederholt auf „OK“, bis alle Dialogfelder geschlossen sind.
-1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld Browser-URL `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true` ein.
+1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld für die Browser-URL `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true` ein.
 
 **Mozilla Firefox konfigurieren**
 
-1. Geben Sie in das Feld Browser-URL `about:config` ein
+1. Geben Sie in das Feld für die Browser-URL `about:config` ein.
 
    Das Mozilla Firefox-Dialogfeld „about:config“ wird angezeigt.
 
 1. Geben Sie in das Feld „Filter“ den Wert `negotiate` ein.
 1. Klicken Sie in der angezeigten Liste auf „network.negotiate-auth.trusted-uris“ und geben Sie einen der folgenden Befehle Ihrer Umgebung entsprechend ein:
 
-   `.um.lc.com`- Konfiguriert Firefox, um SPNEGO für jede URL zuzulassen, die mit um.lc.com endet. Stellen Sie sicher, dass Sie den Punkt (&quot;&quot;) einschließen. am Anfang.
+   `.um.lc.com`- Konfiguriert Firefox so, dass SPNEGO für jede URL zugelassen wird, die auf um.lc.com endet. Stellen Sie sicher, dass Sie den Punkt (&quot;.&quot;) am Anfang.
 
    `lcserver.um.lc.com`–  – Hierdurch wird Firefox so konfiguriert, dass SPNEGO nur für bestimmte Server zugelassen wird. Beginnen Sie diesen Wert nicht mit einem Punkt („.“).
 
 1. Testen Sie die Konfiguration durch Zugriff auf die Anwendung. Die Begrüßungsseite der Zielanwendung sollte angezeigt werden.
-
