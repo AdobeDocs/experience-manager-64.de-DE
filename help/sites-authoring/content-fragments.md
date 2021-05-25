@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
-translation-type: tm+mt
-source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+exl-id: bbe4ae86-e9b8-4c3f-ada3-82470e371c4e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 98%
 
 ---
-
 
 # Seitenbearbeitung mit Inhaltsfragmenten{#page-authoring-with-content-fragments}
 
@@ -71,7 +70,7 @@ Inhaltsfragmente ermöglichen:
    * Kann darauf vertrauen, dass zugehörige Medieninhalte auf Relevanz geprüft werden.
    * Kann Ad-hoc-Inhaltsvarianten direkt vornehmen und gleichzeitig sicherstellen, dass diese Varianten im Fragment weiter zentral verwaltet werden.
 
-## Hinzufügen eines Inhaltsfragments zu Ihrer Seite         {#adding-a-content-fragment-to-your-page}
+## Hinzufügen eines Inhaltsfragments zu Ihrer Seite          {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 
@@ -94,8 +93,8 @@ Inhaltsfragmente ermöglichen:
    >
    >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
-   >* [Responsives Layout](/help/sites-authoring/responsive-layout.md)
-   >* [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
+   >* [Responsives Layout  ](/help/sites-authoring/responsive-layout.md)
+   * [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
 
 
 ## Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
@@ -119,8 +118,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
    * Eine Auswahl ist verfügbar, wenn das Fragment mit einer entsprechenden Vorlage erstellt wurde. 
 
    >[!NOTE]
-   >
-   >Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
+   Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
 
 * **[!UICONTROL Variante]**
 
@@ -141,8 +139,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **[!UICONTROL Bearbeiten]** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments.md).
 
 >[!CAUTION]
->
->Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
+Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
 ## Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
 
@@ -157,28 +154,20 @@ Bei Zwischeninhalten können Sie:
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]
->
->Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
+Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
 
 ![cfm-6420-02](assets/cfm-6420-02.png)
 
 >[!NOTE]
->
->Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
->
->Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
+Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
+Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
 >[!CAUTION]
->
->Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
->
->Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
->
->* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.\
-   >  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
->* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
-
->
+Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
+* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.\
+   Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
+* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
 
 
@@ -187,12 +176,10 @@ Bei Zwischeninhalten können Sie:
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
 
 >[!NOTE]
->
->Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder zur Seite.
+Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
 
 >[!NOTE]
->
->Wenn auf einer Seite mehrere Inhaltsfragmente vorhanden sind, werden in der Registerkarte **[!UICONTROL Zugehörige Inhalte]** die Assets angezeigt, die für alle Fragmente geeignet sind.
+Wenn auf einer Seite mehrere Inhaltsfragmente vorhanden sind, werden in der Registerkarte **[!UICONTROL Zugehörige Inhalte]** die Assets angezeigt, die für alle Fragmente geeignet sind.
 
 Nachdem Sie ein Fragment mit zugehörigen Inhalten zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**[!UICONTROL Zugehörige Inhalte]**) im Seitenbereich geöffnet.
 
@@ -219,4 +206,3 @@ Fragmente müssen veröffentlicht werden, damit sie auf Ihren veröffentlichten 
 
 * Ein Fragment kann veröffentlicht werden, nachdem Sie [das Fragment in der Asset-Konsole erstellt haben](/help/assets/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Wenn ein *unveröffentlichtes Fragment* auf einer Seite verwendet wird, die veröffentlicht wird, kann das Fragment ebenfalls zu diesem Zeitpunkt veröffentlicht werden.
-
