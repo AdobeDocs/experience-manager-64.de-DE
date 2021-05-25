@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
-translation-type: tm+mt
-source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
+exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 84%
+ht-degree: 90%
 
 ---
-
 
 # Bearbeiten der Seiteneigenschaften{#editing-page-properties}
 
@@ -26,7 +25,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Allgemein {#basic}
+### Einfach {#basic}
 
 * **Titel**
 
@@ -54,12 +53,12 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Branding**
 
-   Wenden Sie eine konsistente Markenidentität über mehrere Seiten hinweg an, indem Sie an jeden Seitentitel ein Markenmuster anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+   Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-   * **Außerkraftsetzen**  - Markenslug auf dieser Seite definieren.
-      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, sie haben auch ihre **Override**-Werte eingestellt.
-   * **Wert**  außer Kraft setzen: Der Text der Markenfolie, der an den Seitentitel angehängt wird.
-      * Der Wert wird nach einem Pipe-Zeichen wie &quot;Radfahren in der Toskana&quot;an den Seitentitel angehängt | Immer bereit für die WKND&quot;
+   * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren **Überschreiben**-Werte sind auch eingestellt.
+   * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
+      * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 
 * **Seitentitel**
 
@@ -93,7 +92,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
 
-   Beispiel: Wenn die Vanity-URL auf w `elcome`auf die Seite gesetzt ist, die durch den Pfad / `v1.0/startpage`für die Website h `ttp://example.com,` identifiziert wird, wäre h `ttp://example.com/welcome`die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
+   Wenn die Vanity-URL beispielsweise auf w `elcome`auf die Seite gesetzt ist, die durch den Pfad / `v1.0/startpage`für die Website h `ttp://example.com,` identifiziert wird, wäre h `ttp://example.com/welcome`die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -131,7 +130,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >
    >Beispiel: Wenn Sie einen Alias `latin-lang` für den Knoten `/content/we-retail/spanish` definieren, kann auf diese Seite über `/content/we-retail/latin-language` zugegriffen werden.
    >
-   >Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter Best Practices für SEO- und URL-Verwaltung](/help/managing/seo-and-url-management.md#localized-page-names)
+   >Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter SEO und URL-Verwaltung Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Zugelassene Vorlagen**
 
@@ -145,7 +144,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    >[!CAUTION]
    >
-   >Die Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions)** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem `granite:AuthenticationRequired`-Mixin. Wenn Seitenberechtigungen mithilfe veralteter CUG-Konfigurationen konfiguriert werden, die auf der Eigenschaft cq:cugEnabled basieren, wird unter **Authentifizierungsanforderung** eine Warnmeldung angezeigt. Die Option kann nicht bearbeitet werden. Die Option kann auch nicht bearbeitet werden.[](/help/sites-authoring/editing-page-properties.md#permissions)
+   >Die Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions)** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein des `granite:AuthenticationRequired`-Mixins. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft cq:cugEnabled basieren, wird unter **Authentifizierungspflicht** eine Warnmeldung angezeigt und die Option kann nicht bearbeitet werden. Die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions) sind auch nicht bearbeitbar.
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
@@ -189,7 +188,7 @@ Definieren Sie die Experience Fragment-Variante, die zum Generieren von Metadate
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung   {#personalization}
+### Personalisierung {#personalization}
 
 * **Personalisierung**
 
@@ -207,14 +206,14 @@ Definieren Sie die Experience Fragment-Variante, die zum Generieren von Metadate
 
    >[!CAUTION]
    >
-   >Die Registerkarte **Berechtigungen** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem `granite:AuthenticationRequired`-Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
+   >Die Registerkarte **Berechtigungen** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein des `granite:AuthenticationRequired`-Mixins. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
 
    >[!NOTE]
    >
-   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Weitere Informationen finden Sie im Dokument [Benutzer-, Gruppen- und Zugriffsberechtigungsverwaltung](/help/sites-administering/user-group-ac-admin.md).
+   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Weitere Informationen finden Sie im Dokument [Administration für Benutzer-, Gruppen- und Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md) .
 
 ### Blueprint {#blueprint}
 
@@ -248,7 +247,7 @@ Sie können Seiteneigenschaften an folgenden Stellen definieren:
 
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
-### In der Sites-Konsole (einzelne Seite):{#from-the-sites-console-single-page}
+### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
 
 durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
 
@@ -275,14 +274,14 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Wählen Sie **Eigenschaften öffnen**. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften bearbeiten können, sortiert nach der entsprechenden Registerkarte. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
+1. Wählen Sie **Eigenschaften öffnen** aus. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften bearbeiten können, sortiert nach der entsprechenden Registerkarte. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
 
    * **Abbrechen**
    * **Speichern und schließen**
 
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
 
-### In der Sites-Konsole (mehrere Seiten):{#from-the-sites-console-multiple-pages}
+### In der Sites-Konsole (mehrere Seiten) {#from-the-sites-console-multiple-pages}
 
 In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
@@ -347,4 +346,3 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 >[!NOTE]
 >
 >Die Seitenkomponente kann so konfiguriert werden, dass die für die Massenbearbeitung verfügbaren Felder angegeben werden. Informationen dazu finden Sie unter [Konfigurieren der Seite für Massenbearbeitung von Seiteneigenschaften](/help/sites-developing/bulk-editing.md).
-
