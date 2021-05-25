@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 1ab81235-2627-4304-bbf2-71598de948db
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 93%
 
 ---
-
 
 # Erstellen einer effektiven Einstiegsseite für Newsletter{#creating-an-effective-newsletter-landing-page}
 
@@ -31,8 +30,8 @@ Gehen Sie folgendermaßen vor, um eine effektive Startseite zu erstellen:
 
 >[!NOTE]
 >
->Die Adobe plant nicht, diese Funktion weiter zu verbessern (Verwaltung von Interessenten und Listen).\
->Es wird empfohlen, [Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md) zu nutzen.
+>Adobe plant nicht, diese Funktion weiter auszubauen (Leads und Listen verwalten).\
+>Es wird empfohlen, [Adobe Campaign und seine AEM Integration](/help/sites-administering/campaign.md) zu nutzen.
 
 ## Erstellen einer Liste für einen Newsletter {#creating-a-list-for-the-newsletter}
 
@@ -88,7 +87,7 @@ Gehen Sie folgendermaßen vor, um Teaser für eine effektive Newsletter-Startsei
 
 1. Erstellen Sie eine Kampagne mit zwei Teasern; kennzeichnen Sie einen Teaser als &quot;geschäftlich&quot; und belassen Sie den anderen ohne Kennzeichnung.
 
-## Push-Übertragung von Inhalt an Abonnenten {#pushing-content-to-subscribers}
+## Push-Übertragung von Inhalt an Abonnenten  {#pushing-content-to-subscribers}
 
 Übernehmen Sie alle Änderungen an Seiten über die Newsletter-Funktion in MCM. Sie können dann aktualisierte Inhalte an Abonnenten weitergeben.
 
