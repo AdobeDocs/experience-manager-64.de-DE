@@ -2,20 +2,19 @@
 title: Dokumentfragmente
 seo-title: Dokumentfragmente
 description: Mit Dokumentfragmenten wie Text, Listen, Bedingungen und Layout-Fragmente können Sie in Correspondence Management die statischen, dynamischen und wiederholbaren Komponenten von Kundenkorrespondenz gestalten.
-seo-description: Dokumentfragmente, wie Text-, Listen-, Bedingungs- und Layout-Fragmente, können Sie in Correspondence Management die statischen, dynamischen und wiederholbaren Komponenten der Kundenkorrespondenz bilden.
+seo-description: Dokumentfragmente, wie Text, Listen, Bedingungen und Layout-Fragmente, können Sie in Correspondence Management die statischen, dynamischen und wiederholbaren Komponenten der Kundenkorrespondenz bilden.
 uuid: 053a17e5-69a5-463d-af4f-46a86534158f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1f48548c-4222-454d-ad16-53da37170de2
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Korrespondenzverwaltung
+exl-id: 54159851-bae1-4efd-8c8f-3a855776ecc4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 91%
 
 ---
-
 
 # Dokumentfragmente {#document-fragments}
 
@@ -31,4 +30,3 @@ Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, 
 
 * **List:** Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren.
 * **Layout-Fragment**: Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie „Adresse“ und „Referenz“ enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. Die Layouts (XDPs) werden in Designer erstellt und dann in AEM Forms hochgeladen.
-
