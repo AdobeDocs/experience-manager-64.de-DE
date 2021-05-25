@@ -10,92 +10,91 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
-
 
 # Communities-Benachrichtigungen {#communities-notifications}
 
 ## Überblick {#overview}
 
-AEM Communities stellt einen Benachrichtigungsabschnitt bereit, der Ereignisse anzeigt, die für das Mitglied der Community von Interesse sind.
+AEM Communities bietet einen Benachrichtigungsabschnitt, in dem Ereignisse angezeigt werden, die für das angemeldete Community-Mitglied von Interesse sind.
 
-Benachrichtigungen ähneln [Aktivitäten](essentials-activities.md) und [Abonnements](subscriptions.md), da sie möglicherweise aus
+Benachrichtigungen ähneln [Aktivitäten](essentials-activities.md) und [Abonnements](subscriptions.md), da sie aus
 
 * Das Mitglied, das Inhalte veröffentlicht
-* Das Mitglied, das sich für ein anderes Mitglied entschieden hat
-* Das Mitglied, das sich dafür entschieden hat, bestimmten Themen, Artikeln und anderen Inhaltsthreads zu folgen
+* Das Mitglied, das einem anderen Mitglied folgt
+* Das Mitglied, das bestimmte Themen, Artikel und andere Threads von Inhalten verfolgt
 
-Was Benachrichtigungen von Aktivitäten und Abonnements unterscheidet, ist
+Was unterscheidet Benachrichtigungen von Aktivitäten und Abonnements?
 
-* Ein Link zum Abschnitt &quot;Benachrichtigungen&quot;ist immer in der Kopfzeile einer Community-Site vorhanden
-   * Aktivitäten erfordern, dass die Stream-Funktion [Aktivität](functions.md#activity-stream-function) in die Struktur der Community-Site einbezogen wird.
-   * Für Abonnement ist [Konfiguration der E-Mail](email.md) erforderlich
-* Die Implementierung von Benachrichtigungen erfolgt über skalierbare und Plugin-fähige Kanal
+* Ein Link zum Benachrichtigungsabschnitt ist immer in der Kopfzeile einer Community-Site vorhanden
+   * Für Aktivitäten muss die [Aktivitäts-Stream-Funktion](functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen werden.
+   * Abonnements erfordern [Konfiguration von E-Mail](email.md)
+* Die Implementierung von Benachrichtigungen erfolgt über skalierbare und Pluggable Kanäle
    * Aktivitäten sind nur im Internet verfügbar
-   * Abonnement stehen nur per E-Mail zur Verfügung
+   * Abonnements sind nur per E-Mail verfügbar
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack) sind die verfügbaren Benachrichtigungs-Kanal
+Ab Communities [FP1](deploy-communities.md#latestfeaturepack) sind die verfügbaren Benachrichtigungskanäle
 
-* Der Web-Kanal, auf den über den Link `Notifications` zugegriffen wird
-* Der E-Mail-Kanal, der verfügbar ist, wenn E-Mail richtig konfiguriert ist
+* Der Webkanal, auf den über den Link `Notifications` zugegriffen wird
+* Der E-Mail-Kanal, der bei ordnungsgemäßer E-Mail-Konfiguration verfügbar ist
 
-Zukünftige Kanal sind mobile Geräte und Desktop-PCs.
+Zukünftige Kanäle sind Mobilgeräte und Desktop.
 
 ### Voraussetzungen {#requirements}
 
-**Email konfigurieren**
+**E-Mail konfigurieren**
 
-Die E-Mail-Benachrichtigung muss so konfiguriert sein, dass der E-Mail-Kanal funktioniert.
+E-Mail muss konfiguriert werden, damit der E-Mail-Kanal funktioniert.
 
-Anweisungen zum Einrichten der E-Mail finden Sie unter [Konfigurieren der E-Mail](analytics.md).
+Anweisungen zum Einrichten von E-Mails finden Sie unter [Konfigurieren von E-Mail](analytics.md).
 
-**Verfolgung aktivieren**
+**Aktivieren Sie die Folgen**
 
-Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [calendar](calendar.md), [fileLibrary](file-library.md) und [comments](comments.md).
+Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind möglich: [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [calendar](calendar.md), [filelibrary](file-library.md) und [comments](comments.md).
 
 Beachten Sie, dass
 
-* Komponenten, die in Community [Site-Vorlagen](sites.md) und [Gruppenvorlagen](tools-groups.md) verwendet werden, können bereits konfiguriert werden, um Folgendes zuzulassen
+* Komponenten, die in der Community [Site-Vorlagen](sites.md) und [Gruppenvorlagen](tools-groups.md) verwendet werden, können bereits so konfiguriert sein, dass Folgendes zulässig ist
 
-* Die Profile der Mitgliedstaaten sind bereits so konfiguriert, dass andere Mitglieder folgen können
+* Mitgliederprofile sind bereits so konfiguriert, dass andere Mitglieder folgen können
 
-## Benachrichtigungen von{#notifications-from-following}
+## Benachrichtigungen aus folgenden {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-Mit der Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, Abonnements und/oder Benachrichtigungen verfolgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt ist, können Sie eine Auswahl ein- oder ausschalten. Die Auswahl `Email Subscriptions` ist nur bei der Konfiguration vorhanden.
+Die Schaltfläche **Folgen** bietet die Möglichkeit, Einträgen als Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt wird, können Sie eine Auswahl ein- oder ausschalten. Die Auswahl `Email Subscriptions` ist nur bei Konfiguration vorhanden.
 
-Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Nach** geändert. Aus praktischen Gründen können Sie `Unfollow All` auswählen, um alle Methoden auszuschalten.
+Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Nach**. Zur Vereinfachung können Sie `Unfollow All` auswählen, um alle Methoden zu deaktivieren.
 
 Die Schaltfläche **Folgen** wird angezeigt
 
 * Beim Anzeigen des Profils eines anderen Mitglieds
-* Auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs
-   * Folgt der gesamten Aktivität für diese allgemeine Funktion
-* Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Beantwortung einer Frage oder einen Blog-Artikel
-   * Folgt der gesamten Aktivität für diesen spezifischen Eintrag
+* Auf einer Hauptseite mit Funktionen wie Foren, Fragen und Antworten und Blogs
+   * Folgt allen Aktivitäten für diese allgemeine Funktion
+* Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Frage oder einen Blog-Artikel
+   * Folgt allen Aktivitäten für diesen spezifischen Eintrag
 
-## Verwalten der Benachrichtigungseinstellungen {#managing-notification-settings}
+## Verwalten von Benachrichtigungseinstellungen {#managing-notification-settings}
 
-Wenn Sie auf der Seite &quot;Benachrichtigungen&quot;den Link &quot;Benachrichtigungseinstellungen&quot;auswählen, können Sie verwalten, wie Benachrichtigungen empfangen werden.
+Über den Link Benachrichtigungseinstellungen auf der Seite Benachrichtigungen können die einzelnen Mitglieder verwalten, wie Benachrichtigungen empfangen werden.
 
-Der Web-Kanal ist immer aktiviert.
+Der Webkanal ist immer aktiviert.
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-Der E-Mail-Kanal, der auf der richtigen [Konfiguration von email](email.md) basiert, stellt dieselben Einstellungen wie für den Web-Kanal bereit.
+Der E-Mail-Kanal, der auf einer ordnungsgemäßen [Konfiguration von E-Mail](email.md) basiert, bietet dieselben Einstellungen wie für den Webkanal.
 
 Der E-Mail-Kanal ist standardmäßig deaktiviert.
 
 ![chlimage_1-256](assets/chlimage_1-256.png)
 
-Es kann von einem Mitglied aktiviert werden, hängt aber dennoch von der Konfiguration der E-Mail ab.
+Es kann von einem Mitglied aktiviert werden, hängt aber dennoch von der E-Mail-Konfiguration ab.
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
@@ -103,15 +102,14 @@ Es kann von einem Mitglied aktiviert werden, hängt aber dennoch von der Konfigu
 
 ### Webbenachrichtigungen {#web-notifications}
 
-Ein [Assistent, der eine Community-Site](sites-console.md) erstellt hat, enthält jetzt einen Link zur Funktion `Notifications` in der Kopfzeilenleiste der Site oberhalb des Banners. Im Gegensatz zu Nachrichten werden Benachrichtigungen für jede Community-Site erstellt, während Nachrichten während des Site-Erstellungsprozesses aktiviert werden müssen.
+Ein [Assistent, der die Community-Site](sites-console.md) erstellt hat, enthält jetzt einen Link zur Funktion `Notifications` in der Kopfzeilenleiste der Site oberhalb des Banners. Im Gegensatz zu Nachrichten werden Benachrichtigungen für jede Community-Site erstellt, während Nachrichten während des Site-Erstellungsprozesses aktiviert werden müssen.
 
-Wenn Sie die veröffentlichte Site besuchen, werden bei Auswahl des Links `Notifications` alle Benachrichtigungen für das Mitglied angezeigt.
+Beim Besuch der veröffentlichten Site werden durch Auswahl des Links `Notifications` alle Benachrichtigungen für das Mitglied angezeigt.
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
 ### E-Mail-Benachrichtigungen {#email-notifications}
 
-Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail mit einer Verknüpfung zum Inhalt im Web.
+Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail mit einem Link zum Inhalt im Web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
-
