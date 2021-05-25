@@ -6,14 +6,13 @@ seo-description: Verwenden von Metadaten zum Ausfüllen von Informationen in ein
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
-translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 98%
 
 ---
-
 
 # Verwenden von Metadaten in einer E-Mail-Benachrichtigung  {#use-metadata-in-an-email-notification}
 
@@ -98,7 +97,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Verwenden von systemgenerierten Metadaten in einer E-Mail-Benachrichtigung {#using-system-generated-metadata-in-an-email-notification}
+## Verwenden von systemgenerierten Metadaten in einer E-Mail-Benachrichtigung  {#using-system-generated-metadata-in-an-email-notification}
 
 Eine AEM Forms-Anwendung bietet verschiedene standardmäßige Metadatenvariable (Schlüssel-Wert-Paare). Sie können diese Variablen in einer E-Mail-Vorlage verwenden. Der Wert der Variable basiert auf der verknüpften Formularanwendung. Die folgende Tabelle enthält alle Metadatenvariablen, die standardmäßig zur Verfügung stehen:
 
@@ -159,7 +158,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 [ECMAScript](https://de.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für clientseitige Skript- und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
 
-1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. Die URL lautet `https://[server]:[port]/crx/de/index.jsp`
+1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. Die URL lautet `https://[server]:[port]/crx/de/index.jsp` .
 
 1. Navigieren Sie zu /apps/fd/dashboard/scripts/metadataScripts. Erstellen Sie eine Datei mit der Erweiterung „.ecma“. Beispiel: usermetadata.ecma
 
