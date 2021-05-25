@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
-translation-type: tm+mt
-source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 40%
 
 ---
-
 
 # Inhaltsfragmentvorlagen{#content-fragment-templates}
 
@@ -40,11 +39,11 @@ Sie können Ihre Website-spezifischen Vorlagen für Inhaltsfragmente erstellen u
 
 * `/apps/settings/dam/cfm/templates`
 
-   Der Speicherort zum Überlagern von vordefinierten Vorlagen oder Bereitstellen kundenspezifischer, anwendungsweiter Vorlagen, die zur Laufzeit nicht erweitert/geändert werden sollen.
+   Der Speicherort für die Überlagerung von nativen Vorlagen oder die Bereitstellung kundenspezifischer, anwendungsweiter Vorlagen, die zur Laufzeit nicht erweitert/geändert werden sollen.
 
 * `/conf/global/settings/dam/cfm/templates`
 
-   Der Speicherort für kundenspezifische Instanzvorlagen, die zur Laufzeit geändert werden müssen.
+   Der Speicherort für instanzweite kundenspezifische Vorlagen, die zur Laufzeit geändert werden müssen.
 
 Die Rangfolge lautet (in absteigender Reihenfolge) `/conf`, `/apps`, `/libs`.
 
@@ -56,7 +55,7 @@ Die Rangfolge lautet (in absteigender Reihenfolge) `/conf`, `/apps`, `/libs`.
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
    >
    >
 1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
@@ -126,12 +125,12 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>required<br /> </p> </td> 
-   <td>Der Titel der Vorlage (angezeigt im Assistenten <strong>Fragment erstellen</strong>).</td> 
+   <td>Der Titel der Vorlage (angezeigt im Assistenten <strong>Fragment erstellen</strong> ).</td> 
   </tr> 
   <tr> 
    <td><code>jcr:description</code></td> 
    <td><p><code>String</code></p> <p>optional</p> </td> 
-   <td>Ein Text, der den Zweck der Vorlage beschreibt (angezeigt im Assistenten <strong>Fragment erstellen</strong>).</td> 
+   <td>Ein Text, der den Zweck der Vorlage beschreibt (angezeigt im Assistenten <strong>Fragment erstellen</strong> ).</td> 
   </tr> 
   <tr> 
    <td><code>initialAssociatedContent</code></td> 
@@ -141,12 +140,12 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>erforderlich</p> </td> 
-   <td><p><code>true</code>, wenn die Teilassets, die die Elemente (mit Ausnahme des Übergeordnet-Elements) des Inhaltsfragments darstellen, beim Erstellen des Inhaltsfragments erstellt werden sollten; <em>false</em>, wenn sie "on the fly"erstellt werden sollen.</p> <p><strong>Hinweis</strong>: Derzeit muss dieser Parameter auf  <code>true</code>.</p> </td> 
+   <td><p><code>true</code>, wenn die Teil-Assets, die die Elemente des Inhaltsfragments darstellen (mit Ausnahme des Übergeordneten Elements), bei der Erstellung des Inhaltsfragments erstellt werden sollen; <em>false</em>, wenn sie "on the fly"erstellt werden sollen.</p> <p><strong>Hinweis</strong>: Dieser Parameter muss derzeit auf  <code>true</code>gesetzt werden.</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
    <td><p><code>Long</code></p> <p>erforderlich</p> </td> 
-   <td><p>Version der Inhaltsstruktur; derzeit unterstützt:</p> <p><strong>Hinweis</strong>: Derzeit muss dieser Parameter auf  <code>2</code>.<br /> </p> </td> 
+   <td><p>Version der Inhaltsstruktur; derzeit unterstützt:</p> <p><strong>Hinweis</strong>: Dieser Parameter muss derzeit auf  <code>2</code>gesetzt werden.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -163,7 +162,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>erforderlich</p> </td> 
-   <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. Es ist obligatorisch und muss mindestens einen untergeordneten Knoten für das <strong>Main</strong>-Element enthalten, kann jedoch [1] enthalten.n] untergeordneten Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird die Unterverzweigung "Elemente"in die Unterverzweigung "Modell"des Fragments kopiert.</p> <p>Das erste Element (wie in CRXDE Lite angezeigt) wird automatisch als <i>main</i>-Element betrachtet. der Knotenname ist irrelevant und der Knoten selbst hat keine besondere Bedeutung, abgesehen davon, dass er vom Hauptvermögen dargestellt wird; die anderen Elemente werden als Teilassets behandelt.</p> </td> 
+   <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. Sie ist obligatorisch und muss mindestens einen untergeordneten Knoten für das Element <strong>Main</strong> enthalten, kann jedoch [1..n] untergeordneten Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird der Unterzweig Elemente in den Modellunterzweig des Fragments kopiert.</p> <p>Das erste Element (wie in CRXDE Lite angezeigt) wird automatisch als <i>main</i> -Element betrachtet. der Knotenname ist irrelevant und der Knoten selbst hat keine besondere Bedeutung, abgesehen von der Tatsache, dass er durch das Haupt-Asset dargestellt wird. die anderen Elemente werden als Teil-Assets behandelt.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -185,17 +184,17 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>erforderlich</p> </td> 
-   <td>Der Titel des Elements (angezeigt in der Elementauswahl des Fragmenteditors).</td> 
+   <td>Der Titel des Elements (wird in der Elementauswahl des Fragment-Editors angezeigt).</td> 
   </tr> 
   <tr> 
    <td><code>defaultContent</code></td> 
    <td><p><code>String</code></p> <p>optional</p> <p>default: ""</p> </td> 
-   <td>Anfangsinhalt des Elements; nur verwendet, wenn <code>precreateElements</code><i> = </i><code>true</code></td> 
+   <td>Anfänglicher Inhalt des Elements; nur verwendet, wenn <code>precreateElements</code><i> = </i><code>true</code></td> 
   </tr> 
   <tr> 
    <td><code>initialContentType</code></td> 
    <td><p><code>String</code></p> <p>optional</p> <p>default: <code>text/html</code></p> </td> 
-   <td><p>Typ des anfänglichen Inhalts des Elements; nur verwendet, wenn <code>precreateElements</code><i> = </i><code>true</code>; derzeit unterstützt:</p> 
+   <td><p>Art des anfänglichen Inhalts des Elements; nur verwendet, wenn <code>precreateElements</code><i> = </i><code>true</code>; derzeit unterstützt:</p> 
     <ul> 
      <li><code>text/html</code></li> 
      <li><code>text/plain</code></li> 
@@ -205,7 +204,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>name</code></td> 
    <td><p><code>String</code></p> <p>erforderlich</p> </td> 
-   <td>der interne Name des Elements; muss eindeutig für den Fragmenttyp sein.</td> 
+   <td>Interner Name des Elements; muss für den Fragmenttyp eindeutig sein.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -222,7 +221,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   <tr> 
    <td><code>variations</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>optional</p> </td> 
-   <td>Diese optionale Node enthält die Definition der anfänglichen Variationen des Inhaltsfragments.</td> 
+   <td>Dieser optionale Knoten enthält die Definition der anfänglichen Varianten des Inhaltsfragments.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,20 +237,19 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
   </tr> 
   <tr> 
    <td><code>&lt;<i>variation-name</i>&gt;</code> </td> 
-   <td><p><code>nt:unstructured</code></p> <p>erforderlich, wenn ein Variationsknoten vorhanden ist</p> </td> 
-   <td><p>Definiert eine anfängliche Änderung.<br /> Die Variante wird standardmäßig allen Elementen des Inhaltsfragments hinzugefügt.</p> <p>Die Änderung hat denselben anfänglichen Inhalt wie das entsprechende Element (siehe <code class="code">defaultContent/
+   <td><p><code>nt:unstructured</code></p> <p>erforderlich, wenn ein Variantenknoten vorhanden ist</p> </td> 
+   <td><p>Definiert eine anfängliche Variante.<br /> Die Variante wird standardmäßig allen Elementen des Inhaltsfragments hinzugefügt.</p> <p>Die Variante hat denselben anfänglichen Inhalt wie das entsprechende Element (siehe <code class="code">defaultContent/
        initialContentType</code>).</p> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>erforderlich</p> </td> 
-   <td>Der Titel der Variante (angezeigt im Register <strong>Variation</strong> des Fragmenteditors (linke Leiste)).</td> 
+   <td>Der Titel der Variante (angezeigt auf der Registerkarte <strong>Variation</strong> des Fragmenteditors (linke Leiste).</td> 
   </tr> 
   <tr> 
    <td><code>jcr:desciption</code></td> 
    <td><p><code>String</code></p> <p>optional</p> <p>default: ""</p> </td> 
-   <td>Ein Text, der eine Beschreibung der Variation <span>(angezeigt im Register <strong>Variation</strong> des Fragmenteditors (linke Leiste)).</span></td> 
+   <td>Ein Text, der eine Beschreibung der Variante <span> (angezeigt auf der Registerkarte <strong>Variation</strong> des Fragmenteditors (linke Leiste)) bereitstellt.</span></td> 
   </tr> 
  </tbody> 
 </table>
-
