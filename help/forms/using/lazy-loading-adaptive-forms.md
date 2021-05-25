@@ -7,30 +7,29 @@ uuid: 3ead2b82-f895-4a7b-9683-495fcd94fade
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d570ead9-8f9c-4668-8b23-e8984d9b25e9
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 92d88888-343c-4edb-9b11-8e876539573a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 88%
 
 ---
 
-
 # Leistung großer Formulare mit verzögertem Laden verbessern {#improve-performance-of-large-forms-with-lazy-loading}
 
 ## Einführung in das verzögerte Laden {#introduction-to-lazy-loading}
 
-Wenn Formulare durch Hunderte und Tausende von Feldern groß und komplex werden, erleben die Endbenutzer lange Reaktionszeiten während des Abspielens von Formularen zur Laufzeit. Um die Reaktionszeiten zu minimieren, können Sie adaptive Formulare in logische Fragmente unterteilen und konfigurieren, dass die Initialisierung oder das Laden von Fragmenten aufgeschoben wird, bis das Fragment sichtbar sein soll. Dies wird als „verzögertes Laden“ bezeichnet. Außerdem werden die für verzögertes Laden konfigurierten Fragmente entladen, sobald der Benutzer zu anderen Abschnitten im Formular navigiert und die Fragmente nicht mehr sichtbar sind.
+Wenn Formulare durch Hunderte und Tausende von Feldern groß und komplex werden, erleben die Endbenutzer lange Reaktionszeiten während des Abspielens von Formularen zur Laufzeit. Um die Reaktionszeiten zu minimieren, können Sie adaptive Formulare in logische Fragmente unterteilen und konfigurieren, dass die Initialisierung oder das Laden von Fragmenten aufgeschoben wird, bis das Fragment sichtbar sein soll. Dies wird als „verzögertes Laden“ bezeichnet. Darüber hinaus werden die für verzögertes Laden konfigurierten Fragmente entladen, sobald der Benutzer zu anderen Abschnitten im Formular navigiert und die Fragmente nicht mehr sichtbar sind.
 
 Im Folgenden werden zunächst die Anforderungen und vorbereitenden Schritte vor dem Konfigurieren des verzögerten Ladens erklärt.
 
-## Vorbereiten der Konfiguration von verzögertem Laden {#preparing-to-configure-lazy-loading}
+## Vorbereiten der Konfiguration von verzögertem Laden  {#preparing-to-configure-lazy-loading}
 
 Bevor Sie verzögertes Laden von Fragmenten in Ihrem adaptiven Formular konfigurieren, müssen Sie Strategien entwickeln für das Erstellen von Fragmenten, Identifizieren von Werten, die in den Skripten verwendet oder in andere Fragment referenziert werden, und Definieren von Regeln, die die Sichtbarkeit von Feldern in verzögert geladenen Fragmenten steuern.
 
 * **Identifizieren und Erstellen von**
-FragmentenSie können nur adaptive Formularfragmente für verzögertes Laden konfigurieren. Ein Fragment ist ein eigenständiges Segment, das sich außerhalb eines adaptiven Formulars befindet und über Formulare hinweg wiederverwendet werden kann. Der erste Schritt zur Implementierung von verzögertem Laden besteht also darin, logische Abschnitte in einem Formular zu identifizieren und sie in Fragmente zu konvertieren. Sie können ein Fragment von Grund auf neu erstellen oder ein vorhandenes Formularbedienfeld als Fragment speichern.
+FragmentenSie können nur adaptive Formularfragmente für verzögertes Laden konfigurieren. Ein Fragment ist ein eigenständiges Segment, das sich außerhalb eines adaptiven Formulars befindet und über mehrere Formulare hinweg wiederverwendet werden kann. Der erste Schritt zur Implementierung von verzögertem Laden besteht darin, logische Abschnitte in einem Formular zu identifizieren und sie in Fragmente zu konvertieren. Sie können ein Fragment von Grund auf neu erstellen oder ein vorhandenes Formularfeld als Fragment speichern.
 
     Weitere Informationen zum Erstellen von Fragmenten finden Sie unter [Adaptive Formularfragmente](/help/forms/using/adaptive-form-fragments.md).
 
@@ -85,4 +84,3 @@ Weiterhin sollten Sie Folgendes beim Entwickeln von Skripten für das verzögert
 * Über die Funktion zum Zurücksetzen des Bereichs können Sie alle sichtbaren Elemente im Bereich zurückzusetzen, indem Sie den folgenden Ausdruck für ein Klickereignis verwenden.
 
    guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
-
