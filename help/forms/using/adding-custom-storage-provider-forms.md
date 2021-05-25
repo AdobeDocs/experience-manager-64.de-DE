@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formularportal
+exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 75%
 
 ---
-
 
 # Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“{#custom-storage-for-drafts-and-submissions-component}
 
@@ -24,14 +23,14 @@ ht-degree: 75%
 
 Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
 
-Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung eines Formulars verknüpften Benutzerdaten im Knoten `/content/forms/fp` in der Veröffentlichungsinstanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
+Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars im Knoten `/content/forms/fp` in der Veröffentlichungsinstanz verknüpft sind. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
 
 ## Voraussetzungen  {#prerequisites}
 
 * Aktivieren Sie [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* Erstellen einer [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
+* Erstellen Sie eine [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
 * Aktivieren Sie [adaptive Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Informationen zu [Implementierungsdetails der benutzerdefinierten Datenspeicherung](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Erfahren Sie mehr über [Implementierungsdetails des benutzerdefinierten Speichers](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
@@ -98,7 +97,7 @@ public interface DraftDataService {
 }
 ```
 
-## Übermittlungsdatendienst {#submission-data-service}
+## Übermittlungsdatendienst  {#submission-data-service}
 
 Um das Speichern der Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService`-Schnittstelle implementieren. Im Folgenden Beispielcode werden die Methoden und die Argumente beschrieben.
 
@@ -185,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die Schnittstelle FPKeyGeneratorService implementieren, deren Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes gesendete Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
+Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die Schnittstelle FPKeyGeneratorService implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes gesendete Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -204,10 +203,9 @@ Mit der folgenden Anmerkung können Sie die Servicebewertung für die mit dem ob
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Um die oben stehende Anmerkung zu verwenden, importieren Sie Folgendes in Ihr Projekt:
+Um die obige Anmerkung zu verwenden, importiert Folgendes in Ihr Projekt:
 
 ```
 import org.apache.felix.scr.annotations.Properties;
  import org.apache.felix.scr.annotations.Property;
 ```
-
