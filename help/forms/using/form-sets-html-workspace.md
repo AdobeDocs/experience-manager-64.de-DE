@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 4e39f6dd-b7a3-4c6c-be1f-66b9a5743352
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 73%
 
 ---
-
 
 # Das Arbeiten mit Formularsätzen in AEM Forms Workspace {#working-with-formsets-in-aem-forms-workspace}
 
@@ -26,22 +25,22 @@ AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können meh
 
 ## Ein Formularsatz in der AEM Forms Workspace-App dem Startpunkt zuweisen{#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br} 
 
-1. Erstellen Sie den Geschäftsprozess-Arbeitsablauf in Workbench. Weitere Informationen finden Sie unter [Workbench help](https://www.adobe.com/go/learn_aemforms_workbench_63).
-1. Wählen Sie in den Prozesseigenschaften des Startpunkts **Ein CRX-Asset** in Präsentation und Daten verwenden.
+1. Erstellen Sie den Geschäftsprozess-Arbeitsablauf in Workbench. Weitere Informationen finden Sie unter [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).
+1. Wählen Sie in den Prozesseigenschaften des Startpunkts **Verwenden Sie ein CRX-Asset** in Präsentation und Daten.
 
-   ![1-1](assets/1-1.png)
+   ![3-1](assets/1-1.png)
 
-1. Klicken Sie auf ![Durchsuchen](assets/browse.png) (Durchsuchen) neben dem CRX-Asset-Pfad. Das Dialogfeld „Formularelement“ wird angezeigt.
+1. Klicken Sie neben dem CRX-Asset-Pfad auf ![Durchsuchen](assets/browse.png) (Durchsuchen). Das Dialogfeld „Formularelement“ wird angezeigt.
 
    ![2](assets/2.png)
 
-1. Klicken Sie auf die Registerkarte **Formularsatz**, wählen Sie den entsprechenden Formularsatz aus der Liste und klicken Sie dann auf **OK**.
+1. Klicken Sie auf die Registerkarte **Formularsatz**, wählen Sie den entsprechenden Formularsatz aus der Liste aus und klicken Sie dann auf **OK**.
 
 1. Stellen Sie die Anwendung bereit, nachdem Sie andere relevante Prozesseigenschaften aktualisiert haben.
 
 ## Die Verwendung von Formularsätzen in AEM Forms Workspace {#using-formset-in-nbsp-aem-forms-workspace}
 
-Sobald ein Formularsatz an einen Startpunkt angehängt ist, kann der Startpunkt wie jeder andere Startpunkt aus dem AEM Forms Workspace aufgerufen werden.
+Sobald ein Formularsatz an einen Startpunkt angehängt ist, kann der Startpunkt wie jeder andere Startpunkt auch über den AEM Forms-Arbeitsbereich aufgerufen werden.
 
 Folgende Vorgänge von Formularsätzen werden von AEM Forms Workspace unterstützt:
 
@@ -58,4 +57,3 @@ Folgende Vorgänge von Formularsätzen werden von AEM Forms Workspace unterstüt
 >[!NOTE]
 >
 >Um eine Leistungsverbesserung zu erreichen, sind alle Workspace-Schaltflächen (Zurück, Weiter, Speichern, Senden und weitere) während des Wechselns zwischen Formularen innerhalb eines Formularsatzes deaktiviert, bis das entsprechende Formular vollständig generiert wird.
-
