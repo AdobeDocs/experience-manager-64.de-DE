@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 94%
 
 ---
-
 
 # Suche{#search-features}
 
@@ -44,7 +43,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 ## Suchen und Filtern {#search-and-filter}
 
-So durchsuchen und filtern Sie Ressourcen: 
+So durchsuchen und filtern Sie Ressourcen:
 
 1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Es werden Empfehlungen angezeigt, die Sie dann auswählen können:
 
@@ -57,7 +56,7 @@ So durchsuchen und filtern Sie Ressourcen:
 1. Falls erforderlich, können Sie den Positionsfilter entfernen (wählen Sie dazu **X** neben dem Filter aus, den Sie entfernen möchten), um alle Konsolen/Ressourcentypen zu durchsuchen.
 1. Die Ergebnisse werden angezeigt, und zwar gruppiert nach Konsole und Ressourcentyp.
 
-   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**: 
+   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
    ![screen_shot_2018-03-23at101523](assets/screen_shot_2018-03-23at101523.png)
 
@@ -120,4 +119,3 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
-
