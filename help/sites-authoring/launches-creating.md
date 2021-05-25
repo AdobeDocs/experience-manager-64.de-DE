@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 4b9d2f5f-aae7-4366-b6a6-a8277155cee9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 98%
 
 ---
-
 
 # Erstellen von Launches{#creating-launches}
 
@@ -51,7 +50,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    >[!NOTE]
    >
-   >In der **Sites** Console können Sie auch den [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
+   >In der **Sites**-Konsole können Sie auch den [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
    >
    >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet.
 
@@ -85,7 +84,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren einen Sinn ergeben.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Mit dieser Option wird dies erreicht, indem der Launch eine [Live-Kopie](/help/sites-administering/msm.md) erstellt wird.
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Diese Option erreicht dies, indem der Launch zu einer [Live Copy](/help/sites-administering/msm.md) gemacht wird.
 
       Standardmäßig ist diese Option aktiviert.
 
@@ -125,7 +124,7 @@ Die Auswahl dieser Option bewirkt Folgendes:
 >
 >Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
 
-### Erstellen von verschachtelten Launches   {#creating-a-nested-launch}
+### Erstellen von verschachtelten Launches  {#creating-a-nested-launch}
 
 Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Launches) bietet Ihnen die Möglichkeit, einen Launch aus einem vorhandenen Launch zu erstellen, sodass Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch erneut vornehmen zu müssen.
 
@@ -170,4 +169,3 @@ Sie können einen Launch aus der [Launch-Konsole](/help/sites-authoring/launches
 >[!CAUTION]
 >
 >Durch Löschen eines Launches werden der Launch selbst sowie alle nachfolgenden verschachtelten Launches entfernt.
-
