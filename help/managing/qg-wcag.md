@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 92%
 
 ---
-
 
 # Kurzanleitung zu WCAG 2.0{#quick-guide-to-wcag}
 
@@ -38,15 +37,15 @@ Absicht von WCAG 2.0 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 
 * Sind **technologie-agnostisch:**
 
-   Mit anderen Worten, Richtlinien, die auf eine Reihe von Webinhalt-Formaten angewendet werden können, nicht nur HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
+   Anders ausgedrückt: Richtlinien, die auf eine Reihe von Web-Inhaltsformaten angewendet werden können, nicht nur auf HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
 
-* Sind **testbar:**
+* Sind **prüfbar:**
 
-   Jede Leitlinie wird so geschrieben, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Zugänglichkeitsexperten generell zustimmt, dass die Leitlinie eingehalten wurde. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht. WCAG 2.0 wurde mit dem Ziel verfasst, die Subjektivität zu reduzieren, die in einigen der WCAG 1.0-Richtlinien und -Kontrollpunkte vorhanden war.
+   Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wurde. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht. WCAG 2.0 wurde mit dem Ziel verfasst, die Subjektivität zu reduzieren, die in einigen der WCAG 1.0-Richtlinien und -Kontrollpunkte vorhanden war.
 
 * Unterstützung einer **priorisierten und kontextabhängigen Implementierung:**
 
-   Wie bei WCAG 1.0 werden die WCAG 2.0-Richtlinien in Bezug auf die voraussichtlichen Auswirkungen, die sich aus der Nichtbefolgung einer Leitlinie auf eine bestimmte Gruppe von Benutzern mit Behinderungen ergeben, vorrangig behandelt. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Web-Technologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. von Anwendern verlangen, dass sie über spezielle unterstützende Technologien und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
+   Wie bei WCAG 1.0 werden den WCAG 2.0-Richtlinien Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Benutzern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Web-Technologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. von Anwendern verlangen, dass sie über spezielle unterstützende Technologien und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.0 wesentlich beeinflusst.
 
