@@ -2,16 +2,15 @@
 title: Optimierte Sortierung von Assets in AEM
 description: Erfahren Sie, wie AEM Assets mit der serverseitigen Sortierung Ordner-Assets oder Suchanfragen in einem Durchgang sortiert, anstatt sie in Batches auf Clientseite zu verarbeiten.
 contentOwner: AG
-feature: Search
+feature: Suchen
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '442'
 ht-degree: 93%
 
 ---
-
 
 # Optimierte Sortierung von Assets in AEM {#enhanced-sorting-of-assets-in-aem}
 
@@ -21,7 +20,7 @@ Die Suchfunktion von Adobe Experience Manager (AEM) Assets wurde verbessert, um 
 
 AEM Assets setzt auf eine serverseitige Sortierung, um alle Assets (unabhängig von ihrer Größe) in einem Ordner oder in einer Suchabfrage in einem Schritt und nicht stapelweise auf Clientseite zu sortieren.  Auf diese Weise können per Prefetch abgerufene Ergebnisse schnell in der Benutzeroberfläche angezeigt werden. Der Sortiervorgang wird hierdurch responsiver und schneller. 
 
-## Sortieren von Assets in der Listenansicht {#sorting-assets-in-list-view}
+## Sortieren von Assets in der Listenansicht  {#sorting-assets-in-list-view}
 
 Mit AEM Assets können Sie Ordner-Assets basierend auf den folgenden Feldern sortieren: 
 
@@ -83,11 +82,10 @@ Mit AEM Assets können Sie Timeline-Einträge chronologisch sortieren, wie z. B
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Wählen Sie in der Timeline einen Eintrag in der Liste aus.  Wählen Sie beispielsweise **[!UICONTROL Kommentare]** aus, um die Liste der Anmerkungen anzuzeigen, die mit dem Asset verknüpft sind.
+1. Wählen Sie in der Timeline einen Eintrag in der Liste aus.  Wählen Sie beispielsweise **[!UICONTROL Kommentare]** aus, um die Liste der mit dem Asset verknüpften Anmerkungen anzuzeigen.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
 1. Klicken/tippen Sie auf das **[!UICONTROL Sortiersymbol]** neben der Bezeichnung **[!UICONTROL Datum]**. Abhängig von Ihrer Auswahl werden die Anmerkungen chronologisch in der Reihenfolge aufgeführt, in der sie dem Asset hinzugefügt wurden. 
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
-
