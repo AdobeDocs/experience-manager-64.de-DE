@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Dokumentensicherheit
+exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 99%
 
 ---
-
 
 # Informationen zu Document Security {#about-document-security}
 
@@ -61,7 +60,7 @@ Die Abbildung zeigt die folgenden Schritte:
 1. Der Empfänger öffnet das Dokument in der entsprechenden Clientanwendung. Der Empfänger kann das Dokument gemäß der geltenden Richtlinie nutzen.
 1. Der Dokumenteigentümer, Richtliniensatzkoordinator oder Administrator kann Dokumente nachverfolgen und den Zugriff darauf auf den Webseiten ändern.
 
-## Informationen zu Document Security-Benutzern {#about-document-security-users}
+## Informationen zu Document Security-Benutzern  {#about-document-security-users}
 
 Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgaben zu erledigen:
 
@@ -170,7 +169,7 @@ Auf den Document Security-Webseiten können Benutzer und Administratoren Richtli
 
 In der Clientanwendung kann eine Richtlinie aus einem Dokument entfernt werden.
 
-![rm_psonline_policy](assets/rm_psonline_policy.png)
+![rm_sonline_policy](assets/rm_psonline_policy.png)
 
 Die Abbildung zeigt die folgenden Schritte:
 
