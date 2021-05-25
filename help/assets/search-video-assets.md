@@ -4,14 +4,13 @@ description: Verwenden Sie Keywords und Dateieigenschaften, wie z. B. MIME-Typ,
 contentOwner: AG
 feature: Video,Search
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 68%
 
 ---
-
 
 # Suchen nach Video-Assets {#searching-video-assets}
 
@@ -23,20 +22,20 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
 | Suchfeld | Sucheigenschaftswerte |
 |---|---|
-| MIME-Typen | [!UICONTROL Bilder],  [!UICONTROL Dokumente],  [!UICONTROL Multimedia],  [!UICONTROL Archive] usw. |
+| MIME-Typen | [!UICONTROL Bilder],  [!UICONTROL Dokumente],  [!UICONTROL Multimedia],  [!UICONTROL Archive] oder Sonstige. |
 | [!UICONTROL Letzte Änderung] | Stunde, Tag, Woche, Monat oder Jahr |
 | [!UICONTROL Dateigröße] | Klein, Mittel oder Groß |
 | [!UICONTROL Veröffentlichungsstatus] | Veröffentlicht oder Veröffentlichung rückgängig gemacht |
 | [!UICONTROL Genehmigungsstatus] | Genehmigt oder Abgelehnt |
 | [!UICONTROL Ausrichtung] | Horizontal, Vertikal oder Quadrat |
 | [!UICONTROL Stil] | Farbe oder Schwarzweiß |
-| Videohöhe | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
-| Videobreite | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
-| Videoformat | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value wird in den Metadaten des Quellvideos und aller Darstellungen gespeichert. |
+| Videohöhe | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
+| Videobreite | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
+| Videoformat | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value wird in den Metadaten des Quellvideos und allen Ausgabeformaten gespeichert. |
 | Video-Codec | x264Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
-| Video-Bitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
-| Audio-Codec | Libvorbis, Lame MP3, AAC Encoding.Value wird nur in den Metadaten der Videodarstellungen gespeichert. |
-| Audiobitrate  | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videodarstellungen gespeichert. |
+| Video-Bitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
+| Audio-Codec | Libvorbis, Lame Mp3, AAC Encoding.Value wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
+| Audiobitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 
 1. Tippen Sie auf der **[!UICONTROL Experience Manager]**-Seite in der linken Seitenleiste auf **[!UICONTROL Assets]**.
 
@@ -46,18 +45,18 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 1. Tippen Sie in der Symbolleiste auf das Suchsymbol (Lupe).
 1. Suchen Sie mit einer der folgenden Methoden nach Video-Assets:
 
-   * Suche mit Suchbegriffen
+   * Suche mithilfe von Keywords
 
-      Geben Sie im Feld Suchbegriffe eingeben den Beginn ein und drücken Sie die Eingabetaste.
+      Geben Sie im Feld Schlüsselwörter eingeben die Eingabe ein und drücken Sie die Eingabetaste.
 
       Die aktuelle Ansicht wird anhand der eingegebenen Keywords gefiltert. Dateien werden als Suchergebnisse angezeigt, wenn die Keywords mit dem Namen, den Metadaten-Tags oder anderen Eigenschaften der Datei übereinstimmen.
 
-   * Suche mit Eigenschaften
+   * Suchen anhand von Eigenschaften
 
-      Um nach einer Videodatei zu suchen, die auf einer Eigenschaft wie dem Videotyp basiert, können Sie die Suche einschränken, indem Sie eine Video- oder Audioeigenschaft auswählen. Blenden Sie z. B. das Dropdownmenü „Videoformat“ ein und aktivieren Sie dann die gewünschten Werte. Für einige Eigenschaften müssen Sie einen Mindest- und einen Höchstwert eingeben.
+      Um basierend auf einer Eigenschaft wie dem Videotyp nach einer Videodatei zu suchen, können Sie die Suche eingrenzen, indem Sie eine Video- oder Audioeigenschaft auswählen. Blenden Sie z. B. das Dropdownmenü „Videoformat“ ein und aktivieren Sie dann die gewünschten Werte. Für einige Eigenschaften müssen Sie einen Mindest- und einen Höchstwert eingeben.
 
-   * Suche mit Suchbegriffen und Eigenschaften
+   * Suche mit Keywords und Eigenschaften
 
-      Geben Sie einen Suchbegriff ein, erweitern Sie die Liste der Video- oder Audioeigenschaft und legen Sie dann die gewünschten Werte fest, anstatt die Eingabetaste zu drücken.
+      Geben Sie ein Keyword ein, aber anstatt die Eingabetaste zu drücken, erweitern Sie eine Video- oder Audioeigenschaftsliste und legen Sie dann die gewünschten Werte fest.
 
 1. (Optional) Tippen Sie unten auf der Seite auf **[!UICONTROL Intelligente Sammlung speichern]** und geben Sie einen Namen für die Suche ein. Aktivieren Sie **[!UICONTROL Öffentlich]**, wenn die gespeicherte Suche auch für andere Benutzer des Adobe Experience Manager-Kontos verfügbar sein soll. Deaktivieren Sie diese Option, wenn die Suche nur für Sie verfügbar sein soll, wenn Sie beim Konto angemeldet sind. Tippen Sie auf **[!UICONTROL Speichern]**.
