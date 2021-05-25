@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
-translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 92%
 
 ---
 
-
-# Komponenten{#components}
+# Komponenten {#components}
 
 Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
@@ -30,7 +29,7 @@ Die Komponenten sind verfügbar, wenn Sie [eine Seite bearbeiten](/help/sites-au
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-## Allgemeine Verwendung   {#general-usage}
+## Allgemeine Verwendung    {#general-usage}
 
 Die Komponenten sind im Seiten-Editor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-authoring/editing-content.md).
 
@@ -62,7 +61,7 @@ Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informa
 
 * [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn eine [Community-Site](/help/communities/overview.md) erstellt wird.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - Die eCommerce-Funktionalität in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
+* [eCommerce](/help/sites-administering/ecommerce.md)  - Die eCommerce-Funktion in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
@@ -70,4 +69,3 @@ Neben den Komponenten, auf die Autoren in einer Standardinstallation zugreifen k
 
 * Wenn Ihre Seite auf der empfohlenen, modernen, bearbeitbaren Vorlage basiert, können Sie die [Vorlage bearbeiten](/help/sites-authoring/templates.md), diese aktivieren/deaktivieren und Parameter für bestimmte Komponenten bearbeiten.
 * Wenn Ihre Seite auf einer statischen Vorlage basiert, können Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md#enable-disable-components) verwenden, um diese zu aktivieren/deaktivieren und Parameter für bestimmte Komponenten zu bearbeiten.
-
