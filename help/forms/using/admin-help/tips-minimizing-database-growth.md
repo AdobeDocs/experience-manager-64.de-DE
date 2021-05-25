@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 7b266170-c7e2-42e7-8ee0-153e1e73a901
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
 
 ---
 
-
 # Tipps zum Minimieren des Datenbankwachstums {#tips-for-minimizing-database-growth}
 
 Prozesse mit langer Lebensdauer speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
 
-## Tipps zum Prozessentwurf {#process-design-tips}
+## Tipps zum Prozessentwurf  {#process-design-tips}
 
 Verwenden Sie, wann immer möglich, Prozesse mit kurzer Lebensdauer. Prozesse mit kurzer Lebensdauer speichern keine Prozessdaten in der Datenbank. Der Nachteil beim Verwenden von Prozessen mit kurzer Lebensdauer besteht darin, dass ihr Status und Zustand nicht in Administration Console nachvollzogen wird und es keinen Verlauf des Prozesses und keine BAM-Berichte gibt.
 
