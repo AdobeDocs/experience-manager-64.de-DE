@@ -1,6 +1,6 @@
 ---
-title: eCommerce
-seo-title: eCommerce
+title: E-Commerce
+seo-title: E-Commerce
 description: Das Integrations-Framework enthält eine Integrationsebene mit einer API.
 seo-description: Das Integrations-Framework enthält eine Integrationsebene mit einer API.
 uuid: 39a13c2f-4478-4030-8fe4-03f5b271d04f
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
-translation-type: tm+mt
-source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
-
-# eCommerce{#ecommerce}
+# E-Commerce{#ecommerce}
 
 Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dadurch können Sie:
 
@@ -32,7 +31,7 @@ Weitere Informationen finden Sie unter:
 
 >[!NOTE]
 >
->Da das eCommerce-Framework mit jeder eCommerce-Lösung verwendet werden kann, finden Sie unter [Entwickeln (generisch)](/help/sites-developing/generic.md) weitere Informationen zur Entwicklung von Möglichkeiten mit Intershop, Elastic Path oder IBM Websphere Commerce.
+>Da das eCommerce-Framework mit jeder eCommerce-Lösung verwendet werden kann, finden Sie unter [Entwicklung (generisch)](/help/sites-developing/generic.md) weitere Informationen zur Entwicklung von Möglichkeiten mit Intershop, Elastic Path oder IBM Websphere Commerce.
 
 >[!NOTE]
 >
@@ -40,7 +39,7 @@ Weitere Informationen finden Sie unter:
 >
 >Weitere Informationen zu den Konzepten und zur Verwaltung von eCommerce-Implementierungen finden Sie unter [Verwaltung von eCommerce](/help/sites-administering/ecommerce.md).
 
-## API-Dokumentation {#api-documentation}
+## API-Dokumentation  {#api-documentation}
 
 Die eCommerce-API wird von den Paketen bereitgestellt:
 
@@ -50,5 +49,4 @@ Weitere Informationen finden Sie in der [API-Dokumentation](https://helpx.adobe.
 
 >[!NOTE]
 >
->Einen vollständigen Artikel mit allen Schritten zum Erstellen eines eCommerce-Providers finden Sie unter [Erstellen von benutzerdefinierten Adobe Experience Manager 6.2 eCommerce-Providern](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
-
+>Einen vollständigen Artikel mit allen Schritten zum Erstellen eines eCommerce-Anbieters finden Sie unter [Erstellen benutzerdefinierter Adobe Experience Manager 6.2 eCommerce-Anbieter](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
