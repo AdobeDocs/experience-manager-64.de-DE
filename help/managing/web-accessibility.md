@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility, introduction
 content-type: reference
 discoiquuid: 13c7e0bd-54af-49f3-9743-075ce6f3314d
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: f0ccdeae-3dbb-4dba-89cf-4c8b759da22b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 85%
 
 ---
-
 
 # AEM und Richtlinien für barrierefreien Webzugang{#aem-and-the-web-accessibility-guidelines}
 
@@ -39,19 +38,19 @@ Die folgenden Seiten und Abschnitte bieten Informationen und Richtlinien:
 
    Richtlinien, wie Administratoren AEM für die Erstellung barrierefreier Inhalte konfigurieren können.
 
-* [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien) ](/help/sites-authoring/creating-accessible-content.md)
+* [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](/help/sites-authoring/creating-accessible-content.md)
 
-   Die WCAG 2.0-Richtlinien bieten eine Liste von Erfolgskriterien für Stufe-A- und Stufe-AA-Konformitätsstufen. Diese Seite listet die von AEM abgedeckten Erfolgskriterien auf, gemeinsam mit Informationen darüber, wie diese bei der Erstellung von Inhalten erfüllt werden können.
+   Die WCAG 2.0-Richtlinien enthalten eine Liste von Erfolgskriterien für die Konformitätsstufen Level A und Level AA. Diese Seite listet die von AEM abgedeckten Erfolgskriterien auf, gemeinsam mit Informationen darüber, wie diese bei der Erstellung von Inhalten erfüllt werden können.
 
 * [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
 
    Hintergrundinformationen zu WCAG 2.0.
 
-* [Barrierefreies adaptives Forms erstellen](/help/forms/using/creating-accessible-adaptive-forms.md)
+* [Erstellen barrierefreier adaptiver Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
 
    Adobe Experience Manager (AEM) enthält mehrere Funktionen, die die Nutzung adaptiver Formulare für Benutzer mit unterschiedlichen Fähigkeiten verbessern. Die Lösung unterstützt außerdem Verfasser von Strukturen bei der Erstellung anpassbarer Formulare.
 
-## World Wide Web Consortium und WCAG 2.0 {#world-wide-web-consortium-and-wcag}
+## World Wide Web Consortium und WCAG 2.0  {#world-wide-web-consortium-and-wcag}
 
 Das [World Wide Web Consortium (W3C)](https://www.w3.org/) ist eine internationale Gemeinschaft, die sich der Entwicklung von Web-Standards widmet. Die [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) veröffentlichte im Dezember 2008 die [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) (Aktualisierung der Originalversion von 1999), um Webdesigner und Entwickler bei der Erstellung barrierefreier Websites zu unterstützen.
 
@@ -67,7 +66,7 @@ Spezifische Aspekte der WCAG 2.0-Richtlinien werden in unserer [Kurzanleitung zu
 
 Die WCAG 2.0 bietet [Richtlinien (mit entsprechenden Erfolgskriterien), welche die verschiedenen Level der Barrierefreiheit abdecken](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
-Diese werden in Bezug auf AEM unter [Level A und AA Conformance](/help/sites-authoring/creating-accessible-content.md) behandelt. Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
+Diese werden, da sie sich auf AEM beziehen, unter [Konformitätsstufe A und AA](/help/sites-authoring/creating-accessible-content.md) behandelt. Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
 >[!NOTE]
 >
