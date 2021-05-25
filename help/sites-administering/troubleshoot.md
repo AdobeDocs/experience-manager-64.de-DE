@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 34b509d5-4e80-4229-b155-40004856e87e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
-
 
 # Beheben von Fehlern in AEM{#troubleshooting-aem}
 
@@ -30,7 +29,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 >
 >Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/known-issues.md) für Ihre Instanz (Version und Service Packs) prüfen.
 
-## Fehlerbehebungsszenarien für Administratoren {#troubleshooting-scenarios-for-administrators}
+## Fehlerbehebungsszenarien für Administratoren  {#troubleshooting-scenarios-for-administrators}
 
 Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren möglicherweise beheben müssen:
 
@@ -50,7 +49,7 @@ Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren
   </tr> 
   <tr> 
    <td><p>Systemadministrator</p> </td> 
-   <td><p>Der AEM Begrüßungsbildschirm wird nach dem Klicken der Dublette auf AEM CM QuickStart nicht im Browser angezeigt</p> </td> 
+   <td><p>Der AEM Begrüßungsbildschirm wird nach einem Doppelklick auf AEM CM QuickStart nicht im Browser angezeigt</p> </td> 
   </tr> 
   <tr> 
    <td><p>Systemadministrator</p> <p>Admin-Benutzer</p> </td> 
@@ -79,9 +78,9 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 ### Verwenden des Sling Thread Dumper  {#using-sling-thread-dumper}
 
-1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `http://localhost:4502/system/console/`.
+1. Öffnen Sie die **AEM Web Console**. z. B. bei `http://localhost:4502/system/console/`.
 
-1. Wählen Sie die Registerkarte **Threads** unter **Status**.
+1. Wählen Sie die Registerkarte **Threads** unter **Status** aus.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -99,7 +98,7 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 >[!NOTE]
 >
->Sie können die Thread-Dumps mithilfe der Ausgabeumleitung `>>` an eine Protokolldatei anhängen:
+>Sie können die Thread-Sicherheitskopien mithilfe der Ausgabeumleitung `>>` an eine Protokolldatei anhängen:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -110,7 +109,7 @@ Weitere Informationen dazu finden Sie in der Dokumentation [Erstellen von Thread
 Wenn Funktionen für AEM WCM entwickelt werden, werden möglicherweise JCR-Sitzungen geöffnet (vergleichbar mit dem Öffnen einer Datenbankverbindung). Werden die geöffneten Sitzungen nie geschlossen, können folgende Probleme in Ihrem System auftreten:
 
 * Das System wird langsamer.
-* Sie können eine Menge CacheManager sehen: resizeAlle Einträge in der Protokolldatei; Wenn die folgende Zahl (size=&lt;x>) die Anzahl der Caches anzeigt, werden bei jeder Sitzung mehrere Caches geöffnet.
+* Sie können eine Menge CacheManager sehen: resizeAll -Einträge in der Protokolldatei; Wenn die folgende Zahl (size=&lt;x>) die Anzahl der Caches anzeigt, öffnet jede Sitzung mehrere Caches.
 * Gelegentlich reicht der Speicherplatz des Systems nicht aus (nach einigen Stunden, Tagen oder Wochen – je nach Schweregrad).
 
 Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html), um nicht beendete Sitzungen zu analysieren und festzustellen, welcher Code dazu führt, dass eine Sitzung nicht beendet wird.
@@ -119,9 +118,9 @@ Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](
 
 Der Status der OSGi-Bundles kann auch frühzeitig auf mögliche Probleme hinweisen.
 
-1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `http://localhost:4502/system/console/`.
+1. Öffnen Sie die **AEM Web Console**. z. B. bei `http://localhost:4502/system/console/`.
 
-1. Wählen Sie **Pakete** unter **OSGI**.
+1. Wählen Sie **Bundles** auf der Registerkarte **OSGI** aus.
 
 1. Überprüfen Sie Folgendes:
 
@@ -129,4 +128,3 @@ Der Status der OSGi-Bundles kann auch frühzeitig auf mögliche Probleme hinweis
    * ob Bundles mit fehlenden Abhängigkeiten vorliegen. Dies können Sie herausfinden, indem Sie auf den einzelnen Bundle-Namen klicken, bei dem es sich um einen Link handelt (im folgenden Beispiel sind keine Probleme aufgetreten):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
-
