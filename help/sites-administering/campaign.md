@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 482c5889-d756-428b-bf0c-38c372e3c8b6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 87%
 
 ---
-
 
 # Integrieren mit Adobe Campaign{#integrating-with-adobe-campaign}
 
@@ -29,12 +28,11 @@ Diese Version von AEM ermöglicht die Integration mit einer der folgenden Versio
 
 In dieser Dokumentation wird beschrieben, wie Sie AEM mit Adobe Campaign integrieren. Die Integration läuft bei der Lösung auf Abonnementbasis und der On-Premise-Lösung jeweils unterschiedlich ab.
 
-* [Integrieren mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md)
-* [Integrieren mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
+* [Integrieren mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md)
+* [Integrieren mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
 * [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md)
-* [Fehlerbehebung bei der Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
+* [Fehlerbehebung bei der Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
 
 >[!NOTE]
 >
->Informationen zur Überprüfung eines entsprechenden AEM Gemeinschaftsartikels finden Sie unter: [Integrieren von Adobe Experience Manager und Adobe Campaign Standard zum Erstellen von Newletters](https://helpx.adobe.com/de/experience-manager/using/aem_campaign.html).
-
+>Informationen zur Überprüfung eines entsprechenden AEM Community-Artikels finden Sie unter: [Integrieren von Adobe Experience Manager und Adobe Campaign Standard zur Erstellung von Newslettern](https://helpx.adobe.com/de/experience-manager/using/aem_campaign.html).
