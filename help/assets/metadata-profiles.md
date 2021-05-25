@@ -1,26 +1,25 @@
 ---
-title: Verwenden von Metadaten-Profilen zum Anwenden von Standardmetadaten auf alle Assets in einem Ordner
+title: Verwenden von Metadatenprofilen zum Anwenden von Standardmetadaten auf alle Assets in einem Ordner
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1233'
 ht-degree: 65%
 
 ---
 
-
 # Metadatenprofile {#metadata-profiles}
 
-Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ordner anwenden. Erstellen Sie ein Metadaten-Profil und wenden Sie es auf einen Ordner an. Alle Assets, die Sie anschließend in den Ordner hochladen, übernehmen die Standardmetadaten, die Sie im Metadaten-Profil konfiguriert haben.
+Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordner anwenden. Erstellen Sie ein Metadatenprofil und wenden Sie es auf einen Ordner an. Jedes Asset, das Sie anschließend in den Ordner hochladen, übernimmt die Standardmetadaten, die Sie im Metadatenprofil konfiguriert haben.
 
 ## Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
-1. Tippen Sie auf oder klicken Sie auf das AEM, navigieren Sie zu **[!UICONTROL Tools > Assets > Metadata Profils]** und tippen Sie dann auf **[!UICONTROL Erstellen]**.
-1. Geben Sie einen Titel für das Metadatenprofil ein, etwa Beispielmetadaten, und klicken Sie auf **[!UICONTROL Senden]**. Das **[!UICONTROL Formular bearbeiten]** für das Metadaten-Profil wird angezeigt.
+1. Tippen oder klicken Sie auf das AEM Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]** und tippen Sie dann auf **[!UICONTROL Erstellen]**.
+1. Geben Sie einen Titel für das Metadatenprofil ein, etwa Beispielmetadaten, und klicken Sie auf **[!UICONTROL Senden]**. Das **[!UICONTROL Bearbeitungsformular]** für das Metadatenprofil wird angezeigt.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
@@ -30,8 +29,8 @@ Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ord
 
    Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Beschreibung]**:
 
-   * **[!UICONTROL Feldbeschriftung]**: Der Anzeigename der Metadateneigenschaft. Dieser dient lediglich als Referenz für den Benutzer.
-   * **[!UICONTROL Zu Eigenschaft]** zuordnen: Der Wert dieser Eigenschaft stellt den relativen Pfad/Namen zu dem Asset-Knoten bereit, in dem er im Repository gespeichert wird. Der Wert sollte immer mit dem Beginn übereinstimmen,  `./` da er angibt, dass sich der Pfad unter der Node des Assets befindet.
+   * **[!UICONTROL Feldbezeichnung]**: Der Anzeigename der Metadateneigenschaft. Dieser dient lediglich als Referenz für den Benutzer.
+   * **[!UICONTROL Zu Eigenschaft zuordnen]**: Der Wert dieser Eigenschaft liefert den relativen Pfad/Namen zum Asset-Knoten, unter dem er im Repository gespeichert ist. Der Wert sollte immer mit beginnen,  `./` da er anzeigt, dass sich der Pfad unter dem Knoten des Assets befindet.
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
@@ -43,34 +42,34 @@ Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ord
 
    >[!NOTE]
    >
-   >Fügen Sie einer neuen Metadateneigenschaft einen Standardwert hinzu (der in der nicht bereits vorhanden ist). `/jcr:content/metadata` vorhanden ist) einen Standardwert hinzufügen, werden die Eigenschaft und deren Wert nicht standardmäßig auf der Eigenschaftsseite des Assets angezeigt. **** Um die neue Eigenschaft auf der Seite [!UICONTROL Properties] des Assets Ansicht, ändern Sie das entsprechende Schema-Formular.
+   >Hinzufügen eines Standardwert zu einer neuen Metadateneigenschaft (die noch nicht im vorhanden ist). `/jcr:content/metadata` vorhanden ist) einen Standardwert hinzufügen, werden die Eigenschaft und deren Wert nicht standardmäßig auf der Eigenschaftsseite des Assets angezeigt. **** Um die neue Eigenschaft auf der Seite [!UICONTROL Eigenschaften] des Assets anzuzeigen, ändern Sie das entsprechende Schemaformular.
 
-1. (Optional) Hinzufügen weitere Komponenten auf der Registerkarte **[!UICONTROL Formular bearbeiten]** aus der Registerkarte **[!UICONTROL Formular erstellen]** und konfigurieren Sie ihre Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**. Die folgenden Eigenschaften sind auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbar:
+1. (Optional) Fügen Sie der Registerkarte **[!UICONTROL Formular bearbeiten]** auf der Registerkarte **[!UICONTROL Formular erstellen]** weitere Komponenten hinzu und konfigurieren Sie deren Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]** . Die folgenden Eigenschaften sind auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbar:
 
 | Komponente | Eigenschaften |
 |---|---|
-| [!UICONTROL Bereichs-Kopfzeile] | Feldbeschriftung, <br> Beschreibung |
-| [!UICONTROL Einzelzeilentext] | Feldbeschriftung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
-| [!UICONTROL Mehrwerttext] | Feldbeschriftung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
-| [!UICONTROL Zahl] | Feldbeschriftung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
-| [!UICONTROL Datum] | Feldbeschriftung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
-| [!UICONTROL Standard-Tags] | Feldbeschriftung, <br> Zu Eigenschaft zuordnen, <br> Standardwert, <br> Beschreibung |
+| [!UICONTROL Bereichs-Kopfzeile] | Feldbezeichnung, <br> Beschreibung |
+| [!UICONTROL Einzelzeilentext] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
+| [!UICONTROL Mehrwerttext] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
+| [!UICONTROL Zahl] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
+| [!UICONTROL Datum] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
+| [!UICONTROL Standard-Tags] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert, <br> Beschreibung |
 
 ![chlimage_1-484](assets/chlimage_1-484.png)
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**. Das Metadaten-Profil wird der Liste der Profil auf der Seite **[!UICONTROL Metadaten-Profil]** hinzugefügt.
+1. Klicken Sie auf **[!UICONTROL Fertig]**. Das Metadatenprofil wird zur Liste der Profile auf der Seite **[!UICONTROL Metadatenprofile]** hinzugefügt.
 
    ![chlimage_1-485](assets/chlimage_1-485.png)
 
 ## Kopieren eines Metadatenprofils {#copying-a-metadata-profile}
 
-1. Wählen Sie auf der Seite **[!UICONTROL Metadaten-Profil]** ein Profil aus, um eine Kopie davon zu erstellen.
+1. Wählen Sie auf der Seite **[!UICONTROL Metadatenprofile]** ein Profil aus, um eine Kopie davon zu erstellen.
 
    ![chlimage_1-486](assets/chlimage_1-486.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
-1. Geben Sie im Dialogfeld **[!UICONTROL Metadaten-Profil kopieren]** einen Titel für die neue Kopie des Profils ein.
-1. Klicken Sie auf **[!UICONTROL Kopieren]**. Eine Kopie des Profils wird in der Liste der Profil auf der Seite **[!UICONTROL Metadaten-Profil]** angezeigt.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]** .
+1. Geben Sie im Dialogfeld **[!UICONTROL Metadatenprofil kopieren]** einen Titel für die neue Kopie des Profils ein.
+1. Klicken Sie auf **[!UICONTROL Kopieren]**. Eine Kopie des Profils wird in der Profilliste auf der Seite **[!UICONTROL Metadatenprofile]** angezeigt.
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
@@ -80,8 +79,8 @@ Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ord
 
    ![chlimage_1-488](assets/chlimage_1-488.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Metadaten-Profil löschen]**.
-1. Klicken Sie im Dialogfeld auf **[!UICONTROL Löschen]**, um den Löschvorgang zu bestätigen. Das Metadaten-Profil wird aus der Liste gelöscht.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Metadatenprofile löschen]** .
+1. Klicken Sie im Dialogfeld auf **[!UICONTROL Löschen]** , um den Löschvorgang zu bestätigen. Das Metadatenprofil wird aus der Liste gelöscht.
 
 ## Anwenden eines Metadatenprofils auf Ordner {#applying-a-metadata-profile-to-folders}
 
@@ -123,11 +122,11 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 ### Globales Anwenden eines Metadatenprofils {#applying-a-metadata-profile-globally}
 
-Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in AEM Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet. Gehen Sie wie folgt vor, um ein Metadaten-Profil global anzuwenden:
+Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in AEM Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet. Gehen Sie wie folgt vor, um ein Metadatenprofil global anzuwenden:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Navigieren Sie zu `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` und wenden Sie das entsprechende Profil an. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**.
+   * Navigieren Sie zu `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, wenden Sie das entsprechende Profil an und tippen oder klicken Sie auf **[!UICONTROL Speichern]**.
 
       ![chlimage_1-492](assets/chlimage_1-492.png)
 
@@ -135,26 +134,26 @@ Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet we
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## Entfernen eines Metadaten-Profils aus Ordnern {#removing-a-metadata-profile-from-folders}
+## Entfernen von Metadatenprofilen aus Ordnern {#removing-a-metadata-profile-from-folders}
 
 Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
 
 Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]** entfernen. Wenn Sie sich im Ordner befinden, ist dies über die **[!UICONTROL Eigenschaften]** möglich. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten aus Ordnern entfernen.
 
-### Entfernen von Metadaten-Profilen aus Ordnern über die Profils-Benutzeroberfläche {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Entfernen von Metadatenprofilen aus Ordnern über die Benutzeroberfläche &quot;Profile&quot;{#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-Gehen Sie wie folgt vor, um ein Metadaten-Profil über die Benutzeroberfläche von Profilen aus Ordnern zu entfernen:
+Gehen Sie wie folgt vor, um über die Benutzeroberfläche &quot;Profile&quot;ein Metadatenprofil aus Ordnern zu entfernen:
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Videoprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Tippen Sie auf **[!UICONTROL Metadaten-Profil aus Ordner(n)]** entfernen und wählen Sie den Ordner bzw. mehrere Ordner aus, aus dem bzw. denen Sie ein Profil entfernen möchten. Tippen Sie anschließend auf **[!UICONTROL Fertig]**.
+1. Tippen Sie auf **[!UICONTROL Metadatenprofil aus Ordner(n)]** entfernen und wählen Sie den Ordner oder mehrere Ordner aus, aus denen Sie ein Profil entfernen möchten. Tippen Sie dann auf **[!UICONTROL Fertig]**.
 
    Sie können bestätigen, dass das Metadatenprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
-### Entfernen von Metadaten-Profilen aus Ordnern mithilfe von Eigenschaften {#removing-metadata-profiles-from-folders-via-properties}
+### Entfernen von Metadatenprofilen aus Ordnern über Eigenschaften {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie die Registerkarte **[!UICONTROL Metadaten-Profil]** und dann **[!UICONTROL Keine]** aus dem Dropdownmenü. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** und dann **[!UICONTROL Keine]** aus dem Dropdown-Menü aus. Tippen Sie auf **[!UICONTROL Speichern]**.
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
