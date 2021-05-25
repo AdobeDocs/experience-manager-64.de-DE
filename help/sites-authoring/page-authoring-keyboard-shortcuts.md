@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
-translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+exl-id: 15734120-16b2-4c51-a387-d3d4508eb0b7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 91%
 
 ---
-
 
 # Tastaturbefehle für die Seitenbearbeitung{#keyboard-shortcuts-when-editing-pages}
 
@@ -44,7 +43,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->&amp;ast; Sobald der Beginn zur Interaktion mit der Vorschau im Seitenmodus ausgeführt wird, steht der Tastaturbefehl `Ctrl-Shift-m` nicht mehr zur Verfügung. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
+>&amp;ast; Sobald der Benutzer im Vorschaumodus mit der Seite interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 
