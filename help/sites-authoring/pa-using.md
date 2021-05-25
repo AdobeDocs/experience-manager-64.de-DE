@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 93%
 
 ---
 
-
 # Anzeigen von Seitenanalysedaten{#seeing-page-analytics-data}
 
 Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analysedaten {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analysedaten  {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -76,7 +75,7 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Öffnen Sie [Content Insight](/help/sites-authoring/content-insights.md) in der Sites-Konsole, um die Effektivität der Seite weiter zu untersuchen.
+Öffnen Sie [Content Insight](/help/sites-authoring/content-insights.md) in der Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
@@ -89,4 +88,4 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Das [Activity Map-Plugin, das von Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bereitgestellt wird, sollte jetzt verwendet werden.
+>Das [ActivityMap-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird, sollte jetzt verwendet werden.
