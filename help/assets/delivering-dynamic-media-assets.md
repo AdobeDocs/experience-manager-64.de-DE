@@ -10,12 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '330'
 ht-degree: 91%
 
 ---
@@ -39,14 +38,14 @@ Mit Dynamic Media haben Sie mehrere Optionen:
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
-* [Hinzufügen von Dynamic Media Assets zu Webseiten](adding-dynamic-media-assets-to-pages.md)
-* [Einbetten des Video- oder Bild-Viewers in eine Website](embed-code.md)
+* [Hinzufügen von Dynamic Media-Assets zu Webseiten](adding-dynamic-media-assets-to-pages.md)
+* [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
 * [Aktivieren des Hotlink-Schutzes in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/hotlink-protection.html?lang=de#dynamic)
-* Integration digitaler nicht sichtbarer Wasserzeichen (Digimarc) mit Dynamic Media (demnächst)
+* Integration digitaler nicht sichtbarer Wasserzeichen (Digimarc) in Dynamic Media (in Kürze verfügbar)
 * [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
 * [Bereitstellung von Inhalten per HTTP/2](http2.md)
-* [Ungültigmachen von Inhalten im CDN-Cache ](invalidate-cdn-cached-content.md)
+* [Ungültigmachen von Inhalten im CDN-Cache  ](invalidate-cdn-cached-content.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2  {#http-delivery-of-dynamic-media-assets}
