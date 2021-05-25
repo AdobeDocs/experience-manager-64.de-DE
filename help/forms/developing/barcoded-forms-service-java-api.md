@@ -1,8 +1,8 @@
 ---
-title: Barcoded Forms Service Java APIQuick Beginn(SOAP)
-seo-title: Barcoded Forms Service Java APIQuick Beginn(SOAP)
-description: Verwenden Sie den Barcoded Forms-Dienst, um mit Strichcode versehene Formulardaten mit dem Java API Quick Beginn zu dekodieren.
-seo-description: Verwenden Sie den Barcoded Forms-Dienst, um mit Strichcode versehene Formulardaten mit dem Java API Quick Beginn zu dekodieren.
+title: Barcoded Forms Service Java APIQuick Start(SOAP)
+seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
+description: Verwenden Sie den Barcoded Forms-Dienst, um mit dem Schnellstart zur Java-API Barcoded Forms-Formulardaten zu dekodieren.
+seo-description: Verwenden Sie den Barcoded Forms-Dienst, um mit dem Schnellstart zur Java-API Barcoded Forms-Formulardaten zu dekodieren.
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -10,30 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: fbeefa4e-966d-43b5-ae59-9548fe520cc2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '248'
+ht-degree: 1%
 
 ---
 
+# Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
-# Barcoded Forms Service Java API Quick Beginn (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+Java API Quick Start (SOAP) ist für den Barcoded Forms-Dienst verfügbar:
 
-Der Java API Quick Beginn (SOAP) ist für den Barcoded Forms-Dienst verfügbar:
+[Schnellstart (SOAP-Modus): Dekodieren von mit Strichcode versehenen Formulardaten mit der Java-API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Dekodieren von Formulardaten mit Strichcode mithilfe der Java-API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
-
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
->Schnellere Beginn, die sich unter &quot;Programmieren mit AEM Forms&quot;befinden, basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Dekodieren von Formulardaten mit Strichcode mithilfe der Java-API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Schnellstart (SOAP-Modus): Dekodieren von Formulardaten mit Strichcode mithilfe der Java-API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular befinden, das als &quot;Loan.pdf&quot;gespeichert wird. Die dekodierten Daten werden als XML-Datei mit dem Namen extracData.xml gespeichert. In diesem Codebeispiel wird ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt konvertiert. (Siehe [Dekodieren von Strichcodeformulardaten](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular befinden, das als &quot;Loan.pdf&quot;gespeichert ist. Die dekodierten Daten werden als XML-Datei mit dem Namen &quot;extractedData.xml&quot;gespeichert. In diesem Codebeispiel wird ein `org.w3c.dom.Document` -Objekt in ein `com.adobe.idp.Document` -Objekt konvertiert. (Siehe [Dekodieren von Barcoded Form Data](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```as3
  /* 
@@ -222,5 +221,4 @@ Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular b
 
 >[!NOTE]
 >
->Bei Verwendung eines `org.w3c.dom.Document`- und eines `com.adobe.idp.Document`-Objekts in derselben Anwendungslogik empfiehlt es sich, beide Objekte vollständig zu qualifizieren.
-
+>Bei Verwendung eines `org.w3c.dom.Document`-Objekts und eines `com.adobe.idp.Document`-Objekts in derselben Anwendungslogik empfiehlt es sich, beide Objekte vollständig zu qualifizieren.
