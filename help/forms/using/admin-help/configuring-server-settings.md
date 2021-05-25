@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2657'
 ht-degree: 90%
 
 ---
-
 
 # Servereinstellungen konfigurieren {#configuring-server-settings}
 
@@ -26,7 +25,7 @@ Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Ei
 * **Aufgabenbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen an Endbenutzer und Gruppen gesendeten Nachrichten zu Aufgaben aktivieren, deaktivieren oder ändern. (Siehe [Benachrichtigungen für Benutzer und Gruppen konfigurieren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
 * **Administratorbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen gesendeten Nachrichten zu Verwaltungsaufgaben aktivieren, deaktivieren oder ändern.  (Siehe [Benachrichtigungen für Administratoren konfigurieren](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
-## E-Mail-Einstellungen konfigurieren {#configuring-email-settings}
+## E-Mail-Einstellungen konfigurieren  {#configuring-email-settings}
 
 Sie können ein E-Mail-Konto für den Formularserver angeben, über das dieser E-Mail-Nachrichten an AEM Forms-Benutzer und -Administratoren sendet und von diesen empfängt. Mit diesen E-Mail-Nachrichten werden Benutzer über auszuführende Aufgaben benachrichtigt bzw. daran erinnert. Außerdem wird der Benutzer auf Aufgaben, für die ein Termin fällig geworden ist, hingewiesen und der Administrator wird über aufgetretene Fehler im Prozess informiert.
 
@@ -58,7 +57,7 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail be
 
 >[!NOTE]
 >
->Der Flex Workspace wird für AEM Forms-Version nicht mehr unterstützt.
+>Flex Workspace wird für AEM Forms-Version nicht mehr unterstützt.
 
 Standardmäßig enthalten die E-Mails, die von AEM Forms gesendet werden, Links zu Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE). Sie können AEM Forms so konfigurieren, das E-Mails mit Links zu AEM Forms Workspace gesendet werden. Um mehr über die Vorteile von AEM Forms Workspace gegenüber Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) zu erfahren, lesen Sie [diesen Artikel](/help/forms/using/features-html-workspace-available-flex.md).
 
@@ -194,7 +193,7 @@ Nur für Aufgabenbenachrichtigungen: Der Arbeitsablauf für Formulare enthält z
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-Wenn Ihre Lösung in einer Clusterlösung bereitgestellt ist, ersetzen Sie `@@notification-host@@` durch die Clusteradresse.
+Wenn Ihre Lösung in einer Clusterumgebung bereitgestellt ist, ersetzen Sie `@@notification-host@@` durch die Clusteradresse.
 
 `<`** `>` PORTist die Anschlussnummer des HTTP-Listeners für den Anwendungsserver. Der Standardanschluss für HTTP-Listener für die unterstützten Anwendungsserver lautet wie folgt:
 
@@ -204,29 +203,29 @@ Wenn Ihre Lösung in einer Clusterlösung bereitgestellt ist, ersetzen Sie `@@no
 
 **IBM WebSphere:** 9080
 
-Damit diese URLs korrekt funktionieren, ersetzen Sie `<`*PORT* `>` durch die Anschlussnummer, die für Ihre Umgebung geeignet ist.
+Damit diese URLs ordnungsgemäß funktionieren, ersetzen Sie `<`*PORT* `>` durch die für Ihre Umgebung geeignete Anschlussnummer.
 
 >[!NOTE]
 >
 >Wenn Sie mithilfe einer benutzerdefinierten anderen Webanwendung als Forms Benutzern den Zugriff auf die Aufgaben ermöglichen, müssen Sie stattdessen ein URL-Format verwenden, das dem der benutzerdefinierten Anwendung entspricht.
 
-### Variablenauswahl  {#variable-picker}
+### Variablenauswahl {#variable-picker}
 
-Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in den Feldern &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ablegen, wird sie zum tatsächlichen Namen der Variablen für den Arbeitsablauf für Formulare geändert, wobei zwei @-Symbole auf beiden Seiten vorhanden sind, z. B. `@@taskid@@`.
+Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in die Felder &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ziehen, wird sie zum tatsächlichen Namen der Variablen des Arbeitsablaufs für Formulare geändert, wobei sich auf beiden Seiten zwei @-Symbole befinden, z. B. `@@taskid@@`.
 
 Für Erinnerungen, Aufgabenzuweisungen und Termine für Benutzer und Gruppen können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**** descriptionDer Inhalt der Eigenschaft &quot;Beschreibung&quot;, wie im Benutzervorgang (Beginn-Point, Vorgang &quot;Aufgabe zuweisen&quot;oder Vorgang &quot;Mehrere Aufgaben zuweisen&quot;) des Prozesses in Workbench definiert.
+**** descriptionDer Inhalt der Eigenschaft &quot;Description&quot;, wie im Benutzerschritt (Startpunkt, Vorgang &quot;Assign Task&quot;oder Vorgang &quot;Assign Multiple Tasks&quot;) des Prozesses in Workbench definiert.
 
-**** instructionsDer Inhalt der Eigenschaft &quot;Aufgabe Instructions&quot;, wie im Benutzervorgang des Prozesses in Workbench definiert.
+**** instructionsDer Inhalt der Eigenschaft &quot;Task Instructions&quot;, wie im Benutzerschritt des Prozesses in Workbench definiert.
 
-**notification-** hostDer Hostname des AEM Forms-Anwendungsservers .
+**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
 
 **process-** nameDer Name des Prozesses.
 
 **operation-** nameDer Name des Schritts.
 
-**** taskidDer eindeutige Bezeichner für die aktuelle Aufgabe.
+**** taskidDie eindeutige Kennung für die aktuelle Aufgabe.
 
 **** actionsErzeugt eine nummerierte Liste gültiger Routen (z. B. Genehmigen, Ablehnen), auf die der Empfänger klicken kann.
 
@@ -240,21 +239,21 @@ Zusätzlich können für Gruppenerinnerungen, Gruppenaufgabenzuweisungen und Gru
 
 Für angehaltene Zweige können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**branch-** idDie Zweigstellennummer.
+**branch-** idDie Zweigkennung.
 
-**process-** idDie Prozessinstanzkennung.
+**process-** idDie Kennung der Prozessinstanz.
 
-**notification-** hostDer Hostname des AEM Forms-Anwendungsservers .
+**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
 
 Für angehaltene Vorgänge können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
 **action-** idDie Vorgangskennung.
 
-**branch-** idDie Zweigstellennummer.
+**branch-** idDie Zweigkennung.
 
-**process-** idDie Prozessinstanzkennung.
+**process-** idDie Kennung der Prozessinstanz.
 
-**notification-** hostDer Hostname des AEM Forms-Anwendungsservers .
+**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
 
 ### Variable im Feld „Betreff“ verwenden {#using-a-variable-in-the-subject-box}
 
@@ -289,4 +288,3 @@ Auf der Seite „BAM-Konfigurationseinstellungen“ können Sie die Verbindungen
 1. Geben Sie in das Feld „Serveranschluss“ die vom Formularserver verwendete Anschlussnummer ein.
 1. Geben Sie in die Felder „Benutzername“ und „Kennwort“ die entsprechende Benutzer-ID und das Kennwort für den Zugriff auf den BAM-Server ein. Der Standardbenutzername ist „CognosNowAdmin“, das Standardkennwort „manager“.
 1. Klicken Sie auf Speichern.
-
