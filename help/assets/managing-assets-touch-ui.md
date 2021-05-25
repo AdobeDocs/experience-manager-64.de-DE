@@ -1,9 +1,9 @@
 ---
-title: Digitale Assets mit AEM Assets verwalten
+title: Verwalten digitaler Assets mit AEM Assets
 description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Verwaltung, Suche, Darstellungen, Zusammenarbeit
+feature: Asset-Management, Suche, Ausgabedarstellungen, Zusammenarbeit
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
@@ -13,11 +13,11 @@ ht-degree: 65%
 
 ---
 
-# Digitale Assets {#managing-assets-with-the-touch-optimized-ui} verwalten
+# Verwalten digitaler Assets {#managing-assets-with-the-touch-optimized-ui}
 
 Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können.
 
-In diesem Artikel wird beschrieben, wie Sie Assets mithilfe der Adobe Experience Manager (AEM) Touch-optimierten Benutzeroberfläche verwalten und bearbeiten. Weitere Informationen zur Benutzeroberfläche finden Sie unter [Grundlegende Handhabung der Touch-Benutzeroberfläche](/help/sites-authoring/basic-handling.md). Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Verwalten von Inhaltsfragmenten](content-fragments-managing.md)-Assets.
+In diesem Artikel wird beschrieben, wie Sie Assets mithilfe der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager (AEM) Assets verwalten und bearbeiten. Grundlegende Informationen zur Benutzeroberfläche finden Sie unter [Grundlegende Handhabung der Touch-Benutzeroberfläche](/help/sites-authoring/basic-handling.md). Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Verwalten von Inhaltsfragmenten](content-fragments-managing.md) -Assets.
 
 ## Erstellen von Ordnern {#create-folders}
 
@@ -25,7 +25,7 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, k�
 
 >[!NOTE]
 >
->* Das Freigeben eines Assets-Ordners des Typs `sling:OrderedFolder` wird beim Freigeben auf Marketing Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht „Geordnet“ aus.
+>* Die Freigabe eines Assets-Ordners vom Typ `sling:OrderedFolder` wird bei der Freigabe für Marketing Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht „Geordnet“ aus.
 >* In Experience Manager ist die Verwendung von `subassets` als Ordnername nicht zulässig. Dies ist ein Keyword, das für Knoten reserviert ist, die Teil-Assets für ebenenübergreifende Assets enthalten..
 
 
@@ -51,15 +51,15 @@ Sie können Assets in Ordnern mit oder ohne zugewiesenem Verarbeitungsprofil hoc
 
 Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniaturansicht der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt. Siehe [Verarbeitungsprofile](processing-profiles.md).
 
-Stellen Sie vor dem Hochladen eines Assets sicher, dass es im Format [unterstützt](assets-formats.md) vorliegt.
+Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unterstützten Format befindet](assets-formats.md).
 
-**So laden Sie Assets** hoch:
+**Hochladen von Assets**:
 
-1. Navigieren Sie in der Weboberfläche &quot;Assets&quot;zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
+1. Navigieren Sie in der Assets-Web-Oberfläche zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. Führen Sie einen der folgenden Schritte aus, um die Assets hochzuladen:
 
    * Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Erstellen]**. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
-   * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Oberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+   * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Benutzeroberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
 
    ![create_menu](assets/create_menu.png)
 
@@ -71,47 +71,47 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es im Format [unterstüt
 
    Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren. Sie können das System beispielsweise so konfigurieren, dass Assets über 1000 MB (anstatt 500 MB) als große Assets angesehen werden. In diesem Fall wird die Schaltfläche **[!UICONTROL Pause]** im Fortschrittsbalken angezeigt, wenn Assets hochgeladen werden, die größer als 1000 MB sind.
 
-   Die Schaltfläche **[!UICONTROL Pause]** zeigt nicht an, wenn eine Datei größer als 1000 MB mit einer Datei kleiner als 1000 MB hochgeladen wird. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000 MB, wird die Schaltfläche **[!UICONTROL Pause]** angezeigt.
+   Die Schaltfläche **[!UICONTROL Pause]** zeigt nicht an, ob eine Datei mit einer Größe von mehr als 1000 MB mit einer Datei von weniger als 1000 MB hochgeladen wurde. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000 MB, wird die Schaltfläche **[!UICONTROL Pause]** angezeigt.
 
-   Um die Größenbeschränkung zu ändern, konfigurieren Sie die `chunkUploadMinFileSize`-Eigenschaft des `fileupload`Knotens im CRX-Repository.
+   Um die Größenbeschränkung zu ändern, konfigurieren Sie die Eigenschaft `chunkUploadMinFileSize` des Knotens `fileupload`im CRX-Repository.
 
    Wenn Sie auf das Symbol **[!UICONTROL Pause]** klicken, wird es zum Symbol **[!UICONTROL Wiedergabe]**. Um das Hochladen fortzusetzen, klicken Sie auf das Symbol **[!UICONTROL Wiedergabe.]**
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Um einen laufenden Upload-Vorgang abzubrechen, klicken Sie auf die Schaltfläche `X` neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht AEM Assets den teilweise hochgeladenen Teil des Assets.
+   Um einen laufenden Upload abzubrechen, klicken Sie auf die Schaltfläche `X` neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht AEM Assets den teilweise hochgeladenen Teil des Assets.
 
    Den Upload fortsetzen zu können, ist besonders hilfreich bei geringer Bandbreite und Netzwerkfehlern, bei denen der Upload großer Assets lange dauern kann. Sie können den Uploadvorgang anhalten und später fortsetzen, wenn die Bedingungen besser sind. Beim Fortsetzen beginnt der Upload an dem Punkt, an dem Sie pausiert haben.
 
    Während des Uploads speichert AEM die Teile des hochgeladenen Assets als Datenblöcke im CRX-Repository. Wenn der Upload abgeschlossen ist, konsolidiert AEM diese Blöcke in einem einzelnen Datenblock im Repository.
 
-   Um die Bereinigungs-Aufgabe für nicht fertig gestellte Stapelupload-Aufträge zu konfigurieren, gehen Sie zu `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
+   Um die Bereinigungsaufgabe für die nicht abgeschlossenen Chunk-Upload-Aufträge zu konfigurieren, gehen Sie zu `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
    Wenn Sie ein Asset unter einem Namen hochladen, der bereits für ein Asset verwendet wird, das sich am Zielort befindet, wird eine Warnmeldung angezeigt.
 
-   Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset sowie alle früheren Änderungen und Verlaufsdaten (z. B. Anmerkungen, Ernten usw.) gelöscht. Wenn Sie beide Assets beibehalten möchten, wird das neue Asset umbenannt.
+   Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset sowie alle vorherigen Änderungen und Verläufe (z. B. Anmerkungen, Zuschnitte usw.) gelöscht. Wenn Sie beide Assets beibehalten, wird das neue Asset umbenannt.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
-   >Wenn Sie **[!UICONTROL Ersetzen]** im Dialogfeld **[!UICONTROL Namenskonflikt]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets.
+   >Wenn Sie **[!UICONTROL Replace]** im Dialogfeld **[!UICONTROL Namenskonflikt]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets.
    >
-   >Wenn **[!UICONTROL Asset Insights]** aktiviert ist, um Impressionen/Klicks mit Adobe Analytics zu verfolgen, macht diese neu generierte Asset-ID die für das Asset auf Adobe Analytics erfassten Daten ungültig.
+   >Wenn **[!UICONTROL Asset Insights]** aktiviert ist, um Impressionen/Klicks mit Adobe Analytics zu verfolgen, werden mit dieser neu generierten Asset-ID die für das Asset in Adobe Analytics erfassten Daten ungültig.
 
-   Wenn das hochgeladene Asset in AEM Assets vorhanden ist, wird im Dialogfeld **[!UICONTROL Erkannte Duplikat]** gewarnt, dass Sie versuchen, ein Duplikat-Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der SHA-1-Prüfsummenwert der Binärdatei des bestehenden Assets dem des Assets entspricht, das Sie gerade hochladen. In diesem Fall sind die Namen der Assets unerheblich. Das bedeutet, dass das Dialogfeld auch für Assets mit unterschiedlichen Namen angezeigt werden kann, wenn die SHA 1-Werte für ihre Binärdateien identisch sind.
+   Wenn das hochgeladene Asset in AEM Assets vorhanden ist, wird im Dialogfeld **[!UICONTROL Duplikate gefunden]** gewarnt, dass Sie versuchen, ein doppeltes Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der SHA-1-Prüfsummenwert der Binärdatei des bestehenden Assets dem des Assets entspricht, das Sie gerade hochladen. In diesem Fall sind die Namen der Assets unerheblich. Das bedeutet, dass das Dialogfeld auch für Assets mit unterschiedlichen Namen angezeigt werden kann, wenn die SHA 1-Werte für ihre Binärdateien identisch sind.
 
    >[!NOTE]
    >
-   >Das Dialogfeld **[!UICONTROL Duplikat erkannt]** wird nur angezeigt, wenn die Funktion **[!UICONTROL Duplikat-Erkennung]** aktiviert ist. Informationen zum Aktivieren der Funktion **[!UICONTROL Duplikat-Erkennung]** finden Sie unter [Aktivieren der Duplikat-Erkennung](duplicate-detection.md).
+   >Das Dialogfeld **[!UICONTROL Duplikate gefunden]** wird nur angezeigt, wenn die Funktion **[!UICONTROL Duplikatserkennung]** aktiviert ist. Informationen zum Aktivieren der Funktion **[!UICONTROL Duplikatserkennung]** finden Sie unter [Aktivieren der Duplikatserkennung](duplicate-detection.md).
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Tippen Sie auf **[!UICONTROL Behalten Sie]**, um das Duplikat-Asset in AEM Assets beizubehalten. Tippen Sie auf **[!UICONTROL Löschen]**, um das hochgeladene Duplikat-Asset zu löschen.
+   Tippen Sie auf **[!UICONTROL Behalten Sie]**, um das doppelte Asset in AEM Assets beizubehalten. Tippen Sie auf **[!UICONTROL Löschen]** , um das doppelte Asset zu löschen, das Sie hochgeladen haben.
 
-   AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset hochzuladen, das die unzulässigen Zeichen enthält, zeigt AEM Assets eine Warnmeldung an, dass der Dateiname verbotene Zeichen enthält, und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+   AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset hochzuladen, das die unzulässigen Zeichen enthält, zeigt AEM Assets eine Warnmeldung bezüglich des Vorhandenseins verbotener Zeichen im Dateinamen an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
-   Um den spezifischen Dateibenennungsregeln für Ihr Unternehmen zu entsprechen, können Sie im Dialogfeld **[!UICONTROL Assets hochladen]** lange Namen für die hochgeladenen Dateien angeben.
+   Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld **[!UICONTROL Assets hochladen]** lange Namen für die Dateien angeben, die Sie hochladen.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -119,9 +119,9 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es im Format [unterstüt
    * Der Asset-Dateiname darf nicht enthalten: `* / : [ \ \ ] | # % { } ? &`
    * Der Asset-Ordnername darf nicht enthalten: `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
-   Darüber hinaus zeigt die Assets-Oberfläche das neueste Asset an, das Sie hochladen, oder den Ordner, den Sie zuerst in allen Ansichten erstellen (**[!UICONTROL Card-Ansicht]**, **[!UICONTROL Liste-Ansicht]** und **[!UICONTROL Spalten-Ansicht]**).
+   Darüber hinaus zeigt die Assets-Benutzeroberfläche das neueste Asset, das Sie hochladen, oder den Ordner, den Sie zuerst erstellen, in allen Ansichten (**[!UICONTROL Kartenansicht]**, **[!UICONTROL Listenansicht]** und **[!UICONTROL Spaltenansicht]**) an.
 
-   Beim gleichzeitigen Hochladen großer Assets oder mehrerer Assets können Sie anhand visueller Indikatoren den Fortschritt häufig bewerten. Das Dialogfeld **[!UICONTROL Upload-Fortschritt]** zeigt die Anzahl der erfolgreich hochgeladenen Dateien und die Dateien an, die nicht hochgeladen wurden.
+   Oft können Sie beim gleichzeitigen Hochladen großer Assets oder mehrerer Assets anhand visueller Indikatoren den Fortschritt bewerten. Das Dialogfeld **[!UICONTROL Upload-Fortschritt]** zeigt die Anzahl der erfolgreich hochgeladenen Dateien und die Dateien an, die nicht hochgeladen werden konnten.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -129,7 +129,7 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es im Format [unterstüt
 
 ### Serielle Uploads {#serial-uploads}
 
-Das Hochladen zahlreicher Assets in großen Mengen erfordert erhebliche Systemressourcen, was sich negativ auf die Leistung Ihrer AEM auswirken kann. Mögliche Engpässe sind Ihre Internetverbindung, Lese- und Schreibvorgänge auf der Festplatte, Einschränkungen des Webbrowsers bei der Anzahl der POST-Anfragen beim gleichzeitigen Hochladen von Assets. Der Vorgang zum Hochladen von Massen kann fehlschlagen oder vorzeitig beendet werden. Dabei kann es vorkommen, dass in AEM Assets bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
+Das Hochladen zahlreicher Assets in großen Mengen beansprucht erhebliche Systemressourcen, was sich negativ auf die Leistung Ihrer AEM-Bereitstellung auswirken kann. Mögliche Engpässe sind Ihre Internetverbindung, Lese- und Schreibvorgänge auf der Festplatte, Webbrowserbeschränkungen bei der Anzahl der POST-Anfragen beim gleichzeitigen Asset-Upload. Der Massen-Upload kann fehlschlagen oder vorzeitig beenden. Dabei kann es vorkommen, dass in AEM Assets bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
 
 Um diese Situation zu vermeiden, gibt es die Möglichkeit, Ladevorgänge im Stapelmodus seriell durchzuführen. Dabei werden in AEM Assets die Assets nicht gleichzeitig, sondern einzeln nacheinander erfasst.
 
@@ -145,16 +145,16 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 
 >[!NOTE]
 >
->Um Assets per FTP in Dynamic Media - Scene7-Modus zu laden, installieren Sie Feature Pack (FP) 18912 auf AEM Autor. Wenden Sie sich an den Kundendienst der Adobe, um Zugriff auf das FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP in Dynamic Media - Scene7-Modus hochzuladen, installieren Sie Feature Pack (FP) 18912 auf AEM Author. Wenden Sie sich an die Kundenunterstützung von Adobe, um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
 >Die in AEM angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
 **So laden Sie Assets per FTP hoch**
 
 1. Verwenden Sie den FTP-Client Ihrer Wahl und melden Sie sich beim FTP-Server mit dem FTP-Benutzernamen und -Kennwort aus der Bereitstellungs-E-Mail an. Laden Sie die Dateien und/oder Ordner über den FTP-Client auf den FTP-Server hoch.
-1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich dann mit den Anmeldeinformationen an, die Sie aus der Bereitstellungs-E-Mail erhalten haben.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich dann mit den Anmeldedaten an, die Sie von der Bereitstellungs-E-Mail erhalten haben.
 1. Tippen oder klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
-1. Tippen Sie auf der Seite **[!UICONTROL Upload]** in der oberen linken Ecke auf die Registerkarte **[!UICONTROL Über FTP]**.
+1. Tippen Sie auf der Seite **[!UICONTROL Upload]** links oben auf die Registerkarte **[!UICONTROL Über FTP]** .
 1. Wählen Sie im linken Bereich der Seite einen FTP-Ordner aus, aus dem Sie Dateien hochladen. Auf der rechten Seite der Seite wählen Sie einen Zielordner aus.
 1. Tippen Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Auftragsoptionen]** und legen Sie dann die gewünschten Optionen basierend auf den Assets im ausgewählten Ordner fest.
 
@@ -165,9 +165,9 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
    >Wenn Sie Assets über FTP hochladen, haben die in Dynamic Media Classic festgelegten Upload-Auftragsoptionen Vorrang vor den in AEM festgelegten Asset-Verarbeitungsparametern.
 
 1. Tippen Sie in der rechten unteren Ecke des Dialogfelds **[!UICONTROL Upload-Auftragsoptionen]** auf **[!UICONTROL Speichern]**.
-1. Tippen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Hochladen]** auf **[!UICONTROL Hochladen senden]**.
+1. Tippen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Upload]** auf **[!UICONTROL Upload starten]**.
 
-   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Die Seite **[!UICONTROL Aufträge]** zeigt den Fortschritt des Hochladevorgangs an. Sie können mit der Arbeit in AEM fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
+   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite **[!UICONTROL Aufträge]** wird der Fortschritt des Uploads angezeigt. Sie können mit der Arbeit in AEM fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
 
    Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, tippen oder klicken Sie neben der Information „Dauer“ auf die Schaltfläche **[!UICONTROL Abbrechen]****[!UICONTROL .]**
 
@@ -178,11 +178,11 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 | Auftragsname |  | Der Name, der standardmäßig in diesem Feld erstellt wird, enthält den vom Benutzer eingegebenen Teil des Namens und einen Zeitstempel samt Datum. Für diesen Upload-Auftrag können Sie den Standardnamen oder einen von Ihnen selbst erstellten Namen verwenden. <br>Der Auftrag und andere Upload- und Veröffentlichungsaufträge werden auf der Seite „Aufträge“ aufgezeichnet, wo Sie den Status der Aufträge prüfen können. |
 | Nach dem Hochladen veröffentlichen |  | Veröffentlicht Assets automatisch nach dem Hochladen. |
 | In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben |  | Wählen Sie diese Option aus, wenn hochgeladene Dateien vorhandene Dateien mit denselben Namen ersetzen sollen. Der Name dieser Option kann möglicherweise anders lauten, je nach den Einstellungen in **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL Zur Anwendung hochladen]** > **[!UICONTROL Bilder überschreiben]**. |
-| Dekomprimieren von ZIP- oder TAR-Dateien beim Hochladen |  |  |
-| Auftragsoptionen |  | Tippen/klicken Sie auf **[!UICONTROL Auftragsoptionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen und Optionen auszuwählen, die sich auf den gesamten Upload-Auftrag auswirken. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Tippen Sie auf die Schaltfläche **[!UICONTROL Standardmäßige Upload-Optionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
+| ZIP- oder TAR-Dateien beim Hochladen dekomprimieren |  |  |
+| Auftragsoptionen |  | Tippen oder klicken Sie auf **[!UICONTROL Auftragsoptionen]** , um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen und Optionen auszuwählen, die sich auf den gesamten Upload-Auftrag auswirken. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Tippen Sie auf die Schaltfläche **[!UICONTROL Standard-Upload-Optionen]** , um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
 |  | Wenn | Wählen Sie „Einmalig“ oder „Wiederkehrend“ aus. Zum Einrichten eines wiederkehrenden Auftrags wählen Sie eine Wiederholungsoption („Täglich“, „Wöchentlich“, „Monatlich“ oder „Benutzerdefiniert“), um anzugeben, wie oft der FTP-Upload-Auftrag wiederholt werden soll. Dann geben Sie nach Bedarf die Planungsoptionen an. |
 |  | Unterordner einschließen | Laden Sie alle Unterordner im hochzuladenden Ordner hoch. Der Name des hochgeladenen Ordners und die Namen der darin enthaltenen Unterordner werden automatisch in AEM Assets erfasst. |
-|  | Optionen für das Zuschneiden | Um die Seiten eines Bildes manuell zu beschneiden, wählen Sie im Menü „Beschneiden“ die Option „Manuell“ aus. Dann geben Sie die Anzahl von Pixeln ein, die an einer oder jeder Seite des Bildes abgeschnitten werden sollen. Um wie viel das Bild beschnitten wird, hängt von der ppi-Einstellung (Pixel per Inch; Pixel pro Zoll) in der Bilddatei ab. Beispiel: Wenn das Bild 150 ppi aufweist und Sie 75 in die Textfelder für oben, rechts, unten und links eingeben, wird ein halber Zoll von jeder Seite abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe** : Wählen Sie die Option &quot;Farbe&quot;. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**** Transparenz – Wählen Sie die Option „Transparenz“.<br> **Toleranz** : Ziehen Sie den Schieberegler, um eine Toleranz von 0 bis 1 festzulegen. Beim Beschneiden basierend auf Farbe geben Sie 0 an, damit Pixel nur abgeschnitten werden, wenn sie exakt der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Beachten Sie, dass diese Optionen für das Beschneiden zerstörungsfrei sind. |
+|  | Optionen für das Zuschneiden | Um die Seiten eines Bildes manuell zu beschneiden, wählen Sie im Menü „Beschneiden“ die Option „Manuell“ aus. Dann geben Sie die Anzahl von Pixeln ein, die an einer oder jeder Seite des Bildes abgeschnitten werden sollen. Um wie viel das Bild beschnitten wird, hängt von der ppi-Einstellung (Pixel per Inch; Pixel pro Zoll) in der Bilddatei ab. Beispiel: Wenn das Bild 150 ppi aufweist und Sie 75 in die Textfelder für oben, rechts, unten und links eingeben, wird ein halber Zoll von jeder Seite abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe**  - Wählen Sie die Option &quot;Farbe&quot;. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**** Transparenz – Wählen Sie die Option „Transparenz“.<br> **Toleranz**  - Ziehen Sie den Regler, um eine Toleranz von 0 bis 1 festzulegen. Für das Zuschneiden auf Grundlage der Farbe geben Sie 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie genau der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Beachten Sie, dass diese Optionen für das Beschneiden zerstörungsfrei sind. |
 |  | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonversion aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonversion statt. Heutzutage ist in fast allen Bildern das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum zum Anzeigen von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonversion stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonversion mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den Dateien überein, die mit dieser Option erstellt wurden. Deshalb empfiehlt es sich, die Option „Beibehaltung der Standardfarbe“ zu verwenden.</li><li>Benutzerdefinierte Einstellung von > in:<br> Öffnet Menüs, damit Sie einen „Konvertieren von“- und einen „Konvertieren in“-Farbraum auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
 |  | Bildbearbeitungsoptionen | Sie können die Beschneidungsmasken in Bildern beibehalten und ein Farbprofil auswählen.<br> Siehe [Festlegen von Bildbearbeitungsoptionen beim Hochladen](#setting-image-editing-options-at-upload). |
 |  | PostScript-Optionen | Sie können PostScript®-Dateien rastern, Dateien beschneiden, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
@@ -196,7 +196,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 
 Beim Hochladen von Bilddateien, einschließlich AI-, EPS- und PSD-Dateien, können Sie die folgenden Bearbeitungsaktionen im Dialogfeld **[!UICONTROL Upload-Auftragsoptionen]** ausführen:
 
-* Beschneiden von Leerzeichen am Rand von Bildern (siehe Beschreibung in Tabelle oben).
+* Beschneiden von Leerzeichen am Rand von Bildern (siehe Beschreibung in der obigen Tabelle).
 * Ränder von Bildern manuell beschneiden (siehe Beschreibung in der oben stehenden Tabelle)
 * Ein Farbprofil auswählen (siehe Optionsbeschreibung in der oben stehenden Tabelle)
 * Eine Maske aus einem Beschneidungspfad erstellen
@@ -209,14 +209,14 @@ Beim Hochladen von Bilddateien, einschließlich AI-, EPS- und PSD-Dateien, könn
 | Unschärfemaske |  | Ermöglicht Ihnen die Feineinstellung eines Schärfefiltereffekts im finalen Downsampling-Bild. So können Sie die Intensität und den Radius des Effekts (in Pixel) sowie einen Schwellenwert für ignorierten Kontrast angeben.<br> Bei diesem Effekt werden dieselben Optionen wie im Filter „Unschärfemaske“ von Photoshop verwendet. Im Gegensatz zu dem, was der Name besagt, ist die Unschärfemaske ein Scharfzeichnungsfilter. Wählen Sie unter „Unschärfemaske“ die gewünschten Optionen aus. Im Folgenden finden Sie Beschreibungen der Einstellungsoptionen: |
 |  | Stärke | Steuert den auf die Kantenpixel angewendeten Kontrastwert.<br> Betrachten Sie diese Unteroption als Intensität des Effekts. Der Hauptunterschied zwischen den Werten von „Unschärfemaske“ in Dynamic Media und den Werten in Adobe Photoshop ist, dass Adobe Photoshop einen Wertebereich verwendet, der von 1 % bis 500 % reicht. In Dynamic Media hingegen reichen die Werte von 0,0 bis 5,0. Der Wert 5,0 entspricht ungefähr 500 % in Photoshop, der Wert 0,9 ungefähr 90 % usw. |
 |  | Radius | Steuert den Radius des Effekts. Der Wertebereich reicht von 0 bis 250.<br> Der Effekt wird auf alle Pixel in einem Bild angewendet und verbreitet sich in alle Richtungen. Der Radius wird in Pixel gemessen. Um beispielsweise einen ähnlichen Scharfzeichnungseffekt für ein Bild mit 2000 x 2000 Pixel und ein Bild mit 500 x 500 Pixel zu erhalten, können Sie einen Radius von zwei Pixel für das Bild mit 2000 x 2000 Pixel und einen Radius von einem Pixel für das Bild mit 500 x 500 Pixel festlegen. Ein größerer Wert wird für ein Bild mit mehr Pixel verwendet. |
-|  | Schwelle | Beschreibt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert wird. Das ist wichtig, damit kein Bildrauschen entsteht, wenn dieser Filter verwendet wird. Der Wertebereich reicht von 0 bis 255. Diese Werte stehen für die Anzahl der Helligkeitsschritte in einem Graustufenbild. 0 = Schwarz, 128 = 50 % Grau und 255 = Weiß.<br> Ein Schwellenwert von 12 ignoriert beispielsweise leichte Variationen der Hauttonhelligkeit, um Rauschen zu vermeiden, fügt aber trotzdem Kantenkontrast zu kontrastreichen Bereichen hinzu, wie z. B. wo Wimpern auf die Haut treffen.<br> Wenn Sie z. B. ein Foto des Gesichts einer Person haben, wirkt sich die &quot;Unscharf maskieren&quot;auf die kontrastreichen Teile des Bildes aus, z. B. wo Wimpern und Haut aufeinander treffen, um einen offensichtlichen Kontrastbereich zu schaffen, und auf die glatte Haut selbst. Selbst die glatteste Haut weist geringfügige Änderungen der Helligkeitswerte auf. Wenn Sie keinen Schwellenwert verwenden, akzentuiert der Filter diese geringfügigen Änderungen in den Hautpixel. Dadurch entsteht ein verrauschter und unerwünschter Effekt, während der Kontrast an den Wimpern verstärkt und die Schärfe intensiviert wird.<br> Zur Vermeidung dieses Problems wird ein Schwellenwert verwendet, der den Filter anweist, die Pixel zu ignorieren, die den Kontrast nicht wesentlich ändern, beispielsweise bei glatter Haut.<br> Beachten Sie in der weiter oben gezeigten Reißverschlussgrafik die Textur neben dem Reißverschluss. Hier ist Bildrauschen erkennbar, weil die Schwellenwerte zu niedrig waren, als dass sie das Bildrauschen unterdrücken könnten. |
+|  | Schwelle | Beschreibt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert wird. Das ist wichtig, damit kein Bildrauschen entsteht, wenn dieser Filter verwendet wird. Der Wertebereich reicht von 0 bis 255. Diese Werte stehen für die Anzahl der Helligkeitsschritte in einem Graustufenbild. 0 = Schwarz, 128 = 50 % Grau und 255 = Weiß.<br> Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um Rauschen zu vermeiden. Gleichzeitig wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.<br> Wenn Sie z. B. ein Foto von jemandem haben, wirkt sich die Unschärfemaske auf die kontrastreichen Teile des Bildes aus, z. B. wo Wimpern und Haut zusammenkommen, um einen offensichtlichen Kontrastbereich zu schaffen, und auf die glatte Haut selbst. Selbst die glatteste Haut weist geringfügige Änderungen der Helligkeitswerte auf. Wenn Sie keinen Schwellenwert verwenden, akzentuiert der Filter diese geringfügigen Änderungen in den Hautpixel. Dadurch entsteht ein verrauschter und unerwünschter Effekt, während der Kontrast an den Wimpern verstärkt und die Schärfe intensiviert wird.<br> Zur Vermeidung dieses Problems wird ein Schwellenwert verwendet, der den Filter anweist, die Pixel zu ignorieren, die den Kontrast nicht wesentlich ändern, beispielsweise bei glatter Haut.<br> Beachten Sie in der weiter oben gezeigten Reißverschlussgrafik die Textur neben dem Reißverschluss. Hier ist Bildrauschen erkennbar, weil die Schwellenwerte zu niedrig waren, als dass sie das Bildrauschen unterdrücken könnten. |
 |  | Monochrom | Wählen Sie diese Option aus, um die Unschärfemaske auf die Bildhelligkeit anzuwenden (Intensität).<br> Deaktivieren Sie diese Unteroption, um die Unschärfemaske auf jede Farbkomponente einzeln anzuwenden. |
 | Hintergrund aussparen |  | Entfernt beim Hochladen automatisch den Hintergrund eines Bildes. Mit dieser Technik ist es möglich, die Aufmerksamkeit auf ein bestimmtes Objekt zu lenken und es von einem belebten Hintergrund abzuheben. Wählen Sie diese Option aus, um die Funktion „Hintergrund aussparen“ und die folgenden Optionen zu aktivieren: |
 |  | Ecke | Erforderlich.<br> Die Ecke des Bildes, mit der die auszusparende Hintergrundfarbe definiert wird.<br> Sie können aus **Oben links**, **Unten links**, **Oben rechts** und **Unten rechts** wählen. |
 |  | Füllmethode | Erforderlich.<br> Zur Steuerung der Pixeltransparenz ausgehend von der Ecke, die Sie gewählt haben.<br> Sie können aus folgenden Füllmethoden wählen: <ul><li>**Großflächig füllen** – Macht alle Pixel transparent, die mit der von Ihnen angegebenen Ecke übereinstimmen und mit ihr verbunden sind.</li><li>**Pixel abgleichen** – Macht alle entsprechenden Pixel transparent, unabhängig von ihrer Position auf dem Bild.</li></ul> |
 |  | Toleranz | Optional.<br> Steuert die zulässige Abweichung der Pixelfarbe ausgehend von der Ecke, die Sie festgelegt haben.<br> Verwenden Sie den Wert 0,0, um die Pixelfarben genau anzugleichen, oder verwenden Sie den Wert 1,0, um die größtmögliche Abweichung zuzulassen. |
 
-#### Festlegen der Upload-Optionen für PostScript und Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Festlegen von PostScript- und Illustrator-Uploadoptionen {#setting-postscript-and-illustrator-upload-options}
 
 Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können die Dateien rastern, den transparenten Hintergrund beibehalten sowie eine Auflösung und einen Farbraum auswählen. Optionen zum Formatieren von PostScript- und Illustrator-Dateien stehen im Dialogfeld „Upload-Auftragsoptionen“ unter PostScript- und Illustrator-Optionen zur Verfügung.
 
@@ -231,13 +231,13 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 |  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
 |  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
-#### Festlegen der Photoshop-Upload-Optionen {#setting-photoshop-upload-options}
+#### Photoshop-Uploadoptionen festlegen {#setting-photoshop-upload-options}
 
 PSD (Photoshop)-Dateien werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie daraus automatisch eine Bildvorlage erstellen (aktivieren Sie auf dem Uploadbildschirm die Option „Vorlage erstellen“). 
 
 Dynamic Media erstellt mehrere Bilder aus einer PSD-Datei mit Ebenen, wenn Sie die Datei zum Erstellen einer Vorlage verwenden. Für jede Ebene wird ein Bild erstellt.
 
-Verwenden Sie die oben beschriebenen Optionen **[!UICONTROL Beschneidungsoptionen]** und **[!UICONTROL Profil-Farboptionen]** mit Photoshop-Upload-Optionen.
+Verwenden Sie die oben beschriebenen **[!UICONTROL Zuschnitt-Optionen]** und **[!UICONTROL Farbprofiloptionen]** mit Photoshop-Uploadoptionen.
 
 >[!NOTE]
 >
@@ -278,21 +278,21 @@ Wählen Sie unter folgenden Optionen:
 |  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
 |  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
-#### Einstellen der eVideo-Upload-Optionen {#setting-evideo-upload-options}
+#### Festlegen von eVideo-Uploadoptionen {#setting-evideo-upload-options}
 
 Sie können eine Videodatei neu kodieren, indem Sie aus einer Vielzahl von Videovorgaben auswählen.
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Adaptives Video |  | Eine einzelne Kodierungsvorgabe, die mit jedem Seitenverhältnis verwendet werden kann, um Videos für Versand zu Mobilgeräten, Tablets und Desktops zu erstellen. Hochgeladene Quellvideos, die mit dieser Vorgabe kodiert wurden, weisen eine feste Höhe auf. Die Breite wird jedoch automatisch skaliert, um das Seitenverhältnis des Videos beizubehalten. <br>Die beste Vorgehensweise ist die Verwendung der adaptiven Videokodierung. |
-| Einzelne Kodierungsvorgaben | Kodierungsvorgaben sortieren | Wählen Sie &quot;Name&quot;oder &quot;Größe&quot;, um die unter &quot;Desktop&quot;, &quot;Mobil&quot;und &quot;Tablet&quot;aufgelisteten Kodierungsvorgaben nach Name oder Auflösung zu sortieren. |
-|  | Desktop | Erstellen Sie eine MP4-Datei zur Bereitstellung eines Streaming- oder progressiven Videoerlebnisses auf Desktop-Computern.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Datenrate für die Zielgruppe aus. |
-|  | Mobilgerät | Erstellen Sie eine MP4-Datei für den Versand auf iPhone- oder Android-Mobilgeräten.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Zielgruppe für die Datenrate aus. |
-|  | Tablet | Erstellen Sie eine MP4-Datei für den Versand auf iPad- oder Android-Tablet-Geräten.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Datenrate für die Zielgruppe aus. |
+| Adaptives Video |  | Eine einzelne Kodierungsvorgabe, die mit jedem Seitenverhältnis verwendet werden kann, um Videos für die Bereitstellung auf Mobilgeräten, Tablets und Desktops zu erstellen. Hochgeladene Quellvideos, die mit dieser Vorgabe kodiert wurden, weisen eine feste Höhe auf. Die Breite wird jedoch automatisch skaliert, um das Seitenverhältnis des Videos beizubehalten. <br>Es empfiehlt sich, die adaptive Videokodierung zu verwenden. |
+| Einzelne Kodierungsvorgaben | Kodierungsvorgaben sortieren | Wählen Sie Name oder Größe aus, um die unter &quot;Desktop, Mobile und Tablet&quot;aufgelisteten Kodierungsvorgaben nach Name oder Auflösung zu sortieren. |
+|  | Desktop | Erstellen Sie eine MP4-Datei für die Bereitstellung eines Streaming- oder progressiven Videoerlebnisses auf Desktop-Computern. Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
+|  | Mobilgerät | Erstellen Sie eine MP4-Datei für die Bereitstellung auf iPhone- oder Android-Mobilgeräten. Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
+|  | Tablet | Erstellen Sie eine MP4-Datei für die Bereitstellung auf iPad- oder Android-Tablet-Geräten. Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
 
-#### Stapelsatzvorgaben beim Hochladen festlegen {#setting-batch-set-presets-at-upload}
+#### Festlegen von Stapelsatzvorgaben beim Hochladen {#setting-batch-set-presets-at-upload}
 
-Wenn Sie aus hochgeladenen Bildern automatisch einen Bildsatz oder ein Rotationsset erstellen möchten, klicken Sie für die gewünschte Vorgabe auf die Spalte **[!UICONTROL Aktiv]**. Sie können mehrere Vorgaben auswählen. 
+Wenn Sie aus hochgeladenen Bildern automatisch ein Bildset oder Rotationsset erstellen möchten, klicken Sie auf die Spalte **[!UICONTROL Aktiv]** für die Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. 
 
 Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -310,7 +310,7 @@ Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv ext
 
 Nach Abschluss des Extrahierungsvorgangs erhalten Sie von AEM eine Benachrichtigung im Benachrichtigungsbereich. Während AEM das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extrahierungsvorgangs mit Ihrer Arbeit fortfahren.
 
-![Meldung der Postleitzahl-Extraktion](assets/zip_extract_notification.png)
+![Benachrichtigung über ZIP-Extraktion](assets/zip_extract_notification.png)
 
 Die Funktion hat einige Einschränkungen:
 
@@ -324,12 +324,12 @@ Die Funktion hat einige Einschränkungen:
 
 **So zeigen Sie die Asset-Vorschau an**:
 
-1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;zum Speicherort des Assets, das Sie Vorschau haben möchten.
+1. Navigieren Sie in der Assets-Benutzeroberfläche zum Speicherort des Assets, das Sie in der Vorschau anzeigen möchten.
 1. Tippen Sie auf das gewünschte Asset, um es zu öffnen.
 
 1. Im Vorschaumodus ist eine Zoom-Funktion für [unterstützte Bildtypen](assets-formats.md#supported-raster-image-formats) verfügbar (mit interaktiver Bearbeitung).
 
-   Um ein Asset zu vergrößern, tippen Sie auf **[!UICONTROL +]** (oder tippen Sie auf die Lupe des Assets). Um die Ansicht zu verkleinern, tippen Sie auf **[!UICONTROL -]**. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil **[!UICONTROL Zoom zurücksetzen]** gelangen Sie zurück zur Originalansicht.
+   Tippen Sie zum Vergrößern eines Assets auf **[!UICONTROL +]** (oder tippen Sie auf das Lupensymbol auf dem Asset). Um auszuzoomen, tippen Sie auf **[!UICONTROL -]**. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil **[!UICONTROL Zoom zurücksetzen]** gelangen Sie zurück zur Originalansicht.
 
    ![uploadicon](assets/uploadicon.png)
 
@@ -339,7 +339,7 @@ Die Funktion hat einige Einschränkungen:
 
 >[!MORELIKETHIS]
 >
->* [Vorschau Dynamic Media Assets](/help/assets/previewing-assets.md).
+>* [Vorschau von Dynamic Media Assets](/help/assets/previewing-assets.md) anzeigen.
 >* [Anzeigen von Unter-Assets](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -347,7 +347,7 @@ Die Funktion hat einige Einschränkungen:
 
 1. Navigieren Sie zum Speicherort des Assets, dessen Metadaten Sie bearbeiten möchten.
 
-1. Wählen Sie das Asset aus und tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um die Asset-Eigenschaften Ansicht. Wählen Sie alternativ die Schnellaktion **[!UICONTROL Eigenschaften]** auf der Asset-Karte aus.
+1. Wählen Sie das Asset aus und tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** , um die Asset-Eigenschaften anzuzeigen. Wählen Sie alternativ die Schnellaktion **[!UICONTROL Eigenschaften]** auf der Asset-Karte aus.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -357,18 +357,18 @@ Die Funktion hat einige Einschränkungen:
 
 1. Um ein bestimmtes Datum/eine Zeit für die Aktivierung der Assets einzustellen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Einschaltzeit]**.
 
-   ![Zeit &quot;On&quot;für Assets festlegen, damit Assets für einen bestimmten Zeitraum zwischen Ein- und Auszeit verfügbar gemacht werden](assets/chlimage_1-12.png)
+   ![Festlegen der Einschaltzeit für Assets, um Assets für einen bestimmten Zeitraum zwischen Ein- und Ausschaltzeit verfügbar zu machen](assets/chlimage_1-12.png)
 
-1. Um das Asset nach einer bestimmten Dauer zu deaktivieren, wählen Sie das Deaktivierungsdatum und die Uhrzeit aus der Datumsauswahl neben dem Feld **[!UICONTROL Off Time]**.
+1. Um das Asset nach einer bestimmten Dauer zu deaktivieren, wählen Sie Datum und Uhrzeit der Deaktivierung aus der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]** aus.
 
    Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
 
-   ![Zeit einstellen, damit Assets nach einem bestimmten Zeitraum nicht mehr verfügbar sind](assets/chlimage_1-13.png)
+   ![Festlegen der Zeit, bis Assets nach einem bestimmten Zeitraum nicht mehr verfügbar sind](assets/chlimage_1-13.png)
 
-1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und drücken Sie **[!UICONTROL die Eingabetaste]**. Das neue Tag wird in AEM gespeichert.
+1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und drücken Sie die Eingabetaste **[!UICONTROL a1/>.]** Das neue Tag wird in AEM gespeichert.
 
-   YouTube benötigt Tags, um zu veröffentlichen und einen Link zu YouTube zu haben (wenn ein geeigneter Link gefunden werden kann).
-Zum Erstellen von Tags benötigen Sie Schreibberechtigung für `/content/cq:tags/default` im CRX-Repository.
+   YouTube erfordert die Veröffentlichung von Tags und einen Link zu YouTube (wenn ein entsprechender Link gefunden werden kann).
+Um Tags zu erstellen, benötigen Sie eine Schreibberechtigung für `/content/cq:tags/default` im CRX-Repository.
 
 1. Um eine Bewertung für das Asset bereitzustellen, tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]** und dann auf den Stern an der entsprechenden Position, um die gewünschte Bewertung zuzuweisen.
 
@@ -376,7 +376,7 @@ Zum Erstellen von Tags benötigen Sie Schreibberechtigung für `/content/cq:tags
 
    Die Bewertungsnote, die Sie dem Asset zuweisen, wird unter **[!UICONTROL Ihre Bewertungen]** angezeigt. Die durchschnittliche Bewertungsnote, die das Asset von Benutzern erhält, wird unter **[!UICONTROL Bewertung]** angezeigt. Darüber hinaus wird die Aufschlüsselung der Bewertungen, die zur durchschnittlichen Bewertungsnote beitragen, unter **[!UICONTROL Bewertungsübersicht]** angezeigt. Sie können Assets basierend auf der durchschnittlichen Bewertungsnote durchsuchen.
 
-1. Um Nutzungsstatistiken für das Asset zu erhalten, tippen Sie auf die Registerkarte **[!UICONTROL Insights]**.
+1. Um Nutzungsstatistiken für das Asset anzuzeigen, tippen Sie auf die Registerkarte **[!UICONTROL Insights]** .
 
    Nutzungsstatistiken umfassen folgende Metriken:
 
@@ -387,7 +387,7 @@ Zum Erstellen von Tags benötigen Sie Schreibberechtigung für `/content/cq:tags
    Weitere Informationen finden Sie unter [Assets Insights](touch-ui-asset-insights.md).
 
 1. Tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
-1. Navigieren Sie zur Assets-Benutzeroberfläche. Die bearbeiteten Metadateneigenschaften, einschließlich Titel, Beschreibung, Bewertungen usw., werden auf der Asset-Ansicht in der Karten-Ansicht und unter den entsprechenden Spalten in der Liste angezeigt.
+1. Navigieren Sie zur Assets-Benutzeroberfläche. Die bearbeiteten Metadateneigenschaften wie Titel, Beschreibung, Bewertungen usw. werden auf der Asset-Karte in der Kartenansicht und in den relevanten Spalten der Listenansicht angezeigt.
 
 ## Kopieren von Assets {#copying-assets}
 
@@ -401,7 +401,7 @@ Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werde
 
 Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine Teilkopie wird beim Kopieren eines Assets nicht erstellt.
 
-1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;einen oder mehrere Assets aus und tippen Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Kopieren]**. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]** aus der Asset-Karte wählen.
+1. Wählen Sie in der Assets-Benutzeroberfläche mindestens ein Asset aus und tippen Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Kopieren]** . Wählen Sie alternativ die Schnellaktion **[!UICONTROL Kopieren]** aus der Asset-Karte aus.
 
    ![copy_icon](assets/copy_icon.png)
 
@@ -415,7 +415,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Wenn Sie ein Asset in denselben Speicherort kopieren, generiert AEM automatisch eine Variation des Namens. Beispiel: Wenn Sie ein Asset mit dem Namen „Quadrat“ kopieren, generiert AEM automatisch den Namen „Quadrat1“ für die Kopie.
 
-1. Tippen Sie in der Symbolleiste auf das Asset-Symbol **[!UICONTROL Einfügen]**:
+1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Asset einfügen]** :
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -427,7 +427,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
 ## Verschieben und Umbenennen von Assets {#moving-or-renaming-assets}
 
-Wenn Sie Assets (oder Ordner) an einen anderen Speicherort verschieben, werden die Assets (oder Ordner) nicht dupliziert, anders als beim Kopieren des Assets. Die Assets (oder die Ordner) werden am Speicherort der Zielgruppe platziert und vom Quellspeicherort entfernt. Sie können das Asset auch umbenennen, wenn Sie es an den neuen Speicherort verschieben. Wenn Sie ein veröffentlichtes Asset an einen anderen Speicherort verschieben, haben Sie die Möglichkeit, das Asset erneut zu veröffentlichen. Standardmäßig wird beim Verschieben eines veröffentlichten Assets die Veröffentlichung automatisch rückgängig gemacht. Verschiebte Assets werden erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option [!UICONTROL Neu veröffentlichen] auswählt.
+Wenn Sie Assets (oder Ordner) an einen anderen Speicherort verschieben, werden die Assets (oder Ordner) im Gegensatz zum Kopieren des Assets nicht dupliziert. Die Assets (oder die Ordner) werden am Zielspeicherort platziert und vom Quellspeicherort entfernt. Sie können das Asset auch umbenennen, wenn Sie es an den neuen Speicherort verschieben. Wenn Sie ein veröffentlichtes Asset an einen anderen Speicherort verschieben, haben Sie die Möglichkeit, das Asset erneut zu veröffentlichen. Standardmäßig wird die Veröffentlichung eines veröffentlichten Assets durch den Verschiebevorgang automatisch aufgehoben. Das verschobene Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option [!UICONTROL Neu veröffentlichen] auswählt.
 
 ![Sie können bereits veröffentlichte Assets beim Verschieben erneut veröffentlichen](assets/republish-on-move.png)
 
@@ -441,14 +441,14 @@ So verschieben Sie Assets oder Ordner:
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
-1. Wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Verschieben]**.
+1. Wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Verschieben]** .
    ![Option &quot;Verschieben&quot;in der Assets-Symbolleiste](assets/do-not-localize/move_icon.png)
 
 1. Führen Sie im Assistenten [!UICONTROL Assets verschieben] einen der folgenden Schritte aus:
 
-   * Geben Sie nach dem Verschieben den Namen für das Asset an. Klicken Sie dann auf **[!UICONTROL Weiter]**, um fortzufahren.
+   * Geben Sie nach dem Verschieben den Namen für das Asset an. Klicken Sie dann auf **[!UICONTROL Weiter]** , um fortzufahren.
 
-   * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Prozess zu beenden.
+   * Klicken Sie auf **[!UICONTROL Abbrechen]** , um den Vorgang abzubrechen.
    >[!NOTE]
    >
    >* Sie können denselben Namen für das Asset angeben, wenn sich am neuen Speicherort kein Asset mit diesem Namen befindet. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speichertort verschieben, an dem bereits ein Asset mit demselben Namen vorhanden ist. Wenn Sie denselben Namen verwenden, generiert das System automatisch eine Variante dieses Namens. Wenn Sie beispielsweise ein Asset mit dem Namen „Quadrat“ kopieren, generiert das System den Namen „Quadrat1“ für die Kopie.
@@ -457,30 +457,30 @@ So verschieben Sie Assets oder Ordner:
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:
 
-   * Navigieren Sie zum neuen Speicherort für die Assets und klicken Sie dann auf **[!UICONTROL Weiter]**, um fortzufahren.
+   * Navigieren Sie zum neuen Speicherort für die Assets und klicken Sie dann auf **[!UICONTROL Weiter]** , um fortzufahren.
 
-   * Klicken Sie auf **[!UICONTROL Zurück]**, um zum Bildschirm **[!UICONTROL Umbenennen]** zurückzukehren.
+   * Klicken Sie auf **[!UICONTROL Zurück]** , um zum Bildschirm **[!UICONTROL Umbenennen]** zurückzukehren.
 
 1. Wenn die verschobenen Assets verweisende Seiten, Assets oder Sammlungen umfassen, wird die Registerkarte **[!UICONTROL Verweise anpassen]** neben der Registerkarte **[!UICONTROL Ziel auswählen]** angezeigt.
 
    Führen Sie im Bildschirm **[!UICONTROL Verweise anpassen]** einen der folgenden Schritte aus:
 
-   * Geben Sie die Verweise an, die basierend auf den neuen Details angepasst werden sollen, und klicken Sie dann auf **[!UICONTROL Verschieben]**, um fortzufahren.
+   * Geben Sie die Verweise an, die anhand der neuen Details angepasst werden sollen, und klicken Sie dann auf **[!UICONTROL Verschieben]**, um fortzufahren.
 
    * Aktivieren/deaktivieren Sie in der Spalte **[!UICONTROL Anpassen]** Verweise auf die Assets.
-   * Klicken Sie auf **[!UICONTROL Zurück]**, um zum Bildschirm **[!UICONTROL Ziel auswählen]** zurückzukehren.
+   * Klicken Sie auf **[!UICONTROL Zurück]** , um zum Bildschirm **[!UICONTROL Ziel]** auszuwählen.
 
-   * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Verschieben-Vorgang zu beenden.
+   * Klicken Sie auf **[!UICONTROL Abbrechen]** , um den Verschiebevorgang abzubrechen.
 
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
-### Verschieben von Assets mithilfe des Ziehvorgangs {#move-using-drag}
+### Verschieben von Assets mithilfe des Drag-Vorgangs {#move-using-drag}
 
-Sie können Assets (oder Ordner) in einen Ordner verschieben, indem Sie sie an den Speicherort der Zielgruppe ziehen, anstatt die Option [!UICONTROL Verschieben] in der Benutzeroberfläche zu verwenden. Dieser Vorgang ist jedoch nur in der Ansicht der Liste möglich.
+Sie können Assets (oder Ordner) in einen gleichrangigen Ordner verschieben, indem Sie sie an den Zielspeicherort ziehen, anstatt die Option [!UICONTROL Verschieben] in der Benutzeroberfläche zu verwenden. Dieser Vorgang ist jedoch nur in der Listenansicht möglich.
 
-Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset verschieben] nicht geöffnet. Daher erhalten Sie beim Verschieben keine Option zum Umbenennen der Assets. Darüber hinaus werden die bereits veröffentlichten Assets beim Verschieben durch Ziehen erneut veröffentlicht, ohne dass die Zustimmung des Benutzers zur erneuten Veröffentlichung eingeholt werden muss.
+Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset verschieben] nicht geöffnet. Daher erhalten Sie keine Option, die Assets beim Verschieben umzubenennen. Darüber hinaus werden die bereits veröffentlichten Assets erneut veröffentlicht, wenn Sie sie durch Ziehen verschieben, ohne die Zustimmung des Benutzers zur erneuten Veröffentlichung einzuholen.
 
-![Verschieben von Assets in gleichgeordnete Ordner durch Ziehen von Assets](assets/move-by-drag.gif)
+![Verschieben von Assets in gleichrangige Ordner durch Ziehen von Assets](assets/move-by-drag.gif)
 
 ## Verwalten von Ausgabedarstellungen {#managing-renditions}
 
@@ -490,7 +490,7 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset v
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie **[!UICONTROL Darstellungen]** aus der Liste.
+1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie **[!UICONTROL Ausgabeformate]** aus der Liste aus.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -504,37 +504,37 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset v
 
 1. Wählen Sie eine Ausgabedarstellung aus, um sie anzuzeigen oder zu löschen.
 
-   **Eine Darstellung löschen**
+   **Löschen einer Ausgabedarstellung**
 
-   Wählen Sie eine Darstellung aus dem Bedienfeld **[!UICONTROL Ausgabeformate]** und tippen Sie dann auf das Symbol **[!UICONTROL Ausgabeformat]** aus der [Symbolleiste](/help/sites-authoring/basic-handling.md). Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
+   Wählen Sie eine Ausgabedarstellung aus dem Bedienfeld **[!UICONTROL Ausgabedarstellungen]** und tippen Sie dann auf das Symbol **[!UICONTROL Ausgabedarstellung löschen]** in der [Symbolleiste](/help/sites-authoring/basic-handling.md). Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie den Experience Manager anpassen, um entweder bestimmte Ausgabeformate zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Eine neue Darstellung hochladen**
+   **Eine neue Ausgabedarstellung hochladen**
 
-   Navigieren Sie zur Seite mit den Asset-Details und klicken Sie auf das Symbol **[!UICONTROL Hinzufügen Darstellung]** in der Symbolleiste, um eine neue Darstellung für das Asset hochzuladen.
+   Navigieren Sie zur Asset-Detailseite für das Asset und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung hinzufügen]** , um eine neue Ausgabedarstellung für das Asset hochzuladen.
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Wenn Sie eine Ausgabedarstellung im Bedienfeld **[!UICONTROL Ausgabedarstellungen]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für die Ausgabedarstellung relevanten Aktionen angezeigt werden. Optionen wie das Symbol **[!UICONTROL Darstellung hochladen]** werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
+   >Wenn Sie eine Ausgabedarstellung im Bedienfeld **[!UICONTROL Ausgabedarstellungen]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für die Ausgabedarstellung relevanten Aktionen angezeigt werden. Optionen wie das Symbol **[!UICONTROL Ausgabedarstellung hochladen]** werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
    Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. AEM Assets zeigt anhand der von Ihnen angegebenen Abmessungen die Ausgabedarstellung mit den genauen oder möglichst genauen Abmessungen an.
 
-   Um die Darstellungsdimensionen eines Bildes auf der Ebene der Asset-Details zu konfigurieren, überlagern Sie den Knoten **[!UICONTROL renditionpicker]** `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` und konfigurieren Sie den Wert der Eigenschaft width. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft **[!UICONTROL preferOriginal]** der Originalgröße den Vorzug, wenn das angepasste Wiedergabeformat größer ist als das Original.
+   Um die Ausgabedarstellungsdimensionen eines Bildes auf der Asset-Detailebene zu konfigurieren, überlagern Sie den Knoten **[!UICONTROL renditionpicker]** `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` und konfigurieren Sie den Wert der width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft **[!UICONTROL preferOriginal]** der Originalgröße den Vorzug, wenn das angepasste Wiedergabeformat größer ist als das Original.
 
-   Ebenso können Sie das Seitenbild **[!UICONTROL Anmerkung]** anpassen, indem Sie `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` überlagern.
+   Auf ähnliche Weise können Sie das Seitenbild **[!UICONTROL Anmerkung]** anpassen, indem Sie `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` überlagern.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-   Um die Darstellungsdimensionen für ein Video-Asset zu konfigurieren, navigieren Sie zum Knoten **[!UICONTROL videopicker]** im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
+   Um Ausgabedarstellungsdimensionen für ein Video-Asset zu konfigurieren, navigieren Sie zum Knoten **[!UICONTROL videopicker]** im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
 
    >[!NOTE]
    >
    >Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Darüber hinaus werden je nach Browser unterschiedliche Videoformate unterstützt.
 
-Weitere Informationen zu Teilassets finden Sie unter [Teilassets verwalten](managing-linked-subassets.md).
+Weitere Informationen zu Unter-Assets finden Sie unter [Verwalten von Unter-Assets](managing-linked-subassets.md).
 
 ## Löschen von Assets {#deleting-assets}
 
@@ -548,23 +548,23 @@ Sie benötigen eine Löschberechtigung für DAM/Asset, um ein Asset löschen zu 
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie löschen möchten.
 
-1. Wählen Sie das Asset aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Löschen]**.
+1. Wählen Sie das Asset aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Löschen]** .
 
    ![delete_icon](assets/delete_icon.png)
 
 1. Tippen Sie im Bestätigungsdialogfeld auf:
 
    * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
-   * **[!UICONTROL Löschen Sie]** die Aktion auf der Grundlage der folgenden Punkte:
+   * **** Löschen Sie, um die Aktion anhand der folgenden Punkte zu bestätigen:
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
-      * Wenn das Asset Referenzen enthält, werden Sie durch eine Fehlermeldung darüber informiert, dass **[!UICONTROL auf eines oder mehrere Assets verwiesen wird. Sie können**[!UICONTROL  Löschen erzwingen ]**oder**[!UICONTROL  Abbrechen ]**auswählen.]**
+      * Wenn das Asset Verweise aufweist, werden Sie durch eine Fehlermeldung darüber informiert, dass **[!UICONTROL ein oder mehrere Assets referenziert werden]**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
 
    >[!NOTE]
    >
    >Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen.
    >
-   >Deaktivieren Sie außerdem die Schaltfläche **[!UICONTROL Löschen]** erzwingen, indem Sie eine Überlagerung verwenden, um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu belassen.
+   >Deaktivieren Sie außerdem die Schaltfläche **[!UICONTROL Löschen]** erzwingen mit einer Überlagerung, um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu hinterlassen.
 
 ## Herunterladen von Assets {#downloading-assets}
 
@@ -572,41 +572,41 @@ Siehe [Herunterladen von Assets aus AEM](download-assets-from-aem.md)
 
 ## Veröffentlichen und Rückgängigmachen der Veröffentlichung von Assets {#publish-assets}
 
-Nach dem Hochladen, Verarbeiten oder Bearbeiten Ihrer Assets auf dem [!DNL Experience Manager]-Autor veröffentlichen Sie das Asset auf dem Veröffentlichungsserver. Durch Veröffentlichen wird das Asset öffentlich verfügbar gemacht. Beim Rückgängigmachen der Veröffentlichung wurde das Asset vom Veröffentlichungsserver, jedoch nicht vom Authoring-Server entfernt.
+Nach dem Hochladen, Verarbeiten oder Bearbeiten Ihrer Assets auf der Autoreninstanz [!DNL Experience Manager] veröffentlichen Sie das Asset auf dem Veröffentlichungsserver. Durch das Veröffentlichen wird das Asset öffentlich verfügbar. Beim Rückgängigmachen der Veröffentlichung wurde das Asset vom Veröffentlichungs-Server, jedoch nicht vom Authoring-Server entfernt.
 
-Spezifische Informationen zu [!DNL Dynamic Media] finden Sie unter [publishing [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md).
+Weitere Informationen zu [!DNL Dynamic Media] finden Sie unter [Publishing [!DNL Dynamic Media] Assets](publishing-dynamicmedia-assets.md).
 
-1. Navigieren Sie zum Speicherort des Assets oder Asset-Ordners, den Sie veröffentlichen möchten oder den Sie aus der Umgebung &quot;Veröffentlichung rückgängig machen&quot;entfernen möchten.
+1. Navigieren Sie zum Speicherort des Assets oder Asset-Ordners, das Sie veröffentlichen möchten oder das Sie aus der Veröffentlichungsumgebung entfernen möchten (Veröffentlichung rückgängig machen).
 
-1. Wählen Sie das Asset oder den Ordner aus, dessen Veröffentlichung rückgängig gemacht werden soll, und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Veröffentlichung verwalten]** ![Veröffentlichungsoption verwalten](assets/do-not-localize/globe-publication.png). Um eine schnelle Veröffentlichung zu ermöglichen, wählen Sie in der Symbolleiste die Option **[!UICONTROL Schnellveröffentlichung]**. Wenn der Ordner, den Sie veröffentlichen möchten, einen leeren Ordner enthält, wird der leere Ordner nicht veröffentlicht.
+1. Wählen Sie das Asset oder den Ordner aus, dessen Veröffentlichung rückgängig gemacht werden soll, und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Veröffentlichung verwalten]** ![Veröffentlichung verwalten](assets/do-not-localize/globe-publication.png) . Um eine schnelle Veröffentlichung durchzuführen, wählen Sie alternativ in der Symbolleiste die Option **[!UICONTROL Quick Publish]** aus. Wenn der Ordner, den Sie veröffentlichen möchten, einen leeren Ordner enthält, wird der leere Ordner nicht veröffentlicht.
 
-1. Wählen Sie nach Bedarf die Option **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Veröffentlichung rückgängig machen]**.
+1. Wählen Sie nach Bedarf die Option **[!UICONTROL Publish]** oder **[!UICONTROL Unpublish]** aus.
 
-   ![Aktion rückgängig machen](assets/unpublish_action.png)
-   *Abbildung: Optionen zum Veröffentlichen und Rückgängigmachen der Veröffentlichung und die Planungsoption.*
+   ![Veröffentlichung rückgängig machen](assets/unpublish_action.png)
+   *Abbildung: Veröffentlichungs- und Rückgängigmachen der Veröffentlichung sowie die Planungsoption.*
 
-1. Wählen Sie **[!UICONTROL Jetzt]** aus, um sofort auf das Asset zu reagieren, oder wählen Sie **[!UICONTROL Später]**, um die Aktion zu planen. Wählen Sie ein Datum und eine Uhrzeit aus, wenn Sie die Option **[!UICONTROL Später]** wählen. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie **[!UICONTROL Jetzt]** aus, um sofort auf das Asset zu reagieren, oder wählen Sie **[!UICONTROL Später]** aus, um die Aktion zu planen. Wählen Sie ein Datum und eine Uhrzeit aus, wenn Sie die Option **[!UICONTROL Später]** wählen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Wenn beim Veröffentlichen ein Asset auf andere Assets verweist, werden seine Verweise im Assistenten aufgeführt. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung nicht veröffentlicht oder geändert wurden. Wählen Sie die Verweise aus, die Sie veröffentlichen möchten.
+1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Verweise im Assistenten aufgeführt. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Verweise aus, die Sie veröffentlichen möchten.
 
-1. Wenn Sie die Veröffentlichung rückgängig machen und ein Asset auf andere Assets verweist, wählen Sie die Referenzen aus, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Abbrechen]**, um die Aktion zu beenden, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
+1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset andere Assets referenziert, wählen Sie die Verweise aus, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Abbrechen]** , um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
 
-Verstehen Sie die folgenden Einschränkungen und Tipps zum Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern:
+Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit dem Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern vertraut:
 
-* Die Option [!UICONTROL Veröffentlichung verwalten] steht nur für Benutzerkonten mit Replizierungsberechtigungen zur Verfügung.
-* Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen, machen Sie die Veröffentlichung nur des Assets rückgängig. Vermeiden Sie es, die Veröffentlichung der Verweise rückgängig zu machen, da diese möglicherweise von anderen veröffentlichten Assets referenziert werden.
+* Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Replikationsberechtigungen verfügbar.
+* Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen, machen Sie die Veröffentlichung nur des Assets rückgängig. Vermeiden Sie das Rückgängigmachen der Veröffentlichung der Verweise, da diese von anderen veröffentlichten Assets referenziert werden können.
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
-## Eine geschlossene Benutzergruppe {#closed-user-group} erstellen
+## Erstellen einer geschlossenen Benutzergruppe {#closed-user-group}
 
-Ein CUG (Closed User Group) wird verwendet, um den Zugriff auf bestimmte Asset-Ordner zu beschränken, die über AEM veröffentlicht wurden. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
+Eine CUG (Closed User Group, geschlossene Benutzergruppe) wird verwendet, um den Zugriff auf bestimmte aus AEM veröffentlichte Asset-Ordner zu beschränken. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
 
 CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
 **So erstellen Sie eine geschlossene Benutzergruppe**:
 
-1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;einen Ordner aus und tippen Sie auf das Symbol **[!UICONTROL Eigenschaften]** in der Symbolleiste, um die Eigenschaftsseite anzuzeigen.
+1. Wählen Sie in der Assets-Benutzeroberfläche einen Ordner aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]** , um die Eigenschaftenseite anzuzeigen.
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Berechtigungen]** unter **[!UICONTROL Geschlossene Benutzergruppe]** Mitglieder oder Gruppen hinzu.
 
    ![add_user](assets/add_user.png)
@@ -620,36 +620,36 @@ CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschr
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets  {#searching-assets}
+## Suchen von Assets   {#searching-assets}
 
-Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Verwenden Sie das Bedienfeld **[!UICONTROL Suche]**, um nach Assets, Tags und Metadaten zu suchen. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. Darüber hinaus können Sie das Bedienfeld **[!UICONTROL Suche]** mithilfe von [Suchfacetten](search-facets.md) anpassen.
+Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Verwenden Sie das Bedienfeld **[!UICONTROL Suchen]** , um nach Assets, Tags und Metadaten zu suchen. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. Darüber hinaus können Sie den Bereich **[!UICONTROL Suche]** mithilfe von [Suchfacetten](search-facets.md) anpassen.
 
-![Filters_panel](assets/filters_panel.png)
+![filters_panel](assets/filters_panel.png)
 
-Bei kürzlich hochgeladenen Assets stehen die Metadaten (einschließlich Titel, Tags usw.) nicht sofort in der Liste der Vorschläge zur Verfügung, die beim Eingeben in das Feld &quot;Omniture Search&quot;angezeigt werden.
+Bei kürzlich hochgeladenen Assets sind ihre Metadaten (einschließlich Titel, Tags usw.) nicht sofort in der Liste der Vorschläge verfügbar, die angezeigt werden, wenn Sie in das Omnisearch-Feld eingeben.
 
 Das liegt daran, dass AEM Assets erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig 1 Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen/aktualisierten Assets erstellt und sie der Liste der Vorschläge hinzufügt.
 
-## Schnellaktionen {#quick-actions} verwenden
+## Schnellaktionen verwenden {#quick-actions}
 
 Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je nach Gerät folgende Aktionen durch, um die Symbole der Schnellaktionen anzuzeigen:
 
 * Touch-Geräte: Tippen und halten. Mit einem Touch-Gerät, wie z. B. einem iPad, können Sie länger auf ein Asset tippen, damit die Schnellaktionen angezeigt werden.
 * Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniaturansicht des Assets fahren.
 
-### Navigieren Sie zu Assets {#navigating-and-selecting-assets} und wählen Sie sie aus.
+### Navigieren Sie zu und wählen Sie Assets {#navigating-and-selecting-assets} aus.
 
-Mit dem Symbol **[!UICONTROL Auswählen]** können Sie Assets mit einer der verfügbaren Ansichten (Liste, ) Ansicht, durch sie navigieren und auswählen. **[!UICONTROL Auswahl]** wird als Schnellaktion in der Ansicht angezeigt.
+Mit dem Symbol **[!UICONTROL Auswählen]** können Sie Assets in allen verfügbaren Ansichten (Karte, Spalte, Liste) anzeigen, durch sie navigieren und diese auswählen. **** Auswahl wird in der Kartenansicht als Schnellaktion angezeigt.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-In der Ansicht &quot;Liste&quot;wird **[!UICONTROL Select]** angezeigt, wenn Sie den Mauszeiger über die Miniaturansicht vor den Namen der Assets/Ordner in der Liste bewegen.
+In der Listenansicht wird **[!UICONTROL Select]** angezeigt, wenn Sie den Mauszeiger über die Miniaturansicht vor den Namen der Assets/Ordner in der Liste bewegen.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Ähnlich wie bei der Ansicht &quot;Liste&quot;wird **[!UICONTROL Select]** angezeigt, wenn Sie den Mauszeiger über die Miniaturansicht bewegen, bevor die Assets oder Ordner in der Ansicht der Spalte benannt werden.
+Ähnlich wie in der Listenansicht wird **[!UICONTROL Select]** angezeigt, wenn Sie den Mauszeiger über die Miniaturansicht vor den Namen der Assets oder Ordner in der Spaltenansicht bewegen.
 
-![select_quick_in_columnView](assets/select_quick_in_columnview.png)
+![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
 Weitere Informationen finden Sie unter [Anzeigen und Auswählen Ihrer Ressourcen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
@@ -674,13 +674,13 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
 
 1. Führen Sie einen der folgenden Schritte aus, um ein Element im Bearbeitungsmodus zu öffnen:
 
-   * Wählen Sie das Asset aus und klicken Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**.
-   * Tippen Sie auf die Option **[!UICONTROL Bearbeiten]**, die auf einem Asset in der Ansicht angezeigt wird.
-   * Tippen Sie auf der Asset-Seite in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**.
+   * Wählen Sie das Asset aus und klicken Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]** .
+   * Tippen Sie auf die Option **[!UICONTROL Bearbeiten]** , die auf einem Asset in der Kartenansicht angezeigt wird.
+   * Tippen Sie auf der Asset-Seite in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]** .
 
    ![edit_icon](assets/edit_icon.png)
 
-1. Um das Bild zu beschneiden, tippen Sie auf **[!UICONTROL Beschneiden]**.
+1. Um das Bild zu beschneiden, tippen Sie auf **[!UICONTROL Zuschneiden]**.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -688,16 +688,16 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. Wählen Sie den Bereich aus, der beschnitten werden soll, und passen Sie die Größe oder Position des Bereichs auf dem Bild an.
-1. Verwenden Sie die Option **[!UICONTROL Fertig stellen]** in der oberen rechten Ecke, um das Bild zu beschneiden. Durch Tippen auf **[!UICONTROL Fertig stellen]** wird auch die Wiederherstellung von Darstellungen Trigger.
+1. Wählen Sie den Bereich aus, der beschnitten werden soll, und ändern Sie die Größe oder Position auf dem Bild.
+1. Verwenden Sie die Option **[!UICONTROL Fertig stellen]** in der oberen rechten Ecke, um das Bild zuzuschneiden. Durch Tippen auf **[!UICONTROL Fertig stellen]** wird auch die Neuerstellung von Ausgabedarstellungen Trigger.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-1. Verwenden Sie die Symbole **[!UICONTROL Rückgängig]** und **[!UICONTROL Wiederholen]** oben rechts, um zum nicht zugeschnittenen Bild zurückzukehren oder das zugeschnittene Bild beizubehalten.
+1. Verwenden Sie die Symbole **[!UICONTROL Rückgängig]** und **[!UICONTROL Wiederherstellen]** oben rechts, um zum nicht zugeschnittenen Bild zurückzukehren oder das zugeschnittene Bild beizubehalten.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-1. Tippen Sie auf das entsprechende Symbol **[!UICONTROL Drehen]**, um das Bild im Uhrzeigersinn oder gegen den Uhrzeigersinn zu drehen.
+1. Tippen Sie auf das entsprechende Symbol **[!UICONTROL Drehen]**, um das Bild im oder entgegen dem Uhrzeigersinn zu drehen.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -705,22 +705,22 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Fertigstellen]**, um die Änderungen zu speichern.
+1. Tippen Sie auf das Symbol **[!UICONTROL Fertigstellen]** , um die Änderungen zu speichern.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## Verwenden der Zeitschiene {#timeline}
+## Timeline verwenden {#timeline}
 
-Mit der Zeitleiste **[!UICONTROL können Sie verschiedene Ereignis für ein bestimmtes Element, z. B. aktive Workflows für ein Asset, Kommentare, Anmerkungen, Aktivitäten und Versionen, Ansicht werden.]**
+Mit der **[!UICONTROL Timeline]** können Sie verschiedene Ereignisse für ein ausgewähltes Element anzeigen, z. B. aktive Workflows für ein Asset, Kommentare, Anmerkungen, Aktivitätsprotokolle und Versionen.
 
 In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
 
-**** Zeitleiste enthält mehrere  [Optionen, die spezifisch für Inhaltsfragmente](content-fragments-managing.md#timeline-for-content-fragments) sind. Diese Funktion erfordert  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  oder höher.
+**** Die Zeitleiste enthält mehrere  [inhaltsfragmentspezifische Optionen](content-fragments-managing.md#timeline-for-content-fragments). Diese Funktion erfordert  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  oder höher.
 
-**So verwenden Sie die Zeitschiene**:
+**So verwenden Sie die Timeline**:
 
 1. Öffnen Sie die Asset-Seite für ein Asset oder wählen Sie es in der Assets-Benutzeroberfläche aus.
-1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie **[Zeitschiene]** aus der Liste.
+1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie **[Timeline]** aus der Liste aus.
 
    ![Zeitleiste](assets/timeline.png)
 
@@ -734,29 +734,29 @@ Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos 
 
 Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von AEM Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
 
-Bei Inhaltsfragmenten werden [Anmerkungen im Editor](content-fragments-variations.md#annotating-a-content-fragment) erstellt. Diese Funktion erfordert [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
+Für Inhaltsfragmente werden [Anmerkungen im Editor](content-fragments-variations.md#annotating-a-content-fragment) erstellt. Diese Funktion erfordert [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
 
 Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
 Sie können Video-Assets Anmerkungen hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](managing-video-assets.md).
 
-Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung jedoch untergeordnete Sammlungen enthält, können Sie der übergeordneten Sammlung nur Anmerkungen oder Kommentare hinzufügen. Die Option **[!UICONTROL Anmerken]** ist für untergeordnete Sammlungen nicht verfügbar.
+Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung jedoch untergeordnete Sammlungen enthält, können Sie der übergeordneten Sammlung nur Anmerkungen oder Kommentare hinzufügen. Die Option **[!UICONTROL Anmerken]** ist nicht für untergeordnete Sammlungen verfügbar.
 
 **Hinzufügen von Anmerkungen**:
 
 1. Navigieren Sie zum Speicherort des Assets, dem Sie Anmerkungen hinzufügen möchten.
-1. Tippen Sie auf das Symbol **[!UICONTROL Annotate]** aus einem der folgenden Elemente:
+1. Tippen Sie auf das Symbol **[!UICONTROL Anmerken]** aus einem der folgenden Elemente:
 
    * [Schnellaktionen](managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben  oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Alternativ können Sie einen Bildbereich markieren und im Dialogfeld **[!UICONTROL Hinzufügen Anmerkung]** eine Anmerkung hinzufügen.
+1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Alternativ können Sie einen Bildbereich markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzufügen.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Um Aaron McDonald beispielsweise über eine Anmerkung zu benachrichtigen, geben Sie @aa ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie Aarons E-Mail-Adresse aus der Liste, um ihn mit dem Kommentar zu versehen. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
+1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Um beispielsweise Aaron McDonald über eine Anmerkung zu benachrichtigen, geben Sie &quot;@aa&quot;ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron aus der Liste aus, um ihn mit dem Kommentar zu versehen. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
 
    >[!NOTE]
    >
@@ -764,18 +764,18 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
-1. Nachdem Sie die Anmerkung hinzugefügt haben, tippen Sie auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
+1. Tippen Sie nach dem Hinzufügen der Anmerkung auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
-1. Tippen Sie auf **[!UICONTROL Schließen]**, um den Modus **[!UICONTROL Anmerkung]** zu verlassen.
-1. Um die Benachrichtigung Ansicht, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei AEM Assets an und tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**, um die Benachrichtigung Ansicht.
+1. Tippen Sie auf **[!UICONTROL Close]**, um den Modus **[!UICONTROL Anmerkung]** zu beenden.
+1. Um die Benachrichtigung anzuzeigen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei AEM Assets an und tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**, um die Benachrichtigung anzuzeigen.
 
-1. Um eine andere Farbe auszuwählen, damit Sie zwischen Benutzern unterscheiden können, tippen Sie auf das Symbol **[!UICONTROL Profil]** und dann auf **[!UICONTROL Meine Voreinstellungen]**.
+1. Um eine andere Farbe auszuwählen, sodass Sie zwischen Benutzern unterscheiden können, tippen Sie auf das Symbol **[!UICONTROL Profil]** und dann auf **[!UICONTROL Meine Voreinstellungen]**.
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. Geben Sie die gewünschte Farbe in das Feld **[!UICONTROL Anmerkungsfarbe]** ein und tippen Sie dann auf **[!UICONTROL Akzeptieren]**.
+1. Geben Sie die gewünschte Farbe in das Feld **[!UICONTROL Anmerkungsfarbe]** ein und tippen Sie dann auf **[!UICONTROL Accept]**.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -783,7 +783,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und tippen Sie in der Liste auf **[!UICONTROL Zeitschiene]**.
+1. Tippen Sie auf das Symbol **[!UICONTROL Globale Navigation]** und tippen Sie in der Liste auf **[!UICONTROL Timeline]** .
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
@@ -791,7 +791,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-1. Tippen Sie auf einen Kommentar im Bereich **[!UICONTROL Zeitschiene]**, um die entsprechende Anmerkung auf dem Bild Ansicht.
+1. Tippen Sie auf einen Kommentar im Bedienfeld **[!UICONTROL Timeline]** , um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
@@ -805,19 +805,19 @@ Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 
 Längere Anmerkungen werden in der PDF-Datei möglicherweise nicht richtig gerendert. Für optimales Rendering wird empfohlen, Anmerkungen auf 50 Wörter zu begrenzen.
 
-Um die Anmerkungen und den Überprüfungsstatus zu drucken, tippen Sie auf das Symbol **[!UICONTROL Drucken]** und befolgen Sie die Anweisungen im Assistenten. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
+Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf das Symbol **[!UICONTROL Drucken]** und befolgen Sie die Anweisungen im Assistenten. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
 
 1. Öffnen Sie von der Assets-Benutzeroberfläche aus die Vorschauseite für ein Asset.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um alle Anmerkungen und den Überprüfungsstatus zu drucken, fahren Sie mit Schritt 4 fort.
-   * Um bestimmte Anmerkungen und den Überprüfungsstatus zu drucken, öffnen Sie die [Zeitschiene](managing-assets-touch-ui.md#timeline) und fahren Sie dann mit Schritt 3 fort.
+   * Um alle Anmerkungen und den Prüfungsstatus zu drucken, gehen Sie zu Schritt 4.
+   * Um bestimmte Anmerkungen und den Prüfungsstatus zu drucken, öffnen Sie die [Zeitleiste](managing-assets-touch-ui.md#timeline) und fahren Sie dann mit Schritt 3 fort.
 
-1. Um bestimmte Anmerkungen zu drucken, wählen Sie die Anmerkungen in der **[!UICONTROL Zeitleiste]** aus.
+1. Um bestimmte Anmerkungen zu drucken, wählen Sie die Anmerkungen aus der **[!UICONTROL Zeitleiste]** aus.
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-   Um nur den Überprüfungsstatus zu drucken, wählen Sie ihn in der **[!UICONTROL Zeitleiste]** aus.
+   Um nur den Prüfungsstatus zu drucken, wählen Sie ihn in der **[!UICONTROL Zeitleiste]** aus.
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -825,13 +825,13 @@ Um die Anmerkungen und den Überprüfungsstatus zu drucken, tippen Sie auf das S
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Drucken]** die Position, an der die Anmerkungen oder der Überprüfungsstatus im PDF-Dokument angezeigt werden sollen. Wenn beispielsweise die Anmerkungen oder der Status oben rechts auf der Seite mit dem gedruckten Bild gedruckt werden sollen, verwenden Sie die Einstellung **[!UICONTROL Oben links]** (Standard).
+1. Wählen Sie im Dialogfeld **[!UICONTROL Drucken]** die Position aus, an der die Anmerkungen oder der Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen oder den Status oben rechts auf der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **[!UICONTROL Oben links]** (Standard).
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
-   Sie können je nach Position, an der die Anmerkungen oder der Status in der gedruckten PDF-Datei angezeigt werden sollen, andere Einstellungen auswählen. Wenn die Anmerkungen oder der Status auf einer Seite angezeigt werden sollen, die vom gedruckten Asset getrennt ist, wählen Sie **[!UICONTROL Nächste Seite]**.
+   Sie können abhängig von der Position, an der die Anmerkungen oder Status in der gedruckten PDF-Datei angezeigt werden sollen, weitere Einstellungen auswählen. Wenn die Anmerkungen oder der Status auf einer Seite angezeigt werden sollen, die vom gedruckten Asset getrennt ist, wählen Sie **[!UICONTROL Nächste Seite]**.
 
-1. Tippen Sie auf **[!UICONTROL Drucken]**. Je nach der in Schritt 2 gewählten Option zeigt die erstellte PDF-Datei die Anmerkungen oder den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **[!UICONTROL Oben links]** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
+1. Tippen Sie auf **[!UICONTROL Print]**. Je nach der in Schritt 2 ausgewählten Option zeigt die erstellte PDF-Datei die Anmerkungen oder den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **[!UICONTROL Oben links]** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -843,29 +843,29 @@ Um die Anmerkungen und den Überprüfungsstatus zu drucken, tippen Sie auf das S
    >
    >Wenn das Asset Unter-Assets enthält, können Sie alle Unter-Assets zusammen mit ihren jeweiligen seitenweisen Anmerkungen drucken.
 
-   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, -größe und -stil, Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL PDF-Konfiguration für Anmerkungen]** von **[!UICONTROL Configuration Manager]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](managing-assets-touch-ui.md#annotating).
+   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL PDF-Konfiguration für Anmerkungen]** in **[!UICONTROL Configuration Manager]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
    Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
 
-**So drucken Sie Anmerkungen in Fremdsprachen**: Wenn ein Asset Anmerkungen in Fremdsprachen (insbesondere in Nicht-lateinischen Sprachen) enthält, müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager Service auf dem AEM Server konfigurieren, um diese Anmerkungen drucken zu können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
+**So drucken Sie Anmerkungen in Fremdsprachen**: Wenn ein Asset Anmerkungen in Fremdsprachen enthält (insbesondere Sprachen, die nicht lateinisch sind), müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager Service auf dem AEM-Server konfigurieren, damit Sie diese Anmerkungen drucken können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
 
-1. Öffnen Sie die Konfigurationsseite **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** unter der URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
+1. Öffnen Sie die Konfigurationsseite **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Um **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** zu konfigurieren, führen Sie einen der folgenden Schritte aus:
 
-   * Geben Sie in der Ordneroption **[!UICONTROL Systemschriftarten]** den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie z. B. Mac-Benutzer sind, können Sie den Pfad in der Ordneroption **[!UICONTROL Systemschriftarten]** als `/Library/Fonts` angeben. AEM ruft die Schriftarten aus diesem Verzeichnis ab.
-   * Erstellen Sie im Ordner **crx-quickstart** ein Verzeichnis mit dem Namen **[!UICONTROL fonts]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Services ruft die Schriftarten automatisch am Speicherort ab  `crx-quickstart/fonts`. Sie können diesen Standardpfad in der Ordneroption **[!UICONTROL Adobe Server Fonts]** überschreiben.
+   * Geben Sie in der Ordneroption **[!UICONTROL Systemschriftarten]** den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie beispielsweise ein Mac-Benutzer sind, können Sie den Pfad in der Ordneroption **[!UICONTROL Systemschriftarten]** als `/Library/Fonts` angeben. AEM ruft die Schriftarten aus diesem Verzeichnis ab.
+   * Erstellen Sie im Ordner **crx-quickstart** ein Verzeichnis mit dem Namen **[!UICONTROL fonts]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service ruft die Schriftarten automatisch am Speicherort ab  `crx-quickstart/fonts`. Sie können diesen Standardpfad über die Ordneroption **[!UICONTROL Adobe Server Fonts]** überschreiben.
    * Erstellen Sie einen neuen Ordner für Schriftarten in Ihrem System und speichern Sie in diesem Ordner die gewünschten Schriftarten. Geben Sie dann den vollständigen Pfad zu diesem Ordner in der Ordneroption **[!UICONTROL Kundenschriftarten]** an.
 
-1. Greifen Sie über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig) auf die Konfiguration **[!UICONTROL Annotation PDF]** zu.
-1. Konfigurieren Sie die PDF-Datei **[!UICONTROL Anmerkung]** mit dem richtigen Satz der Schriftfamilie wie folgt:
+1. Greifen Sie über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig) auf die Konfiguration **[!UICONTROL PDF-Anmerkungen]** zu.
+1. Konfigurieren Sie das PDF-Dokument **[!UICONTROL Anmerkung]** mit der richtigen Schriftart wie folgt:
 
    * Schließen Sie die Zeichenfolge `<font_family_name_of_custom_font, sans-serif>` in der Schriftartoption ein. Wenn Sie z. B. Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) drucken möchten, schließen Sie die Zeichenfolge `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in die Schriftartoption ein. Wenn Sie Anmerkungen in Hindi drucken möchten, laden Sie die entsprechende Schriftart herunter. Anschließend konfigurieren Sie die Schriftart als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, Sans-Serif.
 
 1. Starten Sie die AEM-Instanz neu.
 
-Das folgende Beispiel zeigt, wie Sie AEM zum Drucken von Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) konfigurieren:
+Im Folgenden finden Sie ein Beispiel dafür, wie Sie AEM konfigurieren, um Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) zu drucken:
 
 1. Laden Sie die Google Noto CJK-Schriftarten über die folgenden Links herunter und speichern Sie sie im Schriftartenverzeichnis, das in Font Manager Service konfiguriert ist.
 
@@ -876,7 +876,7 @@ Das folgende Beispiel zeigt, wie Sie AEM zum Drucken von Anmerkungen in CJK (Chi
 1. Konfigurieren Sie die PDF-Datei, die Anmerkungen enthält, indem Sie den Schriftartparameter auf `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` setzen. Diese Konfiguration ist standardmäßig verfügbar und funktioniert bei allen europäischen und CJK-Sprachen.
 1. Wenn sich die Sprache Ihrer Wahl von den Sprachen unterscheidet, die in Schritt 2 erwähnt werden, fügen Sie der Standardschriftart einen entsprechenden (kommagetrennten) Eintrag hinzu.
 
-## Erstellen der Asset-Version {#asset-versioning}
+## Erstellen der Asset-Versionierung {#asset-versioning}
 
 Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie hilft Ihnen bei der späteren Wiederherstellung eines vorherigen Asset-Zustands. Wenn Sie etwa eine Änderung an einem Asset rückgängig machen wollen, stellen Sie die unbearbeitete Version des Assets wieder her.
 
@@ -898,21 +898,21 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
 1. Navigieren Sie zum Speicherort des Assets, für das Sie eine Version erstellen möchten, und klicken Sie darauf, um die Asset-Seite zu öffnen.
 
-1. Klicken Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie **[!UICONTROL Zeitschiene]** aus dem Menü.
+1. Klicken Sie auf das Symbol **[!UICONTROL Globale Navigation]** und wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Klicken Sie unten auf **[!UICONTROL Aktionen]**, um die verfügbaren Aktionen für das Asset Ansicht.
+1. Klicken Sie unten auf **[!UICONTROL Aktionen]** , um die verfügbaren Aktionen anzuzeigen, die Sie für das Asset ausführen können.
 
 1. Klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Fügen Sie eine Beschriftung und Kommentare hinzu und klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen. Alternativ können Sie auf **[!UICONTROL Abbrechen]** tippen, um den Vorgang zu beenden.
+1. Fügen Sie eine Beschriftung und Kommentare hinzu und klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen. Tippen Sie alternativ auf **[!UICONTROL Abbrechen]** , um den Vorgang zu beenden.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. Um die neue Version Ansicht, öffnen Sie die Liste **[!UICONTROL Alle anzeigen]** in der Zeitleiste auf der Seite mit den Asset-Details oder auf der [!DNL Assets]-Oberfläche und wählen Sie **[!UICONTROL Versionen]**.
+1. Um die neue Version anzuzeigen, öffnen Sie die Liste **[!UICONTROL Alle anzeigen]** in der Timeline auf der Seite mit den Asset-Details oder der [!DNL Assets]-Benutzeroberfläche und wählen Sie **[!UICONTROL Versionen]**.
 
    ![versions_option](assets/versions_option.png)
 
@@ -922,27 +922,27 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    >[!NOTE]
    >
-   >Sie können das Asset auch aus der Ansicht [Liste](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) oder aus der Ansicht [Spalte](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) auswählen.
+   >Sie können das Asset auch aus der [Listenansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) oder der [Spaltenansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) auswählen.
 
 1. Fügen Sie eine Beschriftung und Kommentare für die Version hinzu, um in der Assets-Benutzeroberfläche auf diese bestimmte Version zurückzusetzen.
 
    ![save_version](assets/save_version.png)
 
-1. Klicken Sie zum Generieren einer Vorschau für die Vorschau auf **[!UICONTROL Version]**.
+1. Um eine Vorschau für die Version zu generieren, klicken Sie auf **[!UICONTROL Vorschau der Version]**.
 1. Um diese Version in der Assets-Benutzeroberfläche anzuzeigen, wählen Sie **[!UICONTROL Auf diese Version zurücksetzen]**.
-1. Um zwischen zwei Versionen zu vergleichen, gehen Sie zur Asset-Seite und klicken Sie auf die Version, die Sie mit der aktuellen Version vergleichen möchten.
+1. Um zwischen zwei Versionen zu vergleichen, gehen Sie zur Asset-Seite des Assets und klicken Sie auf die Version, die Sie mit der aktuellen Version vergleichen möchten.
 
-   ![Wählen Sie eine frühere Version des Assets aus, die mit der aktuellen Version verglichen werden soll](assets/select_version_tocompare.png)
+   ![Wählen Sie eine frühere Version des Assets aus, um sie mit der aktuellen Version zu vergleichen](assets/select_version_tocompare.png)
 
 1. Wählen Sie in der Zeitleiste die Version aus, die Sie vergleichen wollen, und ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu setzen.
 
    ![compare_versions](assets/compare_versions.png)
 
-### Beginn eines Workflows für ein Asset {#starting-a-workflow-on-an-asset}
+### Starten eines Workflows für ein Asset {#starting-a-workflow-on-an-asset}
 
-Siehe [Einen Workflow auf ein AEM Asset anwenden](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
+Siehe [Anwenden eines Workflows auf ein AEM Asset](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
-## Sammlungen {#collections}
+## Über Sammlungen {#collections}
 
 Bei einer Sammlung handelt es sich um eine sortierte Gruppe von Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 
@@ -951,11 +951,11 @@ Bei einer Sammlung handelt es sich um eine sortierte Gruppe von Assets. Anhand v
 
 Ein Benutzer kann über Zugriff auf mehrere Sammlungen verfügen. Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets sortieren:
 
-* Eine Liste mit einer **statischen Referenz** aus Assets, Ordnern und anderen Sammlungen.
+* Eine Sammlung mit einer **statischen Referenzliste** von Assets, Ordnern und anderen Sammlungen.
 
-* Eine Sammlung, die ein **Suchkriterium** verwendet und Elemente basierend auf den Kriterien dynamisch füllt. Dies wird als **intelligente Sammlung** bezeichnet.
+* Eine Sammlung, die ein **Suchkriterium** verwendet und Assets basierend auf den Kriterien dynamisch füllt. Dies wird als **Smart Collection** bezeichnet.
 
-Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Sammlungen verwalten](managing-collections-touch-ui.md).
+Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Verwalten von Sammlungen](managing-collections-touch-ui.md) .
 
 >[!NOTE]
 >
