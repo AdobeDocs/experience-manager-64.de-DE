@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 36e00fc0-310c-4dc5-b1d7-68185fa27c30
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%
 
 ---
-
 
 # Seitenbearbeitung mit Inhaltsfragmenten{#page-authoring-with-content-fragments}
 
@@ -30,4 +29,3 @@ Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise k
 >Die Funktionen der Inhaltsfragmentverwaltung sind in der klassischen Benutzeroberfläche nicht in vollem Umfang verfügbar. Weitere Informationen finden Sie in der Dokumentation für die standardmäßige Autorenumgebung unter [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 >
 >Die Inhaltsfragment-Komponente wird im Sidekick der klassischen Benutzeroberfläche angezeigt, weitere Funktionen sind jedoch nicht verfügbar.
-
