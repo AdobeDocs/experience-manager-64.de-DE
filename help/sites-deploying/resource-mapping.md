@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Konfiguration
+exl-id: 81dddbab-1a9e-49ee-b2a5-a8e4de3630d1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 63%
 
 ---
-
 
 # Ressourcenzuordnung{#resource-mapping}
 
@@ -25,7 +24,7 @@ Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und vir
 
 Diese Zuordnungen können Sie beispielsweise folgendermaßen verwenden:
 
-* Präfix aller Anforderungen mit `/content`, damit die interne Struktur von den Besuchern Ihrer Website ausgeblendet wird.
+* Setzen Sie allen Anforderungen das Präfix `/content` voran, damit die interne Struktur für die Besucher Ihrer Website ausgeblendet wird.
 * Definieren Sie eine Umleitung, damit alle Anforderungen an die `/content/en/gateway`-Seite Ihrer Website an `https://gbiv.com/` umgeleitet werden.
 
 Bei einer möglichen HTTP-Zuordnung wird [allen Anforderungen an localhost:4503 das Präfix /content](#configuring-an-internal-redirect-to-content) vorangestellt. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
@@ -36,7 +35,7 @@ mithilfe von:
 
 `localhost:4503/geometrixx/en/products.html`
 
-da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.html` hinzufügt.
+da durch die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.html` hinzugefügt wird.
 
 >[!CAUTION]
 >
@@ -50,11 +49,11 @@ da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.
 
 Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
-Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel:`https://<host>:<port>/system/console/jcrresolver`
+Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<host>:<port>/system/console/jcrresolver`:
 
 * Konfiguration
 
-   Zeigt die aktuelle Konfiguration an (wie für den Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md) definiert).[
+   Zeigt die aktuelle Konfiguration (wie für den Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md) definiert) an.[
 
 * Konfigurationstest
 
@@ -88,7 +87,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen viele Ressourcen zur Verfügung, die erklären, wie reguläre Ausdrücke definiert werden können. zum Beispiel [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es stehen viele Ressourcen zur Verfügung, mit denen erläutert wird, wie reguläre Ausdrücke definiert werden. zum Beispiel [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ## Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
@@ -96,11 +95,11 @@ Eine Standardinstallation von AEM umfasst folgenden Ordner:
 
 `/etc/map/http`
 
-Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Andere Ordner ( `sling:Folder`) können für alle anderen Protokolle, die Sie zuordnen möchten, unter `/etc/map` erstellt werden.
+Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Andere Ordner ( `sling:Folder`) können unter `/etc/map` für alle anderen Protokolle erstellt werden, die Sie zuordnen möchten.
 
 ### Konfigurieren einer internen Umleitung an „/content“{#configuring-an-internal-redirect-to-content}
 
-So erstellen Sie die Zuordnung, die jeder Anforderung an http://localhost:4503/ mit `/content` vorangestellt wird:
+So erstellen Sie die Zuordnung, die einer Anforderung an http://localhost:4503/ mit `/content` vorangestellt ist:
 
 1. Navigieren Sie mit CRXDE zu `/etc/map/http`.
 
@@ -108,7 +107,7 @@ So erstellen Sie die Zuordnung, die jeder Anforderung an http://localhost:4503/ 
 
    * **Typ** `sling:Mapping`
 
-      Dieser Knotentyp ist für solche Zuordnungen vorgesehen, obwohl seine Verwendung nicht obligatorisch ist.
+      Dieser Knotentyp ist für solche Zuordnungen vorgesehen, seine Verwendung ist jedoch nicht obligatorisch.
 
    * **Name** `localhost_any`
 
@@ -127,9 +126,9 @@ So erstellen Sie die Zuordnung, die jeder Anforderung an http://localhost:4503/ 
 
 1. Klicken Sie auf **Alle speichern**.
 
-Dies behandelt eine Anforderung wie:\
+Dadurch wird eine Anfrage verarbeitet, z. B.:\
 `localhost:4503/geometrixx/en/products.html`\
-as if:\
+wie wenn:\
 `localhost:4503/content/geometrixx/en/products.html`\
 wurden beantragt.
 
@@ -139,5 +138,4 @@ wurden beantragt.
 
 >[!NOTE]
 >
->Sie können `/etc/map.publish` verwenden, um die Konfigurationen für die Veröffentlichungs-Umgebung aufzunehmen. Diese müssen dann repliziert werden, und der neue Speicherort ( `/etc/map.publish`) muss für den **Zuordnungsort** des [Apache Sling-Ressourcen-Resolvers](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungs-Umgebung konfiguriert sein.
-
+>Sie können `/etc/map.publish` verwenden, um die Konfigurationen für die Veröffentlichungsumgebung zu speichern. Diese müssen dann repliziert werden und der neue Speicherort ( `/etc/map.publish`) muss für den **Zuordnungs-Speicherort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung konfiguriert sein.
