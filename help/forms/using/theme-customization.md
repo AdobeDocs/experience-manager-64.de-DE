@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 58%
 
 ---
-
 
 # Designanpassung {#theme-customization}
 
@@ -30,15 +29,15 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Öffnen Sie Ihr Projekt.
 
-   * Für iOS öffnen Sie `Capture.xcodeproj` in Xcode
+   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode.
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * Öffnen Sie unter Windows `MWSWindows.sln` in Visual Studio.
+   * Öffnen Sie für Windows `MWSWindows.sln` in Visual Studio.
 
 1. Navigieren Sie zum Ordner „templates“.
 
-   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > templates**.
-   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > templates**.
-   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > templates**.
+   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > templates** .
+   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > templates** .
+   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > templates** .
 
 1. Öffnen Sie die Datei `template.html` zur Bearbeitung.
 1. Suchen Sie die folgende Zeichenfolge:
@@ -75,7 +74,7 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Navigieren Sie zum Ordner „css“.
 
-   * In Xcode navigieren Sie zu **Capture > www > wsmobile > css**.
+   * Navigieren Sie in Xcode zu **Capture > www > wsmobile > css**.
    * Navigieren Sie in Eclipse zu **assets > www > wsmobile > css**.
    * Navigieren Sie in Visual Studio zu **MWSWindows > www > wsmobile > css**.
 
@@ -85,4 +84,3 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 1. Öffnen Sie die AEM Forms-App.
 
    Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.
-
