@@ -1,8 +1,8 @@
 ---
 title: Site-Vorlagen
 seo-title: Site-Vorlagen
-description: Zugriff auf die Konsole "Site-Vorlagen"
-seo-description: Zugriff auf die Konsole "Site-Vorlagen"
+description: Zugriff auf die Konsole "Sitevorlagen"
+seo-description: Zugriff auf die Konsole "Sitevorlagen"
 uuid: d2f7556e-7e43-424e-82f1-41790aeb2d98
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,28 +10,27 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '463'
 ht-degree: 4%
 
 ---
 
-
 # Site-Vorlagen {#site-templates}
 
-Die Konsole &quot;Site-Vorlagen&quot;ist der Konsole [Gruppenvorlagen](tools-groups.md) sehr ähnlich, die sich auf Funktionen konzentriert, die für Community-Gruppen von Interesse sind.
+Die Konsole &quot;Site-Vorlagen&quot;ähnelt der Konsole [Gruppenvorlagen](tools-groups.md), die sich auf Funktionen konzentriert, die für Community-Gruppen von Interesse sind.
 
 >[!NOTE]
 >
->Die Konsolen für die Erstellung von [Community-Sites](sites-console.md), [Community-Sitevorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur für die Verwendung in der Autor-Umgebung vorgesehen.
+>Die Konsolen zum Erstellen von [Community-Sites](sites-console.md), [Community-Site-Vorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur zur Verwendung in der Autorenumgebung vorgesehen.
 
 ## Site-Vorlagenkonsole {#site-templates-console}
 
-In der Umgebung &quot;Autor&quot;zur Konsole der Community-Sites
+In der Autorenumgebung, um die Community-Sites-Konsole zu erreichen
 
-* Aus globaler Navigation: **[!UICONTROL Tools > Communities > Site-Vorlagen]**
+* Über die globale Navigation: **[!UICONTROL Tools > Communities > Site-Vorlagen]**
 
 Diese Konsole zeigt die Vorlagen an, aus denen eine [Community-Site](sites-console.md) erstellt werden kann, und ermöglicht die Erstellung neuer Site-Vorlagen.
 
@@ -39,7 +38,7 @@ Diese Konsole zeigt die Vorlagen an, aus denen eine [Community-Site](sites-conso
 
 ## Site-Vorlage erstellen {#create-site-template}
 
-Um eine neue Site-Vorlage zu erstellen, wählen Sie `Create`.
+Wählen Sie `Create` aus, um mit der Erstellung einer neuen Site-Vorlage zu beginnen.
 
 Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
 
@@ -47,59 +46,59 @@ Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
-Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Konfiguration der Vorlage, ob sie aktiviert oder deaktiviert ist, wie folgt konfiguriert:
+Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Frage, ob die Vorlage aktiviert oder deaktiviert ist, konfiguriert:
 
-* **[!UICONTROL Name]**
-der Community-Site-VorlageName der Vorlage
+* **[!UICONTROL Community-Site-]**
+VorlagennameDie Vorlagenname-ID
 
-* **[!UICONTROL Beschreibung]**
-der Community-Site-VorlageBeschreibung der Vorlage
+* **[!UICONTROL Community-Site-Vorlage]**
+BeschreibungDie Vorlagenbeschreibung
 
 * **[!UICONTROL Deaktiviert/]**
 AktiviertEin Umschalter, der steuert, ob die Vorlage referenzierbar ist
 
-### Miniaturansicht  {#thumbnail}
+### Miniaturansicht {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
-(Optional) Wählen Sie das Symbol Bild hochladen, um eine Miniaturansicht mit dem Namen und der Beschreibung für Ersteller von Community-Sites anzuzeigen.
+(Optional) Wählen Sie das Symbol Bild hochladen aus, um eine Miniaturansicht mit dem Namen und der Beschreibung für Ersteller von Community-Sites anzuzeigen.
 
 ### Struktur {#structure}
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-Um Community-Funktionen hinzuzufügen, ziehen Sie von der rechten Seite nach links in der Reihenfolge, in der die Sitemenü-Links angezeigt werden sollen. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
+Um Community-Funktionen hinzuzufügen, ziehen Sie von der rechten Seite nach links in die Reihenfolge, in der die Links zum Site-Menü angezeigt werden sollen. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
 
-Wenn Sie beispielsweise eine Startseite erstellen möchten, ziehen Sie die Funktion &quot;Seite&quot;aus der Bibliothek und legen Sie sie unter dem Vorlagenaufbau ab. Dadurch wird das Dialogfeld für die Seitenkonfiguration geöffnet. Informationen zu den Konfigurationsdialogen finden Sie in der Konsole [Funktionen](functions.md).
+Wenn Sie beispielsweise eine Homepage wünschen, ziehen Sie die Funktion Seite aus der Bibliothek und legen Sie sie unter dem Vorlagenaufbau ab. Dadurch wird das Dialogfeld für die Seitenkonfiguration geöffnet. Informationen zu den Konfigurationsdialogen finden Sie in der [Funktionskonsole](functions.md) .
 
-Ziehen Sie weitere Community-Funktionen, die basierend auf dieser Vorlage für eine Community-Site gewünscht werden, und legen Sie sie ab.
+Ziehen Sie weiterhin alle anderen Community-Funktionen, die für eine auf dieser Vorlage basierende Community-Site gewünscht werden, per Drag-and-Drop.
 
 Die Seitenfunktion stellt eine leere Seite bereit. Die Funktion &quot;Gruppen&quot;bietet die Möglichkeit, innerhalb der Community-Site eine Gruppensite (Unter-Community) zu erstellen.
 
 >[!CAUTION]
 >
->Die Funktion &quot;Gruppen&quot;darf weder die Funktion *first noch die Funktion* in der Sitestruktur sein.**
+>Die Gruppenfunktion muss *nicht* die *erste und nicht die einzige* Funktion in der Site-Struktur sein.
 >
->Jede andere Funktion, wie z. B. die Funktion [page](functions.md#page-function), muss eingeschlossen und zuerst aufgelistet werden.
+>Jede andere Funktion, z. B. die [Seitenfunktion](functions.md#page-function), muss zuerst eingeschlossen und aufgelistet werden.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-### Gruppenvorlagen für die Gruppenfunktion {#group-templates-for-groups-function}
+### Gruppenvorlagen für Gruppenfunktionen {#group-templates-for-groups-function}
 
-Wenn Sie eine Gruppenfunktion in die Site-Vorlage aufnehmen, müssen Sie die Gruppenvorlagenauswahl festlegen, die beim Erstellen einer neuen Umgebung in der Veröffentlichungsgruppe zulässig ist.
+Wenn Sie eine Gruppenfunktion in die Site-Vorlage aufnehmen, erfordert die Konfiguration die Angabe der Gruppenvorlagenoptionen, die zulässig sind, wenn eine neue Gruppe in der Veröffentlichungsumgebung erstellt wird.
 
 >[!CAUTION]
 >
->Die Funktion Gruppen darf nicht die Funktion *first noch nicht* in der Sitestruktur sein.**
+>Die Funktion &quot;Gruppen&quot;darf *nicht* die Funktion *first und nicht die einzige Funktion* in der Site-Struktur sein.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-Wenn Sie zwei oder mehr Community-Gruppenvorlagen auswählen, wird dem Gruppenadministrator beim Erstellen einer neuen Gruppe in der Community eine Auswahl angezeigt.
+Wenn Sie zwei oder mehr Community-Gruppenvorlagen auswählen, können Sie beim Erstellen einer neuen Gruppe in der Community dem Gruppenadministrator eine Auswahl treffen.
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
 ##  Site-Vorlage bearbeiten{#edit-site-template}
 
-Bei der Anzeige von Site-Vorlagen in der Haupt-Konsole [Site-Vorlagen](#site-templates-console) ist es möglich, eine vorhandene Site-Vorlage zur Bearbeitung auszuwählen.
+Beim Anzeigen von Site-Vorlagen in der Haupt-Konsole [Site-Vorlagen](#site-templates-console) ist es möglich, eine vorhandene Site-Vorlage zur Bearbeitung auszuwählen.
 
-Dieser Prozess stellt dieselben Bereiche bereit wie [Erstellen einer Site-Vorlage](#create-site-template).
+Dieser Prozess stellt dieselben Bedienfelder bereit wie [Erstellen einer Site-Vorlage](#create-site-template).
