@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 feature: Designer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8b6b151d-2422-4261-9edb-66efe3d33f8b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 89%
 
 ---
 
-
 # Verwenden der Scribble-Signatur in HTML5-Formularen {#using-scribble-signature-in-html-forms}
 
 HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine allgemeine Voraussetzung zur Unterstützung von Signaturen. Die Scribble-Signatur (Schreiben mit dem Eingabestift oder mit dem Finger) ist eine immer gängigere Form der Unterzeichnung von Formularen auf mobilen Geräten. HTML5 Forms und Designer bieten jetzt auf dem Formular ein Feld für die Scribble-Signatur. Wenn das Formular im Browser angezeigt wird, können Benutzer mit einem Eingabestifts, einer Maus oder mit einer Berührung in diesem Feld unterzeichnen.
 
-## Entwerfen eines Formulars mit einem Feld für Scribble-Signaturen {#how-to-design-a-form-using-scribble-signature-field}
+## Entwerfen eines Formulars mit einem Feld für Scribble-Signaturen  {#how-to-design-a-form-using-scribble-signature-field}
 
 1. Öffnen Sie ein Formular in Forms Designer.
 1. Ziehen das Scribble-Signatur-Feld auf die Seite.
@@ -45,7 +44,7 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine all
       >
       >Um die Registerkarte &quot;XML-Quelle&quot;zu öffnen, klicken Sie auf **Ansicht** > **XML-Quelle**.
 
-   1. Suchen Sie das `<ui>`-Tag im `<field>`-Tag und ändern Sie den Quellcode wie folgt:
+   1. Suchen Sie das Tag `<ui>` im Tag `<field>` und ändern Sie den Quellcode wie folgt:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -66,7 +65,7 @@ Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formu
 
 ![Geolocation](assets/geolocation.png)
 
-**A.** Brush  **B.** Radiergummi  **C.** Geolocation  **D.** Geolocation
+**A.** Pinsel  **B.** Radiergummi  **C.** Geolocation  **D.** Geolocation-Informationen
 
 ### Geotagging {#geo-tagging}
 
@@ -84,7 +83,7 @@ Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern 
 
 ### Löschen einer Signatur  {#clearing-a-signature}
 
-Bei Verwendung dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um das Feld zu löschen, und den Beginn darüber aufheben. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
+Bei Verwendung dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um das Feld zu löschen und neu zu beginnen. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
 
 ### Speichern einer Signatur  {#saving-a-signature}
 
