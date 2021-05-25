@@ -9,20 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
-translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 95%
 
 ---
 
-
 # Work Manager und Einschränkungen{#work-manager-and-throttling}
 
 AEM Forms (und frühere Versionen) verwendeten JMS-Warteschlangen, um Vorgänge asynchron auszuführen. In AEM Forms wurden JMS-Warteschlangen durch Work Manager ersetzt. Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
 
-## Informationen zu Vorgängen mit langer Lebensdauer (asynchron) {#about-long-lived-asynchronous-operations}
+## Informationen zu Vorgängen mit langer Lebensdauer (asynchron)  {#about-long-lived-asynchronous-operations}
 
 Die Vorgänge, die von Diensten in AEM Forms ausgeführt werden, können entweder Prozesse mit kurzer Lebensdauer (synchron) oder Prozesse mit langer Lebensdauer (asynchron) sein. Vorgänge mit kurzer Lebensdauer werden synchron mit demselben Thread ausgeführt, von dem sie aufgerufen wurden. Diese Vorgänge warten auf eine Antwort, bevor sie fortgesetzt werden.
 
@@ -87,7 +86,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 
 **Java-Optionen zu WebLogic hinzufügen**
 
-1. Beginn Sie WebLogic Administration Console, indem Sie in einem Webbrowser `https://`*[Hostname ]*`:`*[Anschluss]* `/console` eingeben.
+1. Starten Sie WebLogic Administration Console, indem Sie in einem Webbrowser `https://`*[Hostname ]*`:`*[Port]* `/console` eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
@@ -106,4 +105,3 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 1. Klicken Sie unter „Additional Properties“ auf Java Virtual Machine.
 1. Geben Sie in das Feld „Generic JVM Arguments“ die erforderlichen Argumente ein.
 1. Klicken Sie auf OK oder Apply und dann auf Save directly to the Master Configuration.
-
