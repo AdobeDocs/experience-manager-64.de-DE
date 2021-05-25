@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 207c6335-f700-48f1-814b-992692534f6c
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 217f0f80-fce6-4671-9853-633691d447f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 89%
 
 ---
-
 
 # Einführung in das Arbeiten mit PDF Generator {#introduction-to-working-with-pdf-generator}
 
@@ -29,5 +28,4 @@ Es gibt drei Möglichkeiten zum Senden von Dateien zur Verarbeitung an PDF Gener
 
 * Administratoren können auf die PDFG-Seiten in Administration Console zugreifen. (Siehe [Dateien mithilfe von PDF Generator konvertieren](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
 * Benutzer können auf die PDFG-Endbenutzerseiten zugreifen, indem sie sich bei `http(s)://[server]:[port]/pdfgui` anmelden. Von dort können sie auf den PDFG-Netzwerkdrucker zugreifen, PDF-Dateien erstellen, HTML- in PDF-Dateien konvertieren, PDF-Dateien exportieren und PDF-Seiten optimieren.
-* Sie können Endpunkte für die Dienste konfigurieren. (Siehe <!--Fix broken link Managing Endpoints and --> [Empfehlungen für den Generate PDF-Dienst](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).)
-
+* Sie können Endpunkte für die Dienste konfigurieren. (Weitere Informationen finden Sie unter <!--Fix broken link Managing Endpoints and --> [Empfehlungen für den Generate PDF-Dienst](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).)
