@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
-translation-type: tm+mt
-source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
+exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 89%
 
 ---
-
 
 # OWASP – Top 10{#owasp-top}
 
@@ -46,9 +45,9 @@ Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und dahe
 
 ## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
 
-Cross-Site Request Forgery (CSRF) wird durch die automatische Injektion eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST abgemildert.
+Die Cross-Site Request Forgery (CSRF) wird durch das automatische Einfügen eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST verhindert.
 
-Darüber hinaus verfügt AEM über einen Werber-Header-basierten Filter, der so konfiguriert werden kann, dass nur *nur* Anfragen von bestimmten Hosts (in einer Liste definiert) zulässig sind.
+Darüber hinaus enthält AEM einen auf Referrer-Header basierenden Filter, der so konfiguriert werden kann, dass *nur* POST-Anforderungen von bestimmten Hosts (in einer Liste definiert) zulassen.
 
 ## 6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
 
@@ -73,4 +72,3 @@ Dieses Risiko wird durch die Serverkonfiguration gemindert (z. B. nur HTTPS).
 ## 10. Ungeprüfte Um- und Weiterleitungen {#unvalidated-redirects-and-forwards}
 
 Dieses Risiko wird durch die Beschränkung aller Umleitungen an benutzerseitig bereitgestellte Ziele auf interne Standorte gemindert.
-
