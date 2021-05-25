@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
-translation-type: tm+mt
-source-git-commit: a427f9e9020fba4d68f18d16e7373471429d894f
+exl-id: 1af29921-7c24-49b5-9f4c-60671641d4e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 83%
 
 ---
 
-
-# SPA- und Startintegration{#spa-and-launch-integration}
+# SPA- und Launch-Integration{#spa-and-launch-integration}
 
 Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung von Analytics, Target und Audience Manager in Single Page Applications (SPAs).
 
 >[!NOTE]
 >
->Für die Funktion zum Editor für Einzelseitenanwendungen (SPA) ist AEM 6.4 Service Pack 2 oder höher erforderlich.
+>Für die Funktion &quot;Single Page Application (SPA) Editor&quot;ist AEM Service Pack 2 (oder höher) 6.4 erforderlich.
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Tutorial {#tutorial}
 
