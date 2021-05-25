@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: 3a341e72-01c5-4c63-8942-6320e5b08440
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 88%
 
 ---
-
 
 # AEM Communities Versionshinweise {#aem-communities-release-notes}
 
@@ -61,12 +60,12 @@ Moderation:
 
 Allgemeine Kompatibilität mit grundlegenden Änderungen in AEM 6.4.
 
-Hinweis: alle diese Funktionen sind auch für AEM 6.3 verfügbar. Bitte lesen Sie die AEM Communities Versionshinweise für [6.3](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html).
+Hinweis: alle diese Funktionen sind auch für AEM 6.3 verfügbar. Lesen Sie die AEM Communities-Versionshinweise für [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
 
 ## Bekannte Probleme {#known-issues}
 
 * **Moderation**: Es ist nicht möglich, den übergeordneten Beitrag in einem einzelnen Löschvorgang aus der Massenmoderationsoberfläche zu löschen. (CQ-4236797)
-* **Konsole** : Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort&quot;führt statt des entsprechenden Kennwortabfrageformulars zur Anmeldeseite (CQ-4237682)
+* **Konsole**  - Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort vergessen&quot;leitet zur Anmeldeseite um, anstatt zum entsprechenden Kennwortabfrageformular. (CQ-4237682)
 
 ## Ausgewählte Funktionen {#select-features}
 
