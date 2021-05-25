@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 86%
 
 ---
-
 
 # Testen bearbeitbarer Vorlagen in We.Retail{#trying-out-editable-templates-in-we-retail}
 
@@ -24,7 +23,7 @@ Mit bearbeitbaren Vorlagen können nicht mehr nur Entwickler Vorlagen erstellen 
 
 Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutzer, die keine Entwickler sind, die Vorlagen anpassen können.
 
-## Testen {#trying-it-out}
+## Testen  {#trying-it-out}
 
 1. Bearbeiten Sie die Seite „Ausrüstung“ der Sprach-Master-Verzweigung.
 
@@ -74,7 +73,6 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
 
 ## Weitere Informationen  {#more-information}
 
-Weitere Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder auf der Developer Dokument-Seite [Vorlagen - Bearbeitbar](/help/sites-developing/page-templates-editable.md).
+Weitere Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder im Entwicklerdokument Seite [Vorlagen - Bearbeitbar](/help/sites-developing/page-templates-editable.md) .
 
-Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Eine technische Übersicht über die Funktionen der Kernkomponenten und des Developer-Dokuments [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) finden Sie im Authoring-Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html).
-
+Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Eine Übersicht über die Funktionen der Kernkomponenten und das Entwicklerdokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für die Erstellung eines technischen Überblicks.
