@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 51%
 
 ---
-
 
 # Testen – wann und mit wem?{#testing-when-and-with-whom}
 
@@ -25,8 +24,8 @@ Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Proje
 <table> 
  <tbody> 
   <tr> 
-   <td>Team testen</td> 
-   <td>Zuständig für... </td> 
+   <td>Testteam</td> 
+   <td>Verantwortlich für ... </td> 
    <td>Wenn...</td> 
   </tr> 
   <tr> 
@@ -41,14 +40,13 @@ Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Proje
   </tr> 
   <tr> 
    <td>Kundentestteam</td> 
-   <td><p>Je nach ausgewähltem Projektmodell ist es für Mitglieder des Kundenteams möglicherweise geplant, an Tests beteiligt zu sein, insbesondere Autoren von der Kunden-Site.</p> <p>Der Vorteil besteht darin, dass</p> 
+   <td><p>Je nach ausgewähltem Projektmodell können Mitglieder des Kundenteams an Tests beteiligt sein, insbesondere Autoren von der Kunden-Site.</p> <p>Das ist vorteilhaft, da es:</p> 
     <ul> 
-     <li><p>Bietet dem Kunden Erfahrung mit dem zu entwickelnden Projekt.</p> </li> 
-     <li><p>Stellt frühzeitiges Feedback des Kunden bereit.</p> </li> 
-     <li><p>Benutzer geben oft ihre Anforderungen an frühere Erfahrungen an; Die möglichst frühzeitige Einbeziehung der Kunden in die Tests steigert ihre Erfahrung mit dem neuen Projekt in Bezug auf <i>praktische </i> Erfahrung.</p> </li> 
+     <li><p>Bietet dem Kunden Erfahrung mit dem Projekt, das entwickelt wird.</p> </li> 
+     <li><p>Bietet frühzeitiges Feedback vom Kunden.</p> </li> 
+     <li><p>Benutzer drücken ihre Anforderungen häufig aus, wenn sie über Erfahrungen der Vergangenheit verfügen; Die Einbeziehung der Kunden in Tests so früh wie möglich verbessert ihre Erfahrung mit dem neuen Projekt im Hinblick auf <i>praxisorientierte</i> Erlebnisse.</p> </li> 
     </ul> </td> 
-   <td><p>Auch hier ist eine frühzeitige Einbindung gut, obwohl jede Version, die die Kunden verwenden, stabil sein sollte, mit angemessener Funktionalität.</p> <p>Erste Impressionen sind immer wichtig.</p> </td> 
+   <td><p>Auch hier ist eine frühzeitige Einbindung gut, obwohl jede Version, die die Kunden verwenden, stabil und mit angemessener Funktionalität sein sollte.</p> <p>Erste Impressionen sind immer wichtig.</p> </td> 
   </tr> 
  </tbody> 
 </table>
-
