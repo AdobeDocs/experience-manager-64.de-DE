@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 95%
 
 ---
 
-
 # Verfolgen von Prozessen {#tracking-processes}
 
 Auf der Seite „Verfolgung“ können Sie aktive oder abgeschlossene Prozesse suchen, die Sie gestartet haben oder an denen Sie beteiligt waren, und die Prozessdetails anzeigen. In den Prozessdetails werden die Aufgaben, Zuweisungen und Formulare angezeigt, die Teil des Prozesses waren. Zudem können Sie neue Prozesse mit Formulardaten aus einem zuvor gestarteten Prozess starten.
 
-## Nach Prozessen und Aufgaben suchen {#search-for-processes-and-tasks}
+## Nach Prozessen und Aufgaben suchen  {#search-for-processes-and-tasks}
 
 Sie können nach Prozessinstanzen und zugehörigen Aufgaben basierend auf dem Prozessnamen oder vom AEM Forms Workspace-Administrator eingerichteten Suchvorlagen suchen.
 
@@ -54,4 +53,3 @@ Auf der Seite „Verfolgung“ können Sie einen Prozess auswählen und seine De
    * Zum Anzeigen von Notizen und Anlagen zu einer Aufgabe klicken Sie auf die Registerkarte „Anlagen“.
    * Zum Anzeigen der Aufgabenzuweisungsdetails klicken Sie auf die Registerkarte „Aufgaben“.
    * Zum Anzeigen des zugeordneten Formulars klicken Sie auf die Formularschaltfläche.
-
