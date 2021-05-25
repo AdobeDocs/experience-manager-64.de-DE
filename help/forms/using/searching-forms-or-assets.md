@@ -9,28 +9,27 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '713'
 ht-degree: 91%
 
 ---
 
-
-# Suchen nach Formularen und Assets {#searching-for-forms-and-assets}
+# Suchen nach Formularen und Assets  {#searching-for-forms-and-assets}
 
 Sie können über eine Textzeichenfolge oder eine Textzeichenfolge mit Platzhaltern nach Formularen oder Formular-Assets suchen. Sie können die Suche auch mithilfe der Kriterien einschränken, die in den verschiedenen Kategorien im Suchfeld verfügbar sind.
 
 Wenn Sie eines oder mehrere Kriterien auswählen und eine Textzeichenfolge angeben, wird die Schnittmenge von Text und Kriterien als Suchergebnis zurückgegeben. Die Suchergebnisse sind so gut wie die zur Verfügung gestellten Formular- und Asset-Metadaten.
 
-Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um das Suchfeld ein- oder auszublenden.
+Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um den Suchbereich ein- oder auszublenden.
 
 ## Einfache Suche {#basic-search}
 
 Bei einer einfachen Suche handelt es sich um die Standardsuche, die ohne Angabe von Filtern ausgeführt wird. Eine Volltextsuche in Metadateneigenschaften wird von AEM Forms durchgeführt.
 
-Um eine einfache Suche durchzuführen, geben Sie in das Textfeld die Suchanfrage ein drücken Sie die Enter-Taste. Sie können auch das Platzhalterzeichen (&amp;ast;) für eine beliebige Anzahl von Zeichen eingeben.
+Um eine einfache Suche durchzuführen, geben Sie in das Textfeld die Suchanfrage ein drücken Sie die Enter-Taste. Sie können auch das Platzhalterzeichen (&amp;ast;) eingeben, um eine beliebige Anzahl von Zeichen einzugeben.
 
 Adobe Experience Manager sucht in den Metadateneigenschaften nach dem eingegebenen Text und gibt die entsprechenden Ergebnisse wieder. Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
 
@@ -38,10 +37,10 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 
 * Die Suche wird mithilfe der Formular- und Asset-Metadaten durchgeführt.
 * Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
-* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie beispielsweise `geometrixx` eingeben, werden Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` in den Suchergebnissen angezeigt.
+* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie beispielsweise `geometrixx` eingeben, werden in den Suchergebnissen Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` angezeigt.
 
-* Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Verwenden Sie zum Suchen mit partiellen Zeichenfolgen &amp;ast; Platzhalter. Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
-* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. `My form` ist beispielsweise nicht dieselbe Abfrage wie `My form`.
+* Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Um mithilfe von partiellen Zeichenfolgen zu suchen, verwenden Sie &amp;ast; Platzhalter. Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
+* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. `My form` ist beispielsweise nicht dieselbe Suchabfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. geändert oder veröffentlicht, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.
 
