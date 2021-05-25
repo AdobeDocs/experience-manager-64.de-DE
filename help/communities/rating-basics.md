@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
-translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+exl-id: f722051c-9512-4420-b12e-cb20aa6759f7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 4%
 
 ---
 
-
 # Bewertungsgrundlagen {#rating-essentials}
 
-Die Bewertungskomponente, eine [tally](tally.md)-Unterklasse, ermöglicht es den angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
+Die Bewertungskomponente, eine Unterklasse [tally](tally.md), ermöglicht es angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
 
-Die Platzierung mehrerer Instanzen einer stimmberechtigten Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
+Das Platzieren mehrerer Instanzen einer Abstimmungskomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft konfiguriert werden.
 
-Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilzunehmen. Der in Besucher (Mitglied) unterzeichnete Vertrag kann seine Berechtigung jederzeit ändern.
+Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Site müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann seine Bewertung jederzeit ändern.
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table> 
  <tbody> 
@@ -35,7 +34,7 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
    <td> social/tally/components/hbs/rating</td> 
   </tr> 
   <tr> 
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td> 
    <td>Ja - Eigenschaften können im <i>design </i>mode bearbeitet werden</td> 
   </tr> 
   <tr> 
@@ -52,7 +51,7 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
   </tr> 
   <tr> 
    <td><strong>properties</strong></td> 
-   <td><p>Siehe <a href="rating.md">Rating</a></p> </td> 
+   <td><p>Siehe <a href="rating.md">Verwenden von Bewertung</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -63,23 +62,22 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
 
 * [Tally-APIs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tal-Endpunkte](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
-### Zugriff auf gepostete Ratings (UGC) {#accessing-posted-ratings-ugc}
+### Zugriff auf gepostete Bewertungen (UGC) {#accessing-posted-ratings-ugc}
 
-UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.\
+UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.\
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
+**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
 
 Siehe:
 
-* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über den Speicher Resource Provider](srp.md)  - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien
-* [SocialUtils Refactoring](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
-
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Codierungsrichtlinien
+* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
