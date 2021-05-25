@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 9c1d8969-6aa6-41b9-a797-3e6431475fc6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
 
 ---
-
 
 # Suche{#search-features}
 
@@ -60,7 +59,7 @@ Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicke
 
 ## Filter {#filter}
 
-An verschiedenen Stellen können Sie einen Filter setzen (oder löschen), um die Ansicht weiter zu spezialisieren und zu verfeinern:
+An verschiedenen Positionen können Sie einen Filter setzen (oder löschen), um die Ansicht weiter zu spezialisieren und zu verfeinern:
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -81,7 +80,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
    * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
 
-   Klicken Sie auf **Vorschau** Listen, in denen der Begriff gefunden wurde. Sie können bestimmte zu ersetzende Instanzen auswählen/löschen:
+   Wenn Sie auf **Vorschau** klicken, wird angezeigt, wo der Begriff gefunden wurde. Sie können bestimmte Instanzen auswählen/löschen, die ersetzt werden sollen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,11 +93,10 @@ Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgend
 * `jcr:text`
 * `text`
 
-Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `http://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` und konfigurieren Sie den Bereich nach Bedarf.
+Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `http://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` aus und konfigurieren Sie den Umfang nach Bedarf.
 
 >[!NOTE]
 >
 >Bei der Standardinstallation von AEM wird für „Suchen und Ersetzen“ Lucene verwendet.
 >
 >Lucene indiziert Zeichenfolgen mit bis zu 16K Länge. Nach längeren Zeichenfolgen wird nicht gesucht.
-
