@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
-translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+exl-id: 1e0a7cab-39b9-4c90-810c-c93fb76c3869
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
 
 ---
 
-
 # Kataloggrundlagen {#catalog-essentials}
 
-Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Katalogfunktion von Community-Sites, die die Aktivierung ermöglichen.
+Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Katalogfunktion von Community-Seiten für die Aktivierung.
 
-Mit der Katalogfunktion können Community-Mitglieder, wenn sie in einer Community-Site enthalten sind, die in einem Katalog aufgelisteten Ressourcen zur Aktivierung durchsuchen und auswählen.
+Mit der Katalogfunktion können Community-Mitglieder, die in einer Community-Site enthalten sind, die in einem Katalog aufgelisteten Aktivierungsressourcen durchsuchen und auswählen.
 
-Die [ `enablement catalog`-Komponente](catalog.md) ermöglicht es Community-Mitgliedern, auf einen Katalog von [Aktivierungsressourcen](resources.md) zuzugreifen. Die Verwendung von AEM-Tags ist ein wichtiger Bestandteil der Verwaltung des Erscheinungsbilds der Aktivierungsressourcen in einem Katalog.
+Die Komponente [ `enablement catalog`](catalog.md) ermöglicht Community-Mitgliedern den Zugriff auf einen Katalog von [Aktivierungsressourcen](resources.md). Die Verwendung AEM Tags ist ein wichtiger Bestandteil der Verwaltung des Erscheinungsbilds von Aktivierungsressourcen in einem Katalog.
 
-Siehe [Tagging-Aktivierungsressourcen](tag-resources.md).
+Siehe [Tagging von Aktivierungsressourcen](tag-resources.md).
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table> 
  <tbody> 
@@ -37,12 +36,12 @@ Siehe [Tagging-Aktivierungsressourcen](tag-resources.md).
    <td>social/enable/components/hbs/catalog</td> 
   </tr> 
   <tr> 
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td> 
    <td>Nein</td> 
   </tr> 
   <tr> 
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.catalog<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learn.path</td> 
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learning.path</td> 
   </tr> 
   <tr> 
    <td> <strong>templates</strong></td> 
@@ -63,24 +62,24 @@ Siehe [Tagging-Aktivierungsressourcen](tag-resources.md).
 
 ### Katalogfunktion {#catalog-function}
 
-Eine Community-Site-Struktur, die die Katalogfunktion [enthält, enthält eine konfigurierte `enablement catalog`-Komponente.](functions.md#catalog-function)
+Eine Community-Site-Struktur, die die [Katalogfunktion](functions.md#catalog-function) enthält, enthält eine konfigurierte `enablement catalog`-Komponente.
 
-### Pre-Filters {#pre-filters}
+### Vorfilter {#pre-filters}
 
-Wenn einer Community-Site eine Katalogfunktion hinzugefügt wurde, können die Aktivierungsressourcen und Lernpfade, die im Katalog angezeigt werden, durch Angabe eines Vorfilters eingeschränkt werden. Dies geschieht durch Festlegen von Eigenschaften für die Instanz der Katalogressource für die Site.
+Wenn einer Community-Site eine Katalogfunktion hinzugefügt wurde, können Sie die Aktivierungsressourcen und Lernpfade, die im Katalog angezeigt werden, einschränken, indem Sie einen Vorfilter angeben. Dies geschieht durch Festlegen von Eigenschaften in der Instanz der Katalogressource für die Site.
 
-Verwenden Sie das Beispiel des [Aktivierungslehrgangs](getting-started-enablement.md):
+Verwenden Sie das Beispiel des [Aktivierungs-Tutorials](getting-started-enablement.md):
 
-* Autor
+* Beim Autor
 * Verwenden von [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
    * Beispiel: [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
-* Navigieren Sie zur Katalogressource auf der Katalogseite
+* Navigieren Sie zur Katalogressource auf der Katalogseite.
 
    * Beispiel: `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* hinzufügen eines untergeordneten Filter-Knotens
+* Knoten für untergeordnete Filter hinzufügen
 
    * Wählen Sie den Knoten `catalog`aus
    * Wählen Sie **[!UICONTROL Knoten erstellen]**
@@ -90,10 +89,10 @@ Verwenden Sie das Beispiel des [Aktivierungslehrgangs](getting-started-enablemen
    * Wählen Sie **[!UICONTROL Alle speichern]**
 
 
-* hinzufügen `se_resource-tags`-Eigenschaft auf den Knoten `filters`
+* Fügen Sie die Eigenschaft `se_resource-tags` zum Knoten `filters` hinzu.
 
-   * Wählen Sie den Knoten `filters`
-   * hinzufügen einer Multi-Eigenschaft
+   * Wählen Sie den Knoten `filters` aus.
+   * Hinzufügen einer Eigenschaft &quot;Multi&quot;
 
       * Name: `se_resource-tags`
       * Typ: String
@@ -101,15 +100,15 @@ Verwenden Sie das Beispiel des [Aktivierungslehrgangs](getting-started-enablemen
       * Wählen Sie **[!UICONTROL Multi]**
       * Wählen Sie **[!UICONTROL Hinzufügen]**
 
-         * Wählen Sie im Popup-Dialogfeld `+` aus, um weitere TagIDs vor dem Filter hinzuzufügen.
+         * Wählen Sie im Popup-Dialogfeld `+` aus, um zusätzliche Tag-IDs vor dem Filter hinzuzufügen.
 
 * Veröffentlichen Sie die Community-Site erneut.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
-#### TagIDs vor dem Filtern {#pre-filter-tagids}
+#### Tag-IDs vor dem Filter {#pre-filter-tagids}
 
-Der Vorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) muss exakt mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet wurden. Diese sind im Ordner `resources` für die Site als Werte der Eigenschaft `se_resource-tags` sichtbar.
+Der Vorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) muss genau mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet werden. Diese sind im Ordner `resources` der Site als Werte der Eigenschaft `se_resource-tags` sichtbar.
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -117,7 +116,6 @@ Der Vorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) muss exak
 
 * [Aktivierungs-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [Berichte-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [Reporting-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
-
+* [Reporting-Analytics-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
