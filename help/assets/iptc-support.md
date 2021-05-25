@@ -2,16 +2,15 @@
 title: Unterstützung für IPTC-Metadaten
 description: Erfahren Sie mehr darüber, wie Adobe Experience Manager (AEM) Assets IPTC-Metadaten, kreative Bewertungen und Keywords unterstützt, die über Adobe Bridge und andere Kreativanwendungen zu Assets hinzugefügt werden.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator,Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '370'
 ht-degree: 100%
 
 ---
-
 
 # Unterstützung für IPTC-Metadaten {#support-for-iptc-metadata}
 
@@ -49,4 +48,3 @@ Diese Eigenschaft ist jedoch zurzeit nicht indiziert, um Konflikte mit von Benut
 Die Registerkarte **[!UICONTROL IPTC]** auf der Eigenschaftenseite zeigt auch Suchbegriffe an, die Assets über Adobe Bridge und andere Creative-Apps hinzugefügt wurden. Sie können diese Suchbegriffe auch über die Registerkarte **[!UICONTROL IPTC]** bearbeiten und weitere Suchbegriffe hinzufügen.
 
 ![Keywords](assets/keywords.png)
-
