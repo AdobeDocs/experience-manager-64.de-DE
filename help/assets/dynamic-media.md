@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Dynamic Media
 seo-title: Arbeiten mit Dynamic Media
-description: Informationen zur Verwendung dynamischer Medien zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
-seo-description: Informationen zur Verwendung dynamischer Medien zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
+description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
+seo-description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
-feature: Asset Management,Renditions
+feature: Asset-Management,Ausgabeformate
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '461'
@@ -24,23 +23,23 @@ ht-degree: 90%
 
 Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets aus Master-Assets können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
-Dynamic Media ermöglicht interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
+Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Die Funktion für dynamische Medien bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
 
 >[!NOTE]
 >
 >Es gibt einen Community-Artikel zum Thema [Arbeiten mit Adobe Experience Manager und Dynamic Media](https://helpx.adobe.com/de/experience-manager/using/aem_dynamic_media.html).
 
-## Einsatzmöglichkeiten für Dynamic Media     {#what-you-can-do-with-dynamic-media}
+## Einsatzmöglichkeiten für Dynamic Media      {#what-you-can-do-with-dynamic-media}
 
 Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](managing-assets-touch-ui.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
 Die folgenden für Dynamic Media exklusiven Funktionen sind verfügbar:
 
 * [Karussellbanner](carousel-banners.md)
-* [Bild-Sets](image-sets.md)
+* [Bildsets](image-sets.md)
 * [Interaktive Bilder](interactive-images.md)
 * [Interaktive Videos](interactive-videos.md)
-* [Sets für gemischte Medien](mixed-media-sets.md)
+* [Gemischte Mediensets](mixed-media-sets.md)
 * [Panoramabilder](panoramic-images.md)
 
 * [Rotationssets](spin-sets.md)
@@ -49,7 +48,7 @@ Die folgenden für Dynamic Media exklusiven Funktionen sind verfügbar:
 * [Verwalten von Assets](managing-assets.md)
 * [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
 
-Siehe auch [Einrichten dynamischer Medien](administering-dynamic-media.md).
+Siehe auch [Einrichten von Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
@@ -59,21 +58,21 @@ Siehe auch [Einrichten dynamischer Medien](administering-dynamic-media.md).
 
 Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert ist:
 
-* Dynamische Ausgabeformate sind beim Herunterladen oder Anzeigen von Assets in der Vorschau verfügbar.
-* Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar.
-* PTIFF-Ausgabeformate werden erstellt.
+* Dynamische Ausgabedarstellungen sind beim Herunterladen oder Anzeigen von Assets in der Vorschau verfügbar.
+* Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar.
+* PTIFF-Ausgabedarstellungen werden erstellt.
 
-Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
+Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von der von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
 
-### Dynamische Ausgabeformate {#dynamic-renditions}
+### Dynamische Ausgabedarstellungen {#dynamic-renditions}
 
-Dynamische Ausgabeformate wie Bild- und Viewer-Vorgaben (unter **[!UICONTROL Dynamisch]**) sind verfügbar, wenn Dynamic Media aktiviert ist.
+Dynamische Ausgabedarstellungen wie Bild- und Viewer-Vorgaben (unter **[!UICONTROL Dynamisch]**) sind verfügbar, wenn Dynamic Media aktiviert ist.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### Bild-Sets, Rotations-Sets und Sets für gemischte Medien {#image-sets-spins-sets-mixed-media-sets}
+### Bildsets, Rotationssets und Sets für gemischte Medien {#image-sets-spins-sets-mixed-media-sets}
 
-Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar, wenn Dynamic Media aktiviert ist.
+Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn Dynamic Media aktiviert ist.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
