@@ -2,16 +2,15 @@
 title: Vorbereiten von Assets für die Übersetzung
 description: Erstellen Sie Stammordner für Sprachen, um die Übersetzung mehrsprachiger Assets vorzubereiten.
 contentOwner: AG
-feature: Projects,Translation
+feature: Projekte, Übersetzung
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 92%
+source-wordcount: '452'
+ht-degree: 96%
 
 ---
-
 
 # Vorbereiten von Assets für die Übersetzung {#preparing-assets-for-translation}
 
@@ -19,7 +18,7 @@ Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten
 
 In Adobe Experience Manager (AEM) Assets sind mehrsprachige Assets in Ordnern enthalten, wobei jeder Ordner die Assets in einer anderen Sprache enthält.
 
-Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Beispielsweise ist */content/dam/it* der italienische Sprachstamm für die italienische Sprachkopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](preparing-assets-for-translation.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
+Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Beispielsweise ist */content/dam/it* der Stamm der italienischen Sprache für die italienischsprachige Kopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](preparing-assets-for-translation.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
 Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die primäre Sprachinstanz. Die primäre Sprachinstanz ist die Quelle, die in andere Sprachen übersetzt wird.
 
@@ -39,7 +38,7 @@ Die Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
 Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Sprachstamm für Ihre primäre Sprachinstanz. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm gemäß den Informationen unter [Erstellen eines Sprachstamms](preparing-assets-for-translation.md#creating-a-language-root) richtig konfiguriert ist.
+1. Erstellen Sie den Sprachstamm für Ihre primäre Sprachinstanz. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](preparing-assets-for-translation.md#creating-a-language-root) konfiguriert ist.
 
 1. Fügen Sie Ihrer primären Sprachinstanz Assets hinzu.
 1. Erstellen Sie den Sprachstamm der jeweiligen Zielsprache, für die Sie eine Sprachkopie benötigen.
@@ -72,4 +71,3 @@ Die Touch-optimierte Benutzeroberfläche bietet einen Bereich „Verweise“, de
 1. Im Bereich „Verweise“ klicken oder tippen Sie auf **[!UICONTROL Sprachkopien]**. Der Bereich „Sprachkopien“ zeigt die Sprachkopien der Assets an.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-
