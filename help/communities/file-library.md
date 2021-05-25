@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: c72b246d-442e-4841-810d-1045e83f60f9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 68%
 
 ---
-
 
 # Dateibibliothek {#file-library-feature}
 
@@ -26,7 +25,7 @@ Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mi
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Dateibibliotheksfunktion zu einer AEM
+* Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site
 * Konfigurationseinstellungen für die Komponente `File Library`
 
 ## Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
@@ -37,19 +36,19 @@ Um eine `File Library`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, 
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-file-library.md#essentials-for-client-side) einbezogen werden, wird die `File Library`-Komponente wie folgt angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `File Library` so angezeigt:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ## Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Wählen Sie die platzierte Komponente `File Library` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte Komponente `File Library` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
-### Kommentar, Registerkarte {#comments-tab}
+### Registerkarte &quot;Kommentare&quot;{#comments-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
@@ -62,30 +61,30 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 
 * **[!UICONTROL Maximale Nachrichtenlänge]** Die Anzahl der Zeichen, die in das Textfeld eingegeben werden kann. Der Standardwert ist 4096 Zeichen.
 
-* **[!UICONTROL Zulässige Dateitypen]** Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+* **[!UICONTROL Zulässige Dateitypen]** Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Rich-Text-Editor]** Ist diese Option aktiviert, können Kommentare mit Markup versehen werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Löschen von]**
-KommentarenWenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Kommentare löschen]**
+Ist diese Option aktiviert, können Benutzer eigene Kommentare löschen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Tagging zulassen]** Ist diese Option aktiviert, können Dateien Kennzeichnungen zugewiesen werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Zulässige]**
-NamespacesWenn Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namensraum beschränkt. Wenn keine aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
+NamespacesWenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keines aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
 
 * **[!UICONTROL Empfehlungsgrenze]** Ist die Option „Tagging zulassen“ aktiviert, wird mit dieser Einstellung die Anzahl der vorgeschlagenen Tags eingegrenzt. Wurde der Wert „-1“ festgelegt, werden beliebig viele Tags eingeblendet. Der Standardwert ist -1.
 
-* **[!UICONTROL &quot;]**
-Abstimmung zulassen&quot;Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Abstimmung zulassen]**
+Ist diese Option aktiviert, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulassen von]**
-FolgendemWenn aktiviert, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Zulassen]**
+Folgende Funktion ist aktiviert. Fügen Sie die folgende Funktion für Blogartikel hinzu, damit Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Threaded]**
-Replies zulassenWenn aktiviert, erlauben Sie Antworten auf gepostete Kommentare. Diese Option ist standardmäßig deaktiviert.
+Replies zulassenIst diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Diese Option ist standardmäßig deaktiviert.
 
-### Benutzermoderation, Registerkarte {#user-moderation-tab}
+### Registerkarte Benutzermoderation {#user-moderation-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
 
@@ -106,12 +105,12 @@ Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Ko
 * **[!UICONTROL Schwellenwert für Moderation]** Geben Sie an, wie oft ein Kommentar von Besuchern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (
 **1**).
 
-* **[!UICONTROL Kennzeichnungslimit]** Geben Sie an, wie oft ein Kommentar als unangemessen gekennzeichnet werden muss, bevor er aus dem öffentlichen Bereich ausgeblendet wird. Diese Zahl muss größer als oder gleich dem Wert 
+* **[!UICONTROL Kennzeichnungslimit]** Geben Sie an, wie oft ein Kommentar als unangemessen gekennzeichnet werden muss, bevor er aus dem öffentlichen Bereich ausgeblendet wird. Diese Zahl muss größer oder gleich der 
 **Schwellenwert für Moderation**. Der Standardwert ist 5.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Essentials zur Dateibibliothek](essentials-file-library.md) für Entwickler.
+Weitere Informationen finden Sie auf der Seite [Dateibibliothek-Grundlagen](essentials-file-library.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
