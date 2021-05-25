@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
-translation-type: tm+mt
-source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+exl-id: c63e44e7-cc89-4fa0-8ba4-460d682df601
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 96%
 
 ---
-
 
 # Kurzanleitung zur Seitenbearbeitung (Authoring){#quick-guide-to-authoring-pages}
 
@@ -36,7 +35,7 @@ Genauere Informationen zur Bearbeitung mit AEM finden Sie unter:
 
 Vor der Zusammenfassung der Details finden Sie hier zunächst einige allgemeine Tipps und Hinweise, die Sie beachten sollten, insbesondere wenn Sie bislang die [klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md) verwendet haben.
 
-### Sites-Konsole {#sites-console}
+### Sites-Konsole  {#sites-console}
 
 * **Erstellen**
 
@@ -66,7 +65,7 @@ Vor der Zusammenfassung der Details finden Sie hier zunächst einige allgemeine 
 >Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
+* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Suchen nach Seiten {#finding-your-page}
@@ -90,7 +89,7 @@ Vor der Zusammenfassung der Details finden Sie hier zunächst einige allgemeine 
 
 1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der erforderlichen Informationen beim [Erstellen der neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) führt. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
-## Auswählen Ihrer Seite für weitere Aktionen   {#selecting-your-page-for-further-action}
+## Auswählen Ihrer Seite für weitere Aktionen    {#selecting-your-page-for-further-action}
 
 Sie können eine Seite auswählen, um Aktionen damit auszuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, damit die für diese Ressource relevanten Aktionen angezeigt werden.
 
@@ -107,8 +106,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
 
       * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
    >[!NOTE]
-   >
-   >Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
+   Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
 
 1. Listenansicht:
 
@@ -168,8 +166,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
       >[!NOTE]
-      >
-      >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+      Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
@@ -186,8 +183,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
 
    >[!NOTE]
-   >
-   >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
 ## Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
 
@@ -259,8 +255,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
    >[!NOTE]
-   >
-   >Löschen ist nicht als Schnellaktion verfügbar.
+   Löschen ist nicht als Schnellaktion verfügbar.
 
 ## Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
@@ -318,5 +313,3 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
    * **Unterschiede anzeigen**
 
       * Die Seite wird geöffnet und die Unterschiede (zwischen den beiden Versionen) werden hervorgehoben.
-
-
