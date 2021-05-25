@@ -11,14 +11,13 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '165'
 ht-degree: 100%
 
 ---
-
 
 # Designer installieren und konfigurieren {#installing-and-configuring-designer}
 
@@ -36,4 +35,3 @@ Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBe
 1. (Optional) Ändern Sie den Standardinstallationspfad, wenn Sie Designer an einem anderen Speicherort installieren möchten. Klicken Sie auf Weiter.
 1. Klicken Sie auf „Zurück“, um gegebenenfalls die Voreinstellungen zu ändern. Um Designer zu installieren, klicken Sie auf „Installieren“.
 1. Klicken Sie auf „Fertig stellen“, wenn die Installation abgeschlossen ist.
-
