@@ -1,34 +1,33 @@
 ---
-title: Sandbox-Anwendung entwickeln
-seo-title: Sandbox-Anwendung entwickeln
-description: Entwickeln von Anwendungen mithilfe von Stiftungsskripten
-seo-description: Entwickeln von Anwendungen mithilfe von Stiftungsskripten
+title: Entwickeln von Sandbox-Anwendungen
+seo-title: Entwickeln von Sandbox-Anwendungen
+description: Entwickeln von Anwendungen mithilfe von Foundation-Skripten
+seo-description: Entwickeln von Anwendungen mithilfe von Foundation-Skripten
 uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
-translation-type: tm+mt
-source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
+exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 7%
 
 ---
 
+# Entwickeln von Sandbox-Anwendungen {#develop-sandbox-application}
 
-# Entwickeln der Sandbox-Anwendung {#develop-sandbox-application}
+In diesem Abschnitt kann die Anwendung jetzt, da die Vorlage im Abschnitt [Initial Application](initial-app.md) eingerichtet wurde und die ersten Seiten im Abschnitt [Initialinhalt](initial-content.md) erstellt wurden, mithilfe von Foundation-Skripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionieren.
 
-In diesem Abschnitt kann die Anwendung nun, da die Vorlage im Abschnitt [Initialanwendung](initial-app.md) eingerichtet wurde und die ersten Seiten, die im Abschnitt [Anfangsinhalt](initial-content.md) festgelegt wurden, mithilfe von Basisskripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionsfähig sein.
+## Verwenden von Foundation-Seitenskripten {#using-foundation-page-scripts}
 
-## Verwenden von Seiten-Skripten der Foundation {#using-foundation-page-scripts}
-
-Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPal-Vorlage rendert, hinzugefügt wurde, wird geändert, um head.jsp und eine lokale body.jsp der Gründungsseite einzuschließen.
+Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPage-Vorlage rendert, hinzugefügt wurde, wird geändert, um die head.jsp der Foundation-Seite und eine lokale body.jsp einzuschließen.
 
 ### Super Resource Type {#super-resource-type}
 
-Der erste Schritt besteht darin, dem Knoten `/apps/an-scf-sandbox/components/playpage` eine Eigenschaft des Supertyps der Ressource hinzuzufügen, damit die Skripte und Eigenschaften des Supertyps übernommen werden.
+Der erste Schritt besteht darin, dem Knoten `/apps/an-scf-sandbox/components/playpage` eine Eigenschaft vom Typ resource super hinzuzufügen, damit er die Skripte und Eigenschaften des Supertyps übernimmt.
 
 Verwenden von CRXDE Lite:
 
@@ -45,7 +44,7 @@ Verwenden von CRXDE Lite:
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im Explorer-Bereich **CRXDE Lite** zu `/apps/an-scf-sandbox/components/playpage` und klicken Sie mit der Dublette auf die Datei `playpage.jsp`, um sie im Bearbeitungsbereich zu öffnen.
+1. Navigieren Sie im Explorer-Bereich **CRXDE Lite** zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die Datei `playpage.jsp` , um sie im Bearbeitungsfenster zu öffnen.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -64,9 +63,9 @@ Verwenden von CRXDE Lite:
 %>
 ```
 
-1. Ersetzen Sie &quot; // TODO ...&quot;, da Sie sich der öffnenden/schließenden Skript-Tags bewusst sind. mit Skripten für Kopf- und Körperteile von &lt;html>.
+1. Da Sie Skript-Tags zum Öffnen/Schließen kennen, ersetzen Sie &quot; // TODO ...&quot;. mit Skripten für die Kopf- und Körperteile von &lt;html>.
 
-   Bei einem Super-Typ von `foundation/components/page` wird jedes Skript, das nicht in diesem Ordner definiert ist, in einem Skript im Ordner `/apps/foundation/components/page` (sofern vorhanden) aufgelöst, andernfalls in einem Skript im Ordner `/libs/foundation/components/page`.
+   Mit dem Supertyp `foundation/components/page` wird jedes Skript, das nicht in diesem Ordner definiert ist, in ein Skript im Ordner `/apps/foundation/components/page` aufgelöst (sofern vorhanden), andernfalls in ein Skript im Ordner `/libs/foundation/components/page`.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp-1}
 
@@ -86,13 +85,13 @@ Verwenden von CRXDE Lite:
 </html>
 ```
 
-1. Das Gründungsskript `head.jsp` muss nicht überlagert werden, aber das Gründungsskript `body.jsp` ist leer.
+1. Das Foundation-Skript `head.jsp` muss nicht überlagert werden, aber das Foundation-Skript `body.jsp` ist leer.
 
-   Um das Authoring einzurichten, überlagern Sie `body.jsp` mit einem lokalen Skript und fügen Sie ein Absatzsystem (parsys) in den Text ein:
+   Überlagern Sie zum Einrichten für die Bearbeitung `body.jsp` mit einem lokalen Skript und fügen Sie ein Absatzsystem (parsys) in den Text ein:
 
-   1. navigieren zu `/apps/an-scf-sandbox/components`
-   1. `playpage`Knoten auswählen
-   1. Klicken Sie mit der rechten Maustaste und wählen Sie `Create > Create File...`
+   1. Navigieren Sie zu `/apps/an-scf-sandbox/components`
+   1. Wählen Sie den Knoten `playpage`aus.
+   1. Klicken Sie mit der rechten Maustaste und wählen Sie `Create > Create File...` aus.
 
       * Name: **body.jsp**
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**
@@ -117,29 +116,29 @@ Verwenden von CRXDE Lite:
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
-**Ansicht der Seite in einem Browser im Bearbeitungsmodus:**
+**Zeigen Sie die Seite in einem Browser im Bearbeitungsmodus an:**
 
-* Standard-Benutzeroberfläche: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* Standardbenutzeroberfläche: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
-Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch die Benutzeroberfläche zum Bearbeiten des Seiteninhalts.
+Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch die Benutzeroberfläche zum Bearbeiten von Seiteninhalten.
 
-Das Seitenbedienfeld &quot;Elemente/Komponenten&quot;wird angezeigt, wenn sowohl das Seitenbedienfeld geöffnet ist als auch das Fenster breit genug ist, damit sowohl der Seiteninhalt als auch der Seiteninhalt angezeigt werden können.
+Das seitliche Bedienfeld &quot;Assets/Komponente&quot;wird angezeigt, wenn das seitliche Bedienfeld geöffnet ist und das Fenster breit genug ist, um sowohl den Seiteninhalt als auch den Seiteninhalt anzuzeigen.
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * Klassische Benutzeroberfläche: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
-So wird die Wiedergabeseite in der klassischen Benutzeroberfläche angezeigt, auch mit der Inhaltssuche (siehe ):
+Im Folgenden wird gezeigt, wie die Wiedergabeseite in der klassischen Benutzeroberfläche einschließlich des Content Finders (cf) angezeigt wird:
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
 ## Communities-Komponenten {#communities-components}
 
-Um Communities-Komponenten für das Authoring zu aktivieren, führen Sie Beginn wie folgt aus:
+Um Communities-Komponenten für das Authoring zu aktivieren, befolgen Sie die folgenden Anweisungen:
 
 * [Auf Communities-Komponenten zugreifen](basics.md#accessing-communities-components)
 
-Für die Zwecke dieser Sandbox sollten Sie mit den folgenden **Communities**-Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren) Beginn ausführen:
+Beginnen Sie für diese Sandbox mit den folgenden **Communities**-Komponenten (aktivieren Sie durch Aktivieren des Kontrollkästchens):
 
 * Kommentare
 * Forum
@@ -148,7 +147,7 @@ Für die Zwecke dieser Sandbox sollten Sie mit den folgenden **Communities**-Kom
 * Bewertungszusammenfassung (Anzeige)
 * Abstimmung
 
-Wählen Sie außerdem Komponenten wie **[!UICONTROL Allgemein]** aus, z. B.
+Wählen Sie außerdem die Komponenten **[!UICONTROL Allgemein]** aus, z. B.
 
 * Bild
 * Tabelle
@@ -157,26 +156,26 @@ Wählen Sie außerdem Komponenten wie **[!UICONTROL Allgemein]** aus, z. B.
 
 >[!NOTE]
 >
->Die für &quot;page par&quot;aktivierten Komponenten werden im Repository als Wert der Eigenschaft `components` des\
+>Die für die Seitenpar aktivierten Komponenten werden im Repository als Wert der Eigenschaft `components` der\
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
 ## Landingpage {#landing-page}
 
-In einer mehrsprachigen Umgebung enthält die Stammeseite ein Skript, das die Anforderung des Clients zur Bestimmung der bevorzugten Sprache analysiert.
+In einer mehrsprachigen Umgebung würde die Stammseite ein Skript enthalten, das die Anfrage vom Client analysiert, um die bevorzugte Sprache zu bestimmen.
 
-In diesem einfachen Beispiel wird die Root-Landingpage statisch so eingestellt, dass sie auf die englische Seite umgeleitet wird, die in der Zukunft als Hauptseite mit einem Link zur play-Seite entwickelt werden kann.
+In diesem einfachen Beispiel wird die Stammseite statisch so eingestellt, dass sie zur englischen Seite weitergeleitet wird, die in Zukunft als Haupt-Landingpage mit einem Link zur Wiedergabeseite entwickelt werden kann.
 
 Ändern Sie die Browser-URL in die Stammseite: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
-* Symbol &quot;Seiteninformationen&quot;auswählen
+* Symbol Seiteninformationen auswählen
 * Wählen Sie **[!UICONTROL Eigenschaften öffnen]**
-* Registerkarte &quot;ERWEITERT&quot;
+* Auf der Registerkarte ERWEITERT
 
-   * Für den Eintrag &quot;Umleitung&quot;navigieren Sie zu **[!UICONTROL Websites > SCF Sandbox Site > SCF Sandbox]**
+   * Navigieren Sie für den Umleitungs-Eintrag zu **[!UICONTROL Websites > SCF Sandbox Site > SCF Sandbox]**
    * Klicken Sie auf **[!UICONTROL OK]**
 
 * Klicken Sie auf **[!UICONTROL OK]**
 
-Sobald die Site veröffentlicht wurde, führt das Browsen zur Root-Seite in einer Veröffentlichungsinstanz eine Umleitung zur englischen Seite durch.
+Sobald die Site veröffentlicht wurde, wird das Browsen zur Stammseite in einer Veröffentlichungsinstanz zur englischen Seite weitergeleitet.
 
-Der letzte Schritt vor der Wiedergabe mit den Communities SCF-Komponenten ist, einen Client Library Folder (clientlibs) hinzuzufügen .... **[](add-clientlibs.md)**
+Der letzte Schritt vor dem Abspielen mit den SCF-Communities-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen .... **[](add-clientlibs.md)**
