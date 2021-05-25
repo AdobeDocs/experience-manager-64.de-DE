@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Dokumentensicherheit
+exl-id: e17ab7de-9f4a-4456-be80-43ab9663940e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 99%
 
 ---
-
 
 # Richtliniensätzen erstellen und verwalten {#creating-and-managing-policy-sets}
 
@@ -45,7 +44,7 @@ Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumen
 
 Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator, der die Software installiert hat, oder dem für diesen Richtliniensatz festgelegten Richtliniensatzkoordinator verwaltet.
 
-## Einen Richtliniensatz erstellen {#create-a-policy-set}
+## Einen Richtliniensatz erstellen  {#create-a-policy-set}
 
 Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der bei der Installation erstellt wird. Sie können weitere Richtliniensätze erstellen und dabei Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nach Erstellen eines Richtliniensatzes können Sie Richtlinien im Satz erstellen.
 
@@ -115,4 +114,3 @@ Beim Löschen eines Richtliniensatzes können Richtlinien, die Bestandteil des S
 1. Klicken Sie auf „Richtlinien“ und anschließend auf die Registerkarte „Richtliniensätze“.
 1. Aktivieren Sie die Kontrollkästchen des Richtliniensatzes, der gelöscht werden soll.
 1. Klicken Sie auf „Löschen“ und dann auf „OK“.
-
