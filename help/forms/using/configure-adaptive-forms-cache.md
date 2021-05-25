@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 87%
 
 ---
-
 
 # Cache für adaptive Formulare konfigurieren {#configure-adaptive-forms-cache}
 
@@ -30,13 +29,13 @@ Eine Cache ist ein Vorgang, um Datenzugriffzeiten zu verkürzen, die Wartezeit z
 >
 >Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
 
-## Cache konfigurieren  {#configure-the-cache}
+## Cache konfigurieren   {#configure-the-cache}
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Gehen Sie zu AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
+1. Gehen Sie zu AEM Konfigurationsmanager der Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
 1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten.
-1. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl der adaptiven Forms** zwischenspeichern kann. Der Standardwert ist 100. 
+1. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl adaptiver Forms** zwischenspeichern kann. Der Standardwert ist 100.
 
    >[!NOTE]
    >
@@ -45,4 +44,3 @@ Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu 
    ![Dialogfeld für HTML-Cache für adaptive Formulare konfigurieren](assets/cache-configuration-edit.png)
 
 1. Klicken Sie auf **Speichern**, um die Konfiguration zu speichern.
-
