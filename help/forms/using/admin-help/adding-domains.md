@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
-translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+exl-id: f2bafa0c-072c-4599-92bc-4eaafece5b4f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 97%
 
 ---
-
 
 # Domänen hinzufügen {#adding-domains}
 
@@ -36,7 +35,7 @@ ht-degree: 97%
 
 Nach dem Erstellen einer Unternehmensdomäne müssen Sie den Ordner manuell synchronisieren oder einen Trigger für die Synchronisierung erstellen, bevor User Management den Ordner verwenden kann. Danach können Sie einen Zeitplan für die Ordnersynchronisierung einrichten und bei Bedarf eine manuelle Synchronisierung durchführen. (Siehe [Ordner synchronisieren](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
 
-## Eine lokale Domäne hinzufügen {#add-a-local-domain}
+## Eine lokale Domäne hinzufügen  {#add-a-local-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf „Neue lokale Domäne“.
@@ -75,7 +74,7 @@ Wenn Sie MySQL als AEM Forms-Datenbank verwenden, gelten die folgenden Einschrä
 
 * Für die Domänen-ID und den Domänennamen dürfen nur Einzelbyte-Zeichen (ASCII) verwendet werden. Wenn Sie erweiterte ASCII-Zeichen verwenden, befindet sich AEM Forms in einem instabilen Zustand und erzeugt möglicherweise eine Ausnahme, wenn Sie versuchen, die Domäne zu löschen. Weitere Informationen zum Wiederherstellen des Systems aus diesem instabilen Zustand finden Sie unter [Eine Domäne, die erweiterte Zeichen oder Multibyte-Zeichen enthält, entfernen](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) auf dieser Seite.
 * Sie können nicht zwei Domänen mit demselben Namen, aber unterschiedlicher Groß-/Kleinschreibung erstellen. Der Versuch, die Domäne *Adobe* zu erstellen, wenn die Domäne *adobe* bereits vorhanden ist, führt zu einer Fehlermeldung.
-* User Management kann nicht zwischen zwei Domänennamen unterscheiden, die sich nur in der Verwendung erweiterter Zeichen unterscheiden. Wenn Sie z. B. eine Domäne mit dem Namen *abcde* und eine Domäne mit dem Namen *âbcdè * erstellen, werden sie als identisch betrachtet.
+* User Management kann nicht zwischen zwei Domänennamen unterscheiden, die sich nur in der Verwendung erweiterter Zeichen unterscheiden. Wenn Sie beispielsweise eine Domäne mit dem Namen *abcde* und eine Domäne mit dem Namen *âbcdè * erstellen, werden diese als identisch betrachtet.
 
 ### Eine Domäne, die erweiterte Zeichen oder Multibyte-Zeichen enthält, entfernen {#remove-a-domain-that-contains-extended-or-multi-byte-characters}
 
@@ -87,4 +86,3 @@ Wenn Sie MySQL als AEM Forms-Datenbank verwenden, gelten die folgenden Einschrä
    * Suchen Sie den Domänennamen, der erweiterte Zeichen oder Multibyte-Zeichen enthält, und legen Sie den Status auf „OBSOLETE“ fest.
 
 1. Importieren Sie die aktualisierte Konfigurationsdatei, wie unter [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file) beschrieben.
-
