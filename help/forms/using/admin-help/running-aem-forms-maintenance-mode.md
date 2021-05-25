@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 2f56bbc7-5e23-4c84-ac0a-03f0b01150b3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 95%
 
 ---
-
 
 # Ausführen von AEM Forms im Wartungsmodus {#running-aem-forms-in-maintenance-mode}
 
@@ -31,7 +30,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostname portadministrator ]*`&password=`*[usernamepassword]*
+   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostnamportadministrator ]*`&password=`*[usernamepassword]*
 
    Die Meldung „Jetzt angehalten“ wird im Browserfenster angezeigt.
 
@@ -43,7 +42,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
+   `https://`*[Hostname]: []*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
 
    Der Status wird im Browserfenster angezeigt. Der Status „true“ zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und „false“ zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
 
@@ -51,7 +50,6 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
+   `https://`*[Hostname]: []*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
 
    Die Meldung „Wird ausgeführt“ wird im Browserfenster angezeigt.
-
