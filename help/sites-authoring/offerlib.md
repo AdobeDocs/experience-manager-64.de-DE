@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5c7c1cda-0e9c-454f-91c4-8e1f37a155c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen und Verwalten von Angeboten  {#creating-and-managing-offers}
 
@@ -27,7 +26,7 @@ Mit der Angebotskonsole lassen sich Angebote erstellen, die für [Erlebnisse in 
 
 In der Angebotskonsole werden Angebote nach Marken sortiert. Jede Marke verfügt über eine Angebotsbibliothek, die für die Erlebnisse dieser Marke verwendet werden kann. Verwenden Sie Ordner, um eine Hierarchie der Angebote einer Bibliothek festzulegen. Mithilfe logischer Ordnerstrukturen können Autoren Angebote beim Durchsuchen leichter auffinden. Such- und Tagging-Werkzeuge vereinfachen die Suche zusätzlich.
 
-## Hinzufügen von Marken mithilfe der Angebotskonsole   {#add-a-brand-using-the-offers-console}
+## Hinzufügen von Marken mithilfe der Angebotskonsole    {#add-a-brand-using-the-offers-console}
 
 Erstellen Sie eine Marke, mit der Angebote verknüpft werden sollen. Öffnen Sie eine Marke in der Angebotskonsole, um auf deren Angebotsbibliothek zuzugreifen, in der Sie Ordner und Angebote erstellen können.
 
@@ -110,4 +109,3 @@ So durchsuchen Sie Dienste:
 
 1. Klicken oder tippen Sie oben in der Angebotskonsole auf das Lupensymbol. Die Suche wird standardmäßig auf Angebote beschränkt.
 1. Geben Sie einen Suchbegriff ein, um nach Angeboten zu suchen. Wählen Sie aus den Ergebnissen das passende aus.
-
