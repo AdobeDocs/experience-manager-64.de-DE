@@ -7,15 +7,14 @@ uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Adaptive Formulare
+exl-id: 3269aab9-ac39-4adc-9a6b-9fe9f4276b29
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2172'
 ht-degree: 83%
 
 ---
-
 
 # Tabellen in adaptiven Formularen {#tables-in-adaptive-forms}
 
@@ -33,7 +32,7 @@ AEM Forms bietet eine Tabellenkomponente im Komponenten-Browser in der Seitenlei
 * Unterstützung für das Hinzufügen von Zeilen oder Zellen mit komplexen XSD-Typelementen
 * Zusammenführen von Daten aus einer XML-Datei
 
-## Erstellen einer Tabelle {#create-a-table}
+## Erstellen einer Tabelle  {#create-a-table}
 
 Um eine Tabelle zu erstellen, ziehen Sie per Drag &amp; Drop die Tabellenkomponente vom Komponenten-Browser im Sidekick in das adaptive Formular. Standardmäßig enthält die Tabelle zwei Spalten und drei Zeilen, einschließlich der Kopfzeile.
 
@@ -69,19 +68,19 @@ Die Dropdownliste für die Zeile enthält auch die Option „Bearbeiten“ zum B
 >
 >Sie können zwar eine beliebige Anzahl von Zeilen einer Tabelle hinzufügen, aber nur maximal sechs Spalten. Die Überschriftzeile der Tabelle kann nicht gelöscht werden.
 
-### Spaltenbreite für eine Tabelle {#set-column-width} festlegen
+### Spaltenbreite für eine Tabelle festlegen {#set-column-width}
 
 Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle festzulegen:
 
-1. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Komponente **[!UICONTROL Tabelle]** und dann auf das Symbol Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
+1. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Komponente **[!UICONTROL Tabelle]** und tippen Sie auf das Symbol Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
 
-1. Geben Sie die kommagetrennte Liste der Werte in das Feld **[!UICONTROL Spaltenbreite]** ein, um die proportionale Breite der einzelnen Tabellenspalten anzugeben. Beispiel: Bei einer Tabelle mit 3 Spalten, bei der 2,4,6 als Wert im Feld **[!UICONTROL Spaltenbreite]** angegeben wird, wird die Spaltenbreite für die erste Spalte auf 2/12, für die zweite Spalte auf 4/12 und für die dritte Spalte auf 6/12 eingestellt. 2/12, da sich die Breite der ersten Spalte auf ein Sechstel der Tabellenbreite bezieht. In ähnlicher Weise setzt 4/12 die zweite Spaltenbreite auf ein Drittel der Tabellenbreite und 6/12 legt die dritte Spaltenbreite auf die Hälfte der Tabellenbreite fest.
+1. Geben Sie die kommagetrennte Liste von Werten in das Feld **[!UICONTROL Spaltenbreite]** ein, um die proportionale Breite jeder Spalte in der Tabelle anzugeben. Beispiel: Bei einer Tabelle mit 3 Spalten, bei der 2,4,6 als Wert im Feld **[!UICONTROL Spaltenbreite]** angegeben wird, wird die Spaltenbreite für die erste Spalte auf 2/12, für die zweite Spalte auf 4/12 und für die dritte Spalte auf 6/12 gesetzt. 2/12, da sich die Breite für die erste Spalte auf ein Sechstel der Tabellenbreite bezieht. Gleichermaßen setzt 4/12 die zweite Spaltenbreite auf ein Drittel der Tabellenbreite und 6/12 legt die dritte Spaltenbreite als Hälfte der Tabellenbreite fest.
 
 ### Fügen Sie die Tabellenbeschreibung hinzu {#add-table-description}
 
 Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten aufgebaut sind, die von Bildschirmlesehilfen interpretiert und gelesen werden können. Hinzufügen der Beschreibung:
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png), um deren Eigenschaften in der Seitenleiste anzuzeigen.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png) , um die Eigenschaften in der Seitenleiste anzuzeigen.
 1. Geben Sie auf der Registerkarte „Ein-/Ausgabehilfe“ die Zusammenfassung ein.
 1. Klicken Sie auf **Fertig**.
 
@@ -93,7 +92,7 @@ Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in de
 
 1. Wählen Sie in der Seitenleiste die Tabelle aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png).
 
-   Die Stileigenschaften werden in der Seitenleiste angezeigt.
+   Sie können die Stileigenschaften in der Seitenleiste sehen.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
 
@@ -105,13 +104,13 @@ Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in de
 
 Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen von Zeilen zur Laufzeit.
 
-1. Wählen Sie eine Tabellenzeile und tippen Sie auf ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Tabellenzeile aus und tippen Sie auf ![cmppr](assets/cmppr.png).
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
-Zur Laufzeit werden die Schaltflächen **`+`** und *`-`* angezeigt, um eine Zeile hinzuzufügen oder zu löschen.
+Zur Laufzeit werden die Schaltflächen **`+`** und *`-`* angezeigt, mit denen Sie eine Zeile hinzufügen oder löschen können.
 
-![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamisch](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
@@ -124,7 +123,7 @@ Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schrei
 Während Tabellen und Zeilen nur Ausdrücke zum Steuern ihrer Sichtbarkeit unterstützen, unterstützen Zellen folgende Ausdrücke:
 
 * **Initialisierungsskript**: Zum Ausführen einer Aktion nach der Initialsierung eines Felds.
-* **Skript zum Bestätigen von Werten:** um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **Skript zum Bestätigen von Werten:**  Zum Ändern der Komponenten eines Formulars, nachdem der Wert eines Felds geändert wurde.
 
 >[!NOTE]
 >
@@ -141,7 +140,7 @@ Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs
 
 ## Layout für Mobilgeräte {#mobile-layouts}
 
-Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms Angebots two types of mobile layouts for tables - Headers on left and Collapsible columns.
+Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms bietet zwei Tabellenlayouts für Mobilgeräte: &quot;Kopfzeilen links&quot;und &quot;Reduzierbare Spalten&quot;.
 
 Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bearbeiten“ einer Tabelle auf der Registerkarte „Stile“ konfigurieren.
 
@@ -149,8 +148,8 @@ Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bea
 
 Im Layout „Kopfzeilen links“ werden die Spaltenüberschriften der Tabelle auf der linken Seite angeordnet und nur eine Zelle steht neben der Kopfzeile. Jede Zeile in diesem Layout ist ein eigenständiger Abschnitt. In den folgenden Abbildungen wird eine Tabelle auf einem Desktop mit derselben auf einem Mobilgerät verglichen.
 
-![Desktop-](assets/desktopview.png)
-**AnsichtAbbildung:** *Desktop-Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
+![](assets/desktopview.png)
+**Desktop-AnsichtAbbildung:** *Desktop-Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
 
 ![](assets/headersontheleft.png)
 **headersontheleftAbbildung:** *Mobile Ansicht einer Tabelle mit Layout &quot;Kopfzeile links&quot;*
@@ -161,12 +160,12 @@ Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert
 
 >[!NOTE]
 >
->Das Layout &quot;Reduzierbare Spalten&quot;ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf dem Desktop, wenn die verfügbare Breite nicht ausreicht, um alle Spalten in einer Tabelle anzuzeigen.
+>Das Layout &quot;Reduzierbare Spalten&quot;ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf dem Desktop, wenn die verfügbare Breite nicht ausreicht, um alle Spalten einer Tabelle anzuzeigen.
 
 In den folgenden Abbildungen werden Tabellen mit reduzierten und erweiterten Spalten verglichen.
 
 ![Reduzierte ](assets/collapsed-column.png)
-**SpalteAbbildung:** *Reduzierte Spalten einer Tabelle mit nur zwei Spalten auf einem Mobilgerät*
+**SpalteAbbildung:** *Reduzierte Spalten einer Tabelle, bei der nur zwei Spalten auf einem Mobilgerät angezeigt werden*
 
 ![collapse_](assets/collapsible_column.png)
 **columnAbbildung:** *Erweiterte Spalte einer Tabelle auf einem Mobilgerät*
@@ -245,7 +244,7 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 </afData>
 ```
 
-In der XML-Musterdatei werden die Daten für eine Zeile durch die Tags `<Row1>` definiert, bei denen es sich um den Elementnamen für die Zeile in der Tabelle handelt. Innerhalb des Tags `<Row1>` werden die Daten für jede Zelle im Tag für den Elementnamen definiert, z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`.
+In der XML-Beispieldatei werden die Daten für eine Zeile durch die `<Row1>`-Tags definiert, die den Elementnamen für die Zeile in der Tabelle darstellen. Innerhalb des Tags `<Row1>` werden die Daten für jede Zelle im Tag für den Elementnamen definiert, z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`.
 
 Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *http://localhost:4502/myForms/bankTransaction.html* und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* befindet, können Sie die Tabellen mit Daten unter folgender URL abrufen:
 
@@ -279,4 +278,3 @@ Darüber hinaus können Sie eine Gruppe von komplexen XSD-Typelementen ablegen, 
 * Jeder Textzelle in einer Standardtabelle ist ein vordefinierter Elementnamen zugeordnet. Wenn Sie eine andere Tabelle im adaptiven Formular hinzufügen, haben die Standardtextzellen in der neuen Tabelle denselben Elementnamen wie in der ersten Tabelle. In solch einem Fall beinhalten die Daten, die beim Senden des Formulars generiert wurden, die Daten in den Standardtextzellen einer der Tabellen. Stellen Sie daher sicher, dass Sie die Elementnamen für Standardtextzellen umbenennen, damit sie in den Tabellen eindeutig sind und Datenverluste vermieden werden.
 
    Beachten Sie, dass dies lediglich für die Standardtextzellen gilt. Wenn Sie weitere Zeilen oder Spalten zur Tabelle hinzufügen, werden automatisch eindeutige Elementnamen für Nichtstandard-Textzellen generiert. 
-
