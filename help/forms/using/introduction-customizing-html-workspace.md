@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 4831abe0-7d82-4cdd-8579-9736aa6a94d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1784'
 ht-degree: 84%
 
 ---
 
+# Einführung zur Anpassung des AEM Forms Workspace  {#introduction-to-customizing-aem-form-workspace}
 
-# Einführung zur Anpassung des AEM Forms Workspace {#introduction-to-customizing-aem-form-workspace}
-
-AEM Formulararbeitsbereich bietet Funktionen zum Ändern der Darstellungssemantik und Funktionalität der Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
+AEM Formulararbeitsbereich bietet Funktionen zum Ändern der Darstellungssemantik und der Funktionalität der zugehörigen Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
 
 ![cu_customized_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -36,7 +35,7 @@ AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Da
 
 Sie können das Aussehen, Layout und andere Darstellungsfaktoren von AEM Forms Workspace ändern. Ändern Sie den Workspace durch Anpassen der CSS- und HTML-Vorlagen und JavaScript™-Dateien. Alle Standarddateien werden in der Standardinstallation bereitgestellt.
 
-Die am häufigsten anwendbaren Schritte werden unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) beschrieben. Einzelne Beispiele für Anpassungen, einschließlich der ausführlichen Schritte, finden Sie in den jeweiligen Artikeln am Ende des Artikels.
+Die am häufigsten anwendbaren Schritte werden unter [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) beschrieben. Einzelne Beispiele für Anpassungen, einschließlich der ausführlichen Schritte, finden Sie in den jeweiligen Artikeln am Ende des Artikels.
 
 #### Grundlagen des Stylesheet  {#understanding-the-style-sheet}
 
@@ -52,7 +51,7 @@ Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen St
   </tr> 
   <tr> 
    <td><p>#header</p> </td> 
-   <td><p>Kopfzeile des AEM Forms Workspace</p> </td> 
+   <td><p>Kopfzeile des AEM Forms-Arbeitsbereichs</p> </td> 
   </tr> 
   <tr> 
    <td><p>.categoryList</p> </td> 
@@ -119,7 +118,7 @@ Zur Anpassung des Workspace wird empfohlen, dass Sie sich mit dem vorhandenen St
 
 #### CSS {#css}
 
-Das Erscheinungsbild von AEM Forms Workspace basiert auf einem CSS. Durch Anpassen der CSS können Sie die Darstellungseigenschaften des Workspace ändern, z. B. die Schriftarten, Farben, das Branding und Layout.
+Das Erscheinungsbild von AEM Forms Workspace wird von einer CSS übernommen. Durch Anpassen der CSS können Sie die Darstellungseigenschaften des Workspace ändern, z. B. die Schriftarten, Farben, das Branding und Layout.
 
 Die wesentlichen Schritte für die CSS-Anpassung sind:
 
@@ -127,11 +126,11 @@ Die wesentlichen Schritte für die CSS-Anpassung sind:
 * Fügen Sie der CSS-Datei Stilelemente hinzu. Weiteren Informationen finden Sie im entsprechenden Artikel zum Thema CSS-Stile.
 * Aktualisieren Sie die Verweise in `html.jsp`.
 
-Die genauen Schritte zur Durchführung dieser Anpassungen finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md). Die im Lieferumfang von AEM Forms Workspace enthaltene CSS-Datei befindet sich unter /libs/ws/css/. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+Die genauen Schritte für diese Anpassungen finden Sie unter [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace bereitgestellte CSS-Datei befindet sich unter /libs/ws/css/. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
 
 #### Bild {#image}
 
-Sie können den AEM Forms Workspace anpassen, um Avatare von Benutzern hinzuzufügen oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Sie können den AEM Forms-Arbeitsbereich anpassen, um Avatare von Benutzern hinzuzufügen oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 Die wesentlichen Schritte für die Anpassungen der Bilder sind:
 
@@ -140,11 +139,11 @@ Die wesentlichen Schritte für die Anpassungen der Bilder sind:
 * Fügen Sie neue Stile entsprechend den hinzugefügten Bildern hinzu.
 * Stellen Sie eine Verknüpfung zu der neuen CSS-Datei in der Datei `html.jsp` her.
 
-Um mit dem Anpassen der Bilder in AEM Forms Workspace zu beginnen, führen Sie die Schritte [Generisch für die Anpassung des AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) durch. Einzelne Beispiele für Bildanpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+Um mit dem Anpassen der Bilder in AEM Forms Workspace zu beginnen, führen Sie die [Generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) aus. Einzelne Beispiele für Bildanpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
 
 #### HTML-Vorlage {#html-template}
 
-HTML-Vorlagen helfen beim Definieren des Erscheinungsbilds und des Layouts der Workspace-Benutzeroberfläche. Indem Sie die Standard-HTML-Vorlagen aktualisieren, können Sie das Layout der Standard-Benutzeroberfläche anpassen.
+HTML-Vorlagen helfen dabei, das Erscheinungsbild und Layout der Workspace-Benutzeroberfläche zu definieren. Indem Sie die Standard-HTML-Vorlagen aktualisieren, können Sie das Layout der Standard-Benutzeroberfläche anpassen.
 
 Die wesentlichen Schritte für die Anpassungen der HTML-Vorlagen sind:
 
@@ -156,9 +155,9 @@ Einzelne Beispiele für diese Anpassungen finden Sie in den jeweiligen Hilfethem
 
 ### Änderung der Semantik  {#semantic-changes}
 
-Um die AEM Forms Workspace-Funktionalität zu ändern, ändern Sie den JavaScript-Quellcode. Änderungen in der Kernfunktion werden als Semantikänderungen bezeichnet. Ändern Sie Modelle, Ansichten und Vorlagen, die als Teil des Quellcodes von AEM Forms Workspace bereitgestellt werden.
+Um die AEM Forms Workspace-Funktion zu ändern, ändern Sie den JavaScript-Quellcode. Änderungen in der Kernfunktion werden als Semantikänderungen bezeichnet. Ändern Sie Modelle, Ansichten und Vorlagen, die als Teil des Quellcodes von AEM Forms Workspace bereitgestellt werden.
 
-Die wichtigsten Schritte zum Durchführen semantischer Änderungen zur Änderung der Funktionen von AEM Forms Workspace sind:
+Die wichtigsten Schritte zum Durchführen semantischer Änderungen zur Änderung der Funktionalität von AEM Forms Workspace sind:
 
 * Erstellen Sie in einem benutzerdefinierten Ordner die Kopien von den entsprechenden Standarddateien.
 * Fügen Sie dem benutzerdefinierten Ordner neue Modelle und Ansichten hinzu.
@@ -169,9 +168,9 @@ Weitere grundlegende Informationen zu den Komponenten, die Teil des Quellcodes s
 
 ### Wiederverwendbare Komponenten {#reusable-components}
 
-Da AEM Forms Workspace eine komponentenbasierte Software ist, kann sie einfach angepasst und wiederverwendet werden. Integrieren Sie mühelos die Workspace-Komponenten in Ihre Webanwendungen.
+Da AEM Forms Workspace eine komponentenbasierte Software ist, kann es einfach angepasst und wiederverwendet werden. Integrieren Sie mühelos die Workspace-Komponenten in Ihre Webanwendungen.
 
-Weitere konzeptionelle Informationen finden Sie unter [Beschreibung der wiederverwendbaren Komponenten](/help/forms/using/description-reusable-components.md) und Anweisungen zur Verwendung der Komponenten finden Sie unter [Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen](/help/forms/using/description-reusable-components.md).
+Weitere grundlegende Informationen finden Sie unter [Beschreibung der wiederverwendbaren Komponenten](/help/forms/using/description-reusable-components.md) und Anweisungen zur Verwendung der Komponenten finden Sie unter [Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen](/help/forms/using/description-reusable-components.md).
 
 ## Erstellen von AEM Forms Workspace-Code {#building-html-workspace-code}
 
@@ -193,7 +192,7 @@ Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu g
 
 * client-html:
 
-   * assembly - Enthält zip.xml, das vom Skript zum Erstellen des AEM Forms Workspace SDK verwendet wird.
+   * assembly - Enthält zip.xml , das vom Skript zum Erstellen des AEM Forms Workspace-SDK verwendet wird.
    * src/main/webapp -
 
       * css - Enthält Stylesheets für AEM Forms Workspace.
@@ -216,7 +215,7 @@ Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu g
             * views - Enthält Backbone-Ansichten aller Komponenten in AEM Forms Workspace.
          * main.js
          * router.js
-      * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF forms in AEM Forms Workspace verwendet und WSNextAdapter.swf wird verwendet, um SWF-Formulare und Guides in AEM Forms Workspace zu laden.
+      * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF forms in AEM Forms Workspace verwendet und WSNextAdapter.swf wird zum Laden von SWF-Formularen und Guides in AEM Forms Workspace verwendet.
       * locales:
 
          * de-DE - Enthält translation.json für Deutsch.
@@ -247,7 +246,7 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 #### Befehl {#command}
 
 * mvn clean -P Ship install auf client-pkg von Source-Paket an Client gesendet.
-* Befehlsausführung des Ship-Profils funktioniert nur auf einer 64-Bit-JVM.
+* Die Befehlsausführung von Ship-Profilen funktioniert nur auf einer 64-Bit-JVM.
 
 #### WS-Inhalt {#ws-content-1}
 
@@ -380,4 +379,3 @@ mvn clean -P Dev-Installation auf Client-Paket
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
