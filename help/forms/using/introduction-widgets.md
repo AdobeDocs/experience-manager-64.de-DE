@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 272d3ec1-7f92-4f4a-9e98-954136b20b27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 93%
 
 ---
 
-
-# Erscheinungsbild-Framework für adaptive und HTML5-Formulare {#appearance-framework-for-adaptive-and-html-forms}
+# Erscheinungsbild-Framework für adaptive und HTML5-Formulare  {#appearance-framework-for-adaptive-and-html-forms}
 
 Formulare (adaptive Formulare und HTML5-Formulare) verwenden [jQuery](https://jquery.com/)-, [Backbone.js](https://backbonejs.org/)- und [Underscore.js](https://underscorejs.org/)-Bibliotheken für das Erscheinungsbild und die Skripterstellung. Die Formulare verwenden auch die Architektur von [jQuery UI](https://jqueryui.com/)-**Widgets** für alle interaktiven Elemente (beispielsweise Felder und Schaltflächen) im Formular. Durch diese Architektur stehen Formularentwicklern eine umfangreiche Auswahl von jQuery-Widgets und -Plug-Ins in Formularen zur Verfügung. Sie können ebenfalls formularspezifische Logik beim Erfassen von Benutzerdaten implementieren, wie etwa „leadDigits/trailDigits“-Einschränkungen, oder Bildklassen implementieren. Formularentwickler können benutzerdefinierte Erscheinungsbilder erstellen und verwenden, um die Datenerfassungserfahrung zu verbessern und sie benutzerfreundlicher zu gestalten.
 
@@ -53,7 +52,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular gibt den Wert an und Sie können den Wert überschreiben.<br /> </td> 
+   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular stellt den Wert bereit und Sie können den Wert überschreiben.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -135,10 +134,10 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
   </tr>
   <tr>
    <td>click : function()</td> 
-   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EREIGNIS wird aufgerufen.</td> 
+   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EVENT wird aufgerufen.</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: Zeichenfolge </em>zur Darstellung des Fehlers<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>der den Fehler<br /> <em>errorType darstellt: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
    <td>Sendet Fehlermeldung und Fehlertyp an das Widget. Das Widget zeigt den Fehler an.</td> 
   </tr>
   <tr>
@@ -231,7 +230,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 
 ### NumericEdit: NumericField, DecimalField  {#numericedit-numericfield-decimalfield}
 
-| Optionen      | Beschreibung |
+| Optionen | Beschreibung |
 |---|---|
 | dataType | String, der, der den Datentyp des Felds darstellt (ganze Zahl/Dezimalzahl). |
 | leadDigits | Maximale führende Ziffern der Dezimalzahl. |
@@ -244,11 +243,11 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 <table> 
  <tbody>
   <tr>
-   <th>Optionen     </th> 
+   <th>Optionen</th> 
    <th>Beschreibung</th> 
   </tr>
   <tr>
-   <td>Werte</td> 
+   <td>values</td> 
    <td><p>Werte-Array(an/aus/neutral).</p> <p>Werte-Array für die verschiedenen Statusangaben des CheckButton. Wert[0] steht für den Status AN, Wert[1] steht für den Status AUS,<br /> Wert[2] steht für den Status NEUTRAL. Die Länge des Werte-Arrays entspricht dem Wert der Status-Option.<br /> </p> </td> 
   </tr>
   <tr>
@@ -270,4 +269,3 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 | months | Lokalisierte Monatsnamen für dieses Feld. |
 | zero | Der lokalisierte Text für die Zahl 0. |
 | clearText | Der lokalisierte Text für die Schaltfläche „Löschen“.  |
-
