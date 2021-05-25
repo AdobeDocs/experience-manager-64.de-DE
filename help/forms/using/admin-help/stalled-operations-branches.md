@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 89%
 
 ---
-
 
 # Arbeiten mit angehaltenen Vorgängen und Zweigen {#working-with-stalled-operations-and-branches}
 
@@ -29,24 +28,24 @@ Wenn ein Prozess anhält, werden weitere Vorgänge erst wieder ausgeführt, wenn
 
 Für jedes angehaltene Element werden in der Liste die folgenden Informationen angezeigt:
 
-**Vorgangsname oder Zweigname:** Der Name des Vorgangs oder der Verzweigung.
+**Vorgangsname oder Verzweigungsname:** Der Name des Vorgangs oder Zweigs.
 
-**Status:** Bei angehaltenen Elementen immer ANGEHALTEN.
+**Status:** Für angehaltene Elemente immer ANGEHALTEN.
 
 **Fehler:** Eine kurze Beschreibung des Problems.
 
-**Prozess-ID:** Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID:** Die positive ganze Zahl, die der Arbeitsablauf für Formulare beim Instanziieren des Prozesses zuweist (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
 **Prozessname - Version:** Der Name des in Workbench zugewiesenen Prozesses.
 
-**Angehaltenes Datum:** Datum und Uhrzeit der Anhalten des Vorgangs oder der Verzweigung.
+**Angehaltenes Datum:** Datum und Uhrzeit der Unterbrechung des Vorgangs oder Zweigs.
 
 Sie können auf den Seiten „Angehaltene Vorgänge“ bzw. „Angehaltene Zweige“ folgende Aufgaben durchführen:
 
 * Einen Fehler auswählen, um Details dazu anzuzeigen. Wenn Sie einen Fehler auswählen, wird die Seite „Fehlerdetails“ angezeigt.
 * Angehaltene Vorgänge beenden oder wiederholen bzw. angehaltene Zweige wiederholen
 
-## Angehaltene Vorgänge oder Zweige beenden oder wiederholen {#terminating-or-retrying-stalled-operations-or-branches}
+## Angehaltene Vorgänge oder Zweige beenden oder wiederholen  {#terminating-or-retrying-stalled-operations-or-branches}
 
 Auf der Seite „Angehaltene Vorgänge“ können Sie die angezeigten Prozessinstanzen beenden.
 
