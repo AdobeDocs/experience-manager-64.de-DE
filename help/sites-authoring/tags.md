@@ -1,29 +1,28 @@
 ---
 title: Verwenden von Tags
 seo-title: Verwenden von Tags
-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website.
-seo-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website.
+description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
+seo-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
 uuid: a91f8724-fc35-4f40-b21c-bee90429765b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
-translation-type: tm+mt
-source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+exl-id: 846a925a-673e-4051-a673-1a9236701f0a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 82%
+ht-degree: 85%
 
 ---
-
 
 # Verwenden von Tags {#using-tags}
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
-* Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
-* Informationen zum Tagging-Framework sowie zum Einschließen und Erweitern von Tags in benutzerdefinierten Anwendungen finden Sie unter [Tagging für Entwickler](/help/sites-developing/tags.md).
+* Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden, finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md) .
+* Unter [Tagging für Entwickler](/help/sites-developing/tags.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Anwendungen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
 
@@ -53,7 +52,7 @@ Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Ass
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
-Um [vordefinierte Tags](/help/sites-administering/tags.md) anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften** das Feld **Tags** und das Fenster **Tags auswählen**. Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
+Um [vordefinierte Tags](/help/sites-administering/tags.md) anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften** das Feld **Tags** und das Fenster **Tags auswählen** . Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -69,7 +68,7 @@ Wie bei Seiten können die folgenden Aufgaben für Tags und Namespaces durchgef�
 
 >[!NOTE]
 >
->Wenn Sie eine Seite aktivieren, wird automatisch ein Dialogfeld geöffnet, in dem Sie inaktivierte Tags aktivieren können, die zur Seite gehören.
+>Wenn Sie eine Seite aktivieren, wird automatisch ein Dialogfeld geöffnet, in dem Sie nicht aktivierte Tags, die zur Seite gehören, aktivieren können.
 
 **Deaktivieren**
 
@@ -87,7 +86,6 @@ Sie können sowohl in der Autoren- als auch in der Veröffentlichungsumgebung na
 
 ### Verwenden der Suchkomponente  {#using-search-component}
 
-Das Hinzufügen einer [Suchkomponente](/help/sites-authoring/default-components-foundation.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung verwendet werden kann.
+Das Hinzufügen einer [Suchkomponente](/help/sites-authoring/default-components-foundation.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autoren- als auch in der Veröffentlichungsumgebung verwendet werden kann.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
-
