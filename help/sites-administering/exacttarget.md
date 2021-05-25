@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 943e5199-271f-4015-a9f7-4d39c00deabe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 78%
 
 ---
 
-
 # Integration mit ExactTarget{#integrating-with-exacttarget}
 
-Durch die Integration von AEM in die exakte Zielgruppe können Sie in AEM erstellte E-Mails verwalten und per exakte Zielgruppe senden. Sie können auch die Interessentenverwaltungsfunktionen von Exact Zielgruppe über AEM Formulare auf AEM Seiten verwenden.
+Durch die Integration von AEM in Exact Target können Sie in AEM erstellten E-Mails verwalten und senden. Außerdem können Sie die Lead-Management-Funktionen von ExactTarget über AEM Formulare auf AEM Seiten verwenden.
 
 Mit der Integration verfügen Sie über die folgenden Funktionen:
 
@@ -29,7 +28,7 @@ Mit der Integration verfügen Sie über die folgenden Funktionen:
 
 Nach der Konfiguration von ExactTarget können Sie Newsletter oder E-Mails für ExactTarget veröffentlichen. Siehe [Veröffentlichen von Newslettern für einen E-Mail-Dienst](/help/sites-authoring/personalization.md).
 
-## Erstellen einer ExactTarget-Konfiguration {#creating-an-exacttarget-configuration}
+## Erstellen einer ExactTarget-Konfiguration  {#creating-an-exacttarget-configuration}
 
 Sie können ExactTarget-Konfigurationen über Cloud-Services oder über die Tools hinzufügen. Beide Möglichkeiten werden in diesem Abschnitt beschrieben.
 
@@ -38,11 +37,11 @@ Sie können ExactTarget-Konfigurationen über Cloud-Services oder über die Tool
 So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
 1. Klicken Sie auf der Willkommensseite auf **Cloud-Services**. (Oder direkt auf `https://<hostname>:<port>/etc/cloudservices.html` zugreifen.)
-1. Klicken Sie auf **ExactTarget** und dann **Configure**. Das ExactTarget-Konfigurationsfenster wird geöffnet.
+1. Klicken Sie auf **ExactTarget** und dann auf **Konfigurieren**. Das ExactTarget-Konfigurationsfenster wird geöffnet.
 
    ![chlimage_1-182](assets/chlimage_1-182.png)
 
-1. Geben Sie einen Titel und optional einen Namen ein und klicken Sie auf **Erstellen**. Das Konfigurationsfenster** ExactTarget-Einstellungen** wird geöffnet.
+1. Geben Sie einen Titel und optional einen Namen ein und klicken Sie auf **Erstellen**. Das Konfigurationsfenster &quot;ExactTarget-Einstellungen&quot;wird geöffnet.
 
    ![chlimage_1-31](assets/chlimage_1-31.jpeg)
 
@@ -53,7 +52,7 @@ So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
 1. Wählen Sie ein Konto aus, falls verfügbar. Das Konto ist für Enterprise 2.0-Kunden. Klicken Sie auf **OK**.
 
-   ExactTarget wurde konfiguriert. Sie können die Konfiguration bearbeiten, indem Sie auf **Bearbeiten** klicken. Sie können zu ExactTarget gehen, indem Sie auf **Zu ExactTarget** gehen klicken.
+   ExactTarget wurde konfiguriert. Sie können die Konfiguration bearbeiten, indem Sie auf **Bearbeiten** klicken. Sie können zu ExactTarget gehen, indem Sie auf **Zu ExactTarget** klicken.
 
 1. AEM bietet jetzt eine Datenerweiterungsfunktion. Sie können ExactTarget-Datenerweiterungsspalten importieren. Klicken Sie zur Konfiguration auf das Pluszeichen (+), das neben der erfolgreich erstellten ExactTarget-Konfiguration angezeigt wird. Aus der Dropdown-Liste können Sie jede vorhandene Datenerweiterung auswählen. Weitere Informationen zur Konfiguration von Datenerweiterungen finden Sie in der [ExactTarget-Dokumentation](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 
@@ -65,9 +64,9 @@ So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
 So erstellen Sie eine ExactTarget-Konfiguration über die Tools:
 
-1. Klicken Sie auf der Willkommensseite auf **Tools**. Oder navigieren Sie direkt dort, indem Sie zu `https://<hostname>:<port>/misadmin#/etc` gehen.
+1. Klicken Sie auf der Willkommensseite auf **Tools**. Oder navigieren Sie direkt dorthin, indem Sie zu `https://<hostname>:<port>/misadmin#/etc` gehen.
 1. Wählen Sie **Tools** > **Cloud Service-Konfigurationen** > **ExactTarget** aus.
-1. Klicken Sie auf **Neu**, um das Fenster **Seite erstellen **zu öffnen.
+1. Klicken Sie auf **Neu** , um das Fenster &quot;Seite erstellen&quot;zu öffnen.
 
    ![chlimage_1-34](assets/chlimage_1-34.jpeg)
 
@@ -78,6 +77,5 @@ So erstellen Sie eine ExactTarget-Konfiguration über die Tools:
 
 So fügen Sie mehrere Konfigurationen hinzu:
 
-1. Klicken Sie auf der Willkommensseite auf **Cloud-Services** und dann auf **ExactTarget**. Klicken Sie auf die Schaltfläche **Konfigurationen anzeigen**, die angezeigt wird, wenn eine oder mehrere ExactTarget-Konfigurationen verfügbar sind. Alle verfügbaren Konfigurationen werden aufgeführt.
+1. Klicken Sie auf der Willkommensseite auf **Cloud-Services** und dann auf **ExactTarget**. Klicken Sie auf die Schaltfläche **Konfigurationen anzeigen** , die angezeigt wird, wenn eine oder mehrere ExactTarget-Konfigurationen verfügbar sind. Alle verfügbaren Konfigurationen werden aufgeführt.
 1. Klicken Sie auf das Pluszeichen (**+**) neben „Verfügbare Konfigurationen“. Das Fenster **Konfiguration erstellen** wird geöffnet. Führen Sie die Schritte des vorherigen Konfigurationsverfahrens aus, um eine neue Konfiguration zu erstellen.
-
