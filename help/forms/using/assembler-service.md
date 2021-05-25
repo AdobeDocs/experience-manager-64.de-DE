@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
-translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+exl-id: 3997b034-fa24-4366-b22f-0abf2b6d1e64
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 91%
 
 ---
 
-
-# Assembler-Dienst verwenden {#using-assembler-service}
+# Assembler-Dienst verwenden  {#using-assembler-service}
 
 Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten erhalten. Jeder an den Assembler-Dienst übermittelte Auftrag umfasst ein DDX-Dokument (Document Description XML), Quelldokumente und externe Ressourcen (Zeichenfolgen und Grafiken). Weitere Informationen zum Assembler-Dienst finden Sie unter[ Übersicht über den Assembler-Dienst](/help/forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
@@ -31,8 +30,8 @@ Mithilfe des Assembler-Dienstes können Sie mindestens zwei PDF-Dokumente in ein
 
 Die folgende Abbildung zeigt, wie drei Quelldokumente zu einem einzelnen Zieldokument zusammengeführt werden.
 
-![Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-](assets/as_document_assembly.png)
-**DokumentenAbbildung:** *Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
+![Assemblieren eines einfachen PDF-Dokuments aus mehreren PDF-](assets/as_document_assembly.png)
+**DokumentenAbbildung:** *Assemblieren eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
 
 Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenführen des Dokuments verwendet wird. Er gibt den Namen der Quelldokumente, mit deren Hilfe das Zieldokument generiert werden soll, sowie den Namen des Zieldokuments an.
 
@@ -44,7 +43,7 @@ Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenfü
 </PDF>
 ```
 
-Die Dokument-Assembly erzeugt ein resultierendes Dokument, das folgende Inhalte enthält und\
+Die Dokumentzusammenführung erzeugt ein Zieldokument, das den folgenden Inhalt enthält und\
 Merkmale:
 
 * Allen Quelldokumenten (vollständig oder teilweise).
@@ -87,8 +86,8 @@ Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwende
 
 Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet.
 
-![Ein PDF-Dokument mit einer eindeutigen Kennung im ](do-not-localize/as_batesnumber.png)
-**Header des DokumentsAbbildung:** *Ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der Kopfzeile des Dokuments befindet*
+![Ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der ](do-not-localize/as_batesnumber.png)
+**Kopfzeile des Dokuments befindetAbbildung:** *Ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der Kopfzeile des Dokuments befindet*
 
 ### Reduzieren und Zusammenführen von Dokumenten {#flatten-and-assemble-documents}
 
@@ -110,8 +109,8 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Sie XDP-Dokumente zusammenfü
 
 Die folgende Abbildung zeigt, wie drei XDP-Quelldokumente zu einem einzelnen XDP-Zieldokument zusammengeführt werden. Das XDP-Zieldokument enthält drei XDP-Quelldokumente und die dazugehörigen Daten. Das Zieldokument ruft grundlegende Basisattribute von dem Basisdokument ab, bei dem es sich um das erste XDP-Quelldokument handelt.
 
-![Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-](assets/as_assembler_xdpassembly.png)
-**DokumentenAbbildung:** *Zusammenstellen eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
+![Assemblieren eines einfachen XDP-Dokuments aus mehreren XDP-](assets/as_assembler_xdpassembly.png)
+**DokumentenAbbildung:** *Assemblieren eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
 
 Nachfolgend finden Sie ein DDX-Dokument, das das oben gezeigte Ergebnis erzeugt.
 
@@ -160,8 +159,8 @@ Sie können den Wert des resolveAssets-Attributs entweder im XDP-Quell-Tag oder 
 
 #### Alle Quellverweise in einem XDP-Dokument auflösen  {#resolve-all-source-references-in-an-xdp-document}
 
-Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die Variable\
-resultierendes Dokument für alle, wie im folgenden Beispiel:
+Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die\
+Zieldokument für alle, wie im Beispiel unten gezeigt:
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -173,7 +172,7 @@ resultierendes Dokument für alle, wie im folgenden Beispiel:
 </DDX
 ```
 
-Sie können auch das Attribut für alle Quell-XDP-Dokumente unabhängig voneinander angeben, um dasselbe zu erhalten\
+Sie können auch das -Attribut für alle Quell-XDP-Dokumente unabhängig voneinander angeben, um dasselbe zu erhalten\
 Ergebnis.
 
 ```xml
@@ -279,8 +278,8 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 
 In der folgenden Abbildung wird DocA in mehrere Zieldokumente aufgeteilt. Dabei gibt das erste Lesezeichen auf Ebene 1 auf einer Seite den Anfang eines neuen Zieldokuments an.
 
-![Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere ](assets/as_intro_pdfsfrombookmarks.png)
-**DokumenteAbbildung:** *Aufteilen eines Quell-Dokuments basierend auf Lesezeichen in mehrere Dokumente*
+![Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere ](assets/as_intro_pdfsfrombookmarks.png)
+**DokumenteAbbildung:** *Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere Dokumente*
 
 Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen eines Quelldokuments Lesezeichen verwendet.
 
