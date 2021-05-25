@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
-translation-type: tm+mt
-source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
+exl-id: 38da6522-46ef-4304-a089-209db11ff32a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3298'
-ht-degree: 86%
+source-wordcount: '3301'
+ht-degree: 89%
 
 ---
-
 
 # Bearbeitbare Seitenvorlagen {#page-templates-editable}
 
@@ -34,7 +33,7 @@ Mit bearbeitbaren Vorlagen werden die Aspekte, die eine Seite bilden, innerhalb 
 
 >[!NOTE]
 >
->AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA Editor](/help/sites-developing/spa-overview.md) zu verwenden.
+>AEM 6.4.5.0 oder höher ist erforderlich, um bearbeitbare Vorlagen mit dem [SPA-Editor](/help/sites-developing/spa-overview.md) zu verwenden.
 
 >[!NOTE]
 >
@@ -53,7 +52,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 
 >[!NOTE]
 >
->Folgende Übung könnte auch für die Einrichtung einer bearbeitbaren Seitenvorlage in einem neuen Projekt von Interesse sein:\
+>Das folgende Tutorial kann auch für das Einrichten einer bearbeitbaren Seitenvorlage in einem neuen Projekt von Interesse sein:\
 >[Erste Schritte mit AEM Sites Teil 2 - Erstellen einer Basisseite und Vorlage](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Erstellen neuer Vorlagen {#creating-a-new-template}
@@ -81,10 +80,9 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
       * Wenn Sie eine Vorlage in einem benutzerdefinierten Ordner außerhalb des We.Retail-Beispielinhalts erstellen, können Sie Foundation-Komponenten wählen oder [Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) verwenden.
    * Wenn Seitenautoren die Möglichkeit haben sollen, Komponenten hinzuzufügen und zu entfernen, fügen Sie der Vorlage ein Absatzsystem hinzu.
    * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
-
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Technische Details zur Struktur finden Sie in diesem Dokument unter [Struktur](/help/sites-developing/page-templates-editable.md#structure).
+   Technische Details zur Struktur werden in diesem Dokument unter [Struktur](/help/sites-developing/page-templates-editable.md#structure) erläutert.
 
    **Richtlinien**
 
@@ -92,16 +90,14 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
       * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
    * Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
-
    Einzelheiten dazu, wie Vorlagenautoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Technische Details zu Richtlinien finden Sie in diesem Dokument unter [Inhaltsrichtlinien](/help/sites-developing/page-templates-editable.md#content-policies).
+   Technische Details zu Richtlinien werden in diesem Dokument unter [Inhaltsrichtlinien](/help/sites-developing/page-templates-editable.md#content-policies) erläutert.
 
    **Anfänglicher Inhalt**
 
    * Der anfängliche Inhalt definiert Inhalt, der angezeigt wird, wenn eine Seite anfänglich auf Grundlage einer Vorlage erstellt wird.
    * Der anfängliche Inhalt kann dann von Seitenautoren bearbeitet werden.
-
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-initial-content-author).
 
    Technische Details zu den Richtlinien werden in diesem Dokument unter [Anfänglicher Inhalt](/help/sites-developing/page-templates-editable.md#initial-content) erläutert.
@@ -110,7 +106,6 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    * Sie können das Vorlagen-Layout für verschiedene Geräte definieren.
    * Responsives Layout funktioniert für Vorlagen ebenso wie für die Seitenbearbeitung.
-
    Einzelheiten dazu, wie Vorlagenautoren Vorlagen-Layouts definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
    Technische Details zu den Richtlinien werden in diesem Dokument unter [Layout](/help/sites-developing/page-templates-editable.md#layout) erläutert.
@@ -119,29 +114,27 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    * Eine Vorlage kann aktiviert oder deaktiviert werden, um sie für Vorlagenautoren verfügbar bzw. nicht verfügbar zu machen.
    * Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verfügbar gemacht werden.
-
    Einzelheiten dazu, wie Vorlagenautoren Vorlagen aktivieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Technische Informationen zum Aktivieren einer Vorlage finden Sie in diesem Dokument unter [Aktivieren und Zulassen einer Vorlage für uns](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e
+   Technische Details zum Aktivieren von Vorlagen werden in diesem Dokument unter [Aktivieren und Zulassen von Vorlagen](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use) erläutert.
 
 1. Verwenden Sie sie, um Inhaltsseiten zu erstellen.
 
    * Wenn Sie eine Vorlage zum Erstellen einer neuen Seite verwenden, ist kein Unterschied zwischen den statischen und bearbeitbaren Vorlagen ersichtlich.
    * Für die Seitenautoren ist der Prozess transparent.
-
    Einzelheiten dazu, wie Seitenautoren Vorlagen zum Erstellen von Seiten verwenden können, finden Sie unter [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md#templates).
 
    Technische Details zu den Richtlinien werden in diesem Dokument unter [Resultierende Inhaltsseiten](/help/sites-developing/page-templates-editable.md#resultant-content-pages) erläutert.
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internalisierung werden die [lokale Anpassung-Funktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) empfohlen.
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
 
 >[!NOTE]
 >
->Vorlagen sind leistungsstarke Tools zur Optimierung Ihres Arbeitsablaufs bei der Seitenerstellung. Allerdings können zu viele Vorlagen die Autoren überwältigen und die Erstellung von Seiten verwirrend machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
+>Vorlagen sind leistungsstarke Tools zur Optimierung des Seitenerstellungs-Workflows. Allerdings können zu viele Vorlagen die Autoren überwältigen und das Erstellen von Seiten unübersichtlich machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
 >
->Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1000 Vorlagen zu verwenden.
+>Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1.000 Vorlagen zu verwenden.
 
 >[!NOTE]
 >
@@ -158,7 +151,7 @@ Zum Organisieren Ihrer Vorlagen können Sie die folgenden Ordner verwenden:
 * **global**
 * Site-spezifisch
 
-   Die Site-spezifischen Ordner, die Sie zum Organisieren der Vorlagen erstellen, werden mit einem Konto erstellt, das über Administratorrechte verfügt.
+   Die Site-spezifischen Ordner, die Sie zum Organisieren Ihrer Vorlagen erstellen, werden mit einem Konto mit Administratorrechten erstellt.
 
 >[!NOTE]
 >
@@ -189,7 +182,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 * Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
 * Verwenden des Konfigurations-Browsers
 
-### Verwenden von CRXDE Lite  {#using-crxde-lite}
+### Verwenden von CRXDE Lite   {#using-crxde-lite}
 
 1. Ein neuer Ordner (unter „/conf“) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
@@ -217,13 +210,13 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
    Die Gruppe `template-authors` ist die Standardgruppe, die zugewiesen werden muss. Weitere Informationen finden Sie im folgenden Abschnitt [ACLs und Gruppen](/help/sites-developing/page-templates-editable.md#acls-and-groups).
 
-   Ausführliche Informationen zum Verwalten und Zuweisen von Zugriffsrechten finden Sie unter [Verwaltung von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+   Ausführliche Informationen zur Verwaltung und Zuweisung von Zugriffsrechten finden Sie unter [Verwaltung von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management) .
 
 ### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
 1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurations-Browser**.
 
-   Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners **global**.
+   Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners **global** .
 
 1. Klicken Sie auf **Erstellen**.
 1. Im Dialogfeld **Konfiguration erstellen** müssen die folgenden Felder konfiguriert werden:
@@ -237,7 +230,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 >
 >Im Konfigurations-Browser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
 >
->Weitere Informationen finden Sie in der Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md).[
+>Weitere Informationen finden Sie in der [Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md) .
 
 ### ACLs und Gruppen   {#acls-and-groups}
 
@@ -245,7 +238,7 @@ Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigur
 
 Die Vorlagenordner für die [We.Retail-Referenzimplementierung ](/help/sites-developing/we-retail.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“{#the-template-authors-group}
+#### Die Gruppe „template-authors“ {#the-template-authors-group}
 
 Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
@@ -315,7 +308,7 @@ Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstell
 
 #### Alte Vorlagen unter /conf/global  {#legacy-templates-under-conf-global}
 
-Vorlagen sollten nicht mehr in `/conf/global` gespeichert werden. Bei einigen älteren Installationen gibt es jedoch möglicherweise noch Vorlagen an diesem Speicherort. NUR in solchen Legacy-Situationen sollten die folgenden `/conf/global`-Pfade explizit konfiguriert werden.
+Vorlagen sollten nicht mehr in `/conf/global` gespeichert werden. Für einige ältere Installationen gibt es jedoch möglicherweise noch Vorlagen an diesem Speicherort. NUR in solchen Legacy-Situationen sollten die folgenden `/conf/global`-Pfade explizit konfiguriert werden.
 
 <table> 
  <tbody> 
@@ -339,7 +332,7 @@ Vorlagen sollten nicht mehr in `/conf/global` gespeichert werden. Bei einigen ä
   <tr> 
    <td>Autoren von Inhalten</td> 
    <td>replizieren</td> 
-   <td>Inhaltsersteller müssen beim Aktivieren einer Seite die Vorlagen einer Seite aktivieren</td> 
+   <td>Inhaltsautoren müssen beim Aktivieren einer Seite die Vorlagen einer Seite aktivieren</td> 
   </tr> 
   <tr> 
    <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td> 
@@ -398,7 +391,7 @@ Die vordefinierten Vorlagentypen werden unter dem folgenden Pfad gespeichert:
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Der Grund dafür ist, dass der Inhalt von `/libs` beim nächsten Aktualisieren der Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Dies liegt daran, dass der Inhalt von `/libs` beim nächsten Upgrade Ihrer Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
 Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad vergleichbaren Stelle gespeichert werden:
 
@@ -437,7 +430,7 @@ Beim Erstellen einer neuen bearbeitbaren Vorlage wird der Wert aus dem Vorlagent
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage wie jede bearbeitbare Vorlage [wie hier beschrieben](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als Grundlage für Ihren Vorlagentyp dient.
+1. Erstellen Sie eine Vorlage wie jede andere bearbeitbare Vorlage [wie hier dokumentiert](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als Grundlage für Ihren Vorlagentyp dient.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem Knoten `template-types` befindet, alle `cq:template`-, `cq:templateType`- und `jcr:content`-Eigenschaften.
@@ -446,9 +439,9 @@ Sie können auch Ihren eigenen Vorlagentyp entwickeln, indem Sie eine bearbeitba
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type).
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip) herunter.
 
 ## Vorlagendefinitionen {#template-definitions}
@@ -538,7 +531,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 ### Layout {#layout}
 
-Beim Bearbeiten einer Vorlage können Sie das Layout](/help/sites-authoring/templates.md) definieren. Dabei wird [responsives Standardlayout](/help/sites-authoring/responsive-layout.md) verwendet, das auch [konfiguriert werden kann.[](/help/sites-administering/configuring-responsive-layout.md)
+Beim Bearbeiten einer Vorlage [können Sie das Layout](/help/sites-authoring/templates.md) definieren. Dabei wird [responsives Standardlayout](/help/sites-authoring/responsive-layout.md) verwendet, das auch [konfiguriert](/help/sites-administering/configuring-responsive-layout.md) sein kann.
 
 ### Inhaltsrichtlinien {#content-policies}
 
@@ -564,7 +557,7 @@ Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften e
 >
 >Für Seiten, die anhand bearbeitbarer Vorlagen erstellt wurden, steht der Designmodus im Seiten-Editor nicht zur Verfügung.
 >
->Die `policies`-Struktur einer bearbeitbaren Vorlage hat dieselbe Hierarchie wie die Designmoduskonfiguration einer statischen Vorlage unter:
+>Die Baumstruktur `policies` einer bearbeitbaren Vorlage weist dieselbe Hierarchie auf wie die Designmoduskonfiguration einer statischen Vorlage unter:
 >
 >`/etc/designs/<my-site>/jcr:content/<component-name>`
 >
@@ -598,7 +591,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
       `cq:allowedTemplates`
 
-      Auf dem Knoten `jcr:content` der erforderlichen Verzweigung.
+      Auf dem Knoten `jcr:content` des erforderlichen Zweigs.
    Beispielsweise mit dem Wert:
 
    `/conf/<your-folder>/settings/wcm/templates/.*;`
@@ -625,19 +618,19 @@ Das obige Diagramm veranschaulicht, wie Vorlagen, Inhalte und Komponenten zusamm
 
 * Controller - `/content/<my-site>/<my-page>`
 
-   Die Zielseite, die auf die Vorlage verweist. Der Inhalt steuert den gesamten Prozess. Gemäß den Definitionen greift er auf die entsprechenden Vorlagen und Komponenten zu.
+   Die resultierende Seite, die auf die Vorlage verweist. Der Inhalt steuert den gesamten Prozess. Gemäß den Definitionen greift er auf die entsprechenden Vorlagen und Komponenten zu.
 
 * Konfiguration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
 
    Die [Vorlage und zugehörige Inhaltsrichtlinien](#template-definitions) definieren die Seitenkonfiguration.
 
-* Modell - OSGi-Pakete
+* Modell - OSGi-Bundles
 
    Die [OSGI-Bundles](/help/sites-deploying/osgi-configuration-settings.md) implementieren die Funktionalität.
 
 * Anzeigen - `/apps/<my-site>/components`
 
-   Sowohl auf der Autor- als auch auf der Veröffentlichungs-Umgebung wird der Inhalt von [components](/help/sites-developing/components.md) gerendert.
+   Sowohl in der Autoren- als auch in der Veröffentlichungsumgebung wird der Inhalt von [components](/help/sites-developing/components.md) gerendert.
 
 Beim Rendern einer Seite:
 
@@ -653,4 +646,3 @@ Beim Rendern einer Seite:
 
       * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
       * Auf diese Weise können Sie mehrere Vorlagen nutzen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
-
