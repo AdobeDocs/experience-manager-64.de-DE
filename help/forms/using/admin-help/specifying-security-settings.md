@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 36a7e16f-d09d-4cc5-babd-1ccadba76e16
-translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+exl-id: 0bda2e58-9470-48fa-a60b-04a1a32689bb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 92%
 
 ---
-
 
 # Sicherheitseinstellungen angeben {#specifying-security-settings}
 
@@ -27,4 +26,3 @@ Mit Forms können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Dienste > Forms]**.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-
