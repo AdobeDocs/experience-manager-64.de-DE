@@ -10,7 +10,6 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1
 exl-id: 535d2a9f-852c-48ea-89ec-31de3a891666
-translation-type: tm+mt
 source-git-commit: 82f31577e41e1cd484ee3a8d22bbc11756ff23a2
 workflow-type: tm+mt
 source-wordcount: '112'
@@ -22,6 +21,6 @@ ht-degree: 92%
 
 Im Abschnitt [Erstellungsumgebung und Tools](/help/sites-authoring/author-environment-tools.md) finden Sie weitere Informationen zur Nutzung des Content Finders zum Finden und Verwenden von Assets bei der Bearbeitung von Seiten.  AEM Assets bietet andere Methoden zum Arbeiten mit Assets:
 
-* [Hinzufügen von Dynamic Media Classic-Funktionen zu einer Seite](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
+* [Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Arbeiten mit Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Benennungskonventionen für Assets](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
