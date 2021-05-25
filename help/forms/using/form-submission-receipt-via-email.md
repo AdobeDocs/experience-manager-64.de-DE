@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
-translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+exl-id: e850d2a5-cb5f-4bd4-81dd-57951923b6d3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 89%
 
 ---
 
-
-# Senden einer Formularsendebestätigung per E-Mail {#sending-a-form-submission-acknowledgement-via-email}
+# Senden einer Formularsendebestätigung per E-Mail  {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Senden der Daten adaptiver Formulare {#adaptive-form-data-submission}
 
@@ -29,7 +28,7 @@ In diesem Artikel werden die Schritte erläutert, mit denen die E-Mail-Aktion f�
 
 >[!NOTE]
 >
->Sie können auch die Aktion **PDF-Datei per E-Mail versenden** verwenden, um das ausgefüllte Formular per E-Mail als PDF-Anhang zu senden. Die für diese Aktion verfügbaren Konfigurationsoptionen sind mit den Optionen identisch, die für die E-Mail-Aktion verfügbar sind. Die E-Mail-PDF-Aktion ist nur für XFA-basierte adaptive Formulare verfügbar.
+>Sie können auch die Aktion **E-Mail-PDF** verwenden, um das ausgefüllte Formular per E-Mail als PDF-Anhang zu senden. Die für diese Aktion verfügbaren Konfigurationsoptionen sind mit den Optionen identisch, die für die E-Mail-Aktion verfügbar sind. Die E-Mail-PDF-Aktion ist nur für XFA-basierte adaptive Formulare verfügbar.
 
 ## E-Mail-Aktion {#email-action}
 
@@ -49,7 +48,7 @@ Mit der E-Mail-Aktion kann ein Autor automatisch eine E-Mail an einen oder mehre
 
    ![Dialogfeld „Komponente bearbeiten“ für ein adaptives Formular](assets/start_of_adp_form.png)
 
-1. Wählen Sie die Registerkarte **Übermittlungsaktionen** und wählen Sie **E-Mail-Aktion** aus der Dropdown-Liste Übermittlungsaktion.
+1. Wählen Sie den Tab **Aktionen senden** aus und wählen Sie **E-Mail-Aktion** aus der Dropdown-Liste Übermittlungsaktion .
 
    Auf der Registerkarte werden die Optionen angezeigt, mit denen die E-Mail-Aktion für das aktuelle Formular konfiguriert werden.
 
@@ -75,7 +74,7 @@ Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die
 
 In der Registerkarte „E-Mail-Aktion“ können Sie Platzhalter verwenden, die verarbeitet werden, wenn die Aktion ausgeführt wird. Das bedeutet, dass die Header der E-Mail (wie Mailto, CC, BCC, Betreff) erstellt werden, wenn der Benutzer das Formular sendet.
 
-Um einen Platzhalter zu definieren, geben Sie `${<field name>}` in ein Feld auf der Registerkarte &quot;Übermittlungsaktionen&quot;ein.
+Um einen Platzhalter zu definieren, geben Sie `${<field name>}` in ein Feld auf der Registerkarte &quot;Aktionen übermitteln&quot;an.
 
 Beispiel: Wenn das Formular das Feld **E-Mail-Adresse** mit dem Namen `email_addr` zur Erfassung der E-Mail-ID eines Benutzers enthält, können Sie Folgendes im Feld „Mailto“, „CC“ oder „BCC“ angeben.
 
@@ -102,4 +101,3 @@ Beispiel:
 >[!NOTE]
 >
 >Felder in wiederholbaren Bereichen können nicht als variable Platzhalter verwendet werden.
-
