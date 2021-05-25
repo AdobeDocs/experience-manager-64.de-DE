@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 100%
 
 ---
-
 
 # Beispiele für ContextHub-Store-Kandidaten {#sample-contexthub-store-candidates}
 
@@ -114,7 +113,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 >
 >Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen. In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
-## Beispiel-Store-Kandidat „contexthub.surferinfo“  {#contexthub-surferinfo-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.surferinfo“   {#contexthub-surferinfo-sample-store-candidate}
 
 Speichert Informationen über die aktuelle Client-Umgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
