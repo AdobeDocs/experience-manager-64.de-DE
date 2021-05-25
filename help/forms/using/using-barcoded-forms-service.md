@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
-translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+exl-id: 47d16792-c418-45fe-aa79-e66876d6d352
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 92%
 
 ---
-
 
 # Barcoded Forms-Dienst {#barcoded-forms-service}
 
@@ -93,7 +92,7 @@ Der Barcoded Forms-Dienst gibt nach Dekodierung der Strichcodes das folgende XML
 
 ## Überlegungen zum Dienst {#considerations}
 
-### Workflows, die mit Strichcode versehene Formulare verwenden {#workflows-that-use-barcoded-forms}
+### Workflows, die mit Strichcode versehene Formulare verwenden  {#workflows-that-use-barcoded-forms}
 
 Formularentwickler erstellen mithilfe von Designer interaktive mit Strichcodes versehene Formulare. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).) Wenn ein Benutzer ein mit Strichcode versehenes Formular mit Adobe Reader oder Acrobat ausfüllt, wird der Strichcode automatisch aktualisiert, um die Formulardaten zu verschlüsseln.
 
@@ -123,16 +122,16 @@ Beim Einsatz der BCF-API sollten Sie die folgenden Einschränkungen berücksicht
 
 ### Weitere Einschränkungen {#other-limitations}
 
-Beachten Sie bei Verwendung des Barcoded Forms-Dienstes auch die folgenden Einschränkungen:
+Beachten Sie außerdem die folgenden Einschränkungen bei der Verwendung des Barcoded Forms-Dienstes:
 
 * Der Dienst unterstützt AcroForms und statische Formulare mit 2D-Strichcodes, die mit Adobe Reader oder Acrobat gespeichert wurden, in vollem Umfang. Für 1D-Strichcodes müssen Sie das Formular jedoch reduzieren oder es als gescanntes PDF- oder TIFF-Dokument zur Verfügung stellen.
 * Dynamische XFA-Formulare werden nicht in vollem Umfang unterstützt. Für die ordnungsgemäße Dekodierung eines 1D- und 2D-Strichcodes in einem dynamischen Formular müssen Sie das Formular entweder reduzieren oder es als gescanntes PDF- oder TIFF-Dokument bereitstellen.
 
-Der Dienst kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen eingehalten werden. Weitere Informationen zum Erstellen interaktiver mit Strichcode versehener Formulare finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).
+Der Dienst kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen eingehalten werden. Weitere Informationen zum Erstellen interaktiver Barcoded Forms finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Konfigurieren Sie die Eigenschaften des Dienstes   {#configureproperties}
 
-Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole ist `https://[host]:[port]/system/console/configMgr`.
+Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole lautet `https://[host]:[port]/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using}
 
@@ -235,7 +234,7 @@ Der folgende Beispielcode dekodiert einen Barcode in einem Dokument und speicher
 
 Die Ausführung des Barcoded Forms-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet. Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird.
 
-Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokument-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
+Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokumentobjekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
 
 Der folgende Workflowprozess dekodiert einen Barcode in einem Dokument und speichert das Ergebnis auf der Festplatte. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
 
@@ -304,4 +303,3 @@ function saveW3CDocument(inputDoc, filePath) {
    os.close();
 }
 ```
-
