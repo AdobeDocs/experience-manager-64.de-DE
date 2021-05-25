@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: f8c6f4e3-4c2d-4843-8f29-6d3297e57c89
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 98%
 
 ---
-
 
 # Lokale Berechtigungen verwalten {#managing-local-credentials}
 
@@ -28,7 +27,7 @@ Sie können eine beliebige Anzahl von Berechtigungen im- und exportieren. Wenn S
 
 Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie unter [Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Berechtigung importieren {#import-a-credential}
+## Berechtigung importieren  {#import-a-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf „Importieren“. Wählen Sie unter „Trust Store-Typ“ eine der folgenden Optionen:
@@ -72,4 +71,3 @@ Nachdem eine Berechtigung importiert wurde, können der Aliasname und der Trust 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Aktivieren Sie die Kontrollkästchen der Berechtigungen, die gelöscht werden sollen.
 1. Klicken Sie auf „Löschen“ und dann auf „OK“.
-
