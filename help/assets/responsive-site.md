@@ -1,15 +1,14 @@
 ---
 title: Bereitstellen von optimierten Bildern für eine responsive Site
-description: So verwenden Sie die Funktion "Responsive Code"in Dynamic Media, um optimierte Bilder bereitzustellen
+description: Verwendung der Funktion für responsiven Code in Dynamic Media zur Bereitstellung optimierter Bilder
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 exl-id: 36bb526c-a6d9-4296-8318-97ac72d6b3ba
-feature: Publishing
+feature: Veröffentlichung
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '335'
@@ -41,7 +40,7 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
    >
    >Das ausgewählte Asset *und* die ausgewählte Bildvorgabe oder Viewer-Vorgabe müssen veröffentlicht werden, um die Schaltfläche **[!UICONTROL URL]** oder **[!UICONTROL RESS]** verfügbar zu machen.
    >
-   >Für den Dynamic Media-Hybridmodus müssen Sie Bildvorgaben veröffentlichen. Dynamic Media - Scene7-Modus veröffentlicht Bildvorgaben automatisch.
+   >Für den Hybridmodus von Dynamic Media müssen Sie Bildvorgaben veröffentlichen. Im Modus Dynamic Media - Scene7 werden Bildvorgaben automatisch veröffentlicht.
 
 1. Tippen Sie auf **[!UICONTROL RESS]**.
 
