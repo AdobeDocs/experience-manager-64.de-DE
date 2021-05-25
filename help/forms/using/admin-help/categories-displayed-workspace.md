@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
-translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+exl-id: 5a2bd0ea-2c5e-4e0c-aff1-dba06be6a5b7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 97%
 
 ---
-
 
 # Die in Workspace angezeigten Kategorien verwalten {#managing-the-categories-displayed-in-workspace}
 
@@ -24,15 +23,15 @@ In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien i
 
 Beim Angeben von Kategorienamen müssen diese so erstellt werden, dass sie im Navigationsbereich von Workspace ordnungsgemäß angezeigt werden. Der linke Navigationsbereich hat standardmäßig eine feste Breite von 210 Pixel, was ca. 24 Zeichen entspricht. Wenn der von Ihnen angegebene Wert nicht in das Feld mit fester Länge im linken Navigationsbereich passt, wird er abgeschnitten. Der vollständige Name wird nur angezeigt, wenn Sie den Mauszeiger darüber positionieren. Versuchen Sie nach Möglichkeit, das Abschneiden von Kategorienamen zu vermeiden. Die folgenden Beispiele zeigen passende und abgeschnittene Kategorienamen:
 
-**Passender Name der Kategorie:** Besuch und Urlaub
+**Passender Kategoriename:** Besuch und Urlaub
 
-**Abgeschnittener Name der Kategorie:** An- und Abwesenheit (USA)
+**Kategoriename, der abgeschnitten ist:** Besuch &amp; Urlaub (USA)
 
 In Workspace werden Prozesse in einer Kategorie zumeist als Karten auf der Seite „Prozess starten“ angezeigt. Im Allgemeinen können auf dem Bildschirm für eine Kategorie sechs Karten angezeigt werden, bevor der Benutzer einen Bildlauf zum Anzeigen der restlichen Karten ausführen muss. Da das Auffinden eines Prozesses durch einen Bildlauf erschwert wird, begrenzen Sie ggf. jede Kategorie auf sechs Prozesse bzw. (abhängig von Ihrer Auflösung) auf die Anzahl von Prozessen, die ohne Bildlauf auf dem Bildschirm angezeigt werden kann.
 
 Bei Verwendung von MySQL als AEM Forms-Datenbank kann Administration Console nicht zwischen zwei Kategorienamen unterscheiden, die sich nur in der Verwendung erweiterter Zeichen unterscheiden. Wenn Sie beispielsweise eine Kategorie namens „abcde“ und eine namens „âbcdè“ erstellen, werden diese Namen als identisch angesehen.
 
-## Eine Kategorie hinzufügen {#add-a-category}
+## Eine Kategorie hinzufügen  {#add-a-category}
 
 1. Wählen Sie in Administration Console „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf Hinzufügen. Wenn Sie eine Unterkategorie hinzufügen möchten, wählen Sie ein Kategorie und klicken Sie dann auf „Hinzufügen“.
@@ -53,4 +52,3 @@ Sie können nur nicht verwendete Kategorien entfernen.
 
 1. Wählen Sie in Administration Console „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Aktivieren Sie auf der Seite „Kategorieverwaltung“ das Kontrollkästchen für die zu entfernende Kategorie und klicken Sie auf „Entfernen“. Die Kategorie wird nicht mehr angezeigt.
-
