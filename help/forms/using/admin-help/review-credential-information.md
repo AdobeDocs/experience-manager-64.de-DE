@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: abd62cca-edf0-4b44-94c3-7af3116b0c54
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 93%
 
 ---
-
 
 # Informationen zur Verwendung der Berechtigung überprüfen {#review-credential-use-information}
 
@@ -24,7 +23,7 @@ Die Berechtigung enthält Informationen zu ihrem vorgesehenen Zweck, auf die üb
 
 1. Öffnen Sie einen Webbrowser und geben Sie diese URL ein:
 
-   http://localhost:*[Anschluss]*/ReaderExtensions (wobei *[Anschluss]* die Anschlussnummer Ihres Anwendungsservers ist)
+   http://localhost:*[port]*/ReaderExtensions (wobei *[port]* die Anschlussnummer Ihres Anwendungsservers ist)
 
 1. Melden Sie sich mit dem standardmäßigen Benutzernamen und Kennwort an:
 
@@ -41,4 +40,3 @@ Die Berechtigung enthält Informationen zu ihrem vorgesehenen Zweck, auf die üb
 >[!NOTE]
 >
 >Das Ablaufdatum finden Sie auch in Administration Console auf der Seite „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“ unter „Ablaufdatum“.
-
