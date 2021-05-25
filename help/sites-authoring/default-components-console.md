@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 95%
 
 ---
 
-
 # Komponentenkonsole{#components-console}
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen. 
 
-Sie können von **Tools** -> **Allgemein** -> **Komponenten** aus aufgerufen werden. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
+Der Zugriff erfolgt über **Tools** -> **Allgemein** -> **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -74,4 +73,3 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
    Etwaige vom Entwickler [für eine Komponente bereitgestellte Dokumentation](/help/sites-developing/developing-components.md#documenting-your-component) wird auf der Registerkarte **Dokumentation** angezeigt. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
-
