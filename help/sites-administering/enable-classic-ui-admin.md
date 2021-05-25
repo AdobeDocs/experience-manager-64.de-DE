@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 72%
 
 ---
 
-
 # Admin Consolen{#admin-consoles}
 
 In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzeroberfläche über die Admin Consoles nun deaktiviert. Aus diesem Grund werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers auf bestimmte Konsolensymbole angezeigt wurden, um den Zugriff auf die klassische Benutzeroberfläche zu ermöglichen, nicht mehr eingeblendet.
 
-![screen_shot_2018-03-23at11956](assets/screen_shot_2018-03-23at111956.png)
+![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln erneut aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darüber bewegt wird.
+Jede Konsole, die über eine klassische Benutzeroberflächenversion in `/libs/cq/core/content/nav` verfügt, kann einzeln wieder aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darauf bewegt wird.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
-1. Suchen Sie mithilfe von CRXDE Lite den Knoten, der der Admin-Konsole entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
+1. Suchen Sie mithilfe von CRXDE Lite den Knoten, der der Admin Console entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
 
    `/libs/cq/core/content/nav`
 
@@ -40,7 +39,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten**. Beispiel:
+1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten** . Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`
@@ -52,6 +51,6 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
 1. Die Option **Klassische Benutzeroberfläche** ist in der Admin Console jetzt wieder als Popover-Option verfügbar.
 
-   ![screen_shot_2018-03-23at11924](assets/screen_shot_2018-03-23at111924.png)
+   ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
 Wiederholen Sie diese Schritte für jede Konsole, für die Sie den Zugriff auf die klassische Benutzeroberfläche wieder aktivieren möchten.
