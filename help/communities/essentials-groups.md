@@ -9,30 +9,29 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 357a130a-af60-4e86-9161-5dc7056aa052
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 2%
 
 ---
 
+# Community-Gruppengrundlagen {#community-group-essentials}
 
-# Community-Gruppen-Essentials {#community-group-essentials}
+Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, von autorisierten Benutzern aus der Veröffentlichungs- und Autorenumgebung dynamisch auf einer Community-Site erstellt zu werden.
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern aus der Umgebung &quot;Veröffentlichen&quot;und &quot;Autor&quot;erstellt zu werden.
+Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können Gruppen in anderen Gruppen verschachtelt werden
 
-Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können Gruppen innerhalb anderer Gruppen verschachtelt werden
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
-
-### Community Groups Member Liste {#community-groups-member-list}
+### Community-Gruppen Mitgliederliste {#community-groups-member-list}
 
 <table> 
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 
-   <td>social/group/components/hbs/communityGroupmitgliedlist</td> 
+   <td>social/group/components/hbs/communityGroupmemberList</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
@@ -82,28 +81,28 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können
 
 * [Community-Gruppen-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Community-Gruppen-Endpunkte](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Community-Gruppenendpunkte](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
 ### Gruppenfunktion {#groups-function}
 
-Eine Community-Sitestruktur, die eine [Gruppenfunktion](functions.md#groups-function) enthält, unterstützt die Erstellung neuer `community groups` aus den Umgebung &quot;Veröffentlichen&quot;und &quot;Verfassen&quot;. Die erstellte Community-Gruppe enthält eine `community groups member list`-Komponente, die die Gruppenmitglieder Liste.
+Eine Community-Site-Struktur mit der Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
 
-Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellen, können für die Funktion &quot;Gruppen&quot;konfiguriert werden, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Mindestens eine [Community-Gruppenvorlage](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellt, kann für die Funktion Gruppen konfiguriert werden, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
-Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site eine Auswahl an Designs angezeigt wird, wie im Abschnitt [Community-Gruppen](creating-groups.md) für Autoren dargestellt.
+Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site ein Design angezeigt wird, wie im Abschnitt [Community-Gruppen](creating-groups.md) für Autoren dargestellt.
 
 ### Verschachtelte Gruppen {#nested-groups}
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, dass eine Funktion &quot;Gruppen&quot;in eine Gruppenvorlage eingeschlossen wird, wodurch verschachtelte Gruppen (Unter-Communities) möglich sind.
+Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, eine Gruppenfunktion in eine Gruppenvorlage aufzunehmen, um verschachtelte Gruppen (Untergruppen) zu ermöglichen.
 
-Wenn eine Community-Site oder Gruppenvorlage die Funktion Gruppen enthält, können Sie
+Wenn eine Community-Site oder eine Gruppenvorlage die Funktion Gruppen enthält, können Sie
 
-* Erstellen einer Unter-Community in der Autorenversion-Umgebung
-* Erstellen Sie eine Gruppe in der Umgebung &quot;Veröffentlichen&quot;, wenn diese für die
+* Erstellen einer Unter-Community in der Autorenumgebung
+* Erstellen Sie eine Gruppe in der Veröffentlichungsumgebung, sofern diese für die Zulassung konfiguriert ist.
 
-Wenn Sie eine Gruppe in der Autorengruppe erstellen, müssen Sie zuerst die Community-Umgebung veröffentlichen und dann die Gruppe veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Untergruppen der Community erstellt werden, in denen die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
+Beim Erstellen einer Gruppe in der Autorenumgebung ist es erforderlich, zuerst die Community-Site zu veröffentlichen und dann die Gruppe zu veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Mitgliedergruppen der Unter-Community erstellt werden, für die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
 
 ## Links und zugehörige Informationen {#links-and-related-information}
 
@@ -111,4 +110,3 @@ Wenn Sie eine Gruppe in der Autorengruppe erstellen, müssen Sie zuerst die Comm
 * [Communities-Gruppenkonsole](groups.md)
 * [Gruppenfunktion](functions.md#groups-function)
 * [Gruppenvorlagen](tools-groups.md)
-
