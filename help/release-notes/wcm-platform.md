@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
-translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 83%
 
 ---
 
-
-# AEM Foundation und Repository {#aem-foundation-repository}
+# AEM Foundation und Repository  {#aem-foundation-repository}
 
 ## Liste der Änderungen  {#list-of-changes}
 
@@ -36,7 +35,7 @@ ht-degree: 83%
    * Fortlaufende Revisionsbereinigung für MongoMK ersetzt geplante Revisionsbereinigung.
 
 * Verbesserte Effizienz bei der Revisionsbereinigung von Dokument-Knotenspeichern.
-* Eine vollständige Übersicht der behobenen Probleme finden Sie unter [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) und [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt).
+* Unter [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) und [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) finden Sie einen vollständigen Überblick über behobene Probleme.
 
 >[!CAUTION]
 >
@@ -72,7 +71,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, während [Lesen Sie mehr](/help/sites-deploying/ui-recommendations.md).
+>* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, obwohl sie veraltet ist [mehr dazu](/help/sites-deploying/ui-recommendations.md).
 
 >
 
@@ -108,18 +107,18 @@ ht-degree: 83%
 * Versionsbereinigungskonfiguration ermöglicht das Vorhalten einer minimalen Anzahl von Versionen.
 * Versionsbereinigung stoppt bei Ende eines Wartungsfensters. Sie kann auch manuell gestartet und gestoppt werden und wird beim nächsten Start inkrementell fortgesetzt.
 
-### Aktualisierung  {#upgrade}
+### Aktualisierung {#upgrade}
 
 * Abwärtskompatibilität: Durch die Abwärtskompatibilität von Version 6.4 bleibt Ihr benutzerdefinierter Code in den meisten Fällen kompatibel. Außerdem verringert sich dadurch der mit dem Upgrade verbundene Aufwand.
 * Analyse der Upgrade-Komplexität: Ein neues Mustererkennungstool analysiert die Komplexität von Upgrades.
 * Nachhaltige Upgrades: Die eingeführte API-Oberfläche und Inhaltsklassifizierung erleichtert Ihnen die Umsetzung von Best Practices für effiziente und nahtlose Upgrades auf die nächste Version während Ihres gesamten Entwicklungszyklus.
-* Repository-Umstrukturierung: Umfassende Umstrukturierung (vor allem /etc) zur Erleichterung von Upgrades und zur Förderung bewährter Verfahren bei der Implementierung. [Weitere Informationen.](/help/sites-deploying/repository-restructuring.md)
-* Weitere Informationen zu diesen Funktionen finden Sie in der [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md).
+* Repository-Neustrukturierung: Erhebliche Umstrukturierung (in erster Linie /etc) zur Erleichterung von Upgrades und zur Förderung der Best Practices bei der Implementierung. [Weitere Informationen.](/help/sites-deploying/repository-restructuring.md)
+* Weitere Informationen zu diesen Funktionen finden Sie in der [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md) .
 
 ### Cloud Services {#cloud-services}
 
-* Viele Cloud Services können jetzt über die Touch-Benutzeroberfläche konfiguriert werden. Die restlichen Cloud Services können unter der Karte &quot;Legacy&quot;konfiguriert werden.
-* Sites und Assets-Ordner können mit Cloud Services konfiguriert werden, die kontextabhängig geladen werden.
+* Viele Cloud Services können jetzt über die Touch-optimierte Benutzeroberfläche konfiguriert werden. die restlichen Daten können auf der Karte Legacy Cloud Services konfiguriert werden.
+* Sites- und Asset-Ordner können mit Cloud Services konfiguriert werden, die kontextabhängig geladen werden.
 
 ### Sicherheit {#security}
 
@@ -130,4 +129,3 @@ ht-degree: 83%
 
 * Workflow-Editor der Touch-optimierten Benutzeroberfläche zur effizienteren Verwaltung von Workflow-Modellen.
 * Unterstützung für die Bereinigung von Projektaufgaben in Wartungsaufgaben.
-
