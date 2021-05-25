@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
-translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+exl-id: 99efe308-bf8a-41ad-8203-b57fce20820c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 97%
 
 ---
 
-
-# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher  {#adding-contexthub-to-pages-and-accessing-stores}
+# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher   {#adding-contexthub-to-pages-and-accessing-stores}
 
 Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 
@@ -168,7 +167,7 @@ Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 * „female“ oder „male“ wird auf der Grundlage des Datenelements `gender` des Stores [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) bestimmt.
 
 * Das Alter wird auf der Grundlage des Datenelements „age“ des Stores „profile“ bestimmt.
-* Die Jahreszeit wird aus dem Breitendatenelement des Speichers [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) und dem Monatsdatenelement des surferinfo-Stores ermittelt.
+* Die Staffel wird aus dem Datenelement &quot;latitude&quot;des Stores [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) und dem Datenelement &quot;month&quot;des Stores &quot;surferinfo&quot;bestimmt.
 
 >[!WARNING]
 >
