@@ -8,20 +8,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f855d3f9-cf3c-4883-b82b-d607250c3dae
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 82%
 
 ---
 
-
 # HTML5-Vorschau eines XDP-Formulars generieren {#generate-html-preview-of-an-xdp-form}
 
 Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Wiedergabe eines Formulars, sondern auch eine HTML5-Wiedergabe davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular anzuzeigen, wie es im Browser angezeigt werden wird.
 
-## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer {#html-preview-of-forms-in-forms-designer}
+## Aktivieren Sie die HTML-Vorschau für XDP-Formulare in Designer  {#html-preview-of-forms-in-forms-designer}
 
 Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivieren, müssen Sie folgende Konfigurationen durchführen:
 
@@ -31,9 +30,9 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 ### Apache Sling Authentifizierungsdienst konfigurieren{#configure-apache-sling-authentication-service} 
 
-1. Gehen Sie zu `https://[server]:[port]/system/console/configMgr` unter AEM Forms, das auf OSGi ausgeführt wird, oder
+1. Wechseln Sie zu `https://[server]:[port]/system/console/configMgr` auf AEM Forms, das auf OSGi ausgeführt wird, oder
 
-   `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, das auf JEE läuft.
+   `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, die auf JEE ausgeführt wird.
 
 1. Wählen Sie die Konfiguration **Apache Sling-Authentifizierungsdienst**, um ihn im Modus „Bearbeiten“ zu öffnen.
 
@@ -70,26 +69,26 @@ Der[ abgesicherte Modus](/help/forms/using/get-xdp-pdf-documents-aem.md) ist sta
 ### Details zum AEM Forms-Server bereitstellen  {#provide-details-of-aem-forms-server}
 
 1. Navigieren Sie in Designer zu **Werkzeuge**> **Optionen**.
-1. Wählen Sie im Fenster &quot;Optionen&quot;die Seite **Serveroptionen** aus, geben Sie die folgenden Details ein und klicken Sie auf **OK**.
+1. Wählen Sie im Fenster Optionen die Seite **Serveroptionen** aus, geben Sie die folgenden Details ein und klicken Sie auf **OK**.
 
    * **Server URL**: AEM Forms-Server URL.
-   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502. 
-   * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
+   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.
+   * **HTML-Vorschaukontext:** Pfad des Profils für die Wiedergabe von XFA-Formularen. Die folgenden Standardprofile werden verwendet, um eine Vorschau des Formulars in Designer anzuzeigen. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
    * **Forms Manager Context:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
       * `/aem/forms` (AEM Forms unter OSGi)
-      * `/lc/forms` (AEM Forms zu JEE)
+      * `/lc/forms` (AEM Forms on JEE)
 
-   **Hinweis:***Stellen Sie sicher, dass AEM Forms ausgeführt wird. Die HTML-Vorschau stellt eine Verbindung zum CRX-Server mit einer Vorschau her, die* generate *enthält.*
+   **Hinweis:***Stellen Sie sicher, dass AEM Forms ausgeführt wird. Die HTML-Vorschau stellt eine Verbindung zum CRX-Server her mit* generate *einer Vorschau.*
 
    ![AEM Forms Designer-Optionen ](assets/server_options.png)
 
    AEM Forms Designer-Optionen
 
-1. Um ein Formular in HTML Vorschau, klicken Sie auf die Registerkarte **Vorschau-HTML**.
+1. Um eine Vorschau eines Formulars in HTML anzuzeigen, klicken Sie auf die Registerkarte **HTML-Vorschau** .
 
    >[!NOTE]
    >
