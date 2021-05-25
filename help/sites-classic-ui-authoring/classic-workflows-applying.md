@@ -1,6 +1,6 @@
 ---
-title: 'Anwenden von Workflows auf Seiten  '
-seo-title: 'Anwenden von Workflows auf Seiten  '
+title: Anwenden von Workflows auf Seiten
+seo-title: Anwenden von Workflows auf Seiten
 description: Workflows können entweder aus der Websites-Konsole oder, beim Bearbeiten einer Seite, aus dem Sidekick gestartet werden.
 seo-description: Workflows können entweder aus der Websites-Konsole oder, beim Bearbeiten einer Seite, aus dem Sidekick gestartet werden.
 uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: f10680e5-e8ae-49a0-ae52-3aa1f22b2d3e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
 
 ---
 
-
-# Anwenden von Workflows auf Seiten  {#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten{#applying-workflows-to-pages}
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
@@ -34,7 +33,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 >
 >AEM-Administratoren können Workflows mithilfe [mehrerer anderer Methoden](/help/sites-administering/workflows-starting.md) starten.
 
-## Anwenden von Workflows {#applying-workflows}
+## Anwenden von Workflows  {#applying-workflows}
 
 Workflows können entweder aus der Websites-Konsole oder, beim Bearbeiten einer Seite, aus dem Sidekick gestartet werden.
 
@@ -54,9 +53,8 @@ Die Spalte **Status** in der Konsole **Websites** gibt an, ob ein Workflow auf e
 1. Öffnen Sie die Websites-Konsole. 
 1. Öffnen Sie die gewünschte Seite.
 1. Wählen Sie die Registerkarte „Workflow“ aus dem Sidekick aus.
-1. Erweitern Sie das Dialogfeld **Workflow**, in dem Sie **Workflow** auswählen und optional **Workflow-Titel** und **Kommentar** eingeben können.
+1. Erweitern Sie das Dialogfeld **Workflow**, sodass Sie den **Workflow** auswählen und optional **Workflow-Titel** und **Kommentar** eingeben können.
 
-   ![workflow startsidekick](assets/workflowstartsidekick.png)
+   ![workflow startsikick](assets/workflowstartsidekick.png)
 
 1. Klicken Sie auf **Workflow starten**, um eine neue Workflow-Instanz mit den Eigenschaften zu starten, die Sie konfiguriert haben, und mit der aktuellen Seite als Payload. Jetzt wird der Workflow ausgeführt.
-
