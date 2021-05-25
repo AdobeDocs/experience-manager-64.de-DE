@@ -7,14 +7,13 @@ uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 92ad5d8b-fc8c-4502-ab62-d27eb9784b65
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 75%
 
 ---
-
 
 # FOIA-Anleitung zur We.Gov-Referenzwebsite {#we-gov-reference-site-foia-walkthrough}
 
@@ -22,7 +21,7 @@ ht-degree: 75%
 
 Richten Sie Ihre Referenz-Website zu We.Gov ein wie in [Einrichten und Konfigurieren von AEM Forms-Referenzseiten](/help/forms/using/setup-reference-sites.md) beschrieben.
 
-## Freedom of Information Act-Szenario für Referenzwebsite {#reference-site-freedom-of-information-act-scenario}
+## Freedom of Information Act-Szenario für Referenzwebsite  {#reference-site-freedom-of-information-act-scenario}
 
 We.Gov ist ein vom Staat geleitetes Unternehmen, bei dem sich Adoptiveltern für Kindergeld registrieren können, wenn sie ein Kind adoptiert haben. We.Gov ermöglicht auch Eltern, Informationen von den folgenden US-Regierungsstellen gemäß des Freedom of Information Act (Gesetz zur Informationsfreiheit) anzufordern:
 
@@ -32,7 +31,7 @@ We.Gov ist ein vom Staat geleitetes Unternehmen, bei dem sich Adoptiveltern für
 * Department of the Navy
 * Environmental Protection Agency
 
-Weitere Informationen zum Gesetz zur Informationsfreiheit finden Sie unter [www.foia.gov](https://www.foia.gov).
+Weitere Informationen zum Freedom of Information Act finden Sie unter [www.foia.gov](https://www.foia.gov).
 
 Das Szenario schließt folgende Personen ein:
 
@@ -42,22 +41,22 @@ Das Szenario schließt folgende Personen ein:
 
 ## Sarah stellt den Antrag auf Informationsherausgabe gemäß FOIA.  {#sarah-initiates-request-for-information-under-foia}
 
-Im Rahmen des Gesetzes über Informationsfreiheit beantragt Sarah eine Kopie der Fallprotokolle der Verwaltung für Kinder und Familien für die Jahre (FY) 2013 bis 2016. Sarah sendet diesen Antrag an das Departent of Justice - Office Of Information Policy und gibt dabei an, dass sie bereit ist, bis zu 100 USD für Druck- und Portokosten zu bezahlen.
+Nach dem Freedom of Information Act fordert Sarah eine Kopie der Fallprotokolle von Administration for Children and Families für die Jahre (FY) 2013 bis 2016 an. Sarah sendet diesen Antrag an das Departent of Justice - Office Of Information Policy und gibt dabei an, dass sie bereit ist, bis zu 100 USD für Druck- und Portokosten zu bezahlen.
 
 ### Funktionsweise {#how-it-works}
 
 ### Sehen Sie selbst{#see-it-yourself} 
 
-Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/wegov`. Klicken Sie auf der We.Gov-Website auf „Applications“ > „All Applications“ (Anträge > Alle Anträge). Tippen Sie auf der Seite &quot;Alle Anwendungen&quot;unter &quot;FOIA-Anforderung beantragen&quot;auf &quot;Übernehmen&quot;.
+Öffnen Sie in Ihrem Browser `https://<hostname>:<PublishPort>/wegov`. Klicken Sie auf der We.Gov-Website auf „Applications“ > „All Applications“ (Anträge > Alle Anträge). Tippen Sie auf der Seite Alle Anwendungen unter Anwendung für FOIA-Anfrage auf Anwenden .
 
 ## Sarah stellt ihren Antrag auf Informationen gemäß FOIA.{#sarah-starts-her-application-for-information-under-foia}
 
-Sarah klickt auf **Apply** und auf der Seite &quot;Anforderungsformular für Informationsfreiheit&quot;gibt Sarah Informationen wie die folgenden ein:
+Sarah klickt auf **Apply** und gibt auf der Seite &quot;Freedom of Information Act Request Form&quot;Informationen ein, darunter:
 
-* **Agentur:** Sarah gibt die Agentur an, an die das Ersuchen gerichtet wurde, als &quot;Justizministerium - Amt für Informationspolitik&quot;.
+* **Agentur:** Sarah gibt die Agentur an, an die der Antrag gerichtet war, als Justizministerium - Amt für Informationspolitik.
 
 * **Will Pay Up To** (Zahle bis zu): Sarah gibt an, dass sie bereit ist, bis zu 100 USD für Druck- und Portoausgaben zu zahlen.
-* **Bitte beschreiben Sie die Anforderung im Detail**: Sarah gibt an, dass &quot;für die Steuerjahre 2013 bis 2016 eine Kopie der Fallprotokolle der Administration für Kinder und Familien angefordert werden muss&quot;.
+* **Beschreiben Sie die Anforderung detailliert**: Sarah gibt &quot;Anfordern einer Kopie der Fallprotokolle von Administration for Children and Families für die Geschäftsjahre 2013 bis 2016&quot;an.
 
 ![Anfordern einer Kopie der Fallprotokolle von Administration for Children and Families für die Geschäftsjahre 2013 bis 2016](assets/sarahfiosform.png)
 
@@ -67,7 +66,7 @@ Sarah kann jederzeit auf „Save“ (Speichern) tippen, um den Entwurf des Formu
 
 >[!NOTE]
 >
->Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldeangaben sind `srose/password`.
+>Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldedaten sind `srose/password`.
 
 ## John Jacobs erhält und genehmigt den Antrag {#john-jacobs-receives-and-approves-the-application}
 
@@ -79,19 +78,19 @@ Wenn Sarah den FOIA-Antrag ausfüllt und abschickt, wird eine Aufzeichnung davon
 
 ### Sehen Sie selbst{#see-it-yourself-1} 
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit &quot;jjacobs/password&quot;als Benutzername/Kennwort für John Jacobs an und sehen Sie sich die FOIA-Anwendung an. Weitere Informationen zur Verwendung AEM Inbox für formularorientierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit jjacobs/password als Benutzernamen/Kennwort für John Jacobs an und sehen Sie sich den FOIA-Antrag an. Informationen zur Verwendung AEM Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Posteingang](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
 John Jacobs kann den Antrag vom Antrags-Dashboard aus anzeigen, genehmigen oder ablehnen. John Jacobs wählt und öffnet die Antragsdetails, prüft den Antrag und genehmigt ihn.
 
-![johnjacGeburtshilfedatum-1](assets/johnjacobstaskdetail-1.png)
+![johnjacGeburtaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
 ### <strong>Sarah erhält eine Bestätigungs-E-Mail</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Nachdem John Jacobs den Antrag genehmigt hat, erhält Sarah eine Bestätigungs-E-Mail von der We.Gov-Website. Sarah wird über die Gebühren und die Bearbeitungsdauer für ihren Antrag informiert. Die E-Mail enthält auch E-Mail- und Telefondetails, über die Sarah Kontakt aufnehmen kann, um Neuigkeiten zu ihrem Antrag zu erhalten.
 
-![sarahroseemail](assets/sarahroseemail.png)
+![Sarahroseemail](assets/sarahroseemail.png)
 
 ## Gloria erhält den FOIA-Antrag zur Genehmigung auf der zweiten Ebene {#gloria-receives-the-foia-request-for-second-level-approval}
 
@@ -105,15 +104,14 @@ Wenn John Jacobs den FOIA-Antrag genehmigt, wird ein PDF-Dokument oder ein Daten
 
 ### Sehen Sie selbst {#see-for-yourself}
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM-Posteingang an und sehen Sie sich die FOIS-Anforderung an.
+Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich mit grios/password als Benutzernamen/Kennwort für Gloria Rios beim AEM-Posteingang an und sehen Sie sich die FOIS-Anfrage an.
 
 Gloria öffnet den Antrag und sieht sich die Details an. Nach Prüfung der Antragsdetails und der Durchführbarkeit der Bereitstellung der erforderlichen Unterlagen genehmigt Gloria den Antrag.
 
-![gloriariosapproval](assets/gloriariosapproves.png)
+![gloriariosApproves](assets/gloriariosapproves.png)
 
 ## Sarah erhält eine Benachrichtigung, dass ihr Antrag genehmigt wurde {#sarah-receives-notification-that-her-request-is-approved}
 
 Nachdem Gloria den FOIA-Antrag genehmigt hat, erhält Sarah eine E-Mail, in der sie darüber informiert wird, dass ihr Antrag genehmigt wurde. Die E-Mail enthält auch Informationen über den vorläufigen Zeitplan für die Bereitstellung des Dokuments sowie Kontaktdetails für die Weiterverfolgung des Antrags.
 
 ![sarahroseemailapproval](assets/sarahroseemailapproval.png)
-
