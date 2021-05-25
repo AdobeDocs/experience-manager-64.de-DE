@@ -4,14 +4,13 @@ description: Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen.
 contentOwner: AG
 feature: Search,Metadata
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '887'
 ht-degree: 73%
 
 ---
-
 
 # GQL-Volltextsuche {#gql-full-text-search}
 
@@ -19,13 +18,13 @@ Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen. Mit dieser F
 
 Mit der Funktion zur GQL-Volltextsuche können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung, Ersteller usw., nach Assets suchen.
 
-Um nach einem Asset zu suchen, das auf seinen Metadaten (z. B. &quot;title&quot;) basiert, geben Sie im Suchfeld das Metadatenstichwort gefolgt von seinem Wert an. Die Funktion zur GQL-Volltextsuche ruft nur die Assets ab, deren Metadaten exakt mit dem eingegebenen Wert übereinstimmen.
+Um basierend auf Metadaten (z. B. dem Titel) nach einem Asset zu suchen, geben Sie das Metadaten-Keyword gefolgt von dessen Wert im Suchbereich an. Die Volltextsuchfunktion GQL ruft nur die Assets ab, deren Metadaten genau mit dem eingegebenen Wert übereinstimmen.
 
 Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target“ zu suchen:
 
-## Suchen nach Assets {#searching-assets}
+## Suchen nach Assets  {#searching-assets}
 
-1. Klicken Sie in der Symbolleiste der Benutzeroberfläche &quot;Assets&quot;auf das Symbol **[!UICONTROL Suchen]** oder tippen Sie darauf, um das Feld &quot;Omniture&quot;anzuzeigen.
+1. Klicken oder tippen Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Symbol **[!UICONTROL Suchen]** , um das Omnisearch-Feld anzuzeigen.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
@@ -39,21 +38,21 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
    ![gql_search](assets/gql_search.png)
 
-1. Drücken Sie **[!UICONTROL die Eingabetaste]**. Die AEM Assets-Benutzeroberfläche zeigt nur die Assets an, deren Titel exakt mit &quot;Zielgruppe&quot;übereinstimmen.
+1. Drücken Sie **[!UICONTROL Enter]**. In der AEM Assets-Benutzeroberfläche werden nur die Assets angezeigt, deren Titel genau mit &quot;Target&quot;übereinstimmt.
 
-Mit der Volltextsuche-Funktion für GQL können Sie Assets auf der Grundlage folgender Elemente suchen:
+Mit der Funktion für die GQL-Volltextsuche können Sie Assets anhand der folgenden Elemente durchsuchen:
 
 * Komplexe Abfrage, bei der die für mehrere Metadatenfelder (Eigenschaften) angegebenen Werte über einen Und-Vorgang kombiniert werden
 * Mehrere Werte für ein einzelnes Metadatenfeld
 * Übereinstimmende Teilzeichenfolgen
 
-Mit der Volltextsuche-Funktion für GQL können Sie anhand der folgenden Metadateneigenschaften nach Assets suchen. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigenschaften nach Assets suchen. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 >[!NOTE]
 >
 >Die GQL-Volltextsuche funktioniert nur mit Volltexteigenschaften.
 
-| Property | Suchformat (Facet-Wert) |
+| Property | Suchformat (Facettenwert) |
 |---|---|
 | [!UICONTROL Titel] | title:John |
 | [!UICONTROL Ersteller] | creator:John |
@@ -62,13 +61,13 @@ Mit der Volltextsuche-Funktion für GQL können Sie anhand der folgenden Metadat
 | [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
 | [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
-| [!UICONTROL Mitarbeiter] | Mitarbeiter:John |
+| [!UICONTROL Mitarbeiter] | contributor:John |
 | [!UICONTROL Nutzungsbedingungen] | usageterms:„CopyRights Reserved“ |
-| [!UICONTROL Erstellt] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Ablaufdatum] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Erstellt] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Ablaufdatum] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Einschaltzeit] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ausschaltzeit] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Zeitraum]  (läuft dateontime ab, offtime) | facet field : lowerbound.upperbound |
+| [!UICONTROL Zeitraum]  (läuft dateontime,offtime ab) | facet field : lowerbound.upperbound |
 | [!UICONTROL Pfad] | /content/dam/&lt;Ordnername> |
 | [!UICONTROL PDF-Titel] | pdftitle:„Adobe Document“ |
 | [!UICONTROL Betreff] | subject:„Training“ |
@@ -82,7 +81,7 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 
 * So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):
 
-tiltle:&quot;John Doe&quot;-Creatortool: Adobe&amp;ast;
+tiltle:&quot;John Doe&quot; creatortool : Adobe&amp;ast;
 
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds)
 
@@ -102,7 +101,7 @@ title:&quot;Reynolds&quot;
 
 * So zeigen Sie Assets mit einem Eigenschaftswert an, der eine bestimmte Zeichenfolge enthält (wie: title=Basel Meeting Room)
 
-Titel:&quot;Sitzung&quot;;
+title:&quot;Meeting&quot;;
 
 * So zeigen Sie Assets an, die eine bestimmte Zeichenfolge enthalten und einen bestimmten Eigenschaftswert aufweisen (wie die Suche nach der Zeichenfolge „Adobe“ in Assets mit title=John Doe)
 
@@ -128,7 +127,7 @@ Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die a
 1. Öffnen Sie in der Assets-Benutzeroberfläche die Eigenschaftenseite für das Asset, für das Sie einen Suchbegriff festlegen möchten.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Erweitert]** und klicken/tippen Sie auf die Option **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Für Suchbegriffe erhöhen]**.
 
-   ![levate_for_search](assets/elevate_for_search.png)
+   ![lift_for_search](assets/elevate_for_search.png)
 
 1. Geben Sie im Feld **[!UICONTROL Suche priorisieren]** ein Keyword ein, für den Sie die Bildsuche optimieren möchten, und klicken oder tippen Sie anschließend auf **[!UICONTROL Hinzufügen]**. Geben Sie bei Bedarf mehrere Suchbegriffe auf die gleiche Weise an.
 
