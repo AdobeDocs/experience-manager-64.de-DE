@@ -29,7 +29,6 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 >
 >* Siehe [Konfigurieren von Dynamic Media-Cloud-Services unter Konfigurieren von Dynamic Media – Hybridmodus.](/help/assets/config-dynamic.md)
 >* Siehe [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md) und [Fehlerbehebung für Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
-
 >
 
 
@@ -784,7 +783,6 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
    >* Granite-Workflow – Zeitlimit-Warteschlange
-
    > 
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerungen]** und **[!UICONTROL Timeout]** anpassen.
 
@@ -817,7 +815,6 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
    >* Granite-Workflow – Zeitlimit-Warteschlange
-
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerungen]** und **[!UICONTROL Timeout]** anpassen.
 
@@ -959,6 +956,7 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit der
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->

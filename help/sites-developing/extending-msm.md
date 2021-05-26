@@ -32,12 +32,13 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers er
 >Diese Seite sollte in Verbindung mit folgenden Elementen gelesen werden:
 >* [Wiederverwenden von Inhalten: Multi-Site-Manager](/help/sites-administering/msm.md).
 >* Repository-Neustrukturierung in AEM 6.4:
-   >   * [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+>   * [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
    * [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
-Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
+>
+>Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
 
 ## Überblick über die Java-API  {#overview-of-the-java-api}
 
@@ -146,7 +147,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 ```
 
 >[!NOTE]
-Die `Resource`-Argumente können `null`- oder `Resources`-Objekte sein, die sich nicht an `Node`-Objekte anpassen, z. B. [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-Objekte.
+>
+>Die `Resource`-Argumente können `null`- oder `Resources`-Objekte sein, die sich nicht an `Node`-Objekte anpassen, z. B. [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-Objekte.
 
 ## Erstellen einer neuen Rollout-Konfiguration {#creating-a-new-rollout-configuration}
 
@@ -158,7 +160,8 @@ Erstellen Sie eine Rollout-Konfiguration, wenn die installierten Rollout-Konfigu
 Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-Konfigurationen auf einem Blueprint oder einer Live Copy-Seite festlegen.
 
 >[!NOTE]
-Informationen hierzu finden Sie auch unter [Best Practices zum Anpassen von Rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
+>
+>Informationen hierzu finden Sie auch unter [Best Practices zum Anpassen von Rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
 ### Erstellen der Rollout-Konfiguration  {#create-the-rollout-configuration}
 
@@ -171,12 +174,16 @@ So erstellen Sie eine neue Rollout-Konfiguration:
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-Dies ist die benutzerdefinierte Version Ihres Projekts von:
-   `/libs/msm/wcm/rolloutconfigs`
+   >
+   >Dies ist die benutzerdefinierte Version Ihres Projekts von:
+   >`/libs/msm/wcm/rolloutconfigs`
+
 Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
 
    >[!NOTE]
-   Sie dürfen keinerlei Änderungen im Pfad /libs vornehmen.
+   >
+   >Sie dürfen keinerlei Änderungen im Pfad /libs vornehmen.
+
 Denn der Inhalt von /libs wird überschrieben, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    * Erstellen Sie das erforderliche Element neu (d. h. wie es in /libs aussieht) unter /apps.
@@ -687,7 +694,9 @@ Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen 
 
 
 >[!NOTE]
-cq-msm-lockable gilt für die erste untergeordnete Ebene der Ressource, die bearbeitet werden soll, und funktioniert nicht auf untergeordneten Ebenen, unabhängig davon, ob der Wert als absolut oder relativ definiert ist.
+>
+>cq-msm-lockable gilt für die erste untergeordnete Ebene der Ressource, die bearbeitet werden soll, und funktioniert nicht auf untergeordneten Ebenen, unabhängig davon, ob der Wert als absolut oder relativ definiert ist.
 
 >[!NOTE]
-Wenn Sie die Vererbung erneut aktivieren, wird die Eigenschaft der Live Copy-Seite nicht automatisch mit der Quelleigenschaft synchronisiert. Sie können ggf. manuell eine Synchronisierung anfordern.
+>
+>Wenn Sie die Vererbung erneut aktivieren, wird die Eigenschaft der Live Copy-Seite nicht automatisch mit der Quelleigenschaft synchronisiert. Sie können ggf. manuell eine Synchronisierung anfordern.

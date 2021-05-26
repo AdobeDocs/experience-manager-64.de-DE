@@ -41,7 +41,6 @@ Workflows können wie folgt gestartet werden:
 >
 >* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md).
 >* [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md).
-
 >
 
 
@@ -108,6 +107,7 @@ Anschließend können Sie Details angeben:
    * **Paketname**
 
       * Sie können einen Titel für das Paket festlegen, um die Identifizierung erleichtern.
+
    >[!NOTE]
    >
    >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)

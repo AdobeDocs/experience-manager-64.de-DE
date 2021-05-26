@@ -35,10 +35,8 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
-
 >
->
-Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+>Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 
 >[!CAUTION]
 >
@@ -94,7 +92,7 @@ Inhaltsfragmente ermöglichen:
    >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
    >* [Responsives Layout  ](/help/sites-authoring/responsive-layout.md)
-   * [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
+   >* [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
 
 
 ## Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
@@ -118,7 +116,8 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
    * Eine Auswahl ist verfügbar, wenn das Fragment mit einer entsprechenden Vorlage erstellt wurde. 
 
    >[!NOTE]
-   Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
+   >
+   >Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
 
 * **[!UICONTROL Variante]**
 
@@ -139,7 +138,8 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **[!UICONTROL Bearbeiten]** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments.md).
 
 >[!CAUTION]
-Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
+>
+>Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
 ## Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
 
@@ -154,18 +154,21 @@ Bei Zwischeninhalten können Sie:
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]
-Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
+>
+>Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
 
 ![cfm-6420-02](assets/cfm-6420-02.png)
 
 >[!NOTE]
-Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
-Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
+>
+>Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
 >[!CAUTION]
-Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
-Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
-* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.\
+>
+>Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
+>* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.\
    Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
 * Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
@@ -176,10 +179,12 @@ Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
 
 >[!NOTE]
-Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
+>
+>Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
 
 >[!NOTE]
-Wenn auf einer Seite mehrere Inhaltsfragmente vorhanden sind, werden in der Registerkarte **[!UICONTROL Zugehörige Inhalte]** die Assets angezeigt, die für alle Fragmente geeignet sind.
+>
+>Wenn auf einer Seite mehrere Inhaltsfragmente vorhanden sind, werden in der Registerkarte **[!UICONTROL Zugehörige Inhalte]** die Assets angezeigt, die für alle Fragmente geeignet sind.
 
 Nachdem Sie ein Fragment mit zugehörigen Inhalten zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**[!UICONTROL Zugehörige Inhalte]**) im Seitenbereich geöffnet.
 
