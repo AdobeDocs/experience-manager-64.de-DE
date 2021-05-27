@@ -62,6 +62,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
          Erfahren Sie mehr über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](organize-assets.md#organize-using-folders)
 
       * [Nach Video-Assets suchen](search-video-assets.md) oder [Assets suchen](managing-assets-touch-ui.md#searching-assets)
+      
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturansichten an:
@@ -70,10 +71,11 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
          [Anzeigen von Videoausgabeformaten](video-renditions.md)
 
-[Videoausgabedarstellungen verwalten](managing-assets-touch-ui.md#managing-renditions)
+         [Videoausgabedarstellungen verwalten](managing-assets-touch-ui.md#managing-renditions)
 
       * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
       * [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md)
+      
    * Mit Videometadaten arbeiten
 
       * Zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung wie Framerate, Audio- und Video-Bitrate und Codec an:
@@ -86,6 +88,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
       * [Metadatenschemata](metadata-schemas.md)
+      
    * Videos überprüfen, genehmigen und kommentieren
 
       * [Anmerkungen zu ](managing-video-assets.md#annotating-video-assets) Videos  [Anmerkungen zu Assets](managing-assets-touch-ui.md#annotating)
@@ -101,6 +104,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
    * Wenn Sie Adobe Experience Manager als Web Content Management System verwenden, können Sie Ihren Webseiten direkt Videos hinzufügen.
 
       * [Fügen Sie Ihren Web-Seiten Videos hinzu](adding-dynamic-media-assets-to-pages.md).
+      
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
@@ -109,6 +113,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
       * Integrieren von Videos mithilfe von Einbettungs-Code auf der Web-Seite:
 
          [Betten Sie den Video-Viewer auf einer Web-Seite ein](embed-code.md).
+         
    * [Veröffentlichen Sie Videos auf YouTube](#publishing-videos-to-youtube).
    * [Generieren Sie Videoberichte](#viewing-video-reports).
    * [Hinzufügen von Untertiteln zu Videos](#adding-captions-to-video).
