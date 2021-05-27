@@ -33,7 +33,7 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers er
 >* [Wiederverwenden von Inhalten: Multi-Site-Manager](/help/sites-administering/msm.md).
 >* Repository-Neustrukturierung in AEM 6.4:
 >   * [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-   * [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+>   * [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
@@ -183,11 +183,10 @@ Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
    >[!NOTE]
    >
    >Sie dürfen keinerlei Änderungen im Pfad /libs vornehmen.
-
-Denn der Inhalt von /libs wird überschrieben, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
-Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
-   * Erstellen Sie das erforderliche Element neu (d. h. wie es in /libs aussieht) unter /apps.
-   * Nehmen Sie die gewünschten Änderungen in /apps vor.
+   >Denn der Inhalt von /libs wird überschrieben, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
+   >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+   >* Erstellen Sie das erforderliche Element neu (d. h. wie es in /libs aussieht) unter /apps.
+   >* Nehmen Sie die gewünschten Änderungen in /apps vor.
 
 
 1. Erstellen Sie unter diesem **Erstellen** einen Knoten mit den folgenden Eigenschaften:
