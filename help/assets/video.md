@@ -80,11 +80,11 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
       * Zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung wie Framerate, Audio- und Video-Bitrate und Codec an:
 
-         [Anzeigen der Eigenschaften von Videoausgabeformaten](video-renditions.md)
+        [Anzeigen der Eigenschaften von Videoausgabeformaten](video-renditions.md)
 
       * Bearbeiten Sie die Eigenschaften des Videos, wie den Titel, die Beschreibung, die Tags und die benutzerdefinierten Metadatenfelder:
 
-[Bearbeiten von Videoeigenschaften](managing-assets-touch-ui.md#editing-properties)
+        [Bearbeiten von Videoeigenschaften](managing-assets-touch-ui.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
       * [Metadatenschemata](metadata-schemas.md)
