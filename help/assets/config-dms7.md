@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Konfiguration,Scene7-Modus
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 56%
@@ -33,11 +33,11 @@ Mit der neuen Architektur ist Experience Manager für Übergeordnete Assets und 
 
 ## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media ist standardmäßig deaktiviert. ](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) Um die Funktionen von dynamischen Medien nutzen zu können, müssen Sie sie aktivieren.
+[Dynamic Media ist standardmäßig deaktiviert. ](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
 
->[!NOTE]
+>[!WARNING]
 >
->Der Modus Dynamic Media - Scene7 ist nur für die Experience Manager-Autoreninstanz verfügbar. Daher müssen Sie `runmode=dynamicmedia_scene7`in der Experience Manager-Autoreninstanz und nicht in der Experience Manager-Veröffentlichungsinstanz konfigurieren.
+>Dynamic Media - Scene7-Modus ist nur für die *Experience Manager-Autoreninstanz* vorgesehen. Daher müssen Sie `runmode=dynamicmedia_scene7`in der Experience Manager-Autoreninstanz *nicht* die Experience Manager-Veröffentlichungsinstanz konfigurieren.
 
 Um Dynamic Media zu aktivieren, müssen Sie den Experience Manager mit dem Ausführungsmodus `dynamicmedia_scene7` über die Befehlszeile starten, indem Sie Folgendes in ein Terminal-Fenster eingeben (der verwendete Beispielport lautet 4502):
 
@@ -77,7 +77,7 @@ Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für
 
 **So konfigurieren Sie Dynamic Media Cloud Services:**
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf das Symbol &quot;Tools&quot;und dann auf **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
+1. Tippen Sie in Ihrer Experience Manager-Autoreninstanz auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf das Werkzeugsymbol und dann auf **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
 1. Tippen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich auf **[!UICONTROL global]** und tippen Sie auf **[!UICONTROL Erstellen]**. Tippen oder wählen Sie nicht das Ordnersymbol links neben [!UICONTROL global] aus.
 1. Geben Sie auf der Seite [!UICONTROL Dynamic Media-Konfiguration erstellen] einen Titel, die E-Mail-Adresse des Dynamic Media-Kontos und ein Kennwort ein. Wählen Sie Ihre Region aus. Diese Informationen erhalten Sie nach Adobe in Ihrer Bereitstellungs-E-Mail. Wenden Sie sich an die Kundenunterstützung von Adobe , wenn Sie die E-Mail nicht erhalten haben.
 
@@ -266,7 +266,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 1. Geben Sie `DWG=image/vnd.dwg` in das leere Textfeld ein, das Sie soeben hinzugefügt haben.
 
-   Das Beispiel `DWG=image/vnd.dwg` dient nur zu Veranschaulichungszwecken. Der hier hinzugefügte MIME-Typ kann ein beliebiges anderes nicht unterstütztes Format sein.
+   Das Beispiel `DWG=image/vnd.dwg` dient nur zu Demonstrationszwecken. Der hier hinzugefügte MIME-Typ kann ein beliebiges anderes nicht unterstütztes Format sein.
 
    ![Beispiel für MIME-Typ-Addition](assets/2019-08-02_16-36-36.png)
 
@@ -444,7 +444,7 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
    `\w+-\w+-C(\d+)`
 
-   Beachten Sie, dass diese Ausdrücke nur zu Veranschaulichungszwecken dienen. Sie können reguläre Ausdrücke Ihren Bedürfnissen entsprechend erstellen.
+   Beachten Sie, dass diese Ausdrücke nur zu Demonstrationszwecken Beispiele sind. Sie können reguläre Ausdrücke Ihren Bedürfnissen entsprechend erstellen.
 
    >[!NOTE]
    >
