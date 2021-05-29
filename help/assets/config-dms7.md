@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Konfiguration,Scene7-Modus
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5594'
 ht-degree: 56%
 
 ---
@@ -37,7 +37,7 @@ Mit der neuen Architektur ist Experience Manager für Übergeordnete Assets und 
 
 >[!WARNING]
 >
->Dynamic Media - Scene7-Modus ist nur für die *Experience Manager-Autoreninstanz* vorgesehen. Daher müssen Sie `runmode=dynamicmedia_scene7`in der Experience Manager-Autoreninstanz *nicht* die Experience Manager-Veröffentlichungsinstanz konfigurieren.
+>Dynamic Media - Scene7-Modus ist nur für die *Experience Manager-Autoreninstanz* vorgesehen. Konfigurieren Sie daher `runmode=dynamicmedia_scene7`auf der Experience Manager-Autoreninstanz *nicht* die Experience Manager-Veröffentlichungsinstanz.
 
 Um Dynamic Media zu aktivieren, müssen Sie den Experience Manager mit dem Ausführungsmodus `dynamicmedia_scene7` über die Befehlszeile starten, indem Sie Folgendes in ein Terminal-Fenster eingeben (der verwendete Beispielport lautet 4502):
 
