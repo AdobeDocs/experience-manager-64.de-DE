@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups
+title: Erstellen benutzerdefinierter Popups mithilfe von Schnellansichten
 seo-title: Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups
 description: Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
 seo-description: Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
@@ -12,14 +12,14 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: Konfiguration
 role: Administrator,Business Practitioner,Developer
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 99%
+source-wordcount: '1047'
+ht-degree: 97%
 
 ---
 
-# Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
+# Erstellen benutzerdefinierter Popups mit Schnellansichten {#using-quickviews-to-create-custom-pop-ups}
 
 Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Abhängig von dem von Ihnen verwendeten Viewer, können Benutzer mit dieser Funktion auf einen Hotspot, ein Miniaturbild oder auf eine Imagemap klicken, um Informationen oder zugehörige Inhalte anzuzeigen.
 
@@ -31,7 +31,7 @@ Schnellansichten werden in Dynamic Media von folgenden Viewern unterstützt:
 
 Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zum Erstellen einer Schnellansicht für alle drei unterstützten Viewer identisch.
 
-**Verwenden von Schnellansichten, um benutzerdefinierte Popups zu erstellen,**
+**So erstellen Sie benutzerdefinierte Popups mithilfe von Schnellansichten:**
 
 1. Erstellen Sie eine Schnellansicht für ein hochgeladenes Asset.
 
