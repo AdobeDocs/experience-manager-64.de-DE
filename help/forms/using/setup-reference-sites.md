@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
 workflow-type: tm+mt
-source-wordcount: '2922'
+source-wordcount: '2936'
 ht-degree: 48%
 
 ---
@@ -46,7 +46,7 @@ Bevor Sie die Referenz-Website einrichten, stellen Sie Folgendes sicher:
 
 * **AEM Grundlagen**
 
-   AEM Schnellstart, AEM Forms Add-On-Paket und Referenz-Website-Pakete. Weitere Informationen zu Add-On- und Referenz-Site-Paketen finden Sie unter [AEM Forms Releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
+   AEM Schnellstart, AEM Forms Add-On-Paket und Referenz-Website-Pakete. Weitere Informationen zu Add-On- und Referenz-Site-Paketen finden Sie unter [AEM Forms Releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) .
 
 * **Einen SMTP-Dienst** Sie können einen beliebigen SMTP-Dienst verwenden.
 
@@ -64,7 +64,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   <tr> 
    <th><strong>Schritt</strong></th> 
    <th><strong>Konfigurieren</strong></th> 
-   <th><strong>Hinweise</strong></th> 
+   <th><strong>Anmerkungen</strong></th> 
   </tr> 
   <tr> 
    <td><a href="#installaemforms">Installieren und Konfigurieren von AEM Forms</a></td> 
@@ -134,7 +134,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
  </tbody> 
 </table>
 
-## Installieren und Konfigurieren von AEM Forms  {#install-and-configure-aem-forms}
+## Installieren und Konfigurieren von AEM Forms {#install-and-configure-aem-forms}
 
 Installieren und stellen Sie AEM Forms wie unter [Installieren und Konfigurieren von AEM Forms unter OSGi](/help/forms/using/installing-configuring-aem-forms-osgi.md) beschrieben bereit.
 
@@ -220,8 +220,8 @@ Geben Sie für AEM Forms-Referenzsites im AEM DS Settings Service die URL des Ve
 
 Installieren Sie die folgenden Referenzstandortpakete mithilfe der Software Distribution.
 
-* [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
-* [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
+* [AEM-FORMS-6.4-FSI-REF-SITE](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
+* [AEM-FORMS-6.4-GOV-REF-SITE](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
 Weitere Informationen zur Verwendung von Paketen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
@@ -319,7 +319,7 @@ Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Ve
 1. Navigieren Sie zu **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** und öffnen Sie die Swagger-Datei.
 1. Aktualisieren Sie die Host- und Port-Einstellungen gemäß Ihrer Umgebung.
 1. Speichern Sie die Einstellungen.
-1. (**Nur Autoreninstanz**) Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Datenquellen]** > **[!UICONTROL global]**. Wählen Sie **[!UICONTROL roi-rest]** und tippen Sie auf **[!UICONTROL Eigenschaften]**. Tippen Sie auf **[!UICONTROL Authentifizierungseinstellungen]** und legen Sie **[!UICONTROL Authentifizierungstyp]** auf **[!UICONTROL Standardauthentifizierung]** fest. Geben Sie `admin`/ `admin`als Benutzernamen/Kennwort für den Zugriff auf den Dienst an. Tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
+1. (**Nur Autoreninstanz**) Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Datenquellen]** > **[!UICONTROL global]**. Wählen Sie **[!UICONTROL roi-rest]** und tippen Sie auf **[!UICONTROL Eigenschaften]**. Tippen Sie auf **[!UICONTROL Authentifizierungseinstellungen]** und legen Sie **[!UICONTROL Authentifizierungstyp]** auf **[!UICONTROL Standardauthentifizierung]** fest. Geben Sie `admin`/ `admin`als Benutzernamen/Kennwort für den Zugriff auf den Dienst an. Tippen Sie auf **[!UICONTROL Speichern und schließen]**.
 
 ## Integration mit Marketing Cloud {#integrate-with-marketing-cloud}
 
