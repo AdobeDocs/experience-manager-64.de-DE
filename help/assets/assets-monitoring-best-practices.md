@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset-Verwaltung
 role: Administrator,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1766'
 ht-degree: 88%
 
 ---
@@ -57,7 +57,7 @@ Normalerweise verwenden Sie diese Tools zusammen, um sich einen umfassenden Übe
 
 Bei der Langzeitüberwachung einer AEM-Instanz werden die gleichen Komponenten, die live überwacht werden, auch über einen längeren Zeitraum überwacht. Außerdem werden Warnungen definiert, die speziell auf Ihre Umgebung zugeschnitten sind.
 
-### Protokollaggregation und Berichterstellung  {#log-aggregation-and-reporting}
+### Protokollaggregation und Berichterstellung {#log-aggregation-and-reporting}
 
 Es sind mehrere Tools zum Aggregieren von Protokollen verfügbar, z. B. Splunk(TM) und Elastic Search/Logstash/Kabana (ELK). Zum Auswerten der Betriebszeit Ihrer AEM-Instanz ist es wichtig, dass Sie mit den jeweiligen Protokollereignissen Ihres Systems vertraut sind und basierend darauf Warnungen erstellen. Ein gutes Wissen über Ihre Entwicklungs- und Betriebspraktiken kann Ihnen dabei helfen, besser zu verstehen, wie Sie Ihren Protokollaggregationsprozess so einstellen können, dass er kritische Warnhinweise generiert.
 
@@ -139,7 +139,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Systemprüfungen
 
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck*
    * Instanzen: ein Autoren-, alle Veröffentlichungsserver
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
@@ -147,7 +147,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Replikations-Warteschlange
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
    * Instanzen: ein Autoren-, alle Veröffentlichungsserver
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
@@ -155,7 +155,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Antwortleistung
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
    * Instanzen: Alle Server
    * Alarmdauer: Wenn der Status nicht „OK“ lautet.
@@ -163,7 +163,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Abfrageleistung
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck*
    * Instanzen: ein Autoren-, alle Veröffentlichungsserver
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
@@ -171,7 +171,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Aktive Bundles
 
-   * MBean: org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck 
+   * MBean: org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
    * Instanzen: Alle Server
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
@@ -179,13 +179,13 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Fehlerprotokoll
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * Instanzen: Alle Server
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
    * Alarmdefinition: Die Protokolldateien enthalten Fehler. Weitere Informationen zur Ursache des Problems finden Sie unter dem Protokollattribut.
 
-## Häufige Probleme und Lösungen   {#common-issues-and-resolutions}
+## Häufige Probleme und Lösungen  {#common-issues-and-resolutions}
 
 Wenn während des Überwachungsprozesses Probleme auftreten, können Sie die folgenden Problembehandlungsschritte ausführen, um häufig auftretende Probleme mit AEM-Instanzen zu lösen:
 
