@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: 3611cfe5-a3bd-4f46-8949-8f13e1bceb4d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1909'
 ht-degree: 52%
 
 ---
@@ -28,7 +28,7 @@ Darüber hinaus stellt AEM stellt eine Reihe benutzerdefinierter Knotentypen ber
 
 ## Audit {#audit}
 
-### cq:AuditEvent  {#cq-auditevent}
+### cq:AuditEvent {#cq-auditevent}
 
 **Beschreibung**
 
@@ -496,7 +496,7 @@ Abrufkonfiguration
 
 **Definition**
 
-* `[cq:PollConfig]
+* `[cq:PollConfig]`
    * `mixin`
    * `- source (String) mandatory`
    * `- target (String)`
@@ -525,7 +525,7 @@ Ein Mixin, das eine geografische Position in Dezimalgraden (DD) definiert
 
 **Definition**
 
-* `[cq:GeoLocation]
+* `[cq:GeoLocation]`
    * `mixin`
    * `- latitude (double)`
    * `- longitude (double)`
@@ -661,7 +661,7 @@ Definiert das Replikationsstatusinformations-Mixin.
 
 **Definition**
 
-* `[cq:ReplicationStatus]
+* `[cq:ReplicationStatus]`
    * `mixin`
    * `- cq:lastPublished (date) ignore`
    * `- cq:lastPublishedBy (string) ignore`
@@ -910,7 +910,7 @@ Dialogfeld
 
 **Beschreibung**
 
-Fenster
+Bereich
 
 **Definition**
 
@@ -924,7 +924,7 @@ Registerkartenbedienfeld
 
 **Definition**
 
-* `[cq:TabPanel] > cq:Panel orderable&quot;
+* `[cq:TabPanel] > cq:Panel orderable`
    * `- activeTab (long)`
 
 ### cq:Field {#cq-field}
