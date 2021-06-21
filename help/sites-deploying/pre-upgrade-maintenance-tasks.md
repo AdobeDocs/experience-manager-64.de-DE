@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 feature: Aktualisieren
 exl-id: f146cb2f-ee77-4c99-8dff-446cdb3a7797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '2179'
 ht-degree: 78%
@@ -42,7 +42,7 @@ Bevor Sie mit der Aktualisierung beginnen, ist es wichtig, die folgenden Wartung
 
 Wenn Sie die Aktualisierung durchführen, ist zusätzlich zur Aktualisierung von Inhalt und Code auch eine Migration des Repositorys erforderlich. Bei der Migration wird eine Kopie des Repositorys im Segment-TAR-Format erstellt. Daher benötigen Sie ausreichend Festplattenspeicher, um eine zweite (möglicherweise größere) Version des Repositorys zu speichern.
 
-## Vollständige Sicherung von AEM  {#fully-back-up-aem}
+## Vollständige Sicherung von AEM {#fully-back-up-aem}
 
 Bevor Sie mit der Aktualisierung beginnen, sollten Sie eine vollständige Sicherungskopie von AEM erstellen. Erstellen Sie Sicherungskopien des Repositorys, der Anwendungsinstallation, des Datenspeichers und der Mongo-Instanzen, falls zutreffend. Weitere Informationen zum Sichern und Wiederherstellen einer AEM-Instanz finden Sie unter[ Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md).
 
@@ -103,7 +103,7 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
   <tr> 
    <td><strong>Aufgabe</strong></td> 
    <td><strong>Ausführungsmodus</strong></td> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
   </tr> 
   <tr> 
    <td><code>TarIndexMergeTask</code></td> 
@@ -325,8 +325,10 @@ Es gibt Ausnahmefälle, in denen Dienstbenutzer in älteren AEM-Versionen landen
 
 In diesem Fall schlägt die Aktualisierung mit einer Meldung wie der folgenden fehl:
 
-`ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
-java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.`
+```
+ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
+java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
+```
 
 Um dieses Problem zu umgehen, gehen Sie folgendermaßen vor:
 
