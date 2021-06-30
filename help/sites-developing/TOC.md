@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
 audience: end-user
 user-guide-title: AEM 6.4-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Entwickeln
 role: Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 83%
@@ -45,7 +45,7 @@ ht-degree: 83%
       + [Seitenvorlagen – statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM    ](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM      ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -73,7 +73,7 @@ ht-degree: 83%
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
@@ -141,7 +141,7 @@ ht-degree: 83%
    + [ContextHub](contexthub.md)
    + [Referenz zur ContextHub-JavaScript-API ](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
-   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher ](ch-adding.md)
+   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
    + [Beispiele für ContextHub-Store-Kandidaten ](ch-samplestores.md)
    + [Mustertypen von ContextHub-UI-Modulen](ch-samplemodules.md)
    + [ContextHub-Diagnosen](ch-diagnostics.md)
