@@ -8,10 +8,10 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
 feature: Bereitstellen
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 93%
+source-wordcount: '373'
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 93%
    + [Konsistenz- und Ausnahmeprüfungen](consistency-check.md)
    + [Leistungsrichtlinien](performance-guidelines.md)
    + [Leistungsoptimierung](configuring-performance.md)
-   + [Handbuch zur Leistung von Assets](assets-performance-sizing.md)
+   + [Handbuch zur Leistung von Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [Artikel mit Anleitungen für die Konfiguration](ht-deploy.md)
    + [Entfernen der Geometrixx-Websites](removing-the-geometrixx-sites.md)
    + [Konfigurieren der Web-Konsole](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 93%
    + [Repository-Neustrukturierung in AEM 6.4](repository-restructuring.md)
    + [Repository-Neustrukturierung für alle Lösungen in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Repository-Neustrukturierung in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Assets-Repository-Neustrukturierung in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
+   + [Assets-Repository-Neustrukturierung in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [Dynamic Media: Repository-Neustrukturierung in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms-Repository-Neustrukturierung in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [E-Commerce-Repository-Neustrukturierung in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
