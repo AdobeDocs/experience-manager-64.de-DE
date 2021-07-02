@@ -10,10 +10,10 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Aktualisieren
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 58%
+source-wordcount: '1139'
+ht-degree: 53%
 
 ---
 
@@ -23,19 +23,19 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
 
 **Mit der Aktualisierung auf 6.4**
 
-* [Verschiedenes](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Verschiedenes](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **Vor der Aktualisierung auf 6.5**
 
-* [Vorlage für E-Mail-Benachrichtigung für Asset-/Sammlungsereignis](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Klassische Asset-Freigabe-Designs](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Vorlage für E-Mail-Benachrichtigung zum Asset-Download](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Beispiel-DRM-Lizenzen](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [Vorlage für E-Mail-Benachrichtigung für Asset-/Sammlungsereignis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Klassische Asset-Freigabe-Designs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Vorlage für E-Mail-Benachrichtigung zum Asset-Download](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Beispiel-DRM-Lizenzen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign-Workflow-Skripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Konfigurationen für die Videotranskodierung](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Verschiedenes](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [InDesign-Workflow-Skripts](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Konfigurationen für die Videotranskodierung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Verschiedenes](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 ## Mit der Aktualisierung auf 6.4 {#with-upgrade}
 
@@ -56,13 +56,13 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
    <td><p>Wenn ein benutzerdefinierter Code von diesem Speicherort abhängig ist (d. h. der Code stützt sich explizit auf diesen Pfad), muss der Code aktualisiert werden, um den neuen Speicherort vor dem Aktualisieren zu nutzen. Im Idealfall werden die Java-APIs verwendet, um Abhängigkeiten von einem bestimmten Pfad im JCR zu reduzieren.</p> <p>Temporärer Speicherort, um die ZIP-Datei für das Herunterladen des Clients zu speichern. Eine Aktualisierung ist nicht notwendig, wenn der Client das Herunterladen des Assets anfordert. Am neuen Speicherort wird eine Datei erstellt.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Vor der Aktualisierung auf 6.5  {#prior-to-upgrade}
+## Vor der Aktualisierung auf 6.5 {#prior-to-upgrade}
 
 ### Vorlage für E-Mail-Benachrichtigung für Asset-/Sammlungsereignis {#asset-collection-event-e-mail-notification-template}
 
@@ -91,13 +91,13 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ol> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Klassische Asset-Freigabe-Designs  {#classic-asset-share-designs}
+### Klassische Asset-Freigabe-Designs {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -121,13 +121,13 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ol> <p>Für alle Designs, die nicht in SCM verwaltet werden und die zur Laufzeit über Design-Dialoge geändert werden, verschieben Sie keine bearbeitbaren Designs aus <code>/etc</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Vorlage für E-Mail-Benachrichtigung zum Asset-Download  {#download-asset-e-mail-notification-template}
+### Vorlage für E-Mail-Benachrichtigung zum Asset-Download {#download-asset-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -154,21 +154,21 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ol> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Während <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> technisch für die Suche unterstützt wird (hat Vorrang vor /apps über die übliche Sling CAConfig-Suche, aber nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> platziert werden. Dies wird allerdings nicht empfohlen, da es keine Laufzeit-Benutzeroberfläche gibt, die die Bearbeitung der E-Mail-Vorlage erleichtert.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Beispiel-DRM-Lizenzen  {#example-drm-licenses}
+### Beispiel-DRM-Lizenzen {#example-drm-licenses}
 
 | **Vorheriger Speicherort** | `/etc/dam/drm/licenses/` |
 |---|---|
 | **Neuer Speicherort** | `/libs/settings/dam/drm` |
 | **Leitfaden für die Neustrukturierung** | Nicht zutreffend |
-| **Hinweise** | Nicht zutreffend |
+| **Anmerkungen** | Nicht zutreffend |
 
-### Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe  {#link-share-e-mail-notification-template}
+### Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -195,13 +195,13 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ol> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Während <code>/conf/global/settings/dam/adhocassetshare</code> technisch für die Suche unterstützt wird (es hat Vorrang vor <code>/apps</code> über die übliche Sling-CAConfig-Suche, aber nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/adhocassetshare</code> platziert werden. Dies wird jedoch nicht empfohlen, da es keine Laufzeit-Benutzeroberfläche gibt, um das Bearbeiten der E-Mail-Vorlage zu erleichtern.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### InDesign-Workflow-Skripts  {#indesign-workflow-scripts}
+### InDesign-Workflow-Skripts {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -229,7 +229,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ol> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Es wird empfohlen, benutzerdefinierte Skripte unter <code>/apps</code> zu speichern, da dort Code gespeichert werden soll.</td> 
   </tr> 
  </tbody> 
@@ -256,13 +256,13 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ol> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Konfigurationen der Viewer-Voreinstellungen  {#viewer-preset-configurations}
+### Konfigurationen der Viewer-Voreinstellungen {#viewer-preset-configurations}
 
 <table> 
  <tbody> 
@@ -283,7 +283,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ul> <p>Beachten Sie, dass Sie ihren copyURL/embed-Code nicht so anpassen müssen, dass er auf <code>/conf</code> verweist. Die vorhandene Anforderung an <code>/etc</code> wird vom <code>/conf</code> zum richtigen Inhalt umgeleitet.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend</td> 
   </tr> 
  </tbody> 
@@ -306,7 +306,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
    <td><p>Passen Sie alle Verweise an, die auf die neuen Ressourcen unter <code>/libs</code> verweisen, indem Sie das Proxy-Präfix <code>/etc.clientlibs/</code> zulassen.</p> <p>Entfernen Sie abschließend die Ordner für die migrierten Client-Bibliotheken aus <code>/etc/clientlibs/foundation/</code></p> </td> 
   </tr> 
   <tr> 
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend<br /> </td> 
   </tr> 
  </tbody> 
