@@ -10,9 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Aktualisieren
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: 98b6a34d678827b8ced0dfc3b153a92d63c1c0de
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1157'
 ht-degree: 53%
 
 ---
@@ -23,19 +23,19 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
 
 **Mit der Aktualisierung auf 6.4**
 
-* [Verschiedenes](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Verschiedenes](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc)
 
 **Vor der Aktualisierung auf 6.5**
 
-* [Vorlage für E-Mail-Benachrichtigung für Asset-/Sammlungsereignis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Klassische Asset-Freigabe-Designs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Vorlage für E-Mail-Benachrichtigung zum Asset-Download](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Beispiel-DRM-Lizenzen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Vorlage für E-Mail-Benachrichtigung für Asset-/Sammlungsereignis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#asset-collection-event-e-mail-notification-template)
+* [Klassische Asset-Freigabe-Designs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#classic-asset-share-designs)
+* [Vorlage für E-Mail-Benachrichtigung zum Asset-Download](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#download-asset-e-mail-notification-template)
+* [Beispiel-DRM-Lizenzen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#example-drm-licenses)
 
-* [Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [InDesign-Workflow-Skripts](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Konfigurationen für die Videotranskodierung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Verschiedenes](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#link-share-e-mail-notification-template)
+* [InDesign-Workflow-Skripts](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#indesign-workflow-scripts)
+* [Konfigurationen für die Videotranskodierung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#video-transcoding-configurations)
+* [Verschiedenes](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc2)
 
 ## Mit der Aktualisierung auf 6.4 {#with-upgrade}
 
