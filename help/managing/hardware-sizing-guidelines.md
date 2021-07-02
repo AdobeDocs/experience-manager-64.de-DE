@@ -10,14 +10,14 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2850'
 ht-degree: 78%
 
 ---
 
-# Hardware-Skalierungsrichtlinien  {#hardware-sizing-guidelines}
+# Hardware-Skalierungsrichtlinien {#hardware-sizing-guidelines}
 
 Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Implementierung eines AEM-Projekts erforderlich sind. Die Größenschätzungen hängen von der Architektur des Projekts, der Komplexität der Lösung, dem erwarteten Traffic und den Projektanforderungen ab. Dieser Leitfaden hilft Ihnen, den Hardwarebedarf für eine bestimmte Lösung zu ermitteln oder eine obere und untere Schätzung für die Hardwareanforderungen zu finden.
 
@@ -68,7 +68,7 @@ UmgebungÜberprüfen von Änderungen. Die Anzahl der Testumgebungen kann je nach
 
 Die Umgebungen variieren zudem, von einem Single-Server-System mit AEM und einem Anwendungsserver bis hin zu einem hochskalierten Satz von Multi-Server- und Multi-CPU-Clustern. Es wird empfohlen, je einen separaten Computer für ein Produktionssystem zu verwenden und keine anderen Anwendungen auf diesen Rechnern auszuführen.
 
-## Hinweise zur Skalierung generischer Hardware  {#generic-hardware-sizing-considerations}
+## Hinweise zur Skalierung generischer Hardware {#generic-hardware-sizing-considerations}
 
 Die folgenden Abschnitte enthalten Hinweise zur Berechnung der Hardwareanforderungen unter Berücksichtigung verschiedener Überlegungen. Für große Systeme empfehlen wir Ihnen, einen einfachen Satz von internen Benchmarktests an einer Referenzkonfiguration durchzuführen.
 
@@ -80,7 +80,7 @@ Hardware-Skalierung für fortgeschrittene Anwendungsfälle sollte auf einer deta
 * umfangreicher Einsatz von kundenspezifischem Code, eigenen Workflows oder Softwarebibliotheken von Drittanbietern
 * Integration mit nicht unterstützten externen Systemen
 
-### Festplattenspeicher/Festplatte  {#disk-space-hard-drive}
+### Festplattenspeicher/Festplatte {#disk-space-hard-drive}
 
 Der benötigte Speicherplatz hängt stark vom Volumen und vom Typ Ihrer Web-Anwendung ab. Die Berechnungen sollten berücksichtigen:
 
@@ -101,7 +101,7 @@ Für die Datenredundanz sind redundante Arrays unabhängiger Festplatten (RAID, 
 
 AEM läuft gut in virtualisierten Umgebungen, aber es kann Faktoren wie CPU oder E/A geben, die nicht direkt mit physischer Hardware gleichgesetzt werden können. Allgemein empfehlenswert ist die Wahl einer höheren E/A-Geschwindigkeit, da dies in den meisten Fällen ein kritischer Faktor ist. Vergleichswerte für Ihre Umgebung sind erforderlich, um ein genaues Verständnis dafür zu erhalten, welche Ressourcen erforderlich sind.
 
-### Parallelisierung von AEM-Instanzen  {#parallelization-of-aem-instances}
+### Parallelisierung von AEM-Instanzen {#parallelization-of-aem-instances}
 
 #### Ausfallsicherheit {#fail-safeness}
 
@@ -200,7 +200,7 @@ Die Benchmarktests an Adobe wurden mit dem Betriebssystem RedHat 5.5 durchgefüh
 
 AEM-Instanzen liefen mit einer minimalen Heap-Größe von 256M und einer maximalen Heap-Größe von 1024M.
 
-## Veröffentlichung von umgebungsspezifischen Berechnungen  {#publish-environment-specific-calculations}
+## Veröffentlichung von umgebungsspezifischen Berechnungen {#publish-environment-specific-calculations}
 
 ### Effizienz der Zwischenspeicherung und Traffic {#caching-efficiency-and-traffic}
 
@@ -211,7 +211,7 @@ Die Effizienz der Zwischenspeicherung ist entscheidend für die Geschwindigkeit 
 | 100% | 1000-2000 | 35-70 |
 | 99% | 910 | 32 |
 | 95% | 690 | 25 |
-| 90% | 520 | 18 |
+| 90 % | 520 | 18 |
 | 60% | 220 | 8 |
 | 0% | 100 | 3.5 |
 
@@ -221,7 +221,7 @@ Die Effizienz der Zwischenspeicherung ist entscheidend für die Geschwindigkeit 
 
 Die Zwischenspeicher-Quote gibt den Prozentsatz an Seiten an, die der Dispatcher zurückgeben kann, ohne auf AEM zuzugreifen. 100 % bedeutet, dass der Dispatcher alle Anfragen beantwortet, 0 % bedeutet, dass AEM jede einzelne Seite berechnet.
 
-### Komplexität von Vorlagen und Anwendungen  {#complexity-of-templates-and-applications}
+### Komplexität von Vorlagen und Anwendungen {#complexity-of-templates-and-applications}
 
 Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu rendern. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann leicht zehnmal länger dauern als das Rendern einer einfachen Seite.
 
@@ -291,7 +291,7 @@ Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere W
 
 Neben der Berechnung für eine Standard-Webanwendung müssen Sie ggf. spezifische Faktoren für die folgenden Anwendungsfälle berücksichtigen. Die berechneten Werte sind der Standardberechnung hinzuzufügen.
 
-### Asset-spezifische Hinweise  {#assets-specific-considerations}
+### Asset-spezifische Hinweise {#assets-specific-considerations}
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
@@ -305,9 +305,9 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow „DAM-U
 
 >[!NOTE]
 >
->Siehe auch [Richtlinien zur Asset-Leistung](/help/sites-deploying/assets-performance-sizing.md).
+>Siehe auch [Richtlinien zur Asset-Leistung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
 
-### Multi-Site-Manager  {#multi-site-manager}
+### Multi-Site-Manager {#multi-site-manager}
 
 Der Ressourcenverbrauch beim Einsatz von MSM in AEM in einer Autorenumgebung hängt stark von den spezifischen Anwendungsfällen ab. Grundlegende Faktoren sind:
 
@@ -320,7 +320,7 @@ Das Testen des geplanten Anwendungsfalles mit einem repräsentativen Inhaltsausz
 
 Bitte beachten Sie auch, dass parallel arbeitende Autoren Performance-Nebenwirkungen wahrnehmen, wenn MSM-Anwendungsfälle für AEM mehr Ressourcen verbrauchen, als geplant.
 
-### Überlegungen zur Dimensionierung von AEM Communities  {#aem-communities-sizing-considerations}
+### Überlegungen zur Dimensionierung von AEM Communities {#aem-communities-sizing-considerations}
 
 AEM Sites, die Funktionen von AEM Communities (Community-Sites) enthalten, erleben ein hohes Maß an Interaktion von Seitenbesuchern (Mitgliedern) in der Veröffentlichungsumgebung.
 
