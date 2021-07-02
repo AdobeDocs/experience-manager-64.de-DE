@@ -2,12 +2,12 @@
 title: Einführung in [!DNL Adobe Experience Manager Assets]
 description: Erfahren Sie, was Digital Asset Management, seine Anwendungsfälle und [!DNL Adobe Experience Manager Asset] Angebot sind.
 contentOwner: AG
-feature: Asset-Verwaltung
+feature: Asset-Management
 role: Leader,Architect,Business Practitioner
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '863'
 ht-degree: 37%
 
 ---
@@ -52,13 +52,13 @@ Berücksichtigen Sie bei der Entscheidung, ob ein Bild in das DAM-Repository ein
 
 Ein Asset ist ein digitales Dokument, Bild, Video oder eine digitale Audiodatei (oder ein Teil davon), das bzw. die mehrere Ausgabedarstellungen aufweisen und über Unter-Assets verfügen kann (z. B. Ebenen in einer Fotoshop-Datei, Folien in einer PowerPoint-Datei, Seiten in einem PDF-Dokument, Dateien in einer ZIP-Datei).
 
-Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](/help/sites-deploying/assets-performance-sizing.md).
+Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
 
 >[!CAUTION]
 >
 >Das Hochladen und/oder Bearbeiten einer großen Menge von Assets (insbesondere von Bildern) kann sich auf die Leistung Ihrer [!DNL Experience Manager]-Implementierung auswirken.
 
-### [!DNL Experience Manager Assets] Terminologie  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] Terminologie {#aem-assets-terminology}
 
 Beim Arbeiten mit digitalen Assets in [!DNL Experience Manager] müssen Sie die folgende Terminologie verstehen:
 
