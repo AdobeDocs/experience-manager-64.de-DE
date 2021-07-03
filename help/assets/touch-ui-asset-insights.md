@@ -3,12 +3,12 @@ title: Verwenden der Funktion "Assets Insights", um die Nutzung Ihrer Bilder zu 
 description: Mit der Funktion "Asset Insights"können Sie Benutzerbewertungen und Nutzungsstatistiken von Bildern verfolgen, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden.
 contentOwner: AG
 feature: Asset Insights,Asset-Berichte
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 59%
+ht-degree: 63%
 
 ---
 
@@ -26,7 +26,7 @@ Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurier
 
 >[!NOTE]
 >
->Einblicke werden nur für Bilder unterstützt und bereitgestellt.
+>Insights wird nur für Bilder unterstützt und bereitgestellt.
 
 ## Anzeigen von Statistiken für ein Asset {#viewing-statistics-for-an-asset}
 
@@ -61,7 +61,7 @@ Sie können die Asset Insights-Bewertungen auf der Metadatenseite anzeigen.
    >
    >Im Gegensatz zu den Daten im Abschnitt &quot;Lösungen&quot;werden im Abschnitt &quot;Leistungsstatistiken&quot;die neuesten Daten angezeigt.
 
-1. Um den Einbettungscode für das Asset zu erhalten, das Sie in Websites zum Abrufen von Leistungsdaten einschließen, klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungscode abrufen]** . Weitere Informationen dazu, wie Sie Ihren Einbettungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
+1. Um den Einbettungs-Code für das Asset zu erhalten, das Sie in die Websites einbeziehen, um Leistungsdaten zu erhalten, klicken Sie unter dem Asset-Miniaturbild auf **[!UICONTROL Einbettungs-Code abrufen]**. Weitere Informationen dazu, wie Sie Ihren Einbettungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
