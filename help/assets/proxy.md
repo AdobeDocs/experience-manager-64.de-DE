@@ -3,9 +3,9 @@ title: Entwicklung von Asset-Proxys
 description: 'Ein Proxy ist eine AEM-Instanz, die Proxy Workers verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen AEM-Proxy konfigurieren und einen benutzerdefinierten Proxy Worker entwickeln können, und erhalten Sie Informationen zu unterstützten Vorgängen und Proxy-Komponenten. '
 contentOwner: AG
 feature: Asset-Verarbeitung
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 75%
@@ -78,7 +78,7 @@ Ein Proxy Worker ist ein Prozessor, der für die Verarbeitung von Aufträgen und
 >
 >Worker müssen [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) implementieren, damit sie als Proxy Worker erkannt werden.
 
-### Client-API  {#client-api}
+### Client-API {#client-api}
 
 [`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) ist als OSGi-Dienst verfügbar, der Methoden zur Erstellung und Entfernung von Aufträgen und dem Abruf von Ergebnissen aus den Aufträgen bereitstellt. Die Standardimplementierung des Dienstes (`JobServiceImpl`) verwendet den HTTP-Client für die Kommunikation mit dem Remote-Proxy-Servlet.
 
