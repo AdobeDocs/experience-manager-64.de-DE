@@ -7,8 +7,8 @@ topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: Videoprofile,Video
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 74%
@@ -43,7 +43,7 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-## Vorgaben für adaptive Videoverschlüsselung  {#adaptive-video-encoding-presets}
+## Vorgaben für adaptive Videoverschlüsselung {#adaptive-video-encoding-presets}
 
 In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adaptive Video-Streaming auf Smartphones und Tablets sowie Desktop-Computern angegeben. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
 
@@ -148,7 +148,7 @@ Wenn Sie die Erstellung des Videoprofils abgeschlossen haben, wenden Sie es auf 
    * Wiederholen Sie Schritt 5 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
    * Tippen Sie oben rechts auf der Seite erneut auf **[!UICONTROL Speichern]**, um das Profil zu speichern.
 
-## Überwachen des Fortschritts eines Kodierungsauftrags  {#monitoring-the-progress-of-an-encoding-job}
+## Überwachen des Fortschritts eines Kodierungsauftrags {#monitoring-the-progress-of-an-encoding-job}
 
 Eine Verarbeitungsanzeige (oder eine Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videokodierungsauftrags visuell überwachen können.
 
@@ -323,19 +323,19 @@ Ordner, denen ein Profil zugewiesen wurde, werden in der Benutzeroberfläche dur
 
 Sie können Videoprofile auf bestimmte Ordner oder global auf alle Assets anwenden.
 
-### Anwenden von Videoprofilen auf bestimmte Ordner  {#applying-video-profiles-to-specific-folders}
+### Anwenden von Videoprofilen auf bestimmte Ordner {#applying-video-profiles-to-specific-folders}
 
 Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Videoprofile auf beide Arten auf Ordner anwenden.
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-#### Anwenden von Dynamic Media-Videoprofilen auf Ordner über die Benutzeroberfläche &quot;Profile&quot;{#applying-video-profiles-to-folders-from-profiles-user-interface}
+#### Anwenden von Dynamic Media-Videoprofilen auf Ordner über die Benutzeroberfläche &quot;Profile&quot; {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Videoprofile]**.
 1. Wählen Sie ein Videoprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
 1. Tippen Sie auf **[!UICONTROL Profil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen Sie dann auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-#### Anwenden von Dynamic Media-Videoprofilen auf Ordner über Eigenschaften {#applying-video-profiles-to-folders-from-properties}
+#### Anwenden von Dynamic Media-Videoprofilen auf Ordner über &quot;Eigenschaften&quot; {#applying-video-profiles-to-folders-from-properties}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Videoprofil anwenden möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
@@ -361,7 +361,7 @@ Wenn Sie ein Videoprofil aus einem Ordner entfernen, erben automatisch alle Unte
 
 Sie können ein Videoprofil aus einem Ordner im Menü **[!UICONTROL Tools]** entfernen. Wenn Sie sich im Ordner befinden, ist dies über die **[!UICONTROL Ordnereinstellungen]** möglich. In diesem Abschnitt werden die beiden Möglichkeiten beschrieben, wie Sie Videoprofile aus Ordnern entfernen können.
 
-### Entfernen von Dynamic Media-Videoprofilen aus Ordnern über die Benutzeroberfläche &quot;Profile&quot;{#removing-video-profiles-from-folders-via-profiles-user-interface}
+### Entfernen von Dynamic Media-Videoprofilen aus Ordnern über die Benutzeroberfläche &quot;Profile&quot; {#removing-video-profiles-from-folders-via-profiles-user-interface}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Videoprofile]**.
 1. Wählen Sie das Videoprofil, das Sie aus einem oder mehreren Ordnern entfernen möchten.
@@ -369,7 +369,7 @@ Sie können ein Videoprofil aus einem Ordner im Menü **[!UICONTROL Tools]** ent
 
    Sie können sich vergewissern, dass das Videoprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
-### Entfernen von Dynamic Media-Videoprofilen aus Ordnern über Eigenschaften {#removing-video-profiles-from-folders-via-properties}
+### Entfernen von Dynamic Media-Videoprofilen aus Ordnern über &quot;Eigenschaften&quot; {#removing-video-profiles-from-folders-via-properties}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Videoprofil entfernen möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
