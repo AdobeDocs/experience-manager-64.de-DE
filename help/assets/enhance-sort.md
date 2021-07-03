@@ -2,10 +2,10 @@
 title: Optimierte Sortierung von Assets in AEM
 description: Erfahren Sie, wie AEM Assets mit der serverseitigen Sortierung Ordner-Assets oder Suchanfragen in einem Durchgang sortiert, anstatt sie in Batches auf Clientseite zu verarbeiten.
 contentOwner: AG
-feature: Suchen
-role: Business Practitioner
+feature: Suche
+role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 93%
@@ -20,7 +20,7 @@ Die Suchfunktion von Adobe Experience Manager (AEM) Assets wurde verbessert, um 
 
 AEM Assets setzt auf eine serverseitige Sortierung, um alle Assets (unabhängig von ihrer Größe) in einem Ordner oder in einer Suchabfrage in einem Schritt und nicht stapelweise auf Clientseite zu sortieren.  Auf diese Weise können per Prefetch abgerufene Ergebnisse schnell in der Benutzeroberfläche angezeigt werden. Der Sortiervorgang wird hierdurch responsiver und schneller. 
 
-## Sortieren von Assets in der Listenansicht  {#sorting-assets-in-list-view}
+## Sortieren von Assets in der Listenansicht {#sorting-assets-in-list-view}
 
 Mit AEM Assets können Sie Ordner-Assets basierend auf den folgenden Feldern sortieren: 
 
