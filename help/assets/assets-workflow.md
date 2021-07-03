@@ -3,9 +3,9 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse zu erledigen, Prüfungen du
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Ausgabedarstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 feature: Workflow,Ausgabedarstellungen
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 28%
@@ -16,11 +16,11 @@ ht-degree: 28%
 
 [!DNL Adobe Experience Manager Assets] ermöglicht es Ihnen, auf vielerlei Weise an Ihren digitalen Assets zu arbeiten, um eine robuste Asset-Verarbeitung zu ermöglichen. Sie können die verfügbaren Verarbeitungsmethoden verwenden oder die Methoden erweitern, um die End-to-End-Fertigstellung von Geschäftsprozessen mithilfe von Audits und Compliance von, Erkennung und Verteilung sowie grundlegender Vernunft Ihrer digitalen Assets sicherzustellen. Sie können all dies tun und dabei die erforderliche Skalierung und Anpassung erreichen.
 
-## Grundlegendes zu Workflows {#understand-workflows}
+## Workflows verstehen {#understand-workflows}
 
 Für die Asset-Verarbeitung verwendet [!DNL Experience Manager] Workflows. Workflows helfen bei der Automatisierung der Geschäftslogik oder der Aktivitäten. Granulare Schritte zum Ausführen bestimmter Aufgaben werden standardmäßig bereitgestellt und Entwickler können eigene benutzerdefinierte Schritte erstellen. Diese Schritte können in logischer Reihenfolge kombiniert werden, um Workflows zu erstellen. Beispielsweise kann ein Workflow automatisch Wasserzeichen auf hochgeladene Bilder anwenden, die auf bestimmten Kriterien basieren, z. B. auf in das Bild eingebettete Metadaten, in den Ordner, in den es hochgeladen wird, Auflösung des Bildes usw. Ein weiteres Beispiel ist ein Workflow, der so konfiguriert wurde, dass Bilder auf Wasserzeichen gesetzt werden und gleichzeitig mehrere Asset-Management-Anforderungen erfüllt werden, z. B. das Hinzufügen von Metadaten, das Erstellen von Ausgabedarstellungen, das Hinzufügen intelligenter Tags für die Asset-Erkennung, das Veröffentlichen in einem Datenspeicher, das Festlegen von Berechtigungen für den Benutzerzugriff usw.
 
-## Standard-Workflows im Experience Manager {#default-workflows}
+## In Experience Manager verfügbare Standard-Workflows {#default-workflows}
 
 Standardmäßig werden alle hochgeladenen Assets mit dem Workflow [!UICONTROL DAM Update Asset] verarbeitet. Der Workflow wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Asset-Verwaltungsaufgaben wie Ausgabegenerierung, Metadaten-Writeback, Seitenextraktion, Medienextraktion und Transkodierung durch.
 
@@ -94,7 +94,7 @@ Die Vorgehensweise zum Anwenden eines Workflows auf mehrere Ordner ähnelt der V
 
 Weitere Informationen zum Anwenden eines Workflows auf eine Sammlung finden Sie unter [Anwenden eines Workflows auf eine Sammlung](managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
 
-## Workflow automatisch starten, um Assets bedingt zu verarbeiten {#auto-execute-workflow-on-some-assets}
+## Workflow zur bedingten Verarbeitung von Assets automatisch starten {#auto-execute-workflow-on-some-assets}
 
 Administratoren können Workflows so konfigurieren, dass Assets basierend auf vordefinierten Bedingungen automatisch ausgeführt und verarbeitet werden. Die Funktion ist nützlich für Benutzer und Marketingexperten in Unternehmen, z. B. zum Erstellen eines benutzerdefinierten Workflows für bestimmte Ordner. Angenommen, alle Assets aus dem Foto-Shooting einer Agentur können mit einem Wasserzeichen versehen werden oder alle von einem Freiberufler hochgeladenen Assets können verarbeitet werden, um bestimmte Ausgabeformate zu erstellen.
 
