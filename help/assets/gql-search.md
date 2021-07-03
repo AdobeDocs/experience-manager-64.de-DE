@@ -3,12 +3,12 @@ title: GQL-Volltextsuche
 description: Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
 contentOwner: AG
 feature: Search,Metadata
-role: Business Practitioner
+role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 73%
+source-wordcount: '879'
+ht-degree: 74%
 
 ---
 
@@ -22,7 +22,7 @@ Um basierend auf Metadaten (z. B. dem Titel) nach einem Asset zu suchen, geben S
 
 Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target“ zu suchen:
 
-## Suchen nach Assets  {#searching-assets}
+## Suchen nach Assets {#searching-assets}
 
 1. Klicken oder tippen Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Symbol **[!UICONTROL Suchen]** , um das Omnisearch-Feld anzuzeigen.
 
@@ -52,12 +52,12 @@ Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigen
 >
 >Die GQL-Volltextsuche funktioniert nur mit Volltexteigenschaften.
 
-| Property | Suchformat (Facettenwert) |
+| Eigenschaft | Suchformat (Facettenwert) |
 |---|---|
 | [!UICONTROL Titel] | title:John |
 | [!UICONTROL Ersteller] | creator:John |
 | [!UICONTROL Mitarbeiter] | contributor:John |
-| [!UICONTROL Standort] | location:India |
+| [!UICONTROL Speicherort] | location:India |
 | [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
 | [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
