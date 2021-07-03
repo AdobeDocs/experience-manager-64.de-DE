@@ -7,15 +7,15 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Fehlerbehebung
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
-# Fehlerbehebung in Dynamic Media – Scene7-Modus {#troubleshooting-dynamic-media-scene-mode}
+# Fehlerbehebung in Dynamic Media – Scene7-Modus {#troubleshooting-dynamic-media-scene-mode}
 
 Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Ausführungsmodus **dynamicmedia_scene7**.
 
@@ -38,7 +38,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Eigenschaften für den Asset-Synchronisierungsstatus {#asset-synchronization-status-properties}
+### Statuseigenschaften für die Asset-Synchronisierung {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
@@ -69,7 +69,7 @@ Beim Ersetzen eines vorhandenen Dynamic Media-Assets (gleicher Name und Speicher
 
 * Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
 
-## Bilder und Sets   {#images-and-sets}
+## Bilder und Sets    {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
@@ -253,7 +253,7 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
       </ol> </li> 
      <li>Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen. 
       <ul> 
-       <li>Nehmen Sie keine Änderungen vor und klicken Sie auf <strong>Speichern</strong>. Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.<br />  <br /> </li> 
+       <li>Nehmen Sie keine Änderungen vor und klicken Sie auf <strong>Speichern</strong>. Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.<br /> <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
