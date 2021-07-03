@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 exl-id: e076349d-8b1a-487f-b982-9440d7de13b9
 feature: Konfiguration
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 96%
@@ -39,7 +39,7 @@ Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site.](re
 
 Informationen hierzu finden Sie auch unter [Hochladen von Assets.](managing-assets-touch-ui.md#uploading-assets)
 
-## Abrufen einer URL für ein Asset      {#obtaining-a-url-for-an-asset}
+## Abrufen einer URL für ein Asset     {#obtaining-a-url-for-an-asset}
 
 Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorgabe generiert wird. Wenn Sie die URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder einem Programm einfügen können.
 
@@ -159,7 +159,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Dies ist die vollständige Video-URL für eine veröffentlichte Videoausgabedarstellung.
 
-## Abrufen einer Video-URL für adaptives Streaming (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Abrufen einer Video-URL für adaptives Streaming (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigieren Sie in AEM zu **[!UICONTROL Tools > Bereitstellung > Cloud > Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
@@ -202,7 +202,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
+## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets   {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
