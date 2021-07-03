@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Verwaltung von Asset-Sammlungen, z. B. 
 contentOwner: AG
 mini-toc-levels: 1
 feature: Sammlungen
-role: Business Practitioner
+role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 84%
@@ -26,7 +26,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 * Eine Sammlung mit einer statischen Referenzliste von Assets, Ordnern und anderen Sammlungen.
 * Eine Smart-Sammlung, die Assets auf Grundlage eines Suchkriteriums dynamisch verwendet.
 
-## Aufrufen der Konsole „Sammlungen“ {#navigating-the-collections-console}
+## Aufrufen der Konsole „Sammlungen“  {#navigating-the-collections-console}
 
 Um **[!UICONTROL Sammlungen]** zu öffnen, tippen oder klicken Sie auf das Experience Manager-Logo. Gehen Sie auf der Navigationsseite zu **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**.
 
@@ -199,7 +199,7 @@ Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie di
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
-## Suchen in Sammlungen {#searching-within-collections}
+## In Sammlungen suchen {#searching-within-collections}
 
 Tippen oder klicken Sie in der Konsole „Sammlungen“ auf eine Sammlung, um sie zu öffnen.
 
@@ -254,13 +254,13 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge  {#saved-searches}
+## Gespeicherte Suchvorgänge {#saved-searches}
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-### Erstellen gespeicherter Suchvorgänge {#creating-saved-searches}
+### Gespeicherte Suchen erstellen {#creating-saved-searches}
 
 Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage &quot;Gespeicherte Suchen&quot;für die Sammlung wird in der Eigenschaft `dam:query` in crxde am relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt.
 
@@ -272,7 +272,7 @@ Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Sma
 
 Gespeicherte Suchen werden genauso wie Smart-Sammlungen bearbeitet. Einzelheiten dazu finden Sie in [Bearbeiten von Smart-Sammlungen](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection).
 
-### Löschen gespeicherter Suchvorgänge {#deleting-saved-searches}
+### Gespeicherte Suchen löschen {#deleting-saved-searches}
 
 1. Tippen oder klicken Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Suchsymbol.
 
