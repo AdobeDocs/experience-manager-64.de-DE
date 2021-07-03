@@ -8,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
-role: Business Practitioner
-source-git-commit: 887aef9a46029b9d44da36c8e352ca0963a1a609
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '2573'
 ht-degree: 51%
@@ -272,7 +272,7 @@ Derzeit können Sie die intelligente Bildbearbeitung optional aktivieren oder de
 
 Diese Funktionalität gibt es in der aktuellen intelligenten Bildbearbeitung nicht.
 
-## Manchmal wird ein JPEG-Bild anstelle eines WebP-Bildes an Chrome zurückgegeben. Warum? (#jpeg-webp)
+## Manchmal wird ein JPEG-Bild anstelle eines WebP-Bildes an Chrome zurückgegeben. Vorteile (#jpeg-webp)
 
 Die intelligente Bildbearbeitung entscheidet, ob die Konvertierung vorteilhaft ist. Das neue Bild wird nur dann zurückgegeben, wenn die Konvertierung zu einer kleineren Dateigröße mit vergleichbarer Qualität führt.
 
