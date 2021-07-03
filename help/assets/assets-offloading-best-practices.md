@@ -2,10 +2,10 @@
 title: Best Practices für die Assets-Abladung
 description: Empfohlene Anwendungsfälle und Best Practices für die Abladung der Workflows zur Asset-Aufnahme und -Replikation in AEM Assets.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Business Practitioner,Administrator
+feature: Asset-Management
+role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 78%
@@ -32,7 +32,7 @@ Die folgende Abbildung zeigt die Hauptkomponenten des Asset-Abladeprozesses:
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-### Workflow „Asset-Abladung für DAM-Update“{#dam-update-asset-offloading-workflow}
+### Workflow „Asset-Abladung für DAM-Update“ {#dam-update-asset-offloading-workflow}
 
 Der Workflow &quot;Asset-Abladung für DAM-Update&quot;wird auf dem primären (Autoren-)Server ausgeführt, auf den der Benutzer die Assets hochlädt. Dieser Workflow wird von einem regulären Workflowstarter ausgelöst. Statt das hochgeladene Asset zu verarbeiten, erstellt der Abladeworkflow einen neuen Auftrag mit dem Thema *com/adobe/granite/workflow/offloading*. Der Abladeworkflow fügt den Namen des Zielworkflows – in diesem Fall den DAM-Update-Asset-Workflow – und den Pfad des Assets der Nutzlast des Auftrags hinzu. Nach Erstellung des Abladeauftrags wartet der Ablade-Workflow auf der primären Instanz, bis der Abladeauftrag ausgeführt wurde.
 
@@ -44,7 +44,7 @@ Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Ver
 
 Das Abladeframework identifiziert Aufträge zur Workflow-Abladung, die Worker-Instanzen zugewiesen sind, und transportiert diese physisch, einschließlich Nutzlast (etwa aufzunehmende Bilder), an Worker. 
 
-### Job Consumer „Workflow-Abladung“  {#workflow-offloading-job-consumer}
+### Job Consumer „Workflow-Abladung“ {#workflow-offloading-job-consumer}
 
 Sobald ein Auftrag auf den Worker geschrieben wurde, ruft der Job Manager den Job Consumer auf, der für das Thema *com/adobe/granite/workflow/offloading* verantwortlich ist. Der Job Consumer führt dann den Workflow „DAM-Update-Asset“ auf dem Asset aus.
 
@@ -52,7 +52,7 @@ Sobald ein Auftrag auf den Worker geschrieben wurde, ruft der Job Manager den Jo
 
 Die Sling-Topologie gruppiert AEM-Instanzen und ermöglicht deren gegenseitige Erkennung, und zwar unabhängig von der zugrundeliegenden Persistenz. Dank dieser Eigenschaft der Sling-Topologie können Sie Topologien für Nicht-Cluster-, Cluster- und Mischszenarien erstellen. Eine Instanz kann Eigenschaften gegenüber der gesamten Topologie offenlegen. Das Framework bietet Callbacks für das Listening auf Änderungen in der Topologie (Instanzen und Eigenschaften). Die Sling-Topologie bildet die Grundlage für Sling-verteilte Aufträge.
 
-### Sling-verteilte Aufträge  {#sling-distributed-jobs}
+### Sling-verteilte Aufträge {#sling-distributed-jobs}
 
 Sling-verteilte Aufträge vereinfachen die Verteilung von Aufträgen unter Instanzen, die zur Topologie gehören. Sling-Aufträge basieren auf dem Funktionsprinzip. Ein Auftrag wird durch sein Auftragsthema definiert. Um einen Auftrag auszuführen, muss eine Instanz einen Job Consumer für ein bestimmtes Auftragsthema bereitstellen. Das Auftragsthema ist die wichtigste Triebfeder des Verteilungsmechanismus.
 
@@ -60,7 +60,7 @@ Aufträge werden nur an die Instanzen verteilt, die einen Job Consumer für das 
 
 In diesem Kontext bezieht sich der Begriff Verteilung auf die Zuweisung eines Auftrags zu einer bestimmten Instanz, die einen Job Consumer bereitstellt. Die Zuweisung zu einer Instanz wird im Repository gespeichert. Anders ausgedrückt: Sling-verteilte Aufträge können standardmäßig einer beliebigen Instanz in der Topologie zugewiesen werden. Allerdings können andere Aufträge nur von den Instanzen ausgeführt werden, die dasselbe Repository nutzen. Dies bedeutet, dass diese Aufträge ausschließlich von Instanzen ein und desselben Clusters ausgeführt werden können. Aufträge, die Instanzen eines anderen Clusters zugewiesen sind, werden nicht ausgeführt.
 
-### Granite-Abladeframework  {#granite-offloading-framework}
+### Granite-Abladeframework {#granite-offloading-framework}
 
 Das Granite-Abladeframework ergänzt die Sling-Auftragsverteilung, um Aufträge, die Nicht-Cluster-Instanzen zugewiesen sind, auszuführen. Eine Verteilung (Instanzzuweisung) findet nicht statt. Jedoch werden an Nicht-Cluster-Instanzen verteilte Sling-Aufträge identifiziert und zwecks Ausführung an die Zielinstanz transportiert. Derzeit wird bei der Abladung für diesen Auftragstransport auf die Replikation zurückgegriffen. Zum Ausführen eines Auftrags werden im Rahmen der Abladung die Ein- und Ausgabe definiert, die dann in Kombination mit dem Auftrag zur Auftragsnutzlast werden.
 
@@ -70,7 +70,7 @@ Neben dem Transport bietet das Abladeframework eine Erweiterung für die Workflo
 
 Das Abladeframework wird zudem mit einer Benutzeroberfläche bereitgestellt, um die Aktivierung von Auftragsthemen über die gesamte Topologie hinweg zu visualisieren und zu steuern. Über die Benutzeroberfläche lässt sich die Themenaktivierung Sling-verteilter Aufträge bequem konfigurieren. Die Abladung kann auch ohne die Benutzeroberfläche eingerichtet werden.
 
-## Allgemeine Leitlinien und Best Practices für die Asset-Abladung  {#general-guidance-and-best-practices-for-asset-offloading}
+## Allgemeine Leitlinien und Best Practices für die Asset-Abladung {#general-guidance-and-best-practices-for-asset-offloading}
 
 Jede Implementierung ist einzigartig und daher gibt es auch keine Universal-Abladekonfiguration. In den folgenden Abschnitten werden Leitlinien und Best Practices zum Abladen der Asset-Aufnahme beschrieben.
 
@@ -87,7 +87,7 @@ Wenn Sie zu dem Schluss kommen, dass die Assets-Abladung ein für Sie geeigneter
 * Die TarMK-basierte Assets-Abladung ist nicht für eine übermäßige horizontale Skalierung vorgesehen.
 * Stellen Sie sicher, dass die Netzwerkleistung zwischen Autor und Workern zufriedenstellend ist.
 
-### Empfohlene Bereitstellung zur Assets-Abladung  {#recommended-assets-offloading-deployment}
+### Empfohlene Bereitstellung zur Assets-Abladung {#recommended-assets-offloading-deployment}
 
 Mit AEM und Oak sind verschiedene Bereitstellungszenarien möglich. Zur Assets-Abladung wird eine TarMK-basierte Bereitstellung mit freigegebenem Datenspeicher empfohlen. Die folgende Grafik zeigt die empfohlene Bereitstellung:
 
@@ -95,7 +95,7 @@ Mit AEM und Oak sind verschiedene Bereitstellungszenarien möglich. Zur Assets-A
 
 Details zum Konfigurieren von Datenspeichern finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM](../sites-deploying/data-store-config.md).
 
-### Deaktivieren der automatischen Agentenverwaltung  {#turning-off-automatic-agent-management}
+### Deaktivieren der automatischen Agentenverwaltung {#turning-off-automatic-agent-management}
 
 Adobe empfiehlt eine Deaktivierung der automatischen Agentenverwaltung, weil diese keine Unterstützung für die nicht binäre Replikation bietet und zur Verwirrung beim Einrichten einer neuen Abladetopologie führen kann. Darüber hinaus unterstützt es nicht automatisch den Weiterleitungsreplikationsfluss, der für die Binärdatei-lose Replikation erforderlich ist.
 
@@ -103,7 +103,7 @@ Adobe empfiehlt eine Deaktivierung der automatischen Agentenverwaltung, weil die
 1. Öffnen Sie die Konfiguration für `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
 1. Deaktivieren Sie die automatische Agentenverwaltung.
 
-### Verwenden der Vorwärtsreplikation  {#using-forward-replication}
+### Verwenden der Vorwärtsreplikation {#using-forward-replication}
 
 Standardmäßig kommt beim Abladetransport die Rückwärtsreplikation zum Einsatz, um die abgeladenen Assets per Pull-Vorgang vom Worker zurück an die primäre Instanz zu übertragen. Die Agenten für die Rückwärtsreplikation bieten keine Unterstützung für die nicht binäre Replikation. Sie sollten die Abladung zur Nutzung der Vorwärtsreplikation konfigurieren, um die abgeladenen Assets per Push-Vorgang zurück vom Worker an die primäre Instanz zu übertragen.
 
@@ -142,7 +142,7 @@ Um den Transport des Workflow-Modells zu deaktivieren, ändern Sie den Worfklow 
 1. Öffnen Sie die Registerkarte Argumente und deaktivieren Sie die Optionen Modell zur Eingabe hinzufügen und Modell zur Ausgabe hinzufügen .
 1. Speichern Sie die Änderungen am Modell.
 
-### Optimieren des Abrufintervalls  {#optimizing-the-polling-interval}
+### Optimieren des Abrufintervalls {#optimizing-the-polling-interval}
 
 Die Workflow-Abladung wird mithilfe eines externen Workflows auf der primären Instanz implementiert, der den Abschluss des abgeladenen Workflows auf dem Worker abfragt. Das standardmäßige Abrufintervall für die externen Workflow-Prozesse beträgt fünf Sekunden. Adobe empfiehlt, dass Sie das Abrufintervall des Assets-Abladeschritts auf mindestens 15 Sekunden erhöhen, um den abladebezogenen Mehraufwand auf der primären Instanz zu reduzieren.
 
@@ -154,7 +154,7 @@ Die Workflow-Abladung wird mithilfe eines externen Workflows auf der primären I
 1. Öffnen Sie die Registerkarte &quot;Commons&quot;und passen Sie den Wert der Eigenschaft &quot;Period&quot;an.
 1. Speichern Sie die Änderungen am Modell.
 
-## Weitere Ressourcen  {#more-resources}
+## Weitere Ressourcen {#more-resources}
 
 Dieses Dokument konzentriert sich auf die Asset-Abladung. Weitere Informationen zum Thema Abladung finden Sie u. a. in den folgenden Dokumenten:
 
