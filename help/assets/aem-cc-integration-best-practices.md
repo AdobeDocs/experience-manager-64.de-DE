@@ -3,9 +3,9 @@ title: Best Practices für die Integration von AEM und Creative Cloud
 description: Best Practices zur Integration einer AEM-Implementierung in Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz
 contentOwner: AG
 feature: Zusammenarbeit, Adobe Asset Link, Desktop App
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 83%
@@ -146,7 +146,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marketing-/Branchen-Teams sowie für die Auswahl der besten Begleitfunktionen ist es wichtig zu verstehen, wann und warum Assets in DAM gespeichert werden.
 
-### Warum Assets in DAM gespeichert werden  {#why-assets-are-stored-in-dam}
+### Warum Assets in DAM gespeichert werden {#why-assets-are-stored-in-dam}
 
 Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Es wird sichergestellt, dass die Assets von verschiedenen Benutzern in der gesamten Organisation oder im gesamten System genutzt werden, z. B. von Kunden, Partnern usw.
 
@@ -156,7 +156,7 @@ Die Speicherung von Assets hängt außerdem von Überlegungen zu technischen Asp
 
 Häufig ist das Speichern aller Assets und Aktualisierungen nicht empfehlenswert. Beispiel: Wenn Aktualisierungen von schlechter Qualität sind und einen unverhältnismäßigen Ressourcenverbrauch aufweisen, sollten die Assets nicht in DAM gespeichert werden.
 
-### Wann Assets in DAM gespeichert werden  {#when-assets-are-stored-in-dam}
+### Wann Assets in DAM gespeichert werden {#when-assets-are-stored-in-dam}
 
 Kreativ-Teams (und Organisationen) sind in der Regel nicht daran interessiert, Assets in jeder Phase des Asset-Lebenszyklus zu speichern. Beispielsweise vermeiden sie das Speichern von Assets in den folgenden Fällen:
 
@@ -170,7 +170,7 @@ In der Regel werden Assets der folgenden Klassen in DAM gespeichert:
 * Assets, die vorab vom Kreativ-Team ausgewählt wurden
 * Bestimmte Asset-Formate, die vom Marketing-Team verwendet werden können oder abhängig von einem bestimmten Vertrag bzw. einer Vereinbarung angefordert wurden (z. B. aus RAW-Dateien konvertierte JPG-Dateien, TIFF-Dateien/-Bilder aus PSD-Originaldateien)
 
-### Wann Aktualisierungen von Assets in DAM gespeichert werden  {#when-updates-to-assets-are-stored-in-dam}
+### Wann Aktualisierungen von Assets in DAM gespeichert werden {#when-updates-to-assets-are-stored-in-dam}
 
 In der Regel sollten nur Aktualisierungen von Assets in DAM gespeichert werden, die für den Großteil der DAM-Benutzer relevant sind. Dadurch wird sichergestellt, dass Benutzern (Marketing- und ähnliche Funktionen) in der DAM-Asset-Zeitleiste nur relevante Versionen angezeigt werden.
 
@@ -187,7 +187,7 @@ Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
 
 AEM Assets unterstützt zwei Arten von Benutzern, die auf deren Zugriff auf die AEM Assets-Implementierung basieren. Normalerweise haben Benutzer innerhalb des Unternehmensnetzwerks (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks haben dagegen keinen direkten Zugriff. Der Benutzertyp bestimmt, welche Integrationen aus technischer Sicht verwendet werden können.
 
-#### Kreative Benutzer mit direktem Zugriff auf DAM  {#creative-users-with-direct-access-to-dam}
+#### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 
 In der Regel haben interne Kreativ-Teams oder Agenturen/Kreativprofis, die an das interne Netzwerk angeschlossen sind, Zugriff auf die DAM-Instanz, einschließlich AEM-Anmeldung.
 
@@ -209,7 +209,7 @@ Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte A
 
 In den folgenden Nutzungsszenarios werden verschiedene Arten von Workflows zwischen DAM und dem Desktop des Designers beschrieben.
 
-#### Erstellen Sie neue Designs mit Assets aus DAM {#creating-new-designs-using-assets-from-dam}
+#### Erstellen neuer Designs mithilfe von Assets aus DAM {#creating-new-designs-using-assets-from-dam}
 
 Das folgende Diagramm illustriert den Lebenszyklus von digitalen Assets. Es veranschaulicht, wie kreative Benutzer und DAM-Benutzer (Marketingexperten, Branchenbenutzer) vorhandene Assets nutzen, zur Erstellung weiterer Assets verwenden und zur Genehmigung senden.
 
@@ -230,7 +230,7 @@ Hier finden Sie einige allgemeine Empfehlungen zur Verwaltung von Assets währen
 * Verwenden Sie einen dedizierten Speicherbereich bzw. ein dediziertes Speichersystem wie den synchronisierten Ordner von Adobe Creative Cloud Assets für die WIP-Dateien: Häufige Aktualisierungen, die für DAM-Benutzer nicht relevant sind, werden am besten in einem dedizierten System anstatt in AEM Assets verarbeitet. WIP-Assets können mit dem Adobe Creative Cloud-Desktop-Programm auf die lokale Festplatte synchronisiert, auf dem lokalen Speicher gespeichert usw.
 * Verwenden Sie getrennte Ordner/Freigaben für abgeschlossene Assets und Assets, die in DAM hochgeladen werden: Der Übersichtlichkeit wegen sollten sich abgeschlossene Assets (Beispiel „Final“ oben) als auch Assets, die wieder in DAM hochgeladen werden („Creative Ready“ oben), in einem eigenen zugeordneten/freigegebenen Ordner befinden.
 
-#### Ändern vorhandener Assets, die in DAM verwaltet werden {#changing-existing-assets-managed-in-dam}
+#### Vorhandene Assets ändern, die in DAM verwaltet werden {#changing-existing-assets-managed-in-dam}
 
 In einigen Fällen können Assets in DAM Änderungen erfordern. Beispiele dafür sind:
 
@@ -285,7 +285,7 @@ Für den Massenupload von Assets können Sie die folgenden Funktionen nutzen:
 >
 >Je nach Ihren Geschäftsanforderungen können Sie auch benutzerdefinierte Upload-Programme verwenden.
 
-#### Verwalten digitaler Assets direkt über den Desktop {#managing-digital-assets-directly-from-desktop}
+#### Verwalten digitaler Assets direkt auf dem Desktop {#managing-digital-assets-directly-from-desktop}
 
 Wenn Sie digitale Assets in Netzwerk-Dateifreigaben verwalten, kann stattdessen einfach die vom AEM-Desktop-Programm zugeordnete Netzwerkfreigabe verwendet werden. Denken Sie beim Übergang von Netzwerk-Dateifreigaben daran, dass die Web-Benutzeroberfläche von AEM einen umfangreichen Satz von Digital Asset Management-Funktionen bereitstellt, die weit über die Möglichkeiten einer Netzwerkfreigabe hinausgehen (Suche, Sammlungen, Metadaten, Zusammenarbeit, Vorschauen usw.). Die AEM Desktop App bietet einen praktischen Link zur Verbindung des serverseitigen DAM-Repositorys mit der Arbeit auf dem Desktop.
 
