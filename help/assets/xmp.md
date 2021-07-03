@@ -3,9 +3,9 @@ title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform), der von AEM Assets zur Metadatenverwaltung verwendet wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 contentOwner: AG
 feature: 'Metadaten  '
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 93%
@@ -43,7 +43,7 @@ XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), da
 
 XMP wird am häufigsten mit einer Untergruppe des [W3C](https://de.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) serialisiert und gespeichert, das wiederum in [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language) ausgedrückt wird.
 
-## Vorteile von XMP  {#advantages-of-xmp}
+## Vorteile von XMP {#advantages-of-xmp}
 
 XMP bietet die folgenden Vorteile gegenüber anderen Kodierungsstandards und Schemata:
 
@@ -60,7 +60,7 @@ Das XMP-Standardformat ist erweiterbar, sodass Sie den XMP-Daten benutzerdefinie
 >
 >XMP lässt im Allgemeinen nicht zu, dass binäre Datentypen eingebettet werden. Um binäre Daten wie etwa Miniaturansichten in XMP zu übertragen, müssen diese in einem XML-kompatiblen Format wie beispielsweise Base64 kodiert werden.
 
-## Wesentliche XMP-Grundlagen  {#xmp-core-concepts}
+## Wesentliche XMP-Grundlagen {#xmp-core-concepts}
 
 In den folgenden Abschnitten werden die wesentlichen Grundlagen von XMP beschrieben, einschließlich Namespaces und Schemata, Eigenschaften und Werten sowie Sprachalternativen.
 
@@ -69,9 +69,9 @@ In den folgenden Abschnitten werden die wesentlichen Grundlagen von XMP beschrie
 Ein XMP-Schema ist ein Satz von Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der Folgendes enthält:\
 Datentyp und beschreibende Informationen. Ein XMP-Schema wird durch die zugehörige XML-Namespace-URI identifiziert. Durch Verwendung von Namespaces werden Konflikte zwischen Eigenschaften in verschiedenen Schemata verhindert, die denselben Namen, aber eine andere Bedeutung haben.
 
-Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für die Anwendung, von der das Asset erstellt wurde (z. B. Adobe Photoshop).
+Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für das Programm, von dem das Asset erstellt wurde (z. B. Adobe Photoshop).
 
-### Eigenschaften und Werte  {#properties-and-values}
+### Eigenschaften und Werte {#properties-and-values}
 
 XMP kann Eigenschaften von einem oder mehreren der Schemata umfassen.
 
