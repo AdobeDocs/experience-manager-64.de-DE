@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: Smart-Tags,Suche
-role: Business Practitioner
+role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 83%
@@ -80,7 +80,7 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 
 
 
-## Training des Smart Content Service  {#training-the-smart-content-service}
+## Training des Smart Content Service {#training-the-smart-content-service}
 
 Damit der Smart Content Service die Taxonomie Ihres Unternehmens erkennen kann, sollten Sie den Dienst auf einen Asset-Satz ausführen, der bereits für Ihr Unternehmen relevante Tags enthält. Nach dem Training kann der Dienst dieselbe Taxonomie auf einen ähnlichen Satz von Assets anwenden.
 
@@ -92,7 +92,7 @@ Sie können den Smart Content Service regelmäßig oder je nach Anforderung trai
 >
 >Der Trainings-Workflow wird nur für Ordner ausgeführt.
 
-### Regelmäßiges Trainieren  {#periodic-training}
+### Regelmäßiges Trainieren {#periodic-training}
 
 Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Eigenschaftenseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** auf der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
@@ -100,7 +100,7 @@ Sie können festlegen, dass der Smart Content Service regelmäßig mit den Asset
 
 Wenn Sie diese Option für einen Ordner auswählt haben, führt AEM automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
 
-### Training bei Bedarf  {#on-demand-training}
+### Training bei Bedarf {#on-demand-training}
 
 Sie können den Smart Content Service über die Workflow-Konsole trainieren, wann immer es erforderlich ist.
 
@@ -132,7 +132,7 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
 1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Herunterladen]** in der Symbolleiste. Der Bericht wird als Excel-Datei heruntergeladen.
 
-## Automatisches Tagging von Assets  {#tagging-assets-automatically}
+## Automatisches Tagging von Assets {#tagging-assets-automatically}
 
 Wenn Sie den Smart Content Service trainiert haben, können Sie den Tagging-Workflow starten, um automatisch passende Tags auf einen anderen Satz ähnlicher Assets anzuwenden.
 
@@ -142,7 +142,7 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 >
 >Der Tagging-Workflow wird sowohl für Assets als auch für Ordner ausgeführt.
 
-### Periodisches Tagging  {#periodic-tagging}
+### Periodisches Tagging {#periodic-tagging}
 
 Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Öffnen Sie die Eigenschaftenseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** auf der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
@@ -159,7 +159,7 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
 >
 >Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
 
-#### Kennzeichnen von Assets über die Workflow-Konsole  {#tagging-assets-from-the-workflow-console}
+#### Kennzeichnen von Assets über die Workflow-Konsole {#tagging-assets-from-the-workflow-console}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflowmodelle]** den Workflow **[!UICONTROL DAM Smart Tags Assets]** aus und tippen/klicken Sie dann in der Symbolleiste auf **[!UICONTROL Workflow starten]**.
