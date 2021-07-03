@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 exl-id: 9e27d45e-1d72-4663-a2c5-2ec48f2b23c4
-feature: Asset-Verwaltung
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Asset-Management
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Aktivieren des Hotlink-Schutzes in Dynamic Media  {#activating-hotlink-protection-in-dynamic-media}
+# Aktivieren des Hotlink-Schutzes in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 Von Hotlinking spricht man, wenn eine Drittanbieter-Webseite HTML-Code verwendet, um ein Bild von Ihrer Website anzuzeigen. Sie beanspruchen bei jedem Aufruf des Bildes Ihre Bandbreite, da der Browser des Besuchers direkt über Ihren Server darauf zugreift. Der Hotlink-*Schutz* ist eine Methode, um das direkte Verknüpfen anderer Webseiten mit Bildern, CSS oder JavaScript auf Ihren Webseiten zu verhindern. Dadurch können Sie unnötige Bandbreitennutzung in Ihrem Dynamic Media-Konto reduzieren.
 
