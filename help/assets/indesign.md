@@ -3,9 +3,9 @@ title: Integrieren von AEM Assets mit Adobe InDesign Server
 description: Erfahren Sie mehr über die Integration von AEM Assets mit InDesign Server.
 contentOwner: AG
 feature: Veröffentlichung
-role: Administrator
+role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 65%
@@ -77,7 +77,7 @@ Die InDesign Server kann in AEM Assets integriert werden, sodass mit InDesign ( 
    * Der extrahierte Text und die Dateien werden in AEM Assets gespeichert.
    * Alle Ausgabeformate werden in AEM Assets im Asset selbst gespeichert.
 
-## Integrieren von InDesign Server in AEM    {#integrating-the-indesign-server-with-aem}
+## Integrieren von InDesign Server in AEM   {#integrating-the-indesign-server-with-aem}
 
 Um InDesign Server für die Verwendung mit AEM Assets zu integrieren und nach der Konfiguration des Proxys müssen Sie folgende Schritte durchführen:
 
@@ -88,7 +88,7 @@ Um InDesign Server für die Verwendung mit AEM Assets zu integrieren und nach d
 
 1. Konfigurieren Sie einen [Proxy Worker für InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installieren von InDesign Server    {#installing-the-indesign-server}
+### Installieren von InDesign Server   {#installing-the-indesign-server}
 
 Um InDesign Server für die Verwendung mit AEM zu installieren und zu starten, gehen Sie wie folgt vor:
 
@@ -147,7 +147,7 @@ Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt &quot;Extrahierung vo
 
 Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Voreinstellungen nicht entfernen, da sie für die AEM Assets-Benutzeroberfläche erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
-#### Extrahierung von Seiten    {#page-extraction}
+#### Extrahierung von Seiten   {#page-extraction}
 
 Dabei wird eine AEM-Seite aus den extrahierten Elementen erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungshandlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
 
@@ -185,7 +185,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 1. Klicken Sie zum Speichern auf **[!UICONTROL OK]**.
 
-### Konfigurieren von Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
+### Konfigurieren von Day CQ Link Externalizer  {#configuring-day-cq-link-externalizer}
 
 Wenn sich die InDesign Server und AEM auf unterschiedlichen Hosts befinden oder eine oder beide dieser Anwendungen nicht an Standardanschlüssen funktionieren, konfigurieren Sie **Day CQ Link Externalizer**, um den Hostnamen, Port und Inhaltspfad für die InDesign Server festzulegen.
 
@@ -238,7 +238,7 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Unterstützung für Adobe InDesign-Server 10.0 oder höher {#enabling-support-for-indesign-server-or-higher} aktivieren
+## Unterstützung für Adobe InDesign Server 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-higher}
 
 Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch, um Unterstützung für Mehrfachsitzungen zu aktivieren.
 
@@ -250,7 +250,7 @@ Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch,
 >
 >Verwenden Sie für die Integration von [!DNL InDesign Server] mit [!DNL Assets] einen Multicore-Prozessor, da die für die Integration erforderliche Sitzungsunterstützungsfunktion auf einzelnen Kernsystemen nicht unterstützt wird.
 
-## Konfigurieren von Experience Manager-Anmeldedaten {#configure-aem-credentials}
+## Experience Manager-Anmeldedaten konfigurieren {#configure-aem-credentials}
 
 Sie können die standardmäßigen Administratorberechtigungen (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrer AEM-Instanz aus ändern, ohne die Integration mit dem Adobe InDesign-Server zu unterbrechen.
 
