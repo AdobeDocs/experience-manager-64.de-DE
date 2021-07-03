@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Bildprofile
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2715'
 ht-degree: 91%
@@ -154,7 +154,7 @@ Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befind
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-#### Anwenden von Bildprofilen für Dynamic Media auf Ordner über die Benutzeroberfläche „Profile“{#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Anwenden von Bildprofilen für Dynamic Media auf Ordner über die Benutzeroberfläche „Profile“ {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Wählen Sie ein Bildprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
@@ -163,7 +163,7 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 1. Tippen Sie auf **[!UICONTROL Verarbeitungsprofil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen oder klicken Sie anschließend auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-#### Anwenden von Bildprofilen für Dynamic Media auf Ordner über „Eigenschaften“{#applying-image-profiles-to-folders-from-properties}
+#### Anwenden von Bildprofilen für Dynamic Media auf Ordner über „Eigenschaften“ {#applying-image-profiles-to-folders-from-properties}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Bildprofil anwenden möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
@@ -173,7 +173,7 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 ### Globales Anwenden eines Bildprofils für Dynamic Media {#applying-an-image-profile-globally}
 
-Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in AEM-Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet.
+Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in AEM Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet.
 
 **So wenden Sie ein Bildprofil für Dynamic Media global an**:
 
@@ -277,7 +277,7 @@ Wenn Sie ein Bildprofil aus einem Ordner entfernen, erben automatisch alle Unter
 
 Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** ein Bildprofil aus einem Ordner entfernen. In diesem Abschnitt werden die beiden Möglichkeiten beschrieben, wie Sie Bildprofile aus Ordnern entfernen können.
 
-### Entfernen von Bildprofilen für Dynamic Media aus Ordnern über die Benutzeroberfläche „Profile“ {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Entfernen von Bildprofilen für Dynamic Media aus Ordnern über die Benutzeroberfläche „Profile“  {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
 1. Wählen Sie ein Bildprofil aus, das Sie aus einem Ordner oder mehreren Ordnern entfernen möchten.
@@ -285,7 +285,7 @@ Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befind
 
    Sie können überprüfen, ob das Bildprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
-### Entfernen von Bildprofilen für Dynamic Media aus Ordnern über „Eigenschaften“ {#removing-image-profiles-from-folders-via-properties}
+### Entfernen von Bildprofilen für Dynamic Media aus Ordnern über „Eigenschaften“  {#removing-image-profiles-from-folders-via-properties}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Bildprofil entfernen möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
