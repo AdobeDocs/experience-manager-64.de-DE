@@ -3,9 +3,9 @@ title: Multi-Tenancy für Sammlungen, Snippets und Snippet-Vorlagen
 description: Trennen Sie Inhalte im CRX-Repository basierend auf der Kundenorganisation, um unbefugten Zugriff zu verhindern.
 contentOwner: AG
 feature: Sammlungen
-role: Architect,Administrator,Leader
+role: Architect,Admin,Leader
 exl-id: d00a671a-6707-4941-868d-fa13510b7b60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 35%
