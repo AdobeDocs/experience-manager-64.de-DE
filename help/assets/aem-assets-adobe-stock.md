@@ -3,9 +3,9 @@ title: Verwalten Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manage
 description: Suchen, lizenzieren, verwalten und rufen Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 feature: Search,Adobe Stock
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 6025d91dfaaf51f42a9594987a62d23507e1e8a9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 80%
@@ -30,7 +30,7 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 >
 >Nur [!DNL Experience Manager]- und [!DNL Admin Console]-Administratoren einer Organisation können die Integration durchführen, da hierfür Administratorrechte erforderlich sind.
 
-### Erstellen einer IMS-Konfiguration   {#create-an-ims-configuration}
+### Erstellen einer IMS-Konfiguration  {#create-an-ims-configuration}
 
 1. Navigieren Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloud-Lösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
