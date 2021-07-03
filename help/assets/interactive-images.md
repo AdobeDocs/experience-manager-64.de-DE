@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: Interaktive Bilder
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4261'
 ht-degree: 78%
@@ -184,7 +184,7 @@ Auf Grundlage einer solchen Analyse würden Sie `categoryId` und `SKU` für Hots
 
 Jetzt können Sie ein Bildbanner hochladen und diesem Hotspots mit der Funktion für interaktive Bilder mit Shopping-Funktion in AEM Assets hinzufügen.
 
-## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder  {#optional-creating-an-interactive-image-viewer-preset}
+## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder {#optional-creating-an-interactive-image-viewer-preset}
 
 Sie können die standardmäßige Viewer-Vorgabe für interaktive Bilder mit dem Namen **[!UICONTROL Shoppable_Banner]** verwenden, die im Lieferumfang von AEM Assets enthalten ist. Sie können auch eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Bilder erstellen.
 
@@ -215,7 +215,7 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der L
 
    Sie sind nun bereit, ein Bildbanner hochzuladen.
 
-## Hochladen eines Bildbanners  {#uploading-an-image-banner}
+## Hochladen eines Bildbanners {#uploading-an-image-banner}
 
 Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem nächsten Schritt fort: [Hinzufügen von Hotspots zu einem Bildbanner](#adding-hotspots-to-an-image-banner).
 
@@ -227,7 +227,7 @@ Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem n
 
    Sie können jetzt dem Bildbanner Hotspots hinzuzufügen. Anweisungen dazu finden Sie in der folgenden Aufgabe.
 
-## Hinzufügen von Hotspots zu einem Bildbanner  {#adding-hotspots-to-an-image-banner}
+## Hinzufügen von Hotspots zu einem Bildbanner {#adding-hotspots-to-an-image-banner}
 
 Sie können einem Bildbanner Hotspots hinzufügen, indem Sie den Editor auf der Seite **[!UICONTROL Hotspot-Verwaltung]** verwenden.
 
@@ -318,7 +318,7 @@ d. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn im Bild aus und tipp
    >
    >Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
-### (Optional) Anzeigen einer Vorschau für interaktive Bilder  {#optional-previewing-interactive-images}
+### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
 
 Mithilfe der Vorschau können Sie eine Darstellung des interaktiven Bildes aus der Perspektive der Kunden anzeigen und die Hotspots des Bildes testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
 
@@ -382,7 +382,7 @@ Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.a
 
 Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
-## Integrieren eines interaktiven Bildes in einer Schnellansicht   {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrieren eines interaktiven Bildes in einer Schnellansicht  {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
