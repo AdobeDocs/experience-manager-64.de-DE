@@ -3,9 +3,9 @@ title: Lightbox
 description: Erfahren Sie mehr über Lightbox in AEM Assets.
 contentOwner: AG
 feature: Entwicklertools,Ausgabedarstellungen
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 98%
@@ -20,7 +20,7 @@ Lightbox ist ein spezieller Sammlungstyp, der den einfachen Zugriff auf Assets e
 
 Wenn Sie Adobe Experience Manager (AEM) Assets verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
 
-## Hinzufügen von Assets zu Lightbox  {#adding-assets-to-lightbox}
+## Hinzufügen von Assets zu Lightbox {#adding-assets-to-lightbox}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche die Assets aus, die zu Lightbox hinzugefügt werden sollen.
 1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Lightbox ablegen]**. Lassen Sie die Maustaste los, wenn die Dropzone aktiv wird und sich die Bezeichnung in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
