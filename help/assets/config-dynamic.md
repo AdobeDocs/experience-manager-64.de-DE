@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Konfiguration,Hybridmodus
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 56%
@@ -175,7 +175,7 @@ Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic 
    * s7access-&lt;jjjj>&lt;mm>&lt;tt>.log - Das s7access-Protokoll zeichnet alle Anfragen auf, die über `/is/image` und `/is/content` an Dynamic Media gesendet werden.
    Diese Protokolle werden nur verwendet, wenn Dynamic Media aktiviert ist. Sie sind nicht im Paket **Download Full** enthalten, das von der Seite **[!UICONTROL system/console/status-Bundlelist]** generiert wird. Wenn Sie den Kundensupport aufrufen, wenn Sie ein Dynamic Media-Problem haben, hängen Sie beide Protokolle an das Problem an.
 
-### Wenn Sie AEM auf einen anderen Port oder Kontextpfad installiert haben ... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Bei Installation von AEM über einen anderen Port oder Kontextpfad {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 Wenn Sie [AEM auf einem Anwendungsserver](/help/sites-deploying/application-server-install.md) bereitstellen und Dynamic Media aktiviert haben, müssen Sie die Domäne **self** im Externalizer konfigurieren. Andernfalls funktioniert die Generierung von Miniaturansichten für Dynamic Media Assets nicht richtig.
 
@@ -193,7 +193,7 @@ In einer AEM QuickStart-WAR-Bereitstellung können die Portnummer und der Kontex
 >[!NOTE]
 Bei einer [eigenständigen AEM Quickstart-Bereitstellung](/help/sites-deploying/deploy.md) muss die Domäne **self** im Allgemeinen nicht konfiguriert werden, weil die Portnummer und der Kontextpfad automatisch konfiguriert werden können. Sie müssen die Domäne **self** aber konfigurieren, wenn alle Netzwerkschnittstellen deaktiviert sind.
 
-## Deaktivieren von Dynamic Media   {#disabling-dynamic-media}
+## Deaktivieren von Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media ist standardmäßig deaktiviert. Wenn Sie Dynamic Media aktiviert haben, kann es sein, dass Sie es zu einem späteren Zeitpunkt deaktivieren möchten.
 
@@ -334,7 +334,7 @@ Sie können die Überprüfung auch durchführen, indem Sie einen der folgenden S
 
 Hier sind einige Probleme, die beim Einrichten der Authentifizierung auftreten können, und die dazugehörigen Lösungen angegeben. Achten Sie darauf, dass Sie die Replikation eingerichtet haben, bevor Sie diese Angaben prüfen.
 
-#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich)  {#problem-http-status-code-with-message-authorization-required}
+#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich) {#problem-http-status-code-with-message-authorization-required}
 
 Dieses Problem kann auftreten, wenn der KeyStore für den Benutzer `dynamic-media-replication` nicht eingerichtet wurde.
 
@@ -375,7 +375,7 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 
 **Lösung**: Überprüfen Sie das Kennwort. Das im Replikationsagenten gespeicherte Kennwort entspricht nicht dem Kennwort, das zum Erstellen des KeyStore verwendet wurde.
 
-#### Problem: InvalidAlgorithmParameterException  {#problem-invalidalgorithmparameterexception}
+#### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 Dieses Problem wird durch einen Konfigurationsfehler in Ihrer AEM-Autoreninstanz verursacht. Für den Java-Prozess des Autors wird nicht das richtige `javax.net.ssl.trustStore`-Element verwendet. Dieser Fehler ist im Replikationsprotokoll enthalten:
 
@@ -426,7 +426,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. Tippen Sie auf **[!UICONTROL Verbindung testen]**, um zu überprüfen, ob die Konfiguration gültig ist.
 
-#### Problem: Für den Veröffentlichungsagenten wird SSL anstelle von OAuth verwendet  {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### Problem: Für den Veröffentlichungsagenten wird SSL anstelle von OAuth verwendet {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 Dieses Problem kann durch einen Hotfix, ein nicht korrekt installiertes Feature Pack oder Überschreiben der Einstellungen verursacht werden.
 
@@ -458,7 +458,7 @@ Beispiel für Replikationsprotokoll:
 
 1. Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
 
-### Testen der Konfiguration {#testing-your-configuration}
+### Konfiguration testen {#testing-your-configuration}
 
 Adobe empfiehlt, für die Konfiguration einen umfassenden Test durchzuführen.
 
@@ -482,7 +482,7 @@ Gehen Sie wie folgt vor, um die Konfiguration zu testen:
 
 Eine andere Möglichkeit zum Testen der Bereitstellung Ihrer Assets besteht darin, „req=exists“ an die URL anzufügen.
 
-## Konfigurieren von Dynamic Media Cloud Services  {#configuring-dynamic-media-cloud-services}
+## Konfigurieren von Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
 Der Dynamic Media Cloud Service bietet Unterstützung für Cloud-Services, z. B. hybride Veröffentlichung und Bereitstellung von Bildern und Videos, Videoanalyse und Videokodierung.
 
@@ -532,7 +532,7 @@ Wenn Sie diese Aufgabe abgeschlossen haben, verfügen Sie über eine Paketdatei 
 1. Erstellen Sie das Paket.
 1. Laden Sie das Vorgabenpaket [!DNL Video Analytics] herunter oder geben Sie es frei, damit es für nachfolgende neue Autorknoten freigegeben werden kann.
 
-### Installieren des Vorgabenpakets [!DNL Video Analytics] , bevor Sie zusätzliche Autorknoten {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes} konfigurieren
+### Installieren des Vorgabenpakets [!DNL Video Analytics] , bevor Sie zusätzliche Autorknoten konfigurieren {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Stellen Sie sicher, dass Sie diese Aufgabe _vor_ ausführen, dass Sie **[!UICONTROL Dynamic Media-Konfiguration (vor 6.3)]** konfigurieren. Andernfalls wird eine weitere nicht verwendete Report Suite erstellt. Darüber hinaus wird die Datenerfassung nicht optimiert, obwohl die Videoberichte korrekt ausgeführt werden.
 
@@ -644,7 +644,7 @@ Neben der Replikation der Assets werden auch die folgenden Nicht-Assets replizie
 
 Mit den Filtern können Sie Assets von der Replikation auf dem AEM-Veröffentlichungsknoten _ausschließen_.
 
-### Verwenden von standardmäßigen Asset-Filtern für die Replikation {#using-default-asset-filters-for-replication}
+### Verwenden von Asset-Standardfiltern für die Replikation {#using-default-asset-filters-for-replication}
 
 Wenn Sie Dynamic Media für 1) Bildbearbeitung in der Produktion _oder_ 2) verwenden, können Sie die Standardfilter verwenden, die wir im Ist-Zustand bereitstellen. Folgende Filter sind standardmäßig aktiviert:
 
@@ -822,7 +822,7 @@ Dynamic Media arbeitet standardmäßig [nach der Aktivierung](#enabling-dynamic-
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Standardwert</strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
@@ -948,7 +948,7 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
  </tbody> 
 </table>
 
-## Konfigurieren des Farbmanagements für dynamische Medien  {#configuring-dynamic-media-color-management}
+## Konfigurieren des Farbmanagements für dynamische Medien {#configuring-dynamic-media-color-management}
 
 Beim Farbmanagement für dynamische Medien können Sie die richtigen Assets für die Vorschauanzeige farbig markieren.
 
