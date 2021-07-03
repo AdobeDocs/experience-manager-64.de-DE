@@ -7,8 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
 feature: Panoramabilder
-role: Business Practitioner
-source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 39%
@@ -68,7 +68,7 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 1. Tippen Sie in der rechten unteren Ecke auf **[!UICONTROL Close]**.
 
-### Fehlerbehebung für die Komponente für Panoramamedien {#troubleshooting-the-panoramic-media-wcm-component}
+### Fehlerbehebung für die Komponente &quot;Panoramamedien&quot; {#troubleshooting-the-panoramic-media-wcm-component}
 
 Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramamedien]** in Ihrem WCM abgelegt haben und der Komponenten-Platzhalter ausgeblendet ist, sollten Sie eine Fehlerbehebung für Folgendes durchführen:
 
@@ -82,6 +82,6 @@ Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramamedien]** in Ihrem WCM
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern    {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
