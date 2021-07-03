@@ -3,16 +3,16 @@ title: Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeite
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
 feature: Ausgabeformate,Entwicklertools
-role: Administrator
+role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 59%
 
 ---
 
-# Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.{#install-and-configure-imagemagick-to-work-with-aem-assets}
+# Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können. {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick ist ein Software-Plug-in zum Erstellen, Bearbeiten, Zusammenstellen oder Konvertieren von Bitmap-Bildern. Es kann Bilder in verschiedenen Formaten (über 200) lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe von Bildern zu ändern, Bilder zu kippen, zu spiegeln, zu drehen, zu verzerren, zuzuschneiden und umzuwandeln. Darüber hinaus können Sie mit ImageMagick die Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
 
@@ -34,7 +34,7 @@ Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssyste
 1. Legen Sie die Path-Umgebungsvariable auf das ImageMagick-Installationsverzeichnis fest.
 1. Um zu überprüfen, ob die Installation erfolgreich war, führen Sie den Befehl `identify -version` aus.
 
-## Einrichten eines Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
+## Einrichten des Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
 
 Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Führen Sie diese Schritte aus, um jedes Mal, wenn Sie eine JPEG-Bilddatei zu `/content/dam` auf dem AEM hinzufügen, ein gespiegeltes Bild und Miniaturansichten (140x100, 48x48, 319x319 und 1280x1280) zu generieren:
 
