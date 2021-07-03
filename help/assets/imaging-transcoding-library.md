@@ -3,9 +3,9 @@ title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
 feature: Ausgabedarstellungen,Entwickler-Tools,Asset-Verarbeitung
-role: Administrator
+role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 37%
@@ -105,7 +105,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 1. Um sicherzustellen, dass der Wert des Pfads auf `.` festgelegt ist, verwenden Sie den Befehl `echo $LD_LIBRARY_PATH`. Die Ausgabe sollte einfach `.` sein. Wenn der Wert nicht auf `.` gesetzt ist, starten Sie die Sitzung neu.
 
-### Workflow &quot;DAM-Update-Asset konfigurieren&quot;{#configure-dam-asset-update-workflow}
+### DAM Update Asset-Workflow konfigurieren {#configure-dam-asset-update-workflow}
 
 Aktualisieren Sie den Workflow [!UICONTROL DAM Update Asset] , um die Bibliothek zur Verarbeitung von Bildern zu verwenden.
 
