@@ -8,10 +8,10 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset-Management, Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 52%
+ht-degree: 51%
 
 ---
 
@@ -44,7 +44,7 @@ Standardmäßig gestattet der AEM Assets das Hochladen von Assets, die aufgrund 
 Ändern Sie zusätzlich zur AEM Assets-Konfiguration die folgenden Konfigurationen, um große Assets hochzuladen:
 
 * Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in der Web-Konsole unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
-* Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options).
 
 >[!NOTE]
 >
