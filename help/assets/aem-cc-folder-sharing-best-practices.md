@@ -3,9 +3,9 @@ title: AEM Assets-Ordner mit Creative Cloud freigeben
 description: Konfiguration und Best Practices, damit Benutzer von Adobe Experience Manager Assets Asset-Ordner mit Adobe Creative Cloud-Benutzern austauschen können.
 contentOwner: AG
 feature: Zusammenarbeit
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 44%
@@ -29,7 +29,7 @@ Diese Art der Integration kann in beiden Fällen verwendet werden, insbesondere 
 >
 >Vor der Lektüre dieses Dokuments können Sie sich die allgemeinen [Best Practices zur AEM- und Creative Cloud-Integration](aem-cc-integration-best-practices.md) durchlesen, wenn Sie sich zunächst einen Überblick über dieses Thema verschaffen möchten.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Freigabe von Ordnern AEM Creative Cloud beruht auf der serverseitigen Freigabe von Ordnern und Dateien zwischen AEM Assets- und Creative Cloud-Konten. Kreativprofis, die das Creative Cloud-Desktop-Programm auf ihren Desktops verwenden, können die freigegebenen Ordner zusätzlich mithilfe der Adobe CreativeSync-Technologie direkt auf ihren Datenträgern verfügbar machen.
 
