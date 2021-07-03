@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
-feature: 'Komponenten '
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Komponenten
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 62%
@@ -29,7 +29,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als WCM ver
 >
 >Sie müssen Assets veröffentlichen, um sie Seiten in AEM hinzufügen zu können. Siehe [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md).
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite  {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite {#adding-a-dynamic-media-component-to-a-page}
 
 Das Hinzufügen einer Dynamic Media-Komponente zu einer Seite entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten ausführlich beschrieben.
 
@@ -100,7 +100,7 @@ Dynamic Media und interaktive Medien sind auf der Registerkarte [!UICONTROL Dyna
 
 ![chlimage_1-539](assets/chlimage_1-539.png)
 
-### Komponente „Dynamische Medien“{#dynamic-media-component}
+### Komponente „Dynamische Medien“ {#dynamic-media-component}
 
 Die Dynamic Media-Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Darüber hinaus ist der Viewer responsiv. Das heißt, die Größe des Bildschirms ändert sich automatisch entsprechend der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
@@ -121,7 +121,7 @@ Die Dynamic Media-Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder V
 
 
 
-#### Arbeiten mit Bildern   {#when-working-with-images}
+#### Arbeiten mit Bildern  {#when-working-with-images}
 
 Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
@@ -234,7 +234,7 @@ Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemisc
 * **** Höhe und  ****
 BreiteGeben Sie den Wert in Pixel an, wenn das smarte Zuschnittbild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
-### Komponente für interaktive Medien {#interactive-media-component}
+### Interaktive Medienkomponente {#interactive-media-component}
 
 Die Komponente „Interaktive Medien“ ist für Assets mit interaktiven Elementen wie Hotspots oder Imagemaps vorgesehen. Verwenden Sie bei interaktiven Bildern, interaktiven Videos oder Karussellbannern die Komponente Interaktive Medien.
 
