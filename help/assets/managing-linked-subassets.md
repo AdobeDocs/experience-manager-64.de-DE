@@ -2,10 +2,10 @@
 title: Verwalten von ebenenübergreifenden Assets und Generieren von Unter-Assets.
 description: Erfahren Sie, wie Sie Verweise auf AEM Assets aus InDesign-, Adobe Illustrator- und Photoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Business Practitioner,Administrator
+feature: Asset-Management
+role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 47%
@@ -53,7 +53,7 @@ Referenzierte Assets sind bereits in AEM Assets enthalten. Sie können Unter-Ass
 
 Wenn eine INDD-Datei hochgeladen wird, werden die Verweise abgerufen, indem Assets mit der Eigenschaft `xmpMM:InstanceID` und `xmpMM:DocumentID` im Repository abgefragt werden.
 
-### Erstellen von Verweisen durch Ziehen von Assets {#create-references-by-dragging-aem-assets}
+### Erstellen von Referenzen durch Ziehen von Assets {#create-references-by-dragging-aem-assets}
 
 Dieses Verfahren ähnelt [Hinzufügen von Assets als Referenzen in Adobe Illustrator](#refai).
 
@@ -109,7 +109,7 @@ Die Teil-Assets werden nur angezeigt, wenn die Teil-Assets generiert wurden und 
 
 ![Anzeigen von Unter-Assets für ein mehrseitiges Asset](assets/view_subassets_simulation.gif)
 
-## Anzeigen von Seiten einer mehrseitigen Datei   {#view-pages-of-a-multi-page-file}
+## Anzeigen von Seiten einer mehrseitigen Datei  {#view-pages-of-a-multi-page-file}
 
 Mit der Funktion &quot;Seitenanzeige&quot;von AEM Assets können Sie eine mehrseitige Datei wie PDF, INDD, PPT, PPTX und AI anzeigen. Öffnen Sie ein mehrseitiges Asset und klicken Sie oben links auf der Seite auf **[!UICONTROL Seiten anzeigen]** . Der daraufhin geöffnete Seiten-Viewer zeigt die Seiten des Assets und die Steuerelemente zum Durchsuchen und Zoomen der einzelnen Seiten an.
 
