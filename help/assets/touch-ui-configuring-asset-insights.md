@@ -3,16 +3,16 @@ title: Konfigurieren von Asset Insights
 description: Erfahren Sie, wie Sie Assets Insights in AEM Assets konfigurieren.
 contentOwner: AG
 feature: Asset Insights,Asset-Berichte
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
-# Konfigurieren von Assets Insights {#configuring-asset-insights}
+# Konfigurieren von Asset Insights {#configuring-asset-insights}
 
 Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von Websites von Drittanbietern aus Adobe Analytics ab. Damit Assets Insights diese Daten abrufen und Einblicke generieren kann, konfigurieren Sie zunächst die Funktion zur Integration in Adobe Analytics.
 
