@@ -10,16 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: Asset-Verwaltung
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Asset-Management
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Bereitstellung von Inhalt über HTTP/2   {#http-delivery-of-content}
+# Bereitstellung von Inhalt über HTTP/2  {#http-delivery-of-content}
 
 Adobe freut sich, die Bereitstellung von Inhalt über HTTP/2 zu präsentieren, die eine Verbesserung der Leistung mit sich bringt.
 
@@ -44,7 +44,7 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Bin ich berechtigt, auf HTTP/2 umzustellen?  {#am-i-eligible-to-switch-over-to-http}
+## Bin ich berechtigt, auf HTTP/2 umzustellen?   {#am-i-eligible-to-switch-over-to-http}
 
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
@@ -86,13 +86,13 @@ Anfragen werden in der Reihenfolge verarbeitet, in der sie beim technischen Supp
 >
 >Die Vorlaufzeit kann lang sein, da die Umstellung auf HTTP/2 die Löschung des Cache erfordert. Es können daher nur wenige Umstellungen zugleich durchgeführt werden.
 
-## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?  {#what-are-the-risks-with-moving-to-http}
+## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?   {#what-are-the-risks-with-moving-to-http}
 
 Durch die Umstellung auf HTTP/2 wird Ihr Cache im CDN gelöscht, da eine neue CDN-Konfiguration erforderlich ist.
 
 Der nicht zwischengespeicherte Inhalt wird direkt an die ursprünglichen Server von Adobe übertragen, bis der Cache neu aufgebaut wird. Aus diesem Grund führt Adobe nur wenige Umstellungen zugleich durch, wodurch eine akzeptable Leistung aufrechterhalten werden kann, wenn Anforderungen aus unserer Quelle abgerufen werden.
 
-## Wie kann festgestellt werden, ob eine URL oder eine Website mit HTTP/2 aktiviert wurde?   {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Wie kann festgestellt werden, ob eine URL oder eine Website mit HTTP/2 aktiviert wurde?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
 
