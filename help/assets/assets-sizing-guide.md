@@ -5,10 +5,10 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Asset-Verwaltung
-role: Architect,Administrator
+feature: Asset-Management
+role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 88%
@@ -69,19 +69,19 @@ Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutz
 
 Aufgrund gewisser Fallstricke wird die Freigabe eines Datenspeichers nicht in allen Fällen empfohlen.
 
-#### Single Point of Failure  {#single-point-of-failure}
+#### Single Point of Failure {#single-point-of-failure}
 
 Mit einem freigegebenen Datenspeicher entsteht ein Single Point of Failure in einer Infrastruktur. Stellen Sie sich ein Szenario vor, bei dem Ihr System eine Autoreninstanz und zwei Veröffentlichungsinstanzen aufweist, jeweils mit einem eigenen Datenspeicher. Stürzt einer der Datenspeicher ab, können die beiden anderen nach wie vor ausgeführt werden. Wenn der Datenspeicher jedoch gemeinsam genutzt wird, kann der Ausfall einer einzigen Festplatte die gesamte Infrastruktur zum Erliegen bringen. Stellen Sie daher sicher, dass Sie eine Sicherung des freigegebenen Datenspeichers aufbewahren, über die Sie den Datenspeicher schnell wiederherstellen können.
 
 Den AWS S3-Dienst für freigegebene Datenspeicher bereitzustellen, wird vorgezogen, weil hierdurch die Wahrscheinlichkeit eines Ausfalls gegenüber normalen Festplattenarchitekturen deutlich reduziert wird.
 
-#### Höhere Komplexität  {#increased-complexity}
+#### Höhere Komplexität {#increased-complexity}
 
 Freigegebene Datenspeicher erhöhen ebenfalls die Komplexität solcher Vorgänge, etwa der automatischen Speicherbereinigung. Normalerweise kann die automatische Speicherbereinigung für einen Standalone-Datenspeicher mit einem einzigen Klick initiiert werden. Allerdings setzen freigegebene Datenspeicher zusätzlich zu der auf jedem Knoten tatsächlich durchgeführten Bereinigung Mark-Sweep-Vorgänge auf jedem Mitglied voraus, das den Datenspeicher nutzt.
 
 Bei AWS-Vorgängen können, wenn statt des Aufbaus eines RAID-Arrays von EBS-Volumes ein zentraler Speicherort (über S3) implementiert wird, die Komplexität und die Betriebsrisiken auf dem System deutlich kompensiert werden.
 
-#### Leistungsprobleme  {#performance-concerns}
+#### Leistungsprobleme {#performance-concerns}
 
 Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Im Falle von AWS-Vorgängen liegen alle Festplatten remote vor, sodass eine Netzwerkanbindung erforderlich ist. Auf flüchtigen Volumes gehen Daten beim Starten und Stoppen von Instanzen verloren.
 
@@ -89,7 +89,7 @@ Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwe
 
 Latenz in S3-Implementierungen ist auf die im Hintergrund durchgeführten Schreibthreads zurückzuführen. Für Sicherungsvorgänge müssen diese Latenz und etwaige Abladevorgänge berücksichtigt werden. Das S3-Asset ist beim Start eines Abladeauftrags unter Umständen nicht in S3 vorhanden. Außerdem bleiben Lucene-Indizes möglicherweise unvollständig, wenn eine Sicherung durchgeführt wird. Dies gilt für alle zeitempfindlichen Dateien, die in einen S3-Datenspeicher geschrieben werden und auf die von einer anderen Instanz zugegriffen wird.
 
-### Knotenspeicher/Dokumentspeicher  {#node-store-document-store}
+### Knotenspeicher/Dokumentspeicher {#node-store-document-store}
 
 Es ist schwierig, genaue Dimensionierungszahlen für einen Knotenspeicher oder Dokumentspeicher zu ermitteln, da Ressourcen durch Folgendes verbraucht werden:
 
@@ -144,6 +144,6 @@ Wurden die Wiedergaben nicht korrekt generiert, verwenden Sie die Camera Raw-Bib
 
 Die bei einem bestimmten Heap standardmäßig unterstützte TIFF-Dateigröße für AEM lässt sich nur schwer abschätzen, weil die Verarbeitung durch zusätzliche Faktoren wie die Pixelgröße beeinflusst wird. Es ist möglich, dass AEM eine 255 MB große Datei standardmäßig verarbeiten kann, aber eine 18 MB große Datei nicht, weil sich letztere gegenüber der ersteren eine ungewöhnlich hohe Anzahl an Pixel aufweist.
 
-## Größe der Assets  {#size-of-assets}
+## Größe der Assets {#size-of-assets}
 
 Standardmäßig können AEM Assets mit Dateigrößen von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in AEM finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
