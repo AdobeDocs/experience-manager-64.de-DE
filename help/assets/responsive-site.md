@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von optimierten Bildern für eine responsive Site
+title: Bereitstellen von optimierten Bildern für eine responsive Website
 description: Verwendung der Funktion für responsiven Code in Dynamic Media zur Bereitstellung optimierter Bilder
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,8 +8,8 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 exl-id: 36bb526c-a6d9-4296-8318-97ac72d6b3ba
 feature: Veröffentlichung
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 90%
