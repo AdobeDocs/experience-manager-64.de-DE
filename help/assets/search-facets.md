@@ -2,10 +2,10 @@
 title: Suchfacetten
 description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
 contentOwner: AG
-feature: Suchen
-role: Administrator,Developer
+feature: Suche
+role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Zusammengefasst bieten Suchfacetten Ihnen die Möglichkeit, auf verschiedene Art
 
 Wenn Sie beispielsweise nach einem Bild suchen, können Sie auswählen, ob Sie ein Bitmap- oder ein Vektorbild möchten. Sie können die Suchergebnisse weiter eingrenzen, indem Sie den MIME-Typ für das Bild festlegen. Wenn Sie nach Dokumenten suchen, können Sie auf ähnliche Weise das gewünschte Format festlegen, z. B. PDF oder MS Word.
 
-## Hinzufügen einer Eigenschaft  {#adding-a-predicate}
+## Hinzufügen einer Eigenschaft {#adding-a-predicate}
 
 Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zugrunde liegenden Suchformular mithilfe von Prädikaten definiert. Um weitere oder andere Facetten anzuzeigen, fügen Sie dem standardmäßigen Formular Prädikate hinzu oder verwenden Sie ein benutzerdefiniertes Formular, das Facetten Ihrer Wahl enthält.
 
@@ -81,7 +81,7 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „V
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Suchbereich. Das Prädikat „Eigenschaft“ wird dem Bereich hinzugefügt.
 1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. Geben Sie beispielsweise „Adobe“ ein. Wenn Sie eine Suche durchführen, werden Assets mit der Beschreibung „Adobe“ in den Suchergebnissen aufgelistet.
 
-## Hinzufügen einer Options-Eigenschaft  {#adding-an-options-predicate}
+## Hinzufügen einer Options-Eigenschaft {#adding-an-options-predicate}
 
 Mit dem Options-Prädikat können Sie mehrere Suchoptionen im Bedienfeld „Filter“ hinzufügen. Sie können eine oder mehrere dieser Optionen im Bedienfeld „Filter“ auswählen, um nach Assets zu suchen. Beispiel: Um basierend auf dem Dateityp nach Assets zu suchen, konfigurieren Sie Optionen, wie Bilder, Multimedia, Dokumente und Archive im Suchformular. Nachdem Sie diese Optionen konfiguriert haben, wird die Suche für Assets vom Typ GIF, JPEG, PNG usw. ausgeführt, wenn Sie im Bedienfeld „Filter“ die Option „Bilder“ auswählen.
 
@@ -135,7 +135,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Suchfeld. Die Options-Eigenschaft wird dem Bereich **Suchen** hinzugefügt. Die Optionen für **[!UICONTROL Dateityp]** werden als Kontrollkästchen angezeigt.
 
-## Mehrwert-Eigenschaftsprädikat hinzufügen  {#adding-a-multi-value-property-predicate}
+## Mehrwert-Eigenschaftsprädikat hinzufügen {#adding-a-multi-value-property-predicate}
 
 Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Angenommen, Sie haben in AEM Assets Bilder mehrerer Produkte, deren Metadaten die zum Produkt gehörende Artikelnummer enthalten. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
@@ -148,7 +148,7 @@ Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Asset
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Bedienfeld „Filter“. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
 1. Geben Sie im Feld „Mehrwert“ mehrere durch Trennzeichen getrennte Werte ein und führen Sie die Suche aus. Die Eigenschaft sucht für die eingegebenen Werte nach genau übereinstimmenden Texten.
 
-## Hinzufügen eines Tag-Prädikats  {#adding-a-tags-predicate}
+## Hinzufügen eines Tag-Prädikats {#adding-a-tags-predicate}
 
 Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. AEM Assets sucht standardmäßig nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
@@ -173,7 +173,7 @@ Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. AEM Assets
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen anderer Eigenschaften   {#adding-other-predicates}
+## Hinzufügen anderer Eigenschaften  {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
@@ -194,7 +194,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
 | [!UICONTROL Gültigkeitsstatus] | Suchprädikat für die Suche nach Assets basierend auf ihrem Ablaufstatus | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Ausgeblendet] | Suchprädikat, das eine versteckte Feldeigenschaft für die Suche nach Assets definiert | <ul><li>Eigenschaftsname</li><li>Eigenschaftswert</li><li>Beschreibung</li></ul> |
 
-## Wiederherstellen der Standard-Suchfacetten  {#restoring-default-search-facets}
+## Wiederherstellen der Standard-Suchfacetten {#restoring-default-search-facets}
 
 Standardmäßig wird vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** das Sperrsymbol angezeigt. Das Sperrsymbol wird ausgeblendet, wenn Sie dem Formular Suchfacetten hinzufügen, um anzugeben, dass das Standardformular geändert wurde.
 
