@@ -3,16 +3,16 @@ title: Unterstützung von Camera Raw
 description: Erfahren Sie, wie Sie die Camera Raw Unterstützung in Adobe Experience Manager Assets aktivieren.
 contentOwner: AG
 feature: Entwickler-Tools
-role: Administrator
+role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 45%
 
 ---
 
-# Verwenden Sie Camera Raw zur Verarbeitung von Bildern {#camera-raw-support}
+# Verwenden von Camera Raw zur Bildverarbeitung {#camera-raw-support}
 
 Sie können die Camera Raw Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird in Adobe Experience Manager Assets mit dem unter Softwareverteilung verfügbaren Camera Raw Paket [a1/> unterstützt.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)
 
@@ -71,7 +71,7 @@ Nun können Sie Camera Raw-Dateien in AEM Assets importieren. Nachdem Sie das 
 
 Nach Speichern der Änderungen in einem Camera Raw-Bild wird die neue Darstellung `AdjustedPreview.jpg` für das Bild erstellt. Für andere Bildtypen als Camera Raw werden die Änderungen in allen Darstellungen übernommen.
 
-## Best Practices, bekannte Probleme und Einschränkungen  {#best-practices}
+## Best Practices, bekannte Probleme und Einschränkungen {#best-practices}
 
 Für die Funktionalität gelten folgende Einschränkungen:
 
