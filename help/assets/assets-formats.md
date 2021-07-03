@@ -3,9 +3,9 @@ title: In AEM Assets unterstützte Dateiformate
 description: Liste der von AEM Assets unterstützten Dateiformate und MIME-Typen sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 feature: Asset-Management,Ausgabeformate
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 64%
@@ -26,7 +26,7 @@ Die Legende gibt den Grad der Unterstützung an.
 | * | Mit Funktionen von Zusatzmodulen unterstützt |
 | - | Nicht zutreffend |
 
-## Rasterbildformate {#supported-raster-image-formats}
+## Raster-Bildformate {#supported-raster-image-formats}
 
 Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 
@@ -192,7 +192,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | WMV | verwalten | verwalten |  | * | * |
 | SWF | verwalten | verwalten |  |  |  |
 
-## Eingabevideoformate für Dynamic Media Transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Eingabevideoformate für die Dynamic Media-Transkodierung {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 |---|---|---|---|
@@ -227,7 +227,7 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 
 **†** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht. Die ZIP-Archive, die unter Verwendung des `Deflate64`-Algorithmus erstellt werden, werden in AEM nur begrenzt unterstützt. Archivierungs- und Archivierungsvorgänge werden nicht unterstützt. Jedoch werden Operationen wie das Laden, Navigieren und Herunterladen unterstützt.
 
-## Weitere unterstützte Formate  {#other-supported-formats}
+## Weitere unterstützte Formate {#other-supported-formats}
 
 Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wird in der folgenden Tabelle beschrieben.
 
