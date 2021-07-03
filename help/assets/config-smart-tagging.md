@@ -3,16 +3,16 @@ title: Konfigurieren Sie Asset-Tagging mit dem Smart Content Service.
 description: Erfahren Sie, wie Sie mithilfe des Smart Content Service Smart Tagging und verbessertes Smart-Tagging in [!DNL Adobe Experience Manager] konfigurieren.
 contentOwner: AG
 feature: Smart-Tags, Tagging
-role: Administrator
+role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 49%
 
 ---
 
-# Konfigurieren von Asset-Tags mithilfe des Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
+# Konfigurieren von Asset-Tags mit dem Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
 Sie können [!DNL Adobe Experience Manager] mit dem Smart Content Service mit [!DNL Adobe Developer Console] integrieren. Verwenden Sie diese Konfiguration, um von [!DNL Experience Manager] aus auf den Smart Content Service zuzugreifen.
 
@@ -38,7 +38,7 @@ Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher, um 
 
 Um optimierte Smart-Tags zu aktivieren, installieren Sie zusätzlich zu den oben genannten auch das neueste [Experience Manager Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
 
-## Erstellen Sie die Konfiguration Smart Content Service , um das öffentliche Zertifikat {#obtain-public-certificate} zu erhalten.
+## Erstellen der Konfiguration des Smart Content Service zum Abrufen eines öffentlichen Zertifikats {#obtain-public-certificate}
 
 Mit einem öffentlichen Zertifikat können Sie Ihr Profil auf [!DNL Adobe Developer Console] authentifizieren.
 
@@ -92,7 +92,7 @@ Nachdem ein Zertifikat abgelaufen ist, wird es nicht mehr als vertrauenswürdig 
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie zu den vorhandenen Smart Content Services auf der Seite **[!UICONTROL Integrationen]**. Laden Sie das neue Zertifikat hoch. Weitere Informationen finden Sie in den Anweisungen unter [Adobe Developer Console-Integration erstellen](#create-adobe-i-o-integration).
 
-## Adobe Developer Console-Integration erstellen {#create-adobe-i-o-integration}
+## Integration der Adobe Developer Console erstellen {#create-adobe-i-o-integration}
 
 Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um [!UICONTROL API-Schlüssel] zu erhalten (generiert im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANIZATION ID] und [!UICONTROL . CLIENT SECRET] für [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager].
 
