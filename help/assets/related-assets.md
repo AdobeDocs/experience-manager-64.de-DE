@@ -3,9 +3,9 @@ title: Zugehörige Assets
 description: Erfahren Sie, wie Sie Assets mit bestimmten gemeinsamen Attributen verknüpfen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen.
 contentOwner: AG
 feature: Asset-Management, Zusammenarbeit
-role: Business Practitioner
+role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 99%
@@ -18,7 +18,7 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Assets manuell entsprechen
 
 Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z. B. PDF/JPG) mit Mitarbeitern/Agenturen zu teilen und die Datei mit hoher Auflösung (z. B. INDD) nur auf Anfrage zur Verfügung zu stellen.
 
-## Zugehörige Assets  {#relating-assets}
+## Zugehörige Assets {#relating-assets}
 
 1. Öffnen Sie in der Benutzeroberfläche von Assets die Eigenschaftenseite für ein Asset, das Sie zuordnen möchten.
 
@@ -63,7 +63,7 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
 
 1. Klicken/tippen Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Die Assets, für die Sie Verbindungen entfernt haben, werden aus der Liste der zugeordneten Assets im Abschnitt **[!UICONTROL Zugehörig]** gelöscht.
 
-## Übersetzen von zugehörigen Assets  {#translating-related-assets}
+## Übersetzen von zugehörigen Assets {#translating-related-assets}
 
 Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgeleiteten Beziehungen zwischen Assets mit der Funktion „Zugehörige Assets“ nützlich. Wenn Sie für ein abgeleitetes Asset einen Übersetzungs-Workflow ausführen, ruft AEM Assets automatisch beliebige Assets ab, die von der Quelldatei referenziert werden, und nimmt sie in die Übersetzung auf. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
 
