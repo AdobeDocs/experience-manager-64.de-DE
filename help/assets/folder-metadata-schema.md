@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
 feature: 'Metadaten  '
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Metadatenschemata für Ass
 >
 >Diese Funktion erfordert AEM 6.4 mit mindestens Service Pack 2. Informationen zum AEM 6.4 Service Pack finden Sie in den [Versionshinweisen](/help/release-notes/sp-release-notes.md).
 
-## Hinzufügen von Ordner-Metadatenschema-Formularen   {#add-a-folder-metadata-schema-form}
+## Hinzufügen von Ordner-Metadatenschema-Formularen  {#add-a-folder-metadata-schema-form}
 
 Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata für Ordner zu erstellen und zu bearbeiten.
 
@@ -32,7 +32,7 @@ Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata f�
 1. Tippen/klicken Sie auf der Seite „Ordner-Metadatenschema-Formulare“ auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen für das Formular an und tippen/klicken Sie auf **[!UICONTROL Erstellen]**. Das neue Schemaformular wird auf der Seite „Schemaformulare“ aufgeführt.
 
-## Bearbeiten von Ordner-Metadatenschema-Formularen   {#edit-folder-metadata-schema-forms}
+## Bearbeiten von Ordner-Metadatenschema-Formularen  {#edit-folder-metadata-schema-forms}
 
 Sie können neu erstellte oder bestehende Metadatenschema-Formulare bearbeiten. Hierzu zählen folgende Elemente:
 
@@ -62,14 +62,14 @@ Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im
 
 1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-### Komponenten zum Erstellen von Formularen   {#components-to-build-forms}
+### Komponenten zum Erstellen von Formularen  {#components-to-build-forms}
 
 Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente, die Sie im Ordner-Metadatenschema-Formular verwenden. Die Registerkarte **[!UICONTROL Einstellungen]** enthält die Attribute für jedes Element, das Sie auf der Registerkarte **[!UICONTROL Formular erstellen]** auswählen. Im Folgenden finden Sie eine Liste der auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbaren Elemente:
 
 | Komponentenname | Beschreibung |
 |---|---|
 | [!UICONTROL Bereichs-Kopfzeile] | Fügen Sie eine Abschnittsüberschrift für eine Liste allgemeiner Komponenten hinzu. |
-| [!UICONTROL Einzelzeilentext] | Fügen Sie eine einzeilige Texteigenschaft hinzu. Diese wird als Zeichenfolge gespeichert. |
+| [!UICONTROL Einzeilentext] | Fügen Sie eine einzeilige Texteigenschaft hinzu. Diese wird als Zeichenfolge gespeichert. |
 | [!UICONTROL Mehrwerttext] | Fügen Sie eine Texteigenschaft mit mehreren Werten hinzu. Diese wird als Zeichenfolgen-Array gespeichert. |
 | [!UICONTROL Zahl] | Fügen Sie eine Zahlenkomponente hinzu. |
 | [!UICONTROL Datum] | Fügen Sie eine Datumskomponente hinzu. |
@@ -77,7 +77,7 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 | [!UICONTROL Standard-Tags] | Fügen Sie ein Tag hinzu. |
 | [!UICONTROL Ausgeblendetes Feld] | Fügen Sie ein ausgeblendetes Feld hinzu. Dieses wird beim Speichern des Assets als POST-Parameter gesendet. |
 
-### Bearbeiten von Formularelementen   {#editing-form-items}
+### Bearbeiten von Formularelementen  {#editing-form-items}
 
 Um die Eigenschaften von Formularelementen zu bearbeiten, tippen/klicken Sie auf die Komponente und bearbeiten Sie folgende Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
@@ -103,7 +103,7 @@ Um zu gewährleisten, dass die Komponente ordnungsgemäß im Metadatenschema-For
 
 **[!UICONTROL Klasse]**: Objektklasse, der die Eigenschaft zugeordnet ist.
 
-## Löschen von Ordner-Metadatenschema-Formularen   {#delete-folder-metadata-schema-forms}
+## Löschen von Ordner-Metadatenschema-Formularen  {#delete-folder-metadata-schema-forms}
 
 Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadatenschema-Formulare“ löschen. Um ein Formular zu löschen, wählen Sie es aus und tippen/klicken Sie in der Symbolleiste auf das Löschsymbol.
 
@@ -115,7 +115,7 @@ Sie können ein Ordner-Metadatenschema über die Seite „Ordner-Metadatenschema
 
 Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in der Eigenschaft `folderMetadataSchema` des Ordnerknotens unter */jcr:content* gespeichert.
 
-### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
 1. Wählen Sie auf der Seite „Ordner-Metadatenschema-Formulare“ das Schemaformular aus, das Sie auf einen Ordner anwenden möchten.
