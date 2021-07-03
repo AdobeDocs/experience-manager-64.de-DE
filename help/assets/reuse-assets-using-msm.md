@@ -4,16 +4,16 @@ description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus ü
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset-Management, Multi-Site-Manager
-role: Business Practitioner,Administrator,Architect
+role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 79%
 
 ---
 
-# Wiederverwenden von mit MSM für Assets[!DNL Assets]{#reuse-assets-using-msm-for-assets}
+# Wiederverwenden von mit MSM für Assets[!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 Mit der Funktion &quot;Multi Site Manager&quot;(MSM) in [!DNL Adobe Experience Manager] können Benutzer Inhalte wiederverwenden, die einmal erstellt und über mehrere Webspeicherorte hinweg wiederverwendet werden. Dasselbe gilt für digitale Assets wie MSM für die Funktion [!DNL Assets]. Mit MSM für [!DNL Assets] können Sie:
 
@@ -37,7 +37,7 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 * Sie Live Copies aktualisieren können, indem Sie die Live-Beziehung aussetzen oder die Vererbung für wenige begrenzte Felder entfernen. Die Änderungen an der Quelle werden nicht mehr auf die Live Copy angewendet.
 
-### Glossar der Begriffe in MSM für Assets    {#glossary-msm-for-assets}
+### Glossar der Begriffe in MSM für Assets   {#glossary-msm-for-assets}
 
 * **Quelle:** Die ursprünglichen Assets oder Ordner. Primäre Kopie, von der Live Copies abgeleitet werden.
 
@@ -102,7 +102,7 @@ Sie können Informationen und MSM-bezogene Status der Live Copy wie Beziehung, 
 >
 >Um den Status einiger separater Live Copies zu überprüfen, verwenden Sie die erste Methode, um die Seite **[!UICONTROL Eigenschaften]** zu überprüfen. Um den Status vieler Live Copies zu überprüfen, verwenden Sie die zweite Methode, um die Seite **[!UICONTROL Beziehungsstatus]** zu überprüfen.
 
-### Informationen und Status von Live Copies    {#information-status-of-one-lc}
+### Informationen und Status von Live Copies   {#information-status-of-one-lc}
 
 Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-Assets oder -Ordners zu prüfen.
 
@@ -144,7 +144,7 @@ Klicken Sie für eine bestimmte Live Copy auf **[!UICONTROL Live Copy bearbeit
 
 ![Für eine bestimmte Live Copy ist die Option zum Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration über die Leiste &quot;Verweise&quot;verfügbar, wenn das Quell-Asset ausgewählt ist.](assets/lc_edit_referencerail.png)
 
-### Schnellaktionen in der Leiste „Verweise“ für Live Copies    {#quick-actions-from-references-rail-for-live-copy}
+### Schnellaktionen in der Leiste „Verweise“ für Live Copies   {#quick-actions-from-references-rail-for-live-copy}
 
 Für Live Copy-Assets oder -Ordner können Sie die folgenden Informationen über die Leiste „Verweise“ anzeigen und die folgenden Aktionen von dort aus direkt ausführen:
 
@@ -156,11 +156,11 @@ Wählen Sie Live Copy-Asset oder -Ordner aus, öffnen Sie die linke Leiste und 
 
 ![In der Leiste „Verweise“ für die ausgewählte Live Copy verfügbare Aktionen](assets/lc_referencerail.png)
 
-## Übertragen von Änderungen von der Quelle an Live Copies    {#propagate-modifications-from-source-to-live-copies}
+## Übertragen von Änderungen von der Quelle an Live Copies   {#propagate-modifications-from-source-to-live-copies}
 
 Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe einer Aktion „Synchronisieren“ oder „Rollout“ an die Live Copies übertragen werden. Informationen zu den Unterschieden zwischen beiden Aktionen finden Sie im [Glossar](#glossary-msm-for-assets).
 
-### Aktion „Rollout“ {#rollout-action}
+### Aktion „Rollout“  {#rollout-action}
 
 Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle oder einige ausgewählte Live Copies aktualisieren.
 
@@ -178,7 +178,7 @@ Alternativ können Sie eine Rollout-Aktion über die Leiste [!UICONTROL Verweise
 
 ![Rollout von Quelländerungen an die ausgewählte Live Copy](assets/lc_rollout_dialog.png)
 
-### Wissenswertes über die Aktion „Synchronisieren“ {#about-synchronize-action}
+### Wissenswertes über die Aktion „Synchronisieren“  {#about-synchronize-action}
 
 Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur an die ausgewählte Live Copy übertragen. Die Aktion „Synchronisieren“ respektiert und bewahrt die lokalen Änderungen, die nach dem Abbrechen der Vererbung vorgenommen wurden. Die lokalen Änderungen werden nicht überschrieben und die abgebrochene Vererbung wird nicht wiederhergestellt. Sie haben drei Möglichkeiten, um eine Aktion „Synchronisieren“ zu initiieren.
 
@@ -188,7 +188,7 @@ Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur 
 | Symbolleiste auf der Seite [!UICONTROL Eigenschaften] | Initiieren von Synchronisationen bei bereits öffneten Live Copy-Eigenschaften | Siehe [Synchronisieren von Live Copies](#synchronize-live-copy) |
 | [!UICONTROL Konsole „Live Copy-Übersicht“] | Schnelles Synchronisieren mehrerer Assets (nicht notwendigerweise aller), wenn der Quellordner ausgewählt ist oder die Konsole [!UICONTROL Live Copy-Übersicht] bereits geöffnet ist. Initiieren der Aktion „Synchronisieren“ für jeweils ein Asset, aber eine schnellere Methode, um mehrere Assets auf einmal zu synchronisieren | Siehe [Aktionen für viele Assets in einem Live Copy-Ordner](#take-actions-on-many-assets-in-lcfolder) |
 
-### Synchronisieren von Live Copies    {#synchronize-live-copy}
+### Synchronisieren von Live Copies   {#synchronize-live-copy}
 
 Um eine Aktion „Synchronisieren“ zu starten, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
 
@@ -218,7 +218,7 @@ Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den S
 
 ![Aktion &quot;Zurücksetzen&quot;- Überschreiben lokaler Bearbeitungen und Abgleichen der Live Copy mit der zugehörigen Quelle](assets/lc_reset.png)
 
-## Entfernen von Live-Beziehungen    {#remove-live-relationship}
+## Entfernen von Live-Beziehungen   {#remove-live-relationship}
 
 Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen als neues Asset in der AEM-Oberfläche angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
 
