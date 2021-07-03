@@ -3,9 +3,9 @@ title: Verbesserungen beim Benutzererlebnis von Assets
 description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis von AEM 6.4 Assets beschrieben.
 contentOwner: AG
 feature: Versionshinweise
-role: Leader,Business Practitioner
+role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 79%
@@ -20,7 +20,7 @@ Die Benutzeroberfläche ist responsiver und hilft Ihnen, ein großes Asset-Portf
 
 Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und Spaltenansicht. Beispielsweise können Sie die Größe der Miniaturen konfigurieren, die in der Kartenansicht angezeigt werden sollen. In der Listenansicht können Sie konfigurieren, wie detailgenau die Assets in der Liste angezeigt werden sollen. AEM 6.4 Assets enthält eine neue Baumansicht, mit der Sie einfach durch das Asset-Repository navigieren und Ihre Assets finden können.
 
-## Lazy Loading (langsames Laden)  {#lazy-loading}
+## Lazy Loading (langsames Laden) {#lazy-loading}
 
 Wenn Sie in AEM 6.4 Assets nach Assets suchen bzw. die Assets durchsuchen, werden gleichzeitig bis zu 200 Assets angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
 
@@ -76,7 +76,7 @@ Navigieren Sie in der Inhaltshierarchie zum gewünschten Asset.
 
 ![navigate_contenttree](assets/navigate_contenttree.png)
 
-## Navigation durch Asset-Details.{#navigating-asset-details}
+## Navigation durch Asset-Details. {#navigating-asset-details}
 
 Die Asset-Detailseite enthält jetzt die Schaltflächen Zurück und Weiter in der Symbolleiste, damit Sie alle Bilder in einem Ordner nacheinander anzeigen können.
 
