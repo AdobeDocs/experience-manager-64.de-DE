@@ -3,16 +3,16 @@ title: Verwenden von PDF Rasterizer zum Generieren von Ausgabeformaten
 description: Generieren Sie mit der Adobe PDF Rasterizer-Bibliothek hochwertige Miniaturansichten und Ausgabeformate.
 contentOwner: AG
 feature: Entwicklertools,Ausgabedarstellungen
-role: Developer,Administrator
+role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 40%
 
 ---
 
-# PDF Rasterizer {#using-pdf-rasterizer} verwenden
+# PDF Rasterizer verwenden {#using-pdf-rasterizer}
 
 Wenn Sie große, inhaltsintensive PDF- oder AI-Dateien in [!DNL Adobe Experience Manager Assets] hochladen, erzeugt die Standardbibliothek möglicherweise keine genaue Ausgabe. Die PDF Rasterizer-Bibliothek von Adobe kann eine zuverlässigere und genauere Ausgabe generieren, wenn sie mit der Ausgabe einer Standardbibliothek verglichen wird. Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für die folgenden Szenarien:
 
