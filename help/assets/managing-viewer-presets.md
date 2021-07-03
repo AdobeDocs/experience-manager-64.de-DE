@@ -12,8 +12,8 @@ discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: Viewer-Vorgaben
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 77%
@@ -37,7 +37,7 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 >
 >Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorhandenen Viewer-Vorgaben* als Szenario nicht unterstützt wird. Wenn Sie versuchen, eine standardmäßig vorhandene Viewer-Vorgabe zu bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern.
 
-## Möglichkeit des Zugriffs auf die Tastatur im Viewer  {#keyboard-accessibility-for-viewers}
+## Möglichkeit des Zugriffs auf die Tastatur im Viewer {#keyboard-accessibility-for-viewers}
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
@@ -53,7 +53,7 @@ Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffent
 >
 >Standardmäßig zeigt das System 15 Viewer-Vorgaben, wenn Sie in einer Detailansicht eines Assets „Viewer“ auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](#increasing-the-number-of-viewer-presets-that-display).
 
-## Viewer-Unterstützung für Web-Seiten mit responsivem Design  {#viewer-support-for-responsive-designed-web-pages}
+## Viewer-Unterstützung für Web-Seiten mit responsivem Design {#viewer-support-for-responsive-designed-web-pages}
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Host-Seite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder es kann *responsive* sein und auf verschiedenen Geräten oder für verschiedene Browser-Fenstergrößen unterschiedlich angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
@@ -64,7 +64,7 @@ Weitere Informationen zum Einbetten responsiver Viewer auf Web-Seiten finden Sie
 >Sie müssen zunächst alle standardmäßig vorhandenen Viewer veröffentlichen, um sie verwenden zu können.\
 >Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
-## Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
+## Systemkompatibilität von Viewer-Vorgaben  {#viewer-preset-system-compatibility}
 
 Alle standardmäßig vorhandenen Viewer-Vorgaben, die mit Dynamic Media bereitgestellt werden, sind mit den folgenden Systemen vollständig kompatibel:
 
@@ -159,7 +159,7 @@ In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf i
 | **Streichen** | Scrollt Farbfeldleiste | Scrollt Bilder | Dreht |
 | **Schnippen** | Scrollt Farbfeldleiste | Scrollt Bilder | Dreht |
 
-## Erhöhung der Anzahl der Dynamic Media-Viewer-Vorgaben, die {#increasing-the-number-of-viewer-presets-that-display} anzeigen
+## Erhöhen der Anzahl angezeigter Dynamic Media-Viewer-Vorgaben {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM zeigt verschiedene Viewer-Vorgaben an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Viewer]** anzeigen. Sie können die Anzahl der angezeigten Viewer erhöhen oder verringern.
 
@@ -250,7 +250,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
-## Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos  {#special-considerations-for-creating-an-interactive-viewer-preset}
+## Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Wissenswertes über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
