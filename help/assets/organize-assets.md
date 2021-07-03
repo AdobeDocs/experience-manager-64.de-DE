@@ -3,9 +3,9 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mithilfe von Experience Manager.
 contentOwner: AG
 feature: Asset-Verwaltung, Suche
-role: Business Practitioner
+role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 19%
@@ -38,7 +38,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 * Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern werden, damit Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
 * Wenn ein Asset bereits veröffentlicht ist, verwenden Sie AEM zum Verschieben des Assets in einen anderen Ordner und zum erneuten Veröffentlichen von seinem neuen Speicherort aus, ist der ursprünglich veröffentlichte Asset-Speicherort weiterhin verfügbar, zusammen mit dem neu veröffentlichten Asset. Das ursprünglich veröffentlichte Asset ist jedoch *AEM* und kann nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
 
-## Organisieren von Assets mit den Tags {#use-tags-to-organize-assets}
+## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
 Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mithilfe der Suchergebnisse erstellen, das Suchangebot für einige Assets verbessern und die KI-Algorithmen von Adobe Sensei für die Asset-Erkennung nutzen.
 
@@ -61,7 +61,7 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## Organisieren Sie Ihre Assets für die Verwendung von Profilen {#organize-to-use-profiles}
+## Organisieren von Assets zur Verwendung von Profilen {#organize-to-use-profiles}
 
 Ein Verarbeitungsprofil enthält Asset-Verarbeitungsbefehle, die für Assets gelten, die in vordefinierte Ordner hochgeladen werden. Profile werden verwendet, um die Verarbeitung von Inhalten eines Ordners oder von neu hochgeladenen Assets zu automatisieren. Sie können Profile nutzen, um Ihre Assets besser zu organisieren.
 
