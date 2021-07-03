@@ -3,9 +3,9 @@ title: Überlegungen zum Assets-Netzwerk
 description: Enthält Netzwerküberlegungen für die Implementierung von AEM Assets.
 contentOwner: AG
 feature: Entwickler-Tools
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 100%
@@ -41,13 +41,13 @@ Unten links im Diagramm sind zwei Geräte dargestellt, die mit dem Unternehmensn
 
 Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzwerk über eine VPN-Verbindung mit einer Geschwindigkeit von 1 MBit/s. Das Benutzererlebnis bei der 1 MBit/s schnellen Verbindung unterscheidet sich erheblich vom Benutzererlebnis bei der 1 GBit/s schnellen Verbindung. Je nach Größe der Assets, mit denen Benutzer interagieren, kann ihr VPN-Uplink für die Aufgabe nicht ausreichend sein.
 
-## Topologie des Unternehmensnetzwerks   {#topology-of-the-corporate-network}
+## Topologie des Unternehmensnetzwerks  {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
 Das Diagramm zeigt höhere Uplinkgeschwindigkeiten innerhalb des Unternehmensnetzwerks, als im Allgemeinen üblich sind. Diese Leitungen sind freigegebene Ressourcen. Wenn erwartet wird, dass ein freigegebener Switch die Vorgänge von 50 Clients abwickelt, kann es möglicherweise zu einem Engpass kommen. Im anfangs gezeigten Diagramm nutzen nur zwei Computer die betreffende Verbindung.
 
-## Uplink zum Internet vom Unternehmensnetzwerk und von der AEM-Umgebung      {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uplink zum Internet vom Unternehmensnetzwerk und von der AEM-Umgebung     {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -63,7 +63,7 @@ Dies ist der kleinste Engpass in Bezug auf Clients. Sie können jedoch die für 
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
-## Topologie der AEM-Umgebung   {#topology-of-the-aem-environment}
+## Topologie der AEM-Umgebung  {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
