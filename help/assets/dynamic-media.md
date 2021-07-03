@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: Asset-Management,Ausgabeformate
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 90%
@@ -29,7 +29,7 @@ Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen u
 >
 >Es gibt einen Community-Artikel zum Thema [Arbeiten mit Adobe Experience Manager und Dynamic Media](https://helpx.adobe.com/de/experience-manager/using/aem_dynamic_media.html).
 
-## Einsatzmöglichkeiten für Dynamic Media      {#what-you-can-do-with-dynamic-media}
+## Einsatzmöglichkeiten für Dynamic Media     {#what-you-can-do-with-dynamic-media}
 
 Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](managing-assets-touch-ui.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
@@ -76,7 +76,7 @@ Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn Dyn
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF-Ausgabeformate {#ptiff-renditions}
+### PTIFF-Ausgabedarstellungen {#ptiff-renditions}
 
 Assets mit aktivierter Dynamic Media-Funktion umfassen `pyramid.tiffs`.
 
