@@ -3,16 +3,16 @@ title: Verarbeiten von Assets mit Medien-Handlern und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
 feature: Workflow,Ausgabedarstellungen
-role: Business Practitioner
+role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 45%
 
 ---
 
-# Verarbeiten von Assets mithilfe von Medien-Handlern und Workflows {#processing-assets-using-media-handlers-and-workflows}
+# Verarbeiten von Assets mit Medien-Handlern und Workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Medien-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungsaufgabe und delegiert dann die spezifischen Aufgaben an die Medien-Handler, z. B. die Erstellung von Miniaturbildern oder die Metadatenextraktion.
 
@@ -85,7 +85,7 @@ So aktivieren/deaktivieren Sie einen Medien-Handler:
 
 Um einen neuen Medientyp zu unterstützen oder bestimmte Aufgaben für ein Asset auszuführen, müssen Sie einen Medien-Handler erstellen. In diesem Abschnitt wird beschrieben, wie Sie vorgehen.
 
-#### Wichtige Klassen und Schnittstellen      {#important-classes-and-interfaces}
+#### Wichtige Klassen und Schnittstellen     {#important-classes-and-interfaces}
 
 Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die `com.day.cq.dam.core.AbstractAssetHandler`-Klasse.
 
@@ -463,7 +463,7 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 * Löscht das temporäre Verzeichnis.
 * Erstellt Miniaturbilder auf der Grundlage dieser Ausgabeformate, falls angegeben. Die Anzahl und die Abmessungen von Miniaturbildern werden durch die Argumente des Schritts definiert.
 
-### Beispiel für die Verwendung von ImageMagick {#an-example-using-imagemagick}
+### Beispiel mit ImageMagick {#an-example-using-imagemagick}
 
 Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt einrichten. Jedes Mal, wenn ein Asset mit dem MIME-Typ gif oder tiff zu `/content/dam` auf dem Experience Manager-Server hinzugefügt wird, wird ein gespiegeltes Bild des Originals zusammen mit drei weiteren Miniaturansichten (140 x 100, 48 x 48 und 10 x 250) erstellt.
 
@@ -499,7 +499,7 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinz
 1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Öffnen Sie das Asset `myImage.tiff` und prüfen Sie, ob das gespiegelte Bilder und die drei Miniaturbilder erstellt wurden.
 
-#### Konfigurieren Sie den Prozessschritt CommandLineProcess {#configuring-the-commandlineprocess-process-step}
+#### Prozessschritt &quot;CommandLineProcess&quot;konfigurieren {#configuring-the-commandlineprocess-process-step}
 
 In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozess-Argumente] durch ein Komma und beginnen Sie keinen Wert mit einem Leerzeichen.
 
