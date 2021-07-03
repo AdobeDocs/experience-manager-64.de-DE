@@ -3,16 +3,16 @@ title: Verwenden von Apache Tika zur Erkennung des MIME-Typs digitaler Assets
 description: Aktivieren Sie Apache Tika, damit AEM Assets beim Upload-Vorgang den MIME-Typ von Assets aus dem Inhalts-Stream anstelle der Dateierweiterung erkennen kann.
 contentOwner: AG
 feature: Metadaten,Entwicklertools,Asset-Management
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 36%
 
 ---
 
-# Verwenden Sie Apache Tika, um den MIME-Typ digitaler Assets zu erkennen {#detecting-mime-type-of-assets-using-apache-tika}
+# Verwenden von Apache Tika zur Erkennung des MIME-Typs digitaler Assets {#detecting-mime-type-of-assets-using-apache-tika}
 
 Normalerweise erkennt Adobe Experience Manager (AEM) Assets den MIME-Typ der Assets, die Sie von ihrer Dateierweiterung hochladen. Wenn Sie Apache Tika verwenden, um Assets hochzuladen, erkennt AEM Assets deren MIME-Typ durch den Content Stream während des Uploadvorgangs statt durch die Dateierweiterung. 
 
