@@ -3,9 +3,9 @@ title: Erstellen und Konfigurieren von Asset-Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
 feature: Entwicklertools,Asset Management
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3318'
 ht-degree: 79%
@@ -133,7 +133,7 @@ Folgende Linsen sind verfügbar:
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-#### Anpassen des Query Builders {#customizing-the-query-builder}
+#### Query Builder anpassen {#customizing-the-query-builder}
 
 Über den Query Builder können Sie Suchbegriffe eingeben und Inhalt für die Asset-Freigabe-Seite erstellen. Wenn Sie den Query Builder bearbeiten, können Sie auch festlegen, wie viele Suchergebnisse pro Seite angezeigt werden und welcher Asset-Editor beim Doppelklicken auf ein Asset geöffnet wird. Außerdem können Sie den Pfad bestimmen, der über die Abfrage durchsucht wird, und wie Knotentypen angepasst werden.
 
@@ -232,7 +232,7 @@ So stellen Sie die Asset-Editor-Seite ein:
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Hinzufügen von Asset-Editor-Komponenten {#adding-asset-editor-components}
+#### Hinzufügen von Asset Editor-Komponenten {#adding-asset-editor-components}
 
 Sie können bestimmen, welche Funktionen ein Asset-Editor besitzt, indem Sie der Seite Komponenten hinzufügen.
 
@@ -295,7 +295,7 @@ Das Metadatenformular ist ein Formular mit Start- und Endaktion. Dazwischen nehm
 
 Auf der Asset-Editor-Seite können Benutzer dann Werte in die Metadatenfelder eingeben (sofern diese bearbeitbar sind) und die Endaktion ausführen (etwa Änderungen übermitteln).
 
-#### Unter-Assets  {#sub-assets}
+#### Unter-Assets {#sub-assets}
 
 Über die Komponente „Unter-Assets“ können Sie Unter-Assets anzeigen und auswählen. Sie können festlegen, welche Namen unter dem [Haupt-Asset](assets.md#what-are-digital-assets) und den Unter-Assets angezeigt werden.
 
@@ -365,7 +365,7 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Titel“:
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-#### Hinzufügen von Asset-Editor-Aktionen {#adding-asset-editor-actions}
+#### Hinzufügen von Asset Editor-Aktionen {#adding-asset-editor-actions}
 
 Sie können anhand einer Auswahl vordefinierter Aktionen festlegen, welche Aktionen Benutzer für ausgewählte digitale Assets ausführen können.
 
