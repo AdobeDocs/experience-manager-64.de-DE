@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: Karussellbanner
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4789'
 ht-degree: 88%
@@ -93,7 +93,7 @@ So schaffen Sie einen schnellen Einstieg:
    * [Fügen Sie Ihrer Website in AEM ein Karussellbanner hinzu.](adding-dynamic-media-assets-to-pages.md) Wenn Sie AEM Sites-Kunde sind, können Sie das Karussell-Set der Seite in AEM direkt hinzufügen, indem Sie die interaktive Medienkomponente verwenden.
 
 
-Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von Karussellsets](#editing-carousel-sets). . Darüber hinaus können Sie [Eigenschaften von Karussellsets](/help/assets/managing-assets-touch-ui.md#editing-properties) anzeigen und bearbeiten.
+Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von Karussellsets](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussellsets](/help/assets/managing-assets-touch-ui.md#editing-properties) anzeigen und bearbeiten.
 
 ## Ermitteln von Hotspot- und Imagemap-Variablen {#identifying-hotspot-and-image-map-variables}
 
@@ -183,7 +183,7 @@ Wenn Sie bereits die Bilder hochgeladen haben, die Sie verwenden möchten, fahre
 
 Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md).
 
-## Erstellen von Karussellsets  {#creating-carousel-sets}
+## Erstellen von Karussellsets   {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
 
    Siehe [Hinzufügen eines Karussellsets zur Landingpage Ihrer Website](#adding-a-carousel-banner-to-your-website-page).
 
-## Bearbeiten von Karussellsets  {#editing-carousel-sets}
+## Bearbeiten von Karussellsets   {#editing-carousel-sets}
 
 >[!NOTE]
 >
