@@ -2,17 +2,17 @@
 title: Asset-Überwachung – Best Practices
 description: Best Practices für die Überwachung der Umgebung und Leistung Ihrer AEM-Instanz nach der Bereitstellung.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Administrator,Architect
+feature: Asset-Management
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
-# Best Practices für die Asset-Überwachung {#assets-monitoring-best-practices}
+# Asset-Überwachung – Best Practices {#assets-monitoring-best-practices}
 
 Aus Sicht von Adobe Experience Manager (AEM) Assets sollte die Überwachung das Beobachten und das Erstellen von Berichten für die folgenden Prozesse und Technologien umfassen:
 
@@ -74,7 +74,7 @@ Die Umgebungsüberwachung umfasst die Überwachung der folgenden Punkte:
 
 Sie benötigen externe Tools, z. B. NewRelic(TM) und AppDynamics(TM), um die einzelnen Elemente zu überwachen. Mit diesen Tools können Sie spezifische Warnungen für Ihr System generieren, z. B. für hohe Systemauslastung, Workflow-Stau, Fehler bei Integritätsprüfungen oder nicht authentifizierten Zugriff auf Ihre Website. Adobe spricht keinerlei Empfehlungen für bestimmte Tools aus. Ermitteln Sie, welches Tool für Ihre Zwecke am besten geeignet ist, und setzen Sie es dann ein, um die erwähnten Punkte zu überwachen.
 
-#### Interne Anwendungsüberwachung  {#internal-application-monitoring}
+#### Interne Anwendungsüberwachung {#internal-application-monitoring}
 
 Die interne Anwendungsüberwachung umfasst das Überwachen der Anwendungskomponenten, aus denen der AEM-Stapel besteht, z. B. JVM, das Inhaltsrepository und die Überwachung mit benutzerdefiniertem Anwendungscode, der auf der Plattform erstellt wird. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
 
