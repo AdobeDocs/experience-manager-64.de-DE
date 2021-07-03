@@ -8,11 +8,11 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Bildvorgaben
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
-ht-degree: 81%
+source-wordcount: '3838'
+ht-degree: 80%
 
 ---
 
@@ -60,7 +60,7 @@ Sie verwalten Ihre Bildvorgaben in AEM, indem Sie auf das AEM Logo tippen, um au
 >
 >Das System zeigt mehrere Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. **** Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF   {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF  {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 Wenn Sie AI-, EPS- und PDF-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
@@ -85,7 +85,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 >
 >Im Workflow **[!UICONTROL DAM Update Asset]** generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
 
-### Metadateneigenschaften von PDF-/AI-/EPS-Assets  {#pdf-ai-eps-asset-metadata-properties}
+### Metadateneigenschaften von PDF-/AI-/EPS-Assets {#pdf-ai-eps-asset-metadata-properties}
 
 | **Metadateneigenschaft** | **Beschreibung** |
 |---|---|
@@ -138,7 +138,7 @@ Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines
 
 Für die Prozesskomponente **[!UICONTROL PDF-/AI-Bildvorschau-Wiedergabe rastern]** ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Zu große Bilder können zu einem Überlauf des für die JVM (Java Virtual Machine) bereitgestellten Speichers führen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
 
-### InDesign-Dateiformat (INDD)  {#indesign-indd-file-format}
+### InDesign-Dateiformat (INDD) {#indesign-indd-file-format}
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
@@ -213,7 +213,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **width:he
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
 
-### Erhöhen oder Verringern der Anzahl der Dynamic Media-Bildvorgaben, die {#increasing-or-decreasing-the-number-of-image-presets-that-display} anzeigen
+### Erhöhen oder Verringern der Anzahl angezeigter Dynamic Media-Bildvorgaben {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen. AEM zeigt verschiedene dynamische Ausgabedarstellungen an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Ausgabedarstellung]** anzeigen. Sie können die Anzahl der angezeigten Ausgabedarstellungen erhöhen oder verringern.
 
@@ -291,7 +291,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 * **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**  - Wählen Sie  **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**  nicht aus (dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für &quot;Unschärfemaske&quot;).
 * **[!UICONTROL Scharfzeichnen: Resampling Mode]**  - Wählen Sie  **[!UICONTROL Bikubisch]** aus.
 
-#### Optionen auf der Registerkarte „Basis“ {#basic-tab-options}
+#### Optionen auf der Registerkarte „Basis“  {#basic-tab-options}
 
 <table> 
  <tbody> 
@@ -340,7 +340,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
  </tbody>
 </table>
 
-#### Optionen auf der Registerkarte „Erweitert“ {#advanced-tab-options}
+#### Optionen auf der Registerkarte „Erweitert“  {#advanced-tab-options}
 
 <table>
  <tbody>
