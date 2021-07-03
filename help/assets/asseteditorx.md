@@ -3,9 +3,9 @@ title: Erweitern des Asset-Editors
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 feature: Entwickler-Tools
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 98%
@@ -20,7 +20,7 @@ Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wir
 
 Zusätzlich zur Verwendung von vorhandenen Editor-Komponenten können Adobe Experience Manager (AEM)-Entwickler ihre eigenen Komponenten erstellen.
 
-## Erstellen einer Asset-Editor-Vorlage      {#creating-an-asset-editor-template}
+## Erstellen einer Asset-Editor-Vorlage     {#creating-an-asset-editor-template}
 
 Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
@@ -58,7 +58,7 @@ Einige der Komponenten von AEM Assets verwenden die AEM-Widget-Bibliothek. Dami
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx-Stylesheet      {#geometrixx-style-sheet}
+### Geometrixx-Stylesheet     {#geometrixx-style-sheet}
 
 Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.asseteditor` von `static.css` (`/etc/designs/geometrixx/static.css`) beginnen. Best Practice: Kopieren Sie alle `.asseteditor`-Selektoren in Ihr Stylesheet und passen Sie bei Bedarf die Regeln an.
 
@@ -121,7 +121,7 @@ Verwenden Sie im HTML-Teil den vorhergehenden festgelegten Titel (entweder Asset
 <title><%= title %></title>
 ```
 
-## Erstellen einer Feldkomponente für ein einfaches Formular      {#creating-a-simple-form-field-component}
+## Erstellen einer Feldkomponente für ein einfaches Formular     {#creating-a-simple-form-field-component}
 
 In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Metadaten eines geladenen Assets anzeigt.
 
@@ -202,7 +202,7 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
 
 1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, müssen sie dem Metadatenformular hinzugefügt werden.
 
-## Ändern von Metadatenoptionen      {#modifying-metadata-options}
+## Ändern von Metadatenoptionen     {#modifying-metadata-options}
 
 Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) verfügbaren Namespaces ändern.
 
