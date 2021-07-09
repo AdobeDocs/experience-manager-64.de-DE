@@ -8,9 +8,9 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
 feature: Bereitstellen
 role: Architect
-source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '375'
 ht-degree: 89%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 89%
    + [Konsistenz- und Ausnahmeprüfungen](consistency-check.md)
    + [Leistungsrichtlinien](performance-guidelines.md)
    + [Leistungsoptimierung](configuring-performance.md)
-   + [Handbuch zur Leistung von Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
+   + [Handbuch zur Leistung von Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
    + [Artikel mit Anleitungen für die Konfiguration](ht-deploy.md)
    + [Entfernen der Geometrixx-Websites](removing-the-geometrixx-sites.md)
    + [Konfigurieren der Web-Konsole](configuring-web-console.md)
