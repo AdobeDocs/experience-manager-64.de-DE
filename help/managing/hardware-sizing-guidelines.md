@@ -10,9 +10,9 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2852'
 ht-degree: 78%
 
 ---
@@ -305,7 +305,7 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow „DAM-U
 
 >[!NOTE]
 >
->Siehe auch [Richtlinien zur Asset-Leistung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
+>Siehe auch [Richtlinien zur Asset-Leistung](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html?lang=en).
 
 ### Multi-Site-Manager {#multi-site-manager}
 
