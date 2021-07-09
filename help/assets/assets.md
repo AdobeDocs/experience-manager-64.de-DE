@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset-Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
+source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '865'
 ht-degree: 37%
 
 ---
@@ -52,7 +52,7 @@ Berücksichtigen Sie bei der Entscheidung, ob ein Bild in das DAM-Repository ein
 
 Ein Asset ist ein digitales Dokument, Bild, Video oder eine digitale Audiodatei (oder ein Teil davon), das bzw. die mehrere Ausgabedarstellungen aufweisen und über Unter-Assets verfügen kann (z. B. Ebenen in einer Fotoshop-Datei, Folien in einer PowerPoint-Datei, Seiten in einem PDF-Dokument, Dateien in einer ZIP-Datei).
 
-Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
+Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en).
 
 >[!CAUTION]
 >
