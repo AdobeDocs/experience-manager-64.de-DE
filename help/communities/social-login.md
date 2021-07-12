@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
-role: Administrator
+role: Admin
 exl-id: 85dcae2f-0773-4867-a24c-056bd2f5585e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2840'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ Die Anmeldung in Social bietet die Möglichkeit, einem Site-Besucher die Möglic
 
 ![socialloginweretail](assets/socialloginweretail.png)
 
-## Übersicht über die Anmeldung in sozialen Netzwerken {#social-login-overview}
+## Social-Anmeldeübersicht {#social-login-overview}
 
 Um die Anmeldung über soziale Netzwerke einzubeziehen, ist es *erforderlich *benutzerdefinierte Facebook- und Twitter-Anwendungen zu erstellen.
 
@@ -61,7 +61,7 @@ Es gibt zwei grundlegende Konzepte:
    * Diese Felder werden unter [AEM Communities Facebook OAuth Provider](#aem-communities-facebook-oauth-provider) und [AEM Communities Twitter OAuth Provider](#aem-communities-twitter-oauth-provider) angegeben.
    * Die Standardfelder reichen für die meisten Anwendungsfälle aus, können jedoch geändert werden.
 
-## Facebook Login {#facebook-login}
+## Facebook-Anmeldung {#facebook-login}
 
 ### Facebook API-Version {#facebook-api-version}
 
@@ -107,10 +107,10 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
    **[!UICONTROL Der]** Kontextpfad sollte mit dem Cloud-Konfigurationspfad übereinstimmen, den Sie beim Erstellen/Bearbeiten einer Community-Site ausgewählt haben.
 
 1. Überprüfen Sie, ob Ihr Kontextpfad aktiviert ist, um Cloud-Services darunter zu erstellen.
-1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**. Wählen Sie Ihren Kontext aus und bearbeiten Sie Eigenschaften. Aktivieren Sie Cloud-Konfigurationen , falls noch nicht aktiviert.
+1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Wählen Sie Ihren Kontext aus und bearbeiten Sie Eigenschaften. Aktivieren Sie Cloud-Konfigurationen , falls noch nicht aktiviert.
 
    ![config-propertiespng](assets/config-propertiespng.png)
-   * Weitere Informationen finden Sie in der [Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md) .
+   * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
 
 1. Erstellen/Bearbeiten Sie die Konfiguration des Facebook-Cloud-Service.
 
@@ -208,7 +208,7 @@ Die nächsten Schritte sind für Facebook und Twitter identisch:
 * [Veröffentlichen der Cloud Service-Konfigurationen](#publishcloudservices)
 * [Aktivieren für eine Community-Site](#enable-social-login)
 
-## Twitter Login {#twitter-login}
+## Twitter-Anmeldung {#twitter-login}
 
 ### Erstellen einer Twitter App {#create-a-twitter-app}
 
@@ -257,10 +257,10 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
    Der Kontextpfad sollte mit dem Cloud-Konfigurationspfad übereinstimmen, den Sie beim Erstellen/Bearbeiten einer Community-Site ausgewählt haben.
 
 1. Überprüfen Sie, ob Ihr Kontextpfad aktiviert ist, um Cloud-Services darunter zu erstellen.
-1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**. Wählen Sie Ihren Kontext aus und bearbeiten Sie Eigenschaften. Aktivieren Sie Cloud-Konfigurationen , falls noch nicht aktiviert.
+1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Wählen Sie Ihren Kontext aus und bearbeiten Sie Eigenschaften. Aktivieren Sie Cloud-Konfigurationen , falls noch nicht aktiviert.
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
-   * Weitere Informationen finden Sie in der [Dokumentation zum Konfigurationsbrowser](/help/sites-administering/configurations.md) .
+   * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
 
 1. Erstellen/Bearbeiten Sie die Konfiguration des Twitter-Cloud-Service.
 
@@ -332,7 +332,7 @@ Die nächsten Schritte sind für Facebook und Twitter identisch:
 
 ## Social-Anmeldung aktivieren {#enable-social-login}
 
-### AEM Communities Sites Console {#aem-communities-sites-console}
+### AEM Communities Sites-Konsole {#aem-communities-sites-console}
 
 Sobald ein Cloud-Service konfiguriert ist, kann er für die entsprechende Social-Anmeldeeinstellung für eine Community-Site aktiviert werden, indem der Unterbereich [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Einstellungen während der Community-Site [Erstellung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [Verwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) verwendet wird.
 
@@ -360,7 +360,7 @@ Beispiel: http://localhost:4503/content/sites/engage/en.html
 * Beachten Sie, dass die Symbolleiste oben auf der Seite aktualisiert wird, um die erfolgreiche Anmeldung widerzuspiegeln.
 * Wählen Sie **[!UICONTROL Profil]** aus: Auf der Seite &quot;Profil&quot;werden das Avatarbild, der Vorname und der Nachname des Benutzers angezeigt. Außerdem werden die Informationen aus dem Facebook- oder Twitter-Profil entsprechend den zulässigen Feldern/Parametern angezeigt.
 
-## AEM Platform OAuth-Konfigurationen {#aem-platform-oauth-configurations}
+## OAuth-Konfigurationen AEM Platform {#aem-platform-oauth-configurations}
 
 ### Adobe Granite OAuth Authentication Handler {#adobe-granite-oauth-authentication-handler}
 
@@ -440,7 +440,7 @@ Für jede OAuth-Authentifizierungs-Handler-Konfiguration werden in der Instanz z
 
 Weitere Informationen finden Sie unter [Authentifizierung mit dem externen Apache Oak-Anmeldemodul](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
 
-## OAuth User Traversal Performance {#oauth-user-traversal-performance}
+## OAuth-Benutzerübergreifende Leistung {#oauth-user-traversal-performance}
 
 Bei Community-Sites, bei denen sich Hunderttausende von Benutzern mit ihrer Facebook- oder Twitter-Anmeldung registrieren, kann die durchgängige Leistung der Abfrage, die ausgeführt wird, wenn ein Site-Besucher seine Anmeldung über soziale Netzwerke verwendet, durch Hinzufügen des folgenden Oak-Index verbessert werden.
 
