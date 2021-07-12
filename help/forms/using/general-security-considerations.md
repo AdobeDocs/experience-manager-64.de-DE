@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
-role: Administrator
+role: Admin
 exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 58%
@@ -228,19 +228,19 @@ Der JBoss-Anwendungsserver verwendet 8080 als HTTP-Standardanschluss. JBoss verf
 1. Speichern und schließen Sie die Datei.
 1. Starten Sie JBoss Application Server neu.
 
-## Sicherheitsüberlegungen für AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
+## Sicherheitsüberlegungen zu AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
 
 In diesem Abschnitt werden bestimmte Sicherheitsprobleme für AEM Forms on JEE beschrieben, über die Sie sich bewusst sein sollen.
 
-### Keine Verschlüsselung von E-Mail-Berechtigungen in der Datenbank  {#email-credentials-not-encrypted-in-database}
+### Keine Verschlüsselung von E-Mail-Berechtigungen in der Datenbank {#email-credentials-not-encrypted-in-database}
 
 Die von -Anwendungen gespeicherten E-Mail-Berechtigungen werden nicht verschlüsselt, bevor sie in der AEM Forms on JEE-Datenbank gespeichert werden. Wenn Sie einen Dienstendpunkt für die Verwendung von E-Mail konfigurieren, werden Kennwortinformationen, die bei der Endpunktkonfiguration verwendet werden, beim Speichern in der Datenbank nicht verschlüsselt.
 
-### Sensibler Inhalt für Rights Management in der Datenbank  {#sensitive-content-for-rights-management-in-the-database}
+### Sensibler Inhalt für Rights Management in der Datenbank {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um vertrauliche Informationen über Dokumentschlüssel und anderes kryptografisches Material zu speichern, das für Richtliniendokumente verwendet wird. Wenn Sie die Datenbank gegen unberechtigten Zugriff schützen, erhöht dies den Schutz dieser sensiblen Informationen.
 
-### Kennwort in Klartextformular {#password-in-clear-text-format-in-adobe-ds-xml}
+### Kennwort in unverschlüsseltem Textformular {#password-in-clear-text-format-in-adobe-ds-xml}
 
 Der zum Ausführen von AEM Forms on JEE verwendete Anwendungsserver benötigt seine eigene Konfiguration, um über eine auf dem Anwendungsserver konfigurierte Datenquelle auf Ihre Datenbank zuzugreifen. Stellen Sie sicher, dass Ihr Anwendungsserver Ihr Datenbankkennwort nicht in der Datenquellenkonfigurationsdatei im Klartext verfügbar macht.
 
