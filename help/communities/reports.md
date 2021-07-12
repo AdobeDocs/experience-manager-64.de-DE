@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
-role: Administrator
+role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 8%
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 # Berichte-Konsole {#reports-console}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die über die Autorenumgebung auf verschiedene Weise zugegriffen werden kann.
 
@@ -138,6 +138,6 @@ Wählen Sie **[!UICONTROL Generate]** aus, um den Bericht zu erstellen:
 
 ## Fehlerbehebung {#troubleshooting}
 
-### Keine Community-Sites aufgelistet {#no-community-sites-listed}
+### Keine Community-Sites aufgeführt {#no-community-sites-listed}
 
 Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Analytics für eine Site aktiviert wurde. Stellen Sie bei der Auswahl von Berichten zu Zuweisungen sicher, dass sich die Zuweisungsfunktion in der Struktur der Community-Site befindet.
