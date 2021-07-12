@@ -8,18 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Administrator
+role: Admin
 exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1995'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
-# Verwalten von Formularmetadaten  {#manage-form-metadata}
+# Verwalten von Formularmetadaten {#manage-form-metadata}
 
-## Überblick  {#overview-nbsp}
+## Übersicht  {#overview-nbsp}
 
 Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 
@@ -90,7 +90,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
    <td>Alle außer Ressource</td> 
    <td><p>Ein schreibgeschützter Wert, der automatisch basierend auf dem Formulartyp berechnet wird.</p> 
     <ul> 
-     <li>PDF/Formularvorlage/Dokument - wird aus der hochgeladenen Binärdatei abgerufen.</li> 
+     <li>PDF/Formularvorlage/Dokument – von der hochgeladenen Binärdatei abgerufen.</li> 
      <li>Adaptives Formular - Angemeldeter Benutzer zum Zeitpunkt der Formularerstellung.</li> 
     </ul> </td> 
   </tr> 
@@ -119,12 +119,12 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Submit URL (Sende-URL)</td> 
+   <td>Übermittlungs-URL</td> 
    <td><p>Formularvorlage</p> <p>PDF-Formular</p> </td> 
-   <td><p>Zum Konfigurieren einer vom Benutzer angegebenen URL zum Senden von Formulardaten an ein Servlet.</p> <p>Die Sende-URL kann mit einer der folgenden Methoden konfiguriert werden, die nach Priorität sortiert aufgeführt werden:</p> 
+   <td><p>Zum Konfigurieren einer benutzerspezifizierten URL zum Übermitteln von Formulardaten an ein Servlet.</p> <p>Die Übermittlungs-URL kann mit einer der folgenden Methoden konfiguriert werden, die nach Priorität sortiert aufgeführt werden:</p> 
     <ul> 
-     <li>Geben Sie beim Erstellen eines XFA-Formulars in AEM Forms Designer über die Schaltfläche zum Übermitteln von HTTP eine Sende-URL direkt in einer Formularvorlage an.</li> 
-     <li>Wählen Sie in der AEM Forms-Benutzeroberfläche ein Formular aus und geben Sie eine Sende-URL bei der Bearbeitung der Metadateneigenschaften an.</li> 
+     <li>Geben Sie über die Schaltfläche zum Übermitteln von HTTP beim Erstellen eines XFA-Formulars in AEM Forms Designer eine Übermittlungs-URL direkt in einer Formularvorlage an.</li> 
+     <li>Wählen Sie in der AEM Forms-Benutzeroberfläche ein Formular aus und geben Sie eine Übermittlungs-URL bei der Bearbeitung der Metadateneigenschaften an.</li> 
      <li>Bearbeiten Sie im Forms Portal die Komponente „Search &amp; Lister“ und legen Sie eine Sende-URL auf der Registerkarte „Formular-Link“ fest.</li> 
     </ul> </td> 
   </tr> 
@@ -164,7 +164,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
     <ul> 
      <li>Formularvorlage: Eine Formularvorlage wird aus den im Repository vorhandenen ausgewählt. Dieser Wert kann aktualisiert werden.</li> 
      <li>XML-Schema: Eine XSD-Datei wird hochgeladen. Dieser Wert kann aktualisiert werden.</li> 
-     <li>Kein</li> 
+     <li>Ohne</li> 
     </ul> 
     <div>
       Ein ausgewähltes Formularmodell kann aktualisiert, aber nicht entfernt werden. 
@@ -185,12 +185,12 @@ Assets weisen vorhandene Eigenschaftswerte auf, die im schreibgeschützten Modus
 
       >[!NOTE]
       >
-      >Schnellaktionen sind die Aktionselemente, die über eine Miniaturansicht angezeigt werden, wenn Sie den Mauszeiger über ein Element bewegen.
+      >Schnellaktionen sind die Aktionselemente, die beim Zeigen mit der Maus auf eine Miniaturansicht angezeigt werden.
 
    1. Wählen Sie das Formular aus und klicken Sie auf das Symbol Eigenschaften anzeigen ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) , das in der Symbolleiste angezeigt wird.
    1. Navigieren Sie zur Seite mit den Formulardetails, indem Sie auf die Formularminiaturansicht klicken, während Sie sich nicht im Auswahlmodus befinden. Klicken Sie nun oben rechts auf das Augensymbol ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) und klicken Sie dann in der Liste darunter auf Eigenschaften .
 
-1. Auf der daraufhin geöffneten Eigenschaftsseite wird ein Schema angezeigt, das nur die Metadateneigenschaften enthält, die einen Wert enthalten.
+1. Auf der daraufhin geöffneten Eigenschaftsseite wird ein Schema angezeigt, das nur die Metadateneigenschaften mit einem Wert enthält.
 
    Die Eigenschaftsseite enthält eine Symbolleiste mit zwei Aktionssymbolen:
 
@@ -199,13 +199,13 @@ Assets weisen vorhandene Eigenschaftswerte auf, die im schreibgeschützten Modus
 
    Der Inhaltsbereich ist in zwei Abschnitte unterteilt:
 
-   * Der linke Bereich enthält die Miniaturansicht des Formulars
-   * Der rechte Bereich enthält Metadateneigenschaften im schreibgeschützten Modus, die über verschiedene Registerkarten verteilt sind.
+   * Das linke Bedienfeld enthält die Miniaturansicht des Formulars.
+   * Das rechte Bedienfeld enthält Metadateneigenschaften im schreibgeschützten Modus, die über verschiedene Registerkarten verteilt sind.
 
 
 ## Hinzufügen/Aktualisieren von Formularmetadatenwerten {#add-update-form-metadata-values-nbsp}
 
-Sie können den Wert von vorhandenen Metadateneigenschaften bearbeiten oder einem vorhandenen Metadateneigenschaftsfeld neue Werte hinzufügen (zum Beispiel wenn ein Metadatenfeld leer ist).
+Sie können den Wert vorhandener Metadateneigenschaften bearbeiten oder einem vorhandenen Metadateneigenschaftsfeld neue Werte hinzufügen (zum Beispiel wenn ein Metadatenfeld leer ist).
 
 ### Aktualisieren von Metadateneigenschaftswerten {#update-metadata-property-values}
 
@@ -226,9 +226,9 @@ Sie können den Wert von vorhandenen Metadateneigenschaften bearbeiten oder eine
 
    Bei beiden Aktionen wird der Benutzer zurück zum schreibgeschützten Modus der Eigenschaftsseite mit den aktualisierten Werten geleitet.
 
-### Aktualisieren der Formularminiaturansicht   {#update-the-form-thumbnail-nbsp}
+### Aktualisieren der Formularminiaturansicht  {#update-the-form-thumbnail-nbsp}
 
-Im linken Bereich der Eigenschaftsseite wird die Miniaturansicht des Formulars angezeigt. Standardmäßig wird die angezeigte Miniaturansicht zum Zeitpunkt der Formularerstellung (adaptives Formular) oder des Formular-Uploads generiert.
+Im linken Bedienfeld der Eigenschaftsseite wird die Miniaturansicht des Formulars angezeigt. Standardmäßig wird die angezeigte Miniaturansicht zum Zeitpunkt der Formularerstellung (adaptives Formular) oder des Formular-Uploads generiert.
 
 Bei allen Formulartypen können Sie ein Bild hochladen, indem Sie auf **[!UICONTROL Bild hochladen]** klicken und nach einer Bilddatei im lokalen Verzeichnis suchen. Das ausgewählte Bild wird anstelle des Standardbilds als Miniaturansicht verwendet.
 
@@ -236,7 +236,7 @@ Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit dene
 
 >[!NOTE]
 >
->* Verwenden Sie ein quadratisches Bild für die Miniatur. Wenn Sie ein nicht quadratisches Bild verwenden und die Miniaturansicht in der Listenansicht anzeigen, sieht die Miniaturansicht abgeschnitten aus.
+>* Verwenden Sie ein quadratisches Bild für die Miniatur. Wenn Sie ein nicht quadratisches Bild verwenden und die Miniaturansicht in der Listenansicht anzeigen, ist die Miniaturansicht abgeschnitten.
 >* Sobald ein neues Bild hochgeladen oder generiert wurde, wird die Miniaturansicht durch dieses Bild ersetzt und kann nicht auf das vorherige Bild zurückgesetzt werden.
 
 >
@@ -247,21 +247,21 @@ Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit dene
 
 Zusätzlich zu den standardmäßig bereitgestellten Metadaten unterstützt AEM Forms auch neue benutzerdefinierte Metadaten.
 
-Es wird ein Tool (Metadatenschema-Editor) bereitgestellt, um das Schema für das Metadatenlayout zu definieren. d. h. das Layout dessen, was auf der Seite **[!UICONTROL Eigenschaften]** eines Formulars angezeigt wird. Mit dem Metadatenschema-Editor können Sie ein benutzerdefiniertes Schema für Ihre Assets hinzufügen oder ändern.
+Ein Tool (Metadatenschema-Editor) wird bereitgestellt, um das Schema für das Metadaten-Layout zu definieren (also das Layout des Inhalts der Seite **[!UICONTROL Eigenschaften]** eines Formulars). Mit dem Metadatenschema-Editor können Sie ein benutzerdefiniertes Schema für Ihre Assets hinzufügen oder ändern.
 
-AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diesem Werkzeug dar. Auf diese Weise können Sie auf diese Schemata zugreifen und die Funktion des Metadatenschema-Editors verwenden, um benutzerdefinierte Eigenschaften hinzuzufügen.
+AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diesem Tool dar. Auf diese Weise können Sie auf diese Schemas zugreifen und die Funktion des Metadatenschema-Editors verwenden, um benutzerdefinierte Eigenschaften hinzuzufügen.
 
-### Navigieren im Metadatenschema-Editor   {#navigate-the-metadata-schema-editor-nbsp}
+### Navigieren im Metadatenschema-Editor  {#navigate-the-metadata-schema-editor-nbsp}
 
-1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemata]**.
+1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemas]**.
 
-1. Klicken Sie in den aufgeführten Schemaformularen auf **[!UICONTROL Formulare.]**
+1. Klicken Sie in den aufgeführten Schemaformularen auf **[!UICONTROL Formulare]**.
 
-1. Klicken Sie in der Liste, die geöffnet wird, auf den Asset-Typ, für die Sie benutzerdefinierte Metadaten hinzufügen möchten.
+1. Klicken Sie in der Liste, die geöffnet wird, auf den Asset-Typ, für den Sie benutzerdefinierte Metadaten hinzufügen möchten.
 
    >[!NOTE]
    >
-   >Diese Schemata enthalten Metadateneigenschaften, die standardmäßig bereitgestellt werden und nicht geändert/bearbeitet werden dürfen (Kontrollkästchen aktivieren und in der Symbolleiste auf „Bearbeiten“ klicken), um Funktionsprobleme zu vermeiden.
+   >Diese Schemas enthalten Metadateneigenschaften, die standardmäßig bereitgestellt werden und nicht geändert/bearbeitet werden dürfen (Kontrollkästchen aktivieren und in der Symbolleiste auf „Bearbeiten“ klicken), um Funktionsprobleme zu vermeiden.
 
 1. Wenn Sie auf einen Asset-Typ klicken, wird eine Liste mit der Option `extendedmetadata` geöffnet. Bearbeiten Sie dieses Schema.
 
@@ -273,29 +273,29 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 
 [Zum Vergrößern hier klicken](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
-   1. Der linke Bereich enthält Registerkartenabschnitte mit den Feldern und im rechten Bereich werden alle verfügbaren UI-Komponenten und die Eigenschaften des im linken Bereich ausgewählten Feldes angezeigt.
+   1. Das linke Bedienfeld enthält Abschnitte in Registerkarten mit den Feldern und im rechten Bedienfeld werden alle verfügbaren Benutzeroberflächen-Komponenten sowie die Eigenschaften des im linken Bedienfeld ausgewählten Feldes angezeigt.
 
    1. Der gesperrte Abschnitt kann nicht bearbeitet werden und enthält Felder für alle Metadateneigenschaften, die standardmäßig bereitgestellt werden.
 
    1. Sie können weitere Registerkarten hinzufügen, indem Sie auf + klicken.
 
    1. Sie können ein benutzerdefiniertes Feld des gewünschten Typs hinzufügen, indem Sie die Feldkomponente aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf die Schemaseite ziehen.
-   1. Die Spezifikationen für dieses Feld können unter dem Abschnitt **[!UICONTROL Einstellungen]** angegeben werden, nachdem Sie auf das Feld geklickt haben.
+   1. Die Spezifikationen für dieses Feld können im Abschnitt **[!UICONTROL Einstellungen]** angegeben werden, nachdem Sie auf das Feld geklickt haben.
 
 ### Hinzufügen benutzerdefinierter Metadateneigenschaften im Schemaeditor  {#add-custom-metadata-property-in-schema-editor-nbsp}
 
 1. Navigieren Sie zur Registerkarte (vorhanden oder neu), der Sie die benutzerdefinierte Eigenschaft hinzufügen möchten.
 
-1. Ziehen Sie eine Komponente des gewünschten Typs aus dem Abschnitt **[!UICONTROL Formular erstellen]** in den linken Bereich und platzieren Sie sie an der gewünschten Stelle.
+1. Ziehen Sie eine Komponente des gewünschten Typs aus dem Abschnitt **[!UICONTROL Formular erstellen]** in das linke Bedienfeld und platzieren Sie sie an der gewünschten Stelle.
 
    >[!NOTE]
    >
    >Sie können gesperrte Abschnitte nicht verschieben, aber Sie können die Komponente in einem der leeren Bereiche platzieren.
 
-1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bereich geöffnet wird, die Informationen für die folgenden Felder ein:
+1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
    1. Geben Sie eine Feldbeschriftung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (zum Beispiel: Abteilung).
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits ausgefüllter Wert angezeigt **„./jcr:content/metadata/default“**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im crx-Repository gespeichert wird (zum Beispiel: „./jcr:content/metadata/department“) 
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **&#39;./jcr:content/metadata/default“**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
 
       >[!NOTE]
       >
@@ -308,7 +308,7 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 
    1. Um ein hinzugefügtes Feld zu löschen, wählen Sie es aus und klicken Sie auf das Symbol ![delete-1](assets/delete-1.png) löschen .
 
-1. Bei Bedarf können Sie die Schritte 1-3, wiederholen um eine weitere Eigenschaft hinzuzufügen.
+1. Bei Bedarf können Sie die Schritte 1 bis 3 wiederholen, um eine weitere Eigenschaft hinzuzufügen.
 1. Klicken Sie auf **Fertig**, nachdem Sie alle Änderungen vorgenommen haben.
 
    Sie haben erfolgreich eine benutzerdefinierte Metadateneigenschaft hinzugefügt.
