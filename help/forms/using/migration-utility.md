@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
+role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 73%
@@ -32,7 +32,7 @@ Das Migrationsdienstprogramm konvertiert die [Adaptive Forms Assets](/help/forms
 >
 >Bei einem fehlgeschlagenen Upgrade können Sie für den Fall von Correspondence Management-Assets die Migration jedes Mal ausführen, wenn Sie die Assets importieren. Für die Correspondence Management-Migration muss das Forms-Kompatibilitätspaket installiert sein.
 
-## Verfahren zur Migration  {#approach-to-migration}
+## Verfahren zur Migration {#approach-to-migration}
 
 Sie können [Upgrade](/help/forms/using/upgrade.md) auf die neueste Version von AEM Forms 6.4 von AEM Forms 6.3 oder 6.2 durchführen oder eine Neuinstallation durchführen. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
 
@@ -65,7 +65,7 @@ Für Correspondence Management-Assets:
 * Asset Composer-Konfigurationen ändern sich in Correspondence Management-Konfigurationen.
 * Assets werden in Ordner mit einem Namen wie „Existing Text“ oder „Existing List“ verschoben.
 
-## Verwenden des Migrationsdienstprogramms{#using-the-migration-utility} 
+## Verwenden des Migrationsdienstprogramms  {#using-the-migration-utility}
 
 ### Ausführen des Migrationsdienstprogramms  {#runningmigrationutility}
 
@@ -85,10 +85,10 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
    Der Browser zeigt vier Optionen an:
 
-   * AEM Forms-Asset-Migration
-   * Migration von benutzerdefinierten Adaptive Forms-Komponenten
-   * Migration von Adaptive Forms-Vorlagen
-   * AEM Forms Cloud-Konfigurationensmigration
+   * AEM Forms-Assets-Migration
+   * Migration von benutzerdefinierten adaptiven Formularkomponenten
+   * Migration von adaptiven Formularvorlagen
+   * Migration von AEM Forms-Cloud-Konfigurationen
 
 1. Führen Sie die folgenden Schritte aus, um die Migration durchführen:
 
@@ -134,7 +134,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
       * Quellpfad: /etc/cloudservices/fdm
       * Zielpfad: /conf/global/settings/cloudconfigs/fdm
-   * Recaptcha
+   * reCAPTCHA
 
       * Quellpfad: /etc/cloudservices/recaptcha
       * Zielpfad: /conf/global/settings/cloudconfigs/recaptcha
@@ -171,7 +171,7 @@ Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende
 1. Stellen Sie sicher, dass die XFA-Version der Layouts und Fragmentlayouts 3.3 oder höher ist. Wenn Sie Layouts und Fragment-Layouts einer älteren Version verwenden, kann es zu Problemen beim Rendern des Briefs kommen. Um ein älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
 
    1. [Herunterladen von XFA- als ZIP-Datei](/help/forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) aus der Forms-Benutzeroberfläche.
-   1. Extrahieren Sie die Datei. 
+   1. Extrahieren Sie die Datei .
    1. Öffnen Sie die XFA-Datei im neuesten Designer und speichern Sie sie. Die Version des XFA wird auf die neueste Version aktualisiert. 
    1. Hochladen des XFA in der forms-Benutzeroberfläche.
 
