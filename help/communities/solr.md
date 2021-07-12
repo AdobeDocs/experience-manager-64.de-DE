@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
+role: Admin
 exl-id: b506018d-67dc-4e47-a3d8-83ae288b5d7e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -80,7 +80,7 @@ sh ./scripts/cloud-scripts/zkcli.sh\
 -solrhome *solr-home-path* \\
 -confdir *config-dir*
 
-#### 2. Kollektion {#create-a-collection} erstellen
+#### 2. Kollektion erstellen {#create-a-collection}
 
 Verweis:\
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
@@ -108,7 +108,7 @@ sh ./scripts/cloud-scripts/zkcli.sh\
 -collection *mycollection-name* \\
 -confname *myconfig-name*
 
-### Vergleich von Standard und erweitertem MLS {#comparison-of-standard-and-advanced-mls}
+### Vergleich von Standard- und erweiterten MLS {#comparison-of-standard-and-advanced-mls}
 
 Die mehrsprachige Suche (MLS) für AEM Communities wurde für die Solr-Plattform entwickelt, um eine verbesserte Suche in allen unterstützten Sprachen, einschließlich Englisch, zu ermöglichen.
 
@@ -178,7 +178,7 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 
 1. Befolgen Sie die Installationsanweisungen für den eigenständigen oder SolrCloud-Modus.
 
-#### SolrCloud-Modus - Standard MLS {#solrcloud-mode-standard-mls}
+#### SolrCloud-Modus - Standard-MLS {#solrcloud-mode-standard-mls}
 
 1. Installation und Konfiguration von Solr im SolrCloud-Modus
 1. Vorbereiten einer neuen Konfiguration:
@@ -198,7 +198,7 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 
 1. Führen Sie für MSRP [MSRP Reindex Tool](msrp.md#msrp-reindex-tool) aus, es sei denn, es handelt sich um eine neue Installation.
 
-#### Eigenständiger Modus - Standard MLS {#standalone-mode-standard-mls}
+#### Eigenständiger Modus - Standard-MLS {#standalone-mode-standard-mls}
 
 1. Installation von Solr im eigenständigen Modus
 1. Wenn Sie Solr5 ausführen, erstellen Sie eine Sammlung1 (ähnlich wie bei Solr4):
@@ -216,7 +216,7 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 1. Solr neu starten
 1. Führen Sie für MSRP [MSRP Reindex Tool](#msrpreindextool) aus, es sei denn, es handelt sich um eine neue Installation.
 
-### Installieren von erweitertem MLS {#installing-advanced-mls}
+### Installieren erweiterter MLS {#installing-advanced-mls}
 
 Damit die SRP-Sammlung (MSRP oder DSRP) erweiterte MLS unterstützen kann, sind zusätzlich zu einem benutzerdefinierten Schema und einer Solr-Konfiguration neue Solr-Plug-ins erforderlich. Alle erforderlichen Elemente werden in einer herunterladbaren ZIP-Datei zusammengefasst. Darüber hinaus ist ein Installationsskript zur Verwendung enthalten, wenn Solr im eigenständigen Modus bereitgestellt wird.
 
@@ -227,7 +227,7 @@ Erste Schritte mit der Installation für SolrCloud oder den eigenständigen Modu
 * Laden Sie das ZIP-Archiv AEM-SOLR-MLS auf den Server herunter, der Solr hostet.
 * Archiv entpacken
 
-#### SolrCloud-Modus - Erweiterter MLS {#solrcloud-mode-advanced-mls}
+#### SolrCloud-Modus - Erweitertes MLS {#solrcloud-mode-advanced-mls}
 
 Installationsanweisungen - beachten Sie die wenigen Unterschiede für Solr4 und Solr5:
 
