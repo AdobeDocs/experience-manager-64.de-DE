@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
+role: Admin
 exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 95%
 
 ---
 
-# Verbinden von AEM Forms mit Adobe LiveCycle  {#connecting-aem-forms-with-adobe-livecycle}
+# Verbinden von AEM Forms mit Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector ermöglicht unterbrechungsfreies Abrufen von Adobe LiveCycle ES4 Document Services aus AEM-Web-Apps und -Workflows. LiveCycle stellt einen Rich-Client-SDK bereit, der es Clientanwendungen ermöglicht, die Dienste von LiveCycle mit Java-APIs zu starten. AEM LiveCycle Connector vereinfacht die Verwendung dieser APIs innerhalb der OSGi-Umgebung.
 
@@ -44,7 +44,7 @@ Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigs
 * **Kennwort** – gibt das Kennwort an.
 * **Dienstname** – gibt die Dienste an, die mit den Benutzeranmeldedaten aus den Feldern für Benutzernamen und Kennwort gestartet werden. Standardmäßig werden beim Starten von LiveCycle-Diensten keine Benutzerinformationen weitergegeben.
 
-## Starten von Document Services  {#starting-document-services}
+## Starten von Document Services {#starting-document-services}
 
 Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java API, Webdienste, Remoting und REST starten. Bei Java-Clients kann die Anwendung LiveCycle SDK verwenden. Das LiveCycle SDK stellt eine Java-API für den ferngesteuerten Start dieser Dienste zur Verfügung. Um beispielsweise ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, startet der Client GeneratePDFService. Der Aufruf wird mittels folgender Schritte ausgeführt:
 
@@ -58,7 +58,7 @@ AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als
 * Weitergabe von Benutzerinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
-### Starten über Service References aus der OSGi Service Registry  {#starting-via-service-references-from-osgi-service-registry}
+### Starten über Service References aus der OSGi Service Registry {#starting-via-service-references-from-osgi-service-registry}
 
 Um einen angezeigten Dienst aus AEM zu starten, führen Sie folgende Schritte aus:
 
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Für nahezu jeden Document Service in LiveCycle ist eine Authentifizierung erforderlich. Sie können eine der folgenden Optionen verwenden, um diese Dienste zu starten, ohne explizit Anmeldedaten im Code anzugeben:
 
-### Whitelist-Konfiguration  {#allowlist-configuration}
+### Whitelist-Konfiguration {#allowlist-configuration}
 
 Die LiveCycle Client SDK-Konfiguration enthält eine Einstellung für Dienstnamen. Diese Konfiguration ist eine Liste der Dienste, für die die Aufruflogik Administratorberechtigungen für den sofortigen Einsatz verwendet. Wenn Sie beispielsweise DirectoryManager-Dienste (Teil der User Management-API) zur Liste hinzufügen, kann jeder Client-Code den Dienst direkt verwenden und die Aufrufebene gibt die konfigurierten Benutzerdaten automatisch im Rahmen der an den LiveCycle-Server gesendeten Anfrage weiter.
 
@@ -192,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### InvocationRequest-Eigenschaft  {#invocationrequest-property}
+### InvocationRequest-Eigenschaft {#invocationrequest-property}
 
 Wenn Sie einen Prozess aufrufen oder die ServiceClientFactory-Klasse direkt verwenden und eine InvocationRequest erstellen, können Sie eine Eigenschaft festlegen, um anzugeben, dass die Aufrufebene konfigurierte Benutzerdaten verwenden soll.
 
