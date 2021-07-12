@@ -9,16 +9,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
-role: Administrator
+role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 38%
 
 ---
 
-# Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities  {#user-and-ugc-management-service-in-aem-communities}
+# Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ Alternativ dazu können Sie auch eine grafische Benutzeroberfläche erstellen, �
 
 Mit diesen APIs können die folgenden Funktionen ausgeführt werden:
 
-## Benutzergenerierte Inhalte abrufen  {#retrieve-the-ugc-of-a-user}
+## Benutzergenerierte Inhalte abrufen {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` unterstützt den Export aller benutzergenerierten Inhalte eines Benutzers aus dem System.
 
