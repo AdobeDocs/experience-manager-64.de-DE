@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
+role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Moderieren von Community-Inhalten {#moderating-community-content}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Community-Inhalte, auch als benutzergenerierte Inhalte (UGC) bezeichnet, werden erstellt, wenn ein Mitglied (der angemeldete Site-Besucher) Inhalte von einer veröffentlichten Community-Site durch Interaktion mit einer der folgenden Community-Komponenten veröffentlicht:
 
@@ -154,7 +154,7 @@ Wenn Inhalte in der Zwischenablage vorhanden sind, wird an der anderen Stelle ne
 
 Ein Moderator kann verhindern, dass UGC auf der veröffentlichten Site sichtbar bleibt. Administratoren und Community-Moderatoren steht der Beitrag weiterhin zur Verfügung und wird als Spam bezeichnet.
 
-### Schließen/Neu öffnen {#close-reopen}
+### Schließen/erneut öffnen {#close-reopen}
 
 Die Aktion Schließen bezieht sich auf den gesamten Diskussionsthread (ein Forenthema oder der ursprüngliche Kommentar) und enthält alle nachfolgenden Beiträge oder Antworten.
 
@@ -164,7 +164,7 @@ Um Vorgänge auszuführen, muss das Thema oder der Kommentar erneut geöffnet we
 
 Die Aktion Schließen/Neu öffnen kann von Administratoren oder Community-Moderatoren durchgeführt werden.
 
-### Markierung/Markierung entfernen {#flag-unflag}
+### Markierung/Markierung aufheben {#flag-unflag}
 
 Die Kennzeichnung ist eine Möglichkeit für jedes angemeldete Mitglied, mit Ausnahme des Erstellers des Inhalts, anzugeben, dass ein Problem mit dem Inhalt eines Beitrags besteht. Nach der Kennzeichnung wird ein Symbol zum Aufheben der Markierung angezeigt, mit dem dasselbe Mitglied die Kennzeichnung des Inhalts aufheben kann.
 
@@ -240,7 +240,7 @@ In der [Massen-Moderationskonsole](moderation.md) können UGC basierend darauf g
 
 AEM Communities bietet einen *Watchword-Analyzer *als einen Schritt im Prozess zur Bewertung von [Sentiment](#sentiment). Der Beitrag zum Sentimentwert, der von Schlagwörtern bereitgestellt wird, ist auf einen Vergleich von negativen und positiven Schlagwörtern, die im veröffentlichten Inhalt verwendet werden, sowie verbotenen Wörtern zurückzuführen.
 
-#### Konfigurieren von Sentiment- und Watchwords {#configure-sentiment-and-watchwords}
+#### Konfigurieren von Sentimenten und Schlagwörtern {#configure-sentiment-and-watchwords}
 
 Die Liste positiver und negativer Schlagwörter kann wie die Sentimentregeln angepasst werden.
 
