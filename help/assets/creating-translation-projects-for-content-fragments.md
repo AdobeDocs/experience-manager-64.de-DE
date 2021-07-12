@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
 feature: Inhaltsfragmente
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 87%
@@ -52,7 +52,7 @@ Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen. 
 
 Sie können auch temporäre Sprachkopien für Fragmente erstellen, ähnlich wie Sie temporäre Kopien für Assets erstellen. Weitere Informationen finden Sie unter [Erstellen von temporären Sprachkopien für Assets](translation-projects.md#creating-temporary-language-copies).
 
-## Übersetzen von Fragmenten mit gemischten Medien  {#translating-mixed-media-fragments}
+## Übersetzen von Fragmenten mit gemischten Medien {#translating-mixed-media-fragments}
 
 In AEM können Sie Inhaltsfragmente übersetzen, die unterschiedliche Arten von Medien-Assets und Sammlungen enthalten. Wenn Sie ein Inhaltsfragment übersetzen, das Inline-Assets enthält, werden die übersetzten Kopien dieser Assets im Zielsprachstamm gespeichert.
 
