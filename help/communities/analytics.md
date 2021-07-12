@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
-role: Administrator
+role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 6%
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 # Analytics-Konfiguration für Communities-Funktionen {#analytics-configuration-for-communities-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen von Adobe Marketing Cloud.
 
@@ -155,7 +155,7 @@ Wenn Video Heartbeat Analytics aktiviert ist, instanziiert der JavaScript-Code (
 
 Wenn dies nicht aktiviert ist, wird der Video Heartbeat-Code nie instanziiert und nur das Video-Fortschritts- und das Tracking der Wiederaufnahmeposition wird zur Berichterstellung in SRP persistiert.
 
-## AEM Analytics Cloud-Dienstkonfiguration {#aem-analytics-cloud-service-configuration}
+## Analytics Cloud-Dienstkonfiguration AEM {#aem-analytics-cloud-service-configuration}
 
 So erstellen Sie eine neue Analytics-Integration, die Adobe Analytics mit der AEM Community-Site integriert, mithilfe der standardmäßigen Benutzeroberfläche in der Autoreninstanz:
 
@@ -165,7 +165,7 @@ So erstellen Sie eine neue Analytics-Integration, die Adobe Analytics mit der AE
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
-### Dialogfeld &quot;Konfiguration erstellen&quot;{#create-configuration-dialog}
+### Dialogfeld &quot;Konfiguration erstellen&quot; {#create-configuration-dialog}
 
 * Klicken Sie auf das Symbol `[+]` neben **[!UICONTROL Verfügbare Konfigurationen]**, um eine neue Konfiguration zu erstellen.
 
@@ -193,7 +193,7 @@ Im Dialogfeld &quot;Konfiguration erstellen&quot;geben die eingegebenen Werte di
 * Wählen Sie **[!UICONTROL Erstellen]**
    * Startet die Konfigurationsseite und öffnet das Dialogfeld `Analytics Settings`
 
-### Dialogfeld &quot;Analytics Settings&quot;{#analytics-settings-dialog}
+### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
 
 Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und eines neuen Dialogfelds für die Eingabe der Analytics-Einstellungen. Für dieses Dialogfeld sind die [erforderlichen Kontoinformationen](#prerequisites) erforderlich, die vom Kundenbetreuer abgerufen wurden.
 
@@ -290,7 +290,7 @@ Wenn eine Report Suite noch nicht erstellt oder nicht ordnungsgemäß eingericht
 
 Der Sidekick ist nicht erforderlich und kann minimiert werden, damit der Zugriff auf die Report Suites-Einstellungen nicht behindert wird.
 
-#### Dialogfeld &quot;Report Suites&quot;vor und nach Auswahl von &quot;Element hinzufügen&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
+#### Dialogfeld &quot;Report Suites&quot;vor und nach der Auswahl von &quot;Element hinzufügen&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
@@ -304,7 +304,7 @@ Der Sidekick ist nicht erforderlich und kann minimiert werden, damit der Zugriff
 
 Der Analytics-Cloud-Service und das -Framework sind jetzt abgeschlossen. Die Zuordnungen werden definiert, sobald eine Community-Site mit diesem Analytics-Dienst erstellt wurde.
 
-## Aktivieren Sie Analytics für eine Community-Site {#enable-analytics-for-a-community-site}
+## Aktivieren von Analytics für eine Community-Site {#enable-analytics-for-a-community-site}
 
 ### Aktivieren für neue Community-Site {#enable-for-new-community-site}
 
@@ -364,7 +364,7 @@ Für eine **generische AEM-Site**, die Communities-Komponenten enthält, aber ni
 </div>
 ```
 
-## Analytics für Communities-Funktionen {#analytics-for-communities-features}
+## Funktionen von Analytics for Communities {#analytics-for-communities-features}
 
 Analytics wird automatisch für verschiedene Communities-Funktionen verwendet.
 
@@ -378,7 +378,7 @@ Wenn neue benutzerdefinierte Komponenten erstellt werden, die für Analytics ins
 
 Hinweis: Die `journal` -Komponenten werden verwendet, um die Blog-Funktion zu implementieren.
 
-### Analytics AEM Variablen {#mapped-analytics-to-aem-variables} zugeordnet
+### Analytics AEM Variablen zugeordnet {#mapped-analytics-to-aem-variables}
 
 Sobald die Community-Site mit aktiviertem Analytics und dem ausgewählten Cloud-Konfigurations-Framework gespeichert wurde, werden die AEM Variablen automatisch den Analytics-eVars und -Ereignissen zugeordnet, die mit evar1 bzw. event1 beginnen, und sie werden um 1 inkrementiert.
 
@@ -432,11 +432,11 @@ Wenn Community-eVars und -Ereignisse Zuordnungen überschreiben, die bereits in 
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
-#### Beispiel: Schritt 2: Auswahl von &quot;x&quot; zum Entfernen der ersetzten evar11 {#example-step-selecting-x-to-remove-replaced-evar}
+#### Beispiel: Schritt 2: Auswahl von &quot;x&quot;zum Entfernen der ersetzten evar11 {#example-step-selecting-x-to-remove-replaced-evar}
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-#### Beispiel: Schritt 3: AEM var eventdata.siteId wurde der Analytics-eVar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### Beispiel: Schritt 3: AEM var eventdata.siteId wurde der Analytics-eVar14 zugeordnet {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -478,7 +478,7 @@ Spezifische Anweisungen finden Sie im Abschnitt für den primären Herausgeber v
 >
 >Es ist wichtig, dass der primäre Herausgeber so konfiguriert ist, dass die Abfrage von mehreren Veröffentlichungsinstanzen verhindert wird.
 
-### Replizieren Sie den Crypto-Schlüssel {#replicate-the-crypto-key}
+### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
 Die Adobe Analytics-Anmeldeinformationen werden verschlüsselt. Um die Replikation oder Übertragung verschlüsselter Analytics-Anmeldeinformationen zwischen Autor und Herausgebern zu erleichtern, müssen alle AEM Instanzen denselben primären Verschlüsselungsschlüssel verwenden.
 
