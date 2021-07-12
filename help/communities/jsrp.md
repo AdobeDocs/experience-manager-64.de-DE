@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
+role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-
 
 ## Konfiguration {#configuration}
 
-### JSRP {#select-jsrp} auswählen
+### JSRP auswählen {#select-jsrp}
 
 Standardmäßig ist JSRP die Speicheroption für UGC.
 
@@ -68,7 +68,7 @@ Informationen zu *Benutzern*, *Benutzerprofilen* und *Benutzergruppen*, die häu
 
 ## Fehlerbehebung {#troubleshooting}
 
-### UGC in JCR nicht sichtbar {#ugc-not-visible-in-jcr}
+### UGC nicht in JCR sichtbar {#ugc-not-visible-in-jcr}
 
 Stellen Sie sicher, dass JSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption aktivieren. Standardmäßig ist der Speicher-Ressourcenanbieter JSRP.
 
