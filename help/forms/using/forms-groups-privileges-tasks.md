@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
-role: Administrator
+role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
-# AEM Forms für OSGi-Gruppen und -Berechtigungen  {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms für OSGi-Gruppen und -Berechtigungen {#aem-forms-on-osgi-groups-and-privileges}
 
 Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
 
@@ -73,7 +73,7 @@ Sobald Sie [AEM Forms Add-On-Paket](/help/forms/using/installing-configuring-aem
    <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
-     <li>Formulardatenmodell erstellen und ändern</li> 
+     <li>Erstellen und Ändern des Formulardatenmodells</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -88,7 +88,7 @@ Sobald Sie [AEM Forms Add-On-Paket](/help/forms/using/installing-configuring-aem
    <td>
     <ul> 
      <li>Erstellen einer Posteingangs-Anwendung</li> 
-     <li>Workflow-Modell erstellen</li> 
+     <li>Erstellen eines Workflow-Modells</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -105,7 +105,7 @@ Sobald Sie [AEM Forms Add-On-Paket](/help/forms/using/installing-configuring-aem
     <ul> 
      <li>PDF Generator konfigurieren</li> 
      <li>Überwachten Ordner konfigurieren</li> 
-     <li>Workflow-Anwendungen verwalten</li> 
+     <li>Verwalten von Workflow-Programmen</li> 
     </ul> </td> 
   </tr>
  </tbody>
