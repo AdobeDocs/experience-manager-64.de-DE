@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
+role: Admin
 exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 80%
@@ -25,7 +25,7 @@ Im Allgemeinen verwenden Entwickler nicht die -Produktionsumgebung zum Erstellen
 
 In diesem Abschnitt werden Methoden beschrieben, mit denen Sie durch Verwaltungsoptionen in AEM Forms on JEE die Angriffsmöglichkeiten verringern.
 
-## Nicht erforderlichen Remote-Zugriff auf Dienste deaktivieren  {#disabling-non-essential-remote-access-to-services}
+## Nicht erforderlichen Remote-Zugriff auf Dienste deaktivieren {#disabling-non-essential-remote-access-to-services}
 
 Wenn AEM Forms on JEE installiert und konfiguriert ist, kann mithilfe von SOAP oder Enterprise JavaBeans™ (EJB) per Remote-Zugriff auf viele Dienste zugegriffen werden. Der Begriff Remote bezeichnet in diesem Fall alle Aufrufer mit Netzwerkzugriff auf die SOAP-, EJB- oder AMF-Anschlüsse (Action Message Format) für den Anwendungsserver.
 
@@ -66,7 +66,7 @@ Führen Sie dieses Verfahren über die Web-Seite &quot;Anwendungen und Dienste&q
 
 1. Klicken Sie auf **Weiter** und wiederholen Sie den vorhergehenden Schritt für SOAP-Endpunkte, die nicht in der obigen Liste aufgeführt sind. Stellen Sie vor dem Entfernen von Endpunkten sicher, dass SOAP in der Spalte „Anbieter“ aufgeführt wird.
 
-## Nicht erforderlichen anonymem Zugriff auf Dienste deaktivieren   {#disabling-non-essential-anonymous-access-to-services}
+## Nicht erforderlichen anonymem Zugriff auf Dienste deaktivieren  {#disabling-non-essential-anonymous-access-to-services}
 
 Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufruf bestimmter Vorgänge zu. Das heißt, ein oder mehrere vom Dienst offengelegte Vorgänge können von beliebigen authentifizierten Benutzern oder anonymen Benutzern aufgerufen werden.
 
@@ -107,11 +107,11 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
    Der anonyme Zugriff sollte für alle nicht erforderlichen Dienste deaktiviert werden. Für viele interne Dienste muss die anonyme Authentifizierung aktiviert sein, da sie möglicherweise von jedem beliebigen Benutzer im System ohne vorherige Authentifizierung aufgerufen werden müssen.
 
-## Standardmäßiges globales Zeitlimit ändern {#changing-the-default-global-time-out}
+## Standardmäßiges globales Zeitlimit ändern  {#changing-the-default-global-time-out}
 
 Endbenutzer können sich über Workbench, AEM Forms-Webanwendungen oder benutzerdefinierte Anwendungen, die AEM Forms-Serverdienste aufrufen, bei AEM Forms authentifizieren. Mithilfe einer globalen Zeitlimiteinstellung wird festgelegt, wie lange solche Benutzer AEM Forms nutzen können (mittels einer auf SAML basierenden Bestätigung), bevor sie sich erneut authentifizieren müssen. Der Standardwert ist zwei Stunden. In einer Produktionsumgebung muss die Zeitdauer auf den zulässigen Mindestwert in Minuten verringert werden.
 
-### Zeitlimit für die erneute Authentifizierung auf das Minimum einstellen  {#minimize-reauthentication-time-limit}
+### Zeitlimit für die erneute Authentifizierung auf das Minimum einstellen {#minimize-reauthentication-time-limit}
 
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
