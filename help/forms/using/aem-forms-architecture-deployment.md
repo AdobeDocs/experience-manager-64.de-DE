@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
-role: Administrator
+role: Admin
 exl-id: 89ce3b39-c27b-4cc7-aae8-8d8c24100eed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 41%
 
 ---
 
-# Architektur und Bereitstellungstopologien für AEM Forms  {#architecture-and-deployment-topologies-for-aem-forms}
+# Architektur und Bereitstellungstopologien für AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Architektur {#architecture}
 
