@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Classic UI Authoring-Benutzerhandbuch
 breadcrumb-title: Authoring-Handbuch für die klassische Benutzeroberfläche
 user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
 feature: 'Authoring – '
-role: Business Practitioner
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 80%
@@ -26,7 +26,7 @@ ht-degree: 80%
    + [Grundlegende Handhabung](author-env-basic-handling.md)
    + [Konfigurieren der Kontoumgebung](author-env-user-props.md)
    + [Auswahl der Benutzeroberfläche](author-env-select-ui.md)
-   + [Suchen](author-env-search.md)
+   + [Suche](author-env-search.md)
    + [Ihr Posteingang](author-env-inbox.md)
    + [Tastaturbefehle für Konsolen  ](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
@@ -51,7 +51,7 @@ ht-degree: 80%
    + [Strukturvorlage](classic-feature-scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](classic-page-author-design-mode.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](classic-feature-search-promote.md)
-   + [Komponenten ](classic-page-author-default-components.md)
+   + [Komponenten](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Teilnehmen an Workflows](classic-workflows-participating.md)
    + [Arbeiten mit Workflows](classic-workflows.md)
@@ -61,7 +61,7 @@ ht-degree: 80%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
