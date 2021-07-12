@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
+role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Erweiterte Scoring- und Badges {#advanced-scoring-and-badges}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die erweiterte Bewertung ermöglicht die Vergabe von Abzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Auswertung werden Punkte anhand der von einem Mitglied erstellten Menge *und* Qualität des Inhalts zugewiesen, während bei der einfachen Auswertung Punkte einfach auf der Grundlage der erstellten Inhaltsmenge zugewiesen werden.
 
@@ -179,7 +179,7 @@ In der Beta-Version sind zwei erweiterte Scoring-Regeln für die [Forenfunktion]
 
       /etc/community/scoring/rules/sub-rules/adv-stimme-rule-owner
 
-**Hinweise:**
+**Anmerkungen:**
 
 * Die Knoten `rules`und `sub-rules` sind vom Typ `cq:Page`
 * `subRules` ist ein Attribut vom Typ [] Stringon des  `jcr:content` Knotens der Regel
@@ -194,7 +194,7 @@ In der Version sind zwei erweiterte Badging-Regeln enthalten, die den [erweitert
 * /etc/community/badging/rules/adv-comments-badging
 * /etc/community/badging/rules/adv-forums-badging
 
-**Hinweise:**
+**Anmerkungen:**
 
 * `rules` Knoten sind vom Typ  `cq:Page`
 * `rules`sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden
