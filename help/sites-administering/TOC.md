@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Verwalten
-role: Administrator
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+role: Admin
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 94%
@@ -27,7 +27,7 @@ ht-degree: 94%
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
    + [MSM-Rollout-Konflikte](msm-rollout-conflicts.md)
    + [Best Practices für MSM](msm-best-practices.md)
-   + [Übersetzen von Inhalten für mehrsprachige Sites](translation.md)
+   + [Übersetzen von Inhalten für mehrsprachige Websites](translation.md)
    + [Verwalten von Übersetzungsprojekten](tc-manage.md)
    + [Identifizieren zu übersetzender Inhalte](tc-rules.md)
    + [Vorbereiten von Inhalten für die Übersetzung](tc-prep.md)
@@ -95,7 +95,7 @@ ht-degree: 94%
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [Personalisierung](personalization.md)
    + [Konfigurieren von ContextHub ](contexthub-config.md)
    + [ClientContext](client-context.md)
@@ -130,7 +130,7 @@ ht-degree: 94%
    + [Integration mit Adobe Campaign Classic](campaignonpremise.md)
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
-   + [Hinweis zur Einstellung von Flash-Viewer](flash-viewers-eol.md)
+   + [Hinweis zum End of Life von Flash-Viewern](flash-viewers-eol.md)
    + [Integrieren mit Adobe Creative Cloud](https://docs.adobe.com/content/help/de-DE/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
