@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
+role: Admin
 exl-id: 54a4a053-ca44-451a-9a31-f1c1e8cb7002
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2885'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # Communities-Scoring und -Abzeichen {#communities-scoring-and-badges}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die AEM Communities-Scoring- und -Badges-Funktion bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -50,7 +50,7 @@ Wenn sie an einem anderen Speicherort gespeichert sind, sollten sie für alle le
 
 Abzeichen werden in UGC dahingehend unterschieden, ob sie gemäß den Regeln zugewiesen wurden oder verdient wurden. Derzeit werden zugewiesene Abzeichen als Text und Earned Abzeichen als Bild angezeigt.
 
-### Badge-Management-Benutzeroberfläche {#badge-management-ui}
+### Benutzeroberfläche der Badge-Verwaltung {#badge-management-ui}
 
 Die Communities [Badges-Konsole](badges.md) bietet die Möglichkeit, benutzerdefinierte Abzeichen hinzuzufügen, die für ein Mitglied angezeigt werden können, wenn es eine bestimmte Rolle in der Community spielt (zugewiesen).
 
@@ -76,7 +76,7 @@ In der Version sind drei rollenbasierte Abzeichen enthalten:
 
 ![chlimage_1-366](assets/chlimage_1-366.png)
 
-### Zugewiesene Abzeichen {#awarded-badges}
+### Ausgezeichnete Abzeichen {#awarded-badges}
 
 Belohnungsbasierte Abzeichen werden vom Scoring-Dienst an Community-Mitglieder vergeben, basierend auf Regeln, die auf ihre Aktivität in der Community angewendet werden.
 
@@ -144,7 +144,7 @@ Wenn der Knoten vom Typ `cq:Page` (empfohlen) ist, fügen Sie mithilfe von CRXDE
 >
 >Wenn eine Scoring-Regel anscheinend keine Auswirkungen auf das Verteilen von Abzeichen hat, stellen Sie sicher, dass die Scoring-Regel nicht von der Eigenschaft scoringRules der Badging-Regel blockiert wurde. Siehe Abschnitt [Badging Rules](#badging-rules).
 
-### Badges für Komponente aktivieren {#enable-badges-for-component}
+### Aktivieren von Abzeichen für Komponenten {#enable-badges-for-component}
 
 Die Scoring- und Bading-Regeln gelten nur für Instanzen von Komponenten, die das Badging durch Bearbeiten der Komponentenkonfiguration im [Authoring-Modus](author-communities.md) aktiviert haben.
 
@@ -158,7 +158,7 @@ Eine boolesche Eigenschaft `allowBadges` aktiviert/deaktiviert die Anzeige von A
 >
 >Jede Komponente kann überlagert werden, um Abzeichen anhand des in Foren, Fragen und Antworten sowie Kommentaren enthaltenen HBS-Codes anzuzeigen.
 
-## Scoring Rules {#scoring-rules}
+## Scoring-Regeln {#scoring-rules}
 
 Scoring-Regeln sind die Grundlage für die Bewertung zum Zweck der Vergabe von Badges.
 
@@ -301,7 +301,7 @@ In der Version sind zwei Scoring-Regeln für die [Forumfunktion](functions.md#fo
 
       /etc/community/scoring/rules/sub-rules/member-is-moderated
 
-**Hinweise:**
+**Anmerkungen:**
 
 * Die Knoten `rules`und `sub-rules` sind vom Typ cq:Page
 
@@ -387,7 +387,7 @@ In der Version sind zwei Badging-Regeln enthalten, die den [Foren und Kommentar-
 * /etc/community/badging/rules/comments-badging
 * /etc/community/badging/rules/forums-badging
 
-**Hinweise:**
+**Anmerkungen:**
 
 * `rules` -Knoten sind vom Typ cq:Page
 * `rules`sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden
@@ -435,13 +435,13 @@ Beispiel: https://&lt;Server>:&lt;Port>/home/users/community/riley/profile.socia
 
 ### Beispiele: {#examples}
 
-#### Moderatorzeichen {#assign-a-moderator-badge} zuweisen
+#### Moderatorzeichen zuweisen {#assign-a-moderator-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
-#### Setzen Sie ein zugewiesenes Silber-Zeichen {#revoke-an-assigned-silver-badge} zurück.
+#### Verknüpftes Silber-Zeichen sperren {#revoke-an-assigned-silver-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
@@ -586,7 +586,7 @@ Wenn Scoring- und Badging-Regeln auf den Inhalt der Website angewendet wurden un
 
 Siehe die `scoringRules`Eigenschaft von [Badging Rules](#badging-rules).
 
-### Groß-/Kleinschreibung Typo {#case-sensitive-typo}
+### Groß-/Kleinschreibung {#case-sensitive-typo}
 
 Bei den meisten Eigenschaften und Werten, insbesondere den Verben, wird zwischen Groß- und Kleinschreibung unterschieden. Verben müssen bei Verwendung in einer Scoring-Unterregel alle UPPERCASE sein.
 
@@ -607,9 +607,9 @@ Mit der Website [Erste Schritte-Tutorial](getting-started.md) (Interagieren) kö
    * **Typ**: `String`
    * Wählen Sie **[!UICONTROL Multi]**
    * Wählen Sie **[!UICONTROL Hinzufügen]**
-   * Geben Sie Folgendes ein `/etc/community/badging/rules/forums-badging`
+   * Geben Sie `/etc/community/badging/rules/forums-badging` ein
    * Wählen Sie nun eine der folgenden Optionen aus `+`
-   * Geben Sie Folgendes ein `/etc/community/badging/rules/comments-badging`
+   * Geben Sie `/etc/community/badging/rules/comments-badging` ein
    * Wählen Sie **[!UICONTROL OK]** aus
 
 * Fügen Sie die Eigenschaft scoringRules hinzu:
@@ -618,9 +618,9 @@ Mit der Website [Erste Schritte-Tutorial](getting-started.md) (Interagieren) kö
    * **Typ**: `String`
    * Wählen Sie **[!UICONTROL Multi]**
    * Wählen Sie **[!UICONTROL Hinzufügen]**
-   * Geben Sie Folgendes ein `/etc/community/scoring/rules/forums-scoring`
+   * Geben Sie `/etc/community/scoring/rules/forums-scoring` ein
    * Wählen Sie nun eine der folgenden Optionen aus `+`
-   * Geben Sie Folgendes ein `/etc/community/scoring/rules/comments-scoring`
+   * Geben Sie `/etc/community/scoring/rules/comments-scoring` ein
    * Wählen Sie **[!UICONTROL OK]** aus
 
 * Wählen Sie **[!UICONTROL Alle speichern]**
