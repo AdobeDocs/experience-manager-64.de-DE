@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 86%
@@ -56,10 +56,10 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
       1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
       1. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
    1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
-   1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+   1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
    1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 
       >[!NOTE]
       >
