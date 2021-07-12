@@ -8,12 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
+role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3316'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -309,7 +309,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 >
 >AEM Forms on JEE wird nur von 64-Bit-Betriebssystemen unterstützt.
 
-#### Virtualisierte Umgebung  {#virtualized-environment}
+#### Virtualisierte Umgebung {#virtualized-environment}
 
 Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie mit AEM Forms in einer virtuellen Umgebung auf Probleme stoßen, versuchen Sie, das Problem auf einer physischen Maschine zu reproduzieren. Wenn das Problem auf dem physischen Computer weiterhin auftritt, wenden Sie sich an den Support der Adobe, um eine Lösung zu erhalten. Bei Problemen, die auf einer physischen Maschine nicht reproduzieren können, wenden Sie sich an den Verkäufer Ihrer virtuellen Umgebung.
 
@@ -442,7 +442,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
  </tbody> 
 </table>
 
-### Unterstützung für Cordova  {#support-for-cordova}
+### Unterstützung für Cordova {#support-for-cordova}
 
 AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifischen Versionen von Cordova werden unterstützt:
 
@@ -635,12 +635,12 @@ Für zusätzliche Anforderungen siehe:
 * Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
 * 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
 * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
-* Grafikspeicher - 128 MB GPU (256 MB empfohlen)
+* Grafikspeicher – 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Grafik-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
-* Administratorberechtigungen für die Installation von Designer
+* Administratorrechte für die Installation von Designer
 
 ### Adobe Acrobat und Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -778,7 +778,7 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 >
 >Adobe wird [die Aktualisierung und Verteilung des Flash Players Ende 2020 einstellen](https://theblog.adobe.com/adobe-flash-update/).
 
-### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
+### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Klicken Sie [hier](https://www.adobe.com/de/products/livecycle/rightsmanagement/extension/downloads.html), um die Systemanforderungen für Adobe Document Security Extension for Microsoft® Office anzuzeigen.
 
@@ -788,9 +788,9 @@ Microsoft® Windows® 2012 wird nicht für jede angegebene clientseitige Softwar
 
 Außerdem unterstützt AEM Forms on JEE Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt, wenn entsprechend angegeben.
 
-## Richtlinie zur Unterstützung für Patches von Drittanbietern  {#third-party-patch-support-policy}
+## Richtlinie zur Unterstützung für Patches von Drittanbietern {#third-party-patch-support-policy}
 
-Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64) verfügbar.
+Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64_de) verfügbar.
 
 Die für AEM Forms on JEE verwendeten Referenzplattformen von Drittanbietern stellen ein spezifisches Patchlevel für die Infrastruktur von Drittanbietern dar, das während der Entwicklung und Veröffentlichung der jeweiligen Versionen von AEM Forms on JEE aktuell war, und bilden das Mindest-Patchlevel oder Service Pack-Level der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
 
