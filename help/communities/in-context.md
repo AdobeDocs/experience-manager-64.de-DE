@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
+role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
 
 ---
 
-# Kontextbezogene Moderation {#in-context-moderation}
+# In-Context-Moderation {#in-context-moderation}
 
 Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite erfolgen, auf der die Community-Inhalte veröffentlicht wurden.
 
@@ -28,7 +28,7 @@ Bei Verwendung einer [Moderationskonsole](moderation.md) enthalten die für den 
 
 In der Moderationsübersicht finden Sie eine Beschreibung von [Moderationsaktionen](moderate-ugc.md#moderation-actions).
 
-## Moderations-Benutzeroberfläche {#moderation-ui}
+## Moderationsbenutzeroberfläche {#moderation-ui}
 
 Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz angezeigt wird, ist im Dialogfeld für die Veröffentlichung und Verwaltung benutzergenerierter Inhalte (UGC) enthalten. Die Elemente der Benutzeroberfläche werden durch den Status des Site-Besuchers bestimmt - unabhängig davon, ob sie ...
 
