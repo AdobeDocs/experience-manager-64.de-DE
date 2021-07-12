@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
-role: Administrator
+role: Admin
 exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
 
 ---
 
-# SRP - Community-Inhaltsspeicher {#srp-community-content-storage}
+# SRP - Community-Inhaltsspeicherung {#srp-community-content-storage}
 
 ## Einführung {#introduction}
 
@@ -99,7 +99,7 @@ Wenn keine Speicheroption aktiv ausgewählt ist, ist JSRP standardmäßig aktivi
 
 ## Zusätzliche Informationen {#additional-information}
 
-### UGC nie repliziert {#ugc-never-replicated}
+### Nie replizierte benutzergenerische Inhalte {#ugc-never-replicated}
 
 In der Autorenumgebung erstellt ein Autor Seiteninhalte und repliziert sie in der Veröffentlichungsumgebung. Wenn eine Seite eine interaktive AEM Communities-Funktion enthält, z. B. Kommentare, Rezensionen, Foren, Blog oder Fragen und Antworten, führt die Interaktion von Mitgliedern (die bei Site-Besuchern angemeldet sind) mit einer Veröffentlichungsinstanz dazu, dass benutzergenerierte Inhalte (UGC) in die Veröffentlichungsumgebung eingegeben werden.
 
