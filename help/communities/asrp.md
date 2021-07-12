@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
-role: Administrator
+role: Admin
 exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Der Verbraucher- und der geheime Schlüssel werden für alle Report Suites eines
 
 ## Konfiguration {#configuration}
 
-### Wählen Sie ASRP {#select-asrp}
+### ASRP auswählen {#select-asrp}
 
 Die [Speicherkonfigurationskonsole](srp-config.md) ermöglicht die Auswahl der standardmäßigen Speicherkonfiguration, die angibt, welche SRP-Implementierung verwendet werden soll.
 
@@ -84,7 +84,7 @@ für jede Autoren- und Veröffentlichungsinstanz die Verbindung zum Rechenzentru
 
 * Stellen Sie abschließend sicher, dass die Site-URLs für Profildaten vom Data Center routbar sind, indem Sie [Links externalisieren](#externalize-links).
 
-### Replizieren Sie den Crypto-Schlüssel {#replicate-the-crypto-key}
+### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
 Der Consumer Key und der Secret Key sind verschlüsselt. Damit die Schlüssel ordnungsgemäß verschlüsselt/entschlüsselt werden können, muss der primäre Granite-Crypto-Schlüssel auf allen AEM Instanzen gleich sein.
 
@@ -146,7 +146,7 @@ Wenn Authentifizierungsfehler für die Data Center-URL empfangen und die AEM err
 
 Es wird empfohlen, ein Tool wie das [Network Time Protocol (NTP)](https://www.ntp.org/) zu verwenden, um alle AEM Autoren- und Veröffentlichungsserver zeitlich zu synchronisieren.
 
-### Neue Inhalte werden nicht in Suchvorgängen {#new-content-does-not-appear-in-searches} angezeigt
+### Neue Inhalte werden nicht in Suchvorgängen angezeigt {#new-content-does-not-appear-in-searches}
 
 Die Cloud-Speicher-Infrastruktur der Adobe verwendet *letztendlich Konsistenz*, um Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es kann mehrere Sekunden dauern, bis sie in den Suchergebnissen angezeigt werden.
 
