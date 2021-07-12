@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 5%
 
 ---
 
-# Konfigurieren von E-Mail {#configuring-email}
+# E-Mail konfigurieren {#configuring-email}
 
 AEM Communities verwendet E-Mail für
 
@@ -32,7 +32,7 @@ Standardmäßig ist die E-Mail-Funktion nicht funktionsfähig, da sie die Spezif
 >
 >E-Mail für Benachrichtigungen und Abonnements darf nur für den [primären Herausgeber](deploy-communities.md#primary-publisher) konfiguriert werden.
 
-## Standard-Mail-Dienstkonfiguration {#default-mail-service-configuration}
+## Standard-E-Mail-Dienstkonfiguration {#default-mail-service-configuration}
 
 Der Standard-E-Mail-Dienst ist sowohl für Benachrichtigungen als auch für Abonnements erforderlich.
 
@@ -137,7 +137,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit für ein Mitglied 
 
 Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtool konfiguriert und die Eigenschaften im Repository manuell konfiguriert werden.
 
-### Hinzufügen eines neuen Abruf-Importtools {#add-new-polling-importer}
+### Neuen Abruf-Importtool hinzufügen {#add-new-polling-importer}
 
 * Im primären Herausgeber
 * Mit Administratorrechten angemeldet
