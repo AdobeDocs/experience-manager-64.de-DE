@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
+role: Admin
 exl-id: 6c989701-10c7-466e-b3e5-008a6d377574
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 81%
+ht-degree: 94%
 
 ---
 
-# Erstellen neuer Ordner für die Formularkategorisierung  {#create-new-folders-to-categorize-forms}
+# Erstellen neuer Ordner für die Formularkategorisierung {#create-new-folders-to-categorize-forms}
 
 Sie können Ihre Assets mithilfe von Ordnern besser organisieren. Da AEM Forms mehrere Asset-Typen (Formularvorlagen, PDFs, Dokumente, Ressourcen und adaptive Formulare mit verschiedenen Metadaten) unterstützt, können Sie Ordner verwenden, um Formulare basierend auf den gewünschten Kriterien zu kategorisieren.
 
@@ -32,23 +32,23 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 * Erstellen eines neuen leeren Ordners
 
 1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche unter `https://<server>:<port>/aem/forms.html` an.
-1. Navigieren Sie zum Speicherort, unter dem Sie einen Ordner erstellen möchten.
+1. Navigieren Sie zu dem Speicherort, unter dem Sie einen Ordner erstellen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_add](assets/aem6forms_add.png) und wählen Sie dann **[!UICONTROL Ordner erstellen]** aus.
 
 1. Geben Sie die folgenden Details ein:
 
-   * **Titel:** Anzeigename für den Ordner
-   * **Name:***(Obligatorisch)* Der Knotenname, unter dem Sie den Ordner im Repository speichern möchten
+   * **Titel**: Anzeigename für den Ordner
+   * **Name**: *(obligatorisch)* Der Knotenname, unter dem Sie den Ordner im Repository speichern möchten
 
    >[!NOTE]
    >
-   >Standardmäßig wird der Wert des Namensfelds automatisch aus dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
+   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
 
 1. Klicken Sie auf **[!UICONTROL Übermitteln].**
 
    Ein neuer Ordner mit dem definierten Titel wird an der aktuellen Position in der Asset-Liste angezeigt.
 
-   Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt die Übermittlung mit einem Fehler fehl. Sie können die Fehlermeldung anzeigen, indem Sie den Mauszeiger über das Fehlersymbol ![aem6forms_error_alert](assets/aem6forms_error_alert.png) bewegen, das neben dem Namensfeld angezeigt wird.
+   Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt das Senden mit einem Fehler fehl. Sie können die Fehlermeldung anzeigen, indem Sie die Maus über das Fehlersymbol ![aem6forms_error_alert](assets/aem6forms_error_alert.png) bewegen, das neben dem Namensfeld angezeigt wird.
 
 ### Bearbeiten des Ordnertitels {#edit-the-folder-title-br}
 
