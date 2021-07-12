@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
-role: Administrator
+role: Admin
 exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 13%
@@ -46,7 +46,7 @@ Detaillierte schrittweise Anweisungen zum Aktivieren der Synchronisierung über 
 
 * [Benutzersynchronisierung](../../help/sites-administering/sync.md)
 
-## Benutzersynchronisierung im Hintergrund {#user-sync-in-the-background}
+## Benutzersynchronisierung im Hintergrund  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -54,19 +54,19 @@ Detaillierte schrittweise Anweisungen zum Aktivieren der Synchronisierung über 
 
 * **Verteilungspaket**: enthält Verteilungsinformationen für Sling. Dies sind Informationen darüber, wo der Inhalt verteilt werden muss und wann er zuletzt verteilt wurde.
 
-## Was passiert wenn ... {#what-happens-when}
+## Verfahren bei … {#what-happens-when}
 
-### Veröffentlichen Sie die Site über die Communities-Sites-Konsole {#publish-site-from-communities-sites-console}
+### Veröffentlichen von Websites über die Communities Sites-Konsole {#publish-site-from-communities-sites-console}
 
 Wenn beim Autor eine Community-Site über die [Communities Sites-Konsole](sites-console.md) veröffentlicht wird, wirkt sich dies auf [replizieren](../../help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) die zugehörigen Seiten aus und Sling verteilt die dynamisch erstellten Community-Benutzergruppen, einschließlich ihrer Mitgliedschaft.
 
-### Benutzer wird erstellt oder Profil in der Veröffentlichungsinstanz bearbeitet {#user-is-created-or-edits-profile-on-publish}
+### Benutzer wird in der Veröffentlichungsinstanz erstellt oder Profil bearbeitet {#user-is-created-or-edits-profile-on-publish}
 
 Standardmäßig werden Benutzer und Profile, die in der Veröffentlichungsumgebung erstellt wurden (z. B. durch Selbstregistrierung, Anmeldung bei sozialen Netzwerken, LDAP-Authentifizierung), nicht in der Autorenumgebung angezeigt.
 
 Wenn die Topologie eine [Veröffentlichungsfarm](topologies.md) ist und die Benutzersynchronisierung korrekt konfiguriert wurde, werden das *Benutzer*- und das *Benutzerprofil* über die Veröffentlichungsfarm hinweg mithilfe der Sling-Verteilung synchronisiert.
 
-### Neue Community-Gruppe wird auf Publish {#new-community-group-is-created-on-publish} erstellt.
+### Neue Community-Gruppe wird auf der Veröffentlichungsinstanz erstellt {#new-community-group-is-created-on-publish}
 
 Obwohl von einer Veröffentlichungsinstanz initiiert, erfolgt die Erstellung einer Community-Gruppe, die zu neuen Seiten auf der Site und einer neuen Benutzergruppe führt, tatsächlich auf der Autoreninstanz.
 
@@ -78,7 +78,7 @@ Per Design werden die in der Veröffentlichungsumgebung erstellten Benutzerdaten
 
 Wenn in der Veröffentlichungsumgebung neue Benutzer über die Konsole [Benutzerverwaltung und Sicherheit](../../help/sites-administering/security.md) hinzugefügt werden, werden die neuen Benutzer und ihre Gruppenmitgliedschaft im Rahmen der Benutzersynchronisierung ggf. mit anderen Veröffentlichungsinstanzen synchronisiert. Bei der Benutzersynchronisierung werden auch die über die Sicherheitskonsole erstellten Benutzergruppen synchronisiert.
 
-### Benutzer-Posts Inhalt auf Veröffentlichungsinstanz {#user-posts-content-on-publish}
+### Benutzer postet Inhalte auf Veröffentlichungsinstanz {#user-posts-content-on-publish}
 
 Bei benutzergenerierten Inhalten (UGC) werden die in einer Veröffentlichungsinstanz eingegebenen Daten über das [konfigurierte SRP](srp-config.md) aufgerufen.
 
@@ -96,7 +96,7 @@ Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die V
 
 1. Stellen Sie sicher, dass der neueste Code installiert wurde:
 
-   * [AEM-Plattformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
+   * [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities-Updates](deploy-communities.md#latestfeaturepack)
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, um zu verhindern, dass die Sling-Inhaltsverteilung fehlschlägt.
@@ -319,7 +319,7 @@ Bei jeder Veröffentlichungsinstanz:
 
 Wiederholen Sie diese Schritte, bis alle Veröffentlichungsinstanzen über eine eindeutige Sling-ID verfügen.
 
-### Vault Package Builder Factory  {#vault-package-builder-factory}
+### Vault Package Builder Factory {#vault-package-builder-factory}
 
 Damit Updates ordnungsgemäß synchronisiert werden, müssen Sie den Vault Package Builder für die Benutzersynchronisierung ändern.\
 In `/home/users` wird ein `/rep:cache` -Knoten erstellt. Es handelt sich um einen Cache, der verwendet wird, um festzustellen, dass dieser Cache direkt verwendet werden kann, wenn wir den Prinzipalnamen eines Knotens abfragen.
@@ -349,7 +349,7 @@ Auf jeder AEM Veröffentlichungsinstanz:
 
 ![vault-package-builder-factory](assets/vault-package-builder-factory.png)
 
-## Fehlerbehebung bei der Sling-Distribution in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
+## Fehlerbehebung bei der Sling-Verteilung in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
 
 Wenn die Sling-Verteilung fehlschlägt, führen Sie die folgenden Debugging-Schritte aus:
 
