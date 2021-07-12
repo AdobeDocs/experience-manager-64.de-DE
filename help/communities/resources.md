@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
+role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 6%
@@ -71,7 +71,7 @@ Für [Aktivierungsgemeinschaften](overview.md#enablement-community) wird empfohl
 
 ## Zugriff auf die Aktivierungsressourcen einer Community-Site {#accessing-a-community-site-s-enablement-resources}
 
-### Navigieren Sie zu Communities-Ressourcen {#navigate-to-communities-resources} .
+### Navigieren zu Communities-Ressourcen {#navigate-to-communities-resources}
 
 In der Autorenumgebung, um die Ressourcenkonsole zu erreichen
 
@@ -79,7 +79,7 @@ In der Autorenumgebung, um die Ressourcenkonsole zu erreichen
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### Community-Site {#select-a-community-site} auswählen
+### Community-Site auswählen {#select-a-community-site}
 
 Die Communities-Ressourcen-Konsole zeigt alle Community-Sites an.
 
@@ -220,7 +220,7 @@ Bibliothek durchsuchen Wählen Sie aus der Asset-Bibliothek aus. Die Auswahl ist
 
       Der Name des Assets für die Aktivierungsressource.
 
-   * **[!UICONTROL Standort]**
+   * **[!UICONTROL Speicherort]**
 
       Die Lage eines physischen Standorts, z. B. eines Klassenzimmers.
 
@@ -288,7 +288,7 @@ Zugewiesene Benutzer hinzufügenVerwenden Sie das Pulldown-Menü, um aus  [Mitgl
 
 Die erfolgreiche Erstellung der Aktivierungsressource kehrt mit der ausgewählten neu erstellten Ressource zur Ressourcenkonsole zurück. In dieser Konsole können Sie [die Ressource](#managing-a-resource) verwalten.
 
-## Erstellen eines Lernpfads {#create-a-learning-path}
+## Lernpfad erstellen {#create-a-learning-path}
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -412,7 +412,7 @@ So verwalten Sie eine einzelne Aktivierungsressource
 Für die ausgewählte Aktivierungsressource haben Sie folgende Möglichkeiten:
 
 * Eigenschaften anzeigen (Standard)
-* Eigenschaften bearbeiten
+* Bearbeiten von Eigenschaften
 * Löschen
 * Veröffentlichen
 * Veröffentlichung rückgängig machen
@@ -445,7 +445,7 @@ Bevor Lernende die zugewiesenen Aktivierungsressourcen sehen können, müssen si
 
 Obwohl im Dialogfeld angegeben wird, dass die Aktion in die Warteschlange gestellt wird, wird sie oft sofort veröffentlicht.
 
-### Veröffentlichung rückgängig machen {#unpublish}
+### Veröffentlichung aufheben {#unpublish}
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
