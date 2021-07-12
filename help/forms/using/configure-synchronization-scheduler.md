@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
-role: Administrator
+role: Admin
 exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 79%
 
 ---
 
-# Konfigurieren des Synchronisierungs-Scheduler  {#configuring-the-synchronization-scheduler}
+# Konfigurieren des Synchronisierungs-Scheduler {#configuring-the-synchronization-scheduler}
 
 Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt, um alle geänderten und aktualisierten Elemente im Repository über LiveCycle Workbench 11 zu synchronisieren. Anwendungen, die Formulare und Ressourcen enthalten, sind in der AEM Forms-Benutzeroberfläche sichtbar, sobald der Synchronisierungsprozess abgeschlossen ist.
 
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisie
 
    Die Einheit für die Frequenz ist Minuten. Um den Scheduler beispielsweise so zu konfigurieren, dass er alle 60 Minuten ausgeführt wird, geben Sie „60“ ein.
 
-## Synchronisieren von Elementen  {#synchronizing-assets}
+## Synchronisieren von Elementen {#synchronizing-assets}
 
 Sie können die Option **Assets aus Repository synchronisieren** verwenden, um die Elemente manuell zu synchronisieren. Führen Sie die folgenden Schritte durch, um die Elemente manuell zu synchronisieren:
 
