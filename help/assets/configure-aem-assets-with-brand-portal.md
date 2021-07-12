@@ -3,9 +3,9 @@ title: Konfigurieren von AEM Assets mit Brand Portal
 description: 'Erfahren Sie, wie Sie AEM Assets mit Brand Portal konfigurieren, um Assets und Sammlungen in Brand Portal zu veröffentlichen. '
 contentOwner: VG
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 54%
@@ -69,7 +69,7 @@ Detaillierte Anweisungen finden Sie unter
 
 **Wenden Sie sich** an den Kundendienst, wenn Sie das neueste AEM oder Service Pack nicht finden können.
 
-## Erstellen der Konfiguration {#configure-new-integration-64}
+## Konfiguration erstellen {#configure-new-integration-64}
 
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, wenn Sie AEM Assets zum ersten Mal mit Brand Portal konfigurieren:
 
@@ -288,7 +288,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um vorhan
 1. [Vorhandene Konfigurationen löschen](#delete-existing-configuration)
 1. [Konfiguration erstellen](#configure-new-integration-64)
 
-### Überprüfen laufender Aufträge {#verify-jobs}
+### Ausführungsaufträge überprüfen {#verify-jobs}
 
 Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichungsauftrag ausgeführt wird, bevor Sie Änderungen vornehmen. Dazu können Sie alle vier Replikationsagenten überprüfen und sicherstellen, dass die Warteschlange ideal/leer ist.
 
@@ -310,7 +310,7 @@ Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichu
 
    ![](assets/test-integration3.png)
 
-### Löschen vorhandener Konfigurationen {#delete-existing-configuration}
+### Vorhandene Konfigurationen löschen {#delete-existing-configuration}
 
 Sie müssen beim Löschen der vorhandenen Konfiguration die folgende Checkliste ausführen.
 * Alle vier Replikationsagenten löschen
