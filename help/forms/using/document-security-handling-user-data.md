@@ -7,9 +7,9 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
+role: Admin
 exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 60%
@@ -81,7 +81,7 @@ Die folgende Tabelle zeigt, wie die Dokumentensicherheit Daten in Datenbanktabel
  </tbody> 
 </table>
 
-## Zugreifen auf und Löschen von Benutzerdaten  {#access-and-delete-user-data}
+## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
 Sie können auf Document Security-Daten für Benutzer in den Datenbanken zugreifen und sie exportieren und bei Bedarf dauerhaft löschen.
 
@@ -95,7 +95,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Nachdem Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
 
-### Benutzerdaten exportieren  {#export-user-data}
+### Benutzerdaten exportieren {#export-user-data}
 
 Führen Sie die folgenden Datenbankbefehle aus, um Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `select` `<principal_id>` die Prinzipal-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
