@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
+role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 5%
@@ -50,7 +50,7 @@ Um sicherzustellen, dass die Site viele Funktionen unterstützt, empfiehlt es si
 * Identifizieren Sie [Community-Administratoren](users.md#creating-community-members).
 * [Aktivieren des OAuth-](social-login.md#adobe-granite-oauth-authentication-handler) Handlers für die Anmeldung über soziale Netzwerke
 
-## Zugriff auf die Communities Sites-Konsole {#accessing-communities-sites-console}
+## Zugreifen auf die Communities Sites-Konsole {#accessing-communities-sites-console}
 
 Gehen Sie in der Autorenumgebung in die Konsole Communities Sites :
 
@@ -112,7 +112,7 @@ Wählen Sie **[!UICONTROL Weiter]** aus
 
 Das Bedienfeld &quot;Design&quot;enthält zwei Unterbedienfelder zur Auswahl des Designs und des Branding-Banners:
 
-#### COMMUNITY SITE-THEMA {#community-site-theme}
+#### SITE-THEMA DER GEMEINSCHAFT {#community-site-theme}
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
@@ -122,7 +122,7 @@ Wenn diese Option aktiviert ist, wird das Design mit einem undurchsichtigen blau
 
 Nachdem die Community-Site veröffentlicht wurde, können Sie [die Eigenschaften](#modifying-site-properties) bearbeiten und ein anderes Design auswählen.
 
-#### COMMUNITY SITE BRANDING {#community-site-branding}
+#### GEMEINSCHAFTLICHE SITE-BRANCHE {#community-site-branding}
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -361,7 +361,7 @@ Die `ENABLEMENT`Einstellungen gelten, wenn die ausgewählte Community-Site-Vorla
 
 Wählen Sie **[!UICONTROL Weiter]** aus.
 
-### Schritt 4: Erstellen der Communities-Site {#step-create-communities-site}
+### Schritt 4: Community-Site erstellen {#step-create-communities-site}
 
 Wenn Anpassungen erforderlich sind, verwenden Sie die Schaltfläche **Zurück** , um sie vorzunehmen.
 
@@ -398,7 +398,7 @@ Der Inhalt einer Website kann mit den gleichen Tools wie jede andere AEM erstell
 >
 >Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation zu [Grundlegender Umgang](../../help/sites-authoring/basic-handling.md) und eine [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
 
-## Ändern der Site-Eigenschaften {#modifying-site-properties}
+## Ändern von Site-Eigenschaften {#modifying-site-properties}
 
 ![chlimage_1-462](assets/chlimage_1-462.png)
 
@@ -408,7 +408,7 @@ Die Eigenschaften einer vorhandenen Site, die während des Site-Erstellungsproze
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
-### Ändern von Basic {#modify-basic}
+### Standard ändern {#modify-basic}
 
 Das BASIC-Bedienfeld ermöglicht die Änderung von
 
@@ -478,7 +478,7 @@ Das Fenster EINSTELLUNGEN ermöglicht den Zugriff auf die meisten Einstellungen 
 * [Tags](#tagging)
 * [Moderation](#moderation)
 * [Mitgliederrollen](#roles)
-* [Analytics](#analytics)
+* [Analyse](#analytics)
 * [Übersetzung](#translation)
 
 ### Miniaturansicht ändern {#modify-thumbnail}
@@ -541,7 +541,7 @@ Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergrup
 
 erstellt wurde, sollte der angewendete [Facebook-Cloud-Service](social-login.md#createafacebookcloudservice) so konfiguriert sein, dass dieser Gruppe Benutzer hinzugefügt werden.
 
-## Konfigurieren für Authentifizierungsfehler {#configure-for-authentication-error}
+## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
 Standardmäßig wird eine Community-Site zu einer Beispielanmeldeseite umgeleitet, wenn der Benutzer die falschen Anmeldedaten eingibt und sich nicht anmeldet. Diese Beispielanmeldung ist auf einem [Produktionsserver](../../help/sites-administering/production-ready.md) nicht vorhanden.
 
@@ -580,7 +580,7 @@ Auf derselben AEM Veröffentlichungsinstanz, die mit einem Anmeldeseitenzuordnun
 
 ![chlimage_1-469](assets/chlimage_1-469.png)
 
-## Zugriff auf Community-Sites über die Haupt-Sites-Konsole {#accessing-community-sites-from-main-sites-console}
+## Zugriff auf Community-Sites über die Konsole &quot;Haupt-Sites&quot; {#accessing-community-sites-from-main-sites-console}
 
 In der Konsole für globale Navigations-Sites befinden sich Community-Sites im Ordner `Community Sites` .
 
