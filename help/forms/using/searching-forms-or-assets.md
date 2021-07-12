@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
-role: Administrator
+role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 91%
 
 ---
 
-# Suchen nach Formularen und Assets  {#searching-for-forms-and-assets}
+# Suchen nach Formularen und Assets {#searching-for-forms-and-assets}
 
 Sie können über eine Textzeichenfolge oder eine Textzeichenfolge mit Platzhaltern nach Formularen oder Formular-Assets suchen. Sie können die Suche auch mithilfe der Kriterien einschränken, die in den verschiedenen Kategorien im Suchfeld verfügbar sind.
 
