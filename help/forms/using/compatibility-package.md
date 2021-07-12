@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
+role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 91%
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 Die Installation des Kompatibilitätspakets auf AEM Forms 6.4 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.3 sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zum Erstellen von Kundenkommunikation in AEM Forms 6.4. Um die Briefe aus AEM 6.3 Forms und AEM 6.2 Forms weiterhin verwenden zu können, müssen Sie das [AEMFD-Kompatibilitätspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) installieren.
 
