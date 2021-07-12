@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
+role: Admin
 exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # FFmpeg für Communities {#ffmpeg-for-communities}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird bei der Installation für die ordnungsgemäße Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) sowie für die Aktivierungsfunktion von AEM Communities verwendet.
 
@@ -43,7 +43,7 @@ FFmpeg sollte auf den Servern installiert sein, auf denen die AEM *author* -Inst
 
    * Beispiel: `ffmpeg -version`
 
-## FFmpeg Transcoding Service {#configure-ffmpeg-transcoding-service} konfigurieren
+## FFmpeg Transcoding Service konfigurieren {#configure-ffmpeg-transcoding-service}
 
 Wenn FFmpeg installiert ist, werden gemäß der Workflow-Definition DAM Update Asset standardmäßig mehrere Ausgabedarstellungen konfiguriert (Transkodierungen).
 
