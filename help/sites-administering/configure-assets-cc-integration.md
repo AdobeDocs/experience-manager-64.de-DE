@@ -1,17 +1,17 @@
 ---
 title: AEM Assets-Integration mit Experience Cloud konfigurieren
 description: Erfahren Sie, wie Sie die AEM Assets-Integration mit Experience Cloud konfigurieren.
-feature: Asset-Verwaltung
-role: Business Practitioner, Architect, Administrator
+feature: Asset-Management
+role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 44%
 
 ---
 
-# Konfigurieren der AEM Assets-Integration mit Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# AEM Assets-Integration mit Experience Cloud konfigurieren {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets in Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud synchronisieren und umgekehrt. Sie können diese Synchronisation über [!DNL Adobe I/O] einrichten. Der aktualisierte Name von [!DNL Adobe Marketing Cloud] ist [!DNL Adobe Experience Cloud].
 
@@ -90,7 +90,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**, um den für Ihre Instanz generierten öffentlichen Schlüssel anzuzeigen. Klicken Sie alternativ auf **[!UICONTROL Öffentlichen Schlüssel für OAuth-Gateway herunterladen]** , um die Datei mit dem öffentlichen Schlüssel herunterzuladen. Öffnen Sie dann die Datei, um den öffentlichen Schlüssel anzuzeigen.
 
-## Aktivieren der Synchronisierung  {#enable-synchronization}
+## Aktivieren der Synchronisierung {#enable-synchronization}
 
 1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Hinzufügen einer neuen Konfiguration zu Experience Cloud](#add-a-new-configuration) erwähnt wurden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
 
