@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
+role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Wählen Sie `Create` aus, um mit der Erstellung einer neuen Site-Vorlage zu begi
 
 Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
 
-### Grundlegende Informationen {#basic-info}
+### Basisinformationen {#basic-info}
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -97,7 +97,7 @@ Wenn Sie zwei oder mehr Community-Gruppenvorlagen auswählen, können Sie beim E
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-##  Site-Vorlage bearbeiten{#edit-site-template}
+## Site-Vorlage bearbeiten {#edit-site-template}
 
 Beim Anzeigen von Site-Vorlagen in der Haupt-Konsole [Site-Vorlagen](#site-templates-console) ist es möglich, eine vorhandene Site-Vorlage zur Bearbeitung auszuwählen.
 
