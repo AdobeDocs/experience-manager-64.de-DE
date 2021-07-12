@@ -7,9 +7,9 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Administrator
+role: Admin
 exl-id: 8cbace00-c354-4f37-a781-04cadd441419
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 64%
@@ -32,7 +32,7 @@ Weitere Informationen zum Erstellen des AEM Forms JEE-Workflow-Prozesses finden 
 
 Wenn ein Prozess ausgelöst wird und fortschreitet, erfasst er Daten zu den Prozessteilnehmern, Daten, die von Teilnehmern in dem mit dem Prozess verknüpften Formular eingegeben wurden, und Anhänge, die dem Formular hinzugefügt wurden. Die Daten werden in der AEM Forms JEE-Serverdatenbank gespeichert. Wenn sie konfiguriert sind, werden einige Daten wie Anlagen im Ordner des globalen Dokumentenspeichers (Global Document Storage, GDS) gespeichert. Der Ordner des globalen Dokumentenspeichers kann auf ein freigegebenes Dateisystem oder auf eine Datenbank konfiguriert werden.
 
-## Zugreifen auf und Löschen von Benutzerdaten  {#access-and-delete-user-data}
+## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
 Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine langlebige Aufruf-ID generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die langlebige Aufruf-ID einer Prozessinstanz mit dem Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben gesendet haben, bestimmen.
 
