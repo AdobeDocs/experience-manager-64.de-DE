@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
-role: Administrator
+role: Admin
 exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 81%
@@ -46,7 +46,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 >
 >Wenn Sie AEM Dispatcher zum Zwischenspeichern adaptiver Formulare verwenden, werden dabei auch adaptive Formulare im Cache abgelegt, die Formulare mit vorausgefüllten Daten enthalten. Werden solche Formulare aus dem AEM Dispatcher-Cache bereitgestellt, erhalten die Benutzer eventuell vorausgefüllte oder veraltete Daten. Verwenden Sie AEM Dispatcher daher zum Zwischenspeichern von Formularen, die keine vorausgefüllten Daten enthalten. Darüber hinaus werden im Dispatcher-Cache abgelegte Fragmente nicht automatisch ungültig gemacht. Verwenden Sie dies daher nicht zum Zwischenspeichern von Formularfragmenten. Verwenden Sie für solche Formulare und Fragmente vielmehr den [Adaptive Forms-Cache](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## JVM-Parameter    {#jvm-parameters}
+## JVM-Parameter   {#jvm-parameters}
 
 Für eine optimale Leistung wird empfohlen, die folgenden JVM-Argumente `init` zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
 
