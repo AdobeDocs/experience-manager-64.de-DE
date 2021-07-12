@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
+role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Die Moderationskonsole unterstützt:
 
 Moderationsaufgaben können nur ausgeführt werden, wenn sie als Administrator oder Mitglied mit ` [moderator permissions](in-context.md#identifyingtrustedmembers)` angemeldet sind.
 
-## Zugriff auf die Veröffentlichungsumgebung {#publish-environment-access}
+## Zugriff auf Veröffentlichungsumgebung {#publish-environment-access}
 
 Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Site aus erfolgt über einen Link &quot;Administration&quot;, der angezeigt wird, wenn ein Community-Moderator angemeldet ist.
 
@@ -171,7 +171,7 @@ Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inha
 
 ![content-types](assets/content-types.png)
 
-#### Zusätzliche Content-Typen {#additional-content-types}
+#### Weitere Content-Typen {#additional-content-types}
 
 So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
