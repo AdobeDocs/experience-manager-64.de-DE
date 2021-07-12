@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
+role: Admin
 exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktions*-Umgebungen, z. B. für 
 
 ## MongoDB {#mongodb}
 
-### Installieren Sie MongoDB {#install-mongodb}
+### MongoDB installieren {#install-mongodb}
 
 * Laden Sie MongoDB von [https://www.mongodb.org/](https://www.mongodb.org/) herunter.
 
@@ -62,7 +62,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktions*-Umgebungen, z. B. für 
 
 * MongoDB kann auf demselben Host ausgeführt werden wie AEM oder remote ausgeführt werden
 
-### Start MongoDB {#start-mongodb}
+### MongoDB starten {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
 
@@ -74,7 +74,7 @@ Dadurch wird ein MongoDB-Server mit dem Standardanschluss 27017 gestartet.
 >
 >Wenn MongoDB gestartet wird *nach* AEM, **Neustart** alle **AEM**-Instanzen, damit sie ordnungsgemäß eine Verbindung zu MongoDB herstellen.
 
-### Demoproduktionsoption: Einrichten des MongoDB-Replikat-Sets {#demo-production-option-setup-mongodb-replica-set}
+### Demoproduktionsoption: MongoDB-Replikat-Set einrichten {#demo-production-option-setup-mongodb-replica-set}
 
 Die folgenden Befehle sind ein Beispiel für die Einrichtung einer Replikatgruppe mit 3 Knoten auf localhost:
 
@@ -94,7 +94,7 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung einer Replikatgrupp
 
 ## Solr {#solr}
 
-### Installieren Sie Solr {#install-solr}
+### Installieren von Solr {#install-solr}
 
 * Laden Sie Solr von [Apache Lucene](https://archive.apache.org/dist/lucene/solr/) herunter:
 
@@ -115,7 +115,7 @@ Um eine Solr-Sammlung für MSRP für Demos zu konfigurieren, müssen zwei Entsch
 1. Führen Sie Solr im eigenständigen oder [SolrCloud-Modus](msrp.md#solrcloudmode) aus.
 1. Installieren Sie [standard](msrp.md#installingstandardmls) oder [advanced](msrp.md#installingadvancedmls) mehrsprachige Suche (MLS).
 
-### Eigenständige Solr {#standalone-solr}
+### Eigenständiger Solr {#standalone-solr}
 
 Die Methode zum Ausführen von Solr kann je nach Version und Art der Installation unterschiedlich sein. Das [Solr-Referenzhandbuch](https://archive.apache.org/dist/lucene/solr/ref-guide/) ist die maßgebliche Dokumentation.
 
@@ -139,7 +139,7 @@ Um ein sehr einfaches SolrCloud-Setup (nicht die Produktion) auszuführen, start
 
 * java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar
 
-## MongoDB als Common Store identifizieren {#identify-mongodb-as-common-store}
+## MongoDB als allgemeinen Store identifizieren {#identify-mongodb-as-common-store}
 
 Starten Sie bei Bedarf die Autoren- und Veröffentlichungsinstanzen AEM.
 
@@ -178,7 +178,7 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
 ## Fehlerbehebung {#troubleshooting}
 
-### Kein UGC wird {#no-ugc-appears} angezeigt
+### Kein UGC wird angezeigt {#no-ugc-appears}
 
 1. Stellen Sie sicher, dass MongoDB ordnungsgemäß installiert und ausgeführt wird.
 
