@@ -9,22 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
+role: Admin
 exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 4%
 
 ---
 
-# Mitglieder und Gruppenverwaltungskonsolen {#members-groups-management-consoles}
+# Verwaltungskonsolen für Mitglieder und Gruppen {#members-groups-management-consoles}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Communities-Funktionen erfordern häufig, dass Besucher der Site registriert und angemeldet sind, bevor sie an einer Community in der Veröffentlichungsumgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungsumgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von *Benutzern* zu unterscheiden, die in der Autorenumgebung registriert sind.
 
-### Mitglieder (Benutzer) auf Publish {#members-users-on-publish}
+### Mitglieder (Benutzer) auf der Veröffentlichungsinstanz {#members-users-on-publish}
 
 Mithilfe der Communities Mitglieder und Gruppen-Konsolen können Mitglieder und Mitgliedergruppen, die in der Umgebung *publish* registriert sind, aus der Umgebung *author* erstellt und verwaltet werden. Dies ist nur möglich, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aktiviert ist.
 
@@ -77,7 +77,7 @@ Wählen Sie `Create Member` aus, um einen Benutzer in der Veröffentlichungsumge
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### ALLGEMEIN - Mitgliederdetails {#general-member-details}
+### ALLGEMEINE - Mitgliederdetails {#general-member-details}
 
 Die meisten Felder sind optionale Felder, die das Mitglied später in seinem Profil ausfüllen kann.
 
@@ -144,7 +144,7 @@ Das Mitglied kann zu einer oder mehreren Mitgliedergruppen der Community-Sites h
 
 Das Mitglied kann einer oder mehreren Mitgliedergruppen hinzugefügt werden. Geben Sie zunächst Text in das Textfeld ein.
 
-### Registerkarte BADGES {#badges-tab}
+### Registerkarte &quot;BADGES&quot; {#badges-tab}
 
 Das Bedienfeld `BADGES` bietet die Möglichkeit, Abzeichen manuell zuzuweisen und zu widerrufen. Die Abzeichen können für zugewiesene Rollen sowie für gewöhnlich verdiente Abzeichen verwendet werden.
 
