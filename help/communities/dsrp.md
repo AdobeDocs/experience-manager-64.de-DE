@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
+role: Admin
 exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 4%
 
 ---
 
-# DSRP - Relativer Datenbankspeicheranbieter {#dsrp-relational-database-storage-resource-provider}
+# DSRP - Resource Provider für relationale Datenbankspeicher {#dsrp-relational-database-storage-resource-provider}
 
 ## Über DSRP {#about-dsrp}
 
@@ -54,7 +54,7 @@ In Produktionsumgebungen bietet der SolrCloud-Modus eine verbesserte Leistung im
 
 Informationen zur Installation und Konfiguration finden Sie unter [Solr-Konfiguration für SRP](solr.md).
 
-### Wählen Sie DSRP {#select-dsrp}
+### DSRP auswählen {#select-dsrp}
 
 Die [Speicherkonfigurationskonsole](srp-config.md) ermöglicht die Auswahl der standardmäßigen Speicherkonfiguration, die angibt, welche SRP-Implementierung verwendet werden soll.
 
@@ -107,7 +107,7 @@ Auf der Autoreninstanz, um auf die Speicherkonfigurationskonsole zuzugreifen
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**
 
-### Migrationsschritte ohne Ausfallzeiten für Standard-RP {#migration-steps-0dt}
+### Migrationsschritte bei Null Ausfallzeiten für Standard {#migration-steps-0dt}
 
 Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die Standardseite [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) erwartungsgemäß funktioniert:
 
@@ -141,7 +141,7 @@ Informationen zu *Benutzern*, *Benutzerprofilen* und *Benutzergruppen*, die häu
 * [Benutzersynchronisierung](sync.md)
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 
-## Neuindizierung von Solr für DSRP {#reindexing-solr-for-dsrp}
+## Solr-Neuindizierung für DSRP {#reindexing-solr-for-dsrp}
 
 Um DSRP Solr neu zu indizieren, folgen Sie der Dokumentation für [Neuindizierung von MSRP](msrp.md#msrp-reindex-tool). Verwenden Sie jedoch bei der Neuindizierung für DSRP stattdessen diese URL: **/services/social/datastore/rdb/reindex**
 
