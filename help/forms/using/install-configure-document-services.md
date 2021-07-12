@@ -6,9 +6,9 @@ seo-description: Installieren Sie AEM Forms Document Services, um PDF-Dokumente 
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
-role: Administrator
+role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 72%
@@ -297,7 +297,7 @@ Führen Sie die folgenden Schritte aus, um den IBM-SSL-Socketanbieter zu konfigu
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Nur Windows) Konfigurieren Sie den Dienst &quot;Install Ink and Handschrift&quot; {#configure-install-ink-and-handwriting-service}
+### (Nur Windows) Konfigurieren Sie den Dienst &quot;Installieren von Ink und Handschrift&quot; {#configure-install-ink-and-handwriting-service}
 
 Wenn Sie Microsoft Windows Server verwenden, konfigurieren Sie den Freihand- und Handschrift-Dienst. Der Dienst ist erforderlich, um Microsoft PowerPoint-Dateien zu öffnen, die die Freihand-Funktionen von Microsoft Office verwenden:
 
@@ -315,7 +315,7 @@ Wenn Sie Microsoft Windows Server verwenden, konfigurieren Sie den Freihand- und
 1. Klicken Sie in den **[!UICONTROL Einstellungen für das Sicherheitscenter]** auf **[!UICONTROL Einstellungen für den Zugriffsschutz]**.
 1. Deaktivieren Sie in der Liste **[!UICONTROL Dateityp]** die Option **[!UICONTROL Öffnen]** für den Dateityp, für den es dem PDF Generator-Dienst erlaubt werden soll, Dateien in PDF-Dokumente zu konvertieren.
 
-### (Nur Windows) Berechtigung &quot;Token auf Prozessebene ersetzen&quot;{#grant-the-replace-a-process-level-token-privilege} gewähren
+### (Nur Windows) Berechtigung Ersetzen eines Tokens auf Prozessebene gewähren {#grant-the-replace-a-process-level-token-privilege}
 
 Das Benutzerkonto, das zum Starten des Anwendungsservers verwendet wird, muss die Berechtigung **Ersetzen eines Tokens auf Prozessebene** haben. Das lokale Systemkonto hat standardmäßig die Berechtigung **Ersetzen eines Tokens auf Prozessebene**. Für den Server, die mit einem Benutzer der lokalen Administratorgruppe ausgeführt werden, muss die Berechtigung explizit gewährt werden. Führen Sie die folgenden Schritte durch, um  die Berechtigung zu gewähren:
 
@@ -345,7 +345,7 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 
 1. Starten Sie den Computer neu.
 
-### (Nur Windows) Deaktivieren Sie den Fehlerberichtsdienst {#disable-error-reporting-service}
+### (Nur Windows) Deaktivieren des Fehlerberichterstellungsdienstes {#disable-error-reporting-service}
 
 Beim Konvertieren eines Dokuments in PDF mithilfe des PDF Generator-Dienstes unter Windows Server meldet Windows Server gelegentlich, dass bei der ausführbaren Datei ein Problem aufgetreten ist und geschlossen werden muss. Das wirkt sich jedoch nicht auf die PDF-Konvertierung aus, da sie im Hintergrund läuft.
 
@@ -359,7 +359,7 @@ Der PDF Generator-Dienst stellt WebKit-, WebCapture- und PhantomJS-Routen oder -
 >
 >Wenn Sie neue Schriftarten im Ordner &quot;Schriftarten&quot;installieren, starten Sie die AEM Forms-Instanz neu.
 
-### (Nur UNIX-basierte Plattformen) Zusätzliche Konfigurationen für die Konvertierung von HTML in PDF {#extra-configurations-for-html-to-pdf-conversion}
+### (Nur UNIX-basierte Plattformen) Zusätzliche Konfigurationen für die Konvertierung von HTML in PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
 Auf UNIX-basierten Plattformen unterstützt der PDF Generator-Dienst WebKit- und PhantomJS-Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente. Um die „HTML in PDF“-Konvertierung, führen Sie für Ihre bevorzugte Konvertierungsroute die folgenden Konfigurationen durch:
 
@@ -398,10 +398,10 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
    2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
-1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 
 1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der  `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log-Datei angezeigt werden und das Protokoll stabil ist.
 
@@ -428,7 +428,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
 1. Speichern und schließen Sie die Datei.
 
-### Schriftmanagerdienst konfigurieren   {#configuring-the-font-manager-service}
+### Schriftmanagerdienst konfigurieren  {#configuring-the-font-manager-service}
 
 1. Melden Sie sich bei [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) als Administrator an.
 1. Suchen und öffnen Sie den Dienst **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]**. Geben Sie den Pfad für die Ordner Systemschriftarten, Adobe-Serverschriftarten und Kundenschriftarten an. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -501,7 +501,7 @@ Unter Microsoft Windows verwendet der PDF Generator-Dienst Adobe Acrobat, um unt
 
 1. Führen Sie das System Readiness Tool (SRT) aus, um die Installation von Acrobat zu validieren. Das Werkzeug überprüft, ob der Computer ordnungsgemäß zum Ausführen von PDF Generator-Konvertierungen konfiguriert ist, und es erstellt einen Bericht unter dem angegebenen Pfad:
 
-   1. Öffnen Sie das Befehlszeilenfenster. Navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt`. Führen Sie in der Eingabeaufforderung den folgenden Befehl aus:
+   1. Öffnen Sie die Eingabeaufforderung. Navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` . Führen Sie in der Eingabeaufforderung den folgenden Befehl aus:
 
       `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
