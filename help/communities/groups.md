@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1642'
 ht-degree: 2%
@@ -96,7 +96,7 @@ In dieser Gruppenkonsole ist es möglich, neue Gruppen zu erstellen.
 
 ### Schritt 2: Design {#step-design}
 
-#### GEMEINSCHAFTSGRUPPENTHEMA {#community-group-theme}
+#### GEMEINSCHAFTSGRUPPENTHEMEN {#community-group-theme}
 
 ![communityGrouptheme](assets/communitygrouptheme.png)
 
@@ -108,7 +108,7 @@ Es ist möglich, ein Design auszuwählen, das sich vom Design der übergeordnete
 
 Nachdem die Community-Site veröffentlicht wurde, können Sie [die Eigenschaften](#modifying-group-properties) bearbeiten und ein anderes Design auswählen.
 
-#### GEMEINSCHAFTSGRUPPENBRANDING {#community-group-branding}
+#### GEMEINSCHAFTSGRUPPENBRANCHE {#community-group-branding}
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
@@ -182,13 +182,13 @@ Nach Abschluss des Vorgangs wird die Karte für die neue Unter-Community-Site (G
 >
 >Die Gruppe wird in allen Sprachen erstellt, wie in [Schritt 1 beschrieben: Community-Gruppenvorlage](groups.md#step1communitygrouptemplate) in Zusätzliche verfügbare Community-Gruppensprachen in der Community-Gruppenkonsole der jeweiligen Community-Sites.
 
-## Authoring-Gruppeninhalt {#authoring-group-content}
+## Bearbeiten von Gruppeninhalten {#authoring-group-content}
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
 Der Seiteninhalt einer Gruppe kann mit denselben Tools wie jede andere AEM erstellt werden. Um die Gruppe für die Bearbeitung zu öffnen, wählen Sie das Symbol Site öffnen aus, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen.
 
-## Ändern der Gruppeneigenschaften {#modifying-group-properties}
+## Ändern von Gruppeneigenschaften {#modifying-group-properties}
 
 Die Eigenschaften einer bestehenden Unter-Community-Site, die beim Erstellen einer Community-Gruppe angegeben wurde, können durch Auswahl des Symbols Site bearbeiten geändert werden, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen:
 
@@ -198,7 +198,7 @@ Die Details der folgenden Eigenschaften entsprechen den Beschreibungen, die im A
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-### Ändern von Basic {#modify-basic}
+### Standard ändern {#modify-basic}
 
 Das BASIC-Bedienfeld ermöglicht die Änderung von
 
