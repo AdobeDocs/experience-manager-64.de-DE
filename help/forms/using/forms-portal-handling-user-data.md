@@ -8,9 +8,9 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
+role: Admin
 exl-id: 05dbb6ee-09fd-44ee-bb8b-a3f3ebb32f5a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 64%
@@ -43,7 +43,7 @@ Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und ü
   <tr> 
    <td><p><strong>Persistenztyp</strong></p> </td> 
    <td><p><strong>Datenspeicher</strong></p> </td> 
-   <td><p><strong>Standort</strong></p> </td> 
+   <td><p><strong>Speicherort</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Default</p> </td> 
@@ -67,7 +67,7 @@ Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und ü
 
 Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte Formulardaten für angemeldete und anonyme Benutzer zugreifen und diese bei Bedarf löschen.
 
-### AEM-Instanzen  {#aem-instances}
+### AEM-Instanzen {#aem-instances}
 
 Alle Entwürfe und gesendeten Formulardaten in AEM Instanzen (Autor, Veröffentlichung oder Remote) für angemeldete und anonyme Benutzer werden im Knoten `/content/forms/fp/` des entsprechenden AEM Repository gespeichert. Jedes Mal, wenn ein angemeldeter oder anonymer Benutzer einen Entwurf speichert oder ein Formular sendet, wird ein `draft ID` oder `submission ID`, ein `user data ID` und ein zufälliger `ID` für jede Anlage generiert (sofern zutreffend), der dem entsprechenden Entwurf oder der entsprechenden Übermittlung zugeordnet ist.
 
@@ -83,7 +83,7 @@ In der folgenden Tabelle wird erläutert, wie die Daten für alle Entwürfe von 
 >
 >Alle Entwürfe und Übermittlungen von `anonymous`-Benutzern werden unter dem Knoten `/content/forms/fp/anonymous/` gespeichert, der Entwürfe und Übermittlungen für alle anonymen Benutzer unter den Knoten `draft` und `submit` organisiert.
 
-| Node | Beschreibung |
+| Knoten | Beschreibung |
 |---|---|
 | `/content/forms/fp/srose/drafts` | Container-Knotendaten für alle Entwürfe durch den Benutzer |
 | `/content/forms/fp/srose/drafts/attachments/` | Organisiert alle Anhänge für den Benutzer basierend auf der Entwurfs-ID |
@@ -93,7 +93,7 @@ In der folgenden Tabelle wird erläutert, wie die Daten für alle Entwürfe von 
 | `/content/forms/fp/srose/drafts/data/` | Organisiert Formulardaten für den Benutzer anhand der Benutzerdaten-ID |
 | `/content/forms/fp/srose/drafts/data/<user data ID>` | Enthält Formulardaten für die ausgewählte Benutzerdaten-ID im Binärformat |
 
-#### Benutzerdaten löschen  {#delete-user-data}
+#### Benutzerdaten löschen {#delete-user-data}
 
 Um Benutzerdaten aus Entwürfen und Sendungen für einen angemeldeten Benutzer von AEM-Systemen vollständig zu löschen, müssen Sie den Knoten `user ID` für einen bestimmten Benutzer vom Author-Knoten löschen. Sie müssen Daten manuell von allen anwendbaren AEM-Instanzen löschen.
 
@@ -104,10 +104,10 @@ Entwürfe und Sendedaten für alle anonymen Benutzer werden in den gemeinsamen `
 Wenn AEM zum Speichern von Daten in einer Datenbank konfiguriert ist, werden die Formularentwurfs- und Sendedaten für das Portal in den folgenden Datenbanktabellen für angemeldete und anonyme Benutzer gespeichert:
 
 * data
-* metadata
+* Metadaten
 * additionalmetadata
 
-#### Zugreifen auf Benutzerdaten  {#access-user-data-1}
+#### Zugreifen auf Benutzerdaten {#access-user-data-1}
 
 Führen Sie den folgenden Datenbankbefehl aus, um auf Entwürfe und Sendedaten für angemeldete und anonyme Benutzer in den Datenbanktabellen zuzugreifen. Ersetzen Sie in der Abfrage `logged-in user` durch die Benutzer-ID, auf deren Daten Sie zugreifen möchten, oder durch `anonymous` für anonyme Benutzer.
 
