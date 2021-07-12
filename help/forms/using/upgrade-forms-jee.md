@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 80%
@@ -40,7 +40,7 @@ Führen Sie folgendes Verfahren durch um von der vorhandenen AEM 6.2 Forms on JE
 
 Die direkte Aktualisierung von LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms auf AEM 6.4 Forms ist nicht verfügbar. Sie können eine Zwischenaktualisierung auf eine oder mehrere Versionen von LiveCycle oder AEM Forms durchführen und dann auf AEM 6.4 Forms aktualisieren. Eine Liste der Zwischenversionen und entsprechenden Aktualisierungsanweisungen finden Sie unter [Aktualisierungspfad wählen](upgrade.md).
 
-## LiveCycle ES4 SP1 > AEM 6.4 Forms on JEE  {#livecycle-es4sp1-forms-jee}
+## LiveCycle ES4 SP1 > AEM 6.4 Forms on JEE {#livecycle-es4sp1-forms-jee}
 
 Die Aktualisierung von LiveCycle ES4 SP1 auf AEM 6.4 Forms on JEE ist ein Out-of-Place Upgrade, da es die Migration von Assets und Daten von früheren Versionen auf die neuen Instanzen (die neuen Versionen) von unterstützten Anwendungsservern, Betriebssystemen und Datenbanken erfordert.
 
