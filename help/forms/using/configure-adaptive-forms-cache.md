@@ -8,18 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Administrator
+role: Admin
 exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
 # Cache für adaptive Formulare konfigurieren {#configure-adaptive-forms-cache}
 
-Eine Cache ist ein Vorgang, um Datenzugriffzeiten zu verkürzen, die Wartezeit zu reduzieren, und die Geschwindigkeit von Eingabe/Ausgabe (I/A) zu verbessern. Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Die Zeit, die benötigt wird, um ein adaptives Formular oder ein Dokument auf dem Client zu rendern, wird reduziert. Es wurde speziell für adaptive Formulare und adaptive Dokumente entworfen.
+Cachen ist ein Mechanismus zum Verkürzen von Datenzugriffszeiten, zur Reduktion von Wartezeiten und zur Steigerung der Geschwindigkeit der Eingabe/Ausgabe (I/A). Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Die Zeit, die benötigt wird, um ein adaptives Formular oder ein Dokument auf dem Client zu rendern, wird reduziert. Es wurde speziell für adaptive Formulare und adaptive Dokumente entworfen.
 
 >[!NOTE]
 >
@@ -29,17 +29,17 @@ Eine Cache ist ein Vorgang, um Datenzugriffzeiten zu verkürzen, die Wartezeit z
 >
 >Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
 
-## Cache konfigurieren   {#configure-the-cache}
+## Cache konfigurieren  {#configure-the-cache}
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Gehen Sie zu AEM Konfigurationsmanager der Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
-1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten.
+1. Wechseln Sie zum AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
+1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal**, um die Konfigurationswerte zu bearbeiten.
 1. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl adaptiver Forms** zwischenspeichern kann. Der Standardwert ist 100.
 
    >[!NOTE]
    >
-   >Um den Cache zu deaktivieren, legen Sie den Wert für die Anzahl adaptiver Formulare auf **0** fest. Der Cache wird zurückgesetzt und alle Formulare und Dokumente werden aus dem Cache entfernt, wenn Sie die Cachekonfiguration deaktivieren oder ändern.
+   >Um den Cache zu deaktivieren, legen Sie den Wert für die Anzahl adaptiver Formulare auf **0** fest. Der Cache wird zurückgesetzt, und alle Formulare und Dokumente werden aus dem Cache entfernt, wenn Sie die Cachekonfiguration deaktivieren oder ändern.
 
    ![Dialogfeld für HTML-Cache für adaptive Formulare konfigurieren](assets/cache-configuration-edit.png)
 
