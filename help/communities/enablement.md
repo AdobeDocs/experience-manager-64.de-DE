@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
+role: Admin
 exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # Konfiguration von Aktivierungsfunktionen {#configuring-enablement-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgruppen](overview.md#enablement-community) zu erstellen.
 
@@ -102,7 +102,7 @@ Verwenden Sie Tools, Bereitstellung, Cloud Services-Konsole:
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[Konfigurieren der](ffmpeg.md#configure-ffmpeg-transcoding-service)**
-FFmpegVerwenden der Workflow-/Models-Konsole
+FFmpegVerwenden der Konsole &quot;Workflow/Modelle&quot;
 
 1. **[Aktivieren Sie Tunnel](deploy-communities.md#tunnel-service-on-author)**
 ServiceVerwenden Sie die Web-Konsole (configMgr): 
