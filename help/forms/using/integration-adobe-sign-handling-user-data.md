@@ -8,9 +8,9 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Adobe Sign
-role: Administrator
+role: Admin
 exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 84%
@@ -29,7 +29,7 @@ Weitere Informationen zur Integration von AEM Forms mit Adobe Sign finden Sie un
 
 Das für Adobe Sign aktiviertes adaptives Formular enthält Informationen zu den Unterzeichnern und kann andere Benutzerdaten enthalten, die vom adaptiven Formular erfasst wurden. Der Adobe Sign-Dienst speichert Benutzerdaten mit der Signatur innerhalb der Vereinbarung. Die Vereinbarung wird auf dem Adobe Sign-Server gespeichert, der in den Cloud-Diensten von AEM Forms konfiguriert ist. Wenn das adaptive Formular für die Sendeaktion konfiguriert ist, werden die Vertragsdaten außerdem zusammen mit den Formulardaten im Datenspeicher des Forms-Portals gespeichert.
 
-## Zugreifen auf und Löschen von Benutzerdaten  {#access-and-delete-user-data}
+## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
 Benutzerdaten werden innerhalb der Vereinbarung gesammelt, aber nicht in einer der Servicetabellen gespeichert. Mit Adobe Sign können Administratoren ihre eigenen Entscheidungen bei der Verwaltung von Daten treffen, die sie im Dienst steuern. Datenschutzadministratoren im Adobe Sign-Dienst können Vereinbarungen basierend auf der E-Mail-Adresse eines Anforderers auflisten oder entfernen.
 
