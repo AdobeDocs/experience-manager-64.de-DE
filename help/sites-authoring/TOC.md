@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Authoring-Benutzeranleitung
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 feature: 'Authoring – '
-role: Business Practitioner
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 88%
@@ -24,7 +24,7 @@ ht-degree: 88%
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
    + [Grundlegende Handhabung](basic-handling.md)
-   + [Suchen](search.md)
+   + [Suche](search.md)
    + [Konfigurieren der Kontoumgebung](user-properties.md)
    + [Ihr Posteingang](inbox.md)
    + [Tastaturbefehle für Konsolen  ](keyboard-shortcuts.md)
@@ -39,8 +39,8 @@ ht-degree: 88%
    + [Veröffentlichen von Seiten](publishing-pages.md)
    + [Seitenbearbeitung mit Inhaltsfragmenten](content-fragments.md)
    + [Experience Fragments](experience-fragments.md)
-   + [Exportieren in CSV  ](csv-export.md)
-   + [Komponenten ](default-components.md)
+   + [Exportieren in CSV ](csv-export.md)
+   + [Komponenten](default-components.md)
    + [Verfassen einer Seite für Mobilgeräte](mobile.md)
    + [Fehlerbehebung in AEM beim Authoring](troubleshooting.md)
    + [Tastaturbefehle für die Seitenbearbeitung](page-authoring-keyboard-shortcuts.md)
@@ -79,13 +79,13 @@ ht-degree: 88%
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [Personalisierung](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
    + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](technical-multisite-targeted.md)
-   + [Verwalten von Aktivitäten ](activitylib.md)
+   + [Verwalten von Aktivitäten   ](activitylib.md)
    + [Verwalten von Zielgruppen](managing-audiences.md)
    + [Erstellen und Verwalten von Angeboten  ](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
