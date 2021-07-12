@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: Inhaltsfragmente
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 92%
@@ -293,7 +293,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
    >* **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
-## Verwalten von Varianten   {#managing-variations}
+## Verwalten von Varianten  {#managing-variations}
 
 ### Variante erstellen {#creating-a-variation}
 
@@ -311,7 +311,7 @@ So erstellen Sie eine neue Variante:
    >
    >Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante   {#editing-a-variation}
+### Bearbeiten einer Variante    {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -374,7 +374,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 3. Master und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt  wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
