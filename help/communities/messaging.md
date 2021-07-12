@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
-role: Administrator
+role: Admin
 exl-id: 0e906f67-b908-4c41-b243-e4f90100ce5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Messaging konfigurieren {#configuring-messaging}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Messaging-Funktion für AEM Communities bietet angemeldeten Site-Besuchern (Mitgliedern) die Möglichkeit, Nachrichten miteinander zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
 
@@ -30,13 +30,13 @@ Auf dieser Seite finden Sie Informationen zur Standardkonfiguration und möglich
 
 Weitere Informationen für Entwickler finden Sie unter [Messaging Essentials](essentials-messaging.md).
 
-## Messaging Operations Service {#messaging-operations-service}
+## Messaging Operations-Dienst {#messaging-operations-service}
 
 Der [AEM Communities Messaging Operations-Dienst](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifiziert den Endpunkt, der Messaging-bezogene Anfragen verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden soll, und wenn Nachrichten Dateianhänge enthalten können, welche Dateitypen sind zulässig.
 
 Für Community-Sites, die mit der [Communities Sites-Konsole](sites-console.md) erstellt wurden, ist bereits eine Instanz des Dienstes vorhanden, wobei der Posteingang auf `/mail/community/inbox` gesetzt ist.
 
-### Community Messaging Operations Service {#community-messaging-operations-service}
+### Community Messaging-Dienst {#community-messaging-operations-service}
 
 Wie unten gezeigt, existiert eine Konfiguration des Dienstes für Sites, die mit dem [Website-Erstellungsassistenten](sites-console.md) erstellt wurden. Die Konfiguration kann durch Auswahl des Stiftsymbols neben der Konfiguration angezeigt oder bearbeitet werden:
 
