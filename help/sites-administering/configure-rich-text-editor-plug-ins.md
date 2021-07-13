@@ -3,10 +3,10 @@ title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich-Text-Editor-Plug-ins konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
+source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
-source-wordcount: '4216'
-ht-degree: 93%
+source-wordcount: '4210'
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Halten Sie sich nach der Aktivierung eines Plug-ins an diese Richtlinien, um die
   <tr> 
    <td><strong>Typ</strong></td> 
    <td>Zeichenfolge</td> 
-   <td>String[] (mehrere Strings; wählen Sie den Typ „String“ aus und klicken Sie in CRXDE Lite auf „Multi“)</td> 
+   <td>Zeichenfolge (mehrere Zeichenfolgen; wählen Sie den Typ „Zeichenfolge“ aus und klicken Sie in CRXDE Lite auf „Multi“)</td> 
    <td>Zeichenfolge</td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Halten Sie sich nach der Aktivierung eines Plug-ins an diese Richtlinien, um die
  </tbody> 
 </table>
 
-## Grundlegendes zum findreplace-Plug-in {#understand--findreplace-plugin}
+## Grundlegendes zum findreplace-Plug-in {#understand-findreplace-plugin}
 
 Das `findreplace`-Plug-in (Suchen und Ersetzen) erfordert keine Konfiguration. Es ist vorkonfiguriert und sofort einsatzfähig.
 
@@ -96,7 +96,7 @@ Bei Verwendung der Funktion zum Ersetzen sollte die Zeichenfolge zum Ersetzen gl
 
 Das Dialogfeld „Suchen und ersetzen“ wird transparent, wenn auf „Suchen“ geklickt wird, und undurchsichtig, wenn auf „Ersetzen“ geklickt wird. Dadurch kann der Autor den Text überprüfen, den der Autor ersetzen wird. Wenn der Benutzer auf „Alle ersetzen“ klickt, wird das Dialogfeld geschlossen und die Anzahl der vorgenommenen Ersetzungen angezeigt.
 
-## Konfigurieren der Einfügemodi {#pastemodes}
+## Konfigurieren der Einfügemodi {#paste-modes}
 
 Bei Verwendung des RTE können Autoren Inhalte in einem der drei folgenden Modi einfügen:
 
@@ -106,7 +106,7 @@ Bei Verwendung des RTE können Autoren Inhalte in einem der drei folgenden Modi 
 
 * **Microsoft Word-Modus**: Fügen Sie beim Kopieren aus Microsoft Word Text, einschließlich Tabellen, mitsamt Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
-### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen   {#configure-paste-options-available-on-the-rte-toolbar}
+### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen   {#configure-paste-options-toolbar}
 
 Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine dieser drei Symbole zur Verfügung stellen:
 
@@ -122,7 +122,7 @@ Um die Anzeige der Symbole in RTE zu konfigurieren, führen Sie folgende Schritt
 1. Navigieren Sie zum Knoten `rtePlugins/edit`. Lesen Sie die Informationen unter [Aktivieren von Plug-ins](#activateplugin), falls noch kein Knoten vorhanden ist.
 1. Erstellen Sie die Eigenschaft `features` im Knoten `edit` und fügen Sie eine oder mehrere Funktionen hinzu. Speichern Sie alle Änderungen.
 
-### Verhalten des Symbols bzw. der Tastenkombination „Einfügen (STRG+V)“ konfigurieren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Verhalten des Symbols bzw. der Tastenkombination „Einfügen (STRG+V)“ konfigurieren {#configure-paste-icon-shortcut}
 
 Sie können das Verhalten des Symbols **[!UICONTROL Einfügen (STRG+V)]** mit folgenden Schritten vorkonfigurieren. Diese Konfiguration definiert auch das Verhalten der Tastenkombination (STRG+V), mit der Autoren Inhalte einfügen können.
 
@@ -141,14 +141,14 @@ Die Konfiguration ermöglicht die drei folgenden Anwendungsfälle:
    * **Typ** `String`
    * **Wert:** einer der erforderlichen Einfügemodi `browser`, `plaintext` oder `wordhtml`.
 
-### Konfigurieren der beim Einfügen von Inhalten zulässigen Formate {#pasteformats}
+### Konfigurieren der beim Einfügen von Inhalten zulässigen Formate {#paste-formats}
 
 Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguriert werden. So können Sie explizit festlegen, welche Stile beim Einfügen von Inhalten in AEM von einem anderen Programm wie beispielsweise Microsoft Word aus zulässig sind. 
 
 Sollen beim Einfügen von Inhalten in AEM zum Beispiel nur fett gedruckte Formate und Listen zulässig sein, können Sie die anderen Formate herausfiltern. Dieser Vorgang wird als konfigurierbare Filterung beim Einfügen bezeichnet, die für Folgendes verwendet werden kann:
 
-* [Text](#pastemodes)
-* [Links](#linkstyles)
+* [Text](#paste-modes)
+* [Links](#link-styles)
 
 Für Links können Sie zudem die Protokolle definieren, die automatisch akzeptiert werden.
 
@@ -212,7 +212,7 @@ Ein Beispiel für eine gültige `htmlPasteRules`-Struktur ist unten aufgeführt.
 }
 ```
 
-## Konfigurieren von Textstilen {#textstyles}
+## Konfigurieren von Textstilen {#text-styles}
 
 Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Beispiel: `<span class=monospaced>Monospaced Text Here</span>`.
 
@@ -226,9 +226,9 @@ Für spätere Konfigurationen, beispielsweise um weitere Stile hinzuzufügen, be
 
 >[!NOTE]
 >
->Sie können Stile für [Tabellen oder Tabellenzellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) definieren. Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
+>Sie können Stile für [Tabellen oder Tabellenzellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles) definieren. Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
 
-### Aktivieren der Dropdown-Auswahlliste „Stil“  {#styleselectorlist}
+### Aktivieren der Dropdown-Auswahlliste „Stil“  {#style-selector-list}
 
 Aktivieren Sie dazu das styles-Plug-in.
 
@@ -245,7 +245,7 @@ Aktivieren Sie dazu das styles-Plug-in.
 >
 >Sobald das styles-Plug-in aktiviert ist, wird die Dropdown-Liste „Stil“ im Dialogfeld „Bearbeiten“ angezeigt. Allerdings ist die Liste leer, da keine Stile konfiguriert sind.
 
-### Festlegen der Speicherorte für Stylesheets {#locationofstylesheet}
+### Festlegen der Speicherorte für Stylesheets {#location-stylesheet}
 
 Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen möchten:
 
@@ -262,21 +262,19 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
 1. Speichern Sie alle Änderungen.
 
->[!NOTE]
->
->Wenn Sie den RTE in einem Dialogfeld verwenden (klassische Benutzeroberfläche), können Sie Stylesheets festlegen, die optimal auf die Rich-Text-Bearbeitung abgestimmt sind. Aufgrund technischer Einschränkungen geht der CSS-Kontext im Editor verloren, daher sollten Sie diesen Kontext zur Verbesserung des WYSIWYG-Verhaltens emulieren.
->
->Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte`, die verwendet werden kann, um verschiedene Stile für die Anzeige und Bearbeitung bereitzustellen:
->
->`#CQ td {`
->` // defines the style for viewing }`
->
->`#CQrte td {`
->` // defines the style for editing }`
+Bei Verwendung des RTE in einem Dialogfeld (klassische Benutzeroberfläche) können Sie Stylesheets angeben, die für die Rich-Text-Bearbeitung optimiert sind. Aufgrund technischer Einschränkungen geht der CSS-Kontext im Editor verloren, daher sollten Sie diesen Kontext zur Verbesserung des WYSIWYG-Erlebnisses emulieren. Der Rich-Text-Editor verwendet ein Container-DOM-Element mit der ID `CQrte` , das verwendet werden kann, um verschiedene Stile für die Anzeige und Bearbeitung bereitzustellen:
 
-### Festlegen von Stilen, die in der Popup-Liste verfügbar sein sollen {#stylesindropdown}
+```TXT
+#CQ td {
+// defines the style for viewing }
 
-1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/styles`, den Sie wie unter [Aktivieren der Dropdown-Auswahl „Stil“](#styleselectorlist) beschrieben erstellt haben.
+#CQrte td {
+// defines the style for editing }
+```
+
+### Festlegen von Stilen, die in der Popup-Liste verfügbar sein sollen {#styles-popup-list}
+
+1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/styles`, den Sie wie unter [Aktivieren der Dropdown-Auswahl „Stil“](#style-selector-list) beschrieben erstellt haben.
 1. Erstellen Sie unter dem Knoten `styles` einen neuen Knoten (ebenfalls mit dem Namen `styles`), unter dem die zur Verfügung zu stellende Liste gespeichert werden soll:
 
    * **Name** `styles`
@@ -303,7 +301,7 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
    Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-## Konfigurieren der Absatzformate {#paraformats}
+## Konfigurieren der Absatzformate {#para-formats}
 
 Jeglicher im RTE verfasster Text wird in einem Block-Tag platziert, standardmäßig handelt es sich dabei um das Tag `<p>`. Durch Aktivierung des `paraformat`-Plug-ins können Sie weitere Block-Tags festlegen, die mithilfe einer Dropdown-Auswahlliste Absätzen zugewiesen werden können. Absatzformate bestimmen den Absatztyp durch Zuweisung des richtigen Block-Tags. Der Autor kann diese mithilfe der Format-Auswahl auswählen und zuweisen. Die Beispiel-Block-Tags beinhalten u. a. den Standardabsatz „&lt;p>“ und die Kopfzeilen „&lt;h1>“, „&lt;h2>“ usw.
 
@@ -322,9 +320,9 @@ Wenn das paraformat-Plug-in zum ersten Mal aktiviert wird, sind keine Standabsat
 
 Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Formate hinzuzufügen, folgen Sie nur dem entsprechenden Teil der Anweisungen.
 
-### Aktivieren der Dropdown-Auswahl „Format“.   {#formatselectorlist}
+### Aktivieren der Dropdown-Auswahl „Format“.   {#format-selector-list}
 
-Aktivieren Sie zunächst das paraformat-Plug-in:
+Aktivieren Sie zunächst das Plug-in `paraformat`:
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/paraformat`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `paraformat`:
@@ -345,11 +343,11 @@ Wenn das Plug-in nicht weiter konfiguriert ist, werden die folgenden Standardfor
 >[!CAUTION]
 Entfernen Sie beim Konfigurieren der Absatzformate des RTE nicht das Absatz-Tag „&lt;p>“ als Formatierungsoption. Wenn das Tag „&lt;p>“ entfernt wird, kann der Inhaltsautor die Option **Absatzformate** selbst dann nicht auswählen, wenn zusätzliche Formate konfiguriert werden.
 
-### Angeben der verfügbaren Absatzformate {#paraformatsindropdown}
+### Angeben der verfügbaren Absatzformate {#para-formats-popup}
 
 Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
-1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie wie unter [Aktivieren der Dropdown-Auswahl „Format“](#styleselectorlist) beschrieben erstellt haben.
+1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie wie unter [Aktivieren der Dropdown-Auswahl „Format“](#style-selector-list) beschrieben erstellt haben.
 1. Erstellen Sie unter dem Knoten `paraformat` einen neuen Knoten, unter dem die Liste der Formate gespeichert werden soll:
 
    * **Name** `formats`
@@ -381,7 +379,7 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 >[!CAUTION]
 Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
 
-## Konfigurieren von Sonderzeichen {#spchar}
+## Konfigurieren von Sonderzeichen {#special-char}
 
 Wenn in einer AEM-Standardinstallation das `misctools`-Plug-in für Sonderzeichen (`specialchars`) aktiviert wird, ist sofort eine Standardauswahl verfügbar, wie beispielsweise Copyright- und Markenzeichensymbole.
 
@@ -390,7 +388,7 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 >[!CAUTION]
 Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie diese Zeichen bei Bedarf in Ihrer eigenen Auswahl (neu).
 
-### Definieren einzelner Zeichen   {#definesinglechar}
+### Definieren einzelner Zeichen   {#define-single-char}
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/misctools`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `misctools`:
@@ -430,9 +428,9 @@ Nachdem die Eigenschaft gespeichert wurde, wird das dargestellte Zeichen in CRXD
 
 
 
-### Definieren von Zeichenbereichen {#definerangechar}
+### Definieren von Zeichenbereichen {#define-range-char}
 
-1. Führen Sie dazu die Schritte 1 bis 3 im Abschnitt [Definieren eines einzelnen Zeichens](#definesinglechar) aus.
+1. Führen Sie dazu die Schritte 1 bis 3 im Abschnitt [Definieren eines einzelnen Zeichens](#define-single-char) aus.
 1. Fügen Sie unter `chars` einen neuen Knoten hinzu, unter dem die Definition des Zeichenbereichs gespeichert werden soll:
 
    * **Name:** Sie können einen Namen angeben, dieser sollte jedoch den Zeichenbereich widerspiegeln, wie beispielsweise „pencils“.
@@ -462,7 +460,7 @@ Nachdem die Eigenschaft gespeichert wurde, wird das dargestellte Zeichen in CRXD
 
          *Im RTE verfügbare Sonderzeichen werden Autoren in einem Popup-Fenster* angezeigt
 
-## Konfigurieren von Tabellenstilen {#tablestyles}
+## Konfigurieren von Tabellenstilen {#table-styles}
 
 Neben der Definition von Stilen, die auf normalen Text angewendet werden, können Sie auch Stile (einen separaten Satz) für eine ganze Tabelle oder einzelne Tabellenzellen definieren. Diese können dann im Dialogfeld „Zellen-Eigenschaften“ oder „Tabelleneigenschaften“ im Auswahlfeld „Stil“ ausgewählt werden. Diese Stile sind nur verfügbar, wenn eine Tabelle in einer Textkomponente (oder einer abgeleiteten Komponente davon) und nicht in der standardmäßigen Tabellenkomponente bearbeitet wird.
 
@@ -488,12 +486,12 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
       * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 
-1. Definieren Sie den Speicherort von CSS-Stylesheets, um auf diese zu verweisen. Lesen Sie den Abschnitt [Festlegen des Speicherorts des Stylesheets](#locationofstylesheet), da die Vorgehensweise hier dieselbe ist wie beim Definieren von [Stilen für Text](#textstyles). Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
+1. Definieren Sie den Speicherort von CSS-Stylesheets, um auf diese zu verweisen. Lesen Sie den Abschnitt [Festlegen des Speicherorts des Stylesheets](#location-stylesheet), da die Vorgehensweise hier dieselbe ist wie beim Definieren von [Stilen für Text](#text-styles). Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):
 
    * Definieren der Stile für die komplette Tabelle (verfügbar unter **Tabelleneigenschaften**):
 
-      * **Name** `tableStyles`
+      * **Name** `table-styles`
       * **Typ** `cq:WidgetCollection`
    * Definieren der Stile für einzelne Tabellenzellen (verfügbar unter **Zellen-Eigenschaften**):
 
@@ -501,7 +499,7 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
       * **Typ** `cq:WidgetCollection`
 
 
-1. Erstellen Sie einen neuen Knoten (unter dem Knoten `tableStyles` oder `cellStyles`, sofern erforderlich), der einen einzelnen Stil repräsentiert:
+1. Erstellen Sie einen neuen Knoten (unter dem Knoten `table-styles` oder `cellStyles`, sofern erforderlich), der einen einzelnen Stil repräsentiert:
 
    * **Name:** Sie können einen Namen angeben, dieser sollte jedoch den Stil widerspiegeln.
    * **Typ** `nt:unstructured`
@@ -524,25 +522,25 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
 
 Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern  {#hiddenheader}
+### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern  {#hidden-header}
 
 Manchmal kann es sein, dass Sie Datentabellen ohne visuellen Text in einer Spaltenkopfzeile erstellen, da Sie voraussetzen, dass sich der Zweck der Kopfzeile durch die visuelle Beziehung der Spalte mit anderen Spalten ergibt. In diesem Fall ist es erforderlich, dass Sie ausgeblendeten inneren Text innerhalb der Zelle in der Kopfzeilenzelle bereitstellen, damit Bildschirmlesehilfen und andere unterstützende Technologien Benutzern mit unterschiedlichen Bedürfnissen helfen können, den Zweck der Spalte zu verstehen.
 
 Um die Zugänglichkeit in solchen Fällen zu verbessern, unterstützt der RTE ausgeblendete Kopfzeilenzellen. Darüber hinaus stellt er Konfigurationseinstellungen bezüglich der ausgeblendeten Kopfzeilen in Tabellen bereit. Mithilfe dieser Einstellungen können Sie CSS-Stile auf ausgeblendete Kopfzeilen im Bearbeitungs- und im Vorschaumodus anwenden. Damit Autoren ausgeblendete Kopfzeilen im Bearbeitungsmodus besser identifizieren können, fügen Sie die folgenden Parameter in Ihren Code ein:
 
-* `hiddenHeaderEditingCSS`: Gibt den Namen der CSS-Klasse an, die auf die ausgeblendete Kopfzeilenzelle angewendet wird, wenn der RTE bearbeitet wird.
-* `hiddenHeaderEditingStyle`: Gibt eine Stilzeichenfolge an, die auf die ausgeblendete Kopfzeilenzelle angewendet wird, wenn der RTE bearbeitet wird.
+* `hidden-headerEditingCSS`: Gibt den Namen der CSS-Klasse an, die auf die ausgeblendete Kopfzeilenzelle angewendet wird, wenn der RTE bearbeitet wird.
+* `hidden-headerEditingStyle`: Gibt eine Stilzeichenfolge an, die auf die ausgeblendete Kopfzeilenzelle angewendet wird, wenn der RTE bearbeitet wird.
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
 Um Autoren bei der Anwendung von CSS auf ausgeblendete Kopfzeilen im Vorschaumodus zu helfen, können Sie die folgenden Parameter in Ihren Code einfügen:
 
-* `hiddenHeaderClassName`: Gibt den Namen der CSS-Klasse an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird.
-* `hiddenHeaderStyle`: Gibt eine Stilzeichenfolge an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird
+* `hidden-headerClassName`: Gibt den Namen der CSS-Klasse an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird.
+* `hidden-headerStyle`: Gibt eine Stilzeichenfolge an, die im Vorschaumodus auf die ausgeblendete Kopfzeilenzelle angewendet wird
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung  {#adddict}
+## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung  {#add-dict}
 
 Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
@@ -570,7 +568,7 @@ Eine standardmäßige AEM-Installation umfasst die Wörterbücher für amerikani
 Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Um die Rechtschreibprüfung auszuführen, klicken Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung] . RTE überprüft die Rechtschreibung von Wörtern und markiert die falsch geschriebenen Wörter.
 Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden der Status des Textes und falsch geschriebene Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
-## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
+## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undo-history}
 
 Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschritte rückgängig zu machen bzw. zu wiederholen. Standardmäßig werden im Verlauf 50 Schritte gespeichert. Sie können diesen Wert nach Bedarf konfigurieren.
 
@@ -586,20 +584,20 @@ Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschr
 
 1. Speichern Sie die Änderungen.
 
-## Konfigurieren der Tabulator-Schrittweite  {#tabsize}
+## Konfigurieren der Tabulator-Schrittweite  {#tab-size}
 
 Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig werden drei geschützte Leerzeichen und ein normales Leerzeichen eingefügt. So definieren Sie die Tabulator-Schrittweite:
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/keys`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie im `keys`-Knoten die folgende Eigenschaft:
 
-   * **Name** `tabSize`
+   * **Name** `tab-size`
    * **Typ** `String`
    * **Wert:** Die Anzahl an für den Tabulator verwendeten Leerzeichen
 
 1. Speichern Sie die Änderungen.
 
-## Festlegen des Einzugsrands  {#indentmargin}
+## Festlegen des Einzugsrands  {#indent-margin}
 
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
@@ -613,7 +611,7 @@ Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie w
    * **Typ**: `Long`
    * **Wert:** Die Anzahl der Pixel, die für den Einzugsrand erforderlich sind
 
-## Konfigurieren der Höhe des bearbeitbaren Bereichs {#editablespace}
+## Konfigurieren der Höhe des bearbeitbaren Bereichs {#editable-space}
 
 Sie können die Höhe des bearbeitbaren Bereichs definieren, der innerhalb des Komponenten-Dialogfelds angezeigt wird:
 
@@ -631,7 +629,7 @@ Sie können die Höhe des bearbeitbaren Bereichs definieren, der innerhalb des K
 >[!NOTE]
 Diese Option ist nur anwendbar, wenn der RTE in einem Dialogfeld verwendet wird (nicht bei Bearbeitung im Kontext in der klassischen Benutzeroberfläche).
 
-## Konfigurieren von Stilen und Protokollen für Links {#linkstyles}
+## Konfigurieren von Stilen und Protokollen für Links {#link-styles}
 
 Wenn Sie Links in AEM einfügen, können Sie Folgendes definieren:
 
