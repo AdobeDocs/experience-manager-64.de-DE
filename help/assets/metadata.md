@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tagging, Metadaten
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 99%
 
 ---
@@ -157,7 +157,7 @@ Die programmspezifischen Metadaten umfassen technische und beschreibende Metadat
 ### Druckspezifische Metadaten {#print-specific-metadata}
 
 * PDF und PDF/X – Adobe PDF und Drittanbieterprogramme.
-* PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* PRISM – [Publishing Requirements for Industry Standard Metadata](http://www.prismstandard.org/specifications/).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – XMP-Metadaten für Seitentext.
 
