@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Workflow,Ausgabedarstellungen
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2227'
 ht-degree: 45%
 
 ---
@@ -442,7 +442,7 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 Mit Experience Manager können Sie ein beliebiges Befehlszeilen-Tool innerhalb eines Workflows ausführen, um Assets (z. B. ImageMagick) zu konvertieren und das neue Ausgabeformat zum Asset hinzuzufügen. Installieren Sie das Befehlszeilen-Tool auf dem Datenträger, der den Experience Manager-Server hostet, und fügen Sie einen Prozessschritt zum Workflow hinzu und konfigurieren Sie ihn. Der aufgerufene Prozess `CommandLineProcess` filtert nach bestimmten MIME-Typen und erstellt basierend auf der neuen Ausgabedarstellung mehrere Miniaturansichten.
 
-Die folgenden Konvertierungen können automatisch ausgeführt und in Experience Manager Assets gespeichert werden:
+Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Experience Manager Assets] gespeichert werden:
 
 * EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/)
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/)
