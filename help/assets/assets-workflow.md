@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Workflow,Ausgabedarstellungen
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1035'
 ht-degree: 28%
 
 ---
@@ -114,5 +114,4 @@ Für ein Workflow-Modell können Benutzer einen Workflow-Starter erstellen, der 
 * [Erstellen von Workflow-Modellen und Erweitern der Workflow-Funktionalität](/help/sites-developing/workflows.md)
 * [Methoden zum Ausführen von Workflows](/help/sites-administering/workflows-starting.md)
 * [Best Practices bei Workflows](/help/sites-developing/workflows-best-practices.md)
-* [Community-Artikel zum Ändern von Assets mithilfe des Workflows](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
