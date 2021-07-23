@@ -12,9 +12,9 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: Asset-Management,Ausgabeformate
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '440'
 ht-degree: 90%
 
 ---
@@ -25,11 +25,11 @@ Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management
 
 Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Die Funktion für dynamische Medien bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
 
->[!NOTE]
+<!-- DEAD ARTICLE >[!NOTE]
 >
->Es gibt einen Community-Artikel zum Thema [Arbeiten mit Adobe Experience Manager und Dynamic Media](https://helpx.adobe.com/de/experience-manager/using/aem_dynamic_media.html).
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Einsatzmöglichkeiten für Dynamic Media     {#what-you-can-do-with-dynamic-media}
+## Einsatzmöglichkeiten für Dynamic Media   {#what-you-can-do-with-dynamic-media}
 
 Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](managing-assets-touch-ui.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
