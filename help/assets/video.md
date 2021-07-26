@@ -71,7 +71,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
          [Anzeigen von Videoausgabeformaten](video-renditions.md)
 
-[Videoausgabedarstellungen verwalten](managing-assets-touch-ui.md#managing-renditions)
+         [Videoausgabedarstellungen verwalten](managing-assets-touch-ui.md#managing-renditions)
 
       * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
       * [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
       * Bearbeiten Sie die Eigenschaften des Videos, wie den Titel, die Beschreibung, die Tags und die benutzerdefinierten Metadatenfelder:
 
-[Bearbeiten von Videoeigenschaften](managing-assets-touch-ui.md#editing-properties)
+         [Bearbeiten von Videoeigenschaften](managing-assets-touch-ui.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
       * [Metadatenschemata](metadata-schemas.md)
