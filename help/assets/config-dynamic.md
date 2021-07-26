@@ -10,7 +10,7 @@ discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Konfiguration,Hybridmodus
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 56%
@@ -654,7 +654,7 @@ Wenn Sie Dynamic Media für 1) Bildbearbeitung in der Produktion _oder_ 2) verwe
    <td> </td> 
    <td><strong>Filter</strong></td> 
    <td><strong>Mimetype</strong></td> 
-   <td><strong>Ausgabeformate</strong></td> 
+   <td><strong>Ausgabedarstellungen</strong></td> 
   </tr> 
   <tr> 
    <td>Dynamic Media-Bildbereitstellung</td> 
@@ -801,7 +801,7 @@ Das Konfigurieren des Dynamic Media-Bildservers umfasst die Bearbeitung des Ado
 >[!NOTE]
 Dynamic Media arbeitet standardmäßig [nach der Aktivierung](#enabling-dynamic-media). Sie können für Ihre Installation optional aber eine Feineinstellung verwenden, indem Sie den Dynamic Media-Bildserver so konfigurieren, dass er bestimmte Spezifikationen oder Anforderungen erfüllt.
 
-**Voraussetzung**:  __ Stellen Sie vor dem Konfigurieren des Dynamic Media Image-Servers sicher, dass Ihre Windows-VM eine Installation der Microsoft Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können das [Microsoft Visual C++ 2010 Redistributable Package (x64) hier herunterladen](https://www.microsoft.com/de-de/download/details.aspx?id=14632).
+**Voraussetzung**:  __ Stellen Sie vor dem Konfigurieren des Dynamic Media Image-Servers sicher, dass Ihre Windows-VM eine Installation der Microsoft Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können das [Microsoft Visual C++ 2010 Redistributable Package (x64) hier herunterladen](https://www.microsoft.com/de-de/download/details.aspx?id=26999).
 
 **So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver**:
 
