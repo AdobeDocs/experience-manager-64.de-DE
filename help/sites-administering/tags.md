@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 63%
@@ -97,7 +97,7 @@ Wenn Sie die erforderlichen Informationen eingegeben haben:
 
 * Wählen Sie **Erstellen** aus.
 
-### Vorgänge bei Tags  {#operations-on-tags}
+### Vorgänge bei Tags {#operations-on-tags}
 
 Wenn Sie einen Namespace oder ein anderes Tag auswählen, werden die folgenden Vorgänge zur Verfügung gestellt:
 
@@ -170,7 +170,7 @@ Wenn Sie die erforderlichen Informationen eingegeben haben:
 
 * Wählen Sie **Erstellen** aus.
 
-### Bearbeiten von Tags  {#editing-tags}
+### Bearbeiten von Tags {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -204,8 +204,7 @@ Wenn ein Namespace oder ein anderes Tag ausgewählt ist, können Tag-Administrat
 in zeigt zunächst den aktuellen 
 `name`des Tags. Ein neuer `name`kann eingegeben werden.
 
-* 
-* Klicken Sie auf **Speichern**.
+* Wählen Sie **Speichern** aus
 
 ### Zusammenführen von Tags {#merging-tags}
 
