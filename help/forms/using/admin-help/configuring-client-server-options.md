@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 85%
@@ -70,7 +70,7 @@ Höhe: Minimum = 450; Maximum = 800
 
 **Zwischenspeicherung von Client-Anmeldedaten aktivieren:** Wählen Sie diese Option, damit Benutzer ihre Anmeldedaten (Benutzername und Kennwort) zwischenspeichern können. Wenn die Anmeldeinformationen von Benutzern zwischengespeichert werden, müssen sie sie beim Öffnen eines Dokument oder beim Klicken auf die Schaltfläche „Aktualisieren“ auf der Seite „Sicherheitsrichtlinien verwalten“ in Adobe Acrobat nicht immer eingeben. Sie können die Anzahl der Tage angeben, nach deren Ablauf die Benutzer die Anmeldeinformationen erneut eingeben müssen. Bei Festlegung auf 0 Tage werden die Anmeldeinformationen unbegrenzt zwischengespeichert.
 
-## Konfigurieren von Document Security-Benutzern und -Administratoren  {#configuring-document-security-users-and-administrators}
+## Konfigurieren von Document Security-Benutzern und -Administratoren {#configuring-document-security-users-and-administrators}
 
 ### Zuweisen von Document Security-Rollen zu Administratoren {#assigning-document-security-roles-to-administrators}
 
@@ -78,7 +78,7 @@ Ihre AEM Forms-Umgebung enthält einen oder mehrere Administratorbenutzer, die d
 
 Die Administratoren müssen auch die Administration Console-Benutzerrolle haben, um auf Administration Console zugreifen zu können. (Siehe [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
-### Sichtbare Benutzer und Gruppen konfigurieren  {#configuring-visible-users-and-groups}
+### Sichtbare Benutzer und Gruppen konfigurieren {#configuring-visible-users-and-groups}
 
 Um bei Suchen anhand von Benutzerrichtlinien Benutzer und Gruppen in ausgewählten Domänen anzuzeigen, muss ein Superadministrator oder Richtliniensatzadministrator (in User Management erstellte) Domänen auswählen und der Liste der sichtbaren Benutzer und Gruppen für jeden Richtliniensatz hinzufügen.
 
@@ -94,7 +94,7 @@ Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschr�
 1. Wechseln Sie zu „Dienste“ > „Document Security“ > „Meine Richtlinien“ und klicken Sie auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
 1. Klicken Sie auf „Domäne(n) hinzufügen“ und fügen Sie den Anforderungen entsprechend vorhandene Domänen hinzu.
 
-## Erweiterten Authentifizierungsanbieter hinzufügen  {#add-the-extended-authentication-provider}
+## Erweiterten Authentifizierungsanbieter hinzufügen {#add-the-extended-authentication-provider}
 
 AEM Forms enthält eine Beispielkonfiguration, die Sie für Ihre Umgebung anpassen können. Führen Sie die folgenden Schritte durch:
 
@@ -107,7 +107,7 @@ AEM Forms enthält eine Beispielkonfiguration, die Sie für Ihre Umgebung anpass
 1. Aktivieren Sie die erweiterte Authentifizierung über die Serverkonfigurationsseite. Siehe [Serverkonfigurationseinstellungen](configuring-client-server-options.md#server-configuration-settings).
 1. Fügen Sie die erforderliche SSO-Umleitungs-URL in der User Management-Konfigurationsdatei hinzu. Siehe [SSO-Umleitungs-URLs für erweiterte Authentifizierung hinzufügen](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
-### Umleitungs-URLs für erweiterte Authentifizierung hinzufügen  {#add-sso-redirect-urls-for-extended-authentication}
+### Umleitungs-URLs für erweiterte Authentifizierung hinzufügen {#add-sso-redirect-urls-for-extended-authentication}
 
 Wenn die erweiterte Authentifizierung aktiviert ist, wird beim Öffnen eines richtliniengeschützten Dokuments in Acrobat XI oder Reader XI ein Dialogfeld für die Authentifizierung angezeigt. Dieses Dialogfeld lädt die HTML-Seite, die Sie als Startseiten-URL für erweiterte Authentifizierung in den Document Security-Servereinstellungen angegeben haben. Siehe [Serverkonfigurationseinstellungen](configuring-client-server-options.md#server-configuration-settings).
 
@@ -136,7 +136,7 @@ Nach Ende der Offline-Nutzungsdauer muss der Empfänger das Dokument wieder mit 
 
 Da Dokumente, die einen Offline-Zugriff zulassen, die Zwischenspeicherung von Schlüsseldaten auf dem Computer erfordern, auf dem die Dateien offline gespeichert werden, kann die Datei Risiken ausgesetzt sein, wenn ein nicht befugter Benutzer sich die Schlüsseldaten verschafft. Um dies zu verhindern, können Schlüssel gemäß einem Zeitplan oder manuell aktualisiert werden, damit nicht autorisierte Personen im Besitz des Schlüssels keinen Zugriff auf das Dokument erhalten.
 
-### Eine standardmäßige Offline-Nutzungsdauer festlegen  {#set-a-default-offline-lease-period}
+### Eine standardmäßige Offline-Nutzungsdauer festlegen {#set-a-default-offline-lease-period}
 
 Empfänger richtliniengeschützter Dokumente können Dokumente für die Anzahl der in der Richtlinie angegebenen Tage offline schalten. Nach einer einleitenden Synchronisierung des Dokuments mit Document Security kann der Empfänger das Dokument bis zum Ablauf der Offline-Nutzungsdauer offline verwenden. Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument online schalten und sich anmelden, um mit Document Security zu synchronisieren, damit er das Dokument weiter verwenden kann.
 
@@ -146,7 +146,7 @@ Sie können eine standardmäßige Offline-Nutzungsdauer festlegen. Die Nutzungsd
 1. Geben Sie in das Feld Standardmäßige Offline-Nutzungsdauer die Anzahl der für diesen Zeitraum gewünschten Tage ein.
 1. Klicken Sie auf OK.
 
-### Schlüsselaktualisierungen verwalten  {#manage-key-rollovers}
+### Schlüsselaktualisierungen verwalten {#manage-key-rollovers}
 
 Document Security nutzt zum Schützen von Dokumenten Verschlüsselungsalgorithmen und Lizenzen. Beim Verschlüsseln eines Dokuments wird von Document Security ein *DocKey* genannter Entschlüsselungsschlüssel generiert und verwaltet, der an die Clientanwendung übergeben wird. Wenn die Richtlinie zum Schutz eines Dokuments einen Offline-Zugriff zulässt, wird zudem ein *Hauptschlüssel* genannter Offline-Schlüssel für jeden Benutzer generiert, der Offline-Zugriff auf das Dokument hat.
 
@@ -186,7 +186,7 @@ Die Hauptschlüssel müssen zweimal aktualisiert werden, bevor bereits vorhanden
 1. Klicken Sie auf „Schlüssel jetzt aktualisieren“ und dann auf „OK“.
 1. Warten Sie ungefähr zehn Minuten.
 
-## Ereignisprüfungs- und Datenschutzeinstellungen konfigurieren  {#configuring-event-auditing-and-privacy-settings}
+## Ereignisprüfungs- und Datenschutzeinstellungen konfigurieren {#configuring-event-auditing-and-privacy-settings}
 
 Document Security kann Informationen zu Ereignissen im Zusammenhang mit dem Arbeiten mit richtliniengeschützten Dokumenten, Richtlinien, Administratoren und dem Server prüfen und aufzeichnen. Sie können eine Ereignisprüfung konfigurieren und die Typen zu prüfender Ereignisse angeben. Um Ereignisse für ein bestimmtes Dokument zu prüfen, muss die Prüfoption für die Richtlinie ebenfalls aktiviert sein.
 
@@ -199,7 +199,7 @@ Sie können die folgenden zu prüfenden Ereignistypen auswählen:
 * Benutzerereignisse, z. B. Einladungen und Registrierungen externer Benutzer, Aktivierung und Deaktivierung von Benutzerkonten, Änderungen von Benutzerkennwörtern und Aktualisierungen von Profilen
 * AEM Forms-Ereignisse, z. B. Nichtübereinstimmungen von Versionen, nicht verfügbare Ordnerserver und Autorisierungsanbieter und Änderungen von Serverkonfigurationen
 
-### Ereignisprüfung aktivieren oder deaktivieren  {#enable-or-disable-event-auditing}
+### Ereignisprüfung aktivieren oder deaktivieren {#enable-or-disable-event-auditing}
 
 Sie können die Prüfung von Ereignissen im Zusammenhang mit dem Server, richtliniengeschützten Dokumenten, Richtlinien, Richtliniensätzen und Benutzern aktivieren bzw. deaktivieren. Wenn Sie die Ereignisprüfung aktivieren, können Sie alle möglichen Ereignisse oder bestimmte Ereignisse in die Prüfung einbeziehen.
 
@@ -220,7 +220,7 @@ Wenn Sie die Serverprüfung aktivieren, können Sie die geprüften Ereignisse au
 >
 >Verwenden Sie beim Arbeiten mit Webseiten nicht die Schaltflächen im Browser (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-### Datenschutzbenachrichtigung aktivieren oder deaktivieren  {#enable-or-disable-privacy-notification}
+### Datenschutzbenachrichtigung aktivieren oder deaktivieren {#enable-or-disable-privacy-notification}
 
 Sie können eine Datenschutzbenachrichtigung aktivieren bzw. deaktivieren. Beim Aktivieren der Datenschutzbenachrichtigung wird eine Meldung eingeblendet, wenn ein Empfänger versucht, ein richtliniengeschütztes Dokument zu öffnen. Die Meldung informiert den Benutzer, dass die Dokumentnutzung geprüft wird. Sie können auch eine URL angeben, auf die der Benutzer zum Anzeigen einer Seite mit Datenschutzrichtlinien, falls vorhanden, klicken kann.
 
@@ -238,7 +238,7 @@ Sie können eine Datenschutzbenachrichtigung aktivieren bzw. deaktivieren. Beim 
 >
 >Wenn Sie die Datenschutzhinweise deaktivieren, wird nicht gleichzeitig die Prüfung von Dokumentverwendung deaktiviert. Vordefinierte Prüfaktionen und benutzerdefinierte Aktionen, die über erweiterte Nutzungsverfolgung unterstützt werden, können weiterhin Informationen zum Benutzerverhalten sammeln.
 
-### Einen benutzerdefinierten Prüfereignistyp importieren  {#import-a-custom-audit-event-type}
+### Einen benutzerdefinierten Prüfereignistyp importieren {#import-a-custom-audit-event-type}
 
 Wenn Sie mit einer Document Security-fähigen Anwendung arbeiten, die die Prüfung zusätzlicher Ereignisse unterstützt, z. B. von für einen bestimmten Dateityp spezifischen Ereignissen, kann Ihnen ein Adobe-Partner die spezifischen Prüfungsereignisse bereitstellen, die Sie in Document Security importieren können. Wählen Sie diese Funktion nur, wenn Ihnen ein Adobe-Partner die spezifischen Prüfungsereignisse bereitgestellt hat.
 
@@ -247,13 +247,13 @@ Wenn Sie mit einer Document Security-fähigen Anwendung arbeiten, die die Prüfu
 1. Beim Importieren werden auf dem Server vorhandene benutzerdefinierte Prüfereignistypen überschrieben, wenn identische Kombinationen aus Ereigniscode und Namespace gefunden werden.
 1. Klicken Sie auf OK.
 
-### Benutzerdefinierten Prüfereignistyp löschen  {#delete-a-custom-audit-event-type}
+### Benutzerdefinierten Prüfereignistyp löschen {#delete-a-custom-audit-event-type}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Ereignisverwaltung“.
 1. Aktivieren Sie das Kontrollkästchen neben dem benutzerdefinierten Prüfereignistypen, den Sie löschen möchten, und klicken Sie auf „Löschen“.
 1. Klicken Sie auf OK.
 
-### Prüfereignisse exportieren  {#export-audit-events}
+### Prüfereignisse exportieren {#export-audit-events}
 
 Sie können Prüfereignisse zu Archivierungszwecken in eine Datei exportieren.
 
@@ -268,7 +268,7 @@ Sie können Prüfereignisse zu Archivierungszwecken in eine Datei exportieren.
 
 1. Klicken Sie auf „Exportieren“. Wenn Sie den Export abbrechen möchten, klicken Sie auf „Export abbrechen“. Wenn ein anderer Benutzer einen Export geplant hat, steht die Schaltfläche „Export abbrechen“ nicht zur Verfügung, bis der Löschvorgang beendet ist. Die Schaltfläche „Export abbrechen“ steht nicht zur Verfügung, wenn ein anderer Benutzer einen Löschvorgang geplant hat. Klicken Sie zum Überprüfen, ob ein geplanter Export- oder Löschvorgang gestartet oder beendet wurde, auf „Aktualisieren“.
 
-### Prüfereignisse löschen  {#delete-audit-events}
+### Prüfereignisse löschen {#delete-audit-events}
 
 Sie können Prüfereignisse, die älter als eine angegebene Anzahl von Tagen sind, löschen.
 
@@ -276,7 +276,7 @@ Sie können Prüfereignisse, die älter als eine angegebene Anzahl von Tagen sin
 1. Geben Sie unter „Prüfereignisse löschen“ die Anzahl der Tage im Feld „Prüfereignisse löschen, die älter sind als“ an.
 1. Klicken Sie auf Löschen. Klicken Sie auf „Exportieren“. Wenn Sie den Löschvorgang abbrechen möchten, klicken Sie auf „Löschvorgang abbrechen“. Wenn ein anderer Benutzer einen Löschvorgang geplant hat, steht die Schaltfläche „Löschvorgang abbrechen“ nicht zur Verfügung, bis der Export beendet ist. Die Schaltfläche „Löschvorgang abbrechen“ steht nicht zur Verfügung, wenn ein anderer Benutzer einen Export geplant hat. Klicken Sie zum Überprüfen, ob ein geplanter Löschvorgang gestartet oder beendet wurde, auf „Aktualisieren“.
 
-### Ereignisprüfungsoptionen  {#event-auditing-options}
+### Ereignisprüfungsoptionen {#event-auditing-options}
 
 Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfenden Ereignistypen angeben.
 
@@ -372,7 +372,7 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Änderung der Serverkonfiguration:**  Änderungen an der Serverkonfiguration, die entweder über die Webseiten oder manuell durch Importieren einer Datei &quot;config.xml&quot;vorgenommen werden. Dazu zählen Änderungen der Basis-URL, Sitzungszeitlimits, Anmeldesperren, Ordnereinstellungen, Schlüsselaktualisierungen, SMTP-Servereinstellungen für die externe Registrierung, der Konfiguration von Wasserzeichen, Anzeigeoptionen usw.
 
-## Erweiterte Nutzungsverfolgung konfigurieren  {#configuring-extended-usage-tracking}
+## Erweiterte Nutzungsverfolgung konfigurieren {#configuring-extended-usage-tracking}
 
 Document Security kann mehrere benutzerdefinierte Ereignisse verfolgen, die an einem geschützten Dokument durchgeführt werden. Sie können das Verfolgen von Ereignissen auf dem Document Security-Server auf globaler Ebene oder auf einer Richtlinienebene aktivieren. Sie können JavaScript einrichten, um dann die gewünschten Aktionen zu erfassen, die innerhalb des geschützten PDF-Dokuments ausgeführt werden, wie das Klicken auf eine Schaltfläche oder Speichern des Dokuments. Diese Nutzungsdaten werden als XML-Datei in Schlüssel/Wert-Paaren übermittelt, die Sie für die weitere Analyse verwenden können. Benutzer, die auf die geschützten Dokumente zugreifen, können diese Verfolgung über die Clientanwendung zulassen oder ablehnen.
 
@@ -380,7 +380,7 @@ Wenn die Verfolgung auf globaler Ebene aktiviert ist, können Sie diese Einstell
 
 Nachdem Sie die Verfolgung aktiviert haben, ist bei allen nachfolgend erstellten Richtlinien die Verfolgung standardmäßig aktiviert. Die Richtlinien, die erstellt wurden, bevor die Verfolgung auf dem Server aktiviert wurde, müssen manuell aktualisiert werden.
 
-### Erweiterte Nutzungsverfolgung aktivieren oder deaktivieren  {#enable-or-disable-extended-usage-tracking}
+### Erweiterte Nutzungsverfolgung aktivieren oder deaktivieren {#enable-or-disable-extended-usage-tracking}
 
 Bevor Sie beginnen, müssen Sie sicherstellen, dass die Serverprüfung aktiviert ist. Unter [Ereignisprüfungs- und Datenschutzeinstellungen konfigurieren](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) finden Sie weitere Informationen zur Prüfung.
 
@@ -390,7 +390,7 @@ Bevor Sie beginnen, müssen Sie sicherstellen, dass die Serverprüfung aktiviert
 
 Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereignisse“ auf der Ereignisseite verwenden. Die Ereignisse, die mithilfe von JavaScript verfolgt werden, werden als detaillierte Nutzungsverfolgung bezeichnet. Unter [Ereignisse überwachen](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) finden Sie weitere Informationen zu Ereignissen.
 
-## Document Security-Anzeigeeinstellungen konfigurieren  {#configure-document-security-display-settings}
+## Document Security-Anzeigeeinstellungen konfigurieren {#configure-document-security-display-settings}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Anzeigeoptionen“.
 1. Konfigurieren Sie die Einstellungen und klicken Sie auf „OK“.
@@ -423,7 +423,7 @@ Diese Einstellungen steuern den im Dialogfeld für die Zertifikatauthentifizieru
 
 **Nur vertrauenswürdige Aussteller von Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Ausstellern bereit, denen AEM Formulare vertraut (siehe Verwalten von Zertifikaten und Berechtigungen). Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
 
-## Dynamische Wasserzeichen konfigurieren  {#configure-dynamic-watermarks}
+## Dynamische Wasserzeichen konfigurieren {#configure-dynamic-watermarks}
 
 Mit Document Security können Sie die Standardeinstellungen für die dynamische Wasserzeichenoption konfigurieren, die Sie beim Erstellen von Richtlinien aktivieren können. Ein *Wasserzeichen* ist eine Grafik, mit welcher der Text im Dokument überlagert wird. Es dient zum Nachverfolgen des Inhalts eines Dokuments und kann zur Ermittlung einer unzulässigen Nutzung von Inhalten beitragen.
 
@@ -435,7 +435,7 @@ Das in einer Richtlinie angegebene Wasserzeichen wird im richtliniengeschützten
 
 Beachten Sie, dass sich dynamische Wasserzeichen von den Wasserzeichen unterscheiden, die Benutzer dem Dokument in Acrobat direkt hinzufügen können. Dies bedeutet, dass ein richtliniengeschütztes Dokument zwei Wasserzeichen aufweisen kann.
 
-### Überlegungen zum Erstellen von Wasserzeichen  {#considerations-when-creating-watermarks}
+### Überlegungen zum Erstellen von Wasserzeichen {#considerations-when-creating-watermarks}
 
 Sie können dynamische Wasserzeichen mit mehreren Wasserzeichenelementen erstellen, wobei jedes Element entweder als Text- oder PDF-Datei angegeben wird. Sie können einem Wasserzeichen bis zu fünf Elemente hinzufügen.
 
@@ -458,7 +458,7 @@ Beachten Sie beim Konfigurieren von Wasserzeichen Folgendes:
 * Wenn Sie die Position der Wasserzeichenelemente angeben, stellen Sie sicher, dass nicht mehr als ein Element dieselbe Position hat. Wenn zwei Wasserzeichenelemente dieselbe Position haben, z. B. die Mittelposition, werden sie im Dokument als überlappend und in der Reihenfolge, in der sie dem Wasserzeichen hinzugefügt wurden, angezeigt.
 * Wenn Sie den Schriftgrad und -typ angeben, stellen Sie sicher, dass der Text in voller Länge auf der Seite sichtbar ist. Textinhalte werden in neue Zeilen weitergeführt, sodass der Wasserzeicheninhalt, der an den Rändern angezeigt werden soll, mit den Inhaltsbereichen auf den Seiten überlappen kann. Wenn das Dokument jedoch in Acrobat 9 geöffnet wird, wird der Text über die einzeilige Textzeile hinaus abgeschnitten.
 
-### Einschränkungen bei dynamischen Wasserzeichen  {#limitations-of-dynamic-watermarks}
+### Einschränkungen bei dynamischen Wasserzeichen {#limitations-of-dynamic-watermarks}
 
 Einige Clientanwendungen unterstützen möglicherweise keine dynamischen Wasserzeichen. Weitere Informationen finden Sie in der entsprechenden Acrobat Reader DC-Extensions-Hilfe. Darüber hinaus ist Folgendes zu den Versionen von Acrobat, die dynamische Wasserzeichen unterstützen, zu beachten:
 
@@ -472,7 +472,7 @@ Einige Clientanwendungen unterstützen möglicherweise keine dynamischen Wasserz
 
 * Acrobat 9.0 und niedrigere Versionen: Acrobat 9.0 und niedrigere Versionen unterstützen keine Richtliniennamen in dynamischen Wasserzeichen. Wenn Acrobat 9.0 ein richtliniengeschütztes Dokument mit einem dynamischen Wasserzeichen öffnet, das einen Richtliniennamen oder andere dynamische Daten enthält, wird das Wasserzeichen ohne den Richtliniennamen angezeigt. Wenn das dynamische Wasserzeichen nur den Richtliniennamen enthält, zeigt Acrobat eine Fehlermeldung an
 
-### Eine Vorlage für dynamische Wasserzeichen hinzufügen  {#add-a-dynamic-watermark-template}
+### Eine Vorlage für dynamische Wasserzeichen hinzufügen {#add-a-dynamic-watermark-template}
 
 Sie können Vorlagen für dynamische Wasserzeichen anlegen. Diese Vorlagen stehen als Konfigurationsoption für Richtlinien zur Verfügung, die von Administratoren oder Benutzern erstellt werden.
 
@@ -520,14 +520,14 @@ Sie können Vorlagen für dynamische Wasserzeichen anlegen. Diese Vorlagen stehe
 1. Klicken Sie unter „Wasserzeichenelemente“ auf **Neu**, um weitere Wasserzeichenelemente hinzuzufügen (falls erforderlich).
 1. Klicken Sie auf OK.
 
-### Eine Vorlage für dynamische Wasserzeichen bearbeiten  {#edit-a-dynamic-watermark-template}
+### Eine Vorlage für dynamische Wasserzeichen bearbeiten {#edit-a-dynamic-watermark-template}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Wasserzeichen“.
 1. Wählen Sie das gewünschte Wasserzeichen in der Liste aus.
 1. Auf der Seite „Wasserzeichen bearbeiten“ können Sie die Einstellungen ändern.
 1. Klicken Sie auf OK.
 
-### Eine Vorlage für dynamische Wasserzeichen löschen  {#delete-a-dynamic-watermark-template}
+### Eine Vorlage für dynamische Wasserzeichen löschen {#delete-a-dynamic-watermark-template}
 
 Wenn Sie ein dynamisches Wasserzeichen löschen, kann es einer neuen Richtlinie nicht mehr hinzugefügt werden. Das Wasserzeichen bleibt jedoch für vorhandene Richtlinien erhalten, die es gegenwärtig verwenden. Auf Dokumenten, die gegenwärtig von der Richtlinie geschützt sind, wird das dynamische Wasserzeichen weiter angezeigt, bis die Richtlinie, die das gelöschte Wasserzeichen enthält, von Ihnen oder einem anderen Benutzer bearbeitet wird. Nach Bearbeitung der Richtlinie wird das Wasserzeichen nicht mehr angewendet. Es wird die Meldung angezeigt, dass das vorhandene Wasserzeichen aus der Richtlinie gelöscht wurde und ein anderes ausgewählt werden kann, um es zu ersetzen.
 
@@ -535,7 +535,7 @@ Wenn Sie ein dynamisches Wasserzeichen löschen, kann es einer neuen Richtlinie 
 1. Aktivieren Sie das Kontrollkästchen neben dem gewünschten Wasserzeichen und klicken Sie auf „Löschen“.
 1. Klicken Sie auf OK.
 
-## Registrierung für eingeladene Benutzer konfigurieren  {#configuring-invited-user-registration}
+## Registrierung für eingeladene Benutzer konfigurieren {#configuring-invited-user-registration}
 
 Firmenexterne Benutzer können sich bei Document Security registrieren. Eingeladene Benutzer, die sich registrieren und ihre Konten aktivieren, können sich bei Document Security mit den Anmeldeinformationen (E-Mail-Adresse und Kennwort) anmelden, die sie bei der Registrierung angegeben haben. Registrierte eingeladene Benutzer können richtliniengeschützte Dokumente nutzen, für die sie Berechtigungen haben.
 
@@ -573,7 +573,7 @@ Standardmäßig ist der Registrierungsprozess für eingeladene Benutzer deaktivi
 1. (Optional) Um „Integrierte Registrierung“ zu verwenden, wählen Sie „Ja“ aus. Wenn Sie „Integrierte Registrierung“ nicht aktivieren, müssen Sie ein eigenes Benutzerregistrierungssystem einrichten.
 1. Klicken Sie auf OK.
 
-### Externe Benutzer oder Benutzergruppen ein- oder ausschließen  {#exclude-or-include-an-external-user-or-group}
+### Externe Benutzer oder Benutzergruppen ein- oder ausschließen {#exclude-or-include-an-external-user-or-group}
 
 Sie können die Registrierung bei Document Security auf bestimmte Benutzer oder Benutzergruppen beschränken. Diese Option ist hilfreich, wenn Sie beispielsweise einer bestimmten Benutzergruppe den Zugriff erlauben, jedoch bestimmte Gruppenmitglieder ausschließen möchten.
 
@@ -627,7 +627,7 @@ Falls für den SMTP-Host erforderlich, füllen Sie die Felder „Kontoname für 
 >
 >Wenn Sie Änderungen an den Optionen für die Registrierung eingeladener Benutzer vornehmen, wird die Datei „config.xml“ überschrieben und TLS wird deaktiviert. Wenn Sie die Änderungen überschreiben, müssen Sie mithilfe des oben beschriebenen Schritts die TLS-Unterstützung für die Registrierung eingeladener Benutzer reaktivieren.
 
-### Einstellungen für die Einladungs-E-Mail zur Registrierung  {#registration-invitation-email-settings}
+### Einstellungen für die Einladungs-E-Mail zur Registrierung {#registration-invitation-email-settings}
 
 Document Security sendet automatisch eine Einladungs-E-Mail zur Registrierung, wenn Sie ein Konto für einen eingeladenen Benutzers erstellen oder ein bestehender Benutzer einer Richtlinie einen externen Empfänger hinzufügt, der bislang weder registriert noch eingeladen wurde. Die E-Mail enthält einen Hyperlink, über den der Empfänger auf die Registrierungsseite zugreifen kann, um persönliche Kontoinformationen einschließlich Benutzername und Kennwort einzugeben. Das Kennwort kann eine beliebige Kombination von acht Zeichen sein.
 
@@ -663,7 +663,7 @@ Die folgenden Einstellungen befinden sich im Bereich „Konfiguration der Aktivi
 
 **Nachricht:** Der Text, der im Nachrichten-Textkörper angezeigt wird und die angibt, dass das Benutzerkonto des Empfängers aktiviert werden muss. Sie können nach Wunsch weitere Informationen hinzufügen, z. B. wie der Administrator kontaktiert und ein neues Kennwort bezogen werden kann.
 
-### Eine E-Mail zum Zurücksetzen des Kennworts konfigurieren  {#configure-a-password-reset-email}
+### Eine E-Mail zum Zurücksetzen des Kennworts konfigurieren {#configure-a-password-reset-email}
 
 Wenn Sie das Kennwort eines eingeladenen Benutzers zurücksetzen müssen, wird eine Bestätigungs-E-Mail generiert, die den Benutzer einlädt, ein neues Kennwort auszuwählen. Es gibt keine Möglichkeit, das Kennwort eines Benutzers zu ermitteln. Hat es der Benutzer vergessen, müssen Sie es zurücksetzen.
 
@@ -685,7 +685,7 @@ Die Seite „Konfiguration“ enthält einen Hyperlink zur Seite „Meine Richtl
 
 Bevor Sie Benutzern die Berechtigung zum Erstellen benutzerdefinierter Richtlinien erteilen, sollten Sie prüfen, welchen Zugriffs- oder Steuerungsgrad die einzelnen Benutzer haben sollen. Prüfen Sie auch, welche Informationen zu Gruppen und Benutzern angezeigt werden sollen, wenn sie in Suchergebnissen angezeigt werden.
 
-### Benutzer und Gruppen mit Berechtigung zum Erstellen von Richtlinien angeben  {#specify-users-and-groups-who-can-create-policies}
+### Benutzer und Gruppen mit Berechtigung zum Erstellen von Richtlinien angeben {#specify-users-and-groups-who-can-create-policies}
 
 Als Administrator können Sie angeben, welche Benutzer und Gruppen benutzerdefinierte Richtlinien erstellen dürfen. Diese Berechtigung kann auf Benutzer- und Gruppenebene erteilt werden. Die Suchfunktion durchsucht die User Management-Datenbank nach Benutzern und Gruppen.
 
@@ -701,14 +701,14 @@ Als Administrator können Sie angeben, welche Benutzer und Gruppen benutzerdefin
 
 Die ausgewählten Benutzer und Gruppen dürfen nun benutzerdefinierte Richtlinien erstellen.
 
-### Die Berechtigung zum Erstellen benutzerdefinierter Richtlinien für Benutzer oder Gruppen entfernen  {#remove-the-create-custom-policies-permission-from-a-user-or-group}
+### Die Berechtigung zum Erstellen benutzerdefinierter Richtlinien für Benutzer oder Gruppen entfernen {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. Klicken Sie auf der Document Security-Seite auf „Konfiguration“ > „Meine Richtlinien“.
 1. Klicken Sie auf der Seite „Meine Richtlinien“ auf die Registerkarte „Richtlinien erstellen“. Benutzer und Gruppen mit der Berechtigung zum Erstellen benutzerdefinierter Richtlinien werden angezeigt.
 1. Aktivieren Sie die Kontrollkästchen neben den Benutzern und Gruppen, die Sie aus dieser Berechtigung entfernen möchten.
 1. Klicken Sie auf „Löschen“ und dann auf „OK“.
 
-### Benutzer und Gruppen, die in Suchergebnissen sichtbar sind, angeben  {#specify-users-and-groups-that-are-visible-in-searches}
+### Benutzer und Gruppen, die in Suchergebnissen sichtbar sind, angeben {#specify-users-and-groups-that-are-visible-in-searches}
 
 Wenn Benutzer ihre benutzerdefinierten Richtlinien verwalten, können sie Benutzer und Gruppen suchen, die sie ihren Richtlinien hinzufügen möchten. Sie müssen die Domänen angeben, aus denen Benutzer und Gruppen in diesen Suchergebnissen angezeigt werden sollen.
 
@@ -716,7 +716,7 @@ Wenn Benutzer ihre benutzerdefinierten Richtlinien verwalten, können sie Benutz
 1. Klicken Sie auf der Seite „Meine Richtlinien“ auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
 1. Um die Benutzer und Gruppen in einer Domäne sichtbar zu machen, klicken Sie auf „Domänen hinzufügen“, wählen Sie die Domänen aus und klicken Sie auf „Hinzufügen“. Aktivieren Sie zum Entfernen einer Domäne das Kontrollkästchen neben dem Domänennamen und klicken Sie auf „Löschen“.
 
-## Manuelles Bearbeiten der Document Security-Konfigurationsdatei  {#manually-editing-the-document-security-configuration-file}
+## Manuelles Bearbeiten der Document Security-Konfigurationsdatei {#manually-editing-the-document-security-configuration-file}
 
 Sie können die Konfigurationsinformationen im- und exportieren, die in der Document Security-Datenbank gespeichert sind. Sie sollten beispielsweise eine Sicherungskopie der Konfigurationsinformationen erstellen, wenn Sie von einer Test- und zu einer Produktionsumgebung wechseln. Sie können auch erweiterte Optionen bearbeiten, die nur durch Bearbeiten dieser Datei konfiguriert werden können.
 
@@ -749,12 +749,7 @@ Mithilfe der Konfigurationsdatei können Sie folgende Änderungen vornehmen:
 1. Klicken Sie auf Durchsuchen, um zur Konfigurationsdatei zu wechseln, und klicken Sie dann auf Importieren. Sie können den Pfad nicht direkt in das Feld „Dateiname“ eingeben.
 1. Klicken Sie auf OK.
 
-1. 
-1. 
-1. 
-1. 
-
-### Ein Zeitlimit für die Offline-Synchronisation angeben  {#specify-a-timeout-period-for-offline-synchronization}
+### Ein Zeitlimit für die Offline-Synchronisation angeben {#specify-a-timeout-period-for-offline-synchronization}
 
 Document Security ermöglicht Benutzern das Öffnen und Verwenden geschützter Dokumente, wenn sie über keine Verbindung zum Document Security-Server verfügen. Die Clientanwendung des Benutzers muss regelmäßig mit dem Server synchronisiert werden, damit die Dokumente für die Offline-Nutzung gültig bleiben. Wenn der Benutzer zum ersten Mal ein geschütztes Dokument öffnen möchte, wird er gefragt, ob der Computer zum Ausführen periodischer Clientsynchronisation autorisiert werden soll.
 
@@ -772,7 +767,7 @@ In der Document Security-Konfigurationsdatei können Sie das Standardzeitinterva
 
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Ablehnen von Document Security-Diensten für bestimmte Anwendungen  {#denying-document-security-services-for-specific-applications}
+### Ablehnen von Document Security-Diensten für bestimmte Anwendungen {#denying-document-security-services-for-specific-applications}
 
 Sie können Document Security so konfigurieren, dass Dienste für Anwendungen, die bestimmte Kriterien erfüllen, abgelehnt werden. Die Kriterien können ein einzelnes Attribut, z. B. einen Plattformnamen, oder mehrere Attributsätze angeben. Mithilfe dieser Funktion können Sie die Anforderungen steuern, die Document Security verarbeiten muss. Im Folgenden finden Sie einige Anwendungen dieser Funktion:
 
@@ -856,7 +851,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
     </node>
    ```
 
-   hierbei gilt:
+   Hierbei gilt:
 
    `SDKPlatforms` gibt die Plattform an, die als Host für die Clientanwendung dient.  Mögliche Werte sind:
 
@@ -947,7 +942,7 @@ In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007
  </node
 ```
 
-### Parameter der Wasserzeichenkonfiguration ändern  {#change-the-watermark-configuration-parameters}
+### Parameter der Wasserzeichenkonfiguration ändern {#change-the-watermark-configuration-parameters}
 
 Standardmäßig können Sie maximal fünf Elemente in einem Wasserzeichen angeben. Die maximale Dateigröße des PDF-Dokuments, das Sie als Wasserzeichen verwenden möchten, ist auf 100 KB beschränkt ist. Sie können diese Parameter in der config.xml-Datei ändern.
 
@@ -968,7 +963,7 @@ Standardmäßig können Sie maximal fünf Elemente in einem Wasserzeichen angebe
 
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Externe Verknüpfungen deaktivieren  {#disabling-external-links}
+### Externe Verknüpfungen deaktivieren {#disabling-external-links}
 
 Viele Document Security-Benutzer haben keinen Zugriff auf externe Verknüpfungen wie **www.adobe.com**, wenn sie die Rights Management-Benutzeroberflächen verwenden:
 
@@ -987,7 +982,7 @@ Die folgenden Änderungen an der Datei „config.xml“ deaktivieren alle extern
 
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Konfiguration für die Aktivierung von SMTP für Transport Layer Security (TLS)  {#configuration-to-enable-smtp-for-transport-layer-security-tls}
+### Konfiguration für die Aktivierung von SMTP für Transport Layer Security (TLS) {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 Die folgenden Änderungen in „config.xml“ ermöglichen die TLS-Unterstützung für die Funktion „Registrierung für eingeladene Benutzer“.
 
@@ -1004,12 +999,12 @@ Die folgenden Änderungen in „config.xml“ ermöglichen die TLS-Unterstützun
 1. Speichern Sie `config.xml`.
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### SOAP-Endpunkte für Document Security-Dokumente deaktivieren  {#disable-soap-endpoints-for-document-security-documents}
+### SOAP-Endpunkte für Document Security-Dokumente deaktivieren {#disable-soap-endpoints-for-document-security-documents}
 
 Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte für Document Security-Dokumente zu deaktivieren.
 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den folgenden Knoten:  `<node name="DRM">`
+1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den folgenden Knoten: `<node name="DRM">`
 
    ```as3
    <node name="DRM">
