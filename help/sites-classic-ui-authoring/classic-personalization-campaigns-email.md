@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
@@ -45,7 +45,7 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 >
 >Sollten Sie E-Mail-Dienste aktualisieren, einen Testlauf durchführen oder einen Newsletter verschicken wollen, schlagen diese Aktionen fehl, wenn der Newsletter nicht zunächst in der Veröffentlichungsinstanz veröffentlicht wurde oder wenn diese Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
-## Erstellen eines Newsletter-Erlebnisses  {#creating-a-newsletter-experience}
+## Erstellen eines Newsletter-Erlebnisses {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -189,8 +189,6 @@ So passen Sie die Newsletter-Einstellungen an:
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. Geben Sie unter **Von** die E-Mail-Adresse ein.
    1. Ändern Sie bei Bedarf den **Betreff** der E-Mail.
    1. Wählen Sie aus der Dropdown-Liste eine **Standard-Empfängerliste** aus.
@@ -262,7 +260,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
    >
    >Stellen Sie sicher, dass Sie einer der Empfänger sind, um auf diese Weise sicherzustellen, dass der Newsletter versandt wurde.
 
-### Senden von Newslettern aus einer Liste heraus  {#sending-newsletters-from-a-list}
+### Senden von Newslettern aus einer Liste heraus {#sending-newsletters-from-a-list}
 
 So versenden Sie einen Newsletter aus einer Liste:
 
@@ -292,7 +290,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Newsletter abonnieren können.
 
-### Abonnieren von Newslettern  {#subscribing-to-a-newsletter-1}
+### Abonnieren von Newslettern {#subscribing-to-a-newsletter-1}
 
 Gehen Sie folgendermaßen vor, um einen Newsletter zu abonnieren (als Beispiel wird die Geometrixx-Website verwendet):
 
