@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 feature: Interaktive Kommunikation
 exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 71%
@@ -20,7 +20,7 @@ ht-degree: 71%
 
 Erstellen und Bearbeiten von Textdokumentfragmenten zur Verwendung in interaktiver Kommunikation: Text ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktiver Kommunikation verwendet werden. Die anderen drei sind Bedingungen, Listen und Layoutfragmente.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ein Textdokument besteht aus einem oder mehreren Textabsätzen. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz kann Formulardatenmodelleigenschaften und -variablen enthalten. Sie können auch Regeln anwenden und innerhalb eines Textdokumentfragments wiederholen. Beispielsweise könnte der Kundenname in einer Anrede eine Form Data Model (FDM)-Eigenschaft sein, deren Wert zur Laufzeit bereitgestellt wird. Durch Ändern dieser Werte kann dieselbe interaktive Kommunikation verwendet werden, um die interaktive Kommunikation für verschiedene Kunden mithilfe der Benutzeroberfläche für Agenten vorzubereiten.
 
@@ -88,8 +88,6 @@ Wenn Sie beim Erstellen eines Textes ein Formulardatenmodell angegeben haben, we
 
 * Damit die Agenten den Wert einer FDM-Eigenschaft in der Benutzeroberfläche für Agenten bearbeiten können, während sie [Interaktive Kommunikation vorbereiten und senden](/help/forms/using/prepare-send-interactive-communication.md) über die Benutzeroberfläche für Agenten verwenden, tippen Sie auf das Symbol **`[D]`** Sperren für diese Eigenschaft und stellen Sie sicher, dass sie sich in einem entsperrten Zustand befindet. Der Standardstatus der Eigenschaft ist gesperrt und ein Agent kann die Eigenschaft in der Benutzeroberfläche für Agenten nicht bearbeiten.
 
-* 
-
 Sie können die Eigenschaften des Formulardatenmodells auch verwenden, um Regeln zum Anzeigen oder Ausblenden von Inhaltsbereichen zu erstellen. Weitere Informationen finden Sie unter [Regeln im Text erstellen](#rules).
 
 ## Erstellen und Verwenden von Variablen in einem Textdokumentfragment {#variables}
@@ -146,7 +144,7 @@ Mit Regeleditor in einem Text können Sie Regeln erstellen, um Textzeichenfolgen
 * Eigenschaft des zugeordneten Formulardatenmodells
 * Beliebige Variablen, die Sie im Text erstellt haben.
 
-### Erstellen von Regeln im Text  {#create-rules-in-text}
+### Erstellen von Regeln im Text {#create-rules-in-text}
 
 1. Wählen Sie beim Erstellen oder Bearbeiten eines Texts die Textzeichenfolge, den Absatz oder den Inhalt aus, die bzw. der mit der Regel konditioniert werden soll.
 
