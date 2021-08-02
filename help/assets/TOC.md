@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
-source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
+source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 75%
+source-wordcount: '626'
+ht-degree: 74%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 75%
    + [Hinzufügen von Imagemaps](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Dynamic Media Newsletter von Experience League](dynamic-media-newsletter.md)
+   + [Dynamic Media-Newsletter-Archiv nach Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
