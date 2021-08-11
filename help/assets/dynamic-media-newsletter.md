@@ -1,12 +1,12 @@
 ---
+title: Dynamic Media-Newsletter-Archiv
 description: 'Der archivierte Dynamic Media-Newsletter nach Experience League war ein monatlicher Newsletter. Es wurde entwickelt, um Ihnen dabei zu helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Nutzen ziehen können. Die archivierten Newsletter enthalten wertvolle Ressourcen zur Wissensbildung, die in diesem inzwischen ausgesetzten One-Stopp-Shop-Newsletter verfügbar waren. Archivierte Newsletter enthalten Anleitungsvideos und Lösungsübersichten. Außerdem werden wichtige Funktionen wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.  '
 keywords: dynamische Medien; Newsletter; Produktupdates; Tipps und Tricks; Ereignisse; Kundenerfolg; Blog; Blogs; Bilder; Videos; Funktionen; Funktionen
 solution: Experience Manager, Dynamic Media Classic
-title: Dynamic Media-Newsletter-Archiv
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Zusammenarbeit, Dynamic Media Classic
 role: Admin,User
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 77d312235854e85b2a486365092fbe8a802faccf
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 67%
@@ -54,10 +54,6 @@ In diesem archivierten One-Stopp-Shop-Newsletter finden Sie wertvolle Ressourcen
    * Sehen Sie sich die Dynamic Media-Sitzungen vom Online-Adobe Summit 2020 an.
    * Erfahren Sie mehr über kostenlose Dynamic Media Classic-Audits.
    * Lernen Sie John Monroe kennen, Senior Programm Manager für Customer Success Services.
-
-<!--     >[!IMPORTANT]
-    >
-    >We want to make sure we are only sending the Dynamic Media newsletter to those who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[Februar 2020, Ausgabe 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
