@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 0%
+source-wordcount: '1506'
+ht-degree: 1%
 
 ---
 
@@ -125,7 +125,7 @@ Unter [Serverseitige Anpassungen](server-customize.md) finden Sie Informationen 
 
 ## Handlebars JS-Vorlagensprache {#handlebars-js-templating-language}
 
-Eine der auffälligsten Änderungen im neuen Framework ist die Verwendung der `Handlebars JS` Vorlagensprache (HBS), einer beliebten Open-Source-Technologie für Server-Client-Rendering.
+Eine der auffälligeren Änderungen im neuen Framework ist die Verwendung der [Handlebars JS](https://handlebarsjs.com/)-Vorlagensprache (HBS), einer beliebten Open-Source-Technologie für Server-Client-Rendering.
 
 HBS-Skripte sind einfach, logiklos, auf dem Server und Client kompiliert, einfach zu überlagern und anzupassen und sind natürlich mit der Client-UX verbunden, da HBS das Client-seitige Rendering unterstützt.
 
