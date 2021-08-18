@@ -12,9 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1638'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ In dieser Gruppenkonsole ist es möglich, neue Gruppen zu erstellen.
 
 ![communityGrouptheme](assets/communitygrouptheme.png)
 
-Das Framework verwendet [Twitter Bootstrap](https://twitterbootstrap.org/), um ein responsives, flexibles Design auf die Site zu bringen. Es kann eines der vielen vorab geladenen Bootstrap-Designs ausgewählt werden, um die ausgewählte Community-Gruppenvorlage zu gestalten. Andernfalls kann ein Bootstrap-Design hochgeladen werden.
+Das Framework verwendet `Twitter Bootstrap`, um ein responsives, flexibles Design auf die Site zu bringen. Es kann eines der vielen vorab geladenen Bootstrap-Designs ausgewählt werden, um die ausgewählte Community-Gruppenvorlage zu gestalten. Andernfalls kann ein Bootstrap-Design hochgeladen werden.
 
 Wenn diese Option aktiviert ist, wird das Design mit einem undurchsichtigen blauen Häkchen überlagert.
 
