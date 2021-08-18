@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1527'
 ht-degree: 9%
 
 ---
@@ -189,7 +189,7 @@ Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com
 
 * **context**: Zeichenfolge
 
-   (optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
+   (optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben ist.
 
 * **mode**: Zeichenfolge
 
@@ -215,7 +215,7 @@ Siehe auch [Internationalisierung von Zeichenfolgen in JavaScript-Code](../../he
 
 * **context**: Zeichenfolge
 
-   (optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
+   (optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben ist.
 
 * **Standard**: Zeichenfolge
 
@@ -447,9 +447,7 @@ HINWEIS: dies kann eine leere Zeichenfolge zurückgeben
 <a href="{{xss-validHref url}}">my link</a>
 ```
 
-## Handlebars.js Grundlegende Übersicht {#handlebars-js-basic-overview}
-
-Ein kurzer Überblick über Hilfsfunktionen aus der [Handlebars.js-Dokumentation](https://handlebarsjs.com/expressions.html):
+## Handlebars.js - Grundlegende Übersicht {#handlebars-js-basic-overview}
 
 * Ein Handlebars helper -Aufruf ist eine einfache Kennung (der *Name des Helfers), gefolgt von null oder mehr durch Leerzeichen getrennten Parametern.
 * Parameter können ein einfaches String-, number-, boolesches oder JSON-Objekt sowie eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumenten) als letzte Parameter sein.
@@ -526,7 +524,7 @@ würde rendern:\
 
 Benutzerdefinierte Helfer müssen sowohl serverseitig als auch Client-seitig implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen serverseitig kompiliert und gerendert, da der Server den HTML-Code für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
 
-### Serverseitige benutzerdefinierte Helfer {#server-side-custom-helpers}
+### Benutzerdefinierte Helfer serverseitig {#server-side-custom-helpers}
 
 Um einen benutzerdefinierten SCF-Helfer serverseitig zu implementieren und zu registrieren, implementieren Sie einfach die Java-Schnittstelle [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie sie zu einem [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) und installieren Sie sie als Teil eines OSGi-Bundles.
 
