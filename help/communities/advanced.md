@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Bei der Einrichtung der Scoring- und Badging-Regeln gibt es folgende Unterschied
 
 >[!NOTE]
 >
->Um erweiterte Scoring- und Badging-Funktionen zu verwenden, installieren Sie das [Expertenerkennungspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
+>Um erweiterte Scoring- und Badging-Funktionen zu verwenden, installieren Sie das [Expertenerkennungspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg).
 
 ## Konfigurierbare Scoring-Engine {#configurable-scoring-engine}
 
