@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann ein
 
 Durch die Verwendung von Dispatcher 4.1.6 oder höher wird dieses Problem behoben.
 
-### Zugriff auf Forumpost nach der Aktualisierung von CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq} nicht möglich
+### Nach der Aktualisierung von CQ 5.4 kann nicht auf Forumsbeiträge zugegriffen werden {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Wenn ein Forum in CQ 5.4 erstellt wurde und Themen veröffentlicht wurden und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge anzuzeigen, zu einem Fehler auf der Seite führen:
 
@@ -54,15 +54,15 @@ Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet,
 
 Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Beim Autor schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 
-Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
 
 ## Häufige Bedenken {#common-concerns}
 
-### Warnung in Protokollen: Handlebars Veraltet {#warning-in-logs-handlebars-deprecated}
+### Warnung in Protokollen: Handlebars - veraltet {#warning-in-logs-handlebars-deprecated}
 
 Während des Starts (nicht der 1., sondern alle darauf folgenden) kann die folgende Warnung in den Protokollen angezeigt werden:
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; wurde durch &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39; ersetzt.
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; wurde ersetzt durch &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;.
 
 Diese Warnung kann sicher ignoriert werden, da jknack.handlebars.Handlebars, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Start wird er durch einen AEM spezifischen [i18n-Helfer](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
 
