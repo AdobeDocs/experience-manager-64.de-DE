@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Vorteile des Frameworks:
 
 Erkunden Sie eine Autoren- oder Veröffentlichungsinstanz mithilfe des interaktiven Leitfadens [Community-Komponenten](components-guide.md).
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In SCF besteht eine Komponente aus einem SocialComponent POJO, einer Handlebars-JS-Vorlage (zum Rendern der Komponente) und CSS (zum Formatieren der Komponente).
 
@@ -77,11 +77,11 @@ Die Hauptklassen werden auf der Seite [Serverseitige Anpassung](server-customize
 
 Besuchen Sie [Übersicht über den Speicheranbieter](srp.md), um mehr über die Arbeit mit UGC zu erfahren.
 
-### -HTTP-API {#http-api}
+### HTTP-API {#http-api}
 
 Die HTTP-API unterstützt die einfache Anpassung und Auswahl von Client-Plattformen für PhoneGap-Apps, native Apps und andere Integrationen und Mashups. Darüber hinaus ermöglicht die HTTP-API es einer Community-Site, als Dienst ohne Client ausgeführt zu werden, sodass Framework-Komponenten in jede auf einer beliebigen Technologie aufbauende Webseite integriert werden können.
 
-### HTTP-API - GET Requests {#http-api-get-requests}
+### HTTP-API - GET-Anfragen {#http-api-get-requests}
 
 Für jede SocialComponent stellt das Framework einen HTTP-basierten API-Endpunkt bereit. Der Zugriff auf den Endpunkt erfolgt durch Senden einer GET-Anfrage an die Ressource mit der Selektor + Erweiterung &quot;.social.json&quot;. Mit Sling wird die Anfrage an `DefaultSocialGetServlet` übergeben.
 
@@ -99,7 +99,7 @@ Ein standardmäßiges GET-Servlet überwacht .social.json -Anfragen, auf die die
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-### HTTP-API - POST Requests {#http-api-post-requests}
+### HTTP-API - POST-Anfragen {#http-api-post-requests}
 
 Zusätzlich zu den GET (Lesen)-Vorgängen definiert das Framework ein Endpunktmuster, um andere Vorgänge für eine Komponente zu aktivieren, darunter Erstellen, Aktualisieren und Löschen. Diese Endpunkte sind HTTP-APIs, die Eingaben akzeptieren und entweder mit HTTP-Statuscodes oder mit einem JSON-Antwortobjekt antworten.
 
@@ -125,7 +125,7 @@ Unter [Serverseitige Anpassungen](server-customize.md) finden Sie Informationen 
 
 ## Handlebars JS-Vorlagensprache {#handlebars-js-templating-language}
 
-Eine der auffälligeren Änderungen im neuen Framework ist die Verwendung der [Handlebars JS-Vorlagensprache (HBS)](https://www.handlebarsjs.com/), einer beliebten Open-Source-Technologie für Server-Client-Rendering.
+Eine der auffälligsten Änderungen im neuen Framework ist die Verwendung der `Handlebars JS` Vorlagensprache (HBS), einer beliebten Open-Source-Technologie für Server-Client-Rendering.
 
 HBS-Skripte sind einfach, logiklos, auf dem Server und Client kompiliert, einfach zu überlagern und anzupassen und sind natürlich mit der Client-UX verbunden, da HBS das Client-seitige Rendering unterstützt.
 
@@ -214,7 +214,7 @@ Um das Erscheinungsbild und Verhalten einer Communities-Komponente Client-seitig
 * [JavaScript erweitern](client-customize.md#extending-javascript)
 * [Clientlibs für SCF](client-customize.md#clientlibs-for-scf)
 
-## Funktionen und Komponenten {#feature-and-component-essentials}
+## Funktionen und Komponentengrundlagen {#feature-and-component-essentials}
 
 Grundlegende Informationen für Entwickler werden im Abschnitt [Funktionen und Komponenten-Grundlagen](essentials.md) beschrieben.
 
