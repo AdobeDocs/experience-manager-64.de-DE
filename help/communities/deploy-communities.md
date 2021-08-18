@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2145'
 ht-degree: 5%
 
 ---
@@ -137,7 +137,7 @@ Die erforderlichen Schritte sind:
 
 Weitere Informationen zur Installation von Bundles finden Sie auf der Seite [Web-Konsole](/help/sites-deploying/web-console.md#bundles) .
 
-#### Beispiel: Installiertes MySQL Connector-Paket {#example-installed-mysql-connector-bundle}
+#### Beispiel: MySQL Connector Bundle installiert {#example-installed-mysql-connector-bundle}
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -190,20 +190,21 @@ Bei Bedarf kann die Protokollebene für das `RusticiSoftware.*`-Paket auf WARN g
 
 Informationen zum Arbeiten mit Protokollen finden Sie unter [Arbeiten mit Auditdatensätzen und Protokolldateien](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-### AEM Advanced MLS {#aem-advanced-mls}
+### AEM erweiterte MLS {#aem-advanced-mls}
 
 Damit die SRP-Sammlung (MSRP oder DSRP) erweiterte mehrsprachige Suche (MLS) unterstützen kann, sind zusätzlich zu einem benutzerdefinierten Schema und einer Solr-Konfiguration neue Solr-Plug-ins erforderlich. Alle erforderlichen Elemente werden in einer herunterladbaren ZIP-Datei zusammengefasst.
 
 Der erweiterte MLS-Download (auch als &quot;Phasetwo&quot;bezeichnet) ist im Adobe-Repository verfügbar:
 
-* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* AEM-SOLR-MLS-phasetwo
+Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Erweiterte MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellung&quot;der Dokumentation.
 
    * Version 1.2.40, 6. April 2016
    * AEM-SOLR-MLS-phasetwo-1.2.40.zip herunterladen
 
 Weitere Informationen und Installationsinformationen finden Sie unter [Solr-Konfiguration](solr.md) für SRP.
 
-### Über Links zu Package Share {#about-links-to-package-share}
+### Über Links zur Paketfreigabe {#about-links-to-package-share}
 
 **In Adobe AEM Cloud sichtbare Pakete**
 
@@ -295,7 +296,7 @@ Die folgenden Abbildungen zeigen die Ergebnisse einer Änderung des Ports von 45
 
 ![chlimage_1-412](assets/chlimage_1-412.png)
 
-#### Agent für Rückwärtsreplikation (Veröffentlichungsrückwärts) {#reverse-replication-agent-publish-reverse}
+#### Agenten für Rückwärtsreplikation (Rückwärts veröffentlichen) {#reverse-replication-agent-publish-reverse}
 
 ![chlimage_1-413](assets/chlimage_1-413.png)
 
@@ -324,7 +325,7 @@ So aktivieren Sie den Tunneldienst:
 
 ![chlimage_1-414](assets/chlimage_1-414.png)
 
-### Replizieren Sie den Crypto-Schlüssel {#replicate-the-crypto-key}
+### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
 Es gibt zwei Funktionen von AEM Communities, für die alle AEM Serverinstanzen dieselben Verschlüsselungsschlüssel verwenden müssen. Dies sind [Analytics](analytics.md) und [ASRP](asrp.md).
 
@@ -387,7 +388,7 @@ Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lit
 
 ![chlimage_1-415](assets/chlimage_1-415.png)
 
-#### Aktualisieren Sie das Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
+#### Aktualisieren des Granite Crypto-Bundles {#refresh-the-granite-crypto-bundle}
 
 * Rufen Sie in jeder Veröffentlichungsinstanz die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) auf.
 
