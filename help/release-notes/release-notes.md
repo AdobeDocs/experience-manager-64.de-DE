@@ -1,8 +1,8 @@
 ---
 title: Allgemeine Versionshinweise zu Adobe Experience Manager 6.4
-seo-title: Versionshinweise
+seo-title: Release Notes
 description: 'Die Hinweise zu Adobe Experience Manager 6.4 enthalten Versionshinweise, Neuerungen, Installationsanweisungen und detaillierte Änderungslisten. '
-seo-description: 'Die Hinweise zu Adobe Experience Manager 6.4 enthalten Versionshinweise, Neuerungen, Installationsanweisungen und detaillierte Änderungslisten. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,14 +10,14 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 80%
+source-wordcount: '2754'
+ht-degree: 78%
 
 ---
 
-# Allgemeine Versionshinweise zu Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+# Allgemeine Versionshinweise zu Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
 
 ## Versionshinweise {#release-information}
 
@@ -94,7 +94,7 @@ Weitere Informationen finden Sie auf [dieser Dokumentationsseite](/help/sites-de
 * Eine neue [Systemübersicht](/help/sites-administering/operations-dashboard.md#system-overview) bietet eine Momentaufnahme aller leistungsbezogenen Systemstatus und -aktivitäten.
 * Neue [Konsistenzprüfungen](/help/sites-administering/operations-dashboard.md#health-checks) für Indizierung, Abfragen und Wartung
 
-#### Projekte und Workflows  {#projects-and-workflows}
+#### Projekte und Workflows {#projects-and-workflows}
 
 * Neuer [Workflow-Editor zum Erstellen und Bearbeiten von Workflow-Modellen](/help/sites-developing/workflows-models.md)
 
@@ -107,7 +107,7 @@ Weitere Informationen finden Sie auf [dieser Dokumentationsseite](/help/sites-de
 * [Repository-Neustrukturierung](/help/sites-deploying/repository-restructuring.md): erhebliche Umstrukturierung (in erster Linie /etc), um einfachere Upgrades zu erleichtern und Best Practices für die Implementierung zu fördern
 * Weitere Informationen zu Upgrades finden Sie auf [dieser Seite](/help/sites-deploying/upgrade.md).
 
-### Experience Manager Sites  {#experience-manager-sites}
+### Experience Manager Sites {#experience-manager-sites}
 
 Vollständige Liste der Änderungen in [AEM Sites und Add-ons](sites.md).
 
@@ -117,7 +117,7 @@ Mit der Einführung von Fluid Experiences Anfang 2017 und unterstützt durch Inh
 
 **[Inhaltsfragmente](/help/assets/content-fragments.md)**
 
-Neu in 6.4 sind ein Visual Editor für [Inhaltsmodelle](/help/assets/content-fragments-models.md) und eine neue [konfigurierbare Komponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html) zur Bereitstellung von flexiblen HTML-Ausgaben und JSON für die Einbindung in Content Services.
+Neu in 6.4 sind ein Visual Editor für [Inhaltsmodelle](/help/assets/content-fragments-models.md) und eine neue [konfigurierbare Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html) zur Bereitstellung von flexiblen HTML-Ausgaben und JSON für die Einbindung in Content Services.
 
 **Experience Fragments**
 
@@ -133,7 +133,7 @@ Mit AEM 6.4 ist die Transformation zum Komponentenmodell der nächsten Generatio
 
 Empfohlenes Tutorial zur optimalen Nutzung des neuen Komponentenmodells: [Erste Schritte mit AEM Sites – WKND-Tutorial](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-#### Screens-Add-on  {#screens-add-on}
+#### Screens-Add-on {#screens-add-on}
 
 AEM Screens steht für die Bereitstellung einer konsistenten Botschaft über alle Marketingkanäle, einschließlich Digital Signage- und Kiosk-Netzwerken. Mit Einführung von AEM 6.4 wird die Ausführung des Signage Player unter Microsoft Windows und Google Chrome OS unterstützt. Darüber hinaus sind Erweiterungen für die Geräteverwaltung per Fernzugriff und Zeitpläne (Gruppen von Kanälen) verfügbar.
 
@@ -143,7 +143,7 @@ Weitere Informationen zu den Screens-Aktualisierungen finden Sie im [AEM Screens
 
 AEM 6.4 bietet eine Vielzahl neuer Funktionen und Erweiterungen für Communities. Vollständige Liste der Änderungen in [AEM Communities](communities-release-notes.md). Highlights dieser Version:
 
-#### Verbesserte Moderation  {#enhancements-to-moderation}
+#### Verbesserte Moderation {#enhancements-to-moderation}
 
 **Automatische Spamerkennung** 
 
@@ -163,7 +163,7 @@ Es gibt nun die Möglichkeit, die vordefinierten Moderationsfilter in der Modera
 
 AEM 6.4 Communities stellt [vorkonfigurierte APIs](/help/communities/user-ugc-management-service.md) und [Beispielservlets](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) bereit, um Endbenutzern die Kontrolle über ihre Daten zu ermöglichen. Diese APIs ermöglichen es zudem datenverarbeitenden Unternehmen, die DSGVO-Anforderungen der EU zu erfüllen.
 
-#### Verbesserte Site- und Gruppenverwaltung  {#enhancements-to-site-and-group-management}
+#### Verbesserte Site- und Gruppenverwaltung {#enhancements-to-site-and-group-management}
 
 **Erstellen von Gruppen mit mehreren Gebietsschemas in einem einzigen Schritt**
 
@@ -175,7 +175,7 @@ Es ist nun möglich, mehrsprachige Gruppen in einem Arbeitsgang zu erstellen. Um
 
 Beim Zugriff über die globale Navigation ist für die betreffenden Sites und Gruppen nun das Symbol „Löschen“ verfügbar. Damit werden alle Elemente und Inhalte, die der jeweiligen Site oder Gruppe zugeordnet sind, gelöscht und sämtliche Benutzerzuordnungen entfernt. Weitere Informationen zu dieser Funktion finden Sie unter [Verwalten von Community-Sites](/help/communities/create-site.md#main-pars-text-fe17) und [Verwalten von Community-Gruppen](/help/communities/groups.md#main-pars-text-5e8c).
 
-#### Verbesserte Aktivierung  {#enhancements-to-enablement}
+#### Verbesserte Aktivierung {#enhancements-to-enablement}
 
 In Gruppen sind nun Katalog- und Zuweisungsfunktionen verfügbar. Dies ermöglicht die gezielte Erstellung, Verwaltung und Veröffentlichung von Schulungsinhalten für bestimmte Community-Mitglieder. Weitere Informationen zum Aktivieren von Community-Gruppen finden Sie unter [Verwalten von Aktivierungsressourcen](/help/communities/resource.md).
 
@@ -263,7 +263,7 @@ Weitere Informationen hierzu finden Sie auf der Seite mit Versionshinweisen zu [
 
 Livefyre lässt sich mit AEM 6.4-Instanzen integrieren. Weitere Informationen zur Integration von Livefyre mit AEM finden Sie auf den folgenden Seiten:
 
-* [Livefyre-Integration](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [Integrieren mit Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
 
 ### Kundenorientierte Entwicklung nutzen {#leverage-customer-focused-development}
 
@@ -312,11 +312,11 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 * Pakete für Funktionen in AEM Forms:
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/de/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## Sprachen {#languages}
 
@@ -327,7 +327,7 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 * Französisch
 * Spanisch
 * Italienisch
-* Brasilianisches Portugiesisch
+* Brasilianisches  Portugiesisch
 * Japanisch
 * Vereinfachtes Chinesisch
 * Traditionelles Chinesisch (begrenzte Unterstützung)
@@ -355,7 +355,7 @@ Adobe prüft kontinuierlich den Bedarf an Funktionen im Produkt und ersetzt ggf.
 
 Lesen Sie die Liste veralteter und entfernter Funktionen in [Adobe Experience Manager 6.4](deprecated-removed-features.md). Die Seite enthält auch Vorankündigungen für Änderungen im Jahr 2019 und wichtige Hinweise für Kunden, die frühere Versionen aktualisieren.
 
-## Detaillierte Änderungslisten  {#detailed-changes-lists}
+## Detaillierte Änderungslisten {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 

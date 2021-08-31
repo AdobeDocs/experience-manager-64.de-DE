@@ -1,8 +1,8 @@
 ---
 title: Rendern von Forms
-seo-title: Rendern von Forms
+seo-title: Rendering Forms
 description: Verwenden Sie den Forms-Dienst zum Erstellen interaktiver Clientanwendungen zur Datenerfassung, die normalerweise in Designer erstellte Formulare validieren, verarbeiten, transformieren und bereitstellen. Formularverfasser können einen einzelnen Formularentwurf entwickeln, den der Forms-Dienst in verschiedenen Browserumgebungen im PDF-, SWF- oder HTML-Format wiedergibt.
-seo-description: Verwenden Sie den Forms-Dienst zum Erstellen interaktiver Clientanwendungen zur Datenerfassung, die normalerweise in Designer erstellte Formulare validieren, verarbeiten, transformieren und bereitstellen. Formularverfasser können einen einzelnen Formularentwurf entwickeln, den der Forms-Dienst in verschiedenen Browserumgebungen im PDF-, SWF- oder HTML-Format wiedergibt.
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,3 @@ Sie können diese Aufgaben mithilfe des Forms-Dienstes ausführen:
 * Formulardaten berechnen. (Siehe [Berechnen von Formulardaten](/help/forms/developing/calculating-form-data.md).)
 * Optimieren einer Anwendung. (Siehe [Leistungsoptimierung des Forms-Dienstes](/help/forms/developing/optimizing-performance-forms-service.md).)
 
-   ***Tipp **: Die Adobe Developer-Website enthält den folgenden Artikel, der beschreibt, wie eine ASP.NET- erstellt wird, die den Forms-Dienst aufruft und Formulare wiedergibt. Siehe [Erstellen von ASP.NET-Formularen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*

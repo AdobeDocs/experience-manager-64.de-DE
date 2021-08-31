@@ -1,8 +1,8 @@
 ---
 title: 'Ordner synchronisieren '
-seo-title: 'Ordner synchronisieren '
+seo-title: Synchronizing directories
 description: Erfahren Sie, wie Sie die User Management-Datenbank mit Änderungen an den Quellordnerservern mithilfe der manuellen oder geplanten Synchronisierung synchronisieren.
-seo-description: Erfahren Sie, wie Sie die User Management-Datenbank mit Änderungen an den Quellordnerservern mithilfe der manuellen oder geplanten Synchronisierung synchronisieren.
+seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
 uuid: 71cbc04d-6172-49b7-a490-ff3233c1b2bb
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 97%
+source-wordcount: '980'
+ht-degree: 98%
 
 ---
 
@@ -25,8 +25,6 @@ Durch die Ordnersynchronisierung werden Details aus den Ordnerservern, die Sie i
 
 Sie können außerdem einen täglichen Synchronisierungszeitplan einrichten, um die User Management-Datenbank automatisch mit Änderungen oder Aktualisierungen der Quellordnerserver zu synchronisieren. Dabei sollten Sie allerdings bedenken, dass dieser Prozess Netzwerk- und Serverressourcen belegt. Wählen Sie Zeiträume mit geringer Systemauslastung und planen Sie keine unnötigen Synchronisierungen, die System- und Netzwerkressourcen binden. Um die Anzahl unnötiger Synchronisierungen zu minimieren, verwenden Sie am besten die Option für die sofortige Synchronisierung.
 
-Sie können auch angeben, ob ein Push von Benutzer- und Gruppeninformationen in Adobe LiveCycle Content Services 9 (nicht mehr unterstützt) ausgeführt wird, wenn Domänen synchronisiert werden.
-
 >[!NOTE]
 >
 >Erstellen Sie nicht mehrere lokale Benutzer und Gruppen, während eine LDAP-Ordnersynchronisierung läuft. Wird dies dennoch versucht, können Fehler auftreten.
@@ -37,9 +35,9 @@ Sie können auch angeben, ob ein Push von Benutzer- und Gruppeninformationen in 
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
-## Delta-Ordnersynchronisierung aktivieren  {#enable-delta-directory-synchronization}
+## Delta-Ordnersynchronisierung aktivieren {#enable-delta-directory-synchronization}
 
 Delta-Ordnersynchronisierung verbessert die Effizienz der Ordnersynchronisierung. Wenn Delta-Ordnersynchronisierung aktiviert ist, synchronisiert User Management nur Benutzer und Gruppen, die seit der letzten Synchronisierung hinzugefügt oder aktualisiert wurden.
 
@@ -57,14 +55,14 @@ User Management führt folgende Schritte aus, wenn Delta-Ordnersynchronisierung 
 1. Aktivieren Sie unter „Delta-Synchronisation“ das Kontrollkästchen und klicken Sie auf „Speichern“.
 1. Bearbeiten Sie die Ordnereinstellungen für jede Unternehmensdomäne, die die Delta-Ordnersynchronisierungsfunktion verwenden soll. Suchen Sie auf der Seite „Benutzereinstellungen“ und auf der Seite „Gruppeneinstellungen“ die Einstellung „Zeitstempel ändern“ und geben Sie den Wert `modify TimeStamp` ein. Weitere Einzelheiten über das Bearbeiten von Unternehmensdomänen finden Sie unter [Bestehende Domänen bearbeiten und konvertieren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
-## Detaillierte Protokollierung während der Synchronisierung aktivieren oder deaktivieren  {#enable-or-disable-detailed-logging-during-synchronization}
+## Detaillierte Protokollierung während der Synchronisierung aktivieren oder deaktivieren {#enable-or-disable-detailed-logging-during-synchronization}
 
 Standardmäßig protokolliert User Management während des Synchronisierungsprozesses detaillierte Statistiken.
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Deaktivieren Sie unter „Protokollierung der Synchronisationsstatistiken“ das Kontrollkästchen, um die detaillierte Protokollierung zu deaktivieren, oder aktivieren Sie das Kontrollkästchen, um die detaillierte Protokollierung zu aktivieren. Klicken Sie dann auf „Speichern“.
 
-## Die Wiederholungsoptionen für die Ordnersynchronisierung konfigurieren  {#configure-the-directory-synchronization-retry-option}
+## Die Wiederholungsoptionen für die Ordnersynchronisierung konfigurieren {#configure-the-directory-synchronization-retry-option}
 
 Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf fehlgeschlagene Versuche zur Ordnersynchronisierung erfolgen. User Management versucht dann, die fehlgeschlagenen Synchronisierungen fertigzustellen.
 
@@ -81,7 +79,7 @@ Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf 
 
    Wenn Sie mehrere Domänen auswählen, wird die Domänensynchronisierung für alle Domänen gleichzeitig ausgeführt. Wählen Sie die Domänen dagegen einzeln aus, wird nur jeweils eine Domänensynchronisierung ausgeführt.
 
-## Ordnersynchronisierung planen  {#schedule-directory-synchronization}
+## Ordnersynchronisierung planen {#schedule-directory-synchronization}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Synchronisierungsprobleme:
@@ -95,7 +93,7 @@ Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssy
 * (Optional) Um Benutzer- und Gruppeninformationen im Push-Verfahren an Content Services (nicht mehr unterstützt) zu senden, wählen Sie die Option „Wählen Sie diese Option, um für Benutzer und Gruppen ein Pushing in registrierte externe Prinzipalspeicheranbieter durchzuführen“. Diese Option gilt auch, wenn neue Benutzer und Gruppen über die Seite „Benutzer und Gruppen“ hinzugefügt werden.
 * Klicken Sie auf Speichern.
 
-## Alle aktiven Ordnersynchronisierungsprozesse beenden  {#stop-all-directory-synchronizations-currently-in-progress}
+## Alle aktiven Ordnersynchronisierungsprozesse beenden {#stop-all-directory-synchronizations-currently-in-progress}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf „Beenden“. Diese Schaltfläche wird nur während einer aktiven Ordnersynchronisierung angezeigt.

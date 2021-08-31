@@ -1,8 +1,8 @@
 ---
 title: Bildschirmlesehilfen für HTML5-Formulare
-seo-title: Bildschirmlesehilfen für HTML5-Formulare
+seo-title: Screen readers for HTML5 forms
 description: Listet die in Verbindung mit HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
-seo-description: Listet die in Verbindung mit HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 84%
+source-wordcount: '335'
+ht-degree: 83%
 
 ---
 
@@ -25,9 +25,9 @@ HTML5-Formulare verwenden standardmäßige HTML-Konstrukte, sodass für diese Fo
 
 ## Barrierefreiheitsstandards {#accessibility-standards}
 
-HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html).
+HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf).
 
-## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare  {#certified-screen-readers-for-html-forms}
+## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 unter Microsoft Windows
 * VoiceOver unter Mac OS X und auf iPad

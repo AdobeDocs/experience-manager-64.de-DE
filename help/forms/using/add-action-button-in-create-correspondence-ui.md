@@ -1,25 +1,25 @@
 ---
 title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
-seo-title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
+seo-title: Add custom action/button in Create Correspondence UI
 description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
-seo-description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 55%
+source-wordcount: '1855'
+ht-degree: 53%
 
 ---
 
 # Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu {#add-custom-action-button-in-create-correspondence-ui}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
 
@@ -32,7 +32,7 @@ Um dieses Beispiel auszuführen, benötigen Sie Folgendes:
 * Kenntnisse von CRX und JavaScript
 * LiveCycle-Server
 
-## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“, um ein Schreiben zum Review zu senden  {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“, um ein Schreiben zum Review zu senden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review senden) zur Benutzeroberfläche „Korrespondenz erstellen“. Diese enthält Folgendes:
 
@@ -40,7 +40,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 1. Hinzufügen der Aktionsbearbeitung zur Schaltfläche
 1. Hinzufügen des LiveCycle-Prozesses zur Aktivierung der Aktion &quot;Verarbeiten
 
-### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche {#add-the-button-to-the-create-correspondence-user-interface}
+### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche  {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen `defaultApp` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner defaultApp (der sich im config -Ordner befindet). Mit den folgenden Schritten können Sie den Ordner erstellen:
@@ -123,7 +123,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-#### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung  {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Die Datei ACMExtensionsMessages.properties enthält Beschriftungen und QuickInfo-Meldungen verschiedener Felder in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
 
@@ -161,7 +161,7 @@ Die Datei ACMExtensionsMessages.properties enthält Beschriftungen und QuickInfo
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-#### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu  {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset Composer-Baustein-Bundle von Adobe neu. In diesem Szenario werden die Dateien acmExtensionsConfig.xml und ACMExtensionsMessages.properties auf der Serverseite bearbeitet. Daher erfordert das Adobe Asset Composer-Baustein-Bundle einen Neustart.
 
@@ -177,7 +177,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset C
 
 Nachdem das Asset Composer-Baustein-Bundle von Adobe neu gestartet wurde, wird die benutzerdefinierte Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können ein Schreiben in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine benutzerdefinierte Schaltfläche in der Vorschau anzuzeigen.
 
-### Hinzufügen der Aktionsbearbeitung zur Schaltfläche  {#add-action-handling-to-the-button}
+### Hinzufügen der Aktionsbearbeitung zur Schaltfläche {#add-action-handling-to-the-button}
 
 Die Benutzeroberfläche „Korrespondenz erstellen“ ist standardmäßig in der Implementierung der ActionHandler cm.domain.js-Datei am folgenden Speicherort:
 
@@ -322,7 +322,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
       '</div>';
       ```
 
-### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktions<span class="acrolinxCursorMarker"></span>bearbeitung zu aktivieren  {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktions<span class="acrolinxCursorMarker"></span>bearbeitung zu aktivieren {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die Teil der angehängten Datei components.zip sind:
 
@@ -380,7 +380,7 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienstprozess aktiviert.
 
 1. Wählen Sie **[!UICONTROL Importieren]**.
 
-#### Hinzufügen von ServiceName zur Auf die Zulassungsliste gesetzt Dienstliste {#adding-servicename-to-the-allowlisted-service-list}
+#### Hinzufügen von ServiceName zur Liste der Auf die Zulassungsliste gesetzt Dienste {#adding-servicename-to-the-allowlisted-service-list}
 
 Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server zugreifen möchten.
 
@@ -391,7 +391,7 @@ Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server z
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-#### E-Mail-Dienst konfigurieren  {#configure-the-email-service}
+#### E-Mail-Dienst konfigurieren {#configure-the-email-service}
 
 In diesem Szenario müssen Sie den E-Mail-Dienst im LifeCycle-Server konfigurieren, damit Correspondence Management eine E-Mail senden kann.
 
@@ -424,11 +424,11 @@ Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit der Adobe Li
 
    >[!NOTE]
    >
-   >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >Jedes Mal, wenn Sie serverseitig Änderungen vornehmen, starten Sie den Server neu.
 
    Die `DSCSample.jar`-Datei verwendet die `renderLetter`-API. Weitere Informationen zur renderLetter-API finden Sie unter [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
-#### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
+#### Importieren von DSC in AEM Forms on JEE {#import-dsc-to-livecyle}
 
 `DSCSample.jar` -Datei verwendet die  `renderLetter` API zum Rendern von Briefen als PDF-Bytes aus XML-Daten, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
@@ -448,7 +448,7 @@ Nachdem Sie die Aktion und Schaltfläche zum Versenden des Schreibens an den Rev
 
 1. Klicken Sie in der Benutzeroberfläche „Korrespondenz erstellen“ auf **[!UICONTROL Brief-Review]** und geben Sie die E-Mail-ID des Überprüfers an.
 
-1. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Klicken Sie auf **[!UICONTROL Senden]**.
 
 ![sendreview](assets/sendreview.png)
 

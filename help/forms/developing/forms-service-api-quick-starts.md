@@ -1,8 +1,8 @@
 ---
 title: Schnellstarts zur Forms Service-API
-seo-title: Schnellstarts zur Forms Service-API
+seo-title: Forms Service API Quick Starts
 description: Verwenden Sie die Schnellstarts für die Forms Service-API.
-seo-description: Verwenden Sie die Schnellstarts für die Forms Service-API.
+seo-description: Use the Quick Starts for the Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
 
-# Forms Service API-Schnellstarts {#forms-service-api-quick-starts}
+# Schnellstarts zur Forms Service-API {#forms-service-api-quick-starts}
 
 Die folgenden Schnellstarts sind für den Forms-Dienst verfügbar:
 
@@ -58,7 +58,6 @@ Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java-Servlets impl
 >
 >Schnellstarts, die unter Programmieren mit v zu finden sind, basieren darauf, dass Sie einen anderen Formularserver verwenden, z. B. Unix, ersetzen Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-**Tipp**: Die Adobe Developer-Website enthält den folgenden Artikel, der beschreibt, wie eine ASP.NET- erstellt wird, die den Forms-Dienst aufruft und Formulare wiedergibt. Siehe [Erstellen von ASP.NET-Formularen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Schnellstart (SOAP-Modus): Rendern eines interaktiven PDF-Formulars mit der Java-API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -741,7 +740,7 @@ Im folgenden Codebeispiel wird ein Formular mit aktivierten Rechten an einen Cli
  
 ```
 
-## Schnellstart (SOAP-Modus): HTML-Formular mit der Java-API rendern {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}
+## Schnellstart (SOAP-Modus): HTML-Formular mit der Java-API wiedergeben {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein HTML-Formular mithilfe der Java-API des Forms-Diensts wiedergegeben. Dem HTML-Formular wird eine Symbolleiste sowie zwei Dateianlagen hinzugefügt. Darüber hinaus wird der Benutzeragentenwert vom `HttpServletRequest` -Objekt abgerufen. (Siehe [Rendern von Forms als HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
@@ -902,7 +901,7 @@ Im folgenden Codebeispiel wird ein HTML-Formular mithilfe der Java-API des Forms
  
 ```
 
-## Schnellstart (SOAP-Modus): Wiedergabe eines HTML-Formulars, das eine CSS-Datei mit der Java-API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api} verwendet
+## Schnellstart (SOAP-Modus): Wiedergabe eines HTML-Formulars, das eine CSS-Datei mit der Java-API verwendet {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein HTML-Formular mithilfe der Client-API des Forms-Dienstes gerendert. Der Name der benutzerdefinierten CSS-Datei, auf die verwiesen wird, ist *custom.css*. (Siehe [Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
@@ -2249,7 +2248,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Umgang mit Formularen mit einem Berechnungsskript mithilfe der Java-API {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}
+## Schnellstart (SOAP-Modus): Verarbeiten eines Formulars mit einem Berechnungsskript mithilfe der Java-API {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein Formular verarbeitet, das ein Berechnungsskript enthält und die Ergebnisse zurück in den Client-Webbrowser schreibt. (Siehe [Berechnen von Formulardaten](/help/forms/developing/rendering-forms.md#calculating-form-data).)
 

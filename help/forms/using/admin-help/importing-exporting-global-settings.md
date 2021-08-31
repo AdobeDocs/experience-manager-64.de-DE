@@ -1,8 +1,8 @@
 ---
 title: Globale Einstellungen importieren und exportieren
-seo-title: Globale Einstellungen importieren und exportieren
+seo-title: Importing and exporting global settings
 description: Sie können Suchvorlagendefinitionen und globale Einstellungen für Workspace importieren und exportieren.
-seo-description: Sie können Suchvorlagendefinitionen und globale Einstellungen für Workspace importieren und exportieren.
+seo-description: You can import and export search template definitions and global settings for Workspace.
 uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1193'
 ht-degree: 75%
 
 ---
@@ -33,13 +33,13 @@ Im Anschluss an den Export der Datei mit den globalen Einstellungen können Sie 
 >
 >Wenn Sie die Ereigniseigenschaften in der Datei mit den globalen Einstellungen ändern, müssen Sie den Server neu starten.
 
-## Eine Suchvorlagendefinition importieren  {#import-a-search-template-definition}
+## Eine Suchvorlagendefinition importieren {#import-a-search-template-definition}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „ Workspace “ > „Globale Verwaltung“.
 1. Klicken Sie unter dem Feld „Suchvorlagendefinition importieren“ auf „Datei auswählen“, und wählen Sie die Suchvorlage aus. Sie können nur Suchvorlagendefinitionen importieren, die ursprünglich aus einer Instanz von Workspace exportiert wurden.
-1. Klicken Sie auf „Importieren“.
+1. Wählen Sie Importieren.
 
-## Eine Suchvorlagendefinition exportieren  {#export-a-search-template-definition}
+## Eine Suchvorlagendefinition exportieren {#export-a-search-template-definition}
 
 1. Klicken Sie auf der Seite „Globale Verwaltung“ unter „Suchvorlagendefinition exportieren“ auf „Alles auflisten“.
 1. Wählen Sie in der Liste der Suchvorlagen die zu exportierende Vorlage aus.
@@ -50,17 +50,17 @@ Im Anschluss an den Export der Datei mit den globalen Einstellungen können Sie 
 
 1. Klicken Sie auf „Exportieren“ und speichern Sie die Datei auf Ihrem Computer.
 
-## Globale Einstellungen importieren  {#import-global-settings}
+## Globale Einstellungen importieren {#import-global-settings}
 
 1. Klicken Sie auf der Seite „Globale Verwaltung“ unter „Globale Einstellungen importieren“ auf „Datei auswählen“, und wählen Sie die globale Einstellungsdatei aus. Die Datei mit den globalen Einstellungen muss im XML-Format vorliegen.
-1. Klicken Sie auf „Importieren“.
+1. Wählen Sie Importieren.
 
-## Globale Einstellungen exportieren  {#export-global-settings}
+## Globale Einstellungen exportieren {#export-global-settings}
 
 1. Klicken Sie auf der Seite „Globale Verwaltung“ unter „Globale Einstellungen exportieren“ auf „Exportieren“.
 1. Speichern Sie die Datei auf Ihrem Computer.
 
-## Globale Einstellungen für Workspace  {#workspace-global-settings}
+## Globale Einstellungen für Workspace {#workspace-global-settings}
 
 Sie können die Datei mit den globalen Einstellungen ändern, sollten jedoch nur die Einstellungen „JChannelConnectionProperties“, „formViewOnly“ und „specialRoutes“ bearbeiten.
 
@@ -70,7 +70,7 @@ Sie können die Datei mit den globalen Einstellungen ändern, sollten jedoch nur
 
 Die Datei mit den globalen Einstellungen für Workspace enthält folgende Einstellungen:
 
-### Einstellungen unter „specialRoutes“  {#specialroutes-settings}
+### Einstellungen unter „specialRoutes“ {#specialroutes-settings}
 
 Die Einstellungen unter *specialRules* geben die Eigenschaften der Sonderrouten („Genehmigen“ und „Ablehnen“) in Workspace an. Unter bestimmten Umständen werden die Schaltflächen für diese Routen auf den Aufgabenkarten in Workspace angezeigt, so dass sie der Benutzer auswählen kann, ohne das Formular zu öffnen. Sie können die Einstellungen unter „specialRoutes“ in der Datei mit den globalen Einstellungen ändern, um benutzerdefinierte Namen für das Genehmigen oder Ablehnen hinzuzufügen oder zusätzliche Routen zu erstellen.
 
@@ -84,7 +84,7 @@ Die Einstellungen unter *specialRules* geben die Eigenschaften der Sonderrouten 
 
 **client_specialRoutes_names:**  Die Schlüssel, mit denen der angepasste Zeichenfolgenwert aus den Ressourcendateien gefunden wird. Jeder Eintrag in diesen Einstellungen muss die Werte für die Namen und den Stil umfassen.
 
-### JGroup-Einstellungen  {#jgroup-settings}
+### JGroup-Einstellungen {#jgroup-settings}
 
 Diese Einstellungen werden nur angezeigt, wenn Sie Adobe LiveCycle ES2.5 oder früher aktualisiert haben.
 
@@ -104,9 +104,7 @@ Die restlichen Eigenschaften dieser Einstellung sollten nicht geändert werden.
 
 **server_remoteevents_JGroupName:** Der Name der JGroup-Gruppe, die für die Remote-Ereigniskommunikation verwendet wird. Dieser Wert wird nach dem Zufallsprinzip generiert, um Konflikte in Clustern zu vermeiden. Dieser Wert sollte nicht geändert werden.
 
-Weitere Informationen zu JGroups und Workspace finden Sie unter [JGroups and AEM Forms Workspace - Explained.](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html)
-
-### formView-Einstellungen  {#formview-settings}
+### formView-Einstellungen {#formview-settings}
 
 **client_formView_openFormInFullScreen:** Um alle Formulare in Workspace im Vollbildmodus anzuzeigen, legen Sie diese Option auf &quot;true&quot;fest. Standardmäßig ist die Einstellung false gewählt und die Formulare werden nicht im Vollbildmodus angezeigt. Beachten Sie, dass der User-Dienst eine Option zum Öffnen des Dokuments, das einer Aufgabe im Vollbildmodus zugeordnet ist, enthält. Damit können Sie die Anzeige auf der Basis pro Prozess steuern.
 

@@ -1,8 +1,8 @@
 ---
 title: Konvertieren zwischen Dateiformaten und PDF
-seo-title: Konvertieren zwischen Dateiformaten und PDF
+seo-title: Converting Between File Formatsand PDF
 description: Verwenden Sie den Generate PDF-Dienst, um native Dateiformate in PDF zu konvertieren. Der Generate PDF-Dienst konvertiert auch PDF-Dateien in andere Dateiformate und optimiert die Größe von PDF-Dokumenten.
-seo-description: Verwenden Sie den Generate PDF-Dienst, um native Dateiformate in PDF zu konvertieren. Der Generate PDF-Dienst konvertiert auch PDF-Dateien in andere Dateiformate und optimiert die Größe von PDF-Dokumenten.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7932'
+source-wordcount: '7872'
 ht-degree: 4%
 
 ---
@@ -195,7 +195,7 @@ Konvertieren eines Microsoft Word-Dokuments mithilfe der Generate PDF API (Java)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Konvertieren von Word-Dokumenten in PDF-Dokumente mithilfe der Webdienst-API {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
+### Konvertieren von Word-Dokumenten in PDF-Dokumente mithilfe der Web Service-API {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
 
 Konvertieren eines Microsoft Word-Dokuments mithilfe der Generate PDF API (Webdienst) in ein PDF-Dokument:
 
@@ -352,7 +352,7 @@ Konvertieren eines HTML-Dokuments mithilfe der Generate PDF API (Java) in ein PD
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Konvertieren von HTML-Inhalten in PDF-Dokumente mithilfe der Webdienst-API {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
+### Konvertieren von HTML-Inhalten in ein PDF-Dokument mithilfe der Webdienst-API {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
 
 Konvertieren Sie HTML-Inhalt mithilfe der Generate PDF API (Webdienst) in ein PDF-Dokument:
 
@@ -503,7 +503,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Java) in eine R
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Konvertieren eines PDF-Dokuments in eine RTF-Datei mithilfe der Webdienst-API {#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api}
+### Konvertieren eines PDF-Dokuments in eine RTF-Datei mithilfe der Web-Dienst-API {#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api}
 
 Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webdienst) in eine RTF-Datei:
 
@@ -638,7 +638,7 @@ In dieser Tabelle sind die Informationen aufgeführt, die beim Drucken nativer D
  </tbody> 
 </table>
 
-### Informationen zu den XML-Dateien für Skripte und Dialogfelder {#about-the-script-and-dialog-xml-files}
+### Über XML-Dateien für Skripte und Dialogfelder {#about-the-script-and-dialog-xml-files}
 
 Skript-XML-Dateien leiten den Generate PDF-Dienst an, um durch die Anwendungsdialogfelder zu navigieren, so wie ein Benutzer durch die Anwendungsdialogfelder navigieren würde. Skript-XML-Dateien weisen den Generate PDF-Dienst auch an, auf Dialogfelder zu reagieren, indem sie beispielsweise Schaltflächen drücken, Kontrollkästchen aktivieren oder deaktivieren oder Menüelemente auswählen.
 
@@ -664,7 +664,7 @@ Dieses Diagramm zeigt die Hierarchie des Skripts und der Dialog-XML. Eine XML-Sk
 
 Hierarchie des Skripts und Dialogfeld-XML
 
-#### Skript-XML-Dateien {#script-xml-files}
+#### XML-Skriptdateien {#script-xml-files}
 
 Eine *Skript-XML-Datei* gibt eine Reihe von Schritten an, die die native Anwendung anweisen, zu bestimmten Fensterelementen zu navigieren und dann Antworten auf diese Elemente bereitzustellen. Die meisten Antworten sind Text oder Tastenanschläge, die der Eingabe entsprechen, die ein Benutzer für ein Feld, Kombinationsfeld oder eine Schaltfläche im entsprechenden Dialogfeld bereitstellt.
 
@@ -692,13 +692,13 @@ Wenn der Generate PDF-Dienst eine Übereinstimmung für das Dialogfeld findet, w
 
 Wenn der Generate PDF-Dienst auf ein Dialogfeld stößt, das in keiner der zuvor aufgeführten Dateien beschrieben wird, fügt der Generate PDF-Dienst die Beschriftung des Dialogfelds in den Protokolldateieintrag ein. Der derzeit ausgeführte Auftrag wird schließlich mit einer Zeitüberschreitung beendet. Sie können dann die Informationen in der Protokolldatei verwenden, um neue Anweisungen in der zusätzlichen XML-Dialogfelddatei für die native Anwendung zu erstellen.
 
-### Unterstützung für ein natives Dateiformat {#adding-or-modifying-support-for-a-native-file-format} hinzufügen oder ändern
+### Unterstützung für ein natives Dateiformat hinzufügen oder ändern {#adding-or-modifying-support-for-a-native-file-format}
 
 In diesem Abschnitt werden die Aufgaben beschrieben, die Sie ausführen müssen, um andere native Dateiformate zu unterstützen oder um die Unterstützung für ein bereits unterstütztes natives Dateiformat zu ändern.
 
 Bevor Sie Unterstützung hinzufügen oder ändern können, müssen Sie die folgenden Aufgaben ausführen.
 
-#### Auswahl eines Tools zum Identifizieren von Fensterelementen {#choosing-a-tool-for-identifying-window-elements}
+#### Auswahl eines Werkzeugs zum Identifizieren von Fensterelementen {#choosing-a-tool-for-identifying-window-elements}
 
 In den XML-Dateien für Dialogfelder und Skripten müssen Sie das Fensterelement (Dialogfeld, Feld oder andere Dialogfeldkomponente) identifizieren, auf das Ihr Dialogfeld oder Skriptelement reagiert. Wenn beispielsweise ein Skript ein Menü für eine native Anwendung aufruft, muss das Skript das Fensterelement in diesem Menü identifizieren, auf das Tastenanschläge oder eine Aktion angewendet werden sollen.
 
@@ -720,7 +720,7 @@ Beachten Sie diese Probleme:
 
 Wenn Sie vorhaben, an Dialog- oder Skript-XML-Dateien zu arbeiten, sollten Sie die Anwendung Microsoft Spy++ installieren.
 
-#### Dekomprimieren des Dialogfelds und der Skriptdateien {#unpackaging-the-dialog-and-script-files}
+#### Dekomprimieren der Dialog- und Skriptdateien {#unpackaging-the-dialog-and-script-files}
 
 Die Dialogfelder und Skriptdateien befinden sich in der Datei &quot;appmondata.jar&quot;. Bevor Sie eine dieser Dateien ändern oder neue Skript- oder Dialogfelddateien hinzufügen können, müssen Sie die Verpackung dieser JAR-Datei aufheben. Angenommen, Sie möchten Unterstützung für die Anwendung EditPlus hinzufügen. Sie erstellen zwei XML-Dateien mit den Namen &quot;appmon.editplus.script.en_US.xml&quot;und &quot;appmon.editplus.script.additional.en_US.xml&quot;. Diese XML-Skripte müssen zur Datei adobe-appmondata.jar an zwei Stellen hinzugefügt werden, wie unten angegeben:
 
@@ -765,13 +765,13 @@ Bestimmen Sie mithilfe des nativen Programms die Fensterelemente, die Sie navigi
 1. Geben Sie die für den Drucker erforderlichen Eigenschaften an.
 1. Wählen Sie &quot;Drucken&quot;aus und warten Sie, bis das Dialogfeld &quot;Speichern unter&quot;angezeigt wird. Das Dialogfeld &quot;Speichern unter&quot;ist erforderlich, damit der Generate PDF-Dienst das Ziel für die PDF-Datei angeben kann.
 
-#### Identifizieren der in den Beschriftungsattributen {#identifying-the-dialogs-specified-in-caption-attributes} angegebenen Dialogfelder
+#### Identifizieren der in Beschriftungsattributen angegebenen Dialogfelder {#identifying-the-dialogs-specified-in-caption-attributes}
 
 Verwenden Sie Microsoft Spy++, um die Identitäten der Fensterelementeigenschaften in der nativen Anwendung abzurufen. Sie müssen über diese Identitäten verfügen, um Skripte zu schreiben.
 
 #### Verwenden regulärer Ausdrücke in Beschriftungsattributen {#using-regular-expressions-in-caption-attributes}
 
-Sie können reguläre Ausdrücke in Beschriftungsspezifikationen verwenden. Der Generate PDF-Dienst verwendet die Klasse `java.util.regex.Matcher` , um reguläre Ausdrücke zu unterstützen. Dieses Dienstprogramm unterstützt die in `java.util.regex.Pattern` beschriebenen regulären Ausdrücke. (Rufen Sie die Java-Website unter [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html) auf.)
+Sie können reguläre Ausdrücke in Beschriftungsspezifikationen verwenden. Der Generate PDF-Dienst verwendet die Klasse `java.util.regex.Matcher` , um reguläre Ausdrücke zu unterstützen. Dieses Dienstprogramm unterstützt die in `java.util.regex.Pattern` beschriebenen regulären Ausdrücke.
 
 **Regulärer Ausdruck, der den Dateinamen unterstützt, dem im Editor-Banner Notepad vorangestellt wird**
 
@@ -793,7 +793,7 @@ Sie können reguläre Ausdrücke in Beschriftungsspezifikationen verwenden. Der 
  </windowList>
 ```
 
-#### Sortieren der window- und windowList-Elemente {#ordering-the-window-and-windowlist-elements}
+#### Sortieren von window- und windowList-Elementen {#ordering-the-window-and-windowlist-elements}
 
 Sie müssen die Elemente `window` und `windowList` wie folgt sortieren:
 
@@ -865,7 +865,7 @@ Der Name der XML-Datei des zusätzlichen Dialogfelds muss das Format appmon verw
 
 Sie müssen `windowList`-Elemente sortieren, die als untergeordnete Elemente in einem `window`-Element angezeigt werden. (Siehe [Fenster- und windowList-Elemente sortieren](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
-### Ändern der XML-Datei für das allgemeine Dialogfeld {#modifying-the-general-dialog-xml-file}
+### XML-Datei des allgemeinen Dialogfelds ändern {#modifying-the-general-dialog-xml-file}
 
 Sie können die allgemeine XML-Datei des Dialogfelds ändern, um auf vom System generierte Dialogfelder zu reagieren oder auf Dialogfelder zu reagieren, die für mehrere Anwendungen gelten.
 
@@ -908,7 +908,7 @@ In diesem Beispiel wurden die mit dem Generate PDF-Dienst bereitgestellten Stand
      </filetype-settings>
 ```
 
-#### Umgebungsvariable erstellen, um die native Anwendung {#creating-an-environment-variable-to-locate-the-native-application} zu finden
+#### Umgebungsvariable zum Suchen der nativen Anwendung erstellen {#creating-an-environment-variable-to-locate-the-native-application}
 
 Erstellen Sie eine Umgebungsvariable, die den Speicherort der ausführbaren Datei der nativen Anwendung angibt. Die Variable muss das Format *[applicationName]*_PATH verwenden, wobei *applicationName* genau mit dem Anwendungsnamen übereinstimmen muss, der in der XML-Konfigurationsdatei und im Skript verwendet wird, und wo der Pfad den Pfad zur ausführbaren Datei in doppelten Anführungszeichen enthält. Ein Beispiel für eine solche Umgebungsvariable ist `Photoshop_PATH`.
 
@@ -939,7 +939,7 @@ Nachdem Sie die neue Umgebungsvariable erstellt haben, müssen Sie den Server ne
 
 AEM Forms enthält XML-Beispieldateien, die dazu führen, dass der Generate PDF-Dienst Notepad zur Verarbeitung von Dateien mit der Dateinamenerweiterung .txt verwendet. Dieser Code ist in diesem Abschnitt enthalten. Darüber hinaus müssen Sie die anderen in diesem Abschnitt beschriebenen Änderungen vornehmen.
 
-#### Zusätzliche XML-Dialogfelddatei {#additional-dialog-xml-file}
+#### Zusätzliche XML-Dialogdatei {#additional-dialog-xml-file}
 
 Dieses Beispiel enthält die zusätzlichen Dialogfelder für die Notepad-Anwendung. Diese Dialogfelder können zusätzlich zu den vom Generate PDF-Dienst angegebenen Dialogfeldern angezeigt werden.
 
@@ -955,7 +955,7 @@ Dieses Beispiel enthält die zusätzlichen Dialogfelder für die Notepad-Anwendu
  </dialogs>
 ```
 
-#### Skript-XML-Datei {#script-xml-file}
+#### XML-Skriptdatei {#script-xml-file}
 
 In diesem Beispiel wird angegeben, wie der Generate PDF-Dienst mit Notepad interagieren soll, um Dateien mithilfe des Adobe PDF-Druckers zu drucken.
 

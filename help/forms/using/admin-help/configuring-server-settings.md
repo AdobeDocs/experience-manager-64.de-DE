@@ -1,8 +1,8 @@
 ---
 title: Servereinstellungen konfigurieren
-seo-title: Servereinstellungen konfigurieren
+seo-title: Configuring Server Settings
 description: 'Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Einstellungen für E-Mails, Aufgaben- und Administratorbenachrichtigungen:'
-seo-description: 'Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Einstellungen für E-Mails, Aufgaben- und Administratorbenachrichtigungen:'
+seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
 uuid: 73b51ac0-56e5-4748-bb33-e3986c69eb2d
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2625'
 ht-degree: 90%
 
 ---
@@ -25,7 +25,7 @@ Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Ei
 * **Aufgabenbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen an Endbenutzer und Gruppen gesendeten Nachrichten zu Aufgaben aktivieren, deaktivieren oder ändern. (Siehe [Benachrichtigungen für Benutzer und Gruppen konfigurieren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
 * **Administratorbenachrichtigungseinstellungen,** die mit E-Mail-Benachrichtigungen gesendeten Nachrichten zu Verwaltungsaufgaben aktivieren, deaktivieren oder ändern.  (Siehe [Benachrichtigungen für Administratoren konfigurieren](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
-## E-Mail-Einstellungen konfigurieren  {#configuring-email-settings}
+## E-Mail-Einstellungen konfigurieren {#configuring-email-settings}
 
 Sie können ein E-Mail-Konto für den Formularserver angeben, über das dieser E-Mail-Nachrichten an AEM Forms-Benutzer und -Administratoren sendet und von diesen empfängt. Mit diesen E-Mail-Nachrichten werden Benutzer über auszuführende Aufgaben benachrichtigt bzw. daran erinnert. Außerdem wird der Benutzer auf Aufgaben, für die ein Termin fällig geworden ist, hingewiesen und der Administrator wird über aufgetretene Fehler im Prozess informiert.
 
@@ -35,7 +35,7 @@ Damit AEM Forms eingehende E-Mail-Nachrichten von Benutzern empfangen und verarb
 
 Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail benötigen, müssen keine der Optionen auf der Seite „E-Mail-Einstellungen“ konfiguriert werden.
 
-### Einstellungen für ausgehende E-Mail konfigurieren  {#configure-outgoing-email-settings}
+### Einstellungen für ausgehende E-Mail konfigurieren {#configure-outgoing-email-settings}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Servereinstellungen“ > „E-Mail-Einstellungen“.
 1. Wählen Sie „Ausgehende Nachrichten aktivieren“.
@@ -53,7 +53,7 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail be
 >
 >Wenn Sie falsche Informationen eingeben, können Sie durch Klicken auf „Abbrechen“ zur vorher angezeigten Seite zurückkehren.
 
-### Konfigurieren von E-Mail-Vorlagen für die Verwendung von AEM Forms Workspace  {#configuring-email-templates-to-use-html-workspace}
+### Konfigurieren von E-Mail-Vorlagen für die Verwendung von AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Standardmäßig enthalten die E-Mails, die von AEM Forms gesendet werden, Links 
 
 1. Klicken Sie in Administration Console auf „Startseite“ > „Dienste“ > „Arbeitsablauf für Formulare“ > „Aufgabenbenachrichtigungen“.
 1. Öffnen Sie Aufgabenzuweisungsvorlage.
-1. Legen Sie die Vorlage in den Aufgabenbenachrichtigungen auf folgendes fest:  `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. Legen Sie die Vorlage in den Aufgabenbenachrichtigungen auf folgendes fest: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```as3
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -85,7 +85,7 @@ Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in User
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-### Erinnerungen für Benutzer oder Gruppen konfigurieren  {#configure-reminders-for-users-or-groups}
+### Erinnerungen für Benutzer oder Gruppen konfigurieren {#configure-reminders-for-users-or-groups}
 
 Sie können Erinnerungsbenachrichtigungen an den zugewiesenen Benutzer bzw. die Gruppe senden, wenn ein Termin zum Durchführen einer Aufgabe heranrückt. Die Regeln zum Ermitteln des genauen Zeitpunktes, zu dem eine Erinnerungsbenachrichtigung zu senden ist, werden vom Entwickler des Prozesses festgelegt.
 
@@ -99,7 +99,7 @@ Sie können Erinnerungsbenachrichtigungen an den zugewiesenen Benutzer bzw. die 
 1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
 1. Klicken Sie auf Speichern.
 
-### Benachrichtigungen über Aufgabenzuweisungen für Benutzer und Gruppen konfigurieren  {#configure-task-assignment-notifications-for-users-or-groups}
+### Benachrichtigungen über Aufgabenzuweisungen für Benutzer und Gruppen konfigurieren {#configure-task-assignment-notifications-for-users-or-groups}
 
 Sie können Benachrichtigungen über Aufgabenzuweisungen an Benutzer oder eine Gruppe senden, wenn diesen eine Aufgabe zugewiesen wird.
 
@@ -113,7 +113,7 @@ Sie können Benachrichtigungen über Aufgabenzuweisungen an Benutzer oder eine G
 1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
 1. Klicken Sie auf Speichern.
 
-### Terminbenachrichtigungen für Benutzer und Gruppen konfigurieren  {#configure-deadline-notifications-for-users-or-groups}
+### Terminbenachrichtigungen für Benutzer und Gruppen konfigurieren {#configure-deadline-notifications-for-users-or-groups}
 
 Sie können Terminbenachrichtigungen an Benutzer und Gruppen senden, wenn der Termin für die Durchführung einer Aufgabe verstrichen ist. Eine Terminbenachrichtigung hat normalerweise reinen Informationscharakter, weil der Benutzer die zugewiesene Aufgabe nicht mehr ausführen kann.
 
@@ -126,11 +126,11 @@ Sie können Terminbenachrichtigungen an Benutzer und Gruppen senden, wenn der Te
 1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
 1. Klicken Sie auf Speichern.
 
-### Blenden Sie das Tag „DO NOT DELETE“ für alle E-Mails aus.  {#hide-the-do-not-delete-tag-for-all-emails}
+### Blenden Sie das Tag „DO NOT DELETE“ für alle E-Mails aus. {#hide-the-do-not-delete-tag-for-all-emails}
 
-Sie können die E-Mails so konfigurieren, dass der Verfolgungstag „DO NOT DELETE“ in allen E-Mails ausgeblendet wird, die in einem am Menschen orientierten Prozess gesendet werden. Weitere Informationen finden Sie unter [Ausblenden des „DO-NOT-DELETE“-Tags mit CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html).
+Sie können die E-Mails so konfigurieren, dass der Verfolgungstag „DO NOT DELETE“ in allen E-Mails ausgeblendet wird, die in einem am Menschen orientierten Prozess gesendet werden.
 
-## Benachrichtigungen für Administratoren konfigurieren  {#configuring-notifications-for-administrators}
+## Benachrichtigungen für Administratoren konfigurieren {#configuring-notifications-for-administrators}
 
 Sie können Vorlagen konfigurieren, die der Arbeitsablauf für Formulare nutzt, um E-Mail-Benachrichtigungen zu generieren, die an Administratoren gesendet werden.
 
@@ -139,7 +139,7 @@ Folgende Benachrichtigungstypen können für Administratoren konfiguriert werden
 * Angehaltener Zweig
 * Angehaltener Vorgang
 
-### Benachrichtigungen bei angehaltenen Zweigen konfigurieren  {#configure-stalled-branch-notifications}
+### Benachrichtigungen bei angehaltenen Zweigen konfigurieren {#configure-stalled-branch-notifications}
 
 Wenn ein Zweig anhält (also dessen Fortsetzung absichtlich oder wegen eines Fehlers beendet wird), können Sie veranlassen, dass eine E-Mail-Benachrichtigung an einen Administrator oder einen anderen Benutzer gesendet wird, der das Problem untersuchen kann.
 
@@ -153,7 +153,7 @@ Wenn ein Zweig anhält (also dessen Fortsetzung absichtlich oder wegen eines Feh
 1. Wählen Sie in der Liste „E-Mail-Kodierung“ das für die E-Mail-Nachricht zu verwendende Kodierformat aus. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in Japan wählen eher ISO2022-JP.
 1. Klicken Sie auf Speichern.
 
-### Benachrichtigungen bei angehaltenen Vorgängen konfigurieren  {#configure-stalled-operation-notifications}
+### Benachrichtigungen bei angehaltenen Vorgängen konfigurieren {#configure-stalled-operation-notifications}
 
 Wenn ein Vorgang anhält (also dessen Fortsetzung absichtlich oder wegen eines Fehlers beendet wird), können Sie veranlassen, dass eine E-Mail-Benachrichtigung an einen Administrator oder einen anderen Benutzer gesendet wird, der das Problem untersuchen kann.
 
@@ -165,7 +165,7 @@ Wenn ein Vorgang anhält (also dessen Fortsetzung absichtlich oder wegen eines F
 1. Geben Sie in das Feld „Benachrichtigungsvorlage“ den Text für den Nachrichtentext der E-Mail-Nachricht ein. Dieses Feld ist bereits vorab mit Standardtext ausgefüllt. Detaillierte Informationen zum Anpassen dieses Felds finden Sie unter [Inhalt von Nachrichten anpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Klicken Sie auf Speichern.
 
-## Anpassen des Inhalts von Benachrichtigungen  {#customizing-the-content-of-notifications}
+## Anpassen des Inhalts von Benachrichtigungen {#customizing-the-content-of-notifications}
 
 Auf den Seiten „Aufgabenbenachrichtigungen“ und „Administratorbenachrichtigungen“ stehen mehrere Funktionen zur Verfügung, mit deren Hilfe Benachrichtigungsmeldungen angepasst werden können:
 
@@ -173,7 +173,7 @@ Auf den Seiten „Aufgabenbenachrichtigungen“ und „Administratorbenachrichti
 * Variablenauswahl
 * URL-Erzeugung
 
-### Rich-Text-Editor  {#rich-text-editor}
+### Rich-Text-Editor {#rich-text-editor}
 
 Der Bereich „Benachrichtigungsvorlage“ ist ein Rich-Text-Editor, in dem Sie HTML-Code für die E-Mail-Benachrichtigungsmeldungen erzeugen können. Es stehen dort Optionen für die Schriftarten- und Absatzformatierung zur Verfügung, die unterhalb des Feldes „Benachrichtigungsvorlage“ zu finden sind. Diese Optionen umfassen Schriftart, -grad, -stil und -farbe sowie Absatzausrichtung und Aufzählungszeichen.
 
@@ -265,7 +265,7 @@ Erhält der Benutzer eine E-Mail-Nachricht mit dem folgenden Betreff, wenn die A
 
 `Please complete task 376`
 
-### Verwenden von Variablen im Feld „Benachrichtigungsvorlage“{#using-variables-in-the-notification-template-box}
+### Verwenden von Variablen im Feld „Benachrichtigungsvorlage“ {#using-variables-in-the-notification-template-box}
 
 Wenn Sie den folgenden Text für Benachrichtigungen bei angehaltenen Zweigen in das Feld „Benachrichtigungsvorlage“ eingeben:
 

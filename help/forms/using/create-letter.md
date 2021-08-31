@@ -1,17 +1,17 @@
 ---
 title: Brief erstellen
-seo-title: Brief erstellen
+seo-title: Create Letter
 description: 'In diesem Thema werden die Schritte erläutert, die Sie zum Erstellen eines Briefes und zum Hinzufügen von Datenmodulen und Anhängen an diesen Brief und einer Vorschau des Briefes in der Korrespondenzverwaltung benötigen. '
-seo-description: 'In diesem Thema werden die Schritte erläutert, die Sie zum Erstellen eines Briefes und zum Hinzufügen von Datenmodulen und Anhängen an diesen Brief und einer Vorschau des Briefes in der Korrespondenzverwaltung benötigen. '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 80%
 
 ---
@@ -27,7 +27,7 @@ Der Correspondence Management-Arbeitsablauf besteht aus vier Phasen:
 1. Brieferstellung
 1. Nachbearbeitung
 
-### Vorlagenerstellung {#template-creation}
+### Vorlagen erstellen {#template-creation}
 
 Die folgende Grafik zeigt einen typischen Workflow zur Erstellung einer Korrespondenzvorlage.
 
@@ -45,11 +45,11 @@ Die einzelnen Workflow-Schritte:
 
 1. Verfasser zeigt den Brief in einer Vorschau an und reicht ihn zur Nachbearbeitung ein. Weitere Informationen zur [Nachbearbeitung](/help/forms/using/submit-letter-topostprocess.md).
 
-#### Verwenden der im Lieferumfang von Correspondence Management enthaltenen Briefvorlagen  {#using-letter-templates-provided-with-correspondence-management}
+#### Verwenden der im Lieferumfang von Correspondence Management enthaltenen Briefvorlagen {#using-letter-templates-provided-with-correspondence-management}
 
 Anstatt eine völlig neue Layoutvorlage zu erstellen, können Sie die von Correspondence Management bereitgestellten Vorlagen ändern und wiederverwenden. Sie können in Designer rasch das Branding und die Daten- und Inhaltsfelder in den Vorlagen ändern wie für die Zwecke Ihres Unternehmens benötigt. Weitere Informationen finden Sie unter [Referenzieren von Briefvorlagen](/help/forms/using/reference-cm-layout-templates.md).
 
-### Dokumentfragmenterstellung  {#document-fragment-creation}
+### Dokumentfragmenterstellung {#document-fragment-creation}
 
 Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Briefe/Korrespondenz erstellen können.
 
@@ -174,7 +174,7 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 **Schätzen der Komplexität von** Briefen Es ist wichtig zu bestimmen, wie komplex die Erstellung einer bestimmten Korrespondenz sein wird. Mit Hilfe der entsprechenden Analyse lässt sich bestimmen, wie viel Zeit und Fachwissen zur Erstellung der Briefvorlagen erforderlich sein wird. Dies wiederum erleichtert die Schätzung des Ressourcenbedarfs und der Kosten zur Implementierung der Brieflösung.
 
-## Komplexität der Schriftstücke  {#correspondence-complexity}
+## Komplexität der Schriftstücke {#correspondence-complexity}
 
 Die Komplexität der einzelnen Schriftstücke lässt sich durch eine Analyse der folgenden Parameter ermitteln:
 
@@ -231,13 +231,13 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 * [Kompatibilitätspaket](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/compatibility-package.html). Installieren Sie das Kompatibilitätspaket , um die Option **Briefe** auf der Seite **Forms** anzuzeigen.
 
 * Die XDP-Datei des Briefs ([Layout](/help/forms/using/document-fragments.md)).
-* Andere XDP-Dateien ([Layoutfragmente](/help/forms/using/document-fragments.md)), die Bestandteile des Briefs bilden. Die XDPs\Layouts werden in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/) erstellt.
+* Andere XDP-Dateien ([Layoutfragmente](/help/forms/using/document-fragments.md)), die Bestandteile des Briefs bilden. Die XDPs\Layouts werden in [Designer](http://www.adobe.com/go/learn_aemforms_designer_64) erstellt.
 
 * Das relevante [Datenwörterbuch](/help/forms/using/data-dictionary.md) (optional).
 * Die [Datenmodule](/help/forms/using/document-fragments.md), die Sie in der Korrespondenz verwenden möchten.
 * [Testdaten ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) ist die XML-Datei mit den darin enthaltenen Testdaten. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.
 
-## Erstellen Sie eine Briefvorlage  {#create-a-letter-template}
+## Erstellen Sie eine Briefvorlage {#create-a-letter-template}
 
 ### Auswählen eines Layouts und Eingabe der Briefeigenschaften {#select-a-layout-and-enter-the-letter-properties}
 
@@ -268,7 +268,7 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 
    **Weiter**: Wenn Sie auf  **Öffnen** tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Komponenten an. Fahren Sie fort mit dem Einfügen von [Datenmodulen und Layout-Fragmenten und konfigurieren Sie sie](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
-### Fügen Sie Datenmodule und Layout-Fragmente in einen Brief ein und konfigurieren Sie sie  {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### Fügen Sie Datenmodule und Layout-Fragmente in einen Brief ein und konfigurieren Sie sie {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Teilformulare/Zielbereiche an. Sie können in jeden der Zielbereiche entweder ein Datenmodul oder ein Layout-Fragment einfügen (und dann Datenmodule in das Layout-Fragment).
 

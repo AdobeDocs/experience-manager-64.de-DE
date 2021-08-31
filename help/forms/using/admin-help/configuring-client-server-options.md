@@ -1,8 +1,8 @@
 ---
 title: Client- und Serveroptionen konfigurieren
-seo-title: Client- und Serveroptionen konfigurieren
+seo-title: Configuring client and server optionsn
 description: Erfahren Sie, wie Sie die verschiedenen Client- und Serveroptionen konfigurieren können, z. B. Einstellungen zur Serverkonfiguration, Document Security-Rollen und Ereignisrevidierung.
-seo-description: Erfahren Sie, wie Sie die verschiedenen Client- und Serveroptionen konfigurieren können, z. B. Einstellungen zur Serverkonfiguration, Document Security-Rollen und Ereignisrevidierung.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 85%
 
 ---
@@ -554,7 +554,7 @@ Document Security generiert automatisch eine Einladungs-E-Mail zur Registrierung
 
 Die Registrierungs-E-Mail enthält einen Hyperlink zu einer Registrierungsseite sowie Informationen zur Registrierung. Nachdem sich der eingeladene Benutzer registriert hat, sendet Document Security eine Aktivierungs-E-Mail mit einem Link zu einer Aktivierungsseite. Nach der Aktivierung bleibt das Konto gültig, bis es deaktiviert oder gelöscht wird.
 
-Durch Aktivieren von „Integrierte Registrierung“ geben Sie den SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an. Stellen Sie vor der Aktivierung der Option „Integrierte Registrierung“ sicher, dass Sie in User Management eine lokale Domäne erstellt und den entsprechenden Benutzern und Gruppen im Unternehmen die Rolle „Document Security – Benutzer einladen“ zugewiesen haben. (Siehe [Lokale Domäne hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Weitere Informationen finden Sie in der LiveCycle-SDK-Hilfe unter „Entwickeln von SPIs für AEM Forms“ in [ deProgrammieren mit AEM Forms. ](https://www.adobe.com/go/learn-aemforms-programming-63) Wenn Sie die Option „Integrierte Registrierung“ nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Clientanmeldebildschirm zu konfigurieren, um die Benutzer zu informieren, wie sie den Administrator für ein neues Kennwort oder andere Informationen kontaktieren können.
+Durch Aktivieren von „Integrierte Registrierung“ geben Sie den SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an. Stellen Sie vor der Aktivierung der Option „Integrierte Registrierung“ sicher, dass Sie in User Management eine lokale Domäne erstellt und den entsprechenden Benutzern und Gruppen im Unternehmen die Rolle „Document Security – Benutzer einladen“ zugewiesen haben. (Siehe [Lokale Domäne hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Weitere Informationen finden Sie in der LiveCycle-SDK-Hilfe unter „Entwickeln von SPIs für AEM Forms“ in [ deProgrammieren mit AEM Forms. ](/help/forms/developing/introducing-java-api-soap-quick.md) Wenn Sie die Option „Integrierte Registrierung“ nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Clientanmeldebildschirm zu konfigurieren, um die Benutzer zu informieren, wie sie den Administrator für ein neues Kennwort oder andere Informationen kontaktieren können.
 
 **Registrierung für eingeladene Benutzer aktivieren und deaktivieren**
 

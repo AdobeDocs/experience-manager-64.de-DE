@@ -1,22 +1,22 @@
 ---
 title: Einrichten und Konfigurieren von AEM Forms-Referenz-Sites
-seo-title: Einrichten und Konfigurieren von AEM Forms-Referenz-Sites
+seo-title: Set up and configure AEM Forms reference sites
 description: AEM Forms Referenz-Sites zeigen, wie Sie mit AEM Forms End-to-End-Workflows in einer Organisation implementieren können.
-seo-description: AEM Forms Referenz-Sites zeigen, wie Sie mit AEM Forms End-to-End-Workflows in einer Organisation implementieren können.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 48%
 
 ---
 
-# Einrichten und Konfigurieren von AEM Forms-Referenzwebsites {#set-up-and-configure-aem-forms-reference-sites}
+# Einrichten und Konfigurieren von AEM Forms-Referenz-Sites {#set-up-and-configure-aem-forms-reference-sites}
 
 AEM Forms stellt eine Referenz-Site-Implementierung bereit, um zu zeigen, wie AEM Forms der Finanzdienstleistungsbranche und Regierungseinrichtungen helfen kann, komplexe Transaktionen in einfache digitale Vorgänge umzuwandeln, jederzeit und auf jedem Gerät.
 
@@ -152,7 +152,7 @@ Die SSL-Konfiguration ist für die Kommunikation mit den Adobe Sign-Servern erfo
 
 ## Konfigurieren der Day CQ Link Externalizer-Konfiguration {#externalizer}
 
-In AEM ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. /path/to/my/page) in eine externe und absolute URL (z. B. https://www.mycompany.com/path/to/my/page) hinein, indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird. Siehe[ Auslagern von URLs](/help/sites-developing/externalizer.md).
+In AEM ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. /path/to/my/page) programmgesteuert in eine externe und absolute URL umwandeln können (z. B. https://www.mycompany.com/path/to/my/page), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird. Siehe[ Auslagern von URLs](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -288,7 +288,7 @@ Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Ve
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
-## Cloud-Service von Adobe Sign für Referenz-Site konfigurieren  {#sign-service}
+## Cloud-Service von Adobe Sign für Referenz-Site konfigurieren {#sign-service}
 
 Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz aus:
 

@@ -1,8 +1,8 @@
 ---
 title: Härtung Ihrer AEM Forms on JEE-Umgebung
-seo-title: Härtung Ihrer AEM Forms on JEE-Umgebung
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: Erfahren Sie mehr über die verschiedenen Sicherheitshärtungseinstellungen, um die Sicherheit von AEM Forms on JEE in einem Unternehmens-Intranet zu verbessern.
-seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitshärtungseinstellungen, um die Sicherheit von AEM Forms on JEE in einem Unternehmens-Intranet zu verbessern.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 73%
 
 ---
@@ -632,7 +632,7 @@ Einige URLs sind als Endbenutzer-orientierte Webanwendungen gekennzeichnet. Sie 
 
 Ein Cross-Site Request Forgery-Angriff (CSRF) nutzt das Vertrauen einer Website für den Benutzer, um Befehle zu übertragen, die vom Benutzer nicht autorisiert und unbeabsichtigt sind. Der Angriff wird eingerichtet, indem ein Link, ein Skript oder eine URL in eine E-Mail-Nachricht eingefügt werden, um auf eine andere Website zuzugreifen, für die der Benutzer bereits authentifiziert wurde.
 
-Beispielsweise können Sie bei Administration Console angemeldet sein, während Sie gleichzeitig eine andere Website durchsuchen. Eine der Webseiten kann ein HTML-Bild-Tag mit einem `src`-Attribut enthalten, dessen Ziel ein serverseitiges Skript auf einer Opfer-Website ist. Webbrowser verwenden einen auf Cookies basierenden Mechanismus zur Sitzungsauthentifizierung. Dies wird von der angreifenden Website ausgenutzt. Sie sendet bösartige Anforderungen an das serverseitige Opferskipt und gibt vor, der rechtmäßige Benutzer zu sein. Weitere Beispiele finden Sie unter [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples).
+Beispielsweise können Sie bei Administration Console angemeldet sein, während Sie gleichzeitig eine andere Website durchsuchen. Eine der Webseiten kann ein HTML-Bild-Tag mit einem `src`-Attribut enthalten, dessen Ziel ein serverseitiges Skript auf einer Opfer-Website ist. Webbrowser verwenden einen auf Cookies basierenden Mechanismus zur Sitzungsauthentifizierung. Dies wird von der angreifenden Website ausgenutzt. Sie sendet bösartige Anforderungen an das serverseitige Opferskipt und gibt vor, der rechtmäßige Benutzer zu sein.
 
 Die folgenden Merkmale sind für CSRF-Angriffe charakteristisch:
 
@@ -697,7 +697,7 @@ AEM Forms on JEE stellt APIs zum Verwalten der Liste &quot;Zulässige Referrer -
 
 Weitere Informationen zu den APIs finden Sie in der * AEM Forms on JEE API-Referenz* .
 
-Verwenden Sie die Liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** für &quot;Zulässige Referrer - Ausnahmen&quot;auf globaler Ebene, d. h. um Ausnahmen zu definieren, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (z. B. `/index.html`) oder einen relativen Pfad (z. B. `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen, z. B. `/sample/(.)*`.
+Verwenden Sie die Liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** für &quot;Zulässige Referrer - Ausnahmen&quot;auf globaler Ebene, d. h. um Ausnahmen zu definieren, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (z. B. `/index.html`) oder einem relativen Pfad (z. B. `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen, z. B. `/sample/(.)*`.
 
 Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTIONS*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Verwenden Sie beispielsweise zum Erstellen der Liste &quot;Globale zulässige Referrer - Ausnahmen&quot;Folgendes:
 

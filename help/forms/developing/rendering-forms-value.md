@@ -1,8 +1,8 @@
 ---
 title: Rendern von Forms nach Wert
-seo-title: Rendern von Forms nach Wert
+seo-title: Rendering Forms By Value
 description: Verwenden Sie die Forms-API (Java), um ein Formular mit Werten mithilfe der Java-API und der Web Service-API zu rendern.
-seo-description: Verwenden Sie die Forms-API (Java), um ein Formular mit Werten mithilfe der Java-API und der Web Service-API zu rendern.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1821'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Um ein Formular nach Wert wiederzugeben, übergeben Sie eine `com.adobe.idp.Docu
 
 >[!NOTE]
 >
->Wenn Sie Daten im Formular anzeigen möchten, müssen diese im Element `xfa:datasets` angegeben werden. Informationen zur XFA-Architektur finden Sie unter [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Wenn Sie Daten im Formular anzeigen möchten, müssen diese im Element `xfa:datasets` angegeben werden. Informationen zur XFA-Architektur finden Sie unter [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Schreiben Sie den Formulardaten-Stream in den Client-Webbrowser**
 

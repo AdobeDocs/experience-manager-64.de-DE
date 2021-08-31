@@ -1,17 +1,17 @@
 ---
 title: Versionshinweise zum AEM 6.4 Service Pack
-seo-title: Versionshinweise zum AEM 6.4 Service Pack
+seo-title: AEM 6.4 Service Pack Release Notes
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Service Packs.
-seo-description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Service Packs.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Service Packs.
 uuid: 49a710a8-7cd5-47de-9a96-7af7f3c00dfc
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '21579'
+source-wordcount: '21557'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 27%
 | Datum | 5. März 2020 |
 | Download-URL | AEM 6.4.8.0 auf [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
-## Was ist in AEM 6.4.8.0 enthalten?{#what-s-included-in-aem}
+## Was ist in AEM 6.4.8.0 enthalten? {#what-s-included-in-aem}
 
 AEM 6.4.8.0 ist ein wichtiges Update, das neue Funktionen, wichtige von Kunden angeforderte Verbesserungen sowie Leistung, Stabilität und Sicherheitsverbesserungen enthält, die seit der allgemeinen Verfügbarkeit von AEM 6.4 im **April 2018 veröffentlicht wurden.**
 
@@ -51,7 +51,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Aktualisierung der in ContextHub enthaltenen jQuery-Version auf 3.2.1.
 
-## Liste der Änderungen  {#list-of-changes}
+## Liste der Änderungen {#list-of-changes}
 
 ### Sites {#sites}
 
@@ -126,7 +126,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Der Browser reagiert nicht mehr, wenn er versucht, einer Seite mit einem bestimmten URL-Format eine Komponente hinzuzufügen (NPR-32368, NPR-31917).
 
-### WCM-Administrator-Benutzeroberfläche {#wcm-admin-ui-6480}
+### WCM-Admin-Benutzeroberfläche {#wcm-admin-ui-6480}
 
 * Veröffentlichung verwalten enthält keine referenzierten Assets im Aktivierungsanfrage-Workflow (NPR-32304).
 
@@ -316,7 +316,7 @@ Wenn Sie das Paket `com.day.cq.dam.handler.standard.msoffice` in Ihrer benutzerd
 * Der Administrator einer eingeschränkten Gruppe kann die Gruppenkarte nicht anzeigen und kann keine Schnelllink-Vorgänge (Gruppen bearbeiten/veröffentlichen/löschen) in AEM Autoreninstanz durchführen (NPR-30810).
 * Informationen zu Mitgliedergruppen/Gruppen sind beim Erstellen einer neuen Site in AEM Autoreninstanz nicht sichtbar (NPR-28840).
 
-##### Forms {#forms-6470}
+##### Formulare {#forms-6470}
 
 >[!NOTE]
 >
@@ -1042,7 +1042,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Verbesserungen bei der Verarbeitung von FormData.
 * Die Handhabung der Elementbenennung in einem Multifield wurde verbessert.
 * Verbesserte Handhabung von Platzhalterelementen (Karten- und Listenansicht) während der Auswahl.
-* Die Adobe IMS-Authentifizierung und Admin Console-Unterstützung für Managed Services wurde hinzugefügt.
+* Adobe IMS-Authentifizierung und Admin Console-Unterstützung für Managed Services hinzugefügt.
 
 **Assets**
 
@@ -1293,7 +1293,7 @@ Zu den wichtigsten Highlights von AEM 6.4.2.0 gehören:
 * Unterstützung für MongoDB Enterprise 3.6 hinzugefügt.
 * Der Sites-Seiten-Editor unterstützt jetzt die kontextbezogene Bearbeitung und Komposition mit clientseitigen Komponenten, die in React oder Angular in Kombination mit <a href="../sites-developing/spa-walkthrough.md">AEM Editor JS SDK</a> erstellt wurden.
 * Verbesserungen bei Inhaltsfragmenten: Es wurde die Möglichkeit hinzugefügt, Anmerkungen in Textfeldern hinzuzufügen und Versionen nebeneinander zu vergleichen.
-* Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, sodass Benutzer Adobe Stock-Assets direkt über AEM Benutzeroberfläche suchen, in der Vorschau anzeigen, speichern und lizenzieren können. Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* Die [Integration mit Adobe Stock](/help/assets/aem-assets-adobe-stock.md) wurde hinzugefügt, damit Benutzer Adobe Stock-Assets direkt über AEM Benutzeroberfläche suchen, in der Vorschau anzeigen, speichern und lizenzieren können. Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets mit AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Assets unterstützen jetzt das dynamische bedingte Metaschema und die Möglichkeit, ein Metadatenschema für Asset-Ordner festzulegen.
 * Es wurde eine Konfiguration in jeder Komponente hinzugefügt, um die Funktion zum Erstellen/Aktualisieren von Ordnerminiaturbildern zu aktivieren/deaktivieren.
 * Verbesserungen für den Bildeditor bei der Seitenbearbeitung.
@@ -1644,7 +1644,7 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 
 * Der Output-Dienst stellt nicht die richtigen Tags für Barrierefreiheit-Reader bereit. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Hotfix für CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
-**Dokumentensicherheit**
+**Document Security**
 
 * Problem mit der Richtlinienerstellung mit Document Security. NPR-25586, NPR-25547: Hotfix für CQ-4247086
 
@@ -1757,10 +1757,10 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * (Personalisierung) Beim Wechseln zur Kartenansicht werden Symbole deformiert. NPR-23373, NPR-23374: Hotfix für CQ-4240018, CQ-4240019
 * (Personalisierung) Die Zielgruppenkonsole zeigt keine nt:folder-Typen an. NPR-23375: Hotfix für CQ-4242293
 * Wenn eine Komponente auf eine Veröffentlichungsinstanz ausgerichtet ist, erscheint ein Flackern, das das Standarderlebnis vor dem zielgerichteten anzeigt. NPR-23415: Hotfix für CQ-4242038
-* (Adobe IMS Console) Die OSGi-Dienstkonfiguration AccessTokenProvider wird nach dem Löschen erneut angezeigt. NPR-23520: Hotfix für CQ-4208250
+* (Adobe IMS-Konsole) Die OSGi-Dienstkonfiguration AccessTokenProvider wird nach dem Löschen erneut angezeigt. NPR-23520: Hotfix für CQ-4208250
 * Die Replikation der Konfigurationsreferenzen mit der Zwischenordnerstruktur schlägt fehl. NPR-23485: Hotfix für CQ-4242751
 * clientlib (Personalisierung), die vom Proxy-Servlet blockiert wird. NPR-23521: Hotfix für CQ-4240995
-* (Adobe IMS Console) Registrierte Cloud-Lösungen werden nicht im Konfigurationsassistenten abgerufen. NPR-23977: Hotfix für CQ-4244549
+* (Adobe IMS-Konsole) Registrierte Cloud-Lösungen werden nicht im Konfigurationsassistenten abgerufen. NPR-23977: Hotfix für CQ-4244549
 * Endlosschleife beim Laden zielgerichteter Inhalte auf Seiten ohne HTML-Erweiterung. NPR-23522: Hotfix für CQ-4223600
 * Die Aktivierung schlägt für eine Seite mit vererbten Konfigurationsverweisen für das Dynamic Tag Management fehl. NPR-23485: Hotfix für CQ-4242751
 
@@ -2115,7 +2115,7 @@ Liste der in AEM 6.4.1.0 enthaltenen Inhaltspakete
 >
 >Adobe rät davon ab, das AEM 6.4.8.0-Paket zu entfernen oder zu deinstallieren.
 
-### Installieren Sie das Service Pack über Package Manager {#install-the-service-pack-via-package-share}.
+### Installieren des Service Packs über Package Manager {#install-the-service-pack-via-package-share}
 
 Führen Sie folgende Schritte aus, um das Service Pack in einer vorhandenen AEM 6.4-Instanz zu installieren:
 
@@ -2170,10 +2170,10 @@ Informationen zur Bestimmung der zertifizierten Plattform für die Ausführung m
 
 >[!NOTE]
 >
->AEM 6.4.8.0 enthält eine neue Version des [AEM Forms-Kompatibilitätspakets](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT). Wenn Sie eine ältere Version des AEM Forms-Kompatibilitätspakets verwenden und auf AEM 6.4.8.0 aktualisieren, installieren Sie nach der Installation des Forms Add-On-Pakets die neueste Version des AEM Forms-Kompatibilitätspakets.
+>AEM 6.4.8.0 enthält eine neue Version des [AEM Forms-Kompatibilitätspakets](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Wenn Sie eine ältere Version des AEM Forms-Kompatibilitätspakets verwenden und auf AEM 6.4.8.0 aktualisieren, installieren Sie nach der Installation des Forms Add-On-Pakets die neueste Version des AEM Forms-Kompatibilitätspakets.
 
 1. Stellen Sie sicher, dass Sie das AEM Service Pack installiert haben.
-1. Laden Sie das entsprechende Formular-Add-On-Paket herunter, das unter [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) für Ihr Betriebssystem aufgeführt ist.
+1. Laden Sie das entsprechende Formular-Add-On-Paket herunter, das unter [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für Ihr Betriebssystem aufgeführt ist.
 1. Installieren Sie das Formular-Add-On-Paket wie unter [Installieren AEM Forms-Add-On-Pakete](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package) beschrieben.
 
 ### Installieren des AEM Forms JEE-Installationsprogramms {#install-aem-forms-jee-installer}

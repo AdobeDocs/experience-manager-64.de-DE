@@ -1,8 +1,8 @@
 ---
 title: AEM Forms mit der JavaAPI aufrufen
-seo-title: AEM Forms mit der JavaAPI aufrufen
+seo-title: Invoking AEM Forms using the JavaAPI
 description: Verwenden Sie die AEM Forms Java-API für das RMI-Transportprotokoll für Remote-Aufruf, VM-Transport für lokalen Aufruf, SOAP für Remote-Aufruf, verschiedene Authentifizierung, wie Benutzername und Kennwort, sowie synchrone und asynchrone Aufrufanforderungen.
-seo-description: Verwenden Sie die AEM Forms Java-API für das RMI-Transportprotokoll für Remote-Aufruf, VM-Transport für lokalen Aufruf, SOAP für Remote-Aufruf, verschiedene Authentifizierung, wie Benutzername und Kennwort, sowie synchrone und asynchrone Aufrufanforderungen.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 1c239c05-e221-442a-a748-0c28704ee032
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5479'
-ht-degree: 88%
+source-wordcount: '5385'
+ht-degree: 89%
 
 ---
 
@@ -34,13 +34,6 @@ Die Java-API unterstützt die folgenden Funktionen:
 * Unterschiedliche Authentifizierung, wie z. B. Benutzername und Kennwort
 * Synchrone und asynchrone Aufrufanforderungen
 
-**Website für Adobe-Entwickler**
-
-Die Website für Adobe-Entwickler enthält die folgenden Artikel, in denen der Aufruf von AEM Forms-Diensten über die Java-API beschrieben wird:
-
-[Verwenden von Java-Servlets zum Aufrufen von AEM Forms-Prozessen](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Aufrufen der AEM Forms Distiller-API von Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Siehe auch**
 
@@ -73,7 +66,7 @@ Um einen AEM Forms-Dienst mithilfe der Java-API programmgesteuert aufzurufen, f�
 
 * Der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt wird.
 
-### Servicespezifische JAR-Dateien  {#service-specific-jar-files}
+### Servicespezifische JAR-Dateien {#service-specific-jar-files}
 
 In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von AEM Forms-Diensten erforderlich sind.
 
@@ -224,7 +217,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
  </tbody>
 </table>
 
-### Verbindungsmodus und J2EE-Anwendungs-JAR-Dateien  {#connection-mode-and-j2ee-application-jar-files}
+### Verbindungsmodus und J2EE-Anwendungs-JAR-Dateien {#connection-mode-and-j2ee-application-jar-files}
 
 In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmodus und dem J2EE-Anwendungsserver abhängen, auf dem AEM Forms bereitgestellt wird.
 
@@ -289,7 +282,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
  </tbody>
 </table>
 
-### Aufrufen von Szenarien  {#invoking-scenarios}
+### Aufrufen von Szenarien {#invoking-scenarios}
 
 In der folgenden Tabelle werden die Aufrufszenarien angegeben und die zum erfolgreichen Aufrufen von AEM Forms erforderlichen JAR-Dateien aufgeführt.
 
@@ -627,14 +620,14 @@ Das folgende Codebeispiel zeigt, wie ein `com.adobe.idp.Context`-Objekt in Verbi
 >
 >Vollständige Informationen zum Authentifizieren eines Benutzers finden Sie unter [Benutzer authentifizieren](/help/forms/developing/users.md#authenticating-users).
 
-### Aufrufen von Szenarien  {#invoking_scenarios-1}
+### Aufrufen von Szenarien {#invoking_scenarios-1}
 
 Die folgenden Aufrufszenarien werden in diesem Abschnitt behandelt:
 
 * Eine Client-Anwendung, die in einer eigenen Java Virtual Machine (JVM) ausgeführt wird, ruft eine eigenständige AEM Forms-Instanz auf.
 * Eine Client-Anwendung, die in ihrer eigenen JVM ausgeführt wird, ruft AEM Forms-Clusterinstanzen auf.
 
-### Die Client-Anwendung, die eine eigenständige AEM Forms-Instanz aufruft  {#client-application-invoking-a-stand-alone-aem-forms-instance}
+### Die Client-Anwendung, die eine eigenständige AEM Forms-Instanz aufruft {#client-application-invoking-a-stand-alone-aem-forms-instance}
 
 Das folgende Diagramm zeigt eine Client-Anwendung, die in einer eigenen JVM ausgeführt wird und eine eigenständige AEM Forms-Instanz aufruft.
 
@@ -644,7 +637,7 @@ In diesem Szenario wird eine Client-Anwendung in einer eigenen JVM ausgeführt u
 >
 >Dieses Szenario ist das Aufrufszenario, auf dem alle Schnellstarts basieren.
 
-### Client-Anwendung, die geclusterte AEM Forms-Instanzen aufruft  {#client-application-invoking-clustered-aem-forms-instances}
+### Client-Anwendung, die geclusterte AEM Forms-Instanzen aufruft {#client-application-invoking-clustered-aem-forms-instances}
 
 Das folgende Diagramm zeigt eine Client-Anwendung, die in einer eigenen JVM ausgeführt wird und eine eigenständige AEM Forms-Instanz in einem Cluster aufruft.
 
@@ -780,7 +773,7 @@ Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das
  Document myPDFDocument = new Document(myByteArray);
 ```
 
-#### Das Erstellen eines Dokuments basiert auf einem anderen Dokument  {#creating-a-document-based-on-another-document}
+#### Das Erstellen eines Dokuments basiert auf einem anderen Dokument {#creating-a-document-based-on-another-document}
 
 Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das auf einem anderen `com.adobe.idp.Document`-Objekt basiert.
 
@@ -801,7 +794,7 @@ Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
-#### Erstellen eines Dokuments basierend auf einer Datei  {#creating-a-document-based-on-a-file}
+#### Erstellen eines Dokuments basierend auf einer Datei {#creating-a-document-based-on-a-file}
 
 Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das auf eine PDF-Datei *map.pdf basiert*. Diese Datei befindet sich im Stammverzeichnis der C-Festplatte. Dieser Konstruktor versucht, den MIME-Inhaltstyp des `com.adobe.idp.Document`-Objekts mithilfe der Dateinamenerweiterung festzulegen.
 
@@ -817,7 +810,7 @@ Wenn Sie diesen Parameter auf `false` setzen, behalten Sie den Besitz dieser Dat
  Document myPDFDocument = new Document(mySourceMap,true);
 ```
 
-#### Erstellen eines Dokuments basierend auf einem InputStream-Objekt  {#creating-a-document-based-on-an-inputstream-object}
+#### Erstellen eines Dokuments basierend auf einem InputStream-Objekt {#creating-a-document-based-on-an-inputstream-object}
 
 Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das auf einem`java.io.InputStream`-Objekt basiert.
 
@@ -829,7 +822,7 @@ Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das
  Document myPDFDocument = new Document(is);
 ```
 
-#### Erstellen eines Dokuments basierend auf Inhalt, auf den über eine URL zugegriffen werden kann  {#creating-a-document-based-on-content-accessible-from-an-url}
+#### Erstellen eines Dokuments basierend auf Inhalt, auf den über eine URL zugegriffen werden kann {#creating-a-document-based-on-content-accessible-from-an-url}
 
 Im folgenden Codebeispiel wird ein `com.adobe.idp.Document`-Objekt erstellt, das auf einer PDF-Datei *map.pdf basiert*. Diese Datei befindet sich in einer Web-Anwendung namens `WebApp`,  , die auf `localhost` läuft. Dieser Konstruktor versucht, den MIME-Inhaltstyp des `com.adobe.idp.Document`-Objekts mithilfe des mit dem URL-Protokoll zurückgegebenen Inhaltstyps festzulegen.
 
@@ -1035,7 +1028,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 1. Ruft das ungesicherte PDF-Dokument ab, das an den Prozess übergeben wird. Diese Aktion basiert auf dem Vorgang `SetValue`. Der Eingangsparameter für diesen Prozess ist eine `document`-Prozessvariable mit dem Namen `inDoc`.
 1. Sie verschlüsselt das PDF-Dokument mit einem Kennwort. Diese Aktion basiert auf dem Vorgang `PasswordEncryptPDF`. Das kennwortverschlüsselte PDF-Dokument wird in einer Prozessvariablen namens `outDoc` zurückgegeben.
 
-### Rufen Sie den kurzlebigen Prozess MyApplication/EncryptDocument mithilfe der Java-Aufruf-API auf {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
+### Rufen Sie den kurzlebigen Prozess „MyApplication/EncryptDocument“ mithilfe der Java-Aufruf-API auf {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
 
 Rufen Sie den kurzlebigen Prozess `MyApplication/EncryptDocument` mithilfe der Java-Aufruf-API auf:
 

@@ -1,8 +1,8 @@
 ---
 title: Diensteinstellungen konfigurieren
-seo-title: Diensteinstellungen konfigurieren
+seo-title: Configure service settings
 description: Erfahren Sie, wie Sie die Diensteinstellungen konfigurieren.
-seo-description: Erfahren Sie, wie Sie die Diensteinstellungen konfigurieren.
+seo-description: Learn how to configure service settings.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10710'
+source-wordcount: '10683'
 ht-degree: 63%
 
 ---
@@ -36,7 +36,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 1. Klicken Sie auf „Speichern“, um die Änderungen zu speichern, oder auf „Abbrechen“, um sie zu verwerfen.
 1. Aktivieren Sie das Kontrollkästchen neben dem Dienstnamen und klicken Sie auf „Starten“, um den Dienst neu zu starten.
 
-## Einstellungen des Audit Workflow-Dienstes  {#audit-workflow-service-settings}
+## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
 Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).) Zum Einsparen von Speicherplatz auf dem Dateisystem des Formularservers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
@@ -44,7 +44,7 @@ Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung
 
 **MaxNumberOfRecordingEntries:** Die maximale Anzahl von Dateneinträgen, die für jede Aufzeichnung gespeichert werden können. Bei Dateneinträgen handelt es sich um Informationen zu Vorgängen in dem Prozess. Für jede Ausführung eines Vorgangs werden mehrere Einträge gespeichert, z. B. ob der Vorgang gestartet wurde, ob der Vorgang beendet wurde und ob die Route, die zu dem Vorgang führt, vollständig ist. Diese Eigenschaft ist nützlich, wenn Prozesse die Ausführung vieler Vorgänge beinhalten, z. B. wenn eine Endlosschleife auftritt. Der Standardwert ist 50.
 
-## Einstellungen des Barcoded Forms-Dienstes  {#barcoded-forms-service-settings}
+## Einstellungen des Barcoded Forms-Dienstes {#barcoded-forms-service-settings}
 
 Der Barcoded Forms-Dienst `(BarcodedFormsService)` extrahiert Barcodedaten aus gescannten Bildern. Der Dienst akzeptiert ein Strichcodeformat (TIFF oder PDF) als Eingabe und extrahiert die Computerdarstellung der vom Strichcode kodierten Daten.
 
@@ -66,7 +66,7 @@ Folgende Einstellungen sind für den Barcoded Forms-Dienst verfügbar:
 
 **Datenquellenname:** Der Name der Datenquelle, die verwendet wird, um Status- und Verlaufsinformationen über Batch-Verarbeitungsaufträge zu verwalten. Die angegebene Datenquelle muss globale (XA-)Transaktionen unterstützen.
 
-## Einstellungen für Central Migration Bridge-Dienst (veraltet){#central-migration-bridge-service-settings}
+## Einstellungen für Central Migration Bridge-Dienst (veraltet) {#central-migration-bridge-service-settings}
 
 Der Central Migration Bridge-Dienst (`CentralMigrationBridge`) ruft eine Untergruppe von Funktionen aus Adobe Central Pro Output Server (Central-Funktionen) auf, zu der die Befehle JFMERGE, JFTRANS und XMLIMPORT gehören. Mithilfe von Vorgängen des Central Migration Bridge-Dienstes können Sie die folgenden Central-Elemente in AEM Forms wiederverwenden:
 
@@ -154,11 +154,11 @@ Neue Einstellungen können über die Benutzeroberfläche von PDF Generator erst
 
 **Poolgröße:** Die Anfangsgröße des Pools. Wenn der Distiller-Dienst bereitgestellt wird, wird mithilfe dieses Wertes die Anzahl der Dienstimplementierungsinstanzen ermittelt, die erstellt und dem freien Pool zugeordnet werden, der auf Aufrufanforderungen wartet. Der Dienstcontainer kann dann sofort auf Aufrufanforderungen reagieren, ohne zuerst eine Dienstinstanz initialisieren zu müssen.
 
-## Einstellungen des Document Management-Dienstes  {#document-management-service-settings}
+## Einstellungen des Document Management-Dienstes {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
 Der Document Management-Dienst (`DocumentManagementService`) ermöglicht, dass Prozesse die von Content Services (nicht mehr unterstützt) bereitgestellten Inhaltsverwaltungsfunktionen verwenden können. Document Management-Vorgänge bieten grundlegende Aufgaben, die zum Warten von Bereichen und Inhalten im Inhaltsverwaltungssystem erforderlich sind. Beispiele für solche Aufgaben sind das Kopieren, Löschen, Verschieben, Abrufen und Speichern von Inhalten, das Erstellen von Bereichen und Zuordnungen sowie das Abrufen und Festlegen von Inhaltsattributen.
 
@@ -168,7 +168,7 @@ Folgende Einstellungen sind für den Document Management-Dienst verfügbar:
 
 **HTTP-Anschluss:** Der Anschluss, der für den Zugriff auf Content Services (nicht mehr unterstützt) verwendet wird. Der Standardwert ist 8080.
 
-## Einstellungen des E-Mail-Dienstes  {#email-service-settings}
+## Einstellungen des E-Mail-Dienstes {#email-service-settings}
 
 E-Mail wird im Allgemeinen im Rahmen eines automatisierten Prozesses zum Verteilen von Inhalten oder Bereitstellen von Statusinformationen genutzt. Der E-Mail-Dienst (`EmailService`) ermöglicht Prozessen das Empfangen von E-Mail-Nachrichten von einem POP3- oder IMAP-Server und das Senden von E-Mail-Nachrichten an einen SMTP-Server.
 
@@ -284,7 +284,7 @@ Wiederholen Sie die PDF-Konvertierung unabhängig davon, ob der Timeout-Grenzwer
 
 Wiederholen Sie die PDF-Konvertierung, wenn die Zeit für den ersten Konvertierungsversuch geringer war als die angegebene Timeout-Dauer. Wenn die Timeout-Dauer beispielsweise 270 s beträgt und der erste Versuch dauerte 200 s, versucht PDF Generator eine erneute Konvertierung. Wenn der erste Versuch 270 s gedauert hat, wird die Konvertierung nicht wiederholt.
 
-## Einstellungen des Guides ES4 Utilities-Dienstes  {#guides-es4-utilities-service-settings}
+## Einstellungen des Guides ES4 Utilities-Dienstes {#guides-es4-utilities-service-settings}
 
 Wenn Sie einen Guide erstellen, werden einige Ressourcen, z. B. die Guide-Definition, in den Guide eingebettet. Die Ressourcen können auch als Verweise auf Anwendungselemente vorhanden sein, die lokal oder auf dem AEM Forms-Server gespeichert sind. Der Guide enthält keine Daten und die Werte für den Sendespeicherort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
 
@@ -325,7 +325,7 @@ Die Standardwerte für den Guide Utilities-Dienst unterstützen die meisten Anwe
 
 **macKeySeed:** Ein Seed-Wert zum Generieren der sicheren URL. Wenn diese Option aktiviert ist, wird der Schlüssel nie aktualisiert. Das Festlegen des gleichen Seed auf verschiedenen Servern führt dazu, dass diese Server geschützte URLs generieren, die kompatibel sind. Das kann hilfreich sein, wenn mehrere Formularserver hinter einem Lastausgleich verwendet werden. Geben Sie eine zufällige Sequenz von Zeichen und Zahlen als Seed ein.
 
-### Guides in einem Servercluster verwenden  {#using-guides-in-a-server-cluster}
+### Guides in einem Servercluster verwenden {#using-guides-in-a-server-cluster}
 
 Das Rendern eines Guides in einem Servercluster, das persistente Sitzungsfehler mit einer NullPointerException verwendet. Eine Guide-Anforderung nutzt sichere URLs, die standardmäßig für den Server, auf dem sie generiert wurden, eindeutig sind. In einem Cluster, der persistente Sitzungen verwendet, werden, nachdem eine Anforderung an einen Knoten in dem Cluster gesendet wurde, alle nachfolgenden Anforderungen für die Sitzung oder den Benutzer ausschließlich auf diesen Server weitergeleitet. In dem Fall ist alles in Ordnung. In einem Cluster, der keine persistenten Sitzungen verwendet, können nachfolgende Anforderungen an einen beliebigen Server in dem Cluster gesendet werden. Wenn der Server, an den die Anforderungen gesendet werden, nicht der Originalserver ist, lösen sie die sichere URL nicht auf.
 
@@ -337,7 +337,7 @@ Der macKeySeed-Wert ist der Seed-Wert für den Zufallszahlengenerator, der zum G
 
 Sie müssen den Cluster neu starten, da der macSeedValue beim Systemstart schreibgeschützt ist. Alle Knoten müssen zum Lesen des Werts neu gestartet werden, da sie ihn unabhängig voneinander verwenden, um ihre internen Zufallszahlen mit dem Seed-Wert zu initialisieren.
 
-## Einstellungen des JDBC-Dienstes  {#jdbc-service-settings}
+## Einstellungen des JDBC-Dienstes {#jdbc-service-settings}
 
 Der JDBC-Dienst (`JdbcService`) ermöglicht Prozessen die Interaktion mit Datenbanken.
 
@@ -345,7 +345,7 @@ Folgende Einstellungen sind für den JDBC-Dienst verfügbar:
 
 **datasourceName:** Ein string -Wert, der den JNDI-Namen der Datenquelle darstellt, mit der eine Verbindung zum Datenbankserver hergestellt werden soll. Die Datenquelle muss auf dem Anwendungsserver definiert sein, der als Host des Formularservers dient. Der Standardwert ist der JNDI-Name der Datenquelle für die AEM Forms-Datenbank.
 
-## Einstellungen des JMS-Dienstes  {#jms-service-settings}
+## Einstellungen des JMS-Dienstes {#jms-service-settings}
 
 Der JMS-Dienst (`JMS`) ermöglicht die Interaktion mit JMS-Anbietern (Java Messaging System), die sowohl das Punkt-zu-Punkt-Messaging als auch das Veröffentlichen-/Abonnieren-Messaging implementieren.
 
@@ -505,7 +505,7 @@ Der Standardwert von „PDFG-Bereinigungsprüfung (Sekunden)“ ist `43200` (12 
 
 **Standardgebietsschema:** Wird verwendet, um das Standardgebietsschema (Land + Sprache) des Servers zu überschreiben, auf dem der Generate PDF-Dienst bereitgestellt ist. Wenn dieser Parameter nicht angegeben ist, wird das Standardgebietsschema über das Betriebssystem ermittelt, unter dem der Dienst bereitgestellt ist. Dieser Parameter steuert die Sprache, in der Fehlermeldungen an die APIs zurückgegeben werden.
 
-## Data Services-Diensteinstellungen für den Arbeitsablauf für Formulare  {#forms-workflow-data-services-service-settings}
+## Data Services-Diensteinstellungen für den Arbeitsablauf für Formulare {#forms-workflow-data-services-service-settings}
 
 Die folgenden Dienste erweitern Data Services und stellen Assembler bereit, die von Workspace für die Kommunikation mit dem Server verwendet werden. Ändern Sie die Konfigurationsoptionen für diese Dienste nicht, es sei denn, Sie werden von Adobe Support entsprechend angewiesen. Diese Dienste sind nicht für den direkten Zugriff vorgesehen:
 
@@ -523,7 +523,7 @@ Folgende Einstellungen sind für den Remoting-Dienst verfügbar:
 
 **Serialisierung nicht serialisierbarer Klassen zulassen:** Die meisten AEM Formularendpunkte erlauben nur serialisierbare Klassen für den Aufruf. In älteren Versionen ermöglichte der Remoting-Endpunkt die Verwendung von nicht serialisierbaren Klassen für den Aufruf von Flex-basierten Clients. Um zu verhindern, dass eine Sicherheitslücke wie unter APS11-15 beschrieben auftritt, wurde dies geändert.  Wenn Sie weiterhin nicht serialisierbare Klassen mit dem Flex-Remoting-Endpunkt verwenden möchten, wählen Sie dieses Kontrollkästchen aus.
 
-## Einstellungen des Repository-Dienstes  {#repository-service-settings}
+## Einstellungen des Repository-Dienstes {#repository-service-settings}
 
 Der Repository-Dienst (`RepositoryService`) stellt Dienste für die Ressourcenspeicherung und -verwaltung in AEM Forms bereit. Wenn ein Entwickler eine Anwendung erstellt, kann er die Elemente im Repository statt in einem Dateisystem bereitstellen. Die Elemente können alle Typen von Zusätzen umfassen, darunter XML-Formulare, PDF-Formulare (einschließlich Acrobat-Formularen), Formularfragmente, Bilder, Profile, Richtlinien, SWF-Dateien, DDX-Dateien, XML-Schemas, WSDL-Dateien und Testdaten.
 
@@ -607,9 +607,9 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Grundlegende Einschränkungserweiterung in Zertifizierungsstellenzertifikaten erforderlich:** Gibt an, ob die grundlegende Einschränkungserweiterung für Zertifikate der Zertifizierungsstelle (CA) für CA-Zertifikate vorhanden sein muss. Einige frühere deutsche zertifizierte Stammzertifikate (7 und früher) sind nicht RFC 3280-konform und enthalten keine grundlegende Einschränkungserweiterung. Wenn bekannt ist, dass ein EE-Zertifikat eines Benutzers an einen solchen deutschen Stamm verkettet ist, deaktivieren Sie dieses Kontrollkästchen. Der Standardwert lautet true.
 
-**Gültige Zertifikatsignatur während der Kettenbildung erforderlich:** Gibt an, ob der Kettengenerator gültige Signaturen für Zertifikate erfordert, die zum Erstellen von Ketten verwendet werden. Wenn dieses Kontrollkästchen aktiviert ist, erzeugt der Kettengenerator keine Ketten mit ungültigen RSA-Signaturen aus Zertifikaten. Betrachten Sie die Kette „CA > ICA > EE“, bei der die Signatur der Zertifizierungsstelle (CA) für eine ICA ungültig ist. Wenn diese Einstellung „true“ ist, wird die Kettenbildung an der ICA beendet und die CA wird nicht in die Kette aufgenommen. Ist sie dagegen „false“, wird die vollständige Kette aus 3 Zertifikaten erzeugt. Diese Einstellung hat keine Auswirkungen auf DSA-Signaturen. Der Standardwert ist „false“.
+**Gültige Zertifikatsignatur während der Kettenbildung erforderlich:** Gibt an, ob der Kettengenerator gültige Signaturen für Zertifikate erfordert, die zum Erstellen von Ketten verwendet werden. Wenn dieses Kontrollkästchen aktiviert ist, erzeugt der Kettengenerator keine Ketten mit ungültigen RSA-Signaturen aus Zertifikaten. Betrachten Sie die Kette „CA > ICA > EE“, bei der die Signatur der Zertifizierungsstelle (CA) für eine ICA ungültig ist. Wenn diese Einstellung „true“ ist, wird die Kettenbildung an der ICA beendet und die CA wird nicht in die Kette aufgenommen. Ist sie dagegen „false“, wird die vollständige Kette aus 3 Zertifikaten erzeugt. Diese Einstellung hat keine Auswirkungen auf DSA-Signaturen. Der Standardwert lautet false.
 
-### Zeitstempelanbieter-Optionen  {#timestamp-provider-options}
+### Zeitstempelanbieter-Optionen {#timestamp-provider-options}
 
 **TSP Server URL:** Die URL des standardmäßigen Zeitstempelanbieters. Wird nur verwendet, wenn ein gültiger Wert angegeben ist. Kein Standardwert.
 
@@ -629,7 +629,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Zeitstempel-Server-Erweiterung ignorieren**: Wählen Sie **Zeitstempel-Server-Erweiterung ignorieren**, damit AEM Forms-Server keinen Kontakt mit dem angegebenen Zeitstempelserver aufnehmen kann. die Auswahl der Option verhindert Prozessausfälle, die aufgrund von Verbindungs-Timeout zwischen AEM Forms- und Zeitstempelservern stattfinden.
 
-### Zertifikatsperrlisten-Optionen  {#certificate-revocation-list-options}
+### Zertifikatsperrlisten-Optionen {#certificate-revocation-list-options}
 
 **Consult Local URI First:** Gibt an, ob der in &quot;Local URI&quot;oder &quot;CRL Lookup&quot;angegebene Zertifikatsperrlisten-Speicherort zum Zweck der Sperrprüfung Vorrang vor jedem in einem Zertifikat angegebenen Speicherort erhalten soll. Der Standardwert lautet false.
 
@@ -643,9 +643,9 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Gültigkeitsdaten ignorieren:** Gibt an, ob die Zeiten &quot;thisUpdate&quot;und &quot;nextUpdate&quot;der Antwort ignoriert werden sollen, wodurch verhindert wird, dass sich diese Zeiten negativ auf die Gültigkeit der Antwort auswirken. Der Standardwert lautet false.
 
-**Require AKI extension in CRL:**  Gibt an, ob die ID-Erweiterung für den Authority Key in einer Zertifikatsperrliste enthalten sein muss. Der Standardwert ist „false“.
+**Require AKI extension in CRL:**  Gibt an, ob die ID-Erweiterung für den Authority Key in einer Zertifikatsperrliste enthalten sein muss. Der Standardwert lautet false.
 
-### OCSP-Optionen (Online Certificate Status Protocol)  {#online-certificate-status-protocol-options}
+### OCSP-Optionen (Online Certificate Status Protocol) {#online-certificate-status-protocol-options}
 
 **OCSP Server URL:** URL für den standardmäßigen OCSP-Server. Ob der über diese URL angegebene OCSP-Server verwendet wird, hängt von der Einstellung der „Zu verwendender URL“-Option ab. Kein Standardwert.
 
@@ -669,17 +669,17 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Allow OCSPNoCheck extension:**  Gibt an, ob die OCSPNoCheck-Erweiterung im Signaturzertifikat der Antwort zulässig ist. Der Standardwert lautet true.
 
-**Require OCSP ISIS-MTT CertHash Extension:**  Gibt an, ob eine Zertifikat-Hash-Erweiterung mit öffentlichem Schlüssel in OCSP-Antworten enthalten sein muss. Der Standardwert ist „false“.
+**Require OCSP ISIS-MTT CertHash Extension:**  Gibt an, ob eine Zertifikat-Hash-Erweiterung mit öffentlichem Schlüssel in OCSP-Antworten enthalten sein muss. Der Standardwert lautet false.
 
-### Fehlerbehandlungsoptionen für das Debugging  {#error-handling-options-for-debugging}
+### Fehlerbehandlungsoptionen für das Debugging {#error-handling-options-for-debugging}
 
 **Purge Certificate Cache on next API call:**  Gibt an, ob der Zertifikatcache beim Aufruf des nächsten Signature-Dienstvorgangs bereinigt werden soll. Im Anschluss an den Aufruf des Vorgangs wird die Option wieder auf „false“ festgelegt. Der Standardwert lautet false.
 
 **Bereinigen Sie den Zertifikatsperrlisten-Cache beim nächsten API-Aufruf:**  Gibt an, ob der Zertifikatsperrlisten-Cache beim Aufruf des nächsten Signature-Dienstvorgangs bereinigt werden soll. Im Anschluss an den Aufruf des Vorgangs wird die Option wieder auf „false“ festgelegt. Der Standardwert lautet false.
 
-**Bereinigen des OCSP-Cache beim nächsten API-Aufruf:**  Gibt an, ob der OCSP-Cache beim Aufruf des nächsten Signature-Dienstvorgangs bereinigt werden soll. Im Anschluss an den Aufruf des Vorgangs wird die Option wieder auf „false“ festgelegt. Der Standardwert ist „false“.
+**Bereinigen des OCSP-Cache beim nächsten API-Aufruf:**  Gibt an, ob der OCSP-Cache beim Aufruf des nächsten Signature-Dienstvorgangs bereinigt werden soll. Im Anschluss an den Aufruf des Vorgangs wird die Option wieder auf „false“ festgelegt. Der Standardwert lautet false.
 
-## Einstellungen des Watched Folder-Dienstes  {#watched-folder-service-settings}
+## Einstellungen des Watched Folder-Dienstes {#watched-folder-service-settings}
 
 Der Watched Folder-Dienst (`WatchedFolder`) konfiguriert gemeinsame Attribute für alle Endpunkte überwachter Ordner. Der Dienst stellt außerdem Standardwerte für die Endpunkte überwachter Ordner bereit. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Er wird weder durch externe Client-Anwendungen aufgerufen noch in Prozessen verwendet, die in Workbench erstellt werden.
 
@@ -776,7 +776,7 @@ Folgende Einstellungen sind für den Web Service-Dienst verfügbar:
 * cms
 * jceks
 
-## Einstellungen des XSLT Transformation-Dienstes  {#xslt-transformation-service-settings}
+## Einstellungen des XSLT Transformation-Dienstes {#xslt-transformation-service-settings}
 
 Der XSLT Transformation-Dienst (`XSLTService`) ermöglicht Prozessen das Anwenden von Extensible Stylesheet Language Transformations (XSLT) auf XML-Dokumente.
 
@@ -784,13 +784,13 @@ Folgende Einstellung ist für den XSLT Transformation-Dienst verfügbar:
 
 **Werksname:** Der vollständig qualifizierte Name der Java-Klasse, die für die Durchführung von XSLT-Transformationen verwendet werden soll. Wenn kein Wert angegeben ist, wird die Standardfactory verwendet, die in der Java Virtual Machine konfiguriert ist, in der der Formularserver ausgeführt wird.
 
-## Ändern von Sicherheitseinstellungen für einen Dienst  {#modifying-security-settings-for-a-service}
+## Ändern von Sicherheitseinstellungen für einen Dienst {#modifying-security-settings-for-a-service}
 
 Der Formularserver ermöglicht Ihnen das Konfigurieren von Sicherheitseinstellungen für jeden einzelnen Dienst, wodurch Sie eine fein abgestufte Zugriffssteuerung auf Dienstebene konfigurieren können.
 
 Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, dass sie den Anforderungen Ihres Systems entsprechen. Jedem Sicherheitsprofil ist eine Domäne zugeordnet und es wird entweder auf Benutzerebene oder auf Gruppenebene erstellt.
 
-### Sicherheitseinstellungen für einen Dienst ändern  {#modify-security-settings-for-a-service}
+### Sicherheitseinstellungen für einen Dienst ändern {#modify-security-settings-for-a-service}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
@@ -835,18 +835,18 @@ Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, 
    * **SERVICE_MANAGER_PERM:** Ist zur Verwendung in einer zukünftigen Version von AEM Forms vorgesehen. Verwenden Sie diese Berechtigung nicht.
    * **SERVICE_AGENT_PERM:** Ist zur Verwendung in einer zukünftigen Version von AEM Forms vorgesehen. Verwenden Sie diese Berechtigung nicht.
 
-1. Klicken Sie auf „Hinzufügen“.
+1. Klicken Sie auf Hinzufügen.
 
-### Prinzipal aus einem Sicherheitsprofil entfernen  {#remove-the-principal-from-a-security-profile}
+### Prinzipal aus einem Sicherheitsprofil entfernen {#remove-the-principal-from-a-security-profile}
 
 1. Wählen Sie auf der Seite „Dienstverwaltung“ den zu konfigurierenden Dienst.
 1. Klicken Sie auf die Registerkarte **Sicherheit**, wählen Sie das zu entfernende Sicherheitsprofil und klicken Sie auf **Entfernen**.
 
-## Pooling für einen Dienst konfigurieren  {#configuring-pooling-for-a-service}
+## Pooling für einen Dienst konfigurieren {#configuring-pooling-for-a-service}
 
 Jeder Dienst kann die Poolingfunktionen zum Verarbeiten eingehender Aufrufanforderungen nutzen. Durch die Verwendung eines Dienstpools wird sichergestellt, dass Dienstinstanzen immer nur von einem einzigen Thread gleichzeitig aufgerufen werden und dass sie über Aufrufanforderungen hinweg wiederverwendet werden, was die Leistung erhöhen kann. Außerdem können Sie mithilfe von Pooling die Option „Max. Anzahl asynchroner Dienstinstanzen“ angeben, die es Diensten ermöglicht, die Anzahl parallel verarbeiteter Anforderungen zu begrenzen.
 
-### Pooling aktivieren  {#enable-pooling}
+### Pooling aktivieren {#enable-pooling}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
@@ -858,7 +858,7 @@ Jeder Dienst kann die Poolingfunktionen zum Verarbeiten eingehender Aufrufanford
 1. Geben Sie in das Feld „Timeout beim Warten auf Aufruf“ die Anzahl der Millisekunden ein, die auf die Verfügbarkeit eines Dienstes für eine Aufrufanforderung gewartet werden soll. Wenn Sie für diese Einstellung keinen Wert angeben, ist der Standardwert 0, was keiner Wartezeit entspricht.
 1. Klicken Sie auf Speichern.
 
-### Pooling entfernen  {#remove-pooling}
+### Pooling entfernen {#remove-pooling}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.

@@ -1,17 +1,17 @@
 ---
 title: Installieren und Konfiguration von Document Services
-seo-title: Installieren und Konfiguration von Document Services
+seo-title: Installing and configuring document services
 description: Installieren Sie AEM Forms Document Services, um PDF-Dokumente zu erstellen, zusammenzuführen, zu verteilen, zu archivieren, digitale Signaturen hinzuzufügen, um den Zugriff auf Dokumente einzuschränken und um mit Barcodes versehene Formulare zu dekodieren.
-seo-description: Installieren Sie AEM Forms Document Services, um PDF-Dokumente zu erstellen, zusammenzuführen, zu verteilen, zu archivieren, digitale Signaturen hinzuzufügen, um den Zugriff auf Dokumente einzuschränken und um mit Barcodes versehene Formulare zu dekodieren.
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
-ht-degree: 72%
+source-wordcount: '4251'
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,7 @@ AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Do
 
 * **Forms-Dienst:**  Ermöglicht die Erstellung interaktiver Clientanwendungen zur Datenerfassung, mit denen typischerweise in Forms Designer erstellte Formulare validiert, verarbeitet, transformiert und bereitgestellt werden. Der Forms-Dienst rendert jeden Formularentwurf, den Sie in PDF-Dokumente entwickeln. Weitere Informationen finden Sie unter [Forms Service](/help/forms/using/forms-service.md).
 
-* **Output-Dienst:**  Ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF-, Laserdruckerformaten und Beschriftungsdruckerformaten. Laserdruckerformate sind PostScript und Printer Control Language (PCL). Weitere Informationen finden Sie unter [Output Service](/help/forms/using/output-service.md).
+* **Output-Dienst:**  Ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF-, Laserdruckerformaten und Beschriftungsdruckerformaten. Laser-Druckerformate sind PostScript und Printer Control Language (PCL). Weitere Informationen finden Sie unter [Output Service](/help/forms/using/output-service.md).
 
 * **PDF Generator-Dienst:**  Der PDF Generator-Dienst stellt APIs zum Konvertieren nativer Dateiformate in PDF bereit. Es kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Weitere Informationen finden Sie unter [PDF Generator-Dienst](aem-document-services-programmatically.md#pdfgeneratorservice).
 
@@ -85,7 +85,6 @@ Bevor Sie AEM Forms Document Services installieren und konfigurieren, stellen Si
 >* Auf UNIX-basierten Betriebssystemen unterstützt PDF Generator WebKit- und PhantomJS-Konvertierungsrouten zum Konvertieren von HTML-Dateien in PDF-Dokumente.
 
 >
-
 
 
 ### Zusätzliche Anforderungen für UNIX-basierte Betriebssysteme {#extrarequirements}
@@ -208,7 +207,6 @@ Wenn Sie den PDF Generator-Dienst verwenden möchten, um native Dateiformate wie
 >
 
 
-
 Öffnen Sie nach der Installation von Acrobat Microsoft Word. Klicken Sie auf der Registerkarte **Acrobat** auf **PDF erstellen** und konvertieren Sie eine auf dem Computer verfügbare .doc- oder .docx-Datei in ein PDF-Dokument. Wenn die Konvertierung erfolgreich war, ist AEM Forms für die Verwendung von Acrobat mit PDF Generator-Dienst bereit.
 
 ### Umgebungsvariablen einrichten {#setup-environment-variables}
@@ -260,8 +258,7 @@ Legen Sie Umgebungsvariablen für Java Development Kit (32 Bit und 64 Bit), An
 >* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die Pfadvariable festzulegen:
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (Nur für IBM WebSphere) IBM-SSL-Socketanbieter konfigurieren {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -387,7 +384,6 @@ Kopieren Sie die Unicode-Schriftart in die folgenden Ordner, so wie es für Ihr 
 >
 
 
-
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält AEM Forms Document Services und andere AEM Forms-Funktionen. Führen Sie die folgenden Schritte aus, um das Paket zu installieren:
@@ -440,7 +436,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
 ### Konfigurieren Sie ein lokales Benutzerkonto zum Ausführen des PDF Generator-Dienstes  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforderlich. Anweisungen zum Erstellen eines lokalen Benutzers finden Sie unter [Erstellen eines Benutzerkontos unter Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) oder [Erstellen eines Benutzerkontos unter UNIX-basierten Plattformen](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
+Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforderlich. Anweisungen zum Erstellen eines lokalen Benutzers finden Sie unter [Erstellen eines Benutzerkontos unter Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) oder Erstellen eines Benutzerkontos auf UNIX-basierten Plattformen.
 
 1. Öffnen Sie die Seite [AEM Forms PDF Generator Configuration](http://localhost:4502/libs/fd/pdfg/config/ui.html) .
 
@@ -551,7 +547,7 @@ Führen Sie die folgenden Schritte aus, um die Zertifikate zu konfigurieren:
 1. Wählen Sie auf der Seite **[!UICONTROL Benutzereinstellungen bearbeiten]** die Registerkarte **[!UICONTROL KeyStore]** aus. Erweitern Sie die Option **[!UICONTROL Privaten Schlüssel aus Key Store-Datei hinzufügen]** und geben Sie einen Alias an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
 1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **[!UICONTROL Select Key Store File]** (KeyStore-Datei auswählen) und laden Sie eine &lt;Dateiname>.pfx-Datei hoch.
 
-   Fügen Sie die Werte für **[!UICONTROL Key Store Password]** (KeyStore-Kennwort),**[!UICONTROL Private Key Password]** (Kennwort für privaten Schlüssel)  und **[!UICONTROL Private Key Alias]**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+   Fügen Sie die Werte für **[!UICONTROL Key Store Password]** (KeyStore-Kennwort),**[!UICONTROL Private Key Password]** (Kennwort für privaten Schlüssel)  und **[!UICONTROL Private Key Alias]**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **[!UICONTROL Senden]**.
 
    >[!NOTE]
    >
@@ -571,7 +567,7 @@ Der Assembler-Dienst hängt vom Reader Extension-Dienst, vom Signature-Dienst, v
 <table> 
  <tbody> 
   <tr> 
-   <th>Dienstname</th> 
+   <th>Service-Name</th> 
    <th>Bundle-Name</th> 
   </tr> 
   <tr> 

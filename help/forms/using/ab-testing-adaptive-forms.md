@@ -1,24 +1,24 @@
 ---
 title: Erstellen und Verwalten von A/B-Test für adaptive Formulare
-seo-title: Erstellen und Verwalten von A/B-Test für adaptive Formulare
+seo-title: Create and manage A/B test for adaptive forms
 description: AEM Forms kann mit Adobe Target integriert werden. Dies ermöglicht die Durchführung von A/B-Tests für adaptive Formulare, um das Kundenerlebnis und die Konvertierungsrate zu verbessern.
-seo-description: AEM Forms kann mit Adobe Target integriert werden. Dies ermöglicht die Durchführung von A/B-Tests für adaptive Formulare, um das Kundenerlebnis und die Konvertierungsrate zu verbessern.
+seo-description: AEM Forms integrates with Adobe Target that allows running A/B tests for adaptive forms to enhance customer experience and improve conversion rates.
 uuid: c41aea04-f4d9-41b9-b1a8-df2bb710354c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 exl-id: e330a8e8-4d55-4723-921b-812cb243f420
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 93%
+source-wordcount: '1544'
+ht-degree: 91%
 
 ---
 
 # Erstellen und Verwalten von A/B-Test für adaptive Formulare {#create-and-manage-a-b-test-for-adaptive-forms}
 
-## Überblick {#overview-br}
+## Übersicht {#overview-br}
 
 Ihre Kunden werden ein Formular wahrscheinlich verlassen, wenn sie nicht davon angesprochen fühlen. Für die Kunden ist dies ein frustrierendes Erlebnis. Für Ihr Unternehmen kann es zusätzlichen Supportaufwand und Mehrkosten bedeuten. Das Kundenerlebnis optimal zu gestalten und dadurch eine höhere Konvertierungsrate zu erzielen, ist absolut unverzichtbar und stellt zugleich eine große Herausforderung dar. Mit Adobe Experience Manager Forms erhalten Sie das entscheidende Werkzeug dafür.
 
@@ -26,17 +26,17 @@ AEM Forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert wer
 
 Mit AEM Forms können Sie A/B-Tests für adaptive Formulare in Echtzeit durchführen. Darüber hinaus stehen vordefinierte und vom Benutzer anpassbare Berichtsfunktionen zur Verfügung, mit denen Sie die Wirkung Ihrer Formulare in Echtzeit visualisieren und dasjenige identifizieren können, das das stärkste Interesse der Benutzer erweckt und in maximaler Konvertierung resultiert.
 
-## Target einrichten und in AEM Forms integrieren  {#set-up-and-integrate-target-in-aem-forms}
+## Target einrichten und in AEM Forms integrieren {#set-up-and-integrate-target-in-aem-forms}
 
 Bevor Sie mit der Erstellung und Analyse von A/B-Tests für adaptive Formulare beginnen, müssen Sie den Target-Server einrichten und in AEM Forms integrieren.
 
-### Target einrichten  {#set-up-target}
+### Target einrichten {#set-up-target}
 
 Wenn Sie AEM mit Target integrieren möchten, stellen Sie sicher, dass Sie über ein gültiges Adobe Target-Konto verfügen. Nach der Registrierung bei Adobe Target erhalten Sie einen Clientcode. Sie benötigen den Clientcode, die E-Mail-Adresse, die mit dem Target-Konto verknüpft sind, und das Kennwort, um AEM mit Target zu verbinden. 
 
-Der Clientcode identifiziert das Adobe Target-Kundenkonto und wird als Subdomäne in einer URL verwendet, wenn er über den Adobe Target-Server aufgerufen wird. Bevor Sie fortfahren, überprüfen Sie, ob Sie sich mit Ihren Anmeldedaten bei [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/) anmelden können.
+Der Clientcode identifiziert das Adobe Target-Kundenkonto und wird als Subdomäne in einer URL verwendet, wenn er über den Adobe Target-Server aufgerufen wird. Melden Sie sich vor dem Fortfahren bei [https://experience.adobe.com/](https://experience.adobe.com/) an und, falls Sie Zugriff haben, zeigen Sie die Option [!DNL Adobe Target] im Abschnitt [!UICONTROL Schnellzugriff] an.
 
-### Integration von Target in AEM Forms  {#integrate-target-in-aem-forms}
+### Integration von Target in AEM Forms {#integrate-target-in-aem-forms}
 
 Gehen Sie zur Integration eines laufenden Target-Servers in AEM Forms wie folgt vor:
 
@@ -76,8 +76,7 @@ Zusätzlich zum Jboss-Server können Sie das -Dabtesting.enabled=true jvm-Argume
 >
 >Wenn Sie die konfigurierten Target-URLs später aktualisieren, achten Sie darauf, etwaige laufende A/B-Tests ebenfalls zu aktualisieren, sodass sie auf die aktuellen URLs verweisen. Weitere Informationen zur Aktualisierung von A/B-Tests finden Sie unter [A/B-Test aktualisieren](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
 
-
-## Erstellen von Zielgruppen in AEM  {#create-audiences-within-aem}
+## Erstellen von Zielgruppen in AEM {#create-audiences-within-aem}
 
 Mit AEM können Sie eine Zielgruppe erstellen und für einen A/B-Test verwenden. Die Zielgruppe, die Sie in AEM erstellen, ist in AEM Forms verfügbar. Führen Sie die folgenden Schritte aus, um Zielgruppen in AEM zu erstellen:
 
@@ -94,7 +93,7 @@ Mit AEM können Sie eine Zielgruppe erstellen und für einen A/B-Test verwenden.
 
 Wie nachfolgend gezeigt, können Sie die Zielgruppe auswählen, wenn Sie A/B-Test für ein Formular konfigurieren.
 
-## A/B-Test erstellen  {#create-a-b-test}
+## A/B-Test erstellen {#create-a-b-test}
 
 Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives Formular zu erstellen.
 
@@ -116,7 +115,7 @@ Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives For
 
    * CSS oder Stil
    * Reihenfolge der Felder in verschiedenen Bereichen oder im selben Bereich
-   * Bedienfeldlayout
+   * Bereichslayout
    * Bereichsnamen
    * Beschreibung, Beschriftung und Hilfetext für ein Feld
    * Skripte, die den Ablauf beim Senden nicht stören oder ganz abbrechen
@@ -127,7 +126,7 @@ Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives For
 
 Ihr A/B-Test wird jetzt ausgeführt und die Formularvarianten mit ihren unterschiedlichen Kundenerlebnissen werden der angegebenen Zielgruppe in der festgelegten Verteilung nach dem Zufallsprinzip präsentiert.
 
-## A/B-Test aktualisieren  {#update-a-b-test}
+## A/B-Test aktualisieren {#update-a-b-test}
 
 Sie können die Zielgruppe und die Verteilung der Erlebnisse eines laufenden A/B-Tests aktualisieren. Gehen Sie dazu wie folgt vor:
 

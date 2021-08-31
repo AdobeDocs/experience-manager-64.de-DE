@@ -1,8 +1,8 @@
 ---
 title: Zu sichernde und wiederherzustellende Dateien
-seo-title: Zu sichernde und wiederherzustellende Dateien
+seo-title: Files to back up and recover
 description: Dieses Dokument beschreibt die Anwendungs- und Datendateien, die gesichert werden müssen.
-seo-description: Dieses Dokument beschreibt die Anwendungs- und Datendateien, die gesichert werden müssen.
+seo-description: This document describes the application and data files that must be backed up.
 uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2142'
 ht-degree: 89%
 
 ---
@@ -27,7 +27,7 @@ Berücksichtigen Sie folgende Punkte zu Sicherung und Wiederherstellung:
 * Wenn Sie die Knoten in einer Clusterumgebung zur Sicherung herunterfahren müssen, stellen Sie sicher, dass die sekundären Knoten vor dem primären Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem sollte der primäre Knoten vor jedem sekundären Knoten live geschaltet werden.
 * Für den Wiederherstellungsvorgang eines Clusters sollte der Anwendungsserver für jeden Knoten im Cluster angehalten werden.
 
-## Ordner des globalen Dokumentenspeichers  {#global-document-storage-directory}
+## Ordner des globalen Dokumentenspeichers {#global-document-storage-directory}
 
 Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Die Gültigkeitsdauer dauerhaft genutzter Dateien soll mehrere Starts eines AEM Forms-Systems betragen und kann Tage bis hin zu Jahren umfassen. Zu diesen Dateien zählen PDFs, Richtlinien und Formularvorlagen. Dauerhaft genutzte Dateien bilden einen wichtigen Teil des Gesamtstatus zahlreicher AEM Forms-Bereitstellungen. Wenn einige oder alle dauerhaft genutzten Dokumente verloren gehen oder beschädigt werden, kann der Formularserver instabil werden.
 
@@ -35,7 +35,7 @@ Eingabedokumente für den asynchronen Auftragsaufruf werden ebenfalls im globale
 
 Der Speicherort des globalen Dokumentenspeichers wird während des Installationsprozesses von AEM Forms oder später mithilfe von Administration Console festgelegt. Zusätzlich zur Beibehaltung eines Speicherorts für den GDS mit einer hohen Verfügbarkeit können Sie außerdem den Datenbankspeicher für Dokumente aktivieren. Siehe [Sicherungsoptionen, wenn die Datenbank für die Dokumentenspeicherung verwendet wird](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
-### Speicherort des globalen Dokumentenspeichers  {#gds-location}
+### Speicherort des globalen Dokumentenspeichers {#gds-location}
 
 Wenn Sie die Speicherorteinstellung bei der Installation leer lassen, wird als Speicherort standardmäßig ein Ordner im Installationsordner des Anwendungsservers gewählt. Sie müssen für Ihren Anwendungsserver den folgenden Ordner sichern:
 
@@ -52,13 +52,13 @@ In einer Clusterumgebung befindet sich der globale Dokumentenspeicher normalerwe
 
 Der Speicherort des globalen Dokumentenspeichers muss ggf. während einer Wiederherstellung geändert werden, wenn der ursprüngliche Speicherort nicht mehr verfügbar ist. (Siehe [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
-### Sicherungsoptionen, wenn die Datenbank für die Dokumentenspeicherung verwendet wird  {#backup-options-when-database-is-used-for-document-storage}
+### Sicherungsoptionen, wenn die Datenbank für die Dokumentenspeicherung verwendet wird {#backup-options-when-database-is-used-for-document-storage}
 
 Sie können mithilfe von Administration Console in der AEM Forms-Datenbank AEM Forms-Dokumentenspeicher aktivieren. Obwohl bei dieser Option alle permanenten Dokumente in der Datenbank erhalten bleiben, erfordert AEM Forms den dateisystembasierten GDS-Ordner, da dieser zum Speichern permanenter und temporärer Dateien und Ressourcen, die mit AEM Forms-Sitzungen und -Aufrufen zusammenhängen, verwendet wird.
 
 Wenn Sie die Option „Dokumentspeicher in der Datenbank aktivieren“ in den Core-Systemeinstellungen in Administration Console wählen oder Configuration Manager verwenden, sind in AEM Forms der Snapshot-Sicherungsmodus und der kontinuierliche Sicherungsmodus nicht zulässig. Daher ist keine Verwaltung von Sicherungsmodi erforderlich, wenn Sie AEM Forms verwenden. Wenn Sie diese Option verwenden, sollten Sie den globalen Dokumentenspeicher nur sichern, nachdem Sie die Option aktiviert haben. Wenn Sie AEM Forms aus einer Sicherung wiederherstellen, müssen Sie den Sicherungsordner für den GDS nicht umbenennen oder wiederherzustellen.
 
-## AEM-Repository  {#aem-repository}
+## AEM-Repository {#aem-repository}
 
 AEM-Repository (CRX-Repository) wird erstellt, wenn CRX-Repository bei der Installation von AEM Forms konfiguriert wurde. Der Speicherort des CRX-Repository-Ordners wird während des Installationsprozesses von AEM Forms bestimmt. Das Sichern und Wiederherstellen des AEM-Repository zusammen mit Datenbank und GDS ist für konsistente AEM Forms-Daten in AEM Forms erforderlich. AEM-Repository enthält Daten für Correspondence Management Solution, Forms Manager und AEM Forms Workspace.
 
@@ -68,11 +68,11 @@ Mit der Correspondence Management Solution lässt sich die Generierung, Zusammen
 
 Zu einem einfachen Setup der Correspondence Management Solution gehört eine Autorinstanz und eine Veröffentlichungsinstanz auf demselben Computer oder auf verschiedenen Computern.
 
-### Forms Manager  {#forms-manager}
+### Forms Manager {#forms-manager}
 
 Forms Manager optimiert den Prozess zur Aktualisierung, Verwaltung und Zurücknahme von Formularen.
 
-### Arbeitsablauf in AEM Forms  {#html-workspace}
+### Arbeitsablauf in AEM Forms {#html-workspace}
 
 AEM Forms Workspace entspricht dem Funktionsumfang von Flex Workspace (für AEM Forms on JEE nicht mehr unterstützt). Es verfügt zusätzlich über neue Funktionen zur Erweiterung und Integration von Workspace und macht die Anwendung so benutzerfreundlicher.
 
@@ -82,7 +82,7 @@ AEM Forms Workspace entspricht dem Funktionsumfang von Flex Workspace (für AEM 
 
 Dies ermöglicht die Aufgabenverwaltung auf Clients ohne Flash Player und Adobe Reader. So wird die Wiedergabe von HTML-Formularen zusätzlich zu PDF- und Flex-Formularen erleichtert.
 
-## AEM Forms-Datenbank  {#aem-forms-database}
+## AEM Forms-Datenbank {#aem-forms-database}
 
 In der AEM Forms-Datenbank werden Inhalte wie Formularartefakte, Dienstkonfigurationen, Prozesszustände und Datenbankverweise auf Dateien im Ordner des globalen Dokumentenspeichers und im Stammordner für Inhalte (für Content Services) gespeichert. Datenbanksicherungen können in Echtzeit und ohne Dienstunterbrechung und Wiederherstellungen bezogen auf einen bestimmten Zeitpunkt oder eine bestimmte Änderung erfolgen. In diesem Abschnitt wird beschrieben, wie die Datenbank für eine Sicherung in Echtzeit konfiguriert werden muss.
 
@@ -92,7 +92,7 @@ Um die Datenbank in Echtzeit zu sichern, müssen Sie den Snapshot-Modus wählen 
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -104,7 +104,7 @@ Konfigurieren Sie DB2-Datenbank für die Ausführung im Archivprotokollmodus.
 
 IBM bietet eine Zusammenstellung von Werkzeugen und Hilfesystemen an, die Datenbankadministratoren bei der Verwaltung von Sicherungs- und Wiederherstellungsaufgaben unterstützt:
 
-* IBM DB2 Archive Log Accelerator (siehe [IBM DB2 Archive Log Accelerator for z/OS User&#39;s Guide](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true).)
+* IBM DB2 Archive Log Accelerator
 * IBM DB2 Data Archive expert (siehe [IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
 
 DB2 verfügt über integrierte Funktionen zum Sichern einer Datenbank in Tivoli Storage Manager. Durch die Verwendung von Tivoli Storage Manager können DB2-Sicherungen auf anderen Medien oder den lokalen Festplattenlaufwerken gespeichert werden.
@@ -121,7 +121,7 @@ Verwenden Sie Snapshot-Sicherungen oder konfigurieren Sie Ihre Oracle-Datenbank 
 
 [Oracle Database Backup and Recovery Reference:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Bietet ausführliche Informationen zur Syntax und Semantik aller RMAN-Befehle und beschreibt die Datenbankansichten, die für die Erstellung von Berichten zu Sicherungs- und Wiederherstellungsaktionen zur Verfügung stehen.
 
-### SQL Server  {#sql-server}
+### SQL Server {#sql-server}
 
 Verwenden Sie Snapshot-Sicherungen oder konfigurieren Sie Ihre SQL Server-Datenbank für die Ausführung im Transaktionsprotokollmodus.
 
@@ -151,11 +151,11 @@ binlog_format=mixed
 log-bin=logname
 ```
 
-## Stammordner für Inhalte (nur Content Services)  {#content-storage-root-directory-content-services-only}
+## Stammordner für Inhalte (nur Content Services) {#content-storage-root-directory-content-services-only}
 
 Der Stammordner für Inhalte enthält das Repository für Content Services (nicht mehr unterstützt), in dem alle Dokumente, Artefakte und Indizes gespeichert werden. Die Struktur des Stammordners für Inhalte muss gesichert werden. In diesem Abschnitt wird beschrieben, wie der Speicherort des Stammordners für Inhalte für eigenständige und Clusterumgebungen bestimmt wird.
 
-### Speicherort des Stammordners für Inhalte (eigenständige Umgebung)  {#content-storage-root-location-stand-alone-environment}
+### Speicherort des Stammordners für Inhalte (eigenständige Umgebung) {#content-storage-root-location-stand-alone-environment}
 
 Der Stammordner für Inhalte wird bei der Installation von Content Services (nicht mehr unterstützt) erstellt. Der Speicherort des Stammordners für Inhalte wird während des Installationsprozesses von AEM Forms bestimmt.
 
@@ -173,7 +173,7 @@ Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
 Wenn der Ordner „/backup-lucene-indexes“ nicht vorhanden ist, sichern Sie den Ordner „/lucene-indexes“ (ebenfalls im Stammordner für Inhalte). Wenn der Ordner „/backup-lucene-indexes“ vorhanden ist, sichern Sie nicht den Ordner „/lucene-indexes“, weil dies zu Fehlern führen kann.
 
-### Speicherort des Stammordners für Inhalte (Clusterumgebung)  {#content-storage-root-location-clustered-environment}
+### Speicherort des Stammordners für Inhalte (Clusterumgebung) {#content-storage-root-location-clustered-environment}
 
 Bei der Installation von Content Services (nicht mehr unterstützt) in einer Clusterumgebung wird der Stammordner für Inhalte in zwei gesonderte Ordner aufgeteilt:
 

@@ -1,24 +1,24 @@
 ---
 title: Best Practices für die Arbeit mit adaptiven Formularen
-seo-title: Best Practices für die Arbeit mit adaptiven Formularen
+seo-title: Best practices for working with adaptive forms
 description: Das Dokument erläutert bewährte Verfahren zur Einrichtung eines AEM Forms-Projekts, zum Entwickeln adaptiver Formulare und zur Optimierung der Leistung für AEM Forms-Systeme.
-seo-description: Das Dokument erläutert bewährte Verfahren zur Einrichtung eines AEM Forms-Projekts, zum Entwickeln adaptiver Formulare und zur Optimierung der Leistung für AEM Forms-Systeme.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 83%
 
 ---
 
 # Best Practices für die Arbeit mit adaptiven Formularen {#best-practices-for-working-with-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Allerdings bedarf es gemeinsamer Anstrengungen, ein effizientes und produktives AEM Forms-System zu implementieren, zu erstellen, auszuführen und zu warten.
 
@@ -48,14 +48,14 @@ Weitere Informationen finden Sie unter[ Erstellen von AEM-Projekten mit Apache M
 
 * Wenn Sie die Eclipse-integrierte Entwicklungsumgebung für Eclipse verwenden, können Sie AEM-Developer Tools für eine nahtlose Integration der Eclipse IDE mit AEM-Instanzen verwenden und AEM-Apps erstellen. Weitere Informationen finden Sie unter[ AEM-Developer Tools für Eclipse](/help/sites-developing/aem-eclipse.md).
 
-### Planen der Authoring-Umgebung  {#planning-for-authoring-environment}
+### Planen der Authoring-Umgebung {#planning-for-authoring-environment}
 
 Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie für das Erstellen und Anpassen von Vorlagen für adaptive Formulare und Komponenten.
 
 * Eine adaptive Formularvorlage ist eine spezielle AEM-Seite, die Struktur und die Informationen für Kopfzeile und Fußzeile eines adaptiven Formulars definiert. Eine Vorlage hat vorkonfigurierte Layouts, Stile und eine einfache Struktur für ein adaptives Formular. AEM Forms bietet Standardvorlagen und -Komponenten, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie haben jedoch die Möglichkeit, benutzerdefinierte Vorlagen und Komponenten entsprechend Ihrer Anforderungen zu erstellen. Es wird empfohlen, Anforderungen für zusätzliche Vorlagen und Komponenten zu erfassen, die Sie in Ihren adaptiven Formularen benötigen. Weitere Informationen finden Sie unter[ Anpassen von adaptiven Formularen und Komponenten](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * Mit AEM Forms können Sie adaptive Formulare erstellen, die auf den folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und einem AEM-System und liefern eine XML-basierte Struktur für Datenfluss innerhalb und außerhalb eines adaptiven Formulars. Die Formularmodelle legen die Regeln und Beschränkungen für adaptive Formulare in dem Formular von Schema- und XFA-Beschränkungen fest.
 
-   * **Ohne**: Die adaptiven Formulare, die mit dieser Option erstellt worden sind, verwenden kein Datenmodell. Die XML-Datendatei, die aus diesen Formularen generiert wurde, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+   * **Ohne**: Die adaptiven Formulare, die mit dieser Option erstellt worden sind, verwenden kein Datenmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
    * **XML- oder JSON-Schema**: XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dessen Elemente verwenden, um dem adaptiven Formular dynamischen Inhalt hinzuzufügen. Die Elemente des Schemas sind auf der Registerkarte &quot;Datenmodellobjekt&quot;des Inhaltsbrowsers für das Authoring adaptiver Formulare verfügbar. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
    * **XFA-Formularvorlage**: Es ist ein optimales Datenmodell, wenn Sie Investitionen in XFA-basierten HTML5-Formularen haben. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln werden in den zugehörigen adaptiven Formularen beibehalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
    * **Formulardatenmodell**: Es ist ein bevorzugtes Formularmodell, wenn Sie Ihre Backend-Systeme wie Datenbanken, Webdienste und AEM Benutzerprofil integrieren möchten, um adaptive Formulare vorab auszufüllen und gesendete Formulardaten zurück in die Backend-Systeme zu schreiben. Verwendung eines Formulardatenmodells Datenintegration ermöglicht die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
@@ -98,7 +98,7 @@ Weitere Informationen finden Sie unter[ Erstellen eines adaptiven Formulars](/he
 
 Weitere Informationen finden Sie außerdem in „Komponentenbeschreibungen und optimale Verfahren“ in [Einführung zum Erstellen adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
 
-### Verwenden von Regeln in adaptiven Formularen  {#using-rules-in-adaptive-forms}
+### Verwenden von Regeln in adaptiven Formularen {#using-rules-in-adaptive-forms}
 
 AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es Ihnen ermöglicht, Regeln zu erstellen, um dynamisches Verhalten zu adaptiven Formularkomponenten hinzuzufügen. Mithilfe dieser Regeln können Sie Bedingungen und Komponentenaktionen auswerten, z. B. Trigger ein- oder ausblenden, Werte berechnen, Dropdown-Listen dynamisch ändern usw.
 
@@ -112,7 +112,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor für Schreib
 * Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`.
 
 * Wenn Sie komplexe oder häufig verwendete Regeln verarbeiten, sollten Sie in Erwägung ziehen, Geschäftslogik als Funktionen in einer separaten Client-Bibliothek zu schreiben, die Sie über adaptive Formulare hinweg angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können die Client-Bibliothek auch verwenden, um die [serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der gesendeten Formulardaten zu erzwingen.
-* Adaptive Formulare bieten eine Reihe von APIs, die Sie verwenden können, um zu kommunizieren und Aktionen auf adaptiven Formularen anzuzeigen. Einige Schlüssel-APIs lauten wie folgt: Weitere Informationen finden Sie unter[ JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63).
+* Adaptive Formulare bieten eine Reihe von APIs, die Sie verwenden können, um zu kommunizieren und Aktionen auf adaptiven Formularen anzuzeigen. Einige Schlüssel-APIs lauten wie folgt: Weitere Informationen finden Sie unter[ JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63_de).
 
    * `guideBridge.reset()`: Setzt ein Formular zurück.
    * `guideBridge.submit()`: Sendet ein Formular.
@@ -140,9 +140,9 @@ Mit „Adaptive für Designs“ können Sie wiederverwendbare Stile erstellen, d
 * Sie können Stile für bestimmte Felder, Bereiche oder Schaltflächen in einer Formularstilebene außer Kraft setzen. 
 * Wenn ein Design nicht die Formatierungsanforderungen erfüllt, können Sie vordefinierte Klassen wie guideFieldNode, guideFieldLabel, guideFieldWidget und guidePanelNode verwenden, um häufige Stile auf allen Formularen anzuwenden.
 
-Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/themes.md).
+Weitere Informationen finden Sie unter [Designs](/help/forms/using/themes.md).
 
-### Optimieren der Leistung von großen und komplexen Formularen  {#optimizing-performance-of-large-and-complex-forms}
+### Optimieren der Leistung von großen und komplexen Formularen {#optimizing-performance-of-large-and-complex-forms}
 
 Formularverfasser und Benutzer werden normalerweise mit Leistungsproblemen konfrontiert, wenn große Formulare im Bearbeitungsmodus oder zur Laufzeit geladen werden. Wenn die Anzahl der Objekte (Felder und Bereiche) in den Formularen zunimmt, nimmt die Authoring- und Laufzeiterfahrung ab. Es wird außerdem verhindert, dass mehrere Autoren gleichzeitig zusammenzuarbeiten und ein Formular zusammen bearbeiten.
 
@@ -159,11 +159,11 @@ Beachten Sie die folgenden bewährten Verfahren, um, Leistungsprobleme mit groß
 * Konfigurieren Sie Fragmente, um sie verzögert zu laden. Fragmente, die zur Laufzeit als „Verzögert laden“ markiert sind, werden nur gerendert, wenn sie erforderlich sind. Die Ladezeit für große Formulare wird dadurch erheblich reduziert. Es wird außerdem in Fragmenten mit wiederholbaren Bereichen unterstützt. Weitere Informationen finden Sie unter [ Konfigurieren von verzögertem Laden](/help/forms/using/lazy-loading-adaptive-forms.md).
 
    * Konfigurieren Sie kein verzögertes Laden in Fragmenten in einem Responsive-Rasterlayout oder in dem ersten Bereich.
-   * In verzögert geladenen Fragmenten werden keine Komponenten für Dateianlagen und Geschäftsbedingungen unterstützt.
+   * In verzögert geladenen Fragmenten werden keine Komponenten für Dateianhänge und Geschäftsbedingungen unterstützt.
    * Markieren Sie einen Wert in einem verzögerten geladenen Bereich als „Wert global verwenden“, wenn dieser Wert in einem anderen Teil des Formulars verwendet wird, sodass der Wert für die Verwendung verfügbar ist, wenn der enthaltene Bereich entladen wird.
    * Erwägen Sie, Sichtbarkeitsregeln für Fragmente zu erstellen, die basierend auf einer Bedingung ein- bzw. ausgeblendet werden sollen.
 
-### Vorbefüllen von adaptiven Formularen  {#prefilling-adaptive-forms}
+### Vorbefüllen von adaptiven Formularen {#prefilling-adaptive-forms}
 
 Sie können adaptive Formularfelder mit Daten aus dem Backend vorbefüllen, um Benutzern zu helfen, das Formular schnell auszufüllen und Tippfehler zu vermeiden.
 
@@ -191,7 +191,7 @@ Sie können die Funktion der mehrfachen Signaturen von Adobe Sign in adaptiven F
 * Sie können die Funktion des Unterzeichnens im Formular konfigurieren oder Unterzeichner auf eine neue Signaturseite beim Senden umleiten.
 * Konfigurieren Sie je nach Bedarf sequentielle oder parallele Signaturfunktionen.
 
-### Generieren von Dokument aus Datensatz  {#generating-document-of-record}
+### Generieren von Dokument aus Datensatz {#generating-document-of-record}
 
 Ein Dokument aus Datensatz (DoR) ist eine komprimierte PDF-Version eines adaptiven Formulars, die gedruckt, signiert oder archiviert werden kann.
 
@@ -229,14 +229,14 @@ Calvin SDK ist eine Dienstprogramm-API für Entwickler von adaptiven Formularen 
 
 Weitere Informationen finden Sie unter[ Automatisieren von Tests für adaptive Formulare](/help/forms/using/calvin.md).
 
-### Validieren von adaptiven Formularen auf dem AEM-Server  {#validating-adaptive-forms-on-aem-server}
+### Validieren von adaptiven Formularen auf dem AEM-Server {#validating-adaptive-forms-on-aem-server}
 
 Serverseitige Überprüfungen sind erforderlich, um alle Versuche zu verhindern, die Überprüfungen auf dem Client und mögliche Gefahren von Datenübertragungen und Verletzungen von Geschäftsregeln umgehen wollen. Serverseitige Überprüfungen werden auf dem Server ausgeführt, indem die erforderliche Client-Bibliothek geladen wird.
 
 * Schließen Sie Funktionen in einer Client-Bibliothek für die Validierung von Ausdrücken in adaptiven Formularen ein und legen Sie die Client-Bibliothek im Dialogfeld von adaptiven Formularcontainern fest. Weitere Informationen finden Sie unter[ Serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
-* Serverseitige Überprüfung überprüft das Formularmodell. Es wird empfohlen, eine separate Client-Bibliothek für Überprüfungen zu erstellen und sie nicht mit anderen Elementen wie HTML-Stil und DOM-Manipulation in derselben Client-Bibliothek zu mischen.
+* Die Server-seitige Validierung prüft das Formularmodell. Es wird empfohlen, eine separate Client-Bibliothek für Überprüfungen zu erstellen und sie nicht mit anderen Elementen wie HTML-Stil und DOM-Manipulation in derselben Client-Bibliothek zu mischen.
 
-### Lokalisieren von adaptiven Formularen  {#localizing-adaptive-forms}
+### Lokalisieren von adaptiven Formularen {#localizing-adaptive-forms}
 
 AEM bietet Übersetzungsarbeitsläufe, die Sie zur Lokalisierung adaptiver Formulare verwenden können. Siehe [Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
@@ -250,7 +250,7 @@ Einige empfohlene Vorgehensweisen beim Lokalisieren adaptiver Formulare lauten w
 
 * AEM Forms unterstützt derzeit die Lokalisierung von Inhalten für adaptive Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können jedoch neuen Support für neue Gebietsschemata für adaptive Formulare zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](/help/forms/using/supporting-new-language-localization.md).
 
-## Vorbereiten von Formularprojekten für die Produktion  {#prepare-forms-project-for-production}
+## Vorbereiten von Formularprojekten für die Produktion {#prepare-forms-project-for-production}
 
 ### Hinzufügen eines Formularverarbeitungsservers {#adding-forms-processing-server}
 
@@ -259,7 +259,7 @@ Sie können eine weitere Instanz des AEM-Forms-Servers konfigurieren, der sich h
 * **Stapelverarbeitung**: Aufträge, die in Batches mit hoher Auslastung wiederkehren oder geplant sind. Beispielsweise das Drucken von Anweisungen, das Generieren von Schriftstücken und die Verwendung von Dokumentdiensten wie PDF Generator, Output und Assembler.
 * **Speichern von PII-Daten**: Speichern Sie PII-Daten auf dem Verarbeitungsserver. Es ist nicht erforderlich, wenn Sie bereits benutzerdefinierte Speicheranbieter zum Speichern von PII-Daten verwenden.
 
-### Verschieben eines Projekts in eine andere Umgebung  {#moving-project-to-another-environment}
+### Verschieben eines Projekts in eine andere Umgebung {#moving-project-to-another-environment}
 
 Oft müssen Sie AEM-Projekte aus einer Umgebung in eine andere verschieben. Einige der wichtigsten Aspekte beim Verschieben lauten wie folgt:
 
@@ -269,11 +269,11 @@ Oft müssen Sie AEM-Projekte aus einer Umgebung in eine andere verschieben. Eini
 * (*Nur AEM Forms on JEE*) Stellen Sie LCAs und DSCs manuell auf dem Forms Workflow-Server bereit.
 * Verwenden Sie[ Export-Import](/help/forms/using/import-export-forms-templates.md)-Funktionen, um Elemente in die neue Umgebung zu verschieben. Sie können auch den Replizierungsagenten konfigurieren und Assets veröffentlichen.
 
-### Konfigurieren von AEM  {#configuring-aem}
+### Konfigurieren von AEM {#configuring-aem}
 
 Im Folgenden werden einige bewährte Verfahren zum Konfigurieren von AEM zur Verbesserung der Gesamtleistung gezeigt:
 
-* Aktivieren Sie HTML-Client-Bibliothekskomprimierung für JavaScript und CSS-Code aus der Felix-Konsole. Siehe [Clientlibs, erklärt durch Beispiel](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Aktivieren Sie HTML-Client-Bibliothekskomprimierung für JavaScript und CSS-Code aus der Felix-Konsole.
 * Zwischenspeichern Sie alle Client-Bibliotheken unter `/etc.clientlibs/fd` und alle zusätzlichen benutzerdefinierten Client-Bibliotheken auf AEM Dispatcher, um die Reaktionsfähigkeit und Sicherheit Ihrer veröffentlichten Formulare zu erhöhen. Weitere Informationen finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
 * Zwischenspeichern Sie die Pfade `/content/forms/af/` und `/content/dam/formsanddocuments/*` nicht. Detaillierte Informationen zum Konfigurieren der Zwischenspeicherung adaptiver Formulare finden Sie unter [Zwischenspeichern adaptiver Formulare](/help/forms/using/configure-adaptive-forms-cache.md).

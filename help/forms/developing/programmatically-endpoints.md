@@ -1,8 +1,8 @@
 ---
 title: Programmgesteuertes Verwalten von Endpunkten
-seo-title: Programmgesteuertes Verwalten von Endpunkten
+seo-title: Programmatically Managing Endpoints
 description: Verwenden Sie den Dienst "Endpoint Registry", um EJB-Endpunkte hinzuzufügen, SOAP-Endpunkte hinzuzufügen, Endpunkte für überwachte Ordner hinzuzufügen, E-Mail-Endpunkte hinzuzufügen, Remoting-Endpunkte hinzuzufügen, Task Manager-Endpunkte hinzuzufügen, Endpunkte zu ändern, Endpunkte zu entfernen und Endpunkt-Connector-Informationen abzurufen.
-seo-description: Verwenden Sie den Dienst "Endpoint Registry", um EJB-Endpunkte hinzuzufügen, SOAP-Endpunkte hinzuzufügen, Endpunkte für überwachte Ordner hinzuzufügen, E-Mail-Endpunkte hinzuzufügen, Remoting-Endpunkte hinzuzufügen, Task Manager-Endpunkte hinzuzufügen, Endpunkte zu ändern, Endpunkte zu entfernen und Endpunkt-Connector-Informationen abzurufen.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10849'
+source-wordcount: '10791'
 ht-degree: 6%
 
 ---
@@ -221,7 +221,7 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wen
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Fügen Sie mithilfe der Java-API {#add-a-soap-endpoint-using-the-java-api} einen SOAP-Endpunkt hinzu.
+### Hinzufügen eines SOAP-Endpunkts mithilfe der Java-API {#add-a-soap-endpoint-using-the-java-api}
 
 Fügen Sie mithilfe der Java-API einen SOAP-Endpunkt zu einem Dienst hinzu:
 
@@ -261,7 +261,7 @@ Fügen Sie mithilfe der Java-API einen SOAP-Endpunkt zu einem Dienst hinzu:
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Hinzufügen von Endpunkten für überwachte Ordner {#adding-watched-folder-endpoints}
+## Endpunkte für überwachte Ordner hinzufügen {#adding-watched-folder-endpoints}
 
 Sie können einen Endpunkt des Typs &quot;Überwachter Ordner&quot;mithilfe der AEM Forms Java-API programmgesteuert zu einem Dienst hinzufügen. Durch Hinzufügen eines Endpunkts des Typs &quot;Überwachter Ordner&quot;können Benutzer eine Datei (z. B. eine PDF-Datei) in einem Ordner ablegen. Wenn die Datei im Ordner abgelegt wird, wird der konfigurierte Dienst aufgerufen und die Datei bearbeitet. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei in einem angegebenen Ausgabeordner gespeichert. Ein überwachter Ordner ist so konfiguriert, dass er in einem festen Zeitintervall oder mit einem Cron-Zeitplan gescannt wird, z. B. jeden Montag, Mittwoch und Freitag um Mittag.
 
@@ -323,7 +323,7 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 
 * **url**: Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss dieser Wert auf einen freigegebenen Netzwerkordner verweisen, auf den von jedem Computer im Cluster zugegriffen werden kann.
 * **asynchron**: Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
-* **cronExpression**: Wird von Quarz verwendet, um die Abfrage des Eingabeordners zu planen. Weitere Informationen zum Konfigurieren des Cron-Ausdrucks finden Sie unter [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
+* **cronExpression**: Wird von Quarz verwendet, um die Abfrage des Eingabeordners zu planen.
 * **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden gelöscht, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **repeatInterval**: Das Intervall (in Sekunden) zum Überprüfen des überwachten Ordners auf Eingabe. Sofern &quot;Einschränken&quot;nicht aktiviert ist, sollte dieser Wert länger sein als die Verarbeitungszeit für einen durchschnittlichen Auftrag. Andernfalls kann das System überlastet werden. Der Standardwert ist 5.
 * **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder Ordner überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
@@ -634,7 +634,7 @@ Nachdem Sie einen E-Mail-Endpunkt erstellt haben, müssen Sie ihn aktivieren. We
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Fügen Sie mithilfe der Java-API {#add-an-email-endpoint-using-the-java-api} einen E-Mail-Endpunkt hinzu.
+### Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API {#add-an-email-endpoint-using-the-java-api}
 
 Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
@@ -706,7 +706,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Konfigurationswerte für E-Mail Konstante Datei {#email-configuration-values-constant-file}
+### Konfigurationswerte für E-Mails - Konstante Datei {#email-configuration-values-constant-file}
 
 Der [QuickStart: Beim Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die Teil Ihres Java-Projekts sein muss, um den Schnellstart zu kompilieren. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines E-Mail-Endpunkts festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
 
@@ -819,7 +819,7 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wen
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Fügen Sie einen Remoting-Endpunkt mit der Java-API {#add-a-remoting-endpoint-using-the-java-api} hinzu.
+### Hinzufügen eines Remoting-Endpunkts mithilfe der Java-API {#add-a-remoting-endpoint-using-the-java-api}
 
 Fügen Sie mithilfe der Java-API einen Remoting-Endpunkt hinzu:
 
@@ -930,7 +930,7 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wen
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Fügen Sie mithilfe der Java-API {#add-a-taskmanager-endpoint-using-the-java-api} einen TaskManager-Endpunkt hinzu.
+### Hinzufügen eines TaskManager-Endpunkts mithilfe der Java-API {#add-a-taskmanager-endpoint-using-the-java-api}
 
 Fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
 
@@ -1042,7 +1042,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ändern eines Endpunkts mithilfe der Java-API {#modifying-an-endpoint-using-the-java-api}
+### Ändern eines Endpunkts mit der Java-API {#modifying-an-endpoint-using-the-java-api}
 
 Ändern Sie einen Endpunkt mithilfe der Java-API:
 
@@ -1233,7 +1233,7 @@ Nachdem Sie den Connector-Typ angegeben haben, können Sie Informationen zum Con
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Abrufen von Endpunkt-Connector-Informationen mit der Java-API {#retrieve-endpoint-connector-information-using-the-java-api}
+### Abrufen von Endpunkt-Connector-Informationen mithilfe der Java-API {#retrieve-endpoint-connector-information-using-the-java-api}
 
 Rufen Sie Endpunkt-Connector-Informationen mithilfe der Java-API ab:
 

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms mit Web Services aufrufen
-seo-title: AEM Forms mit Web Services aufrufen
+seo-title: Invoking AEM Forms using Web Services
 description: Rufen Sie AEM Forms-Prozesse mithilfe von Webdiensten mit vollständiger Unterstützung für die WSDL-Generierung auf.
-seo-description: Rufen Sie AEM Forms-Prozesse mithilfe von Webdiensten mit vollständiger Unterstützung für die WSDL-Generierung auf.
+seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: cd4b5e40-afd5-422d-ae2e-cfde0f4d6b1a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10008'
+source-wordcount: '9928'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ AEM Forms unterstützt die folgenden Webdienststandards:
 * **MTOM**: Stellt eine Möglichkeit dar, Anlagen mit SOAP-Anforderungen zu kodieren. (Siehe [AEM Forms mit MTOM](#invoking-aem-forms-using-mtom) aufrufen.)
 * **SwaRef**: Stellt eine andere Möglichkeit dar, Anlagen mit SOAP-Anforderungen zu kodieren. (Siehe [AEM Forms mithilfe von SwaRef](#invoking-aem-forms-using-swaref) aufrufen.)
 * **SOAP mit Anhängen**: Unterstützt sowohl MIME als auch DIME (Direct Internet Message Encapulation). Diese Protokolle sind Standardmethoden zum Senden von Anhängen über SOAP. Microsoft Visual Studio .NET-Anwendungen verwenden DIME. (Siehe [AEM Forms mit Base64-Codierung aufrufen](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Sicherheit**: Unterstützt ein Benutzernamenkennwort-Token-Profil, das eine Standardmethode zum Senden von Benutzernamen und Passwörtern als Teil der SOAP-Kopfzeile von WS-Sicherheit darstellt. AEM Forms unterstützt auch die einfache HTTP-Authentifizierung. (Siehe [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Headern](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html).)
+* **WS-Sicherheit**: Unterstützt ein Benutzernamenkennwort-Token-Profil, das eine Standardmethode zum Senden von Benutzernamen und Passwörtern als Teil der SOAP-Kopfzeile von WS-Sicherheit darstellt. AEM Forms unterstützt auch die einfache HTTP-Authentifizierung.
 
 Um AEM Forms-Dienste mit einem Webdienst aufzurufen, erstellen Sie normalerweise eine Proxy-Bibliothek, die die Dienst-WSDL verwendet. Der Abschnitt *AEM Forms mit Web Services* aufrufen verwendet JAX-WS, um Java-Proxyklassen zum Aufrufen von Diensten zu erstellen. (Siehe [Erstellen von Java-Proxy-Klassen mit JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -45,7 +45,7 @@ Sie können einen Dienst-WDSL abrufen, indem Sie die folgende URL-Definition ang
  https://<your_serverhost>:<your_port>/soap/services/<service_name>?wsdl[&version=<version>][&async=true|false][lc_version=<lc_version>]
 ```
 
-hierbei gilt:
+Hierbei gilt:
 
 * *your_* serverhostrestellt die IP-Adresse des J2EE-Anwendungsservers dar, auf dem AEM Forms gehostet wird.
 * *Ihr_* stellt den HTTP-Anschluss dar, den der J2EE-Anwendungsserver verwendet.
@@ -347,19 +347,11 @@ In der folgenden Tabelle sind die Java-Datentypen und der entsprechende Webdiens
  </tbody> 
 </table>
 
-**Website für Adobe-Entwickler**
-
-Die Adobe Developer-Website enthält den folgenden Artikel, der den Aufruf von AEM Forms-Diensten mithilfe der Webdienst-API behandelt:
-
-[Erstellen von Formular-Rendering-ASP.NET-Anwendungen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
-
-[Aufrufen von Webdiensten mit benutzerdefinierten Komponenten](https://www.adobe.com/devnet/livecycle/articles/extend_webservices.html)
-
 >[!NOTE]
 >
 >Unter Aufrufen von Webdiensten mit benutzerdefinierten Komponenten wird beschrieben, wie Sie eine AEM Forms-Komponente erstellen, die Webdienste von Drittanbietern aufruft.
 
-## Erstellen von Java-Proxy-Klassen mithilfe von JAX-WS {#creating-java-proxy-classes-using-jax-ws}
+## Erstellen von Java-Proxyklassen mithilfe von JAX-WS {#creating-java-proxy-classes-using-jax-ws}
 
 Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxyklassen zu konvertieren. Diese Klassen ermöglichen es Ihnen, AEM Forms-Dienstvorgänge aufzurufen. Mit Apache Ant können Sie ein Build-Skript erstellen, das Java-Proxy-Klassen generiert, indem Sie auf eine AEM Forms-Dienst-WSDL verweisen. Sie können JAX-WS-Proxy-Dateien generieren, indem Sie die folgenden Schritte ausführen:
 
@@ -485,7 +477,7 @@ Sie können Java-Bibliotheksdateien für Axis generieren, indem Sie die folgende
    * Fügen Sie den Ordner bin zu Ihrem Klassenpfad hinzu.
    * Legen Sie die Umgebungsvariable `ANT_HOME` auf den Ordner fest, in dem Sie Ant installiert haben.
 
-1. Installieren Sie Apache Axis 1.4 auf dem Clientcomputer. Sie ist unter [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md) verfügbar.
+1. Installieren Sie Apache Axis 1.4 auf dem Clientcomputer. Sie ist unter [https://ws.apache.org/axis/](https://ws.apache.org/axis/) verfügbar.
 1. Richten Sie den Klassenpfad ein, um die Axis JAR-Dateien in Ihrem Webdienst-Client zu verwenden, wie in den Anweisungen zur Axis-Installation unter [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html) beschrieben.
 1. Verwenden Sie das Apache WSDL2Java-Tool in Axis, um Java-Proxy-Klassen zu generieren. Erstellen Sie ein Ant-Build-Skript, um diese Aufgabe durchzuführen. Das folgende Skript ist ein Beispiel für ein Ant-Build-Skript namens &quot;build.xml&quot;:
 
@@ -574,7 +566,7 @@ Sie können Java-Bibliotheksdateien für Axis generieren, indem Sie die folgende
 
 [Aufrufen von AEM Forms mithilfe von BLOB-Daten über HTTP](#invoking-aem-forms-using-blob-data-over-http)
 
-## Aufrufen von AEM Forms mit Base64-Kodierung {#invoking-aem-forms-using-base64-encoding}
+## Aufrufen von AEM Forms mit der Base64-Kodierung {#invoking-aem-forms-using-base64-encoding}
 
 Sie können einen AEM Forms-Dienst mit der Base64-Kodierung aufrufen. Base64-Kodierung kodiert Anlagen, die mit einer Webdienstaufrufanforderung gesendet werden. Das heißt, die `BLOB`-Daten sind Base64-kodiert, nicht die gesamte SOAP-Nachricht.
 
@@ -589,7 +581,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 1. Ruft das ungesicherte PDF-Dokument ab, das an den Prozess übergeben wird. Diese Aktion basiert auf dem Vorgang `SetValue`. Der Eingangsparameter für diesen Prozess ist eine `document`-Prozessvariable mit dem Namen `inDoc`.
 1. Sie verschlüsselt das PDF-Dokument mit einem Kennwort. Diese Aktion basiert auf dem Vorgang `PasswordEncryptPDF`. Das kennwortverschlüsselte PDF-Dokument wird in einer Prozessvariablen namens `outDoc` zurückgegeben.
 
-### Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung {#creating-a-net-client-assembly-that-uses-base64-encoding} verwendet
+### Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung verwendet {#creating-a-net-client-assembly-that-uses-base64-encoding}
 
 Sie können eine .NET-Client-Assembly erstellen, um einen Forms-Dienst aus einem Microsoft Visual Studio .NET-Projekt aufzurufen. Führen Sie die folgenden Schritte aus, um eine .NET-Client-Assembly zu erstellen, die die Base64-Kodierung verwendet:
 
@@ -726,7 +718,7 @@ Sie können einen AEM Forms-Dienst mithilfe von Java-Proxyklassen und Base64 auf
 
 [Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung verwendet](#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Aufrufen von AEM Forms mithilfe von MTOM {#invoking-aem-forms-using-mtom}
+## AEM Forms mithilfe von MTOM aufrufen {#invoking-aem-forms-using-mtom}
 
 Sie können AEM Forms-Dienste mithilfe des Webdienststandards MTOM aufrufen. Dieser Standard definiert, wie binäre Daten wie PDF-Dokumente über das Internet oder Intranet übertragen werden. Eine Funktion von MTOM ist die Verwendung des Elements `XOP:Include` . Dieses Element ist in der XML Binary Optimized Packaging (XOP)-Spezifikation definiert, um auf die binären Anhänge einer SOAP-Nachricht zu verweisen.
 
@@ -752,7 +744,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 Hier geht es um die Verwendung von MTOM in einem Microsoft .NET-Projekt zum Aufrufen von AEM Forms-Diensten. Das verwendete .NET-Framework ist 3.5 und die Entwicklungsumgebung ist Visual Studio 2008. Wenn Sie auf Ihrem Entwicklungscomputer Web Service Enhancements (WSE) installiert haben, entfernen Sie es. Das .NET 3.5-Framework unterstützt ein SOAP-Framework namens Windows Communication Foundation (WCF). Beim Aufrufen von AEM Forms mithilfe von MTOM wird nur WCF (nicht WSE) unterstützt.
 
-### Erstellen eines .NET-Projekts, das einen Dienst mit MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom} aufruft
+### Erstellen eines .NET-Projekts, das einen Dienst mit MTOM aufruft {#creating-a-net-project-that-invokes-a-service-using-mtom}
 
 Sie können ein Microsoft .NET-Projekt erstellen, das einen AEM Forms-Dienst mithilfe von Webdiensten aufrufen kann. Erstellen Sie zunächst ein Microsoft .NET-Projekt mit Visual Studio 2008. Um einen AEM Forms-Dienst aufzurufen, erstellen Sie eine Dienstreferenz zum AEM Forms-Dienst, den Sie in Ihrem Projekt aufrufen möchten. Wenn Sie eine Dienstreferenz erstellen, geben Sie eine URL für den AEM Forms-Dienst an:
 
@@ -862,7 +854,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 In der folgenden Diskussion wird beschrieben, wie Sie Forms-Dienste aufrufen, indem Sie SwaRef in einer Java-Clientanwendung verwenden. Die Java-Anwendung verwendet Proxy-Klassen, die mithilfe von JAX-WS erstellt wurden.
 
-### Rufen Sie einen Dienst mit JAX-WS-Bibliotheksdateien auf, die SwaRef verwenden {#invoke-a-service-using-jax-ws-library-files-that-use-swaref}
+### Aufrufen eines Dienstes mit JAX-WS-Bibliotheksdateien, die SwaRef verwenden {#invoke-a-service-using-jax-ws-library-files-that-use-swaref}
 
 Um den Prozess `MyApplication/EncryptDocument` mithilfe von Java-Proxy-Dateien aufzurufen, die mit JAX-WS und SwaRef erstellt wurden, führen Sie die folgenden Schritte aus:
 
@@ -945,7 +937,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 >
 >Es wird empfohlen, dass Sie mit dem Aufrufen von AEM Forms mithilfe von SOAP vertraut sind. (Siehe [Aufrufen von AEM Forms mithilfe von Web Services](#invoking-aem-forms-using-web-services).)
 
-### Erstellen einer .NET-Client-Assembly, die Daten über HTTP {#creating-a-net-client-assembly-that-uses-data-over-http} verwendet
+### Erstellen einer .NET-Client-Assembly, die Daten über HTTP verwendet {#creating-a-net-client-assembly-that-uses-data-over-http}
 
 Um eine Client-Assembly zu erstellen, die Daten über HTTP verwendet, folgen Sie dem unter [AEM Forms mit Base64-Codierung](#invoking-aem-forms-using-base64-encoding) aufrufen angegebenen Prozess. Ändern Sie jedoch die URL in der Proxy-Klasse so, dass sie `?blob=http` anstelle von `?blob=base64` enthält. Diese Aktion stellt sicher, dass Daten über HTTP übergeben werden. Suchen Sie in der Proxy-Klasse die folgende Codezeile:
 
@@ -985,7 +977,7 @@ Sie können den Dienst `MyApplication/EncryptDocument` (der in Workbench erstell
 1. Erstellen Sie ein `System.IO.BinaryWriter` -Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream` -Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write` -Methode des Objekts `System.IO.BinaryWriter` aufrufen und das Byte-Array übergeben.
 
-### Aufrufen eines Dienstes mit Java-Proxy-Klassen und BLOB-Daten über HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
+### Aufrufen eines Dienstes mithilfe von Java-Proxy-Klassen und BLOB-Daten über HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
 
 Sie können einen AEM Forms-Dienst über Java-Proxyklassen und BLOB-Daten über HTTP aufrufen. So rufen Sie den Dienst `MyApplication/EncryptDocument` mithilfe von Java-Proxyklassen auf:
 
@@ -1039,7 +1031,7 @@ Sie können einen AEM Forms-Dienst über Java-Proxyklassen und BLOB-Daten über 
 1. Erstellen Sie ein `java.io.FileOutputStream`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.File`-Objekt übergeben.
 1. Rufen Sie die `write` -Methode des Objekts `java.io.FileOutputStream` auf. Übergeben Sie das Byte-Array, das den Datenstrom enthält, der das verschlüsselte PDF-Dokument darstellt.
 
-## AEM Forms mit DIME aufrufen {#invoking-aem-forms-using-dime}
+## AEM Forms mithilfe von DIME aufrufen {#invoking-aem-forms-using-dime}
 
 Sie können AEM Forms-Dienste mithilfe von SOAP mit Anhängen aufrufen. AEM Forms unterstützt sowohl MIME- als auch DIME-Webdienststandards. Mit DIME können Sie binäre Anhänge, wie PDF-Dokumente, zusammen mit Aufrufanforderungen senden, anstatt den Anhang zu kodieren. Der Abschnitt *AEM Forms mit DIME* aufrufen beschreibt den Aufruf des folgenden kurzlebigen AEM Forms-Prozesses mit dem Namen `MyApplication/EncryptDocument` unter Verwendung von DIME.
 
@@ -1054,7 +1046,7 @@ Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Cod
 >
 >Der Aufruf von AEM Forms-Dienstvorgängen mit DIME wird nicht mehr unterstützt. Es wird empfohlen, MTOM zu verwenden. (Siehe [AEM Forms mit MTOM](#invoking-aem-forms-using-mtom) aufrufen.)
 
-### Erstellen eines .NET-Projekts, das DIME {#creating-a-net-project-that-uses-dime} verwendet
+### Erstellen eines .NET-Projekts, das DIME verwendet {#creating-a-net-project-that-uses-dime}
 
 Führen Sie die folgenden Aufgaben aus, um ein .NET-Projekt zu erstellen, das einen Forms-Dienst mit DIME aufrufen kann:
 
@@ -1128,7 +1120,7 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Betrachten Sie den `MyApplicat
 1. Erstellen Sie ein `System.IO.BinaryWriter` -Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream` -Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in die PDF-Datei, indem Sie die `Write` -Methode des Objekts `System.IO.BinaryWriter` aufrufen und das Byte-Array übergeben.
 
-### Erstellen von Java-Proxyklassen für Apache Axis, die DIME {#creating-apache-axis-java-proxy-classes-that-use-dime} verwenden
+### Erstellen von Apache Axis Java-Proxy-Klassen, die DIME verwenden {#creating-apache-axis-java-proxy-classes-that-use-dime}
 
 Sie können das Apache Axis WSDL2Java-Tool verwenden, um eine Dienst-WSDL in Java-Proxyklassen zu konvertieren, damit Sie Dienstvorgänge aufrufen können. Mithilfe von Apache Ant können Sie Bibliotheksdateien für Axis aus einer AEM Forms-Dienst-WSDL generieren, mit der Sie den Dienst aufrufen können. (Siehe [Erstellen von Java-Proxy-Klassen mit Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
 

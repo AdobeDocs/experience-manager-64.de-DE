@@ -1,8 +1,8 @@
 ---
 title: Java APIQuick Start (SOAP) für Komponenten und Dienste
-seo-title: Java APIQuick Start (SOAP) für Komponenten und Dienste
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Verwenden Sie die Schnellstartanleitung für die Komponenten- und Services-Java-API, um eine Komponente bereitzustellen, den Ausführungskontext eines Dienstes festzulegen, die Dienstsicherheit zu deaktivieren, einen Dienst zu starten, Dienstkonfigurationswerte zu ändern und Komponenten zu entfernen.
-seo-description: Verwenden Sie die Schnellstartanleitung für die Komponenten- und Services-Java-API, um eine Komponente bereitzustellen, den Ausführungskontext eines Dienstes festzulegen, die Dienstsicherheit zu deaktivieren, einen Dienst zu starten, Dienstkonfigurationswerte zu ändern und Komponenten zu entfernen.
+seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-# Schnellstart für Komponenten und Dienste Java API-Schnellstart (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Schnellstart für Komponenten und Dienste - Java-API (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 Java API Quick Start (SOAP) ist für Komponenten und Dienste verfügbar.
 
@@ -46,7 +46,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle zum Aufrufen von DSCs auf demselben lokalen Server verwenden und diese Aufrufe nach einem Upgrade nicht mehr funktionieren, verwenden Sie die Aufrufstrategie In-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem standardmäßigen ServiceClientFactory und erstellen Sie ServiceClientFactory nicht mit SOAP- oder EJB-Protokollen.
+>Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle zum Aufrufen von DSCs auf demselben lokalen Server verwenden und diese Aufrufe nach einem Upgrade nicht mehr funktionieren, verwenden Sie die Aufrufstrategie In-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem standardmäßigen ServiceClientFactory und erstellen Sie ServiceClientFactory nicht mit SOAP- oder EJB-Protokollen.
 
 ## Schnellstart (SOAP-Modus): Bereitstellen einer Komponente mit der Java-API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
