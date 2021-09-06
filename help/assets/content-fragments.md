@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-seo-title: Arbeiten mit Inhaltsfragmenten
+seo-title: Working with Content Fragments
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
-seo-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 98%
 >
 >Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
 
-Inhaltsfragmente in Adobe Experience Manager (AEM) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und [Verwenden von seitenunabhängigen Inhalten](/help/sites-authoring/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
+Mit Adobe Experience Manager (AEM)-Inhaltsfragmenten können Sie seitenunabhängige Inhalte erstellen, erstellen, kuratieren und [veröffentlichen](/help/sites-authoring/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
@@ -73,7 +73,7 @@ Mit den AEM Content Services können die Beschreibung und Bereitstellung von I
 
 Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
 
-* Einzelseiten-Web-Anwendungen (SPA)
+* Single Page Applications (SPA)
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
@@ -91,8 +91,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 
 >
->
-Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+>Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
 >Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
@@ -298,7 +297,7 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 
-## Anwendungsbeispiel    {#example-usage}
+## Anwendungsbeispiel {#example-usage}
 
 Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
 
