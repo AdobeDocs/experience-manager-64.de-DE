@@ -2,12 +2,12 @@
 title: AEM Assets-Ordner mit Creative Cloud freigeben
 description: Konfiguration und Best Practices, damit Benutzer von Adobe Experience Manager Assets Asset-Ordner mit Adobe Creative Cloud-Benutzern austauschen können.
 contentOwner: AG
-feature: Zusammenarbeit
+feature: Collaboration
 role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1059'
 ht-degree: 44%
 
 ---
@@ -40,7 +40,7 @@ Das folgende Diagramm bietet einen Überblick über die Integration.
 Die Integration umfasst folgende Elemente:
 
 * **Im Unternehmensnetzwerk bereitgestellter AEM Assets-** Server (Managed Services oder On-Premise): Die Ordnerfreigabe wird hier initiiert.
-* **Zentraler Assets-Dienst in Adobe Marketing Cloud**: Vermittelnder Dienst zwischen AEM und Creative Cloud-Speicherdiensten. Die Verwaltung des Unternehmens, das die Integration nutzt, muss auf einem Vertrauensverhältnis zwischen dem Marketing Cloud-Unternehmen und der AEM Assets-Instanz basieren. Um für zusätzliche Sicherheit zu sorgen, wird [eine Liste von zugelassenen Creative Cloud-Mitwirkenden definiert](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets), mit denen AEM Assets-Benutzer freigegebene Ordner gemeinsam nutzen können.
+* **Zentraler Assets-Dienst in Adobe Marketing Cloud**: Vermittelnder Dienst zwischen AEM und Creative Cloud-Speicherdiensten. Die Verwaltung des Unternehmens, das die Integration nutzt, muss auf einem Vertrauensverhältnis zwischen dem Marketing Cloud-Unternehmen und der AEM Assets-Instanz basieren. Um für zusätzliche Sicherheit zu sorgen, wird [eine Liste von zugelassenen Creative Cloud-Mitwirkenden definiert](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html#assets), mit denen AEM Assets-Benutzer freigegebene Ordner gemeinsam nutzen können.
 * **Creative Cloud Assets-Webdienste**  (Web-Benutzeroberfläche für Speicher- und Creative Cloud-Dateien): Hier können bestimmte Creative Cloud-Benutzer, für die ein AEM Assets-Ordner freigegeben wurde, die Einladung annehmen und den Ordner in ihrem Creative Cloud-Kontospeicher anzeigen.
 * **Creative Cloud-Desktop-Programm**: (Optional) Ermöglicht den direkten Zugriff auf freigegebene Ordner/Dateien vom Desktop des kreativen Benutzers über die Synchronisierung mit dem Creative Cloud Assets-Speicher.
 

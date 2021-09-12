@@ -2,12 +2,12 @@
 title: Verwalten von ebenenübergreifenden Assets und Generieren von Unter-Assets.
 description: Erfahren Sie, wie Sie Verweise auf AEM Assets aus InDesign-, Adobe Illustrator- und Photoshop-Dateien erstellen. Darüber hinaus erfahren Sie, wie Sie mit der Funktion „Seitenanzeige“ einzelne Seiten mehrseitiger Dateien, darunter PDF-, INDD-, PPT-, PPTX- und AI-Dateien, anzeigen können.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 47%
 
 ---
@@ -119,7 +119,7 @@ In InDesign können Sie Seiten mithilfe des InDesign-Servers extrahieren. Wenn d
 
 Die folgenden Optionen sind in der Symbolleiste, in der linken Leiste und in den Steuerelementen des Seiten-Viewers verfügbar:
 
-* **[!UICONTROL Desktop-]** Aktionen zum Öffnen oder Anzeigen eines bestimmten Unter-Assets mithilfe AEM Desktop-Programms. Erfahren Sie, wie Sie [Desktop-Aktionen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) konfigurieren, wenn Sie AEM Desktop-Programm verwenden.
+* **[!UICONTROL Desktop-]** Aktionen zum Öffnen oder Anzeigen eines bestimmten Unter-Assets mithilfe AEM Desktop-Programms. Erfahren Sie, wie Sie [Desktop-Aktionen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2) konfigurieren, wenn Sie AEM Desktop-Programm verwenden.
 
 * **** Eigenschaften-Option öffnet die   Eigenschaftsseite des jeweiligen Unter-Assets.
 

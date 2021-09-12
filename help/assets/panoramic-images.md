@@ -6,11 +6,11 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: Panoramabilder
+feature: Panoramic Images
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '581'
 ht-degree: 39%
 
 ---
@@ -43,7 +43,7 @@ Weitere Informationen über den Upload von Assets für die Verwendung mit dem Vi
 
 Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit Dynamic Media Classic und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben im JCR aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich für jedes Unternehmenskonto bei Ihrer Dynamic Media Classic-Desktop-](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) Anwendung an.
+1. [Melden Sie sich für jedes Unternehmenskonto bei Ihrer Dynamic Media Classic-Desktop-](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) Anwendung an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Image-Server-Veröffentlichung]** aus dem Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben die Option **[!UICONTROL Image-Serving]**.
@@ -82,6 +82,6 @@ Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramamedien]** in Ihrem WCM
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern    {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).

@@ -2,12 +2,12 @@
 title: Best Practices für die Integration von AEM und Creative Cloud
 description: Best Practices zur Integration einer AEM-Implementierung in Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz
 contentOwner: AG
-feature: Zusammenarbeit, Adobe Asset Link, Desktop App
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3566'
 ht-degree: 83%
 
 ---
@@ -29,7 +29,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 
 ## Kooperationsanforderungen von Kreativen, Marketing-Experten und DAM-Benutzern {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
-| Voraussetzungen | Anwendungsfall | Betroffene Oberflächen |
+| Voraussetzungen | Nutzungsszenario | Betroffene Oberflächen |
 |---|---|---|
 | Vereinfachtes Desktop-Erlebnis für Kreative | Für Kreativprofis oder, ganz allgemein, für Desktop-Benutzer, die mit nativen Programmen zur Asset-Erstellung arbeiten, soll der Zugriff auf Assets von einem DAM-System (AEM Assets) optimiert werden. Sie benötigen eine einfache und unkomplizierte Möglichkeit zum Entdecken, Verwenden (Öffnen), Bearbeiten und Speichern von Änderungen in AEM sowie zum Hochladen neuer Dateien. | Windows- oder Mac-Desktop, Creative Cloud-Programme |
 | Bereitstellen von hochwertigen, gebrauchsfertigen Assets aus Adobe Stock | Marketer tragen zu einer schnelleren Inhaltserstellung bei, indem sie beim Beschaffen von und Suchen nach Assets helfen. Kreativprofis verwenden die genehmigten Assets direkt in ihren Kreativ-Tools. | AEM Assets, Adobe Stock Marketplace, Metadatenfelder |
@@ -65,7 +65,7 @@ The terms used in this document may have a different meaning in other contexts. 
 
 ### Zuordnen von Anwendungsfällen
 
-| Anwendungsfall | AEM-Desktop-Programm | Ordnerfreigabe | Andere Lösungen |
+| Nutzungsszenario | AEM-Desktop-Programm | Ordnerfreigabe | Andere Lösungen |
 |---|---|---|---|
 | Freigeben einer kleineren Anzahl (1) von DAM-Assets für einen kreativen Benutzer | ✔ | ms |  |
 | Freigeben einer größeren Anzahl (2) von DAM-Assets für einen kreativen Benutzer | ✔ | ✘ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Asset-Freigabe](assets-finder-editor.md) |
@@ -112,7 +112,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 
 ### Überlegungen zur Integration von AEM und Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Siehe [Best Practices für das Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Siehe [Best Practices für das Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Siehe [Adobe Stock-Integration](aem-assets-adobe-stock.md)
 * Weitere Informationen finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -201,7 +201,7 @@ In solchen Fällen können Sie die AEM-/Creative Cloud-Integration nutzen, um d
 
 Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte Assets bereit:
 
-* So gewähren Sie Zugriff auf eine große Anzahl von Assets: Verwenden Sie [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de) oder die Implementierung von [Asset Share](assets-finder-editor.md) durch den Kunden in AEM Veröffentlichungs-Infrastruktur.
+* So gewähren Sie Zugriff auf eine große Anzahl von Assets: Verwenden Sie [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) oder die Implementierung von [Asset Share](assets-finder-editor.md) durch den Kunden in AEM Veröffentlichungs-Infrastruktur.
 
 * So gewähren Sie Zugriff auf einige Assets: AEM Ordnerfreigabe mit Adobe Creative Cloud kann zusätzlich zu AEM Assets Brand Portal oder Asset Share verwendet werden. Beachten Sie, dass es bestimmte Einschränkungen bei dieser Integration gibt, die in diesem Artikel ausführlicher behandelt werden.
 

@@ -1,14 +1,14 @@
 ---
-title: Einführung in [!DNL Adobe Experience Manager Assets]
+title: Einführung in  [!DNL Adobe Experience Manager Assets]
 description: Erfahren Sie, was Digital Asset Management, seine Anwendungsfälle und [!DNL Adobe Experience Manager Asset] Angebot sind.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 37%
+source-wordcount: '861'
+ht-degree: 38%
 
 ---
 
@@ -52,7 +52,7 @@ Berücksichtigen Sie bei der Entscheidung, ob ein Bild in das DAM-Repository ein
 
 Ein Asset ist ein digitales Dokument, Bild, Video oder eine digitale Audiodatei (oder ein Teil davon), das bzw. die mehrere Ausgabedarstellungen aufweisen und über Unter-Assets verfügen kann (z. B. Ebenen in einer Fotoshop-Datei, Folien in einer PowerPoint-Datei, Seiten in einem PDF-Dokument, Dateien in einer ZIP-Datei).
 
-Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en).
+Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=de).
 
 >[!CAUTION]
 >

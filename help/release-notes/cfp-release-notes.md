@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Cumu
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4676'
 ht-degree: 17%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 17%
 | Voraussetzung | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
-## Was ist in AEM 6.4.8.4 enthalten?{#what-s-included-in-aem}
+## Was ist in AEM 6.4.8.4 enthalten? {#what-s-included-in-aem}
 
 AEM Cumulative Fix Pack 6.4.8.4 ist ein wichtiges Update, das seit der allgemeinen Verfügbarkeit von AEM 6.4 Service Pack 8 (6.4.8.0) im März 2020 mehrere interne und kundenspezifische Korrekturen enthält.
 
@@ -39,7 +39,7 @@ Die wichtigsten Funktionen und Verbesserungen von [!DNL Adobe Experience Manager
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.8.24 aktualisiert.
 
-Informationen zu CFP und anderen Veröffentlichungstypen finden Sie unter [AEM Update Release Vehicle Definitions](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en)
+Informationen zu CFP und anderen Veröffentlichungstypen finden Sie unter [AEM Update Release Vehicle Definitions](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.4 bietet Fehlerbehebungen für die folgenden Probleme.
 
@@ -69,7 +69,7 @@ Adobe Experience Manager 6.4.8.4 bietet Fehlerbehebungen für die folgenden Prob
 
 * Wenn Sie die Eigenschaften einer Seite nach dem Upgrade auf Experience Manager 6.4.8.3 öffnen, treten in der Konsole JavaScript-Fehler auf (NPR-35649).
 
-### Forms {#forms-6484}
+### Formulare {#forms-6484}
 
 >[!NOTE]
 >
@@ -161,7 +161,7 @@ Adobe Experience Manager 6.4.8.3 bietet Fehlerbehebungen für die folgenden Prob
 
 * Wenn eine Kollektion mehr als 15 Produkte enthält, zeigt die Kollektion nur die ersten 15 Produkte an (NPR-34494).
 
-#### Forms {#forms-6483}
+#### Formulare {#forms-6483}
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Adobe Experience Manager 6.4.8.2 bietet Fehlerbehebungen für die folgenden Prob
 
 * Die vorhandenen Benutzer einer Community-Gruppe, die über die Admin Console hinzugefügt wurde, werden bei jeder Änderung in der Community-Gruppenkonsole aus der Benutzerliste entfernt (NPR-34312).
 
-#### Forms {#forms-6482}
+#### Formulare {#forms-6482}
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Adobe Experience Manager 6.4.8.2 bietet Fehlerbehebungen für die folgenden Prob
 
 * Wenn [!DNL Acrobat DC] auf einem [!DNL Experience Manager] Forms-Server installiert ist, ist die Option **[!UICONTROL Formular]** verteilen in [!DNL Experience Manager Designer] Version 6.x nicht verfügbar (NPR-34325).
 
-**Dokumentensicherheit**
+**Document Security**
 
 * Der Sign-Vorgang mit HSM-basierten Zertifikaten kann nicht in einer PDF-Datei ausgeführt werden, nachdem [!DNL Experience Manager] 6.4.8.0 installiert wurde (NPR-34309).
 
@@ -416,7 +416,7 @@ Adobe Experience Manager 6.4.8.1 bietet Fehlerbehebungen für die folgenden Prob
 
 * Die Option [!UICONTROL Timeline] in der linken Leiste benötigt mehr Zeit zum Laden als erwartet (NPR-32850).
 
-#### Forms {#forms-6481}
+#### Formulare {#forms-6481}
 
 >[!NOTE]
 >
@@ -460,7 +460,7 @@ Adobe Experience Manager 6.4.8.1 bietet Fehlerbehebungen für die folgenden Prob
 >
 >Adobe rät davon ab, das AEM 6.4.8.4-Paket zu entfernen oder zu deinstallieren.
 
-### Installieren Sie das kumulative Fixpack {#install-cumulative-fix-pack}
+### Installieren Sie das kumulative Fix Pack {#install-cumulative-fix-pack}
 
 Führen Sie die folgenden Schritte aus, um das Cumulative Fix Pack auf einer vorhandenen AEM 6.4.8.0-Instanz zu installieren:
 
@@ -490,7 +490,7 @@ B. Verwenden Sie die [HTTP-API von Package Manager](https://helpx.adobe.com/de/e
 
 ### Bestätigen der Installation {#validate-install}
 
-1. Auf der Seite „Produktinformationen“ (*/system/console/productinfo*) sollte nun unter „Installierte Produkte“ die aktualisierte Version „Adobe Experience Manager, Version 6.4.8.4“ angezeigt werden.
+1. Auf der Seite „Produktinformationen“ (*/system/console/productinfo*) sollte nun unter „Installierte Produkte“ die aktualisierte Versionszeichenfolge „Adobe Experience Manager, Version 6.4.8.4“ angezeigt werden.
 1. Alle OSGI-Bundles sind in der OSGI-Konsole entweder AKTIV oder FRAGMENT. (Verwenden Sie die Web-Konsole: /system/console/bundles.)
 1. Das OSGI-Bundle org.apache.jackrabbit.oak-core befindet sich auf Version 1.8.17 oder höher (Webkonsole verwenden: /system/console/bundles).
 
@@ -518,7 +518,7 @@ AEM Version 6.4.8.4 enthält eine neue Version von Dynamic Media-Viewern (5.10.1
 >Überspringen Sie diesen Schritt, wenn Sie AEM Forms nicht verwenden. Fehlerbehebungen in AEM Forms werden über ein separates Add-on-Paket bereitgestellt.
 
 1. Stellen Sie sicher, dass Sie das AEM Cumulative Fix Pack installiert haben.
-1. Laden Sie das entsprechende Formular-Add-On-Paket herunter, das unter [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) für Ihr Betriebssystem aufgeführt ist.
+1. Laden Sie das entsprechende Formular-Add-On-Paket herunter, das unter [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) für Ihr Betriebssystem aufgeführt ist.
 1. Installieren Sie das Formular-Add-On-Paket wie unter [Installieren AEM Forms-Add-On-Pakete](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package) beschrieben.
 
 ### Installieren des AEM Forms JEE-Installationsprogramms {#install-aem-forms-jee-installer}
