@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
-feature: Entwickeln
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 83%
    + [Erstellen einer vollständig vorgestellten Website (klassische Benutzeroberfläche)](website.md)
    + [Designs und der Designer (klassische Benutzeroberfläche)](designer.md)
 + Plattform{#platform}
-   + [Sling-Schnellübersicht ](sling-cheatsheet.md)
-   + [Verwenden von Sling-Adaptern ](sling-adapters.md)
+   + [Sling-Schnellübersicht](sling-cheatsheet.md)
+   + [Verwenden von Sling-Adaptern](sling-adapters.md)
    + [Tag-Bibliotheken](taglib.md)
    + Vorlagen{#templates}
       + [Vorlagen](templates.md)
@@ -45,14 +45,14 @@ ht-degree: 83%
       + [Seitenvorlagen – statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM      ](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
    + Query Builder{#query-builder}
       + [Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder](implementing-custom-predicate-evaluator.md)
       + [Query Builder-Prädikatsreferenz](querybuilder-predicate-reference.md)
-      + [Query-Builder-API](querybuilder-api.md)
+      + [Query Builder-API](querybuilder-api.md)
    + Tagging{#tagging}
       + [Tagging](tags.md)
       + [AEM-Tagging-Framework](framework.md)
@@ -73,17 +73,17 @@ ht-degree: 83%
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
    + [Entwickeln von AEM-Komponenten](developing-components.md)
    + [Entwickeln von AEM-Komponenten – Codebeispiele](developing-components-samples.md)
-   + [JSON-Exporter für Content Services ](json-exporter.md)
+   + [JSON-Exporter für Content Services](json-exporter.md)
    + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
    + [Bildeditor](image-editor.md)
    + [Decoration-Tag](decoration-tag.md)
-   + [Verwenden von Bedingungen zum Ausblenden ](hide-conditions.md)
+   + [Verwenden von Bedingungen zum Ausblenden](hide-conditions.md)
    + [Konfigurieren mehrerer Editoren für Bearbeitung im Kontext](multiple-inplace-editors.md)
    + [Entwicklermodus](developer-mode.md)
    + [Testen der Benutzeroberfläche](hobbes.md)
@@ -100,7 +100,7 @@ ht-degree: 83%
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
 + Headless-Experience-Management{#headless}
-   + [Headless und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Headless und Hybrid mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Single Page Applications{#spas}
       + [Einführung in SPAs und exemplarische Anleitung](spa-walkthrough.md)
@@ -113,7 +113,7 @@ ht-degree: 83%
       + [Entwickeln von SPAs für AEM](spa-architecture.md)
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)
-      + [Zuordnung dynamischer Modelle zu Komponenten für SPAs](spa-dynamic-model-to-component-mapping.md)
+      + [Dynamisches Modell für die Komponentenzuordnung für SPA](spa-dynamic-model-to-component-mapping.md)
       + [SPA-Modell-Routing](spa-routing.md)
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
       + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
@@ -139,10 +139,10 @@ ht-degree: 83%
    + [AEM Repo Tool](aem-repo-tool.md)
 + Personalisierung{#personlization}
    + [ContextHub](contexthub.md)
-   + [Referenz zur ContextHub-JavaScript-API ](contexthub-api.md)
+   + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
    + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
-   + [Beispiele für ContextHub-Store-Kandidaten ](ch-samplestores.md)
+   + [Beispiele für ContextHub-Store-Kandidaten](ch-samplestores.md)
    + [Mustertypen von ContextHub-UI-Modulen](ch-samplemodules.md)
    + [ContextHub-Diagnosen](ch-diagnostics.md)
    + [Entwicklung für zielgerichtete Inhalte](target.md)
