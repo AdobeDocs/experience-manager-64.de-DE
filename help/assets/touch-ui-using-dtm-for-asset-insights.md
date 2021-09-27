@@ -2,12 +2,12 @@
 title: Aktivieren von Assets Insights über DTM
 description: Erfahren Sie, wie Sie mit Adobe Dynamic Tag Management (DTM) Assets Insights aktivieren können.
 contentOwner: AG
-feature: Asset Insights,Asset-Berichte
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 36%
 
 ---
@@ -18,11 +18,11 @@ Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingt
 
 >[!CAUTION]
 >
->Adobe DTM wird nicht mehr zugunsten von Adobe Experience Platform Launch unterstützt und bald [Ende des Lebenszyklus](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) erreichen. Adobe empfiehlt, [Launch für Asset-Einblicke zu verwenden](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM wird nicht mehr zugunsten von [!DNL Adobe Experience Platform] unterstützt und wird bald [Ende des Lebenszyklus](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) erreichen. Adobe empfiehlt, [ [!DNL Adobe Experience Platform] für Asset-Einblicke](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) zu verwenden.
 
 Führen Sie die folgenden Schritte aus, um Assets Insights über DTM zu aktivieren:
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Insights-Konfiguration]**.
+1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights-Konfiguration]**.
 1. [Konfigurieren Sie die AEM-Instanz mit dem DTM Cloud-Dienst.](../sites-administering/dtm.md)
 
    Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) anmelden und **[!UICONTROL Kontoeinstellungen]** über das Profilsymbol aufrufen. Dieser Schritt ist aus Sicht von Assets Insights nicht erforderlich, da die Integration von AEM Sites mit Assets Insights noch in Arbeit ist.
