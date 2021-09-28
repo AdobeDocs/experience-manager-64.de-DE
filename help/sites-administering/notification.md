@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von E-Mail-Benachrichtigungen
-seo-title: Konfigurieren von E-Mail-Benachrichtigungen
+seo-title: Configuring Email Notification
 description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in AEM konfigurieren können.
-seo-description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in AEM konfigurieren können.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 76%
+source-wordcount: '1134'
+ht-degree: 75%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, di
 >
 >Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-## Konfigurieren des E-Mail-Diensts  {#configuring-the-mail-service}
+## Konfigurieren des E-Mail-Diensts {#configuring-the-mail-service}
 
 Damit AEM E-Mails versenden kann, muss der **Day CQ Mail Service** ordnungsgemäß konfiguriert sein. Sie können die Konfiguration in der Web-Konsole anzeigen. Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -82,7 +82,7 @@ Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner f
 
 1. Speichern Sie die Datei.
 
-## Konfigurieren des Workflow-E-Mail-Benachrichtigungsdiensts  {#configuring-the-workflow-email-notification-service}
+## Konfigurieren des Workflow-E-Mail-Benachrichtigungsdiensts {#configuring-the-workflow-email-notification-service}
 
 Wenn Sie Workflow-E-Mail-Benachrichtigungen erhalten, sind beide „Von“-E-Mail-Adressen und das Host-URL-Präfix auf Standardwerte eingestellt. Sie können diese Werte ändern, indem Sie den **Day CQ Workflow Email Notification Service** in der Web-Konsole konfigurieren. Wenn Sie dies tun, wird empfohlen, die Änderung im Repository beizubehalten.
 
@@ -94,7 +94,7 @@ Die Standardkonfiguration sieht in der Web-Konsole wie folgt aus:
 
 E-Mail-Vorlagen für die Seitenbenachrichtigungen sind zu finden unter:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 Die standardmäßige englische Vorlage (`en.txt`) wird wie folgt definiert:
 
@@ -121,7 +121,7 @@ Die englische E-Mail-Vorlage für die Seitenbenachrichtigung können Sie wie fol
 
 1. Öffnen Sie in CRXDE die Datei:
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Passen Sie die Datei an Ihre Anforderungen an.
 1. Speichern Sie die Änderungen.
@@ -146,7 +146,7 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Stringvariabl
 
    &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
-   Beispiel:
+   Zum Beispiel:
 
    PageModified => /content/geometrixx/en/products
 
@@ -205,7 +205,7 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachri
 
 Die (englische) Vorlage für die Workflow-Benachrichtigungen befindet sich unter:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 Sie wird wie folgt definiert:
 
@@ -228,13 +228,13 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Anpassen von E-Mail-Vorlagen für die Workflow-Benachrichtigung  {#customizing-email-templates-for-workflow-notification}
+#### Anpassen von E-Mail-Vorlagen für die Workflow-Benachrichtigung {#customizing-email-templates-for-workflow-notification}
 
 Die englische E-Mail-Vorlage für die Benachrichtigung über ein Workflow-Ereignis können Sie wie folgt anpassen:
 
 1. Öffnen Sie in CRXDE die Datei:
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Passen Sie die Datei an Ihre Anforderungen an.
 1. Speichern Sie die Änderungen.
@@ -292,9 +292,9 @@ Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 
 1. Fügen Sie in CRXDE eine Datei `<language-code>.txt` unten hinzu:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : für Seitenbenachrichtigungen
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : für Seitenbenachrichtigungen
    * `/etc/notification/email/default/com.day.cq.collab.forum` : für Forumsbenachrichtigungen
-   * `/etc/workflow/notification/email/default` : für Workflow-Benachrichtigungen
+   * `/libs/settings/workflow/notification/email/default` : für Workflow-Benachrichtigungen
 
 1. Passen Sie die Datei an die Sprache an.
 1. Speichern Sie die Änderungen.
