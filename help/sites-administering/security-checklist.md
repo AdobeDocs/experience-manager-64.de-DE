@@ -1,9 +1,9 @@
 ---
 title: Sicherheitscheckliste
-seo-title: Sicherheitscheckliste
+seo-title: Security Checklist
 description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
-feature: Sicherheit
-seo-description: Erfahren Sie mehr über die verschiedenen Sicherheitsüberlegungen beim Konfigurieren und Bereitstellen von AEM.
+feature: Security
+seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,9 +11,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: b921cf3a1739b031eea5c319953d20a024515544
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2830'
 ht-degree: 88%
 
 ---
@@ -48,7 +48,7 @@ Die Aktivierung der HTTPS-Transportschicht (Transport Layer) in den Autoren- und
 
 Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-Hotfixes](https://helpx.adobe.com/de/experience-manager/kb/aem63-available-hotfixes.html) installiert sind.
 
-### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole  {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 Adobe empfiehlt dringend, dass Sie das Kennwort für die mit allen Berechtigungen ausgestatteten [**-Konten von** AEM`admin` nach der Installation ändern (in allen Instanzen).](#changing-the-aem-admin-password)
 
@@ -83,7 +83,7 @@ Unabhängig vom `admin`-Konto von AEM kann eine Nichtänderung des Standardkennw
 
 Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie im nachfolgenden Abschnitt [Ändern des Admin-Kennworts für die OSGi-Web-Konsole](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password).
 
-#### Ändern des Admin-Kennworts für die OSGi-Web-Konsole  {#changing-the-osgi-web-console-admin-password}
+#### Ändern des Admin-Kennworts für die OSGi-Web-Konsole {#changing-the-osgi-web-console-admin-password}
 
 Sie müssen auch das Kennwort ändern, das für den Zugriff auf die Web-Konsole verwendet wird. Konfigurieren Sie dazu die folgenden Eigenschaften der [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
 
@@ -99,7 +99,7 @@ Gehen Sie hierfür wie folgt vor:
 
 1. Klicken Sie auf **Speichern**.
 
-### Implementieren von benutzerdefinierten Fehler-Handlern  {#implement-custom-error-handler}
+### Implementieren von benutzerdefinierten Fehler-Handlern {#implement-custom-error-handler}
 
 Adobe empfiehlt die Definition von benutzerdefinierten Fehler-Handler-Seiten, insbesondere für 404- und 500-HTTP-Antwortcodes, um die Offenlegung von Informationen zu verhindern.
 
@@ -115,7 +115,7 @@ Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt d
 >
 >Zur Verwendung des Dispatchers müssen Sie den „.form“-Selektor deaktivieren.
 
-## Überprüfungsschritte  {#verification-steps}
+## Überprüfungsschritte {#verification-steps}
 
 ### Konfigurieren von Replikations- und Transportbenutzer {#configure-replication-and-transport-users}
 
@@ -151,13 +151,13 @@ Die OSGi-Entwicklungsbundles sollten sowohl auf dem Autoren- als auch auf dem Ve
 * Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
 * Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
 
-### Prüfen, ob das Sling-Entwicklungsbundle vorhanden ist  {#check-if-the-sling-development-bundle-is-present}
+### Prüfen, ob das Sling-Entwicklungsbundle vorhanden ist {#check-if-the-sling-development-bundle-is-present}
 
 [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) stellt das Tool „Apache Sling Tooling Support Install“ (org.apache.sling.tooling.support.install) bereit.
 
 Dieses OSGi-Bundle sollte sowohl auf dem Autoren- als auch auf dem Veröffentlichungs-Produktionssystem deinstalliert werden, bevor diese zugänglich gemacht werden.
 
-### Schutz vor Cross-Site Request Forgery-Angriffen  {#protect-against-cross-site-request-forgery}
+### Schutz vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery}
 
 #### Das CSRF Protection Framework {#the-csrf-protection-framework}
 
@@ -190,7 +190,7 @@ So konfigurieren Sie den Referrer-Filterdienst:
 
    &lt;protocol>://&lt;server>:&lt;port>
 
-   Beispiel:
+   Zum Beispiel:
 
    * `https://allowed.server:80`: Alle Anfragen von diesem Server mit dem angegebenen Port sind zugelassen.
    * Wenn Sie auch HTTPS-Anfragen zulassen wollen, müssen Sie eine zweite Zeile eingeben.
@@ -244,7 +244,7 @@ Weitere Informationen finden Sie in [OSGi-Konfigurationseinstellungen](/help/sit
 
 Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-## Weitere Informationen  {#further-readings}
+## Weitere Informationen {#further-readings}
 
 ### Verringern von Denial-of-Service-(DoS-)Angriffen {#mitigate-denial-of-service-dos-attacks}
 
@@ -301,7 +301,7 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
       **Max. JSON-Ergebnisse**  (  `json.maximumresults`)
 
-      in der Konfiguration für das Apache Sling GET Servlet ](/help/sites-deploying/osgi-configuration-settings.md). [ Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
+      in der Konfiguration für das Apache Sling GET Servlet ](/help/sites-deploying/osgi-configuration-settings.md). [ Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `1000`.
 
    * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -399,7 +399,7 @@ Bevor Sie das tun, beachten Sie, dass die Schlüsselreplikation von Version zu V
 
 Weitere Informationen finden Sie im folgenden Abschnitt.
 
-#### Replizieren von Schlüsseln in AEM 6.3  {#replicating-keys-for-aem}
+#### Replizieren von Schlüsseln in AEM 6.3 {#replicating-keys-for-aem}
 
 In älteren Versionen wurden die Replikationsschlüssel im Repository gespeichert, ab AEM-Version 6.3 werden sie jedoch im Dateisystem gespeichert.
 
@@ -414,12 +414,12 @@ Genauer gesagt, müssen Sie Folgendes tun:
 
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
-1. Navigieren Sie zum Ordner „data“. Beispiel:
+1. Navigieren Sie zum Ordner „data“. Zum Beispiel:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Kopieren Sie die HMAC- und die Master-Dateien.
-1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
+1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Zum Beispiel:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
